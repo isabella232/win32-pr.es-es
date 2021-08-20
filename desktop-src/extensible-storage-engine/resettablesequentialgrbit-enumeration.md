@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: enumeración ResetTableSequentialGrbit'
+description: 'Más información sobre: Enumeración ResetTableSequentialGrbit'
 title: Enumeración ResetTableSequentialGrbit
 TOCTitle: ResetTableSequentialGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.ResetTableSequentialGrbit
@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2325f5d314fd91b74edc38ccb092f24868cff099
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d0f3d9d10b056ed7b602a1c4105bb198fd4dc8e4111de4cd42624e5725ad2fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978675"
 ---
 # <a name="resettablesequentialgrbit-enumeration"></a>Enumeración ResetTableSequentialGrbit
 
@@ -39,8 +39,8 @@ Opciones de JetResetTableSequential.
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -70,7 +70,7 @@ public enum ResetTableSequentialGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 </tbody>
@@ -81,4 +81,4 @@ public enum ResetTableSequentialGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

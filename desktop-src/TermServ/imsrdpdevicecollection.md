@@ -1,11 +1,11 @@
 ---
-title: Interfaz IMsRdpDeviceCollection
+title: IMsRdpDeviceCollection (interfaz)
 description: Representa una colección de objetos de dispositivo.
 ms.assetid: 9731b16b-12e0-457e-a4e5-a55d8a6db582
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la interfaz IMsRdpDeviceCollection
-- Servicios de Escritorio remoto de la interfaz IMsRdpDeviceCollection, descrito
+- Interfaz IMsRdpDeviceCollection Servicios de Escritorio remoto
+- Interfaz IMsRdpDeviceCollection Servicios de Escritorio remoto , descrito
 topic_type:
 - apiref
 api_name:
@@ -16,33 +16,33 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cace1bc684be4e3e8cf20db84ec8923c9b35a8fa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c5f7008b0b524150cd106b9bbe97d21a8de890773d8b0b461a6ae3045e847a79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000745"
 ---
-# <a name="imsrdpdevicecollection-interface"></a>Interfaz IMsRdpDeviceCollection
+# <a name="imsrdpdevicecollection-interface"></a>IMsRdpDeviceCollection (interfaz)
 
 Representa una colección de objetos de dispositivo.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IMsRdpDeviceCollection** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IMsRdpDeviceCollection** también tiene estos tipos de miembros:
+La **interfaz IMsRdpDeviceCollection** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IMsRdpDeviceCollection** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IMsRdpDeviceCollection** tiene estos métodos.
+La **interfaz IMsRdpDeviceCollection** tiene estos métodos.
 
 
 
 | Método                                                        | Descripción                                                 |
 |:--------------------------------------------------------------|:------------------------------------------------------------|
-| [**RescanDevices**](imsrdpdevicecollection-rescandevices.md) | Actualiza la lista de objetos de la colección.<br/> |
+| [**Volver a examinarDispositivos**](imsrdpdevicecollection-rescandevices.md) | Actualiza la lista de objetos de la colección.<br/> |
 
 
 
@@ -50,7 +50,7 @@ La interfaz **IMsRdpDeviceCollection** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La interfaz **IMsRdpDeviceCollection** tiene estas propiedades.
+La **interfaz IMsRdpDeviceCollection** tiene estas propiedades.
 
 
 
@@ -74,7 +74,7 @@ La interfaz **IMsRdpDeviceCollection** tiene estas propiedades.
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>    |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>    |
-| IID<br/>                      | IID \_ IMsRdpDeviceCollection se define como 56540617-D281-488C-8738-6a8fdf64a118<br/> |
+| IID<br/>                      | IID IMsRdpDeviceCollection se define como \_ 56540617-d281-488c-8738-6a8fdf64a118<br/> |
 
 
 
@@ -82,7 +82,7 @@ La interfaz **IMsRdpDeviceCollection** tiene estas propiedades.
 
 <dl> <dt>
 
-[Referencia de Conexión web a Escritorio remoto](remote-desktop-web-connection-reference.md)
+[Conexión web a Escritorio remoto referencia](remote-desktop-web-connection-reference.md)
 </dt> <dt>
 
 [**IMsRdpDevice**](imsrdpdevice.md)

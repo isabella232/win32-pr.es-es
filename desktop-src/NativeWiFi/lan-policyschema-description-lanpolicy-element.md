@@ -1,7 +1,7 @@
 ---
 description: Contiene la descripción de una directiva de LAN cableada.
 ms.assetid: afd282cf-b6cc-4b32-9f3a-293c1a1a3ea0
-title: Elemento Description (LANPolicy)
+title: description (LANPolicy) (Elemento)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: bc3d94a97701ced93367794a8a43a5da0c316005
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2769fcf09bee8ee2aa7ed46c0ba191b96d1e01342bfa640e47cb7087e87df6a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685236"
 ---
-# <a name="description-lanpolicy-element"></a>Elemento Description (LANPolicy)
+# <a name="description-lanpolicy-element"></a>description (LANPolicy) (Elemento)
 
-El elemento Description (LANPolicy) contiene la descripción de una directiva de LAN cableada.
+El elemento description (LANPolicy) contiene la descripción de una directiva LAN cableada.
 
 ``` syntax
 <xs:element name="description"
@@ -29,7 +29,7 @@ El elemento Description (LANPolicy) contiene la descripción de una directiva de
  />
 ```
 
-El elemento **Description** se define mediante el elemento [**LANPolicy**](lan-policyschema-lanpolicy-element.md) .
+El **elemento description** se define mediante el elemento [**LANPolicy.**](lan-policyschema-lanpolicy-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,8 +37,8 @@ El elemento **Description** se define mediante el elemento [**LANPolicy**](lan-p
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

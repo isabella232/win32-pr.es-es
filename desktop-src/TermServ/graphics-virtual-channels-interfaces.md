@@ -1,20 +1,20 @@
 ---
-title: Interfaces de canales virtuales de gráficos
-description: La API de canales virtuales de gráficos admite las siguientes interfaces.
+title: Interfaces de canales virtuales gráficos
+description: La API de canales virtuales gráficos admite las interfaces siguientes.
 ms.assetid: FB62FB7B-8C69-410A-98FF-46D1CE18F0A3
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 93869d075b25bdb55034b3bc1ea270709c40e5e3
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 2fd6fcb496a28d4a5ad0283f767f55b9d1e5b5bd9e3c7c8e68f3b0680cb72bee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105685643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059373"
 ---
-# <a name="graphics-virtual-channels-interfaces"></a>Interfaces de canales virtuales de gráficos
+# <a name="graphics-virtual-channels-interfaces"></a>Interfaces de canales virtuales gráficos
 
-La API de canales virtuales de gráficos admite las siguientes interfaces.
+La API de canales virtuales gráficos admite las interfaces siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -23,7 +23,7 @@ La API de canales virtuales de gráficos admite las siguientes interfaces.
 [**IWRdsGraphicsChannel**](/windows/desktop/api/wrdsgraphicschannels/nn-wrdsgraphicschannels-iwrdsgraphicschannel)
 </dt> <dd>
 
-Los servicios de gráficos de RemoteFX usan esta interfaz para enviar y recibir datos en un canal de gráficos virtual.
+Esta interfaz la usa el RemoteFX gráficos para enviar y recibir datos a un canal de gráficos virtuales.
 
 </dd> <dt>
 
@@ -37,13 +37,13 @@ Esta interfaz recibe notificaciones relacionadas con un canal virtual de gráfic
 [**IWRdsGraphicsChannelManager**](/windows/desktop/api/wrdsgraphicschannels/nn-wrdsgraphicschannels-iwrdsgraphicschannelmanager)
 </dt> <dd>
 
-La API de servicios gráficos de RemoteFX usa esta interfaz para crear los canales virtuales de gráficos necesarios para los datos de gráficos remotos.
+La API de servicios de gráficos RemoteFX usa esta interfaz para crear los canales virtuales de gráficos necesarios para la comunicación remota de datos gráficos.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,35 +1,35 @@
 ---
-title: Mantenimiento automático (guías de compatibilidad para Windows)
+title: Mantenimiento automático (Guía de compatibilidad para Windows)
 description: Mantenimiento automático
 ms.assetid: D3B61105-D118-42A4-8F3D-ED92EFAF597F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 320625fa0ac8e56368396a7f1be88def0ac3c526
-ms.sourcegitcommit: ea4baf9953a78d2d6bd530b680601e39f3884541
+ms.openlocfilehash: d4a839191d84f3f20fcc598b42433c888b090b2b174dd6891c0b5b9fc72f0af5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "104488414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028873"
 ---
 # <a name="automatic-maintenance"></a>Mantenimiento automático
 
 ## <a name="platforms"></a>Plataformas
 
-**Clientes** : Windows 8  
-**Servidores** : Windows Server 2012  
+**Clientes:** Windows 8  
+**Servidores:** Windows Server 2012  
 
 
 ## <a name="description"></a>Descripción
 
-Windows depende de la ejecución de la bandeja de entrada y de la actividad de mantenimiento de terceros para gran parte de su valor de agregar, incluido Windows Update y desfragmentación automática de discos, así como las actualizaciones y los exámenes del antivirus. Además, las empresas suelen usar actividades de mantenimiento como el análisis de protección de acceso a redes (NAP) para ayudar a aplicar los estándares de seguridad en todas las estaciones de trabajo empresariales.
+Windows depende de la ejecución de la actividad de mantenimiento de la bandeja de entrada y de terceros durante gran parte de su valor agregado, incluida la actualización de Windows y la desfragmentación automática del disco, así como de las actualizaciones y exámenes antivirus. Además, las empresas suelen usar la actividad de mantenimiento, como el examen de protección de acceso a redes (NAP) para ayudar a aplicar estándares de seguridad en todas las estaciones de trabajo empresariales.
 
-La actividad de mantenimiento en Windows está diseñada para ejecutarse en segundo plano con una interacción limitada del usuario y un impacto mínimo en el rendimiento y la eficacia energética. Sin embargo, en Windows 7 y versiones anteriores, el rendimiento y la eficacia energética todavía se ven afectados debido a la programación no determinista y ampliamente modificada de las diversas actividades de mantenimiento de Windows. La capacidad de respuesta a los usuarios se reduce cuando se ejecuta la actividad de mantenimiento mientras los usuarios están usando el equipo activamente. Las aplicaciones también solicitan al usuario que actualice su software y ejecuten el mantenimiento en segundo plano, y dirigen a los usuarios a varias experiencias, como el centro de actividades, el panel de control, Windows Update, Programador de tareas complemento MMC y controles de otros fabricantes.
+La actividad de mantenimiento Windows está diseñada para ejecutarse en segundo plano con una interacción limitada del usuario y un impacto mínimo en el rendimiento y la eficiencia energética. Sin embargo, en Windows 7 y versiones anteriores, el rendimiento y la eficiencia energética todavía se ven afectados debido a la programación no determinista y ampliamente variada de las diversas actividades de mantenimiento en Windows. La capacidad de respuesta a los usuarios se reduce cuando se ejecuta la actividad de mantenimiento mientras los usuarios usan activamente el equipo. Las aplicaciones también suelen pedir al usuario que actualice su software y ejecute el mantenimiento en segundo plano, así como dirigir a los usuarios a varias experiencias, incluidos el Centro de acciones, Panel de control, Windows Update Programador de tareas, un complemento MMC y controles de terceros.
 
-El objetivo del mantenimiento automático es combinar toda la actividad de mantenimiento en segundo plano en Windows y ayudar a los desarrolladores de terceros a agregar su actividad de mantenimiento a Windows sin afectar negativamente al rendimiento y la eficacia energética. Además, el mantenimiento automático permite a los usuarios así como a las empresas controlar la programación y la configuración de la actividad de mantenimiento.
+El objetivo de Mantenimiento automático es combinar toda la actividad de mantenimiento en segundo plano en Windows y ayudar a los desarrolladores de terceros a agregar su actividad de mantenimiento a Windows sin afectar negativamente al rendimiento y la eficiencia energética. Además, Mantenimiento automático permite a los usuarios y a las empresas controlar la programación y configuración de la actividad de mantenimiento.
 
-**Problemas principales**
+**Problemas clave**
 
-El mantenimiento automático está diseñado para solucionar estos problemas con la actividad de mantenimiento en Windows:
+Mantenimiento automático está diseñado para solucionar estos problemas con la actividad de mantenimiento en Windows:
 
 -   Programación de fecha límite
 -   Conflictos de uso de recursos
@@ -38,44 +38,44 @@ El mantenimiento automático está diseñado para solucionar estos problemas con
 
 ## <a name="functionality"></a>Funcionalidad
 
-El mantenimiento automático facilita la eficiencia inactiva y permite que toda la actividad se ejecute de manera oportuna y con prioridad. También ayuda a habilitar la visibilidad unificada y el control de la actividad de mantenimiento, y permite a los desarrolladores de terceros agregar su actividad de mantenimiento a Windows sin afectar negativamente al rendimiento y la eficacia energética. Para ello, proporciona un modo totalmente automático, modo Iniciado por el usuario, detención automática, fechas límite y notificación, y control empresarial. Estos son los que se describen a continuación.
+Mantenimiento automático facilita la eficacia inactiva y permite que toda la actividad se ejecute de forma oportuna y prioritaria. También ayuda a habilitar la visibilidad unificada y el control sobre la actividad de mantenimiento, y permite a los desarrolladores de terceros agregar su actividad de mantenimiento a Windows sin afectar negativamente al rendimiento y la eficiencia energética. Para ello, proporciona un modo totalmente automático, el modo iniciado por el usuario, la detección automática, las fechas límite y la notificación, y el control empresarial. Cada uno de ellos se describe a continuación.
 
 **Modo totalmente automático**
 
-Este modo predeterminado permite la programación inteligente durante el tiempo de inactividad del equipo y a las horas programadas: la ejecución y la pausa automática de la actividad de mantenimiento sin intervención del usuario. El usuario puede establecer una programación semanal o diaria. Toda la actividad de mantenimiento no es interactiva y se ejecuta de forma silenciosa.
+Este modo predeterminado permite la programación inteligente durante el tiempo de inactividad del equipo y en horas programadas: la ejecución y la pausa automática de la actividad de mantenimiento sin intervención del usuario. El usuario puede establecer una programación semanal o diaria. Toda la actividad de mantenimiento no es interactiva y se ejecuta en modo silencioso.
 
-El equipo se reanuda automáticamente de la suspensión cuando no es probable que el sistema esté en uso, respetando la Directiva de administración de energía, que en el caso de los equipos portátiles, tiene como valor predeterminado permitir la reactivación solo si se encuentra en corriente alterna. Los recursos completos del sistema con alta potencia se usan para completar la actividad de mantenimiento lo más rápido posible. Si el sistema se reanudó de la suspensión para el mantenimiento automático, se solicita que vuelva a estar en suspensión.
+El equipo se reanuda automáticamente de suspensión cuando es probable que el sistema no esté en uso, respetando la directiva de administración de energía, que en el caso de los equipos portátiles, permite de forma predeterminada la reactivación solo si está en alimentación de ca. Los recursos completos del sistema a gran potencia se usan para completar la actividad de mantenimiento lo antes posible. Si el sistema se reanudó de suspensión durante Mantenimiento automático, se solicita que vuelva a suspensión.
 
-Las interacciones de usuario requeridas relacionadas con actividades como la configuración se realizan fuera de la ejecución de mantenimiento automático.
+Las interacciones de usuario necesarias relacionadas con actividades como la configuración se realizan fuera de Mantenimiento automático ejecución.
 
-**Modo Iniciado por el usuario**
+**Modo iniciado por el usuario**
 
-Si los usuarios necesitan prepararse para viajar, esperan tener energía de batería durante un período prolongado o desean optimizar el rendimiento y la capacidad de respuesta, tienen la opción de iniciar el mantenimiento automático a petición. Los usuarios pueden configurar atributos de mantenimiento automático, incluida la programación de ejecución automática. Pueden ver el estado actual de la ejecución del mantenimiento automático y pueden detener el mantenimiento automático si es necesario.
+Si los usuarios necesitan prepararse para el viaje, esperar estar encendidos durante un tiempo prolongado o desean optimizar el rendimiento y la capacidad de respuesta, tienen la opción de iniciar Mantenimiento automático a petición. Los usuarios pueden configurar Mantenimiento automático, incluida la programación de ejecución automática. Pueden ver el estado actual de Mantenimiento automático ejecución y pueden detener Mantenimiento automático si es necesario.
 
-**Detención automática**
+**Detección automática**
 
-El mantenimiento automático detiene automáticamente las actividades de mantenimiento que se están ejecutando en ese momento si el usuario comienza a interactuar con el equipo. La actividad de mantenimiento se reanudará cuando el sistema vuelva al estado inactivo.
+Mantenimiento automático detiene automáticamente las actividades de mantenimiento que se están ejecutando actualmente si el usuario comienza a interactuar con el equipo. La actividad de mantenimiento se reanudará cuando el sistema vuelva al estado de inactividad.
 
 > [!Note]  
-> Todas las actividades del mantenimiento automático deben admitir la detención en 2 segundos o menos. Se debe notificar al usuario que la actividad se ha detenido.
+> Todas las actividades de Mantenimiento automático deben admitir la detención en 2 segundos o menos. Se debe notificar al usuario que la actividad se ha detenido.
 
- 
+ 
 
 **Fechas límite y notificación**
 
-La actividad de mantenimiento crítico debe ejecutarse dentro de una ventana de tiempo predefinida. Si las tareas críticas no se han podido ejecutar en el momento especificado, el mantenimiento automático comenzará a ejecutarse automáticamente en la siguiente oportunidad inactiva del sistema disponible. Sin embargo, si el estado de la tarea permanece detrás de la fecha límite, el mantenimiento automático notificará al usuario acerca de la actividad y proporcionará una opción para una ejecución manual del mantenimiento automático. Se ejecutarán todas las tareas programadas para mantenimiento, aunque las tareas más deshabilitadas tienen prioridad. Esta actividad puede afectar al rendimiento y la capacidad de respuesta del sistema; por lo tanto, el mantenimiento automático notificará al usuario que se está ejecutando la actividad de mantenimiento crítica.
+La actividad de mantenimiento crítico debe ejecutarse dentro de un período de tiempo predefinido. Si las tareas críticas no se han podido ejecutar dentro de su tiempo designado, Mantenimiento automático se iniciará automáticamente la ejecución en la siguiente oportunidad de inactividad del sistema disponible. Sin embargo, si el estado de la tarea sigue estando por detrás de la fecha límite, Mantenimiento automático notificará al usuario sobre la actividad y proporcionará una opción para una ejecución manual de Mantenimiento automático. Todas las tareas programadas para mantenimiento se ejecutarán, aunque las tareas más hadas tienen prioridad. Esta actividad puede afectar a la capacidad de respuesta y el rendimiento del sistema; por lo tanto, Mantenimiento automático notificará al usuario que se está ejecutando una actividad de mantenimiento crítica.
 
-**Control empresarial**
+**Enterprise control**
 
-Los profesionales de TI empresariales deben poder determinar cuándo se ejecuta el mantenimiento automático en sus sistemas Windows, aplicar esa programación a través de interfaces de administración estandarizadas y recuperar datos de eventos sobre el estado de los intentos de ejecución de mantenimiento automático. Además, los profesionales de TI deben poder invocar la actividad de mantenimiento automático específica de forma remota a través de las interfaces de administración estándar. Cada vez que se ejecuta el mantenimiento automático, los informes de estado, incluidas las notificaciones cuando no se pudo ejecutar el mantenimiento automático porque el usuario ha pausado manualmente la actividad, se ejecuta. Los profesionales de TI deben considerar la posibilidad de mover scripts de inicio de sesión al mantenimiento automático para facilitar la experiencia de inicio de sesión del usuario.
+Enterprise Los profesionales de TI deben ser capaces de determinar cuándo Mantenimiento automático se ejecuta en sus sistemas Windows, aplicar esa programación a través de interfaces de administración estandarizadas y recuperar datos de eventos sobre el estado de los intentos de Mantenimiento automático ejecución. Además, los profesionales de IT deben poder invocar actividades específicas Mantenimiento automático remotamente a través de interfaces de administración estándar. Cada vez Mantenimiento automático, se ejecutan informes de estado, incluidas las notificaciones Mantenimiento automático no se pudieron ejecutar porque el usuario ha pausado manualmente la actividad. Los profesionales de IT deben considerar la posibilidad de mover scripts de Mantenimiento automático para ayudar a que la experiencia de inicio de sesión del usuario sea más rápida.
 
-## <a name="creating-an-automatic-maintenance-task"></a>Creación de una tarea de mantenimiento automática
+## <a name="creating-an-automatic-maintenance-task"></a>Creación de una Mantenimiento automático trabajo
 
-En esta sección se detalla cómo los desarrolladores pueden crear una tarea mediante una definición de tarea en lenguaje XML o C. Tenga en cuenta que la actividad de mantenimiento no debe iniciar ninguna interfaz de usuario que requiera la interacción del usuario, ya que el mantenimiento automático es completamente silencioso y se ejecuta cuando el usuario no está presente. En realidad, si el usuario interactúa con el equipo durante el mantenimiento automático, las tareas en curso se finalizarán hasta el siguiente período de inactividad.
+En esta sección se detalla cómo los desarrolladores pueden crear una tarea mediante una definición de tarea en lenguaje XML o C. Tenga en cuenta que la actividad de mantenimiento no debe iniciar ninguna interfaz de usuario que requiera la interacción del usuario, ya que Mantenimiento automático es completamente silenciosa y se ejecuta cuando el usuario no está presente. De hecho, si el usuario interactúa con el equipo durante Mantenimiento automático, las tareas en proceso finalizarán hasta el siguiente período de inactividad.
 
-**Usar XML**
+**Uso de XML**
 
-Programador de tareas incluye una herramienta de línea de comandos integrada, schtasks.exe, que puede importar una definición de tarea en formato XML. El esquema de la definición de la tarea se documenta en https://msdn.microsoft.com/library/aa383609(v=VS.85).aspx . A continuación se muestra un ejemplo de una tarea de mantenimiento automática definida en XML.
+Programador de tareas incluye una herramienta de línea de comandos integrada, schtasks.exe, que puede importar una definición de tarea en formato XML. El esquema de la definición de tarea se documenta en https://msdn.microsoft.com/library/aa383609(v=VS.85).aspx . A continuación se muestra un ejemplo de Mantenimiento automático tarea definida en XML.
 
 
 ```
@@ -123,13 +123,13 @@ Programador de tareas incluye una herramienta de línea de comandos integrada, s
 
 
 
-Para guardar la tarea en un equipo Windows, guarde el código XML anterior como un archivo de texto y use esta línea de comandos:
+Para guardar la tarea en un Windows, guarde el XML anterior como un archivo de texto y use esta línea de comandos:
 
 `Schtasks.exe /create /tn <task name> /xml <text file name>`
 
-**Usar C**
+**Uso de C**
 
-También se puede crear una tarea de mantenimiento automática mediante código C. A continuación se muestra un ejemplo de código que se puede usar para configurar las opciones de mantenimiento automático de una tarea:
+También Mantenimiento automático tarea de creación mediante código C. A continuación se muestra un ejemplo de código que se puede usar para configurar la configuración de Mantenimiento automático tarea:
 
 
 ```
@@ -408,20 +408,20 @@ Compruebe que la tarea se ha creado correctamente y se ejecuta como parte del ma
 
 **Validación de la creación de tareas**
 
-Use esta línea de comandos para exportar la definición de la tarea a un archivo y asegurarse de que la definición de la tarea es la esperada:
+Use esta línea de comandos para exportar la definición de tarea a un archivo y asegurarse de que la definición de tarea es la esperada:
 
 `Schtasks.exe /Query /tn<task name> /xml <text file name>`
 
 **Validación de la ejecución de tareas**
 
-Ejecute esta línea de comandos para iniciar la tarea y validar que la interfaz de usuario de Programador de tareas (taskschd. msc) muestra que la tarea se ha ejecutado:
+Ejecute esta línea de comandos para iniciar la tarea y compruebe que Programador de tareas interfaz de usuario (taskschd.msc) muestra que la tarea se ha ejecutado:
 
 `Schtasks.exe /Run /tn<task name>`
 
 ## <a name="resources"></a>Recursos
 
--   [Programación de tareas 2,0](/previous-versions/bb756979(v=msdn.10))
+-   [Programación de tareas 2.0](/previous-versions/bb756979(v=msdn.10))
 
- 
+ 
 
- 
+ 

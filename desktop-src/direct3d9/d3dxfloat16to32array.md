@@ -86,7 +86,7 @@ Puntero a una matriz de flotantes de 32 bits.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

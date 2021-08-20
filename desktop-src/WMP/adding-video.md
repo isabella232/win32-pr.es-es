@@ -1,26 +1,26 @@
 ---
-title: Agregar vídeo
-description: Agregar vídeo
+title: Adición de vídeo
+description: Adición de vídeo
 ms.assetid: 6f20a9ad-e92e-4774-868d-ad0e071f4935
 keywords:
-- crear máscaras, vídeo
-- Máscaras de Windows Media Player, vídeo
+- crear máscaras,vídeo
+- Reproductor de Windows Media máscaras,vídeo
 - máscaras, vídeo
 - vídeo en máscaras, agregar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cc952f2fa80536bc6b2bb9ef3b43c6730616af3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 099778395146cb0bf0f27b483d55dd75c0fb8a0b28b879cc2d388f8e8cb7ba75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055413"
 ---
-# <a name="adding-video"></a>Agregar vídeo
+# <a name="adding-video"></a>Adición de vídeo
 
-Puede Agregar un vídeo al archivo simplemente mediante el elemento de **vídeo** y definiendo dónde desea colocar la ventana de vídeo.
+Puede agregar un vídeo al archivo simplemente con el elemento **VIDEO** y definir dónde desea colocar la ventana de vídeo.
 
-Use el mismo código que en la sección elegir archivos; lo único que debe hacer es agregar el elemento de **vídeo** con los atributos superior, izquierdo, ancho y alto.
+Use el mismo código que hizo en la sección Elegir archivos; Todo lo que necesita hacer es agregar el elemento **VIDEO** con los atributos superior, izquierdo, ancho y alto.
 
 
 ```C++
@@ -34,9 +34,9 @@ Use el mismo código que en la sección elegir archivos; lo único que debe hace
 
 
 
-Cuando reproduzca un vídeo, se mostrará en la ventana. La imagen del ejemplo de vídeo se ha modificado para crear una máscara ligeramente más grande. Dado que las capas se usaron en Photoshop, los botones se movieron fácilmente y se creó un nuevo conjunto con mucha rapidez. Solo se ha cambiado la imagen de fondo. Se usó un relleno en una capa en blanco y se agregó un efecto de bisel y de relieve.
+Después, al reproducir un vídeo, se mostrará en la ventana. El arte del ejemplo de vídeo se modificó para crear una máscara ligeramente mayor. Dado que las capas se usaron en Photoshop, los botones se movieron fácilmente y se creó un nuevo conjunto muy rápidamente. Solo se cambió la imagen de fondo. Se usó un relleno en una capa en blanco y se agregó un efecto bisel y relieve.
 
-Puede ver una máscara de vídeo similar en la sección de ejemplo del SDK.
+Puede ver una máscara de vídeo de trabajo similar en la sección de ejemplo del SDK.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -45,9 +45,9 @@ Puede ver una máscara de vídeo similar en la sección de ejemplo del SDK.
 [**Guía de creación de máscaras**](skin-creation-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

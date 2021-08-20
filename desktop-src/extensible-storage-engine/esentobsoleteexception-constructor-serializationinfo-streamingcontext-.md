@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentObsoleteException (SerializationInfo, StreamingContext)'
-title: Constructor EsentObsoleteException (SerializationInfo, StreamingContext)
+description: 'Más información sobre: Constructor EsentObsoleteException (SerializationInfo, StreamingContext)'
+title: EsentObsoleteException constructor (SerializationInfo, StreamingContext)
 TOCTitle: EsentObsoleteException constructor (SerializationInfo, StreamingContext)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentObsoleteException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentobsoleteexception.esentobsoleteexception(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b287a61396f0d908c888b84553e5dc67df907be4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b114078e25cd394caa294dac5604502a4a2f783945914a44423b1c8681c105a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119040113"
 ---
-# <a name="esentobsoleteexception-constructor-serializationinfo-streamingcontext"></a>Constructor EsentObsoleteException (SerializationInfo, StreamingContext)
+# <a name="esentobsoleteexception-constructor-serializationinfo-streamingcontext"></a>EsentObsoleteException constructor (SerializationInfo, StreamingContext)
 
-Inicializa una nueva instancia de la clase EsentObsoleteException. Este constructor se utiliza para deserializar una excepción serializada.
+Inicializa una nueva instancia de la clase EsentObsoleteException. Este constructor se usa para deserializar una excepción serializada.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,14 +59,14 @@ protected EsentObsoleteException(
 #### <a name="parameters"></a>Parámetros
 
   - info  
-    Tipo: [System. Runtime. Serialization. SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
+    Tipo: [System.Runtime.Serialization.SerializationInfo](/dotnet/api/system.runtime.serialization.serializationinfo)  
     
-    Los datos necesarios para deserializar el objeto.
+    Datos necesarios para deserializar el objeto.
 
 <!-- end list -->
 
   - context  
-    Tipo: [System. Runtime. Serialization. StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
+    Tipo: [System.Runtime.Serialization.StreamingContext](/dotnet/api/system.runtime.serialization.streamingcontext)  
     
     Contexto de la deserialización.
 
@@ -78,6 +78,6 @@ protected EsentObsoleteException(
 
 [Miembros de EsentObsoleteException](./esentobsoleteexception-members.md)
 
-[Sobrecarga EsentObsoleteException](./esentobsoleteexception-constructor.md)
+[Sobrecarga de EsentObsoleteException](./esentobsoleteexception-constructor.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

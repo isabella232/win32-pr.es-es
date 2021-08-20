@@ -1,7 +1,7 @@
 ---
 description: El método AddAfterI inserta un elemento después de la posición especificada.
 ms.assetid: 6da6c1ed-5f22-4364-b636-64b5a0ce1560
-title: Método CBaseList. AddAfterI (Wxlist. h)
+title: Método CBaseList.AddAfterI (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 760c0bea3a213d7126ea795e9575b3897117f7a1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b72be7342e6085b773ef2493f5ad138f73349dffcdafc1a60a380692df3f16ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016993"
 ---
-# <a name="cbaselistaddafteri-method"></a>CBaseList. AddAfterI, método
+# <a name="cbaselistaddafteri-method"></a>Método CBaseList.AddAfterI
 
 El `AddAfterI` método inserta un elemento después de la posición especificada.
 
@@ -46,14 +46,14 @@ POSITION AddAfterI(
 *pos* 
 </dt> <dd>
 
-Posición detrás de la que se va a agregar el elemento.
+Posición después de la cual se va a agregar el elemento.
 
 </dd> <dt>
 
 *pObj* 
 </dt> <dd>
 
-Puntero al elemento que se va a agregar.
+Puntero al elemento que se agregará.
 
 </dd> </dl>
 
@@ -61,9 +61,9 @@ Puntero al elemento que se va a agregar.
 
 Devuelve el indicador de posición del elemento insertado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si *pos* es **null**, este método agrega el elemento al encabezado de la lista (equivalente a llamar al método [**CBaseList:: AddHeadI**](cbaselist-addheadi.md) ).
+Si *pos* es **NULL,** este método agrega el elemento al final de la lista (equivalente a llamar al método [**CBaseList::AddHeadI).**](cbaselist-addheadi.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Si *pos* es **null**, este método agrega el elemento al encabezado de la lista 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Si *pos* es **null**, este método agrega el elemento al encabezado de la lista 
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

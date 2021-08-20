@@ -1,14 +1,14 @@
 ---
-title: Propiedad AudioQualityMode de IMsRdpClientAdvancedSettings7
+title: Propiedad IMsRdpClientAdvancedSettings7 AudioQualityMode
 description: Especifica o recupera un valor que indica la configuración del modo de calidad de audio para el audio redirigido. De forma predeterminada, se establece en 0.
 ms.assetid: 9945c524-ca50-41ae-a7cf-1386cd758c0f
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad AudioQualityMode
-- Propiedad AudioQualityMode Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad AudioQualityMode
-- Propiedad AudioQualityMode Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad AudioQualityMode
+- Propiedad AudioQualityMode Servicios de Escritorio remoto
+- Propiedad AudioQualityMode Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad AudioQualityMode
+- Propiedad AudioQualityMode Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad AudioQualityMode
 topic_type:
 - apiref
 api_name:
@@ -24,20 +24,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fdfc19176e03f8979e5adb25bf0c9eaf4ceed9f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1635c2ed01144a640b624a014959a4847ae5f746502267444d958a20b959eef9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001313"
 ---
-# <a name="imsrdpclientadvancedsettings7audioqualitymode-property"></a>IMsRdpClientAdvancedSettings7:: AudioQualityMode (propiedad)
+# <a name="imsrdpclientadvancedsettings7audioqualitymode-property"></a>IMsRdpClientAdvancedSettings7::AudioQualityMode, propiedad
 
 Especifica o recupera un valor que indica la configuración del modo de calidad de audio para el audio redirigido. De forma predeterminada, se establece en 0.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -63,7 +63,7 @@ Los valores posibles son:
 0
 </dt> <dd>
 
-Calidad de audio dinámica. Esta es la configuración de calidad de audio predeterminada. El servidor ajusta dinámicamente la calidad de salida de audio en respuesta a las condiciones de red y a las capacidades de cliente y servidor.
+Calidad de audio dinámico. Esta es la configuración de calidad de audio predeterminada. El servidor ajusta dinámicamente la calidad de salida de audio en respuesta a las condiciones de red y las funcionalidades de cliente y servidor.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Calidad de audio media. El servidor usa un formato fijo pero comprimido para la 
 2
 </dt> <dd>
 
-Calidad de audio alta. El servidor proporciona una salida de audio en formato PCM sin comprimir con una sobrecarga de procesamiento menor para la latencia.
+Alta calidad de audio. El servidor proporciona salidas de audio en formato PCM sin comprimir con una menor sobrecarga de procesamiento para la latencia.
 
 </dd> </dl>
 
@@ -87,7 +87,7 @@ Calidad de audio alta. El servidor proporciona una salida de audio en formato PC
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                             |
+| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                                |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>           |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>           |

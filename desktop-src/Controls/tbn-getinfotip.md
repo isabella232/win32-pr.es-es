@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TBN_GETINFOTIP (commctrl. h)
-description: Recupera información de recuadro informativo para un elemento de la barra de herramientas. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: TBN_GETINFOTIP de notificación (Commctrl.h)
+description: Recupera información sobre información sobre un elemento de la barra de herramientas. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 877de60c-f6e1-440a-81f0-d66ab443c985
 keywords:
-- TBN_GETINFOTIP controles de código de notificación de Windows
+- TBN_GETINFOTIP código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fda2c1b181ebea1840b153b8b2df8328b3f2cc8d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2b6adb47a940ce6795047a1aca8bb7cbdc0899a142c132ab8f6f39e6bb089f1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077909"
 ---
-# <a name="tbn_getinfotip-notification-code"></a>Código de notificación de GETINFOTIP de TBN \_
+# <a name="tbn_getinfotip-notification-code"></a>Código de notificación \_ DE TBN GETINFOTIP
 
-Recupera información de recuadro informativo para un elemento de la barra de herramientas. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Recupera información sobre información sobre un elemento de la barra de herramientas. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,7 +43,7 @@ TBN_GETINFOTIP
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMTBGETINFOTIP**](/windows/win32/api/commctrl/ns-commctrl-nmtbgetinfotipa) que contiene información sobre los elementos y recibe información de recuadro informativo.
+Puntero a una [**estructura NMTBGETINFOTIP**](/windows/win32/api/commctrl/ns-commctrl-nmtbgetinfotipa) que contiene información de elementos y recibe información sobre información.
 
 </dd> </dl>
 
@@ -51,9 +51,9 @@ Puntero a una estructura [**NMTBGETINFOTIP**](/windows/win32/api/commctrl/ns-com
 
 El control omite el valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La compatibilidad con el recuadro informativo de la barra de herramientas permite que la barra de herramientas muestre información sobre herramientas para los elementos que tienen un tamaño de INFOTIPSIZE caracteres. Si no se procesa este código de notificación, la barra de herramientas usará el texto del elemento para el recuadro informativo.
+La compatibilidad con la información sobre la información en la barra de herramientas permite que la barra de herramientas muestre información sobre herramientas para elementos tan grandes como los caracteres INFOTIPSIZE. Si no se procesa este código de notificación, la barra de herramientas usará el texto del elemento para la información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ La compatibilidad con el recuadro informativo de la barra de herramientas permit
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TBN \_ GETINFOTIPW** (Unicode) y **TBN \_ GETINFOTIPA** (ANSI)<br/>             |
 
 

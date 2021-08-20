@@ -1,7 +1,7 @@
 ---
 description: El método PerformanceAlignWindow alinea la posición de la ventana con los límites DWORD para obtener el máximo rendimiento.
 ms.assetid: e28950bc-2510-45b9-9c9c-c2a9dbc3dc02
-title: Método CBaseWindow. PerformanceAlignWindow (Winutil. h)
+title: Método CBaseWindow.PerformanceAlignWindow (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e6e7a54372743d430cd904f47c79414d149cf033
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a3c077b6cf00f61565124f3d79ad905f6d34a3d8da50d58396e2df1bd35b0d60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016473"
 ---
-# <a name="cbasewindowperformancealignwindow-method"></a>CBaseWindow. PerformanceAlignWindow, método
+# <a name="cbasewindowperformancealignwindow-method"></a>Método CBaseWindow.PerformanceAlignWindow
 
-El `PerformanceAlignWindow` método alinea la posición de la ventana con los límites **DWORD** para obtener el máximo rendimiento.
+El `PerformanceAlignWindow` método alinea la posición de la ventana con los **límites DWORD** para obtener el máximo rendimiento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método alinea los bordes izquierdo y superior de la ventana con los límites de DWORD, lo que puede mejorar el rendimiento. Si la ventana tiene un elemento primario, el método devuelve S \_ correcto, pero realiza la alineación.
+Este método alinea los bordes izquierdo y superior de la ventana con los límites DWORD, lo que puede mejorar el rendimiento. Si la ventana tiene un elemento primario, el método devuelve S \_ OK pero realiza la alineación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Este método alinea los bordes izquierdo y superior de la ventana con los límit
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Este método alinea los bordes izquierdo y superior de la ventana con los límit
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

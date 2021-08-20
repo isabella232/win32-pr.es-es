@@ -1,7 +1,7 @@
 ---
-description: Puntero al CLSID del objeto.
+description: Puntero al CLSID del objeto .
 ms.assetid: 629675e9-4b8a-4c1d-a2be-9eb2764ff5a0
-title: 'Miembro CFactoryTemplate:: m_ClsID (ComBase. h)'
+title: CFactoryTemplate::m_ClsID miembro (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7b7d205525c0aebaa1217bb6ebffc785f0e16baa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: efe09727ba26a85c7318d67f003accdaea994b87b7c9a5e5718637ac1de91c4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660851"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074229"
 ---
-# <a name="cfactorytemplatem_clsid-member"></a>Miembro ClsID CFactoryTemplate:: m \_
+# <a name="cfactorytemplatem_clsid-member"></a>CFactoryTemplate::m \_ ClsID miembro
 
-Puntero al CLSID del objeto.
+Puntero al CLSID del objeto .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ const CLSID *m_ClsID;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>ComBase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Combase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ const CLSID *m_ClsID;
 
 <dl> <dt>
 
-[**Clase CFactoryTemplate**](cfactorytemplate.md)
+[**CFactoryTemplate (clase)**](cfactorytemplate.md)
 </dt> </dl>
 
  

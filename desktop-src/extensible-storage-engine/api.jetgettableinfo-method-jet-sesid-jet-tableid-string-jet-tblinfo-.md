@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: método API. JetGetTableInfo (JET_SESID, JET_TABLEID, cadena, JET_TblInfo)'
-title: Método API. JetGetTableInfo (JET_SESID, JET_TABLEID, cadena, JET_TblInfo)
+description: 'Más información sobre: Método Api.JetGetTableInfo (JET_SESID, JET_TABLEID, String, JET_TblInfo)'
+title: Método Api.JetGetTableInfo (JET_SESID, JET_TABLEID, String, JET_TblInfo)
 TOCTitle: JetGetTableInfo method (JET_SESID, JET_TABLEID, String, JET_TblInfo)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetTableInfo(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.String@,Microsoft.Isam.Esent.Interop.JET_TblInfo)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgettableinfo(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 01431c018e633a5851f8ca88eb2f2e6f0e9065a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a742aaa8ee6bd8c296f0a6aa912a9a4ca8f4ed48cf560e77ce469a13a2712fb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119117615"
 ---
-# <a name="apijetgettableinfo-method-jet_sesid-jet_tableid-string-jet_tblinfo"></a>Método API. JetGetTableInfo (JET_SESID, JET_TABLEID, cadena, JET_TblInfo)
+# <a name="apijetgettableinfo-method-jet_sesid-jet_tableid-string-jet_tblinfo"></a>Método Api.JetGetTableInfo (JET_SESID, JET_TABLEID, String, JET_TblInfo)
 
 Recupera varios fragmentos de información sobre una tabla de una base de datos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,43 +64,43 @@ public static void JetGetTableInfo(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Tabla de la que se va a recuperar información.
+    Tabla sobre la que se recuperará información.
 
 <!-- end list -->
 
   - resultado  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Información recuperada.
 
 <!-- end list -->
 
   - infoLevel  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TblInfo](./jet-tblinfo-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TblInfo](./jet-tblinfo-enumeration.md)  
     
-    Tipo de información que se va a recuperar.
+    Tipo de información que se recuperará.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta sobrecarga se usa con [Name](./jet-tblinfo-enumeration.md) y [TemplateTableName](./jet-tblinfo-enumeration.md).
+Esta sobrecarga se usa con [Name](./jet-tblinfo-enumeration.md) y [TemplateTableName.](./jet-tblinfo-enumeration.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Sobrecarga JetGetTableInfo](./api.jetgettableinfo-method.md)
+[Sobrecarga de JetGetTableInfo](./api.jetgettableinfo-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

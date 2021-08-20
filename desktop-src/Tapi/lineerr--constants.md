@@ -1,17 +1,17 @@
 ---
 description: A continuación se muestra una lista de códigos de error que TAPI puede devolver al invocar operaciones en líneas, direcciones o llamadas.
 ms.assetid: bdaf60d1-6ff2-4bd6-b246-8556d6cae644
-title: Constantes de LINEERR_ (TAPI. h)
+title: LINEERR_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ed7757377d26dbde832b7ef50f275b45e21760d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: de8e362e942f7819b0e15fcd7e8359c308e931868d57cc9da84acd62fe9e531d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105691050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119254644"
 ---
-# <a name="lineerr_-constants"></a>Constantes de LINEERR \_
+# <a name="lineerr_-constants"></a>Constantes \_ LINEERR
 
 A continuación se muestra una lista de códigos de error que TAPI puede devolver al invocar operaciones en líneas, direcciones o llamadas. Para obtener más información sobre cómo determinar cuál de estos códigos de error puede devolver una función determinada, vea las descripciones de funciones individuales.
 
@@ -22,7 +22,7 @@ A continuación se muestra una lista de códigos de error que TAPI puede devolve
 
 
 
-La dirección especificada está bloqueada para marcarse en la llamada especificada.
+Se bloquea la marcación de la dirección especificada en la llamada especificada.
 
 
 </dt> </dl> </dd> <dt>
@@ -37,12 +37,12 @@ La dirección de llamada de destino tiene habilitado el bloqueo de llamadas.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEERR_ALLOCATED"></span><span id="lineerr_allocated"></span>**LINEERR \_ asignado**
+<span id="LINEERR_ALLOCATED"></span><span id="lineerr_allocated"></span>**LINEERR \_ ASIGNADO**
 </dt> <dd> <dl> <dt>
 
 
 
-No se puede abrir la línea debido a una condición persistente, como la de un puerto serie abierto exclusivamente por otro proceso.
+La línea no se puede abrir debido a una condición persistente, como la de un puerto serie que otro proceso abre exclusivamente.
 
 
 </dt> </dl> </dd> <dt>
@@ -52,7 +52,7 @@ No se puede abrir la línea debido a una condición persistente, como la de un p
 
 
 
-El identificador de dispositivo o el identificador de dispositivo de línea especificado, como en un parámetro *dwDeviceID* , no es válido o está fuera del intervalo.
+El identificador de dispositivo especificado o el identificador de dispositivo de línea, como en un *parámetro dwDeviceID,* no es válido o está fuera del intervalo.
 
 
 </dt> </dl> </dd> <dt>
@@ -62,12 +62,12 @@ El identificador de dispositivo o el identificador de dispositivo de línea espe
 
 
 
-El miembro del modo de portador de [**LINECALLPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linecallparams) no es válido, el modo de portador especificado en **LINECALLPARAMS** no está disponible o el modo de portador de llamada no se puede cambiar al modo de portador especificado.
+El miembro de modo de portador de [**LINECALLPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linecallparams) no es válido, el modo de portador especificado en **LINECALLPARAMS** no está disponible o el modo de portador de llamada no se puede cambiar al modo de portador especificado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEERR_BILLINGREJECTED"></span><span id="lineerr_billingrejected"></span>**LINEERR \_ BILLINGREJECTED**
+<span id="LINEERR_BILLINGREJECTED"></span><span id="lineerr_billingrejected"></span>**FACTURACIÓN DE \_ LINEERRREÍVER**
 </dt> <dd> <dl> <dt>
 
 
@@ -82,7 +82,7 @@ Se rechazó el modo de facturación de la llamada.
 
 
 
-Todos los aspectos de la llamada en la dirección especificada están actualmente en uso.
+Todas las apariciones de llamadas en la dirección especificada están actualmente en uso.
 
 
 </dt> </dl> </dd> <dt>
@@ -102,7 +102,7 @@ Se ha superado el número máximo de finalizaciones de llamadas pendientes.
 
 
 
-Se ha alcanzado el número máximo de entidades de una conferencia o el número de entidades solicitado no se puede satisfacer.
+Se ha alcanzado el número máximo de partes para una conferencia o no se puede satisfacer el número solicitado de partes.
 
 
 </dt> </dl> </dd> <dt>
@@ -112,7 +112,7 @@ Se ha alcanzado el número máximo de entidades de una conferencia o el número 
 
 
 
-El parámetro de dirección de marcado contiene caracteres de control de marcado no procesados por el proveedor de servicios.
+El parámetro de dirección que se puede marcar contiene caracteres de control de marcado no procesados por el proveedor de servicios.
 
 
 </dt> </dl> </dd> <dt>
@@ -122,7 +122,7 @@ El parámetro de dirección de marcado contiene caracteres de control de marcado
 
 
 
-El parámetro de dirección de marcado contiene caracteres de control de marcado no procesados por el proveedor de servicios.
+El parámetro de dirección que se puede marcar contiene caracteres de control de marcado no procesados por el proveedor de servicios.
 
 
 </dt> </dl> </dd> <dt>
@@ -132,7 +132,7 @@ El parámetro de dirección de marcado contiene caracteres de control de marcado
 
 
 
-El parámetro de dirección de marcado contiene caracteres de control de marcado no procesados por el proveedor de servicios.
+El parámetro de dirección que se puede marcar contiene caracteres de control de marcado no procesados por el proveedor de servicios.
 
 
 </dt> </dl> </dd> <dt>
@@ -142,7 +142,7 @@ El parámetro de dirección de marcado contiene caracteres de control de marcado
 
 
 
-El parámetro de dirección de marcado contiene caracteres de control de marcado no procesados por el proveedor de servicios.
+El parámetro de dirección que se puede marcar contiene caracteres de control de marcado no procesados por el proveedor de servicios.
 
 
 </dt> </dl> </dd> <dt>
@@ -152,17 +152,17 @@ El parámetro de dirección de marcado contiene caracteres de control de marcado
 
 
 
-Uso del modificador de marcado (:) no se admite. Este valor solo se expone a las aplicaciones que negocian una versión de TAPI 2,0 o posterior.
+Uso del modificador de marcación (:) no se admite. Este valor solo se expone a las aplicaciones que negocian una versión TAPI de 2.0 o posterior.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEERR_DISCONNECTED"></span><span id="lineerr_disconnected"></span>**LINEERR \_ DESconectado**
+<span id="LINEERR_DISCONNECTED"></span><span id="lineerr_disconnected"></span>**LINEERR \_ DESCONECTADO**
 </dt> <dd> <dl> <dt>
 
 
 
-La llamada se ha desconectado. Este valor solo se expone a las aplicaciones que negocian una versión de TAPI 2,2 o posterior.
+La llamada se ha desconectado. Este valor solo se expone a las aplicaciones que negocian una versión TAPI de 2.2 o posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -172,7 +172,7 @@ La llamada se ha desconectado. Este valor solo se expone a las aplicaciones que 
 
 
 
-La aplicación solicitó una versión de TAPI o un intervalo de versiones que es incompatible con, o no es compatible con, la implementación de la API de telefonía y el proveedor de servicios correspondiente.
+La aplicación solicitó una versión de TAPI o un intervalo de versiones que sea incompatible con la implementación de la API de telefonía y el proveedor de servicios correspondiente, o que no pueda ser compatible con él.
 
 
 </dt> </dl> </dd> <dt>
@@ -182,7 +182,7 @@ La aplicación solicitó una versión de TAPI o un intervalo de versiones que es
 
 
 
-La aplicación solicitó un intervalo de versiones de la extensión que no es válido o no es compatible con el proveedor de servicios correspondiente.
+La aplicación solicitó un intervalo de versiones de extensión que no es válido o no es compatible con el proveedor de servicios correspondiente.
 
 
 </dt> </dl> </dd> <dt>
@@ -192,17 +192,17 @@ La aplicación solicitó un intervalo de versiones de la extensión que no es v�
 
 
 
-TAPI no puede leer ni comprender correctamente el archivo de Telephon.ini debido a incoherencias internas o problemas de formato. Por ejemplo, la \[ \] sección ubicaciones, \[ tarjetas \] o \[ países \] del archivo Telephon.ini puede estar dañada o ser incoherente.
+TAPI Telephon.ini archivo no se puede leer ni entender correctamente debido a incoherencias internas o problemas de formato. Por ejemplo, la sección Ubicaciones, Tarjetas o Países del archivo Telephon.ini puede \[ \] estar dañada o \[ \] \[ \] incoherente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEERR_INUSE"></span><span id="lineerr_inuse"></span>**LINEERR \_ inuse**
+<span id="LINEERR_INUSE"></span><span id="lineerr_inuse"></span>**USO DE \_ LINEERR**
 </dt> <dd> <dl> <dt>
 
 
 
-El dispositivo de línea está en uso y no se puede configurar actualmente, permitir que se agregue una entidad, permitir la respuesta de una llamada, permitir que se realice una llamada o permitir la transferencia de una llamada.
+El dispositivo de línea está en uso y no se puede configurar actualmente, permitir que se agregó una entidad, permitir que se respondiese una llamada, permitir la colocación de una llamada o permitir la transferencia de una llamada.
 
 
 </dt> </dl> </dd> <dt>
@@ -212,7 +212,7 @@ El dispositivo de línea está en uso y no se puede configurar actualmente, perm
 
 
 
-Una dirección especificada no es válida o no está permitida. Si no es válido, la dirección contiene caracteres o dígitos no válidos, o la dirección de destino contiene caracteres de control de marcado (W, @, $ o?) que no son compatibles con el proveedor de servicios. Si no se permite, la dirección especificada no está asignada a la línea especificada o no es válida para la redirección de direcciones.
+Una dirección especificada no es válida o no está permitida. Si no es válida, la dirección contiene caracteres o dígitos no válidos, o la dirección de destino contiene caracteres de control de marcado (W, @, $o ?) que no son compatibles con el proveedor de servicios. Si no se permite, la dirección especificada no se asigna a la línea especificada o no es válida para el redireccionamiento de direcciones.
 
 
 </dt> </dl> </dd> <dt>
@@ -242,7 +242,7 @@ El modo de dirección especificado no es válido.
 
 
 
-El estado de la dirección especificada contiene uno o varios bits que no son [**\_ constantes LINEADDRESSSTATE**](lineaddressstate--constants.md).
+El estado de dirección especificado contiene uno o varios bits que no son [**constantes LINEADDRESSSTATE. \_**](lineaddressstate--constants.md)
 
 
 </dt> </dl> </dd> <dt>
@@ -252,7 +252,7 @@ El estado de la dirección especificada contiene uno o varios bits que no son [*
 
 
 
-La aplicación hizo referencia a un tipo de dirección que no es válido. Este valor solo se expone a las aplicaciones que negocian una versión de TAPI 3,0 o posterior.
+La aplicación hace referencia a un tipo de dirección que no es válido. Este valor solo se expone a las aplicaciones que negocian una versión TAPI de 3.0 o posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -262,7 +262,7 @@ La aplicación hizo referencia a un tipo de dirección que no es válido. Este v
 
 
 
-La actividad del agente especificada no es válida.
+La actividad de agente especificada no es válida.
 
 
 </dt> </dl> </dd> <dt>
@@ -272,7 +272,7 @@ La actividad del agente especificada no es válida.
 
 
 
-La aplicación que invoca esta operación es el destino de la entrega indirecta. Es decir, TAPI ha determinado que la aplicación que realiza la llamada es también la aplicación de mayor prioridad para el tipo de medio especificado. Este valor solo se expone a las aplicaciones que negocian una versión de TAPI 2,0 o posterior.
+La aplicación que invoca esta operación es el destino de la entrega indirecta. Es decir, TAPI ha determinado que la aplicación que realiza la llamada también es la aplicación de prioridad más alta para el tipo de medio especificado. Este valor solo se expone a las aplicaciones que negocian una versión TAPI de 2.0 o posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -292,7 +292,7 @@ La información del grupo de agentes especificado no es válida o contiene error
 
 
 
-La aplicación hizo referencia a un grupo de agentes que no es válido. Este valor solo se expone a las aplicaciones que negocian una versión de TAPI 2,0 o posterior.
+La aplicación hace referencia a un grupo de agentes que no es válido. Este valor solo se expone a las aplicaciones que negocian una versión TAPI de 2.0 o posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -302,7 +302,7 @@ La aplicación hizo referencia a un grupo de agentes que no es válido. Este val
 
 
 
-El identificador de agente especificado no es válido.
+El identificador del agente especificado no es válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -312,7 +312,7 @@ El identificador de agente especificado no es válido.
 
 
 
-Se usó un identificador de agente no válido. Este valor solo se expone a las aplicaciones que negocian una versión de TAPI 2,0 o posterior.
+Se usó un identificador de agente no válido. Este valor solo se expone a las aplicaciones que negocian una versión TAPI de 2.0 o posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -322,7 +322,7 @@ Se usó un identificador de agente no válido. Este valor solo se expone a las a
 
 
 
-El estado de sesión del agente no es válido. Este valor solo se expone a las aplicaciones que negocian una versión de TAPI 2,2 o posterior.
+El estado de sesión del agente no es válido. Este valor solo se expone a las aplicaciones que negocian una versión TAPI de 2.2 o posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -342,7 +342,7 @@ El estado del agente especificado no es válido o contiene errores. No se ha rea
 
 
 
-La aplicación hizo referencia a un estado del agente que no es válido. Este valor solo se expone a las aplicaciones que negocian una versión de TAPI 2,0 o posterior.
+La aplicación hace referencia a un estado de agente que no es válido. Este valor solo se expone a las aplicaciones que negocian una versión TAPI de 2.0 o posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -352,7 +352,7 @@ La aplicación hizo referencia a un estado del agente que no es válido. Este va
 
 
 
-El identificador de la aplicación (como se especifica mediante un parámetro *hLineApp* ) o el identificador de registro de la aplicación no es válido.
+El identificador de la aplicación (por ejemplo, especificado por un *parámetro hLineApp)* o el identificador de registro de la aplicación no es válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -362,7 +362,7 @@ El identificador de la aplicación (como se especifica mediante un parámetro *h
 
 
 
-El nombre de aplicación especificado no es válido. Si la aplicación especifica un nombre de aplicación, se supone que la cadena no contiene ningún carácter que no se pueda mostrar y está terminada en cero.
+El nombre de aplicación especificado no es válido. Si la aplicación especifica un nombre de aplicación, se supone que la cadena no contiene ningún carácter que no se pueda mostrar y termina en cero.
 
 
 </dt> </dl> </dd> <dt>
@@ -392,7 +392,7 @@ La finalización especificada no es válida.
 
 
 
-El identificador de llamada especificado no es válido. Por ejemplo, el identificador no es **null** , pero no pertenece a la línea especificada. En algunos casos, el identificador del dispositivo de llamada especificado no es válido.
+El identificador de llamada especificado no es válido. Por ejemplo, el identificador no es **NULL,** pero no pertenece a la línea determinada. En algunos casos, el identificador de dispositivo de llamada especificado no es válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -422,7 +422,7 @@ El parámetro de privilegio de llamada especificado no es válido.
 
 
 
-El parámetro Select especificado no es válido.
+El parámetro select especificado no es válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -432,7 +432,7 @@ El parámetro Select especificado no es válido.
 
 
 
-El estado actual de una llamada no tiene un estado válido para la operación solicitada.
+El estado actual de una llamada no está en un estado válido para la operación solicitada.
 
 
 </dt> </dl> </dd> <dt>
@@ -442,7 +442,7 @@ El estado actual de una llamada no tiene un estado válido para la operación so
 
 
 
-La lista de Estados de llamada especificada no es válida.
+La lista de estados de llamada especificada no es válida.
 
 
 </dt> </dl> </dd> <dt>
@@ -452,7 +452,7 @@ La lista de Estados de llamada especificada no es válida.
 
 
 
-No se encontró el identificador de tarjeta permanente especificado en *dwCard* en ninguna entrada de la \[ \] sección de tarjetas del registro.
+No se encontró el identificador de tarjeta permanente especificado en *dwCard* en ninguna entrada de la \[ sección \] Tarjetas del Registro.
 
 
 </dt> </dl> </dd> <dt>
@@ -472,7 +472,7 @@ El identificador de finalización no es válido.
 
 
 
-El identificador de llamada especificado para la llamada de conferencia no es válido o no es un identificador de una llamada de conferencia.
+El identificador de llamada especificado para la llamada de conferencia no es válido o no es un identificador para una llamada de conferencia.
 
 
 </dt> </dl> </dd> <dt>
@@ -502,7 +502,7 @@ El código de país o región especificado no es válido.
 
 
 
-El dispositivo de línea no tiene ningún dispositivo asociado para la clase de dispositivo especificada o la línea especificada no admite la clase de dispositivo indicada.
+El dispositivo de línea no tiene ningún dispositivo asociado para la clase de dispositivo determinada o la línea especificada no admite la clase de dispositivo indicada.
 
 
 </dt> </dl> </dd> <dt>
@@ -557,7 +557,7 @@ Los dígitos de terminación especificados no son válidos.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEERR_INVALEXTVERSION"></span><span id="lineerr_invalextversion"></span>**LINEERR \_ INVALEXTVERSION**
+<span id="LINEERR_INVALEXTVERSION"></span><span id="lineerr_invalextversion"></span>**LINEERR \_ INXTVERSION**
 </dt> <dd> <dl> <dt>
 
 
@@ -572,7 +572,7 @@ El número de versión de la extensión del proveedor de servicios no es válido
 
 
 
-El parámetro *dwFeature* no es válido.
+El *parámetro dwFeature* no es válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -612,7 +612,7 @@ La llamada, el dispositivo, el dispositivo de línea o el identificador de líne
 
 
 
-No se puede cambiar la configuración del dispositivo en el estado de línea actual. La línea puede estar en uso por otra aplicación o un parámetro *dwLineStates* contiene uno o varios bits que no son [ \_ constantes de LINEDEVSTATE](linedevstate--constants.md). El valor de **LINEERR \_ INVALLINESTATE** también puede indicar que el dispositivo está desconectado o fuera de servicio. Estos Estados se indican mediante el establecimiento de los bits correspondientes a los valores *de \_ Inservice* *LINEDEVSTATUSFLAGS \_ conectados* y LINEDEVSTATUSFLAGS en 0 en el miembro **dwDevStatusFlags** de la estructura [**LINEDEVSTATUS**](/windows/desktop/api/Tapi/ns-tapi-linedevstatus) devuelta por la función [**lineGetLineDevStatus**](/windows/desktop/api/Tapi/nf-tapi-linegetlinedevstatus) .
+La configuración del dispositivo no se puede cambiar en el estado de línea actual. La línea puede estar en uso por otra aplicación o un parámetro *dwLineStates* contiene uno o varios bits que no son [constantes LINEDEVSTATE \_](linedevstate--constants.md). El **valor \_ LINEERR INVALLINESTATE** también puede indicar que el dispositivo está desconectado o fuera de servicio. Estos estados se indican estableciendo los bits correspondientes a los valores *LINEDEVSTATUSFLAGS \_ CONNECTED* y *LINEDEVSTATUSFLAGS \_ INSERVICE* en 0 en el **miembro dwDevStatusFlags** de la estructura [**LINEDEVSTATUS**](/windows/desktop/api/Tapi/ns-tapi-linedevstatus) devuelta por la función [**lineGetLineDevStatus.**](/windows/desktop/api/Tapi/nf-tapi-linegetlinedevstatus)
 
 
 </dt> </dl> </dd> <dt>
@@ -622,7 +622,7 @@ No se puede cambiar la configuración del dispositivo en el estado de línea act
 
 
 
-No se encontró el identificador de ubicación permanente especificado en *dwLocation* en ninguna entrada de la \[ sección locations del \] registro.
+No se encontró el identificador de ubicación permanente especificado en *dwLocation* en ninguna entrada de la \[ sección Ubicaciones del \] Registro.
 
 
 </dt> </dl> </dd> <dt>
@@ -642,7 +642,7 @@ La lista de medios especificada no es válida.
 
 
 
-La lista de tipos de medios (modos) que se van a supervisar contiene información no válida, el parámetro de tipo de medio especificado no es válido o el proveedor de servicios no admite el tipo de medio especificado. Los tipos de medios admitidos en la línea se enumeran en el miembro **dwMediaModes** de la estructura [**LINEDEVCAPS**](/windows/desktop/api/Tapi/ns-tapi-linedevcaps) .
+La lista de tipos de medios (modos) que se va a supervisar contiene información no válida, el parámetro de tipo de medio especificado no es válido o el proveedor de servicios no admite el tipo de medio especificado. Los tipos de medios admitidos en la línea se enumeran en el **miembro dwMediaModes** de la [**estructura LINEDEVCAPS.**](/windows/desktop/api/Tapi/ns-tapi-linedevcaps)
 
 
 </dt> </dl> </dd> <dt>
@@ -652,7 +652,7 @@ La lista de tipos de medios (modos) que se van a supervisar contiene informació
 
 
 
-El número proporcionado en *dwMessageID* está fuera del intervalo especificado por el miembro **dwNumCompletionMessages** en la estructura [**LINEADDRESSCAPS**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps) .
+El número especificado en *dwMessageID* está fuera del intervalo especificado por el **miembro dwNumCompletionMessages** en la [**estructura LINEADDRESSCAPS.**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps)
 
 
 </dt> </dl> </dd> <dt>
@@ -662,7 +662,7 @@ El número proporcionado en *dwMessageID* está fuera del intervalo especificado
 
 
 
-Un parámetro o estructura a la que apunta un parámetro contiene información no válida, un código de país o región no es válido, un identificador de ventana no es válido o el parámetro de lista de reenvío especificado contiene información no válida.
+Un parámetro o estructura a la que apunta un parámetro contiene información no válida, un código de país o región no es válido, un identificador de ventana no es válido o el parámetro de lista de reenvíos especificado contiene información no válida.
 
 
 </dt> </dl> </dd> <dt>
@@ -672,7 +672,7 @@ Un parámetro o estructura a la que apunta un parámetro contiene información n
 
 
 
-El identificador de Park no es válido.
+El identificador del aparcamiento no es válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -682,7 +682,7 @@ El identificador de Park no es válido.
 
 
 
-El modo de estacionamiento especificado no es válido.
+El modo de aparcamiento especificado no es válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -692,7 +692,7 @@ El modo de estacionamiento especificado no es válido.
 
 
 
-La contraseña especificada no es correcta y la acción solicitada no se ha llevado a cabo.
+La contraseña especificada no es correcta y no se ha realizado la acción solicitada.
 
 
 </dt> </dl> </dd> <dt>
@@ -702,7 +702,7 @@ La contraseña especificada no es correcta y la acción solicitada no se ha llev
 
 
 
-La aplicación usó una contraseña no válida. Este valor solo se expone a las aplicaciones que negocian una versión de TAPI 2,0 o posterior.
+La aplicación usó una contraseña no válida. Este valor solo se expone a las aplicaciones que negocian una versión tapi de la versión 2.0 o posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -712,7 +712,7 @@ La aplicación usó una contraseña no válida. Este valor solo se expone a las 
 
 
 
-Uno o varios de los parámetros de puntero especificados (como *lpCallList*, *lpdwAPIVersion*, *lpExtensionID*, *lpdwExtVersion*, *lphIcon*, *lpLineDevCaps* y *lpToneList*) no son válidos o un puntero necesario a un parámetro de salida es **null**.
+Uno o varios de los parámetros de puntero especificados (como *lpCallList,* *lpdwAPIVersion,* *lpExtensionID,* *lpdwExtVersion,* *lphIcon,* *lpLineDevCaps* y *lpToneList)* no son válidos o un puntero necesario a un parámetro de salida es **NULL.**
 
 
 </dt> </dl> </dd> <dt>
@@ -722,7 +722,7 @@ Uno o varios de los parámetros de puntero especificados (como *lpCallList*, *lp
 
 
 
-Se estableció una marca no válida o una combinación de marcas para el parámetro *dwPrivileges* .
+Se estableció una marca no válida o una combinación de marcas para el *parámetro dwPrivileges.*
 
 
 </dt> </dl> </dd> <dt>
@@ -732,7 +732,7 @@ Se estableció una marca no válida o una combinación de marcas para el paráme
 
 
 
-La tasa especificada no es válida.
+La velocidad especificada no es válida.
 
 
 </dt> </dl> </dd> <dt>
@@ -742,7 +742,7 @@ La tasa especificada no es válida.
 
 
 
-El indicador [**LINEREQUESTMODE**](linerequestmode--constants.md) no es válido.
+El [**indicador LINEREQUESTMODE**](linerequestmode--constants.md) no es válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -772,7 +772,7 @@ El parámetro de modos de terminal especificado no es válido.
 
 
 
-No se admiten los tiempos de espera o un valor está fuera del intervalo válido especificado en [**LINEDEVCAPS**](/windows/desktop/api/Tapi/ns-tapi-linedevcaps).
+No se admiten tiempos de espera o un valor queda fuera del intervalo válido especificado en [**LINEDEVCAPS.**](/windows/desktop/api/Tapi/ns-tapi-linedevcaps)
 
 
 </dt> </dl> </dd> <dt>
@@ -782,7 +782,7 @@ No se admiten los tiempos de espera o un valor está fuera del intervalo válido
 
 
 
-El tono personalizado especificado no representa un tono válido o está formado por demasiadas frecuencias o la estructura de tono especificada no describe un tono válido.
+El tono personalizado especificado no representa un tono válido o se forma con demasiadas frecuencias o la estructura de tono especificada no describe un tono válido.
 
 
 </dt> </dl> </dd> <dt>
@@ -792,7 +792,7 @@ El tono personalizado especificado no representa un tono válido o está formado
 
 
 
-La lista de tonos especificada no es válida.
+La lista de tono especificada no es válida.
 
 
 </dt> </dl> </dd> <dt>
@@ -822,12 +822,12 @@ El parámetro de modo de transferencia especificado no es válido.
 
 
 
-LINEMAPPER era el valor pasado en el parámetro *dwDeviceID* , pero no se encontró ninguna línea que coincida con los requisitos especificados en el parámetro *lpCallParams* .
+LINEMAPPER era el valor pasado en el parámetro *dwDeviceID,* pero no se encontraron líneas que coincidan con los requisitos especificados en el *parámetro lpCallParams.*
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEERR_NOCONFERENCE"></span><span id="lineerr_noconference"></span>**LINEERR \_ NOconference**
+<span id="LINEERR_NOCONFERENCE"></span><span id="lineerr_noconference"></span>**LINEERR \_ NOCONFERENCE**
 </dt> <dd> <dl> <dt>
 
 
@@ -837,22 +837,22 @@ La llamada especificada no es un identificador de llamada de conferencia ni una 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEERR_NODEVICE"></span><span id="lineerr_nodevice"></span>**LINEERR \_ Device**
+<span id="LINEERR_NODEVICE"></span><span id="lineerr_nodevice"></span>**LINEERR \_ NODEVICE**
 </dt> <dd> <dl> <dt>
 
 
 
-El identificador de dispositivo especificado, que era válido previamente, ya no se acepta porque el dispositivo asociado se ha quitado del sistema desde la última vez que se inicializó TAPI. Como alternativa, el dispositivo de línea no tiene ningún dispositivo asociado para la clase de dispositivo dada.
+El identificador de dispositivo especificado, que anteriormente era válido, ya no se acepta porque el dispositivo asociado se ha quitado del sistema desde que tapi se inicializó por última vez. Como alternativa, el dispositivo de línea no tiene ningún dispositivo asociado para la clase de dispositivo dada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEERR_NODRIVER"></span><span id="lineerr_nodriver"></span>**LINEERR \_ NOdriver**
+<span id="LINEERR_NODRIVER"></span><span id="lineerr_nodriver"></span>**LINEERR \_ NODRIVER**
 </dt> <dd> <dl> <dt>
 
 
 
-No se pudo encontrar Tapiaddr.dll o el proveedor de servicios de teléfono para el dispositivo especificado encontró que uno de sus componentes falta o está dañado de forma que no se detectó en el momento de la inicialización. Se recomienda que el usuario Use el panel de control de telefonía para corregir el problema.
+O Tapiaddr.dll no se pudo encontrar o el proveedor de servicios telefónicos para el dispositivo especificado encontró que uno de sus componentes falta o está dañado de una manera que no se detectó en el momento de la inicialización. Se debe recomendar al usuario que use el Panel de control telefonía para corregir el problema.
 
 
 </dt> </dl> </dd> <dt>
@@ -872,7 +872,7 @@ Memoria insuficiente para realizar la operación o no se puede bloquear la memor
 
 
 
-Un proveedor de servicios de telefonía que no admite varias instancias se muestra más de una vez en \[ la \] sección proveedores del registro. La aplicación debe aconsejar al usuario que use el panel de control de telefonía para quitar el controlador duplicado.
+Un proveedor de servicios de telefonía que no admite varias instancias se muestra más de una vez en la \[ sección \] Proveedores del Registro. La aplicación debe aconsejar al usuario que use el Panel de control telefonía para quitar el controlador duplicado.
 
 
 </dt> </dl> </dd> <dt>
@@ -887,7 +887,7 @@ No se permiten varias instancias de este proveedor de servicios.
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEERR_NOREQUEST"></span><span id="lineerr_norequest"></span>**LINEERR \_ NOsolicitud**
+<span id="LINEERR_NOREQUEST"></span><span id="lineerr_norequest"></span>**LINEERR \_ NOREQUEST**
 </dt> <dd> <dl> <dt>
 
 
@@ -897,17 +897,17 @@ Actualmente no hay ninguna solicitud pendiente del modo indicado o la aplicació
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEERR_NOTOWNER"></span><span id="lineerr_notowner"></span>**LINEERR \_ NOurbanar**
+<span id="LINEERR_NOTOWNER"></span><span id="lineerr_notowner"></span>**LINEERR \_ NOTOWNER**
 </dt> <dd> <dl> <dt>
 
 
 
-La aplicación no tiene privilegios de propietario en la llamada especificada.
+La aplicación no tiene privilegios de propietario para la llamada especificada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEERR_NOTREGISTERED"></span><span id="lineerr_notregistered"></span>**LINEERR \_ no registrado**
+<span id="LINEERR_NOTREGISTERED"></span><span id="lineerr_notregistered"></span>**LINEERR \_ NOTREGISTERED**
 </dt> <dd> <dl> <dt>
 
 
@@ -922,7 +922,7 @@ La aplicación no está registrada como destinatario de la solicitud para el mod
 
 
 
-No se pudo realizar la operación debido a un motivo desconocido o no especificado.
+Error en la operación por un motivo no especificado o desconocido.
 
 
 </dt> </dl> </dd> <dt>
@@ -947,17 +947,17 @@ Actualmente, el proveedor de servicios no tiene suficiente ancho de banda dispon
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEERR_REINIT"></span><span id="lineerr_reinit"></span>**reinicialización de LINEERR \_**
+<span id="LINEERR_REINIT"></span><span id="lineerr_reinit"></span>**LINEERR \_ REINIT**
 </dt> <dd> <dl> <dt>
 
 
 
-Si se ha solicitado la reinicialización de TAPI, por ejemplo, como resultado de agregar o quitar un proveedor de servicios de telefonía, se rechazarán las solicitudes de [**lineInitialize**](/windows/desktop/api/Tapi/nf-tapi-lineinitialize), [**lineInitializeEx**](/windows/desktop/api/Tapi/nf-tapi-lineinitializeexa)o [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen) con este error hasta que la última aplicación cierre el uso de la API (con [**lineShutdown**](/windows/desktop/api/Tapi/nf-tapi-lineshutdown)), momento en el que la nueva configuración se vuelve efectiva y las aplicaciones vuelven a ser de lineInitialize. 
+Si se ha solicitado la reinicialización de TAPI, por ejemplo, como resultado de agregar o quitar un proveedor de servicios de telefonía, las solicitudes [**lineInitialize**](/windows/desktop/api/Tapi/nf-tapi-lineinitialize), [**lineInitializeEx**](/windows/desktop/api/Tapi/nf-tapi-lineinitializeexa)o [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen) se rechazan con este error hasta que la última aplicación cierra su uso de la API (mediante [**lineShutdown),**](/windows/desktop/api/Tapi/nf-tapi-lineshutdown)momento en el que la nueva configuración se vuelve efectiva y las aplicaciones pueden llamar de nuevo a **lineInitialize** **o lineInitializeEx.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEERR_REINIT"></span><span id="lineerr_reinit"></span>**reinicialización de LINEERR \_**
+<span id="LINEERR_REINIT"></span><span id="lineerr_reinit"></span>**LINEERR \_ REINIT**
 </dt> <dd> <dl> <dt>
 
 
@@ -982,7 +982,7 @@ Hay más solicitudes pendientes de las que el dispositivo puede controlar.
 
 
 
-Recursos insuficientes para completar la operación. Por ejemplo, no se puede abrir una línea debido a un sobrecompromiso dinámico de los recursos.
+Recursos insuficientes para completar la operación. Por ejemplo, no se puede abrir una línea debido a una sobreatención de recursos dinámicos.
 
 
 </dt> </dl> </dd> <dt>
@@ -992,7 +992,7 @@ Recursos insuficientes para completar la operación. Por ejemplo, no se puede ab
 
 
 
-El miembro **dwTotalSize** de una estructura no especifica suficiente memoria para contener la parte fija de la estructura especificada.
+El **miembro dwTotalSize** de una estructura no especifica suficiente memoria para contener la parte fija de la estructura especificada.
 
 
 </dt> </dl> </dd> <dt>
@@ -1002,7 +1002,7 @@ El miembro **dwTotalSize** de una estructura no especifica suficiente memoria pa
 
 
 
-No se encontró un destino para la entrega de llamada. Esto puede ocurrir si la aplicación con nombre no abre la misma línea con el \_ bit de propietario LINECALLPRIVILEGE en el parámetro *DwPrivileges* de [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen). O bien, en el caso de la entrega en modo multimedia, ninguna aplicación ha abierto la misma línea con el \_ bit de propietario LINECALLPRIVILEGE en el parámetro *DwPrivileges* de [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen) y el tipo de medio especificado en el parámetro *dwMediaMode* se ha especificado en el parámetro *dwMediaModes* de [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen).
+No se encontró un destino para la entrega de llamadas. Esto puede ocurrir si la aplicación con nombre no abrió la misma línea con el bit LINECALLPRIVILEGE OWNER en el parámetro \_ *dwPrivileges* de [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen). O bien, en el caso de entrega en modo multimedia, ninguna aplicación ha abierto la misma línea con el bit LINECALLPRIVILEGE OWNER en el parámetro \_ *dwPrivileges* de [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen) y con el tipo de medio especificado en el parámetro *dwMediaMode* que se ha especificado en el parámetro *dwMediaModes* de [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen).
 
 
 </dt> </dl> </dd> <dt>
@@ -1012,17 +1012,17 @@ No se encontró un destino para la entrega de llamada. Esto puede ocurrir si la 
 
 
 
-La aplicación que invoca esta operación es el destino de la entrega indirecta. Es decir, TAPI ha determinado que la aplicación que realiza la llamada es también la aplicación de mayor prioridad para el tipo de medio especificado.
+La aplicación que invoca esta operación es el destino de la entrega indirecta. Es decir, TAPI ha determinado que la aplicación que realiza la llamada también es la aplicación de prioridad más alta para el tipo de medio especificado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEERR_UNINITIALIZED"></span><span id="lineerr_uninitialized"></span>**LINEERR no \_ inicializado**
+<span id="LINEERR_UNINITIALIZED"></span><span id="lineerr_uninitialized"></span>**LINEERR \_ SIN INICIALIZAR**
 </dt> <dd> <dl> <dt>
 
 
 
-La operación se invocó antes de cualquier aplicación llamada [**lineInitialize**](/windows/desktop/api/Tapi/nf-tapi-lineinitialize) o [**lineInitializeEx**](/windows/desktop/api/Tapi/nf-tapi-lineinitializeexa).
+La operación se invocó antes que cualquier aplicación [**denominada lineInitialize**](/windows/desktop/api/Tapi/nf-tapi-lineinitialize) o [**lineInitializeEx**](/windows/desktop/api/Tapi/nf-tapi-lineinitializeexa).
 
 
 </dt> </dl> </dd> <dt>
@@ -1032,7 +1032,7 @@ La operación se invocó antes de cualquier aplicación llamada [**lineInitializ
 
 
 
-El usuario canceló la llamada. Este valor solo se expone a las aplicaciones que negocian una versión de TAPI 2,2 o posterior.
+El usuario canceló la llamada. Este valor solo se expone a las aplicaciones que negocian una versión tapi de la versión 2.2 o posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -1042,18 +1042,18 @@ El usuario canceló la llamada. Este valor solo se expone a las aplicaciones que
 
 
 
-La cadena que contiene información de usuario de usuario supera el número máximo de bytes especificado en el miembro **dwUUIAcceptSize**, **dwUUIAnswerSize**, **dwUUIDropSize**, **dwUUIMakeCallSize** o **dwUUISendUserUserInfoSize** de [**LINEDEVCAPS**](/windows/desktop/api/Tapi/ns-tapi-linedevcaps), o bien la cadena que contiene información de usuario de usuario es demasiado larga.
+La cadena que contiene información de usuario-usuario supera el número máximo de bytes especificado en el miembro **dwUUIAcceptSize**, **dwUUIAnswerSize**, **dwUUIDropSize,** **dwUUIMakeCallSize** o **dwUUISendUserUserInfoSize** de [**LINEDEVCAPS,**](/windows/desktop/api/Tapi/ns-tapi-linedevcaps)o la cadena que contiene información de usuario-usuario es demasiado larga.
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores de 0xC0000000 a 0xFFFFFFFF están disponibles para las extensiones específicas del dispositivo. Los valores 0x80000000 a través de 0xBFFFFFFF están reservados, mientras que 0x00000000 a 0x7FFFFFFF se usan como identificadores de solicitud.
+Los valores 0xC0000000 a 0xFFFFFFFF están disponibles para extensiones específicas del dispositivo. Los valores 0x80000000 a 0xBFFFFFFF se reservan, mientras 0x00000000 a través 0x7FFFFFFF se usan como identificadores de solicitud.
 
-Si una aplicación obtiene un error devuelto que no controla específicamente (como un error definido por una extensión específica del dispositivo), debe tratar el error como LINEERR \_ OPERATIONFAILED (por un motivo no especificado).
+Si una aplicación obtiene una devolución de error que no controla específicamente (por ejemplo, un error definido por una extensión específica del dispositivo), debe tratar el error como LINEERR OPERATIONFAILED (por un motivo no \_ especificado).
 
-Al invocar las \_ constantes LINEERR que son nuevas con TAPI 3,0, el archivo Tapierr.MC debe actualizarse con mensajes nuevos.
+Al invocar las constantes LINEERR que son nuevas con TAPI 3.0, el archivo Tapierr.mc debe actualizarse \_ con nuevos mensajes.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -1061,8 +1061,8 @@ Al invocar las \_ constantes LINEERR que son nuevas con TAPI 3,0, el archivo Tap
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

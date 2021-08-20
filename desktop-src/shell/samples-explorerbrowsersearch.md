@@ -1,5 +1,5 @@
 ---
-description: Muestra cómo usar el control de explorador del explorador de Windows para insertar el explorador de Windows en una aplicación y cómo implementar la funcionalidad de búsqueda con una carpeta de búsqueda en memoria.
+description: Muestra cómo usar el control explorador Windows Explorer para insertar Windows Explorer en una aplicación y cómo implementar la funcionalidad de búsqueda con una carpeta de búsqueda en memoria.
 title: Ejemplo de búsqueda del explorador Explorer
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,23 +9,23 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 3dd33b1625fda513632966ea7f663da9e8089c6a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9e4e0d8056e82fe38f627e6222af8589bb85aa2e83c1877db0a3d3e44edb5b8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032223"
 ---
 # <a name="explorer-browser-search-sample"></a>Ejemplo de búsqueda del explorador Explorer
 
-Muestra cómo usar el control de explorador del explorador de Windows para insertar el explorador de Windows en una aplicación y cómo implementar la funcionalidad de búsqueda con una carpeta de búsqueda en memoria.
+Muestra cómo usar el control explorador Windows Explorer para insertar Windows Explorer en una aplicación y cómo implementar la funcionalidad de búsqueda con una carpeta de búsqueda en memoria.
 
 En este tema se incluyen las siguientes secciones.
 
 -   [Requisitos](#requirements)
 -   [Descargar el ejemplo](#downloading-the-sample)
 -   [Compilar el ejemplo](#building-the-sample)
--   [Ejecutar el ejemplo](#running-the-sample)
+-   [Ejecución del ejemplo](#running-the-sample)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -34,27 +34,27 @@ En este tema se incluyen las siguientes secciones.
 | Producto                                | Versión mínima del producto |
 |----------------------------------------|-------------------------|
 | Windows                                | Windows 7               |
-| Kit de desarrollo de software de Windows (SDK) | 7.0                     |
+| Kit de desarrollo de software de Windows (SDK) | 7,0                     |
 
 
 
  
 
-Para conocer los requisitos adicionales, consulte el archivo Léame incluido con el ejemplo.
+Para obtener requisitos adicionales, consulte el archivo Léame incluido con el ejemplo.
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-| Ubicación      | URL de ruta de acceso                                                                                             |
+| Location      | Dirección URL de ruta de acceso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Ejemplo de ExplorerBrowserSearch](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/ExplorerBrowserSearch) |
 
 ## <a name="building-the-sample"></a>Generar el ejemplo
 
-Para obtener instrucciones sobre cómo generar el ejemplo, vea el archivo Léame incluido con el ejemplo.
+Para obtener instrucciones sobre cómo compilar el ejemplo, consulte el archivo Léame incluido con el ejemplo.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-Para obtener instrucciones sobre cómo generar el ejemplo, vea el archivo Léame incluido con el ejemplo.
+Para obtener instrucciones sobre cómo compilar el ejemplo, consulte el archivo Léame incluido con el ejemplo.
 
  
 

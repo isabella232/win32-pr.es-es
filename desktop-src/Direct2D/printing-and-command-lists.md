@@ -1,39 +1,39 @@
 ---
 title: Impresión y listas de comandos
-description: El control de impresión de Direct2D \ 32; es un componente nuevo en el módulo de Direct2D en Windows 8.
+description: El control Direct2D \ 32;print es un nuevo componente del módulo Direct2D de Windows 8.
 ms.assetid: C51ACCDE-B205-4F79-A2FD-D112BAAD1616
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b6beb16a24c972016686e2dffe915a947128a63
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: de0026071ce8e78fc2ea946e0fffff2993e32ab48a2a20d4de6cdb12ca9b1eaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075058"
 ---
 # <a name="printing-and-command-lists"></a>Impresión y listas de comandos
 
-El [](./direct2d-portal.md) [**control de impresión**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1printcontrol) de direct2d es un nuevo componente del módulo de direct2d en Windows 8. Este componente permite a las aplicaciones de Direct2D volver a usar las llamadas de dibujo de Direct2D (en términos de cambios de estado y primitivas de representación) para proporcionar resultados de impresión similares a lo que se ve en la pantalla.
+El control de impresión [**de**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1printcontrol) [Direct2D](./direct2d-portal.md) es un nuevo componente del módulo Direct2D de Windows 8. Este componente permite que las aplicaciones de Direct2D reutilicen sus llamadas de dibujo de Direct2D (en términos de cambios de estado y primitivas de reenlace) para ofrecer resultados de impresión similares a los que se ven en la pantalla.
 
-La interfaz [**ID2D1PrintControl**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1printcontrol) representa un trabajo de impresión virtual: puede crear un control de impresión de [direct2d](./direct2d-portal.md) para iniciar un nuevo trabajo de impresión, pasar el contenido de direct2d para cada página que desee imprimir y, a continuación, cerrar el control de impresión para completar un trabajo de impresión.
-
-> [!Note]  
-> Un control de impresión se asigna a uno y exactamente un trabajo de impresión, y no se puede volver a usar.
-
-El control de impresión de [direct2d](./direct2d-portal.md) convierte y optimiza el contenido pasado en direct2d para el subsistema de impresión, que funciona con las impresoras reales para proporcionar la copia impresa real. Todos los detalles específicos de la impresión se ocultan de las aplicaciones de Direct2D, lo que significa que las aplicaciones de Direct2D pueden imprimir sin saber qué dispositivos están dibujando o cómo se traducen los dibujos a la impresión.
-
-Para imprimir con [Direct2D](./direct2d-portal.md), debe preparar una lista de comandos de direct2d para cada página que desee imprimir y, a continuación, pasar esa lista de comandos al control de impresión de direct2d. Para preparar esa lista de comandos de Direct2D, solo tiene que crear y establecer una lista de comandos como destino de dibujo del contexto de dispositivo actual y, a continuación, dibujar en ese contexto de dispositivo, exactamente igual que si se dibuja en un destino de mapa de bits para su presentación. Consulte [dispositivos y contextos de dispositivo](devices-and-device-contexts.md) para obtener más información sobre los dispositivos y los destinos.
-
-En este diagrama se muestra la interacción entre la aplicación, el contexto de dispositivo, el destino de mapa de bits, el destino de la lista de comandos y el control de impresión.
+La interfaz [**ID2D1PrintControl**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1printcontrol) representa un trabajo de impresión virtual: puede crear un control de impresión [de Direct2D](./direct2d-portal.md) para iniciar un nuevo trabajo de impresión, pasar contenido de Direct2D para cada página que quiera imprimir y, a continuación, cerrar el control de impresión para completar un trabajo de impresión.
 
 > [!Note]  
-> Los componentes de impresora y Sub-System de impresión de Windows están en gris porque están totalmente ocultos en las aplicaciones de [Direct2D](./direct2d-portal.md) .
+> Un control de impresión se asigna a un y exactamente un trabajo de impresión, y no se puede reutilizar.
 
-![un diagrama que muestra cómo interactúan commandlist e Printing con una aplicación y direct2d.](images/d2dprintcontroldiagram.png)
+El control de impresión de [Direct2D](./direct2d-portal.md) convierte y optimiza el pasado en el contenido de Direct2D para el subses sistema de impresión, que funciona con las impresoras reales para entregar la impresión real. Todos los detalles específicos de impresión están ocultos en las aplicaciones de Direct2D, lo que significa que las aplicaciones de Direct2D se pueden imprimir sin saber en qué dispositivos se dibujan o cómo se traducen los dibujos a la impresión.
+
+Para imprimir con [Direct2D,](./direct2d-portal.md)debe preparar una lista de comandos de Direct2D para cada página que quiera imprimir y, a continuación, pasar esa lista de comandos al control de impresión de Direct2D. Para preparar esa lista de comandos de Direct2D, basta con crear y establecer una lista de comandos como destino de dibujo del contexto de dispositivo actual y, a continuación, dibujar en ese contexto de dispositivo, exactamente como si se dibujara en un destino de mapa de bits para su presentación. Consulte [Dispositivos y contextos de dispositivo para](devices-and-device-contexts.md) obtener más información sobre dispositivos y destinos.
+
+En el diagrama siguiente se muestra la interacción entre la aplicación, el contexto del dispositivo, el destino de mapa de bits, el destino de la lista de comandos y el control de impresión.
+
+> [!Note]  
+> Los Windows de Sub-System e Impresora están en gris porque están completamente ocultos en [las aplicaciones de Direct2D.](./direct2d-portal.md)
+
+![diagrama que muestra cómo interactúan la lista de comandos y la impresión con una aplicación y direct2d.](images/d2dprintcontroldiagram.png)
 
 ## <a name="example"></a>Ejemplo
 
-El proceso completo de imprimir contenido de Direct2D incluye los pasos siguientes.
+El proceso completo de impresión de contenido de Direct2D incluye los pasos siguientes.
 
 1.  Cree un control de impresión para iniciar un trabajo de impresión.
 2.  Agregue una página al control de impresión pasando una lista de comandos.
@@ -76,4 +76,4 @@ d2dPrintControl->Close();
 
 [**ID2D1PrintControl**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1printcontrol)
 
-[Mejorar el rendimiento de las aplicaciones y la impresión en Direct2D](improving-direct2d-performance.md)
+[Mejora del rendimiento de las aplicaciones e impresión de Direct2D](improving-direct2d-performance.md)

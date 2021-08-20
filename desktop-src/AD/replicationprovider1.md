@@ -1,11 +1,11 @@
 ---
-title: Clase ReplicationProvider1
-description: La clase base para la instancia del proveedor.
+title: ReplicationProvider1 (clase)
+description: Clase base para la instancia del proveedor.
 ms.assetid: c3c6efda-faa7-42af-a635-060967fdcc35
 ms.tgt_platform: multiple
 keywords:
-- Active Directory de la clase ReplicationProvider1
-- Active Directory de la clase ReplicationProvider1, descrito
+- ReplicationProvider1 (clase) Active Directory
+- Clase ReplicationProvider1 Active Directory , descrito
 topic_type:
 - apiref
 api_name:
@@ -40,16 +40,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0098556fcbc1400ccd1042198903fec7e018ed57
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d3e8ca70d2bb5f37303c20117ddba59db6950d1dda58779179c6ef08c95abc4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025133"
 ---
-# <a name="replicationprovider1-class"></a>Clase ReplicationProvider1
+# <a name="replicationprovider1-class"></a>ReplicationProvider1 (clase)
 
-La clase base para la instancia del proveedor.
+Clase base para la instancia del proveedor.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -87,13 +87,13 @@ class ReplicationProvider1 : __Win32Provider
 
 ## <a name="members"></a>Miembros
 
-La clase **ReplicationProvider1** tiene estos tipos de miembros:
+La **clase ReplicationProvider1** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **ReplicationProvider1** tiene estas propiedades.
+La **clase ReplicationProvider1** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -103,44 +103,44 @@ La clase **ReplicationProvider1** tiene estas propiedades.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Identificador de clase que WMI usa para determinar si se carga o no un proveedor de alto rendimiento en el proceso de cliente o en el proceso WMI. Si el proveedor y el cliente se encuentran en el mismo equipo, WMI carga el proveedor en proceso en el cliente mediante **ClientLoadableCLSID** como identificador de clase. Cuando el proveedor y el cliente se encuentran en equipos diferentes, WMI carga el proveedor en proceso en WMI. WMI también usa **ClientLoadableCLSID** para admitir las operaciones de actualización.
+Identificador de clase que WMI usa para determinar si se debe cargar o no un proveedor de alto rendimiento en el proceso de cliente o en el proceso WMI. Si el proveedor y el cliente se encuentran en el mismo equipo, WMI carga el proveedor en proceso en el cliente mediante **ClientLoadableCLSID** como identificador de clase. Cuando el proveedor y el cliente se encuentran en equipos diferentes, WMI carga el proveedor en proceso en WMI. WMI también usa **ClientLoadableCLSID para** admitir operaciones de actualización.
 
-Para obtener más información, vea [registrar un proveedor de High-Performance.](/windows/desktop/WmiSdk/registering-a-high-performance-provider)
+Para obtener más información, [vea Registrar un proveedor High-Performance usuario.](/windows/desktop/WmiSdk/registering-a-high-performance-provider)
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
-**CLSID**
+**Clsid**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-**GUID** que representa el identificador de clase (**CLSID**) del objeto com del proveedor. Este objeto COM debe contener una implementación de la interfaz [**IWbemProviderInit**](/windows/desktop/api/wbemprov/nn-wbemprov-iwbemproviderinit) .
+**GUID** que representa el identificador de clase **(CLSID)** del objeto COM del proveedor. Este objeto COM debe contener una implementación de la [**interfaz IWbemProviderInit.**](/windows/desktop/api/wbemprov/nn-wbemprov-iwbemproviderinit)
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
-**Simultaneidad**
+**Concurrency**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
@@ -150,27 +150,27 @@ Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Identifica el equipo en el que se va a iniciar el proveedor. Si el proveedor se ejecuta en el equipo local, es **null**.
+Identifica el equipo en el que se va a iniciar el proveedor. Si el proveedor se ejecuta en el equipo local, es **NULL.**
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
-**Enabled**
+**Habilitado**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Si es **true**, esta instancia está habilitada y se puede usar para completar las solicitudes de cliente.
+Si **es TRUE,** esta instancia está habilitada y se puede usar para completar las solicitudes de cliente.
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
@@ -196,12 +196,12 @@ Contiene el modelo de hospedaje del proveedor.
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Reservado. El valor predeterminado es cero (0).
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
@@ -211,23 +211,23 @@ Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 Conjunto de marcas que proporcionan información sobre la serialización. El valor predeterminado es cero (0).
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 <dt>
 
 <span id="0"></span>
 
-<span id="0"></span>**0,1**
+<span id="0"></span>**0**
 
 
 </dt> <dd>
 
-Toda la inicialización de este proveedor debe estar serializada.
+Se debe serializar toda la inicialización de este proveedor.
 
 </dd> <dt>
 
@@ -238,7 +238,7 @@ Toda la inicialización de este proveedor debe estar serializada.
 
 </dt> <dd>
 
-Todas las inicializaciones de este proveedor en el mismo espacio de nombres se deben serializar.
+Se deben serializar todas las inicializaciones de este proveedor en el mismo espacio de nombres.
 
 </dd> <dt>
 
@@ -249,7 +249,7 @@ Todas las inicializaciones de este proveedor en el mismo espacio de nombres se d
 
 </dt> <dd>
 
-No es necesaria ninguna serialización de inicialización.
+No se necesita serialización de inicialización.
 
 </dd> </dl>
 
@@ -258,15 +258,15 @@ No es necesaria ninguna serialización de inicialización.
 **InitializationTimeoutInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
@@ -276,12 +276,12 @@ Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 **Windows Server 2003:** Esta propiedad está deshabilitada.
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
@@ -291,30 +291,30 @@ Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/standard-qualifiers)
+Calificadores: [ **Clave**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
 Nombre del proveedor.
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
 **OperationTimeoutInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
@@ -324,12 +324,12 @@ Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Si es **true**, el proveedor se inicializa para cada configuración regional cuando un usuario se conecta al mismo espacio de nombres más de una vez con diferentes configuraciones regionales. El valor predeterminado es **FALSE**.
+Si **es TRUE,** el proveedor se inicializa para cada configuración regional cuando un usuario se conecta al mismo espacio de nombres más de una vez mediante configuraciones regionales diferentes. El valor predeterminado es **FALSE**.
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
@@ -339,12 +339,12 @@ Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Si es **true**, el proveedor se inicializa una vez por cada usuario de NT LAN Manager (NTLM) que realiza solicitudes al proveedor. Si es **false** (valor predeterminado), el proveedor se inicializa una vez para todos los usuarios.
+Si **es TRUE,** el proveedor se inicializa una vez para cada usuario de NT LAN Manager (NTLM) que realiza solicitudes al proveedor. Si **es FALSE** (valor predeterminado), el proveedor se inicializa una vez para todos los usuarios.
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
@@ -354,12 +354,12 @@ Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Si **es true**, el proveedor acuerda preparar la descarga llamando a [**IUnknown:: Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) en todos los puntos de interfaz pendientes cuando WMI llama al método de **versión** de su interfaz principal. Los proveedores que deben seguir siendo clientes de WMI después de no funcionar como proveedores deberían establecer **puro** en **false**. El valor predeterminado es **true**. Para obtener más información, consulte la sección Comentarios de este tema.
+Si **es TRUE,** el proveedor acepta prepararse para la descarga mediante una llamada a [**IUnknown::Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) en todos los puntos de interfaz pendientes cuando WMI llama al método **Release** de su interfaz principal. Los proveedores que deben seguir siendo clientes de WMI después de que no funcionen como proveedores deben **establecer Pure** en **FALSE.** El valor predeterminado es **TRUE.** Para obtener más información, vea la sección Comentarios de este tema.
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
@@ -369,18 +369,18 @@ Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Descriptor de seguridad (SD) en el lenguaje de definición de descriptores de seguridad (SDDL) que determina el conjunto de usuarios que pueden llamar correctamente a [**IWbemDecoupledRegistrar: Register**](/windows/desktop/api/wbemprov/nf-wbemprov-iwbemdecoupledregistrar-register) para el proveedor desacoplado. Para obtener más información, vea el tema [lenguaje de definición de descriptores de seguridad](/windows/desktop/SecAuthZ/security-descriptor-definition-language) en la sección seguridad de la Windows SDK. Este descriptor de seguridad solo se usa para los proveedores desacoplados y no afecta a otros proveedores. Para obtener más información, vea [incorporación de un proveedor en una aplicación](/windows/desktop/WmiSdk/incorporating-a-provider-in-an-application).
+Descriptor de seguridad (SD) en el lenguaje de definición de descriptores de seguridad (SDDL) que determina el conjunto de usuarios que pueden llamar correctamente a [**IWbemDecoupledRegistrar:Register**](/windows/desktop/api/wbemprov/nf-wbemprov-iwbemdecoupledregistrar-register) para el proveedor desacoplado. Para más información, consulte el tema [Lenguaje de definición de descriptores de seguridad](/windows/desktop/SecAuthZ/security-descriptor-definition-language) de la sección Seguridad del SDK Windows seguridad. Este descriptor de seguridad solo se usa para los proveedores desacoplados y no afecta a otros proveedores. Para obtener más información, vea [Incorporación de un proveedor en una aplicación](/windows/desktop/WmiSdk/incorporating-a-provider-in-an-application).
 
-WMI realiza comprobaciones de acceso para los proveedores desacoplados que usan las interfaces [**IWbemProviderInit**](/windows/desktop/api/wbemprov/nn-wbemprov-iwbemproviderinit) y [**IWbemObjectSink**](/windows/desktop/WmiSdk/iwbemobjectsink) . Si el descriptor de seguridad es **null**, solo las aplicaciones o servicios que se ejecutan en las cuentas LocalSystem, NetworkService y LocalService pueden ejecutar un proveedor desacoplado.
+WMI realiza comprobaciones de acceso para proveedores desacoplados que usan las interfaces [**IWbemProviderInit**](/windows/desktop/api/wbemprov/nn-wbemprov-iwbemproviderinit) [**e IWbemObjectSink.**](/windows/desktop/WmiSdk/iwbemobjectsink) Si el descriptor de seguridad es **NULL,** solo las aplicaciones o servicios que se ejecutan en las cuentas LocalSystem, NetworkService y LocalService pueden ejecutar un proveedor desacoplado.
 
-La siguiente cadena muestra un proveedor desacoplado que solo deben ejecutar los administradores integrados ". O:BAG: BAD: (A;; 0 x1;;; BA) "
+En la cadena siguiente se muestra un proveedor desacoplado que solo deben ejecutar los administradores integrados". O:BAG:BAD:(A;;0 x1;;; BA)"
 
-Para obtener más información acerca de cómo establecer la propiedad **SecurityDescriptor** , vea [mantener la seguridad de WMI](/windows/desktop/WmiSdk/maintaining-wmi-security).
+Para obtener más información sobre cómo establecer la **propiedad SecurityDescriptor,** vea [Mantener la seguridad wmi.](/windows/desktop/WmiSdk/maintaining-wmi-security)
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
@@ -390,12 +390,12 @@ Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
@@ -405,12 +405,12 @@ Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
@@ -420,12 +420,12 @@ Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
@@ -435,12 +435,12 @@ Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
@@ -450,12 +450,12 @@ Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
@@ -465,50 +465,50 @@ Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
 **UnloadTimeout**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-[Formato de fecha y hora](/windows/desktop/WmiSdk/date-and-time-format) que especifica el tiempo que WMI permite que el proveedor permanezca inactivo antes de que se descargue. Normalmente, los proveedores solicitan que WMI espere más de cinco minutos.
+[Formato de fecha y hora](/windows/desktop/WmiSdk/date-and-time-format) que especifica cuánto tiempo WMI permite que el proveedor permanezca inactivo antes de que se descargue. Normalmente, los proveedores solicitan que WMI no espere más de cinco minutos.
 
-Para la versión actual de WMI, se omite el valor de esta propiedad. WMI descarga el proveedor basándose en el valor de tiempo de espera de una clase interna en el \\ espacio de nombres raíz. Se recomienda que los proveedores establezcan **UnloadTimeout**. Para obtener más información, vea [descargar un proveedor](/windows/desktop/WmiSdk/unloading-a-provider).
+Para la versión actual de WMI, se omite el valor de esta propiedad. WMI descarga el proveedor en función del valor de tiempo de espera de una clase interna en el espacio \\ de nombres raíz. Se recomienda que los proveedores **establezcan UnloadTimeout.** Para obtener más información, [vea Descargar un proveedor](/windows/desktop/WmiSdk/unloading-a-provider).
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> <dt>
 
 **Versión**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Versión del proveedor. Las versiones admitidas son 1 y 2. La versión 2 fortalece las comprobaciones de validez de todos los registros de propiedades asociados, en concreto la propiedad [**ImpersonationLevel**](/windows/desktop/WmiSdk/swbemsecurity-impersonationlevel) .
+Versión del proveedor. Las versiones admitidas son 1 y 2. La versión 2 refuerza las comprobaciones de validez de todos los registros de propiedades asociados, específicamente la [**propiedad ImpersonationLevel.**](/windows/desktop/WmiSdk/swbemsecurity-impersonationlevel)
 
-Esta propiedad se hereda de [**\_ \_ Win32Provider**](/windows/desktop/WmiSdk/--win32provider).
+Esta propiedad se hereda de [**\_ \_ Win32Provider.**](/windows/desktop/WmiSdk/--win32provider)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una instancia de esta clase representa el proveedor WMI para Dominio de Active Directory Services. Los valores predeterminados son los siguientes:
+Una instancia de esta clase representa el proveedor WMI para Dominio de Active Directory servicios. Los valores predeterminados son los siguientes:
 
 -   Name = "ReplProv1"
 -   ClsID = "{29288F43-39B1-40db-B41F-CE899450E911}"
@@ -522,8 +522,8 @@ Una instancia de esta clase representa el proveedor WMI para Dominio de Active D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | \\MicrosoftActiveDirectory raíz<br/>                                               |
-| MOF<br/>                      | <dl> <dt>ReplProv. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Raíz \\ MicrosoftActiveDirectory<br/>                                               |
+| MOF<br/>                      | <dl> <dt>Replprov.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Replprov.dll</dt> </dl> |
 
 

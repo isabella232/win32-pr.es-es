@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec3CatmullRom (D3dx9math.h): realiza una interpolación Catmull-Rom, mediante los vectores 3D especificados.'
+description: 'Función D3DXVec3CatmullRom (D3dx9math.h): realiza una interpolación Catmull-Rom mediante los vectores 3D especificados.'
 ms.assetid: 779f067c-ac46-4fde-9e18-e31b1504b490
 title: Función D3DXVec3CatmullRom (D3dx9math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: bc2a72f6d638c7a4daa8db1849a790bdd76556b9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 215f5a73d18599484b80b9d29d7dffcbb8be20ef3743ddb6fc0cdf7f70e974b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044622"
 ---
 # <a name="d3dxvec3catmullrom-function-d3dx9mathh"></a>Función D3DXVec3CatmullRom (D3dx9math.h)
 
@@ -119,7 +119,7 @@ Q(s) is parallel to the line joining p2 to p4 when s is 1.
 
 
 
-La Catmull-Rom spline se puede derivar de la spline de Hermite estableciendo:
+El Catmull-Rom spline se puede derivar de la spline hermite estableciendo:
 
 
 ```
@@ -179,7 +179,7 @@ Q(s) = [(-s3 + 2s2 - s)p1 + (3s3 - 5s2 + 2)p2 + (-3s3 + 4s2 + s)p3 + (s3 - s2)p4
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

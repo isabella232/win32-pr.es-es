@@ -1,12 +1,12 @@
 ---
-title: Método SetSBDbConnectionStrings de la clase Win32_SessionBrokerServiceProperties
-description: Guarda las cadenas de conexión de base de datos, tanto las principales como las secundarias, en el registro.
+title: Método SetSBDbConnectionStrings de la Win32_SessionBrokerServiceProperties clase
+description: Guarda las cadenas de conexión de base de datos, tanto principales como secundarias, en el Registro.
 ms.assetid: a9a20eca-22d9-495c-b976-2952c97be67e
 ms.tgt_platform: multiple
 keywords:
 - Método SetSBDbConnectionStrings Servicios de Escritorio remoto
-- Método SetSBDbConnectionStrings Servicios de Escritorio remoto, clase Win32_SessionBrokerServiceProperties
-- Win32_SessionBrokerServiceProperties de clase Servicios de Escritorio remoto, método SetSBDbConnectionStrings
+- Método SetSBDbConnectionStrings Servicios de Escritorio remoto , Win32_SessionBrokerServiceProperties clase
+- Win32_SessionBrokerServiceProperties clase Servicios de Escritorio remoto , método SetSBDbConnectionStrings
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e4aa02cabe89e434fb8b24b308bbe2ec51fa5f4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b89baa40d25e6ecf316ac6904cc89091fa581d87be1018c52fa31c2b7ab358d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058423"
 ---
-# <a name="setsbdbconnectionstrings-method-of-the-win32_sessionbrokerserviceproperties-class"></a>Método SetSBDbConnectionStrings de la \_ clase SessionBrokerServiceProperties de Win32
+# <a name="setsbdbconnectionstrings-method-of-the-win32_sessionbrokerserviceproperties-class"></a>Método SetSBDbConnectionStrings de la clase SessionBrokerServiceProperties de Win32 \_
 
-Guarda las cadenas de conexión de base de datos, tanto las principales como las secundarias, en el registro.
+Guarda las cadenas de conexión de base de datos, tanto principales como secundarias, en el Registro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,17 +44,17 @@ uint32 SetSBDbConnectionStrings(
 
 <dl> <dt>
 
-*connStringToCentralDBRdcms* \[ de\]
+*connStringToCentralDBRdcms* \[ En\]
 </dt> <dd>
 
 Cadena de conexión principal.
 
 </dd> <dt>
 
-*secondaryConnStringToCentralDBRdcms* \[ de\]
+*secondaryConnStringToCentralDBRdcms* \[ En\]
 </dt> <dd>
 
-La cadena de conexión secundaria.
+Cadena de conexión secundaria.
 
 </dd> </dl>
 
@@ -66,8 +66,8 @@ La cadena de conexión secundaria.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                         |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>    |
 
 
@@ -76,7 +76,7 @@ La cadena de conexión secundaria.
 
 <dl> <dt>
 
-[**Win32 \_ SessionBrokerServiceProperties**](win32-sessionbrokerserviceproperties.md)
+[**SessionBrokerServiceProperties de Win32 \_**](win32-sessionbrokerserviceproperties.md)
 </dt> </dl>
 
  

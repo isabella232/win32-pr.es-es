@@ -1,7 +1,7 @@
 ---
 description: Identifica un contador en un conjunto de contadores que proporciona el proveedor.
 ms.assetid: 5b39804f-c117-4f1f-b100-d02674d1e8ad
-title: Elemento Counter (counterSet)
+title: counter (counterSet) (Elemento)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 89772b06c2f97de4d2414e3923f026b69774631f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98c4c5d8c683e23faebcdfdfe60820571fc6e70acc2e132c7f221ec88f7f7c36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061123"
 ---
-# <a name="counter-counterset-element"></a>Elemento Counter (counterSet)
+# <a name="counter-counterset-element"></a>counter (counterSet) (Elemento)
 
 Identifica un contador en un conjunto de contadores que proporciona el proveedor.
 
@@ -26,16 +26,16 @@ Identifica un contador en un conjunto de contadores que proporciona el proveedor
  />
 ```
 
-El elemento **Counter** se define mediante el tipo complejo [**counterSet**](performance-counters-counterset-complex-type.md) .
+El **elemento counter** se define mediante el tipo complejo [**counterSet.**](performance-counters-counterset-complex-type.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

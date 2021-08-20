@@ -1,6 +1,6 @@
 ---
-title: Métodos IDCompositionVisual3 SetOffsetZ (Dcomp. h)
-description: Establece el valor de la propiedad OffsetZ del visual.
+title: Métodos IDCompositionVisual3 SetOffsetZ (Dcomp.h)
+description: Establece el valor de la propiedad OffsetZ del objeto visual.
 ms.assetid: 55ad436e-6f95-ee45-c7d3-1636194917da
 keywords:
 - Métodos SetOffsetZ DirectComposition
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 3ea4eca49f134b8524868f6013b5905188f711d0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ffd9cc099a92194c91512d11cbc53b24bb97dacfa7538b5e5463c2d6e67cf54a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043083"
 ---
-# <a name="idcompositionvisual3setoffsetz-methods"></a>IDCompositionVisual3:: SetOffsetZ (métodos)
+# <a name="idcompositionvisual3setoffsetz-methods"></a>Métodos IDCompositionVisual3::SetOffsetZ
 
-Establece el valor de la propiedad OffsetZ del visual.
+Establece el valor de la propiedad OffsetZ del objeto visual.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Establece el valor de la propiedad OffsetZ del visual.
 
 | Método                                                                            | Descripción                                                 |
 |:----------------------------------------------------------------------------------|:------------------------------------------------------------|
-| [**SetOffsetZ (float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual3-setoffsetz(float))                      | Establece el valor de la propiedad OffsetZ del visual.<br/> |
-| [**SetOffsetZ (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual3-setoffsetz(idcompositionanimation)) | Anima el valor de la propiedad OffsetZ.<br/>      |
+| [**SetOffsetZ(float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual3-setoffsetz(float))                      | Establece el valor de la propiedad OffsetZ del objeto visual.<br/> |
+| [**SetOffsetZ(IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual3-setoffsetz(idcompositionanimation)) | Anima el valor de la propiedad OffsetZ.<br/>      |
 
 
 
@@ -40,7 +40,7 @@ Establece el valor de la propiedad OffsetZ del visual.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

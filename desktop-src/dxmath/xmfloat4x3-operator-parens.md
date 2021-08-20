@@ -1,7 +1,7 @@
 ---
-description: Obtiene acceso a elementos de matriz concretos a los que hace referencia la fila y la columna de la instancia actual de XMFLOAT4X3.
+description: Accede a elementos de matriz específicos a los que hace referencia fila y columna desde la instancia actual de XMFLOAT4X3.
 ms.assetid: 9ca8b924-fea8-421f-b7a5-8912bf2dc6f7
-title: Operadores de operador XMFLOAT4X3 ()
+title: Operadores del operador XMFLOAT4X3 ()
 ms.topic: reference
 ms.date: 12/06/2018
 topic_type:
@@ -11,18 +11,18 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 3a03c40e3c3e094f883bb2fc112f9996263d763c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 08194ccbf49275fab0d2bd075e432979742d4d7cc284167537a88b1869ef7908
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118025"
 ---
-# <a name="xmfloat4x3-operator--operators"></a>Operadores de operador XMFLOAT4X3 ()
+# <a name="xmfloat4x3-operator--operators"></a>Operadores del operador XMFLOAT4X3 ()
 
-Obtiene acceso a elementos de matriz concretos a los que hace referencia la fila y la columna de la instancia actual de `XMFLOAT4X3` .
+Accede a elementos de matriz específicos a los que hace referencia la fila y la columna desde la instancia actual de `XMFLOAT4X3` .
 
-Obtiene acceso a elementos de matriz concretos a los que hace referencia la fila y la columna de la instancia actual de [ **XMFLOAT4X3**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x3)
+Accede a elementos de matriz específicos a los que hace referencia la fila y la columna desde la instancia actual de [ **XMFLOAT4X3.**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x3)
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -35,14 +35,14 @@ Obtiene acceso a elementos de matriz concretos a los que hace referencia la fila
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Operator</th>
+<th style="text-align: left;">Operador</th>
 <th style="text-align: left;">Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat4x3-operator-function-call(size_t_size_t)"><strong>XMFLOAT4X3:: Operator () (size_t, size_t)</strong></a></td>
-<td style="text-align: left;">Devuelve <code>reference</code> a un elemento de matriz de una instancia de <code>XMFLOAT4X3</code> tal y como lo especifican los argumentos de fila y columna.<br/> Este operador devuelve <code>reference</code> a un elemento de matriz de una instancia de <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat4x3"><strong>XMFLOAT4X3</strong></a> tal y como lo especifican los argumentos de fila y columna.<br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat4x3-operator-function-call(size_t_size_t)"><strong>XMFLOAT4X3::operator () (size_t,size_t)</strong></a></td>
+<td style="text-align: left;">Devuelve un <code>reference</code> objeto a un elemento de matriz de una instancia de tal y como especifican los <code>XMFLOAT4X3</code> argumentos de fila y columna.<br/> Este operador devuelve un objeto a un elemento de matriz de una <code>reference</code> <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat4x3"><strong>instancia XMFLOAT4X3</strong></a> según lo especificado por los argumentos de fila y columna.<br/>
 <blockquote>
 [!Note]<br />
 Este operador solo está disponible en C++.
@@ -50,8 +50,8 @@ Este operador solo está disponible en C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat4x3-operator-function-call(size_t_size_t)"><strong>XMFLOAT4X3:: Operator () (size_t, size_t)</strong></a></td>
-<td style="text-align: left;">Devuelve el valor de un elemento de matriz en una instancia de <code>XMFLOAT4X3</code> tal y como lo especifican los argumentos de fila y columna. <br/> Este operador devuelve el valor de un elemento de matriz de una instancia de <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat4x3"><strong>XMFLOAT4X3</strong></a> tal y como lo especifican los argumentos de fila y columna. <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmfloat4x3-operator-function-call(size_t_size_t)"><strong>XMFLOAT4X3::operator () (size_t,size_t)</strong></a></td>
+<td style="text-align: left;">Devuelve el valor de un elemento de matriz en una instancia <code>XMFLOAT4X3</code> de según lo especificado por los argumentos de fila y columna. <br/> Este operador devuelve el valor de un elemento de matriz de una instancia <a href="/windows/desktop/api/directxmath/ns-directxmath-xmfloat4x3"><strong>XMFLOAT4X3</strong></a> según lo especificado por los argumentos de fila y columna. <br/>
 <blockquote>
 [!Note]<br />
 Este operador solo está disponible cuando se desarrolla con C++.
@@ -63,7 +63,7 @@ Este operador solo está disponible cuando se desarrolla con C++.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

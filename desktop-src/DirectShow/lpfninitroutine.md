@@ -1,7 +1,7 @@
 ---
-description: Puntero a una función a la que se llama desde el punto de entrada de DLL.
+description: Puntero a una función a la que se llama desde el punto de entrada dll.
 ms.assetid: 30196657-38ab-42ca-b673-b0894999e566
-title: Puntero a la función LPFNInitRoutine (ComBase. h)
+title: Puntero de función LPFNInitRoutine (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - UserDefined
 api_location:
 - Combase.h
-ms.openlocfilehash: 375660399180196e2434030ea7551733affc4062
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c07f22b9dc261fe9d7b073a1f1ab93aa49e482fb70c53288aeaf606e6be9aec9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685085"
 ---
-# <a name="lpfninitroutine-function-pointer"></a>Puntero a la función LPFNInitRoutine
+# <a name="lpfninitroutine-function-pointer"></a>Puntero de función LPFNInitRoutine
 
-Puntero a una función a la que se llama desde el punto de entrada de DLL.
+Puntero a una función a la que se llama desde el punto de entrada dll.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,14 +43,14 @@ typedef void ( CALLBACK *LPFNInitRoutine)(
 *bLoading* 
 </dt> <dd>
 
-**True** cuando se carga el archivo dll, **false** cuando se descarga el archivo dll.
+**TRUE** cuando se carga el archivo DLL, **FALSE** cuando se descarga el archivo DLL.
 
 </dd> <dt>
 
 *rclsid* 
 </dt> <dd>
 
-Puntero a la CLISD del objeto, que se especifica en la variable miembro [**CFactoryTemplate:: m \_ ClsID**](cfactorytemplate-m-clsid.md) .
+Puntero al CLISD del objeto, especificado en la variable miembro [**CFactoryTemplate::m \_ ClsID.**](cfactorytemplate-m-clsid.md)
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Este puntero de función no devuelve un valor.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>ComBase. h (incluir streams. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Combase.h (incluir Secuencias.h)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Este puntero de función no devuelve un valor.
 
 <dl> <dt>
 
-[**Clase CFactoryTemplate**](cfactorytemplate.md)
+[**CFactoryTemplate (clase)**](cfactorytemplate.md)
 </dt> </dl>
 
  

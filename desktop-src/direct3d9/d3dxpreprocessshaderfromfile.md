@@ -1,7 +1,7 @@
 ---
-description: Preprocesa un archivo de sombreador sin realizar la compilación. Esto resuelve todas las \# definiciones e \# incluye, y proporciona un sombreador independiente para la compilación posterior.
+description: Preprocesa un archivo de sombreador sin realizar la compilación. Esto resuelve todas las \# define e \# incluye, lo que proporciona un sombreador autocontenido para la compilación posterior.
 ms.assetid: 1be68cc0-b4a3-41b4-b956-b96ed439be9e
-title: Función D3DXPreprocessShaderFromFile (D3DX9Shader. h)
+title: Función D3DXPreprocessShaderFromFile (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,19 +14,19 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 1ba9cf35418bbbe6fe4b39341031fd1e056b27dd
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f254e3a06138b23b33775e1434346e73b8fde51d4c65e4ff368c11ab4521bb46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044752"
 ---
-# <a name="d3dxpreprocessshaderfromfile-function"></a>D3DXPreprocessShaderFromFile función)
+# <a name="d3dxpreprocessshaderfromfile-function"></a>Función D3DXPreprocessShaderFromFile
 
-Preprocesa un archivo de sombreador sin realizar la compilación. Esto resuelve todas las \# definiciones e \# incluye, y proporciona un sombreador independiente para la compilación posterior.
+Preprocesa un archivo de sombreador sin realizar la compilación. Esto resuelve todas las \# define e \# incluye, lo que proporciona un sombreador autocontenido para la compilación posterior.
 
 > [!Note]  
-> En lugar de usar esta función heredada, se recomienda usar la API de [**D3DPreprocess**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dpreprocess) .
+> En lugar de usar esta función heredada, se recomienda usar la API [**D3DPreprocess.**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dpreprocess)
 
  
 
@@ -49,7 +49,7 @@ HRESULT D3DXPreprocessShaderFromFile(
 
 <dl> <dt>
 
-*pSrcFile* \[ de\]
+*pSrcFile* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
@@ -58,39 +58,39 @@ Puntero a una cadena que especifica el nombre de archivo del sombreador.
 
 </dd> <dt>
 
-*pDefines* \[ de\]
+*pDefines* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMACRO**](d3dxmacro.md) \***
 
-Una matriz opcional de estructuras [**D3DXMACRO**](d3dxmacro.md) terminada en **null** . Este valor puede ser **null**.
+Matriz **terminada en NULL** opcional de estructuras [**D3DXMACRO.**](d3dxmacro.md) Este valor puede ser **NULL.**
 
 </dd> <dt>
 
-*pInclude* \[ de\]
+*pInclude* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXINCLUDE**](id3dxinclude.md)**
 
-Puntero de interfaz opcional, [**ID3DXInclude**](id3dxinclude.md), que se va a usar para controlar las \# directivas Include. Si este valor es **null**, se \# respetarán las inclusiones al compilar desde un archivo o se producirá un error al compilarse a partir de un recurso o de una memoria.
+Puntero de interfaz opcional, [**ID3DXInclude**](id3dxinclude.md), que se usará para controlar \# las directivas include. Si este valor es **NULL,** se respetará includes al compilar desde un archivo o se producirá un error cuando se compile desde un recurso \# o memoria.
 
 </dd> <dt>
 
-*ppShaderText* \[ enuncia\]
+*ppShaderText* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Devuelve un búfer que contiene una sola cadena grande que representa la secuencia de token con formato resultante.
+Devuelve un búfer que contiene una única cadena grande que representa la secuencia de token con formato resultante.
 
 </dd> <dt>
 
-*ppErrorMsgs* \[ enuncia\]
+*ppErrorMsgs* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Devuelve un búfer que contiene una lista de errores y advertencias que se encontraron durante la compilación. Estos son los mismos mensajes que muestra el depurador cuando se ejecuta en modo de depuración. Este valor puede ser **null**.
+Devuelve un búfer que contiene una lista de errores y advertencias que se encontraron durante la compilación. Estos son los mismos mensajes que muestra el depurador cuando se ejecuta en modo de depuración. Este valor puede ser **NULL.**
 
 </dd> </dl>
 
@@ -98,7 +98,7 @@ Devuelve un búfer que contiene una lista de errores y advertencias que se encon
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -106,8 +106,8 @@ Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
@@ -115,7 +115,7 @@ Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 <dl> <dt>
 
-[Funciones del sombreador](dx9-graphics-reference-d3dx-functions-shader.md)
+[Funciones de sombreador](dx9-graphics-reference-d3dx-functions-shader.md)
 </dt> <dt>
 
 [**D3DXPreprocessShader**](d3dxpreprocessshader.md)

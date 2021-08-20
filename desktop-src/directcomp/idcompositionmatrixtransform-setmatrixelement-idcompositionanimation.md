@@ -1,11 +1,11 @@
 ---
-title: IDCompositionMatrixTransform SetMatrixElement (int, int, IDCompositionAnimation)
+title: Método IDCompositionMatrixTransform SetMatrixElement(int, int, IDCompositionAnimation )
 description: Anima el valor de un elemento de la matriz de esta transformación 2D.
 ms.assetid: 16A9E136-5F0C-4F34-A127-BF06C4530499
 keywords:
 - Método SetMatrixElement DirectComposition
-- Método SetMatrixElement DirectComposition, interfaz IDCompositionMatrixTransform
-- IDCompositionMatrixTransform interface DirectComposition, SetMatrixElement (método)
+- Método SetMatrixElement DirectComposition , interfaz IDCompositionMatrixTransform
+- Interfaz IDCompositionMatrixTransform DirectComposition, método SetMatrixElement
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5b4bf2a43e762b85b8b8cfd0c15468b3dc438221
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6c5a0813243f3d04a729f000c9e42a1eb1ade6406273a1217ca067d8e2f1c3a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104421147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043223"
 ---
-# <a name="idcompositionmatrixtransformsetmatrixelementint-int-idcompositionanimation-method"></a>Método IDCompositionMatrixTransform:: SetMatrixElement (int, int, IDCompositionAnimation \* )
+# <a name="idcompositionmatrixtransformsetmatrixelementint-int-idcompositionanimation-method"></a>Método IDCompositionMatrixTransform::SetMatrixElement(int, int, IDCompositionAnimation \* )
 
 Anima el valor de un elemento de la matriz de esta transformación 2D.
 
@@ -31,9 +31,9 @@ Anima el valor de un elemento de la matriz de esta transformación 2D.
 
 ```C++
 HRESULT SetMatrixElement(
-  [in] int                    row,
-  [in] int                    column,
-  [in] IDCompositionAnimation *animation
+  [in] int                    row,
+  [in] int                    column,
+  [in] IDCompositionAnimation *animation
 );
 ```
 
@@ -43,21 +43,21 @@ HRESULT SetMatrixElement(
 
 <dl> <dt>
 
-*fila* \[ de de\]
+*row* \[ En\]
 </dt> <dd>
 
-Índice de fila del elemento que se va a cambiar. Este valor debe estar comprendido entre 0 y 2, ambos inclusive.
+Índice de fila del elemento que se debe cambiar. Este valor debe estar entre 0 y 2, ambos incluidos.
 
 </dd> <dt>
 
-*columna* \[ de de\]
+*columna* \[ En\]
 </dt> <dd>
 
-Índice de columna del elemento que se va a cambiar. Este valor debe estar comprendido entre 0 y 1, ambos incluidos.
+Índice de columna del elemento que se debe cambiar. Este valor debe estar entre 0 y 1, ambos incluidos.
 
 </dd> <dt>
 
-*animación* \[ de de\]
+*animación* \[ En\]
 </dt> <dd>
 
 Animación que representa cómo cambia el valor del elemento especificado con el tiempo. Este parámetro no debe ser NULL.
@@ -66,13 +66,13 @@ Animación que representa cómo cambia el valor del elemento especificado con el
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve S \_ correcto. De lo contrario, devuelve un código de error **HRESULT** . Consulte [códigos de error de DirectComposition](directcomposition-error-codes.md) para obtener una lista de códigos de error.
+Si la función se realiza correctamente, devuelve S \_ OK. De lo contrario, devuelve un código de error **HRESULT.** Consulte [Códigos de error de DirectComposition](directcomposition-error-codes.md) para obtener una lista de códigos de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método realiza una copia de la animación especificada. Si el objeto al que hace referencia el parámetro *Animation* se cambia después de llamar a este método, el cambio no afecta al elemento a menos que se vuelva a llamar a este método. Si el elemento se animaba previamente, al llamar a este método se reemplaza la animación anterior con la nueva animación.
+Este método realiza una copia de la animación especificada. Si se cambia el objeto al que hace referencia el parámetro *de* animación después de llamar a este método, el cambio no afecta al elemento a menos que se vuelva a llamar a este método. Si el elemento se animaba previamente, al llamar a este método se reemplaza la animación anterior por la nueva animación.
 
-Este método produce un error si la *animación* es un puntero no válido o si no se creó con la misma interfaz [**IDCompositionDevice**](/windows/win32/api/dcomp/nn-dcomp-idcompositiondevice) que la transformación afectada. La interfaz no puede ser una implementación personalizada; con este método solo se pueden usar las interfaces creadas por Microsoft DirectComposition.
+Se produce un error en este método si *la* animación es un puntero no válido o si no se creó mediante la misma [**interfaz IDCompositionDevice**](/windows/win32/api/dcomp/nn-dcomp-idcompositiondevice) que la transformación afectada. La interfaz no puede ser una implementación personalizada; solo se pueden usar interfaces creadas por Microsoft DirectComposition con este método.
 
 ## <a name="see-also"></a>Vea también
 
@@ -81,6 +81,6 @@ Este método produce un error si la *animación* es un puntero no válido o si n
 [**IDCompositionMatrixTransform**](/windows/win32/api/dcomp/nn-dcomp-idcompositionmatrixtransform)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,17 +1,17 @@
 ---
 description: Especifica los parámetros de control de velocidad de vídeo para un codificador de vídeo.
 ms.assetid: 8AF841A8-E121-4C41-BD3F-26760232E857
-title: Propiedad CODECAPI_AVEncVideoRateControlParams (Codecapi. h)
+title: CODECAPI_AVEncVideoRateControlParams propiedad (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 63e292ee5b1b8a9dc8a63d0e445ffbf60b9c91b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df0af9d4eb903725b1a4ae326d71ce07072428e0667a7032a86448f1e270f734
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974884"
 ---
-# <a name="codecapi_avencvideoratecontrolparams-property"></a>\_Propiedad AVEncVideoRateControlParams de CODECAPI
+# <a name="codecapi_avencvideoratecontrolparams-property"></a>Propiedad CODECAPI \_ AVEncVideoRateControlParams
 
 Especifica los parámetros de control de velocidad de vídeo para un codificador de vídeo.
 
@@ -29,9 +29,9 @@ Especifica los parámetros de control de velocidad de vídeo para un codificador
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                     |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                     |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -39,7 +39,7 @@ Especifica los parámetros de control de velocidad de vídeo para un codificador
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

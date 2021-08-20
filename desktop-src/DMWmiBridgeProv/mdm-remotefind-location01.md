@@ -1,9 +1,9 @@
 ---
-title: MDM_RemoteFind_Location01 (clase)
-description: La \_ \_ clase Location01 de REMOTEFIND de MDM recupera la información de ubicación de un dispositivo determinado.
+title: MDM_RemoteFind_Location01 clase
+description: La clase \_ MDM RemoteFind \_ Location01 recupera la información de ubicación de un dispositivo determinado.
 ms.assetid: 0c26bb3c-99b4-43ed-99ce-d976d48c4445
 keywords:
-- MDM_RemoteFind_Location01 (clase)
+- MDM_RemoteFind_Location01 clase
 - MDM_RemoteFind_Location01 clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56e1b46a7b4a0c3439f78f38a5fb6cd5b865275c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 36942badfe975a28d5212e502ab28984fa745f4a7563c39ed1cebb7d1b5dbcef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077029"
 ---
-# <a name="mdm_remotefind_location01-class"></a>\_Clase Location01 RemoteFind de MDM \_
+# <a name="mdm_remotefind_location01-class"></a>Clase \_ RemoteFind \_ Location01 de MDM
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La **clase \_ \_ Location01 de RemoteFind de MDM** recupera la información de ubicación de un dispositivo determinado.
+La **clase \_ MDM RemoteFind \_ Location01** recupera la información de ubicación de un dispositivo determinado.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -51,13 +51,13 @@ class MDM_RemoteFind_Location01
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ \_ Location01 de MDM RemoteFind** tiene estos tipos de miembros:
+La **clase \_ Mdm RemoteFind \_ Location01** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ Location01 de MDM RemoteFind** tiene estas propiedades.
+La **clase \_ MDM RemoteFind \_ Location01** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -67,7 +67,7 @@ La **clase \_ \_ Location01 de MDM RemoteFind** tiene estas propiedades.
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -75,10 +75,10 @@ Tipo de acceso: lectura/escritura
 [Age](/windows/client-management/mdm/remotefind-csp#age)
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -89,18 +89,18 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **real32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
 
-[AltitudeAccuracy](/windows/client-management/mdm/remotefind-csp#altitudeaccuracy)
+[AltitudAcencia](/windows/client-management/mdm/remotefind-csp#altitudeaccuracy)
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -114,7 +114,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica el nombre del nodo primario. Para esta clase, la cadena es "Location".
@@ -127,7 +127,7 @@ Identifica el nombre del nodo primario. Para esta clase, la cadena es "Location"
 Tipo de datos: **real32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -138,7 +138,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **real32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -152,10 +152,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/RemoteFind".
+Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/RemoteFind"
 
 </dd> </dl>
 
@@ -163,12 +163,12 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                     |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                     |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                       |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                              |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                              |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl>  |
 
 
@@ -177,7 +177,7 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 
 <dl> <dt>
 
-[Usar scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

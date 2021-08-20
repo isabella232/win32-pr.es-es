@@ -4,39 +4,39 @@ ms.assetid: ae12afcf-12cc-4c84-9aba-de56fc39437b
 title: Creación de una colección de fuentes privadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 084e8a2d6f79f60e0719f04fbabb778b9483bd80
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df673273611ed329e933c84e6540ed984088202590dc1d1c644ccdedca2c80c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118977595"
 ---
 # <a name="creating-a-private-font-collection"></a>Creación de una colección de fuentes privadas
 
-La clase [**PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) hereda de la clase base abstracta [**FontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontcollection) . Puede usar un objeto **PrivateFontCollection** para mantener un conjunto de fuentes específicamente para la aplicación.
+La [**clase PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) hereda de la clase base abstracta [**FontCollection.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontcollection) Puede usar un **objeto PrivateFontCollection** para mantener un conjunto de fuentes específicamente para la aplicación.
 
-Una colección de fuentes privada puede incluir fuentes del sistema instaladas, así como fuentes que no se han instalado en el equipo. Para agregar un archivo de fuente a una colección de fuentes privada, llame al método [**PrivateFontCollection:: AddFontFile**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-privatefontcollection-addfontfile) de un objeto [**PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) .
+Una colección de fuentes privadas puede incluir fuentes del sistema instaladas, así como fuentes que no se han instalado en el equipo. Para agregar un archivo de fuente a una colección de fuentes privada, llame al método [**PrivateFontCollection::AddFontFile**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-privatefontcollection-addfontfile) de un [**objeto PrivateFontCollection.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection)
 
 > [!Note]  
-> Cuando se usa la API GDI+, nunca se debe permitir que la aplicación Descargue fuentes arbitrarias de orígenes que no son de confianza. El sistema operativo requiere privilegios elevados para asegurarse de que todas las fuentes instaladas son de confianza.
+> Al usar la API GDI+, nunca debe permitir que la aplicación descargue fuentes arbitrarias de orígenes que no son de confianza. El sistema operativo requiere privilegios elevados para garantizar que todas las fuentes instaladas son de confianza.
 
  
 
-El método [**FontCollection:: GetFamilies**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontcollection-getfamilies) de un objeto [**PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) devuelve una matriz de objetos [**FontFamily**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) . Antes de llamar a **FontCollection:: GetFamilies**, debe asignar un búfer lo suficientemente grande como para contener esa matriz. Para determinar el tamaño del búfer necesario, llame al método [**FontCollection:: GetFamilyCount**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontcollection-getfamilycount) y multiplique el valor devuelto por **sizeof**(**FontFamily**).
+El [**método FontCollection::GetFamilies**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontcollection-getfamilies) de un [**objeto PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) devuelve una matriz de objetos [**FontFamily.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) Antes de llamar **a FontCollection::GetFamilies**, debe asignar un búfer lo suficientemente grande como para contener esa matriz. Para determinar el tamaño del búfer necesario, llame al método [**FontCollection::GetFamilyCount**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontcollection-getfamilycount) y multiplique el valor devuelto por **sizeof**(**FontFamily**).
 
-El número de familias de fuentes de una colección de fuentes privadas no es necesariamente el mismo que el número de archivos de fuentes que se han agregado a la colección. Por ejemplo, supongamos que agrega los archivos ArialBd. TFF, Times. TFF y TimesBd. TFF a una colección. Habrá tres archivos, pero solo dos familias en la colección porque Times. TFF y TimesBd. TFF pertenecen a la misma familia.
+El número de familias de fuentes de una colección de fuentes privada no es necesariamente el mismo que el número de archivos de fuente que se han agregado a la colección. Por ejemplo, suponga que agrega los archivos ArialBd.tff, Times.tff y TimesBd.tff a una colección. Habrá tres archivos, pero solo dos familias en la colección porque Times.tff y TimesBd.tff pertenecen a la misma familia.
 
-En el ejemplo siguiente se agregan los siguientes tres archivos de fuente a un objeto [**PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) :
+En el ejemplo siguiente se agregan los tres archivos de fuente siguientes a un [**objeto PrivateFontCollection:**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection)
 
--   C: \\ \\ fuentes de WinNT \\ Arial. TFF (Arial, normal)
--   C: \\ WinNT \\ Fonts \\ CourBI. TFF (Courier New, Bold Italic cursiva)
--   C: \\ WinNT \\ Fonts \\ TimesBd. TFF (Times New Roman, Bold)
+-   C: \\ Fuentes WINNT \\ \\ Arial.tff (Arial, normal)
+-   C: \\ Fuentes WINNT \\ \\ ParaBi.tff (Courier New, negrita cursiva)
+-   C: \\ WinNT \\ Fonts \\ TimesBd.tff (Times New Roman, bold)
 
-El código llama al método [**FontCollection:: GetFamilyCount**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontcollection-getfamilycount) del objeto [**PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) para determinar el número de familias de la colección privada y, a continuación, llama a [**FontCollection:: GetFamilies**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontcollection-getfamilies) para recuperar una matriz de objetos [**FontFamily**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) .
+El código llama al [**método FontCollection::GetFamilyCount**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontcollection-getfamilycount) del objeto [**PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) para determinar el número de familias de la colección privada y, a continuación, llama a [**FontCollection::GetFamilies**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontcollection-getfamilies) para recuperar una matriz de objetos [**FontFamily.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily)
 
-Para cada objeto [**FontFamily**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) de la colección, el código llama al método [**FontFamily:: IsStyleAvailable**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-isstyleavailable) para determinar si están disponibles varios estilos (normal, negrita, cursiva, negrita cursiva, subrayado y tachado). Los argumentos pasados al método **FontFamily:: IsStyleAvailable** son miembros de la enumeración [**fontStyle**](/windows/win32/api/Gdiplusenums/ne-gdiplusenums-fontstyle) , que se declara en Gdiplusenums. h.
+Para cada objeto [**FontFamily**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) de la colección, el código llama al método [**FontFamily::IsStyleAvailable**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-isstyleavailable) para determinar si hay disponibles varios estilos (normal, negrita, cursiva, cursiva en negrita, subrayado y tachado). Los argumentos pasados al **método FontFamily::IsStyleAvailable** son miembros de la enumeración [**FontStyle,**](/windows/win32/api/Gdiplusenums/ne-gdiplusenums-fontstyle) que se declara en Gdiplusenums.h.
 
-Si una combinación de familia/estilo determinada está disponible, se crea un objeto de [**fuente**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-font) con esa familia y estilo. El primer argumento pasado al constructor de **fuente** es el nombre de la familia de fuentes (no un objeto [**FontFamily**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) como sucede con otras variaciones del constructor de **fuentes** ) y el último argumento es la dirección del objeto [**PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) . Una vez construido el objeto de **fuente** , su dirección se pasa al método [DrawString](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawstring(constwchar_int_constfont_constpointf__constbrush)) de la clase [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) para mostrar el nombre de familia junto con el nombre del estilo.
+Si hay disponible una combinación de familia y estilo determinada, se construye un [**objeto Font**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-font) con esa familia y estilo. El primer argumento pasado al constructor **Font** es el nombre de familia de fuentes (no un objeto [**FontFamily**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) como es el caso de otras variaciones del constructor **Font)** y el argumento final es la dirección del objeto [**PrivateFontCollection.**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) Una vez construido el objeto **Font,** su dirección se pasa al método [DrawString](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-drawstring(constwchar_int_constfont_constpointf__constbrush)) de la clase [**Graphics**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) para mostrar el nombre de familia junto con el nombre del estilo.
 
 
 ```
@@ -179,22 +179,22 @@ En la ilustración siguiente se muestra la salida del código anterior.
 
 ![captura de pantalla de una ventana que muestra nueve nombres de fuente, cada uno de los cuales muestra la fuente con nombre](images/fontstext7.png)
 
-Arial. TFF (que se agregó a la colección de fuentes privada en el ejemplo de código anterior) es el archivo de fuente para el estilo Arial normal. Sin embargo, tenga en cuenta que la salida del programa muestra varios estilos disponibles distintos de regular para la familia de fuentes Arial. Esto se debe a que GDI+ de Windows puede simular los estilos de negrita, cursiva y negrita cursiva a partir del estilo normal. GDI+ también puede generar subrayados y tachados a partir del estilo normal.
+Arial.tff (que se agregó a la colección de fuentes privadas en el ejemplo de código anterior) es el archivo de fuente para el estilo normal de Arial. Sin embargo, tenga en cuenta que la salida del programa muestra varios estilos disponibles que no son normales para la familia de fuentes Arial. Esto se debe a Windows GDI+ puede simular los estilos negrita, cursiva y negrita cursiva del estilo normal. GDI+ también puede producir subrayados y tachados a partir del estilo normal.
 
-De forma similar, GDI+ puede simular el estilo de negrita cursiva desde el estilo negrita o el estilo cursiva. La salida del programa muestra que el estilo de negrita cursiva está disponible para la familia de veces, aunque TimesBd. TFF (Times New Roman, Bold) es el único archivo de horas de la colección.
+Del mismo modo, GDI+ puede simular el estilo en negrita cursiva a partir del estilo negrita o el estilo cursiva. La salida del programa muestra que el estilo en negrita cursiva está disponible para la familia Times, aunque TimesBd.tff (Times New Roman, bold) es el único archivo Times de la colección.
 
-En esta tabla se especifican las fuentes que no son del sistema compatibles con GDI+.
+Esta tabla especifica las fuentes que no son del sistema que GDI+ admite.
 
 
 
 |                     | GDI | GDI+ en Windows 7 | GDI+ en Windows 8 | DirectWrite |
 |---------------------|-----|-------------------|-------------------|-------------|
-| . FON                | sí | no                | no                | no          |
-| . FNT                | sí | no                | no                | no          |
-| . TTF                | sí | sí               | sí               | sí         |
-| . OTF con TrueType  | sí | sí               | sí               | sí         |
-| . OTF con Adobe CFF | sí | no                | sí               | sí         |
-| Adobe tipo 1        | sí | no                | no                | no          |
+| . Fon                | Sí | No                | No                | No          |
+| . .fnt                | Sí | No                | No                | No          |
+| . Ttf                | Sí | Sí               | Sí               | Sí         |
+| . OTF con TrueType  | Sí | Sí               | Sí               | Sí         |
+| . OTF con Adobe CFF | Sí | No                | sí               | Sí         |
+| Adobe Type 1        | Sí | No                | No                | No          |
 
 
 

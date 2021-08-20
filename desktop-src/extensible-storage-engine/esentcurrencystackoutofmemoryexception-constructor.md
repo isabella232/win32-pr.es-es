@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentCurrencyStackOutOfMemoryException'
-title: Constructor de EsentCurrencyStackOutOfMemoryException
+description: 'Más información sobre: Constructor EsentCurrencyStackOutOfMemoryException'
+title: Constructor EsentCurrencyStackOutOfMemoryException
 TOCTitle: 'EsentCurrencyStackOutOfMemoryException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentCurrencyStackOutOfMemoryException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcurrencystackoutofmemoryexception.esentcurrencystackoutofmemoryexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0ce7a65366c11bd26ff40ba83fecd5b22d77fb8b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 57be01403aa70601d5249d7f32aab217b398b3f12c27dbb6df452ce7daa0d9af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119041623"
 ---
-# <a name="esentcurrencystackoutofmemoryexception-constructor"></a>Constructor de EsentCurrencyStackOutOfMemoryException
+# <a name="esentcurrencystackoutofmemoryexception-constructor"></a>Constructor EsentCurrencyStackOutOfMemoryException
 
 Inicializa una nueva instancia de la clase EsentCurrencyStackOutOfMemoryException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentCurrencyStackOutOfMemoryException()
 public EsentCurrencyStackOutOfMemoryException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentCurrencyStackOutOfMemoryException()
 
 [Miembros de EsentCurrencyStackOutOfMemoryException](./esentcurrencystackoutofmemoryexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

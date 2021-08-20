@@ -1,5 +1,5 @@
 ---
-description: 'Enumeración D3DXMESH: marcas usadas para especificar opciones de creación para una malla.'
+description: 'Enumeración D3DXMESH: marcas que se usan para especificar opciones de creación para una malla.'
 ms.assetid: c94e19ab-8024-4a28-9d1a-6d57707c3a52
 title: Enumeración D3DXMESH (D3dx9mesh.h)
 ms.topic: reference
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118525281"
 ---
-# <a name="d3dxmesh-enumeration"></a>Enumeración D3DXMESH
+# <a name="d3dxmesh-enumeration"></a>D3DXMESH (enumeración)
 
 Marcas usadas para especificar opciones de creación para una malla.
 
@@ -70,35 +70,35 @@ La malla tiene índices de 32 bits en lugar de índices de 16 bits. Vea la secci
 <span id="D3DXMESH_DONOTCLIP"></span><span id="d3dxmesh_donotclip"></span>**D3DXMESH \_ DONOTCLIP**
 </dt> <dd>
 
-Use la [**marca de uso D3DUSAGE \_ DONOTCLIP**](d3dusage.md) para los búferes de vértices e índices.
+Use la [**marca de uso D3DUSAGE \_ DONOTCLIP**](d3dusage.md) para los búferes de vértice e índice.
 
 </dd> <dt>
 
 <span id="D3DXMESH_POINTS"></span><span id="d3dxmesh_points"></span>**PUNTOS D3DXMESH \_**
 </dt> <dd>
 
-Use la [**marca de uso D3DUSAGE \_ POINTS para**](d3dusage.md) búferes de vértices e índices.
+Use la [**marca de uso D3DUSAGE \_ POINTS para**](d3dusage.md) los búferes de vértice e índice.
 
 </dd> <dt>
 
 <span id="D3DXMESH_RTPATCHES"></span><span id="d3dxmesh_rtpatches"></span>**D3DXMESH \_ RTPATCHES**
 </dt> <dd>
 
-Use la [**marca de uso D3DUSAGE \_ RTPATCHES para**](d3dusage.md) búferes de vértices e índices.
+Use la [**marca de uso D3DUSAGE \_ RTPATCHES**](d3dusage.md) para los búferes de vértices e índices.
 
 </dd> <dt>
 
 <span id="D3DXMESH_NPATCHES"></span><span id="d3dxmesh_npatches"></span>**D3DXMESH \_ NPATCHES**
 </dt> <dd>
 
-Al especificar esta marca, el vértice y el búfer de índice de la malla se crean con la [**marca D3DUSAGE \_ NPATCHES.**](d3dusage.md) Esto es necesario si el objeto de malla se va a representar mediante la mejora de N revisiones mediante Direct3D.
+Al especificar esta marca, el vértice y el búfer de índice de la malla se crean con la marca [**D3DUSAGE \_ NPATCHES.**](d3dusage.md) Esto es necesario si el objeto de malla se va a representar mediante la mejora de N revisiones mediante Direct3D.
 
 </dd> <dt>
 
 <span id="D3DXMESH_VB_SYSTEMMEM"></span><span id="d3dxmesh_vb_systemmem"></span>**D3DXMESH \_ VB \_ SYSTEMMEM**
 </dt> <dd>
 
-Use la [**marca de uso \_ SYSTEMMEM de D3DPOOL**](./d3dpool.md) para búferes de vértices.
+Use la [**marca de uso D3DPOOL \_ SYSTEMMEM**](./d3dpool.md) para los búferes de vértices.
 
 </dd> <dt>
 
@@ -112,56 +112,56 @@ Use la marca [**de uso D3DPOOL \_ MANAGED**](./d3dpool.md) para búferes de vér
 <span id="D3DXMESH_VB_WRITEONLY"></span><span id="d3dxmesh_vb_writeonly"></span>**D3DXMESH \_ VB \_ WRITEONLY**
 </dt> <dd>
 
-Use la [**marca de uso \_ WRITEONLY de D3DUSAGE**](d3dusage.md) para búferes de vértices.
+Use la [**marca de uso \_ WRITEONLY de D3DUSAGE**](d3dusage.md) para los búferes de vértices.
 
 </dd> <dt>
 
 <span id="D3DXMESH_VB_DYNAMIC"></span><span id="d3dxmesh_vb_dynamic"></span>**D3DXMESH \_ VB \_ DYNAMIC**
 </dt> <dd>
 
-Use la [**marca de uso D3DUSAGE \_ DYNAMIC**](d3dusage.md) para los búferes de vértices.
+Use la [**marca de \_ uso dinámico D3DUSAGE**](d3dusage.md) para búferes de vértices.
 
 </dd> <dt>
 
 <span id="D3DXMESH_VB_SOFTWAREPROCESSING"></span><span id="d3dxmesh_vb_softwareprocessing"></span>**D3DXMESH \_ VB \_ SOFTWAREPROCESSING**
 </dt> <dd>
 
-Use la [**marca de uso D3DUSAGE \_ SOFTWAREPROCESSING para**](d3dusage.md) los búferes de vértice.
+Use la [**marca de uso D3DUSAGE \_ SOFTWAREPROCESSING**](d3dusage.md) para los búferes de vértices.
 
 </dd> <dt>
 
 <span id="D3DXMESH_IB_SYSTEMMEM"></span><span id="d3dxmesh_ib_systemmem"></span>**D3DXMESH \_ IB \_ SYSTEMMEM**
 </dt> <dd>
 
-Use la [**marca de uso \_ SYSTEMMEM de D3DPOOL**](./d3dpool.md) para búferes de índice.
+Use la [**marca de uso D3DPOOL \_ SYSTEMMEM**](./d3dpool.md) para los búferes de índice.
 
 </dd> <dt>
 
 <span id="D3DXMESH_IB_MANAGED"></span><span id="d3dxmesh_ib_managed"></span>**D3DXMESH \_ IB \_ ADMINISTRADO**
 </dt> <dd>
 
-Use la marca [**de uso D3DPOOL \_ MANAGED**](./d3dpool.md) para búferes de índice.
+Use la [**marca de uso D3DPOOL \_ MANAGED**](./d3dpool.md) para los búferes de índice.
 
 </dd> <dt>
 
 <span id="D3DXMESH_IB_WRITEONLY"></span><span id="d3dxmesh_ib_writeonly"></span>**D3DXMESH \_ IB \_ WRITEONLY**
 </dt> <dd>
 
-Use la [**marca de uso \_ WRITEONLY de D3DUSAGE**](d3dusage.md) para búferes de índice.
+Use la [**marca de uso \_ WRITEONLY de D3DUSAGE**](d3dusage.md) para los búferes de índice.
 
 </dd> <dt>
 
 <span id="D3DXMESH_IB_DYNAMIC"></span><span id="d3dxmesh_ib_dynamic"></span>**D3DXMESH \_ IB \_ DYNAMIC**
 </dt> <dd>
 
-Use la marca de uso DYNAMIC de [**D3DUSAGE \_**](d3dusage.md) para los búferes de índice.
+Use la [**marca de \_ uso DYNAMIC de D3DUSAGE**](d3dusage.md) para los búferes de índice.
 
 </dd> <dt>
 
 <span id="D3DXMESH_IB_SOFTWAREPROCESSING"></span><span id="d3dxmesh_ib_softwareprocessing"></span>**D3DXMESH \_ IB \_ SOFTWAREPROCESSING**
 </dt> <dd>
 
-Use la [**marca de uso D3DUSAGE \_ SOFTWAREPROCESSING para**](d3dusage.md) los búferes de índice.
+Use la [**marca de uso D3DUSAGE \_ SOFTWAREPROCESSING**](d3dusage.md) para los búferes de índice.
 
 </dd> <dt>
 
@@ -216,7 +216,7 @@ Equivalente a especificar D3DXMESH \_ VB \_ SOFTWAREPROCESSING y D3DXMESH \_ IB 
 
 ## <a name="remarks"></a>Comentarios
 
-Una malla de 32 bits (D3DXMESH 32BIT) puede admitir teóricamente \_ (2^32)-1 caras y vértices. Sin embargo, no es práctico asignar memoria para una malla de gran tamaño en un sistema operativo de 32 bits.
+Una malla de 32 bits (D3DXMESH de 32 BITS) puede admitir teóricamente \_ (2^32)-1 caras y vértices. Sin embargo, no es práctico asignar memoria para una malla que sea grande en un sistema operativo de 32 bits.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -228,7 +228,7 @@ Una malla de 32 bits (D3DXMESH 32BIT) puede admitir teóricamente \_ (2^32)-1 ca
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

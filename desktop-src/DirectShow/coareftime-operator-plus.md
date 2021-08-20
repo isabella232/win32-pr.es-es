@@ -1,7 +1,7 @@
 ---
-description: Este operador agrega dos horas de referencia.
+description: Este operador agrega dos tiempos de referencia.
 ms.assetid: 4dfc087a-ec4f-4a8a-8bd4-4da9e1699bcd
-title: Método COARefTime. Operator + (Ctlutil. h)
+title: Método COARefTime.operator+ (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1a6f5019c61d4c1baec47652db8842aa5085b675
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 348151b4bb7dc7cca6578755e10934364ba59b8ac5447c0bce4b5240483e7fef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954344"
 ---
-# <a name="coareftimeoperator-method"></a>COARefTime. Operator + (método)
+# <a name="coareftimeoperator-method"></a>Método COARefTime.operator+
 
-Este operador agrega dos horas de referencia.
+Este operador agrega dos tiempos de referencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ COARefTime operator+(
 
 <dl> <dt>
 
-*RT* \[ CLI\]
+*rt* \[ Ref\]
 </dt> <dd>
 
-Referencia al objeto **COARefTime** que se va a agregar.
+Referencia al **objeto COARefTime que** se agregará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un nuevo objeto **COARefTime** igual a la suma de las horas de referencia.
+Devuelve un nuevo **objeto COARefTime** igual a la suma de los tiempos de referencia.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve un nuevo objeto **COARefTime** igual a la suma de las horas de referenc
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve un nuevo objeto **COARefTime** igual a la suma de las horas de referenc
 
 <dl> <dt>
 
-[**Clase COARefTime**](coareftime.md)
+[**COARefTime (clase)**](coareftime.md)
 </dt> </dl>
 
  

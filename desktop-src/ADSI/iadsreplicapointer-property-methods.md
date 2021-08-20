@@ -4,7 +4,7 @@ description: El método de propiedad de la interfaz IADsReplicaPointer establece
 ms.assetid: fc520ea4-b2c2-44c0-8bec-25f8d4a77074
 ms.tgt_platform: multiple
 keywords:
-- Métodos de propiedad IADsReplicaPointer ADSI
+- IADsReplicaPointer Property Methods ADSI
 topic_type:
 - apiref
 api_name:
@@ -39,7 +39,7 @@ ms.locfileid: "117839725"
 ---
 # <a name="iadsreplicapointer-property-methods"></a>Métodos de propiedad IADsReplicaPointer
 
-El método de propiedad de [**la interfaz IADsReplicaPointer**](/windows/desktop/api/Iads/nn-iads-iadsreplicapointer) establece la propiedad descrita en la tabla siguiente. Para obtener más información, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
+El método de propiedad [**de la interfaz IADsReplicaPointer**](/windows/desktop/api/Iads/nn-iads-iadsreplicapointer) establece la propiedad descrita en la tabla siguiente. Para obtener más información, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -191,7 +191,7 @@ HRESULT put_ServerName(
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -201,14 +201,14 @@ HRESULT put_ServerName(
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [**IADsReplicaPointer**](/windows/desktop/api/Iads/nn-iads-iadsreplicapointer)
 </dt> <dt>
 
-[**REPLICADOR \_ DE ADS**](/windows/win32/api/iads/ns-iads-ads_replicapointer)
+[**REPLICAPOINTER DE ADS \_**](/windows/win32/api/iads/ns-iads-ads_replicapointer)
 </dt> </dl>
 
  

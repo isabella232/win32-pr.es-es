@@ -1,7 +1,7 @@
 ---
 description: Define la sección del manifiesto de instrumentación que identifica el proveedor y los contadores que proporcionan.
 ms.assetid: c661f1af-ebe8-4f8a-b77e-a2229f45facd
-title: Tipo complejo de contadores
+title: counters Tipo complejo
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5ad87b79175b0cecdec17ad081340fa0be2b90b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 14630fa4e0e9461e59d377b4defc3edacee8dca9560d1f7eb42acb317ffd1f57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143968"
 ---
-# <a name="counters-complex-type"></a>Tipo complejo de contadores
+# <a name="counters-complex-type"></a>counters Tipo complejo
 
 Define la sección del manifiesto de instrumentación que identifica el proveedor y los contadores que proporcionan.
 
@@ -52,7 +52,7 @@ Define la sección del manifiesto de instrumentación que identifica el proveedo
 
 | Elemento      | Tipo                                                               | Descripción                                              |
 |--------------|--------------------------------------------------------------------|----------------------------------------------------------|
-| **presta** | [**Man: proveedor**](performance-counters-provider-complex-type.md) | Identifica un proveedor que proporciona contadores.<br/> |
+| **Proveedor** | [**man:provider**](performance-counters-provider-complex-type.md) | Identifica un proveedor que proporciona contadores.<br/> |
 
 
 
@@ -72,8 +72,8 @@ Define la sección del manifiesto de instrumentación que identifica el proveedo
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -81,7 +81,7 @@ Define la sección del manifiesto de instrumentación que identifica el proveedo
 
 <dl> <dt>
 
-[**instrumentación**](/windows/desktop/WES/eventmanifestschema-instrumentationtype-complextype)
+[**Instrumentación**](/windows/desktop/WES/eventmanifestschema-instrumentationtype-complextype)
 </dt> </dl>
 
  

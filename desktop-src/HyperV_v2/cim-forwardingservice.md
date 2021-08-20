@@ -1,7 +1,7 @@
 ---
-description: Representa un servicio de reenvío para el tráfico de red. El servicio procesa los paquetes recibidos extremos de protocolo al descartarlos o enviar los paquetes a otros puntos de conexión del protocolo.
+description: Representa un servicio de reenvío para el tráfico de red. El servicio procesa los paquetes que reciben los puntos de conexión de protocolo descartando o enviando los paquetes a otros puntos de conexión de protocolo.
 ms.assetid: 366ae2bf-a436-4ad2-b212-39958a7fbc43
-title: CIM_ForwardingService (clase)
+title: CIM_ForwardingService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 12ebb33d6c63b637c9342bd7a869993019abb26b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63dd03c6e458ee88ef73dea89d006d6d733dd147ed2d4ad7433901c18cbb25d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014663"
 ---
-# <a name="cim_forwardingservice-class"></a>\_Clase ForwardingService de CIM
+# <a name="cim_forwardingservice-class"></a>Cim \_ ForwardingService (clase)
 
-Representa un servicio de reenvío para el tráfico de red. El servicio procesa los paquetes recibidos extremos de protocolo al descartarlos o enviar los paquetes a otros puntos de conexión del protocolo.
+Representa un servicio de reenvío para el tráfico de red. El servicio procesa los paquetes que reciben los puntos de conexión de protocolo descartando o enviando los paquetes a otros puntos de conexión de protocolo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,13 +39,13 @@ class CIM_ForwardingService : CIM_NetworkService
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ForwardingService** tiene estos tipos de miembros:
+La **clase CIM \_ ForwardingService** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ForwardingService** tiene estas propiedades.
+La **clase CIM \_ ForwardingService** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -61,14 +61,14 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ForwardingService**.**ProtocolType**")
 </dt> </dl>
 
-Define el tipo de protocolo que se va a reenviar cuando el valor de la propiedad **protocolType** es 1 (otro).
+Define el tipo de protocolo que se reenviará cuando el valor de la **propiedad ProtocolType** sea 1 (Other).
 
 </dd> <dt>
 
 **ProtocolType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -77,7 +77,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ForwardingService**.**OtherProtocolType**")
 </dt> </dl>
 
-El tipo de protocolo que se va a reenviar.
+Tipo de protocolo que se reenviará.
 
 <dt>
 
@@ -90,7 +90,7 @@ El tipo de protocolo que se va a reenviar.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -160,7 +160,7 @@ El tipo de protocolo que se va a reenviar.
 
 <span id="VINES"></span><span id="vines"></span>
 
-**Vines** (11)
+**PLANTAS** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -209,7 +209,7 @@ El tipo de protocolo que se va a reenviar.
 
 <span id="Infiniband"></span><span id="infiniband"></span><span id="INFINIBAND"></span>
 
-**InfiniBand** (18)
+**Infiniband** (18)
 
 
 </dt> <dd></dd> <dt>
@@ -231,8 +231,8 @@ El tipo de protocolo que se va a reenviar.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -241,7 +241,7 @@ El tipo de protocolo que se va a reenviar.
 
 <dl> <dt>
 
-[**NetworkService de CIM \_**](cim-networkservice.md)
+[**CIM \_ NetworkService**](cim-networkservice.md)
 </dt> </dl>
 
  

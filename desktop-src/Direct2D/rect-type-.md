@@ -1,9 +1,9 @@
 ---
-title: Función de tipo Rect (D2d1helper. h)
-description: Crea una estructura de rectángulo que almacena sus coordenadas con el tipo de datos especificado.
+title: Función de tipo Rect (D2d1helper.h)
+description: Crea una estructura de rectángulo que almacena sus coordenadas utilizando el tipo de datos especificado.
 ms.assetid: b152efaf-0779-4024-b998-82a347abba71
 keywords:
-- Rect (función de tipo Direct2D)
+- Función de tipo Rect Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2ed16ecd5a79c73ecb7341b9aa7f3378854dd4e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dfb9dd2703a843b9f09ba1404cd9acfddc25620ff2dc4a00566b4c1582847449
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075019"
 ---
-# <a name="recttype-function"></a><Type>Función Rect
+# <a name="recttype-function"></a>Función <Type> Rect
 
-Crea una estructura de rectángulo que almacena sus coordenadas con el tipo de datos especificado.
+Crea una estructura de rectángulo que almacena sus coordenadas utilizando el tipo de datos especificado.
 
 ``` syntax
 template<typename Type>
@@ -41,7 +41,7 @@ typename TypeTraits<Type>::Rect Rect(
 
 | Parámetro | Descripción                                                                                                |
 |-----------|------------------------------------------------------------------------------------------------------------|
-| Tipo      | El tipo de datos que se usa para almacenar las dimensiones del rectángulo. Los valores posibles son **float** y **UINT32**. |
+| Tipo      | Tipo de datos utilizado para almacenar las dimensiones del rectángulo. Los valores posibles **son FLOAT** **y UINT32.** |
 
 
 
@@ -72,11 +72,11 @@ Estructura de rectángulo que contiene las coordenadas especificadas.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y actualización de plataforma para aplicaciones de UWP de aplicaciones de escritorio de Windows Vista \[ \|\]<br/>                          |
-| Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y la actualización de la plataforma de aplicaciones de escritorio de Windows Server 2008 \[ \| aplicaciones para UWP\]<br/> |
-| Teléfono mínimo compatible<br/>  | Windows Phone 8,1 \[ Windows Phone aplicaciones de Windows Runtime Silverlight 8,1 y\]<br/>                                                  |
-| Encabezado<br/>                   | <dl> <dt>D2d1helper. h</dt> </dl>                                                  |
-| Biblioteca<br/>                  | <dl> <dt>D2d1. lib</dt> </dl>                                                      |
+| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma para aplicaciones de escritorio de Windows Vista \[ \| para aplicaciones para UWP\]<br/>                          |
+| Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y Actualización de plataforma para aplicaciones de escritorio de Windows Server 2008 aplicaciones \[ \| para UWP\]<br/> |
+| Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\]<br/>                                                  |
+| Header<br/>                   | <dl> <dt>D2d1helper.h</dt> </dl>                                                  |
+| Biblioteca<br/>                  | <dl> <dt>D2d1.lib</dt> </dl>                                                      |
 | Archivo DLL<br/>                      | <dl> <dt>D2d1.dll</dt> </dl>                                                      |
 
 

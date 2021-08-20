@@ -1,9 +1,9 @@
 ---
 title: requestedit (atributo)
-description: El atributo \ requestedit \ indica que la propiedad admite la notificación OnRequestEdit.
+description: El atributo \ requestedit\ indica que la propiedad admite la notificación OnRequestEdit.
 ms.assetid: 63f38d83-596b-4031-bb6a-972374cd0c60
 keywords:
-- requestedit (atributo) MIDL
+- atributo requestedit MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18d83beea34f008e6e96fcd493d8410d7d2c5b88
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 51a894e5d4a09e7535e10a73e1bd118245e5886e0cdbb23b0f0645e588ab4adf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105651350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146358"
 ---
 # <a name="requestedit-attribute"></a>requestedit (atributo)
 
-El atributo **\[ \] requestedit** indica que la propiedad admite la notificación **OnRequestEdit** .
+El **\[ atributo \] requestedit** indica que la propiedad admite la **notificación OnRequestEdit.**
 
 ``` syntax
 [requestedit [,optional-attributes]] return-type function-name(params)
@@ -31,14 +31,14 @@ El atributo **\[ \] requestedit** indica que la propiedad admite la notificació
 
 <dl> <dt>
 
-*opcional: atributos* 
+*optional-attributes* 
 </dt> <dd>
 
-Cero o más atributos de MIDL.
+Cero o más atributos MIDL.
 
 </dd> <dt>
 
-*tipo de valor devuelto* 
+*return-type* 
 </dt> <dd>
 
 Especifica el tipo de valor devuelto de la función.
@@ -59,9 +59,9 @@ Cero o más parámetros de función.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La compatibilidad con la notificación de **OnRequestEdit** significa que, antes de que se realice un cambio, el objeto enviará al cliente una solicitud de permiso para cambiar una propiedad. Un objeto puede admitir el enlace de datos pero no tiene este atributo.
+Admitir la **notificación OnRequestEdit** significa que, antes de realizar un cambio, el objeto enviará al cliente una solicitud de permiso para cambiar una propiedad. Un objeto puede admitir el enlace de datos, pero no tiene este atributo.
 
 ### <a name="flags"></a>Marcas
 
@@ -82,7 +82,7 @@ properties:
 [TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
@@ -91,6 +91,6 @@ properties:
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

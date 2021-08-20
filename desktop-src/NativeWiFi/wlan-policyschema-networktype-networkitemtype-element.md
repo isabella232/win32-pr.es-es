@@ -1,7 +1,7 @@
 ---
 description: Especifica un tipo de red.
 ms.assetid: fe3044ab-6e93-48f8-b8cb-fdf984987232
-title: Elemento networkType (networkItemType)
+title: elemento networkType (networkItemType)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: c63b8afdaf699fde6871c198a8235772c59da1ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 57616d6701ab4663fa6757ddec5df4886ec02faaf5088f61b6cb466ca834ec81
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684395"
 ---
-# <a name="networktype-networkitemtype-element"></a>Elemento networkType (networkItemType)
+# <a name="networktype-networkitemtype-element"></a>elemento networkType (networkItemType)
 
 El elemento networkType (networkItemType) especifica un tipo de red. Hay dos tipos de redes: redes de infraestructura (ESS) y redes ad hoc (IBSS).
 
@@ -29,16 +29,16 @@ El elemento networkType (networkItemType) especifica un tipo de red. Hay dos tip
  />
 ```
 
-El elemento **NetworkType** se define mediante el tipo complejo de [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) .
+El tipo complejo [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) define el elemento **networkType.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -55,10 +55,10 @@ El elemento **NetworkType** se define mediante el tipo complejo de [**networkIte
 **Posibles elementos primarios inmediatos en la instancia de esquema**
 </dt> <dt>
 
-[**red (permitidos)**](wlan-policyschema-network-allowlist-element.md)
+[**network (allowList)**](wlan-policyschema-network-allowlist-element.md)
 </dt> <dt>
 
-[**red (bloqueo de listas)**](wlan-policyschema-network-blocklist-element.md)
+[**network (blockList)**](wlan-policyschema-network-blocklist-element.md)
 </dt> </dl>
 
  

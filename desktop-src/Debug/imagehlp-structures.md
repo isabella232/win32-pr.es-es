@@ -1,31 +1,31 @@
 ---
-description: 'A continuación se enumeran las estructuras de datos ImageHlp:'
+description: 'Estas son las estructuras de datos ImageHlp:'
 ms.assetid: b88c7a21-933f-450c-97e8-04cf3c5f9b11
-title: ImageHlp (estructuras)
+title: Estructuras imageHlp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc34f7d01a09e570e3b9cbcecb7592d89a22f94f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 57a92ac6b39de59e4380d6131e954818f12fb5cb9143312a8878593b2fd62ae3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956994"
 ---
-# <a name="imagehlp-structures"></a>ImageHlp (estructuras)
+# <a name="imagehlp-structures"></a>Estructuras imageHlp
 
-A continuación se enumeran las estructuras de datos ImageHlp:
+Estas son las estructuras de datos ImageHlp:
 
 <dl>
 
-[**\_encabezado de \_ símbolos \_ COFF de imagen**](/windows/desktop/api/WinNT/ns-winnt-image_coff_symbols_header)  
-[**\_Directorio de datos de imagen \_**](/windows/desktop/api/WinNT/ns-winnt-image_data_directory)  
-[**\_Directorio de depuración de imágenes \_**](/windows/desktop/api/WinNT/ns-winnt-image_debug_directory)  
-[**\_encabezado del archivo de imagen \_**](/windows/desktop/api/WinNT/ns-winnt-image_file_header)  
-[**\_entrada de función de imagen \_**](/windows/desktop/api/WinNT/ns-winnt-image_function_entry)  
-[**Configuración de carga de imagen \_ \_ \_ DIRECTORY64**](/windows/desktop/api/WinNT/ns-winnt-image_load_config_directory32)  
-[**encabezados de IMAGE \_ NT \_**](/windows/win32/api/winnt/ns-winnt-image_nt_headers32)  
-[**\_encabezado opcional de imagen \_**](/windows/win32/api/winnt/ns-winnt-image_optional_header32)  
-[**\_encabezado de sección de imagen \_**](/windows/desktop/api/WinNT/ns-winnt-image_section_header)  
+[**ENCABEZADO DE \_ SÍMBOLOS DE COFF \_ DE \_ IMAGEN**](/windows/desktop/api/WinNT/ns-winnt-image_coff_symbols_header)  
+[**DIRECTORIO DE \_ DATOS DE \_ IMAGEN**](/windows/desktop/api/WinNT/ns-winnt-image_data_directory)  
+[**DIRECTORIO DE \_ DEPURACIÓN \_ DE IMÁGENES**](/windows/desktop/api/WinNT/ns-winnt-image_debug_directory)  
+[**ENCABEZADO \_ DE ARCHIVO DE \_ IMAGEN**](/windows/desktop/api/WinNT/ns-winnt-image_file_header)  
+[**ENTRADA DE \_ FUNCIÓN \_ IMAGE**](/windows/desktop/api/WinNT/ns-winnt-image_function_entry)  
+[**IMAGE \_ LOAD \_ CONFIG \_ DIRECTORY64**](/windows/desktop/api/WinNT/ns-winnt-image_load_config_directory32)  
+[**ENCABEZADOS \_ NT DE \_ IMAGEN**](/windows/win32/api/winnt/ns-winnt-image_nt_headers32)  
+[**ENCABEZADO \_ OPCIONAL \_ DE IMAGEN**](/windows/win32/api/winnt/ns-winnt-image_optional_header32)  
+[**ENCABEZADO DE \_ SECCIÓN \_ DE IMAGEN**](/windows/desktop/api/WinNT/ns-winnt-image_section_header)  
 </dl>
 
  

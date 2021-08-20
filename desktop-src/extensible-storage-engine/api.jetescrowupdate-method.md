@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetEscrowUpdate (método)'
-title: Método API. JetEscrowUpdate
+description: 'Más información sobre: Método Api.JetEscrowUpdate'
+title: Método Api.JetEscrowUpdate
 TOCTitle: 'JetEscrowUpdate method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetEscrowUpdate(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_COLUMNID,System.Byte[],System.Int32,System.Byte[],System.Int32,System.Int32@,Microsoft.Isam.Esent.Interop.EscrowUpdateGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetescrowupdate(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 09e74f964fd6018248a3cfc594621bed96f92e60
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec5ddbedb921b89ef1b3c6e5bc48284da72407e8374bd6f0bb2de51c39c087e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042673"
 ---
-# <a name="apijetescrowupdate-method"></a>Método API. JetEscrowUpdate
+# <a name="apijetescrowupdate-method"></a>Método Api.JetEscrowUpdate
 
-Realiza una operación de suma atómica en una columna. Esta función permite que varias sesiones actualicen el mismo registro simultáneamente sin conflictos. Vea también [EscrowUpdate (JET_SESID, JET_TABLEID, JET_COLUMNID, Int32)](./api.escrowupdate-method.md).
+Realiza una operación de suma atómica en una columna. Esta función permite que varias sesiones actualicen el mismo registro simultáneamente sin conflictos. Vea también [EscrowUpdate(JET_SESID, JET_TABLEID, JET_COLUMNID, Int32).](./api.escrowupdate-method.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -85,63 +85,63 @@ public static void JetEscrowUpdate(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar. La sesión debe estar en una transacción.
+    Sesión que se usará. La sesión debe estar en una transacción.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor que se va a actualizar.
+    Cursor que se actualizará.
 
 <!-- end list -->
 
   - columnid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
     
-    Columna que se va a actualizar. Debe ser una columna actualizable de custodia.
+    Columna que se actualizará. Debe ser una columna que se pueda custodiar.
 
 <!-- end list -->
 
   - delta  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
-    Búfer que contiene el addend.
+    Búfer que contiene el complemento.
 
 <!-- end list -->
 
-  - deltaS  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+  - deltaSize  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Tamaño de addend.
+    Tamaño del complemento.
 
 <!-- end list -->
 
   - previousValue  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
-    Búfer de salida que recibirá el valor actual de la columna. Este búfer puede ser null.
+    Búfer de salida que recibirá el valor actual de la columna. Este búfer puede ser NULL.
 
 <!-- end list -->
 
   - previousValueLength  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Tamaño del búfer de previousValue.
+    Tamaño del búfer previousValue.
 
 <!-- end list -->
 
   - actualPreviousValueLength  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Devuelve el tamaño real de previousValue.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. EscrowUpdateGrbit](./escrowupdategrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.EscrowUpdateGrbit](./escrowupdategrbit-enumeration.md)  
     
     Opciones de actualización de custodia.
 
@@ -151,6 +151,6 @@ public static void JetEscrowUpdate(
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

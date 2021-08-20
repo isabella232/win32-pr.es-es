@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: SystemParameters. MinDataForXpress (propiedad)'
-title: Propiedad SystemParameters. MinDataForXpress
+description: 'Más información sobre: Propiedad SystemParameters.MinDataForXpress'
+title: Propiedad SystemParameters.MinDataForXpress
 TOCTitle: 'MinDataForXpress property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.SystemParameters.MinDataForXpress
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.mindataforxpress(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 358e37c952496faf10168e4ca3d593cb1b1318de
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e2f1a44fa45b07902bc0bf99961391209234f3506880399622a3b19ae56b2a52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978505"
 ---
-# <a name="systemparametersmindataforxpress-property"></a>Propiedad SystemParameters. MinDataForXpress
+# <a name="systemparametersmindataforxpress-property"></a>Propiedad SystemParameters.MinDataForXpress
 
-Obtiene o establece la cantidad más pequeña de datos que se debe comprimir con la compresión Xpress.
+Obtiene o establece la menor cantidad de datos que se deben comprimir con compresión xpress.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -61,7 +61,7 @@ public static int MinDataForXpress { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -69,6 +69,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [SystemParameters (clase)](./systemparameters-class.md)
 
-[Miembros de SystemParameters](./systemparameters-members.md)
+[Miembros SystemParameters](./systemparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

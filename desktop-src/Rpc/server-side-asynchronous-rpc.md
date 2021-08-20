@@ -1,6 +1,6 @@
 ---
 title: RPC asincrónica del lado servidor
-description: Página de navegación para las tareas esenciales para recibir y enviar llamadas a procedimiento remoto asincrónico (RPC).
+description: Página de navegación de las tareas esenciales para recibir y enviar llamadas a procedimiento remoto asincrónico (RPC).
 ms.assetid: eebf8b33-ebd1-45ce-8292-0ef92da15f28
 ms.topic: article
 ms.date: 05/31/2018

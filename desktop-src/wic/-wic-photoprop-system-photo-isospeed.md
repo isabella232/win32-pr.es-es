@@ -1,23 +1,23 @@
 ---
-description: La Directiva de metadatos de fotos para la propiedad System. Photo. isospeed.
+description: Directiva de metadatos de fotos para la propiedad System.Photo.ISOSpeed.
 ms.assetid: 22b5552c-41b1-4090-a827-b920dcbba5e9
-title: Directiva de metadatos de fotografía de System. Photo. isospeed
+title: Directiva de metadatos de fotos System.Photo.ISOSpeed
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2988f774f70721ab1817ffaf605098ab1164316a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c01cb8c3e8e4c80c63985b49e8eda49ebe16d47982dde4cd051f555b8c93d68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964813"
 ---
-# <a name="systemphotoisospeed-photo-metadata-policy"></a>Directiva de metadatos de fotografía de System. Photo. isospeed
+# <a name="systemphotoisospeed-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Photo.ISOSpeed
 
-La Directiva de metadatos de fotos para la propiedad [System. Photo. isospeed](../properties/props-system-photo-focallengthinfilm.md) .
+Directiva de metadatos de fotos para [la propiedad System.Photo.ISOSpeed.](../properties/props-system-photo-focallengthinfilm.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-Isovelocidad de la \_ foto PKEY \_
+PKEY \_ Photo \_ ISOSpeed
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,7 +27,7 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ UI2
 
@@ -37,33 +37,33 @@ UShort
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                                    | Formato de disco |
+| Pedido | Ruta de acceso                                    | Formato de disco |
 |-------|-----------------------------------------|-------------|
-| 1     | /app1/IFD/Exif/{ushort = 34855}           | ushort      |
-| 2     | /XMP/ <xmpseq> Exif: ISOSpeedRatings | unicode     |
-| 3     | /XMP/Exif: isospeed                      | unicode     |
+| 1     | /app1/ifd/exif/{ushort=34855}           | ushort      |
+| 2     | /xmp/ <xmpseq> exif:ISOSpeedRatings | unicode     |
+| 3     | /xmp/exif:ISOSpeed                      | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                                    | Formato de disco |
+| Pedido | Ruta de acceso                                    | Formato de disco |
 |-------|-----------------------------------------|-------------|
-| 1     | /app1/IFD/Exif/{ushort = 34855}           | ushort      |
-| 2     | /XMP/ <xmpseq> Exif: ISOSpeedRatings | unicode     |
-| 3     | /XMP/Exif: isospeed                      | unicode     |
+| 1     | /app1/ifd/exif/{ushort=34855}           | ushort      |
+| 2     | /xmp/ <xmpseq> exif:ISOSpeedRatings | unicode     |
+| 3     | /xmp/exif:ISOSpeed                      | unicode     |
 
 
 
@@ -73,11 +73,11 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                                    |
+| Pedido | Ruta de acceso                                    |
 |-------|-----------------------------------------|
-| 1     | /app1/IFD/Exif/{ushort = 34855}           |
-| 2     | /XMP/ <xmpseq> Exif: isospeedratings |
-| 3     | /XMP/Exif: isospeed                      |
+| 1     | /app1/ifd/exif/{ushort=34855}           |
+| 2     | /xmp/ <xmpseq> exif:isospeedratings |
+| 3     | /xmp/exif:isospeed                      |
 
 
 
@@ -85,29 +85,29 @@ Se reconcilian los valores de los distintos esquemas.
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                                        | Formato de disco |
+| Pedido | Ruta de acceso                                        | Formato de disco |
 |-------|---------------------------------------------|-------------|
-| 1     | /IFD/Exif/{ushort = 34855}                    | ushort      |
-| 2     | /IFD/XMP/ <xmpseq> Exif: ISOSpeedRatings | unicode     |
-| 3     | /IFD/XMP/Exif: isospeed                      | unicode     |
+| 1     | /ifd/exif/{ushort=34855}                    | ushort      |
+| 2     | /ifd/xmp/ <xmpseq> exif:ISOSpeedRatings | unicode     |
+| 3     | /ifd/xmp/exif:ISOSpeed                      | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                                        | Formato de disco |
+| Pedido | Ruta de acceso                                        | Formato de disco |
 |-------|---------------------------------------------|-------------|
-| 1     | /IFD/Exif/{ushort = 34855}                    | ushort      |
-| 2     | /IFD/XMP/ <xmpseq> Exif: ISOSpeedRatings | unicode     |
-| 3     | /IFD/XMP/Exif: isospeed                      | unicode     |
+| 1     | /ifd/exif/{ushort=34855}                    | ushort      |
+| 2     | /ifd/xmp/ <xmpseq> exif:ISOSpeedRatings | unicode     |
+| 3     | /ifd/xmp/exif:ISOSpeed                      | unicode     |
 
 
 
@@ -117,23 +117,23 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                                        |
+| Pedido | Ruta de acceso                                        |
 |-------|---------------------------------------------|
-| 1     | /IFD/Exif/{ushort = 34855}                    |
-| 2     | /IFD/XMP/ <xmpseq> Exif: isospeedratings |
-| 3     | /IFD/XMP/Exif: isospeed                      |
+| 1     | /ifd/exif/{ushort=34855}                    |
+| 2     | /ifd/xmp/ <xmpseq> exif:isospeedratings |
+| 3     | /ifd/xmp/exif:isospeed                      |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. Photo. isospeed](../properties/props-system-photo-focallengthinfilm.md)
+[System.Photo.ISOSpeed](../properties/props-system-photo-focallengthinfilm.md)
 </dt> </dl>
 
  

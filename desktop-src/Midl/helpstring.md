@@ -1,9 +1,9 @@
 ---
-title: atributo HelpString
-description: El atributo \ HelpString \ especifica una cadena de caracteres que se utiliza para describir el elemento al que se aplica.
+title: atributo helpstring
+description: El atributo \ helpstring\ especifica una cadena de caracteres que se usa para describir el elemento al que se aplica.
 ms.assetid: f05d3fdd-d975-4f0e-8181-07e16288ff48
 keywords:
-- atributo HelpString MIDL
+- atributo helpstring MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c58bbe61b10e2f223cf9f662f10d95ca72819b02
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 7abb433d7112bc4c3257345d086ccf308cc1892b61a99991b485ce4962b5851e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103995144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013873"
 ---
-# <a name="helpstring-attribute"></a>atributo HelpString
+# <a name="helpstring-attribute"></a>atributo helpstring
 
-El atributo **\[ HelpString \]** especifica una cadena de caracteres que se utiliza para describir el elemento al que se aplica. Puede aplicar el atributo **\[ HelpString \]** a las instrucciones Library, importlib, interface, dispinterface, Module o coclass, definiciones de tipo, propiedades y métodos.
+El **\[ atributo \] helpstring** especifica una cadena de caracteres que se usa para describir el elemento al que se aplica. Puede aplicar el atributo **\[ helpstring \]** a las instrucciones library, importlib, interface, dispinterface, module o coclass, typedefs, properties y methods.
 
 ``` syntax
 [
@@ -40,51 +40,51 @@ element element-name
 
 <dl> <dt>
 
-*Help-Text-String* 
+*help-text-string* 
 </dt> <dd>
 
-Cadena de caracteres terminada en cero que contiene el texto de ayuda.
+Cadena de caracteres terminada en cero que contiene texto de ayuda.
 
 </dd> <dt>
 
-*opcional-Attribute-List* 
+*optional-attribute-list* 
 </dt> <dd>
 
-Cero o más instrucciones de atributo de MIDL.
+Cero o más instrucciones de atributo MIDL.
 
 </dd> <dt>
 
-*Element* 
+*Elemento* 
 </dt> <dd>
 
-Una de las siguientes directivas: [**Library**](library.md), **\[** [**importlib**](importlib.md) **\]** , [**interface**](interface.md), [**dispinterface**](dispinterface.md), [**Module**](module.md), [**typedef**](typedef.md), **Method**, **Property** o [**CoClass**](coclass.md).
+Una de las directivas siguientes: [**library**](library.md), **\[** [**importlib**](importlib.md) **\]** , [**interface**](interface.md), [**dispinterface**](dispinterface.md), [**module**](module.md), [**typedef**](typedef.md), **method**, **property** o [**coclass**](coclass.md).
 
 </dd> <dt>
 
-*nombre del elemento* 
+*element-name* 
 </dt> <dd>
 
-El nombre que otros componentes de software pueden usar para delimitar el elemento actual.
+Nombre que otros componentes de software pueden usar para delinear el elemento actual
 
 </dd> <dt>
 
-*definición* 
+*Definición* 
 </dt> <dd>
 
-Especifica las instrucciones que componen la definición del elemento.
+Especifica las instrucciones que son la definición del elemento.
 
 </dd> <dt>
 
-*IDL-Statement* 
+*idl-statement* 
 </dt> <dd>
 
-Una instrucción de definición de la interfaz MIDL como [**propget**](propget.md) o [**PROPPUT**](propput.md).
+Una instrucción de definición de interfaz MIDL como [**propget**](propget.md) o [**propput**](propput.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use las funciones [**GetDocumentation**](/windows/win32/api/oaidl/nf-oaidl-itypelib-getdocumentation) en las interfaces [**ITypeLib**](/windows/win32/api/oaidl/nn-oaidl-itypelib) y [**ITypeInfo**](/windows/win32/api/oaidl/nn-oaidl-itypeinfo) para recuperar la cadena de ayuda.
+Use las [**funciones GetDocumentation**](/windows/win32/api/oaidl/nf-oaidl-itypelib-getdocumentation) en las interfaces [**ITypeLib**](/windows/win32/api/oaidl/nn-oaidl-itypelib) [**e ITypeInfo**](/windows/win32/api/oaidl/nn-oaidl-itypeinfo) para recuperar la cadena de ayuda.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -116,28 +116,28 @@ library Lines
 
 <dl> <dt>
 
-[**biblioteca**](library.md)
+[**Biblioteca**](library.md)
 </dt> <dt>
 
 [**importlib**](importlib.md)
 </dt> <dt>
 
-[**interfaz**](interface.md)
+[**Interfaz**](interface.md)
 </dt> <dt>
 
-[**dispinterface**](dispinterface.md)
+[**Dispinterface**](dispinterface.md)
 </dt> <dt>
 
-[**destina**](module.md)
+[**Módulo**](module.md)
 </dt> <dt>
 
 [**coclase**](coclass.md)
 </dt> <dt>
 
-[**typedef**](typedef.md)
+[**Typedef**](typedef.md)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
@@ -146,6 +146,6 @@ library Lines
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

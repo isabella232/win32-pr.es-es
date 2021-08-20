@@ -100,7 +100,7 @@ Recuento de vértices.
 
 ## <a name="remarks"></a>Comentarios
 
-Una tabla de atributos se usa para identificar las áreas de la malla que deben dibujarse con diferentes texturas, estados de representación, materiales, entre otros. Además, la aplicación puede usar la tabla de atributos para ocultar partes de una malla sin dibujar un identificador de atributo determinado (AttribId) al dibujar el marco.
+Una tabla de atributos se usa para identificar las áreas de la malla que deben dibujarse con diferentes texturas, estados de representación, materiales, entre otras. Además, la aplicación puede usar la tabla de atributos para ocultar partes de una malla no dibujando un identificador de atributo determinado (AttribId) al dibujar el marco.
 
 El tipo LPD3DXATTRIBUTERANGE se define como un puntero a la **estructura D3DXATTRIBUTERANGE.**
 
@@ -121,7 +121,7 @@ typedef D3DXATTRIBUTERANGE* LPD3DXATTRIBUTERANGE;
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectVariable GetMemberBySemantic (D3dx11effect. h)
-description: Obtiene un miembro de estructura por semántica.
+title: Método ID3DX11EffectVariable GetMemberBySemantic (D3dx11effect.h)
+description: Obtener un miembro de estructura por semántica.
 ms.assetid: e4ae1f6a-43d2-45df-9dba-833d4f767818
 keywords:
 - Método GetMemberBySemantic Direct3D 11
-- Método GetMemberBySemantic Direct3D 11, interfaz ID3DX11EffectVariable
-- Interfaz ID3DX11EffectVariable Direct3D 11, método GetMemberBySemantic
+- Método GetMemberBySemantic Direct3D 11 , interfaz ID3DX11EffectVariable
+- Interfaz ID3DX11EffectVariable direct3D 11 , método GetMemberBySemantic
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5af8b628247dcc89f8df99c6ffebb04d500e76a1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 46155fc961836b187e0a12ab3571a4edcb67740c7e4dd26fb92350009b95edef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045823"
 ---
-# <a name="id3dx11effectvariablegetmemberbysemantic-method"></a>ID3DX11EffectVariable:: GetMemberBySemantic (método)
+# <a name="id3dx11effectvariablegetmemberbysemantic-method"></a>Método ID3DX11EffectVariable::GetMemberBySemantic
 
-Obtiene un miembro de estructura por semántica.
+Obtener un miembro de estructura por semántica.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,7 +48,7 @@ ID3DX11EffectVariable* GetMemberBySemantic(
 
 Tipo: **[ **LPCSTR**](/windows/desktop/WinProg/windows-data-types)**
 
-La semántica.
+Semántica.
 
 </dd> </dl>
 
@@ -56,14 +56,14 @@ La semántica.
 
 Tipo: **[ **ID3DX11EffectVariable**](id3dx11effectvariable.md)\***
 
-Un puntero a un [**ID3DX11EffectVariable**](id3dx11effectvariable.md).
+Puntero a [**id3DX11EffectVariable**](id3dx11effectvariable.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la variable de efecto es una estructura, use este método para buscar un miembro por semántica adjunta.
+Si la variable de efecto es una estructura, use este método para buscar un miembro mediante la semántica adjunta.
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -73,8 +73,8 @@ Si la variable de efecto es una estructura, use este método para buscar un miem
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

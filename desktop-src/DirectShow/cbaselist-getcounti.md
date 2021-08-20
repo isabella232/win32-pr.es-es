@@ -1,7 +1,7 @@
 ---
 description: El método GetCountI recupera el número de elementos de la lista.
 ms.assetid: 1c6f6a3b-8604-44e4-a5fc-b29fa6869173
-title: Método CBaseList. GetCountI (Wxlist. h)
+title: Método CBaseList.GetCountI (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 72268112c2a9c7d530b786a867208971ec6f4311
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ffb460f287d959b5e1baed1dda78c2ce6b2b0053c453572e42a67012affc60dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016953"
 ---
-# <a name="cbaselistgetcounti-method"></a>CBaseList. GetCountI, método
+# <a name="cbaselistgetcounti-method"></a>Método CBaseList.GetCountI
 
 El `GetCountI` método recupera el número de elementos de la lista.
 
@@ -50,8 +50,8 @@ Devuelve el número de elementos de la lista.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve el número de elementos de la lista.
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

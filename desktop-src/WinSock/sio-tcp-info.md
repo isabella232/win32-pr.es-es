@@ -8,12 +8,12 @@ req.target-min-winverclnt: Windows Vista [desktop apps only]
 req.target-min-winversvr: Windows Server 2008 [desktop apps only]
 api_location:
 - mstcpip.h
-ms.openlocfilehash: f6076440f117ed287ad544c308e574454f33e2b7
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: 60b4c04fc4629e67fcd9dc07a4590b4a1b4c735e84000b1272e27681b4436f0d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112587793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119244855"
 ---
 # <a name="sio_tcp_info-control-code"></a>SIO_TCP_INFO código de control
 
@@ -77,7 +77,7 @@ Este parámetro debe ser el tamaño del **tipo de datos DWORD.**
 ### <a name="lpvoutbuffer"></a>lpvOutBuffer
 
 Puntero al búfer de salida.
-Si la salida es correcta, este parámetro contiene un puntero a una [**TCP_INFO_v0**](/windows/desktop/api/mstcpip/ns-mstcpip-tcp_info_v0) estructura que contiene las estadísticas TCP para el socket especificado.
+Si la salida es correcta, este parámetro contiene un puntero a una [**estructura TCP_INFO_v0**](/windows/desktop/api/mstcpip/ns-mstcpip-tcp_info_v0) que contiene las estadísticas TCP para el socket especificado.
 
 ### <a name="cboutbuffer"></a>cbOutBuffer
 
@@ -90,10 +90,10 @@ Puntero a una variable que recibe el tamaño, en bytes, de los datos almacenados
 
 Si el búfer de salida es demasiado pequeño, se produce un error en la llamada, [**WSAGetLastError**](/windows/desktop/api/winsock/nf-winsock-wsagetlasterror) devuelve [**WSAEINVAL**](windows-sockets-error-codes-2.md)y el parámetro *lpcbBytesReturned* apunta a un valor **DWORD** de cero.
 
-Si *lpOverlapped* es **NULL,** el valor **DWORD** al que apunta el parámetro *lpcbBytesReturned* que se devuelve en una llamada correcta no puede ser cero.
+Si *lpOverlapped* es **NULL**, el valor **DWORD** al que apunta el parámetro *lpcbBytesReturned* que se devuelve en una llamada correcta no puede ser cero.
 
 Si el *parámetro lpOverlapped* no es **NULL** para los sockets superpuestos, se iniciarán las operaciones que no se pueden completar inmediatamente y la finalización se indicará más adelante.
-El **valor DWORD** al que apunta el parámetro *lpcbBytesReturned* que se devuelve puede ser cero, ya que el tamaño de los datos almacenados no se puede determinar hasta que se complete la operación superpuesta.
+El **valor DWORD** al que apunta el parámetro *lpcbBytesReturned* que se devuelve puede ser cero, ya que el tamaño de los datos almacenados no se puede determinar hasta que se haya completado la operación superpuesta.
 El estado de finalización final se puede recuperar cuando se señala el método de finalización adecuado cuando se ha completado la operación.
 
 ### <a name="lpvoverlapped"></a>lpvOverlapped
@@ -143,7 +143,7 @@ Para obtener información de error extendida, llame [**a WSAGetLastError**](/win
 
 A diferencia de la recuperación de estadísticas TCP con la función [**GetPerTcpConnectionEStats,**](/windows/desktop/api/iphlpapi/nf-iphlpapi-getpertcpconnectionestats) la recuperación de estadísticas TCP con este código de control no requiere que el código de usuario cargue, almacene y filtre la tabla de conexión TCP, y no requiere privilegios elevados para su uso.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 [Zócalo](/windows/desktop/api/winsock2/nf-winsock2-socket)
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentColumnDoesNotFitException'
-title: Constructor de EsentColumnDoesNotFitException
+description: 'Más información sobre: Constructor EsentColumnDoesNotFitException'
+title: Constructor EsentColumnDoesNotFitException
 TOCTitle: 'EsentColumnDoesNotFitException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentColumnDoesNotFitException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcolumndoesnotfitexception.esentcolumndoesnotfitexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: baa514e1f5558152b6f6314e6ef9f6c70207f85b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa9e60b93b8c2f3db0166e840eb07aa3fb46ffec681854406ff001ee46fe2f94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119041913"
 ---
-# <a name="esentcolumndoesnotfitexception-constructor"></a>Constructor de EsentColumnDoesNotFitException
+# <a name="esentcolumndoesnotfitexception-constructor"></a>Constructor EsentColumnDoesNotFitException
 
 Inicializa una nueva instancia de la clase EsentColumnDoesNotFitException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentColumnDoesNotFitException()
 public EsentColumnDoesNotFitException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentColumnDoesNotFitException()
 
 [Miembros de EsentColumnDoesNotFitException](./esentcolumndoesnotfitexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: El \_ método put Autoshow establece la marca de estado de Automostrar.
+description: El método put \_ AutoShow establece la marca de estado AutoShow.
 ms.assetid: 857472b8-845b-46d3-8593-3fba9a9c8cdc
-title: Método CBaseControlWindow.put_AutoShow (Ctlutil. h)
+title: CBaseControlWindow.put_AutoShow método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: eda5c0c4055979537c5cc471053715e29a348f1a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a8e24686baa3cf1f2ad570394acd7a290ac374043b8564566dc1e89668d3f6fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017283"
 ---
-# <a name="cbasecontrolwindowput_autoshow-method"></a>CBaseControlWindow. put ( \_ método de Autoshow)
+# <a name="cbasecontrolwindowput_autoshow-method"></a>CBaseControlWindow.put \_ AutoShow (método)
 
-El `put_AutoShow` método establece la marca de estado de Automostrar.
+El `put_AutoShow` método establece la marca de estado AutoShow.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,20 +42,20 @@ HRESULT put_AutoShow(
 
 <dl> <dt>
 
-*Automostrar* 
+*Autoshow* 
 </dt> <dd>
 
-Marca booleana de Automation (0 está desactivado, 1 en).
+Marca booleana de Automation (0 está desactivada, 1 está desactivada).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad simplifica el acceso de visualización de la ventana para las aplicaciones. Si se establece en 1 (activado), la ventana, que normalmente se oculta después de que el filtro está conectado, se mostrará automáticamente cuando el filtro se ejecute en pausa o se ejecute. No obstante, no se debe ocultar la ventana cuando el filtro se detenga. Si se establece en 0 (desactivado), la ventana solo se hace visible cuando la aplicación llama a [**CBaseControlWindow::p UT \_ visible**](cbasecontrolwindow-put-visible.md) o [**CBaseControlWindow::p UT \_ WindowState**](cbasecontrolwindow-put-windowstate.md) con los parámetros adecuados.
+Esta propiedad simplifica el acceso de visualización de ventana para las aplicaciones. Si se establece en 1 (on), la ventana, que normalmente se oculta después de conectar el filtro, se mostrará automáticamente cuando el filtro se pause o se ejecute. Sin embargo, la ventana no debe ocultarse cuando se detiene el filtro. Si se establece en 0 (desactivado), la ventana se hace visible solo cuando la aplicación llama [**a CBaseControlWindow::p ut \_ Visible**](cbasecontrolwindow-put-visible.md) o [**CBaseControlWindow::p ut \_ WindowState**](cbasecontrolwindow-put-windowstate.md) con los parámetros adecuados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta propiedad simplifica el acceso de visualización de la ventana para las apl
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Esta propiedad simplifica el acceso de visualización de la ventana para las apl
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  
