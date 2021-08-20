@@ -1,17 +1,17 @@
 ---
-description: System.Music.ContentGroupDescription
+description: Sistema. Música. ContentGroupDescription
 ms.assetid: a2725816-eea0-4e49-9134-8f6bcc00c72a
-title: System.Music.ContentGroupDescription
+title: Sistema. Música. ContentGroupDescription
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 694cdc9a788223f89a68d91e3d807d6ce79729bb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7e7511f948a7c0e9e7bcabae4b6eb40820e904458dbde714ea3f6a1fc95f8b3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118052654"
 ---
-# <a name="systemmusiccontentgroupdescription"></a>System.Music.ContentGroupDescription
+# <a name="systemmusiccontentgroupdescription"></a>Sistema. Música. ContentGroupDescription
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 

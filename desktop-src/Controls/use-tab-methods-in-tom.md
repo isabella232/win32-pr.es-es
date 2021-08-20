@@ -21,7 +21,7 @@ En el ejemplo siguiente se proporcionan funciones de C que ilustran el uso de lo
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
 -   Windows Interfaz de usuario programación
@@ -101,7 +101,7 @@ HRESULT CopyOnlyTabs(ITextPara *pParaFrom, ITextPara *pParaTo)
 [Usar el modelo de objetos de texto](using-the-text-object-model.md)
 </dt> <dt>
 
-[Usar controles rich edit](using-rich-edit-controls.md)
+[Usar controles Rich Edit](using-rich-edit-controls.md)
 </dt> <dt>
 
 [Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)

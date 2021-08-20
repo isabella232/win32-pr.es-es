@@ -1,17 +1,17 @@
 ---
-title: Crear una presentación de HTMLView
-description: Crear una presentación de HTMLView
+title: Creación de una presentación HTMLView
+description: Creación de una presentación HTMLView
 ms.assetid: 70203160-2dd9-4096-be6a-c704db757f7f
 keywords:
-- Listas de reproducción de metarchivos de Windows Media, presentaciones de HTMLView
-- listas de reproducción, presentaciones de HTMLView
-- listas de reproducción de metarchivos, presentaciones de HTMLView
-- Listas de reproducción de metarchivos de Windows Media, crear presentaciones HTMLView
-- listas de reproducción, creación de presentaciones HTMLView
-- listas de reproducción de metarchivos, crear presentaciones HTMLView
-- crear presentaciones de HTMLView
-- Windows Media Player, crear presentaciones de HTMLView
-- Media Player de Windows, presentaciones de HTMLView
+- Windows Listas de reproducción de metarchivos multimedia, presentaciones de HTMLView
+- listas de reproducción, presentaciones HTMLView
+- listas de reproducción de metarchivo, presentaciones HTMLView
+- Windows Listas de reproducción de metarchivos multimedia, creación de presentaciones HTMLView
+- listas de reproducción, crear presentaciones HTMLView
+- listas de reproducción de metarchivo, crear presentaciones HTMLView
+- crear presentaciones HTMLView
+- Reproductor de Windows Media, crear presentaciones HTMLView
+- Reproductor de Windows Media,presentaciones HTMLView
 - HTMLView, crear presentaciones
 ms.topic: article
 ms.date: 05/31/2018
@@ -20,24 +20,24 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1094ce787e55fbeb98e628389b5fd51ab94ab415
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 419ec9035fe595bf84bb225e755493abb41a93aeae43f337c75422c0253b9c32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418857"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117936404"
 ---
-# <a name="creating-an-htmlview-presentation"></a>Crear una presentación de HTMLView
+# <a name="creating-an-htmlview-presentation"></a>Creación de una presentación HTMLView
 
-Para crear una presentación HTMLView básica, necesita al menos tres elementos:
+Para crear una presentación básica de HTMLView, necesita al menos tres elementos:
 
--   **Contenido multimedia digital.** Se trata de uno o más archivos de audio o vídeo que Windows Media Player reproduce.
--   **Una página web.** Este es el contenido basado en Web que se muestra en la característica **reproducción en curso** de la interfaz de usuario del reproductor.
--   **Un metarchivo de Windows Media.** Esta es la lista de reproducción de metarchivo que dirige a Windows Media Player para combinar el contenido multimedia digital con la Página Web.
+-   **Contenido multimedia digital.** Se trata de uno o varios archivos de audio o vídeo que Reproductor de Windows Media reproducir.
+-   **Una página web.** Este es el contenido basado en web que se muestra en la **característica Reproducción** ahora de la interfaz de usuario del reproductor.
+-   **Metarchivo Windows multimedia.** Esta es la lista de reproducción de metarchivo que Reproductor de Windows Media para combinar el contenido multimedia digital con la página web.
 
-Un archivo. ASX es un archivo de texto que proporciona información acerca de una secuencia de archivos y su presentación. En función de la sintaxis de lenguaje de marcado extensible (XML), los archivos. ASX pueden contener una variedad de elementos, cada uno identificado por una etiqueta con atributos asociados. El elemento **param** proporciona una manera de asociar un parámetro personalizado a una entrada determinada en una lista de reproducción de metarchivo o en todo el metarchivo. Uno de los nombres de parámetro predefinidos disponibles para su uso es "HTMLView". Este es el parámetro que hace que la Página Web especificada por el valor de dirección URL se muestre en Windows Media Player.
+Un archivo .asx es un archivo de texto que proporciona información sobre una secuencia de archivos y su presentación. Según la lenguaje de marcado extensible (XML), los archivos .asx pueden contener una variedad de elementos, cada uno identificado por una etiqueta con atributos asociados. El **elemento PARAM** proporciona una manera de asociar un parámetro personalizado a una entrada determinada en una lista de reproducción de metarchivo o a todo el metarchivo. Uno de los nombres de parámetro predefinidos disponibles para su uso es "HTMLView". Este es el parámetro que hace que la página web especificada por el valor de dirección URL se muestre en Reproductor de Windows Media.
 
-En el ejemplo de código siguiente se muestra un archivo. ASX que combina un solo archivo multimedia digital con una única página web:
+El código de ejemplo siguiente muestra un archivo .asx que combina un único archivo multimedia digital con una sola página web:
 
 
 ```XML
@@ -54,9 +54,9 @@ En el ejemplo de código siguiente se muestra un archivo. ASX que combina un sol
 
 
 
-Cuando Windows Media Player abre el archivo. asx en el ejemplo anterior, reproduce el audio desde el archivo denominado Content1. WMA y abre la página web llamada htmlview.htm en la característica **reproducción en curso** del reproductor en modo completo. El usuario puede pausar, buscar y detener el contenido de audio mediante los controles de Media Player de Windows.
+Cuando Reproductor de Windows Media abre el archivo .asx en el ejemplo anterior, reproduce el audio del archivo denominado content1.wma y abre la página web denominada htmlview.htm en la característica Reproducción ahora del reproductor en modo completo.  El usuario puede pausar, buscar y detener el contenido de audio mediante los controles Reproductor de Windows Media datos.
 
-Puede cambiar fácilmente la página web que se muestra para cada elemento de contenido asociando un elemento **param** a cada entrada, como se muestra en el ejemplo de código siguiente:
+Puede cambiar fácilmente la página web que se muestra para cada fragmento de contenido asociando un elemento **PARAM** a cada entrada, como se muestra en el ejemplo de código siguiente:
 
 
 ```XML
@@ -78,21 +78,21 @@ Puede cambiar fácilmente la página web que se muestra para cada elemento de co
 
 
 
-En el ejemplo anterior, Windows Media Player primero muestra la página web htmlview1.htm mientras se reproduce el archivo de audio digital Content1. WMA. Cuando el reproductor Abra la entrada siguiente en la lista de reproducción, content2. WMA, la página web que se muestra en **ahora se reproducen** los cambios en htmlview2.htm. De esta forma, puede especificar la página web que el usuario verá para cada parte de contenido multimedia digital.
+En el ejemplo anterior, Reproductor de Windows Media muestra primero la página web htmlview1.htm mientras se reproduce el archivo de audio digital content1.wma. Cuando el reproductor abre la siguiente entrada de la lista de reproducción, content2.wma, la página web que se muestra en **Reproducción** ahora cambia a htmlview2.htm. De este modo, puede especificar qué página web ve el usuario para cada parte del contenido multimedia digital.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Mostrar páginas web en Windows Media Player**](displaying-web-pages-in-windows-media-player.md)
+[**Mostrar páginas web en Reproductor de Windows Media**](displaying-web-pages-in-windows-media-player.md)
 </dt> <dt>
 
 [**Elemento PARAM**](param-element.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

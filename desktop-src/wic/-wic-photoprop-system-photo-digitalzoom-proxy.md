@@ -1,23 +1,23 @@
 ---
-description: El proxy de propiedad de la Directiva de metadatos de la foto System. Photo. DigitalZoom.
+description: Proxy de propiedad para la directiva de metadatos de fotos System.Photo.DigitalZoom.
 ms.assetid: 38e3d462-ad70-4fde-b239-8fef0ab95656
-title: Proxy System. Photo. DigitalZoom
+title: System.Photo.DigitalZoom Proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 281b40aa82f6b3222c35206e7405e31aeac62dca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa37ef22c13f89217e866120228e122f1e4989297c97f37c839a01d689362e1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117667575"
 ---
-# <a name="systemphotodigitalzoom-proxy"></a>Proxy System. Photo. DigitalZoom
+# <a name="systemphotodigitalzoom-proxy"></a>System.Photo.DigitalZoom Proxy
 
-El proxy de propiedad de la Directiva de metadatos de la foto System. Photo. DigitalZoom.
+Proxy de propiedad para la directiva de metadatos de fotos System.Photo.DigitalZoom.
 
 ### <a name="description"></a>Descripción
 
-El proxy de propiedad devuelve un par racional a a través del miembro uhVal de [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) .
+El proxy de propiedad devuelve un par racionalizado a través del [miembro PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) uhVal.
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,23 +27,23 @@ JPEG, TIFF
 
 Sí
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ UI8
 
 ### <a name="denominator"></a>Denominador
 
-HighPart de uhVal.
+HighPart de la clase uhVal.
 
-### <a name="numerator"></a>Numera
+### <a name="numerator"></a>Numerador
 
-LowPart de uhVal.
+LowPart de la clase uhVal.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. Photo. DigitalZoom](../properties/props-system-photo-digitalzoom.md)
+[System.Photo.DigitalZoom](../properties/props-system-photo-digitalzoom.md)
 </dt> </dl>
 
  

@@ -1,26 +1,26 @@
 ---
-description: En el ejemplo de código OpenSearch se muestra cómo crear un servicio de búsqueda federado mediante el protocolo OpenSearch y un archivo de descriptor de OpenSearch (. osdx) (un conector de búsqueda).
+description: El OpenSearch muestra cómo crear un servicio de búsqueda federado mediante el protocolo OpenSearch y un archivo de descriptor de OpenSearch (.osdx) (un conector de búsqueda).
 ms.assetid: 792884e4-826b-4474-82e1-1680d4d8b602
 title: OpenSearch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8656efec434744d14714529d1e7b0d01a5349ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6279b66be3b259058cc1b13bae6d9185e035211c65e87c21e070db638e74573
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118051848"
 ---
 # <a name="opensearch"></a>OpenSearch
 
-En el ejemplo de código OpenSearch se muestra cómo crear un servicio de búsqueda federado mediante el protocolo [OpenSearch](https://github.com/dewitt/opensearch) y un archivo de descriptor de OpenSearch (. osdx) (un conector de búsqueda).
+El OpenSearch muestra cómo crear un servicio de búsqueda federado mediante el protocolo OpenSearch y un archivo de descriptor de [OpenSearch](https://github.com/dewitt/opensearch) (.osdx) (un conector de búsqueda).
 
 En este tema se incluyen las siguientes secciones.
 
 -   [Requisitos](#requirements)
 -   [Descargar el ejemplo](#downloading-the-sample)
 -   [Compilar el ejemplo](#building-the-sample)
--   [Ejecutar el ejemplo](#running-the-sample)
+-   [Ejecución del ejemplo](#running-the-sample)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="requirements"></a>Requisitos
@@ -30,7 +30,7 @@ En este tema se incluyen las siguientes secciones.
 | Producto     | Versión mínima del producto |
 |-------------|-------------------------|
 | Windows     | Windows 7               |
-| Windows SDK | 7.0                     |
+| Windows SDK | 7,0                     |
 
 
 
@@ -42,9 +42,9 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 
 
-| Location      | URL de ruta de acceso                                                                  |
+| Location      | Dirección URL de ruta de acceso                                                                  |
 |---------------|---------------------------------------------------------------------------|
-| GitHub  | [Ejemplo de OpenSearch](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/shellextensibility/OpenSearch)      |
+| GitHub  | [OpenSearch ejemplo](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/shellextensibility/OpenSearch)      |
 
 
 
@@ -53,7 +53,7 @@ Este ejemplo está disponible en las siguientes ubicaciones.
  
 
 > [!Note]  
-> En todas las versiones de Windows, incluido Windows 7, se recomienda descargar los ejemplos directamente desde GitHub para obtener la versión más actualizada.
+> Para todas las versiones de Windows, incluido Windows 7, se recomienda descargar los ejemplos directamente desde GitHub para obtener la versión más actualizada.
 
  
 
@@ -61,25 +61,25 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 Para compilar el ejemplo desde el símbolo del sistema:
 
-1.  Abra la ventana del símbolo del sistema y navegue hasta el directorio del proyecto **AdventureSearch** . 
+1.  Abra la ventana del símbolo del sistema y vaya al **directorio del proyecto AdventureSearch.** 
 2.  Escriba `msbuild AdventureSearch.sln`.
 
-Para compilar el ejemplo mediante Microsoft Visual Studio (preferido):
+Para compilar el ejemplo mediante Microsoft Visual Studio (opción preferida):
 
-1.  Abra el explorador de Windows y navegue hasta el directorio del proyecto **AdventureSearch** .
-2.  Haga doble clic en el icono del archivo AdventureSearch. sln para abrir el proyecto en Visual Studio.
+1.  Abra Windows Explorer y vaya al **directorio del proyecto AdventureSearch.**
+2.  Haga doble clic en el icono del archivo AdventureSearch.sln para abrir el proyecto en Visual Studio.
     > [!Note]  
-    > La extensión de nombre de archivo. sln no se muestra en configuración de carpeta predeterminada. En esa situación, puede identificarse por su icono único o por su descripción de tipo, "Microsoft Visual Studio solución".
+    > La extensión de nombre de archivo .sln no se muestra en la configuración de carpeta predeterminada. En esa situación, se puede identificar por su icono único o por su descripción de tipo, "Microsoft Visual Studio solución".
 
      
 
-3.  En el menú **compilar** , seleccione **compilar solución**.
+3.  En el menú **Compilar**, seleccione **Compilar solución**.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-1.  Desplácese hasta el directorio que contiene el nuevo ejecutable, mediante la ventana del símbolo del sistema o el explorador de Windows.
-2.  En el símbolo del sistema, escriba `AdventureSearch.exe` o, en el explorador de Windows, haga doble clic en el icono de AdventureSearch.exe.
-3.  En el símbolo del sistema, escriba `GetOSDX.exe` o, en el explorador de Windows, haga doble clic en el icono de GetOSDX.exe.
+1.  Vaya al directorio que contiene el nuevo ejecutable, mediante la ventana símbolo del sistema o Windows Explorador.
+2.  En el símbolo del sistema, escriba o, en Windows Explorer, haga doble clic `AdventureSearch.exe` en el icono para AdventureSearch.exe.
+3.  En el símbolo del sistema, escriba o, en Windows Explorer, haga doble clic `GetOSDX.exe` en el icono para GetOSDX.exe.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -88,10 +88,10 @@ Para compilar el ejemplo mediante Microsoft Visual Studio (preferido):
 **Referencia**
 </dt> <dt>
 
-[Información general sobre el esquema de Descripción del conector de búsqueda](search-sconn-desc-schema-entry.md)
+[Información general sobre el esquema de descripción del conector de búsqueda](search-sconn-desc-schema-entry.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Búsqueda federada en Windows](-search-federated-search-overview.md)

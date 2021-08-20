@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: ColumnValue. SetGrbit (propiedad)'
-title: Propiedad ColumnValue. SetGrbit
+description: 'Más información sobre: Propiedad ColumnValue.SetGrbit'
+title: Propiedad ColumnValue.SetGrbit
 TOCTitle: 'SetGrbit property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.ColumnValue.SetGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnvalue.setgrbit(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 22fbf4ae15c508808a49f513a63a7ae58f22b450
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7410352a61f8854ceb53fc91e148ea24a701d3c340b53bea59e6612919b5629c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117901922"
 ---
-# <a name="columnvaluesetgrbit-property"></a>Propiedad ColumnValue. SetGrbit
+# <a name="columnvaluesetgrbit-property"></a>Propiedad ColumnValue.SetGrbit
 
-Obtiene o establece las opciones de actualización de la columna.
+Obtiene o establece las opciones de actualización de columna.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public SetColumnGrbit SetGrbit { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft. ISAM. esent. Interop. SetColumnGrbit](./setcolumngrbit-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.SetColumnGrbit](./setcolumngrbit-enumeration.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase ColumnValue](./columnvalue-class.md)
+[ColumnValue (clase)](./columnvalue-class.md)
 
-[Miembros de ColumnValue](./columnvalue-members.md)
+[Miembros ColumnValue](./columnvalue-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

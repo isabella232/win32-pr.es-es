@@ -1,5 +1,5 @@
 ---
-description: Muestra la interfaz de usuario predeterminada para crear un elemento favorito. La interfaz de usuario se inicializa en los parámetros especificados.
+description: Muestra la interfaz de usuario predeterminada para crear un elemento favorito. La interfaz de usuario se inicializa con los parámetros especificados.
 title: Método ShellUIHelper.AddFavorite (Exdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: b30e776e-642c-4599-b83f-ef15bc0b23d2
-ms.openlocfilehash: 2ce6fa0a71bb2ab995e510f06b4403c78bebcc60
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: f106b9860dcfa87cad9a69763731b47aeb4f9b0c7d4698f72dfc7210498e9234
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117676626"
 ---
 # <a name="shelluihelperaddfavorite-method"></a>Método ShellUIHelper.AddFavorite
 
-Muestra la interfaz de usuario predeterminada para crear un elemento favorito. La interfaz de usuario se inicializa en los parámetros especificados.
+Muestra la interfaz de usuario predeterminada para crear un elemento favorito. La interfaz de usuario se inicializa con los parámetros especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,7 +49,7 @@ Valor **string** que especifica la dirección URL del elemento que se va a agreg
 
 </dd> <dt>
 
-*vTitle* \[ in, opcional\]
+*vTitle* \[ en, opcional\]
 </dt> <dd>
 
 Tipo: **\* Variant**
@@ -60,9 +60,9 @@ Valor **Variant** que especifica el nombre del elemento.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso adecuado de este método para JScript insertado en HTML y Visual Basic.
+En el ejemplo siguiente se muestra el uso adecuado de este método para JScript insertados en HTML y Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -111,9 +111,9 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |

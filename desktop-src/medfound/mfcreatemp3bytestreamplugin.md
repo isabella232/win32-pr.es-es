@@ -1,7 +1,7 @@
 ---
-description: Crea un controlador de flujo de bytes para el origen de medios MP3.
+description: Crea un controlador de secuencia de bytes para el origen multimedia MP3.
 ms.assetid: A213BAEF-D98F-485B-8840-BE131E9B26C0
-title: MFCreateMP3ByteStreamPlugin función)
+title: Función MFCreateMP3ByteStreamPlugin
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 0b8bcd153471ddd8acd648d5775b4dc964693a56
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2d2d07905932e589e8873722bd0889cec6dc321c28dbc2d1c8704f880df4991
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117690977"
 ---
-# <a name="mfcreatemp3bytestreamplugin-function"></a>MFCreateMP3ByteStreamPlugin función)
+# <a name="mfcreatemp3bytestreamplugin-function"></a>Función MFCreateMP3ByteStreamPlugin
 
-\[Esta API no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, las aplicaciones deben usar la [resolución de origen](source-resolver.md) para crear el origen de medios MP3.\]
+\[Esta API no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, las aplicaciones deben usar [el solucionador de origen](source-resolver.md) para crear el origen multimedia MP3.\]
 
-Crea un controlador de flujo de bytes para el origen de medios MP3.
+Crea un controlador de secuencia de bytes para el origen multimedia MP3.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,36 +41,36 @@ HRESULT __stdcall MFCreateMP3ByteStreamPlugin(
 
 <dl> <dt>
 
-*riid* \[ de\]
+*riid* \[ En\]
 </dt> <dd>
 
-Identificador de interfaz (IID) de la interfaz solicitada. Establezca este parámetro en **IID \_ IMFByteStreamHandler** para recibir un puntero a la interfaz [**IMFByteStreamHandler**](/windows/desktop/api/mfidl/nn-mfidl-imfbytestreamhandler) .
+Identificador de interfaz (IID) de la interfaz solicitada. Establezca este parámetro en **IID \_ IMFByteStreamHandler para** recibir un puntero a la [**interfaz IMFByteStreamHandler.**](/windows/desktop/api/mfidl/nn-mfidl-imfbytestreamhandler)
 
 </dd> <dt>
 
-*ppvHandler* \[ enuncia\]
+*ppvHandler* \[ out\]
 </dt> <dd>
 
-Recibe un puntero a la interfaz. El llamador debe liberar la interfaz.
+Recibe un puntero a la interfaz . El autor de la llamada debe liberar la interfaz.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe utilizar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a mf.dll.
+Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe usar las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a mf.dll.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 | Fin de compatibilidad de cliente<br/>    | Windows Vista<br/>                             |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2008<br/>                       |
 
@@ -80,10 +80,10 @@ Esta función no tiene ninguna biblioteca de importación asociada. Para llamar 
 
 <dl> <dt>
 
-[Funciones de Media Foundation](media-foundation-functions.md)
+[Media Foundation Functions](media-foundation-functions.md)
 </dt> <dt>
 
-[Controladores de esquema y controladores de Byte-Stream](scheme-handlers-and-byte-stream-handlers.md)
+[Controladores de esquema y Byte-Stream de esquema](scheme-handlers-and-byte-stream-handlers.md)
 </dt> <dt>
 
 [Solucionador de origen](source-resolver.md)

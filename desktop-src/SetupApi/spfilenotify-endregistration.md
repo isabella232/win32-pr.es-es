@@ -4,18 +4,18 @@ ms.assetid: 6304f406-c9f8-41cc-a7b7-5ef606f62efb
 title: SPFILENOTIFY_ENDREGISTRATION mensaje (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dec341c26f9f88390ff1b807e6e932b3b381cd57
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: cc89f4bd88da23b1ac80a5d73ede63f071c21ab5a07e222f708c3b842ba63269
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117964598"
 ---
 # <a name="spfilenotify_endregistration-message"></a>Mensaje SPFILENOTIFY \_ ENDREGISTRATION
 
-Cuando se usa la directiva **REGISTERDlls** INF para registrar automáticamente los archivos DLL, los autores de la llamada de [**SetupInstallFromInfSection**](/windows/desktop/api/Setupapi/nf-setupapi-setupinstallfrominfsectiona) pueden recibir notificaciones en cada archivo a medida que se registran o anulan el registro. Para enviar una notificación **SPFILENOTIFY \_ ENDREGISTRATION** a una rutina de devolución de llamada una vez después de registrar o anular el registro de un archivo, incluya SPINST \_ REGISTERCALLBACKAWARE más SPINST REGSVR en el parámetro \_ *Flags* de **SetupInstallFromInfSection**. Para enviar una notificación de anulación del registro, incluya SPINST \_ REGISTERCALLBACKAWARE más SPINST \_ UNREGSVR en el *parámetro Flags.*
+Cuando se usa la directiva **REGISTERDlls** INF para registrar automáticamente los archivos DLL, los autores de la llamada de [**SetupInstallFromInfSection**](/windows/desktop/api/Setupapi/nf-setupapi-setupinstallfrominfsectiona) pueden recibir notificaciones en cada archivo a medida que se registran o anulan el registro. Para enviar una notificación **SPFILENOTIFY \_ ENDREGISTRATION** a una rutina de devolución de llamada una vez después de registrar o anular el registro de un archivo, incluya SPINST \_ REGISTERCALLBACKAWARE más SPINST REGSVR en el parámetro \_ *Flags* de **SetupInstallFromInfSection**. Para enviar una notificación de anulación de registro, incluya SPINST \_ REGISTERCALLBACKAWARE más SPINST \_ UNREGSVR en el *parámetro Flags.*
 
-La rutina de devolución de llamada especificada por el parámetro *MsgHandler* [**de SetupInstallFromInfSection**](/windows/desktop/api/Setupapi/nf-setupapi-setupinstallfrominfsectiona) debe ser del tipo [PSP FILE \_ \_ CALLBACK](/windows/win32/api/setupapi/nc-setupapi-psp_file_callback_a). Establezca el *parámetro Context* en el mismo *contexto* especificado en **SetupInstallFromInfSection**. Establezca el *parámetro Notification* en **SPFILENOTIFY \_ ENDREGISTRATION**.
+La rutina de devolución de llamada especificada por el parámetro *MsgHandler* [**de SetupInstallFromInfSection**](/windows/desktop/api/Setupapi/nf-setupapi-setupinstallfrominfsectiona) debe ser el tipo [PSP FILE \_ \_ CALLBACK](/windows/win32/api/setupapi/nc-setupapi-psp_file_callback_a). Establezca el *parámetro Context* en el mismo *contexto* especificado en **SetupInstallFromInfSection**. Establezca el *parámetro Notification* en **SPFILENOTIFY \_ ENDREGISTRATION**.
 
 
 ```C++
@@ -67,9 +67,9 @@ Después de recibir la notificación, la función de devolución de llamada pued
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 

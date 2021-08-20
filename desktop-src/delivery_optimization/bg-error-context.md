@@ -1,9 +1,9 @@
 ---
-title: Enumeración BG_ERROR_CONTEXT (Deliveryoptimization. h)
-description: La enumeración BG_ERROR_CONTEXT define los valores constantes que especifican el contexto en el que se produjo el error.
+title: BG_ERROR_CONTEXT enumeración (Deliveryoptimization.h)
+description: La BG_ERROR_CONTEXT enumeración define los valores constantes que especifican el contexto en el que se produjo el error.
 ms.assetid: 86202343-5B5B-4A2E-A58D-7634BCB41E1C
 keywords:
-- Enumeración BG_ERROR_CONTEXT
+- BG_ERROR_CONTEXT enumeración
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cf6c68c20a5117e6cd8a02f8b4608b494c0ea93f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ffdd164589fc35d01b34aa6935e78ec39488ce41cfefc044baaa5048670f730f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117914725"
 ---
-# <a name="bg_error_context-enumeration"></a>Enumeración BG_ERROR_CONTEXT
+# <a name="bg_error_context-enumeration"></a>BG_ERROR_CONTEXT enumeración
 
-La enumeración **BG_ERROR_CONTEXT** define los valores constantes que especifican el contexto en el que se produjo el error.
+La **BG_ERROR_CONTEXT** enumeración define los valores constantes que especifican el contexto en el que se produjo el error.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -58,28 +58,28 @@ No se ha producido un error.
 <span id="BG_ERROR_CONTEXT_UNKNOWN"></span><span id="bg_error_context_unknown"></span>**BG_ERROR_CONTEXT_UNKNOWN**
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> <dt>
 
 <span id="BG_ERROR_CONTEXT_GENERAL_QUEUE_MANAGER"></span><span id="bg_error_context_general_queue_manager"></span>**BG_ERROR_CONTEXT_GENERAL_QUEUE_MANAGER**
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> <dt>
 
 <span id="BG_ERROR_CONTEXT_QUEUE_MANAGER_NOTIFICATION"></span><span id="bg_error_context_queue_manager_notification"></span>**BG_ERROR_CONTEXT_QUEUE_MANAGER_NOTIFICATION**
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> <dt>
 
 <span id="BG_ERROR_CONTEXT_LOCAL_FILE"></span><span id="bg_error_context_local_file"></span>**BG_ERROR_CONTEXT_LOCAL_FILE**
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> <dt>
 
@@ -93,14 +93,14 @@ El error estaba relacionado con el archivo remoto especificado. Por ejemplo, la 
 <span id="BG_ERROR_CONTEXT_GENERAL_TRANSPORT"></span><span id="bg_error_context_general_transport"></span>**BG_ERROR_CONTEXT_GENERAL_TRANSPORT**
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> <dt>
 
 <span id="BG_ERROR_CONTEXT_REMOTE_APPLICATION"></span><span id="bg_error_context_remote_application"></span>**BG_ERROR_CONTEXT_REMOTE_APPLICATION**
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> </dl>
 
@@ -108,11 +108,11 @@ No se admite.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1709 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Windows Server, versión 1709 \[ solo para aplicaciones de escritorio\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1709 \[ solo aplicaciones de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 

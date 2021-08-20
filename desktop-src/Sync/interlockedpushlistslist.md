@@ -1,7 +1,7 @@
 ---
 UID: ''
 title: Función InterlockedPushListSList
-description: Inserta una lista vinculada individualmente en la parte frontal de otra lista vinculada de forma individual.
+description: Inserta una lista vinculada de forma singly al frente de otra lista vinculada de forma singly.
 old-location: ''
 ms.assetid: na
 ms.date: 04/10/2019
@@ -36,19 +36,19 @@ api_name:
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: ccecdae3af5119a86594c31856dac11ecb4507bc
-ms.sourcegitcommit: be77ed1f97d3be57a2f42070589de21b66034adf
+ms.openlocfilehash: f2a13003b1b850431bac87a2ca02bbf093bc67dc9207e317b2c602bde83e15b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "104420468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117959242"
 ---
 # <a name="interlockedpushlistslist-function"></a>Función InterlockedPushListSList
 
 ## <a name="description"></a>Descripción
 
-Inserta una lista vinculada individualmente en la parte frontal de otra lista vinculada de forma individual.
-El acceso a las listas se sincroniza en un sistema con varios procesadores.
+Inserta una lista vinculada de forma singly al frente de otra lista vinculada de forma singly.
+El acceso a las listas se sincroniza en un sistema de varios procesadores.
 
 ```cpp
 PSLIST_ENTRY  FASTCALL InterlockedPushListSList(
@@ -63,16 +63,16 @@ PSLIST_ENTRY  FASTCALL InterlockedPushListSList(
 
 ### <a name="listhead-in-out"></a>ListHead [in, out]
 
-Puntero a una estructura de **SLIST_HEADER** que representa el encabezado de una lista vinculada individualmente.
-La lista especificada por la *lista* y los parámetros *escuchados* se inserta al principio de esta lista.
+Puntero a una **SLIST_HEADER** estructura que representa el responsable de una lista vinculada de forma singly.
+La lista especificada por los parámetros *List* *y ListEnd* se inserta al frente de esta lista.
 
-### <a name="list-in-out"></a>List [in, out]
+### <a name="list-in-out"></a>Enumerar [in, out]
 
-Puntero a una estructura de [SLIST_ENTRY](/windows/win32/api/winnt/ns-winnt-slist_entry) que representa el primer elemento de la lista que se va a insertar.
+Puntero a una [SLIST_ENTRY](/windows/win32/api/winnt/ns-winnt-slist_entry) estructura que representa el primer elemento de la lista que se va a insertar.
 
-### <a name="listend-in-out"></a>Escucha [in, out]
+### <a name="listend-in-out"></a>ListEnd [in, out]
 
-Puntero a una estructura de [SLIST_ENTRY](/windows/win32/api/winnt/ns-winnt-slist_entry) que representa el último elemento de la lista que se va a insertar.
+Puntero a una [SLIST_ENTRY](/windows/win32/api/winnt/ns-winnt-slist_entry) estructura que representa el último elemento de la lista que se va a insertar.
 
 ### <a name="count-in"></a>Recuento [in]
 
@@ -80,20 +80,20 @@ Número de elementos de la lista que se va a insertar.
 
 ## <a name="returns"></a>Devoluciones
 
-El valor devuelto es el primer elemento de la lista especificado por el parámetro *ListHead* .
-Si la lista estaba vacía previamente, el valor devuelto es **null**.
+El valor devuelto es el primer elemento anterior de la lista especificada por el *parámetro ListHead.*
+Si la lista estaba vacía anteriormente, el valor devuelto es **NULL.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Todos los elementos de la lista se deben alinear en un límite de **MEMORY_ALLOCATION_ALIGNMENT** ; de lo contrario, esta función se comportará de forma impredecible.
+Todos los elementos de lista deben estar alineados en un **MEMORY_ALLOCATION_ALIGNMENT** límite; De lo contrario, esta función se comportará de forma impredecible.
 Vea **_aligned_malloc**.
 
-**Windows 8 y Windows Server 2012:**  Esta función se ha sustituido por [InterlockedPushListSListEx](/windows/desktop/api/interlockedapi/nf-interlockedapi-interlockedpushlistslistex).
-Al compilar con **NTDDI_VERSION** establecido en **NTDDI_WIN8** o superior, las llamadas a **InterlockedPushListSList** Irán a **InterlockedPushListSListEx** en su lugar.
+**Windows 8 y Windows Server 2012:**  [InterlockedPushListSListEx](/windows/desktop/api/interlockedapi/nf-interlockedapi-interlockedpushlistslistex)ha supercedido esta función.
+Al compilar con **NTDDI_VERSION** establecido en NTDDI_WIN8 o superior, las llamadas a **InterlockedPushListSList** irán **a** **InterlockedPushListSListEx** en su lugar.
 
 ## <a name="see-also"></a>Vea también
 
-[Listas vinculadas de un solo vínculo](/windows/desktop/Sync/interlocked-singly-linked-lists)
+[Listas vinculadas de Singly entrelazados](/windows/desktop/Sync/interlocked-singly-linked-lists)
 
 [InterlockedPopEntrySList](/windows/desktop/api/interlockedapi/nf-interlockedapi-interlockedpopentryslist)
 
@@ -105,4 +105,4 @@ Al compilar con **NTDDI_VERSION** establecido en **NTDDI_WIN8** o superior, las 
 
 [SLIST_ENTRY](/windows/win32/api/winnt/ns-winnt-slist_entry)
 
-[Usar listas vinculadas individualmente](/windows/desktop/Sync/using-singly-linked-lists)
+[Uso de listas vinculadas de Singly](/windows/desktop/Sync/using-singly-linked-lists)

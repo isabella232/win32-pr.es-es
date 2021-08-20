@@ -1,9 +1,9 @@
 ---
-title: TEXTO. desplazamiento
+title: TEXT.scrolling
 description: El atributo de desplazamiento especifica o recupera un valor que indica si el texto se desplaza.
 ms.assetid: 1cd5cb4e-673f-4273-91ff-50165c2b08fa
 keywords:
-- TEXT. Scrolling Windows Media Player
+- Text.scrolling Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fdbb80b2033d542da4894172d58451ed5da224f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 990291f8b618032d3e5b7e33a7644735cf1673482b2190936f2e496dbf68bd64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117933443"
 ---
-# <a name="textscrolling"></a>TEXTO. desplazamiento
+# <a name="textscrolling"></a>TEXT.scrolling
 
-El atributo de **desplazamiento** especifica o recupera un valor que indica si el texto se desplaza.
+El **atributo scrolling** especifica o recupera un valor que indica si el texto se desplaza.
 
 ``` syntax
         elementID.scrolling
@@ -29,11 +29,11 @@ El atributo de **desplazamiento** especifica o recupera un valor que indica si e
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un booleano de lectura **y escritura.**
 
 
 
-| Value | Descripción                     |
+| Valor | Descripción                     |
 |-------|---------------------------------|
 | true  | El desplazamiento está habilitado.           |
 | false | Predeterminada. El desplazamiento está deshabilitado. |
@@ -42,13 +42,13 @@ Este atributo es un **valor booleano** de lectura/escritura.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La característica de desplazamiento proporciona un búfer de dos espacios entre el final del texto y el principio de la línea repetida.
 
-El atributo **justificación** especifica dónde aparece el texto primero antes de que se inicie el desplazamiento.
+El **atributo de** justificación especifica dónde aparece primero el texto antes de que comience el desplazamiento.
 
-Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se utilizan los atributos del elemento de **texto** .
+Vea el [atributo value](text-value.md) para obtener un ejemplo que ilustra cómo se usan los atributos del **elemento TEXT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -67,16 +67,16 @@ Vea el atributo [Value](text-value.md) para ver un ejemplo que muestra cómo se 
 [**Elemento TEXT**](text-element.md)
 </dt> <dt>
 
-[**TEXTO. justificación**](text-justification.md)
+[**TEXT.justification**](text-justification.md)
 </dt> <dt>
 
-[**TEXT. scrollingAmount**](text-scrollingamount.md)
+[**TEXT.scrollingAmount**](text-scrollingamount.md)
 </dt> <dt>
 
-[**TEXT. scrollingDelay**](text-scrollingdelay.md)
+[**TEXT.scrollingDelay**](text-scrollingdelay.md)
 </dt> <dt>
 
-[**TEXT. scrollingDirection**](text-scrollingdirection.md)
+[**TEXT.scrollingDirection**](text-scrollingdirection.md)
 </dt> </dl>
 
  

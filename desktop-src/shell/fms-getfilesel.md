@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: d8339f87-ba05-40bf-b7d1-a9de29eb15a4
-ms.openlocfilehash: b1188840299a101081c5c29d0e5658963ca7a72e
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 4a57aa2063af14c90cf73a21ab9331442b889aada1c979a52ff986fe92676acc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117679604"
 ---
 # <a name="fms_getfilesel-structure"></a>FMS \_ GETFILESEL (estructura)
 
@@ -38,7 +38,7 @@ typedef struct _FMS_GETFILESEL {
 
 
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 <dl> <dt>
 
@@ -49,7 +49,7 @@ Tipo: **FILETIME**
 
 </dd> <dd>
 
-Hora y fecha en que se creó el archivo.
+La hora y la fecha en que se creó el archivo.
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Ruta de acceso completa terminada en NULL y nombre de archivo del archivo selecc
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

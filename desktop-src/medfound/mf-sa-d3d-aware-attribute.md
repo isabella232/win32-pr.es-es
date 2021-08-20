@@ -1,42 +1,42 @@
 ---
-description: Especifica si una transformación de Media Foundation (MFT) es compatible con la aceleración de vídeo de DirectX (DXVA). Este atributo solo se aplica a MFTs de vídeo.
+description: Especifica si una transformación Media Foundation (MFT) admite la aceleración de vídeo de DirectX (DXVA). Este atributo solo se aplica a las MFP de vídeo.
 ms.assetid: db6a8b20-fda0-4ffe-b1b5-a77b7604d290
-title: MF_SA_D3D_AWARE atributo (Mftransform. h)
+title: MF_SA_D3D_AWARE atributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2eb0de8c5a66eaa89f66becf6770f69e6449c1c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f0eaf9ef316e2666f0e962773dcbf25dc5cff17db59f727232b8d502dff83efc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117876015"
 ---
-# <a name="mf_sa_d3d_aware-attribute"></a>\_Atributo MF \_ compatible con D3D de SA \_
+# <a name="mf_sa_d3d_aware-attribute"></a>Atributo MF \_ SA \_ D3D \_ AWARE
 
-Especifica si una transformación de Media Foundation (MFT) es compatible con la aceleración de vídeo de DirectX (DXVA). Este atributo solo se aplica a MFTs de vídeo.
+Especifica si una transformación Media Foundation (MFT) admite la aceleración de vídeo de DirectX (DXVA). Este atributo solo se aplica a las MFP de vídeo.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Bool** almacenado como **UINT32**
+**BOOL almacenado** como **UINT32**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para consultar este atributo, llame a [**IMFTransform:: GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes) para obtener el almacén de atributos global de MFT. Si **GetAttributes** se realiza correctamente, llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para consultar este atributo, llame [**a IMFTransform::GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes) para obtener el almacén de atributos global de MFT. Si **GetAttributes se** realiza correctamente, llame [**aATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Este atributo indica al cliente si el MFT puede usar el vídeo de Direct3D 9:
+Este atributo indica al cliente si MFT puede usar el vídeo de Direct3D 9:
 
--   Si el atributo es distinto de cero, el cliente puede dar a la MFT un puntero a la interfaz [**IDirect3DDeviceManager9**](/windows/desktop/api/dxva2api/nn-dxva2api-idirect3ddevicemanager9) antes de que se inicie el streaming. Para ello, el cliente envía el mensaje [**de \_ \_ Administrador de \_ D3D \_ de conjunto de mensajes MFT**](mft-message-set-d3d-manager.md) a la MFT. No es necesario que el cliente envíe este mensaje.
--   Si este atributo es cero (**false**), el MFT no es compatible con el vídeo de Direct3D 9 y el cliente no debe enviar el mensaje de [**Administrador de D3D del \_ conjunto de mensajes \_ \_ \_ MFT**](mft-message-set-d3d-manager.md) a la MFT.
+-   Si el atributo es distinto de cero, el cliente puede dar al MFT un puntero a la [**interfaz IDirect3DDeviceManager9**](/windows/desktop/api/dxva2api/nn-dxva2api-idirect3ddevicemanager9) antes de que se inicie el streaming. Para ello, el cliente envía el [**mensaje MFT \_ MESSAGE SET \_ \_ D3D \_ MANAGER**](mft-message-set-d3d-manager.md) al MFT. No es necesario que el cliente envíe este mensaje.
+-   Si este atributo es cero **(FALSE),** MFT no admite vídeo de Direct3D 9 y el cliente no debe enviar el mensaje [**MFT \_ MESSAGE SET \_ \_ D3D \_ MANAGER**](mft-message-set-d3d-manager.md) al MFT.
 
-El valor predeterminado de este atributo es **false**. Trate este atributo como de solo lectura. No cambie el valor; la MFT omitirá cualquier cambio en el valor.
+El valor predeterminado de este atributo es **FALSE.** Trate este atributo como de solo lectura. No cambie el valor; MFT omitirá los cambios en el valor.
 
-Para obtener más información sobre la implementación de este atributo en una MFT personalizada, consulte [MFTs compatible con Direct3D](direct3d-aware-mfts.md).
+Para obtener más información sobre cómo implementar este atributo en un MFT personalizado, vea [MFT con direct3D.](direct3d-aware-mfts.md)
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="examples"></a>Ejemplos
 
-En el código siguiente se comprueba si una MFT es compatible con DXVA.
+El código siguiente comprueba si un MFT admite DXVA.
 
 
 ```C++
@@ -64,11 +64,11 @@ BOOL IsTransformD3DAware(IMFTransform *pMFT)
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>                                    |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/>                              |
-| Encabezado<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                                    |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                              |
+| Header<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -76,28 +76,28 @@ BOOL IsTransformD3DAware(IMFTransform *pMFT)
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[MFTs compatible con Direct3D](direct3d-aware-mfts.md)
+[MTO con direct3D](direct3d-aware-mfts.md)
 </dt> <dt>
 
-[Compatibilidad con DXVA 2,0 en Media Foundation](supporting-dxva-2-0-in-media-foundation.md)
+[Compatibilidad con DXVA 2.0 en Media Foundation](supporting-dxva-2-0-in-media-foundation.md)
 </dt> <dt>
 
 [Media Foundation transformaciones](media-foundation-transforms.md)
 </dt> <dt>
 
-[Atributos de transformación](transform-attributes.md)
+[Transformar atributos](transform-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
-[\_ \_ modo DXVA de topología \_ MF](mf-topology-dxva-mode.md)
+[MODO \_ \_ DXVA DE TOPOLOGÍA \_ MF](mf-topology-dxva-mode.md)
 </dt> </dl>
 
  

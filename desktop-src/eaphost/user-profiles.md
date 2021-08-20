@@ -1,27 +1,27 @@
 ---
 title: Propiedades de usuario
-description: Vea los temas acerca de las propiedades de usuario XML de ejemplo para varias configuraciones de red. Estas propiedades XML utilizan elementos de esquema EapHostUserCredential y Credentials.
+description: Vea temas sobre las propiedades de usuario XML de ejemplo para varias configuraciones de red. Estas propiedades XML usan los elementos de esquema EapHostUserCredential y Credentials.
 ms.assetid: 8e8ee656-11de-42fd-a960-f691330ee16e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3459e4f36ab28610f9eec42fcbb5e970aa415018
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 9263effe1888194c7d5e2029f96f9efb131e580893e3619810cfb62b393aaea6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104149628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117903596"
 ---
 # <a name="user-properties"></a>Propiedades de usuario
 
-En los temas siguientes se muestran propiedades de usuario XML de ejemplo para varias configuraciones de red. Estas propiedades XML utilizan elementos de esquema **EapHostUserCredential** y **Credentials** .
+En los temas siguientes se muestran propiedades de usuario XML de ejemplo para varias configuraciones de red. Estas propiedades XML usan **los elementos de esquema EapHostUserCredential** y **Credentials.**
 
-Para obtener más ejemplos de esquemas, consulte el [esquema EAP](https://go.microsoft.com/fwlink/p/?linkid=83914).
+Para obtener ejemplos de esquemas adicionales, consulte [Esquema eap](https://go.microsoft.com/fwlink/p/?linkid=83914).
 
--   [Propiedades de usuario de MS-CHAPv2 de EAP](eap-ms-chapv2-properties.md)
--   [Propiedades de usuario de EAP-TLS](eap-tls-user-properties.md)
--   [Propiedades de usuario de MS-CHAPv2 PEAP](peap-ms-chapv2-user-properties.md)
--   [Propiedades de usuario de PEAP-TLS](peap-tls-user-properties.md)
--   [Propiedades de usuario de EAP de SDK](sdk-user-properties.md)
+-   [Propiedades de MS-CHAPv2 eap](eap-ms-chapv2-properties.md)
+-   [Propiedades de usuario EAP-TLS](eap-tls-user-properties.md)
+-   [Propiedades de usuario MS-CHAPv2 PEAP](peap-ms-chapv2-user-properties.md)
+-   [Propiedades de usuario PEAP-TLS](peap-tls-user-properties.md)
+-   [Propiedades de usuario de EAP del SDK](sdk-user-properties.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -33,9 +33,9 @@ Para obtener más ejemplos de esquemas, consulte el [esquema EAP](https://go.mic
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

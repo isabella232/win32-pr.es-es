@@ -4,29 +4,29 @@ ms.assetid: 3982b07e-3179-45c1-9f17-f2114363f53d
 title: Cargadores de topología personalizados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34a8f9e24b207d43620e7b2d09080d244b0a9e72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02ca9cf393b83693199cea984183bf88186f74322ed816352e3c43d19a6e880b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105714930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117880390"
 ---
 # <a name="custom-topology-loaders"></a>Cargadores de topología personalizados
 
-Cuando una aplicación pone en cola una topología parcial en la sesión multimedia, la sesión multimedia utiliza un cargador de topología para resolver la topología. De forma predeterminada, la sesión multimedia utiliza la implementación de Media Foundation estándar del cargador de topología, pero también puede proporcionar una implementación personalizada. Esto le proporciona más control sobre la topología final. Un cargador de topología personalizado debe implementar la interfaz [**IMFTopoLoader**](/windows/desktop/api/mfidl/nn-mfidl-imftopoloader) .
+Cuando una aplicación pone en cola una topología parcial en la sesión multimedia, la sesión multimedia usa un cargador de topologías para resolver la topología. De forma predeterminada, la sesión multimedia usa la implementación Media Foundation estándar del cargador de topologías, pero también puede proporcionar una implementación personalizada. Esto le proporciona más control sobre la topología final. Un cargador de topologías personalizado debe implementar [**la interfaz DETOPOLoader.**](/windows/desktop/api/mfidl/nn-mfidl-imftopoloader)
 
-Para establecer un cargador de topología personalizado en la sesión multimedia, haga lo siguiente:
+Para establecer un cargador de topologías personalizado en la sesión multimedia, haga lo siguiente:
 
-1.  Cree un almacén de atributos vacío mediante una llamada a [**MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes).
-2.  Establezca el [**atributo \_ \_ TOPOLOADER de la sesión MF**](mf-session-topoloader-attribute.md) en el almacén de atributos. El valor del atributo es el CLSID del cargador personalizado.
-3.  Llame a [**MFCreateMediaSession**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatemediasession) para crear la sesión de medios para contenido no protegido, o [**MFCreatePMPMediaSession**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatepmpmediasession) para crear la sesión multimedia dentro de la ruta de acceso a medios protegidos (PMP).
+1.  Cree un almacén de atributos vacío mediante una [**llamada a MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes).
+2.  Establezca el [**atributo MF \_ SESSION \_ TOPOLOADER**](mf-session-topoloader-attribute.md) en el almacén de atributos. El valor del atributo es el CLSID del cargador personalizado.
+3.  Llame [**a MFCreateMediaSession**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatemediasession) para crear la sesión multimedia para contenido no protegido o [**MFCreatePMPMediaSession**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatepmpmediasession) para crear la sesión multimedia dentro de la ruta de acceso multimedia protegida (PMP).
 
 > [!Note]  
-> Para usar un cargador de topología personalizado dentro de la PMP, el cargador de topología debe ser un componente de confianza. Para obtener más información, vea [ruta de acceso a medios protegidos](protected-media-path.md).
+> Para usar un cargador de topologías personalizado dentro del PMP, el cargador de topologías debe ser un componente de confianza. Para obtener más información, vea [Ruta de acceso de medios protegidos.](protected-media-path.md)
 
  
 
-El código siguiente muestra cómo establecer un cargador de topología personalizado en la sesión multimedia.
+El código siguiente muestra cómo establecer un cargador de topologías personalizado en la sesión multimedia.
 
 
 ```C++
@@ -68,9 +68,9 @@ HRESULT CreateSession_CustomTopoLoader(REFCLSID clsid, IMFMediaSession **ppSessi
 
 
 
-No es necesario implementar el algoritmo de carga de topología completo en el cargador de topología. Como alternativa, puede ajustar el cargador de topología de Media Foundation estándar. En la implementación del método [**IMFTopoLoader:: Load**](/windows/desktop/api/mfidl/nf-mfidl-imftopoloader-load) , modifique la topología según sea necesario y pase la topología modificada al cargador de topología estándar. A continuación, el cargador de topologías estándar completa la topología. También puede modificar la topología completada antes de pasarla de nuevo a la sesión de medios.
+No es necesario implementar todo el algoritmo de carga de topologías en el cargador de topologías. Como alternativa, puede encapsular el cargador Media Foundation topología estándar. En la implementación del método [**IMFTopoLoader::Load,**](/windows/desktop/api/mfidl/nf-mfidl-imftopoloader-load) modifique la topología según sea necesario y pase la topología modificada al cargador de topologías estándar. A continuación, el cargador de topologías estándar completa la topología. También puede modificar la topología completada antes de devolverla a la sesión multimedia.
 
-En el código siguiente se muestra el esquema general de este enfoque. No muestra ningún detalle del método de [**carga**](/windows/desktop/api/mfidl/nf-mfidl-imftopoloader-load) , ya que dependerá de los requisitos específicos de la aplicación.
+El código siguiente muestra el esquema general de este enfoque. No muestra ningún detalle del método [**Load,**](/windows/desktop/api/mfidl/nf-mfidl-imftopoloader-load) ya que dependerá de los requisitos concretos de la aplicación.
 
 
 ```C++
@@ -173,7 +173,7 @@ private:
 [**MFCreateTopoLoader**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatetopoloader)
 </dt> <dt>
 
-[Creación de topologías avanzadas](advanced-topology-building.md)
+[Creación de topología avanzada](advanced-topology-building.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: 'Método ID3DXMATRIXStack::RotateAxis (D3DX10.h): gira (en relación con el espacio de coordenadas del mundo) alrededor de un eje arbitrario.'
+description: 'Método ID3DXMATRIXStack::RotateAxis (D3DX10.h): gira (con respecto al espacio de coordenadas del mundo) alrededor de un eje arbitrario.'
 ms.assetid: 7c842bf6-2d13-422e-8136-0506a76ce9fe
 title: Método ID3DXMATRIXStack::RotateAxis (D3DX10.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 0a2e52eed1c1957de9a0fcfed4ba3d3d05f89cb9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 66c255fd5cba6d7238f7ccb91f67d83e451e2fc80dabbc126985035a0a53001c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117914221"
 ---
 # <a name="id3dxmatrixstackrotateaxis-method-d3dx10h"></a>Método ID3DXMATRIXStack::RotateAxis (D3DX10.h)
 
@@ -91,7 +91,7 @@ Dado que la rotación se multiplica a la derecha en la pila de matriz, la rotaci
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

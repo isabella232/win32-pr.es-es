@@ -1,11 +1,11 @@
 ---
-title: La contraseña nunca expira (proveedor LDAP)
-description: Para habilitar la opción password never expires mediante el proveedor LDAP, establezca la marca ADS UF DONT EXPIRE PASSWD en el \_ \_ atributo \_ \_ userAccountControl del usuario.
+title: Contraseña nunca expira (proveedor LDAP)
+description: Para habilitar la opción password never expires mediante el proveedor LDAP, establezca la marca ADS UF DONT EXPIRE PASSWD en el atributo \_ \_ \_ \_ userAccountControl del usuario.
 ms.assetid: b8d7e7fe-c846-45c4-9c5f-770530453836
 ms.tgt_platform: multiple
 keywords:
-- La contraseña nunca expira en el proveedor ADSI y LDAP
-- ADSI del proveedor LDAP, ejemplos de administración de usuarios,Contraseña nunca expira
+- La contraseña nunca expira en adsi, proveedor LDAP
+- ADSI del proveedor LDAP, ejemplos de administración de usuarios, contraseña nunca expira
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: dfa48145fa2b78c7685cdf52ab58b1e681df48c7d10a80f0ac7462fa7d4cb868
@@ -15,9 +15,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117838935"
 ---
-# <a name="password-never-expires-ldap-provider"></a>La contraseña nunca expira (proveedor LDAP)
+# <a name="password-never-expires-ldap-provider"></a>Contraseña nunca expira (proveedor LDAP)
 
-Para habilitar la opción password never expires mediante el proveedor LDAP, establezca la marca [**ADS \_ UF \_ DONT \_ EXPIRE \_ PASSWD**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum) en el [**atributo userAccountControl del**](/windows/desktop/ADSchema/a-useraccountcontrol) usuario.
+Para habilitar la opción password never expires mediante el proveedor LDAP, establezca la marca [**ADS \_ UF \_ DONT \_ EXPIRE \_ PASSWD**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum) en el atributo [**userAccountControl del**](/windows/desktop/ADSchema/a-useraccountcontrol) usuario.
 
 
 ```VB

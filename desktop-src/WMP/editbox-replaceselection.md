@@ -1,9 +1,9 @@
 ---
-title: EDITBOX. replaceSelection
+title: EDITBOX.replaceSelection
 description: El método replaceSelection reemplaza la selección actual por el texto especificado.
 ms.assetid: 600650fb-f0c8-489a-9bf2-04f31705c6b0
 keywords:
-- EDITBOX. replaceSelection Windows Media Player
+- EDITBOX.replaceSelection Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6546f24c864d0b466acd17d9a42616c3f8ab01b6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 296a78bd4fbe112cbe6b0fb859c6451b6a3a892cb42ca8e91e2b4fcf911d4c20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117935287"
 ---
-# <a name="editboxreplaceselection"></a>EDITBOX. replaceSelection
+# <a name="editboxreplaceselection"></a>EDITBOX.replaceSelection
 
-El método **replaceSelection** reemplaza la selección actual por el texto especificado.
+El **método replaceSelection** reemplaza la selección actual por el texto especificado.
 
 ``` syntax
         elementID.replaceSelection(newValue)
@@ -32,10 +32,10 @@ El método **replaceSelection** reemplaza la selección actual por el texto espe
 
 <dl> <dt>
 
-<span id="newValue"></span><span id="newvalue"></span><span id="NEWVALUE"></span>*Nuevovalor*
+<span id="newValue"></span><span id="newvalue"></span><span id="NEWVALUE"></span>*newValue*
 </dt> <dd>
 
-**Cadena** que contiene el texto en el que se va a reemplazar el texto seleccionado.
+**Cadena** que contiene el texto para reemplazar el texto seleccionado.
 
 </dd> </dl>
 
@@ -43,9 +43,9 @@ El método **replaceSelection** reemplaza la selección actual por el texto espe
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si no hay texto seleccionado, el texto de sustitución se inserta en la ubicación actual del punto de inserción.
+Si no hay texto seleccionado, el texto de reemplazo se inserta en la ubicación actual del punto de inserción.
 
 Solo se puede llamar a este método después de que el control se vuelva visible.
 
@@ -53,9 +53,9 @@ Solo se puede llamar a este método después de que el control se vuelva visible
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------|
-| Versión<br/> | Windows Media Player para Windows XP o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 
@@ -66,13 +66,13 @@ Solo se puede llamar a este método después de que el control se vuelva visible
 [**Elemento EDITBOX**](editbox-element.md)
 </dt> <dt>
 
-[**EDITBOX. getSelectionEnd**](editbox-getselectionend.md)
+[**EDITBOX.getSelectionEnd**](editbox-getselectionend.md)
 </dt> <dt>
 
-[**EDITBOX. getSelectionStart**](editbox-getselectionstart.md)
+[**EDITBOX.getSelectionStart**](editbox-getselectionstart.md)
 </dt> <dt>
 
-[**EDITBOX. setSelection**](editbox-setselection.md)
+[**EDITBOX.setSelection**](editbox-setselection.md)
 </dt> </dl>
 
  

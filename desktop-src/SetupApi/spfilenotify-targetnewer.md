@@ -1,19 +1,19 @@
 ---
-description: La notificación de TARGETNEWER de SPFILENOTIFY \_ se envía a la rutina de devolución de llamada si el archivo que se va a copiar se ha puesto en cola con la copia de SP \_ \_ más reciente o se \_ \_ \_ han especificado las marcas más recientes en el directorio de destino.
+description: La notificación SPFILENOTIFY TARGETNEWER se envía a la rutina de devolución de llamada si el archivo que se va a copiar se ha puesto en cola con las marcas SP COPY NEWER o SP COPY FORCE NEWER especificadas y ya existe una versión más reciente del archivo en el directorio de \_ \_ \_ \_ \_ \_ destino.
 ms.assetid: 93bcd610-f75d-4900-841c-f67946af5c4a
-title: Mensaje de SPFILENOTIFY_TARGETNEWER (setupapi. h)
+title: SPFILENOTIFY_TARGETNEWER mensaje (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c432515a5ce0e9a1eddb8ea6e92f7376c318b4f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 947a0c2a1aff8c42ea95c489a7fcc87e40221ca0405b3048d43e3de718f5f3b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117964075"
 ---
-# <a name="spfilenotify_targetnewer-message"></a>SPFILENOTIFY \_ TARGETNEWER
+# <a name="spfilenotify_targetnewer-message"></a>SPFILENOTIFY \_ TARGETNEWER message
 
-La notificación de **\_ TARGETNEWER de SPFILENOTIFY** se envía a la rutina de devolución de llamada si el archivo que se va a copiar se ha puesto en cola con la copia de SP \_ \_ más reciente o se \_ \_ \_ han especificado las marcas más recientes en el directorio de destino. Se puede enviar a la rutina de devolución de llamada solo o a ORed junto con [**SPFILENOTIFY \_ LANGMISMATCH**](spfilenotify-langmismatch.md) o [**SPFILENOTIFY \_ TARGETEXISTS**](spfilenotify-targetexists.md).
+La notificación **SPFILENOTIFY \_ TARGETNEWER** se envía a la rutina de devolución de llamada si el archivo que se va a copiar se ha puesto en cola con las marcas SP COPY NEWER o SP COPY FORCE NEWER especificadas y ya existe una versión más reciente del archivo en el directorio de \_ \_ \_ \_ \_ destino. Se puede enviar solo a la rutina de devolución de llamada o ARed junto con [**SPFILENOTIFY \_ LANGMISMATCH**](spfilenotify-langmismatch.md) o [**SPFILENOTIFY \_ TARGETEXISTS**](spfilenotify-targetexists.md).
 
 
 ```C++
@@ -29,17 +29,17 @@ SPFILENOTIFY_TARGETNEWER
 
 <dl> <dt>
 
-*Parámetro1* 
+*Param1* 
 </dt> <dd>
 
-Puntero a una estructura [**FILEPATHS**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a) que contiene información sobre las rutas de acceso de los archivos de origen y de destino.
+Puntero a una [**estructura FILEPATHS**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a) que contiene información sobre las rutas de acceso de los archivos de origen y de destino.
 
 </dd> <dt>
 
 *Param2* 
 </dt> <dd>
 
-Este parámetro no se usa a menos que se combine esta notificación, mediante el operador OR, con [**SPFILENOTIFY \_ LANGMISMATCH**](spfilenotify-langmismatch.md).
+Este parámetro no se usa a menos que esta notificación se combine, mediante el operador OR, [**con SPFILENOTIFY \_ LANGMISMATCH**](spfilenotify-langmismatch.md).
 
 </dd> </dl>
 
@@ -51,8 +51,8 @@ La rutina de devolución de llamada debe devolver uno de los valores siguientes.
 
 | Código devuelto                                                                          | Descripción                                            |
 |--------------------------------------------------------------------------------------|--------------------------------------------------------|
-| <dl> <dt>**REALES**</dt> </dl>  | Sobrescriba el archivo en el directorio de destino.<br/> |
-| <dl> <dt>**ES**</dt> </dl> | Omitir la operación de copia actual.<br/>            |
+| <dl> <dt>**Verdad**</dt> </dl>  | Sobrescriba el archivo en el directorio de destino.<br/> |
+| <dl> <dt>**Falso**</dt> </dl> | Omita la operación de copia actual.<br/>            |
 
 
 
@@ -62,11 +62,11 @@ La rutina de devolución de llamada debe devolver uno de los valores siguientes.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 

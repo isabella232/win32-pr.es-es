@@ -1,7 +1,7 @@
 ---
 description: Obtiene un número aleatorio seguro criptográficamente de 128 bits de un objeto de salida protegido.
 ms.assetid: d5adfa5c-ae61-43d5-916d-05085abea38b
-title: GetOPMRandomNumber función)
+title: Función GetOPMRandomNumber
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,17 +13,17 @@ api_type:
 - DllExport
 api_location:
 - gdi32.dll
-ms.openlocfilehash: f78b17dcf9ffff7a5fa26ce16e96299e5cf8386c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 522cb1ea1ff44e83bdb77e63d30edf6e0cf892a5918db76aad4076e4c67f0fb1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117879392"
 ---
-# <a name="getopmrandomnumber-function"></a>GetOPMRandomNumber función)
+# <a name="getopmrandomnumber-function"></a>Función GetOPMRandomNumber
 
 > [!IMPORTANT]
-> El administrador de protección de [salida](output-protection-manager.md) (OPM) usa esta función para tener acceso a la funcionalidad del controlador de pantalla. Las aplicaciones no deben llamar a esta función.
+> El Administrador de [](output-protection-manager.md) protección de salida (OPM) usa esta función para acceder a la funcionalidad del controlador de pantalla. Las aplicaciones no deben llamar a esta función.
 
  
 
@@ -45,36 +45,36 @@ NTSTATUS WINAPI GetOPMRandomNumber(
 
 <dl> <dt>
 
-*opoOPMProtectedOutput* \[ de\]
+*opoOPMProtectedOutput* \[ En\]
 </dt> <dd>
 
-Identificador del objeto de salida protegido. Este identificador se obtiene llamando a [**CreateOPMProtectedOutputs**](createopmprotectedoutputs.md).
+Identificador del objeto de salida protegido. Este identificador se obtiene mediante una llamada a [**CreateOPMProtectedOutputs**](createopmprotectedoutputs.md).
 
 </dd> <dt>
 
-*prnRandomNumber* \[ enuncia\]
+*prnRandomNumber* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura **de \_ \_ \_ número aleatorio de DXGKMDT OPM** que recibe el número aleatorio.
+Puntero a una **estructura DXGKMDT \_ OPM \_ RANDOM \_ NUMBER** que recibe el número aleatorio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve el **estado \_ correcto**. De lo contrario, devuelve un código de error **NTSTATUS** .
+Si el método se realiza correctamente, devuelve **STATUS \_ SUCCESS**. De lo contrario, devuelve un código de error **NTSTATUS.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe utilizar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Gdi32.dll.
+Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe usar las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Gdi32.dll.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                 |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
 | Archivo DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 

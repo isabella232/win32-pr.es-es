@@ -13,18 +13,18 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 846297f2-b826-45de-8617-228790e87a63
-ms.openlocfilehash: 5f7b1d700c73df56ce7aaef39e162517629f96f6
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: d48a01e6336320ab1d11d661962dce17d6da28a816e662ba189f8aebe8310237
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118050587"
 ---
 # <a name="diskquotacontrol-object"></a>Objeto DiskQuotaControl
 
-Permite a un administrador administrar las propiedades de cuota de disco de un volumen. El sistema de archivos NTFS permite a un administrador administrar el uso de disco en un volumen compartido mediante la asignación de una cantidad especificada de espacio en disco, o límite de *cuota,* a cada usuario. Puede usar este objeto para establecer el límite de cuota predeterminado que se asignará automáticamente a todos los usuarios nuevos.
+Permite a un administrador administrar las propiedades de cuota de disco de un volumen. El sistema de archivos NTFS permite a un administrador administrar el uso del disco en un volumen compartido mediante la asignación de una cantidad especificada de espacio en disco, o límite de *cuota,* a cada usuario. Puede usar este objeto para establecer el límite de cuota predeterminado que se asignará automáticamente a todos los usuarios nuevos.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 El **objeto DiskQuotaControl** tiene estos tipos de miembros:
 
@@ -60,7 +60,7 @@ El **objeto DiskQuotaControl** tiene estos métodos.
 | [**GiveUserNameResolutionPriority**](diskquotacontrol-giveusernameresolutionpriority.md) | Coloca el objeto de usuario especificado a continuación en línea para la resolución de nombres.<br/>              |
 | [**Inicialización**](diskquotacontrol-initialize.md)                                         | Abre un volumen especificado e inicializa su objeto de control de cuota.<br/>              |
 | [**InvalidateSidNameCache**](diskquotacontrol-invalidatesidnamecache.md)                 | Invalida la caché de nombres de usuario del identificador de seguridad.<br/>                                    |
-| [**ShutdownNameResolution**](diskquotacontrol-shutdownnameresolution.md)                 | Cierra el subproceso de resolución de nombres de usuario.<br/>                                     |
+| [**ShutdownNameResolution**](diskquotacontrol-shutdownnameresolution.md)                 | Apaga el subproceso de resolución de nombres de usuario.<br/>                                     |
 | [**TranslateLogonNameToSID**](diskquotacontrol-translatelogonnametosid.md)               | Traduce un nombre de inicio de sesión al identificador de seguridad de usuario correspondiente en formato de cadena.<br/> |
 
 
@@ -75,29 +75,29 @@ El **objeto DiskQuotaControl** tiene estas propiedades.
 
 | Propiedad                                                                                   | Tipo de acceso           | Descripción                                                                                                                                                   |
 |:-------------------------------------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**DefaultQuotaLimit**](diskquotacontrol-defaultquotalimit.md)<br/>                 | Lectura y escritura<br/> | Establece u obtiene el límite de cuota predeterminado.<br/>                                                                                                              |
+| [**DefaultQuotaLimit**](diskquotacontrol-defaultquotalimit.md)<br/>                 | Lectura/escritura<br/> | Establece u obtiene el límite de cuota predeterminado.<br/>                                                                                                              |
 | [**DefaultQuotaLimitText**](diskquotacontrol-defaultquotalimittext.md)<br/>         | Solo lectura<br/>  | Obtiene el límite de cuota predeterminado como una cadena de texto.<br/>                                                                                                     |
-| [**DefaultQuotaThreshold**](diskquotacontrol-defaultquotathreshold.md)<br/>         | Lectura y escritura<br/> | Establece u obtiene el umbral de cuota predeterminado.<br/>                                                                                                          |
+| [**DefaultQuotaThreshold**](diskquotacontrol-defaultquotathreshold.md)<br/>         | Lectura/escritura<br/> | Establece u obtiene el umbral de cuota predeterminado.<br/>                                                                                                          |
 | [**DefaultQuotaThresholdText**](diskquotacontrol-defaultquotathresholdtext.md)<br/> | Solo lectura<br/>  | Obtiene el umbral de cuota predeterminado como una cadena de texto.<br/>                                                                                                 |
-| [**LogQuotaLimit**](diskquotacontrol-logquotalimit.md)<br/>                         | Lectura y escritura<br/> | Establece u obtiene un valor booleano que indica si se realizará una entrada del registro de eventos del sistema cuando un usuario supere su límite de cuota asignado.<br/>     |
-| [**LogQuotaThreshold**](diskquotacontrol-logquotathreshold.md)<br/>                 | Lectura y escritura<br/> | Establece u obtiene un valor booleano que indica si se realizará una entrada del registro de eventos del sistema cuando un usuario supere su umbral de cuota asignado.<br/> |
+| [**LogQuotaLimit**](diskquotacontrol-logquotalimit.md)<br/>                         | Lectura/escritura<br/> | Establece u obtiene un valor booleano que indica si se realizará una entrada del registro de eventos del sistema cuando un usuario supere su límite de cuota asignado.<br/>     |
+| [**LogQuotaThreshold**](diskquotacontrol-logquotathreshold.md)<br/>                 | Lectura/escritura<br/> | Establece u obtiene un valor booleano que indica si se realizará una entrada del registro de eventos del sistema cuando un usuario supere su umbral de cuota asignado.<br/> |
 | [**QuotaFileIncomplete**](diskquotacontrol-quotafileincomplete.md)<br/>             | Solo lectura<br/>  | Obtiene un valor booleano que indica si el archivo de cuota del volumen está completo.<br/>                                                             |
 | [**QuotaFileRebuilding**](diskquotacontrol-quotafilerebuilding.md)<br/>             | Solo lectura<br/>  | Obtiene un valor booleano que indica si el archivo de cuota del volumen se está recompilando actualmente.<br/>                                              |
-| [**QuotaState**](diskquotacontrol-quotastate.md)<br/>                               | Lectura y escritura<br/> | Establece u obtiene el estado de las cuotas de disco del volumen.<br/>                                                                                                |
-| [**UserNameResolution**](diskquotacontrol-usernameresolution.md)<br/>               | Lectura y escritura<br/> | Establece u obtiene un valor que controla cómo se resuelve el SID de usuario en los nombres de usuario.<br/>                                                                        |
+| [**QuotaState**](diskquotacontrol-quotastate.md)<br/>                               | Lectura/escritura<br/> | Establece u obtiene el estado de las cuotas de disco del volumen.<br/>                                                                                                |
+| [**UserNameResolution**](diskquotacontrol-usernameresolution.md)<br/>               | Lectura/escritura<br/> | Establece u obtiene un valor que controla cómo se resuelve el SID de usuario en los nombres de usuario.<br/>                                                                        |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Un administrador puede usar el **objeto DiskQuotaControl** para realizar una serie de tareas, incluidas las siguientes:
 
 -   Habilitación y deshabilitación del sistema de cuota de disco del volumen.
 -   Obtener el estado del sistema de cuota en el volumen.
 -   Denegar espacio en disco a los usuarios que superen su límite de cuota.
--   Especificación del umbral de advertencia predeterminado y los valores de límite de cuota que se asignarán a los nuevos usuarios.
+-   Especificar los valores predeterminados de umbral de advertencia y límite de cuota que se asignarán a los nuevos usuarios.
 -   Agregar y quitar usuarios.
 
 El **objeto DiskQuotaControl** permite establecer valores predeterminados globales para el volumen para propiedades como límites de cuota. Sin embargo, cada usuario se representa mediante un [**objeto DIDiskQuotaUser**](didiskquotauser-object.md) que se puede usar para especificar la configuración de cuota individual.
@@ -122,11 +122,11 @@ Este objeto hace que la funcionalidad esencial de la interfaz IDiskQuotaControl 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Objeto shell**](shell.md)
+[**Objeto Shell**](shell.md)
 </dt> </dl>
 
  

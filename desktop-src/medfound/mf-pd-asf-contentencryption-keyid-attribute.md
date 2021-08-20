@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117876438"
 ---
-# <a name="mf_pd_asf_contentencryption_keyid-attribute"></a>Atributo \_ \_ \_ CONTENTENCRYPTION KEYID de MF PD \_ ASF
+# <a name="mf_pd_asf_contentencryption_keyid-attribute"></a>Atributo \_ \_ \_ CONTENTENCRYPTION KEYID de ASF de MF PD \_
 
 Especifica el identificador de clave para un archivo cifrado de formato de sistemas avanzados (ASF). Este atributo corresponde al campo Id. de clave del encabezado de cifrado de contenido, definido en la especificación de ASF.
 
@@ -23,13 +23,13 @@ Cadena de caracteres anchos
 
 Este atributo se aplica a los descriptores de presentación para el contenido de ASF.
 
-El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) recupera el campo Id. de clave, lo convierte en una cadena de caracteres anchos y, a continuación, rellena una matriz terminada en NULL de **WCHAR.** El tamaño de la matriz es igual al campo Longitud del identificador de clave del encabezado de cifrado de contenido.
+El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) recupera el campo Id. de clave, lo convierte en una cadena de caracteres anchos y, a continuación, rellena una matriz terminada en NULL de **WCHAR** s. El tamaño de la matriz es igual al campo Longitud del identificador de clave del encabezado de cifrado de contenido.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
@@ -37,7 +37,7 @@ El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desk
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

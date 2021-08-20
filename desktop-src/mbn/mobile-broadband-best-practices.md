@@ -1,7 +1,7 @@
 ---
 description: Al trabajar con Mobile Broadband API, se debe usar el siguiente conjunto de procedimientos recomendados para lograr el mejor rendimiento posible.
 ms.assetid: 523e3ea4-1d4e-45d1-bc24-93aa2fb14390
-title: Procedimientos recomendados de mobile broadband API
+title: Procedimientos recomendados de la API de banda ancha móvil
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: e3a6c1e236a61dd2a5321be2edb7a68156f904605bd8a1da5fc169ea8b70e464
@@ -11,17 +11,17 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117881659"
 ---
-# <a name="mobile-broadband-api-best-practices"></a>Procedimientos recomendados de mobile broadband API
+# <a name="mobile-broadband-api-best-practices"></a>Procedimientos recomendados de la API de banda ancha móvil
 
 Al trabajar con Mobile Broadband API, se debe usar el siguiente conjunto de procedimientos recomendados para lograr el mejor rendimiento posible.
 
 ## <a name="do-not-cache-functional-objects"></a>No almacenar en caché objetos funcionales
 
-Los objetos funcionales, como [**IMbnInterface**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterface) y otros, se obtienen de objetos de administrador, como [**IMbnInterfaceManager,**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterfacemanager)mediante el método de enumeración en el objeto de administrador correspondiente. No almacene en caché estos objetos funcionales, ya que los objetos funcionales almacenados en caché contienen datos obsoletos. Las operaciones sincrónicas realizadas en estos objetos funcionales devolverán los mismos datos hasta que se obtengan de nuevo los objetos funcionales.
+Los objetos funcionales, como [**IMbnInterface**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterface) y otros, se obtienen de objetos de administrador, como [**IMbnInterfaceManager**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterfacemanager), mediante el método de enumeración en el objeto de administrador correspondiente. No almacene en caché estos objetos funcionales, ya que los objetos funcionales almacenados en caché contienen datos obsoletos. Las operaciones sincrónicas realizadas en estos objetos funcionales devolverán los mismos datos hasta que se vuelvan a obtener los objetos funcionales.
 
 En su lugar, almacenar en caché los objetos de administrador y obtener los objetos funcionales del objeto de administrador mediante el método de enumeración en el objeto de administrador correspondiente de nuevo para obtener los datos más recientes.
 
-En el ejemplo de código siguiente se muestra la manera adecuada de almacenar en caché objetos de administrador.
+En el ejemplo de código siguiente se muestra la manera adecuada de almacenar en caché los objetos del administrador.
 
 
 ```C++
@@ -124,23 +124,23 @@ int main()
 
 Siga y controle todas las notificaciones, incluso si la aplicación no las desencadena. Esto es necesario para mantener la interfaz de usuario sincronizada con el estado real del dispositivo.
 
-Puede haber más de un administrador de conexiones en ejecución en un equipo. La interfaz de usuario nativa ver la interfaz de red disponible proporcionada por Windows 7 es un administrador de conexiones. Los demás administradores de conexiones deben responder a todas las notificaciones para permanecer sincronizados con Windows interfaz de usuario nativa. Un usuario puede optar por realizar alguna operación en uno de los administradores de conexión, lo que puede dar lugar a un cambio de estado del dispositivo de banda ancha móvil. Sin embargo, otros administradores de conexiones deben permanecer actualizados para indicar correctamente el estado modificado del dispositivo.
+Puede haber más de un administrador de conexiones ejecutándose en un equipo. La interfaz de usuario nativa ver interfaz de red disponible proporcionada por Windows 7 es un administrador de conexiones. Los demás administradores de conexiones deben responder a todas las notificaciones para que permanezcan sincronizados con Windows interfaz de usuario nativa. Un usuario puede optar por realizar alguna operación en uno de los administradores de conexión, lo que puede dar lugar a un cambio de estado del dispositivo de banda ancha móvil. Sin embargo, otros administradores de conexiones deben permanecer actualizados para indicar correctamente el estado modificado del dispositivo.
 
-Por ejemplo, realizar una conexión mediante uno de los administradores de conexión cambiará el estado del dispositivo de disponible a conectado. Este cambio debe ser visible para los administradores de conexiones que no iniciaron esta acción. Todos los administradores de conexiones que tienen una interfaz de usuario que indica el estado de conexión del dispositivo deben escuchar y controlar las notificaciones de estado de conexión para actualizar correctamente su interfaz de usuario.
+Por ejemplo, realizar una conexión mediante uno de los administradores de conexión cambiará el estado del dispositivo de disponible a conectado. Este cambio debe ser visible para los administradores de conexiones que no iniciaron esta acción. Todos los administradores de conexiones que tengan una interfaz de usuario que indique el estado de conexión del dispositivo deben escuchar y controlar las notificaciones de estado de conexión para actualizar correctamente su interfaz de usuario.
 
-## <a name="sending-and-receiving-bytes"></a>Bytes de envío y recepción
+## <a name="sending-and-receiving-bytes"></a>Enviar y recibir bytes
 
 Use las funciones del asistente de IP [GetlfEntry](/windows/win32/api/iphlpapi/nf-iphlpapi-getifentry) y [GetlfEntry2 para](/windows/win32/api/netioapi/nf-netioapi-getifentry2) enviar y recibir bytes.
 
-## <a name="using-the-pin-unblock-api"></a>Uso de la API Desbloqueo de pin
+## <a name="using-the-pin-unblock-api"></a>Uso de la API Anclar desbloqueo
 
-Una aplicación cliente que realiza la llamada debe tener privilegios elevados para invocar [**correctamente IMbnPin::Unblock**](/windows/desktop/api/mbnapi/nf-mbnapi-imbnpin-unblock). Este método es la única parte de Mobile Broadband API que requiere privilegios de administrador o NCO. Vea [Una descripción del grupo de operadores de configuración de red]( https://support.microsoft.com/kb/297938/en-us) para obtener más información.
+Una aplicación cliente que realiza la llamada debe tener privilegios elevados para invocar correctamente [**IMbnPin::Unblock**](/windows/desktop/api/mbnapi/nf-mbnapi-imbnpin-unblock). Este método es la única parte de Mobile Broadband API que requiere privilegios de administrador o NCO. Consulte [Una descripción del grupo de operadores de configuración de red]( https://support.microsoft.com/kb/297938/en-us) para obtener más información.
 
 ## <a name="working-with-safearrays"></a>Trabajar con SafeArrays
 
 -   Use ZeroMemory() antes de acceder a los elementos de una safeArray.
 
--   No compruebe los índices de SafeArray. Pueden ser negativas.
+-   No compruebe los índices de una safeArray. Pueden ser negativos.
 
 En el ejemplo de código siguiente se muestra cómo controlar correctamente safeArray.
 

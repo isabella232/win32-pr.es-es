@@ -1,10 +1,10 @@
 ---
-title: Recargar-SSL-certificado extendido derecho
-description: Recargar-SSL-certificado extendido derecho
+title: Derecho extendido Reload-SSL-Certificate
+description: Derecho extendido Reload-SSL-Certificate
 ms.assetid: 0546b2a7-3ce1-4649-af8b-44674f62d040
 ms.tgt_platform: multiple
 keywords:
-- Volver a cargar el esquema de AD derecho extendido de certificado SSL
+- Reload-SSL-Certificate extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,21 +13,21 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d103e8fdd55fd9c0589c09fa5a89a4abd43bfa3f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 06b1236c1b9a637f6bc31b2ad847a85674b79f751e6b02ef87bcdddf7f8cf646
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836100"
 ---
-# <a name="reload-ssl-certificate-extended-right"></a>Recargar-SSL-certificado extendido derecho
+# <a name="reload-ssl-certificate-extended-right"></a>Derecho extendido Reload-SSL-Certificate
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | Recargar-SSL-certificado               |
-| Display-Name | Volver a cargar el certificado SSL/TLS           |
+| CN           | Reload-SSL-Certificate               |
+| Display-Name | Recarga del certificado SSL/TLS           |
 | Rights-GUID  | 1a60ea8d-58a6-4b20-bcdc-fb71eb8a9ff8 |
 
 
@@ -42,10 +42,10 @@ ms.locfileid: "103905769"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 76                                       |
+| Localization-Display-ID | 76                                       |
 
 
 
@@ -56,7 +56,7 @@ ms.locfileid: "103905769"
 | Entrada | Value |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 76                                       |
+| Localization-Display-ID | 76                                       |
 
 
 
@@ -67,7 +67,7 @@ ms.locfileid: "103905769"
 | Entrada | Value |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 76                                       |
+| Localization-Display-ID | 76                                       |
 
 
 

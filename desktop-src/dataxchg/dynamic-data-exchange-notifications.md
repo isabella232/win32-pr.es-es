@@ -1,28 +1,28 @@
 ---
-title: Notificaciones DDE
+title: Notificaciones de DDE
 description: . | Notificaciones DDE
 ms.assetid: 8e8a007a-d8de-417f-81be-bc90a55663e5
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bec02bac87876829bcc9a8e67f5e047a9d562260
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: def031efccc015039b598452ca0ca37ba570641415e619f8aa12f4c308f13528
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117915278"
 ---
-# <a name="dde-notifications"></a>Notificaciones DDE
+# <a name="dde-notifications"></a>Notificaciones de DDE
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**\_confirmación de DDE de WM \_**](wm-dde-ack.md)
--   [**\_aviso de DDE de WM \_**](wm-dde-advise.md)
--   [**\_datos DDE de WM \_**](wm-dde-data.md)
--   [**ejecución de WM \_ DDE \_**](wm-dde-execute.md)
--   [**hiperdinámico de WM \_ \_**](wm-dde-poke.md)
--   [**\_solicitud de DDE de WM \_**](wm-dde-request.md)
--   [**\_finalización de WM DDE \_**](wm-dde-terminate.md)
--   [**\_DESaconsejar DDE de WM \_**](wm-dde-unadvise.md)
+-   [**WM \_ DDE \_ ACK**](wm-dde-ack.md)
+-   [**WM \_ DDE \_ ADVISE**](wm-dde-advise.md)
+-   [**WM \_ DDE \_ DATA**](wm-dde-data.md)
+-   [**WM \_ DDE \_ EXECUTE**](wm-dde-execute.md)
+-   [**WM \_ DDE \_ POKE**](wm-dde-poke.md)
+-   [**SOLICITUD \_ DE DDE DE \_ WM**](wm-dde-request.md)
+-   [**WM \_ DDE \_ TERMINATE**](wm-dde-terminate.md)
+-   [**WM \_ DDE \_ UNADVISE**](wm-dde-unadvise.md)
 
  
 

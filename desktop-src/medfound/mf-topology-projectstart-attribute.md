@@ -19,15 +19,15 @@ Especifica la hora de detección de una topología, en relación con el inicio d
 
 **UINT64**
 
-Tratar como **un valor LONGLONG.**
+Tratar como un **valor LONGLONG.**
 
 ## <a name="remarks"></a>Comentarios
 
 El valor se da en unidades de 100 nanosegundos.
 
-Si la sesión multimedia se creó con el atributo [**MF \_ SESSION GLOBAL \_ \_ TIME**](mf-session-global-time-attribute.md) igual a **TRUE,** todas las topologías deben contener el atributo **MF \_ TOPOLOGY \_ PROJECTSTART.** De lo contrario, las topologías no deben contener **el atributo \_ MF TOPOLOGY \_ PROJECTSTART.** Para obtener más información, vea [Sequence Presentation Times](sequence-presentation-times.md).
+Si la sesión multimedia se creó con el atributo [**MF \_ SESSION GLOBAL \_ \_ TIME**](mf-session-global-time-attribute.md) igual a **TRUE,** todas las topologías deben contener el atributo **MF \_ TOPOLOGY \_ PROJECTSTART.** De lo contrario, las topologías no deben contener el **atributo \_ MF TOPOLOGY \_ PROJECTSTART.** Para obtener más información, vea [Tiempos de presentación de secuencia.](sequence-presentation-times.md)
 
-Este atributo es un valor con firma, aunque se almacena como **UINT64**.
+Este atributo es un valor con firma, aunque se almacena como **UINT64.**
 
 La constante GUID para este atributo se exporta desde mfuuid.lib.
 
@@ -43,7 +43,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

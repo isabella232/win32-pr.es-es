@@ -32,7 +32,7 @@ Lista de extensiones críticas de la plantilla de certificado.
 | CN                | PKI-Critical-Extensions                     |
 | Ldap-Display-Name | pKICriticalExtensions                       |
 | Size              | \-                                          |
-| Actualizar privilegios  | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1330                     |
 | System-Id-Guid    | fc5a9106-3b9d-11d2-90cc-00c04fd91ab1        |
@@ -53,7 +53,7 @@ Lista de extensiones críticas de la plantilla de certificado.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
@@ -74,7 +74,7 @@ Lista de extensiones críticas de la plantilla de certificado.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
@@ -95,7 +95,7 @@ Lista de extensiones críticas de la plantilla de certificado.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
@@ -137,7 +137,7 @@ Lista de extensiones críticas de la plantilla de certificado.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
@@ -158,7 +158,7 @@ Lista de extensiones críticas de la plantilla de certificado.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |

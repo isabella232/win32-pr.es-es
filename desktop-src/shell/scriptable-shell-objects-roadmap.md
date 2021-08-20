@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: e8685b44d00d3f48e8de2a567218ef08c1cb5070
-ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
+ms.openlocfilehash: b30e312a5a8afab59a220d6ad87aa3cb09af979c64e38cc5e0093b6e0fb8f3fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113581783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118048761"
 ---
 # <a name="scriptable-shell-objects"></a>Objetos de shell que pueden incluirse en scripts
 
@@ -22,17 +22,17 @@ El shell de Windows proporciona un conjunto eficaz de objetos de automatización
 
 En esta sección se presentan los objetos shell que pueden incluirse en scripts.
 
--   [Versiones del shell](#shell-versions)
+-   [Versiones de shell](#shell-versions)
 -   [Creación de instancias de objetos de shell](#instantiating-shell-objects)
     -   [Enlace en tiempo de tarde](#late-binding)
     -   [Elemento HTML OBJECT](#html-object-element)
--   [Objeto shell](#shell-object)
+-   [Objeto Shell](#shell-object)
     -   [Seguridad](#security)
 -   [Objetos de carpeta](#folder-objects)
 
-## <a name="shell-versions"></a>Versiones del shell
+## <a name="shell-versions"></a>Versiones de shell
 
-Muchos de los objetos de Shell están disponibles [en la versión 4.71](versions.md) del shell. Otras están disponibles en la versión 5.00 y posteriores. La versión 5.00 está disponible con Windows 2000. En la tabla siguiente se muestra cada objeto shell en la versión del shell en la que el objeto empezó a estar disponible.
+Muchos de los objetos de Shell están disponibles [en la versión 4.71](versions.md) del shell. Otras están disponibles en la versión 5.00 y posteriores. La versión 5.00 está disponible con Windows 2000. En la tabla siguiente se muestra cada objeto shell en la versión del shell en la que el objeto ha pasado a estar disponible.
 
 
 
@@ -56,14 +56,14 @@ Muchos de los objetos de Shell están disponibles [en la versión 4.71](versions
 
 ## <a name="instantiating-shell-objects"></a>Creación de instancias de objetos de shell
 
-Para crear instancias de los objetos de Shell Visual Basic aplicaciones con enlace anticipado, agregue referencias a las siguientes bibliotecas en el proyecto:
+Para crear instancias de los objetos de Shell Visual Basic aplicaciones con enlace anticipado, agregue referencias a las bibliotecas siguientes en el proyecto:
 
 -   Controles de Internet de Microsoft (SHDocVw)
 -   Controles y automatización de Microsoft Shell (Shell32)
 
 ### <a name="late-binding"></a>Enlace en tiempo de tarde
 
-También puede crear instancias de muchos de los objetos de Shell con enlace en tiempo de tarde. Este enfoque funciona en Visual Basic y en script. En el ejemplo siguiente se muestra cómo crear una instancia del objeto [**Shell**](shell.md) en JScript.
+También puede crear instancias de muchos de los objetos de Shell con enlace en tiempo de tarde. Este enfoque funciona en Visual Basic y en script. En el ejemplo siguiente se muestra cómo crear instancias del objeto [**Shell**](shell.md) en JScript.
 
 
 ```
@@ -81,7 +81,7 @@ También puede crear instancias de muchos de los objetos de Shell con enlace en 
 
 
 
-En el ejemplo siguiente se muestra cómo crear una instancia del [**objeto Folder**](folder.md) en VBScript.
+En el ejemplo siguiente se muestra cómo crear instancias del [**objeto Folder**](folder.md) en VBScript.
 
 
 ```
@@ -136,7 +136,7 @@ El ProgID de cada uno de los objetos de Shell se muestra en la tabla siguiente.
 
 ### <a name="html-object-element"></a>Elemento HTML OBJECT
 
-También puede usar el elemento [**OBJECT**](https://msdn.microsoft.com/library/ms535859(v=VS.85).aspx) para crear instancias de objetos de Shell en una página HTML. Para ello, establezca el atributo  ID del elemento **OBJECT** en el nombre de variable que usará en los scripts e identifique el objeto con su número registrado (CLASSID). El siguiente código HTML crea una instancia del [**objeto ShellFolderItem**](shellfolderitem-object.md) mediante el **elemento OBJECT.**
+También puede usar el elemento [**OBJECT**](https://msdn.microsoft.com/library/ms535859(v=VS.85).aspx) para crear instancias de objetos shell en una página HTML. Para ello, establezca el atributo  ID del elemento **OBJECT** en el nombre de variable que usará en los scripts e identifique el objeto con su número registrado (CLASSID). El siguiente código HTML crea una instancia del [**objeto ShellFolderItem**](shellfolderitem-object.md) mediante el **elemento OBJECT.**
 
 
 ```
@@ -148,7 +148,7 @@ También puede usar el elemento [**OBJECT**](https://msdn.microsoft.com/library/
 
 
 
-En la tabla siguiente se muestra cada objeto de Shell y su CLASSID correspondiente.
+En la tabla siguiente se muestra cada objeto shell y su CLASSID respectivo.
 
 
 
@@ -180,7 +180,7 @@ En la tabla siguiente se muestra cada objeto de Shell y su CLASSID correspondien
 
 ## <a name="shell-object"></a>Objeto shell
 
-El [**objeto**](shell.md) Shell representa los objetos del shell. Puede usar los métodos expuestos por el objeto shell para:
+El [**objeto Shell**](shell.md) representa los objetos del shell. Puede usar los métodos expuestos por el objeto shell para:
 
 -   Abra, explore y busque carpetas.
 -   Minimice, restaure, en cascada o abra ventanas de mosaico.

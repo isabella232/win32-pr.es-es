@@ -22,7 +22,7 @@ Puede configurar el indexador antes de usarlo para indexar un archivo ASF. Cada 
 
 Si va a configurar varios reenvía para la indexación en un archivo, debe configurarlos todos y, a continuación, comenzar la indexación. Si configura e indexa una secuencia y, a continuación, configura otra secuencia en el mismo archivo, al volver a iniciar el indexador se eliminará el primer índice. Esto es para cumplir con el formato de archivo ASF.
 
-El código siguiente muestra cómo configurar el indexador. El código supone que el archivo que se va a indexar tiene dos secuencias: la primera es una secuencia de audio que no es necesario indexar y la segunda es una secuencia de vídeo. Este código solo muestra cómo configurar el indexador. Para indexar un archivo, debe seguir los pasos presentados en [Para indexar un archivo ASF](to-index-an-asf-file.md).
+El código siguiente muestra cómo configurar el indexador. El código supone que el archivo que se va a indexar tiene dos secuencias: la primera es una secuencia de audio que no es necesario indexar y la segunda es una secuencia de vídeo. Este código muestra solo cómo configurar el indexador. Para indexar un archivo, debe seguir los pasos presentados en [Para indexar un archivo ASF](to-index-an-asf-file.md).
 
 
 ```C++

@@ -1,5 +1,5 @@
 ---
-description: Indica si el receptor de flujo admite la rotación de vídeo.
+description: Indica si el receptor del flujo admite la rotación de vídeo.
 ms.assetid: 6CE17F9D-3BBB-4F4F-9F1A-495188F1815F
 title: MF_STREAM_SINK_SUPPORTS_ROTATION atributo (Mfidl.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "117876016"
 ---
 # <a name="mf_stream_sink_supports_rotation-attribute"></a>MF \_ STREAM SINK ADMITE el atributo \_ \_ \_ ROTATION
 
-Indica si el receptor de flujo admite la rotación de vídeo.
+Indica si el receptor del flujo admite la rotación de vídeo.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -31,14 +31,14 @@ Indica si el receptor de flujo admite la rotación de vídeo.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos de tipo multimedia](media-type-attributes.md)
+[Atributos de tipo de medio](media-type-attributes.md)
 </dt> </dl>
 
  

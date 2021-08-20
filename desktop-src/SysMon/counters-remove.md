@@ -1,11 +1,11 @@
 ---
-title: Counters. Remove (método)
-description: Quita una instancia de un objeto de la colección.
+title: Método Counters.Remove
+description: Quita una instancia counterItem de la colección.
 ms.assetid: 88e5907a-8c8f-4a24-9c5d-0c592f61dac0
 keywords:
-- Quitar método SysMon
-- Remove (método) SysMon, counters (clase)
-- Counters (clase) SysMon, Remove (método)
+- Quitar el método SysMon
+- Remove method SysMon , Counters (Clase)
+- Clase Counters SysMon , Remove (método)
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa82a1a988be3554c265c097ba2a582035547391
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 77226d87c49fdfd2e9d8d26c2699bcb4606de29a21bf2bd20a12ad0b70d6daa4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117956657"
 ---
-# <a name="countersremove-method"></a>Counters. Remove (método)
+# <a name="countersremove-method"></a>Método Counters.Remove
 
-Quita una instancia de un [**objeto**](counteritem.md) de la colección.
+Quita una [**instancia counterItem**](counteritem.md) de la colección.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ Counters.Remove( _
 
 <dl> <dt>
 
-*Índice* \[ de de\]
+*index* \[ En\]
 </dt> <dd>
 
-Índice del objeto de [**elemento**](counteritem.md) que se va a quitar de la colección. El índice está basado en uno.
+Índice del objeto [**CounterItem**](counteritem.md) que se quitará de la colección. El índice se basa en uno.
 
 </dd> </dl>
 
@@ -59,25 +59,25 @@ Este método no devuelve ningún valor.
 
 | Tipo de excepción                                  | Condición                                                      |
 |-------------------------------------------------|----------------------------------------------------------------|
-| **System. Runtime. InteropServices. COMException** | El índice especificado no es válido. El valor de Err. number es???. |
+| **System.Runtime.InteropServices.COMException** | El índice especificado no es válido. El valor Err.Number es ???. |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para quitar todos los contadores de la colección, puede llamar a [**SystemMonitor. Reset**](systemmonitor-reset.md).
+Para quitar todos los contadores de la colección, puede llamar a [**SystemMonitor.Reset**](systemmonitor-reset.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Para quitar todos los contadores de la colección, puede llamar a [**SystemMonit
 [**Counters**](counters.md)
 </dt> <dt>
 
-[**SystemMonitor. Reset**](systemmonitor-reset.md)
+[**SystemMonitor.Reset**](systemmonitor-reset.md)
 </dt> </dl>
 
  

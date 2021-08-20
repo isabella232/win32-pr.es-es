@@ -9,21 +9,21 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: f48fc719525d290cc3f43965762e748569ef86b5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6ef4db6bbd1cb2924de97907f04781cceccaf1554f3815483a8cbc82473053b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118051086"
 ---
 # <a name="supporting-shell-applications"></a>Compatibilidad con aplicaciones de Shell
 
 -   [Iniciar aplicaciones (ShellExecute, ShellExecuteEx, SHELLEXECUTEINFO)](launch.md)
 -   [Diálogos](dialogs-bumper.md)
--   [Bibliotecas de Windows](library-ovw.md)
+-   [Windows Bibliotecas](library-ovw.md)
 -   [Carpetas conocidas](known-folders.md)
 -   [Administración del sistema de archivos](manage.md)
--   [Registro de un explorador de Internet o un cliente de correo electrónico con el menú Inicio de Windows](start-menu-reg.md)
+-   [Registro de un explorador de Internet o un cliente de correo electrónico con el Windows inicio](start-menu-reg.md)
 -   [Registro de programas con tipos de cliente](reg-middleware-apps.md)
 -   [Crear un vínculo de shell](./links.md)
 -   [Uso de autocompletar](ac-ovw.md)

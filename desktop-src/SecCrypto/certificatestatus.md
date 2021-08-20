@@ -77,7 +77,7 @@ El método [**Certificate.IsValid**](certificate-isvalid.md) devuelve el objeto 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |

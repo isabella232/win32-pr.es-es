@@ -1,10 +1,10 @@
 ---
-title: MPTHREAT_DATA estructura (MpClient. h)
-description: Datos de notificación pasados debido a la detección de amenazas o a la modificación.
+title: MPTHREAT_DATA estructura (MpClient.h)
+description: Datos de notificación pasados debido a la detección o modificación de amenazas.
 ms.assetid: 07A2F88B-9D58-44EC-86D0-BDCC1DF44B94
 keywords:
-- MPTHREAT_DATA estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPTHREAT_DATA características de entorno heredado de Windows
+- MPTHREAT_DATA estructura heredada de Windows environment
+- PMPTHREAT_DATA puntero de estructura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cafbb11dbb3b1a34b38ffd0448db96fd1409efd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2bd6338a027e3b03971f357950bbc351acef0d3fcdca83b72130e0ea475164d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105714643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883235"
 ---
-# <a name="mpthreat_data-structure"></a>\_Estructura de datos MPTHREAT
+# <a name="mpthreat_data-structure"></a>Estructura DE DATOS \_ DE MPTHREAT
 
-Datos de notificación pasados debido a la detección de amenazas o a la modificación.
+Datos de notificación pasados debido a la detección o modificación de amenazas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ typedef struct tagMPTHREAT_DATA {
 **ThreatID**
 </dt> <dd>
 
-Tipo: **\_ ID. de MPTHREAT**
+Tipo: **Id. \_ de MPTHREAT**
 
 </dd> <dd>
 
@@ -62,18 +62,18 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Sesión asociada a la amenaza. Establézcalo en-1 si no hay disponible ninguna información específica de la sesión.
+Sesión asociada a la amenaza. Establezca en -1 si no hay información específica de la sesión disponible.
 
 </dd> <dt>
 
 **ThreatAction**
 </dt> <dd>
 
-Tipo: **[ **\_ acción MPTHREAT**](mpthreat-action.md)**
+Tipo: **[ **MPTHREAT \_ ACTION**](mpthreat-action.md)**
 
 </dd> <dd>
 
-Se intentó una acción de amenaza para los eventos de **\_ \_ \_** / **\_ \_ \_ error al limpiar** la amenaza de MPNOTIFY correctamente MPNOTIFY.
+Acción de amenaza intentada para los **eventos MPNOTIFY \_ THREAT CLEAN \_ \_ SUCCEEDED** / **MPNOTIFY \_ THREAT CLEAN \_ \_ FAILED.**
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Estado adicional o acciones asociadas a la acción realizada. Se trata de una combinación de marcas de bits de la [**\_ marca MPSTATUS**](mpstatus-flag.md).
+Estado adicional o acciones asociadas a la acción realizada. Se trata de una combinación de marcas de bits de [**MPSTATUS \_ FLAG**](mpstatus-flag.md).
 
 </dd> </dl>
 
@@ -94,9 +94,9 @@ Estado adicional o acciones asociadas a la acción realizada. Se trata de una co
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
@@ -104,10 +104,10 @@ Estado adicional o acciones asociadas a la acción realizada. Se trata de una co
 
 <dl> <dt>
 
-[**\_marca MPSTATUS**](mpstatus-flag.md)
+[**MARCA \_ MPSTATUS**](mpstatus-flag.md)
 </dt> <dt>
 
-[**\_acción MPTHREAT**](mpthreat-action.md)
+[**ACCIÓN \_ MPTHREAT**](mpthreat-action.md)
 </dt> </dl>
 
  

@@ -1,35 +1,35 @@
 ---
-description: Especifica si la canalización aplica el marcado en este nodo. El marcado es el punto en el que finaliza una presentación. Si los componentes de canalización generan datos más allá del punto de la marca de salida, los datos no se representan.
+description: Especifica si la canalización aplica la marca de salida en este nodo. Mark-out es el punto en el que finaliza una presentación. Si los componentes de canalización generan datos más allá del punto de marcado, los datos no se representan.
 ms.assetid: adf2361a-90c7-4650-a486-5c450a41ab54
-title: MF_TOPONODE_MARKOUT_HERE atributo (Mfidl. h)
+title: MF_TOPONODE_MARKOUT_HERE atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c5dc21f39f45aa04860f3374bead54d260f0821
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0d7196fd9f0ccc342672b609ce32d922d091a3f962ef9dd8e9dcdd4077c34a87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117691126"
 ---
-# <a name="mf_toponode_markout_here-attribute"></a>MF \_ TOPONODE \_ MARKOUT \_ aquí atributo
+# <a name="mf_toponode_markout_here-attribute"></a>Atributo MF \_ TOPONODE \_ MARKOUT \_ HERE
 
-Especifica si la canalización aplica el marcado en este nodo. El marcado es el punto en el que finaliza una presentación. Si los componentes de canalización generan datos más allá del punto de la marca de salida, los datos no se representan.
+Especifica si la canalización aplica la marca de salida en este nodo. Mark-out es el punto en el que finaliza una presentación. Si los componentes de canalización generan datos más allá del punto de marcado, los datos no se representan.
 
 ## <a name="data-type"></a>Tipo de datos
 
 **UINT32**
 
-Trata como un valor booleano.
+Tratar como un valor booleano.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo se aplica a todos los tipos de nodo.
 
-Si este atributo es **true**, la canalización Media Foundation recorta los ejemplos de salida de este nodo para que coincidan con la hora de detención de la presentación. El cargador de topología establece este atributo cuando resuelve una topología. La mayoría de las aplicaciones no necesitan establecer ni recuperar este atributo.
+Si este atributo es **TRUE**, la canalización Media Foundation recorta los ejemplos de salida de este nodo para que coincidan con la hora de detenerse de la presentación. El cargador de topologías establece este atributo cuando resuelve una topología. La mayoría de las aplicaciones no necesitan establecer ni recuperar este atributo.
 
-Se recomienda que un nodo de cada rama de la topología tenga este atributo establecido en **true**. Una rama de topología se define como la ruta de acceso desde un nodo de origen a un nodo de salida. Dentro de una bifurcación, \_ \_ \_ se deben establecer en el mismo nodo de la bifurcación los atributos MF TOPONODE MARKOUT aquí y [MF \_ TOPONODE \_ Marka \_ aquí](mf-toponode-markin-here-attribute.md) . No se pueden establecer en nodos diferentes dentro de la misma rama.
+Se recomienda que exactamente un nodo de cada rama de la topología tenga este atributo establecido en **TRUE.** Una rama de topología se define como la ruta de acceso de un nodo de origen a un nodo de salida. Dentro de una rama, los atributos MF \_ TOPONODE MARKOUT HERE y \_ \_ MF [ \_ TOPONODE \_ MARKIN \_ HERE](mf-toponode-markin-here-attribute.md) deben establecerse en el mismo nodo de la rama. No se pueden establecer en nodos diferentes dentro de la misma rama.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -47,19 +47,19 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
-[**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
+[**NODETopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
 </dt> <dt>
 
-[**\_TOPONODE MF \_ \_ aquí**](mf-toponode-markin-here-attribute.md)
+[**MF \_ TOPONODE \_ MARKIN \_ AQUÍ**](mf-toponode-markin-here-attribute.md)
 </dt> <dt>
 
 [Atributos de nodo de topología](topology-node-attributes.md)

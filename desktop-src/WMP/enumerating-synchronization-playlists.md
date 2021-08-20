@@ -3,35 +3,35 @@ title: Enumerar listas de reproducción de sincronización
 description: Enumerar listas de reproducción de sincronización
 ms.assetid: 830c3ea5-2937-48b5-b89f-ef68a6649ca3
 keywords:
-- Windows Media Player, listas de reproducción de sincronización
-- Modelo de objetos de Windows Media Player, listas de reproducción de sincronización
+- Reproductor de Windows Media,listas de reproducción de sincronización
+- Reproductor de Windows Media modelo de objetos, listas de reproducción de sincronización
 - modelo de objetos, listas de reproducción de sincronización
-- Windows Media Player Mobile, listas de reproducción de sincronización
-- Control ActiveX de Windows Media Player, listas de reproducción de sincronización
-- Control ActiveX móvil de Windows Media Player, listas de reproducción de sincronización
-- Control ActiveX, listas de reproducción de sincronización
+- Reproductor de Windows Media Móvil, listas de reproducción de sincronización
+- Reproductor de Windows Media ActiveX control, listas de reproducción de sincronización
+- Reproductor de Windows Media Control de ActiveX móviles, listas de reproducción de sincronización
+- ActiveX control, listas de reproducción de sincronización
 - listas de reproducción, sincronización
-- listas de reproducción de metarchivos, sincronización
-- Listas de reproducción de metarchivos de Windows Media, sincronización
+- listas de reproducción de metarchivo, sincronización
+- Windows Listas de reproducción de metarchivo multimedia, sincronización
 - listas de reproducción de sincronización, enumeración
 - dispositivos portátiles, enumeración
 - enumeraciones, listas de reproducción de sincronización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29679380cec1844e9a790ac4ff047bfa4bf05288
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 55c6da1b91ffb779bc32262584375a7970bb20b2c644d6ee6893eacfea0b0d6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105695547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117935152"
 ---
 # <a name="enumerating-synchronization-playlists"></a>Enumerar listas de reproducción de sincronización
 
-En el código de ejemplo siguiente se crea una función que rellena un control ListView con listas de reproducción. Las listas de reproducción de sincronización aparecen en primer lugar. Las listas de reproducción de sincronización para el dispositivo seleccionado actualmente se marcan con una marca de verificación y se ordenan en orden de prioridad de sincronización. Todas las demás listas de reproducción están desactivadas.
+El código de ejemplo siguiente crea una función que rellena un control ListView con listas de reproducción. Las listas de reproducción de sincronización aparecen primero. Las listas de reproducción de sincronización para el dispositivo seleccionado actualmente se marcan con una marca de verificación y se ordenan en el orden de prioridad de sincronización. Todas las demás listas de reproducción están desactivadas.
 
-El control ListView se configuró para la selección única. El orden de las listas de reproducción en el control ListView determina su prioridad de sincronización. El estado activado de una lista de reproducción individual determina si se trata de una lista de reproducción de sincronización para el dispositivo seleccionado actualmente.
+El control ListView se configuró para una selección única. El orden de las listas de reproducción en el control ListView determina su prioridad de sincronización. El estado activado de una lista de reproducción individual determina si se trata de una lista de reproducción de sincronización para el dispositivo seleccionado actualmente.
 
-El parámetro *lPSIndex* especifica el índice de Asociación para el dispositivo portátil seleccionado actualmente.
+El parámetro *lPSIndex* especifica el índice de asociación para el dispositivo portátil seleccionado actualmente.
 
 
 ```C++
@@ -140,27 +140,27 @@ STDMETHODIMP CSyncSettings::ShowPlaylists(long lPSIndex)
 
 
 
-Para la implementación de la función SortPlaylist, consulte [Ordenar listas de reproducción por prioridad de sincronización](sorting-playlists-by-synchronization-priority.md).
+Para la implementación de la función SortPlaylist, vea [Ordenar listas de reproducción por prioridad de sincronización.](sorting-playlists-by-synchronization-priority.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**IWMPMedia:: getItemInfo**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-getiteminfo)
+[**IWMPMedia::getItemInfo**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmedia-getiteminfo)
 </dt> <dt>
 
 [**IWMPMediaCollection::getByAttribute**](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpmediacollection-getbyattribute)
 </dt> <dt>
 
-[**Administrar listas de reproducción de sincronización**](managing-synchronization-playlists.md)
+[**Administración de listas de reproducción de sincronización**](managing-synchronization-playlists.md)
 </dt> <dt>
 
 [**Atributos de sincronización**](sync-attributes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

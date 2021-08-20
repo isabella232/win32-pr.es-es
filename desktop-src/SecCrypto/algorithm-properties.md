@@ -17,7 +17,7 @@ El [**objeto Algorithm**](algorithm.md) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Propiedad KeyLength**](algorithm-keylength.md)
+-   [**KeyLength (propiedad)**](algorithm-keylength.md)
 -   [**Propiedad Name**](algorithm-name.md)
 
  

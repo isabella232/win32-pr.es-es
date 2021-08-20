@@ -22,8 +22,8 @@ Las siguientes funciones se usan con identificadores y objetos .
 | [**CloseHandle**](/windows/win32/api/handleapi/nf-handleapi-closehandle)                   | Cierra un identificador de objeto abierto.                                                                |
 | [**CompareObjectHandles**](/windows/desktop/api/handleapi/nf-handleapi-compareobjecthandles) | Compara dos identificadores de objeto para determinar si hacen referencia al mismo objeto de kernel subyacente. |
 | [**DuplicateHandle**](/windows/win32/api/handleapi/nf-handleapi-duplicatehandle)           | Duplica un identificador de objeto.                                                                 |
-| [**GetHandleInformation**](/windows/win32/api/handleapi/nf-handleapi-gethandleinformation) | Recupera determinadas propiedades de un identificador de objeto.                                            |
-| [**SetHandleInformation**](/windows/win32/api/handleapi/nf-handleapi-sethandleinformation) | Establece determinadas propiedades de un identificador de objeto.                                                 |
+| [**GetHandleInformation**](/windows/win32/api/handleapi/nf-handleapi-gethandleinformation) | Recupera ciertas propiedades de un identificador de objeto.                                            |
+| [**SetHandleInformation**](/windows/win32/api/handleapi/nf-handleapi-sethandleinformation) | Establece ciertas propiedades de un identificador de objeto.                                                 |
 
 
 

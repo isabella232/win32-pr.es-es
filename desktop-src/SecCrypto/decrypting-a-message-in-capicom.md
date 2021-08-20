@@ -1,30 +1,30 @@
 ---
-description: Esta subrutina toma una cadena de contraseña que se utilizará para generar una clave de cifrado de sesión y el nombre de un archivo desde el que se leerá un mensaje cifrado. Todos los parámetros se pasan a la subrutina por valores.
+description: Esta subrutina toma una cadena de contraseña que se usará para generar una clave de cifrado de sesión y el nombre de un archivo desde el que se leerá un mensaje cifrado. Todos los parámetros se pasan a la subrutina por valores.
 ms.assetid: 70f23d93-2bca-419b-9de7-e52ce4fb1350
-title: Descifrado de un mensaje en CAPICOM
+title: Descifrar un mensaje en CAPICOM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba984bad7d9289eaf89725e9598a4330f16b49ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 744878378fbe2791e66151e451029be8adde2435b451d540196a1082c4e005f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117767763"
 ---
-# <a name="decrypting-a-message-in-capicom"></a>Descifrado de un mensaje en CAPICOM
+# <a name="decrypting-a-message-in-capicom"></a>Descifrar un mensaje en CAPICOM
 
-\[CAPICOM es un componente de solo bits de 32 que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use la .NET Framework para implementar características de seguridad. Para obtener más información, vea [alternativas al uso de CAPICOM](alternatives-to-using-capicom.md).\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use el .NET Framework para implementar características de seguridad. Para obtener más información, [vea Alternativas al uso de CAPICOM.](alternatives-to-using-capicom.md)\]
 
-Esta subrutina toma una cadena de contraseña que se utilizará para generar una clave de cifrado de sesión y el nombre de un archivo desde el que se leerá un mensaje cifrado. Todos los parámetros se pasan a la subrutina por valores.
+Esta subrutina toma una cadena de contraseña que se usará para generar una clave de cifrado de sesión y el nombre de un archivo desde el que se leerá un mensaje cifrado. Todos los parámetros se pasan a la subrutina por valores.
 
 > [!Note]  
-> CAPICOM no admite el tipo de \# contenido de PKCS 7 EncryptedData, pero usa una estructura ASN no estándar para EncryptedData. Por lo tanto, solo CAPICOM puede descifrar un objeto EncryptedData de CAPICOM.
+> CAPICOM no admite el tipo de contenido EncryptedData pkcs 7, pero usa una estructura ASN no estándar \# para EncryptedData. Por lo tanto, solo CAPICOM puede descifrar un objeto CAPICOM EncryptedData.
 
  
 
-Si se produce un error en el descifrado, se comprueba el valor de **Err. Number** para determinar si el error se debe al uso de una contraseña que no coincidía con la contraseña usada para cifrar el mensaje. En este caso, \_ se devuelve el error de datos incorrectos de NTE \_ .
+Si se produce un error de descifrado, se comprueba el valor **Err.Number** para determinar si el error se debe al uso de una contraseña que no coincide con la contraseña utilizada para cifrar el mensaje. En este caso, se devuelve el \_ error NTE BAD \_ DATA.
 
-En cualquier error de CAPICOM, se devuelve un valor decimal negativo de **Err. Number** . Para obtener más información, consulte el [**\_ \_ código de error de CAPICOM**](capicom-error-code.md). Para obtener información acerca de los valores decimales positivos de **Err. Number**, consulte Winerror. h.
+En cualquier error CAPICOM, se devuelve un valor decimal negativo **de Err.Number.** Para obtener más información, vea [**CAPICOM \_ ERROR \_ CODE**](capicom-error-code.md). Para obtener información sobre los valores decimales positivos **de Err.Number,** vea Winerror.h.
 
 
 ```VB

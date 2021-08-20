@@ -66,7 +66,7 @@ El texto se asigna normalmente a los botones cuando se agregan a una barra de he
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

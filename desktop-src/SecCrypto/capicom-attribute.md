@@ -28,7 +28,7 @@ El **tipo de enumeración \_ CAPICOM ATTRIBUTE** define el tipo de atributo asoc
 
 
 
-| Miembro                                                       | Descripción                                                                | Valor |
+| Miembro                                                       | Descripción                                                                | Value |
 |--------------------------------------------------------------|----------------------------------------------------------------------------|-------|
 | **TIEMPO DE FIRMA \_ DE ATRIBUTOS AUTENTICADOS \_ DE \_ CAPICOM \_**         | El atributo contiene la hora a la que se creó la firma.<br/> | 0     |
 | **NOMBRE DEL DOCUMENTO DE ATRIBUTO AUTENTICADO CAPICOM \_ \_ \_ \_**        | El atributo contiene el nombre del documento firmado.<br/>         | 1     |
@@ -38,13 +38,13 @@ El **tipo de enumeración \_ CAPICOM ATTRIBUTE** define el tipo de atributo asoc
 
 ## <a name="remarks"></a>Comentarios
 
-La propiedad Attribute.Name utiliza el tipo de [**enumeración**](attribute-name.md) **\_ CAPICOM ATTRIBUTE.**
+La propiedad Attribute.Name utiliza el tipo de [**enumeración**](attribute-name.md) **\_ CAPICOM** ATTRIBUTE.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|--------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                |
 | Header<br/>          | <dl> <dt>Capicom.h</dt> </dl> |

@@ -1,17 +1,17 @@
 ---
 description: Especifica la relación de aspecto del rectángulo de salida para un tipo de medio de vídeo.
 ms.assetid: d7fec5fb-a1fe-4cc9-aa27-a3af0456ea8d
-title: MF_MT_PAD_CONTROL_FLAGS atributo (mfapi. h)
+title: MF_MT_PAD_CONTROL_FLAGS atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 02610b54b84c2470eba19eaa696f633243df347f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6648038b92da811095be66f24587276c4149ff18ba6b17664ce86edad098fb1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117877029"
 ---
-# <a name="mf_mt_pad_control_flags-attribute"></a>\_Atributo de \_ \_ marcador de control MF MT Pad \_
+# <a name="mf_mt_pad_control_flags-attribute"></a>Atributo \_ MF MT PAD CONTROL \_ \_ \_ FLAGS
 
 Especifica la relación de aspecto del rectángulo de salida para un tipo de medio de vídeo.
 
@@ -19,11 +19,11 @@ Especifica la relación de aspecto del rectángulo de salida para un tipo de med
 
 **UINT32**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de este atributo es un miembro de la enumeración [**MFVideoPadFlags**](/windows/desktop/api/mfapi/ne-mfapi-mfvideopadflags) .
+El valor de este atributo es miembro de la [**enumeración MFVideoPadFlags.**](/windows/desktop/api/mfapi/ne-mfapi-mfvideopadflags)
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,9 +31,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>                              |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -41,19 +41,19 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 </dt> <dt>
 
-[Atributos de tipo de medio](media-type-attributes.md)
+[Atributos de tipo multimedia](media-type-attributes.md)
 </dt> </dl>
 
  

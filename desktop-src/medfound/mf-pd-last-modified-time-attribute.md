@@ -1,17 +1,17 @@
 ---
 description: Especifica cuándo se modificó por última vez una presentación.
 ms.assetid: 12990de2-7656-4781-943b-c46f42a0e38d
-title: MF_PD_LAST_MODIFIED_TIME atributo (Mfidl. h)
+title: MF_PD_LAST_MODIFIED_TIME atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 37f97bf47cff32834b694f36cbd4c9062e06f2d9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b906b867db0b96b96927a8c21ee62e944fcbe3369f852811536d75f63862b807
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117691777"
 ---
-# <a name="mf_pd_last_modified_time-attribute"></a>\_Atributo de \_ hora de última \_ modificación \_ de MF PD
+# <a name="mf_pd_last_modified_time-attribute"></a>Atributo MF \_ PD \_ LAST MODIFIED \_ \_ TIME
 
 Especifica cuándo se modificó por última vez una presentación.
 
@@ -19,21 +19,21 @@ Especifica cuándo se modificó por última vez una presentación.
 
 Byte array
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los orígenes multimedia pueden establecer este atributo en un descriptor de presentación. El valor del atributo es una estructura **FILETIME** , que se documenta en el Windows SDK.
+Los orígenes multimedia pueden establecer este atributo en un descriptor de presentación. El valor del atributo es una **estructura FILETIME,** que se documenta en el SDK Windows.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>                              |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| para aplicaciones para UWP\]<br/>                        |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -41,19 +41,19 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
+[**ATTRIBUTEAttributes::GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
 </dt> <dt>
 
-[**IMFAttributes:: SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
+[**ATTRIBUTEAttributes::SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
 </dt> <dt>
 
 [**IMFPresentationDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfpresentationdescriptor)
 </dt> <dt>
 
-[Atributos de descriptor de presentación](presentation-descriptor-attributes.md)
+[Atributos del descriptor de presentación](presentation-descriptor-attributes.md)
 </dt> </dl>
 
  

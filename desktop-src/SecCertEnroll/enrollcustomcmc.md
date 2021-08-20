@@ -17,23 +17,23 @@ El ejemplo enrollCustomCMC crea una solicitud de certificado de CMC e inscribe u
 
 ## <a name="location"></a>Ubicación
 
-Al instalar el Kit de desarrollo de software (SDK) de Microsoft Windows, el ejemplo se instala, de forma predeterminada, en la carpeta vc enrollCustomCMC *%ProgramFiles%* de los SDK de \\ Microsoft Windows \\ \\ v7.0 \\ Samples Security \\ \\ X509 Certificate Enrollment \\ VC \\ enrollCustomCMC.
+Al instalar el Kit de desarrollo de software (SDK) de Microsoft Windows, el ejemplo se instala, de forma predeterminada, en la carpeta *%ProgramFiles%* \\ microsoft SDKs \\ Windows \\ v7.0 \\ Samples Security \\ \\ X509 Certificate Enrollment \\ VC \\ enrollCustomCMC .
 
 ## <a name="discussion"></a>Debate
 
 El ejemplo enrollCustomCMC:
 
 1.  Procesa los siguientes argumentos de línea de comandos:
-    -   Un par nombre-valor personalizado que se agregará a la solicitud de certificado.
+    -   Par nombre-valor personalizado que se agregará a la solicitud de certificado.
     -   Un nombre de sujeto alternativo.
     -   Identificador de objeto (OID) para la extensión Uso mejorado de clave (EKU).
-2.  Crea un [**objeto de solicitud IX509CertificateRequestPkcs10**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestpkcs10) e inicializa mediante el contexto del equipo.
+2.  Crea un [**objeto de solicitud IX509CertificateRequestPkcs10**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestpkcs10) y lo inicializa mediante el contexto del equipo.
 3.  Usa la solicitud PKCS \# 10 para inicializar un [**objeto IX509CertificateRequestCmc.**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509certificaterequestcmc)
 4.  Crea un [**objeto IX509ExtensionEnhancedKeyUsage**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensionenhancedkeyusage) mediante el OID especificado en la línea de comandos y lo agrega a la colección de extensiones para la solicitud de CMC.
-5.  Crea el objeto [**IAlternativeName**](/windows/desktop/api/CertEnroll/nn-certenroll-ialternativename) con el nombre especificado en la línea de comandos, lo agrega a la colección [**IAlternativeNames,**](/windows/desktop/api/CertEnroll/nn-certenroll-ialternativenames) usa la colección para inicializar una extensión [**IX509ExtensionAlternativeNames**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensionalternativenames) y la agrega a la colección de extensiones de la solicitud CMC.
-6.  Crea un [**objeto IX509NameValuePair**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509namevaluepair) con el nombre y el valor especificados en la línea de comandos y lo agrega a la colección [**IX509NameValuePairs**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509namevaluepairs) en la solicitud de CMC.
+5.  Crea el objeto [**IAlternativeName**](/windows/desktop/api/CertEnroll/nn-certenroll-ialternativename) con el nombre especificado en la línea de comandos, lo agrega a la colección [**IAlternativeNames,**](/windows/desktop/api/CertEnroll/nn-certenroll-ialternativenames) usa la colección para inicializar una extensión [**IX509ExtensionAlternativeNames**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509extensionalternativenames) y la agrega a la colección de extensiones para la solicitud de CMC.
+6.  Crea un objeto [**IX509NameValuePair**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509namevaluepair) utilizando el nombre y el valor especificados en la línea de comandos, y lo agrega a la colección [**IX509NameValuePairs**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509namevaluepairs) en la solicitud de CMC.
 7.  Crea un [**objeto IX509Enrollment,**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509enrollment) lo inicializa mediante el objeto de solicitud CMC y recupera una cadena que contiene una solicitud codificada en base64.
-8.  Crea un [**objeto ICertConfig**](/windows/desktop/api/certcli/nn-certcli-icertconfig) y lo usa para recuperar una cadena que contiene la configuración de ca.
+8.  Crea un [**objeto ICertConfig**](/windows/desktop/api/certcli/nn-certcli-icertconfig) y lo usa para recuperar una cadena que contiene la configuración de la entidad de certificación.
 9.  Crea un objeto CryptoAPI [**ICertRequest2**](/windows/desktop/api/certcli/nn-certcli-icertrequest2) y lo usa además de las cadenas que contienen la configuración de ca y la solicitud de certificado para enviar la solicitud a la CA.
 10. Comprueba el estado de envío y, si se realiza correctamente, instala el certificado en el almacén de certificados.
 

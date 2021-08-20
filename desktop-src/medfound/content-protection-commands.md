@@ -17,7 +17,7 @@ Enumera los comandos del método [**IDirect3DAuthenticatedChannel9::Configure.**
 
 
 
-| Get-Help                                                                                                           | Descripción                                                                                                           |
+| Comando                                                                                                           | Descripción                                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | [**D3DAUTHENTICATEDCONFIGURE \_ INITIALIZE**](d3dauthenticatedconfigure-initialize.md)                             | Inicializa el canal autenticado.                                                                                |
 | [**D3DAUTHENTICATEDCONFIGURE \_ CRYPTOSESSION**](d3dauthenticatedconfigure-cryptosession.md)                       | Asocia una sesión criptográfica a un dispositivo descodificador directX Video Acceleration 2 (DXVA-2) y a un dispositivo Direct3D. |

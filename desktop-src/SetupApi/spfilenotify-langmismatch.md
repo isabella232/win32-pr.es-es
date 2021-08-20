@@ -1,19 +1,19 @@
 ---
-description: La notificación de LANGMISMATCH de SPFILENOTIFY \_ se envía a la rutina de devolución de llamada si el idioma del archivo que se va a copiar no coincide con el idioma de un archivo de destino existente.
+description: La notificación SPFILENOTIFY LANGMISMATCH se envía a la rutina de devolución de llamada si el idioma del archivo que se va a copiar no coincide con el idioma de un \_ archivo de destino existente.
 ms.assetid: dff3969e-5847-4ad5-b7d4-237144bbe8e6
-title: Mensaje de SPFILENOTIFY_LANGMISMATCH (setupapi. h)
+title: SPFILENOTIFY_LANGMISMATCH mensaje (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3d7828c90dd4dabb8e1cb73a8dcca7ae33ebd3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50cae8788e3ffac2de5cc7fc115b9363b8ad4591a0a4dd2447a3f86f735bec1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117964473"
 ---
-# <a name="spfilenotify_langmismatch-message"></a>SPFILENOTIFY \_ LANGMISMATCH
+# <a name="spfilenotify_langmismatch-message"></a>Mensaje SPFILENOTIFY \_ LANGMISMATCH
 
-La notificación de **\_ LANGMISMATCH de SPFILENOTIFY** se envía a la rutina de devolución de llamada si el idioma del archivo que se va a copiar no coincide con el idioma de un archivo de destino existente. Se puede enviar a la rutina de devolución de llamada solo o combinarse mediante el operador OR, con [**SPFILENOTIFY \_ TARGETEXISTS**](spfilenotify-targetexists.md) o [**SPFILENOTIFY \_ TARGETNEWER**](spfilenotify-targetnewer.md).
+La **notificación SPFILENOTIFY \_ LANGMISMATCH** se envía a la rutina de devolución de llamada si el idioma del archivo que se va a copiar no coincide con el idioma de un archivo de destino existente. Se puede enviar a la rutina de devolución de llamada por sí sola o combinada, mediante el operador OR, con [**SPFILENOTIFY \_ TARGETEXISTS**](spfilenotify-targetexists.md) o [**SPFILENOTIFY \_ TARGETNEWER**](spfilenotify-targetnewer.md).
 
 
 ```C++
@@ -29,17 +29,17 @@ SPFILENOTIFY_LANGMISMATCH
 
 <dl> <dt>
 
-*Parámetro1* 
+*Param1* 
 </dt> <dd>
 
-Puntero a una estructura [**FILEPATHS**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a) que contiene información sobre las rutas de acceso de los archivos de origen y de destino.
+Puntero a una [**estructura FILEPATHS**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a) que contiene información sobre las rutas de acceso de los archivos de origen y de destino.
 
 </dd> <dt>
 
 *Param2* 
 </dt> <dd>
 
-Identifica los idiomas no coincidentes. Este miembro tiene el identificador de idioma del archivo de código fuente en la palabra baja y el identificador de idioma del archivo de destino existente en la palabra alta.
+Identifica los idiomas no coincidentes. Este miembro tiene el identificador de idioma del archivo de origen en la palabra baja y el identificador de idioma del archivo de destino existente en la palabra alta.
 
 </dd> </dl>
 
@@ -51,8 +51,8 @@ La rutina de devolución de llamada debe devolver uno de los valores siguientes.
 
 | Código devuelto                                                                          | Descripción                                                             |
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| <dl> <dt>**REALES**</dt> </dl>  | Copie el archivo y sobrescriba el archivo existente.<br/>               |
-| <dl> <dt>**ES**</dt> </dl> | Omitir la operación de copia. No sobrescriba el archivo existente.<br/> |
+| <dl> <dt>**Verdad**</dt> </dl>  | Copie el archivo y sobrescriba el archivo existente.<br/>               |
+| <dl> <dt>**Falso**</dt> </dl> | Omita la operación de copia. No sobrescriba el archivo existente.<br/> |
 
 
 
@@ -62,11 +62,11 @@ La rutina de devolución de llamada debe devolver uno de los valores siguientes.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 

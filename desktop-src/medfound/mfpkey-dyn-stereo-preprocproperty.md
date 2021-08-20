@@ -1,7 +1,7 @@
 ---
 description: Especifica si el codificador realiza el procesamiento de imágenes estéreo.
 ms.assetid: d1c787ee-787b-4efa-8d96-5cb4ffff0ed2
-title: MFPKEY_DYN_STEREO_PREPROC propiedad (Wmcodecdsp.h)
+title: MFPKEY_DYN_STEREO_PREPROC (Propiedad, Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 98cf644dbef028bb8bbc0208b5cabb48d5138372f259e451de4902ec0a2057ed
@@ -17,7 +17,7 @@ Especifica si el codificador realiza el procesamiento de imágenes estéreo. Lec
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -38,7 +38,7 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
