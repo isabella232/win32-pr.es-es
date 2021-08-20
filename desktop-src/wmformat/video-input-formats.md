@@ -3,30 +3,30 @@ title: Formatos de entrada de vídeo
 description: Formatos de entrada de vídeo
 ms.assetid: 0f1ec15d-328e-4c07-bf58-fd4ecb483549
 keywords:
-- SDK de Windows Media Format, formatos de entrada de vídeo
+- Windows SDK de formato multimedia, formatos de entrada de vídeo
 - Formato de sistemas avanzados (ASF), formatos de entrada de vídeo
 - ASF (formato de sistemas avanzados), formatos de entrada de vídeo
 - formatos de entrada de vídeo
-- SDK de Windows Media Format, formatos de vídeo
+- Windows SDK de formato multimedia, formatos de vídeo
 - Formato de sistemas avanzados (ASF), formatos de vídeo
 - ASF (formato de sistemas avanzados), formatos de vídeo
 - formatos de vídeo
-- Códec de Windows Media Video 9, formatos de entrada de vídeo
+- Windows Códec Media Video 9, formatos de entrada de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c5113ee3cbd9c9235104f858968db20ebc29e3a
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 9dd9bb451e0998ceec562cedb58b21ef3895e1ed8a83e705a92af42eda326f60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "105695574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118028529"
 ---
 # <a name="video-input-formats"></a>Formatos de entrada de vídeo
 
-El escritor acepta los siguientes formatos de vídeo como entrada para comprimirlos con el códec Windows Media Video 9:
+El escritor acepta los siguientes formatos de vídeo como entrada para comprimirse mediante el códec Windows Media Video 9:
 
 -   WMMEDIASUBTYPE \_ IYUV
--   WMMEDIASUBTYPE \_ i420
+-   WMMEDIASUBTYPE \_ I420
 -   WMMEDIASUBTYPE \_ YV12
 -   WMMEDIASUBTYPE \_ YUY2
 -   WMMEDIASUBTYPE \_ UYVY
@@ -38,7 +38,7 @@ El escritor acepta los siguientes formatos de vídeo como entrada para comprimir
 -   WMMEDIASUBTYPE \_ RGB555
 -   WMMEDIASUBTYPE \_ RGB8
 
-Siempre debe usar [**IWMWriter:: GetInputFormatCount**](/previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriter-getinputformatcount) y [**IWMWriter:: GetInputFormat**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-getinputformat) para enumerar los formatos de entrada disponibles y obtener el objeto de propiedades de medios de entrada para el formato deseado. Los objetos de las propiedades de los medios de entrada de vídeo deben cambiarse para reflejar el tamaño y la velocidad de fotogramas de los medios de entrada.
+Siempre debe usar [**IWMWriter::GetInputFormatCount**](/previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriter-getinputformatcount) e [**IWMWriter::GetInputFormat**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-getinputformat) para enumerar los formatos de entrada disponibles y obtener el objeto de propiedades del medio de entrada para el formato deseado. Los objetos de propiedades de los medios de entrada de vídeo deben cambiarse para reflejar el tamaño del fotograma y la velocidad de fotogramas de los medios de entrada.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -50,9 +50,9 @@ Siempre debe usar [**IWMWriter:: GetInputFormatCount**](/previous-versions/windo
 [**Tipos de medios**](media-types.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: constructor EsentTransReadOnlyException'
+description: 'Más información sobre: Constructor EsentTransReadOnlyException'
 title: Constructor de EsentTransReadOnlyException
 TOCTitle: 'EsentTransReadOnlyException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentTransReadOnlyException.#ctor
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2435246b98d2f357f79ae23b5a277dcc3698d206
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ace033258b6d453fbe3df4d1294035d4445bad535baf038e70d92b3b5b44acd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118078106"
 ---
 # <a name="esenttransreadonlyexception-constructor"></a>Constructor de EsentTransReadOnlyException
 
 Inicializa una nueva instancia de la clase EsentTransReadOnlyException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentTransReadOnlyException()
 public EsentTransReadOnlyException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentTransReadOnlyException()
 
 [Miembros de EsentTransReadOnlyException](./esenttransreadonlyexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: 'Método reset de la Msvm_DVDDrive : solicita un restablecimiento.'
+description: 'Método Reset de la Msvm_DVDDrive clase : solicita un restablecimiento.'
 ms.assetid: 5d178eee-36fa-4315-915a-778f559f08f0
-title: Método Reset de la Msvm_DVDDrive clase
+title: Método reset de la Msvm_DVDDrive clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 81123a7a7bb4a7b76129af57b1ea7216b543c5ee
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 982a06f0e8a992f36f2e0e15557e134e06d101eb426dd21cf184a5ec6da2af63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117994647"
 ---
 # <a name="reset-method-of-the-msvm_dvddrive-class"></a>Método Reset de la clase DVDDrive de Msvm \_
 
@@ -53,7 +53,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -63,7 +63,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

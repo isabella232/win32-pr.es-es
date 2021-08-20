@@ -1,9 +1,9 @@
 ---
-title: handle_t atributo)
-description: La \_ palabra clave handler t declara un objeto para que sea del identificador de tipo de identificador primitivo \_ t. Un identificador de enlace primitivo es un objeto de datos que la aplicación puede usar para representar el enlace.
+title: handle_t atributo
+description: La palabra clave handle t declara que un objeto es del identificador de \_ tipo de identificador primitivo \_ t. Un identificador de enlace primitivo es un objeto de datos que la aplicación puede usar para representar el enlace.
 ms.assetid: 94962ed6-5c17-43e7-853f-1e9c4b3118a7
 keywords:
-- handle_t el atributo MIDL
+- handle_t atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 435dcfcf620bd33043d8c8c7d948bccd74eb4e77
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 251a2574908891d29baf9d4748943d0550f3f015eddccbdd123e31598b39b08c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104358869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117991333"
 ---
-# <a name="handle_t-attribute"></a>Handle \_ t (atributo)
+# <a name="handle_t-attribute"></a>atributo \_ handle t
 
-La palabra clave **handler \_ t** declara un objeto para que sea del identificador de tipo de identificador primitivo **\_ t**. Un identificador de enlace primitivo es un objeto de datos que la aplicación puede usar para representar el enlace.
+La **palabra clave handle \_ t** declara que un objeto es del identificador de tipo de **identificador primitivo \_ t**. Un identificador de enlace primitivo es un objeto de datos que la aplicación puede usar para representar el enlace.
 
 ``` syntax
 typedef RPC_BINDING_HANDLE handle_t;
@@ -31,39 +31,39 @@ typedef RPC_BINDING_HANDLE handle_t;
 
 Este atributo no tiene parámetros.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El **tipo \_ t de identificador** es uno de los tipos predefinidos del lenguaje de definición de interfaz (IDL). Puede aparecer como un especificador de tipo en declaraciones [**typedef**](typedef.md) , declaraciones generales y declaradores de función (como un especificador de tipo de valor devuelto de función y un especificador de tipo de parámetro). Para el contexto en el que aparecen los especificadores de tipo, vea [archivo de definición de interfaz (IDL)](interface-definition-idl-file.md).
+El **tipo \_ t** de identificador es uno de los tipos predefinidos del lenguaje de definición de interfaz (IDL). Puede aparecer como un especificador de tipo en declaraciones [**typedef,**](typedef.md) declaraciones generales y declaradores de función (como un especificador function-return-type y un especificador de tipo de parámetro). Para obtener el contexto en el que aparecen los especificadores de tipo, vea [Archivo de definición de interfaz (IDL).](interface-definition-idl-file.md)
 
-En Microsoft RPC, los parámetros de **identificador \_** de tipo t solo se pueden producir como **\[** parámetros [**in**](in.md) **\]** . Los identificadores primitivos no pueden tener el **\[** atributo [**Unique**](unique.md) **\]** o **\[** [**ptr**](ptr.md) **\]** .
+En RPC de Microsoft, los parámetros de **tipo \_ handle t** solo se pueden producir como en **\[** [**los**](in.md) **\]** parámetros. Los identificadores primitivos no pueden **\[** [**tener el**](unique.md) **\]** atributo único o **\[** [**ptr.**](ptr.md) **\]**
 
-Los parámetros de **identificador \_** de tipo t (parámetros de identificador primitivo) no se transmiten en la red.
+Los parámetros del **identificador de \_ tipo t** (parámetros de identificador primitivos) no se transmiten en la red.
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Tipos base de MIDL](midl-base-types.md)
+[Tipos base midl](midl-base-types.md)
 </dt> <dt>
 
-[Enlace y controladores](/windows/desktop/Rpc/binding-and-handles)
+[Enlace y identificadores](/windows/desktop/Rpc/binding-and-handles)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**de**](in.md)
+[**En**](in.md)
 </dt> <dt>
 
-[**typedef**](typedef.md)
+[**Typedef**](typedef.md)
 </dt> <dt>
 
-[**ptr**](ptr.md)
+[**Ptr**](ptr.md)
 </dt> <dt>
 
-[**espeficarse**](unique.md)
+[**Único**](unique.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

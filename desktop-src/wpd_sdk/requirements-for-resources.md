@@ -1,31 +1,31 @@
 ---
-description: Requisitos para recursos
+description: Requisitos de recursos
 ms.assetid: 6b654cd6-7e9f-4e12-a687-4110e600ba7b
-title: Requisitos para recursos
+title: Requisitos de recursos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5702555704137f4280e527f0fc26f176435238ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca302fcd11abf4bbadc1adfafb1a1be67141055ea7f9a5366991f231cca44fab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118027152"
 ---
-# <a name="requirements-for-resources"></a>Requisitos para recursos
+# <a name="requirements-for-resources"></a>Requisitos de recursos
 
-Dispositivos portátiles de Windows define las siguientes categorías de recursos como valores de **PROPERTYKEY** . Estos valores se usan para describir los recursos individuales de un objeto. El miembro *PID* de la clave de propiedad puede ser diferente para describir los distintos recursos del mismo tipo para todos los tipos, excepto el **\_ \_ valor predeterminado del recurso WPD**, que solo puede describir un recurso. En la página Descripción vinculada de cada tipo de recurso se enumeran los atributos admitidos por ese recurso.
+Windows Dispositivos portátiles define las siguientes categorías de recursos como **valores PROPERTYKEY.** Estos valores se usan para describir recursos individuales en un objeto . El *miembro pid* de la clave de propiedad puede ser diferente para describir distintos recursos del mismo tipo para todos los tipos excepto **WPD RESOURCE \_ \_ DEFAULT**, que solo puede describir un recurso. En la página de descripción vinculada de cada tipo de recurso se enumeran los atributos admitidos por ese recurso.
 
 
 
-| PROPERTYKEY de recursos                                                | Descripción                                                                                                    |
+| Resource PROPERTYKEY                                                | Descripción                                                                                                    |
 |---------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [**\_valor predeterminado del recurso WPD \_**](wpd-resource-default.md)              | Especifica el archivo completo detrás del objeto. Este es el único recurso necesario para cualquier objeto con un recurso. |
-| [**\_carátula de \_ álbum de recursos de WPD \_**](wpd-resource-album-art.md)         | Especifica una imagen que representa la ilustración del álbum para el objeto.                                           |
-| [**\_clip de \_ audio de recursos de WPD \_**](wpd-resource-audio-clip.md)       | Especifica un clip de audio para el objeto.                                                                        |
-| [**\_foto de \_ contacto de recursos de WPD \_**](wpd-resource-contact-photo.md) | Especifica una imagen que representa una fotografía de la persona a la que se hace referencia en el objeto de contacto.                |
-| [**\_recursos genéricos del recurso WPD \_**](wpd-resource-generic.md)              | Un recurso genérico de tipo de datos undefined. Esto se debe tratar como una matriz de bytes.                             |
-| [**\_icono de recurso de WPD \_**](wpd-resource-icon.md)                    | Un icono.                                                                                                       |
-| [**\_miniatura de recursos de WPD \_**](wpd-resource-thumbnail.md)          | Imagen en miniatura.                                                                                             |
+| [**WPD \_ RESOURCE \_ DEFAULT**](wpd-resource-default.md)              | Especifica el archivo completo detrás del objeto . Este es el único recurso necesario para cualquier objeto con un recurso. |
+| [**WPD \_ RESOURCE \_ ALBUM \_ ART**](wpd-resource-album-art.md)         | Especifica una imagen que representa las ilustraciones del álbum para el objeto .                                           |
+| [**CLIP DE \_ AUDIO DE RECURSOS \_ WPD \_**](wpd-resource-audio-clip.md)       | Especifica un clip de audio para el objeto .                                                                        |
+| [**WPD \_ RESOURCE \_ CONTACT \_ PHOTO**](wpd-resource-contact-photo.md) | Especifica una imagen que representa una foto del individuo al que se hace referencia en el objeto de contacto.                |
+| [**WPD \_ RESOURCE \_ GENERIC**](wpd-resource-generic.md)              | Recurso genérico de tipo de datos sin definir. Esto debe tratarse como una matriz de bytes.                             |
+| [**ICONO DE RECURSO DE WPD \_ \_**](wpd-resource-icon.md)                    | Un icono.                                                                                                       |
+| [**MINIATURA DE RECURSOS DE WPD \_ \_**](wpd-resource-thumbnail.md)          | Una imagen en miniatura.                                                                                             |
 
 
 

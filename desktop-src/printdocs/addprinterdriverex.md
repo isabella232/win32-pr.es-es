@@ -1,5 +1,5 @@
 ---
-description: La función AddPrinterDriverEx instala un controlador de impresora local o remoto y vincula los archivos de configuración, datos y controlador.
+description: La función AddPrinterDriverEx instala un controlador de impresora local o remoto y vincula los archivos de configuración, datos y controladores.
 ms.assetid: 472adb7d-39cc-4c76-b96c-610ff9d276ad
 title: Función AddPrinterDriverEx (Winspool.h)
 ms.topic: reference
@@ -24,10 +24,10 @@ ms.locfileid: "117868814"
 ---
 # <a name="addprinterdriverex-function"></a>Función AddPrinterDriverEx
 
-La **función AddPrinterDriverEx** instala un controlador de impresora local o remoto y vincula los archivos de configuración, datos y controlador. Además de tener las funcionalidades de [**AddPrinterDriver,**](addprinterdriver.md)también tiene opciones que permiten una actualización estricta, una degradación estricta, la copia solo de archivos más recientes y la copia de todos los archivos (independientemente de las marcas de tiempo de los archivos).
+La **función AddPrinterDriverEx** instala un controlador de impresora local o remoto y vincula los archivos de configuración, datos y controladores. Además de tener las funcionalidades de [**AddPrinterDriver,**](addprinterdriver.md)también tiene opciones que permiten una actualización estricta, una degradación estricta, la copia solo de archivos más recientes y la copia de todos los archivos (independientemente de las marcas de tiempo de archivo).
 
 > [!Note]  
-> Ya no se recomienda instalar un controlador de impresora sin un paquete de controladores. Use [**InstallPrinterDriverFromPackage en su**](installprinterdriverfrompackage.md) lugar.
+> Ya no se recomienda instalar un controlador de impresora sin un paquete de controladores. En [**su lugar, use InstallPrinterDriverFromPackage.**](installprinterdriverfrompackage.md)
 
  
 
@@ -70,13 +70,13 @@ Puntero a una estructura que contiene información del controlador de impresora.
 
 
 
-| Valor de Level                                                                                       | Estructura DE \_ INFORMACIÓN DEL \_ \* CONTROLADOR                          |
+| Valor de Level                                                                                       | DRIVER \_ INFO \_ \* (estructura)                          |
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| <span id="2"></span><dl> <dt>**2**</dt> </dl> | [**INFORMACIÓN \_ DEL \_ CONTROLADOR 2**](driver-info-2.md)<br/> |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | [**INFORMACIÓN \_ DEL \_ CONTROLADOR 3**](driver-info-3.md)<br/> |
-| <span id="4"></span><dl> <dt>**4**</dt> </dl> | [**INFORMACIÓN \_ DEL \_ CONTROLADOR 4**](driver-info-4.md)<br/> |
-| <span id="6"></span><dl> <dt>**6**</dt> </dl> | [**INFORMACIÓN \_ DEL \_ CONTROLADOR 6**](driver-info-6.md)<br/> |
-| <span id="8"></span><dl> <dt>**8**</dt> </dl> | [**INFORMACIÓN \_ DEL \_ CONTROLADOR 8**](driver-info-8.md)<br/> |
+| <span id="2"></span><dl> <dt>**2**</dt> </dl> | [**INFORMACIÓN \_ DEL CONTROLADOR \_ 2**](driver-info-2.md)<br/> |
+| <span id="3"></span><dl> <dt>**3**</dt> </dl> | [**INFORMACIÓN \_ DEL CONTROLADOR \_ 3**](driver-info-3.md)<br/> |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | [**INFORMACIÓN \_ DEL CONTROLADOR \_ 4**](driver-info-4.md)<br/> |
+| <span id="6"></span><dl> <dt>**6**</dt> </dl> | [**INFORMACIÓN \_ DEL CONTROLADOR \_ 6**](driver-info-6.md)<br/> |
+| <span id="8"></span><dl> <dt>**8**</dt> </dl> | [**INFORMACIÓN \_ DEL CONTROLADOR \_ 8**](driver-info-8.md)<br/> |
 
 
 
@@ -96,7 +96,7 @@ Opciones para copiar los archivos del controlador. Este parámetro puede ser uno
 | Valor                                                                                                                                                                                         | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="APD_COPY_ALL_FILES"></span><span id="apd_copy_all_files"></span><dl> <dt>**COPIA DE \_ TODOS \_ LOS ARCHIVOS DE APD \_**</dt> </dl>                | Agregue el controlador de impresora y copie todos los archivos del directorio printer-driver. Las marcas de tiempo de archivo se omiten con esta opción.<br/>                                                                                                                                                                                                                                                                                                                                                                                  |
-| <span id="APD_COPY_FROM_DIRECTORY"></span><span id="apd_copy_from_directory"></span><dl> <dt>**COPIA DE APD \_ \_ DESDE EL \_ DIRECTORIO**</dt> </dl> | Agregue el controlador de impresora con los nombres de archivo completos especificados en la [**estructura \_ DRIVER INFO \_ 6.**](driver-info-6.md) Esta marca es ORed junto con una de las otras marcas de copia. Si se establece esta marca, Se producirá un error en **AddPrinterDriverEx** si los archivos no existen donde se especifica que existan mediante la estructura **DRIVER INFO \_ \_ 6.** No es necesario copiar los archivos en el directorio printer-driver del sistema. Consulte los comentarios.<br/> **Windows 2000:** Esta marca no se admite.<br/> |
+| <span id="APD_COPY_FROM_DIRECTORY"></span><span id="apd_copy_from_directory"></span><dl> <dt>**COPIA DE APD \_ \_ DESDE EL \_ DIRECTORIO**</dt> </dl> | Agregue el controlador de impresora con los nombres de archivo completos especificados en la [**estructura \_ DRIVER INFO \_ 6.**](driver-info-6.md) Esta marca es ORed junto con una de las otras marcas de copia. Si se establece esta marca, se producirá un error en **AddPrinterDriverEx** si los archivos no existen donde se especifica que existan mediante la estructura **DRIVER INFO \_ \_ 6.** No es necesario copiar los archivos en el directorio del controlador de impresora del sistema. Consulte los comentarios.<br/> **Windows 2000:** Esta marca no se admite.<br/> |
 | <span id="APD_COPY_NEW_FILES"></span><span id="apd_copy_new_files"></span><dl> <dt>**COPIA DE \_ ARCHIVOS \_ NUEVOS DE \_ APD**</dt> </dl>                | Agregue el controlador de impresora y copie los archivos del directorio printer-driver que son más recientes que los archivos correspondientes que están actualmente en uso. Esta marca emula el comportamiento de [**AddPrinterDriver.**](addprinterdriver.md)<br/>                                                                                                                                                                                                                                                                                  |
 | <span id="APD_STRICT_DOWNGRADE"></span><span id="apd_strict_downgrade"></span><dl> <dt>**DEGRADACIÓN \_ ESTRICTA DE APD \_**</dt> </dl>           | Agregue el controlador de impresora solo si todos los archivos del directorio printer-driver son anteriores a los archivos correspondientes actualmente en uso.<br/>                                                                                                                                                                                                                                                                                                                                                                              |
 | <span id="APD_STRICT_UPGRADE"></span><span id="apd_strict_upgrade"></span><dl> <dt>**ACTUALIZACIÓN ESTRICTA DE APD \_ \_**</dt> </dl>                 | Agregue el controlador de impresora solo si todos los archivos del directorio printer-driver son más recientes que los archivos correspondientes actualmente en uso.<br/>                                                                                                                                                                                                                                                                                                                                                                              |
@@ -113,14 +113,14 @@ Si la función se realiza correctamente, el valor devuelto es un valor distinto 
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-Si se sabe que el controlador de impresora tiene problemas para trabajar con el sistema operativo, **AddPrinterDriverEx** producirá un error con uno de los siguientes códigos de error:
+Si se sabe que el controlador de impresora tiene problemas para trabajar con el sistema operativo, **AddPrinterDriverEx** producirá uno de los siguientes códigos de error:
 
 
 
 | Código de error                      | Significado                                                                                                                                                   |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ERROR CONTROLADOR \_ DE \_ IMPRESORA \_ BLOQUEADO | El controlador no funciona en el sistema operativo.                                                                                                         |
-| SE HA \_ PRODUCIDO UN ERROR EN EL CONTROLADOR DE \_ \_ IMPRESORA  | El controlador no es confiable en el sistema operativo. Sin embargo, si se especifica \_ APD INSTALL WARNED DRIVER, el controlador se instala \_ y no se muestra ninguna \_ advertencia. |
+| ERROR \_ EL CONTROLADOR DE IMPRESORA HA SIDO \_ \_ AMONESTÓ  | El controlador no es confiable en el sistema operativo. Sin embargo, si se especifica APD \_ INSTALL \_ WARNED DRIVER, el controlador se instala y no se muestra \_ ninguna advertencia. |
 
 
 
@@ -135,15 +135,15 @@ Para obtener más información, vea la sección Notas.
 
  
 
-El autor de la llamada debe [tener seLoadDriverPrivilege](/windows/desktop/SecAuthZ/authorization-constants).
+El autor de la llamada debe [tener SeLoadDriverPrivilege.](/windows/desktop/SecAuthZ/authorization-constants)
 
-Antes de llamar a la función **AddPrinterDriverEx,** todos los archivos requeridos por el controlador deben copiarse en el directorio printer-driver del sistema. Para recuperar el nombre de este directorio, llame a la [**función GetPrinterDriverDirectory.**](getprinterdriverdirectory.md)
+Antes de llamar **a la función AddPrinterDriverEx,** todos los archivos requeridos por el controlador deben copiarse en el directorio printer-driver del sistema. Para recuperar el nombre de este directorio, llame a la [**función GetPrinterDriverDirectory.**](getprinterdriverdirectory.md)
 
-Para determinar qué controladores de impresora están instalados actualmente, llame a la [**función EnumPrinterDrivers.**](enumprinterdrivers.md)
+Para determinar qué controladores de impresora están instalados actualmente, llame a [**la función EnumPrinterDrivers.**](enumprinterdrivers.md)
 
 Si el controlador de impresora se ha agregado correctamente, la función llama a la función DrvDriverEvent (DRIVER \_ EVENT \_ INITIALIZE, Level, DRIVER \_ INFO , \_ \* lparam) para permitir que el controlador realice las inicializaciones necesarias durante la instalación de un controlador de impresora. Para obtener más información **sobre DrvDriverEvent,** vea Microsoft Windows Driver Development Kit (DDK)
 
-El controlador no debe usar una llamada de interfaz de usuario durante la llamada a **DrvDriverEvent**. Para realizar trabajos relacionados con la interfaz de usuario, el instalador debe usar la entrada VendorSetup en el archivo .inf de la impresora o, en el caso de los dispositivos Plug and Play, el instalador puede usar un co-installer específico del dispositivo. Para obtener más información sobre VendorSetup, consulte el DDK.
+El controlador no debe usar una llamada de interfaz de usuario durante la llamada a **DrvDriverEvent**. Para realizar trabajos relacionados con la interfaz de usuario, el instalador debe usar la entrada VendorSetup en el archivo .inf de la impresora o, en el caso de los dispositivos Plug and Play, el instalador puede usar un coins instalador específico del dispositivo. Para obtener más información sobre VendorSetup, consulte el DDK.
 
 Los archivos a los que se hace referencia en la [**estructura DRIVER \_ INFO \_ 6**](driver-info-6.md) deben ser locales en la máquina desde la que se realiza la llamada. Un nombre de archivo puede ser un nombre UNC siempre que el nombre UNC sea el equipo local.
 
@@ -162,7 +162,7 @@ Los archivos a los que se hace referencia en la [**estructura DRIVER \_ INFO \_ 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -175,16 +175,16 @@ Los archivos a los que se hace referencia en la [**estructura DRIVER \_ INFO \_ 
 [**AddPrinterDriver**](addprinterdriver.md)
 </dt> <dt>
 
-[**INFORMACIÓN \_ DEL \_ CONTROLADOR 2**](driver-info-2.md)
+[**INFORMACIÓN \_ DEL CONTROLADOR \_ 2**](driver-info-2.md)
 </dt> <dt>
 
-[**INFORMACIÓN \_ DEL CONTROLADOR \_ 3**](driver-info-3.md)
+[**INFORMACIÓN \_ DEL \_ CONTROLADOR 3**](driver-info-3.md)
 </dt> <dt>
 
-[**INFORMACIÓN \_ DEL CONTROLADOR \_ 4**](driver-info-4.md)
+[**INFORMACIÓN \_ DEL \_ CONTROLADOR 4**](driver-info-4.md)
 </dt> <dt>
 
-[**INFORMACIÓN \_ DEL CONTROLADOR \_ 6**](driver-info-6.md)
+[**INFORMACIÓN \_ DEL \_ CONTROLADOR 6**](driver-info-6.md)
 </dt> <dt>
 
 [**DeletePrinterDriverEx**](deleteprinterdriverex.md)

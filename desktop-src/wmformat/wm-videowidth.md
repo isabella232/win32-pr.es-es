@@ -1,9 +1,9 @@
 ---
-title: WM/ancho de
-description: El atributo WM/VideoWidth contiene el ancho, en píxeles, de un fotograma de vídeo en un flujo.
+title: WM/VideoWidth
+description: El atributo WM/VideoWidth contiene el ancho, en píxeles, de un fotograma de vídeo en una secuencia.
 ms.assetid: db7722a7-8ec1-4cc2-bc5b-2eac4212ab3b
 keywords:
-- Formato de Windows Media WM/VideoWidth
+- Formato multimedia de Windows WM/VideoWidth
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6510bcb532e17dba6a394e74a6dc89ada57d1901
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 2c7eb19e4d25a91a1a66cf61dc07f5eb8f32922efceb0aab75d74b2065c4cc8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104419613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118027547"
 ---
-# <a name="wmvideowidth"></a>WM/ancho de
+# <a name="wmvideowidth"></a>WM/VideoWidth
 
-El atributo **WM/VideoWidth** contiene el ancho, en píxeles, de un fotograma de vídeo en un flujo.
+El **atributo WM/VideoWidth** contiene el ancho, en píxeles, de un fotograma de vídeo en una secuencia.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMVideoWidth
 
 ## <a name="data-type"></a>Tipo de datos
 
-**tipo de WMT \_ \_ DWORD**
+**DWORD \_ DE TIPO \_ WMT**
 
 ## <a name="see-also"></a>Vea también
 
@@ -38,9 +38,9 @@ g \_ wszWMVideoWidth
 [**Lista de atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

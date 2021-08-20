@@ -1,30 +1,30 @@
 ---
-description: Las siguientes funciones se usan con listas de archivos de código fuente MRU.
+description: Las siguientes funciones se usan con listas de archivos de código fuente de MRU.
 ms.assetid: bd9f3b3a-b5df-4398-a52e-519f925d6dae
-title: Funciones de origen MRU
+title: Funciones de origen de MRU
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff0e20552c79c17217d9a66be1aa07d05a36a1b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b2301d2ace8c637208d48098f9cafa860cd559d31f72ff84ca30a836195a7b9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117965371"
 ---
-# <a name="mru-source-functions"></a>Funciones de origen MRU
+# <a name="mru-source-functions"></a>Funciones de origen de MRU
 
-Las siguientes funciones se usan con listas de archivos de código fuente MRU.
+Las siguientes funciones se usan con listas de archivos de código fuente de MRU.
 
 
 
 | Función                                                                 | Descripción                                                                                       |
 |--------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | [**SetupAddToSourceList**](/windows/desktop/api/Setupapi/nf-setupapi-setupaddtosourcelista)                     | Agrega una entrada a una lista de origen.                                                                   |
-| [**SetupCancelTemporarySourceList**](/windows/desktop/api/Setupapi/nf-setupapi-setupcanceltemporarysourcelist) | Cancela la lista temporal o el comportamiento de no exploración y restablece el comportamiento de la lista estándar.        |
+| [**SetupCancelTemporarySourceList**](/windows/desktop/api/Setupapi/nf-setupapi-setupcanceltemporarysourcelist) | Cancela cualquier comportamiento de lista temporal o sin examinar y restablece el comportamiento de la lista estándar.        |
 | [**SetupFreeSourceList**](/windows/desktop/api/Setupapi/nf-setupapi-setupfreesourcelista)                       | Libera los recursos asignados a una lista de origen.                                                       |
 | [**SetupQuerySourceList**](/windows/desktop/api/Setupapi/nf-setupapi-setupquerysourcelista)                     | Consulta la lista actual de orígenes de instalación.                                                 |
-| [**SetupRemoveFromSourceList**](/windows/desktop/api/Setupapi/nf-setupapi-setupremovefromsourcelista)           | Quita una entrada de una lista de origen de instalación.                                                |
-| [**SetupSetSourceList**](/windows/desktop/api/Setupapi/nf-setupapi-setupsetsourcelista)                         | Establece la lista de origen de la instalación en la lista MRU del sistema, la lista MRU de usuario o una lista temporal. |
+| [**SetupRemoveFromSourceList**](/windows/desktop/api/Setupapi/nf-setupapi-setupremovefromsourcelista)           | Quita una entrada de una lista de orígenes de instalación.                                                |
+| [**SetupSetSourceList**](/windows/desktop/api/Setupapi/nf-setupapi-setupsetsourcelista)                         | Establece la lista de orígenes de instalación en la lista de MRU del sistema, la lista de MRU de usuario o una lista temporal. |
 
 
 

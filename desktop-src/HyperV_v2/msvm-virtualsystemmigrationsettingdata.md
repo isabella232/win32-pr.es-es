@@ -1,7 +1,7 @@
 ---
-description: Representa la configuración de migración para migrar un sistema virtual y el almacenamiento conectado a un sistema virtual.
+description: Representa la configuración de migración para migrar un sistema virtual y el almacenamiento asociado a un sistema virtual.
 ms.assetid: 2d632fe2-31ee-4e4d-b2a6-c1d1f3b4d624
-title: Msvm_VirtualSystemMigrationSettingData (clase)
+title: Msvm_VirtualSystemMigrationSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -33,18 +33,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 254884153b3f733691b1103a6eb57f204b5d1764
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ad7fd5cea4518d08810acce702ea1e29b7b70d13c5440f17610566a6348d3e72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117994158"
 ---
-# <a name="msvm_virtualsystemmigrationsettingdata-class"></a>MSVM \_ VirtualSystemMigrationSettingData (clase)
+# <a name="msvm_virtualsystemmigrationsettingdata-class"></a>Clase Msvm \_ VirtualSystemMigrationSettingData
 
-Representa la configuración de migración para migrar un sistema virtual y el almacenamiento conectado a un sistema virtual.
+Representa la configuración de migración para migrar un sistema virtual y el almacenamiento asociado a un sistema virtual.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -77,13 +77,13 @@ class Msvm_VirtualSystemMigrationSettingData : CIM_VirtualSystemMigrationSetting
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ VirtualSystemMigrationSettingData** tiene estos tipos de miembros:
+La **clase Msvm \_ VirtualSystemMigrationSettingData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ VirtualSystemMigrationSettingData** tiene estas propiedades.
+La **clase Msvm \_ VirtualSystemMigrationSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -93,13 +93,13 @@ La clase **MSVM \_ VirtualSystemMigrationSettingData** tiene estas propiedades.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Permita que la operación de migración de almacenamiento sobrescriba los archivos. vhdx existentes.
+Permita que la operación de migración de almacenamiento sobrescriba los archivos .vhdx existentes.
 
 > [!Note]  
-> Esta propiedad se agregó en la versión 1703 de Windows 10.
+> Esta propiedad se agregó en Windows 10, versión 1703.
 
  
 
@@ -111,13 +111,13 @@ Permita que la operación de migración de almacenamiento sobrescriba los archiv
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-No quite los discos duros virtuales durante la migración, es decir, los VHD del origen en los VHD de successand en el destino en caso de error.
+No quite ningún VHD durante la migración, es decir, vhds en el origen en correctoy VHD en el destino en caso de error.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1703 y Windows Server 2016.
+> Se ha agregado Windows 10, versión 1703 y Windows Server 2016.
 
  
 
@@ -126,17 +126,17 @@ No quite los discos duros virtuales durante la migración, es decir, los VHD del
 **Ancho de banda**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el ancho de banda asignado a o solicitado para una operación de migración del sistema virtual. Las unidades de ancho de banda se especifican mediante la propiedad **BandwidthUnit** . En una migración, el valor 0 indica el ancho de banda predeterminado. De lo contrario, un valor de 0 indica que no se admiten anchos de banda.
+Especifica el ancho de banda asignado o solicitado para una operación de migración del sistema virtual. La propiedad **BandwidthUnit** especifica las unidades de ancho de banda. Dentro de una migración, un valor de 0 indica el ancho de banda predeterminado. De lo contrario, un valor de 0 indica que no se admiten anchos de banda.
 
-El **ancho de banda** y la **prioridad** se pueden usar conjuntamente. Los procesos de migración que tienen el valor de prioridad más alto comparten el ancho de banda disponible según el ancho de banda solicitado. Si este conjunto de procesos no consume todo el ancho de banda, los procesos de migración con la siguiente prioridad inferior menor comparten el ancho de banda restante. Si todavía queda más ancho de banda, se tienen en cuenta los procesos de migración con la siguiente prioridad más baja y así sucesivamente.
+**El ancho** **de banda y la** prioridad se pueden usar juntos. Los procesos de migración que tienen el valor de prioridad más alta comparten el ancho de banda disponible en función del ancho de banda solicitado. Si este conjunto de procesos consume no todo el ancho de banda, los procesos de migración con la siguiente prioridad igual inferior comparten el ancho de banda restante. Si aún queda más ancho de banda, se tienen en cuenta los procesos de migración con la siguiente prioridad igual menor, etc.
 
-Esta propiedad se hereda de **\_ VirtualSystemMigrationSettingData CIM**.
+Esta propiedad se hereda de **CIM \_ VirtualSystemMigrationSettingData**.
 
 </dd> <dt>
 
@@ -149,11 +149,11 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica las unidades utilizadas por la propiedad de **ancho de banda** . El valor de esta propiedad debe ser un valor válido del calificador de unidades de programación, tal y como se define en el Apéndice C. 1 de DSP0004 V 2.4 o posterior.
+Especifica las unidades usadas por la **propiedad Bandwidth.** El valor de esta propiedad debe ser un valor legal del calificador Unidades de programación tal como se define en el Apéndice C.1 de DSP0004 V2.4 o posterior.
 
-Si el valor de esta propiedad es "Percent", el valor de la propiedad de **ancho de banda** debe estar entre 0 y 100, con valores más altos que indican un ancho de banda mayor. Un valor de 100 indica el ancho de banda total disponible para realizar operaciones de migración del sistema virtual. Los valores entre 1 y 100 deben correlacionarse linealmente con el intervalo de ancho de banda disponible. Por ejemplo, un valor de 50 debe solicitar la mitad del ancho de banda disponible.
+Si el valor de esta propiedad es "percent", el valor de la propiedad **Bandwidth** debe estar entre 0 y 100, con valores más altos que indican un ancho de banda mayor. Un valor de 100 indica el ancho de banda total disponible para realizar operaciones de migración del sistema virtual. Los valores entre 1 y 100 deben correlacionarse linealmente con el intervalo de ancho de banda disponible. Por ejemplo, un valor de 50 debe solicitar la mitad del ancho de banda disponible.
 
-Esta propiedad se hereda de **\_ VirtualSystemMigrationSettingData CIM**.
+Esta propiedad se hereda de **CIM \_ VirtualSystemMigrationSettingData**.
 
 </dd> <dt>
 
@@ -163,13 +163,13 @@ Esta propiedad se hereda de **\_ VirtualSystemMigrationSettingData CIM**.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Cancela la migración si se supera el tiempo de umbral de apagón.
+Cancela la migración si se supera el tiempo de umbral de bloqueo.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1709.
+> Se ha agregado Windows 10, versión 1709.
 
  
 
@@ -184,26 +184,26 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **CPUCappingMagnitude**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CPUCappingMagnitude")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CPUCappingMagnitude")
 </dt> </dl>
 
 Grado de límite de CPU durante la migración.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1709.
+> Se ha agregado Windows 10, versión 1709.
 
  
 
@@ -241,20 +241,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **DestinationIPAddressList**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Será **null** para la migración de almacenamiento. En el caso de la migración del sistema virtual, esta puede contener una lista de direcciones IP del host de destino.
+Será NULL **para la migración** de almacenamiento. Para la migración del sistema virtual, puede contener una lista de direcciones IP del host de destino.
 
 </dd> <dt>
 
@@ -264,10 +264,10 @@ Será **null** para la migración de almacenamiento. En el caso de la migración
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Si existe una máquina virtual planeada en el destino de la migración, esta propiedad se establecerá en el GUID de la máquina virtual planeada de destino en la que se debe migrar la máquina virtual. Esto resulta útil para los casos en los que un usuario ha creado una máquina virtual planeada en el destino, junto con la configuración de recursos, y desea que una máquina virtual del origen migre a esta máquina virtual planeada.
+Si existe una máquina virtual planeada en el destino de la migración, esta propiedad se establecerá en el GUID de la máquina virtual planeada de destino a la que la máquina virtual debe migrarse. Esto es útil para los casos en los que un usuario ha creado una máquina virtual planeada en el destino, junto con la configuración de recursos, y quiere que una máquina virtual del origen se migre a esta máquina virtual planeada.
 
 </dd> <dt>
 
@@ -280,7 +280,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda del [**\_ SettingData de CIM**](/previous-versions//cc136911(v=vs.85)).
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)).
 
 </dd> <dt>
 
@@ -290,10 +290,10 @@ Nombre para mostrar del objeto. Esta propiedad se hereda del [**\_ SettingData d
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica si se debe comprimir el tráfico de migración en vivo. **True** indica que se va a comprimir; en caso contrario, **false**.
+Indica si se debe comprimir el tráfico de migración en vivo. **True** indica que se debe comprimir; en caso **contrario, False**.
 
 **Windows 8.1:** Este valor no se admite hasta Windows 8.1 y Windows Server 2012 R2.
 
@@ -308,26 +308,26 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **MigrationType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("MigrationType")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("MigrationType")
 </dt> </dl>
 
-Especifica el tipo de operación de migración que se va a realizar. Esta propiedad se hereda de **\_ VirtualSystemMigrationSettingData CIM**.
+Especifica el tipo de operación de migración que se va a realizar. Esta propiedad se hereda de **CIM \_ VirtualSystemMigrationSettingData**.
 
 <dt>
 
@@ -351,7 +351,7 @@ Migra el sistema virtual al host de destino.
 
 <span id="Storage"></span><span id="storage"></span><span id="STORAGE"></span>
 
-<span id="Storage"></span><span id="storage"></span><span id="STORAGE"></span>**Almacenamiento** (32769)
+<span id="Storage"></span><span id="storage"></span><span id="STORAGE"></span>**Storage** (32769)
 
 
 </dt> <dd>
@@ -362,12 +362,12 @@ Migra solo los recursos de almacenamiento del sistema virtual.
 
 <span id="Staged"></span><span id="staged"></span><span id="STAGED"></span>
 
-<span id="Staged"></span><span id="staged"></span><span id="STAGED"></span>**Almacenado provisionalmente** (32770)
+<span id="Staged"></span><span id="staged"></span><span id="STAGED"></span>**Staged** (32770)
 
 
 </dt> <dd>
 
-Mediante la configuración del sistema virtual, crea un sistema virtual planeado en el host de destino.
+Con la configuración del sistema virtual, crea un sistema virtual planeado en el host de destino.
 
 </dd> <dt>
 
@@ -404,22 +404,22 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el tipo de transporte que se va a aplicar si el valor de **TransportType** es 1 (otro). Esta propiedad se hereda de **\_ VirtualSystemMigrationSettingData CIM**.
+Especifica el tipo de transporte que se va a aplicar si el valor de **TransportType** es 1 (Other). Esta propiedad se hereda de **CIM \_ VirtualSystemMigrationSettingData**.
 
 </dd> <dt>
 
 **Prioridad**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica una importancia relativa de la migración, que el sistema de migración puede usar para ordenar o dar preferencia entre varias solicitudes de migración pendientes. Cuanto menor sea el valor, mayor será la prioridad. En una migración, un valor de 0 indica la prioridad predeterminada. De lo contrario, un valor de 0 indica que no se admiten las prioridades.
+Especifica una importancia de migración relativa, que el sistema de migración puede usar para ordenar o dar preferencia entre varias solicitudes de migración pendientes. Cuanto menor sea el valor, mayor será la prioridad. Dentro de una migración, un valor de 0 indica la prioridad predeterminada. De lo contrario, un valor de 0 indica que no se admiten prioridades.
 
-Esta propiedad se hereda de **\_ VirtualSystemMigrationSettingData CIM**.
+Esta propiedad se hereda de **CIM \_ VirtualSystemMigrationSettingData**.
 
 </dd> <dt>
 
@@ -429,13 +429,13 @@ Esta propiedad se hereda de **\_ VirtualSystemMigrationSettingData CIM**.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Quite los VHD no administrados de origen.
+Quite los discos duros virtuales no administrados de origen.
 
 > [!Note]  
-> Agregado en Windows 10 y Windows Server 2016.
+> Se ha agregado Windows 10 y Windows Server 2016.
 
  
 
@@ -447,26 +447,26 @@ Quite los VHD no administrados de origen.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-En el caso de una migración de almacenamiento, especifica si se deben quitar los VHD de solo lectura del host de origen una vez completada la migración.
+Para una migración de almacenamiento, especifica si los VHD de solo lectura del host de origen deben quitarse una vez completada la migración.
 
 </dd> <dt>
 
 **TransportType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("TransportType")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("TransportType")
 </dt> </dl>
 
-Especifica el tipo de transporte que se va a aplicar a una operación de migración del sistema virtual. Esta propiedad se hereda de **\_ VirtualSystemMigrationSettingData CIM**.
+Especifica el tipo de transporte que se va a aplicar para una operación de migración del sistema virtual. Esta propiedad se hereda de **CIM \_ VirtualSystemMigrationSettingData**.
 
 <dt>
 
@@ -479,14 +479,14 @@ Especifica el tipo de transporte que se va a aplicar a una operación de migraci
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SSH"></span><span id="ssh"></span>
 
-**Ssh** (2)
+**SSH** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -500,7 +500,7 @@ Especifica el tipo de transporte que se va a aplicar a una operación de migraci
 
 <span id="TLS_Strict"></span><span id="tls_strict"></span><span id="TLS_STRICT"></span>
 
-**TLS STRICT** (4)
+**TLS Strict** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -528,12 +528,12 @@ Especifica el tipo de transporte que se va a aplicar a una operación de migraci
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (32768...)
+**Reservado por** el proveedor (32768.).
 
 
 </dt> <dd></dd> </dl>
 
-Para la migración en vivo, esta propiedad especifica el tipo de transporte que se va a usar para transferir el estado del sistema virtual al host de destino. Los valores admitidos son:
+Para la migración en vivo, esta propiedad especifica el tipo de transporte que se usará para transferir el estado del sistema virtual al host de destino. Los valores admitidos son:
 
 <dt>
 
@@ -564,19 +564,19 @@ Indica que el tipo de transporte para transferir el estado de la máquina virtua
 **UnmanagedVhds**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), **HyperVEmbeddedInstance** ("MSVM \_ MoveUnmanagedVhd")
+Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), **HyperVEmbeddedInstance** ("Msvm \_ MoveUnmanagedVhd")
 </dt> </dl>
 
-Una matriz de instancias de [**MSVM \_ MoveUnmanagedVhd**](msvm-moveunmanagedvhd.md) insertadas que contienen información de VHD no administrados.
+Matriz de instancias [**insertadas de Msvm \_ MoveUnmanagedVhd**](msvm-moveunmanagedvhd.md) que contienen información de discos duros virtuales no administrados.
 
 > [!Note]  
-> Agregado en Windows 10 y Windows Server 2016.
+> Se ha agregado Windows 10 y Windows Server 2016.
 
  
 
@@ -588,10 +588,10 @@ Una matriz de instancias de [**MSVM \_ MoveUnmanagedVhd**](msvm-moveunmanagedvhd
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -600,7 +600,7 @@ Una matriz de instancias de [**MSVM \_ MoveUnmanagedVhd**](msvm-moveunmanagedvhd
 
 <dl> <dt>
 
-[**\_VIRTUALSYSTEMMIGRATIONSETTINGDATA CIM**](cim-virtualsystemmigrationsettingdata.md)
+[**CIM \_ VirtualSystemMigrationSettingData**](cim-virtualsystemmigrationsettingdata.md)
 </dt> <dt>
 
 [**MigrateVirtualSystemToHost**](migratevirtualsystemtohost-msvm-virtualsystemmigrationservice.md)

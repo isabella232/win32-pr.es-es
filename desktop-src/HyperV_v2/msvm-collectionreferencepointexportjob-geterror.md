@@ -1,7 +1,7 @@
 ---
 description: Recupera un error.
 ms.assetid: 7c47acae-d398-4698-81db-e3c8a812f339
-title: Método GetError de la clase Msvm_CollectionReferencePointExportJob
+title: Método GetError de la Msvm_CollectionReferencePointExportJob clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8ea92bd08a2b65466d11e41bb459200610a89677
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5f7614a30b2c386602b09fd73776dd95cf288966d6b7d1e6b045ee56317f161
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117994836"
 ---
-# <a name="geterror-method-of-the-msvm_collectionreferencepointexportjob-class"></a>Método GetError de la \_ clase CollectionReferencePointExportJob de MSVM
+# <a name="geterror-method-of-the-msvm_collectionreferencepointexportjob-class"></a>Método GetError de la clase \_ CollectionReferencePointExportJob de Msvm
 
 Recupera un error.
 
@@ -39,7 +39,7 @@ uint32 GetError(
 
 <dl> <dt>
 
-*Error* \[ de enuncia\]
+*Error* \[ out\]
 </dt> <dd>
 
 Si se ejecuta correctamente, contiene una descripción del error.
@@ -64,16 +64,16 @@ Si se ejecuta correctamente, contiene una descripción del error.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**Sistema en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -82,10 +82,10 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -94,10 +94,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -106,7 +106,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ CollectionReferencePointExportJob**](msvm-collectionreferencepointexportjob.md)
+[**Colección de \_ MsvmReferencePointExportJob**](msvm-collectionreferencepointexportjob.md)
 </dt> </dl>
 
  

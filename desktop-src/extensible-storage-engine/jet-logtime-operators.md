@@ -1,25 +1,25 @@
 ---
-description: 'Más información acerca de: operadores de JET_LOGTIME'
-title: Operadores de JET_LOGTIME
+description: 'Más información sobre: operadores JET_LOGTIME datos'
+title: JET_LOGTIME operadores
 TOCTitle: JET_LOGTIME operators
 ms:assetid: a1323f48-4e9c-9fb8-c3a3-3d59154e7b2b
 ms:mtpsurl: https://msdn.microsoft.com/library/Hh565530(v=EXCHG.10)
 ms:contentKeyID: 39514215
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5a4253b9f52b5ce95c079ec43e5b6f1b4f528882
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d185547bc19ba12a6db9be73db235662e176c020e16c7cf3f389cf729a037682
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104562607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118074481"
 ---
-# <a name="jet_logtime-operators"></a>Operadores de JET_LOGTIME
+# <a name="jet_logtime-operators"></a>JET_LOGTIME operadores
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo de [JET_LOGTIME](./jet-logtime-structure2.md) expone los siguientes miembros.
+El [JET_LOGTIME](./jet-logtime-structure2.md) muestra los miembros siguientes.
 
 ## <a name="operators"></a>Operadores
 
@@ -52,6 +52,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_LOGTIME](./jet-logtime-structure2.md)
+[JET_LOGTIME estructura](./jet-logtime-structure2.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

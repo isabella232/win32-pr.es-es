@@ -1,9 +1,9 @@
 ---
 title: WM/WMADRCPeakReference
-description: El atributo WM/WMADRCPeakReference contiene el nivel de volumen máximo del archivo como codificado. Windows Media Player usa este valor para el control de intervalo dinámico. El códec establece este valor y es de solo lectura.
+description: El atributo WM/WMADRCPeakReference contiene el nivel de volumen máximo del archivo como codificado. Este valor lo usa Reproductor de Windows Media control de intervalo dinámico. Este valor lo establece el códec y es de solo lectura.
 ms.assetid: c732ee88-437b-4970-8f17-61aed2d91022
 keywords:
-- Formato de Windows Media WM/WMADRCPeakReference
+- Formato multimedia windows WM/WMADRCPeakReference
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59660f950c748c45a1affccee10ae86e38998f23
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: e2e5abf41b52b615030c07b532fc3d75e40bd898a409e0f5ecd2b15541c8c0df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104419608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118027537"
 ---
 # <a name="wmwmadrcpeakreference"></a>WM/WMADRCPeakReference
 
-El atributo **WM/WMADRCPeakReference** contiene el nivel de volumen máximo del archivo como codificado. Windows Media Player usa este valor para el control de intervalo dinámico. El códec establece este valor y es de solo lectura.
+El **atributo WM/WMADRCPeakReference** contiene el nivel de volumen máximo del archivo como codificado. Este valor lo usa Reproductor de Windows Media control de intervalo dinámico. Este valor lo establece el códec y es de solo lectura.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,11 +29,11 @@ g \_ wszWMWMADRCPeakReference
 
 ## <a name="data-type"></a>Tipo de datos
 
-**tipo de WMT \_ \_ DWORD**
+**DWORD \_ DE TIPO \_ WMT**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Windows Media Player usa cuatro atributos para el control de intervalo dinámico: **WM/WMADRCAverageReference**, **WM/WMADRCPeakReference**, **WM/WMADRCAverageTarget** y **WM/WMADRCPeakTarget**. El escritor establece todos estos valores en función de la información del códec al escribir secuencias con el códec Windows Media Audio 9 o Windows Media Audio 9 Professional. Los valores medios se establecen en el nivel de volumen medio de la secuencia y los valores máximos se establecen en el nivel de volumen máximo en la secuencia. Los valores de referencia son de solo lectura. Los valores de destino se establecen mediante Windows Media Player cuando se reproduce el archivo para registrar las preferencias de control de intervalo dinámico del usuario.
+Hay cuatro atributos usados por Reproductor de Windows Media para el control de intervalo dinámico: **WM/WMADRCAverageReference**, **WM/WMADRCPeakReference,** **WM/WMADRCAverageTarget** y **WM/WMADRCPeakTarget**. El escritor establece todos estos valores en función de la información del códec al escribir secuencias con el códec Windows Media Audio 9 o el códec Windows Media Audio 9 Professional. Los valores medios se establecen en el nivel medio de volumen de la secuencia y los valores máximos se establecen en el nivel de volumen máximo de la secuencia. Los valores de referencia son de solo lectura. Los valores de destino se establecen Reproductor de Windows Media cuando el archivo se reproduce para registrar las preferencias de control de intervalo dinámico del usuario.
 
 ## <a name="see-also"></a>Vea también
 
@@ -51,9 +51,9 @@ Windows Media Player usa cuatro atributos para el control de intervalo dinámico
 [**WM/WMADRCPeakTarget**](wm-wmadrcpeaktarget.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de CB_GETLOCALE (Winuser. h)
-description: Obtiene la configuración regional actual del cuadro combinado. La configuración regional se usa para determinar el criterio de ordenación correcto del texto que se muestra en los cuadros combinados con el \_ estilo de ordenación CBS y el texto agregado mediante el \_ mensaje CB ADDSTRING.
+title: CB_GETLOCALE mensaje (Winuser.h)
+description: Obtiene la configuración regional actual del cuadro combinado. La configuración regional se usa para determinar el criterio de ordenación correcto del texto mostrado para los cuadros combinados con el estilo SORT de CBS y el texto agregados mediante el mensaje \_ \_ ADDSTRING de CB.
 ms.assetid: 57c77ce2-bad0-43f3-8325-f2a7227994ec
 keywords:
-- CB_GETLOCALE controles de mensajes de Windows
+- CB_GETLOCALE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 847d9f73e8bf0b1d533d0b79ba86d939bee0e9b4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 34e2a5ff4de25739f9c5d5eac75868cf2d506c4d8a280744d1b1056f8de49e92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118006779"
 ---
-# <a name="cb_getlocale-message"></a>Mensaje de error de CB. \_
+# <a name="cb_getlocale-message"></a>Mensaje \_ GETLOCALE de CB
 
-Obtiene la configuración regional actual del cuadro combinado. La configuración regional se usa para determinar el criterio de ordenación correcto del texto que se muestra en los cuadros combinados con el estilo de [**\_ ordenación CBS**](combo-box-styles.md) y el texto agregado mediante el mensaje [**CB \_ ADDSTRING**](cb-addstring.md) .
+Obtiene la configuración regional actual del cuadro combinado. La configuración regional se usa para determinar el criterio de ordenación correcto del texto mostrado para los cuadros combinados con el estilo SORT de [**CBS \_**](combo-box-styles.md) y el texto agregados mediante el mensaje [**\_ ADDSTRING de CB.**](cb-addstring.md)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,34 +32,34 @@ Obtiene la configuración regional actual del cuadro combinado. La configuració
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto especifica la configuración regional actual del cuadro combinado. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) contiene el código de país o región y [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene el identificador de idioma.
+El valor devuelto especifica la configuración regional actual del cuadro combinado. HIWORD [**contiene el**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) código de país o región y [**loWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene el identificador de idioma.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El identificador de idioma se compone de un identificador de subidioma y un identificador de idioma principal. La macro [**PRIMARYLANGID**](/windows/desktop/api/winnt/nf-winnt-primarylangid) obtiene el identificador de idioma principal y la macro [**SUBLANGID**](/windows/desktop/api/winnt/nf-winnt-sublangid) obtiene el identificador de subidioma.
+El identificador de idioma se forma de un identificador de sublenguaje y un identificador de idioma principal. La [**macro PRIMARYLANGID**](/windows/desktop/api/winnt/nf-winnt-primarylangid) obtiene el identificador de idioma principal y la macro [**SUBLANGID**](/windows/desktop/api/winnt/nf-winnt-sublangid) obtiene el identificador de subidioma.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

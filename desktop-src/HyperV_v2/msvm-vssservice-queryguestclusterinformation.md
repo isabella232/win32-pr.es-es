@@ -1,7 +1,7 @@
 ---
-description: Consultar la información del clúster desde el host de Hyper-V hasta el invitado.
+description: Consulta de información del clúster desde el host de Hyper-V al invitado.
 ms.assetid: 28983984-a2af-4eab-8b1f-2f7d6a3d70ea
-title: Método QueryGuestClusterInformation de la clase Msvm_VssService
+title: Método QueryGuestClusterInformation de la Msvm_VssService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 36f88441729cc1e6e36bcad9ca84b46049bce2a2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c3b58aefb5d821eec114010ea5f878d407d3b7474778b12ca74250bf5f757a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117993783"
 ---
-# <a name="queryguestclusterinformation-method-of-the-msvm_vssservice-class"></a>Método QueryGuestClusterInformation de la \_ clase VssService de MSVM
+# <a name="queryguestclusterinformation-method-of-the-msvm_vssservice-class"></a>Método QueryGuestClusterInformation de la clase \_ VssService de Msvm
 
-Consultar la información del clúster desde el host de Hyper-V hasta el invitado.
+Consulta de información del clúster desde el host de Hyper-V al invitado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,16 +39,16 @@ uint32 QueryGuestClusterInformation(
 
 <dl> <dt>
 
-*GuestClusterInformation* \[ enuncia\]
+*GuestClusterInformation* \[ out\]
 </dt> <dd>
 
-Si se ejecuta correctamente, contiene un [**MSVM \_ GuestClusterInformation**](msvm-guestclusterinformation.md) que describe el clúster invitado.
+Si se ejecuta correctamente, contiene [**un \_ elemento GuestClusterInformation de Msvm**](msvm-guestclusterinformation.md) que describe el clúster invitado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si se ejecuta correctamente, devuelve un 0 (completado sin errores) o 4096 (trabajo iniciado). de lo contrario, devuelve un error.
+Si se ejecuta correctamente, devuelve 0 (Completado sin error) o 4096 (trabajo iniciado); De lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -67,16 +67,16 @@ Si se ejecuta correctamente, devuelve un 0 (completado sin errores) o 4096 (trab
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -85,10 +85,10 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -97,10 +97,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -109,7 +109,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ VssService**](msvm-vssservice.md)
+[**VssService de Msvm \_**](msvm-vssservice.md)
 </dt> </dl>
 
  

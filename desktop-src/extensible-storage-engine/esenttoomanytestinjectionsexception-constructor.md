@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentTooManyTestInjectionsException'
-title: Constructor de EsentTooManyTestInjectionsException
+description: 'Más información sobre: Constructor EsentTooManyTestInjectionsException'
+title: Constructor EsentTooManyTestInjectionsException
 TOCTitle: 'EsentTooManyTestInjectionsException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentTooManyTestInjectionsException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esenttoomanytestinjectionsexception.esenttoomanytestinjectionsexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 46111bcd86345516796e5574b540bbac9a5a8682
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42b70047b40f878d0b97c879825b126b3630c4c245f55862caadf22f78c194e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118078116"
 ---
-# <a name="esenttoomanytestinjectionsexception-constructor"></a>Constructor de EsentTooManyTestInjectionsException
+# <a name="esenttoomanytestinjectionsexception-constructor"></a>Constructor EsentTooManyTestInjectionsException
 
 Inicializa una nueva instancia de la clase EsentTooManyTestInjectionsException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentTooManyTestInjectionsException()
 public EsentTooManyTestInjectionsException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentTooManyTestInjectionsException()
 
 [Miembros de EsentTooManyTestInjectionsException](./esenttoomanytestinjectionsexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
