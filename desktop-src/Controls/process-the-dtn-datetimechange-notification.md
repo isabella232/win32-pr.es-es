@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para procesar la notificación DTN_DATETIMECHANGE aplicación
+title: Cómo procesar la notificación de DTN_DATETIMECHANGE aplicación
 description: En este tema se muestra cómo procesar la notificación de los cambios realizados por el usuario en el control selector de fecha y hora (DTP).
 ms.assetid: AE029962-E9D3-47BC-A24F-312B54137F18
 ms.topic: article
@@ -21,7 +21,7 @@ En este tema se muestra cómo procesar la notificación de los cambios realizado
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
 -   Windows Interfaz de usuario programación
@@ -29,7 +29,7 @@ En este tema se muestra cómo procesar la notificación de los cambios realizado
 ## <a name="instructions"></a>Instructions
 
 
-Un control DTP envía el [código de notificación \_ DATETIMECHANGE de DTN](dtn-datetimechange.md) cada vez que se produce un cambio. Por ejemplo, esta notificación se generará cuando el usuario cambie uno de los campos del control o, en el caso de que el control esté establecido en el estilo [**DTS \_ SHOWNONE,**](date-and-time-picker-control-styles.md) cuando el usuario cambie el estado de la casilla del control.
+Un control DTP envía el código [de notificación \_ DATETIMECHANGE de DTN](dtn-datetimechange.md) cada vez que se produce un cambio. Por ejemplo, esta notificación se generará cuando el usuario cambie uno de los campos del control o, en el caso de que el control esté establecido en el estilo [**\_ DTS SHOWNONE,**](date-and-time-picker-control-styles.md) cuando el usuario cambie el estado de la casilla del control.
 
 La aplicación debe incluir código para procesar los mensajes \_ DATETIMECHANGE de DTN enviados por el control DTP.
 

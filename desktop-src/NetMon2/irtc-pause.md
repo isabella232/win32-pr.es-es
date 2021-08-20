@@ -78,7 +78,7 @@ Para reiniciar la llamada de [captura, llame a IRTC::Resume.](irtc-resume.md) Pa
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

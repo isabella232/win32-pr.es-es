@@ -1,9 +1,9 @@
 ---
-title: Propiedades de descodificación de vídeo (Camerauicontrol. h)
-description: Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte Windows Media Audio y vídeo códec y API de DSP. | Propiedades de descodificación de vídeo (Camerauicontrol. h)
+title: Propiedades de decoding de vídeo (Camerauicontrol.h)
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | Propiedades de decoding de vídeo (Camerauicontrol.h)
 ms.assetid: fa72a593-bb16-40a8-a510-db8b000bfd95
 keywords:
-- Propiedades de descodificación de vídeo de Windows Media Format
+- Propiedades de descoding de vídeo formato multimedia de Windows
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0cbc12006fd1253418689dfdbebeaed5cab44d3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4566e5e125c74d12344658785f78acb800a006c20b9d3a478b93f0f6c4579fe1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117653408"
 ---
-# <a name="video-decoding-properties"></a>Propiedades de descodificación de vídeo
+# <a name="video-decoding-properties"></a>Propiedades de la decodación de vídeo
 
-Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte [Windows Media Audio y vídeo códec y API de DSP.](/previous-versions//dd464626(v=vs.85))
+Para obtener la documentación actual Windows códecs multimedia y procesadores de señales digitales, vea Windows [Media Audio and Video Codec and DSP APIs (Api](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,7 +31,7 @@ Para obtener la documentación actual sobre los códecs de Windows Media y los p
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Camerauicontrol. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Camerauicontrol.h</dt> </dl> |
 
 
 

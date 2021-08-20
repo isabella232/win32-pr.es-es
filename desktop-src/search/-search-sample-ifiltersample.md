@@ -34,12 +34,12 @@ En este tema se incluyen las siguientes secciones.
 
 Este ejemplo está disponible en la siguiente ubicación.
 
-| Ubicación      | Dirección URL de ruta de acceso                                                                  |
+| Location      | Dirección URL de ruta de acceso                                                                  |
 |---------------|---------------------------------------------------------------------------|
 | GitHub        | [IFilterSample](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch/IFilterSample)          |
 
 > [!NOTE]  
-> Para todas las versiones de Windows, incluido Windows 7, se recomienda descargar los ejemplos directamente desde GitHub para la versión más actualizada.
+> Para todas las versiones de Windows, incluido Windows 7, se recomienda descargar los ejemplos directamente desde GitHub para obtener la versión más actualizada.
 
 ## <a name="building-the-sample"></a>Generar el ejemplo
 
@@ -53,8 +53,8 @@ Este ejemplo está disponible en la siguiente ubicación.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-1. Vaya al directorio que contiene el nuevo ejecutable, mediante la ventana símbolo del sistema o Windows explorador.
-2. En el símbolo del sistema, escriba o, en Windows Explorer, haga doble clic en el `FilterBase.exe` icono de FilterBase.exe.
+1. Vaya al directorio que contiene el nuevo ejecutable, mediante la ventana símbolo del sistema o Windows Explorador.
+2. En el símbolo del sistema, escriba o, en Windows Explorer, haga doble clic `FilterBase.exe` en el icono para FilterBase.exe.
 
 ## <a name="related-topics"></a>Temas relacionados
 

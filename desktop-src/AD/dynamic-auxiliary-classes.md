@@ -22,9 +22,9 @@ A diferencia de las clases estructurales, no se puede crear una instancia de una
 
 En la versión inicial de Windows 2000, Active Directory Domain Services proporcionaba compatibilidad para vincular estáticamente clases auxiliares a la definición [**classSchema**](/windows/desktop/ADSchema/c-classschema) de otra clase de objeto. Cuando se usa una clase auxiliar de esta manera, cada instancia de la clase de objeto admite los atributos de la clase auxiliar.
 
-**Windows 2000 Server y versiones anteriores:** Active Directory Domain Services no proporciona compatibilidad para vincular dinámicamente clases auxiliares a objetos individuales, y no solo a clases enteras de objetos. Además, las clases auxiliares que se han asociado a una instancia de objeto no se pueden quitar posteriormente de la instancia de .
+**Windows 2000 Server y versiones anteriores:** Active Directory Domain Services no proporciona compatibilidad para vincular dinámicamente clases auxiliares a objetos individuales, y no solo a clases de objetos enteras. Además, las clases auxiliares que se han asociado a una instancia de objeto no se pueden quitar posteriormente de la instancia.
 
-**Windows Server 2003:** Las clases auxiliares dinámicas se admiten cuando todos los controladores de dominio del bosque ejecutan Windows Server 2003 y el modo funcional del bosque Windows Server 2003.
+**Windows Server 2003:** Las clases auxiliares dinámicas se admiten cuando todos los controladores de dominio del bosque ejecutan Windows Server 2003 y el modo funcional del bosque es Windows Server 2003.
 
 Para obtener más información sobre las clases auxiliares, vea:
 
@@ -33,7 +33,7 @@ Para obtener más información sobre las clases auxiliares, vea:
 -   [Determinar las clases asociadas a una instancia de objeto](determining-the-classes-associated-with-an-object-instance.md)
 -   [Agregar una clase auxiliar a una instancia de objeto](adding-an-auxiliary-class-to-an-object-instance.md)
 
-Para obtener más información sobre los niveles funcionales de bosque, vea "Cómo generar niveles funcionales de Active Directory dominio y bosque" en la página ayuda y soporte técnico Knowledge Base en [https://support/microsoft.com/kb/322692\#4](https://support.microsoft.com/kb/322692) .
+Para obtener más información sobre los niveles funcionales de bosque, vea "Cómo generar niveles funcionales de dominio Active Directory bosque" en la página de ayuda y Knowledge Base en [https://support/microsoft.com/kb/322692\#4](https://support.microsoft.com/kb/322692) .
 
  
 

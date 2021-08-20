@@ -1,9 +1,9 @@
 ---
-title: 'Texture2DMSArray:: GetSamplePosition (función)'
-description: 'Obtiene la posición del ejemplo especificado. | Texture2DMSArray:: GetSamplePosition (función)'
+title: Función Texture2DMSArray::GetSamplePosition
+description: Obtiene la posición del ejemplo especificado. | Función Texture2DMSArray::GetSamplePosition
 ms.assetid: e04717be-58b0-4242-87dd-d769834ae1c2
 keywords:
-- GetSamplePosition de función HLSL
+- Función GetSamplePosition HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ea4d45ef5523c5fa4c9ef080bba6286a050aa12c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 9da6727120dcb19d9dd51c83d62f85d842036edb2197d33e298259480b248642
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118508421"
 ---
-# <a name="texture2dmsarraygetsampleposition-function"></a>Texture2DMSArray:: GetSamplePosition (función)
+# <a name="texture2dmsarraygetsampleposition-function"></a>Función Texture2DMSArray::GetSamplePosition
 
 Obtiene la posición del ejemplo especificado.
 
@@ -36,7 +36,7 @@ float2 GetSamplePosition(
 
 <dl> <dt>
 
-*sampleindex* \[ de\]
+*sampleindex* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **int**](/windows/desktop/WinProg/windows-data-types)**
@@ -49,15 +49,15 @@ Tipo: **[ **int**](/windows/desktop/WinProg/windows-data-types)**
 
 Tipo: **float2**
 
-Una ubicación de ejemplo.
+Ubicación de ejemplo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -72,7 +72,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 [Texture2DMSArray](sm5-object-texture2dmsarray.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

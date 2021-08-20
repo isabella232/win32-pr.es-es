@@ -27,7 +27,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentarios
 
-Una aplicación usa ui PKEY MoreColorsLabel para consultar el valor de la etiqueta asociada con el botón Más colores de \_ \_ un elemento [**DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md) 
+Una aplicación usa ui PKEY MoreColorsLabel para consultar el valor de la etiqueta asociada con el botón Más colores de \_ \_ una clase [**DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md) 
 
 Ui PKEY MoreColorsLabel solo es válido para \_ \_ [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) donde o se especifica como el valor `ThemeColors` del atributo `StandardColors` **ColorTemplate.**
 

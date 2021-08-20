@@ -1,29 +1,29 @@
 ---
-description: 'Generado por un flujo multimedia después de una llamada a IMFMediaSource:: Start produce una búsqueda en la secuencia. Un flujo multimedia genera este evento cuando el origen del medio genera el evento MESourceSeeked.'
+description: La generación por una secuencia de medios después de una llamada a IMFMediaSource::Start provoca una búsqueda en la secuencia. Una secuencia multimedia genera este evento cuando el origen multimedia genera el evento MESourceSeeked.
 ms.assetid: df06df16-711d-4262-b049-fb29f25934de
-title: Evento MEStreamSeeked (Mfobjects. h)
+title: Evento MEStreamSeeked (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7b66e2176b08c04b01fc487aac4b8218536b615
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b03e58b11785a7b807f6793ff2ba6b2a4afa5f912d21e626938d7b3c725242f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118061341"
 ---
 # <a name="mestreamseeked-event"></a>Evento MEStreamSeeked
 
-Generado por un flujo multimedia después de una llamada a [**IMFMediaSource:: Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-start) produce una búsqueda en la secuencia. Un flujo multimedia genera este evento cuando el origen del medio genera el evento [MESourceSeeked](mesourceseeked.md) .
+La generación por una secuencia de medios después de una llamada a [**IMFMediaSource::Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-start) provoca una búsqueda en la secuencia. Una secuencia multimedia genera este evento cuando el origen multimedia genera el [evento MESourceSeeked.](mesourceseeked.md)
 
 ## <a name="event-values"></a>Valores de evento
 
-Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) son los siguientes.
+Los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluyen lo siguiente.
 
 
 
 | VARTYPE           | Descripción                                                        |
 |-------------------|--------------------------------------------------------------------|
-| VT \_ i8<br/> | Nueva hora de inicio, en unidades de 100-nanosegundos.<br/> <br/> |
+| VT \_ I8<br/> | Nueva hora de inicio, en unidades de 100 nanosegundos.<br/> <br/> |
 
 
 
@@ -33,9 +33,9 @@ Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desk
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects. h (incluye Mfidl. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desk
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> </dl>
 
  

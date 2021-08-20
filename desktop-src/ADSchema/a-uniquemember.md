@@ -51,7 +51,7 @@ Nombre distintivo del miembro de un grupo. Lo usa groupOfUniqueNames.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------|
 | Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
@@ -72,7 +72,7 @@ Nombre distintivo del miembro de un grupo. Lo usa groupOfUniqueNames.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------|
 | Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
@@ -93,7 +93,7 @@ Nombre distintivo del miembro de un grupo. Lo usa groupOfUniqueNames.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------|
 | Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
@@ -114,7 +114,7 @@ Nombre distintivo del miembro de un grupo. Lo usa groupOfUniqueNames.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------|
 | Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
@@ -135,7 +135,7 @@ Nombre distintivo del miembro de un grupo. Lo usa groupOfUniqueNames.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------|
 | Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |

@@ -35,7 +35,7 @@ FC_INT3264,                 // 0xb8
 FC_UINT3264,                // 0xb9
 ```
 
-Los tipos SMALL, WCHAR, HYPER, ERROR \_ STATUS \_ T, \_ \_ INT3264 son intrínsecos MIDL con interpretaciones rpc especiales. Los tipos INT e INT32 se asignan a FC LONG, INT sin signo e INT32 sin signo se asignan a \_ \_ \_ \_ \_ FC \_ ULONG, \_ \_ INT64 e \_ \_ INT64 \_ sin signo a FC HYPER.
+Los tipos SMALL, WCHAR, HYPER, ERROR \_ STATUS \_ T, \_ \_ INT3264 son intrínsecos MIDL con interpretaciones de RPC especiales. Los tipos INT e INT32 se asignan a FC LONG, INT sin signo e INT32 sin signo se asignan a \_ \_ \_ \_ \_ FC \_ ULONG, \_ \_ INT64 y \_ \_ INT64 \_ sin signo a FC HYPER.
 
 No \_ \_ se admiten los tipos INT128, FLOAT128 y FLOAT80.
 

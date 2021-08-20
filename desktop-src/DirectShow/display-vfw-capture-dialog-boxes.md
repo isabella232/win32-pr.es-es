@@ -13,7 +13,7 @@ ms.locfileid: "117821143"
 ---
 # <a name="display-vfw-capture-dialog-boxes"></a>Mostrar cuadros de diálogo de captura de VFW
 
-Un dispositivo de captura que sigue utilizando un controlador Video for Windows (VFW) puede admitir cualquiera de los tres cuadros de diálogo siguientes, que se usan para configurar el dispositivo.
+Un dispositivo de captura que todavía usa un controlador Video for Windows (VFW) puede admitir cualquiera de los tres cuadros de diálogo siguientes, que se usan para configurar el dispositivo.
 
 
 

@@ -113,7 +113,7 @@ public static void JetSetCurrentIndex4(
     
     Número de secuencia del valor de columna multivalor que se usará para colocar el cursor en el nuevo índice. Este parámetro solo se usa junto con [NoMove](./setcurrentindexgrbit-enumeration.md). Cuando este parámetro no está presente o se establece en cero, se supone que su valor es 1.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

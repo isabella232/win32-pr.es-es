@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: clase Windows8Param'
-title: Clase Windows8Param (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: Clase Windows8Param'
+title: Clase Windows8Param (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: Windows8Param class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.Windows8Param
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8param(v=EXCHG.10)
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 40ed9aa466fcdbe8d935cb4bb7da442f3c15aded
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f573d8f89432312ddb4301877d6f6b460cc7875715809ba0fd4d6dee7b0f07bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118068980"
 ---
 # <a name="windows8param-class"></a>Clase Windows8Param
 
@@ -38,12 +38,12 @@ Parámetros del sistema que se introdujeron en Windows 8.
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. Windows8. Windows8Param  
+  Microsoft.Isam.Esent.Interop.Windows8.Windows8Param  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -66,4 +66,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de Windows8Param](./windows8param-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

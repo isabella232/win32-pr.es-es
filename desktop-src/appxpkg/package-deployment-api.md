@@ -1,6 +1,6 @@
 ---
 title: API de implementación del paquete
-description: Obtenga información sobre la API de implementación de paquetes, que puede usar para instalar, actualizar y desinstalar paquetes de aplicaciones en el sistema. Cada paquete de aplicación contiene los archivos que constituyen Windows aplicación y un archivo de manifiesto que describe el software que se va a Windows.
+description: Obtenga información sobre la API de implementación de paquetes, que puede usar para instalar, actualizar y desinstalar paquetes de aplicaciones en el sistema. Cada paquete de aplicación contiene los archivos que constituyen una Windows aplicación y un archivo de manifiesto que describe el software que se va a Windows.
 ms.assetid: E2D408E1-6048-4D15-8BF4-69FF6ACF7BD2
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118814061"
 ---
 # <a name="package-deployment-api"></a>API de implementación del paquete
 
-Obtenga información sobre la API de implementación de paquetes, que puede usar para instalar, actualizar y desinstalar paquetes de aplicaciones en el sistema. Cada paquete de aplicación contiene los archivos que constituyen Windows aplicación y un archivo de manifiesto que describe el software que se va a Windows.
+Obtenga información sobre la API de implementación de paquetes, que puede usar para instalar, actualizar y desinstalar paquetes de aplicaciones en el sistema. Cada paquete de aplicación contiene los archivos que constituyen una Windows aplicación y un archivo de manifiesto que describe el software que se va a Windows.
 
 ## <a name="windows-runtime-reference"></a>Referencia de Windows Runtime
 

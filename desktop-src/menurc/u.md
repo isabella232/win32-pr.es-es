@@ -14,11 +14,11 @@ ms.locfileid: "118472723"
 ---
 # <a name="u-menus-and-other-resources"></a>U (menús y otros recursos)
 
-[A](a.md) [B](b.md) [C](c.md) D [E](e.md) [F](f.md) G H [I](i.md) J K L M N [O](n.md) [](o.md) P P [Q R](r.md) S [T](t.md) U [V](v.md) [W](w.md) X Y Z
+[A](a.md) [B](b.md) [C](c.md) D [E](e.md) [F](f.md) G H [I](i.md) J K L M N [](n.md) [O](o.md) P Q [R](r.md) S [T](t.md) U [V](v.md) [W](w.md) X Y Z
 
 <dl> <dt>
 
-<span id="tools.u_1_gly"></span><span id="TOOLS.U_1_GLY"></span>**No se puede crear latinación**
+<span id="tools.u_1_gly"></span><span id="TOOLS.U_1_GLY"></span>**No se puede crear la programación**
 </dt> <dd>
 
 Microsoft Windows Resource Compiler (RC) no pudo crear el archivo de destino. Asegúrese de que hay suficiente espacio en disco.
@@ -35,7 +35,7 @@ Asegúrese de que ha cerrado todos los paréntesis de apertura en la [**instrucc
 <span id="tools.u_3_gly"></span><span id="TOOLS.U_3_GLY"></span>**Valor inesperado en RCData**
 </dt> <dd>
 
-Los valores del *parámetro raw-data* de la [**instrucción RCDATA**](rcdata-resource.md) deben ser enteros o cadenas, separados por comas. Asegúrese de que no ha descartado una coma o una comilla alrededor de una cadena.
+Los valores del *parámetro raw-data* de la [**instrucción RCDATA**](rcdata-resource.md) deben ser enteros o cadenas, separados por comas. Asegúrese de que no ha descartado una coma o comillas alrededor de una cadena.
 
 </dd> <dt>
 
@@ -60,7 +60,7 @@ El *parámetro item-definitions* de la [**instrucción MENU**](menu-resource.md)
 
 </dd> <dt>
 
-<span id="tools.u_7_gly"></span><span id="TOOLS.U_7_GLY"></span>**Campo VERSIONINFO no reconocido; SE ESPERABA BEGIN o coma**
+<span id="tools.u_7_gly"></span><span id="TOOLS.U_7_GLY"></span>**Campo VERSIONINFO no reconocido; BEGIN o coma esperada**
 </dt> <dd>
 
 El formato de la información que sigue a [**una instrucción VERSIONINFO**](versioninfo-resource.md) es incorrecto.

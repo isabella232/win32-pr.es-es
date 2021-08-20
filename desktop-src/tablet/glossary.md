@@ -47,7 +47,7 @@ Curva que se calcula matemáticamente para conectar puntos independientes en una
 <span id="tablet.tablet_glossary_confidence_level"></span><span id="TABLET.TABLET_GLOSSARY_CONFIDENCE_LEVEL"></span>**nivel de confianza**
 </dt> <dd>
 
-Valor que indica el grado de confianza de cada posible coincidencia que devuelve el reconocedor para una unidad determinada de entrada de lápiz.
+Valor que indica el grado de confianza para cada posible coincidencia que devuelve el reconocedor para una unidad determinada de entrada de lápiz.
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ Punto distintivo en la geometría de un gesto. Por ejemplo, el punto de acceso d
 <span id="tablet.tablet_glossary_human_interface_device__hid_"></span><span id="TABLET.TABLET_GLOSSARY_HUMAN_INTERFACE_DEVICE__HID_"></span>**dispositivo de interfaz humana (HID)**
 </dt> <dd>
 
-Especificación que forma parte del estándar de bus serie universal (USB) para una clase de dispositivo periférico. Estos dispositivos, como un mouse, teclados y velocidades, permiten a los usuarios introducir datos o interactuar directamente con el equipo.
+Especificación que forma parte del estándar de bus serie universal (USB) para una clase de dispositivo periférico. Estos dispositivos, como un mouse, teclados y móviles, permiten a los usuarios introducir datos o interactuar directamente con el equipo.
 
 </dd> <dt>
 
@@ -187,7 +187,7 @@ Espacio de coordenadas virtual al que se asignan las coordenadas del contexto de
 <span id="tablet.tablet_glossary_ink_stroke"></span><span id="TABLET.TABLET_GLOSSARY_INK_STROKE"></span>**trazo de lápiz**
 </dt> <dd>
 
-Una línea de entrada de lápiz escrita o dibujada en una tableta, empezando por la primera vez que el lápiz tocó la pantalla y finalizando donde se ha extraído el lápiz.
+Una línea de entrada de lápiz escrita o dibujada en una tableta, empezando por el lugar donde el lápiz tocó por primera vez la pantalla y terminando donde se eleve el lápiz.
 
 </dd> <dt>
 
@@ -201,7 +201,7 @@ Accesorios para escribir texto mediante un lápiz de tableta en lugar de un tecl
 <span id="tablet.tablet_glossary_input_scope"></span><span id="TABLET.TABLET_GLOSSARY_INPUT_SCOPE"></span>**ámbito de entrada**
 </dt> <dd>
 
-Conjunto de palabras, números, puntuación y ordenaciones sintácticas que se permiten dentro de un modelo de lenguaje específico. Las aplicaciones pueden usar los ámbitos de entrada para restringir el modelo de lenguaje utilizado por el reconocedor a un contexto específico. Anteriormente conocido como fa
+Conjunto de palabras, números, puntuación y ordenaciones sintácticas que se permiten dentro de un modelo de lenguaje específico. Las aplicaciones pueden usar ámbitos de entrada para restringir el modelo de lenguaje utilizado por el reconocedor a un contexto específico. Anteriormente conocido como fa
 
 </dd> <dt>
 
@@ -229,7 +229,7 @@ Uno de un conjunto de estructuras que se usan para pasar los resultados de recon
 <span id="tablet.tablet_glossary_layout_analysis"></span><span id="TABLET.TABLET_GLOSSARY_LAYOUT_ANALYSIS"></span>**análisis de diseño**
 </dt> <dd>
 
-Componente del análisis de entrada de lápiz que implica determinar la posición de la entrada de lápiz en la superficie de entrada manuscrita y cómo se relacionan los trazos entre sí espacial y semánticamente. Por ejemplo, el análisis de diseño puede determinar que una unidad determinada de entrada de lápiz es un anotativo.
+Componente del análisis de entrada de lápiz que implica determinar la posición de la entrada de lápiz en la superficie de entrada manuscrita y cómo se relacionan los trazos entre sí espacial y semánticamente. Por ejemplo, el análisis de diseño puede determinar que una unidad determinada de entrada de lápiz es una anotación
 
 </dd> <dt>
 
@@ -292,21 +292,21 @@ Estructura que especifica los límites de entrada de lápiz al reconocedor media
 <span id="tablet.tablet_glossary_recognition_segment"></span><span id="TABLET.TABLET_GLOSSARY_RECOGNITION_SEGMENT"></span>**segmento de reconocimiento**
 </dt> <dd>
 
-Unidad de entrada de lápiz interpretada por un reconocedor. En el caso de los idiomas occidental, suele ser una palabra; para los idiomas de Asia Oriental, suele ser un carácter.
+Unidad de entrada de lápiz interpretada por un reconocedor. En el caso de los idiomas occidental, suele ser una palabra; para idiomas de Asia Oriental, suele ser un carácter.
 
 </dd> <dt>
 
 <span id="tablet.tablet_glossary_recognizer"></span><span id="TABLET.TABLET_GLOSSARY_RECOGNIZER"></span>**Reconocedor**
 </dt> <dd>
 
-Módulo de software que reconoce y procesa componentes de un idioma o grupo de idiomas relacionados, o una clase de objetos relacionados, como notas de música, gestos del sistema y formas geométricas.
+Módulo de software que reconoce y procesa componentes de un idioma o grupo de idiomas relacionados, o una clase de objetos relacionados, como notas musicales, gestos del sistema y formas geométricas.
 
 </dd> <dt>
 
 <span id="tablet.tablet_glossary_recognizer_context"></span><span id="TABLET.TABLET_GLOSSARY_RECOGNIZER_CONTEXT"></span>**contexto del reconocedor**
 </dt> <dd>
 
-Información específica de la aplicación que el reconocedor usa para realizar el reconocimiento de entrada de lápiz.
+Información específica de la aplicación que el reconocedor usa para realizar el reconocimiento de lápiz.
 
 </dd> <dt>
 
@@ -327,7 +327,7 @@ Lista de palabras que contiene todas las palabras escritas habitualmente en un i
 <span id="tablet.tablet_glossary_system_gesture"></span><span id="TABLET.TABLET_GLOSSARY_SYSTEM_GESTURE"></span>**gesto del sistema**
 </dt> <dd>
 
-Un lápiz equivalente a un mensaje de mouse tradicional, como hacer doble clic con el botón izquierdo o hacer doble clic.
+Un lápiz equivalente a un mensaje de mouse tradicional, como hacer doble clic a la izquierda o hacer doble clic.
 
 </dd> <dt>
 
@@ -338,7 +338,7 @@ Conjunto de objetos administrados que amplía microsoft .NET Framework para prop
 
 </dd> <dt>
 
-<span id="tablet.tablet_glossary_text_ink_object"></span><span id="TABLET.TABLET_GLOSSARY_TEXT_INK_OBJECT"></span>**objeto de entrada manuscrita de texto**
+<span id="tablet.tablet_glossary_text_ink_object"></span><span id="TABLET.TABLET_GLOSSARY_TEXT_INK_OBJECT"></span>**objeto text ink**
 </dt> <dd>
 
 Objeto OLE que representa la entrada de lápiz que se interpreta como una palabra.
@@ -355,7 +355,7 @@ Lista de palabras que contiene las palabras agregadas al diccionario por los usu
 <span id="tablet.tablet_glossary_word_list"></span><span id="TABLET.TABLET_GLOSSARY_WORD_LIST"></span>**lista de palabras**
 </dt> <dd>
 
-Un archivo que contiene una colección de palabras que forma un diccionario de aplicaciones.
+Un archivo que contiene una colección de palabras que forma un diccionario de aplicación.
 
 </dd> </dl>
 

@@ -20,9 +20,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117795788"
 ---
-# <a name="filterobject-structure"></a>FilterOBJECT (estructura)
+# <a name="filterobject-structure"></a>FILTEROBJECT (estructura)
 
-La **estructura FILTEROBJECT** define un único objeto de un filtro de presentación. La [**función FilterAddObject**](filteraddobject.md) usa **FILTEROBJECT** para crear un filtro de visualización.
+La **estructura FILTEROBJECT** define un único objeto de un filtro de visualización. La [**función FilterAddObject**](filteraddobject.md) usa **FILTEROBJECT para** crear un filtro de visualización.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,7 +64,7 @@ En la tabla siguiente se enumeran las marcas de propiedad del miembro Action.
 
 
 
-| Valor                                                                                                                                                                                                | Significado                                                                |
+| Value                                                                                                                                                                                                | Significado                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
 | <span id="FILTERACTION_PROPERTY"></span><span id="filteraction_property"></span><dl> <dt>**\_FILTERACTION, PROPIEDAD**</dt> </dl>                | Contiene esta propiedad.<br/>                                     |
 | <span id="FILTERACTION_PROPERTYEXIST"></span><span id="filteraction_propertyexist"></span><dl> <dt>**FILTERACTION \_ PROPERTYEXIST**</dt> </dl> | Indica que ya se ha definido una propiedad de acción de filtro.<br/> |
@@ -82,20 +82,20 @@ En la tabla siguiente se enumeran las marcas de valor de miembro de acción.
 | <span id="FILTERACTION_VALUE"></span><span id="filteraction_value"></span><dl> <dt>**VALOR \_ FILTERACTION**</dt> </dl>                 | Contiene este valor.<br/>                                             |
 | <span id="FILTERACTION_STRING"></span><span id="filteraction_string"></span><dl> <dt>**FILTERACTION \_ STRING**</dt> </dl>              | Contiene esta cadena.<br/>                                            |
 | <span id="FILTERACTION_ARRAY"></span><span id="filteraction_array"></span><dl> <dt>**FILTERACTION \_ ARRAY**</dt> </dl>                 | Contiene esta matriz.<br/>                                             |
-| <span id="FILTERACTION_CONTAINSNC"></span><span id="filteraction_containsnc"></span><dl> <dt>**FILTERACTION \_ CONTAINSNC**</dt> </dl>  | Indica que una propiedad contiene una subcadena que no tiene en cuenta las mayúsculas y minúsculas.<br/> |
+| <span id="FILTERACTION_CONTAINSNC"></span><span id="filteraction_containsnc"></span><dl> <dt>**FILTERACTION \_ CONTAINSNC**</dt> </dl>  | Indica que una propiedad contiene una subcadena que no tiene en cuenta mayúsculas de minúsculas.<br/> |
 | <span id="FILTERACTION_CONTAINS"></span><span id="filteraction_contains"></span><dl> <dt>**FILTERACTION \_ CONTAINS**</dt> </dl>        | Indica que una propiedad contiene una subcadena que distingue mayúsculas de minúsculas.<br/>   |
 | <span id="FILTERACTION_ADDRESS"></span><span id="filteraction_address"></span><dl> <dt>**DIRECCIÓN \_ FILTERACTION**</dt> </dl>           | Contiene la dirección MAC.<br/>                                        |
 | <span id="FILTERACTION_ADDRESSANY"></span><span id="filteraction_addressany"></span><dl> <dt>**FILTERACTION \_ ADDRESSANY**</dt> </dl>  | Coincide con cualquier dirección MAC.<br/>                                         |
 | <span id="FILTERACTION_FROM"></span><span id="filteraction_from"></span><dl> <dt>**FILTERACTION \_ FROM**</dt> </dl>                    | Indica la dirección **DE MAC.**<br/>                              |
-| <span id="FILTERACTION_TO"></span><span id="filteraction_to"></span><dl> <dt>**FILTERACTION \_ A**</dt> </dl>                          | Indica la dirección **MAC para** .<br/>                                |
+| <span id="FILTERACTION_TO"></span><span id="filteraction_to"></span><dl> <dt>**FILTERACTION \_ EN**</dt> </dl>                          | Indica la dirección **MAC para** .<br/>                                |
 | <span id="FILTERACTION_FROMTO"></span><span id="filteraction_fromto"></span><dl> <dt>**FILTERACTION \_ FROMTO**</dt> </dl>              | Indica un emparejamiento **From/To** de direcciones MAC.<br/>                |
 | <span id="FILTERACTION_LARGEINT"></span><span id="filteraction_largeint"></span><dl> <dt>**FILTERACTION \_ LARGEINT**</dt> </dl>        | Contiene un entero grande.<br/>                                        |
-| <span id="FILTERACTION_TIME"></span><span id="filteraction_time"></span><dl> <dt>**FILTERACTION \_ TIME**</dt> </dl>                    | Contiene una **estructura SYSTEMTIME.**<br/>                             |
+| <span id="FILTERACTION_TIME"></span><span id="filteraction_time"></span><dl> <dt>**TIEMPO DE \_ FILTERACTION**</dt> </dl>                    | Contiene una **estructura SYSTEMTIME.**<br/>                             |
 | <span id="FILTERACTION_ADDR_ETHER"></span><span id="filteraction_addr_ether"></span><dl> <dt>**FILTERACTION \_ ADDR \_ ETHER**</dt> </dl> | Contiene una dirección MAC Ethernet.<br/>                                |
 | <span id="FILTERACTION_ADDR_TOKEN"></span><span id="filteraction_addr_token"></span><dl> <dt>**TOKEN DE \_ ADDR FILTERACTION \_**</dt> </dl> | Contiene una dirección MAC de anillo de token.<br/>                               |
-| <span id="FILTERACTION_ADDR_FDDI"></span><span id="filteraction_addr_fddi"></span><dl> <dt>**FILTERACTION \_ ADDR \_ FDDI**</dt> </dl>    | Contiene una dirección MAC FDDI.<br/>                                     |
+| <span id="FILTERACTION_ADDR_FDDI"></span><span id="filteraction_addr_fddi"></span><dl> <dt>**FILTERACTION \_ ADDR \_ FDDI**</dt> </dl>    | Contiene una dirección MAC DE FDDI.<br/>                                     |
 | <span id="FILTERACTION_ADDR_IPX"></span><span id="filteraction_addr_ipx"></span><dl> <dt>**FILTERACTION \_ ADDR \_ IPX**</dt> </dl>       | Contiene una dirección MAC IPX.<br/>                                     |
-| <span id="FILTERACTION_ADDR_IP"></span><span id="filteraction_addr_ip"></span><dl> <dt>**FILTERACTION \_ ADDR \_ IP**</dt> </dl>          | Contiene una dirección MAC IP.<br/>                                      |
+| <span id="FILTERACTION_ADDR_IP"></span><span id="filteraction_addr_ip"></span><dl> <dt>**IP DEL \_ ADDR FILTERACTION \_**</dt> </dl>          | Contiene una dirección MAC IP.<br/>                                      |
 | <span id="FILTERACTION_OID"></span><span id="filteraction_oid"></span><dl> <dt>**FILTERACTION \_ OID**</dt> </dl>                       | Contiene un identificador de objeto (OID).<br/>                             |
 
 
@@ -108,22 +108,22 @@ En la tabla siguiente se enumeran las marcas del operador miembro Action.
 
 | Valor                                                                                                                                                                                                        | Significado                                                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| <span id="FILTERACTION_INVALID"></span><span id="filteraction_invalid"></span><dl> <dt>**FILTERACTION \_ INVALID**</dt> </dl>                           | Indica una acción de filtro no válida.<br/>                                                                                  |
+| <span id="FILTERACTION_INVALID"></span><span id="filteraction_invalid"></span><dl> <dt>**FILTERACTION \_ NO ES VÁLIDO**</dt> </dl>                           | Indica una acción de filtro no válida.<br/>                                                                                  |
 | <span id="FILTERACTION_AND"></span><span id="filteraction_and"></span><dl> <dt>**FILTERACTION \_ Y**</dt> </dl>                                       | Indica una instrucción **AND** lógica.<br/>                                                                               |
 | <span id="FILTERACTION_OR"></span><span id="filteraction_or"></span><dl> <dt>**FILTERACTION \_ O**</dt> </dl>                                          | Indica una instrucción **OR** lógica.<br/>                                                                                |
-| <span id="FILTERACTION_XOR"></span><span id="filteraction_xor"></span><dl> <dt>**FILTERACTION \_ XOR**</dt> </dl>                                       | Indica una instrucción **OR** exclusiva lógica (XOR).<br/>                                                                |
+| <span id="FILTERACTION_XOR"></span><span id="filteraction_xor"></span><dl> <dt>**FILTERACTION \_ XOR**</dt> </dl>                                       | Indica una instrucción OR exclusiva **lógica** (XOR).<br/>                                                                |
 | <span id="FILTERACTION_NOT"></span><span id="filteraction_not"></span><dl> <dt>**FILTERACTION \_ NOT**</dt> </dl>                                       | Indica una instrucción **NOT** lógica.<br/>                                                                               |
 | <span id="FILTERACTION_EQUALNC"></span><span id="filteraction_equalnc"></span><dl> <dt>**FILTERACTION \_ EQUALNC**</dt> </dl>                           | La acción de filtro es igual y no tiene en cuenta las mayúsculas y minúsculas.<br/>                                                                         |
 | <span id="FILTERACTION_EQUAL"></span><span id="filteraction_equal"></span><dl> <dt>**FILTERACTION \_ EQUAL**</dt> </dl>                                 | La acción de filtro es igual y distingue mayúsculas de minúsculas.<br/>                                                                           |
-| <span id="FILTERACTION_NOTEQUALNC"></span><span id="filteraction_notequalnc"></span><dl> <dt>**FILTERACTION \_ NOTEQUALNC**</dt> </dl>                  | La **instrucción NOT** lógica es igual y no tiene en cuenta las mayúsculas y minúsculas.<br/>                                                             |
+| <span id="FILTERACTION_NOTEQUALNC"></span><span id="filteraction_notequalnc"></span><dl> <dt>**FILTERACTION \_ NOTEQUALNC**</dt> </dl>                  | La **instrucción NOT** lógica es igual y no tiene en cuenta mayúsculas de minúsculas.<br/>                                                             |
 | <span id="FILTERACTION_NOTEQUAL"></span><span id="filteraction_notequal"></span><dl> <dt>**FILTERACTION \_ NOTEQUAL**</dt> </dl>                        | La **instrucción NOT** lógica es igual y distingue mayúsculas de minúsculas.<br/>                                                            |
-| <span id="FILTERACTION_GREATERNC"></span><span id="filteraction_greaternc"></span><dl> <dt>**FILTERACTION \_ GREATERNC**</dt> </dl>                     | La acción de filtro es mayor que (>) y no tiene en cuenta las mayúsculas y minúsculas.<br/>                                                           |
+| <span id="FILTERACTION_GREATERNC"></span><span id="filteraction_greaternc"></span><dl> <dt>**FILTERACTION \_ GREATERNC**</dt> </dl>                     | La acción de filtro es mayor que (>) y no tiene en cuenta mayúsculas de minúsculas.<br/>                                                           |
 | <span id="FILTERACTION_GREATER"></span><span id="filteraction_greater"></span><dl> <dt>**FILTERACTION \_ GREATER**</dt> </dl>                           | La acción de filtro es mayor que (>) y distingue mayúsculas de minúsculas.<br/>                                                             |
-| <span id="FILTERACTION_LESSNC"></span><span id="filteraction_lessnc"></span><dl> <dt>**FILTERACTION \_ LESSNC**</dt> </dl>                              | La acción de filtro es menor que (<) y no tiene en cuenta las mayúsculas y minúsculas.<br/>                                                              |
+| <span id="FILTERACTION_LESSNC"></span><span id="filteraction_lessnc"></span><dl> <dt>**FILTERACTION \_ LESSNC**</dt> </dl>                              | La acción de filtro es menor que (<) y no tiene en cuenta mayúsculas de minúsculas.<br/>                                                              |
 | <span id="FILTERACTION_LESS"></span><span id="filteraction_less"></span><dl> <dt>**FILTERACTION \_ LESS**</dt> </dl>                                    | La acción de filtro es menor que (<) y distingue mayúsculas de minúsculas.<br/>                                                                |
-| <span id="FILTERACTION_GREATEREQUALNC"></span><span id="filteraction_greaterequalnc"></span><dl> <dt>**FILTERACTION \_ GREATEREQUALNC**</dt> </dl>      | La acción de filtro es mayor o igual que (>=) y no tiene en cuenta las mayúsculas y minúsculas.<br/>                                              |
+| <span id="FILTERACTION_GREATEREQUALNC"></span><span id="filteraction_greaterequalnc"></span><dl> <dt>**FILTERACTION \_ GREATEREQUALNC**</dt> </dl>      | La acción de filtro es mayor o igual que (>=) y no tiene en cuenta mayúsculas de minúsculas.<br/>                                              |
 | <span id="FILTERACTION_GREATEREQUAL"></span><span id="filteraction_greaterequal"></span><dl> <dt>**FILTERACTION \_ GREATEREQUAL**</dt> </dl>            | La acción de filtro es mayor o igual que (>=) y distingue mayúsculas de minúsculas.<br/>                                                |
-| <span id="FILTERACTION_LESSEQUALNC"></span><span id="filteraction_lessequalnc"></span><dl> <dt>**FILTERACTION \_ LESSEQUALNC**</dt> </dl>               | La acción de filtro es menor o igual que (<=) y no tiene en cuenta las mayúsculas y minúsculas.<br/>                                                 |
+| <span id="FILTERACTION_LESSEQUALNC"></span><span id="filteraction_lessequalnc"></span><dl> <dt>**FILTERACTION \_ LESSEQUALNC**</dt> </dl>               | La acción de filtro es menor o igual que (<=) y no tiene en cuenta mayúsculas de minúsculas.<br/>                                                 |
 | <span id="FILTERACTION_LESSEQUAL"></span><span id="filteraction_lessequal"></span><dl> <dt>**FILTERACTION \_ LESSEQUAL**</dt> </dl>                     | La acción de filtro es menor o igual que (<=) y distingue mayúsculas de minúsculas.<br/>                                                |
 | <span id="FILTERACTION_PLUS"></span><span id="filteraction_plus"></span><dl> <dt>**FILTERACTION \_ PLUS**</dt> </dl>                                    | Operador Add (+).<br/>                                                                                                    |
 | <span id="FILTERACTION_MINUS"></span><span id="filteraction_minus"></span><dl> <dt>**FILTERACTION \_ MENOS**</dt> </dl>                                 | Operador Subtract (-).<br/>                                                                                               |
@@ -193,7 +193,7 @@ Puntero a la dirección de tipo de kernel. Por ejemplo, MAC o IP.
 **lpLargeInt**
 </dt> <dd>
 
-DWORD **doble usado** en un Windows NT o Windows aplicación 2000.
+DWORD **doble usado** en una Windows NT o Windows 2000.
 
 </dd> <dt>
 
@@ -236,7 +236,7 @@ Reservado.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |

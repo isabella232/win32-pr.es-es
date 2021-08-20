@@ -45,7 +45,7 @@ Declara un registro de sampler.
 <tbody>
 <tr class="odd">
 <td><span id="sN"></span><span id="sn"></span><span id="SN"></span>s<em>N</em><br/></td>
-<td>[in] Registro de muestreador, donde <em>N</em> es un entero que denota el número de registro.<br/></td>
+<td>[in] Un registro de muestreador, <em>donde N</em> es un entero que denota el número de registro.<br/></td>
 </tr>
 <tr class="even">
 <td><span id="mode"></span><span id="MODE"></span><em>Modo</em><br/></td>
@@ -60,15 +60,15 @@ Declara un registro de sampler.
 <tbody>
 <tr class="odd">
 <td>default</td>
-<td><em>Filtro</em> (no puede usar los valores _COMPARISON o _TEXT), <em>AddressU/V/W,</em> <em>MinLOD/MaxLOD,</em> <em>MipLODBias,</em> <em>MaxAnisotropy,</em> <em>BorderColor[4]</em></td>
+<td><em>Filtro</em> (no puede usar los valores _COMPARISON o _TEXT), <em>AddressU/V/W,</em> <em>MinLOD/MaxLOD,</em> <em>MipLODBias,</em> <em>MaxAnisotropy</em>, <em>BorderColor[4]</em></td>
 </tr>
 <tr class="even">
 <td>comparación</td>
-<td><em>Filter</em>, <em>ComparisonFunction</em>, <em>AddressU/V/W,</em> <em>MinLOD,MaxLOD,</em> <em>MipLODBias,</em> <em>MaxAnisotropy</em>, <em>BorderColor[4]</em></td>
+<td><em>Filter</em>, <em>ComparisonFunction</em>, <em>AddressU/V/W,</em> <em>MinLOD,MaxLOD</em>, <em>MipLODBias,</em> <em>MaxAnisotropy</em>, <em>BorderColor[4]</em></td>
 </tr>
 <tr class="odd">
 <td>mono</td>
-<td><em>Filtro</em> (debe ser uno de los valores de _TEXT), <em>MonoFilterWidth,</em> <em>MonoFilterHeight</em> (estos dos estados son estado global del dispositivo), <em>MinLOD,</em> <em>MipLODBias,</em> <em>MaxAnisotropy</em></td>
+<td><em>Filter</em> (debe ser uno de los valores _TEXT), <em>MonoFilterWidth,</em> <em>MonoFilterHeight</em> (estos dos estados son el estado global del dispositivo), <em>MinLOD,</em> <em>MipLODBias,</em> <em>MaxAnisotropy</em></td>
 </tr>
 </tbody>
 </table>
@@ -82,13 +82,13 @@ Declara un registro de sampler.
 
  
 
-El modo restringe las instrucciones de ejemplo que se pueden usar; en esta tabla se enumeran los métodos de objeto de textura que se admiten para cada modo.
+El modo restringe las instrucciones de ejemplo que se pueden usar; En esta tabla se enumeran los métodos texture-object que se admiten para cada modo.
 
 
 
-| Un sampler que funciona en este modo | Puede usar estos Texture-Object métodos                                                                                                           |
+| Un muestreador que funciona en este modo | Puede usar estos Texture-Object métodos                                                                                                           |
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| default                          | [Ejemplo,](dx-graphics-hlsl-to-sample.md) [SampleLevel,](dx-graphics-hlsl-to-samplelevel.md) [SampleGrad](dx-graphics-hlsl-to-samplegrad.md) |
+| default                          | [Sample](dx-graphics-hlsl-to-sample.md), [SampleLevel](dx-graphics-hlsl-to-samplelevel.md), [SampleGrad](dx-graphics-hlsl-to-samplegrad.md) |
 | comparación                       | [SampleCmp](dx-graphics-hlsl-to-samplecmp.md), [SampleCmpLevelZero](dx-graphics-hlsl-to-samplecmplevelzero.md)                               |
 | mono                             | [SampleLevel](dx-graphics-hlsl-to-samplelevel.md)                                                                                             |
 
@@ -110,7 +110,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 \* - El uso de un muestreador en modo mono solo se admite en un sombreador de píxeles.
 
-Esta instrucción se incluye para ayudar a depurar un sombreador en ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
+Esta instrucción se incluye para ayudar a depurar un sombreador en el ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
 
 ## <a name="example"></a>Ejemplo
 
@@ -131,9 +131,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
 | [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
@@ -146,7 +146,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

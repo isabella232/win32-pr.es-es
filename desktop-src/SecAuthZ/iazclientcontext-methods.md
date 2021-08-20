@@ -17,7 +17,7 @@ La [**interfaz IAzClientContext**](/windows/desktop/api/Azroles/nn-azroles-iazcl
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**AccessCheck (método)**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck)
+-   [**Método AccessCheck**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-accesscheck)
 -   [**GetBusinessRuleString (método)**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-getbusinessrulestring)
 -   [**GetProperty (método)**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-getproperty)
 -   [**GetRoles (método)**](/windows/desktop/api/Azroles/nf-azroles-iazclientcontext-getroles)

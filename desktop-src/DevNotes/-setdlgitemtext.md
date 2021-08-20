@@ -48,13 +48,13 @@ BOOL _SetDlgItemText(
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------|-----------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Sqlunirl.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

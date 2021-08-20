@@ -1,11 +1,11 @@
 ---
 title: Método IDWriteLocalFontFileLoader GetFilePathLengthFromKey
-description: Obtiene la longitud de la ruta de acceso absoluta del archivo a partir de la clave de referencia del archivo de fuente.
+description: Obtiene la longitud de la ruta de acceso absoluta del archivo de la clave de referencia del archivo de fuente.
 ms.assetid: bdd84d75-5a7a-448a-a52c-0f5997ab07b9
 keywords:
-- Método GetFilePathLengthFromKey de escritura directa
+- Método GetFilePathLengthFromKey De escritura directa
 - Método GetFilePathLengthFromKey direct write , interfaz IDWriteLocalFontFileLoader
-- IdWriteLocalFontFileLoader interface Direct Write , GetFilePathLengthFromKey (método GetFilePathLengthFromKey)
+- IdWriteLocalFontFileLoader interface Direct Write , Método GetFilePathLengthFromKey
 topic_type:
 - apiref
 api_name:
@@ -25,7 +25,7 @@ ms.locfileid: "117816356"
 ---
 # <a name="idwritelocalfontfileloadergetfilepathlengthfromkey-method"></a>Método IDWriteLocalFontFileLoader::GetFilePathLengthFromKey
 
-Obtiene la longitud de la ruta de acceso absoluta del archivo a partir de la clave de referencia del archivo de fuente.
+Obtiene la longitud de la ruta de acceso absoluta del archivo de la clave de referencia del archivo de fuente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -88,7 +88,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

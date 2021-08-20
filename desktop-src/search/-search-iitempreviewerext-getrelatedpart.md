@@ -46,7 +46,7 @@ HRESULT GetRelatedPart(
 
 Tipo: **DWORD**
 
-Identificador de contexto de la operación. Invalide el valor predeterminado de **dwContext** para establecer el identificador de contexto en un valor de su elección.
+Identificador de contexto de la operación. Invalide el valor predeterminado de **dwContext** para establecer el identificador de contexto en el valor que elija.
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 La [**interfaz IItemPreviewerExt**](-search-iitempreviewerext.md) solo se admite en Windows XP y Windows Server 2003 y ya no se debe usar.
 
-Para obtener una vista previa de los datos adjuntos con un controlador de protocolo de terceros en equipos que ejecutan Windows XP o Windows Server 2003, puede ser necesario usar la interfaz [**IItemPreviewerExt**](-search-iitempreviewerext.md) y las SIGUIENTES API: las interfaces [**ISearchProtocolUI,**](-search-isearchprotocolui.md) [**IItemPropertyBag**](iitempropertybag.md) e [**ISearchItem,**](-search-isearchitem.md) la estructura [**LINKINFO**](-search-linkinfo.md) y la enumeración [**LINKTYPE.**](-search-linktype.md)
+Para obtener una vista previa de los datos adjuntos con un controlador de protocolo de terceros en equipos que ejecutan Windows XP o Windows Server 2003, puede que sea necesario usar la interfaz [**IItemPreviewerExt**](-search-iitempreviewerext.md) y las siguientes API: las interfaces [**ISearchProtocolUI,**](-search-isearchprotocolui.md) [**IItemPropertyBag**](iitempropertybag.md) e [**ISearchItem,**](-search-isearchitem.md) la estructura [**LINKINFO**](-search-linkinfo.md) y la enumeración [**LINKTYPE.**](-search-linktype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,13 +95,13 @@ Para obtener una vista previa de los datos adjuntos con un controlador de protoc
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp2\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP2 \[\]<br/> |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 | Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 3.0<br/>          |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

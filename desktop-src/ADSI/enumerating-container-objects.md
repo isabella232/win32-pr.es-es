@@ -16,7 +16,7 @@ ms.locfileid: "118428564"
 
 Por convención, todos los elementos de una enumeración en ADSI deben ser del mismo tipo de datos de Automation. Por ejemplo, una enumeración no debe devolver algunos elementos como **UNA VARIANTE** de tipo **VT \_ I4** y otros como **UNA VARIANTE** de tipo **VT \_ BSTR**.
 
-Para enumerar una lista de elementos que mantiene un objeto, un cliente solicita la creación de un objeto de enumeración para el tipo específico de información que se muestra. En ADSI, el cliente puede enumerar los objetos en objetos de espacio de nombres, objetos de contenedor genéricos, objetos de colección, objetos miembro u objetos de esquema. ADSI proporciona un filtro que se puede establecer y modificar para limitar las coincidencias de cualquier enumeración a través de la [**propiedad IADsContainer.Filter.**](iadscontainer-property-methods.md) Puede encontrar ejemplos de implementaciones de objetos enumeradores en el código de componente de proveedor de ejemplo para los siguientes objetos de contenedor de ADs.
+Para enumerar una lista de elementos que mantiene un objeto, un cliente solicita la creación de un objeto de enumeración para el tipo específico de información que se muestra. En ADSI, el cliente puede enumerar los objetos en objetos de espacio de nombres, objetos de contenedor genéricos, objetos de colección, objetos miembro u objetos de esquema. ADSI proporciona un filtro que se puede establecer y modificar para limitar las coincidencias en cualquier enumeración a través de la [**propiedad IADsContainer.Filter.**](iadscontainer-property-methods.md) Puede encontrar ejemplos de implementaciones de objetos enumeradores en el código de componente de proveedor de ejemplo para los siguientes objetos de contenedor de ADs.
 
 
 

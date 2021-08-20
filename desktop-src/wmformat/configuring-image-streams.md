@@ -17,7 +17,7 @@ ms.locfileid: "117848970"
 ---
 # <a name="configuring-image-streams"></a>Configuración de imágenes Secuencias
 
-Los flujos de imágenes contienen imágenes fijas en formato JPEG. Aunque las secuencias de imágenes son como secuencias de vídeo en las que toman imágenes sin comprimir como entradas, requieren una configuración ligeramente diferente. Para configurar un flujo de imágenes, debe establecer los valores de los miembros de las estructuras de configuración de vídeo como se muestra en la tabla siguiente.
+Los flujos de imágenes contienen imágenes fijas en formato JPEG. Aunque las secuencias de imágenes son como secuencias de vídeo en las que toman imágenes sin comprimir como entradas, requieren una configuración ligeramente diferente. Para configurar un flujo de imágenes, debe establecer los valores de los miembros de las estructuras de configuración de vídeo, como se muestra en la tabla siguiente.
 
 
 
@@ -56,7 +56,7 @@ Los flujos de imágenes contienen imágenes fijas en formato JPEG. Aunque las se
 
 <dl> <dt>
 
-[**Configuración común a todas las Secuencias**](configuration-common-to-all-streams.md)
+[**Configuración común a todos los Secuencias**](configuration-common-to-all-streams.md)
 </dt> <dt>
 
 [**Configuración de Secuencias**](configuring-streams.md)

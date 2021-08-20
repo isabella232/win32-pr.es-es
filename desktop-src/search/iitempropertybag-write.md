@@ -1,7 +1,7 @@
 ---
 description: Hace que una o varias propiedades se guarden en el bolsa de propiedades. La interfaz IItemPropertyBag solo se admite en Windows XP y Windows Server 2003 y ya no se debe usar.
 ms.assetid: 35491fbc-fb1c-4bad-86e8-9f19856ed7cb
-title: IItemPropertyBag::Write (método)
+title: IItemPropertyBag::Write (Método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,9 +19,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117863114"
 ---
-# <a name="iitempropertybagwrite-method"></a>IItemPropertyBag::Write (método)
+# <a name="iitempropertybagwrite-method"></a>IItemPropertyBag::Write (Método)
 
-Hace que una o varias propiedades se guarden en el bolsa de propiedades. La [**interfaz IItemPropertyBag**](iitempropertybag.md) solo se admite en Windows XP y Windows Server 2003 y ya no se debe usar.
+Hace que una o varias propiedades se guarden en el bolsa de propiedades. La [**interfaz IItemPropertyBag**](iitempropertybag.md) solo se admite en Windows XP y Windows Server 2003, y ya no se debe usar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -67,9 +67,9 @@ Si el método se realiza correctamente, devuelve S \_ OK. De lo contrario, devue
 
 ## <a name="remarks"></a>Comentarios
 
-La [**interfaz IItemPropertyBag**](iitempropertybag.md) solo se admite en Windows XP y Windows Server 2003 y ya no se debe usar.
+La [**interfaz IItemPropertyBag**](iitempropertybag.md) solo se admite en Windows XP y Windows Server 2003, y ya no se debe usar.
 
-Para obtener una vista previa de los datos adjuntos con un controlador de protocolo de terceros en equipos que ejecutan Windows XP o Windows Server 2003, puede ser necesario usar la interfaz [**IItemPropertyBag**](iitempropertybag.md) y las siguientes API: las interfaces [**ISearchProtocolUI,**](-search-isearchprotocolui.md) [**IItemPreviewerExt**](-search-iitempreviewerext.md) e [**ISearchItem,**](-search-isearchitem.md) las estructuras [**LINKINFO**](-search-linkinfo.md) y [**ITEMPROP**](/windows/desktop/api/subsmgr/ns-subsmgr-itemprop) y la enumeración [**LINKTYPE.**](-search-linktype.md)
+Para obtener una vista previa de los datos adjuntos con un controlador de protocolo de terceros en equipos que ejecutan Windows XP o Windows Server 2003, puede ser necesario usar la interfaz [**IItemPropertyBag**](iitempropertybag.md) y las siguientes API: las interfaces [**ISearchProtocolUI**](-search-isearchprotocolui.md), [**IItemPreviewerExt**](-search-iitempreviewerext.md) e [**ISearchItem,**](-search-isearchitem.md) las estructuras [**LINKINFO**](-search-linkinfo.md) y [**ITEMPROP**](/windows/desktop/api/subsmgr/ns-subsmgr-itemprop) y la enumeración [**LINKTYPE.**](-search-linktype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,13 +77,13 @@ Para obtener una vista previa de los datos adjuntos con un controlador de protoc
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp2\]<br/> |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 | Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 3.0<br/>          |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

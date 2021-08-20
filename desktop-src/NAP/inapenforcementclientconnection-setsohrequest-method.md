@@ -3,9 +3,9 @@ title: Método INapEnforcementClientConnection SetSoHRequest (NapEnforcementClie
 description: Establece soH-request.
 ms.assetid: 87dbb982-a337-4644-a2fe-970bfdd6c140
 keywords:
-- Método NAP de SetSoHRequest
-- Método NAP de SetSoHRequest, interfaz INapEnforcementClientConnection
-- INapEnforcementClientConnection interface NAP , SetSoHRequest method
+- Nap del método SetSoHRequest
+- Método NAP de SetSoHRequest , interfaz INapEnforcementClientConnection
+- INapEnforcementClientConnection interface NAP , Método SetSoHRequest
 topic_type:
 - apiref
 api_name:
@@ -72,9 +72,9 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 ## <a name="remarks"></a>Comentarios
 
-Lo establece NapAgent y lo consultan los aplicadores para enviarlos en la conexión.
+Lo establece NapAgent y los aplicadores lo consultan para enviarlos en la conexión.
 
-Un paquete SoH de longitud de cero bytes no es válido.
+Un paquete SoH de longitud cero byte no es válido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ Un paquete SoH de longitud de cero bytes no es válido.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

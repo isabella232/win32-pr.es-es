@@ -24,7 +24,7 @@ El **objeto Attributes** se usa para realizar las siguientes tareas:
 -   Agregue o quite un objeto [**Attribute**](attribute.md) específico de la colección.
 -   Borre la colección.
 -   Recupere el número de atributos de la colección.
--   Recuperar un objeto [**Attribute**](attribute.md) específico de la colección.
+-   Recupera un objeto [**Attribute**](attribute.md) específico de la colección.
 -   Recorrer en iteración la colección.
 
 ## <a name="members"></a>Miembros
@@ -74,7 +74,7 @@ No **se puede** crear el objeto Attributes.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |

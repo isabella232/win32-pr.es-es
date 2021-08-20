@@ -29,7 +29,7 @@ Consulta el número de muestras en una vista de recursos de sombreador determina
 | Elemento                                                                                                               | Descripción                                                    |
 |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
 | <span id="dest"></span><span id="DEST"></span>*Dest*<br/>                                                    | \[en \] La dirección de los resultados de la operación.<br/> |
-| <span id="srcResource"></span><span id="srcresource"></span><span id="SRCRESOURCE"></span>*srcResource*<br/> | \[en \] El recurso del sombreador.<br/>                         |
+| <span id="srcResource"></span><span id="srcresource"></span><span id="SRCRESOURCE"></span>*srcResource*<br/> | \[en \] El recurso de sombreador.<br/>                         |
 
 
 
@@ -37,11 +37,11 @@ Consulta el número de muestras en una vista de recursos de sombreador determina
 
 ## <a name="remarks"></a>Comentarios
 
-Esta instrucción devuelve el número de muestras para el recurso especificado o el rasterizador. Solo es válido para los recursos que se pueden cargar mediante [**ld2dms**](ld2dms--sm4-1---asm-.md) a menos que el rasterizador se especifique *como srcResource*. *srcResource podría* ser un registro t \# (una vista de recursos de sombreador) o un registro de rasterizador.
+Esta instrucción devuelve el número de muestras para el recurso especificado o el rasterizador. Solo es válido para los recursos que se pueden cargar mediante [**ld2dms,**](ld2dms--sm4-1---asm-.md) a menos que el rasterizador se especifique *como srcResource*. *srcResource* podría ser un registro t \# (una vista de recursos de sombreador) o un registro de rasterizador.
 
 La instrucción calcula el vector (SampleCount,0,0,0).
 
-Swzzle en *srcResource permite* que los valores devueltos se desdoleguen arbitrariamente antes de que se escriban en el destino. El valor devuelto es de punto flotante, a menos que se utilice el modificador uint, en cuyo caso el \_ valor devuelto es integer. Si no hay ningún recurso enlazado a la ranura especificada, se devuelve 0.
+Swzzle en *srcResource* permite que los valores devueltos se desdoguen arbitrariamente antes de que se escriban en el destino. El valor devuelto es de punto flotante, a menos que se utilice el modificador uint, en cuyo caso el \_ valor devuelto es entero. Si no hay ningún recurso enlazado a la ranura especificada, se devuelve 0.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -63,9 +63,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
 | [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
@@ -78,7 +78,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

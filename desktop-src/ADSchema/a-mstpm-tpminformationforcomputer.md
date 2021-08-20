@@ -48,7 +48,7 @@ Este atributo vincula un objeto Computer a un objeto TPM.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------|
 | Id. de vínculo                | 2182                                      |
 | MAPI-Id                | \-                                        |

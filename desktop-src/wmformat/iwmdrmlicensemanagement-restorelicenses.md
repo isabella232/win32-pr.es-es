@@ -99,7 +99,7 @@ La copia de seguridad puede realizarse desde el equipo local o desde otro equipo
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

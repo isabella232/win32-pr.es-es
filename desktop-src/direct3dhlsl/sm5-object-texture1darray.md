@@ -22,7 +22,7 @@ ms.locfileid: "118508681"
 ---
 # <a name="texture1darray"></a>Texture1DArray
 
-Tipo Texture1DArray ([tal y como existe en Shader Model 4)](dx-graphics-hlsl-to-type.md)más variables de recursos. Este objeto de textura admite los métodos siguientes, además de los métodos del modelo de sombreador 4.
+Tipo Texture1DArray ([tal como existe en Shader Model 4)](dx-graphics-hlsl-to-type.md)más variables de recursos. Este objeto de textura admite los métodos siguientes además de los métodos de Shader Model 4.
 
 
 
@@ -33,8 +33,8 @@ Tipo Texture1DArray ([tal y como existe en Shader Model 4)](dx-graphics-hlsl-to-
 | [**Mips. Operador\[\]\[\]**](sm5-object-texture1darray-mipsoperatorindex.md) | Obtiene una variable de recurso de solo lectura.                                                        |
 | [**Operador\[\]**](sm5-object-texture1darray-operatorindex.md)              | Obtiene una variable de recurso de solo lectura.                                                        |
 | [**Muestra**](texture1darray-sample.md)                                      | Muestrea una textura.                                                                         |
-| [**SampleBias**](texture1darray-samplebias.md)                              | Muestrea una textura después de aplicar el valor de sesgo al nivel de mapa mip.                      |
-| [**SampleCmp**](texture1darray-samplecmp.md)                                | Muestrea una textura mediante un valor de comparación para rechazar muestras.                             |
+| [**SampleBias**](texture1darray-samplebias.md)                              | Muestrea una textura después de aplicar el valor de sesgo al nivel mipmap.                      |
+| [**SampleCmp**](texture1darray-samplecmp.md)                                | Muestrea una textura con un valor de comparación para rechazar muestras.                             |
 | [**SampleCmpLevelZero**](texture1darray-samplecmplevelzero.md)              | Muestrea una textura (solo mipmap nivel 0), usando un valor de comparación para rechazar muestras.       |
 | [**SampleGrad**](texture1darray-samplegrad.md)                              | Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra. |
 | [**SampleLevel**](texture1darray-samplelevel.md)                            | Muestrea una textura en el nivel de mapa mip especificado.                                           |
@@ -51,7 +51,7 @@ Este objeto se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | Sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | Sí       |
 
 
 
@@ -61,7 +61,7 @@ Este objeto es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -69,7 +69,7 @@ Este objeto es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

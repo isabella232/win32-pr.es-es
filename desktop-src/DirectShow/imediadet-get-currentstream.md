@@ -1,5 +1,5 @@
 ---
-description: El método \_ get CurrentStream recupera el número de secuencia utilizado actualmente por el detector de medios.
+description: El método \_ get CurrentStream recupera el número de secuencia usado actualmente por el detector de medios.
 ms.assetid: 0f590498-e639-4b6b-be1d-f1e4a36282cb
 title: Método IMediaDet::get_CurrentStream (Qedit.h)
 ms.topic: reference
@@ -79,14 +79,14 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [**IMediaDet (interfaz)**](imediadet.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

@@ -10,10 +10,10 @@ keywords:
 - Formato de sistemas avanzados (ASF), constantes globales
 - ASF (formato de sistemas avanzados), constantes globales
 - Windows SDK de formato multimedia, constantes
-- Formato de sistemas avanzados (ASF),constantes
-- ASF (formato de sistemas avanzados),constantes
+- Formato de sistemas avanzados (ASF), constantes
+- ASF (formato de sistemas avanzados), constantes
 - constantes globales, valores GUID
-- constants,GUID values
+- constants,guid values
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 10564b0e845140b7c0588de0929e5f29c46fab34b5628ab3e18095d8ce6a48ad
@@ -32,10 +32,10 @@ En las secciones siguientes se enumeran los valores GUID usados en el SDK Window
 | Sección                                                  | Descripción                                                                                                               |
 |----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | [Identificadores de interfaz](interface-identifiers.md)       | Enumera los valores GUID y las constantes asociadas para las interfaces admitidas por el SDK Windows Media Format.              |
-| [Identificadores de tipo de medio](media-type-identifiers.md)     | Enumera los valores GUID y las constantes asociadas para los tipos de medios admitidos por el SDK Windows Media Format.             |
+| [Identificadores de tipo de medio](media-type-identifiers.md)     | Enumera los valores GUID y las constantes asociadas para los tipos de medios admitidos por Windows SDK de formato multimedia.             |
 | [Tipos de exclusión mutua](mutual-exclusion-types.md)     | Enumera los valores GUID y las constantes asociadas para los tipos de exclusión mutua admitidos por el SDK Windows Media Format.  |
-| [Tipos de uso compartido de ancho de banda](bandwidth-sharing-types.md)   | Enumera los valores GUID y las constantes asociadas para los tipos de uso compartido de ancho de banda admitidos por Windows SDK de formato multimedia. |
-| [Tipos de categoría de marca de agua](watermark-category-types.md) | Enumera los valores GUID y las constantes asociadas que identifican las marcas de agua DMO categorías.                                 |
+| [Tipos de uso compartido de ancho de banda](bandwidth-sharing-types.md)   | Enumera los valores GUID y las constantes asociadas para los tipos de uso compartido de ancho de banda admitidos por el SDK Windows Media Format. |
+| [Tipos de categoría de marca de agua](watermark-category-types.md) | Enumera los valores GUID y las constantes asociadas que identifican las marcas DMO categorías.                                 |
 
 
 

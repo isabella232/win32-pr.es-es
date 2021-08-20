@@ -32,11 +32,11 @@ Indica si la contraseña de la cuenta a la que hace referencia este atributo ha 
 | CN                | ms-DS-User-Password-Expired          |
 | Ldap-Display-Name | msDS-UserPasswordExpired             |
 | Size              | \-                                   |
-| Privilegio actualizar  | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1858              |
 | System-Id-Guid    | 565c7ab5-e13e-47f6-abb5-de741806f125 |
-| Syntax            | [**Booleana**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -48,7 +48,7 @@ Indica si la contraseña de la cuenta a la que hace referencia este atributo ha 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |

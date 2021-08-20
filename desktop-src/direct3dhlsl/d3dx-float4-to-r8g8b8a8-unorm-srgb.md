@@ -1,6 +1,6 @@
 ---
 title: D3DX_FLOAT4_to_R8G8B8A8_UNORM_SRGB función
-description: Empaqueta el XMFLOAT4 especificado en un SRGB DXGI \_ FORMAT \_ R8G8B8A8 \_ \_ UNORM.
+description: Empaqueta el XMFLOAT4 especificado de nuevo en un DXGI \_ FORMAT \_ R8G8B8A8 \_ UNORM \_ SRGB.
 ms.assetid: 66580428-6f06-4e0c-bf89-01f03c7304ad
 keywords:
 - D3DX_FLOAT4_to_R8G8B8A8_UNORM_SRGB función HLSL
@@ -23,7 +23,7 @@ ms.locfileid: "118516283"
 ---
 # <a name="d3dx_float4_to_r8g8b8a8_unorm_srgb-function"></a>Función D3DX \_ FLOAT4 \_ a \_ R8G8B8A8 \_ UNORM \_ SRGB
 
-Empaqueta el XMFLOAT4 especificado en un SRGB DXGI \_ FORMAT \_ R8G8B8A8 \_ \_ UNORM.
+Empaqueta el XMFLOAT4 especificado de nuevo en un DXGI \_ FORMAT \_ R8G8B8A8 \_ UNORM \_ SRGB.
 
 ## <a name="syntax"></a>Sintaxis
 

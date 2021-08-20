@@ -1,7 +1,7 @@
 ---
-description: Estadísticas de recursos recopiladas por el ResourceManager de D3DDEVINFO \_ cuando se usa el mecanismo de consulta asincrónica.
+description: Estadísticas de recursos recopiladas por ResourceManager D3DDEVINFO \_ cuando se usa el mecanismo de consulta asincrónico.
 ms.assetid: f4d9c6db-4002-439c-9a88-485763badc82
-title: Estructura D3DRESOURCESTATS (D3D9Types. h)
+title: Estructura D3DRESOURCESTATS (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: f6f549011b9750f69187c0e0cbf34ec94764c9ef
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: dc992c5b8246ce302cda8924b8521c923575c8914c83b35c8c1e789e4bc1c826
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118527477"
 ---
 # <a name="d3dresourcestats-structure"></a>Estructura D3DRESOURCESTATS
 
-Estadísticas de recursos recopiladas por el [**\_ ResourceManager de D3DDEVINFO**](d3ddevinfo-resourcemanager.md) cuando se usa el mecanismo de consulta asincrónica.
+Estadísticas de recursos recopiladas por [**\_ ResourceManager D3DDEVINFO**](d3ddevinfo-resourcemanager.md) cuando se usa el mecanismo de consulta asincrónico.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,11 +52,11 @@ typedef struct D3DRESOURCESTATS {
 **bThrashing**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Indica si se está produciendo la paginación.
+Indica si se está produciendo el thrashing.
 
 </dd> <dt>
 
@@ -122,7 +122,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Número de objetos establecidos en el dispositivo, que ya están en la memoria de vídeo.
+Número de objetos establecidos en el dispositivo, que ya están en memoria de vídeo.
 
 </dd> <dt>
 
@@ -144,7 +144,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Número de bytes en la memoria de vídeo.
+Número de bytes en memoria de vídeo.
 
 </dd> <dt>
 
@@ -176,7 +176,7 @@ Número total de bytes de objetos administrados.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

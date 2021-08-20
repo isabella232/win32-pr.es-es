@@ -30,7 +30,7 @@ Las funciones se agrupan de la siguiente manera:
 -   [Funciones avanzadas para usar fuera de un contexto de dispositivo](advanced-functions-for-use-outside-of-a-device-context.md)
 -   [Funciones de calibración y caracterización de dispositivos](device-calibration-and-characterization-functions.md)
 -   [Funciones de administración de perfiles](profile-management-functions.md)
--   [Funciones de ICM2 para módulos de administración de colores (CMM) que se implementarán](wcs-functions-for-color-management-modules--cmms--to-implement.md)
+-   [Funciones de ICM2 para módulos de administración de colores (CMM) para implementar](wcs-functions-for-color-management-modules--cmms--to-implement.md)
 -   [Lista alfabética de todas las funciones de WCS](alphabetical-list-of-all-wcs-functions.md)
 
  

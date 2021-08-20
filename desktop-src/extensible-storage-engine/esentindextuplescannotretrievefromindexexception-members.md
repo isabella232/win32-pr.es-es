@@ -19,7 +19,7 @@ ms.locfileid: "118495360"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Clase base para JET_err. Excepciones IndexTuplesCannotRetrieveFromIndex.
+Clase base para JET_err. IndexTuplesCannotRetrieveFromIndex exceptions.
 
 El [tipo EsentIndexTuplesCannotRetrieveFromIndexException](./esentindextuplescannotretrievefromindexexception-class.md) expone los miembros siguientes.
 
@@ -164,7 +164,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

@@ -15,7 +15,7 @@ ms.locfileid: "117784711"
 
 El aislamiento es el objetivo principal de un entorno de ejecución de AppContainer. Al aislar una aplicación de recursos innecesarios y otras aplicaciones, se minimizan las oportunidades de manipulación malintencionada. La concesión de acceso basada en privilegios mínimos impide que las aplicaciones y los usuarios accedan a recursos más allá de sus derechos. El control del acceso a los recursos protege el proceso, el dispositivo y la red.
 
-La mayoría de las vulnerabilidades Windows comienzan con la aplicación. Algunos ejemplos comunes incluyen la salida de una aplicación de su explorador o el envío de un documento no Internet Explorer, así como la explotación de complementos, como flash. Entre más se puedan aislar estas aplicaciones en un AppContainer, más seguro serán el dispositivo y los recursos. Incluso si se aprovecha la vulnerabilidad de una aplicación, la aplicación no puede acceder a recursos más allá de lo que se concede a AppContainer. Las aplicaciones malintencionadas no pueden asumir el resto de la máquina.
+La mayoría de las vulnerabilidades Windows empiezan por la aplicación. Algunos ejemplos comunes incluyen la salida de una aplicación de su explorador o el envío de un documento no Internet Explorer, así como la explotación de complementos, como flash. Entre más se puedan aislar estas aplicaciones en un AppContainer, más seguro serán el dispositivo y los recursos. Incluso si se aprovecha la vulnerabilidad de una aplicación, la aplicación no puede acceder a recursos más allá de lo que se concede a AppContainer. Las aplicaciones malintencionadas no pueden asumir el resto de la máquina.
 
 ## <a name="credential-isolation"></a>Aislamiento de credenciales
 

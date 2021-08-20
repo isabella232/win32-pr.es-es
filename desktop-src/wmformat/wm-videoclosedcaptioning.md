@@ -29,13 +29,13 @@ g \_ wszWMVideoClosedCaptioning
 
 ## <a name="data-type"></a>Tipo de datos
 
-**WMT \_ TYPE \_ BOOL**
+**TIPO WMT \_ \_ BOOL**
 
 ## <a name="remarks"></a>Comentarios
 
 Este atributo se usa para la televisión de difusión y otro contenido de vídeo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

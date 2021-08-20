@@ -44,21 +44,21 @@ typedef enum D3DXPRIORITY_TYPE {
 <span id="D3DXPRIORITY_LOW"></span><span id="d3dxpriority_low"></span>**D3DXPRIORITY \_ LOW**
 </dt> <dd>
 
-La pista debe combinarse con todas las pistas de prioridad baja antes de que la mezcla de prioridad baja se mezcle con la mezcla de prioridad alta.
+La pista debe combinarse con todas las pistas de prioridad baja antes de que la combinación de prioridad baja se mezcle con la combinación de prioridad alta.
 
 </dd> <dt>
 
 <span id="D3DXPRIORITY_HIGH"></span><span id="d3dxpriority_high"></span>**D3DXPRIORITY \_ HIGH**
 </dt> <dd>
 
-La pista debe combinarse con todas las pistas de prioridad alta antes de que la mezcla de prioridad alta se mezcle con la mezcla de prioridad baja.
+La pista debe combinarse con todas las pistas de prioridad alta antes de que la combinación de prioridad alta se mezcle con la combinación de prioridad baja.
 
 </dd> <dt>
 
 <span id="D3DXPRIORITY_FORCE_DWORD"></span><span id="d3dxpriority_force_dword"></span>**D3DXPRIORITY \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase en un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ Las pistas con la misma prioridad se combinan y los dos valores resultantes se m
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

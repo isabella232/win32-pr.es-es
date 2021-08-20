@@ -3,7 +3,7 @@ title: WINBIO_PRESENCE estructura (Winbio \_ types.h)
 description: Contiene información sobre la presencia de un individuo cuya presencia se está supervisando.
 ms.assetid: 810D452E-DDFA-4AB2-AEFB-0C170C0C18D4
 keywords:
-- WINBIO_PRESENCE estructura Windows API de Marco biométrico
+- WINBIO_PRESENCE estructura Windows API de marco biométrico
 - PWINBIO_PRESENCE puntero de estructura Windows BIOMETRIC Framework API
 topic_type:
 - apiref
@@ -22,7 +22,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118909583"
 ---
-# <a name="winbio_presence-structure"></a>Estructura WINBIO \_ PRESENCE
+# <a name="winbio_presence-structure"></a>Estructura DE \_ WINBIO PRESENCE
 
 Contiene información sobre la presencia de un individuo cuya presencia se está supervisando.
 
@@ -65,7 +65,7 @@ Calificador de subfactor biométrica para el factor biométrico que se usa para 
 **Estado**
 </dt> <dd>
 
-Estado del procedimiento de identificación de la persona.
+Estado del procedimiento de identificación para el individuo.
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ La identidad del individuo cuya presencia se está supervisando, una vez que se 
 **TrackingId**
 </dt> <dd>
 
-Entero generado por el adaptador e identifica de forma única a la persona. Se garantiza que el identificador de seguimiento que el adaptador asigna a un individuo determinado sea constante, siempre y cuando esa persona permanezca en el marco de la cámara.
+Entero generado por el adaptador e identifica de forma única al individuo. Se garantiza que el identificador de seguimiento que el adaptador asigna a un individuo determinado sea constante, siempre y cuando esa persona permanezca en el marco de la cámara.
 
 </dd> <dt>
 
@@ -104,15 +104,15 @@ Información específica del factor sobre la posición de un individuo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La [**función EngineAdapterIdentifyAll**](/windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_identify_all_fn) crea una matriz de estructuras **DE WINBIO \_ PRESENCE** y envía esta matriz al servicio biométrico. El servicio biométrico usa la matriz para actualizar su modelo interno de seres humanos cerca del equipo.
+La [**función EngineAdapterIdentifyAll**](/windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_identify_all_fn) crea una matriz de estructuras **DE WINBIO \_ PRESENCE** y envía esta matriz al servicio biométrico. El servicio biométrico usa la matriz para actualizar su modelo interno de humanos cerca del equipo.
 
-En función de los resultados de esta actualización, el servicio biométrico puede generar una estructura RESULT de [**WINBIO \_ ASYNC \_**](/windows/desktop/api/Winbio/ns-winbio-winbio_async_result) para la función [**WinBioMonitorPresence**](/windows/desktop/api/winbio/nf-winbio-winbiomonitorpresence) para todos los clientes con monitores de presencia activa. EL **RESULTADO \_ DE WINBIO \_ ASYNC. El** miembro de operación de la estructura contiene **WINBIO \_ OPERATION MONITOR \_ \_ PRESENCE** y el **RESULTADO de WINBIO \_ \_ ASYNC. El miembro Parameters.MonitorPresence.ChangeType** proporciona información adicional sobre el estado de la persona.
+En función de los resultados de esta actualización, el servicio biométrico puede generar una estructura RESULT de [**WINBIO \_ ASYNC \_**](/windows/desktop/api/Winbio/ns-winbio-winbio_async_result) para la función [**WinBioMonitorPresence**](/windows/desktop/api/winbio/nf-winbio-winbiomonitorpresence) para todos los clientes con monitores de presencia activos. EL **RESULTADO \_ DE WINBIO \_ ASYNC. El** miembro de la operación de la estructura **contiene WINBIO \_ OPERATION MONITOR \_ \_ PRESENCE** y el **RESULTADO de WINBIO \_ \_ ASYNC. El miembro Parameters.MonitorPresence.ChangeType** proporciona información adicional sobre el estado de la persona.
 
-Cuando un individuo que el adaptador del motor asocia a un identificador de seguimiento determinado aparece en el flujo de entrada por primera vez, el servicio biométrico genera una estructura DE RESULTADOS [**DE WINBIO \_ ASYNC \_**](/windows/desktop/api/Winbio/ns-winbio-winbio_async_result) del lado cliente donde el resultado **de WINBIO \_ \_ ASYNC. El miembro Parameters.MonitorPresence.ChangeType** **es WINBIO \_ CHANGE TYPE \_ \_ ARRIVAL**. Esta estructura se envía a la función de devolución de llamada de la aplicación o a la cola de mensajes de la aplicación antes que cualquier otra estructura RESULT de **WINBIO \_ ASYNC \_** donde el **RESULTADO de WINBIO \_ \_ ASYNC. Parameters.MonitorPresence.PresenceArray incluye** una **estructura PRESENCE \_ de WINBIO** con el mismo valor para **WINBIO \_ PRESENCE. TrackingId**.
+Cuando un individuo que el adaptador del motor asocia a un identificador de seguimiento determinado aparece en el flujo de entrada por primera vez, el servicio biométrico genera una estructura DE RESULTADOS [**DE WINBIO \_ ASYNC \_**](/windows/desktop/api/Winbio/ns-winbio-winbio_async_result) del lado cliente donde el resultado **de WINBIO \_ \_ ASYNC. El miembro Parameters.MonitorPresence.ChangeType** **es WINBIO \_ CHANGE TYPE \_ \_ ARRIVAL**. Esta estructura se envía a la función de devolución de llamada de la aplicación o a la cola de mensajes de la aplicación antes que cualquier otra estructura RESULT de **WINBIO \_ ASYNC \_** donde **resulte WINBIO \_ \_ ASYNC. Parameters.MonitorPresence.PresenceArray incluye** una **estructura PRESENCE \_ de WINBIO** con el mismo valor para **WINBIO \_ PRESENCE. TrackingId**.
 
-Las siguientes combinaciones de valores en la matriz **de estructuras DE \_ WINBIO PRESENCE** que el RESULTADO de **\_ WINBIO \_ ASYNC. El miembro Parameters.MonitorPresence.PresenceArray** indica tipos específicos de cambios en el estado de una persona.
+Las siguientes combinaciones de valores en la matriz **de estructuras DE PRESENCIA \_ DE WINBIO** que el **RESULTADO de \_ WINBIO \_ ASYNC. El miembro Parameters.MonitorPresence.PresenceArray** indica tipos específicos de cambios en el estado de un individuo.
 
 -   Cuando un individuo está visible en el marco de la cámara, pero el motor sigue intentando identificar al individuo, los miembros de la estructura PRESENCE de **WINBIO \_** tienen los valores de la tabla siguiente.
 
@@ -128,9 +128,9 @@ Las siguientes combinaciones de valores en la matriz **de estructuras DE \_ WINB
 
      
 
-    En este caso, el servicio biométrico amplía el tiempo de expiración del individuo y no genera una estructura DE RESULTADOS [**de WINBIO \_ ASYNC \_**](/windows/desktop/api/Winbio/ns-winbio-winbio_async_result) del lado cliente para el identificador de seguimiento donde se encuentra el RESULTADO **de \_ WINBIO \_ ASYNC. El miembro Parameters.MonitorPresence.ChangeType** **es WINBIO \_ CHANGE TYPE \_ \_ RECOGNIZE**.
+    En este caso, el servicio biométrico amplía el tiempo de expiración de la persona y no genera una estructura de resultados [**de WINBIO \_ ASYNC \_**](/windows/desktop/api/Winbio/ns-winbio-winbio_async_result) del lado cliente para el identificador de seguimiento donde se encuentra el resultado **de WINBIO \_ \_ ASYNC. El miembro Parameters.MonitorPresence.ChangeType** **es WINBIO \_ CHANGE TYPE \_ \_ RECOGNIZE**.
 
-    La primera vez que una estructura RESULT de [**WINBIO \_ \_ ASYNC**](/windows/desktop/api/Winbio/ns-winbio-winbio_async_result) incluye la estructura PRESENCE de **WINBIO, \_** donde el miembro **Status** es **S \_ OK** y el miembro **Identity.Type** es **WINBIO ID TYPE \_ \_ \_ NULL** después de que una o varias estructuras DE RESULTADOS de **WINBIO \_ ASYNC \_** incluyesen una estructura PRESENCE de **WINBIO \_** con un miembro **Status** de **WINBIO E \_ BAD \_ \_ CAPTURE,** el monitor de presencia genera una única estructura RESULT de **WINBIO \_ ASYNC \_** para el identificador de seguimiento donde se encuentra el RESULTADO de **WINBIO \_ \_ ASYNC. El miembro Parameters.MonitorPresence.ChangeType** **es WINBIO \_ CHANGE TYPE \_ \_ TRACK**. Esta **estructura RESULT de \_ WINBIO ASYNC \_** donde se encuentra el RESULTADO DE **WINBIO \_ \_ ASYNC. El miembro Parameters.MonitorPresence.ChangeType** es **WINBIO \_ CHANGE TYPE \_ \_ TRACK** informa al cliente de que se ha resuelto el problema que produjo el error **WINBIO E BAD \_ \_ \_ CAPTURE.** Para obtener más información sobre las circunstancias en las que una estructura **WINBIO \_ PRESENCE** tiene el miembro **Status** de **WINBIO \_ E BAD \_ \_ CAPTURE,** vea la descripción sobre cómo el adaptador del motor proporciona comentarios al usuario para corregir los errores de reconocimiento más adelante en estos comentarios.
+    La primera vez que una estructura RESULT de [**WINBIO \_ \_ ASYNC**](/windows/desktop/api/Winbio/ns-winbio-winbio_async_result) incluye la estructura PRESENCE de **WINBIO, \_** donde el miembro **Status** es **S \_ OK** y el miembro **Identity.Type** es **WINBIO ID TYPE \_ \_ \_ NULL** después de que una o varias estructuras DE RESULTADOS DE **WINBIO \_ ASYNC \_** incluyesen una estructura DE PRESENCIA DE **WINBIO \_** con un miembro **Status** de **WINBIO E \_ BAD \_ \_ CAPTURE,** el monitor de presencia genera una única estructura RESULT de **WINBIO \_ ASYNC \_** para el identificador de seguimiento donde se encuentra el RESULTADO de **WINBIO \_ \_ ASYNC. El miembro Parameters.MonitorPresence.ChangeType** **es WINBIO \_ CHANGE TYPE \_ \_ TRACK**. Esta **estructura RESULT de \_ WINBIO ASYNC \_** donde se encuentra el RESULTADO DE **WINBIO \_ \_ ASYNC. El miembro Parameters.MonitorPresence.ChangeType** es **WINBIO \_ CHANGE TYPE \_ \_ TRACK** informa al cliente de que se ha resuelto el problema que produjo el error **WINBIO E BAD \_ \_ \_ CAPTURE.** Para obtener más información sobre las circunstancias en las que una estructura **WINBIO \_ PRESENCE** tiene el miembro **Status** de **WINBIO \_ E BAD \_ \_ CAPTURE**, vea la descripción sobre cómo el adaptador del motor proporciona comentarios al usuario para corregir los errores de reconocimiento más adelante en estos comentarios.
 
 -   Cuando un individuo está visible en el marco de la cámara, pero el motor sigue intentando identificar al individuo y desea proporcionar comentarios al usuario sobre cómo corregir un error de reconocimiento, los miembros de la estructura PRESENCE de **WINBIO \_** tienen los valores de la tabla siguiente.
 
@@ -148,7 +148,7 @@ Las siguientes combinaciones de valores en la matriz **de estructuras DE \_ WINB
 
      
 
-    En este caso, el servicio biométrico amplía el tiempo de expiración de la persona y genera una estructura DE RESULTADOS [**de WINBIO \_ ASYNC \_**](/windows/desktop/api/Winbio/ns-winbio-winbio_async_result) para el identificador de seguimiento donde se encuentra el RESULTADO **de WINBIO \_ \_ ASYNC. El miembro Parameters.MonitorPresence.ChangeType** **es WINBIO \_ CHANGE TYPE \_ \_ TRACK**.
+    En este caso, el servicio biométrico amplía el tiempo de expiración para el individuo y genera una estructura DE RESULTADOS [**\_ de WINBIO ASYNC \_**](/windows/desktop/api/Winbio/ns-winbio-winbio_async_result) para el identificador de seguimiento donde se encuentra el RESULTADO de **\_ WINBIO ASYNC. \_ El miembro Parameters.MonitorPresence.ChangeType** **es WINBIO \_ CHANGE TYPE \_ \_ TRACK**.
 
 -   Cuando un individuo está visible en el marco de la cámara y el adaptador del motor determina la identidad del individuo, los miembros de la estructura PRESENCE de **WINBIO \_** tienen los valores de la tabla siguiente.
 
@@ -181,7 +181,7 @@ Las siguientes combinaciones de valores en la matriz **de estructuras DE \_ WINB
 
      
 
-    En este caso, el servicio biométrico asocia el identificador de seguimiento de la persona con una identidad de UNKNOWN y genera una estructura DE RESULTADOS [**DE WINBIO \_ ASYNC \_**](/windows/desktop/api/Winbio/ns-winbio-winbio_async_result) del lado cliente para el identificador de seguimiento donde se encuentra el resultado de **WINBIO \_ \_ ASYNC. El miembro Parameters.MonitorPresence.ChangeType** **es WINBIO \_ CHANGE TYPE \_ \_ RECOGNIZE**. El servicio biométrico no genera estructuras adicionales de RESULTADO DE **WINBIO \_ ASYNC \_** del lado cliente para el identificador de seguimiento, a menos que el individuo salga del marco de la cámara.
+    En este caso, el servicio biométrico asocia el identificador de seguimiento de la persona a una identidad de UNKNOWN y genera una estructura DE RESULTADOS [**DE WINBIO \_ ASYNC \_**](/windows/desktop/api/Winbio/ns-winbio-winbio_async_result) del lado cliente para el identificador de seguimiento donde se encuentra el resultado **de WINBIO \_ \_ ASYNC. El miembro Parameters.MonitorPresence.ChangeType** **es WINBIO \_ CHANGE TYPE \_ \_ RECOGNIZE**. El servicio biométrico no genera estructuras adicionales de RESULTADO DE **WINBIO \_ ASYNC \_** del lado cliente para el identificador de seguimiento, a menos que el individuo salga del marco de la cámara.
 
 Cuando un individuo que el adaptador del motor asocia a un identificador de seguimiento determinado sale del marco de la cámara y deja de aparecer en los valores devueltos por la función [**EngineAdapterIdentifyAll,**](/windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_identify_all_fn) el identificador de seguimiento expira finalmente. Cuando el identificador de seguimiento expira, el servicio biométrico genera una estructura de resultados [**de WINBIO \_ ASYNC \_**](/windows/desktop/api/Winbio/ns-winbio-winbio_async_result) del lado cliente donde el resultado **de WINBIO \_ \_ ASYNC. El miembro Parameters.MonitorPresence.ChangeType** **es WINBIO \_ CHANGE TYPE \_ \_ DEPART**. El adaptador del motor puede impedir que el servicio biométrico genere esta estructura con el valor **\_ \_ \_ WINBIO CHANGE TYPE DEPART** mediante la inclusión de una estructura **WINBIO \_ PRESENCE** en la matriz que **devuelve EngineAdapterIdentifyAll,** donde **WINBIO \_ PRESENCE. El** miembro de estado **es S \_ OK** y **WINBIO \_ PRESENCE. El miembro Identity.Type** es **WINBIO \_ ID TYPE \_ \_ NULL** como se describió anteriormente en estos comentarios. Esta acción amplía el tiempo de expiración del identificador de seguimiento sin provocar ninguna actividad del lado cliente.
 
@@ -189,7 +189,7 @@ Cuando un individuo que el adaptador del motor asocia a un identificador de segu
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                                                                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                                                                                     |

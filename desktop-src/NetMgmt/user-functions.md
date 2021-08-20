@@ -1,6 +1,6 @@
 ---
 title: Funciones de usuario
-description: Las funciones de usuario de administración de red controlan la cuenta de un usuario en la base de datos de seguridad, que es la base de datos del administrador de cuentas de seguridad (SAM) o, en el caso de los controladores de dominio, Active Directory. Las funciones de usuario se enumeran a continuación.
+description: Las funciones de usuario de administración de red controlan la cuenta de un usuario en la base de datos de seguridad, que es la base de datos del administrador de cuentas de seguridad (SAM) o, en el caso de los controladores de dominio, el Active Directory. Las funciones de usuario se enumeran a continuación.
 ms.assetid: cf0e5102-3924-46c0-8124-0aa04e95f48d
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "117796821"
 ---
 # <a name="user-functions"></a>Funciones de usuario
 
-Las funciones de usuario de administración de red controlan la cuenta de un usuario en la base de datos de seguridad, que es la base de datos del administrador de cuentas de seguridad (SAM) o, en el caso de los controladores de dominio, Active Directory. Las funciones de usuario se enumeran a continuación.
+Las funciones de usuario de administración de red controlan la cuenta de un usuario en la base de datos de seguridad, que es la base de datos del administrador de cuentas de seguridad (SAM) o, en el caso de los controladores de dominio, el Active Directory. Las funciones de usuario se enumeran a continuación.
 
 
 
@@ -33,41 +33,41 @@ Las funciones de usuario de administración de red controlan la cuenta de un usu
 
  
 
-Cada usuario o aplicación que accede a los recursos de red debe tener una cuenta en la base de datos de seguridad. Los servicios de directorio usan esta cuenta para comprobar que el usuario o la aplicación tienen permiso para conectarse a un recurso. Cuando un usuario o una aplicación solicitan acceso a un recurso, el sistema de seguridad Windows comprueba si hay una cuenta de usuario o una cuenta de grupo adecuada para permitir el acceso.
+Cada usuario o aplicación que accede a los recursos de red debe tener una cuenta en la base de datos de seguridad. Los servicios de directorio usan esta cuenta para comprobar que el usuario o la aplicación tienen permiso para conectarse a un recurso. Cuando un usuario o una aplicación solicitan acceso a un recurso, el sistema de seguridad de Windows comprueba si hay una cuenta de usuario o cuenta de grupo adecuada para permitir el acceso.
 
 Una vez que quite una cuenta de usuario mediante una llamada a la función [**NetUserDel,**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuserdel) el usuario ya no podrá acceder al servidor excepto mediante la cuenta de invitado.
 
-Dado que la contraseña de un usuario es confidencial, la función [**NetUserEnum**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuserenum) o la [**función NetUserGetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusergetinfo) no la devuelven. La contraseña se asigna inicialmente cuando se llama a [**NetUserAdd**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuseradd).
+Dado que la contraseña de un usuario es confidencial, la función [**NetUserEnum**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuserenum) o la [**función NetUserGetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusergetinfo) no la devuelven. La contraseña se asigna inicialmente cuando se llama a [**NetUserAdd.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuseradd)
 
 La información de la cuenta de usuario está disponible en los niveles siguientes:
 
 -   [**USER \_ INFO \_ 0**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_0)
--   [**INFORMACIÓN \_ DE \_ USUARIO 1**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1)
+-   [**USER \_ INFO \_ 1**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1)
 -   [**USER \_ INFO \_ 2**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_2)
--   [**INFORMACIÓN \_ DE \_ USUARIO 3**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_3)
--   [**USER \_ INFO \_ 4**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_4)
+-   [**INFORMACIÓN \_ DEL \_ USUARIO 3**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_3)
+-   [**INFORMACIÓN \_ DE USUARIO \_ 4**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_4)
 -   [**USER \_ INFO \_ 10**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_10)
--   [**INFORMACIÓN \_ DE \_ USUARIO 11**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_11)
+-   [**USER \_ INFO \_ 11**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_11)
 -   [**USER \_ INFO \_ 20**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_20)
--   [**INFORMACIÓN \_ DE \_ USUARIO 21**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_21)
--   [**INFORMACIÓN \_ DE \_ USUARIO 22**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_22)
--   [**INFORMACIÓN \_ DE \_ USUARIO 23**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_23)
+-   [**USER \_ INFO \_ 21**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_21)
+-   [**USER \_ INFO \_ 22**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_22)
+-   [**USER \_ INFO \_ 23**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_23)
 
 Además, los siguientes niveles de información son válidos cuando se llama a la [**función NetUserSetInfo:**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusersetinfo)
 
--   [**INFORMACIÓN \_ DE \_ USUARIO 1003**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1003)
--   [**INFORMACIÓN \_ DE \_ USUARIO 1005**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1005)
--   [**INFORMACIÓN \_ DE \_ USUARIO 1006**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1006)
--   [**INFORMACIÓN \_ DE \_ USUARIO 1007**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1007)
+-   [**USER \_ INFO \_ 1003**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1003)
+-   [**USER \_ INFO \_ 1005**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1005)
+-   [**USER \_ INFO \_ 1006**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1006)
+-   [**USER \_ INFO \_ 1007**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1007)
 -   [**INFORMACIÓN \_ DE \_ USUARIO 1008**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1008)
--   [**INFORMACIÓN \_ DE \_ USUARIO 1009**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1009)
--   [**INFORMACIÓN \_ DE \_ USUARIO 1010**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1010)
--   [**INFORMACIÓN \_ DE \_ USUARIO 1011**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1011)
--   [**INFORMACIÓN \_ DE \_ USUARIO 1012**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1012)
--   [**INFORMACIÓN \_ DE \_ USUARIO 1014**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1014)
--   [**INFORMACIÓN \_ DE USUARIO \_ 1017**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1017)
--   [**INFORMACIÓN \_ DE \_ USUARIO 1020**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1020)
--   [**INFORMACIÓN \_ DE \_ USUARIO 1024**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1024)
+-   [**USER \_ INFO \_ 1009**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1009)
+-   [**USER \_ INFO \_ 1010**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1010)
+-   [**USER \_ INFO \_ 1011**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1011)
+-   [**USER \_ INFO \_ 1012**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1012)
+-   [**USER \_ INFO \_ 1014**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1014)
+-   [**USER \_ INFO \_ 1017**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1017)
+-   [**USER \_ INFO \_ 1020**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1020)
+-   [**USER \_ INFO \_ 1024**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1024)
 -   [**INFORMACIÓN \_ DE \_ USUARIO 1051**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1051)
 -   [**INFORMACIÓN \_ DE \_ USUARIO 1052**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1052)
 -   [**INFORMACIÓN \_ DE \_ USUARIO 1053**](/windows/desktop/api/Lmaccess/ns-lmaccess-user_info_1053)
@@ -85,7 +85,7 @@ Las siguientes funciones permiten a las aplicaciones comprobar el cumplimiento d
 
  
 
-Si está programando para Active Directory, es posible que pueda llamar a determinados métodos de interfaz de servicio (ADSI) de Active Directory para lograr la misma funcionalidad que puede lograr llamando a las funciones de usuario de administración de red. Para obtener más información, [**vea IADsUser**](/windows/desktop/api/iads/nn-iads-iadsuser) and [**IADsComputer**](/windows/desktop/api/iads/nn-iads-iadscomputer).
+Si está programando para Active Directory, puede llamar a determinados métodos de la interfaz de servicio (ADSI) de Active Directory para lograr la misma funcionalidad que puede lograr mediante una llamada a las funciones de usuario de administración de red. Para obtener más información, [**vea IADsUser**](/windows/desktop/api/iads/nn-iads-iadsuser) and [**IADsComputer**](/windows/desktop/api/iads/nn-iads-iadscomputer).
 
  
 

@@ -1,19 +1,19 @@
 ---
-description: El ejemplo siguiente contiene una \# solicitud de inscripción PKCS 7 en nombre de (EOBO). El ejemplo se generó con las herramientas Certreq.exe y Certutil.exe. El archivo. inf que se usa como entrada para Certreq.exe contiene la configuración siguiente.
+description: El ejemplo siguiente contiene una solicitud PKCS \# 7 Enroll On Behalf Of (EOBO). El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
 ms.assetid: e9e54f26-223d-493a-b4d5-ca7c2bd22756
-title: '\#Solicitud EOBO PKCS 7'
+title: Solicitud EOBO de PKCS \# 7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2bd6e380ac3d2fb06c0447cb8ef4c5d859d71e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1bbb2012012af800a484b91a745abbd6fbc9c74b93e8a1089b9d86bad3ca5f33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117774580"
 ---
-# <a name="pkcs-7-eobo-request"></a>\#Solicitud EOBO PKCS 7
+# <a name="pkcs-7-eobo-request"></a>Solicitud EOBO de PKCS \# 7
 
-El ejemplo siguiente contiene una \# solicitud de inscripción PKCS 7 en nombre de (EOBO). El ejemplo se generó con las herramientas Certreq.exe y Certutil.exe. El archivo. inf que se usa como entrada para Certreq.exe contiene la configuración siguiente.
+El ejemplo siguiente contiene una solicitud PKCS \# 7 Enroll On Behalf Of (EOBO). El ejemplo se generó mediante las herramientas Certreq.exe y Certutil.exe. El archivo .inf utilizado como entrada para Certreq.exe contiene la configuración siguiente.
 
 ``` syntax
 [NewRequest]
@@ -24,11 +24,11 @@ RequesterName=Domain\TargetUser
 CertificateTemplate=User
 ```
 
-Esta configuración genera el siguiente resultado de ejemplo. La configuración especifica el tipo de solicitud (PKCS \# 7), el nombre de la entidad que solicita la inscripción y el nombre de la plantilla. La plantilla de usuario especifica que:
+Esta configuración genera la siguiente salida de ejemplo. La configuración especifica el tipo de solicitud (PKCS 7), el nombre de la entidad que solicita la inscripción y el \# nombre de la plantilla. La plantilla Usuario especifica que:
 
--   La solicitud debe usar el proveedor de servicios criptográficos de base de Microsoft 1,0 o el proveedor de servicios criptográficos de Microsoft mejorado 1,0.
--   El nombre del firmante se debe crear a partir de Active Directory.
--   La solicitud incluye el nombre de la plantilla de certificado, el uso mejorado de clave (EKU) y las extensiones de uso de claves. La extensión EKU especifica que el certificado emitido se puede usar para Sistema de cifrado de archivos (EFS), correo electrónico seguro y autenticación del cliente.
+-   La solicitud debe usar el proveedor criptográfico base de Microsoft 1.0 o el proveedor criptográfico mejorado de Microsoft 1.0.
+-   El nombre del sujeto debe crearse a partir Active Directory.
+-   La solicitud incluye las extensiones Nombre de plantilla de certificado, Uso mejorado de clave (EKU) y Uso de claves. La extensión EKU especifica que el certificado emitido se puede usar para Sistema de cifrado de archivos (EFS), correo electrónico seguro y autenticación de cliente.
 
 ``` syntax
 PKCS7 Message:

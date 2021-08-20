@@ -109,7 +109,7 @@ Estos atributos de ventana se describen en las secciones siguientes.
 
 ### <a name="class-name"></a>Class Name (Nombre de clase)
 
-Cada ventana pertenece a una clase de ventana. Una aplicación debe registrar una clase de ventana antes de crear cualquier ventana de esa clase. La *clase window* define la mayoría de los aspectos de la apariencia y el comportamiento de una ventana. El componente principal de una clase de ventana es el procedimiento *de* ventana , una función que recibe y procesa todas las entradas y solicitudes enviadas a la ventana. El sistema proporciona la entrada y las solicitudes en forma de *mensajes*. Para obtener más información, vea [Clases de ventana](window-classes.md), [Procedimientos de](window-procedures.md)ventana y Mensajes y colas de [mensajes](messages-and-message-queues.md).
+Cada ventana pertenece a una clase de ventana. Una aplicación debe registrar una clase de ventana antes de crear cualquier ventana de esa clase. La *clase window* define la mayoría de los aspectos de la apariencia y el comportamiento de una ventana. El componente principal de una clase de ventana es el procedimiento *de* ventana , una función que recibe y procesa todas las entradas y solicitudes enviadas a la ventana. El sistema proporciona la entrada y las solicitudes en forma de *mensajes*. Para obtener más información, vea [Clases de ventana](window-classes.md), [Procedimientos de](window-procedures.md)ventana y Mensajes y colas de [mensajes.](messages-and-message-queues.md)
 
 ### <a name="window-name"></a>Nombre de la ventana
 
@@ -123,7 +123,7 @@ Cada ventana tiene uno o varios estilos de ventana. Un estilo de ventana es una 
 
 El sistema y, hasta cierto punto, el procedimiento de ventana para la clase , interpretan los estilos de ventana.
 
-Algunos estilos de ventana se aplican a todas las ventanas, pero la mayoría se aplican a ventanas de clases de ventana específicas. Los estilos de ventana generales se representan mediante constantes que comienzan por el prefijo WS; se pueden combinar con el operador OR para formar diferentes tipos de ventanas, incluidas las ventanas principales, los cuadros de diálogo y las ventanas \_ secundarias. Los estilos de ventana específicos de la clase definen la apariencia y el comportamiento de las ventanas que pertenecen a las clases de control predefinidas. Por ejemplo, la **clase SCROLLBAR** especifica un control de barra de desplazamiento, pero los estilos [**\_ SBS HORZ**](../controls/scroll-bar-control-styles.md) y **SBS \_ VERT** determinan si se crea un control de barra de desplazamiento horizontal o vertical.
+Algunos estilos de ventana se aplican a todas las ventanas, pero la mayoría se aplican a ventanas de clases de ventana específicas. Los estilos de ventana generales se representan mediante constantes que comienzan con el prefijo WS; se pueden combinar con el operador OR para formar diferentes tipos de ventanas, incluidas las ventanas principales, los cuadros de diálogo y las ventanas \_ secundarias. Los estilos de ventana específicos de la clase definen la apariencia y el comportamiento de las ventanas que pertenecen a las clases de control predefinidas. Por ejemplo, la **clase SCROLLBAR** especifica un control de barra de desplazamiento, pero los estilos [**SBS \_ HORZ**](../controls/scroll-bar-control-styles.md) y **SBS \_ VERT** determinan si se crea un control de barra de desplazamiento horizontal o vertical.
 
 Para obtener listas de estilos que pueden usar las ventanas, vea los temas siguientes:
 
@@ -146,7 +146,7 @@ Para obtener más información, [**vea CreateWindowEx**](/windows/win32/api/winu
 
 La posición de una ventana se define como las coordenadas de su esquina superior izquierda. Estas coordenadas, a veces denominadas coordenadas de ventana, siempre son relativas a la esquina superior izquierda de la pantalla o, para una ventana secundaria, a la esquina superior izquierda del área de cliente de la ventana primaria. Por ejemplo, una ventana de nivel superior con las coordenadas (10,10) se coloca a 10 píxeles a la derecha de la esquina superior izquierda de la pantalla y 10 píxeles hacia abajo desde ella. Una ventana secundaria con las coordenadas (10,10) se coloca a 10 píxeles a la derecha de la esquina superior izquierda del área de cliente de su ventana primaria y 10 píxeles hacia abajo desde ella.
 
-La [**función WindowFromPoint**](/windows/win32/api/winuser/nf-winuser-windowfrompoint) recupera un identificador en la ventana que ocupa un punto determinado de la pantalla. De forma similar, las funciones [**ChildWindowFromPoint**](/windows/win32/api/winuser/nf-winuser-childwindowfrompoint) y [**ChildWindowFromPointEx**](/windows/win32/api/winuser/nf-winuser-childwindowfrompointex) recuperan un identificador en la ventana secundaria que ocupa un punto determinado en el área cliente de la ventana primaria. Aunque **ChildWindowFromPointEx puede** omitir ventanas secundarias invisibles, deshabilitadas y transparentes, **ChildWindowFromPoint no** puede.
+La [**función WindowFromPoint**](/windows/win32/api/winuser/nf-winuser-windowfrompoint) recupera un identificador en la ventana que ocupa un punto determinado de la pantalla. De forma similar, las funciones [**ChildWindowFromPoint**](/windows/win32/api/winuser/nf-winuser-childwindowfrompoint) y [**ChildWindowFromPointEx**](/windows/win32/api/winuser/nf-winuser-childwindowfrompointex) recuperan un identificador de la ventana secundaria que ocupa un punto determinado en el área cliente de la ventana primaria. Aunque **ChildWindowFromPointEx puede** omitir ventanas secundarias invisibles, deshabilitadas y transparentes, **ChildWindowFromPoint no** puede.
 
 ### <a name="size"></a>Size
 
@@ -188,11 +188,11 @@ La [**función IsWindow**](/windows/win32/api/winuser/nf-winuser-iswindow) deter
 
 ## <a name="window-creation"></a>Creación de ventanas
 
-Para crear ventanas de aplicación, use [**las funciones CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) [**o CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa) Debe proporcionar la información necesaria para definir los atributos de ventana. **CreateWindowEx** tiene un parámetro, *dwExStyle*, que **CreateWindow** no tiene; De lo contrario, las funciones son idénticas. De hecho, **CreateWindow simplemente** llama **a CreateWindowEx** con el *parámetro dwExStyle* establecido en cero. Por esta razón, el resto de esta información general solo hace referencia a **CreateWindowEx**.
+Para crear ventanas de aplicación, use [**las funciones CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) [**o CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa) Debe proporcionar la información necesaria para definir los atributos de ventana. **CreateWindowEx** tiene un parámetro, *dwExStyle,* que **CreateWindow** no tiene; De lo contrario, las funciones son idénticas. De hecho, **CreateWindow simplemente** llama a **CreateWindowEx** con el *parámetro dwExStyle* establecido en cero. Por este motivo, el resto de esta información general solo hace referencia a **CreateWindowEx**.
 
 Esta sección contiene los siguientes temas:
 
--   [Creación de la ventana principal](#main-window-creation)
+-   [Creación de ventana principal](#main-window-creation)
 -   [Mensajes de creación de ventanas](#window-creation-messages)
 -   [Aplicaciones multiproceso](#multithread-applications)
 
@@ -201,31 +201,31 @@ Esta sección contiene los siguientes temas:
 
  
 
-### <a name="main-window-creation"></a>Creación de la ventana principal
+### <a name="main-window-creation"></a>Creación de ventana principal
 
-Cada Windows basada en aplicaciones debe tener [**WinMain**](/windows/win32/api/winbase/nf-winbase-winmain) como función de punto de entrada. **WinMain** realiza una serie de tareas, incluido el registro de la clase de ventana para la ventana principal y la creación de la ventana principal. **WinMain registra** la clase de ventana principal mediante una llamada a la función [**RegisterClass**](/windows/win32/api/winuser/nf-winuser-registerclassa) y crea la ventana principal mediante una llamada a [**la función CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa)
+Cada Windows basada en aplicaciones debe tener [**WinMain como**](/windows/win32/api/winbase/nf-winbase-winmain) función de punto de entrada. **WinMain** realiza una serie de tareas, como registrar la clase de ventana para la ventana principal y crear la ventana principal. **WinMain registra** la clase de ventana principal llamando a la función [**RegisterClass**](/windows/win32/api/winuser/nf-winuser-registerclassa) y crea la ventana principal mediante una llamada a [**la función CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa)
 
 La [**función WinMain**](/windows/win32/api/winbase/nf-winbase-winmain) también puede limitar la aplicación a una sola instancia. Cree una exclusión mutua con nombre mediante [**la función CreateMutex.**](/windows/desktop/api/synchapi/nf-synchapi-createmutexa) Si [**GetLastError devuelve**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) **ERROR ALREADY \_ \_ EXISTS**, existe otra instancia de la aplicación (creó la exclusión mutua) y debe salir **de WinMain**.
 
-El sistema no muestra automáticamente la ventana principal después de crearla; en su lugar, una aplicación debe usar [**la función ShowWindow**](/windows/win32/api/winuser/nf-winuser-showwindow) para mostrar la ventana principal. Después de crear la ventana principal, la función [**WinMain**](/windows/win32/api/winbase/nf-winbase-winmain) de la aplicación llama a **ShowWindow** y le pasa dos parámetros: un identificador a la ventana principal y una marca que especifica si la ventana principal se debe minimizar o maximizar cuando se muestra por primera vez. Normalmente, la marca se puede establecer en cualquiera de las constantes que comienzan por el prefijo \_ SW. Sin embargo, cuando se llama a **ShowWindow** para mostrar la ventana principal de la aplicación, la marca debe establecerse **en SW \_ SHOWDEFAULT.** Esta marca indica al sistema que muestre la ventana según lo indicado por el programa que inició la aplicación.
+El sistema no muestra automáticamente la ventana principal después de crearla; en su lugar, una aplicación debe usar [**la función ShowWindow**](/windows/win32/api/winuser/nf-winuser-showwindow) para mostrar la ventana principal. Después de crear la ventana principal, la función [**WinMain**](/windows/win32/api/winbase/nf-winbase-winmain) de la aplicación llama a **ShowWindow** y le pasa dos parámetros: un identificador a la ventana principal y una marca que especifica si la ventana principal debe minimizarse o maximizarse cuando se muestre por primera vez. Normalmente, la marca se puede establecer en cualquiera de las constantes que comienzan por el prefijo \_ SW. Sin embargo, cuando se llama a **ShowWindow** para mostrar la ventana principal de la aplicación, la marca debe establecerse **en SW \_ SHOWDEFAULT.** Esta marca indica al sistema que muestre la ventana según lo indicado por el programa que inició la aplicación.
 
 Si se registró una clase de ventana con la versión Unicode [**de RegisterClass**](/windows/win32/api/winuser/nf-winuser-registerclassa), la ventana recibe solo mensajes Unicode. Para determinar si una ventana usa o no el juego de caracteres Unicode, llame a [**IsWindowUnicode**](/windows/win32/api/winuser/nf-winuser-iswindowunicode).
 
 ### <a name="window-creation-messages"></a>Window-Creation mensajes
 
-Al crear cualquier ventana, el sistema envía mensajes al procedimiento de ventana de la ventana. El sistema envía el [**mensaje \_ WM NCCREATE**](wm-nccreate.md) después de crear el área no cliente de la ventana y el [**mensaje WM \_ CREATE**](wm-create.md) después de crear el área de cliente. El procedimiento de ventana recibe ambos mensajes antes de que el sistema muestre la ventana. Ambos mensajes incluyen un puntero a una [**estructura CREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-createstructa) que contiene toda la información especificada en la [**función CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa) Normalmente, el procedimiento de ventana realiza tareas de inicialización al recibir estos mensajes.
+Al crear cualquier ventana, el sistema envía mensajes al procedimiento de ventana para la ventana. El sistema envía el [**mensaje \_ WM NCCREATE**](wm-nccreate.md) después de crear el área no cliente de la ventana y el [**mensaje WM \_ CREATE**](wm-create.md) después de crear el área de cliente. El procedimiento de ventana recibe ambos mensajes antes de que el sistema muestre la ventana. Ambos mensajes incluyen un puntero a una [**estructura CREATESTRUCT**](/windows/win32/api/winuser/ns-winuser-createstructa) que contiene toda la información especificada en la [**función CreateWindowEx.**](/windows/win32/api/winuser/nf-winuser-createwindowexa) Normalmente, el procedimiento de ventana realiza tareas de inicialización al recibir estos mensajes.
 
-Al crear una ventana secundaria, el sistema envía el mensaje [**\_ PARENTNOTIFY**](/previous-versions/windows/desktop/inputmsg/wm-parentnotify) de WM a la ventana primaria después de enviar los mensajes [**WM \_ NCCREATE**](wm-nccreate.md) [**y WM \_ CREATE.**](wm-create.md) También envía otros mensajes al crear una ventana. El número y el orden de estos mensajes dependen de la clase y el estilo de la ventana y de la función utilizada para crear la ventana. Estos mensajes se describen en otros temas de este archivo de ayuda.
+Al crear una ventana secundaria, el sistema envía el mensaje [**\_ PARENTNOTIFY**](/previous-versions/windows/desktop/inputmsg/wm-parentnotify) de WM a la ventana primaria después de enviar los mensajes [**WM \_ NCCREATE**](wm-nccreate.md) y [**WM \_ CREATE.**](wm-create.md) También envía otros mensajes al crear una ventana. El número y el orden de estos mensajes dependen de la clase y el estilo de la ventana y de la función utilizada para crear la ventana. Estos mensajes se describen en otros temas de este archivo de ayuda.
 
 ### <a name="multithread-applications"></a>Aplicaciones multiproceso
 
-Una Windows basada en aplicaciones puede tener varios subprocesos de ejecución y cada subproceso puede crear ventanas. El subproceso que crea una ventana debe contener el código para su procedimiento de ventana.
+Una Windows basada en aplicaciones puede tener varios subprocesos de ejecución y cada subproceso puede crear ventanas. El subproceso que crea una ventana debe contener el código de su procedimiento de ventana.
 
-Una aplicación puede usar la [**función EnumThreadWindows**](/windows/win32/api/winuser/nf-winuser-enumthreadwindows) para enumerar las ventanas creadas por un subproceso determinado. Esta función pasa el identificador a cada ventana del subproceso, a su vez, a una función de devolución de llamada definida por la aplicación, [**EnumThreadWndProc**](/previous-versions/windows/desktop/legacy/ms633496(v=vs.85)).
+Una aplicación puede usar la [**función EnumThreadWindows**](/windows/win32/api/winuser/nf-winuser-enumthreadwindows) para enumerar las ventanas creadas por un subproceso determinado. Esta función pasa el identificador a cada ventana de subproceso, a su vez, a una función de devolución de llamada definida por la aplicación, [**EnumThreadWndProc**](/previous-versions/windows/desktop/legacy/ms633496(v=vs.85)).
 
 La [**función GetWindowThreadProcessId**](/windows/win32/api/winuser/nf-winuser-getwindowthreadprocessid) devuelve el identificador del subproceso que creó una ventana determinada.
 
-Para establecer el estado de presentación de una ventana creada por otro subproceso, use [**la función ShowWindowAsync.**](/windows/win32/api/winuser/nf-winuser-showwindowasync)
+Para establecer el estado de presentación de una ventana creada por otro subproceso, use la [**función ShowWindowAsync.**](/windows/win32/api/winuser/nf-winuser-showwindowasync)
 
  
 

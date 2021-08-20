@@ -4,8 +4,8 @@ description: El método CreateLicenseRevocationChallenge genera un desafío de r
 ms.assetid: 31fcf7a7-1af8-4474-abac-eddb1070975b
 keywords:
 - Método CreateLicenseRevocationChallenge windows Media Format
-- Método CreateLicenseRevocationChallenge windows Media Format , interfaz IWMDRMLicenseManagement
-- IWMDRMLicenseManagement interface windows Media Format , CreateLicenseRevocationChallenge (método)
+- Método CreateLicenseRevocationChallenge formato multimedia de windows, interfaz IWMDRMLicenseManagement
+- IWMDRMLicenseManagement interface windows Media Format , CreateLicenseRevocationChallenge method
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117846963"
 ---
-# <a name="iwmdrmlicensemanagementcreatelicenserevocationchallenge-method"></a>Método IWMDRMLicenseManagement::CreateLicenseRevocationChallenge
+# <a name="iwmdrmlicensemanagementcreatelicenserevocationchallenge-method"></a>IWMDRMLicenseManagement::CreateLicenseRevocationChallenge (método)
 
 El **método CreateLicenseRevocationChallenge** genera un desafío de revocación de licencias.
 
@@ -78,7 +78,7 @@ Tamaño, en bytes, de los datos de desafío.
 *ppbChallengeOutput* \[ out\]
 </dt> <dd>
 
-Dirección de un puntero que recibe la dirección de la salida del desafío. Este búfer son los datos que se envían al servicio de revocación de licencias. Cuando termine con estos datos, debe liberar la memoria llamando a **CoTaskMemFree**.
+Dirección de un puntero que recibe la dirección de la salida del desafío. Este búfer son los datos que se envían al servicio de revocación de licencias. Cuando termine con estos datos, debe liberar la memoria mediante una llamada **a CoTaskMemFree**.
 
 </dd> <dt>
 
@@ -117,7 +117,7 @@ Ninguno.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

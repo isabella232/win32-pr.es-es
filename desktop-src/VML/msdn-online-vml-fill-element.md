@@ -39,7 +39,7 @@ Los atributos siguientes modifican un relleno.
 | [Foco](msdn-online-vml-focus-attribute.md)                       | Define el centro de un relleno de degradado lineal.          |
 | [FocusPosition](msdn-online-vml-focusposition-attribute.md)       | Define el centro de un relleno de degradado radial.          |
 | [FocusSize](msdn-online-vml-focussize-attribute.md)               | Define el tamaño del foco para un relleno radial.              |
-| [Href](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/bb229574(v=vs.85)) | Define una dirección URL al archivo de imagen original.              |
+| [Href](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/bb229574(v=vs.85)) | Define una dirección URL para el archivo de imagen original.              |
 | [Id](id-attribute--fill--vml.md)                                  | Define un identificador único para el relleno.              |
 | [Método](msdn-online-vml-method-attribute.md)                     | Define el método utilizado para generar un relleno de degradado.   |
 | [Activado](on-attribute--fill--vml.md)                                  | Determina si se mostrará el relleno.          |
@@ -60,7 +60,7 @@ Los atributos siguientes modifican un relleno.
 
 Este elemento debe definirse dentro de un [elemento Shape.](shape-element--vml.md)
 
-En el código siguiente se muestra un relleno de degradado simple para una forma.
+El código siguiente muestra un relleno de degradado simple para una forma.
 
 
 ```HTML

@@ -1,11 +1,11 @@
 ---
-title: IWMPCdromCollection getByDriveSpecifier, método
-description: El método getByDriveSpecifier devuelve una interfaz IWMPCdrom asociada a una letra de unidad concreta.
+title: Método IWMPCdromCollection getByDriveSpecifier
+description: El método getByDriveSpecifier devuelve una interfaz IWMPCdrom asociada a una letra de unidad determinada.
 ms.assetid: 4a550eb1-a37e-43fd-9e08-801c4fd64e68
 keywords:
-- método getByDriveSpecifier de Windows Media Player
-- método getByDriveSpecifier Windows Media Player, interfaz IWMPCdromCollection
-- Interfaz IWMPCdromCollection Windows Media Player, método getByDriveSpecifier
+- Método getByDriveSpecifier Reproductor de Windows Media
+- Método getByDriveSpecifier Reproductor de Windows Media , interfaz IWMPCdromCollection
+- Interfaz IWMPCdromCollection Reproductor de Windows Media método , getByDriveSpecifier
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe771fc893d4bf43b82dc825a2d33724926e8151
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9937694234fe7e46fe9b98d83357da19abf18f8d14e83794587f6f2050b0019b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116223"
 ---
-# <a name="iwmpcdromcollectiongetbydrivespecifier-method"></a>IWMPCdromCollection:: getByDriveSpecifier (método)
+# <a name="iwmpcdromcollectiongetbydrivespecifier-method"></a>IWMPCdromCollection::getByDriveSpecifier (método)
 
-El método **getByDriveSpecifier** devuelve una interfaz **IWMPCdrom** asociada a una letra de unidad concreta.
+El **método getByDriveSpecifier** devuelve una **interfaz IWMPCdrom** asociada a una letra de unidad determinada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,26 +53,26 @@ Implements IWMPCdromCollection.getByDriveSpecifier
 
 <dl> <dt>
 
-*bstrDriveSpecifier* \[ de\]
+*bstrDriveSpecifier* \[ En\]
 </dt> <dd>
 
-**System. String** que es la letra de unidad seguida de un carácter de dos puntos (":").
+**System.String que** es la letra de unidad seguida de un carácter de dos puntos (":").
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Una interfaz **WMPLib. IWMPCdrom** .
+Interfaz **WMPLib.IWMPCdrom.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las letras de unidad se deben proporcionar con el formato *x*:, donde *x* representa la letra de unidad.
+Las letras de unidad deben proporcionarse con el *formato X*:, donde *X* representa la letra de unidad.
 
-Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **getByDriveSpecifier** para obtener la interfaz **IWMPCdrom** que corresponde a una letra de unidad proporcionada por el usuario en un cuadro de texto. A continuación, se llama al método **IWMPCdrom. EJECT** para expulsar la unidad especificada. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa getByDriveSpecifier** para obtener la interfaz **IWMPCdrom** que corresponde a una letra de unidad proporcionada por el usuario en un cuadro de texto. A **continuación, se llama al método IWMPCdrom.dispose** para expulsar la unidad especificada. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -113,9 +113,9 @@ drive.eject()
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -128,16 +128,16 @@ drive.eject()
 [**Interfaz IWMPCdrom (VB y C#)**](iwmpcdrom--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPCdrom. EJECT (VB y C#)**](wmplibiwmpcdrom-iwmpcdrom-eject--vb-and-c.md)
+[**IWMPCdrom.eject (VB y C#)**](wmplibiwmpcdrom-iwmpcdrom-eject--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaz IWMPCdromCollection (VB y C#)**](iwmpcdromcollection--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. mediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.mediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. requestMediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.requestMediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
 </dt> </dl>
 
  

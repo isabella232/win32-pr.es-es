@@ -1,7 +1,7 @@
 ---
-description: Representa la información que se mantiene en el administrador de particiones sobre un disco que forma parte de un clúster.
+description: Representa información mantenida en el administrador de particiones sobre un disco que forma parte de un clúster.
 ms.assetid: 9138F61A-E295-4F5B-AD65-361FCCB3C4B7
-title: DISK_CLUSTER_INFO estructura (Ntdddisk. h)
+title: DISK_CLUSTER_INFO estructura (Ntdddisk.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Ntdddisk.h
-ms.openlocfilehash: f18e8f47cd5b1b527c9d6d2d19a09775528602d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be4db89e888778c3d92090a32243f0203b527337b3734328a183b551a6181f7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117813797"
 ---
-# <a name="disk_cluster_info-structure"></a>\_Estructura de información del clúster de disco \_
+# <a name="disk_cluster_info-structure"></a>Estructura DE \_ INFORMACIÓN DE CLÚSTER DE \_ DISCO
 
-Representa la información que se mantiene en el administrador de particiones sobre un disco que forma parte de un clúster.
+Representa información mantenida en el administrador de particiones sobre un disco que forma parte de un clúster.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,12 +56,12 @@ Combinación de marcas relacionadas con discos y clústeres.
 
 
 
-| Value                                                                                                                                                                                                                                                                                               | Significado                                                                                                                 |
+| Valor                                                                                                                                                                                                                                                                                               | Significado                                                                                                                 |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| <span id="DISK_CLUSTER_FLAG_ENABLED"></span><span id="disk_cluster_flag_enabled"></span><dl> <dt>**Disco \_ de Marca de clúster \_ \_ habilitada**</dt> <dt>1</dt> </dl>                                          | El disco se usa como parte del servicio de Cluster Server.<br/>                                                             |
-| <span id="DISK_CLUSTER_FLAG_CSV"></span><span id="disk_cluster_flag_csv"></span><dl> <dt>**Disco \_ de Marca de clúster \_ \_ CSV**</dt> <dt>2</dt> </dl>                                                      | CSVFS expone los volúmenes del disco en todos los nodos del clúster.<br/>                                        |
-| <span id="DISK_CLUSTER_FLAG_IN_MAINTENANCE"></span><span id="disk_cluster_flag_in_maintenance"></span><dl> <dt>**Disco \_ de \_Marca \_ de clúster en \_ mantenimiento**</dt> <dt>4</dt> </dl>                    | El recurso de clúster asociado a este disco está en modo de mantenimiento.<br/>                                       |
-| <span id="DISK_CLUSTER_FLAG_PNP_ARRIVAL_COMPLETE"></span><span id="disk_cluster_flag_pnp_arrival_complete"></span><dl> <dt>**Disco \_ de Llegada de PNP de marca de clúster \_ \_ \_ \_ completada**</dt> <dt>8</dt> </dl> | El controlador de disco de clúster para el modo kernel (clusdisk) ha recibido la notificación de PnP de la llegada del disco.<br/> |
+| <span id="DISK_CLUSTER_FLAG_ENABLED"></span><span id="disk_cluster_flag_enabled"></span><dl> <dt>**DISCO \_ CLUSTER \_ FLAG \_ ENABLED**</dt> <dt>1</dt> </dl>                                          | El disco se usa como parte del servicio de clúster.<br/>                                                             |
+| <span id="DISK_CLUSTER_FLAG_CSV"></span><span id="disk_cluster_flag_csv"></span><dl> <dt>**DISCO \_ CLUSTER \_ FLAG \_ CSV**</dt> <dt>2</dt> </dl>                                                      | CSVFS expone los volúmenes del disco en todos los nodos del clúster.<br/>                                        |
+| <span id="DISK_CLUSTER_FLAG_IN_MAINTENANCE"></span><span id="disk_cluster_flag_in_maintenance"></span><dl> <dt>**DISCO \_ MARCA \_ DE CLÚSTER EN \_ \_ MANTENIMIENTO**</dt> <dt>4</dt> </dl>                    | El recurso de clúster asociado a este disco está en modo de mantenimiento.<br/>                                       |
+| <span id="DISK_CLUSTER_FLAG_PNP_ARRIVAL_COMPLETE"></span><span id="disk_cluster_flag_pnp_arrival_complete"></span><dl> <dt>**DISCO \_ CLUSTER \_ FLAG \_ PNP ARRIVAL \_ \_ COMPLETE**</dt> <dt>8</dt> </dl> | El controlador de disco de clúster para el modo kernel (clusdisk) ha recibido una notificación PnP de la llegada del disco.<br/> |
 
 
 
@@ -72,14 +72,14 @@ Combinación de marcas relacionadas con discos y clústeres.
 **FlagsMask**
 </dt> <dd>
 
-Marcas que se están modificando en el miembro **Flags** .
+Marcas que se modifican en el **miembro Flags.**
 
 </dd> <dt>
 
 **Notificar**
 </dt> <dd>
 
-**True** para enviar una notificación de cambio de diseño; en caso contrario, **false**.
+**TRUE** para enviar una notificación de cambio de diseño; de lo contrario, **FALSE**.
 
 </dd> </dl>
 
@@ -87,11 +87,11 @@ Marcas que se están modificando en el miembro **Flags** .
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Ntdddisk. h</dt> </dl> |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Ntdddisk.h</dt> </dl> |
 
 
 
@@ -102,10 +102,10 @@ Marcas que se están modificando en el miembro **Flags** .
 [Estructuras de administración de discos](disk-management-structures.md)
 </dt> <dt>
 
-[**\_información de \_ clúster de obtención de disco de ioctl \_ \_**](ioctl-disk-get-cluster-info.md)
+[**IOCTL \_ DISK \_ GET \_ CLUSTER \_ INFO**](ioctl-disk-get-cluster-info.md)
 </dt> <dt>
 
-[**\_ \_ \_ información del clúster de conjunto de discos ioctl \_**](ioctl-disk-set-cluster-info.md)
+[**INFORMACIÓN DEL \_ CLÚSTER DEL CONJUNTO DE DISCOS \_ \_ DE \_ IOCTL**](ioctl-disk-set-cluster-info.md)
 </dt> </dl>
 
  

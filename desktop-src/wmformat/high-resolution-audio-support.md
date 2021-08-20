@@ -19,15 +19,15 @@ ms.locfileid: "118433604"
 ---
 # <a name="high-resolution-audio-support"></a>High-Resolution audio compatible
 
-Tanto el códec Windows Media Audio 9 Professional como el códec sin pérdida Windows Media Audio 9 admiten audio de alta resolución. El audio de alta resolución se define como un formato de audio con más de 16 bits por muestra. El número de bits que se usan para una muestra de audio individual afecta a la fidelidad de la onda de sonido codificada.
+Tanto el códec Windows Media Audio 9 Professional como el códec sin pérdidas Windows Media Audio 9 admiten audio de alta resolución. El audio de alta resolución se define como un formato de audio con más de 16 bits por muestra. El número de bits que se usan para una muestra de audio individual afecta a la fidelidad de la onda de sonido codificada.
 
-Dado que los formatos de sonido codificados por PCM se han usado en sistemas operativos de Windows durante mucho tiempo, algunas de las funciones de Windows son antiguas y no pueden procesar audio PCM de alta resolución. Como resultado, los formatos PCM de alta resolución se representan mediante estructuras diferentes que el audio estándar. Para obtener más información, vea Working with High-Resolution PCM Audio (Trabajar [con High-Resolution audio de PCM).](working-with-high-resolution-pcm-audio.md)
+Dado que los formatos de sonido codificados por PCM se han usado en sistemas operativos de Windows durante mucho tiempo, algunas de las funciones de Windows son antiguas y no pueden procesar audio PCM de alta resolución. Como resultado, los formatos PCM de alta resolución se representan mediante estructuras diferentes que el audio estándar. Para obtener más información, vea [Working with High-Resolution PCM Audio](working-with-high-resolution-pcm-audio.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Características de códec**](codec-features.md)
+[**Características del códec**](codec-features.md)
 </dt> </dl>
 
  

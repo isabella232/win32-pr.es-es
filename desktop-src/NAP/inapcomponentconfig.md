@@ -38,7 +38,7 @@ La **interfaz INapComponentConfig proporciona métodos** de configuración del s
 
 ## <a name="members"></a>Miembros
 
-La **interfaz INapComponentConfig** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapComponentConfig también** tiene estos tipos de miembros:
+La **interfaz INapComponentConfig** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapComponentConfig** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
@@ -61,13 +61,13 @@ La **interfaz INapComponentConfig** tiene estos métodos.
 
 ## <a name="remarks"></a>Comentarios
 
-Esta interfaz no debe implementarse por agentes de mantenimiento del sistema (SHA) ni clientes de cumplimiento de cuarentena (FC).
+Los agentes de mantenimiento del sistema (SHA) o los clientes de cumplimiento de cuarentena (QEC) no deben implementar esta interfaz.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
@@ -76,7 +76,7 @@ Esta interfaz no debe implementarse por agentes de mantenimiento del sistema (SH
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

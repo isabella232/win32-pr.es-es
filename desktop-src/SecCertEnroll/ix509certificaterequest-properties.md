@@ -17,16 +17,16 @@ La [**interfaz IX509CertificateRequest**](/windows/desktop/api/CertEnroll/nn-cer
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Propiedad AlternateSignatureAlgorithm**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_alternatesignaturealgorithm)
+-   [**AlternateSignatureAlgorithm (Propiedad)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_alternatesignaturealgorithm)
 -   [**Propiedad ClientId**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_clientid)
 -   [**Propiedad CspInformations**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_cspinformations)
 -   [**Propiedad EnrollmentContext**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_enrollmentcontext)
 -   [**Propiedad HashAlgorithm**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_hashalgorithm)
 -   [**Propiedad ParentWindow**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_parentwindow)
--   [**Propiedad RawData**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_rawdata)
+-   [**RawData (propiedad)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_rawdata)
 -   [**Propiedad RenewalCertificate**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_renewalcertificate)
--   [**Propiedad Silenciosa**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_silent)
--   [**Propiedad SuppressDefaults**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_suppressdefaults)
+-   [**Silent (Propiedad)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_silent)
+-   [**SuppressDefaults (propiedad)**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_suppressdefaults)
 -   [**Propiedad Type**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_type)
 -   [**Propiedad UIContextMessage**](/windows/desktop/api/CertEnroll/nf-certenroll-ix509certificaterequest-get_uicontextmessage)
 

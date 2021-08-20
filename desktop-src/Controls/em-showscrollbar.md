@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117831146"
 ---
-# <a name="em_showscrollbar-message"></a>MENSAJE DE EM \_ SHOWSCROLLBAR
+# <a name="em_showscrollbar-message"></a>MENSAJE \_ DE EM SHOWSCROLLBAR
 
 Muestra u oculta una de las barras de desplazamiento en la ventana host de un control de edición enriquecido.
 
@@ -32,7 +32,7 @@ Muestra u oculta una de las barras de desplazamiento en la ventana host de un co
 *wParam* 
 </dt> <dd>
 
-Identifica qué barra de desplazamiento se va a mostrar: horizontal o vertical. Este parámetro debe ser **SB \_ VERT** o **SB \_ HORZ.**
+Identifica la barra de desplazamiento que se va a mostrar: horizontal o vertical. Este parámetro debe ser **SB \_ VERT** o **SB \_ HORZ.**
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Este método solo es válido cuando el control está activo en su lugar. Las lla
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

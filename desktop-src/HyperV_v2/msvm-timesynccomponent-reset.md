@@ -1,7 +1,7 @@
 ---
-description: 'Método reset de la Msvm_TimeSyncComponent clase : solicita un restablecimiento.'
+description: 'Método Reset de la Msvm_TimeSyncComponent clase : solicita un restablecimiento.'
 ms.assetid: fb0ce09b-0d14-4de8-b2e5-4d86169b261b
-title: Método Reset de la Msvm_TimeSyncComponent clase
+title: Método reset de la Msvm_TimeSyncComponent clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: d93f548030c2248b30eab7a3585a3c270311aa42
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ff61059be4172d96af4ee154b305e7d03d3acb44d23f801225841774fd5067c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117810638"
 ---
 # <a name="reset-method-of-the-msvm_timesynccomponent-class"></a>Método Reset de la clase \_ TimeSyncComponent de Msvm
 
@@ -53,7 +53,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -63,7 +63,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -3,7 +3,7 @@ title: Interfaz INapSystemHealthAgentCallback (NapSystemHealthAgent.h)
 description: El sistema declara y lo implementa el escritor SHA para que NapAgent pueda comunicarse con sha.
 ms.assetid: f299e796-c81d-4a22-b9c8-f80990098044
 keywords:
-- NAP de la interfaz INapSystemHealthAgentCallback
+- INapSystemHealthAgentCallback (interfaz NAP)
 - Interfaz NAP de INapSystemHealthAgentCallback , descrita
 topic_type:
 - apiref
@@ -45,12 +45,12 @@ La **interfaz INapSystemHealthAgentCallback** tiene estos métodos.
 
 | Método                                                                                                                                           | Descripción                                                                                                          |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------|
-| [**INapSystemHealthAgentCallback::CompareSoHRequests**](inapsystemhealthagentcallback-comparesohrequests-method.md)                             | Lo usa sha para comparar los sohs.<br/>                                                                      |
+| [**INapSystemHealthAgentCallback::CompareSoHRequests**](inapsystemhealthagentcallback-comparesohrequests-method.md)                             | Lo usa sha para comparar los SoH.<br/>                                                                      |
 | [**INapSystemHealthAgentCallback::GetFixupInfo**](inapsystemhealthagentcallback-getfixupinfo-method.md)                                         | Llamado por NapAgent para determinar el estado de SHA.<br/>                                                 |
-| [**INapSystemHealthAgentCallback::GetSoHRequest**](inapsystemhealthagentcallback-getsohrequest-method.md)                                       | Lo llama NapAgent para consultar la solicitud soH de SHA.<br/>                                                    |
-| [**INapSystemHealthAgentCallback::NotifyOrphanedSoHRequest**](inapsystemhealthagentcallback-notifyorphanedsohrequest-method.md)                 | Se le llama si se ha consultado una solicitud SoH desde sha, pero la respuesta nunca ha vuelto.<br/>                      |
-| [**INapSystemHealthAgentCallback::NotifySystemIsolationStateChange**](inapsystemhealthagentcallback-notifysystemisolationstatechange-method.md) | Lo llama NapAgent para indicar que ha cambiado el estado de aislamiento del sistema o la hora de finalización de la sondeo.<br/> |
-| [**INapSystemHealthAgentCallback::P rocessSoHResponse**](inapsystemhealthagentcallback-processsohresponse-method.md)                             | Se llama cuando NapAgent recibe una respuesta SoH destinada a este agente de mantenimiento.<br/>                         |
+| [**INapSystemHealthAgentCallback::GetSoHRequest**](inapsystemhealthagentcallback-getsohrequest-method.md)                                       | Llamado por NapAgent para consultar la solicitud soH de SHA.<br/>                                                    |
+| [**INapSystemHealthAgentCallback::NotifyOrphanedSoHRequest**](inapsystemhealthagentcallback-notifyorphanedsohrequest-method.md)                 | Se le llama si se ha consultado una solicitud de SoH desde sha, pero la respuesta nunca regresó.<br/>                      |
+| [**INapSystemHealthAgentCallback::NotifySystemIsolationStateChange**](inapsystemhealthagentcallback-notifysystemisolationstatechange-method.md) | Lo llama NapAgent para indicar que el estado de aislamiento del sistema o la hora de finalización de la sondeo han cambiado.<br/> |
+| [**INapSystemHealthAgentCallback::P rocessSoHResponse**](inapsystemhealthagentcallback-processsohresponse-method.md)                             | Se llama cuando NapAgent recibe una respuesta soH destinada a este agente de mantenimiento.<br/>                         |
 
 
 
@@ -69,7 +69,7 @@ La **interfaz INapSystemHealthAgentCallback** tiene estos métodos.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

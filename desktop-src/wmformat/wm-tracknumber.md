@@ -35,7 +35,7 @@ g \_ wszWMTrackNumber
 
 Muchas aplicaciones existentes escriben el valor **de WM/TrackNumber** como **DWORD.** Si crea una aplicación que reproduce archivos de orígenes desconocidos, debe incluir código para controlar los valores de cadena y **DWORD.**
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

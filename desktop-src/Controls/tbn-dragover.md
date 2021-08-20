@@ -21,9 +21,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117829349"
 ---
-# <a name="tbn_dragover-notification-code"></a>Código de notificación DRAGOVER de TBN \_
+# <a name="tbn_dragover-notification-code"></a>Código de notificación \_ DE DRAGOVER de TBN
 
-Determina si se debe [**enviar un \_ mensaje MARKBUTTON**](tb-markbutton.md) de TB para un botón que se está arrastrando. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
+Determina si se debe [**enviar \_ un mensaje MARKBUTTON**](tb-markbutton.md) de TB para un botón que se está arrastrando. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++

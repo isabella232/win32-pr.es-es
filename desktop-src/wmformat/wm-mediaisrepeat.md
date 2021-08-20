@@ -3,7 +3,7 @@ title: WM/MediaIsRepeat
 description: El atributo WM/MediaIsRepeat indica si el contenido es un episodio repetido de una serie.
 ms.assetid: f52b70f5-a5af-45bd-9d05-1bc7f480467d
 keywords:
-- Formato multimedia de Windows WM/MediaIsRepeat
+- WM/MediaIsRepeat windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -29,9 +29,9 @@ g \_ wszWMMediaIsRepeat
 
 ## <a name="data-type"></a>Tipo de datos
 
-**WMT \_ TYPE \_ BOOL**
+**TIPO WMT \_ \_ BOOL**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo se usa para la televisión de difusión.
 

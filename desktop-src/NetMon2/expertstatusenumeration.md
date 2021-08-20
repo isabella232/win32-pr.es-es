@@ -1,7 +1,7 @@
 ---
 description: La enumeración EXPERTSTATUSENUMERATION contiene valores de estado. Lo usa el miembro Status de la estructura EXPERTSTATUS y el parámetro Status de ExpertIndicateStatus.
 ms.assetid: 217dce5a-3698-45a9-bb13-8379bcbdd762
-title: ENUMERACIÓN EXPERTSTATUSENUMERATION (Netmon.h)
+title: Enumeración EXPERTSTATUSENUMERATION (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:

@@ -52,13 +52,13 @@ La eliminación de Windows Mail da como resultado lo siguiente:
 -   Las API documentadas públicamente siguen funcionando como lo hacían en Windows Vista
 -   Las API que intentan iniciar la interfaz de usuario principal del explorador se han modificado para crear un error silencioso. La función devolverá un resultado correcto, pero no mostrará la interfaz de usuario al usuario. Las API que llaman a otros cuadros de diálogo (por ejemplo, el administrador de trabajos de cola o el cuadro de diálogo Cuentas) siguen mostrando esa interfaz de usuario
 -   Los controladores de protocolo (mailto, ldap, news, snews, nntp) no se asociarán con Windows Correo electrónico o Contactos. Al intentar iniciarlas, los clientes verán un cuadro de diálogo de error que los apunta a la ubicación donde pueden establecer estas asociaciones en otro programa.
--   Las asociaciones de archivo (.eml, .nws, .contact, .group, .wab, .p7c, .vfc) están rotas o deshabilitadas. Al intentar abrir un archivo con estas extensiones, los clientes recibirán un cuadro de diálogo que les ofrece otras aplicaciones que están instaladas y que pueden usarlas y apuntarlas a una página web que ofrece soluciones.
+-   Las asociaciones de archivo (.eml, .nws, .contact, .group, .wab, .p7c, .vfc) están rotas o deshabilitadas. Al intentar abrir un archivo con estas extensiones, los clientes recibirán un cuadro de diálogo que les ofrece otras aplicaciones instaladas que pueden usar y apuntarlas a una página web que ofrece soluciones.
 -   Los archivos de usuario (por ejemplo, archivos de contacto o mensajes) permanecen en el sistema en el escenario de actualización
 -   La carpeta Contactos está oculta de forma predeterminada, por lo que los clientes no la verán.
 -   Las API están marcadas como en desuso en MSDN
--   Se ha quitado la función de vista previa del archivo.
+-   Se ha quitado la función de vista previa del archivo
 -   Se quitan los enlaces de shell en el menú contextual
--   Se ha quitado la función de búsqueda de archivos.
+-   Se quita la función de búsqueda de archivos
 
 ## <a name="mitigation"></a>Mitigación
 
@@ -66,9 +66,9 @@ Los usuarios deben Windows Live Mail o cualquier otro producto de correo que pue
 
 ## <a name="solution"></a>Solución
 
-Detecte si hay un controlador de correo predeterminado instalado. Si no es así, aconseja al usuario que Windows Live Mail o cualquier otro producto que pueda leer archivos .eml y .nws.
+Detecte si hay un controlador de correo predeterminado instalado. Si no es así, aconseja al usuario que instale Windows Live Mail o cualquier otro producto que pueda leer archivos .eml y .nws.
 
-No diseñe código que llame a la API de Windows correo electrónico, ya que no funcionará. Debe encontrar otras maneras de acceder a los archivos .eml y .nws. Además, en cuanto sea factible, deje de depender de todas las demás API Windows Mail.
+No diseñe código que llame a la API Windows de interfaz de usuario de correo electrónico, ya que no funcionará. Debe encontrar otras maneras de acceder a los archivos .eml y .nws. Además, en cuanto sea factible, deje de depender de todas las demás API Windows Mail.
 
 ## <a name="compatibility-performance-reliability-and-usability-testing"></a>Pruebas de compatibilidad, rendimiento, confiabilidad y facilidad de uso
 

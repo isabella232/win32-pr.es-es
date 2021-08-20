@@ -1,5 +1,5 @@
 ---
-description: En el ejemplo siguiente se muestra un proceso alternativo de codificación de un mensaje firmado, usando ese mensaje firmado como contenido interno para un mensaje envoltorio. Como preparación para la decodificación, se prueba el contenido interno para determinar su tipo de contenido interno.
+description: En el ejemplo siguiente se muestra un proceso alternativo de codificación de un mensaje firmado, usando ese mensaje firmado como contenido interno para un mensaje con sobres. Como preparación para la decodificación, se prueba el contenido interno para determinar su tipo de contenido interno.
 ms.assetid: ba174e3c-bc2f-48bd-a1bf-fec491dc0ce3
 title: Código alternativo para codificar un mensaje con sobres
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117773699"
 ---
 # <a name="alternate-code-for-encoding-an-enveloped-message"></a>Código alternativo para codificar un mensaje con sobres
 
-En el ejemplo siguiente se muestra un proceso alternativo de codificación de un mensaje firmado, usando ese mensaje firmado como contenido [*interno*](../secgloss/i-gly.md) para un mensaje envoltorio. Como preparación para la decodificación, se prueba el contenido interno para determinar su tipo de contenido interno.
+En el ejemplo siguiente se muestra un proceso alternativo de codificación de un mensaje firmado, usando ese mensaje firmado como contenido [*interno*](../secgloss/i-gly.md) para un mensaje con sobres. Como preparación para la decodificación, se prueba el contenido interno para determinar su tipo de contenido interno.
 
 En este ejemplo se muestran las siguientes funciones de CryptoAPI:
 

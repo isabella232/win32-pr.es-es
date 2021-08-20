@@ -1,6 +1,6 @@
 ---
 title: Función WavePrefixCountBits
-description: Devuelve la suma de todas las variables booleanas especificadas establecidas en true en todos los canales activos con índices menores que el actual.
+description: Devuelve la suma de todas las variables booleanas especificadas establecidas en true en todos los carriles activos con índices menores que el actual.
 ms.assetid: AEC9AFD7-6478-4397-B531-73990D30AA48
 keywords:
 - Función HLSL de WavePrefixCountBits
@@ -22,7 +22,7 @@ ms.locfileid: "118504681"
 ---
 # <a name="waveprefixcountbits-function"></a>Función WavePrefixCountBits
 
-Devuelve la suma de todas las variables booleanas especificadas establecidas en true en todos los canales activos con índices menores que el actual.
+Devuelve la suma de todas las variables booleanas especificadas establecidas en true en todos los carriles activos con índices menores que el actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,7 +48,7 @@ Variables booleanas especificadas.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Suma de todas las variables booleanas especificadas establecidas en true en todos los canales activos con índices menores que el actual.
+Suma de todas las variables booleanas especificadas establecidas en true en todos los carriles activos con índices menores que el actual.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -80,14 +80,14 @@ appendOffset += laneAppendOffset; // and add in the offset for this lane
 buffer[appendOffset] = myData; // write to the offset location for this lane
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [Información general del modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
-[Modelo de sombreador 6](shader-model-6-0.md)
+[Shader Model 6](shader-model-6-0.md)
 </dt> </dl>
 
  

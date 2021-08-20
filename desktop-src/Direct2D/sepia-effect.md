@@ -1,5 +1,5 @@
 ---
-title: Efecto sepia
+title: Efecto Sepia
 description: Convierte una imagen a tonos sepia.
 ms.assetid: fe321be9-6ade-bd0c-1c66-cc8042e5a5e1
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118664992"
 ---
-# <a name="sepia-effect"></a>Efecto sepia
+# <a name="sepia-effect"></a>Efecto Sepia
 
 Convierte una imagen a tonos sepia.
 
@@ -55,7 +55,7 @@ Las propiedades del efecto sepia se definen mediante la [**enumeración \_ SEPIA
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------------|---------------------------------------------------|
 | Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
 | Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |

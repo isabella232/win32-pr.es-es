@@ -1,9 +1,9 @@
 ---
 title: NumberOfFrames
-description: El atributo NumberOfFrames contiene el número de fotogramas de un flujo de vídeo.
+description: El atributo NumberOfFrames contiene el número de fotogramas de una secuencia de vídeo.
 ms.assetid: 86bd2b2b-e3f7-4a0f-9681-974ce451d6f7
 keywords:
-- NumberOfFrames formato de Windows Media
+- Formato multimedia de Windows NumberOfFrames
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a0a73e1892c2d6de63bb92e54435d4328b95c19
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 3874f492c60b4362a79a5452ef83ecccbccc9873b86432a6d22873839efe51d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103904139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117654490"
 ---
 # <a name="numberofframes"></a>NumberOfFrames
 
-El atributo **NumberOfFrames** contiene el número de fotogramas de un flujo de vídeo.
+El **atributo NumberOfFrames** contiene el número de fotogramas de una secuencia de vídeo.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,11 +29,11 @@ g \_ wszWMNumberOfFrames
 
 ## <a name="data-type"></a>Tipo de datos
 
-**tipo de WMT. \_ \_**
+**QWORD \_ DE TIPO \_ WMT**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El escritor agrega este valor para un flujo de vídeo en el momento de la codificación. **NumberOfFrames** no es de solo lectura. Sin embargo, solo debe cambiar el valor Si edita el archivo, cambiando el número de fotogramas en una secuencia de vídeo.
+El escritor agrega este valor para una secuencia de vídeo en el momento de la codificación. **NumberOfFrames** no es de solo lectura. Sin embargo, solo debe cambiar el valor si edita el archivo, cambiando el número de fotogramas de una secuencia de vídeo.
 
 ## <a name="see-also"></a>Vea también
 
@@ -42,9 +42,9 @@ El escritor agrega este valor para un flujo de vídeo en el momento de la codifi
 [**Lista de atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

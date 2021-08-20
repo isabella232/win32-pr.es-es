@@ -1,5 +1,5 @@
 ---
-description: Una aplicación puede agregar identificadores de seguridad (SID) a un contexto de cliente existente llamando a la función AuthzAddSidsToContext.
+description: Una aplicación puede agregar identificadores de seguridad (SID) a un contexto de cliente existente mediante una llamada a la función AuthzAddSidsToContext.
 ms.assetid: d49ce47b-e91a-452b-b423-07e8d282d28a
 title: Agregar SID a un contexto de cliente
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117784927"
 ---
 # <a name="adding-sids-to-a-client-context"></a>Agregar SID a un contexto de cliente
 
-Una aplicación puede agregar [*identificadores de seguridad*](/windows/desktop/SecGloss/s-gly) (SID) a un contexto de cliente existente llamando a la función [**AuthzAddSidsToContext.**](/windows/desktop/api/Authz/nf-authz-authzaddsidstocontext) La [**función AuthzAddSidsToContext**](/windows/desktop/api/Authz/nf-authz-authzaddsidstocontext) permite a una aplicación especificar una lista de SID y una lista de SID de restricción al contexto de cliente especificado.
+Una aplicación puede agregar [*identificadores de seguridad*](/windows/desktop/SecGloss/s-gly) (SID) a un contexto de cliente existente mediante una llamada a la función [**AuthzAddSidsToContext.**](/windows/desktop/api/Authz/nf-authz-authzaddsidstocontext) La [**función AuthzAddSidsToContext**](/windows/desktop/api/Authz/nf-authz-authzaddsidstocontext) permite a una aplicación especificar una lista de SID y una lista de SID de restricción al contexto de cliente especificado.
 
 El sistema usa la lista de SID de restricción cuando comprueba el acceso del token a un objeto protegible. Cuando un proceso o subproceso restringido intenta acceder a un objeto protegible, el sistema realiza dos comprobaciones de acceso: una con los SID habilitados del token y otra con la lista de SID de restricción. El acceso solo se concede si ambas comprobaciones de acceso permiten los derechos de acceso solicitados.
 
@@ -109,7 +109,7 @@ BOOL AddSidsToContext(AUTHZ_CLIENT_CONTEXT_HANDLE *phClientContext)
 [Comprobación del acceso con Authz API](checking-access-with-authz-api.md)
 </dt> <dt>
 
-[Inicializar un contexto de cliente](initializing-a-client-context.md)
+[Inicialización de un contexto de cliente](initializing-a-client-context.md)
 </dt> <dt>
 
 [Consulta de un contexto de cliente](querying-a-client-context.md)
