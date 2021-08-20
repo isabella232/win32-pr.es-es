@@ -4,12 +4,12 @@ description: Obtenga información sobre la propiedad Width del objeto Characters
 ms.assetid: ebada4cc-dbe6-4540-be1f-1f61e176765b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e17f11412774fcf34e887a2f00479ab7d96369de
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 7a566f0077fbbd9335853dbd9d8e8c1bbdff1a79f33914f0c4b4865092bd3506
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118066763"
 ---
 # <a name="width-property-characters-object"></a>Propiedad Width (objeto Characters)
 
@@ -41,7 +41,7 @@ Devuelve o establece el ancho del marco para el carácter especificado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La [**propiedad Width**](width-property.md) siempre se expresa en píxeles. La configuración de esta propiedad se aplica a todos los clientes del carácter.
 

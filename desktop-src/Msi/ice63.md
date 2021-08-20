@@ -1,42 +1,42 @@
 ---
-description: ICE63 comprueba la secuenciación correcta de la acción RemoveExistingProducts.
+description: ICE63 comprueba si la secuenciación de la acción RemoveExistingProducts es correcta.
 ms.assetid: 4dd67bb0-c08a-4a44-b687-0394a3afc2c4
 title: ICE63
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5faa6f2ddbcb95cdf12966c2887fe9438a5d610
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f0de847a3b79c87b8ddc7dbaf3be64f88b9ef34df80d92737b6d9005ffdad24
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118142499"
 ---
 # <a name="ice63"></a>ICE63
 
-ICE63 comprueba la secuenciación correcta de la [acción RemoveExistingProducts](removeexistingproducts-action.md). La acción RemoveExistingProducts se puede colocar:
+ICE63 comprueba si la secuenciación de la [acción RemoveExistingProducts](removeexistingproducts-action.md)es correcta. Se puede colocar la acción RemoveExistingProducts:
 
-1.  Entre InstallValidate y InstallInitialize
+1.  Entre InstallValidate e InstallInitialize
 2.  Inmediatamente después de InstallInitialize o después de InstallInitialize si las acciones entre InstallInitialize y RemoveExistingProducts no generan ninguna acción de script.
-3.  Inmediatamente después de InstallExecute o InstallExecuteAgain y antes de InstallFinalize (se aplica la misma restricción que antes).
+3.  Inmediatamente después de InstallExecute o InstallExecuteAgain y antes de InstallFinalize (se aplica la misma restricción que la anterior).
 4.  Después de InstallFinalize.
 
-Si no se corrige una advertencia o un error informados por ICE63, se producirá un error en la actualización.
+Si no se corrige una advertencia o un error notificado por ICE63, se producirá un error en la actualización.
 
 ## <a name="result"></a>Resultado
 
-ICE63 expone una advertencia o un error si la secuenciación de la acción RemoveExistingProducts no es correcta.
+ICE63 envía una advertencia o un error si la secuenciación de la acción RemoveExistingProducts no es correcta.
 
 ## <a name="example"></a>Ejemplo
 
-ICE63 notifica el siguiente error para el ejemplo que se muestra.
+ICE63 notifica el siguiente error para el ejemplo mostrado.
 
 ``` syntax
 WARNING: Some action falls between InstallInitialize and RemoveExistingProducts.
 ```
 
-La acción "MyCustomAction" se produce entre InstallInitialize y RemoveExistingProducts. Si MyCustomAction genera acciones en el script, esto provoca problemas en la instalación.
+La acción "MyCustomAction" se produce entre InstallInitialize y RemoveExistingProducts. Si MyCustomAction genera alguna acción en el script, esto causa problemas en la instalación.
 
-Para corregir este error, compruebe que MyCustomAction no genera ninguna acción de script ni resecuenciar las acciones.
+Para corregir este error, compruebe que MyCustomAction no genera ninguna acción de script ni resecuencia las acciones.
 
 [Tabla InstallExecuteSequence](installexecutesequence-table.md)
 

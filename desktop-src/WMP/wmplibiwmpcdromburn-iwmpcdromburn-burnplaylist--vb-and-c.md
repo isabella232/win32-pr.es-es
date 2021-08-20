@@ -1,11 +1,11 @@
 ---
-title: Propiedad burnPlaylist de IWMPCdromBurn
-description: La propiedad burnPlaylist obtiene la lista de reproducción actual para grabarla en el CD.
+title: Propiedad IWMPCdromRomRom burnPlaylist
+description: La propiedad burnPlaylist obtiene la lista de reproducción actual para grabar en el CD.
 ms.assetid: 973032de-7249-4ccd-9909-ccc888f4490f
 keywords:
-- propiedades de burnPlaylist Media Player de Windows
-- propiedad burnPlaylist de Windows Media Player, interfaz IWMPCdromBurn
-- Interfaz IWMPCdromBurn Windows Media Player, propiedad burnPlaylist
+- propiedades burnPlaylist Reproductor de Windows Media
+- Interfaz de propiedad burnPlaylist Reproductor de Windows Media , IWMPCdromPlay
+- Interfaz IWMPCdromRom Reproductor de Windows Media , propiedad burnPlaylist
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cae095696b9c106926fb7f363430574b2eb87cea
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 186996632a5b25c89019f9bbb692d9804ae33130650d4b0a29c0cb51e30d0792
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718842"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116616"
 ---
-# <a name="iwmpcdromburnburnplaylist-property"></a>IWMPCdromBurn:: burnPlaylist (propiedad)
+# <a name="iwmpcdromburnburnplaylist-property"></a>Propiedad IWMPCdromRomRom::burnPlaylist
 
-La propiedad **burnPlaylist** obtiene la lista de reproducción actual para grabarla en el CD.
+La **propiedad burnPlaylist** obtiene la lista de reproducción actual para grabar en el CD.
 
 Esta propiedad es de solo lectura.
 
@@ -49,13 +49,13 @@ Public ReadOnly Property burnPlaylist As IWMPPlaylist
 
 ## <a name="property-value"></a>Valor de propiedad
 
-La interfaz **WMPLib. IWMPPlaylist** de la lista de reproducción que se va a grabar.
+Interfaz **WMPLib.IWMPPlaylist** de la lista de reproducción que se grabará.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media 11<br/>                                                                                     |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -67,7 +67,7 @@ La interfaz **WMPLib. IWMPPlaylist** de la lista de reproducción que se va a gr
 
 <dl> <dt>
 
-[**Interfaz IWMPCdromBurn (VB y C#)**](iwmpcdromburn--vb-and-c.md)
+[**Interfaz IWMPCdromRomRom (VB y C#)**](iwmpcdromburn--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaz IWMPPlaylist (VB y C#)**](iwmpplaylist--vb-and-c.md)

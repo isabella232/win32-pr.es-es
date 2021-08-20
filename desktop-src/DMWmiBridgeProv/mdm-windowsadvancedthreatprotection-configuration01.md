@@ -1,9 +1,9 @@
 ---
-title: MDM_WindowsAdvancedThreatProtection_Configuration01 (clase)
-description: La \_ clase Configuration01 de WindowsAdvancedThreatProtection de MDM \_ se usa para determinar la configuración de los puntos de conexión de protección contra amenazas avanzada (WDATP) de Windows Defender.
+title: MDM_WindowsAdvancedThreatProtection_Configuration01 clase
+description: La clase \_ MDM WindowsAdvancedThreatProtection Configuration01 se usa para determinar la configuración de Windows Defender de \_ Advanced Threat Protection (WDATP).
 ms.assetid: b4b2ff02-3836-4044-b8fa-d3405f433d8c
 keywords:
-- MDM_WindowsAdvancedThreatProtection_Configuration01 (clase)
+- MDM_WindowsAdvancedThreatProtection_Configuration01 clase
 - MDM_WindowsAdvancedThreatProtection_Configuration01 clase, descrita
 ms.topic: reference
 ms.date: 05/31/2018
@@ -19,18 +19,18 @@ api_type:
 - DllExport
 api_location:
 - Mofs\DMWmiBridgeProv.dll
-ms.openlocfilehash: c6cd6689a66735790c381ac307a443c08464a379
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6bcf9cb641151b282bb1bfc594eb9762e00e11101d8f9fbd865b2712bab5f8a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118164221"
 ---
-# <a name="mdm_windowsadvancedthreatprotection_configuration01-class"></a>\_Clase Configuration01 WindowsAdvancedThreatProtection de MDM \_
+# <a name="mdm_windowsadvancedthreatprotection_configuration01-class"></a>Mdm \_ WindowsAdvancedThreatProtection \_ Configuration01 (clase)
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La **clase \_ \_ Configuration01 de WindowsAdvancedThreatProtection de MDM** se usa para determinar la configuración de los puntos de conexión de protección contra amenazas avanzada (WDATP) de Windows Defender.
+La **clase \_ MDM WindowsAdvancedThreatProtection \_ Configuration01** se usa para determinar la configuración de Windows Defender de Advanced Threat Protection (WDATP).
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -50,26 +50,26 @@ class MDM_WindowsAdvancedThreatProtection_Configuration01
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ \_ Configuration01 de MDM WindowsAdvancedThreatProtection** tiene estos tipos de miembros:
+La **clase \_ MDM WindowsAdvancedThreatProtection \_ Configuration01** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ Configuration01 de MDM WindowsAdvancedThreatProtection** tiene estas propiedades.
+La **clase \_ MDM WindowsAdvancedThreatProtection \_ Configuration01** tiene estas propiedades.
 
 <dl> <dt>
 
-**ID**
+**GroupIds**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-TBD
+Por determinar
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica el nombre del nodo primario. Para esta clase, la cadena es "Configuration".
@@ -98,10 +98,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/WindowsAdvancedThreatProtection".
+Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/WindowsAdvancedThreatProtection"
 
 </dd> <dt>
 
@@ -111,7 +111,7 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -122,7 +122,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> </dl>
@@ -131,13 +131,13 @@ Tipo de acceso: lectura/escritura
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                            |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |
-| Archivo DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllMOF</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl>      |
+| Archivo DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 
@@ -145,7 +145,7 @@ Tipo de acceso: lectura/escritura
 
 <dl> <dt>
 
-[Usar scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

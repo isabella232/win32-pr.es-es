@@ -23,7 +23,7 @@ ms.locfileid: "118337970"
 ---
 # <a name="playersettings"></a>Player.settings
 
-La **propiedad settings** recupera el Configuración objeto .
+La **propiedad** settings recupera el Configuración objeto .
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,7 +44,7 @@ Esta propiedad es un objeto de solo Configuración lectura.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

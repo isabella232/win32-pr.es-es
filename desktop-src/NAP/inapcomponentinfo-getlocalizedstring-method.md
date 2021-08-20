@@ -1,11 +1,11 @@
 ---
-title: Método INapComponentInfo GetLocalizedString (NapCommon. h)
-description: Lo usa el sistema NAP para obtener cadenas traducidas.
+title: Método INapComponentInfo GetLocalizedString (NapCommon.h)
+description: El sistema NAP lo usa para obtener cadenas localizadas.
 ms.assetid: ad5be180-6329-4c91-b4d1-871a4d83c323
 keywords:
-- Método GetLocalizedString NAP
-- Método GetLocalizedString NAP, interfaz INapComponentInfo
-- Interfaz INapComponentInfo NAP, método GetLocalizedString
+- Método NAP getLocalizedString
+- Método NAP de GetLocalizedString, interfaz INapComponentInfo
+- INapComponentInfo interface NAP , GetLocalizedString method
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 781e4e8c93f58039c72a98f40a529243e5722d23
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e7be55595bf6c5af6e435d9c53c9b473a721005699da494319ba55eaa828da2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134368"
 ---
-# <a name="inapcomponentinfogetlocalizedstring-method"></a>INapComponentInfo:: GetLocalizedString (método)
+# <a name="inapcomponentinfogetlocalizedstring-method"></a>INapComponentInfo::GetLocalizedString (método)
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-El sistema NAP usa el método de devolución de llamada **INapComponentInfo:: GetLocalizedString** para obtener cadenas localizadas.
+El sistema NAP usa el método de devolución de llamada **INapComponentInfo::GetLocalizedString** para obtener cadenas localizadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,37 +48,37 @@ HRESULT GetLocalizedString(
 
 <dl> <dt>
 
-*msgId* \[ de\]
+*msgId* \[ En\]
 </dt> <dd>
 
-[**MessageId**](nap-datatypes.md) que contiene el identificador de recurso de la cadena que se va a localizar.
+MessageId [**que**](nap-datatypes.md) contiene el identificador de recurso de la cadena que se debe encontrar.
 
 </dd> <dt>
 
-*cadena* \[ enuncia\]
+*cadena* \[ out\]
 </dt> <dd>
 
-Un puntero a un puntero a un [**CountedString**](/windows/win32/api/naptypes/ns-naptypes-countedstring) que contiene la versión localizada del mensaje.
+Puntero a un puntero a [**countedString**](/windows/win32/api/naptypes/ns-naptypes-countedstring) que contiene la versión localizada del mensaje.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelva uno de estos códigos de error en función del resultado de esta operación.
+Devuelve uno de estos códigos de error en función del resultado de esta operación.
 
 
 
 | Código devuelto                                                                                     | Descripción                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> </dl>           | La operación se realizó correctamente.<br/>                            |
+| <dl> <dt>**S \_ Ok (Aceptar)**</dt> </dl>           | La operación se realizó correctamente.<br/>                            |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Error de permisos, acceso denegado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Límite de recursos del sistema, no se pudo realizar la operación.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | El límite de recursos del sistema no pudo realizar la operación.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Las cadenas deben localizarse según el identificador de idioma del subproceso que realiza la llamada.
 
@@ -86,12 +86,12 @@ Las cadenas deben localizarse según el identificador de idioma del subproceso q
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 
 
 

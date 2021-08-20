@@ -1,51 +1,51 @@
 ---
-title: Trasladar objetos de NURBS
-description: OpenGL trata a NURBS como objetos, de forma similar al modo en que trata Quadrics crea un objeto NURBS y, a continuación, especifica cómo se debe representar. En la tabla siguiente se enumeran las funciones de OpenGL GLU para administrar objetos de NURBS.
+title: Porte de objetos DE BASE DE DATOS
+description: OpenGL trata ASEBS como objetos, de forma similar a la forma en que trata los cuádigos, se crea un objeto DE LABS y, a continuación, se especifica cómo se debe representar. En la tabla siguiente se enumeran las funciones GLU de OpenGL para administrar objetos DE LABS.
 ms.assetid: baddf81b-219f-44bb-aa17-37404028b258
 keywords:
-- Migración de GL de IRIS, objetos de NURBS
-- portabilidad de IRIS GL, objetos de NURBS
-- trasladar a OpenGL desde IRIS GL, objetos de NURBS
-- Exportación de OpenGL desde IRIS GL, objetos de NURBS
-- Objetos NURBS
-- NURBS (no uniforme, B-spline racional)
-- B-spline racional no uniforme (NURBS)
+- Porte de IRIS GL, objetos DE LABS
+- porte de objetos IRIS GL,GLBS
+- porte a OpenGL desde objetos IRIS GL,GLBS
+- Porte de OpenGL desde objetos IRIS GL,GLBS
+- Objetos DE LA BASE DE DATOS
+- SPLINEBS (B-spline no uniforme lógica)
+- Spline B no uniforme lógica (SPLINE) (SPLINEBS)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e0e56c06eea4e4a9a48f9062205277f8b999499
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: af6990d2292399cb1ccaf00ba6ec42d680c5ace887b2495daf8640db2da30ac5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418877"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118132414"
 ---
-# <a name="porting-nurbs-objects"></a>Trasladar objetos de NURBS
+# <a name="porting-nurbs-objects"></a>Porte de objetos DE BASE DE DATOS
 
-OpenGL trata a NURBS como objetos, de forma similar al modo en que trata Quadrics: se crea un objeto NURBS y, a continuación, se especifica cómo se debe representar. En la tabla siguiente se enumeran las funciones de OpenGL GLU para administrar objetos de NURBS.
+OpenGL trata ASEBS como objetos, de forma similar a la forma en que trata los cuádigos: se crea un objeto DE LABS y, a continuación, se especifica cómo se debe representar. En la tabla siguiente se enumeran las funciones GLU de OpenGL para administrar objetos DE LABS.
 
 
 
 | Función GLU de OpenGL                                      | Significado                                                        |
 |----------------------------------------------------------|----------------------------------------------------------------|
-| [**gluNewNurbsRenderer**](glunewnurbsrenderer.md)       | Crea un nuevo objeto NURBS.                                    |
-| [**gluDeleteNurbsRenderer**](gludeletenurbsrenderer.md) | Elimina un objeto NURBS.                                        |
-| [*gluNurbsCallback*](glunurbs.md)                       | Asocia una devolución de llamada a un objeto NURBS para el control de errores. |
+| [**gluNewNurbsRenderer**](glunewnurbsrenderer.md)       | Crea un nuevo objeto RECORDSETBS.                                    |
+| [**gluDeleteNurbsRenderer**](gludeletenurbsrenderer.md) | Elimina un objeto DESPRBS.                                        |
+| [*gluNurbsCallback*](glunurbs.md)                       | Asocia una devolución de llamada a un objeto RECORDSETBS para el control de errores. |
 
 
 
- 
+ 
 
-Al migrar el código NURBS de GL de IRIS a OpenGL, tenga en cuenta los puntos siguientes:
+Al portear el código DE IRIS GL LOBS a OpenGL, tenga en cuenta los siguientes puntos:
 
--   Los puntos de control de NURBS son Float, no dobles.
--   El parámetro STRIDE se cuenta en Float, no en bytes.
--   Si usa la iluminación y no está especificando las normales, llame a [**glEnable**](glenable.md) con GL \_ auto \_ normal como parámetro para generar las normales automáticamente.
+-   Los puntos de control DE LABS son flotantes, no dobles.
+-   El parámetro stride se cuenta en floats, no en bytes.
+-   Si usa iluminación y no especifica normales, llame a [**glEnable**](glenable.md) con GL AUTO NORMAL como parámetro para generar \_ \_ normales automáticamente.
 
 ??
 
- 
+ 
 
- 
+ 
 
 
 

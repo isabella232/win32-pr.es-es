@@ -1,7 +1,7 @@
 ---
-description: Determina si una dirección IP se encuentra en una subred específica.
+description: Determina si una dirección IP está en una subred específica.
 ms.assetid: 2fbfad9c-86b1-44c3-860b-a5c98ac6c2e9
-title: isInNetEx función)
+title: Función isInNetEx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,40 +12,40 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: d738fbf5788fbe56d8c801b6c5256e96e8d4a6f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a91555370bada5c4bb9257918d0920ac71ac5475c08201f30bf1fbbb4b95c1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118114468"
 ---
-# <a name="isinnetex-function"></a>isInNetEx función)
+# <a name="isinnetex-function"></a>Función isInNetEx
 
-Determina si una dirección IP se encuentra en una subred específica.
+Determina si una dirección IP está en una subred específica.
 
 ## <a name="parameters"></a>Parámetros
 
 <dl> <dt>
 
-*DirIP* 
+*Ipaddress* 
 </dt> <dd>
 
-Una cadena que contiene direcciones IPv6/IPv4.
+Cadena que contiene direcciones IPv6/IPv4.
 
 </dd> <dt>
 
 *IPprefix* 
 </dt> <dd>
 
-Cadena que contiene el prefijo de IP delimitado por dos puntos con los n bits superiores especificados en el campo de bits (es decir, 3ffe: 8311: ffff::/48 o 123.112.0.0/16).
+Cadena que contiene el prefijo IP delimitado por dos puntos con los n bits superiores especificados en el campo de bits (es decir, 3ffe:8311:ffff::/48 o 123.112.0.0/16).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-TRUE si el host está en la misma subred; en caso contrario, FALSE.
+TRUE si el host está en la misma subred; de lo contrario, FALSE.
 
-También devuelve FALSE si el prefijo no tiene el formato correcto o si se usan direcciones y prefijos de tipos diferentes en la comparación (es decir, el prefijo IPv4 y una dirección IPv6).
+También devuelve FALSE si el prefijo no tiene el formato correcto o si se usan direcciones y prefijos de distintos tipos en la comparación (es decir, prefijo IPv4 y una dirección IPv6).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -68,10 +68,10 @@ isInNetEx(host, "3ffe:8311:ffff::/48");
 
 <dl> <dt>
 
-[Definiciones de API de aplicación auxiliar de proxy compatible con IPv6](ipv6-aware-proxy-helper-api-definitions.md)
+[Definiciones de API del asistente de proxy compatibles con IPv6](ipv6-aware-proxy-helper-api-definitions.md)
 </dt> <dt>
 
-[Extensiones IPv6 para el formato de archivo de configuración automática de navegador](ipv6-extensions-to-navigator-auto-config-file-format.md)
+[Extensiones IPv6 para el formato de archivo de configuración automática del navegador](ipv6-extensions-to-navigator-auto-config-file-format.md)
 </dt> </dl>
 
  

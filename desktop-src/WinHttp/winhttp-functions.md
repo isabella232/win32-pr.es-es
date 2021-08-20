@@ -4,12 +4,12 @@ ms.assetid: dcb56d5d-ed0d-49bb-95bf-940a49c033f1
 title: Funciones WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41e45289230c1cc22a7f8799dfbbe1dafddccf38
-ms.sourcegitcommit: 8e3d8594fa073a9c43eb5dcc7babea03ea30f10f
+ms.openlocfilehash: a1e3fdd7a0e6e42dcc30a214d429744ffadc1345e8a88fcc70a35a5f7ccace95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113174975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118114168"
 ---
 # <a name="winhttp-functions"></a>Funciones WinHTTP
 
@@ -55,7 +55,7 @@ Especifica el servidor de destino inicial de una solicitud HTTP.
 [**WinHttpCrackUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpcrackurl)
 </dt> <dd>
 
-Separa una dirección URL en sus elementos componentes, por ejemplo, el nombre de host y la ruta de acceso.
+Separa una dirección URL en sus componentes, por ejemplo, el nombre de host y la ruta de acceso.
 
 </dd> <dt>
 
@@ -83,7 +83,7 @@ Busca la dirección URL del archivo de configuración automática (PAC) del prox
 [**WinHttpFreeProxyResult**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpfreeproxyresult)
 </dt> <dd>
 
-Libera los datos recuperados de una llamada anterior a [**WinHttpGetProxyResult**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyresult).
+Libera los datos recuperados de una llamada anterior a [**WinHttpGetProxyResult.**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyresult)
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Recupera la configuración predeterminada del proxy WinHTTP del Registro.
 [**WinHTTPGetIEProxyConfigForCurrentUser**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetieproxyconfigforcurrentuser)
 </dt> <dd>
 
-Obtiene la configuración Internet Explorer (IE) del usuario actual.
+Obtiene la configuración Internet Explorer proxy (IE) del usuario actual.
 
 </dd> <dt>
 
@@ -251,7 +251,7 @@ Configura una función de devolución de llamada a la que WinHTTP puede llamar a
 [**WinHttpSetTimeouts**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpsettimeouts)
 </dt> <dd>
 
-Establece los distintos tiempos de espera que intervienen en las transacciones HTTP.
+Establece los distintos tiempos de espera que están implicados en las transacciones HTTP.
 
 </dd> <dt>
 

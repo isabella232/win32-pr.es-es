@@ -41,7 +41,7 @@ Devuelve el identificador a la lista de imágenes que el control usa para mostra
 
 ## <a name="remarks"></a>Comentarios
 
-Un botón está en caliente cuando el cursor está sobre él. Los controles de barra de herramientas deben tener el estilo [**TBSTYLE \_ FLAT**](toolbar-control-and-button-styles.md) o [**TBSTYLE \_ LIST**](toolbar-control-and-button-styles.md) para tener elementos de acceso rápido.
+Un botón está en caliente cuando el cursor está sobre él. Los controles de barra de herramientas deben [**tener el estilo TBSTYLE \_ FLAT**](toolbar-control-and-button-styles.md) o [**TBSTYLE \_ LIST**](toolbar-control-and-button-styles.md) para tener elementos de acceso rápido.
 
 ## <a name="requirements"></a>Requisitos
 

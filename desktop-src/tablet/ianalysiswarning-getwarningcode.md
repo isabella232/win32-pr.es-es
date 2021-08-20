@@ -1,7 +1,7 @@
 ---
 description: Devuelve el tipo de advertencia que se produjo mediante la enumeración AnalysisWarningCode.
 ms.assetid: ec67a5ac-a7a2-4805-b9b5-915ea956d228
-title: 'IAnalysisWarning:: GetWarningCode (método) (IACom. h)'
+title: Método IAnalysisWarning::GetWarningCode (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 8e129b410de9e8ca9e3944b6a371fe0cac673fc5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ea4f8ec91897b8977614ed21d47e2990fa90cd09cf9f9079fba03837992a8389
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118044934"
 ---
-# <a name="ianalysiswarninggetwarningcode-method"></a>IAnalysisWarning:: GetWarningCode (método)
+# <a name="ianalysiswarninggetwarningcode-method"></a>IAnalysisWarning::GetWarningCode (método)
 
-Devuelve el tipo de advertencia que se produjo mediante la enumeración [**AnalysisWarningCode**](analysiswarningcode.md) .
+Devuelve el tipo de advertencia que se produjo mediante la [**enumeración AnalysisWarningCode.**](analysiswarningcode.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ HRESULT GetWarningCode(
 
 <dl> <dt>
 
-*pWarningCode* \[ enuncia\]
+*pWarningCode* \[ out\]
 </dt> <dd>
 
 Tipo de advertencia que se ha producido.
@@ -48,11 +48,11 @@ Tipo de advertencia que se ha producido.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra un esquema de un controlador de eventos para el evento [**\_ IAnalysisEvents:: Results**](-ianalysisevents-results.md) . El controlador comprueba [**IAnalysisStatus:: IsSuccessful**](ianalysisstatus-issuccessful.md). Si la operación de análisis generó advertencias, el controlador recorre en iteración la colección de objetos [**IAnalysisWarning**](ianalysiswarning.md) .
+En el ejemplo siguiente se muestra un esquema de un controlador de eventos para el [**\_ evento IAnalysisEvents::Results.**](-ianalysisevents-results.md) El controlador comprueba [**IAnalysisStatus::IsSuccessful.**](ianalysisstatus-issuccessful.md) Si la operación de análisis genera advertencias, el controlador recorre en iteración la colección de [**objetos IAnalysisWarning.**](ianalysiswarning.md)
 
 
 ```C++
@@ -137,11 +137,11 @@ STDMETHODIMP CMyClass::Results(
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -156,7 +156,7 @@ STDMETHODIMP CMyClass::Results(
 [**AnalysisWarningCode**](/windows/desktop/tablet/analysiswarningcode)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

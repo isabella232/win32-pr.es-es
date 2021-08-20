@@ -1,11 +1,11 @@
 ---
-title: IWMPCdromBurn getItemInfo, método
+title: Método IWMPCdromAsync getItemInfo
 description: El método getItemInfo recupera el valor del atributo especificado para el CD.
 ms.assetid: 9ca54ec4-42be-40c1-931e-c3bfcbc2b370
 keywords:
-- método getItemInfo de Windows Media Player
-- método getItemInfo Windows Media Player, interfaz IWMPCdromBurn
-- Interfaz IWMPCdromBurn Windows Media Player, método getItemInfo
+- Método getItemInfo Reproductor de Windows Media
+- Método getItemInfo Reproductor de Windows Media , interfaz IWMPCdromAsync
+- Interfaz IWMPCdromAsync Reproductor de Windows Media , método getItemInfo
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9030bd230b2e17bab6ad54dc762a78d2cb343d03
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c2cf1a91ad60826e19051a59617157110fbcd8d75eff325f94f9b3f84d759aa4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116233"
 ---
-# <a name="iwmpcdromburngetiteminfo-method"></a>IWMPCdromBurn:: getItemInfo (método)
+# <a name="iwmpcdromburngetiteminfo-method"></a>IWMPCdromAsync::getItemInfo (método)
 
-El método **getItemInfo** recupera el valor del atributo especificado para el CD.
+El **método getItemInfo** recupera el valor del atributo especificado para el CD.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,18 +53,18 @@ Implements IWMPCdromBurn.getItemInfo
 
 <dl> <dt>
 
-*bstrItem* \[ de\]
+*bstrItem* \[ En\]
 </dt> <dd>
 
-**System. String** que contiene uno de los valores siguientes.
+**System.String que** contiene uno de los valores siguientes.
 
 
 
-| Value         | Descripción                                                                                  |
+| Valor         | Descripción                                                                                  |
 |---------------|----------------------------------------------------------------------------------------------|
-| AvailableTime | Recupera la hora disponible en el CD, en segundos.                                          |
-| En blanco         | Recupera un **System. Boolean** (representado como una cadena) que indica si el CD está en blanco. |
-| FreeSpace     | Recupera el espacio disponible en el CD, en bytes.                                                |
+| AvailableTime | Recupera el tiempo disponible en el CD, en segundos.                                          |
+| En blanco         | Recupera un **objeto System.Boolean** (representado como una cadena) que indica si el CD está en blanco. |
+| FreeSpace     | Recupera el espacio libre en el CD, en bytes.                                                |
 | TotalSpace    | Recupera el espacio total en el CD, en bytes.                                               |
 
 
@@ -75,13 +75,13 @@ Implements IWMPCdromBurn.getItemInfo
 
 ## <a name="return-value"></a>Valor devuelto
 
-**System. String** que es el valor del atributo especificado.
+**System.String que** es el valor del atributo especificado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media 11<br/>                                                                                     |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -93,7 +93,7 @@ Implements IWMPCdromBurn.getItemInfo
 
 <dl> <dt>
 
-[**Interfaz IWMPCdromBurn (VB y C#)**](iwmpcdromburn--vb-and-c.md)
+[**Interfaz IWMPCdromRomRom (VB y C#)**](iwmpcdromburn--vb-and-c.md)
 </dt> </dl>
 
  

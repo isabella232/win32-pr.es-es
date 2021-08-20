@@ -1,9 +1,9 @@
 ---
-title: Comando MCI_LOAD (mmsystem. h)
-description: El comando de carga de MCI \_ carga un archivo. Los dispositivos de vídeo digital y de superposición reconocen este comando.
+title: MCI_LOAD comando (Mmsystem.h)
+description: El comando LOAD de MCI \_ carga un archivo. Los dispositivos de superposición de vídeo digital y vídeo reconocen este comando.
 ms.assetid: 0f48afa0-e845-4de5-8433-15bbf4eae683
 keywords:
-- Comando de MCI_LOAD de Windows multimedia
+- MCI_LOAD comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb00ebe9dc9107c4673fc323fcb7719a89beffd4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e318e79bf24e51fec69f97a0dcb56395cb1a8917a31105deae062a865169b778
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138543"
 ---
-# <a name="mci_load-command"></a>\_Comando carga de MCI
+# <a name="mci_load-command"></a>Comando LOAD de MCI \_
 
-El comando de carga de MCI \_ carga un archivo. Los dispositivos de vídeo digital y de superposición reconocen este comando.
+El comando LOAD de MCI \_ carga un archivo. Los dispositivos de superposición de vídeo digital y vídeo reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
+Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
 
 ```C++
@@ -50,59 +50,59 @@ Identificador de dispositivo del dispositivo MCI que va a recibir el mensaje de 
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-\_La notificación de MCI, la espera de MCI \_ o, para dispositivos de vídeo digital, la prueba de MCI \_ . Para obtener información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+MCI \_ NOTIFY, MCI \_ WAIT o, para dispositivos de vídeo digital, MCI \_ TEST. Para obtener información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> <dt>
 
 <span id="lpLoad"></span><span id="lpload"></span><span id="LPLOAD"></span>*lpLoad*
 </dt> <dd>
 
-Puntero a una [**estructura \_ \_ parms de carga de MCI**](mci-load-parms.md) . (Los dispositivos con parámetros adicionales podrían reemplazar esta estructura con una estructura específica del dispositivo. En el caso de los dispositivos de vídeo digital, el parámetro **lpLoad** apunta a una estructura [**DGV de \_ \_ carga \_ parms de MCI**](/previous-versions//dd743391(v=vs.85)) .
+Puntero a una [**estructura \_ MCI LOAD \_ PARMS.**](mci-load-parms.md) (Los dispositivos con parámetros adicionales pueden reemplazar esta estructura por una estructura específica del dispositivo. En el caso de los dispositivos de vídeo digital, el parámetro **lpLoad** apunta a una estructura [**\_ MCI DGV \_ LOAD \_ PARMS).**](/previous-versions//dd743391(v=vs.85))
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La marca adicional siguiente se aplica a todos los dispositivos que admiten la carga de MCI \_ :
-
-<dl> <dt>
-
-<span id="MCI_LOAD_FILE"></span><span id="mci_load_file"></span>\_archivo de carga de MCI \_
-</dt> <dd>
-
-El miembro **lpfilename** de la estructura identificada por *lpLoad* contiene una dirección de un búfer que contiene el nombre de archivo.
-
-</dd> </dl>
-
-La siguiente marca adicional se usa con el tipo de dispositivo **superpuesto** :
+La siguiente marca adicional se aplica a todos los dispositivos que admiten MCI \_ LOAD:
 
 <dl> <dt>
 
-<span id="MCI_OVLY_RECT"></span><span id="mci_ovly_rect"></span>\_OVLY \_ Rect
+<span id="MCI_LOAD_FILE"></span><span id="mci_load_file"></span>ARCHIVO DE \_ CARGA \_ DE MCI
 </dt> <dd>
 
-El miembro **RC** de la estructura identificada por *lpLoad* contiene un rectángulo de presentación válido que identifica el área del búfer de vídeo que se va a actualizar.
+El **miembro lpfilename** de la estructura identificada por *lpLoad* contiene una dirección de un búfer que contiene el nombre de archivo.
 
 </dd> </dl>
 
-En el caso de los dispositivos de superposición de vídeo, el parámetro *lpLoad* apunta a una estructura [**OVLY de carga de \_ \_ \_ parms MCI**](mci-ovly-load-parms.md) .
+La siguiente marca adicional se usa con el tipo **de dispositivo superpuesto:**
+
+<dl> <dt>
+
+<span id="MCI_OVLY_RECT"></span><span id="mci_ovly_rect"></span>MCI \_ OVLY \_ RECT
+</dt> <dd>
+
+El **miembro rc** de la estructura identificada por *lpLoad* contiene un rectángulo de presentación válido que identifica el área del búfer de vídeo que se actualizará.
+
+</dd> </dl>
+
+En el caso de los dispositivos de superposición de vídeo, el parámetro *lpLoad* apunta a una estructura [**MCI \_ OVLY \_ LOAD \_ PARMS.**](mci-ovly-load-parms.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -110,10 +110,10 @@ En el caso de los dispositivos de superposición de vídeo, el parámetro *lpLoa
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Comandos MCI](mci-commands.md)
+[Comandos de MCI](mci-commands.md)
 </dt> </dl>
 
  

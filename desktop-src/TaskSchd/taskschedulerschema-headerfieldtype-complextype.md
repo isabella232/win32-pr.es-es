@@ -3,7 +3,7 @@ title: tipo complejo headerFieldType
 description: Define los elementos que se usan para crear un campo de encabezado en un mensaje de correo electrónico.
 ms.assetid: 66036875-1116-46eb-b2f5-8c8ad8373ab1
 keywords:
-- tipo complejo headerFieldType Programador de tareas
+- Tipo complejo headerFieldType Programador de tareas
 topic_type:
 - apiref
 api_name:

@@ -1,24 +1,24 @@
 ---
-title: Normal. CPP
-description: En el componente de proveedor de ejemplo, se encuentra un ejemplo de código común a todos los objetos genéricos en Common. cpp.
+title: Común. Cpp
+description: En el componente de proveedor de ejemplo, se encuentra un ejemplo de código común a todos los objetos genéricos en common.cpp.
 ms.assetid: e94985cd-2e3a-4923-9247-3a4428900598
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57db7c80bf80adb458d699c0480ff4802eb488b8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bdb25cecdc431cbbf4e74ab5fb93cedf9e049b7b5abfa498660c77c2e712746e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118017696"
 ---
-# <a name="commoncpp"></a>Normal. CPP
+# <a name="commoncpp"></a>Común. Cpp
 
-En el componente de proveedor de ejemplo, se encuentra un ejemplo de código común a todos los objetos genéricos en Common. cpp. Los objetos heredan estos métodos y propiedades a través de reglas de herencia de C++. Estos métodos incluyen la creación de cadenas ADsPath, métodos de datos de tipo y otras rutinas de mantenimiento.
+En el componente de proveedor de ejemplo, se encuentra un ejemplo de código común a todos los objetos genéricos en common.cpp. Los objetos heredan estos métodos y propiedades a través de reglas de herencia de C++. Estos métodos incluyen la creación de cadenas ADsPath, métodos de datos de tipo y otras rutinas de mantenimiento.
 
- 
+ 
 
- 
+ 
 
 
 

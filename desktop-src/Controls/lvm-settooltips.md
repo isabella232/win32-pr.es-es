@@ -1,9 +1,9 @@
 ---
-title: Mensaje de LVM_SETTOOLTIPS (commctrl. h)
-description: Establece el control de información sobre herramientas que el control de vista de lista usará para mostrar la información sobre herramientas. Puede enviar este mensaje explícitamente o utilizar la \_ macro SetToolTips de ListView.
+title: LVM_SETTOOLTIPS mensaje (Commctrl.h)
+description: Establece el control de información sobre herramientas que usará el control de vista de lista para mostrar información sobre herramientas. Puede enviar este mensaje explícitamente o usar la \_ macro ListView SetToolTips.
 ms.assetid: 5b4335a4-e9f0-4b13-b00b-516af3b60bf1
 keywords:
-- LVM_SETTOOLTIPS controles de mensajes de Windows
+- LVM_SETTOOLTIPS controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ff749c24a35cf73de2d75b8a3b516197b57aac4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7bf2256d94630b8e792fd1f148864f3588b27e73ea5781eb0bdcd24bf9571507
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118170401"
 ---
-# <a name="lvm_settooltips-message"></a>\_Mensaje SETTOOLTIPS LVM
+# <a name="lvm_settooltips-message"></a>Mensaje \_ DE LVM SETTOOLTIPS
 
-Establece el control de información sobre herramientas que el control de vista de lista usará para mostrar la información sobre herramientas. Puede enviar este mensaje explícitamente o utilizar la [**macro \_ SetToolTips de ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settooltips) .
+Establece el control de información sobre herramientas que usará el control de vista de lista para mostrar información sobre herramientas. Puede enviar este mensaje explícitamente o usar la macro [**\_ ListView SetToolTips.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_settooltips)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -41,17 +41,17 @@ Debe ser cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador del control de información sobre herramientas anterior.
+Devuelve el identificador al control de información sobre herramientas anterior.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve el identificador del control de información sobre herramientas anterio
 
 <dl> <dt>
 
-[**\_GETTOOLTIPS LVM**](lvm-gettooltips.md)
+[**LVM \_ GETTOOLTIPS**](lvm-gettooltips.md)
 </dt> </dl>
 
  

@@ -1,25 +1,25 @@
 ---
-title: Posición del joystick
-description: Posición del joystick
+title: Posición del puesto
+description: Posición del puesto
 ms.assetid: db0d1125-e39f-445b-bd65-373633cad578
 keywords:
-- joysticks, posición
-- joysticks, botones
+- ', posición'
+- controles, botones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bcdc187cfba244bb2b8c28c37e3677593f99870
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 81e5664166d20f9195a33d03534f792a4262b291bc3db34194fd05e06681563a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104271136"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118140314"
 ---
-# <a name="joystick-position"></a>Posición del joystick
+# <a name="joystick-position"></a>Posición del puesto
 
-Puede consultar un joystick para obtener información sobre la posición y el botón mediante la función [**joyGetPos**](/windows/win32/api/joystickapi/nf-joystickapi-joygetpos) . Por ejemplo, una aplicación puede consultar el joystick para obtener valores de posición de línea de base. La hoja de propiedades del panel de control joystick utiliza esta técnica al calibrar el joystick.
+Puede consultar un cuadro de texto para obtener información sobre la posición y los botones mediante la [**funcióngetPos.**](/windows/win32/api/joystickapi/nf-joystickapi-joygetpos) Por ejemplo, una aplicación puede consultar los valores de posición de línea base de la base de referencia. La hoja de Panel de control de propiedades de Nora usa esta técnica al calibrar el pie.
 
-También puede consultar un joystick u otro dispositivo que tenga capacidades extendidas mediante la función [**joyGetPosEx**](/windows/win32/api/joystickapi/nf-joystickapi-joygetposex) .
+También puede consultar un móvil u otro dispositivo que tenga funcionalidades extendidas mediante la [**funcióngetGetPosEx.**](/windows/win32/api/joystickapi/nf-joystickapi-joygetposex)
 
- 
+ 
 
- 
+ 

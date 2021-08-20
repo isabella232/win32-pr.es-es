@@ -1,10 +1,10 @@
 ---
-title: Operating-System atributo)
-description: Nombre del sistema operativo, por ejemplo, Windows Vista Enterprise.
+title: Operating-System atributo
+description: El nombre del sistema operativo, por ejemplo, Windows Vista Enterprise.
 ms.assetid: 15dbcc3b-3381-4a7d-930f-d96d933e6563
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Operating-System
+- Operating-System esquema de AD de atributo
 - Esquema de AD del atributo operatingSystem
 topic_type:
 - apiref
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 347d8eec1748d07f3e4c89c7cda9a0dc97a82248
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c0b6cf7168dae1ac90d331689c8f8e9a132880bffdd1cd6e91eb8142da5df21d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118012836"
 ---
-# <a name="operating-system-attribute"></a>Operating-System atributo)
+# <a name="operating-system-attribute"></a>Operating-System atributo
 
-Nombre del sistema operativo, por ejemplo, Windows Vista Enterprise.
+El nombre del sistema operativo, por ejemplo, Windows Vista Enterprise.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Operating-System                            |
-| Nombre para mostrar de LDAP | operatingSystem                             |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | operatingSystem                             |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.363                      |
-| System-ID-GUID    | 3e978925-8c01-11d0-afda-00c04fd930c9        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 3e978925-8c01-11d0-afda-00c04fd930c9        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ Nombre del sistema operativo, por ejemplo, Windows Vista Enterprise.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                       |
+| Id. de vínculo                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
-| System-Only            | False                                                                                    |
-| Tiene un único valor       | True                                                                                     |
-| Está indexado             | False                                                                                    |
-| En el catálogo global      | False                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                             |
+| System-Only            | Falso                                                                                    |
+| Es de un solo valor       | True                                                                                     |
+| Está indexado             | Falso                                                                                    |
+| En el catálogo global      | Falso                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
@@ -76,13 +76,13 @@ Nombre del sistema operativo, por ejemplo, Windows Vista Enterprise.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                       |
+| Id. de vínculo                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
-| System-Only            | False                                                                                    |
-| Tiene un único valor       | True                                                                                     |
-| Está indexado             | False                                                                                    |
-| En el catálogo global      | False                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                             |
+| System-Only            | Falso                                                                                    |
+| Es de un solo valor       | True                                                                                     |
+| Está indexado             | Falso                                                                                    |
+| En el catálogo global      | Falso                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
@@ -97,13 +97,13 @@ Nombre del sistema operativo, por ejemplo, Windows Vista Enterprise.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                       |
+| Id. de vínculo                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
-| System-Only            | False                                                                                    |
-| Tiene un único valor       | True                                                                                     |
-| Está indexado             | False                                                                                    |
-| En el catálogo global      | False                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                             |
+| System-Only            | Falso                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                     |
+| Está indexado             | Falso                                                                                    |
+| En el catálogo global      | Falso                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
@@ -116,15 +116,15 @@ Nombre del sistema operativo, por ejemplo, Windows Vista Enterprise.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                       |
+| Id. de vínculo                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
-| System-Only            | False                                                                                    |
-| Tiene un único valor       | True                                                                                     |
-| Está indexado             | False                                                                                    |
-| En el catálogo global      | False                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                             |
+| System-Only            | Falso                                                                                    |
+| Es de un solo valor       | True                                                                                     |
+| Está indexado             | Falso                                                                                    |
+| En el catálogo global      | Falso                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
@@ -139,13 +139,13 @@ Nombre del sistema operativo, por ejemplo, Windows Vista Enterprise.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                       |
+| Id. de vínculo                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
-| System-Only            | False                                                                                    |
-| Tiene un único valor       | True                                                                                     |
-| Está indexado             | False                                                                                    |
-| En el catálogo global      | False                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                             |
+| System-Only            | Falso                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                     |
+| Está indexado             | Falso                                                                                    |
+| En el catálogo global      | Falso                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
@@ -160,13 +160,13 @@ Nombre del sistema operativo, por ejemplo, Windows Vista Enterprise.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                       |
+| Id. de vínculo                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
-| System-Only            | False                                                                                    |
-| Tiene un único valor       | True                                                                                     |
-| Está indexado             | False                                                                                    |
-| En el catálogo global      | False                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                             |
+| System-Only            | Falso                                                                                    |
+| Es de un solo valor       | True                                                                                     |
+| Está indexado             | Falso                                                                                    |
+| En el catálogo global      | Falso                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |

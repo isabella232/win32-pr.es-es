@@ -1,12 +1,12 @@
 ---
-title: Propiedad RemoteProgram3 de IMsRdpClient10
+title: Propiedad IMsRdpClient10 RemoteProgram3
 description: Objeto que admite la interfaz ITSRemoteProgram3.
 ms.assetid: afb26152-32eb-45de-a228-a6f7ca7eea2b
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad RemoteProgram3
-- Propiedad RemoteProgram3 Servicios de Escritorio remoto, interfaz IMsRdpClient10
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient10, propiedad RemoteProgram3
+- Propiedad RemoteProgram3 Servicios de Escritorio remoto
+- Propiedad RemoteProgram3 Servicios de Escritorio remoto , interfaz IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto , propiedad RemoteProgram3
 topic_type:
 - apiref
 api_name:
@@ -18,16 +18,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 334b0cd4e71cb1dde48bd7868a3dbe23fc2a4a97
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f332985777d6b83e04724e6bf0af65b06b3cac50d73ba437647dc93944f76e8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118130297"
 ---
-# <a name="imsrdpclient10remoteprogram3-property"></a>IMsRdpClient10:: RemoteProgram3 (propiedad)
+# <a name="imsrdpclient10remoteprogram3-property"></a>Propiedad IMsRdpClient10::RemoteProgram3
 
-Objeto que admite la interfaz [**ITSRemoteProgram3**](itsremoteprogram3.md) .
+Objeto que admite la [**interfaz ITSRemoteProgram3.**](itsremoteprogram3.md)
 
 Esta propiedad es de solo lectura.
 
@@ -44,7 +44,7 @@ HRESULT get_RemoteProgram3(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Devuelve un puntero de la interfaz [**ITSRemoteProgram3**](itsremoteprogram3.md) .
+Devuelve un [**puntero de interfaz ITSRemoteProgram3.**](itsremoteprogram3.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Devuelve un puntero de la interfaz [**ITSRemoteProgram3**](itsremoteprogram3.md)
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                            |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |

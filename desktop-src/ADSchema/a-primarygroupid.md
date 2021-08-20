@@ -1,11 +1,11 @@
 ---
 title: Atributo Primary-Group-ID
-description: Contiene el identificador relativo (RID) para el grupo principal del usuario. De forma predeterminada, este es el RID del grupo usuarios del dominio.
+description: Contiene el identificador relativo (RID) del grupo principal del usuario. De forma predeterminada, este es el RID para el grupo Usuarios del dominio.
 ms.assetid: 80803734-f7dd-4348-a110-ca6b8bccb60b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de ID. de grupo principal
-- primaryGroupID esquema de AD de atributos
+- Esquema de AD del atributo Primary-Group-ID
+- Esquema de AD del atributo primaryGroupID
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad2b6237ff6e49a01da3b960b58103ae10dca7b2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e2702ad2250544de8cc24537f761f87f0c2f5d67877239ae41c7ea424d667d4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118012112"
 ---
 # <a name="primary-group-id-attribute"></a>Atributo Primary-Group-ID
 
-Contiene el identificador relativo (RID) para el grupo principal del usuario. De forma predeterminada, este es el RID del grupo usuarios del dominio.
+Contiene el identificador relativo (RID) del grupo principal del usuario. De forma predeterminada, este es el RID para el grupo Usuarios del dominio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | IDENTIFICADOR de grupo principal                     |
-| Nombre para mostrar de LDAP | primaryGroupID                       |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | El sistema establece este valor.     |
+| CN                | Primary-Group-ID                     |
+| Ldap-Display-Name | primaryGroupID                       |
+| Size              | 4 bytes                              |
+| Actualizar privilegios  | El sistema establece este valor.     |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.98                |
-| System-ID-GUID    | bf967a00-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | bf967a00-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ Contiene el identificador relativo (RID) para el grupo principal del usuario. De
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| System-Only            | Falso                             |
+| Es de un solo valor       | True                              |
 | Está indexado             | True                              |
-| En el catálogo global      | True                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| En el catálogo global      | Verdadero                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000011                        |
 | System-Flags           | 0x00000012                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Contiene el identificador relativo (RID) para el grupo principal del usuario. De
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | True                              |
+| System-Only            | Falso                             |
+| Es de un solo valor       | True                              |
+| Está indexado             | Verdadero                              |
 | En el catálogo global      | True                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000011                        |
 | System-Flags           | 0x00000012                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Contiene el identificador relativo (RID) para el grupo principal del usuario. De
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| System-Only            | Falso                             |
+| Es de un solo valor       | True                              |
 | Está indexado             | True                              |
-| En el catálogo global      | True                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| En el catálogo global      | Verdadero                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000011                        |
 | System-Flags           | 0x00000012                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Contiene el identificador relativo (RID) para el grupo principal del usuario. De
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| System-Only            | Falso                             |
+| Es de un solo valor       | True                              |
 | Está indexado             | True                              |
 | En el catálogo global      | True                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000011                        |
 | System-Flags           | 0x00000012                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Contiene el identificador relativo (RID) para el grupo principal del usuario. De
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| System-Only            | Falso                             |
+| Es de un solo valor       | True                              |
 | Está indexado             | True                              |
 | En el catálogo global      | True                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000011                        |
 | System-Flags           | 0x00000012                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -160,13 +160,13 @@ Contiene el identificador relativo (RID) para el grupo principal del usuario. De
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
+| System-Only            | Falso                             |
+| Es de un solo valor       | True                              |
 | Está indexado             | True                              |
-| En el catálogo global      | True                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| En el catálogo global      | Verdadero                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000011                        |

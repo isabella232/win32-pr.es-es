@@ -1,12 +1,12 @@
 ---
-title: Propiedad Enumerator. AtEndOfStream (WSManDisp. h)
+title: Propiedad Enumerator.AtEndOfStream (WSManDisp.h)
 description: Obtiene un valor booleano que indica si hay más elementos en la colección.
 ms.assetid: 5e80674a-7889-4753-b0dd-4d7b44eba00a
 ms.tgt_platform: multiple
 keywords:
-- Administración remota de Windows de la propiedad AtEndOfStream
-- Propiedad AtEndOfStream Administración remota de Windows, objeto Enumerator
-- Objeto enumerador Administración remota de Windows, propiedad AtEndOfStream
+- Propiedad AtEndOfStream Windows administración remota
+- Propiedad AtEndOfStream Windows administración remota , objeto enumerador
+- Objeto enumerador Windows administración remota , propiedad AtEndOfStream
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 023798f6c868e434218dd1a4dbdf1928bf4526a0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b1077837f82d650b57dfea0316ef15094b18749eefdb6957e62e6afd92cfe672
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118113206"
 ---
-# <a name="enumeratoratendofstream-property"></a>Enumerador. AtEndOfStream (propiedad)
+# <a name="enumeratoratendofstream-property"></a>Enumerator.AtEndOfStream, propiedad
 
 Obtiene un valor booleano que indica si hay más elementos en la colección.
 
@@ -45,7 +45,7 @@ Enumerator.AtEndOfStream As BOOLEAN
 
 <span id="True"></span><span id="true"></span><span id="TRUE"></span>
 
-<span id="True"></span><span id="true"></span><span id="TRUE"></span>**Reales**
+<span id="True"></span><span id="true"></span><span id="TRUE"></span>**Verdad**
 
 
 </dt> <dd>
@@ -56,7 +56,7 @@ No hay más elementos en la colección.
 
 <span id="False"></span><span id="false"></span><span id="FALSE"></span>
 
-<span id="False"></span><span id="false"></span><span id="FALSE"></span>**Es**
+<span id="False"></span><span id="false"></span><span id="FALSE"></span>**Falso**
 
 
 </dt> <dd>
@@ -65,13 +65,13 @@ Hay más elementos disponibles.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si libera el objeto de [**enumerador**](enumerator.md) después de haber obtenido todos los datos necesarios, se quitarán todas las solicitudes de enumeración pendientes. Para obtener más información, consulte [enumeración o enumeración de todas las instancias de un recurso](enumerating-or-listing-all-instances-of-a-resource.md).
+Si libera el objeto [**Enumerador**](enumerator.md) después de haber obtenido todos los datos necesarios, se quitan las solicitudes de enumeración pendientes. Para obtener más información, [vea Enumerar o enumerar todas las instancias de un recurso.](enumerating-or-listing-all-instances-of-a-resource.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de VBScript se enumeran las instancias del sistema operativo. Tenga en cuenta que la liberación del objeto de enumeración limpia todas las solicitudes de enumeración pendientes. La subrutina DisplayOutput da formato a la salida de datos de la misma manera que la herramienta WinRM. cmd.
+En el siguiente ejemplo de VBScript se enumeran las instancias del sistema operativo. Tenga en cuenta que la liberación del objeto de enumeración limpia las solicitudes de enumeración pendientes. La subrutina DisplayOutput da formato a la salida de datos de la misma manera que la herramienta WinRM.cmd.
 
 
 ```VB
@@ -111,13 +111,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 

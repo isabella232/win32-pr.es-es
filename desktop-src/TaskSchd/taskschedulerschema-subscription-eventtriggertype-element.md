@@ -30,7 +30,7 @@ Especifica la consulta XPath que identifica el evento que activa el desencadenad
  />
 ```
 
-El tipo complejo [**eventTriggerType**](taskschedulerschema-eventtriggertype-complextype.md) define el elemento **Subscription.**
+El **elemento Subscription** se define mediante el tipo complejo [**eventTriggerType.**](taskschedulerschema-eventtriggertype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -59,7 +59,7 @@ Para el desarrollo de C++, la propiedad [**IEventTrigger::Subscription**](/windo
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

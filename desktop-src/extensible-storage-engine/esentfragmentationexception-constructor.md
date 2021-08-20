@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: constructor EsentFragmentationException'
+description: 'Más información sobre: Constructor de EsentFragmentationException'
 title: Constructor de EsentFragmentationException
 TOCTitle: 'EsentFragmentationException constructor '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.EsentFragmentationException.#ctor
@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 7bf233560a3e0b86324f732d93e5a97e9e8a3dff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d6456a5ea687b90d08fbac62b3c618d3531d025f76d700a8e647efcf6a35523
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118081552"
 ---
 # <a name="esentfragmentationexception-constructor"></a>Constructor de EsentFragmentationException
 
@@ -39,12 +39,12 @@ Incluir miembros heredados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn274299(v=exchg.10).md">EsentFragmentationException (SerializationInfo, StreamingContext)</a></td>
-<td>Inicializa una nueva instancia de la clase EsentFragmentationException. Este constructor se utiliza para deserializar una excepción serializada.</td>
+<td><a href="dn274299(v=exchg.10).md">EsentFragmentationException(SerializationInfo, StreamingContext)</a></td>
+<td>Inicializa una nueva instancia de la clase EsentFragmentationException. Este constructor se usa para deserializar una excepción serializada.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn350469(v=exchg.10).md">EsentFragmentationException (cadena, JET_err)</a></td>
+<td><a href="dn350469(v=exchg.10).md">EsentFragmentationException(String, JET_err)</a></td>
 <td>Inicializa una nueva instancia de la clase EsentFragmentationException.</td>
 </tr>
 </tbody>
@@ -61,4 +61,4 @@ Superior
 
 [Miembros de EsentFragmentationException](./esentfragmentationexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

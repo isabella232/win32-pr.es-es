@@ -21,7 +21,7 @@ A continuación, puede abrir el archivo msn.etl en Monitor de red. Los eventos s
 
 ![solución de problemas de conexiones a Internet mediante el monitor de red (1)](images/internetclient1.png)
 
-A continuación, puede revisar los eventos en el resumen del marco para identificar un evento que parece relevante. Después de seleccionar el evento, haga clic con el botón derecho y seleccione Buscar conversaciones y, a continuación, haga clic en UTEvent para seleccionar la conversación en el nivel UTEvent.
+A continuación, puede revisar los eventos en el resumen de fotogramas para identificar un evento que parece pertinente. Después de seleccionar el evento, haga clic con el botón derecho y seleccione Buscar conversaciones y, a continuación, haga clic en UTEvent para seleccionar la conversación en el nivel UTEvent.
 
 ![solución de problemas de conexiones a Internet mediante el monitor de red (2)](images/internetclient2.png)
 
