@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentCannotDeleteTemplateTableException'
-title: Constructor de EsentCannotDeleteTemplateTableException
+description: 'Más información sobre: Constructor EsentCannotDeleteTemplateTableException'
+title: Constructor EsentCannotDeleteTemplateTableException
 TOCTitle: 'EsentCannotDeleteTemplateTableException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentCannotDeleteTemplateTableException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcannotdeletetemplatetableexception.esentcannotdeletetemplatetableexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e9dbe452ae605d7cd85af419e5bda62e1bcca8af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02cf1d4205b634e0bf29e47b7c3fb8dd1e83904fa730b46bf9136d5035d39620
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117715294"
 ---
-# <a name="esentcannotdeletetemplatetableexception-constructor"></a>Constructor de EsentCannotDeleteTemplateTableException
+# <a name="esentcannotdeletetemplatetableexception-constructor"></a>Constructor EsentCannotDeleteTemplateTableException
 
 Inicializa una nueva instancia de la clase EsentCannotDeleteTemplateTableException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentCannotDeleteTemplateTableException()
 public EsentCannotDeleteTemplateTableException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentCannotDeleteTemplateTableException()
 
 [Miembros de EsentCannotDeleteTemplateTableException](./esentcannotdeletetemplatetableexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

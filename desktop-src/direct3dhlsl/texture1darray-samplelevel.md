@@ -1,9 +1,9 @@
 ---
-title: 'Métodos Texture1DArray:: Texture1DArray SampleLevel'
-description: 'Muestrea una textura en el nivel de mipmap especificado. | Métodos Texture1DArray:: Texture1DArray SampleLevel'
+title: Métodos Texture1DArray::Texture1DArray SampleLevel
+description: Muestrea una textura en el nivel de mapa mip especificado. | Métodos Texture1DArray::Texture1DArray SampleLevel
 ms.assetid: 68C86C79-37DC-49D0-9635-EA548A3DA83B
 keywords:
-- SampleLevel métodos HLSL
+- Métodos SampleLevel HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 0f5a1b3070c27c2954f1636b1985d2ea00c99a67
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0f9159e3dfb86e61b717b53a763da613848f092c926ffd9e4c3c99b4964b587f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117722968"
 ---
-# <a name="texture1darraysamplelevel-methods"></a>Texture1DArray:: SampleLevel (métodos)
+# <a name="texture1darraysamplelevel-methods"></a>Métodos Texture1DArray::SampleLevel
 
-Muestrea una textura en el nivel de mipmap especificado.
+Muestrea una textura en el nivel de mapa mip especificado.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Muestrea una textura en el nivel de mipmap especificado.
 
 | Método                                                                                      | Descripción                                                                                        |
 |:--------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
-| [**SampleLevel (S, Float, Float, int)**](dx-graphics-hlsl-to-samplelevel.md)                   | Muestrea una textura en el nivel de mipmap especificado.<br/>                                        |
-| [**SampleLevel (S, Float, Float, int, uint)**](t1darray-samplelevel-s-float-float-int-uint-.md) | Muestrea una textura en el nivel de mipmap especificado y devuelve el estado de la operación.<br/> |
+| [**SampleLevel(S,float,float,int)**](dx-graphics-hlsl-to-samplelevel.md)                   | Muestrea una textura en el nivel de mapa mip especificado.<br/>                                        |
+| [**SampleLevel(S,float,float,int,uint)**](t1darray-samplelevel-s-float-float-int-uint-.md) | Muestrea una textura en el nivel de mapa mip especificado y devuelve el estado de la operación.<br/> |
 
 
 
@@ -41,7 +41,7 @@ Muestrea una textura en el nivel de mipmap especificado.
 [**Texture1DArray**](sm5-object-texture1darray.md)
 </dt> <dt>
 
-[Texture-objeto](dx-graphics-hlsl-to-type.md)
+[Texture-Object](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

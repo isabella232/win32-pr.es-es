@@ -1,19 +1,19 @@
 ---
-description: Describe cómo se muestrea el croma para un tipo de medio de vídeo YCbCr.
+description: Describe cómo se ha muestreado el color de un tipo de medio de vídeo YCbCr.
 ms.assetid: 0c930348-8669-42cc-9d74-df9ef475bdc8
-title: MF_MT_VIDEO_CHROMA_SITING atributo (mfapi. h)
+title: MF_MT_VIDEO_CHROMA_SITING atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa634cf9a9ca7f5c292eb0cf06c6a1a14c788d43
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5954f6d1649c366056bf9362a4226314d79ad78708fd4140f355506f7ee637d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118741531"
 ---
-# <a name="mf_mt_video_chroma_siting-attribute"></a>Atributo de colocación de vídeo de \_ \_ polijuego MF MT \_ \_
+# <a name="mf_mt_video_chroma_siting-attribute"></a>Atributo \_ MF MT VIDEO \_ \_ \_ SITING
 
-Describe cómo se muestrea el croma para un tipo de medio de vídeo Y'Cb'Cr.
+Describe cómo se ha muestreado el color de un tipo de medio de vídeo Y'Cb'Cr'.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -21,9 +21,9 @@ Describe cómo se muestrea el croma para un tipo de medio de vídeo Y'Cb'Cr.
 
 ## <a name="remarks"></a>Observaciones
 
-El valor de este atributo es **una operación OR bit a bit** de las marcas de la enumeración [**MFVideoChromaSubsampling**](/windows/desktop/api/mfobjects/ne-mfobjects-mfvideochromasubsampling) .
+El valor de este atributo es un **OR** bit a bit de marcas de la [**enumeración MFVideoChromaSubsampling.**](/windows/desktop/api/mfobjects/ne-mfobjects-mfvideochromasubsampling)
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,9 +31,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>                              |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -41,22 +41,22 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 </dt> <dt>
 
-[Atributos de tipo de medio](media-type-attributes.md)
+[Atributos de tipo multimedia](media-type-attributes.md)
 </dt> <dt>
 
-[Información de color ampliada](extended-color-information.md)
+[Información de color extendida](extended-color-information.md)
 </dt> </dl>
 
  

@@ -29,7 +29,7 @@ g \_ wszWMPeriod
 
 ## <a name="data-type"></a>Tipo de datos
 
-**CADENA DE TIPO WMT \_ \_**
+**CADENA DE \_ TIPO \_ WMT**
 
 ## <a name="example"></a>Ejemplo
 
@@ -43,7 +43,7 @@ g \_ wszWMPeriod
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: EsentStopwatch. StartNew (método)'
-title: EsentStopwatch. StartNew, método
+description: Más información sobre el método EsentStopwatch.StartNew
+title: Método EsentStopwatch.StartNew
 TOCTitle: 'StartNew method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentStopwatch.StartNew
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentstopwatch.startnew(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 965df8ac9c8d1f4db972edfabcdfa8a9f7454692
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 14639de0661c6952593adf86a7d9956e3fc8fcf671ea1c0cb4f4298d5f64c4b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118490429"
 ---
-# <a name="esentstopwatchstartnew-method"></a>EsentStopwatch. StartNew, método
+# <a name="esentstopwatchstartnew-method"></a>Método EsentStopwatch.StartNew
 
 Inicializa una nueva instancia de EsentStopwatch y comienza a medir el tiempo transcurrido.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,10 +55,10 @@ public static EsentStopwatch StartNew()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft. ISAM. esent. Interop. EsentStopwatch](./esentstopwatch-class.md)  
-Un nuevo, que ejecuta EsentStopwatch.  
+Tipo: [Microsoft.Isam.Esent.Interop.EsentStopwatch](./esentstopwatch-class.md)  
+Nuevo, que ejecuta EsentStopwatch.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
@@ -66,4 +66,4 @@ Un nuevo, que ejecuta EsentStopwatch.
 
 [Miembros de EsentStopwatch](./esentstopwatch-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

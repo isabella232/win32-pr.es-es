@@ -18,11 +18,11 @@ ms.locfileid: "117798455"
 ---
 # <a name="lan_policy-schema"></a>Esquema de directiva LAN \_
 
-El esquema de directiva LAN \_ define un perfil de directiva cableada (LAN).
+El esquema de \_ directiva LAN define un perfil de directiva cableada (LAN).
 
 El elemento raíz de un perfil de directiva LAN es [**el elemento LANPolicy.**](lan-policyschema-lanpolicy-element.md) Cada perfil tiene exactamente un elemento raíz. Todos los elementos de \_ directiva LAN están en el espacio de nombres `https://www.microsoft.com/networking/LAN/policy/v1` .
 
--   [DIRECTIVA DE \_ LANEsquema Elements](lan-policyschema-elements.md)
+-   [DIRECTIVA DE \_ LANEsquema de elementos](lan-policyschema-elements.md)
 -   [DIRECTIVA DE \_ LANEsquema de tipos simples](lan-policyschema-simple-types.md)
 
  

@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: a31feb123e31489c751b7844e06d5c344278778e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5293a6e69c1384922572764674cbadd9980702c49f8945518ff9b0c56beee2d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117797926"
 ---
 # <a name="ouiheader-ihv-element"></a>Elemento OUIHeader (IHV)
 
-El elemento OUIHeader (IHV) identifica el IHV.
+El elemento OUIHeader (IHV) identifica la IHV.
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Este elemento no se admite.
+Windows XP con SP3 y LAN API inalámbrica **para Windows XP con SP2:** No se admite este elemento.
 
 ``` syntax
 <xs:element name="OUIHeader">
@@ -62,7 +62,7 @@ El elemento OUIHeader (IHV) identifica el IHV.
 </xs:element>
 ```
 
-El elemento está definido por el elemento [**IHV**](wlan-profileschema-ihv-wlanprofile-element.md) .
+El elemento [**IHV**](wlan-profileschema-ihv-wlanprofile-element.md) define el elemento .
 
 ## <a name="child-elements"></a>Elementos secundarios
 
@@ -70,8 +70,8 @@ El elemento está definido por el elemento [**IHV**](wlan-profileschema-ihv-wlan
 
 | Elemento                                                   | Tipo | Descripción                                                                                |
 |-----------------------------------------------------------|------|--------------------------------------------------------------------------------------------|
-| [**OUI**](wlan-profileschema-oui-ouiheader-element.md)   |      | Contiene un hexBinary de 3 bytes que identifica el IHV.<br/>                            |
-| [**automáticamente**](wlan-profileschema-type-ouiheader-element.md) |      | Contiene un hexBinary de 1 byte que se usa para diferenciar las NIC del mismo IHV.<br/> |
+| [**Oui**](wlan-profileschema-oui-ouiheader-element.md)   |      | Contiene un hexBinary de 3 bytes que identifica el IHV.<br/>                            |
+| [**Tipo**](wlan-profileschema-type-ouiheader-element.md) |      | Contiene un hexBinary de 1 byte que se usa para diferenciar las NIC por el mismo IHV.<br/> |
 
 
 
@@ -81,8 +81,8 @@ El elemento está definido por el elemento [**IHV**](wlan-profileschema-ihv-wlan
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

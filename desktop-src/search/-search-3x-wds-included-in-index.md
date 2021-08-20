@@ -46,7 +46,7 @@ Windows La búsqueda tiene controladores de protocolo, controladores de propieda
 -   **Office** (offfilt.dll): .doc, .dot, .pot, .pps, .ppt, .xlb, .xlc, .xls, .xlt
 -   **Text** (query.dll): .asm, .asx, .bat, .c, .cmd, .cpp, .cxx, .def, .dic, .h, .hpp, .hxx, .idl, .idq, .inf, .ini, .inx, .js, .log, .m3u, .rc, .reg, .rtf, .txt, .url, .vbs, .wtx
 -   **XML** (xmlfilt.dll): .xml, .xsl
--   **OneNote**: .one
+-   **OneNote:**.one
 -   **Diario de tabletas** (jntfiltr.dll): .jnt
 
 Las propiedades se indexa para todos los archivos, excepto el almacenamiento estructurado. En Windows Vista y versiones posteriores, se indexa muchas propiedades de archivo multimedia; sin embargo, el contenido no se indexa si los archivos están protegidos por administración de derechos digitales (DRM).
@@ -67,7 +67,7 @@ En Windows Vista (solo), los siguientes archivos se excluyen de la indexación d
 -   Archivos marcados como Oculto o Sistema.
 -   Archivos con las siguientes extensiones:
 
-    .386, .aps, . AudioCD, .bin, .bk1, .bk2, .bkf, .bsc, .btr, .chk, .ci, .crwl, .dbg, .dct, . DeskLink, .dir, .dl \_ , .dll, .drv, .dvd, .evt, .ex \_ , .exe, .exp, .eyb, .fnd, .fnt, . Folder, .fon, .ghi, .gthr, .hqx, .icm, .idb, .idx, .ilk, .imc, .in \_ , .ini, .inv, .jbf, .latex, .lib, .local, .m14, .mac, .manifest, .map, . MAPIMail, .mmf, .movie, .mv, .mydocs, .ncb, .obj, \_ .oc, .ocx, .pch, .pdb, .pf, .pma, .pmc, .pml, .pmr, .res, .rmp, .rpc, .rsp, .sbr, .sc2, .sit, .sr \_ , .sy , \_ .sym, .sys, .tlb, .trc, .ttc, .ttf, .vbx, .vxd, .wll, .wlt, .lp, .z96, . ASÍNsendToTarget.
+    .386, .aps, . AudioCD, .bin, .bk1, .bk2, .bkf, .bsc, .btr, .chk, .ci, .crwl, .dbg, .dct, . DeskLink, .dir, .dl \_ , .dll, .drv, .dvd, .evt, .ex \_ , .exe, .exp, .eyb, .fnd, .fnt, . Folder, .fon, .ghi, .gthr, .hqx, .icm, .idb, .idx, .ilk, .imc, .in \_ , .ini, .inv, .jbf, .latex, .lib, .local, .m14, .mac, .manifest, .map, . MAPIMail, .mmf, .movie, .mv, .mydocs, .ncb, .obj, \_ .oc, .ocx, .pch, .pdb, .pf, .pma, .pmc, .pml, .pmr, .res, .rmp, .rpc, .rsp, .sbr, .sc2, .sit, .sr \_ , \_ .sy , .sym, .sys, .tlb, .trc, .ttc, .ttf, .vbx, .vxd, .wll, .wlt, .6, . ASÍNsendToTarget.
 
 ## <a name="folder-exclusions"></a>Exclusiones de carpetas
 

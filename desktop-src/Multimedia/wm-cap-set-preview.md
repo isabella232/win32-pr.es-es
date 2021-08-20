@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_SET_PREVIEW (VFW. h)
-description: El \_ mensaje de vista previa del límite de Cap de WM \_ \_ habilita o deshabilita el modo de vista previa.
+title: WM_CAP_SET_PREVIEW mensaje (Vfw.h)
+description: El mensaje WM \_ CAP SET PREVIEW habilita o deshabilita el modo de vista \_ \_ previa.
 ms.assetid: ef6218d6-4fff-469f-b2e0-d7990998a3e5
 keywords:
-- Mensaje de WM_CAP_SET_PREVIEW de Windows multimedia
+- WM_CAP_SET_PREVIEW mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4a7e490809efa2e2d9f1ad27bca697c6333e682
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a25bf7f1ce2a61cb104c1e1764f9bca9c82d3aa40d44cc8a1eef9ce435584271
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118369389"
 ---
-# <a name="wm_cap_set_preview-message"></a>\_Mensaje de \_ \_ vista previa de límite de Cap de WM
+# <a name="wm_cap_set_preview-message"></a>Mensaje WM \_ CAP \_ SET \_ PREVIEW
 
-El mensaje de **\_ \_ \_ vista previa del límite de Cap de WM** habilita o deshabilita el modo de vista previa. En el modo de vista previa, los fotogramas se transfieren del hardware de captura a la memoria del sistema y, a continuación, se muestran en la ventana de captura mediante funciones GDI. Puede enviar este mensaje explícitamente o mediante la macro [**capPreview**](/windows/desktop/api/Vfw/nf-vfw-cappreview) .
+El **mensaje WM CAP SET \_ \_ \_ PREVIEW** habilita o deshabilita el modo de vista previa. En el modo de vista previa, los fotogramas se transfieren desde el hardware de captura a la memoria del sistema y, a continuación, se muestran en la ventana de captura mediante funciones GDI. Puede enviar este mensaje explícitamente o mediante la [**macro capPreview.**](/windows/desktop/api/Vfw/nf-vfw-cappreview)
 
 
 ```C++
@@ -38,36 +38,36 @@ lParam = 0L;
 
 <dl> <dt>
 
-<span id="f"></span><span id="F"></span>*formato*
+<span id="f"></span><span id="F"></span>*F*
 </dt> <dd>
 
-Marca de vista previa. Especifique **true** para que este parámetro habilite el modo de vista previa o **false** para deshabilitarlo.
+Marca de vista previa. Especifique **TRUE para** este parámetro para habilitar el modo de vista previa o **FALSE** para deshabilitarlo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El modo de vista previa utiliza recursos de CPU importantes. Las aplicaciones pueden deshabilitar la vista previa o reducir la velocidad de vista previa cuando otra aplicación tiene el foco. El miembro **fLiveWindow** de la estructura [**CAPSTATUS**](/windows/win32/api/vfw/ns-vfw-capstatus) indica si el modo de vista previa está habilitado actualmente.
+El modo de versión preliminar usa recursos de CPU considerables. Las aplicaciones pueden deshabilitar la vista previa o reducir la velocidad de vista previa cuando otra aplicación tiene el foco. El **miembro fLiveWindow** de la [**estructura CAPSTATUS**](/windows/win32/api/vfw/ns-vfw-capstatus) indica si el modo de vista previa está habilitado actualmente.
 
-Al habilitar el modo de vista previa se deshabilita automáticamente el modo de superposición.
+Al habilitar el modo de vista previa, se deshabilita automáticamente el modo de superposición.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

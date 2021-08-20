@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración OpenDatabaseGrbit'
-title: Enumeración OpenDatabaseGrbit
+description: 'Más información sobre: Enumeración OpenDatabaseGrbit'
+title: OpenDatabaseGrbit (enumeración)
 TOCTitle: OpenDatabaseGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.OpenDatabaseGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.opendatabasegrbit(v=EXCHG.10)
@@ -30,21 +30,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d14fb779ec02137f6a4fce1cfdd92f46dedcb832
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2bfd131d448157b44e861de4d8c167a074a3c1cefb361c3dffe085793f40c224
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117890757"
 ---
-# <a name="opendatabasegrbit-enumeration"></a>Enumeración OpenDatabaseGrbit
+# <a name="opendatabasegrbit-enumeration"></a>OpenDatabaseGrbit (enumeración)
 
-Opciones para [JetOpenDatabase (JET_SESID, cadena, cadena, JET_DBID, OpenDatabaseGrbit)](./api.jetopendatabase-method.md).
+Opciones de [JetOpenDatabase(JET_SESID, String, String, JET_DBID, OpenDatabaseGrbit).](./api.jetopendatabase-method.md)
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -74,7 +74,7 @@ public enum OpenDatabaseGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
@@ -85,7 +85,7 @@ public enum OpenDatabaseGrbit
 <tr class="odd">
 <td></td>
 <td>Exclusivo</td>
-<td>Permite que una sola sesión adjunte una base de datos. Normalmente, varias sesiones pueden abrir una base de datos.</td>
+<td>Permite que solo una sola sesión adjunte una base de datos. Normalmente, varias sesiones pueden abrir una base de datos.</td>
 </tr>
 </tbody>
 </table>
@@ -95,4 +95,4 @@ public enum OpenDatabaseGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

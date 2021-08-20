@@ -1,6 +1,6 @@
 ---
-title: Convertir un archivo DRM-Protected en un Windows DRM 10 multimedia para el flujo de dispositivos de red
-description: Convertir un archivo DRM-Protected en un Windows DRM 10 multimedia para el flujo de dispositivos de red
+title: Convertir un archivo DRM-Protected en un Windows DRM 10 para dispositivos de red
+description: Convertir un archivo DRM-Protected en un Windows DRM 10 para dispositivos de red
 ms.assetid: 11aa0cfd-6d87-4ec4-82d8-db2507402911
 keywords:
 - Windows SDK de formato multimedia, conversión de archivos protegidos con DRM
@@ -19,7 +19,7 @@ keywords:
 - ASF (formato de sistemas avanzados), Windows DRM multimedia 10 para dispositivos de red
 - Formato de sistemas avanzados (ASF), DRM 10 para dispositivos de red
 - ASF (formato de sistemas avanzados), DRM 10 para dispositivos de red
-- administración de derechos digitales (DRM),Windows DRM multimedia 10 para dispositivos de red
+- administración de derechos digitales (DRM), Windows DRM multimedia 10 para dispositivos de red
 - DRM (administración de derechos digitales), Windows DRM multimedia 10 para dispositivos de red
 - administración de derechos digitales (DRM),DRM 10 para dispositivos de red
 - DRM (administración de derechos digitales),DRM 10 para dispositivos de red
@@ -34,7 +34,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117848916"
 ---
-# <a name="converting-a-drm-protected-file-to-a-windows-media-drm-10-for-network-devices-stream"></a>Convertir un archivo DRM-Protected en un Windows DRM 10 multimedia para el flujo de dispositivos de red
+# <a name="converting-a-drm-protected-file-to-a-windows-media-drm-10-for-network-devices-stream"></a>Convertir un archivo DRM-Protected en un Windows DRM 10 para dispositivos de red
 
 Después de registrar y validar un dispositivo, puede empezar a procesar los mensajes de solicitud de licencia desde él. Los dispositivos envían mensajes de solicitud de licencia cuando se necesita una acción de la aplicación. La única acción admitida actualmente es "Play", que es una solicitud de datos seguros para la reproducción.
 

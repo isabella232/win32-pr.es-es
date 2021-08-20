@@ -3,7 +3,7 @@ title: PLAYLIST.setColumnWidth
 description: El método setColumnWidth especifica el ancho de columna y cambia el modo de cambio de tamaño de la columna a \ 0034; Se ha corregido \ 0034;.
 ms.assetid: 6eebea0a-48f2-4300-b535-78744db6fea4
 keywords:
-- PLAYLIST.setColumnWidth Reproductor de Windows Media
+- LISTA DE REPRODUCCIÓN.setColumnWidth Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -60,11 +60,11 @@ Este método no devuelve ningún valor.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
 [**PLAYLIST.setColumnResizeMode**](playlist-setcolumnresizemode.md)

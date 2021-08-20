@@ -7,16 +7,16 @@ MSHAttr:
 title: CellularClass
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1953d07176262aba35f54cc80c9b712002cd857
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42eedf13be21ca641d4a5b23d572c62db3a1996821a497645a61904309d216fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118745137"
 ---
 # <a name="span-idwwan_profile_v4element_cellularclassspancellularclass"></a><span id="WWAN_profile_v4.element_CellularClass"></span>CellularClass
 
-Especifica que este perfil solo está activo cuando la clase de teléfono móvil actual es la especificada. De lo contrario, el perfil no es aplicable y no se puede usar para activar un contexto del Protocolo de datos de paquetes (PDP).
+Especifica que este perfil solo está activo cuando la clase de telefonía móvil actual es la especificada. De lo contrario, el perfil no es aplicable y no se puede usar para activar un contexto de Protocolo de datos de paquetes (PDP).
 
 ## <a name="element-hierarchy"></a>Jerarquía de elemento
 
@@ -24,7 +24,7 @@ Especifica que este perfil solo está activo cuando la clase de teléfono móvil
 [<ProfileConditionedOn>](element-profileconditionedon.md)  
 **<CellularClass>**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <CellularClass>
@@ -60,8 +60,8 @@ Ninguno.
 <tbody>
 <tr class="odd">
 <td><a href="element-profileconditionedon.md">ProfileConditionedOn</a></td>
-<td><p>Especifica las condiciones que deben satisfacerse para que un perfil sea aplicable.</p>
-<p>Este elemento es nuevo para V4. Permite especificar varios perfiles que se aplican en diferentes condiciones y para que el perfil adecuado se use automáticamente cuando sea aplicable. Este elemento es opcional. Si no se especifica, el perfil siempre es aplicable con respecto a las condiciones indicadas.</p></td>
+<td><p>Especifica las condiciones que se deben cumplir para que un perfil sea aplicable.</p>
+<p>Este elemento es nuevo para v4. Permite especificar varios perfiles que se aplican en condiciones diferentes y para que el perfil adecuado se utilice automáticamente cuando sea aplicable. Este elemento es opcional. Si no lo especifica, el perfil siempre es aplicable con respecto a las condiciones enumeradas.</p></td>
 </tr>
 </tbody>
 </table>

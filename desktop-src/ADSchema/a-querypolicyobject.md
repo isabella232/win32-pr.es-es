@@ -32,7 +32,7 @@ Referencia al valor predeterminado Query-Policy en vigor para este servidor.
 | CN                | Query-Policy-Object                     |
 | Ldap-Display-Name | queryPolicyObject                       |
 | Size              | \-                                      |
-| Actualizar privilegios  | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.607                  |
 | System-Id-Guid    | e1aea403-cd5b-11d0-afff-0000f80367c1    |
@@ -54,7 +54,7 @@ Referencia al valor predeterminado Query-Policy en vigor para este servidor.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
@@ -75,7 +75,7 @@ Referencia al valor predeterminado Query-Policy en vigor para este servidor.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
@@ -138,7 +138,7 @@ Referencia al valor predeterminado Query-Policy en vigor para este servidor.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |
@@ -159,7 +159,7 @@ Referencia al valor predeterminado Query-Policy en vigor para este servidor.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | 68                                                                                                   |
 | MAPI-Id                | \-                                                                                                   |

@@ -22,9 +22,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118531111"
 ---
-# <a name="cd3dx12_depth_stencil_desc-structure"></a>Estructura \_ \_ DESC de STENCIL \_ DEPTH de CD3DX12
+# <a name="cd3dx12_depth_stencil_desc-structure"></a>CD3DX12 \_ DEPTH \_ STENCIL \_ DESC (estructura DESC)
 
-Estructura auxiliar para permitir la inicialización sencilla de una [**estructura D3D12 \_ DEPTH \_ STENCIL \_ DESC.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc)
+Estructura auxiliar para permitir la inicialización sencilla de una estructura [**D3D12 \_ DEPTH \_ STENCIL \_ DESC.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -80,7 +80,7 @@ Crea una nueva instancia de D3DX12 \_ DEPTH \_ STENCIL \_ DESC, inicializada con
 
 </dd> <dt>
 
-**explicit CD3DX12 \_ DEPTH \_ STENCIL \_ DESC(BOOL depthEnable, D3D12 \_ DEPTH WRITE MASK \_ \_ depthWriteMask, D3D12 \_ COMPARISON \_ FUNC depthFunc, BOOL stencilEnable, UINT8 stencilReadMask, UINT8 stencilWriteMask, D3D12 \_ STENCIL \_ OP frontStencilFailOp, D3D12 \_ STENCIL \_ OP frontStencilDepthFailOp, D3D12 \_ STENCIL \_ OP frontStencilPassOp, D3D12 \_ COMPARISON \_ FUNC frontStencilFunc, D3D12 \_ STENCIL \_ OP backStencilFailOp, D3D12 \_ STENCIL \_ OP backStencilDepthFailOp, D3D12 \_ STENCIL \_ OP backStencilPassOp, D3D12 \_ COMPARISON \_ FUNC backStencilFunc)**
+**explicit CD3DX12 \_ DEPTH \_ STENCIL \_ DESC(BOOL depthEnable, D3D12 \_ DEPTH WRITE MASK \_ \_ depthWriteMask, D3D12 \_ COMPARISON \_ FUNC depthFunc, BOOL stencilEnable, UINT8 stencilReadMask, UINT8 stencilWriteMask, D3D12 \_ STENCIL \_ OP frontStencilFailOp, \_ FrontStencilD12 STENCIL \_ OP frontStencilDepthFailOp, D3D12 \_ STENCIL \_ OP frontStencilPassOp, D3D12 \_ COMPARISON \_ FUNC frontStencilFunc, D3D12 \_ STENCIL \_ OP backStencilFailOp, D3D12 \_ STENCIL \_ OP backStencilDepthFailOp, D3D12 \_ STENCIL \_ OP backStencilPassOp, D3D12 \_ COMPARISON \_ FUNC backStencilFunc)**
 </dt> <dd>
 
 Crea una nueva instancia de D3DX12 \_ DEPTH \_ STENCIL \_ DESC, inicializando los parámetros siguientes:
@@ -103,22 +103,22 @@ UINT8 stencilWriteMask
 
 [**D3D12 \_ STENCIL \_ OP**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op) frontStencilPassOp
 
-[**D3D12 \_ COMPARISON \_ FUNC**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func) frontStencilFunc
+[**D3D12 \_ COMPARACIÓN \_ FrontStencilFunc**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func)
 
-[**D3D12 \_ STENCIL \_ OP**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op) backStencilFailOp
+[**D3D12 \_ BackStencilFailOp de STENCIL \_ OP**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op)
 
 [**D3D12 \_ STENCIL \_ OP**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op) backStencilDepthFailOp
 
 [**D3D12 \_ STENCIL \_ OP**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op) backStencilPassOp
 
-[**D3D12 \_ COMPARISON \_ FUNC**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func) backStencilFunc
+[**D3D12 \_ COMPARACIÓN \_ FUNC**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func) backStencilFunc
 
 </dd> <dt>
 
 **~CD3DX12 \_ DEPTH \_ STENCIL \_ DESC()**
 </dt> <dd>
 
-Destruye una instancia de un \_ \_ STENCIL DESC DETENCIL DE CD3DX12 \_ DEPTH.
+Destruye una instancia de CD3DX12 \_ DEPTH \_ STENCIL \_ DESC.
 
 </dd> <dt>
 
@@ -139,7 +139,7 @@ Define el & de paso por referencia para el tipo de estructura primaria.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

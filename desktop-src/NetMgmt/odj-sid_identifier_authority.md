@@ -1,20 +1,20 @@
 ---
 title: SID_IDENTIFIER_AUTHORITY
-description: Definición de SID_IDENTIFIER_AUTHORITY IDL
+description: SID_IDENTIFIER_AUTHORITY definición de IDL
 ms.assetid: 88fe41f4-1c67-4290-ac21-fd43ff12d825
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: d9a80ed0717a279f39ac7a105a95807911232c82
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.openlocfilehash: 8d2ac3b8763026c0aea31214169ff8a0e2c6260086456c8c7c2431f69b13b2d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "104149716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117796885"
 ---
-# <a name="sid_identifier_authority-structure"></a>Estructura de SID_IDENTIFIER_AUTHORITY
+# <a name="sid_identifier_authority-structure"></a>SID_IDENTIFIER_AUTHORITY estructura
 
-Contiene una autoridad de identificador de SID.
+Contiene una entidad de identificador de SID.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,8 +29,8 @@ typedef struct _SID_IDENTIFIER_AUTHORITY
 
 ### <a name="value"></a>Value
 
-Debe establecerse en los seis bytes de la autoridad del identificador de SID.
+Debe establecerse en los seis bytes de la entidad de identificador de SID.
 
 ## <a name="see-also"></a>Vea también
 
-[**Definiciones IDL de unión a dominio sin conexión**](odj-idl.md)
+[**Definiciones de IDL de unión a un dominio sin conexión**](odj-idl.md)

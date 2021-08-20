@@ -31,7 +31,7 @@ g \_ wszWMCodec
 
 **CADENA DE TIPO WMT \_ \_**
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

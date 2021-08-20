@@ -1,6 +1,6 @@
 ---
 title: outputtopology
-description: Define el tipo primitivo de salida para del teselador.
+description: Define el tipo primitivo de salida para el teselador.
 ms.assetid: 4aba65e5-b005-43fd-a844-c7fbb1b7406c
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 917a927ff80d4abe1b6509fd41281992a998c945
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 8d718b11c23fcf77f452e224a51439f7d6f422d3c81d5238167cbf87c7c3014a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103994833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117725419"
 ---
 # <a name="outputtopology"></a>outputtopology
 
-Define el tipo primitivo de salida para del teselador.
+Define el tipo primitivo de salida para el teselador.
 
 
 ```
@@ -27,9 +27,9 @@ outputtopology(X)
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-X debe ser [**punto**](dx-graphics-hlsl-geometry-shader.md), **línea**, **triángulo \_ CW** o **triángulo \_ CCW** y debe incluirse entre comillas. Estas son las opciones válidas para este atributo:
+X debe ser [**point**](dx-graphics-hlsl-geometry-shader.md), **line**, **triangle \_ cw** o **triangle \_ ccw** y debe estar entre comillas. Estas son las opciones válidas para este atributo:
 
 
 ```
@@ -41,17 +41,17 @@ X debe ser [**punto**](dx-graphics-hlsl-geometry-shader.md), **línea**, **triá
 
 
 
-Este atributo es compatible con los siguientes tipos de sombreadores:
+Este atributo se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        | x    |        |          |       |         |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -60,12 +60,12 @@ Este atributo es compatible con los siguientes tipos de sombreadores:
 [Atributos del modelo de sombreador 5](d3d11-graphics-reference-sm5-attributes.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

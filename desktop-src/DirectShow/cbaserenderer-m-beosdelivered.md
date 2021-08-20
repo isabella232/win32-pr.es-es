@@ -1,7 +1,7 @@
 ---
-description: Marca que indica si el filtro ha publicado el \_ evento de finalización de EC.
+description: Marca que indica si el filtro ha publicado el evento EC \_ COMPLETE.
 ms.assetid: db739f08-cd12-4b9d-91f2-970db3d823c4
-title: 'Miembro CBaseRenderer:: m_bEOSDelivered (Renbase. h)'
+title: CBaseRenderer::m_bEOSDelivered miembro (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: eff219f560c6570845002f2a7e27bf47da93e1e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5df1599c4a81a27094ed251e81538e11de852dd13b15a9d3e27385e0d274919e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403194"
 ---
-# <a name="cbaserendererm_beosdelivered-member"></a>Miembro bEOSDelivered CBaseRenderer:: m \_
+# <a name="cbaserendererm_beosdelivered-member"></a>CBaseRenderer::m \_ bEOSDelivered miembro
 
-Marca que indica si el filtro ha publicado el \_ evento de finalización de EC.
+Marca que indica si el filtro ha publicado el evento EC \_ COMPLETE.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ BOOL m_bEOSDelivered;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

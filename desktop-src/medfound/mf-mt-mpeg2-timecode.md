@@ -1,17 +1,17 @@
 ---
 description: Para un tipo de medio que describe una secuencia de transporte MPEG-2 (TS), especifica que los paquetes de transporte contienen un código de tiempo de 4 bytes.
 ms.assetid: B172E7A8-5757-49B7-A784-FAFC7E904A4C
-title: MF_MT_MPEG2_TIMECODE atributo (mfapi. h)
+title: MF_MT_MPEG2_TIMECODE atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bc9db5d7b3c6e94f7845bec2bd98c569d1b1f9c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc7a4ce6868f783ed33c50acd5a8648297648481a58c74198b0dcadd1bd237bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118741833"
 ---
-# <a name="mf_mt_mpeg2_timecode-attribute"></a>\_Atributo de \_ código de tiempo MF MT MPEG2 \_
+# <a name="mf_mt_mpeg2_timecode-attribute"></a>Atributo \_ \_ TIMECODE DE MF MT MPEG2 \_
 
 Para un tipo de medio que describe una secuencia de transporte MPEG-2 (TS), especifica que los paquetes de transporte contienen un código de tiempo de 4 bytes.
 
@@ -21,9 +21,9 @@ Para un tipo de medio que describe una secuencia de transporte MPEG-2 (TS), espe
 
 
 
-| Value                                                                                                | Significado                                                                                                                                        |
+| Valor                                                                                                | Significado                                                                                                                                        |
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="0"></span><dl> <dt>**0,1**</dt> </dl> | No se agrega código de tiempo.<br/>                                                                                                              |
+| <span id="0"></span><dl> <dt>**0**</dt> </dl> | No se agrega código de hora.<br/>                                                                                                              |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Se agrega un código de tiempo de 4 bytes al principio de cada paquete de transporte. Este código de tiempo es necesario para algunos estándares de televisión digital.<br/> |
 
 
@@ -34,19 +34,19 @@ Para un tipo de medio que describe una secuencia de transporte MPEG-2 (TS), espe
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                  |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                  |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                        |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

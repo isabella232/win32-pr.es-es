@@ -3,19 +3,19 @@ title: Creación dinámica del documento ServiceInfo
 description: Creación dinámica del documento ServiceInfo
 ms.assetid: 96937b04-f705-49f6-8ddf-25c98a51dc9a
 keywords:
-- Reproductor de Windows Media en línea, crear un documento ServiceInfo
+- Reproductor de Windows Media en línea, crear el documento ServiceInfo
 - online stores,creating ServiceInfo document
-- tiendas en línea de tipo 1, crear documento ServiceInfo
+- type 1 online stores,creating ServiceInfo document
 - tipo 2 tiendas en línea, crear documento ServiceInfo
 - Reproductor de Windows Media en línea, crear dinámicamente el documento ServiceInfo
 - tiendas en línea, crear dinámicamente el documento ServiceInfo
-- tiendas en línea de tipo 1, crear dinámicamente el documento ServiceInfo
+- tiendas en línea de tipo 1, crear dinámicamente un documento ServiceInfo
 - tipo 2 tiendas en línea, crear dinámicamente el documento ServiceInfo
-- Reproductor de Windows Media en línea,documento ServiceInfo
-- online stores,ServiceInfo document
-- tipo 1 tiendas en línea, documento ServiceInfo
-- tipo 2 tiendas en línea, documento ServiceInfo
-- crear dinámicamente un documento ServiceInfo
+- Reproductor de Windows Media tiendas en línea,documento ServiceInfo
+- tiendas en línea,documento ServiceInfo
+- type 1 online stores,ServiceInfo document
+- tiendas en línea de tipo 2, documento ServiceInfo
+- crear dinámicamente el documento ServiceInfo
 - creación de un documento ServiceInfo
 - Documento ServiceInfo
 ms.topic: article
@@ -31,11 +31,11 @@ ms.locfileid: "118340995"
 
 Puede usar ASP para crear el documento ServiceInfo. Esto puede proporcionar una mayor flexibilidad en su tienda en línea mediante las técnicas siguientes:
 
--   Generar dinámicamente el nombre de host para las direcciones URL.
--   Cambiar las direcciones URL para la localización en función de la configuración regional y los parámetros de geoid.
--   Anexar dinámicamente parámetros de cadena de consulta de la dirección URL de ServiceInfo a otras direcciones URL, como la dirección URL de la página de navegación.
+-   Generación dinámica del nombre de host para las direcciones URL.
+-   Cambiar las direcciones URL para la localización en función de los parámetros de configuración regional y geoid.
+-   Anexar dinámicamente parámetros de cadena de consulta desde la dirección URL de ServiceInfo a otras direcciones URL, como la dirección URL de la página de navegación.
 
-El código de ejemplo siguiente muestra una página ASP simple que crea dinámicamente un documento ServiceInfo:
+En el código de ejemplo siguiente se muestra una página ASP simple que crea dinámicamente un documento ServiceInfo:
 
 
 ```C++
@@ -67,16 +67,16 @@ El código de ejemplo siguiente muestra una página ASP simple que crea dinámic
 
 
 
-El código de ejemplo anterior usa ASP para recuperar el nombre de host del servidor web y crear dinámicamente las direcciones URL en el documento. El código también recupera el parámetro de cadena de consulta de configuración *regional* de la solicitud ServiceInfo y lo anexa a la dirección URL de la página de navegación.
+El código de ejemplo anterior usa ASP para recuperar el nombre de host del servidor web y crear dinámicamente las direcciones URL del documento. El código también recupera el parámetro de cadena de consulta de configuración *regional* de la solicitud ServiceInfo y lo anexa a la dirección URL de la página de navegación.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Información común a las tiendas en línea de tipo 1 y tipo 2**](information-common-to-type-1-and-type-2-online-stores.md)
+[**Información común a los almacenes en línea de tipo 1 y 2**](information-common-to-type-1-and-type-2-online-stores.md)
 </dt> <dt>
 
-[**Navegación para almacenes en línea de tipo 2**](navigation-for-type-2-online-stores.md)
+[**Navegación para tiendas en línea de tipo 2**](navigation-for-type-2-online-stores.md)
 </dt> <dt>
 
 [**Documento ServiceInfo para una tienda en línea de tipo 1**](serviceinfo-document-for-a-type-1-online-store.md)

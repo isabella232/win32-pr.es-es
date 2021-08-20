@@ -1,7 +1,7 @@
 ---
-description: Representa una asociación entre un equipo y la instantánea del sistema virtual aplicada más recientemente.
+description: Representa una asociación entre un sistema informático y su instantánea del sistema virtual aplicada más recientemente.
 ms.assetid: 722491a3-1c46-4d37-8bd6-7c7d6648a806
-title: CIM_LastAppliedSnapshot (clase)
+title: CIM_LastAppliedSnapshot clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 38efa9c5f02cd0ea40d993cc39ba05ac0b6fde3b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5b9cbc34d1f2fa8e5daf83012783898feb7973894d9dd7a5f667adc8524bef7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105689592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812201"
 ---
-# <a name="cim_lastappliedsnapshot-class"></a>\_Clase LastAppliedSnapshot de CIM
+# <a name="cim_lastappliedsnapshot-class"></a>Cim \_ LastAppliedSnapshot (clase)
 
-Representa una asociación entre un equipo y la instantánea del sistema virtual aplicada más recientemente.
+Representa una asociación entre un sistema informático y su instantánea del sistema virtual aplicada más recientemente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,13 +39,13 @@ class CIM_LastAppliedSnapshot : CIM_Dependency
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ LastAppliedSnapshot** tiene estos tipos de miembros:
+La **clase \_ CIM LastAppliedSnapshot** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ LastAppliedSnapshot** tiene estas propiedades.
+La **clase \_ CIM LastAppliedSnapshot** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -58,14 +58,14 @@ Tipo de datos: **CIM \_ VirtualSystemSettingData**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente"), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente"), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-La instantánea del sistema virtual que se aplicó en último lugar al sistema del equipo.
+Instantánea del sistema virtual que se aplicó por última vez al sistema del equipo.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **CIM \_ ComputerSystem**
@@ -74,10 +74,10 @@ Tipo de datos: **CIM \_ ComputerSystem**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependent"), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (0), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
-Sistema del equipo.
+El sistema del equipo.
 
 </dd> </dl>
 
@@ -89,8 +89,8 @@ Sistema del equipo.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ Sistema del equipo.
 
 <dl> <dt>
 
-[**Dependencia de CIM \_**](cim-dependency.md)
+[**Dependencia \_ cim**](cim-dependency.md)
 </dt> </dl>
 
  

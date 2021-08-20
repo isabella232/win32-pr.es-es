@@ -1,7 +1,7 @@
 ---
-description: 'Temporizador: identificador de evento, para programar \_ notificaciones completas de EC.'
+description: Identificador de evento de temporizador, para programar notificaciones \_ EC COMPLETE.
 ms.assetid: 79bb0ca9-e58f-450d-9288-57535fd06413
-title: 'Miembro CBaseRenderer:: m_EndOfStreamTimer (Renbase. h)'
+title: CBaseRenderer::m_EndOfStreamTimer miembro (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3b9c8e62469e2529902feacf45d79e1bff282922
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e6d330c6f051f6434770e00d4f9871abd43371b9c96682ed46131b1ad4c8c1c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403057"
 ---
-# <a name="cbaserendererm_endofstreamtimer-member"></a>Miembro EndOfStreamTimer CBaseRenderer:: m \_
+# <a name="cbaserendererm_endofstreamtimer-member"></a>Miembro CBaseRenderer::m \_ EndOfStreamTimer
 
-Temporizador: identificador de evento, para programar \_ notificaciones completas de EC.
+Identificador de evento de temporizador, para programar notificaciones \_ EC COMPLETE.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ UINT m_EndOfStreamTimer;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

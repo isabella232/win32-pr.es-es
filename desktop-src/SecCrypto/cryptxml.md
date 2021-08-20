@@ -1,5 +1,5 @@
 ---
-description: CryptXML proporciona un conjunto de API nativas de bajo nivel que implementan la creación y comprobación de firmas digitales XML en función de la recomendación de W3C de sintaxis y procesamiento de firmas XML (segunda edición).
+description: CryptXML proporciona un conjunto de API nativas de bajo nivel que implementan la creación y comprobación de firmas digitales XML en función de la recomendación W3C de sintaxis y procesamiento de firmas XML (segunda edición).
 ms.assetid: f0662a35-0c8c-4d9b-8a40-832df78c753f
 title: CryptXML
 ms.topic: article
@@ -13,15 +13,15 @@ ms.locfileid: "117767942"
 ---
 # <a name="cryptxml"></a>CryptXML
 
-CryptXML proporciona un conjunto de API nativas de bajo nivel que implementan la creación y comprobación de firmas digitales XML en función de la recomendación de W3C de sintaxis y procesamiento de firmas XML (segunda edición). Los desarrolladores deben estar familiarizados con este estándar para usar eficazmente las API de firma digital de CryptXML.
+CryptXML proporciona un conjunto de API nativas de bajo nivel que implementan la creación y comprobación de firmas digitales XML en función de la recomendación W3C de sintaxis y procesamiento de firmas XML (segunda edición). Los desarrolladores deben estar familiarizados con este estándar para usar eficazmente las API de firma digital de CryptXML.
 
 CryptXML contiene los temas siguientes:
 
 -   [Información general sobre la firma digital XML](xml-digital-signature-overview.md)
--   [Funcionalidad de LA API de firma digital XML](xml-digital-signature-api-functionality.md)
+-   [Funcionalidad de API de firma digital XML](xml-digital-signature-api-functionality.md)
 -   [Algoritmos criptográficos de firma digital XML](xml-digital-signature-cryptographic-algorithms.md)
 -   [Extensiones criptográficas de firma digital XML](xml-digital-signature-cryptographic-extensions.md)
--   [Consideraciones sobre la seguridad de las firmas digitales XML](xml-digital-signature-security-considerations.md)
+-   [Consideraciones de seguridad de firma digital XML](xml-digital-signature-security-considerations.md)
 
  
 

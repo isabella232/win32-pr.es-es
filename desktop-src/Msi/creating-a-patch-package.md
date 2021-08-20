@@ -13,9 +13,9 @@ ms.locfileid: "118638295"
 ---
 # <a name="creating-a-patch-package"></a>Creación de un paquete de revisión
 
-Los desarrolladores crean un paquete de revisión generando un archivo de creación de [ revisiones ](msimsp-exe.md) yMsimsp.exepara llamar a la función [UiCreatePatchPackageEx](uicreatepatchpackageex--patchwiz-dll-.md) [ enPatchwiz.dll](patchwiz-dll.md). Msimsp.exe y Patchwiz.dll se proporcionan en el SDK Windows Installer. Para obtener más información, vea [A Small Update Patching Example](a-small-update-patching-example.md).
+Los desarrolladores crean un paquete de revisión generando un archivo de creación de revisiones y usando [Msimsp.exe](msimsp-exe.md) para llamar a la función [UiCreatePatchPackageEx](uicreatepatchpackageex--patchwiz-dll-.md) [ enPatchwiz.dll](patchwiz-dll.md). Msimsp.exe y Patchwiz.dll se proporcionan en el SDK Windows Installer. Para obtener más información, vea [A Small Update Patching Example](a-small-update-patching-example.md).
 
-Dado que la aplicación de una revisión a un paquete del instalador de Windows da lugar a la instalación de los orígenes originales mediante un nuevo archivo .msi, el nuevo archivo .msi debe seguir siendo compatible con el diseño del origen original.
+Dado que la aplicación de una revisión a un paquete del instalador de Windows da como resultado la instalación de los orígenes originales mediante un nuevo archivo .msi, el nuevo archivo .msi debe seguir siendo compatible con el diseño del origen original.
 
 Al crear un paquete de revisión, debe usar una imagen de instalación sin comprimir para crear una revisión, por ejemplo, una imagen administrativa o una imagen de instalación sin comprimir desde un CD-ROM. También debe cumplir las restricciones siguientes:
 
@@ -43,7 +43,7 @@ Al crear un paquete de revisión, debe usar una imagen de instalación sin compr
 
      
 
-    El instalador Windows puede permitir el ejemplo de tabla anterior cuando Comp1 y Comp2 están instalados en directorios diferentes, pero no puede usar [Msimsp.exe](msimsp-exe.md) [oPatchwiz.dllpara](patchwiz-dll.md) generar una revisión para el paquete. Msimsp.exe y Patchwiz.dll a Makecab.exe, que no tiene en cuenta mayúsculas de minúsculas y produce un error.
+    El instalador Windows puede permitir el ejemplo de tabla anterior cuando Comp1 y Comp2 están instalados en directorios diferentes, pero no puede usar [Msimsp.exe](msimsp-exe.md) [oPatchwiz.dll](patchwiz-dll.md) para generar una revisión para el paquete. Msimsp.exe y Patchwiz.dll a Makecab.exe, que no tiene en cuenta mayúsculas de minúsculas y produce un error.
 
     Al usar módulos de combinación en la instalación, asegúrese de que los números de secuencia de archivo y el diseño cumplan las directrices anteriores.
 

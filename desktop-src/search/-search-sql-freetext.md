@@ -13,7 +13,7 @@ ms.locfileid: "117863411"
 ---
 # <a name="freetext-predicate"></a>Predicado FREETEXT
 
-El predicado FREETEXT forma parte de la [cláusula WHERE](-search-sql-where.md) y admite la búsqueda de palabras y frases en columnas de texto. Use el predicado FREETEXT para buscar documentos que contengan combinaciones de las palabras de búsqueda repartidas por el contenido o las columnas especificadas. Para obtener el valor de rango, incluya System.Search.Rank, que es una clasificación de recadencia, como una columna en la instrucción SELECT.
+El predicado FREETEXT forma parte de la [cláusula WHERE](-search-sql-where.md) y admite la búsqueda de palabras y frases en columnas de texto. Use el predicado FREETEXT para buscar documentos que contengan combinaciones de las palabras de búsqueda repartidas por el contenido o las columnas especificadas. Para obtener el valor de rango, incluya System.Search.Rank, que es una clasificación de reenceence, como una columna en la instrucción SELECT.
 
 El predicado FREETEXT tiene la sintaxis siguiente:
 
@@ -25,18 +25,18 @@ FREETEXT
 
 
 
-La referencia de columna de texto completo es opcional. Con ella, puede especificar una sola columna o un alias de agrupación de [columnas](-search-sql-with-as.md) con el que se prueba el predicado FREETEXT. Cuando la columna de texto completo se especifica como "ALL" o " ", se busca en todas las \* propiedades de texto indizado. Aunque no es necesario que la columna sea una propiedad de texto, los resultados podrían no tener sentido si la columna es algún otro tipo de datos. El nombre de columna puede ser un identificador normal o [delimitado](-search-sql-identifiers.md)y debe separarlo de la condición mediante una coma. Si no se proporciona ninguna condición de texto completo, se usa la columna Contenido, que es el cuerpo del documento.
+La referencia de columna de texto completo es opcional. Con él, puede especificar una sola columna o un alias de agrupación de [columnas](-search-sql-with-as.md) con el que se prueba el predicado FREETEXT. Cuando la columna fulltext se especifica como "ALL" o " ", se buscan todas las \* propiedades de texto indizado. Aunque no es necesario que la columna sea una propiedad de texto, los resultados podrían no tener sentido si la columna es algún otro tipo de datos. El nombre de columna puede ser un identificador normal o [delimitado,](-search-sql-identifiers.md)y debe separarlo de la condición mediante una coma. Si no se proporciona ninguna condición de texto completo, se usa la columna Contenido, que es el cuerpo del documento.
 
-Puede especificar una configuración regional de búsqueda para identificar el separador de palabras adecuado y los formularios con convolucional para la consulta de búsqueda. Los valores de configuración regional válidos son Windows de código de idioma estándar (LCID). Por ejemplo, 1033 es el LCID para Estados Unidos-inglés. Coloque el LCID como el último elemento entre paréntesis de la cláusula FREETEXT. Para obtener información importante sobre la búsqueda y los idiomas, vea [Usar búsquedas localizadas.](-search-sql-usinglocsearches.md)
+Puede especificar una configuración regional de búsqueda para identificar el separador de palabras adecuado y los formularios inflectionales para la consulta de búsqueda. Los valores de configuración regional válidos son Windows de código de idioma estándar (LCID). Por ejemplo, 1033 es el LCID para Estados Unidos inglés. Coloque el LCID como el último elemento entre paréntesis de la cláusula FREETEXT. Para obtener información importante sobre la búsqueda y los idiomas, vea [Usar búsquedas localizadas.](-search-sql-usinglocsearches.md)
 
 > [!Note]  
 > La configuración regional de búsqueda predeterminada es la configuración regional predeterminada del sistema.
 
  
 
-Debe incluir la parte de la condición de texto libre entre comillas simples y debe constar de uno o varios términos de búsqueda. El predicado FREETEXT no admite operaciones lógicas. Para buscar una frase como si fuera una sola palabra, encierre la frase entre comillas dobles.
+Debe incluir la parte de la condición de texto libre entre comillas simples y debe constar de uno o varios términos de búsqueda. El predicado FREETEXT no admite operaciones lógicas. Para buscar una frase como si fuera una sola palabra, incluya la frase entre comillas dobles.
 
-Cuando se usa el predicado FREETEXT, los resultados de la consulta de búsqueda devuelven documentos que contienen todos los términos de búsqueda. No es necesario que los términos aparezcan en un orden determinado. Los documentos que contienen más términos de búsqueda tienen valores de columna de mayor rango.
+Cuando se usa el predicado FREETEXT, los resultados de la consulta de búsqueda devuelven documentos que contienen todos los términos de búsqueda. No es necesario que los términos aparezcan en un orden determinado. Los documentos que contienen más términos de búsqueda tienen valores de columna de rango superior.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -50,7 +50,7 @@ WHERE FREETEXT('computer software hardware')
 
 
 > [!Note]  
-> No puede usar la coincidencia de una sola palabra y la coincidencia de frases en el mismo predicado FREETEXT.
+> No puede usar la coincidencia de una sola palabra ni la coincidencia de frases en el mismo predicado FREETEXT.
 
  
 
@@ -65,7 +65,7 @@ WHERE FREETEXT(*,'"We'll meet next week"')
 
 
 
-La sintaxis correcta incluye dos comillas simples, no comillas dobles.
+La sintaxis correcta incluye dos comillas simples, no una comilla doble.
 
 La sintaxis siguiente se realiza correctamente:
 
@@ -83,7 +83,7 @@ WHERE FREETEXT(*,'"We''ll meet next week"')
 **Referencia**
 </dt> <dt>
 
-[CONTAINS Predicate](-search-sql-contains.md)
+[Predicado CONTAINS](-search-sql-contains.md)
 </dt> <dt>
 
 [Cláusula WHERE](-search-sql-where.md)

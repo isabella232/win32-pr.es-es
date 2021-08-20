@@ -1,11 +1,11 @@
 ---
-title: Método INapComponentInfo GetFriendlyName (NapCommon. h)
+title: Método INapComponentInfo GetFriendlyName (NapCommon.h)
 description: Lo usa el sistema NAP para obtener el nombre descriptivo de un cliente de mantenimiento.
 ms.assetid: 28614f06-a250-4f92-abf2-422675efd8a0
 keywords:
-- Método GetFriendlyName NAP
-- Método GetFriendlyName NAP, interfaz INapComponentInfo
-- Interfaz INapComponentInfo NAP, método GetFriendlyName
+- Método NAP GetFriendlyName
+- Método GetFriendlyName NAP , interfaz INapComponentInfo
+- INapComponentInfo interfaz NAP , Método GetFriendlyName
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3848f8fb8365f91bceb5a44c498578f04a1776b3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3236a9d4959c441816aa476993d95286b4ac1f710ccdb63325aba225bfabb106
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117799720"
 ---
-# <a name="inapcomponentinfogetfriendlyname-method"></a>INapComponentInfo:: GetFriendlyName (método)
+# <a name="inapcomponentinfogetfriendlyname-method"></a>Método INapComponentInfo::GetFriendlyName
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-El sistema NAP usa el método de devolución de llamada **INapComponentInfo:: GetFriendlyName** para obtener el nombre descriptivo de un cliente de mantenimiento.
+El sistema NAP usa el método de devolución de llamada **INapComponentInfo::GetFriendlyName** para obtener el nombre descriptivo de un cliente de mantenimiento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,24 +47,24 @@ HRESULT GetFriendlyName(
 
 <dl> <dt>
 
-*friendlyName* \[ enuncia\]
+*friendlyName* \[ out\]
 </dt> <dd>
 
-Un puntero a un [**MessageId**](nap-datatypes.md) que contiene el identificador de recurso del nombre descriptivo.
+Puntero a un [**MessageId**](nap-datatypes.md) que contiene el identificador de recurso del nombre descriptivo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelva uno de estos códigos de error en función del resultado de esta operación.
+Devuelve uno de estos códigos de error en función del resultado de esta operación.
 
 
 
 | Código devuelto                                                                                     | Descripción                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> </dl>           | La operación se realizó correctamente.<br/>                            |
+| <dl> <dt>**S \_ Ok (Aceptar)**</dt> </dl>           | La operación se realizó correctamente.<br/>                            |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Error de permisos, acceso denegado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Límite de recursos del sistema, no se pudo realizar la operación.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | El límite de recursos del sistema no pudo realizar la operación.<br/> |
 
 
 
@@ -76,10 +76,10 @@ Devuelva uno de estos códigos de error en función del resultado de esta operac
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>NapCommon.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapCommon.idl</dt> </dl> |
 
 
 

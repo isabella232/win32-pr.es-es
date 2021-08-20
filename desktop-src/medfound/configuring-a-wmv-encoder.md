@@ -4,56 +4,56 @@ ms.assetid: 6e690d17-da17-452a-aa9a-9701a560856b
 title: Configuración de un codificador WMV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6324071257dd9d56e33d1dc6ece4886ee73661ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39001edd5901d09bc618fe92d251070d24633fb94812a9c2696b11866f3cb9cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117880549"
 ---
 # <a name="configuring-a-wmv-encoder"></a>Configuración de un codificador WMV
 
-Para crear un tipo de salida válido para un codificador Windows Media Video (WMV), debe tener la siguiente información:
+Para crear un tipo de salida válido para un Windows Media Video (WMV), debe tener la siguiente información:
 
 -   Formato del vídeo sin comprimir que se va a codificar.
--   El subtipo de vídeo que repesents el formato WMV codificado. Vea [GUID de subtipo de vídeo](video-subtype-guids.md).
--   La velocidad de bits de destino para el flujo codificado.
--   Propiedades de configuración que se van a establecer en el codificador.
+-   Subtipo de vídeo que reenvía el formato WMV codificado. Consulte [GUID de subtipo de vídeo.](video-subtype-guids.md)
+-   Velocidad de bits de destino para la secuencia codificada.
+-   Propiedades de configuración que se establecerán en el codificador.
 
-Las propiedades de configuración se documentan en la documentación del códec de Windows Media Audio y vídeo y de las API de DSP. Para obtener más información, vea "propiedades de secuencia de vídeo" en [propiedades de codificación](configuring-the-encoder.md).
+Las propiedades de configuración se documentan en la documentación Windows Media Audio and Video Codec y LAS API de DSP. Para obtener más información, vea "Propiedades de secuencia de vídeo" en [Propiedades de codificación.](configuring-the-encoder.md)
 
 Para obtener un tipo de salida válido para el codificador, realice los pasos siguientes.
 
-1.  Utilice la función [**MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum) o [**MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) para crear una instancia del codificador.
-2.  Consulte el codificador para la interfaz **IPropertyStore** .
-3.  Use la interfaz **IPropertyStore** para configurar el codificador.
-4.  Llame a [**IMFTransform:: SetInputType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setinputtype) para establecer el tipo de vídeo sin comprimir en el codificador.
-5.  Llame a [**IMFTransform:: GetOutputAvailableType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputavailabletype) para obtener la lista de formatos de compresión del codificador. Los codificadores WMV no devuelven un tipo de medio completo desde este método. Faltan dos partes de la información en los tipos de medios:
+1.  Use las [**funciones MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum) [**o MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) para crear una instancia del codificador.
+2.  Consulte el codificador para la **interfaz IPropertyStore.**
+3.  Use la **interfaz IPropertyStore** para configurar el codificador.
+4.  Llame [**a IMFTransform::SetInputType para**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setinputtype) establecer el tipo de vídeo sin comprimir en el codificador.
+5.  Llame [**a IMFTransform::GetOutputAvailableType para**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputavailabletype) obtener la lista de formatos de compresión del codificador. Los codificadores WMV no devuelven un tipo de medio completo de este método. A los tipos de medios les faltan dos fragmentos de información:
 
-    -   La velocidad de bits de destino.
-    -   Datos de códec privados del codificador.
+    -   Velocidad de bits de destino.
+    -   Datos de códecs privados del codificador.
 
     Antes de establecer el tipo de salida en el codificador, debe agregar ambos elementos al tipo de medio.
 
-6.  Para especificar la velocidad de bits de destino, establezca el atributo [**MF \_ MT \_ AVG de velocidad de \_ bits**](mf-mt-avg-bitrate-attribute.md) en el tipo de medio.
-7.  Agregue los datos del códec privado al tipo de medio, como se explica en la sección siguiente.
-8.  Llame a [**IMFTransform:: SetOutputType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputtype) para establecer el tipo de medio de compresión en el codificador.
+6.  Para especificar la velocidad de bits de destino, establezca el atributo [**\_ MF MT AVG \_ \_ BITRATE**](mf-mt-avg-bitrate-attribute.md) en el tipo de medio.
+7.  Agregue los datos de códec privado al tipo de medio, como se explica en la sección siguiente.
+8.  Llame [**a IMFTransform::SetOutputType para**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputtype) establecer el tipo de medio de compresión en el codificador.
 
 ### <a name="private-codec-data"></a>Datos de códecs privados
 
-Los datos del códec privado son una estructura de datos opaca que debe obtener del codificador WMV y agregarlos al tipo de compresión, antes de establecer el tipo de compresión en el codificador. Para obtener los datos privados, debe usar la interfaz **IWMCodecPrivateData** , que se documenta en el SDK de Windows Media Format 11.
+Los datos de códec privado son una estructura de datos opaca que debe obtener del codificador WMV y agregar al tipo de compresión, antes de establecer el tipo de compresión en el codificador. Para obtener los datos privados, debe usar la interfaz **IWMCodecPrivateData,** que se documenta en el SDK Windows Media Format 11.
 
 Para obtener los datos del códec privado, realice los pasos siguientes:
 
-1.  Llame a [**IMFTransform:: GetOutputAvailableType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputavailabletype) para obtener un tipo de medio del codificador. (Este es el paso 6 de la sección anterior).
-2.  Especifique la velocidad de bits de destino estableciendo el atributo de [**\_ velocidad de \_ \_ bits media MF MT**](mf-mt-avg-bitrate-attribute.md) en el tipo de medio.
-3.  Convierta el tipo de medio en una estructura de [**\_ \_ tipo de medio DMO**](/previous-versions/windows/desktop/api/mediaobj/ns-mediaobj-dmo_media_type) llamando a la función [**MFInitAMMediaTypeFromMFMediaType**](/windows/desktop/api/mfapi/nf-mfapi-mfinitammediatypefrommfmediatype) .
-4.  Consulte el codificador para la interfaz **IWMCodecPrivateData** .
-5.  Llame al método **IWMCodecPrivateData:: SetPartialOutputType** , pasando la estructura de [**\_ \_ tipo de medio DMO**](/previous-versions/windows/desktop/api/mediaobj/ns-mediaobj-dmo_media_type) convertida.
-6.  Llame dos veces al método **IWMCodecPrivateData:: GetPrivateData** , una vez para obtener el tamaño del búfer para los datos privados y una vez para copiar los datos en el búfer.
-7.  Agregue los datos privados al tipo de medio mediante el establecimiento del atributo de [**\_ datos del \_ usuario \_ MF MT**](mf-mt-user-data-attribute.md) en el tipo.
+1.  Llame [**a IMFTransform::GetOutputAvailableType para**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputavailabletype) obtener un tipo de medio del codificador. (Este es el paso 6 de la sección anterior).
+2.  Especifique la velocidad de bits de destino estableciendo el atributo [**\_ MF MT AVG \_ \_ BITRATE**](mf-mt-avg-bitrate-attribute.md) en el tipo de medio.
+3.  Convierta el tipo de medio en una [**estructura \_ DMO MEDIA \_ TYPE**](/previous-versions/windows/desktop/api/mediaobj/ns-mediaobj-dmo_media_type) mediante una llamada a la [**función MFInitAMMediaTypeFromMFMediaType.**](/windows/desktop/api/mfapi/nf-mfapi-mfinitammediatypefrommfmediatype)
+4.  Consulte el codificador para la **interfaz IWMCodecPrivateData.**
+5.  Llame al **método IWMCodecPrivateData::SetPartialOutputType** y pase la estructura [**DMO MEDIA \_ \_ TYPE**](/previous-versions/windows/desktop/api/mediaobj/ns-mediaobj-dmo_media_type) convertida.
+6.  Llame al método **IWMCodecPrivateData::GetPrivateData** dos veces, una vez para obtener el tamaño del búfer para los datos privados y otra para copiar los datos en el búfer.
+7.  Agregue los datos privados al tipo de medio estableciendo el atributo [**MF \_ MT USER \_ \_ DATA**](mf-mt-user-data-attribute.md) en el tipo.
 
-En el ejemplo extendido siguiente se muestra cómo crear un formato de compresión WMV desde un tipo de vídeo sin comprimir:
+En el ejemplo extendido siguiente se muestra cómo crear un formato de compresión WMV a partir de un tipo de vídeo sin comprimir:
 
 
 ```C++
@@ -169,7 +169,7 @@ HRESULT GetEncodedVideoType(
 
 
 
-La función CreateVideoEncoder crea un codificador de vídeo para un subtipo de vídeo especificado, como **MFVideoFormat \_ WMV3**:
+La función CreateVideoEncoder crea un codificador de vídeo para un subtipo de vídeo especificado, como **MFVideoFormat \_ WMV3:**
 
 
 ```C++
@@ -371,10 +371,10 @@ HRESULT CopyPropertyStore(IPropertyStore *pSrc, IPropertyStore *pDest)
 
 <dl> <dt>
 
-[Crear instancias de una MFT del codificador](instantiating-the-encoder-mft.md)
+[Creación de instancias de un MFT de codificador](instantiating-the-encoder-mft.md)
 </dt> <dt>
 
-[Codificadores de Windows Media](windows-media-encoders.md)
+[Windows Codificadores multimedia](windows-media-encoders.md)
 </dt> </dl>
 
  

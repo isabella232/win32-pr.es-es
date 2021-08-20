@@ -1,6 +1,6 @@
 ---
 title: WM_CAP_PAL_OPEN mensaje (Vfw.h)
-description: El mensaje WM CAP PAL OPEN carga una nueva paleta de un archivo de paleta \_ y la pasa a un controlador de \_ \_ captura.
+description: El mensaje WM CAP PAL OPEN carga una nueva paleta desde un archivo de paleta \_ y la pasa a un controlador de \_ \_ captura.
 ms.assetid: e77b518e-ff03-4622-978f-d9ebaa49c6a4
 keywords:
 - WM_CAP_PAL_OPEN mensaje Windows Multimedia
@@ -23,7 +23,7 @@ ms.locfileid: "117800584"
 ---
 # <a name="wm_cap_pal_open-message"></a>Mensaje \_ DE WM CAP PAL \_ \_ OPEN
 
-El **mensaje WM CAP PAL \_ \_ \_ OPEN** carga una nueva paleta de un archivo de paleta y la pasa a un controlador de captura. Normalmente, los archivos de paleta usan la extensión de nombre de archivo . Camarada. Un controlador de captura usa una paleta cuando lo requiere el formato de imagen digitalizado especificado. Puede enviar este mensaje explícitamente o mediante la [**macro capPaletteOpen.**](/windows/desktop/api/Vfw/nf-vfw-cappaletteopen)
+El **mensaje WM CAP PAL \_ \_ \_ OPEN** carga una nueva paleta desde un archivo de paleta y la pasa a un controlador de captura. Normalmente, los archivos de paleta usan la extensión de nombre de archivo . Camarada. Un controlador de captura usa una paleta cuando lo requiere el formato de imagen digitalizado especificado. Puede enviar este mensaje explícitamente o mediante la [**macro capPaletteOpen.**](/windows/desktop/api/Vfw/nf-vfw-cappaletteopen)
 
 
 ```C++
@@ -47,9 +47,9 @@ Puntero a una cadena terminada en NULL que contiene el nombre de archivo de la p
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
 
-Si se produce un error y se establece una función de devolución de llamada de error mediante el mensaje [**WM \_ CAP SET \_ \_ CALLBACK \_ ERROR,**](wm-cap-set-callback-error.md) se llama a la función de devolución de llamada de error.
+Si se produce un error y se establece una función de devolución de llamada de error mediante el mensaje [**DE ERROR WM CAP SET \_ \_ \_ CALLBACK, \_**](wm-cap-set-callback-error.md) se llama a la función de devolución de llamada de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ Si se produce un error y se establece una función de devolución de llamada de 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

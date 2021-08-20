@@ -64,7 +64,7 @@ Implements IWMPStringCollection.Item
 
 **System.String que** es la cadena en el índice especificado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La **interfaz IWMPStringCollection** se usa para recuperar el conjunto de valores disponibles para un atributo. Por ejemplo, el método **IWMPMediaCollection.getAttributeStringCollection** se puede usar para recuperar una **interfaz IWMPStringCollection** que representa todos los valores del atributo Genre dentro del tipo de medio Audio. A **continuación,** el método Item se puede usar para recorrer en iteración todos los valores posibles para el atributo Genre.
 
@@ -74,7 +74,7 @@ Para usar este método, se requiere acceso de lectura a la biblioteca. Para obte
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -82,7 +82,7 @@ Para usar este método, se requiere acceso de lectura a la biblioteca. Para obte
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
 title: Memoria. Cpp
-description: En el componente de proveedor de ejemplo, un ejemplo de código que muestra la asignación y la liberación de memoria está en memory.cpp. Las rutinas admitidas se enumeran en la tabla siguiente.
+description: En el componente de proveedor de ejemplo, hay un ejemplo de código que muestra la asignación y la liberar memoria en memory.cpp. Las rutinas admitidas se enumeran en la tabla siguiente.
 ms.assetid: dc5b3559-02fc-45e8-bbd0-482e4e3a7f8a
 ms.tgt_platform: multiple
 ms.topic: article
@@ -14,7 +14,7 @@ ms.locfileid: "117839495"
 ---
 # <a name="memorycpp"></a>Memoria. Cpp
 
-En el componente de proveedor de ejemplo, un ejemplo de código que muestra la asignación y la liberación de memoria está en memory.cpp. Las rutinas admitidas se enumeran en la tabla siguiente.
+En el componente de proveedor de ejemplo, hay un ejemplo de código que muestra la asignación y la liberar memoria en memory.cpp. Las rutinas admitidas se enumeran en la tabla siguiente.
 
 
 

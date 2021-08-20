@@ -68,7 +68,7 @@ Si una aplicación procesa este mensaje, debe devolver cero.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

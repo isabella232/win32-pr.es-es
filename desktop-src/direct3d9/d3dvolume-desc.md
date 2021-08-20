@@ -1,7 +1,7 @@
 ---
 description: Describe un volumen.
 ms.assetid: c0224f4e-3d32-4bdd-b56c-4e8aa291bb27
-title: D3DVOLUME_DESC estructura (D3D9Types. h)
+title: D3DVOLUME_DESC estructura (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: b736333cefcfc8a3307ff7a0cecd53cd96bc0af2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1ddf80819818bf23985c5ca81e2d26e80b51662388ec5808579c74146c152ea8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118300183"
 ---
 # <a name="d3dvolume_desc-structure"></a>D3DVOLUME \_ DESC (estructura)
 
@@ -52,7 +52,7 @@ Tipo: **[D3DFORMAT](d3dformat.md)**
 
 </dd> <dd>
 
-Miembro del tipo enumerado [D3DFORMAT](d3dformat.md) , que describe el formato de superficie del volumen.
+Miembro del tipo [enumerado D3DFORMAT,](d3dformat.md) que describe el formato de superficie del volumen.
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Tipo: **[ **D3DRESOURCETYPE**](./d3dresourcetype.md)**
 
 </dd> <dd>
 
-Miembro del tipo enumerado [**D3DRESOURCETYPE**](./d3dresourcetype.md) que identifica este recurso como un volumen.
+Miembro del tipo [**enumerado D3DRESOURCETYPE,**](./d3dresourcetype.md) que identifica este recurso como un volumen.
 
 </dd> <dt>
 
@@ -85,14 +85,14 @@ Tipo: **[ **D3DPOOL**](./d3dpool.md)**
 
 </dd> <dd>
 
-Miembro del tipo enumerado [**D3DPOOL**](./d3dpool.md) , que especifica la clase de memoria asignada para este volumen.
+Miembro del [**tipo enumerado D3DPOOL,**](./d3dpool.md) especificando la clase de memoria asignada para este volumen.
 
 </dd> <dt>
 
 **Width**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -103,7 +103,7 @@ Ancho del volumen, en píxeles.
 **Height**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -114,7 +114,7 @@ Alto del volumen, en píxeles.
 **Profundidad**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -128,11 +128,11 @@ Profundidad del volumen, en píxeles.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

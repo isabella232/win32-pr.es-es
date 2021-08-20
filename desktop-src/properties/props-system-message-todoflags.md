@@ -1,19 +1,19 @@
 ---
-description: Identifica si un mensaje se marca como un elemento de tareas pendientes.
+description: Identifica si un mensaje se marca como un elemento de trabajo.
 ms.assetid: 0cd86838-34ce-4e49-b4bb-f486a55ab8f6
-title: System. Message. ToDoFlags
+title: System.Message.ToDoFlags
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03f90842b8b02f5bba652a7856b32051f0acd4b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca6881ced3d42bc393aeb794b516db65acc89b5a9d42720c927d50d1e6439feb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104545251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117683132"
 ---
-# <a name="systemmessagetodoflags"></a>System. Message. ToDoFlags
+# <a name="systemmessagetodoflags"></a>System.Message.ToDoFlags
 
-Identifica si un mensaje se marca como un elemento de tareas pendientes.
+Identifica si un mensaje se marca como un elemento de trabajo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Int32
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

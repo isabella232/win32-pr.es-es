@@ -19,9 +19,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118452170"
 ---
-# <a name="_ianalysisevents-interface"></a>\_IAnalysisEvents (interfaz)
+# <a name="_ianalysisevents-interface"></a>\_Interfaz IAnalysisEvents
 
-Especifica los eventos asociados a los pasos de análisis de [**un objeto IInkAnalyzer.**](iinkanalyzer.md)
+Especifica los eventos asociados a los pasos de análisis de un [**objeto IInkAnalyzer.**](iinkanalyzer.md)
 
 -   [Eventos](/windows)
 
@@ -33,9 +33,9 @@ La **\_ interfaz IAnalysisEvents** tiene estos eventos.
 
 | Evento                                                               | Descripción                                                                                                                                                                                    |
 |:--------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Actividad**](-ianalysisevents-activity.md)                       | Se produce durante las llamadas al método [**IInkAnalyzer::Analyze o**](iinkanalyzer-analyze.md) [**al método IInkAnalyzer::BackgroundAnalyze.**](iinkanalyzer-backgroundanalyze.md)<br/> |
+| [**Actividad**](-ianalysisevents-activity.md)                       | Se produce durante las llamadas al método [**IInkAnalyzer::Analyze o**](iinkanalyzer-analyze.md) al método [**IInkAnalyzer::BackgroundAnalyze.**](iinkanalyzer-backgroundanalyze.md)<br/> |
 | [**IntermediateResults**](-ianalysisevents-intermediateresults.md) | Se produce cuando finaliza la fase de análisis intermedia actual.<br/>                                                                                                                    |
-| [**ReadyToReconcile**](-ianalysisevents-readytoreconcile.md)       | Se produce cuando [**IInkAnalyzer**](iinkanalyzer.md) está listo para conciliar los resultados del análisis en segundo plano con su estado actual.<br/>                                                  |
+| [**ReadyToReconcile**](-ianalysisevents-readytoreconcile.md)       | Se produce cuando [**IInkAnalyzer**](iinkanalyzer.md) está listo para conciliar sus resultados de análisis en segundo plano con su estado actual.<br/>                                                  |
 | [**Results**](-ianalysisevents-results.md)                         | Se produce cuando finaliza la fase de análisis final.<br/>                                                                                                                                   |
 | [**UpdateStrokesCache**](-ianalysisevents-updatestrokescache.md)   | Se produce antes de que [**IInkAnalyzer**](iinkanalyzer.md) acceda a los datos del trazo.<br/>                                                                                                        |
 
@@ -47,14 +47,14 @@ La **\_ interfaz IAnalysisEvents** tiene estos eventos.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

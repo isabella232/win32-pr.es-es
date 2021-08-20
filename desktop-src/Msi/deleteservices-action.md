@@ -4,12 +4,12 @@ ms.assetid: c7976de9-65f4-4552-8f8c-e7a32ef4821d
 title: Acción DeleteServices
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c5fc22bbb0c11cd546f1ffbb9f3ad98e06efae3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9bd00b9d077239402817bdf40dc10ee1de9bdbff4b52998742434933c3e9dd8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118379121"
 ---
 # <a name="deleteservices-action"></a>Acción DeleteServices
 
@@ -17,11 +17,11 @@ La acción DeleteServices detiene un servicio y quita su registro del sistema. E
 
 ## <a name="sequence-restrictions"></a>Restricciones de secuencia
 
-Las acciones de servicios se deben usar en la secuencia siguiente:
+Las acciones de servicios deben usarse en la secuencia siguiente:
 
 1.  [StopServices](stopservices-action.md)
 2.  DeleteServices
-3.  Cualquiera de las siguientes acciones: [InstallFiles](installfiles-action.md), [RemoveFiles](removefiles-action.md), [DuplicateFiles](duplicatefiles-action.md), [MoveFiles](movefiles-action.md), [PatchFiles](patchfiles-action.md)y [RemoveDuplicateFiles](removeduplicatefiles-action.md) .
+3.  Cualquiera de las siguientes acciones: [acciones InstallFiles](installfiles-action.md), [RemoveFiles](removefiles-action.md), [DuplicateFiles](duplicatefiles-action.md), [MoveFiles,](movefiles-action.md) [PatchFiles](patchfiles-action.md)y [RemoveDuplicateFiles.](removeduplicatefiles-action.md)
 4.  [Acción InstallServices](installservices-action.md)
 5.  [StartServices](startservices-action.md)
 
@@ -38,9 +38,9 @@ Las acciones de servicios se deben usar en la secuencia siguiente:
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta acción requiere que el usuario sea administrador o que tenga privilegios elevados con permiso para eliminar servicios o que la aplicación forme parte de una instalación administrada.
+Esta acción requiere que el usuario sea administrador o tenga privilegios elevados con permiso para eliminar servicios o que la aplicación sea parte de una instalación administrada.
 
  
 

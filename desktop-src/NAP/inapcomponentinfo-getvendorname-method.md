@@ -4,8 +4,8 @@ description: Lo usa el sistema NAP para obtener el nombre de proveedor de un cli
 ms.assetid: 7083b0b6-38fc-4c24-a5f7-fe0a1ebd5e88
 keywords:
 - Método NAP de GetVendorName
-- Método Nap de GetVendorName , interfaz INapComponentInfo
-- Nap de interfaz INapComponentInfo, método GetVendorName
+- Método NAP de GetVendorName, interfaz INapComponentInfo
+- INapComponentInfo , método GetVendorName de la interfaz NAP
 topic_type:
 - apiref
 api_name:
@@ -83,7 +83,7 @@ Devuelve uno de estos códigos de error en función del resultado de esta operac
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

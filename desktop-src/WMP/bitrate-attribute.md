@@ -1,9 +1,9 @@
 ---
 title: Atributo de velocidad de bits
-description: El atributo de velocidad de bits es la velocidad de bits del elemento, en bits por segundo.
+description: El atributo Velocidad de bits es la velocidad de bits del elemento, en bits por segundo.
 ms.assetid: 19117ca7-fad3-469e-8208-c0b899e13919
 keywords:
-- Media Player de atributos de velocidad de bits de Windows
+- Atributo de velocidad de bits Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,32 +12,32 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9869ffdf9df85fdfb019d6a088fabfb0cb05c2b3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 12b767dc6b67d7b27e87f3321f2c923c8edb8a0f13a75b345c81d1380b4ef9a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120113"
 ---
 # <a name="bitrate-attribute"></a>Atributo de velocidad de bits
 
-El atributo de **velocidad** de bits es la velocidad de bits del elemento, en bits por segundo.
+El **atributo Velocidad de** bits es la velocidad de bits del elemento, en bits por segundo.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de audio](audio-item-attributes.md)
--   [Archivos de Windows Media de uso frecuente](commonly-used-windows-media-file-attributes.md)
+-   [Archivos multimedia de Windows usados con frecuencia](commonly-used-windows-media-file-attributes.md)
 -   [Otros elementos](other-item-attributes.md)
 -   [Elementos de radio](radio-item-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se almacena en la biblioteca y en el archivo multimedia digital.
+Este atributo se almacena tanto en la biblioteca como en el archivo multimedia digital.
 
-La constante del SDK de Windows Media Format para este atributo es g \_ wszWMBitrate.
+La Windows SDK de formato multimedia para este atributo es g \_ wszWMBitrate.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -53,7 +53,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

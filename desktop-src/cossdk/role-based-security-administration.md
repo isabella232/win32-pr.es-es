@@ -19,7 +19,7 @@ La seguridad basada en roles es un servicio automático proporcionado por COM+ q
 -   No es preciso escribir lógica relacionada con la seguridad en los componentes cuando la protección de roles en el nivel de método le proporciona un control de acceso lo suficientemente preciso.
 -   No es necesario tener en cuenta la seguridad en el diseño de interfaces o componentes. En su lugar, puede establecer la seguridad método a método.
 -   Puede centrarse en la estructura de la directiva de seguridad que desea aplicar y, a través de roles, esa directiva se puede expresar claramente a los administradores que implementan la aplicación.
--   Puede modificar fácilmente una directiva de seguridad para adaptarla a los cambiantes requisitos de seguridad de una aplicación.
+-   Puede modificar fácilmente una directiva de seguridad para adaptarla a los requisitos de seguridad en constante evolución de una aplicación.
 -   Puede crear directivas de seguridad más granulares mediante programación si es necesario, usando la seguridad basada en roles como plataforma compatible.
 -   Puede aprovechar la seguridad basada en roles para realizar auditorías detalladas, ya que puede obtener información de seguridad del llamador para toda una cadena de llamadas ascendentes.
 

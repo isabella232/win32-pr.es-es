@@ -68,7 +68,7 @@ La cadena devuelta corresponde al texto que muestra actualmente el botón.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

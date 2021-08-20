@@ -7,8 +7,8 @@ keywords:
 - TSF (Text Services Framework),glosario
 - servicios de texto, glosario
 - Aplicaciones habilitadas para TSF, glosario
-- Text Services Framework (TSF),terms
-- TSF (Text Services Framework),terms
+- Text Services Framework (TSF), términos
+- TSF (Text Services Framework),términos
 - servicios de texto, términos
 - Aplicaciones habilitadas para TSF, términos
 - Text Services Framework (TSF),definiciones
@@ -17,16 +17,16 @@ keywords:
 - Aplicaciones habilitadas para TSF, definiciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bc44d685ff521b42d47618578ea80c5f7b3007e
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 7b159fa18c2f571474b049ac2a68395274fdab7b00afc8993e540b2fbcfd3fd7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117953383"
 ---
 # <a name="glossary-text-services-framework"></a>Glosario (Text Services Framework)
 
-[A](a.md)[B](b.md)[C](c.md)[D](d.md)[E](e.md)[F](f.md)[G](g.md)H[](h.md)[I](i.md)[J](j.md)[K](k.md)[L](l.md)M[N](m.md)[](n.md)[O](o.md)[P P](p.md)[Q](q.md)[R](r.md)[S](s.md)[T](t.md)[U](u.md)[V](v.md)[W](w.md)[X](x.md)[Y](y.md)[Z](z.md)
+[A](a.md)[B](b.md)[C](c.md)[D](d.md)[E](e.md)[F](f.md)[G](g.md)H[](h.md)[I](i.md)[J](j.md)[K](k.md)[L](l.md)M[N](m.md)[O](n.md)[](o.md)[P](p.md)[Q](q.md)[R](r.md)[S](s.md)[T](t.md)[U](u.md)[V](v.md)[W](w.md)[X](x.md)[Y](y.md)[Z](z.md)
 
  
 

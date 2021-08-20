@@ -1,37 +1,37 @@
 ---
-description: La firma de datos no protege los datos. Solo se comprueba la integridad de los datos.
+description: La firma de datos no protege los datos. Solo comprueba la integridad de los datos.
 ms.assetid: 8f0ace5a-c8f9-4a45-8500-041a9f22637d
-title: Firmar datos con CNG
+title: Firma de datos con CNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 658dd1c9a833cfb15b708a7f85013e3d9cacac9d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 64a05f6cf655421422945d375c9d54ec2b74ae24efe1640c0dc9f6efe9a3e45c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104156137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907156"
 ---
-# <a name="signing-data-with-cng"></a>Firmar datos con CNG
+# <a name="signing-data-with-cng"></a>Firma de datos con CNG
 
-La firma de datos no protege los datos. Solo se comprueba la integridad de los datos. El remitente aplica un algoritmo hash a los datos y firma (cifra) el hash mediante una clave privada. El destinatario previsto realiza la comprobación creando un hash de los datos recibidos, descifrando la firma para obtener el hash original y comparando los dos valores hash.
+La firma de datos no protege los datos. Solo comprueba la integridad de los datos. El remitente aplica un algoritmo hash a los datos y firma (cifra) el hash mediante una clave privada. El destinatario previsto realiza la comprobación creando un hash de los datos recibidos, descifrando la firma para obtener el hash original y comparando los dos hashes.
 
-Cuando los datos están firmados, el remitente crea un valor [*hash*](/windows/desktop/SecGloss/h-gly) y firma (cifra) el hash mediante una clave privada. Esta firma se adjunta a los datos y se envían en un mensaje a un destinatario. El algoritmo hash que se usó para crear la firma debe conocerse de antemano por el destinatario o identificarse en el mensaje. La forma de hacer esto es el protocolo de mensajes.
+Cuando se firman los datos, el remitente crea un [*valor hash*](/windows/desktop/SecGloss/h-gly) y firma (cifra) el hash mediante una clave privada. A continuación, esta firma se adjunta a los datos y se envía en un mensaje a un destinatario. El destinatario debe conocer de antemano el algoritmo hash que se usó para crear la firma o identificarlo en el mensaje. La forma en que se hace esto está en el protocolo de mensajes.
 
-Para comprobar la firma, el destinatario extrae los datos y la firma del mensaje. A continuación, el destinatario crea otro valor hash a partir de los datos, descifra el hash firmado mediante la clave pública del remitente y compara los dos valores hash. Si los valores son idénticos, se ha comprobado la firma y se supone que los datos no están alterados.
+Para comprobar la firma, el destinatario extrae los datos y la firma del mensaje. A continuación, el destinatario crea otro valor hash a partir de los datos, descifra el hash firmado mediante la clave pública del remitente y compara los dos valores hash. Si los valores son idénticos, se ha comprobado la firma y se supone que los datos no se han modificado.
 
 **Para crear una firma mediante CNG**
 
-1.  Cree un valor hash para los datos mediante las funciones hash de CNG. Para obtener más información sobre cómo crear un hash, vea [crear un hash con CNG](creating-a-hash-with-cng.md).
-2.  Cree una clave asimétrica para firmar el hash. Puede crear una clave persistente con las funciones de [almacenamiento de claves CNG](cng-key-storage-functions.md) o una clave efímera con las [funciones primitivas criptográficas de CNG](cng-cryptographic-primitive-functions.md).
-3.  Use las funciones [**NCryptSignHash**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptsignhash) o [**BCryptSignHash**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptsignhash) para firmar (cifrar) el valor hash. Esta función firma el valor hash mediante la clave asimétrica.
+1.  Cree un valor hash para los datos mediante las funciones hash de CNG. Para obtener más información sobre cómo crear un hash, vea [Crear un hash con CNG.](creating-a-hash-with-cng.md)
+2.  Cree una clave asimétrica para firmar el hash. Puede crear una clave persistente con la clave [CNG Storage Functions](cng-key-storage-functions.md) o una clave efímera con las funciones primitivas criptográficas de [CNG](cng-cryptographic-primitive-functions.md).
+3.  Use la [**función NCryptSignHash**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptsignhash) o [**BCryptSignHash**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptsignhash) para firmar (cifrar) el valor hash. Esta función firma el valor hash mediante la clave asimétrica.
 4.  Combine los datos y la firma en un mensaje que se puede enviar al destinatario previsto.
 
 **Para comprobar una firma mediante CNG**
 
 1.  Extraiga los datos y la firma del mensaje.
-2.  Cree un valor hash para los datos mediante las funciones hash de CNG. El algoritmo hash utilizado debe ser el mismo que se usó para firmar el hash.
-3.  Obtenga la parte pública del par de claves asimétricas que se usó para firmar el hash. La forma de obtener esta clave depende de cómo se haya creado y guardado la clave. Si la clave se creó o cargó con las [funciones de almacenamiento de claves CNG](cng-key-storage-functions.md), usará la función [**NCryptOpenKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptopenkey) para cargar la clave persistente. Si la clave es una clave efímera, tendría que haberse guardado en un BLOB de clave. Debe pasar este BLOB de clave a la función [**BCryptImportKeyPair**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptimportkeypair) o [**NCryptImportKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptimportkey) .
-4.  Pase el nuevo valor hash, la firma y el identificador de clave a la función [**NCryptVerifySignature**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptverifysignature) o [**BCryptVerifySignature**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptverifysignature) . Estas funciones realizan la comprobación mediante la clave pública para descifrar la firma y comparar el hash descifrado con el hash calculado en el paso 2. La función **BCryptVerifySignature** devolverá un **estado \_ correcto** si la firma coincide con el hash o el **estado \_ \_ signatura no válida** si la firma no coincide con el hash. La función **NCryptVerifySignature** devolverá un **estado \_ correcto** si la firma coincide con el hash o con la **\_ \_ firma incorrecta de NTE** si la firma no coincide con el hash.
+2.  Cree un valor hash para los datos mediante las funciones hash de CNG. El algoritmo hash utilizado debe ser el mismo algoritmo que se usó para firmar el hash.
+3.  Obtenga la parte pública del par de claves asimétricas que se usó para firmar el hash. La forma de obtener esta clave depende de cómo se creó y persistió la clave. Si la clave se creó o cargó con la clave [CNG Storage Functions](cng-key-storage-functions.md), usará la función [**NCryptOpenKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptopenkey) para cargar la clave persistente. Si la clave es una clave efímera, tendría que guardarse en un BLOB de clave. Debe pasar este blob de clave a la [**función BCryptImportKeyPair**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptimportkeypair) o [**NCryptImportKey.**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptimportkey)
+4.  Pase el nuevo valor hash, la firma y el identificador de clave a [**la función NCryptVerifySignature**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptverifysignature) o [**BCryptVerifySignature.**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptverifysignature) Estas funciones realizan la comprobación mediante el uso de la clave pública para descifrar la firma y comparar el hash descifrado con el hash calculado en el paso 2. La **función BCryptVerifySignature** devolverá **STATUS \_ SUCCESS** si la firma coincide con el hash o **STATUS INVALID \_ \_ SIGNATURE** si la firma no coincide con el hash. La **función NCryptVerifySignature** devolverá **STATUS \_ SUCCESS** si la firma coincide con el hash o **NTE BAD \_ \_ SIGNATURE** si la firma no coincide con el hash.
 
 ## <a name="signing-and-verifying-data-example"></a>Ejemplo de firma y comprobación de datos
 

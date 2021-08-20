@@ -3,9 +3,9 @@ title: Método IWMDRMLicense GetNext (Wmdrmsdk.h)
 description: El método GetNext carga la información sobre el siguiente elemento de la lista.
 ms.assetid: 5ef91751-2883-4a8e-9908-7a6dfe6d2af3
 keywords:
-- Formato multimedia de Windows del método GetNext
+- Método GetNext windows Media Format
 - Método GetNext windows Media Format , interfaz IWMDRMLicense
-- IWMDRMLicense interfaz windows Media Format , GetNext (método)
+- IWMDRMLicense interface windows Media Format , GetNext method
 topic_type:
 - apiref
 api_name:
@@ -49,7 +49,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 | Código devuelto                                                                                                | Descripción                                              |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**NS \_ E \_ DRM \_ RIV DEMASIADO \_ \_ PEQUEÑO**</dt> </dl> | Se necesita una lista de revocación de contenido actualizada.<br/> |
+| <dl> <dt>**NS \_ E \_ DRM \_ RIV \_ TOO \_ SMALL**</dt> </dl> | Se necesita una lista de revocación de contenido actualizada.<br/> |
 | <dl> <dt>**ERROR \_ NO \_ MÁS \_ ELEMENTOS**</dt> </dl>      | En la lista no hay más elementos.<br/>          |
 | <dl> <dt>**S \_ OK**</dt> </dl>                       | El método se ha llevado a cabo de forma correcta.<br/>                         |
 
@@ -59,7 +59,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 ## <a name="remarks"></a>Comentarios
 
-Los métodos de la [**interfaz IWMDRMLicense**](iwmdrmlicense.md) proporcionan datos sobre una licencia única a la vez. El objeto subyacente contiene una lista de una o varias licencias. Al llamar a este método, la interfaz mueve sus referencias internas a la siguiente licencia de la lista.
+Los métodos de [**la interfaz IWMDRMLicense**](iwmdrmlicense.md) proporcionan datos sobre una licencia única a la vez. El objeto subyacente contiene una lista de una o varias licencias. Cuando se llama a este método, la interfaz mueve sus referencias internas a la siguiente licencia de la lista.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,11 +72,11 @@ Los métodos de la [**interfaz IWMDRMLicense**](iwmdrmlicense.md) proporcionan d
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Interfaz IWMDRMLicense**](iwmdrmlicense.md)
+[**IWMDRMLicense (Interfaz)**](iwmdrmlicense.md)
 </dt> </dl>
 
  

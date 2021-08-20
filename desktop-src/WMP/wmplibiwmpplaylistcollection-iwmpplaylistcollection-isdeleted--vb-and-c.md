@@ -5,7 +5,7 @@ ms.assetid: 02bc4b9f-6149-4fe2-8417-6484b22f2d74
 keywords:
 - Método isDeleted Reproductor de Windows Media
 - Método isDeleted Reproductor de Windows Media , interfaz IWMPPlaylistCollection
-- Interfaz IWMPPlaylistCollection Reproductor de Windows Media , método isDeleted
+- Interfaz IWMPPlaylistCollection Reproductor de Windows Media método , isDeleted
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118568482"
 ---
-# <a name="iwmpplaylistcollectionisdeleted-method"></a>IWMPPlaylistCollection::isDeleted (Método)
+# <a name="iwmpplaylistcollectionisdeleted-method"></a>IWMPPlaylistCollection::isDeleted (método)
 
 El **método isDeleted** devuelve un valor que indica si la lista de reproducción especificada está en la carpeta de elementos eliminados.
 
@@ -68,7 +68,7 @@ Interfaz **WMPLib.IWMPPlaylist** para la lista de reproducción consultada.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior.<br/>                                                                     |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -76,7 +76,7 @@ Interfaz **WMPLib.IWMPPlaylist** para la lista de reproducción consultada.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

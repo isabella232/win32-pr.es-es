@@ -46,7 +46,7 @@ POSITION AddBeforeI(
 *pos* 
 </dt> <dd>
 
-Posición delante de la que se va a agregar el elemento.
+Posición antes de la que se va a agregar el elemento.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Si *pos* es **NULL,** este método agrega el elemento al final de la lista (equi
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

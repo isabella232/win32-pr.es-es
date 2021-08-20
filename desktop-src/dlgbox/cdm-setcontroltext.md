@@ -3,7 +3,7 @@ title: CDM_SETCONTROLTEXT mensaje (Commdlg.h)
 description: Establece el texto del control especificado en un cuadro de diálogo Abrir o Guardar como de estilo explorador.
 ms.assetid: ff0e50b7-a14d-40d1-8576-f93a612f3aa3
 keywords:
-- CDM_SETCONTROLTEXT cuadros de diálogo de mensaje
+- CDM_SETCONTROLTEXT de diálogo de mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89c82a9144717224871caecf44da352a4e01cac2
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 75071d465d01be024a97047a134c080226f252a1bd1ffcd41dbecd4f0d469cff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110550130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117721331"
 ---
 # <a name="cdm_setcontroltext-message"></a>Mensaje \_ SETCONTROLTEXT de CDM
 
-\[A partir de Windows Vista, **los** cuadros de **diálogo** Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md). Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
+\[A partir Windows Vista, **los** cuadros de diálogo Abrir y Guardar como comunes se han reemplazado por el [cuadro de diálogo Elemento común](../shell/common-file-dialog.md).  Se recomienda usar Common Item Dialog API en lugar de estos cuadros de diálogo de la biblioteca común de cuadros de diálogo.\]
 
-Establece el texto del control especificado en  un cuadro de diálogo Abrir o **Guardar como** de estilo explorador. El cuadro de diálogo debe haber sido creado con la **marca OFN \_ EXPLORER;** de lo contrario, se produce un error en el mensaje.
+Establece el texto del control especificado en un cuadro de diálogo Abrir **o** **Guardar como** de estilo explorador. El cuadro de diálogo debe haber sido creado con la **marca OFN \_ EXPLORER;** de lo contrario, se produce un error en el mensaje.
 
 
 ```C++
@@ -78,7 +78,7 @@ void CommDlg_OpenSave_SetControlText(hwnd, wparam, lparam)
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

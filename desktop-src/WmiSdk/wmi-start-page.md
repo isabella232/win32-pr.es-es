@@ -1,5 +1,5 @@
 ---
-description: Windows Instrumental de administración (WMI) es la infraestructura para la administración de datos y operaciones en Windows sistemas operativos basados en administración.
+description: Windows Instrumental de administración (WMI) es la infraestructura para las operaciones y los datos de administración en Windows sistemas operativos basados en la administración.
 ms.assetid: 4804152f-2042-4c6a-83c6-75c5e1ab7a04
 ms.tgt_platform: multiple
 title: Instrumental de administración de Windows
@@ -16,10 +16,10 @@ ms.locfileid: "118553139"
 
 ## <a name="purpose"></a>Propósito
 
-Windows Instrumental de administración (WMI) es la infraestructura para la administración de datos y operaciones en Windows sistemas operativos basados en administración. Puede escribir scripts WMI o aplicaciones para automatizar tareas administrativas en equipos remotos, pero WMI también proporciona datos de administración a otras partes del sistema operativo y productos, por ejemplo, System Center Operations Manager, anteriormente Microsoft Operations Manager (MOM) o Windows Remote Management[(WinRM).](/windows/desktop/WinRM/portal)
+Windows Instrumental de administración (WMI) es la infraestructura para las operaciones y los datos de administración en Windows sistemas operativos basados en la administración. Puede escribir scripts WMI o aplicaciones para automatizar tareas administrativas en equipos remotos, pero WMI también proporciona datos de administración a otras partes del sistema operativo y productos, por ejemplo, System Center Operations Manager, anteriormente Microsoft Operations Manager (MOM) o Windows Remote Management[(WinRM).](/windows/desktop/WinRM/portal)
 
 > [!Note]  
-> La siguiente documentación está dirigida a desarrolladores y administradores de TI. Si es un usuario final que ha experimentado un mensaje de error relativo a WMI, debe ir [a Soporte técnico de Microsoft](https://support.microsoft.com/) y buscar el código de error que ve en el mensaje de error. Para obtener más información sobre cómo solucionar problemas con scripts WMI y el servicio WMI, vea [WMI isn't Working!](/previous-versions/tn-archive/ff406382(v=msdn.10))
+> La siguiente documentación está dirigida a desarrolladores y administradores de TI. Si es un usuario final que ha experimentado un mensaje de error relativo a WMI, debe ir a [Soporte técnico de Microsoft](https://support.microsoft.com/) y buscar el código de error que ve en el mensaje de error. Para obtener más información sobre cómo solucionar problemas con scripts WMI y el servicio WMI, vea [WMI isn't Working!](/previous-versions/tn-archive/ff406382(v=msdn.10))
 
  
 
@@ -32,7 +32,7 @@ Windows Instrumental de administración (WMI) es la infraestructura para la admi
 
 WMI se puede usar en todas las Windows basadas en aplicaciones y es más útil en aplicaciones empresariales y scripts administrativos.
 
-Los administradores del sistema pueden encontrar información sobre el uso de WMI en TechNet [ScriptCenter](https://www.microsoft.com/technet/scriptcenter/default.mspx)y en varios libros sobre WMI. Para obtener más información, [vea Información adicional.](further-information.md)
+Los administradores del sistema pueden encontrar información sobre el uso de WMI en TechNet [ScriptCenter](https://www.microsoft.com/technet/scriptcenter/default.mspx)y en varios libros sobre WMI. Para obtener más información, [vea Más información.](further-information.md)
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
@@ -40,7 +40,7 @@ WMI está diseñado para programadores que usan C/C++, la aplicación Microsoft 
 
 Para desarrollar aplicaciones o proveedores de código administrado en C# o Visual Basic .NET mediante el .NET Framework, vea [WMI en .NET Framework](/previous-versions/dotnet/netframework-1.1/aa720264(v=vs.71)).
 
-Muchos administradores y profesionales de TI acceden a WMI a través de PowerShell. El cmdlet Get-WMI para PowerShell permite recuperar información de un repositorio WMI local o remoto. Por lo tanto, una serie de temas y clases, especialmente en la [sección Creación de clientes WMI,](creating-wmi-clients.md) contienen ejemplos de PowerShell. Para obtener más información sobre el uso de PowerShell, [consulte Windows PowerShell](https://msdn.microsoft.com/library/dd835506.aspx) scripting [con Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx).
+Muchos administradores y profesionales de TI acceden a WMI a través de PowerShell. El cmdlet Get-WMI para PowerShell permite recuperar información de un repositorio WMI local o remoto. Por lo tanto, una serie de temas y clases, especialmente en la [sección Creación de clientes WMI,](creating-wmi-clients.md) contienen ejemplos de PowerShell. Para obtener información adicional sobre el uso de PowerShell, [vea Windows PowerShell](https://msdn.microsoft.com/library/dd835506.aspx) scripting [con Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx).
 
 ## <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 

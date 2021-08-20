@@ -1,7 +1,7 @@
 ---
 description: Representa un controlador de pantalla.
 ms.assetid: 14598ae6-58e2-46ca-8653-b57e5833a224
-title: CIM_DisplayController (clase)
+title: CIM_DisplayController clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,14 +23,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 59db37a89ce1f57e01a6a9a27fb9c24177221b00
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bbfd67f59ba46cb17f6022296c62de05d7c0f9e6bc334cb01e2e28a059e4b384
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812643"
 ---
-# <a name="cim_displaycontroller-class"></a>\_Clase DisplayController de CIM
+# <a name="cim_displaycontroller-class"></a>Cim \_ DisplayController (clase)
 
 Representa un controlador de pantalla.
 
@@ -55,29 +55,29 @@ class CIM_DisplayController : CIM_Controller
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ DisplayController** tiene estos tipos de miembros:
+La **clase \_ DisplayController de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ DisplayController** tiene estas propiedades.
+La **clase \_ DisplayController de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
 **AcceleratorCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DisplayController**.**CapabilityDescriptions**")
+Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DisplayController**.**CapabilityDescriptions**")
 </dt> </dl>
 
-Las capacidades de gráficos y 3D del controlador de pantalla.
+Gráficos y funcionalidades 3D del controlador de pantalla.
 
 <dt>
 
@@ -90,7 +90,7 @@ Las capacidades de gráficos y 3D del controlador de pantalla.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -104,42 +104,42 @@ Las capacidades de gráficos y 3D del controlador de pantalla.
 
 <span id="3D_Accelerator"></span><span id="3d_accelerator"></span><span id="3D_ACCELERATOR"></span>
 
-**acelerador 3D** (3)
+**Acelerador 3D** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="PCI_Fast_Write"></span><span id="pci_fast_write"></span><span id="PCI_FAST_WRITE"></span>
 
-**Escritura rápida de PCI** (4)
+**Pci Fast Write** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="MultiMonitor_Support"></span><span id="multimonitor_support"></span><span id="MULTIMONITOR_SUPPORT"></span>
 
-**Compatibilidad con multimonitor** (5)
+**Compatibilidad con MultiMonitor** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="PCI_Mastering"></span><span id="pci_mastering"></span><span id="PCI_MASTERING"></span>
 
-**Maestro de PCI** (6)
+**Pci Mastering** (6)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Second_Monochrome_Adapter_Support"></span><span id="second_monochrome_adapter_support"></span><span id="SECOND_MONOCHROME_ADAPTER_SUPPORT"></span>
 
-**Segunda compatibilidad con adaptador monocromo** (7)
+**Segunda compatibilidad con adaptadores monocromáticos** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Large_Memory_Address_Support"></span><span id="large_memory_address_support"></span><span id="LARGE_MEMORY_ADDRESS_SUPPORT"></span>
 
-**Compatibilidad con direcciones de memoria de gran tamaño** (8)
+**Compatibilidad con direcciones de memoria grandes** (8)
 
 
 </dt> <dd></dd> </dl>
@@ -149,16 +149,16 @@ Las capacidades de gráficos y 3D del controlador de pantalla.
 **CapabilityDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DisplayController**.**AcceleratorCapabilities**")
+Calificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DisplayController**.**AcceleratorCapabilities**")
 </dt> </dl>
 
-Explicaciones detalladas de las características de acelerador de vídeo de la matriz **AcceleratorCapabilities** . Los elementos de esta matriz se corresponden con los elementos de la matriz de **AcceleratorCapabilities**.
+Explicaciones detalladas de las características del acelerador de vídeo de **la matriz AcceleratorCapabilities.** Los elementos de esta matriz corresponden a los elementos de la matriz **en AcceleratorCapabilities**.
 
 </dd> <dt>
 
@@ -171,23 +171,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Vídeo DMTF \| 004,18 ")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Description"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Video \| 004.18")
 </dt> </dl>
 
-Una descripción de texto del objeto.
+Descripción de texto del objeto.
 
 </dd> <dt>
 
 **MaxMemorySupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes"), **punitivo** ("byte")
+Calificadores: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bytes"), **PUnit** ("byte")
 </dt> </dl>
 
 Cantidad máxima de memoria admitida, en bytes.
@@ -197,13 +197,13 @@ Cantidad máxima de memoria admitida, en bytes.
 **NumberOfVideoPages**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El número de páginas de vídeo admitidas dadas las resoluciones actuales y la memoria disponible.
+Número de páginas de vídeo admitidas dadas las resoluciones actuales y la memoria disponible.
 
 </dd> <dt>
 
@@ -216,10 +216,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DisplayController**.**Videoarquitectura**")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DisplayController**.**VideoArchitecture**")
 </dt> </dl>
 
-Una descripción del tipo de arquitectura de vídeo cuando la propiedad **videoarchitecture** contiene "1" (otro).
+Descripción del tipo de arquitectura de vídeo cuando la **propiedad VideoArchitecture** contiene "1" (Otros).
 
 </dd> <dt>
 
@@ -235,20 +235,20 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DisplayController**.**VideoMemoryType**")
 </dt> </dl>
 
-El tipo de memoria de vídeo cuando la propiedad **VideoMemoryType** es "1" (otra).
+Tipo de memoria de vídeo cuando la **propiedad VideoMemoryType** es "1" (Otros).
 
 </dd> <dt>
 
-**Videoarquitectura**
+**VideoArchitecture**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La arquitectura de vídeo controladores de pantalla utilizada para generar la señal de vídeo. Normalmente, un procesador de vídeo dedicado genera la señal de vídeo de acuerdo con la arquitectura especificada. La arquitectura indica la capacidad máxima de resolución del controlador de pantalla.
+Arquitectura de vídeo de los controladores de pantalla que se usa para generar la señal de vídeo. Normalmente, un procesador de vídeo dedicado genera la señal de vídeo de acuerdo con la arquitectura especificada. La arquitectura indica la capacidad de resolución máxima del controlador de pantalla.
 
 <dt>
 
@@ -261,7 +261,7 @@ La arquitectura de vídeo controladores de pantalla utilizada para generar la se
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -331,7 +331,7 @@ La arquitectura de vídeo controladores de pantalla utilizada para generar la se
 
 <span id="Linear_Frame_Buffer"></span><span id="linear_frame_buffer"></span><span id="LINEAR_FRAME_BUFFER"></span>
 
-**Búfer de trama lineal** (11)
+**Búfer de marco lineal** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -352,7 +352,7 @@ La arquitectura de vídeo controladores de pantalla utilizada para generar la se
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (0x8000...)
+**Reservado por** el proveedor (0x8000)..
 
 
 </dt> <dd></dd> </dl>
@@ -362,16 +362,16 @@ La arquitectura de vídeo controladores de pantalla utilizada para generar la se
 **VideoMemoryType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Vídeo DMTF \| 004,6 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DisplayController**.**OtherVideoMemoryType**")
+Calificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Video \| 004.6"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ DisplayController**.**OtherVideoMemoryType**")
 </dt> </dl>
 
-El tipo de memoria de vídeo.
+Tipo de memoria de vídeo.
 
 <dt>
 
@@ -384,7 +384,7 @@ El tipo de memoria de vídeo.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -419,7 +419,7 @@ El tipo de memoria de vídeo.
 
 <span id="EDO_RAM"></span><span id="edo_ram"></span>
 
-**Edo RAM** (6)
+**EDO RAM** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -468,7 +468,7 @@ El tipo de memoria de vídeo.
 
 </dd> <dt>
 
-**Videoprocesador**
+**VideoProcessor**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -477,7 +477,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una descripción de texto del controlador/procesador de vídeo.
+Descripción de texto del procesador o controlador de vídeo.
 
 </dd> </dl>
 
@@ -485,12 +485,12 @@ Una descripción de texto del controlador/procesador de vídeo.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -499,7 +499,7 @@ Una descripción de texto del controlador/procesador de vídeo.
 
 <dl> <dt>
 
-[**\_Controlador CIM**](cim-controller.md)
+[**Controlador \_ CIM**](cim-controller.md)
 </dt> </dl>
 
  

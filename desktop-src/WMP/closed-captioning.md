@@ -1,38 +1,38 @@
 ---
-title: Subtítulos (CC)
-description: Subtítulos (CC)
+title: Subtítulos
+description: Subtítulos
 ms.assetid: a5d4d591-4b4d-49c5-b7da-01d7ee303ffd
 keywords:
-- Windows Media Player, intercambio de multimedia accesible sincronizado (SAMI)
-- Modelo de objetos de Windows Media Player, intercambio de contenido multimedia accesible sincronizado (SAMI)
-- modelo de objetos, intercambio de multimedia accesible sincronizado (SAMI)
-- Windows Media Player Mobile, intercambio de multimedia accesible sincronizado (SAMI)
-- Control ActiveX de Windows Media Player, intercambio de multimedia accesible sincronizado (SAMI)
-- Control ActiveX móvil de Windows Media Player, intercambio de contenido multimedia accesible sincronizado (SAMI)
-- Control ActiveX, intercambio de multimedia accesible sincronizado (SAMI)
-- Windows Media Player, migrar subtítulos (CC)
-- Modelo de objetos de Windows Media Player, subtítulos (CC) Smigrating
-- modelo de objetos, migrar subtítulos
-- Windows Media Player Mobile, migrar subtítulos (CC)
-- Control ActiveX de Windows Media Player, migrar subtítulos (CC)
-- Control ActiveX móvil de Windows Media Player, migración de subtítulos cerrados
-- Control ActiveX, migrar subtítulos (CC)
-- Intercambio de multimedia accesible sincronizado (SAMI), migración de subtítulos cerrados
-- SAMI (intercambio de multimedia accesible sincronizado), migración de subtítulos cerrados
-- Guía de migración, intercambio de multimedia accesible sincronizado (SAMI)
-- Guía de migración, subtítulos (CC)
+- Reproductor de Windows Media,Synchronized Accessible Media Interchange (SAMI)
+- Reproductor de Windows Media de objetos, Intercambio de medios accesibles sincronizado (SAMI)
+- object model,Synchronized Accessible Media Interchange (SAMI)
+- Reproductor de Windows Media Intercambio multimedia accesible móvil y sincronizado (SAMI)
+- Reproductor de Windows Media ActiveX control, Intercambio de medios accesibles sincronizado (SAMI)
+- Reproductor de Windows Media Control ActiveX dispositivos móviles, intercambio multimedia accesible sincronizado (SAMI)
+- ActiveX control, Intercambio de medios accesibles sincronizado (SAMI)
+- Reproductor de Windows Media, migrar subtítulos
+- Reproductor de Windows Media de objetos, subtítulos de extensión
+- modelo de objetos, migración de subtítulos
+- Reproductor de Windows Media Móvil, migración de subtítulos
+- Reproductor de Windows Media ActiveX control, migrar subtítulos
+- Reproductor de Windows Media Control de ActiveX móvil, migración de subtítulos
+- ActiveX control, migración de subtítulos
+- Intercambio multimedia accesible sincronizado (SAMI), migración de subtítulos
+- SAMI (intercambio multimedia accesible sincronizado), migración de subtítulos
+- guía de migración, Intercambio multimedia accesible sincronizado (SAMI)
+- guía de migración, subtítulos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04cc3dfdeff7a9893b617e99cd3f0b8fb5c62f4f
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: 7aa83cb5fb6735475a883986673c958db9642386bd8ce2c76151ddd6c2f23ab2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104149106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118119607"
 ---
-# <a name="closed-captioning"></a>Subtítulos (CC)
+# <a name="closed-captioning"></a>Subtítulos
 
-El control ActiveX de Windows Media Player 6,4 incluye un panel de presentación de un título cerrado integrado que, cuando se hace visible, habilita los subtítulos (SAMI) de intercambio de medios accesibles sincronizados y muestra el texto de la leyenda cerrada. El control Windows Media Player 7 o posterior habilita la presentación de la leyenda cerrada de SAMI mediante un **<DIV>** elemento HTML. Por ejemplo:
+El control Reproductor de Windows Media 6.4 ActiveX incluye un panel de visualización de subtítulos integrado que, cuando se hace visible, habilita los subtítulos synchronized Accessible Media Interchange (SAMI) y muestra el texto del título cerrado. El Reproductor de Windows Media control 7 o posterior habilita la presentación de subtítulos SAMI mediante un elemento **<DIV>** HTML. Por ejemplo:
 
 
 ```C++
@@ -42,9 +42,9 @@ El control ActiveX de Windows Media Player 6,4 incluye un panel de presentación
 
 
 
-Esta técnica proporciona una flexibilidad completa, ya que puede diseñar su página web para mostrar los subtítulos (CC) de una manera personalizada. ya no es necesario que la presentación de subtítulos cerrados esté en una ubicación fija adyacente a la interfaz de usuario de Windows Media Player.
+Esta técnica le proporciona una flexibilidad completa, ya que puede diseñar la página web para mostrar subtítulos de una manera personalizada. Ya no es necesario que la presentación del título cerrado esté en una ubicación fija adyacente a la Reproductor de Windows Media interfaz de usuario.
 
-Una vez que haya creado un área para mostrar los subtítulos cerrados, use *ClosedCaption*. propiedad **captioningID** para especificar la ubicación donde Windows Media Player representa el texto de la leyenda cerrada.
+Una vez que haya creado un área para mostrar subtítulos, use *ClosedCaption*. **propiedad captioningID** para especificar la ubicación donde Reproductor de Windows Media representa el texto del título cerrado.
 
 
 ```C++
@@ -54,24 +54,24 @@ Player.closedCaption.captioningID = "CCDiv";
 
 
 
-El kit de desarrollo de software (SDK) de Windows Media Player contiene un ejemplo funcional de un reproductor incrustado que muestra el texto de la leyenda cerrada. Para obtener los ejemplos del SDK, descargue e instale el SDK de Windows Media Player completo en el sitio web de Microsoft. Para obtener más información acerca de los subtítulos y SAMI, vea el [sitio web de accesibilidad de Microsoft](https://www.microsoft.com/enable/).
+El Reproductor de Windows Media Software Development Kit (SDK) contiene un ejemplo de trabajo de un reproductor insertado que muestra texto de subtítulo. Para obtener los ejemplos del SDK, descargue e instale el SDK Reproductor de Windows Media completo desde el sitio web de Microsoft. Para obtener más información sobre los subtítulos y SAMI, consulte el sitio [web de accesibilidad de Microsoft](https://www.microsoft.com/enable/).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Agregar subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
+[**Adición de subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
-[**Objeto ClosedCaption**](closedcaption-object.md)
+[**ClosedCaption (objeto)**](closedcaption-object.md)
 </dt> <dt>
 
 [**Guía de migración del modelo de objetos**](object-model-migration-guide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

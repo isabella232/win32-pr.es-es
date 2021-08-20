@@ -46,7 +46,7 @@ HRESULT SetNoProgressTimeout(
 *RetryPeriod* \[ En\]
 </dt> <dd>
 
-Período de tiempo, en segundos, que do intenta transferir el archivo después de que no se haya realizado ningún progreso. El período de reintento predeterminado para el trabajo de prioridad alta es de 3600 segundos (1 hora) y para el trabajo de prioridad baja es de 86400 segundos (24 horas).
+Tiempo, en segundos, que do intenta transferir el archivo una vez que no se ha realizado ningún progreso. El período de reintento predeterminado para el trabajo de prioridad alta es de 3600 segundos (1 hora) y para el trabajo de prioridad baja es de 86 400 segundos (24 horas).
 
 </dd> </dl>
 
@@ -59,13 +59,13 @@ Este método devuelve los siguientes **valores HRESULT,** así como otros.
 | Código devuelto                                                                                          | Descripción                                                                                          |
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | <dl> <dt>S_OK**</dt> </dl>             | Período de reintento establecido correctamente.<br/>                                                            |
-| <dl> <dt>**DO_E_INVALID_STATE**</dt> </dl> | El estado del trabajo no se puede BG_JOB_STATE_CANCELLED o BG_JOB_STATE_ACKNOWLEDGED.<br/> |
+| <dl> <dt>**DO_E_INVALID_STATE**</dt> </dl> | El estado del trabajo no se puede BG_JOB_STATE_CANCELLED ni BG_JOB_STATE_ACKNOWLEDGED.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Si DO no progresa durante el período de reintento, mueve el estado del trabajo de BG_JOB_STATE_TRANSIENT_ERROR a BG_JOB_STATE_ERROR. Si solicita una notificación de error, DO llama a la [**devolución de llamada JobError.**](https://www.bing.com/search?q=**JobError**)
 
@@ -73,7 +73,7 @@ Si DO no progresa durante el período de reintento, mueve el estado del trabajo 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
@@ -85,7 +85,7 @@ Si DO no progresa durante el período de reintento, mueve el estado del trabajo 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

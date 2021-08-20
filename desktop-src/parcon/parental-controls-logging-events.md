@@ -13,19 +13,19 @@ ms.locfileid: "117869270"
 ---
 # <a name="parental-controls-logging-events"></a>Eventos de registro de controles parentales
 
-El sistema de controles parentales predefine varios tipos de eventos de actividad y proporciona una definición de evento personalizada, como se especifica en Wpcevent.h.
+El sistema Parental Controls predefine varios tipos de eventos de actividad y proporciona una definición de evento personalizada, como se especifica en Wpcevent.h.
 
--   [Evento PERSONALIZADO \_ DE WPCEVENT](wpcevent-custom-event.md)
+-   [Evento PERSONALIZADO \_ de WPCEVENT](wpcevent-custom-event.md)
 -   [Evento WPCEVENT \_ EMAIL \_ CONTACT](wpcevent-email-contact-event.md)
 -   [Evento WPCEVENT \_ EMAIL \_ RECEIVED](wpcevent-email-received-event.md)
 -   [Evento WPCEVENT \_ EMAIL \_ SENT](wpcevent-email-sent-event.md)
 -   [Evento GAME \_ START de WPCEVENT \_](wpcevent-game-start-event.md)
--   [Evento WPCEVENT \_ IM \_ CONTACT](wpcevent-im-contact-event.md)
+-   [Evento DE \_ CONTACTO DE MENSAJERÍA DE WPCEVENT \_](wpcevent-im-contact-event.md)
 -   [Evento WPCEVENT \_ IM \_ FEATURE](wpcevent-im-feature-event.md)
 -   [Evento DE INVITACIÓN \_ DE MENSAJERÍA DE WPCEVENT \_](wpcevent-im-invitation-event.md)
--   [Evento WPCEVENT \_ IM \_ JOIN](wpcevent-im-join-event.md)
--   [Evento WPCEVENT \_ IM \_ LEAVE](wpcevent-im-leave-event.md)
--   [Evento WPCEVENT \_ MEDIA \_ PLAYBACK](wpcevent-media-playback-event.md)
+-   [Evento IM \_ JOIN de WPCEVENT \_](wpcevent-im-join-event.md)
+-   [Evento IM \_ LEAVE de WPCEVENT \_](wpcevent-im-leave-event.md)
+-   [Evento DE REPRODUCCIÓN MULTIMEDIA DE WPCEVENT \_ \_](wpcevent-media-playback-event.md)
 -   [WPCEVENT \_ SYS \_ SETTINGSCHANGE Event](/windows/desktop/parcon/wpcevent-sys-settingchange-event)
 -   [Evento WPCEVENT \_ SYSTEM \_ APPBLOCKED](wpcevent-system-appblocked-event.md)
 -   [Evento WPCEVENT \_ WEB \_ FILEDOWNLOAD](wpcevent-web-filedownload-event.md)

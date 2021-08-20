@@ -15,10 +15,10 @@ ms.locfileid: "118629758"
 
 Las acciones personalizadas se invocan de la misma manera que las acciones estándar, ya sea mediante invocación explícita o durante la ejecución de una tabla de secuencia. Hay dos métodos para llamar a acciones:
 
--   La acción especificada se llama directamente con la [**función MsiDoAction.**](/windows/desktop/api/Msiquery/nf-msiquery-msidoactiona)
--   Una acción de nivel superior llama a la tabla de secuencia que contiene la acción personalizada. Para obtener más información sobre cómo programar una acción personalizada en una tabla de secuencias, vea [Secuenciación de acciones personalizadas.](sequencing-custom-actions.md)
+-   Llame a la acción especificada directamente con la [**función MsiDoAction.**](/windows/desktop/api/Msiquery/nf-msiquery-msidoactiona)
+-   Una acción de nivel superior llama a la tabla de secuencia que contiene la acción personalizada. Para obtener más información sobre cómo programar una acción personalizada en una tabla de secuencias, vea [Secuenciar acciones personalizadas.](sequencing-custom-actions.md)
 
-Cuando el instalador obtiene un nombre de acción de la función [**MsiDoAction**](/windows/desktop/api/Msiquery/nf-msiquery-msidoactiona) o de una tabla de secuencia, primero busca una acción estándar de ese nombre. Si no encuentra la acción estándar, el instalador consulta la tabla [CustomAction](customaction-table.md) para comprobar si la acción especificada es una acción personalizada. Si la acción especificada no es una acción personalizada, el instalador consulta un cuadro de diálogo en la tabla [dialog.](dialog-table.md)
+Cuando el instalador obtiene un nombre de acción de la función [**MsiDoAction**](/windows/desktop/api/Msiquery/nf-msiquery-msidoactiona) o de una tabla de secuencia, primero busca una acción estándar de ese nombre. Si no encuentra la acción estándar, el instalador consulta la tabla [CustomAction](customaction-table.md) para comprobar si la acción especificada es una acción personalizada. Si la acción especificada no es una acción personalizada, el instalador consulta un cuadro de diálogo en la [tabla Dialog.](dialog-table.md)
 
  
 

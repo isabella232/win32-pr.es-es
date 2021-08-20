@@ -1,34 +1,34 @@
 ---
-description: Puede usar un mapa de bits para capturar una imagen, y puede almacenar la imagen capturada en memoria, mostrarla en una ubicación diferente en la ventana de la aplicación o mostrarla en otra ventana.
+description: Puede usar un mapa de bits para capturar una imagen y puede almacenarla en memoria, mostrarla en una ubicación diferente en la ventana de la aplicación o mostrarla en otra ventana.
 ms.assetid: 672fc2e4-c35c-4d5d-98fa-85f2ad56d9b0
 title: Captura de una imagen
 ms.topic: article
 ms.date: 12/03/2020
 ms.custom: contperf-fy21q2
-ms.openlocfilehash: b6029ec18a39ea034ca22e4c3d6c2d1e659635cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7516c125bd2f6953dcd91bbefee19d9ebe68c3fbbaf6ad2c029abb41d7b01542
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117888118"
 ---
 # <a name="capturing-an-image"></a>Captura de una imagen
 
-Puede usar un mapa de bits para capturar una imagen, y puede almacenar la imagen capturada en memoria, mostrarla en una ubicación diferente en la ventana de la aplicación o mostrarla en otra ventana.
+Puede usar un mapa de bits para capturar una imagen y puede almacenarla en memoria, mostrarla en una ubicación diferente en la ventana de la aplicación o mostrarla en otra ventana.
 
-En algunos casos, puede que desee que la aplicación Capture imágenes y las almacene solo de forma temporal. Por ejemplo, al escalar o ampliar una imagen creada en una aplicación de dibujo, la aplicación debe guardar temporalmente la vista normal de la imagen y mostrar la vista ampliada. Más adelante, cuando el usuario selecciona la vista normal, la aplicación debe reemplazar la imagen ampliada con una copia de la vista normal que se guardó temporalmente.
+En algunos casos, es posible que quiera que la aplicación capture imágenes y las almacene solo temporalmente. Por ejemplo, al escalar o acercar una imagen creada en una aplicación de dibujo, la aplicación debe guardar temporalmente la vista normal de la imagen y mostrar la vista ampliada. Más adelante, cuando el usuario selecciona la vista normal, la aplicación debe reemplazar la imagen ampliada por una copia de la vista normal que guardó temporalmente.
 
-Para almacenar una imagen de forma temporal, la aplicación debe llamar a [**CreateCompatibleDC**](/windows/desktop/api/Wingdi/nf-wingdi-createcompatibledc) para crear un controlador de dominio que sea compatible con el controlador de dominio de la ventana actual. Después de crear un controlador de dominio compatible, cree un mapa de bits con las dimensiones adecuadas llamando a la función [**CreateCompatibleBitmap**](/windows/desktop/api/Wingdi/nf-wingdi-createcompatiblebitmap) y, a continuación, selecciónelo en este contexto de dispositivo mediante una llamada a la función [**SelectObject**](/windows/desktop/api/Wingdi/nf-wingdi-selectobject) .
+Para almacenar una imagen temporalmente, la aplicación debe llamar a [**CreateCompatibleDC para**](/windows/desktop/api/Wingdi/nf-wingdi-createcompatibledc) crear un controlador de dominio que sea compatible con el controlador de dominio de la ventana actual. Después de crear un controlador de dominio compatible, cree un mapa de bits con las dimensiones adecuadas mediante una llamada a la función [**CreateCompatibleBitmap**](/windows/desktop/api/Wingdi/nf-wingdi-createcompatiblebitmap) y, a continuación, selecciónelo en este contexto de dispositivo mediante una llamada a la [**función SelectObject.**](/windows/desktop/api/Wingdi/nf-wingdi-selectobject)
 
-Una vez creado el contexto de dispositivo compatible y seleccionado el mapa de bits adecuado, puede capturar la imagen. La función [**bitblt**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt) captura imágenes. Esta función realiza una transferencia de bloque de bits, es decir, copia los datos de un mapa de bits de origen en un mapa de bits de destino. Sin embargo, los dos argumentos de esta función no son identificadores de mapa de bits. En su lugar, **bitblt** recibe identificadores que identifican dos contextos de dispositivo y copia los datos de mapa de bits de un mapa de bits seleccionado en el controlador de dominio de origen en un mapa de bits seleccionado en el controlador de dominio de destino. En este caso, el controlador de dominio de destino es el controlador de dominio compatible, por lo que cuando **bitblt** completa la transferencia, la imagen se almacena en memoria. Para volver a mostrar la imagen, llame a **bitblt** por segunda vez, especificando el controlador de dominio compatible como el controlador de dominio de origen y un controlador de dominio de Windows (o Printer) como el controlador de dominio de destino.
+Una vez creado el contexto de dispositivo compatible y seleccionado el mapa de bits adecuado en él, puede capturar la imagen. La [**función BitBlt**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt) captura imágenes. Esta función realiza una transferencia de bloque de bits, es decir, copia datos de un mapa de bits de origen en un mapa de bits de destino. Sin embargo, los dos argumentos de esta función no son identificadores de mapa de bits. En su lugar, **BitBlt** recibe identificadores que identifican dos contextos de dispositivo y copia los datos de mapa de bits de un mapa de bits seleccionado en el controlador de dominio de origen en un mapa de bits seleccionado en el controlador de dominio de destino. En este caso, el controlador de dominio de destino es el controlador de dominio compatible, por lo que cuando **BitBlt** completa la transferencia, la imagen se almacena en memoria. Para volver a mostrar la imagen, llame a **BitBlt** una segunda vez y especifique el controlador de dominio compatible como controlador de dominio de origen y un controlador de dominio de ventana (o impresora) como controlador de dominio de destino.
 
 ## <a name="code-example"></a>Ejemplo de código
 
-Esta sección contiene un ejemplo de código que captura una imagen de todo el escritorio, la escala hasta el tamaño de la ventana actual y, a continuación, la guarda en un archivo (y la muestra en el área cliente).
+Esta sección contiene un ejemplo de código que captura una imagen de todo el escritorio, la escala verticalmente hasta el tamaño de ventana actual y, a continuación, la guarda en un archivo (además de mostrarla en el área cliente).
 
-Para probar el ejemplo de código, empiece por crear un nuevo proyecto en Visual Studio basado en la plantilla de proyecto de **aplicación de escritorio de Windows** . Es importante asignar un nombre al nuevo proyecto `GDI_CapturingAnImage` para que se compile la siguiente lista de código (por ejemplo, incluye `GDI_CapturingAnImage.h` , que existirá en el nuevo proyecto si se le asigna el nombre sugerido).
+Para probar el ejemplo de código, empiece por crear un proyecto en Visual Studio basado en la plantilla de proyecto **Windows aplicación** de escritorio. Es importante nombrar el nuevo proyecto para que la lista de código siguiente se compile (por ejemplo, incluye , que existirá en el nuevo proyecto si lo llama como se `GDI_CapturingAnImage` `GDI_CapturingAnImage.h` sugiere).
 
-Abra el `GDI_CapturingAnImage.cpp` archivo de código fuente en el nuevo proyecto y reemplace su contenido por la siguiente lista. Después compílelo y ejecútelo. Cada vez que cambie el tamaño de la ventana, verá la captura de pantalla capturada en el área cliente.
+Abra el archivo de código fuente en el nuevo proyecto y `GDI_CapturingAnImage.cpp` reemplace su contenido por la lista siguiente. Después compílelo y ejecútelo. Cada vez que cambie el tamaño de la ventana, verá la captura de pantalla capturada en el área cliente.
 
 ```cpp
 // GDI_CapturingAnImage.cpp : Defines the entry point for the application.

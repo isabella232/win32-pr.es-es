@@ -1,19 +1,19 @@
 ---
-description: Lista de propiedades consideradas "no personales". El sistema dejará estas propiedades sin tocar cuando se le indique para quitar todas las propiedades no personales de un archivo determinado. Regístrese en el regvalue de &\# 0034;&no personal \# 0034;.
+description: Lista de propiedades que se consideran "no personales". El sistema dejará estas propiedades intactas cuando se le indique que quiten todas las propiedades no personales de un archivo determinado. Regístrese en el valor reg de &\# 0034; No personal&\# 0034;.
 ms.assetid: c1c8de78-8a40-4c6d-89fb-9bdd9247787b
-title: System. proplist. no personal
+title: System.PropList.NonPersonal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99eb456345b9711e4c150e5fa1051389268d05b2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58dcc36528d21627e26e3454424900302637c40b41a329d539f10cc1beb58e92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118465379"
 ---
-# <a name="systemproplistnonpersonal"></a>System. proplist. no personal
+# <a name="systemproplistnonpersonal"></a>System.PropList.NonPersonal
 
-Lista de propiedades consideradas "no personales". El sistema dejará estas propiedades sin tocar cuando se le indique para quitar todas las propiedades no personales de un archivo determinado. Regístrese en el regvalue de "no personal".
+Lista de propiedades que se consideran "no personales". El sistema dejará estas propiedades intactas cuando se le indique que quiten todas las propiedades no personales de un archivo determinado. Regístrese en el valor reg de "NonPersonal".
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

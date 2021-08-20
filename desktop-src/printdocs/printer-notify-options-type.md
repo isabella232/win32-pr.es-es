@@ -1,7 +1,7 @@
 ---
-description: La \_ \_ \_ estructura de tipo de opciones de notificación de impresora especifica el conjunto de campos de información de la impresora o del trabajo que va a supervisar un objeto de notificación de cambio de impresora. Una llamada a la función FindFirstPrinterChangeNotification especifica una \_ \_ estructura de opciones de notificación de impresora, que contiene una matriz de \_ estructuras de tipo opciones de notificación de impresora \_ \_ .
+description: La estructura PRINTER NOTIFY OPTIONS TYPE especifica el conjunto de campos de información de impresora o trabajo que va a supervisar un objeto de notificación de cambio \_ \_ de \_ impresora. Una llamada a la función FindFirstPrinterChangeNotification especifica una estructura PRINTER NOTIFY OPTIONS, que contiene una matriz de estructuras \_ \_ PRINTER NOTIFY OPTIONS \_ \_ \_ TYPE.
 ms.assetid: 1009f892-d3a8-4887-99b4-a35d1268eeb4
-title: Estructura de PRINTER_NOTIFY_OPTIONS_TYPE (winspool. h)
+title: PRINTER_NOTIFY_OPTIONS_TYPE estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 4a82d0bc0481533a65fc90d32a992c51116b4595
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b593a502a668345cdd0206b4f1363cf160074b6c9aa26696427b5b42a0fbdc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118056282"
 ---
-# <a name="printer_notify_options_type-structure"></a>\_Estructura de \_ tipo de opciones de notificación de impresora \_
+# <a name="printer_notify_options_type-structure"></a>PRINTER \_ NOTIFY \_ OPTIONS \_ (ESTRUCTURA DE TIPO)
 
-La estructura de tipo de opciones de notificación de impresora especifica el conjunto de campos de información de la impresora o del trabajo que va a supervisar un objeto de notificación de cambio de impresora. **\_ \_ \_**
+La **estructura PRINTER NOTIFY OPTIONS \_ \_ \_ TYPE** especifica el conjunto de campos de información de impresora o trabajo que va a supervisar un objeto de notificación de cambio de impresora.
 
-Una llamada a la función [**FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md) especifica una estructura de [**\_ \_ Opciones de notificación de impresora**](printer-notify-options.md) , que contiene una matriz de estructuras de **\_ \_ \_ tipo opciones de notificación de impresora** .
+Una llamada a [**la función FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md) especifica una estructura [**PRINTER NOTIFY \_ \_ OPTIONS,**](printer-notify-options.md) que contiene una matriz de estructuras **PRINTER NOTIFY OPTIONS \_ \_ \_ TYPE.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,14 +49,14 @@ typedef struct _PRINTER_NOTIFY_OPTIONS_TYPE {
 **Tipo**
 </dt> <dd>
 
-Tipo que se va a inspeccionar. Este miembro puede ser uno de los valores siguientes.
+Tipo que se va a observar. Este miembro puede ser uno de los siguientes valores.
 
 
 
 | Value                                                                                                                                                                                                                                      | Significado                                                                                                           |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| <span id="JOB_NOTIFY_TYPE"></span><span id="job_notify_type"></span><dl> <dt>**Trabajo \_ de NOTIFICAr \_ tipo**</dt> <dt>0x01</dt> </dl>             | Indica que los campos especificados en la matriz **pFields** son \_ constantes de campo de notificación de trabajo \_ \_ \* .<br/>     |
-| <span id="PRINTER_NOTIFY_TYPE"></span><span id="printer_notify_type"></span><dl> <dt>**Impresora \_ de NOTIFICAr el \_ tipo**</dt> <dt>0x00</dt> </dl> | Indica que los campos especificados en la matriz **pFields** son \_ constantes de campo de notificación de impresora \_ \_ \* .<br/> |
+| <span id="JOB_NOTIFY_TYPE"></span><span id="job_notify_type"></span><dl> <dt>**JOB \_ NOTIFICACIÓN \_ DE TIPO**</dt> <dt>0x01</dt> </dl>             | Indica que los campos especificados en la matriz **pFields** son constantes JOB \_ NOTIFY \_ \_ \* FIELD.<br/>     |
+| <span id="PRINTER_NOTIFY_TYPE"></span><span id="printer_notify_type"></span><dl> <dt>**IMPRESORA \_ NOTIFICACIÓN \_ DE TIPO**</dt> <dt>0x00</dt> </dl> | Indica que los campos especificados en la matriz **pFields** son constantes PRINTER \_ NOTIFY \_ \_ \* FIELD.<br/> |
 
 
 
@@ -88,14 +88,14 @@ Reservado.
 **Recuento**
 </dt> <dd>
 
-Número de elementos de la matriz **pFields** .
+Número de elementos de la matriz **pFields.**
 
 </dd> <dt>
 
 **pFields**
 </dt> <dd>
 
-Puntero a una matriz de valores. Cada elemento de la matriz especifica un campo de información de trabajo o impresora de interés. Para obtener una lista de los campos de información de la impresora y el trabajo admitidos, consulte la estructura de [**\_ \_ \_ datos de notificación**](printer-notify-info-data.md) de la impresora.
+Puntero a una matriz de valores. Cada elemento de la matriz especifica un campo de información de trabajo o impresora de interés. Para obtener una lista de los campos de información de impresoras y trabajos admitidos, vea la [**estructura PRINTER NOTIFY INFO \_ \_ \_ DATA.**](printer-notify-info-data.md)
 
 </dd> </dl>
 
@@ -107,7 +107,7 @@ Puntero a una matriz de valores. Cada elemento de la matriz especifica un campo 
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -118,16 +118,16 @@ Puntero a una matriz de valores. Cada elemento de la matriz especifica un campo 
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de API de Spooler de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md)
 </dt> <dt>
 
-[**\_datos de \_ información de notificación de impresora \_**](printer-notify-info-data.md)
+[**DATOS DE \_ INFORMACIÓN DE NOTIFICACIÓN DE \_ \_ IMPRESORA**](printer-notify-info-data.md)
 </dt> <dt>
 
-[**\_Opciones de notificación de impresora \_**](printer-notify-options.md)
+[**OPCIONES DE \_ NOTIFICACIÓN DE \_ IMPRESORA**](printer-notify-options.md)
 </dt> </dl>
 
  
