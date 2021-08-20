@@ -1,19 +1,19 @@
 ---
-description: Los siguientes ejemplos de C# y Visual Basic Scripting Edition (VBScript) recuperan el nombre DNS de la máquina virtual.
+description: Los siguientes ejemplos de C# Visual Basic Scripting Edition (VBScript) recuperan el nombre DNS de la máquina virtual.
 ms.assetid: 1E1F7E6F-5CF6-475F-8351-6A5F56B4FC8E
 title: Obtención del nombre DNS de una máquina virtual
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31e00690a923cffc29f62224f4699aed223a538a
-ms.sourcegitcommit: 6e373b8ea3dcf84a38005acf54b57fdc87de8d50
+ms.openlocfilehash: 7bc9e9fc3d03eee85867b6014bcc8e4bfb0aa22543e691510b3b4fb9e360d28c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "103913917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117995187"
 ---
 # <a name="getting-the-virtual-machine-dns-name"></a>Obtención del nombre DNS de una máquina virtual
 
-Los siguientes ejemplos de C# y Visual Basic Scripting Edition (VBScript) recuperan el nombre DNS de la máquina virtual.
+Los siguientes ejemplos de C# Visual Basic Scripting Edition (VBScript) recuperan el nombre DNS de la máquina virtual.
 
 Para ejecutar este código de ejemplo, debe instalar los servicios de integración de cliente y el sistema operativo cliente debe estar en ejecución.
 
@@ -274,6 +274,6 @@ End Function
 
 [Utilidades comunes para los ejemplos de virtualización (V2)](common-utilities-for-the-virtualization-samples-v2.md)
 
-[**MSVM \_ ComputerSystem**](msvm-computersystem.md)
+[**Msvm \_ ComputerSystem**](msvm-computersystem.md)
 
-[**MSVM \_ KvpExchangeComponent**](msvm-kvpexchangecomponent.md)
+[**Msvm \_ KvpExchangeComponent**](msvm-kvpexchangecomponent.md)

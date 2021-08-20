@@ -35,7 +35,7 @@ Recupera las fechas mínimas y máximas permitidos establecidas para un control 
 *lParam* 
 </dt> <dd>
 
-Puntero a una matriz de dos elementos de [**estructuras SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) que recibirá la información del límite de fecha. El límite mínimo se establece en *lprgSysTimeArray* \[ 0 \] y *lprgSysTimeArray* \[ 1 recibe el límite \] máximo. Si cualquiera de los elementos se establece en todos los ceros, no se establece ningún límite correspondiente para el control de calendario mensual. Este parámetro debe ser una dirección válida y no puede ser **NULL.**
+Puntero a una matriz de dos elementos de [**estructuras SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) que recibirá la información del límite de fecha. El límite mínimo se establece *en lprgSysTimeArray* \[ 0 y \] *lprgSysTimeArray* \[ 1 recibe el límite \] máximo. Si cualquiera de los elementos se establece en todos los ceros, no se establece ningún límite correspondiente para el control de calendario mensual. Este parámetro debe ser una dirección válida y no puede ser **NULL.**
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Devuelve un **DWORD** que puede ser cero (no se establecen límites) o una combi
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

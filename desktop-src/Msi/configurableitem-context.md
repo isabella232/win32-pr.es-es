@@ -1,7 +1,7 @@
 ---
-description: La propiedad de contexto devuelve el valor de la columna de contexto de la tabla ModuleConfiguration.
+description: La propiedad Context devuelve el valor de la columna Context de la tabla ModuleConfiguration.
 ms.assetid: 27b94142-81cb-4ea7-aa73-c359cb50ce71
-title: Propiedad ConfigurableItem. Context (Mergemod. h)
+title: Propiedad ConfigurableItem.Context (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 5ff559bd1da335307a4362b6857ff127aadb81af
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b29c4839b8d722b1900dda004364b3e5c1537427925a14cee801d343e5a8986f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118144203"
 ---
-# <a name="configurableitemcontext-property"></a>ConfigurableItem. Context (propiedad)
+# <a name="configurableitemcontext-property"></a>ConfigurableItem.Context, propiedad
 
-La propiedad de **contexto** devuelve el valor de la columna de contexto de la [tabla ModuleConfiguration](moduleconfiguration-table.md).
+La **propiedad Context** devuelve el valor de la columna Context de la tabla [ModuleConfiguration](moduleconfiguration-table.md).
 
 Esta propiedad es de solo lectura.
 
@@ -40,16 +40,16 @@ propVal = ConfigurableItem.Context
 
 ## <a name="c"></a>C++
 
-Vea [**obtener \_**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_context) función de contexto
+Consulte [**la función get \_ Context.**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_context)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versión<br/> | Mergemod.dll 2,0 o posterior<br/>                                                    |
-| Encabezado<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versión<br/> | Mergemod.dll 2.0 o posterior<br/>                                                    |
+| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

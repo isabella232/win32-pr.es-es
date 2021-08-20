@@ -3,9 +3,9 @@ title: Método WebViewFolderContents.SelectedItems (Shldisp.h)
 description: 'Método WebViewFolderContents.SelectedItems: obtiene un objeto FolderItems que representa todos los elementos seleccionados en la vista.'
 ms.assetid: 683acac4-f157-4a75-a3f8-c693887c1ea5
 keywords:
-- Características heredadas del entorno de Windows del método SelectedItems
-- SelectedItems method Legacy Windows Environment Features , WebViewFolderContents (Objeto WebViewFolderContents)
-- WebViewFolderContents object Legacy Windows Environment Features , SelectedItems method
+- SelectedItems method Legacy Windows Environment Features
+- Método SelectedItems Heredado Windows environment Features , Objeto WebViewFolderContents
+- Objeto WebViewFolderContents Heredado Windows environment Features , SelectedItems (Método SelectedItems)
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25a242991f6f9472610dffa20593f9cab5d8c310
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5f32d2a9e2c99760e63664563f79e7a09d2f101ee14c181e7b2984fa351aae16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118066790"
 ---
 # <a name="webviewfoldercontentsselecteditems-method"></a>Método WebViewFolderContents.SelectedItems
 
@@ -88,7 +88,7 @@ En el ejemplo siguiente se muestra el uso adecuado de este método para JScript 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

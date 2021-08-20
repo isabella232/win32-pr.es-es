@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117830389"
 ---
-# <a name="lvn_itemchanged-notification-code"></a>Código de notificación ITEMCHANGED de LVN \_
+# <a name="lvn_itemchanged-notification-code"></a>Código de notificación \_ LVN ITEMCHANGED
 
 Notifica a la ventana primaria de un control de vista de lista que un elemento ha cambiado. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 

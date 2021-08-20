@@ -1,19 +1,19 @@
 ---
-description: La notificación de RENAMEERROR de SPFILENOTIFY \_ se envía a la rutina de devolución de llamada si se produce un error durante una operación de cambio de nombre de archivo.
+description: La notificación SPFILENOTIFY RENAMEERROR se envía a la rutina de devolución de llamada si se produce un error durante una operación de cambio \_ de nombre de archivo.
 ms.assetid: b7016cbe-2987-477f-958b-52b7a31c54c2
-title: Mensaje de SPFILENOTIFY_RENAMEERROR (setupapi. h)
+title: SPFILENOTIFY_RENAMEERROR mensaje (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79a45658153980d7cfd5cb99b76fb344fcdb4bd8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 500fb05328c50ab953c0a5b9477e00ebb9abdf2856621f014382169b4a4d9042
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117964375"
 ---
-# <a name="spfilenotify_renameerror-message"></a>SPFILENOTIFY \_ RENAMEERROR
+# <a name="spfilenotify_renameerror-message"></a>Mensaje SPFILENOTIFY \_ RENAMEERROR
 
-La notificación de **\_ RENAMEERROR de SPFILENOTIFY** se envía a la rutina de devolución de llamada si se produce un error durante una operación de cambio de nombre de archivo.
+La **notificación SPFILENOTIFY \_ RENAMEERROR** se envía a la rutina de devolución de llamada si se produce un error durante una operación de cambio de nombre de archivo.
 
 
 ```C++
@@ -29,10 +29,10 @@ SPFILENOTIFY_RENAMEERROR
 
 <dl> <dt>
 
-*Parámetro1* 
+*Param1* 
 </dt> <dd>
 
-Puntero a una estructura [**FILEPATHS**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a) . El miembro **Win32Error** de la estructura **FILEPATHS** especifica el error que se produjo durante la operación de cambio de nombre.
+Puntero a una [**estructura FILEPATHS.**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a) El **miembro Win32Error** de la **estructura FILEPATHS** especifica el error que se produjo durante la operación de cambio de nombre.
 
 </dd> <dt>
 
@@ -45,15 +45,15 @@ Sin usar.
 
 ## <a name="return-value"></a>Valor devuelto
 
-La rutina de devolución de llamada debe devolver uno de los siguientes.
+La rutina de devolución de llamada debe devolver una de las siguientes opciones.
 
 
 
 | Código devuelto                                                                                  | Descripción                                                                                                                                                                                                                                                       |
 |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**FILEOP \_ reintentar**</dt> </dl> | El usuario decidió volver a intentar la operación de cambio de nombre.<br/>                                                                                                                                                                                                  |
-| <dl> <dt>**FILEOP \_ SKIP**</dt> </dl>  | El usuario decidió omitir la operación de cambio de nombre de archivo.<br/>                                                                                                                                                                                                      |
-| <dl> <dt>**\_anulación de FILEOP**</dt> </dl> | Detenga la confirmación de la cola. [**SetupCommitFileQueue**](/windows/desktop/api/Setupapi/nf-setupapi-setupcommitfilequeuea) devuelve **false**. [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) devuelve información de error extendida, como error \_ cancelado (si el usuario canceló) o error \_ no \_ hay suficiente \_ memoria.<br/> |
+| <dl> <dt>**REINTENTO \_ DE FILEOP**</dt> </dl> | El usuario eligió intentar de nuevo la operación de cambio de nombre.<br/>                                                                                                                                                                                                  |
+| <dl> <dt>**FILEOP \_ SKIP**</dt> </dl>  | El usuario eligió omitir la operación de cambio de nombre de archivo.<br/>                                                                                                                                                                                                      |
+| <dl> <dt>**FILEOP \_ ABORT**</dt> </dl> | Detenga la confirmación de la cola. [**SetupCommitFileQueue devuelve**](/windows/desktop/api/Setupapi/nf-setupapi-setupcommitfilequeuea) **FALSE.** [**GetLastError devuelve**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) información de error extendida, como ERROR CANCELLED (si el usuario \_ canceló) o ERROR \_ NOT ENOUGH \_ \_ MEMORY.<br/> |
 
 
 
@@ -63,11 +63,11 @@ La rutina de devolución de llamada debe devolver uno de los siguientes.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 

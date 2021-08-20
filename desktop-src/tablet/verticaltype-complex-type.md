@@ -1,7 +1,7 @@
 ---
-description: Define el tipo que contiene los detalles sobre las líneas verticales usadas en el diseño de fondo de una nota de Journal.
+description: Define el tipo que contiene detalles sobre las líneas verticales usadas en la papelería de una nota de diario.
 ms.assetid: 8bf4cefe-5a15-46a2-abd7-ee9a7cab642e
-title: Tipo complejo de VerticalType
+title: Tipo complejo VerticalType
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 7395533a76458202285030a609c2b0c45ed5b8a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f1963bbc98c2ca3fae2be2c81c289da21c5cc244dcdc8819bfc29275a2113219
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118041728"
 ---
-# <a name="verticaltype-complex-type"></a>Tipo complejo de VerticalType
+# <a name="verticaltype-complex-type"></a>Tipo complejo VerticalType
 
-Define el tipo que contiene los detalles sobre las líneas verticales usadas en el diseño de fondo de una nota de Journal.
+Define el tipo que contiene detalles sobre las líneas verticales usadas en la papelería de una nota de diario.
 
 ``` syntax
 <xs:complexType name="VerticalType" />
@@ -31,9 +31,9 @@ Define el tipo que contiene los detalles sobre las líneas verticales usadas en 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 

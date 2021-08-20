@@ -1,7 +1,7 @@
 ---
-description: Devuelve una cadena que contiene el identificador de Plug and Play del dispositivo de tableta gráfica.
+description: Devuelve una cadena que contiene el Plug and Play del dispositivo de tableta.
 ms.assetid: a0b6619b-f80c-470b-aa3f-f0b30a9dbda8
-title: 'ITablet:: GetPlugAndPlayId (método)'
+title: ITablet::GetPlugAndPlayId (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 3fb6ce7d59cb29aac4b06b7245bc6246b0688a7b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2c7028e11a7a8ec6d1e6c79c461ce05f50dfe0b4b69108f0f1527b4fbd9ba3fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105720586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118041915"
 ---
-# <a name="itabletgetplugandplayid-method"></a>ITablet:: GetPlugAndPlayId (método)
+# <a name="itabletgetplugandplayid-method"></a>ITablet::GetPlugAndPlayId (método)
 
-Devuelve una cadena que contiene el identificador de Plug and Play del dispositivo de tableta gráfica.
+Devuelve una cadena que contiene el Plug and Play del dispositivo de tableta.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,10 +40,10 @@ HRESULT GetPlugAndPlayId(
 
 <dl> <dt>
 
-*ppwszPPId* \[ enuncia\]
+*ppwszPPId* \[ out\]
 </dt> <dd>
 
-Puntero a una cadena que contiene el identificador de Plug and Play del dispositivo de tableta gráfica.
+Puntero a una cadena que contiene el identificador Plug and Play para el dispositivo de tableta.
 
 </dd> </dl>
 
@@ -55,24 +55,24 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                            | Descripción                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Correcto.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/>                       |
 | <dl> <dt>**E \_ FAIL**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Es responsabilidad del llamador liberar la memoria devuelta desde este método mediante [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
+Es responsabilidad del autor de la llamada liberar la memoria devuelta de este método mediante [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -82,7 +82,7 @@ Es responsabilidad del llamador liberar la memoria devuelta desde este método m
 
 <dl> <dt>
 
-[**Interfaz ITablet**](itablet.md)
+[**ITablet (interfaz)**](itablet.md)
 </dt> </dl>
 
  
