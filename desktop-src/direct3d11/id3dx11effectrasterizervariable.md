@@ -72,7 +72,7 @@ Las variables de efecto se guardan en memoria en el almacén de respaldo; cuando
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

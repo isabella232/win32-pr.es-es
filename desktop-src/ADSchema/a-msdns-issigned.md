@@ -36,7 +36,7 @@ Atributo que se usa para definir si la zona DNS está firmada o no.
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2130              |
 | System-Id-Guid    | aa12854c-d8fc-4d5e-91ca-368b8d829bee |
-| Syntax            | [**Booleana**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -48,7 +48,7 @@ Atributo que se usa para definir si la zona DNS está firmada o no.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------|
 | Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |

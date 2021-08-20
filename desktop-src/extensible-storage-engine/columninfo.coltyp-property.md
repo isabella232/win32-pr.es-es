@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: ColumnInfo. Coltyp (propiedad)'
-title: Propiedad ColumnInfo. Coltyp
+description: 'Más información sobre: Propiedad ColumnInfo.Coltyp'
+title: Propiedad ColumnInfo.Coltyp
 TOCTitle: 'Coltyp property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.ColumnInfo.Coltyp
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columninfo.coltyp(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 689cb85c73a283542ccd3fab7bcee9ac20df649b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7a880ce232b768401975260543b7ed0af3265299843d589c3dd2f3374347b49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118083982"
 ---
-# <a name="columninfocoltyp-property"></a>Propiedad ColumnInfo. Coltyp
+# <a name="columninfocoltyp-property"></a>Propiedad ColumnInfo.Coltyp
 
 Obtiene el tipo de la columna.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public JET_coltyp Coltyp { get; private set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_coltyp](./jet-coltyp-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_coltyp](./jet-coltyp-enumeration.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase ColumnInfo](./columninfo-class.md)
+[ColumnInfo (clase)](./columninfo-class.md)
 
-[Miembros de ColumnInfo](./columninfo-members.md)
+[Miembros ColumnInfo](./columninfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,10 +1,10 @@
 ---
-title: Enumeración RedirectDeviceType
+title: RedirectDeviceType (enumeración)
 description: Se usa para especificar el tipo de un dispositivo.
 ms.assetid: B6356217-814E-462F-9DBC-F6D3C0CE129F
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto enumeración RedirectDeviceType
+- Enumeración RedirectDeviceType Servicios de Escritorio remoto
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7058313e7f987589ae17924cce6a95610d997ef
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e987e4f6424c030cdb4ff0699efadaf34f2f9ad14ec49dd8d7e7043f9b55cd9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118127905"
 ---
-# <a name="redirectdevicetype-enumeration"></a>Enumeración RedirectDeviceType
+# <a name="redirectdevicetype-enumeration"></a>RedirectDeviceType (enumeración)
 
 Se usa para especificar el tipo de un dispositivo.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -52,7 +52,7 @@ Un dispositivo USB.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                         |

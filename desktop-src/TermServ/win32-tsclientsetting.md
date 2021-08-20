@@ -1,6 +1,6 @@
 ---
 title: Win32_TSClientSetting clase
-description: Define los valores de configuración de la clase Terminal Win32 \_ relacionada con la directiva de conexión.
+description: Define las opciones de configuración de la clase Terminal Win32 \_ relacionada con la directiva de conexión.
 ms.assetid: 438baf22-adc2-410e-bf9b-4b17a05c5ce4
 ms.tgt_platform: multiple
 keywords:
@@ -79,7 +79,7 @@ ms.locfileid: "118349369"
 ---
 # <a name="win32_tsclientsetting-class"></a>Clase \_ TSClientSetting de Win32
 
-La clase WMI **\_ Win32 TSClientSetting** define los valores de configuración de la clase [**\_ Terminal Win32**](win32-terminal.md) relacionada con la directiva de conexión.
+La clase WMI **\_ TSClientSetting de Win32** define las opciones de configuración de la clase [**\_ Terminal Win32**](win32-terminal.md) relacionada con la directiva de conexión.
 
 La sintaxis siguiente se simplifica a partir del código MOF e incluye todas las propiedades definidas y heredadas, en orden alfabético. Para obtener información de referencia sobre los métodos, vea la tabla de métodos más adelante en este tema.
 
@@ -161,9 +161,9 @@ La **clase \_ TSClientSetting de Win32** tiene estos métodos.
 
 | Método                                                                   | Descripción                                                                                                                                                  |
 |:-------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ConnectionSettings**](win32-tsclientsetting-connectionsettings.md)   | Establece las **propiedades ConnectClientDrivesAtLogon**, **ConnectPrinterAtLogon** y **DefaultToClientPrinter** de esta clase.<br/>                      |
+| [**ConnectionSettings**](win32-tsclientsetting-connectionsettings.md)   | Establece las **propiedades ConnectClientDrivesAtLogon,** **ConnectPrinterAtLogon** y **DefaultToClientPrinter** de esta clase.<br/>                      |
 | [**SetAllowDwm**](setallowdwm-win32-tsclientsetting.md)                 | No compatible.<br/> **Windows 7 y Windows Server 2008 R2:** Establece la **propiedad AllowDwm.**<br/>                                               |
-| [**SetClientProperty**](win32-tsclientsetting-setclientproperty.md)     | Establece la **propiedad LPTPortMapping**, **COMPortMapping**, **AudioMapping**, **ClipboardMapping**, **DriveMapping** o **WindowsPrinterMapping.**<br/> |
+| [**SetClientProperty**](win32-tsclientsetting-setclientproperty.md)     | Establece la **propiedad LPTPortMapping**, **COMPortMapping,** **AudioMapping,** **ClipboardMapping,** **DriveMapping** o **WindowsPrinterMapping.**<br/> |
 | [**SetColorDepth**](win32-tsclientsetting-setcolordepth.md)             | Establece la **propiedad ColorDepth.**<br/>                                                                                                                 |
 | [**SetColorDepthPolicy**](win32-tsclientsetting-setcolordepthpolicy.md) | Establece la **propiedad ColorDepthPolicy.**<br/>                                                                                                           |
 | [**SetMaxMonitors**](setmaxmonitors-win32-tsclientsetting.md)           | Establece la **propiedad MaxMonitors.**<br/>                                                                                                                |
@@ -247,7 +247,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si se permite el redireccionamiento de la captura de audio.
+Especifica si se debe permitir el redireccionamiento de la captura de audio.
 
 **Windows Server 2008 y Windows Vista:** Esta propiedad no está disponible antes de Windows Server 2008 R2 y Windows 7.
 
@@ -401,7 +401,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica la profundidad de color. Para ver los valores posibles, [**vea el método SetColorDepth.**](win32-tsclientsetting-setcolordepth.md)
+Especifica la profundidad de color. Para ver los valores posibles, [**consulte el método SetColorDepth.**](win32-tsclientsetting-setcolordepth.md)
 
 <dt>
 
@@ -909,7 +909,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si se debe permitir Plug and Play redirección.
+Especifica si se va a permitir Plug and Play redireccionamiento.
 
 <dt>
 
@@ -946,7 +946,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la directiva de servidor o grupo configura la propiedad **AdvancedRemoteAppGraphics.**
+Indica si la **propiedad AdvancedRemoteAppGraphics** está configurada por la directiva de servidor o grupo.
 
 **Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista:** Esta propiedad no está disponible antes de Windows Server 2012 R2 y Windows 8.1.
 
@@ -1010,7 +1010,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la directiva de servidor o grupo configura la propiedad **AudioCaptureRedir.**
+Indica si la **propiedad AudioCaptureRedir** está configurada por la directiva de servidor o grupo.
 
 **Windows Server 2008 y Windows Vista:** Esta propiedad no está disponible antes de Windows Server 2008 R2 y Windows 7.
 
@@ -1077,7 +1077,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica cómo se configura **la propiedad AVC444ModePreferredis.**
+Indica cómo se configura la propiedad **AVC444ModePreferredis.**
 
 **Windows 8.1, Windows Server 2012 R2, Windows 8, Windows Server 2012, Windows 7, Windows Server 2008 R2, Windows Vista y Windows Server 2008:** Esta propiedad no está disponible antes de Windows 10 o Windows Server 2016.
 
@@ -1962,9 +1962,9 @@ La asignación de impresoras está deshabilitada.
 
 Tenga en cuenta que una estación de ventana asociada a la sesión de consola no puede tener acceso a los métodos y propiedades de esta clase. Si se intenta hacerlo especificando "Console" como valor de la propiedad **TerminalName,** los métodos de este objeto **devolverán WBEM \_ E NOT \_ \_ SUPPORTED**. Este código de error también se devuelve si una estación de ventana intenta llamar a métodos de este objeto para agregar o modificar las propiedades de seguridad de las cuentas LocalSystem, LocalService o NetworkService.
 
-Para conectarse al espacio \\ de nombres raíz de \\ TerminalServices cimv2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de seis.
+Para conectarse al espacio \\ de nombres Raíz de \\ TerminalServices CIMV2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación **de WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de seis.
 
-En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
+En el Visual Basic ejemplo de Scripting Edition (VBScript) se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
 
 ```VB
@@ -1975,7 +1975,7 @@ Set objServices = GetObject( _
 
 
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -1985,20 +1985,20 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [**Win32 \_ Terminal**](win32-terminal.md)
 </dt> <dt>
 
-[**Terminal \_ Win32Setting**](win32-terminalsetting.md)
+[**TerminalSetting de Win32 \_**](win32-terminalsetting.md)
 </dt> <dt>
 
 [**Configuración de CIM \_**](/windows/desktop/CIMWin32Prov/cim-setting)

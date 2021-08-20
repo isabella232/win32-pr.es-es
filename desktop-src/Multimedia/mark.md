@@ -1,9 +1,9 @@
 ---
-title: marcar comando
-description: El comando marcar controla la grabación y el borrado de marcas en la cinta de vídeo. Los dispositivos VCR reconocen este comando.
+title: Comando mark
+description: El comando mark controla la grabación y el borrado de marcas en la cinta de vídeo. Los dispositivos VCR reconocen este comando.
 ms.assetid: d5f7a546-dc46-459c-b5dc-0651bca842cb
 keywords:
-- comando marcar Windows multimedia
+- Comando mark Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 570968af05424597a7fe2b59e86e0364694e0e1f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e0f59f56a6d542120d088d764d1b301329a7f0b167f25952587a9e743878643e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138756"
 ---
-# <a name="mark-command"></a>marcar comando
+# <a name="mark-command"></a>Comando mark
 
-El comando marcar controla la grabación y el borrado de marcas en la cinta de vídeo. Los dispositivos VCR reconocen este comando.
+El comando mark controla la grabación y el borrado de marcas en la cinta de vídeo. Los dispositivos VCR reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -53,10 +53,10 @@ Una de las marcas siguientes.
 
 
 
-| Value | Significado                                                                                                                                |
+| Valor | Significado                                                                                                                                |
 |-------|----------------------------------------------------------------------------------------------------------------------------------------|
-| erase | Borra una marca en la posición actual, si existe. Para borrar una marca, primero busque la marca y, a continuación, emita el comando marcar "borrar". |
-| escritura | Escribe una marca en la posición actual. Es posible que el VCR tenga que estar en modo de reproducción o grabación para que este comando se ejecute correctamente.                    |
+| erase | Borra una marca en la posición actual, si existe una. Para borrar una marca, primero busque la marca y, a continuación, emita el comando mark "erase". |
+| escritura | Escribe una marca en la posición actual. Es posible que el VCR tenga que estar en modo de reproducción o registro para que este comando se pueda ejecutar correctamente.                    |
 
 
 
@@ -67,23 +67,23 @@ Una de las marcas siguientes.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify" o "Test". Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify" o "test". Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las marcas son señales especiales escritas en el contenido que el VCR puede detectar durante las búsquedas de alta velocidad. Las marcas son específicas del VCR.
+Las marcas son señales especiales escritas en el contenido que el VCR puede detectar durante las búsquedas de alta velocidad. Las marcas son específicas de VCR.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
@@ -94,10 +94,10 @@ Las marcas son señales especiales escritas en el contenido que el VCR puede det
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> </dl>
 
  

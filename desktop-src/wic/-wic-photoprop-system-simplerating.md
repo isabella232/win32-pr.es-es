@@ -45,7 +45,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Path                     | Formato de disco |
+| Pedido | Ruta de acceso                     | Formato de disco |
 |-------|--------------------------|-------------|
 | 1     | /app1/ifd/{ushort=18246} | ushort      |
 | 2     | /xmp/xmp:Rating          | unicode     |
@@ -58,7 +58,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Path                     | Formato de disco |
+| Pedido | Ruta de acceso                     | Formato de disco |
 |-------|--------------------------|-------------|
 | 1     | /app1/ifd/{ushort=18246} | ushort      |
 | 2     | /xmp/xmp:Rating          | unicode     |
@@ -71,7 +71,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Path                     |
+| Pedido | Ruta de acceso                     |
 |-------|--------------------------|
 | 1     | /app1/ifd/{ushort=18246} |
 | 2     | /xmp/xmp:rating          |
@@ -86,7 +86,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Path                | Formato de disco |
+| Pedido | Ruta de acceso                | Formato de disco |
 |-------|---------------------|-------------|
 | 1     | /ifd/{ushort=18246} | ushort      |
 | 2     | /ifd/xmp/xmp:Rating | unicode     |
@@ -99,7 +99,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Path                | Formato de disco |
+| Pedido | Ruta de acceso                | Formato de disco |
 |-------|---------------------|-------------|
 | 1     | /ifd/{ushort=18246} | ushort      |
 | 2     | /ifd/xmp/xmp:Rating | unicode     |
@@ -112,7 +112,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Path                |
+| Pedido | Ruta de acceso                |
 |-------|---------------------|
 | 1     | /ifd/{ushort=18246} |
 | 2     | /ifd/xmp/xmp:rating |
@@ -121,7 +121,7 @@ Los valores de esquemas diferentes se concilian.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 

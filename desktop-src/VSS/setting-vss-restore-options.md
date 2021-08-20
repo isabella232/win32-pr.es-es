@@ -1,43 +1,43 @@
 ---
-description: Las opciones de restauración permiten a los solicitantes comunicar opciones de restauración personalizadas a escritores.
+description: Las opciones de restauración permiten a los solicitantes comunicar opciones de restauración personalizadas a los escritores.
 ms.assetid: 364550a1-070a-4f7e-bd62-84672959dc21
-title: Establecer opciones de restauración de VSS
+title: Establecer las opciones de restauración de VSS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c814ffb94f25229e7f3e17f592c631f13b6717e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58f3ca56a516148bcc11a12fc72aaa6941b0436236525c06c63142107bd18b59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118122000"
 ---
-# <a name="setting-vss-restore-options"></a>Establecer opciones de restauración de VSS
+# <a name="setting-vss-restore-options"></a>Establecer las opciones de restauración de VSS
 
-Las opciones de restauración permiten a los solicitantes comunicar opciones de restauración personalizadas a escritores.
+Las opciones de restauración permiten a los solicitantes comunicar opciones de restauración personalizadas a los escritores.
 
 ## <a name="restore-options"></a>Opciones de restauración
 
-La estandarización del formato de las opciones de restauración permite que escritores y solicitantes controlen las solicitudes personalizadas comunes. Las opciones de restauración las establece el solicitante llamando al método [**ivssbackupcomponents:: SetRestoreOptions**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setrestoreoptions) hasta una vez por cada componente de copia de seguridad seleccionado antes de llamar al método [**ivssbackupcomponents::P rerestore**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prerestore) . La cadena que se pasa en el parámetro *wszRestoreOptions* al método **SetRestoreOptions** puede contener varios valores, tal y como se describe a continuación.
+La normalización del formato de las opciones de restauración permite a los escritores y solicitantes controlar las solicitudes personalizadas comunes. El solicitante establece las opciones de restauración llamando al método [**IVssBackupComponents::SetRestoreOptions**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setrestoreoptions) hasta una vez por componente seleccionado para copia de seguridad antes de llamar al método [**IVssBackupComponents::P restore.**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prerestore) La cadena que se pasa en el *parámetro wszRestoreOptions* al **método SetRestoreOptions** puede contener varios valores, como se describe a continuación.
 
 ## <a name="format"></a>Formato
 
-El formato de las opciones de restauración, es uno o varios pares de nombre/valor separados por comas, y el nombre se antepone opcionalmente al nombre del subcomponente al que se aplica. Los nombres de componente y de opción no distinguen mayúsculas de minúsculas. El escritor determina la distinción de mayúsculas y minúsculas de los valores. Por ejemplo:
+El formato de las opciones de restauración es uno o varios pares de nombre/valor separados por comas y, opcionalmente, el nombre tiene como prefijo el nombre del subcomponente al que se aplica. Los nombres de componente y los nombres de opción no tienen en cuenta mayúsculas de minúsculas. El escritor determina la confidencialidad de mayúsculas y minúsculas de los valores. Por ejemplo:
 
 ``` syntax
 "Child1":"Option1"="Value1","Option2"="Value2","Child2\Grandchild3":"Option3"="Value3"
 ```
 
-En este ejemplo, "Opción1" solo se aplica al subcomponente "Child1" y a sus descendientes, "opción2" se aplica a todos los componentes y sus descendientes, y "Option3" solo se aplica a los \\ subcomponentes "Child2 Grandchild3" y a sus descendientes.
+En este ejemplo, "Option1" solo se aplica al subcomponente "Child1" y sus descendientes, "Option2" se aplica a todos los componentes y sus descendientes, y "Option3" solo se aplica a los subcomponentes "Child2 Grandchild3" y sus \\ descendientes.
 
-Solo se puede llamar al método [**SetRestoreOptions**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setrestoreoptions) en los componentes que se pueden seleccionar para la copia de seguridad, mientras que los nodos descendientes no se pueden seleccionar para la copia de seguridad, pueden seleccionarse para la restauración.
+El [**método SetRestoreOptions**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setrestoreoptions) solo se puede llamar en componentes que se pueden seleccionar para la copia de seguridad, mientras que es posible que los nodos descendientes no se puedan seleccionar para la copia de seguridad, ya que pueden seleccionarse para la restauración.
 
-## <a name="common-restore-options"></a>Opciones de restauración comunes
+## <a name="common-restore-options"></a>Opciones comunes de restauración
 
-Estas opciones de restauración comunes se han definido para aumentar la interoperabilidad entre escritores y solicitantes.
+Estas opciones comunes de restauración se han definido para aumentar la interoperabilidad entre escritores y solicitantes.
 
--   Restaur
+-   Autoridad
 
-    La opción "autoritativa" admite varios valores "Item", pero solo un valor "All".
+    La opción "Autoritativa" admite varios valores "Item", pero solo un valor "All".
 
     Todo este componente es autoritativo.
 
@@ -45,29 +45,29 @@ Estas opciones de restauración comunes se han definido para aumentar la interop
     "Authoritative"="All"
     ```
 
-    Solo el elemento especificado es autoritativo. El escritor define el formato del elemento con nombre. Las designaciones comunes son " \* " para indicar todos los archivos, "..." para indicar todos los archivos y subdirectorios del componente especificado.
+    Solo el elemento especificado es autoritativo. El escritor define el formato del elemento con nombre. Las designaciones comunes son \* " " para indicar todos los archivos, "..." para indicar todos los archivos y subdirectorios del componente especificado.
 
     ``` syntax
     "Authoritative"="Item:XXX"
     ```
 
--   Puesta al día
+-   Reversión
 
-    Después de restaurar una base de datos, los escritores normalmente se ponen al día a través de los registros para actualizar la base de datos. En el caso de las restauraciones incrementales o diferenciales, el solicitante usa el método [**IVssBackupComponents:: SetAdditionalRestores**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setadditionalrestores) para controlar parcialmente el comportamiento de control de registros: esta opción de restauración permite un control más granular.
+    Después de restaurar una base de datos, los escritores suelen pasar a través de registros para poner la base de datos al día. En el caso de restauraciones incrementales o diferenciales, el solicitante usa el método [**IVssBackupComponents::SetAdditionalRestores**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-setadditionalrestores) para controlar parcialmente el comportamiento de control de registros. Esta opción de restauración permite un control más pormenorizado.
 
-    No revierta los registros.
+    No revierte los registros.
 
     ``` syntax
     "Roll Forward"="None"
     ```
 
-    Revertir todos los registros.
+    Revierte todos los registros.
 
     ``` syntax
     "Roll Forward"="All"
     ```
 
-    Desplazarse por los registros hasta el punto especificado. El escritor define el formato del punto especificado.
+    Revierte los registros hasta el punto especificado. El escritor define el formato del punto especificado.
 
     ``` syntax
     "Roll Forward"="Partial:XXX"
@@ -75,7 +75,7 @@ Estas opciones de restauración comunes se han definido para aumentar la interop
 
 -   Nuevo nombre de componente
 
-    Es posible que un escritor desee restaurar un componente a un nuevo nombre. Por ejemplo, restaurar una base de datos a un nombre diferente para restaurar un elemento individual; al restaurar al mismo nombre, todos los datos recomendamos que los escritores acepten una ruta de acceso lógica y un nombre de componente válidos como valor de esta opción. Esto se suele usar con un [*destino dirigido*](vssgloss-d.md).
+    Es posible que un sistema de escritura quiera restaurar un componente a un nuevo nombre. Por ejemplo, restaurar una base de datos a un nombre diferente para restaurar un elemento individual; restaurar con el mismo nombre sería para todos los datos Se recomienda que los escritores acepten una ruta de acceso lógica válida y un nombre de componente como valor de esta opción. A menudo se usará con un [*destino dirigido.*](vssgloss-d.md)
 
     ``` syntax
     "New Component Name"="Logical Path\Component Name"

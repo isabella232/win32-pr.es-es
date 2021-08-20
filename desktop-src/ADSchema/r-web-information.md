@@ -1,10 +1,10 @@
 ---
 title: Web-Information conjunto de propiedades
-description: Conjunto de propiedades que contiene los atributos de usuario que describen la información relacionada con la web del usuario.
+description: Conjunto de propiedades que contiene atributos de usuario que describen información relacionada con la web del usuario.
 ms.assetid: c3998dc5-3e15-4a84-b3a4-35a33fa1295a
 ms.tgt_platform: multiple
 keywords:
-- Web-Information el esquema de AD del conjunto de propiedades
+- Web-Information esquema de AD del conjunto de propiedades
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2da2bb15c6401b527a4d6e835e4e4e2f572a0f19
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7fe641087cb5013d408d62d01d2ff51ec7aa65ce23509fbbf5ac5b6bdb20ecb9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118174669"
 ---
 # <a name="web-information-property-set"></a>Web-Information conjunto de propiedades
 
-Conjunto de propiedades que contiene los atributos de usuario que describen la información relacionada con la web del usuario.
+Conjunto de propiedades que contiene atributos de usuario que describen información relacionada con la web del usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
 | CN           | Web-Information                      |
-| Display-Name | Información Web                      |
+| Display-Name | Información web                      |
 | Rights-GUID  | e45795b3-9455-11d1-aebd-0000f80367c1 |
 
 
@@ -38,7 +38,7 @@ Conjunto de propiedades que contiene los atributos de usuario que describen la i
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -48,11 +48,11 @@ Conjunto de propiedades que contiene los atributos de usuario que describen la i
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**Contacto**](c-contact.md)<br/>                    |
-| Localización: ID. de presentación | 24                                                                                           |
-| Miembros del conjunto de propiedades    | [**WWW-Página principal**](a-wwwhomepage.md)<br/> [**WWW-página-otro**](a-url.md)<br/> |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**Contacto**](c-contact.md)<br/>                    |
+| Localization-Display-ID | 24                                                                                           |
+| Miembros del conjunto de propiedades    | [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)<br/> [**WWW-Page-Other**](a-url.md)<br/> |
 
 
 
@@ -62,21 +62,21 @@ Conjunto de propiedades que contiene los atributos de usuario que describen la i
 
 | Entrada | Value |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**Contacto**](c-contact.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localización: ID. de presentación | 24                                                                                                                            |
-| Miembros del conjunto de propiedades    | [**WWW-Página principal**](a-wwwhomepage.md)<br/> [**WWW-página-otro**](a-url.md)<br/>                                  |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**Contacto**](c-contact.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 24                                                                                                                            |
+| Miembros del conjunto de propiedades    | [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)<br/> [**WWW-Page-Other**](a-url.md)<br/>                                  |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------|
 | Applies-To              | \-                                                                                           |
-| Localización: ID. de presentación | 24                                                                                           |
-| Miembros del conjunto de propiedades    | [**WWW-Página principal**](a-wwwhomepage.md)<br/> [**WWW-página-otro**](a-url.md)<br/> |
+| Localization-Display-ID | 24                                                                                           |
+| Miembros del conjunto de propiedades    | [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)<br/> [**WWW-Page-Other**](a-url.md)<br/> |
 
 
 
@@ -86,9 +86,9 @@ Conjunto de propiedades que contiene los atributos de usuario que describen la i
 
 | Entrada | Value |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**Contacto**](c-contact.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localización: ID. de presentación | 24                                                                                                                            |
-| Miembros del conjunto de propiedades    | [**WWW-Página principal**](a-wwwhomepage.md)<br/> [**WWW-página-otro**](a-url.md)<br/>                                  |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**Contacto**](c-contact.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 24                                                                                                                            |
+| Miembros del conjunto de propiedades    | [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)<br/> [**WWW-Page-Other**](a-url.md)<br/>                                  |
 
 
 
@@ -98,9 +98,9 @@ Conjunto de propiedades que contiene los atributos de usuario que describen la i
 
 | Entrada | Value |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**Contacto**](c-contact.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localización: ID. de presentación | 24                                                                                                                            |
-| Miembros del conjunto de propiedades    | [**WWW-Página principal**](a-wwwhomepage.md)<br/> [**WWW-página-otro**](a-url.md)<br/>                                  |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**Contacto**](c-contact.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 24                                                                                                                            |
+| Miembros del conjunto de propiedades    | [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)<br/> [**WWW-Page-Other**](a-url.md)<br/>                                  |
 
 
 
@@ -110,9 +110,9 @@ Conjunto de propiedades que contiene los atributos de usuario que describen la i
 
 | Entrada | Value |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**Contacto**](c-contact.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localización: ID. de presentación | 24                                                                                                                            |
-| Miembros del conjunto de propiedades    | [**WWW-Página principal**](a-wwwhomepage.md)<br/> [**WWW-página-otro**](a-url.md)<br/>                                  |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**Contacto**](c-contact.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 24                                                                                                                            |
+| Miembros del conjunto de propiedades    | [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)<br/> [**WWW-Page-Other**](a-url.md)<br/>                                  |
 
 
 
@@ -122,9 +122,9 @@ Conjunto de propiedades que contiene los atributos de usuario que describen la i
 
 | Entrada | Value |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**Contacto**](c-contact.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localización: ID. de presentación | 24                                                                                                                            |
-| Miembros del conjunto de propiedades    | [**WWW-Página principal**](a-wwwhomepage.md)<br/> [**WWW-página-otro**](a-url.md)<br/>                                  |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**Contacto**](c-contact.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 24                                                                                                                            |
+| Miembros del conjunto de propiedades    | [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)<br/> [**WWW-Page-Other**](a-url.md)<br/>                                  |
 
 
 

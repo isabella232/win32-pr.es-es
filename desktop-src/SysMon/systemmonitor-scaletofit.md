@@ -1,6 +1,6 @@
 ---
-title: SystemMonitor. ScaleToFit, método
-description: Ajustar los valores del contador para que quepan en el gráfico.
+title: Método SystemMonitor.ScaleToFit
+description: Escale los valores del contador para que quepa en el gráfico.
 ms.assetid: 8e58e51a-4767-40da-836a-e49d34dec195
 keywords:
 - Método ScaleToFit SysMon
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9a1e481dd44c441ea9e2dd44f2e63a06539da74
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1cddb539f8c8d2c6c78f70d96d82da171e11a62afbeaa31d1a011c74c2cb096d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118881519"
 ---
-# <a name="systemmonitorscaletofit-method"></a>SystemMonitor. ScaleToFit, método
+# <a name="systemmonitorscaletofit-method"></a>Método SystemMonitor.ScaleToFit
 
-Ajustar los valores del contador para que quepan en el gráfico.
+Escale los valores del contador para que quepa en el gráfico.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ SystemMonitor.ScaleToFit( _
 
 <dl> <dt>
 
-*selectedCountersOnly* \[ de\]
+*selectedCountersOnly* \[ En\]
 </dt> <dd>
 
 True para escalar solo los contadores seleccionados; de lo contrario, false para escalar todos los contadores.
@@ -53,19 +53,19 @@ True para escalar solo los contadores seleccionados; de lo contrario, false para
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método borrará la vista del gráfico. SYSMON usa el factor de escala especificado para cada contador para volver a dibujar el gráfico si el origen de datos es un archivo de registro o empezar a representar gráficamente nuevos valores de contador si el origen de datos es una actividad en tiempo real.
+Este método borrará la vista de gráfico. A continuación, SYSMON usa el factor de escala especificado para cada contador para volver a dibujar el gráfico si el origen de datos es un archivo de registro o comenzar a crear gráficos de nuevos valores de contador si el origen de datos es una actividad en tiempo real.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
@@ -73,13 +73,13 @@ Este método borrará la vista del gráfico. SYSMON usa el factor de escala espe
 
 <dl> <dt>
 
-[**SystemMonitor**](systemmonitor.md)
+[**Systemmonitor**](systemmonitor.md)
 </dt> <dt>
 
-[**Elemento de ScaleFactor**](counteritem-scalefactor.md)
+[**CounterItem.ScaleFactor**](counteritem-scalefactor.md)
 </dt> <dt>
 
-[**Contraelemento. seleccionado**](counteritem-selected.md)
+[**CounterItem.Selected**](counteritem-selected.md)
 </dt> </dl>
 
  

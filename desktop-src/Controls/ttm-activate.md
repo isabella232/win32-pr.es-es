@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TTM_ACTIVATE (commctrl. h)
+title: TTM_ACTIVATE mensaje (Commctrl.h)
 description: Activa o desactiva un control de información sobre herramientas.
 ms.assetid: f37da001-748c-4c51-bb32-dc49031ff2fb
 keywords:
-- TTM_ACTIVATE controles de mensajes de Windows
+- TTM_ACTIVATE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e200b769cd3d9e07cb63a5a540960bcc707f862d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f1b2a0c67fec22b11adc54f04ed7a6e4f3cb299ad67018b29f1239cebe0f8604
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118166398"
 ---
-# <a name="ttm_activate-message"></a>TTM \_ Activar mensaje
+# <a name="ttm_activate-message"></a>Mensaje DE ACTIVACIÓN DE TTM \_
 
 Activa o desactiva un control de información sobre herramientas.
 
@@ -32,7 +32,7 @@ Activa o desactiva un control de información sobre herramientas.
 *wParam* 
 </dt> <dd>
 
-Marca de activación. Si este parámetro es **true**, se activa el control ToolTip. Si es **false**, se desactiva el control ToolTip.
+Marca de activación. Si este parámetro es **TRUE,** se activa el control de información sobre herramientas. Si es **FALSE,** se desactiva el control de información sobre herramientas.
 
 </dd> <dt>
 
@@ -47,11 +47,11 @@ No de devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

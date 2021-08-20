@@ -1,8 +1,8 @@
 ---
-description: El modelo de localización del esquema CIM proporciona un mecanismo para localizar los calificadores. No admite la localización directa de los valores de propiedad.
+description: El modelo de localización del esquema CIM proporciona un mecanismo para la localización de calificadores. No admite la localización directa de valores de propiedad.
 ms.assetid: a88bd873-7132-45b6-831e-64f9bb254c6e
 ms.tgt_platform: multiple
-title: Localizar valores de propiedad
+title: Localización de valores de propiedad
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,18 +10,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5ccec714557934ca32a878e21fb2a75d24a211a6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9c368e761e6f8004e553a0843c98e3861ef55d01f7a48843be748df4806c168
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992945"
 ---
-# <a name="localizing-property-values"></a>Localizar valores de propiedad
+# <a name="localizing-property-values"></a>Localización de valores de propiedad
 
-El modelo de localización del esquema CIM proporciona un mecanismo para localizar los calificadores. No admite la localización directa de los valores de propiedad.
+El modelo de localización del esquema CIM proporciona un mecanismo para la localización de calificadores. No admite la localización directa de valores de propiedad.
 
-Sin embargo, en algunos casos, los valores de las propiedades de cadena de las instancias estáticas se pueden reemplazar por un tipo entero enumerado y se puede definir una asignación de valores para la propiedad en la definición de clase. En estos casos, se debe localizar el calificador de **valores** . El uso de calificadores de enumeración es el mecanismo principal para localizar valores de propiedad. No se admiten otras formas de localización de valores de propiedad.
+Sin embargo, en algunos casos, los valores de propiedades de cadena de las instancias estáticas se pueden reemplazar por un tipo entero enumerado y se puede definir un mapa de valores para la propiedad en la definición de clase. En estos casos, se **debe localizar el** calificador Valores. El uso de calificadores de enumeración es el mecanismo principal para la localización de valores de propiedad. No se admiten otras formas de localización de valores de propiedad.
 
 En el ejemplo siguiente se muestra cómo se pueden localizar las propiedades estáticas mediante mapas de valores parciales con expresiones regulares. En este ejemplo, el subconjunto predefinido de valores se inicializa en el esquema mediante instancias estáticas. El resto de los valores se proporcionan dinámicamente.
 
@@ -61,7 +61,7 @@ instance of InitialGroup {
 };
 ```
 
-Para obtener más información, consulte [localizar propiedades estáticas](localizing-static-properties.md).
+Para obtener más información, [vea Localización de propiedades estáticas.](localizing-static-properties.md)
 
  
 

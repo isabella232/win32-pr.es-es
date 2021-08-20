@@ -1,11 +1,11 @@
 ---
-title: Método _ID IVMVirtualNetwork (VPCCOMInterfaces. h)
+title: Método _ID IVMVirtualNetwork (VPCCOMInterfaces.h)
 description: Recupera el identificador interno de la red virtual.
 ms.assetid: 6f1f75be-4218-40b8-8c73-938f0801f5e5
 keywords:
-- _ID método virtual PC
-- Método _ID Virtual PC, interfaz IVMVirtualNetwork
-- Interfaz IVMVirtualNetwork Virtual PC, método _ID
+- _ID virtual PC
+- _ID método Virtual PC , interfaz IVMVirtualNetwork
+- IVMVirtualNetwork interface Virtual PC , _ID método
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68b79c4d6f4dfa778fee156b1bfa09ab39b8bedf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c888a6191be85bf90e9bee2d83590352c3acbf4f731e835fb5879221831b0669
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118122665"
 ---
-# <a name="ivmvirtualnetwork_id-method"></a>IVMVirtualNetwork:: \_ ID (método)
+# <a name="ivmvirtualnetwork_id-method"></a>IVMVirtualNetwork:: \_ método de identificador
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera el identificador interno de la red virtual.
 
@@ -44,7 +44,7 @@ HRESULT _ID(
 
 <dl> <dt>
 
-*virtualNetworkID* \[ enuncia\]
+*virtualNetworkID* \[ out\]
 </dt> <dd>
 
 Identificador de red virtual. El identificador de la red virtual de redes compartidas (NAT) es 01010101010101010101010101010101.
@@ -59,30 +59,30 @@ Este método puede devolver uno de estos valores.
 
 | Código o valor devuelto                                                                                                                                                 | Descripción                                  |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>     |
-| <dl> <dt>**E \_ PUNTERO**</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **null**.<br/>        |
-| <dl> <dt>**DISP \_ . E \_ excepción**</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/> |
+| <dl> <dt>**S \_ Ok**</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>     |
+| <dl> <dt>**E \_ Puntero**</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **NULL.**<br/>        |
+| <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad no se puede usar en los lenguajes de scripting.
+Los lenguajes de scripting no pueden hacer uso de esta propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMVirtualNetwork se define como 431cb7a1-2469-4563-b94e-38b987adca63<br/>          |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMVirtualNetwork se define como \_ 431cb7a1-2469-4563-b94e-38b987adca63<br/>          |
 
 
 

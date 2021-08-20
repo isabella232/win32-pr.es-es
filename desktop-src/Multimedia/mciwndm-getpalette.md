@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_GETPALETTE (VFW. h)
-description: El \_ mensaje GETPALETTE de MCIWNDM recupera un identificador de la paleta usada por un dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetPalette.
+title: MCIWNDM_GETPALETTE mensaje (Vfw.h)
+description: El mensaje GETPALETTE de MCIWNDM \_ recupera un identificador de la paleta que usa un dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetPalette.
 ms.assetid: f8426344-0fee-4419-9d8a-dcee26cb4c28
 keywords:
-- Mensaje de MCIWNDM_GETPALETTE de Windows multimedia
+- MCIWNDM_GETPALETTE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: faec3dd5d9c401d943fbc55ca58e452d3fb25497
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 319fe1fedc21c064896c3316d0a45132c034b73c25bf107ee667269a13ed678b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078980"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137706"
 ---
-# <a name="mciwndm_getpalette-message"></a>MCIWNDM \_ GETPALETTE
+# <a name="mciwndm_getpalette-message"></a>Mensaje GETPALETTE de MCIWNDM \_
 
-El **mensaje \_ GETPALETTE de MCIWNDM** recupera un identificador de la paleta usada por un dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetPalette**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetpalette) .
+El **mensaje \_ GETPALETTE de MCIWNDM** recupera un identificador de la paleta que usa un dispositivo MCI. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetPalette.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetpalette)
 
 
 ```C++
@@ -42,11 +42,11 @@ Devuelve el identificador de la paleta si se realiza correctamente.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

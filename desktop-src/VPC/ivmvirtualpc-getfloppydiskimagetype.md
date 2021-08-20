@@ -1,11 +1,11 @@
 ---
-title: Método IVMVirtualPC GetFloppyDiskImageType (VPCCOMInterfaces. h)
+title: Método IVMVirtualPC GetFstonepyDiskImageType (VPCCOMInterfaces.h)
 description: Recupera el tipo de un archivo de imagen de disquete existente.
 ms.assetid: 34956a0c-1da0-4968-9a6c-c114d7037da1
 keywords:
-- Método GetFloppyDiskImageType Virtual PC
-- Método GetFloppyDiskImageType Virtual PC, interfaz IVMVirtualPC
-- Interfaz IVMVirtualPC Virtual PC, método GetFloppyDiskImageType
+- Método Virtual PC GetFstonepyDiskImageType
+- Método GetFstonepyDiskImageType de Virtual PC, interfaz IVMVirtualPC
+- IVMVirtualPC interface Virtual PC , Método GetFstonepyDiskImageType
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e5e2974f80865f8572f1153721cf10233fdb389
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 891e07da259acc8e2efa759d636ac203654700785586a20f879cf75165ab318e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118122334"
 ---
-# <a name="ivmvirtualpcgetfloppydiskimagetype-method"></a>IVMVirtualPC:: GetFloppyDiskImageType (método)
+# <a name="ivmvirtualpcgetfloppydiskimagetype-method"></a>IVMVirtualPC::GetFstonepyDiskImageType (método)
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Recupera el tipo de un archivo de imagen de disquete existente.
 
@@ -45,7 +45,7 @@ HRESULT GetFloppyDiskImageType(
 
 <dl> <dt>
 
-*imagePath* \[ de\]
+*imagePath* \[ En\]
 </dt> <dd>
 
 Ruta de acceso completa al archivo de imagen de disco.
@@ -55,7 +55,7 @@ Ruta de acceso completa al archivo de imagen de disco.
 *imageType* \[ out, retval\]
 </dt> <dd>
 
-El tipo de imagen de disco. Para obtener una lista de valores, vea [**VMFloppyDiskImageType**](vmfloppydiskimagetype.md).
+Tipo de imagen de disco. Para obtener una lista de valores, [**vea VMFstonepyDiskImageType**](vmfloppydiskimagetype.md).
 
 </dd> </dl>
 
@@ -67,15 +67,15 @@ Este método puede devolver uno de estos valores.
 
 | Código o valor devuelto                                                                                                                                                                            | Descripción                                                                                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> <dt>0</dt> </dl>                                                  | La operación se realizó correctamente.<br/>                                                                                         |
-| <dl> <dt>**E \_ PUNTERO**</dt> <dt>0x80004003</dt> </dl>                                    | El parámetro *imagePath* o *imageType* es **null**.<br/>                                                                 |
-| <dl> <dt>**HRESULT \_ DE \_ Win32 ( \_ \_ no \_ se encontró el archivo de error)**</dt> <dt>0x80070002</dt> </dl> | El sistema no encuentra el archivo especificado por el parámetro *imagePath* .<br/>                                               |
-| <dl> <dt>**HRESULT \_ DE \_ Win32 ( \_ \_ no \_ se encontró la ruta de acceso de error)**</dt> <dt>0x80070003</dt> </dl> | El sistema no puede encontrar la ruta de acceso especificada por el parámetro *imagePath* .<br/>                                               |
-| <dl> <dt>**HRESULT \_ DE \_ Win32 (error \_ de \_ nombre no válido)**</dt> <dt>0x8007007b</dt> </dl>    | El parámetro *imagePath* contiene un carácter no válido (uno de " \* ?: <>/ \| " ").<br/>                                  |
-| <dl> <dt>**HRESULT \_ Desde \_ Win32 (error \_ de \_ nombreruta incorrecta)**</dt> <dt>0x800700a1</dt> </dl>    | El parámetro *imagePath* especifica una ruta de acceso relativa o vacía. Se requiere una ruta de acceso absoluta.<br/>                          |
-| <dl> <dt>**HRESULT \_ De \_ Win32 (desbordamiento de búfer de error \_ \_ )**</dt> <dt>0x8007006f</dt> </dl> | La ruta de acceso especificada por el parámetro *imagePath* es demasiado larga. La longitud de la ruta de acceso debe ser inferior a 260 caracteres.<br/> |
-| <dl> <dt>**DISP \_ . E \_ excepción**</dt> <dt>0x80020009</dt> </dl>                            | El archivo especificado por *imagePath* no es una imagen de disquete o se ha producido un error inesperado.<br/>                         |
-| <dl> <dt>**Máquina virtual \_ E \_ \_ virtualización de hardware \_ deshabilitada**</dt> <dt>0xA0040951</dt> </dl>     | El procesador no es compatible con las extensiones de virtualización acelerada de hardware (haber).<br/>                                  |
+| <dl> <dt>**S \_ Ok**</dt> <dt>0</dt> </dl>                                                  | La operación se realizó correctamente.<br/>                                                                                         |
+| <dl> <dt>**E \_ Puntero**</dt> <dt>0x80004003</dt> </dl>                                    | El *parámetro imagePath* *o imageType* es **NULL.**<br/>                                                                 |
+| <dl> <dt>**HRESULT \_ DESDE \_ WIN32 (ARCHIVO DE ERROR \_ \_ NO \_ ENCONTRADO)**</dt> <dt>0X80070002</dt> </dl> | El sistema no puede encontrar el archivo especificado por el *parámetro imagePath.*<br/>                                               |
+| <dl> <dt>**HRESULT \_ DESDE \_ WIN32 (RUTA DE ACCESO DE ERROR \_ \_ NO \_ ENCONTRADA)**</dt> <dt>0X80070003</dt> </dl> | El sistema no puede encontrar la ruta de acceso especificada por el *parámetro imagePath.*<br/>                                               |
+| <dl> <dt>**HRESULT \_ DESDE \_ WIN32(ERROR \_ INVALID \_ NAME) 0X8007007B**</dt> <dt></dt> </dl>    | El *parámetro imagePath* contiene un carácter no válido (uno de " \* ?:<>/ \| "").<br/>                                  |
+| <dl> <dt>**HRESULT \_ DESDE \_ WIN32(ERROR \_ BAD \_ PATHNAME)**</dt> <dt>0X800700A1</dt> </dl>    | El *parámetro imagePath* especifica una ruta de acceso vacía o relativa. Se requiere una ruta de acceso absoluta.<br/>                          |
+| <dl> <dt>**HRESULT \_ DESDE \_ WIN32(ERROR \_ BUFFER \_ OVERFLOW)**</dt> <dt>0x8007006f</dt> </dl> | La ruta de acceso especificada por el *parámetro imagePath* es demasiado larga. La longitud de la ruta de acceso debe tener menos de 260 caracteres.<br/> |
+| <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl>                            | El archivo especificado por *imagePath* no es una imagen de disquete o se ha producido un error inesperado.<br/>                         |
+| <dl> <dt>**Máquina virtual \_ E \_ HARDWARE \_ VIRTUALIZATION \_ DISABLED**</dt> <dt>0xA0040951</dt> </dl>     | El procesador no admite extensiones de Virtualización acelerada por hardware (HAV).<br/>                                  |
 
 
 
@@ -85,14 +85,14 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMVirtualPC se define como 236ba0d9-a24a-4292-A132-27c1421dfd01<br/>               |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMVirtualPC se define como \_ 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
 
 
 

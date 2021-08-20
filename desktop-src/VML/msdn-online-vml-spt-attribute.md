@@ -1,24 +1,24 @@
 ---
-title: Atributo de un mismo en VML
-description: Atributo de un mismo en VML
+title: Atributo Spt de VML
+description: Atributo Spt de VML
 ms.assetid: f53841b6-77f3-447f-8614-890b751efa93
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1e75f5e9c4936b5c4c5fabed062e483f7363275
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 13921e5514bed5eca2103ab8fcddeb13db6511ef1165ecde4436a13bafaed1b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118124268"
 ---
-# <a name="vml-spt-attribute"></a>Atributo de un mismo en VML
+# <a name="vml-spt-attribute"></a>Atributo Spt de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Define un número utilizado internamente por Microsoft Office para identificar tipos de formas. Lectura/escritura **Cadena**.
 
@@ -28,20 +28,20 @@ Define un número utilizado internamente por Microsoft Office para identificar t
 
 **Sintaxis de etiquetas**
 
-<v: *Element* o:SPT = " *expresión* " >
+<v: *element* o:spt=" *expression* ">
 
 Sintaxis de script
 
-*Element* . de un elemento de la sección = "*expresión*"
+*Element* .spt="*expression*"
 
-*expresión* = de *elemento*. de corta
+*expresión* = *elemento*.spt
 
 **Comentarios:**
 
 Reservado para uso interno.
 
-Microsoft Office atributo Extensions
+Microsoft Office Atributo Extensions
 
- 
+ 
 
- 
+ 

@@ -4,12 +4,12 @@ ms.assetid: 722d657d-332a-40df-ac30-bc2050deda74
 title: Apertura de un servicio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8b273b8709a4d750085f14075d605f88ed0faa6
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 578dfee696fd17b0e360d6e344844670ca92ac6b48152242492a458a9a279f56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806725"
 ---
 # <a name="opening-a-service"></a>Apertura de un servicio
 
@@ -31,7 +31,7 @@ El método que abre un servicio [**es IPortableDeviceService::Open.**](/windows/
 
 Para obtener un identificador PnP para un servicio determinado, la aplicación llama al método [**IPortableDeviceServiceManager::GetDeviceServices.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicemanager-getdeviceservices) Este método recupera una matriz de identificadores PnP para los servicios de un GUID de categoría de servicio (por ejemplo, contactos DE SERVICIO).
 
-La aplicación de servicio de ejemplo recupera un identificador PnP para los servicios contacts dentro del método **EnumerateContactsServices** del módulo ServiceEnumeration.cpp. El siguiente ejemplo de código se toma de este método.
+La aplicación de servicio de ejemplo recupera un identificador PnP para los servicios contacts dentro del método **EnumerateContactsServices** del módulo ServiceEnumeration.cpp. El ejemplo de código siguiente se toma de este método.
 
 
 ```C++
@@ -79,9 +79,9 @@ Una vez que la aplicación recupera el identificador pnP del servicio, puede con
 
 En la aplicación de ejemplo, se llama a este método **en ChooseDeviceService** en el módulo ServiceEnumeration.cpp.
 
-[**IPortableDeviceService admite**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice) dos CLID para **CoCreateInstance.** **CLSID \_ PortableDeviceService** devuelve un **puntero IPortableDeviceService** que no agrega el serializador de subproceso libre; **CLSID \_ PortableDeviceServiceFTM** es un nuevo CLSID que devuelve un puntero **IPortableDeviceService** que agrega el serializador de subproceso libre. En caso contrario, ambos punteros admiten la misma funcionalidad.
+[**IPortableDeviceService admite**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice) dos CLID para **CoCreateInstance.** **CLSID \_ PortableDeviceService** devuelve un **puntero IPortableDeviceService** que no agrega el serializador de subproceso libre; **CLSID \_ PortableDeviceServiceFTM** es un nuevo CLSID que devuelve un puntero **IPortableDeviceService** que agrega el serializador de subproceso libre. De lo contrario, ambos punteros admiten la misma funcionalidad.
 
-Las aplicaciones que se usan en los departamentos de subproceso único deben usar **CLSID \_ PortableDeviceServiceFTM,** ya que esto elimina la sobrecarga de la serialización de punteros de interfaz. **CLSID \_ PortableDeviceService sigue** siendo compatible con las aplicaciones heredadas.
+Las aplicaciones que se usan en un solo subproceso deben usar **CLSID \_ PortableDeviceServiceFTM,** ya que esto elimina la sobrecarga de la serialización de punteros de interfaz. **CLSID \_ PortableDeviceService sigue** siendo compatible con las aplicaciones heredadas.
 
 
 ```C++
@@ -120,13 +120,13 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[**IPortableDeviceService (interfaz)**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)
+[**IPortableDeviceService (Interfaz)**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)
 </dt> <dt>
 
-[**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)
+[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
-[**IPortableDeviceServiceManager (interfaz)**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager)
+[**IPortableDeviceServiceManager (Interfaz)**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager)
 </dt> <dt>
 
 [WpdServicesApiSample](wpdapisample-sample-service-application.md)

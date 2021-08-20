@@ -65,7 +65,7 @@ Para obtener un ejemplo completo del XML para una tarea que usa este elemento, v
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -4,9 +4,9 @@ description: Obtención de información de configuración de secuencias de códe
 ms.assetid: 76c734a1-6fe4-4958-8773-a65f5ced80c6
 keywords:
 - streams,configurations from codecs
-- códecs, obtener configuraciones de flujo de
+- codecs,getting stream configurations from
 - streams,codec formats
-- códecs, formatos
+- codecs,formats
 - streams,IWMCodecInfo (interfaz)
 - IWMCodecInfo,about
 ms.topic: article
@@ -22,7 +22,7 @@ ms.locfileid: "118433871"
 
 En el caso de las secuencias de audio y vídeo que usan los códecs Windows Media Audio y Video, debe obtener los valores de las estructuras de configuración de secuencia del códec que desea usar. Aunque es posible establecer estos valores usted mismo, el uso de los códecs garantiza que los valores sean precisos. No debe modificar los valores de estas estructuras a menos que la documentación recomiende específicamente un cambio determinado.
 
-La información de los códecs tiene la forma de formatos de códec. Cada formato de códec es un formato de secuencia único admitido por el códec. Para obtener más información sobre los formatos de secuencia, vea [Formatos](formats.md).
+La información de los códecs se presenta en forma de formatos de códec. Cada formato de códec es un formato de secuencia único compatible con el códec. Para obtener más información sobre los formatos de secuencia, vea [Formatos](formats.md).
 
 Puede solicitar información de los códecs Windows Media mediante las interfaces [**IWMCodecInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo), [**IWMCodecInfo2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo2)e [**IWMCodecInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo3) del objeto del administrador de perfiles. Para obtener la [**interfaz IWMProfileManager de**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmprofilemanager) un objeto de administrador de perfiles, llame a la [**función WMCreateProfileManager.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreateprofilemanager) Llame **a QueryInterface** en **IWMProfileManager** para obtener **IWMCodecInfo3**.
 
@@ -32,8 +32,8 @@ En las secciones siguientes se describe cómo obtener la información que necesi
 
 | Sección                                                                                                | Descripción                                                                                                                                                           |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Para enumerar todos los códecs multimedia Windows instalados](to-enumerate-all-installed-windows-media-codecs.md) | Describe cómo usar los métodos de las interfaces **IWMCodecInfo** e **IWMCodecInfo2** para recuperar el nombre y el índice de códec de cada códec Windows Media instalado. |
-| [Para enumerar formatos de códec](to-enumerate-codec-formats.md)                                           | Describe cómo obtener objetos de configuración de secuencias de códecs para su uso en los perfiles.                                                                               |
+| [Para enumerar todos los códecs de Windows instalados](to-enumerate-all-installed-windows-media-codecs.md) | Describe cómo usar los métodos de las interfaces **IWMCodecInfo** e **IWMCodecInfo2** para recuperar el nombre y el índice de códec de cada códec Windows Media instalado. |
+| [Para enumerar formatos de códec](to-enumerate-codec-formats.md)                                           | Describe cómo obtener objetos de configuración de secuencia a partir de códecs para su uso en los perfiles.                                                                               |
 
 
 

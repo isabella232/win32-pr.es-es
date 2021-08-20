@@ -1,8 +1,8 @@
 ---
-description: Descomprime el archivo de dispositivo lógico (o directorio) especificado en la ruta de acceso del objeto. Este método es una versión extendida del método UNCOMPRESS. Este método se hereda de \_ LOGICALFILE CIM.
+description: Descomprime el archivo de dispositivo lógico (o directorio) especificado en la ruta de acceso del objeto. Este método es una versión extendida del método Uncompress. Este método se hereda de CIM \_ LogicalFile.
 ms.assetid: dfa53b75-56ef-4119-83b9-08b4371762c6
 ms.tgt_platform: multiple
-title: Método UncompressEx de la clase CIM_DeviceFile
+title: Método UncompressEx de la CIM_DeviceFile clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a760c31a2067c294ffb43064402ac179c5fba7c9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d2bbc4bd6c1d0580af07bf2db4e80af6b13d405eeda78caf67ee77e414bad82b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118172396"
 ---
-# <a name="uncompressex-method-of-the-cim_devicefile-class"></a>Método UncompressEx de la \_ clase DeviceFile de CIM
+# <a name="uncompressex-method-of-the-cim_devicefile-class"></a>Método UncompressEx de la clase \_ DeviceFile cim
 
-El método **UncompressEx** descomprime el archivo de dispositivo lógico (o directorio) especificado en la ruta de acceso del objeto. Este método es una versión extendida del método [**UNCOMPRESS**](uncompress-method-in-class-cim-devicefile.md) . Este método se hereda de [**\_ LogicalFile CIM**](cim-logicalfile.md).
+El **método UncompressEx** descomprime el archivo de dispositivo lógico (o directorio) especificado en la ruta de acceso del objeto. Este método es una versión extendida del [**método Uncompress.**](uncompress-method-in-class-cim-devicefile.md) Este método se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,24 +49,24 @@ uint32 UncompressEx(
 
 <dl> <dt>
 
-*StopFileName* \[ enuncia\]
+*StopFileName* \[ out\]
 </dt> <dd>
 
-Cadena que representa el nombre del archivo (o directorio) donde se produjo un error en el método. Este parámetro es **null** si el método se ejecuta correctamente.
+Cadena que representa el nombre del archivo (o directorio) en el que se ha fallado el método. Este parámetro es **NULL** si el método se realiza correctamente.
 
 </dd> <dt>
 
-*StartFileName* \[ de\]
+*StartFileName* \[ En\]
 </dt> <dd>
 
-Cadena que representa el archivo secundario (o directorio) que se va a utilizar como punto de partida para el método. Normalmente, el parámetro *StartFileName* es el parámetro *StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **null**, la operación se realiza en el archivo o directorio especificado en la llamada [**ExecMethod**](/windows/desktop/WmiSdk/swbemservices-execmethod) .
+Cadena que representa el archivo secundario (o directorio) que se usará como punto de partida para el método . Normalmente, el *parámetro StartFileName* es el *parámetro StopFileName* que especifica el archivo o directorio en el que se produjo un error de la llamada al método anterior. Si este parámetro es **NULL,** la operación se realiza en el archivo o directorio especificado en la [**llamada a ExecMethod.**](/windows/desktop/WmiSdk/swbemservices-execmethod)
 
 </dd> <dt>
 
-*Recursivo* \[ de\]
+*Recursivo* \[ En\]
 </dt> <dd>
 
-Si **es true**, este método también se aplica de forma recursiva a los archivos y directorios del directorio especificado por la instancia de [**\_ DeviceFile de CIM**](cim-devicefile.md) . En el caso de las instancias de archivo, este parámetro se omite.
+Si **es TRUE,** este método también se aplica de forma recursiva a los archivos y directorios dentro del directorio especificado por la instancia [**de \_ DeviceFile de CIM.**](cim-devicefile.md) En el caso de las instancias de archivo, este parámetro se omite.
 
 </dd> </dl>
 
@@ -90,7 +90,7 @@ Correcto.
 
 2
 
-Acceso denegado.
+Acceso denegado:
 
 </dd> <dt>
 
@@ -126,7 +126,7 @@ El objeto ya existe.
 
 11
 
-Sistema de archivos no NTFS.
+El sistema de archivos no es NTFS.
 
 </dd> <dt>
 
@@ -180,7 +180,7 @@ Archivo de inicio no válido.
 
 17
 
-Privilegio no mantenido.
+Privilegios no mantenidos.
 
 </dd> <dt>
 
@@ -193,22 +193,22 @@ Parámetro no válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no está implementado actualmente por WMI. Para usar este método, debe implementarlo en su propio proveedor.
+Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -217,10 +217,10 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[\_DEVICEFILE CIM](uncompressex-method-in-class-cim-devicefile.md)
+[CIM \_ DeviceFile](uncompressex-method-in-class-cim-devicefile.md)
 </dt> <dt>
 
-[**\_DEVICEFILE CIM**](cim-devicefile.md)
+[**CIM \_ DeviceFile**](cim-devicefile.md)
 </dt> </dl>
 
  

@@ -5,8 +5,8 @@ ms.assetid: d366696c-9128-4cbd-98d0-6c2d16c75d59
 ms.tgt_platform: multiple
 keywords:
 - Propiedad MustUnderstandOptions Windows administración remota
-- Propiedad MustUnderstandOptions Windows administración remota , objeto ResourceLocator
-- Objeto ResourceLocator Windows administración remota , propiedad MustUnderstandOptions
+- Propiedad MustUnderstandOptions Windows de administración remota, objeto ResourceLocator
+- Objeto ResourceLocator Windows administración remota, propiedad MustUnderstandOptions
 topic_type:
 - apiref
 api_name:
@@ -26,7 +26,7 @@ ms.locfileid: "118323743"
 ---
 # <a name="resourcelocatormustunderstandoptions-property"></a>Propiedad ResourceLocator.MustUnderstandOptions
 
-Obtiene o establece el **valor MustUnderstandOptions** para el [**objeto ResourceLocator.**](resourcelocator.md) Puede proporcionar un objeto [**ResourceLocator**](resourcelocator.md) en lugar de especificar un URI de recurso en operaciones de objeto [**de**](session.md) sesión como [**Session.Get**](session-get.md), [**Session.Put**](session-put.md)o [**Session.Enumerate.**](session-enumerate.md)
+Obtiene o establece el **valor MustUnderstandOptions** para el [**objeto ResourceLocator.**](resourcelocator.md) Puede proporcionar un objeto [**ResourceLocator**](resourcelocator.md) en lugar [](session.md) de especificar un URI de recurso en operaciones de objeto de sesión como [**Session.Get**](session-get.md), [**Session.Put**](session-put.md)o [**Session.Enumerate**](session-enumerate.md).
 
 Esta propiedad es de lectura y escritura.
 
@@ -41,7 +41,7 @@ ResourceLocator.MustUnderstandOptions As boolean
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Indica, cuando **es True**, que [](ws-management-protocol.md) el servicio que implementa el protocolo WS-Management debe devolver un error si no es capaz de procesar la opción.
+Indica, cuando es **True**, que [](ws-management-protocol.md) el servicio que implementa el protocolo WS-Management debe devolver un error si no es capaz de procesar la opción.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -62,7 +62,7 @@ Indica, cuando **es True**, que [](ws-management-protocol.md) el servicio que im
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

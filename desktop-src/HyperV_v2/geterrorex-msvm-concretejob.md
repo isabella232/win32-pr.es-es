@@ -1,5 +1,5 @@
 ---
-description: 'Método GetErrorEx de la clase Msvm_ConcreteJob : recupera los objetos de error del trabajo, si existe alguno.'
+description: 'Método GetErrorEx de la Msvm_ConcreteJob clase : recupera los objetos de error del trabajo, si existe alguno.'
 ms.assetid: B4B4F60C-9221-4125-8D42-F0F1D32C3E79
 title: Método GetErrorEx de la Msvm_ConcreteJob clase
 ms.topic: reference
@@ -20,9 +20,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118149807"
 ---
-# <a name="geterrorex-method-of-the-msvm_concretejob-class"></a>Método GetErrorEx de la clase ConcreteJob de \_ Msvm
+# <a name="geterrorex-method-of-the-msvm_concretejob-class"></a>Método GetErrorEx de la clase ConcreteJob de Msvm \_
 
-Recupera los objetos de error del trabajo, si existe alguno. Cuando el trabajo se está ejecutando o ha finalizado sin errores, este método no devuelve ninguna [**instancia de \_ error de Msvm.**](msvm-error.md) Sin embargo, si se ha producido un error en el trabajo debido a algún problema interno o porque un cliente ha finalizado el trabajo, se devuelven una o varias instancias de error de **Msvm. \_**
+Recupera los objetos de error para el trabajo, si existe alguno. Cuando el trabajo se está ejecutando o ha finalizado sin errores, este método no devuelve ninguna [**instancia de \_ error de Msvm.**](msvm-error.md) Sin embargo, si se ha producido un error en el trabajo debido a algún problema interno o porque un cliente ha finalizado el trabajo, se devuelven una o varias instancias de error de **Msvm. \_**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -86,7 +86,7 @@ Este método devuelve uno de los valores siguientes.
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-**El sistema no está** disponible (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
 **Memoria sin memoria** (32778)
@@ -110,7 +110,7 @@ El acceso a [**la clase \_ ConcreteJob de Msvm**](msvm-concretejob.md) podría e
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

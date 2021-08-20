@@ -1,25 +1,25 @@
 ---
-title: Propiedad IMsRdpClientAdvancedSettings BitmapVirtualCache16BppSize
+title: IMsRdpClientAdvancedSettings BitmapVirtualCache16BppSize, propiedad
 description: Especifica el tamaño, en megabytes, del archivo de caché de mapa de bits persistente que se usará para la configuración de alto color de 15 y 16 bits por píxel.
 ms.assetid: f2558c88-d60f-4be3-9941-8e0e18bbb778
 ms.tgt_platform: multiple
 keywords:
 - Propiedad BitmapVirtualCache16BppSize Servicios de Escritorio remoto
-- Propiedad BitmapVirtualCache16BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Propiedad BitmapVirtualCache16BppSize Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings
 - Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad BitmapVirtualCache16BppSize
-- La propiedad BitmapVirtualCache16BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
+- Propiedad BitmapVirtualCache16BppSize Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
 - Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad BitmapVirtualCache16BppSize
-- La propiedad BitmapVirtualCache16BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
+- Propiedad BitmapVirtualCache16BppSize Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
 - Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad BitmapVirtualCache16BppSize
-- Propiedad BitmapVirtualCache16BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Propiedad BitmapVirtualCache16BppSize Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
 - Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad BitmapVirtualCache16BppSize
-- La propiedad BitmapVirtualCache16BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Propiedad BitmapVirtualCache16BppSize Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
 - Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad BitmapVirtualCache16BppSize
-- La propiedad BitmapVirtualCache16BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Propiedad BitmapVirtualCache16BppSize Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
 - Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad BitmapVirtualCache16BppSize
-- La propiedad BitmapVirtualCache16BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Propiedad BitmapVirtualCache16BppSize Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
 - Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad BitmapVirtualCache16BppSize
-- La propiedad BitmapVirtualCache16BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Propiedad BitmapVirtualCache16BppSize Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
 - Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad BitmapVirtualCache16BppSize
 topic_type:
 - apiref
@@ -61,7 +61,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118353417"
 ---
-# <a name="imsrdpclientadvancedsettingsbitmapvirtualcache16bppsize-property"></a>Propiedad IMsRdpClientAdvancedSettings::BitmapVirtualCache16BppSize
+# <a name="imsrdpclientadvancedsettingsbitmapvirtualcache16bppsize-property"></a>IMsRdpClientAdvancedSettings::BitmapVirtualCache16BppSize, propiedad
 
 Especifica el tamaño, en megabytes, del archivo de caché de mapa de bits persistente que se usará para la configuración de alto color de 15 y 16 bits por píxel.
 
@@ -110,7 +110,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

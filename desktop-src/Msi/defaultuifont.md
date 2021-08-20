@@ -1,33 +1,33 @@
 ---
-description: La propiedad DefaultUIFont establece el estilo de fuente predeterminado que se usa para los controles. Para especificar el valor predeterminado, establezca DefaultUIFont en uno de los estilos predefinidos de la tabla TextStyle en la tabla de propiedades.
+description: La propiedad DefaultUIFont establece el estilo de fuente predeterminado que se usa para los controles. Para especificar el valor predeterminado, establezca DefaultUIFont en uno de los estilos predefinidos de la tabla TextStyle de la tabla Property.
 ms.assetid: 594183ce-ef13-47f6-a4ae-37ba09c06cbd
 title: Propiedad DefaultUIFont
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3791219dcef84253280fec3c797f2035afd239f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 46bf4c432a0e75c933136cc11e1dd8a55cc6a4cdf2f09c923804132b743e88c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105654024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119289585"
 ---
 # <a name="defaultuifont-property"></a>Propiedad DefaultUIFont
 
-La propiedad **DefaultUIFont** establece el estilo de fuente predeterminado que se usa para los controles. Para especificar el valor predeterminado, establezca **DefaultUIFont** en uno de los estilos predefinidos de la [tabla TextStyle](textstyle-table.md) en la [tabla de propiedades](property-table.md).
+La **propiedad DefaultUIFont** establece el estilo de fuente predeterminado que se usa para los controles. Para especificar el valor predeterminado, **establezca DefaultUIFont** en uno de los estilos predefinidos de la [tabla TextStyle](textstyle-table.md) de la [tabla Property](property-table.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La propiedad **DefaultUIFont** de cada paquete de instalación con una interfaz de usuario debe establecerse en la [tabla de propiedades](property-table.md) en uno de los estilos predefinidos enumerados en la [tabla TextStyle](textstyle-table.md). Si no se especifica esta propiedad, el instalador utiliza la fuente del sistema. Esto puede hacer que el instalador muestre de forma incorrecta cadenas de texto cuando la página de códigos del paquete es diferente de la página de códigos de la interfaz de usuario predeterminada del usuario.
+La **propiedad DefaultUIFont** de cada paquete de instalación con una interfaz de usuario debe establecerse en la tabla [Property](property-table.md) en uno de los estilos predefinidos enumerados en la [tabla TextStyle](textstyle-table.md). Si no se especifica esta propiedad, el instalador usa la fuente System. Esto puede hacer que el instalador muestre incorrectamente cadenas de texto cuando la página de códigos del paquete es diferente de la página de códigos predeterminada de la interfaz de usuario del usuario.
 
-El estilo de texto y fuente de un control se puede establecer tal y como se describe en [Agregar controles y texto](adding-controls-and-text.md). Si la cadena de caracteres que se muestra en la columna de texto de la tabla de [control](control-table.md) o de la [tabla BBControl](bbcontrol-table.md) no especifica el estilo de fuente, el control utiliza el valor de la propiedad **DefaultUIFont** como estilo de fuente.
+El texto y el estilo de fuente de un control se pueden establecer como se describe en [Agregar controles y texto.](adding-controls-and-text.md) Si la cadena de caracteres enumerada en la columna Texto de la tabla [Control](control-table.md) o la tabla [BBControl](bbcontrol-table.md) no especifica el estilo de fuente, el control usa el valor de la **propiedad DefaultUIFont** como estilo de fuente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte Windows [Installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows Installer.<br/> |
 
 
 

@@ -3,7 +3,7 @@ title: PLAYLIST.saturation
 description: El atributo de saturación especifica o recupera el valor de saturación de las imágenes desplegables.
 ms.assetid: 4c5dd3d9-828a-45c9-896a-9a702d354544
 keywords:
-- LISTA DE REPRODUCCIÓN.saturación Reproductor de Windows Media
+- Playlist.saturation Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -29,7 +29,7 @@ El **atributo de** saturación especifica o recupera el valor de saturación de 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un número de lectura y **escritura** (**float**) con un valor que va de 0,0 a 2,0 con un valor predeterminado de 1,0.
+Este atributo es un número de lectura y **escritura** **(float)** con un valor que va de 0,0 a 2,0 con un valor predeterminado de 1,0.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -45,11 +45,11 @@ Este atributo cambia el valor de saturación de las imágenes especificadas por 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**ELEMENTO PLAYLIST**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
 [**PLAYLIST.dropDownBackgroundImage**](playlist-dropdownbackgroundimage.md)

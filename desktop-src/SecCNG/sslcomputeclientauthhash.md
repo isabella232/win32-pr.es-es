@@ -1,7 +1,7 @@
 ---
 description: Calcula un hash que se usará durante la autenticación del certificado.
 ms.assetid: f4a12464-8ad6-4bf9-8b6e-49bdf5332b66
-title: Función SslComputeClientAuthHash (Sslprovider. h)
+title: Función SslComputeClientAuthHash (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: faea1699657efd92049068e48ff361c48242e9c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 59d1a4d8491175acb0f833cbafb430faae9b36b38a179970b7a99d6b0077591d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907166"
 ---
-# <a name="sslcomputeclientauthhash-function"></a>SslComputeClientAuthHash función)
+# <a name="sslcomputeclientauthhash-function"></a>Función SslComputeClientAuthHash
 
-La función **SslComputeClientAuthHash** calcula un [*hash*](/windows/desktop/SecGloss/h-gly) que se usará durante la autenticación de [*certificados*](/windows/desktop/SecGloss/c-gly) .
+La **función SslComputeClientAuthHash** calcula un [*hash*](/windows/desktop/SecGloss/h-gly) que se usará durante la [*autenticación de*](/windows/desktop/SecGloss/c-gly) certificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,56 +46,56 @@ SECURITY_STATUS WINAPI SslComputeClientAuthHash(
 
 <dl> <dt>
 
-*hSslProvider* \[ de\]
+*hSslProvider* \[ En\]
 </dt> <dd>
 
-Identificador de la instancia del proveedor de protocolo del [*Protocolo de capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) (SSL).
+Identificador de la instancia [*del proveedor Capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) protocolo de protocolo de seguridad (SSL).
 
 </dd> <dt>
 
-*hMasterKey* \[ de\]
+*hMasterKey* \[ En\]
 </dt> <dd>
 
-Identificador del objeto de [*clave maestra*](/windows/desktop/SecGloss/m-gly) .
+Identificador del objeto [*de clave*](/windows/desktop/SecGloss/m-gly) maestra.
 
 </dd> <dt>
 
-*hHandshakeHash* \[ de\]
+*hHandshakeHash* \[ En\]
 </dt> <dd>
 
-Identificador del hash del Protocolo de enlace calculado hasta ahora.
+Identificador del hash del protocolo de enlace calculado hasta ahora.
 
 </dd> <dt>
 
-*pszAlgId* \[ de\]
+*pszAlgId* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena Unicode terminada en null que identifica el [*algoritmo criptográfico*](/windows/desktop/SecGloss/c-gly)solicitado. Puede ser uno de los [**identificadores de algoritmo CNG**](cng-algorithm-identifiers.md) estándar o el identificador de otro algoritmo registrado.
+Puntero a una cadena Unicode terminada en NULL que identifica el algoritmo [*criptográfico solicitado.*](/windows/desktop/SecGloss/c-gly) Puede ser uno de los identificadores de algoritmo [**CNG**](cng-algorithm-identifiers.md) estándar o el identificador de otro algoritmo registrado.
 
 </dd> <dt>
 
-*pbOutput* \[ enuncia\]
+*pbOutput* \[ out\]
 </dt> <dd>
 
-La dirección de un búfer que recibe el [*BLOB de clave*](/windows/desktop/SecGloss/k-gly). El parámetro *cbOutput* contiene el tamaño de este búfer. Si este parámetro es **null**, esta función colocará el tamaño necesario, en bytes, en el **valor DWORD** al que apunta el parámetro *pcbResult* .
+Dirección de un búfer que recibe la [*clave BLOB*](/windows/desktop/SecGloss/k-gly). El *parámetro cbOutput* contiene el tamaño de este búfer. Si este parámetro es **NULL,** esta función colocará el tamaño necesario, en bytes, en el **DWORD** al que apunta el *parámetro byteResult.*
 
 </dd> <dt>
 
-*cbOutput* \[ de\]
+*cbOutput* \[ En\]
 </dt> <dd>
 
-La longitud, en bytes, del búfer *pbOutput* .
+Longitud, en bytes, del *búfer pbOutput.*
 
 </dd> <dt>
 
-*pcbResult* \[ enuncia\]
+*pwResult* \[ out\]
 </dt> <dd>
 
-Un puntero a un valor **DWORD** que especifica la longitud, en bytes, del hash escrito en el búfer de *pbOutput* .
+Puntero a un **valor DWORD** que especifica la longitud, en bytes, del hash escrito en el *búfer pbOutput.*
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 Este parámetro se reserva para uso futuro.
@@ -104,7 +104,7 @@ Este parámetro se reserva para uso futuro.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve cero.
+Si la función se realiza correctamente, devuelve cero.
 
 Si se produce un error en la función, devuelve un valor de error distinto de cero.
 
@@ -114,27 +114,27 @@ Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
 
 | Código o valor devuelto                                                                                                                                                    | Descripción                                          |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>**NTE \_ \_Identificador no válido**</dt> <dt>0x80090026L</dt> </dl> | Uno de los identificadores proporcionados no es válido.<br/> |
+| <dl> <dt>**NTE \_ IDENTIFICADOR \_ NO VÁLIDO**</dt> <dt>0x80090026L</dt> </dl> | Uno de los identificadores proporcionados no es válido.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **SslComputeClientAuthHash** calcula el hash que se envía en el mensaje de comprobación de certificado del Protocolo de enlace SSL. El valor hash se calcula creando un hash que contiene el secreto principal con un hash de todos los mensajes de protocolo de enlace anteriores enviados o recibidos. Para obtener más información sobre la secuencia del Protocolo de enlace SSL, vea [Descripción del Protocolo de enlace de capa de sockets seguros (SSL)](https://support.microsoft.com/kb/257591).
+La **función SslComputeClientAuthHash** calcula el hash que se envía en el mensaje de comprobación del certificado del protocolo de enlace SSL. El valor hash se calcula mediante la creación de un hash que contiene el secreto maestro con un hash de todos los mensajes de protocolo de enlace anteriores enviados o recibidos. Para obtener más información sobre la secuencia de protocolo de enlace SSL, vea Descripción del protocolo de enlace [Capa de sockets seguros (SSL).](https://support.microsoft.com/kb/257591)
 
-La forma en que se calcula el hash depende del protocolo y del conjunto de cifrado utilizado. Además, el hash depende del tipo de clave de autenticación de cliente utilizada. el parámetro *pszAlgId* indica el tipo de clave que se usa para la autenticación del cliente.
+La manera en que se calcula el hash depende del protocolo y el conjunto de cifrado usados. Además, el hash depende del tipo de clave de autenticación de cliente usada; El *parámetro pszAlgId* indica el tipo de clave que se usa para la autenticación de cliente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

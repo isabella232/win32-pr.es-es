@@ -76,7 +76,7 @@ Referencia al objeto de error, que define las direcciones inicial y final que se
 **Extensión**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Cim \_ StorageExtent**
+Tipo de datos: **\_ Cim StorageExtent**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -99,7 +99,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

@@ -17,7 +17,7 @@ Directiva de metadatos de fotos para [la propiedad System.GPS.Status.](../proper
 
 ### <a name="pkey"></a>Pkey
 
-Estado de GPS de PKEY \_ \_
+Estado GPS de PKEY \_ \_
 
 ### <a name="containers"></a>Contenedores
 
@@ -33,19 +33,19 @@ VT \_ LPWSTR
 
 ### <a name="input-propvariant-type"></a>Tipo PROPVARIANT de entrada
 
-Se \_ prefiere VT LPWSTR, pero también \_ se acepta VT LPSTR.
+Se \_ prefiere VT LPWSTR, pero también se \_ acepta VT LPSTR.
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se concilian los valores de esquemas diferentes.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policies"></a>Directivas JPEG
 
-### <a name="read-paths"></a>Rutas de acceso de lectura
+### <a name="read-paths"></a>Leer rutas de acceso
 
 
 
-| Pedido | Path                     | Formato de disco |
+| Pedido | Ruta de acceso                     | Formato de disco |
 |-------|--------------------------|-------------|
 | 1     | /app1/ifd/gps/{ushort=9} | ascii       |
 | 2     | /xmp/exif:GPSStatus      | unicode     |
@@ -58,7 +58,7 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido | Path                     | Formato de disco |
+| Pedido | Ruta de acceso                     | Formato de disco |
 |-------|--------------------------|-------------|
 | 1     | /app1/ifd/gps/{ushort=9} | ascii       |
 | 2     | /xmp/exif:GPSStatus      | unicode     |
@@ -71,7 +71,7 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido | Path                     |
+| Pedido | Ruta de acceso                     |
 |-------|--------------------------|
 | 1     | /app1/ifd/gps/{ushort=9} |
 | 2     | /xmp/exif:gpsstatus      |
@@ -82,11 +82,11 @@ Se concilian los valores de esquemas diferentes.
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Rutas de acceso de lectura
+### <a name="read-paths"></a>Leer rutas de acceso
 
 
 
-| Pedido | Path                    | Formato de disco |
+| Pedido | Ruta de acceso                    | Formato de disco |
 |-------|-------------------------|-------------|
 | 1     | /ifd/gps/{ushort=9}     | ascii       |
 | 2     | /ifd/xmp/exif:GPSStatus | unicode     |
@@ -99,7 +99,7 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido | Path                    | Formato de disco |
+| Pedido | Ruta de acceso                    | Formato de disco |
 |-------|-------------------------|-------------|
 | 1     | /ifd/gps/{ushort=9}     | ascii       |
 | 2     | /ifd/xmp/exif:GPSStatus | unicode     |
@@ -112,7 +112,7 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido | Path                    |
+| Pedido | Ruta de acceso                    |
 |-------|-------------------------|
 | 1     | /ifd/gps/{ushort=9}     |
 | 2     | /ifd/xmp/exif:gpsstatus |
@@ -121,7 +121,7 @@ Se concilian los valores de esquemas diferentes.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 

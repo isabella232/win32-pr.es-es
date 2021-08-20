@@ -1,5 +1,5 @@
 ---
-description: 'IWICBitmapFrameEncode_Commit_Proxy función: función de proxy para el método Commit.'
+description: 'IWICBitmapFrameEncode_Commit_Proxy función: función proxy para el método Commit.'
 ms.assetid: 605801e5-00f8-4e4f-87d3-ad34d3568ee5
 title: IWICBitmapFrameEncode_Commit_Proxy función
 ms.topic: reference
@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118711928"
 ---
-# <a name="iwicbitmapframeencode_commit_proxy-function"></a>IWICBitmapFrameEncode \_ Commit \_ Proxy function
+# <a name="iwicbitmapframeencode_commit_proxy-function"></a>Función IWICBitmapFrameEncode \_ Commit \_ Proxy
 
 Función de proxy para el [**método Commit.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-commit)
 
@@ -63,7 +63,7 @@ Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows \[ aplicaciones de escritorio de Vista\]<br/>                                                                                              |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows aplicaciones \[ de escritorio de Vista\]<br/>                                                                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
 | Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 

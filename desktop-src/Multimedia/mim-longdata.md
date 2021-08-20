@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MIM_LONGDATA (mmsystem. h)
-description: El mensaje de LONGDATA de MIM \_ se envía a una función de devolución de llamada de entrada MIDI cuando un búfer exclusivo del sistema se ha rellenado con datos y se devuelve a la aplicación.
+title: MIM_LONGDATA mensaje (Mmsystem.h)
+description: El MIM longdata se envía a una función de devolución de llamada de entrada DE MIDI cuando un búfer exclusivo del sistema se ha rellenado con datos y se devuelve \_ a la aplicación.
 ms.assetid: 3a11ed21-e7c5-4b78-9536-f0d862e26a02
 keywords:
-- Mensaje de MIM_LONGDATA de Windows multimedia
+- MIM_LONGDATA mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bc5f83b1f0468540da18d0d8317dae42cbf33bc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 82605835ce8ac231346014215c854abfe9ae7a55fd81e81b8d6214fb8a230327
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137216"
 ---
-# <a name="mim_longdata-message"></a>Mensaje de LONGDATA de MIM \_
+# <a name="mim_longdata-message"></a>\_MIM Mensaje LONGDATA
 
-El mensaje de **\_ LONGDATA de MIM** se envía a una función de devolución de llamada de entrada MIDI cuando un búfer exclusivo del sistema se ha rellenado con datos y se devuelve a la aplicación.
+El **MIM \_ longdata** se envía a una función de devolución de llamada de entrada DE MIDI cuando un búfer exclusivo del sistema se ha rellenado con datos y se devuelve a la aplicación.
 
 
 ```C++
@@ -41,24 +41,24 @@ dwParam2 = dwTimestamp
 <span id="lpMidiHdr"></span><span id="lpmidihdr"></span><span id="LPMIDIHDR"></span>*lpMidiHdr*
 </dt> <dd>
 
-Puntero a una estructura [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) que identifica el búfer de entrada.
+Puntero a una [**estructura MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) que identifica el búfer de entrada.
 
 </dd> <dt>
 
 <span id="dwTimestamp"></span><span id="dwtimestamp"></span><span id="DWTIMESTAMP"></span>*dwTimestamp*
 </dt> <dd>
 
-Hora a la que el controlador del dispositivo de entrada recibió los datos. La marca de tiempo se especifica en milisegundos, empezando por cero cuando se llamó a la función [**midiInStart**](/windows/win32/api/mmeapi/nf-mmeapi-midiinstart) .
+Hora a la que el controlador del dispositivo de entrada recibió los datos. La marca de tiempo se especifica en milisegundos, empezando por cero cuando se llamó [**a la función midiInStart.**](/windows/win32/api/mmeapi/nf-mmeapi-midiinstart)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Es posible que el búfer devuelto no esté lleno. Para determinar el número de bytes grabados en el búfer devuelto, use el miembro **dwBytesRecorded** de la estructura [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) especificada por *lpMidiHdr*.
+Es posible que el búfer devuelto no esté lleno. Para determinar el número de bytes registrados en el búfer devuelto, use el **miembro dwBytesRecorded** de la estructura [**MIDIHDR**](/windows/win32/api/mmeapi/ns-mmeapi-midihdr) especificada por *lpMidiHdr*.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Es posible que el búfer devuelto no esté lleno. Para determinar el número de 
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -79,7 +79,7 @@ Es posible que el búfer devuelto no esté lleno. Para determinar el número de 
 [Interfaz digital de instrumentos digitales (MIDI)](musical-instrument-digital-interface--midi.md)
 </dt> <dt>
 
-[Mensajes MIDI](midi-messages.md)
+[Mensajes DE MIDI](midi-messages.md)
 </dt> </dl>
 
  

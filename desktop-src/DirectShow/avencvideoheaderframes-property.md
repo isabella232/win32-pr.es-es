@@ -1,19 +1,19 @@
 ---
-description: Especifica el número de fotograma inicial en el encabezado grupo de imágenes (GOP).
+description: Especifica el número de fotograma inicial en el encabezado de grupo de imágenes (GOP).
 ms.assetid: 77b04001-f524-49c0-b2cf-be32ad16564b
-title: Propiedad AVEncVideoHeaderFrames (Codecapi. h)
+title: Propiedad AVEncVideoHeaderFrames (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c49d31a4b399f9f3af7ecb85cba65aa8fe536ba
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d20f90c50baed4278bf7c91a5838235e764ccf196dfb2575eac202d33fd88955
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104151999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119275704"
 ---
 # <a name="avencvideoheaderframes-property"></a>Propiedad AVEncVideoHeaderFrames
 
-Especifica el número de fotograma inicial en el encabezado grupo de imágenes (GOP).
+Especifica el número de fotograma inicial en el encabezado de grupo de imágenes (GOP).
 
 Esta propiedad es de lectura y escritura.
 
@@ -35,9 +35,9 @@ El intervalo válido de esta propiedad depende de la velocidad de fotogramas.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -48,7 +48,7 @@ El intervalo válido de esta propiedad depende de la velocidad de fotogramas.
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

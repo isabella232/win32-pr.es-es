@@ -37,7 +37,7 @@ Para obtener más información sobre los patrones de mensajería de dispositivos
 
 ## <a name="logical-and-physical-addressing"></a>Direccionamiento lógico y físico
 
-El direccionamiento lógico se usa para identificar de forma única los dispositivos independientes de sus direcciones físicas. WS-Discovery proporciona un mecanismo para resolver direcciones lógicas en direcciones físicas, lo que permite que se lleve a cabo la mensajería de cliente a dispositivo. Un ejemplo es el almacenamiento conectado a la red (NAS) que lleva con usted. Si tiene un portátil y un NAS, el portátil debe ser capaz de reconocer que es el mismo dispositivo, independientemente de la dirección física (dirección IP) que el NAS obtenga a medida que se mueve entre subredes. Para ello, es necesario que el dispositivo tenga una identidad independiente de la dirección IP que obtenga. puesto que los mecanismos tradicionales como DNS no están disponibles en un escenario de itinerancia normal, WS-Addressing y WS-Discovery proporcionan direccionamiento lógico y resolución como alternativa ad hoc.
+El direccionamiento lógico se usa para identificar de forma única los dispositivos independientes de sus direcciones físicas. WS-Discovery proporciona un mecanismo para resolver direcciones lógicas en direcciones físicas, lo que permite que se lleve a cabo la mensajería de cliente a dispositivo. Un ejemplo es el almacenamiento conectado a la red (NAS) que lleva con usted. Si tiene un portátil y un NAS, el portátil debe ser capaz de reconocer que es el mismo dispositivo, independientemente de la dirección física (dirección IP) que el NAS obtenga a medida que se mueve entre subredes. Para ello, es necesario que el dispositivo tenga una identidad independiente de la dirección IP que obtenga. dado que los mecanismos tradicionales como DNS no están disponibles en un escenario de itinerancia normal, WS-Addressing y WS-Discovery proporcionan direccionamiento lógico y resolución como alternativa ad hoc.
 
 Cuando se fabrica un dispositivo, se le da un identificador único global, representado como un URI uuid. Este identificador nunca cambiará para el dispositivo. Cuando el dispositivo está encendido, siempre anunciará su dirección lógica a través de un mensaje de WS-Discovery [Hello](hello-message.md) y aceptará solicitudes para convertirla en una dirección física (normalmente HTTP) a través de mensajes de WS-Discovery [Resolve](resolve-message.md) [o Probe.](probe-message.md) Una vez que se obtiene una dirección física válida (dirección IP), toda la mensajería se produce a través de esa dirección y WS-Discovery solo se usa si la dirección cambia, el dispositivo cambia de estado y es necesario notificar a los clientes o el dispositivo se queda sin conexión.
 
@@ -51,7 +51,7 @@ La detección de funciones se puede usar al compilar aplicaciones WSDAPI para cr
 
 <dl> <dt>
 
-[Patrones de mensaje de Exchange de detección y metadatos](discovery-and-metadata-exchange-message-patterns.md)
+[Patrones de mensajes de Exchange de detección y metadatos](discovery-and-metadata-exchange-message-patterns.md)
 </dt> <dt>
 
 [Cumplimiento de la especificación WSDAPI](wsdapi-specification-compliance.md)

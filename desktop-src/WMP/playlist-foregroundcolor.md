@@ -29,7 +29,7 @@ El **atributo foregroundColor** especifica o recupera el color de primer plano.
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer microsoft. Tiene un valor predeterminado igual al color Windows texto del sistema.
+Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer Microsoft. Tiene un valor predeterminado igual al color Windows texto del sistema.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Este atributo es una cadena de **lectura** y escritura que contiene cualquier va
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

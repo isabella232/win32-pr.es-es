@@ -1,9 +1,9 @@
 ---
-title: MDM_Policy_User_Result01_Settings02 (clase)
-description: La \_ clase Result01 de usuario de directiva de MDM \_ \_ \_ Settings02 obtiene la configuración para calendarios adicionales en la barra de tareas.
+title: MDM_Policy_User_Result01_Settings02 clase
+description: La clase MDM Policy User Result01 Settings02 obtiene la configuración \_ \_ de \_ \_ calendarios adicionales en la barra de tareas.
 ms.assetid: 84121b24-590a-4b0b-946f-8a107eaed6c6
 keywords:
-- MDM_Policy_User_Result01_Settings02 (clase)
+- MDM_Policy_User_Result01_Settings02 clase
 - MDM_Policy_User_Result01_Settings02 clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8b38956121d6391433fd2727048ce95eb0b5646
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 51693842dab0c230632198923d085f2987982acac711fb482d7f504643931ffa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118164309"
 ---
-# <a name="mdm_policy_user_result01_settings02-class"></a>\_Clase Settings02 de usuario de directiva MDM \_ \_ Result01 \_
+# <a name="mdm_policy_user_result01_settings02-class"></a>Clase MDM \_ Policy \_ User \_ Result01 \_ Settings02
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La \_ clase Result01 de usuario de directiva de MDM \_ \_ \_ Settings02 obtiene la configuración para calendarios adicionales en la barra de tareas.
+La clase MDM Policy User Result01 Settings02 obtiene la configuración \_ \_ de \_ \_ calendarios adicionales en la barra de tareas.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -46,13 +46,13 @@ class MDM_Policy_User_Result01_Settings02
 
 ## <a name="members"></a>Miembros
 
-La clase Result01 de usuario de la **\_ Directiva MDM \_ \_ \_ Settings02** tiene estos tipos de miembros:
+La **clase MDM Policy User \_ \_ \_ Result01 \_ Settings02** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase Result01 de usuario de la **\_ Directiva MDM \_ \_ \_ Settings02** tiene estas propiedades.
+La **clase MDM Policy User \_ \_ \_ Result01 \_ Settings02** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ La clase Result01 de usuario de la **\_ Directiva MDM \_ \_ \_ Settings02** tien
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -99,12 +99,12 @@ Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

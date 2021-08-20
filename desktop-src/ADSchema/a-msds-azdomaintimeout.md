@@ -52,7 +52,7 @@ Tiempo, en milisegundos, después de que se detecte que un dominio no es accesib
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
@@ -73,7 +73,7 @@ Tiempo, en milisegundos, después de que se detecte que un dominio no es accesib
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
@@ -136,7 +136,7 @@ Tiempo, en milisegundos, después de que se detecte que un dominio no es accesib
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |

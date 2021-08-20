@@ -21,7 +21,7 @@ PKEY \_ GPS \_ AltitudeRef
 
 ### <a name="description"></a>Descripción
 
-Indica la altitud usada como altitud de referencia. Un valor de 0 indica que la altitud está por encima del nivel del mar. Un valor de 1 indica una altitud por debajo del nivel del mar.
+Indica la altitud utilizada como altitud de referencia. Un valor de 0 indica que la altitud está por encima del nivel del mar. Un valor de 1 indica una altitud por debajo del nivel del mar.
 
 ### <a name="containers"></a>Contenedores
 
@@ -45,11 +45,11 @@ Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policies"></a>Directivas JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Path                     | Formato de disco |
+| Pedido | Ruta de acceso                     | Formato de disco |
 |-------|--------------------------|-------------|
 | 1     | /app1/ifd/gps/{ushort=5} | byte        |
 | 2     | /xmp/exif:GPSAltitudeRef | unicode     |
@@ -62,7 +62,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Path                     | Formato de disco |
+| Pedido | Ruta de acceso                     | Formato de disco |
 |-------|--------------------------|-------------|
 | 1     | /app1/ifd/gps/{ushort=5} | byte        |
 | 2     | /xmp/exif:GPSAltitudeRef | unicode     |
@@ -75,7 +75,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Path                     |
+| Pedido | Ruta de acceso                     |
 |-------|--------------------------|
 | 1     | /app1/ifd/gps/{ushort=5} |
 | 2     | /xmp/exif:gpsaltituderef |
@@ -86,11 +86,11 @@ Los valores de esquemas diferentes se concilian.
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Path                         | Formato de disco |
+| Pedido | Ruta de acceso                         | Formato de disco |
 |-------|------------------------------|-------------|
 | 1     | /ifd/gps/{ushort=5}          | byte        |
 | 2     | /ifd/xmp/exif:GPSAltitudeRef | unicode     |
@@ -103,7 +103,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Path                         | Formato de disco |
+| Pedido | Ruta de acceso                         | Formato de disco |
 |-------|------------------------------|-------------|
 | 1     | /ifd/gps/{ushort=5}          | byte        |
 | 2     | /ifd/xmp/exif:GPSAltitudeRef | unicode     |
@@ -116,7 +116,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Path                         |
+| Pedido | Ruta de acceso                         |
 |-------|------------------------------|
 | 1     | /ifd/gps/{ushort=5}          |
 | 2     | /ifd/xmp/exif:gpsaltituderef |
@@ -125,7 +125,7 @@ Los valores de esquemas diferentes se concilian.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -218,7 +218,7 @@ Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement 
 
 
 
-| Valor                                                                                         | Significado                                                      |
+| Value                                                                                         | Significado                                                      |
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------|
 | <dl> <dt>"CONTROLADOR IDE 0"</dt> </dl> | La instancia de representa el controlador principal.<br/>   |
 | <dl> <dt>"CONTROLADOR IDE 1"</dt> </dl> | La instancia de representa el controlador secundario.<br/> |
@@ -564,7 +564,7 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de horas consecutivas que este dispositivo se ha encendido desde su último ciclo de energía. Esta propiedad se hereda de [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
+Número de horas consecutivas que este dispositivo se ha encendido desde su último ciclo de energía. Esta propiedad se hereda de [**\_ LOGICALDevice de CIM,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
 
 </dd> <dt>
 
@@ -590,7 +590,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena que proporciona más información relacionada con el protocolo admitido por el controlador. Esta propiedad se hereda del [**controlador CIM. \_**](/windows/desktop/CIMWin32Prov/cim-controller)
+Cadena que proporciona más información relacionada con el protocolo admitido por el controlador. Esta propiedad se hereda del [**controlador CIM \_**](/windows/desktop/CIMWin32Prov/cim-controller).
 
 </dd> <dt>
 
@@ -603,7 +603,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Protocolo utilizado por el controlador para acceder a dispositivos controlados. Esta propiedad se hereda del [**controlador CIM. \_**](/windows/desktop/CIMWin32Prov/cim-controller)
+Protocolo utilizado por el controlador para acceder a dispositivos controlados. Esta propiedad se hereda del [**controlador CIM \_**](/windows/desktop/CIMWin32Prov/cim-controller).
 
 
 
@@ -626,7 +626,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Último estado solicitado o deseado para el elemento. El estado real del elemento se representa mediante **EnabledState**. Esta propiedad se proporciona para comparar los últimos estados solicitados y los estados habilitados o deshabilitados actuales. Es posible que una instancia determinada de un elemento lógico habilitado no **admita RequestedStateChange**. Si esto ocurre, se usa el valor 12 (No aplicable). Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Último estado solicitado o deseado para el elemento. El estado real del elemento se representa mediante **EnabledState**. Esta propiedad se proporciona para comparar los últimos estados solicitados y los estados habilitados o deshabilitados actuales. Es posible que una instancia determinada de un elemento lógico habilitado no **admita RequestedStateChange**. Si esto ocurre, se usa el valor 12 (no aplicable). Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
@@ -639,7 +639,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado actual del objeto. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)pero no se usa.
+Estado actual del objeto. Esta propiedad se hereda de [**\_ MANAGEDSystemElement de CIM,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)pero no se usa.
 
 </dd> <dt>
 
@@ -652,7 +652,7 @@ Tipo de datos: **matriz de** cadenas
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadenas que describen los distintos **valores de la matriz OperationalStatus.** Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
+Cadenas que describen los distintos **valores de matriz OperationalStatus.** Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -665,7 +665,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado actual del dispositivo lógico. Esta propiedad se hereda de [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
+Estado actual del dispositivo lógico. Esta propiedad se hereda de [**\_ LOGICALDevice de CIM,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
 
 </dd> <dt>
 
@@ -678,7 +678,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre de clase de creación del sistema de ámbito. Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
+Nombre de clase de creación del sistema de ámbito. Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
@@ -691,7 +691,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador único de la máquina virtual de ámbito. Esta propiedad se hereda de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
+Identificador único de la máquina virtual de ámbito. Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
@@ -704,7 +704,7 @@ Tipo de datos: **datetime**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La última vez que se encendera la máquina virtual. Esta propiedad se hereda del [**controlador CIM. \_**](/windows/desktop/CIMWin32Prov/cim-controller)
+La última vez que se encendera la máquina virtual. Esta propiedad se hereda del [**controlador CIM \_**](/windows/desktop/CIMWin32Prov/cim-controller).
 
 </dd> <dt>
 
@@ -717,7 +717,7 @@ Tipo de datos: **datetime**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha u hora en que cambió por última vez el estado habilitado del elemento. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Fecha u hora en que cambió por última vez el estado habilitado del elemento. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
@@ -730,7 +730,7 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número total de horas que se ha encendido este dispositivo. Esta propiedad se hereda de [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
+Número total de horas que se ha encendido este dispositivo. Esta propiedad se hereda de [**\_ LOGICALDevice de CIM,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
 
 </dd> <dt>
 
@@ -743,13 +743,13 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica el estado de destino al que la instancia está transfiriendo. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)), pero no se usa.
+Indica el estado de destino al que se está transfiriendo la instancia. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement,**](/previous-versions//cc136818(v=vs.85))pero no se usa.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentarios
 
-El acceso a la **clase \_ IDEController de Msvm** podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
+El acceso a la **clase \_ IDEController de Msvm** puede estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -765,7 +765,7 @@ El acceso a la **clase \_ IDEController de Msvm** podría estar restringido por 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

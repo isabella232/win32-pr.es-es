@@ -1,24 +1,24 @@
 ---
-title: Propiedad CanAutoReconnect de IMsRdpClientAdvancedSettings2
+title: Propiedad IMsRdpClientAdvancedSettings2 CanAutoReconnect
 description: Especifica si el control de cliente puede volver a conectarse automáticamente a la sesión actual en caso de desconexión de red.
 ms.assetid: 0a7ecf90-832b-4ec1-990b-7fe26ff134b1
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad CanAutoReconnect
-- Propiedad CanAutoReconnect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad CanAutoReconnect
-- Propiedad CanAutoReconnect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad CanAutoReconnect
-- Propiedad CanAutoReconnect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad CanAutoReconnect
-- Propiedad CanAutoReconnect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad CanAutoReconnect
-- Propiedad CanAutoReconnect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad CanAutoReconnect
-- Propiedad CanAutoReconnect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad CanAutoReconnect
-- Propiedad CanAutoReconnect Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad CanAutoReconnect
+- Propiedad CanAutoReconnect Servicios de Escritorio remoto
+- Propiedad CanAutoReconnect Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad CanAutoReconnect
+- Propiedad CanAutoReconnect Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad CanAutoReconnect
+- Propiedad CanAutoReconnect Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad CanAutoReconnect
+- Propiedad CanAutoReconnect Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad CanAutoReconnect
+- Propiedad CanAutoReconnect Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad CanAutoReconnect
+- Propiedad CanAutoReconnect Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad CanAutoReconnect
+- Propiedad CanAutoReconnect Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad CanAutoReconnect
 topic_type:
 - apiref
 api_name:
@@ -42,14 +42,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d8c8f4113c39b79783978252136c50d2111ed0c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 20d64ac732af45e935ddef8d0436bc2b9173854394c55bcc19c085dec5926e31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001423"
 ---
-# <a name="imsrdpclientadvancedsettings2canautoreconnect-property"></a>IMsRdpClientAdvancedSettings2:: CanAutoReconnect (propiedad)
+# <a name="imsrdpclientadvancedsettings2canautoreconnect-property"></a>Propiedad IMsRdpClientAdvancedSettings2::CanAutoReconnect
 
 Especifica si el control de cliente puede volver a conectarse automáticamente a la sesión actual en caso de desconexión de red.
 
@@ -68,19 +68,19 @@ HRESULT get_CanAutoReconnect(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Recibe la **variante \_ true** si el control puede volver a conectarse automáticamente y la **variante \_ false** en caso contrario.
+Recibe **VARIANT \_ TRUE si** el control puede volver a conectarse automáticamente y VARIANT FALSE **\_ en** caso contrario.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Entre las situaciones en las que la reconexión automática podría no estar habilitada se incluyen aquellas en las que un administrador usa la Directiva de grupo para deshabilitar reconexión automática del y los entornos heredados que no admiten la reconexión automática.
+Entre las situaciones en las que es posible que no se habilite la reconexión automática se incluyen aquellas en las que un administrador usa la directiva de grupo para deshabilitar la conexión automática y entornos heredados que no admiten la reconexión automática.
 
-No se puede establecer esta propiedad cuando el control está conectado.
+Esta propiedad no se puede establecer cuando el control está conectado.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

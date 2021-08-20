@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método GenerateReportEx Servicios de Escritorio remoto
 - Método GenerateReportEx Servicios de Escritorio remoto , Win32_TSLicenseReport clase
-- Win32_TSLicenseReport clase Servicios de Escritorio remoto , método GenerateReportEx
+- Win32_TSLicenseReport clase Servicios de Escritorio remoto método , GenerateReportEx
 topic_type:
 - apiref
 api_name:
@@ -76,7 +76,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

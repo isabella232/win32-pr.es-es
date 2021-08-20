@@ -1,12 +1,12 @@
 ---
-title: Método SetStringProperty de la Win32_RDSHServer (Certenroll.h)
+title: Método SetStringProperty de la Win32_RDSHServer clase (Certenroll.h)
 description: Actualiza un valor de propiedad de cadena de un objeto \_ RDSHServer de Win32.
 ms.assetid: 9a338872-27fc-4e37-afd6-20a42c7859e5
 ms.tgt_platform: multiple
 keywords:
 - Método SetStringProperty Servicios de Escritorio remoto
 - Método SetStringProperty Servicios de Escritorio remoto , Win32_RDSHServer clase
-- Win32_RDSHServer clase Servicios de Escritorio remoto , método SetStringProperty
+- Win32_RDSHServer clase Servicios de Escritorio remoto método , SetStringProperty
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118349396"
 ---
-# <a name="setstringproperty-method-of-the-win32_rdshserver-class"></a>Método SetStringProperty de la clase \_ RDSHServer de Win32
+# <a name="setstringproperty-method-of-the-win32_rdshserver-class"></a>Método SetStringProperty de la clase RDSHServer de Win32 \_
 
 Actualiza un valor de propiedad de cadena de [**un objeto \_ RDSHServer de Win32.**](win32-rdshserver.md)
 
@@ -66,7 +66,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
@@ -77,7 +77,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

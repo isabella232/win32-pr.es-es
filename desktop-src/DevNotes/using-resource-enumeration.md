@@ -1,19 +1,19 @@
 ---
-description: En el ejemplo siguiente se muestra cómo usar la función VerifierEnumerateResource y los elementos de programación relacionados para abstraer y categorizar la información de recursos específicos del proceso.
+description: En el ejemplo siguiente se muestra cómo usar la función VerifierEnumerateResource y los elementos de programación relacionados para abstraer y clasificar la información de recursos específica del proceso.
 ms.assetid: e0c2c795-2960-44f9-8b63-2329f5b42e15
-title: Usar la enumeración de recursos
+title: Uso de la enumeración de recursos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36791b39ae08bedce9fffccdb78b6c7591ebbee3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: eb201fb263cf89cc0eaae2c967390c9868fc5d77d6ff9d2e60a641d6659de34d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103998089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118161208"
 ---
-# <a name="using-resource-enumeration"></a>Usar la enumeración de recursos
+# <a name="using-resource-enumeration"></a>Uso de la enumeración de recursos
 
-En el ejemplo siguiente se muestra cómo usar la función [**VerifierEnumerateResource**](/windows/desktop/api/Avrfsdk/nf-avrfsdk-verifierenumerateresource) y los elementos de programación relacionados para abstraer y categorizar la información de recursos específicos del proceso.
+En el ejemplo siguiente se muestra cómo usar la [**función VerifierEnumerateResource**](/windows/desktop/api/Avrfsdk/nf-avrfsdk-verifierenumerateresource) y los elementos de programación relacionados para abstraer y clasificar la información de recursos específica del proceso.
 
 
 ```C++

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - winioctl.h.h
-ms.openlocfilehash: ffda37d918406a696a29a9bf2903424523c3b830
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b4a8e71a855419023adc837f6fd6711ecb013b5b84cecb1ceecd4b987d3beabc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108119403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117996513"
 ---
 # <a name="storage_hw_firmware_info_query-structure"></a>ESTRUCTURA DE CONSULTA DE INFORMACIÓN DE FIRMWARE DE HARDWARE \_ \_ DE \_ \_ ALMACENAMIENTO
 
@@ -63,7 +63,7 @@ Marcas asociadas a la consulta. Las siguientes son marcas que se pueden establec
 
 
 
-| Marcar                                             | Descripción                                                                        |
+| Marca                                             | Descripción                                                                        |
 |--------------------------------------------------|------------------------------------------------------------------------------------|
 | CONTROLADOR DE MARCA DE SOLICITUD DE FIRMWARE DE HARDWARE \_ \_ DE \_ \_ \_ ALMACENAMIENTO | Indica que el destino de la solicitud es distinto de la propia mano o el objeto del dispositivo. |
 
@@ -86,13 +86,13 @@ Reservado para uso futuro.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10 solo \[ aplicaciones de escritorio\]<br/>                                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                                        |
-| Encabezado<br/>                   | <dl> <dt>Winioctl.h.h (incluir Windows.h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                                 |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                        |
+| Header<br/>                   | <dl> <dt>Winioctl.h.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -102,7 +102,7 @@ Reservado para uso futuro.
 [**ACTIVACIÓN DEL \_ FIRMWARE DEL HW DE \_ \_ ALMACENAMIENTO**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_activate)
 </dt> <dt>
 
-[**DESCARGA DE \_ FIRMWARE DE \_ ALMACENAMIENTO DE IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_download)
+[**DESCARGA DE \_ FIRMWARE DE ALMACENAMIENTO \_ DE IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_download)
 </dt> <dt>
 
 [**DESCARGA DE \_ FIRMWARE DE HARDWARE DE \_ \_ ALMACENAMIENTO**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_download)

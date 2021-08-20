@@ -201,7 +201,7 @@ La **interfaz Microsoft.Interop.Security.AzRoles.IAzAuthorizationStore2** tiene 
 | **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.DeletePolicyReaderName**        | [**AzAuthorizationStore::D eletePolicyReaderName**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletepolicyreadername)<br/>               |
 | **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.DeletePropertyItem**            | [**AzAuthorizationStore::D eletePropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-deletepropertyitem)<br/>                       |
 | **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.GetProperty**                   | [**AzAuthorizationStore::GetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-getproperty)<br/>                                     |
-| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.Initialize**                    | [**AzAuthorizationStore::Initialize**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-initialize)<br/>                                       |
+| **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.Initializar**                    | [**AzAuthorizationStore::Initialize**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-initialize)<br/>                                       |
 | **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.OpenApplication**               | [**AzAuthorizationStore::OpenApplication**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-openapplication)<br/>                             |
 | **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.OpenApplication2**              | [**IAzAuthorizationStore2::OpenApplication2**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore2-openapplication2)<br/>                       |
 | **Microsoft.Interop.Security.Azroles.IAzAuthorizationStore2.OpenApplicationGroup**          | [**AzAuthorizationStore::OpenApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazauthorizationstore-openapplicationgroup)<br/>                   |
@@ -247,7 +247,7 @@ La **interfaz Microsoft.Interop.Security.AzRoles.IAzAuthorizationStore2** tiene 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |---------------------|-------------------------------------------------------------------------------------------------------------------|
 | Ensamblado<br/> | <dl> <dt>Microsoft.Interop.Security.Azroles.dll</dt> </dl> |
 

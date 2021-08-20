@@ -1,7 +1,7 @@
 ---
-description: Administra los medios virtuales (archivos. vhd,. vhdx,. ISO o. VFD) para una máquina virtual.
+description: Administra los medios virtuales (archivos .vhd, .vhdx, .iso o .vfd) de una máquina virtual.
 ms.assetid: 7caa720e-37cf-454e-8634-f2bd82bcf83d
-title: Msvm_ImageManagementService (clase)
+title: Msvm_ImageManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -41,18 +41,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 36a45041ec41b8fbd87801a65fa2b28ac99da6a8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6836477bbeadac015c2759758b81d0f93ce938ea9ac730d5d610a2ddc819759a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148408"
 ---
-# <a name="msvm_imagemanagementservice-class"></a>MSVM \_ ImageManagementService (clase)
+# <a name="msvm_imagemanagementservice-class"></a>Clase Msvm \_ ImageManagementService
 
-Administra los medios virtuales (archivos. vhd,. vhdx,. ISO o. VFD) para una máquina virtual.
+Administra los medios virtuales (archivos .vhd, .vhdx, .iso o .vfd) de una máquina virtual.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -93,38 +93,38 @@ class Msvm_ImageManagementService : CIM_Service
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ ImageManagementService** tiene estos tipos de miembros:
+La **clase Msvm \_ ImageManagementService** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **MSVM \_ ImageManagementService** tiene estos métodos.
+La **clase Msvm \_ ImageManagementService** tiene estos métodos.
 
 
 
 | Método                                                                                                           | Descripción                                                                                                                                                                                                                                 |
 |:-----------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AttachVirtualHardDisk**](attachvirtualharddisk-msvm-imagemanagementservice.md)                               | Conecta un archivo de imagen de disco virtual en modo de bucle invertido.<br/>                                                                                                                                                                             |
+| [**AttachVirtualHardDisk**](attachvirtualharddisk-msvm-imagemanagementservice.md)                               | Adjunta un archivo de imagen de disco virtual en modo de bucle recuperación.<br/>                                                                                                                                                                             |
 | [**CompactVirtualHardDisk**](compactvirtualharddisk-msvm-imagemanagementservice.md)                             | Compacta un archivo de disco duro virtual.<br/>                                                                                                                                                                                               |
-| [**ConvertVirtualHardDisk**](convertvirtualharddisk-msvm-imagemanagementservice.md)                             | Convierte un disco duro virtual existente en un tipo o formato diferente.<br/>                                                                                                                                                            |
-| [**ConvertVirtualHardDiskToVHDSet**](msvm-imagemanagementservice-convertvirtualharddisktovhdset.md)             | Convierte un archivo de disco duro virtual mediante la creación de un nuevo archivo del conjunto de VHD junto con el disco duro virtual existente.<br/>                                                                                                                       |
-| [**CreateVirtualFloppyDisk**](createvirtualfloppydisk-msvm-imagemanagementservice.md)                           | Crea un archivo de disquete virtual.<br/>                                                                                                                                                                                              |
+| [**ConvertVirtualHardDisk**](convertvirtualharddisk-msvm-imagemanagementservice.md)                             | Convierte un disco duro virtual existente a un tipo o formato diferente.<br/>                                                                                                                                                            |
+| [**ConvertVirtualHardDiskToVHDSet**](msvm-imagemanagementservice-convertvirtualharddisktovhdset.md)             | Convierte un archivo de disco duro virtual mediante la creación de un nuevo archivo de conjunto de VHD junto con el disco duro virtual existente.<br/>                                                                                                                       |
+| [**CreateVirtualFstonePyDisk**](createvirtualfloppydisk-msvm-imagemanagementservice.md)                           | Crea un archivo de disquete virtual.<br/>                                                                                                                                                                                              |
 | [**CreateVirtualHardDisk**](createvirtualharddisk-msvm-imagemanagementservice.md)                               | Crea un archivo de disco duro virtual.<br/>                                                                                                                                                                                                |
-| [**DeleteVHDSnapshot**](msvm-imagemanagementservice-deletevhdsnapshot.md)                                       | Elimina una entrada de instantánea de VHD dentro de un archivo de VHD set.<br/>                                                                                                                                                                              |
-| [**FindMountedStorageImageInstance**](msvm-imagemanagementservice-findmountedstorageimageinstance.md)           | Busca un \_ objeto MSVM MountedStorageImage para una ruta de acceso de imagen de disco determinada.<br/>                                                                                                                                                            |
-| [**GetVHDSetInformation**](msvm-imagemanagementservice-getvhdsetinformation.md)                                 | Recupera información acerca de un archivo de VHD set.<br/>                                                                                                                                                                                      |
-| [**GetVHDSnapshotInformation**](msvm-imagemanagementservice-getvhdsnapshotinformation.md)                       | Recupera información sobre una instantánea de VHD dentro de un archivo de VHD set.<br/>                                                                                                                                                                |
-| [**GetVirtualDiskChanges**](msvm-imagemanagementservice-getvirtualdiskchanges.md)                               | Recupera una lista de cambios en la región especificada de un disco virtual desde el identificador de Change Tracking resistente o el identificador de la instantánea de VHDSet proporcionado.<br/>                                                                                     |
+| [**DeleteVHDSnapshot**](msvm-imagemanagementservice-deletevhdsnapshot.md)                                       | Elimina una entrada de instantánea de VHD dentro de un archivo de conjunto de VHD.<br/>                                                                                                                                                                              |
+| [**FindMountedStorageImageInstance**](msvm-imagemanagementservice-findmountedstorageimageinstance.md)           | Busca un objeto Msvm \_ MountedStorageImage para una ruta de acceso de imagen de disco determinada.<br/>                                                                                                                                                            |
+| [**GetVHDSetInformation**](msvm-imagemanagementservice-getvhdsetinformation.md)                                 | Recupera información sobre un archivo de conjunto de VHD.<br/>                                                                                                                                                                                      |
+| [**GetVHDSnapshotInformation**](msvm-imagemanagementservice-getvhdsnapshotinformation.md)                       | Recupera información sobre una instantánea de VHD dentro de un archivo de conjunto de VHD.<br/>                                                                                                                                                                |
+| [**GetVirtualDiskChanges**](msvm-imagemanagementservice-getvirtualdiskchanges.md)                               | Recupera una lista de cambios en la región especificada de un disco virtual desde el identificador de Change Tracking resistente proporcionado o el identificador de instantánea VHDSet.<br/>                                                                                     |
 | [**GetVirtualHardDiskSettingData**](getvirtualharddisksettingdata-msvm-imagemanagementservice.md)               | Recupera los datos de configuración asociados a los archivos de disco duro virtual.<br/>                                                                                                                                                                  |
 | [**GetVirtualHardDiskState**](getvirtualharddiskstate-msvm-imagemanagementservice.md)                           | Recupera el estado de los archivos de disco duro virtual.<br/>                                                                                                                                                                                      |
-| [**MergeVirtualHardDisk**](mergevirtualharddisk-msvm-imagemanagementservice.md)                                 | Combina un disco duro virtual secundario en una cadena de diferenciación con uno o varios discos duros virtuales principales de la cadena.<br/>                                                                                                                |
-| [**OptimizeVHDSet**](msvm-imagemanagementservice-optimizevhdset.md)                                             | Optimiza un archivo de VHD set para que use menos espacio en disco.<br/>                                                                                                                                                                                 |
+| [**MergeVirtualHardDisk**](mergevirtualharddisk-msvm-imagemanagementservice.md)                                 | Combina un disco duro virtual secundario en una cadena de diferenciación con uno o varios discos duros virtuales primarios de la cadena.<br/>                                                                                                                |
+| [**OptimizeVHDSet**](msvm-imagemanagementservice-optimizevhdset.md)                                             | Optimiza un archivo de conjunto de VHD para usar menos espacio en disco.<br/>                                                                                                                                                                                 |
 | [**RequestStateChange**](msvm-imagemanagementservice-requeststatechange.md)                                     | Solicita un cambio de estado.<br/>                                                                                                                                                                                                         |
 | [**ResizeVirtualHardDisk**](resizevirtualharddisk-msvm-imagemanagementservice.md)                               | Cambia el tamaño de un disco duro virtual existente.<br/>                                                                                                                                                                                           |
-| [**SetParentVirtualHardDisk**](setparentvirtualharddisk-msvm-imagemanagementservice.md)                         | Actualiza el elemento primario de los archivos de disco duro virtual de hoja y secundario especificados.<br/>                                                                                                                                                     |
-| [**SetVHDSnapshotInformation**](msvm-imagemanagementservice-setvhdsnapshotinformation.md)                       | Edita una entrada de instantánea de VHD dentro de un archivo de conjunto de VHD. Si el ID. de instantánea en cuestión ya existe, la entrada de instantánea existente se sobrescribirá con la nueva entrada. De lo contrario, la nueva entrada se agregará al archivo del conjunto de VHD.<br/> |
+| [**SetParentVirtualHardDisk**](setparentvirtualharddisk-msvm-imagemanagementservice.md)                         | Actualiza el elemento primario de los archivos de disco duro virtual hoja y secundario especificados.<br/>                                                                                                                                                     |
+| [**SetVHDSnapshotInformation**](msvm-imagemanagementservice-setvhdsnapshotinformation.md)                       | Edita una entrada de instantánea de VHD dentro de un archivo de conjunto de VHD. Si el identificador de instantánea en cuestión ya existe, la entrada snapshot existente se sobrescribirá con la nueva entrada. De lo contrario, la nueva entrada se agregará al archivo de conjunto de VHD.<br/> |
 | [**SetVirtualHardDiskSettingData**](setvirtualharddisksettingdata-msvm-imagemanagementservice.md)               | Establece un archivo de disco duro virtual.<br/>                                                                                                                                                                                                   |
 | [**StartService**](msvm-imagemanagementservice-startservice.md)                                                 | inicia el servicio.<br/>                                                                                                                                                                                                              |
 | [**StopService**](msvm-imagemanagementservice-stopservice.md)                                                   | detiene el servicio.<br/>                                                                                                                                                                                                               |
@@ -137,20 +137,20 @@ La clase **MSVM \_ ImageManagementService** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ ImageManagementService** tiene estas propiedades.
+La **clase Msvm \_ ImageManagementService** tiene estas propiedades.
 
 <dl> <dt>
 
 **AvailableRequestedStates**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica los valores posibles para el parámetro *RequestedState* del método **RequestStateChange** . Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre está establecida en **null**.
+Indica los valores posibles para el *parámetro RequestedState* del **método RequestStateChange.** Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre se establece en **Null.**
 
 </dd> <dt>
 
@@ -163,20 +163,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "servicio de administración de imágenes de Hyper-V".
+Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "Servicio de administración de imágenes de Hyper-V".
 
 </dd> <dt>
 
 **CommunicationStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica la capacidad de la instrumentación de comunicarse con el elemento administrado subyacente. Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Indica la capacidad de la instrumentación para comunicarse con el elemento administrado subyacente. Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -198,7 +198,7 @@ Indica la capacidad de la instrumentación de comunicarse con el elemento admini
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000... )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -212,7 +212,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre de la clase o subclase utilizada en la creación de una instancia de. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en "MSVM \_ ImageManagementService".
+Nombre de la clase o subclase utilizada en la creación de una instancia de . Esta propiedad se hereda del servicio [**CIM \_**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en "Msvm \_ ImageManagementService".
 
 </dd> <dt>
 
@@ -225,30 +225,30 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre está establecida en "proporciona servicio de administración de imágenes para Hyper-V".
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)de CIM y siempre se establece en "Proporciona servicio de administración de imágenes para Hyper-V".
 
 </dd> <dt>
 
 **DetailedStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Complementa la propiedad **PrimaryStatus** con detalles de estado adicionales. Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Complementa la **propiedad PrimaryStatus con** detalles de estado adicionales. Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
 <span id="Not_Available"></span><span id="not_available"></span><span id="NOT_AVAILABLE"></span>**No disponible** (0)
 </dt> <dt>
 
-<span id="No_Additional_Information"></span><span id="no_additional_information"></span><span id="NO_ADDITIONAL_INFORMATION"></span>**No hay información adicional** (1)
+<span id="No_Additional_Information"></span><span id="no_additional_information"></span><span id="NO_ADDITIONAL_INFORMATION"></span>**Sin información adicional** (1)
 </dt> <dt>
 
-<span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>Con **estrés** (2)
+<span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>**Estresado** (2)
 </dt> <dt>
 
 <span id="Predictive_Failure"></span><span id="predictive_failure"></span><span id="PREDICTIVE_FAILURE"></span>**Error predictivo** (3)
@@ -257,13 +257,13 @@ Complementa la propiedad **PrimaryStatus** con detalles de estado adicionales. U
 <span id="Non-Recoverable_Error"></span><span id="non-recoverable_error"></span><span id="NON-RECOVERABLE_ERROR"></span>**Error no recuperable** (4)
 </dt> <dt>
 
-<span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Entidad auxiliar en error** (5)
+<span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Entidad de compatibilidad con error** (5)
 </dt> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000... )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -277,59 +277,59 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "servicio de administración de imágenes de Hyper-V".
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "Servicio de administración de imágenes de Hyper-V".
 
 </dd> <dt>
 
 **EnabledDefault**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Configuración predeterminada o de inicio de un administrador para el estado habilitado de un elemento. Esta propiedad se hereda de [**\_ EnabledLogicalElement CIM**](/previous-versions//cc136818(v=vs.85))y siempre está establecida en 2 (habilitada).
+Configuración predeterminada o de inicio de un administrador para el estado habilitado de un elemento. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre se establece en 2 (Habilitado).
 
 </dd> <dt>
 
 **EnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estados habilitado y deshabilitado de un elemento. También puede indicar las transiciones entre estos Estados solicitados. Esta propiedad se hereda de [**\_ EnabledLogicalElement CIM**](/previous-versions//cc136818(v=vs.85))y siempre está establecida en 2 (habilitada).
+Estados habilitados y deshabilitados de un elemento. También puede indicar las transiciones entre estos estados solicitados. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre se establece en 2 (Habilitado).
 
 </dd> <dt>
 
 **HealthState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado actual del elemento. Este atributo expresa el estado de este elemento, pero no necesariamente el de sus subcomponentes. Los valores posibles son de 0 a 30, donde 5 significa que el elemento es completamente correcto y 30 significa que el elemento no es totalmente funcional. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y siempre está establecida en 5.
+Estado actual del elemento. Este atributo expresa el estado de este elemento, pero no necesariamente el de sus subcomponentes. Los valores posibles son de 0 a 30, donde 5 significa que el elemento es completamente correcto y 30 significa que el elemento es completamente no funcional. Esta propiedad se hereda de [**Cim \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y siempre se establece en 5.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha y hora en que se creó la configuración de la máquina virtual. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fecha y hora en que se creó la configuración de la máquina virtual. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -342,10 +342,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -358,23 +358,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **invalidación** ("nombre"), **MaxLen** (256)
+Calificadores: **Key**, **Override** ("Name"), **MaxLen** (256)
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en "vhdsvc".
+Etiqueta por la que se conoce el objeto. Esta propiedad se hereda del [**servicio CIM \_**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en "vhdsvc".
 
 </dd> <dt>
 
 **OperatingStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Proporciona información sobre el estado actual de la condición operativa del elemento y se puede usar para proporcionar más detalles con respecto al valor de la propiedad **EnabledState** . Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Proporciona información de estado actual para la condición operativa del elemento y se puede usar para proporcionar más detalles con respecto al valor de la **propiedad EnabledState.** Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -387,10 +387,10 @@ Proporciona información sobre el estado actual de la condición operativa del e
 <span id="Servicing"></span><span id="servicing"></span><span id="SERVICING"></span>**Mantenimiento** (2)
 </dt> <dt>
 
-<span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>**Inicio** (3)
+<span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>**A partir** de (3)
 </dt> <dt>
 
-<span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>**Detención** (4)
+<span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>**Detener** (4)
 </dt> <dt>
 
 <span id="Stopped"></span><span id="stopped"></span><span id="STOPPED"></span>**Detenido** (5)
@@ -408,19 +408,19 @@ Proporciona información sobre el estado actual de la condición operativa del e
 <span id="Migrating"></span><span id="migrating"></span><span id="MIGRATING"></span>**Migración** (9)
 </dt> <dt>
 
-<span id="Emigrating"></span><span id="emigrating"></span><span id="EMIGRATING"></span>**Emigrating** (10)
+<span id="Emigrating"></span><span id="emigrating"></span><span id="EMIGRATING"></span>**Contrabando** (10)
 </dt> <dt>
 
-<span id="Immigrating"></span><span id="immigrating"></span><span id="IMMIGRATING"></span>**Migración** (11)
+<span id="Immigrating"></span><span id="immigrating"></span><span id="IMMIGRATING"></span>**Immigrating** (11)
 </dt> <dt>
 
-<span id="Snapshotting"></span><span id="snapshotting"></span><span id="SNAPSHOTTING"></span>**Instantánea** (12)
+<span id="Snapshotting"></span><span id="snapshotting"></span><span id="SNAPSHOTTING"></span>**Instantáneas** (12)
 </dt> <dt>
 
-<span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span>**Cerrando** (13)
+<span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span>**Apagar** (13)
 </dt> <dt>
 
-<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**En pruebas** (14)
+<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**En prueba** (14)
 </dt> <dt>
 
 <span id="Transitioning"></span><span id="transitioning"></span><span id="TRANSITIONING"></span>**Transición** (15)
@@ -432,7 +432,7 @@ Proporciona información sobre el estado actual de la condición operativa del e
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000... )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -440,13 +440,13 @@ Proporciona información sobre el estado actual de la condición operativa del e
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado actual del objeto. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y cada elemento de la matriz siempre se establece en 2 (correcto).
+Estado actual del objeto. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y cada elemento de matriz siempre se establece en 2 (correcto).
 
 </dd> <dt>
 
@@ -459,7 +459,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado habilitado o deshabilitado del elemento cuando la propiedad **EnabledState** está establecida en 1 (otro). Esta propiedad debe establecerse en **null** cuando **EnabledState** es cualquier valor distinto de 1. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre está establecida en **null**.
+Estado habilitado o deshabilitado del elemento cuando la **propiedad EnabledState** está establecida en 1 (Other). Esta propiedad debe establecerse en **Null cuando** **EnabledState** es cualquier valor distinto de 1. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre se establece en **Null.**
 
 </dd> <dt>
 
@@ -472,7 +472,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una cadena que proporciona información sobre cómo se puede alcanzar el propietario principal del servicio (por ejemplo, el número de teléfono, la dirección de correo electrónico, etc.). Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **null**.
+Cadena que proporciona información sobre cómo se puede acceder al propietario principal del servicio (por ejemplo, el número de teléfono, la dirección de correo electrónico, entre otros). Esta propiedad se hereda del [**servicio \_ CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **Null.**
 
 </dd> <dt>
 
@@ -485,20 +485,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del propietario principal del servicio, si se ha definido uno. El propietario principal es el contacto de soporte inicial para el servicio. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **null**.
+Nombre del propietario principal del servicio, si se define uno. El propietario principal es el contacto inicial de soporte técnico para el servicio. Esta propiedad se hereda del [**servicio \_ CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **Null.**
 
 </dd> <dt>
 
 **PrimaryStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Proporciona información de estado de alto nivel. Esta propiedad debe utilizarse junto con la propiedad **DetailedStatus** para proporcionar el estado de mantenimiento detallado y de alto nivel del elemento y sus subcomponentes. Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Proporciona información de estado de alto nivel. Esta propiedad debe usarse junto con la propiedad **DetailedStatus** para proporcionar un estado de mantenimiento detallado y de alto nivel del elemento y sus subcomponentes. Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -517,7 +517,7 @@ Proporciona información de estado de alto nivel. Esta propiedad debe utilizarse
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Proveedor reservado** (0x8000... )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Reservado por** el proveedor (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -525,17 +525,17 @@ Proporciona información de estado de alto nivel. Esta propiedad debe utilizarse
 **RequestedState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Último estado solicitado o deseado del elemento. El estado real del elemento se representa mediante **EnabledState**. Esta propiedad se proporciona para comparar los Estados actual y habilitado o deshabilitado en último lugar. Una instancia concreta de **EnabledLogicalElement** podría no ser compatible con **RequestedStateChange**. Si esto ocurre, se usa el valor 12 (no aplicable). Esta propiedad se hereda de [**\_ EnabledLogicalElement CIM**](/previous-versions//cc136818(v=vs.85))y siempre está establecida en 12 (no aplicable).
+Último estado solicitado o deseado para el elemento. El estado real del elemento se representa mediante **EnabledState**. Esta propiedad se proporciona para comparar los últimos estados solicitados y los estados habilitados o deshabilitados actuales. Es posible que una instancia determinada **de EnabledLogicalElement** no **admita RequestedStateChange.** Si esto ocurre, se usa el valor 12 (no aplicable). Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre se establece en 12 (no aplicable).
 
 </dd> <dt>
 
-**Iniciado**
+**Comenzó**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -544,7 +544,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si se ha iniciado el servicio. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **true**.
+Indica si se ha iniciado el servicio. Esta propiedad se hereda del servicio [**\_ CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **True.**
 
 </dd> <dt>
 
@@ -557,7 +557,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Un valor de cadena que indica si el servicio se inicia automáticamente por un sistema, un sistema operativo o se inicia solo después de la solicitud. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **null**.
+Valor de cadena que indica si un sistema, un sistema operativo o un sistema operativo inician automáticamente el servicio o solo se inicia a petición. Esta propiedad se hereda del servicio [**\_ CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en **Null.**
 
 </dd> <dt>
 
@@ -570,20 +570,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement), pero no se usa.
+Esta propiedad se hereda de [**\_ MANAGEDSystemElement de CIM,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)pero no se usa.
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadenas que describen los distintos valores de la matriz **OperationalStatus** . Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Cadenas que describen los distintos **valores de matriz OperationalStatus.** Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -596,7 +596,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre de la clase de creación del sistema de ámbito. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en "MSVM \_ ComputerSystem".
+Nombre de clase de creación del sistema de ámbito. Esta propiedad se hereda del servicio [**CIM \_**](/windows/desktop/CIMWin32Prov/cim-service)y siempre se establece en "Msvm \_ ComputerSystem".
 
 </dd> <dt>
 
@@ -609,39 +609,39 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del sistema del equipo host. Esta propiedad se hereda del [**\_ servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service).
+Nombre del sistema del equipo host. Esta propiedad se hereda del [**servicio CIM. \_**](/windows/desktop/CIMWin32Prov/cim-service)
 
 </dd> <dt>
 
 **TimeOfLastStateChange**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha u hora en que se cambió por última vez el estado habilitado del elemento. Esta propiedad se hereda de [**\_ EnabledLogicalElement CIM**](/previous-versions//cc136818(v=vs.85)).
+Fecha u hora en que cambió por última vez el estado habilitado del elemento. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
 **TransitioningToState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica el estado de destino al que la instancia está cambiando. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre está establecida en **null**.
+Indica el estado de destino al que se está transfiriendo la instancia. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre se establece en **Null.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase **MSVM \_ ImageManagementService** puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a **la clase \_ ImageManagementService de Msvm** podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -649,10 +649,10 @@ El acceso a la clase **MSVM \_ ImageManagementService** puede estar restringido 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -661,13 +661,13 @@ El acceso a la clase **MSVM \_ ImageManagementService** puede estar restringido 
 
 <dl> <dt>
 
-[**\_Servicio CIM**](cim-service.md)
+[**Servicio \_ CIM**](cim-service.md)
 </dt> <dt>
 
-[**\_Servicio CIM**](/windows/desktop/CIMWin32Prov/cim-service)
+[**Servicio \_ CIM**](/windows/desktop/CIMWin32Prov/cim-service)
 </dt> <dt>
 
-[Clases de almacenamiento](storage-classes.md)
+[Storage Clases](storage-classes.md)
 </dt> </dl>
 
  

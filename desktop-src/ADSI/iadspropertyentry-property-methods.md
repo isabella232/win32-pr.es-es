@@ -4,7 +4,7 @@ description: Proporcione acceso a las siguientes propiedades.
 ms.assetid: 73b0f6d4-55db-46cf-a781-e10bc4fcf2db
 ms.tgt_platform: multiple
 keywords:
-- Métodos de propiedad IADsPropertyEntry ADSI
+- AdsI de los métodos de propiedad IADsPropertyEntry
 topic_type:
 - apiref
 api_name:
@@ -36,7 +36,7 @@ ms.locfileid: "118427658"
 ---
 # <a name="iadspropertyentry-property-methods"></a>Métodos de propiedad IADsPropertyEntry
 
-Los métodos de propiedad [**de la interfaz IADsPropertyEntry**](/windows/desktop/api/Iads/nn-iads-iadspropertyentry) proporcionan acceso a las propiedades siguientes. Para obtener más información sobre los métodos de propiedad, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de propiedad [**de la interfaz IADsPropertyEntry proporcionan**](/windows/desktop/api/Iads/nn-iads-iadspropertyentry) acceso a las propiedades siguientes. Para obtener más información sobre los métodos de propiedad, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -158,7 +158,7 @@ HRESULT put_Values(
 
 ## <a name="remarks"></a>Comentarios
 
-Cada método de propiedad admite los valores **devueltos de HRESULT** estándar, incluido S \_ OK. Para obtener más información sobre otros valores devueltos, vea [Códigos de error ADSI](adsi-error-codes.md).
+Cada método de propiedad admite los valores **devueltos de HRESULT** estándar, incluido S \_ OK. Para obtener más información sobre otros valores devueltos, vea [ADSI Error Codes](adsi-error-codes.md).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -299,7 +299,7 @@ Cleanup:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

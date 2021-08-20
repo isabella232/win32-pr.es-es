@@ -29,7 +29,7 @@ El **atributo disabledItemColor** especifica o recupera el color de una pista de
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer Microsoft. Tiene un valor predeterminado de "graytext".
+Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer microsoft. Tiene un valor predeterminado de "graytext".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,14 +41,14 @@ Este atributo es una cadena de **lectura** y escritura que contiene cualquier va
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [**Referencia de color**](color-reference.md)
 </dt> <dt>
 
-[**ELEMENTO PLAYLIST**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  
