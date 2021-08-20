@@ -13,9 +13,9 @@ ms.locfileid: "118067245"
 ---
 # <a name="filling-a-shape-with-a-color-gradient"></a>Rellenar una forma con un degradado de color
 
-Puede rellenar una forma con un color que cambia gradualmente mediante un pincel de degradado. Windows GDI+ proporciona pinceles de degradado lineales y pinceles de degradado de trazado. En la ilustración siguiente se muestra un rectángulo relleno con un pincel de degradado lineal y una elipse rellena con un pincel de degradado de trazado.
+Puede rellenar una forma con un color que cambia gradualmente mediante un pincel de degradado. Windows GDI+ proporciona pinceles de degradado lineales y pinceles de degradado de trazado. En la ilustración siguiente se muestra un rectángulo relleno con un pincel de degradado lineal y una elipse rellenada con un pincel de degradado de trazado.
 
-![ilustración en la que se muestra un rectángulo que se rellena de arriba a derecha y una elipse que se rellena de centro a borde](images/gradient2.png)
+![ilustración que muestra un rectángulo que se rellena de arriba a abajo a la derecha, y una elipse que se rellena de centro a borde](images/gradient2.png)
 
 Para obtener más información sobre los pinceles de degradado, vea [Rellenar formas con un pincel de degradado.](-gdiplus-filling-shapes-with-a-gradient-brush-use.md)
 

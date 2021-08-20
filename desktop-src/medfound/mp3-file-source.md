@@ -4,12 +4,12 @@ ms.assetid: 37362642-1b8a-4fb3-950d-ed1afe3696e5
 title: Origen del archivo MP3
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89b5649f1bdbc9d9b3dfa0af2f04878dfa64852af85ff8e829d4d2d4c4d20d8e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5c95e54319fb189fa3bcc366b554b4d6555b2f4a
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118240110"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479841"
 ---
 # <a name="mp3-file-source"></a>Origen del archivo MP3
 
@@ -38,7 +38,7 @@ El tipo de medio que ofrece el origen del archivo MP3 contiene los siguientes at
 | Atributo                                                                                    | Descripción                                                                                                                                        |
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**TIPO \_ PRINCIPAL DE MT \_ DE \_ MF**](mf-mt-major-type-attribute.md)                                    | Es igual **a MFMediaType \_ Audio**.                                                                                                                   |
-| [**\_SUBTIPO DE MT DE MF \_**](mf-mt-subtype-attribute.md)                                           | Es igual **a MFAudioFormat \_ MP3** **o MFAudioFormat \_ MPEG**.                                                                                        |
+| [**\_SUBTIPO DE MT DE MF \_**](mf-mt-subtype-attribute.md)                                           | Es igual **a MFAudioFormat \_ MP3** **o MFAudioFormat \_ MPEG.**                                                                                        |
 | [**PROMEDIO DE BYTES PROMEDIO DE AUDIO DE MF \_ MT \_ POR \_ \_ \_ \_ SEGUNDO**](mf-mt-audio-avg-bytes-per-second-attribute.md) | Número medio de bytes por segundo.                                                                                                                |
 | [**ALINEACIÓN \_ DE \_ BLOQUES DE AUDIO MF MT \_ \_**](mf-mt-audio-block-alignment-attribute.md)             | Igual a 1.                                                                                                                                        |
 | [**CANALES \_ NUM DE AUDIO MF \_ \_ \_ MT**](mf-mt-audio-num-channels-attribute.md)                   | Número de canales de audio.                                                                                                                          |
@@ -51,7 +51,7 @@ El tipo de medio que ofrece el origen del archivo MP3 contiene los siguientes at
 
 ## <a name="interfaces"></a>Interfaces
 
-El origen del archivo MP3 expone las interfaces siguientes a través [**de QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)):
+El origen del archivo MP3 expone las interfaces siguientes a través de [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)):
 
 -   [**IMFGetService**](/windows/desktop/api/mfidl/nn-mfidl-imfgetservice)
 -   [**IMFMediaEventGenerator**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator)
@@ -61,41 +61,14 @@ Además, expone las interfaces siguientes a través de [**IMFGetService**](/wind
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>GUID de servicio</th>
-<th>Interfaz</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>MF_METADATA_PROVIDER_SERVICE</strong></td>
-<td><a href="/windows/desktop/api/mfidl/nn-mfidl-imfmetadataprovider"><strong>IMFMetadataProvider</strong></a></td>
-</tr>
-<tr class="even">
-<td><strong>MF_PROPERTY_HANDLER_SERVICE</strong></td>
-<td><a href="/windows/desktop/api/propsys/nn-propsys-ipropertystore"><strong>IPropertyStore</strong></a>
-<blockquote>
-[!Note]<br />
-Vea <a href="shell-metadata-providers.md">Proveedores de metadatos de Shell.</a>
-</blockquote>
-<br/> <br/></td>
-</tr>
-<tr class="odd">
-<td><strong>MF_RATE_CONTROL_SERVICE</strong></td>
-<td><a href="/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol"><strong>IMFRateControl</strong></a></td>
-</tr>
-<tr class="even">
-<td><strong>MF_RATE_CONTROL_SERVICE</strong></td>
-<td><a href="/windows/desktop/api/mfidl/nn-mfidl-imfratesupport"><strong>IMFRateSupport</strong></a></td>
-</tr>
-</tbody>
-</table>
+
+| GUID de servicio | Interfaz | 
+|--------------|-----------|
+| <strong>MF_METADATA_PROVIDER_SERVICE</strong> | <a href="/windows/desktop/api/mfidl/nn-mfidl-imfmetadataprovider"><strong>IMFMetadataProvider</strong></a> | 
+| <strong>MF_PROPERTY_HANDLER_SERVICE</strong> | <a href="/windows/desktop/api/propsys/nn-propsys-ipropertystore"><strong>IPropertyStore</strong></a><blockquote>[!Note]<br />Vea <a href="shell-metadata-providers.md">Proveedores de metadatos de Shell.</a></blockquote><br /><br /> | 
+| <strong>MF_RATE_CONTROL_SERVICE</strong> | <a href="/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol"><strong>IMFRateControl</strong></a> | 
+| <strong>MF_RATE_CONTROL_SERVICE</strong> | <a href="/windows/desktop/api/mfidl/nn-mfidl-imfratesupport"><strong>IMFRateSupport</strong></a> | 
+
 
 
 
@@ -107,7 +80,7 @@ Vea <a href="shell-metadata-providers.md">Proveedores de metadatos de Shell.</a>
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 7 \[ aplicaciones de escritorio\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                           |
 | Archivo DLL<br/>                      | <dl> <dt>Mf.dll</dt> </dl> |
 

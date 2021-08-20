@@ -1,9 +1,9 @@
 ---
-title: Estructura de MCI_OVLY_OPEN_PARMS (mmsystem. h)
-description: La \_ estructura MCI OVLY \_ Open \_ parms contiene información del comando MCI \_ Open para dispositivos de superposición de vídeo.
+title: MCI_OVLY_OPEN_PARMS estructura (Mmsystem.h)
+description: La estructura MCI \_ OVLY OPEN PARMS contiene información para el comando MCI OPEN para dispositivos \_ de \_ \_ superposición de vídeo.
 ms.assetid: 1559ae40-4aa5-4dfc-b337-7b056c706b67
 keywords:
-- Estructura de MCI_OVLY_OPEN_PARMS de Windows multimedia
+- MCI_OVLY_OPEN_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e64b864b4b0366421828960504aff3f5a83836b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a2f13d0e9f8a7a4b9f5477459286bc56b9c98b1f9564e8432329681aeaef66d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104488987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138289"
 ---
-# <a name="mci_ovly_open_parms-structure"></a>MCI \_ OVLY \_ Open \_ parms estructura
+# <a name="mci_ovly_open_parms-structure"></a>Estructura \_ MCI OVLY \_ OPEN \_ PARMS
 
-La estructura **MCI \_ OVLY \_ Open \_ parms** contiene información del comando [**MCI \_ Open**](mci-open.md) para dispositivos de superposición de vídeo.
+La **estructura MCI \_ OVLY \_ OPEN \_ PARMS** contiene información para el [**comando MCI \_ OPEN**](mci-open.md) para dispositivos de superposición de vídeo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,7 +49,7 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana usado para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Identificador devuelto a la aplicación.
 **lpstrDeviceType**
 </dt> <dd>
 
-Nombre o identificador constante del tipo de dispositivo. (El nombre del dispositivo normalmente se obtiene del registro o del archivo de SYSTEM.INI). Si este miembro es una constante, puede ser uno de los valores enumerados en [tipos de dispositivo MCI](mci-device-types.md).
+Nombre o identificador constante del tipo de dispositivo. (El nombre del dispositivo normalmente se obtiene del registro o SYSTEM.INI archivo). Si este miembro es una constante, puede ser uno de los valores enumerados en [Tipos de dispositivo de MCI.](mci-device-types.md)
 
 </dd> <dt>
 
@@ -91,15 +91,15 @@ Estilo de ventana.
 **hWndParent**
 </dt> <dd>
 
-Identificador de la ventana primaria.
+Controlar a la ventana primaria.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
-Puede usar la estructura [**MCI \_ Open \_ parms**](mci-open-parms.md) en lugar de **MCI \_ OVLY \_ Open \_ parms** si no está usando los miembros de datos extendidos.
+Puede usar la estructura [**MCI \_ OPEN \_ PARMS**](mci-open-parms.md) en lugar de **MCI \_ OVLY \_ OPEN \_ PARMS** si no usa los miembros de datos extendidos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -109,7 +109,7 @@ Puede usar la estructura [**MCI \_ Open \_ parms**](mci-open-parms.md) en lugar 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h</dt> </dl> |
 
 
 
@@ -117,16 +117,16 @@ Puede usar la estructura [**MCI \_ Open \_ parms**](mci-open-parms.md) en lugar 
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
 </dt> <dt>
 
-[**MCI \_ abierto**](mci-open.md)
+[**MCI \_ OPEN**](mci-open.md)
 </dt> <dt>
 
-[**MCI \_ abierto \_ parms**](mci-open-parms.md)
+[**MCI \_ OPEN \_ PARMS**](mci-open-parms.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

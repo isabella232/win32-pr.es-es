@@ -1,7 +1,7 @@
 ---
 description: Suspende los procesos del paquete si se están ejecutando actualmente.
 ms.assetid: 83f44285-46ed-4968-b0af-7964dfacf602
-title: 'IPackageDebugSettings:: Suspend (método)'
+title: IPackageDebugSettings::Suspend (Método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shobjidl.idl
-ms.openlocfilehash: 385ddc856661090caec4345df6651605b67fe883
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0517ce3cca6a8e74f19b053897511062cefa252297d3a0e6633d4678c0deaa95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118822818"
 ---
-# <a name="ipackagedebugsettingssuspend-method"></a>IPackageDebugSettings:: Suspend (método)
+# <a name="ipackagedebugsettingssuspend-method"></a>IPackageDebugSettings::Suspend (Método)
 
 Suspende los procesos del paquete si se están ejecutando actualmente.
 
@@ -39,7 +39,7 @@ HRESULT Suspend(
 
 <dl> <dt>
 
-*packageFullName* \[ de\]
+*packageFullName* \[ En\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
@@ -58,26 +58,26 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                            | Descripción                                      |
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                   | La operación se realizó correctamente.<br/>              |
-| <dl> <dt>**E \_ STATECHANGE no válido \_**</dt> </dl> | El proceso no se está ejecutando actualmente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                   | La operación se realizó correctamente.<br/>              |
+| <dl> <dt>**E \_ ILLEGAL \_ STATECHANGE**</dt> </dl> | El proceso no se está ejecutando actualmente.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada proceso recibe el evento de [**suspensión**](/uwp/api/Windows.ApplicationModel.Core.CoreApplication?view=winrt-19041) . Puede ser útil para los desarrolladores recorrer el modo en que sus aplicaciones responden a este evento.
+Cada proceso recibe el [**evento Suspending.**](/uwp/api/Windows.ApplicationModel.Core.CoreApplication?view=winrt-19041) Puede ser útil para los desarrolladores ver cómo responden sus aplicaciones a este evento.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                          |
-| IDL<br/>                      | <dl> <dt>Shobjidl. idl</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

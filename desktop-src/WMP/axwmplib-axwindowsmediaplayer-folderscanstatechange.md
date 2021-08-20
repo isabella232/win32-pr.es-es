@@ -1,9 +1,9 @@
 ---
 title: Evento FolderScanStateChange del objeto AxWindowsMediaPlayer
-description: El evento FolderScanStateChange se produce cuando cambia el estado de una operación de supervisión de carpetas.
+description: El evento FolderScanStateChange tiene lugar cuando una operación de supervisión de carpetas cambia de estado.
 ms.assetid: f68829a3-00df-417a-ae78-49dff1e6f09b
 keywords:
-- Evento FolderScanStateChange del objeto AxWindowsMediaPlayer Media Player de Windows
+- Evento FolderScanStateChange del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3672f16bee5251aa46e6a64a0da983e0f34ec54a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b365212df06dded8b84c4a1f5af650f545b20eb5b169215da5cf4263c35bd8a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118841234"
 ---
 # <a name="folderscanstatechange-event-of-the-axwindowsmediaplayer-object"></a>Evento FolderScanStateChange del objeto AxWindowsMediaPlayer
 
-El evento FolderScanStateChange se produce cuando cambia el estado de una operación de supervisión de carpetas.
+El evento FolderScanStateChange tiene lugar cuando una operación de supervisión de carpetas cambia de estado.
 
 ``` syntax
 [C#]
@@ -47,7 +47,7 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad | Descripción                                                                             |
 |----------|-----------------------------------------------------------------------------------------|
-| wmpfss   | Valor de enumeración WMPLib. WMPFolderScanStateThe que indica el nuevo estado.<br/> |
+| wmpfss   | WMPLib.WMPFolderScanStateEl valor de enumeración que indica el nuevo estado.<br/> |
 
 
 

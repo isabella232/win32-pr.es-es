@@ -1,17 +1,17 @@
 ---
-description: Describe los métodos para abrir un Panel de control para Windows Vista y sistemas posteriores, así como para tratar los comandos Panel de control heredados.
+description: Describe los métodos para abrir un Panel de control para Windows Vista y sistemas posteriores, así como para abarcar comandos Panel de control heredados.
 ms.assetid: c17167ab-e9a0-4290-955c-484d038b82af
-title: Ejecutar elementos Panel de control datos
+title: Ejecución de Panel de control elementos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc1e2bc84ce5225176585f2da221fab6110ce79f9ff68dfc83b3c66125d623d4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5bb941bb7542b0d786d682e6626e8d78faea8bd7
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118224281"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122478421"
 ---
-# <a name="executing-control-panel-items"></a>Ejecutar elementos Panel de control datos
+# <a name="executing-control-panel-items"></a>Ejecución de Panel de control elementos
 
 > [!Note]  
 > Si busca la lista de nombres canónicos y de módulos para los Panel de control, vea Nombres canónicos [de Panel de control elementos](controlpanel-canonical-names.md).
@@ -41,7 +41,7 @@ WinExec("c:\windows\system32\control.exe MyCpl.cpl", SW_NORMAL);
 
 
 
-Cuando un Panel de control se abre a través de una línea de comandos, puede indicarle que se abra en una pestaña determinada del elemento. Debido a la adición y eliminación de ciertas pestañas en algunos elementos de Windows Vista Panel de control, la numeración de las pestañas podría haber cambiado a partir de Windows XP. Por ejemplo, en el ejemplo siguiente se inicia la cuarta pestaña del elemento Sistema en Windows XP y la tercera pestaña en Windows Vista.
+Cuando un Panel de control se abre a través de una línea de comandos, puede indicarle que se abra en una pestaña determinada del elemento. Debido a la adición y eliminación de ciertas pestañas en algunos elementos de Windows Vista Panel de control, es posible que la numeración de las pestañas haya cambiado a partir de Windows XP. Por ejemplo, en el ejemplo siguiente se inicia la cuarta pestaña del elemento Sistema en Windows XP y la tercera pestaña en Windows Vista.
 
 
 ```
@@ -59,11 +59,11 @@ Este tema trata lo siguiente:
 
 ## <a name="windows-vista-canonical-names"></a>Windows Nombres canónicos de Vista
 
-En Windows Vista y versiones posteriores, el método preferido para iniciar un elemento Panel de control desde una línea de comandos es usar el nombre canónico del elemento de Panel de control. Un nombre canónico es una cadena no localizada que el elemento Panel de control declara en el Registro. El valor de usar un nombre canónico es que abstrae el nombre del módulo del Panel de control elemento. Un elemento se puede implementar en un .dll y posterior se puede volver a implementar como un .exe o cambiar su nombre de módulo. Siempre que el nombre canónico siga siendo el mismo, no es necesario actualizar ningún programa que lo abra con ese nombre canónico.
+En Windows Vista y versiones posteriores, el método preferido para iniciar un elemento Panel de control desde una línea de comandos es usar el nombre canónico del elemento Panel de control. Un nombre canónico es una cadena no localizada que el elemento Panel de control declara en el Registro. El valor de usar un nombre canónico es que abstrae el nombre del módulo del Panel de control elemento. Un elemento se puede implementar en un .dll y posterior se puede volver a implementar como un .exe o cambiar su nombre de módulo. Siempre que el nombre canónico siga siendo el mismo, no es necesario actualizar ningún programa que lo abra con ese nombre canónico.
 
 Por convención, el nombre canónico se forma como "CorporationName.ControlPanelItemName".
 
-En el ejemplo siguiente se muestra cómo una aplicación puede iniciar Panel de control elemento **Windows Update** con [**WinExec**](/windows/win32/api/winbase/nf-winbase-winexec).
+En el ejemplo siguiente se muestra cómo una aplicación puede iniciar el Panel de control de **Windows update** con [**WinExec**](/windows/win32/api/winbase/nf-winbase-winexec).
 
 
 ```
@@ -100,7 +100,7 @@ En Windows Vista, algunas opciones a las que se ha accedido mediante un módulo 
 
  
 
-### <a name="system"></a>System
+### <a name="system"></a>Sistema
 
 -   Rendimiento: %windir% \\ system32 \\SystemPropertiesPerformance.exe
 -   Acceso remoto: %windir% \\ system32 \\SystemPropertiesRemote.exe
@@ -128,10 +128,10 @@ En Windows Vista, algunas opciones a las que se ha accedido mediante un módulo 
 
 ### <a name="power-options"></a>Opciones de energía
 
--   Editar la configuración actual del plan: %windir% \\ system32 \\control.exe /name Microsoft.PowerOptions /page pagePlanSettings
+-   Editar la configuración del plan actual: %windir% \\ system32 \\control.exe /name Microsoft.PowerOptions /page pagePlanSettings
 -   Configuración del sistema: %windir% \\ system32 \\control.exe /name Microsoft.PowerOptions /pageGlobalSettings
 -   Crear un plan de energía: %windir% \\ system32 \\control.exe /name Microsoft.PowerOptions /pageCreateNewPlan
--   No hay ningún comando canónico para la página advanced Configuración, se accede a él de la manera anterior: %windir% \\ system32 \\control.exe powercfg.cpl,3
+-   No hay ningún comando canónico para la página Advanced Configuración, se accede a él de la manera anterior: %windir% \\ system32 \\control.exe powercfg.cpl,3
 
 ## <a name="legacy-control-panel-commands"></a>Comandos de Panel de control heredados
 
@@ -139,51 +139,9 @@ Cuando se usa [**la función WinExec,**](/windows/win32/api/winbase/nf-winbase-w
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>control.exe escritorio</td>
-<td>Inicia la <strong>Propiedades de pantalla</strong> ventana.
-<blockquote>
-[!Note]<br />
-Las ediciones Starter y Basic no admiten este comando.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td>control.exe color</td>
-<td>Inicia la ventana <strong>Propiedades de pantalla</strong> con la <strong>pestaña</strong> Apariencia preseleccionada.</td>
-</tr>
-<tr class="odd">
-<td>control.exe fecha y hora</td>
-<td>Inicia la ventana <strong>Propiedades de fecha y</strong> hora.</td>
-</tr>
-<tr class="even">
-<td>control.exe internacional</td>
-<td>Inicia la ventana <strong>Opciones regionales y de</strong> idioma.</td>
-</tr>
-<tr class="odd">
-<td>control.exe mouse</td>
-<td>Inicia la ventana <strong>Propiedades del</strong> mouse.</td>
-</tr>
-<tr class="even">
-<td>control.exe teclado</td>
-<td>Inicia la ventana <strong>Propiedades del</strong> teclado.</td>
-</tr>
-<tr class="odd">
-<td>control.exe impresoras</td>
-<td>Muestra la <strong>carpeta Impresoras y faxes.</strong></td>
-</tr>
-<tr class="even">
-<td>control.exe fuentes</td>
-<td>Muestra la <strong>carpeta Fuentes.</strong></td>
-</tr>
-</tbody>
-</table>
+
+| | | control.exe escritorio | Inicia la ventana <strong>Propiedades de pantalla</strong> inicio.<blockquote>[!Note]<br />Las ediciones Starter y Basic no admiten este comando.</blockquote><br /> | | control.exe color | Inicia la ventana <strong>Propiedades de pantalla</strong> con la <strong>pestaña Apariencia</strong> preseleccionada. | | control.exe fecha y hora | Inicia la ventana <strong>Propiedades de fecha y</strong> hora. | | control.exe internacional | Inicia la ventana <strong>Opciones regionales y de</strong> idioma. | | control.exe de | Inicia la ventana <strong>Propiedades del</strong> mouse. | | control.exe teclado | Inicia la ventana <strong>Propiedades del</strong> teclado. | | control.exe impresoras | Muestra la <strong>carpeta Impresoras y faxes.</strong> | | control.exe fuentes | Muestra la <strong>carpeta Fuentes.</strong> | 
+
 
 
 
@@ -193,7 +151,7 @@ Para Windows sistemas 2000 y posteriores:
 
 
 
-| Get-Help                    | Descripción                                              |
+| Comando                    | Descripción                                              |
 |----------------------------|----------------------------------------------------------|
 | control.exe carpetas        | Inicia la ventana **Opciones de carpeta.**                  |
 | control.exe netware        | Inicia la ventana **NetWare de Asíns** (si está instalada).   |
@@ -201,7 +159,7 @@ Para Windows sistemas 2000 y posteriores:
 | control.exe admintools     | Muestra la **carpeta Herramientas administrativas.**            |
 | control.exe schedtasks     | Muestra la **carpeta Tareas programadas.**                 |
 | control.exe netconnections | Muestra la carpeta **Conexiones de** red.             |
-| control.exe de datos       | Inicia la ventana **Monitor de** infieles (si está instalado). |
+| control.exe de datos       | Inicia la ventana **Monitor de inifijo** (si está instalado). |
 | control.exe userpasswords  | Inicia la ventana **Cuentas de** usuario.                   |
 
 

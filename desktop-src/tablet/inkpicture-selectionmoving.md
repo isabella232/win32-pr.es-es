@@ -4,12 +4,12 @@ ms.assetid: 310003a1-f282-4efa-9a75-c575a9193a77
 title: Evento InkPicture.SelectionMoving (Msmutut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eee50fe1115ce72dff0674ad4e6c2457500c7de8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 572d9b824c5bdbada47a39f11b2ccb2c98c69f2fd94867f21d8017887aac9567
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118041935"
 ---
 # <a name="inkpictureselectionmoving-event"></a>Evento InkPicture.SelectionMoving
 
@@ -56,14 +56,14 @@ Este método de evento se define en las interfaces de solo distribución (dispin
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

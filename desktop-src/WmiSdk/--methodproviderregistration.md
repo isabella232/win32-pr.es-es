@@ -2,7 +2,7 @@
 description: Registra proveedores de métodos con WMI.
 ms.assetid: c5a8ccd3-487e-42a3-bb31-d27da9a711c4
 ms.tgt_platform: multiple
-title: __MethodProviderRegistration (clase)
+title: __MethodProviderRegistration clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: dd59a88c9c0ff7b4b6726b58ce69f879eb3893ae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a778e2d94c39448020d5a1b4a99e9030320dee4c8604d390c6008f29fabff4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118820943"
 ---
 # <a name="__methodproviderregistration-class"></a>\_\_Clase MethodProviderRegistration
 
-La clase del sistema **\_ \_ MethodProviderRegistration** registra los proveedores de métodos con WMI.
+La **\_ \_ clase del sistema MethodProviderRegistration** registra proveedores de métodos con WMI.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -39,38 +39,38 @@ class __MethodProviderRegistration : __ProviderRegistration
 
 ## <a name="members"></a>Miembros
 
-La clase **\_ \_ MethodProviderRegistration** tiene estos tipos de miembros:
+La **\_ \_ clase MethodProviderRegistration** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **\_ \_ MethodProviderRegistration** tiene estas propiedades.
+La **\_ \_ clase MethodProviderRegistration** tiene estas propiedades.
 
 <dl> <dt>
 
-**presta**
+**Proveedor**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **\_ \_ proveedor**
+Tipo de datos: **\_ \_ Proveedor**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Referencia a una instancia de [**\_ \_ Provider**](--provider.md) que representa la ruta de acceso del objeto del proveedor de métodos. Esta propiedad se hereda de [**\_ \_ ProviderRegistration**](--providerregistration.md).
+Referencia a una instancia de [**\_ \_ Provider que**](--provider.md) representa la ruta de acceso del objeto del proveedor de métodos. Esta propiedad se hereda de [**\_ \_ ProviderRegistration.**](--providerregistration.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **\_ \_ MethodProviderRegistration** se deriva de [**\_ \_ ProviderRegistration**](--providerregistration.md). Solo los administradores pueden registrar o eliminar un proveedor de métodos mediante la creación de una instancia de [**\_ \_ Win32Provider**](--win32provider.md) y **\_ \_ MethodProviderRegistration**.
+La **\_ \_ clase MethodProviderRegistration** se deriva de [**\_ \_ ProviderRegistration.**](--providerregistration.md) Solo los administradores pueden registrar o eliminar un proveedor de métodos mediante la creación de una instancia de [**\_ \_ Win32Provider**](--win32provider.md) y **\_ \_ MethodProviderRegistration**.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |

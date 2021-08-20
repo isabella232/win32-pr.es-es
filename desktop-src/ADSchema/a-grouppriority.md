@@ -4,8 +4,8 @@ description: El Group-Priority no se usa actualmente.
 ms.assetid: b16f644b-b9ef-4382-930b-344cf3de0190
 ms.tgt_platform: multiple
 keywords:
-- Group-Priority esquema de AD del atributo
-- Esquema de AD del atributo groupPriority
+- Group-Priority esquema de AD de atributo
+- GroupPriority attribute AD Schema (Esquema de AD del atributo groupPriority)
 topic_type:
 - apiref
 api_name:
@@ -32,10 +32,10 @@ El **atributo Group-Priority** no se usa actualmente.
 | CN                | Group-Priority                              |
 | Ldap-Display-Name | groupPriority                               |
 | Size              | \-                                          |
-| Privilegio actualizar  | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.345                      |
-| System-Id-Guid    | lugar65905-8ac6-11d0-afda-00c04fd930c9        |
+| System-Id-Guid    | 65905-8ac6-11d0-afda-00c04fd930c9        |
 | Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
@@ -53,7 +53,7 @@ El **atributo Group-Priority** no se usa actualmente.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
@@ -74,7 +74,7 @@ El **atributo Group-Priority** no se usa actualmente.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
@@ -137,7 +137,7 @@ El **atributo Group-Priority** no se usa actualmente.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
@@ -158,7 +158,7 @@ El **atributo Group-Priority** no se usa actualmente.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------|
 | Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |

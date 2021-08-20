@@ -1,11 +1,11 @@
 ---
-title: Propiedad nombre de IWMPPlaylist
-description: La propiedad Name obtiene o establece el nombre de la lista de reproducción.
+title: Propiedad IWMPPlaylist name
+description: La propiedad name obtiene o establece el nombre de la lista de reproducción.
 ms.assetid: abf25a49-5e07-43e6-ab45-6bc09c952c45
 keywords:
-- propiedad nombre Media Player Windows
-- propiedad nombre Windows Media Player, interfaz IWMPPlaylist
-- Interfaz IWMPPlaylist Windows Media Player, propiedad Name
+- nombre de propiedad Reproductor de Windows Media
+- name property Reproductor de Windows Media , IWMPPlaylist (interfaz)
+- Interfaz IWMPPlaylist Reproductor de Windows Media , propiedad name
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c36075362105370cc7177157d47aede0b3376049
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 64dd1702c5964e09f92c088d071b9c8de977d93c0d03f68da72d26e132017744
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053463"
 ---
-# <a name="iwmpplaylistname-property"></a>IWMPPlaylist:: Name (propiedad)
+# <a name="iwmpplaylistname-property"></a>Propiedad IWMPPlaylist::name
 
-La propiedad **Name** obtiene o establece el nombre de la lista de reproducción.
+La **propiedad name** obtiene o establece el nombre de la lista de reproducción.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,19 +46,19 @@ Public Property name As System.String
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. String** que es el nombre de la lista de reproducción.
+**System.String que** es el nombre de la lista de reproducción.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -71,10 +71,10 @@ Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para
 [**Interfaz IWMPPlaylist (VB y C#)**](iwmpplaylist--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. mediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.mediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-mediaaccessrights--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings2. requestMediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
+[**IWMPSettings2.requestMediaAccessRights (VB y C#)**](wmplibiwmpsettings2-iwmpsettings2-requestmediaaccessrights--vb-and-c.md)
 </dt> </dl>
 
  

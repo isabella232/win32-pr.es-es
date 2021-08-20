@@ -1,7 +1,7 @@
 ---
-description: Obtiene la información de la categoría de un elemento.
+description: Obtiene la información de categoría de un elemento.
 ms.assetid: 4d6f7a6a-280d-4b36-8e1d-8d9fcaa8a1de
-title: 'IWiaItem2:: GetItemCategory (método) (WIA. h)'
+title: Método IWiaItem2::GetItemCategory (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: fdf650e8b540fcb9dc58f93f34771462fbc0a5c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 958d5046e93dca4e5c90214bdb89803921ca507827c1134957db99fb70e3244f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118034983"
 ---
-# <a name="iwiaitem2getitemcategory-method"></a>IWiaItem2:: GetItemCategory (método)
+# <a name="iwiaitem2getitemcategory-method"></a>IWiaItem2::GetItemCategory (método)
 
-Obtiene la información de la categoría de un elemento.
+Obtiene la información de categoría de un elemento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,10 +39,10 @@ HRESULT GetItemCategory(
 
 <dl> <dt>
 
-*pItemCategoryGUID* \[ enuncia\]
+*pItemCategoryGUID* \[ out\]
 </dt> <dd>
 
-Tipo: **GUID \** _
+Tipo: **\* GUID**
 
 Recibe un puntero al GUID que identifica la categoría del elemento.
 
@@ -50,24 +50,24 @@ Recibe un puntero al GUID que identifica la categoría del elemento.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada objeto [**IWiaItem2**](-wia-iwiaitem2.md) del árbol jerárquico de objetos asociados a un dispositivo de hardware de adquisición de imágenes de Windows (WIA) 2,0 tiene una categoría específica. Este método permite a las aplicaciones identificar la categoría de cualquier elemento en un árbol jerárquico de objetos de elemento en un dispositivo.
+Cada [**objeto IWiaItem2**](-wia-iwiaitem2.md) del árbol jerárquico de objetos asociado a un dispositivo de hardware Windows Image Acquisition (WIA) 2.0 tiene una categoría específica. Este método permite a las aplicaciones identificar la categoría de cualquier elemento de un árbol jerárquico de objetos de elemento en un dispositivo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

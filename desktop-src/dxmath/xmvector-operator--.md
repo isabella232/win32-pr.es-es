@@ -1,17 +1,17 @@
 ---
 description: Operadores de resta y negación.
 ms.assetid: b3a3da02-4fba-4f76-90d8-15f605c73f16
-title: Operator-(operadores)
+title: 'operador : operadores'
 ms.topic: reference
 ms.date: 12/06/2018
-ms.openlocfilehash: 21c10490db92a335f07f298876d838f2152d17b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5dbc131a79596cc6322972aee8da84ae2d4e9564
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544051"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122468412"
 ---
-# <a name="operator---operators"></a>Operator-(operadores)
+# <a name="operator---operators"></a>operador : operadores
 
 Operadores de resta y negación
 
@@ -19,42 +19,16 @@ Operadores de resta y negación
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Operator</th>
-<th style="text-align: left;">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/previous-versions/windows/desktop/legacy/ee421383(v=vs.85)"><strong>XMVECTOR:: Operator-(XMVECTOR)</strong></a></td>
-<td style="text-align: left;">Calcula la negación de una <code>XMVECTOR</code> instancia de.<br/> <code>operator -</code>Toma una instancia de <a href="xmvector-data-type.md"><strong>tipo de datos XMVECTOR</strong></a> y devuelve una nueva instancia de <code>XMVECTOR</code> , con cada componente negado.<br/>
-<blockquote>
-[!Note]<br />
-Este operador solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/previous-versions/windows/desktop/legacy/ee421385(v=vs.85)"><strong>XMVECTOR:: Operator-(XMVECTOR, XMVECTOR)</strong></a></td>
-<td style="text-align: left;">Resta una instancia de de <code>XMVECTOR</code> una segunda instancia, devolviendo el resultado en una nueva instancia de <code>XMVECTOR</code> . <br/> <code>operator -</code>Resta cada componente de una instancia de <a href="xmvector-data-type.md"><strong>tipo de datos XMVECTOR</strong></a> de cada componente de otra instancia de <code>XMVECTOR</code> , y devuelve una nueva <code>XMVECTOR</code> instancia de que contiene el resultado. <br/>
-<blockquote>
-[!Note]<br />
-Este operador solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Operador | Descripción | 
+|----------|-------------|
+| <a href="/previous-versions/windows/desktop/legacy/ee421383(v=vs.85)"><strong>XMVECTOR::operator - (XMVECTOR)</strong></a> | Calcula la negación de una <code>XMVECTOR</code> instancia de .<br /> toma <code>operator -</code> una instancia del tipo de datos <a href="xmvector-data-type.md"><strong>XMVECTOR</strong></a> y devuelve una nueva instancia de <code>XMVECTOR</code> , con cada componente negado.<br /><blockquote>[!Note]<br />Este operador solo está disponible en C++.</blockquote><br /> | 
+| <a href="/previous-versions/windows/desktop/legacy/ee421385(v=vs.85)"><strong>XMVECTOR::operator - (XMVECTOR,XMVECTOR)</strong></a> | Resta una instancia de <code>XMVECTOR</code> de una segunda instancia y devuelve el resultado en una nueva instancia de <code>XMVECTOR</code> . <br /> resta cada componente de una instancia de tipo de datos <code>operator -</code> <a href="xmvector-data-type.md"><strong>XMVECTOR</strong></a> de cada componente de otra instancia de , devolviendo una nueva instancia <code>XMVECTOR</code> que contiene el <code>XMVECTOR</code> resultado. <br /><blockquote>[!Note]<br />Este operador solo está disponible en C++.</blockquote><br /> | 
 
 
 
-## <a name="see-also"></a>Vea también
+
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -64,7 +38,7 @@ Este operador solo está disponible en C++.
 **Referencia**
 </dt> <dt>
 
-[**XMVECTOR, tipo de datos**](xmvector-data-type.md)
+[**Tipo de datos XMVECTOR**](xmvector-data-type.md)
 </dt> </dl>
 
  

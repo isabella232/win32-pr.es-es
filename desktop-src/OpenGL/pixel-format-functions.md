@@ -1,6 +1,6 @@
 ---
 title: Funciones de formato de píxel
-description: Las siguientes funciones de Windows administran formatos de píxel.
+description: Las siguientes funciones Windows administrar formatos de píxel.
 ms.assetid: 78a6be75-72f6-4aef-a6bc-5f052c6fe2e9
 keywords:
 - Funciones WGL, formato de píxel
@@ -15,7 +15,7 @@ ms.locfileid: "119486335"
 ---
 # <a name="pixel-format-functions"></a>Funciones de formato de píxel
 
-Las siguientes funciones de Windows administran formatos de píxel.
+Las siguientes funciones Windows administrar formatos de píxel.
 
 
 
@@ -31,7 +31,7 @@ Las siguientes funciones de Windows administran formatos de píxel.
 
  
 
-La [**función ChoosePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-choosepixelformat) devuelve un índice de formato de píxeles basado en uno que identifica la mejor coincidencia a partir de los formatos de píxel admitidos por el contexto del dispositivo.
+La [**función ChoosePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-choosepixelformat) devuelve un índice de formato de píxeles basado en uno que identifica la mejor coincidencia a partir de los formatos de píxel admitidos en el contexto del dispositivo.
 
 La [**función SetPixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-setpixelformat) identifica el formato deseado mediante un índice de formato de píxeles basado en uno. Normalmente, se llama a **ChoosePixelFormat para** buscar un formato de píxeles que coincida mejor y, a continuación, se llama a **SetPixelFormat con** el resultado **de ChoosePixelFormat**.
 

@@ -28,7 +28,7 @@ ms.locfileid: "119284595"
 La **dependencia \_ AssociatedBattery de CIM** asocia una batería a un dispositivo lógico. Use esta asociación para modelar baterías individuales que conste una fuente de alimentación ininterrumpida (UPS).
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -53,7 +53,7 @@ La **clase \_ AssociatedBattery de CIM** tiene estos tipos de miembros:
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ AssociatedBattery de CIM** tiene estas propiedades.
+La **clase \_ AssociatedBattery** de CIM tiene estas propiedades.
 
 <dl> <dt>
 
@@ -91,7 +91,7 @@ Un [**dispositivo \_ lógico CIM**](cim-logicaldevice.md) que contiene el dispos
 
 ## <a name="remarks"></a>Comentarios
 
-La **clase \_ AssociatedBattery de CIM** se deriva de la dependencia [**\_ CIM**](cim-dependency.md).
+La **clase \_ AssociatedBattery** de CIM se deriva de [**la dependencia \_ CIM**](cim-dependency.md).
 
 WMI no implementa esta clase. Para obtener más información sobre las clases derivadas de **CIM \_ AssociatedBattery,** vea [Clases win32.](win32-provider.md)
 
@@ -101,7 +101,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -111,7 +111,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

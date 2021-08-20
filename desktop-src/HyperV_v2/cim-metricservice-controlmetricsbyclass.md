@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: fda8407d49ed3eec7ff86abc94ced6b63d2d77c6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0ebd529faaea7995144481802d755eb705163d94e68133d493f6368ac0bc015a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900255"
 ---
 # <a name="controlmetricsbyclass-method-of-the-cim_metricservice-class"></a>Método ControlMetricsByClass de la clase \_ MetricService de CIM
 
-Habilita y deshabilita la recopilación de métricas. **ControlMetricsByClass** se usa para controlar la colección de cada tipo de métrica para todas las instancias de una clase o la colección de una métrica específica para todas las instancias de una clase.
+Habilita y deshabilita la colección de métricas. **ControlMetricsByClass** se usa para controlar la colección de cada tipo de métrica para todas las instancias de una clase o la colección de una métrica específica para todas las instancias de una clase.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -99,7 +99,7 @@ Indica la operación deseada que se realizará en las métricas.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
+Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -132,7 +132,7 @@ Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un er
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

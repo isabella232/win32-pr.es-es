@@ -1,24 +1,24 @@
-- name: Controles de Windows
+- name: Windows Controles
   href: window-controls.md
   items:
     - name: Acerca de los controles comunes
       href: common-controls-intro.md
       items:
-        - name: Versiones de controles comunes
+        - name: Versiones de control comunes
           href: common-control-versions.md
         - name: Crear controles comunes
           href: creating-common-controls.md
-        - name: Compatibilidad con Unicode para controles comunes
+        - name: Compatibilidad de Unicode con controles comunes
           href: unicode-support.md
         - name: Compatibilidad de localización con controles comunes
-          href: cc-faq-localization.md
+          href: cc-faq-localization.yml
         - name: Preguntas más frecuentes sobre controles comunes
-          href: cc-faq.md
+          href: cc-faq.yml
     - name: Mensajes de control
       href: control-messages.md
     - name: Controles personalizados
       href: user-controls-intro.md
-    - name: Subclase de controles
+    - name: Controles de subclases
       href: subclassing-overview.md
     - name: Dibujo personalizado
       href: custom-draw.md
@@ -26,11 +26,11 @@
         - name: Información general sobre el dibujo personalizado
           href: bumper-custom-draw-overviews.md
           items:
-            - name: Acerca de Draw personalizado
+            - name: Acerca del dibujo personalizado
               href: about-custom-draw.md
-            - name: Usar Draw personalizado
+            - name: Usar dibujo personalizado
               href: using-custom-draw.md
-        - name: Referencia de dibujo personalizada
+        - name: Referencia de dibujo personalizado
           href: custom-draw-reference.md
           items:
             - name: Notificaciones de dibujo personalizadas
@@ -43,7 +43,7 @@
               items:
                 - name: NMCUSTOMDRAW
                   href: /windows/win32/api/Commctrl/ns-commctrl-nmcustomdraw
-    - name: 'Consideraciones de seguridad: controles de Microsoft Windows'
+    - name: 'Consideraciones de seguridad: Controles de Windows Microsoft'
       href: sec-comctls.md
     - name: Biblioteca de controles
       href: individual-control-info.md
@@ -51,7 +51,7 @@
         - name: Animación
           href: animation-control-reference.md
           items:
-            - name: Información general sobre el control Animation
+            - name: Información general sobre controles de animación
               href: bumper-animation-animation-control-overviews.md
               items:
                 - name: Acerca de los controles de animación
@@ -59,11 +59,11 @@
                 - name: Usar controles de animación
                   href: using-animation-control.md
                   items:
-                    - name: Cómo crear un control Animation
+                    - name: Cómo crear un control de animación
                       href: how-to-create-an-animation-control.md
-                    - name: Cómo controlar el clip AVI
+                    - name: Cómo controlar el clip avi
                       href: how-to-control-the-avi-clip.md
-            - name: Referencia de control de animación
+            - name: Referencia de controles de animación
               href: bumper-animation-animation-control-reference.md
               items:
                 - name: Macros de control de animación
@@ -85,7 +85,7 @@
                       href: /windows/desktop/api/Commctrl/nf-commctrl-animate_seek
                     - name: Animate_Stop
                       href: /windows/desktop/api/Commctrl/nf-commctrl-animate_stop
-                - name: Notificaciones del control de animación
+                - name: Notificaciones de control de animación
                   href: bumper-animation-control-reference-notifications.md
                   items:
                     - name: ACN_START
@@ -111,7 +111,7 @@
         - name: Botón
           href: buttons.md
           items:
-            - name: Información general sobre el control Button
+            - name: Información general sobre el control de botón
               href: bumper-button-button-control-overviews.md
               items:
                 - name: Acerca de los botones
@@ -119,7 +119,7 @@
                   items:
                     - name: 'Mensajes de botón '
                       href: button-messages.md
-                    - name: Estados del botón
+                    - name: Estados de los botones
                       href: button-states.md
                     - name: Tipos de botón
                       href: button-types-and-styles.md
@@ -130,7 +130,7 @@
                       href: create-a-button.md
                     - name: Cómo crear un vínculo de comando
                       href: create-a-command-link.md
-                    - name: Cómo controlar la notificación de BCN_DROPDOWN desde un botón de expansión
+                    - name: Cómo controlar la notificación de BCN_DROPDOWN desde un botón de división
                       href: handle-the-bcn-dropdown-notification-from-a-split-button.md
             - name: Referencia de control de botón
               href: bumper-button-button-control-reference.md
@@ -298,11 +298,11 @@
                   items:
                     - name: Cómo crear un cuadro combinado simple
                       href: create-a-simple-combo-box.md
-                    - name: Cómo crear un Owner-Drawn cuadro combinado
+                    - name: Cómo crear un cuadro Owner-Drawn combinado
                       href: create-an-owner-drawn-combo-box.md
-                    - name: Cómo subclase de un cuadro combinado
+                    - name: Cómo crear subclases de un cuadro combinado
                       href: subclass-a-combo-box.md
-            - name: Referencia de controles ComboBox
+            - name: Referencia del control ComboBox
               href: bumper-combobox-combobox-control-reference.md
               items:
                 - name: Funciones de control ComboBox
@@ -314,7 +314,7 @@
                       href: /windows/desktop/api/Winuser/nf-winuser-dlgdirselectcomboboxexa
                     - name: GetComboBoxInfo
                       href: /windows/desktop/api/Winuser/nf-winuser-getcomboboxinfo
-                - name: Macros de control ComboBox
+                - name: ComboBox Control Macros
                   href: bumper-combobox-control-reference-macros.md
                   items:
                     - name: ComboBox_AddItemData
@@ -468,7 +468,7 @@
                       href: cb-settopindex.md
                     - name: CB_SHOWDROPDOWN
                       href: cb-showdropdown.md
-                - name: Notificaciones del control ComboBox
+                - name: Notificaciones de control ComboBox
                   href: bumper-combobox-control-reference-notifications.md
                   items:
                     - name: CBN_CLOSEUP
@@ -504,11 +504,11 @@
                   items:
                     - name: COMBOBOXINFO
                       href: /windows/win32/api/Winuser/ns-winuser-comboboxinfo
-                    - name: COMPAREITEMSTRUCT (
+                    - name: COMPAREITEMSTRUCT
                       href: /windows/win32/api/Winuser/ns-winuser-compareitemstruct
-                    - name: DRAWITEMSTRUCT (
+                    - name: DRAWITEMSTRUCT
                       href: /windows/win32/api/Winuser/ns-winuser-drawitemstruct
-                    - name: MEASUREITEMSTRUCT (
+                    - name: MEASUREITEMSTRUCT
                       href: /windows/win32/api/Winuser/ns-winuser-measureitemstruct
                 - name: Constantes de control ComboBox
                   href: bumper-combobox-control-reference-constants.md
@@ -518,7 +518,7 @@
         - name: ComboBoxEx
           href: comboboxex-control-reference.md
           items:
-            - name: Información general sobre el control ComboBoxEx
+            - name: Información general del control ComboBoxEx
               href: bumper-comboboxex-comboboxex-control-overviews.md
               items:
                 - name: Acerca de los controles ComboBoxEx
@@ -528,13 +528,13 @@
                   items:
                     - name: Cómo crear un control ComboBoxEx
                       href: how-to-create-a-comboboxex-control-.md
-                    - name: Preparación de elementos e imágenes de ComboBoxEx
+                    - name: Cómo preparar elementos e imágenes comboBoxEx
                       href: how-to-prepare-comboboxex-items-and-images.md
                     - name: Cómo admitir elementos de devolución de llamada
                       href: support-callback-item.md
-                    - name: Cómo procesar notificaciones de ComboBoxEx
+                    - name: Cómo procesar notificaciones ComboBoxEx
                       href: process-comboboxex-notification.md
-            - name: Referencia de control ComboBoxEx
+            - name: Referencia del control ComboBoxEx
               href: bumper-comboboxex-comboboxex-control-reference.md
               items:
                 - name: Mensajes ComboBoxEx
@@ -572,7 +572,7 @@
                       href: cbem-setunicodeformat.md
                     - name: CBEM_SETWINDOWTHEME
                       href: cbem-setwindowtheme.md
-                - name: Notificaciones de ComboBoxEx
+                - name: Notificaciones ComboBoxEx
                   href: bumper-comboboxex-control-reference-notifications.md
                   items:
                     - name: CBEN_BEGINEDIT
@@ -600,7 +600,7 @@
                       href: /windows/desktop/api/Commctrl/ns-commctrl-nmcbeendedita
                     - name: NMCOMBOBOXEX
                       href: /windows/desktop/api/Commctrl/ns-commctrl-nmcomboboxexa
-                - name: Constantes de ComboBoxEx
+                - name: Constantes ComboBoxEx
                   href: bumper-comboboxex-control-reference-constants.md
                   items:
                     - name: Estilos extendidos del control ComboBoxEx
@@ -608,31 +608,31 @@
         - name: Selector de fecha y hora
           href: date-and-time-picker-control-reference.md
           items:
-            - name: Información general sobre el control selector de fecha y hora
+            - name: Información general del control selector de fecha y hora
               href: bumper-date-and-time-picker-date-and-time-picker-control-overviews.md
               items:
-                - name: Acerca de los controles de selector de fecha y hora
+                - name: Acerca de los controles selectores de fecha y hora
                   href: date-and-time-picker-controls.md
-                - name: Usar controles de selector de fecha y hora
+                - name: Usar controles selectores de fecha y hora
                   href: using-date-and-time-picker.md
                   items:
-                    - name: Cómo crear un control de selector de fecha y hora
+                    - name: Cómo crear un control selector de fecha y hora
                       href: create-a-date-and-time-picker-control.md
-                    - name: Cómo procesar notificaciones de selector de fecha y hora
+                    - name: Cómo procesar notificaciones del selector de fecha y hora
                       href: process-date-and-time-picker-notifications.md
                       items:
-                        - name: Cómo procesar la notificación de DTN_DATETIMECHANGE
+                        - name: Cómo procesar la notificación de DTN_DATETIMECHANGE aplicación
                           href: process-the-dtn-datetimechange-notification.md
-                        - name: Cómo procesar la notificación de DTN_FORMATQUERY
+                        - name: Cómo procesar la notificación DTN_FORMATQUERY aplicación
                           href: process-the-dtn-formatquery-notification.md
-                        - name: Cómo procesar el DTN_FORMAT notificación
+                        - name: Procedimiento para procesar el DTN_FORMAT no se ha procesado
                           href: process-the-dtn-format-notfication.md
-                        - name: Cómo procesar la notificación de DTN_WMKEYDOWN
+                        - name: Cómo procesar la notificación de DTN_WMKEYDOWN aplicación
                           href: process-the-dtn-wmkeydown-notification.md
-            - name: Referencia de control de selector de fecha y hora
+            - name: Referencia del control selector de fecha y hora
               href: bumper-date-and-time-picker-date-and-time-picker-control-reference.md
               items:
-                - name: Macros de selector de fecha y hora
+                - name: Macros del selector de fecha y hora
                   href: bumper-date-and-time-picker-control-reference-macros.md
                   items:
                     - name: DateTime_CloseMonthCal
@@ -665,7 +665,7 @@
                       href: /windows/desktop/api/Commctrl/nf-commctrl-datetime_setrange
                     - name: DateTime_SetSystemtime
                       href: /windows/desktop/api/Commctrl/nf-commctrl-datetime_setsystemtime
-                - name: Mensajes de selector de fecha y hora
+                - name: Mensajes del selector de fecha y hora
                   href: bumper-date-and-time-picker-control-reference-messages.md
                   items:
                     - name: DTM_CLOSEMONTHCAL
@@ -698,7 +698,7 @@
                       href: dtm-setrange.md
                     - name: DTM_SETSYSTEMTIME
                       href: dtm-setsystemtime.md
-                - name: Notificaciones de selector de fecha y hora
+                - name: Notificaciones del selector de fecha y hora
                   href: bumper-date-and-time-picker-control-reference-notifications.md
                   items:
                     - name: DTN_CLOSEUP
@@ -719,7 +719,7 @@
                       href: nm-killfocus-date-time.md
                     - name: NM_SETFOCUS (fecha y hora)
                       href: nm-setfocus-date-time-.md
-                - name: Estructuras de selector de fecha y hora
+                - name: Estructuras del selector de fecha y hora
                   href: bumper-date-and-time-picker-control-reference-structures.md
                   items:
                     - name: DATETIMEPICKERINFO
@@ -734,18 +734,18 @@
                       href: /windows/win32/api/Commctrl/ns-commctrl-nmdatetimestringa
                     - name: NMDATETIMEWMKEYDOWN
                       href: /windows/win32/api/Commctrl/ns-commctrl-nmdatetimewmkeydowna
-                - name: Constantes de selector de fecha y hora
+                - name: Constantes del selector de fecha y hora
                   href: bumper-date-and-time-picker-control-reference-constants.md
                   items:
-                    - name: Estilos de control de selector de fecha y hora
+                    - name: Estilos de control selector de fecha y hora
                       href: date-and-time-picker-control-styles.md
-        - name: Control de edición
+        - name: Editar control
           href: edit-controls.md
           items:
-            - name: Información general sobre el control de edición
+            - name: Información general de edición de controles
               href: bumper-edit-control-edit-control-overviews.md
               items:
-                - name: Acerca de los controles de edición
+                - name: Acerca de editar controles
                   href: about-edit-controls.md
                 - name: Editar operaciones de texto de control
                   href: edit-controls-text-operations.md
@@ -985,18 +985,18 @@
                   items:
                     - name: Editar estilos de control
                       href: edit-control-styles.md
-        - name: Barra de desplazamiento plana
+        - name: Barra de desplazamiento plano
           href: flat-scroll-bars-reference.md
           items:
-            - name: Información general sobre barras de desplazamiento plana
+            - name: Introducción a las barras de desplazamiento plano
               href: bumper-flat-scroll-bar-flat-scroll-bars-overview.md
               items:
-                - name: Barras de desplazamiento plana
+                - name: Barras de desplazamiento plano
                   href: flat-scroll-bars.md
-            - name: Referencia de la barra de desplazamiento plana
+            - name: Referencia de la barra de desplazamiento plano
               href: bumper-flat-scroll-bar-flat-scroll-bars-reference.md
               items:
-                - name: Funciones de barra de desplazamiento plana
+                - name: Funciones de barra de desplazamiento plano
                   href: bumper-flat-scroll-bars-reference-functions.md
                   items:
                     - name: FlatSB_EnableScrollBar
@@ -1028,7 +1028,7 @@
         - name: Control de encabezado
           href: header-control-reference.md
           items:
-            - name: Información general sobre el control header
+            - name: Información general sobre el control de encabezado
               href: bumper-header-control-header-control-overviews.md
               items:
                 - name: Acerca de los controles de encabezado
@@ -1159,7 +1159,7 @@
                       href: hdm-setunicodeformat.md
                     - name: HDM_TRANSLATEACCELERATOR
                       href: hdm-translateaccelerator.md
-                - name: Notificaciones del control de encabezado
+                - name: Notificaciones de control de encabezado
                   href: bumper-header-control-reference-notifications.md
                   items:
                     - name: HDN_BEGINDRAG
@@ -1228,25 +1228,25 @@
                   items:
                     - name: Estilos de control de encabezado
                       href: header-control-styles.md
-        - name: Tecla de acceso rápido
+        - name: Tecla de acceso
           href: hot-key-control-reference.md
           items:
             - name: Información general sobre el control de teclas de acceso rápido
               href: bumper-hot-key-hot-key-control-overviews.md
               items:
-                - name: Acerca de los controles de tecla de acceso rápido
+                - name: Acerca de los controles de tecla de acceso
                   href: hot-key-controls.md
-                - name: Usar controles de tecla de acceso rápido
+                - name: Usar controles de tecla de acceso
                   href: using-hot-key-controls.md
                   items:
-                    - name: Cómo crear un control de tecla de acceso rápido
+                    - name: Cómo crear un control de tecla de acceso
                       href: create-a-hot-key-control.md
-                    - name: Cómo recuperar y establecer una tecla de acceso rápido
+                    - name: Cómo recuperar y establecer una tecla de acceso
                       href: '-retrieve-and-set-a-hot-key.md'
-            - name: Referencia de control de teclas de acceso rápido
+            - name: Referencia de control de clave rápida
               href: bumper-hot-key-hot-key-control-reference.md
               items:
-                - name: Mensajes de control de teclas de acceso rápido
+                - name: Mensajes de control de teclas de acceso directo
                   href: bumper-hot-key-control-reference-messages.md
                   items:
                     - name: HKM_GETHOTKEY
@@ -1258,7 +1258,7 @@
         - name: Listas de imágenes
           href: image-list-reference.md
           items:
-            - name: Información general de las listas de imágenes
+            - name: Información general sobre las listas de imágenes
               href: bumper-image-lists-image-lists-overview.md
               items:
                 - name: Acerca de las listas de imágenes
@@ -1268,14 +1268,14 @@
                   items:
                     - name: Cómo crear una lista de imágenes
                       href: create-an-image-list.md
-                    - name: Cómo dibujar una imagen
+                    - name: Dibujar una imagen
                       href: draw-an-image.md
                     - name: Cómo arrastrar una imagen
                       href: drag-an-image.md
-            - name: Referencia de las listas de imágenes
+            - name: Referencia de listas de imágenes
               href: bumper-image-lists-image-lists-reference.md
               items:
-                - name: Tipos enumerados de la lista de imágenes
+                - name: Tipos enumerados de lista de imágenes
                   href: bumper-image-lists-reference-enumerated-types.md
                   items:
                     - name: IMAGELISTDRAWFLAGS
@@ -1428,29 +1428,29 @@
                     - name: IImageList2
                       href: /windows/desktop/api/Commoncontrols/nn-commoncontrols-iimagelist2
                       items:
-                        - name: Método DiscardImages
+                        - name: DiscardImages (método)
                           href: /windows/desktop/api/Commoncontrols/nf-commoncontrols-iimagelist2-discardimages
-                        - name: Método ForceImagePresent
+                        - name: ForceImagePresent (método)
                           href: /windows/desktop/api/Commoncontrols/nf-commoncontrols-iimagelist2-forceimagepresent
-                        - name: Método GetCallback
+                        - name: GetCallback (método)
                           href: /windows/desktop/api/Commoncontrols/nf-commoncontrols-iimagelist2-getcallback
-                        - name: Método GetOriginalSize
+                        - name: GetOriginalSize (método)
                           href: /windows/desktop/api/Commoncontrols/nf-commoncontrols-iimagelist2-getoriginalsize
-                        - name: Método GetStatistics
+                        - name: GetStatistics (método)
                           href: /windows/desktop/api/Commoncontrols/nf-commoncontrols-iimagelist2-getstatistics
                         - name: Método Initialize
                           href: /windows/desktop/api/Commoncontrols/nf-commoncontrols-iimagelist2-initialize
-                        - name: Método PreloadImages
+                        - name: PreloadImages (método)
                           href: /windows/desktop/api/Commoncontrols/nf-commoncontrols-iimagelist2-preloadimages
-                        - name: Método Replace2
+                        - name: Replace2 (método)
                           href: /windows/desktop/api/Commoncontrols/nf-commoncontrols-iimagelist2-replace2
-                        - name: Método ReplaceFromImageList
+                        - name: ReplaceFromImageList (método)
                           href: /windows/desktop/api/Commoncontrols/nf-commoncontrols-iimagelist2-replacefromimagelist
                         - name: Resize (método)
                           href: /windows/desktop/api/Commoncontrols/nf-commoncontrols-iimagelist2-resize
-                        - name: Método SetCallback
+                        - name: SetCallback (método)
                           href: /windows/desktop/api/Commoncontrols/nf-commoncontrols-iimagelist2-setcallback
-                        - name: Método SetOriginalSize
+                        - name: SetOriginalSize (método)
                           href: /windows/desktop/api/Commoncontrols/nf-commoncontrols-iimagelist2-setoriginalsize
                 - name: Macros de lista de imágenes
                   href: bumper-image-lists-reference-macros.md
@@ -1477,7 +1477,7 @@
                 - name: Constantes de lista de imágenes
                   href: image-list-constants.md
                   items:
-                    - name: Marcas de creación de lista de imágenes
+                    - name: Marcas de creación de listas de imágenes
                       href: ilc-constants.md
         - name: IP Address Control
           href: ip-address-control-reference.md
@@ -1487,12 +1487,12 @@
               items:
                 - name: Acerca de los controles de dirección IP
                   href: ip-address-controls.md
-                - name: Usar controles de direcciones IP
+                - name: Uso de controles de dirección IP
                   href: using-ip-address-controls.md
                   items:
-                    - name: Cómo crear un control de dirección IP
+                    - name: Cómo crear un control de direcciones IP
                       href: create-an-ip-address-control.md
-            - name: Referencia de control de dirección IP
+            - name: Referencia de control de direcciones IP
               href: bumper-ip-address-control-ip-address-control-reference.md
               items:
                 - name: Macros de direcciones IP
@@ -1525,7 +1525,7 @@
                       href: ipm-setfocus.md
                     - name: IPM_SETRANGE
                       href: ipm-setrange.md
-                - name: Notificaciones de direcciones IP
+                - name: Notificaciones de dirección IP
                   href: bumper-ip-address-control-reference-notifications.md
                   items:
                     - name: IPN_FIELDCHANGED
@@ -1538,7 +1538,7 @@
         - name: Cuadro de lista
           href: list-boxes.md
           items:
-            - name: Información general sobre el control de cuadro de lista
+            - name: Información general sobre el control List Box
               href: bumper-list-box-list-box-control-overviews.md
               items:
                 - name: Acerca de los cuadros de lista
@@ -1548,13 +1548,13 @@
                   items:
                     - name: Cómo crear un cuadro de lista simple
                       href: create-a-simple-list-box.md
-                    - name: Cómo crear una lista de directorios en un cuadro de lista de Single-Selection
+                    - name: Cómo crear una lista de directorios en un Single-Selection lista de directorios
                       href: create-directory-listing-in-a-single-selection-list-box.md
-                    - name: Cómo crear un cuadro de lista de Multiple-Selection
+                    - name: How to Create a Multiple-Selection List Box
                       href: create-a-multiple-selection-list-box.md
-                    - name: Cómo crear un cuadro de lista de Owner-Drawn
+                    - name: How to Create an Owner-Drawn List Box
                       href: create-an-owner-drawn-list-box.md
-            - name: Referencia de control de cuadro de lista
+            - name: Referencia del control List Box
               href: bumper-list-box-list-box-control-reference.md
               items:
                 - name: Funciones de cuadro de lista
@@ -1763,10 +1763,10 @@
                       href: wm-deleteitem.md
                     - name: WM_VKEYTOITEM
                       href: wm-vkeytoitem.md
-                - name: Estructuras de cuadros de lista
+                - name: Estructuras de cuadro de lista
                   href: bumper-list-box-control-reference-structures.md
                   items:
-                    - name: DELETEITEMSTRUCT (
+                    - name: DELETEITEMSTRUCT
                       href: /windows/win32/api/Winuser/ns-winuser-deleteitemstruct
                     - name: DRAGLISTINFO
                       href: /windows/win32/api/Commctrl/ns-commctrl-draglistinfo
@@ -1778,41 +1778,41 @@
         - name: Vista de lista
           href: list-view-control-reference.md
           items:
-            - name: Información general sobre el control List-View
+            - name: List-View información general sobre el control de acceso
               href: bumper-list-view-list-view-control-overviews.md
               items:
-                - name: Acerca de los controles List-View
+                - name: Acerca de List-View controles
                   href: list-view-controls-overview.md
-                - name: Usar controles List-View
+                - name: Usar List-View controles
                   href: using-list-view-controls.md
                   items:
-                    - name: Cómo crear un control de List-View
+                    - name: Cómo crear un control List-View control
                       href: create-a-list-view-control.md
-                    - name: Cómo agregar List-View listas de imágenes
+                    - name: Cómo agregar listas List-View imágenes
                       href: add-list-view-image-lists.md
-                    - name: Cómo agregar List-View columnas
+                    - name: Cómo agregar columnas List-View datos
                       href: add-list-view-columns.md
-                    - name: Cómo agregar elementos de List-View y subelementos
+                    - name: Cómo agregar elementos List-View y subelementos
                       href: add-list-view-items-and-subitems.md
-                    - name: Cómo usar vistas en mosaico
+                    - name: Uso de vistas de mosaico
                       href: use-tile-views.md
-                    - name: Cómo usar grupos en un List-View
+                    - name: Uso de grupos en un List-View
                       href: use-groups-in-a-list-view.md
-                    - name: Cómo usar áreas de trabajo de List-View
+                    - name: Uso de las List-View de trabajo
                       href: use-list-view-working-areas.md
-                    - name: Cómo usar controles de List-View virtual
+                    - name: Cómo usar controles de List-View virtuales
                       href: use-virtual-list-view-controls.md
-                - name: Procesamiento de mensajes de List-View predeterminado
+                - name: Procesamiento List-View mensajes predeterminados
                   href: listview-message-processing.md
-            - name: Referencia de control de List-View
+            - name: referencia List-View control de acceso
               href: bumper-list-view-list-view-control-reference.md
               items:
-                - name: Funciones de la vista de lista
+                - name: Funciones de vista de lista
                   href: bumper-list-view-control-reference-functions.md
                   items:
                     - name: LVGroupCompare
                       href: /windows/desktop/api/commctrl/nc-commctrl-pfnlvgroupcompare
-                - name: Macros de la vista de lista
+                - name: Macros de vista de lista
                   href: bumper-list-view-control-reference-macros.md
                   items:
                     - name: ListView_ApproximateViewRect
@@ -2085,7 +2085,7 @@
                       href: /windows/desktop/api/Commctrl/nf-commctrl-listview_subitemhittestex
                     - name: ListView_Update
                       href: /windows/desktop/api/Commctrl/nf-commctrl-listview_update
-                - name: Mensajes de vista de lista
+                - name: Mostrar mensajes de vista
                   href: bumper-list-view-control-reference-messages.md
                   items:
                     - name: LVM_APPROXIMATEVIEWRECT
@@ -2340,7 +2340,7 @@
                       href: lvm-subitemhittest.md
                     - name: LVM_UPDATE
                       href: lvm-update.md
-                - name: Notificaciones de la vista de lista
+                - name: Enumerar notificaciones de vista
                   href: bumper-list-view-control-reference-notifications.md
                   items:
                     - name: LVN_BEGINDRAG
@@ -2417,7 +2417,7 @@
                       href: nm-return-list-view-.md
                     - name: NM_SETFOCUS (vista de lista)
                       href: nm-setfocus-list-view-.md
-                - name: Estructuras de vistas de lista
+                - name: Estructuras de vista de lista
                   href: bumper-list-view-control-reference-structures.md
                   items:
                     - name: LVBKIMAGE
@@ -2474,16 +2474,16 @@
                       href: /windows/win32/api/Commctrl/ns-commctrl-nmlvodstatechange
                     - name: NMLVSCROLL
                       href: /windows/win32/api/Commctrl/ns-commctrl-nmlvscroll
-                - name: Constantes de la vista de lista
+                - name: Constantes de vista de lista
                   href: bumper-list-view-control-reference-constants.md
                   items:
                     - name: Estilos de List-View extendidos
                       href: extended-list-view-styles.md
-                    - name: List-View Estados de elemento
+                    - name: List-View de elementos
                       href: list-view-item-states.md
-                    - name: List-View estilos de ventana
+                    - name: List-View de ventana
                       href: list-view-window-styles.md
-            - name: Ejemplo de control de List-View
+            - name: List-View ejemplo de control
               href: bumper-list-view-list-view-control-sample.md
               items:
                 - name: Ejemplo de VListVW
@@ -2494,19 +2494,19 @@
             - name: Información general sobre el control de calendario mensual
               href: bumper-month-calendar-month-calendar-control-overviews.md
               items:
-                - name: Acerca de los controles de calendario mensual
+                - name: Acerca de los controles de calendario del mes
                   href: month-calendar-controls.md
-                - name: Usar controles de calendario mensual
+                - name: Usar controles de calendario de mes
                   href: using-month-calendar-controls.md
                   items:
                     - name: Cómo crear un control de calendario mensual
                       href: create-a-month-calendar-control.md
-                    - name: Establecimiento de los Estados de día
+                    - name: Cómo establecer estados de día
                       href: set-day-states.md
             - name: Referencia de control de calendario mensual
               href: bumper-month-calendar-month-calendar-control-reference.md
               items:
-                - name: Macros de calendario mensual
+                - name: Macros de calendario de mes
                   href: bumper-month-calendar-control-reference-macros.md
                   items:
                     - name: MonthCal_GetCalendarBorder
@@ -2573,7 +2573,7 @@
                       href: /windows/desktop/api/Commctrl/nf-commctrl-monthcal_setunicodeformat
                     - name: MonthCal_SizeRectToMin
                       href: /windows/desktop/api/Commctrl/nf-commctrl-monthcal_sizerecttomin
-                - name: Mensajes de calendario mensual
+                - name: Mensajes del calendario mensual
                   href: bumper-month-calendar-control-reference-messages.md
                   items:
                     - name: MCM_GETCALENDARBORDER
@@ -2651,7 +2651,7 @@
                       href: mcn-select.md
                     - name: MCN_VIEWCHANGE
                       href: mcn-viewchange.md
-                    - name: NM_RELEASEDCAPTURE (monthcal)
+                    - name: NM_RELEASEDCAPTURE (mes)
                       href: nm-releasedcapture-monthcal-.md
                 - name: Estructuras de calendario mensual
                   href: bumper-month-calendar-control-reference-structures.md
@@ -2666,12 +2666,12 @@
                       href: /windows/win32/api/Commctrl/ns-commctrl-nmselchange
                     - name: NMVIEWCHANGE
                       href: /windows/win32/api/Commctrl/ns-commctrl-nmviewchange
-                - name: Constantes de calendario mensual
+                - name: Constantes del calendario mensual
                   href: bumper-month-calendar-control-reference-constants.md
                   items:
                     - name: Estilos de control de calendario mensual
                       href: month-calendar-control-styles.md
-                - name: Tipos de datos de calendario mensual
+                - name: Tipos de datos del calendario mensual
                   href: bumper-month-calendar-control-reference-data-types.md
                   items:
                     - name: MONTHDAYSTATE
@@ -2679,15 +2679,15 @@
         - name: Buscapersonas
           href: pager-control-reference.md
           items:
-            - name: Información general sobre el control de paginación
+            - name: Información general sobre el control De paginación
               href: bumper-pager-pager-control-overviews.md
               items:
-                - name: Acerca de los controles de buscapersonas
+                - name: Acerca de los controles de paginación
                   href: pager-controls.md
-                - name: Usar controles de buscapersonas
+                - name: Usar controles de paginación
                   href: using-pager-controls.md
                   items:
-                    - name: Cómo usar los controles de buscapersonas
+                    - name: Cómo usar controles de paginación
                       href: use-pager-controls.md
             - name: Referencia de control de paginación
               href: bumper-pager-pager-control-reference.md
@@ -2723,7 +2723,7 @@
                       href: /windows/desktop/api/Commctrl/nf-commctrl-pager_setpos
                     - name: Pager_SetScrollInfo
                       href: /windows/desktop/api/Commctrl/nf-commctrl-pager_setscrollinfo
-                - name: Mensajes de control de buscapersonas
+                - name: Mensajes de control de paginación
                   href: bumper-pager-control-reference-messages.md
                   items:
                     - name: PGM_FORWARDMOUSE
@@ -2754,10 +2754,10 @@
                       href: pgm-setpos.md
                     - name: PGM_SETSCROLLINFO
                       href: pgm-setscrollinfo.md
-                - name: Notificaciones del control de buscapersonas
+                - name: Notificaciones de control de paginación
                   href: bumper-pager-control-reference-notifications.md
                   items:
-                    - name: NM_RELEASEDCAPTURE (buscapersonas)
+                    - name: NM_RELEASEDCAPTURE (paginación)
                       href: nm-releasedcapture-pager-.md
                     - name: PGN_CALCSIZE
                       href: pgn-calcsize.md
@@ -2777,7 +2777,7 @@
                 - name: Constantes de control de paginación
                   href: bumper-pager-control-reference-constants.md
                   items:
-                    - name: Estilos de control de buscapersonas
+                    - name: Estilos de control de paginación
                       href: pager-control-styles.md
         - name: ProgressBar
           href: progress-bar-control-reference.md
@@ -2790,7 +2790,7 @@
                 - name: Usar controles de barra de progreso
                   href: using-progress-bar-controls.md
                   items:
-                    - name: Cómo usar los controles de barra de progreso
+                    - name: Cómo usar controles de barra de progreso
                       href: create-progress-bar-controls.md
             - name: Referencia de control de barra de progreso
               href: bumper-progress-bar-progress-bar-control-reference.md
@@ -2843,7 +2843,7 @@
         - name: Hoja de propiedades
           href: property-sheet-reference.md
           items:
-            - name: Información general sobre las hojas de propiedades
+            - name: Información general sobre hojas de propiedades
               href: bumper-property-sheet-property-sheets-overviews.md
               items:
                 - name: Acerca de las hojas de propiedades
@@ -2860,7 +2860,7 @@
             - name: Referencia de hoja de propiedades
               href: bumper-property-sheet-property-sheets-reference.md
               items:
-                - name: Funciones de la hoja de propiedades
+                - name: Funciones de hoja de propiedades
                   href: bumper-property-sheets-reference-functions.md
                   items:
                     - name: AddPropSheetPageProc
@@ -2869,13 +2869,13 @@
                       href: /windows/desktop/api/Prsht/nf-prsht-createpropertysheetpagea
                     - name: DestroyPropertySheetPage
                       href: /windows/desktop/api/Prsht/nf-prsht-destroypropertysheetpage
-                    - name: Hoja
+                    - name: PropertySheet
                       href: /windows/desktop/api/Prsht/nf-prsht-propertysheeta
                     - name: LPFNPSPCALLBACK
                       href: /windows/desktop/api/prsht/nc-prsht-lpfnpspcallbacka
                     - name: PropSheetProc
                       href: /windows/desktop/api/Prsht/nc-prsht-pfnpropsheetcallback
-                - name: Macros de la hoja de propiedades
+                - name: Macros de hoja de propiedades
                   href: bumper-property-sheets-reference-macros.md
                   items:
                     - name: PropSheet_AddPage
@@ -2948,7 +2948,7 @@
                       href: /windows/desktop/api/Prsht/nf-prsht-propsheet_showwizbuttons
                     - name: PropSheet_UnChanged
                       href: /windows/desktop/api/Prsht/nf-prsht-propsheet_unchanged
-                - name: Mensajes de la hoja de propiedades
+                - name: Mensajes de hoja de propiedades
                   href: bumper-property-sheets-reference-messages.md
                   items:
                     - name: PSM_ADDPAGE
@@ -3021,7 +3021,7 @@
                       href: psm-showwizbuttons.md
                     - name: PSM_UNCHANGED
                       href: psm-unchanged.md
-                - name: Notificaciones de la hoja de propiedades
+                - name: Notificaciones de hoja de propiedades
                   href: bumper-property-sheets-reference-notifications.md
                   items:
                     - name: PSN_APPLY
@@ -3048,7 +3048,7 @@
                       href: psn-wizfinish.md
                     - name: PSN_WIZNEXT
                       href: psn-wiznext.md
-                - name: Estructuras de la hoja de propiedades
+                - name: Estructuras de hoja de propiedades
                   href: bumper-property-sheets-reference-structures.md
                   items:
                     - name: PROPSHEETHEADER
@@ -3065,20 +3065,20 @@
         - name: Rebar
           href: rebar-control-reference.md
           items:
-            - name: Información general sobre el control rebar
+            - name: Información general sobre el control Rebar
               href: bumper-rebar-rebar-control-overviews.md
               items:
-                - name: Acerca de los controles rebar
+                - name: Acerca de los controles Rebar
                   href: rebar-controls.md
-                - name: Usar controles rebar
+                - name: Usar controles Rebar
                   href: using-rebar-controls.md
                   items:
-                    - name: Cómo crear controles rebar
+                    - name: Cómo crear controles Rebar
                       href: create-rebar-controls.md
-            - name: Referencia de control rebar
+            - name: Referencia del control Rebar
               href: bumper-rebar-rebar-control-reference.md
               items:
-                - name: Mensajes de control rebar
+                - name: Rebar (Mensajes de control)
                   href: bumper-rebar-control-reference-messages.md
                   items:
                     - name: RB_BEGINDRAG
@@ -3165,7 +3165,7 @@
                       href: rb-showband.md
                     - name: RB_SIZETORECT
                       href: rb-sizetorect.md
-                - name: Notificaciones del control rebar
+                - name: Notificaciones de control rebar
                   href: bumper-rebar-control-reference-notifications.md
                   items:
                     - name: NM_CUSTOMDRAW (rebar)
@@ -3200,7 +3200,7 @@
                       href: rbn-minmax.md
                     - name: RBN_SPLITTERDRAG
                       href: rbn-splitterdrag.md
-                - name: Estructuras de control rebar
+                - name: Estructuras de control Rebar
                   href: bumper-rebar-control-reference-structures.md
                   items:
                     - name: NMRBAUTOSIZE
@@ -3221,17 +3221,17 @@
                       href: /windows/win32/api/Commctrl/ns-commctrl-rebarbandinfoa
                     - name: REBARINFO
                       href: /windows/win32/api/Commctrl/ns-commctrl-rebarinfo
-                - name: Constantes de control rebar
+                - name: Constantes de control Rebar
                   href: bumper-rebar-control-reference-constants.md
                   items:
-                    - name: Estilos de control rebar
+                    - name: Estilos de control Rebar
                       href: rebar-control-styles.md
-            - name: Ejemplo de control rebar
+            - name: Ejemplo de control Rebar
               href: bumper-rebar-rebar-control-sample.md
               items:
                 - name: Ejemplo de rebar
                   href: rebar-sample.md
-        - name: Edición enriquecida
+        - name: Edición enriquección
           href: rich-edit-controls.md
           items:
             - name: Información general sobre el control Rich Edit
@@ -3242,34 +3242,34 @@
                 - name: Usar controles Rich Edit
                   href: using-rich-edit-controls.md
                   items:
-                    - name: Cómo crear controles Rich Edit
+                    - name: Cómo crear controles rich edit
                       href: create-rich-edit-controls.md
-                    - name: Cómo dar formato al texto en los controles Rich Edit
+                    - name: Cómo dar formato al texto en controles Rich Edit
                       href: format-text-in-rich-edit-controls.md
                     - name: Cómo interactuar con la selección actual
                       href: interact-with-the-current-selection.md
-                    - name: Cómo usar operaciones de edición de texto enriquecidas
+                    - name: Cómo usar operaciones de edición de texto enriquecido
                       href: use-rich-edit-text-operations.md
-                    - name: Cómo usar la información de saltos de línea y de palabra
+                    - name: Cómo usar la información de saltos de línea y palabras
                       href: use-word-and-line-break-information.md
-                    - name: Cómo usar las operaciones de edición enriquecida del portapapeles
+                    - name: Cómo usar las operaciones de edición enriquecte del Portapapeles
                       href: use-rich-edit-clipboard-operations.md
-                    - name: Cómo usar secuencias
+                    - name: Uso de Secuencias
                       href: use-streams.md
                     - name: Cómo cambiar automáticamente el tamaño de los controles Rich Edit
                       href: automatically-resize-rich-edit-controls.md
-                    - name: Cómo usar los códigos de notificación de control Rich Edit
+                    - name: Cómo usar los códigos de notificación del control Rich Edit
                       href: use-rich-edit-control-notification-codes.md
                     - name: Cómo usar el enlace de fuentes en controles Rich Edit
                       href: use-font-binding-in-rich-edit-controls.md
-                    - name: Cómo usar OLE en controles Rich Edit
+                    - name: Cómo usar OLE en controles rich edit
                       href: using-rich-edit-com.md
                     - name: Cómo imprimir el contenido de los controles Rich Edit
                       href: printing-rich-edit-controls.md
-            - name: Referencia de control Rich Edit
+            - name: Referencia del control Rich Edit
               href: bumper-rich-edit-rich-edit-control-reference.md
               items:
-                - name: Funciones de edición enriquecidas
+                - name: Funciones rich edit
                   href: bumper-rich-edit-control-reference-functions.md
                   items:
                     - name: AutoCorrectProc
@@ -3292,13 +3292,13 @@
                       href: /previous-versions/windows/desktop/legacy/hh780446(v=vs.85)
                     - name: REExtendedRegisterClass
                       href: reextendedregisterclass.md
-                - name: Interfaces de edición enriquecidas
+                - name: Interfaces de edición enriquecciones
                   href: bumper-rich-edit-control-reference-interfaces.md
                   items:
                     - name: IRichEditOle
                       href: /windows/desktop/api/Richole/nn-richole-iricheditole
                       items:
-                        - name: Activaras
+                        - name: ActivateAs
                           href: /windows/desktop/api/Richole/nf-richole-iricheditole-activateas
                         - name: ContextSensitiveHelp
                           href: /windows/desktop/api/Richole/nf-richole-iricheditole-contextsensitivehelp
@@ -3312,7 +3312,7 @@
                           href: /windows/desktop/api/Richole/nf-richole-iricheditole-getlinkcount
                         - name: GetObject
                           href: /windows/desktop/api/Richole/nf-richole-iricheditole-getobject
-                        - name: Getobjectcount (
+                        - name: GetObjectCount
                           href: /windows/desktop/api/Richole/nf-richole-iricheditole-getobjectcount
                         - name: HandsOffStorage
                           href: /windows/desktop/api/Richole/nf-richole-iricheditole-handsoffstorage
@@ -3353,7 +3353,7 @@
                           href: /windows/desktop/api/Richole/nf-richole-iricheditolecallback-queryinsertobject
                         - name: ShowContainerUI
                           href: /windows/desktop/api/Richole/nf-richole-iricheditolecallback-showcontainerui
-                - name: Mensajes de edición enriquecida
+                - name: Editar mensajes enriquecidos
                   href: bumper-rich-edit-control-reference-messages.md
                   items:
                     - name: EM_AUTOURLDETECT
@@ -3562,10 +3562,10 @@
                       href: em-streamin.md
                     - name: EM_STREAMOUT
                       href: em-streamout.md
-                - name: Notificaciones de edición enriquecidas
+                - name: Notificaciones de edición enriquecciones
                   href: bumper-rich-edit-control-reference-notifications.md
                   items:
-                    - name: EN_CHANGE (edición enriquecida)
+                    - name: EN_CHANGE (edición enriquección)
                       href: en-change--rich-edit-control-.md
                     - name: EN_ALIGNLTR
                       href: en-alignltr.md
@@ -3607,7 +3607,7 @@
                       href: en-startcomposition.md
                     - name: EN_STOPNOUNDO
                       href: en-stopnoundo.md
-                - name: Estructuras de edición enriquecidas
+                - name: Estructuras de edición enriquecciones
                   href: bumper-rich-edit-control-reference-structures.md
                   items:
                     - name: BIDIOPTIONS
@@ -3632,7 +3632,7 @@
                       href: /windows/desktop/api/Richedit/ns-richedit-endcompositionnotify
                     - name: ENDROPFILES
                       href: /windows/win32/api/Richedit/ns-richedit-endropfiles
-                    - name: VÍNCULO
+                    - name: ENLINK
                       href: /windows/win32/api/Richedit/ns-richedit-enlink
                     - name: ENLOWFIRTF
                       href: /windows/win32/api/Richedit/ns-richedit-enlowfirtf
@@ -3668,9 +3668,9 @@
                       href: /windows/win32/api/Richedit/ns-richedit-paraformat
                     - name: PARAFORMAT2
                       href: /windows/desktop/api/Richedit/ns-richedit-paraformat2
-                    - name: PUNTUACIÓN
+                    - name: Puntuación
                       href: /windows/win32/api/Richedit/ns-richedit-punctuation
-                    - name: Reobject
+                    - name: REOBJECT
                       href: /windows/win32/api/Richole/ns-richole-reobject
                     - name: REPASTESPECIAL
                       href: /windows/win32/api/Richedit/ns-richedit-repastespecial
@@ -3686,16 +3686,16 @@
                       href: /windows/win32/api/Richedit/ns-richedit-tablecellparms
                     - name: TABLEROWPARMS
                       href: /windows/win32/api/Richedit/ns-richedit-tablerowparms
-                    - name: TEXTRANGE
+                    - name: Textrange
                       href: /windows/desktop/api/Richedit/ns-richedit-textrangea
-                - name: Constantes de edición enriquecidas
+                - name: Constantes de edición enriquecciones
                   href: bumper-rich-edit-control-reference-constants.md
                   items:
-                    - name: Marcas de máscara de eventos de control de edición enriquecida
+                    - name: Marcas de máscara de eventos del control Rich Edit
                       href: rich-edit-control-event-mask-flags.md
                     - name: Estilos de control Rich Edit
                       href: rich-edit-control-styles.md
-                - name: Tipos de enumeración Rich Edit
+                - name: Editar tipos de enumeración enriquecidos
                   href: bumper-rich-edit-control-reference-enumeration-types.md
                   items:
                     - name: KHYPH
@@ -3707,7 +3707,7 @@
             - name: Modelo de objetos de texto
               href: text-object-model.md
               items:
-                - name: Información general del modelo de objetos de texto
+                - name: Información general sobre el modelo de objetos de texto
                   href: bumper-text-object-model-text-object-model-overviews.md
                   items:
                     - name: Acerca del modelo de objetos de texto
@@ -3715,9 +3715,9 @@
                     - name: Usar el modelo de objetos de texto
                       href: using-the-text-object-model.md
                       items:
-                        - name: Cómo usar los GUID de TOM
+                        - name: Uso de GUID de TOM
                           href: use-tom-guids.md
-                        - name: Cómo usar métodos de ficha en TOM
+                        - name: Cómo usar métodos tab en TOM
                           href: use-tab-methods-in-tom.md
                         - name: Cómo usar un duplicado de fuente
                           href: use-a-font-duplicate.md
@@ -3756,7 +3756,7 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextdocument-open
                             - name: Intervalo
                               href: /windows/desktop/api/Tom/nf-tom-itextdocument-range
-                            - name: Tal
+                            - name: RangeFromPoint
                               href: /windows/desktop/api/Tom/nf-tom-itextdocument-rangefrompoint
                             - name: Rehacer
                               href: /windows/desktop/api/Tom/nf-tom-itextdocument-redo
@@ -3768,7 +3768,7 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextdocument-setsaved
                             - name: Deshacer
                               href: /windows/desktop/api/Tom/nf-tom-itextdocument-undo
-                            - name: Liberar
+                            - name: Descongelar
                               href: /windows/desktop/api/Tom/nf-tom-itextdocument-unfreeze
                         - name: ITextDocument2
                           href: /windows/desktop/api/Tom/nn-tom-itextdocument2
@@ -3825,9 +3825,9 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextdocument2-getversion
                             - name: Método GetWindow
                               href: /windows/desktop/api/Tom/nf-tom-itextdocument2-getwindow
-                            - name: NOTIFY (método)
+                            - name: Método Notify
                               href: /windows/desktop/api/Tom/nf-tom-itextdocument2-notify
-                            - name: Range2 (método)
+                            - name: Método Range2
                               href: /windows/desktop/api/Tom/nf-tom-itextdocument2-range2
                             - name: Método RangeFromPoint2
                               href: /windows/desktop/api/Tom/nf-tom-itextdocument2-rangefrompoint2
@@ -3878,7 +3878,7 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextfont-getduplicate
                             - name: GetEmboss
                               href: /windows/desktop/api/Tom/nf-tom-itextfont-getemboss
-                            - name: GetEngrave
+                            - name: GetEn grab
                               href: /windows/desktop/api/Tom/nf-tom-itextfont-getengrave
                             - name: GetForeColor
                               href: /windows/desktop/api/Tom/nf-tom-itextfont-getforecolor
@@ -3934,7 +3934,7 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextfont-setduplicate
                             - name: SetEmboss
                               href: /windows/desktop/api/Tom/nf-tom-itextfont-setemboss
-                            - name: SetEngrave
+                            - name: SetEn grab
                               href: /windows/desktop/api/Tom/nf-tom-itextfont-setengrave
                             - name: SetForeColor
                               href: /windows/desktop/api/Tom/nf-tom-itextfont-setforecolor
@@ -3977,7 +3977,7 @@
                         - name: ITextFont2
                           href: /windows/desktop/api/Tom/nn-tom-itextfont2
                           items:
-                            - name: Método GetAutoLigatures
+                            - name: Método GetAutoAutoAutotures
                               href: /windows/desktop/api/Tom/nf-tom-itextfont2-getautoligatures
                             - name: Método GetAutospaceAlpha
                               href: /windows/desktop/api/Tom/nf-tom-itextfont2-getautospacealpha
@@ -4027,7 +4027,7 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextfont2-getunderlinepositionmode
                             - name: Método IsEqual2
                               href: /windows/desktop/api/Tom/nf-tom-itextfont2-isequal2
-                            - name: Método SetAutoLigatures
+                            - name: Método SetAutoAutoAutoTures
                               href: /windows/desktop/api/Tom/nf-tom-itextfont2-setautoligatures
                             - name: Método SetAutospaceAlpha
                               href: /windows/desktop/api/Tom/nf-tom-itextfont2-setautospacealpha
@@ -4179,7 +4179,7 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextpara2-geteffects
                             - name: Método GetFontAlignment
                               href: /windows/desktop/api/Tom/nf-tom-itextpara2-getfontalignment
-                            - name: Método GetHangingPunctuation
+                            - name: Método GetAsyncingPunctuation
                               href: /windows/desktop/api/Tom/nf-tom-itextpara2-gethangingpunctuation
                             - name: Método GetProperty
                               href: /windows/desktop/api/Tom/nf-tom-itextpara2-getproperty
@@ -4220,7 +4220,7 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-cut
                             - name: Eliminar
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-delete
-                            - name: EndOf
+                            - name: Final
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-endof
                             - name: Expanda
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-expand
@@ -4258,13 +4258,13 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-gettext
                             - name: InRange
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-inrange
-                            - name: Historia
+                            - name: InStory
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-instory
                             - name: IsEqual
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-isequal
                             - name: Move
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-move
-                            - name: Veen
+                            - name: MoveEnd
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-moveend
                             - name: MoveEndUntil
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-moveenduntil
@@ -4290,7 +4290,7 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-setchar
                             - name: SetEnd
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-setend
-                            - name: SetFont
+                            - name: Setfont
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-setfont
                             - name: SetFormattedText
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-setformattedtext
@@ -4298,15 +4298,15 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-setindex
                             - name: SetPara
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-setpara
-                            - name: SetPoint
+                            - name: Ajuste
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-setpoint
-                            - name: SetRange
+                            - name: Setrange
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-setrange
                             - name: SetStart
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-setstart
                             - name: SetText
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-settext
-                            - name: Inicio
+                            - name: StartOf
                               href: /windows/desktop/api/Tom/nf-tom-itextrange-startof
                         - name: ITextRange2
                           href: /windows/desktop/api/Tom/nn-tom-itextrange2
@@ -4325,7 +4325,7 @@
                               href: /windows/desktop/api/tom/nf-tom-itextrange2-getcells
                             - name: Método GetChar2
                               href: /windows/desktop/api/Tom/nf-tom-itextrange2-getchar2
-                            - name: Método Getcolumn (
+                            - name: Método GetColumn
                               href: /windows/desktop/api/tom/nf-tom-itextrange2-getcolumn
                             - name: GetCount (método)
                               href: /windows/desktop/api/Tom/nf-tom-itextrange2-getcount
@@ -4355,11 +4355,11 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextrange2-getstartpara
                             - name: Método GetSubrange
                               href: /windows/desktop/api/Tom/nf-tom-itextrange2-getsubrange
-                            - name: GetTable (método)
+                            - name: Método GetTable
                               href: /windows/desktop/api/tom/nf-tom-itextrange2-gettable
                             - name: Método GetText2
                               href: /windows/desktop/api/Tom/nf-tom-itextrange2-gettext2
-                            - name: GetURL (método)
+                            - name: Método GetURL
                               href: /windows/desktop/api/Tom/nf-tom-itextrange2-geturl
                             - name: Método HexToUnicode
                               href: /windows/desktop/api/Tom/nf-tom-itextrange2-hextounicode
@@ -4367,7 +4367,7 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextrange2-insertimage
                             - name: Método InsertTable
                               href: /windows/desktop/api/Tom/nf-tom-itextrange2-inserttable
-                            - name: Lineary (método)
+                            - name: Linearize (método)
                               href: /windows/desktop/api/Tom/nf-tom-itextrange2-linearize
                             - name: Método SetActiveSubrange
                               href: /windows/desktop/api/Tom/nf-tom-itextrange2-setactivesubrange
@@ -4426,7 +4426,7 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextrow-getcellverticaltext
                             - name: Método GetCellWidth
                               href: /windows/desktop/api/Tom/nf-tom-itextrow-getcellwidth
-                            - name: GetHeight (método)
+                            - name: Método GetHeight
                               href: /windows/desktop/api/Tom/nf-tom-itextrow-getheight
                             - name: Método GetIndent
                               href: /windows/desktop/api/Tom/nf-tom-itextrow-getindent
@@ -4442,7 +4442,7 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextrow-getrtl
                             - name: Insert (método)
                               href: /windows/desktop/api/Tom/nf-tom-itextrow-insert
-                            - name: IsEqual (método)
+                            - name: Método IsEqual
                               href: /windows/desktop/api/Tom/nf-tom-itextrow-isequal
                             - name: Reset (método)
                               href: /windows/desktop/api/Tom/nf-tom-itextrow-reset
@@ -4474,7 +4474,7 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextrow-setcellverticaltext
                             - name: Método SetCellWidth
                               href: /windows/desktop/api/Tom/nf-tom-itextrow-setcellwidth
-                            - name: SetHeight (método)
+                            - name: Método SetHeight
                               href: /windows/desktop/api/Tom/nf-tom-itextrow-setheight
                             - name: Método SetIndent
                               href: /windows/desktop/api/Tom/nf-tom-itextrow-setindent
@@ -4495,13 +4495,13 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextselection-getflags
                             - name: GetType
                               href: /windows/desktop/api/Tom/nf-tom-itextselection-gettype
-                            - name: HomeKey
+                            - name: Homekey
                               href: /windows/desktop/api/Tom/nf-tom-itextselection-homekey
-                            - name: Bajar
+                            - name: MoveDown
                               href: /windows/desktop/api/Tom/nf-tom-itextselection-movedown
                             - name: MoveLeft
                               href: /windows/desktop/api/Tom/nf-tom-itextselection-moveleft
-                            - name: Anula
+                            - name: MoveRight
                               href: /windows/desktop/api/Tom/nf-tom-itextselection-moveright
                             - name: MoveUp
                               href: /windows/desktop/api/Tom/nf-tom-itextselection-moveup
@@ -4550,7 +4550,7 @@
                         - name: ITextStoryRanges2
                           href: /windows/desktop/api/Tom/nn-tom-itextstoryranges2
                           items:
-                            - name: Item2 (método)
+                            - name: Método Item2
                               href: /windows/desktop/api/Tom/nf-tom-itextstoryranges2-item2
                         - name: ITextStrings
                           href: /windows/desktop/api/Tom/nn-tom-itextstrings
@@ -4559,7 +4559,7 @@
                               href: /windows/desktop/api/Tom/nf-tom-itextstrings-add
                             - name: Append (método)
                               href: /windows/desktop/api/Tom/nf-tom-itextstrings-append
-                            - name: Método CAT2
+                            - name: Método Cat2
                               href: /windows/desktop/api/Tom/nf-tom-itextstrings-cat2
                             - name: Método CatTop2
                               href: /windows/desktop/api/Tom/nf-tom-itextstrings-cattop2
@@ -4592,36 +4592,36 @@
                     - name: Tipos de enumeración del modelo de objetos de texto
                       href: text-object-model-enumerations.md
                       items:
-                        - name: Código
+                        - name: MANCODE
                           href: /windows/win32/api/tom/ne-tom-mancode
-                        - name: TIPODEOBJETO
+                        - name: Objecttype
                           href: /windows/win32/api/tom/ne-tom-objecttype
                         - name: tomConstants
                           href: /windows/win32/api/Tom/ne-tom-tomconstants
-            - name: Edición enriquecida sin ventanas
+            - name: Edición enriquección sin ventanas
               href: windowless-rich-edit-controls.md
               items:
-                - name: Información general del control Rich Edit sin ventanas
+                - name: Información general sobre el control Rich Edit sin ventanas
                   href: bumper-windowless-rich-edit-windowless-rich-edit-control-overviews.md
                   items:
-                    - name: Acerca de los controles de edición enriquecida sin ventanas
+                    - name: Acerca de los controles Rich Edit sin ventanas
                       href: about-windowless-rich-edit-controls.md
-                    - name: Usar controles Rich Edit sin ventanas
+                    - name: Usar controles rich edit sin ventanas
                       href: using-windowless-rich-edit-controls.md
                       items:
-                        - name: Cómo crear controles Rich Edit sin ventanas
+                        - name: Cómo crear controles rich edit sin ventana
                           href: create-windowless-rich-edit-controls.md
-                - name: Referencia de control Rich Edit sin ventanas
+                - name: Referencia del control Rich Edit sin ventanas
                   href: bumper-windowless-rich-edit-windowless-rich-edit-control-reference.md
                   items:
-                    - name: Funciones de edición enriquecida sin ventanas
+                    - name: Funciones rich edit sin ventana
                       href: bumper-windowless-rich-edit-control-reference-functions.md
                       items:
                         - name: CreateTextServices
                           href: /windows/desktop/api/Textserv/nf-textserv-createtextservices
                         - name: ShutdownTextServices
                           href: /windows/desktop/api/Textserv/nf-textserv-shutdowntextservices
-                    - name: Interfaces de edición enriquecida sin ventanas
+                    - name: Interfaces rich edit sin ventana
                       href: bumper-windowless-rich-edit-control-reference-interfaces.md
                       items:
                         - name: IRichEditUiaInformation
@@ -4808,11 +4808,11 @@
                   items:
                     - name: Cómo crear barras de desplazamiento
                       href: create-scroll-bars.md
-                    - name: Cómo desplazarse por el texto
+                    - name: Desplazamiento de texto
                       href: scroll-text-in-scroll-bars.md
-                    - name: Cómo desplazarse por un mapa de bits
+                    - name: Desplazamiento de un mapa de bits
                       href: scroll-a-bitmap-in-scroll-bars.md
-                    - name: Cómo crear una interfaz de teclado para las barras de desplazamiento estándar
+                    - name: Cómo crear una interfaz de teclado para barras de desplazamiento estándar
                       href: create-a-keyboard-interface-for-standard-scroll-bars.md
             - name: Referencia de la barra de desplazamiento
               href: bumper-scroll-bar-scroll-bars-reference.md
@@ -4880,7 +4880,7 @@
                       href: sbm-setrangeredraw.md
                     - name: SBM_SETSCROLLINFO
                       href: sbm-setscrollinfo.md
-                - name: Notificaciones de la barra de desplazamiento
+                - name: Notificaciones de barra de desplazamiento
                   href: bumper-scroll-bars-reference-notifications.md
                   items:
                     - name: WM_CTLCOLORSCROLLBAR
@@ -4904,7 +4904,7 @@
         - name: Control estático
           href: static-controls.md
           items:
-            - name: Información general sobre los controles estáticos
+            - name: Información general sobre controles estáticos
               href: bumper-static-control-static-control-overviews.md
               items:
                 - name: Acerca de los controles estáticos
@@ -4914,7 +4914,7 @@
                   items:
                     - name: Cómo crear controles estáticos
                       href: create-static-controls.md
-            - name: Referencia de controles estáticos
+            - name: Referencia de control estático
               href: bumper-static-control-static-control-reference.md
               items:
                 - name: Macros de control estático
@@ -4961,7 +4961,7 @@
         - name: Barra de estado
           href: status-bar-reference.md
           items:
-            - name: Información general de las barras de estado
+            - name: Información general sobre barras de estado
               href: bumper-status-bar-status-bars-overview.md
               items:
                 - name: Barras de estado
@@ -5044,19 +5044,19 @@
             - name: Información general sobre el control SysLink
               href: bumper-syslink-syslink-control-overviews.md
               items:
-                - name: SysLink (controles)
+                - name: Controles SysLink
                   href: syslink-overview.md
-                - name: Usar controles SysLink
+                - name: Uso de controles SysLink
                   href: using-syslink-controls.md
                   items:
                     - name: Cómo crear controles SysLink
                       href: create-syslink-controls.md
-                    - name: Cómo usar las notificaciones de SysLihnk
+                    - name: Uso de notificaciones SysLihnk
                       href: use-syslihnk-notifications.md
             - name: Referencia del control SysLink
               href: bumper-syslink-syslink-control-reference.md
               items:
-                - name: Mensajes del control SysLink
+                - name: Mensajes de control SysLink
                   href: bumper-syslink-control-reference-messages.md
                   items:
                     - name: LM_GETIDEALHEIGHT
@@ -5074,39 +5074,39 @@
                   items:
                     - name: NM_CLICK (syslink)
                       href: nm-click-syslink.md
-                - name: Estructuras de controles SysLink
+                - name: Estructuras de control SysLink
                   href: bumper-syslink-control-reference-structures.md
                   items:
                     - name: LHITTESTINFO
                       href: /windows/win32/api/Commctrl/ns-commctrl-lhittestinfo
-                    - name: A.
+                    - name: Litem
                       href: /windows/win32/api/Commctrl/ns-commctrl-litem
                     - name: NMLINK
                       href: /windows/win32/api/Commctrl/ns-commctrl-nmlink
-                - name: Constantes del control SysLink
+                - name: Constantes de control SysLink
                   href: bumper-syslink-control-reference-constants.md
                   items:
-                    - name: Estilos del control SysLink
+                    - name: Estilos de control SysLink
                       href: syslink-control-styles.md
         - name: Pestaña
           href: tab-control-reference.md
           items:
-            - name: Información general sobre el control de pestaña
+            - name: Información general sobre el control de pestañas
               href: bumper-tab-tab-control-overviews.md
               items:
-                - name: Acerca de los controles de ficha
+                - name: Acerca de los controles tab
                   href: tab-controls.md
-                - name: Usar controles de ficha
+                - name: Usar controles tab
                   href: using-tab-controls.md
                   items:
                     - name: Cómo crear un control de pestaña en la ventana principal
                       href: create-a-tab-control-in-the-main-window.md
                     - name: Cómo crear un cuadro de diálogo con pestañas
                       href: create-a-tabbed-dialog-box.md
-            - name: Referencia de control de pestaña
+            - name: Referencia del control Tab
               href: bumper-tab-tab-control-reference.md
               items:
-                - name: Macros de control de pestañas
+                - name: Tab Control Macros
                   href: bumper-tab-control-reference-macros.md
                   items:
                     - name: TabCtrl_AdjustRect
@@ -5167,7 +5167,7 @@
                       href: /windows/desktop/api/Commctrl/nf-commctrl-tabctrl_settooltips
                     - name: TabCtrl_SetUnicodeFormat
                       href: /windows/desktop/api/Commctrl/nf-commctrl-tabctrl_setunicodeformat
-                - name: Mensajes de control de pestaña
+                - name: Mensajes de control tab
                   href: bumper-tab-control-reference-messages.md
                   items:
                     - name: TCM_ADJUSTRECT
@@ -5228,7 +5228,7 @@
                       href: tcm-settooltips.md
                     - name: TCM_SETUNICODEFORMAT
                       href: tcm-setunicodeformat.md
-                - name: Notificaciones del control de pestaña
+                - name: Notificaciones de control de pestañas
                   href: bumper-tab-control-reference-notifications.md
                   items:
                     - name: NM_CLICK (pestaña)
@@ -5251,7 +5251,7 @@
                       href: tcn-selchange.md
                     - name: TCN_SELCHANGING
                       href: tcn-selchanging.md
-                - name: Estructuras de control de pestaña
+                - name: Estructuras de control de tabulación
                   href: bumper-tab-control-reference-structures.md
                   items:
                     - name: NMTCKEYDOWN
@@ -5262,19 +5262,19 @@
                       href: /windows/win32/api/Commctrl/ns-commctrl-tcitema
                     - name: TCITEMHEADER
                       href: /windows/win32/api/Commctrl/ns-commctrl-tcitemheadera
-                - name: Constantes de control de pestaña
+                - name: Constantes de control tab
                   href: bumper-tab-control-reference-constants.md
                   items:
-                    - name: Estilos extendidos del control de pestaña
+                    - name: Estilos extendidos de control de pestañas
                       href: tab-control-extended-styles.md
-                    - name: Estados de elemento de control de pestaña
+                    - name: Estados del elemento de control Tab
                       href: tab-control-item-states.md
                     - name: Estilos de control de pestaña
                       href: tab-control-styles.md
-        - name: Cuadro de diálogo tarea
+        - name: Cuadro de diálogo Tarea
           href: task-dialogs.md
           items:
-            - name: Información general sobre cuadros de diálogo de tareas
+            - name: Información general sobre los cuadros de diálogo de tareas
               href: bumper-task-dialog-task-dialogs-overview.md
               items:
                 - name: Acerca de los cuadros de diálogo de tareas
@@ -5284,12 +5284,12 @@
                   items:
                     - name: Cómo crear cuadros de diálogo de tareas
                       href: create-task-dialogs.md
-                    - name: Cómo obtener datos proporcionados por el usuario desde un cuadro de diálogo de tarea
+                    - name: Cómo obtener la entrada del usuario desde un cuadro de diálogo de tarea
                       href: get-user-input-from-a-task-dialog.md
-            - name: Referencia de diálogo de tarea
+            - name: Referencia del cuadro de diálogo Tarea
               href: bumper-task-dialog-task-dialogs-reference.md
               items:
-                - name: Funciones del cuadro de diálogo tarea
+                - name: Funciones del cuadro de diálogo Tarea
                   href: bumper-task-dialogs-reference-functions.md
                   items:
                     - name: TaskDialog
@@ -5298,7 +5298,7 @@
                       href: /windows/desktop/api/commctrl/nc-commctrl-pftaskdialogcallback
                     - name: TaskDialogIndirect
                       href: /windows/desktop/api/Commctrl/nf-commctrl-taskdialogindirect
-                - name: Mensajes del cuadro de diálogo de tareas
+                - name: Mensajes de cuadro de diálogo de tarea
                   href: bumper-task-dialogs-reference-messages.md
                   items:
                     - name: TDM_CLICK_BUTTON
@@ -5331,7 +5331,7 @@
                       href: tdm-update-element-text.md
                     - name: TDM_UPDATE_ICON
                       href: tdm-update-icon.md
-                - name: Notificaciones de diálogo de tareas
+                - name: Notificaciones de cuadro de diálogo de tareas
                   href: bumper-task-dialogs-reference-notifications.md
                   items:
                     - name: TDN_BUTTON_CLICKED
@@ -5356,7 +5356,7 @@
                       href: tdn-timer.md
                     - name: TDN_VERIFICATION_CLICKED
                       href: tdn-verification-clicked.md
-                - name: Estructuras de cuadros de diálogo de tareas
+                - name: Estructuras de cuadro de diálogo de tareas
                   href: bumper-task-dialogs-reference-structures.md
                   items:
                     - name: TASKDIALOG_BUTTON
@@ -5366,38 +5366,38 @@
         - name: Barra de herramientas
           href: toolbar-control-reference.md
           items:
-            - name: Información general sobre el control Toolbar
+            - name: Información general sobre controles de barra de herramientas
               href: bumper-toolbar-toolbar-control-overviews.md
               items:
                 - name: Acerca de los controles de barra de herramientas
                   href: toolbar-controls-overview.md
-                - name: Usar controles Toolbar
+                - name: Usar controles de barra de herramientas
                   href: using-toolbar-controls.md
                   items:
                     - name: Cómo crear barras de herramientas
                       href: create-toolbars.md
                     - name: Cómo crear barras de herramientas verticales
                       href: create-vertical-toolbars.md
-                    - name: Cómo etiquetar dinámicamente botones de barra de herramientas
+                    - name: Cómo etiquetar dinámicamente los botones de la barra de herramientas
                       href: dynamically-label-toolbar-buttons.md
-                    - name: Cómo mostrar la información sobre herramientas de los botones
+                    - name: Cómo mostrar información sobre herramientas para botones
                       href: display-tooltips-for-buttons.md
-                    - name: Cómo controlar botones desplegables
+                    - name: Cómo controlar los botones desplegables
                       href: handle-drop-down-buttons.md
-                    - name: Cómo personalizar las barras de herramientas
+                    - name: Personalización de las barras de herramientas
                       href: customize-toolbars.md
                     - name: Cómo insertar controles que no son de botón en las barras de herramientas
                       href: embed-nonbutton-controls-in-toolbars.md
                     - name: Cómo usar el seguimiento en caliente con barras de herramientas
                       href: use-hot-tracking-with-toolbars.md
-                    - name: Cómo crear una barra de herramientas estilo de Internet Explorer
-                      href: cc-faq-ietoolbar.md
-                    - name: Cómo crear una barra de menús de estilo Internet Explorer
-                      href: cc-faq-iemenubar.md
-            - name: Referencia de controles Toolbar
+                    - name: Cómo crear una barra de herramientas Internet Explorer estilo clásico
+                      href: cc-faq-ietoolbar.yml
+                    - name: Cómo crear una barra de Internet Explorer estilo de archivo
+                      href: cc-faq-iemenubar.yml
+            - name: Referencia de control de barra de herramientas
               href: bumper-toolbar-toolbar-control-reference.md
               items:
-                - name: Funciones de control Toolbar
+                - name: Funciones de control de barra de herramientas
                   href: bumper-toolbar-control-reference-functions.md
                   items:
                     - name: CreateMappedBitmap
@@ -5595,7 +5595,7 @@
                       href: tb-setwindowtheme.md
                     - name: TB_TRANSLATEACCELERATOR
                       href: tb-translateaccelerator.md
-                - name: Notificaciones del control Toolbar
+                - name: Notificaciones de control de barra de herramientas
                   href: bumper-toolbar-control-reference-notifications.md
                   items:
                     - name: NM_CHAR (barra de herramientas)
@@ -5668,7 +5668,7 @@
                       href: tbn-wrapaccelerator.md
                     - name: TBN_WRAPHOTITEM
                       href: tbn-wraphotitem.md
-                - name: Estructuras de control Toolbar
+                - name: Estructuras de control de la barra de herramientas
                   href: bumper-toolbar-control-reference-structures.md
                   items:
                     - name: COLORMAP
@@ -5701,43 +5701,43 @@
                       href: /windows/desktop/api/Commctrl/ns-commctrl-tbreplacebitmap
                     - name: TBSAVEPARAMS
                       href: /windows/win32/api/Commctrl/ns-commctrl-tbsaveparamsa
-                - name: Constantes de control Toolbar
+                - name: Constantes de control de barra de herramientas
                   href: bumper-toolbar-control-reference-constants.md
                   items:
-                    - name: Estados del botón de la barra de herramientas
+                    - name: Estados del botón Barra de herramientas
                       href: toolbar-button-states.md
-                    - name: Controles de barra de herramientas y estilos de botón
+                    - name: Estilos de botón y control de barra de herramientas
                       href: toolbar-control-and-button-styles.md
-                    - name: Estilos extendidos de barra de herramientas
+                    - name: Estilos extendidos de la barra de herramientas
                       href: toolbar-extended-styles.md
-                    - name: Valores de índice de imagen de botón estándar de la barra de herramientas
+                    - name: Valores de índice de imagen del botón Estándar de la barra de herramientas
                       href: toolbar-standard-button-image-index-values.md
         - name: Información sobre herramientas
           href: tooltip-control-reference.md
           items:
-            - name: Información general sobre el control ToolTip
+            - name: Información general sobre el control de información sobre herramientas
               href: bumper-tooltip-tooltip-control-overviews.md
               items:
-                - name: Acerca de los controles ToolTip
+                - name: Acerca de los controles de información sobre herramientas
                   href: tooltip-controls.md
-                - name: Usar controles ToolTip
+                - name: Uso de controles de información sobre herramientas
                   href: using-tooltip-contro.md
                   items:
                     - name: Cómo crear una información sobre herramientas para un control
                       href: create-a-tooltip-for-a-control.md
                     - name: Cómo crear una información sobre herramientas para un área rectangular
                       href: create-a-tooltip-for-a-rectangular-area.md
-                    - name: Cómo implementar la información sobre herramientas de seguimiento
+                    - name: Cómo implementar información sobre herramientas de seguimiento
                       href: implement-tracking-tooltips.md
-                    - name: Cómo implementar la información sobre herramientas de varias líneas
+                    - name: Cómo implementar información sobre herramientas multilínea
                       href: implement-multiline-tooltips.md
-                    - name: Cómo implementar la información sobre herramientas de globo
+                    - name: Cómo implementar información sobre herramientas de globos
                       href: implement-balloon-tooltips.md
-                    - name: Cómo implementar la información sobre herramientas para los iconos de la barra de estado
+                    - name: Cómo implementar información sobre herramientas para iconos de barra de estado
                       href: implement-tooltips-for-status-bar-icons.md
-                    - name: Cómo implementar In-Place información sobre herramientas
+                    - name: Cómo implementar información sobre herramientas In-Place datos
                       href: implement-in-place-tooltips.md
-            - name: Referencia de control ToolTip
+            - name: Referencia de control de información sobre herramientas
               href: bumper-tooltip-tooltip-control-reference.md
               items:
                 - name: Mensajes de control de información sobre herramientas
@@ -5826,7 +5826,7 @@
                       href: ttn-pop.md
                     - name: TTN_SHOW
                       href: ttn-show.md
-                - name: Estructuras de control ToolTip
+                - name: Estructuras de control de información sobre herramientas
                   href: bumper-tooltip-control-reference-structures.md
                   items:
                     - name: NMTTCUSTOMDRAW
@@ -5839,160 +5839,160 @@
                       href: /windows/win32/api/Commctrl/ns-commctrl-ttgettitle
                     - name: TTHITTESTINFO
                       href: /windows/desktop/api/Commctrl/ns-commctrl-tthittestinfoa
-                - name: Constantes de control ToolTip
+                - name: Constantes de control de información sobre herramientas
                   href: bumper-tooltip-control-reference-constants.md
                   items:
                     - name: Estilos de información sobre herramientas
                       href: tooltip-styles.md
-        - name: TrackBar
+        - name: Barra de seguimiento
           href: trackbar-control-reference.md
           items:
-            - name: Información general del control TrackBar
+            - name: Información general sobre el control Trackbar
               href: bumper-trackbar-trackbar-control-overviews.md
               items:
-                - name: Acerca de los controles TrackBar
+                - name: Acerca de los controles trackbar
                   href: trackbar-controls.md
-                - name: Usar controles TrackBar
+                - name: Usar controles trackbar
                   href: using-trackbar-controls.md
                   items:
-                    - name: Cómo crear un TrackBar
+                    - name: Cómo crear una barra de seguimiento
                       href: create-a-trackbar.md
-                    - name: Cómo procesar mensajes de notificación de TrackBar
+                    - name: Cómo procesar mensajes de notificación de la barra de seguimiento
                       href: process-trackbar-notification-messages.md
                     - name: Cómo limitar el movimiento del control deslizante
                       href: limit-slider-movement.md
-                    - name: Cómo usar las ventanas de amigos
+                    - name: Uso de La Windows
                       href: use-buddy-windows.md
-            - name: Referencia del control TrackBar
+            - name: Referencia del control Trackbar
               href: bumper-trackbar-trackbar-control-reference.md
               items:
-                - name: Mensajes del control TrackBar
+                - name: Mensajes de control de barra de seguimiento
                   href: bumper-trackbar-control-reference-messages.md
                   items:
-                    - name: Mensaje TBM_CLEARSEL
+                    - name: TBM_CLEARSEL mensaje
                       href: tbm-clearsel.md
-                    - name: Mensaje TBM_CLEARTICS
+                    - name: TBM_CLEARTICS Message
                       href: tbm-cleartics.md
-                    - name: Mensaje TBM_GETBUDDY
+                    - name: TBM_GETBUDDY mensaje
                       href: tbm-getbuddy.md
-                    - name: Mensaje TBM_GETCHANNELRECT
+                    - name: TBM_GETCHANNELRECT mensaje
                       href: tbm-getchannelrect.md
-                    - name: Mensaje TBM_GETLINESIZE
+                    - name: TBM_GETLINESIZE Message
                       href: tbm-getlinesize.md
-                    - name: Mensaje TBM_GETNUMTICS
+                    - name: TBM_GETNUMTICS mensaje
                       href: tbm-getnumtics.md
-                    - name: Mensaje TBM_GETPAGESIZE
+                    - name: TBM_GETPAGESIZE Message
                       href: tbm-getpagesize.md
-                    - name: Mensaje TBM_GETPOS
+                    - name: TBM_GETPOS mensaje
                       href: tbm-getpos.md
-                    - name: Mensaje TBM_GETPTICS
+                    - name: TBM_GETPTICS mensaje
                       href: tbm-getptics.md
-                    - name: Mensaje TBM_GETRANGEMAX
+                    - name: TBM_GETRANGEMAX mensaje
                       href: tbm-getrangemax.md
-                    - name: Mensaje TBM_GETRANGEMIN
+                    - name: TBM_GETRANGEMIN mensaje
                       href: tbm-getrangemin.md
-                    - name: Mensaje TBM_GETSELEND
+                    - name: TBM_GETSELEND mensaje
                       href: tbm-getselend.md
-                    - name: Mensaje TBM_GETSELSTART
+                    - name: TBM_GETSELSTART mensaje
                       href: tbm-getselstart.md
-                    - name: Mensaje TBM_GETTHUMBLENGTH
+                    - name: TBM_GETTHUMBLENGTH mensaje
                       href: tbm-getthumblength.md
-                    - name: Mensaje TBM_GETTHUMBRECT
+                    - name: TBM_GETTHUMBRECT mensaje
                       href: tbm-getthumbrect.md
-                    - name: Mensaje TBM_GETTIC
+                    - name: TBM_GETTIC mensaje
                       href: tbm-gettic.md
-                    - name: Mensaje TBM_GETTICPOS
+                    - name: TBM_GETTICPOS mensaje
                       href: tbm-getticpos.md
-                    - name: Mensaje TBM_GETTOOLTIPS
+                    - name: TBM_GETTOOLTIPS mensaje
                       href: tbm-gettooltips.md
-                    - name: Mensaje TBM_GETUNICODEFORMAT
+                    - name: TBM_GETUNICODEFORMAT mensaje
                       href: tbm-getunicodeformat.md
-                    - name: Mensaje TBM_SETBUDDY
+                    - name: TBM_SETBUDDY mensaje
                       href: tbm-setbuddy.md
-                    - name: Mensaje TBM_SETLINESIZE
+                    - name: TBM_SETLINESIZE mensaje
                       href: tbm-setlinesize.md
-                    - name: Mensaje TBM_SETPAGESIZE
+                    - name: TBM_SETPAGESIZE mensaje
                       href: tbm-setpagesize.md
-                    - name: Mensaje TBM_SETPOS
+                    - name: TBM_SETPOS mensaje
                       href: tbm-setpos.md
-                    - name: Mensaje TBM_SETPOSNOTIFY
+                    - name: TBM_SETPOSNOTIFY mensaje
                       href: tbm-setposnotify.md
-                    - name: Mensaje TBM_SETRANGE
+                    - name: TBM_SETRANGE mensaje
                       href: tbm-setrange.md
-                    - name: Mensaje TBM_SETRANGEMAX
+                    - name: TBM_SETRANGEMAX mensaje
                       href: tbm-setrangemax.md
-                    - name: Mensaje TBM_SETRANGEMIN
+                    - name: TBM_SETRANGEMIN mensaje
                       href: tbm-setrangemin.md
-                    - name: Mensaje TBM_SETSEL
+                    - name: TBM_SETSEL mensaje
                       href: tbm-setsel.md
-                    - name: Mensaje TBM_SETSELEND
+                    - name: TBM_SETSELEND mensaje
                       href: tbm-setselend.md
-                    - name: Mensaje TBM_SETSELSTART
+                    - name: TBM_SETSELSTART mensaje
                       href: tbm-setselstart.md
-                    - name: Mensaje TBM_SETTHUMBLENGTH
+                    - name: TBM_SETTHUMBLENGTH mensaje
                       href: tbm-setthumblength.md
-                    - name: Mensaje TBM_SETTIC
+                    - name: TBM_SETTIC mensaje
                       href: tbm-settic.md
-                    - name: Mensaje TBM_SETTICFREQ
+                    - name: TBM_SETTICFREQ mensaje
                       href: tbm-setticfreq.md
-                    - name: Mensaje TBM_SETTIPSIDE
+                    - name: TBM_SETTIPSIDE mensaje
                       href: tbm-settipside.md
-                    - name: Mensaje TBM_SETTOOLTIPS
+                    - name: TBM_SETTOOLTIPS mensaje
                       href: tbm-settooltips.md
-                    - name: Mensaje TBM_SETUNICODEFORMAT
+                    - name: TBM_SETUNICODEFORMAT mensaje
                       href: tbm-setunicodeformat.md
-                - name: Notificaciones del control TrackBar
+                - name: Notificaciones de control de la barra de seguimiento
                   href: bumper-trackbar-control-reference-notifications.md
                   items:
-                    - name: Código de notificación de NM_CUSTOMDRAW (TrackBar)
+                    - name: NM_CUSTOMDRAW (barra de seguimiento) Código de notificación
                       href: nm-customdraw-trackbar.md
-                    - name: Código de notificación de NM_RELEASEDCAPTURE (TrackBar)
+                    - name: NM_RELEASEDCAPTURE (barra de seguimiento) Código de notificación
                       href: nm-releasedcapture-trackbar-.md
-                    - name: Código de notificación de TRBN_THUMBPOSCHANGING
+                    - name: TRBN_THUMBPOSCHANGING de notificación
                       href: trbn-thumbposchanging.md
-                    - name: Código de notificación de WM_HSCROLL (TrackBar)
+                    - name: WM_HSCROLL de notificación (barra de seguimiento)
                       href: wm-hscroll--trackbar-.md
-                    - name: Código de notificación de WM_VSCROLL (TrackBar)
+                    - name: WM_VSCROLL (Barra de seguimiento) Código de notificación
                       href: wm-vscroll--trackbar-.md
-                - name: Estructuras del control TrackBar
+                - name: Estructuras de control de la barra de seguimiento
                   href: trackbar-control-structures.md
                   items:
-                    - name: Estructura NMTRBTHUMBPOSCHANGING
+                    - name: NMTRBTHUMBPOSCHANGING (estructura)
                       href: /windows/win32/api/Commctrl/ns-commctrl-nmtrbthumbposchanging
-                - name: Constantes del control TrackBar
+                - name: Constantes de control trackbar
                   href: bumper-trackbar-control-reference-constants.md
                   items:
                     - name: Valores de dibujo personalizados
                       href: custom-draw-values.md
-                    - name: Estilos del control TrackBar
+                    - name: Estilos de control de la barra de seguimiento
                       href: trackbar-control-styles.md
         - name: Vista de árbol
           href: tree-view-control-reference.md
           items:
-            - name: Tree-View controles de la información general
+            - name: Tree-View información general sobre los controles de acceso
               href: bumper-tree-view-tree-view-controls-overviews.md
               items:
-                - name: Acerca de los controles Tree-View
+                - name: Acerca de Tree-View controles
                   href: tree-view-controls.md
-                - name: Usar controles Tree-View
+                - name: Usar Tree-View controles
                   href: using-treeview.md
                   items:
-                    - name: Cómo crear un control de Tree-View
+                    - name: Cómo crear un control Tree-View control
                       href: create-a-tree-view-control.md
-                    - name: Cómo inicializar la lista de imágenes
+                    - name: Inicialización de la lista de imágenes
                       href: initialize-the-image-list.md
-                    - name: Cómo agregar elementos de Tree-View
+                    - name: Cómo agregar elementos Tree-View datos
                       href: add-tree-view-items.md
-                    - name: Cómo arrastrar un elemento de Tree-View
+                    - name: Cómo arrastrar un elemento Tree-View datos
                       href: drag-a-tree-view-item.md
                     - name: Cómo trabajar con índices de imagen de estado
                       href: work-with-state-image-indexes.md
-                    - name: Cómo usar Tree-View recuadros informativos
+                    - name: Cómo usar la información Tree-View datos
                       href: use-tree-view-infotips.md
-            - name: Referencia de control de Tree-View
+            - name: referencia Tree-View control de acceso
               href: bumper-tree-view-tree-view-control-reference.md
               items:
-                - name: Macros de la vista de árbol
+                - name: Macros de vista de árbol
                   href: bumper-tree-view-control-reference-macros.md
                   items:
                     - name: TreeView_CreateDragImage
@@ -6240,7 +6240,7 @@
                       href: tvm-sortchildren.md
                     - name: TVM_SORTCHILDRENCB
                       href: tvm-sortchildrencb.md
-                - name: Notificaciones de la vista de árbol
+                - name: Notificaciones de vista de árbol
                   href: bumper-tree-view-control-reference-notifications.md
                   items:
                     - name: NM_CLICK (vista de árbol)
@@ -6295,7 +6295,7 @@
                       href: tvn-setdispinfo.md
                     - name: TVN_SINGLEEXPAND
                       href: tvn-singleexpand.md
-                - name: Estructuras de vistas de árbol
+                - name: Estructuras de vista de árbol
                   href: bumper-tree-view-control-reference-structures.md
                   items:
                     - name: NMTREEVIEW
@@ -6330,37 +6330,37 @@
                       href: /windows/win32/api/Commctrl/ns-commctrl-tvitemexa
                     - name: TVSORTCB
                       href: /windows/win32/api/Commctrl/ns-commctrl-tvsortcb
-                - name: Constantes de la vista de árbol
+                - name: Constantes de vista de árbol
                   href: bumper-tree-view-control-reference-constants.md
                   items:
-                    - name: Tree-View de los estilos extendidos de control
+                    - name: Tree-View control de estilos extendidos
                       href: tree-view-control-window-extended-styles.md
-                    - name: Estados de los elementos de control Tree-View
+                    - name: Tree-View de elementos de control
                       href: tree-view-control-item-states.md
-                    - name: Tree-View estilos de la ventana control
+                    - name: Tree-View estilos de ventana de control
                       href: tree-view-control-window-styles.md
-        - name: Control de Up-Down
+        - name: Up-Down control
           href: up-down-control-reference.md
           items:
-            - name: Información general sobre el control Up-Down
+            - name: Up-Down información general sobre el control
               href: up-down-control-overview.md
               items:
-                - name: Acerca de los controles Up-Down
+                - name: Acerca de Up-Down controles
                   href: up-down-controls.md
-                - name: Usar controles Up-Down
+                - name: Uso de Up-Down controles
                   href: using-up-down-controls.md
                   items:
-                    - name: Cómo crear controles de Up-Down
+                    - name: Cómo crear controles Up-Down datos
                       href: create-an-up-down-control.md
-            - name: Referencia de control de Up-Down
+            - name: Up-Down de control
               href: bumper-up-down-control-up-down-control-reference.md
               items:
-                - name: Funciones de Up-Down
+                - name: Up-Down Functions
                   href: bumper-up-down-control-reference-functions.md
                   items:
                     - name: CreateUpDownControl
                       href: /windows/desktop/api/Commctrl/nf-commctrl-createupdowncontrol
-                - name: Mensajes de Up-Down
+                - name: Up-Down mensajes
                   href: bumper-up-down-control-reference-messages.md
                   items:
                     - name: UDM_GETACCEL
@@ -6395,10 +6395,10 @@
                       href: udm-setrange32.md
                     - name: UDM_SETUNICODEFORMAT
                       href: udm-setunicodeformat.md
-                - name: Notificaciones de Up-Down
+                - name: Up-Down notificaciones
                   href: bumper-up-down-control-reference-notifications.md
                   items:
-                    - name: NM_RELEASEDCAPTURE (arriba)
+                    - name: NM_RELEASEDCAPTURE (arriba abajo)
                       href: nm-releasedcapture-up-down-.md
                     - name: UDN_DELTAPOS
                       href: udn-deltapos.md
@@ -6409,10 +6409,10 @@
                       href: /windows/desktop/api/Commctrl/ns-commctrl-nmupdown
                     - name: UDACCEL
                       href: /windows/win32/api/Commctrl/ns-commctrl-udaccel
-                - name: Constantes de Up-Down
+                - name: Up-Down constantes
                   href: bumper-up-down-control-reference-constants.md
                   items:
-                    - name: Estilos de control de Up-Down
+                    - name: Up-Down estilos de control
                       href: up-down-control-styles.md
     - name: Referencia de control general
       href: common-control-reference.md
@@ -6536,7 +6536,7 @@
               href: /windows/desktop/api/dpa_dsa/nf-dpa_dsa-str_setptrw
             - name: TranslateDispatch
               href: translatedispatch.md
-        - name: Macros de control
+        - name: Control Macros
           href: bumper-general-control-reference-macros.md
           items:
             - name: DPA_AppendPtr
@@ -6582,7 +6582,7 @@
               href: wm-notify.md
             - name: WM_NOTIFYFORMAT
               href: wm-notifyformat.md
-        - name: Notificaciones de control
+        - name: Control de notificaciones
           href: bumper-general-control-reference-notifications.md
           items:
             - name: NM_CHAR
@@ -6624,7 +6624,7 @@
         - name: Estructuras de control
           href: bumper-general-control-reference-structures.md
           items:
-            - name: COLORSCHEME
+            - name: Colorscheme
               href: /windows/win32/api/Commctrl/ns-commctrl-colorscheme
             - name: DPASTREAMINFO
               href: /windows/win32/api/dpa_dsa/ns-dpa_dsa-dpastreaminfo
@@ -6657,25 +6657,25 @@
               href: common-control-styles.md
             - name: Clases de ventanas
               href: common-control-window-classes.md
-    - name: Controlar Spy v 2.0
+    - name: Control Spy v2.0
       href: control-spy.md
     - name: Estilos visuales
       href: themes-overview.md
       items:
-        - name: Novedades
+        - name: What's New
           href: what-s-new-for-windows-8.md
         - name: Información general sobre los estilos visuales
           href: visual-styles-overview.md
         - name: Habilitar los estilos visuales
           href: cookbook-overview.md
-        - name: Usar estilos visuales con controles personalizados y Owner-Drawn
+        - name: Usar estilos visuales con controles personalizados Owner-Drawn personalizados
           href: using-visual-styles.md
-        - name: Compatibilidad con temas de contraste alto
+        - name: Compatibilidad con contraste alto temas
           href: supporting-high-contrast-themes.md
         - name: Referencia de estilos visuales
           href: uxctl-ref.md
           items:
-            - name: Functions
+            - name: Funciones
               href: bumper-visual-styles-reference-functions.md
               items:
                 - name: BeginBufferedAnimation
@@ -6843,9 +6843,9 @@
                   href: /windows/win32/api/Uxtheme/ns-uxtheme-dtbgopts
                 - name: DTTOPTS
                   href: /windows/win32/api/Uxtheme/ns-uxtheme-dttopts
-                - name: INTL
+                - name: INTLIST
                   href: /windows/win32/api/UxTheme/ns-uxtheme-intlist
-                - name: MÁRGENES
+                - name: Márgenes
                   href: /windows/win32/api/Uxtheme/ns-uxtheme-margins
                 - name: WTA_OPTIONS
                   href: /windows/win32/api/Uxtheme/ns-uxtheme-wta_options
@@ -6858,7 +6858,7 @@
                   href: /windows/win32/api/Uxtheme/ne-uxtheme-bp_bufferformat
                 - name: PROPERTYORIGIN
                   href: /windows/desktop/api/Uxtheme/ne-uxtheme-propertyorigin
-                - name: TEMAS
+                - name: THEMESIZE
                   href: /windows/desktop/api/Uxtheme/ne-uxtheme-themesize
                 - name: TM_PROPS
                   href: tm-props.md
@@ -6866,19 +6866,19 @@
                   href: /windows/desktop/api/Uxtheme/ne-uxtheme-windowthemeattributetype
             - name: Valores de formato
               href: theme-format-values.md
-            - name: Opciones de la prueba de posicionamiento
+            - name: Opciones de la prueba de pulsación
               href: theme-hit-test-options.md
-            - name: Valores devueltos de la prueba de posicionamiento
+            - name: Valores devueltos de la prueba de impacto
               href: theme-hit-test-retval.md
             - name: Parts and States
               href: parts-and-states.md
-            - name: 'Clases, elementos y Estados de estilo de Aero'
+            - name: 'Clases, partes y estados de estilo Aero'
               href: aero-style-classes-parts-and-states.md
             - name: Identificadores de propiedad
               href: property-typedefs.md
-            - name: Usar subclases de tema
+            - name: Uso de subclases de tema
               href: theme-subclasses.md
-            - name: Valores de WTNCA
+            - name: Valores wtnca
               href: wtnca.md
     - name: Formato de archivo de tema
       href: themesfileformat-overview.md

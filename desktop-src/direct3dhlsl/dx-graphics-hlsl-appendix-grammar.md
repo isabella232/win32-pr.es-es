@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b77f1050beaee2b269d12e69704018e3c5abee6e
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: 86549f441752e72fd11a741a061fcaf839eca0140f4766b0932094d74dc78085
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119855075"
 ---
 # <a name="grammar"></a>Gramática
 
@@ -117,7 +117,7 @@ Los caracteres se representan en HLSL de la siguiente manera:
 | Carácter                                          | Descripción                                                                |
 |-------------------------------------------|-----------------------------------------------------------------|
 | "c"                                       | (carácter)                                                     |
-| ' \\ a' ' \\ b' ' \\ f' ' \\ b' ' \\ r' ' \\ t' ' \\ v' | (escapes)                                                       |
+| ' \\ a' ' \\ b' ' \\ f' ' \\ b' ' \\ r' \\ ' t' ' \\ v' | (escapes)                                                       |
 | '\\\#\#\#'                                | (escape octal, cada \# uno es un dígito octal)                       |
 | ' \\ x \# '                                   | (escape hexadecimal, \# es número hexadecimal, cualquier número de dígitos)            |
 | ' \\ c'                                     | (c es otro carácter, incluidas las barras diagonales inversas y las comillas) |
@@ -130,13 +130,13 @@ Los escapes no se admiten en expresiones de preprocesador.
 
 ## <a name="strings"></a>Cadenas
 
-Las cadenas se representan en HLSL de la siguiente manera:
+Las cadenas se representan en HLSL como se muestra a continuación:
 
 "s" (s es cualquier cadena con escapes).
 
 ## <a name="identifiers"></a>Identificadores
 
-Los identificadores se representan en HLSL de la siguiente manera:
+Los identificadores se representan en HLSL como se muestra a continuación:
 
 
 ```

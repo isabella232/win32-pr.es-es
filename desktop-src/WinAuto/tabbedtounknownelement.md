@@ -4,18 +4,18 @@ description: TabbedToUnknownElement
 ms.assetid: B0447B19-E281-4D30-8ED8-FC0EE13571C8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 612476d81779c882eeca807a9c3b82c41594f218
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a5acee341066ee5a456d412554ead3342c8513ae89e50a056a2372a291b0a88b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052403"
 ---
 # <a name="tabbedtounknownelement"></a>TabbedToUnknownElement
 
 ## <a name="text"></a>Texto
 
-La tabulación ha pasado a un elemento fuera del HWND de destino.
+El tabulador ha pasado a un elemento fuera del hwnd de destino.
 
 ## <a name="type"></a>Tipo
 
@@ -23,18 +23,18 @@ Error
 
 ## <a name="description"></a>Descripción
 
-El uso de la navegación con el teclado estándar (TAB o Mayús + Tab) hace que el foco se desplace fuera del HWND del destino de la comprobación.
+El uso de la navegación con teclado estándar (Tab o Mayús+Tab) hace que el foco cambie fuera del HWND del destino de comprobación.
 
-AccChecker sube el árbol de elementos hasta el HWND de nivel superior para el destino de comprobación elegido antes de ejecutar cualquier tarea de comprobación. Esto reduce el número de errores falsos generados si un HWND elegido para la comprobación forma parte de un área cliente más compleja.
+AccChecker sube el árbol de elementos al HWND de nivel superior para el destino de comprobación elegido antes de ejecutar las tareas de comprobación. Esto reduce el número de errores falsos generados si un HWND elegido para la comprobación forma parte de un área de cliente más compleja.
 
 ## <a name="possible-causes"></a>Causas posibles
 
--   El destino de la comprobación no requiere una implementación de tabulación para proporcionar toda la funcionalidad.
--   Interacción del usuario durante la comprobación, por ejemplo, al mover el foco a un HWND no objetivo, se interfiere con el proceso de comprobación.
+-   El destino de comprobación no requiere una implementación de tabulación para proporcionar funcionalidad completa.
+-   La interacción del usuario durante la comprobación, como mover el foco a un HWND no de destino, interfirieron con el proceso de comprobación.
 
- 
+ 
 
- 
+ 
 
 
 

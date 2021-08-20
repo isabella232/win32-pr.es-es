@@ -1,9 +1,9 @@
 ---
 title: BUTTONGROUP.hueShift
-description: El atributo hueShift especifica o recupera la cantidad por la que se desplaza el matiz de las imágenes de BUTTONGROUP.
+description: El atributo hueShift especifica o recupera la cantidad por la que se desplaza el matiz de las imágenes BUTTONGROUP.
 ms.assetid: 156256ef-ec24-40c4-ad23-064e38c79e69
 keywords:
-- BUTTONGROUP. hueShift Windows Media Player
+- ButtonGROUP.hueShift Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3bf77faea27ecc5adee6525c4ee8d8ff1541aac4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4343486a334821e3e36fe106f290aa50f2c094d110473fa8b96798eee29884ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118840378"
 ---
 # <a name="buttongrouphueshift"></a>BUTTONGROUP.hueShift
 
-El atributo **hueShift** especifica o recupera la cantidad por la que se desplaza el matiz de las imágenes de **BUTTONGROUP** .
+El **atributo hueShift** especifica o recupera la cantidad por la que se desplaza el matiz de las **imágenes BUTTONGROUP.**
 
 ``` syntax
         elementID.hueShift
@@ -29,19 +29,19 @@ El atributo **hueShift** especifica o recupera la cantidad por la que se desplaz
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura/escritura (**float**) con un valor comprendido entre 0,0 y 360,0 con un valor predeterminado de 0,0.
+Este atributo es un número de lectura y **escritura** **(float)** con un valor que va de 0,0 a 360,0 con un valor predeterminado de 0,0.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo cambia el valor de matiz de las imágenes especificadas por los atributos **disabledImage**, **downImage**, **hoverDownImage**, **hoverImage** e **Image** si se han especificado y hacen referencia a imágenes BMP de 8 bits.
+Este atributo cambia el valor de matiz de las imágenes especificadas por los atributos **disabledImage**, **downImage**, **hoverDownImage**, **hoverImage** e **image** si se han especificado y hacen referencia a imágenes BMP de 8 bits.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -64,10 +64,10 @@ Este atributo cambia el valor de matiz de las imágenes especificadas por los at
 [**BUTTONGROUP.hoverImage**](buttongroup-hoverimage.md)
 </dt> <dt>
 
-[**BUTTONGROUP. Image**](buttongroup-image.md)
+[**BUTTONGROUP.image**](buttongroup-image.md)
 </dt> <dt>
 
-[**BUTTONGROUP. saturación**](buttongroup-saturation.md)
+[**BUTTONGROUP.saturation**](buttongroup-saturation.md)
 </dt> </dl>
 
  

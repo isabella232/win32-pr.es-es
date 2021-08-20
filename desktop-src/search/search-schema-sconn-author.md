@@ -1,21 +1,21 @@
 ---
-description: El <author> elemento opcional especifica el autor de esta biblioteca. Este elemento no tiene ningún elemento secundario y no tiene atributos.
+description: El elemento <author> opcional especifica el autor de esta biblioteca. Este elemento no tiene elementos secundarios ni atributos.
 ms.assetid: c91042d5-9564-463a-9104-97b927027fc9
-title: Elemento Author (esquema del conector de búsqueda)
+title: elemento author (Esquema del conector de búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 74a2facbf4e3fa743b4dbe56a1c83eb57509c067
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b0a6b0eb8103f1f1c962984be488a162b645a128f0477ab851d2819aacc3e74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105714995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119885185"
 ---
-# <a name="author-element-search-connector-schema"></a>Elemento Author (esquema del conector de búsqueda)
+# <a name="author-element-search-connector-schema"></a>elemento author (Esquema del conector de búsqueda)
 
-El <author> elemento opcional especifica el autor de esta biblioteca. Este elemento no tiene ningún elemento secundario y no tiene atributos.
+El elemento <author> opcional especifica el autor de esta biblioteca. Este elemento no tiene elementos secundarios ni atributos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```

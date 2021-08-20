@@ -1,23 +1,23 @@
 ---
-description: En este tema se muestra cómo descodificar una imagen de varios marcos y recuperar cada fotograma para su procesamiento.
+description: En este tema se muestra cómo descodificar una imagen de varios fotogramas y recuperar cada fotograma para su procesamiento.
 ms.assetid: e4f69608-7bf1-4d54-b586-b749526700c9
-title: Recuperación de los fotogramas de una imagen
+title: Cómo recuperar los fotogramas de una imagen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eeeb19e0a0ac69f75673df0736fd0bd4987b3423
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dc9fb9802071115f62da78a10798e5e76aa83052270d40108e7c590acb8b2f46
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119841445"
 ---
-# <a name="how-to-retrieve-the-frames-from-an-image"></a>Recuperación de los fotogramas de una imagen
+# <a name="how-to-retrieve-the-frames-from-an-image"></a>Cómo recuperar los fotogramas de una imagen
 
-En este tema se muestra cómo descodificar una imagen de varios marcos y recuperar cada fotograma para su procesamiento.
+En este tema se muestra cómo descodificar una imagen de varios fotogramas y recuperar cada fotograma para su procesamiento.
 
-Para recuperar los marcos de una imagen
+Para recuperar los fotogramas de una imagen
 
-1.  Cree un [**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) para crear objetos de Windows Imaging Component (WIC).
+1.  Cree una [**IWICImagingFactory para**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) crear Windows imaging component (WIC).
 
     ```C++
     // Create WIC factory
@@ -31,7 +31,7 @@ Para recuperar los marcos de una imagen
 
     
 
-2.  Use el método [**CreateDecoderFromFilename**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) para crear un [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) a partir de un archivo de imagen.
+2.  Use el [**método CreateDecoderFromFilename**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) para crear un [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) a partir de un archivo de imagen.
 
     ```C++
     HRESULT hr = S_OK;
@@ -65,7 +65,7 @@ Para recuperar los marcos de una imagen
 
     
 
-4.  Procese cada fotograma obteniendo un [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) para cada fotograma de la imagen.
+4.  Procese cada fotograma obteniendo [**un IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) para cada fotograma de la imagen.
 
     ```C++
     // Process each frame in the image.

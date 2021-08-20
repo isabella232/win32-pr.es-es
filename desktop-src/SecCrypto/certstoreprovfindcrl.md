@@ -1,5 +1,5 @@
 ---
-description: Enumera o busca la primera o siguiente CRL en un almacén externo que coincida con los criterios especificados.
+description: Enumera o busca la primera CRL o la siguiente en un almacén externo que coincida con los criterios especificados.
 ms.assetid: caf218f5-f379-4cb6-bb4b-4767b846d45c
 title: Función de devolución de llamada CertStoreProvFindCRL
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: b20b7a4b677356e59be9f2f6df47b260c12d2f64
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eebcc990da0cd2d866325200223e9e654e45e055299a8b384a613dc9841c2799
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120126685"
 ---
 # <a name="certstoreprovfindcrl-callback-function"></a>Función de devolución de llamada CertStoreProvFindCRL
 
-La función de devolución de llamada **CertStoreProvFindCRL** enumera o busca la primera o la siguiente [*CRL*](../secgloss/c-gly.md) en un [*almacén*](../secgloss/e-gly.md) externo que coincida con los criterios especificados.
+La función de devolución de llamada **CertStoreProvFindCRL** enumera o busca [](../secgloss/e-gly.md) la primera o la siguiente [*CRL*](../secgloss/c-gly.md) en un almacén externo que coincida con los criterios especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,51 +43,51 @@ BOOL WINAPI CertStoreProvFindCRL(
 
 <dl> <dt>
 
-*hStoreProv* \[ de\]
+*hStoreProv* \[ En\]
 </dt> <dd>
 
-Identificador de **HCERTSTOREPROV** de un [*almacén de certificados*](../secgloss/c-gly.md).
+**Identificador HCERTSTOREPROV** para un [*almacén de certificados*](../secgloss/c-gly.md).
 
 </dd> <dt>
 
-*pFindInfo* \[ de\]
+*pFindInfo* \[ En\]
 </dt> <dd>
 
-Un puntero a una estructura de [**\_ \_ \_ \_ información del Prov del almacén de certificados**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_store_prov_find_info) que contiene todos los parámetros pasados a la función [**CertFindCRLInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcrlinstore) .
+Puntero a una estructura FIND INFO de [**CERT \_ STORE \_ PROV \_ \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_store_prov_find_info) que contiene todos los parámetros pasados a la [**función CertFindCRLInStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcrlinstore)
 
 </dd> <dt>
 
-*pPrevCrlContext* \[ de\]
+*pPrevCrlContext* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**de \_ contexto de CRL**](/windows/desktop/api/Wincrypt/ns-wincrypt-crl_context) de la última CRL encontrada. En la primera llamada a la función, este parámetro debe establecerse en **null**. En las llamadas posteriores, debe establecerse en el puntero devuelto en el parámetro *ppProvCRLContext* en la última llamada. La función de devolución de llamada libera un puntero no **nulo** que se pasa en este parámetro.
+Puntero a una [**estructura CRL \_ CONTEXT**](/windows/desktop/api/Wincrypt/ns-wincrypt-crl_context) de la última CRL encontrada. En la primera llamada a la función, este parámetro debe establecerse en **NULL.** En las llamadas posteriores, se debe establecer en el puntero devuelto en el *parámetro ppProvCRLContext* en la última llamada. La función **de** devolución de llamada libera un puntero que no es NULL pasado en este parámetro.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Los valores de marca necesarios.
+Cualquier valor de marca necesario.
 
 </dd> <dt>
 
 *ppvStoreProvFindInfo* \[ in, out\]
 </dt> <dd>
 
-Un puntero a un puntero a un búfer para devolver la información del proveedor de almacenamiento. Opcionalmente, la devolución de llamada puede devolver un puntero a información interna de búsqueda en este parámetro. Después de la primera llamada, este parámetro se establece en el puntero devuelto por la llamada anterior a la función.
+Puntero a un puntero a un búfer para devolver la información del proveedor de almacén. Opcionalmente, la devolución de llamada puede devolver un puntero a la información de la buscar interna en este parámetro. Después de la primera llamada, este parámetro se establece en el puntero devuelto por la llamada anterior a la función .
 
 </dd> <dt>
 
-*ppProvCrlContext* \[ enuncia\]
+*ppProvCrlContext* \[ out\]
 </dt> <dd>
 
-Si la búsqueda se realiza correctamente, se devuelve un puntero a la CRL encontrada en este parámetro.
+Si se encuentra correctamente, se devuelve un puntero a la CRL encontrada en este parámetro.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si la función se ejecuta correctamente o **false** si se produce un error.
+Devuelve **TRUE** si la función se realiza correctamente o **FALSE** si se produce un error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,8 +95,8 @@ Devuelve **true** si la función se ejecuta correctamente o **false** si se prod
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
@@ -104,13 +104,13 @@ Devuelve **true** si la función se ejecuta correctamente o **false** si se prod
 
 <dl> <dt>
 
-[**información de la búsqueda de almacén de certificados \_ \_ \_ \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_store_prov_find_info)
+[**CERT \_ STORE \_ PROV \_ FIND \_ INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_store_prov_find_info)
 </dt> <dt>
 
 [**CertFindCRLInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcrlinstore)
 </dt> <dt>
 
-[**contexto de CRL \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-crl_context)
+[**CONTEXTO \_ DE CRL**](/windows/desktop/api/Wincrypt/ns-wincrypt-crl_context)
 </dt> </dl>
 
  

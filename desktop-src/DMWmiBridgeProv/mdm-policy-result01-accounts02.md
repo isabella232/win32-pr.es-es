@@ -1,9 +1,9 @@
 ---
-title: MDM_Policy_Result01_Accounts02 (clase)
-description: La \_ clase Result01 de Accounts02 de directivas MDM \_ \_ representa las directivas relacionadas con las cuentas.
+title: MDM_Policy_Result01_Accounts02 clase
+description: La clase MDM \_ Policy \_ Result01 \_ Accounts02 representa las directivas relacionadas con las cuentas.
 ms.assetid: 581d63de-6ea8-4c4a-8b94-06228ed07371
 keywords:
-- MDM_Policy_Result01_Accounts02 (clase)
+- MDM_Policy_Result01_Accounts02 clase
 - MDM_Policy_Result01_Accounts02 clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e5c240f9cd4d3703122c0ea051f35ec8326e2df
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6a786251bbd2d95e57633e090e3226faaaa804e5a52b019011f7fc9c8b106382
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802401"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118164825"
 ---
-# <a name="mdm_policy_result01_accounts02-class"></a>\_ \_ Clase Accounts02 de Result01 de directivas MDM \_
+# <a name="mdm_policy_result01_accounts02-class"></a>Clase MDM \_ Policy \_ Result01 \_ Accounts02
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La **clase \_ \_ Result01 de \_ Accounts02 de directivas MDM** representa las directivas relacionadas con las cuentas.
+La **clase MDM Policy \_ \_ Result01 \_ Accounts02** representa las directivas relacionadas con las cuentas.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -49,13 +49,13 @@ class MDM_Policy_Result01_Accounts02
 
 ## <a name="members"></a>Miembros
 
-La clase Result01 de la **\_ Directiva MDM \_ \_ Accounts02** tiene estos tipos de miembros:
+La **clase MDM Policy \_ \_ Result01 \_ Accounts02** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ Result01 de \_ Accounts02 de directivas MDM** tiene estas propiedades.
+La **clase MDM Policy \_ \_ Result01 \_ Accounts02** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -65,7 +65,7 @@ La **clase \_ \_ Result01 de \_ Accounts02 de directivas MDM** tiene estas propi
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -76,7 +76,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -87,7 +87,7 @@ Tipo de acceso: lectura/escritura
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -98,7 +98,7 @@ DomainNamesForEmailSync
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -131,7 +131,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/Policy/Result".
+Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/Policy/Result"
 
 </dd> </dl>
 
@@ -139,12 +139,12 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
-| Espacio de nombres<br/>                | DMMap de MDM raíz de \\ CIMv2 \\ \\<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Espacio de nombres<br/>                | DMMap \\ \\ de MDM de CIMv2 \\ raíz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -153,7 +153,7 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 
 <dl> <dt>
 
-[Usar scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripts de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

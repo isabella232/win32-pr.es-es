@@ -59,7 +59,7 @@ Este método restablece la marca de activación de ventana ([**CBaseWindow::m \_
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -10,12 +10,12 @@ keywords:
 - empresas multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd45026e6982068ef4e71afb049de2e1c6b18473
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 384a3ff6dc90104f98c323c5206b0fa4eb219484c67bdbb40db6e2b85ffad04c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138803"
 ---
 # <a name="manufacturer-identifiers"></a>Identificadores de fabricante
 
@@ -23,85 +23,85 @@ ms.locfileid: "103994077"
 
 | Nombre de la compañía                               | Identificador            |
 |--------------------------------------------|-----------------------|
-| Advanced gravis Computer Technology, Ltd.  | MM \_ gravis            |
-| Antex Electronics Corporation              | MM \_ Antex             |
-| Software de aplicaciones                              | \_aplicaciones mm              |
-| Artisoft, Inc.                             | \_Artisoft mm          |
-| AST Research, Inc.                         | AST de MM \_               |
+| Advanced Technology Computer Technology, Ltd.  | \_MMGRAIS            |
+| Antex Electronics Corporation              | MM \_ ANTEX             |
+| SOFTWARE DE APLICACIONES                              | APLICACIONES \_ MM              |
+| Artisoft, Inc.                             | MM \_ ARTISOFT          |
+| AST Research, Inc.                         | MM \_ AST               |
 | ATI Technologies, Inc.                     | MM \_ ATI               |
 | Audio, Inc.                                | MM \_ AUDIOFILE         |
-| Tecnología de procesamiento de audio                | MM \_ apt               |
+| Tecnología de procesamiento de audio                | MM \_ APT               |
 | Tecnología de procesamiento de audio                | MM \_ AUDIOPT           |
 | Auravision Corporation                     | MM \_ AURAVISION        |
-| AZTECH Labs, Inc.                          | \_AZTECH mm            |
-| Canopus, Co., Ltd.                         | MM \_ Canopus           |
+| Aztech Labs, Inc.                          | MM \_ AZTECH            |
+| Canopus, Co., Ltd.                         | MM \_ CANOPUS           |
 | Compusic                                   | MM \_ COMPUSIC          |
-| Tecnología asistida por equipo, Inc.            | MM \_ CAT               |
-| Computer Friends, Inc.                     | \_amigos de equipos con mm \_ |
-| Control de recursos Corporation              | MM \_ CONTROLRES        |
-| Creative Labs, Inc.                        | \_creativo mm          |
-| Corporación de diálogo                       | \_cuadro de diálogo mm          |
-| Dolby Laboratories, Inc.                   | Dolby de MM \_             |
-| DSP Group, Inc.                            | \_Grupo DSP de mm \_        |
-| DSP Solutions, Inc.                        | \_soluciones DSP de mm \_    |
-| Echo Speech Corporation                    | \_eco mm              |
-| ESS Technology, Inc.                       | ESS de MM \_               |
+| Computer Aided Technology, Inc.            | MM \_ CAT               |
+| Computer Friends, Inc.                     | MM \_ COMPUTER \_ FRIENDS |
+| Control Resources Corporation              | MM \_ CONTROLRES        |
+| Creative Labs, Inc.                        | MM \_ CREATIVE          |
+| Dialogic Corporation                       | MM \_ DIALOGIC          |
+| Dolby Dolby Dolbyes, Inc.                   | MM \_ DOLBY             |
+| DSP Group, Inc.                            | MM \_ DSP \_ GROUP        |
+| DSP Solutions, Inc.                        | SOLUCIONES \_ DE DSP DE MM \_    |
+| Echo Speech Corporation                    | MM \_ ECHO              |
+| ESS Technology, Inc.                       | MM \_ ESS               |
 | Everex Systems, Inc.                       | MM \_ EVEREX            |
 | EXAN, Ltd.                                 | MM \_ EXAN              |
-| Fujitsu, Ltd.                              | \_Fujitsu x           |
-| E/s Magic Corporation                      | MM \_ IOMAGIC           |
-| Sistemas de ICL personal                       | x \_ ICL \_ PS           |
-| Trabajar. C. Olivetti & C., S.p.A.              | \_teclado Olivetti mm          |
-| Sistemas de circuitos integrados, Inc.           | ICS de MM \_               |
-| Intel Corporation                          | MM \_ Intel             |
-| Interactivo, Inc.                          | MM \_ interactivo       |
-| Equipos empresariales internacionales            | MM \_ IBM               |
-| Sistemas con iteración, Inc.                     | MM \_ ITERATEDSYS       |
-| Logitech, Inc.                             | MM \_ Logitech          |
+| Tsutsu, Ltd.                              | \_MMTSU           |
+| Magic Corporation de E/S                      | MM \_ IOMAGIC           |
+| Sistemas personales de ICL                       | MM \_ ICL \_ PS           |
+| Ing. C. Olivetti & C., S.p.A.              | MM \_ OLIVETTI          |
+| Integrated Circuit Systems, Inc.           | MM \_ ICS               |
+| Intel Corporation                          | MM \_ INTEL             |
+| InterActive, Inc.                          | MM \_ INTERACTIVE       |
+| Máquinas empresariales internacionales            | MM \_ IBM               |
+| Iterated Systems, Inc.                     | MM \_ ITERATEDSYS       |
+| Quer, Inc.                             | MM \_ LOGITECH          |
 | Lyrrus, Inc.                               | MM \_ LYRRUS            |
-| Matsushita Electric Corporation of America | MM \_ Matsushita        |
+| Shishita Electric Corporation of America | MM \_ KOSHITA        |
 | Media Vision, Inc.                         | MM \_ MEDIAVISION       |
 | Metheus Corporation                        | MM \_ METHEUS           |
-| Laboratorios de microingeniería                      | MM \_ MELABS            |
-| Microsoft Corporation                      | \_Microsoft mm         |
+| microEngineering Labs                      | MM \_ MELABS            |
+| Microsoft Corporation                      | MM \_ MICROSOFT         |
 | MOSCOM Corporation                         | MM \_ MOSCOM            |
-| Motorola, Inc.                             | MM \_ Motorola          |
+| Motorola, Inc.                             | MM \_ MOTOROLA          |
 | Natural MicroSystems Corporation           | MM \_ NMS               |
-| NCR Corporation                            | NCR de MM \_               |
-| NEC Corporation                            | CM \_ NEC               |
-| Nuevo media Corporation                      | MM \_ NEWMEDIA          |
-| OKI                                        | \_OKI mm               |
-| OPTi, Inc.                                 | MM \_ Opti              |
-| Roland Corporation                         | x \_ Roland            |
+| NCR Corporation                            | MM \_ NCR               |
+| NEC Corporation                            | MM \_ NEC               |
+| New Media Corporation                      | MM \_ NEWMEDIA          |
+| Oki                                        | MM \_ OKI               |
+| OPTi, Inc.                                 | MM \_ OPTI              |
+| Corporation De Corporation                         | MM \_ LORÓN            |
 | SCALACS                                    | MM \_ SCALACS           |
-| Seiko Epson Corporation, Inc.              | MM \_ Epson             |
-| Sierra Semiconductor Corporation           | MM \_ Sierra            |
-| Silicon software, Inc.                     | MM \_ SILICONSOFT       |
+| Seili Corporation Corporation, Inc.              | MM \_ EPSON             |
+| Sierra Semiconductor Corporation           | MM \_ SIERRA            |
+| Silicon Software, Inc.                     | MM \_ SILICONSOFT       |
 | Sonic Foundry                              | MM \_ SONICFOUNDRY      |
 | Compresión de voz                         | MM \_ SPEECHCOMP        |
 | Supermac Technology, Inc.                  | MM \_ SUPERMAC          |
 | Tandy Corporation                          | MM \_ TANDY             |
-| Toshihiko Okuhura, Korg, Inc.              | MM \_ Korg              |
-| Truevision, Inc.                           | CM \_ TRUEVISION        |
-| Sistemas de Turtle Beach                       | \_playa de tortuga de mm \_     |
-| Video Associates Labs, Inc.                | MM \_ Val               |
-| Videologic, Inc.                           | fotologic MM \_        |
+| Toshilig Okuhura, Korg, Inc.              | MM \_ KORG              |
+| Truevision, Inc.                           | MM \_ TRUEVISION        |
+| Sistemas de las costas de la costa                       | MM \_ TURTLE \_ BEACH     |
+| Video Associates Labs, Inc.                | MM \_ VAL               |
+| VideoLogic, Inc.                           | MM \_ VIDEOLOGIC        |
 | Visual Information Technologies, Inc.      | MM \_ VITEC             |
-| VocalTec, Inc.                             | MM \_ VOCALTEC          |
-| Tecnologías de Voyetra                       | MM \_ VOYETRA           |
-| Wang Laboratories                          | MM \_ WANGLABS          |
-| Willow del bajo de la empresa                    | MM \_ WILLOWPOND        |
+| VozTec, Inc.                             | MM \_ VOZTEC          |
+| Voyetra Technologies                       | MM \_ VOYETRA           |
+| Sendoses Desfila                          | \_MMLABS          |
+| Corporation Descosecha                    | MM \_ SAUCEPOND        |
 | Winnov, LP                                 | MM \_ WINNOV            |
-| Soluciones multimedia Xebec limitadas         | MM \_ Xebec             |
-| Yamaha Corporation de América              | MM x \_ Yamaha            |
+| Xebec Multimedia Solutions Limited         | MM \_ XEBEC             |
+| Yamaha Corporation of America              | MM \_ YAMAHA            |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

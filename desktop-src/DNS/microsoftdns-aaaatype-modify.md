@@ -1,11 +1,11 @@
 ---
-title: Método Modify de la clase MicrosoftDNS_AAAAType
+title: Método Modify de la MicrosoftDNS_AAAAType clase
 description: El método Modify actualiza un registro de recursos de dirección IPv6 (AAAA).
 ms.assetid: d58f8a88-8473-4b26-89f0-237d2457f00b
 keywords:
-- Modificar DNS de método
-- Modificar el método DNS, MicrosoftDNS_AAAAType clase
-- MicrosoftDNS_AAAAType de clase DNS, Modify (método)
+- Modificación del dns del método
+- Modificar el método DNS , MicrosoftDNS_AAAAType clase
+- MicrosoftDNS_AAAAType clase DNS , Método Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc216233fe3d41e4f1e31fe0d471e766c4dc8476
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 417275b9e5fdf1c499f34fd49af3c40f8e208d43673a5d53dc9ba4c3b1ef2c95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967414"
 ---
-# <a name="modify-method-of-the-microsoftdns_aaaatype-class"></a>Método Modify de la \_ clase MicrosoftDNS AAAAType
+# <a name="modify-method-of-the-microsoftdns_aaaatype-class"></a>Método Modify de la clase AAAAType de MicrosoftDNS \_
 
-El método **Modify** actualiza un registro de recursos de dirección IPv6 (aaaa).
+El **método Modify** actualiza un registro de recursos de dirección IPv6 (AAAA).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,24 +44,24 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ de en, opcional\]
+*TTL* \[ en, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
 
 </dd> <dt>
 
-*DirecciónIPv6* \[ en, opcional\]
+*IPv6Address* \[ en, opcional\]
 </dt> <dd>
 
-Dirección IPv6 para el host.
+Dirección IPv6 del host.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
-Referencia al nuevo objeto.
+Referencia al nuevo objeto .
 
 </dd> </dl>
 
@@ -69,9 +69,9 @@ Referencia al nuevo objeto.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los parámetros no especificados se dejan sin cambios en el registro modificado.
+Cualquier parámetro no especificado se deja sin modificar en el registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,7 +82,7 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -93,10 +93,10 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 [**MicrosoftDNS \_ AAAAType**](microsoftdns-aaaatype.md)
 </dt> <dt>
 
-[**Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS AAAAType**](microsoftdns-aaaatype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData de la clase \_ AAAAType de MicrosoftDNS**](microsoftdns-aaaatype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

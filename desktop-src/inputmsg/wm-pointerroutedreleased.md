@@ -1,9 +1,9 @@
 ---
-title: Mensaje WM_POINTERROUTEDRELEASED
-description: Se envía a todos los procesos (configurados para el encadenamiento entre procesos a través de AddContentWithCrossProcessChaining y no que actualmente controla la entrada de puntero) que se asocian a un identificador de puntero específico, cuando se recibe un mensaje de WM_POINTERUP en el proceso actual.
+title: WM_POINTERROUTEDRELEASED mensaje
+description: Se envía a todos los procesos (configurados para el encadenamiento entre procesos a través de AddContentWithCrossProcessChaining y que actualmente no administran la entrada de puntero) asociados a un identificador de puntero específico, cuando se recibe un mensaje WM_POINTERUP en el proceso actual.
 ms.assetid: B031ED80-6F1B-42A7-B4E2-55934E2C456C
 keywords:
-- Mensajes y notificaciones de entrada de mensajes de WM_POINTERROUTEDRELEASED
+- WM_POINTERROUTEDRELEASED mensajes de entrada y notificaciones
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 8e24a0df1a2bbdf2b0a9df97057686aa6045eff8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 318134779d94824daef0b05903f45121665892fbcafbeb48589ef150f324d2b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119611295"
 ---
-# <a name="wm_pointerroutedreleased-message"></a>Mensaje WM_POINTERROUTEDRELEASED
+# <a name="wm_pointerroutedreleased-message"></a>WM_POINTERROUTEDRELEASED mensaje
 
-Se envía a todos los procesos (configurados para el encadenamiento entre procesos a través de [**AddContentWithCrossProcessChaining**](/windows/win32/api/directmanipulation/nf-directmanipulation-idirectmanipulationcompositor2-addcontentwithcrossprocesschaining) y no que actualmente controla la entrada de puntero) que se asocian a un identificador de puntero específico, cuando se recibe un mensaje de [**WM_POINTERUP**](wm-pointerup.md) en el proceso actual.
+Se envía a todos los procesos (configurados para el encadenamiento entre procesos a través de [**AddContentWithCrossProcessChaining**](/windows/win32/api/directmanipulation/nf-directmanipulation-idirectmanipulationcompositor2-addcontentwithcrossprocesschaining) y que actualmente no administran la entrada de puntero) asociados a un identificador de puntero específico, cuando se recibe un mensaje [**WM_POINTERUP**](wm-pointerup.md) en el proceso actual.
 
 
 ```C++
@@ -58,11 +58,11 @@ NULL
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

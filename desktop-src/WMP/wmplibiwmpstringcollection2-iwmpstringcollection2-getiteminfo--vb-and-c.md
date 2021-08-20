@@ -1,11 +1,11 @@
 ---
-title: IWMPStringCollection2 getItemInfo, método
+title: IWMPStringCollection2 getItemInfo (método)
 description: El método getItemInfo devuelve la cadena correspondiente al índice y el nombre del elemento de colección de cadenas especificado.
 ms.assetid: 4a107e85-9eb7-42be-b1f9-8e9e92e6e509
 keywords:
-- método getItemInfo de Windows Media Player
-- método getItemInfo Windows Media Player, interfaz IWMPStringCollection2
-- Interfaz IWMPStringCollection2 Windows Media Player, método getItemInfo
+- Método getItemInfo Reproductor de Windows Media
+- Método getItemInfo Reproductor de Windows Media , interfaz IWMPStringCollection2
+- Interfaz IWMPStringCollection2 Reproductor de Windows Media método , getItemInfo
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4741c4a3ba74b03038974d8b66bc42c23830ebb3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6f3f5371d55384544e4135e702b686cc7ce36707d204529ca7a4e68a3734d8ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899845"
 ---
-# <a name="iwmpstringcollection2getiteminfo-method"></a>IWMPStringCollection2:: getItemInfo (método)
+# <a name="iwmpstringcollection2getiteminfo-method"></a>IWMPStringCollection2::getItemInfo (método)
 
-El método **getItemInfo** devuelve la cadena correspondiente al índice y el nombre del elemento de colección de cadenas especificado.
+El **método getItemInfo** devuelve la cadena correspondiente al índice y el nombre del elemento de colección de cadenas especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,29 +55,29 @@ Implements IWMPStringCollection2.getItemInfo
 
 <dl> <dt>
 
-*lCollectionIndex* \[ de\]
+*lCollectionIndex* \[ En\]
 </dt> <dd>
 
-**System. Int32** que especifica el índice de base cero del elemento de colección de cadenas del que se va a obtener el atributo.
+**System.Int32 que especifica** el índice de base cero del elemento de colección de cadenas del que se va a obtener el atributo.
 
 </dd> <dt>
 
-*bstrItemName* \[ de\]
+*bstrItemName* \[ En\]
 </dt> <dd>
 
-**System. String** que es el nombre del atributo.
+**System.String que** es el nombre del atributo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**System. String** que es el nombre del elemento de colección de cadenas. En el caso de los atributos cuyo valor subyacente es **System. Boolean**, devuelve la cadena "true" o "false".
+**System.String que** es el nombre del elemento de colección de cadenas. Para los atributos cuyo valor subyacente **es System.Boolean,** devuelve la cadena "true" o "false".
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para recuperar los atributos con varios valores y atributos con valores complejos, use el método **getItemInfoByType** .
+Para recuperar atributos con varios valores y atributos con valores complejos, use el **método getItemInfoByType.**
 
-Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,7 +85,7 @@ Para usar este método, se requiere acceso de lectura a la biblioteca. Para obte
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 11.<br/>                                                                                    |
+| Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -95,10 +95,10 @@ Para usar este método, se requiere acceso de lectura a la biblioteca. Para obte
 
 <dl> <dt>
 
-[**Interfaz IWMPStringCollection2**](iwmpstringcollection2--vb-and-c.md)
+[**IWMPStringCollection2 (Interfaz)**](iwmpstringcollection2--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPStringCollection2. getItemInfoByType (VB y C#)**](wmplibiwmpstringcollection2-iwmpstringcollection2-getiteminfobytype--vb-and-c.md)
+[**IWMPStringCollection2.getItemInfoByType (VB y C#)**](wmplibiwmpstringcollection2-iwmpstringcollection2-getiteminfobytype--vb-and-c.md)
 </dt> </dl>
 
  

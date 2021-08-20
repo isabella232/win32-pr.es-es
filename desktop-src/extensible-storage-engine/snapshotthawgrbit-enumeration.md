@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración SnapshotThawGrbit'
-title: Enumeración SnapshotThawGrbit
+description: 'Más información sobre: Enumeración SnapshotThawGrbit'
+title: SnapshotThawGrbit (enumeración)
 TOCTitle: SnapshotThawGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.SnapshotThawGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.snapshotthawgrbit(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 939f1caeb3d4166fc33378fb6ae9798041c950f2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98fb9af4665aa6b6e05b6d8b807afae3932b7999dbc5dd82b50ee3a2dead5979
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118071147"
 ---
-# <a name="snapshotthawgrbit-enumeration"></a>Enumeración SnapshotThawGrbit
+# <a name="snapshotthawgrbit-enumeration"></a>SnapshotThawGrbit (enumeración)
 
-Opciones de [JetOSSnapshotThaw (JET_OSSNAPID, SnapshotThawGrbit)](./api.jetossnapshotthaw-method.md).
+Opciones para [JetOSSnapshotThaw(JET_OSSNAPID, SnapshotThawGrbit).](./api.jetossnapshotthaw-method.md)
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -70,7 +70,7 @@ public enum SnapshotThawGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 </tbody>
@@ -81,4 +81,4 @@ public enum SnapshotThawGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

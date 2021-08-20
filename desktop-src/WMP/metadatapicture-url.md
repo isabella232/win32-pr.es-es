@@ -1,9 +1,9 @@
 ---
-title: MetadataPicture. URL
-description: Esta propiedad solo se utiliza de forma interna. | MetadataPicture. URL
+title: MetadataPicture.URL
+description: Esta propiedad solo se utiliza de forma interna. | MetadataPicture.URL
 ms.assetid: 76ce4726-6655-4a78-91db-4bc176f702a8
 keywords:
-- MetadataPicture. URL de Windows Media Player
+- MetadataPicture.URL Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,24 +14,24 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a337c465900e3964e587c9ef52d360a2b98fe6da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a83e0b06ba72e7ea597768bef9b5367faa3433d1c1ad2f0f2e378e1717e46010
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118837189"
 ---
-# <a name="metadatapictureurl"></a>MetadataPicture. URL
+# <a name="metadatapictureurl"></a>MetadataPicture.URL
 
 Esta propiedad solo se utiliza de forma interna.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor*. *currentMedia*. **getItemInfoByType**( *nombre*, *idioma*, *Índice*). **Dirección URL**
+*player*. *currentMedia*. **getItemInfoByType**( *name*, *language*, *index*). **DIRECCIÓN URL**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es una **cadena** de solo lectura.
+Esta propiedad es una cadena de solo **lectura.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,7 +39,7 @@ Esta propiedad es una **cadena** de solo lectura.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/>                                 |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -48,7 +48,7 @@ Esta propiedad es una **cadena** de solo lectura.
 
 <dl> <dt>
 
-[**Objeto MetadataPicture**](metadatapicture-object.md)
+[**MetadataPicture (objeto)**](metadatapicture-object.md)
 </dt> </dl>
 
  

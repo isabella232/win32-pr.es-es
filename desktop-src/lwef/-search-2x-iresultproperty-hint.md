@@ -1,9 +1,9 @@
 ---
 title: Propiedad IResultProperty Hint (WdsSharedIDL.h)
-description: Valor especial que se usa para facilitar la recuperación de datos.
+description: Valor especial que se usa para ayudar a la recuperación de datos.
 ms.assetid: fa888c5e-898e-4f48-b87e-2d0d078fd1fe
 keywords:
-- Propiedades de sugerencias Legacy Windows Environment Features
+- Propiedades de sugerencias Características heredadas Windows entorno de consulta
 - Propiedad hint Legacy Windows Environment Features , IResultProperty (Interfaz IResultProperty)
 - IResultProperty interface Legacy Windows Environment Features , Hint property
 topic_type:
@@ -27,9 +27,9 @@ ms.locfileid: "118754788"
 # <a name="iresultpropertyhint-property"></a>Propiedad IResultProperty::Hint
 
 > [!NOTE]
-> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API Windows Search en](../search/-search-reference-entry-page.md) su lugar. 
+> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use Windows [Search API](../search/-search-reference-entry-page.md) en su lugar. 
 
-Valor especial que se usa para facilitar la recuperación de datos.
+Valor especial que se usa para ayudar a la recuperación de datos.
 
 Esta propiedad es de solo lectura.
 
@@ -54,8 +54,8 @@ devuelve un puntero a la sugerencia.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP2 \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio de SP1 \[\]<br/>                             |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp2\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio sp1 \[\]<br/>                             |
 | Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 2.6.5<br/>                                             |
 | Header<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 

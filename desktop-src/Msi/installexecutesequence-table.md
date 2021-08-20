@@ -1,25 +1,25 @@
 ---
-description: En la tabla InstallExecuteSequence se enumeran las acciones que se ejecutan cuando se ejecuta la acción de instalación de nivel superior.
+description: En la tabla InstallExecuteSequence se enumeran las acciones que se ejecutan cuando se ejecuta la acción INSTALL de nivel superior.
 ms.assetid: 995d4159-bfc9-48b2-8328-3ae8251d785d
 title: Tabla InstallExecuteSequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7d110debacab19739c3da69abf3948d11bb7aa6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6d48fb83bd8f3c947feb81ab95df490572ba1ee68d423957759a95c323005070
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118142186"
 ---
 # <a name="installexecutesequence-table"></a>Tabla InstallExecuteSequence
 
-En la tabla InstallExecuteSequence se enumeran las acciones que se ejecutan cuando se ejecuta la [acción de instalación](install-action.md) de nivel superior.
+En la tabla InstallExecuteSequence se enumeran las acciones que se ejecutan cuando se ejecuta la acción [INSTALL](install-action.md) de nivel superior.
 
-Las acciones de la secuencia de instalación hasta la [acción InstallValidate](installvalidate-action.md)y los cuadros de diálogo de salida se encuentran en la [tabla InstallUISequence](installuisequence-table.md). Todas las acciones de InstallValidate hasta el final de la secuencia de instalación se encuentran en la tabla InstallExecuteSequence. Dado que la tabla InstallExecuteSequence debe ser independiente, tiene cualquier acción de inicialización necesaria, como las acciones [LaunchConditions](launchconditions-action.md), [CostInitialize](costinitialize-action.md), [FileCost](filecost-action.md)y [CostFinalize](costfinalize-action.md) .
+Las acciones de la secuencia de instalación hasta la acción [InstallValidate](installvalidate-action.md)y los cuadros de diálogo de salida se encuentran en la [tabla InstallUISequence](installuisequence-table.md). Todas las acciones desde InstallValidate hasta el final de la secuencia de instalación se encuentran en la tabla InstallExecuteSequence. Dado que la tabla InstallExecuteSequence debe ser independiente, tiene las acciones de inicialización necesarias, como las acciones [LaunchConditions](launchconditions-action.md), [CostInitialize,](costinitialize-action.md) [FileCost](filecost-action.md)y [CostFinalize.](costfinalize-action.md)
 
-[Las acciones personalizadas](custom-actions.md) que requieren una interfaz de usuario deben utilizar [**MsiProcessMessage**](/windows/desktop/api/Msiquery/nf-msiquery-msiprocessmessage) en lugar de los cuadros de diálogo creados mediante la [tabla de diálogo](dialog-table.md).
+[Las acciones personalizadas](custom-actions.md) que requieren una interfaz de usuario deben usar [**MsiProcessMessage en**](/windows/desktop/api/Msiquery/nf-msiquery-msiprocessmessage) lugar de cuadros de diálogo creados mediante la [tabla Dialog](dialog-table.md).
 
-La tabla InstallExecuteSequence tiene las columnas siguientes.
+La tabla InstallExecuteSequence tiene las siguientes columnas.
 
 
 
@@ -37,51 +37,51 @@ La tabla InstallExecuteSequence tiene las columnas siguientes.
 
 <dl> <dt>
 
-<span id="Action"></span><span id="action"></span><span id="ACTION"></span>Actuar
+<span id="Action"></span><span id="action"></span><span id="ACTION"></span>Acción
 </dt> <dd>
 
-Nombre de la acción que se va a ejecutar. Se trata de una acción integrada o una acción personalizada.
+Nombre de la acción que se ejecutará. Se trata de una acción integrada o una acción personalizada.
 
-Clave de la tabla principal.
+Clave de tabla principal.
 
 </dd> <dt>
 
-<span id="Condition"></span><span id="condition"></span><span id="CONDITION"></span>Cumple
+<span id="Condition"></span><span id="condition"></span><span id="CONDITION"></span>Condición
 </dt> <dd>
 
-Este campo contiene una expresión condicional. Si la expresión se evalúa como false, se omite la acción. Si la sintaxis de la expresión no es válida, la secuencia finaliza y devuelve iesBadActionData. Para obtener información sobre la sintaxis de las instrucciones condicionales, vea sintaxis de la [instrucción condicional](conditional-statement-syntax.md).
+Este campo contiene una expresión condicional. Si la expresión se evalúa como False, se omite la acción. Si la sintaxis de la expresión no es válida, la secuencia finaliza y devuelve iesBadActionData. Para obtener información sobre la sintaxis de las instrucciones condicionales, vea [Sintaxis de instrucciones condicionales.](conditional-statement-syntax.md)
 
 </dd> <dt>
 
-<span id="Sequence"></span><span id="sequence"></span><span id="SEQUENCE"></span>SPRJ
+<span id="Sequence"></span><span id="sequence"></span><span id="SEQUENCE"></span>Secuencia
 </dt> <dd>
 
-Número que determina la posición de la secuencia en la que se va a ejecutar esta acción.
+Número que determina la posición de secuencia en la que se va a ejecutar esta acción.
 
-Un valor positivo representa la posición de la secuencia. Un valor null indica que la acción no se ejecuta. Los siguientes valores negativos indican que esta acción se va a ejecutar si el instalador devuelve la marca de finalización asociada. Cada marca de finalización (valor negativo) se puede usar sin más de una acción. Varias acciones pueden tener marcas de finalización, pero deben ser marcas diferentes. Las marcas de finalización (valores negativos) suelen usarse con [cuadros de diálogo](dialog-boxes.md).
+Un valor positivo representa la posición de la secuencia. Un valor NULL indica que la acción no se ejecuta. Los siguientes valores negativos indican que esta acción se va a ejecutar si el instalador devuelve la marca de terminación asociada. Cada marca de terminación (valor negativo) se puede usar sin más de una acción. Varias acciones pueden tener marcas de terminación, pero deben ser marcas diferentes. Las marcas de terminación (valores negativos) se usan normalmente con cuadros [de diálogo](dialog-boxes.md).
 
 
 
 | Marca de terminación          | Value | Descripción                                                                          |
 |---------------------------|-------|--------------------------------------------------------------------------------------|
-| msiDoActionStatusSuccess  | -1    | Finalización correcta. Se usa con los cuadros de diálogo de [salida](exit-dialog.md) .               |
-| msiDoActionStatusUserExit | -2    | El usuario finaliza la instalación. Se usa con los cuadros de diálogo de [UserExit](userexit-dialog.md) .     |
-| msiDoActionStatusFailure  | -3    | Se termina la salida grave. Se usa con un cuadro de diálogo de [FatalError](fatalerror-dialog.md) . |
-| msiDoActionStatusSuspend  | -4    | La instalación está suspendida.                                                                |
+| msiDoActionStatusSuccess  | -1    | Finalización correcta. Se usa con [los cuadros de](exit-dialog.md) diálogo Salir.               |
+| msiDoActionStatusUserExit | -2    | El usuario finaliza la instalación. Se usa con [los cuadros de diálogo UserExit.](userexit-dialog.md)     |
+| msiDoActionStatusFailure  | -3    | Finaliza la salida irrescindiendo. Se usa con cuadros [de diálogo FatalError.](fatalerror-dialog.md) |
+| msiDoActionStatusSuspend  | -4    | La instalación se suspende.                                                                |
 
 
 
  
 
-Cero, todos los demás números negativos o un valor nulo indican que la acción no se ejecuta nunca.
+Cero, todos los demás números negativos o un valor NULL indican que la acción nunca se ejecuta.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El texto localizado para la presentación o el registro del progreso se especifica en la [tabla ActionText](actiontext-table.md).
 
-Para obtener un ejemplo de una tabla de secuencia, vea [usar una tabla de secuencia](using-a-sequence-table.md).
+Para obtener un ejemplo de una tabla de secuencia, vea [Usar una tabla de secuencia.](using-a-sequence-table.md)
 
 ## <a name="validation"></a>Validación
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCIWNDM_NOTIFYMODE (VFW. h)
-description: El \_ mensaje MCIWNDM NOTIFYMODE notifica a la ventana primaria de una aplicación que el modo de funcionamiento del dispositivo MCI ha cambiado.
+title: MCIWNDM_NOTIFYMODE mensaje (Vfw.h)
+description: El mensaje MCIWNDM NOTIFYMODE notifica a la ventana primaria de una aplicación que el modo de funcionamiento del \_ dispositivo MCI ha cambiado.
 ms.assetid: 08adfa8b-4d88-4953-acd8-8a4728f9e1b6
 keywords:
-- Mensaje de MCIWNDM_NOTIFYMODE de Windows multimedia
+- MCIWNDM_NOTIFYMODE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fe75048a53023dab67bef4048d6149438ad54d2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c610904512e2b39a5c0f16781c1d9f27155f7826941aebfc66fcd9259f7ee8a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119525425"
 ---
-# <a name="mciwndm_notifymode-message"></a>MCIWNDM \_ NOTIFYMODE
+# <a name="mciwndm_notifymode-message"></a>Mensaje NOTIFYMODE de MCIWNDM \_
 
-El mensaje **MCIWNDM \_ NOTIFYMODE** notifica a la ventana primaria de una aplicación que el modo de funcionamiento del dispositivo MCI ha cambiado.
+El **mensaje \_ NOTIFYMODE de MCIWNDM** notifica a la ventana primaria de una aplicación que el modo de funcionamiento del dispositivo MCI ha cambiado.
 
 
 ```C++
@@ -38,33 +38,33 @@ lParam = (LPARAM) (LONG) mode;
 
 <dl> <dt>
 
-<span id="hwnd"></span><span id="HWND"></span>*identificador*
+<span id="hwnd"></span><span id="HWND"></span>*Hwnd*
 </dt> <dd>
 
-Identificador de la ventana de MCIWnd.
+Identificador de la ventana MCIWnd.
 
 </dd> <dt>
 
-<span id="mode"></span><span id="MODE"></span>*modo*
+<span id="mode"></span><span id="MODE"></span>*Modo*
 </dt> <dd>
 
-Entero que corresponde al modo MCI.
+Entero correspondiente al modo MCI.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Puede habilitar la notificación de cambios de modo de un dispositivo MCI especificando el estilo de ventana de MCIWNDF \_ NOTIFYMODE.
+Puede habilitar la notificación de los cambios de modo de un dispositivo MCI especificando el estilo de ventana MCIWNDF \_ NOTIFYMODE.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

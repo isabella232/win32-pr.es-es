@@ -5,12 +5,12 @@ title: Manifiestos de aplicación
 ms.topic: article
 ms.date: 10/08/2020
 ms.custom: 19H1
-ms.openlocfilehash: 2fb7297310102134dfcacf0e5f0d907fbf3a3e0b
-ms.sourcegitcommit: 7eadd92b1da5eb4eab7d516a5a768e7f7fc02d4c
+ms.openlocfilehash: a1ced7ffb4052f418e989e907f26abb85c2c63db
+ms.sourcegitcommit: 25211012b002a7d1303e438277373d7faf958a68
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "112230241"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122436713"
 ---
 # <a name="application-manifests"></a>Manifiestos de aplicación
 
@@ -20,9 +20,9 @@ Para obtener una lista completa del esquema XML, vea [Esquema de archivo de mani
 
 Los manifiestos de aplicación tienen los siguientes elementos y atributos.
 
-| Elemento                               | Atributos                | Requerido |
+| Elemento                               | Atributos                | Obligatorio |
 |---------------------------------------|---------------------------|----------|
-| **ensamblado**                          |                           | Sí      |
+| **ensamblaje**                          |                           | Sí      |
 |                                       | **manifestVersion**       | Sí      |
 | **noInherit**                         |                           | No       |
 | **Assemblyidentity**                  |                           | Sí      |
@@ -66,11 +66,11 @@ Para obtener más información, vea [Installing Side-by-side Assemblies](install
 
 El nombre de un archivo de manifiesto de aplicación es el nombre del ejecutable de la aplicación seguido de .manifest.
 
-Por ejemplo, un manifiesto de aplicación que hace referencia a example.exe o example.dll usaría la siguiente sintaxis de nombre de archivo. Puede omitir el identificador <*de recurso>* campo si el identificador de recurso es 1.
+Por ejemplo, un manifiesto de aplicación que hace referencia a example.exe o example.dll usaría la siguiente sintaxis de nombre de archivo. Puede omitir el campo <*id. de recurso>* si el identificador de recurso es 1.
 
-**example.exe.<*id. de recurso*>.manifest**
+**example.exe.<*id. de* recurso>.manifest**
 
-**example.dll.<*id. de recurso*>.manifest**
+**example.dll.<*id. de* recurso>.manifest**
 
 ## <a name="elements"></a>Elementos
 
@@ -97,9 +97,9 @@ El **elemento** assembly tiene los siguientes atributos.
 
 ### <a name="noinherit"></a>noInherit
 
-Incluya este elemento en un manifiesto de aplicación para establecer los contextos de activación [generados](activation-contexts.md) a partir del manifiesto con la marca "no inherit". Cuando esta marca no se establece en un contexto de activación y el contexto de activación está activo, lo heredan los nuevos subprocesos en el mismo proceso, ventanas, procedimientos de ventana y llamadas a [procedimientos asincrónicos](/windows/desktop/Sync/asynchronous-procedure-calls). Establecer esta marca impide que el nuevo objeto herede el contexto activo.
+Incluya este elemento en un manifiesto de aplicación para establecer los contextos de activación [generados](activation-contexts.md) a partir del manifiesto con la marca "no inherit". Cuando esta marca no se establece en un contexto de activación y el contexto de activación está activo, lo heredan los nuevos subprocesos en el mismo proceso, ventanas, procedimientos de ventana y llamadas a procedimientos [asincrónicos](/windows/desktop/Sync/asynchronous-procedure-calls). Establecer esta marca impide que el nuevo objeto herede el contexto activo.
 
-El **elemento noInherit** es opcional y normalmente se omite. La mayoría de los ensamblados no funcionan correctamente mediante un contexto de activación que no hereda porque el ensamblado debe diseñarse explícitamente para administrar la propagación de su propio contexto de activación. El uso del **elemento noInherit** requiere que los ensamblados dependientes a los que hace referencia el manifiesto de aplicación tengan **un elemento noInherit** en su manifiesto [de ensamblado.](assembly-manifests.md)
+El **elemento noInherit** es opcional y normalmente se omite. La mayoría de los ensamblados no funcionan correctamente mediante un contexto de activación sin heredar porque el ensamblado debe diseñarse explícitamente para administrar la propagación de su propio contexto de activación. El uso del **elemento noInherit** requiere que los ensamblados dependientes a los que hace referencia el manifiesto de aplicación tengan **un elemento noInherit** en su manifiesto [de ensamblado.](assembly-manifests.md)
 
 Si **noInherit se** usa en un manifiesto, debe ser el primer subelemento del **elemento de** ensamblado. El **elemento assemblyIdentity** debe ir inmediatamente después del **elemento noInherit.** Si **no se usa noInherit,** **assemblyIdentity** debe ser el primer subelemento del **elemento de** ensamblado. El **elemento noInherit** no tiene elementos secundarios. No es un elemento válido en los [manifiestos de ensamblado.](assembly-manifests.md)
 
@@ -107,24 +107,24 @@ Si **noInherit se** usa en un manifiesto, debe ser el primer subelemento del **e
 
 ### <a name="assemblyidentity"></a>assemblyIdentity
 
-Como primer subelemento de un elemento **de** ensamblado, **assemblyIdentity** describe e identifica de forma única la aplicación propietaria de este manifiesto de aplicación. Como primer subelemento de un **elemento dependentAssembly,** **assemblyIdentity** describe un ensamblado en paralelo requerido por la aplicación. Tenga en cuenta que todos los ensamblados a los que se hace referencia en el manifiesto de aplicación requieren una **assemblyIdentity** que coincida exactamente con **assemblyIdentity** en el propio manifiesto de ensamblado del ensamblado al que se hace referencia.
+Como primer subelemento de un elemento **de** ensamblado, **assemblyIdentity** describe e identifica de forma única la aplicación propietaria de este manifiesto de aplicación. Como primer subelemento de un **elemento dependentAssembly,** **assemblyIdentity** describe un ensamblado en paralelo requerido por la aplicación. Tenga en cuenta que cada ensamblado al que se hace referencia en el manifiesto de aplicación requiere una **assemblyIdentity** que coincida exactamente con **assemblyIdentity** en el propio manifiesto de ensamblado del ensamblado al que se hace referencia.
 
 El **elemento assemblyIdentity** tiene los atributos siguientes. No tiene subelementos.
 
 | Atributo                 | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **type**                  | Especifica el tipo de aplicación o ensamblado. El valor debe ser Win32 y todo en minúsculas. Necesario.                                                                                                                                                                                                                                                                                                                              |
-| **name**                  | Nombra de forma única la aplicación o el ensamblado. Use el formato siguiente para el nombre: Organization.Division.Name. Por ejemplo, Microsoft.Windows.mysampleApp. Necesario.                                                                                                                                                                                                                                                               |
-| **language**              | Identifica el idioma de la aplicación o ensamblado. Opcional. Si la aplicación o el ensamblado son específicos del lenguaje, especifique el código de lenguaje DHTML. En **assemblyIdentity de una** aplicación destinada a uso internacional (idioma neutro) omita el atributo language.<br/> En un **ensambladoIdentidad de** un ensamblado destinado a uso internacional (idioma neutro) establezca el valor de language en " \* ".<br/> |
+| **name**                  | Nombra de forma exclusiva la aplicación o el ensamblado. Use el siguiente formato para el nombre: Organization.Division.Name. Por ejemplo, Microsoft. Windows.mysampleApp. Necesario.                                                                                                                                                                                                                                                               |
+| **language**              | Identifica el idioma de la aplicación o ensamblado. Opcional. Si la aplicación o el ensamblado son específicos del lenguaje, especifique el código de lenguaje DHTML. En **assemblyIdentity de una** aplicación diseñada para uso mundial (idioma neutro) omita el atributo language.<br/> En un **ensambladoIdentidad de** un ensamblado destinado a uso mundial (idioma neutro) establezca el valor de language en " \* ".<br/> |
 | **processorArchitecture** | Especifica el procesador. Entre los valores válidos se incluyen `x86`, `amd64`, `arm` y `arm64`. Opcional.                                                                                                                                                                                                                                                                                                                       |
 | **version**               | Especifica la versión de la aplicación o del ensamblado. Use el formato de versión de cuatro partes: mmmmm.nnnnn.ooooo.ppppp. Cada una de las partes separadas por puntos puede ser de 0 a 65535, ambos incluidos. Para obtener más información, vea [Versiones de ensamblado.](assembly-versions.md) Necesario.                                                                                                                                                                        |
-| **Publickeytoken**        | Cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes del hash SHA-1 de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública que se usa para firmar el catálogo debe ser de 2048 bits o superior. Necesario para todos los ensamblados en paralelo compartidos.                                                                                                                                                     |
+| **Publickeytoken**        | Cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes del hash SHA-1 de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública usada para firmar el catálogo debe ser de 2048 bits o superior. Se requiere para todos los ensamblados en paralelo compartidos.                                                                                                                                                     |
 
 <span id="compatibility"></span><span id="COMPATIBILITY"></span>
 
 ### <a name="compatibility"></a>compatibilidad
 
-Contiene al menos una **aplicación**. No tiene atributos. Opcional. Los manifiestos de aplicación sin un elemento de compatibilidad tienen como valor predeterminado la compatibilidad de Windows Vista en Windows 7.
+Contiene al menos una **aplicación**. No tiene atributos. Opcional. Los manifiestos de aplicación sin un elemento de compatibilidad se Windows compatibilidad con Vista en Windows 7.
 
 <span id="application"></span><span id="APPLICATION"></span>
 
@@ -140,13 +140,13 @@ El **elemento supportedOS** tiene el atributo siguiente. No tiene subelementos.
 
 | Atributo | Descripción   |
 |-----------|-----------------------|
-| **Id**    | Establezca el atributo Id en **{e2011457-1546-43c5-a5fe-008deee3d3f0}** para ejecutar la aplicación mediante la funcionalidad vista. Esto puede permitir que una aplicación diseñada para Windows Vista se ejecute en un sistema operativo posterior. <br/> Establezca el atributo Id en **{35138b9a-5d96-4fbd-8e2d-a2440225f93a}** para ejecutar la aplicación con la funcionalidad de Windows 7.<br/> Las aplicaciones que admiten Windows Vista, Windows 7 y Windows 8 no requieren manifiestos independientes. En este caso, agregue los GUID para todos los sistemas operativos Windows.<br/> Para obtener información sobre el **comportamiento del** atributo Id en Windows, vea la guía Windows 8 y compatibilidad de Windows [Server 2012](https://www.microsoft.com/download/details.aspx?id=27416).<br/> Los siguientes GUID se corresponden con los sistemas operativos indicados:<br/> **{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}** -> Windows 10, Windows Server 2016 y Windows Server 2019<br/> **{1f676c76-80e1-4239-95bb-83d0f6d0da78}** -> Windows 8.1 y Windows Server 2012 R2<br/> **{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}** -> Windows 8 y Windows Server 2012<br/> **{35138b9a-5d96-4fbd-8e2d-a2440225f93a}** -> Windows 7 y Windows Server 2008 R2<br/> **{e2011457-1546-43c5-a5fe-008deee3d3f0}** -> Windows Vista y Windows Server 2008<br/> Para probar esto en Windows 7 o Windows 8.x, ejecute Monitor de recursos (resmon), vaya a la pestaña CPU, haga clic con el botón derecho en las etiquetas de columna, "Seleccionar columna..." y active "Contexto del sistema operativo". En Windows 8.x, también puede encontrar esta columna disponible en el Administrador de tareas (taskmgr). El contenido de la columna muestra el valor más alto encontrado o "Windows Vista" como valor predeterminado. <br/> |
+| **Id**    | Establezca el atributo Id en **{e2011457-1546-43c5-a5fe-008deee3d3f0}** para ejecutar la aplicación mediante la funcionalidad vista. Esto puede permitir que una aplicación diseñada para Windows Vista se ejecute en un sistema operativo posterior. <br/> Establezca el atributo Id en **{35138b9a-5d96-4fbd-8e2d-a2440225f93a}** para ejecutar la aplicación Windows funcionalidad 7.<br/> Las aplicaciones que admiten Windows vista, Windows 7 y Windows 8 no requieren manifiestos independientes. En este caso, agregue los GUID para todos los Windows operativos.<br/> Para obtener información sobre el **comportamiento del** atributo Id en Windows, consulte la guía Windows 8 y Windows Server 2012 [Compatibility .](https://www.microsoft.com/download/details.aspx?id=27416)<br/> Los siguientes GUID se corresponden con los sistemas operativos indicados:<br/> **{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}** -> Windows 10, Windows Server 2016 y Windows Server 2019<br/> **{1f676c76-80e1-4239-95bb-83d0f6d0da78}** -> Windows 8.1 y Windows Server 2012 R2<br/> **{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}** -> Windows 8 y Windows Server 2012<br/> **{35138b9a-5d96-4fbd-8e2d-a2440225f93a}** -> Windows 7 y Windows Server 2008 R2<br/> **{e2011457-1546-43c5-a5fe-008deee3d3f0}** -> Windows Vista y Windows Server 2008<br/> Para probar esto en Windows 7 o Windows 8.x, ejecute Monitor de recursos (resmon), vaya a la pestaña CPU, haga clic con el botón derecho en las etiquetas de columna, "Seleccionar columna..." y compruebe "Contexto del sistema operativo". En Windows 8.x, también puede encontrar esta columna disponible en el Administrador de tareas (taskmgr). El contenido de la columna muestra el valor más alto encontrado o "Windows Vista" como valor predeterminado. <br/> |
 
 <span id="maxVersionTested"></span><span id="maxversiontested"></span><span id="MAXVERSIONTESTED"></span>
 
 ### <a name="maxversiontested"></a>maxversiontested
 
-El **elemento maxversiontested** especifica las versiones de Windows con las que se ha probado la aplicación a partir de la versión mínima del sistema operativo que admite la aplicación hasta la versión máxima. El conjunto completo de versiones se puede encontrar [aquí.](https://developer.microsoft.com/windows/downloads/sdk-archive/) Esto está pensado para que lo usen las aplicaciones de escritorio que usan islas [XAML](/windows/apps/desktop/modernize/xaml-islands) y que no se implementan en un paquete MSIX. Este elemento se admite en Windows 10, versión 1903 y versiones posteriores.
+El **elemento maxversiontested** especifica las versiones de Windows con las que se probó la aplicación a partir de la versión mínima del sistema operativo que admite la aplicación hasta la versión máxima. El conjunto completo de versiones se puede encontrar [aquí.](https://developer.microsoft.com/windows/downloads/sdk-archive/) Esto está pensado para que lo usen las aplicaciones de escritorio que usan islas [XAML](/windows/apps/desktop/modernize/xaml-islands) y que no están implementadas en un paquete MSIX. Este elemento se admite en Windows 10, versión 1903 y versiones posteriores.
 
 El **elemento maxversiontested** tiene el atributo siguiente. No tiene subelementos.
 
@@ -164,7 +164,7 @@ Contiene al menos un **dependentAssembly**. No tiene atributos. Opcional.
 
 ### <a name="dependentassembly"></a>dependentAssembly
 
-El primer subelemento de **dependentAssembly** debe ser un **elemento assemblyIdentity** que describa un ensamblado en paralelo requerido por la aplicación. Cada **dependentAssembly debe** estar dentro de exactamente una **dependencia**. No tiene atributos.
+El primer subelemento de **dependentAssembly** debe ser un **elemento assemblyIdentity** que describa un ensamblado en paralelo requerido por la aplicación. Cada **dependentAssembly** debe estar dentro de exactamente una **dependencia**. No tiene atributos.
 
 <span id="file"></span><span id="FILE"></span>
 
@@ -186,11 +186,16 @@ El **elemento** file tiene los atributos que se muestran en la tabla siguiente.
 
 ### <a name="activecodepage"></a>activeCodePage
 
-Forzar que un proceso use UTF-8 como página de códigos del proceso.
+En Windows 10, este elemento fuerza a un proceso a usar UTF-8 como página de códigos del proceso. Para obtener más información, [vea Usar la página de códigos UTF-8](/windows/uwp/design/globalizing/use-utf8-code-page). En Windows 10, el único valor válido para **activeCodePage** es **UTF-8.**
 
-**activeCodePage se** agregó en la versión 1903 de Windows (actualización de mayo de 2019). Puede declarar esta propiedad y establecer como destino o ejecutar en compilaciones anteriores de Windows, pero debe controlar la detección y conversión de páginas de códigos heredadas como de costumbre. Consulte [Uso de la página de códigos UTF-8 para](/windows/uwp/design/globalizing/use-utf8-code-page) obtener más información.
+A partir Windows 11, este elemento también permite la selección de la página de códigos heredada que no es UTF-8 o páginas de códigos para una configuración regional específica para la compatibilidad de aplicaciones heredadas. Se recomienda encarecidamente que las aplicaciones modernas usen Unicode. En Windows 11, **activeCodePage** también puede establecerse en el valor **Heredado** o en un nombre de configuración regional como **en-US** o **ja-JP.**
 
-Este elemento no tiene atributos. **UTF-8 solo** es un valor válido para **el elemento activeCodePage.**
+- En las máquinas configuradas para una página de códigos activa del sistema UTF-8, **Legacy** revertirá el proceso a las páginas de códigos de configuración regional del sistema. Si la configuración regional del sistema no tiene páginas de códigos definidas, Windows-1252/437. La **configuración de la** página de códigos heredada solo se admite en los manifiestos de Fusion y solo a partir Windows 11.
+- Cuando se proporciona un nombre de configuración regional como **en-US,** la página de códigos del proceso se establecerá correctamente para esa página de códigos de configuración regional. Por ejemplo, Windows-1252 y 437 para en-US, o 932 para ja-JP.
+
+Este elemento se agregó por primera vez Windows 10 versión 1903 (actualización de mayo de 2019). Puede declarar esta propiedad y establecer como destino o ejecutar en compilaciones anteriores Windows, pero debe controlar la detección y conversión de páginas de códigos heredadas como de costumbre. Este elemento no tiene atributos. 
+
+En el ejemplo siguiente se muestra cómo usar este elemento para forzar que el proceso actual use UTF-8 como página de códigos del proceso.
 
 ```XML
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3">
@@ -277,7 +282,7 @@ Especifica si el proceso actual es compatible con puntos por pulgada (ppp).
 
 La versión mínima del sistema operativo que admite el **elemento dpiAwareness** Windows 10, versión 1607. Para las versiones que admiten **el elemento dpiAwareness,** **pppAwareness** invalida el **elemento dpiAware.** Puede incluir ambos elementos en un manifiesto si desea especificar un comportamiento diferente para Windows 10, versión 1607 que para una versión anterior del sistema operativo.
 
-El **elemento dpiAwareness** puede contener un solo elemento o una lista de elementos separados por comas. En el último caso, se usa el primer elemento (situado más a la izquierda) de la lista reconocido por el sistema operativo. De esta manera, puede especificar distintos comportamientos admitidos en futuras versiones del sistema operativo Windows.
+El **elemento dpiAwareness** puede contener un solo elemento o una lista de elementos separados por comas. En el último caso, se usa el primer elemento (situado más a la izquierda) de la lista reconocido por el sistema operativo. De esta manera, puede especificar distintos comportamientos admitidos en futuras versiones Windows sistema operativo.
 
 En la tabla siguiente se describe el comportamiento que se produce en función de la presencia del elemento **dpiAwareness** y el texto que contiene en su elemento reconocido situado más a la izquierda. El texto del elemento no distingue mayúsculas de minúsculas.
 
@@ -310,11 +315,11 @@ Para obtener más información sobre la configuración de reconocimiento de ppp 
 
 ### <a name="gdiscaling"></a>gdiScaling
 
-Especifica si el escalado de GDI está habilitado. La versión mínima del sistema operativo que admite el **elemento gdiScaling** Windows 10 versión 1703.
+Especifica si el escalado de GDI está habilitado. La versión mínima del sistema operativo que admite el **elemento gdiScaling** es Windows 10 versión 1703.
 
 El marco GDI (interfaz de dispositivo gráfico) puede aplicar el escalado de PPP a primitivos y texto por monitor sin actualizaciones en la propia aplicación. Esto puede ser útil para las aplicaciones GDI que ya no se actualizan activamente.
 
-Este elemento no puede escalar gráficos no vectoriales (como mapas de bits, iconos o barras de herramientas). Además, los gráficos y el texto que aparecen dentro de los mapas de bits creados dinámicamente por las aplicaciones tampoco se pueden escalar mediante este elemento.
+Este elemento no puede escalar gráficos no vectoriales (como mapas de bits, iconos o barras de herramientas). Además, este elemento tampoco puede escalar gráficos y texto que aparecen dentro de mapas de bits construidos dinámicamente por aplicaciones.
 
 **TRUE** indica que este elemento está habilitado. No tiene atributos.
 
@@ -341,7 +346,7 @@ Especifica si está habilitado el desplazamiento de alta resolución. **TRUE** i
 
 ### <a name="longpathaware"></a>longPathAware
 
-Habilita rutas de acceso largas **que superan MAX_PATH** longitud. Este elemento se admite en Windows 10, versión 1607 y posteriores. Para obtener más información, consulte [este artículo](../fileio/maximum-file-path-limitation.md).
+Habilita rutas de acceso largas **que superan MAX_PATH** longitud. Este elemento se admite en Windows 10, versión 1607 y posteriores. Para obtener más información, consulta [este artículo](../fileio/maximum-file-path-limitation.md).
 
 ```XML
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3">
@@ -359,7 +364,7 @@ Habilita rutas de acceso largas **que superan MAX_PATH** longitud. Este elemento
 
 ### <a name="printerdriverisolation"></a>printerDriverIsolation
 
-Especifica si el aislamiento del controlador de impresora está habilitado. **TRUE** indica que está habilitado. No tiene atributos. El aislamiento del controlador de impresora mejora la confiabilidad del servicio de impresión de Windows al permitir que los controladores de impresora se ejecuten en procesos independientes del proceso en el que se ejecuta el administrador de trabajos de impresión. Compatibilidad con el aislamiento del controlador de impresora iniciado en Windows 7 y Windows Server 2008 R2. Una aplicación puede declarar el aislamiento del controlador de impresora en su manifiesto de aplicación para aislarse del controlador de impresora y mejorar su confiabilidad. Es decir, la aplicación no se bloqueará si el controlador de impresora tiene un error.
+Especifica si el aislamiento del controlador de impresora está habilitado. **TRUE** indica que está habilitado. No tiene atributos. El aislamiento del controlador de impresora mejora la confiabilidad del servicio de impresión Windows al permitir que los controladores de impresora se ejecuten en procesos independientes del proceso en el que se ejecuta el administrador de trabajos de impresión. La compatibilidad con el aislamiento del controlador de impresora Windows 7 y Windows Server 2008 R2. Una aplicación puede declarar el aislamiento del controlador de impresora en su manifiesto de aplicación para aislarse del controlador de impresora y mejorar su confiabilidad. Es decir, la aplicación no se bloqueará si el controlador de impresora tiene un error.
 
 
 ```XML
@@ -378,20 +383,20 @@ Especifica si el aislamiento del controlador de impresora está habilitado. **TR
 
 ### <a name="ultrahighresolutionscrollingaware"></a>ultraHighResolutionScrollingAware
 
-Especifica si está habilitado el desplazamiento de resolución ultra alta. **TRUE** indica que está habilitado. No tiene atributos.
+Especifica si está habilitado el desplazamiento con resolución ultra alta. **TRUE** indica que está habilitado. No tiene atributos.
 
 <span id="msix"></span><span id="MSIX"></span>
 
 ### <a name="msix"></a>msix
 
-Especifica la información de identidad de un [paquete MSIX disperso](/windows/apps/desktop/modernize/grant-identity-to-nonpackaged-apps) para la aplicación actual. Este elemento se admite en Windows 10, versión 2004 y versiones posteriores.
+Especifica la información de identidad de un [paquete MSIX](/windows/apps/desktop/modernize/grant-identity-to-nonpackaged-apps) disperso para la aplicación actual. Este elemento se admite en Windows 10, versión 2004 y versiones posteriores.
 
 El **elemento msix** debe estar en el espacio de nombres `urn:schemas-microsoft-com:msix.v1` . Tiene los atributos que se muestran en la tabla siguiente.
 
 | Atributo   | Descripción                                                                                             |
 |-------------|---------------------------------------------------------------------------------------------------------|
-| **publisher**    | Describe la información del publicador. Este valor debe coincidir con el **atributo Publisher** del [elemento Identity](/uwp/schemas/appxpackage/uapmanifestschema/element-identity) del manifiesto de paquete disperso. |
-| **packageName** | Describe el contenido del paquete. Este valor debe coincidir con **el atributo Name** del elemento [Identity](/uwp/schemas/appxpackage/uapmanifestschema/element-identity) del manifiesto de paquete disperso.    |
+| **publisher**    | Describe la información del publicador. Este valor debe coincidir con **el atributo Publisher** en el elemento [Identity](/uwp/schemas/appxpackage/uapmanifestschema/element-identity) del manifiesto del paquete disperso. |
+| **packageName** | Describe el contenido del paquete. Este valor debe coincidir con **el atributo Name** del elemento [Identity](/uwp/schemas/appxpackage/uapmanifestschema/element-identity) del manifiesto del paquete disperso.    |
 | **applicationId**    | Identificador único de la aplicación. Este valor debe coincidir con el **atributo Id** del [elemento Application](/uwp/schemas/appxpackage/uapmanifestschema/element-application) del manifiesto del paquete disperso.  |
 
 ```xml
@@ -408,9 +413,9 @@ El **elemento msix** debe estar en el espacio de nombres `urn:schemas-microsoft-
 
 ### <a name="heaptype"></a>heapType
 
-Invalida la implementación predeterminada del montón para que las API de montón de [Win32](../Memory/heap-functions.md) las usen.
+Invalida la implementación predeterminada del montón para que las API de montón [de Win32](../Memory/heap-functions.md) las usen.
 
-* El valor **SegmentHeap** indica que se usará el montón de segmentos. El montón de segmentos es una implementación moderna del montón que generalmente reducirá el uso general de memoria. Este elemento se admite en Windows 10, versión 2004 (compilación 19041) y versiones posteriores.
+* El valor **SegmentHeap** indica que se usará el montón de segmentos. El montón de segmentos es una implementación moderna del montón que generalmente reducirá el uso general de memoria. Este elemento se admite en Windows 10 versión 2004 (compilación 19041) y versiones posteriores.
 * Se omiten todos los demás valores.
 
 Este elemento no tiene atributos.

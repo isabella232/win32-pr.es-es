@@ -24,7 +24,7 @@ ms.locfileid: "119863515"
 ---
 # <a name="detecting-the-player"></a>Detección del reproductor
 
-Al crear una página web para su tienda en línea, puede decidir que quiere que los usuarios puedan ver la página en un explorador web o en Reproductor de Windows Media. Puede usar un script ASP para determinar si la página web está hospedada en el reproductor.
+Al crear una página web para la tienda en línea, puede decidir que quiere que los usuarios puedan ver la página en un explorador web o en Reproductor de Windows Media. Puede usar un script ASP para determinar si la página web está hospedada en el reproductor.
 
 El código de ejemplo siguiente recupera el parámetro version de la cadena de consulta url para determinar si la página está hospedada en Reproductor de Windows Media:
 

@@ -20,9 +20,9 @@ En los temas siguientes se describen soluciones a las tareas comunes que se encu
 | Tema                                                      | Descripción                                            |
 |------------------------------------------------------------|--------------------------------------------------------|
 | [Registro de un nombre del mismo nivel](registering-a-peer-name.md)     | Cómo registrar un nombre del mismo nivel mediante el NSP de Winsock 2.   |
-| [Anular el registro de un nombre del mismo nivel](unregistering-a-peer-name.md) | Cómo anular el registro de un nombre del mismo nivel mediante el NSP de Winsock 2. |
+| [Anulación del registro de un nombre del mismo nivel](unregistering-a-peer-name.md) | Cómo anular el registro de un nombre del mismo nivel mediante el NSP de Winsock 2. |
 | [Resolver un nombre del mismo nivel](resolving-a-peer-name.md)         | Cómo resolver un nombre del mismo nivel mediante el NSP de Winsock 2.    |
-| [Enumeración de nubes](enumerating-clouds.md)               | Cómo enumerar nubes mediante el NSP de Winsock 2.       |
+| [Enumeración de nubes](enumerating-clouds.md)               | Enumeración de nubes mediante el NSP de Winsock 2.       |
 
 
 
