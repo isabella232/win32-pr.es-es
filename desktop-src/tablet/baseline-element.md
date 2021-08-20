@@ -1,19 +1,19 @@
 ---
-description: Proporciona información (x, y) para los puntos inicial y final de la línea base de un párrafo en el documento Journal. El espacio de coordenadas utilizado para estos valores es HIMETRIC.
+description: Proporciona información (x, y) para los puntos inicial y final de la línea base de un párrafo en el documento journal. El espacio de coordenadas utilizado para estos valores es HIMETRIC.
 ms.assetid: ff6a97ad-0e48-4128-8f94-24802b6ddc05
 title: Elemento Baseline
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bc64f332608b4bd0281ae2a7f29db96101e9d2e
-ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
+ms.openlocfilehash: 0d97e5bd5aecf6833ef4e0bc5b3298442c911838ed714740448ae82305dd00eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "114436570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118046199"
 ---
 # <a name="baseline-element"></a>Elemento Baseline
 
-Proporciona información (x, y) para los puntos inicial y final de la línea base de un párrafo en el documento Journal. El espacio de coordenadas utilizado para estos valores es **HIMETRIC.**
+Proporciona información (x, y) para los puntos inicial y final de la línea base de un párrafo en el documento journal. El espacio de coordenadas utilizado para estos valores es **HIMETRIC.**
 
 ## <a name="definition"></a>Definición
 
@@ -47,7 +47,7 @@ Ninguno.
 
 
 
-|                  | Value                                                         |
+|                  | Valor                                                         |
 |------------------|---------------------------------------------------------------|
 | **Tipo de elemento** | [**BaselineType**](baselinetype-complex-type.md) complexType |
 | **Espacio de nombres**    | urn:schemas-microsoft-com:tabletpc:richink                    |

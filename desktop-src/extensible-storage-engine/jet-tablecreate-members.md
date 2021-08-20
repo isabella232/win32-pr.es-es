@@ -1,27 +1,27 @@
 ---
-description: 'Más información acerca de: JET_TABLECREATE miembros'
-title: Miembros de JET_TABLECREATE
+description: 'Más información sobre: JET_TABLECREATE miembros'
+title: JET_TABLECREATE miembros
 TOCTitle: JET_TABLECREATE members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.JET_TABLECREATE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tablecreate_members(v=EXCHG.10)
 ms:contentKeyID: 55103926
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 7f08d8fe464aec1ccf1eff51598ff8ef506d8707
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: acc39967deb7fd4f636aa203f82381ee2e742d873038d46559f10d8d0a287865
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104558673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118073526"
 ---
-# <a name="jet_tablecreate-members"></a>Miembros de JET_TABLECREATE
+# <a name="jet_tablecreate-members"></a>JET_TABLECREATE miembros
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
 Contiene la información necesaria para crear una tabla en una base de datos ESE. Contiene la información necesaria para crear una tabla en una base de datos ESE.
 
-El tipo de [JET_TABLECREATE](./jet-tablecreate-class.md) expone los siguientes miembros.
+El [JET_TABLECREATE](./jet-tablecreate-class.md) expone los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -59,7 +59,7 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn351077(v=exchg.10).md">cbSeparateLV</a></td>
-<td>Obtiene o establece el tamaño heurístico para separar una LV intrínseca del registro principal.</td>
+<td>Obtiene o establece el tamaño heurístico para separar un LV intrínseco del registro principal.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -69,17 +69,17 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn351080(v=exchg.10).md">cColumns</a></td>
-<td>Obtiene o establece el número de columnas que se van a crear.</td>
+<td>Obtiene o establece el número de columnas que se crearán.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="dn351079(v=exchg.10).md">Creado</a></td>
-<td>Obtiene o establece el recuento de objetos creados (columnas + tabla + índices + devoluciones de llamada).</td>
+<td><a href="dn351079(v=exchg.10).md">cCreated</a></td>
+<td>Obtiene o establece el recuento de objetos creados (columnas+tabla+índices+devoluciones de llamada).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn351081(v=exchg.10).md">cIndexes</a></td>
-<td>Obtiene o establece el número de índices que se van a crear.</td>
+<td>Obtiene o establece el número de índices que se crearán.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -89,12 +89,12 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn351087(v=exchg.10).md">pLVSpacehints</a></td>
-<td>Obtiene o establece las sugerencias de asignación, mantenimiento y uso de espacio para el árbol LV separado, de tipo <a href="dn351095(v=exchg.10).md">JET_SPACEHINTS</a>.</td>
+<td>Obtiene o establece sugerencias de asignación, mantenimiento y uso de espacio para el árbol lv <a href="dn351095(v=exchg.10).md">separado,</a>de tipo JET_SPACEHINTS .</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn351083(v=exchg.10).md">pSeqSpacehints</a></td>
-<td>Obtiene o establece las sugerencias de asignación, mantenimiento y uso del espacio para el índice secuencial predeterminado.</td>
+<td>Obtiene o establece sugerencias de asignación, mantenimiento y uso de espacio para el índice secuencial predeterminado.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -104,12 +104,12 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn351089(v=exchg.10).md">rgindexcreate</a></td>
-<td>Obtiene o establece una matriz de índices que se van a crear, de tipo <a href="dn335112(v=exchg.10).md">JET_INDEXCREATE</a>.</td>
+<td>Obtiene o establece una matriz de índices que se va a crear, de <a href="dn335112(v=exchg.10).md">tipo JET_INDEXCREATE</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn351090(v=exchg.10).md">szCallback</a></td>
-<td>Obtiene o establece una función de devolución de llamada que se utilizará para la tabla. Tiene el formato &quot; Module! nombrefunción &quot; y asume código no administrado. Vea <strong>JetRegisterCallback (JET_SESID, JET_TABLEID, JET_cbtyp, JET_CALLBACK, IntPtr, JET_HANDLE)</strong> para obtener una alternativa.</td>
+<td>Obtiene o establece una función de devolución de llamada que se va a usar para la tabla. Esto tiene el formato &quot; module!functionName &quot; y supone código no administrado. Consulte <strong>JetRegisterCallback(JET_SESID, JET_TABLEID, JET_cbtyp, JET_CALLBACK, IntPtr, JET_HANDLE)</strong> para obtener una alternativa.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -123,7 +123,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="dn351099(v=exchg.10).md">TABLEID</a></td>
+<td><a href="dn351099(v=exchg.10).md">tableid</a></td>
 <td>Obtiene o establece el tabledid devuelto.</td>
 </tr>
 <tr class="odd">
@@ -134,7 +134,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn351102(v=exchg.10).md">ulPages</a></td>
-<td>Obtiene o establece las páginas iniciales que se van a asignar a la tabla.</td>
+<td>Obtiene o establece las páginas iniciales que se asignarán a la tabla.</td>
 </tr>
 </tbody>
 </table>
@@ -156,12 +156,12 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn351122(v=exchg.10).md">ContentEquals</a></td>
-<td>Devuelve un valor que indica si esta instancia es igual a otra instancia de.</td>
+<td>Devuelve un valor que indica si esta instancia es igual a otra instancia.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn351123(v=exchg.10).md">DeepClone</a></td>
-<td>Devuelve una copia en profundidad del objeto.</td>
+<td>Devuelve una copia en profundidad del objeto .</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -170,7 +170,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -180,7 +180,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -191,7 +191,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn351076(v=exchg.10).md">ToString</a></td>
-<td>Generar una representación de cadena de la instancia. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>).</td>
+<td>Genere una representación de cadena de la instancia. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -203,6 +203,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[JET_TABLECREATE (clase)](./jet-tablecreate-class.md)
+[JET_TABLECREATE clase](./jet-tablecreate-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: Representa una asociación entre un elemento administrado y sus capacidades.
+description: Representa una asociación entre un elemento administrado y sus funcionalidades.
 ms.assetid: 0e080042-4a56-40b7-acc5-cf69eb2a0604
-title: CIM_ElementCapabilities (clase)
+title: CIM_ElementCapabilities clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7c705d0bb4743d4919ca840f51b3324510558078
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f5b5aad32feac6ef1daba5f9139764d5964467dbfbfb2119c0ec01b6bfe4257b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812319"
 ---
-# <a name="cim_elementcapabilities-class"></a>\_Clase ElementCapabilities de CIM
+# <a name="cim_elementcapabilities-class"></a>Cim \_ ElementCapabilities (clase)
 
-Representa una asociación entre un elemento administrado y sus capacidades.
+Representa una asociación entre un elemento administrado y sus funcionalidades.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,48 +41,48 @@ class CIM_ElementCapabilities
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ ElementCapabilities** tiene estos tipos de miembros:
+La **clase \_ ElementCapabilities de CIM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ ElementCapabilities** tiene estas propiedades.
+La **clase \_ ElementCapabilities de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
 **Capabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ capacidades de CIM**
+Tipo de datos: **Funcionalidades de CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **Clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Las capacidades asociadas al elemento administrado.
+Funcionalidades asociadas al elemento administrado.
 
 </dd> <dt>
 
 **Características**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Un conjunto de información descriptiva sobre las capacidades.
+Un conjunto de información descriptiva sobre las funcionalidades.
 
 <dt>
 
 <span id="Default"></span><span id="default"></span><span id="DEFAULT"></span>
 
-**Predeterminado** (2)
+**Valor** predeterminado (2)
 
 
 </dt> <dd></dd> <dt>
@@ -103,7 +103,7 @@ Un conjunto de información descriptiva sobre las capacidades.
 
 <span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -119,7 +119,7 @@ Tipo de datos: **CIM \_ ManagedElement**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**mín**](/windows/desktop/WmiSdk/standard-qualifiers) . (1)
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 Elemento administrado.
@@ -130,12 +130,12 @@ Elemento administrado.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

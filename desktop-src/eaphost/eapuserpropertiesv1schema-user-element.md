@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b564b6f91244a6839bc256dcdb2f79c630a4b065
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: d0f21b22320029bf1d10a209eae6a3b2192512a541c1e681b71e112d488c87ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103793923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086409"
 ---
 # <a name="user-element"></a>Elemento User
 
-El elemento **User** no se usa cuando se usan métodos heredados a través de las API de EAPHost.
+El **elemento User** no se usa cuando se usan métodos heredados a través de las API de EAPHost.
 
 ``` syntax
 <xs:element name="User">
@@ -44,7 +44,7 @@ El elemento **User** no se usa cuando se usan métodos heredados a través de la
 
 | Elemento                                                  | Tipo | Descripción                                                                     |
 |----------------------------------------------------------|------|---------------------------------------------------------------------------------|
-| [**Participante**](baseeapuserpropertiesv1schema-eap-element.md) |      | Captura la información de credenciales específica del método y el tipo de método.<br/> |
+| [**Eap**](baseeapuserpropertiesv1schema-eap-element.md) |      | Captura el tipo de método y la información de credenciales específica del método.<br/> |
 
 
 
@@ -52,10 +52,10 @@ El elemento **User** no se usa cuando se usan métodos heredados a través de la
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

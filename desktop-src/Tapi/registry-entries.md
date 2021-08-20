@@ -1,48 +1,48 @@
 ---
 description: Los terminales conectables se clasifican en superclases de terminal.
 ms.assetid: 0ab2896e-3634-47f7-b1f4-e7d1ffcb3592
-title: Entradas del registro (API de telefonía)
+title: Entradas del Registro (API de telefonía)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 035126f614e526f3b1557f5323d52b3bf6b2b12c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: afd6e4e4d91b65e3ef886fd4d2d44b571f4ac4696697aef8b8d8b2715e273e18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105689552"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117761172"
 ---
-# <a name="registry-entries-telephony-api"></a>Entradas del registro (API de telefonía)
+# <a name="registry-entries-telephony-api"></a>Entradas del Registro (API de telefonía)
 
-Los terminales conectables se clasifican en superclases de terminal. Cada superclase de terminal tiene una entrada en el registro con la siguiente clave:
+Los terminales conectables se clasifican en superclases de terminal. Cada superclase de Terminal tiene una entrada en el Registro bajo la siguiente clave:
 
-**HKEY \_ SOFTWARE de \_ equipo local** \\  \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Telephony** \\ **TerminalManager**
+**HKEY \_ LOCAL \_ MACHINE** \\ **SOFTWARE** \\ **Microsoft** \\ **Windows** \\ **TerminalManager** de \\ **telefonía CurrentVersion** \\ 
 
-Debajo de la clave de la superclase de terminal hay entradas para cada terminal acoplable en la superclase de terminal.
+Debajo de la clave De terminal superclase hay entradas para cada terminal conectable dentro de la superclase terminal.
 
-La entrada de cada superclase de terminal se identifica mediante un CLSID de la superclase de terminal. Se trata de un identificador único para una clase de terminal. La clase terminal tiene un atributo opcional: Name, que es un nombre descriptivo para la clase terminal. Cada terminal acoplable se identifica mediante una clase terminal CLSID; es decir, un GUID. Los atributos del terminal acoplable se almacenan en valores de clave de terminal conectables. Los atributos de un terminal acoplable son los siguientes.
+La entrada de cada superclase de terminal se identifica mediante un CLSID de superclase de terminal. Se trata de un identificador único para una clase de terminal. La clase de terminal tiene un atributo opcional: name, que es un nombre descriptivo para la clase de terminal. Cada terminal conectable se identifica mediante una clase de terminal CLSID; es decir, un GUID. Los atributos del terminal conectable se almacenan en valores de clave de terminal conectables. Los atributos de un terminal conectable son los siguientes.
 
 
 
-| Clase terminal | Nombre de clave | Identificador público                                                                 |
+| Clase de terminal | Nombre de clave | Identificador público                                                                 |
 |----------------|----------|-----------------------------------------------------------------------------------|
-| Nombre           | Registro \_ SZ  | Nombre descriptivo del terminal                                                            |
-| Compañía        | Registro \_ SZ  | Nombre de la compañía                                                                      |
-| Versión        | Registro \_ SZ  | Información de la versión                                                               |
-| CLSID          | Registro \_ SZ  | Terminal CLSID (se usa en el método [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) de com) |
+| Nombre           | REG \_ SZ  | Nombre descriptivo del terminal                                                            |
+| Compañía        | REG \_ SZ  | Nombre de la compañía                                                                      |
+| Versión        | REG \_ SZ  | Información de la versión                                                               |
+| CLSID          | REG \_ SZ  | CLSID de terminal (se usa en el [**método COM CoCreateInstance)**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) |
 | Direcciones     | DWORD    | Dirección del terminal                                                                |
-| MediaTypes     | DWORD    | Tipos de medios de terminal compatibles                                                    |
+| MediaTypes     | DWORD    | Tipos de medios de terminal admitidos                                                    |
 
 
 
  
 
-En el caso de una clase terminal, los atributos son los siguientes.
+Para una clase de terminal, los atributos son los siguientes.
 
 
 
 | CLSID | Nombre de clave | Identificador público            |
 |-------|----------|------------------------------|
-| Nombre  | Registro \_ SZ  | Nombre descriptivo de la clase de terminal |
+| Nombre  | REG \_ SZ  | Nombre descriptivo de la clase terminal |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Propiedad IVMVirtualMachine HardDiskConnections (VPCCOMInterfaces. h)
-description: Recupera una colección enumerable de conexiones del disco duro.
+title: Propiedad IVMVirtualMachine HardDiskConnections (VPCCOMInterfaces.h)
+description: Recupera una colección enumerable de conexiones de disco duro.
 ms.assetid: 167eb8af-bbc1-49a8-83fd-8d946b50530d
 keywords:
-- Propiedad HardDiskConnections Virtual PC
-- Propiedad HardDiskConnections Virtual PC, interfaz IVMVirtualMachine
-- Interfaz IVMVirtualMachine Virtual PC, propiedad HardDiskConnections
+- HardDiskConnections, propiedad Virtual PC
+- Propiedad HardDiskConnections Pc virtual, interfaz IVMVirtualMachine
+- Interfaz IVMVirtualMachine Pc virtual, propiedad HardDiskConnections
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b4a409337dc6fb437a98fe002f6e0d5d4da44b3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 554484f1534807824b2b362f7c99ff4cabcda3be507299eb5a7ac3e5ef2ec0fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118123225"
 ---
-# <a name="ivmvirtualmachineharddiskconnections-property"></a>IVMVirtualMachine:: HardDiskConnections (propiedad)
+# <a name="ivmvirtualmachineharddiskconnections-property"></a>IVMVirtualMachine::HardDiskConnections, propiedad
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Recupera una colección enumerable de conexiones del disco duro.
+Recupera una colección enumerable de conexiones de disco duro.
 
 Esta propiedad es de solo lectura.
 
@@ -45,7 +45,7 @@ HRESULT get_HardDiskConnections(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Objeto [**IVMHardDiskConnectionCollection**](ivmharddiskconnectioncollection.md) .
+Objeto [**IVMHardDiskConnectionCollection.**](ivmharddiskconnectioncollection.md)
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -53,10 +53,10 @@ Objeto [**IVMHardDiskConnectionCollection**](ivmharddiskconnectioncollection.md)
 
 | Nombre o valor                                                                                                                                                    | Significado                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>     |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **null**.<br/>        |
-| <dl> <dt>Máquina virtual \_ 0xA0040207 de \_ máquina virtual \_ desconocida</dt> <dt></dt> </dl> | La configuración es desconocida.<br/>     |
-| <dl> <dt>DISP \_ . E \_ excepción</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/> |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>     |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **NULL.**<br/>        |
+| <dl> <dt>Máquina virtual \_ E \_ VM \_ UNKNOWN</dt> <dt>0xA0040207</dt> </dl> | La configuración es desconocida.<br/>     |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/> |
 
 
 
@@ -66,12 +66,12 @@ Objeto [**IVMHardDiskConnectionCollection**](ivmharddiskconnectioncollection.md)
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMVirtualMachine se define como f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMVirtualMachine se define como \_ f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
 
 
 

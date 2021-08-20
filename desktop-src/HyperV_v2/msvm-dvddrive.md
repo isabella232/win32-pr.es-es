@@ -81,18 +81,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: e4b3c9006babb2c7e18b6aed6e85cbee47299429
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aaea74f4ebf7a44605429110fcb5c3a6ab115a6963388dcb1d41536990ceb98a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117994627"
 ---
-# <a name="msvm_dvddrive-class"></a>MSVM \_ DVDDrive (clase)
+# <a name="msvm_dvddrive-class"></a>Clase DVDDrive de Msvm \_
 
-Representa una unidad de DVD dentro de una máquina virtual. Esta unidad de DVD puede ser un dispositivo de paso a través (si se ha conectado un disco duro físico a la máquina virtual) o sintético y rellenado con medios de archivo ISO. Dado que las unidades de DVD virtuales y físicas se pueden agregar y quitar de la máquina virtual, hay dos grupos de recursos asociados a esta clase, uno para las unidades de DVD de paso a través y otro para las unidades de DVD virtuales. Las unidades de DVD solo se pueden agregar o quitar si la máquina virtual está sin conexión.
+Representa una unidad de DVD dentro de una máquina virtual. Esta unidad de DVD puede ser un dispositivo de paso a través (si se ha conectado un disco duro físico a la máquina virtual) o sintético y rellenado con medios de archivo ISO. Dado que las unidades de DVD virtuales y físicas se pueden agregar y quitar de la máquina virtual, hay dos grupos de recursos asociados a esta clase, uno para las unidades de DVD de paso a través y el otro para las unidades de DVD virtuales. Las unidades de DVD solo se pueden agregar o quitar si la máquina virtual está sin conexión.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -167,25 +167,25 @@ class Msvm_DVDDrive : CIM_DVDDrive
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ DVDDrive** tiene estos tipos de miembros:
+La **clase \_ DVDDrive de Msvm** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **MSVM \_ DVDDrive** tiene estos métodos.
+La **clase \_ DVDDrive de Msvm** tiene estos métodos.
 
 
 
 | Método                                                         | Descripción                              |
 |:---------------------------------------------------------------|:-----------------------------------------|
 | **EnableDevice**                                               | No se admite este método.<br/> |
-| [**LockMedia**](msvm-dvddrive-lockmedia.md)                   | Bloquea o libera los medios.<br/>  |
+| [**LockMedia**](msvm-dvddrive-lockmedia.md)                   | Bloquea o libera el medio.<br/>  |
 | **OnlineDevice**                                               | No se admite este método.<br/> |
 | **QuiesceDevice**                                              | No se admite este método.<br/> |
 | [**RequestStateChange**](msvm-dvddrive-requeststatechange.md) | Solicita un cambio de estado.<br/>      |
-| [**Reset**](msvm-dvddrive-reset.md)                           | Restablece el dispositivo virtual.<br/>    |
+| [**Restablecer**](msvm-dvddrive-reset.md)                           | Restablece el dispositivo virtual.<br/>    |
 | **RestoreProperties**                                          | No se admite este método.<br/> |
 | **SaveProperties**                                             | No se admite este método.<br/> |
 | **SetPowerState**                                              | No se admite este método.<br/> |
@@ -196,69 +196,69 @@ La clase **MSVM \_ DVDDrive** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ DVDDrive** tiene estas propiedades.
+La **clase \_ DVDDrive de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
 **AdditionalAvailability**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cualquier disponibilidad adicional y estado del dispositivo. Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)y está establecida en 6 (no aplicable).
+Cualquier disponibilidad adicional y estado del dispositivo. Esta propiedad se hereda de [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)y se establece en 6 (no aplicable).
 
 </dd> <dt>
 
 **Disponibilidad**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La disponibilidad y el estado principales del dispositivo. Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)y está establecida en 6 (no aplicable).
+Disponibilidad principal y estado del dispositivo. Esta propiedad se hereda de [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)y se establece en 6 (no aplicable).
 
 </dd> <dt>
 
 **AvailableRequestedStates**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica los valores posibles para el parámetro *RequestedState* del método [**RequestStateChange**](/previous-versions/windows/desktop/iscsitarg/requeststatechange-cim-enabledlogicalelement) usado para iniciar un cambio de estado. Los valores enumerados serán un subconjunto de los valores contenidos en la propiedad **RequestedStatesSupported** de la instancia asociada de **CIM \_ EnabledLogicalElementCapabilities**, donde los valores seleccionados son una función del estado actual del objeto [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)) . Esta propiedad puede ser distinta de **null** si una implementación de puede anunciar el conjunto de valores posibles como una función del estado actual. Esta propiedad será **null** si una implementación de no puede determinar el conjunto de valores posibles como una función del estado actual.
+Indica los valores posibles para el *parámetro RequestedState* del [**método RequestStateChange**](/previous-versions/windows/desktop/iscsitarg/requeststatechange-cim-enabledlogicalelement) usado para iniciar un cambio de estado. Los valores enumerados serán un subconjunto de los valores contenidos en la propiedad **RequestedStatesSupported** de la instancia asociada de **CIM \_ EnabledLogicalElementCapabilities,** donde los valores seleccionados son una función del estado actual del objeto [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85)) Esta propiedad puede ser no **NULL** si una implementación puede anunciar el conjunto de valores posibles como una función del estado actual. Esta propiedad será **Null si** una implementación no puede determinar el conjunto de valores posibles como una función del estado actual.
 
-Esta propiedad se hereda de [**\_ EnabledLogicalElement CIM**](/previous-versions//cc136818(v=vs.85)).
+Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
 
 </dd> <dt>
 
 **Capabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32** array
+Tipo de datos: **matriz uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Las capacidades del dispositivo de acceso a medios. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)y se establece en los valores siguientes.
+Funcionalidades del dispositivo de acceso multimedia. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)y se establece en los valores siguientes.
 
 
 
 | Value                                                                             | Significado                                                                                         |
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | <dl> <dt>{3, 7}</dt> </dl> |                                                                                                 |
-| <dl> <dt>3</dt> </dl>      | La entrada correspondiente en **CapabilityDescriptions** es "Random Access".<br/>            |
-| <dl> <dt>7</dt> </dl>      | La entrada correspondiente en **CapabilityDescriptions** es "Supported medios extraíbles".<br/> |
+| <dl> <dt>3</dt> </dl>      | La entrada correspondiente de **CapabilityDescriptions** es "Acceso aleatorio".<br/>            |
+| <dl> <dt>7</dt> </dl>      | La entrada correspondiente de **CapabilityDescriptions** es "Supports Removable Media" (Admite medios extraíbles).<br/> |
 
 
 
@@ -269,13 +269,13 @@ Las capacidades del dispositivo de acceso a medios. Esta propiedad se hereda de 
 **CapabilityDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de cadenas de formato libre que proporciona explicaciones detalladas para las características del dispositivo de acceso indicadas en la matriz de propiedades **Capabilities** . Cada entrada de esta matriz está relacionada con la entrada de la matriz de propiedades **Capabilities** , que se encuentra en el mismo índice. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+Matriz de cadenas de forma libre que proporciona explicaciones detalladas de las características del dispositivo de acceso indicadas en la matriz **de propiedades Capabilities.** Cada entrada de esta matriz está relacionada con la entrada de la matriz de propiedades **Capabilities,** ubicada en el mismo índice. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
@@ -288,20 +288,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **CommunicationStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica la capacidad de la instrumentación de comunicarse con el elemento administrado subyacente. Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Indica la capacidad de la instrumentación para comunicarse con el elemento administrado subyacente. Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -314,13 +314,13 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena que indica el algoritmo o la herramienta que se usa para comprimir el archivo lógico. Si el esquema de compresión es desconocido o no se ha descrito, use "Unknown". Si el archivo lógico está comprimido, pero el esquema de compresión es desconocido o no se ha descrito, use "comprimido". Si el archivo lógico no está comprimido, use "no comprimido". Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+Cadena que indica el algoritmo o la herramienta que se usa para comprimir el archivo lógico. Si el esquema de compresión es desconocido o no se describe, use "Unknown". Si el archivo lógico está comprimido, pero el esquema de compresión es desconocido o no se describe, use "Compressed". Si el archivo lógico no está comprimido, use "No comprimido". Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 "No comprimido"
 
-Unknown
+"Desconocido"
 
-Comprimido
+"Compressed"
 
 "No comprimido"
 
@@ -329,26 +329,26 @@ Comprimido
 **CreationClassName**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre de la clase o subclase utilizada en la creación de una instancia de. Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+Nombre de la clase o subclase utilizada en la creación de una instancia de . Esta propiedad se hereda de [**\_ CIM LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
 **DefaultBlockSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tamaño de bloque predeterminado, en bytes, para el dispositivo. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+Tamaño de bloque predeterminado, en bytes, para el dispositivo. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
@@ -361,24 +361,24 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **DetailedStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Complementa la propiedad **PrimaryStatus** con detalles de estado adicionales. Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Complementa la propiedad **PrimaryStatus con** detalles de estado adicionales. Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
-**ID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -387,7 +387,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)y está establecida en "Microsoft:*GUID* del \\ *dispositivo-datos específicos*".
+Esta propiedad se hereda de [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)y se establece en "Microsoft:*GUID* \\ *device-specific-data".*
 
 </dd> <dt>
 
@@ -400,33 +400,33 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **EnabledDefault**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Configuración predeterminada o de inicio de un administrador para el estado habilitado de un elemento. Esta propiedad se hereda de [**\_ EnabledLogicalElement CIM**](/previous-versions//cc136818(v=vs.85)).
+Configuración predeterminada o de inicio de un administrador para el estado habilitado de un elemento. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
 **EnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estados habilitado y deshabilitado de un elemento. También puede indicar las transiciones entre estos Estados solicitados. Esta propiedad se hereda de [**\_ EnabledLogicalElement CIM**](/previous-versions//cc136818(v=vs.85)).
+Estados habilitados y deshabilitados de un elemento. También puede indicar las transiciones entre estos estados solicitados. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
@@ -439,7 +439,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el error comunicado en **LastErrorCode** se ha borrado. Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), pero no se usa.
+Indica si el error notificado en **LastErrorCode** ahora está desactivado. Esta propiedad se hereda de [**\_ LOGICALDevice de CIM,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
 
 </dd> <dt>
 
@@ -452,7 +452,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una cadena que proporciona más información sobre el error registrado en **LastErrorCode** e información acerca de las acciones correctivas que se pueden realizar. Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), pero no se usa.
+Cadena que proporciona más información sobre el error registrado en **LastErrorCode** e información sobre las acciones correctivas que se pueden realizar. Esta propiedad se hereda de [**\_ LOGICALDevice de CIM,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
 
 </dd> <dt>
 
@@ -465,20 +465,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena que describe los tipos de detección y corrección de errores admitidos por este dispositivo. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+Cadena que describe los tipos de detección y corrección de errores admitidos por este dispositivo. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
-**FormatsSupported**
+**Formatos admitidos**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Los formatos de CD y DVD que son compatibles con este dispositivo. Esta propiedad se hereda de [**\_ DVDDrive CIM**](/previous-versions//cc136812(v=vs.85)).
+Los formatos de CD y DVD compatibles con este dispositivo. Esta propiedad se hereda de [**CIM \_ DVDDrive.**](/previous-versions//cc136812(v=vs.85))
 
 Esta matriz contiene los siguientes valores para ISO.
 
@@ -493,14 +493,14 @@ Esta matriz contiene los siguientes valores para ISO.
 <span id="DVD"></span><span id="dvd"></span>**DVD** (22)
 </dt> </dl>
 
-Esta matriz contiene los siguientes valores para el paso físico.
+Esta matriz contiene los siguientes valores para el paso a través físico.
 
 <dl> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Desconocido** (0)
 </dt> <dt>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Otros** (1)
 </dt> <dt>
 
 <span id="CD-ROM"></span><span id="cd-rom"></span>**CD-ROM** (16)
@@ -512,13 +512,13 @@ Esta matriz contiene los siguientes valores para el paso físico.
 <span id="CD-I"></span><span id="cd-i"></span>**CD-I** (18)
 </dt> <dt>
 
-<span id="CD_Recordable"></span><span id="cd_recordable"></span><span id="CD_RECORDABLE"></span>**CD grabable** (19)
+<span id="CD_Recordable"></span><span id="cd_recordable"></span><span id="CD_RECORDABLE"></span>**Grabable en CD** (19)
 </dt> <dt>
 
 <span id="DVD"></span><span id="dvd"></span>**DVD** (22)
 </dt> <dt>
 
-<span id="DVD-RW_"></span><span id="dvd-rw_"></span>**DVD-RW +** (23)
+<span id="DVD-RW_"></span><span id="dvd-rw_"></span>**DVD-RW+** (23)
 </dt> <dt>
 
 <span id="DVD-RAM"></span><span id="dvd-ram"></span>**DVD-RAM** (24)
@@ -527,19 +527,19 @@ Esta matriz contiene los siguientes valores para el paso físico.
 <span id="DVD-ROM"></span><span id="dvd-rom"></span>**DVD-ROM** (25)
 </dt> <dt>
 
-<span id="DVD-Video"></span><span id="dvd-video"></span><span id="DVD-VIDEO"></span>**DVD-vídeo** (26)
+<span id="DVD-Video"></span><span id="dvd-video"></span><span id="DVD-VIDEO"></span>**DVD-Video** (26)
 </dt> <dt>
 
-<span id="Divx"></span><span id="divx"></span><span id="DIVX"></span>**DivX** (27)
+<span id="Divx"></span><span id="divx"></span><span id="DIVX"></span>**Divx** (27)
 </dt> <dt>
 
 <span id="CD-RW"></span><span id="cd-rw"></span>**CD-RW** (33)
 </dt> <dt>
 
-<span id="CD-DA"></span><span id="cd-da"></span>**CD-da** (34)
+<span id="CD-DA"></span><span id="cd-da"></span>**CD-DA** (34)
 </dt> <dt>
 
-<span id="CD_"></span><span id="cd_"></span>**CD +** (35)
+<span id="CD_"></span><span id="cd_"></span>**CD+** (35)
 </dt> <dt>
 
 <span id="DVD_Recordable"></span><span id="dvd_recordable"></span><span id="DVD_RECORDABLE"></span>**DVD grabable** (36)
@@ -548,7 +548,7 @@ Esta matriz contiene los siguientes valores para el paso físico.
 <span id="DVD-RW"></span><span id="dvd-rw"></span>**DVD-RW** (37)
 </dt> <dt>
 
-<span id="DVD-Audio"></span><span id="dvd-audio"></span><span id="DVD-AUDIO"></span>**DVD-audio** (38)
+<span id="DVD-Audio"></span><span id="dvd-audio"></span><span id="DVD-AUDIO"></span>**DVD-Audio** (38)
 </dt> <dt>
 
 <span id="DVD-5"></span><span id="dvd-5"></span>**DVD-5** (39)
@@ -568,39 +568,39 @@ Esta matriz contiene los siguientes valores para el paso físico.
 **HealthState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado actual del elemento. Este atributo expresa el estado de este elemento, pero no necesariamente el de sus subcomponentes. Los valores posibles son de 0 a 30, donde 5 significa que el elemento es completamente correcto y 30 significa que el elemento no es totalmente funcional. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Estado actual del elemento. Este atributo expresa el estado de este elemento, pero no necesariamente el de sus subcomponentes. Los valores posibles son de 0 a 30, donde 5 significa que el elemento es completamente correcto y 30 significa que el elemento es completamente no funcional. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **IdentifyingDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de cadenas de forma libre que proporcionan explicaciones y detalles detrás de las entradas de la matriz de propiedades **OtherIdentifyingInfo** . Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)y está establecida en **null**.
+Matriz de cadenas de forma libre que proporcionan explicaciones y detalles detrás de las entradas de la matriz de **propiedades OtherIdentifyingInfo.** Esta propiedad se hereda de [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)y se establece en **Null.**
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha y hora en que se creó la configuración de la máquina virtual. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fecha y hora en que se creó la configuración de la máquina virtual. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -613,114 +613,114 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **LastCleaned**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha y hora en que se limpió por última vez el dispositivo. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+Fecha y hora en que se ha limpiado por última vez el dispositivo. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
 **LastErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Último código de error indicado por el dispositivo lógico. Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), pero no se usa.
+Último código de error notificado por el dispositivo lógico. Esta propiedad se hereda de [**\_ LOGICALDevice de CIM,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
 
 </dd> <dt>
 
 **LoadTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tiempo, en milisegundos, desde ' Load ' hasta la capacidad de leer o escribir un medio. Por ejemplo, en el caso de las unidades de disco, es el intervalo entre un disco que no gira hasta el disco que informa de que está listo para lectura y escritura (es decir, el disco gira a velocidades nominales). En el caso de las unidades de cinta, es el momento desde que se inserta un medio para informar de que está listo para una aplicación. Normalmente, se encuentra en el área de BOT de la cinta. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+El tiempo, en milisegundos, de "carga" a poder leer o escribir un medio. Por ejemplo, para las unidades de disco, este es el intervalo entre un disco que no gira al disco que informa de que está listo para lectura y escritura (es decir, el disco gira a velocidades nominales). En el caso de las unidades de cinta, este es el tiempo desde que se inserta un medio hasta que se informa de que está listo para una aplicación. Normalmente, esto se encuentra en el área bot de la cinta. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
 **MaxAccessTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tiempo, en milisegundos, que se va a pasar de la primera ubicación del medio a la ubicación más lejana con respecto a la hora. En el caso de una unidad de disco, representa una búsqueda completa + un retraso de rotación completo. En el caso de las unidades de cinta, representa una búsqueda desde el principio de la cinta hasta el punto más alejado físicamente. (El final de una cinta puede estar en su punto más lejano físicamente, pero esto no es necesariamente cierto). Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+El tiempo, en milisegundos, para pasar de la primera ubicación del medio a la ubicación más remota con respecto al tiempo. En el caso de una unidad de disco, representa la búsqueda completa y el retraso de rotación completa. En el caso de las unidades de cinta, representa una búsqueda desde el principio de la cinta hasta el punto más alejado físicamente. (El final de una cinta puede estar en su punto más alejado físicamente, pero esto no es necesariamente cierto). Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
 **MaxBlockSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tamaño máximo del bloque, en bytes, para los medios a los que tiene acceso el dispositivo. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+Tamaño máximo del bloque, en bytes, para los medios a los que accede el dispositivo. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
 **MaxMediaSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tamaño máximo, en kilobytes, de los medios admitidos por este dispositivo. Los kilobytes se interpretan como el número de bytes multiplicado por 1000 (no por el número de bytes multiplicado por 1024). Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+Tamaño máximo, en kilobytes, de los medios compatibles con este dispositivo. Los kilobytes se interpretan como el número de bytes multiplicado por 1000 (no el número de bytes multiplicado por 1024). Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
 **MaxQuiesceTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Esta propiedad está en desuso. Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), pero no se usa.
+Esta propiedad está en desuso. Esta propiedad se hereda de [**\_ LOGICALDevice de CIM,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
 
 </dd> <dt>
 
 **MaxUnitsBeforeCleaning**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Las unidades máximas que se pueden usar antes de que se limpie el dispositivo. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+Unidades máximas que se pueden usar antes de que se limpie el dispositivo. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
@@ -733,33 +733,33 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-**True** si el medio está bloqueado en el dispositivo y no se puede expulsar; en caso contrario, **false**. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+**True** si el medio está bloqueado en el dispositivo y no se puede expulsar; de lo contrario, **False**. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
 **MinBlockSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tamaño mínimo del bloque, en bytes, para los medios a los que tiene acceso el dispositivo. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+Tamaño mínimo del bloque, en bytes, para los medios a los que accede el dispositivo. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
 **MountCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-En el caso de un dispositivo que admita medios extraíbles, el número de veces que los medios se han montado para la transferencia de datos o para limpiar el dispositivo. En el caso de los dispositivos que tienen acceso a medios no extraíbles, como discos duros, esta propiedad no es aplicable y debe establecerse en 0. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+Para un dispositivo que admite medios extraíbles, el número de veces que se han montado los medios para la transferencia de datos o para limpiar el dispositivo. En el caso de los dispositivos que acceden a medios no extraíbles, como discos duros, esta propiedad no es aplicable y debe establecerse en 0. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
@@ -772,7 +772,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y es igual que la propiedad **ElementName** .
+Etiqueta por la que se conoce el objeto. Esta propiedad se hereda de [**\_ MANAGEDSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)y es igual que la propiedad **ElementName.**
 
 </dd> <dt>
 
@@ -785,46 +785,46 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-**True** si el dispositivo de acceso a medios necesita limpieza; en caso contrario, **false**. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+**True si** el dispositivo de acceso multimedia necesita limpieza; de lo contrario, **False**. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
 **NumberOfMediaSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número máximo de medios individuales que se pueden admitir o insertar. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+Número máximo de varios medios individuales que se pueden usar o insertar. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
 **OperatingStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Proporciona información sobre el estado actual de la condición operativa del elemento y se puede usar para proporcionar más detalles con respecto al valor de la propiedad **EnabledState** . Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Proporciona información de estado actual para la condición operativa del elemento y se puede usar para proporcionar más detalles con respecto al valor de la **propiedad EnabledState.** Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estados actuales del objeto. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Estados actuales del objeto. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -837,33 +837,33 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado habilitado o deshabilitado del elemento cuando la propiedad **EnabledState** está establecida en 1 (otro). Esta propiedad debe establecerse en **null** cuando la propiedad **EnabledState** es cualquier valor distinto de 1. Esta propiedad se hereda de [**\_ EnabledLogicalElement CIM**](/previous-versions//cc136818(v=vs.85)).
+Estado habilitado o deshabilitado del elemento cuando la **propiedad EnabledState** está establecida en 1 (Other). Esta propiedad debe establecerse en **Null cuando** la **propiedad EnabledState** es cualquier valor distinto de 1. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
 
 </dd> <dt>
 
 **OtherIdentifyingInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cualquier dato adicional, más allá de la información del ID. de dispositivo, que se puede usar para identificar un dispositivo lógico. Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)y está establecida en **null**.
+Cualquier dato adicional, más allá de la información de identificador de dispositivo, que se pueda usar para identificar un dispositivo lógico. Esta propiedad se hereda de [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)y se establece en **Null.**
 
 </dd> <dt>
 
 **PowerManagementCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Las capacidades de administración de energía del dispositivo. Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), pero no se usa.
+Funcionalidades de administración de energía del dispositivo. Esta propiedad se hereda de [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
 
 </dd> <dt>
 
@@ -876,59 +876,59 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el dispositivo puede administrarse con energía. Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), pero no se usa.
+Indica si el dispositivo se puede administrar con energía. Esta propiedad se hereda de [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
 
 </dd> <dt>
 
 **PowerOnHours**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El número de horas consecutivas en que se ha encendido este dispositivo desde el último ciclo de energía. Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), pero no se usa.
+Número de horas consecutivas que este dispositivo se ha encendido desde su último ciclo de energía. Esta propiedad se hereda de [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
 
 </dd> <dt>
 
 **PrimaryStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Proporciona información de estado de alto nivel. Esta propiedad debe utilizarse junto con la propiedad **DetailedStatus** para proporcionar información de estado de mantenimiento detallada y de alto nivel para el elemento y sus subcomponentes. Un valor **null** indica que esta propiedad no está implementada. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Proporciona información de estado de alto nivel. Esta propiedad debe usarse junto con la propiedad **DetailedStatus** para proporcionar información de estado de mantenimiento detallada y de alto nivel para el elemento y sus subcomponentes. Un **valor** NULL indica que esta propiedad no está implementada. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **RequestedState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Último estado solicitado o deseado del elemento. La propiedad **EnabledState** representa el estado real del elemento. Esta propiedad se proporciona para comparar los Estados actual y habilitado o deshabilitado en último lugar. Una instancia concreta de [**\_ EnabledLogicalElement de CIM**](/previous-versions//cc136818(v=vs.85)) podría no admitir el método **RequestStateChange** . Si esto ocurre, se usa el valor 12 (no aplicable). Esta propiedad se hereda de **\_ EnabledLogicalElement CIM**.
+Último estado solicitado o deseado para el elemento. El estado real del elemento se representa mediante la **propiedad EnabledState.** Esta propiedad se proporciona para comparar los últimos estados solicitados y los estados habilitados o deshabilitados actuales. Es posible que una instancia [**determinada de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)) no admita el **método RequestStateChange.** Si esto ocurre, se usa el valor 12 (no aplicable). Esta propiedad se hereda de **CIM \_ EnabledLogicalElement**.
 
 </dd> <dt>
 
 **Seguridad**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La seguridad operativa definida para el dispositivo. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+Seguridad operativa definida para el dispositivo. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
@@ -941,33 +941,33 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado actual del objeto. Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement), pero no se usa.
+Estado actual del objeto. Esta propiedad se hereda de [**CIM \_ ManagedSystemElement,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)pero no se usa.
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadenas que describen los distintos valores de la matriz **OperationalStatus** . Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Cadenas que describen los distintos **valores de la matriz OperationalStatus.** Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **StatusInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Estado actual del dispositivo lógico. Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), pero no se usa.
+Estado actual del dispositivo lógico. Esta propiedad se hereda de [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
 
 </dd> <dt>
 
@@ -980,7 +980,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre de la clase de creación del sistema de ámbito. Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+Nombre de clase de creación del sistema de ámbito. Esta propiedad se hereda de [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
 
 </dd> <dt>
 
@@ -993,85 +993,85 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador único de la máquina virtual de ámbito. Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+Identificador único de la máquina virtual de ámbito. Esta propiedad se hereda de [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
 
 </dd> <dt>
 
 **TimeOfLastMount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Para un dispositivo que admita medios extraíbles, la fecha y la hora más recientes en que se montó el medio en el dispositivo. En el caso de los dispositivos que tienen acceso a medios no extraíbles, como discos duros, esta propiedad no tiene ningún significado y no es aplicable. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+Para un dispositivo que admite medios extraíbles, la fecha y hora más recientes en que se montaron los medios en el dispositivo. Para los dispositivos que acceden a medios no móviles, como discos duros, esta propiedad no tiene ningún significado y no es aplicable. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
 **TimeOfLastStateChange**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha u hora en que se cambió por última vez el estado habilitado del elemento. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre está establecida en **null**.
+Fecha u hora en que cambió por última vez el estado habilitado del elemento. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))y siempre se establece en **Null.**
 
 </dd> <dt>
 
 **TotalMountTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-En el caso de un dispositivo que admita medios extraíbles, el tiempo total (en segundos) que los medios se han montado para la transferencia de datos o para limpiar el dispositivo. En el caso de los dispositivos que tienen acceso a medios no extraíbles, como discos duros, esta propiedad no es aplicable y debe establecerse en 0. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+Para un dispositivo que admite medios extraíbles, el tiempo total (en segundos) que se han montado los medios para la transferencia de datos o para limpiar el dispositivo. En el caso de los dispositivos que acceden a medios no móviles, como discos duros, esta propiedad no es aplicable y debe establecerse en 0. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
 **TotalPowerOnHours**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número total de horas que se ha alimentado este dispositivo. Esta propiedad se hereda del [**\_ LogicalDevice de CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), pero no se usa.
+Número total de horas que se ha encendido este dispositivo. Esta propiedad se hereda de [**CIM \_ LogicalDevice,**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)pero no se usa.
 
 </dd> <dt>
 
 **TransitioningToState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica el estado de destino al que la instancia está cambiando. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)), pero no se usa.
+Indica el estado de destino al que la instancia está transfiriendo. Esta propiedad se hereda de [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)), pero no se usa.
 
 </dd> <dt>
 
 **UncompressedDataRate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La velocidad de transferencia de datos sostenida, en KB/s, que el dispositivo puede leer y escribir en un medio. Se trata de una velocidad de datos sin procesar y sostenida. Las tarifas máximas o tarifas suponiendo que no se debería informar de la compresión en esta propiedad. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+Velocidad de transferencia de datos sostenida, en KB/s, desde la que el dispositivo puede leer y escribir en un medio. Se trata de una tasa de datos sostenida y sin procesar. Las tasas máximas o las tasas que suponen la compresión no deben notificase en esta propiedad. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
@@ -1084,50 +1084,50 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Unidades relativas a su uso en **MaxUnitsBeforeCleaning**. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+Unidades relativas a su uso **en MaxUnitsBeforeCleaning.** Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
 **UnitsUsed**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número actual de unidades utilizadas. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+Número actual de unidades usadas. Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> <dt>
 
 **UnloadTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tiempo, en milisegundos, desde que se puede leer o escribir un elemento multimedia en su ' Unload '. Esta propiedad se hereda de [**\_ MediaAccessDevice CIM**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice).
+Tiempo, en milisegundos, desde que se puede leer o escribir un medio en su "descarga". Esta propiedad se hereda de [**CIM \_ MediaAccessDevice.**](/windows/desktop/CIMWin32Prov/cim-mediaaccessdevice)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase **MSVM \_ DVDDrive** puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a la **clase \_ DVDDrive de Msvm** podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -1136,13 +1136,13 @@ El acceso a la clase **MSVM \_ DVDDrive** puede estar restringido por el filtrad
 
 <dl> <dt>
 
-[**\_DVDDRIVE CIM**](cim-dvddrive.md)
+[**CIM \_ DVDDrive**](cim-dvddrive.md)
 </dt> <dt>
 
-[**\_DVDDRIVE CIM**](/previous-versions//cc136812(v=vs.85))
+[**CIM \_ DVDDrive**](/previous-versions//cc136812(v=vs.85))
 </dt> <dt>
 
-[Clases de almacenamiento](storage-classes.md)
+[Storage Clases](storage-classes.md)
 </dt> </dl>
 
  

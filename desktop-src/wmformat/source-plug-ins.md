@@ -3,40 +3,40 @@ title: Complementos de origen
 description: Complementos de origen
 ms.assetid: 9adc2d42-6273-4af0-b57f-2dde5738ed94
 keywords:
-- SDK de Windows Media Format, Complementos de origen
-- Advanced Systems Format (ASF), Complementos de origen
-- ASF (formato de sistemas avanzados), Complementos de origen
-- Complementos de origen
+- Windows SDK de formato multimedia, complementos de origen
+- Formato de sistemas avanzados (ASF), complementos de origen
+- ASF (formato de sistemas avanzados), complementos de origen
+- complementos de origen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4822b9110def4e1b758be40310f503fd56a251fd
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 2f16d0edc82423a43e50591fa07e14623adc23b94234a28985afca8a496822a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105720127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117845809"
 ---
 # <a name="source-plug-ins"></a>Complementos de origen
 
-Un complemento de origen es una opción disponible para los desarrolladores que desean implementar su propio sistema de almacenamiento para archivos de® de Windows Media. Un complemento de origen permite esto a través de la implementación de una interfaz COM denominada **IStream**, que es una interfaz estándar para proporcionar datos.
+Un complemento de origen es una opción disponible para los desarrolladores que desean implementar su propio sistema de almacenamiento para Windows archivos ® multimedia. Un complemento de origen lo habilita mediante la implementación de una interfaz COM denominada **IStream**, que es una interfaz estándar para proporcionar datos.
 
-El complemento de origen debe escribirse como un archivo dll y su presencia se hace conocida en el SDK a través de una entrada del registro. Puede haber cualquier número de complementos de origen implementados de esta manera. El complemento de origen debe exportar la función [**WMCreateStreamForURL**](wmcreatestreamforurl.md) .
+El complemento de origen debe escribirse como un archivo DLL y su presencia se conoce para el SDK a través de una entrada del Registro. Puede haber cualquier número de complementos de origen implementados de esta manera. El complemento de origen debe exportar la [**función WMCreateStreamForURL.**](wmcreatestreamforurl.md)
 
-Para registrar un complemento de origen, se debe agregar la siguiente entrada del registro:
+Para registrar un complemento de origen, se debe agregar la siguiente entrada del Registro:
 
-HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows Media \\ WMSDK \\ sources
+HKEY \_ LOCAL MACHINE Software Microsoft Windows media \_ \\ \\ \\ \\ WMSDK \\ sources
 
-Name = "cualquier nombre único"
+Name = "any unique name"
 
-Valor = nombreruta del archivo dll de complemento de origen
+Valor = pathname del archivo DLL del complemento de origen
 
-Una vez registrado el archivo dll, la aplicación puede usar el método **IWMReader:: Open** (con la dirección URL adecuada como parámetro) para tener acceso a los datos de la secuencia, que se pueden almacenar en archivos o en contenedores de datos definidos por el usuario.
+Una vez registrado el archivo DLL, la aplicación puede usar el método **IWMReader::Open** (con la dirección URL adecuada como parámetro) para acceder a los datos de flujo, que se pueden almacenar en archivos o contenedores de datos definidos por el usuario.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**IWMReader:: Open**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreader-open)
+[**IWMReader::Open**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreader-open)
 </dt> <dt>
 
 [**Referencia de programación**](programming-reference.md)
@@ -45,9 +45,9 @@ Una vez registrado el archivo dll, la aplicación puede usar el método **IWMRea
 [**WMCreateStreamForURL**](wmcreatestreamforurl.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_INSERTBUTTON (commctrl. h)
+title: TB_INSERTBUTTON mensaje (Commctrl.h)
 description: Inserta un botón en una barra de herramientas.
 ms.assetid: 6be27817-5d86-4649-bd63-173845197763
 keywords:
-- TB_INSERTBUTTON controles de mensajes de Windows
+- TB_INSERTBUTTON controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e08eed328a99d4a8927a7e09084bf122f2e4e84
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 909a4e039450e001757cd054cf27a15d24af392d6a55841c2857e2312252145c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829656"
 ---
-# <a name="tb_insertbutton-message"></a>\_Mensaje INSERTBUTTON TB
+# <a name="tb_insertbutton-message"></a>Mensaje \_ INSERTBUTTON de TB
 
 Inserta un botón en una barra de herramientas.
 
@@ -41,23 +41,23 @@ Inserta un botón en una barra de herramientas.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) que contiene información sobre el botón que se va a insertar.
+Puntero a una [**estructura TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) que contiene información sobre el botón que se insertará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TB \_ INSERTBUTTONW** (Unicode) y **TB \_ INSERTBUTTONA** (ANSI)<br/>           |
 
 

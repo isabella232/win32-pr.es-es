@@ -1,17 +1,17 @@
 ---
 description: Especifica el idioma de una secuencia.
 ms.assetid: b64a9554-a560-4212-8964-b68ebbadc046
-title: MF_SD_LANGUAGE atributo (Mfidl. h)
+title: MF_SD_LANGUAGE atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad13ec4d7d17e715bd2583e499c686de26c7b9da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4cf8993256ae312975e37aefad7dad2d5262adff0738f879aa388fda30b87727
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117691730"
 ---
-# <a name="mf_sd_language-attribute"></a>\_Atributo de \_ idioma MF SD
+# <a name="mf_sd_language-attribute"></a>Atributo MF \_ SD \_ LANGUAGE
 
 Especifica el idioma de una secuencia.
 
@@ -19,13 +19,13 @@ Especifica el idioma de una secuencia.
 
 Cadena de caracteres anchos
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El valor de este atributo es una etiqueta de lenguaje compatible con RFC 1766. Este atributo se aplica a los descriptores de flujo.
 
-Un origen multimedia (o cualquier objeto que crea un descriptor de secuencia) puede establecer este atributo si la secuencia tiene un idioma especificado. Las aplicaciones pueden consultar este atributo para obtener el lenguaje. Si no se establece el atributo, la secuencia no tiene un idioma especificado.
+Un origen multimedia (o cualquier objeto que cree un descriptor de secuencia) puede establecer este atributo si la secuencia tiene un idioma especificado. Las aplicaciones pueden consultar este atributo para obtener el lenguaje. Si no se establece el atributo, la secuencia no tiene un idioma especificado.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>                              |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -43,19 +43,19 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring)
+[**ATTRIBUTEAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring)
 </dt> <dt>
 
-[**IMFAttributes:: SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring)
+[**ATTRIBUTEAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring)
 </dt> <dt>
 
 [**IMFStreamDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfstreamdescriptor)
 </dt> <dt>
 
-[Atributos de descriptor de secuencia](stream-descriptor-attributes.md)
+[Atributos de descriptor de flujo](stream-descriptor-attributes.md)
 </dt> </dl>
 
  

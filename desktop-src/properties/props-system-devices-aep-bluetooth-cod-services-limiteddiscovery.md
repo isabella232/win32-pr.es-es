@@ -1,19 +1,19 @@
 ---
-description: Detección limitada de la clase Bluetooth de servicio de dispositivo.
+description: Bluetooth clase de detección limitada del servicio de dispositivo.
 ms.assetid: 6972462b-cbda-4d5a-9d49-b0ec0d84d295
-title: System. Devices. AEP. Bluetooth. COD. Services. LimitedDiscovery
+title: System.Devices.Aep. Bluetooth. Cod.Services.LimitedDiscovery
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5cbfa774881bd7c7ed67479cad5ac28bf5a5b66
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b26d72e06c186d971707dc5d9983ee8f351c5cfcef1d7682f81831c8b28214a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104545323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118054658"
 ---
-# <a name="systemdevicesaepbluetoothcodserviceslimiteddiscovery"></a>System. Devices. AEP. Bluetooth. COD. Services. LimitedDiscovery
+# <a name="systemdevicesaepbluetoothcodserviceslimiteddiscovery"></a>System.Devices.Aep. Bluetooth. Cod.Services.LimitedDiscovery
 
-Detección limitada de la clase Bluetooth de servicio de dispositivo.
+Bluetooth clase de detección limitada del servicio de dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

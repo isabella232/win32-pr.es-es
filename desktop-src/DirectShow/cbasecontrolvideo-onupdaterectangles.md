@@ -1,7 +1,7 @@
 ---
 description: Se llama al método OnUpdateRectangles cuando cambia el rectángulo de origen o de destino.
 ms.assetid: a4979ca3-7882-4e63-bc34-9cc6c5b0675d
-title: Método CBaseControlVideo. OnUpdateRectangles (Ctlutil. h)
+title: Método CBaseControlVideo.OnUpdateRectangles (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8ad47fa14cdeb6d8b69feb31061dfa1193a374ca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b1966ac86e0ffb05d52fc1535ae066a0bb9d091a9b4d2b5c02f568debab85183
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118001293"
 ---
-# <a name="cbasecontrolvideoonupdaterectangles-method"></a>CBaseControlVideo. OnUpdateRectangles, método
+# <a name="cbasecontrolvideoonupdaterectangles-method"></a>Método CBaseControlVideo.OnUpdateRectangles
 
-`OnUpdateRectangles`Se llama al método cuando cambia el rectángulo de origen o de destino.
+Se llama al método cuando cambia el rectángulo de `OnUpdateRectangles` origen o de destino.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve NoError.
+Devuelve NOERROR.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve NoError.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve NoError.
 
 <dl> <dt>
 
-[**Clase CBaseControlVideo**](cbasecontrolvideo.md)
+[**CBaseControlVideo (clase)**](cbasecontrolvideo.md)
 </dt> </dl>
 
  

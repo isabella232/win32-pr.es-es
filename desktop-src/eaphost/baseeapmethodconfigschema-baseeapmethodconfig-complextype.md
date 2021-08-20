@@ -1,6 +1,6 @@
 ---
-title: Tipo complejo de BaseEapMethodConfig
-description: Obtenga información sobre el tipo complejo de BaseEapMethodConfig. Este tipo es un elemento de marcador de posición para la configuración del método.
+title: Tipo complejo BaseEapMethodConfig
+description: Obtenga información sobre el tipo complejo BaseEapMethodConfig. Este tipo es un elemento de marcador de posición para la configuración del método.
 ms.assetid: 9aafd6ad-2342-4882-99d3-2f2e6c3d67b5
 keywords:
 - Tipo complejo BaseEapMethodConfig EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ac7d628b554696fffd254a45b9b1021d68e2a55e
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 8decb1746391c1337440eb475a8a8face3f8b7466b73015db48e3991841a3c43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104421429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086780"
 ---
-# <a name="baseeapmethodconfig-complex-type"></a>Tipo complejo de BaseEapMethodConfig
+# <a name="baseeapmethodconfig-complex-type"></a>Tipo complejo BaseEapMethodConfig
 
-El tipo complejo de **BaseEapMethodConfig** es un elemento de marcador de posición para la configuración del método.
+El **tipo complejo BaseEapMethodConfig** es un elemento de marcador de posición para la configuración del método.
 
 ``` syntax
 <xs:complexType name="BaseEapMethodConfig">
@@ -38,18 +38,18 @@ El tipo complejo de **BaseEapMethodConfig** es un elemento de marcador de posici
 </xs:complexType>
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método EAP realiza la validación del esquema en el contenido del elemento **BaseEapMethodConfig** .
+El método EAP realiza la validación del esquema en el contenido del **elemento BaseEapMethodConfig.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -60,7 +60,7 @@ El método EAP realiza la validación del esquema en el contenido del elemento *
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Esquema baseeapmethodconfig](baseeapmethodconfigschema-schema.md)
+[esquema baseeapmethodconfig](baseeapmethodconfigschema-schema.md)
 </dt> </dl>
 
  

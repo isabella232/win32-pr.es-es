@@ -1,7 +1,7 @@
 ---
-description: La \_ \_ enumeración de uso de claves de CAPICOM define las maneras en las que se puede usar una clave. Introducido en CAPICOM 2,0.
+description: La enumeración CAPICOM \_ KEY USAGE define las formas en que se puede usar una \_ clave. Introducido en CAPICOM 2.0.
 ms.assetid: 7143567b-5882-44a3-ae30-fb8965fb7997
-title: Enumeración CAPICOM_KEY_USAGE (CAPICOM. h)
+title: CAPICOM_KEY_USAGE enumeración (Capicom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: 1d44c7f3ecf35ddeb55dd96e5513261691010990
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb477ee12b33c3d32fd2c48a56831dc2f56244b1e8a564cd2d0482e6e4a5d5bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117772430"
 ---
-# <a name="capicom_key_usage-enumeration"></a>\_Enumeración de uso de clave de CAPICOM \_
+# <a name="capicom_key_usage-enumeration"></a>CAPICOM \_ KEY \_ USAGE (enumeración)
 
-La enumeración de **\_ \_ uso de claves de CAPICOM** define las maneras en las que se puede usar una clave. Introducido en CAPICOM 2,0.
+La **enumeración CAPICOM \_ KEY \_ USAGE** define las formas en que se puede usar una clave. Introducido en CAPICOM 2.0.
 
 ## <a name="members"></a>Miembros
 
@@ -30,16 +30,16 @@ La enumeración de **\_ \_ uso de claves de CAPICOM** define las maneras en las 
 
 | Miembro                                      | Descripción                                                                                                                      | Value      |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|------------|
-| **uso de la \_ \_ clave de firma digital \_ de CAPICOM \_** | La clave se puede utilizar para crear una firma digital.<br/>                                                                    | 0x00000080 |
-| **uso de la clave de CAPICOM \_ sin \_ repudio \_ \_**   | La clave se puede utilizar para el no [*rechazo*](../secgloss/n-gly.md).<br/> | 0x00000040 |
-| **uso de la \_ \_ clave de cifrado de clave de \_ CAPICOM \_**  | La clave se puede usar para cifrar una clave.<br/>                                                                                 | 0x00000020 |
-| **uso de la \_ \_ clave de cifrado de datos de \_ CAPICOM \_** | La clave se puede usar para cifrar los datos.<br/>                                                                                  | 0x00000010 |
-| **uso de la clave del acuerdo de \_ tecla CAPICOM \_ \_ \_**     | La clave se puede usar para el acuerdo de claves.<br/>                                                                                | 0x00000008 |
-| **uso de la \_ \_ clave de firma de certificado \_ \_ \_ de CAPICOM**    | La clave se puede usar para la firma de certificados de clave. Este valor es equivalente al uso de la \_ clave de signo de CRL sin conexión de CAPICOM \_ \_ \_ \_ .<br/> | 0x00000004 |
-| **uso de la \_ clave de signo de CRL sin conexión de CAPICOM \_ \_ \_ \_** | La clave se puede usar para la firma de certificados de clave. Este valor es equivalente al uso de la clave de firma de certificado de CAPICOM \_ \_ \_ \_ \_ .<br/>    | 0x00000002 |
-| **uso de la clave de signo de \_ CRL de CAPICOM \_ \_ \_**          | La clave se puede utilizar para firmar.<br/>                                                                                      | 0x00000002 |
-| **CAPICOM \_ \_ solo cifrado \_ uso de claves \_**     | La clave solo se puede usar para cifrar.<br/>                                                                                  | 0x00000001 |
-| **CAPICOM \_ descifrar \_ solo el \_ uso de claves \_**     | La clave solo se puede usar para descifrar.<br/>                                                                                  | 0x00008000 |
+| **USO DE CLAVE \_ DE FIRMA DIGITAL \_ \_ CAPICOM \_** | La clave se puede usar para crear una firma digital.<br/>                                                                    | 0x00000080 |
+| **USO DE LA \_ CLAVE CAPICOM SIN \_ \_ RECHAZO \_**   | La clave se puede usar para [*la norepudiation.*](../secgloss/n-gly.md)<br/> | 0x00000040 |
+| **USO DE CLAVE DE CIFRADO DE CLAVE CAPICOM \_ \_ \_ \_**  | La clave se puede usar para cifrar una clave.<br/>                                                                                 | 0x00000020 |
+| **USO DE CLAVE \_ DE CIFRADO DE DATOS \_ \_ \_ CAPICOM** | La clave se puede usar para cifrar los datos.<br/>                                                                                  | 0x00000010 |
+| **USO DE CLAVE \_ DEL \_ CONTRATO DE CLAVE \_ CAPICOM \_**     | La clave se puede usar para el contrato de clave.<br/>                                                                                | 0x00000008 |
+| **USO DE CLAVE \_ DE FIRMA DE CERTIFICADO DE \_ \_ \_ CLAVE \_ CAPICOM**    | La clave se puede usar para la firma de certificados de clave. Este valor es equivalente a CAPICOM \_ OFFLINE \_ CRL \_ SIGN KEY \_ \_ USAGE.<br/> | 0x00000004 |
+| **USO DE CLAVE DE FIRMA \_ \_ DE CRL SIN CONEXIÓN \_ \_ DE \_ CAPICOM** | La clave se puede usar para la firma de certificados de clave. Este valor es equivalente a CAPICOM \_ KEY CERT SIGN KEY \_ \_ \_ \_ USAGE.<br/>    | 0x00000002 |
+| **USO DE CLAVE \_ DE FIRMA DE CAPICOM CRL \_ \_ \_**          | La clave se puede usar para firmar.<br/>                                                                                      | 0x00000002 |
+| **USO DE CLAVE \_ CAPICOM ENCIPHER \_ ONLY \_ \_**     | La clave solo se puede usar para cifrar.<br/>                                                                                  | 0x00000001 |
+| **USO DE CLAVE \_ CAPICOM DECIPHER \_ ONLY \_ \_**     | La clave solo se puede usar para descifrar.<br/>                                                                                  | 0x00008000 |
 
 
 
@@ -49,8 +49,8 @@ La enumeración de **\_ \_ uso de claves de CAPICOM** define las maneras en las 
 
 | Requisito | Value |
 |----------------------------|--------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                |
-| Encabezado<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                |
+| Header<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
 
 
 

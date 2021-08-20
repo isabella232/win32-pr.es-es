@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_TABLEID. GetHashCode (método)'
-title: JET_TABLEID. GetHashCode (método)
+description: 'Más información sobre: JET_TABLEID. Método GetHashCode'
+title: JET_TABLEID. Método GetHashCode
 TOCTitle: 'GetHashCode method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_TABLEID.GetHashCode
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tableid.gethashcode(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 78c1a50e994563d4d53566110ff210f0de2aa0e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e6a237c09cbafd72998a876169b339677cc68d1d80cfb5853abd1e3b26ebc8df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117892380"
 ---
-# <a name="jet_tableidgethashcode-method"></a>JET_TABLEID. GetHashCode (método)
+# <a name="jet_tableidgethashcode-method"></a>JET_TABLEID. Método GetHashCode
 
 Devuelve el código hash de esta instancia.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,15 +56,15 @@ public override int GetHashCode()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 Código hash de esta instancia.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_TABLEID](./jet-tableid-structure.md)
+[JET_TABLEID estructura](./jet-tableid-structure.md)
 
-[Miembros de JET_TABLEID](./jet-tableid-members.md)
+[JET_TABLEID miembros](./jet-tableid-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

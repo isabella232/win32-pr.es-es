@@ -50,7 +50,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 Se llama a este método cada vez que la sesión de la máquina virtual está a punto de cerrarse. El programa cliente debe implementar este método de interfaz para recibir la notificación del evento **vmVirtualMachineEvent \_ RequestShutdown** que se origina en [**IVMVirtualMachine**](ivmvirtualmachine.md).
 
-Esta notificación de eventos solo se envía cuando la sesión de máquinas virtuales está a punto de cerrarse. Las rutinas de apagado del sistema operativo, como [**IVMGuestOS::Shutdown,**](ivmguestos-shutdown.md)no despeguen este evento directamente a menos que también intenten realizar una alimentación de software fuera del hardware virtual.
+Esta notificación de eventos solo se envía cuando la sesión de máquinas virtuales está a punto de cerrarse. Las rutinas de apagado del sistema operativo, como [**IVMGuestOS::Shutdown,**](ivmguestos-shutdown.md)no despeda este evento directamente a menos que también intenten realizar una alimentación de software fuera del hardware virtual.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ Esta notificación de eventos solo se envía cuando la sesión de máquinas virt
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

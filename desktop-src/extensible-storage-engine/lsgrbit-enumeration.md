@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: enumeración LsGrbit'
+description: 'Más información sobre: Enumeración LsGrbit'
 title: Enumeración LsGrbit
 TOCTitle: LsGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.LsGrbit
@@ -32,21 +32,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5fc0a60d039d0eb1307558d42a3e7a3c7e99eb86
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4fbe93b2c9c47f4929e442d2b38ae118caba328e1411c203519624807332d7db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118071950"
 ---
 # <a name="lsgrbit-enumeration"></a>Enumeración LsGrbit
 
-Opciones para [JetSetLS (JET_SESID, JET_TABLEID, JET_LS, LsGrbit)](./api.jetsetls-method.md) y [JetGetLS (JET_SESID, JET_TABLEID, JET_LS, LsGrbit)](./api.jetgetls-method.md).
+Opciones para [JetSetLS(JET_SESID, JET_TABLEID, JET_LS, LsGrbit)](./api.jetsetls-method.md) y [JetGetLS(JET_SESID, JET_TABLEID, JET_LS, LsGrbit).](./api.jetgetls-method.md)
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -76,23 +76,23 @@ public enum LsGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Reset</td>
-<td>El identificador de contexto para el objeto elegido debe restablecerse a JET_LSNil.</td>
+<td>El identificador de contexto del objeto elegido debe restablecerse a JET_LSNil.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>Cursor</td>
-<td>Especifica que el identificador de contexto debe estar asociado al cursor especificado.</td>
+<td>Especifica que el identificador de contexto debe asociarse al cursor especificado.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Tabla</td>
-<td>Especifica que el identificador de contexto se debe asociar a la tabla asociada al cursor especificado. No se puede usar esta opción con cursor.</td>
+<td>Especifica que el identificador de contexto debe asociarse a la tabla asociada al cursor especificado. No es posible usar esta opción con cursor.</td>
 </tr>
 </tbody>
 </table>
@@ -102,4 +102,4 @@ public enum LsGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

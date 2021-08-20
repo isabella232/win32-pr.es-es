@@ -1,19 +1,19 @@
 ---
-description: Cómo agregar o quitar asignaciones de Letras de unidad persistentes. Estas asignaciones de Letras de unidad se conservan a través del apagado del sistema.
+description: Cómo agregar o quitar asignaciones de letra de unidad persistentes. Estas asignaciones de letra de unidad persisten durante el apagado del sistema.
 ms.assetid: 17a6df9d-07df-42f7-89c9-72a1d02141f6
-title: Edición de asignaciones de Letras de unidad
+title: Edición de asignaciones de letra de unidad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9beda613251f3e5d1e75932ed506e2de80597ff0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 106845824912c9694340f61050babca1bfc753f2c142dfb83d1537b71116ef31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117997586"
 ---
-# <a name="editing-drive-letter-assignments"></a>Edición de asignaciones de Letras de unidad
+# <a name="editing-drive-letter-assignments"></a>Edición de asignaciones de letra de unidad
 
-En el ejemplo de código de este tema se muestra cómo agregar o quitar asignaciones de Letras de unidad persistentes. Estas asignaciones de Letras de unidad se conservan a través del apagado del sistema. Para obtener más información, consulte [asignar una letra de unidad a un volumen](assigning-a-drive-letter-to-a-volume.md).
+En el ejemplo de código de este tema se muestra cómo agregar o quitar asignaciones de letra de unidad persistentes. Estas asignaciones de letra de unidad persisten durante el apagado del sistema. Para obtener más información, [vea Asignación de una letra de unidad a un volumen.](assigning-a-drive-letter-to-a-volume.md)
 
 En el ejemplo de código se usan las siguientes funciones: [**DefineDosDevice**](/windows/desktop/api/FileAPI/nf-fileapi-definedosdevicew), [**DeleteVolumeMountPoint**](/windows/desktop/api/FileAPI/nf-fileapi-deletevolumemountpointw), [**GetVolumeNameForVolumeMountPoint**](/windows/desktop/api/FileAPI/nf-fileapi-getvolumenameforvolumemountpointw)y [**SetVolumeMountPoint**](/windows/desktop/api/WinBase/nf-winbase-setvolumemountpointa).
 

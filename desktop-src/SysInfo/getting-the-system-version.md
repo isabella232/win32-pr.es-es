@@ -1,21 +1,21 @@
 ---
-description: En el ejemplo siguiente se usan las funciones auxiliares de la API de la versión para determinar la versión del sistema operativo actual, si se trata de una versión de servidor o de cliente y, a continuación, se muestra esta información en la consola.
+description: En el ejemplo siguiente se usan las funciones del asistente de API de versión para determinar la versión del sistema operativo actual, si se trata de una versión de servidor o cliente y, a continuación, muestra esta información en la consola.
 ms.assetid: ae851aef-27d5-4eb7-aeb2-ccdfbf040e5a
 title: Obtener la versión del sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae0fa259378b81f9255846694927ee2b68e6f38f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5eb9cfd0c1a4cfe1ee0789cb609bf22319bdd019bf3310bf439dabf907bfd138
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117958530"
 ---
 # <a name="getting-the-system-version"></a>Obtener la versión del sistema
 
-En el ejemplo siguiente se usan las [funciones auxiliares](version-helper-apis.md) de la API de la versión para determinar la versión del sistema operativo actual, si se trata de una versión de servidor o de cliente y, a continuación, se muestra esta información en la consola. Si el modo de compatibilidad está en vigor, el ejemplo muestra el sistema operativo seleccionado para la [compatibilidad de aplicaciones](/previous-versions/bb757005(v=msdn.10)).
+En el ejemplo siguiente se usan las funciones del asistente de [API](version-helper-apis.md) de versión para determinar la versión del sistema operativo actual, si se trata de una versión de servidor o cliente y, a continuación, muestra esta información en la consola. Si el modo de compatibilidad está en vigor, en el ejemplo se muestra el sistema operativo seleccionado para la [compatibilidad de aplicaciones.](/previous-versions/bb757005(v=msdn.10))
 
-Confiar en la información de versión no es la mejor manera de probar una característica. En su lugar, consulte la documentación de la característica de interés. Para obtener más información sobre técnicas comunes para la detección de características, consulte [versión del sistema operativo](operating-system-version.md).
+Confiar en la información de versión no es la mejor manera de probar una característica. En su lugar, consulte la documentación de la característica de interés. Para obtener más información sobre las técnicas comunes para la detección de características, vea [Versión del sistema operativo](operating-system-version.md).
 
 
 ```C++

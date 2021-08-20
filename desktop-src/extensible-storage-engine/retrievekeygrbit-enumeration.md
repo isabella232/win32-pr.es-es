@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración RetrieveKeyGrbit'
-title: Enumeración RetrieveKeyGrbit
+description: 'Más información sobre: Enumeración RetrieveKeyGrbit'
+title: RetrieveKeyGrbit (enumeración)
 TOCTitle: RetrieveKeyGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.RetrieveKeyGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.retrievekeygrbit(v=EXCHG.10)
@@ -28,21 +28,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ef6a2820e0ca12552cb766536fd2ce703a6d95e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 453eb70ad2e4a7b9437442bb9481be4c59e18aabfa434adc1f1f67db0571510e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277096"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118071687"
 ---
-# <a name="retrievekeygrbit-enumeration"></a>Enumeración RetrieveKeyGrbit
+# <a name="retrievekeygrbit-enumeration"></a>RetrieveKeyGrbit (enumeración)
 
 Opciones de JetRetrieveKey.
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -72,13 +72,13 @@ public enum RetrieveKeyGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>RetrieveCopy</td>
-<td>Recupera la clave construida actualmente.</td>
+<td>Recupere la clave construida actualmente.</td>
 </tr>
 </tbody>
 </table>
@@ -88,4 +88,4 @@ public enum RetrieveKeyGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

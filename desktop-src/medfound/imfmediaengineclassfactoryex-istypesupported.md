@@ -1,7 +1,7 @@
 ---
 description: Obtiene un valor que indica si el sistema de claves especificado admite el tipo de medio especificado.
 ms.assetid: 6f4f50db-e491-46c2-a8b2-1b8e51033b5b
-title: 'IMFMediaEngineClassFactoryEx:: IsTypeSupported (método)'
+title: MÉTODO IMFMediaEngineClassFactoryEx::IsTypeSupported
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 92bf3d64d36c043e9e33b897294ff74a3fda0445
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 588a7fdc02fb59a9dc156f9f141b210d36e4cef131bf353d6c98d9c055392a28
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105697912"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118063004"
 ---
-# <a name="imfmediaengineclassfactoryexistypesupported-method"></a>IMFMediaEngineClassFactoryEx:: IsTypeSupported (método)
+# <a name="imfmediaengineclassfactoryexistypesupported-method"></a>MÉTODO IMFMediaEngineClassFactoryEx::IsTypeSupported
 
 Obtiene un valor que indica si el sistema de claves especificado admite el tipo de medio especificado.
 
@@ -44,37 +44,37 @@ HRESULT IsTypeSupported(
 *type* 
 </dt> <dd>
 
-Tipo MIME para el que se va a comprobar la compatibilidad.
+Tipo MIME para el que se comprobará la compatibilidad.
 
 </dd> <dt>
 
 *keySystem* 
 </dt> <dd>
 
-Sistema de claves para el que se va a comprobar la compatibilidad.
+Sistema clave para el que se comprobará la compatibilidad.
 
 </dd> <dt>
 
 *isSupported* 
 </dt> <dd>
 
-**true** si el tipo es compatible con *keySystem*; en caso contrario, **false.**
+**true** si el tipo es compatible con *keySystem*; de lo contrario, **false.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                      |
-| IDL<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

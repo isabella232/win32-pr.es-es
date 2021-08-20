@@ -1,7 +1,7 @@
 ---
-description: Especifica el tipo de canal de Direct3D autenticado.
+description: Especifica el tipo de canal autenticado de Direct3D.
 ms.assetid: 99a7664e-b0c8-4e66-ad3b-c6ad039ef6eb
-title: Enumeración D3DAUTHENTICATEDCHANNELTYPE (D3d9types. h)
+title: Enumeración D3DAUTHENTICATEDCHANNELTYPE (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 5c0cab8a0a208bfb1a005166740dcc64c319c6e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ee0faf393632b4336330782dcbef7c8ece0675f91d16bbcec5a5192197dbe2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118064557"
 ---
-# <a name="d3dauthenticatedchanneltype-enumeration"></a>Enumeración D3DAUTHENTICATEDCHANNELTYPE
+# <a name="d3dauthenticatedchanneltype-enumeration"></a>D3DAUTHENTICATEDCHANNELTYPE (enumeración)
 
-Especifica el tipo de canal de Direct3D autenticado.
+Especifica el tipo de canal autenticado de Direct3D.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -44,21 +44,21 @@ typedef enum  {
 <span id="D3DAUTHENTICATEDCHANNEL_D3D9"></span><span id="d3dauthenticatedchannel_d3d9"></span>**D3DAUTHENTICATEDCHANNEL \_ D3D9**
 </dt> <dd>
 
-Canal de Direct3D 9. Este canal proporciona comunicación con el tiempo de ejecución de Direct3D.
+Canal Direct3D 9. Este canal proporciona comunicación con el entorno de ejecución de Direct3D.
 
 </dd> <dt>
 
-<span id="D3DAUTHENTICATEDCHANNEL_DRIVER_SOFTWARE"></span><span id="d3dauthenticatedchannel_driver_software"></span>**\_Software de controlador D3DAUTHENTICATEDCHANNEL \_**
+<span id="D3DAUTHENTICATEDCHANNEL_DRIVER_SOFTWARE"></span><span id="d3dauthenticatedchannel_driver_software"></span>**SOFTWARE DEL CONTROLADOR D3DAUTHENTICATEDCHANNEL \_ \_**
 </dt> <dd>
 
 Canal del controlador de software. Este canal proporciona comunicación con un controlador que implementa mecanismos de protección de contenido en el software.
 
 </dd> <dt>
 
-<span id="D3DAUTHENTICATEDCHANNEL_DRIVER_HARDWARE"></span><span id="d3dauthenticatedchannel_driver_hardware"></span>**\_Hardware del controlador D3DAUTHENTICATEDCHANNEL \_**
+<span id="D3DAUTHENTICATEDCHANNEL_DRIVER_HARDWARE"></span><span id="d3dauthenticatedchannel_driver_hardware"></span>**HARDWARE DEL CONTROLADOR D3DAUTHENTICATEDCHANNEL \_ \_**
 </dt> <dd>
 
-Canal del controlador de hardware. Este canal proporciona comunicación con un controlador que implementa mecanismos de protección de contenido en el hardware de la GPU.
+Canal del controlador de hardware. Este canal proporciona comunicación con un controlador que implementa mecanismos de protección de contenido en el hardware de GPU.
 
 </dd> </dl>
 
@@ -68,9 +68,9 @@ Canal del controlador de hardware. Este canal proporciona comunicación con un c
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>D3d9types. h (incluye d3d9. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                 |
+| Header<br/>                   | <dl> <dt>D3d9types.h (incluir D3d9.h)</dt> </dl> |
 
 
 

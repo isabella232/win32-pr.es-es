@@ -1,7 +1,7 @@
 ---
 description: Identifica el identificador único del perfil.
 ms.assetid: 7572ef4f-ce7a-4595-a5ad-ade96e36d7d7
-title: SubscriberID (MBNProfile), elemento
+title: Elemento SubscriberID (MBNProfile)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,18 +11,18 @@ api_name:
 - SubscriberID
 api_type:
 - Schema
-ms.openlocfilehash: ca098383aadd51e1e05d6b02bdd02a563eb0a09c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42290b0a80e85b2fdd1c794aced78571e939010b0e260bf1bdeba15f221cc103
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118065889"
 ---
-# <a name="subscriberid-mbnprofile-element"></a>SubscriberID (MBNProfile), elemento
+# <a name="subscriberid-mbnprofile-element"></a>Elemento SubscriberID (MBNProfile)
 
-El elemento **SubscriberID (MBNProfile)** identifica el identificador único del perfil.
+El **elemento SubscriberID (MBNProfile)** identifica el identificador único del perfil.
 
-En el caso de una red GSM, debe contener la IMSI (identidad del suscriptor móvil internacional) de la tarjeta SIM y los dispositivos CDMA deben contener el número mínimo de identificación móvil del dispositivo.
+En el caso de una red GSM, debe contener el IMSI (Identidad internacional del suscriptor móvil) de la SIM y, en el caso de los dispositivos CDMA, debe contener el valor MIN (número de identificación móvil) del dispositivo.
 
 El elemento es una cadena numérica con una longitud máxima de 15 dígitos.
 
@@ -34,15 +34,15 @@ El elemento es obligatorio.
  />
 ```
 
-El elemento **SubscriberID** se define mediante el elemento [**MBNProfile**](schema-mbnprofile-element.md) .
+El **elemento SubscriberID** se define mediante el [**elemento MBNProfile.**](schema-mbnprofile-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |
 
 

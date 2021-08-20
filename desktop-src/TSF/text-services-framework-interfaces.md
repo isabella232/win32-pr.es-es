@@ -1,26 +1,26 @@
 ---
-title: Interfaces de marco de trabajo de servicios de texto
-description: Interfaces de marco de trabajo de servicios de texto
+title: Text Services Framework Interfaces
+description: Text Services Framework Interfaces
 ms.assetid: c9d51a54-9688-491a-a8e2-78ee193054c2
 keywords:
-- Text Services Framework (TSF), interfaces
-- TSF (marco de trabajo de servicios de texto), interfaces
+- Text Services Framework (TSF),interfaces
+- TSF (Text Services Framework),interfaces
 - servicios de texto, interfaces
 - Aplicaciones habilitadas para TSF, interfaces
 - Referencia de TSF, interfaces
-- referencia de TSF, interfaces
+- referencia de TSF,interfaces
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 997aa0a578bed1c0fa5dca4a42bdf605266d9199
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 885cb399fe45349655948603b819c790bb98e12620281a04b57eed2ed6d6d901
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117951104"
 ---
-# <a name="text-services-framework-interfaces"></a>Interfaces de marco de trabajo de servicios de texto
+# <a name="text-services-framework-interfaces"></a>Text Services Framework Interfaces
 
-El marco de trabajo de servicios de texto incluye las siguientes interfaces.
+El Text Services Framework incluye las siguientes interfaces.
 
 -   [**IAnchor**](/windows/desktop/api/Textstor/nn-textstor-ianchor)
 -   [**IEnumITfCompositionView**](/windows/desktop/api/Msctf/nn-msctf-ienumitfcompositionview)
@@ -151,6 +151,6 @@ El marco de trabajo de servicios de texto incluye las siguientes interfaces.
 -   [**ITfUIElementSink**](/windows/desktop/api/Msctf/nn-msctf-itfuielementsink)
 -   [**IUIManagerEventSink**](/windows/desktop/api/Ctffunc/nn-ctffunc-iuimanagereventsink)
 
- 
+ 
 
- 
+ 

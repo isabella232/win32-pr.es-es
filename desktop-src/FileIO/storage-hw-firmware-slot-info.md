@@ -1,7 +1,7 @@
 ---
-description: Esta estructura contiene información sobre una ranura de un dispositivo.
+description: Esta estructura contiene información sobre una ranura en un dispositivo.
 ms.assetid: 37475351-DE0F-4B80-B26B-1482FBCC16CD
-title: STORAGE_HW_FIRMWARE_SLOT_INFO estructura (Winioctl. h)
+title: STORAGE_HW_FIRMWARE_SLOT_INFO estructura (Winioctl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - winioctl.h.h
-ms.openlocfilehash: afb38e3dc866f31b6ada6797dcb611bce1ac81a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6db9bc5341bf3efec18390d171c205cc57b933afe166af6df48657b668cc85ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117996459"
 ---
-# <a name="storage_hw_firmware_slot_info-structure"></a>\_Estructura de \_ información de ranura de firmware de hardware de \_ almacenamiento \_
+# <a name="storage_hw_firmware_slot_info-structure"></a>Estructura \_ STORAGE HW FIRMWARE SLOT \_ \_ \_ INFO
 
-Esta estructura contiene información sobre una ranura de un dispositivo.
+Esta estructura contiene información sobre una ranura en un dispositivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,7 +48,7 @@ typedef struct _STORAGE_HW_FIRMWARE_SLOT_INFO {
 **Versión**
 </dt> <dd>
 
-Versión de esta estructura. Debe establecerse en sizeof (STORAGE \_ HW \_ firmware \_ slot \_ info).
+Versión de esta estructura. Debe establecerse en sizeof(STORAGE \_ HW \_ FIRMWARE SLOT \_ \_ INFO)
 
 </dd> <dt>
 
@@ -62,7 +62,7 @@ Tamaño de esta estructura.
 **SlotNumber**
 </dt> <dd>
 
-El número de ranura de esta ranura.
+Número de ranura de esta ranura.
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ Reservado para uso futuro.
 **Revisión**
 </dt> <dd>
 
-La revisión del firmware en esta ranura.
+Revisión del firmware en esta ranura.
 
 </dd> </dl>
 
@@ -98,11 +98,11 @@ La revisión del firmware en esta ranura.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                                        |
-| Encabezado<br/>                   | <dl> <dt>Winioctl. h. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                                 |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                        |
+| Header<br/>                   | <dl> <dt>Winioctl.h.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -110,25 +110,25 @@ La revisión del firmware en esta ranura.
 
 <dl> <dt>
 
-[**\_ \_ Activar firmware de almacenamiento de ioctl \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_activate)
+[**ACTIVACIÓN DEL \_ FIRMWARE DE ALMACENAMIENTO \_ DE IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_activate)
 </dt> <dt>
 
-[**\_ \_ Activar firmware de HW de almacenamiento \_**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_activate)
+[**ACTIVACIÓN \_ DEL FIRMWARE DEL HARDWARE DE \_ \_ ALMACENAMIENTO**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_activate)
 </dt> <dt>
 
-[**\_descarga de \_ firmware de almacenamiento de ioctl \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_download)
+[**DESCARGA DE \_ FIRMWARE DE ALMACENAMIENTO \_ DE IOCTL \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_download)
 </dt> <dt>
 
-[**\_descarga de \_ firmware de hardware de almacenamiento \_**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_download)
+[**DESCARGA \_ DE FIRMWARE DEL HARDWARE DE \_ \_ ALMACENAMIENTO**](/windows/desktop/api/winioctl/ns-winioctl-storage_hw_firmware_download)
 </dt> <dt>
 
-[**\_ \_ \_ obtener información de firmware de almacenamiento de ioctl \_**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_get_info)
+[**IOCTL \_ STORAGE \_ FIRMWARE \_ GET \_ INFO**](/windows/desktop/api/WinIoctl/ni-winioctl-ioctl_storage_firmware_get_info)
 </dt> <dt>
 
-[**\_información de \_ firmware de HW de almacenamiento \_**](storage-hw-firmware-info.md)
+[**INFORMACIÓN \_ DE FIRMWARE DEL HARDWARE DE \_ \_ ALMACENAMIENTO**](storage-hw-firmware-info.md)
 </dt> <dt>
 
-[**\_consulta de \_ información de firmware de HW de almacenamiento \_ \_**](storage-hw-firmware-info-query.md)
+[**CONSULTA \_ DE INFORMACIÓN DE FIRMWARE DEL HARDWARE DE \_ \_ \_ ALMACENAMIENTO**](storage-hw-firmware-info-query.md)
 </dt> </dl>
 
  

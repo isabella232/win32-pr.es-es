@@ -3,7 +3,7 @@ title: Elemento SplitButton
 description: Representa un control Split Button estándar.
 ms.assetid: dece1100-ed04-49a3-a16d-3c5d5e7a2225
 keywords:
-- Elemento SplitButton de la cinta de opciones de Windows
+- Barra de opciones del Windows SplitButton
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cf03d85dd0402548d02f107dafb209b68c13bb72
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 53445bc3f57f8a861800f9edcd95d8af2ecfbd54f4055cf8787695dab1f25cb0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117850783"
 ---
 # <a name="splitbutton-element"></a>Elemento SplitButton
 
@@ -79,7 +79,7 @@ Representa un control [Split Button](windowsribbon-controls-splitbutton.md) est�
 
 | Elemento                                                                                   | Descripción                                        |
 |-------------------------------------------------------------------------------------------|----------------------------------------------------|
-| [**Button**](windowsribbon-element-button.md)<br/>                                 | Puede producirse una o varias veces<br/> <br/> |
+| [**Botón**](windowsribbon-element-button.md)<br/>                                 | Puede producirse una o varias veces<br/> <br/> |
 | [**Casilla**](windowsribbon-element-checkbox.md)<br/>                             | Puede producirse una o varias veces<br/> <br/> |
 | [**DropDownButton**](windowsribbon-element-dropdownbutton.md)<br/>                 | Puede producirse una o varias veces<br/> <br/> |
 | [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md)<br/>       | Puede producirse una o varias veces<br/> <br/> |
@@ -117,9 +117,9 @@ Puede producirse una o varias veces para cada [**elemento ControlGroup**](window
 
 [**DropDownGallery**](windowsribbon-element-dropdowngallery.md) y [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md) no son elementos secundarios válidos de [**DropDownButton**](windowsribbon-element-dropdownbutton.md) cuando **DropDownButton** es un descendiente de [**ApplicationMenu.**](windowsribbon-element-applicationmenu.md)
 
-[**SplitButton.MenuGroups debe**](windowsribbon-element-splitbutton-menugroups.md) producirse una vez si lo siguiente no está presente como elementos secundarios de **SplitButton**:
+[**SplitButton.MenuGroups**](windowsribbon-element-splitbutton-menugroups.md) debe producirse una vez si lo siguiente no está presente como elementos secundarios de **SplitButton**:
 
--   [**Button**](windowsribbon-element-button.md)
+-   [**Botón**](windowsribbon-element-button.md)
 -   [**Casilla**](windowsribbon-element-checkbox.md)
 -   [**DropDownButton**](windowsribbon-element-dropdownbutton.md)
 -   [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md)
@@ -216,7 +216,7 @@ En esta sección de código se muestran las declaraciones de control **SplitButt
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

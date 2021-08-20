@@ -1,11 +1,11 @@
 ---
-title: BasicDevice. Description (propiedad)
+title: BasicDevice.Description, propiedad
 description: Obtiene una descripción del dispositivo.
 ms.assetid: 2C1892D1-D990-404C-B8B0-B115B16BA66C
 keywords:
-- Propiedad Description API de streaming de multimedia
-- Propiedad Description API de streaming de multimedia, interfaz BasicDevice
-- Interfaz BasicDevice API de streaming de multimedia, propiedad Description
+- Propiedad Description de Media Streaming API
+- Propiedad De descripción Media Streaming API, Interfaz BasicDevice
+- Interfaz básicaDispositivo Media Streaming API, propiedad Description
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cb652bd6d22a06b2debe1583310c9180f39130c6
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: d4e44ec61a110d73c31fd681a046ebe07ad60840af7e796327a196f48d3e168b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103791086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118057160"
 ---
-# <a name="basicdevicedescription-property"></a>BasicDevice. Description (propiedad)
+# <a name="basicdevicedescription-property"></a>BasicDevice.Description, propiedad
 
 Obtiene una descripción del dispositivo.
 
@@ -33,7 +33,7 @@ Esta propiedad es de solo lectura.
 
 ```C++
 HRESULT get_Description(
-  [out] HSTRING *value
+  [out] HSTRING *value
 );
 ```
 
@@ -41,7 +41,7 @@ HRESULT get_Description(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un puntero a la descripción del dispositivo.
+Puntero a la descripción del dispositivo.
 
 ## <a name="see-also"></a>Vea también
 
@@ -50,6 +50,6 @@ Un puntero a la descripción del dispositivo.
 [**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

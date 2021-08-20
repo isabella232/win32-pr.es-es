@@ -3,39 +3,39 @@ title: Para administrar la latencia del escritor
 description: Para administrar la latencia del escritor
 ms.assetid: 62ec3f25-5cd9-499e-9579-00e00086df7f
 keywords:
-- Advanced Systems Format (ASF), administración de la latencia del escritor
+- Formato de sistemas avanzados (ASF), administración de la latencia del escritor
 - ASF (formato de sistemas avanzados), administración de la latencia del escritor
-- Advanced Systems Format (ASF), latencia del escritor
-- ASF (formato de sistemas avanzados), latencia del sistema de escritura
+- Formato de sistemas avanzados (ASF), latencia del escritor
+- ASF (formato de sistemas avanzados), latencia del escritor
 - latencia del escritor
 - latency
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3260be03344f1bf13252007b10614746ceda3e96
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: c0adb18814cc8153ae81ed9517834d62345f18b61f51de6aacd38e9028699331
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105685676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117845485"
 ---
 # <a name="to-manage-writer-latency"></a>Para administrar la latencia del escritor
 
-El escritor tarda tiempo en procesar ejemplos. La cantidad de tiempo entre pasar una muestra de entrada y la escritura de un ejemplo de salida se denomina latencia del escritor. Una serie de factores contribuye a la latencia del escritor y se puede reducir de varias maneras.
+El escritor tarda tiempo en procesar ejemplos. La cantidad de tiempo entre pasar una muestra de entrada y la escritura de una muestra de salida se denomina latencia del escritor. Varios factores contribuyen a la latencia del escritor y puede reducirla de varias maneras.
 
-El factor más obvio implicado en la latencia del escritor es el tiempo que se tarda en comprimir un ejemplo. En la mayoría de los casos, tendrá poco o ningún control sobre esto. Si el ancho de banda no es una preocupación importante, puede reducir la latencia usando menos compresión. Por supuesto, puede lograr la menor latencia pasando ejemplos que ya están comprimidos.
+El factor más obvio implicado en la latencia del escritor es el tiempo que se tarda en comprimir una muestra. En la mayoría de las circunstancias, tendrá poco o ningún control sobre esto. Si el ancho de banda no es una gran preocupación, puede reducir la latencia con menos compresión. Por supuesto, puede lograr la menor latencia pasando muestras que ya están comprimidas.
 
-El siguiente factor, y otro sobre el que normalmente tiene el control, es el orden en el que se pasan los ejemplos al lector. Puede lograr una mejor latencia si pasa las muestras en orden de tiempo de presentación y garantiza que los ejemplos de entrada estén bien sincronizados entre todos los flujos de entrada. Cuanto mayor sea la discrepancia en el momento de la presentación entre los ejemplos de flujos diferentes, mayor será la latencia. Puede establecer un máximo para la discrepancia entre los ejemplos de entrada mediante una llamada a [**IWMWriterAdvanced:: SetSyncTolerance**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriteradvanced-setsynctolerance).
+El siguiente factor, y uno sobre el que normalmente tiene control, es el orden en el que se pasan las muestras al lector. Puede lograr una mejor latencia pasando muestras en orden de tiempo de presentación y asegurándose de que las muestras de entrada están bien sincronizadas entre todos los flujos de entrada. Cuanto mayor sea la discrepancia en los tiempos de presentación entre los ejemplos de diferentes secuencias, mayor será la latencia. Puede establecer un máximo para la discrepancia entre los ejemplos de entrada llamando a [**IWMWriterAdvanced::SetSyncTolerance**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriteradvanced-setsynctolerance).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Escribir archivos ASF**](writing-asf-files.md)
+[**Escritura de archivos ASF**](writing-asf-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

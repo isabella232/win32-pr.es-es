@@ -1,24 +1,24 @@
 ---
-description: Puede utilizar el registro para definir uno o más verbos extendidos. Los comandos asociados solo se mostrarán cuando el usuario haga clic con el botón derecho en un objeto mientras presiona la tecla Mayús.
+description: Puede usar el Registro para definir uno o varios verbos extendidos. Los comandos asociados solo se mostrarán cuando el usuario haga clic con el botón derecho en un objeto mientras presiona la tecla MAYÚS.
 ms.assetid: C6E51716-1D4F-454F-9AF4-8D0E486CB885
-title: Cómo definir verbos extendidos
+title: Definición de verbos extendidos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb4bd8cca04b40bb0b0b77bab5fd7546fd5bff45
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef73244a03101de02653625912701b81aa9e8e11d975f96dd417eaa137bfba07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117859722"
 ---
-# <a name="how-to-define-extended-verbs"></a>Cómo definir verbos extendidos
+# <a name="how-to-define-extended-verbs"></a>Definición de verbos extendidos
 
-Puede utilizar el registro para definir uno o más verbos extendidos. Los comandos asociados solo se mostrarán cuando el usuario haga clic con el botón derecho en un objeto mientras presiona la tecla Mayús.
+Puede usar el Registro para definir uno o varios verbos extendidos. Los comandos asociados solo se mostrarán cuando el usuario haga clic con el botón derecho en un objeto mientras presiona la tecla MAYÚS.
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 
-Para definir un verbo como extendido, basta con agregar un valor de **reg \_ SZ** "extendido" a la subclave del verbo. El valor no debe tener ningún dato asociado. En la siguiente entrada del registro de ejemplo se muestra el ejemplo de la sección anterior, con "doit" definido como verbo extendido.
+Para definir un verbo como extendido, basta con agregar un valor **REG \_ SZ** "extendido" a la subclave del verbo. El valor no debe tener ningún dato asociado. La siguiente entrada del Registro de ejemplo muestra el ejemplo de la sección anterior, con "doit" definido como verbo extendido.
 
 ```
 HKEY_CLASSES_ROOT

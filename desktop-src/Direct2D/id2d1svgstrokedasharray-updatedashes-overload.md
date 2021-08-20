@@ -1,9 +1,9 @@
 ---
-title: Métodos ID2D1SvgStrokeDashArray UpdateDashes (D2d1svg. h)
+title: Métodos ID2D1SvgStrokeDashArray UpdateDashes (D2d1svg.h)
 description: Actualiza la matriz.
 ms.assetid: b9be98f2-d215-d009-ec9e-732163539053
 keywords:
-- Métodos de UpdateDashes Direct2D
+- Métodos UpdateDashes de Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 57655ea50b56150813b1240112987a8f425079d2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d84845d792db5080d04772edc4ab0f469597987ec8118b0a07aec3e11026a77e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117825308"
 ---
-# <a name="id2d1svgstrokedasharrayupdatedashes-methods"></a>ID2D1SvgStrokeDashArray:: UpdateDashes (métodos)
+# <a name="id2d1svgstrokedasharrayupdatedashes-methods"></a>Métodos ID2D1SvgStrokeDashArray::UpdateDashes
 
 Actualiza la matriz.
 
@@ -29,8 +29,8 @@ Actualiza la matriz.
 
 | Método                                                                                               | Descripción                                                                                                                                                    |
 |:-----------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**UpdateDashes (FLOAT \* , UInt32, UInt32)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgstrokedasharray-updatedashes(constd2d1_svg_length_uint32_uint32))               | Actualiza la matriz. Los guiones existentes no actualizados por este método se conservan. Se cambia el tamaño de la matriz si es necesario para dar cabida a los nuevos guiones.<br/> |
-| [**UpdateDashes ( \_ longitud de SVG \_ de D2D1 \* , UInt32, UInt32)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgstrokedasharray-updatedashes(constfloat_uint32_uint32)) | Actualiza la matriz. Los guiones existentes no actualizados por este método se conservan. Se cambia el tamaño de la matriz si es necesario para dar cabida a los nuevos guiones.<br/> |
+| [**UpdateDashes(FLOAT, \* UINT32, UINT32)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgstrokedasharray-updatedashes(constd2d1_svg_length_uint32_uint32))               | Actualiza la matriz. Se conservan los guiones existentes no actualizados por este método. El tamaño de la matriz se cambia de tamaño si es necesario para dar cabida a los nuevos guiones.<br/> |
+| [**UpdateDashes(D2D1 \_ SVG \_ LENGTH \* , UINT32, UINT32)**](/windows/win32/api/d2d1svg/nf-d2d1svg-id2d1svgstrokedasharray-updatedashes(constfloat_uint32_uint32)) | Actualiza la matriz. Se conservan los guiones existentes no actualizados por este método. El tamaño de la matriz se cambia de tamaño si es necesario para dar cabida a los nuevos guiones.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Actualiza la matriz.
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D2d1svg. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D2d1svg.h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentRecordNoCopyException'
-title: Constructor de EsentRecordNoCopyException
+description: 'Más información sobre: Constructor EsentRecordNoCopyException'
+title: Constructor EsentRecordNoCopyException
 TOCTitle: 'EsentRecordNoCopyException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentRecordNoCopyException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentrecordnocopyexception.esentrecordnocopyexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f5de333565513e636b1938f4ca4344a36b693b68
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1457371f077533c921a3cd8e650befbe0f79e717b58a71889f1ea46bc1ba0bec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118079574"
 ---
-# <a name="esentrecordnocopyexception-constructor"></a>Constructor de EsentRecordNoCopyException
+# <a name="esentrecordnocopyexception-constructor"></a>Constructor EsentRecordNoCopyException
 
 Inicializa una nueva instancia de la clase EsentRecordNoCopyException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentRecordNoCopyException()
 public EsentRecordNoCopyException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentRecordNoCopyException()
 
 [Miembros de EsentRecordNoCopyException](./esentrecordnocopyexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

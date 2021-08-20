@@ -1,7 +1,7 @@
 ---
-description: El método GetBufferFromIPortableDeviceValues serializa una interfaz IPortableDeviceValues enviada a una matriz de bytes asignada. La matriz de bytes devuelta se asigna al llamador y debe liberarla el llamador mediante CoTaskMemFree.
+description: El método GetBufferFromIPortableDeviceValues serializa una interfaz IPortableDeviceValues enviada a una matriz de bytes asignada. La matriz de bytes devuelta se asigna al autor de la llamada y el autor de la llamada debe liberarla mediante CoTaskMemFree.
 ms.assetid: fd856394-9cb3-41cb-875b-1d490ca859df
-title: 'IWpdSerializer:: GetBufferFromIPortableDeviceValues (método) (PortableDeviceTypes. h)'
+title: Método IWpdSerializer::GetBufferFromIPortableDeviceValues (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 44f4e9e7011e6a4766183307e81ef7e783da899f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 10a483331d15c09de8398d11e940453d8f239e2207fdefb82d86fd4bb1460daf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117843018"
 ---
-# <a name="iwpdserializergetbufferfromiportabledevicevalues-method"></a>IWpdSerializer:: GetBufferFromIPortableDeviceValues (método)
+# <a name="iwpdserializergetbufferfromiportabledevicevalues-method"></a>Método IWpdSerializer::GetBufferFromIPortableDeviceValues
 
-El método **GetBufferFromIPortableDeviceValues** serializa una interfaz **IPortableDeviceValues** enviada a una matriz de bytes asignada. La matriz de bytes devuelta se asigna al llamador y debe liberarla el llamador mediante **CoTaskMemFree**.
+El **método GetBufferFromIPortableDeviceValues** serializa una interfaz **IPortableDeviceValues** enviada a una matriz de bytes asignada. La matriz de bytes devuelta se asigna al autor de la llamada y el autor de la llamada debe liberarla **mediante CoTaskMemFree.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,37 +42,37 @@ HRESULT GetBufferFromIPortableDeviceValues(
 
 <dl> <dt>
 
-*pSource* \[ de\]
+*pSource* \[ En\]
 </dt> <dd>
 
-Puntero a una interfaz [**IPortableDeviceValues**](iportabledevicevalues.md) que se va a serializar.
+Puntero a una [**interfaz IPortableDeviceValues**](iportabledevicevalues.md) para serializar.
 
 </dd> <dt>
 
-*ppBuffer* \[ enuncia\]
+*ppBuffer* \[ out\]
 </dt> <dd>
 
-Puntero a un **byte \* *_ que contiene los datos serializados. Dispositivos portátiles de Windows asigna esta memoria; el autor de la llamada debe liberarlo llamando a _* CoTaskMemFree**.
+Puntero a un **byte _ que contiene los datos \* *serializados. Windows Dispositivos portátiles asigna esta memoria; el autor de la llamada debe liberarlo llamando a _* CoTaskMemFree**.
 
 </dd> <dt>
 
-*pdwBufferSize* \[ enuncia\]
+*pdwBufferSize* \[ out\]
 </dt> <dd>
 
-Puntero a un **valor DWORD** que especifica el tamaño del búfer asignado, en bytes.
+Puntero a un **DWORD** que especifica el tamaño del búfer asignado, en bytes.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                                   | Descripción                                                            |
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se ha llevado a cabo de forma correcta.<br/>                                       |
-| <dl> <dt>**\_puntero E**</dt> </dl>     | Un argumento de puntero necesario era **null**.<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se ha llevado a cabo de forma correcta.<br/>                                       |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | Un argumento de puntero necesario era **NULL.**<br/>                   |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No había suficiente memoria disponible para crear el búfer.<br/> |
 
 
@@ -85,8 +85,8 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -94,7 +94,7 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 <dl> <dt>
 
-[**Interfaz IWpdSerializer**](iwpdserializer.md)
+[**IWpdSerializer (interfaz)**](iwpdserializer.md)
 </dt> </dl>
 
  

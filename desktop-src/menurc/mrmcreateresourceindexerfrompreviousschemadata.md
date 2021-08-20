@@ -1,6 +1,6 @@
 ---
-title: Función MrmCreateResourceIndexerFromPreviousSchemaData (MrmResourceIndexer. h)
-description: Crea un indizador de recursos a partir de los datos de esquema en memoria creados con una llamada anterior a MrmDumpPriFileInMemory o MrmDumpPriDataInMemory.
+title: Función MrmCreateResourceIndexerFromPreviousSchemaData (MrmResourceIndexer.h)
+description: Crea un indexador de recursos a partir de datos de esquema en memoria creados con una llamada anterior a MrmDumpPriFileInMemory o MrmDumpPriDataInMemory.
 ms.assetid: D9C90C12-CEFE-4794-9553-8BFBE9E43D99
 keywords:
 - Menús de la función MrmCreateResourceIndexerFromPreviousSchemaData y otros recursos
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 621500f8f35714daad0e259e6a718c25129987dc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dcc0ece1d46a6e9a3ec57fe7b9fb074b4a0a01fd53217c67ed44f49573383588
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491045"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117687311"
 ---
-# <a name="mrmcreateresourceindexerfrompreviousschemadata-function"></a>MrmCreateResourceIndexerFromPreviousSchemaData función)
+# <a name="mrmcreateresourceindexerfrompreviousschemadata-function"></a>Función MrmCreateResourceIndexerFromPreviousSchemaData
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Crea un indizador de recursos a partir de los datos de esquema en memoria creados con una llamada anterior a [**MrmDumpPriFileInMemory**](mrmdumpprifileinmemory.md) o [**MrmDumpPriDataInMemory**](mrmdumppridatainmemory.md). Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea [API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Crea un indexador de recursos a partir de datos de esquema en memoria creados con una llamada anterior a [**MrmDumpPriFileInMemory**](mrmdumpprifileinmemory.md) o [**MrmDumpPriDataInMemory**](mrmdumppridatainmemory.md). Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, consulte API de indexación de recursos de [paquetes (PRI) y sistemas de compilación personalizados.](/windows/uwp/app-resources/pri-apis-custom-build-systems)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,21 +47,21 @@ HRESULT HRESULT MrmCreateResourceIndexerFromPreviousSchemaData(
 
 <dl> <dt>
 
-*projectRoot* \[ de\]
+*projectRoot* \[ En\]
 </dt> <dd>
 
 Tipo: **PCWSTR**
 
-La raíz del proyecto de la aplicación para UWP para la que va a generar archivos PRI. En otras palabras, la ruta de acceso a los archivos de recursos de esa aplicación. Especifique esto para que pueda especificar las rutas de acceso relativas a esa raíz en las posteriores llamadas API al mismo indexador de recursos.
+La raíz del proyecto de la aplicación para UWP para la que va a generar archivos PRI. En otras palabras, la ruta de acceso a los archivos de recursos de esa aplicación. Especifique esto para que pueda especificar rutas de acceso relativas a esa raíz en las llamadas API posteriores al mismo indexador de recursos.
 
 </dd> <dt>
 
-*platformVersion* \[ de\]
+*platformVersion* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **MrmPlatformVersion**](mrmplatformversion.md)**
 
-Versión de la plataforma de destino para el indizador de recursos.
+Versión de la plataforma de destino para el indexador de recursos.
 
 </dd> <dt>
 
@@ -70,57 +70,57 @@ Versión de la plataforma de destino para el indizador de recursos.
 
 Tipo: **PCWSTR**
 
-Una lista de calificadores de recursos predeterminados. Por ejemplo, L "Language-en-US \_ Scale-100 \_ Contrast-Standard"
+Lista de calificadores de recursos predeterminados. Por ejemplo, L"language-en-US \_ scale-100 \_ contrast-standard"
 
 </dd> <dt>
 
-*schemaXmlData* \[ de\]
+*schemaXmlData* \[ En\]
 </dt> <dd>
 
-Tipo: **byte \** _
+Tipo: **\* BYTE**
 
-Un puntero a los datos del esquema creados por una llamada anterior a [_ *MrmDumpPriFileInMemory* *](mrmdumpprifileinmemory.md) o [**MrmDumpPriDataInMemory**](mrmdumppridatainmemory.md). No libere *schemaXmlData* hasta que termine de usar el indizador de recursos creado por esta función.
+Puntero a los datos de esquema creados por una llamada anterior a [**MrmDumpPriFileInMemory**](mrmdumpprifileinmemory.md) [**o MrmDumpPriDataInMemory**](mrmdumppridatainmemory.md). No liberar *schemaXmlData hasta* que haya terminado de usar el indexador de recursos creado por esta función.
 
 </dd> <dt>
 
-*schemaXmlSize* \[ de\]
+*schemaXmlSize* \[ En\]
 </dt> <dd>
 
-Tipo: **ULong**
+Tipo: **ULONG**
 
-Tamaño de los datos a los que apunta *schemaXmlData*.
+Tamaño de los datos a los que apunta *schemaXmlData.*
 
 </dd> <dt>
 
 *indexador* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[**MrmResourceIndexerHandle**](mrmresourceindexerhandle.md) \** _
+Tipo: **[ **MrmResourceIndexerHandle**](mrmresourceindexerhandle.md)\***
 
-Un puntero a un identificador de indizador de recursos.
+Puntero a un identificador de indexador de recursos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Es \_ correcto si la función se realizó correctamente; de lo contrario, es algún otro valor. Use las macros SUCCEEDED () o FAILed () (definidas en Winerror. h) para determinar si la operación se ha realizado correctamente o no.
+S \_ Ok si la función se ha hecho correctamente; de lo contrario, algún otro valor. Use las macros SUCCEEDED() o FAILED() (definidas en winerror.h) para determinar el éxito o el error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No libere *schemaXmlData* hasta que termine de usar el indizador de recursos creado por esta función.
+No liberar *schemaXmlData hasta* que haya terminado de usar el indexador de recursos creado por esta función.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1803 \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server \[\]<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Mrmsupport. lib</dt> </dl>       |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de servidor\]<br/>                                                 |
+| Header<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Mrmsupport.lib</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Mrmsupport.dll</dt> </dl>       |
 
 

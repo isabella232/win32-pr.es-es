@@ -1,9 +1,9 @@
 ---
-title: Control deslizante. cursor
-description: El atributo cursor especifica o recupera un valor que indica qué cursor aparece cuando el mouse está encima del control deslizante.
+title: SLIDER.cursor
+description: El atributo cursor especifica o recupera un valor que indica qué cursor aparece cuando el mouse está sobre el control deslizante.
 ms.assetid: 5b96a20c-b3a6-4e08-95b2-32937bb15cc6
 keywords:
-- Control deslizante. cursor Windows Media Player
+- Slider.cursor Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cbc8f581d7d087545e666565dd03f649112064d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7a9eabb371d5f089bbc1e35ce91bc3dc5c0ec32e24dc55aec3c3a81853730f29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117933675"
 ---
-# <a name="slidercursor"></a>Control deslizante. cursor
+# <a name="slidercursor"></a>SLIDER.cursor
 
-El atributo **cursor** especifica o recupera un valor que indica qué cursor aparece cuando el mouse está encima del control deslizante.
+El **atributo** cursor especifica o recupera un valor que indica qué cursor aparece cuando el mouse está sobre el control deslizante.
 
 ``` syntax
         elementID.cursor
@@ -29,22 +29,22 @@ El atributo **cursor** especifica o recupera un valor que indica qué cursor apa
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura.
+Este atributo es una cadena de lectura **y escritura.**
 
 
 
-| Value            | Descripción                                                                                 |
+| Valor            | Descripción                                                                                 |
 |------------------|---------------------------------------------------------------------------------------------|
 | sistema           | Cursor dependiente de la plataforma (normalmente una flecha).                                               |
-| casilla             | Predeterminada. Casilla.                                                                              |
-| help             | Flecha con signo de interrogación que indica que la ayuda está disponible.                                      |
-| sizeall          | Flecha de cuatro puntas que señala al norte, sur, este y oeste.                                   |
-| sizenesw         | Flecha de doble punta que apunta al noreste y al suroeste.                                      |
-| tamaños de           | Flecha de dos puntas que apunta al norte y al sur.                                              |
-| sizenwse         | Flecha de dos puntas que apunta al noroeste y al sudeste.                                      |
-| sizewe           | Flecha de dos puntas que apunta al oeste y al este.                                                |
-| flecha arriba          | Flecha vertical que señala hacia arriba.                                                             |
-| \*. ani o \* . cur | Cualquier archivo. ani o. cur (debe estar en el mismo directorio que el archivo. WMS o en el archivo. WMZ). |
+| Mano             | Predeterminada. Mano.                                                                              |
+| ayuda             | Flecha con signo de interrogación que indica que la Ayuda está disponible.                                      |
+| sizeall          | Flecha de cuatro puntas que apunta al norte, sur, este y oeste.                                   |
+| sizenesw         | Flecha de doble punta que apunta hacia el noreste y el suroeste.                                      |
+| sizens           | Flecha de doble punta que apunta hacia el norte y el sur.                                              |
+| sizenwse         | Flecha de doble punta que apunta al noroeste y al sudeste.                                      |
+| sizewe           | Flecha de doble punta que apunta hacia el oeste y el este.                                                |
+| arriba          | Flecha vertical que apunta hacia arriba.                                                             |
+| \*.ani o \* .cur | Cualquier archivo .ani o .cur (debe estar en el mismo directorio que el archivo .wms o en el archivo .wmz). |
 
 
 
@@ -54,9 +54,9 @@ Este atributo es una **cadena** de lectura/escritura.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -64,7 +64,7 @@ Este atributo es una **cadena** de lectura/escritura.
 
 <dl> <dt>
 
-[**Elemento SLIDEr**](slider-element.md)
+[**Elemento SLIDER**](slider-element.md)
 </dt> </dl>
 
  

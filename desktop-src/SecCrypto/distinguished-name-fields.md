@@ -1,34 +1,34 @@
 ---
-description: Contiene información que debe identificar de forma única a la persona que realiza la solicitud.
+description: Contiene información que debe identificar de forma única al individuo que realiza la solicitud.
 ms.assetid: f0cc0e1b-370e-4548-97fe-8f6a4005540b
 title: Campos de nombre distintivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28a03495d19608e29aa60f09954c96a10f6c3cde
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10465a481c1efbaa9637979bb5bb82880451fbe43800b968a4c9fefc5fbc4a3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104545470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117767270"
 ---
 # <a name="distinguished-name-fields"></a>Campos de nombre distintivo
 
-Una [*solicitud de certificado*](../secgloss/c-gly.md) contiene información que debe identificar de forma única a la persona que realiza la solicitud.
+Una [*solicitud de certificado*](../secgloss/c-gly.md) contiene información que debe identificar de forma única al individuo que realiza la solicitud.
 
-\#Las solicitudes de certificado de formato PKCS 10 que son aceptadas por los servicios de Certificate Server contienen campos de identificación a los que se hace referencia como campos de nombre distintivo (DN). Estos campos contendrán la información que proporciona el usuario cuando se crea una solicitud de certificado mediante el administrador de claves, el [control de inscripción de certificados](certificate-enrollment-control.md)o algún otro medio.
+Las solicitudes de certificado con formato PKCS 10 aceptadas por Servicios de certificados contienen campos de identificación a los que se hace referencia como campos de nombre \# distintivo (DN). Estos campos contendrán la información que el usuario introduce cuando key manager, el [control](certificate-enrollment-control.md)de inscripción de certificados u otros medios crean una solicitud de certificado.
 
-A continuación se indican algunas instrucciones para completar los campos DN en una solicitud de certificado.
+Estas son algunas directrices para la finalización de campos DN en una solicitud de certificado.
 
 
 
 | Campo               | Descripción                                                                                                                                                                                                                                                                                                                                                      |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nombre común         | Certificados de usuario: debe escribir el nombre completo de la persona. Certificados de equipo: debe especificar la ruta de *acceso completa del nombre de host * **/**  que se usa en las búsquedas de DNS en las que se ejecutará el servidor (por ejemplo, *nombre de host ***.** _Ejemplo_* de _. com_*).<br/>                                                                                                  |
-| Organización        | El nombre que especifique para el campo organización debe ser el nombre legal de la organización registrado con la ciudad, el estado o la autoridad de país o región adecuados. El nombre legal de la organización debe usarse en el campo organización.                                                                                                      |
-| Unidad organizativa | El campo unidad organizativa se puede utilizar para diferenciar entre distintas divisiones de una organización, por ejemplo, "unidad de seguridad de Internet" o "recursos humanos". También se recomienda usar este campo para especificar un valor de DBA (hacer negocios como...).                                                                                           |
-| Localidad            | El campo localidad indica la ciudad en la que reside la organización. Si la organización solo tiene que tener en cuenta la ciudad de Cambridge en el estado de Massachusetts, en virtud de tener una licencia empresarial registrada con el responsable de la ciudad de Cambridge, el campo local debe contener Cambridge.                                                                |
-| Estado o provincia   | El campo Estado o provincia especifica dónde se encuentra físicamente la organización. Si su organización está incorporada en Delaware pero tiene un DBA (hacer negocios como...) en California, use California. El campo de estado o provincia no debe ser un campo abreviado. Por ejemplo, "CA" no es un nombre de estado válido. "California" es el nombre de estado adecuado. |
-| País/región      | El estándar de esquema de nombres [*X. 500*](../secgloss/x-gly.md) requiere un código de país o región de dos caracteres. El código de país o región para la Estados Unidos es US; el código de país o región para Canadá es CA.                                                                                                                          |
+| Nombre común         | Certificados de usuario: debe escribir el nombre completo de la persona. Certificados de equipo: debe escribir la ruta de acceso completa hostName* que se usa en las búsquedas DNS en las que se va a ejecutar el ***/**  servidor (por ejemplo, *HostName*. _Ejemplo_* _.com_*).<br/>                                                                                                  |
+| Organización        | El nombre que especifique para el campo Organización debe ser el nombre legal de la organización que esté registrada con la autoridad de ciudad, estado o país o región correspondiente. El nombre legal de la organización debe usarse en el campo Organización.                                                                                                      |
+| Unidad organizativa | El campo Unidad organizativa se puede usar para diferenciar entre diferentes divisiones dentro de una organización, por ejemplo, "Unidad de seguridad de Internet" o "Recursos humanos". También se recomienda usar este campo para especificar un valor DBA (Doing Business As...).                                                                                           |
+| Localidad            | El campo Localidad indica la ciudad en la que reside la organización. Si la organización solo tiene una posición local, en virtud de tener una licencia comercial registrada en city clerk para la ciudad de Catalina en el estado de Massachusetts, el campo Locality (Localidad) debe contener a Catalina.                                                                |
+| Estado o provincia   | El campo Estado o Provincia especifica dónde se encuentra físicamente la organización. Si su organización se incorpora en Asíncro, pero tiene un DBA (Doing Business As...) en California, use California. El campo Estado o Provincia no debe ser un campo abreviado. Por ejemplo, "CA" no es un nombre de estado válido. "California" es el nombre de estado adecuado. |
+| País o región      | El [*estándar X.500*](../secgloss/x-gly.md) Naming Scheme requiere un código de país o región de 2 caracteres. El código de país o región de la Estados Unidos es EE. UU.; el código de país o región de Canadá es CA.                                                                                                                          |
 
 
 

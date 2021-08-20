@@ -3,7 +3,7 @@ title: LVM_SETUNICODEFORMAT mensaje (Commctrl.h)
 description: 'LVM_SETUNICODEFORMAT mensaje: establece la marca de formato de caracteres UNICODE para el control.'
 ms.assetid: e332ae88-821f-4341-a98d-59d8a01a126f
 keywords:
-- LVM_SETUNICODEFORMAT mensaje Controles de Windows
+- LVM_SETUNICODEFORMAT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb0f700cd057bc77eddc699404f37b19a6cc9c39
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 1ec9830cd2f5e0ee43c4ed2cd331b15e59727643c03c4841f0e043078de85802
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108120153"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117830686"
 ---
 # <a name="lvm_setunicodeformat-message"></a>Mensaje \_ SETUNICODEFORMAT de LVM
 
-Establece la marca de formato de caracteres UNICODE para el control. Este mensaje le permite cambiar el juego de caracteres utilizado por el control en tiempo de ejecución en lugar de tener que volver a crear el control. Puede enviar este mensaje explícitamente o usar la macro [**ListView \_ SetUnicodeFormat.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setunicodeformat)
+Establece la marca de formato de caracteres UNICODE para el control. Este mensaje le permite cambiar el juego de caracteres utilizado por el control en tiempo de ejecución en lugar de tener que volver a crear el control. Puede enviar este mensaje explícitamente o usar la macro [**\_ ListView SetUnicodeFormat.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setunicodeformat)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -53,13 +53,13 @@ Consulte los comentarios de [**CCM \_ SETUNICODEFORMAT para**](ccm-setunicodefor
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

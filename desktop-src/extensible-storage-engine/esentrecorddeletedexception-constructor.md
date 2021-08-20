@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentRecordDeletedException'
-title: Constructor de EsentRecordDeletedException
+description: 'Más información sobre: Constructor EsentRecordDeletedException'
+title: Constructor EsentRecordDeletedException
 TOCTitle: 'EsentRecordDeletedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentRecordDeletedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentrecorddeletedexception.esentrecorddeletedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d22225c8926568663e8a9f1cffc40713a470d952
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58e26acbf8365a265b1c8ff05dafe4283ecaa1b8f4c819cea1e415750b2b51d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082689"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118079689"
 ---
-# <a name="esentrecorddeletedexception-constructor"></a>Constructor de EsentRecordDeletedException
+# <a name="esentrecorddeletedexception-constructor"></a>Constructor EsentRecordDeletedException
 
 Inicializa una nueva instancia de la clase EsentRecordDeletedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentRecordDeletedException()
 public EsentRecordDeletedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentRecordDeletedException()
 
 [Miembros de EsentRecordDeletedException](./esentrecorddeletedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

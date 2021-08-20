@@ -1,19 +1,19 @@
 ---
-title: Propiedades de usuario de MS-CHAPv2 de EAP
-description: Obtenga información acerca de las propiedades de usuario de MS-CHAPv2 de EAP. Vea un ejemplo que es una instancia del esquema heredado mschapv2userpropertiesv1.
+title: Propiedades de usuario MS-CHAPv2 EAP
+description: Obtenga información sobre las propiedades de usuario MS-CHAPv2 EAP. Vea un ejemplo que es una instancia del esquema heredado mschapv2userpropertiesv1.
 ms.assetid: f360913d-be5d-4ef0-96c9-652e4d08d9cd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0082d1672d32b87fe98816fb5baeac791df343d0
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 334405e8c06105f3396ad533138128666421ba51b4c514f4a0bd99f9b9caa30a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104421549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086584"
 ---
-# <a name="eap-ms-chapv2-user-properties"></a>Propiedades de usuario de MS-CHAPv2 de EAP
+# <a name="eap-ms-chapv2-user-properties"></a>Propiedades de usuario MS-CHAPv2 EAP
 
-Este ejemplo es una instancia del esquema heredado [mschapv2userpropertiesv1](mschapv2userpropertiesv1schema-schema.md) .
+Este ejemplo es una instancia del esquema [heredado mschapv2userpropertiesv1.](mschapv2userpropertiesv1schema-schema.md)
 
 ``` syntax
 <?xml version="1.0" ?> 
@@ -45,15 +45,15 @@ Este ejemplo es una instancia del esquema heredado [mschapv2userpropertiesv1](ms
 
 <dl> <dt>
 
-[Propiedades de usuario](user-profiles.md)
+[Propiedades del usuario](user-profiles.md)
 </dt> <dt>
 
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

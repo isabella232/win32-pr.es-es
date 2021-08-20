@@ -1,9 +1,9 @@
 ---
-title: 'Texture2DMS:: GetSamplePosition (función)'
-description: Devuelve la posición de ejemplo para el índice de ejemplo proporcionado.
+title: Función Texture2DMS::GetSamplePosition
+description: Devuelve la posición del ejemplo para el índice de ejemplo proporcionado.
 ms.assetid: b7821112-9b40-4302-b5c1-03bab531a0ab
 keywords:
-- GetSamplePosition de función HLSL
+- Función GetSamplePosition HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 532411e333023ff61df0b7f9fbf0336dc11d1586
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 0e43882db0388bd8c7c9b53df571093d93384487121c72c0bc8a72cbae7950f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104533711"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117905232"
 ---
-# <a name="texture2dmsgetsampleposition-function"></a>Texture2DMS:: GetSamplePosition (función)
+# <a name="texture2dmsgetsampleposition-function"></a>Función Texture2DMS::GetSamplePosition
 
-Devuelve la posición de ejemplo para el índice de ejemplo proporcionado.
+Devuelve la posición del ejemplo para el índice de ejemplo proporcionado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,7 +36,7 @@ float2 GetSamplePosition(
 
 <dl> <dt>
 
-*sampleindex* \[ de\]
+*sampleindex* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **int**](/windows/desktop/WinProg/windows-data-types)**
@@ -49,15 +49,15 @@ Tipo: **[ **int**](/windows/desktop/WinProg/windows-data-types)**
 
 Tipo: **float2**
 
-Una ubicación de ejemplo.
+Ubicación de ejemplo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

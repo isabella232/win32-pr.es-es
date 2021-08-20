@@ -1,23 +1,23 @@
 ---
-description: La lista siguiente contiene los métodos de MSPI de CMSPCallMultiGraph.
+description: La lista siguiente contiene los métodos de MSPI CMSPCallMultiGraph.
 ms.assetid: 340b3d46-8a60-4d55-81a6-bd47431fae59
-title: Métodos CMSPCallMultiGraph MSPI implementados
+title: CmSPCallMultiGraph Métodos MSPI implementados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f4b4c8f744f3a4dadb924502ca1d8c2808c4a90
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f9986263a4e971944c7f662d30023425629b06aa6afa4284f26e6439715819c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104276986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117947164"
 ---
-# <a name="cmspcallmultigraph-mspi-methods-implemented"></a>Métodos CMSPCallMultiGraph MSPI implementados
+# <a name="cmspcallmultigraph-mspi-methods-implemented"></a>CmSPCallMultiGraph Métodos MSPI implementados
 
 
 
-| Métodos CMSPCallMultiGraph MSPI                         | Descripción                                                 |
+| Métodos MSPI de CMSPCallMultiGraph                         | Descripción                                                 |
 |---------------------------------------------------------|-------------------------------------------------------------|
-| [**RemoveStream**](/windows/desktop/api/Mspcall/nf-mspcall-cmspcallmultigraph-removestream) | La aplicación lo llama para quitar un flujo de la llamada. |
+| [**RemoveStream**](/windows/desktop/api/Mspcall/nf-mspcall-cmspcallmultigraph-removestream) | Lo llama la aplicación para quitar una secuencia de la llamada. |
 
 
 
