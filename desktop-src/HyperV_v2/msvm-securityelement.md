@@ -1,7 +1,7 @@
 ---
-description: Representa la configuración de seguridad en tiempo de ejecución de un ComputerSystem de CIM \_ .
+description: Representa la configuración de seguridad en tiempo de ejecución de \_ un sistema de equipo CIM.
 ms.assetid: fa4448dc-9353-475f-ac9b-5c50f36360d8
-title: Msvm_SecurityElement (clase)
+title: Msvm_SecurityElement clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0f0de0fe1a515db0e7b1d8d49b96b61500703480
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 36b5301fc47033e200a1b1ffdd39443df241544651faff3a0a4fe8a3a2feee85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118147254"
 ---
-# <a name="msvm_securityelement-class"></a>MSVM ( \_ clase de SecurityElement)
+# <a name="msvm_securityelement-class"></a>Clase SecurityElement de Msvm \_
 
-Representa la configuración de seguridad en tiempo de ejecución de un [**\_ ComputerSystem de CIM**](cim-computersystem.md).
+Representa la configuración de seguridad en tiempo de ejecución de [**un sistema de \_ equipo CIM.**](cim-computersystem.md)
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -47,13 +47,13 @@ class Msvm_SecurityElement : CIM_EnabledLogicalElement
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ SecurityElement MSVM** tiene estos tipos de miembros:
+La **clase \_ SecurityElement de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ SecurityElement MSVM** tiene estas propiedades.
+La **clase \_ SecurityElement de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -66,10 +66,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-El nombre de la clase o la subclase utilizada en la creación de una instancia de. Cuando se usa con las otras propiedades de clave de esta clase, **CreationClassName** permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única.
+Nombre de la clase o la subclase usada en la creación de una instancia de . Cuando se usa con las otras propiedades clave de esta clase, **CreationClassName** permite identificar de forma única todas las instancias de esta clase y sus subclases.
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la máquina virtual tiene actualmente su estado y el tráfico de migración cifrado.
+Indica si la máquina virtual tiene cifrado actualmente su estado y el tráfico de migración.
 
 </dd> <dt>
 
@@ -108,10 +108,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ Sistema CIM**](cim-system.md).**CreationClassName**")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ System**](cim-system.md).**CreationClassName**")
 </dt> </dl>
 
-Nombre de la clase de creación del sistema de ámbito.
+Nombre de clase de creación del sistema de ámbito.
 
 </dd> <dt>
 
@@ -124,7 +124,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ([**" \_ Sistema CIM**](cim-system.md).**Nombre**")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ System**](cim-system.md).**Name**")
 </dt> </dl>
 
 Nombre del sistema de ámbito.
@@ -135,12 +135,12 @@ Nombre del sistema de ámbito.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -149,7 +149,7 @@ Nombre del sistema de ámbito.
 
 <dl> <dt>
 
-[**\_ENABLEDLOGICALELEMENT CIM**](cim-enabledlogicalelement.md)
+[**CIM \_ EnabledLogicalElement**](cim-enabledlogicalelement.md)
 </dt> </dl>
 
  

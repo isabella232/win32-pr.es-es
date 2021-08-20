@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WOM_DONE (mmsystem. h)
-description: El \_ mensaje WOM done se envía a una función de devolución de llamada de salida de audio de forma de onda cuando el búfer de salida especificado se devuelve a la aplicación.
+title: WOM_DONE mensaje (Mmsystem.h)
+description: El mensaje WOM DONE se envía a una función de devolución de llamada de salida de audio de forma de onda cuando se devuelve el búfer de salida dado \_ a la aplicación.
 ms.assetid: cac94a44-d1b0-43de-b3ec-ae34547b1fc3
 keywords:
-- Mensaje de WOM_DONE de Windows multimedia
+- WOM_DONE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab64598a2dfdd329615ca116fb6382909bb83b01
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0f8e54fe6f8f79c9fe5885861dbda758a663ca49b38ed559b06ba59627768055
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104149966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134820"
 ---
-# <a name="wom_done-message"></a>Mensaje de WOM \_ Done
+# <a name="wom_done-message"></a>Mensaje DE WOM \_ DONE
 
-El mensaje **WOM \_ Done** se envía a una función de devolución de llamada de salida de audio de forma de onda cuando el búfer de salida especificado se devuelve a la aplicación. Los búferes se devuelven a la aplicación cuando se han reproducido o como resultado de una llamada a la función [**waveOutReset**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutreset) .
+El **mensaje WOM \_ DONE** se envía a una función de devolución de llamada de salida de audio de forma de onda cuando se devuelve el búfer de salida dado a la aplicación. Los búferes se devuelven a la aplicación cuando se han reproducido, o como resultado de una llamada a la [**función waveOutReset.**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutreset)
 
 
 ```C++
@@ -41,20 +41,20 @@ dwParam2 = reserved
 <span id="dwParam1"></span><span id="dwparam1"></span><span id="DWPARAM1"></span>*dwParam1*
 </dt> <dd>
 
-Puntero a una estructura [**WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) que identifica el búfer.
+Puntero a una [**estructura WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) que identifica el búfer.
 
 </dd> <dt>
 
 <span id="dwParam2"></span><span id="dwparam2"></span><span id="DWPARAM2"></span>*dwParam2*
 </dt> <dd>
 
-Sector debe ser cero.
+Reservado; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ Este mensaje no devuelve ningún valor.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -72,10 +72,10 @@ Este mensaje no devuelve ningún valor.
 
 <dl> <dt>
 
-[Audio de onda](waveform-audio.md)
+[Audio de forma de onda](waveform-audio.md)
 </dt> <dt>
 
-[Mensajes de onda](waveform-messages.md)
+[Mensajes de forma de onda](waveform-messages.md)
 </dt> </dl>
 
  

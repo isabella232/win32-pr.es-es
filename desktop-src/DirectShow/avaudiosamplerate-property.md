@@ -1,19 +1,19 @@
 ---
-description: Obtiene la velocidad de muestra de la secuencia de bits de audio, en muestras por segundo.
+description: Obtiene la velocidad de muestreo de la secuencia de bits de audio, en muestras por segundos.
 ms.assetid: 9819d6bb-751b-4b47-aa2d-23d7f86c1d3d
-title: Propiedad AVAudioSampleRate (Codecapi. h)
+title: Propiedad AVAudioSampleRate (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 816ef69a91f24444aad1f15780b30a70572743d7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f7528b1920884666da15c154044ec15577ec93881b9aab3875f7ba5a0418cb7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118159986"
 ---
-# <a name="avaudiosamplerate-property"></a>Propiedad AVAudioSampleRate
+# <a name="avaudiosamplerate-property"></a>AvAudioSampleRate, propiedad
 
-Obtiene la velocidad de muestra de la secuencia de bits de audio, en muestras por segundo.
+Obtiene la velocidad de muestreo de la secuencia de bits de audio, en muestras por segundos.
 
 Esta propiedad es de solo lectura.
 
@@ -27,7 +27,7 @@ Esta propiedad es de solo lectura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El conjunto de valores posibles depende de la implementación del descodificador y la secuencia de bits de audio.
+El conjunto de valores posibles depende de la implementación del descodificador y de la secuencia de bits de audio.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ El conjunto de valores posibles depende de la implementación del descodificador
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -48,7 +48,7 @@ El conjunto de valores posibles depende de la implementación del descodificador
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

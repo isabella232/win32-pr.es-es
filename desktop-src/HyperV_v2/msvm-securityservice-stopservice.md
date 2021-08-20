@@ -1,5 +1,5 @@
 ---
-description: 'Método StopService de la Msvm_SecurityService : detiene el servicio.'
+description: 'Método StopService de la clase Msvm_SecurityService : detiene el servicio.'
 ms.assetid: cf100cea-b0e1-42e9-831e-6422aded47c5
 title: Método StopService de la Msvm_SecurityService clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: a9a16fef951fdee5ed7fc580da61f43d848a8dec
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3b60c28776006526db461a978c45d2693b97f01b50f09d1ba6eb8ea029b2b2f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118146974"
 ---
 # <a name="stopservice-method-of-the-msvm_securityservice-class"></a>Método StopService de la clase SecurityService de Msvm \_
 
@@ -53,9 +53,9 @@ Si se ejecuta correctamente, devuelve 0; de lo contrario, devuelve un error.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1703 \[ solo aplicaciones de escritorio\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
 | Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
@@ -63,11 +63,11 @@ Si se ejecuta correctamente, devuelve 0; de lo contrario, devuelve un error.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Msvm \_ SecurityService**](msvm-securityservice.md)
+[**SecurityService de Msvm \_**](msvm-securityservice.md)
 </dt> </dl>
 
  

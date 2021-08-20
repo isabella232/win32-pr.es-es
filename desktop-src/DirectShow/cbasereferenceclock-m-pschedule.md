@@ -1,7 +1,7 @@
 ---
-description: Puntero a un objeto CAMSchedule que controla las tareas de programación del reloj.
+description: Puntero a un objeto CAMSchedule que controla las tareas de programación para el reloj.
 ms.assetid: 6af7437f-313c-4a1e-a412-f82d3486264f
-title: 'Miembro CBaseReferenceClock:: m_pSchedule (Refclock. h)'
+title: CBaseReferenceClock::m_pSchedule miembro (Refclock.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9b71b13d1d6a7678dba61cf30315d09e074669fd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 99a04cf89d012fb9ae01ee1a48ce46c36ebf8b6731072a7a858863b7372e736e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118158093"
 ---
-# <a name="cbasereferenceclockm_pschedule-member"></a>Miembro pSchedule CBaseReferenceClock:: m \_
+# <a name="cbasereferenceclockm_pschedule-member"></a>Miembro CBaseReferenceClock::m \_ pSchedule
 
-Puntero a un objeto [**CAMSchedule**](camschedule.md) que controla las tareas de programación del reloj.
+Puntero a un [**objeto CAMSchedule**](camschedule.md) que controla las tareas de programación para el reloj.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ CAMSchedule *m_pSchedule;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Refclock. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Refclock.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ CAMSchedule *m_pSchedule;
 
 <dl> <dt>
 
-[**Clase CBaseReferenceClock**](cbasereferenceclock.md)
+[**CBaseReferenceClock (clase)**](cbasereferenceclock.md)
 </dt> </dl>
 
  

@@ -33,7 +33,7 @@ ms.locfileid: "118494022"
 ---
 # <a name="esentobsoleteexception-class"></a>Clase EsentObsoleteException
 
-Clase base para excepciones Obsolete.
+Clase base para excepciones obsolete.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
@@ -68,7 +68,7 @@ public abstract class EsentObsoleteException : EsentApiException
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
