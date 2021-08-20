@@ -37,7 +37,7 @@ Se \_ prefiere VT LPWSTR, pero también \_ se acepta VT LPSTR.
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Los valores de esquemas diferentes se concilian.
+Se concilian los valores de esquemas diferentes.
 
 ### <a name="jpeg-policies"></a>Directivas JPEG
 

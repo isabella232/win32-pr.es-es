@@ -1,9 +1,9 @@
 ---
-title: ModifiedBy (atributo)
+title: Atributo ModifiedBy
 description: Cadena que indica si el usuario ha modificado los atributos del elemento.
 ms.assetid: 6967e82e-a2db-4c2a-8572-35a4f52bc451
 keywords:
-- Media Player de atributos ModifiedBy de Windows
+- Atributo ModifiedBy Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,36 +12,36 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf44c318628283627d4bf2f730c143081cee0990
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8afaddd2ed99af6d8b853da60c544694937600b480d6e620bfa2ab4637427fd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647645"
 ---
-# <a name="modifiedby-attribute"></a>ModifiedBy (atributo)
+# <a name="modifiedby-attribute"></a>Atributo ModifiedBy
 
-\[Este atributo ya no se admite. El valor siempre está vacío o "User". \]
+\[Este atributo ya no se admite. El valor siempre está vacío o "usuario". \]
 
-El atributo **ModifiedBy** es una cadena que indica si el usuario ha modificado los atributos del elemento.
+El **atributo ModifiedBy** es una cadena que indica si el usuario ha modificado los atributos del elemento.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [DVDs](dvd-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo solo se almacena en el archivo multimedia digital.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [**media. isReadOnlyItem**](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [**método Media.isReadOnlyItem.**](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -49,7 +49,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [**me
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

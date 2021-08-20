@@ -1,11 +1,11 @@
 ---
-title: Atributo netboot-SIF-File
-description: El atributo netboot-SIF-File está reservado para uso interno.
+title: Atributo Netboot-SIF-File
+description: El atributo Netboot-SIF-File está reservado para uso interno.
 ms.assetid: 3ead21b7-e27e-4056-8e79-96976aa28f37
 ms.tgt_platform: multiple
 keywords:
-- Netboot-SIF-esquema de AD de atributo de archivo
-- netbootSIFFile esquema de AD de atributos
+- Esquema de AD del atributo Netboot-SIF-File
+- Esquema de AD del atributo netbootSIFFile
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4912bb769d8ac4a6409f48832c19e6b7f9cb01c9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7f0d0979e10f72919bd143e9d1041c1ee5d45d775161e8deb75b734bec922069
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648485"
 ---
-# <a name="netboot-sif-file-attribute"></a>Atributo netboot-SIF-File
+# <a name="netboot-sif-file-attribute"></a>Atributo Netboot-SIF-File
 
-El atributo **netboot-SIF-File** está reservado para uso interno.
+El **atributo Netboot-SIF-File** está reservado para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Archivo netboot-SIF                            |
-| Nombre para mostrar de LDAP | netbootSIFFile                              |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | El sistema establece este valor.            |
+| CN                | Netboot-SIF-File                            |
+| Ldap-Display-Name | netbootSIFFile                              |
+| Size              | \-                                          |
+| Privilegio actualizar  | El sistema establece este valor.            |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1240                     |
-| System-ID-GUID    | 2df90d84-009f-11d2-aa4c-00c04fd7d83a        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 2df90d84-009f-11d2-aa4c-00c04fd7d83a        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ El atributo **netboot-SIF-File** está reservado para uso interno.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -76,13 +76,13 @@ El atributo **netboot-SIF-File** está reservado para uso interno.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -95,15 +95,15 @@ El atributo **netboot-SIF-File** está reservado para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -116,15 +116,15 @@ El atributo **netboot-SIF-File** está reservado para uso interno.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -139,13 +139,13 @@ El atributo **netboot-SIF-File** está reservado para uso interno.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -160,13 +160,13 @@ El atributo **netboot-SIF-File** está reservado para uso interno.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | False                                     |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Falso                                     |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |

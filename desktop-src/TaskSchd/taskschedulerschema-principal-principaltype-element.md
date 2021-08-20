@@ -1,6 +1,6 @@
 ---
-title: Elemento principal (principalType)
-description: Especifica las credenciales de seguridad para una entidad de seguridad.
+title: Elemento Principal (principalType)
+description: Especifica las credenciales de seguridad de una entidad de seguridad.
 ms.assetid: 4ba65976-98d2-4329-80f0-566fac2e9fda
 keywords:
 - Elemento principal Programador de tareas
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 41d308af651f1aff0ff402c7070adbe631bff9eb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b8301371acc7624b4beb9b548191afa641ed267592b246cca7ba71ff170a9bdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105685882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059783"
 ---
-# <a name="principal-principaltype-element"></a>Elemento principal (principalType)
+# <a name="principal-principaltype-element"></a>Elemento Principal (principalType)
 
-Especifica las credenciales de seguridad para una entidad de seguridad. Estas credenciales definen el contexto de seguridad en el que se ejecuta una tarea.
+Especifica las credenciales de seguridad de una entidad de seguridad. Estas credenciales definen el contexto de seguridad en el que se ejecuta una tarea.
 
 ``` syntax
 <xs:element name="Principal"
@@ -30,7 +30,7 @@ Especifica las credenciales de seguridad para una entidad de seguridad. Estas cr
  />
 ```
 
-El elemento **principal** se define mediante el tipo complejo de [**principalType**](taskschedulerschema-principaltype-complextype.md) .
+El **tipo complejo principalType** define el [**elemento**](taskschedulerschema-principaltype-complextype.md) Principal.
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -48,10 +48,10 @@ El elemento **principal** se define mediante el tipo complejo de [**principalTyp
 
 | Elemento                                                                      | Tipo                                                          | Descripción                                                                                                |
 |------------------------------------------------------------------------------|---------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [**DisplayName**](taskschedulerschema-displayname-principaltype-element.md) | **string**                                                    | Especifica el nombre de la entidad de seguridad que se muestra en la interfaz de usuario de Programador de tareas.<br/>                 |
-| [**GroupId**](taskschedulerschema-groupid-principaltype-element.md)         | **string**                                                    | Especifica el identificador del grupo de usuarios necesario para ejecutar tareas asociadas a la entidad de seguridad.<br/> |
-| [**LogonType**](taskschedulerschema-logontype-principaltype-element.md)     | [**logonType**](taskschedulerschema-logontype-simpletype.md) | Especifica el método de inicio de sesión de seguridad necesario para ejecutar las tareas asociadas a la entidad de seguridad.<br/>  |
-| [**Deberían**](taskschedulerschema-userid-principaltype-element.md)           | **string**                                                    | Especifica el identificador de usuario necesario para ejecutar tareas asociadas a la entidad de seguridad.<br/>              |
+| [**Displayname**](taskschedulerschema-displayname-principaltype-element.md) | **string**                                                    | Especifica el nombre de la entidad de seguridad que se muestra en la interfaz Programador de tareas usuario.<br/>                 |
+| [**Groupid**](taskschedulerschema-groupid-principaltype-element.md)         | **string**                                                    | Especifica el identificador del grupo de usuarios necesario para ejecutar tareas asociadas a la entidad de seguridad.<br/> |
+| [**LogonType**](taskschedulerschema-logontype-principaltype-element.md)     | [**logonType**](taskschedulerschema-logontype-simpletype.md) | Especifica el método de inicio de sesión de seguridad necesario para ejecutar esas tareas asociadas a la entidad de seguridad.<br/>  |
+| [**Userid**](taskschedulerschema-userid-principaltype-element.md)           | **string**                                                    | Especifica el identificador de usuario necesario para ejecutar tareas asociadas a la entidad de seguridad.<br/>              |
 
 
 
@@ -61,21 +61,21 @@ El elemento **principal** se define mediante el tipo complejo de [**principalTyp
 
 | Nombre | Tipo | Descripción                                        |
 |------|------|----------------------------------------------------|
-| Identificador   | id   | Identificador de la definición de la entidad de seguridad.<br/> |
+| Identificador   | ID   | Identificador de la definición de entidad de seguridad.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de scripts, las credenciales de seguridad de una entidad de seguridad se especifican mediante el objeto [**principal**](principal.md) .
+Para el desarrollo de scripting, las credenciales de seguridad de una entidad de seguridad se especifican mediante el [**objeto Principal.**](principal.md)
 
-En el desarrollo de C++, las credenciales de seguridad de una entidad de seguridad se especifican mediante la interfaz [**IPrincipal**](/windows/desktop/api/taskschd/nn-taskschd-iprincipal) .
+Para el desarrollo de C++, las credenciales de seguridad de una entidad de seguridad se especifican mediante la [**interfaz IPrincipal.**](/windows/desktop/api/taskschd/nn-taskschd-iprincipal)
 
-Los elementos secundarios enumerados anteriormente se definen mediante el tipo complejo [**principalType**](taskschedulerschema-principaltype-complextype.md) . Para obtener información sobre la secuenciación de estos elementos secundarios, vea [**principalType**](taskschedulerschema-principaltype-complextype.md).
+Los elementos secundarios enumerados anteriormente se definen mediante el [**tipo complejo principalType.**](taskschedulerschema-principaltype-complextype.md) Para obtener información de secuenciación para estos elementos secundarios, vea [**principalType**](taskschedulerschema-principaltype-complextype.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el código XML siguiente se define una entidad de seguridad con un identificador de usuario.
+El xml siguiente define una entidad de seguridad con un identificador de usuario.
 
 
 ```XML
@@ -90,7 +90,7 @@ En el código XML siguiente se define una entidad de seguridad con un identifica
 
 
 
-En el código XML siguiente se define una entidad de seguridad con un identificador de grupo.
+El xml siguiente define una entidad de seguridad con un identificador de grupo.
 
 
 ```XML
@@ -110,8 +110,8 @@ En el código XML siguiente se define una entidad de seguridad con un identifica
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

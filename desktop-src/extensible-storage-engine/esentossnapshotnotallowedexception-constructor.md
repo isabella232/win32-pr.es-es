@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentOSSnapshotNotAllowedException'
-title: Constructor de EsentOSSnapshotNotAllowedException
+description: 'Más información sobre: Constructor EsentOSSnapshotNotAllowedException'
+title: Constructor EsentOSSnapshotNotAllowedException
 TOCTitle: 'EsentOSSnapshotNotAllowedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentOSSnapshotNotAllowedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentossnapshotnotallowedexception.esentossnapshotnotallowedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6bea6b6d5370165cffa8ef141cab66870e62cdbc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d482494f567ad1e7bca14dbd213e9f24798e047026cdcb8f135111be0a5bdc2b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119040093"
 ---
-# <a name="esentossnapshotnotallowedexception-constructor"></a>Constructor de EsentOSSnapshotNotAllowedException
+# <a name="esentossnapshotnotallowedexception-constructor"></a>Constructor EsentOSSnapshotNotAllowedException
 
 Inicializa una nueva instancia de la clase EsentOSSnapshotNotAllowedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentOSSnapshotNotAllowedException()
 public EsentOSSnapshotNotAllowedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentOSSnapshotNotAllowedException()
 
 [Miembros de EsentOSSnapshotNotAllowedException](./esentossnapshotnotallowedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118954794"
 ---
-# <a name="cbaserenderersendrepaint-method"></a>CBaseRenderer.SendRepaint (método)
+# <a name="cbaserenderersendrepaint-method"></a>Método CBaseRenderer.SendRepaint
 
 El `SendRepaint` método envía un evento de repintado al administrador de gráficos de filtro.
 
@@ -46,7 +46,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Este método envía un [**evento \_ EC REPAINT**](ec-repaint.md) al administrador de gráficos de filtro si se cumplen las condiciones siguientes:
+Este método envía un [**evento \_ EC REPAINT**](ec-repaint.md) al administrador de gráficos de filtros si se cumplen las condiciones siguientes:
 
 -   El pin de entrada está conectado.
 -   El filtro no vacía los datos.
@@ -54,7 +54,7 @@ Este método envía un [**evento \_ EC REPAINT**](ec-repaint.md) al administrado
 -   La [**marca CBaseRenderer::m \_ bAbort**](cbaserenderer-m-babort.md) es **FALSE.**
 -   La [**marca CBaseRenderer::m \_ bRepaintStatus**](cbaserenderer-m-brepaintstatus.md) es **TRUE.**
 
-En función del estado del gráfico, el evento EC REPAINT puede hacer que el filtro ascendente vuelva a enviar una muestra; que el gráfico de filtros busque en su ubicación actual o que el administrador del gráfico de filtros se pause \_ momentáneamente. (Vea [**EC \_ REPAINT**](ec-repaint.md)). Este evento es potencialmente ineficaz, por lo que debe usarse con moderación. Sin embargo, los representadores de vídeo a veces necesitan actualizar la pantalla.
+En función del estado del gráfico, el evento EC REPAINT puede hacer que el filtro ascendente vuelva a enviar una muestra, el gráfico de filtros busque su ubicación actual o que el administrador del gráfico de filtros se pause \_ momentáneamente. (Vea [**EC \_ REPAINT**](ec-repaint.md)). Este evento es potencialmente ineficaz, por lo que debe usarse con moderación. Sin embargo, los representadores de vídeo a veces necesitan actualizar la pantalla.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ En función del estado del gráfico, el evento EC REPAINT puede hacer que el fil
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

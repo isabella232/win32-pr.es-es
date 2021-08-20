@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: ColumnStream. Flush (método)'
-title: ColumnStream. Flush (método)
+description: Más información sobre el método ColumnStream.Flush
+title: Método ColumnStream.Flush
 TOCTitle: 'Flush method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.ColumnStream.Flush
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnstream.flush(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ee686c2f7f1ed94474275bb5cdb23a8f3f0eff47
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4652bcbe90e33737262cbc63914bda5467e27b2d04acaa786c676b4ecdc9fe79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042373"
 ---
-# <a name="columnstreamflush-method"></a>ColumnStream. Flush (método)
+# <a name="columnstreamflush-method"></a>Método ColumnStream.Flush
 
-Vacíe el flujo.
+Vacíe la secuencia.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,12 +53,12 @@ instance.Flush()
 public override void Flush()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase ColumnStream](./columnstream-class.md)
+[ColumnStream (clase)](./columnstream-class.md)
 
-[Miembros de ColumnStream](./columnstream-members.md)
+[Miembros ColumnStream](./columnstream-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

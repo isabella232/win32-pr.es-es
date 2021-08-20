@@ -1,7 +1,7 @@
 ---
-description: Describe las capacidades de la clase MSVM \_ ResourcePoolConfigurationService asociada.
+description: Describe las funcionalidades de la clase ResourcePoolConfigurationService de Msvm \_ asociada.
 ms.assetid: 3e6857f9-62a0-420b-8f1d-8aad685a7ff7
-title: Msvm_ResourcePoolConfigurationCapabilities (clase)
+title: Msvm_ResourcePoolConfigurationCapabilities clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,18 +19,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: b70d9e84e2c85d4c5b702a638982df0b47d62193
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f49f105af3db5646b32c6aa5d78f28da76bf7b9806174e15f56b4d990de68e8f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119535515"
 ---
-# <a name="msvm_resourcepoolconfigurationcapabilities-class"></a>MSVM \_ ResourcePoolConfigurationCapabilities (clase)
+# <a name="msvm_resourcepoolconfigurationcapabilities-class"></a>Clase \_ ResourcePoolConfigurationCapabilities de Msvm
 
-Describe las capacidades de la clase [**MSVM \_ ResourcePoolConfigurationService**](msvm-resourcepoolconfigurationservice.md) asociada. Los clientes pueden usar instancias de esta clase para determinar qué métodos se admiten de forma sincrónica o asincrónica. El mismo método no debe estar en ambas listas. Las implementaciones de método deben ser sincrónicas o asincrónicas.
+Describe las funcionalidades de la clase [**\_ ResourcePoolConfigurationService de Msvm**](msvm-resourcepoolconfigurationservice.md) asociada. Los clientes pueden usar instancias de esta clase para determinar qué métodos se admiten de forma sincrónica o asincrónica. El mismo método no debe estar en ambas listas. Las implementaciones de métodos deben ser sincrónicas o asincrónicas.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,26 +49,26 @@ class Msvm_ResourcePoolConfigurationCapabilities : CIM_Capabilities
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ ResourcePoolConfigurationCapabilities** tiene estos tipos de miembros:
+La **clase \_ ResourcePoolConfigurationCapabilities de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ ResourcePoolConfigurationCapabilities** tiene estas propiedades.
+La **clase \_ ResourcePoolConfigurationCapabilities de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
 **AsynchronousMethodsSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32** array
+Tipo de datos: **matriz uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una matriz de identificadores de método, cada uno de los cuales identifica un método de la clase [**MSVM \_ ResourcePoolConfigurationService**](msvm-resourcepoolconfigurationservice.md) que la implementación admite de forma asincrónica.
+Matriz de identificadores de método, cada uno de los que identifica un método de la clase [**\_ ResourcePoolConfigurationService de Msvm**](msvm-resourcepoolconfigurationservice.md) que la implementación admite de forma asincrónica.
 
 <dt>
 
@@ -81,7 +81,7 @@ Una matriz de identificadores de método, cada uno de los cuales identifica un m
 
 <span id="CreatePool_is_supported"></span><span id="createpool_is_supported"></span><span id="CREATEPOOL_IS_SUPPORTED"></span>
 
-**Se admite createpool** (32768)
+**Se admite CreatePool** (32768)
 
 
 </dt> <dd></dd> <dt>
@@ -109,7 +109,7 @@ Una matriz de identificadores de método, cada uno de los cuales identifica un m
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (32772.. 65535)
+**Vendor Reserved** (32772..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -125,7 +125,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "capacidades de configuración del grupo de recursos".
+Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "Capacidades de configuración del grupo de recursos".
 
 </dd> <dt>
 
@@ -138,7 +138,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "capacidades de configuración del grupo de recursos de Microsoft".
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "Funcionalidades de configuración del grupo de recursos de Microsoft".
 
 </dd> <dt>
 
@@ -151,7 +151,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "capacidades de configuración del grupo de recursos".
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "Capacidades de configuración del grupo de recursos".
 
 </dd> <dt>
 
@@ -164,23 +164,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **SynchronousMethodsSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32** array
+Tipo de datos: **matriz uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una matriz de identificadores de método, cada uno de los cuales identifica un método de la clase [**MSVM \_ ResourcePoolConfigurationService**](msvm-resourcepoolconfigurationservice.md) que la implementación admite sincrónicamente.
+Matriz de identificadores de método, cada uno de los que identifica un método de la clase [**\_ ResourcePoolConfigurationService de Msvm**](msvm-resourcepoolconfigurationservice.md) que la implementación admite de forma sincrónica.
 
 <dt>
 
@@ -193,7 +193,7 @@ Una matriz de identificadores de método, cada uno de los cuales identifica un m
 
 <span id="CreatePool_is_supported"></span><span id="createpool_is_supported"></span><span id="CREATEPOOL_IS_SUPPORTED"></span>
 
-**Se admite createpool** (32768)
+**Se admite CreatePool** (32768)
 
 
 </dt> <dd></dd> <dt>
@@ -221,7 +221,7 @@ Una matriz de identificadores de método, cada uno de los cuales identifica un m
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (32772.. 65535)
+**Vendor Reserved** (32772..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -232,12 +232,12 @@ Una matriz de identificadores de método, cada uno de los cuales identifica un m
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                                 |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                                 |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

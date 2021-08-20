@@ -1,19 +1,19 @@
 ---
-description: El uso de comas y puntos y comas puede ser el problema de sintaxis más complejo en el formato de archivo, y este uso es muy estricto. Las comas se usan para separar los miembros de la matriz; los puntos y comas terminan cada elemento de datos.
+description: El uso de comas y punto y coma puede ser el problema de sintaxis más complejo en el formato de archivo y este uso es muy estricto. Las comas se usan para separar los miembros de la matriz; los puntos y coma finalizan cada elemento de datos.
 ms.assetid: 82582213-907c-4760-a849-e6cf5f6d60bc
-title: Uso de comas y puntos y comas
+title: Uso de comas y punto y coma
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ba238d50ff5d0dace017f16b75547df6b016e14
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b44d20d4a8e99a75522fa3703d58d82f3bf4dfe130e530d18141b7f45e572717
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044063"
 ---
-# <a name="use-of-commas-and-semicolons"></a>Uso de comas y puntos y comas
+# <a name="use-of-commas-and-semicolons"></a>Uso de comas y punto y coma
 
-El uso de comas y puntos y comas puede ser el problema de sintaxis más complejo en el formato de archivo, y este uso es muy estricto. Las comas se usan para separar los miembros de la matriz; los puntos y comas terminan cada elemento de datos.
+El uso de comas y punto y coma puede ser el problema de sintaxis más complejo en el formato de archivo y este uso es muy estricto. Las comas se usan para separar los miembros de la matriz; los puntos y coma finalizan cada elemento de datos.
 
 Por ejemplo, si una plantilla se define de la siguiente manera:
 
@@ -26,7 +26,7 @@ DWORD myvar;
 
 
 
-Después, una instancia de esta plantilla tiene el siguiente aspecto:
+A continuación, una instancia de esta plantilla tiene un aspecto similar al siguiente:
 
 
 ```
@@ -37,7 +37,7 @@ mytemp dataTemp {
 
 
 
-Si una plantilla que contiene otra plantilla se define de la siguiente manera:
+Si una plantilla que contiene otra plantilla se define de la siguiente manera;
 
 
 ```
@@ -53,7 +53,7 @@ mytemp aTemp;
 
 
 
-Después, una instancia de esta plantilla tiene el siguiente aspecto:
+A continuación, una instancia de esta plantilla tiene un aspecto similar al siguiente:
 
 
 ```
@@ -66,9 +66,9 @@ container dataContainer {
 
 
 
-Tenga en cuenta que la segunda línea que representa el contenedor de mi Temp tiene dos puntos y coma al final de la línea. El primer punto y coma indica el final del elemento de datos, aTemp (dentro del contenedor) y el segundo punto y coma indica el final del contenedor.
+Tenga en cuenta que la segunda línea que representa el mytemp dentro del contenedor tiene dos puntos y coma al final de la línea. El primer punto y coma indica el final del elemento de datos, aTemp (dentro del contenedor) y el segundo punto y coma indica el final del contenedor.
 
-Si una matriz se define de la manera siguiente:
+Si una matriz se define de la siguiente manera:
 
 
 ```
@@ -81,7 +81,7 @@ array DWORD myvar[3];
 
 
 
-Después, una instancia de se parece a la siguiente:
+A continuación, una instancia de esto tiene un aspecto similar al siguiente:
 
 
 ```
@@ -92,9 +92,9 @@ mytemp aTemp {
 
 
 
-En el ejemplo de matriz, no es necesario separar los elementos de datos con punto y coma, porque se delimitan mediante comas. El punto y coma al final marca el final de la matriz.
+En el ejemplo de matriz, no es necesario que los elementos de datos estén separados por punto y coma porque se delinean mediante comas. El punto y coma al final marca el final de la matriz.
 
-Considere una plantilla que contiene una matriz de elementos de datos definida por una plantilla.
+Considere una plantilla que contiene una matriz de elementos de datos definidos por una plantilla.
 
 
 ```
@@ -110,7 +110,7 @@ array mytemp tempArray[count];
 
 
 
-Una instancia de esto sería similar al ejemplo siguiente.
+Una instancia de esto tendría un aspecto parecido al del ejemplo siguiente.
 
 
 ```

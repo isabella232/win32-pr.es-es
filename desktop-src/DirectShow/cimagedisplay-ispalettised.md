@@ -1,7 +1,7 @@
 ---
-description: El método IsPalettised determina si el formato de presentación actual es de paleta.
+description: El método IsPalettsed determina si el formato de presentación actual está en desenlazado.
 ms.assetid: 837c67a2-2438-4779-bdf7-31ee135532ff
-title: Método CImageDisplay. IsPalettised (Winutil. h)
+title: Método CImageDisplay.IsPal hvacsed (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 89be1aa4883e22c1b91f7b895cb9f965a5595980
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: efe9b317727889ded0451f1275df51233277ad9f80d59f505fd646acf4c57409
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119539295"
 ---
-# <a name="cimagedisplayispalettised-method"></a>CImageDisplay. IsPalettised, método
+# <a name="cimagedisplayispalettised-method"></a>CImageDisplay.IsPal hvacsed (método)
 
-El `IsPalettised` método determina si el formato de presentación actual es de paleta.
+El `IsPalettised` método determina si el formato de presentación actual está en desenlazado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si el formato es de paleta o **false** en caso contrario.
+Devuelve **TRUE** si el formato está en desenlazado o FALSE en **caso** contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve **true** si el formato es de paleta o **false** en caso contrario.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve **true** si el formato es de paleta o **false** en caso contrario.
 
 <dl> <dt>
 
-[**Clase CImageDisplay**](cimagedisplay.md)
+[**CImageDisplay (clase)**](cimagedisplay.md)
 </dt> </dl>
 
  

@@ -1,23 +1,23 @@
 ---
-description: Referencia de Uniscribe
+description: Referencia de Unscribe
 ms.assetid: c57212ea-1b7b-4861-8e93-18c9b0f87317
-title: Referencia de Uniscribe
+title: Referencia de Unscribe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39f0a3286f7783ab93798d26062457e65f42d383
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 873a3b83005f146608c970989b412654c854ff8e2f312903dd57fadac4a05bcb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582155"
 ---
-# <a name="uniscribe-reference"></a>Referencia de Uniscribe
+# <a name="uniscribe-reference"></a>Referencia de Unscribe
 
-Los elementos siguientes están asociados a la tipografía de uniscripcione y al procesamiento complejo de scripts:
+Los siguientes elementos están asociados a la tipografía Uniscribe y al procesamiento de scripts complejos:
 
--   [Funciones de Uniscribe](uniscribe-functions.md)
--   [Estructuras de Uniscribe](uniscribe-structures.md)
--   [Tipos de enumeración de Uniscribe](uniscribe-enumeration-types.md)
+-   [Funciones de unidiscribe](uniscribe-functions.md)
+-   [Estructuras de unidireccional](uniscribe-structures.md)
+-   [Tipos de enumeración uniscribe](uniscribe-enumeration-types.md)
 
  
 

@@ -1,28 +1,28 @@
 ---
-title: Propiedad AdvancedSettings3 de IMsRdpClient2
-description: Recupera un puntero a la interfaz IMsRdpClientAdvancedSettings2. La interfaz se puede utilizar para establecer la configuración avanzada del control de cliente.
+title: Propiedad IMsRdpClient2 AdvancedSettings3
+description: Recupera un puntero a la interfaz IMsRdpClientAdvancedSettings2. La interfaz se puede usar para establecer la configuración avanzada para el control de cliente.
 ms.assetid: 69353bfa-973e-4c6a-8f7e-1b9514be2539
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad AdvancedSettings3
-- Propiedad AdvancedSettings3 Servicios de Escritorio remoto, interfaz IMsRdpClient2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient2, propiedad AdvancedSettings3
-- Propiedad AdvancedSettings3 Servicios de Escritorio remoto, interfaz IMsRdpClient3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient3, propiedad AdvancedSettings3
-- Propiedad AdvancedSettings3 Servicios de Escritorio remoto, interfaz IMsRdpClient4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient4, propiedad AdvancedSettings3
-- Propiedad AdvancedSettings3 Servicios de Escritorio remoto, interfaz IMsRdpClient5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient5, propiedad AdvancedSettings3
-- Propiedad AdvancedSettings3 Servicios de Escritorio remoto, interfaz IMsRdpClient6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient6, propiedad AdvancedSettings3
-- Propiedad AdvancedSettings3 Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient7, propiedad AdvancedSettings3
-- Propiedad AdvancedSettings3 Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient8, propiedad AdvancedSettings3
-- Propiedad AdvancedSettings3 Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient9, propiedad AdvancedSettings3
-- Propiedad AdvancedSettings3 Servicios de Escritorio remoto, interfaz IMsRdpClient10
-- Servicios de Escritorio remoto de la interfaz IMsRdpClient10, propiedad AdvancedSettings3
+- Propiedad AdvancedSettings3 Servicios de Escritorio remoto
+- Propiedad AdvancedSettings3 Servicios de Escritorio remoto interfaz , IMsRdpClient2
+- Interfaz IMsRdpClient2 Servicios de Escritorio remoto propiedad , AdvancedSettings3
+- Propiedad AdvancedSettings3 Servicios de Escritorio remoto interfaz , IMsRdpClient3
+- Interfaz IMsRdpClient3 Servicios de Escritorio remoto propiedad , AdvancedSettings3
+- Propiedad AdvancedSettings3 Servicios de Escritorio remoto interfaz , IMsRdpClient4
+- Interfaz IMsRdpClient4 Servicios de Escritorio remoto propiedad , AdvancedSettings3
+- Propiedad AdvancedSettings3 Servicios de Escritorio remoto interfaz , IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto propiedad , AdvancedSettings3
+- Propiedad AdvancedSettings3 Servicios de Escritorio remoto interfaz , IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto propiedad , AdvancedSettings3
+- Propiedad AdvancedSettings3 Servicios de Escritorio remoto interfaz , IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto propiedad , AdvancedSettings3
+- Propiedad AdvancedSettings3 Servicios de Escritorio remoto interfaz , IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto propiedad , AdvancedSettings3
+- Propiedad AdvancedSettings3 Servicios de Escritorio remoto interfaz , IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto propiedad , AdvancedSettings3
+- Propiedad AdvancedSettings3 Servicios de Escritorio remoto interfaz , IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto propiedad , AdvancedSettings3
 topic_type:
 - apiref
 api_name:
@@ -50,16 +50,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf16d56eaff321d313e3a27eb6dd774ef67e13ca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 527ed2338c07eb943e6e2a3ef1c6e5f4342f446f0b5eff6a67ff2e3c7035a456
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059023"
 ---
-# <a name="imsrdpclient2advancedsettings3-property"></a>IMsRdpClient2:: AdvancedSettings3 (propiedad)
+# <a name="imsrdpclient2advancedsettings3-property"></a>Propiedad IMsRdpClient2::AdvancedSettings3
 
-Recupera un puntero a la interfaz [**IMsRdpClientAdvancedSettings2**](imsrdpclientadvancedsettings2.md) . La interfaz se puede utilizar para establecer la configuración avanzada del control de cliente.
+Recupera un puntero a la [**interfaz IMsRdpClientAdvancedSettings2.**](imsrdpclientadvancedsettings2.md) La interfaz se puede usar para establecer la configuración avanzada para el control de cliente.
 
 Esta propiedad es de solo lectura.
 
@@ -76,21 +76,21 @@ HRESULT get_AdvancedSettings3(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Recupera un puntero a la interfaz [**IMsRdpClientAdvancedSettings2**](imsrdpclientadvancedsettings2.md) .
+Recupera un puntero a la [**interfaz IMsRdpClientAdvancedSettings2.**](imsrdpclientadvancedsettings2.md)
 
 ## <a name="error-codes"></a>Códigos de error
 
-Si el método se ejecuta correctamente, se devuelve **S \_ OK** . Cualquier otro valor **HRESULT** indica que se produjo un error en la llamada.
+Si el método se realiza correctamente, **se devuelve S \_ OK.** Cualquier otro **valor HRESULT** indica que se ha dado error en la llamada.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |

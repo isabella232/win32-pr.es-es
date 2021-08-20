@@ -1,11 +1,11 @@
 ---
-title: Atributo Can-upgrade-script
-description: Este atributo almacena la lista de paquetes de aplicación que puede actualizar o que puede actualizar este paquete de aplicación.
+title: Atributo Can-Upgrade-Script
+description: Este atributo almacena la lista de paquetes de aplicación que se pueden actualizar mediante o que pueden actualizar este paquete de aplicación.
 ms.assetid: 95dea9c7-dbbd-42fb-ab32-6b89490aa5d6
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo Can-upgrade-script
-- canUpgradeScript esquema de AD de atributos
+- Esquema de AD del atributo Can-Upgrade-Script
+- Esquema de AD del atributo canUpgradeScript
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 305e5b90c45d124a8647dd5d3a0af9c4a2ca6c4f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c258e33a7b70b543bf98991291ed60b7d2ec274ac98a26ceeb2cda9fa7b27a6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022643"
 ---
-# <a name="can-upgrade-script-attribute"></a>Atributo Can-upgrade-script
+# <a name="can-upgrade-script-attribute"></a>Atributo Can-Upgrade-Script
 
-Este atributo almacena la lista de paquetes de aplicación que puede actualizar o que puede actualizar este paquete de aplicación.
+Este atributo almacena la lista de paquetes de aplicación que se pueden actualizar mediante o que pueden actualizar este paquete de aplicación.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | Script Can-upgrade                          |
-| Nombre para mostrar de LDAP | canUpgradeScript                            |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | Can-Upgrade-Script                          |
+| Ldap-Display-Name | canUpgradeScript                            |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.815                      |
-| System-ID-GUID    | d9e18314-8939-11d1-aebc-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | d9e18314-8939-11d1-aebc-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ Este atributo almacena la lista de paquetes de aplicación que puede actualizar 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | False                                                            |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Falso                                                            |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Este atributo almacena la lista de paquetes de aplicación que puede actualizar 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | False                                                            |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Falso                                                            |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Este atributo almacena la lista de paquetes de aplicación que puede actualizar 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | False                                                            |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Falso                                                            |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Este atributo almacena la lista de paquetes de aplicación que puede actualizar 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | False                                                            |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Falso                                                            |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Este atributo almacena la lista de paquetes de aplicación que puede actualizar 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | False                                                            |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Falso                                                            |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Este atributo almacena la lista de paquetes de aplicación que puede actualizar 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                               |
+| Id. de vínculo                | \-                                                               |
 | MAPI-Id                | \-                                                               |
-| System-Only            | False                                                            |
-| Tiene un único valor       | False                                                            |
-| Está indexado             | False                                                            |
-| En el catálogo global      | False                                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                     |
+| System-Only            | Falso                                                            |
+| Es de un solo valor       | Falso                                                            |
+| Está indexado             | Falso                                                            |
+| En el catálogo global      | Falso                                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                     |
 | Range-Lower            | \-                                                               |
 | Range-Upper            | \-                                                               |
 | Search-Flags           | 0x00000000                                                       |
 | System-Flags           | 0x00000010                                                       |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> |
 
 
 

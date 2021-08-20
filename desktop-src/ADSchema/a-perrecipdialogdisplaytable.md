@@ -1,11 +1,11 @@
 ---
-title: Atributo per-Recip-Dialog-display-Table
-description: La tabla de visualización de MAPI por opciones de destinatarios.
+title: Atributo Per-Recip-Dialog-Display-Table
+description: La tabla de presentación DE OPCIONES por destinatario de MAPI.
 ms.assetid: 87cbf963-0009-4ff4-9227-e9a270fc255a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de tabla por Recip-Dialog-display
-- perRecipDialogDisplayTable esquema de AD de atributos
+- Esquema de AD del atributo Per-Recip-Dialog-Display-Table
+- Esquema de AD del atributo perRecipDialogDisplayTable
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 923584e765f1964a5bbbee01650844d358fda258
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 70588d52b62a10151eaa04acdea017e98ea20219ca2966da13f9f9eadc6a76de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022443"
 ---
-# <a name="per-recip-dialog-display-table-attribute"></a>Atributo per-Recip-Dialog-display-Table
+# <a name="per-recip-dialog-display-table-attribute"></a>Atributo Per-Recip-Dialog-Display-Table
 
-La tabla de visualización de MAPI por opciones de destinatarios.
+La tabla de presentación DE OPCIONES por destinatario de MAPI.
 
 
 
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
-| CN                | Per-Recip-Dialog-display-Table                        |
-| Nombre para mostrar de LDAP | perRecipDialogDisplayTable                            |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | Por recip-dialog-display-table                        |
+| Ldap-Display-Name | perRecipDialogDisplayTable                            |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.326                                |
-| System-ID-GUID    | 5fd424d4-1262-11d0-a060-00aa006c33ed                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 5fd424d4-1262-11d0-a060-00aa006c33ed                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,18 +55,18 @@ La tabla de visualización de MAPI por opciones de destinatarios.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8109                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Clases usadas en        | [**Dirección: plantilla**](c-addresstemplate.md)<br/> |
+| Clases usadas en        | [**Plantilla de dirección**](c-addresstemplate.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ La tabla de visualización de MAPI por opciones de destinatarios.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8109                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Clases usadas en        | [**Dirección: plantilla**](c-addresstemplate.md)<br/> |
+| Clases usadas en        | [**Plantilla de dirección**](c-addresstemplate.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ La tabla de visualización de MAPI por opciones de destinatarios.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8109                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Clases usadas en        | [**Dirección: plantilla**](c-addresstemplate.md)<br/> |
+| Clases usadas en        | [**Plantilla de dirección**](c-addresstemplate.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ La tabla de visualización de MAPI por opciones de destinatarios.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8109                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Clases usadas en        | [**Dirección: plantilla**](c-addresstemplate.md)<br/> |
+| Clases usadas en        | [**Plantilla de dirección**](c-addresstemplate.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ La tabla de visualización de MAPI por opciones de destinatarios.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8109                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Clases usadas en        | [**Dirección: plantilla**](c-addresstemplate.md)<br/> |
+| Clases usadas en        | [**Plantilla de dirección**](c-addresstemplate.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ La tabla de visualización de MAPI por opciones de destinatarios.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------|
-| Identificador de vínculo                | \-                                                       |
+| Id. de vínculo                | \-                                                       |
 | MAPI-Id                | 0x8109                                                   |
-| System-Only            | False                                                    |
-| Tiene un único valor       | True                                                     |
-| Está indexado             | False                                                    |
-| En el catálogo global      | False                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                             |
+| System-Only            | Falso                                                    |
+| Es de un solo valor       | Verdadero                                                     |
+| Está indexado             | Falso                                                    |
+| En el catálogo global      | Falso                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32 768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Clases usadas en        | [**Dirección: plantilla**](c-addresstemplate.md)<br/> |
+| Clases usadas en        | [**Plantilla de dirección**](c-addresstemplate.md)<br/> |
 
 
 

@@ -53,7 +53,7 @@ Este atributo contiene el DN de un usuario o unidad organizativa y es la identid
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -74,7 +74,7 @@ Este atributo contiene el DN de un usuario o unidad organizativa y es la identid
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -95,7 +95,7 @@ Este atributo contiene el DN de un usuario o unidad organizativa y es la identid
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -137,7 +137,7 @@ Este atributo contiene el DN de un usuario o unidad organizativa y es la identid
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -158,7 +158,7 @@ Este atributo contiene el DN de un usuario o unidad organizativa y es la identid
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |

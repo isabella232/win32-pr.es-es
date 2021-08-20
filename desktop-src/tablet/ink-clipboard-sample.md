@@ -1,44 +1,44 @@
 ---
-description: Este programa muestra cómo copiar y pegar entradas manuscritas en otra aplicación. También permite al usuario copiar una selección de trazos y pegar el resultado en el objeto de entrada manuscrita existente.
+description: Este programa muestra cómo copiar y pegar entrada manuscrita en otra aplicación. También permite al usuario copiar una selección de trazos y pegar el resultado en el objeto de entrada de lápiz existente.
 ms.assetid: a0c42f1c-543d-44f8-83d9-fe810de410ff
-title: Ejemplo de Portapapeles de lápiz
+title: Ejemplo de Portapapeles de entrada manuscrita
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95c5da0bc0ba9a7e3a1b4e1a5c52784f10fb2023
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 73aa8acdf785321dc01706d4a4de50e0a2673a31250edbfa4316a27aecd0ce3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032333"
 ---
-# <a name="ink-clipboard-sample"></a>Ejemplo de Portapapeles de lápiz
+# <a name="ink-clipboard-sample"></a>Ejemplo de Portapapeles de entrada manuscrita
 
-Este programa muestra cómo copiar y pegar entradas manuscritas en otra aplicación. También permite al usuario copiar una selección de trazos y pegar el resultado en el objeto de entrada manuscrita existente.
+Este programa muestra cómo copiar y pegar entrada manuscrita en otra aplicación. También permite al usuario copiar una selección de trazos y pegar el resultado en el objeto de entrada de lápiz existente.
 
-Están disponibles los siguientes modos del portapapeles:
+Están disponibles los siguientes modos del Portapapeles:
 
--   Formato serializado de tinta (ISF)
+-   Formato serializado de entrada de lápiz (ISF)
 -   Metarchivo de 
 -   Metarchivo mejorado (EMF)
 -   Bitmap
--   Entrada de texto
--   Boceto de tinta
+-   Entrada manuscrita de texto
+-   Entrada manuscrita de boceto
 
-La tinta de texto y el boceto son dos tipos de controles de entrada de lápiz que se usan como texto o dibujo respectivamente. Es posible pegar el ISF, la tinta de texto y el boceto de la tinta en una entrada manuscrita existente.
+La entrada manuscrita de texto y la entrada de lápiz de boceto son dos tipos de controles de entrada de lápiz que se usan como texto o dibujo, respectivamente. Es posible pegar isf, entrada manuscrita y dibujar la entrada manuscrita en la entrada de lápiz existente.
 
-Además del portapapeles, este ejemplo también muestra cómo seleccionar trazos con la herramienta lazo. El usuario puede Desplace los trazos seleccionados y modificar sus atributos de dibujo. Esta funcionalidad es un subconjunto de la funcionalidad de selección ya proporcionada por el control de superposición de tinta; se implementa aquí con fines ilustrativos.
+Además del Portapapeles, en este ejemplo también se muestra cómo seleccionar trazos con la herramienta de pestañas. El usuario puede mover los trazos seleccionados y modificar sus atributos de dibujo. Esta funcionalidad es un subconjunto de la funcionalidad de selección que ya proporciona el control de superposición de entrada de lápiz. se implementa aquí con fines ilustrativos.
 
 En este ejemplo se usan las siguientes características:
 
--   El objeto [InkCollector](/previous-versions/ms583683(v=vs.100)) .
--   Compatibilidad con el portapapeles de lápiz.
--   El uso del lazo con el método [Microsoft. Ink. Ink. HitTest](/previous-versions/dotnet/netframework-3.5/ms571330(v=vs.90)) .
+-   Objeto [InkCollector.](/previous-versions/ms583683(v=vs.100))
+-   Compatibilidad con el Portapapeles de entrada manuscrita.
+-   El uso del lasso con el [método Microsoft.Ink.Ink.HitTest.](/previous-versions/dotnet/netframework-3.5/ms571330(v=vs.90))
 
-En este ejemplo se muestra la representación de la entrada manuscrita, la copia de esa tinta y la posterior pegada en otra aplicación, como Microsoft Paint.
+En este ejemplo se muestra cómo representar la entrada de lápiz, copiarla y pegarla en otra aplicación, como Microsoft Paint.
 
-## <a name="collecting-ink-and-setting-up-the-form"></a>Recopilación de entradas manuscritas y configuración del formulario
+## <a name="collecting-ink-and-setting-up-the-form"></a>Recopilar entrada manuscrita y configurar el formulario
 
-En primer lugar, haga referencia a las interfaces de automatización de Tablet PC, que se instalan con el <entity type="reg"/> Kit de desarrollo de software (SDK) de Microsoft Windows XP Tablet PC Edition.
+En primer lugar, haga referencia a las interfaces de automatización de Tablet PC, que se instalan con el Kit de desarrollo de software (SDK) de Microsoft Windows <entity type="reg"/> XP Tablet PC Edition.
 
 
 ```C++
@@ -47,7 +47,7 @@ using Microsoft.Ink;
 
 
 
-A continuación, el formulario declara algunas constantes y campos que se indican más adelante en este ejemplo.
+A continuación, el formulario declara algunas constantes y campos que se anotan más adelante en este ejemplo.
 
 
 ```C++
@@ -95,7 +95,7 @@ private Pen dotPen = null;
 
 
 
-Por último, en el controlador de eventos de [carga](/dotnet/api/system.windows.forms.form.load?view=netcore-3.1) del formulario, se inicializa el formulario, se crea un objeto [InkCollector](/previous-versions/ms583683(v=vs.100)) para el formulario y se habilita el recopilador de tinta.
+Por último, en el controlador de eventos [Load](/dotnet/api/system.windows.forms.form.load?view=netcore-3.1) del formulario, se inicializa el formulario, se crea un objeto [InkCollector](/previous-versions/ms583683(v=vs.100)) para el formulario y se habilita el recopilador de entrada de lápiz.
 
 
 ```C++
@@ -112,15 +112,15 @@ myInkCollector.Enabled = true;
 
 Los controladores de eventos del elemento de menú actualizan principalmente el estado del formulario.
 
-El comando CLEAR quita el rectángulo de selección y elimina los trazos del objeto [Ink](/previous-versions/ms583670(v=vs.100)) del recopilador de tinta.
+El comando Borrar quita el rectángulo de selección y elimina los trazos del objeto Ink del recopilador de entrada [de](/previous-versions/ms583670(v=vs.100)) lápiz.
 
-El comando Exit deshabilita el recolector de tinta antes de salir de la aplicación.
+El comando Exit deshabilita el recopilador de entrada de lápiz antes de salir de la aplicación.
 
-El menú Edición habilita los comandos cortar y copiar según el estado de selección del formulario y permite el comando pegar basado en el contenido del portapapeles, determinado mediante el método [CanPaste](/previous-versions/dotnet/netframework-3.5/ms571314(v=vs.90)) del objeto [Ink](/previous-versions/ms583670(v=vs.100)) .
+El menú Editar habilita los comandos Cortar y Copiar en función del estado de selección del formulario y habilita el comando Pegar en función del contenido del Portapapeles, determinado mediante el método [CanPaste](/previous-versions/dotnet/netframework-3.5/ms571314(v=vs.90)) del objeto [Ink.](/previous-versions/ms583670(v=vs.100))
 
-Los comandos cortar y copiar usan un método auxiliar para copiar la entrada manuscrita en el portapapeles. El comando cortar usa un método auxiliar para eliminar los trazos seleccionados.
+Los comandos Cortar y Copiar usan un método auxiliar para copiar la entrada de lápiz en el Portapapeles. El comando Cortar usa un método auxiliar para eliminar los trazos seleccionados.
 
-El comando pegar comprueba primero el método [CanPaste](/previous-versions/dotnet/netframework-3.5/ms571314(v=vs.90)) del objeto [Ink](/previous-versions/ms583670(v=vs.100)) para ver si se puede pegar el objeto en el portapapeles. A continuación, el comando pegar calcula la esquina superior izquierda de la región de pegado, convierte las coordenadas de píxeles al espacio de entrada y pega los trazos del portapapeles en el recopilador de tinta. Por último, se actualiza el cuadro de selección.
+El comando Pegar comprueba primero el método [CanPaste](/previous-versions/dotnet/netframework-3.5/ms571314(v=vs.90)) del objeto [Ink](/previous-versions/ms583670(v=vs.100)) para ver si se puede pegar el objeto en el Portapapeles. A continuación, el comando Pegar calcula la esquina superior izquierda de la región de pegado, convierte las coordenadas de píxeles en espacio de entrada de lápiz y pega los trazos del Portapapeles en el recopilador de entrada de lápiz. Por último, se actualiza el cuadro de selección.
 
 
 ```C++
@@ -151,13 +151,13 @@ if (myInkCollector.Ink.CanPaste())
 
 
 
-Los comandos SELECT y Ink actualizan el modo de aplicación y los atributos de dibujo predeterminados, borran la selección actual, actualizan el estado del menú y actualizan el formulario. Otros controladores se basan en el estado de la aplicación para realizar la función correcta, ya sea con el lazo o la colocación de la tinta. Además, el comando SELECT agrega los controladores de eventos [NewPackets](/previous-versions/ms567621(v=vs.100)) y [Stroke](/previous-versions/ms567622(v=vs.100)) al recopilador de tinta y el comando de entrada manuscrita quita estos controladores de eventos del recopilador de tinta.
+Los comandos Seleccionar e Entrada manuscrita actualizan el modo de aplicación y los atributos de dibujo predeterminados, borran la selección actual, actualizan el estado del menú y actualizan el formulario. Otros controladores se basan en el estado de la aplicación para realizar la función correcta, ya sea con un reso o con la entrada manuscrita. Además, el comando Select agrega los controladores de eventos [NewPackets](/previous-versions/ms567621(v=vs.100)) y [Stroke](/previous-versions/ms567622(v=vs.100)) al recopilador de entrada manuscrita y el comando Ink quita estos controladores de eventos del recopilador de entrada manuscrita.
 
-Los formatos que están disponibles en el portapapeles cuando se copian los trazos se muestran en el menú Formato y el usuario selecciona el formato para copiar la tinta de esta lista. Los tipos de formatos disponibles incluyen el formato serializado de tinta (ISF), el metarchivo, el metarchivo mejorado y el mapa de bits. Los formatos de tinta de boceto y de entrada de texto se excluyen mutuamente y dependen de que la tinta se copie en el portapapeles como un objeto OLE.
+Los formatos que están disponibles en el Portapapeles cuando se copian trazos se muestran en el menú Formato y el usuario selecciona el formato para copiar la entrada de lápiz de esta lista. Los tipos de formatos disponibles incluyen Ink Serialized Format (ISF), metarchivo, metarchivo mejorado y mapa de bits. Los formatos de entrada manuscrita de boceto y entrada manuscrita de texto son mutuamente excluyentes y se basan en la entrada de lápiz que se copia en el Portapapeles como un objeto OLE.
 
-El menú estilo permite al usuario cambiar las propiedades de color y ancho del lápiz y los trazos seleccionados.
+El menú Estilo permite al usuario cambiar las propiedades de color y ancho del lápiz y los trazos seleccionados.
 
-Por ejemplo, el comando rojo establece la propiedad [color](/previous-versions/ms582103(v=vs.100)) de la propiedad [DefaultDrawingAttributes](/previous-versions/ms571711(v=vs.100)) del recopilador de tinta en el color rojo. Dado que no se ha establecido la propiedad [DrawingAttributes](/previous-versions/ms581965(v=vs.100)) del objeto [cursor](/previous-versions/ms552104(v=vs.100)) , cualquier nueva entrada de lápiz que se dibuje en el recolector de tintas heredará del color de dibujo predeterminado. Además, si hay trazos seleccionados actualmente, la propiedad color de los atributos de dibujo de cada trazo también se actualiza.
+Por ejemplo, el comando Red establece la [propiedad Color](/previous-versions/ms582103(v=vs.100)) de la propiedad [DefaultDrawingAttributes](/previous-versions/ms571711(v=vs.100)) del recopilador de entrada manuscrita en el color rojo. Dado que no se ha establecido la propiedad [DrawingAttributes](/previous-versions/ms581965(v=vs.100)) del [objeto Cursor,](/previous-versions/ms552104(v=vs.100)) cualquier nueva entrada de lápiz dibujada en el recopilador de entrada de lápiz hereda el color de dibujo predeterminado. Además, si hay trazos seleccionados actualmente, también se actualiza la propiedad Color de los atributos de dibujo de cada trazo.
 
 
 ```C++
@@ -183,21 +183,21 @@ private void SetColor(Color newColor)
 
 ## <a name="handling-mouse-events"></a>Controlar eventos del mouse
 
-El controlador de eventos [MouseMove](/previous-versions/ms567617(v=vs.100)) comprueba el modo de aplicación. Si el modo es MoveInk y un botón del mouse está inactivo, el controlador mueve los trazos usando el método move de la colección [Strokes](/previous-versions/ms552701(v=vs.100)) y actualiza el cuadro de selección. De lo contrario, el controlador comprueba para determinar si el rectángulo de selección contiene el cursor, habilita la recopilación de entradas de lápiz en consecuencia y también establece el cursor según corresponda.
+El [controlador de eventos MouseMove](/previous-versions/ms567617(v=vs.100)) comprueba el modo de aplicación. Si el modo es MoveInk y un botón del mouse está fuera de servicio, el controlador mueve los trazos mediante el método Move de la colección [Strokes](/previous-versions/ms552701(v=vs.100)) y actualiza el cuadro de selección. De lo contrario, el controlador comprueba si el rectángulo de selección contiene el cursor, habilita la recopilación de entrada de lápiz en consecuencia y también establece el cursor en consecuencia.
 
-El controlador de eventos [MouseDown](/previous-versions/ms567616(v=vs.100)) comprueba la configuración del cursor. Si el cursor se establece en [SizeAll](/dotnet/api/system.windows.forms.cursors.sizeall?view=netcore-3.1), el controlador establece el modo de aplicación en MoveInk y registra la ubicación del cursor. De lo contrario, si hay una selección actual, desactívela.
+El [controlador de eventos MouseDown](/previous-versions/ms567616(v=vs.100)) comprueba la configuración del cursor. Si el cursor se establece en [SizeAll](/dotnet/api/system.windows.forms.cursors.sizeall?view=netcore-3.1), el controlador establece el modo de aplicación en MoveInk y registra la ubicación del cursor. De lo contrario, si hay una selección actual, descájala.
 
-El controlador de eventos [MouseUp](/previous-versions/ms567618(v=vs.100)) comprueba el modo de aplicación. Si el modo es MoveInk, el controlador establece el modo de aplicación basado en el estado de activación del comando SELECT.
+El [controlador de eventos MouseUp](/previous-versions/ms567618(v=vs.100)) comprueba el modo de aplicación. Si el modo es MoveInk, el controlador establece el modo de aplicación en función del estado activado del comando Select.
 
-El evento [NewPackets](/previous-versions/ms567621(v=vs.100)) se desencadena en el modo de selección cuando el recopilador de tinta recibe nuevos datos de paquete. Si la aplicación está en modo de selección, es necesario interceptar los nuevos paquetes y usarlos para dibujar el lazo de selección.
+El [evento NewPackets](/previous-versions/ms567621(v=vs.100)) se genera en modo de selección cuando el recopilador de entrada de lápiz recibe nuevos datos de paquetes. Si la aplicación está en modo de selección, es necesario interceptar los nuevos paquetes y usarlos para dibujar el lasso de selección.
 
-La coordenada de cada paquete se convierte en píxeles, se restringe al área de dibujo y se agrega a la colección de puntos del lazo. A continuación, se llama a un método auxiliar para dibujar el lazo en el formulario.
+La coordenada de cada paquete se convierte en píxeles, se restringe al área de dibujo y se agrega a la colección de puntos del lasso. A continuación, se llama a un método auxiliar para dibujar el lasso en el formulario.
 
 ## <a name="handling-a-new-stroke"></a>Controlar un nuevo trazo
 
-El evento [Stroke](/previous-versions/ms567622(v=vs.100)) se desencadena en el modo de selección cuando se dibuja un nuevo trazo. Si la aplicación está en modo de selección, este trazo corresponde al lazo y es necesario actualizar la información de los trazos seleccionados.
+El [evento Stroke](/previous-versions/ms567622(v=vs.100)) se genera en el modo de selección cuando se dibuja un nuevo trazo. Si la aplicación está en modo de selección, este trazo corresponde al lasso y es necesario actualizar la información de los trazos seleccionados.
 
-El controlador cancela el evento [Stroke](/previous-versions/ms567622(v=vs.100)) , comprueba si hay más de dos puntos de lazo, copia la colección Points en una matriz de objetos [Point](/dotnet/api/system.drawing.point?view=netcore-3.1) y convierte las coordenadas de los puntos de la matriz de píxeles a espacio de entrada manuscrita. A continuación, el controlador usa el método [HitTest](/previous-versions/dotnet/netframework-3.5/ms571330(v=vs.90)) del objeto de [entrada de lápiz](/previous-versions/ms583670(v=vs.100)) para obtener los trazos seleccionados por los puntos de lazo y actualiza el estado de selección del formulario. Por último, el trazo que provocó el evento se quita de la colección de trazos seleccionados, se vacía la colección de puntos de lazo y un método auxiliar dibuja el rectángulo de selección.
+El controlador cancela el evento [Stroke,](/previous-versions/ms567622(v=vs.100)) busca más de dos puntos de pestaña, copia la colección Points en una matriz de objetos [Point](/dotnet/api/system.drawing.point?view=netcore-3.1) y convierte las coordenadas de los puntos de la matriz de píxeles al espacio de entrada de lápiz. A continuación, el controlador usa el método [HitTest](/previous-versions/dotnet/netframework-3.5/ms571330(v=vs.90)) del objeto [Ink](/previous-versions/ms583670(v=vs.100)) para obtener los trazos seleccionados por los puntos de lasso y actualiza el estado de selección del formulario. Por último, el trazo que ha elevado el evento se quita de la colección de trazos seleccionados, la colección de puntos de pestañas se vacía y un método auxiliar dibuja el rectángulo de selección.
 
 
 ```C++
@@ -241,9 +241,9 @@ SetSelection(hitStrokes);
 
 
 
-## <a name="copying-ink-to-the-clipboard"></a>Copiar la entrada manuscrita en el portapapeles
+## <a name="copying-ink-to-the-clipboard"></a>Copiar entrada de lápiz en el Portapapeles
 
-El método auxiliar CopyInkToClipboard crea un valor de [InkClipboardFormats](/previous-versions/ms583681(v=vs.100)) , comprueba el estado del menú Formato para actualizar los formatos que se van a colocar en el portapapeles y usa el método [ClipboardCopy](/previous-versions/dotnet/netframework-3.5/ms571316(v=vs.90)) del objeto de [entrada de lápiz](/previous-versions/ms583670(v=vs.100)) para copiar los trazos en el portapapeles.
+El método auxiliar CopyInkToClipboard crea un valor [InkClipboardFormats,](/previous-versions/ms583681(v=vs.100)) comprueba el estado del menú Formato para actualizar los formatos que se colocarán en el Portapapeles y usa el método [ClipboardCopy](/previous-versions/dotnet/netframework-3.5/ms571316(v=vs.90)) del objeto [Ink](/previous-versions/ms583670(v=vs.100)) para copiar los trazos en el Portapapeles.
 
 
 ```C++
@@ -272,14 +272,14 @@ else
 
 ## <a name="updating-a-selection"></a>Actualizar una selección
 
-El método auxiliar SetSelection actualiza el selectedStrokes archivado y si la colección es **null** o está **vacía**, el rectángulo de selección se establece en el rectángulo vacío. Si la colección de [trazos](/previous-versions/ms552701(v=vs.100)) seleccionada no está vacía, el método SetSelection realiza los siguientes pasos:
+El método auxiliar SetSelection actualiza el archivo selectedStrokes y, si la colección es **NULL** o **EMPTY,** el rectángulo de selección se establece en el rectángulo vacío. Si la colección [Strokes seleccionada](/previous-versions/ms552701(v=vs.100)) no está vacía, el método SetSelection realiza los pasos siguientes:
 
--   Determina el rectángulo delimitador mediante el método [GetBoundingBox](/previous-versions/dotnet/netframework-3.5/ms571376(v=vs.90)) de la colección Strokes.
--   Convierte las coordenadas del rectángulo del espacio de entrada en píxeles
--   Aumenta el rectángulo para proporcionar un espacio visual entre él y los trazos seleccionados.
--   Crea controladores de selección para el cuadro de selección actual.
+-   Determina el rectángulo delimitador mediante el método [GetBoundingBox](/previous-versions/dotnet/netframework-3.5/ms571376(v=vs.90)) de la colección de trazos.
+-   Convierte las coordenadas del rectángulo del espacio de entrada de lápiz en píxeles.
+-   Infla el rectángulo para proporcionar algo de espacio visual entre él y los trazos seleccionados.
+-   Crea identificadores de selección para el cuadro de selección actual.
 
-Por último, el método SetSelection establece la visibilidad de los controladores de selección y establece la propiedad [AutoRedraw](/previous-versions/ms571706(v=vs.100)) del recopilador de tinta en **false**, si se seleccionan los trazos.
+Por último, el método SetSelection establece la visibilidad de los identificadores de selección y establece la propiedad [AutoRedraw](/previous-versions/ms571706(v=vs.100)) del recopilador de entrada manuscrita en **FALSE,** si se seleccionan trazos.
 
 
 ```C++
@@ -358,15 +358,15 @@ Refresh();
 
 
 
-## <a name="drawing-the-lasso"></a>Dibujo del lazo
+## <a name="drawing-the-lasso"></a>Dibujar el lasso
 
-El lazo se dibuja como una serie de puntos abiertos que siguen la ruta de acceso del trazo de lazo y una línea de conector discontinua entre los dos extremos. El evento [NewPackets](/previous-versions/ms567621(v=vs.100)) se genera cuando se dibuja el lazo y el controlador de eventos pasa la información del trazo al método DrawLasso.
+El lasso se dibuja como una serie de puntos abiertos que siguen la ruta de acceso del trazo del lasso y una línea de conector discontinua entre los dos extremos. El [evento NewPackets](/previous-versions/ms567621(v=vs.100)) se genera a medida que se dibuja el lasso y el controlador de eventos pasa la información del trazo al método DrawLasso.
 
-El método auxiliar DrawLasso quita primero la línea del conector anterior y, a continuación, recorre en iteración los puntos del trazo. A continuación, DrawLasso calcula dónde se colocan los puntos a lo largo del trazo y los dibuja. Por último, dibuja una nueva línea de conector.
+El método auxiliar DrawLasso quita primero la línea del conector anterior y, a continuación, recorre en iteración los puntos del trazo. A continuación, DrawLasso calcula dónde colocar los puntos a lo largo del trazo y los dibuja. Por último, dibuja una nueva línea del conector.
 
-## <a name="closing-the-form"></a>Cierre del formulario
+## <a name="closing-the-form"></a>Cerrar el formulario
 
-El método [Dispose](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) del formulario desecha el objeto [InkCollector](/previous-versions/ms583683(v=vs.100)) , myInkCollector.
+El método [Dispose del formulario](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) elimina el [objeto InkCollector,](/previous-versions/ms583683(v=vs.100)) myInkCollector.
 
  
 

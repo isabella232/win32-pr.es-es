@@ -1,6 +1,6 @@
 ---
 title: MSMQ-Sites atributo
-description: Lista de sitios a los que pertenece el equipo (una matriz de objectGUID de los sitios, normalmente no más de un GUID).
+description: La lista de sitios a los que pertenece el equipo (una matriz de los objectGUID de los sitios, normalmente no más de un GUID).
 ms.assetid: 0f6cfc3a-9edb-4291-a5df-06c0f1a6add8
 ms.tgt_platform: multiple
 keywords:
@@ -23,7 +23,7 @@ ms.locfileid: "118960394"
 ---
 # <a name="msmq-sites-attribute"></a>MSMQ-Sites atributo
 
-Lista de sitios a los que pertenece el equipo (una matriz de objectGUID de los sitios, normalmente no más de un GUID).
+La lista de sitios a los que pertenece el equipo (una matriz de los objectGUID de los sitios, normalmente no más de un GUID).
 
 
 
@@ -53,7 +53,7 @@ Lista de sitios a los que pertenece el equipo (una matriz de objectGUID de los s
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -74,7 +74,7 @@ Lista de sitios a los que pertenece el equipo (una matriz de objectGUID de los s
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -137,7 +137,7 @@ Lista de sitios a los que pertenece el equipo (una matriz de objectGUID de los s
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -158,7 +158,7 @@ Lista de sitios a los que pertenece el equipo (una matriz de objectGUID de los s
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |

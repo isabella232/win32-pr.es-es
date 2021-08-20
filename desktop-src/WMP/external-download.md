@@ -1,11 +1,11 @@
 ---
-title: External. download (método)
-description: Tenga en cuenta que en este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El método download inicia la descarga de un conjunto de elementos multimedia.
+title: Método External.download
+description: Nota En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El método de descarga inicia la descarga de un conjunto de elementos multimedia.
 ms.assetid: 10bae41c-0658-4712-8a7e-375a1ec6dc25
 keywords:
-- método de descarga de Windows Media Player
-- método de descarga de Windows Media Player, clase externa
-- Clase externa Windows Media Player, método download
+- descargar método Reproductor de Windows Media
+- download method Reproductor de Windows Media , External (Clase)
+- Clase externa Reproductor de Windows Media , método download
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35ef0c6e6c32e8959e402080796f29a3860fe728
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 766f96a6db5f2114724e7545eaac7a269bf52e2e657872a8078b490621c794df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649225"
 ---
-# <a name="externaldownload-method"></a>External. download (método)
+# <a name="externaldownload-method"></a>Método External.download
 
 > [!Note]  
-> En este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-El método **download** inicia la descarga de un conjunto de elementos multimedia.
+El **método** de descarga inicia la descarga de un conjunto de elementos multimedia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,17 +48,17 @@ External.download(
 
 <dl> <dt>
 
-*Tipo* \[ de de\]
+*Tipo* \[ En\]
 </dt> <dd>
 
-Una [constante de ubicación de biblioteca](library-location-constants.md) que especifica el tipo de elemento que se va a descargar. Por ejemplo, CPTrackID especifica que se van a descargar una o más pistas.
+Constante [de ubicación de biblioteca](library-location-constants.md) que especifica el tipo de elemento que se va a descargar. Por ejemplo, CPTrackID especifica que se van a descargar una o varias pistas.
 
 </dd> <dt>
 
-*Identificadores* \[ de\]
+*IDs (IDs)* \[ En\]
 </dt> <dd>
 
-**Cadena** que contiene los identificadores, delimitados por punto y coma, de los elementos multimedia que se van a descargar.
+**Cadena** que contiene los identificadores, delimitados por punto y coma, de los elementos multimedia que se descargarán.
 
 </dd> </dl>
 
@@ -72,7 +72,7 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 11.<br/>                                                |
+| Versión<br/> | Reproductor de Windows Media 11.<br/>                                                |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -84,13 +84,13 @@ Este método no devuelve ningún valor.
 [**Descargar contenido multimedia**](downloading-media-content.md)
 </dt> <dt>
 
-[**Objeto externo para las tiendas en línea de tipo 1**](external-object-for-type-1-online-stores.md)
+[**Objeto externo para almacenes en línea de tipo 1**](external-object-for-type-1-online-stores.md)
 </dt> <dt>
 
-[**External. Buy**](external-buy.md)
+[**External.buy**](external-buy.md)
 </dt> <dt>
 
-[**IWMPContentPartner::D scargar**](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-download)
+[**IWMPContentPartner::D ownload**](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-download)
 </dt> </dl>
 
  

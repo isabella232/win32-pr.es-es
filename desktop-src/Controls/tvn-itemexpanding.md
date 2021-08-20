@@ -3,7 +3,7 @@ title: TVN_ITEMEXPANDING de notificación (Commctrl.h)
 description: Notifica a la ventana primaria de un control de vista de árbol que la lista de elementos secundarios de un elemento primario está a punto de expandirse o contraerse. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 5ce256df-49e5-4fbf-9cdc-79dd2edbd8ec
 keywords:
-- TVN_ITEMEXPANDING código de notificación Windows controles
+- TVN_ITEMEXPANDING de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -55,7 +55,7 @@ Devuelve **TRUE** para evitar que la lista se expanda o se contrae.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
@@ -64,7 +64,7 @@ Devuelve **TRUE** para evitar que la lista se expanda o se contrae.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

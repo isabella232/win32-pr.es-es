@@ -1,11 +1,11 @@
 ---
 title: Usar el elemento Stroke
-description: En este artículo se describe el uso del elemento Stroke de VML, una característica que está en desuso a partir de Windows Internet Explorer 9.
+description: En este artículo se describe el uso del elemento Stroke de VML, una característica que está en desuso a partir Windows Internet Explorer 9.
 ms.assetid: e3d9dbe5-e087-4b6f-8318-c7d4485cd502
 keywords:
 - Taller web, elemento de trazo
 - diseñar páginas web, elemento de trazo
-- Lenguaje de marcado de vectores (VML), elemento stroke
+- Lenguaje de marcado de vectores (VML),elemento stroke
 - VML (Lenguaje de marcado de vectores),elemento stroke
 - gráficos vectoriales, elemento de trazo
 - elemento stroke
@@ -13,10 +13,10 @@ keywords:
 - Formas de VML, elemento de trazo
 - Lenguaje de marcado de vectores (VML),atributo de propiedad dashstyle
 - VML (Lenguaje de marcado de vectores),atributo de propiedad dashstyle
-- vector graphics,dashstyle property attribute
+- gráficos vectoriales, atributo de propiedad dashstyle
 - atributo de propiedad dashstyle
 - Lenguaje de marcado de vectores (VML),atributo de propiedad opacity
-- VML (Lenguaje de marcado de vectores),atributo de propiedad opacity
+- Atributo de propiedad VML (Lenguaje de marcado de vectores),opacity
 - vector graphics,opacity property attribute
 - Atributo de propiedad opacity
 - Lenguaje de marcado de vectores (VML),atributo de propiedad linestyle
@@ -33,23 +33,23 @@ keywords:
 - atributo de propiedad filltype
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dff7a4b3bc654063fe8156476cc9c52453247a0b
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: e0cb69452abe5b3d743036f6a4db094da196281b575a6db65aa48535126fd917
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057520"
 ---
 # <a name="using-the-stroke-element"></a>Usar el elemento Stroke
 
-En este tema se describe VML, una característica que está en desuso a partir de Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
 > A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
  
 
-Usar `<stroke>`
+Uso de `<stroke>`
 
 Como ha aprendido, puede usar los atributos de propiedad **strokecolor** y **strokeweight** de una forma predefinida( como , , , , , , , ) para especificar el color y el peso del contorno de una `<oval>` `<line>` `<polyline>` `<curve>` `<rect>` `<roundrect>` `<arc>` forma. En este tema, se muestra cómo dibujar una forma que tiene un esquema más avanzado.
 
@@ -95,7 +95,7 @@ strokecolor="red" strokeweight="2pt">
 
 
 
-Si cambia el atributo de **propiedad dashstyle** a "dash", puede crear una línea de guiones, como se muestra en la siguiente representación de VML:
+Si cambia el atributo de propiedad **dashstyle** a "dash", puede crear una línea de guiones, como se muestra en la siguiente representación de VML:
 
 ![dash.gif (137 bytes)](images/dash.gif)
 
@@ -159,7 +159,7 @@ strokecolor="red" strokeweight="2pt">
 
 
 
-Si coloca dentro del elemento , puede crear un rectángulo que tenga un contorno discontinuo y de puntos, como se muestra `<v:stroke dashstyle="dashdot" />` en la siguiente representación de `<rect>` VML:
+Si coloca dentro del elemento , puede crear un rectángulo que tenga un contorno discontinuo y punteado, como se muestra `<v:stroke dashstyle="dashdot" />` en la siguiente representación de `<rect>` VML:
 
 ![rect.gif (615 bytes)](images/rect.gif)
 
@@ -217,7 +217,7 @@ strokeweight="2pt">
 
 ## <a name="linestyle"></a>linestyle
 
-Puede usar el atributo **de propiedad linestyle** del `<stroke>` sub elemento para dibujar un contorno con varios estilos de línea.
+Puede usar el atributo **de propiedad linestyle** del `<stroke>` sub elemento para dibujar un esquema con varios estilos de línea.
 
 **Ejemplos:**
 
@@ -304,7 +304,7 @@ strokeweight="10pt">
 
 ## <a name="joinstyle"></a>joinstyle
 
-Puede usar el atributo **joinstyle** del `<stroke>` sub-elemento para definir cómo se unen las líneas.
+Puede usar el atributo **joinstyle** del `<stroke>` sub elemento para definir cómo se unen las líneas.
 
 Por ejemplo, para crear una forma que tenga el contorno de combinación redondeada, como se muestra en la ilustración siguiente, puede especificar dentro del elemento , como se muestra en la siguiente representación `<v:stroke joinstyle="round" />` `<polyline>` de VML:
 
@@ -323,7 +323,7 @@ strokecolor="red" strokeweight="20pt">
 
 
 
-Si cambia el atributo de propiedad **joinstyle** a "bevel", puede crear una forma que tenga el contorno bevel-join, como se muestra en la siguiente representación de VML:
+Si cambia el atributo de propiedad **joinstyle** a "bevel", puede crear una forma que tenga el contorno de combinación de bisel, como se muestra en la siguiente representación de VML:
 
 ![bevel.gif (650 bytes)](images/bevel.gif)
 
@@ -365,7 +365,7 @@ Puede usar el atributo **de propiedad filltype** del `<stroke>` sub elemento par
 
 **Ejemplos:**
 
-Si especifica dentro del elemento , puede crear un rectángulo redondeado con el contorno relleno sólido, como se muestra `<v:stroke filltype="solid" />` en la siguiente representación de `<roundrect>` VML:
+Si especifica dentro del elemento , puede crear un rectángulo redondeado con el contorno relleno de forma sólida, como se muestra `<v:stroke filltype="solid" />` en la siguiente representación de `<roundrect>` VML:
 
 ![solid.gif (701 bytes)](images/solidborder.gif)
 
@@ -381,7 +381,7 @@ strokeweight="15pt">
 
 
 
-Si cambia el atributo de propiedad **filltype** a "pattern", apunta el atributo de propiedad **src** a la ubicación del archivo de imagen de patrón y establece el atributo de propiedad **color2** en el segundo color de patrón, puede crear un rectángulo redondeado con un contorno de patrón, como se muestra en la siguiente representación de VML:
+Si cambia el atributo de propiedad **filltype** a "pattern", apunta el atributo de propiedad **src** a la ubicación del archivo de imagen de patrón y establece el atributo de propiedad **color2** en el segundo color de patrón, puede crear un rectángulo redondeado con un esquema de patrón, como se muestra en la siguiente representación de VML:
 
 ![pattern.gif (1055 bytes)](images/pattern.gif)
 

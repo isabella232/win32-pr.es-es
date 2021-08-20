@@ -1,7 +1,7 @@
 ---
-description: Recupera el tipo de dispositivo de hardware de adquisición de imágenes de Windows (WIA).
+description: Recupera el tipo de dispositivo de hardware Windows adquisición de imágenes (WIA).
 ms.assetid: 5f10bcd1-03a0-4cd9-8886-e1f957312c3b
-title: DeviceInfo. Type (propiedad)
+title: Propiedad DeviceInfo.Type
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 89a322890f035a1865c01be7c4bfb0bbab812fa7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 841ba87b71f79d1f9dfbf85053d914315f89f592ec16a50bd9f6baf061b989a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720391"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118035506"
 ---
-# <a name="deviceinfotype-property"></a>DeviceInfo. Type (propiedad)
+# <a name="deviceinfotype-property"></a>Propiedad DeviceInfo.Type
 
-Recupera el tipo de dispositivo de hardware de adquisición de imágenes de Windows (WIA). Los valores posibles son:
+Recupera el tipo de dispositivo de hardware Windows adquisición de imágenes (WIA). Los valores posibles son:
 
 -   DigitalCamera
 -   Escáner
@@ -48,11 +48,11 @@ Cadena que recibe el dispositivo.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4,90 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 
 
 

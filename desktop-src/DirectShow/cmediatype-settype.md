@@ -64,7 +64,7 @@ Este método no devuelve ningún valor.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

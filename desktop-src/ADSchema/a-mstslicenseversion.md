@@ -5,7 +5,7 @@ ms.assetid: 9df736d7-be9c-4ac4-a9fb-2bb669a84f2d
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD del atributo MS-TS-LicenseVersion
-- msTSLicenseVersion esquema de AD de atributos
+- Esquema de AD del atributo msTSLicenseVersion
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc5efe318157f55cad5a7cae23e6e9b189608acb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 156efd0ea3f58cdab34afec5a848f98219cdd6afebb146801d0a3c874614e9d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022573"
 ---
 # <a name="ms-ts-licenseversion-attribute"></a>Atributo MS-TS-LicenseVersion
 
@@ -30,13 +30,13 @@ Versión de licencia de Terminal Server.
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | MS-TS-LicenseVersion                        |
-| Nombre para mostrar de LDAP | msTSLicenseVersion                          |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | msTSLicenseVersion                          |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1994                     |
-| System-ID-GUID    | 0ae94a89-372f-4df2-ae8a-c64a2bc47278        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 0ae94a89-372f-4df2-ae8a-c64a2bc47278        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,13 +52,13 @@ Versión de licencia de Terminal Server.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | True         |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Verdadero         |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
@@ -73,13 +73,13 @@ Versión de licencia de Terminal Server.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | True         |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Verdadero         |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
@@ -94,13 +94,13 @@ Versión de licencia de Terminal Server.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | True         |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Verdadero         |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |

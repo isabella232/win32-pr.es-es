@@ -1,17 +1,17 @@
 ---
 description: Se ha iniciado un nuevo segmento.
 ms.assetid: 9742436a-e233-4641-a0d5-aa240cde5f28
-title: EC_SEGMENT_STARTED (DShow. h)
+title: EC_SEGMENT_STARTED (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7e7df85bddb78fe2687a017b481e6db62ba37c6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7b33d9f75dc4fa8e86b13e61c78b98a19248c16f2f627e1c1b09e536b31a73f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015923"
 ---
-# <a name="ec_segment_started"></a>segmento de EC \_ \_ iniciado
+# <a name="ec_segment_started"></a>EC \_ SEGMENT \_ STARTED
 
 Se ha iniciado un nuevo segmento.
 
@@ -22,7 +22,7 @@ Se ha iniciado un nuevo segmento.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-(**const** **Reference \_ Time** \* ) puntero en un valor de **\_ tiempo de referencia** que especifica el tiempo de flujo acumulado desde el inicio del segmento, en unidades de 100-nanosegundos.
+(**const** **REFERENCE \_ TIME**) Puntero a un valor REFERENCE TIME que especifica el tiempo de flujo acumulado desde el inicio del segmento, en \* unidades de 100 nanosegundos. **\_**
 
 </dd> <dt>
 
@@ -37,11 +37,11 @@ Se ha iniciado un nuevo segmento.
 
 Este evento no se envía a la aplicación. Las aplicaciones no pueden invalidar la acción predeterminada para este evento.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si un filtro va a enviar [**un \_ final \_ de \_ segmento de EC**](ec-end-of-segment.md) al final de un segmento, envía este evento al principio del segmento. Filter Graph Manager usa esta notificación de eventos para calcular el número \_ \_ de notificaciones de fin de segmento de EC \_ que debería esperar al final del segmento.
+Si un filtro enviará una [**EC \_ END OF \_ \_ SEGMENT**](ec-end-of-segment.md) al final de un segmento, envía este evento al principio del segmento. El administrador de gráficos de filtros usa esta notificación de eventos para calcular cuántas notificaciones EC END OF SEGMENT debe esperar \_ \_ al final del \_ segmento.
 
-De forma predeterminada, los filtros no envían eventos [**\_ \_ de fin de \_ segmento de EC**](ec-end-of-segment.md) al final de los segmentos y, por tanto, no deben enviar este evento. Para obtener más información, vea [**IMediaSeeking:: SetPositions**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-setpositions).
+De forma predeterminada, los filtros no envían eventos [**EC \_ END OF \_ \_ SEGMENT**](ec-end-of-segment.md) al final de segmentos y, por lo tanto, no deben enviar este evento. Para obtener más información, [**vea IMediaSeeking::SetPositions**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-setpositions).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,7 +49,7 @@ De forma predeterminada, los filtros no envían eventos [**\_ \_ de fin de \_ se
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: El método OnDisplayChange envía un \_ evento de visualización de \_ modificación de EC al administrador de gráficos de filtro.
+description: El método OnDisplayChange envía un evento \_ EC DISPLAY CHANGED al administrador de \_ gráficos de filtros.
 ms.assetid: e4cdcdf2-7fc2-4893-9897-97bcf2c12610
-title: Método CBaseRenderer. OnDisplayChange (Renbase. h)
+title: Método CBaseRenderer.OnDisplayChange (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1e99a8626d523e8b14b013acc9d2ead462f48df3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3f7fc5d733d90ab88f1114558947b6e72958c1d8b18d507ce612c1865fc400e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016883"
 ---
-# <a name="cbaserendererondisplaychange-method"></a>CBaseRenderer. OnDisplayChange, método
+# <a name="cbaserendererondisplaychange-method"></a>Método CBaseRenderer.OnDisplayChange
 
-El `OnDisplayChange` método envía un evento de [**\_ visualización de \_ modificación de EC**](ec-display-changed.md) al administrador de gráficos de filtro.
+El `OnDisplayChange` método envía un evento EC DISPLAY [**\_ \_ CHANGED**](ec-display-changed.md) al administrador de gráficos de filtro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si se ha expuesto el evento o **false** en caso contrario.
+Devuelve **TRUE** si se ha publicado el evento o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los representadores de vídeo deben llamar a este método en respuesta a \_ los mensajes de WM DISPLAYCHANGE. Si el PIN de entrada está conectado, el método envía un \_ evento de visualización de \_ modificación de EC al administrador de gráficos de filtro.
+Los representadores de vídeo deben llamar a este método en respuesta a los mensajes \_ DISPLAYCHANGE de WM. Si el pin de entrada está conectado, el método envía un evento \_ EC DISPLAY CHANGED al administrador de \_ gráficos de filtro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Los representadores de vídeo deben llamar a este método en respuesta a \_ los 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Los representadores de vídeo deben llamar a este método en respuesta a \_ los 
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

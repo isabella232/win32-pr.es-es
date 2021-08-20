@@ -1,21 +1,21 @@
 ---
-description: Al crear una voz de origen, puede pasarle una estructura que defina devoluciones de llamada para determinados eventos de audio. Puede utilizar estas devoluciones de llamada para realizar acciones o señalar otro código.
+description: Al crear una voz de origen, puede pasarle una estructura que defina devoluciones de llamada para determinados eventos de audio. Puede usar estas devoluciones de llamada para realizar acciones o para señalar otro código.
 ms.assetid: 0bace0c5-9171-efd8-9a38-2c2b3452f73f
 title: 'Cómo: usar devoluciones de llamadas de voces de origen'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c10005ed838a22ea0dfce59312d6f293c213c39
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8fa19de67c8e02bfa4c283fac8677a7eae2325b074eef5d5f5c7db644b3f113a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583775"
 ---
 # <a name="how-to-use-source-voice-callbacks"></a>Cómo: usar devoluciones de llamadas de voces de origen
 
-Al crear una voz de origen, puede pasarle una estructura que defina devoluciones de llamada para determinados eventos de audio. Puede utilizar estas devoluciones de llamada para realizar acciones o señalar otro código.
+Al crear una voz de origen, puede pasarle una estructura que defina devoluciones de llamada para determinados eventos de audio. Puede usar estas devoluciones de llamada para realizar acciones o para señalar otro código.
 
-1.  Cree una clase que herede de la interfaz [**IXAudio2VoiceCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2voicecallback) . Todas las funciones miembro de **IXAudio2VoiceCallback** son puramente virtuales y deben definirse. La única función de interés en este ejemplo es [**OnStreamEnd**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voicecallback-onstreamend). Por lo tanto, el resto de las funciones son códigos auxiliares. La función **OnStreamEnd** desencadena un evento que indica que el sonido ha terminado de reproducirse.
+1.  Cree una clase que herede de la [**interfaz IXAudio2VoiceCallback.**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2voicecallback) Todas las funciones miembro de **IXAudio2VoiceCallback** son puramente virtuales y deben definirse. La única función de interés en este ejemplo es [**OnStreamEnd.**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2voicecallback-onstreamend) Por lo tanto, el resto de las funciones son códigos auxiliares. La **función OnStreamEnd** desencadena un evento que indica que el sonido ha terminado de reproducirse.
 
     ```
     class VoiceCallback : public IXAudio2VoiceCallback
@@ -40,7 +40,7 @@ Al crear una voz de origen, puede pasarle una estructura que defina devoluciones
 
     
 
-2.  Cree una [**voz de origen**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2sourcevoice) con [**IXAudio2:: CreateSourceVoice**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createsourcevoice) mediante una instancia de la clase de devolución de llamada creada anteriormente como parámetro pCallback.
+2.  Cree una [**voz de origen**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2sourcevoice) con [**IXAudio2::CreateSourceVoice**](/windows/win32/api/xaudio2/nf-xaudio2-ixaudio2-createsourcevoice) mediante una instancia de la clase de devolución de llamada creada anteriormente como parámetro pCallback.
 
     ```
     VoiceCallback voiceCallback;
@@ -50,7 +50,7 @@ Al crear una voz de origen, puede pasarle una estructura que defina devoluciones
 
     
 
-3.  Después de iniciar la voz, use el método [**WaitForSingleObjectEx**](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobjectex) para esperar a que se desencadene el evento.
+3.  Después de iniciar la voz, use el [**método WaitForSingleObjectEx**](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobjectex) para esperar a que se desencadene el evento.
 
     ```
     WaitForSingleObjectEx( voiceCallback.hBufferEndEvent, INFINITE, TRUE );

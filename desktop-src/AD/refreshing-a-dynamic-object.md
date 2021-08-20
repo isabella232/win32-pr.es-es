@@ -16,11 +16,11 @@ ms.locfileid: "119025192"
 
 Un cliente puede actualizar el período de vida (TTL) de una entrada de directorio determinada para mantenerlo activo de una de estas dos maneras:
 
--   Realizar una actualización LDAP al valor de su **atributo entryTTL** antes de que la entrada se recolecte como elemento no utilizados. Este método para actualizar una entrada dinámica en el directorio es una característica adicional (opcional) de Active Directory Domain Services que rfc 2589 no especifica.
--   Realizar una operación extendida ldap con un OID de 1.3.6.1.4.1.1466.101.119.1 para la actualización de TTL, como se indica en RFC 2589. Este OID se define como **\_ \_ \_ \_ OID de LDAP TTL EXTENDED OP** en WINLDAP.H.
+-   Realizar una actualización LDAP al valor de su **atributo entryTTL** antes de que la entrada se recolecte como elemento no utilizados. Este método para actualizar una entrada dinámica en el directorio es una característica adicional (opcional) de Active Directory Domain Services no especificada por RFC 2589.
+-   Realizar una operación extendida ldap con un OID de 1.3.6.1.4.1.1466.101.119.1 para la actualización de TTL, tal y como se establece en rfc 2589. Este OID se define como **LDAP \_ TTL \_ EXTENDED OP \_ \_ OID** en WINLDAP.H.
 
  
-**Comentario:: el recolector de elementos no utilizados quita los objetos dinámicos cuando han expirado, no hay ninguna fase en la que el objeto sea un lápido cuando ha expirado. Debe tener cuidado con la latencia de replicación de AD al actualizar objetos. Debe asegurarse de que la actualización para actualizar el TTL llega lo suficientemente pronto como para que todas las réplicas del contexto de nomenclatura (catálogo completo y global) vean la transacción de actualización antes de que el objeto expire localmente.
+**Comentario:: El recolector de elementos no utilizados quita los objetos dinámicos cuando han expirado, no hay ninguna fase de que el objeto sea un lápido cuando ha expirado. Debe tener cuidado con la latencia de replicación de AD al actualizar objetos. Debe asegurarse de que la actualización para actualizar el TTL llega lo suficientemente pronto como para que todas las réplicas del contexto de nomenclatura (catálogo completo y global) vean la transacción de actualización antes de que el objeto expire localmente.
 
  
 

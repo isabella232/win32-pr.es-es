@@ -1,7 +1,7 @@
 ---
-description: Marca que especifica si la ventana debe obtener su paleta. Si es TRUE, la ventana no obtiene su paleta. El valor predeterminado es FALSE.
+description: Marca que especifica si la ventana debe realizar su paleta. Si es TRUE, la ventana no se da cuenta de su paleta. El valor predeterminado es FALSE.
 ms.assetid: 7039d41a-daea-4128-9e1c-3cbd0c05ce13
-title: 'Miembro CBaseWindow:: m_bNoRealize (Winutil. h)'
+title: CBaseWindow::m_bNoRealize miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e24368eb0da2ad16b66d7b06942c83f3e33937da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 45dddb9d596929674adf03ba042d6464718c58c225ef33e568924ef526618e91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016573"
 ---
-# <a name="cbasewindowm_bnorealize-member"></a>Miembro bNoRealize CBaseWindow:: m \_
+# <a name="cbasewindowm_bnorealize-member"></a>CBaseWindow::m \_ bNoRealize member
 
-Marca que especifica si la ventana debe obtener su paleta. Si **es true**, la ventana no obtiene su paleta. El valor predeterminado es **FALSE**.
+Marca que especifica si la ventana debe realizar su paleta. Si **es TRUE,** la ventana no se da cuenta de su paleta. El valor predeterminado es **FALSE**.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ BYTE m_bNoRealize;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ BYTE m_bNoRealize;
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

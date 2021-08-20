@@ -32,7 +32,7 @@ Este atributo se usa para recuperar el número de días antes de que se cambie a
 | CN                | ms-DS-ManagedPasswordInterval        |
 | Ldap-Display-Name | msDS-ManagedPasswordInterval         |
 | Size              | \-                                   |
-| Privilegio actualizar  | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2199              |
 | System-Id-Guid    | f8758ef7-ac76-8843-a2ee-a26b4dcaf409 |
@@ -48,7 +48,7 @@ Este atributo se usa para recuperar el número de días antes de que se cambie a
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                          |
 | MAPI-Id                | \-                                                                                          |

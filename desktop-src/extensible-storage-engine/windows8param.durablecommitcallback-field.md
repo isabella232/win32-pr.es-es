@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: Windows8Param. DurableCommitCallback, campo'
-title: Campo Windows8Param. DurableCommitCallback (Microsoft. ISAM. esent. Interop. Windows8)
+description: Más información sobre el campo Windows8Param.DurableCommitCallback
+title: Campo Windows8Param.DurableCommitCallback (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: DurableCommitCallback field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows8.Windows8Param.DurableCommitCallback
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8param.durablecommitcallback(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 09764017615809484ed4509eb488d36691218e71
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e27b7df443f0ed8576d9590eb39adf53f803b783160f701601e16a9561c3bf1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038493"
 ---
-# <a name="windows8paramdurablecommitcallback-field"></a>Windows8Param. DurableCommitCallback, campo
+# <a name="windows8paramdurablecommitcallback-field"></a>Campo Windows8Param.DurableCommitCallback
 
-Devolución de llamada para cuando se vacíe el registro.
+Devolución de llamada para cuando se vacía el registro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ value = Windows8Param.DurableCommitCallback
 public const JET_param DurableCommitCallback
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -61,4 +61,4 @@ public const JET_param DurableCommitCallback
 
 [Miembros de Windows8Param](./windows8param-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

@@ -74,7 +74,7 @@ Tipo de datos: **sint32**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica que un proveedor de clase o instancia proporciona datos o recupera datos de WMI y el repositorio Modelo de información común (CIM). Los proveedores de extracción admiten el acceso dinámico a sus datos; y los proveedores de inserción almacenan sus datos en el repositorio CIM y usan WMI para proporcionar acceso a él. Para obtener más información, vea [Determinar el estado de inserción o extracción.](determining-push-or-pull-status.md) El valor predeterminado es 0 (cero).
+Indica que una clase o proveedor de instancias proporciona datos o recupera datos de WMI y el repositorio Modelo de información común (CIM). Los proveedores de extracción admiten el acceso dinámico a sus datos; y los proveedores de inserción almacenan sus datos en el repositorio CIM y usan WMI para proporcionar acceso a ellos. Para obtener más información, vea [Determinar el estado de inserción o extracción.](determining-push-or-pull-status.md) El valor predeterminado es 0 (cero).
 
 <dt>
 
@@ -107,7 +107,7 @@ Provider es un proveedor de inserción.
 
 </dt> <dd>
 
-Provider es un proveedor de push-verify. Tenga en cuenta que los proveedores de comprobación de inserción no se admiten actualmente.
+Provider es un proveedor de inserción y comprobación. Tenga en cuenta que los proveedores de comprobación de inserción no se admiten actualmente.
 
 </dd> </dl>
 
@@ -135,7 +135,7 @@ Tipo de datos: **matriz de** cadenas
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Matriz de los tipos de compatibilidad incluida por el proveedor para el procesamiento de consultas. Los proveedores de clases no admiten todos los tipos de consultas. Los proveedores de instancias pueden **establecer QuerySupportLevels** **en NULL** si no admiten el procesamiento de consultas. Los proveedores que admiten consultas implementan el método [**IWbemServices::ExecQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync) y establecen esta propiedad en uno o varios de los valores siguientes.
+Matriz de los tipos de compatibilidad incluida por el proveedor para el procesamiento de consultas. Los proveedores de clases no admiten todos los tipos de consultas. Los proveedores de instancias pueden **establecer QuerySupportLevels** en **NULL** si no admiten el procesamiento de consultas. Los proveedores que admiten consultas implementan el método [**IWbemServices::ExecQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync) y establecen esta propiedad en uno o varios de los valores siguientes.
 
 <dt>
 
@@ -205,7 +205,7 @@ El proveedor admite la eliminación de clases o instancias mediante la implement
 Falso
 </dt> <dd>
 
-El proveedor no admite la eliminación de datos y devuelve **WBEM \_ E PROVIDER NOT \_ \_ \_ CAPABLE** de [**DeleteClassAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-deleteclassasync) [**o DeleteInstanceAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-deleteinstanceasync).
+El proveedor no admite la eliminación de datos y devuelve **WBEM \_ E PROVIDER NOT \_ \_ \_ CAPABLE** de [**DeleteClassAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-deleteclassasync) o [**DeleteInstanceAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-deleteinstanceasync)
 
 </dd> </dl>
 
@@ -231,7 +231,7 @@ Si **es True**, el proveedor admite la enumeración de datos.
 
 </dt> <dd>
 
-El proveedor admite la enumeración de datos mediante la implementación de uno de los proveedores de clases [**IWbemServices::CreateClassEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createclassenumasync) o [**IWbemServices::CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) (proveedores de instancias).
+El proveedor admite la enumeración de datos mediante la implementación de uno de los proveedores de clases [**IWbemServices::CreateClassEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createclassenumasync) (proveedores de clases) o [**IWbemServices::CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) (proveedores de instancias).
 
 </dd> <dt>
 
@@ -257,7 +257,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Si **es True,** el proveedor de clase o instancia admite la recuperación de datos.
+Si **es True**, la clase o el proveedor de instancias admite la recuperación de datos.
 
 <dt>
 
@@ -271,7 +271,7 @@ El proveedor admite la recuperación de datos mediante [**la implementación de 
 Falso
 </dt> <dd>
 
-El proveedor no admite la recuperación de datos y devuelve **WBEM \_ E PROVIDER \_ NOT \_ \_ CAPABLE** desde [**GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync).
+El proveedor no admite la recuperación de datos y devuelve **WBEM \_ E PROVIDER \_ NOT \_ \_ CAPABLE** de [**GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync).
 
 </dd> </dl>
 
@@ -286,7 +286,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Si **es True**, el proveedor de clase o instancia admite la modificación de datos.
+Si **es True**, la clase o el proveedor de instancias admite la modificación de datos.
 
 <dt>
 
@@ -329,7 +329,7 @@ No se usa.
 
 ## <a name="remarks"></a>Comentarios
 
-La **\_ \_ clase InstanceProviderRegistration** se deriva de [**\_ \_ ObjectProviderRegistration**](--objectproviderregistration.md), que se deriva de [**\_ \_ ProviderRegistration**](--providerregistration.md). Solo los administradores pueden registrar un proveedor de instancias mediante la creación de una instancia de [**\_ \_ Win32Provider**](--win32provider.md) e **\_ \_ InstanceProviderRegistration**. Solo los administradores pueden eliminar un proveedor.
+La **\_ \_ clase InstanceProviderRegistration** se deriva de [**\_ \_ ObjectProviderRegistration**](--objectproviderregistration.md), que se deriva de [**\_ \_ ProviderRegistration.**](--providerregistration.md) Solo los administradores pueden registrar un proveedor de instancias mediante la creación de una instancia de [**\_ \_ Win32Provider**](--win32provider.md) e **\_ \_ InstanceProviderRegistration**. Solo los administradores pueden eliminar un proveedor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -343,7 +343,7 @@ La **\_ \_ clase InstanceProviderRegistration** se deriva de [**\_ \_ ObjectProv
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

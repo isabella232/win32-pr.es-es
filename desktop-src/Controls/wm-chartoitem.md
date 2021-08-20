@@ -1,6 +1,6 @@
 ---
 title: WM_CHARTOITEM mensaje (Winuser.h)
-description: Enviado por un cuadro de lista con el estilo WANTKEYBOARDINPUT de LBS \_ a su propietario en respuesta a un mensaje CHAR de \_ WM.
+description: Enviado por un cuadro de lista con el estilo \_ LBS WANTKEYBOARDINPUT a su propietario en respuesta a un mensaje \_ CHAR de WM.
 ms.assetid: f941c00b-b836-4f1b-b8cf-8ac2b0704af3
 keywords:
 - WM_CHARTOITEM controles de Windows mensaje
@@ -23,7 +23,7 @@ ms.locfileid: "118957534"
 ---
 # <a name="wm_chartoitem-message"></a>Mensaje \_ CHARTOITEM de WM
 
-Enviado por un cuadro de lista con el estilo [**\_ WANTKEYBOARDINPUT de LBS**](list-box-styles.md) a su propietario en respuesta a un [**mensaje CHAR \_ de WM.**](/windows/desktop/inputdev/wm-char)
+Enviado por un cuadro de lista con el estilo [**\_ LBS WANTKEYBOARDINPUT**](list-box-styles.md) a su propietario en respuesta a un [**mensaje CHAR \_ de WM.**](/windows/desktop/inputdev/wm-char)
 
 
 ```C++
@@ -49,7 +49,7 @@ Loword [**especifica**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.
 *lParam* 
 </dt> <dd>
 
-Identificador en el cuadro de lista.
+Identificador del cuadro de lista.
 
 </dd> </dl>
 
@@ -63,13 +63,13 @@ La [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindo
 
 Solo los cuadros de lista dibujados por el propietario que no tengan el estilo [**\_ HASSTRINGS de LBS**](list-box-styles.md) pueden recibir este mensaje.
 
-Si un procedimiento de cuadro de diálogo controla este mensaje, debe convertir el valor devuelto deseado en **bool** y devolver el valor directamente. Se omite el valor *\_ MSGRESULT* de DWL establecido por la función [**SetWindowLong.**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga)
+Si un procedimiento de cuadro de diálogo controla este mensaje, debe convertir el valor devuelto deseado en **un valor BOOL** y devolver el valor directamente. Se omite el valor *\_ MSGRESULT* de DWL establecido por la función [**SetWindowLong.**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
@@ -77,7 +77,7 @@ Si un procedimiento de cuadro de diálogo controla este mensaje, debe convertir 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

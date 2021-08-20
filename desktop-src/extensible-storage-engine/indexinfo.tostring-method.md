@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: IndexInfo. ToString (método)'
-title: IndexInfo. ToString (método)
+description: Más información sobre el método IndexInfo.ToString
+title: Método IndexInfo.ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.IndexInfo.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.indexinfo.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: af12b5d32acd77b40d90a24823a0956bcf665571
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 270bded6e6d126b513833c5ea97856fc2a4201a19d3915babd4330ac4757c753
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039473"
 ---
-# <a name="indexinfotostring-method"></a>IndexInfo. ToString (método)
+# <a name="indexinfotostring-method"></a>Método IndexInfo.ToString
 
-Devuelve una [cadena](/dotnet/api/system.string) que representa el [IndexInfo](./indexinfo-class.md)actual.
+Devuelve un [objeto String](/dotnet/api/system.string) que representa el [objeto IndexInfo actual.](./indexinfo-class.md)
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Cadena](/dotnet/api/system.string) que representa el [IndexInfo](./indexinfo-class.md)actual.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Cadena [que](/dotnet/api/system.string) representa el [objeto IndexInfo actual.](./indexinfo-class.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase IndexInfo](./indexinfo-class.md)
+[IndexInfo (clase)](./indexinfo-class.md)
 
-[Miembros de IndexInfo](./indexinfo-members.md)
+[Miembros IndexInfo](./indexinfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

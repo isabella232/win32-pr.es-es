@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_GETRECT (commctrl. h)
+title: TB_GETRECT mensaje (Commctrl.h)
 description: Recupera el rectángulo delimitador para un botón de la barra de herramientas especificado.
 ms.assetid: a93885eb-7eb7-4434-ad51-80fb30d3bfa1
 keywords:
-- TB_GETRECT controles de mensajes de Windows
+- TB_GETRECT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 889d067eb282e3d834ba4dc0cf6711c0561d86e6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bc9a2b12fd2331a8346addbb5702a7837c9c0b28108850d3a4fd0d8e35432fa5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078309"
 ---
-# <a name="tb_getrect-message"></a>\_Mensaje GETRECT TB
+# <a name="tb_getrect-message"></a>Mensaje \_ DE TB GETRECT
 
 Recupera el rectángulo delimitador para un botón de la barra de herramientas especificado.
 
@@ -39,27 +39,27 @@ Identificador de comando del botón.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**Rect**](/previous-versions//dd162897(v=vs.85)) que recibirá la información del rectángulo delimitador.
+Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) que recibirá la información del rectángulo delimitador.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si es correcto o cero de lo contrario.
+Devuelve un valor distinto de cero si se realiza correctamente o cero en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este mensaje no recupera el rectángulo delimitador de los botones cuyo estado está establecido en el valor [**\_ oculto TBSTATE**](toolbar-button-states.md) .
+Este mensaje no recupera el rectángulo delimitador para los botones cuyo estado se establece en el [**valor TBSTATE \_ HIDDEN.**](toolbar-button-states.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

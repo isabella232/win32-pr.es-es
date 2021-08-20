@@ -55,7 +55,7 @@ Devuelve S \_ OK si se usa el destino predeterminado; de lo contrario, devuelve 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

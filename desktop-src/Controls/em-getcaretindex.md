@@ -1,9 +1,9 @@
 ---
-title: Mensaje de EM_GETCARETINDEX (CommCtrl. h)
-description: Obtiene el índice de base cero de la posición del símbolo de intercalación en un control de edición.
+title: EM_GETCARETINDEX mensaje (CommCtrl.h)
+description: Obtiene el índice de base cero de la posición del caret en un control de edición.
 ms.assetid: cf12aaea-cfa7-4804-ae34-fd0992332288
 keywords:
-- EM_GETCARETINDEX controles de mensajes de Windows
+- EM_GETCARETINDEX controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6653e2ae0e2126941e3d8977a593300b86051800
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4080acdc7ee338b76f80b97c81a952188fc74774254476771f9ff47e87f3fdff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019843"
 ---
-# <a name="em_getcaretindex-message"></a>\_Mensaje GETCARETINDEX em
+# <a name="em_getcaretindex-message"></a>Mensaje \_ EM GETCARETINDEX
 
-Obtiene el índice de base cero de la posición del símbolo de intercalación en un control de edición.
+Obtiene el índice de base cero de la posición del caret en un control de edición.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,7 +37,7 @@ Obtiene el índice de base cero de la posición del símbolo de intercalación e
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es un valor de índice de base cero de la posición del símbolo de intercalación.
+El valor devuelto es un valor de índice de base cero de la posición del cursor de cursor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ El valor devuelto es un valor de índice de base cero de la posición del símbo
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 y 1809 \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2019 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio 1809 \[\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2019 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>CommCtrl.h</dt> </dl> |
 
 
 
@@ -58,7 +58,7 @@ El valor devuelto es un valor de índice de base cero de la posición del símbo
 **Referencia**
 </dt> <dt>
 
-[**\_SETCARETINDEX em**](em-setcaretindex.md)
+[**EM \_ SETCARETINDEX**](em-setcaretindex.md)
 </dt> </dl>
 
  

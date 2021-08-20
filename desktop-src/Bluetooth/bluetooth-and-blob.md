@@ -1,6 +1,6 @@
 ---
 title: Bluetooth y BLOB
-description: Bluetooth usa la estructura de BLOBs para pasar o recibir datos específicos del transporte a la estructura WSAQUERYSET durante las llamadas a las funciones WSASetService o WSALookupService \.
+description: Bluetooth utiliza la estructura BLOB para pasar o recibir datos específicos del transporte a la estructura WSAQUERYSET durante las llamadas a las funciones WSASetService o WSALookupService\.
 ms.assetid: d71f3661-0efb-4376-966c-fb5c340ce1c5
 keywords:
 - BLOB
@@ -9,39 +9,39 @@ keywords:
 - Bluetooth y BLOB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 385f4fab053f975672d3b94fa231b3d7632e58eb
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 960362e7f6bc6388d3b93bd6e0329e405bdb33ed6e796a5ec5793d402ba0557c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105656385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081139"
 ---
 # <a name="bluetooth-and-blob"></a>Bluetooth y BLOB
 
-Bluetooth usa la estructura de [**blobs**](/windows/desktop/api/nspapi/ns-nspapi-blob) para pasar o recibir datos específicos del transporte a la estructura [**WSAQUERYSET**](bluetooth-and-wsaqueryset-for-set-service.md) durante las llamadas a las funciones [**WSASetService**](bluetooth-and-wsasetservice.md) o **WSALookupService** \* .
+Bluetooth utiliza la estructura [**BLOB**](/windows/desktop/api/nspapi/ns-nspapi-blob) para pasar o recibir datos específicos del transporte a la estructura [**WSAQUERYSET**](bluetooth-and-wsaqueryset-for-set-service.md) durante las llamadas a las funciones [**WSASetService**](bluetooth-and-wsasetservice.md) o **WSALookupService.** \*
 
-Para su uso con Bluetooth y la función [**WSASetService**](bluetooth-and-wsasetservice.md) , los miembros de la estructura de [**BLOB**](/windows/desktop/api/nspapi/ns-nspapi-blob) deben tener la siguiente configuración:
+Para su uso con Bluetooth y la función [**WSASetService,**](bluetooth-and-wsasetservice.md) los miembros de la estructura [**BLOB**](/windows/desktop/api/nspapi/ns-nspapi-blob) deben tener la siguiente configuración:
 
--   El miembro **cbsize** debe establecerse en el tamaño de la estructura de [**\_ \_ servicio del conjunto BTH**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_set_service) que se usa en el miembro **pBlobData** , en bytes.
--   El miembro **pBlobData** debe ser un puntero a una estructura de [**\_ \_ servicio establecida en BTH**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_set_service) .
+-   El **miembro cbsize** debe establecerse en el tamaño de la estructura [**\_ BTH SET \_ SERVICE**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_set_service) usada en el **miembro pBlobData,** en bytes.
+-   El **miembro pBlobData** debe ser un puntero a una [**estructura BTH SET \_ \_ SERVICE.**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_set_service)
 
-Para su uso con Bluetooth y [WSALookupServiceBegin para la consulta de dispositivos](bluetooth-and-wsalookupservicebegin-for-device-inquiry.md), use la siguiente configuración:
+Para su uso con Bluetooth [y WSALookupServiceBegin para la](bluetooth-and-wsalookupservicebegin-for-device-inquiry.md)consulta de dispositivos, use la siguiente configuración:
 
--   El miembro **cbsize** debe establecerse en el tamaño de la estructura del [**\_ \_ dispositivo de consulta BTH**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_query_device) utilizada en el miembro **pBlobData** , en bytes.
--   El miembro **pBlobData** debe ser un puntero a una estructura de [**\_ \_ dispositivo de consulta BTH**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_query_device) .
+-   El **miembro cbsize** debe establecerse en el tamaño de la estructura [**\_ BTH QUERY \_ DEVICE**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_query_device) usada en el **miembro pBlobData,** en bytes.
+-   El **miembro pBlobData** debe ser un puntero a una [**estructura \_ BTH QUERY \_ DEVICE.**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_query_device)
 
-Para su uso con Bluetooth y [WSALookupServiceBegin para la detección de servicios](bluetooth-and-wsalookupservicebegin-for-service-discovery.md), use la siguiente configuración:
+Para su uso con Bluetooth [y WSALookupServiceBegin](bluetooth-and-wsalookupservicebegin-for-service-discovery.md)para la detección de servicios, use la siguiente configuración:
 
--   El miembro **cbsize** debe establecerse en el tamaño de la estructura del [**\_ \_ servicio de consulta BTH**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_query_service) utilizada en el miembro **pBlobData** , en bytes.
--   El miembro **pBlobData** debe ser un puntero a una estructura de [**\_ \_ servicio de consulta BTH**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_query_service) .
+-   El **miembro cbsize** debe establecerse en el tamaño de la estructura [**\_ BTH QUERY \_ SERVICE**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_query_service) usada en el **miembro pBlobData,** en bytes.
+-   El **miembro pBlobData** debe ser un puntero a una [**estructura \_ BTH QUERY \_ SERVICE.**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_query_service)
 
-Para obtener más información, vea la sección Comentarios en la página de referencia de la estructura de [**\_ \_ servicio de BTH**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_set_service) .
+Para obtener más información, vea la sección Comentarios de la página de referencia de la estructura [**\_ de BTH SET \_ SERVICE.**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_set_service)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Bluetooth y WSALookupServiceBegin para la consulta de dispositivo](bluetooth-and-wsalookupservicebegin-for-device-inquiry.md)
+[Bluetooth y WSALookupServiceBegin para la consulta de dispositivos](bluetooth-and-wsalookupservicebegin-for-device-inquiry.md)
 </dt> <dt>
 
 [Bluetooth y WSALookupServiceBegin para la detección de servicios](bluetooth-and-wsalookupservicebegin-for-service-discovery.md)
@@ -53,16 +53,16 @@ Para obtener más información, vea la sección Comentarios en la página de ref
 [Windows Sockets](/windows/desktop/WinSock/windows-sockets-start-page-2)
 </dt> <dt>
 
-[**BLOB**](/windows/desktop/api/nspapi/ns-nspapi-blob)
+[**Blob**](/windows/desktop/api/nspapi/ns-nspapi-blob)
 </dt> <dt>
 
-[**\_dispositivo de consulta de BTH \_**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_query_device)
+[**BTH \_ QUERY \_ DEVICE**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_query_device)
 </dt> <dt>
 
-[**\_servicio de consulta de BTH \_**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_query_service)
+[**BTH \_ QUERY \_ SERVICE**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_query_service)
 </dt> <dt>
 
-[**BTH \_ establecer \_ servicio**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_set_service)
+[**BTH \_ SET \_ SERVICE**](/windows/desktop/api/Ws2bth/ns-ws2bth-bth_set_service)
 </dt> <dt>
 
 [**WSALookupServiceBegin**](/windows/desktop/api/winsock2/nf-winsock2-wsalookupservicebegina)
@@ -74,6 +74,6 @@ Para obtener más información, vea la sección Comentarios en la página de ref
 [**WSASetService**](bluetooth-and-wsasetservice.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

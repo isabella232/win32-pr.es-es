@@ -25,7 +25,7 @@ ms.locfileid: "119546325"
 ---
 # <a name="win32_driverfordevice-class"></a>Clase DriverForDevice de Win32 \_
 
-La clase WMI **de asociación \_ DriverForDevice** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 relaciona una instancia de impresora con una instancia de controlador de impresora.
+La **clase WMI de asociación \_ DriverForDevice** [de](/windows/desktop/WmiSdk/retrieving-a-class) Win32 relaciona una instancia de impresora con una instancia de controlador de impresora.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -60,7 +60,7 @@ Tipo de datos: **Impresora Win32 \_**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Referencia a la [**instancia de Impresora Win32 \_**](win32-printer.md) que representa la impresora.
+Referencia a la [**instancia de \_ Impresora Win32**](win32-printer.md) que representa la impresora.
 
 Esta propiedad se hereda de la [**dependencia \_ CIM**](cim-dependency.md).
 
@@ -83,7 +83,7 @@ Esta propiedad se hereda de la [**dependencia \_ CIM**](cim-dependency.md).
 
 ## <a name="remarks"></a>Comentarios
 
-La **clase \_ DriverForDevice de Win32** se deriva de [**la dependencia CIM \_**](cim-dependency.md).
+La **clase \_ DriverForDevice de Win32** se deriva de [**la dependencia \_ CIM**](cim-dependency.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -99,7 +99,7 @@ La **clase \_ DriverForDevice de Win32** se deriva de [**la dependencia CIM \_**
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

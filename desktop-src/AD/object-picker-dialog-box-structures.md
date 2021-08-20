@@ -18,10 +18,10 @@ Las estructuras siguientes se usan con los cuadros de diálogo del selector de o
 
 -   [**SELECCIÓN \_ DE DS**](/windows/desktop/api/Objsel/ns-objsel-ds_selection)
 -   [**LISTA DE SELECCIÓN DE DS \_ \_**](/windows/desktop/api/Objsel/ns-objsel-ds_selection_list)
--   [**MARCAS DE FILTRO \_ DSOP \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_filter_flags)
+-   [**MARCAS DE FILTRO DSOP \_ \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_filter_flags)
 -   [**INFORMACIÓN DE \_ INIT de DSOP \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_init_info)
--   [**INFORMACIÓN DE \_ \_ INIT DEL ÁMBITO DSOP \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_scope_init_info)
--   [**MARCAS DE FILTRO \_ DE NIVEL SUPERIOR DSOP \_ \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_uplevel_filter_flags)
+-   [**INFORMACIÓN DE \_ \_ INIT DEL ÁMBITO DE DSOP \_**](/windows/desktop/api/Objsel/ns-objsel-dsop_scope_init_info)
+-   [**MARCAS DE FILTRO \_ DE NIVEL SUPERIOR \_ \_ DSOP**](/windows/desktop/api/Objsel/ns-objsel-dsop_uplevel_filter_flags)
 
 ## <a name="related-topics"></a>Temas relacionados
 

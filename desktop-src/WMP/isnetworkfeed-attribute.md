@@ -3,7 +3,7 @@ title: Atributo IsNetworkFeed
 description: El atributo IsNetworkFeed indica que la lista de reproducción se actualiza dinámicamente.
 ms.assetid: 4d5e4516-d49e-48f2-994b-e32a8e4ea42c
 keywords:
-- IsNetworkFeed Media Player de Windows
+- Atributo IsNetworkFeed Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,30 +12,30 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b49128f7fec428da97a00693eba859d23d9d81c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fee59a007640563b3fe52f81c91ded129b898b720bd5f2ceaab9e38dcb2703ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105691087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508805"
 ---
 # <a name="isnetworkfeed-attribute"></a>Atributo IsNetworkFeed
 
-El atributo **IsNetworkFeed** indica que la lista de reproducción se actualiza dinámicamente.
+El **atributo IsNetworkFeed** indica que la lista de reproducción se actualiza dinámicamente.
 
 ## <a name="applies-to"></a>Se aplica a
 
--   [Reproducción](playlist-attributes-ref.md)
+-   [Listas](playlist-attributes-ref.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 11<br/> |
 
@@ -45,7 +45,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

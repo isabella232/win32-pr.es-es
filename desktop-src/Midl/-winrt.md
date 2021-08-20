@@ -1,9 +1,9 @@
 ---
-title: modificador/winrt
-description: El modificador/winrt habilita la semántica de Windows Runtime.
+title: Modificador /winrt
+description: El modificador /winrt habilita la semántica Windows runtime.
 ms.assetid: 910F4106-1CA2-4486-BBD4-57DAC9B4A78F
 keywords:
-- /winrt modificador MIDL
+- /winrt switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,22 +12,22 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25746064b18316edab9c497502b802c7d19adaf9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: add020d1228aaeae6e4a319875dd2118c5c0f185c4032ffcf11781768a4e289d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067435"
 ---
-# <a name="winrt-switch"></a>modificador/winrt
+# <a name="winrt-switch"></a>Modificador /winrt
 
-El modificador [**/winrt**](-winmd.md) habilita la semántica de Windows Runtime.
+El [**modificador /winrt**](-winmd.md) habilita la semántica Windows runtime.
 
 ``` syntax
 midlrt /winrt 
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Cambiar opciones
 
 Este modificador no tiene parámetros.
 
@@ -35,15 +35,15 @@ Este modificador no tiene parámetros.
 
 ## <a name="examples"></a>Ejemplos
 
-**midlrt/winrt**
+**midlrt /winrt**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------|--------------------------------|
-| Remoto<br/> | Windows 8<br/>           |
+| Cliente<br/> | Windows 8<br/>           |
 | Servidor<br/> | Windows Server 2012<br/> |
 
 
@@ -52,7 +52,7 @@ Este modificador no tiene parámetros.
 
 <dl> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> </dl>
 
  

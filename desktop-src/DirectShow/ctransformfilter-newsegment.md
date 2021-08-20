@@ -1,7 +1,7 @@
 ---
-description: El método NewSegment notifica al filtro que los ejemplos multimedia recibidos después de que esta llamada se agrupe como un segmento.
+description: El método NewSegment notifica al filtro que los ejemplos de medios recibidos después de esta llamada se agrupan como un segmento.
 ms.assetid: 78ddaac7-9c1f-47b6-835d-dd16b1f5b01f
-title: Método CTransformFilter. NewSegment (Transfrm. h)
+title: Método CTransformFilter.NewSegment (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0fd046288886d3e7619419dd591dd94310f56020
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a2cb83c376b012ae3474f87b0f8d26c7fb5560812c1d8ddcbb3ea62293797bb9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953554"
 ---
-# <a name="ctransformfilternewsegment-method"></a>CTransformFilter. NewSegment, método
+# <a name="ctransformfilternewsegment-method"></a>Método CTransformFilter.NewSegment
 
-El `NewSegment` método notifica al filtro que los ejemplos multimedia recibidos después de que esta llamada se agrupe como un segmento.
+El `NewSegment` método notifica al filtro que los ejemplos de medios recibidos después de esta llamada se agrupan como un segmento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,14 +47,14 @@ virtual HRESULT NewSegment(
 *tStart* 
 </dt> <dd>
 
-Hora de inicio del segmento, relativa al origen original.
+Hora de inicio del segmento, con respecto al origen original.
 
 </dd> <dt>
 
 *tStop* 
 </dt> <dd>
 
-Hora de detención del segmento, relativa al origen original.
+Hora de detenerse del segmento, en relación con el origen original.
 
 </dd> <dt>
 
@@ -67,11 +67,11 @@ Velocidad a la que se debe procesar el segmento.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**CTransformInputPin:: NewSegment**](ctransforminputpin-newsegment.md) del PIN de entrada llama a este método. Este método entrega la `NewSegment` llamada al pin de entrada de nivel inferior.
+El método [**CTransformInputPin::NewSegment**](ctransforminputpin-newsegment.md) del pin de entrada llama a este método. Este método entrega la `NewSegment` llamada a la patilla de entrada de bajada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ El método [**CTransformInputPin:: NewSegment**](ctransforminputpin-newsegment.m
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ El método [**CTransformInputPin:: NewSegment**](ctransforminputpin-newsegment.m
 
 <dl> <dt>
 
-[**Clase CTransformFilter**](ctransformfilter.md)
+[**CTransformFilter (clase)**](ctransformfilter.md)
 </dt> </dl>
 
  

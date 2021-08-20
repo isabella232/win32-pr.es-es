@@ -5,44 +5,44 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: caa86fd4-ee66-48dc-9d3f-c525690a9cad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c453ac6c618425dc501e0994dcfbbeff582f763a
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: ec9019b6a68e1c52f2fab7e85276c4f8bc62b82d641fa3e127ec13274862d0c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103800854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034333"
 ---
 # <a name="i-menus-and-other-resources"></a>I (menús y otros recursos)
 
-[A](a.md) [B](b.md) [C](c.md) D [E](e.md) [F](f.md) G H I J K L M [N](n.md) [o](o.md) p Q [R](r.md) s [T](t.md) [U](u.md) [V](v.md) [W](w.md) X Y Z
+[A](a.md) [B](b.md) [C](c.md) D [E](e.md) [F](f.md) G H I J K L M N [O](n.md) [](o.md) P Q [R](r.md) S [T](t.md) [U](u.md) [V](v.md) [W](w.md) X Y Z
 
 <dl> <dt>
 
 <span id="tools.i_1_gly"></span><span id="TOOLS.I_1_GLY"></span>**Acelerador no válido**
 </dt> <dd>
 
-Un parámetro de *evento* de la instrucción [**Accelerators**](accelerators-resource.md) no se reconoció o tenía más de dos caracteres de longitud.
+No *se ha* reconocido un parámetro de evento en la instrucción [**ACCELERATORS**](accelerators-resource.md) o tenía más de dos caracteres.
 
 </dd> <dt>
 
 <span id="tools.i_2_gly"></span><span id="TOOLS.I_2_GLY"></span>**Tipo de acelerador no válido (ASCII o VIRTKEY)**
 </dt> <dd>
 
-El parámetro de *tipo* de la instrucción [**Accelerators**](accelerators-resource.md) debe contener el valor **ASCII** o **VIRTKEY** .
+El *parámetro* type de la [**instrucción ACCELERATORS**](accelerators-resource.md) debe contener el **valor ASCII** o **VIRTKEY.**
 
 </dd> <dt>
 
 <span id="tools.i_3_gly"></span><span id="TOOLS.I_3_GLY"></span>**Carácter de control no válido**
 </dt> <dd>
 
-Un carácter de control en la instrucción [**Accelerators**](accelerators-resource.md) no es válido. Un carácter de control válido consta de un símbolo de intercalación (^) seguido de una sola letra.
+Un carácter de control de la [**instrucción ACCELERATORS**](accelerators-resource.md) no es válido. Un carácter de control válido consta de un carácter de intercalación (^) seguido de una sola letra.
 
 </dd> <dt>
 
 <span id="tools.i_4_gly"></span><span id="TOOLS.I_4_GLY"></span>**Tipo de control no válido**
 </dt> <dd>
 
-La instrucción de control de una instrucción [**Dialog**](dialog-resource.md) debe ser una de las siguientes: [**AUTO3STATE**](auto3state-control.md), [**autocheckbox**](autocheckbox-control.md), [**autoradiobutton**](autoradiobutton-control.md), [**CheckBox**](checkbox-control.md), [**ComboBox**](combobox-control.md), [**control**](control-control.md), [**CTEXT**](ctext-control.md), [**DEFPUSHBUTTON**](defpushbutton-control.md), [**EDITTEXT**](edittext-control.md), [**GROUPBOX**](groupbox-control.md), [**Icon**](icon-control.md), [**ListBox**](listbox-control.md), [**LTEXT**](ltext-control.md), [**PUSHBOX**](pushbox-control.md), [**PUSHBUTTON**](pushbutton-control.md), [**RADIOBUTTON**](radiobutton-control.md), [**RText**](rtext-control.md), [**ScrollBar**](scrollbar-control.md), [**STATE3**](state3-control.md).
+La instrucción de control de una instrucción [**DIALOG**](dialog-resource.md) debe ser una de las siguientes: [**AUTO3STATE**](auto3state-control.md), [**AUTOCHECKBOX**](autocheckbox-control.md), [**AUTORADIOBUTTON**](autoradiobutton-control.md), [**CHECKBOX**](checkbox-control.md), [**COMBOBOX**](combobox-control.md), [**CONTROL**](control-control.md), [**CTEXT**](ctext-control.md), [**DEFPUSHBUTTON**](defpushbutton-control.md), [**EDITTEXT**](edittext-control.md), [**GROUPBOX**](groupbox-control.md), [**ICON**](icon-control.md), [**LISTBOX**](listbox-control.md), [**LTEXT**](ltext-control.md), [**PUSHBOX**](pushbutton-control.md), [**PUSHBUTTON**](pushbox-control.md), [**RADIOBUTTON**](radiobutton-control.md), [**RTEXT**](rtext-control.md), [**SCROLLBAR**](scrollbar-control.md), [**STATE3**](state3-control.md).
 
 </dd> <dt>
 
@@ -53,59 +53,59 @@ El nombre de archivo especificado tiene un carácter de nueva línea incrustado.
 
 </dd> <dt>
 
-<span id="tools.i_6_gly"></span><span id="TOOLS.I_6_GLY"></span>**No válido. Archivo EXE**
+<span id="tools.i_6_gly"></span><span id="TOOLS.I_6_GLY"></span>**Archivo de .EXE no válido**
 </dt> <dd>
 
-El archivo ejecutable (. exe) no es válido. Asegúrese de que el vinculador lo creó correctamente y de que el archivo existe.
+El archivo ejecutable (.exe) no es válido. Asegúrese de que el vinculador lo creó correctamente y de que el archivo existe.
 
 </dd> <dt>
 
 <span id="tools.i_7_gly"></span><span id="TOOLS.I_7_GLY"></span>**Modificador no válido, opción**
 </dt> <dd>
 
-Una opción usada no era válida. Para obtener una lista de las opciones de línea de comandos, use el comando **RC/?** .
+Una opción usada no era válida. Para obtener una lista de las opciones de línea de comandos, use **rc /?** .
 
 </dd> <dt>
 
-<span id="tools.i_8_gly"></span><span id="TOOLS.I_8_GLY"></span>**Conmutador no válido, demasiados-D modificadores**
+<span id="tools.i_8_gly"></span><span id="TOOLS.I_8_GLY"></span>**Modificador no válido, demasiados modificadores -D**
 </dt> <dd>
 
-Se han especificado demasiadas opciones **-d** . Para definir un gran número de símbolos, utilice la directiva [**\# include**](-include.md) para incluir un archivo de definiciones.
+Se **especificaron demasiadas opciones -d.** Para definir un gran número de símbolos, use la [**\# directiva include**](-include.md) para incluir un archivo de definiciones.
 
 </dd> <dt>
 
 <span id="tools.i_9_gly"></span><span id="TOOLS.I_9_GLY"></span>**Tipo no válido**
 </dt> <dd>
 
-El tipo de recurso no se encuentra entre los tipos definidos en el archivo de inclusión.
+El tipo de recurso no estaba entre los tipos definidos en el archivo de include.
 
 </dd> <dt>
 
-<span id="tools.i_10_gly"></span><span id="TOOLS.I_10_GLY"></span>**Uso no válido. Usar RC-? para obtener ayuda**
+<span id="tools.i_10_gly"></span><span id="TOOLS.I_10_GLY"></span>**Uso no válido. Use RC -? para obtener ayuda**
 </dt> <dd>
 
-Asegúrese de que tiene al menos un nombre de archivo con el que trabajar. Para obtener una lista de las opciones de línea de comandos, use el comando **RC-?** .
+Asegúrese de que tiene al menos un nombre de archivo con el que trabajar. Para obtener una lista de las opciones de línea de comandos, use **rc -?** .
 
 </dd> <dt>
 
-<span id="tools.i_11_gly"></span><span id="TOOLS.I_11_GLY"></span>**Error de e/s al leer el archivo**
+<span id="tools.i_11_gly"></span><span id="TOOLS.I_11_GLY"></span>**Error de E/S al leer el archivo**
 </dt> <dd>
 
-Error de lectura. Dado que se trata de una rutina genérica, no se proporciona ningún nombre de archivo específico.
+Error de lectura. Puesto que se trata de una rutina genérica, no se proporciona ningún nombre de archivo específico.
 
 </dd> <dt>
 
-<span id="tools.i_12_gly"></span><span id="TOOLS.I_12_GLY"></span>**Error de e/s al buscar en el archivo**
+<span id="tools.i_12_gly"></span><span id="TOOLS.I_12_GLY"></span>**Búsqueda de errores de E/S en el archivo**
 </dt> <dd>
 
-Error al buscar en el archivo. Dado que se trata de una rutina genérica, no se proporciona ningún nombre de archivo específico.
+Error al buscar en el archivo. Puesto que se trata de una rutina genérica, no se proporciona ningún nombre de archivo específico.
 
 </dd> <dt>
 
-<span id="tools.i_13_gly"></span><span id="TOOLS.I_13_GLY"></span>**Error de e/s al escribir el archivo**
+<span id="tools.i_13_gly"></span><span id="TOOLS.I_13_GLY"></span>**Error de E/S al escribir el archivo**
 </dt> <dd>
 
-Error de escritura. Dado que se trata de una rutina genérica, no se proporciona ningún nombre de archivo específico.
+Error de escritura. Puesto que se trata de una rutina genérica, no se proporciona ningún nombre de archivo específico.
 
 </dd> </dl>
 

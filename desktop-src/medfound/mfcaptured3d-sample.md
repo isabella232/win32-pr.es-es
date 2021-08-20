@@ -37,7 +37,7 @@ En este ejemplo se muestran las siguientes API.
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-Este ejemplo está disponible en el repositorio [de github Windows ejemplos clásicos.](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/MFCaptureD3D)
+Este ejemplo está disponible en el repositorio [de GitHub Windows ejemplos clásicos.](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/MFCaptureD3D)
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -1,9 +1,9 @@
 ---
-title: valueMap (MapType), elemento
-description: Define una lista de pares de nombre y valor que asignan valores enteros y valores de cadena.
+title: Elemento valueMap (MapType)
+description: Define una lista de pares nombre-valor que asignan valores enteros y valores de cadena.
 ms.assetid: caf84ed1-8624-4163-bf31-60b9fd877220
 keywords:
-- valueMap (elemento) EventLog
+- Elemento valueMap EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: aea7a02a1d744687e3ba2083fa4eb67472ee08e7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2d350060044bc66662947eb583c35337f642d77586fd7af24b2be99dc4a2d69f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105695848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055823"
 ---
-# <a name="valuemap-maptype-element"></a>valueMap (MapType), elemento
+# <a name="valuemap-maptype-element"></a>Elemento valueMap (MapType)
 
-Define una lista de pares de nombre y valor que asignan valores enteros y valores de cadena.
+Define una lista de pares nombre-valor que asignan valores enteros y valores de cadena.
 
 ``` syntax
 <xs:element name="valueMap"
@@ -30,16 +30,16 @@ Define una lista de pares de nombre y valor que asignan valores enteros y valore
  />
 ```
 
-El elemento **valueMap** se define mediante el tipo complejo [**mapType**](eventmanifestschema-maptype-complextype.md) .
+El **tipo complejo MapType** define el elemento [**valueMap.**](eventmanifestschema-maptype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento **valueMap** se define mediante el tipo complejo [**mapType**](event
 **Elemento primario**
 </dt> <dt>
 
-[**Maps (ProviderType)**](eventmanifestschema-maps-providertype-element.md)
+[**maps (ProviderType)**](eventmanifestschema-maps-providertype-element.md)
 </dt> </dl>
 
  

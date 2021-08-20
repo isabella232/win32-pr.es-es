@@ -51,7 +51,7 @@ Contiene la representación de cadena del nombre distintivo del objeto en otro b
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
@@ -72,7 +72,7 @@ Contiene la representación de cadena del nombre distintivo del objeto en otro b
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
@@ -93,7 +93,7 @@ Contiene la representación de cadena del nombre distintivo del objeto en otro b
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------|
 | Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |

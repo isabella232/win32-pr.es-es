@@ -1,7 +1,7 @@
 ---
-description: Mensaje privado que establece el estilo de ventana en WS \_ ex \_ nivel superior.
+description: Mensaje privado que establece el estilo de ventana en WS \_ EX \_ TOPMOST.
 ms.assetid: 4934400e-4ca5-4ace-b9b9-3889f4cf610e
-title: 'Miembro CBaseWindow:: m_ShowStageTop (Winutil. h)'
+title: CBaseWindow::m_ShowStageTop miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8ed0069c5c65f2bb1a113c899e2d90de0cabcd10
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dbd8943b297d6e33f3b86a62c7e67dd2039a6b99d316061be30a4c3016711c41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016523"
 ---
-# <a name="cbasewindowm_showstagetop-member"></a>Miembro ShowStageTop CBaseWindow:: m \_
+# <a name="cbasewindowm_showstagetop-member"></a>Miembro CBaseWindow::m \_ ShowStageTop
 
-Mensaje privado que establece el estilo de ventana en WS \_ ex \_ nivel superior.
+Mensaje privado que establece el estilo de ventana en WS \_ EX \_ TOPMOST.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,7 +36,7 @@ UINT m_ShowStageTop;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los representadores de vídeo deben enviar este mensaje a la ventana si cambian al modo de pantalla completa.
 
@@ -46,8 +46,8 @@ Los representadores de vídeo deben enviar este mensaje a la ventana si cambian 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Los representadores de vídeo deben enviar este mensaje a la ventana si cambian 
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

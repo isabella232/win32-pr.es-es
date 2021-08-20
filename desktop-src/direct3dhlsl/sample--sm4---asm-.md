@@ -1,23 +1,23 @@
 ---
-title: ejemplo (SM4-ASM)
-description: Muestrea los datos del elemento o la textura especificados utilizando la dirección especificada y el modo de filtrado identificado por la muestra especificada. | ejemplo (SM4-ASM)
+title: sample (sm4 - asm)
+description: Muestrea datos del elemento o textura especificados mediante la dirección especificada y el modo de filtrado identificado por el muestreador especificado. | sample (sm4 - asm)
 ms.assetid: 9055D3EE-FD4A-418C-A743-D12E8BDF69FF
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 397aba4a165f13721e73f87da82cff3e8918e33b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 09b6fabb75c819bb2a95fcf500799fd1e8153d6dabfe66d33ba04c518c949fa1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119671885"
 ---
-# <a name="sample-sm4---asm"></a>ejemplo (SM4-ASM)
+# <a name="sample-sm4---asm"></a>sample (sm4 - asm)
 
-Muestrea los datos del elemento o la textura especificados utilizando la dirección especificada y el modo de filtrado identificado por la muestra especificada.
+Muestrea datos del elemento o textura especificados mediante la dirección especificada y el modo de filtrado identificado por el muestreador especificado.
 
 
 
-| ejemplo \[ \_ aoffimmi (u, v, w) \] dest \[ . Mask \] , srcAddress \[ . swizzle \] , srcResource \[ . swizzle \] , srcSampler |
+| sample \[ \_ aoffimmi(u,v,w) \] dest \[ .mask \] , srcAddress \[ .swprendle \] , srcResource \[ .swlinole \] , srcSampler |
 |--------------------------------------------------------------------------------------------------------|
 
 
@@ -28,77 +28,77 @@ Muestrea los datos del elemento o la textura especificados utilizando la direcci
 
 | Elemento                                                                                                               | Descripción                                                                                        |
 |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/>                                                    | \[en \] la dirección del resultado de la operación.<br/>                                      |
-| <span id="srcAddress"></span><span id="srcaddress"></span><span id="SRCADDRESS"></span>*srcAddress*<br/>     | \[en \] un conjunto de coordenadas de textura. Para más información, vea la sección **Comentarios**.<br/> |
-| <span id="srcResource"></span><span id="srcresource"></span><span id="SRCRESOURCE"></span>*srcResource*<br/> | \[en \] un registro de textura. Para más información, vea la sección **Comentarios**.<br/>           |
-| <span id="srcSampler"></span><span id="srcsampler"></span><span id="SRCSAMPLER"></span>*srcSampler*<br/>     | \[en \] un registro de muestra. Para más información, vea la sección **Comentarios**.<br/>           |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/>                                                    | \[en \] La dirección del resultado de la operación.<br/>                                      |
+| <span id="srcAddress"></span><span id="srcaddress"></span><span id="SRCADDRESS"></span>*srcAddress*<br/>     | \[en \] Un conjunto de coordenadas de textura. Para más información, vea la sección **Comentarios**.<br/> |
+| <span id="srcResource"></span><span id="srcresource"></span><span id="SRCRESOURCE"></span>*srcResource*<br/> | \[en \] Un registro de textura. Para más información, vea la sección **Comentarios**.<br/>           |
+| <span id="srcSampler"></span><span id="srcsampler"></span><span id="SRCSAMPLER"></span>*srcSampler*<br/>     | \[en \] Un registro de sampler. Para más información, vea la sección **Comentarios**.<br/>           |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los datos de origen pueden provienen de cualquier tipo de recurso, que no sea de búferes.
+Los datos de origen pueden provienen de cualquier tipo de recurso, que no sea Búferes.
 
-*srcAddress* proporciona el conjunto de coordenadas de textura necesarias para realizar el ejemplo, como valores de punto flotante que hacen referencia al espacio normalizado en la textura. Los modos de ajuste de direcciones (Wrap/Mirror/Clamp/Border, etc.) se aplican a las coordenadas de textura fuera del \[ intervalo 0... 1 \] , se toman de los Estados de muestra \# y se aplican después de que se aplique cualquier desplazamiento de dirección a las coordenadas de textura.
+*srcAddress proporciona* el conjunto de coordenadas de textura necesarias para realizar la muestra, como valores de punto flotante que hacen referencia al espacio normalizado en la textura. Los modos de ajuste de direcciones (encapsulado, reflejo, fijación, borde, etc.) se aplican a las coordenadas de textura fuera del intervalo 0...1, se toman del estado del muestreador (s) y se aplican después de aplicar cualquier desplazamiento de dirección a las coordenadas de \[ \] \# textura.
 
-*srcResource* es un registro de textura (t \# ). Esto es simplemente un marcador de posición para una textura, incluido el tipo de datos devuelto del recurso que se muestra. Toda esta información se declara en el preámbulo del sombreador. El recurso real que se va a muestrear se enlaza al sombreador externamente en la ranura \# (para t \# ).
+*srcResource es* un registro de textura (t \# ). Se trata simplemente de un marcador de posición para una textura, incluido el tipo de datos devuelto del recurso que se muestrea. Toda esta información se declara en el preámbulo del sombreador. El recurso real que se va a muestrear está enlazado externamente al sombreador en la ranura \# (para t \# ).
 
-*srcSampler* es un registro de muestra. Esto es simplemente un marcador de posición para una colección de controles de filtrado, como los controles de punto frente a lineal, mipmapping y ajuste de direcciones.
+*srcSampler es* un registro (s) de sampler. Se trata simplemente de un marcador de posición para una colección de controles de filtrado, como los controles point frente a linear, mipmapping y address wrapping.
 
-El conjunto de información necesario para que el hardware realice el muestreo se divide en dos partes ortogonales. En primer lugar, el registro de textura proporciona información de tipo de datos de origen, como por ejemplo, información sobre si la textura contiene datos SRGB. También hace referencia a la memoria real que se muestra. En segundo lugar, el registro de muestra define el modo de filtrado que se va a aplicar.
+El conjunto de información necesaria para que el hardware realice el muestreo se divide en dos partes ortogonales. En primer lugar, el registro de textura proporciona información de tipo de datos de origen que incluye, por ejemplo, información sobre si la textura contiene datos SRGB. También hace referencia a la memoria real que se muestrea. En segundo lugar, el registro del muestreador define el modo de filtrado que se aplicará.
 
 ### <a name="array-resources"></a>Recursos de matriz
 
-En el caso de las matrices Texture1D, el componente *srcAddress* g (pos-swizzle) selecciona en qué segmento de la matriz se va a capturar. Siempre se trata como un valor de punto flotante escalado, en lugar del espacio normalizado para las coordenadas de textura estándar, y se aplica una operación de ida a vuelta más cercana al valor, seguida de una abrazadera al intervalo de BufferArray disponible.
+Para matrices Texture1D, el componente *srcAddress* g (POS-swzzle) selecciona de qué segmento de matriz se va a capturar. Esto siempre se trata como un valor float escalado, en lugar del espacio normalizado para las coordenadas de textura estándar, y se aplica una operación de ida y vuelta a la más cercana incluso en el valor, seguida de una fijación al intervalo BufferArray disponible.
 
-En el caso de las matrices de Texture2D, el componente b de *srcAddress* (pos-swizzle) selecciona el segmento de matriz del que se va a capturar; de lo contrario, se usa la misma semántica descrita para las matrices de Texture1D.
+En el caso de las matrices Texture2D, el componente *srcAddress* b (POS-swzzle) selecciona de qué segmento de matriz se va a capturar; de lo contrario, usa la misma semántica descrita para matrices Texture1D.
 
 ### <a name="address-offset"></a>Desplazamiento de dirección
 
-El \[ \_ sufijo aoffimmi (u, v, w) opcional \] (desplazamiento de dirección por entero inmediato) indica que las coordenadas de textura para el ejemplo se van a desplazar por un conjunto de valores de constantes de tipo entero de espacio de textura inmediato proporcionado. Los valores literales son un conjunto de números complementarios de 4 bits 2 que tienen un intervalo \[ de enteros de 8 a 7 \] . Este modificador se define para todos los recursos, incluidas las matrices Texture1D/2D y Texture3D, pero no está definido para TextureCube.
+El sufijo \[ \_ opcional aoffimmi(u,v,w) (desplazamiento de dirección por entero inmediato) indica que las coordenadas de textura de la muestra se van a desplazar por un conjunto de valores constantes enteros de espacio de textura inmediatos \] proporcionados. Los valores literales son un conjunto de números de complemento de 4 bits 2, con un intervalo entero \[ de -8,7. \] Este modificador se define para todos los recursos, incluidas las matrices Texture1D/2D y Texture3D, pero no está definido para TextureCube.
 
-El hardware puede aprovechar el conocimiento inmediato de que un recorrido de una determinada superficie de textura sobre una ubicación común se realiza mediante un conjunto de instrucciones de ejemplo. Esto se puede transmitir mediante \_ aoffimmi (u, v, w).
+El hardware puede aprovechar el conocimiento inmediato de que un recorrido sobre una superficie de elementos de textura sobre una ubicación común se está realizando mediante un conjunto de instrucciones de ejemplo. Esto se puede transmitir mediante \_ aoffimmi(u,v,w).
 
-Los desplazamientos se agregan a las coordenadas de textura, en el espacio textura, con respecto a cada miplevel al que se tiene acceso. Por lo tanto, aunque las coordenadas de textura se proporcionan como valores Float normalizados, el desplazamiento aplica un desplazamiento de entero de espacio textura.
+Los desplazamientos se agregan a las coordenadas de textura, en el espacio de textura, en relación con cada miplevel al que se accede. Por lo tanto, aunque las coordenadas de textura se proporcionan como valores float normalizados, el desplazamiento aplica un desplazamiento entero de espacio de texel.
 
-Los desplazamientos de direcciones no se aplican a lo largo del eje de matriz de matrices Texture1D/2D.
+Los desplazamientos de dirección no se aplican a lo largo del eje de matriz de matrices Texture1D/2D.
 
-\_los componentes de aoffimmi v, w se omiten para Texture1Ds.
+\_Los componentes aoffimmi v,w se omiten para Texture1Ds.
 
-\_el componente aoffimmi w se omite para Texture2Ds.
+\_El componente aoffimmi w se omite para Texture2Ds.
 
-Los modos de ajuste de direcciones (Wrap, Mirror, Clamp/Border, etc.) de los Estados de muestra \# se aplican después de que se aplique cualquier desplazamiento de dirección a las coordenadas de textura.
+Los modos de ajuste de direcciones (encapsulado, reflejo, fijación, borde, etc.) del estado del muestreador (s) se aplican después de aplicar cualquier desplazamiento de dirección a las coordenadas \# de textura.
 
-### <a name="return-type-control"></a>Tipo de valor devuelto
+### <a name="return-type-control"></a>Return Type (Control)
 
-El formato de los datos que devuelve el ejemplo al registro de destino viene determinado por el formato de recursos (formato de DXGI \_ \* ) enlazado al parámetro *srcResource* (t \# ). Por ejemplo, si el t especificado \# estaba enlazado con un recurso con el formato DXGI \_ \_ A8B8G8R8 \_ UNORM \_ sRGB, la operación de muestreo convertirá el textura muestreado de gamma 2,0 a 1,0, aplicará el filtrado y el resultado se escribirá en el registro de destino como valores de punto flotante en el intervalo \[ 0.. 1 \] .
+El formato de datos devuelto por el ejemplo al registro de destino viene determinado por el formato de recurso (DXGI FORMAT ) enlazado al \_ \* parámetro *srcResource* (t \# ). Por ejemplo, si el t especificado se enlazaba con un recurso con formato \# DXGI \_ FORMAT A8B8G8R8 UNORM SRGB, la operación de muestreo convertirá los elementos de textura muestreados de \_ \_ gamma 2.0 a 1.0, aplicará el filtrado y el resultado se escribirá en el registro de destino como valores de punto flotante en el intervalo \_ \[ 0..1. \]
 
-Los valores devueltos son los vectores 4 (con valores predeterminados específicos del formato para los componentes que no están presentes en el formato). El swizzle en *srcResource* determina cómo swizzle el resultado de 4 componentes que se devolverá del ejemplo de textura o filtro, después del cual. Mask en *dest* determina qué componentes de *dest* se actualizan.
+Los valores devueltos son 4 vectores (con valores predeterminados específicos del formato para los componentes que no están presentes en el formato). El swzzle en *srcResource* determina cómo deslizar el resultado de 4 componentes que vuelve de la muestra o filtro de textura, después de lo cual .mask on *dest* determina qué componentes de *dest* se actualizan.
 
-Cuando **Sample** Lee un valor float de 32 bits en un registro de 32 bits, con muestreo de punto (sin filtrado), puede o no vaciar los valores desnormalizados, pero de lo contrario no se modifican los números. Si la incertidumbre con valores desnormalizados de muestreo de puntos es un problema para una aplicación, use la instrucción [LD](ld--sm4---asm-.md) , que garantiza que los valores float de 32 bits se lean sin modificar.
+Cuando  el ejemplo lee un valor float de 32 bits en un registro de 32 bits, con muestreo de punto (sin filtrado), puede o no vaciar los valores desnormales, pero de lo contrario los números no se modificarán. Si la incertidumbre con los valores desnormales de muestreo de punto es un problema para una aplicación, use la instrucción [ld,](ld--sm4---asm-.md) que garantiza que los valores float de 32 bits se leen sin modificar.
 
 ### <a name="lod-calculation"></a>Cálculo de LOD
 
-Para obtener información detallada sobre cómo se calculan los derivados en el proceso de determinación de LOD para el filtrado, vea [derive \_ RTX](deriv-rtx--sm4---asm-.md) y [derive \_ propiedad](deriv-rty--sm4---asm-.md). La instrucción de **ejemplo** calcula implícitamente los derivados de las coordenadas de textura usando la misma definición que usan las instrucciones de sombreador **derivadas** . Esto no se aplica a las instrucciones de [ejemplo \_ l](sample-l--sm4---asm-.md) o [ \_ d](sample-d--sm4---asm-.md) . En el caso de estas instrucciones, la aplicación proporciona directamente el LOD o los derivados.
+Para obtener más información sobre cómo se calculan los derivados en el proceso de determinar el LOD para el filtrado, vea [deriv \_ rtx](deriv-rtx--sm4---asm-.md) y [deriv \_ rty](deriv-rty--sm4---asm-.md). La **instrucción** de ejemplo calcula implícitamente derivados en las coordenadas de textura con la misma definición que usan las instrucciones **del sombreador de** derivación. Esto no se aplica a las [instrucciones \_ de ejemplo l](sample-l--sm4---asm-.md) o [ \_ d](sample-d--sm4---asm-.md) de ejemplo. Para esas instrucciones, la aplicación proporciona directamente loD o derivados.
 
-En el caso de la instrucción de **ejemplo** , las implementaciones pueden optar por compartir el mismo cálculo de LOD en los 4 píxeles de una marca de 2x2 (pero sin área más grande) o realizar cálculos de LOD por píxel.
+Para  la instrucción de ejemplo, las implementaciones pueden optar por compartir el mismo cálculo de LOD en los 4 píxeles de un stamp de 2x2 (pero sin área mayor) o realizar cálculos de LOD por píxel.
 
 ### <a name="miscellaneous-details"></a>Detalles varios
 
-Para buffer & Texture1D, se omiten los componentes *srcAddress* . GBA (pos-swizzle). En el caso de las matrices Texture1D, se omiten los componentes de *srcAddress* . BA (pos-swizzle). En el caso de Texture2Ds, se omite el componente *srcAddress* . a (pos-swizzle).
+Para buffer & Texture1D, se omiten los componentes .gba de *srcAddress* (POS-swzzle). En el caso de las matrices Texture1D, se omiten los componentes .ba de *srcAddress* (POS-swzzle). Para Texture2Ds, se omite el componente *srcAddress* .a (POS-swzzle).
 
-La captura de una ranura de entrada que no tiene nada enlazado devuelve 0 para todos los componentes.
+Al capturar desde una ranura de entrada que no tiene nada enlazado, se devuelve 0 para todos los componentes.
 
 ### <a name="restrictions"></a>Restricciones
 
--   *srcResource* debe ser un \# registro t. *srcResource* no puede ser ConstantBuffer, que no se puede enlazar a \# registros t.
--   *srcSampler* debe ser un \# registro s.
--   No se permite el direccionamiento relativo en *srcResource* o *srcSampler* .
--   *srcAddress* debe ser un registro Temp (r \# /X \# ), constantBuffer (CB \# ), INPUT (v \# ) o un valor inmediato (s).
--   *dest* debe ser un registro Temp (r \# /x \# ) o Output (o \* \# ).
--   \_aoffimmi (u, v, w) no se permite para TextureCubes.
+-   *srcResource debe* ser un registro \# t. *srcResource* no puede ser ConstantBuffer, que no se puede enlazar a registros \# t.
+-   *srcSampler* debe ser un registro \# s.
+-   No se permite el direccionamiento relativo en *srcResource* o *srcSampler.*
+-   *srcAddress* debe ser temp (r \# \# /x), constantBuffer (cb), \# input (v) register o valores \# inmediatos.
+-   *dest* debe ser un registro temporal (r \# /x) o de salida \# \* (o). \#
+-   \_no se permite aoffimmi(u,v,w) para TextureCubes.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -112,7 +112,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -120,12 +120,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -135,7 +135,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

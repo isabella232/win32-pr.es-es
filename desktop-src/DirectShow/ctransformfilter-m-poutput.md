@@ -1,7 +1,7 @@
 ---
 description: Puntero a la patilla de salida.
 ms.assetid: 78ad7c38-8259-4005-9542-5ac375305940
-title: Miembro CTransformFilter::m_pOutput (Transfrm.h)
+title: CTransformFilter::m_pOutput miembro (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -47,7 +47,7 @@ CTransformOutputPin *m_pOutput;
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

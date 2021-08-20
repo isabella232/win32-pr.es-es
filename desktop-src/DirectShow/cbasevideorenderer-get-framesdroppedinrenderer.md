@@ -1,7 +1,7 @@
 ---
-description: El \_ método get FramesDroppedInRenderer recupera el número de fotogramas quitados por el representador.
+description: El método \_ get FramesDroppedInRenderer recupera el número de fotogramas descartados por el representador.
 ms.assetid: d890f285-b3bb-426c-80f6-e273cf0cccbb
-title: Método CBaseVideoRenderer.get_FramesDroppedInRenderer (Renbase. h)
+title: CBaseVideoRenderer.get_FramesDroppedInRenderer método (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ef81678fce8d349c7c047b0453cc480d8673f8f8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 21bd2e9c2f9edb50ca3800c95b59ba19fd91674d5ef343cf35842380ce617978
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660380"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016763"
 ---
-# <a name="cbasevideorendererget_framesdroppedinrenderer-method"></a>CBaseVideoRenderer. Get \_ FramesDroppedInRenderer (método)
+# <a name="cbasevideorendererget_framesdroppedinrenderer-method"></a>Método CBaseVideoRenderer.get \_ FramesDroppedInRenderer
 
-El `get_FramesDroppedInRenderer` método recupera el número de fotogramas quitados por el representador.
+El `get_FramesDroppedInRenderer` método recupera el número de fotogramas descartados por el representador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ HRESULT get_FramesDroppedInRenderer(
 *pcFramesDropped* 
 </dt> <dd>
 
-Puntero al número de fotogramas quitados.
+Puntero al número de fotogramas descartados.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro implementa el método [**IQualProp:: get \_ FramesDroppedInRenderer**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-iqualprop-get_framesdroppedinrenderer) . Así es como la página de propiedades recupera los datos del programador. Los fotogramas también se pueden quitar de nivel superior sin que el representador los vea.
+Esta función miembro implementa el [**método IQualProp::get \_ FramesDroppedInRenderer.**](/previous-versions/windows/desktop/api/Amvideo/nf-amvideo-iqualprop-get_framesdroppedinrenderer) Así es como la página de propiedades recupera los datos del programador. Los fotogramas también se pueden descartar ascendentemente sin que el representador los vea.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta función miembro implementa el método [**IQualProp:: get \_ FramesDroppedI
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Esta función miembro implementa el método [**IQualProp:: get \_ FramesDroppedI
 
 <dl> <dt>
 
-[**Clase CBaseVideoRenderer**](cbasevideorenderer.md)
+[**CBaseVideoRenderer (clase)**](cbasevideorenderer.md)
 </dt> </dl>
 
  

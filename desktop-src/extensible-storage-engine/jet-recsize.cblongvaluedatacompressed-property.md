@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_RECSIZE. cbLongValueDataCompressed'
-title: Propiedad JET_RECSIZE. cbLongValueDataCompressed (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: JET_RECSIZE.cbLongValueDataCompressed'
+title: JET_RECSIZE.cbLongValueDataCompressed (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'cbLongValueDataCompressed property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE.cbLongValueDataCompressed
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_recsize.cblongvaluedatacompressed(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 113bb741287e85ef6f7132cd299202a0b9c2af31
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8e7ea71f705c14ef7c62244fde691e1a1174216fd07fa06b49e97d2fd124c592
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423652"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038853"
 ---
-# <a name="jet_recsizecblongvaluedatacompressed-property"></a>Propiedad JET_RECSIZE. cbLongValueDataCompressed
+# <a name="jet_recsizecblongvaluedatacompressed-property"></a>JET_RECSIZE.cbLongValueDataCompressed, propiedad
 
-Obtiene el tamaño comprimido de los datos de usuario en el árbol de valores largos. Es lo mismo que [cbLongValueData](./jet-recsize.cblongvaluedata-property.md) si no se comprimen valores largos separados.
+Obtiene el tamaño comprimido de los datos de usuario en el árbol de valores largos. Esto es lo mismo que [cbLongValueData si](./jet-recsize.cblongvaluedata-property.md) no se comprime ningún valor long separado.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public long cbLongValueDataCompressed { get; internal set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int64](/dotnet/api/system.int64)  
+Tipo: [System.Int64](/dotnet/api/system.int64)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_RECSIZE](./jet-recsize-structure2.md)
+[JET_RECSIZE estructura](./jet-recsize-structure2.md)
 
-[Miembros de JET_RECSIZE](./jet-recsize-members.md)
+[JET_RECSIZE miembros](./jet-recsize-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

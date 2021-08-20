@@ -1,11 +1,11 @@
 ---
-title: External. NavigateTaskPaneURL (método)
-description: Tenga en cuenta que en este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. | External. NavigateTaskPaneURL (método)
+title: Método External.NavigateTaskPaneURL
+description: Nota En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. | Método External.NavigateTaskPaneURL
 ms.assetid: c3a888c0-6589-4d21-9d47-37372d9069f4
 keywords:
-- Método NavigateTaskPaneURL de Windows Media Player
-- Método NavigateTaskPaneURL de Windows Media Player, clase externa
-- Clase externa Windows Media Player, método NavigateTaskPaneURL
+- Método NavigateTaskPaneURL Reproductor de Windows Media
+- Método NavigateTaskPaneURL Reproductor de Windows Media , clase External
+- Clase externa Reproductor de Windows Media método , NavigateTaskPaneURL
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e70558c7616738f67d9dc1d6d29eca15e5c30d4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eebcf8d799452a9966355f644f00ac5c4aecc4c066374254e8e580431b756b92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649035"
 ---
-# <a name="externalnavigatetaskpaneurl-method"></a>External. NavigateTaskPaneURL (método)
+# <a name="externalnavigatetaskpaneurl-method"></a>Método External.NavigateTaskPaneURL
 
 > [!Note]  
-> En este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-El método **NavigateTaskPaneURL** abre una página web en el panel de tareas especificado y cambia el foco al panel especificado.
+El **método NavigateTaskPaneURL** abre una página web en el panel de tareas especificado y cambia el foco al panel especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,24 +49,24 @@ External.NavigateTaskPaneURL(
 
 <dl> <dt>
 
-*bstrKeyName* \[ de\]
+*bstrKeyName* \[ En\]
 </dt> <dd>
 
-**Cadena** que contiene el nombre de clave de la tienda en línea. (necesario)
+**Cadena** que contiene el nombre de clave para el almacén en línea. (necesario)
 
 </dd> <dt>
 
-*bstrTaskPane* \[ de\]
+*bstrTaskPane* \[ En\]
 </dt> <dd>
 
-**Cadena** que contiene el nombre del panel de tareas en el que se abre la Página Web. (necesario)
+**Cadena** que contiene el nombre del panel de tareas en el que se abre la página web. (necesario)
 
 </dd> <dt>
 
-*bstrParams* \[ de\]
+*bstrParams* \[ En\]
 </dt> <dd>
 
-**Cadena** que contiene los parámetros de cadena de consulta que se van a anexar a la dirección URL especificada por el elemento **Navigate** del documento ServiceInfo. (opcional).
+**Cadena** que contiene los parámetros de cadena de consulta que se anexarán a la dirección URL especificada por el **elemento Navigate** del documento ServiceInfo. (opcional).
 
 </dd> </dl>
 
@@ -74,13 +74,13 @@ External.NavigateTaskPaneURL(
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Desplazarse a un panel que la tienda en línea no admite puede hacer que la tienda en línea actual cambie.
+Navegar a un panel que la tienda en línea no admite puede hacer que cambie la tienda en línea actual.
 
 El valor especificado para *bstrParams* solo es válido cuando se llama a **NavigateTaskPaneURL** desde páginas web proporcionadas por la tienda en línea.
 
-En la tabla siguiente se muestran los valores válidos para *bstrTaskPane* y el panel de tareas asociado para cada uno de ellos.
+En la tabla siguiente se enumeran los valores válidos *para bstrTaskPane* y el panel de tareas asociado para cada uno.
 
 
 
@@ -94,13 +94,13 @@ En la tabla siguiente se muestran los valores válidos para *bstrTaskPane* y el 
 
  
 
-El código de la página web debe especificar un valor para [external. SelectedTaskPane](external-selectedtaskpane.md) al cargar para asegurarse de que se resalta el botón correcto del panel de tareas después de completar la navegación.
+El código de la página web debe especificar un valor [para External.SelectedTaskPane](external-selectedtaskpane.md) al cargar para asegurarse de que el botón del panel de tareas correcto está resaltado una vez completada la navegación.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestra cómo **NavigateTaskPaneURL** crea la dirección URL de la página web que se va a mostrar para **ServiceTask1**.
+En el código de ejemplo siguiente se **muestra cómo NavigateTaskPaneURL** crea la dirección URL de la página web que se va a mostrar **para ServiceTask1.**
 
-Ejemplo del elemento **Navigate** :
+Ejemplo del **elemento Navigate:**
 
 
 ```XML
@@ -111,7 +111,7 @@ Ejemplo del elemento **Navigate** :
 
 
 
-Llamada de ejemplo al método **NavigateTaskPaneURL** :
+Llamada de ejemplo al **método NavigateTaskPaneURL:**
 
 
 ```XML
@@ -120,7 +120,7 @@ external.NavigateTaskPaneURL("Proseware", "ServiceTask1", "Pane=Store");
 
 
 
-Ejemplo de dirección URL resultante usada para la página web que se muestra en **ServiceTask1**:
+Ejemplo de dirección URL resultante usada para la página web que se muestra **en ServiceTask1:**
 
 
 ```XML
@@ -135,7 +135,7 @@ https://www.proseware.com/online store/html/navigate.asp?Pane=Store
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 10 o posterior<br/>                                        |
+| Versión<br/> | Reproductor de Windows Media 10 o posterior<br/>                                        |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -144,10 +144,10 @@ https://www.proseware.com/online store/html/navigate.asp?Pane=Store
 
 <dl> <dt>
 
-[**Objeto externo para las tiendas en línea de tipo 2**](external-object-for-type-2-online-stores.md)
+[**Objeto externo para almacenes en línea de tipo 2**](external-object-for-type-2-online-stores.md)
 </dt> <dt>
 
-[**External. SelectedTaskPane**](external-selectedtaskpane.md)
+[**External.SelectedTaskPane**](external-selectedtaskpane.md)
 </dt> </dl>
 
  

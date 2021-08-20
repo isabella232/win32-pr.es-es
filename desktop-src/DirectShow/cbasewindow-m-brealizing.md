@@ -1,5 +1,5 @@
 ---
-description: Marca que especifica si se va a realizar una nueva paleta. En las compilaciones de depuración, el valor es TRUE mientras la paleta cambia y FALSE en caso contrario. Esta variable no se usa en las compilaciones comerciales.
+description: Marca que especifica si se está concretando una nueva paleta. En las compilaciones de depuración, el valor es TRUE mientras la paleta cambia y FALSE en caso contrario. Esta variable no se usa en las compilaciones comerciales.
 ms.assetid: 3aba880d-fa22-4745-a2b3-6701c808c4e3
 title: CBaseWindow::m_bRealizing miembro (Winutil.h)
 ms.topic: reference
@@ -23,9 +23,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118954594"
 ---
-# <a name="cbasewindowm_brealizing-member"></a>Miembro CBaseWindow::m \_ bRealizing
+# <a name="cbasewindowm_brealizing-member"></a>CBaseWindow::m \_ bRealizing member
 
-Marca que especifica si se va a realizar una nueva paleta. En las compilaciones de depuración, el valor es **TRUE** mientras la paleta cambia y **FALSE en** caso contrario. Esta variable no se usa en las compilaciones comerciales.
+Marca que especifica si se está concretando una nueva paleta. En las compilaciones de depuración, el valor es **TRUE** mientras la paleta cambia y **FALSE en caso** contrario. Esta variable no se usa en las compilaciones comerciales.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ BYTE m_bRealizing;
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

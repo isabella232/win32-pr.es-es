@@ -52,7 +52,7 @@ Para ejecutar correctamente este método, zoneType debe ser cero y la zona debe 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
@@ -61,14 +61,14 @@ Para ejecutar correctamente este método, zoneType debe ser cero y la zona debe 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [**Zona MicrosoftDNS \_**](microsoftdns-zone.md)
 </dt> <dt>
 
-[**Método AgeAllRecords de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-ageallrecords.md)
+[**Método AgeAllRecords de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-ageallrecords.md)
 </dt> <dt>
 
 [**Método ChangeZoneType de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-changezonetype.md)
@@ -80,10 +80,10 @@ Para ejecutar correctamente este método, zoneType debe ser cero y la zona debe 
 [**Método ForceRefresh de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-forcerefresh.md)
 </dt> <dt>
 
-[**Método GetDistinguishedName de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-getdistinguishedname.md)
+[**Método GetDistinguishedName de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-getdistinguishedname.md)
 </dt> <dt>
 
-[**Método PauseZone de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-pausezone.md)
+[**Método PauseZone de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-pausezone.md)
 </dt> <dt>
 
 [**Método ReloadZone de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-reloadzone.md)
@@ -92,7 +92,7 @@ Para ejecutar correctamente este método, zoneType debe ser cero y la zona debe 
 [**Método ResetSecondaries de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-resetsecondaries.md)
 </dt> <dt>
 
-[**Método ResumeZone de la clase de zona MicrosoftDNS \_**](microsoftdns-zone-resumezone.md)
+[**Método ResumeZone de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-resumezone.md)
 </dt> <dt>
 
 [**Método WriteBackZone de la clase Zone de MicrosoftDNS \_**](microsoftdns-zone-writebackzone.md)

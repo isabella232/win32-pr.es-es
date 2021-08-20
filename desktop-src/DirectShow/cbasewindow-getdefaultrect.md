@@ -1,7 +1,7 @@
 ---
-description: El método GetDefaultRect recupera el tamaño predeterminado del área cliente.
+description: El método GetDefaultRect recupera el tamaño predeterminado del área de cliente.
 ms.assetid: 9eb9e3a4-0d45-4aa3-a496-1b0bd92d4989
-title: Método CBaseWindow. GetDefaultRect (Winutil. h)
+title: Método CBaseWindow.GetDefaultRect (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1d7ec9612eab45e21262f8344daf7a52a6a888b4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e64d13a3fe77370d4b5bbefb7d493738b035c40ceebd13cd7f6f0f5c6d03f783
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074619"
 ---
-# <a name="cbasewindowgetdefaultrect-method"></a>CBaseWindow. GetDefaultRect, método
+# <a name="cbasewindowgetdefaultrect-method"></a>Método CBaseWindow.GetDefaultRect
 
-El `GetDefaultRect` método recupera el tamaño predeterminado del área cliente.
+El `GetDefaultRect` método recupera el tamaño predeterminado del área de cliente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Devuelve el rectángulo predeterminado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando se activa la ventana, el objeto llama a este método para determinar el tamaño que debe tener el área cliente de la ventana. En la clase base, este método devuelve un rectángulo cuyo alto y ancho son las constantes definidas DEFHEIGHT y DEFWIDTH. Una clase derivada debe reemplazar este método. En el caso de un representador de vídeo, la clase derivada normalmente devolverá el tamaño de la imagen de vídeo nativo.
+Cuando se activa la ventana, el objeto llama a este método para determinar el tamaño que debe tener el área de cliente de la ventana. En la clase base, este método devuelve un rectángulo cuyo alto y ancho son las constantes definidas DEFHEIGHT y DEFWIDTH. Una clase derivada debe invalidar este método. Para un representador de vídeo, la clase derivada normalmente devolverá el tamaño de la imagen de vídeo nativa.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Cuando se activa la ventana, el objeto llama a este método para determinar el t
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Cuando se activa la ventana, el objeto llama a este método para determinar el t
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

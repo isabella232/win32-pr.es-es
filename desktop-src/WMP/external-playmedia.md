@@ -1,11 +1,11 @@
 ---
-title: External. playMedia (método)
-description: En esta página se documenta una característica del SDK de Windows Media Player 9 series y el SDK de Windows Media Player 10. Puede que no esté disponible en versiones posteriores.
+title: Método External.playMedia
+description: En esta página se documenta una característica del SDK Reproductor de Windows Media serie 9 y el SDK Reproductor de Windows Media 10. Puede que no esté disponible en versiones posteriores.
 ms.assetid: 48071318-e853-4139-8fe4-17d1cdbef8f5
 keywords:
-- método playMedia de Windows Media Player
-- método playMedia de Windows Media Player, clase externa
-- Clase externa Windows Media Player, método playMedia
+- Método playMedia Reproductor de Windows Media
+- método playMedia Reproductor de Windows Media , clase External
+- Clase externa Reproductor de Windows Media , método playMedia
 topic_type:
 - apiref
 api_name:
@@ -16,23 +16,23 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cf0330e7e68d8b4e3747c019e0841f872d279c9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 65c2a5d49da302a1cdf2b702408d02e8f5f2fc5f0da5eb7f392af75d0581b1fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648615"
 ---
-# <a name="externalplaymedia-method"></a>External. playMedia (método)
+# <a name="externalplaymedia-method"></a>Método External.playMedia
 
-En esta página se documenta una característica del SDK de Windows Media Player 9 series y el SDK de Windows Media Player 10. Puede que no esté disponible en versiones posteriores.
+En esta página se documenta una característica del SDK Reproductor de Windows Media serie 9 y el SDK Reproductor de Windows Media 10. Puede que no esté disponible en versiones posteriores.
 
 > [!Note]  
-> En este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-El método **playMedia** especifica la dirección URL de un elemento multimedia digital que se va a reproducir.
+El **método playMedia** especifica la dirección URL de un elemento multimedia digital que se reproducirá.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,10 +49,10 @@ External.playMedia(
 
 <dl> <dt>
 
-*Dirección URL* \[ de\]
+*Dirección URL* \[ En\]
 </dt> <dd>
 
-**Cadena** que especifica la dirección URL del elemento multimedia digital que se va a reproducir.
+**Cadena** que especifica la dirección URL del elemento multimedia digital que se reproducirá.
 
 </dd> </dl>
 
@@ -60,17 +60,17 @@ External.playMedia(
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método solo está disponible para las páginas web hospedadas en la característica de la **Guía** .
+Este método solo está disponible para las páginas web hospedadas en la **característica Guía.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/>                                 |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -79,7 +79,7 @@ Este método solo está disponible para las páginas web hospedadas en la caract
 
 <dl> <dt>
 
-[**Objeto externo para las tiendas en línea de tipo 2**](external-object-for-type-2-online-stores.md)
+[**Objeto externo para almacenes en línea de tipo 2**](external-object-for-type-2-online-stores.md)
 </dt> </dl>
 
  

@@ -1,25 +1,25 @@
 ---
-description: Paquete de origen de VAUX (VS)
+description: Paquete de origen (VS) de SU
 ms.assetid: 5ffd2883-0e56-459f-b229-cc014b894237
-title: Paquete de origen de VAUX (VS)
+title: Paquete de origen (VS) de SU
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28f7ad2a91f1be1291b564013041e6dfa23bb014
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 477e7a3257c11d6d8b42e16d2f066251452bc42a489abe9e666e374a565fa77c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072108"
 ---
-# <a name="vaux-source-vs-pack"></a>Paquete de origen de VAUX (VS)
+# <a name="vaux-source-vs-pack"></a>Paquete de origen (VS) de SU
 
-En las tablas siguientes se enumeran los valores utilizados por el controlador MSDV para rellenar el miembro **dwDVVAuxSrc** de la estructura [**DVINFO**](/windows/desktop/api/strmif/ns-strmif-dvinfo) . Para obtener más información, consulte [configuración de los campos DVINFO en el controlador MSDV](dvinfo-field-settings-in-the-msdv-driver.md).
+En las tablas siguientes se muestran los valores utilizados por el controlador MSDV para rellenar el **miembro dwDVVVvSrc** de la [**estructura DVINFO.**](/windows/desktop/api/strmif/ns-strmif-dvinfo) Para obtener más información, [vea DvINFO Field Configuración en el controlador MSDV](dvinfo-field-settings-in-the-msdv-driver.md).
 
-**Configuración de DVCR**
+**Dvcr Configuración**
 
 
 
-Estándar DV
+DV Estándar
 
 DVCR (IEC 61834)
 
@@ -29,7 +29,7 @@ dvsl
 
 dvsd
 
-System
+Sistema
 
 525-60
 
@@ -39,7 +39,7 @@ System
 
 625-50
 
-CANAL DE TV (8)
+CANAL DE TELEVISIÓN (8)
 
 1111:1111
 
@@ -79,7 +79,7 @@ CLF (2)
 
 11
 
-CANAL DE TV (4)
+CANAL DE TELEVISIÓN (4)
 
 1111
 
@@ -109,7 +109,7 @@ CÓDIGO FUENTE (2)
 
 1
 
-SSE ESPERABA UNA (5)
+STYPE (5)
 
 0:0001
 
@@ -119,7 +119,7 @@ SSE ESPERABA UNA (5)
 
 0:0000
 
-CATEGORÍA DE SINTONIZADOR (8)
+CATEGORÍA DE TUNER (8)
 
 1111:1111
 
@@ -129,7 +129,7 @@ CATEGORÍA DE SINTONIZADOR (8)
 
 1111:1111
 
-Paquete de VS
+VS Pack
 
 0xFFC1FFFF
 
@@ -143,11 +143,11 @@ Paquete de VS
 
  
 
-**Configuración de DVCPRO 25 y DVCPRO 50 (planeada)**
+**DVCPRO 25 y DVCPRO 50 Configuración (planeado)**
 
 
 
-Estándar DV
+DV Estándar
 
 DVCPRO (SMPTE 314M): planeado
 
@@ -157,7 +157,7 @@ dv25
 
 dv50
 
-System
+Sistema
 
 525-60
 
@@ -237,7 +237,7 @@ Reservado (2)
 
 1
 
-SSE ESPERABA UNA (5)
+STYPE (5)
 
 0:0000
 
@@ -257,7 +257,7 @@ VISC (8)
 
 1111:1111
 
-Paquete de VS
+VS Pack
 
 0x7FC0FFFF
 
@@ -271,11 +271,11 @@ Paquete de VS
 
  
 
-**Configuración de DVCR 100 (planeada)**
+**DVCR 100 Configuración (planeado)**
 
 
 
-Estándar DV
+DV Estándar
 
 DVCPRO 100: planeado
 
@@ -283,7 +283,7 @@ FOURCC
 
 dvh1
 
-System
+Sistema
 
 1080-60i
 
@@ -347,7 +347,7 @@ Reservado (2)
 
 1
 
-SSE ESPERABA UNA (5)
+STYPE (5)
 
 1:0100
 
@@ -363,7 +363,7 @@ VISC (8)
 
 1111:1111
 
-Paquete de VS
+VS Pack
 
 0x7FD4FFFF
 
@@ -375,22 +375,22 @@ Paquete de VS
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los siguientes códigos de campo son de interés:
 
--   **B/W**: marca de blanco y negro. 1 = color.
--   **50/60**: número de campos.
-    -   0 = campos 60
-    -   1 = campos 50
--   **SSE esperaba una**: tipo de señal.
+-   **B/W:** marca en blanco y negro. 1 = color.
+-   **50/60:** número de campos.
+    -   0 = 60 campos
+    -   1 = 50 campos
+-   **STYPE:** tipo de señal.
 
     Definición de IEC 61834:
 
-    -   0:0000 = 525-60 o 625-50, DVSD
-    -   0:0001 = 525-60 o 625-50, DVSL (tal y como se define en IEC 61883-5)
+    -   0:0000 = 525-60 o 625-50, dvsd
+    -   0:0001 = 525-60 o 625-50, dvsl (como se define en IEC 61883-5)
 
-    Definición de 314M SMPTE:
+    Definición de SMPTE 314M:
 
     -   0:0000 = compresión 4:1:1
     -   0:0100 = compresión 4:2:2
@@ -407,7 +407,7 @@ Los siguientes códigos de campo son de interés:
 [Vídeo digital en DirectShow](digital-video-in-directshow.md)
 </dt> <dt>
 
-[Configuración del campo DVINFO en el controlador MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
+[Campo DVINFO Configuración en el controlador MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
 </dt> </dl>
 
  

@@ -1,21 +1,21 @@
 ---
-description: La función OpenPerformanceData proporciona al proveedor una oportunidad de inicializar sus estructuras de datos de rendimiento.
+description: La función OpenPerformanceData ofrece al proveedor la oportunidad de inicializar sus estructuras de datos de rendimiento.
 ms.assetid: 0849d9cb-90d1-4b79-810d-b43f69cc9055
 title: Implementación de OpenPerformanceData
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53f5e4f9860983066f6ce106638962415dcf71b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 835c60e449e7e95264c20623dc103395d34b770feb632ba2409e3d658094d289
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119579835"
 ---
 # <a name="implementing-openperformancedata"></a>Implementación de OpenPerformanceData
 
-La función [**OpenPerformanceData**](/previous-versions/windows/desktop/legacy/aa372200(v=vs.85)) proporciona al proveedor una oportunidad de inicializar sus estructuras de datos de rendimiento. El sistema llama a la función abierta la primera vez que un consumidor llama a [**RegQueryValueEx**](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa), o si el consumidor usa la función [**RegOpenKey**](/windows/desktop/api/winreg/nf-winreg-regopenkeya) o [**RegConnectRegistry**](/windows/desktop/api/winreg/nf-winreg-regconnectregistrya) para abrir los **datos de \_ rendimiento \_ de HKEY**.
+La [**función OpenPerformanceData**](/previous-versions/windows/desktop/legacy/aa372200(v=vs.85)) ofrece al proveedor la oportunidad de inicializar sus estructuras de datos de rendimiento. El sistema llama a la función open la primera vez que un consumidor llama a [**RegQueryValueEx**](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa)o si el consumidor usa la [**función RegOpenKey**](/windows/desktop/api/winreg/nf-winreg-regopenkeya) o [**RegConnectRegistry**](/windows/desktop/api/winreg/nf-winreg-regconnectregistrya) para abrir **HKEY \_ PERFORMANCE \_ DATA**.
 
-En el ejemplo siguiente se muestra una implementación de la función [**OpenPerformanceData**](/previous-versions/windows/desktop/legacy/aa372200(v=vs.85)) . El archivo de encabezado que contiene la definición de los contadores utilizados en esta función sigue este ejemplo. Si usa C++ para implementar esta función, asegúrese de usar extern "C" al declarar la función. Las constantes de desplazamiento de contador utilizadas en este ejemplo se definen en el archivo de contradesplazamiento. h que se muestra en [Agregar nombres y descripciones de contadores al registro](adding-counter-names-and-descriptions-to-the-registry.md).
+En el ejemplo siguiente se muestra una implementación de la [**función OpenPerformanceData.**](/previous-versions/windows/desktop/legacy/aa372200(v=vs.85)) El archivo de encabezado que contiene la definición de los contadores usados en esta función sigue este ejemplo. Si usa C++ para implementar esta función, asegúrese de usar extern "C" al declarar la función. Las constantes de desplazamiento de contador usadas en este ejemplo se definen en el archivo CounterOffsets.h que se muestra en [Adding Counter Names and Description to the Registry](adding-counter-names-and-descriptions-to-the-registry.md).
 
 
 ```C++
@@ -166,7 +166,7 @@ cleanup:
 
 
 
-A continuación se encuentra el archivo de encabezado que se usa en este ejemplo.
+A continuación se muestra el archivo de encabezado usado en este ejemplo.
 
 
 ```C++
@@ -251,7 +251,7 @@ UNALIGNED LONG g_OpenCount = 0;  // Reference count for the number of times
 
 
 
-En el ejemplo siguiente se muestra el archivo de definición de módulo (. def) que se usa para exportar las funciones de apertura, recopilación y cierre.
+En el ejemplo siguiente se muestra el archivo de definición de módulo (.def) utilizado para exportar las funciones open, collect y close.
 
 
 ```C++
@@ -265,7 +265,7 @@ EXPORTS
 
 
 
-En el ejemplo siguiente se muestra una implementación de la función [*ClosePerformanceData*](/windows/win32/api/winperf/nc-winperf-pm_close_proc) . El sistema llama a la función Close cuando un consumidor llama a [**RegCloseKey**](/windows/desktop/api/winreg/nf-winreg-regclosekey) para cerrar los **\_ \_ datos de rendimiento de HKEY**. Los proveedores usan esta llamada para liberar cualquier recurso que haya asignado.
+En el ejemplo siguiente se muestra una implementación de la [*función ClosePerformanceData.*](/windows/win32/api/winperf/nc-winperf-pm_close_proc) El sistema llama a la función close cuando un consumidor llama a [**RegCloseKey**](/windows/desktop/api/winreg/nf-winreg-regclosekey) para cerrar **HKEY \_ PERFORMANCE \_ DATA**. Los proveedores usan esta llamada para liberar los recursos que han asignado.
 
 
 ```C++

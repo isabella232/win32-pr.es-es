@@ -1,5 +1,5 @@
 ---
-description: 'Método RequestStateChange de la Msvm_VideoHead: solicita un cambio de estado.'
+description: 'Método RequestStateChange de la Msvm_VideoHead clase : solicita un cambio de estado.'
 ms.assetid: c780c162-3352-4f13-a84a-26eb99f9d380
 title: Método RequestStateChange de la Msvm_VideoHead clase
 ms.topic: reference
@@ -44,7 +44,7 @@ uint32 RequestStateChange(
 *RequestedState* \[ En\]
 </dt> <dd>
 
-El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del **método RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
+El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del método **RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
 
 <dt>
 
@@ -106,7 +106,7 @@ El nuevo estado. La información se coloca en la **propiedad RequestedState** de
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Restablecer** (11)
+**Restablecimiento** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -128,14 +128,14 @@ El nuevo estado. La información se coloca en la **propiedad RequestedState** de
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Puede contener una referencia a cim [**\_ concretejob creado**](cim-concretejob.md) para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
+Puede contener una referencia al [**\_ elemento ConcreteJob de CIM**](cim-concretejob.md) creado para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
 
 </dd> <dt>
 
 *TimeoutPeriod* \[ En\]
 </dt> <dd>
 
-Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar el período de tiempo de espera. Un valor de 0 o **Null** indica que el cliente no tiene requisitos de tiempo para la transición. Si esta propiedad no contiene 0 o **Null** y la implementación no admite este parámetro, se debe devolver un código de retorno 4098 **(No** se admite el uso del parámetro de tiempo de espera).
+Período de tiempo de espera que especifica la cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar el período de tiempo de espera. Un valor de 0 o **Null** indica que el cliente no tiene ningún requisito de tiempo para la transición. Si esta propiedad no contiene 0 o **Null** y la implementación no admite este parámetro, se debe devolver un código de retorno 4098 (**Use Of Timeout Parameter Not Supported**).
 
 </dd> </dl>
 
@@ -155,7 +155,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -165,7 +165,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

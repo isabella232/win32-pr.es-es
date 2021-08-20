@@ -1,7 +1,7 @@
 ---
 description: El método NotifyOwnerMessage pasa mensajes específicos a la ventana de vídeo.
 ms.assetid: 8b27281a-5b8a-46c3-aa66-390d4496f30e
-title: Método CBaseControlWindow. NotifyOwnerMessage (Ctlutil. h)
+title: Método CBaseControlWindow.NotifyOwnerMessage (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9073d37987404849ba8aa3acbda9919df840b410
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 35d71057027bd8fbd572dffd714f761ff101ba0de95dd42dcf058009b0cb1b04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526855"
 ---
-# <a name="cbasecontrolwindownotifyownermessage-method"></a>CBaseControlWindow. NotifyOwnerMessage, método
+# <a name="cbasecontrolwindownotifyownermessage-method"></a>Método CBaseControlWindow.NotifyOwnerMessage
 
 El `NotifyOwnerMessage` método pasa mensajes específicos a la ventana de vídeo.
 
@@ -45,10 +45,10 @@ HRESULT NotifyOwnerMessage(
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
-Identificador de la ventana de vídeo.
+Controle la ventana de vídeo.
 
 </dd> <dt>
 
@@ -69,27 +69,27 @@ Primer parámetro de mensaje.
 *lParam* 
 </dt> <dd>
 
-Segundo parámetro del mensaje.
+Segundo parámetro de mensaje.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-NO devuelve ningún \_ error.
+Devuelve NO \_ ERROR.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando la ventana de vídeo es un elemento secundario de otra ventana, no recibe ciertos mensajes de ventana de nivel superior. Estos mensajes pueden ser valiosos para un representador, porque podrían afectar a su comportamiento. `NotifyOwnerMessage` pasa cualquiera de los mensajes siguientes a la ventana de vídeo.
+Cuando la ventana de vídeo es un elemento secundario de otra ventana, no recibe determinados mensajes de ventana de nivel superior. Estos mensajes pueden ser valiosos para un representador, ya que podrían afectar a su comportamiento. `NotifyOwnerMessage` pasa cualquiera de los mensajes siguientes a la ventana de vídeo.
 
--   ACTIVATEAPP de WM \_
--   DEVMODECHANGE de WM \_
--   DISPLAYCHANGE de WM \_
--   PALETTECHANGED de WM \_
--   PALETTEISCHANGING de WM \_
--   QUERYNEWPALETTE de WM \_
--   SYSCOLORCHANGE de WM \_
+-   WM \_ ACTIVATEAPP
+-   WM \_ DEVMODECHANGE
+-   WM \_ DISPLAYCHANGE
+-   PALETA \_ WMCHANGED
+-   PALETA \_ WMISCHANGING
+-   WM \_ QUERYNEWPALETTE
+-   WM \_ SYSCOLORCHANGE
 
-Puede solicitar que el distribuidor de complementos de [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) (PID) haga que una ventana se convierta en un elemento secundario de otra ventana. Cuando esto ocurre, el PID buscará determinados mensajes que puedan enviarse a la ventana propietaria. A continuación, el PID reenviará esos mensajes a la ventana de propiedad. El procesamiento predeterminado de los mensajes es enviarlos al procedimiento de ventana propiedad de forma sincrónica mediante una llamada a la función **SendMessage** de Win32.
+Puede solicitar que el distribuidor del complemento [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) (PID) haga que una ventana se convierta en un elemento secundario de otra ventana. Cuando esto sucede, el PID buscará determinados mensajes que podrían enviarse a la ventana propietaria. A continuación, el PID reenviará esos mensajes a la ventana de propiedad. El procesamiento predeterminado de los mensajes consiste en enviarlos al procedimiento de ventana propiedad de forma sincrónica mediante una llamada a la función **SendMessage de** Win32.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,8 +97,8 @@ Puede solicitar que el distribuidor de complementos de [**IVideoWindow**](/windo
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -106,7 +106,7 @@ Puede solicitar que el distribuidor de complementos de [**IVideoWindow**](/windo
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  
