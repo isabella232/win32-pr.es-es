@@ -1,11 +1,11 @@
 ---
-title: IDWriteLocalFontFileLoader GetLastWriteTimeFromKey, método
-description: Obtiene la hora de la última escritura del archivo a partir de la clave de referencia del archivo de fuente.
+title: Método IDWriteLocalFontFileLoader GetLastWriteTimeFromKey
+description: Obtiene la última hora de escritura del archivo a partir de la clave de referencia del archivo de fuente.
 ms.assetid: ce7f5321-8ad8-4412-a54c-7102790e99c0
 keywords:
-- Método GetLastWriteTimeFromKey de escritura directa
-- Método GetLastWriteTimeFromKey de escritura directa, interfaz IDWriteLocalFontFileLoader
-- Interfaz IDWriteLocalFontFileLoader Direct Write, método GetLastWriteTimeFromKey
+- Método GetLastWriteTimeFromKey direct write
+- Método GetLastWriteTimeFromKey direct write , interfaz IDWriteLocalFontFileLoader
+- Método GetLastWriteTimeFromKey de la interfaz IDWriteLocalFontFileLoader
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea9817917a59761278a961a6fcafcdeaea5fda32
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a2fb3d79475a943c3a635b347cfd6dbe41e8b3a8903022bae9089e1d6a9847c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117816319"
 ---
-# <a name="idwritelocalfontfileloadergetlastwritetimefromkey-method"></a>IDWriteLocalFontFileLoader:: GetLastWriteTimeFromKey (método)
+# <a name="idwritelocalfontfileloadergetlastwritetimefromkey-method"></a>Método IDWriteLocalFontFileLoader::GetLastWriteTimeFromKey
 
-Obtiene la hora de la última escritura del archivo a partir de la clave de referencia del archivo de fuente.
+Obtiene la última hora de escritura del archivo a partir de la clave de referencia del archivo de fuente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,12 +44,12 @@ virtual HRESULT GetLastWriteTimeFromKey(
 
 <dl> <dt>
 
-*fontFileReferenceKey* \[ de\]
+*fontFileReferenceKey* \[ En\]
 </dt> <dd>
 
-Tipo: **const void \***
+Tipo: **const \* void**
 
-Clave de referencia del archivo de fuente que identifica de forma única el archivo de fuente local dentro del ámbito del cargador de fuentes que se utiliza.
+Clave de referencia del archivo de fuente que identifica de forma única el archivo de fuente local dentro del ámbito del cargador de fuentes que se está utilizando.
 
 </dd> <dt>
 
@@ -58,16 +58,16 @@ Clave de referencia del archivo de fuente que identifica de forma única el arch
 
 Tipo: **UINT32**
 
-Tamaño de la clave de referencia del archivo de fuentes en bytes.
+Tamaño de la clave de referencia del archivo de fuente en bytes.
 
 </dd> <dt>
 
-*lastWriteTime* \[ enuncia\]
+*lastWriteTime* \[ out\]
 </dt> <dd>
 
 Tipo: **FILETIME \***
 
-Hora de la última modificación del archivo de fuentes.
+Hora de la última modificación del archivo de fuente.
 
 </dd> </dl>
 
@@ -75,15 +75,15 @@ Hora de la última modificación del archivo de fuentes.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>Dwrite. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Dwrite.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>Dwrite.dll</dt> </dl> |
 
 

@@ -15,15 +15,15 @@ ms.locfileid: "117878957"
 
 En este tema se describe cómo detectar la pérdida de dispositivos al usar un dispositivo de captura de vídeo. Contiene las secciones siguientes:
 
--   [Registro para la notificación de dispositivo](#register-for-device-notification)
+-   [Registrarse para la notificación de dispositivo](#register-for-device-notification)
 -   [Obtener el vínculo simbólico del dispositivo](#get-the-symbolic-link-of-the-device)
 -   [Controlar WM \_ DEVICECHANGE](/windows)
 -   [Anulación del registro para notificación](#unregister-for-notification)
 -   [Temas relacionados](#related-topics)
 
-## <a name="register-for-device-notification"></a>Registro para la notificación de dispositivo
+## <a name="register-for-device-notification"></a>Registrarse para la notificación de dispositivo
 
-Antes de empezar a capturar desde el dispositivo, llame a la [**función RegisterDeviceNotification**](/windows/win32/api/winuser/nf-winuser-registerdevicenotificationa) para registrarse para recibir notificaciones del dispositivo. Regístrese para la **clase de dispositivo KSCATEGORY \_ CAPTURE,** como se muestra en el código siguiente.
+Antes de empezar a capturar desde el dispositivo, llame a [**la función RegisterDeviceNotification**](/windows/win32/api/winuser/nf-winuser-registerdevicenotificationa) para registrarse para recibir notificaciones del dispositivo. Regístrese para la **clase de dispositivo KSCATEGORY \_ CAPTURE,** como se muestra en el código siguiente.
 
 
 ```C++

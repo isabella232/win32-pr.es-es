@@ -14,12 +14,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 6271b150bead5be4715259c68711ee67417f6395
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6a7a5c47fcdb81accf4c2370aa14fa5f477be50b718b326631b20847db528151
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108097043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860930"
 ---
 # <a name="dfm_gethelptextw-message"></a>Mensaje \_ GETHELPTEXTW de DFM
 
@@ -45,7 +45,7 @@ DFM_GETHELPTEXTW
 *idCmd \_ cchMax* \[ en\]
 </dt> <dd>
 
-La palabra de orden bajo de este parámetro contiene el identificador del comando. La palabra de orden superior contiene el número de caracteres del *búfer pszText.*
+La palabra de orden bajo de este parámetro contiene el identificador del comando. La palabra de orden superior contiene el número de caracteres del búfer *pszText.*
 
 </dd> <dt>
 
@@ -68,9 +68,9 @@ Este mensaje se envía a la función de devolución de llamada o al objeto de de
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                |
+| Header<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **DFM \_ GETHELPTEXTW** (Unicode)<br/>                                          |
 
 

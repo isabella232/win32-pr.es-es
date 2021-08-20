@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 70d1624fd8f1bcb06a03e4a5b201f8662626a084
-ms.sourcegitcommit: adba238660d8a5f4fe98fc6f5d105d56aac3a400
+ms.openlocfilehash: b043479f87f98ad458813fc5c749f1aa3af7dd66c0c6a79961e60c8a2872ea93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111826974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117905006"
 ---
 # <a name="sv_gsinstanceid"></a>SV \_ GSInstanceID
 
@@ -44,7 +44,7 @@ Esta función se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        | x        |       |         |
 

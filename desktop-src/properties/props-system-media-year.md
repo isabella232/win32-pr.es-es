@@ -4,12 +4,12 @@ ms.assetid: 87080e50-1233-4300-8fbc-cd897d9aecbd
 title: System.Media.Year
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c591d30da427cda56158f6273587182b59a5fe1a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 528af76ccef744efa888dc4c6cd5a3420f491f23a0b67dd4cf8a4b8d857b3886
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114073"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117683328"
 ---
 # <a name="systemmediayear"></a>System.Media.Year
 

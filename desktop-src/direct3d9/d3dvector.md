@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 8fc8d78490f192f5cbf222251d763ac73e862e78
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f97667127642c3b47837db5f40c071daf8746559e36d66c0c86c195214d5b0b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117911072"
 ---
 # <a name="d3dvector-structure-d3d9typesh"></a>Estructura D3DVECTOR (D3D9Types.h)
 
@@ -63,7 +63,7 @@ Valor de punto flotante que describe el vector.
 
 </dd> <dt>
 
-**z**
+**Z**
 </dt> <dd>
 
 Tipo: **float**
@@ -84,7 +84,7 @@ Valor de punto flotante que describe el vector.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

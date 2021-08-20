@@ -1,9 +1,9 @@
 ---
-title: D3DX_R8G8B8A8_SINT_to_INT4 función)
-description: Desempaqueta los \_ datos del \_ \_ sombreador R8G8B8A8 de los formatos de DXGI en un XMINT4.
+title: D3DX_R8G8B8A8_SINT_to_INT4 función
+description: Desempaqueta los datos del sombreador SINT DXGI \_ FORMAT \_ R8G8B8A8 \_ en un XMINT4.
 ms.assetid: 144bd296-02b5-4307-b785-860680db2d52
 keywords:
-- D3DX_R8G8B8A8_SINT_to_INT4 de la función HLSL
+- D3DX_R8G8B8A8_SINT_to_INT4 función HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d129982db5535d91b38dc9d3630f78192c4b1fbc
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e4026dc3bdb6db452381c2c7129b2605769ba91adde7f4301e66c93b263ae8ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104157208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117908755"
 ---
-# <a name="d3dx_r8g8b8a8_sint_to_int4-function"></a>D3DX \_ R8G8B8A8 \_ Sint \_ a la \_ función INT4
+# <a name="d3dx_r8g8b8a8_sint_to_int4-function"></a>Función D3DX \_ R8G8B8A8 \_ SINT \_ to \_ INT4
 
-Desempaqueta los \_ datos del \_ \_ sombreador R8G8B8A8 de los formatos de DXGI en un XMINT4.
+Desempaqueta los datos del sombreador SINT DXGI \_ FORMAT \_ R8G8B8A8 \_ en un XMINT4.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,13 +40,13 @@ XMINT4 D3DX_R8G8B8A8_SINT_to_INT4(
 *packedInput* 
 </dt> <dd>
 
-Datos del sombreador empaquetado.
+Datos empaquetados del sombreador.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Datos del sombreador desempaquetado.
+Datos del sombreador desempaquetar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Datos del sombreador desempaquetado.
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. INL</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Datos del sombreador desempaquetado.
 [Funciones](format-conversion-functions.md)
 </dt> <dt>
 
-[Desempaquetar y empaquetar el \_ formato de DXGI para la edición de In-Place imagen](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempaquetar y empaquetar DXGI \_ FORMAT para la edición In-Place imágenes](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

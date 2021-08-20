@@ -14,12 +14,12 @@ api_type:
 - NA
 api_location: ''
 ms.assetid: 31d5831d-9a19-4bd9-8439-ce844966c414
-ms.openlocfilehash: 652168e6a4e61ac754aac3202e0681ec6b7d9e66
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 7f3f18f785bb91a4edcdc3401d595c449cba10b34f155ac71b7c705f2938ea4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109840766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118049207"
 ---
 # <a name="mruinfo-structure"></a>Estructura MRUINFO
 
@@ -41,7 +41,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 <dl> <dt>
 
@@ -107,7 +107,7 @@ Tipo: **HKEY**
 
 </dd> <dd>
 
-Identificador de la clave abierta actualmente o uno de los siguientes valores predefinidos en los que se almacenarán los datos de MRU.
+Identificador de la clave abierta actualmente o uno de los siguientes valores predefinidos en los que almacenar los datos de MRU.
 
 <dl><span id="HKEY_CURRENT_USER"></span><span id="hkey_current_user"></span><dt>
 
@@ -124,7 +124,7 @@ Tipo: **LPCTSTR**
 
 </dd> <dd>
 
-Subclave en la que se almacenan los datos de MRU.
+Subclave en la que se almacenarán los datos de MRU.
 
 </dd> <dt>
 
@@ -135,19 +135,19 @@ Tipo: **[ **MRUCMPPROC**](mrucmpproc.md)**
 
 </dd> <dd>
 
-Puntero a una función de comparación de datos opcional que se puede usar para determinar si un elemento está presente en la lista de MRU. Esto resulta útil cuando se creó la lista de MRU con la **marca \_ BINARY de MRU.** Si este miembro es **NULL, se** usan funciones de comparación de cadenas estándar; Para los datos binarios, se usa una comparación de memoria directa.
+Puntero a una función de comparación de datos opcional que se puede usar para determinar si un elemento está presente en la lista de MRU. Esto resulta útil cuando se creó la lista de MRU con la **marca \_ BINARY de MRU.** Si este miembro es **NULL,** se usan funciones de comparación de cadenas estándar; Para los datos binarios, se usa una comparación de memoria directa.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura no está definida en un archivo de encabezado. Debe definirlo usted mismo.
+Esta estructura no se define en un archivo de encabezado. Debe definirlo usted mismo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. GetTableColumnid (método)'
-title: Método API. GetTableColumnid
+description: Más información sobre el método Api.GetTableColumnid
+title: Método Api.GetTableColumnid
 TOCTitle: 'GetTableColumnid method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.GetTableColumnid(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.String)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.gettablecolumnid(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ec91b014401709b6312b3363d8dae9e7da3d200e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd63b7ef62da90935d8df5c8367795fc20ea1a26cc876272ab04303f86da4638
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117903478"
 ---
-# <a name="apigettablecolumnid-method"></a>Método API. GetTableColumnid
+# <a name="apigettablecolumnid-method"></a>Método Api.GetTableColumnid
 
 Obtiene el columnid de la columna especificada.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,27 +68,27 @@ public static JET_COLUMNID GetTableColumnid(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     Tabla que contiene la columna.
 
 <!-- end list -->
 
   - columnName  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     El nombre de la columna.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 Identificador de la columna.  
 
 ## <a name="see-also"></a>Vea también
@@ -97,6 +97,6 @@ Identificador de la columna.
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSLVPagesNotCommittedException'
-title: Constructor de EsentSLVPagesNotCommittedException
+description: 'Más información sobre: Constructor EsentSLVPagesNotCommittedException'
+title: Constructor EsentSLVPagesNotCommittedException
 TOCTitle: 'EsentSLVPagesNotCommittedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSLVPagesNotCommittedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvpagesnotcommittedexception.esentslvpagesnotcommittedexception(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 262c5c6de7bb52877ae9234366557f7743af5641
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a43fc591dc1fc8ca5992b1ceb397c45f7fbfb9d870c64e2fd2d89d8799e40e06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117897146"
 ---
-# <a name="esentslvpagesnotcommittedexception-constructor"></a>Constructor de EsentSLVPagesNotCommittedException
+# <a name="esentslvpagesnotcommittedexception-constructor"></a>Constructor EsentSLVPagesNotCommittedException
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Dim instance As New EsentSLVPagesNotCommittedException()
 public EsentSLVPagesNotCommittedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -58,4 +58,4 @@ public EsentSLVPagesNotCommittedException()
 
 [Miembros de EsentSLVPagesNotCommittedException](./esentslvpagesnotcommittedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

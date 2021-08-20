@@ -1,10 +1,10 @@
 ---
-title: Interfaz IWMDRMLicenseBackupRestoreStatus
+title: IWMDRMLicenseBackupRestoreStatus (interfaz)
 description: La interfaz IWMDRMLicenseBackupRestoreStatus proporciona un método para recuperar información de estado detallada sobre una operación de copia de seguridad o restauración de licencias. Esta interfaz se entrega con eventos de progreso generados durante las operaciones de copia de seguridad y restauración de licencias.
 ms.assetid: fbcd059f-13d9-4edb-8946-b55c9da6dca4
 keywords:
-- Interfaz IWMDRMLicenseBackupRestoreStatus formato de Windows Media
-- Interfaz IWMDRMLicenseBackupRestoreStatus formato de Windows Media, descrito
+- IWMDRMLicenseBackupRestoreStatus interface windows Media Format
+- IWMDRMLicenseBackupRestoreStatus interface windows Media Format , descrito
 topic_type:
 - apiref
 api_name:
@@ -14,30 +14,30 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a9db5d95daab78a506a3cc994fb9dd22153d0907
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 26583a2911545cd256598025806d238c2f98f84434b4f23d9f13f952bfd15927
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117847044"
 ---
-# <a name="iwmdrmlicensebackuprestorestatus-interface"></a>Interfaz IWMDRMLicenseBackupRestoreStatus
+# <a name="iwmdrmlicensebackuprestorestatus-interface"></a>IWMDRMLicenseBackupRestoreStatus (interfaz)
 
-La interfaz **IWMDRMLicenseBackupRestoreStatus** proporciona un método para recuperar información de estado detallada sobre una operación de copia de seguridad o restauración de licencias.
+La **interfaz IWMDRMLicenseBackupRestoreStatus proporciona** un método para recuperar información de estado detallada sobre una operación de copia de seguridad o restauración de licencias.
 
-Esta interfaz se entrega con eventos de progreso generados durante las operaciones de copia de seguridad y restauración de licencias. Se generan varios eventos **MEWMDRMLicenseBackupProgress** durante la copia de seguridad de la licencia, cada uno de los cuales tiene una instancia adjunta de esta interfaz. Lo mismo se aplica a los eventos **MEWMDRMLicenseRestoreProgress** , que se generan durante la restauración de la licencia.
+Esta interfaz se entrega con eventos de progreso generados durante las operaciones de copia de seguridad y restauración de licencias. Durante la copia de seguridad de la licencia se generan varios eventos **MEWMDRMLicenseBackupProgress,** cada uno de los cuales tiene una instancia de esta interfaz. Lo mismo sucede con los **eventos MEWMDRMLicenseRestoreProgress,** que se generan durante la restauración de la licencia.
 
-Para recuperar un puntero a una instancia de la interfaz **IWMDRMLicenseBackupRestoreStatus** , primero debe llamar al método **IMFMediaEvent:: GetValue** del evento progress. El valor que se recupera del evento es un puntero a la interfaz **IUnknown** del objeto que implementa la interfaz **IWMDRMLicenseBackupRestoreStatus** .
+Para recuperar un puntero a una instancia de la interfaz **IWMDRMLicenseBackupRestoreStatus,** primero debe llamar al método **IMFMediaEvent::GetValue** del evento de progreso. El valor que se recupera del evento es un puntero a la interfaz **IUnknown** del objeto que implementa la **interfaz IWMDRMLicenseBackupRestoreStatus.**
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IWMDRMLicenseBackupRestoreStatus** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IWMDRMLicenseBackupRestoreStatus** también tiene estos tipos de miembros:
+La **interfaz IWMDRMLicenseBackupRestoreStatus** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IWMDRMLicenseBackupRestoreStatus** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IWMDRMLicenseBackupRestoreStatus** tiene estos métodos.
+La **interfaz IWMDRMLicenseBackupRestoreStatus** tiene estos métodos.
 
 
 

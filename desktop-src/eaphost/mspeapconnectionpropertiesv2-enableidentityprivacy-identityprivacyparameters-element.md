@@ -1,6 +1,6 @@
 ---
 title: Elemento EnableIdentityPrivacy (IdentityPrivacyParameters)
-description: Indica si se envía la verdadera identidad de un usuario o una identidad anónima. | Elemento EnableIdentityPrivacy (IdentityPrivacyParameters)
+description: Indica si se envía la identidad verdadera de un usuario o una identidad anónima. | Elemento EnableIdentityPrivacy (IdentityPrivacyParameters)
 ms.assetid: 7751e5fa-895e-47f7-99d9-aa7ef2451eb1
 keywords:
 - Elemento EnableIdentityPrivacy EAPHost
@@ -12,16 +12,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4a96b49fe462f4ef8cedad550d1a6c87d680939
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c3501bbfa09222f862dc5b53c610922cf43c0d7e68657bfc528ede49a74249ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117903954"
 ---
 # <a name="enableidentityprivacy-identityprivacyparameters-element"></a>Elemento EnableIdentityPrivacy (IdentityPrivacyParameters)
 
-El elemento **EnableIdentityPrivacy (IdentityPrivacyParameters)** indica si se envía la verdadera identidad de un usuario o una identidad anónima.
+El **elemento EnableIdentityPrivacy (IdentityPrivacyParameters)** indica si se envía la identidad verdadera de un usuario o una identidad anónima.
 
 ``` syntax
 <xs:element name="EnableIdentityPrivacy"
@@ -30,20 +30,20 @@ El elemento **EnableIdentityPrivacy (IdentityPrivacyParameters)** indica si se e
  />
 ```
 
-El elemento **EnableIdentityPrivacy** se define mediante [IdentityPrivacyParameters](mspeapconnectionpropertiesv2-identityprivacyparameters-complextype.md) .
+[IdentityPrivacyParameters](mspeapconnectionpropertiesv2-identityprivacyparameters-complextype.md) define el elemento **EnableIdentityPrivacy** .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **EnableIdentityPrivacy** es opcional.
+El **elemento EnableIdentityPrivacy** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 

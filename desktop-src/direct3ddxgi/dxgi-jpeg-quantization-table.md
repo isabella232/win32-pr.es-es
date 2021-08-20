@@ -1,7 +1,7 @@
 ---
 description: Describe una tabla de cuantificación JPEG.
 ms.assetid: DE1AAB15-B0B8-4594-BBCE-5F8EE5CE0AF7
-title: DXGI_JPEG_QUANTIZATION_TABLE estructura (Dxgitype. h)
+title: DXGI_JPEG_QUANTIZATION_TABLE estructura (Dxgitype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - dxgitype.h
-ms.openlocfilehash: 2b0a097cb4c364ecc14e471f7c15f642aa65e912
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c94006c4a0508068fd3962dc9ec0979a92c33198b9db5f633cf71f50981b8f92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105649407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117909962"
 ---
-# <a name="dxgi_jpeg_quantization_table-structure"></a>\_Estructura de \_ tabla de cuantificación JPEG de DXGI \_
+# <a name="dxgi_jpeg_quantization_table-structure"></a>Estructura DE \_ TABLA DE CUANTIFICACIÓN JPEG \_ \_ DE DXGI
 
 Describe una tabla de cuantificación JPEG.
 
@@ -52,7 +52,7 @@ Matriz de bytes que contiene los elementos de la tabla de cuantificación.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dxgitype. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dxgitype.h</dt> </dl> |
 
 
 
@@ -60,7 +60,7 @@ Matriz de bytes que contiene los elementos de la tabla de cuantificación.
 
 <dl> <dt>
 
-[Estructuras de DXGI](d3d10-graphics-reference-dxgi-structures.md)
+[Estructuras DXGI](d3d10-graphics-reference-dxgi-structures.md)
 </dt> </dl>
 
  

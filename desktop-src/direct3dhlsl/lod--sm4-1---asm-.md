@@ -1,23 +1,23 @@
 ---
-title: LOD (SM 4.1-ASM)
-description: Devuelve el nivel de detalle (LOD) que se utilizaría para el filtrado de textura.
+title: lod (sm4.1 - asm)
+description: Devuelve el nivel de detalle (LOD) que se usaría para el filtrado de textura.
 ms.assetid: A5931203-8CD7-4FC9-A4A4-CA981F38C7A3
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a1c1ca5a22a735945b76a60c175c665c5cf58fb
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: f0575ff4b7cd332375d6b4b172ec5f1df43c66ec0bed4158b993c244b8c5a0d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103784948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117906929"
 ---
-# <a name="lod-sm41---asm"></a>LOD (SM 4.1-ASM)
+# <a name="lod-sm41---asm"></a>lod (sm4.1 - asm)
 
-Devuelve el nivel de detalle (LOD) que se utilizaría para el filtrado de textura.
+Devuelve el nivel de detalle (LOD) que se usaría para el filtrado de textura.
 
 
 
-| LOD dest \[ . Mask \] , srcAddress \[ . swizzle \] , srcResource \[ . swizzle \] , srcSampler |
+| lod dest \[ .mask \] , srcAddress \[ .swlinole \] , srcResource \[ .sw swzzle \] , srcSampler |
 |--------------------------------------------------------------------------------|
 
 
@@ -28,26 +28,26 @@ Devuelve el nivel de detalle (LOD) que se utilizaría para el filtrado de textur
 
 | Elemento                                                                                                               | Descripción                                     |
 |--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/>                                                    | \[en \] la dirección de los resultados.<br/>   |
-| <span id="srcAddress"></span><span id="srcaddress"></span><span id="SRCADDRESS"></span>*srcAddress*<br/>     | \[en \] un conjunto de coordenadas de textura.<br/> |
-| <span id="srcResource"></span><span id="srcresource"></span><span id="SRCRESOURCE"></span>*srcResource*<br/> | \[en \] un registro de textura.<br/>           |
-| <span id="srcSampler"></span><span id="srcsampler"></span><span id="SRCSAMPLER"></span>*srcSampler*<br/>     | \[en \] un registro de muestra.<br/>           |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/>                                                    | \[en \] La dirección de los resultados.<br/>   |
+| <span id="srcAddress"></span><span id="srcaddress"></span><span id="SRCADDRESS"></span>*srcAddress*<br/>     | \[en \] Un conjunto de coordenadas de textura.<br/> |
+| <span id="srcResource"></span><span id="srcresource"></span><span id="SRCRESOURCE"></span>*srcResource*<br/> | \[en \] Un registro de textura.<br/>           |
+| <span id="srcSampler"></span><span id="srcsampler"></span><span id="SRCSAMPLER"></span>*srcSampler*<br/>     | \[en \] Un registro de sampler.<br/>           |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esto se comporta como la instrucción de [ejemplo](sample--sm4---asm-.md) , pero no se genera un ejemplo filtrado. La instrucción calcula el vector siguiente (ClampedLOD, NonClampedLOD, 0,0). NonClampedLOD es un valor de LOD calculado que omite cualquier fijación de la muestra o la textura (es decir, puede devolver valores negativos). ClampedLOD es un valor de LOD calculado que utilizaría la instrucción de **ejemplo** real. Swizzle en *srcResource* permite que los valores devueltos se swizzled arbitrariamente antes de que se escriban en el destino.
+Esto se comporta como la [instrucción de](sample--sm4---asm-.md) ejemplo, pero no se genera una muestra filtrada. La instrucción calcula el siguiente vector (ClampedLOD, NonClampedLOD, 0, 0). NonClampedLOD es un valor LOD calculado que omite cualquier fijación del muestreador o de la textura (es decir, puede devolver valores negativos). ClampedLOD es un valor de LOD calculado que se usaría en la instrucción de **ejemplo** real. Swzzle en *srcResource permite* que los valores devueltos se desdoleguen arbitrariamente antes de que se escriban en el destino.
 
 Si no hay ningún recurso enlazado a la ranura especificada, se devuelve 0.
 
-Si el muestreador usa el filtrado anisotrópico, el LOD debe corresponder al nivel de MIP fraccionario basado en el eje más pequeño de la superficie elíptica.
+Si el muestreador usa filtrado anisotropico, el LOD debe corresponder al nivel de mip fraccionamiento en función del eje más pequeño de la superficie elíptica.
 
-Esto es válido para los tipos de textura siguientes: Texture1D, Texture2D, Texture3D y TextureCube.
+Esto es válido para los siguientes tipos de textura: Texture1D, Texture2D, Texture3D y TextureCube.
 
-La instrucción **LOD** no se define cuando se usa con un muestreador que especifica el filtrado del punto MIP, en concreto, cualquier \_ enumeración de filtro D3D10 que termine en el \_ punto MIP. (Un ejemplo sería D3D10 \_ FILTRAr el \_ \_ \_ punto de MIP mínimo \_
+La **instrucción lod** no se define cuando se usa con un muestreador que especifica el filtrado de mip de punto, en concreto, cualquier enumeración FILTER D3D10 que termine en \_ MIP \_ POINT. (Un ejemplo de esto sería D3D10 \_ FILTRAR \_ MIN \_ MAG \_ MIP \_ POINT).)
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -61,7 +61,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -69,12 +69,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Shader Model 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -84,7 +84,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

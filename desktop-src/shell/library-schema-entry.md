@@ -4,16 +4,16 @@ ms.assetid: 12F6E6AE-2776-408c-B9AC-E885BE93C27F
 title: Esquema de descripción de biblioteca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a6da99820e81c55e5d705c72d4d0509ea271a4a
-ms.sourcegitcommit: 822413efb4a70dd464e5db4d9e8693ef74f8132f
+ms.openlocfilehash: 1d5881ad7e97612c93e88708e21a10eeed35e3e443a442ddbb49df7c6f5abe7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113581743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118049271"
 ---
 # <a name="library-description-schema"></a>Esquema de descripción de biblioteca
 
-Los archivos de descripción de biblioteca son archivos XML que definen bibliotecas. Las bibliotecas agregan elementos de ubicaciones de almacenamiento locales y remotas en una sola vista en Windows Explorer. Los archivos de descripción de la biblioteca siguen el esquema de descripción de la biblioteca y se guardan como \* archivos .library-ms.
+Los archivos de descripción de biblioteca son archivos XML que definen bibliotecas. Las bibliotecas agregan elementos de ubicaciones de almacenamiento locales y remotas en una sola vista en Windows Explorer. Los archivos de descripción de biblioteca siguen el esquema Descripción de la biblioteca y se guardan como \* archivos .library-ms.
 
 Este tema contiene las siguientes secciones:
 
@@ -44,7 +44,7 @@ Los archivos de biblioteca Windows 7 se almacenan en la carpeta conocida, \_ Bib
 
 ## <a name="namespace-versioning"></a>Control de versiones del espacio de nombres
 
-Se realiza un seguimiento de las versiones del formato de archivo Descripción de la biblioteca \* (.library-ms) cambiando el espacio de nombres . Para Windows 7, el formato de archivo tiene el siguiente espacio de nombres predeterminado: https://schemas.microsoft.com/windows/2009/library .
+Se realiza el seguimiento de las versiones del formato de archivo Descripción de la biblioteca \* (.library-ms) cambiando el espacio de nombres . Para Windows 7, el formato de archivo tiene el siguiente espacio de nombres predeterminado: https://schemas.microsoft.com/windows/2009/library .
 
 Sin embargo, se realiza un seguimiento de las versiones del contenido de la biblioteca mediante el [<version>](schema-library-version.md) elemento en un archivo de descripción de biblioteca específico.
 
@@ -94,7 +94,7 @@ A continuación se muestra un ejemplo de un archivo de descripción de bibliotec
 [elemento folderType (esquema de biblioteca)](schema-library-foldertype.md)
 </dt> <dt>
 
-[elemento iconReference (Esquema de biblioteca)](schema-library-iconreference.md)
+[elemento iconReference (esquema de biblioteca)](schema-library-iconreference.md)
 </dt> <dt>
 
 [elemento isLibraryPinned (esquema de biblioteca)](schema-library-islibrarypinned.md)

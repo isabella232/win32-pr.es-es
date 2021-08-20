@@ -1,19 +1,19 @@
 ---
-description: Comprenda los argumentos inputlocale y keywordlocale Windows Search, lo que ayuda al motor de búsqueda a usar los separadores de palabras correctos.
+description: Comprenda los argumentos inputlocale y keywordlocale en Windows Search, lo que ayuda al motor de búsqueda a usar los separadores de palabras correctos.
 ms.assetid: dc610f49-5106-47f9-b29b-84949dd2c42b
-title: Argumentos del identificador de configuración regional (Windows Search)
+title: Argumentos del identificador de configuración regional (Windows búsqueda)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe4c56e9c3fb5a84938d4779c7a3ebeb849b0787
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 43a9a8b85f65ab7b8f8d13a8b50e619d11143bde99d13695875212562d71acbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112403758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117681164"
 ---
-# <a name="locale-identifier-arguments-windows-search"></a>Argumentos del identificador de configuración regional (Windows Search)
+# <a name="locale-identifier-arguments-windows-search"></a>Argumentos del identificador de configuración regional (Windows búsqueda)
 
-Los identificadores y ayudan al motor de búsqueda a usar los separadores de palabras correctos mediante la identificación del idioma de las consultas especificadas por el usuario y el idioma de las palabras clave de sintaxis de `inputlocale` `keywordlocale` consulta avanzada. No siempre son los mismos identificadores de código de idioma (LCID), ya que Windows Search se ofrece en varias versiones internacionales y también incluye paquetes de QR para más idiomas. Inputlocale identifica el LCID para el idioma en el que los usuarios introducen su consulta de búsqueda, mientras que la palabra clavelocale identifica el LCID que el motor de búsqueda usa para las palabras clave.
+Los identificadores y ayudan al motor de búsqueda a usar los separadores de palabras correctos mediante la identificación del idioma de las consultas especificadas por el usuario y el idioma de las palabras clave de sintaxis de `inputlocale` `keywordlocale` consulta avanzada. No siempre son los mismos identificadores de código de idioma (LCID) porque Windows Search se ofrece en varias versiones internacionales y también incluye paquetes de QR para más idiomas. Inputlocale identifica el LCID para el idioma en el que los usuarios introducen su consulta de búsqueda, mientras que la palabra clavelocale identifica el LCID que el motor de búsqueda usa para las palabras clave.
 
 Este tema se organiza de la siguiente manera:
 

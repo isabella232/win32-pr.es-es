@@ -27,25 +27,25 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 **Codificadores H.264/AVC:**
 
-En el tipo de medio de salida, MF MT VIDEO NOMINAL RANGE se puede establecer con \_ \_ \_ \_ **MFNorangeRange \_ 0 \_ 255** y **MFNorangeRange \_ 16 \_ 235**.
+En el tipo de medio de salida, MF MT VIDEO NOMINAL RANGE se puede establecer \_ \_ con \_ \_ **MFNorangeRange \_ 0 \_ 255** y **MFNorangeRange \_ 16 \_ 235**.
 
-El codificador H.264/AVC debe tratar **MFNorangeRange \_ Unknown** como **MFNorangeRange \_ 16 \_ 235**.
+El codificador H.264/AVC debe tratar **MFNorangeRange \_ Desconocido** como **MFNorangeRange \_ 16 \_ 235**.
 
-El codificador H.264/AVC rechazará un tipo de medio de salida cuando MF MT VIDEO NOMINAL RANGE esté establecido en \_ \_ \_ \_ **MFNorangeRange \_ 48 \_ 208,** **MFNorangeRange \_ 64 \_ 127** o cualquier otro valor no definido en [**MFNorangeRange**](/windows/desktop/api/mfobjects/ne-mfobjects-mfnominalrange).
+El codificador H.264/AVC rechazará un tipo de medio de salida cuando MF MT VIDEO NOMINAL RANGE esté establecido en \_ \_ \_ \_ **MFNorangeRange \_ 48 \_ 208,** **MFNorangeRange \_ 64 \_ 127** o cualquier otro valor no definido en [**MFNorangeRange.**](/windows/desktop/api/mfobjects/ne-mfobjects-mfnominalrange)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
-| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| para aplicaciones para UWP\]<br/>                        |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
 | Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -61,7 +61,7 @@ El codificador H.264/AVC rechazará un tipo de medio de salida cuando MF MT VIDE
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 </dt> <dt>
 
-[Atributos de tipo de medio](media-type-attributes.md)
+[Atributos de tipo multimedia](media-type-attributes.md)
 </dt> <dt>
 
 [Información de color extendida](extended-color-information.md)

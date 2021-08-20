@@ -72,7 +72,7 @@ Devuelve **TRUE** si las interfaces están en el mismo objeto o **FALSE** en cas
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

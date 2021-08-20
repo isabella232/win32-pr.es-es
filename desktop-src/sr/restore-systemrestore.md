@@ -1,11 +1,11 @@
 ---
-title: Método restore de la clase SystemRestore
+title: Método Restore de la clase SystemRestore
 description: Inicia una restauración del sistema.
 ms.assetid: ca4aa97b-fa59-407d-b127-951d46932c33
 keywords:
-- Restore Method Restaurar sistema
-- Restore Method System Restore, clase SystemRestore
-- Clase SystemRestore System Restore, método restore
+- Método restore Restaurar sistema
+- Método Restore Restaurar sistema , clase SystemRestore
+- SystemRestore class Restaurar sistema , Restore (método)
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8b7747b710801718d9b169c8999c51dd30cefde
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 20a296c50493c5735651179febf1a55254557019aa91f8677071f4e769a35202
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117675897"
 ---
-# <a name="restore-method-of-the-systemrestore-class"></a>Método restore de la clase SystemRestore
+# <a name="restore-method-of-the-systemrestore-class"></a>Método Restore de la clase SystemRestore
 
-Inicia una restauración del sistema. El autor de la llamada debe forzar el reinicio del sistema. La restauración real se produce durante el reinicio.
+Inicia una restauración del sistema. El autor de la llamada debe forzar un reinicio del sistema. La restauración real se produce durante el reinicio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ uint32 Restore(
 
 <dl> <dt>
 
-*SequenceNumber* \[ de\]
+*SequenceNumber* \[ En\]
 </dt> <dd>
 
-Número de secuencia del punto de restauración. Para determinar el número de secuencia de un punto de restauración específico, enumere todos los puntos de restauración en el sistema.
+Número de secuencia del punto de restauración. Para determinar el número de secuencia de un punto de restauración específico, enumere todos los puntos de restauración del sistema.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. De lo contrario, el método devuelve uno de los códigos de error COM definidos en WinError. h.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. De lo contrario, el método devuelve uno de los códigos de error COM definidos en WinError.h.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -79,12 +79,12 @@ next
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                       |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                         |
 | Espacio de nombres<br/>                | Raíz \\ \\ predeterminada<br/>                                                        |
-| MOF<br/>                      | <dl> <dt>MOF</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Sr.mof</dt> </dl> |
 
 
 

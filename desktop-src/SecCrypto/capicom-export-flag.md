@@ -1,5 +1,5 @@
 ---
-description: El tipo de enumeración CAPICOM EXPORT FLAG define si se omiten los \_ errores de exportación de claves \_ privadas.
+description: El tipo de enumeración CAPICOM EXPORT FLAG define si se omiten los errores de exportación \_ \_ de claves privadas.
 ms.assetid: 12e6862b-5c73-4e45-8829-8086048e94f3
 title: CAPICOM_EXPORT_FLAG enumeración (Capicom.h)
 ms.topic: reference
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117772470"
 ---
-# <a name="capicom_export_flag-enumeration"></a>ENUMERACIÓN \_ CAPICOM EXPORT \_ FLAG
+# <a name="capicom_export_flag-enumeration"></a>CAPICOM \_ EXPORT \_ FLAG (enumeración)
 
 El **tipo de enumeración CAPICOM \_ EXPORT \_ FLAG** define si se omiten los errores de exportación de claves privadas.
 
@@ -28,16 +28,16 @@ El **tipo de enumeración CAPICOM \_ EXPORT \_ FLAG** define si se omiten los er
 
 
 
-| Miembro                                                            | Descripción                                               | Valor |
+| Miembro                                                            | Descripción                                               | Value |
 |-------------------------------------------------------------------|-----------------------------------------------------------|-------|
 | **CAPICOM \_ EXPORT \_ DEFAULT**                                      | Los errores de exportación de claves privadas no se omiten.<br/> | 0     |
-| **ERROR NO \_ EXPORTABLE DE \_ LA CLAVE PRIVADA OMITIBLE \_ DE LA \_ \_ \_ EXPORTACIÓN DE \_ CAPICOM** | Se omiten los errores de exportación de claves privadas.<br/>     | 1     |
+| **ERROR NO EXPORTABLE DE LA EXPORTACIÓN DE CAPICOM \_ IGNORE PRIVATE KEY NOT \_ \_ \_ \_ \_ \_ EXPORTABLE** | Se omiten los errores de exportación de claves privadas.<br/>     | 1     |
 
 
 
 ## <a name="remarks"></a>Comentarios
 
-El siguiente método usa el tipo de enumeración CAPICOM \_ EXPORT \_ FLAG:
+El siguiente método usa el tipo de \_ enumeración CAPICOM EXPORT \_ FLAG:
 
 -   [**Certificates.Save**](certificates-save.md)
 
@@ -45,7 +45,7 @@ El siguiente método usa el tipo de enumeración CAPICOM \_ EXPORT \_ FLAG:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|--------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                |
 | Header<br/>          | <dl> <dt>Capicom.h</dt> </dl> |

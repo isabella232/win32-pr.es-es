@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentLoggingDisabledException'
-title: Constructor de EsentLoggingDisabledException
+description: 'Más información sobre: Constructor EsentLoggingDisabledException'
+title: Constructor EsentLoggingDisabledException
 TOCTitle: 'EsentLoggingDisabledException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentLoggingDisabledException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentloggingdisabledexception.esentloggingdisabledexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4306f357dafa2872a2a3728255a7912c33e4bf94
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 430f50af6eeb90e1530d0bbdbe43fccad4e47ebf0aa47ea4b39ffbeca52bf3de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117899745"
 ---
-# <a name="esentloggingdisabledexception-constructor"></a>Constructor de EsentLoggingDisabledException
+# <a name="esentloggingdisabledexception-constructor"></a>Constructor EsentLoggingDisabledException
 
 Inicializa una nueva instancia de la clase EsentLoggingDisabledException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentLoggingDisabledException()
 public EsentLoggingDisabledException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentLoggingDisabledException()
 
 [Miembros de EsentLoggingDisabledException](./esentloggingdisabledexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

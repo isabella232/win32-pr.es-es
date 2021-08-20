@@ -1,19 +1,19 @@
 ---
-description: Intensidad de la señal del dispositivo. Solo se aplica a algunos protocolos.
+description: Intensidad de señal del dispositivo. Solo se aplica a algunos protocolos.
 ms.assetid: 21769028-064d-4e17-88ec-16708732a176
 title: System.Devices.Aep.SignalStrength
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a01a037f26518eda75f4c4f5eccaa175d6c7cfa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa5e7f3d25b5e6d7626e9cbaf96fe117832fe6741d7ca136916da24fd39dd976
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105716011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117683983"
 ---
 # <a name="systemdevicesaepsignalstrength"></a>System.Devices.Aep.SignalStrength
 
-Intensidad de la señal del dispositivo. Solo se aplica a algunos protocolos.
+Intensidad de señal del dispositivo. Solo se aplica a algunos protocolos.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

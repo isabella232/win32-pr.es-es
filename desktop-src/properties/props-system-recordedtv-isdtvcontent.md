@@ -4,12 +4,12 @@ ms.assetid: 88acc4b8-4532-4d49-9dd1-8d6c248f2b3d
 title: System.RecordedTV.IsDTVContent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31adbfdd6780adf38e717d0c28981076aea6c30b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 747e99e566cb14dbebcc3b277ebfcf25054bd9f7b72089e36821fb51f44a088e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117682106"
 ---
 # <a name="systemrecordedtvisdtvcontent"></a>System.RecordedTV.IsDTVContent
 

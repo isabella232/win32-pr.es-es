@@ -1,7 +1,7 @@
 ---
-description: Da formato a la hora como una cadena de hora para una configuración regional especificada.
+description: Da formato a la hora como una cadena de tiempo para una configuración regional especificada.
 ms.assetid: 048b209c-f757-4b65-9ce7-282a5c21021f
-title: GetTimeFormatWrapW función)
+title: Función GetTimeFormatWrapW
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - DllExport
 api_location:
 - Shlwapi.dll
-ms.openlocfilehash: 53f1bb88c2b3a79b58f3025daec31a7b1340b642
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6a23a615030b357eec4e40bbd8d6bc4a210bc7115b7aec76b45d6999de49f52c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117679121"
 ---
-# <a name="gettimeformatwrapw-function"></a>GetTimeFormatWrapW función)
+# <a name="gettimeformatwrapw-function"></a>Función GetTimeFormatWrapW
 
-\[**GetTimeFormatWrapW** está disponible para su uso en Windows XP. Puede que no esté disponible en versiones posteriores. Debe usar [**GetTimeFormatW**](/windows/win32/api/datetimeapi/nf-datetimeapi-gettimeformata) en su lugar.\]
+\[**GetTimeFormatWrapW** está disponible para su uso en Windows XP. Es posible que no esté disponible en versiones posteriores. Debe usar [**GetTimeFormatW en**](/windows/win32/api/datetimeapi/nf-datetimeapi-gettimeformata) su lugar.\]
 
-Da formato a la hora como una cadena de hora para una configuración regional especificada. La función da formato a una hora especificada o a la hora del sistema local.
+Da formato a la hora como una cadena de tiempo para una configuración regional especificada. La función da formato a una hora especificada o a la hora del sistema local.
 
 > [!Note]  
-> **GetTimeFormatWrapW** es un contenedor para la función **GetTimeFormatW** . Vea la página [**GetTimeFormat**](/windows/win32/api/datetimeapi/nf-datetimeapi-gettimeformata) para obtener más notas de uso.
+> **GetTimeFormatWrapW es** un contenedor para la **función GetTimeFormatW.** Consulte la [**página GetTimeFormat para**](/windows/win32/api/datetimeapi/nf-datetimeapi-gettimeformata) obtener más notas de uso.
 
  
 
@@ -51,40 +51,40 @@ int GetTimeFormatWrapW(
 
 <dl> <dt>
 
-*Configuración regional* \[ de\]
+*Configuración regional* \[ En\]
 </dt> <dd>
 
 Tipo: **LCID**
 
-Especifica la configuración regional para la que se va a dar formato a la cadena de hora. Si *pwzFormat* es **null**, la función da formato a la cadena según el formato de hora de esta configuración regional. Si *pwzFormat* no es **null**, la función usa la configuración regional solo para la información que no se especifica en la cadena de formato de imagen (por ejemplo, los marcadores de hora de la configuración regional).
+Especifica la configuración regional para la que se va a dar formato a la cadena de tiempo. Si *pwzFormat* es **NULL,** la función da formato a la cadena según el formato de hora de esta configuración regional. Si *pwzFormat* no es **NULL,** la función usa la configuración regional solo para la información no especificada en la cadena de imagen de formato (por ejemplo, los marcadores de hora de la configuración regional).
 
-Este parámetro puede ser un identificador de configuración regional creado por la macro [**MAKELCID**](/windows/win32/api/winnt/nf-winnt-makelcid) , o uno de los siguientes valores predefinidos.
+Este parámetro puede ser un identificador de configuración regional creado por la macro [**MAKELCID**](/windows/win32/api/winnt/nf-winnt-makelcid) o uno de los siguientes valores predefinidos.
 
 <dt>
 
 <span id="LOCALE_SYSTEM_DEFAULT"></span><span id="locale_system_default"></span>
 
-<span id="LOCALE_SYSTEM_DEFAULT"></span><span id="locale_system_default"></span>**configuración \_ predeterminada del sistema local \_**
+<span id="LOCALE_SYSTEM_DEFAULT"></span><span id="locale_system_default"></span>**CONFIGURACIÓN REGIONAL \_ PREDETERMINADA DEL \_ SISTEMA**
 
 
 </dt> <dd>
 
-Configuración regional predeterminada del sistema.
+Configuración regional del sistema predeterminada.
 
 </dd> <dt>
 
 <span id="LOCALE_USER_DEFAULT"></span><span id="locale_user_default"></span>
 
-<span id="LOCALE_USER_DEFAULT"></span><span id="locale_user_default"></span>**\_valor predeterminado del usuario de configuración regional \_**
+<span id="LOCALE_USER_DEFAULT"></span><span id="locale_user_default"></span>**CONFIGURACIÓN REGIONAL \_ PREDETERMINADA DEL \_ USUARIO**
 
 
 </dt> <dd>
 
-Configuración regional predeterminada del usuario.
+Configuración regional de usuario predeterminada.
 
 </dd> </dl> </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
 Tipo: **DWORD**
@@ -95,18 +95,18 @@ Especifica varias opciones de función. Puede especificar una combinación de lo
 
 <span id="LOCALE_NOUSEROVERRIDE"></span><span id="locale_nouseroverride"></span>
 
-<span id="LOCALE_NOUSEROVERRIDE"></span><span id="locale_nouseroverride"></span>**configuración regional \_ NOUSEROVERRIDE**
+<span id="LOCALE_NOUSEROVERRIDE"></span><span id="locale_nouseroverride"></span>**LOCALE \_ NOUSEROVERRIDE**
 
 
 </dt> <dd>
 
-Si se establece, la función da formato a la cadena con el formato de hora predeterminado del sistema para la configuración regional especificada. Si no se establece, la función da formato a la cadena mediante cualquier reemplazo de usuario al formato de hora predeterminado de la configuración regional. Esta marca solo se puede establecer si *pwzFormat* es **null**.
+Si se establece, la función da formato a la cadena con el formato de hora predeterminado del sistema para la configuración regional especificada. Si no se establece, la función da formato a la cadena mediante cualquier invalidación de usuario al formato de hora predeterminado de la configuración regional. Esta marca solo se puede establecer si *pwzFormat* es **NULL.**
 
 </dd> <dt>
 
 <span id="LOCALE_USE_CP_ACP"></span><span id="locale_use_cp_acp"></span>
 
-<span id="LOCALE_USE_CP_ACP"></span><span id="locale_use_cp_acp"></span>**configuración regional \_ use \_ CP \_ ACP**
+<span id="LOCALE_USE_CP_ACP"></span><span id="locale_use_cp_acp"></span>**CONFIGURACIÓN REGIONAL \_ USE \_ CP \_ ACP**
 
 
 </dt> <dd>
@@ -117,7 +117,7 @@ Usa la página de códigos ANSI del sistema para la traducción de cadenas en lu
 
 <span id="TIME_NOMINUTESORSECONDS"></span><span id="time_nominutesorseconds"></span>
 
-<span id="TIME_NOMINUTESORSECONDS"></span><span id="time_nominutesorseconds"></span>**HORA \_ NOMINUTESORSECONDS**
+<span id="TIME_NOMINUTESORSECONDS"></span><span id="time_nominutesorseconds"></span>**TIME \_ NOMINUTESORSECONDS**
 
 
 </dt> <dd>
@@ -128,29 +128,29 @@ No usa minutos ni segundos.
 
 <span id="TIME_NOSECONDS"></span><span id="time_noseconds"></span>
 
-<span id="TIME_NOSECONDS"></span><span id="time_noseconds"></span>**TIEMPO \_ NOsegundos**
+<span id="TIME_NOSECONDS"></span><span id="time_noseconds"></span>**TIME \_ NOSECONDS**
 
 
 </dt> <dd>
 
-No utiliza segundos.
+No usa segundos.
 
 </dd> <dt>
 
 <span id="TIME_NOTIMEMARKER"></span><span id="time_notimemarker"></span>
 
-<span id="TIME_NOTIMEMARKER"></span><span id="time_notimemarker"></span>**HORA \_ NOTIMEMARKER**
+<span id="TIME_NOTIMEMARKER"></span><span id="time_notimemarker"></span>**TIME \_ NOTIMEMARKER**
 
 
 </dt> <dd>
 
-No utiliza un marcador de hora.
+No usa un marcador de tiempo.
 
 </dd> <dt>
 
 <span id="TIME_FORCE24HOURFORMAT"></span><span id="time_force24hourformat"></span>
 
-<span id="TIME_FORCE24HOURFORMAT"></span><span id="time_force24hourformat"></span>**HORA \_ FORCE24HOURFORMAT**
+<span id="TIME_FORCE24HOURFORMAT"></span><span id="time_force24hourformat"></span>**TIME \_ FORCE24HOURFORMAT**
 
 
 </dt> <dd>
@@ -159,39 +159,39 @@ Siempre usa un formato de hora de 24 horas.
 
 </dd> </dl> </dd> <dt>
 
-*lpTime* \[ de\]
+*lpTime* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**SYSTEMTIME**](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) \** _
+Tipo: **const [**SYSTEMTIME**](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) \***
 
-Puntero a una estructura [_ *SYSTEMTIME* *](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) que contiene la información de hora a la que se va a dar formato. Si este puntero es **null**, la función utiliza la hora actual del sistema local.
+Puntero a una [**estructura SYSTEMTIME**](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) que contiene la información de hora a la que se va a dar formato. Si este puntero es **NULL,** la función usa la hora actual del sistema local.
 
 </dd> <dt>
 
-*pwzFormat* \[ de\]
+*pwzFormat* \[ En\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
 
-Puntero a un formato que se va a usar para formar la cadena de hora. Si *pwzFormat* es **null**, la función usa el formato de hora de la configuración regional especificada. Consulte [**GetTimeFormat**](/windows/win32/api/datetimeapi/nf-datetimeapi-gettimeformata) para obtener más información.
+Puntero a un formato que se usará para formar la cadena de tiempo. Si *pwzFormat* es **NULL,** la función usa el formato de hora de la configuración regional especificada. Consulte [**GetTimeFormat para**](/windows/win32/api/datetimeapi/nf-datetimeapi-gettimeformata) obtener más detalles.
 
 </dd> <dt>
 
-*pwzTimeStr* \[ enuncia\]
+*pwzTimeStr* \[ out\]
 </dt> <dd>
 
-Tipo: **LPWStr**
+Tipo: **LPWSTR**
 
-Puntero a un búfer que recibe la cadena de hora con formato.
+Puntero a un búfer que recibe la cadena de tiempo con formato.
 
 </dd> <dt>
 
-*cchTime* \[ de\]
+*cchTime* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
 
-Tamaño, en caracteres, del búfer *pwzTimeStr* . Si *cchTime* es cero, la función devuelve el número de caracteres necesarios para contener la cadena de tiempo con formato y no se utiliza el búfer al que apunta *pwzTimeStr* .
+Tamaño, en caracteres, del *búfer pwzTimeStr.* Si *cchTime* es cero, la función devuelve el número de caracteres necesarios para contener la cadena de tiempo con formato y no se usa el búfer al que apunta *pwzTimeStr.*
 
 </dd> </dl>
 
@@ -199,36 +199,36 @@ Tamaño, en caracteres, del búfer *pwzTimeStr* . Si *cchTime* es cero, la funci
 
 Tipo: **int**
 
-Si la función se ejecuta correctamente, el valor devuelto es el número de caracteres que se escriben en el búfer al que apunta *pwzTimeStr*. Si el parámetro *cchTime* es cero, el valor devuelto es el número de caracteres necesarios para contener la cadena de hora con formato. El recuento incluye el carácter nulo de terminación.
+Si la función se realiza correctamente, el valor devuelto es el número de caracteres escritos en el búfer al que *apunta pwzTimeStr*. Si el *parámetro cchTime* es cero, el valor devuelto es el número de caracteres necesarios para contener la cadena de tiempo con formato. El recuento incluye el carácter nulo de terminación.
 
-Si la función no se realiza correctamente, el valor devuelto es cero. Para obtener información de error extendida, llame a [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror). **GetLastError** puede devolver uno de los siguientes códigos de error.
+Si la función no se realiza correctamente, el valor devuelto es cero. Para obtener información de error extendida, llame a [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror). **GetLastError puede** devolver uno de los siguientes códigos de error.
 
 <dl> <dt>
 
-**ERROR \_ de \_ búfer insuficiente**
+**ERROR \_ BÚFER \_ INSUFICIENTE**
 </dt> <dt>
 
-**ERROR de \_ marcas no válidas \_**
+**ERROR \_ MARCAS NO \_ VÁLIDAS**
 </dt> <dt>
 
-**ERROR \_ de \_ parámetro no válido**
+**ERROR \_ PARÁMETRO NO \_ VÁLIDO**
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**GetTimeFormatWrapW** ofrece la posibilidad de usar cadenas Unicode en sistemas operativos anteriores a Windows XP. El método preferido es usar [**GetTimeFormatW**](/windows/win32/api/datetimeapi/nf-datetimeapi-gettimeformata) junto con la capa de Microsoft para Unicode (MSLU).
+**GetTimeFormatWrapW proporciona** la capacidad de usar cadenas Unicode en sistemas operativos anteriores a Windows XP. El método preferido es usar [**GetTimeFormatW**](/windows/win32/api/datetimeapi/nf-datetimeapi-gettimeformata) junto con la capa de Microsoft para Unicode (MSLU).
 
-Se debe llamar a **GetTimeFormatWrapW** directamente desde Shlwapi.dll, mediante el ordinal 310.
+**Se debe llamar a GetTimeFormatWrapW** directamente desde Shlwapi.dll, mediante el ordinal 310.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Shlwapi.dll (versión 5,0 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Archivo DLL<br/>                      | <dl> <dt>Shlwapi.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

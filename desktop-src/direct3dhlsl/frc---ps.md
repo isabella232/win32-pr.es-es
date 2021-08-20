@@ -1,6 +1,6 @@
 ---
-title: FRC-PS
-description: Devuelve la parte fraccionaria de cada componente de entrada. | FRC-PS
+title: frc - ps
+description: Devuelve la parte fraccionera de cada componente de entrada. | frc - ps
 ms.assetid: 378bc516-c81e-4538-8d6f-987536b19467
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,46 +9,46 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a16dd518333efa1dce878c1418547bc0527d1d64
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a9db28773ef5473a4b4b574f3feb32c9623c95863adcb4cb31a717e8f8c541d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117907658"
 ---
-# <a name="frc---ps"></a>FRC-PS
+# <a name="frc---ps"></a>frc - ps
 
-Devuelve la parte fraccionaria de cada componente de entrada.
+Devuelve la parte fraccionera de cada componente de entrada.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| FRC DST, src |
+| frc dst, src |
 |--------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src es un registro de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| frc                   |      |      |      |      | x    | x    | x     | x    | x     |
+| Frc                   |      |      |      |      | x    | x    | x     | x    | x     |
 
 
 
  
 
-En el fragmento de código siguiente se muestra conceptualmente cómo funciona la instrucción.
+El siguiente fragmento de código muestra conceptualmente cómo funciona la instrucción.
 
 
 ```
@@ -60,7 +60,7 @@ dest.w = src.w - (float)floor(src.w);
 
 
 
-La función Floor convierte el argumento que se pasa al entero más grande que es menor o igual que el argumento. Esto se convierte en un valor float y, a continuación, se resta pantalla el valor original. El valor fraccionario resultante oscila entre 0,0 y 1,0.
+La función floor convierte el argumento pasado en el entero mayor que es menor (o igual que) el argumento. Esto se convierte en un valor float y, a continuación, se resta el valor original. El valor fraccionrio resultante oscila entre 0,0 y 1,0.
 
 ## <a name="related-topics"></a>Temas relacionados
 

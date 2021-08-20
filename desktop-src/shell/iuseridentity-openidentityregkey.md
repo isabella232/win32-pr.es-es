@@ -1,7 +1,7 @@
 ---
-description: Desusado. Recupera la clave del registro que corresponde a esta identidad de usuario.
+description: Desusado. Recupera la clave del Registro que corresponde a esta identidad de usuario.
 ms.assetid: eecf8b73-e86a-4274-8d9c-c601153f81db
-title: 'IUserIdentity:: OpenIdentityRegKey (método) (Msident. h)'
+title: Método IUserIdentity::OpenIdentityRegKey (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: f1d67918f4a9802e63682e0663994c1ea6a06200
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 89b80162b558222e1dc3e8caf518042ac90700ae7f7bde82b1b235111c9bdb43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117678439"
 ---
-# <a name="iuseridentityopenidentityregkey-method"></a>IUserIdentity:: OpenIdentityRegKey (método)
+# <a name="iuseridentityopenidentityregkey-method"></a>IUserIdentity::OpenIdentityRegKey (método)
 
-\[El método **IUserIdentity:: OpenIdentityRegKey** está disponible para su uso en Windows 2000. En Windows XP, esta funcionalidad se ha sustituido por [las cuentas de usuario con cambio rápido de usuario y escritorio remoto](fastuserswitching.md), y puede modificarse o no estar disponible en las versiones posteriores.\]
+\[El **método IUserIdentity::OpenIdentityRegKey** está disponible para su uso en Windows 2000. En Windows XP, esta funcionalidad se ha reemplazado por cuentas de usuario con cambio rápido de usuario y [Escritorio remoto](fastuserswitching.md), y podría modificarse o no estar disponible en versiones posteriores.\]
 
-En desuso. Recupera la clave del registro que corresponde a esta identidad de usuario.
+En desuso. Recupera la clave del Registro que corresponde a esta identidad de usuario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,55 +42,55 @@ HRESULT OpenIdentityRegKey(
 
 <dl> <dt>
 
-*dwDesiredAccess* \[ de\]
+*dwDesiredAccess* \[ En\]
 </dt> <dd>
 
 Tipo: **DWORD**
 
-Valor que describe el nivel de acceso solicitado de la clave del registro.
+Valor que describe el nivel de acceso solicitado de la clave del Registro.
 
 </dd> <dt>
 
-*phKey* \[ enuncia\]
+*phKey* \[ out\]
 </dt> <dd>
 
-Tipo: **HKEY \** _
+Tipo: **HKEY \***
 
-Puntero que recibe la clave del registro.
+Puntero que recibe la clave del Registro.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Resultado de la solicitud del registro. Si se realiza correctamente, devuelve **S \_ correcto**. De lo contrario, devolverá uno de los siguientes códigos de error.
+Resultado de la solicitud del Registro. Si se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devolverá uno de los siguientes códigos de error.
 
 
 
 | Código devuelto                                                                                            | Descripción                                                        |
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**identidad de E \_ \_ no \_ encontrada**</dt> </dl> | Esta identidad no tiene una clave del registro asociada.<br/> |
-| <dl> <dt>**E \_ FAIL**</dt> </dl>                 | No se pudo obtener acceso a la clave del registro.<br/>             |
+| <dl> <dt>**E \_ IDENTITY \_ NOT \_ FOUND**</dt> </dl> | Esta identidad no tiene una clave del Registro asociada.<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>                 | No se pudo acceder a la clave del Registro.<br/>             |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El parámetro *dwDesiredAccess* es un descriptor de seguridad de acceso al registro estándar que describe el acceso que se desea obtener a la clave del registro. Para obtener más información sobre la seguridad del registro, incluida una lista de valores aceptables para este parámetro, consulte [derechos de acceso y seguridad de la clave del registro](../sysinfo/registry-key-security-and-access-rights.md).
+El *parámetro dwDesiredAccess es* un descriptor de seguridad de acceso al Registro estándar que describe el acceso que desea obtener a la clave del Registro. Para obtener más información sobre la seguridad del Registro, incluida una lista de valores aceptables para este parámetro, vea Derechos de acceso y seguridad de claves [del Registro.](../sysinfo/registry-key-security-and-access-rights.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 

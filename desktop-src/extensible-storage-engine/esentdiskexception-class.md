@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentDiskException'
+description: 'Más información sobre: Clase EsentDiskException'
 title: Clase EsentDiskException
 TOCTitle: EsentDiskException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentDiskException
@@ -24,33 +24,33 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 22c2e2e2f829b6fcc6967e6e58692613243549c2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b03bb4b25a58abaf23444cae364660ce9030a54775147e6acf32b272e11394a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104424000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117901436"
 ---
 # <a name="esentdiskexception-class"></a>Clase EsentDiskException
 
-Clase base para las excepciones de disco.
+Clase base para excepciones de disco.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentResourceException](./esentresourceexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentDiskException  
-              [Microsoft. ISAM. esent. Interop. EsentDiskFullException](./esentdiskfullexception-class.md)  
-              [Microsoft. ISAM. esent. Interop. EsentLogDiskFullException](./esentlogdiskfullexception-class.md)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentResourceException](./esentresourceexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentDiskException  
+              [Microsoft.Isam.Esent.Interop.EsentDiskFullException](./esentdiskfullexception-class.md)  
+              [Microsoft.Isam.Esent.Interop.EsentLogDiskFullException](./esentlogdiskfullexception-class.md)  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -76,4 +76,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de EsentDiskException](./esentdiskexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

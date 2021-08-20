@@ -1,5 +1,5 @@
 ---
-description: La estructura GETUSERINFO REQUEST de MSV1 \_ 0 \_ está \_ obsoleta.
+description: La estructura MSV1 \_ 0 \_ GETUSERINFO \_ REQUEST está obsoleta.
 ms.assetid: c5a668d4-f22b-4992-acde-96dc21f033c5
 title: MSV1_0_GETUSERINFO_REQUEST
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117786734"
 ---
 # <a name="msv1_0_getuserinfo_request"></a>SOLICITUD \_ \_ GETUSERINFO DE MSV1 0 \_
 
-La estructura GETUSERINFO REQUEST de MSV1 \_ 0 \_ está \_ obsoleta.
+La estructura MSV1 \_ 0 \_ GETUSERINFO \_ REQUEST está obsoleta.
 
 Para recuperar información sobre el usuario de la estación de trabajo, vea la [**función NetWkstaUserGetInfo.**](/windows/win32/api/lmwksta/nf-lmwksta-netwkstausergetinfo)
 

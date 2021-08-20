@@ -13,18 +13,18 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 0ca0efb3-6831-4561-9fd1-6d0b62704931
-ms.openlocfilehash: b11bc4d1b3cd2bdd71802e79ca959c0a0f84e360
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 8b0eab873115b336ff9d2fbb2c26f4443fbfd28239b694a1c70d40a828723391
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109840976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117679131"
 ---
 # <a name="folderitems2-object"></a>Objeto FolderItems2
 
 Extiende el [**objeto FolderItems.**](folderitems.md) Admite un método adicional.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 El **objeto FolderItems2** tiene estos tipos de miembros:
 
@@ -48,17 +48,17 @@ El **objeto FolderItems2** tiene estos métodos.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

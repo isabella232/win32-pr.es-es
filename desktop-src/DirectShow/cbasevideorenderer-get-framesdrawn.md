@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117822588"
 ---
-# <a name="cbasevideorendererget_framesdrawn-method"></a>CBaseVideoRenderer.get \_ FramesDrawn (método)
+# <a name="cbasevideorendererget_framesdrawn-method"></a>Método CBaseVideoRenderer.get \_ FramesDrawn
 
 El `get_FramesDrawn` método recupera la variable miembro m **\_ cFramesDrawn,** lo que da el número de fotogramas dibujados desde que se inició el streaming.
 
@@ -68,7 +68,7 @@ Esta función miembro implementa el [**método IQualProp::get \_ FramesDrawn.**]
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
