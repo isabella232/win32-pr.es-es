@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TTM_GETTOOLINFO (commctrl. h)
-description: Recupera la información que un control ToolTip mantiene sobre una herramienta.
+title: TTM_GETTOOLINFO mensaje (Commctrl.h)
+description: Recupera la información que un control de información sobre herramientas mantiene sobre una herramienta.
 ms.assetid: b94d3b78-2437-4c60-ba46-b3f57cf9c876
 keywords:
-- TTM_GETTOOLINFO controles de mensajes de Windows
+- TTM_GETTOOLINFO controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc0de37b97be3bec495c8777b2ddd1cc6fc1bd42
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 77f19243603ab5d2ba62d498a5595528e39b33658c7a8e4aa0638888806684ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118166378"
 ---
-# <a name="ttm_gettoolinfo-message"></a>TTM \_ GETTOOLINFO
+# <a name="ttm_gettoolinfo-message"></a>Mensaje \_ GETTOOLINFO de TTM
 
-Recupera la información que un control ToolTip mantiene sobre una herramienta.
+Recupera la información que un control de información sobre herramientas mantiene sobre una herramienta.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,21 +37,21 @@ Recupera la información que un control ToolTip mantiene sobre una herramienta.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) . Al enviar el mensaje, los miembros **hWnd** y **uId** identifican una herramienta y el miembro **cbSize** debe especificar el tamaño de la estructura. Al usar este mensaje para recuperar el texto de información sobre herramientas, asegúrese de que el miembro **lpszText** de la estructura **TOOLINFO** apunta a un búfer válido de tamaño de adquate
+Puntero a una [**estructura TOOLINFO.**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) Al enviar el mensaje, los **miembros hwnd** y **uId** identifican una herramienta y el **miembro cbSize** debe especificar el tamaño de la estructura. Al usar este mensaje para recuperar el texto de información sobre herramientas, asegúrese de que el miembro **lpszText** de la **estructura TOOLINFO** apunta a un búfer válido de tamaño adquate.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el control ToolTip incluye la herramienta, la estructura [**TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) recibe información sobre la herramienta.
+Si el control de información sobre herramientas incluye la herramienta, la [**estructura TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) recibe información sobre la herramienta.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se cambia la posición de un control ToolTip.
+En el ejemplo siguiente se vuelve a colocar un control de información sobre herramientas.
 
 
 ```C++
@@ -93,11 +93,11 @@ HRESULT MyToolTipClass::OffsetTooltip(int xOffset, int yOffset)
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TTM \_ GETTOOLINFOW** (Unicode) y **TTM \_ GETTOOLINFOA** (ANSI)<br/>           |
 
 

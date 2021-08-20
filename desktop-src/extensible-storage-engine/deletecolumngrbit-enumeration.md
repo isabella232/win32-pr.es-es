@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración DeleteColumnGrbit'
-title: Enumeración DeleteColumnGrbit
+description: 'Más información sobre: DeleteColumnGrbit (enumeración)'
+title: DeleteColumnGrbit (enumeración)
 TOCTitle: DeleteColumnGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.DeleteColumnGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.deletecolumngrbit(v=EXCHG.10)
@@ -28,21 +28,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3191d3c73883d0bd27b4944718f2a0b3423e2c8b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9164d4789cfa836ff5d74f358d78363c2c18f2031dc0a921621d40f634cadbcb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118083344"
 ---
-# <a name="deletecolumngrbit-enumeration"></a>Enumeración DeleteColumnGrbit
+# <a name="deletecolumngrbit-enumeration"></a>DeleteColumnGrbit (enumeración)
 
-Opciones para [JetDeleteColumn2 (JET_SESID, JET_TABLEID, String, DeleteColumnGrbit)](./api.jetdeletecolumn2-method.md).
+Opciones de [JetDeleteColumn2(JET_SESID, JET_TABLEID, String, DeleteColumnGrbit).](./api.jetdeletecolumn2-method.md)
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -72,7 +72,7 @@ public enum DeleteColumnGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
@@ -88,4 +88,4 @@ public enum DeleteColumnGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

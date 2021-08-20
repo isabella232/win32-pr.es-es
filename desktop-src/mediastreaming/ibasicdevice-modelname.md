@@ -1,11 +1,11 @@
 ---
-title: IBasicDevice ModelName (método)
+title: Método IBasicDevice ModelName
 description: Recupera el nombre del modelo del dispositivo.
 ms.assetid: 8F871E89-97C1-4788-83AB-B7E0D8D6E0B5
 keywords:
-- Método ModelName API de streaming de multimedia
-- Método ModelName API de streaming de multimedia, interfaz IBasicDevice
-- Interfaz IBasicDevice streaming de multimedia API, ModelName (método)
+- Método ModelName de Media Streaming API
+- Método ModelName de Media Streaming API, interfaz IBasicDevice
+- IBasicDevice interface Media Streaming API , método ModelName
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6e486b372b2108bc85153f416032ef6bfbe8a397
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: c23cc2ffd28757fb7b8b6045aba63016d8f24328e4a39ebc03e12d8311dff601
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105676299"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118056984"
 ---
-# <a name="ibasicdevicemodelname-method"></a>IBasicDevice:: ModelName (método)
+# <a name="ibasicdevicemodelname-method"></a>IBasicDevice::ModelName (método)
 
 Recupera el nombre del modelo del dispositivo.
 
@@ -41,7 +41,7 @@ HRESULT ModelName(
 
 <dl> <dt>
 
-*valor* \[ de enuncia\]
+*value* \[ out\]
 </dt> <dd>
 
 Recibe un puntero al nombre del modelo del dispositivo.
@@ -50,13 +50,13 @@ Recibe un puntero al nombre del modelo del dispositivo.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 

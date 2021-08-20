@@ -1,7 +1,7 @@
 ---
-description: 'La interfaz IAMTimelineGroup establece y recupera propiedades en grupos en los servicios de edición de DirectShow (DES). Un grupo contiene una o más pistas y, posiblemente, una o más composiciones, que a su vez contienen clips de origen de un tipo uniforme, como vídeo o audio. Los grupos son las composiciones más arriba en una escala de tiempo y también exponen la interfaz IAMTimelineComp. Una escala de tiempo puede contener varios grupos. Cada grupo tiene los siguientes atributos. Un tipo de medio asociado. Velocidad de fotogramas en la que se representa el grupo, en fotogramas por segundo (FPS). Todas las ediciones se producen en un momento redondeado al límite de fotogramas más cercano, según se define en la configuración de FPS del grupo. Un nivel de prioridad, para escribir archivos con varias secuencias del mismo tipo de medio (por ejemplo, un archivo AVI de dos secuencias de vídeo). Para crear un objeto de grupo, llame a IAMTimeline:: CreateEmptyNode con el grupo de tipo de escala de tiempo de valor \_ principal \_ \_ . Puede consultar el puntero IAMTimelineObj devuelto para la interfaz IAMTimelineGroup.'
+description: La interfaz IAMTimelineGroup establece y recupera propiedades en grupos de DirectShow Editing Services (DES). Un grupo contiene una o varias pistas, y posiblemente una o varias composiciones, que a su vez contienen clips de origen de un tipo uniforme, como vídeo o audio. Los grupos son las composiciones más destacadas de una escala de tiempo y también exponen la interfaz IAMTimelineComp. Una escala de tiempo puede contener varios grupos. Cada grupo tiene los siguientes atributos. Tipo de medio asociado. Velocidad de fotogramas a la que se representa el grupo, en fotogramas por segundo (FPS). Todas las ediciones se producen a la vez redondeadas al límite del marco más cercano, tal y como se define en la configuración de FPS del grupo. Nivel de prioridad para escribir archivos con varias secuencias del mismo tipo de medio (por ejemplo, un archivo AVI de dos secuencias de vídeo). Para crear un objeto de grupo, llame a IAMTimeline::CreateEmptyNode con el valor TIMELINE \_ MAJOR \_ TYPE \_ GROUP. Puede consultar el puntero IAMTimelineObj devuelto para la interfaz IAMTimelineGroup.
 ms.assetid: c24e5e0a-43a5-4ba7-ac28-6e2ebb341a38
-title: Interfaz IAMTimelineGroup (QEDIT. h)
+title: Interfaz IAMTimelineGroup (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,80 +14,80 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: e82a11db65183e343048f594a7457c0a8febf8bc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9356e3edef0b61c119ec4cca774e9ec5976ac3732e0f0a508d103bc22bb0fef0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105691063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118155511"
 ---
 # <a name="iamtimelinegroup-interface"></a>Interfaz IAMTimelineGroup
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-La `IAMTimelineGroup` interfaz establece y recupera propiedades en grupos en los [servicios de edición de DirectShow](directshow-editing-services.md) (des).
+La interfaz establece y recupera propiedades en grupos de `IAMTimelineGroup` [DirectShow Editing Services](directshow-editing-services.md) (DES).
 
-Un grupo contiene una o más pistas y, posiblemente, una o más composiciones, que a su vez contienen clips de origen de un tipo uniforme, como vídeo o audio. Los grupos son las composiciones más arriba en una escala de tiempo y también exponen la interfaz [**IAMTimelineComp**](iamtimelinecomp.md) . Una escala de tiempo puede contener varios grupos.
+Un grupo contiene una o varias pistas, y posiblemente una o varias composiciones, que a su vez contienen clips de origen de un tipo uniforme, como vídeo o audio. Los grupos son las composiciones más destacadas de una escala de tiempo y también exponen la [**interfaz IAMTimelineComp.**](iamtimelinecomp.md) Una escala de tiempo puede contener varios grupos.
 
 Cada grupo tiene los siguientes atributos.
 
--   Un tipo de medio asociado.
--   Velocidad de fotogramas en la que se representa el grupo, en fotogramas por segundo (FPS). Todas las ediciones se producen en un momento redondeado al límite de fotogramas más cercano, según se define en la configuración de FPS del grupo.
--   Un nivel de prioridad, para escribir archivos con varias secuencias del mismo tipo de medio (por ejemplo, un archivo AVI de dos secuencias de vídeo).
+-   Tipo de medio asociado.
+-   Velocidad de fotogramas a la que se representa el grupo, en fotogramas por segundo (FPS). Todas las ediciones se producen a la vez redondeadas al límite del marco más cercano, tal y como se define en la configuración de FPS del grupo.
+-   Nivel de prioridad para escribir archivos con varias secuencias del mismo tipo de medio (por ejemplo, un archivo AVI de dos secuencias de vídeo).
 
-Para crear un objeto de grupo, llame a [**IAMTimeline:: CreateEmptyNode**](iamtimeline-createemptynode.md) con el grupo de tipo de escala de tiempo de valor \_ principal \_ \_ . Puede consultar el puntero [**IAMTimelineObj**](iamtimelineobj.md) devuelto para la interfaz **IAMTimelineGroup** .
+Para crear un objeto de grupo, llame [**a IAMTimeline::CreateEmptyNode**](iamtimeline-createemptynode.md) con el valor TIMELINE \_ MAJOR TYPE \_ \_ GROUP. Puede consultar el puntero [**IAMTimelineObj devuelto**](iamtimelineobj.md) para la **interfaz IAMTimelineGroup.**
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IAMTimelineGroup** hereda de la interfaz [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IAMTimelineGroup** también tiene estos tipos de miembros:
+La **interfaz IAMTimelineGroup** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IAMTimelineGroup** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IAMTimelineGroup** tiene estos métodos.
+La **interfaz IAMTimelineGroup** tiene estos métodos.
 
 
 
 | Método                                                                            | Descripción                                                                                     |
 |:----------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------|
-| [**ClearRecompressFormatDirty**](iamtimelinegroup-clearrecompressformatdirty.md) | No se admite.<br/>                                                                       |
+| [**ClearRecompressFormatDirty**](iamtimelinegroup-clearrecompressformatdirty.md) | No compatible.<br/>                                                                       |
 | [**GetGroupName**](iamtimelinegroup-getgroupname.md)                             | Recupera el nombre definido por la aplicación del grupo.<br/>                                 |
 | [**GetMediaType**](iamtimelinegroup-getmediatype.md)                             | Recupera el tipo de medio sin comprimir para el grupo.<br/>                                 |
-| [**GetOutputBuffering**](iamtimelinegroup-getoutputbuffering.md)                 | Recupera el número de fotogramas representados de antemano durante la vista previa.<br/>                   |
+| [**GetOutputBuffering**](iamtimelinegroup-getoutputbuffering.md)                 | Recupera el número de fotogramas representados de antemano durante la versión preliminar.<br/>                   |
 | [**GetOutputFPS**](iamtimelinegroup-getoutputfps.md)                             | Recupera la velocidad de fotogramas de salida de este grupo.<br/>                                       |
-| [**GetPreviewMode**](iamtimelinegroup-getpreviewmode.md)                         | Recupera el modo de vista previa para el grupo.<br/>                                            |
-| [**GetPriority (**](iamtimelinegroup-getpriority.md)                               | Recupera la prioridad del grupo.<br/>                                                      |
+| [**GetPreviewMode**](iamtimelinegroup-getpreviewmode.md)                         | Recupera el modo de vista previa del grupo.<br/>                                            |
+| [**GetPriority**](iamtimelinegroup-getpriority.md)                               | Recupera la prioridad del grupo.<br/>                                                      |
 | [**GetSmartRecompressFormat**](iamtimelinegroup-getsmartrecompressformat.md)     | Recupera el formato de compresión actual para la recompresión inteligente.<br/>                    |
 | [**GetTimeline**](iamtimelinegroup-gettimeline.md)                               | Recupera la escala de tiempo a la que pertenece este grupo.<br/>                                  |
-| [**IsRecompressFormatDirty**](iamtimelinegroup-isrecompressformatdirty.md)       | No se admite.<br/>                                                                       |
-| [**IsSmartRecompressFormatSet**](iamtimelinegroup-issmartrecompressformatset.md) | Determina si se ha establecido un formato de compresión inteligente para el grupo.<br/>                 |
+| [**IsRecompressFormatDirty**](iamtimelinegroup-isrecompressformatdirty.md)       | No compatible.<br/>                                                                       |
+| [**IsSmartRecompressFormatSet**](iamtimelinegroup-issmartrecompressformatset.md) | Determina si se estableció un formato de compresión inteligente para el grupo.<br/>                 |
 | [**SetGroupName**](iamtimelinegroup-setgroupname.md)                             | Establece el nombre definido por la aplicación del grupo.<br/>                                      |
 | [**SetMediaType**](iamtimelinegroup-setmediatype.md)                             | Establece el tipo de medio sin comprimir para el grupo.<br/>                                      |
-| [**SetMediaTypeForVB**](iamtimelinegroup-setmediatypeforvb.md)                   | Especifica el tipo de medio de grupo para los clientes de automatización.<br/>                              |
-| [**SetOutputBuffering**](iamtimelinegroup-setoutputbuffering.md)                 | Especifica el número de fotogramas representados de antemano durante la vista previa.<br/>                   |
+| [**SetMediaTypeForVB**](iamtimelinegroup-setmediatypeforvb.md)                   | Especifica el tipo de medio de grupo para los clientes de Automation.<br/>                              |
+| [**SetOutputBuffering**](iamtimelinegroup-setoutputbuffering.md)                 | Especifica el número de fotogramas representados de antemano durante la versión preliminar.<br/>                   |
 | [**SetOutputFPS**](iamtimelinegroup-setoutputfps.md)                             | Establece la velocidad de fotogramas de salida sin comprimir para este grupo.<br/>                              |
-| [**SetPreviewMode**](iamtimelinegroup-setpreviewmode.md)                         | Establece el modo de vista previa para el grupo.<br/>                                                 |
-| [**SetRecompFormatFromSource**](iamtimelinegroup-setrecompformatfromsource.md)   | Establece el formato de recompresión de vídeo con el formato de compresión de un archivo de código fuente.<br/> |
-| [**SetSmartRecompressFormat**](iamtimelinegroup-setsmartrecompressformat.md)     | Especifica un formato de compresión que se va a utilizar para la recompresión inteligente.<br/>                       |
-| [**SetTimeline**](iamtimelinegroup-settimeline.md)                               | No se admite.<br/>                                                                       |
+| [**SetPreviewMode**](iamtimelinegroup-setpreviewmode.md)                         | Establece el modo de vista previa del grupo.<br/>                                                 |
+| [**SetRecompFormatFromSource**](iamtimelinegroup-setrecompformatfromsource.md)   | Establece el formato de recompresión de vídeo mediante el formato de compresión de un archivo de origen.<br/> |
+| [**SetSmartRecompressFormat**](iamtimelinegroup-setsmartrecompressformat.md)     | Especifica un formato de compresión que se usará para la recompresión inteligente.<br/>                       |
+| [**SetTimeline**](iamtimelinegroup-settimeline.md)                               | No compatible.<br/>                                                                       |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -97,8 +97,8 @@ La interfaz **IAMTimelineGroup** tiene estos métodos.
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

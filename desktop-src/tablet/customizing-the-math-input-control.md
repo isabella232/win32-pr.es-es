@@ -15,7 +15,7 @@ ms.locfileid: "118045636"
 
 Es posible cambiar la apariencia del control de entrada matemática para que sea más adecuado para la aplicación. En este tema se explican las distintas formas en que los desarrolladores pueden personalizar el control de entrada matemática.
 
-Las siguientes personalizaciones son posibles:
+Son posibles las siguientes personalizaciones:
 
 -   [Cambiar los botones mostrados](#changing-the-displayed-buttons)
 -   [Cambiar el título del control](#changing-the-control-caption)
@@ -23,7 +23,7 @@ Las siguientes personalizaciones son posibles:
 
 ## <a name="changing-the-displayed-buttons"></a>Cambiar los botones mostrados
 
-Puede cambiar los botones que se muestran en el control de entrada matemática para que el control tenga una funcionalidad ampliada o aparezca más pequeño en la pantalla. Al habilitar el conjunto de botones extendido, se **mostrarán los botones Rehacer** **y Deshacer.** El código siguiente muestra cómo habilitar el conjunto de botones extendidos.
+Puede cambiar los botones que se muestran en el control de entrada matemática para que el control tenga una funcionalidad extendida o aparezca más pequeño en la pantalla. Al habilitar el conjunto de botones extendido, se mostrarán los botones **Rehacer** **y Deshacer.** El código siguiente muestra cómo habilitar el conjunto de botones extendido.
 
 
 ```
@@ -55,7 +55,7 @@ Puede cambiar los botones que se muestran en el control de entrada matemática p
 
 En la imagen siguiente se muestra el control con el conjunto extendido de botones.
 
-![Control de entrada matemática con un conjunto extendido de botones](images/mic.png)
+![control de entrada matemática con un conjunto extendido de botones](images/mic.png)
 
 En la imagen siguiente se muestra el control sin el conjunto extendido de botones.
 
@@ -63,7 +63,7 @@ En la imagen siguiente se muestra el control sin el conjunto extendido de botone
 
 ## <a name="changing-the-control-caption"></a>Cambiar el título del control
 
-Puede cambiar el título del control de entrada matemática para establecer el título en la ventana del control de entrada matemática. En el código siguiente se muestra cómo establecer el título.
+Puede cambiar el título del control para el control de entrada matemática con el fin de establecer el título en la ventana del control de entrada matemática. El código siguiente muestra cómo establecer el título.
 
 
 ```
@@ -81,7 +81,7 @@ Puede cambiar el título del control de entrada matemática para establecer el t
 
 En la imagen siguiente se muestra el control después de establecer el título.
 
-![Control de entrada matemática con un conjunto de subtítulos](images/mic-caption.png)
+![control de entrada matemática con un conjunto de subtítulos](images/mic-caption.png)
 
 ## <a name="changing-the-controls-preview-area-size"></a>Cambiar el tamaño del área de vista previa del control
 
@@ -102,7 +102,7 @@ Puede personalizar el control de entrada matemática para que el control estable
 
 En las imágenes siguientes se muestra un control con áreas de vista previa de tamaño diferente.
 
-![Control de entrada matemática con el tamaño de área de vista previa predeterminado](images/mic.png)![control de entrada matemática con un área de vista previa mayor](images/mic-big-preview.png)
+![control de entrada matemática con el tamaño de área de vista previa predeterminado](images/mic.png)![control de entrada matemática con un área de vista previa mayor](images/mic-big-preview.png)
 
  
 

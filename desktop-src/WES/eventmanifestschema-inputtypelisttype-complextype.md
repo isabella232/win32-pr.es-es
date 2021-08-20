@@ -3,7 +3,7 @@ title: Tipo complejo InputTypeListType
 description: Define una lista de tipos de entrada.
 ms.assetid: e6bba894-7c17-411e-92e5-9276728a5e4b
 keywords:
-- Tipo complejo EventLog inputTypeListType
+- Tipo complejo InputTypeListType EventLog
 topic_type:
 - apiref
 api_name:
@@ -49,7 +49,7 @@ Define una lista de tipos de entrada.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

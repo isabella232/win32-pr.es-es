@@ -75,7 +75,7 @@ Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
 Esta función devuelve un puntero a una [**estructura D3DXCOLOR**](d3dxcolor.md) que es el valor de color escalado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la **función D3DXColorScale** se puede usar como parámetro para otra función.
 

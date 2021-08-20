@@ -1,23 +1,23 @@
 ---
-description: Las funciones, tablas y propiedades de Windows Installer que se enumeran en esta página no se admiten en Windows Installer&\# 160; 2.0 y versiones anteriores.
+description: Las funciones, tablas y propiedades del instalador de Windows que se enumeran en esta página no son compatibles con Windows Installer&\# 160;2.0 y versiones anteriores.
 ms.assetid: 850b598a-338e-4f84-8336-01e962256a08
-title: No se admite en Windows Installer 2,0
+title: No se admite en Windows Installer 2.0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35ee09133af9ef611a93c2511d7b130b2175561b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d244dc962e65bb017dbd5fb56c7fda644b46524df7890ede7b71bf0bdf8ad66
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074865"
 ---
-# <a name="not-supported-in-windows-installer-20"></a>No se admite en Windows Installer 2,0
+# <a name="not-supported-in-windows-installer-20"></a>No se admite en Windows Installer 2.0
 
-Las funciones, tablas y propiedades de Windows Installer que se enumeran en esta página no se admiten en Windows Installer 2,0 y versiones anteriores. La ausencia de una característica de esta lista no garantiza que se admita la característica. Consulte la documentación principal para determinar qué versión de Windows Installer es necesaria para una característica determinada. Para obtener información sobre otras versiones de Windows Installer, vea [novedades de Windows Installer](what-s-new-in-windows-installer.md).
+Las Windows, las tablas y las propiedades del instalador de aplicaciones que se enumeran en esta página no son compatibles con Windows Installer 2.0 y versiones anteriores. La ausencia de una característica de esta lista no garantiza que se admite la característica. Consulte la documentación principal para determinar qué versión Windows installer es necesaria para una característica determinada. Para obtener información sobre otras versiones Windows Installer, vea [Novedades de Windows Installer](what-s-new-in-windows-installer.md).
 
-Windows Installer 2,0 se puede ejecutar en Microsoft Windows 2000, Microsoft Windows XP o Windows Server 2003. Para obtener una lista de todas las versiones de Windows Installer, consulte [versiones publicadas de Windows Installer](released-versions-of-windows-installer.md).
+Windows El instalador 2.0 se puede ejecutar en Microsoft Windows 2000, Microsoft Windows XP o Windows Server 2003. Para obtener una lista de todas las versiones Windows Installer, vea Versiones publicadas [de Windows Installer](released-versions-of-windows-installer.md).
 
-Las siguientes características no se admiten en Windows Installer 2,0 y versiones anteriores.
+Las siguientes características no se admiten en Windows Installer 2.0 y versiones anteriores.
 
 [Funciones del instalador](installer-functions.md)
 
@@ -43,7 +43,7 @@ Las siguientes características no se admiten en Windows Installer 2,0 y version
 -   [**MsiSourceListAddMediaDisk**](/windows/desktop/api/Msi/nf-msi-msisourcelistaddmediadiska)
 -   [**MsiSourceListClearMediaDisk**](/windows/desktop/api/Msi/nf-msi-msisourcelistclearmediadiska)
 
-[Windows Installer estructuras](installer-structures.md)
+[Windows Estructuras del instalador](installer-structures.md)
 
 -   [**MSIPATCHSEQUENCEINFO**](/windows/win32/api/msi/ns-msi-msipatchsequenceinfoa)
 
@@ -73,90 +73,90 @@ Las siguientes características no se admiten en Windows Installer 2,0 y version
 
 [Códigos de error](error-codes.md)
 
--   \_no se \_ admite la eliminación de la revisión de errores \_
--   ERROR \_ de \_ revisión desconocida
--   ERROR de \_ revisión \_ sin \_ secuencia
--   no \_ se \_ permite la eliminación de la revisión de errores \_
--   ERROR \_ de \_ revisión \_ XML no válida
--   producto de revisión de errores \_ \_ administrado \_ anunciada \_
+-   ELIMINACIÓN \_ DE \_ REVISIÓN \_ DE ERRORES NO ADMITIDA
+-   REVISIÓN \_ DESCONOCIDA DE \_ ERROR
+-   REVISIÓN \_ \_ DE ERRORES SIN \_ SECUENCIA
+-   NO \_ SE PUEDE ELIMINAR LA \_ \_ REVISIÓN DE ERRORES
+-   ERROR \_ XML DE \_ REVISIÓN NO \_ VÁLIDO
+-   PRODUCTO \_ ANUNCIADO ADMINISTRADO POR \_ REVISIÓN DE \_ \_ ERRORES
 
 Modos de registro
 
 -   [**INSTALLLOGMODE \_ LOGONLYONERROR**](/windows/desktop/api/Msi/nf-msi-msienableloga)
 
-[Interfaz de automatización](automation-interface.md)
+[Interfaz de Automation](automation-interface.md)
 
 -   Propiedades del [ **objeto Product**](product-object.md)
 
-    -   [**Producto. UserSid**](product-usersid.md)
-    -   [**Product. sources**](product-sources.md)
-    -   [**Producto. MediaDisks**](product-mediadisks.md)
-    -   [**Producto. FeatureState**](product-featurestate.md)
-    -   [**Product. Context**](product-context.md)
-    -   [**Producto. InstallProperty**](product-installproperty.md)
-    -   [**Product. ProductCode**](product-productcode.md)
-    -   [**Producto. ComponentState**](product-componentstate.md)
-    -   [**Product. State**](product-state.md)
-    -   [**Producto. SourceListInfo**](product-sourcelistinfo.md)
+    -   [**Product.UserSid**](product-usersid.md)
+    -   [**Product.Sources**](product-sources.md)
+    -   [**Product.MediaDisks**](product-mediadisks.md)
+    -   [**Product.FeatureState**](product-featurestate.md)
+    -   [**Product.Context**](product-context.md)
+    -   [**Product.InstallProperty**](product-installproperty.md)
+    -   [**Product.ProductCode**](product-productcode.md)
+    -   [**Product.ComponentState**](product-componentstate.md)
+    -   [**Product.State**](product-state.md)
+    -   [**Product.SourceListInfo**](product-sourcelistinfo.md)
 
--   Métodos de [ **objeto Product**](product-object.md)
+-   Métodos del [ **objeto Product**](product-object.md)
 
-    -   [**Producto. SourceListForceResolution**](product-sourcelistforceresolution.md)
-    -   [**Producto. SourceListClearMediaDisk**](product-sourcelistclearmediadisk.md)
-    -   [**Producto. SourceListClearAll**](product-sourcelistclearall.md)
-    -   [**Producto. SourceListClearSource**](product-sourcelistclearsource.md)
-    -   [**Producto. SourceListAddSource**](product-sourcelistaddsource.md)
-    -   [**Producto. SourceListAddMediaDisk**](product-sourcelistaddmediadisk.md)
+    -   [**Product.SourceListForceResolution**](product-sourcelistforceresolution.md)
+    -   [**Product.SourceListClearMediaDisk**](product-sourcelistclearmediadisk.md)
+    -   [**Product.SourceListClearAll**](product-sourcelistclearall.md)
+    -   [**Product.SourceListClearSource**](product-sourcelistclearsource.md)
+    -   [**Product.SourceListAddSource**](product-sourcelistaddsource.md)
+    -   [**Product.SourceListAddMediaDisk**](product-sourcelistaddmediadisk.md)
 
--   Propiedades del [ **objeto patch**](patch-object.md)
+-   Propiedades del [ **objeto Patch**](patch-object.md)
 
-    -   [**Patch. UserSid**](patch-usersid.md)
-    -   [**Patch. State**](patch-state.md)
-    -   [**Patch. sources**](patch-sources.md)
-    -   [**Patch. SourceListInfo**](patch-sourcelistinfo.md)
-    -   [**Patch. ProductCode**](patch-productcode.md)
-    -   [**Patch. PatchProperty**](patch-patchproperty.md)
-    -   [**Patch. PatchCode**](patch-patchcode.md)
-    -   [**Patch. MediaDisks**](patch-mediadisks.md)
-    -   [**Patch. Context**](patch-context.md)
+    -   [**Patch.UserSid**](patch-usersid.md)
+    -   [**Patch.State**](patch-state.md)
+    -   [**Patch.Sources**](patch-sources.md)
+    -   [**Patch.SourceListInfo**](patch-sourcelistinfo.md)
+    -   [**Patch.ProductCode**](patch-productcode.md)
+    -   [**Patch.PatchProperty**](patch-patchproperty.md)
+    -   [**Patch.PatchCode**](patch-patchcode.md)
+    -   [**Patch.MediaDisks**](patch-mediadisks.md)
+    -   [**Patch.Context**](patch-context.md)
 
--   Métodos del [ **objeto patch**](patch-object.md)
+-   Métodos del [ **objeto Patch**](patch-object.md)
 
-    -   [**Patch. SourceListForceResolution**](patch-sourcelistforceresolution.md)
-    -   [**Patch. SourceListClearAll**](patch-sourcelistclearall.md)
-    -   [**Patch. SourceListClearSource**](patch-sourcelistclearsource.md)
-    -   [**Patch. SourceListClearMediaDisk**](patch-sourcelistclearmediadisk.md)
-    -   [**Patch. SourceListAddSource**](patch-sourcelistaddsource.md)
-    -   [**Patch. SourceListAddMediaDisk**](patch-sourcelistaddmediadisk.md)
+    -   [**Patch.SourceListForceResolution**](patch-sourcelistforceresolution.md)
+    -   [**Patch.SourceListClearAll**](patch-sourcelistclearall.md)
+    -   [**Patch.SourceListClearSource**](patch-sourcelistclearsource.md)
+    -   [**Patch.SourceListClearMediaDisk**](patch-sourcelistclearmediadisk.md)
+    -   [**Patch.SourceListAddSource**](patch-sourcelistaddsource.md)
+    -   [**Patch.SourceListAddMediaDisk**](patch-sourcelistaddmediadisk.md)
 
--   Propiedades del [ **objeto Installer**](installer-object.md)
+-   Propiedades del objeto [ **Instalador**](installer-object.md)
 
-    -   [**Instalador. ProductsEx**](installer-productsex.md)
-    -   [**Instalador. ProductInfo**](installer-productinfo.md)
-    -   [**Instalador. PatchesEx**](installer-patchesex.md)
+    -   [**Installer.ProductsEx**](installer-productsex.md)
+    -   [**Installer.ProductInfo**](installer-productinfo.md)
+    -   [**Installer.PatchesEx**](installer-patchesex.md)
 
 -   Métodos del [ **objeto Installer**](installer-object.md)
 
-    -   [**Instalador. ApplyMultiplePatches**](installer-applymultiplepatches.md)
-    -   [**Instalador. ApplyPatch**](installer-applypatch.md)
-    -   [**Instalador. RemovePatches**](installer-removepatches.md)
-    -   [**Instalador. ExtractPatchXMLData**](installer-extractpatchxmldata.md)
+    -   [**Installer.ApplyMultiplePatches**](installer-applymultiplepatches.md)
+    -   [**Installer.ApplyPatch**](installer-applypatch.md)
+    -   [**Installer.RemovePatches**](installer-removepatches.md)
+    -   [**Installer.ExtractPatchXMLData**](installer-extractpatchxmldata.md)
 
-También se admiten las siguientes características en Windows Installer versión 2.0.2600. Windows Installer versión 2.0.2600 se lanzó con Windows XP y Windows 2000 Server. Las características están disponibles a partir de Windows Installer versión 2.0.3790 publicada con Windows Server 2003. Para obtener una lista de todas las versiones de Windows Installer, consulte [versiones publicadas de Windows Installer](released-versions-of-windows-installer.md).
+Las siguientes características tampoco se admiten en Windows Installer versión 2.0.2600. Windows La versión del instalador 2.0.2600 se publicó con Windows XP y Windows 2000 Server. Las características están disponibles a partir de Windows Installer versión 2.0.3790 publicada con Windows Server 2003. Para obtener una lista de todas las versiones Windows Installer, vea Versiones publicadas [de Windows Installer](released-versions-of-windows-installer.md).
 
 [Funciones del instalador](installer-functions.md)
 
 -   [**MsiAdvertiseProductEx**](/windows/desktop/api/Msi/nf-msi-msiadvertiseproductexa)
-    -   instancia de MSIADVERTISEOPTIONS \_
+    -   INSTANCIA DE MSIADVERTISEOPTIONS \_
 -   [**MsiApplyPatch**](/windows/desktop/api/Msi/nf-msi-msiapplypatcha)
 -   [**MsiGetProductInfo**](/windows/desktop/api/Msi/nf-msi-msigetproductinfoa)
 
-[Interfaz de automatización](automation-interface.md)
+[Interfaz de Automation](automation-interface.md)
 
 -   Métodos del [ **objeto Installer**](installer-object.md)
 
-    -   [**Instalador. ApplyPatch**](installer-applypatch.md)
-    -   [**Instalador. ProductInfo**](installer-productinfo.md)
+    -   [**Installer.ApplyPatch**](installer-applypatch.md)
+    -   [**Installer.ProductInfo**](installer-productinfo.md)
 
 [Propiedades](properties.md)
 
@@ -164,20 +164,20 @@ También se admiten las siguientes características en Windows Installer versió
 -   [**MSIINSTANCEGUID**](msiinstanceguid.md)
 -   [**MsiNTSuiteWebServer**](msintsuitewebserver.md)
 
-[Opciones de ejecución de la acción personalizada In-Script](custom-action-in-script-execution-options.md)
+[Opciones de ejecución de In-Script acción personalizada](custom-action-in-script-execution-options.md)
 
 -   [**msidbCustomActionTypeTSAware**](custom-action-in-script-execution-options.md)
 
 [Códigos de error](error-codes.md)
 
--   [ERROR al \_ instalar el \_ remoto \_ prohibido](error-codes.md)
+-   [ERROR \_ DE INSTALACIÓN REMOTA \_ \_ PROHIBIDA](error-codes.md)
 
-[Directivas de equipo](machine-policies.md)
+[Directivas de máquina](machine-policies.md)
 
 -   [DisableMSI](disablemsi.md)
--   [Directiva TransformsSecure](transformssecure-policy.md)
+-   [Transformaciones Directiva segura](transformssecure-policy.md)
 
-[Opciones de la línea de comandos](command-line-options.md)
+[Opciones de línea de comandos](command-line-options.md)
 
 -   [/c](command-line-options.md)
 -   [/n](command-line-options.md)
@@ -185,29 +185,29 @@ También se admiten las siguientes características en Windows Installer versió
 
 [Atributos de control](control-attributes.md)
 
--   Se quitó **ImageHandle**
+-   **ImageHandle** se quitó
 
 ## <a name="notes"></a>Notas
 
-El [instalador estándar Command-Line opciones](standard-installer-command-line-options.md) no se admiten en Windows Installer 2,0. En su lugar, use las [Opciones de línea de comandos de](command-line-options.md)Windows Installer.
+Las [opciones de configuración Command-Line](standard-installer-command-line-options.md) instalador estándar no son compatibles Windows Installer 2.0. En su lugar, use Windows [de línea de comandos del instalador de .](command-line-options.md)
 
-Cuando Windows Installer 2,0 instala un paquete de revisión, omite la información de las tablas [MsiPatchSequence](msipatchsequence-table.md) o [MsiPatchMetadata](msipatchmetadata-table.md) . Las versiones posteriores del Windows Installer pueden utilizar la información de estas tablas para mejorar la secuenciación, la eliminación y la optimización de las revisiones. Para obtener información acerca de la funcionalidad de revisión mejorada en Windows Installer, consulte [revisión](patching.md).
+Cuando Windows Installer 2.0 instala un paquete de revisión, omite la información de las tablas [MsiPatchSequence](msipatchsequence-table.md) [o MsiPatchMetadata.](msipatchmetadata-table.md) Las versiones posteriores del instalador Windows pueden usar la información de estas tablas para mejorar la secuenciación, eliminación y optimización de revisiones. Para obtener información sobre la funcionalidad de aplicación de revisiones mejorada en Windows Instalador, vea [Aplicación de revisiones.](patching.md)
 
-Windows Installer 2,0 no admite [revisiones desinstalables](uninstallable-patches.md) y el único método para quitar revisiones concretas de una aplicación es desinstalar toda la aplicación con revisión y, a continuación, volver a instalar sin volver a aplicar las revisiones que se van a quitar.
+Windows El instalador 2.0 [](uninstallable-patches.md) no admite revisiones desinstalables y el único método para quitar revisiones concretas de una aplicación es desinstalar toda la aplicación con revisión y, a continuación, volver a instalarla sin volver a aplicar ninguna revisión que se quite.
 
-Windows Installer 2,0 no admite la secuenciación de revisiones e instala revisiones en el orden en que se proporcionan al sistema al [instalar varias revisiones](installing-multiple-patches.md).
+Windows El instalador 2.0 no admite la secuenciación de revisiones e instala revisiones en el orden en que se proporcionan al sistema al instalar [varias revisiones](installing-multiple-patches.md).
 
-Windows Installer 2,0 no admite el uso de la aplicación de [revisiones del control de cuentas de usuario (UAC)](user-account-control--uac--patching.md) para habilitar revisiones firmadas digitalmente que pueden ser aplicadas por usuarios que no son administradores.
+Windows El instalador 2.0 no admite el uso de la aplicación de revisiones de control de cuentas de usuario [(UAC)](user-account-control--uac--patching.md) para habilitar las revisiones firmadas digitalmente que pueden aplicar los usuarios que no son administradores.
 
-Windows Installer 2,0 no admite la [optimización de revisiones](patch-optimization.md). La revisión puede tardar mucho más tiempo que con versiones posteriores Windows Installer que solo actualizan los archivos afectados por la revisión.
+Windows El instalador 2.0 no admite la [optimización de revisiones.](patch-optimization.md) La aplicación de revisiones puede tardar mucho más tiempo que con versiones posteriores Windows Installer que solo actualiza los archivos afectados por la revisión.
 
-Windows Installer 2,0 no admite el [uso de Windows Installer para inventariar productos y revisiones](inventory-products-and-patches-.md).
+Windows El instalador 2.0 no admite el uso [de Windows instalador para inventariar productos y revisiones](inventory-products-and-patches-.md).
 
-Windows Installer 2,0 no admite la recuperación y modificación de la información de la lista de origen para las aplicaciones Windows Installer y las revisiones instaladas en el sistema para todos los usuarios. Las versiones posteriores de Windows Installer permiten a los administradores administrar las listas de origen y las propiedades de la lista de origen de los orígenes de red, URL y multimedia. Las versiones posteriores permiten a los administradores administrar las listas de origen desde un proceso externo. Para obtener más información, consulte [administrar orígenes de instalación](managing-installation-sources.md).
+Windows Installer 2.0 no admite la recuperación y modificación de la información de la lista de origen para las aplicaciones y revisiones de Windows Installer instaladas en el sistema para todos los usuarios. Las versiones posteriores de Windows Installer permiten a los administradores administrar las listas de origen y las propiedades de la lista de origen para los orígenes de red, dirección URL y medios. Las versiones posteriores permiten a los administradores administrar listas de origen desde un proceso externo. Para obtener más información, vea [Administrar orígenes de instalación.](managing-installation-sources.md)
 
-Windows Installer 2,0 no admite la instalación de varias instancias de productos o revisiones sin un paquete de instalación independiente para cada instancia. Versiones posteriores Windows Installer pueden instalar varias instancias de un producto mediante el uso de transformaciones de código de producto y un paquete. msi o una revisión. Para obtener información [, consulte Instalación de varias instancias de productos y revisiones](installing-multiple-instances-of-products-and-patches.md).
+Windows El instalador 2.0 no admite la instalación de varias instancias de productos o revisiones sin un paquete de instalación independiente para cada instancia. Más Windows versiones del instalador pueden instalar varias instancias de un producto mediante transformaciones de código de producto y un .msi paquete o una revisión. Para obtener [información, vea Installing Multiple Instances of Products and Patches](installing-multiple-instances-of-products-and-patches.md)( Instalación de varias instancias de productos y revisiones).
 
-A partir de Windows XP con Service Pack 2 (SP2), Windows Installer puede usar los protocolos HTTP, HTTPS y FILE. El instalador no admite los protocolos FTP y GOPHER.
+A partir Windows XP con Service Pack 2 (SP2), Windows Installer puede usar los protocolos HTTP, HTTPS y FILE. El instalador no admite los protocolos FTP y GOPHER.
 
  
 

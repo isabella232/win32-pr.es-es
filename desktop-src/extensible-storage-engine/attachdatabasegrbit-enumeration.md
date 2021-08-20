@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración AttachDatabaseGrbit'
-title: Enumeración AttachDatabaseGrbit
+description: 'Más información sobre: AttachDatabaseGrbit (enumeración)'
+title: AttachDatabaseGrbit (enumeración)
 TOCTitle: AttachDatabaseGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.AttachDatabaseGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.attachdatabasegrbit(v=EXCHG.10)
@@ -30,21 +30,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 81525e97f1b6266ba15baab50168404566bd7bcd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ed3d25afcd9d53284a684e9af131f3c7a5c75ac6d9b52f5e1b7345e8adde6fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118084394"
 ---
-# <a name="attachdatabasegrbit-enumeration"></a>Enumeración AttachDatabaseGrbit
+# <a name="attachdatabasegrbit-enumeration"></a>AttachDatabaseGrbit (enumeración)
 
 Opciones de JetAttachDatabase.
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -74,18 +74,18 @@ public enum AttachDatabaseGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>ReadOnly</td>
-<td>Impide las modificaciones en la base de datos.</td>
+<td>Impide modificaciones en la base de datos.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>DeleteCorruptIndexes</td>
-<td>Si se ha establecido JET_paramEnableIndexChecking, se eliminarán todos los índices sobre los datos Unicode.</td>
+<td>Si JET_paramEnableIndexChecking se ha establecido, se eliminarán todos los índices a través de datos Unicode.</td>
 </tr>
 </tbody>
 </table>
@@ -95,4 +95,4 @@ public enum AttachDatabaseGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

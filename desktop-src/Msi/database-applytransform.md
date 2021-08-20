@@ -1,7 +1,7 @@
 ---
-description: El método ApplyTransform del objeto de base de datos aplica la transformación a esta base de datos.
+description: El método ApplyTransform del objeto Database aplica la transformación a esta base de datos.
 ms.assetid: bcf1ea78-54ad-49d9-8fba-7b88ced236eb
-title: Database. ApplyTransform (método)
+title: Método Database.ApplyTransform
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 81eda2f2c868b4ccd637ec117850c2beea14eef9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9c3424dab82b6981af033b40b33481937fd7c36d3c00dcf3ddfcba5f13f56ec7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119289625"
 ---
-# <a name="databaseapplytransform-method"></a>Database. ApplyTransform (método)
+# <a name="databaseapplytransform-method"></a>Método Database.ApplyTransform
 
-El método **ApplyTransform** del objeto de [**base de datos**](database-object.md) aplica la transformación a esta base de datos.
+El **método ApplyTransform** del objeto [**Database**](database-object.md) aplica la transformación a esta base de datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ Database.ApplyTransform(
 *storage* 
 </dt> <dd>
 
-Ruta de acceso al archivo de transformación que se va a aplicar. Este parámetro es necesario.
+Ruta de acceso al archivo de transformación que se va a aplicar. Este parámetro es obligatorio.
 
 </dd> <dt>
 
@@ -61,8 +61,8 @@ Especifica las condiciones de error que se van a suprimir. Especifique como una 
 | <span id="msiTransformErrorAddExistingTable"></span><span id="msitransformerroraddexistingtable"></span><span id="MSITRANSFORMERRORADDEXISTINGTABLE"></span><dl> <dt>**msiTransformErrorAddExistingTable**</dt> <dt>0x0004</dt> </dl>                         | Agrega una tabla que ya existe.<br/>                                                   |
 | <span id="msiTransformErrorDeleteNonExistingTable"></span><span id="msitransformerrordeletenonexistingtable"></span><span id="MSITRANSFORMERRORDELETENONEXISTINGTABLE"></span><dl> <dt>**msiTransformErrorDeleteNonExistingTable**</dt> <dt>0x0008</dt> </dl> | Elimina una tabla que no existe.<br/>                                                |
 | <span id="msiTransformErrorUpdateNonExistingRow"></span><span id="msitransformerrorupdatenonexistingrow"></span><span id="MSITRANSFORMERRORUPDATENONEXISTINGROW"></span><dl> <dt>**msiTransformErrorUpdateNonExistingRow**</dt> <dt>0x0010</dt> </dl>         | Actualiza una fila que no existe.<br/>                                                  |
-| <span id="msiTransformErrorChangeCodePage"></span><span id="msitransformerrorchangecodepage"></span><span id="MSITRANSFORMERRORCHANGECODEPAGE"></span><dl> <dt>**msiTransformErrorChangeCodePage**</dt> <dt>0x0020</dt> </dl>                                 | Las páginas de códigos de base de datos y de transformación no coinciden y ninguna tiene una página de códigos neutra.<br/> |
-| <span id="msiTransformErrorViewTransform"></span><span id="msitransformerrorviewtransform"></span><span id="MSITRANSFORMERRORVIEWTRANSFORM"></span><dl> <dt>**msiTransformErrorViewTransform**</dt> <dt>0x0100</dt> </dl>                                     | Crea la [ \_ tabla temporal TransformView](-transformview-table.md).<br/>            |
+| <span id="msiTransformErrorChangeCodePage"></span><span id="msitransformerrorchangecodepage"></span><span id="MSITRANSFORMERRORCHANGECODEPAGE"></span><dl> <dt>**msiTransformErrorChangeCodePage**</dt> <dt>0x0020</dt> </dl>                                 | Las páginas de códigos de transformación y base de datos no coinciden y ninguna tiene una página de códigos neutra.<br/> |
+| <span id="msiTransformErrorViewTransform"></span><span id="msitransformerrorviewtransform"></span><span id="MSITRANSFORMERRORVIEWTRANSFORM"></span><dl> <dt>**msiTransformErrorViewTransform**</dt> <dt>0x0100</dt> </dl>                                     | Crea la tabla [ \_ transformView temporal](-transformview-table.md).<br/>            |
 
 
 
@@ -74,21 +74,21 @@ Especifica las condiciones de error que se van a suprimir. Especifique como una 
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método **ApplyTransform** retrasa las transformaciones hasta el último momento posible. Los pasos que se han llevado a cabo en **ApplyTransform** son la transformación inmediata de los catálogos de tablas y columnas para la base de datos. Los catálogos de tablas y columnas se actualizan en función de la tabla que se agrega o se elimina y la columna que se agrega (no se permite la eliminación de columnas). Si una tabla está cargada actualmente en memoria y debe transformarse, se transforma. De lo contrario, el estado de la tabla se establece en que requiere una transformación de modo que, cuando se carga la tabla, o cuando la base de datos se confirma, se aplica la transformación. La transformación en esta instancia significa que se agregan, eliminan o actualizan los datos reales (filas) de la tabla.
+El **método ApplyTransform** retrasa la transformación de tablas hasta el último momento posible. Los pasos que se han realizado **en ApplyTransform** son transformar inmediatamente los catálogos de tablas y columnas de la base de datos. Los catálogos de tablas y columnas se actualizan según la tabla que se agrega o elimina y la columna que se agrega (no se permite la eliminación de columnas). Si una tabla está cargada actualmente en memoria y debe transformarse, se transforma. De lo contrario, el estado de la tabla se establece en que requiere una transformación para que, cuando se cargue la tabla o cuando se confirma la base de datos, se aplique la transformación. La transformación en esta instancia significa que los datos reales (fila) de la tabla se agregan, eliminan o actualizan.
 
-Si se produce un error en el método, puede obtener información de error extendida mediante el método [**LastErrorRecord**](installer-lasterrorrecord.md) .
+Si se produce un error en el método , puede obtener información de error extendida mediante el [**método LastErrorRecord.**](installer-lasterrorrecord.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IDatabase se define como 000C109D-0000-0000-C000-000000000046<br/>                                                                                                                                                                            |
+| IID<br/>     | IID IDatabase se define como \_ 000C109D-0000-0000-C000-000000000046<br/>                                                                                                                                                                            |
 
 
 

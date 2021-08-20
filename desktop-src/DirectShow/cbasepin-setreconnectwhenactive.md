@@ -1,7 +1,7 @@
 ---
-description: El método SetReconnectWhenActive especifica si el PIN admite reconexiones dinámicas.
+description: El método SetReconnectWhenActive especifica si el pin admite reconexiones dinámicas.
 ms.assetid: 64776008-5d1b-461c-a446-8cd6124276c0
-title: Método CBasePin. SetReconnectWhenActive (Amfilter. h)
+title: Método CBasePin.SetReconnectWhenActive (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 10840ad60c858f69164b19f2460a0039cd332700
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bf90c32af8371d9f2dd61369e21dfeb0726c7fa044758a3d8fb9beee7fd5743e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118000847"
 ---
-# <a name="cbasepinsetreconnectwhenactive-method"></a>CBasePin. SetReconnectWhenActive, método
+# <a name="cbasepinsetreconnectwhenactive-method"></a>Método CBasePin.SetReconnectWhenActive
 
-El `SetReconnectWhenActive` método especifica si el PIN admite reconexiones dinámicas.
+El `SetReconnectWhenActive` método especifica si el pin admite reconexiones dinámicas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ void SetReconnectWhenActive(
 *bCanReconnect* 
 </dt> <dd>
 
-Valor booleano que especifica si el pin puede volver a conectarse dinámicamente. Si **es true**, el PIN se puede volver a conectar dinámicamente.
+Valor booleano que especifica si el pin puede volver a conectarse dinámicamente. Si **es TRUE,** el pin puede volver a conectarse dinámicamente.
 
 </dd> </dl>
 
@@ -53,9 +53,9 @@ Valor booleano que especifica si el pin puede volver a conectarse dinámicamente
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-De forma predeterminada, debe detener un filtro antes de volver a conectar cualquiera de sus clavijas. Si el PIN se puede volver a conectar mientras el filtro está activo, llame a este método con un valor de **true**. Para obtener más información, vea [creación de gráficos dinámicos](dynamic-graph-building.md).
+De forma predeterminada, debe detener un filtro antes de volver a conectar cualquiera de sus pines. Si el pin puede volver a conectarse mientras el filtro está activo, llame a este método con un valor **true.** Para obtener más información, vea [Dynamic Graph Building](dynamic-graph-building.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ De forma predeterminada, debe detener un filtro antes de volver a conectar cualq
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ De forma predeterminada, debe detener un filtro antes de volver a conectar cualq
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> </dl>
 
  

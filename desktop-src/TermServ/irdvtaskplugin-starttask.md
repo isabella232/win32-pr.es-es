@@ -1,12 +1,12 @@
 ---
-title: IRDVTaskPlugin StartTask, método
+title: Método IRDVTaskPlugin StartTask
 description: Se llama para iniciar la tarea de actualización en la máquina virtual.
 ms.assetid: c1e9f18b-1e83-4a29-8646-8adde94e8c14
 ms.tgt_platform: multiple
 keywords:
 - Método StartTask Servicios de Escritorio remoto
-- Método StartTask Servicios de Escritorio remoto, interfaz IRDVTaskPlugin
-- Interfaz IRDVTaskPlugin Servicios de Escritorio remoto, método StartTask
+- Método StartTask Servicios de Escritorio remoto , interfaz IRDVTaskPlugin
+- Interfaz IRDVTaskPlugin Servicios de Escritorio remoto , método StartTask
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 51c499549378700a90d8fc78d075bc07c1f874cf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0e0bb9104ee1bbd3f0f6c2e8cc04b691205f2e40cb2221b79b5e9f251492a3a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118129262"
 ---
-# <a name="irdvtaskpluginstarttask-method"></a>IRDVTaskPlugin:: StartTask (método)
+# <a name="irdvtaskpluginstarttask-method"></a>IrDVTaskPlugin::StartTask (método)
 
 Se llama para iniciar la tarea de actualización en la máquina virtual.
 
@@ -44,30 +44,30 @@ HRESULT StartTask(
 
 <dl> <dt>
 
-*Etiqueta* \[ de de\]
+*Etiqueta* \[ En\]
 </dt> <dd>
 
-Etiqueta de la tarea. Esta es la etiqueta que se pasó al agente de desencadenador en el método [**ScheduleTask**](irdvtaskpluginnotifysink-scheduletask.md) .
+Etiqueta de la tarea. Esta es la etiqueta que se pasó al agente de desencadenador en el [**método ScheduleTask.**](irdvtaskpluginnotifysink-scheduletask.md)
 
 </dd> <dt>
 
-*Identificador de* \[ de\]
+*Identificador* \[ En\]
 </dt> <dd>
 
-Identificador único de la tarea. Este es el identificador que se pasó al agente de desencadenador en el método [**ScheduleTask**](irdvtaskpluginnotifysink-scheduletask.md) .
+Identificador único de la tarea. Este es el identificador que se pasó al agente de desencadenador en el [**método ScheduleTask.**](irdvtaskpluginnotifysink-scheduletask.md)
 
 </dd> <dt>
 
-*Contexto* \[ de de\]
+*Contexto* \[ En\]
 </dt> <dd>
 
-Datos opcionales para la tarea. Estos son los datos que se pasaron al agente de desencadenador en el método [**ScheduleTask**](irdvtaskpluginnotifysink-scheduletask.md) .
+Datos opcionales para la tarea. Estos son los datos que se pasaron al agente de desencadenador en el [**método ScheduleTask.**](irdvtaskpluginnotifysink-scheduletask.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,7 +75,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 Enterprise<br/>   |
+| Cliente mínimo compatible<br/> | Windows 7 Enterprise<br/>   |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/> |
 
 

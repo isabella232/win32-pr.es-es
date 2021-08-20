@@ -1,27 +1,27 @@
 ---
-title: Administrar bloques de datos mediante sondeo
-description: Administrar bloques de datos mediante sondeo
+title: Administración de bloques de datos mediante sondeo
+description: Administración de bloques de datos mediante sondeo
 ms.assetid: 0a517f1d-4993-49b8-be86-bc63e5687cba
 keywords:
-- audio de onda, bloqueos de datos de sondeo
+- audio de forma de onda, bloques de datos de sondeo
 - bloques de datos de audio, sondeo
 - sondear bloques de datos de audio
 - Estructura WAVEHDR
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7e5580ff64425eae1bc6650268b065e60b90f43
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 17c84e75eccaf34ef16ccadefb4dae42931854a0c6c4278003fb5c01b0c551f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118139178"
 ---
-# <a name="managing-data-blocks-by-polling"></a>Administrar bloques de datos mediante sondeo
+# <a name="managing-data-blocks-by-polling"></a>Administración de bloques de datos mediante sondeo
 
-Además de usar una función de devolución de llamada, puede sondear el miembro **dwFlags** de una estructura [**WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) para determinar cuándo ha finalizado un dispositivo de audio con un bloque de datos. A veces es mejor sondear **dwFlags** que esperar a que otro mecanismo reciba mensajes de los controladores. Por ejemplo, después de llamar a la función [**waveOutReset**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutreset) para liberar bloques de datos pendientes, puede sondear inmediatamente para asegurarse de que se han liberado los bloques de datos antes de llamar a [**waveOutUnprepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutunprepareheader) y liberar memoria para el bloque de datos.
+Además de usar una función de devolución de llamada, puede sondear el miembro **dwFlags** de una estructura [**WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) para determinar cuándo finaliza un dispositivo de audio con un bloque de datos. A veces es mejor sondear **dwFlags** que esperar a que otro mecanismo reciba mensajes de los controladores. Por ejemplo, después de llamar a la función [**waveOutReset**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutreset) para liberar bloques de datos pendientes, puede sondear inmediatamente para asegurarse de que los bloques de datos se han liberado antes de llamar a [**waveOutUnprepareHeader**](/windows/win32/api/mmeapi/nf-mmeapi-waveoutunprepareheader) y liberar la memoria del bloque de datos.
 
-Puede usar la marca WHDR \_ Done para probar el miembro **dwFlags** . \_En cuanto se establece la marca WHDR done en el miembro **dwFlags** de la estructura **WAVEHDR** , el controlador finaliza con el bloque de datos.
+Puede usar la marca WHDR \_ DONE para probar el miembro **dwFlags.** En cuanto se establece la marca WHDR DONE en el miembro dwFlags de la estructura \_ **WAVEHDR,** el controlador  finaliza con el bloque de datos.
 
- 
+ 
 
- 
+ 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: SystemParameters. NameMost, campo'
-title: SystemParameters. NameMost, campo
+description: 'Más información sobre: Campo SystemParameters.NameMost'
+title: Campo SystemParameters.NameMost
 TOCTitle: NameMost field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.SystemParameters.NameMost
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.namemost(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3b238542b48ca903110fc43e724cb672024a0cc9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: faebf0b510de48b149eb11e16e3600a610f1b309c277c7be1d185bad926eb820
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118070948"
 ---
-# <a name="systemparametersnamemost-field"></a>SystemParameters. NameMost, campo
+# <a name="systemparametersnamemost-field"></a>Campo SystemParameters.NameMost
 
 Tamaño máximo de un nombre de tabla, columna o índice.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,12 +53,12 @@ value = SystemParameters.NameMost
 public const int NameMost
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
 [SystemParameters (clase)](./systemparameters-class.md)
 
-[Miembros de SystemParameters](./systemparameters-members.md)
+[Miembros SystemParameters](./systemparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

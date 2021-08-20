@@ -1,7 +1,7 @@
 ---
 description: Modifica la configuración de seguridad actual de una máquina virtual.
 ms.assetid: b3eedab6-fd69-4c54-a8bf-4e3b77207687
-title: Método ModifySecuritySettings de la clase Msvm_SecurityService
+title: Método ModifySecuritySettings de la Msvm_SecurityService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4422f04be1833d66280392704630fcb670eba810
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47562ac8aac79a8aa4401abd17c667df1917ee38dd2874a4208d46d8de438b05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105670018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118147244"
 ---
-# <a name="modifysecuritysettings-method-of-the-msvm_securityservice-class"></a>Método ModifySecuritySettings de la \_ clase SecurityService de MSVM
+# <a name="modifysecuritysettings-method-of-the-msvm_securityservice-class"></a>Método ModifySecuritySettings de la clase SecurityService de Msvm \_
 
 Modifica la configuración de seguridad actual de una máquina virtual.
 
@@ -40,23 +40,23 @@ uint32 ModifySecuritySettings(
 
 <dl> <dt>
 
-*SecuritySettingData* \[ de\]
+*SecuritySettingData* \[ En\]
 </dt> <dd>
 
-Nuevos datos de la configuración de seguridad.
+Los nuevos datos de configuración de seguridad.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Parámetro opcional para supervisar el progreso de la operación, que se utiliza si el método no se pudo ejecutar sincrónicamente. Si la operación se ejecuta de forma asincrónica, el valor devuelto es 4096.
+Parámetro opcional para supervisar el progreso de la operación, que se usa si el método no se pudo ejecutar sincrónicamente. Si la operación se ejecuta de forma asincrónica, el valor devuelto es 4096.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si se ejecuta correctamente, devuelve un 0; de lo contrario, devuelve un error.
+Si se ejecuta correctamente, devuelve 0; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -69,7 +69,7 @@ Si se ejecuta correctamente, devuelve un 0; de lo contrario, devuelve un error.
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -84,13 +84,13 @@ Si se ejecuta correctamente, devuelve un 0; de lo contrario, devuelve un error.
 **DMTF reservado** (..)
 </dt> <dt>
 
-**Parámetros de método comprobados: trabajo iniciado** (4096)
+**Parámetros de método activados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -99,10 +99,10 @@ Si se ejecuta correctamente, devuelve un 0; de lo contrario, devuelve un error.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -111,7 +111,7 @@ Si se ejecuta correctamente, devuelve un 0; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
-[**MSVM \_ SecurityService**](msvm-securityservice.md)
+[**SecurityService de Msvm \_**](msvm-securityservice.md)
 </dt> </dl>
 
  

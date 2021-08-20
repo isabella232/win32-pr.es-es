@@ -1,35 +1,35 @@
 ---
-description: Información general de los componentes de la escala de tiempo
+description: Información general de los componentes de escala de tiempo
 ms.assetid: 0c67fc5f-2f80-481d-8cf4-989855050196
-title: Información general de los componentes de la escala de tiempo
+title: Información general de los componentes de escala de tiempo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 05dc6683c775a83f31f1759cdad766cd24c05497
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 531a92d6cb1b7da2640c07d767b5c37c5839d21c6d90e330b901207a70e6dc7a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686360"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075735"
 ---
-# <a name="overview-of-the-timeline-components"></a>Información general de los componentes de la escala de tiempo
+# <a name="overview-of-the-timeline-components"></a>Información general de los componentes de escala de tiempo
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
-La escala de tiempo de los [servicios de edición de DirectShow](directshow-editing-services.md) (des) es un componente com. Los objetos dentro de la escala de tiempo también son componentes COM. En este artículo se proporciona información general sobre las interfaces expuestas por los distintos objetos.
+La escala de [tiempo DirectShow Editing Services](directshow-editing-services.md) (DES) es un componente COM. Los objetos dentro de la escala de tiempo también son componentes COM. En este artículo se proporciona información general sobre las interfaces expuestas por los distintos objetos .
 
 Ese artículo contiene los siguientes temas:
 
--   [La escala de tiempo](the-timeline.md)
--   [Objetos Timeline](timeline-objects.md)
+-   [Escala de tiempo](the-timeline.md)
+-   [Objetos de escala de tiempo](timeline-objects.md)
 -   [Subobjetos](subobjects.md)
 
-Para obtener más información acerca de las escalas de tiempo, vea [el modelo Timeline](the-timeline-model.md). Para obtener una lista de los componentes de DES, vea [objetos de servicios de edición de DirectShow](directshow-editing-services-objects.md).
+Para obtener más información sobre las escalas de tiempo, vea [El modelo de escala de tiempo](the-timeline-model.md). Para obtener una lista de componentes en DES, [vea DirectShow Editing Services Objects](directshow-editing-services-objects.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar servicios de edición de DirectShow](using-directshow-editing-services.md)
+[Uso de DirectShow Editing Services](using-directshow-editing-services.md)
 </dt> </dl>
 
  

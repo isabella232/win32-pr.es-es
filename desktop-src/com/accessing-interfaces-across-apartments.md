@@ -1,63 +1,63 @@
 ---
-title: Acceso a interfaces entre apartamentos
-description: Acceso a interfaces entre apartamentos
+title: Acceso a interfaces entre departamentos
+description: Acceso a interfaces entre departamentos
 ms.assetid: 4e0467b9-bbf1-410c-8aab-40450a7f963a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 626707daf721aee3b440bb79ba2d1e084d154a98
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e89e82fa29e768328e6c110349627d32e92ab010ce61fdf64141ad3ca7fe9a54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103774796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048923"
 ---
-# <a name="accessing-interfaces-across-apartments"></a>Acceso a interfaces entre apartamentos
+# <a name="accessing-interfaces-across-apartments"></a>Acceso a interfaces entre departamentos
 
-COM proporciona una manera para cualquier apartamento de un proceso de obtener acceso a una interfaz implementada en un objeto de cualquier otro apartamento del proceso. Esto se realiza a través de la interfaz [**IGlobalInterfaceTable**](/windows/desktop/api/ObjIdl/nn-objidl-iglobalinterfacetable) . Esta interfaz tiene tres métodos, que le permiten hacer lo siguiente:
+COM proporciona una manera de que cualquier apartamento de un proceso obtenga acceso a una interfaz implementada en un objeto en cualquier otro apartamento del proceso. Esto se realiza a través de la [**interfaz IGlobalInterfaceTable.**](/windows/desktop/api/ObjIdl/nn-objidl-iglobalinterfacetable) Esta interfaz tiene tres métodos, que permiten hacer lo siguiente:
 
--   Registre una interfaz como una interfaz *global* (processwide).
--   Obtiene un puntero a la interfaz de cualquier otro apartamento a través de una cookie.
--   Revocar el registro global de una interfaz.
+-   Registre una interfaz como *una interfaz global* (en todo el proceso).
+-   Obtenga un puntero a esa interfaz desde cualquier otro apartamento a través de una cookie.
+-   Revoque el registro global de una interfaz.
 
-La interfaz [**IGlobalInterfaceTable**](/windows/desktop/api/ObjIdl/nn-objidl-iglobalinterfacetable) es una manera eficaz de que un proceso almacene un puntero de interfaz en una ubicación de memoria a la que se puede tener acceso desde varios apartamentos dentro del proceso, como variables para todo el proceso y objetos *ágiles* (objetos de cálculo de referencias de subprocesamiento libre) que contienen punteros de interfaz a otros objetos.
+La interfaz [**IGlobalInterfaceTable**](/windows/desktop/api/ObjIdl/nn-objidl-iglobalinterfacetable) es una manera eficaz de que un proceso almacene un puntero de interfaz en una ubicación de memoria a la que se pueda acceder desde varios departamentos dentro del proceso, como variables para todo el proceso y objetos *ágiles* (objetos sin subprocesos y serializados) que contienen punteros de interfaz a otros objetos.
 
-Un objeto Agile no es consciente de la infraestructura COM subyacente en la que se ejecuta; en otras palabras, en qué apartamento, contexto y subproceso se está ejecutando. El objeto puede estar reteniendo en interfaces que son específicas de un apartamento o un contexto. Por esta razón, llamar a estas interfaces desde donde se ejecuta el componente ágil podría no funcionar siempre correctamente. La tabla de interfaz global evita este problema garantizando que se usa un proxy válido (o puntero directo) al objeto, en función de dónde se esté ejecutando el objeto Agile.
+Un objeto agile no es consciente de la infraestructura COM subyacente en la que se ejecuta. en otras palabras, en qué apartamento, contexto y subproceso se está ejecutando. El objeto puede estar manteniendo en las interfaces que son específicas de un apartamento o contexto. Por esta razón, llamar a estas interfaces desde cualquier lugar donde se ejecute el componente agile podría no funcionar siempre correctamente. La tabla de interfaz global evita este problema al garantizar que se usa un proxy válido (o puntero directo) al objeto, en función de dónde se ejecute el objeto ágil.
 
 > [!Note]  
-> La tabla de interfaz global no es portable en los límites del proceso o del equipo, por lo que no se puede utilizar en lugar del mecanismo normal de paso de parámetros.
+> La tabla de interfaz global no es portátil a través de los límites de proceso o máquina, por lo que no se puede usar en lugar del mecanismo normal de paso de parámetros.
 
- 
+ 
 
-Para obtener información sobre la creación y el uso de una tabla de interfaz global, vea los temas siguientes:
+Para obtener información sobre cómo crear y usar una tabla de interfaz global, vea los temas siguientes:
 
--   [Crear la tabla de interfaz global](creating-the-global-interface-table.md)
+-   [Creación de la tabla de interfaz global](creating-the-global-interface-table.md)
 -   [Cuándo usar la tabla de interfaz global](when-to-use-the-global-interface-table.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Elegir el modelo de subprocesos](choosing-the-threading-model.md)
+[Elección del modelo de subprocesos](choosing-the-threading-model.md)
 </dt> <dt>
 
-[Apartamentos multiproceso](multithreaded-apartments.md)
+[Departamentos multiproceso](multithreaded-apartments.md)
 </dt> <dt>
 
-[Problemas de subprocesos de servidor en proceso](in-process-server-threading-issues.md)
+[Problemas de subprocesos del servidor en proceso](in-process-server-threading-issues.md)
 </dt> <dt>
 
-[Procesos, subprocesos y apartamentos](processes--threads--and-apartments.md)
+[Procesos, subprocesos y departamentos](processes--threads--and-apartments.md)
 </dt> <dt>
 
-[Comunicación multiproceso y de un solo subproceso](single-threaded-and-multithreaded-communication.md)
+[Comunicación multiproceso y de subproceso único](single-threaded-and-multithreaded-communication.md)
 </dt> <dt>
 
-[Apartamentos de un solo subproceso](single-threaded-apartments.md)
+[Departamentos de un solo subproceso](single-threaded-apartments.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

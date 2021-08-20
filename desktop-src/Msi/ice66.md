@@ -4,50 +4,50 @@ ms.assetid: 7cf929a0-2c4c-40ca-a902-dfd9dcd203b8
 title: ICE66
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea1436ad791941c96c0484a02f40a60fc9939e73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 023450a451a412c47c21904ab96a13e4513c71f8327966dffa5b657b1b65bb65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787405"
 ---
 # <a name="ice66"></a>ICE66
 
 ICE66 usa las tablas de la base de datos para determinar qué esquema debe usar la base de datos.
 
-Es posible que algunas funciones solo estén disponibles si el paquete está instalado en un sistema con una versión de Windows Installer actual.
+Es posible que algunas funcionalidades solo estén disponibles si el paquete está instalado en un sistema con una versión Windows instalador actual.
 
 ## <a name="result"></a>Resultado
 
-ICE66 publica una advertencia si la base de datos usa un esquema incorrecto.
+ICE66 envía una advertencia si la base de datos usa un esquema incorrecto.
 
 ## <a name="example"></a>Ejemplo
 
-ICE66 notifica la siguiente advertencia para el ejemplo que se muestra.
+ICE66 notifica la advertencia siguiente para el ejemplo mostrado.
 
 ``` syntax
 WARNING: Complete functionality of the IsolatedComponents table is only available with Windows Installer versions 1.1 or greater. Your schema is 100.
 ```
 
-Esta advertencia se puede omitir si desea que el paquete se instale con una versión de Windows Installer actual. Por ejemplo, si desea que el paquete se pueda instalar solo en la versión 2,0 o posterior, cambie el esquema del paquete (PID \_ PAGECOUNT) a 200.
+Esta advertencia se puede omitir si desea que el paquete se instale con una versión Windows instalador actual. Por ejemplo, si desea que el paquete solo se pueda instalar en la versión 2.0 o posterior, cambie el esquema del paquete (PID \_ PAGECOUNT) a 200.
 
 [Tabla IsolatedComponent](isolatedcomponent-table.md)
 
 
 
-| Componente \_ compartido | Aplicación de componentes \_ |
+| Componente \_ compartido | Aplicación \_ de componentes |
 |-------------------|------------------------|
-| Component1        | Component2             |
+| Componente1        | Componente 2             |
 
 
 
  
 
-[Flujo de información de Resumen](summary-information-stream.md)
+[Secuencia de información de resumen](summary-information-stream.md)
 
 
 
-| PIDt           | Value |
+| PIDt           | Valor |
 |----------------|-------|
 | PID \_ PAGECOUNT | 100   |
 
@@ -55,7 +55,7 @@ Esta advertencia se puede omitir si desea que el paquete se instale con una vers
 
  
 
-## <a name="table-used-during-execution"></a>Tabla utilizada durante la ejecución:
+## <a name="table-used-during-execution"></a>Tabla usada durante la ejecución:
 
 [\_Tabla de columnas](-columns-table.md)
 

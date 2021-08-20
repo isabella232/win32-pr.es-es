@@ -1,11 +1,11 @@
 ---
-title: Win32_SessionDirectoryServer (clase)
-description: Proporciona propiedades para ver las propiedades de un servidor de Conexión a Escritorio remoto Broker (agente de conexión a escritorio remoto).
+title: Win32_SessionDirectoryServer clase
+description: Proporciona propiedades para ver las propiedades de un servidor Conexión a Escritorio remoto Broker (Agente de conexión a Escritorio remoto).
 ms.assetid: 73017b71-eff9-4ef6-aba0-71ddb969491f
 ms.tgt_platform: multiple
 keywords:
 - Win32_SessionDirectoryServer clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_SessionDirectoryServer de clase, se describe
+- Win32_SessionDirectoryServer clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -24,19 +24,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9e96efb19e4db56e582cd44d05f3e9865e5282c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 702b56a9cf8aee2ab38ad9d6b3a0f2d270b2128ea46934cc1beb720c77400d07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118127075"
 ---
-# <a name="win32_sessiondirectoryserver-class"></a>\_Clase Win32 SessionDirectoryServer
+# <a name="win32_sessiondirectoryserver-class"></a>Clase SessionDirectoryServer de Win32 \_
 
-Proporciona propiedades para ver las propiedades de un servidor de Conexión a Escritorio remoto Broker (agente de conexión a escritorio remoto).
+Proporciona propiedades para ver las propiedades de un servidor Conexión a Escritorio remoto Broker (Agente de conexión a Escritorio remoto).
 
 > [!Note]  
-> En Windows Server 2008 R2, el nombre de Terminal Services agente de sesión (agente de sesiones de TS) se cambió al agente de conexión a escritorio remoto. Estas propiedades se aplican a todos los sistemas operativos compatibles a menos que se indique lo contrario.
+> En Windows Server 2008 R2, el nombre del Agente de sesión de Terminal Services (TS Session Broker) se cambió a Agente de conexión a Escritorio remoto. Estas propiedades se aplican a todos los sistemas operativos compatibles, a menos que se indique lo contrario.
 
  
 
@@ -69,7 +69,7 @@ La **clase \_ SessionDirectoryServer de Win32** tiene estas propiedades.
 
 <dl> <dt>
 
-**NombreDeClúster**
+**ClusterName**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -78,46 +78,46 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre de la granja de servidores que incluye el servidor.
+Nombre de la granja que incluye el servidor.
 
 </dd> <dt>
 
 **LoadIndicator**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número relativo que representa el servidor host de sesión de escritorio remoto que se carga cuando se usa el algoritmo de equilibrio de carga predeterminado. El valor de la propiedad *LoadIndicator* se basa en el número de sesiones, el número de solicitudes de redirección pendientes y el valor de peso del servidor.
+Número relativo que representa la carga del servidor host de sesión de Escritorio remoto cuando se usa el algoritmo de equilibrio de carga predeterminado. El *valor de la propiedad LoadIndicator* se basa en el número de sesiones, el número de solicitudes de redireccionamiento pendientes y el valor de peso del servidor.
 
 </dd> <dt>
 
 **NumberOfSessions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de sesiones en el servidor de agente de conexión a escritorio remoto.
+Número de sesiones en el servidor del Agente de conexión a Escritorio remoto.
 
 </dd> <dt>
 
 **NumPendRedir**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de solicitudes de redirección pendientes.
+Número de solicitudes de redireccionamiento pendientes.
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Dirección IP del servidor de agente de conexión a escritorio remoto. Si el servidor está configurado para direcciones IPv4 e IPv6, este contendrá la dirección IPv4.
+Dirección IP del servidor del Agente de conexión a Escritorio remoto. Si el servidor está configurado para direcciones IPv4 e IPv6, contendrá la dirección IPv4.
 
 </dd> <dt>
 
@@ -146,14 +146,14 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nombre del servidor de agente de conexión a escritorio remoto.
+Nombre del servidor del Agente de conexión a Escritorio remoto.
 
 </dd> <dt>
 
 **ServerWeight**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -166,20 +166,20 @@ Valor de peso del servidor, que se usa en el equilibrio de carga.
 **SingleSessionMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Configuración del modo de sesión única del servidor de agente de conexión a escritorio remoto.
+Configuración del modo de sesión única del servidor del Agente de conexión a Escritorio remoto.
 
 <dt>
 
 0
 </dt> <dd>
 
-La granja de servidores no está en modo de sesión única.
+La granja no está en modo de sesión única.
 
 </dd> <dt>
 
@@ -192,20 +192,20 @@ La granja de servidores de está en modo de sesión única.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Espacio de nombres<br/>                | Root\\CIMv2<br/>                                                                 |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 
@@ -214,10 +214,10 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 <dl> <dt>
 
-[**Win32 \_ SessionDirectoryCluster**](win32-sessiondirectorycluster.md)
+[**SessionDirectoryCluster de Win32 \_**](win32-sessiondirectorycluster.md)
 </dt> <dt>
 
-[**Win32 \_ SessionDirectorySession**](win32-sessiondirectorysession.md)
+[**SessionDirectorySession de Win32 \_**](win32-sessiondirectorysession.md)
 </dt> </dl>
 
  

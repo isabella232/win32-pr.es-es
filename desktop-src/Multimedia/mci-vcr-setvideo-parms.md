@@ -1,9 +1,9 @@
 ---
-title: MCI_VCR_SETVIDEO_PARMS estructura (VCR. h)
-description: La \_ estructura MCI VCR \_ SETVIDEO \_ parms contiene parámetros para el \_ comando MCI SETVIDEO para los grabadores de casete de vídeo.
+title: MCI_VCR_SETVIDEO_PARMS estructura (Vcr.h)
+description: La estructura MCI VCR SETVIDEO PARMS contiene parámetros para el comando MCI SETVIDEO para las \_ \_ \_ \_ grabadoras de vídeo.
 ms.assetid: d14b2c9f-6068-4902-8db6-fc081bcd01c0
 keywords:
-- Estructura de MCI_VCR_SETVIDEO_PARMS de Windows multimedia
+- MCI_VCR_SETVIDEO_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 050e6452b3952a9d15515de01c2ca94a87af2f29
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cf260804a6e993ba133ca450a51802a0f43db3aa3d0e557ba684b8a86bcfb7dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119784135"
 ---
-# <a name="mci_vcr_setvideo_parms-structure"></a>\_SETVIDEO MCI \_ VCR \_ parms estructura
+# <a name="mci_vcr_setvideo_parms-structure"></a>Estructura MCI \_ VCR \_ SETVIDEO \_ PARMS
 
-La estructura **MCI \_ VCR \_ SETVIDEO \_ parms** contiene parámetros para el comando [**MCI \_ SETVIDEO**](mci-setvideo.md) para los grabadores de casete de vídeo.
+La **estructura MCI \_ VCR \_ SETVIDEO \_ PARMS** contiene parámetros para el comando [**MCI \_ SETVIDEO**](mci-setvideo.md) para las grabadoras de vídeo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ typedef struct tagMCI_VCR_SETVIDEO_PARMS {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
@@ -67,11 +67,11 @@ Tipo de entrada o entrada supervisada.
 **dwNumber**
 </dt> <dd>
 
-Entrada de vídeo (del tipo especificado en el miembro **dwTo** ) que se va a usar.
+Entrada de vídeo (del tipo especificado en el **miembro dwTo)** que se usará.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -79,11 +79,11 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VCR. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vcr.h</dt> </dl> |
 
 
 
@@ -91,7 +91,7 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)

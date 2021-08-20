@@ -1,17 +1,17 @@
 ---
 description: Nombre del sistema de archivos de un volumen. Esto es válido para los elementos de Shell que describen un volumen.
 ms.assetid: 57ffd3b1-27a0-4d48-aa2c-482fb00cb44e
-title: System. VOLUME. FileSystem
+title: System.Volume.FileSystem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc344c7521ea8905d0aa1d4de75bff04d71466e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 918277dc7364558a600dcebb6e917b43dcbcf249f89f9a4229547e5c871f77b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118052407"
 ---
-# <a name="systemvolumefilesystem"></a>System. VOLUME. FileSystem
+# <a name="systemvolumefilesystem"></a>System.Volume.FileSystem
 
 Nombre del sistema de archivos de un volumen. Esto es válido para los elementos de Shell que describen un volumen.
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

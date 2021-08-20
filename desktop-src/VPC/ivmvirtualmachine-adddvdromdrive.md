@@ -1,11 +1,11 @@
 ---
-title: Método IVMVirtualMachine AddDVDROMDrive (VPCCOMInterfaces. h)
+title: Método IVMVirtualMachine AddDVDROMDrive (VPCCOMInterfaces.h)
 description: Agrega una nueva unidad de CD o DVD a la máquina virtual.
 ms.assetid: d39f2728-6146-42ed-b67f-6586566a7209
 keywords:
-- Método AddDVDROMDrive Virtual PC
-- Método AddDVDROMDrive Virtual PC, interfaz IVMVirtualMachine
-- Interfaz IVMVirtualMachine Virtual PC, método AddDVDROMDrive
+- AddDVDROMDrive, método Virtual PC
+- Método AddDVDROMDrive Para PC virtual, interfaz IVMVirtualMachine
+- IVMVirtualMachine interface Virtual PC , Método AddDVDROMDrive
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7acbe70f6b338b3490c12ab67bcdfdc997d90a4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 63a875af50d38270b898c17f2848a4e4b33fe79a4b17d9ab7b6be58cdcfcf92f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105695954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118123235"
 ---
-# <a name="ivmvirtualmachineadddvdromdrive-method"></a>IVMVirtualMachine:: AddDVDROMDrive (método)
+# <a name="ivmvirtualmachineadddvdromdrive-method"></a>IVMVirtualMachine::AddDVDROMDrive (método)
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Agrega una nueva unidad de CD o DVD a la máquina virtual.
 
@@ -46,14 +46,14 @@ HRESULT AddDVDROMDrive(
 
 <dl> <dt>
 
-*busNumber* \[ de\]
+*busNumber* \[ En\]
 </dt> <dd>
 
-El bus al que se conectará la unidad.
+Bus al que se conectará la unidad.
 
 
 
-| Value                                                                        | Significado                                                  |
+| Valor                                                                        | Significado                                                  |
 |------------------------------------------------------------------------------|----------------------------------------------------------|
 | <dl> <dt>0</dt> </dl> | La unidad se conectará al primer bus.<br/>  |
 | <dl> <dt>1</dt> </dl> | La unidad se conectará al segundo bus.<br/> |
@@ -64,14 +64,14 @@ El bus al que se conectará la unidad.
 
 </dd> <dt>
 
-*deviceNumber* \[ de\]
+*deviceNumber* \[ En\]
 </dt> <dd>
 
-El dispositivo al que se conectará la unidad.
+Dispositivo al que se conectará la unidad.
 
 
 
-| Value                                                                        | Significado                                                                |
+| Valor                                                                        | Significado                                                                |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------|
 | <dl> <dt>0</dt> </dl> | La unidad se conectará al primer dispositivo del bus.<br/>  |
 | <dl> <dt>1</dt> </dl> | La unidad se conectará al segundo dispositivo del bus.<br/> |
@@ -85,7 +85,7 @@ El dispositivo al que se conectará la unidad.
 *dvdDrive* \[ out, retval\]
 </dt> <dd>
 
-Objeto [**IVMDVDDrive**](ivmdvddrive.md) .
+Objeto [**IVMDVDDrive.**](ivmdvddrive.md)
 
 </dd> </dl>
 
@@ -97,35 +97,35 @@ Este método puede devolver uno de estos valores.
 
 | Código o valor devuelto                                                                                                                                                               | Descripción                                                    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> <dt>0</dt> </dl>                                     | La operación se realizó correctamente.<br/>                       |
-| <dl> <dt>**E \_ PUNTERO**</dt> <dt>0x80004003</dt> </dl>                       | El parámetro *dvdDrive* es **null**.<br/>               |
-| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>0x80000003</dt> </dl>                    | Un parámetro no es válido.<br/>                           |
-| <dl> <dt>**Máquina virtual \_ 0xA0040207 de \_ máquina virtual \_ desconocida**</dt> <dt></dt> </dl>               | La configuración es desconocida.<br/>                       |
-| <dl> <dt>**Máquina virtual \_ \_Máquina virtual en \_ ejecución \_ o \_ guardada**</dt> <dt>0xA004020B</dt> </dl>    | La máquina virtual está en estado en ejecución o guardada.<br/> |
-| <dl> <dt>**Máquina virtual \_ E \_ unidad \_ \_ de bus \_ de disco en \_ uso**</dt> <dt>0xA00400503</dt> </dl> | La ubicación de bus especificada está en uso.<br/>               |
-| <dl> <dt>**Máquina virtual \_ Unidad E 0xA0040502 \_ \_ no válida**</dt> <dt></dt> </dl>            | La unidad especificada no es válida.<br/>                   |
-| <dl> <dt>**DISP \_ . E \_ excepción**</dt> <dt>0x80020009</dt> </dl>               | Se produjo un error inesperado.<br/>                   |
+| <dl> <dt>**S \_ Ok**</dt> <dt>0</dt> </dl>                                     | La operación se realizó correctamente.<br/>                       |
+| <dl> <dt>**E \_ Puntero**</dt> <dt>0x80004003</dt> </dl>                       | El *parámetro dvdDrive* es **NULL.**<br/>               |
+| <dl> <dt>**E \_ Invalidarg**</dt> <dt>0x80000003</dt> </dl>                    | Un parámetro no es válido.<br/>                           |
+| <dl> <dt>**Máquina virtual \_ E \_ VM \_ UNKNOWN**</dt> <dt>0xA0040207</dt> </dl>               | La configuración es desconocida.<br/>                       |
+| <dl> <dt>**Máquina virtual \_ E \_ MÁQUINA VIRTUAL EN EJECUCIÓN O \_ \_ \_ GUARDADA**</dt> <dt>0XA004020B</dt> </dl>    | La máquina virtual está en estado en ejecución o guardado.<br/> |
+| <dl> <dt>**Máquina virtual \_ E \_ DRIVE \_ BUS \_ LOC IN \_ \_ USE**</dt> <dt>0xA00400503</dt> </dl> | La ubicación de bus especificada está en uso.<br/>               |
+| <dl> <dt>**Máquina virtual \_ E \_ UNIDAD \_ NO VÁLIDA**</dt> <dt>0xA0040502</dt> </dl>            | La unidad especificada no es válida.<br/>                   |
+| <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl>               | Se produjo un error inesperado.<br/>                   |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Solo puede Agregar una nueva unidad de CD o DVD a una máquina virtual detenida.
+Solo puede agregar una nueva unidad de CD o DVD a una máquina virtual detenida.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMVirtualMachine se define como f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMVirtualMachine se define como \_ f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: El método GetTargetRect recupera el rectángulo de destino actual.
 ms.assetid: b6542b06-af36-4666-b6fa-d9fa3c6c7044
-title: Método CDrawImage. GetTargetRect (Winutil. h)
+title: Método CDrawImage.GetTargetRect (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 547dd12117cec95ad1cb0159667a8dd72a95a6e5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1ba520b0bb48ed60ba2a9c48165eb83959107ecd777bdecc8bce12e7672d221e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076415"
 ---
-# <a name="cdrawimagegettargetrect-method"></a>CDrawImage. GetTargetRect, método
+# <a name="cdrawimagegettargetrect-method"></a>Método CDrawImage.GetTargetRect
 
 El `GetTargetRect` método recupera el rectángulo de destino actual.
 
@@ -45,7 +45,7 @@ void GetTargetRect(
 *pTargetRect* 
 </dt> <dd>
 
-Puntero a una estructura **Rect** que recibe el rectángulo de destino.
+Puntero a una **estructura RECT** que recibe el rectángulo de destino.
 
 </dd> </dl>
 
@@ -59,8 +59,8 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**Clase CDrawImage**](cdrawimage.md)
+[**CDrawImage (clase)**](cdrawimage.md)
 </dt> </dl>
 
  

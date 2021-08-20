@@ -1,9 +1,9 @@
 ---
-title: función glPopName (GL. h)
-description: Las funciones glPushName y glPopName envían y extraen la pila de nombres. | función glPopName (GL. h)
+title: Función glPopName (Gl.h)
+description: Las funciones glPushName y glPopName insertan y devuelven la pila de nombres. | Función glPopName (Gl.h)
 ms.assetid: ee741188-b275-4839-a89d-4d988c547d07
 keywords:
-- glPopName (función) OpenGL
+- Función glPopName OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 830c4937b30cca64de3063b42ad16dd3adc87c89
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: fe30aa09d401fc8ef35a3671e02a898776af26111ae0f8e31cd1f6ad3bff70b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105689810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119290175"
 ---
-# <a name="glpopname-function"></a>glPopName función)
+# <a name="glpopname-function"></a>Función glPopName
 
-Las funciones [**glPushName**](glpushname.md) y **glPopName** envían y extraen la pila de nombres.
+Las [**funciones glPushName**](glpushname.md) y **glPopName** insertan y abren la pila de nombres.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,33 +50,33 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**subdesbordamiento de la pila de GL \_ \_**</dt> </dl>   | Se llamó a la función mientras que la pila de matriz actual contenía solo una matriz única.<br/>                                     |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**GL \_ STACK \_ UNDERFLOW**</dt> </dl>   | Se llamó a la función mientras la pila de matriz actual solo contenía una sola matriz.<br/>                                     |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función [**glPushName**](glpushname.md) hace que el nombre se inserte en la pila de nombres, que inicialmente está vacía. La función **glPopName** extrae un nombre de la parte superior de la pila. La pila de nombres se usa durante el modo de selección para permitir que los conjuntos de comandos de representación se identifiquen de forma única. Consta de un conjunto ordenado de enteros sin signo.
+La [**función glPushName**](glpushname.md) hace que el nombre se inserta en la pila de nombres, que inicialmente está vacía. La **función glPopName** devuelve un nombre de la parte superior de la pila. La pila de nombres se usa durante el modo de selección para permitir que los conjuntos de comandos de representación se identifiquen de forma única. Consta de un conjunto ordenado de enteros sin signo.
 
-La pila de nombres está siempre vacía mientras que el modo de representación no es de selección de libro \_ . Se omiten las llamadas a [**glPushName**](glpushname.md) o **glPopName** mientras que el modo de representación no es Select de GL \_ .
+La pila de nombres siempre está vacía, mientras que el modo de representación no es GL \_ SELECT. Se [**omiten las llamadas a glPushName**](glpushname.md) **o glPopName** mientras el modo de representación no es GL \_ SELECT.
 
-Las siguientes funciones recuperan información relacionada con [**glPushName**](glpushname.md) y **glPopName**:
+Las siguientes funciones recuperan información relacionada [**con glPushName**](glpushname.md) y **glPopName**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento de profundidad de la pila de nombre del libro \_ \_ \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ NAME STACK \_ \_ DEPTH
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento LM \_ Max \_ name \_ stack \_ Depth
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAX NAME STACK \_ \_ \_ DEPTH
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

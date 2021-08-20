@@ -1,8 +1,8 @@
 ---
-description: La terminación&\# 32; El método de clase WMI finaliza un proceso y todos los subprocesos.
+description: El&\# 32; El método de clase WMI finaliza un proceso y todos sus subprocesos.
 ms.assetid: 6c6b27d4-cf9b-42d7-9136-42641ea56ee8
 ms.tgt_platform: multiple
-title: Método Terminate de la clase Win32_Process
+title: Método Terminate de la Win32_Process clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 00300ca9656c3b732b9c294aeba9a6c626ac6e2e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8f0b9671891b9f9c90e8a36e3fc0b58e92a513935d2923e3a2eed5134dcef777
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103998187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118009361"
 ---
-# <a name="terminate-method-of-the-win32_process-class"></a>Método Terminate de la \_ clase Process de Win32
+# <a name="terminate-method-of-the-win32_process-class"></a>Método Terminate de la clase Process de Win32 \_
 
-El método **Finalizar** [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) finaliza un proceso y todos sus subprocesos.
+El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **Terminate** finaliza un proceso y todos sus subprocesos.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ uint32 Terminate(
 
 <dl> <dt>
 
-*Motivo* \[ de\]
+*Motivo* \[ En\]
 </dt> <dd>
 
 Código de salida para el proceso y para todos los subprocesos finalizados como resultado de esta llamada.
@@ -51,7 +51,7 @@ Código de salida para el proceso y para todos los subprocesos finalizados como 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si el proceso se ha terminado correctamente y cualquier otro número para indicar un error. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve un valor de 0 (cero) si el proceso se finalizó correctamente y cualquier otro número para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -67,43 +67,43 @@ Devuelve un valor de 0 (cero) si el proceso se ha terminado correctamente y cual
 **Error desconocido** (8)
 </dt> <dt>
 
-**No se encontró la ruta de acceso** (9)
+**Ruta de acceso no encontrada** (9)
 </dt> <dt>
 
 **Parámetro no válido** (21)
 </dt> <dt>
 
-**Otro** (22 4294967295)
+**Otros** (22 4294967295)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 **Información general**
 
-Los problemas del equipo suelen deberse a un proceso que ya no funciona según lo esperado. Por ejemplo, el proceso podría estar perdiendo memoria o podría haber dejado de responder a los datos proporcionados por el usuario. Cuando se producen problemas como estos, el proceso debe terminarse. Aunque esto puede parecer una tarea bastante sencilla, la terminación de un proceso puede ser complicada en varios factores:
+Los problemas del equipo suelen deberse a un proceso que ya no funciona según lo previsto. Por ejemplo, el proceso podría estar filtrando memoria o podría haber dejado de responder a la entrada del usuario. Cuando se producen problemas como estos, se debe finalizar el proceso. Aunque esto puede parecer una tarea lo suficientemente sencilla, la finalización de un proceso puede ser complicada por varios factores:
 
--   El proceso podría estar bloqueado y, por lo tanto, ya no responde a los comandos de menú o teclado para cerrar la aplicación. Esto hace que sea todo lo posible para el usuario típico descartar la aplicación y finalizar el proceso.
--   Es posible que el proceso esté huérfano. Por ejemplo, un script puede crear una instancia de Word y después salir sin destruir esa instancia. En efecto, Word permanece en ejecución en el equipo, aunque no esté visible ninguna interfaz de usuario. Dado que no hay ninguna interfaz de usuario, no hay ningún comando de menú o de teclado disponible para finalizar el proceso.
--   Es posible que no sepa qué proceso debe terminar. Por ejemplo, puede que desee finalizar todos los programas que superen una cantidad especificada de memoria.
--   Dado que el administrador de tareas permite finalizar solo los procesos que ha creado, es posible que no pueda finalizar un proceso, incluso si es un administrador del equipo.
+-   El proceso podría estar cerrado y, por tanto, ya no responde a los comandos de menú o teclado para cerrar la aplicación. Esto hace todo menos imposible para el usuario típico descartar la aplicación y finalizar el proceso.
+-   El proceso podría estar huérfano. Por ejemplo, un script podría crear una instancia de Word y, a continuación, salir sin destruir esa instancia. En efecto, Word sigue ejecutándose en el equipo, aunque no haya ninguna interfaz de usuario visible. Dado que no hay ninguna interfaz de usuario, no hay ningún comando de menú o teclado disponible para finalizar el proceso.
+-   Es posible que no sepa qué proceso debe finalizar. Por ejemplo, puede que desee finalizar todos los programas que superen una cantidad de memoria especificada.
+-   Dado Administrador de tareas permite finalizar solo los procesos que creó, es posible que no pueda finalizar un proceso, incluso si es administrador en el equipo.
 
-Los scripts le permiten superar todos estos posibles obstáculos, lo que le proporciona un control administrativo considerable sobre los equipos. Por ejemplo, si sospecha que los usuarios están jugando a juegos prohibidos en su organización, puede escribir fácilmente un script para conectarse a cada equipo, identificar si el juego se está ejecutando y finalizar inmediatamente el proceso.
+Los scripts le permiten superar todos estos posibles obstáculos, lo que le proporciona un control administrativo considerable sobre los equipos. Por ejemplo, si sospecha que los usuarios están haciendo juegos prohibidos en su organización, puede escribir fácilmente un script para conectarse a cada equipo, identificar si el juego se está ejecutando y finalizar inmediatamente el proceso.
 
 **Usar el método Terminate**
 
-Para finalizar un proceso, puede:
+Puede finalizar un proceso mediante:
 
--   Finalizar un proceso que se está ejecutando actualmente. Por ejemplo, puede que necesite terminar un programa de diagnóstico que se ejecuta en un equipo remoto. Si no hay ninguna manera de controlar la aplicación de forma remota, puede terminar simplemente el proceso de esa aplicación.
--   Impedir que un proceso se ejecute en primer lugar. Al supervisar continuamente la creación de procesos en un equipo, puede identificar y finalizar de forma instantánea cualquier proceso en cuanto se inicie. Esto proporciona un método para garantizar que determinadas aplicaciones (como los programas que descargan archivos multimedia de gran tamaño a través de Internet) nunca se ejecutan en ciertos equipos.
+-   Terminación de un proceso que se está ejecutando actualmente. Por ejemplo, es posible que tenga que finalizar un programa de diagnóstico que se ejecuta en un equipo remoto. Si no hay ninguna manera de controlar la aplicación de forma remota, simplemente puede finalizar el proceso de esa aplicación.
+-   Impedir que un proceso se ejecute en primer lugar. Al supervisar continuamente la creación de procesos en un equipo, puede identificar y finalizar al instante cualquier proceso en cuanto se inicie. Esto proporciona un método para garantizar que determinadas aplicaciones (como los programas que descargan archivos multimedia grandes a través de Internet) nunca se ejecuten en determinados equipos.
 
 > [!Note]  
-> Directiva de grupo también puede usarse para restringir los programas que se ejecutan en un equipo. Sin embargo, directiva de grupo solo pueden restringir los programas que se ejecutan mediante el menú Inicio o el explorador de Windows; no tiene ningún efecto en los programas iniciados mediante otros medios, como la línea de comandos. Por el contrario, WMI puede impedir que un proceso se ejecute con independencia de cómo se inicie el proceso.
+> directiva de grupo también se puede usar para restringir los programas que se ejecutan en un equipo. Sin embargo, directiva de grupo puede restringir solo los programas que se ejecutan mediante menú Inicio o Windows Explorer; no tiene ningún efecto en los programas que empezaron a usar otros medios, como la línea de comandos. Por el contrario, WMI puede impedir que un proceso se ejecute independientemente de cómo se inició el proceso.
 
  
 
-**Finalizar un proceso que no es de su propiedad**
+**Terminación de un proceso que no es de su propiedad**
 
-Para finalizar un proceso que no es de su propiedad, habilite el privilegio **SeDebugPrivilege** . En VBScript, puede habilitar este privilegio con las siguientes líneas de código:
+Para finalizar un proceso que no es de su propiedad, habilite el **privilegio SeDebugPrivilege.** En VBScript, puede habilitar este privilegio con las siguientes líneas de código:
 
 
 ```VB
@@ -113,13 +113,13 @@ objLoc.Security_.privileges.addasstring "sedebugprivilege", true
 
 
 
-Para obtener más información sobre cómo habilitar este privilegio en C++, vea [habilitar y deshabilitar privilegios en c++](/windows/desktop/SecAuthZ/enabling-and-disabling-privileges-in-c--).
+Para obtener más información sobre cómo habilitar este privilegio en C++, vea Habilitar y deshabilitar [privilegios en C++.](/windows/desktop/SecAuthZ/enabling-and-disabling-privileges-in-c--)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código de PowerShell [terminar en ejecución en varios servidores](https://Gallery.TechNet.Microsoft.Com/698c2512-2bbd-40ee-b3bf-a9cebdad2faf) de la galería de TechNet finaliza un proceso que se ejecuta en uno o varios equipos.
+El ejemplo de código de PowerShell Terminate [running process on multiple servers](https://Gallery.TechNet.Microsoft.Com/698c2512-2bbd-40ee-b3bf-a9cebdad2faf) on TechNet Gallery (Finalizar el proceso en ejecución en varios servidores en la Galería de TechNet) finaliza un proceso que se ejecuta en uno o varios equipos.
 
-En el siguiente ejemplo de VBScript se finaliza el proceso en el que la aplicación Diagnose.exe se está ejecutando actualmente.
+El siguiente ejemplo de VBScript finaliza el proceso en el que la aplicación Diagnose.exe está ejecutando actualmente.
 
 
 ```VB
@@ -133,7 +133,7 @@ Next
 
 
 
-El siguiente ejemplo de VBScript utiliza un consumidor de eventos temporal para finalizar un proceso en cuanto se inicia.
+En el ejemplo de VBScript siguiente se usa un consumidor de eventos temporal para finalizar un proceso en cuanto se inicia.
 
 
 ```VB
@@ -152,7 +152,7 @@ Loop
 
 
 
-El siguiente ejemplo de código de VBScript se conecta a un equipo remoto y finaliza Notepad.exe en ese equipo.
+En el ejemplo de código de VBScript siguiente se conecta a un equipo remoto y Notepad.exe en ese equipo.
 
 
 ```VB
@@ -175,7 +175,7 @@ Next
 
 
 
-El siguiente código de C++ finaliza el proceso de Notepad.exe en el equipo local. Especifique un identificador de proceso o (identificador de proceso) en el código para finalizar el proceso. Este valor puede encontrarse en la propiedad Handle de la clase de [**\_ proceso Win32**](win32-process.md) (la propiedad clave de la clase). Al especificar un valor para la propiedad Handle, se proporciona una ruta de acceso a la instancia de la clase que desea finalizar. Para obtener más información acerca de cómo conectarse a un equipo remoto, vea [ejemplo: obtener datos WMI desde un equipo remoto](/windows/desktop/WmiSdk/example--getting-wmi-data-from-a-remote-computer).
+El siguiente código de C++ finaliza el Notepad.exe en el equipo local. Especifique un identificador de proceso o (identificador de proceso) en el código para finalizar el proceso. Este valor se puede encontrar en la propiedad handle de la clase Process de [**Win32 \_**](win32-process.md) (la propiedad clave de la clase). Al especificar un valor para la propiedad Handle, se proporciona una ruta de acceso a la instancia de la clase que desea finalizar. Para obtener más información sobre cómo conectarse a un equipo remoto, vea Ejemplo: Obtener datos [WMI de un equipo remoto.](/windows/desktop/WmiSdk/example--getting-wmi-data-from-a-remote-computer)
 
 
 ```C++
@@ -388,12 +388,12 @@ int main(int iArgCnt, char ** argv)
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -405,13 +405,13 @@ int main(int iArgCnt, char ** argv)
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Proceso Win32**](win32-process.md)
+[**Proceso \_ win32**](win32-process.md)
 </dt> <dt>
 
-[Tareas WMI: supervisión del rendimiento](/windows/desktop/WmiSdk/wmi-tasks--performance-monitoring)
+[Tareas wmi: supervisión del rendimiento](/windows/desktop/WmiSdk/wmi-tasks--performance-monitoring)
 </dt> <dt>
 
-[Tareas de WMI: procesos](/windows/desktop/WmiSdk/wmi-tasks--processes)
+[Tareas wmi: procesos](/windows/desktop/WmiSdk/wmi-tasks--processes)
 </dt> </dl>
 
  

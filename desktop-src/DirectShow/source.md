@@ -1,26 +1,26 @@
 ---
-description: Source
+description: Origen
 ms.assetid: 5ed90dc2-419e-40d4-adb4-164166254cd0
-title: Source
+title: Origen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1edd85c773c1fa8b8b0dedfd3d8af34e1ba19c8a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 43555cd7a6d0646912dddf1da287e94f6070c93e154cbf3d27029865ff21daaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537552"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075715"
 ---
-# <a name="source"></a>Source
+# <a name="source"></a>Origen
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El objeto de origen representa un clip de origen en la escala de tiempo. Para crear este objeto, llame al método [**IAMTimeline:: CreateEmptyNode**](iamtimeline-createemptynode.md) .
+El objeto de origen representa un clip de origen en la escala de tiempo. Para crear este objeto, llame al [**método IAMTimeline::CreateEmptyNode.**](iamtimeline-createemptynode.md)
 
-El objeto de origen expone las siguientes interfaces:
+El objeto de origen expone las interfaces siguientes:
 
 -   [**IAMTimelineEffectable**](iamtimelineeffectable.md)
 -   [**IAMTimelineObj**](iamtimelineobj.md)

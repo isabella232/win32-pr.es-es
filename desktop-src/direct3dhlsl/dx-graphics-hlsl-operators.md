@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d7a44fe02983038658247fedaec7122f09306548
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 33b1a6f7dcc1297e415fe2e224ec39c58529f7619c9438586f28613a83ead1ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118091002"
 ---
 # <a name="operators"></a>Operadores
 
@@ -27,9 +27,9 @@ Las expresiones son secuencias de [variables](dx-graphics-hlsl-variable-syntax.m
 | [Operadores aditivos y multiplicativos](#additive-and-multiplicative-operators) | +, -, \*, /, %                                                     |
 | [Operador array](#array-operator)                                               | \[i\]                                                              |
 | [Operadores de asignación](#assignment-operators)                                   | =, +=, -=, \*=, /=, %=                                             |
-| [Conversión binaria](#binary-casts)                                                   | Reglas de C para float e int, reglas de C o intrínsecas HLSL para bool     |
+| [Conversión binaria](#binary-casts)                                                   | Reglas de C para float e int, reglas de C o int o int para valores int para bool     |
 | [Operadores bit a bit](#bitwise-operators)                                         | ~, <<, >>, &, \| , ^, <<=, >>=, &=, \| =, ^= |
-| [Operadores matemáticos booleanos](#boolean-math-operators)                               | & &, , \| \| ?:                                                      |
+| [Operadores matemáticos booleanos](#boolean-math-operators)                               | & &, \| \| , ?:                                                      |
 | [Operador de conversión](#cast-operator)                                                 | (tipo)                                                             |
 | [Operador de coma](#comma-operator)                                               | ,                                                                  |
 | [Operadores de comparación](#comparison-operators)                                   | <, >, ==, !=, <=, >=                                   |
@@ -64,7 +64,7 @@ if ( all(A4 < B4) )
 
 
 
-Los operadores de conversión [**binaria asfloat**](dx-graphics-hlsl-asfloat.md), [**asint**](dx-graphics-hlsl-asint.md), y así sucesivamente funcionan por componente, excepto [**para asdouble**](asdouble.md) cuyas reglas especiales están documentadas.
+Los operadores de conversión binaria [**asfloat**](dx-graphics-hlsl-asfloat.md), [**asint**](dx-graphics-hlsl-asint.md), y así sucesivamente funcionan por componente, excepto [**para asdouble**](asdouble.md) cuyas reglas especiales están documentadas.
 
 Los operadores de selección, como los corchetes de punto, coma y matriz, no funcionan por componente.
 
@@ -238,7 +238,7 @@ i1 /= 3;           // i1 = 1/3 = 0.333, which gets truncated to 0
 
 ## <a name="binary-casts"></a>Conversión binaria
 
-La operación de conversión entre int y float convertirá el valor numérico en las representaciones adecuadas siguiendo las reglas de C para truncar un tipo int. La conversión de un valor de float a int y de vuelta a float dará lugar a una conversión de pérdida en función de la precisión del destino.
+La operación de conversión entre int y float convertirá el valor numérico en las representaciones adecuadas siguiendo las reglas de C para truncar un tipo int. La conversión de un valor de float a int y de vuelta a float dará como resultado una conversión con pérdida en función de la precisión del destino.
 
 Las conversión binarias también se pueden realizar mediante funciones intrínsecas [**(DirectX HLSL),**](dx-graphics-hlsl-intrinsic-functions.md)que reinterpretan la representación de bits de un número en el tipo de datos de destino.
 
@@ -253,10 +253,10 @@ asuint()  // Cast to uint
 
 ## <a name="bitwise-operators"></a>Operadores bit a bit
 
-HLSL admite los siguientes operadores bit a bit, que siguen la misma prioridad que C con respecto a otros operadores. En la tabla siguiente se describen los operadores.
+HLSL admite los siguientes operadores bit a bit, que tienen la misma prioridad que C con respecto a otros operadores. En la tabla siguiente se describen los operadores.
 
 > [!Note]  
-> Los operadores bit a bit [requieren Shader Model 4 \_ 0](dx-graphics-hlsl-sm4.md) con Direct3D 10 y hardware superior.
+> Los operadores bit a bit requieren [Shader Model 4 \_ 0](dx-graphics-hlsl-sm4.md) con Direct3D 10 y hardware superior.
 
  
 
@@ -280,11 +280,11 @@ HLSL admite los siguientes operadores bit a bit, que siguen la misma prioridad q
 
  
 
-Los operadores bit a bit se definen para funcionar solo en tipos de datos int y uint. Si intenta usar operadores bit a bit en tipos de datos float o struct, se producirá un error.
+Los operadores bit a bit se definen para funcionar solo en tipos de datos int y uint. Al intentar usar operadores bit a bit en tipos de datos float o struct, se producirá un error.
 
 ## <a name="boolean-math-operators"></a>Operadores matemáticos booleanos
 
-Los operadores matemáticos booleanos son: &&, \| \| , ?:
+Los operadores matemáticos booleanos son:  &&, \| \| , ?:
 
 
 ```
@@ -306,7 +306,7 @@ Para las expresiones que usan operadores booleanos, el tamaño y el tipo de comp
 
 Una expresión precedida de un nombre de tipo entre paréntesis es una conversión de tipo explícita. Una conversión de tipo convierte la expresión original en el tipo de datos de la conversión. En general, los tipos de datos simples se pueden convertir a los tipos de datos más complejos (con una conversión de promoción), pero solo algunos tipos de datos complejos se pueden convertir en tipos de datos simples (con una conversión de degradación).
 
-Solo la conversión de tipos del lado derecho es legal. Por ejemplo, expresiones como `(int)myFloat = myInt;` no son válidas. Utilice `myFloat = (float)myInt;` en su lugar.
+Solo la conversión de tipos del lado derecho es legal. Por ejemplo, expresiones como `(int)myFloat = myInt;` no son válidas. En su lugar, use `myFloat = (float)myInt;`.
 
 El compilador también realiza la conversión de tipos implícita. Por ejemplo, las dos expresiones siguientes son equivalentes:
 
@@ -353,7 +353,7 @@ float4 x = float4(1,1,1,1);
 
 
 
-En este caso, dejar fuera el tipo float4 del lado derecho probablemente sea un error que el compilador no pueda detectar porque se trata de una instrucción válida.
+En este caso, dejar fuera el tipo float4 del lado derecho es probablemente un error que el compilador no pueda detectar porque se trata de una instrucción válida.
 
 ## <a name="comparison-operators"></a>Operadores de comparación
 
@@ -528,7 +528,7 @@ int j = +i2;       // j = +2
 
 Cuando una expresión contiene más de un operador, la prioridad del operador determina el orden de evaluación. La prioridad del operador para HLSL sigue la misma prioridad que C.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Las llaves ( {,} ) inician y finalizan un bloque de instrucciones. Cuando un bloque de instrucciones usa una sola instrucción, las llaves son opcionales.
 

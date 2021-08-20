@@ -53,7 +53,7 @@ Indica si el administrador de cuentas de seguridad aplicará tamaños de datos p
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.155               |
 | System-Id-Guid    | bf967a61-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -74,10 +74,10 @@ Indica si el administrador de cuentas de seguridad aplicará tamaños de datos p
 |------------------------|-------------------------------------------------------|
 | Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
+| System-Only            | Falso                                                 |
 | Es de un solo valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
@@ -95,10 +95,10 @@ Indica si el administrador de cuentas de seguridad aplicará tamaños de datos p
 |------------------------|-------------------------------------------------------|
 | Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
+| System-Only            | Falso                                                 |
 | Es de un solo valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
@@ -116,10 +116,10 @@ Indica si el administrador de cuentas de seguridad aplicará tamaños de datos p
 |------------------------|-------------------------------------------------------|
 | Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
-| Es de un solo valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
+| System-Only            | Falso                                                 |
+| Es de un solo valor       | Verdadero                                                  |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
@@ -137,10 +137,10 @@ Indica si el administrador de cuentas de seguridad aplicará tamaños de datos p
 |------------------------|-------------------------------------------------------|
 | Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
+| System-Only            | Falso                                                 |
 | Es de un solo valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
@@ -158,10 +158,10 @@ Indica si el administrador de cuentas de seguridad aplicará tamaños de datos p
 |------------------------|-------------------------------------------------------|
 | Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
+| System-Only            | Falso                                                 |
 | Es de un solo valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
@@ -179,10 +179,10 @@ Indica si el administrador de cuentas de seguridad aplicará tamaños de datos p
 |------------------------|-------------------------------------------------------|
 | Id. de vínculo                | \-                                                    |
 | MAPI-Id                | \-                                                    |
-| System-Only            | False                                                 |
+| System-Only            | Falso                                                 |
 | Es de un solo valor       | True                                                  |
-| Está indexado             | False                                                 |
-| En el catálogo global      | False                                                 |
+| Está indexado             | Falso                                                 |
+| En el catálogo global      | Falso                                                 |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |

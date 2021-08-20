@@ -28,7 +28,7 @@ ms.locfileid: "118421452"
 La **clase \_ CIM ProductSupport** representa una asociación entre el acceso de producto y soporte técnico que transmite cómo se obtiene el soporte técnico para el producto. Hay varios tipos de soporte técnico disponibles para un producto; el mismo objeto de soporte técnico puede proporcionar asistencia para varios productos.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,7 +47,7 @@ class CIM_ProductSupport
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ ProductSupport de CIM** tiene estos tipos de miembros:
+La **clase \_ ProductSupport** de CIM tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
@@ -60,7 +60,7 @@ La **clase \_ ProductSupport** de CIM tiene estas propiedades.
 **Producto**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Producto \_ CIM**
+Tipo de datos: **Producto CIM \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura

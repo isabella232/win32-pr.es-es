@@ -1,19 +1,19 @@
 ---
-description: Obtenga información sobre la propiedad System.PropGroup.GPS. No use esta propiedad para obtener o establecer valores. Solo está pensado como un marcador.
+description: Obtenga información sobre la propiedad System.PropGroup.GPS. No use esta propiedad para obtener o establecer valores. Solo está pensado como marcador.
 ms.assetid: bdc3d22c-d055-47f7-86ad-6e050608ad12
 title: System.PropGroup.GPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3544f433ef83d64b65f1ad33a8d732ccf80b8181
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: a8a101c15bc819b1cbe834c387d3e44326eccb047d67569ae43818f29966996b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945105"
 ---
 # <a name="systempropgroupgps"></a>System.PropGroup.GPS
 
-Separador de grupo de propiedades que se usa en las listas de propiedades para separar los archivos de audio de otros tipos. No use esta propiedad para obtener o establecer valores. Solo está pensado como un marcador.
+Separador del grupo de propiedades usado en las listas de propiedades para separar los archivos de audio de otros tipos. No use esta propiedad para obtener o establecer valores. Solo está pensado como marcador.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,7 +30,7 @@ propertyDescription
       type = Null
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores PKEY se definen en Propkey.h.
 

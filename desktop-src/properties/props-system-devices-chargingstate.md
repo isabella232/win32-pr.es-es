@@ -1,19 +1,19 @@
 ---
-description: Estado de la carga de dispositivos.
+description: Estado de carga del dispositivo.
 ms.assetid: 33ef8ecb-29e3-4809-9d56-8d884f9c9ff6
-title: System. Devices. ChargingState
+title: System.Devices.ChargingState
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de306cc44900849d74ba24924c9c4066c0ffe0a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ea4317d5f37959081bd4477353f7fe1b7b9f8c63bc203661f76c8aa940552851
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118054436"
 ---
-# <a name="systemdeviceschargingstate"></a>System. Devices. ChargingState
+# <a name="systemdeviceschargingstate"></a>System.Devices.ChargingState
 
-Estado de la carga de dispositivos.
+Estado de carga del dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -51,9 +51,9 @@ propertyDescription
             defineToken = CHARGINGSTATE_UNKNOWN_STATE
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -68,7 +68,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -80,7 +80,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -98,7 +98,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

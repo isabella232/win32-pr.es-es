@@ -1,9 +1,9 @@
 ---
-title: métodos idcompositionbrightnesseffect SetBlackPointY (Dcomp. h)
+title: Métodos idcompositionbrightnesseffect SetBlackPointY (Dcomp.h)
 description: Establece el valor y del punto negro.
 ms.assetid: 8d0aa548-90ad-4025-2e7a-8e5b07134665
 keywords:
-- Métodos SetBlackPointY DirectComposition
+- Métodos de SetBlackPointY DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 5be06e735a53de9bf56c8ee484cdcff8d568cadf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c1b557dd0aed2e2224d9f692e60bb07479409d80e04f8e9397d6bd4070fd6869
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118088727"
 ---
-# <a name="idcompositionbrightnesseffectsetblackpointy-methods"></a>idcompositionbrightnesseffect:: SetBlackPointY (métodos)
+# <a name="idcompositionbrightnesseffectsetblackpointy-methods"></a>Métodos idcompositionbrightnesseffect::SetBlackPointY
 
 Establece el valor y del punto negro.
 
@@ -40,7 +40,7 @@ Establece el valor y del punto negro.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

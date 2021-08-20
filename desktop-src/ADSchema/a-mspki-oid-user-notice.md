@@ -1,11 +1,11 @@
 ---
-title: atributo MS-PKI-OID-User-Notice
-description: Aviso de usuario para el OID de la Directiva de emisor Enterprise.
+title: Atributo ms-PKI-OID-User-Notice
+description: El aviso de usuario para el OID de directiva de emisor de empresa.
 ms.assetid: b7cfc5fd-99d8-4ddd-bc8f-5e5505eb1f1b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-PKI-OID-User-Notice
-- Atributo mspki-OID-User-Notice atributo AD Schema
+- Esquema de AD del atributo ms-PKI-OID-User-Notice
+- Esquema de AD del atributo msPKI-OID-User-Notice
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 115a40f39dc9d6eb8e033435d2803a658edcaacf
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9af084425b6fb524e127c0d26283fd6426d04fce67d0b8fe42ba7d6349231277
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118013369"
 ---
-# <a name="ms-pki-oid-user-notice-attribute"></a>atributo MS-PKI-OID-User-Notice
+# <a name="ms-pki-oid-user-notice-attribute"></a>Atributo ms-PKI-OID-User-Notice
 
-Aviso de usuario para el OID de la Directiva de emisor Enterprise.
+El aviso de usuario para el OID de directiva de emisor de empresa.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------------------------------------------------------------|
-| CN                | MS-PKI-OID-usuario-aviso                                                                     |
-| Nombre para mostrar de LDAP | Atributo mspki-OID-usuario-aviso                                                                      |
-| Tamaño              | \-                                                                                         |
-| Actualizar privilegio  | Administrador de empresa                                                                   |
-| Frecuencia de actualización  | Siempre que se crea una nueva plantilla o se editan los atributos de las plantillas existentes. |
+| CN                | ms-PKI-OID-User-Notice                                                                     |
+| Ldap-Display-Name | msPKI-OID-User-Notice                                                                      |
+| Size              | \-                                                                                         |
+| Privilegio actualizar  | Administrador de empresa                                                                   |
+| Frecuencia de actualización  | Cada vez que se crea una plantilla o se editan los atributos de una plantilla existente. |
 | Attribute-Id      | 1.2.840.113556.1.4.1673                                                                    |
-| System-ID-GUID    | 04c4da7a-e114-4e69-88de-e293f2d3b395                                                       |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                                |
+| System-Id-Guid    | 04c4da7a-e114-4e69-88de-e293f2d3b395                                                       |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                                |
 
 
 
@@ -54,18 +54,18 @@ Aviso de usuario para el OID de la Directiva de emisor Enterprise.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Clases usadas en        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Aviso de usuario para el OID de la Directiva de emisor Enterprise.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Clases usadas en        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Aviso de usuario para el OID de la Directiva de emisor Enterprise.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Clases usadas en        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Aviso de usuario para el OID de la Directiva de emisor Enterprise.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Clases usadas en        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Aviso de usuario para el OID de la Directiva de emisor Enterprise.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-PKI-Enterprise-OID**](c-mspki-enterprise-oid.md)<br/> |
+| Clases usadas en        | [**ms-PKI-Enterprise-Oid**](c-mspki-enterprise-oid.md)<br/> |
 
 
 

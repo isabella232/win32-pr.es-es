@@ -1,11 +1,11 @@
 ---
-title: Object-Count atributo)
-description: Cuota de archivo de seguimiento para un volumen determinado.
+title: Object-Count atributo
+description: Cuota de archivos de seguimiento para un volumen determinado.
 ms.assetid: 22900e97-d3d3-49cc-a2c3-1f557fe383b1
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Object-Count
-- objectCount esquema de AD de atributos
+- Object-Count esquema de AD del atributo
+- Esquema de AD del atributo objectCount
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf9a93f4f84a9fb01922659bddd6b9fc1982e58e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1cf08f8322932e760b901faf0a81e6cc1f7093446ed3201abf3452e818ea4355
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118012865"
 ---
-# <a name="object-count-attribute"></a>Object-Count atributo)
+# <a name="object-count-attribute"></a>Object-Count atributo
 
-Cuota de archivo de seguimiento para un volumen determinado.
+Cuota de archivos de seguimiento para un volumen determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Object-Count                         |
-| Nombre para mostrar de LDAP | objectCount                          |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | objectCount                          |
+| Size              | 4 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.506               |
-| System-ID-GUID    | 34aaa216-b699-11d0-afee-0000f80367c1 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 34aaa216-b699-11d0-afee-0000f80367c1 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ Cuota de archivo de seguimiento para un volumen determinado.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | True                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Cuota de archivo de seguimiento para un volumen determinado.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | True                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Cuota de archivo de seguimiento para un volumen determinado.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | True                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Cuota de archivo de seguimiento para un volumen determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | True                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Cuota de archivo de seguimiento para un volumen determinado.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | True                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Cuota de archivo de seguimiento para un volumen determinado.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | True                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
 
 
 

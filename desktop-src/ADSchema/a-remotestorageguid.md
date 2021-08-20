@@ -4,7 +4,7 @@ description: Este atributo contiene el GUID de un objeto de almacenamiento remot
 ms.assetid: 9051666f-539c-4339-8652-3ebdab1af301
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD Storage-GUID remoto
+- Esquema de AD Storage-GUID de remote-Storage-GUID
 - Esquema de AD del atributo remoteStorageGUID
 topic_type:
 - apiref
@@ -32,7 +32,7 @@ Este atributo contiene el GUID de un objeto de almacenamiento remoto.
 | CN                | Remote-Storage-GUID                         |
 | Ldap-Display-Name | remoteStorageGUID                           |
 | Size              | \-                                          |
-| Privilegio actualizar  | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.809                      |
 | System-Id-Guid    | 2a39c5b0-8960-11d1-aebc-0000f80367c1        |
@@ -53,7 +53,7 @@ Este atributo contiene el GUID de un objeto de almacenamiento remoto.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                             |
 | MAPI-Id                | \-                                                                             |
@@ -74,7 +74,7 @@ Este atributo contiene el GUID de un objeto de almacenamiento remoto.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                             |
 | MAPI-Id                | \-                                                                             |
@@ -95,7 +95,7 @@ Este atributo contiene el GUID de un objeto de almacenamiento remoto.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                             |
 | MAPI-Id                | \-                                                                             |
@@ -116,7 +116,7 @@ Este atributo contiene el GUID de un objeto de almacenamiento remoto.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                             |
 | MAPI-Id                | \-                                                                             |
@@ -137,7 +137,7 @@ Este atributo contiene el GUID de un objeto de almacenamiento remoto.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                             |
 | MAPI-Id                | \-                                                                             |
@@ -158,7 +158,7 @@ Este atributo contiene el GUID de un objeto de almacenamiento remoto.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                             |
 | MAPI-Id                | \-                                                                             |
