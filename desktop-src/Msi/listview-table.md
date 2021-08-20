@@ -1,19 +1,19 @@
 ---
-description: Las líneas de un control ListView no se tratan como controles individuales, pero forman parte de un control ListView que funciona como un control. La tabla ListView define los valores para todos los controles ListView.
+description: Las líneas de una vista de lista no se tratan como controles individuales, pero forman parte de una vista de lista que funciona como un control . La tabla ListView define los valores de todas las vistas de lista.
 ms.assetid: 0da4eab9-cabc-4bcc-8267-4aa1cd79e78b
-title: Tabla ListView
+title: ListView (tabla)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0e7296db9f71a7c40550fdcaab18d8f0d0f41f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a84ebab6c90486283c3dd8d4731cc0b7f3aff11a5459a0e93496bab83d7c277
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013083"
 ---
-# <a name="listview-table"></a>Tabla ListView
+# <a name="listview-table"></a>ListView (tabla)
 
-Las líneas de un control ListView no se tratan como controles individuales, pero forman parte de un control ListView que funciona como un control. La tabla ListView define los valores para todos los controles ListView.
+Las líneas de una vista de lista no se tratan como controles individuales, pero forman parte de una vista de lista que funciona como un control . La tabla ListView define los valores de todas las vistas de lista.
 
 La tabla ListView tiene las columnas siguientes.
 
@@ -23,9 +23,9 @@ La tabla ListView tiene las columnas siguientes.
 |----------|------------------------------|-----|----------|
 | Propiedad | [Identificador](identifier.md) | Y   | N        |
 | Pedido    | [Entero](integer.md)       | Y   | N        |
-| Value    | [Formatea](formatted.md)   | N   | N        |
-| Texto     | [Formatea](formatted.md)   | N   | Y        |
-| Binary\_ | [Identificador](identifier.md) | N   | Y        |
+| Value    | [Formato](formatted.md)   | N   | N        |
+| Texto     | [Formato](formatted.md)   | N   | Y        |
+| Binario\_ | [Identificador](identifier.md) | N   | Y        |
 
 
 
@@ -38,14 +38,14 @@ La tabla ListView tiene las columnas siguientes.
 <span id="Property"></span><span id="property"></span><span id="PROPERTY"></span>Propiedad
 </dt> <dd>
 
-Propiedad con nombre que se va a asociar a este elemento. Todos los elementos vinculados a la misma propiedad forman parte del mismo ListView.
+Propiedad con nombre que se va a vincular a este elemento. Todos los elementos vinculados a la misma propiedad se convierten en parte de la misma vista de lista.
 
 </dd> <dt>
 
 <span id="Order"></span><span id="order"></span><span id="ORDER"></span>Orden
 </dt> <dd>
 
-Un entero positivo que se usa para determinar el orden de los elementos que aparecen en una única lista de ListView. Los enteros no tienen que ser consecutivos. Si un control ListView se define como ordenado, todos los elementos deben tener un valor de ordenación. Si ListView se define como sin ordenar, se omite esta columna.
+Entero positivo que se usa para determinar el orden de los elementos que aparecen en una única lista de vistas de lista. Los enteros no tienen que ser consecutivos. Si una vista de lista se define como ordenada, todos los elementos deben tener un valor ordering. Si la vista de lista se define como desordenada, se omite esta columna.
 
 </dd> <dt>
 
@@ -56,23 +56,23 @@ Cadena de valor asociada a este elemento. Al seleccionar la línea, se establece
 
 </dd> <dt>
 
-<span id="Text"></span><span id="text"></span><span id="TEXT"></span>Negrita
+<span id="Text"></span><span id="text"></span><span id="TEXT"></span>Texto
 </dt> <dd>
 
-Texto visible y localizable que se va a asignar al elemento. Si falta esta entrada o toda la columna, el valor predeterminado del texto es la entrada correspondiente en Value.
+Texto visible y localizable que se va a asignar al elemento. Si falta esta entrada o toda la columna, el texto tiene como valor predeterminado la entrada correspondiente en Valor.
 
 </dd> <dt>
 
 <span id="Binary_"></span><span id="binary_"></span><span id="BINARY_"></span>Binario\_
 </dt> <dd>
 
-Datos de imagen para el icono. Se trata de una clave externa de la [tabla binaria](binary-table.md).
+Los datos de imagen del icono. Se trata de una clave externa para la [tabla binaria](binary-table.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función [**MsiFormatRecord**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda) da formato al contenido de los campos de texto y de valor cuando se crea el control, por lo que puede contener cualquier expresión que pueda interpretar la función MsiFormatRecord. El formato solo se produce cuando se crea el control y no se actualiza si se modifica una propiedad implicada en la expresión durante la vida del control.
+El contenido de los campos Value y Text tiene el formato de la función [**MsiFormatRecord**](/windows/desktop/api/Msiquery/nf-msiquery-msiformatrecorda) cuando se crea el control, por lo que pueden contener cualquier expresión que la función MsiFormatRecord pueda interpretar. El formato solo se produce cuando se crea el control y no se actualiza si una propiedad implicada en la expresión se modifica durante la vida del control.
 
 ## <a name="validation"></a>Validación
 

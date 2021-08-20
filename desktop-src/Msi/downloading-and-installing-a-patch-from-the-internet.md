@@ -1,23 +1,23 @@
 ---
-description: Microsoft Windows Installer acepta un localizador uniforme de recursos (URL) como origen válido de una revisión.
+description: Microsoft Windows Installer acepta un localizador uniforme de recursos (URL) como origen válido para una revisión.
 ms.assetid: 11a65123-a8bd-46d8-a416-4fc2f2f1e121
-title: Descargar e instalar una revisión desde Internet
+title: Descarga e instalación de una revisión desde Internet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31b5fe4ca51b08759bc178b89bfe71c89418e26d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f85f662279ac929d831bb69acc597358c8eddc509738fc71a43df44ec186120c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118947359"
 ---
-# <a name="downloading-and-installing-a-patch-from-the-internet"></a>Descargar e instalar una revisión desde Internet
+# <a name="downloading-and-installing-a-patch-from-the-internet"></a>Descarga e instalación de una revisión desde Internet
 
-Microsoft Windows Installer acepta un localizador uniforme de recursos (URL) como origen válido de una [revisión](patch-packages.md). Para instalar una revisión ubicada en un servidor Web en https://MyWeb/MyPatch.msp , utilice la siguiente línea de comandos:
+Microsoft Windows Installer acepta un localizador uniforme de recursos (URL) como origen válido para una [revisión](patch-packages.md). Para instalar una revisión ubicada en un servidor web en https://MyWeb/MyPatch.msp , use la siguiente línea de comandos:
 
-**msiexec/p https://MyWeb/MyPatch.msp**
+**msiexec /p https://MyWeb/MyPatch.msp**
 
-Para evitar resultados inesperados, no inicie una revisión haciendo clic en el vínculo de la página web que muestra la dirección URL del archivo de revisión. También puede instalar una revisión mediante un script similar al siguiente:
+Para evitar resultados inesperados, no inicie una revisión haciendo clic en el vínculo de la página web que muestra la dirección URL del archivo de revisión. También puede instalar una revisión mediante un script como el siguiente:
 
 
 ```VB
@@ -34,9 +34,9 @@ set Installer=Nothing
 
 
 
-Tenga en cuenta que, como el objeto de [**instalador**](installer-object.md) no está marcado como [SafeForScripting](safeforscripting.md) en el equipo del usuario, los usuarios deben ajustar la configuración de seguridad del explorador para que el ejemplo funcione correctamente.
+Tenga en cuenta que, dado que el objeto [**Installer**](installer-object.md) no está marcado como [SafeForScripting](safeforscripting.md) en el equipo del usuario, los usuarios deben ajustar la configuración de seguridad del explorador para que el ejemplo funcione correctamente.
 
-Para obtener más información, consulte [instrucciones para crear instalaciones seguras](guidelines-for-authoring-secure-installations.md) y [firmas digitales y Windows Installer](digital-signatures-and-windows-installer.md).
+Para obtener más información, vea [Directrices para crear](guidelines-for-authoring-secure-installations.md) instalaciones seguras y firmas [digitales y Windows Installer](digital-signatures-and-windows-installer.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -51,7 +51,7 @@ Para obtener más información, consulte [instrucciones para crear instalaciones
 [Aplicación de revisiones a aplicaciones personalizadas](patching-customized-applications.md)
 </dt> <dt>
 
-[Descarga de una instalación desde Internet](downloading-an-installation-from-the-internet.md)
+[Descargar una instalación desde Internet](downloading-an-installation-from-the-internet.md)
 </dt> </dl>
 
  

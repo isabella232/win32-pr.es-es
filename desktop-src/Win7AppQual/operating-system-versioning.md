@@ -4,12 +4,12 @@ ms.assetid: 974650d9-504a-4f19-bc71-90fbc92672d9
 title: Control de versiones del sistema operativo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43b2b8c60994eaee7a3becfa9acc03fe2c61fb12
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 707594f7e17b1518f56c0dc889911740f1bbddf50038c1908b7a47d7a0629b43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118994875"
 ---
 # <a name="operating-system-versioning"></a>Control de versiones del sistema operativo
 
@@ -41,11 +41,11 @@ ms.locfileid: "108088043"
 
 ## <a name="description"></a>Descripción
 
-El número de versión interno para Windows 7 y Windows Server 2008 R2 es 6.1. La función GetVersion devolverá ahora este número de versión a las aplicaciones cuando se consulta. Esto es especialmente importante para antivirus, copia de seguridad, aplicaciones de utilidad y protección de copia.
+El número de versión interno para Windows 7 y Windows Server 2008 R2 es 6.1. La función GetVersion devolverá ahora este número de versión a las aplicaciones cuando se le consulta. Esto es especialmente importante para anti antivirus, copia de seguridad, aplicaciones de utilidad y protección de copia.
 
-## <a name="manifestation-of-impact"></a>Demostración de impacto
+## <a name="manifestation-of-impact"></a>Consecuencia del impacto
 
-La expresión de este cambio es específica de la aplicación. Esto significa que cualquier aplicación que comprueba específicamente la versión del sistema operativo recibirá un número de versión mayor, lo que puede dar lugar a una o varias de las situaciones siguientes:
+La mente de este cambio es específica de la aplicación. Esto significa que cualquier aplicación que comprueba específicamente la versión del sistema operativo tendrá un número de versión mayor, lo que puede dar lugar a una o varias de las situaciones siguientes:
 
 -   Es posible que los instaladores de aplicaciones no puedan instalar la aplicación y que las aplicaciones no puedan iniciarse.
 -   Las aplicaciones pueden volverse inestables o bloquearse
@@ -55,9 +55,9 @@ La expresión de este cambio es específica de la aplicación. Esto significa qu
 
 La mayoría de las aplicaciones funcionarán correctamente en Windows 7 y Windows Server 2008 R2 porque la compatibilidad de aplicaciones en Windows 7 y Windows Server 2008 R2 es muy alta. Sin embargo, Windows 7 y Windows Server 2008 R2 incluyen un Vista de compatibilidad para instaladores y aplicaciones que comprueban la versión del sistema operativo.
 
-Para habilitar la vista de compatibilidad, los usuarios pueden hacer clic con el botón derecho en el acceso directo o en el archivo ejecutable y, a continuación, aplicar el Vista de compatibilidad Windows XP SP2 o Windows Vista desde la pestaña Compatibilidad. En la mayoría de los casos, esto debería permitir que la aplicación funcione correctamente sin necesidad de realizar ningún cambio en la aplicación.
+Para habilitar la vista de compatibilidad, los usuarios pueden hacer clic con el botón derecho en el acceso directo o el archivo ejecutable y, a continuación, aplicar Windows XP SP2 o Windows Vista Vista de compatibilidad desde la pestaña Compatibilidad. En la mayoría de los casos, esto debería permitir que la aplicación funcione correctamente sin necesidad de realizar ningún cambio en la aplicación.
 
-Los profesionales de TI también pueden aplicar cualquiera de las correcciones de compatibilidad de VersionLie aplicables, mediante la herramienta Administrador de compatibilidad, que se instala con Application Compatibility Toolkit (ACT). Por ejemplo, si una aplicación no funciona porque está comprobando, pero no buscando, la información de la versión de Windows XP® con Service Pack 2 (SP2), se puede aplicar WinXPSP2VersionLie para devolver la información de número de versión adecuada a la aplicación, independientemente de la versión real del sistema operativo que se ejecute en el equipo. Las correcciones de compatibilidad de VersionLie disponibles son:
+Los profesionales de TI también pueden aplicar cualquiera de las correcciones de compatibilidad de VersionLie aplicables, mediante la herramienta Administrador de compatibilidad, que se instala con application compatibility Toolkit (ACT). Por ejemplo, si una aplicación no funciona porque está buscando, pero no encuentra, el Windows XP® con información de versión de Service Pack 2 (SP2), se puede aplicar WinXPSP2VersionLie para devolver la información de número de versión adecuada a la aplicación, independientemente de la versión real del sistema operativo que se ejecute en el equipo. Las correcciones de compatibilidad de VersionLie disponibles son:
 
 -   Win95VersionLie
 -   Win98VersionLie
@@ -81,7 +81,7 @@ Por lo general, las aplicaciones no deben realizar comprobaciones de versión de
 
 ## <a name="links-to-other-resources"></a>Vínculos a otros recursos
 
--   [Descarga del kit de herramientas de compatibilidad de aplicaciones](/windows-hardware/get-started/adk-install)
+-   [Compatibilidad de aplicaciones Toolkit descarga](/windows-hardware/get-started/adk-install)
 -   [Correcciones de compatibilidad conocidas, modos de compatibilidad y mensajes de AppHelp](/previous-versions/windows/it-pro/windows-7/cc765984(v=ws.10))
 
  

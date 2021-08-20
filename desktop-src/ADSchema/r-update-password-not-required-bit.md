@@ -57,7 +57,7 @@ Derecho de acceso de control extendido que permite a un usuario habilitar o desh
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
 | Localization-Display-ID | 68                                           |
@@ -68,7 +68,7 @@ Derecho de acceso de control extendido que permite a un usuario habilitar o desh
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
 | Localization-Display-ID | 68                                           |
@@ -79,7 +79,7 @@ Derecho de acceso de control extendido que permite a un usuario habilitar o desh
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
 | Localization-Display-ID | 68                                           |
@@ -90,7 +90,7 @@ Derecho de acceso de control extendido que permite a un usuario habilitar o desh
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
 | Localization-Display-ID | 68                                           |

@@ -74,7 +74,7 @@ Esta interfaz no se usa directamente. Lo usa la implementación del sistema de a
 
 ## <a name="ishellfolder"></a>IShellFolder
 
-La interfaz **IShellFolder** se usa para administrar carpetas y se requiere una implementación parcial para que las interfaces de icono y contexto implementadas para un controlador de protocolo se comporten correctamente en la interfaz de usuario de resultados de la búsqueda de escritorio de Windows. La mayor parte de la funcionalidad necesaria se expone a través **del método GetUIObjectOf.** Este método permite que un complemento consulte las interfaces **IExtractIcon** **e IContextMenu.**
+La interfaz **IShellFolder** se usa para administrar carpetas y se requiere una implementación parcial para que las interfaces de icono y contexto implementadas para un controlador de protocolo se comporten correctamente en la interfaz de usuario de resultados de la búsqueda de Windows Desktop. La mayor parte de la funcionalidad necesaria se expone a través **del método GetUIObjectOf.** Este método permite que un complemento consulte las interfaces **IExtractIcon** **e IContextMenu.**
 
 La **interfaz IShellFolder** usa PIDL en lugar de direcciones URL. A diferencia de los requisitos de una extensión de espacio de nombres completa, los complementos pueden usar una estructura IDL simple que contiene solo la dirección URL.
 
@@ -103,7 +103,7 @@ Se deben implementar los métodos siguientes de **IShellFolder.** Tenga en cuent
 
  
 
-**IShellFolder** no se usa para enumerar carpetas. Esto significa que el nombre para mostrar de una carpeta será la dirección URL física. Esto puede cambiar en el futuro.
+**IShellFolder no** se usa para enumerar carpetas. Esto significa que el nombre para mostrar de una carpeta será la dirección URL física. Esto puede cambiar en el futuro.
 
  
 
@@ -123,7 +123,7 @@ La acción predeterminada en el menú contextual es la misma que se hace cuando 
 
 ## <a name="code-sample"></a>Ejemplo de código
 
-El [controlador de protocolo personalizado Interfaz de usuario ejemplo](-search-2x-wds-ph-ui-samplecode.md) muestra una implementación de **IShellFolder** y las interfaces de compatibilidad e incluye compatibilidad para manipular las PIDL.
+El [controlador de protocolo personalizado Interfaz de usuario ejemplo](-search-2x-wds-ph-ui-samplecode.md) muestra una implementación de **IShellFolder** e interfaces compatibles, e incluye compatibilidad para manipular las PIDL.
 
 ## <a name="related-topics"></a>Temas relacionados
 

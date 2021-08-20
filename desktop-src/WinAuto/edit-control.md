@@ -57,7 +57,7 @@ Los controles De edición admiten las [**siguientes propiedades IAccessible:**](
 
 ## <a name="notes"></a>Notas
 
--   Microsoft Active Accessibility no admite la selección del texto incluido en los controles de edición y edición enriquezca porque el texto se expone como una cadena en la propiedad **Value del** objeto.
+-   Microsoft Active Accessibility no admite la selección del texto contenido en los controles de edición y edición enriquezca porque el texto se expone como una cadena en la propiedad **Value del** objeto.
 -   El control de edición enriquecido proporcionado por Riched20.dll (que se usa en editores de texto como WordPad en Windows 98) no envía ningún WinEvents cuando se cambia la posición del cursor de cursor durante la selección de texto. Cuando los usuarios presionan MAYÚS y las teclas de dirección para seleccionar texto, el objeto de cursor no desencadena [**el evento EVENT OBJECT \_ \_ LOCATIONCHANGE**](event-constants.md) WinEvent. Cuando la selección se establece mediante programación a través de mensajes de edición enriquecidos, el objeto de cursor no envía ningún evento para indicar su nueva posición.
 
     Todas las aplicaciones que usan Riched20.dll muestran este problema. Las aplicaciones que usan versiones anteriores del control rich edit envían correctamente eventos en función de la selección.

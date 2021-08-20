@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117875189"
 ---
-# <a name="mf_toponode_decoder-attribute"></a>Atributo MF \_ TOPONODE \_ DECODER
+# <a name="mf_toponode_decoder-attribute"></a>Atributo DECODER \_ MF TOPONODE \_
 
 Especifica si el objeto subyacente de un nodo de topología es un descodificador.
 
@@ -35,7 +35,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
@@ -43,7 +43,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -56,7 +56,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 [**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
-[**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
+[**NODETopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
 </dt> <dt>
 
 [Atributos de nodo de topología](topology-node-attributes.md)

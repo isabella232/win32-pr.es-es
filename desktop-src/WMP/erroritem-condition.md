@@ -1,9 +1,9 @@
 ---
-title: ErrorItem. Condition
-description: La propiedad Condition recupera un valor que indica la condición del error.
+title: ErrorItem.condition
+description: La propiedad condition recupera un valor que indica la condición del error.
 ms.assetid: efb54b48-cfaa-479f-9ee6-ce6724dca24c
 keywords:
-- ErrorItem. Condition Windows Media Player
+- ErrorItem.condition Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c498e7479a7a3e067dea2d8a562800351effd672
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a5f4bfe2c4b2b517b0fd300a0c6465ae9f10147518937822212b621d808f0ded
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996645"
 ---
-# <a name="erroritemcondition"></a>ErrorItem. Condition
+# <a name="erroritemcondition"></a>ErrorItem.condition
 
-La propiedad **Condition** recupera un valor que indica la condición del error.
+La **propiedad** condition recupera un valor que indica la condición del error.
 
 ``` syntax
 player.error.item(
@@ -34,13 +34,13 @@ player.error.item(
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de solo lectura (**Long**) que representa el código de condición.
+Esta propiedad es un number **(long)** de solo lectura que representa el código de condición.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El código de condición es un valor que usa Microsoft para proporcionar información adicional al personal de soporte técnico.
+El código de condición es un valor que microsoft usa para proporcionar información adicional al personal de soporte técnico.
 
-**Windows Media Player 10 Mobile:** Esta propiedad siempre devuelve 0.
+**Reproductor de Windows Media 10 Mobile:** Esta propiedad siempre devuelve 0.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,7 +48,7 @@ El código de condición es un valor que usa Microsoft para proporcionar informa
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/>                                 |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

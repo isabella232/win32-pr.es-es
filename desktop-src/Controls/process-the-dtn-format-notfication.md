@@ -21,7 +21,7 @@ En este tema se muestra cómo procesar una notificación de formato enviada por 
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
 -   Windows Interfaz de usuario programación

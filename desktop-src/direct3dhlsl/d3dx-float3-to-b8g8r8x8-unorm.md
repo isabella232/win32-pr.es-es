@@ -3,7 +3,7 @@ title: D3DX_FLOAT3_to_B8G8R8X8_UNORM función
 description: Empaqueta el XMFLOAT3 especificado en un UINT DXGI \_ FORMAT \_ B8G8R8X8 \_ UNORM.
 ms.assetid: 9492578b-e3c3-4856-b6d2-49f776a21d77
 keywords:
-- D3DX_FLOAT3_to_B8G8R8X8_UNORM function HLSL
+- D3DX_FLOAT3_to_B8G8R8X8_UNORM función HLSL
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118516383"
 ---
-# <a name="d3dx_float3_to_b8g8r8x8_unorm-function"></a>Función \_ D3DX FLOAT3 \_ a \_ B8G8R8X8 \_ UNORM
+# <a name="d3dx_float3_to_b8g8r8x8_unorm-function"></a>Función D3DX \_ FLOAT3 \_ a \_ B8G8R8X8 \_ UNORM
 
 Empaqueta el XMFLOAT3 especificado en un UINT DXGI \_ FORMAT \_ B8G8R8X8 \_ UNORM.
 
@@ -40,7 +40,7 @@ UINT D3DX_FLOAT3_to_B8G8R8X8_UNORM(
 *unpackedInput* 
 </dt> <dd>
 
-Datos del sombreador desempaquetados.
+Datos del sombreador desempaquetar.
 
 </dd> </dl>
 

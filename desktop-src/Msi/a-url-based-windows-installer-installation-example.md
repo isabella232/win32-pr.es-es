@@ -13,9 +13,9 @@ ms.locfileid: "119013333"
 ---
 # <a name="a-url-based-windows-installer-installation-example"></a>Ejemplo de instalación de Windows Installer basado en URL
 
-En este ejemplo se muestra cómo crear una instalación basada en url de un paquete Windows Installer. Para obtener más información sobre cómo proteger las instalaciones y el uso de certificados digitales, vea [Directrices](guidelines-for-authoring-secure-installations.md) para crear instalaciones seguras y firmas [digitales y Windows Installer](digital-signatures-and-windows-installer.md).
+En este ejemplo se muestra cómo crear una instalación basada en url de un paquete Windows Installer. Para obtener más información sobre la protección de instalaciones y el uso de certificados digitales, vea [Directrices](guidelines-for-authoring-secure-installations.md) para crear instalaciones [seguras](digital-signatures-and-windows-installer.md)y firmas digitales y Windows Installer .
 
-Para reproducir este ejemplo, necesita la [utilidad SignTool.](../seccrypto/signtool.md) Para más información, consulte [la Referencia de herramientas de CryptoAPI](../seccrypto/cryptoapi-tools-reference.md) en el Kit de desarrollo de software (SDK) de Microsoft Windows. También necesita utilidades [Msistuff.exe](msistuff-exe.md) y Setup.exe del SDK de Windows para desarrolladores [Windows Installer](platform-sdk-components-for-windows-installer-developers.md). Para obtener más información, vea [Internet Download Bootstrapping](internet-download-bootstrapping.md).
+Para reproducir este ejemplo, necesita la [utilidad SignTool.](../seccrypto/signtool.md) Para obtener más información, consulte [la Referencia de herramientas de CryptoAPI](../seccrypto/cryptoapi-tools-reference.md) en Microsoft Windows Software Development Kit (SDK) de Microsoft. También necesita utilidades [Msistuff.exe](msistuff-exe.md) y Setup.exe del SDK de Windows [para los Windows instaladores de .](platform-sdk-components-for-windows-installer-developers.md) Para obtener más información, vea [Internet Download Bootstrapping](internet-download-bootstrapping.md).
 
 El ejemplo tiene las especificaciones siguientes:
 

@@ -1,31 +1,31 @@
 ---
 description: MEDeviceStreamCreated es un tipo de evento multimedia extendido generado con un evento multimedia MEUnknown por el MFT del dispositivo.
 ms.assetid: 8aaa6908-0f2e-4a73-9362-69f42b74f495
-title: Evento MEDeviceStreamCreated (mftransform. h)
+title: Evento MEDeviceStreamCreated (mftransform.h)
 ms.topic: article
 ms.date: 08/31/2018
-ms.openlocfilehash: 632ebc305473cd596656a21f562be25d53c2bace
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 99e13dae5db9d680909a435d5520f6b07d7d4b6c11782c340b72fcdd0eddc53a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117878072"
 ---
 # <a name="medevicestreamcreated-event"></a>Evento MEDeviceStreamCreated
 
 MEDeviceStreamCreated es un tipo de evento multimedia extendido generado con un evento multimedia MEUnknown por el MFT del dispositivo.
 
-Este tipo de evento multimedia extendido no tiene ninguna carga.  El valor HRESULT adecuado se debe proporcionar a través del método [**IMFMediaEvent:: getStatus**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getstatus) .
+Este tipo de evento multimedia extendido no tiene ninguna carga.  Se debe proporcionar HRESULT adecuado a través del [**método IMFMediaEvent::GetStatus.**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getstatus)
 
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El MFT del dispositivo debe enviar este evento de medios extendidos como parte de la selección del tipo de medio en el flujo de salida de DMFT.  Cuando se invoca SetOutputStreamState en la interfaz IMFDeviceTransform, el DMFT es responsable de señalar el cambio en los Estados de flujo de entrada necesarios con el evento de medios [METransformInputStreamStateChanged](/windows-hardware/drivers/stream/metransforminputstreamstatechanged) . Cuando la canalización ha confirmado el cambio de estado del flujo de entrada con la llamada a SetInputStreamState de DMFT, el DMFT es responsable de completar la configuración de estado interna y de generar el tipo de evento de medio extendido **MEDeviceStreamCreated** .
+El MFT del dispositivo debe enviar este evento multimedia extendido como parte de la selección de tipo de medio en el flujo de salida de DMFT.  Cuando se invoca SetOutputStreamState en la interfaz IMFDeviceTransform, DMFT es responsable de señalar el cambio en los estados de flujo de entrada necesarios con el evento multimedia [METransformInputStreamStateChanged.](/windows-hardware/drivers/stream/metransforminputstreamstatechanged) Cuando la canalización ha reconocido el cambio de estado del flujo de entrada con la llamada a SetInputStreamState de la DMFT, dmft es responsable de completar su configuración de estado interno y generar el tipo de evento multimedia **extendido MEDeviceStreamCreated.**
 
-Si no se genera este tipo de evento de medios extendidos, el administrador de transformaciones de dispositivos no entregará ningún fotograma de entrada a DMFT.
-El tipo de evento multimedia extendido también debe establecerse como un atributo de IMFMediaEvent, el identificador del flujo de salida mediante el atributo **MF_EVENT_MFT_INPUT_STREAM_ID** .
+Si no se genera este tipo de evento multimedia extendido, Device Transform Manager no entregará ningún fotograma de entrada a DMFT.
+El tipo de evento multimedia extendido también debe establecerse como un atributo de LANMEDIAEVENT, el identificador del flujo de salida mediante **el MF_EVENT_MFT_INPUT_STREAM_ID** atributo.
 
 ```cpp
 IMFMediaEvent* pMediaEvent = nullptr;
@@ -58,11 +58,11 @@ return hr;
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>mftransform. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>mftransform.h</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ return hr;
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> <dt>
 
 [Representador de audio de streaming](streaming-audio-renderer.md)

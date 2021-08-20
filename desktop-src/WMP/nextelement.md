@@ -3,7 +3,7 @@ title: NEXTELEMENT
 description: Se trata de un BUTTONELEMENT predefinido con los siguientes valores predeterminados. | NEXTELEMENT
 ms.assetid: 8dcf9031-febc-459f-b781-8ee2f93580c8
 keywords:
-- NEXTELEMENT Windows Media Player
+- NextELEMENT Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f8583e868fa1e4ddbf3d5b347b0a45926b4eb60e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3dc89b62e21702bda6348b050eb40b79c3c70117b1a56e71a7de03d1cd844c33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996075"
 ---
 # <a name="nextelement"></a>NEXTELEMENT
 
-Se trata de un **BUTTONELEMENT** predefinido con los siguientes valores predeterminados.
+Se trata de un **BUTTONELEMENT predefinido** con los siguientes valores predeterminados.
 
 ``` syntax
 onclick="jscript:player.controls.next()"
@@ -31,9 +31,9 @@ cursor="system"
 enabled="wmpenabled:player.controls.next"
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Todas las propiedades de este **BUTTONELEMENT** se pueden invalidar si se especifican explícitamente.
+Todas las propiedades de **este BUTTONELEMENT** se pueden invalidar si se especifican explícitamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Todas las propiedades de este **BUTTONELEMENT** se pueden invalidar si se especi
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -49,7 +49,7 @@ Todas las propiedades de este **BUTTONELEMENT** se pueden invalidar si se especi
 
 <dl> <dt>
 
-[**BUTTONELEMENT (elemento)**](buttonelement-element.md)
+[**Elemento BUTTONELEMENT**](buttonelement-element.md)
 </dt> </dl>
 
  

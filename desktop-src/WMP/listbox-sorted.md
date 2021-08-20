@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. ordenado
-description: El atributo Sorted especifica o recupera un valor que indica si el control de cuadro de lista está ordenado alfabéticamente. Solo se puede establecer en tiempo de diseño.
+title: LISTBOX.sorted
+description: El atributo ordenado especifica o recupera un valor que indica si el control de cuadro de lista está ordenado alfabéticamente. Solo se puede establecer en tiempo de diseño.
 ms.assetid: f07bf9bf-fe01-4d7c-a630-075ea809fd32
 keywords:
-- LISTBOX. Media Player ventanas ordenadas
+- LISTBOX.sorted Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc0f6ca663d3bd5b934208061b0d7cd7b19a267d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aa099c6164478a30ae87fc5415327a2c8643935ef70cd8a1d236b9a2217082b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996435"
 ---
-# <a name="listboxsorted"></a>LISTBOX. ordenado
+# <a name="listboxsorted"></a>LISTBOX.sorted
 
-El atributo **Sorted** especifica o recupera un valor que indica si el control de cuadro de lista está ordenado alfabéticamente. Solo se puede establecer en tiempo de diseño.
+El **atributo ordenado** especifica o recupera un valor que indica si el control de cuadro de lista está ordenado alfabéticamente. Solo se puede establecer en tiempo de diseño.
 
 ``` syntax
         elementID.sorted
@@ -29,13 +29,13 @@ El atributo **Sorted** especifica o recupera un valor que indica si el control d
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un booleano de lectura **y escritura.**
 
 
 
 | Value | Descripción                                                 |
 |-------|-------------------------------------------------------------|
-| true  | El control de cuadro de lista se ordena alfabéticamente.              |
+| true  | El control de cuadro de lista está ordenado alfabéticamente.              |
 | false | Predeterminada. El control de cuadro de lista no está ordenado alfabéticamente. |
 
 
@@ -48,7 +48,7 @@ Este atributo es un **valor booleano** de lectura/escritura.
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------|
-| Versión<br/> | Windows Media Player para Windows XP o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 

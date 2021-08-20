@@ -42,11 +42,11 @@ Las siguientes Windows installer pueden realizar cambios en el equipo del usuari
 [**MsiRemovePatches**](/windows/desktop/api/Msi/nf-msi-msiremovepatchesa)  
 </dl>
 
-Hay una excepción si el instalador de Windows encuentra un paquete que pertenece a una instalación de varios paquetes que contiene una [acción ForceReboot](forcereboot-action.md) o [ScheduleReboot.](schedulereboot-action.md) En este caso, Windows instalador no instala solo ese paquete. Se pueden instalar otros paquetes que pertenezcan a la instalación de varios paquetes, que no contengan una acción ForceReboot o ScheduleReboot.
+Hay una excepción si el instalador de Windows encuentra un paquete que pertenece a una instalación de varios paquetes que contiene una acción [ForceReboot](forcereboot-action.md) o [ScheduleReboot.](schedulereboot-action.md) En este caso, Windows instalador no instala solo ese paquete. Se pueden instalar otros paquetes que pertenezcan a la instalación de varios paquetes, que no contengan una acción ForceReboot o ScheduleReboot.
 
 **[Windows Installer 4.0](not-supported-in-windows-installer-4-0.md)y versiones anteriores:[****](t-gly.md) No se admite el procesamiento de transacciones de varios paquetes Windows instalación del instalador. Estas versiones del instalador de Windows no pueden revertir la instalación de varios paquetes como una única transacción.
 
-**Windows Server 2008 R2 con el [Servicios de Escritorio remoto](../termserv/terminal-services-portal.md) habilitado:** No se admite. Se produce un error en una instalación de varios paquetes mediante la tabla [MsiEmbeddedChainer](msiembeddedchainer-table.md) [si el rol](../termserv/terminal-services-portal.md) Servicios de Escritorio remoto está habilitado.
+**Windows Server 2008 R2 con el [rol Servicios de Escritorio remoto](../termserv/terminal-services-portal.md) habilitado:** No se admite. Se produce un error en una instalación de varios paquetes mediante la tabla [MsiEmbeddedChainer](msiembeddedchainer-table.md) [si el rol](../termserv/terminal-services-portal.md) Servicios de Escritorio remoto está habilitado.
 
  
 

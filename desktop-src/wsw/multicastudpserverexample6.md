@@ -1,29 +1,29 @@
 ---
 title: MulticastUdpServerExample6
-description: En este ejemplo se muestra un servidor UDP que realiza escuchas en una dirección de multidifusión y responde a las solicitudes enviadas a esa dirección. En este ejemplo se usa IPv6.
+description: En este ejemplo se muestra un servidor UDP que escucha en una dirección de multidifusión y responde a las solicitudes enviadas a esa dirección. En este ejemplo se usa IPv6.
 ms.assetid: 9e2a254c-dbfc-4b73-a1a5-6a1db1ac5921
 keywords:
 - MulticastUdpServerExample6 Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25faf8a622af36e925d766a4754f38e0984a3830
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5b39bce9a80bc230e1bf4ec6aa32281369dc53add173b9da099c71622c4972b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105656263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963094"
 ---
 # <a name="multicastudpserverexample6"></a>MulticastUdpServerExample6
 
-En este ejemplo se muestra un servidor UDP que realiza escuchas en una dirección de multidifusión y responde a las solicitudes enviadas a esa dirección. En este ejemplo se usa IPv6.
+En este ejemplo se muestra un servidor UDP que escucha en una dirección de multidifusión y responde a las solicitudes enviadas a esa dirección. En este ejemplo se usa IPv6.
 
--   [MulticastUdpServer6. cpp](#multicastudpserver6cpp)
--   [PurchaseOrder. wsdl](#purchaseorderwsdl)
+-   [MulticastUdpServer6.cpp](#multicastudpserver6cpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="multicastudpserver6cpp"></a>MulticastUdpServer6. cpp
+## <a name="multicastudpserver6cpp"></a>MulticastUdpServer6.cpp
 
 
 ```C++
@@ -478,7 +478,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. wsdl
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -622,9 +622,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

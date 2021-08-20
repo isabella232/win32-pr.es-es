@@ -1,6 +1,6 @@
 ---
 title: Porting Lighting and Materials Functions
-description: Las funciones openGL para iluminación y materiales difieren considerablemente de las funciones GL de IRIS. A diferencia de IRIS GL, OpenGL tiene funciones independientes para configurar luces, modelos de luz y materiales.
+description: Las funciones de OpenGL para iluminación y materiales difieren considerablemente de las funciones GL de IRIS. A diferencia de IRIS GL, OpenGL tiene funciones independientes para configurar luces, modelos de luz y materiales.
 ms.assetid: de57d041-1ea1-46d0-b584-009608625ea5
 keywords:
 - Porte de IRIS GL, iluminación
@@ -10,7 +10,7 @@ keywords:
 - Porte de IRIS GL, materiales
 - porting from IRIS GL,materials
 - porting to OpenGL from IRIS GL,materials
-- Porte openGL desde IRIS GL, materiales
+- Porte de OpenGL desde IRIS GL, materiales
 - iluminación
 - Materiales
 ms.topic: article
@@ -24,7 +24,7 @@ ms.locfileid: "118933035"
 ---
 # <a name="porting-lighting-and-materials-functions"></a>Porting Lighting and Materials Functions
 
-Las funciones openGL para iluminación y materiales difieren considerablemente de las funciones GL de IRIS. A diferencia de IRIS GL, OpenGL tiene funciones independientes para configurar luces, modelos de luz y materiales.
+Las funciones de OpenGL para iluminación y materiales difieren considerablemente de las funciones GL de IRIS. A diferencia de IRIS GL, OpenGL tiene funciones independientes para configurar luces, modelos de luz y materiales.
 
 Tenga en cuenta los siguientes puntos al portear funciones de iluminación y materiales:
 
@@ -61,14 +61,14 @@ En la tabla siguiente se enumeran varios parámetros de material de IRIS GL y su
 | Ambiente      | GL \_ AMBIENT                                       | (0.2, 0.2, 0.2, 1.0) | Color ambiente.                                                                                |
 | Difuso      | GL \_ DIFUSO                                       | (0.8, 0.8, 0.8, 1.0) | Color difuso.                                                                                |
 | Especular     | GL \_ SPECULAR                                      | (0.0, 0.0, 0.0, 1.0) | Color emisivo.                                                                               |
-| Brillo    | GL \_ ESPYINESSGL \_ AMBIENTE Y \_ \_ DIFUSO<br/> | 0,0                  | Exponente especular. Equivalente a llamar **a glMaterial dos** veces con los mismos valores.<br/> |
+| Brillo    | AMBIENTE \_ Y \_ DIFUSO \_ GL GL \_<br/> | 0,0                  | Exponente especular. Equivalente a llamar **a glMaterial dos** veces con los mismos valores.<br/> |
 | COLORINDEXES | ÍNDICES \_ DE COLOR \_ GL                                |                      | Índices de color para iluminación ambiental, difusa y especular.                                    |
 
 
 
  
 
-Cuando el primer parámetro de **Imdef** es DEFMODEL, la traducción openGL equivalente es la función [**glLightModel**](gllightmodel-functions.md). La excepción es cuando el parámetro que sigue a DEFMODEL es ATTENUATION: la función OpenGL equivalente [**es glLight.**](gllight-functions.md)
+Cuando el primer parámetro de **Imdef** es DEFMODEL, la traducción de OpenGL equivalente es la función [**glLightModel**](gllightmodel-functions.md). La excepción es cuando el parámetro que sigue a DEFMODEL es ATTENUATION: la función OpenGL equivalente [**es glLight.**](gllight-functions.md)
 
 En la tabla siguiente se enumeran los parámetros del modelo de iluminación equivalentes para IRIS GL y OpenGL.
 
@@ -96,9 +96,9 @@ En la tabla siguiente se enumeran los parámetros de iluminación equivalentes p
 | Ambiente               | GL \_ AMBIENTGL \_ DIFUSO<br/> GL \_ SPECULAR<br/>                                         | (0.0, 0.0, 0.0, 1.0) (1.0, 1.0, 1.0, 1.0)<br/> (1.0, 1.0, 1.0, 1.0)<br/> | Intensidad ambiente. Intensidad difusa.<br/> Intensidad especular.<br/> |
 | LCOLOR                | No equivalente.                                                                                    |                                                                                     |                                                                                |
 | POSITION              | POSICIÓN \_ DE GL                                                                                      | (0.0, 0.0, 1.0, 0.0)                                                                | Posición de la luz.                                                             |
-| SPOTDIRECTION         | DIRECCIÓN DE \_ SPOT \_ DE GL                                                                               | (0, 0, 1)                                                                           | Dirección de los focos destacados.                                                        |
-| Foco             | LÍMITE \_ DE SPOT DE GL SPOT \_ EXPONENTGL \_ \_<br/>                                                     | 0180<br/>                                                                     | Distribución de intensidad. Ángulo de propagación máximo de la fuente de luz.<br/>        |
-| DEFMODEL, ATENUACIÓN | ATENUACIÓN LINEAL DE GL \_ CONSTANT \_ \_ \_ ATTENUATIONGL<br/> ATENUACIÓN \_ CUADRÁTICA DE GL \_<br/> | (1, 0, 0)                                                                           | Factores de atenuación.                                                           |
+| SPOTDIRECTION         | DIRECCIÓN DE \_ SPOT \_ DE GL                                                                               | (0, 0, 1)                                                                           | Dirección de los destacados.                                                        |
+| Foco             | GL \_ SPOT \_ EXPONENTGL \_ SPOT \_ CUTOFF<br/>                                                     | 0180<br/>                                                                     | Distribución de intensidad. Ángulo de propagación máximo de la fuente de luz.<br/>        |
+| DEFMODEL, ATENUACIÓN | ATENUACIÓN \_ LINEAL DE LA CONSTANTE \_ \_ GL \_<br/> ATENUACIÓN \_ CUADRÁTICA DE GL \_<br/> | (1, 0, 0)                                                                           | Factores de atenuación.                                                           |
 
 
 

@@ -1,21 +1,21 @@
 ---
-description: La tabla IniFile contiene la información. ini que la aplicación necesita para establecer en un archivo. ini.
+description: La tabla IniFile contiene la .ini que la aplicación debe establecer en un .ini archivo.
 ms.assetid: fdb1a627-da6b-4da1-87a7-7f1c94d3836e
 title: Tabla IniFile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d63ae37f7c8ed5c50b9b425b0462b445f7acb5b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4cd12c02fa0123ac9e1a763b4e725681e6c6b1d51a331a1efea9916b5ac4cbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118946572"
 ---
 # <a name="inifile-table"></a>Tabla IniFile
 
-La tabla IniFile contiene la información. ini que la aplicación necesita para establecer en un archivo. ini.
+La tabla IniFile contiene la .ini que la aplicación debe establecer en un .ini archivo.
 
-La tabla IniFile tiene las columnas siguientes.
+La tabla IniFile tiene las siguientes columnas.
 
 
 
@@ -24,9 +24,9 @@ La tabla IniFile tiene las columnas siguientes.
 | IniFile     | [Identificador](identifier.md) | Y   | N        |
 | FileName    | [FileName](text.md)         | N   | N        |
 | DirProperty | [Identificador](identifier.md) | N   | Y        |
-| Sección     | [Formatea](formatted.md)   | N   | N        |
-| Clave         | [Formatea](formatted.md)   | N   | N        |
-| Value       | [Formatea](formatted.md)   | N   | N        |
+| Sección     | [Formato](formatted.md)   | N   | N        |
+| Clave         | [Formato](formatted.md)   | N   | N        |
+| Value       | [Formato](formatted.md)   | N   | N        |
 | Acción      | [Entero](integer.md)       | N   | N        |
 | Componente\_ | [Identificador](identifier.md) | N   | N        |
 
@@ -41,46 +41,46 @@ La tabla IniFile tiene las columnas siguientes.
 <span id="IniFile"></span><span id="inifile"></span><span id="INIFILE"></span>IniFile
 </dt> <dd>
 
-La clave de esta tabla.
+Clave de esta tabla.
 
 </dd> <dt>
 
-<span id="FileName"></span><span id="filename"></span><span id="FILENAME"></span>Extensión
+<span id="FileName"></span><span id="filename"></span><span id="FILENAME"></span>Nombre
 </dt> <dd>
 
-Nombre traducible del archivo. ini en el que se va a escribir la información.
+Nombre localizable del archivo .ini en el que se va a escribir la información.
 
 </dd> <dt>
 
 <span id="DirProperty"></span><span id="dirproperty"></span><span id="DIRPROPERTY"></span>DirProperty
 </dt> <dd>
 
-Nombre de una propiedad que tiene un valor que se resuelve en la ruta de acceso completa de la carpeta que contiene el archivo. ini. La propiedad puede ser el nombre de un directorio en la [tabla del directorio](directory-table.md), una propiedad establecida por la [tabla AppSearch](appsearch-table.md)o cualquier otra propiedad que represente una ruta de acceso completa. Si este campo se deja en blanco, se crea el archivo. ini en la carpeta que tiene la ruta de acceso completa especificada por la propiedad [**WindowsFolder**](windowsfolder.md) .
+Nombre de una propiedad que tiene un valor que se resuelve en la ruta de acceso completa de la carpeta que contiene .ini archivo. La propiedad puede ser el nombre de un directorio de la tabla [Directory](directory-table.md), una propiedad establecida por la tabla [AppSearch](appsearch-table.md)o cualquier otra propiedad que represente una ruta de acceso completa. Si este campo se deja en blanco, el .ini se crea en la carpeta con la ruta de acceso completa especificada por la [**propiedad WindowsFolder.**](windowsfolder.md)
 
 </dd> <dt>
 
-<span id="Section"></span><span id="section"></span><span id="SECTION"></span>Transversal
+<span id="Section"></span><span id="section"></span><span id="SECTION"></span>Sección
 </dt> <dd>
 
-La sección del archivo. ini localizable.
+Sección archivo .ini localizable.
 
 </dd> <dt>
 
 <span id="Key"></span><span id="key"></span><span id="KEY"></span>Clave
 </dt> <dd>
 
-La clave del archivo. ini traducible dentro de la sección.
+Clave de archivo .ini localizable dentro de la sección .
 
 </dd> <dt>
 
 <span id="Value"></span><span id="value"></span><span id="VALUE"></span>Valor
 </dt> <dd>
 
-Valor traducible que se va a escribir.
+Valor localizable que se va a escribir.
 
 </dd> <dt>
 
-<span id="Action"></span><span id="action"></span><span id="ACTION"></span>Actuar
+<span id="Action"></span><span id="action"></span><span id="ACTION"></span>Acción
 </dt> <dd>
 
 Tipo de modificación que se va a realizar.
@@ -89,8 +89,8 @@ Tipo de modificación que se va a realizar.
 
 | Constante                         | Hexadecimal | Decimal | Modificación                                                                     |
 |----------------------------------|-------------|---------|----------------------------------------------------------------------------------|
-| **msidbIniFileActionAddLine**    | 0x000       | 0       | Crea o actualiza una entrada. ini.                                                 |
-| **msidbIniFileActionCreateLine** | 0x001       | 1       | Crea una entrada. ini solo si la entrada no existe.                   |
+| **msidbIniFileActionAddLine**    | 0x000       | 0       | Crea o actualiza una .ini entrada.                                                 |
+| **msidbIniFileActionCreateLine** | 0x001       | 1       | Crea una .ini solo si la entrada aún no existe.                   |
 | **msidbIniFileActionAddTag**     | 0x003       | 3       | Crea una nueva entrada o anexa un nuevo valor separado por comas a una entrada existente. |
 
 
@@ -99,18 +99,18 @@ Tipo de modificación que se va a realizar.
 
 </dd> <dt>
 
-<span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Pone\_
+<span id="Component_"></span><span id="component_"></span><span id="COMPONENT_"></span>Componente\_
 </dt> <dd>
 
-Clave externa en la primera columna de la [tabla de componentes](component-table.md) que hace referencia al componente que controla la instalación del valor. ini.
+Clave externa en la primera columna de la [tabla Component](component-table.md) que hace referencia al componente que controla la instalación del .ini valor.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La información del archivo. ini se escribe cuando se ha seleccionado el componente correspondiente para instalarlo como local o ejecutar desde el origen.
+La .ini se escribe cuando se ha seleccionado el componente correspondiente para instalarse como local o ejecutarse desde el origen.
 
-Se hace referencia a esta tabla cuando se ejecuta la acción [WriteIniValues](writeinivalues-action.md) o la [acción RemoveIniValues](removeinivalues-action.md) .
+Se hace referencia a esta tabla cuando se [ejecuta la acción WriteIniValues](writeinivalues-action.md) o [removeIniValues.](removeinivalues-action.md)
 
 ## <a name="validation"></a>Validación
 

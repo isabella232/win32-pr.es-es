@@ -1,9 +1,9 @@
 ---
-title: omitir atributo
-description: El atributo \ ignore \ designa que no se transmite un puntero contenido en una estructura o Unión y el objeto indicado por el puntero. El atributo \ ignore \ está restringido a los miembros de puntero de estructuras o uniones.
+title: ignore attribute
+description: El atributo \ ignore\ designa que no se transmite un puntero contenido en una estructura o unión y el objeto indicado por el puntero. El atributo \ ignore\ está restringido a los miembros de puntero de estructuras o uniones.
 ms.assetid: 9c2fc71a-4fac-4a59-95f5-2121067b326f
 keywords:
-- omitir el atributo MIDL
+- ignore attribute MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e82b9525dd6de316087db8fdfd55181118d3adc6
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8c6b7a1e70804bc3c9c277f3d46ac6a8ad20fc0f98b370f93fe9fd09b0b1bb99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103904539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013863"
 ---
-# <a name="ignore-attribute"></a>omitir atributo
+# <a name="ignore-attribute"></a>ignore attribute
 
-El atributo **\[ Ignore \]** designa que no se transmite un puntero contenido en una estructura o Unión y el objeto indicado por el puntero. El atributo **\[ Ignore \]** está restringido a los miembros de puntero de estructuras o uniones.
+El **\[ atributo ignore \]** designa que no se transmite un puntero contenido en una estructura o unión y el objeto indicado por el puntero. El **\[ atributo ignore \]** está restringido a los miembros de puntero de estructuras o uniones.
 
 ``` syntax
 [ignore] pointer-member-type pointer-name;
@@ -31,25 +31,25 @@ El atributo **\[ Ignore \]** designa que no se transmite un puntero contenido en
 
 <dl> <dt>
 
-*tipo de miembro de puntero* 
+*pointer-member-type* 
 </dt> <dd>
 
-Especifica el tipo del miembro de puntero de la estructura o Unión.
+Especifica el tipo del miembro de puntero de la estructura o unión.
 
 </dd> <dt>
 
-*puntero: nombre* 
+*pointer-name* 
 </dt> <dd>
 
-Especifica el nombre del miembro de puntero que se va a omitir durante el cálculo de referencias.
+Especifica el nombre del miembro de puntero que se omitirá durante la serialización.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de un miembro de estructura con el atributo **\[ Ignore \]** no está definido en el destino. Un **\[** parámetro [**in**](in.md) **\]** no está definido en el equipo remoto. Un **\[** parámetro [**out**](out-idl.md) **\]** no está definido en el equipo local.
+El valor de un miembro de estructura con el **\[ atributo ignore \]** no está definido en el destino. No **\[** [**se**](in.md) **\]** define un parámetro in en el equipo remoto. No **\[** [**se**](out-idl.md) **\]** define un parámetro out en el equipo local.
 
-El atributo **\[ Ignore \]** permite evitar la transmisión de datos. Esto resulta útil en situaciones como una lista de vínculos dobles. En el ejemplo siguiente se incluye una lista de vínculos dobles que presenta los alias de datos:
+El **\[ atributo ignore \]** permite evitar la transmisión de datos. Esto es útil en situaciones como una lista de doble vinculación. En el ejemplo siguiente se incluye una lista de doble vinculación que presenta el alias de datos:
 
 ``` syntax
 /* IDL file */ 
@@ -77,9 +77,9 @@ p->previous = q->next = NULL;
 remote_op(p);
 ```
 
-El alias se produce en el ejemplo anterior porque el mismo área de memoria está disponible en dos punteros diferentes en la función **p** y **p->siguiente->anterior**.
+El alias se produce en el ejemplo anterior porque la misma área de memoria está disponible en dos punteros diferentes en la función **p** y **p->** siguiente >anterior.
 
-Tenga en cuenta que no se puede usar **\[ Ignore \]** como atributo de tipo.
+Tenga en cuenta **\[ que ignore \]** no se puede usar como atributo de tipo.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -96,30 +96,30 @@ typedef struct _DBL_LINK_NODE_TYPE
 
 <dl> <dt>
 
-[Atributos array y Sized-Pointer](array-and-sized-pointer-attributes.md)
+[Atributos de matriz Sized-Pointer matriz](array-and-sized-pointer-attributes.md)
 </dt> <dt>
 
-[**matrices**](arrays-1.md)
+[**Matrices**](arrays-1.md)
 </dt> <dt>
 
 [Matrices y punteros](/windows/desktop/Rpc/arrays-and-pointers)
 </dt> <dt>
 
-[**de**](in.md)
+[**En**](in.md)
 </dt> <dt>
 
-[**enuncia**](out-idl.md)
+[**out**](out-idl.md)
 </dt> <dt>
 
-[**ptr**](ptr.md)
+[**Ptr**](ptr.md)
 </dt> <dt>
 
 [**ref**](ref.md)
 </dt> <dt>
 
-[**espeficarse**](unique.md)
+[**Único**](unique.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

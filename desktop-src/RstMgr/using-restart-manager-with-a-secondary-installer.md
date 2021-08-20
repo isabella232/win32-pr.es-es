@@ -1,37 +1,37 @@
 ---
-title: Uso del administrador de reinicio con un instalador secundario
-description: En el procedimiento siguiente se describe el uso del administrador de reinicio con instaladores principales y secundarios.
+title: Usar el Administrador de reinicio con un instalador secundario
+description: En el procedimiento siguiente se describe el uso del Administrador de reinicio con instaladores principales y secundarios.
 ms.assetid: aa55ab09-206b-49ed-8cb4-e311c1ed2d9d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bb44105d9f3d391bb2ed793aca8a6da2c330b30
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8aefb1f9658752677e7850e939fcb6a3c4c6047c5efc2dc0ceb06ec0f51900ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119009993"
 ---
-# <a name="using-restart-manager-with-a-secondary-installer"></a>Uso del administrador de reinicio con un instalador secundario
+# <a name="using-restart-manager-with-a-secondary-installer"></a>Usar el Administrador de reinicio con un instalador secundario
 
-En el procedimiento siguiente se describe el uso del administrador de reinicio con instaladores principales y secundarios.
+En el procedimiento siguiente se describe el uso del Administrador de reinicio con instaladores principales y secundarios.
 
 Cuando se usan instaladores principales y secundarios, el instalador principal controla la interfaz de usuario.
 
-**Para usar el administrador de reinicio con instaladores principales y secundarios**
+**Para usar el Administrador de reinicio con instaladores principales y secundarios**
 
-1.  El instalador principal llama a la función [**RmStartSession**](/windows/desktop/api/RestartManager/nf-restartmanager-rmstartsession) para iniciar la sesión del administrador de reinicio y obtener un identificador de sesión y una clave.
-2.  El instalador principal se inicia o se pone en contacto con el instalador secundario y lo proporciona con la clave de sesión obtenida en el paso anterior.
-3.  El instalador secundario llama a la función [**RmJoinSession**](/windows/desktop/api/RestartManager/nf-restartmanager-rmjoinsession) con la clave de sesión para unirse a la sesión del administrador de reinicio. Un instalador secundario puede unirse a una sesión iniciada por el instalador principal solo cuando ambos instaladores se ejecutan en el mismo contexto de usuario.
-4.  Los instaladores principales y secundarios llaman a la función [**RmRegisterResources**](/windows/desktop/api/RestartManager/nf-restartmanager-rmregisterresources) para registrar los recursos. El administrador de reinicio solo puede usar recursos registrados para determinar qué aplicaciones y servicios deben cerrarse y reiniciarse. Todos los recursos que pueden verse afectados por la instalación deben registrarse con la sesión. Los recursos se pueden identificar mediante el nombre de archivo, el nombre corto de servicio o una estructura de [**\_ \_ proceso único de RM**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_unique_process) .
-5.  El instalador principal llama a la función [**RmGetList**](/windows/desktop/api/RestartManager/nf-restartmanager-rmgetlist) para obtener una matriz de estructuras de [**información del \_ proceso \_ de RM**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_process_info) que enumera todas las aplicaciones y servicios que deben cerrarse y reiniciarse.
+1.  El instalador principal llama a la [**función RmStartSession**](/windows/desktop/api/RestartManager/nf-restartmanager-rmstartsession) para iniciar la sesión de Restart Manager y obtener un identificador de sesión y una clave.
+2.  El instalador principal inicia o se pone en contacto con el instalador secundario y le proporciona la clave de sesión obtenida en el paso anterior.
+3.  El instalador secundario llama a la [**función RmJoinSession**](/windows/desktop/api/RestartManager/nf-restartmanager-rmjoinsession) con la clave de sesión para unirse a la sesión de Restart Manager. Un instalador secundario puede unirse a una sesión iniciada por el instalador principal solo cuando ambos instaladores se ejecutan en el mismo contexto de usuario.
+4.  Los instaladores principal y secundario llaman a [**la función RmRegisterResources**](/windows/desktop/api/RestartManager/nf-restartmanager-rmregisterresources) para registrar los recursos. El Administrador de reinicio solo puede usar recursos registrados para determinar qué aplicaciones y servicios deben apagarse y reiniciarse. Todos los recursos que pueden verse afectados por la instalación deben registrarse en la sesión. Los recursos se pueden identificar por nombre de archivo, nombre corto del servicio o una [**estructura \_ RM UNIQUE \_ PROCESS.**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_unique_process)
+5.  El instalador principal llama a la [**función RmGetList**](/windows/desktop/api/RestartManager/nf-restartmanager-rmgetlist) para obtener una matriz de estructuras [**DE RM PROCESS \_ \_ INFO**](/windows/desktop/api/RestartManager/ns-restartmanager-rm_process_info) que enumera todas las aplicaciones y servicios que se deben apagar y reiniciar.
 
-    Si el valor del parámetro *lpdwRebootReason* devuelto por la función [**RmGetList**](/windows/desktop/api/RestartManager/nf-restartmanager-rmgetlist) es distinto de cero, el administrador de reinicio no puede liberar un recurso registrado por el cierre de una aplicación o servicio. En este caso, es necesario apagar y reiniciar el sistema para continuar con la instalación. El instalador principal debe solicitar al usuario una acción, detener programas o servicios, o programar un cierre del sistema y reiniciarlo.
+    Si el valor del parámetro *lpdwRebootReason* devuelto por la función [**RmGetList**](/windows/desktop/api/RestartManager/nf-restartmanager-rmgetlist) es distinto de cero, el Administrador de reinicio no puede liberar un recurso registrado al apagar una aplicación o un servicio. En este caso, se requiere un apagado y reinicio del sistema para continuar con la instalación. El instalador principal debe solicitar al usuario una acción, detener programas o servicios, o programar un apagado y reinicio del sistema.
 
-    Si el valor del parámetro *lpdwRebootReason* devuelto por la función [**RmGetList**](/windows/desktop/api/RestartManager/nf-restartmanager-rmgetlist) es cero, el instalador debe llamar a la función [**RmShutdown**](/windows/desktop/api/RestartManager/nf-restartmanager-rmshutdown) . Esto cierra los servicios y aplicaciones que usan recursos registrados. Los instaladores principal y secundario deben realizar las modificaciones del sistema necesarias para completar la instalación. Por último, el instalador principal debe llamar a la función [**RmRestart**](/windows/desktop/api/RestartManager/nf-restartmanager-rmrestart) para que el administrador de reinicio pueda reiniciar las aplicaciones que se han cerrado y que se han registrado para un reinicio.
+    Si el valor del parámetro *lpdwRebootReason* devuelto por la función [**RmGetList**](/windows/desktop/api/RestartManager/nf-restartmanager-rmgetlist) es cero, el instalador debe llamar a la [**función RmShutdown.**](/windows/desktop/api/RestartManager/nf-restartmanager-rmshutdown) Esto cierra los servicios y las aplicaciones que usan recursos registrados. A continuación, los instaladores principales y secundarios deben realizar las modificaciones del sistema necesarias para completar la instalación. Por último, el instalador principal debe llamar a la función [**RmRestart**](/windows/desktop/api/RestartManager/nf-restartmanager-rmrestart) para que el Administrador de reinicio pueda reiniciar las aplicaciones que ha apagado y que se han registrado para un reinicio.
 
-6.  El instalador principal y el secundario llaman a la función [**RmEndSession**](/windows/desktop/api/RestartManager/nf-restartmanager-rmendsession) para cerrar la sesión del administrador de reinicio.
+6.  El instalador principal y secundario llaman a [**la función RmEndSession**](/windows/desktop/api/RestartManager/nf-restartmanager-rmendsession) para cerrar la sesión de Restart Manager.
 
-En el fragmento de código siguiente se muestra un ejemplo de un instalador principal que inicia y usa una sesión del administrador de reinicio. El ejemplo requiere Windows 7 o Windows Server 2008 R2. En Windows Vista o Windows Server 2008, la aplicación calculadora se cierra pero no se reinicia. En este ejemplo se muestra cómo un instalador principal puede usar el administrador de reinicio para apagar y reiniciar un proceso. En el ejemplo se da por supuesto que la calculadora ya se está ejecutando antes de iniciar la sesión del administrador de reinicio.
+El fragmento de código siguiente muestra un ejemplo de un instalador principal que inicia y usa una sesión de Restart Manager. El ejemplo requiere Windows 7 o Windows Server 2008 R2. En Windows Vista o Windows Server 2008, la aplicación Calculadora se cierra, pero no se reinicia. En este ejemplo se muestra cómo un instalador principal puede usar el Administrador de reinicio para apagar y reiniciar un proceso. En el ejemplo se da por supuesto que la calculadora ya se está ejecutando antes de iniciar la sesión del Administrador de reinicio.
 
 
 ```C++
@@ -238,7 +238,7 @@ int _cdecl wmain()
 
 
 
-El siguiente fragmento de código muestra un ejemplo de la Unión de un instalador secundario a la sesión del administrador de reinicio existente. El ejemplo requiere Windows Vista o Windows Server 2008. El instalador secundario obtiene la clave de sesión del instalador principal y la usa para unirse a la sesión.
+El fragmento de código siguiente muestra un ejemplo de cómo unir un instalador secundario a la sesión existente de Restart Manager. El ejemplo requiere Windows Vista o Windows Server 2008. El instalador secundario obtiene la clave de sesión del instalador principal y la usa para unirse a la sesión.
 
 
 ```C++
@@ -321,9 +321,9 @@ int _cdecl wmain()
 
 
 
- 
+ 
 
- 
+ 
 
 
 

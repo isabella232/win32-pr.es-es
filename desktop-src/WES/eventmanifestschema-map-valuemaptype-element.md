@@ -1,9 +1,9 @@
 ---
-title: Elemento Map (ValueMapType)
-description: Define la asignación entre un valor entero y un valor de cadena. | Elemento Map (ValueMapType)
+title: elemento map (ValueMapType)
+description: Define la asignación entre un valor entero y un valor de cadena. | elemento map (ValueMapType)
 ms.assetid: 9fdcb3c5-f847-40a2-9d58-4dad964cd8ca
 keywords:
-- elemento de mapa EventLog
+- elemento map EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e1cfd94df2717c0da7256ee1fadcafbc809fa61f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c8eaae47708a6857e93a8901d90c47cf8def2ccb91bef31859656d030910cc47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997875"
 ---
-# <a name="map-valuemaptype-element"></a>Elemento Map (ValueMapType)
+# <a name="map-valuemaptype-element"></a>elemento map (ValueMapType)
 
 Define la asignación entre un valor entero y un valor de cadena.
 
@@ -30,7 +30,7 @@ Define la asignación entre un valor entero y un valor de cadena.
  />
 ```
 
-El elemento de **mapa** se define mediante el tipo complejo de [**ValueMapType**](eventmanifestschema-valuemaptype-complextype.md) .
+El tipo complejo **ValueMapType** define el [**elemento map.**](eventmanifestschema-valuemaptype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento de **mapa** se define mediante el tipo complejo de [**ValueMapType**
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

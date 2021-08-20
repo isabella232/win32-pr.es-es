@@ -1,10 +1,10 @@
 ---
 title: Método INapSystemHealthValidationRequest GetStringCorrelationId (NapSystemHealthValidator.h)
-description: Lo usan los validadores de estado del sistema (SHV), que deben registrar esta información.
+description: Lo usan los validadores de estado del sistema (SHV) que deben registrar esta información.
 ms.assetid: c3e45857-463b-4048-a178-ec26a318b63b
 keywords:
 - Método NAP de GetStringCorrelationId
-- Método NAP de GetStringCorrelationId , interfaz INapSystemHealthValidationRequest
+- Método NAP de GetStringCorrelationId, interfaz INapSystemHealthValidationRequest
 - INapSystemHealthValidationRequest interface NAP , GetStringCorrelationId method
 topic_type:
 - apiref
@@ -50,7 +50,7 @@ HRESULT GetStringCorrelationId(
 *correlationId* \[ out\]
 </dt> <dd>
 
-Puntero a un puntero a un [**stringCorrelationId único**](nap-type-constants.md) para el intercambio soH.
+Puntero a un puntero a un [**StringCorrelationId único**](nap-type-constants.md) para el intercambio soH.
 
 </dd> </dl>
 
@@ -74,7 +74,7 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
@@ -84,7 +84,7 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -14,7 +14,7 @@ ms.locfileid: "118932289"
 ---
 # <a name="c-rpc"></a>C (RPC)
 
-[A](a-glos.md) [B](b-glos.md) C [D](d-glos.md) [E](e-glos.md) [F](f-glos.md) G H [I](i-glos.md) J K L [M](l-glos.md) [N](m-glos.md) [](n-glos.md) [O](o-glos.md) [P P](p-glos.md) [Q](q.md) [R](r-glos.md) [S](s-glos.md) [T](t-glos.md) [U](u-glos.md) [V](v-glos.md) [W](w-glos.md) X Y Z
+[A](a-glos.md) [B](b-glos.md) C [D](d-glos.md) [E](e-glos.md) [F](f-glos.md) G H [I](i-glos.md) J K [L](l-glos.md) [M N](m-glos.md) [](n-glos.md) [O](o-glos.md) [P](p-glos.md) [Q](q.md) [R](r-glos.md) [S](s-glos.md) [T](t-glos.md) [U](u-glos.md) [V](v-glos.md) [W](w-glos.md) X Y Z
 
 <dl> <dt>
 
@@ -28,7 +28,7 @@ Proveedor de servicios de nombres para el entorno de computación distribuida de
 <span id="_rpc_client_stub_glos"></span><span id="_RPC_CLIENT_STUB_GLOS"></span>**código auxiliar de cliente**
 </dt> <dd>
 
-Código fuente del lenguaje C generado por MIDL. Contiene todas las funciones necesarias para que la aplicación cliente realice llamadas a procedimientos remotos mediante el modelo de una llamada de función tradicional en una aplicación independiente. El código auxiliar de cliente es responsable de serializar los parámetros de entrada y desmarque de los parámetros de salida. Consulte también código [*auxiliar de servidor*](s-glos.md), código auxiliar de [*proxy.*](p-glos.md)
+Código fuente del lenguaje C generado por MIDL. Contiene todas las funciones necesarias para que la aplicación cliente realice llamadas a procedimientos remotos mediante el modelo de una llamada de función tradicional en una aplicación independiente. El código auxiliar del cliente es responsable de serializar los parámetros de entrada y desmarque los parámetros de salida. Consulte también código [*auxiliar de*](s-glos.md)servidor , código auxiliar [*de proxy.*](p-glos.md)
 
 </dd> <dt>
 
@@ -49,7 +49,7 @@ Protocolo de comunicaciones o transporte que proporciona un circuito virtual a t
 <span id="_rpc_connectionless_glos"></span><span id="_RPC_CONNECTIONLESS_GLOS"></span>**sin conexión**
 </dt> <dd>
 
-Vea [*datagrama*](d-glos.md).
+Consulte [*datagrama*](d-glos.md).
 
 </dd> <dt>
 

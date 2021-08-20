@@ -53,7 +53,7 @@ Este atributo contiene una lista de los id. de categoría de componente que un o
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -74,7 +74,7 @@ Este atributo contiene una lista de los id. de categoría de componente que un o
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -137,7 +137,7 @@ Este atributo contiene una lista de los id. de categoría de componente que un o
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -158,7 +158,7 @@ Este atributo contiene una lista de los id. de categoría de componente que un o
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |

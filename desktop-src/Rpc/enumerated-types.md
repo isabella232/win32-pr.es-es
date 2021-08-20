@@ -1,6 +1,6 @@
 ---
 title: Tipos enumerados (RPC)
-description: La declaración de enumeración no se traduce en instrucciones \ define como lo están algunos compiladores de DCE, pero se reproduce como una declaración de enumeración en lenguaje C en el archivo de encabezado generado.
+description: La declaración de enumeración no se traduce en \ define instrucciones como lo están algunos compiladores de DCE, pero se reproduce como una declaración de enumeración en lenguaje C en el archivo de encabezado generado.
 ms.assetid: dc38d3a2-cc6a-467f-a497-2a7abec07573
 ms.topic: article
 ms.date: 05/31/2018

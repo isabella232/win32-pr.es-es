@@ -1,44 +1,44 @@
 ---
-title: Atributo maestro VML
-description: Atributo maestro VML
+title: Atributo maestro de VML
+description: Atributo maestro de VML
 ms.assetid: ec661dc6-8e1c-47a3-ad3a-e1ee7e64c840
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e0d6c34fe49c107ed7ee1b4c1fb90d31bb07f17a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 4d126b9d02144bbc8831d7be9e73a3e5896c2ceccca71cfcbc8161d5ccc8112f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999115"
 ---
-# <a name="vml-master-attribute"></a>Atributo maestro VML
+# <a name="vml-master-attribute"></a>Atributo maestro de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Determina si un elemento **TipoForma** es un elemento principal. Lectura/escritura **VgTriState**.
+Determina si un **elemento ShapeType** es un elemento maestro. Lectura/escritura **DvTriState**.
 
 **Se aplica a**
 
-[TipoForma](msdn-online-vml-shapetype-element.md)
+[ShapeType](msdn-online-vml-shapetype-element.md)
 
 **Sintaxis de etiquetas**
 
-<v: *Element* o:Master = " *expresión* " >
+<v: *element* o:master=" *expression* ">
 
 **Comentarios:**
 
-Si es **true**, la forma **TipoForma** la representa el motor de representación. El valor predeterminado es **False**.
+Si **es True**, el motor de representación representa la forma **ShapeType.** El valor predeterminado es **False**.
 
-*Microsoft Office atributo Extensions*
+*Microsoft Office Atributo Extensions*
 
 **Ejemplo**
 
-El elemento **TipoForma** es una forma maestra.
+El **elemento ShapeType** es una forma maestra.
 
 
 ```HTML
@@ -52,6 +52,6 @@ El elemento **TipoForma** es una forma maestra.
 
 
 
- 
+ 
 
- 
+ 

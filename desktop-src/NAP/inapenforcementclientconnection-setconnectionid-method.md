@@ -1,11 +1,11 @@
 ---
-title: Método INapEnforcementClientConnection SetConnectionId (NapEnforcementClient. h)
-description: Se utiliza para establecer el identificador único de la conexión y el cliente de cumplimiento debe establecerla en cuanto se cree la conexión.
+title: Método INapEnforcementClientConnection SetConnectionId (NapEnforcementClient.h)
+description: Se usa para establecer el identificador único de la conexión y el cliente de cumplimiento debe establecerlo en cuanto se crea la conexión.
 ms.assetid: 69d1a891-bc86-4c8a-b614-ebcdaa4a9057
 keywords:
-- Método SetConnectionId NAP
-- Método SetConnectionId NAP, interfaz INapEnforcementClientConnection
-- Interfaz INapEnforcementClientConnection NAP, método SetConnectionId
+- Método NAP de SetConnectionId
+- Método NAP de SetConnectionId, interfaz INapEnforcementClientConnection
+- INapEnforcementClientConnection interface NAP , SetConnectionId method
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa9749be304170ec7706b637429f577e77411ac5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1fdde438be329627645c7615453ff198e9c4f01f540684c27e8e3a5699e48499
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939656"
 ---
-# <a name="inapenforcementclientconnectionsetconnectionid-method"></a>INapEnforcementClientConnection:: SetConnectionId (método)
+# <a name="inapenforcementclientconnectionsetconnectionid-method"></a>INapEnforcementClientConnection::SetConnectionId (método)
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-El método **INapEnforcementClientConnection:: SetConnectionId** se usa para establecer el identificador único de la conexión y el cliente de cumplimiento debe establecerlo en cuanto se cree la conexión.
+El **método INapEnforcementClientConnection::SetConnectionId** se usa para establecer el identificador único de la conexión y el cliente de cumplimiento debe establecerlo en cuanto se crea la conexión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,10 +47,10 @@ HRESULT SetConnectionId(
 
 <dl> <dt>
 
-*connectionId* \[ de\]
+*connectionId* \[ En\]
 </dt> <dd>
 
-Un puntero a un [**ConnectionId**](nap-datatypes.md) que identifica de forma única una conexión.
+Puntero a un [**ConnectionId**](nap-datatypes.md) que identifica de forma única una conexión.
 
 </dd> </dl>
 
@@ -62,15 +62,15 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 | Código devuelto                                                                                     | Descripción                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> </dl>           | Operación realizada correctamente.<br/>                                    |
+| <dl> <dt>**S \_ Ok (Aceptar)**</dt> </dl>           | Operación realizada correctamente.<br/>                                    |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Error de permisos, acceso denegado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Límite de recursos del sistema, no se pudo realizar la operación.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | El límite de recursos del sistema no pudo realizar la operación.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este ConnectionID se usa principalmente con fines de registro.
 
@@ -80,10 +80,10 @@ Este ConnectionID se usa principalmente con fines de registro.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                      |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                |
-| Encabezado<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
+| Header<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

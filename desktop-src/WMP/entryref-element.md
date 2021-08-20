@@ -1,9 +1,9 @@
 ---
-title: Elemento ENTRYREF
-description: El elemento ENTRYREF apunta a los elementos de entrada de un metarchivo externo.
+title: ELEMENTO ENTRYREF
+description: El elemento ENTRYREF apunta a los elementos ENTRY de un metarchivo externo.
 ms.assetid: ba39db39-fa90-455b-b278-ca866ce0b69c
 keywords:
-- Elemento ENTRYREF Media Player Windows
+- Elemento ENTRYREF Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 520a4262baf17badb136b55e7b2e216bf89d7edf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 61fa3403fc56c6a02f97330b3c2f62d1c3e3c723f50672520ea42fb4a2018705
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996675"
 ---
-# <a name="entryref-element"></a>Elemento ENTRYREF
+# <a name="entryref-element"></a>ELEMENTO ENTRYREF
 
-El elemento **ENTRYREF** apunta a los elementos de **entrada** de un metarchivo externo.
+El **elemento ENTRYREF** apunta a los **elementos ENTRY** de un metarchivo externo.
 
 ``` syntax
 <ENTRYREF
@@ -32,9 +32,9 @@ El elemento **ENTRYREF** apunta a los elementos de **entrada** de un metarchivo 
 
 ## <a name="attributes"></a>Atributos
 
-**Href** (obligatorio)
+**HREF** (obligatorio)
 
-Dirección URL de un metarchivo al que se hace referencia.
+Dirección URL a un metarchivo al que se hace referencia.
 
 **CLIENTBIND**
 
@@ -46,7 +46,7 @@ Este atributo ya no se admite.
 
 | Hierarchy       | Elementos                       |
 |-----------------|--------------------------------|
-| Elementos primarios | **ASX**, **evento**, **repetición** |
+| Elementos primarios | **ASX**, **EVENT**, **REPEAT** |
 | Elementos secundarios  | Ninguno                           |
 
 
@@ -55,11 +55,11 @@ Este atributo ya no se admite.
 
 ## <a name="remarks"></a>Observaciones
 
-Este elemento apunta al contenido de un metarchivo externo. Windows Media Player procesa los elementos de **entrada** del metarchivo al que se hace referencia como si estuvieran incluidos en el metarchivo principal situado en la posición del elemento **ENTRYREF** . Sin embargo, omite cualquier elemento de **entrada** del metarchivo al que se hace referencia que tenga el atributo **SKIPIFREF** establecido en sí.
+Este elemento apunta al contenido de un metarchivo externo. Reproductor de Windows Media procesa los elementos **ENTRY** del metarchivo al que se hace referencia como si estuvieran incluidos en el metarchivo principal en la posición del **elemento ENTRYREF.** Sin embargo, omite los elementos **ENTRY** del metarchivo al que se hace referencia que tienen el atributo **SKIPIFREF** establecido en YES.
 
-Windows Media Player 7,0, 7,1 y Windows Media Player para Windows XP omiten los elementos **ENTRYREF** del metarchivo al que se hace referencia. Por lo tanto, los metaarchivos solo se pueden anidar un nivel en profundidad al usar estas versiones del reproductor. Windows Media Player también omite el elemento **ASX** en el archivo al que se hace referencia junto con sus atributos. Windows Media Player 9 series o posterior admiten el anidamiento de metaarchivos hasta cinco niveles de profundidad.
+Reproductor de Windows Media 7.0, 7.1 y Reproductor de Windows Media para Windows XP omiten los elementos **ENTRYREF** del metarchivo al que se hace referencia. Por lo tanto, los metarchivos solo se pueden anidar un nivel de profundidad cuando se usan estas versiones del reproductor. Reproductor de Windows Media omite también el elemento **ASX** del archivo al que se hace referencia junto con sus atributos. Reproductor de Windows Media serie 9 o posterior admite el anidamiento de metarchivos de hasta cinco niveles de profundidad.
 
-La dirección URL especificada en el atributo **href** se convierte en la dirección URL base de las direcciones URL relativas del metarchivo externo. Esta dirección URL se usa cuando se está reproduciendo una entrada del metarchivo externo y el usuario la agrega a la biblioteca.
+La dirección URL especificada en el **atributo HREF** se convierte en la dirección URL base de las direcciones URL relativas del metarchivo externo. Esta dirección URL se usa cuando se reproduce una entrada del metarchivo externo y el usuario la agrega a la biblioteca.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -80,7 +80,7 @@ La dirección URL especificada en el atributo **href** se convierte en la direcc
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
@@ -88,10 +88,10 @@ La dirección URL especificada en el atributo **href** se convierte en la direcc
 
 <dl> <dt>
 
-[**Referencia de elementos de metarchivo de Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referencia de elementos de metarchivo multimedia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referencia de metarchivos de Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referencia de metarchivo multimedia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: clase VistaColtyp'
-title: Clase VistaColtyp (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: VistaColtyp (clase)'
+title: Clase VistaColtyp (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: VistaColtyp class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Vista.VistaColtyp
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistacoltyp(v=EXCHG.10)
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cffe000bc50b1185dc09da44d823edd999954194
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6146282421cb786ae7e460fa77069ba826f422f862fc44fb90be69c2b7403583
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978155"
 ---
-# <a name="vistacoltyp-class"></a>Clase VistaColtyp
+# <a name="vistacoltyp-class"></a>VistaColtyp (clase)
 
-Tipos de columna que se han agregado a la versión de vista de ESENT.
+Tipos de columna que se han agregado a la versión vista de ESENT.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. vista. VistaColtyp  
+  Microsoft.Isam.Esent.Interop.Vista.VistaColtyp  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -66,4 +66,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de VistaColtyp](./vistacoltyp-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

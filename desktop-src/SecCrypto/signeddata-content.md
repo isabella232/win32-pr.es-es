@@ -1,7 +1,7 @@
 ---
-description: Establece o recupera los datos que se van a firmar. Esta es la propiedad predeterminada.
+description: Establece o recupera los datos que se firmarán. Esta es la propiedad predeterminada.
 ms.assetid: 554ca500-403d-4c2a-868e-9e635d0b358e
-title: Propiedad SignedData. Content
+title: Propiedad SignedData.Content
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 3c2ac97eeee317b4ec170338f666e5b5d9277861
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b9f4439f7fc7c2a71887fcb78991cf54a814a8682f991545ec33301e2fb9bc95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671645"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118899239"
 ---
-# <a name="signeddatacontent-property"></a>Propiedad SignedData. Content
+# <a name="signeddatacontent-property"></a>Propiedad SignedData.Content
 
-\[La propiedad de **contenido** está disponible para su uso en los sistemas operativos especificados en la sección requisitos. En su lugar, use la [**clase SignedCms**](/dotnet/api/system.security.cryptography.pkcs.signedcms?view=dotnet-plat-ext-3.1&preserve-view=true) en el espacio de nombres [**System. Security. Cryptography. Pkcs**](/dotnet/api/system.security.cryptography.pkcs?view=dotnet-plat-ext-3.1&preserve-view=true) .\]
+\[La **propiedad Content** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En su lugar, use [**la clase SignedCms**](/dotnet/api/system.security.cryptography.pkcs.signedcms?view=dotnet-plat-ext-3.1&preserve-view=true) en el espacio de nombres [**System.Security.Cryptography.Pkcs.**](/dotnet/api/system.security.cryptography.pkcs?view=dotnet-plat-ext-3.1&preserve-view=true)\]
 
-La propiedad de **contenido** establece o recupera los datos que se van a firmar. Esta es la propiedad predeterminada.
+La **propiedad Content** establece o recupera los datos que se firmarán. Esta es la propiedad predeterminada.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -39,22 +39,22 @@ SignedData.Content As String
 
 Datos que van a firmar.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad se debe inicializar antes de que se llame al método [**Sign**](signeddata-sign.md) . Cuando el valor de esta propiedad se restablece, directa o indirectamente, se restablece el [*Estado*](../secgloss/s-gly.md) completo del objeto y se pierde cualquier firma asociada al objeto antes de que se cambiara la propiedad.
+Esta propiedad se debe inicializar antes de llamar [**al método Sign.**](signeddata-sign.md) Cuando se restablece el valor de esta propiedad, [](../secgloss/s-gly.md) directa o indirectamente, se restablece todo el estado del objeto y se pierde cualquier firma asociada al objeto antes de cambiar la propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

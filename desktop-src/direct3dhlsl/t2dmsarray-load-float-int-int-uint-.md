@@ -84,7 +84,7 @@ Escriba:
 
 El tipo de valor devuelto coincide con el tipo de la declaración del [**objeto Texture2DMSArray.**](sm5-object-texture2dmsarray.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

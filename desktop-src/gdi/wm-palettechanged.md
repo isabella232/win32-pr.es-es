@@ -1,21 +1,21 @@
 ---
-description: El mensaje de PALETTECHANGED de WM \_ se envía a todas las ventanas de nivel superior y superpuestas después de que la ventana con el foco de teclado haya realizado su paleta lógica, lo que cambia la paleta del sistema.
+description: El mensaje PALETTECHANGED de WM se envía a todas las ventanas de nivel superior y superpuestas después de que la ventana con el foco del teclado haya realizado su paleta lógica, lo que cambia la paleta \_ del sistema.
 ms.assetid: 2eed568b-1a16-47d2-ae26-3f1dec35e893
-title: Mensaje de WM_PALETTECHANGED (Winuser. h)
+title: WM_PALETTECHANGED mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5a02bffe5206c7550cce2ec62203f3dbea2d246
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fb706452e357f2e322b1f4e2618f0fd59c5c4d9a6606c07d18fae7c3b346323e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103813016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118977925"
 ---
-# <a name="wm_palettechanged-message"></a>Mensaje de PALETTECHANGED de WM \_
+# <a name="wm_palettechanged-message"></a>Mensaje \_ PALETTECHANGED de WM
 
-El mensaje de **\_ PALETTECHANGED de WM** se envía a todas las ventanas de nivel superior y superpuestas después de que la ventana con el foco de teclado haya realizado su paleta lógica, lo que cambia la paleta del sistema. Este mensaje habilita una ventana que usa una paleta de colores, pero no tiene el foco de teclado para obtener su paleta lógica y actualizar su área cliente.
+El **mensaje \_ PALETTECHANGED de WM** se envía a todas las ventanas de nivel superior y superpuestas después de que la ventana con el foco del teclado haya realizado su paleta lógica, lo que cambia la paleta del sistema. Este mensaje habilita una ventana que usa una paleta de colores, pero que no tiene el foco del teclado para realizar su paleta lógica y actualizar su área cliente.
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -36,7 +36,7 @@ LRESULT CALLBACK WindowProc(
 *wParam* 
 </dt> <dd>
 
-Identificador de la ventana que provocó el cambio de la paleta del sistema.
+Identificador de la ventana que hizo que la paleta del sistema cambiara.
 
 </dd> <dt>
 
@@ -47,11 +47,11 @@ Este parámetro no se utiliza.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este mensaje debe enviarse a todas las ventanas superpuestas y de nivel superior, incluida la que cambió la paleta del sistema. Si alguna de las ventanas secundarias usa una paleta de colores, este mensaje también se debe pasar a ellos.
+Este mensaje debe enviarse a todas las ventanas de nivel superior y superpuestas, incluida la que cambió la paleta del sistema. Si alguna ventana secundaria usa una paleta de colores, este mensaje también se debe pasar a ellas.
 
-Para evitar la creación de un bucle infinito, una ventana que reciba este mensaje no debe obtener su paleta, a menos que determine que *wParam* no contiene su propio identificador de ventana.
+Para evitar la creación de un bucle infinito, una ventana que recibe este mensaje no debe realizar su paleta, a menos que determine que *wParam* no contiene su propio identificador de ventana.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ Para evitar la creación de un bucle infinito, una ventana que reciba este mensa
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -75,10 +75,10 @@ Para evitar la creación de un bucle infinito, una ventana que reciba este mensa
 [Mensajes de color](color-messages.md)
 </dt> <dt>
 
-[**PALETTEISCHANGING de WM \_**](wm-paletteischanging.md)
+[**WM \_ PALETTEISCHANGING**](wm-paletteischanging.md)
 </dt> <dt>
 
-[**QUERYNEWPALETTE de WM \_**](wm-querynewpalette.md)
+[**WM \_ QUERYNEWPALETTE**](wm-querynewpalette.md)
 </dt> </dl>
 
  

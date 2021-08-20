@@ -1,47 +1,47 @@
 ---
-title: Puntos de portabilidad
-description: OpenGL no tiene ningún comando para dibujar un único punto. De lo contrario, las funciones de punto de portabilidad son sencillas. En la tabla siguiente se enumeran las funciones de la contabilidad de IRIS para los puntos de dibujo y sus funciones de OpenGL equivalentes.
+title: Porte de puntos
+description: OpenGL no tiene ningún comando para dibujar un único punto. De lo contrario, las funciones de punto de porte son sencillas. En la tabla siguiente se enumeran las funciones GL de IRIS para los puntos de dibujo y sus funciones OpenGL equivalentes.
 ms.assetid: 348c7767-321a-43c6-bc88-7dc00f426f50
 keywords:
-- Migración de la contabilidad de IRIS, puntos
-- trasladar de IRIS GL, puntos
-- trasladar a OpenGL desde IRIS GL, puntos
-- Exportación de OpenGL desde IRIS GL, puntos
-- dibujar funciones, puntos
+- Porte de IRIS GL, puntos
+- porte desde IRIS GL, puntos
+- porte a OpenGL desde IRIS GL, puntos
+- Porte de OpenGL desde IRIS GL, puntos
+- funciones de dibujo, puntos
 - puntos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 322413cd6a11a589884bce2628e229984c7936ed
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 18ef24ad81942681b3d70a303a22e89e9573aa609d3f08f52a92583ae88e0e9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012073"
 ---
-# <a name="porting-points"></a>Puntos de portabilidad
+# <a name="porting-points"></a>Porte de puntos
 
-OpenGL no tiene ningún comando para dibujar un único punto. De lo contrario, las funciones de punto de portabilidad son sencillas. En la tabla siguiente se enumeran las funciones de la contabilidad de IRIS para los puntos de dibujo y sus funciones de OpenGL equivalentes.
+OpenGL no tiene ningún comando para dibujar un único punto. De lo contrario, las funciones de punto de porte son sencillas. En la tabla siguiente se enumeran las funciones GL de IRIS para los puntos de dibujo y sus funciones OpenGL equivalentes.
 
 
 
-| Función de GL de IRIS           | Función OpenGL                                                   | Significado                                                                                                                                              |
+| Función GL de IRIS           | Función OpenGL                                                   | Significado                                                                                                                                              |
 |----------------------------|-------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **PNT**                    |                                                                   | Dibuja un solo punto.                                                                                                                                |
-| **bgnpoint**, **extremo** | [**glBegin**](glbegin.md) ( \_ puntos de contabilidad), [ **glEnd**](glend.md) | Interpreta los vértices como puntos.                                                                                                                       |
+| **pnt**                    |                                                                   | Dibuja un único punto.                                                                                                                                |
+| **bgnpoint**, **endpoint** | [**glBegin**](glbegin.md) ( GL \_ POINTS ), [ **glEnd**](glend.md) | Interpreta los vértices como puntos.                                                                                                                       |
 | **pntsize**                | [**glPointSize**](glpointsize.md)                                | Establece el tamaño del punto en píxeles.                                                                                                                           |
-| **pntsmooth**              | [**glEnable**](glenable.md) (punto de contabilidad \_ \_ suave)                | Activa el suavizado de contorno de punto. (Para obtener más información sobre el suavizado de contorno de punto, vea [portar funciones de suavizado de contorno](porting-antialiasing-functions.md)). |
+| **pntsmooth**              | [**glEnable**](glenable.md) ( GL \_ POINT \_ SMOOTH )                | Activa el suavizado de contorno de punto. (Para obtener más información sobre el suavizado de contorno de punto, vea [Porting Antialiasing Functions](porting-antialiasing-functions.md)). |
 
 
 
- 
+ 
 
-Para obtener información sobre las funciones Get relacionadas, vea [**glPointSize**](glpointsize.md).
+Para obtener información sobre las funciones get relacionadas, [**vea glPointSize**](glpointsize.md).
 
 ??
 
- 
+ 
 
- 
+ 
 
 
 

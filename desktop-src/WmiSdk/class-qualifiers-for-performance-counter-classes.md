@@ -1,8 +1,8 @@
 ---
-description: Especifique información sobre el objeto de rendimiento al que está asignada la clase de contador de rendimiento de WMI.
+description: Especifique información sobre el objeto de rendimiento al que está asignada la clase de contador de rendimiento WMI.
 ms.assetid: 7b8b7f00-95d8-4c1e-8638-157d0f4c7c32
 ms.tgt_platform: multiple
-title: Calificadores de clase para las clases de contador de rendimiento
+title: Calificadores de clase para clases de contador de rendimiento
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,43 +10,43 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e4910af88ce7f96fda1b5f9b7ecd7a33479fc130
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b8168dcc0523c629202ac4d5c4a0ea51ecc8bd68d5ac4498fb38059b940fd83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118820122"
 ---
-# <a name="class-qualifiers-for-performance-counter-classes"></a>Calificadores de clase para las clases de contador de rendimiento
+# <a name="class-qualifiers-for-performance-counter-classes"></a>Calificadores de clase para clases de contador de rendimiento
 
-Los calificadores de clase especifican información sobre el objeto de rendimiento al que está asignada la [clase de contador de rendimiento](/windows/desktop/CIMWin32Prov/performance-counter-classes) de WMI. Para obtener más información, vea [supervisar datos de rendimiento](monitoring-performance-data.md).
+Los calificadores de clase especifican información sobre el objeto de rendimiento al que está asignada la clase de [contador](/windows/desktop/CIMWin32Prov/performance-counter-classes) de rendimiento WMI. Para obtener más información, vea [Supervisión de datos de rendimiento.](monitoring-performance-data.md)
 
--   [Calificadores para PerformanceClasses sin formato y con formato](#qualifiers-for-raw-and-formatted-performanceclasses)
+-   [Calificadores para performanceClasses sin formato y sin formato](#qualifiers-for-raw-and-formatted-performanceclasses)
 -   [Calificadores para clases de rendimiento sin procesar](#)
 -   [Calificadores para clases de rendimiento con formato](#)
 -   [Temas relacionados](#related-topics)
 
 
-El proveedor "WbemPerfClass" asocia automáticamente los calificadores específicos del contador de rendimiento a las clases y propiedades de [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) en la raíz \\ CIMv2.
+El proveedor "WbemPerfClass" adjunta automáticamente los calificadores específicos del contador de rendimiento a las clases y propiedades [**\_ de Win32 PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) en la \\ CIMv2 raíz.
 
-Esta información se aplica a todas las instancias de la clase. Algunos calificadores con valores **booleanos** que son siempre **false** pueden no estar presentes en clases específicas.
+Esta información se aplica a todas las instancias de la clase . Es posible que algunos **calificadores con** valores booleanos que siempre son **False** no estén presentes en clases específicas.
 
-## <a name="qualifiers-for-raw-and-formatted-performanceclasses"></a>Calificadores para PerformanceClasses sin formato y con formato
+## <a name="qualifiers-for-raw-and-formatted-performanceclasses"></a>Calificadores para performanceClasses sin formato y sin formato
 
-Los calificadores siguientes se aplican a todas las clases que se derivan de [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) y [**Win32 \_ PerfFormattedData**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata).
+Los siguientes calificadores se aplican a todas las clases derivadas de [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) y [**Win32 \_ PerfFormattedData**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata).
 
 <dl> <dt>
 
-<span id="Cooked"></span><span id="cooked"></span><span id="COOKED"></span>**Cocida**
+<span id="Cooked"></span><span id="cooked"></span><span id="COOKED"></span>**Cocinado**
 </dt> <dd>
 
 **boolean**
 
-Indica si la clase contiene datos cocidos.
+Indica si la clase contiene datos cociados.
 
 </dd> <dt>
 
-<span id="DisplayName"></span><span id="displayname"></span><span id="DISPLAYNAME"></span>**Mostrar**
+<span id="DisplayName"></span><span id="displayname"></span><span id="DISPLAYNAME"></span>**Displayname**
 </dt> <dd>
 
 **string**
@@ -69,7 +69,7 @@ No proporciona datos detallados. Siempre contiene el valor 100.
 
 **boolean**
 
-Siempre se establece en **true** porque las instancias siempre son dinámicas.
+Establezca siempre en **True** porque las instancias siempre son dinámicas.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Siempre se establece en **true** porque las instancias siempre son dinámicas.
 
 **boolean**
 
-Indica si la clase procede de una biblioteca de rendimiento heredada. Siempre se establece en **true**.
+Indica si la clase procede de una biblioteca de rendimiento heredada. Establezca siempre en **True.**
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Los índices ya no son válidos. Este calificador siempre es cero.
 
 **boolean**
 
-Indica que la clase es una clase de alto rendimiento. Siempre se establece en **true**.
+Indica que la clase es una clase de alto rendimiento. Establezca siempre en **True.**
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Indica que la clase es una clase de alto rendimiento. Siempre se establece en **
 
 **sint32**
 
-Identificador de configuración regional. El valor siempre es 1033 (Inglés de EE. UU.).
+Identificador de configuración regional. El valor siempre es 1033 (inglés de EE. UU.).
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Los índices ya no son válidos. Este calificador siempre es cero.
 
 </dd> <dt>
 
-<span id="Provider"></span><span id="provider"></span><span id="PROVIDER"></span>**Presta**
+<span id="Provider"></span><span id="provider"></span><span id="PROVIDER"></span>**Proveedor**
 </dt> <dd>
 
 **string**
@@ -127,27 +127,27 @@ Nombre del proveedor de instancias. El valor es "WbemPerfV2".
 
 </dd> <dt>
 
-<span id="RegistryKey"></span><span id="registrykey"></span><span id="REGISTRYKEY"></span>**Rename**
+<span id="RegistryKey"></span><span id="registrykey"></span><span id="REGISTRYKEY"></span>**RegistryKey**
 </dt> <dd>
 
 **string**
 
-Nombre del controlador en la clave **HKEY \_ local \_ Machine \\ CurrentControlSet \\ Services** , en la que se puede encontrar la clave de rendimiento. Este nombre también es el nombre del servicio que proporciona el contador de rendimiento.
+Nombre del controlador en la clave **HKEY \_ LOCAL MACHINE \_ \\ CurrentControlSet \\ Services,** en la que se puede encontrar la clave de rendimiento. Este nombre también es el nombre del servicio que proporciona el contador de rendimiento.
 
 </dd> <dt>
 
-<span id="Singleton"></span><span id="singleton"></span><span id="SINGLETON"></span>**Simple**
+<span id="Singleton"></span><span id="singleton"></span><span id="SINGLETON"></span>**Singleton**
 </dt> <dd>
 
 **boolean**
 
-Si **es true**, indica que solo existe una instancia de la clase.
+Si **es True**, indica que solo existe una instancia de la clase .
 
 </dd> </dl>
 
 ## <a name="qualifiers-for-raw-performance-classes"></a>Calificadores para clases de rendimiento sin procesar
 
-Los calificadores siguientes se aplican a todas las clases que se derivan de [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata).
+Los siguientes calificadores se aplican a todas las clases derivadas de [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata).
 
 <dl> <dt>
 
@@ -156,7 +156,7 @@ Los calificadores siguientes se aplican a todas las clases que se derivan de [**
 
 **boolean**
 
-Indica si la obtención de instancias de esta clase es una operación costosa. Siempre se establece en **true** para las clases con " \_ Costly" anexadas al final del nombre de clase.
+Indica si la obtención de instancias de esta clase es una operación costosa. Establezca siempre en **True para** las clases con \_ "Costly" anexado al final del nombre de clase.
 
 </dd> <dt>
 
@@ -174,31 +174,31 @@ No proporciona datos detallados. Siempre contiene el valor 100.
 
 **boolean**
 
-El valor siempre es **false**.
+El valor siempre es **False.**
 
 </dd> </dl>
 
 ## <a name="qualifiers-for-formatted-performance-classes"></a>Calificadores para clases de rendimiento con formato
 
-Los calificadores siguientes se aplican a todas las clases que se derivan de [**Win32 \_ PerfFormattedData**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata).
+Los siguientes calificadores se aplican a todas las clases derivadas de [**Win32 \_ PerfFormattedData**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata).
 
 <dl> <dt>
 
-<span id="AutoCook"></span><span id="autocook"></span><span id="AUTOCOOK"></span>**Autocook**
+<span id="AutoCook"></span><span id="autocook"></span><span id="AUTOCOOK"></span>**AutoCook**
 </dt> <dd>
 
 **int32**
 
-Indica que los valores de las instancias de clase se calculan automáticamente a partir de la clase de datos sin procesar correspondiente. El valor es siempre 1.
+Indica que los valores de las instancias de clase se calculan automáticamente a partir de la clase de datos sin procesar correspondiente. El valor siempre es 1.
 
 </dd> <dt>
 
-<span id="AutoCook_RawClass"></span><span id="autocook_rawclass"></span><span id="AUTOCOOK_RAWCLASS"></span>**Autocook \_ RawClass**
+<span id="AutoCook_RawClass"></span><span id="autocook_rawclass"></span><span id="AUTOCOOK_RAWCLASS"></span>**AutoCook \_ RawClass**
 </dt> <dd>
 
 **string**
 
-Nombre de la clase sin procesar que se va a usar para el cálculo de la clase con formato. Este calificador es obligatorio.
+Nombre de la clase sin formato que se usará para el cálculo de la clase con formato. Este calificador es obligatorio.
 
 </dd> </dl>
 
@@ -209,16 +209,16 @@ Nombre de la clase sin procesar que se va a usar para el cálculo de la clase co
 [Supervisión de datos de rendimiento](monitoring-performance-data.md)
 </dt> <dt>
 
-[Calificadores específicos de las clases de rendimiento de WMI](qualifiers-specific-to-wmi-performance-classes.md)
+[Calificadores específicos de las clases de rendimiento wmi](qualifiers-specific-to-wmi-performance-classes.md)
 </dt> <dt>
 
 [Clases de contador de rendimiento](/windows/desktop/CIMWin32Prov/performance-counter-classes)
 </dt> <dt>
 
-[Obtener acceso a las clases de rendimiento preinstaladas de WMI](accessing-wmi-preinstalled-performance-classes.md)
+[Acceso a clases de rendimiento preinstaladas de WMI](accessing-wmi-preinstalled-performance-classes.md)
 </dt> <dt>
 
-[Tareas WMI: supervisión del rendimiento](wmi-tasks--performance-monitoring.md)
+[Tareas wmi: supervisión del rendimiento](wmi-tasks--performance-monitoring.md)
 </dt> </dl>
 
  

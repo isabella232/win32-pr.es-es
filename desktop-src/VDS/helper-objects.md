@@ -4,24 +4,24 @@ ms.assetid: 0f809c71-a3bd-4c62-8086-9651ea1a3400
 title: Objetos auxiliares
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac5193003abd10d9fa2c311b250272d9ad5847a2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98464c31548309b50e21b2b8e3e20a867efe7ca647d7a9879efd0ef346e6a147
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999485"
 ---
 # <a name="helper-objects"></a>Objetos auxiliares
 
-\[A partir de Windows 8 y Windows Server 2012, la interfaz com de [servicio de disco virtual](virtual-disk-service-portal.md) se sustituye por la [API de administración de almacenamiento de Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[A partir Windows 8 y Windows Server 2012, la interfaz COM del servicio virtual [de](virtual-disk-service-portal.md) disco se reemplaza por [el Windows Storage API de Administración](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 VDS proporciona dos objetos auxiliares: el objeto de enumeración y el objeto asincrónico. En este tema se describe cada uno de estos objetos y se proporcionan vínculos a ejemplos de cómo funcionan los llamadores con cada uno de ellos.
 
 ## <a name="enumeration-object"></a>Objeto de enumeración
 
-Un objeto de enumeración enumera a través de un conjunto de objetos VDS de un tipo determinado. Los objetos pueden ser proveedores, subsistemas, controladores, Lun, complejos de LUN, unidades, paquetes de disco, discos, volúmenes o complejos de volumen. Los llamadores pueden obtener un puntero a un objeto específico seleccionando el objeto deseado de la enumeración devuelto por el método adecuado. Para obtener un ejemplo de código, vea [trabajar con objetos de enumeración](working-with-enumeration-objects.md).
+Un objeto de enumeración enumera a través de un conjunto de objetos VDS de un tipo determinado. Los objetos pueden ser proveedores, subsistemas, controladores, LUN, plexos LUN, unidades, paquetes de disco, discos, volúmenes o plexos de volumen. Los llamadores pueden obtener un puntero a un objeto específico seleccionando el objeto deseado de la enumeración devuelta por el método adecuado. Para obtener un ejemplo de código, vea [Trabajar con objetos de enumeración](working-with-enumeration-objects.md).
 
-En la tabla siguiente se enumeran las interfaces, las enumeraciones y las estructuras relacionadas. 
+En la tabla siguiente se enumeran interfaces, enumeraciones y estructuras relacionadas. 
 
 | Tipo                                              | Elemento                                  |
 |---------------------------------------------------|------------------------------------------|
@@ -33,24 +33,24 @@ En la tabla siguiente se enumeran las interfaces, las enumeraciones y las estruc
 
  
 
-## <a name="async-object"></a>Async (objeto)
+## <a name="async-object"></a>Objeto asincrónico
 
-Un objeto asincrónico administra las operaciones asincrónicas. Los métodos que inician operaciones asincrónicas devuelven un puntero a una interfaz [**IVdsAsync**](/windows/desktop/api/Vds/nn-vds-ivdsasync) , que permite al llamador cancelar, esperar y consultar el estado de la operación asincrónica.
+Un objeto asincrónico administra las operaciones asincrónicas. Los métodos que inician operaciones asincrónicas devuelven un puntero a una interfaz [**IVdsAsync,**](/windows/desktop/api/Vds/nn-vds-ivdsasync) lo que permite al autor de la llamada cancelar, esperar y consultar el estado de la operación asincrónica.
 
-Las operaciones de VDS de ejecución prolongada tienden a implementarse de forma asincrónica. Los programas de proveedores de software básicos y dinámicos implementan métodos asincrónicos de forma coherente para las operaciones de volumen, partición y disco. Los proveedores de hardware opcionalmente implementan métodos relacionados asincrónicamente. Independientemente de cómo el proveedor implemente el método, la operación debe devolver un puntero a una interfaz [**IVdsAsync**](/windows/desktop/api/Vds/nn-vds-ivdsasync) al autor de la llamada. Para obtener un ejemplo de código, vea [administrar operaciones asincrónicas](managing-asynchronous-operations.md).
+Las operaciones VDS de ejecución larga tienden a implementarse de forma asincrónica. Los programas de proveedor de software básico y dinámico implementan métodos asincrónicos de forma coherente para las operaciones de volumen, partición y disco. Opcionalmente, los proveedores de hardware implementan métodos asincrónicos de forma asincrónica. Independientemente de cómo implemente el proveedor el método , la operación debe devolver un puntero a una [**interfaz IVdsAsync**](/windows/desktop/api/Vds/nn-vds-ivdsasync) al autor de la llamada. Para obtener un ejemplo de código, vea [Administración de operaciones asincrónicas.](managing-asynchronous-operations.md)
 
-Entre las operaciones asincrónicas se incluyen:
+Las operaciones asincrónicas incluyen:
 
 -   Crear un LUN, un volumen o una partición.
 -   Dar formato a un volumen o partición.
--   Adición o eliminación de un complejo de LUN o volumen.
--   Dividir un Plex de volumen.
--   Ampliación o reducción de un LUN o volumen.
+-   Agregar o quitar un LUN o un plex de volumen.
+-   Dividir un plex de volumen.
+-   Extender o reducir un LUN o volumen.
 -   Recuperación de un LUN o volumen.
--   Limpieza de un disco.
+-   Limpiar un disco.
 -   Reemplazar un disco.
 
-En la tabla siguiente se enumeran las interfaces, las enumeraciones y las estructuras relacionadas. 
+En la tabla siguiente se enumeran interfaces, enumeraciones y estructuras relacionadas. 
 
 | Tipo                                              | Elemento                        |
 |---------------------------------------------------|--------------------------------|
@@ -66,7 +66,7 @@ En la tabla siguiente se enumeran las interfaces, las enumeraciones y las estruc
 
 <dl> <dt>
 
-[Modelo de objetos de VDS](vds-object-model.md)
+[Modelo de objetos VDS](vds-object-model.md)
 </dt> <dt>
 
 [**IVdsAsync**](/windows/desktop/api/Vds/nn-vds-ivdsasync)
@@ -75,7 +75,7 @@ En la tabla siguiente se enumeran las interfaces, las enumeraciones y las estruc
 [Trabajar con objetos de enumeración](working-with-enumeration-objects.md)
 </dt> <dt>
 
-[Administrar operaciones asincrónicas](managing-asynchronous-operations.md)
+[Administración de operaciones asincrónicas](managing-asynchronous-operations.md)
 </dt> </dl>
 
  

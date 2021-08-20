@@ -45,7 +45,7 @@ ms.locfileid: "118978595"
 ---
 # <a name="seekgrbit-enumeration"></a>Enumeración SeekGrbit
 
-Opciones para JetSeek.
+Opciones de JetSeek.
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
@@ -112,7 +112,7 @@ public enum SeekGrbit
 </table>
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

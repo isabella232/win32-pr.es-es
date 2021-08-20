@@ -3,7 +3,7 @@ title: D3DX_FLOAT4_to_R10G10B10A2_UNORM función
 description: Empaqueta el XMFLOAT4 especificado en un DXGI \_ FORMAT \_ R10G10B10A2 \_ UNORM.
 ms.assetid: 20471435-bb1a-4151-a03a-c334b2a7d944
 keywords:
-- D3DX_FLOAT4_to_R10G10B10A2_UNORM función HLSL
+- D3DX_FLOAT4_to_R10G10B10A2_UNORM function HLSL
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118516373"
 ---
-# <a name="d3dx_float4_to_r10g10b10a2_unorm-function"></a>Función D3DX \_ FLOAT4 \_ a \_ R10G10B10A2 \_ UNORM
+# <a name="d3dx_float4_to_r10g10b10a2_unorm-function"></a>Función \_ D3DX FLOAT4 \_ a \_ R10G10B10A2 \_ UNORM
 
 Empaqueta el XMFLOAT4 especificado en un DXGI \_ FORMAT \_ R10G10B10A2 \_ UNORM.
 

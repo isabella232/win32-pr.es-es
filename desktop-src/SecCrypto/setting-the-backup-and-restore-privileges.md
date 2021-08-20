@@ -1,19 +1,19 @@
 ---
-description: Para llamar correctamente a la API de copia de seguridad y restauración de servicios de certificados, el token del llamador debe incluir los privilegios de copia de seguridad y restauración.
+description: Para llamar correctamente a la API de copia de seguridad y restauración de Servicios de certificados, el token del autor de la llamada debe incluir los privilegios de copia de seguridad y restauración.
 ms.assetid: 409a9fad-7141-4ba8-ab3d-fb590366001e
-title: Establecer los privilegios de copia de seguridad y restauración
+title: Establecimiento de los privilegios de copia de seguridad y restauración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9dd70c3726c435efa1f000add101bbf50b725bb5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 990f1009ec5b57d6dcc9f11ef505e705fb483362518d6e54f5d0c9a0167cc211
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666215"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900315"
 ---
-# <a name="setting-the-backup-and-restore-privileges"></a>Establecer los privilegios de copia de seguridad y restauración
+# <a name="setting-the-backup-and-restore-privileges"></a>Establecimiento de los privilegios de copia de seguridad y restauración
 
-Para llamar correctamente a la API de copia de seguridad y restauración de servicios de certificados, el token del llamador debe incluir los [*privilegios*](../secgloss/p-gly.md)de copia de seguridad y restauración. Estos privilegios se pueden establecer mediante programación y el ejemplo siguiente se puede utilizar para establecer o quitar estos privilegios. Los privilegios de copia de seguridad y restauración son necesarios para todas las aplicaciones de copia de seguridad y restauración, no solo para copias de seguridad y restauración de servicios de Certificate Server. Para obtener información sobre las implicaciones de seguridad de la modificación de privilegios, vea [ejecutar con privilegios especiales](../secbp/running-with-special-privileges.md).
+Para llamar correctamente a la API de copia de seguridad y restauración de Servicios de certificados, el token del autor de la llamada debe incluir los privilegios de copia [*de seguridad y restauración*](../secgloss/p-gly.md). Estos privilegios se pueden establecer mediante programación y el ejemplo siguiente se puede usar para establecer o quitar estos privilegios. Los privilegios de copia de seguridad y restauración son necesarios para todas las aplicaciones de copia de seguridad y restauración, no solo para la copia de seguridad y restauración de Servicios de certificados. Para obtener información sobre las implicaciones de seguridad de la modificación de privilegios, vea [Running with Special Privileges](../secbp/running-with-special-privileges.md).
 
 
 ```C++

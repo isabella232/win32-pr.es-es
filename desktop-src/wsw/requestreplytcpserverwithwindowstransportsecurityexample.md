@@ -1,29 +1,29 @@
 ---
 title: Ejemplo de RequestReplyTcpServerWithWindowsTransportSecurity
-description: En este ejemplo se muestra un servidor TCP que acepta un canal y recibe y responde a los mensajes, con la seguridad proporcionada por la seguridad de transporte basada en Windows SSPI.
+description: En este ejemplo se muestra un servidor TCP que acepta un canal y recibe y responde a los mensajes, con la seguridad proporcionada por Windows seguridad de transporte basada en SSPI.
 ms.assetid: 690fa5cd-228b-4099-bd2b-cbf9c8d70c53
 keywords:
 - RequestReplyTcpServerWithWindowsTransportSecurityExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77ebfe259a25f31683e0f4c30b3a2568ca96dd4b
-ms.sourcegitcommit: b95a94ffffda33f9ebbdd41787c01866444b4cf4
+ms.openlocfilehash: 3a5e087a86174f0617a0f8ddf990ec1c5a4156a506750151e6c6d120bc8cd92d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "104149025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962994"
 ---
 # <a name="requestreplytcpserverwithwindowstransportsecurity-example"></a>Ejemplo de RequestReplyTcpServerWithWindowsTransportSecurity
 
-En este ejemplo se muestra un servidor TCP que acepta un canal y recibe y responde a los mensajes, con la seguridad proporcionada por la seguridad de transporte basada en Windows SSPI.
+En este ejemplo se muestra un servidor TCP que acepta un canal y recibe y responde a los mensajes, con la seguridad proporcionada por Windows seguridad de transporte basada en SSPI.
 
--   [RequestReplyTcpServerWithWindowsTransportSecurity. cpp](#requestreplytcpserverwithwindowstransportsecuritycpp)
--   [PurchaseOrder. wsdl](#purchaseorderwsdl)
+-   [RequestReplyTcpServerWithWindowsTransportSecurity.cpp](#requestreplytcpserverwithwindowstransportsecuritycpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="requestreplytcpserverwithwindowstransportsecuritycpp"></a>RequestReplyTcpServerWithWindowsTransportSecurity. cpp
+## <a name="requestreplytcpserverwithwindowstransportsecuritycpp"></a>RequestReplyTcpServerWithWindowsTransportSecurity.cpp
 
 
 ```C++
@@ -480,7 +480,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. wsdl
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -624,9 +624,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

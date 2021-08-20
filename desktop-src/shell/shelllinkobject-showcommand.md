@@ -1,7 +1,7 @@
 ---
-description: Obtiene o establece el estado de presentación inicial (con tamaño, minimizada o maximizada) del comando del vínculo.
+description: Obtiene o establece el estado de presentación inicial (tamaño, minimizado o maximizado) del comando del vínculo.
 ms.assetid: 139c6924-f554-4fde-9ed0-bc117bafbb16
-title: Propiedad ShellLinkObject. información showcommand (Shldisp. h)
+title: Propiedad ShellLinkObject.ShowCommand (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 9bacdf98a24d749b5128bc286f06e99299aef437
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b655be140a6c54902ef9c0f47babafeeaf7b3dc2cb7cd3b1eadb97808f7da82c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104997949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968384"
 ---
-# <a name="shelllinkobjectshowcommand-property"></a>Propiedad ShellLinkObject. información showcommand
+# <a name="shelllinkobjectshowcommand-property"></a>Propiedad ShellLinkObject.ShowCommand
 
-Obtiene o establece el estado de presentación inicial (con tamaño, minimizada o maximizada) del comando del vínculo.
+Obtiene o establece el estado de presentación inicial (tamaño, minimizado o maximizado) del comando del vínculo.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```JScript
@@ -38,7 +38,7 @@ ShellLinkObject.ShowCommand(intShowCommand) = iShowCommand
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Estado de visualización del vínculo. Puede ser uno de los siguientes valores:
+el estado de presentación del vínculo. Puede ser uno de los siguientes valores:
 
 <dt>
 
@@ -77,9 +77,9 @@ Activa la ventana y la muestra como una ventana maximizada.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de esta propiedad en JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se muestra el uso adecuado de esta propiedad en JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -120,7 +120,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -208,11 +208,11 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo para aplicaciones de escritorio de Windows 2000 Professional con SP3 \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 

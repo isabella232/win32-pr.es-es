@@ -1,6 +1,6 @@
 ---
 title: HttpCustomHeaderPurchaseOrderServiceExample
-description: Revise un ejemplo Windows C++ de Web Services API (WWSAPI) de un servicio de pedido de compra a través de encabezados personalizados HTTP.
+description: Revise un ejemplo Windows C++ de web Services API (WWSAPI) de un servicio de pedido de compra a través de encabezados personalizados HTTP.
 ms.assetid: 7a86e0be-6e52-4ad2-bca4-0162a8030cdc
 keywords:
 - HttpCustomHeaderPurchaseOrderServiceExample Native-Web-Services

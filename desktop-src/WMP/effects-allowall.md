@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. allowAll
-description: El atributo allowAll especifica o recupera un valor que indica si se deben incluir todas las visualizaciones que se encuentran en el registro.
+title: EFFECTS.allowAll
+description: El atributo allowAll especifica o recupera un valor que indica si se deben incluir todas las visualizaciones que están en el Registro.
 ms.assetid: 8552cc06-05b2-4049-ba7d-f6bd770449e0
 keywords:
-- EFFECTs. allowAll Windows Media Player
+- EFFECTS.allowAll Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56760021fe34522072677e9524fe6636e519e20f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c7a87aa8336e3961b31716c8d6bbfaa6aee71374a0f3c6e17b644a47136df550
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996855"
 ---
-# <a name="effectsallowall"></a>EFFECTs. allowAll
+# <a name="effectsallowall"></a>EFFECTS.allowAll
 
-El atributo **allowAll** especifica o recupera un valor que indica si se deben incluir todas las visualizaciones que se encuentran en el registro.
+El **atributo allowAll** especifica o recupera un valor que indica si se deben incluir todas las visualizaciones que están en el Registro.
 
 ``` syntax
         elementID.allowAll
@@ -29,22 +29,22 @@ El atributo **allowAll** especifica o recupera un valor que indica si se deben i
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un valor booleano de lectura **y escritura.**
 
 
 
 | Value | Descripción                                                         |
 |-------|---------------------------------------------------------------------|
 | true  | Predeterminada. Permite el ciclo de todas las visualizaciones en el sistema del usuario. |
-| false | Limita el ciclo a las visualizaciones que aparecen dentro de las etiquetas de **efectos** . |
+| false | Limita el ciclo a las visualizaciones que aparecen dentro de **las etiquetas EFFECTS.** |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si este atributo se establece en false, solo las visualizaciones que aparecen dentro de las etiquetas **Effects** se pueden recorrer en iteración mediante PREVIOUS/NEXT. Si se establece en true, todas las visualizaciones que se registran en el sistema del usuario se pueden recorrer. Si se establece en true y se especifican las visualizaciones dentro de las etiquetas **Effects** , los atributos especificados en estas etiquetas se aplican a todas las visualizaciones del sistema del usuario.
+Si este atributo se establece en false, solo las visualizaciones que aparecen en las etiquetas **EFFECTS** se pueden recorrer en ciclo mediante anterior o siguiente. Si se establece en true, se puede recorrer en ciclo todas las visualizaciones registradas en el sistema del usuario. Si se establece en true y especifica las visualizaciones dentro de etiquetas **EFFECTS,** los atributos especificados en estas etiquetas se aplican a todas las visualizaciones del sistema del usuario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Si este atributo se establece en false, solo las visualizaciones que aparecen de
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -60,7 +60,7 @@ Si este atributo se establece en false, solo las visualizaciones que aparecen de
 
 <dl> <dt>
 
-[**EFFECTs, elemento**](effects-element.md)
+[**EFFECTS, elemento**](effects-element.md)
 </dt> </dl>
 
  

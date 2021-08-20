@@ -80,7 +80,7 @@ No se especifica ningún valor devuelto determinado. El pin de llamada omite el 
 
 Este método permite a una aplicación examinar y actuar sobre la información del búfer multimedia antes de que se procese el contenido del búfer. La aplicación es responsable de conocer el tipo de medio en el pin. Esta información se puede obtener obteniendo primero la información de secuencia del perfil y, a continuación, llamando al método [**IConfigAsfWriter2::StreamNumFromPin**](iconfigasfwriter2-streamnumfrompin.md) para determinar qué pin está asociado a cada secuencia.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

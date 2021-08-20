@@ -1,5 +1,5 @@
 ---
-description: Muestra cómo crear un controlador de miniaturas por tipo de archivo y extiende el explorador de Windows.
+description: Muestra cómo crear un controlador de miniaturas por tipo de archivo y amplía Windows Explorer.
 title: Ejemplo de proveedor de miniaturas de recetas
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,23 +9,23 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 76ab53464b6303728e301fb240e499829c5f70ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 52d31f65a4e400a7f0170be5bc7794a58e565f9da44285f8b718a5ad46d6b472
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002393"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968784"
 ---
 # <a name="recipe-thumbnail-provider-sample"></a>Ejemplo de proveedor de miniaturas de recetas
 
-Muestra cómo crear un controlador de miniaturas por tipo de archivo y extiende el explorador de Windows.
+Muestra cómo crear un controlador de miniaturas por tipo de archivo y amplía Windows Explorer.
 
 En este tema se incluyen las siguientes secciones.
 
 -   [Requisitos](#requirements)
 -   [Descargar el ejemplo](#downloading-the-sample)
 -   [Compilar el ejemplo](#building-the-sample)
--   [Ejecutar el ejemplo](#running-the-sample)
+-   [Ejecución del ejemplo](#running-the-sample)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -34,27 +34,27 @@ En este tema se incluyen las siguientes secciones.
 | Producto                                | Versión mínima del producto |
 |----------------------------------------|-------------------------|
 | Windows                                | Windows Vista           |
-| Kit de desarrollo de software de Windows (SDK) | 7.0                     |
+| Kit de desarrollo de software de Windows (SDK) | 7,0                     |
 
 
 
  
 
-Para conocer los requisitos adicionales, consulte el archivo Léame incluido con el ejemplo.
+Para obtener requisitos adicionales, consulte el archivo Léame incluido con el ejemplo.
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-| Ubicación      | URL de ruta de acceso                                                                                             |
+| Ubicación      | Dirección URL de ruta de acceso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Ejemplo de RecipeThumbnailProvider](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/RecipeThumbnailProvider) |
+| GitHub  | [Ejemplo recipeThumbnailProvider](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/RecipeThumbnailProvider) |
 
 ## <a name="building-the-sample"></a>Generar el ejemplo
 
-Para obtener instrucciones sobre cómo generar el ejemplo, vea el archivo Léame incluido con el ejemplo.
+Para obtener instrucciones sobre cómo compilar el ejemplo, vea el archivo Léame incluido con el ejemplo.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-Para obtener instrucciones sobre cómo generar el ejemplo, vea el archivo Léame incluido con el ejemplo.
+Para obtener instrucciones sobre cómo compilar el ejemplo, vea el archivo Léame incluido con el ejemplo.
 
  
 

@@ -1,9 +1,9 @@
 ---
-title: Enumeración VMVirtualMachineEvents (VPCCOMInterfaces. h)
+title: Enumeración VMVirtualMachineEvents (VPCCOMInterfaces.h)
 description: Especifica los eventos de máquina virtual.
 ms.assetid: 158bdada-6fd3-488c-9ff1-e04df9a79127
 keywords:
-- Enumeración de VMVirtualMachineEvents Virtual PC
+- VMVirtualMachineEvents (enumeración de VIRTUAL PC)
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de1e1d8f4d89c28f63886444537fb9d894fc42e4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5079aee6752c260cd6bab9ee9022d22fd891eb6adf36ad0ec4d1c9987b6ff508
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118998345"
 ---
 # <a name="vmvirtualmachineevents-enumeration"></a>Enumeración VMVirtualMachineEvents
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Especifica los eventos de máquina virtual (VM).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -63,35 +63,35 @@ El estado de una máquina virtual ha cambiado.
 <span id="vmVirtualMachineEvent_RequestShutdown"></span><span id="vmvirtualmachineevent_requestshutdown"></span><span id="VMVIRTUALMACHINEEVENT_REQUESTSHUTDOWN"></span>**vmVirtualMachineEvent \_ RequestShutdown**
 </dt> <dd>
 
-Se ha solicitado un cierre.
+Se ha solicitado un apagado.
 
 </dd> <dt>
 
-<span id="vmVirtualMachineEvent_Reset"></span><span id="vmvirtualmachineevent_reset"></span><span id="VMVIRTUALMACHINEEVENT_RESET"></span>**restablecimiento de vmVirtualMachineEvent \_**
+<span id="vmVirtualMachineEvent_Reset"></span><span id="vmvirtualmachineevent_reset"></span><span id="VMVIRTUALMACHINEEVENT_RESET"></span>**Restablecimiento de vmVirtualMachineEvent \_**
 </dt> <dd>
 
-Una máquina virtual se ha restablecido.
+Se ha restablecido una máquina virtual.
 
 </dd> <dt>
 
 <span id="vmVirtualMachineEvent_TripleFault"></span><span id="vmvirtualmachineevent_triplefault"></span><span id="VMVIRTUALMACHINEEVENT_TRIPLEFAULT"></span>**vmVirtualMachineEvent \_ TripleFault**
 </dt> <dd>
 
-Una máquina virtual tiene tres errores.
+Una máquina virtual tiene un triple error.
 
 </dd> <dt>
 
 <span id="vmVirtualMachineEvent_HeartbeatStopped"></span><span id="vmvirtualmachineevent_heartbeatstopped"></span><span id="VMVIRTUALMACHINEEVENT_HEARTBEATSTOPPED"></span>**vmVirtualMachineEvent \_ HeartbeatStopped**
 </dt> <dd>
 
-El latido de una máquina virtual se ha detenido. Esto normalmente indica que el sistema operativo invitado se ha bloqueado.
+Se ha detenido el latido de una máquina virtual. Esto suele indicar que el sistema operativo invitado se ha bloqueo.
 
 </dd> <dt>
 
 <span id="vmVirtualMachineEvent_ConfigurationChanged"></span><span id="vmvirtualmachineevent_configurationchanged"></span><span id="VMVIRTUALMACHINEEVENT_CONFIGURATIONCHANGED"></span>**vmVirtualMachineEvent \_ ConfigurationChanged**
 </dt> <dd>
 
-Ha cambiado un valor en la configuración de esta máquina virtual
+Ha cambiado un valor en la configuración de esta máquina virtual.
 
 </dd> <dt>
 
@@ -126,14 +126,14 @@ Se está cerrando un sistema operativo invitado.
 <span id="vmVirtualMachineEvent_GuestLogoff"></span><span id="vmvirtualmachineevent_guestlogoff"></span><span id="VMVIRTUALMACHINEEVENT_GUESTLOGOFF"></span>**vmVirtualMachineEvent \_ GuestLogoff**
 </dt> <dd>
 
-Un usuario cerró sesión en el sistema operativo invitado.
+Un usuario ha cerrado la sesión del sistema operativo invitado.
 
 </dd> <dt>
 
 <span id="vmVirtualMachineEvent_DiskOutOfSpace"></span><span id="vmvirtualmachineevent_diskoutofspace"></span><span id="VMVIRTUALMACHINEEVENT_DISKOUTOFSPACE"></span>**vmVirtualMachineEvent \_ DiskOutOfSpace**
 </dt> <dd>
 
-Espacio insuficiente en el disco que necesita la máquina virtual.
+Un disco requerido por la máquina virtual tiene poco espacio.
 
 </dd> </dl>
 
@@ -143,11 +143,11 @@ Espacio insuficiente en el disco que necesita la máquina virtual.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: función gluBeginPolygon (GLU. h)
-description: Las funciones gluBeginPolygon y gluEndPolygon delimitan una descripción de polígono. | función gluBeginPolygon (GLU. h)
+title: Función gluBeginPolygon (Glu.h)
+description: Las funciones gluBeginPolygon y gluEndPolygon delimitan una descripción de polígono. | Función gluBeginPolygon (Glu.h)
 ms.assetid: e4da731c-2082-4dbc-ae3a-8d6b30d50253
 keywords:
-- gluBeginPolygon (función) OpenGL
+- Función gluBeginPolygon OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60204e7d937b4686f3757b520c820886e168529e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 98fe58a48a10d36a07e3a96bdfe612d8857f691233e19faac670eb6d987b42f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105670139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118937898"
 ---
-# <a name="glubeginpolygon-function"></a>gluBeginPolygon función)
+# <a name="glubeginpolygon-function"></a>Función gluBeginPolygon
 
-\[La función **gluBeginPolygon** está obsoleta y solo se proporciona por razones de compatibilidad con versiones anteriores. La función **gluBeginPolygon** se asigna a [**GluTessBeginPolygon**](glutessbeginpolygon.md) seguido de [**gluTessBeginContour**](glutessbegincontour.md).\]
+\[La **función gluBeginPolygon** está obsoleta y solo se proporciona por compatibilidad con versiones anteriores. La **función gluBeginPolygon** se asigna a [**gluTessBeginPolygon**](glutessbeginpolygon.md) seguido de [**gluTessBeginContour.**](glutessbegincontour.md)\]
 
-Las funciones **gluBeginPolygon** y [**gluEndPolygon**](gluendpolygon.md) delimitan una descripción de polígono.
+Las **funciones gluBeginPolygon** y [**gluEndPolygon**](gluendpolygon.md) delimitan una descripción de polígono.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ void WINAPI gluBeginPolygon(
 
 <dl> <dt>
 
-*tess* 
+*Tess* 
 </dt> <dd>
 
-Objeto de teselación (creado con [**gluNewTess**](glunewtess.md)).
+Objeto de teselación (creado [**con gluNewTess).**](glunewtess.md)
 
 </dd> </dl>
 
@@ -53,19 +53,19 @@ Objeto de teselación (creado con [**gluNewTess**](glunewtess.md)).
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use **gluBeginPolygon** y **gluEndPolygon** para delimitar la definición de un polígono no convexo.
+Use **gluBeginPolygon** y **gluEndPolygon** para delimitar la definición de un polígono no convexa.
 
-1.  Llame a **gluBeginPolygon**.
-2.  Defina los contornos del polígono mediante una llamada a [**gluTessVertex**](glutessvertex.md) para cada vértice y [**gluNextContour**](glunextcontour.md) para iniciar cada nuevo contorno.
-3.  Llame a **gluEndPolygon** para indicar el final de la definición.
+1.  Llame **a gluBeginPolygon.**
+2.  Defina los contornos del polígono llamando [**a gluTessVertex**](glutessvertex.md) para cada vértice y [**gluNextContour**](glunextcontour.md) para iniciar cada nuevo contorno.
+3.  Llame **a gluEndPolygon** para indicar el final de la definición.
 
-    Una vez que se llama a **gluEndPolygon** , el polígono se tesela y los triángulos resultantes se describen a través de las devoluciones de llamada. Para obtener descripciones de las funciones de devolución de llamada, vea [*gluTessCallback*](glutess.md).
+    Una vez que se llama a **gluEndPolygon,** el polígono se tesela y los triángulos resultantes se describen mediante devoluciones de llamada. Para obtener descripciones de las funciones de devolución de llamada, [*vea gluTessCallback*](glutess.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se describe un cuadrangular con un orificio triangular:
+En el ejemplo siguiente se describe un cuadrilátero con un hueco triangular:
 
 ``` syntax
 gluBeginPolygon(tess); 
@@ -88,8 +88,8 @@ gluEndPolygon(tess);
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

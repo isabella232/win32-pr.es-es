@@ -21,7 +21,7 @@ La tabla ODBCTranslator tiene las columnas siguientes.
 
 | Columna      | Tipo                         | Clave | Nullable |
 |-------------|------------------------------|-----|----------|
-| Translator  | [Identificador](identifier.md) | Y   | N        |
+| Traductor  | [Identificador](identifier.md) | Y   | N        |
 | Componente\_ | [Identificador](identifier.md) | N   | N        |
 | Descripción | [Texto](text.md)             | N   | N        |
 | Archivo\_      | [Identificador](identifier.md) | N   | N        |
@@ -38,7 +38,7 @@ La tabla ODBCTranslator tiene las columnas siguientes.
 <span id="Translator"></span><span id="translator"></span><span id="TRANSLATOR"></span>Traductor
 </dt> <dd>
 
-Nombre del token interno para traductor. Clave principal de la tabla.
+Nombre de token interno para traductor. Clave principal de la tabla.
 
 </dd> <dt>
 
@@ -59,20 +59,20 @@ Descripción registrada para este traductor de controladores ODBC. Este valor no
 <span id="File_"></span><span id="file_"></span><span id="FILE_"></span>Archivo\_
 </dt> <dd>
 
-Archivo DLL para la transferencia que aparece en la Traductor columna. La columna \_ Archivo es una clave externa en la tabla [File](file-table.md). El nombre de archivo especificado en la columna Nombre de archivo de ese registro de tabla de archivos debe tener el formato de nombre de archivo corto. No se puede \| usar la sintaxis DE SFN LFN.
+Archivo DLL para la transferencia que aparece en la Traductor columna. La columna \_ Archivo es una clave externa en la tabla [File](file-table.md). El nombre de archivo especificado en la columna Nombre de archivo de ese registro de tabla de archivos debe tener el formato de nombre de archivo corto. No se puede \| usar la sintaxis LFN de SFN.
 
 </dd> <dt>
 
 <span id="File_Setup"></span><span id="file_setup"></span><span id="FILE_SETUP"></span>Instalación de \_ archivos
 </dt> <dd>
 
-Archivo DLL de instalación para el traductor si es diferente de la Traductor columna. La columna \_ Archivo es una clave externa en la tabla [File](file-table.md). El nombre de archivo especificado en la columna Nombre de archivo de ese registro de tabla de archivos debe tener el formato de nombre de archivo corto. No se puede \| usar la sintaxis DE SFN LFN.
+Archivo DLL de instalación para el traductor si es diferente de la Traductor archivo. La columna \_ Archivo es una clave externa en la tabla [File](file-table.md). El nombre de archivo especificado en la columna Nombre de archivo de ese registro de tabla de archivos debe tener el formato de nombre de archivo corto. No se puede \| usar la sintaxis LFN de SFN.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentarios
 
-Las [acciones InstallODBC](installodbc-action.md) [y RemoveODBC](removeodbc-action.md) de las tablas [*de secuencia*](s-gly.md) procesan la información de esta tabla. Para obtener información sobre el *uso de tablas de secuencia,* vea Usar una tabla de [secuencia.](using-a-sequence-table.md)
+Las [acciones InstallODBC](installodbc-action.md) [y RemoveODBC](removeodbc-action.md) de las tablas [*de*](s-gly.md) secuencia procesan la información de esta tabla. Para obtener información sobre el *uso de tablas de secuencia,* vea Usar una tabla de [secuencia.](using-a-sequence-table.md)
 
 ## <a name="validation"></a>Validación
 

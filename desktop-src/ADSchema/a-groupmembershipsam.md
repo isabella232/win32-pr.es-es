@@ -1,11 +1,11 @@
 ---
-title: Group-Membership-atributo SAM
-description: Seguridad de Windows NT. Compatibilidad con Windows NT de nivel inferior.
+title: Atributo Group-Membership-SAM
+description: Windows SEGURIDAD NT. Nivel inferior Windows compatibilidad con NT.
 ms.assetid: 14e2f7c1-4d2b-4c0d-bf13-9abb576cd931
 ms.tgt_platform: multiple
 keywords:
-- Group-Membership-SAM atributo AD Schema
-- groupMembershipSAM esquema de AD de atributos
+- Esquema de AD del atributo Group-Membership-SAM
+- GroupMembershipSAM attribute AD Schema (Esquema de AD del atributo groupMembershipSAM)
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44fe8a9ff92077d22a628c9a85b942382cbb2034
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 73c552e863c0a20ebada09fcd5c28cfe7c597510c0eaa057f02c17b4caf3fb5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961334"
 ---
-# <a name="group-membership-sam-attribute"></a>Group-Membership-atributo SAM
+# <a name="group-membership-sam-attribute"></a>Atributo Group-Membership-SAM
 
-Seguridad de Windows NT. Compatibilidad con Windows NT de nivel inferior.
+Windows SEGURIDAD NT. Nivel inferior Windows compatibilidad con NT.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | Grupo-pertenencia-SAM                                  |
-| Nombre para mostrar de LDAP | groupMembershipSAM                                    |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | Pertenencia a grupos-SAM                                  |
+| Ldap-Display-Name | groupMembershipSAM                                    |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.166                                |
-| System-ID-GUID    | bf967980-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf967980-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -53,20 +53,20 @@ Seguridad de Windows NT. Compatibilidad con Windows NT de nivel inferior.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | True                                                                  |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Verdadero                                                                  |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Seguridad de Windows NT. Compatibilidad con Windows NT de nivel inferior.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | True                                                                  |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Verdadero                                                                  |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Seguridad de Windows NT. Compatibilidad con Windows NT de nivel inferior.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | True                                                                  |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Verdadero                                                                  |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Seguridad de Windows NT. Compatibilidad con Windows NT de nivel inferior.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | True                                                                  |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Verdadero                                                                  |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Seguridad de Windows NT. Compatibilidad con Windows NT de nivel inferior.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | True                                                                  |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Verdadero                                                                  |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -158,15 +158,15 @@ Seguridad de Windows NT. Compatibilidad con Windows NT de nivel inferior.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                    |
+| Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
-| System-Only            | False                                                                 |
-| Tiene un único valor       | True                                                                  |
-| Está indexado             | False                                                                 |
-| En el catálogo global      | False                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                          |
+| System-Only            | Falso                                                                 |
+| Es de un solo valor       | Verdadero                                                                  |
+| Está indexado             | Falso                                                                 |
+| En el catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |

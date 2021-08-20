@@ -1,35 +1,35 @@
 ---
-description: Generado por una secuencia de medios cuando finaliza la secuencia.
+description: Lo genera una secuencia de medios cuando finaliza la secuencia.
 ms.assetid: e793131a-f737-411f-a9fc-03b5b3d09aea
-title: Evento MEEndOfStream (Mfobjects. h)
+title: Evento MEEndOfStream (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9eb70af021c1a35af829df9b3c80c0c2b71aa120
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23a2db351d31558a617b72a8640d121b71c866021063d4791d19797108f34819
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117877778"
 ---
 # <a name="meendofstream-event"></a>Evento MEEndOfStream
 
-Generado por una secuencia de medios cuando finaliza la secuencia.
+Lo genera una secuencia de medios cuando finaliza la secuencia.
 
 ## <a name="event-values"></a>Valores de evento
 
-Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) son los siguientes.
+Los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluyen lo siguiente.
 
 
 
 | VARTYPE              | Descripción                           |
 |----------------------|---------------------------------------|
-| VT \_ vacío<br/> | Sin datos del evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Sin datos del evento.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando la [sesión multimedia](media-session.md) recibe el evento MEEndOfStream, llama a [**IMFStreamSink::P lacemarker**](/windows/desktop/api/mfidl/nf-mfidl-imfstreamsink-placemarker) en el receptor multimedia correspondiente, con el tipo de marcador **\_ \_ ENDOFSEGMENT de marcador de MFSTREAMSINK** .
+Cuando [](media-session.md) la sesión multimedia recibe el evento MEEndOfStream, llama a [**MFStreamSink::P laceMarker**](/windows/desktop/api/mfidl/nf-mfidl-imfstreamsink-placemarker) en el receptor multimedia correspondiente, con el tipo de marcador **MFSTREAMSINK \_ MARKER \_ ENDOFSEGMENT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ Cuando la [sesión multimedia](media-session.md) recibe el evento MEEndOfStream,
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects. h (incluye Mfidl. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Cuando la [sesión multimedia](media-session.md) recibe el evento MEEndOfStream,
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> </dl>
 
  

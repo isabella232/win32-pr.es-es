@@ -1,38 +1,38 @@
 ---
-title: Funciones de utilidad remota
-description: A continuación se enumeran las funciones de la utilidad remota de administración de red.
+title: Funciones de la utilidad remota
+description: Las funciones de la utilidad remota de administración de redes se enumeran a continuación.
 ms.assetid: e925d6d1-9347-4074-a12e-175b2115e71e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 168122d192cc107fbe801181c8688521b26a92b2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5e4e4d0dc03e9a31a415da5afc6c15075795e0032fd6cc3a26063341fef3de26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012453"
 ---
-# <a name="remote-utility-functions"></a>Funciones de utilidad remota
+# <a name="remote-utility-functions"></a>Funciones de la utilidad remota
 
-A continuación se enumeran las funciones de la utilidad remota de administración de red.
+Las funciones de la utilidad remota de administración de redes se enumeran a continuación.
 
 
 
 | Función                                                       | Descripción                                                                             |
 |----------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [**NetRemoteComputerSupports**](/windows/desktop/api/Lmremutl/nf-lmremutl-netremotecomputersupports) | Consulta el redirector para recuperar las características opcionales que admite un sistema remoto. |
-| [**NetRemoteTOD**](/windows/desktop/api/Lmremutl/nf-lmremutl-netremotetod)                           | Permite a las aplicaciones tener acceso a la información de hora del día en un servidor remoto.          |
+| [**NetRemoteComputerSupports**](/windows/desktop/api/Lmremutl/nf-lmremutl-netremotecomputersupports) | Consulta al redirector para recuperar las características opcionales que admite un sistema remoto. |
+| [**NetRemoteTOD**](/windows/desktop/api/Lmremutl/nf-lmremutl-netremotetod)                           | Permite que las aplicaciones accedan a la información de la hora del día en un servidor remoto.          |
 
 
 
- 
+ 
 
-La información de hora remota del día está disponible en un nivel de información:
+La información remota de la hora del día está disponible en un nivel de información:
 
--   [**\_información de hora del \_ día \_**](/windows/desktop/api/Lmremutl/ns-lmremutl-time_of_day_info)
+-   [**INFORMACIÓN \_ DE LA HORA DEL \_ \_ DÍA**](/windows/desktop/api/Lmremutl/ns-lmremutl-time_of_day_info)
 
- 
+ 
 
- 
+ 
 
 
 

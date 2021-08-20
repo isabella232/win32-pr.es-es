@@ -1,6 +1,6 @@
 ---
 title: Función MrmCreateResourceIndexerFromPreviousPriFile (MrmResourceIndexer.h)
-description: Crea un indexador de recursos a partir de un archivo PRI creado con una llamada anterior a MrmCreateResourceFile. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, consulte API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados.
+description: Crea un indexador de recursos a partir de un archivo PRI creado con una llamada anterior a MrmCreateResourceFile. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados.
 ms.assetid: 8B3743EF-1A27-4B70-9577-8549B91DBC1E
 keywords:
 - Menús de función MrmCreateResourceIndexerFromPreviousPriFile y otros recursos
@@ -23,9 +23,9 @@ ms.locfileid: "118733675"
 ---
 # <a name="mrmcreateresourceindexerfrompreviousprifile-function"></a>Función MrmCreateResourceIndexerFromPreviousPriFile
 
-\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información aquí proporcionada.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Crea un indexador de recursos a partir de un archivo PRI creado con una llamada anterior a [**MrmCreateResourceFile**](mrmcreateresourcefile.md). Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, consulte API de indexación de recursos de [paquetes (PRI) y sistemas de compilación personalizados.](/windows/uwp/app-resources/pri-apis-custom-build-systems)
+Crea un indexador de recursos a partir de un archivo PRI creado con una llamada anterior a [**MrmCreateResourceFile**](mrmcreateresourcefile.md). Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea API de indexación de recursos de paquetes (PRI) y sistemas [de compilación personalizados.](/windows/uwp/app-resources/pri-apis-custom-build-systems)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ HRESULT HRESULT MrmCreateResourceIndexerFromPreviousPriFile(
 
 Tipo: **PCWSTR**
 
-La raíz del proyecto de la aplicación para UWP para la que va a generar archivos PRI. En otras palabras, la ruta de acceso a los archivos de recursos de esa aplicación. Especifique esto para que pueda especificar rutas de acceso relativas a esa raíz en las llamadas API posteriores al mismo indexador de recursos.
+La raíz del proyecto de la aplicación para UWP para la que va a generar archivos PRI. En otras palabras, la ruta de acceso a los archivos de recursos de esa aplicación. Especifique esto para que pueda especificar rutas de acceso relativas a esa raíz en llamadas API posteriores al mismo indexador de recursos.
 
 </dd> <dt>
 
@@ -64,7 +64,7 @@ Versión de la plataforma de destino para el indexador de recursos.
 
 </dd> <dt>
 
-*defaultQualifiers* \[ en, opcional\]
+*defaultQualifiers* \[ in, opcional\]
 </dt> <dd>
 
 Tipo: **PCWSTR**
@@ -78,7 +78,7 @@ Lista de calificadores de recursos predeterminados. Por ejemplo, L"language-en-U
 
 Tipo: **PCWSTR**
 
-Una ruta de acceso de archivo completa a un archivo PRI.
+Ruta de acceso de archivo completa a un archivo PRI.
 
 </dd> <dt>
 

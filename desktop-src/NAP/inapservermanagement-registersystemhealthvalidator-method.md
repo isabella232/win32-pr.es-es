@@ -3,9 +3,9 @@ title: Método INapServerManagement RegisterSystemHealthValidator (NapServerMana
 description: Registra una SHV.
 ms.assetid: 23f147d5-3c4e-48ca-940a-c4350ad6ecb3
 keywords:
-- Método NAP de RegisterSystemHealthValidator
+- Nap del método RegisterSystemHealthValidator
 - Método NAP de RegisterSystemHealthValidator, interfaz INapServerManagement
-- INapServerManagement interface NAP , RegisterSystemHealthValidator method
+- Interfaz INapServerManagement NAP, método RegisterSystemHealthValidator
 topic_type:
 - apiref
 api_name:
@@ -48,7 +48,7 @@ HRESULT RegisterSystemHealthValidator(
 
 <dl> <dt>
 
-*Validador* \[ En\]
+*validador* \[ En\]
 </dt> <dd>
 
 Puntero a una [**estructura NapComponentRegistrationInfo**](/windows/win32/api/naptypes/ns-naptypes-napcomponentregistrationinfo) que contiene la información de registro de SHV.
@@ -83,7 +83,7 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                               |
@@ -93,7 +93,7 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

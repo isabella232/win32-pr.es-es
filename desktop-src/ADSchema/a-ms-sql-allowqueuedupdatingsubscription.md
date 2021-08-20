@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-SQL-AllowQueuedUpdatingSubscription
-description: True para permitir las transacciones en cola al actualizar las suscripciones.
+description: True para permitir transacciones en cola al actualizar suscripciones.
 ms.assetid: 132c107f-8586-48db-b70c-027c619aadf7
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de MS-SQL-AllowQueuedUpdatingSubscription
-- Esquema de AD de atributos de mS-SQL-AllowQueuedUpdatingSubscription
+- Esquema de AD del atributo MS-SQL-AllowQueuedUpdatingSubscription
+- mS-SQL-AllowQueuedUpdatingSubscription attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2056a04b6e0f155c156cde06975e96eb13f61eb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a473537954beac60d9fa87d72c23d69193d12bb862ccab1d5414d65a4f25fa01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961155"
 ---
 # <a name="ms-sql-allowqueuedupdatingsubscription-attribute"></a>Atributo MS-SQL-AllowQueuedUpdatingSubscription
 
-True para permitir las transacciones en cola al actualizar las suscripciones.
+True para permitir transacciones en cola al actualizar suscripciones.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------|
 | CN                | MS-SQL-AllowQueuedUpdatingSubscription |
-| Nombre para mostrar de LDAP | mS-SQL-AllowQueuedUpdatingSubscription |
-| Tamaño              | 4 bytes                                |
-| Actualizar privilegio  | El sistema establece este valor.       |
+| Ldap-Display-Name | mS-SQL-AllowQueuedUpdatingSubscription |
+| Size              | 4 bytes                                |
+| Actualizar privilegios  | El sistema establece este valor.       |
 | Frecuencia de actualización  | Cuando se configura la replicación.             |
 | Attribute-Id      | 1.2.840.113556.1.4.1405                |
-| System-ID-GUID    | c458ca80-d34b-11d2-999a-0000f87a57d4   |
-| Sintaxis            | [**Booleano**](s-boolean.md)           |
+| System-Id-Guid    | c458ca80-d34b-11d2-999a-0000f87a57d4   |
+| Syntax            | [**Booleana**](s-boolean.md)           |
 
 
 
@@ -53,15 +53,15 @@ True para permitir las transacciones en cola al actualizar las suscripciones.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
@@ -74,15 +74,15 @@ True para permitir las transacciones en cola al actualizar las suscripciones.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
@@ -95,15 +95,15 @@ True para permitir las transacciones en cola al actualizar las suscripciones.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
@@ -116,15 +116,15 @@ True para permitir las transacciones en cola al actualizar las suscripciones.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
@@ -137,15 +137,15 @@ True para permitir las transacciones en cola al actualizar las suscripciones.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
@@ -158,15 +158,15 @@ True para permitir las transacciones en cola al actualizar las suscripciones.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |

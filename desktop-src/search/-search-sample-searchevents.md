@@ -39,7 +39,7 @@ Este ejemplo está disponible en la siguiente ubicación.
 | GitHub        | [Ejemplo de SearchEvents](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch/SearchEvents)    |
 
 > [!NOTE]  
-> Para todas las versiones de Windows, incluido Windows 7, se recomienda descargar los ejemplos directamente desde GitHub para obtener la versión más actualizada.
+> Para todas las versiones de Windows, incluido Windows 7, se recomienda descargar los ejemplos directamente desde GitHub para la versión más actualizada.
 
 ## <a name="building-the-sample"></a>Generar el ejemplo
 

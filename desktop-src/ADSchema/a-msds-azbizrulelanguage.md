@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-AZ-BIZ-Rule-Language
+title: Atributo ms-DS-Az-Biz-Rule-Language
 description: Lenguaje en el que se encuentra el script de regla de negocios (JScript, VBScript).
 ms.assetid: 980f4715-b905-41aa-8274-de320be4a5a7
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-AZ-BIZ-Rule-Language
-- Esquema de AD de atributo msDS-AzBizRuleLanguage
+- Esquema de AD del atributo ms-DS-Az-Biz-Rule-Language
+- Esquema de AD del atributo msDS-AzBizRuleLanguage
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 980fb7e08e972bef367c06187a88f0a3ef0a4979
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d1c29767322d8d211b051d13e58db9a9e4f8b1e30dfacc3423f95bdd3993299c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960924"
 ---
-# <a name="ms-ds-az-biz-rule-language-attribute"></a>atributo MS-DS-AZ-BIZ-Rule-Language
+# <a name="ms-ds-az-biz-rule-language-attribute"></a>Atributo ms-DS-Az-Biz-Rule-Language
 
 Lenguaje en el que se encuentra el script de regla de negocios (JScript, VBScript).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-DS-AZ-BIZ-Rule-Language                  |
-| Nombre para mostrar de LDAP | msDS-AzBizRuleLanguage                      |
-| Tamaño              | 20 caracteres                               |
-| Actualizar privilegio  | Administrador de AzRoles                               |
+| CN                | ms-DS-Az-Biz-Rule-Language                  |
+| Ldap-Display-Name | msDS-AzBizRuleLanguage                      |
+| Size              | 20 caracteres                               |
+| Privilegio actualizar  | Administrador de AzRoles                               |
 | Frecuencia de actualización  | Durante la inicialización o el cambio de directiva.     |
 | Attribute-Id      | 1.2.840.113556.1.4.1802                     |
-| System-ID-GUID    | 52994b56-0e6c-4e07-aa5c-ef9d7f5a0e25        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 52994b56-0e6c-4e07-aa5c-ef9d7f5a0e25        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,20 +52,20 @@ Lenguaje en el que se encuentra el script de regla de negocios (JScript, VBScrip
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | \-                                                |
+| Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | 0                                                 |
 | Range-Upper            | 64                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Clases usadas en        | [**MS-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -73,20 +73,20 @@ Lenguaje en el que se encuentra el script de regla de negocios (JScript, VBScrip
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | \-                                                |
+| Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | 0                                                 |
 | Range-Upper            | 64                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Clases usadas en        | [**MS-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Lenguaje en el que se encuentra el script de regla de negocios (JScript, VBScrip
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Tiene un único valor       | True                                                                                  |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                  |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | 0                                                                                     |
 | Range-Upper            | 64                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**MS-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Lenguaje en el que se encuentra el script de regla de negocios (JScript, VBScrip
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Tiene un único valor       | True                                                                                  |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                  |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | 0                                                                                     |
 | Range-Upper            | 64                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**MS-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -136,20 +136,20 @@ Lenguaje en el que se encuentra el script de regla de negocios (JScript, VBScrip
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Tiene un único valor       | True                                                                                  |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                  |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | 0                                                                                     |
 | Range-Upper            | 64                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**MS-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Clases usadas en        | [**Group (Grupo)**](c-group.md)<br/> [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 

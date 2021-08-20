@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: JET_SPACEHINTS constructor'
-title: Constructor de JET_SPACEHINTS
+title: JET_SPACEHINTS constructor
 TOCTitle: 'JET_SPACEHINTS constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_SPACEHINTS.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_spacehints.jet_spacehints(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4b4e922bf54c8dab4958fc2e335d3938b4d99514
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da02fee5518a106ca44377c45948f2269ac67b311c96c6ca51d2f09b59c3e954
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979275"
 ---
-# <a name="jet_spacehints-constructor"></a>Constructor de JET_SPACEHINTS
+# <a name="jet_spacehints-constructor"></a>JET_SPACEHINTS constructor
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,8 +54,8 @@ public JET_SPACEHINTS()
 
 #### <a name="reference"></a>Referencia
 
-[JET_SPACEHINTS (clase)](./jet-spacehints-class.md)
+[JET_SPACEHINTS clase](./jet-spacehints-class.md)
 
-[Miembros de JET_SPACEHINTS](./jet-spacehints-members.md)
+[JET_SPACEHINTS miembros](./jet-spacehints-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

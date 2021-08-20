@@ -1,7 +1,7 @@
 ---
-description: Especifica los registros de arquitectura de comprobación de la máquina (MCA) sin formato. Esta clase solo está disponible en sistemas Windows de 64 bits.
+description: Especifica los registros de arquitectura de comprobación de máquina (MCA) sin procesar. Esta clase solo está disponible en sistemas de 64 Windows bits.
 ms.assetid: d465ba8d-14b2-4911-ae19-19ebeb32126e
-title: MSMCAInfo_RawMCAData (clase)
+title: MSMCAInfo_RawMCAData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: 6cafc16ddbc91181cc2114def07a193941988228
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b7ac9f8c474a1aee55d0dd70a5a838102aec66bc8b3ba3d867070430c38a3ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118821869"
 ---
-# <a name="msmcainfo_rawmcadata-class"></a>MSMCAInfo \_ RawMCAData (clase)
+# <a name="msmcainfo_rawmcadata-class"></a>Clase RawMCAData de MSMCAInfo \_
 
-El **MSMCAInfo \_ RawMCAData** especifica los registros de arquitectura de comprobación de la máquina (MCA) sin procesar. Esta clase solo está disponible en sistemas Windows de 64 bits.
+**MSMCAInfo \_ RawMCAData especifica** los registros de arquitectura de comprobación de máquina (MCA) sin procesar. Esta clase solo está disponible en sistemas de 64 Windows bits.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,13 +44,13 @@ class MSMCAInfo_RawMCAData : MSMCAInfo
 
 ## <a name="members"></a>Miembros
 
-La clase **MSMCAInfo \_ RawMCAData** tiene estos tipos de miembros:
+La **clase \_ RawMCAData de MSMCAInfo** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSMCAInfo \_ RawMCAData** tiene estas propiedades.
+La **clase \_ RawMCAData de MSMCAInfo** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -63,14 +63,14 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-TRUE si esta instancia de la clase está activa; en caso contrario, **false**.
+TRUE, si esta instancia de la clase está activa; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
 **Recuento**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -89,40 +89,40 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/standard-qualifiers)
+Calificadores: [ **Clave**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Identificador único de esta instancia de la clase.
+Identificador único de esta instancia de la clase .
 
 </dd> <dt>
 
 **Registros**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **\_ entrada MSMCAInfo**
+Tipo de datos: **Matriz de entrada MSMCAInfo \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de registros de error de MCA. La propiedad **Count** especifica el número de registros de error de MCA en la matriz.
+Matriz de registros de errores de MCA. La propiedad Count especifica el número de registros de error de MCA en la **matriz.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **MSMCAInfo \_ RawMCAData** se deriva de [**MSMCAInfo**](msmcainfo.md).
+La **clase \_ RawMCAData de MSMCAInfo** se deriva de [**MSMCAInfo**](msmcainfo.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                         |
-| Espacio de nombres<br/>                | \\WMI raíz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>Wmicore. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Wmi \\ raíz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>Wmicore.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wmiprov.dll</dt> </dl> |
 
 

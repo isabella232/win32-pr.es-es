@@ -50,7 +50,7 @@ Controle el filtro de visualización.
 *lpFilterObject* \[ out\]
 </dt> <dd>
 
-Puntero a una [estructura FILTEROBJECT](filterobject.md) que define el objeto que se va a agregar al filtro. Cada objeto puede ser un operador, un valor o una propiedad.
+Puntero a una [estructura FILTEROBJECT](filterobject.md) que define el objeto que se va a agregar al filtro. Cada objeto puede ser un operador, valor o propiedad.
 
 </dd> </dl>
 
@@ -75,13 +75,13 @@ Si la función no se realiza correctamente, el valor devuelto es un código de e
 
 [*Los*](e.md) expertos [*y analizadores pueden*](p.md) llamar a **la función FilterAddObject.**
 
-Se **llama a la función FilterAddObject** cada vez que se agrega un objeto de filtro al filtro de visualización. El filtro de presentación es una pila de postfijo de objetos que pueden ser un operador, un valor o una propiedad.
+Se **llama a la función FilterAddObject** cada vez que se agrega un objeto de filtro al filtro de presentación. El filtro de presentación es una pila de postfijo de objetos que pueden ser un operador, un valor o una propiedad.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
@@ -91,7 +91,7 @@ Se **llama a la función FilterAddObject** cada vez que se agrega un objeto de f
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

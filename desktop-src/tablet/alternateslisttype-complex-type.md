@@ -1,5 +1,5 @@
 ---
-description: Define el tipo que contiene la lista de alternativas de reconocimiento para una palabra de entrada de lápiz.
+description: Define el tipo que contiene la lista de alternativas de reconocimiento para una palabra de lápiz.
 ms.assetid: 3e9e2af3-b8a1-4ef0-ab04-b4b44255d5c3
 title: Tipo complejo AlternatesListType
 ms.topic: reference
@@ -21,7 +21,7 @@ ms.locfileid: "118967804"
 ---
 # <a name="alternateslisttype-complex-type"></a>Tipo complejo AlternatesListType
 
-Define el tipo que contiene la lista de alternativas de reconocimiento para una palabra de entrada de lápiz.
+Define el tipo que contiene la lista de alternativas de reconocimiento para una palabra de lápiz.
 
 ``` syntax
 <xs:complexType name="AlternatesListType" />
@@ -31,9 +31,9 @@ Define el tipo que contiene la lista de alternativas de reconocimiento para una 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 

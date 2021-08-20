@@ -1,5 +1,5 @@
 ---
-title: Copiar una imagen de OpenGL en el Portapapeles
+title: Copiar una imagen OpenGL en el Portapapeles
 description: Aunque la versión actual de la implementación de Microsoft de OpenGL en Windows no admite directamente el Portapapeles, puede copiar una imagen Windows OpenGL en el Portapapeles.
 ms.assetid: 8cda0919-5884-4ebe-92a1-0b3e694989be
 keywords:
@@ -14,7 +14,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119063285"
 ---
-# <a name="copying-an-opengl-image-to-the-clipboard"></a>Copiar una imagen de OpenGL en el Portapapeles
+# <a name="copying-an-opengl-image-to-the-clipboard"></a>Copiar una imagen OpenGL en el Portapapeles
 
 Aunque la versión actual de la implementación de Microsoft de OpenGL en Windows no admite directamente el Portapapeles, puede copiar una imagen Windows OpenGL en el Portapapeles.
 

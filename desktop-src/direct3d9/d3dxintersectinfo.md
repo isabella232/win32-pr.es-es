@@ -60,7 +60,7 @@ Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Coordenada centrada en barras dentro del triángulo donde el rayo forma intersección.
+Coordenada centrada en el triángulo en el que el rayo forma intersección.
 
 </dd> <dt>
 
@@ -71,7 +71,7 @@ Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Coordenada centrada en barras dentro del triángulo donde el rayo forma intersección.
+Coordenada centrada en el triángulo en el que el rayo forma intersección.
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Distancia a lo largo del rayo donde se produjo la intersección.
 
 ## <a name="remarks"></a>Comentarios
 
-Las coordenadas centradas en barras definen un punto dentro de un triángulo en términos de los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas centradas en barras, vea [Mathworld's Barycentric Coordinates Description](https://mathworld.wolfram.com/BarycentricCoordinates.html).
+Las coordenadas barítricas definen un punto dentro de un triángulo en términos de los vértices del triángulo. Para obtener una descripción más detallada de las coordenadas baricéntricas, vea [Mathworld's Barycentric Coordinates Description](https://mathworld.wolfram.com/BarycentricCoordinates.html).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,7 +100,7 @@ Las coordenadas centradas en barras definen un punto dentro de un triángulo en 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

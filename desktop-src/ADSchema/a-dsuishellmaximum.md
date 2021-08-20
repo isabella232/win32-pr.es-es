@@ -1,11 +1,11 @@
 ---
-title: DS-UI-Shell-atributo Maximum
-description: Es el número máximo predeterminado de objetos que se va a mostrar en un contenedor mediante la interfaz de usuario del shell.
+title: Atributo DS-UI-Shell-Maximum
+description: Este es el número máximo predeterminado de objetos que la interfaz de usuario del shell mostrará en un contenedor.
 ms.assetid: 133626f1-6006-4e0f-bf00-4fa98f2ed273
 ms.tgt_platform: multiple
 keywords:
-- DS-UI-Shell-esquema de AD de atributo máximo
-- dSUIShellMaximum esquema de AD de atributos
+- Esquema de AD de atributo DS-UI-Shell-Maximum
+- Esquema de AD del atributo dSUIShellMaximum
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7086a49d920caf5bbddd075437648701f4067ea8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f5ef3fca13afac0642bccca1e278a63a79e4728cc74430fde1db02e5aa47efa3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961574"
 ---
-# <a name="ds-ui-shell-maximum-attribute"></a>DS-UI-Shell-atributo Maximum
+# <a name="ds-ui-shell-maximum-attribute"></a>Atributo DS-UI-Shell-Maximum
 
-Es el número máximo predeterminado de objetos que se va a mostrar en un contenedor mediante la interfaz de usuario del shell.
+Este es el número máximo predeterminado de objetos que la interfaz de usuario del shell mostrará en un contenedor.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | DS-UI-Shell-máximo                  |
-| Nombre para mostrar de LDAP | dSUIShellMaximum                     |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | Administrador de dominio                 |
+| CN                | DS-UI-Shell-Maximum                  |
+| Ldap-Display-Name | dSUIShellMaximum                     |
+| Size              | \-                                   |
+| Actualizar privilegios  | Administrador de dominio                 |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1345              |
-| System-ID-GUID    | fcca766a-6f91-11d2-9905-0000f87a57d4 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | fcca766a-6f91-11d2-9905-0000f87a57d4 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -53,20 +53,20 @@ Es el número máximo predeterminado de objetos que se va a mostrar en un conten
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Es el número máximo predeterminado de objetos que se va a mostrar en un conten
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Es el número máximo predeterminado de objetos que se va a mostrar en un conten
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Es el número máximo predeterminado de objetos que se va a mostrar en un conten
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Es el número máximo predeterminado de objetos que se va a mostrar en un conten
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Es el número máximo predeterminado de objetos que se va a mostrar en un conten
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 

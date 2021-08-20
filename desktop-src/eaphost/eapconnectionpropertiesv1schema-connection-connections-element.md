@@ -65,7 +65,7 @@ El **elemento Connection** se define mediante el elemento [**Connections.**](eap
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -84,7 +84,7 @@ El **elemento Connection** se define mediante el elemento [**Connections.**](eap
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[esquema eapconnectionpropertiesv1](eapconnectionpropertiesv1schema-schema.md)
+[Esquema eapconnectionpropertiesv1](eapconnectionpropertiesv1schema-schema.md)
 </dt> </dl>
 
  

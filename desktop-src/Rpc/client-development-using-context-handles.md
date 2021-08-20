@@ -13,11 +13,11 @@ ms.locfileid: "118931846"
 ---
 # <a name="client-development-using-context-handles"></a>Desarrollo de cliente mediante identificadores de contexto
 
-El único uso que tiene un programa cliente para un identificador de contexto es pasarlo al servidor cada vez que el cliente realiza una llamada a procedimiento remoto. La aplicación cliente no necesita tener acceso al contenido del identificador. No debe intentar cambiar los datos de control de contexto de ninguna manera. Los procedimientos remotos que invoca el cliente realizan todas las operaciones necesarias en el contexto del servidor.
+El único uso que tiene un programa cliente para un identificador de contexto es pasarlo al servidor cada vez que el cliente realiza una llamada a procedimiento remoto. La aplicación cliente no necesita tener acceso al contenido del identificador. No debe intentar cambiar los datos del identificador de contexto de ninguna manera. Los procedimientos remotos que invoca el cliente realizan todas las operaciones necesarias en el contexto del servidor.
 
-Antes de solicitar un identificador de contexto desde un servidor, los clientes deben establecer un enlace con el servidor. El cliente puede usar un identificador de enlace automático, implícito o explícito. Con un identificador de enlace válido, el cliente puede llamar a un procedimiento remoto en el servidor **\[ \]** que devuelve un identificador de contexto abierto (no **NULL)** o pasa uno a través de un parámetro out en la lista de parámetros del procedimiento remoto.
+Antes de solicitar un identificador de contexto a un servidor, los clientes deben establecer un enlace con el servidor. El cliente puede usar un identificador de enlace automático, implícito o explícito. Con un identificador de enlace válido, el cliente puede llamar a un procedimiento remoto en el servidor **\[ \]** que devuelve un identificador de contexto abierto (no **NULL)** o pasa uno a través de un parámetro out en la lista de parámetros del procedimiento remoto.
 
-Los clientes pueden usar identificadores de contexto abiertos de la manera que necesiten. Sin embargo, deben invalidar el identificador cuando ya no lo necesiten. Hay dos maneras de hacerlo:
+Los clientes pueden usar identificadores de contexto abiertos de la forma que necesiten. Sin embargo, deben invalidar el identificador cuando ya no lo necesiten. Hay dos maneras de hacerlo:
 
 -   Para invocar un procedimiento remoto ofrecido por el programa de servidor que libera el contexto y cierra el identificador de contexto (lo establece en **NULL).**
 -   Cuando no se puede acceder al servidor, llame a [**la función RpcSsDestroyClientContext.**](/windows/desktop/api/Rpcndr/nf-rpcndr-rpcssdestroyclientcontext)
@@ -26,7 +26,7 @@ El segundo enfoque solo limpia el estado del lado cliente y no limpia el estado 
 
 El fragmento de código siguiente presenta un ejemplo de cómo un cliente podría usar un identificador de contexto. Para ver la definición de la interfaz que usa este ejemplo, vea [Desarrollo de interfaces mediante identificadores de contexto.](interface-development-using-context-handles.md) Para la implementación del servidor, vea [Desarrollo del servidor mediante identificadores de contexto.](server-development-using-context-handles.md)
 
-En este ejemplo, el cliente llama a RemoteOpen para obtener un identificador de contexto que contiene datos válidos. A continuación, el cliente puede usar el identificador de contexto en llamadas a procedimientos remotos. Dado que ya no necesita el identificador de enlace, el cliente puede liberar el identificador explícito que usó para crear el identificador de contexto:
+En este ejemplo, el cliente llama a RemoteOpen para obtener un identificador de contexto que contiene datos válidos. A continuación, el cliente puede usar el identificador de contexto en llamadas a procedimiento remoto. Dado que ya no necesita el identificador de enlace, el cliente puede liberar el identificador explícito que usó para crear el identificador de contexto:
 
 
 ```C++

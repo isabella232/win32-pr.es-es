@@ -40,7 +40,7 @@ La **interfaz ID3DX11EffectGroup** tiene estos métodos.
 | Método                                                                  | Descripción                                                   |
 |:------------------------------------------------------------------------|:--------------------------------------------------------------|
 | [**GetAnnotationByIndex**](id3dx11effectgroup-getannotationbyindex.md) | Obtiene una anotación por índice.<br/>                        |
-| [**GetAnnotationByName**](id3dx11effectgroup-getannotationbyname.md)   | Obtenga una anotación por nombre.<br/>                         |
+| [**GetAnnotationByName**](id3dx11effectgroup-getannotationbyname.md)   | Obtiene una anotación por nombre.<br/>                         |
 | [**GetDesc**](id3dx11effectgroup-getdesc.md)                           | Obtiene una descripción del grupo.<br/>                          |
 | [**GetTechniqueByIndex**](id3dx11effectgroup-gettechniquebyindex.md)   | Obtenga una técnica por índice.<br/>                          |
 | [**GetTechniqueByName**](id3dx11effectgroup-gettechniquebyname.md)     | Obtenga una técnica por nombre.<br/>                           |
@@ -50,7 +50,7 @@ La **interfaz ID3DX11EffectGroup** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para obtener una **interfaz ID3DX11EffectGroup,** llame a un método como [**ID3DX11Effect::GetGroupByName**](id3dx11effect-getgroupbyname.md).
 

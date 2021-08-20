@@ -1,7 +1,7 @@
 ---
-description: La propiedad Productosrelacionados de solo lectura devuelve un objeto StringList que enumera el conjunto de todos los productos instalados o anunciados para el usuario y el equipo actuales con una propiedad UpgradeCode especificada en su tabla de propiedades.
+description: La propiedad RelatedProducts de solo lectura devuelve un objeto StringList que enumera el conjunto de todos los productos instalados o anunciados para el usuario y la máquina actuales con una propiedad UpgradeCode especificada en su tabla Property.
 ms.assetid: 0316e536-ccd4-4d7a-9c49-66e6c4a07f1c
-title: Propiedad Installer. Productosrelacionados
+title: Installer.RelatedProducts, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: fb30be6ea5250a90ef8aa18065e9be679946e503
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 15e84a063b8f094dbeee02f3000bdd1c69356f5fa664f6e6f6aff87d19d07dd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118946143"
 ---
-# <a name="installerrelatedproducts-property"></a>Propiedad Installer. Productosrelacionados
+# <a name="installerrelatedproducts-property"></a>Installer.RelatedProducts, propiedad
 
-La propiedad **productosrelacionados** de solo lectura devuelve un objeto [**StringList**](stringlist-object.md) que enumera el conjunto de todos los productos instalados o anunciados para el usuario y el equipo actuales con una propiedad [**UpgradeCode**](upgradecode.md) especificada en su [tabla de propiedades](property-table.md).
+La propiedad **RelatedProducts** de solo lectura devuelve un objeto [**StringList**](stringlist-object.md) que enumera el conjunto de todos los productos instalados o anunciados para el usuario y la máquina actuales con una propiedad [**UpgradeCode**](upgradecode.md) especificada en su tabla [Property](property-table.md).
 
 Esta propiedad es de solo lectura.
 
@@ -37,11 +37,11 @@ propVal = Installer.RelatedProducts
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El código de actualización de los productos relacionados enumerados por el instalador.
+Código de actualización de productos relacionados que enumera el instalador.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para enumerar los productos relacionados, una aplicación recorre en iteración el [**StringList**](stringlist-object.md) con una construcción for each. Dado que los productos relacionados no están ordenados, cualquier nuevo producto relacionado tiene un índice arbitrario. Esto significa que la función puede devolver los productos relacionados en cualquier orden.
+Para enumerar los productos relacionados, una aplicación recorre en iteración [**stringlist**](stringlist-object.md) mediante una construcción For Each. Dado que los productos relacionados no están ordenados, cualquier nuevo producto relacionado tiene un índice arbitrario. Esto significa que la función puede devolver productos relacionados en cualquier orden.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Para enumerar los productos relacionados, una aplicación recorre en iteración 
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller se define como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

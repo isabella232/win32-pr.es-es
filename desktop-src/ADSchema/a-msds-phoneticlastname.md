@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Phonetic-Last-Name
+title: Atributo ms-DS-Phonetic-Last Name
 description: Contiene el apellido fonético de la persona.
 ms.assetid: 43c98f1c-b72c-4f59-a6a0-d2083bd8f1bb
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-Phonetic-Last-Name
-- Esquema de AD de atributo msDS-PhoneticLastName
+- Esquema de AD del atributo ms-DS-Phonetic-Last Name
+- Esquema de AD del atributo msDS-PhoneticLastName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e99efd849cb61dd31c3f0ea09f052133950188eb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: aa71a7cdfe4ca08f5a43f40f45ca2d29fddcea527610d3903aa096af053a1982
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960644"
 ---
-# <a name="ms-ds-phonetic-last-name-attribute"></a>atributo MS-DS-Phonetic-Last-Name
+# <a name="ms-ds-phonetic-last-name-attribute"></a>Atributo ms-DS-Phonetic-Last Name
 
 Contiene el apellido fonético de la persona.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-DS-Phonetic-Last-Name                    |
-| Nombre para mostrar de LDAP | msDS-PhoneticLastName                       |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-DS-Phonetic-Last-Name                    |
+| Ldap-Display-Name | msDS-PhoneticLastName                       |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1943                     |
-| System-ID-GUID    | f217e4ec-0836-4b90-88af-2f5d4bbda2bc        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | f217e4ec-0836-4b90-88af-2f5d4bbda2bc        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -50,15 +50,15 @@ Contiene el apellido fonético de la persona.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x8C8F                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | True                                                               |
-| En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Verdadero                                                               |
+| En el catálogo global      | Verdadero                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000005                                                         |
@@ -71,15 +71,15 @@ Contiene el apellido fonético de la persona.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x8C8F                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | True                                                               |
-| En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Verdadero                                                               |
+| En el catálogo global      | Verdadero                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000005                                                         |
@@ -92,15 +92,15 @@ Contiene el apellido fonético de la persona.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x8C8F                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | True                                                               |
-| En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Verdadero                                                               |
+| En el catálogo global      | Verdadero                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000005                                                         |

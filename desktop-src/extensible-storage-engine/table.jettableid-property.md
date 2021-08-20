@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: propiedad Table. JetTableid'
-title: Table. JetTableid (propiedad)
+description: 'Más información sobre: Propiedad Table.JetTableid'
+title: Table.JetTableid, propiedad
 TOCTitle: 'JetTableid property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Table.JetTableid
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.table.jettableid(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2ce73433d22613a8ebaba5b491d34b8fe9b398d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f694b8c7d1a1e574b0ef993cd20c600051ba45993fc20501fac3d3da5253d06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978455"
 ---
-# <a name="tablejettableid-property"></a>Table. JetTableid (propiedad)
+# <a name="tablejettableid-property"></a>Table.JetTableid, propiedad
 
-Obtiene el JET_TABLEID que esta tabla contiene.
+Obtiene el JET_TABLEID que contiene esta tabla.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -58,7 +58,7 @@ public JET_TABLEID JetTableid { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -68,4 +68,4 @@ Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)
 
 [Miembros de tabla](./table-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

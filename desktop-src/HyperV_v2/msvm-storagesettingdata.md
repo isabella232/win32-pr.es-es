@@ -1,7 +1,7 @@
 ---
 description: Representa la configuración específica del almacenamiento para un sistema virtual.
 ms.assetid: 0b3fcd78-7e9a-4a94-ad18-0ca72b3cfd73
-title: Msvm_StorageSettingData (clase)
+title: Msvm_StorageSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: db061d048ce45a4d6fa076a5b0367e794cdf16e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 315eb41b5c445d7ce8856f79054e9a227b2a62fc0986419172e519fc65a9ac31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105653093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950114"
 ---
-# <a name="msvm_storagesettingdata-class"></a>MSVM \_ StorageSettingData (clase)
+# <a name="msvm_storagesettingdata-class"></a>Clase \_ StorageSettingData de Msvm
 
 Representa la configuración específica del almacenamiento para un sistema virtual.
 
@@ -43,13 +43,13 @@ class Msvm_StorageSettingData : Msvm_SystemComponentSettingData
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ StorageSettingData** tiene estos tipos de miembros:
+La **clase \_ StorageSettingData de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ StorageSettingData** tiene estas propiedades.
+La **clase \_ StorageSettingData de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -62,30 +62,30 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si el procesamiento por lotes de interrupción debe deshabilitarse.
+Especifica si se debe deshabilitar el procesamiento por lotes de interrupción.
 
-Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifySystemComponentSettings**](msvm-virtualsystemmanagementservice-modifysystemcomponentsettings.md) de la clase [**\_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) de WMI MSVM.
+Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifySystemComponentSettings**](msvm-virtualsystemmanagementservice-modifysystemcomponentsettings.md) de la clase Wmi [**Msvm \_ VirtualSystemManagementService.**](msvm-virtualsystemmanagementservice.md)
 
 </dd> <dt>
 
 **ThreadCountPerChannel**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El número de subprocesos por canal de almacenamiento para procesar la e/s.
+Número de subprocesos por canal de almacenamiento para procesar E/S.
 
-Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifySystemComponentSettings**](msvm-virtualsystemmanagementservice-modifysystemcomponentsettings.md) de la clase [**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) .
+Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifySystemComponentSettings**](msvm-virtualsystemmanagementservice-modifysystemcomponentsettings.md) de la clase [**\_ VirtualSystemManagementService de Msvm.**](msvm-virtualsystemmanagementservice.md)
 
 <dt>
 
 <span id="Default"></span><span id="default"></span><span id="DEFAULT"></span>
 
-<span id="Default"></span><span id="default"></span><span id="DEFAULT"></span>**Valor predeterminado** (0)
+<span id="Default"></span><span id="default"></span><span id="DEFAULT"></span>**Valor** predeterminado (0)
 
 
 </dt> <dd>
@@ -123,7 +123,7 @@ Número medio de subprocesos por canal de almacenamiento.
 
 </dt> <dd>
 
-Gran número de subprocesos por canal de almacenamiento.
+Número elevado de subprocesos por canal de almacenamiento.
 
 </dd> </dl>
 
@@ -132,15 +132,15 @@ Gran número de subprocesos por canal de almacenamiento.
 **VirtualProcessorsPerChannel**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El número de procesadores por canal de almacenamiento. El número de canales que se van a abrir viene dado por (recuento de procesadores lógicos en el host/**VirtualProcessorsPerChannel**).
+Número de procesadores por canal de almacenamiento. El número de canales que se abrirán lo da (Recuento de procesadores lógicos en el **host/VirtualProcessorsPerChannel).**
 
-Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifySystemComponentSettings**](msvm-virtualsystemmanagementservice-modifysystemcomponentsettings.md) de la clase [**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) .
+Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifySystemComponentSettings**](msvm-virtualsystemmanagementservice-modifysystemcomponentsettings.md) de la clase [**\_ VirtualSystemManagementService de Msvm.**](msvm-virtualsystemmanagementservice.md)
 
 </dd> </dl>
 
@@ -150,10 +150,10 @@ Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el mé
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -162,7 +162,7 @@ Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el mé
 
 <dl> <dt>
 
-[**MSVM \_ SystemComponentSettingData**](msvm-systemcomponentsettingdata.md)
+[**Msvm \_ SystemComponentSettingData**](msvm-systemcomponentsettingdata.md)
 </dt> </dl>
 
  

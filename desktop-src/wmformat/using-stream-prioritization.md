@@ -1,27 +1,27 @@
 ---
-title: Usar la priorización de flujos
-description: Usar la priorización de flujos
+title: Uso de la priorización de secuencias
+description: Uso de la priorización de secuencias
 ms.assetid: 5fff212e-b47b-49a6-817f-f0e09c895b3a
 keywords:
-- Windows Media Format SDK, priorización de flujos
-- perfiles, priorización de flujos
-- flujos, priorización
+- Windows SDK de formato multimedia, priorización de secuencias
+- profiles,stream prioritization
+- streams,prioritization
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99a6b0bd3d49db9523ef9ea5585803b4c703c279
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 3db00466eb27685a33851f7bffa5133e1d94a203985b1a0a56b110a09ad88ab6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103994927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963954"
 ---
-# <a name="using-stream-prioritization"></a>Usar la priorización de flujos
+# <a name="using-stream-prioritization"></a>Uso de la priorización de secuencias
 
-La priorización de flujos permite tener más control sobre la reproducción de contenido permitiéndole especificar el orden de prioridad de las secuencias en un perfil. Cuando el lector y el servidor de streaming detectan una escasez de ancho de banda durante la reproducción, es posible que se deban quitar ejemplos para proporcionar una reproducción ininterrumpida. Si especifica un orden de prioridad con un objeto de priorización de flujo en el perfil, los ejemplos se quitarán primero de las secuencias de prioridad más baja.
+La priorización de secuencias permite tener más control sobre la reproducción de contenido, ya que permite especificar el orden de prioridad de las secuencias de un perfil. Cuando el lector y el servidor de streaming encuentran una escasez de ancho de banda durante la reproducción, es posible que haya que descartar ejemplos para proporcionar una reproducción ininterrumpida. Si especifica un orden de prioridad con un objeto de priorización de flujo en el perfil, primero se descartarán los ejemplos de los flujos de prioridad más baja.
 
-A diferencia de los objetos de uso compartido de ancho de banda y de exclusión mutua, un objeto de priorización de flujo no utiliza la interfaz [**IWMStreamList**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamlist) para realizar un seguimiento de la lista de secuencias. En su lugar, debe usar una matriz de estructuras de [**registro de prioridad de secuencia de WM \_ \_ \_**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_stream_priority_record) . Las estructuras deben organizarse en la matriz en orden descendente de prioridad. Además de contener un número de secuencia, la estructura de prioridad de flujo también le permite especificar si una secuencia es obligatoria. Los flujos obligatorios no se quitarán, independientemente de su posición en la lista.
+A diferencia de los objetos de uso compartido de ancho de banda y exclusión mutua, un objeto de priorización de secuencias no usa la interfaz [**IWMStreamList**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamlist) para realizar un seguimiento de la lista de secuencias. En su lugar, debe usar una matriz de [**estructuras WM STREAM PRIORITY \_ \_ \_ RECORD.**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_stream_priority_record) Las estructuras deben organizarse en la matriz en orden descendente de prioridad. Además de contener un número de secuencia, la estructura de prioridad de flujo también permite especificar si una secuencia es obligatoria. Las secuencias obligatorias no se descartarán, independientemente de su posición en la lista.
 
-En el ejemplo de código siguiente se muestra cómo incluir una priorización de flujo en un perfil. Este perfil es para una presentación en aulas, con una secuencia de audio del hablante, una secuencia de vídeo del profesor y un flujo de vídeo que captura las diapositivas de presentación. La secuencia de audio es la más importante y será obligatoria. Las diapositivas de presentación tendrán la prioridad más baja, ya que la imagen será bastante constante, por lo que algunos fotogramas se perderán aquí y no habrá mucha diferencia.
+En el código de ejemplo siguiente se muestra cómo incluir una priorización de secuencia en un perfil. Este perfil es para una presentación de clase, con una secuencia de audio del profesor que habla, una secuencia de vídeo del profesor y una secuencia de vídeo que captura las diapositivas de presentación. La secuencia de audio es la más importante y será obligatoria. Las diapositivas de presentación tendrán la prioridad más baja porque la imagen será bastante constante, por lo que se perderán algunos fotogramas aquí y no habrá mucha diferencia.
 
 
 ```C++
@@ -131,9 +131,9 @@ pProfileMgr = NULL;
 [**Trabajar con perfiles**](working-with-profiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

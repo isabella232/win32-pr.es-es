@@ -34,7 +34,7 @@ switch (switch-type switch-name)
 *switch-type* 
 </dt> <dd>
 
-Especifica un [**tipo int**](int.md), [**char,**](-char.md) [**enum**](enum.md) o un identificador que se resuelve en uno de estos tipos.
+Especifica un [**tipo int,**](int.md) [**char,**](-char.md) [**enum**](enum.md) o un identificador que se resuelve en uno de estos tipos.
 
 </dd> <dt>
 
