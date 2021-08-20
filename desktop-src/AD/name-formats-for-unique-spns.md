@@ -17,7 +17,7 @@ ms.locfileid: "119025723"
 ---
 # <a name="name-formats-for-unique-spns"></a>Formatos de nombre para SPN únicos
 
-Un SPN debe ser único en el bosque en el que está registrado. Si no es único, se producirá un error en la autenticación. La sintaxis de SPN tiene cuatro elementos: dos elementos obligatorios y dos elementos adicionales que puede usar, si es necesario, para generar un nombre único como se muestra en la tabla siguiente.
+Un SPN debe ser único en el bosque en el que está registrado. Si no es único, se producirá un error en la autenticación. La sintaxis de SPN tiene cuatro elementos: dos elementos necesarios y dos elementos adicionales que puede usar, si es necesario, para generar un nombre único como se muestra en la tabla siguiente.
 
 
 ```C++

@@ -63,7 +63,7 @@ Para obtener un ejemplo completo del XML de una tarea que usa una acción ejecut
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

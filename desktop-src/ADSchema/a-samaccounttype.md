@@ -34,8 +34,8 @@ Los valores posibles para este atributo son los siguientes:
 -   SAM \_ NON SECURITY ALIAS OBJECT \_ \_ \_ 0x20000001
 -   Sam \_ USER \_ OBJECT 0x30000000
 -   CUENTA DE USUARIO NORMAL DE SAM \_ \_ \_ 0x30000000
--   Cuenta \_ de MÁQUINA SAM \_ 0x30000001
--   Cuenta \_ de CONFIANZA DE SAM \_ 0x30000002
+-   CUENTA \_ DE MÁQUINA SAM \_ 0x30000001
+-   CUENTA \_ DE CONFIANZA DE SAM \_ 0x30000002
 -   APLICACIÓN \_ SAM BASIC GROUP \_ \_ 0x40000000
 -   GRUPO \_ DE CONSULTAS DE APLICACIONES SAM \_ \_ 0x40000001
 -   TIPO \_ DE CUENTA SAM MAX \_ \_ 0x7fffffff
@@ -48,7 +48,7 @@ Los valores posibles para este atributo son los siguientes:
 | Ldap-Display-Name | sAMAccountType                                                  |
 | Size              | \-                                                              |
 | Actualizar privilegios  | El sistema establece este valor.                                |
-| Frecuencia de actualización  | El sistema operativo establece esto cuando se crea el objeto . |
+| Frecuencia de actualización  | Lo establece el sistema operativo cuando se crea el objeto . |
 | Attribute-Id      | 1.2.840.113556.1.4.302                                          |
 | System-Id-Guid    | 6e7b626c-64f2-11d0-afd2-00c04fd930c9                            |
 | Syntax            | [**Enumeración**](s-enumeration.md)                            |
@@ -68,7 +68,7 @@ Los valores posibles para este atributo son los siguientes:
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -89,7 +89,7 @@ Los valores posibles para este atributo son los siguientes:
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -110,7 +110,7 @@ Los valores posibles para este atributo son los siguientes:
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -131,7 +131,7 @@ Los valores posibles para este atributo son los siguientes:
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -152,7 +152,7 @@ Los valores posibles para este atributo son los siguientes:
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -173,7 +173,7 @@ Los valores posibles para este atributo son los siguientes:
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |

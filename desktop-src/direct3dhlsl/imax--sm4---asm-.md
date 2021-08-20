@@ -1,6 +1,6 @@
 ---
 title: imax (sm4 - asm)
-description: Máximo entero por componente.
+description: Entero entero por componente máximo.
 ms.assetid: 005468AA-577E-441F-ACD5-37A691E62CDD
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,11 +13,11 @@ ms.locfileid: "119672865"
 ---
 # <a name="imax-sm4---asm"></a>imax (sm4 - asm)
 
-Máximo entero por componente.
+Entero entero por componente máximo.
 
 
 
-| imax dest \[ .mask \] , \[  - \] src0 \[ .swzzle, \] \[ - \] src1 \[ .sw swzzle \] , |
+| imax dest \[ \] .mask, \[  - \] src0 \[ .swzzle, \] \[ - \] src1 \[ .swzzle \] , |
 |--------------------------------------------------------------------|
 
 
@@ -29,8 +29,8 @@ Máximo entero por componente.
 | Elemento                                                            | Descripción                                                                                             |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
 | <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en \] El resultado de la operación.<br/> *dest*  =  *src0*  >  *src1* ? *src0:* *src1*<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] El valor que se va a comparar con *src1.*<br/>                                                       |
-| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[en \] El valor que se va a comparar con *src0.*<br/>                                                       |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] El valor que se va a comparar con *src1*.<br/>                                                       |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[en \] El valor que se va a comparar con *src0*.<br/>                                                       |
 
 
 
@@ -60,9 +60,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Shader Model 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
@@ -75,7 +75,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

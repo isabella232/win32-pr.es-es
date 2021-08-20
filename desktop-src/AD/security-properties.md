@@ -5,7 +5,7 @@ ms.assetid: eeb16938-4380-4622-804f-6b2ff19aa68d
 ms.tgt_platform: multiple
 keywords:
 - Atributos de seguridad, mediante AD
-- Atributos de seguridad de usuario de AD
+- Atributos de seguridad de usuario ad
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 5dfe23252002f2ffbbba3f8e8a8faf5a2d36ce348bdbd7503c0d99a816a81902
@@ -31,9 +31,9 @@ El [**atributo accountExpires**](/windows/desktop/ADSchema/a-accountexpires) esp
 <span id="altSecurityIdentities"></span><span id="altsecurityidentities"></span><span id="ALTSECURITYIDENTITIES"></span>[**altSecurityIdentities**](/windows/desktop/ADSchema/a-altsecurityidentities)
 </dt> <dd>
 
-El [**atributo altSecurityIdentities**](/windows/desktop/ADSchema/a-altsecurityidentities) es un atributo multivalor que contiene asignaciones de certificados X.509 o cuentas de usuario de Kerberos externas a este usuario para la autenticación. Varios paquetes de seguridad, incluidos el paquete de autenticación de clave pública y Kerberos, usan estos datos para autenticar a los usuarios cuando presentan la forma alternativa de identificación, como el certificado, UNIX vale kerberos, y así sucesivamente. Cree un token Windows 2000 basado en la cuenta de usuario correspondiente para que pueda acceder a los recursos del sistema.
+El [**atributo altSecurityIdentities**](/windows/desktop/ADSchema/a-altsecurityidentities) es un atributo multivalor que contiene asignaciones de certificados X.509 o cuentas de usuario kerberos externas a este usuario para la autenticación. Varios paquetes de seguridad, incluidos el paquete de autenticación de clave pública y Kerberos, usan estos datos para autenticar a los usuarios cuando presentan la forma alternativa de identificación, como certificado, UNIX vale Kerberos, y así sucesivamente. Compile un token Windows 2000 basado en la cuenta de usuario correspondiente para que pueda acceder a los recursos del sistema.
 
-En el caso de los certificados X.509, los valores deben ser los nombres de emisor y firmante en los certificados 509v3, emitidos por una entidad de certificación pública externa, que se asignan a la cuenta de usuario utilizada para buscar una cuenta para la autenticación. El paquete SSL (Schannel) usa la sintaxis siguiente: X509: <somecertinfotype> somecertinfo. Por ejemplo, el valor siguiente especifica el DN del emisor " " con el \<I\> DN "C=US,O=InternetCA,CN=APublicCertificateAuthority" y el DN sujeto " " con el \<S\> DN "C=US,O=Fabrikam,OU=Sales,CN=Jeff Smith".
+En el caso de los certificados X.509, los valores deben ser los nombres issuer y Subject en los certificados 509v3, emitidos por una entidad de certificación pública externa, que se asignan a la cuenta de usuario usada para buscar una cuenta para la autenticación. El paquete SSL (Schannel) usa la sintaxis siguiente: X509: <somecertinfotype> somecertinfo. Por ejemplo, el siguiente valor especifica el DN emisor " " con el \<I\> DN "C=US,O=InternetCA,CN=APublicCertificateAuthority" y el DN sujeto " " con el \<S\> DN "C=US,O=Fabrikam,OU=Sales,CN=Jeff Smith".
 
 
 ```C++
@@ -42,9 +42,9 @@ X509:<I>C=US,O=InternetCA,CN=APublicCertificateAuthority<S>C=US,O=Fabrikam,OU=Sa
 
 
 
-Tenga en cuenta que \<S\> se admiten " " o \<I> " " y " \<S\> ". No se admite \<I\> tener solo "". Las aplicaciones no deben modificar los valores de " " o " " " porque no se admite la coincidencia \<I\> \<S\> parcial de DN.
+Tenga en cuenta que \<S\> se admiten " " o \<I> " " y " " \<S\> . No se admite \<I\> tener solo "". Las aplicaciones no deben modificar los valores de " " o " " porque no se admite la coincidencia \<I\> \<S\> de DN parcial.
 
-En el caso de las cuentas de Kerberos externas, los valores deben ser el nombre de la cuenta de Kerberos. El paquete kerberos usa la sintaxis siguiente: "Kerberos:MITaccountname". Por ejemplo, el siguiente es el valor de una cuenta en Fabrikam.com:
+En el caso de las cuentas de Kerberos externas, los valores deben ser el nombre de la cuenta kerberos. El paquete kerberos usa la siguiente sintaxis: "Kerberos:MITaccountname". Por ejemplo, el siguiente es el valor de una cuenta en Fabrikam.com:
 
 
 ```C++
@@ -58,7 +58,7 @@ Kerberos:Jeff.Smith@Fabrikam.com
 <span id="badPasswordTime"></span><span id="badpasswordtime"></span><span id="BADPASSWORDTIME"></span>[**badPasswordTime**](/windows/desktop/ADSchema/a-badpasswordtime)
 </dt> <dd>
 
-No replicado. El [**atributo badPasswordTime**](/windows/desktop/ADSchema/a-badpasswordtime) especifica la última vez que el usuario intentó iniciar sesión en la cuenta con una contraseña incorrecta. Este valor se almacena como un entero grande que representa el número de intervalos de 100 nanosegundos desde el 1 de enero de 1601 (UTC). Este atributo se mantiene por separado en cada controlador de dominio del dominio. Un valor de cero significa que se desconoce el último tiempo de contraseña incorrecta. Para obtener un valor preciso para la hora de la última contraseña incorrecta del usuario en el dominio, se debe consultar cada controlador de dominio del dominio y se debe usar el valor más grande.
+No replicado. El [**atributo badPasswordTime**](/windows/desktop/ADSchema/a-badpasswordtime) especifica la última vez que el usuario intentó iniciar sesión en la cuenta con una contraseña incorrecta. Este valor se almacena como un entero grande que representa el número de intervalos de 100 nanosegundos desde el 1 de enero de 1601 (UTC). Este atributo se mantiene por separado en cada controlador de dominio del dominio. Un valor de cero significa que se desconoce la hora de la última contraseña incorrecta. Para obtener un valor preciso para la hora de la última contraseña incorrecta del usuario en el dominio, se debe consultar cada controlador de dominio del dominio y se debe usar el valor más grande.
 
 </dd> <dt>
 
@@ -72,23 +72,23 @@ No replicado. El [**atributo badPwdCount**](/windows/desktop/ADSchema/a-badpwdco
 <span id="codePage"></span><span id="codepage"></span><span id="CODEPAGE"></span>[**Codepage**](/windows/desktop/ADSchema/a-codepage)
 </dt> <dd>
 
-El [**atributo codePage**](/windows/desktop/ADSchema/a-codepage) especifica la página de códigos para el idioma elegido del usuario. Este valor no se usa en Windows 2000.
+El [**atributo codePage**](/windows/desktop/ADSchema/a-codepage) especifica la página de códigos para el idioma elegido del usuario. Este valor no lo usa Windows 2000.
 
 </dd> <dt>
 
 <span id="countryCode"></span><span id="countrycode"></span><span id="COUNTRYCODE"></span>[**countryCode**](/windows/desktop/ADSchema/a-countrycode)
 </dt> <dd>
 
-El [**atributo countryCode**](/windows/desktop/ADSchema/a-countrycode) especifica el código de país o región para el idioma del usuario. Este valor no se usa en Windows 2000.
+El [**atributo countryCode**](/windows/desktop/ADSchema/a-countrycode) especifica el código de país o región para el idioma del usuario. Este valor no lo usa Windows 2000.
 
 </dd> <dt>
 
 <span id="homeDirectory"></span><span id="homedirectory"></span><span id="HOMEDIRECTORY"></span>[**homeDirectory**](/windows/desktop/ADSchema/a-homedirectory)
 </dt> <dd>
 
-El [**atributo homeDirectory**](/windows/desktop/ADSchema/a-homedirectory) especifica la ruta de acceso del directorio principal del usuario. La cadena puede ser null.
+El [**atributo homeDirectory**](/windows/desktop/ADSchema/a-homedirectory) especifica la ruta de acceso del directorio principal del usuario. La cadena puede ser NULL.
 
-Si [**homeDrive**](/windows/desktop/ADSchema/a-homedrive) está establecido y especifica una letra de unidad, [**homeDirectory**](/windows/desktop/ADSchema/a-homedirectory) debe ser una ruta de acceso UNC. La ruta de acceso debe ser una ruta de acceso UNC de red del directorio del recurso \\ \\ compartido del servidor de \\ \\ formularios. Este valor puede ser una cadena null.
+Si [**homeDrive**](/windows/desktop/ADSchema/a-homedrive) está establecido y especifica una letra de unidad, [**homeDirectory**](/windows/desktop/ADSchema/a-homedirectory) debe ser una ruta de acceso UNC. La ruta de acceso debe ser una ruta de acceso UNC de red del directorio del recurso \\ \\ compartido del servidor de \\ \\ formularios. Este valor puede ser una cadena nula.
 
 Si [**homeDrive**](/windows/desktop/ADSchema/a-homedrive) no está establecido, [**homeDirectory**](/windows/desktop/ADSchema/a-homedirectory) debe ser una ruta de acceso local, por ejemplo, C: \\ mylocaldir.
 
@@ -97,7 +97,7 @@ Si [**homeDrive**](/windows/desktop/ADSchema/a-homedrive) no está establecido, 
 <span id="homeDrive"></span><span id="homedrive"></span><span id="HOMEDRIVE"></span>[**homeDrive**](/windows/desktop/ADSchema/a-homedrive)
 </dt> <dd>
 
-El [**atributo homeDrive**](/windows/desktop/ADSchema/a-homedrive) especifica la letra de unidad a la que asignar la ruta de acceso UNC especificada por **homeDirectory**. La letra de unidad debe especificarse en el formato siguiente:
+El [**atributo homeDrive**](/windows/desktop/ADSchema/a-homedrive) especifica la letra de unidad a la que se asignará la ruta de acceso UNC especificada por **homeDirectory**. La letra de unidad debe especificarse con el formato siguiente:
 
 
 ```C++
@@ -122,21 +122,21 @@ Si no se establece este atributo, [**homeDirectory**](/windows/desktop/ADSchema/
 <span id="lastLogoff"></span><span id="lastlogoff"></span><span id="LASTLOGOFF"></span>[**lastLogoff**](/windows/desktop/ADSchema/a-lastlogoff)
 </dt> <dd>
 
-No replicado. El [**atributo lastLogoff**](/windows/desktop/ADSchema/a-lastlogoff) especifica cuándo se produjo el último cierre de sesión. Este valor se almacena como un entero grande que representa el número de intervalos de 100 nanosegundos desde el 1 de enero de 1601 (UTC). La parte alta de este entero grande corresponde al miembro **dwHighDateTime** de la estructura [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) y la parte baja corresponde al **miembro dwLowDateTime** de la estructura **FILETIME.** Este atributo se mantiene por separado en cada controlador de dominio del dominio. Un valor de cero significa que se desconoce la última hora de cierre de sesión. Para obtener un valor preciso para el último cierre de sesión del usuario en el dominio, se debe consultar cada controlador de dominio del dominio y se debe usar el valor más grande.
+No replicado. El [**atributo lastLogoff**](/windows/desktop/ADSchema/a-lastlogoff) especifica cuándo se produjo el último cierre de sesión. Este valor se almacena como un entero grande que representa el número de intervalos de 100 nanosegundos desde el 1 de enero de 1601 (UTC). La parte alta de este entero grande corresponde al miembro **dwHighDateTime** de la estructura [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) y la parte baja corresponde al miembro **dwLowDateTime** de la estructura **FILETIME.** Este atributo se mantiene por separado en cada controlador de dominio del dominio. Un valor de cero significa que se desconoce la última hora de cierre de sesión. Para obtener un valor preciso para el último cierre de sesión del usuario en el dominio, se debe consultar cada controlador de dominio del dominio y se debe usar el valor más grande.
 
 </dd> <dt>
 
 <span id="lastLogon"></span><span id="lastlogon"></span><span id="LASTLOGON"></span>[**lastLogon**](/windows/desktop/ADSchema/a-lastlogon)
 </dt> <dd>
 
-No replicado. El [**atributo lastLogon**](/windows/desktop/ADSchema/a-lastlogon) especifica cuándo se produjo el último inicio de sesión. Este valor se almacena como un entero grande que representa el número de intervalos de 100 nanosegundos desde el 1 de enero de 1601 (UTC). La parte alta de este entero grande corresponde al miembro **dwHighDateTime** de la estructura [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) y la parte baja corresponde al **miembro dwLowDateTime** de la estructura **FILETIME.** Este atributo se mantiene por separado en cada controlador de dominio del dominio. Un valor de cero significa que se desconoce la hora del último inicio de sesión. Para obtener un valor preciso para el último inicio de sesión del usuario en el dominio, se debe consultar cada controlador de dominio del dominio y se debe usar el valor más grande.
+No replicado. El [**atributo lastLogon**](/windows/desktop/ADSchema/a-lastlogon) especifica cuándo se produjo el último inicio de sesión. Este valor se almacena como un entero grande que representa el número de intervalos de 100 nanosegundos desde el 1 de enero de 1601 (UTC). La parte alta de este entero grande corresponde al miembro **dwHighDateTime** de la estructura [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) y la parte baja corresponde al miembro **dwLowDateTime** de la estructura **FILETIME.** Este atributo se mantiene por separado en cada controlador de dominio del dominio. Un valor de cero significa que se desconoce la hora del último inicio de sesión. Para obtener un valor preciso para el último inicio de sesión del usuario en el dominio, se debe consultar cada controlador de dominio del dominio y se debe usar el valor más grande.
 
 </dd> <dt>
 
 <span id="lmPwdHistory"></span><span id="lmpwdhistory"></span><span id="LMPWDHISTORY"></span>[**lmPwdHistory**](/windows/desktop/ADSchema/a-lmpwdhistory)
 </dt> <dd>
 
-El [**atributo lmPwdHistory**](/windows/desktop/ADSchema/a-lmpwdhistory) es el historial de contraseñas del usuario en formato un solo sentido (OWF) de LAN Manager (LM). Lm OWF se usa para la compatibilidad con clientes de LAN Manager 2.x, Windows 95 y Windows 98. Este atributo solo lo usa el sistema operativo. Tenga en cuenta que no puede derivar la contraseña de texto no cifrado del formulario OWF de la contraseña.
+El [**atributo lmPwdHistory**](/windows/desktop/ADSchema/a-lmpwdhistory) es el historial de contraseñas del usuario en formato unívivo (OWF) de LAN Manager (LM). Lm OWF se usa para la compatibilidad con clientes de LAN Manager 2.x, Windows 95 y Windows 98. Este atributo solo lo usa el sistema operativo. Tenga en cuenta que no puede derivar la contraseña de texto no cifrado del formulario OWF de la contraseña.
 
 </dd> <dt>
 
@@ -157,7 +157,7 @@ El [**atributo mail**](/windows/desktop/ADSchema/a-mail) es un atributo de un so
 <span id="maxStorage"></span><span id="maxstorage"></span><span id="MAXSTORAGE"></span>[**maxStorage**](/windows/desktop/ADSchema/a-maxstorage)
 </dt> <dd>
 
-El [**atributo maxStorage**](/windows/desktop/ADSchema/a-maxstorage) especifica la cantidad máxima de espacio en disco duro que el usuario puede usar. Use el **valor \_ USER MAXSTORAGE \_ UNLIMITED** (definido en Lmaccess.h) para usar todo el espacio disponible en disco.
+El [**atributo maxStorage**](/windows/desktop/ADSchema/a-maxstorage) especifica la cantidad máxima de espacio en disco duro que el usuario puede usar. Use el **valor \_ USER MAXSTORAGE \_ UNLIMITED** (definido en Lmaccess.h) para usar todo el espacio en disco disponible.
 
 </dd> <dt>
 
@@ -169,11 +169,11 @@ El [**atributo memberOf**](/windows/desktop/ADSchema/a-memberof) es un atributo 
 -   En un controlador de dominio para el dominio que contiene el usuario, [**memberOf**](/windows/desktop/ADSchema/a-memberof) para el usuario se completa con respecto a la pertenencia a grupos de ese dominio; sin embargo, **memberOf** no contiene la pertenencia del usuario a grupos locales y globales del dominio en otros dominios.
 -   En un servidor GC, [**memberOf**](/windows/desktop/ADSchema/a-memberof) para el usuario se completa con respecto a todas las pertenencias a grupos universales.
 
-Si ambas condiciones son verdaderas para el controlador de dominio, ambos conjuntos de datos se incluyen en [**memberOf**](/windows/desktop/ADSchema/a-memberof).
+Si se cumplen ambas condiciones para el controlador de dominio, ambos conjuntos de datos se incluyen en [**memberOf**](/windows/desktop/ADSchema/a-memberof).
 
 Tenga en cuenta que este atributo enumera los grupos que contienen el usuario en su atributo de miembro; no contiene la lista recursiva de predecesores anidados. Por ejemplo, si el usuario O es miembro del grupo C y los grupos B y B estaban anidados en el grupo A, el atributo [**memberOf**](/windows/desktop/ADSchema/a-memberof) del usuario O enumeraría el grupo C y el grupo B, pero no el grupo A.
 
-Este atributo no se almacena, es un atributo de vínculo back-link calculado.
+Este atributo no se almacena, es un atributo back-link calculado.
 
 </dd> <dt>
 

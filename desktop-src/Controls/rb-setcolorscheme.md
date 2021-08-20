@@ -59,7 +59,7 @@ El control rebar usa la información de combinación de colores al dibujar los e
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

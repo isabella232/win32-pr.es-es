@@ -4,12 +4,12 @@ ms.assetid: c8c269e7-6e2a-4b5d-847c-6779e276b9af
 title: Sistemas de coordenadas (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e3da846ae4b989f6d8cb4741f9df8f7228e8970
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: 140f4791151faa77b617bd5859430a67f13ad957811ca90f60dd53a3df2abb37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118101121"
 ---
 # <a name="coordinate-systems-direct3d-10"></a>Sistemas de coordenadas (Direct3D 10)
 
@@ -42,7 +42,7 @@ El sistema de coordenadas de píxeles de Direct3D 10 define el origen de un dest
 
 ### <a name="pixel-coordinate-system-for-direct3d-9"></a>Sistema de coordenadas de píxeles para Direct3D 9
 
-Como referencia, este es el sistema de coordenadas de píxeles para Direct3D 9, que definió el origen o un destino de representación como el centro del píxel superior izquierdo ,(0,5,0,5) fuera de la esquina superior izquierda, como se muestra en el diagrama siguiente. En Direct3D 9, los centros de píxeles están en ubicaciones enteras.
+Como referencia, este es el sistema de coordenadas de píxeles para Direct3D 9, que definió el origen o un destino de representación como el centro del píxel superior izquierdo, (0,5,0,5) fuera de la esquina superior izquierda, como se muestra en el diagrama siguiente. En Direct3D 9, los centros de píxeles están en ubicaciones enteras.
 
 ![diagrama del sistema de coordenadas de píxeles en direct3d 9](images/d3d10-coordspix9.png)
 
@@ -61,7 +61,7 @@ Para una coordenada normalizada:
 -   Muestreo de punto: Texel \# = floor(U \* Width)
 -   Muestreo lineal: Texel izquierdo \# = floor(U \* Width), Right Texel \# = Left Texel + \# 1
 
-Para una coordenada a escala:
+Para una coordenada escalada:
 
 -   Muestreo de punto: Texel \# = floor(U)
 -   Muestreo lineal: Texel izquierdo \# = floor(U - 0,5), Right Texel \# = Left Texel + \# 1

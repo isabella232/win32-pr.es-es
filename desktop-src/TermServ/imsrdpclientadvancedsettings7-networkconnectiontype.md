@@ -138,7 +138,7 @@ Red de área local (LAN) (10 Mbps o superior)
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

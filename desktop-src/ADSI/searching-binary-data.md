@@ -4,26 +4,26 @@ description: Aunque la característica de búsqueda ADSI solo admite la búsqued
 ms.assetid: 52b75ae0-dbf1-4310-8b6b-a176de9f1b7d
 ms.tgt_platform: multiple
 keywords:
-- Búsqueda de datos binarios ADSI
-- Datos binarios ADSI
-- Datos binarios ADSI, buscar datos binarios
-- ADSI ADSI, código de ejemplo C/C++, buscar datos binarios
+- Búsqueda de ADSI de datos binarios
+- ADSI de datos binarios
+- ADSI de datos binarios, buscar datos binarios
+- ADSI ADSI, código de ejemplo C/C++, búsqueda de datos binarios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0973ff7a769d68abf85e6557fef2e1d434ba3ff4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9f77ead11f4e2d02c6e7ef3e25975a7059c2c057dbc62f71e406bbda3e24c3b2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005425"
 ---
 # <a name="searching-binary-data"></a>Buscar datos binarios
 
-Aunque la característica de búsqueda ADSI solo admite la búsqueda de datos de cadena, es posible buscar datos binarios. Para ello, utilice la función [**ADsEncodeBinaryData**](/windows/desktop/api/Adshlp/nf-adshlp-adsencodebinarydata) para convertir los datos binarios en una cadena que se puede utilizar con los métodos de búsqueda. La búsqueda de datos binarios es especialmente útil al buscar un GUID o SID porque estos tipos de datos se almacenan como datos binarios.
+Aunque la característica de búsqueda ADSI solo admite la búsqueda de datos de cadena, es posible buscar datos binarios. Para ello, use la función [**ADsEncodeBinaryData**](/windows/desktop/api/Adshlp/nf-adshlp-adsencodebinarydata) para convertir los datos binarios en una cadena que se pueda usar con los métodos de búsqueda. La búsqueda de datos binarios es especialmente útil al buscar un GUID o un SID porque estos tipos de datos se almacenan como datos binarios.
 
-Cuando se usa la función [**ADsEncodeBinaryData**](/windows/desktop/api/Adshlp/nf-adshlp-adsencodebinarydata) , la memoria asignada se debe liberar mediante la función [**FreeADsMem**](/windows/desktop/api/Adshlp/nf-adshlp-freeadsmem) .
+Cuando se usa [**la función ADsEncodeBinaryData,**](/windows/desktop/api/Adshlp/nf-adshlp-adsencodebinarydata) la memoria asignada se debe liberar mediante la [**función FreeADsMem.**](/windows/desktop/api/Adshlp/nf-adshlp-freeadsmem)
 
-En el ejemplo de código de C++ siguiente se muestra cómo crear una cadena de consulta para buscar un objeto que tiene un valor **objectGUID** determinado.
+En el siguiente ejemplo de código de C++ se muestra cómo compilar una cadena de consulta para buscar un objeto que tiene un valor **objectGUID** determinado.
 
 
 ```C++
@@ -60,9 +60,9 @@ if(pwszSearch)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

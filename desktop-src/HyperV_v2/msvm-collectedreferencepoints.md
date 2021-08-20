@@ -1,7 +1,7 @@
 ---
-description: Asocia el \_ ReferencePointCollection MSVM a los objetos MSVM \_ VirtualSystemReferencePoint incluidos.
+description: Asocia Msvm \_ ReferencePointCollection a los objetos Msvm \_ VirtualSystemReferencePoint contenidos.
 ms.assetid: 826125c3-0a89-4573-ac28-88588eac248d
-title: Msvm_CollectedReferencePoints (clase)
+title: Msvm_CollectedReferencePoints clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4891d4ec4c613c92c3b5d5a090f2683bfc77dc5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e68c0eb64bd1550966963d9913fd734a7672cbef051bd21281e61e7777ca4857
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118149295"
 ---
-# <a name="msvm_collectedreferencepoints-class"></a>MSVM \_ CollectedReferencePoints (clase)
+# <a name="msvm_collectedreferencepoints-class"></a>Clase \_ CollectedReferencePoints de Msvm
 
-Asocia el [**\_ ReferencePointCollection MSVM**](msvm-referencepointcollection.md) a los objetos [**MSVM \_ VirtualSystemReferencePoint**](msvm-virtualsystemreferencepoint.md) incluidos.
+Asocia [**Msvm \_ ReferencePointCollection a**](msvm-referencepointcollection.md) los objetos [**Msvm \_ VirtualSystemReferencePoint**](msvm-virtualsystemreferencepoint.md) contenidos.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -41,45 +41,45 @@ class Msvm_CollectedReferencePoints : CIM_CollectedMSEs
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ CollectedReferencePoints** tiene estos tipos de miembros:
+La **clase Msvm \_ CollectedReferencePoints** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ CollectedReferencePoints** tiene estas propiedades.
+La **clase Msvm \_ CollectedReferencePoints** tiene estas propiedades.
 
 <dl> <dt>
 
 **Colección**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **MSVM \_ ReferencePointCollection**
+Tipo de datos: **Msvm \_ ReferencePointCollection**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Collection")
+Calificadores: [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Collection")
 </dt> </dl>
 
-Objeto de agrupación o contenedor de [**MSVM \_ ReferencePointCollection**](msvm-referencepointcollection.md) que representa la colección.
+Un [**objeto Msvm \_ ReferencePointCollection**](msvm-referencepointcollection.md) o un objeto "bag" que representa la colección.
 
 </dd> <dt>
 
-**Member**
+**Miembro**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **MSVM \_ VirtualSystemReferencePoint**
+Tipo de datos: **Msvm \_ VirtualSystemReferencePoint**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("miembro")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Member")
 </dt> </dl>
 
-[**MSVM \_ VirtualSystemReferencePoint**](msvm-virtualsystemreferencepoint.md) que contiene los miembros de la colección.
+Un [**objeto \_ VirtualSystemReferencePoint de Msvm**](msvm-virtualsystemreferencepoint.md) que contiene los miembros de la colección.
 
 </dd> </dl>
 
@@ -87,12 +87,12 @@ Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -101,7 +101,7 @@ Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) 
 
 <dl> <dt>
 
-[**\_COLLECTEDMSES CIM**](cim-collectedmses.md)
+[**CIM \_ CollectedMSEs**](cim-collectedmses.md)
 </dt> </dl>
 
  

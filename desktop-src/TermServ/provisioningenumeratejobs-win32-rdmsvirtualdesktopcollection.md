@@ -57,7 +57,7 @@ Este parámetro se puede establecer en uno de los siguientes valores:
 0
 </dt> <dd>
 
-Ejecución de trabajos
+Trabajos en ejecución
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Matriz que contiene los **GUID de los** trabajos de aprovisionamiento que se enu
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,7 +100,7 @@ Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

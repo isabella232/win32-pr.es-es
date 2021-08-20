@@ -1,6 +1,6 @@
 ---
 title: Restricciones de uso de la interfaz
-description: El hardware de GPU actual no admite la variación de la información de ranura en tiempo de ejecución del sombreador. Como consecuencia, las referencias de interfaz no se pueden modificar dentro de una expresión condicional, como una instrucción if o switch.
+description: El hardware de GPU actual no admite distinta información de ranura en tiempo de ejecución del sombreador. Como consecuencia, las referencias de interfaz no se pueden modificar dentro de una expresión condicional, como una instrucción if o switch.
 ms.assetid: 95a505d8-3ec4-49b7-bb2b-f29a655e4225
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,7 +18,7 @@ ms.locfileid: "119672565"
 ---
 # <a name="interface-usage-restrictions"></a>Restricciones de uso de la interfaz
 
-El hardware de GPU actual no admite la variación de la información de ranura en tiempo de ejecución del sombreador. Como consecuencia, las referencias de interfaz no se pueden modificar dentro de una expresión condicional, como una instrucción if o switch.
+El hardware de GPU actual no admite distinta información de ranura en tiempo de ejecución del sombreador. Como consecuencia, las referencias de interfaz no se pueden modificar dentro de una expresión condicional, como una instrucción if o switch.
 
 El siguiente código de sombreador muestra cuándo se producirá esta restricción y un posible enfoque alternativo.
 
@@ -110,7 +110,7 @@ float main() : wicked
 
 
 
-Dadas las mismas declaraciones de interfaz y clase, podría usar un índice para proporcionar la misma funcionalidad y evitar que se desenrolle el bucle forzado.
+Dadas las mismas declaraciones de interfaz y clase, podría usar un índice para proporcionar la misma funcionalidad y evitar la inscripción forzada del bucle.
 
 
 ```

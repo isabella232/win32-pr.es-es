@@ -107,7 +107,7 @@ El segmento de nombre de archivo *de resourceUri* (no *filePath*) se usa como no
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

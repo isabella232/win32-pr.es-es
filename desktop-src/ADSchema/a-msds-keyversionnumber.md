@@ -32,7 +32,7 @@ Número de versión de Kerberos de la clave actual de esta cuenta. Se trata de u
 | CN                | ms-DS-KeyVersionNumber               |
 | Ldap-Display-Name | msDS-KeyVersionNumber                |
 | Size              | \-                                   |
-| Privilegio actualizar  | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1782              |
 | System-Id-Guid    | c523e9c0-33b5-4ac8-8923-b57b927f42f6 |
@@ -52,7 +52,7 @@ Número de versión de Kerberos de la clave actual de esta cuenta. Se trata de u
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -73,7 +73,7 @@ Número de versión de Kerberos de la clave actual de esta cuenta. Se trata de u
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -94,7 +94,7 @@ Número de versión de Kerberos de la clave actual de esta cuenta. Se trata de u
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
@@ -136,7 +136,7 @@ Número de versión de Kerberos de la clave actual de esta cuenta. Se trata de u
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------|
 | Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |

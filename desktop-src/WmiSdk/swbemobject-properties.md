@@ -5,25 +5,25 @@ ms.tgt_platform: multiple
 title: Propiedades de SWbemObject
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 421af70137f901b50a8b059cb6c415d8355419ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63559c43799380ddaa1fd6def7a90b67b499ff09496282f4dfff855cbe2a9df5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707086"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119860335"
 ---
 # <a name="swbemobject-properties"></a>Propiedades de SWbemObject
 
-El objeto [**SWbemObject**](swbemobject.md) expone las siguientes propiedades.
+El [**objeto SWbemObject**](swbemobject.md) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Propiedad de derivación \_**](swbemobject-derivation-.md)
--   [**Propiedad Methods \_**](swbemobject-methods-.md)
--   [**\_Propiedad path**](swbemobject-path-.md)
--   [**\_Propiedad Properties**](swbemobject-properties-.md)
--   [**Propiedad Qualifiers \_**](swbemobject-qualifiers-.md)
--   [**Propiedad de seguridad \_**](swbemobject-security-.md)
+-   [**Derivación, \_ propiedad**](swbemobject-derivation-.md)
+-   [**Propiedad \_ Methods**](swbemobject-methods-.md)
+-   [**Propiedad \_ Path**](swbemobject-path-.md)
+-   [**Propiedad \_ Properties**](swbemobject-properties-.md)
+-   [**\_Qualifiers, propiedad**](swbemobject-qualifiers-.md)
+-   [**Propiedad \_ de seguridad**](swbemobject-security-.md)
 
  
 

@@ -1,24 +1,24 @@
 ---
-title: El método put
-description: Guarda el valor de una propiedad de un objeto Active Directory por nombre en la memoria caché de propiedades.
+title: Método Put
+description: Guarda el valor de una propiedad para un objeto Active Directory por nombre en la caché de propiedades.
 ms.assetid: 8534ceba-5fcb-441f-9e76-3060319478af
 ms.tgt_platform: multiple
 keywords:
-- Colocar ADSI, acerca de
-- ADSI ADSI, Visual Basic de código de ejemplo, mediante el método put
-- propiedades ADSI, guardar un valor para una propiedad en la caché de propiedades
+- Put ADSI ,about
+- ADSI ADSI, código de ejemplo Visual Basic , mediante el método Put
+- ADSI de propiedades, guardar un valor para una propiedad en la caché de propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a64a5cba8056f8eac0125fc5b32fd66bdf988dae
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b8be79892c62d788f711163ec1fad7c555f6e6f0a897f805341a588a4b6d3619
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023213"
 ---
-# <a name="the-put-method"></a>El método put
+# <a name="the-put-method"></a>Método Put
 
-El método [**IADs::P UT**](/windows/desktop/api/Iads/nf-iads-iads-put) guarda el valor de una propiedad de un objeto Active Directory por su nombre en la caché de propiedades. Use [**IADs::P Utex**](/windows/desktop/api/Iads/nf-iads-iads-putex) para guardar las propiedades con varios valores en la caché de propiedades, o para quitar una propiedad de un objeto. Estos valores no se conservan en el servicio de directorio subyacente hasta que se llama a [**IADs:: SetInfo**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) .
+El [**método IADs::P ut**](/windows/desktop/api/Iads/nf-iads-iads-put) guarda el valor de una propiedad para un objeto Active Directory por nombre en la caché de propiedades. Use [**IADs::P utEx**](/windows/desktop/api/Iads/nf-iads-iads-putex) para guardar propiedades multivalor en la caché de propiedades o para quitar una propiedad de un objeto . Estos valores no se conservan en el servicio de directorio subyacente hasta que se llama a [**IADs::SetInfo.**](/windows/desktop/api/Iads/nf-iads-iads-setinfo)
 
 
 ```VB
@@ -53,7 +53,7 @@ End Sub
 
 
 
-En el ejemplo de código siguiente se muestra cómo usar [**IADs::P UT**](/windows/desktop/api/Iads/nf-iads-iads-put) con un solo valor:
+En el ejemplo de código siguiente se muestra cómo usar [**IADs::P ut**](/windows/desktop/api/Iads/nf-iads-iads-put) con un solo valor:
 
 
 ```VB
@@ -82,7 +82,7 @@ CleanUp:
 
 
 
-En el ejemplo de código siguiente se muestra cómo usar [**IADs::P UT**](/windows/desktop/api/Iads/nf-iads-iads-put) con varios valores:
+En el ejemplo de código siguiente se muestra cómo usar [**IADs::P ut**](/windows/desktop/api/Iads/nf-iads-iads-put) con varios valores:
 
 
 ```VB
@@ -115,7 +115,7 @@ CleanUp:
 
 
 
-En el ejemplo de código siguiente se muestra cómo usar [**IADs::P UT**](/windows/desktop/api/Iads/nf-iads-iads-put) con varios valores y únicos:
+En el ejemplo de código siguiente se muestra cómo usar [**IADs::P ut**](/windows/desktop/api/Iads/nf-iads-iads-put) con valores múltiples y únicos:
 
 
 ```C++
@@ -173,9 +173,9 @@ int main(int argc, char* argv[], LPWSTR pszADsPath)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

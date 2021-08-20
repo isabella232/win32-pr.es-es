@@ -1,7 +1,7 @@
 ---
-description: Se llama al método OnStartStreaming cuando el filtro comienza el streaming.
+description: Se llama al método OnStartStreaming cuando el filtro comienza a transmitirse.
 ms.assetid: 02a5b334-f6c4-4cba-8882-c6b36d97feb3
-title: Método CBaseRenderer. OnStartStreaming (Renbase. h)
+title: Método CBaseRenderer.OnStartStreaming (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 66433795b0674e1d2d5b7a7de5b1dcd1b50eb424
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1b0f050222b0ca6a88c7cf1d9348597e4d7b68f2a2ed431b4f6843afe97efd5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118157678"
 ---
-# <a name="cbaserendereronstartstreaming-method"></a>CBaseRenderer. OnStartStreaming, método
+# <a name="cbaserendereronstartstreaming-method"></a>Método CBaseRenderer.OnStartStreaming
 
-`OnStartStreaming`Se llama al método cuando el filtro comienza el streaming.
+Se `OnStartStreaming` llama al método cuando el filtro comienza la transmisión por secuencias.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**CBaseRenderer:: StartStreaming**](cbaserenderer-startstreaming.md) llama a este método. No realiza ninguna acción en la clase base, pero la clase derivada puede invalidarla.
+El [**método CBaseRenderer::StartStreaming**](cbaserenderer-startstreaming.md) llama a este método. No hace nada en la clase base, pero la clase derivada puede invalidarla.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ El método [**CBaseRenderer:: StartStreaming**](cbaserenderer-startstreaming.md)
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ El método [**CBaseRenderer:: StartStreaming**](cbaserenderer-startstreaming.md)
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

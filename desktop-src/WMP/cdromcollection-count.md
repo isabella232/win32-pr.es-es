@@ -1,9 +1,9 @@
 ---
-title: CdromCollection. Count
-description: La propiedad Count recupera el número de unidades de CD y DVD disponibles en el sistema.
+title: CdromCollection.count
+description: La propiedad count recupera el número de unidades de CD y DVD disponibles en el sistema.
 ms.assetid: 98d24713-6a55-409f-af9a-fc941ad6d8f5
 keywords:
-- CdromCollection. Count Windows Media Player
+- CdromCollection.count Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf7150ca31caaf68fa51ae42fded223d24a8e59f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0db279f746640d09fac8b3852773afc27330fc9ca48d59a1470de7d42709e60f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119864105"
 ---
-# <a name="cdromcollectioncount"></a>CdromCollection. Count
+# <a name="cdromcollectioncount"></a>CdromCollection.count
 
-La propiedad **Count** recupera el número de unidades de CD y DVD disponibles en el sistema.
+La **propiedad count** recupera el número de unidades de CD y DVD disponibles en el sistema.
 
 ``` syntax
 player.cdromCollection.count
@@ -32,19 +32,19 @@ player.cdromCollection.count
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de solo lectura (**Long**).
+Esta propiedad es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
-Las unidades de DVD-ROM se cuentan exactamente como las unidades de CD. Sin embargo, el control Media Player de Windows solo admite la funcionalidad de DVD para Windows XP o sistemas operativos posteriores. Normalmente, las unidades de DVD pueden reproducir un CD, pero las unidades de CD no pueden reproducir medios de DVD.
+Las unidades de DVD-ROM se cuentan exactamente igual que las unidades de CD. Sin embargo, el control Reproductor de Windows Media solo admite la funcionalidad de DVD para Windows XP o sistemas operativos posteriores. Normalmente, las unidades de DVD pueden reproducir medios de CD, pero las unidades de CD no pueden reproducir medios de DVD.
 
-**Windows Media Player 10 Mobile:** Este método siempre devuelve 0.
+**Reproductor de Windows Media 10 Mobile:** Este método siempre devuelve 0.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *CdromCollection*. **recuento** para mostrar el número de unidades de CD y DVD disponibles en el equipo del usuario. El objeto Player se creó con ID = "Player".
+En el ejemplo JScript siguiente se *usa CdromCollection*. **count** para mostrar el número de unidades de CD y DVD disponibles en el equipo del usuario. El objeto player se creó con id. = "Player".
 
 
 ```JScript
@@ -66,7 +66,7 @@ alert(displayString);
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/>                               |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/>                               |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -75,13 +75,13 @@ alert(displayString);
 
 <dl> <dt>
 
-[**Objeto CdromCollection**](cdromcollection-object.md)
+[**CdromCollection (objeto)**](cdromcollection-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configuración.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configuración.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

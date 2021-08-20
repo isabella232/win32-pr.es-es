@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_SETCMDID (commctrl. h)
+title: TB_SETCMDID mensaje (Commctrl.h)
 description: Establece el identificador de comando de un botón de la barra de herramientas.
 ms.assetid: 0674c905-2d9d-45d3-b565-2f3bcd7d6383
 keywords:
-- TB_SETCMDID controles de mensajes de Windows
+- TB_SETCMDID controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f91cc4fd4d70e912bed3163cdf783e8e17ab463
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 539fb03899a6a763a94a7cd2fd1b7e8be071f04e26e21f19e9ff53640b87be1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118167610"
 ---
-# <a name="tb_setcmdid-message"></a>\_Mensaje SETCMDID TB
+# <a name="tb_setcmdid-message"></a>Mensaje \_ SETCMDID de TB
 
 Establece el identificador de comando de un botón de la barra de herramientas.
 
@@ -45,17 +45,17 @@ Identificador del comando.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: QuadReadLaneAt función)
-description: Devuelve el valor de origen especificado de la calle identificada por el ID. de calle dentro del cuádruple actual.
+title: Función QuadReadLaneAt
+description: Devuelve el valor de origen especificado del camino identificado por el identificador de la calle dentro del cuadrándido actual.
 ms.assetid: 5CD7EE4C-E64E-46A3-ABDC-1BF65D0F96BE
 keywords:
-- QuadReadLaneAt de función HLSL
+- Función HLSL de QuadReadLaneAt
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ddc772c2dca66873891483431eab14ad504da77e
-ms.sourcegitcommit: f01bc6744cea55ad1aeeace7981a30b567e6fe60
+ms.openlocfilehash: a6c06fc1118496c0f87b39ea73dfa9a515d2f2f684eb7258979c7c93dfc4eea1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104488536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118088651"
 ---
-# <a name="quadreadlaneat-function"></a>QuadReadLaneAt función)
+# <a name="quadreadlaneat-function"></a>Función QuadReadLaneAt
 
-Devuelve el valor de origen especificado de la calle identificada por el ID. de calle dentro del cuádruple actual.
+Devuelve el valor de origen especificado del camino identificado por el identificador de la calle dentro del cuadrándido actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,29 +40,29 @@ Devuelve el valor de origen especificado de la calle identificada por el ID. de 
 
 <dl> <dt>
 
-*Valor* 
+*sourceValue* 
 </dt> <dd>
 
-El tipo solicitado.
+Tipo solicitado.
 
 </dd> <dt>
 
 *quadLaneID* 
 </dt> <dd>
 
-El identificador de la calle; Este será un valor de 0 a 3.
+El identificador de la calle; será un valor de 0 a 3.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Valor de origen especificado. El resultado de esta función es uniforme en todo el cuádruple. Si la calle de origen está inactiva, los resultados son indefinidos.
+Valor de origen especificado. El resultado de esta función es uniforme en el cuadrándular. Si el carril de origen está inactivo, los resultados no están definidos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información sobre las cuádruples, consulte [información general sobre el modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md).
+Para obtener más información sobre los cuatros, consulte [Información general del modelo de sombreador 6.](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 
-Esta función se admite desde el modelo de sombreador 6,0 solo en los sombreadores de píxeles y de cálculo.
+Esta función solo se admite desde el modelo de sombreador 6.0 en sombreadores de cálculo y píxeles.
 
 
 
@@ -72,7 +72,7 @@ Esta función se admite desde el modelo de sombreador 6,0 solo en los sombreador
 
 <dl> <dt>
 
-[Modelo de sombreador 6](shader-model-6-0.md)
+[Shader Model 6](shader-model-6-0.md)
 </dt> </dl>
 
  

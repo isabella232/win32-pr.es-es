@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase EsentVersionStoreEntryTooBigException'
+description: 'Más información sobre: Clase EsentVersionStoreEntryTooBigException'
 title: Clase EsentVersionStoreEntryTooBigException
 TOCTitle: EsentVersionStoreEntryTooBigException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentVersionStoreEntryTooBigException
@@ -24,29 +24,29 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9a7e33c748b8d9b53d3c6d2ee6b722a6dd4ae831
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 211e7f948d8b74582dc06ae5f8304c2c6798d3fc5ad2602aa24b34d5e2ff25b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118077795"
 ---
 # <a name="esentversionstoreentrytoobigexception-class"></a>Clase EsentVersionStoreEntryTooBigException
 
-Clase base para JET_err. Excepciones VersionStoreEntryTooBig.
+Clase base para JET_err. Excepciones versionStoreEntryTooBig.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        Microsoft. ISAM. esent. Interop. EsentVersionStoreEntryTooBigException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        Microsoft.Isam.Esent.Interop.EsentVersionStoreEntryTooBigException  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -72,4 +72,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de EsentVersionStoreEntryTooBigException](./esentversionstoreentrytoobigexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

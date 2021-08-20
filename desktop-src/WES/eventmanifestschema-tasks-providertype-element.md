@@ -1,9 +1,9 @@
 ---
-title: Tasks (ProviderType) (elemento)
-description: Define una lista de tareas que un proveedor puede usar para agrupar los eventos.
+title: elemento tasks (ProviderType)
+description: Define una lista de tareas que un proveedor puede usar para agrupar eventos.
 ms.assetid: 79da130a-10f4-440e-a3e3-7198f23e3450
 keywords:
-- elemento Tasks EventLog
+- elemento tasks EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1326bc8cfbdec0af707733db2da6e67ff3f9e47a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cd22a80ae0c4437aff35a3502ea0f43e638c58483042fe9109a387cb1317ea6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120005905"
 ---
-# <a name="tasks-providertype-element"></a>Tasks (ProviderType) (elemento)
+# <a name="tasks-providertype-element"></a>elemento tasks (ProviderType)
 
-Define una lista de tareas que un proveedor puede usar para agrupar los eventos.
+Define una lista de tareas que un proveedor puede usar para agrupar eventos.
 
 ``` syntax
 <xs:element name="tasks"
@@ -30,7 +30,7 @@ Define una lista de tareas que un proveedor puede usar para agrupar los eventos.
  />
 ```
 
-El elemento **Tasks** se define mediante el tipo complejo de [**ProviderType**](eventmanifestschema-providertype-complextype.md) .
+El **elemento tasks** se define mediante el tipo complejo [**ProviderType.**](eventmanifestschema-providertype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **Tasks** se define mediante el tipo complejo de [**ProviderType**](
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento **Tasks** se define mediante el tipo complejo de [**ProviderType**](
 **Elemento primario**
 </dt> <dt>
 
-[**proveedor (EventsType)**](eventmanifestschema-provider-eventstype-element.md)
+[**provider (EventsType)**](eventmanifestschema-provider-eventstype-element.md)
 </dt> </dl>
 
  

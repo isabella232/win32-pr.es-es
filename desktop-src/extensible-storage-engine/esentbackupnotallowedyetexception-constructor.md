@@ -52,7 +52,7 @@ Dim instance As New EsentBackupNotAllowedYetException()
 public EsentBackupNotAllowedYetException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

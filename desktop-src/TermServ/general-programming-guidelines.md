@@ -23,7 +23,7 @@ En las secciones siguientes se proporcionan instrucciones generales para desarro
 [Capa de compatibilidad de aplicaciones](application-compatibility-layer.md)
 </dt> <dd>
 
-Para ejecutar aplicaciones heredadas en un Servicios de Escritorio remoto de aplicaciones, puede usar el Servicios de Escritorio remoto compatibilidad de aplicaciones.
+Para ejecutar aplicaciones heredadas en un entorno Servicios de Escritorio remoto, puede usar el Servicios de Escritorio remoto compatibilidad de aplicaciones.
 
 </dd> <dt>
 

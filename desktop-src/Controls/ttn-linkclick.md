@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TTN_LINKCLICK (commctrl. h)
-description: Se envía cuando se hace clic en un vínculo de texto dentro de una información sobre herramientas de globo. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: TTN_LINKCLICK de notificación (Commctrl.h)
+description: Se envía cuando se hace clic en un vínculo de texto dentro de la información sobre herramientas de un globo. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: d3e76431-5b5f-4d67-8528-db21fd939917
 keywords:
-- TTN_LINKCLICK controles de código de notificación de Windows
+- TTN_LINKCLICK código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c90be24910c2739b4495b651abf97156342d955b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a2a31b1f942627ee22fb050bbddd0b74ac10dd09a7a8f14018189620f6c8155f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118166101"
 ---
-# <a name="ttn_linkclick-notification-code"></a>Código de notificación de LINKCLICK de TTN \_
+# <a name="ttn_linkclick-notification-code"></a>Código de notificación de TTN \_ LINKCLICK
 
-Se envía cuando se hace clic en un vínculo de texto dentro de una información sobre herramientas de globo. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Se envía cuando se hace clic en un vínculo de texto dentro de la información sobre herramientas de un globo. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -38,14 +38,14 @@ Este código de notificación no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se usa el valor devuelto.
+Valor devuelto no utilizado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El siguiente es un ejemplo de Cuándo se envía esta notificación. Supongamos que la información sobre herramientas de globo contiene el texto siguiente, "este es un <A>vínculo</A>". Cuando se hace clic en "link", el control ToolTip envía un \_ código de notificación TTN LINKCLICK.
+A continuación se muestra un ejemplo de cuándo se envía esta notificación. Suponga que la información sobre herramientas del globo contiene el texto siguiente, "This is a link" (Este es <A>un vínculo).</A> Cuando se hace clic en "vínculo", el control de información sobre herramientas envía un código de notificación \_ LINKCLICK de TTN.
 
 > [!Note]  
-> Para usar este código de notificación, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar este código de notificación, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -53,11 +53,11 @@ El siguiente es un ejemplo de Cuándo se envía esta notificación. Supongamos q
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

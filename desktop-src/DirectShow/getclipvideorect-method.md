@@ -1,24 +1,24 @@
 ---
-description: El método GetClipVideoRect recupera el rectángulo de recorte definido actualmente para la pantalla de vídeo.
+description: El método GetClipVideoRect recupera el rectángulo de recorte definido actualmente para la presentación del vídeo.
 ms.assetid: ea24649f-206e-4557-bff3-9f289710d1b4
-title: Método GetClipVideoRect
+title: GetClipVideoRect (método)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e3a4b1fd4985ab7efdc02ac57bb67ecc43bafed
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c9dff88f1b2ac7b1ae2e446347ed0e288fc2fa3b0a1b3b860a67d5af06b9f552
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117999970"
 ---
-# <a name="getclipvideorect-method"></a>Método GetClipVideoRect
+# <a name="getclipvideorect-method"></a>GetClipVideoRect (método)
 
 > [!Note]  
 > Este componente está disponible para su uso en los sistemas operativos Microsoft Windows 2000, Windows XP y Windows Server 2003. En versiones posteriores podría modificarse o no estar disponible.
 
  
 
-El `GetClipVideoRect` método recupera el rectángulo de recorte definido actualmente para la pantalla de vídeo.
+El `GetClipVideoRect` método recupera el rectángulo de recorte definido actualmente para la presentación del vídeo.
 
 ``` syntax
 [ oClipRect = ] MSWebDVD.GetClipVideoRect()
@@ -26,7 +26,7 @@ El `GetClipVideoRect` método recupera el rectángulo de recorte definido actual
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un objeto [DVDRect](dvdrect-object.md) que define el rectángulo.
+Devuelve un [objeto DVDRect](dvdrect-object.md) que define el rectángulo.
 
 ## <a name="see-also"></a>Vea también
 

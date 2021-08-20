@@ -13,16 +13,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: acc05e201fcf153ab2156d4a360ce36b4539cd57
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 107325b329fcc51f474dd3ac9ea3a16e8882ff55114012d87a303ac73647bb37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118817991"
 ---
 # <a name="pragma-instanceflags"></a>pragma instanceflags
 
-El comando de preprocesador **pragma instanceflags** controla la manera en que se crean o actualizan las instancias en función de las marcas especificadas.
+El **comando pragma instanceflags** preprocessor controla la forma en que se crean o actualizan las instancias en función de las marcas especificadas.
 
 A continuación se describe la sintaxis:
 
@@ -33,13 +33,13 @@ A continuación se describe la sintaxis:
 
 
 
-La *\[ marca \]* debe ser uno de los argumentos siguientes.
+*\[ La \]* marca debe ser uno de los argumentos siguientes.
 
 
 
 | Marca       | Descripción                                                                                                |
 |------------|------------------------------------------------------------------------------------------------------------|
-| createonly | Impide que el compilador cambie cualquier instancia existente en el archivo MOF.                                |
+| createonly | Impide que el compilador cambie las instancias existentes en el archivo MOF.                                |
 | updateonly | Impide que el compilador cree nuevas instancias si no existe una instancia especificada en el archivo MOF. |
 
 
@@ -61,7 +61,7 @@ En el ejemplo siguiente se muestra cómo usar este comando.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |

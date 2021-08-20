@@ -57,7 +57,7 @@ Este evento no devuelve un valor.
 
 El nombre de la lista de reproducción actual se puede usar para recuperar el objeto **Playlist** correspondiente mediante *PlaylistCollection*. **Método getByName.**
 
-El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media y se puede acceder a un método o pasarlo a un método en un archivo JScript importado con el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la mayúscula.
+El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media y se puede tener acceso a un método de un archivo JScript importado con el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la inclusión en mayúsculas.
 
 **Reproductor de Windows Media 10 Mobile:** Este evento no se admite.
 
@@ -72,7 +72,7 @@ El valor de los parámetros de evento se especifica mediante Reproductor de Wind
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

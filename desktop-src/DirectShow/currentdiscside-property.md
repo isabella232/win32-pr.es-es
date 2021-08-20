@@ -4,12 +4,12 @@ ms.assetid: a5210a58-bbb0-41fa-b546-1597ca0186e4
 title: Propiedad CurrentDiscSide
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1916abf097636b36bc911151aa90438b4ecc284
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3669b052fabba04b761e5b2944bc79fb50ef4d646fa25b3fb9d097ec90a50a1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152021"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118155889"
 ---
 # <a name="currentdiscside-property"></a>Propiedad CurrentDiscSide
 
@@ -26,11 +26,11 @@ La `CurrentDiscSide` propiedad recupera el lado actual del disco.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor entero que representa el lado actual; Side A = 1 y Side B = 2.
+Devuelve un valor entero que representa el lado actual; Lado A = 1 y Lado B = 2.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad es de solo lectura y no tiene ningún valor predeterminado.
+Esta propiedad es de solo lectura sin ningún valor predeterminado.
 
  
 

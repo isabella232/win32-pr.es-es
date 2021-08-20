@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118159861"
 ---
-# <a name="avenccommonminbitrate-property"></a>Propiedad AVEncCommonMinBitRate
+# <a name="avenccommonminbitrate-property"></a>AvEncCommonMinBitRate, propiedad
 
 Especifica la velocidad de bits mínima, en bits por segundo. Esta propiedad solo se aplica a los modos de codificación de velocidad de bits constante (CBR) y velocidad de bits variable (VBR).
 
@@ -45,7 +45,7 @@ El codificador aplica la velocidad de bits mínima al aumentar la calidad de cod
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

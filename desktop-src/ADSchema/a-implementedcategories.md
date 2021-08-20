@@ -1,11 +1,11 @@
 ---
-title: Implemented-Categories atributo)
-description: Este atributo contiene una lista de identificadores de categoría de componentes que este objeto implementa.
+title: Implemented-Categories atributo
+description: Este atributo contiene una lista de los id. de categoría de componente que implementa este objeto.
 ms.assetid: b6926004-cfda-4b81-a6b5-527c641019f7
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Implemented-Categories
-- implementedCategories esquema de AD de atributos
+- Implemented-Categories esquema de AD de atributo
+- esquema de AD del atributo implementedCategories
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3597eb853415717a5f45c2f3359fc0d708e45567
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 18169495c8f9116de5f80f70ed0aa6a4102b9350ffaa7d10dede51e9ccc498b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118176657"
 ---
-# <a name="implemented-categories-attribute"></a>Implemented-Categories atributo)
+# <a name="implemented-categories-attribute"></a>Implemented-Categories atributo
 
-Este atributo contiene una lista de identificadores de categoría de componentes que este objeto implementa.
+Este atributo contiene una lista de los id. de categoría de componente que implementa este objeto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Implemented-Categories                                |
-| Nombre para mostrar de LDAP | implementedCategories                                 |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | implementedCategories                                 |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.320                                |
-| System-ID-GUID    | 7d6c0e92-7e20-11d0-afd6-00c04fd930c9                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 7d6c0e92-7e20-11d0-afd6-00c04fd930c9                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,13 +55,13 @@ Este atributo contiene una lista de identificadores de categoría de componentes
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
 | Está indexado             | True                                                         |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000001                                                   |
@@ -76,13 +76,13 @@ Este atributo contiene una lista de identificadores de categoría de componentes
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | True                                                         |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000001                                                   |
@@ -95,15 +95,15 @@ Este atributo contiene una lista de identificadores de categoría de componentes
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | True                                                         |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000001                                                   |
@@ -116,15 +116,15 @@ Este atributo contiene una lista de identificadores de categoría de componentes
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | True                                                         |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000001                                                   |
@@ -139,13 +139,13 @@ Este atributo contiene una lista de identificadores de categoría de componentes
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | True                                                         |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000001                                                   |
@@ -160,13 +160,13 @@ Este atributo contiene una lista de identificadores de categoría de componentes
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | True                                                         |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000001                                                   |

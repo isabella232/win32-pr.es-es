@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_ROOT_DESCRIPTOR estructura (D3dx12. h)
-description: Una estructura auxiliar para habilitar la inicialización sencilla de una \_ \_ estructura de descriptor raíz D3D12.
+title: CD3DX12_ROOT_DESCRIPTOR estructura (D3dx12.h)
+description: Estructura auxiliar para permitir la inicialización sencilla de una estructura DE DESCRIPTOR RAÍZ D3D12. \_ \_
 ms.assetid: DB05BAB7-DD30-4EC7-8D66-C0B2D8DD7BAC
 keywords:
-- Estructura de CD3DX12_ROOT_DESCRIPTOR
+- CD3DX12_ROOT_DESCRIPTOR estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 710064436e0287b570700ff5812b728ca62be56d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c2e850cf89bf6f6dd05803228f02032a00d6e8ecdf8e55258c9fc043faf4e3bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118808524"
 ---
-# <a name="cd3dx12_root_descriptor-structure"></a>CD3DX12 \_ \_ estructura de descriptor raíz
+# <a name="cd3dx12_root_descriptor-structure"></a>Estructura DEL \_ DESCRIPTOR RAÍZ DE CD3DX12 \_
 
-Una estructura auxiliar para habilitar la inicialización sencilla de una estructura de [**\_ \_ descriptor raíz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor) .
+Estructura auxiliar para permitir la inicialización sencilla de una [**estructura DE \_ DESCRIPTOR \_ RAÍZ D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,52 +45,52 @@ struct CD3DX12_ROOT_DESCRIPTOR  : public D3D12_ROOT_DESCRIPTOR{
 
 <dl> <dt>
 
-**\_Descriptor raíz CD3DX12 \_ ()**
+**DESCRIPTOR RAÍZ CD3DX12() \_ \_**
 </dt> <dd>
 
-Crea una nueva instancia no inicializada de un \_ \_ descriptor raíz CD3DX12.
+Crea una nueva instancia sin inicializar de un DESCRIPTOR RAÍZ CD3DX12. \_ \_
 
 </dd> <dt>
 
-**descriptor de raíz de CD3DX12 explícito \_ \_ ( \_ \_ &o descriptor de raíz const D3D12)**
+**EXPLICIT CD3DX12 \_ ROOT \_ DESCRIPTOR(const D3D12 \_ ROOT DESCRIPTOR &\_ o)**
 </dt> <dd>
 
-Crea una nueva instancia de un \_ \_ descriptor raíz CD3DX12, inicializada con el contenido de otra estructura de [**\_ \_ descriptor raíz D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor) .
+Crea una nueva instancia de un DESCRIPTOR RAÍZ CD3DX12, inicializado con el contenido de otra estructura DE \_ \_ DESCRIPTOR [**\_ \_ RAÍZ D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor)
 
 </dd> <dt>
 
-**\_ \_ Descriptor raíz de CD3DX12 (uint SHADERREGISTER, uint registerSpace = 0)**
+**CD3DX12 \_ \_ ROOT DESCRIPTOR(UINT shaderRegister, UINT registerSpace = 0)**
 </dt> <dd>
 
-Crea una nueva instancia de un \_ \_ descriptor raíz CD3DX12, inicializando los parámetros siguientes:
+Crea una nueva instancia de un DESCRIPTOR RAÍZ CD3DX12, \_ \_ inicializando los parámetros siguientes:
 
-UINT shaderRegister
+Sombreador UINTRegistrar
 
-rechace UINT registerSpace = 0
+(opt) UINT registerSpace = 0
 
 </dd> <dt>
 
-**Init en línea (UINT shaderRegister, UINT registerSpace = 0)**
+**inline Init(UINT shaderRegister, UINT registerSpace = 0)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
 
-UINT shaderRegister
+Sombreador UINTRegistrar
 
-rechace UINT registerSpace = 0
+(opt) UINT registerSpace = 0
 
 </dd> <dt>
 
-**Init inline init (D3D12 \_ root \_ descriptor &Table, uint SHADERREGISTER, uint registerSpace = 0)**
+**static inline Init(D3D12 \_ ROOT \_ DESCRIPTOR &table, UINT shaderRegister, UINT registerSpace = 0)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
 
-[**D3D12 \_ Tabla de &de \_ descriptor raíz**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor)
+[**D3D12 \_ Tabla \_ de &DESCRIPTOR**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor) RAÍZ
 
-UINT shaderRegister
+Sombreador UINTRegistrar
 
-rechace UINT registerSpace = 0
+(opt) UINT registerSpace = 0
 
 </dd> </dl>
 
@@ -100,7 +100,7 @@ rechace UINT registerSpace = 0
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -108,7 +108,7 @@ rechace UINT registerSpace = 0
 
 <dl> <dt>
 
-[**\_Descriptor raíz de D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor)
+[**DESCRIPTOR RAÍZ D3D12 \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_descriptor)
 </dt> <dt>
 
 [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)

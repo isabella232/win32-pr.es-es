@@ -1,11 +1,11 @@
 ---
-title: IWMPControls3 getAudioLanguageDescription, método
+title: Método IWMPControls3 getAudioLanguageDescription
 description: El método getAudioLanguageDescription devuelve la descripción del idioma de audio correspondiente al índice basado en uno especificado.
 ms.assetid: bf3db27f-ba14-409e-8942-fe863d6f3670
 keywords:
-- método getAudioLanguageDescription de Windows Media Player
-- método getAudioLanguageDescription Windows Media Player, interfaz IWMPControls3
-- Interfaz IWMPControls3 Windows Media Player, método getAudioLanguageDescription
+- Método getAudioLanguageDescription Reproductor de Windows Media
+- Método getAudioLanguageDescription Reproductor de Windows Media , interfaz IWMPControls3
+- Interfaz IWMPControls3 Reproductor de Windows Media , método getAudioLanguageDescription
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb45ceb166ca9c948823e516029569e457f35e27
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1172fd119671a8452ac581d3c3a27efd890456cec98f1ef8d6e61340a54c4404
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861875"
 ---
-# <a name="iwmpcontrols3getaudiolanguagedescription-method"></a>IWMPControls3:: getAudioLanguageDescription (método)
+# <a name="iwmpcontrols3getaudiolanguagedescription-method"></a>IWMPControls3::getAudioLanguageDescription (método)
 
-El método **getAudioLanguageDescription** devuelve la descripción del idioma de audio correspondiente al índice basado en uno especificado.
+El **método getAudioLanguageDescription** devuelve la descripción del idioma de audio correspondiente al índice basado en uno especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,22 +53,22 @@ Implements IWMPControls3.getAudioLanguageDescription
 
 <dl> <dt>
 
-*lIndex* \[ de\]
+*lIndex* \[ En\]
 </dt> <dd>
 
-**System. Int32** que es el índice del lenguaje de audio basado en uno.
+**System.Int32 que** es el índice de lenguaje de audio basado en uno.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**System. String** que es la descripción del lenguaje de audio.
+**System.String que** es la descripción del idioma de audio.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el caso de contenido basado en Windows Media, las propiedades y los métodos relacionados con la selección de idioma solo admiten una salida única.
+Para Windows contenido basado en medios, las propiedades y los métodos relacionados con la selección de idioma solo admiten una única salida.
 
-Use la propiedad **audioLanguageCount** para obtener el número de idiomas de audio admitidos y, a continuación, acceda a un idioma de audio individualmente mediante un índice basado en uno.
+Use la **propiedad audioLanguageCount** para obtener el número de idiomas de audio admitidos y, a continuación, acceda a un idioma de audio individualmente mediante un índice basado en uno.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Use la propiedad **audioLanguageCount** para obtener el número de idiomas de au
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -89,19 +89,19 @@ Use la propiedad **audioLanguageCount** para obtener el número de idiomas de au
 [**Interfaz IWMPControls3 (VB y C#)**](iwmpcontrols3--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls3. audioLanguageCount (VB y C#)**](wmplibiwmpcontrols3-iwmpcontrols3-audiolanguagecount--vb-and-c.md)
+[**IWMPControls3.audioLanguageCount (VB y C#)**](wmplibiwmpcontrols3-iwmpcontrols3-audiolanguagecount--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls3. currentAudioLanguageIndex (VB y C#)**](wmplibiwmpcontrols3-iwmpcontrols3-currentaudiolanguageindex--vb-and-c.md)
+[**IWMPControls3.currentAudioLanguageIndex (VB y C#)**](wmplibiwmpcontrols3-iwmpcontrols3-currentaudiolanguageindex--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls3. currentAudioLanguage (VB y C#)**](wmplibiwmpcontrols3-iwmpcontrols3-currentaudiolanguage--vb-and-c.md)
+[**IWMPControls3.currentAudioLanguage (VB y C#)**](wmplibiwmpcontrols3-iwmpcontrols3-currentaudiolanguage--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls3. getAudioLanguageID (VB y C#)**](wmplibiwmpcontrols3-iwmpcontrols3-getaudiolanguageid--vb-and-c.md)
+[**IWMPControls3.getAudioLanguageID (VB y C#)**](wmplibiwmpcontrols3-iwmpcontrols3-getaudiolanguageid--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPControls3. getLanguageName (VB y C#)**](wmplibiwmpcontrols3-iwmpcontrols3-getlanguagename--vb-and-c.md)
+[**IWMPControls3.getLanguageName (VB y C#)**](wmplibiwmpcontrols3-iwmpcontrols3-getlanguagename--vb-and-c.md)
 </dt> </dl>
 
  

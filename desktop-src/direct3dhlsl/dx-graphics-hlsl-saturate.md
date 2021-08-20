@@ -1,6 +1,6 @@
 ---
-title: saturación (referencia de HLSL)
-description: Fija el valor especificado en el intervalo de 0 a 1.
+title: saturate (referencia hlsl)
+description: Fija el valor especificado dentro del intervalo de 0 a 1.
 ms.assetid: efe4dedd-732a-4643-8a57-61814434f6ff
 keywords:
 - saturar HLSL
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 609443bdc1d0cff6a4c81c8eb26d86a30ea1e721
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2927ec88a1bda09ca741f0f59da0bb2a4af11694ae46e367c170bdb9ef5353b1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104358991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673505"
 ---
-# <a name="saturate-hlsl-reference"></a>saturación (referencia de HLSL)
+# <a name="saturate-hlsl-reference"></a>saturate (referencia hlsl)
 
-Fija el valor especificado en el intervalo de 0 a 1.
+Fija el valor especificado dentro del intervalo de 0 a 1.
 
 
 
-| *RET* saturada (*x*) |
+| *ret* saturate(*x*) |
 |---------------------|
 
 
@@ -39,7 +39,7 @@ Fija el valor especificado en el intervalo de 0 a 1.
 
 | Elemento                                                   | Descripción                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*x1*<br/> | \[en \] el valor especificado.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[en \] El valor especificado.<br/> |
 
 
 
@@ -47,22 +47,22 @@ Fija el valor especificado en el intervalo de 0 a 1.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Parámetro *x* , fijado en el intervalo de 0 a 1.
+Parámetro *x,* fija dentro del intervalo de 0 a 1.
 
 ## <a name="type-description"></a>Descripción del tipo
 
 
 
-| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamaño                           |
+| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **Vector** o **matriz** | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
-| *direcc* | igual que la entrada *x*                                                                                              | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | mismas dimensiones que la entrada *x* |
+| *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vector** o **matriz** | [**Flotador**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
+| *Ret* | igual que la entrada *x*                                                                                              | [**Flotador**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -70,7 +70,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible |
 |------------------------------------------------------------------------------------|-----------|
-| Modelador [modelo 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) y modelos de sombreador más altos | sí       |
+| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) y modelos de sombreador superiores | Sí       |
 
 
 
@@ -80,7 +80,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

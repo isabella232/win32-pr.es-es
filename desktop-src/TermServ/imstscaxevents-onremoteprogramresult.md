@@ -1,12 +1,12 @@
 ---
-title: IMsTscAxEvents OnRemoteProgramResult, método
+title: Método IMsTscAxEvents OnRemoteProgramResult
 description: Se llama cuando un programa RemoteApp devuelve un resultado al control de cliente.
 ms.assetid: 5bc9570f-14fb-4b6f-a7dd-c1bce3ef19e0
 ms.tgt_platform: multiple
 keywords:
 - Método OnRemoteProgramResult Servicios de Escritorio remoto
-- Método OnRemoteProgramResult Servicios de Escritorio remoto, interfaz IMsTscAxEvents
-- Interfaz IMsTscAxEvents Servicios de Escritorio remoto, método OnRemoteProgramResult
+- Método OnRemoteProgramResult Servicios de Escritorio remoto , interfaz IMsTscAxEvents
+- Interfaz IMsTscAxEvents Servicios de Escritorio remoto , método OnRemoteProgramResult
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 880e4fb3f6453114415f5bcc07a0afb9c176a1bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 807fbd49cc6222925f34a7e7c007fef54cbc9a3db2566f024ebc0188e9c95113
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118129667"
 ---
-# <a name="imstscaxeventsonremoteprogramresult-method"></a>IMsTscAxEvents:: OnRemoteProgramResult (método)
+# <a name="imstscaxeventsonremoteprogramresult-method"></a>Método IMsTscAxEvents::OnRemoteProgramResult
 
 Se llama cuando un programa RemoteApp devuelve un resultado al control de cliente.
 
@@ -45,28 +45,28 @@ VOID OnRemoteProgramResult(
 
 <dl> <dt>
 
-*bstrRemoteProgram* \[ de\]
+*bstrRemoteProgram* \[ En\]
 </dt> <dd>
 
 Nombre del programa RemoteApp.
 
 </dd> <dt>
 
-*lError* \[ de\]
+*lError* \[ En\]
 </dt> <dd>
 
-El resultado del intento de iniciar el programa RemoteApp.
+Resultado del intento de iniciar el programa RemoteApp.
 
 <dt>
 
 <span id="remoteAppResultOk"></span><span id="remoteappresultok"></span><span id="REMOTEAPPRESULTOK"></span>
 
-<span id="remoteAppResultOk"></span><span id="remoteappresultok"></span><span id="REMOTEAPPRESULTOK"></span>**remoteAppResultOk** (0 (0X0))
+<span id="remoteAppResultOk"></span><span id="remoteappresultok"></span><span id="REMOTEAPPRESULTOK"></span>**remoteAppResultOk** (0 (0x0))
 
 
 </dt> <dd>
 
-El programa RemoteApp se inició correctamente.
+El programa RemoteApp se ha iniciado correctamente.
 
 </dd> <dt>
 
@@ -77,13 +77,13 @@ El programa RemoteApp se inició correctamente.
 
 </dt> <dd>
 
-La sesión remota está bloqueada y no se puede iniciar el programa RemoteApp. El usuario debe escribir sus credenciales para desbloquear la sesión y, a continuación, iniciar el programa RemoteApp.
+La sesión remota está bloqueada y no se puede iniciar el programa RemoteApp. El usuario debe escribir sus credenciales para desbloquear la sesión e iniciar el programa RemoteApp.
 
 </dd> <dt>
 
 <span id="remoteAppResultProtocolError"></span><span id="remoteappresultprotocolerror"></span><span id="REMOTEAPPRESULTPROTOCOLERROR"></span>
 
-<span id="remoteAppResultProtocolError"></span><span id="remoteappresultprotocolerror"></span><span id="REMOTEAPPRESULTPROTOCOLERROR"></span>**remoteAppResultProtocolError** (2 (0X2))
+<span id="remoteAppResultProtocolError"></span><span id="remoteappresultprotocolerror"></span><span id="REMOTEAPPRESULTPROTOCOLERROR"></span>**remoteAppResultProtocolError** (2 (0x2))
 
 
 </dt> <dd>
@@ -94,12 +94,12 @@ El programa RemoteApp devolvió un error de protocolo.
 
 <span id="remoteAppResultNotInWhitelist"></span><span id="remoteappresultnotinwhitelist"></span><span id="REMOTEAPPRESULTNOTINWHITELIST"></span>
 
-<span id="remoteAppResultNotInWhitelist"></span><span id="remoteappresultnotinwhitelist"></span><span id="REMOTEAPPRESULTNOTINWHITELIST"></span>**remoteAppResultNotInWhitelist** (3 (0X3))
+<span id="remoteAppResultNotInWhitelist"></span><span id="remoteappresultnotinwhitelist"></span><span id="REMOTEAPPRESULTNOTINWHITELIST"></span>**remoteAppResultNotInWhitelist** (3 (0x3))
 
 
 </dt> <dd>
 
-El programa RemoteApp no está en la lista aprobada del servidor host de sesión de escritorio remoto.
+El programa RemoteApp no está en la lista aprobada del servidor host de sesión de Escritorio remoto.
 
 </dd> <dt>
 
@@ -116,7 +116,7 @@ Se denegó la ruta de acceso de red al programa RemoteApp.
 
 <span id="remoteAppResultFileNotFound"></span><span id="remoteappresultfilenotfound"></span><span id="REMOTEAPPRESULTFILENOTFOUND"></span>
 
-<span id="remoteAppResultFileNotFound"></span><span id="remoteappresultfilenotfound"></span><span id="REMOTEAPPRESULTFILENOTFOUND"></span>**remoteAppResultFileNotFound** (5 (0X5))
+<span id="remoteAppResultFileNotFound"></span><span id="remoteappresultfilenotfound"></span><span id="REMOTEAPPRESULTFILENOTFOUND"></span>**remoteAppResultFileNotFound** (5 (0x5))
 
 
 </dt> <dd>
@@ -138,7 +138,7 @@ No se pudo iniciar el programa RemoteApp.
 
 <span id="remoteAppResultHookNotLoaded"></span><span id="remoteappresulthooknotloaded"></span><span id="REMOTEAPPRESULTHOOKNOTLOADED"></span>
 
-<span id="remoteAppResultHookNotLoaded"></span><span id="remoteappresulthooknotloaded"></span><span id="REMOTEAPPRESULTHOOKNOTLOADED"></span>**remoteAppResultHookNotLoaded** (7 (0X7))
+<span id="remoteAppResultHookNotLoaded"></span><span id="remoteappresulthooknotloaded"></span><span id="REMOTEAPPRESULTHOOKNOTLOADED"></span>**remoteAppResultHookNotLoaded** (7 (0x7))
 
 
 </dt> <dd>
@@ -147,10 +147,10 @@ No se puede iniciar el programa RemoteApp porque la sesión muestra actualmente 
 
 </dd> </dl> </dd> <dt>
 
-*vbIsExecutable* \[ de\]
+*vbIsExecutable* \[ En\]
 </dt> <dd>
 
-Indica si el programa RemoteApp se inició directamente, utilizando el nombre del archivo ejecutable o indirectamente, mediante una asociación de archivo.
+Indica si el programa RemoteApp se inició directamente, mediante el nombre ejecutable o indirectamente, mediante una asociación de archivos.
 
 </dd> </dl>
 
@@ -158,17 +158,17 @@ Indica si el programa RemoteApp se inició directamente, utilizando el nombre de
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Implemente este método en el receptor de eventos para recibir la notificación de que un programa RemoteApp devolvió un resultado.
 
-Se llama a este método inmediatamente después de que el control ActiveX intente iniciar el programa RemoteApp, y el parámetro *lError* indica el resultado del intento.
+Se llama a este método inmediatamente después de que el control ActiveX intenta iniciar el programa RemoteApp y el parámetro *lError* indica el resultado del intento.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |

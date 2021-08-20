@@ -81,7 +81,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

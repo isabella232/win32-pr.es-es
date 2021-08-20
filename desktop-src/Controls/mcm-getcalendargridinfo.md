@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCM_GETCALENDARGRIDINFO (commctrl. h)
-description: Obtiene información acerca de una cuadrícula de calendario.
+title: MCM_GETCALENDARGRIDINFO mensaje (Commctrl.h)
+description: Obtiene información sobre una cuadrícula de calendario.
 ms.assetid: 6b385362-f963-4041-bc9f-d2b7a890c9b4
 keywords:
-- MCM_GETCALENDARGRIDINFO controles de mensajes de Windows
+- MCM_GETCALENDARGRIDINFO controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 506f6193ab32d059bb85fa4583441bfbe027f224
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 26365b940b17617b1f00b93697fc78fa759dd2599d3398ccb8d92725159a70cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103804147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118170172"
 ---
-# <a name="mcm_getcalendargridinfo-message"></a>Mensaje de MCM \_ GETCALENDARGRIDINFO
+# <a name="mcm_getcalendargridinfo-message"></a>Mensaje \_ GETCALENDARGRIDINFO de MCM
 
-Obtiene información acerca de una cuadrícula de calendario.
+Obtiene información sobre una cuadrícula de calendario.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -39,23 +39,23 @@ Debe ser cero.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**MCGRIDINFO**](/windows/win32/api/commctrl/ns-commctrl-mcgridinfo) que contiene información sobre la cuadrícula del calendario.
+Puntero a una [**estructura MCGRIDINFO**](/windows/win32/api/commctrl/ns-commctrl-mcgridinfo) que contiene información sobre la cuadrícula de calendario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**True** si es correcto; de lo contrario, **false**.
+**TRUE si** se realiza correctamente; de lo **contrario, FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,22 +1,22 @@
 ---
 description: XMFLOAT3 describe una estructura que contiene un vector 3D que consta de tres valores de punto flotante de precisión sencilla.
 ms.assetid: 43627e12-f997-431f-87c3-750ee68912fe
-title: Extensiones de XMFLOAT3
+title: Extensiones XMFLOAT3
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 895322d93f6471b01dcab0f2f3cf8dcaffab9bb3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51e1c4ae86f32a2f7b52bc8292d0b0d714315a58f21943cc6dfbbee7d1446d88
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670625"
 ---
-# <a name="xmfloat3-extensions"></a>Extensiones de XMFLOAT3
+# <a name="xmfloat3-extensions"></a>Extensiones XMFLOAT3
 
 [**XMFLOAT3**](/windows/win32/api/directxmath/ns-directxmath-xmfloat3) describe una estructura que contiene un vector 3D que consta de tres valores de punto flotante de precisión sencilla.
 
 > [!Note]  
-> Las características que se enumeran aquí solo están disponibles cuando se desarrollan con C++.
+> Las características enumeradas aquí solo están disponibles al desarrollar con C++.
 
  
 

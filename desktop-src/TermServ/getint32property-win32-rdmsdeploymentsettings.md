@@ -1,12 +1,12 @@
 ---
-title: Método GetInt32Property de la clase Win32_RDMSDeploymentSettings (Microsoft. Diagnostics. appanalysis. h)
+title: Método GetInt32Property de la Win32_RDMSDeploymentSettings (Microsoft.diagnostics.appanalysis.h)
 description: Recupera una propiedad de entero para la configuración de implementación de una colección de escritorios virtuales.
 ms.assetid: 6b8174bb-ffb7-4699-a3fb-d32ab0b202fc
 ms.tgt_platform: multiple
 keywords:
 - Método GetInt32Property Servicios de Escritorio remoto
-- Método GetInt32Property Servicios de Escritorio remoto, clase Win32_RDMSDeploymentSettings
-- Win32_RDMSDeploymentSettings de clase Servicios de Escritorio remoto, método GetInt32Property
+- Método GetInt32Property Servicios de Escritorio remoto , Win32_RDMSDeploymentSettings clase
+- Win32_RDMSDeploymentSettings clase Servicios de Escritorio remoto , Método GetInt32Property
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f96374c610084c8ef7973d4ac4db603d9c28cff
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1ac79fdacf6b8f64d354158f964be1019692933a10409a8bf085109d9f5a9a31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118130764"
 ---
-# <a name="getint32property-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método GetInt32Property de la \_ clase RDMSDeploymentSettings de Win32
+# <a name="getint32property-method-of-the-win32_rdmsdeploymentsettings-class"></a>Método GetInt32Property de la clase RDMSDeploymentSettings de Win32 \_
 
 Recupera una propiedad de entero para la configuración de implementación de una colección de escritorios virtuales.
 
@@ -44,14 +44,14 @@ uint32 GetInt32Property(
 
 <dl> <dt>
 
-*Clave* \[ de de\]
+*Clave* \[ En\]
 </dt> <dd>
 
-El alias de la colección de escritorios virtuales.
+Alias de la colección de escritorios virtuales.
 
 </dd> <dt>
 
-*Valor* \[ de enuncia\]
+*Valor* \[ out\]
 </dt> <dd>
 
 Entero que recibe el valor recuperado.
@@ -62,13 +62,13 @@ Entero que recibe el valor recuperado.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                                 |
-| Espacio de nombres<br/>                | RDMs raíz de \\ CIMv2 \\<br/>                                                                                   |
-| Encabezado<br/>                   | <dl> <dt>Microsoft. Diagnostics. appanalysis. h</dt> </dl> |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl>                    |
+| Espacio de nombres<br/>                | Rdms \\ de CIMv2 \\ raíz<br/>                                                                                   |
+| Header<br/>                   | <dl> <dt>Microsoft.diagnostics.appanalysis.h</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl>                    |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>                            |
 
 
@@ -77,7 +77,7 @@ Entero que recibe el valor recuperado.
 
 <dl> <dt>
 
-[**Win32 \_ RDMSDeploymentSettings**](win32-rdmsdeploymentsettings.md)
+[**RDMSDeploymentSettings de Win32 \_**](win32-rdmsdeploymentsettings.md)
 </dt> </dl>
 
  

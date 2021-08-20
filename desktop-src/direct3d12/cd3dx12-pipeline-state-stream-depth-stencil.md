@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_PIPELINE_STATE_STREAM_DEPTH_STENCIL estructura (D3dx12. h)
-description: Una estructura auxiliar que se usa para describir una descripción de la galería de símbolos de profundidad como un solo objeto adecuado para una descripción de la secuencia. | CD3DX12_PIPELINE_STATE_STREAM_DEPTH_STENCIL estructura (D3dx12. h)
+title: CD3DX12_PIPELINE_STATE_STREAM_DEPTH_STENCIL estructura (D3dx12.h)
+description: Estructura auxiliar que se usa para describir una descripción de galería de símbolos de profundidad como un único objeto adecuado para una descripción de secuencia. | CD3DX12_PIPELINE_STATE_STREAM_DEPTH_STENCIL estructura (D3dx12.h)
 ms.assetid: 4FB54EA5-FCC6-4B64-A747-27DFE4C1D2DC
 keywords:
-- Estructura de CD3DX12_PIPELINE_STATE_STREAM_DEPTH_STENCIL
+- CD3DX12_PIPELINE_STATE_STREAM_DEPTH_STENCIL estructura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb24779aeff950bd213ce18774f55493777df9c9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e0b9cc7ba6b37858ae355d9470f321f991e8329f5fbf7aabd23b6f8bcfe7d8fa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105678773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119858185"
 ---
-# <a name="cd3dx12_pipeline_state_stream_depth_stencil-structure"></a>\_Estructura de \_ \_ estarcido de profundidad de flujo de estado de \_ canalización CD3DX12 \_
+# <a name="cd3dx12_pipeline_state_stream_depth_stencil-structure"></a>Estructura STENCIL DE PROFUNDIDAD DE \_ FLUJO DE ESTADO DE CANALIZACIÓN \_ \_ \_ CD3DX12 \_
 
-Una estructura auxiliar que se usa para describir una descripción de la galería de símbolos de profundidad como un solo objeto adecuado para una descripción de la secuencia.
+Estructura auxiliar que se usa para describir una descripción de galería de símbolos de profundidad como un único objeto adecuado para una descripción de secuencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,37 +44,37 @@ struct CD3DX12_PIPELINE_STATE_STREAM_DEPTH_STENCIL {
 
 <dl> <dt>
 
-**\_Galería de \_ \_ símbolos de profundidad de flujo de estado de \_ canalización CD3DX12 \_**
+**GALERÍA DE SÍMBOLOS DE PROFUNDIDAD DE FLUJO \_ DE ESTADO DE CANALIZACIÓN \_ \_ \_ CD3DX12 \_**
 </dt> <dd>
 
-Crea una nueva instancia no inicializada de una \_ Galería de símbolos de profundidad de flujo de estado de canalización CD3DX12 \_ \_ \_ \_ .
+Crea una nueva instancia sin inicializar de una instancia de CD3DX12 \_ PIPELINE STATE STREAM DEPTH \_ \_ \_ \_ STENCIL.
 
 </dd> <dt>
 
-**Estarcido de profundidad de flujo de estado de canalización de CD3DX12 (Galería de \_ símbolos de \_ \_ \_ \_ \_ profundidad CD3DX12 \_ \_ DESC const &i)**
+**CD3DX12 \_ PIPELINE STATE STREAM DEPTH \_ \_ \_ \_ STENCIL(CD3DX12 \_ DEPTH \_ STENCIL \_ DESC const &i)**
 </dt> <dd>
 
-Crea una nueva instancia de una \_ Galería de símbolos de profundidad de flujo de estado de canalización de CD3DX12 \_ \_ \_ \_ , inicializada con un tipo de subobjeto de la galería de símbolos de  **profundidad de \_ \_ \_ tipo de subobjeto \_ \_ \_ de estado de canalización de D3D12** y datos de subobjeto copiados de i, una estructura de [**\_ \_ \_ Descripción de estarcido**](cd3dx12-depth-stencil-desc.md) de
+Crea una nueva instancia de un objeto CD3DX12 PIPELINE STATE STREAM DEPTH STENCIL, inicializado con un \_ tipo de subobjeto D3D12 PIPELINE STATE SUBOBJECT TYPE DEPTH STENCIL y datos de subobjetos copiados de i , una estructura \_ \_ \_ \_ [**CD3DX12 \_ DEPTH \_ STENCIL \_ DESC.**](cd3dx12-depth-stencil-desc.md) **\_ \_ \_ \_ \_ \_** 
 
 </dd> <dt>
 
-**Operator = (CD3DX12 \_ Depth \_ estarcido \_ DESC const& i)**
+**operator=(CD3DX12 \_ DEPTH \_ STENCIL \_ DESC const& i)**
 </dt> <dd>
 
 Operador de asignación de copia.
 
 </dd> <dt>
 
-**CD3DX12 de la \_ Galería de símbolos de profundidad del operador \_ \_ () Const**
+**operador CD3DX12 \_ DEPTH \_ STENCIL \_ DESC() const**
 </dt> <dd>
 
-Conversión implícita a una [**estructura \_ \_ \_ DESC de estarcido de profundidad de CD3DX12**](cd3dx12-depth-stencil-desc.md) .
+Conversión implícita en una [**estructura \_ \_ \_ DESC de STENCIL DEPTH de CD3DX12.**](cd3dx12-depth-stencil-desc.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-\_ \_ \_ \_ \_ La galería de símbolos de profundidad de flujo de estado de canalización de CD3DX12 es una especialización de TypeDef de la plantilla de [**\_ \_ \_ \_ subobjeto de flujo de estado de canalización CD3DX12**](cd3dx12-pipeline-state-stream-subobject.md) y se define de la siguiente manera:
+CD3DX12 PIPELINE STATE STREAM DEPTH STENCIL es una especialización typedef de la plantilla \_ \_ \_ \_ \_ [**CD3DX12 \_ PIPELINE STATE STREAM \_ \_ \_ SUBOBJECT**](cd3dx12-pipeline-state-stream-subobject.md) y se define de la siguiente manera:
 
 
 ```C++
@@ -91,7 +91,7 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<CD3DX12_DEPTH_STENCIL_DESC, D3D1
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -102,10 +102,10 @@ typedef CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT<CD3DX12_DEPTH_STENCIL_DESC, D3D1
 [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)
 </dt> <dt>
 
-[**Subobjeto de \_ flujo de estado de canalización CD3DX12 \_ \_ \_**](cd3dx12-pipeline-state-stream-subobject.md)
+[**SUBOBJETO CD3DX12 \_ PIPELINE \_ STATE \_ STREAM \_**](cd3dx12-pipeline-state-stream-subobject.md)
 </dt> <dt>
 
-[**\_Tipo de \_ subobjeto de estado de CANALización D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
+[**TIPO DE \_ SUBOBJETO DE ESTADO \_ DE CANALIZACIÓN \_ D3D12 \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_pipeline_state_subobject_type)
 </dt> </dl>
 
  

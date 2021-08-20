@@ -3,7 +3,7 @@ title: FileRepServiceExample
 description: FileRep recupera archivos de un servidor y los copia en un cliente.
 ms.assetid: 9f446999-8f10-4ce4-86eb-e9289e131733
 keywords:
-- Servicios web FileRepServiceExample para Windows
+- FileRepServiceExample Web Services for Windows
 - WWSAPI
 - Wws
 ms.topic: article
@@ -17,7 +17,7 @@ ms.locfileid: "118963434"
 ---
 # <a name="filerepserviceexample"></a>FileRepServiceExample
 
-FileRep recupera archivos de un servidor y los copia en un cliente. Para ello, emplea tres componentes: el servicio de servidor que se ejecuta en la máquina con el archivo de origen, el servicio de cliente que se ejecuta en la máquina donde se almacenará el archivo de destino y una herramienta de línea de comandos para controlar la copia. Los servicios cliente y servidor ejecutan constantemente servicios web mientras el usuario inicia la herramienta de línea de comandos y se cierra después de una solicitud.
+FileRep recupera archivos de un servidor y los copia en un cliente. Para ello, emplea tres componentes: el servicio de servidor que se ejecuta en la máquina con el archivo de origen, el servicio de cliente que se ejecuta en la máquina donde se almacenará el archivo de destino y una herramienta de línea de comandos para controlar la copia. Los servicios de cliente y servidor ejecutan constantemente servicios web mientras el usuario inicia la herramienta de línea de comandos y se cierra después de una solicitud.
 
 En este ejemplo se muestra el uso del canal y la capa de serialización.
 
@@ -53,7 +53,7 @@ Opcional. Especifica la codificación utilizada al comunicarse con la herramient
 <span id="Reporting"></span><span id="reporting"></span><span id="REPORTING"></span>Informes
 </dt> <dd>
 
-Opcional. Habilita los informes de nivel detallado, de información o de error. El valor predeterminado es error. Los mensajes se imprimen en la consola.
+Opcional. Habilita los informes de error, información o de nivel detallado. El valor predeterminado es error. Los mensajes se imprimen en la consola.
 
 </dd> <dt>
 
@@ -84,11 +84,11 @@ Opcional. Los archivos transferidos se divide en fragmentos del tamaño especifi
 
 </dd> </dl>
 
-Detalles de implementación. Como este ejemplo se escribe en la capa de canal, tiene que realizar manualmente ciertas tareas que la capa del modelo de servicio podría realizar automáticamente. Una de estas tareas es la administración de canales. Para proporcionar una respuesta rápida a las solicitudes, siempre hay (hasta un límite) varios canales listos para aceptar solicitudes. Tener varios canales listos es más importante en el caso de varias solicitudes que tener solo un canal, ya que la creación de un canal tarda tiempo. Además, la reutilización del estado también mejora el rendimiento. Por su parte, La lonba proporciona API para restablecer la mayoría del estado a fin de evitar tener que liberarlo y volver a crearlo. Este ejemplo aprovecha esto al volver a usar el canal y el estado de solicitud siempre que sea posible y crear o destruir solo el estado cuando se pasan determinados umbrales. El código relacionado con la administración de canales se puede encontrar en CChannelManager.
+Detalles de implementación. Como este ejemplo se escribe en la capa de canal, tiene que realizar manualmente ciertas tareas que la capa de modelo de servicio podría realizar automáticamente. Una de estas tareas es la administración de canales. Para proporcionar una respuesta rápida a las solicitudes, siempre hay (hasta un límite) varios canales listos para aceptar solicitudes. Tener varios canales listos es más importante en el caso de varias solicitudes que tener solo un canal, ya que la creación de un canal tarda tiempo. Además, la reutilización del estado también mejora el rendimiento. Aserción proporciona API para restablecer la mayoría del estado para evitar tener que liberarla y volver a crearla. Este ejemplo aprovecha esto al volver a usar el canal y el estado de solicitud siempre que sea posible y crear o destruir solo el estado cuando se pasan determinados umbrales. El código relacionado con la administración de canales se puede encontrar en CChannelManager.
 
-El bucle de procesamiento de mensajes principal está en CRequest. Esa clase contiene el estado independiente de la aplicación y los métodos necesarios para un bucle asincrónico de procesamiento de mensajería Deserción. El código específico de la aplicación está en CFileRepClient (servicio de cliente) y CFileRepServer (servicio de servidor). Ambas clases heredan de CFileRep, que contiene código genérico relacionado con el servicio.
+El bucle de procesamiento de mensajes principal está en CRequest. Esa clase contiene el estado independiente de la aplicación y los métodos necesarios para un bucle asincrónico de procesamiento de mensajería de Asynchronous. El código específico de la aplicación está en CFileRepClient (servicio de cliente) y CFileRepServer (servicio de servidor). Ambas clases heredan de CFileRep, que contiene código genérico relacionado con el servicio.
 
-El ejemplo usa el serializador y realiza la serialización personalizada. La serialización personalizada se usa cuando se trabaja con grandes fragmentos de datos para minimizar el consumo de memoria mediante la optimización manual de la asignación de memoria para el propósito específico. Como esto conduce a código complejo y de bajo nivel que realiza la serialización manual, solo debe realizarse cuando sea absolutamente necesario.
+El ejemplo usa el serializador y realiza la serialización personalizada. La serialización personalizada se usa cuando se trabaja con grandes fragmentos de datos para minimizar el consumo de memoria mediante la optimización manual de la asignación de memoria para el propósito específico. Como esto conduce a un código complejo y de bajo nivel que realiza la serialización manual, solo debe realizarse cuando sea absolutamente necesario.
 
 Patrón de intercambio de mensajes:
 
@@ -96,7 +96,7 @@ Patrón de intercambio de mensajes:
 -   Si la solicitud es asincrónica, envíe una confirmación inmediatamente.
 -   El servicio cliente envía una solicitud de información de archivo al servicio de servidor. Una solicitud de detección se indica mediante una posición de fragmento de -1.
 -   El servicio de servidor devuelve la información del archivo.
--   El servicio cliente solicita los fragmentos individuales secuencialmente uno por uno desde el servidor. Los fragmentos se identifican por su posición dentro del archivo.
+-   El servicio cliente solicita los fragmentos individuales secuencialmente uno a uno desde el servidor. Los fragmentos se identifican por su posición dentro del archivo.
 -   Repita la operación hasta que se complete la transferencia de archivos o se haya producido un error.
 -   Si la solicitud es sincrónica, envíe un mensaje de error o correcto a la herramienta de línea de comandos.
 

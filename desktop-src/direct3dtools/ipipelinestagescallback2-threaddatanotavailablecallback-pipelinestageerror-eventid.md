@@ -4,7 +4,7 @@ MS-HAID: vspixengine.IPipeLineStagesCallback2\_ThreadDataNotAvailableCallback\_P
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: IPipeLineStagesCallback2::ThreadDataNotAvailableCallback (método)
+title: Método IPipeLineStagesCallback2::ThreadDataNotAvailableCallback
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 231DC830-5F1A-4DDA-B5D0-C7FBCEDCB2A0

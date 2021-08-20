@@ -29,7 +29,7 @@ Describe los conjuntos de operaciones XAudio2.
 <span id="How_to__Group_Audio_Methods_as_an_Operation_Set"></span><span id="how_to__group_audio_methods_as_an_operation_set"></span><span id="HOW_TO__GROUP_AUDIO_METHODS_AS_AN_OPERATION_SET"></span>[Cómo: Agrupar métodos de audio como un conjunto de operaciones](how-to--group-audio-methods-as-an-operation-set.md)
 </dt> <dd>
 
-Describe cómo usar conjuntos de operaciones XAudio2 para que un grupo de llamadas de método suba al mismo tiempo.
+Describe cómo usar conjuntos de operaciones XAudio2 para que un grupo de llamadas a métodos suba efecto al mismo tiempo.
 
 </dd> </dl>
 

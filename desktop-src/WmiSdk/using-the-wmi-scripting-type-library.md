@@ -1,5 +1,5 @@
 ---
-description: Puede usar la biblioteca de tipos de scripting wmi para llamar a métodos de WMI Scripting API desde Microsoft Visual Studio Windows y en archivos WSF del host de script.
+description: Puede usar la biblioteca de tipos de scripting wmi para llamar a los métodos de LA API de scripting de WMI Microsoft Visual Studio y en Windows WSF del host de script.
 ms.assetid: 6ef4e210-0733-4f2a-89c1-1a7aca5a19d9
 ms.tgt_platform: multiple
 title: Usar la biblioteca de tipos de scripting wmi
@@ -19,9 +19,9 @@ ms.locfileid: "120120775"
 ---
 # <a name="using-the-wmi-scripting-type-library"></a>Usar la biblioteca de tipos de scripting wmi
 
-Puede usar la biblioteca de tipos de scripting wmi para llamar a métodos de WMI Scripting API desde Microsoft Visual Studio Windows y en archivos WSF del host de script.
+Puede usar la biblioteca de tipos de scripting wmi para llamar a los métodos de LA API de scripting de WMI Microsoft Visual Studio y en Windows WSF del host de script.
 
-## <a name="using-the-wmi-scripting-type-library-with-microsoft-visual-studio"></a>Uso de la biblioteca de tipos de scripting wmi con Microsoft Visual Studio
+## <a name="using-the-wmi-scripting-type-library-with-microsoft-visual-studio"></a>Usar la biblioteca de tipos de scripting wmi con Microsoft Visual Studio
 
 > [!Note]  
 > Las características de Visual InterDev 6.0 se han integrado [en Microsoft Visual Studio .NET.](https://msdn.microsoft.com/vstudio/default.aspx)
@@ -30,11 +30,11 @@ Puede usar la biblioteca de tipos de scripting wmi para llamar a métodos de WMI
 
 En el procedimiento siguiente se describe cómo habilitar el entorno de desarrollo integrado (IDE) para que tenga en cuenta la biblioteca de tipos WbemScripting.
 
-**Para agregar la biblioteca de tipos de scripting wmi a las referencias del proyecto**
+**Para agregar la biblioteca de tipos de scripting WMI a las referencias del proyecto**
 
 1.  Seleccione **Agregar referencias** en el menú **Project** datos.
 2.  En la pestaña COM del **cuadro** Agregar referencia, seleccione Biblioteca de scripting V1.2 de WMI de Microsoft.
-3.  Si no aparece ninguna opción adecuada en la lista Referencias, agrégrela mediante **Examinar** en el **cuadro** Referencias. El **examinar** abre un **cuadro Agregar** referencia que le permite buscar la biblioteca de tipos WbemScripting.
+3.  Si no aparece ninguna opción adecuada en la lista Referencias, agrégrela mediante **Examinar** en el **cuadro** Referencias . El **examinar** abre un **cuadro Agregar** referencia que le permite buscar la biblioteca de tipos WbemScripting.
 
     La biblioteca de tipos WbemScripting reside en el archivo Wbemdisp.tlb del directorio %windir% \\ System32 \\ Wbem.
 
@@ -50,7 +50,7 @@ Los scripts pueden conectarse con la API de scripting para la biblioteca de tipo
 
     Esto alerta Windows host de script para conectarse al conjunto de objetos WMI.
 
-    En el ejemplo de código de VBScript siguiente se crea un nuevo [**objeto SWbemDateTime.**](swbemdatetime.md)
+    En el ejemplo de código de VBScript siguiente se crea [**un nuevo objeto SWbemDateTime.**](swbemdatetime.md)
 
     ```VB
     Set dateTime = CreateObject("WbemScripting.SWbemDateTime")
@@ -60,7 +60,7 @@ Los scripts pueden conectarse con la API de scripting para la biblioteca de tipo
 
 -   Usar la [cadena Moniker](constructing-a-moniker-string.md) "winmgmts:" al obtener un objeto nuevo o existente.
 
-    En el ejemplo de código de VBScript siguiente se usa el moniker "winmgmts:" para obtener la instancia de [**Proceso de \_ Win32**](/windows/desktop/CIMWin32Prov/win32-process) con una propiedad **Handle** de 0 (cero). **Handle** es la propiedad clave de esta clase.
+    En el ejemplo de código de VBScript siguiente se usa el moniker "winmgmts:" para obtener la instancia de Proceso de [**Win32 \_**](/windows/desktop/CIMWin32Prov/win32-process) con una propiedad **Handle** de 0 (cero). **Handle** es la propiedad clave de esta clase.
 
     ```VB
     Set Process = GetObject("winmgmts:Win32_Process.Handle=0")
@@ -88,7 +88,7 @@ Los scripts pueden conectarse con la API de scripting para la biblioteca de tipo
 
     
 
--   Usar una <**objeto>** etiqueta para crear un objeto de scripting WMI. Puede especificar el atributo **id** con el valor de un nombre que haga referencia al objeto de scripting WMI que desea crear y el atributo **progid** igual al PROID del objeto de scripting WMI.
+-   Usar un objeto <**de>** para crear un objeto de scripting WMI. Puede especificar el atributo **id** con el valor de un nombre que haga referencia al objeto de scripting WMI que desea crear y el atributo **progid** igual al PROID del objeto de scripting WMI.
 
     El siguiente script WSH muestra el nombre de host y el número de procesadores en el equipo local. Para ejecutar el script, guarde el texto en un archivo con una extensión .wsf.
 

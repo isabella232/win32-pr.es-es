@@ -1,6 +1,6 @@
 ---
 title: Instalación (Windows Multimedia)
-description: Obtenga información sobre la instalación multimedia de Windows, incluido el procesamiento de DRV_INSTALL y DRV_REMOVE mensajes.
+description: Obtenga información sobre Windows multimedia, incluido el procesamiento de DRV_INSTALL y DRV_REMOVE mensajes.
 ms.assetid: 1f0e23ad-4db7-4f32-98d9-e672370db559
 keywords:
 - controladores instalables, instalación
@@ -12,12 +12,12 @@ keywords:
 - instalar controladores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29f82a23a781e62553d6488331b2c832104fd770
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: a01ef47952f3d5a62c0dce246bf24689d37f11326f0f3ec251f7afc19c822fa9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118140683"
 ---
 # <a name="installation-windows-multimedia"></a>Instalación (Windows Multimedia)
 

@@ -1,17 +1,17 @@
 ---
-title: Tareas iniciales con la Stream-Output fase
+title: Tareas iniciales con la fase Stream-Output datos
 description: En esta sección se describe cómo usar un sombreador de geometría con la fase de salida del flujo.
 ms.assetid: 37146486-5922-4833-850c-cc4a51de0957
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae2e72d25177926c948f43996b6c57d42a7c557b
-ms.sourcegitcommit: 749dea42142dec076d41a8f26cb57ae8db46e848
+ms.openlocfilehash: 480fb75c126d89cc8db5ae79950e437ff411fcc60f3e9bf006662d0ecc2e3d4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112587882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118099618"
 ---
-# <a name="getting-started-with-the-stream-output-stage"></a>Tareas iniciales con la Stream-Output fase
+# <a name="getting-started-with-the-stream-output-stage"></a>Tareas iniciales con la fase Stream-Output datos
 
 En esta sección se describe cómo usar un sombreador de geometría con la fase de salida del flujo.
 
@@ -143,7 +143,7 @@ define la salida para que sea un máximo de 12 vértices.</td>
 
 </div>
 <p>El primer parámetro es una matriz de vértices (3 en este caso) definida por una estructura GSPS_INPUT (que define los datos por vértice como una posición, una coordenada normal y una coordenada de textura). El primer parámetro también usa la palabra clave triangle, lo que significa que la fase del ensamblador de entrada debe generar datos al sombreador de geometría como uno de los tipos primitivos de triángulo (lista de triángulos o franja de triángulo).</p>
-<p>El segundo parámetro es una secuencia de triángulo definida por el tipo TriangleStream &lt; GSPS_INPUTT &gt; . Esto significa que el parámetro es una matriz de triángulos, cada uno de los cuales se forma de tres vértices (que contienen los datos de los miembros de GSPS_INPUT).</p>
+<p>El segundo parámetro es una secuencia de triángulo definida por el tipo TriangleStream &lt; GSPS_INPUTT &gt; . Esto significa que el parámetro es una matriz de triángulos, cada uno de los cuales se forma con tres vértices (que contienen los datos de los miembros de GSPS_INPUT).</p>
 <p>Use las palabras clave triangle y trianglestream para identificar triángulos individuales o una secuencia de triángulos en un GS.</p></td>
 </tr>
 <tr class="odd">
@@ -157,7 +157,7 @@ define la salida para que sea un máximo de 12 vértices.</td>
 
  
 
-El resto del sombreador es muy similar a un sombreador de vértices o píxeles. El sombreador de geometría usa una estructura para declarar parámetros de entrada y marca el miembro de posición con la semántica POSITION de SV para decir al hardware que se trata de \_ datos posicionales. La estructura de entrada identifica los otros dos parámetros de entrada como coordenadas de textura (aunque uno de ellos contendrá una cara normal). Si lo prefiere, puede usar su propia semántica personalizada para la cara normal.
+El resto del sombreador es muy similar a un sombreador de vértices o píxeles. El sombreador de geometría usa una estructura para declarar parámetros de entrada y marca el miembro de posición con la semántica SV POSITION para decir al hardware que se trata de \_ datos posicionales. La estructura de entrada identifica los otros dos parámetros de entrada como coordenadas de textura (aunque uno de ellos contendrá una cara normal). Si lo prefiere, puede usar su propia semántica personalizada para la cara normal.
 
 Después de diseñar el sombreador de geometría, llame [**a D3DCompile**](/windows/desktop/direct3dhlsl/d3dcompile) para compilar, como se muestra en el ejemplo de código siguiente.
 
@@ -179,7 +179,7 @@ Al igual que los sombreadores de vértices y píxeles, necesita una marca de som
 
 Una vez que sepa que va a transmitir los datos desde la geometría y que ha compilado correctamente el sombreador, el siguiente paso es llamar a [**ID3D11Device::CreateGeometryShaderWithStreamOutput**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-creategeometryshaderwithstreamoutput) para crear el objeto de sombreador geometry.
 
-Pero en primer lugar, debe declarar la firma de entrada de la fase de salida de aire (SO). Esta firma coincide o valida las salidas de GS y las entradas SO en el momento de la creación del objeto. El código siguiente es un ejemplo de la declaración SO.
+Pero en primer lugar, debe declarar la firma de entrada de fase de salida de aire (SO). Esta firma coincide o valida las salidas de GS y las entradas SO en el momento de la creación del objeto. El código siguiente es un ejemplo de la declaración SO.
 
 
 ```
@@ -235,7 +235,7 @@ D3D11Device->CreateBuffer( &bufferDesc, NULL, &m_pBuffer );
 
 Cree un búfer mediante una llamada [**a ID3D11Device::CreateBuffer**](/windows/desktop/api/D3D11/nf-d3d11-id3d11device-createbuffer). En este ejemplo se muestra el uso predeterminado, que es típico para un recurso de búfer que se espera que la CPU actualice con bastante frecuencia. La marca de enlace identifica la fase de canalización a la que se puede enlazar el recurso. Cualquier recurso utilizado por la fase SO también debe crearse con la marca de enlace D3D10 \_ BIND \_ STREAM \_ OUTPUT.
 
-Una vez creado correctamente el búfer, estaléctelo en el dispositivo actual mediante una llamada a [**ID3D11DeviceContext::SOSetTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-sosettargets):
+Una vez que el búfer se haya creado correctamente, estaléctelo en el dispositivo actual mediante una llamada a [**ID3D11DeviceContext::SOSetTargets**](/windows/desktop/api/D3D11/nf-d3d11-id3d11devicecontext-sosettargets):
 
 
 ```

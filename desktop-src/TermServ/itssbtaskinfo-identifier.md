@@ -1,12 +1,12 @@
 ---
-title: Propiedad de identificador ITsSbTaskInfo
+title: Propiedad ITsSbTaskInfo Identifier
 description: Recupera un GUID que el agente de tareas usa como identificador único.
 ms.assetid: 96b41588-d634-4cdd-aacc-0456b8e47c3b
 ms.tgt_platform: multiple
 keywords:
-- Propiedad Identifier Servicios de Escritorio remoto
-- Propiedad de identificador Servicios de Escritorio remoto, interfaz ITsSbTaskInfo
-- Servicios de Escritorio remoto de la interfaz ITsSbTaskInfo, propiedad Identifier
+- Identificador de propiedad Servicios de Escritorio remoto
+- Propiedad identifier Servicios de Escritorio remoto , interfaz ITsSbTaskInfo
+- Interfaz ITsSbTaskInfo Servicios de Escritorio remoto , propiedad Identifier
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 241ed2966e9ec92aa420af20ce142bcb724ad222
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 43eb5b0495b9f258f3b82df8657f104cbea0555a46f61e6a133be8f765081a07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118128084"
 ---
-# <a name="itssbtaskinfoidentifier-property"></a>ITsSbTaskInfo:: Identifier (propiedad)
+# <a name="itssbtaskinfoidentifier-property"></a>Propiedad ITsSbTaskInfo::Identifier
 
 Recupera un GUID que el agente de tareas usa como identificador único.
 
@@ -44,17 +44,17 @@ HRESULT get_Identifier(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un puntero a un valor **BSTR** que recibe el GUID.
+Puntero a un **valor BSTR** que recibe el GUID.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                       |
-| IDL<br/>                      | <dl> <dt>Sbtsv. idl</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Sbtsv.idl</dt> </dl> |
 
 
 

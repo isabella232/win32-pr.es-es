@@ -91,7 +91,7 @@ Define los elementos secundarios y la información de secuenciación para el [**
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

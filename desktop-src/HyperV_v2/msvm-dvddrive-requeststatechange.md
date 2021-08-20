@@ -1,5 +1,5 @@
 ---
-description: 'Método RequestStateChange de la Msvm_DVDDrive: solicita un cambio de estado.'
+description: 'Método RequestStateChange de la Msvm_DVDDrive clase : solicita un cambio de estado.'
 ms.assetid: b36d19ea-35fc-4989-9ee9-199b8166674e
 title: Método RequestStateChange de la Msvm_DVDDrive clase
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: dfe3d4f7b823c42866f72aa928227c6a49c610c0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4b6b5fa703481b4d2cc1ff9406f3139016216af8824dd0e23dd647094098aa99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118148594"
 ---
-# <a name="requeststatechange-method-of-the-msvm_dvddrive-class"></a>Método RequestStateChange de la clase DVDDrive de Msvm \_
+# <a name="requeststatechange-method-of-the-msvm_dvddrive-class"></a>Método RequestStateChange de la clase \_ DVDDrive de Msvm
 
 Solicita un cambio de estado.
 
@@ -44,7 +44,7 @@ uint32 RequestStateChange(
 *RequestedState* \[ En\]
 </dt> <dd>
 
-El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del **método RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
+El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del método **RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
 
 <dt>
 
@@ -155,7 +155,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -165,7 +165,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

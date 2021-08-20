@@ -1,7 +1,7 @@
 ---
-description: Puntero a un objeto de sección crítica que protege el estado del filtro.
+description: Puntero a un objeto de sección crítico que protege el estado del filtro.
 ms.assetid: e733360d-ed95-493f-a85b-53d584681f60
-title: 'Miembro CBasePin:: m_pLock (Amfilter. h)'
+title: CBasePin::m_pLock miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0a18755c1ea1c5c29b9839ecaf8803a84f8c8f10
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9e9c9715909129629af1f7f148a0cfbb059c2ce11b53866e30df5a4418a6f899
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118158157"
 ---
-# <a name="cbasepinm_plock-member"></a>Miembro Plock CBasePin:: m \_
+# <a name="cbasepinm_plock-member"></a>CBasePin::m \_ miembro pLock
 
-Puntero a un objeto de sección crítica que protege el estado del filtro.
+Puntero a un objeto de sección crítico que protege el estado del filtro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ CCritSec *m_pLock;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ CCritSec *m_pLock;
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> <dt>
 
 [Subprocesos y secciones críticas](threads-and-critical-sections.md)

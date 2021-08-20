@@ -1,30 +1,30 @@
 ---
-title: Efecto de RGB a matiz
-description: Convierte una imagen RGB en los espacios de colores HSL (Hue, saturación, luminosidad) o HSV (matiz, saturación, valor).
+title: Efecto RGB a matiz
+description: Convierte una imagen RGB en los espacios de color HSL (matiz, saturación, lumez) o HSV (matiz, saturación, valor).
 ms.assetid: 1def972d-8172-9217-8ce7-abce4a93f6e1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53ccb4d3f67d116426d7a3497c04c4e8fb115b74
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c474705d050c2ef2eff9050a759c60c5d8f1098440e06601ec1e3981e349aaff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118160391"
 ---
-# <a name="rgb-to-hue-effect"></a>Efecto de RGB a matiz
+# <a name="rgb-to-hue-effect"></a>Efecto RGB a matiz
 
-Convierte una imagen RGB en los espacios de colores HSL (Hue, saturación, luminosidad) o HSV (matiz, saturación, valor).
+Convierte una imagen RGB en los espacios de color HSL (matiz, saturación, lumez) o HSV (matiz, saturación, valor).
 
-HSL y HSV son dos modelos diferentes para representar un color RGB en un espacio de colores cilíndrico. Son útiles porque le permiten motivar un color mediante conceptos más intuitivos como el matiz y la intensidad, frente a la combinación de valores rojo, verde y azul.
+HSL y HSV son dos modelos diferentes para representar un color RGB en un espacio de colores cilíndrica. Son útiles porque permiten razonar sobre un color mediante conceptos más intuitivos, como matiz e intensidad, frente a la combinación de valores rojo, verde y azul.
 
-Este efecto normaliza los datos de salida (matiz, valor de saturación para HSV o Hue, saturación, luminosidad para HSL) al intervalo \[ 0, 1 \] .
+Este efecto normaliza los datos de salida (matiz, valor de saturación para HSV o matiz, saturación, lightness para HSL) al intervalo \[ 0, 1 \] .
 
 El CLSID para este efecto es CLSID \_ D2D1RgbToHue.
 
-Para invertir el comportamiento de este efecto, use el [efecto matiz a RGB](hue-to-rgb-effect.md).
+Para invertir el comportamiento de este efecto, use [el efecto Hue a RGB](hue-to-rgb-effect.md).
 
 -   [Código de ejemplo](#sample-code)
--   [Propiedades del efecto](#effect-properties)
+-   [Propiedades de efecto](#effect-properties)
 -   [Requisitos](#requirements)
 -   [Temas relacionados](#related-topics)
 
@@ -46,20 +46,20 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Propiedades del efecto
+## <a name="effect-properties"></a>Propiedades de efecto
 
-Las propiedades del efecto de contraste se definen mediante la enumeración [**\_ \_ prop de D2D1 RGBTOHUE**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_rgbtohue_prop) .
+Las propiedades del efecto de contraste se definen mediante la [**enumeración D2D1 \_ RGBTOHUE \_ PROP.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_rgbtohue_prop)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------------|---------------------------------------------------|
-| Cliente mínimo compatible | Aplicaciones de la tienda Windows de Windows 10 \[ Desktop apps \|\] |
-| Servidor mínimo compatible | Aplicaciones de la tienda Windows de Windows 10 \[ Desktop apps \|\] |
-| Encabezado                   | d2d1effects \_ 2. h                                  |
-| Biblioteca                  | d2d1. lib, dxguid. lib                              |
+| Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
+| Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
+| Header                   | d2d1effects \_ 2.h                                  |
+| Biblioteca                  | d2d1.lib, dxguid.lib                              |
 
 
 ## <a name="related-topics"></a>Temas relacionados

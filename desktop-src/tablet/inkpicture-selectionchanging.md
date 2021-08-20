@@ -1,19 +1,19 @@
 ---
-description: Se produce cuando la selección de tinta dentro del control InkPicture está a punto de cambiar, por ejemplo, a través de las modificaciones a la interfaz de usuario, los procedimientos de cortar y pegar o la propiedad de selección.
+description: Se produce cuando la selección de entrada de lápiz dentro del control InkPicture está a punto de cambiar, por ejemplo, mediante modificaciones en la interfaz de usuario, los procedimientos de cortar y pegar o la propiedad Selection.
 ms.assetid: a8ae30ff-fb0d-44cc-a5d3-295117addafd
-title: Evento InkPicture. SelectionChanging (Msinkaut. h)
+title: Evento InkPicture.SelectionChanging (Msalterut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 37b8a35d57aeb9367bb9d30647cb074a7e0e6fbd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef5960fd212b4362f697c1c83b1bc03729cb9d619081ee6c4895a01a7d7124dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118042067"
 ---
-# <a name="inkpictureselectionchanging-event"></a>Evento InkPicture. SelectionChanging
+# <a name="inkpictureselectionchanging-event"></a>Evento InkPicture.SelectionChanging
 
-Se produce cuando la selección de tinta dentro del control [InkPicture](inkpicture-control-reference.md) está a punto de cambiar, por ejemplo, a través de las modificaciones a la interfaz de usuario, los procedimientos de cortar y pegar o la propiedad de [**selección**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection) .
+Se produce cuando la selección de entrada de lápiz dentro del control [InkPicture](inkpicture-control-reference.md) está a punto de cambiar, por ejemplo, mediante modificaciones en la interfaz de usuario, los procedimientos de cortar y pegar o la [**propiedad Selection.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -30,10 +30,10 @@ void SelectionChanging(
 
 <dl> <dt>
 
-*NewSelection* \[ de\]
+*NewSelection* \[ En\]
 </dt> <dd>
 
-Nueva colección de [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) que se va a seleccionar.
+Nueva colección de [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85)) que se está seleccionando.
 
 </dd> </dl>
 
@@ -41,19 +41,19 @@ Nueva colección de [InkStrokes](/previous-versions/windows/desktop/legacy/ms703
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método de evento se define en las interfaces de solo envío **\_ IInkOverlayEvents** y **\_ IInkPictureEvents** (dispinterfaces) con un identificador de DISPID \_ IOESelectionChanging.
+Este método de evento se define en las interfaces de solo distribución (dispinterfaces) de **\_ IInkOverlayEvents** e **\_ IInkPictureEvents** con un identificador de DISPID \_ IOESelectionChanging.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -65,7 +65,7 @@ Este método de evento se define en las interfaces de solo envío **\_ IInkOverl
 [InkPicture](inkpicture-control-reference.md)
 </dt> <dt>
 
-[**Propiedad de selección \[ InkPicture (control)\]**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection)
+[**Propiedad Selection \[ InkPicture (Control)\]**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_selection)
 </dt> </dl>
 
  

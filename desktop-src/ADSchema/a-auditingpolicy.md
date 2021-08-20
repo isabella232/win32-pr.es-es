@@ -4,8 +4,8 @@ description: Directiva de auditoría para la directiva local.
 ms.assetid: bbe96a2a-5ad0-4160-894c-ff04b829b00a
 ms.tgt_platform: multiple
 keywords:
-- Auditing-Policy esquema de AD del atributo
-- AuditingPolicy attribute AD Schema (Esquema de AD del atributo auditingPolicy)
+- Auditing-Policy esquema de AD de atributo
+- AuditingPolicy attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -27,12 +27,12 @@ Directiva de auditoría para la directiva local.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | Auditing-Policy                                       |
 | Ldap-Display-Name | auditingPolicy                                        |
 | Size              | \-                                                    |
-| Privilegio actualizar  | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.202                                |
 | System-Id-Guid    | 6da8a4fe-0e52-11d0-a286-00aa003049e2                  |
@@ -53,7 +53,7 @@ Directiva de auditoría para la directiva local.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -74,7 +74,7 @@ Directiva de auditoría para la directiva local.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -95,7 +95,7 @@ Directiva de auditoría para la directiva local.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -116,7 +116,7 @@ Directiva de auditoría para la directiva local.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -137,7 +137,7 @@ Directiva de auditoría para la directiva local.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -158,7 +158,7 @@ Directiva de auditoría para la directiva local.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |

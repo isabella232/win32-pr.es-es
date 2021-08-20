@@ -4,8 +4,8 @@ description: En el ejemplo de código siguiente se muestra cómo usar las interf
 ms.assetid: d2ac3a1e-642c-451c-a79e-baa38dacb4a2
 ms.tgt_platform: multiple
 keywords:
-- ADSI de código de ejemplo, uso de interfaces IADProperty para acceder a la caché de propiedades
-- Código de ejemplo para usar interfaces IADProperty para acceder al ADSI de la caché de propiedades
+- ADSI de código de ejemplo, uso de interfaces IADsProperty para acceder a la caché de propiedades
+- Código de ejemplo para usar interfaces IADsProperty para acceder al ADSI de caché de propiedades
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a885a52b9c699153a17d33e0ec52edbb6f59c226e6844ac2c8c02b3ec082157c

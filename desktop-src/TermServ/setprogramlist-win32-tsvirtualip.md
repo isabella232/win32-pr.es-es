@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Método SetProgramList Servicios de Escritorio remoto
 - Método SetProgramList Servicios de Escritorio remoto , Win32_TSVirtualIP clase
-- Win32_TSVirtualIP clase Servicios de Escritorio remoto , método SetProgramList
+- Win32_TSVirtualIP clase Servicios de Escritorio remoto método , SetProgramList
 topic_type:
 - apiref
 api_name:
@@ -48,7 +48,7 @@ unint32 SetProgramList(
 
 Tipo: **\[ \] cadena**
 
-Matriz de cadenas que contienen la ruta de acceso y los nombres de archivo de los programas que usan la virtualización de IP.
+Matriz de cadenas que contienen la ruta de acceso y los nombres de archivo de los programas que usan la virtualización ip.
 
 </dd> </dl>
 
@@ -56,27 +56,27 @@ Matriz de cadenas que contienen la ruta de acceso y los nombres de archivo de lo
 
 Tipo: **unint32**
 
-Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores. El método devuelve un error si la configuración está bajo control de directiva de grupo.
+Devuelve 0 si se ejecuta correctamente; de lo contrario, devuelve un código de error WMI. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores. El método devuelve un error si la configuración está bajo control de directiva de grupo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                       |
-| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Win32 \_ TSVirtualIP**](win32-tsvirtualip.md)
+[**TSVirtualIP de Win32 \_**](win32-tsvirtualip.md)
 </dt> </dl>
 
  

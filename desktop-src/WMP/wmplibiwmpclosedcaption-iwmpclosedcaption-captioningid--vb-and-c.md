@@ -1,11 +1,11 @@
 ---
-title: Propiedad captioningId de IWMPClosedCaption
+title: Propiedad IWMPClosedCaption captioningId
 description: La propiedad IWMPClosedCaption obtiene o establece el nombre del elemento HTML que muestra los subtítulos.
 ms.assetid: b09bb7c7-c3b6-4e0d-962f-24b06a04f6d1
 keywords:
-- propiedades de captioningId Media Player de Windows
-- propiedad captioningId de Windows Media Player, interfaz IWMPClosedCaption
-- Interfaz IWMPClosedCaption Windows Media Player, propiedad captioningId
+- propiedad captioningId Reproductor de Windows Media
+- CaptioningId, propiedad Reproductor de Windows Media , interfaz IWMPClosedCaption
+- Interfaz IWMPClosedCaption Reproductor de Windows Media , propiedad captioningId
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 343234fce2b93ac02255731a38025f6d7b9fac6f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 45f6d4c10beb3f0fd94da0365d67b6c5ab480d36d5a3786021f538e9dcf4e90c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116061"
 ---
-# <a name="iwmpclosedcaptioncaptioningid-property"></a>IWMPClosedCaption:: captioningId (propiedad)
+# <a name="iwmpclosedcaptioncaptioningid-property"></a>Propiedad IWMPClosedCaption::captioningId
 
-La propiedad **IWMPClosedCaption** obtiene o establece el nombre del elemento HTML que muestra los subtítulos.
+La **propiedad IWMPClosedCaption** obtiene o establece el nombre del elemento HTML que muestra los subtítulos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,19 +46,19 @@ Public Property captioningId As System.String
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. String** que es el identificador del elemento HTML.
+**System.String que** es el identificador del elemento HTML.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El nombre de elemento especificado puede ser cualquier elemento HTML de la página web siempre que admita el atributo **innerHTML** . Si la página web contiene varios marcos, el nombre del elemento solo puede hacer referencia a un elemento del mismo marco que el control Media Player de Windows.
+El nombre del elemento especificado puede ser cualquier elemento HTML de la página web, siempre que admita el **atributo innerHTML.** Si la página web contiene varios fotogramas, el nombre del elemento solo puede hacer referencia a un elemento en el mismo marco que el control Reproductor de Windows Media elemento.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -68,7 +68,7 @@ El nombre de elemento especificado puede ser cualquier elemento HTML de la pági
 
 <dl> <dt>
 
-[**Agregar subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
+[**Adición de subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
 [**Interfaz IWMPClosedCaption (VB y C#)**](iwmpclosedcaption--vb-and-c.md)

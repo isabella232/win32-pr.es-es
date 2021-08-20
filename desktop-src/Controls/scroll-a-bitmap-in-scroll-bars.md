@@ -1,56 +1,56 @@
 ---
-title: Cómo desplazarse por un mapa de bits
+title: Desplazamiento de un mapa de bits
 description: En esta sección se describen los cambios que puede realizar en el procedimiento de ventana principal de una aplicación para permitir al usuario desplazarse por un mapa de bits.
 ms.assetid: FA6FEA49-25EB-4C18-AD07-74BD77501906
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a01a93fbb005b75d7cd860bc8545c4e77a80767
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 084d8fff259326c4eb73838f1f6e2b650aab40d54882633a76e2fbf120a1ae89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104488358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118005288"
 ---
-# <a name="how-to-scroll-a-bitmap"></a>Cómo desplazarse por un mapa de bits
+# <a name="how-to-scroll-a-bitmap"></a>Desplazamiento de un mapa de bits
 
 En esta sección se describen los cambios que puede realizar en el procedimiento de ventana principal de una aplicación para permitir al usuario desplazarse por un mapa de bits.
 
-En el ejemplo se incluye un elemento de menú que copia el contenido de la pantalla en un mapa de bits y muestra el mapa de bits en el área cliente. En el ejemplo también se procesan los mensajes de [**WM \_ HSCROLL**](wm-hscroll.md) y [**WM \_ VSCROLL**](wm-vscroll.md) generados por las barras de desplazamiento para que el usuario pueda desplazarse por el mapa de bits horizontal y verticalmente. A diferencia del ejemplo de texto desplazado, el ejemplo de mapa de bits emplea la función [**bitblt**](/windows/desktop/api/wingdi/nf-wingdi-bitblt) para dibujar la parte no válida del área cliente.
+El ejemplo incluye un elemento de menú que copia el contenido de la pantalla en un mapa de bits y muestra el mapa de bits en el área de cliente. El ejemplo también procesa los mensajes [**\_ WM HSCROLL**](wm-hscroll.md) y [**WM \_ VSCROLL**](wm-vscroll.md) generados por las barras de desplazamiento para que el usuario pueda desplazar el mapa de bits horizontal y verticalmente. A diferencia del ejemplo de texto de desplazamiento, el ejemplo de mapa de bits emplea la [**función BitBlt**](/windows/desktop/api/wingdi/nf-wingdi-bitblt) para dibujar la parte no válida del área de cliente.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="processing-the-wm_create-message"></a>Procesamiento del mensaje de creación de WM \_
+### <a name="processing-the-wm_create-message"></a>Procesamiento del mensaje \_ WM CREATE
 
-Cuando se procesa el mensaje de [**\_ creación de WM**](/windows/desktop/winmsg/wm-create) , se inicializan las variables necesarias para el desplazamiento. Use la función [**CreateCompatibleDC**](/windows/desktop/api/wingdi/nf-wingdi-createcompatibledc) para crear un contexto de dispositivo compatible (DC), la función [**CreateBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createbitmap) para crear un mapa de bits y la función [**SelectObject**](/windows/desktop/api/wingdi/nf-wingdi-selectobject) para seleccionar el mapa de bits del controlador de dominio. Tenga en cuenta que un controlador de dominio compatible también se conoce como controlador de dominio de memoria.
+Cuando se procesa el mensaje [**\_ WM CREATE,**](/windows/desktop/winmsg/wm-create) se inicializan las variables necesarias para el desplazamiento. Use la [**función CreateCompatibleDC**](/windows/desktop/api/wingdi/nf-wingdi-createcompatibledc) para crear un contexto de dispositivo (DC) compatible, la función [**CreateBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createbitmap) para crear un mapa de bits y la función [**SelectObject**](/windows/desktop/api/wingdi/nf-wingdi-selectobject) para seleccionar el mapa de bits del controlador de dominio. Tenga en cuenta que un controlador de dominio compatible también se conoce como controlador de dominio de memoria.
 
-Se recupera la información específica del dispositivo sobre el dispositivo de pantalla. Si se crea un controlador de dominio compatible para la pantalla, como en el ejemplo, use la función [**GetDeviceCaps**](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) para obtener esta información. La información incluye el número de bits de color adyacentes por píxel, el número de planos de color y el alto y ancho del controlador de dominio.
+Se recupera la información específica del dispositivo sobre el dispositivo de visualización. Si se crea un controlador de dominio compatible para la pantalla, como en el ejemplo, use la [**función GetDeviceCaps**](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) para obtener esta información. La información incluye el número de bits de color adyacentes por píxel, el número de planos de color y el alto y ancho del controlador de dominio.
 
-### <a name="processing-the-wm_size-message"></a>Procesar el mensaje de tamaño de WM \_
+### <a name="processing-the-wm_size-message"></a>Procesamiento del mensaje WM \_ SIZE
 
-El procesamiento del mensaje de [**\_ tamaño de WM**](/windows/desktop/winmsg/wm-size) requiere ajustar el intervalo de desplazamiento y la posición, de modo que refleje las dimensiones del área cliente y el mapa de bits que se mostrarán.
+El procesamiento del [**mensaje WM \_ SIZE**](/windows/desktop/winmsg/wm-size) requiere ajustar el intervalo de desplazamiento y la posición, para que refleje las dimensiones del área de cliente y el mapa de bits que se mostrarán.
 
-La función [**SetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo) establece los valores de posición mínimo y máximo, el tamaño de página y la posición de desplazamiento de una barra de desplazamiento.
+La [**función SetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo) establece los valores de posición mínima y máxima, el tamaño de página y la posición de desplazamiento de una barra de desplazamiento.
 
-### <a name="processing-the-wm_hscroll-and-wm_vscroll-messages"></a>Procesamiento de los \_ mensajes de WM HSCROLL y WM \_ VSCROLL
+### <a name="processing-the-wm_hscroll-and-wm_vscroll-messages"></a>Procesamiento de los mensajes \_ WM HSCROLL y WM \_ VSCROLL
 
-Cuando se procesan los mensajes de [**WM \_ HSCROLL**](wm-hscroll.md) y [**WM \_ VSCROLL**](wm-vscroll.md) , se examina el código de solicitud de la barra de desplazamiento y la posición de desplazamiento se establece en un nuevo valor que refleja la acción de desplazamiento del usuario. Si la posición de desplazamiento está dentro del intervalo de desplazamiento, la ventana se desplaza a la nueva posición mediante la función [**ScrollWindow**](/windows/desktop/api/Winuser/nf-winuser-scrollwindow) . La posición del cuadro de desplazamiento se ajusta después mediante la función [**SetScrollInfo**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo) .
+Cuando se procesan los mensajes [**WM \_ HSCROLL**](wm-hscroll.md) y [**WM \_ VSCROLL,**](wm-vscroll.md) se examina el código de solicitud de la barra de desplazamiento y la posición de desplazamiento se establece en un nuevo valor que refleja la acción de desplazamiento del usuario. Si la posición de desplazamiento está dentro del intervalo de desplazamiento, la ventana se desplaza a la nueva posición mediante la [**función ScrollWindow.**](/windows/desktop/api/Winuser/nf-winuser-scrollwindow) A continuación, la posición del cuadro de desplazamiento se ajusta mediante la [**función SetScrollInfo.**](/windows/desktop/api/Winuser/nf-winuser-setscrollinfo)
 
-Una vez desplazada una ventana, parte de su área de cliente no es válida. Para asegurarse de que se actualiza la región no válida, utilice la función [**UpdateWindow**](/windows/desktop/api/winuser/nf-winuser-updatewindow) para generar un mensaje de [**\_ dibujo de WM**](/windows/desktop/gdi/wm-paint) . Al procesar el mensaje de **\_ dibujo de WM** , una aplicación debe volver a pintar la región no válida en la parte inferior del área cliente. Al desplazarse o cambiar el tamaño del área cliente, en el ejemplo se usa la función [**bitblt**](/windows/desktop/api/wingdi/nf-wingdi-bitblt) para copiar la parte adecuada del mapa de bits en la parte no válida del área cliente.
+Una vez que se desplaza una ventana, parte de su área de cliente no es válida. Para asegurarse de que la región no válida se actualiza, use la [**función UpdateWindow**](/windows/desktop/api/winuser/nf-winuser-updatewindow) para generar un [**mensaje WM \_ PAINT.**](/windows/desktop/gdi/wm-paint) Al procesar el **mensaje \_ WM PAINT,** una aplicación debe volver a dibujar la región no válida en la parte inferior del área de cliente. Al desplazar o cambiar el tamaño del área de cliente, en el ejemplo se usa la función [**BitBlt**](/windows/desktop/api/wingdi/nf-wingdi-bitblt) para copiar la parte adecuada del mapa de bits en la parte no válida del área de cliente.
 
 ## <a name="example-of-scrolling-a-bitmap"></a>Ejemplo de desplazamiento de un mapa de bits
 
-En el ejemplo siguiente se permite al usuario capturar el contenido de la pantalla en un mapa de bits y desplazarlo en el área cliente. El contenido de la pantalla se captura cuando el usuario hace clic con el botón secundario en el área cliente.
+En el ejemplo siguiente se permite al usuario capturar el contenido de la pantalla en un mapa de bits y desplazar el mapa de bits en el área de cliente. El contenido de la pantalla se captura cuando el usuario hace clic con el botón derecho en el área de cliente.
 
 
 ```C++
@@ -404,9 +404,9 @@ LRESULT CALLBACK MyBitmapWindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM 
 [Usar barras de desplazamiento](using-scroll-bars.md)
 </dt> <dt>
 
-[Demostración de controles comunes de Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

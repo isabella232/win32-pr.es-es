@@ -36,9 +36,9 @@ Un recurso de lectura y escritura.
 
  
 
-Puede anteceder **a los objetos RWTexture1D** con la clase de almacenamiento **globalmentecoherente.** Esta clase de almacenamiento hace que las barreras de memoria y las sincronizaciones vaciarán los datos en toda la GPU para que otros grupos puedan ver las escrituras. Sin este especificador, una barrera de memoria o sincronización vaciará un UAV solo dentro del grupo actual.
+Puede anteceder **a los objetos RWTexture1D** con la clase de almacenamiento **globalmentecoherente**. Esta clase de almacenamiento hace que las barreras de memoria y las sincronizaciones vaciarán los datos en toda la GPU para que otros grupos puedan ver escrituras. Sin este especificador, una barrera o sincronización de memoria vaciará un UAV solo dentro del grupo actual.
 
-Un **objeto RWTexture1D** requiere un tipo de elemento en una instrucción de declaración para el objeto. Por ejemplo, la siguiente declaración es correcta:
+Un **objeto RWTexture1D** requiere un tipo de elemento en una instrucción de declaración para el objeto. Por ejemplo, la declaración siguiente es correcta:
 
 
 ```
@@ -52,7 +52,7 @@ Dado que un objeto **RWTexture1D** es un objeto de tipo UAV, sus propiedades dif
 Un **objeto RWTexture1D** no puede usar métodos de un objeto [**Texture1D,**](sm5-object-texture1d.md) como [Sample](dx-graphics-hlsl-to-sample.md). Sin embargo, dado que puede crear varios tipos de vista en el mismo recurso, puede declarar varios tipos de textura como una sola textura en varios sombreadores. Por ejemplo, puede declarar y usar un objeto **RWTexture1D** como *texas* en un sombreador de proceso y, a continuación, declarar y usar un objeto **Texture1D** como *texas* en un sombreador de píxeles.
 
 > [!Note]  
-> El tiempo de ejecución aplica determinados patrones de uso al crear varios tipos de vista en el mismo recurso. Por ejemplo, el tiempo de ejecución no permite tener una asignación de UAV para un recurso y una asignación de SRV para el mismo recurso activo al mismo tiempo.
+> El tiempo de ejecución aplica determinados patrones de uso al crear varios tipos de vista en el mismo recurso. Por ejemplo, el runtime no permite tener una asignación de UAV para un recurso y una asignación de SRV para el mismo recurso activo al mismo tiempo.
 
  
 
@@ -64,7 +64,7 @@ Este objeto se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                | Compatible |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores | Sí       |
+| [Modelos de sombreador 5](d3d11-graphics-reference-sm5.md) y superiores | Sí       |
 
 
 
@@ -74,7 +74,7 @@ Este objeto es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -82,7 +82,7 @@ Este objeto es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -15,23 +15,23 @@ ms.locfileid: "120120585"
 
 El Explorador de red:
 
--   Siempre usa udp WS-Discovery para la detección de dispositivos
--   Inicia siempre una conexión HTTP o HTTPS para el intercambio de metadatos.
--   A veces usa un canal seguro (HTTPS) para el intercambio de metadatos
+-   Siempre usa udp WS-Discovery la detección de dispositivos
+-   Siempre inicia una conexión HTTP o HTTPS para el intercambio de metadatos
+-   A veces usa un canal seguro (HTTPS) para el intercambio de metadatos.
 
-Se deben usar los siguientes procedimientos de diagnóstico (en orden) para ayudar a identificar problemas con el Explorador de red.
+Los siguientes procedimientos de diagnóstico deben usarse (en orden) para ayudar a identificar problemas con el Explorador de red.
 
 **Para solucionar problemas de Explorador de red**
 
 1.  [Inspeccione la configuración del adaptador y del firewall.](inspecting-adapter-and-firewall-settings.md)
-2.  [Use un host y un cliente genéricos para UDP WS-Discovery.](using-a-generic-host-and-client-for-udp-ws-discovery.md)
+2.  [Use un host y un cliente genéricos para UDP WS-Discovery](using-a-generic-host-and-client-for-udp-ws-discovery.md).
 3.  [Use el cliente de depuración de WSD para comprobar el tráfico de multidifusión.](using-wsddebug-client-to-verify-multicast-traffic.md)
 4.  [Inspeccione los seguimientos de red de UDP WS-Discovery.](inspecting-network-traces-for-udp-ws-discovery.md)
 5.  [Use un host y un cliente genéricos para el intercambio de metadatos HTTP.](using-a-generic-host-and-client-for-http-metadata-exchange.md)
-6.  [Use el registro winHTTP para comprobar que obtiene el tráfico.](using-winhttp-logging-to-verify-get-traffic.md)
+6.  [Use el registro WinHTTP para comprobar que obtiene el tráfico.](using-winhttp-logging-to-verify-get-traffic.md)
 7.  [Inspeccione los seguimientos de red para el intercambio de metadatos HTTP.](inspecting-network-traces-for-http-metadata-exchange.md)
 
-El Explorador de red usa [la detección de funciones](/previous-versions/windows/desktop/fundisc/fd-portal) para enumerar los dispositivos de red. Para obtener más información sobre la solución de problemas, vea [Solución de problemas de clientes de detección de funciones.](troubleshooting-function-discovery-clients.md)
+El Explorador de red utiliza [la detección de funciones](/previous-versions/windows/desktop/fundisc/fd-portal) para enumerar los dispositivos de red. Para obtener más información sobre la solución de problemas, vea [Solución de problemas de clientes de detección de funciones.](troubleshooting-function-discovery-clients.md)
 
 Si el origen del problema no se puede identificar mediante los procedimientos de diagnóstico anteriores, siga las instrucciones de Habilitación del seguimiento de [WSDAPI](enabling-wsdapi-tracing.md) y póngase en contacto con el soporte técnico de Microsoft.
 

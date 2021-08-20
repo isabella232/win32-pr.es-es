@@ -1,6 +1,6 @@
 ---
-title: 'RWTexture3D:: Load (int) (función)'
-description: 'Lee los datos de textura. | RWTexture3D:: Load (int) (función)'
+title: Función RWTexture3D::Load(int)
+description: Lee los datos de textura. | Función RWTexture3D::Load(int)
 ms.assetid: 93C4FFFF-8695-4BAF-BAE4-A2704332E6A9
 keywords:
 - Carga de la función HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 70f001cbea05f21a96bfbf1b5bdbf43a1d7da07d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d233559739e86a1cf5a8cbdc9af18ea6c12550c5f6118d63b5382689cd80bba2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119671895"
 ---
-# <a name="rwtexture3dloadint-function"></a>RWTexture3D:: Load (int) (función)
+# <a name="rwtexture3dloadint-function"></a>Función RWTexture3D::Load(int)
 
 Lee los datos de textura.
 
@@ -39,7 +39,7 @@ Lee los datos de textura.
 
 <dl> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
@@ -52,15 +52,15 @@ Ubicación de la textura.
 
 Escriba:
 
-El tipo de valor devuelto coincide con el tipo en la declaración del objeto [**RWTexture3D**](sm5-object-rwtexture3d.md) .
+El tipo de valor devuelto coincide con el tipo de la declaración para el [**objeto RWTexture3D.**](sm5-object-rwtexture3d.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -72,7 +72,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
 <dl> <dt>
 
-[Cargar métodos](rwtexture3d-load.md)
+[Métodos de carga](rwtexture3d-load.md)
 </dt> </dl>
 
  

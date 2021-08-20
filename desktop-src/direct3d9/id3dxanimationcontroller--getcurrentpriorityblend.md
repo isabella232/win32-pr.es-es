@@ -1,7 +1,7 @@
 ---
-description: Devuelve un identificador de evento de un evento de mezcla de prioridad que se está ejecutando actualmente.
+description: Devuelve un identificador de evento a un evento de combinación de prioridad que se está ejecutando actualmente.
 ms.assetid: a7184459-7644-4e65-a8ea-13019889e02b
-title: 'ID3DXAnimationController:: GetCurrentPriorityBlend (método) (D3dx9anim. h)'
+title: Método ID3DXAnimationController::GetCurrentPriorityBlend (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: df8b52a5bd5267cf88eaf101a0589000099dd600
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c02e65bb17e07b3d75c4949730141831e5b146011e77478d95c8976b792c1c5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118094560"
 ---
-# <a name="id3dxanimationcontrollergetcurrentpriorityblend-method"></a>ID3DXAnimationController:: GetCurrentPriorityBlend (método)
+# <a name="id3dxanimationcontrollergetcurrentpriorityblend-method"></a>Método ID3DXAnimationController::GetCurrentPriorityBlend
 
-Devuelve un identificador de evento de un evento de mezcla de prioridad que se está ejecutando actualmente.
+Devuelve un identificador de evento a un evento de combinación de prioridad que se está ejecutando actualmente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**
 
-Identificador de evento para el evento de Blend de prioridad que se está ejecutando actualmente. Se devuelve **null** si no hay ningún evento de mezcla de prioridad en ejecución.
+Identificador de evento para el evento de combinación de prioridad que se está ejecutando actualmente. **Se** devuelve NULL si no se está ejecutando ningún evento de combinación de prioridad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Identificador de evento para el evento de Blend de prioridad que se está ejecut
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

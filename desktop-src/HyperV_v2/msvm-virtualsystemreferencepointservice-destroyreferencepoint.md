@@ -1,7 +1,7 @@
 ---
 description: Elimina el punto de referencia especificado.
 ms.assetid: cb5245b6-5984-40ec-a37e-e4a0a62e318a
-title: Método DestroyReferencePoint de la clase Msvm_VirtualSystemReferencePointService
+title: Método DestroyReferencePoint de la Msvm_VirtualSystemReferencePointService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 9cf7a21e60369a928cc1d617e24db5f5fc70c522
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 8b63b383bc44c50049c6ab00bdccb1dd5e2081beeb98a82a0a17c35147b4e436
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105670069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118146424"
 ---
-# <a name="destroyreferencepoint-method-of-the-msvm_virtualsystemreferencepointservice-class"></a>Método DestroyReferencePoint de la \_ clase VirtualSystemReferencePointService de MSVM
+# <a name="destroyreferencepoint-method-of-the-msvm_virtualsystemreferencepointservice-class"></a>Método DestroyReferencePoint de la clase \_ Msvm VirtualSystemReferencePointService
 
 Elimina el punto de referencia especificado.
 
@@ -40,23 +40,23 @@ uint32 DestroyReferencePoint(
 
 <dl> <dt>
 
-*AffectedReferencePoint* \[ de\]
+*AffectedReferencePoint* \[ En\]
 </dt> <dd>
 
-Referencia a la instancia [**de \_ VirtualSystemReferencePoint de MSVM**](msvm-virtualsystemreferencepoint.md) que representa el punto de referencia que se va a quitar.
+Referencia a la instancia [**de Msvm \_ VirtualSystemReferencePoint**](msvm-virtualsystemreferencepoint.md) que representa el punto de referencia que se va a quitar.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Parámetro opcional para supervisar el progreso de la operación, que se utiliza si el método no se pudo ejecutar sincrónicamente. Si la operación se ejecuta de forma asincrónica, el valor devuelto es 4096.
+Parámetro opcional para supervisar el progreso de la operación, que se usa si el método no se pudo ejecutar sincrónicamente. Si la operación se ejecuta de forma asincrónica, el valor devuelto es 4096.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si se ejecuta correctamente, devuelve un 0 (completado sin errores) o 4096 (trabajo iniciado). de lo contrario, devuelve un error.
+Si se ejecuta correctamente, devuelve 0 (Completado sin error) o 4096 (trabajo iniciado); De lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -75,16 +75,16 @@ Si se ejecuta correctamente, devuelve un 0 (completado sin errores) o 4096 (trab
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -93,10 +93,10 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -105,10 +105,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -117,7 +117,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ VirtualSystemReferencePointService**](msvm-virtualsystemreferencepointservice.md)
+[**Msvm \_ VirtualSystemReferencePointService**](msvm-virtualsystemreferencepointservice.md)
 </dt> </dl>
 
  
