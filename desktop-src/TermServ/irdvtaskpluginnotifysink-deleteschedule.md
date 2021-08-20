@@ -1,12 +1,12 @@
 ---
-title: IRDVTaskPluginNotifySink DeleteSchedule, método
-description: El agente de tareas lo llama para eliminar una tarea programada.
+title: Método IRDVTaskPluginNotifySink DeleteSchedule
+description: Llamado por el agente de tareas para eliminar una tarea programada.
 ms.assetid: 67a9493e-367a-48c9-8f94-276d696406b7
 ms.tgt_platform: multiple
 keywords:
 - Método DeleteSchedule Servicios de Escritorio remoto
-- Método DeleteSchedule Servicios de Escritorio remoto, interfaz IRDVTaskPluginNotifySink
-- Interfaz IRDVTaskPluginNotifySink Servicios de Escritorio remoto, método DeleteSchedule
+- Método DeleteSchedule Servicios de Escritorio remoto , interfaz IRDVTaskPluginNotifySink
+- Interfaz IRDVTaskPluginNotifySink Servicios de Escritorio remoto método , DeleteSchedule
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f00bcc740f87acb7f051decd5f2fc9b55ffbf642
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5674b3624edc102be6943e63b72444ec68f403fa1066e90a410f028008894d29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118129147"
 ---
-# <a name="irdvtaskpluginnotifysinkdeleteschedule-method"></a>IRDVTaskPluginNotifySink::D método eleteSchedule
+# <a name="irdvtaskpluginnotifysinkdeleteschedule-method"></a>IRDVTaskPluginNotifySink::D eleteSchedule (método)
 
-El agente de tareas lo llama para eliminar una tarea programada.
+Llamado por el agente de tareas para eliminar una tarea programada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,24 +42,24 @@ HRESULT DeleteSchedule(
 
 <dl> <dt>
 
-*bstrIdentifier* \[ de\]
+*bstrIdentifier* \[ En\]
 </dt> <dd>
 
-El identificador de la tarea programada.
+Identificador de la tarea programada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 Enterprise<br/>   |
+| Cliente mínimo compatible<br/> | Windows 7 Enterprise<br/>   |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/> |
 
 

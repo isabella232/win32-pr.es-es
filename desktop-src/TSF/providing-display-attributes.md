@@ -9,16 +9,16 @@ keywords:
 - atributos de presentación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 780cc191e39d5b1d0c3329bab87af5267e4a6c73
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: d1b14b39b9c2c0f942fbe9b3ab3caf3112bbec4e7b18fc15e488345c75927d6e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118875674"
 ---
 # <a name="providing-display-attributes"></a>Proporcionar atributos para mostrar
 
-Text Services Framework (TSF) permite que un servicio de texto proporcione atributos para mostrar para el texto. Esto permite proporcionar comentarios visuales adicionales al usuario. Por ejemplo, un servicio de texto de corrector ortográfico puede resaltar una palabra mal escrita con un subrayado rojo. Los atributos de presentación proporcionados se definen mediante la estructura [ \_ DISPLAYATTRIBUTE](/windows/desktop/api/Msctf/ns-msctf-tf_displayattribute) de TF e incluyen color de texto, color de fondo de texto, estilo de subrayado, color de subrayado y peso del subrayado.
+Text Services Framework (TSF) permite que un servicio de texto proporcione atributos para mostrar para el texto. Esto permite proporcionar comentarios visuales adicionales al usuario. Por ejemplo, un servicio de texto de corrector ortográfico puede resaltar una palabra mal escrita con un subrayado rojo. Los atributos de presentación proporcionados se definen mediante la estructura [ \_ DISPLAYATTRIBUTE](/windows/desktop/api/Msctf/ns-msctf-tf_displayattribute) de TF e incluyen el color de texto, el color de fondo del texto, el estilo de subrayado, el color de subrayado y el peso del subrayado.
 
 Los clientes que usan esta información de atributo para mostrar suelen ser aplicaciones, pero también pueden incluir servicios de texto. El administrador de TSF media entre el proveedor de atributos para mostrar y el cliente y realiza un seguimiento del proveedor de atributos para mostrar de los atributos de presentación específicos.
 
@@ -33,12 +33,12 @@ Para proporcionar atributos para mostrar, un servicio de texto debe hacer lo sig
 
 El servicio de texto debe aplicar el atributo de presentación a un intervalo de texto. Un servicio de texto solo puede modificar el valor de propiedad durante una sesión de edición de lectura y escritura.
 
-Suponiendo que esto se encuentra dentro de una sesión de edición de lectura y escritura, se aplica un atributo para mostrar de la siguiente manera.
+Suponiendo que se encuentra dentro de una sesión de edición de lectura y escritura, se aplica un atributo de visualización de la siguiente manera.
 
 1.  Obtenga un [objeto ITfRange](/windows/desktop/api/Msctf/nn-msctf-itfrange) que cubre el texto al que se aplicará el atributo para mostrar.
 2.  Obtenga un [objeto ITfProperty para](/windows/desktop/api/Msctf/nn-msctf-itfproperty) los atributos de texto mediante una llamada [a ITfContext::GetProperty](/windows/desktop/api/Msctf/nf-msctf-itfcontext-getproperty) con GUID \_ PROP \_ ATTRIBUTE.
 3.  Cree un [TfGuidAtom a partir](tfguidatom.md) del **GUID** del atributo para mostrar definido por el servicio de texto llamando a [ITfCategoryMgr::RegisterGUID](/windows/desktop/api/Msctf/nf-msctf-itfcategorymgr-registerguid).
-4.  Inicialice una variable VARIANT en VT I4 y establezca el miembro lVal en el \_ **tfguidAtom** creado en el paso anterior. 
+4.  Inicialice una variable VARIANT en VT \_ I4 y establezca el **miembro lVal** en el **tfguidAtom** creado en el paso anterior.
 5.  Aplique el atributo display al intervalo mediante una llamada a [ITfProperty::SetValue](/windows/desktop/api/Msctf/nf-msctf-itfproperty-setvalue) con la cookie de edición de lectura/escritura, el intervalo y variant inicializados en el paso anterior.
 
 

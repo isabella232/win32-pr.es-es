@@ -1,25 +1,25 @@
 ---
-description: Después de crear una extensión de complemento de datos adjuntos, debe registrarla para que MMC y los complementos de configuración de seguridad la encuentren y lo usen.
+description: Después de crear una extensión de complemento de datos adjuntos, debe registrarla para que los complementos MMC y Configuración de seguridad la busquen y usen.
 ms.assetid: 176a658c-b1fd-40c5-a2ac-c9a2b7060c55
-title: Registrar una extensión de complemento de datos adjuntos
+title: Registro de una extensión de complemento de datos adjuntos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7726131325433aa920ff22c9b71a4f7184000a69
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7af8b586f0071a5718b420612fd552d578bf30bb083cca45a43f38198e1aee7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005023"
 ---
-# <a name="registering-an-attachment-snap-in-extension"></a>Registrar una extensión de complemento de datos adjuntos
+# <a name="registering-an-attachment-snap-in-extension"></a>Registro de una extensión de complemento de datos adjuntos
 
-Después de crear una extensión de complemento de datos adjuntos, debe registrarla para que MMC y los complementos de configuración de seguridad la encuentren y lo usen.
+Después de crear una extensión de complemento de datos adjuntos, debe registrarla para que los complementos MMC y Configuración de seguridad la busquen y usen.
 
-El complemento de datos adjuntos debe extender el espacio de nombres de los complementos de configuración de seguridad mediante la adición de su propio nodo, tal como se describe en el procedimiento siguiente.
+El complemento de datos adjuntos debe extender el espacio de nombres de complementos de configuración de seguridad agregando su propio nodo, como se describe en el procedimiento siguiente.
 
-**Para instalar y registrar la extensión del complemento de datos adjuntos**
+**Para instalar y registrar la extensión de complemento de datos adjuntos**
 
-1.  Registre la extensión del complemento en la siguiente clave del registro. No cree una clave independiente en el complemento; las extensiones de complementos de datos adjuntos solo deben ser extensiones.
+1.  Registre la extensión de complemento en la siguiente clave del Registro. No cree una clave StandAlone en el complemento; Las extensiones de complementos de datos adjuntos solo deben ser extensiones.
 
     ```
     HKEY_LOCAL_MACHINE
@@ -29,9 +29,9 @@ El complemento de datos adjuntos debe extender el espacio de nombres de los comp
                 SnapIns
     ```
 
-2.  Registre la extensión del complemento de datos adjuntos en las siguientes subclaves. Esto puede realizarse como parte de las implementaciones de la función **DllRegisterServer** y **DllUnregisterServer** .
+2.  Registre la extensión de complemento de datos adjuntos en las subclaves siguientes. Esto puede hacerse como parte de las implementaciones de **funciones DllRegisterServer** y **DllUnregisterServer.**
 
-    Espacio de nombres de [plantillas de seguridad](security-templates.md) :
+    [Espacio de nombres de plantillas de](security-templates.md) seguridad:
 
     ```
     HKLM
@@ -44,7 +44,7 @@ El complemento de datos adjuntos debe extender el espacio de nombres de los comp
                          NameSpace
     ```
 
-    Espacio [de nombres de configuración y análisis de seguridad](security-configuration-and-analysis.md) :
+    [Espacio de nombres de análisis y configuración de](security-configuration-and-analysis.md) seguridad:
 
     ```
     HKLM

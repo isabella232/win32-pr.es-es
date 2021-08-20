@@ -1,7 +1,7 @@
 ---
-description: Se usa para determinar si una plantilla de certificado contiene el uso de la \_ clave de \_ protección del correo electrónico szOID PKIX KP \_ \_ .
+description: Se usa para determinar si una plantilla de certificado contiene el uso de clave szOID \_ PKIX \_ KP EMAIL \_ \_ PROTECTION.
 ms.assetid: 1f0512e0-68b6-4b79-84bd-614babb4151d
-title: 'ISCrdEnr:: getCertTemplateSMIME (método)'
+title: Método ISCrdEnr::getCertTemplateSMIME
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: 4ed66af6a8a91855fbfc5a972a8bf00358314663
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8da8c9c3202c0955a001a63e77f85858fc6237d7476c0fc5222ae8f85e94a7c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119515965"
 ---
-# <a name="iscrdenrgetcerttemplatesmime-method"></a>ISCrdEnr:: getCertTemplateSMIME (método)
+# <a name="iscrdenrgetcerttemplatesmime-method"></a>Método ISCrdEnr::getCertTemplateSMIME
 
-El método **getCertTemplateSMIME** se usa para determinar si una plantilla de certificado contiene el \_ uso de claves de protección de correo electrónico de szOID PKIX \_ PK \_ \_ .
+El **método getCertTemplateSMIME** se usa para determinar si una plantilla de certificado contiene el uso de clave szOID \_ PKIX KP EMAIL \_ \_ \_ PROTECTION.
 
-Si el uso de esta clave forma parte de la plantilla de certificado, la plantilla de certificado admite operaciones de [*extensiones seguras multipropósito de correo Internet*](../secgloss/s-gly.md) (S/MIME).
+Si este uso de clave forma parte de la plantilla de certificado, la plantilla de certificado admite operaciones de extensiones de correo electrónico de Internet (S/MIME) [*seguras*](../secgloss/s-gly.md) o multipropósito.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,17 +54,17 @@ SCrdEnr.getCertTemplateSMIME( _
 
 <dl> <dt>
 
-*bstrCertTemplateName* \[ de\]
+*bstrCertTemplateName* \[ En\]
 </dt> <dd>
 
 Nombre del certificado que se consulta para el uso de la clave S/MIME.
 
 </dd> <dt>
 
-*pdwCertTemplateSMIME* \[ enuncia\]
+*pdwCertTemplateSMIME* \[ out\]
 </dt> <dd>
 
-Un puntero a un **DWORD** que devuelve un valor de uno si *bstrCertTemplateName* admite S/MIME; en caso contrario, devuelve cero.
+Puntero a un **DWORD que** devuelve un valor de uno si *bstrCertTemplateName* admite S/MIME; de lo contrario, devuelve cero.
 
 </dd> </dl>
 
@@ -72,28 +72,28 @@ Un puntero a un **DWORD** que devuelve un valor de uno si *bstrCertTemplateName*
 
 ### <a name="c"></a>C++
 
-Si el método se ejecuta correctamente, el método devuelve S \_ correcto.
+Si el método se realiza correctamente, el método devuelve S \_ OK.
 
-Si se produce un error en el método, devuelve un valor **HRESULT** que indica el error. Para obtener una lista de los códigos de error comunes, vea [Valores HRESULT comunes](common-hresult-values.md).
+Si se produce un error en el método , devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
 ### <a name="vb"></a>VB
 
-Valor **Long** de uno si *bstrCertTemplateName* admite S/MIME; de lo contrario, es cero.
+**Valor** largo de uno si *bstrCertTemplateName admite* S/MIME; de lo contrario, cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La constante para la \_ \_ protección de correo electrónico szOID PKIX KP \_ \_ se define en Wincrypt. h.
+La constante de szOID \_ PKIX \_ KP EMAIL PROTECTION se define en \_ \_ Wincrypt.h.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Archivo DLL<br/>                      | <dl> <dt>Scrdenrl.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCrdEnr se define como 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
+| IID<br/>                      | IID ISCrdEnr se define como \_ 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
 
 
 
@@ -104,7 +104,7 @@ La constante para la \_ \_ protección de correo electrónico szOID PKIX KP \_ \
 [**ISCrdEnr**](iscrdenr.md)
 </dt> <dt>
 
-[**ISCrdEnr:: ENROLL**](/previous-versions/windows/desktop/legacy/aa386564(v=vs.85))
+[**ISCrdEnr::enroll**](/previous-versions/windows/desktop/legacy/aa386564(v=vs.85))
 </dt> </dl>
 
  

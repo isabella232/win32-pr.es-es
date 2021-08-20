@@ -1,9 +1,9 @@
 ---
-title: modificador/use_epv
-description: El \_ modificador/use EPV indica al compilador de MIDL que genere código de código auxiliar de servidor que llame a la rutina de aplicación de servidor a través de un vector de punto de entrada (EPV), en lugar de una llamada estática. No se recomienda el uso de este atributo.
+title: Modificador /use_epv
+description: El modificador /use epv dirige al compilador midL a generar código auxiliar de servidor que llama a la rutina de aplicación de servidor a través de un vector de punto de entrada (epv), en lugar de \_ mediante una llamada estática. No se recomienda el uso de este atributo.
 ms.assetid: 2853d836-ded3-412a-916b-1143968123a2
 keywords:
-- /use_epv modificador MIDL
+- /use_epv switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,49 +12,49 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec73b5cb9833c15a77c96a784e1ded88d266f9a6
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 614abaf4c124aa0a6e1ca5f7da347ab4a9a2264e174c91734e6a75b188500a3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105685699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014063"
 ---
-# <a name="use_epv-switch"></a>/Use \_ modificador EPV
+# <a name="use_epv-switch"></a>Modificador /use \_ epv
 
-El modificador **/use \_ EPV** indica al compilador de MIDL que genere código de código auxiliar de servidor que llame a la rutina de aplicación de servidor a través de un vector de punto de entrada (EPV), en lugar de una llamada estática. No se recomienda el uso de este atributo.
+El **modificador \_ /use epv** dirige al compilador midL a generar código auxiliar de servidor que llama a la rutina de aplicación de servidor a través de un vector de punto de entrada (epv), en lugar de mediante una llamada estática. No se recomienda el uso de este atributo.
 
 ``` syntax
 midl /use_epv
 ```
 
-## <a name="switch-options"></a>Opciones de conmutador
+## <a name="switch-options"></a>Opciones de cambio
 
 Este modificador no tiene parámetros.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Normalmente, las aplicaciones requieren vinculación estática a la rutina de aplicación de servidor. El compilador MIDL genera este tipo de llamada de forma predeterminada. Sin embargo, si una aplicación requiere que el código auxiliar del servidor llame a la rutina de aplicación de servidor mediante EPV, se debe especificar el modificador **\_ EPV de/use** . Cuando se especifica el modificador **/use \_ EPV** , el compilador MIDL genera una EPV predeterminada. Este valor predeterminado de EPV se usa después si la aplicación no registra otro EPV a través de la llamada a [**RpcServerRegisterIf**](/windows/desktop/api/rpcdce/nf-rpcdce-rpcserverregisterif) .
+Normalmente, las aplicaciones requieren vinculación estática a la rutina de aplicación de servidor. El compilador MIDL genera dicha llamada de forma predeterminada. Sin embargo, si una aplicación requiere que el código auxiliar del servidor llame a la rutina de aplicación de servidor mediante epv, se debe especificar el modificador **\_ /use epv.** Cuando se especifica el modificador **\_ /use epv,** el compilador MIDL genera un epv predeterminado. A continuación, se usa este epv predeterminado si la aplicación no registra otro epv a través de la [**llamada RpcServerRegisterIf.**](/windows/desktop/api/rpcdce/nf-rpcdce-rpcserverregisterif)
 
 ## <a name="examples"></a>Ejemplos
 
-**MIDL/use \_ EPV** *filename * * *. idl**
+**midl /use \_ epv** *filename:.idl**
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Sintaxis de línea de comandos de MIDL general](general-midl-command-line-syntax.md)
+[Sintaxis general de la línea de comandos de MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**/no \_ default \_ EPV**](-no-default-epv.md)
+[**/no \_ default \_ epv**](-no-default-epv.md)
 </dt> <dt>
 
 [**RpcServerRegisterIf**](/windows/desktop/api/rpcdce/nf-rpcdce-rpcserverregisterif)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,5 +1,5 @@
 ---
-description: WMI contiene un conjunto de clases para solucionar problemas de las aplicaciones cliente que utilizan proveedores WMI.
+description: WMI contiene un conjunto de clases para solucionar problemas de aplicaciones cliente que usan proveedores WMI.
 ms.assetid: f69b360a-2c24-4776-bcda-b51edde0dcde
 ms.tgt_platform: multiple
 title: Solución de problemas de aplicaciones cliente WMI
@@ -10,38 +10,38 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0a84646aa42cd0ccd649e3937f0eba257343e9a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7fb9eb8c438faab8915691ee2c9c8a4c77d247c6802f8f114683a79d2833bd15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050033"
 ---
 # <a name="troubleshooting-wmi-client-applications"></a>Solución de problemas de aplicaciones cliente WMI
 
-WMI contiene un conjunto de clases para [solucionar problemas](wmi-troubleshooting-classes.md) de las aplicaciones cliente que utilizan proveedores WMI. Las clases de eventos de solución de problemas están acopladas a las clases de eventos de WMI, de modo que puede realizar un seguimiento de la ejecución de la aplicación mediante un registro de eventos de solución de problemas capturados.
+WMI contiene un conjunto de clases para [solucionar](wmi-troubleshooting-classes.md) problemas de aplicaciones cliente que usan proveedores WMI. Las clases de eventos de solución de problemas están acopladas a las clases de eventos WMI, de modo que puede realizar un seguimiento de la ejecución de la aplicación mediante un registro de eventos de solución de problemas capturados.
 
-La lista siguiente contiene ejemplos de solución de problemas de clases de eventos:
+La lista siguiente contiene ejemplos de clases de eventos de solución de problemas:
 
--   [**Msft \_ WmiProvider \_ ExecMethodAsyncEvent \_ pre**](/previous-versions/windows/desktop/wmisystemprov/msft-wmiprovider-execmethodasyncevent-pre)
+-   [**Msft \_ WmiProvider \_ ExecMethodAsyncEvent \_ Pre**](/previous-versions/windows/desktop/wmisystemprov/msft-wmiprovider-execmethodasyncevent-pre)
 
-    Se genera antes de que WMI llame a [**IWbemServices:: ExecMethodAsync ()**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execmethodasync) en el proveedor.
+    Se genera antes de que WMI [**llame a IWbemServices::ExecMethodAsync()**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execmethodasync) en el proveedor.
 
--   [**Publicación de msft \_ WmiProvider \_ ExecMethodAsyncEvent \_**](/previous-versions/windows/desktop/wmisystemprov/msft-wmiprovider-execmethodasyncevent-post)
+-   [**Msft \_ WmiProvider \_ ExecMethodAsyncEvent \_ Post**](/previous-versions/windows/desktop/wmisystemprov/msft-wmiprovider-execmethodasyncevent-post)
 
-    Se genera después de que WMI llame a [**IWbemServices:: ExecMethodAsync ()**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execmethodasync) en el proveedor.
+    Se genera después de que WMI llama [**a IWbemServices::ExecMethodAsync()**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execmethodasync) en el proveedor.
 
-En el procedimiento siguiente se muestra cómo solucionar problemas de ejecución de la aplicación.
+En el procedimiento siguiente se muestra cómo solucionar problemas de ejecución de aplicaciones.
 
 **Para configurar la solución de problemas de WMI**
 
-1.  Crear y compilar un archivo MOF para usar el consumidor de eventos de registro de WMI.
+1.  Cree y compile un archivo MOF para usar el consumidor de eventos de registro wmi.
 2.  Ejecute la aplicación cliente.
-3.  Vea el archivo de registro de solución de problemas para todos los eventos de operación y error del proveedor y analice el registro para diagnosticar los problemas de cliente que está detectando.
+3.  Vea el archivo de registro de solución de problemas de todos los eventos de operación y error del proveedor y analice el registro para diagnosticar los problemas de cliente que se están detectando.
 
-Otro enfoque de solución de problemas consiste en ver la lista de proveedores actualmente en la caché del equipo, mediante la enumeración de los [**\_ proveedores de msft**](/previous-versions/windows/desktop/wmisystemprov/msft-providers) en el espacio de nombres **root \\ cimv2** . Hay métodos en esta clase que permiten cargar y descargar proveedores para la depuración o el programa de instalación.
+Otro enfoque de solución de problemas es ver la lista de proveedores que se encuentran actualmente en la memoria caché del equipo, enumerando los proveedores [**de MSFT \_**](/previous-versions/windows/desktop/wmisystemprov/msft-providers) en el espacio de nombres **\\ cimv2** raíz. Hay métodos en esta clase que permiten cargar y descargar proveedores con fines de depuración o configuración.
 
-En el ejemplo de código siguiente se usa el consumidor de eventos de registro de WMI para capturar todos los eventos de la clase de eventos primaria, con lo que se capturan todos los eventos de operación del proveedor.
+En el ejemplo de código siguiente se usa el consumidor de eventos de registro wmi para capturar todos los eventos de la clase de eventos primaria, capturando así todos los eventos de operación del proveedor.
 
 ``` syntax
 #pragma autorecover
@@ -70,7 +70,7 @@ instance of __FilterToConsumerBinding
 } ;
 ```
 
-Cuando los mensajes de error indiquen un error de carga del proveedor, use [**msft \_ WmiProvider \_ LoadOperationFailureEvent**](/previous-versions/windows/desktop/wmisystemprov/msft-wmiprovider-loadoperationfailureevent) para identificar el proveedor que causó el error.
+Cuando los mensajes de error indican un error de carga del proveedor, use [**MSFT \_ WmiProvider \_ LoadOperationFailureEvent para**](/previous-versions/windows/desktop/wmisystemprov/msft-wmiprovider-loadoperationfailureevent) identificar qué proveedor produjo el error.
 
 ## <a name="related-topics"></a>Temas relacionados
 

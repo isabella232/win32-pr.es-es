@@ -1,11 +1,11 @@
 ---
-title: atributo msSFU-30-result-Attributes
-description: Contiene un objeto que el servidor NIS utiliza para el almacenamiento temporal.
+title: Atributo msSFU-30-Result-Attributes
+description: Contiene un objeto que el servidor NIS usa para el almacenamiento temporal.
 ms.assetid: c59580cd-8c6b-489e-94a8-49516a347e9a
 ms.tgt_platform: multiple
 keywords:
-- msSFU-30-result-Attributes atributo AD Schema
-- msSFU30ResultAttributes esquema de AD de atributos
+- Esquema de AD del atributo msSFU-30-Result-Attributes
+- Esquema de AD del atributo msSFU30ResultAttributes
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27c7a6d8626fd1173239d5a3c98e92ece48414a5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c229f9630f253742754d7ac9bc3dc07009bdf9f39cd0e6bb69b46532b6ed863d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119550965"
 ---
-# <a name="mssfu-30-result-attributes-attribute"></a>atributo msSFU-30-result-Attributes
+# <a name="mssfu-30-result-attributes-attribute"></a>Atributo msSFU-30-Result-Attributes
 
-Contiene un objeto que el servidor NIS utiliza para el almacenamiento temporal.
+Contiene un objeto que el servidor NIS usa para el almacenamiento temporal.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | msSFU-30-result-Attributes                  |
-| Nombre para mostrar de LDAP | msSFU30ResultAttributes                     |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | msSFU-30-Result-Attributes                  |
+| Ldap-Display-Name | msSFU30ResultAttributes                     |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.305                 |
-| System-ID-GUID    | e167b0b6-4045-4433-ac35-53f972d45cba        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | e167b0b6-4045-4433-ac35-53f972d45cba        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,18 +53,18 @@ Contiene un objeto que el servidor NIS utiliza para el almacenamiento temporal.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | False                                                               |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Falso                                                               |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Clases usadas en        | [**msSFU-30-NIS-Map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Clases usadas en        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 
@@ -74,18 +74,18 @@ Contiene un objeto que el servidor NIS utiliza para el almacenamiento temporal.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | False                                                               |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Falso                                                               |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Clases usadas en        | [**msSFU-30-NIS-Map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Clases usadas en        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 
@@ -95,18 +95,18 @@ Contiene un objeto que el servidor NIS utiliza para el almacenamiento temporal.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | False                                                               |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Falso                                                               |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Clases usadas en        | [**msSFU-30-NIS-Map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Clases usadas en        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 
@@ -114,20 +114,20 @@ Contiene un objeto que el servidor NIS utiliza para el almacenamiento temporal.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | False                                                               |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Falso                                                               |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Clases usadas en        | [**msSFU-30-NIS-Map-config**](c-mssfu30nismapconfig.md)<br/> |
+| Clases usadas en        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 

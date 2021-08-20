@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentCannotNestDDLException'
-title: Constructor de EsentCannotNestDDLException
+description: 'Más información sobre: Constructor EsentCannotNestDDLException'
+title: Constructor EsentCannotNestDDLException
 TOCTitle: 'EsentCannotNestDDLException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentCannotNestDDLException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcannotnestddlexception.esentcannotnestddlexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5c005d4f89ab9a9a00a4a0e0c8383565a202d9d5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c3531b371b0861e7fd7072ac2a7b85eb2b53a8cb6219bdb0b4d98e4b152eab1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118082426"
 ---
-# <a name="esentcannotnestddlexception-constructor"></a>Constructor de EsentCannotNestDDLException
+# <a name="esentcannotnestddlexception-constructor"></a>Constructor EsentCannotNestDDLException
 
 Inicializa una nueva instancia de la clase EsentCannotNestDDLException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentCannotNestDDLException()
 public EsentCannotNestDDLException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentCannotNestDDLException()
 
 [Miembros de EsentCannotNestDDLException](./esentcannotnestddlexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -3,15 +3,15 @@ title: AppID (clave CLSID)
 description: Asocia un AppID a un CLSID.
 ms.assetid: 16b16d07-b37e-47fc-b7a4-e5f2933e6201
 keywords:
-- Clave del registro AppID (CLSID) COM
+- Clave del Registro AppID (CLSID) COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d605587d125a5555b553457056db00a6f4dcad07
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 0d4737e3ca79d0e3bee805a92741fa4a19e409f761b328478340e30c07c872a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105714509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048883"
 ---
 # <a name="appid-clsid-key"></a>AppID (clave CLSID)
 
@@ -25,15 +25,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
       AppID = {AppID_GUID}
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este es un valor de **reg \_ SZ** .
+Se trata de **un valor \_ SZ reg.**
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Clave AppID](appid-key.md)
+[Clave appID](appid-key.md)
 </dt> </dl>
 
  

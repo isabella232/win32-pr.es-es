@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-failed-Interactive-Logon-Count-at-Last-Successful-Logon
-description: El número total de inicios de sesión interactivos erróneos hasta el último inicio de sesión de C a D correcto.
+title: Atributo ms-DS-Failed-Interactive-Logon-Count-At-Last-Successful-Logon
+description: Número total de inicios de sesión interactivos con errores hasta el último inicio de sesión de C-A-D correcto.
 ms.assetid: 8ad62fea-7b65-4948-9256-f48bdb792e39
 ms.tgt_platform: multiple
 keywords:
-- 'MS-DS-failed-Interactive-Logon-Count-at-Last: esquema de AD del atributo de inicio de sesión correcto'
-- Esquema de AD de atributo msDS-FailedInteractiveLogonCountAtLastSuccessfulLogon
+- Esquema de AD del atributo ms-DS-Failed-Interactive-Logon-Count-At-Last-Successful-Logon
+- Esquema de AD del atributo msDS-FailedInteractiveLogonCountAtLastSuccessfulLogon
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 02aaecb421454422516b2558275e88e2aafbf532
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3541e8c19d33484b0fc093e24225c719fb1459ae42a8bc8689ddf094bd30f1b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552385"
 ---
-# <a name="ms-ds-failed-interactive-logon-count-at-last-successful-logon-attribute"></a>atributo MS-DS-failed-Interactive-Logon-Count-at-Last-Successful-Logon
+# <a name="ms-ds-failed-interactive-logon-count-at-last-successful-logon-attribute"></a>Atributo ms-DS-Failed-Interactive-Logon-Count-At-Last-Successful-Logon
 
-El número total de inicios de sesión interactivos erróneos hasta el último inicio de sesión de C a D correcto.
+Número total de inicios de sesión interactivos con errores hasta el último inicio de sesión de C-A-D correcto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------------------------|
-| CN                | MS-DS-failed-Interactive-Logon-Count-at-Last-Successful-Logon |
-| Nombre para mostrar de LDAP | msDS-FailedInteractiveLogonCountAtLastSuccessfulLogon         |
-| Tamaño              | \-                                                            |
-| Actualizar privilegio  | \-                                                            |
+| CN                | ms-DS-Failed-Interactive-Logon-Count-At-Last-Successful-Logon |
+| Ldap-Display-Name | msDS-FailedInteractiveLogonCountAtLastSuccessfulLogon         |
+| Size              | \-                                                            |
+| Privilegio actualizar  | \-                                                            |
 | Frecuencia de actualización  | \-                                                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1973                                       |
-| System-ID-GUID    | c5d234e5-644a-4403-a665-e26e0aef5e98                          |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)                          |
+| System-Id-Guid    | c5d234e5-644a-4403-a665-e26e0aef5e98                          |
+| Syntax            | [**Enumeración**](s-enumeration.md)                          |
 
 
 
@@ -52,18 +52,18 @@ El número total de inicios de sesión interactivos erróneos hasta el último i
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Verdadero                              |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ El número total de inicios de sesión interactivos erróneos hasta el último i
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Verdadero                              |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -92,15 +92,15 @@ El número total de inicios de sesión interactivos erróneos hasta el último i
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Verdadero                              |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

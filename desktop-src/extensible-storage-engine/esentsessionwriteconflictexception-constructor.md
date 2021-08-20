@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSessionWriteConflictException'
-title: Constructor de EsentSessionWriteConflictException
+description: 'Más información sobre: Constructor EsentSessionWriteConflictException'
+title: Constructor EsentSessionWriteConflictException
 TOCTitle: 'EsentSessionWriteConflictException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSessionWriteConflictException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentsessionwriteconflictexception.esentsessionwriteconflictexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 787afd498480f600b25484a13e3e0798b501a371
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b0928130f74e3e6ae67054d273cd08487fac0297514dda2586af8bdb95f9e4d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104279428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039953"
 ---
-# <a name="esentsessionwriteconflictexception-constructor"></a>Constructor de EsentSessionWriteConflictException
+# <a name="esentsessionwriteconflictexception-constructor"></a>Constructor EsentSessionWriteConflictException
 
 Inicializa una nueva instancia de la clase EsentSessionWriteConflictException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentSessionWriteConflictException()
 public EsentSessionWriteConflictException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentSessionWriteConflictException()
 
 [Miembros de EsentSessionWriteConflictException](./esentsessionwriteconflictexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

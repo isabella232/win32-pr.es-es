@@ -1,7 +1,7 @@
 ---
-description: Método de constructor. El constructor bloquea el objeto de sección crítica especificado.
+description: Método constructor. El constructor bloquea el objeto de sección crítica especificado.
 ms.assetid: 5a0d74f9-bb99-4922-9a92-2e7c1863421f
-title: Constructor CAutoLock. CAutoLock (Wxutil. h)
+title: Constructor CAutoLock.CAutoLock (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fed29011d4fe581ed146f64800351a3f1053d957
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 11267b444df319e339bcf13b30f200868a0f62d67712ed147513c2f8bc7d000c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017573"
 ---
-# <a name="cautolockcautolock-constructor"></a>Constructor CAutoLock. CAutoLock
+# <a name="cautolockcautolock-constructor"></a>Constructor CAutoLock.CAutoLock
 
-Método de constructor. El constructor bloquea el objeto de sección crítica especificado.
+Método constructor. El constructor bloquea el objeto de sección crítica especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ CAutoLock(
 
 <dl> <dt>
 
-*plock* 
+*Plock* 
 </dt> <dd>
 
-Puntero a un objeto [**CCritSec**](ccritsec.md) , que contiene un objeto de sección crítica.
+Puntero a un [**objeto CCritSec,**](ccritsec.md) que contiene un objeto de sección crítica.
 
 </dd> </dl>
 
@@ -55,8 +55,8 @@ Puntero a un objeto [**CCritSec**](ccritsec.md) , que contiene un objeto de secc
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -64,7 +64,7 @@ Puntero a un objeto [**CCritSec**](ccritsec.md) , que contiene un objeto de secc
 
 <dl> <dt>
 
-[**Clase CAutoLock**](cautolock.md)
+[**CAutoLock (clase)**](cautolock.md)
 </dt> </dl>
 
  

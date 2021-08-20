@@ -1,7 +1,7 @@
 ---
-description: Establece el peso de la pista. El peso se utiliza para determinar cómo combinar varias pistas.
+description: Establece el peso de la pista. El peso se usa para determinar cómo combinar varias pistas.
 ms.assetid: a00ceae4-47b4-4fb9-a028-97493e3dc071
-title: 'ID3DXAnimationController:: SetTrackWeight (método) (D3dx9anim. h)'
+title: Método ID3DXAnimationController::SetTrackWeight (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: dc42d283231a0e49359531827cc785bd83aefc2b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9842e774d95a906168c341930fb493c7fa3973ee9bde385e09110c091f0e3d59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118094219"
 ---
-# <a name="id3dxanimationcontrollersettrackweight-method"></a>ID3DXAnimationController:: SetTrackWeight (método)
+# <a name="id3dxanimationcontrollersettrackweight-method"></a>Método ID3DXAnimationController::SetTrackWeight
 
-Establece el peso de la pista. El peso se utiliza para determinar cómo combinar varias pistas.
+Establece el peso de la pista. El peso se usa para determinar cómo combinar varias pistas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,19 +41,19 @@ HRESULT SetTrackWeight(
 
 <dl> <dt>
 
-*Seguimiento* \[ de de\]
+*Seguimiento* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Identificador de la pista en la que se va a establecer el peso.
+Identificador de la pista en la que se establecerá el peso.
 
 </dd> <dt>
 
-*Peso* \[ de de\]
+*Peso* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valor de peso.
 
@@ -63,7 +63,7 @@ Valor de peso.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los valores siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

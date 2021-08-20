@@ -1,7 +1,7 @@
 ---
 description: Enumera los nombres de las plantillas de certificado.
 ms.assetid: 4741eb0d-b8e0-468c-8a00-9ccacb52a9a7
-title: 'ISCrdEnr:: enumCertTemplateName (método)'
+title: Método ISCrdEnr::enumCertTemplateName
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: a0a4850143cac48ef9b9b853f99153d4daeb4366
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aab979e77e9e3e61b9d35125accbdf01934764d5a09daf161480646cdec28e3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005203"
 ---
-# <a name="iscrdenrenumcerttemplatename-method"></a>ISCrdEnr:: enumCertTemplateName (método)
+# <a name="iscrdenrenumcerttemplatename-method"></a>Método ISCrdEnr::enumCertTemplateName
 
-El método **enumCertTemplateName** enumera los nombres de las plantillas de certificado.
+El **método enumCertTemplateName** enumera los nombres de las plantillas de certificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,21 +54,21 @@ SCrdEnr.enumCertTemplateName( _
 
 <dl> <dt>
 
-*dwIndex* \[ de\]
+*dwIndex* \[ En\]
 </dt> <dd>
 
-Índice de base cero de la secuencia de enumeración.
+Índice de base cero para la secuencia de enumeración.
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Un valor que determina si la plantilla de certificado enumerada se aplica a los certificados de usuario o de equipo. Si este valor es una plantilla de certificado de \_ usuario de inscripción PPAC \_ \_ \_ (definida como 1), la enumeración se aplica a las plantillas de certificado de usuario. Si este valor es PPAC inscribir la plantilla de certificado de la \_ \_ máquina \_ \_ (definida como 2), la enumeración se aplica a las plantillas de certificado de equipo.
+Valor que determina si la plantilla de certificado enumerada se aplica a los certificados de usuario o equipo. Si este valor es SCARD \_ ENROLL USER CERT TEMPLATE \_ \_ (definido como 1), la enumeración se aplica a \_ las plantillas de certificado de usuario. Si este valor es SCARD \_ ENROLL MACHINE CERT TEMPLATE \_ \_ (definido como 2), la enumeración se aplica a \_ las plantillas de certificado de equipo.
 
 </dd> <dt>
 
-*pbstrCertTemplateName* \[ enuncia\]
+*pbstrCertTemplateName* \[ out\]
 </dt> <dd>
 
 Puntero a una cadena que devuelve el nombre de la plantilla de certificado enumerada.
@@ -79,9 +79,9 @@ Puntero a una cadena que devuelve el nombre de la plantilla de certificado enume
 
 ### <a name="c"></a>C++
 
-Si el método se ejecuta correctamente, el método devuelve S \_ correcto.
+Si el método se realiza correctamente, el método devuelve S \_ OK.
 
-Si se produce un error en el método, devuelve un valor **HRESULT** que indica el error. Para obtener una lista de los códigos de error comunes, vea [Valores HRESULT comunes](common-hresult-values.md).
+Si se produce un error en el método, devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
 ### <a name="vb"></a>VB
 
@@ -94,9 +94,9 @@ Cadena que contiene el nombre de la plantilla de certificado enumerada.
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Archivo DLL<br/>                      | <dl> <dt>Scrdenrl.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCrdEnr se define como 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
+| IID<br/>                      | IID ISCrdEnr se define como \_ 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
 
 
 

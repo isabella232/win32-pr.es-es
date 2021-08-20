@@ -1,5 +1,5 @@
 ---
-title: Métodos de ITsSbOrchestration
+title: Métodos ITsSbOrchestration
 description: La interfaz ITsSbOrchestration expone los métodos siguientes.
 ms.assetid: 803684A4-0FCF-46F2-9365-B6985F25D9DC
 ms.tgt_platform: multiple
@@ -12,7 +12,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118351334"
 ---
-# <a name="itssborchestration-methods"></a>Métodos de ITsSbOrchestration
+# <a name="itssborchestration-methods"></a>Métodos ITsSbOrchestration
 
 La [**interfaz ITsSbOrchestration**](/windows/desktop/api/sbtsv/nn-sbtsv-itssborchestration) expone los métodos siguientes.
 

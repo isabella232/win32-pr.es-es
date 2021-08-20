@@ -1,19 +1,19 @@
 ---
-description: Se envía a una aplicación para notificar los cambios en la ventana del IME. Una ventana recibe este mensaje a través de su función WindowProc.
+description: Se envía a una aplicación para notificarle los cambios en la ventana de IME. Una ventana recibe este mensaje a través de su función WindowProc.
 ms.assetid: 20e064b8-2baf-4b4c-8341-36c3e4643eff
-title: Mensaje de WM_IME_NOTIFY (Winuser. h)
+title: WM_IME_NOTIFY mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca5ab1b2a1fd62d159ab4f216bf9b1bb6892ed69
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a072ff41b5731662afa94e387ec48de7d14bc245906e581303fe976dcf455708
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014223"
 ---
-# <a name="wm_ime_notify-message"></a>Mensaje WM_IME_NOTIFY
+# <a name="wm_ime_notify-message"></a>WM_IME_NOTIFY mensaje
 
-Se envía a una aplicación para notificar los cambios en la ventana del IME. Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Se envía a una aplicación para notificarle los cambios en la ventana de IME. Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -31,17 +31,17 @@ LRESULT CALLBACK WindowProc(
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
-Identificador de la ventana.
+Identificador a ventana.
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-El comando. Este parámetro puede tener uno de los valores siguientes.
+El comando. Este parámetro puede tener uno de los siguientes valores.
 
 <dl>
 <dd><a href="imn-changecandidate.md">IMN_CHANGECANDIDATE</a></dd> 
@@ -64,7 +64,7 @@ El comando. Este parámetro puede tener uno de los valores siguientes.
 *lParam* 
 </dt> <dd>
 
-Datos específicos del comando, con el formato que depende del valor del parámetro *wParam* . Para obtener más información, consulte la documentación de cada comando.
+Datos específicos del comando, con formato dependiente del valor del *parámetro wParam.* Para obtener más información, consulte la documentación de cada comando.
 
 </dd> </dl>
 
@@ -72,9 +72,9 @@ Datos específicos del comando, con el formato que depende del valor del paráme
 
 El valor devuelto depende del comando enviado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una aplicación procesa este mensaje si es responsable de administrar la ventana del IME.
+Una aplicación procesa este mensaje si es responsable de administrar la ventana de IME.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,7 +84,7 @@ Una aplicación procesa este mensaje si es responsable de administrar la ventana
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (include Windows. h); </dt> <dt>IMM. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h);</dt> <dt>Imm.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -95,7 +95,7 @@ Una aplicación procesa este mensaje si es responsable de administrar la ventana
 [Administrador de métodos de entrada](input-method-manager.md)
 </dt> <dt>
 
-[Mensajes del administrador de métodos de entrada](input-method-manager-messages.md)
+[Mensajes del Administrador de métodos de entrada](input-method-manager-messages.md)
 </dt> <dt>
 
 [IMN_CHANGECANDIDATE](imn-changecandidate.md)

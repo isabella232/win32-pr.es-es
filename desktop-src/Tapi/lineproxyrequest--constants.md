@@ -1,19 +1,19 @@
 ---
-description: Estas constantes se utilizan en dos contextos.
+description: Estas constantes se usan en dos contextos.
 ms.assetid: 5c05a567-cc65-411e-b049-919a442c5c57
-title: Constantes de LINEPROXYREQUEST_ (TAPI. h)
+title: LINEPROXYREQUEST_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eba34a3a7f7b1f41f0c32783c4132afcfafef1aa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7b869027bd801079774f2caf35de47bcf6d883dd568b30f66bd4bda37fae43c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003043"
 ---
-# <a name="lineproxyrequest_-constants"></a>Constantes de LINEPROXYREQUEST \_
+# <a name="lineproxyrequest_-constants"></a>Constantes \_ LINEPROXYREQUEST
 
-Estas constantes se utilizan en dos contextos. En primer lugar, se pueden usar en una matriz de valores **DWORD** de la estructura [**LINECALLPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linecallparams) que se pasa con [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen) cuando \_ se especifica la opción proxy LINEOPENOPTION, para indicar qué funciones está dispuesta a controlar la aplicación. En segundo lugar, se usan en la [**línea \_ PROXYREQUEST**](line-proxyrequest.md) pasada a la aplicación de controlador mediante un mensaje de **línea \_ PROXYREQUEST** para indicar el tipo de solicitud que se va a procesar y el formato de los datos en el búfer.
+Estas constantes se usan en dos contextos. En primer lugar, se pueden usar en una matriz de valores **DWORD** en la estructura [**LINECALLPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linecallparams) pasada con [**lineOpen**](/windows/desktop/api/Tapi/nf-tapi-lineopen) cuando se especifica la opción LINEOPENOPTION PROXY, para indicar qué funciones está dispuesto a controlar la \_ aplicación. En segundo lugar, se usan en la SOLICITUD [**\_ PROXYREQUEST**](line-proxyrequest.md) de LÍNEA que se pasa a la aplicación de controlador mediante un mensaje **\_ PROXYREQUEST** de LÍNEA para indicar el tipo de solicitud que se va a procesar y el formato de los datos en el búfer.
 
 <dl> <dt>
 
@@ -22,7 +22,7 @@ Estas constantes se utilizan en dos contextos. En primer lugar, se pueden usar e
 
 
 
-Asociado a [**lineAgentSpecific**](/windows/desktop/api/Tapi/nf-tapi-lineagentspecific).
+Asociado a [**lineAgentSpecific.**](/windows/desktop/api/Tapi/nf-tapi-lineagentspecific)
 
 
 </dt> </dl> </dd> <dt>
@@ -32,7 +32,7 @@ Asociado a [**lineAgentSpecific**](/windows/desktop/api/Tapi/nf-tapi-lineagentsp
 
 
 
-Asociado a [**lineCreateAgent**](/windows/desktop/api/Tapi/nf-tapi-linecreateagenta).
+Asociado a [**lineCreateAgent.**](/windows/desktop/api/Tapi/nf-tapi-linecreateagenta)
 
 
 </dt> </dl> </dd> <dt>
@@ -52,7 +52,7 @@ Asociado a [**lineCreateAgentSession**](/windows/desktop/api/Tapi/nf-tapi-linecr
 
 
 
-Asociado a [**lineGetAgentActivityList**](/windows/desktop/api/Tapi/nf-tapi-linegetagentactivitylista).
+Asociado a [**lineGetAgentActivityList.**](/windows/desktop/api/Tapi/nf-tapi-linegetagentactivitylista)
 
 
 </dt> </dl> </dd> <dt>
@@ -62,7 +62,7 @@ Asociado a [**lineGetAgentActivityList**](/windows/desktop/api/Tapi/nf-tapi-line
 
 
 
-Asociado a [**lineGetAgentCaps**](/windows/desktop/api/Tapi/nf-tapi-linegetagentcapsa).
+Asociado a [**lineGetAgentCaps.**](/windows/desktop/api/Tapi/nf-tapi-linegetagentcapsa)
 
 
 </dt> </dl> </dd> <dt>
@@ -72,7 +72,7 @@ Asociado a [**lineGetAgentCaps**](/windows/desktop/api/Tapi/nf-tapi-linegetagent
 
 
 
-Asociado a [**lineGetAgentGroupList**](/windows/desktop/api/Tapi/nf-tapi-linegetagentgrouplista).
+Asociado a [**lineGetAgentGroupList.**](/windows/desktop/api/Tapi/nf-tapi-linegetagentgrouplista)
 
 
 </dt> </dl> </dd> <dt>
@@ -82,7 +82,7 @@ Asociado a [**lineGetAgentGroupList**](/windows/desktop/api/Tapi/nf-tapi-lineget
 
 
 
-Asociado a [**lineGetAgentInfo**](/windows/desktop/api/Tapi/nf-tapi-linegetagentinfo).
+Asociado a [**lineGetAgentInfo.**](/windows/desktop/api/Tapi/nf-tapi-linegetagentinfo)
 
 
 </dt> </dl> </dd> <dt>
@@ -92,7 +92,7 @@ Asociado a [**lineGetAgentInfo**](/windows/desktop/api/Tapi/nf-tapi-linegetagent
 
 
 
-Asociado a [**lineGetAgentSessionInfo**](/windows/desktop/api/Tapi/nf-tapi-linegetagentsessioninfo).
+Asociado a [**lineGetAgentSessionInfo.**](/windows/desktop/api/Tapi/nf-tapi-linegetagentsessioninfo)
 
 
 </dt> </dl> </dd> <dt>
@@ -102,7 +102,7 @@ Asociado a [**lineGetAgentSessionInfo**](/windows/desktop/api/Tapi/nf-tapi-lineg
 
 
 
-Asociado a [**lineGetAgentSessionList**](/windows/desktop/api/Tapi/nf-tapi-linegetagentsessionlist).
+Asociado a [**lineGetAgentSessionList.**](/windows/desktop/api/Tapi/nf-tapi-linegetagentsessionlist)
 
 
 </dt> </dl> </dd> <dt>
@@ -112,7 +112,7 @@ Asociado a [**lineGetAgentSessionList**](/windows/desktop/api/Tapi/nf-tapi-lineg
 
 
 
-Asociado a [**lineGetAgentStatus**](/windows/desktop/api/Tapi/nf-tapi-linegetagentstatusa).
+Asociado a [**lineGetAgentStatus.**](/windows/desktop/api/Tapi/nf-tapi-linegetagentstatusa)
 
 
 </dt> </dl> </dd> <dt>
@@ -122,7 +122,7 @@ Asociado a [**lineGetAgentStatus**](/windows/desktop/api/Tapi/nf-tapi-linegetage
 
 
 
-Asociado a [**lineGetGroupList**](/windows/desktop/api/Tapi/nf-tapi-linegetgrouplista).
+Asociado a [**lineGetGroupList.**](/windows/desktop/api/Tapi/nf-tapi-linegetgrouplista)
 
 
 </dt> </dl> </dd> <dt>
@@ -132,7 +132,7 @@ Asociado a [**lineGetGroupList**](/windows/desktop/api/Tapi/nf-tapi-linegetgroup
 
 
 
-Asociado a [**lineGetQueueInfo**](/windows/desktop/api/Tapi/nf-tapi-linegetqueueinfo).
+Asociado a [**lineGetQueueInfo.**](/windows/desktop/api/Tapi/nf-tapi-linegetqueueinfo)
 
 
 </dt> </dl> </dd> <dt>
@@ -142,7 +142,7 @@ Asociado a [**lineGetQueueInfo**](/windows/desktop/api/Tapi/nf-tapi-linegetqueue
 
 
 
-Asociado a [**lineGetQueueList**](/windows/desktop/api/Tapi/nf-tapi-linegetqueuelista).
+Asociado a [**lineGetQueueList.**](/windows/desktop/api/Tapi/nf-tapi-linegetqueuelista)
 
 
 </dt> </dl> </dd> <dt>
@@ -152,7 +152,7 @@ Asociado a [**lineGetQueueList**](/windows/desktop/api/Tapi/nf-tapi-linegetqueue
 
 
 
-Asociado a [**lineSetAgentActivity**](/windows/desktop/api/Tapi/nf-tapi-linesetagentactivity).
+Asociado a [**lineSetAgentActivity.**](/windows/desktop/api/Tapi/nf-tapi-linesetagentactivity)
 
 
 </dt> </dl> </dd> <dt>
@@ -162,7 +162,7 @@ Asociado a [**lineSetAgentActivity**](/windows/desktop/api/Tapi/nf-tapi-lineseta
 
 
 
-Asociado a [**lineSetAgentGroup**](/windows/desktop/api/Tapi/nf-tapi-linesetagentgroup).
+Asociado a [**lineSetAgentGroup.**](/windows/desktop/api/Tapi/nf-tapi-linesetagentgroup)
 
 
 </dt> </dl> </dd> <dt>
@@ -172,7 +172,7 @@ Asociado a [**lineSetAgentGroup**](/windows/desktop/api/Tapi/nf-tapi-linesetagen
 
 
 
-Asociado a [**lineSetAgentMeasurementPeriod**](/windows/desktop/api/Tapi/nf-tapi-linesetagentmeasurementperiod).
+Asociado a [**lineSetAgentMeasurementPeriod.**](/windows/desktop/api/Tapi/nf-tapi-linesetagentmeasurementperiod)
 
 
 </dt> </dl> </dd> <dt>
@@ -182,7 +182,7 @@ Asociado a [**lineSetAgentMeasurementPeriod**](/windows/desktop/api/Tapi/nf-tapi
 
 
 
-Asociado a [**lineSetAgentSessionState**](/windows/desktop/api/Tapi/nf-tapi-linesetagentsessionstate).
+Asociado a [**lineSetAgentSessionState.**](/windows/desktop/api/Tapi/nf-tapi-linesetagentsessionstate)
 
 
 </dt> </dl> </dd> <dt>
@@ -192,7 +192,7 @@ Asociado a [**lineSetAgentSessionState**](/windows/desktop/api/Tapi/nf-tapi-line
 
 
 
-Asociado a [**lineSetAgentState**](/windows/desktop/api/Tapi/nf-tapi-linesetagentstate).
+Asociado a [**lineSetAgentState.**](/windows/desktop/api/Tapi/nf-tapi-linesetagentstate)
 
 
 </dt> </dl> </dd> <dt>
@@ -202,7 +202,7 @@ Asociado a [**lineSetAgentState**](/windows/desktop/api/Tapi/nf-tapi-linesetagen
 
 
 
-Asociado a [**lineSetAgentStateEx**](/windows/desktop/api/Tapi/nf-tapi-linesetagentstateex).
+Asociado a [**lineSetAgentStateEx.**](/windows/desktop/api/Tapi/nf-tapi-linesetagentstateex)
 
 
 </dt> </dl> </dd> <dt>
@@ -212,7 +212,7 @@ Asociado a [**lineSetAgentStateEx**](/windows/desktop/api/Tapi/nf-tapi-linesetag
 
 
 
-Asociado a [**lineSetQueueMeasurementPeriod**](/windows/desktop/api/Tapi/nf-tapi-linesetqueuemeasurementperiod).
+Asociado a [**lineSetQueueMeasurementPeriod.**](/windows/desktop/api/Tapi/nf-tapi-linesetqueuemeasurementperiod)
 
 
 </dt> </dl> </dd> </dl>
@@ -223,8 +223,8 @@ Asociado a [**lineSetQueueMeasurementPeriod**](/windows/desktop/api/Tapi/nf-tapi
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

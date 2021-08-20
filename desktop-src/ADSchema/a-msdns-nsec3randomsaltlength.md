@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DNS-NSEC3-aleatoriedad-longitud-valor
-description: Atributo que define la longitud en bytes del valor Salt aleatorio utilizado al firmar la zona DNS.
+title: Atributo ms-DNS-NSEC3-Random-Salt-Length
+description: Atributo que define la longitud en bytes de la sal aleatoria usada al firmar la zona DNS.
 ms.assetid: b8c53765-e6fd-499c-8003-e02a903a059c
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-DNS-NSEC3-de-sal-longitud aleatoria
-- msDN-NSEC3RandomSaltLength atributo AD Schema
+- ms-DNS-NSEC3-Random-Salt-Length attribute AD Schema
+- msDNS-NSEC3RandomSaltLength attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb4860aa20af91c36f266801e623bd6a0cf9098a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 88e254bee9dba9d58d7f748c6a9fa7e8521e155181069c3affea68786356168f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553035"
 ---
-# <a name="ms-dns-nsec3-random-salt-length-attribute"></a>atributo MS-DNS-NSEC3-aleatoriedad-longitud-valor
+# <a name="ms-dns-nsec3-random-salt-length-attribute"></a>Atributo ms-DNS-NSEC3-Random-Salt-Length
 
-Atributo que define la longitud en bytes del valor Salt aleatorio utilizado al firmar la zona DNS.
+Atributo que define la longitud en bytes de la sal aleatoria usada al firmar la zona DNS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DNS-NSEC3-aleatoriedad-longitud-sal-longitud      |
-| Nombre para mostrar de LDAP | msDN: NSEC3RandomSaltLength          |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DNS-NSEC3-Random-Salt-Length      |
+| Ldap-Display-Name | msDNS-NSEC3RandomSaltLength          |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2137              |
-| System-ID-GUID    | 13361665-916c-4de7-a59d-b1ebbd0de129 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 13361665-916c-4de7-a59d-b1ebbd0de129 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -50,13 +50,13 @@ Atributo que define la longitud en bytes del valor Salt aleatorio utilizado al f
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | 0                                        |
 | Range-Upper            | 255                                      |
 | Search-Flags           | 0x00000008                               |
