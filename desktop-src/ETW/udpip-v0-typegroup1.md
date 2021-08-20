@@ -19,12 +19,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 78243a49e4504fd9e132407feebe98d9b48f7bdd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8061009fcf419bd7b5ab04eda0b056a8ccee1ad3f3b990a0846058599f34fbde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117813767"
 ---
 # <a name="udpip_v0_typegroup1-class"></a>Clase \_ TypeGroup1 de UdpIp V0 \_
 
@@ -176,14 +176,14 @@ Número de puerto de origen.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ XP\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                   |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

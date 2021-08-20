@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: tipos de datos del motor de almacenamiento extensible'
-title: Tipos de datos del motor de almacenamiento extensible
+description: 'Más información sobre: Tipos de datos extensibles Storage engine'
+title: Tipos de datos Storage engine extensibles
 TOCTitle: Extensible Storage Engine Data Types
 ms:assetid: 37c23c0c-5c02-44a9-8a96-a712af221256
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269226(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 06938a75f2de2cde1ed55c0c0139a271a0d7e93c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 89a05e771ba4b5abd05002502ac51a7dd1be30167676ba82257a1be8feb7c1d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117706274"
 ---
-# <a name="extensible-storage-engine-data-types"></a>Tipos de datos del motor de almacenamiento extensible
+# <a name="extensible-storage-engine-data-types"></a>Tipos de datos Storage engine extensibles
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="extensible-storage-engine-data-types"></a>Tipos de datos del motor de almacenamiento extensible
+## <a name="extensible-storage-engine-data-types"></a>Tipos de datos Storage engine extensibles
 
-El motor de almacenamiento extensible tiene los siguientes tipos de datos:
+El motor Storage extensible tiene los siguientes tipos de datos:
 
   - [JET_API_PTR](./jet-api-ptr.md)
 
@@ -63,4 +63,4 @@ El motor de almacenamiento extensible tiene los siguientes tipos de datos:
 
   - [JET_TABLEID](./jet-tableid.md)
 
-  - [WCHAR](./wchar.md)
+  - [Wchar](./wchar.md)

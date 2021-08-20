@@ -4,39 +4,39 @@ ms.assetid: 8a9d96f8-1096-4b66-a2ec-8a95d754ea72
 title: Captura de audio y vídeo en Media Foundation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 506c14ee4ab94a27cfafbe18a97ffa8f05676f1f
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 03cf225c8e11823779a401288135017d119fe67e4cd32fa39b54f3cd39b7bb45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105697962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117880910"
 ---
 # <a name="audiovideo-capture-in-media-foundation"></a>Captura de audio y vídeo en Media Foundation
 
-Microsoft Media Foundation admite la captura de audio y vídeo. Los dispositivos de captura de vídeo se admiten a través del controlador de la clase UVC y deben ser compatibles con UVC 1,1. Los dispositivos de captura de audio se admiten a través de la API de sesión de audio de Windows (WASAPI).
+Microsoft Media Foundation admite la captura de audio y vídeo. Los dispositivos de captura de vídeo se admiten a través del controlador de clase UVC y deben ser compatibles con UVC 1.1. Los dispositivos de captura de audio se admiten Windows Audio Session API (WASAPI).
 
-Un dispositivo de captura se representa en Media Foundation mediante un objeto de origen multimedia, que expone la interfaz [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource) . En la mayoría de los casos, la aplicación no usará esta interfaz directamente, pero usará una API de nivel superior como el [lector de origen](source-reader.md) para controlar el dispositivo de captura.
+Un dispositivo de captura se representa en Media Foundation un objeto de origen multimedia, que expone la [**interfaz IMFMediaSource.**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource) En la mayoría de los casos, la aplicación no usará esta [](source-reader.md) interfaz directamente, pero usará una API de nivel superior, como el lector de origen, para controlar el dispositivo de captura.
 
 ## <a name="enumerate-capture-devices"></a>Enumerar dispositivos de captura
 
 Para enumerar los dispositivos de captura en el sistema, realice los pasos siguientes:
 
-1.  Llame a la función [**MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) para crear un almacén de atributos.
-2.  Establezca el atributo de [ \_ tipo de origen del \_ atributo \_ \_ MF DEVSOURCE](mf-devsource-attribute-source-type.md) en uno de los siguientes valores:
+1.  Llame a [**la función MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) para crear un almacén de atributos.
+2.  Establezca el [atributo MF \_ DEVSOURCE \_ ATTRIBUTE SOURCE \_ \_ TYPE](mf-devsource-attribute-source-type.md) en uno de los valores siguientes:
 
-    | Value                                                    | Descripción                      |
+    | Valor                                                    | Descripción                      |
     |----------------------------------------------------------|----------------------------------|
-    | **\_tipo de origen del atributo MF DEVSOURCE \_ \_ \_ \_ \_ GUID AUDCAP** | Enumerar los dispositivos de captura de audio. |
-    | **\_tipo de origen de atributo MF DEVSOURCE de \_ \_ \_ \_ VIDCAP \_ GUID** | Enumerar los dispositivos de captura de vídeo. |
+    | **MF \_ DEVSOURCE \_ ATTRIBUTE \_ SOURCE \_ TYPE \_ AUDCAP \_ GUID** | Enumerar dispositivos de captura de audio. |
+    | **MF \_ DEVSOURCE \_ ATTRIBUTE \_ SOURCE \_ TYPE \_ VIDCAP \_ GUID** | Enumerar dispositivos de captura de vídeo. |
 
     
 
      
 
-3.  Llame a la función [**MFEnumDeviceSources**](/windows/desktop/api/mfidl/nf-mfidl-mfenumdevicesources) . Esta función asigna una matriz de punteros [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) . Cada puntero representa un objeto de activación para un dispositivo del sistema.
-4.  Llame al método [**IMFActivate:: ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) para crear una instancia del origen multimedia a partir de uno de los objetos de activación.
+3.  Llame a [**la función MFEnumDeviceSources.**](/windows/desktop/api/mfidl/nf-mfidl-mfenumdevicesources) Esta función asigna una matriz de punteros [**DE TIPO IMFActivate.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) Cada puntero representa un objeto de activación para un dispositivo del sistema.
+4.  Llame al [**método IMFActivate::ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) para crear una instancia del origen multimedia a partir de uno de los objetos de activación.
 
-En el ejemplo siguiente se crea un origen de medios para el primer dispositivo de captura de vídeo en la lista de enumeración:
+En el ejemplo siguiente se crea un origen multimedia para el primer dispositivo de captura de vídeo en la lista de enumeración:
 
 
 ```C++
@@ -91,11 +91,11 @@ HRESULT CreateVideoCaptureDevice(IMFMediaSource **ppSource)
 
 
 
-Puede consultar los objetos de activación para varios atributos, como los siguientes:
+Puede consultar los objetos de activación para obtener varios atributos, incluidos los siguientes:
 
--   El atributo de [ \_ \_ \_ \_ nombre descriptivo del atributo MF DEVSOURCE](mf-devsource-attribute-friendly-name.md) contiene el nombre para mostrar del dispositivo. El nombre para mostrar es adecuado para mostrar al usuario, pero podría no ser único.
--   En el caso de los dispositivos de vídeo, el atributo de [ \_ tipo de origen del atributo MF DEVSOURCE de \_ \_ código fuente de atributo \_ \_ VIDCAP \_ \_ ](mf-devsource-attribute-source-type-vidcap-symbolic-link.md) contiene el vínculo simbólico al dispositivo. El vínculo simbólico identifica de forma única el dispositivo en el sistema, pero no es una cadena legible.
--   En el caso de los dispositivos de audio, el atributo [MF \_ DEVSOURCE \_ tipo de origen de \_ \_ \_ \_ \_ identificador de extremo AUDCAP](mf-devsource-attribute-source-type-audcap-endpoint-id.md) contiene el ID. de punto de conexión de audio del dispositivo. El identificador del punto de conexión de audio es similar a un vínculo simbólico. Identifica de forma única el dispositivo en el sistema, pero no es una cadena legible.
+-   El [atributo MF \_ DEVSOURCE \_ ATTRIBUTE FRIENDLY \_ \_ NAME](mf-devsource-attribute-friendly-name.md) contiene el nombre para mostrar del dispositivo. El nombre para mostrar es adecuado para mostrarse al usuario, pero puede que no sea único.
+-   En el caso de los dispositivos de vídeo, el atributo [ \_ MF DEVSOURCE \_ ATTRIBUTE SOURCE TYPE \_ \_ \_ VIDCAP SYMBOLIC \_ \_ LINK](mf-devsource-attribute-source-type-vidcap-symbolic-link.md) contiene el vínculo simbólico al dispositivo. El vínculo simbólico identifica de forma única el dispositivo en el sistema, pero no es una cadena legible.
+-   En el caso de los dispositivos de audio, el atributo [MF \_ DEVSOURCE \_ ATTRIBUTE SOURCE TYPE \_ \_ \_ AUDCAP \_ ENDPOINT \_ ID](mf-devsource-attribute-source-type-audcap-endpoint-id.md) contiene el identificador de punto de conexión de audio del dispositivo. El identificador del punto de conexión de audio es similar a un vínculo simbólico. Identifica de forma única el dispositivo en el sistema, pero no es una cadena legible.
 
 En el ejemplo siguiente se toma una matriz de punteros [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) y se imprime el nombre para mostrar de cada dispositivo en la ventana de depuración:
 
@@ -126,14 +126,14 @@ void DebugShowDeviceNames(IMFActivate **ppDevices, UINT count)
 
 
 
-Si ya conoce el vínculo simbólico de un dispositivo de vídeo, hay otra manera de crear el origen de medios para el dispositivo:
+Si ya conoce el vínculo simbólico para un dispositivo de vídeo, hay otra manera de crear el origen multimedia para el dispositivo:
 
-1.  Llame a [**MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) para crear un almacén de atributos.
-2.  Establezca el atributo de [tipo de origen del \_ \_ atributo MF \_ \_ DEVSOURCE](mf-devsource-attribute-source-type.md) en el **tipo de origen de \_ atributo MF DEVSOURCE de \_ \_ \_ \_ VIDCAP \_ GUID**.
-3.  Establezca el [tipo de origen del atributo MF DEVSOURCE atributo de \_ \_ \_ \_ \_ \_ \_ vínculo simbólico de VIDCAP](mf-devsource-attribute-source-type-vidcap-symbolic-link.md) en el vínculo simbólico.
-4.  Llame a la función [**MFCreateDeviceSource**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesource) o [**MFCreateDeviceSourceActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesourceactivate) . El primero devuelve un puntero [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource) . El último devuelve un puntero [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) a un objeto de activación. Puede usar el objeto de activación para crear el origen. (Se pueden calcular las referencias de un objeto de activación en otro proceso, por lo que resulta útil si desea crear el origen en otro proceso. Para obtener más información, vea [objetos de activación](activation-objects.md)).
+1.  Llame [**a MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) para crear un almacén de atributos.
+2.  Establezca el [atributo MF \_ DEVSOURCE \_ ATTRIBUTE SOURCE \_ \_ TYPE](mf-devsource-attribute-source-type.md) en **MF \_ DEVSOURCE \_ ATTRIBUTE SOURCE TYPE \_ \_ \_ VIDCAP \_ GUID**.
+3.  Establezca el [atributo MF \_ DEVSOURCE \_ ATTRIBUTE SOURCE TYPE \_ \_ \_ VIDCAP SYMBOLIC \_ \_ LINK](mf-devsource-attribute-source-type-vidcap-symbolic-link.md) en el vínculo simbólico.
+4.  Llame a la [**función MFCreateDeviceSource**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesource) [**o MFCreateDeviceSourceActivate.**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesourceactivate) El primero devuelve un [**puntero DE TIPO IMFMediaSource.**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource) Este último devuelve un [**puntero DE TIPO IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) a un objeto de activación. Puede usar el objeto de activación para crear el origen. (Un objeto de activación se puede serializar a otro proceso, por lo que resulta útil si desea crear el origen en otro proceso. Para obtener más información, vea [Activation Objects](activation-objects.md).)
 
-En el ejemplo siguiente se toma el vínculo simbólico de un dispositivo de vídeo y se crea un origen de medios.
+En el ejemplo siguiente se toma el vínculo simbólico de un dispositivo de vídeo y se crea un origen multimedia.
 
 
 ```C++
@@ -177,14 +177,14 @@ HRESULT CreateVideoCaptureDevice(PCWSTR *pszSymbolicLink, IMFMediaSource **ppSou
 
 
 
-Existe una manera equivalente de crear un dispositivo de audio a partir del identificador de punto de conexión de audio:
+Hay una manera equivalente de crear un dispositivo de audio a partir del identificador del punto de conexión de audio:
 
-1.  Llame a [**MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) para crear un almacén de atributos.
-2.  Establezca el atributo de [tipo de origen del \_ \_ atributo \_ \_ MF DEVSOURCE](mf-devsource-attribute-source-type.md) en el **tipo de origen de atributo MF \_ DEVSOURCE \_ \_ \_ \_ AUDCAP \_ GUID**.
-3.  Establezca el atributo de ID. de [ \_ punto de \_ \_ \_ \_ \_ \_ conexión del tipo de origen del atributo MF DEVSOURCE](mf-devsource-attribute-source-type-audcap-endpoint-id.md) en el ID. de extremo.
-4.  Llame a la función [**MFCreateDeviceSource**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesource) o [**MFCreateDeviceSourceActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesourceactivate) .
+1.  Llame [**a MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) para crear un almacén de atributos.
+2.  Establezca el [atributo MF \_ DEVSOURCE \_ ATTRIBUTE SOURCE \_ \_ TYPE](mf-devsource-attribute-source-type.md) en **MF \_ DEVSOURCE \_ ATTRIBUTE SOURCE TYPE \_ \_ \_ AUDCAP \_ GUID**.
+3.  Establezca el [atributo MF \_ DEVSOURCE \_ ATTRIBUTE SOURCE TYPE \_ \_ \_ AUDCAP \_ ENDPOINT \_ ID](mf-devsource-attribute-source-type-audcap-endpoint-id.md) en el identificador del punto de conexión.
+4.  Llame a la [**función MFCreateDeviceSource**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesource) [**o MFCreateDeviceSourceActivate.**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesourceactivate)
 
-En el ejemplo siguiente se toma un identificador de punto de conexión de audio y se crea un origen de medios.
+En el ejemplo siguiente se toma un identificador de punto de conexión de audio y se crea un origen multimedia.
 
 
 ```C++
@@ -229,17 +229,17 @@ HRESULT CreateAudioCaptureDevice(PCWSTR *pszEndPointID, IMFMediaSource **ppSourc
 
 ## <a name="use-a-capture-device"></a>Uso de un dispositivo de captura
 
-Después de crear el origen de medios para un dispositivo de captura, use el [lector de origen](source-reader.md) para obtener datos del dispositivo. El lector de origen proporciona ejemplos de medios que contienen los datos de audio de captura o fotogramas de vídeo. El paso siguiente depende del escenario de la aplicación:
+Después de crear el origen multimedia para un dispositivo de captura, use el Lector de [origen](source-reader.md) para obtener datos del dispositivo. El Lector de origen proporciona ejemplos multimedia que contienen los datos de audio de captura o fotogramas de vídeo. El siguiente paso depende del escenario de la aplicación:
 
--   Vista previa de vídeo: Use Microsoft Direct3D o Direct2D para mostrar el vídeo.
--   Captura de archivo: Use el [escritor de receptor](sink-writer.md) para codificar el archivo.
--   Vista previa de audio: use [WASAPI](/windows/desktop/CoreAudio/wasapi).
+-   Versión preliminar del vídeo: use Microsoft Direct3D o Direct2D para mostrar el vídeo.
+-   Captura de archivos: use [el escritor de receptores](sink-writer.md) para codificar el archivo.
+-   Versión preliminar de audio: use [WASAPI](/windows/desktop/CoreAudio/wasapi).
 
-Si quiere combinar la captura de audio con la captura de vídeo, use el *origen multimedia agregado*. El origen multimedia agregado contiene una colección de orígenes multimedia y combina todos sus flujos en un solo objeto de origen multimedia. Para crear una instancia del origen multimedia agregado, llame a la función [**MFCreateAggregateSource**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateaggregatesource) .
+Si desea combinar la captura de audio con la captura de vídeo, use el *origen multimedia agregado*. El origen multimedia agregado contiene una colección de orígenes multimedia y combina todas sus secuencias en un único objeto de origen multimedia. Para crear una instancia del origen multimedia agregado, llame a la [**función MFCreateAggregateSource.**](/windows/desktop/api/mfidl/nf-mfidl-mfcreateaggregatesource)
 
 ## <a name="shut-down-the-capture-device"></a>Apagar el dispositivo de captura
 
-Cuando el dispositivo de captura ya no sea necesario, debe apagar el dispositivo mediante una llamada a [**Shutdown**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-shutdown) en el objeto [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource) que obtuvo mediante una llamada a [**MFCreateDeviceSource**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesource) o [**IMFActivate:: ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject). Si no se llama al **cierre** , pueden producirse vínculos de memoria porque el sistema puede mantener una referencia a los recursos de **IMFMediaSource** hasta que se llama al **cierre** .
+Cuando el dispositivo de captura ya no sea necesario, debe apagar el dispositivo mediante una llamada a [**Shutdown**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-shutdown) en el objeto [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource) que obtuvo mediante una llamada a [**MFCreateDeviceSource**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatedevicesource) o [**a MFActivate::ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject). Si no se llama **a Shutdown,** se pueden producir vínculos de memoria porque el sistema puede mantener una referencia a los recursos **de IMFMediaSource** hasta que **se llama a** Shutdown.
 
 
 ```C++
@@ -253,7 +253,7 @@ if (g_pSource)
 
 
 
-Si ha asignado una cadena que contiene el vínculo simbólico a un dispositivo de captura, también debe liberar este objeto.
+Si asignó una cadena que contiene el vínculo simbólico a un dispositivo de captura, también debe liberar este objeto.
 
 
 ```C++

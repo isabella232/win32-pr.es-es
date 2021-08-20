@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JetOSSnapshotTruncateLog (función)'
-title: JetOSSnapshotTruncateLog función)
+description: 'Más información sobre: JetOSSnapshotTruncateLog (Función)'
+title: JetOSSnapshotTruncateLog (Función)
 TOCTitle: JetOSSnapshotTruncateLog Function
 ms:assetid: 3df8f5b2-8083-49b7-a325-fd13187f785c
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269231(v=EXCHG.10)
@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f0a3cebd743a3c8cd9a3d86f1f637dcb5b2c9c91
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2bf8d45144c990da16cd91899c70c05f8689dc799ee556b6e2e46762f01c3361
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105648587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117891131"
 ---
-# <a name="jetossnapshottruncatelog-function"></a>JetOSSnapshotTruncateLog función)
+# <a name="jetossnapshottruncatelog-function"></a>JetOSSnapshotTruncateLog (Función)
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jetossnapshottruncatelog-function"></a>JetOSSnapshotTruncateLog función)
+## <a name="jetossnapshottruncatelog-function"></a>JetOSSnapshotTruncateLog (Función)
 
-La función **JetOSSnapshotTruncateLog** habilita el truncamiento del registro para todas las instancias que forman parte de la sesión de instantáneas.
+La **función JetOSSnapshotTruncateLog** habilita el truncamiento del registro para todas las instancias que forman parte de la sesión de instantáneas.
 
-**Windows Vista:**  **JetOSSnapshotTruncateLog** se presentó en Windows Vista.
+**Windows Vista:****JetOSSnapshotTruncateLog** se presenta en Windows Vista.  
 
 ```cpp
     JET_ERR JET_API JetOSSnapshotTruncateLog(
@@ -51,7 +51,7 @@ Identificador de la sesión de instantánea.
 
 *grbit*
 
-Opciones de esta llamada. Este parámetro puede tener una combinación de los siguientes valores.
+Opciones para esta llamada. Este parámetro puede tener una combinación de los valores siguientes.
 
 <table>
 <colgroup>
@@ -60,14 +60,14 @@ Opciones de esta llamada. Este parámetro puede tener una combinación de los si
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Value</p></th>
+<th><p>Valor</p></th>
 <th><p>Significado</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>JET_bitAllDatabasesSnapshot</p></td>
-<td><p>Todas las bases de datos están adjuntas para que el motor de almacenamiento pueda calcular y realizar el truncamiento del registro.</p></td>
+<td><p>Todas las bases de datos están conectadas para que el motor de almacenamiento pueda calcular y realizar el truncamiento del registro.</p></td>
 </tr>
 <tr class="even">
 <td><p>0 (cero)</p></td>
@@ -79,7 +79,7 @@ Opciones de esta llamada. Este parámetro puede tener una combinación de los si
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md) y [parámetros de control de errores](./error-handling-parameters.md).
+Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los siguientes códigos de retorno. Para obtener más información sobre los posibles errores de ESE, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -99,25 +99,25 @@ Esta función devuelve el tipo de valor de [JET_ERR](./jet-err.md) con uno de lo
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidGrbit</p></td>
-<td><p>El parámetro <em>grbit</em> no es válido.</p></td>
+<td><p>El <em>parámetro grbit</em> no es válido.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errOSSnapshotInvalidSequence</p></td>
-<td><p>La sesión de instantáneas no está en el estado en el que puede producirse un truncamiento. Las posibles causas son:</p>
+<td><p>La sesión de instantánea no está en el estado en el que se puede producir un truncamiento. Las posibles causas son:</p>
 <ul>
-<li><p>la llamada se realiza después de que se agote el tiempo de espera de la sesión de instantáneas</p></li>
-<li><p>la sesión se especificó como instantánea de copia</p></li>
+<li><p>La llamada se realiza después de que se haya transcurrido el tiempo de espera de la sesión de instantáneas.</p></li>
+<li><p>la sesión se especificó como una instantánea de copia</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
 
-Si se ejecuta correctamente, se truncarán los archivos de registro de una o todas las instancias que formen parte de la sesión de instantáneas, si es posible.
+Si se ejecuta correctamente, los archivos de registro de una o todas las instancias de la sesión de instantánea se truncarán, si es posible.
 
-#### <a name="remarks"></a>Observaciones
+#### <a name="remarks"></a>Comentarios
 
-Solo se debe llamar a esta función si la instantánea se creó con la opción JET_bitContinueAfterThaw. De lo contrario, la sesión de instantánea habría finalizado después de la llamada a [JetOSSnapshotThaw](./jetossnapshotthaw-function.md) .
+Solo se debe llamar a esta función si la instantánea se creó con la JET_bitContinueAfterThaw predeterminada. De lo contrario, la sesión de instantáneas habría finalizado después [de la llamada a JetOSSnapshotThaw.](./jetossnapshotthaw-function.md)
 
 #### <a name="requirements"></a>Requisitos
 
@@ -132,19 +132,19 @@ Solo se debe llamar a esta función si la instantánea se creó con la opción J
 <td><p>Requiere Windows Vista.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Server</strong></p></td>
+<td><p><strong>Servidor</strong></p></td>
 <td><p>Requiere Windows Server 2008.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
+<td><p>Declarado en Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Library</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
+<td><p>Use ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>DLL</strong></p></td>
+<td><p><strong>Dll</strong></p></td>
 <td><p>Requiere ESENT.dll.</p></td>
 </tr>
 </tbody>
@@ -154,7 +154,7 @@ Solo se debe llamar a esta función si la instantánea se creó con la opción J
 #### <a name="see-also"></a>Consulte también
 
 [Parámetros de control de errores](./error-handling-parameters.md)  
-[Errores del motor de almacenamiento extensible](./extensible-storage-engine-errors.md)  
+[Errores extensibles Storage motor de ejecución](./extensible-storage-engine-errors.md)  
 [JET_ERR](./jet-err.md)  
 [JetOSSnapshotEnd](./jetossnapshotend-function.md)  
 [JetOSSnapshotFreeze](./jetossnapshotfreeze-function.md)  

@@ -1,35 +1,35 @@
 ---
-description: Enviado por un receptor de flujo cuando se ha invalidado el formato de bajada y se debe volver a negociar.
+description: Enviado por un receptor de flujo cuando el formato de bajada se ha invalidado y es necesario volver a negociarlo.
 ms.assetid: 732B3BDD-F394-430F-B895-AF18ED61114D
-title: Evento MEStreamSinkFormatInvalidated (Mfobjects. h)
+title: Evento MEStreamSinkFormatInvalidated (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c39c4453c0d5720ffb57f1277946f9cf891ed443
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04442aa9c00b5ab0099306007efaea967d2baced35c186af78e7b5d79854fce0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715308"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118061320"
 ---
 # <a name="mestreamsinkformatinvalidated-event"></a>Evento MEStreamSinkFormatInvalidated
 
-Enviado por un receptor de flujo cuando se ha invalidado el formato de bajada y se debe volver a negociar.
+Enviado por un receptor de flujo cuando el formato de bajada se ha invalidado y es necesario volver a negociarlo.
 
 ## <a name="event-values"></a>Valores de evento
 
-Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) son los siguientes.
+Entre los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) se incluyen los siguientes.
 
 
 
 | VARTYPE              | Descripción                           |
 |----------------------|---------------------------------------|
-| VT \_ vacío<br/> | Sin datos del evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Sin datos del evento.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los datos que se han puesto en cola en el receptor, más allá de la posición de reproducción actual, deben reenviarse.
+Los datos que se han puesto en cola en el receptor, más allá de la posición de reproducción actual, se deben volver a enviar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ Los datos que se han puesto en cola en el receptor, más allá de la posición d
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Aplicaciones \[ para UWP de Windows 8.1 Desktop apps \|\]<br/>                                                      |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 R2 \|\]<br/>                                           |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects. h (incluye Mfidl. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                                      |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| para aplicaciones para UWP\]<br/>                                           |
+| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Los datos que se han puesto en cola en el receptor, más allá de la posición d
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Obtiene los parámetros de configuración de EAPOL para la interfaz LAN inalámbrica especificada.
+description: Obtiene los parámetros de configuración eapol para la interfaz LAN inalámbrica especificada.
 ms.assetid: 3dce15be-879d-42e9-b8eb-96d52c004acb
-title: Función WZCEapolGetInterfaceParams (wzcsapi. h)
+title: Función WZCEapolGetInterfaceParams (Wzcsapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - Wzcsapi.dll
-ms.openlocfilehash: bc89fd2defb75662fa90b5ed00c7969d483da590
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa401e1b045b56b41f7406851c927c316b19d5486adc903af667383465bfd19f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117983932"
 ---
-# <a name="wzceapolgetinterfaceparams-function"></a>WZCEapolGetInterfaceParams función)
+# <a name="wzceapolgetinterfaceparams-function"></a>Función WZCEapolGetInterfaceParams
 
-\[**WZCEapolGetInterfaceParams** ya no es compatible con Windows Vista y windows Server 2008. En su lugar, use la [API WiFi nativa](native-wifi-reference.md), que proporciona una funcionalidad similar. Para obtener más información, consulte [acerca de la API WiFi nativa](about-the-native-wifi-api.md).\]
+\[**WZCEapolGetInterfaceParams** ya no se admite desde Windows Vista y Windows Server 2008. En su lugar, use [native Wifi API](native-wifi-reference.md), que proporciona una funcionalidad similar. Para obtener más información, vea [Acerca de la API de Wi-Fi nativa.](about-the-native-wifi-api.md)\]
 
-La función **WZCEapolGetInterfaceParams** obtiene los parámetros de configuración de EAPOL para la interfaz LAN inalámbrica especificada.
+La **función WZCEapolGetInterfaceParams** obtiene parámetros de configuración EAPOL para la interfaz LAN inalámbrica especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,53 +45,53 @@ DWORD WZCEapolGetInterfaceParams(
 
 <dl> <dt>
 
-*pSrvAddr* \[ de\]
+*pSrvAddr* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena que contiene el nombre del equipo en el que se va a ejecutar esta función. Si este parámetro es **null**, se llama al servicio de configuración inalámbrica cero en el equipo local.
+Puntero a una cadena que contiene el nombre del equipo en el que se va a ejecutar esta función. Si este parámetro es **NULL,** se llama al servicio Configuración inalámbrica cero en el equipo local.
 
-Si el parámetro *pSrvAddr* especificado es un equipo remoto, el equipo remoto debe admitir llamadas RPC remotas.
+Si el *parámetro pSrvAddr* especificado es un equipo remoto, el equipo remoto debe admitir llamadas RPC remotas.
 
 </dd> <dt>
 
-*pwszGuid* \[ de\]
+*pwszGuid* \[ En\]
 </dt> <dd>
 
-GUID de la interfaz para la que se van a recuperar los datos.
+GUID de la interfaz para la que se recuperarán los datos.
 
 </dd> <dt>
 
-*dwSizeOfSSID* \[ de\]
+*dwSizeOfSSID* \[ En\]
 </dt> <dd>
 
-Tamaño del identificador de red para el que se van a recuperar los datos.
+Tamaño del identificador de red para el que se recuperarán los datos.
 
 </dd> <dt>
 
-*pbSSID* \[ de\]
+*pbSSID* \[ En\]
 </dt> <dd>
 
-Puntero al identificador de red para el que se van a recuperar los datos.
+Puntero al identificador de red para el que se recuperarán los datos.
 
 </dd> <dt>
 
 *pIntfParams* \[ in, out\]
 </dt> <dd>
 
-Un puntero a una estructura de parámetros [**\_ \_ Intf de EAPOL**](eapol-intf-params.md) que contiene parámetros de interfaz.
+Puntero a una estructura [**EAPOL \_ INTF \_ PARAMS**](eapol-intf-params.md) que contiene parámetros de interfaz.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve \_ un error si la operación se completa correctamente; de lo contrario, devuelve uno de los códigos de error del sistema de Windows.
+Devuelve ERROR \_ SUCCESS si la operación se completa correctamente; de lo contrario, devuelve uno de los Windows de error del sistema.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si **WZCEapolGetInterfaceParams** devuelve un error \_ , el llamador debe llamar a [**LocalFree**](/windows/win32/api/winbase/nf-winbase-localfree) para liberar los búferes internos asignados para los datos devueltos cuando ya no se necesite esta información.
+Si **WZCEapolGetInterfaceParams** devuelve ERROR SUCCESS, el autor de la llamada debe llamar a LocalFree para liberar los búferes internos asignados para los datos devueltos una vez que esta información ya no sea \_ necesaria. [](/windows/win32/api/winbase/nf-winbase-localfree)
 
 > [!Note]  
-> El archivo de encabezado *wzcsapi. h* y el archivo de biblioteca de importación *wzcsapi. lib* no están disponibles en el Windows SDK.
+> El *archivo de encabezado Wzcsapi.h y* el archivo de biblioteca de importación *Wzcsapi.lib* no están disponibles en el SDK Windows.
 
  
 
@@ -99,14 +99,14 @@ Si **WZCEapolGetInterfaceParams** devuelve un error \_ , el llamador debe llamar
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP2 \[\]<br/>                                   |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp2\]<br/>                                   |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Fin de compatibilidad de cliente<br/>    | Windows XP con SP3<br/>                                                         |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                         |
-| Encabezado<br/>                   | <dl> <dt>Wzcsapi. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Wzcsapi. lib</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wzcsapi.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Wzcsapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wzcsapi.dll</dt> </dl> |
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: enumeración JET_IdxInfo'
-title: Enumeración JET_IdxInfo
+description: 'Más información sobre: enumeración JET_IdxInfo datos'
+title: JET_IdxInfo enumeración
 TOCTitle: JET_IdxInfo enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_IdxInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_idxinfo(v=EXCHG.10)
@@ -48,19 +48,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e1f2cb50537ed492a428c82fd9a6f6541c5fad2b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4447e5e1d7a839b27246121145e820a016eba19f4a4e7c88e487c26782bfc607
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118075210"
 ---
-# <a name="jet_idxinfo-enumeration"></a>Enumeración JET_IdxInfo
+# <a name="jet_idxinfo-enumeration"></a>JET_IdxInfo enumeración
 
 Niveles de información para recuperar información de índice con JetGetIndexInfo. y JetGetTableIndexInfo.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -89,12 +89,12 @@ public enum JET_IdxInfo
 <tr class="odd">
 <td></td>
 <td>Valor predeterminado</td>
-<td>Devuelve una estructura de <a href="dn335123(v=exchg.10).md">JET_INDEXLIST</a> con información sobre el índice.</td>
+<td>Devuelve una <a href="dn335123(v=exchg.10).md">JET_INDEXLIST</a> estructura con información sobre el índice.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>List</td>
-<td>Devuelve una estructura de <a href="dn335123(v=exchg.10).md">JET_INDEXLIST</a> con información sobre el índice.</td>
+<td>Devuelve una <a href="dn335123(v=exchg.10).md">JET_INDEXLIST</a> estructura con información sobre el índice.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -103,7 +103,7 @@ public enum JET_IdxInfo
 </tr>
 <tr class="even">
 <td></td>
-<td>OLC</td>
+<td>Olc</td>
 <td><strong>Obsoleto.</strong> OLC está obsoleto.</td>
 </tr>
 <tr class="odd">
@@ -123,7 +123,7 @@ public enum JET_IdxInfo
 </tr>
 <tr class="even">
 <td></td>
-<td>Ididioma</td>
+<td>Langid</td>
 <td><strong>Obsoleto.</strong> Langid está obsoleto. En su lugar, use LCID.</td>
 </tr>
 <tr class="odd">
@@ -154,4 +154,4 @@ public enum JET_IdxInfo
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

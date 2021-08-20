@@ -1,25 +1,25 @@
 ---
-description: Especifica el control que se va a usar al editar la propiedad.
+description: Especifica qué control se va a usar al editar la propiedad.
 ms.assetid: cef6d76f-664a-4808-a224-e82a5adb2d70
 title: editControl
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 966f9742082fd6b5f939941a956eaae1ac4e427a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0bdb47a3866c156ff10dba8eed4584f814793b863e8f615ae5e1a10b8d687ed4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118055995"
 ---
 # <a name="editcontrol"></a>editControl
 
-Especifica el control que se va a usar al editar la propiedad. Solo debe haber un elemento [editControl]() para cada elemento [displayInfo](./propdesc-schema-displayinfo.md) .
+Especifica qué control se va a usar al editar la propiedad. Solo debe haber un [elemento editControl]() para cada [elemento displayInfo.](./propdesc-schema-displayinfo.md)
 
-Si hay varios elementos, se usa el último. Si no se proporciona ningún elemento [editControl]() , los valores de atributo predeterminados se aplican a la descripción de la propiedad.
+Si hay varios elementos, se usa el último. Si no se proporciona ningún elemento [editControl,]() la configuración de atributo predeterminada se aplica a la descripción de la propiedad.
 
-Si <typeInfo isInnate="true"> es, este elemento se omite porque no se puede editar una propiedad innate.
+Si es , este elemento se omite porque no se puede editar una <typeInfo isInnate="true"> propiedad innate.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```
@@ -53,7 +53,7 @@ Si <typeInfo isInnate="true"> es, este elemento se omite porque no se puede edit
 
 | Elemento primario                                   | Elementos secundarios |
 |--------------------------------------------------|----------------|
-| [displayInfo](./propdesc-schema-displayinfo.md) | None           |
+| [displayInfo](./propdesc-schema-displayinfo.md) | Ninguno           |
 
 
 
@@ -77,7 +77,7 @@ Si <typeInfo isInnate="true"> es, este elemento se omite porque no se puede edit
 <tbody>
 <tr class="odd">
 <td>control</td>
-<td>Público. Opcional. El valor predeterminado es &quot; default &quot; . Estos son los valores válidos. 
+<td>Público. Opcional. El valor predeterminado &quot; es &quot; Default. Estos son los valores válidos. 
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -92,7 +92,7 @@ Si <typeInfo isInnate="true"> es, este elemento se omite porque no se puede edit
 <tbody>
 <tr class="odd">
 <td>Valor predeterminado</td>
-<td>Predeterminada. Utiliza el control predeterminado, basado en el <typeInfo type=&quot;&quot;> atributo. A continuación se enumeran los tipos predeterminados. Cualquier otro tipo da como resultado el uso del &quot; control de texto &quot; . 
+<td>Predeterminada. Usa el control predeterminado, basado en el <typeInfo type=&quot;&quot;> atributo . A continuación se enumeran los tipos predeterminados. Cualquier otro tipo da como resultado el uso del &quot; &quot; control Texto. 
 <table>
 <thead>
 <tr class="header">
@@ -124,11 +124,11 @@ Si <typeInfo isInnate="true"> es, este elemento se omite porque no se puede edit
 </tr>
 <tr class="odd">
 <td>CheckboxDropList</td>
-<td>Utiliza el control de lista con las casillas.</td>
+<td>Usa el control de lista con casillas.</td>
 </tr>
 <tr class="even">
-<td>Plegable</td>
-<td>Utiliza el control de lista desplegable.</td>
+<td>DropList</td>
+<td>Usa el control de lista desplegable.</td>
 </tr>
 <tr class="odd">
 <td>MultiLineText</td>

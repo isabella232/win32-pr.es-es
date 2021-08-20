@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de HDN_ENDTRACK (commctrl. h)
-description: Notifica a la ventana primaria de un control de encabezado que el usuario ha terminado de arrastrar un divisor. Este código de notificación se envía en forma de mensaje de notificación de WM \_ .
+title: HDN_ENDTRACK de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de un control de encabezado que el usuario ha terminado de arrastrar un divisor. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: d9b25871-7bd6-439c-91b8-e8249d9be67d
 keywords:
-- HDN_ENDTRACK controles de código de notificación de Windows
+- HDN_ENDTRACK de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 42ab7625690a2de0414f1da391f26f919c1c2617
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6e59467874643ba3a57ebf65919366077e3c9031d2de317d74c94ad0d51b7304
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118006083"
 ---
-# <a name="hdn_endtrack-notification-code"></a>Código de notificación de ENDTRACK de HDN \_
+# <a name="hdn_endtrack-notification-code"></a>Código de notificación ENDTRACK de HDN \_
 
-Notifica a la ventana primaria de un control de encabezado que el usuario ha terminado de arrastrar un divisor. Este código de notificación se envía en forma de mensaje de [**\_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de encabezado que el usuario ha terminado de arrastrar un divisor. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -55,11 +55,11 @@ No de devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **HDN \_ ENDTRACKW** (Unicode) y **HDN \_ ENDTRACKA** (ANSI)<br/>                 |
 
 

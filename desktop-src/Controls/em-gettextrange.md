@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_GETTEXTRANGE (RichEdit. h)
-description: Recupera un intervalo especificado de caracteres de un control Rich Edit.
+title: EM_GETTEXTRANGE mensaje (Richedit.h)
+description: Recupera un intervalo especificado de caracteres de un control de edición enriquecido.
 ms.assetid: 18398963-eb2c-4f64-99f5-9614a5d34b52
 keywords:
-- EM_GETTEXTRANGE controles de mensajes de Windows
+- EM_GETTEXTRANGE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d68c4089bbe2cc09daa39d69e9094a4abaead787
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e12282b970c38164e5b28a31ed778a3320f88bbdf16b6d182586e492e5e699eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118006580"
 ---
-# <a name="em_gettextrange-message"></a>\_Mensaje GETTEXTRANGE em
+# <a name="em_gettextrange-message"></a>Mensaje \_ EM GETTEXTRANGE
 
-Recupera un intervalo especificado de caracteres de un control Rich Edit.
+Recupera un intervalo especificado de caracteres de un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -39,23 +39,23 @@ Este parámetro no se usa; debe ser cero.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**TEXTRANGE**](/windows/win32/api/richedit/ns-richedit-textrangea) que especifica el intervalo de caracteres que se va a recuperar y un búfer en el que se van a copiar los caracteres.
+Puntero a una [**estructura TEXTRANGE**](/windows/win32/api/richedit/ns-richedit-textrangea) que especifica el intervalo de caracteres que se van a recuperar y un búfer en el que copiar los caracteres.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El mensaje devuelve el número de caracteres copiados, sin incluir el carácter nulo de terminación.
+El mensaje devuelve el número de caracteres copiados, sin incluir el carácter nulo final.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ El mensaje devuelve el número de caracteres copiados, sin incluir el carácter 
 
 <dl> <dt>
 
-[**TEXTRANGE**](/windows/win32/api/richedit/ns-richedit-textrangea)
+[**Textrange**](/windows/win32/api/richedit/ns-richedit-textrangea)
 </dt> </dl>
 
  

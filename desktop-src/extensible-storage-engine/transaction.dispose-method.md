@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: Transaction. Dispose (método)'
-title: Transaction. Dispose (método)
+description: Más información sobre el método Transaction.Dispose
+title: Método Transaction.Dispose
 TOCTitle: 'Dispose method '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.Transaction.Dispose
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.transaction.dispose(v=EXCHG.10)
@@ -14,14 +14,14 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: a4e99ef82dc7792be764b5946485e05658d2c927
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: faf2716ff77afcf7b372d1970ef61ec3d53c181260dff694da50a707e03a3d01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104549844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117890437"
 ---
-# <a name="transactiondispose-method"></a>Transaction. Dispose (método)
+# <a name="transactiondispose-method"></a>Método Transaction.Dispose
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
@@ -39,13 +39,13 @@ Incluir miembros heredados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="dn350553(v=exchg.10).md">Dispose ()</a></td>
-<td>Desechar este objeto, liberando el recurso esent subyacente. (Se hereda de <a href="dn319890(v=exchg.10).md">EsentResource</a>).</td>
+<td><a href="dn350553(v=exchg.10).md">Dispose()</a></td>
+<td>Elimine este objeto y libere el recurso subyacente de Esent. (Se hereda de <a href="dn319890(v=exchg.10).md">EsentResource).</a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn350543(v=exchg.10).md">Dispose (booleano)</a></td>
-<td>Lo llama Dispose y el finalizador. (Se hereda de <a href="dn319890(v=exchg.10).md">EsentResource</a>).</td>
+<td><a href="dn350543(v=exchg.10).md">Dispose(Boolean)</a></td>
+<td>Llamado por Dispose y el finalizador. (Se hereda de <a href="dn319890(v=exchg.10).md">EsentResource).</a></td>
 </tr>
 </tbody>
 </table>
@@ -61,4 +61,4 @@ Superior
 
 [Miembros de transacción](./transaction-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

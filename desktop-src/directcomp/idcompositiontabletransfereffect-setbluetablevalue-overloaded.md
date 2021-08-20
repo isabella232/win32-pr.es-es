@@ -1,9 +1,9 @@
 ---
-title: Métodos IDCompositionTableTransferEffect SetBlueTableValue (Dcomp. h)
+title: Métodos IDCompositionTableTransferEffect SetBlueTableValue (Dcomp.h)
 description: Establece un valor en la tabla azul.
 ms.assetid: 9c7098d5-17aa-3154-02a7-7acf972a212d
 keywords:
-- Métodos SetBlueTableValue DirectComposition
+- Métodos SetBlueTableValue de DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,14 +12,14 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: ee5b04a000cf1e758780c15c257af331538da7a1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a5ef8e0c6c4c80e3e9391bc7453be18976f1d4263887382e4ee7d74953e8f530
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118088624"
 ---
-# <a name="idcompositiontabletransfereffectsetbluetablevalue-methods"></a>IDCompositionTableTransferEffect:: SetBlueTableValue (métodos)
+# <a name="idcompositiontabletransfereffectsetbluetablevalue-methods"></a>Métodos IDCompositionTableTransferEffect::SetBlueTableValue
 
 Establece un valor en la tabla azul.
 
@@ -40,7 +40,7 @@ Establece un valor en la tabla azul.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

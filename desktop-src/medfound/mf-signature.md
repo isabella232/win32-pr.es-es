@@ -1,7 +1,7 @@
 ---
 description: Contiene una firma de lista de revocación global (GRL).
 ms.assetid: 388a901c-6202-41cf-9c3d-f29d8ccca76b
-title: Estructura de MF_SIGNATURE
+title: MF_SIGNATURE estructura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 4827fea8e4259609cbb54f2b58a3d1c88ad6c23e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d5eec1105e490e68b5fecb46253154b3ed85a112b10641e8394bcc713b71c62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118059170"
 ---
-# <a name="mf_signature-structure"></a>\_Estructura de firma MF
+# <a name="mf_signature-structure"></a>Estructura \_ MF SIGNATURE
 
 Contiene una firma de lista de revocación global (GRL).
 
@@ -57,22 +57,22 @@ Tamaño de la firma en bytes.
 **rgSign**
 </dt> <dd>
 
-Matriz de bytes de tamaño **cbSign** que contiene la firma. El tamaño real de la matriz es mayor que el tamaño especificado en la declaración de la estructura.
+Matriz de bytes de tamaño **cbSign** que contiene la firma. El tamaño real de la matriz es mayor que el tamaño especificado en la declaración de estructura.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura no se declara en un encabezado de SDK. Para usar esta estructura, agregue la declaración que se muestra aquí al código fuente.
+Esta estructura no se declara en un encabezado del SDK. Para usar esta estructura, agregue la declaración que se muestra aquí al código fuente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -80,10 +80,10 @@ Esta estructura no se declara en un encabezado de SDK. Para usar esta estructura
 
 <dl> <dt>
 
-[Revocación de certificados OPM](opm-certificate-revocation.md)
+[Revocación de certificados de OPM](opm-certificate-revocation.md)
 </dt> <dt>
 
-[Estructuras OPM](opm-structures.md)
+[Estructuras de OPM](opm-structures.md)
 </dt> </dl>
 
  

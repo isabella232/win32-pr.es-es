@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: SystemParameters. KeyMost (propiedad)'
-title: Propiedad SystemParameters. KeyMost
+description: 'Más información sobre: Propiedad SystemParameters.KeyMost'
+title: Propiedad SystemParameters.KeyMost
 TOCTitle: 'KeyMost property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.SystemParameters.KeyMost
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.keymost(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f211e6d5a93679c49ae26e08152190d105f05ebd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b52c0f07ef3c66ee86fb3178fa7bbce2fc9834902946e8986f0684a1fedbc0a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105648627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117702533"
 ---
-# <a name="systemparameterskeymost-property"></a>Propiedad SystemParameters. KeyMost
+# <a name="systemparameterskeymost-property"></a>Propiedad SystemParameters.KeyMost
 
-Obtiene el tamaño máximo de la clave. Esto depende de la versión de esent y del tamaño de página de la base de datos.
+Obtiene el tamaño máximo de la clave. Esto depende del tamaño de página de la base de datos y la versión de Esent.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -57,7 +57,7 @@ public static int KeyMost { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -65,6 +65,6 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [SystemParameters (clase)](./systemparameters-class.md)
 
-[Miembros de SystemParameters](./systemparameters-members.md)
+[Miembros SystemParameters](./systemparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

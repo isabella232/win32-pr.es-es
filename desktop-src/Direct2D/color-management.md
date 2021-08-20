@@ -49,16 +49,16 @@ El CLSID para este efecto es CLSID \_ D2D1ColorManagement.
 | SATURACIÓN DE LA INTENCIÓN \_ DE REPRESENTACIÓN DE COLORMANAGEMENT D2D1 \_ \_ \_ | El efecto ajusta los colores que se encuentran fuera del intervalo de colores que el dispositivo de salida representa al color más cercano disponible. No conserva el punto blanco. |
 | D2D1 \_ COLORMANAGEMENT \_ RENDERING \_ INTENT \_ ABSOLUTE \_ COLORIMETRIC | El efecto ajusta los colores que se encuentran fuera del intervalo que el dispositivo de salida puede representar al color más cercano que se puede representar. El efecto no cambia los demás colores y conserva el punto blanco. |
 
-## <a name="input-image-alpha-modes"></a>Modos alfa de imagen de entrada
+## <a name="input-image-alpha-modes"></a>Modos alfa de la imagen de entrada
 
 | Enumeración | Descripción |
 |-|-|
 | D2D1 \_ COLORMANAGEMENT \_ ALPHA \_ MODE \_ PREMULTIPLIED | El efecto supone que el modo alfa está premultiplicado. |
-| MODO ALFA D2D1 \_ COLORMANAGEMENT \_ \_ \_ STRAIGHT | El efecto supone que el modo alfa es directo. |
+| D2D1 \_ COLORMANAGEMENT \_ ALPHA \_ MODE \_ STRAIGHT | El efecto supone que el modo alfa es directo. |
 
 ## <a name="d2d1_gamma1_g2084-behavior-changes"></a>D2D1_GAMMA1_G2084 cambios de comportamiento
     
-Si la aplicación usa el espacio [de D2D1_GAMMA1_G2084](/windows/desktop/api/d2d1_3/ne-d2d1_3-d2d1_gamma1) o uno de los valores de enumeración [de DXGI_COLOR_SPACE_TYPE](/windows/desktop/api/dxgicommon/ne-dxgicommon-dxgi_color_space_type) que usan el espacio de colores SMPTE ST.2084 (Cuantificador perceptual), la aplicación pretende trabajar con datos HDR.
+Si la aplicación usa el espacio [D2D1_GAMMA1_G2084](/windows/desktop/api/d2d1_3/ne-d2d1_3-d2d1_gamma1) o uno de los valores de enumeración [de DXGI_COLOR_SPACE_TYPE](/windows/desktop/api/dxgicommon/ne-dxgicommon-dxgi_color_space_type) que usan el espacio de color SMPTE ST.2084 (Cuantificador perceptual), la aplicación pretende trabajar con datos HDR.
 
 Las API [**ID2D1DeviceContext5::CreateColorContextFromSimpleColorProfile**](/windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext5-createcolorcontextfromsimplecolorprofile(constd2d1_simple_color_profile__id2d1colorcontext1)) e [**ID2D1DeviceContext5::CreateColorContextFromDxgiColorSpace**](/windows/desktop/api/d2d1_3/nf-d2d1_3-id2d1devicecontext5-createcolorcontextfromdxgicolorspace) no tienen en cuenta eso; en su lugar, el contenido HDR se escala para ajustarse al intervalo 0-1 durante la operación G2084 DeGamma.
 
@@ -129,7 +129,7 @@ En general, el efecto establece alfa en 1 (opaco) si no hay datos alfa en la ima
 <tr class="odd">
 <td rowspan="4">3 canales, formato de píxel RGBA ${REMOVE}$<br />
 </td>
-<td>1 canal, formato de píxeles de R</td>
+<td>1 canal, formato de píxel de R</td>
 <td>Se descartan los datos alfa</td>
 </tr>
 <tr class="even">
@@ -150,7 +150,7 @@ En general, el efecto establece alfa en 1 (opaco) si no hay datos alfa en la ima
 <tr class="odd">
 <td rowspan="4">4 canales, formato de píxel RGBA ${REMOVE}$<br />
 </td>
-<td>1 canal, formato de píxeles de R</td>
+<td>1 canal, formato de píxel de R</td>
 <td>(Sin datos alfa)</td>
 </tr>
 <tr class="even">
@@ -175,22 +175,22 @@ En general, el efecto establece alfa en 1 (opaco) si no hay datos alfa en la ima
 
 | Mode | Descripción |
 |-|-|
-| D2D1 \_ COLORMANAGEMENT \_ QUALITY \_ PROOF | Modo de calidad más baja. Este modo requiere el nivel de característica 9 \_ 1 o superior. |
+| D2D1 \_ COLORMANAGEMENT \_ QUALITY \_ PROOF | El modo de calidad más baja. Este modo requiere el nivel de característica 9 \_ 1 o superior. |
 | D2D1 \_ COLORMANAGEMENT \_ QUALITY \_ NORMAL | Modo de calidad normal. Este modo requiere el nivel de característica 9 \_ 1 o superior. |
-| D2D1 \_ COLORMANAGEMENT \_ QUALITY \_ BEST | El modo de mejor calidad. Este modo requiere el nivel de característica 10 0 o superior, así como \_ búferes de precisión de punto flotante. Este modo admite la precisión de punto flotante, así como el intervalo extendido, tal y como se define en la especificación DEV V4.3. |
+| D2D1 \_ COLORMANAGEMENT \_ QUALITY \_ BEST | El modo de mejor calidad. Este modo requiere el nivel de característica 10 \_ 0 o superior, así como búferes de precisión de punto flotante. Este modo admite la precisión de punto flotante, así como el intervalo extendido, tal y como se define en la especificación DE C#v4.3. |
 
-Se produce un error en el efecto de administración de colores al dibujar si la aplicación solicita un modo de calidad que no es compatible con el hardware. Puede determinar el nivel de característica al llamar a [**D3D11CreateDevice**](/windows/desktop/api/d3d11/nf-d3d11-d3d11createdevice). Puede comprobar la compatibilidad del búfer de punto flotante llamando a [**ID2D1EffectContext::IsBufferPrecisionSupported**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-isbufferprecisionsupported) con el valor [**D2D1 \_ BUFFER PRECISION \_ \_ 32BPC \_ FLOAT.**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_buffer_precision)
+Se produce un error en el efecto de administración de colores al dibujar si la aplicación solicita un modo de calidad que no es compatible con el hardware. Puede determinar el nivel de característica al llamar a [**D3D11CreateDevice.**](/windows/desktop/api/d3d11/nf-d3d11-d3d11createdevice) Puede comprobar la compatibilidad con el búfer de punto flotante llamando a [**ID2D1EffectContext::IsBufferPrecisionSupported**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-isbufferprecisionsupported) con el valor [**D2D1 \_ BUFFER PRECISION \_ \_ 32BPC \_ FLOAT**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_buffer_precision).
 
 ## <a name="sample-code"></a>Código de ejemplo
 
-Para obtener un ejemplo de este efecto, descargue el ejemplo de ajuste de fotos efectos de [Direct2D](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/D2DPhotoAdjustment)y vea la lección 4 del ejemplo.
+Para obtener un ejemplo de este efecto, descargue el ejemplo de ajuste de foto de efectos de [Direct2D](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/D2DPhotoAdjustment)y vea la lección 4 del ejemplo.
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Valor |
+| Requisito | Value |
 |-|-|
-| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
-| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
+| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows store\] |
+| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows store\] |
 | Header | d2d1effects.h |
 | Biblioteca | d2d1.lib, dxguid.lib |
 

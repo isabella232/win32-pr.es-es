@@ -1,36 +1,36 @@
 ---
-description: El descodificador de voz de Windows Media Audio descodifica los flujos codificados por el codificador de Windows Media Audio Voice.
+description: El Windows media audio voice descodifica las secuencias codificadas por el codificador de voz Windows media audio.
 ms.assetid: 8bb5c8bd-949f-4faa-b679-8854f78076a4
-title: Descodificador de Windows Media Audio Voice (Wmcodecdsp. h)
+title: Windows Descodificador de voz de audio multimedia (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4565a511f2816d2914ec96f3ae89f3af5dd19016
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ae2aaae504cd0909b4c7fc86d84e00d43492d695f86ff71c487f3b56ee81190f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118057426"
 ---
-# <a name="windows-media-audio-voice-decoder"></a>Descodificador de Windows Media Audio Voice
+# <a name="windows-media-audio-voice-decoder"></a>Windows Descodificador de voz de audio multimedia
 
-El descodificador de voz de Windows Media Audio descodifica los flujos codificados por el [**codificador de Windows Media Audio Voice**](windowsmediaaudiovoiceencoder.md).
+El Windows media audio voice descodifica las secuencias codificadas por el codificador de voz [**de Windows**](windowsmediaaudiovoiceencoder.md)media audio .
 
 ## <a name="class-identifier"></a>Identificador de clase
 
-El identificador de clase (CLSID) para el descodificador de Windows Media Audio Voice se representa mediante la **constante \_ CWMSPDecMediaObject de CLSID**. Puede crear una instancia del descodificador de voz llamando a **CoCreateInstance**.
+El identificador de clase (CLSID) del descodificador Windows Media Audio Voice se representa mediante la constante **CLSID \_ CWMSPDecMediaObject**. Puede crear una instancia del descodificador de voz llamando a **CoCreateInstance**.
 
 ## <a name="input-formats"></a>Formatos de entrada
 
-Windows Media Audio contenido codificado por voz se identifica mediante la etiqueta de formato 0x00A.
+Windows El contenido codificado de Media Audio Voice se identifica mediante la etiqueta de formato 0x00A.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Remoto<br/> | Windows XP, Windows Vista o Windows 7<br/>                                       |
-| Encabezado<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente<br/> | Windows XP, Windows Vista o Windows 7<br/>                                       |
+| Header<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 | Archivo DLL<br/>    | <dl> <dt>Wmspdmod.dll</dt> </dl> |
 
 
@@ -39,13 +39,13 @@ Windows Media Audio contenido codificado por voz se identifica mediante la etiqu
 
 <dl> <dt>
 
-[Objetos Codec](codecobjects.md)
+[Objetos de códec](codecobjects.md)
 </dt> <dt>
 
-[Usar el códec Windows Media Audio Voice](usingthewindowsmediaaudio9voicecodec.md)
+[Uso del códec Windows media audio voice](usingthewindowsmediaaudio9voicecodec.md)
 </dt> <dt>
 
-[Codificador de voz Windows Media Audio](windowsmediaaudiovoiceencoder.md)
+[Windows Codificador de voz de audio multimedia](windowsmediaaudiovoiceencoder.md)
 </dt> </dl>
 
  

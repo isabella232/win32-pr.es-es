@@ -1,9 +1,9 @@
 ---
-title: Command. Symbol (propiedad)
+title: Propiedad Command.Symbol
 description: Representa el nombre de un comando al que se puede hacer referencia externamente.
 ms.assetid: affa5f3f-f641-4bec-9165-6102509cf355
 keywords:
-- Command. Symbol (propiedad) cinta de Windows
+- Command.Symbol, propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b88dccb71a90feca7348ca9731ca5966b012c9c0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bb0a391b56c5d44809735d32b9d3e3dfa47dc2b9f1ce686176fa077e99bf987c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105705172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117656490"
 ---
-# <a name="commandsymbol-property"></a>Command. Symbol (propiedad)
+# <a name="commandsymbol-property"></a>Propiedad Command.Symbol
 
-Representa el nombre de un [**comando**](windowsribbon-element-command.md) al que se puede hacer referencia externamente.
+Representa el nombre de un [**comando al**](windowsribbon-element-command.md) que se puede hacer referencia externamente.
 
 ## <a name="usage"></a>Uso
 
@@ -43,19 +43,19 @@ No hay elementos secundarios.
 
 | Elemento                                                     |
 |-------------------------------------------------------------|
-| [**Get-Help**](windowsribbon-element-command.md)<br/> |
+| [**Comando**](windowsribbon-element-command.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede producirse al menos una vez para cada [**comando**](windowsribbon-element-command.md).
+Puede producirse como máximo una vez para cada [**comando**](windowsribbon-element-command.md).
 
 El símbolo está asociado a una definición de comando en el archivo de encabezado de la cinta de opciones, por ejemplo, `#define cmdSave 25003 /* Save */` .
 
-Este elemento contiene un valor de tipo *xs: String*.
+Este elemento contiene un valor de tipo *xs:string.*
 
 El valor está restringido a una cadena que consta de una letra o un carácter de subrayado seguido de cualquier secuencia de letras, dígitos y caracteres de subrayado.
 
@@ -63,7 +63,7 @@ La longitud máxima es de 100 caracteres.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado de un elemento [**Command**](windowsribbon-element-command.md) con una declaración **Command. Symbol** .
+En el ejemplo siguiente se muestra el marcado de un [**elemento Command**](windowsribbon-element-command.md) con una **declaración Command.Symbol.**
 
 
 ```XML
@@ -91,10 +91,10 @@ En el ejemplo siguiente se muestra el marcado de un elemento [**Command**](windo
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 

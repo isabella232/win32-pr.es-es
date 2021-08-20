@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: clase EsentException'
-title: Clase EsentException (Microsoft. ISAM. esent)
+description: 'Más información sobre: Clase EsentException'
+title: Clase EsentException (Microsoft.Isam.Esent)
 TOCTitle: EsentException class
 ms:assetid: T:Microsoft.Isam.Esent.EsentException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.esentexception(v=EXCHG.10)
@@ -24,29 +24,29 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 775d63c6b1d234696790b1187538a6d1ee734a2e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f0f1d48827a16a44f050d8ef293217da518cfbb8eb56fa698b0458880305c1b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117711024"
 ---
 # <a name="esentexception-class"></a>Clase EsentException
 
-Clase base para las excepciones de ESENT.
+Clase base para excepciones DE ESENT.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    Microsoft. ISAM. esent. EsentException  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentInvalidColumnException](./esentinvalidcolumnexception-class.md)  
+    Microsoft.Isam.Esent.EsentException  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentInvalidColumnException](./esentinvalidcolumnexception-class.md)  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent](./microsoft.isam.esent-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent](./microsoft.isam.esent-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -72,4 +72,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 [Miembros de EsentException](./esentexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent](./microsoft.isam.esent-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent](./microsoft.isam.esent-namespace.md)

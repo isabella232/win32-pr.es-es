@@ -1,5 +1,5 @@
 ---
-description: Contiene la configuración de conectividad relacionada con IHV. No está implementado actualmente.
+description: Contiene la configuración de conectividad relacionada con IHV. Actualmente no está implementado.
 ms.assetid: d943e82a-8660-4df7-8f5c-42ed83f17313
 title: elemento connectivity (IHV)
 ms.topic: reference
@@ -21,9 +21,9 @@ ms.locfileid: "117797915"
 ---
 # <a name="connectivity-ihv-element"></a>elemento connectivity (IHV)
 
-El elemento connectivity (IHV) contiene la configuración de conectividad relacionada con IHV. No está implementado actualmente.
+El elemento connectivity (IHV) contiene la configuración de conectividad relacionada con IHV. Actualmente no está implementado.
 
-**Windows XP con SP3 e API de LAN inalámbrica para Windows XP con SP2:** No se admite este elemento.
+Windows XP con SP3 y LAN API inalámbrica **para Windows XP con SP2:** No se admite este elemento.
 
 ``` syntax
 <xs:element name="connectivity"
@@ -40,7 +40,7 @@ El elemento connectivity (IHV) contiene la configuración de conectividad relaci
 </xs:element>
 ```
 
-El elemento se define mediante el [**elemento IHV.**](wlan-profileschema-ihv-wlanprofile-element.md)
+El elemento [**IHV**](wlan-profileschema-ihv-wlanprofile-element.md) define el elemento .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,7 +53,7 @@ El elemento se define mediante el [**elemento IHV.**](wlan-profileschema-ihv-wla
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

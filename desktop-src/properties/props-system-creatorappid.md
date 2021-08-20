@@ -1,17 +1,17 @@
 ---
 description: AppId de la aplicación que creó este archivo.
 ms.assetid: 8486576b-e879-4313-b3ab-4be0c4768f8b
-title: System. CreatorAppId
+title: System.CreatorAppId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e493fb1def8abfe6afb8a99f30e426564c4d55d4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8db62bb6bfc79593066ee300e3738df8d6f93f7a0dec8b1ecc885abcf98f2bea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118055192"
 ---
-# <a name="systemcreatorappid"></a>System. CreatorAppId
+# <a name="systemcreatorappid"></a>System.CreatorAppId
 
 AppId de la aplicación que creó este archivo.
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = false
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

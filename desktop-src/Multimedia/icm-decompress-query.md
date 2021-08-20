@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_DECOMPRESS_QUERY (VFW. h)
-description: El \_ mensaje de consulta de descomprimir ICM consulta \_ un controlador de descompresión de vídeo para determinar si admite un formato de entrada específico o si puede descomprimir un formato de entrada específico en un formato de salida específico.
+title: ICM_DECOMPRESS_QUERY mensaje (Vfw.h)
+description: El ICM consulta DECOMPRESS consulta un controlador de descompresión de vídeo para determinar si admite un formato de entrada específico o si puede \_ descomprimir un formato de entrada específico en un formato de salida \_ específico.
 ms.assetid: 622dd1de-3f7a-4841-913c-282c2ad766f4
 keywords:
-- Mensaje de ICM_DECOMPRESS_QUERY de Windows multimedia
+- ICM_DECOMPRESS_QUERY mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 838c946a38f9c2fda0c9178a36107af73f539a03
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 05edaa76f0d361741cb3ab5b274c63c2c2cc38ce5e388854f7056c3ea59d109f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117987945"
 ---
-# <a name="icm_decompress_query-message"></a>Descomprime el \_ \_ mensaje de consulta
+# <a name="icm_decompress_query-message"></a>\_ICM Mensaje DE CONSULTA \_ DECOMPRESS
 
-El mensaje de **\_ \_ consulta de descomprimir ICM** consulta un controlador de descompresión de vídeo para determinar si admite un formato de entrada específico o si puede descomprimir un formato de entrada específico en un formato de salida específico. Puede enviar este mensaje explícitamente o mediante la macro [**ICDecompressQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressquery) .
+El ICM consulta **\_ DECOMPRESS \_** consulta un controlador de descompresión de vídeo para determinar si admite un formato de entrada específico o si puede descomprimir un formato de entrada específico a un formato de salida específico. Puede enviar este mensaje explícitamente o mediante la [**macro ICDecompressQuery.**](/windows/desktop/api/Vfw/nf-vfw-icdecompressquery)
 
 
 ```C++
@@ -41,14 +41,14 @@ lParam = (DWORD_PTR) (LPVOID) lpbiOutput;
 <span id="lpbiInput"></span><span id="lpbiinput"></span><span id="LPBIINPUT"></span>*lpbiInput*
 </dt> <dd>
 
-Puntero a una estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de entrada.
+Puntero a una [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de entrada.
 
 </dd> <dt>
 
 <span id="lpbiOutput"></span><span id="lpbioutput"></span><span id="LPBIOUTPUT"></span>*lpbiOutput*
 </dt> <dd>
 
-Puntero a una estructura [**bitmapinfo (**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de salida. Puede especificar cero para que este parámetro indique que el formato de salida es aceptable.
+Puntero a una [**estructura BITMAPINFO**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfo) que contiene el formato de salida. Puede especificar cero para este parámetro para indicar que cualquier formato de salida es aceptable.
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Devuelve ICERR \_ OK si se admite la descompresión especificada o ICERR \_ BADF
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

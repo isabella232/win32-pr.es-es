@@ -1,6 +1,6 @@
 ---
-title: Métodos IDCompositionShadowEffect SetRed (Dcomp. h)
-description: Establece el valor rojo del color de la sombra.
+title: Métodos IDCompositionShadowEffect SetRed (Dcomp.h)
+description: Establece el valor rojo para el color de la sombra.
 ms.assetid: c1a74aca-6026-1307-7300-ca2941246000
 keywords:
 - Métodos SetRed DirectComposition
@@ -12,16 +12,16 @@ api_type:
 - HeaderDef
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: cb07dc3a07a7a612e91e34bde91aefa277c2dc7c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 060840d7ed33cf91a21c69e13d79f28bba2f7e31e984efd8b19160a7f021d0b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118088604"
 ---
-# <a name="idcompositionshadoweffectsetred-methods"></a>IDCompositionShadowEffect:: SetRed (métodos)
+# <a name="idcompositionshadoweffectsetred-methods"></a>Métodos IDCompositionShadowEffect::SetRed
 
-Establece el valor rojo del color de la sombra.
+Establece el valor rojo para el color de la sombra.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Establece el valor rojo del color de la sombra.
 
 | Método                                                                           | Descripción                                                |
 |:---------------------------------------------------------------------------------|:-----------------------------------------------------------|
-| [**SetRed (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setred(idcompositionanimation)) | Establece el valor rojo del color de la sombra.<br/> |
-| [**SetRed**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setred(float))                               | Establece el valor rojo del color de la sombra.<br/> |
+| [**SetRed (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setred(idcompositionanimation)) | Establece el valor rojo para el color de la sombra.<br/> |
+| [**SetRed**](/windows/win32/api/dcomp/nf-dcomp-idcompositionshadoweffect-setred(float))                               | Establece el valor rojo para el color de la sombra.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Establece el valor rojo del color de la sombra.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Dcomp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dcomp.h</dt> </dl> |
 
 
 

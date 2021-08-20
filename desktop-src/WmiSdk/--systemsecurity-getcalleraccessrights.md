@@ -1,8 +1,8 @@
 ---
-description: Establece el parámetro Rights como un mapa de bits con cada bit correspondiente a un derecho de acceso.
+description: Establece el parámetro rights como un mapa de bits con cada bit correspondiente a un derecho de acceso.
 ms.assetid: f28391a8-2b34-4234-bf1a-4688726b0b4b
 ms.tgt_platform: multiple
-title: Método GetCallerAccessRights de la clase __SystemSecurity
+title: Método GetCallerAccessRights de la __SystemSecurity clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - All
-ms.openlocfilehash: c86ea3044411e33026ed6328fcfc227e615648b1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 770a4a51a6a0ea9e38e8c5bd6fed944b473a41373933cee497e98fd8f9952422
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118110030"
 ---
 # <a name="getcalleraccessrights-method-of-the-__systemsecurity-class"></a>Método GetCallerAccessRights de la \_ \_ clase SystemSecurity
 
-El método **\_ \_ SystemSecurity:: GetCallerAccessRights** establece el parámetro *Rights* como un mapa de bits con cada bit correspondiente a un derecho de acceso. Cualquier cliente puede llamar a este método para determinar qué derechos tiene el cliente. Este método es útil para los clientes que habilitan o deshabilitan características de. Por ejemplo, una aplicación GUI podría deshabilitar un botón si el usuario que ha iniciado sesión actualmente no tiene derechos de ejecución del método.
+El **\_ \_ método SystemSecurity::GetCallerAccessRights** establece el parámetro *rights* como un mapa de bits con cada bit correspondiente a un derecho de acceso. Cualquier cliente puede llamar a esto para determinar qué derechos tiene el cliente. Este método es útil para los clientes que habilitan o deshabilitan características. Por ejemplo, una aplicación guia podría deshabilitar un botón si el usuario que ha iniciado sesión actualmente no tiene derechos de ejecución de métodos.
 
-Cualquier cliente habilitado tiene derecho a llamar a **GetCallerAccessRights**, incluso si ese cliente no tiene derechos de ejecución de método general.
+Cualquier cliente habilitado tiene derecho a llamar a **GetCallerAccessRights,** incluso si ese cliente no tiene derechos generales de ejecución de métodos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ HRESULT GetCallerAccessRights(
 
 <dl> <dt>
 
-*derechos* \[ de enuncia\]
+*derechos* \[ out\]
 </dt> <dd>
 
-Derechos de acceso del cliente. Para obtener más información, vea [**\_ \_ SystemSecurity**](--systemsecurity.md) y las [constantes de seguridad WMI](wmi-security-constants.md).
+Derechos de acceso del cliente. Para obtener más información, [**\_ \_ vea SystemSecurity**](--systemsecurity.md) and [WMI Security Constants](wmi-security-constants.md).
 
 <dt>
 
 <span id="WBEM_ENABLE"></span><span id="wbem_enable"></span>
 
-<span id="WBEM_ENABLE"></span><span id="wbem_enable"></span>**WBEM \_ HABILITAR** (1 (0x1))
+<span id="WBEM_ENABLE"></span><span id="wbem_enable"></span>**WBEM \_ ENABLE** (1 (0x1))
 
 
 </dt> <dd>
@@ -62,7 +62,7 @@ Habilita la cuenta y concede al usuario permisos de lectura. Este es el derecho 
 
 <span id="WBEM_METHOD_EXECUTE"></span><span id="wbem_method_execute"></span>
 
-<span id="WBEM_METHOD_EXECUTE"></span><span id="wbem_method_execute"></span>**WBEM \_ MÉTODO \_ Execute** (2 (0X2))
+<span id="WBEM_METHOD_EXECUTE"></span><span id="wbem_method_execute"></span>**WBEM \_ METHOD \_ EXECUTE** (2 (0x2))
 
 
 </dt> <dd>
@@ -78,37 +78,37 @@ Permite la ejecución de métodos.
 
 <span id="WBEM_FULL_WRITE_REP"></span><span id="wbem_full_write_rep"></span>
 
-<span id="WBEM_FULL_WRITE_REP"></span><span id="wbem_full_write_rep"></span>**WBEM \_ Rellenado completo de \_ escritura \_** (4 (0x4))
+<span id="WBEM_FULL_WRITE_REP"></span><span id="wbem_full_write_rep"></span>**WBEM \_ REP \_ DE \_ ESCRITURA COMPLETA** (4 (0x4))
 
 
 </dt> <dd>
 
-Permite que el llamador, el contexto de seguridad o el usuario escriba en clases e instancias excepto en las clases del sistema.
+Permite que el autor de la llamada, el contexto de seguridad o el usuario escriban en clases e instancias, excepto en las clases del sistema.
 
 </dd> <dt>
 
 <span id="WBEM_PARTIAL_WRITE_REP"></span><span id="wbem_partial_write_rep"></span>
 
-<span id="WBEM_PARTIAL_WRITE_REP"></span><span id="wbem_partial_write_rep"></span>**WBEM \_ \_ \_ Rep. de escritura parcial** (8 (0x8))
+<span id="WBEM_PARTIAL_WRITE_REP"></span><span id="wbem_partial_write_rep"></span>**WBEM \_ PARTIAL \_ WRITE \_ REP** (8 (0x8))
 
 
 </dt> <dd>
 
-Permite que el autor de la llamada, el contexto de seguridad o el usuario escriban instancias de proveedor, pero no clases estáticas o instancias estáticas en el repositorio.
+Permite al autor de la llamada, al contexto de seguridad o al usuario escribir instancias de proveedor, pero no clases estáticas ni instancias estáticas en el repositorio.
 
 </dd> <dt>
 
 <span id="WBEM_WRITE_PROVIDER"></span><span id="wbem_write_provider"></span>
 
-<span id="WBEM_WRITE_PROVIDER"></span><span id="wbem_write_provider"></span>**WBEM \_ \_Proveedor de escritura** (16 (0x10))
+<span id="WBEM_WRITE_PROVIDER"></span><span id="wbem_write_provider"></span>**WBEM \_ PROVEEDOR \_ DE** ESCRITURA (16 (0x10))
 
 
 </dt> <dd>
 
-Permite que el autor de la llamada, el contexto de seguridad o el usuario escriban clases e instancias en los proveedores.
+Permite que el autor de la llamada, el contexto de seguridad o el usuario escriban clases e instancias en proveedores.
 
 > [!Note]  
-> Los proveedores de suplantación pueden realizar comprobaciones de acceso adicionales.
+> La suplantación de proveedores puede realizar comprobaciones de acceso adicionales.
 
  
 
@@ -116,7 +116,7 @@ Permite que el autor de la llamada, el contexto de seguridad o el usuario escrib
 
 <span id="WBEM_REMOTE_ACCESS"></span><span id="wbem_remote_access"></span>
 
-<span id="WBEM_REMOTE_ACCESS"></span><span id="wbem_remote_access"></span>**WBEM \_ \_Acceso remoto** (32 (0x20))
+<span id="WBEM_REMOTE_ACCESS"></span><span id="wbem_remote_access"></span>**WBEM \_ ACCESO \_ REMOTO** (32 (0x20))
 
 
 </dt> <dd>
@@ -127,7 +127,7 @@ Permite que una cuenta de usuario realice de forma remota las operaciones permit
 
 <span id="READ_CONTROL"></span><span id="read_control"></span>
 
-<span id="READ_CONTROL"></span><span id="read_control"></span>**Leer \_ CONTROL** (131072 (0x20000))
+<span id="READ_CONTROL"></span><span id="read_control"></span>**READ \_ CONTROL** (131072 (0x20000))
 
 
 </dt> <dd>
@@ -138,25 +138,25 @@ Permite el acceso de lectura a los descriptores de seguridad.
 
 <span id="WRITE_DAC"></span><span id="write_dac"></span>
 
-<span id="WRITE_DAC"></span><span id="write_dac"></span>**Escribir \_ DAC** (262144 (0x40000))
+<span id="WRITE_DAC"></span><span id="write_dac"></span>**ESCRITURA \_ DAC** (262144 (0x40000))
 
 
 </dt> <dd>
 
-Permite el acceso de escritura a las listas de control de acceso discrecional (DACL).
+Permite el acceso de escritura a listas de control de acceso discrecional (DACL).
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve un **valor HRESULT** que indica el estado de la llamada al método. En la lista siguiente se muestran los valores devueltos que son significativos para [**Set9XUserList**](--systemsecurity-set9xuserlist.md). En el caso de las aplicaciones de scripting y Visual Basic, el resultado se puede obtener de [Parameters. ReturnValue](parsing-outparameters-objects.md). Para obtener más información, consulte [construir objetos Parameters y analizar objetos Parameters](constructing-inparameters-objects-and-parsing-outparameters-objects.md).
+Este método devuelve un **HRESULT** que indica el estado de la llamada al método. En la lista siguiente se enumeran los valores devueltos que son significativos [**para Set9XUserList**](--systemsecurity-set9xuserlist.md). Para el scripting Visual Basic aplicaciones, el resultado se puede obtener de [OutParameters.ReturnValue](parsing-outparameters-objects.md). Para obtener más información, vea [Construir objetos InParameters y Analizar objetos OutParameters](constructing-inparameters-objects-and-parsing-outparameters-objects.md).
 
 <dl> <dt>
 
-**WBEM \_ E \_ método \_ deshabilitado**
+**MÉTODO WBEM \_ E \_ \_ DESHABILITADO**
 </dt> <dd>
 
-Este método no se admite en las versiones compatibles de Windows.
+Este método no se admite en las versiones admitidas de Windows.
 
 </dd> </dl>
 
@@ -182,25 +182,25 @@ Este método no se admite en las versiones compatibles de Windows.
 [**\_\_SystemSecurity**](--systemsecurity.md)
 </dt> <dt>
 
-[**\_\_SystemSecurity:: obtiene**](--systemsecurity-getsd.md)
+[**\_\_SystemSecurity::GetSD**](--systemsecurity-getsd.md)
 </dt> <dt>
 
-[**\_\_SystemSecurity:: establecido**](--systemsecurity-setsd.md)
+[**\_\_SystemSecurity::SetSD**](--systemsecurity-setsd.md)
 </dt> <dt>
 
-[Constantes de seguridad de WMI](wmi-security-constants.md)
+[Constantes de seguridad WMI](wmi-security-constants.md)
 </dt> <dt>
 
-[**ACE de Win32 \_**](/previous-versions/windows/desktop/secrcw32prov/win32-ace)
+[**Win32 \_ ACE**](/previous-versions/windows/desktop/secrcw32prov/win32-ace)
 </dt> <dt>
 
 [**SecurityDescriptor de Win32 \_**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
 </dt> <dt>
 
-[Proteger los espacios de nombres de WMI](securing-wmi-namespaces.md)
+[Protección de espacios de nombres WMI](securing-wmi-namespaces.md)
 </dt> <dt>
 
-Constantes de seguridad de WMI
+Constantes de seguridad WMI
 </dt> </dl>
 
  

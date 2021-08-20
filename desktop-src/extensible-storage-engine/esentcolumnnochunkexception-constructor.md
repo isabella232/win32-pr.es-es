@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentColumnNoChunkException'
-title: Constructor de EsentColumnNoChunkException
+description: 'Más información sobre: Constructor EsentColumnNoChunkException'
+title: Constructor EsentColumnNoChunkException
 TOCTitle: 'EsentColumnNoChunkException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentColumnNoChunkException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcolumnnochunkexception.esentcolumnnochunkexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 230331f4f88c5e8ce90cbe11abc99e3fa3c33372
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71867634f8047e3e4aa854572cd2bfb5de25a884ab3a172e0de34c59d9178626
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105714988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117713654"
 ---
-# <a name="esentcolumnnochunkexception-constructor"></a>Constructor de EsentColumnNoChunkException
+# <a name="esentcolumnnochunkexception-constructor"></a>Constructor EsentColumnNoChunkException
 
 Inicializa una nueva instancia de la clase EsentColumnNoChunkException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentColumnNoChunkException()
 public EsentColumnNoChunkException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentColumnNoChunkException()
 
 [Miembros de EsentColumnNoChunkException](./esentcolumnnochunkexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

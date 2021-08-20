@@ -1,7 +1,7 @@
 ---
-description: El método LogError registra un error. No es necesario que las aplicaciones llamen a este método. Se llama internamente en respuesta a los errores de representación.
+description: El método LogError registra un error. Las aplicaciones no necesitan llamar a este método. Se llama internamente en respuesta a errores de representación.
 ms.assetid: 08765c8a-21ca-4c40-84a8-d13da87d9c5f
-title: 'IAMErrorLog:: LogError (método) (QEDIT. h)'
+title: Método IAMErrorLog::LogError (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: dc94532639f325b53db850ebe8a5af489a8b3cf2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d5652bf5fa60fda79a706179d1a8c0e86d91f3eaf6d66c7d3313dba1964846ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117999710"
 ---
-# <a name="iamerrorloglogerror-method"></a>IAMErrorLog:: LogError (método)
+# <a name="iamerrorloglogerror-method"></a>IamErrorLog::LogError (método)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El método **LogError** registra un error. No es necesario que las aplicaciones llamen a este método. Se llama internamente en respuesta a los errores de representación.
+El **método LogError** registra un error. Las aplicaciones no necesitan llamar a este método. Se llama internamente en respuesta a errores de representación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Reservado. No utilizar.
 
 </dd> <dt>
 
-*Tal* 
+*ErrorString* 
 </dt> <dd>
 
 Valor de cadena que contiene el texto del error.
@@ -70,39 +70,39 @@ Código de error.
 
 </dd> <dt>
 
-*valor* 
+*Hresult* 
 </dt> <dd>
 
 Valor HRESULT devuelto por la llamada al método que produjo el error.
 
 </dd> <dt>
 
-*pExtraInfo* \[ de\]
+*pExtraInfo* \[ En\]
 </dt> <dd>
 
-Puntero a una variante que contiene información adicional sobre el error.
+Puntero a una variant que contiene información adicional sobre el error.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el valor del parámetro *HRESULT* .
+Devuelve el valor del *parámetro hresult.*
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Dentro de este método, no libere la **variante** a la que apunta *pExtraInfo*. Además, la **variante** deja de ser válida una vez devuelto el método, por lo que no intente hacer referencia a ella más adelante.
+Dentro de este método, no libera la **variant** a la que apunta *pExtraInfo*. Además, **VARIANT deja de ser** válido después de que el método vuelva, por lo que no intente hacer referencia a él más adelante.
 
-Implemente este método para devolver lo más rápido posible. No realice llamadas de función desde dentro de este método que podrían bloquear la ejecución del programa. Por ejemplo, no llame a las funciones que envían mensajes de ventana, bloqueos en eventos o que, de lo contrario, podrían bloquear la ejecución. Esto puede hacer que el equipo deje de responder.
+Implemente este método para devolver lo antes posible. No realice llamadas de función desde dentro de este método que puedan bloquear la ejecución del programa. Por ejemplo, no llame a funciones que envíen mensajes de ventana, bloqueen eventos o, de lo contrario, podrían bloquear la ejecución. Si lo hace, el equipo podría dejar de responder.
 
-Para obtener una lista de los errores definidos por DES, junto con el significado y el tipo de datos de la **variante** a la que apunta *PExtraInfo*, vea [errores de representación](rendering-errors.md).
+Para obtener una lista de errores definidos por DES, junto con el significado y el tipo de datos de **variant** a los que apunta *pExtraInfo,* vea [Errores de representación](rendering-errors.md).
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -112,8 +112,8 @@ Para obtener una lista de los errores definidos por DES, junto con el significad
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -121,10 +121,10 @@ Para obtener una lista de los errores definidos por DES, junto con el significad
 
 <dl> <dt>
 
-[**Interfaz IAMErrorLog**](iamerrorlog.md)
+[**IAMErrorLog (interfaz)**](iamerrorlog.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

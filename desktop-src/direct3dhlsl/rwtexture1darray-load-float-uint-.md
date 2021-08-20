@@ -1,6 +1,6 @@
 ---
-title: 'RWTexture1DArray:: Load (int, uint) (función)'
-description: 'Lee los datos de textura y devuelve el estado de la operación. | RWTexture1DArray:: Load (int, uint) (función)'
+title: Función RWTexture1DArray::Load(int,uint)
+description: Lee los datos de textura y devuelve el estado de la operación. | Función RWTexture1DArray::Load(int,uint)
 ms.assetid: EF1D51CC-E037-4E04-9DD6-6A9C5950E5B5
 keywords:
 - Carga de la función HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5a46dde9b75d3194cc081409fe2b450c5453d7c1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: bfba9ad5723b87e1af69313fb3e6ad6071d7b65c56bc4099f500b721561c62c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117906281"
 ---
-# <a name="rwtexture1darrayloadintuint-function"></a>RWTexture1DArray:: Load (int, uint) (función)
+# <a name="rwtexture1darrayloadintuint-function"></a>Función RWTexture1DArray::Load(int,uint)
 
 Lee los datos de textura y devuelve el estado de la operación.
 
@@ -40,7 +40,7 @@ Lee los datos de textura y devuelve el estado de la operación.
 
 <dl> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **int**
@@ -49,12 +49,12 @@ Ubicación de la textura.
 
 </dd> <dt>
 
-*Estado* \[ de enuncia\]
+*Estado* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Estado de la operación. No se puede tener acceso directamente al estado. en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** devuelve **true** si todos los valores de la operación de **ejemplo**, **recopilación** o **carga** correspondiente han tenido acceso a los mosaicos asignados en un [recurso en mosaico](/windows/desktop/direct3d11/direct3d-11-2-features). Si se tomó algún valor de un mosaico sin asignar, **CheckAccessFullyMapped** devuelve **false**.
+Estado de la operación. No se puede acceder al estado directamente; en su lugar, pase el estado a la función intrínseca [**CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** devuelve **TRUE** si todos los valores de la operación **Sample**, **Gather** o **Load** correspondientes accedieron a iconos asignados en un recurso [en mosaico.](/windows/desktop/direct3d11/direct3d-11-2-features) Si se han tomado valores de un icono no asociado, **CheckAccessFullyMapped** devuelve **FALSE.**
 
 </dd> </dl>
 
@@ -62,15 +62,15 @@ Estado de la operación. No se puede tener acceso directamente al estado. en su 
 
 Escriba:
 
-El tipo de valor devuelto coincide con el tipo en la declaración del objeto [**RWTexture1DArray**](sm5-object-rwtexture1darray.md) .
+El tipo de valor devuelto coincide con el tipo de la declaración del [**objeto RWTexture1DArray.**](sm5-object-rwtexture1darray.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -82,7 +82,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
 <dl> <dt>
 
-[Cargar métodos](rwtexture1darray-load.md)
+[Métodos de carga](rwtexture1darray-load.md)
 </dt> </dl>
 
  

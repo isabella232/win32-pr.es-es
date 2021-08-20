@@ -1,19 +1,19 @@
 ---
-description: La forma de uso descriptivo de System. contact. GenderValue.
+description: La forma fácil de usar de System.Contact.GenderValue.
 ms.assetid: e3539279-14ed-41c6-bccd-0459782a4b69
-title: System. contact. Gender
+title: System.Contact.Gender
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8292429c3b1a8d70909e7cb6f9c3114e6397fda3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1257a072fe63bb13a01dedea69586bc2cd29f6271eea5f524c7b31cfab3e1149
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118055472"
 ---
-# <a name="systemcontactgender"></a>System. contact. Gender
+# <a name="systemcontactgender"></a>System.Contact.Gender
 
-La forma de uso descriptivo de [System. contact. GenderValue](./props-system-contact-gendervalue.md).
+La forma fácil de usar [de System.Contact.GenderValue](./props-system-contact-gendervalue.md).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

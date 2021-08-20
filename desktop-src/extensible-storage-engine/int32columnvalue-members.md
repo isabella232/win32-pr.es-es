@@ -74,7 +74,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn334225(v=exchg.10).md">Duración</a></td>
-<td>Obtiene la longitud de bytes de un valor de columna, que es cero si la columna es null; de lo contrario, coincide con el tamaño de esta columna de tamaño fijo. (Se hereda de <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T). &gt; </a></td>
+<td>Obtiene la longitud de bytes de un valor de columna, que es cero si la columna es NULL; de lo contrario, coincide con el tamaño de esta columna de tamaño fijo. (Se hereda de <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T). &gt; </a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -121,7 +121,7 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
 <td><a href="dn334178(v=exchg.10).md">CheckDataCount</a></td>
-<td>Asegúrese de que los datos recuperados son exactamente el tamaño necesario para la estructura. Se produce una excepción si hay una discrepancia. (Se hereda de <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T). &gt; </a></td>
+<td>Asegúrese de que los datos recuperados son exactamente el tamaño necesario para la estructura. Se produce una excepción si hay un error de coincidencia. (Se hereda de <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T). &gt; </a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -164,7 +164,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

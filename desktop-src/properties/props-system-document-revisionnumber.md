@@ -4,12 +4,12 @@ ms.assetid: 837633aa-3c90-435b-ae6b-947b894ef24a
 title: System.Document. RevisionNumber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d13430a175ea4c708364eed35c7f628720624ffb
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5e4f1168f581c44d07e5afc90c8496a556d789db0220aa35bb20e59f33b01373
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118053484"
 ---
 # <a name="systemdocumentrevisionnumber"></a>System.Document. RevisionNumber
 

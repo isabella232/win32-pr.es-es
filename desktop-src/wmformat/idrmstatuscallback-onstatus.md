@@ -1,11 +1,11 @@
 ---
-title: IDRMStatusCallback método de estado
-description: El método de estado recibe mensajes de estado de los procesos DRM asíncronos.
+title: Método IdRMStatusCallback OnStatus
+description: El método OnStatus recibe mensajes de estado de procesos DRM asincrónicos.
 ms.assetid: 2a128088-0924-4c54-b08d-a1c7ea91e541
 keywords:
-- Método de estado Windows Media Format
-- Método OnFormat formato de Windows Media, interfaz IDRMStatusCallback
-- Interfaz IDRMStatusCallback formato de Windows Media, método de estado
+- Formato multimedia de windows del método OnStatus
+- Método OnStatus windows Media Format , interfaz IDRMStatusCallback
+- IdRMStatusCallback interface windows Media Format , OnStatus method
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 754d59d74fb0365f423243e92565ac17b46628a5
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 2c9f8c0424752ababe684b426d78001f2783d62db9781fe3d6a23ed002e91773
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117847459"
 ---
-# <a name="idrmstatuscallbackonstatus-method"></a>IDRMStatusCallback:: alstatus (método)
+# <a name="idrmstatuscallbackonstatus-method"></a>Método IDRMStatusCallback::OnStatus
 
-El método de **Estado** recibe mensajes de estado de los procesos DRM asíncronos.
+El **método OnStatus** recibe mensajes de estado de procesos DRM asincrónicos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,50 +45,50 @@ HRESULT OnStatus(
 
 <dl> <dt>
 
-*Estado* \[ de de\]
+*Estado* \[ En\]
 </dt> <dd>
 
-Código de estado. Los códigos de mensaje se definen en el tipo de enumeración de **\_ Estado MSDRM** .
+Código de estado. Los códigos de mensaje se definen en el tipo de **enumeración STATUS \_ de MSDRM.**
 
 </dd> <dt>
 
-*HR* \[ de\]
+*hr* \[ En\]
 </dt> <dd>
 
 Código de retorno que admite el mensaje de estado.
 
 </dd> <dt>
 
-*dwType* \[ de\]
+*dwType* \[ En\]
 </dt> <dd>
 
-Tipo de los datos a los que señala *pValue*. Establezca en uno de los valores de la enumeración de [**\_ tipos de tipo de \_ texto DRM ATTR**](drm-attr-datatype.md) .
+Tipo de los datos a los que apunta *pValue.* Establezca en uno de los valores de la [**enumeración \_ \_ DATATYPE ATTR de DRM.**](drm-attr-datatype.md)
 
 </dd> <dt>
 
-*pValue* \[ de\]
+*pValue* \[ En\]
 </dt> <dd>
 
-Puntero a los datos relacionados con el mensaje de estado. El tipo de datos viene determinado por el valor del parámetro *dwType* . Para obtener más información, consulte la enumeración del [**\_ \_ tipo de datos DRM ATTR**](drm-attr-datatype.md) .
+Puntero a los datos relacionados con el mensaje de estado. El tipo de datos viene determinado por el valor del *parámetro dwType.* Para más información, consulte la [**enumeración \_ \_ DATATYPE DE ATTR de DRM.**](drm-attr-datatype.md)
 
 </dd> <dt>
 
-*pvContext* \[ de\]
+*pvContext* \[ En\]
 </dt> <dd>
 
-Parámetro opcional que se puede utilizar para identificar el objeto que envió el mensaje. Al establecer *pvContext* al registrar esta devolución de llamada, puede usar la misma devolución de llamada para controlar varios procesos asincrónicos.
+Parámetro opcional que se puede usar para identificar el objeto que envió el mensaje. Al establecer *pvContext al* registrar esta devolución de llamada, puede usar la misma devolución de llamada para controlar varios procesos asincrónicos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -102,7 +102,7 @@ Ninguno.
 
 <dl> <dt>
 
-[**TIPO de los atributos de DRM \_ \_**](drm-attr-datatype.md)
+[**TIPO \_ DE DATOS ATTR DE DRM \_**](drm-attr-datatype.md)
 </dt> <dt>
 
 [**Interfaz IDRMStatusCallback**](idrmstatuscallback.md)

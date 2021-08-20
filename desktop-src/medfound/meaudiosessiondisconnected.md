@@ -1,40 +1,40 @@
 ---
-description: Generado por el procesador de audio cuando la sesión de audio se desconecta de una sesión de Windows Terminal Services (WTS). El representador de audio ahora no es válido.
+description: Lo genera el representador de audio cuando la sesión de audio se desconecta de una sesión Terminal Windows Services (WTS). El representador de audio ahora no es válido.
 ms.assetid: 08f9844c-f3b1-4d60-990e-9131f3312f6b
-title: Evento MEAudioSessionDisconnected (Mfobjects. h)
+title: Evento MEAudioSessionDisconnected (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db2d31349585d26c61cb2940cea70ddaf0617901
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b345d755c07bf823f6d1ca60c80e3620cb0242b8451a0b7227d5dab38902f8f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118062707"
 ---
 # <a name="meaudiosessiondisconnected-event"></a>Evento MEAudioSessionDisconnected
 
-Generado por el procesador de audio cuando la sesión de audio se desconecta de una sesión de Windows Terminal Services (WTS). El representador de audio ahora no es válido.
+Lo genera el representador de audio cuando la sesión de audio se desconecta de una sesión Terminal Windows Services (WTS). El representador de audio ahora no es válido.
 
 La sesión multimedia reenvía este evento a la aplicación.
 
 ## <a name="event-values"></a>Valores de evento
 
-Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) son los siguientes.
+Los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluyen lo siguiente.
 
 
 
 | VARTYPE                | Descripción                                                                               |
 |------------------------|-------------------------------------------------------------------------------------------|
-| VT \_ vacío<br/>   | Sin datos del evento.<br/> <br/>                                                     |
-| VT \_ desconocido<br/> | Puntero a la interfaz [**IMFAudioPolicy**](/windows/desktop/api/mfidl/nn-mfidl-imfaudiopolicy) .<br/> <br/> |
+| VT \_ EMPTY<br/>   | Sin datos del evento.<br/> <br/>                                                     |
+| VT \_ UNKNOWN<br/> | Puntero a la [**interfaz DEAUDIOPolicy.**](/windows/desktop/api/mfidl/nn-mfidl-imfaudiopolicy)<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El receptor de flujo del representador de audio envía este evento. El evento se desencadena cuando el representador de audio recibe un evento [**IAudioSessionEvents:: OnSessionDisconnected**](/windows/win32/api/audiopolicy/nf-audiopolicy-iaudiosessionevents-onsessiondisconnected) de la sesión de audio con el motivo de la desconexión igual a DisconnectReasonSessionDisconnected.
+El receptor de secuencias del representador de audio envía este evento. El evento se desencadena cuando el representador de audio recibe un evento [**IAudioSessionEvents::OnSessionDisconnected**](/windows/win32/api/audiopolicy/nf-audiopolicy-iaudiosessionevents-onsessiondisconnected) de la sesión de audio con el motivo de desconexión igual a DisconnectReasonSessionDisconnected.
 
-El puntero [**IMFAudioPolicy**](/windows/desktop/api/mfidl/nn-mfidl-imfaudiopolicy) , si está establecido, no es útil porque la secuencia de audio ya no es válida.
+Si se establece, no resulta útil el puntero [**DEAUDIOPolicy,**](/windows/desktop/api/mfidl/nn-mfidl-imfaudiopolicy) ya que la secuencia de audio ya no es válida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -42,9 +42,9 @@ El puntero [**IMFAudioPolicy**](/windows/desktop/api/mfidl/nn-mfidl-imfaudiopoli
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects. h (incluye Mfidl. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
@@ -52,7 +52,7 @@ El puntero [**IMFAudioPolicy**](/windows/desktop/api/mfidl/nn-mfidl-imfaudiopoli
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> <dt>
 
 [Representador de audio de streaming](streaming-audio-renderer.md)

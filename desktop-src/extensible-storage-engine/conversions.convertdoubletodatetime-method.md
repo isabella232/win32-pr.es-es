@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: Conversions. ConvertDoubleToDateTime (método)'
-title: Método Conversions. ConvertDoubleToDateTime
+description: Más información sobre el método Conversions.ConvertDoubleToDateTime
+title: Método Conversions.ConvertDoubleToDateTime
 TOCTitle: 'ConvertDoubleToDateTime method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Conversions.ConvertDoubleToDateTime(System.Double)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.conversions.convertdoubletodatetime(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a1d066780ade3da95f4d4d5500143700f7a7d5bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 208cd27ea6e3779923e1d5d99fffff44cd4c374117a0fb40471e13068e2c2541
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117716627"
 ---
-# <a name="conversionsconvertdoubletodatetime-method"></a>Método Conversions. ConvertDoubleToDateTime
+# <a name="conversionsconvertdoubletodatetime-method"></a>Método Conversions.ConvertDoubleToDateTime
 
-Convierte un valor Double (formato de fecha y hora de OA) en un valor DateTime. A diferencia de DateTime. FromOADate, esto no inicia excepciones.
+Convertir un valor double (formato de fecha y hora de OA) en un valor DateTime. A diferencia de DateTime.FromOADate, esto no produce excepciones.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,21 +61,21 @@ public static DateTime ConvertDoubleToDateTime(
 #### <a name="parameters"></a>Parámetros
 
   - d  
-    Tipo: [System. Double](/dotnet/api/system.double)  
+    Tipo: [System.Double](/dotnet/api/system.double)  
     
-    Valor Double.
+    Valor double.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. DateTime](/dotnet/api/system.datetime)  
-Un valor de fecha y hora.  
+Tipo: [System.DateTime](/dotnet/api/system.datetime)  
+Un valor DateTime.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Conversions (clase)](./conversions-class.md)
+[Clase Conversions](./conversions-class.md)
 
 [Miembros de conversiones](./conversions-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

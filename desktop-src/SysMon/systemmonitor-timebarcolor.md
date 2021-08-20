@@ -1,10 +1,10 @@
 ---
-title: Propiedad SystemMonitor. TimeBarColor
-description: Recupera o establece el color de la barra de tiempo. La barra de tiempo es la barra vertical que se desplaza por la ventana del gráfico para indicar el paso de cada intervalo de muestreo en la vista gráfico de líneas.
+title: Propiedad SystemMonitor.TimeBarColor
+description: Recupera o establece el color de la barra de tiempo. La barra de tiempo es la barra vertical que se mueve a través de la ventana del gráfico para indicar el paso de cada intervalo de muestreo en la vista de gráfico de líneas.
 ms.assetid: 2fcc5d87-a770-4792-a1cf-7bd170c0be39
 keywords:
-- Propiedad TimeBarColor SysMon
-- Propiedad TimeBarColor SysMon, clase SystemMonitor
+- SysMon, propiedad TimeBarColor
+- Propiedad SysMon de TimeBarColor, clase SystemMonitor
 - Clase SystemMonitor SysMon, propiedad TimeBarColor
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b63c9f127d12c1e1f8ef89a891e5255cd786ac6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7333cb0171234a122e674595b7066cf2c9b97a7c414856b4d39cddad8bf53212
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117954743"
 ---
-# <a name="systemmonitortimebarcolor-property"></a>Propiedad SystemMonitor. TimeBarColor
+# <a name="systemmonitortimebarcolor-property"></a>Propiedad SystemMonitor.TimeBarColor
 
-Recupera o establece el color de la barra de tiempo. La barra de tiempo es la barra vertical que se desplaza por la ventana del gráfico para indicar el paso de cada intervalo de muestreo en la vista gráfico de líneas.
+Recupera o establece el color de la barra de tiempo. La barra de tiempo es la barra vertical que se mueve a través de la ventana del gráfico para indicar el paso de cada intervalo de muestreo en la vista de gráfico de líneas.
 
 Esta propiedad es de solo lectura.
 
@@ -46,11 +46,11 @@ Color de la barra de tiempo.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
@@ -58,7 +58,7 @@ Color de la barra de tiempo.
 
 <dl> <dt>
 
-[**SystemMonitor**](systemmonitor.md)
+[**Systemmonitor**](systemmonitor.md)
 </dt> </dl>
 
  

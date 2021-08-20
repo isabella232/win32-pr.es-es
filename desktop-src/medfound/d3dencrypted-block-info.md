@@ -1,7 +1,7 @@
 ---
 description: Especifica qué bytes se cifran en una superficie de vídeo protegida.
 ms.assetid: 076f4f00-e86b-47e2-80dd-4d7434200138
-title: D3DENCRYPTED_BLOCK_INFO estructura (D3d9types. h)
+title: D3DENCRYPTED_BLOCK_INFO estructura (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 21864dcc41ce86f139361af4357810137acf7f06
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94027dac3956376e32ad10cf7c1b600d9c65f3918e2781ab9da96d4d3891f43b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117879738"
 ---
-# <a name="d3dencrypted_block_info-structure"></a>D3DENCRYPTED \_ estructura de información de bloque \_
+# <a name="d3dencrypted_block_info-structure"></a>Estructura D3DENCRYPTED \_ BLOCK \_ INFO
 
 Especifica qué bytes se cifran en una superficie de vídeo protegida.
 
@@ -51,14 +51,14 @@ Número de bytes que se cifran al principio del búfer.
 **NumBytesInSkipPattern**
 </dt> <dd>
 
-Número de bytes que se omiten después de los primeros **NumEncryptedBytesAtBeginning** bytes y después de cada bloque de **NumBytesInEncryptPattern** bytes. Los bytes omitidos no se cifran.
+Número de bytes que se omiten después del primer bytes **NumEncryptedBytesAtBeginning** y, a continuación, después de cada bloque de bytes **NumBytesInEncryptPattern.** Los bytes omitido no se cifran.
 
 </dd> <dt>
 
 **NumBytesInEncryptPattern**
 </dt> <dd>
 
-Número de bytes que se cifran después de cada bloque de bytes omitidos.
+Número de bytes que se cifran después de cada bloque de bytes omitido.
 
 </dd> </dl>
 
@@ -66,11 +66,11 @@ Número de bytes que se cifran después de cada bloque de bytes omitidos.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>D3d9types. h (incluye d3d9. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                 |
+| Header<br/>                   | <dl> <dt>D3d9types.h (incluir D3d9.h)</dt> </dl> |
 
 
 

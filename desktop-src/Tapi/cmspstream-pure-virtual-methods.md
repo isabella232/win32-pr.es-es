@@ -1,15 +1,15 @@
 ---
-description: 'CmSPStream Pure Virtual Methods : estas clases derivadas deben reemplazar estos métodos.'
+description: 'CmSPStream Pure Virtual Methods : estas clases derivadas deben invalidar estos métodos.'
 ms.assetid: 6f21ba58-984d-4d45-834d-5b2252e33517
 title: Métodos virtuales puros de CMSPStream
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa026060d9c52682b835efe9b2df39b7e6bd1f3e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 298b25a145026e1dcdd5b8ca5e99ac6f89cc4400c2b125766722de48bc2477ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117946691"
 ---
 # <a name="cmspstream-pure-virtual-methods"></a>Métodos virtuales puros de CMSPStream
 

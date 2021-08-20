@@ -1,17 +1,17 @@
 ---
 description: Valor de clase del primer descriptor de interfaz USB del dispositivo USB.
 ms.assetid: ef1781eb-25eb-44cd-935a-dcd1441425bd
-title: System. DeviceInterface. WinUsb. UsbClass
+title: System.DeviceInterface.WinUsb.UsbClass
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c9daebf019aa69e1e67e2beccdd5eebecd81576
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 65cd0e62ef40082fd706e4d2cfeb16d7c8dbe7a5ee800486dc3643aafbc41026
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118054824"
 ---
-# <a name="systemdeviceinterfacewinusbusbclass"></a>System. DeviceInterface. WinUsb. UsbClass
+# <a name="systemdeviceinterfacewinusbusbclass"></a>System.DeviceInterface.WinUsb.UsbClass
 
 Valor de clase del primer descriptor de interfaz USB del dispositivo USB.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Byte
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

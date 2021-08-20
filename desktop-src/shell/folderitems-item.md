@@ -1,7 +1,7 @@
 ---
-description: Recupera el objeto carpeta para un elemento especificado de la colección.
+description: Recupera el objeto FolderItem para un elemento especificado de la colección.
 ms.assetid: 164f823d-12d9-4950-a881-63837c53760d
-title: Método FolderItems. Item (Shldisp. h)
+title: Método FolderItems.Item (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ed670ed4af3882e38faf2699429c3d1c076f3056
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e246a1ada6cdf9935ae2ce9f8ca2a0ae25ced8ea08db8e98fef59a8fbc66ef40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117679479"
 ---
-# <a name="folderitemsitem-method"></a>FolderItems. Item (método)
+# <a name="folderitemsitem-method"></a>Método FolderItems.Item
 
-Recupera el objeto [**carpeta**](folderitem.md) para un elemento especificado de la colección.
+Recupera el [**objeto FolderItem**](folderitem.md) para un elemento especificado de la colección.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,24 +39,24 @@ FolderItems.Item(
 
 <dl> <dt>
 
-*iIndex* \[ en, opcional\]
+*iIndex* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variant**
 
-Índice de base cero del elemento que se va a recuperar. Este valor debe ser menor que el valor de la propiedad [**Count**](folderitems-count.md) .
+Índice de base cero del elemento que se va a recuperar. Este valor debe ser menor que el valor de la [**propiedad Count.**](folderitems-count.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Una referencia de objeto al objeto [**carpeta**](folderitem.md) .
+Referencia de objeto al [**objeto FolderItem.**](folderitem.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **Item** para recuperar el objeto [**carpeta**](folderitem.md) que representa el archivo Notepad.exe que se encuentra en la carpeta Windows. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa Item** para recuperar el [**objeto FolderItem**](folderitem.md) que representa el Notepad.exe que se encuentra en Windows carpeta. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -87,7 +87,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -164,13 +164,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

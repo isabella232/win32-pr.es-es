@@ -1,31 +1,31 @@
 ---
 description: Contiene ejemplos que usan la función VerifyVersionInfo para determinar si la aplicación se ejecuta en un sistema operativo específico.
 ms.assetid: f39c35ae-9be5-4a03-9079-6fcc63387f6b
-title: Comprobando la versión del sistema
+title: Comprobación de la versión del sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08ddb3562230d0708ddc55d0f8214286ea6c3008
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eff4b8514abc1dfc9b125b70a55772d63d63426505de28231f498672c34d6cc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117957538"
 ---
-# <a name="verifying-the-system-version"></a>Comprobando la versión del sistema
+# <a name="verifying-the-system-version"></a>Comprobación de la versión del sistema
 
-\[ No se recomienda el uso de la función [**VerifyVersionInfo**](/windows/desktop/api/Winbase/nf-winbase-verifyversioninfoa) para comprobar que el sistema operativo que se está ejecutando actualmente. En su lugar, use las [ **API auxiliares** de la versión.](version-helper-apis.md)\]
+\[ No se recomienda [**el uso de la función VerifyVersionInfo**](/windows/desktop/api/Winbase/nf-winbase-verifyversioninfoa) para comprobar el sistema operativo que se está ejecutando actualmente. En su lugar, use las [ **API del asistente de versiones.**](version-helper-apis.md)\]
 
-Contiene ejemplos que usan la función [**VerifyVersionInfo**](/windows/desktop/api/Winbase/nf-winbase-verifyversioninfoa) para determinar si la aplicación se ejecuta en un sistema operativo específico.
+Contiene ejemplos que usan la [**función VerifyVersionInfo**](/windows/desktop/api/Winbase/nf-winbase-verifyversioninfoa) para determinar si la aplicación se ejecuta en un sistema operativo específico.
 
 Los pasos principales de cada ejemplo son los siguientes:
 
-1.  Establezca los valores adecuados en la estructura [**OSVERSIONINFOEX**](/windows/desktop/api/Winnt/ns-winnt-osversioninfoexa) .
-2.  Establezca la máscara de condición adecuada mediante la macro [**Ver \_ \_ condición establecida**](/windows/desktop/api/Winnt/nf-winnt-ver_set_condition) .
-3.  Llame a [**VerifyVersionInfo**](/windows/desktop/api/Winbase/nf-winbase-verifyversioninfoa) para realizar la prueba.
+1.  Establezca los valores adecuados en la [**estructura OSVERSIONINFOEX.**](/windows/desktop/api/Winnt/ns-winnt-osversioninfoexa)
+2.  Establezca la máscara de condición adecuada mediante la [**macro VER \_ SET \_ CONDITION.**](/windows/desktop/api/Winnt/nf-winnt-ver_set_condition)
+3.  Llame [**a VerifyVersionInfo**](/windows/desktop/api/Winbase/nf-winbase-verifyversioninfoa) para realizar la prueba.
 
 ## <a name="example-1"></a>Ejemplo 1
 
-En el ejemplo siguiente se determina si la aplicación se ejecuta en Windows XP con Service Pack 2 (SP2) o una versión posterior de Windows, como Windows Server 2003 o Windows Vista.
+En el ejemplo siguiente se determina si la aplicación se ejecuta en Windows XP con Service Pack 2 (SP2) o en una versión posterior de Windows, como Windows Server 2003 o Windows Vista.
 
 
 ```C++
@@ -75,7 +75,7 @@ void main()
 
 ## <a name="example-2"></a>Ejemplo 2
 
-En el código siguiente se comprueba que la aplicación se ejecuta en Windows 2000 Server o en un servidor posterior, como Windows Server 2003 o Windows Server 2008.
+El código siguiente comprueba que la aplicación se ejecuta en Windows Server 2000 o en un servidor posterior, como Windows Server 2003 o Windows Server 2008.
 
 
 ```C++

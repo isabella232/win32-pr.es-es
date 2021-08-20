@@ -1,19 +1,19 @@
 ---
-description: El tipo de mensaje de Microsoft Outlook (reunión, tarea, correo, etc.).
+description: El tipo de mensaje de Outlook Microsoft (reunión, tarea, correo, entre otros).
 ms.assetid: 421d1b44-588c-4fe6-ac0e-14fbac1330e3
-title: System. Message. MessageClass
+title: System.Message.MessageClass
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 400cda166a6d2af4a94447aff5867f13adce0e9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 31097b9d6456c8d460c8e3a7aecfc32d15a93dd233aa530a90260facc2cdebf1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118052806"
 ---
-# <a name="systemmessagemessageclass"></a>System. Message. MessageClass
+# <a name="systemmessagemessageclass"></a>System.Message.MessageClass
 
-El tipo de mensaje de Microsoft Outlook (reunión, tarea, correo, etc.).
+El tipo de mensaje de Outlook Microsoft (reunión, tarea, correo, entre otros).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

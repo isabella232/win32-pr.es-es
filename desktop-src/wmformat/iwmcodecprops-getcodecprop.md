@@ -1,9 +1,9 @@
 ---
 title: GetCodecProp
-description: Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte Windows Media Audio y vídeo códec y API de DSP. | GetCodecProp
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (Api de códecs de audio y vídeo multimedia y DSP). | GetCodecProp
 ms.assetid: b3e0eabe-b2f6-4783-817a-2e386167fe3f
 keywords:
-- GetCodecProp formato de Windows Media
+- Formato multimedia de Windows GetCodecProp
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78114c2289146686b89fcd572e455d2de7ba87cc
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 1691a69d88a833b30e385af21974a3671d15a2411371f2d9be944fdb5699247c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103820538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117847199"
 ---
 # <a name="getcodecprop"></a>GetCodecProp
 
-Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte [Windows Media Audio y vídeo códec y API de DSP.](/previous-versions//dd464626(v=vs.85))
+Para obtener la documentación actual Windows códecs multimedia y procesadores de señales digitales, vea Windows [Media Audio and Video Codec and DSP APIs (Api](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
 
  
 

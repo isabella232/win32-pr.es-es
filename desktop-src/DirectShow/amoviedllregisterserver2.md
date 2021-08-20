@@ -1,7 +1,7 @@
 ---
-description: La función AMovieDllRegisterServer2 registra y anula el registro de filtros.
+description: La función AMovieDllRegisterServer2 registra y anula el registro de los filtros.
 ms.assetid: 2122949d-0117-4c68-bfcd-c717b14dc970
-title: Función AMovieDllRegisterServer2 (Dllsetup. h)
+title: Función AMovieDllRegisterServer2 (Dllsetup.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ec36290b7cad66b2b5f27633d30ae76c3331eba9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c47b861a47498cc29d80061c6c2da1ffc44e40b7446588cf7c3376e5ed18e837
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118001988"
 ---
-# <a name="amoviedllregisterserver2-function"></a>AMovieDllRegisterServer2 función)
+# <a name="amoviedllregisterserver2-function"></a>Función AMovieDllRegisterServer2
 
-La función **AMovieDllRegisterServer2** registra y anula el registro de filtros.
+La **función AMovieDllRegisterServer2** registra y anula el registro de los filtros.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,17 +45,17 @@ HRESULT AMovieDllRegisterServer2(
 *bRegister* 
 </dt> <dd>
 
-**True** indica que se registra el filtro; **false** indica que se anula el registro.
+**TRUE** indica registrar el filtro, **FALSE** indica anular el registro.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Utilice esta función para configurar los filtros. Para obtener más información, consulte [Cómo registrar filtros de DirectShow](how-to-register-directshow-filters.md).
+Use esta función para configurar los filtros. Para obtener más información, [vea How to Register DirectShow Filters](how-to-register-directshow-filters.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Utilice esta función para configurar los filtros. Para obtener más informació
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Dllsetup. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Dllsetup.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

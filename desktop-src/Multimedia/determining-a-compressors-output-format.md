@@ -1,25 +1,25 @@
 ---
-title: Determinar el formato de salida de un compresor
-description: Determinar el formato de salida de un compresor
+title: Determinar el formato de salida de un resalte
+description: Determinar el formato de salida de un resalte
 ms.assetid: 910bd77f-4c65-4ea2-bab2-96f42a2b6cf1
 keywords:
-- Administrador de compresión de vídeo (VCM), formato de salida
-- VCM (Administrador de compresión de vídeo), formato de salida
-- ICCompressGetFormat (macro)
-- ICCompressQuery (macro)
-- ICCompressGetSize (macro)
+- administrador de compresión de vídeo (VCM), formato de salida
+- VCM (administrador de compresión de vídeo), formato de salida
+- Macro ICCompressGetFormat
+- Macro ICCompressQuery
+- ICCompressGetSize macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c4356870598dc08ad84c4073be5ffa3c2ddbd5b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4160942c2b5524e57a3a7d7e4eb79128abd55bf5f62ea0926c1ba60e02ce70c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104149269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117989005"
 ---
-# <a name="determining-a-compressors-output-format"></a>Determinar el formato de salida de un compresor
+# <a name="determining-a-compressors-output-format"></a>Determinar el formato de salida de un resalte
 
-En el ejemplo siguiente se usa la macro [**ICCompressGetFormat**](/windows/desktop/api/Vfw/nf-vfw-iccompressgetformat) size para determinar el tamaño de búfer necesario para los datos que especifican el formato de compresión, se asigna un búfer del tamaño adecuado mediante la función [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) y se recupera la información del formato de compresión mediante la macro **ICCompressGetFormat** .
+En el ejemplo siguiente se usa la macro de tamaño [**ICCompressGetFormat**](/windows/desktop/api/Vfw/nf-vfw-iccompressgetformat) para determinar el tamaño de búfer necesario para los datos que especifican el formato de compresión, asigna un búfer del tamaño adecuado mediante la función [GlobalAlloc](/windows/win32/api/winbase/nf-winbase-globalalloc) y recupera la información de formato de compresión mediante la macro **ICCompressGetFormat.**
 
 
 ```C++
@@ -36,7 +36,7 @@ ICCompressGetFormat(hIC, lpbiIn, lpbiOut);
 
 
 
-En el ejemplo siguiente se usa la macro [**ICCompressQuery**](/windows/desktop/api/Vfw/nf-vfw-iccompressquery) para determinar si un compresor puede controlar los formatos de entrada y salida.
+En el ejemplo siguiente se usa la macro [**ICCompressQuery**](/windows/desktop/api/Vfw/nf-vfw-iccompressquery) para determinar si un resalte puede controlar los formatos de entrada y salida.
 
 
 ```C++
@@ -74,6 +74,6 @@ lpOutput = (LPVOID)GlobalLock(h);
 
 
 
- 
+ 
 
- 
+ 

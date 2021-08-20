@@ -1,17 +1,17 @@
 ---
 description: Wi-Fi GUID de interfaz directa.
 ms.assetid: 7117dd4d-6765-4f47-ac4f-1ffe64d711ed
-title: System. Devices. WiFiDirect. InterfaceGuid
+title: System.Devices.WiFiDirect.InterfaceGuid
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44ca33f01422ce8e9ee57107029cf843003dc081
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a97b67fedaf7939dfccb4ac6adbda97ebc746b0c4bea9f86af92a686fde1a88d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118053869"
 ---
-# <a name="systemdeviceswifidirectinterfaceguid"></a>System. Devices. WiFiDirect. InterfaceGuid
+# <a name="systemdeviceswifidirectinterfaceguid"></a>System.Devices.WiFiDirect.InterfaceGuid
 
 Wi-Fi GUID de interfaz directa
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: SystemMonitor. Appearance (propiedad)
-description: Recupera o establece la apariencia del control para incluir u omitir los efectos de visualización tridimensionales.
+title: Propiedad SystemMonitor.Appearance
+description: Recupera o establece la apariencia del control para incluir u omitir efectos de visualización tridimensionales.
 ms.assetid: cbc1f17f-991a-4b35-9c64-7750a17b42c8
 keywords:
-- Propiedad de apariencia SysMon
-- Propiedad Appearance SysMon, clase SystemMonitor
-- Clase SystemMonitor SysMon, propiedad Appearance
+- Propiedad Appearance SysMon
+- Propiedad Appearance SysMon , Clase SystemMonitor
+- Clase SystemMonitor SysMon , propiedad Appearance
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9200c66f83a47f15421480967e8ea1ae9509b13e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c606ed69bca635fe0f261f64ed4439305dcdfb542edd4c0095e62eaa97266147
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105665925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117956208"
 ---
-# <a name="systemmonitorappearance-property"></a>SystemMonitor. Appearance (propiedad)
+# <a name="systemmonitorappearance-property"></a>Propiedad SystemMonitor.Appearance
 
-Recupera o establece la apariencia del control para incluir u omitir los efectos de visualización tridimensionales.
+Recupera o establece la apariencia del control para incluir u omitir efectos de visualización tridimensionales.
 
 Esta propiedad es de solo lectura.
 
@@ -40,13 +40,13 @@ Property Appearance As Long
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Valor de apariencia que determina si el control se dibuja con efectos tridimensionales.
+Valor de apariencia que determina si el control se pinta con efectos tridimensionales.
 
-Puede establecer esta propiedad en uno de los siguientes valores.
+Puede establecer esta propiedad en uno de los valores siguientes.
 
 
 
-| Value                                                                        | Significado                                                                                  |
+| Valor                                                                        | Significado                                                                                  |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | <dl> <dt>0</dt> </dl> | Pinta el control sin efectos visuales.<br/>                                    |
 | <dl> <dt>1</dt> </dl> | Pinta el control con efectos tridimensionales. Este es el valor predeterminado.<br/> |
@@ -67,19 +67,19 @@ Puede establecer esta propiedad en uno de los siguientes valores.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se trata de una propiedad de ambiente. El valor de esta propiedad viene determinado por el contenedor. Establecer el valor de esta propiedad puede afectar a la ilusión del control y el contenedor como una sola aplicación.
+Se trata de una propiedad ambiente. El contenedor determina el valor de esta propiedad. Establecer el valor de esta propiedad podría afectar a la sensación de que el control y el contenedor son una sola aplicación.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
@@ -87,7 +87,7 @@ Se trata de una propiedad de ambiente. El valor de esta propiedad viene determin
 
 <dl> <dt>
 
-[**SystemMonitor**](systemmonitor.md)
+[**Systemmonitor**](systemmonitor.md)
 </dt> </dl>
 
  

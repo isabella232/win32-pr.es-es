@@ -1,5 +1,5 @@
 ---
-description: 'UdpIp_Fail clase : esta clase es la clase de tipo de evento para los eventos de error tcp/IP. La sintaxis siguiente se simplifica a partir del código MOF.'
+description: 'UdpIp_Fail clase : esta clase es la clase de tipo de evento para los eventos de error de TCP/IP. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: 552e63ef-70e4-4bc4-be33-bd77bd5acd61
 title: UdpIp_Fail clase
 ms.topic: reference
@@ -14,12 +14,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: f923f26e1371d11e27bfd58bcb69c053bfb5f1a3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3cb58c7262e46dde761d1494bc26b5a5701489f7e5aed167e1edf85bd9789f94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117813807"
 ---
 # <a name="udpip_fail-class"></a>UdpIp \_ Fail (clase)
 
@@ -59,7 +59,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Motivo del error. Puede ser uno de los siguientes códigos:
+Motivo del error. Puede ser uno de los códigos siguientes:
 
 <dl> <dt>
 
@@ -96,10 +96,10 @@ Identifica el protocolo. Puede ser uno de los siguientes valores:
 
 
 
-| Valor                                                                                                                                                                                                  | Significado                                                            |
+| Value                                                                                                                                                                                                  | Significado                                                            |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <span id="AF_INET"></span><span id="af_inet"></span><dl> <dt>**AF \_ INET**</dt> <dt>2</dt> </dl>     | Familia de direcciones IPv4 (Protocolo de Internet versión 4).<br/>  |
-| <span id="AF_INET6"></span><span id="af_inet6"></span><dl> <dt>**AF \_ INET6**</dt> <dt>23</dt> </dl> | Familia de direcciones IPv6 (Protocolo de Internet versión 6).<br/> |
+| <span id="AF_INET"></span><span id="af_inet"></span><dl> <dt>**AF \_ INET**</dt> <dt>2</dt> </dl>     | La familia de direcciones IPv4 (Protocolo de Internet versión 4).<br/>  |
+| <span id="AF_INET6"></span><span id="af_inet6"></span><dl> <dt>**AF \_ INET6**</dt> <dt>23</dt> </dl> | La familia de direcciones IPv6 (Protocolo de Internet versión 6).<br/> |
 
 
 
@@ -113,12 +113,12 @@ Identifica el protocolo. Puede ser uno de los siguientes valores:
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

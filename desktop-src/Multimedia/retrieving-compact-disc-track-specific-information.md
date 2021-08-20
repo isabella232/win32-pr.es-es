@@ -1,21 +1,21 @@
 ---
-title: Recuperación de la información de Track-Specific de CD
-description: Recuperación de la información de Track-Specific de CD
+title: Recuperar información de disco compacto Track-Specific disco
+description: Recuperar información de disco compacto Track-Specific disco
 ms.assetid: 7a26fac2-7cc5-4a65-b045-35baf979c134
 keywords:
 - MCI_TRACK marca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fb71e57ee1b2d7e300f0567359ab5d435cb310e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 717513ad3bc81812751683936913f61cb9615d4d211c40c53ac7eb6c24e36b17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103995114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117801819"
 ---
-# <a name="retrieving-compact-disc-track-specific-information"></a>Recuperación de la información de Track-Specific de CD
+# <a name="retrieving-compact-disc-track-specific-information"></a>Recuperar información de disco compacto Track-Specific disco
 
-En el caso de los dispositivos de audio de CD, puede obtener la ubicación de inicio y la longitud de una pista especificando la \_ marca de pista de MCI y estableciendo el miembro **DwTrack** de [**MCI \_ status \_ parms**](mci-status-parms.md) en el número de pista deseado. Para obtener la ubicación inicial de una pista, establezca el miembro **dwItem** en la \_ posición de estado de MCI \_ . Para obtener la longitud de una pista, establezca **dwItem** en la \_ longitud del estado de MCI \_ . Por ejemplo, en el ejemplo siguiente se recupera el número total de pistas del disco compacto y la ubicación inicial de cada pista. A continuación, utiliza la función [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) para notificar las ubicaciones de inicio de las pistas.
+Para los dispositivos de audio de CD, puede obtener la ubicación inicial y la longitud de una pista especificando la marca MCI TRACK y estableciendo el \_ **miembro dwTrack** de [**MCI STATUS \_ \_ PARMS**](mci-status-parms.md) en el número de pista deseado. Para obtener la ubicación inicial de una pista, establezca el **miembro dwItem** en MCI \_ STATUS \_ POSITION. Para obtener la longitud de una pista, establezca **dwItem** en MCI \_ STATUS \_ LENGTH. Por ejemplo, en el ejemplo siguiente se recupera el número total de pistas del disco compacto y la ubicación inicial de cada pista. A continuación, usa la [función MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) para notificar las ubicaciones iniciales de las pistas.
 
 
 ```C++
@@ -126,6 +126,6 @@ DWORD DisplayCDTrackStartTimes(HWND hMainWnd)
 
 
 
- 
+ 
 
- 
+ 

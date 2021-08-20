@@ -1,21 +1,21 @@
 ---
 description: El <searchConnectorDescription> elemento es el elemento contenedor de nivel superior de una definición de conector de búsqueda.
 ms.assetid: 383CAA20-56CA-4bdc-AC79-E57A1D59785C
-title: Elemento searchConnectorDescription (esquema de biblioteca)
+title: elemento searchConnectorDescription (esquema de biblioteca)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: faa6c213d43a648ebea51b58b4c3103a0ee42f13
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91be0345ae2770e28437f13cdc754a1855f050210b85a03a4eb5c6c3726af98b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985895"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117858254"
 ---
-# <a name="searchconnectordescription-element-library-schema"></a>Elemento searchConnectorDescription (esquema de biblioteca)
+# <a name="searchconnectordescription-element-library-schema"></a>elemento searchConnectorDescription (esquema de biblioteca)
 
-El <searchConnectorDescription> elemento es el elemento contenedor de nivel superior de una definición de conector de búsqueda. El <searchConnectorDescription> elemento es una extensión del <searchConnectorDescriptionType> tipo de elemento asociado con los conectores de búsqueda federada de Windows; sin embargo, no puede incluir conectores de búsqueda para los controladores de protocolo o de búsqueda federada de Windows en una biblioteca.
+El <searchConnectorDescription> elemento es el elemento contenedor de nivel superior de una definición de conector de búsqueda. El elemento es una extensión del tipo de elemento asociado a los conectores de búsqueda federada de Windows; sin embargo, no puede incluir conectores de búsqueda para la búsqueda federada de Windows o controladores de protocolo en una <searchConnectorDescription> <searchConnectorDescriptionType> biblioteca.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <!-- searchConnectorDescription -->
@@ -97,13 +97,13 @@ El <searchConnectorDescription> elemento es el elemento contenedor de nivel supe
 
 ## <a name="element-information"></a>Información de elemento
 
-Consulte la documentación del esquema en [Windows Search](/previous-versions/bb268030(v=msdn.10))
+Consulte la documentación del esquema en [Windows Search.](/previous-versions/bb268030(v=msdn.10))
 
 
 
 | Elemento primario                                                                                               | Elementos secundarios                        |
 |--------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| [Elemento searchConnectorDescriptionList (esquema de biblioteca)](schema-library-searchconnectordescriptionlist.md) | <isSearchOnlyI. TEM>             |
+| [elemento searchConnectorDescriptionList (esquema de biblioteca)](schema-library-searchconnectordescriptionlist.md) | <isSearchOnlyI.tem>             |
 |                                                                                                              | <description>                   |
 |                                                                                                              | <iconReference>                 |
 |                                                                                                              | <imageLink>                     |
@@ -131,16 +131,16 @@ Consulte la documentación del esquema en [Windows Search](/previous-versions/bb
 
 | Atributo | Descripción                                                                      |
 |-----------|----------------------------------------------------------------------------------|
-| publisher | Opcional. El nombre para mostrar del publicador que proporciona el conector de búsqueda.      |
-| product   | Opcional. El nombre para mostrar del producto al que se aplica el conector de búsqueda. |
+| publisher | Opcional. Nombre para mostrar del publicador que proporciona el conector de búsqueda.      |
+| product   | Opcional. Nombre para mostrar del producto al que se aplica el conector de búsqueda. |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El <searchConnectorDescription> elemento de una biblioteca usa la misma definición de esquema que <searchConnectorDescription> para la búsqueda federada de Windows. Aunque utilizan los mismos esquemas, los conectores de búsqueda para la búsqueda federada de Windows no se pueden incluir en una biblioteca.
+El <searchConnectorDescription> elemento de una biblioteca usa la misma definición de esquema que para Windows búsqueda <searchConnectorDescription> federada. Aunque usan los mismos esquemas, los conectores de búsqueda para Windows búsqueda federada no se pueden incluir en una biblioteca.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -149,7 +149,7 @@ El <searchConnectorDescription> elemento de una biblioteca usa la misma definici
 [Esquema de descripción de biblioteca](library-schema-entry.md)
 </dt> <dt>
 
-[Esquema de Descripción del conector de búsqueda](../search/search-sconn-desc-schema-entry.md)
+[Esquema de descripción del conector de búsqueda](../search/search-sconn-desc-schema-entry.md)
 </dt> </dl>
 
  

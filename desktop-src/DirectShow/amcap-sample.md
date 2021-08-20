@@ -4,12 +4,12 @@ ms.assetid: 611b252f-1ae0-439e-ba02-8ad9bb8cec6d
 title: Ejemplo de AmCap
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1179e573d0e0162d8e5d2a37d13b6eb1fe8a0504
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 3154c2d09edf24c9c937165476e08237b1e646c6e165417a70ab2aef235c40c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105659271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118002086"
 ---
 # <a name="amcap-sample"></a>Ejemplo de AmCap
 
@@ -17,28 +17,28 @@ ms.locfileid: "105659271"
 
 Aplicación de captura de vídeo.
 
-En esta aplicación de ejemplo se muestran las siguientes tareas relacionadas con la captura de audio y vídeo:
+Esta aplicación de ejemplo muestra las siguientes tareas relacionadas con la captura de audio y vídeo:
 
--   Capturar en un archivo
--   Vista previa dinámica
+-   Captura en un archivo
+-   Versión preliminar en directo
 -   Asignación del archivo de captura
--   Visualización de las páginas de propiedades del dispositivo
+-   Visualización de páginas de propiedades de dispositivo
 -   Enumeración de dispositivos
--   Control de flujo
+-   Control stream
 
-AMCap admite la entrada de flujo de programa MPEG-2, por ejemplo, de sintonizadores de TV analógicos que transmiten contenido MPEG-2. Se requiere un descodificador MPEG-2 compatible con DirectShow para descodificar las secuencias.
+AMCap admite la entrada de secuencias del programa MPEG-2, por ejemplo, de los tuneres de TV análogos que transmiten contenido MPEG-2. Se DirectShow descodificador MPEG-2 compatible con DirectShow para descodificar las secuencias.
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-Para descargar los ejemplos del SDK de DirectShow, instale la versión más reciente de la [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
+Para descargar los ejemplos DirectShow SDK, instale la versión más reciente del [SDK de Windows.](https://msdn.microsoft.com/windowsvista/bb980924.aspx)
 
-Este ejemplo se instala en la siguiente ruta de acceso: \[ ejemplos *raíz del SDK* \] \\ \\ multimedia \\ DirectShow \\ Capture \\ AMCAP.
+Este ejemplo se instala en la siguiente ruta de acceso: Ejemplos raíz del \[ *SDK* \] \\ Multimedia DirectShow Capture \\ \\ \\ \\ AmCap.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Ejemplos de DirectShow](directshow-samples.md)
+[DirectShow Muestras](directshow-samples.md)
 </dt> </dl>
 
  

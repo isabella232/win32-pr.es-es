@@ -1,9 +1,9 @@
 ---
-title: MCI_SET_PARMS estructura (Mciapi. h)
-description: La \_ \_ estructura de parms de MCI set contiene información para el \_ comando MCI set.
+title: MCI_SET_PARMS estructura (Mciapi.h)
+description: La estructura MCI \_ SET \_ PARMS contiene información para el comando MCI \_ SET.
 ms.assetid: 58811a0f-dc89-4303-b2b2-c98933ebab80
 keywords:
-- Estructura de MCI_SET_PARMS de Windows multimedia
+- MCI_SET_PARMS estructura Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 971affd319ecae817b9c1159ab0f307d0c2a5c91
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 10c223534410b7e5a0543683c354728e0d5093f38ad0a2582a047a2a5362faae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117986217"
 ---
-# <a name="mci_set_parms-structure"></a>\_ \_ Estructura parms de MCI set
+# <a name="mci_set_parms-structure"></a>Estructura parms de MCI \_ SET \_
 
-La estructura de **\_ \_ parms de MCI Set** contiene información para el comando [**MCI \_ set**](mci-set.md) .
+La **estructura MCI \_ SET \_ PARMS** contiene información para el [**comando MCI \_ SET.**](mci-set.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ typedef struct {
 **dwCallback**
 </dt> <dd>
 
-La palabra de orden inferior especifica un identificador de ventana que se usa para la marca de notificación de MCI \_ .
+La palabra de orden bajo especifica un identificador de ventana que se usa para la marca \_ MCI NOTIFY.
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Canal de salida de audio.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Al asignar datos a los miembros de esta estructura, establezca las marcas correspondientes en el parámetro *fdwCommand* de la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar los miembros.
 
@@ -71,11 +71,11 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -83,13 +83,13 @@ Al asignar datos a los miembros de esta estructura, establezca las marcas corres
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estructuras de MCI**](mci-structures.md)
 </dt> <dt>
 
-[**MCI \_ set**](mci-set.md)
+[**MCI \_ SET**](mci-set.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

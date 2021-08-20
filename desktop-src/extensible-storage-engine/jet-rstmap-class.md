@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_RSTMAP (clase)'
-title: JET_RSTMAP (clase)
+description: 'Más información sobre: JET_RSTMAP clase'
+title: JET_RSTMAP clase
 TOCTitle: JET_RSTMAP class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_RSTMAP
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_rstmap(v=EXCHG.10)
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ae5547313a541e07fccd51bf047ebb372da6246b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb8b4318cc2855ca3b708dd31d14df5fb7cd331baf1b96b2c1b259e4421a3f56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117892927"
 ---
-# <a name="jet_rstmap-class"></a>JET_RSTMAP (clase)
+# <a name="jet_rstmap-class"></a>JET_RSTMAP clase
 
-Habilita la reasignación de las rutas de acceso de archivos de base de datos que se almacenan en los registros de transacciones durante la recuperación.
+Habilita el remapping de las rutas de acceso de archivo de base de datos que se almacenan en los registros de transacciones durante la recuperación.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_RSTMAP  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -68,6 +68,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_RSTMAP](./jet-rstmap-members.md)
+[JET_RSTMAP miembros](./jet-rstmap-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

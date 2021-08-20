@@ -1,9 +1,9 @@
 ---
-title: Función D2D1CreateFactory Factory (D2D1_FACTORY_TYPE,Factory ) (D2d1.h)
+title: Función D2D1CreateFactory Factory (D2D1_FACTORY_TYPE,Factory) (D2d1.h)
 description: Crea un objeto de generador que se puede usar para crear recursos de Direct2D. | Función D2D1CreateFactory Factory (D2D1_FACTORY_TYPE,Factory ) (D2d1.h)
 ms.assetid: c1c25d51-15ea-4075-a896-bd6501bf68c1
 keywords:
-- D2D1CreateFactory Factory (D2D1_FACTORY_TYPE,Factory ) Function Direct2D
+- Función Direct2D1CreateFactory Factory (D2D1_FACTORY_TYPE,Factory)
 topic_type:
 - apiref
 api_name:
@@ -39,7 +39,7 @@ HRESULT D2D1CreateFactory(
 
 | Parámetro | Descripción                                                 |
 |-----------|-------------------------------------------------------------|
-| *Fábrica* | Tipo de [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) que se creará. |
+| *Fábrica* | Tipo de [**ID2D1Factory que**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) se creará. |
 
 
 
@@ -87,7 +87,7 @@ HRESULT DemoApp::CreateDeviceIndependentResources()
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Platform Update for Windows Vista \[ desktop apps \| UWP apps\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma para aplicaciones de escritorio de Windows Vista \[ \| para aplicaciones para UWP\]<br/>                          |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y Actualización de plataforma para aplicaciones de escritorio de Windows Server 2008 aplicaciones \[ \| para UWP\]<br/> |
 | Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\]<br/>                                                  |
 | Header<br/>                   | <dl> <dt>D2d1.h</dt> </dl>                                                        |
