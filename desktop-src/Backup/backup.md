@@ -1,31 +1,31 @@
 ---
-title: Copia de seguridad
-description: Permita que las aplicaciones de copia de seguridad se comuniquen con otras aplicaciones y servicios sobre las operaciones de copia de seguridad y restauración. Realice una copia de seguridad en cinta, inicialice la cinta y recupere la información de la unidad de cinta. Mantener archivos duplicados con el almacén de instancia única (SIS).
+title: Backup
+description: Permitir que las aplicaciones de copia de seguridad se comuniquen con otras aplicaciones y servicios sobre las operaciones de copia de seguridad y restauración. Realice una copia de seguridad de cinta, inicialice la cinta y recupere la información de la unidad de cinta. Mantener archivos duplicados con un almacén de instancia única (SIS).
 ms.assetid: 97c3e2c4-8214-4093-bd13-3c38c91e08bd
 keywords:
-- Copia de seguridad de backup
-- copia de seguridad, Inicio
-- restauración de copias de seguridad de operaciones
+- copia de seguridad de copia de seguridad
+- copia de seguridad de copia de seguridad , inicio
+- operaciones de restauración Copia de seguridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 689a5a4613bdf029b270947b523727ea00a6e05d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5efe2668df47c271aba5befc3ba380c313b7bc15c11162a29b8364be6eb3fead
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119588895"
 ---
-# <a name="backup"></a>Copia de seguridad
+# <a name="backup"></a>Backup
 
-Las claves del registro para copias de seguridad y restauración permiten a las aplicaciones de copia de seguridad comunicarse con otras aplicaciones y servicios sobre las operaciones de copia de seguridad y restauración. Para obtener más información, vea [claves y valores del registro para copias de seguridad y restauración](registry-keys-for-backup-and-restore.md).
+Las claves del Registro para copia de seguridad y restauración permiten que las aplicaciones de copia de seguridad se comuniquen con otras aplicaciones y servicios sobre las operaciones de copia de seguridad y restauración. Para obtener más información, vea Claves y valores [del Registro para copia de seguridad y restauración.](registry-keys-for-backup-and-restore.md)
 
-La API de copia de seguridad en cinta permite a las aplicaciones de copia de seguridad leer y escribir en una cinta, inicializar una cinta y recuperar la información de la unidad de cinta o cinta. Para obtener más información, consulte [copia de seguridad en cinta](tape-backup.md).
+La API de copia de seguridad de cinta permite a las aplicaciones de copia de seguridad leer y escribir en una cinta, inicializar una cinta y recuperar información de cinta o unidad de cinta. Para obtener más información, vea [Copia de seguridad en cinta.](tape-backup.md)
 
-El almacén de instancia única (SIS) es una arquitectura diseñada para mantener archivos duplicados con una sobrecarga mínima. La aplicación de copia de seguridad usa la API de copia de seguridad de SIS para tener acceso a la arquitectura de SIS. Para obtener más información, vea [almacenamiento de instancia única y copia de seguridad de SIS](single-instance-store-and-sis-backup.md).
+El almacén de instancia única (SIS) es una arquitectura diseñada para mantener archivos duplicados con un mínimo de sobrecarga. La aplicación de copia de seguridad usa la API de copia de seguridad de SIS para acceder a la arquitectura de SIS. Para obtener más información, vea [Almacenamiento de instancia única y Copia de seguridad de SIS.](single-instance-store-and-sis-backup.md)
 
-La copia de seguridad y restauración de archivos cifrados está habilitada por la API de cifrado sin formato, que lee y escribe archivos cifrados y mantiene los datos en formato cifrado. La API permite que se realicen copias de seguridad y restauraciones de los datos cifrados de estos archivos, a la vez que se cumplen los objetivos de mantenimiento de la seguridad de los datos de los que se ha realizado una copia de seguridad y que se pueden usar en una aplicación que no tiene permiso para utilizar las claves de cifrado en el archivo. Para obtener más información, vea [copia de seguridad y restauración de archivos cifrados](/windows/desktop/FileIO/backup-and-restore-of-encrypted-files).
+La COPIA de seguridad y restauración de archivos cifrados está habilitada por la API de cifrado sin formato, que lee y escribe archivos cifrados mientras mantiene los datos en formato cifrado. La API permite realizar copias de seguridad y restaurar los datos cifrados de estos archivos, a la vez que se mantienen los objetivos de mantener la seguridad de los datos de los que se ha hecho una copia de seguridad y que una aplicación que carece de permiso para usar las claves de cifrado en el archivo. Para obtener más información, vea [Copia de seguridad y restauración de archivos cifrados.](/windows/desktop/FileIO/backup-and-restore-of-encrypted-files)
 
-La herramienta Srdelayed puede permitir que las aplicaciones de recuperación del estado del sistema muevan, eliminen y establezcan el nombre corto de los archivos del sistema. Para obtener más información, vea [Srdelayed.exe](srdelayed-exe.md).
+La herramienta Srdelayed puede permitir que las aplicaciones de recuperación de estado del sistema muevan, eliminen y establezcan el nombre corto de los archivos del sistema. Para obtener más información, [ veaSrdelayed.exe](srdelayed-exe.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -34,6 +34,6 @@ La herramienta Srdelayed puede permitir que las aplicaciones de recuperación de
 [Referencia de copia de seguridad](backup-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

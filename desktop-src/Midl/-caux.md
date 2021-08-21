@@ -1,9 +1,9 @@
 ---
-title: modificador/Caux
-description: El modificador/Caux está obsoleto y, si se usa, produce un error.
+title: Modificador /caux
+description: El modificador /caux está obsoleto y, si se usa, produce un error.
 ms.assetid: f11807f4-2c7e-4200-83f4-fd998fef2a0f
 keywords:
-- /Caux modificador MIDL
+- /caux switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,20 +12,20 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8cd25d0508a6f40dabb8c609f4e0a1ec612cd1b5
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 676753b579ef4703716c8c43e0cc76e752e6cefbf01881d9003805f17b0a810b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119340052"
 ---
-# <a name="caux-switch"></a>modificador/Caux
+# <a name="caux-switch"></a>Modificador /caux
 
-Este modificador está obsoleto y, si se utiliza, produce un error.
+Este modificador está obsoleto y, si se usa, produce un error.
 
- 
+ 
 
- 
+ 
 
 
 

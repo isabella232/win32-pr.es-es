@@ -2,7 +2,7 @@
 description: Proporciona una conexión a una impresora existente en la red y la agrega a la lista de impresoras disponibles.
 ms.assetid: 44149051-4abf-4428-8999-355dd0b0ce69
 ms.tgt_platform: multiple
-title: Método AddPrinterConnection de la clase Win32_Printer
+title: Método AddPrinterConnection de la Win32_Printer clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e2ad9e225a60e33fdf51d5f677dd4342acd148b3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1383277a7a31e5b5e035538ce905607ee1960ee7b70cce4640cfc0e4346c3d3b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081079"
 ---
-# <a name="addprinterconnection-method-of-the-win32_printer-class"></a>Método AddPrinterConnection de la \_ clase Printer de Win32
+# <a name="addprinterconnection-method-of-the-win32_printer-class"></a>Método AddPrinterConnection de la clase Printer de Win32 \_
 
-El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **AddPrinterConnection** proporciona una conexión a una impresora existente en la red y la agrega a la lista de impresoras disponibles.
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **AddPrinterConnection** proporciona una conexión a una impresora existente en la red y la agrega a la lista de impresoras disponibles.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ uint32 AddPrinterConnection(
 
 <dl> <dt>
 
-*Nombre* \[ de de\]
+*Nombre* \[ En\]
 </dt> <dd>
 
 Nombre descriptivo de la impresora.
@@ -51,7 +51,7 @@ Nombre descriptivo de la impresora.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro valor para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -85,11 +85,11 @@ Controlador de impresora incompatible
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo de PowerShell [Add-PrinterDriver](https://Gallery.TechNet.Microsoft.Com/1c8f4c0d-9439-4af0-8840-59686d9b4bc1) instala todos los controladores de impresora desde un servidor de impresión especificado.
+El [ejemplo de PowerShell Add-PrinterDriver](https://Gallery.TechNet.Microsoft.Com/1c8f4c0d-9439-4af0-8840-59686d9b4bc1) instala todos los controladores de impresora desde un servidor de impresión especificado.
 
-En el ejemplo de PowerShell de [ListSharedPrintersAddPrintConnection.ps1](https://Gallery.TechNet.Microsoft.Com/b7f74333-e78b-49d8-b23a-f1307d5b1ee6) se enumeran las impresoras compartidas de un equipo remoto y se ofrece la posibilidad de agregar una conexión de impresora desde el equipo remoto al equipo.
+En [ListSharedPrintersAddPrintConnection.ps1](https://Gallery.TechNet.Microsoft.Com/b7f74333-e78b-49d8-b23a-f1307d5b1ee6) ejemplo de PowerShell se enumeran las impresoras compartidas en un equipo remoto y se ofrece la posibilidad de agregar una conexión de impresora desde el equipo remoto al equipo.
 
-El siguiente ejemplo de código de VBScript agrega una impresora local.
+El siguiente ejemplo de código VBScript agrega una impresora local.
 
 
 ```VB
@@ -127,8 +127,8 @@ objPrinter.Put_()
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                        |
-| MOF<br/>                      | <dl> <dt>Win32 \_ printer. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                        |
+| MOF<br/>                      | <dl> <dt>Win32 \_ Printer.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl>       |
 
 
@@ -137,13 +137,13 @@ objPrinter.Put_()
 
 <dl> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[Tareas de WMI: impresoras e impresión](/windows/desktop/WmiSdk/wmi-tasks--printers-and-printing)
+[Tareas wmi: impresoras e impresión](/windows/desktop/WmiSdk/wmi-tasks--printers-and-printing)
 </dt> <dt>
 
-[**\_Impresora Win32**](win32-printer.md)
+[**Impresora \_ Win32**](win32-printer.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de CDN_FILEOK (commdlg. h)
-description: Enviado por un cuadro de diálogo abrir o guardar como del explorador cuando el usuario especifica un nombre de archivo y hace clic en el botón Aceptar.
+title: CDN_FILEOK de notificación (Commdlg.h)
+description: Enviado por un cuadro de diálogo Abrir o Guardar como de estilo explorador cuando el usuario especifica un nombre de archivo y hace clic en el botón Aceptar.
 ms.assetid: 7f3de96f-68d8-4f40-b74f-304835f9def2
 keywords:
-- CDN_FILEOK cuadros de diálogo código de notificación
+- CDN_FILEOK de diálogo del código de notificación
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5aef63d531b603c94369936374bc10531639254
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e32e9b4abbae65c2c29020bdab191272921ee601eebff1e7b07e0c674c783dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787425"
 ---
-# <a name="cdn_fileok-notification-code"></a>\_Código de notificación FILEOK de CDN
+# <a name="cdn_fileok-notification-code"></a>\_CDN Código de notificación fileok
 
-Enviado por un cuadro de diálogo **abrir** o **Guardar como** del explorador cuando el usuario especifica un nombre de archivo y hace clic en el botón **Aceptar** .
+Enviado por un cuadro de **diálogo** Abrir o Guardar **como** de estilo explorador cuando el usuario especifica un nombre de archivo y hace clic en el **botón** Aceptar.
 
-El procedimiento de enlace de [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) recibe este mensaje en forma de mensaje de [**\_ notificación de WM**](../controls/wm-notify.md) .
+El [*procedimiento de enlace OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) recibe este mensaje en forma de mensaje WM [**\_ NOTIFY.**](../controls/wm-notify.md)
 
 
 ```C++
@@ -49,11 +49,11 @@ Este parámetro no se utiliza.
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**imnotify**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) .
+Puntero a una [**estructura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya)
 
-La estructura [**imnotify**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) contiene una estructura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) cuyo miembro de **código** indica el mensaje de notificación FILEOK de la **red CDN \_** .
+La [**estructura OFNOTIFY contiene**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) una  estructura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) cuyo miembro de código indica el **CDN de notificación \_ FILEOK.**
 
-La estructura [**imnotify**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) también contiene un puntero a una estructura [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) cuyo miembro **lpstrFile** especifica la dirección del nombre de archivo seleccionado.
+La [**estructura OFNOTIFY también**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) contiene un puntero a una estructura [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) cuyo **miembro lpstrFile** especifica la dirección del nombre de archivo seleccionado.
 
 </dd> </dl>
 
@@ -61,11 +61,11 @@ La estructura [**imnotify**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) 
 
 Si el procedimiento de enlace devuelve cero, el cuadro de diálogo acepta el nombre de archivo especificado y se cierra.
 
-Para rechazar el nombre de archivo especificado y forzar que el cuadro de diálogo permanezca abierto, devuelve un valor distinto de cero del procedimiento de enlace y llama a la función [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) para establecer un valor **\_ MSGRESULT de DWL** distinto de cero.
+Para rechazar el nombre de archivo especificado y forzar que el cuadro de diálogo permanezca abierto, devuelva un valor distinto de cero del procedimiento de enlace y llame a la función [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) para establecer un valor msgRESULT de DWL distinto de **\_ cero.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El sistema envía esta notificación solo si el cuadro de diálogo se creó con el valor del **\_ Explorador OFN** .
+El sistema envía esta notificación solo si el cuadro de diálogo se creó con el **valor OFN \_ EXPLORER.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,7 +75,7 @@ El sistema envía esta notificación solo si el cuadro de diálogo se creó con 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commdlg.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -95,7 +95,7 @@ El sistema envía esta notificación solo si el cuadro de diálogo se creó con 
 [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc)
 </dt> <dt>
 
-[**No NOTIFICAr**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya)
+[**OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya)
 </dt> <dt>
 
 [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
@@ -104,16 +104,16 @@ El sistema envía esta notificación solo si el cuadro de diálogo se creó con 
 [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Biblioteca de cuadros de diálogo comunes](common-dialog-box-library.md)
+[Biblioteca común de cuadros de diálogo](common-dialog-box-library.md)
 </dt> <dt>
 
 **Otros recursos**
 </dt> <dt>
 
-[**\_notificaciones de WM**](../controls/wm-notify.md)
+[**WM \_ NOTIFY**](../controls/wm-notify.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: La \_ variable miembro m PaletteVersion se usa para realizar el seguimiento cuando cambia la paleta.
+description: La variable miembro m \_ PaletteVersion se usa para realizar un seguimiento de cuándo cambia la paleta.
 ms.assetid: 45cb6e62-48b4-4480-a3fa-0f790f3c725d
-title: 'Miembro CDrawImage:: m_PaletteVersion (Winutil. h)'
+title: CDrawImage::m_PaletteVersion miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: beb4102606dce2fbc89fdd9ac251b007c875d6e8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 76df4ea53eb7540fa8816b2dac9e9fe62e476a7db47bec979ee54d70624909a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074349"
 ---
-# <a name="cdrawimagem_paletteversion-member"></a>Miembro PaletteVersion CDrawImage:: m \_
+# <a name="cdrawimagem_paletteversion-member"></a>Miembro CDrawImage::m \_ PaletteVersion
 
-La `m_PaletteVersion` variable miembro se usa para realizar el seguimiento cuando cambia la paleta.
+La `m_PaletteVersion` variable miembro se usa para realizar un seguimiento de cuándo cambia la paleta.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ LONG m_PaletteVersion;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ LONG m_PaletteVersion;
 
 <dl> <dt>
 
-[**Clase CDrawImage**](cdrawimage.md)
+[**CDrawImage (clase)**](cdrawimage.md)
 </dt> <dt>
 
 [**CDrawImage::GetPaletteVersion**](cdrawimage-getpaletteversion.md)

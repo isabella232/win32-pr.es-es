@@ -1,7 +1,7 @@
 ---
 description: El método NotifyThread notifica al subproceso que la cola contiene datos.
 ms.assetid: d91cde3f-2876-4fb4-a124-f1460bba2cc9
-title: Método COutputQueue. NotifyThread (Outputq. h)
+title: Método COutputQueue.NotifyThread (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7bb5f965bac15e99140955e8ee2519feaadfef85
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d96fa39c912502234e7ff513badfd787032a41fd1f951b6d89f79194a6d4e72b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073729"
 ---
-# <a name="coutputqueuenotifythread-method"></a>COutputQueue. NotifyThread, método
+# <a name="coutputqueuenotifythread-method"></a>Método COutputQueue.NotifyThread
 
 El `NotifyThread` método notifica al subproceso que la cola contiene datos.
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Mantenga la sección crítica antes de llamar a este método.
 
@@ -54,8 +54,8 @@ Mantenga la sección crítica antes de llamar a este método.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Mantenga la sección crítica antes de llamar a este método.
 
 <dl> <dt>
 
-[**Clase COutputQueue**](coutputqueue.md)
+[**COutputQueue (clase)**](coutputqueue.md)
 </dt> </dl>
 
  

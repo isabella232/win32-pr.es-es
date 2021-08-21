@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Métodos SWbemObjectPath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28b4da518ba0b94b52fb4bc75482ab2894b4a799
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e880a58e5f53e89894d4bf9081eab5e84f4302da90592846cd02ec553118b80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103812397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119503865"
 ---
 # <a name="swbemobjectpath-methods"></a>Métodos SWbemObjectPath
 
-El objeto [**SWbemObjectPath**](swbemobjectpath.md) expone los métodos siguientes.
+El [**objeto SWbemObjectPath**](swbemobjectpath.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

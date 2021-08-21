@@ -1,9 +1,9 @@
 ---
-title: 'ConsumeStructuredBuffer:: consume (función)'
+title: ConsumeStructuredBuffer::Consume (Función)
 description: Quita un valor del final del búfer.
 ms.assetid: b4f7b472-9274-463d-99b0-f05b74f54fc1
 keywords:
-- Usar HLSL de función
+- Consumo de la función HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9d5a43c53089a7e7b19d0f1ecef5c0e5608e8ee9
-ms.sourcegitcommit: 476861130ea63675206d1f06e517059705b930ed
+ms.openlocfilehash: a76f8c27ed50c7d7eab1b37cd5c60257691b8db5e5af412f5b3bfe678c283bba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104076995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119486705"
 ---
-# <a name="consume-function"></a>Consume (función)
+# <a name="consume-function"></a>Consumo de función
 
 Quita un valor del final del búfer.
 
@@ -38,23 +38,23 @@ Esta función no tiene parámetros.
 
 Tipo: **T**
 
-El valor quitado (puede ser una estructura).
+Valor quitado (puede ser una estructura).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 T puede ser cualquier tipo de datos, incluida una estructura.
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -63,12 +63,12 @@ Esta función se admite para los siguientes tipos de sombreadores:
 [ConsumeStructuredBuffer](sm5-object-consumestructuredbuffer.md)
 </dt> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

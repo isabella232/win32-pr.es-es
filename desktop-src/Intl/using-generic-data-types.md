@@ -4,23 +4,23 @@ ms.assetid: 1c9cbb18-9295-4847-86c1-d596668cbe57
 title: Usar tipos de datos genéricos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0e2604f87b12e86076bed47f509c6398fa8482b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 77a61bed094506f0d31718b0b88fe519028ba1db785ebda3e00404a7aa3257e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119535483"
 ---
 # <a name="using-generic-data-types"></a>Usar tipos de datos genéricos
 
-Si usa tipos de datos genéricos en el código, se puede compilar para [Unicode](unicode.md) simplemente mediante una directiva de preprocesador para definir "Unicode" antes de las instrucciones **\# include** para los archivos de encabezado. Para compilar las páginas de códigos de código para [Windows (ANSI)](code-pages.md), omita la definición de "Unicode". Las nuevas aplicaciones de Windows deben usar Unicode para evitar las incoherencias de las páginas de códigos variadas y simplificar la localización.
+Si usa tipos de datos genéricos en el código, se puede compilar para [Unicode](unicode.md) simplemente mediante una directiva de preprocesador para definir "UNICODE" antes de las instrucciones **\# include** para los archivos de encabezado. Para compilar el código para [Windows (ANSI) ,](code-pages.md)omita la definición de "UNICODE". Las Windows nuevas aplicaciones deben usar Unicode para evitar las incoherencias de páginas de códigos variadas y simplificar la localización.
 
-Para crear código fuente que se puede compilar para utilizar caracteres Unicode y cadenas, o para usar caracteres y cadenas de páginas de códigos de Windows:
+Para crear código fuente que se pueda compilar para usar caracteres y cadenas Unicode o para usar caracteres y cadenas de Windows páginas de códigos:
 
-1.  Utilice tipos de datos genéricos, como TCHAR, LPTSTR y LPTCH, para todos los tipos de caracteres y cadenas que se usan para el texto. Para obtener más información sobre los tipos genéricos, vea [tipos de datos de Windows para cadenas](windows-data-types-for-strings.md).
-2.  Asegúrese de que los punteros a los búferes de datos que no son de texto o a las matrices de bytes binarias están codificados con tipos de datos como LPBYTE o LPWORD, en lugar del tipo LPTSTR o LPTCH.
-3.  Declare explícitamente punteros de tipo indeterminado como punteros void mediante LPVOID, según corresponda.
-4.  Hacer independiente del tipo aritmético del puntero. El uso de unidades de tamaño TCHAR produce variables de 2 bytes si se define Unicode y 1 byte si no se ha definido Unicode. El uso de la aritmética de puntero siempre devuelve el número de elementos indicado por el puntero, tanto si los elementos tienen un tamaño de 1 o 2 bytes. La siguiente expresión siempre recupera el número de elementos, independientemente de si se ha definido Unicode.
+1.  Use tipos de datos genéricos, como TCHAR, LPTSTR y LPTCH, para todos los tipos de caracteres y cadenas usados para el texto. Para obtener más información sobre los tipos genéricos, [vea Windows data types for Strings](windows-data-types-for-strings.md).
+2.  Asegúrese de que los punteros a búferes de datos que no son de texto o matrices de bytes binarios están codificados con tipos de datos como LPBYTE o LPWORD, en lugar del tipo LPTSTR o LPTCH.
+3.  Declare punteros de tipo indeterminado explícitamente como punteros void mediante LPVOID según corresponda.
+4.  Haga que el tipo aritmético de puntero sea independiente. El uso de unidades de tamaño TCHAR produce variables que son de 2 bytes si se define UNICODE y de 1 byte si no se define UNICODE. El uso de aritmética de puntero siempre devuelve el número de elementos indicados por el puntero, independientemente de si los elementos tienen un tamaño de 1 o 2 bytes. La siguiente expresión siempre recupera el número de elementos, independientemente de si se define UNICODE.
 
     ```C++
     cCount = lpEnd - lpStart;
@@ -28,7 +28,7 @@ Para crear código fuente que se puede compilar para utilizar caracteres Unicode
 
     
 
-    La siguiente expresión determina el número de bytes utilizados.
+    La expresión siguiente determina el número de bytes usados.
 
     ```C++
     cByteCount = (lpEnd - lpStart) * sizeof(TCHAR);
@@ -36,7 +36,7 @@ Para crear código fuente que se puede compilar para utilizar caracteres Unicode
 
     
 
-    No es necesario cambiar una instrucción como la siguiente, porque el incremento del puntero apunta al siguiente elemento de carácter.
+    No es necesario cambiar una instrucción como la siguiente, porque el incremento de puntero apunta al elemento de carácter siguiente.
 
     ```C++
     chNext = *++lpText;
@@ -44,7 +44,7 @@ Para crear código fuente que se puede compilar para utilizar caracteres Unicode
 
     
 
-5.  Reemplazar cadenas literales y constantes de caracteres de manifiesto con macros. Cambie las expresiones como las siguientes.
+5.  Reemplace las cadenas literales y las constantes de caracteres de manifiesto por macros. Cambie expresiones como la siguiente.
 
     ```C++
     while(*lpFileName++ != '\\')
@@ -55,7 +55,7 @@ Para crear código fuente que se puede compilar para utilizar caracteres Unicode
 
     
 
-    Use la macro [**Text**](/windows/desktop/api/Winnt/nf-winnt-text) como se indica a continuación en esta expresión.
+    Use la [**macro TEXT**](/windows/desktop/api/Winnt/nf-winnt-text) como se muestra a continuación en esta expresión.
 
     ```C++
     while(*lpFileName++ != TEXT('\\'))
@@ -66,19 +66,19 @@ Para crear código fuente que se puede compilar para utilizar caracteres Unicode
 
     
 
-    La macro [**Text**](/windows/desktop/api/Winnt/nf-winnt-text) hace que las cadenas se evalúen como L "cadena" cuando se define Unicode, y como "cadena" en caso contrario. Para facilitar la administración, mueva las cadenas literales a los recursos, especialmente si contienen caracteres que están fuera del intervalo ASCII (de 0x00 a 0x7F) o se exponen en la interfaz de usuario. Para admitir la localización de la aplicación para distintos idiomas nacionales, es muy importante que todas las cadenas de la interfaz de usuario estén en recursos localizables.
+    La [**macro TEXT**](/windows/desktop/api/Winnt/nf-winnt-text) hace que las cadenas se evalúen como L"string" cuando se define UNICODE y, en caso contrario, como "cadena". Para facilitar la administración, mueva cadenas literales a recursos, especialmente si contienen caracteres fuera del intervalo ASCII (0x00 a través de 0x7F) o se exponen en la interfaz de usuario. Para admitir la localización de la aplicación para distintos idiomas nacionales, es muy importante que todas las cadenas de interfaz de usuario se puedan encontrar en recursos localizables.
 
-6.  Use las versiones genéricas de las funciones de Windows. Para obtener más información, vea [convenciones de los prototipos de función](conventions-for-function-prototypes.md).
-7.  Use las versiones genéricas de las funciones de cadena de la biblioteca estándar de C y recuerde definir " \_ Unicode", así como "Unicode", como se describe en [funciones estándar de C](standard-c-functions.md).
-8.  Si va a adaptar una aplicación escrita originalmente para páginas de códigos de Windows, Recuerde cambiar cualquier código que se base en 255 como el valor más grande de un carácter.
+6.  Use las versiones genéricas de las Windows funciones. Para obtener más información, vea [Convenciones para prototipos de función](conventions-for-function-prototypes.md).
+7.  Use las versiones genéricas de las funciones de cadena de la biblioteca estándar de C y recuerde definir "UNICODE" así como "UNICODE", como se describe \_ en Funciones estándar de [C](standard-c-functions.md).
+8.  Si va a adaptar una aplicación escrita originalmente para páginas de códigos Windows, recuerde cambiar cualquier código que se base en 255 como el valor más grande para un carácter.
 
-Al compilar el código que ha escrito tal y como se ha descrito anteriormente, el compilador puede crear versiones de páginas de códigos de Windows y Unicode de la aplicación desde el mismo origen. En función de las definiciones de Unicode, las funciones genéricas se resuelven para generar los mismos archivos binarios que si se escribiera código exclusivamente para Unicode o exclusivamente para páginas de códigos de Windows.
+Al compilar código que ha escrito como se ha descrito anteriormente, el compilador puede crear versiones de página de códigos Unicode y Windows de la aplicación desde el mismo origen. En función de las definiciones de UNICODE, las funciones genéricas se resuelven para generar los mismos archivos binarios que si escribiera código exclusivamente para Unicode o exclusivamente para Windows páginas de códigos.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar Unicode y juegos de caracteres](using-unicode-and-character-sets.md)
+[Uso de Unicode y juegos de caracteres](using-unicode-and-character-sets.md)
 </dt> </dl>
 
  

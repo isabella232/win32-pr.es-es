@@ -1,10 +1,10 @@
 ---
-title: DS-Replication-Get-Changes-All Extended Right
-description: Control derecho de acceso que permite la replicación de datos de dominio secreto.
+title: DS-Replication-Get-Changes-All extendido a la derecha
+description: Derecho de acceso de control que permite la replicación de datos de dominio secretos.
 ms.assetid: fadc9fbd-ac8e-4fc6-832d-7041ea520e18
 ms.tgt_platform: multiple
 keywords:
-- DS-Replication-Get-Changes-todos los esquemas de AD de derecho extendido
+- DS-Replication-Get-Changes-All extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e0c80a82fdc28cc5675da9591c8039503e8b332
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 552fc61e40e39e6696d2acfd8d6ecc9d44c44aa345ffd888d1e30193a40e05cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532095"
 ---
-# <a name="ds-replication-get-changes-all-extended-right"></a>DS-Replication-Get-Changes-All Extended Right
+# <a name="ds-replication-get-changes-all-extended-right"></a>DS-Replication-Get-Changes-All extendido a la derecha
 
-Control derecho de acceso que permite la replicación de datos de dominio secreto.
+Derecho de acceso de control que permite la replicación de datos de dominio secretos.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
 | CN           | DS-Replication-Get-Changes-All       |
 | Display-Name | Replicación de todos los cambios de directorio    |
@@ -37,7 +37,7 @@ Control derecho de acceso que permite la replicación de datos de dominio secret
 ## <a name="implementations"></a>Implementaciones
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -49,19 +49,19 @@ Control derecho de acceso que permite la replicación de datos de dominio secret
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 62                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 62                                                                                                                               |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 62                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 62                                                                                                                               |
 
 
 
@@ -71,8 +71,8 @@ Control derecho de acceso que permite la replicación de datos de dominio secret
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 62                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 62                                                                                                                               |
 
 
 
@@ -82,8 +82,8 @@ Control derecho de acceso que permite la replicación de datos de dominio secret
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 62                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 62                                                                                                                               |
 
 
 
@@ -93,8 +93,8 @@ Control derecho de acceso que permite la replicación de datos de dominio secret
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 62                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 62                                                                                                                               |
 
 
 
@@ -104,8 +104,8 @@ Control derecho de acceso que permite la replicación de datos de dominio secret
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 62                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 62                                                                                                                               |
 
 
 

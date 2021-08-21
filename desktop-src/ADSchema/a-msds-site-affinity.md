@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-site-Affinity
-description: El atributo MS-DS-site-Affinity es utilizado por el administrador de cuentas de seguridad para la expansión de grupos durante la evaluación de tokens.
+title: Atributo ms-DS-Site-Affinity
+description: El administrador de cuentas de seguridad usa el atributo ms-DS-Site-Affinity para la expansión de grupos durante la evaluación del token.
 ms.assetid: c05df70a-adbb-48e0-bdcd-c1d83a2e43bd
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de afinidad de MS-DS-site
-- msDS-site-Affinity atributo AD Schema
+- Esquema de AD del atributo ms-DS-Site-Affinity
+- Esquema de AD del atributo msDS-Site-Affinity
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5dd3ed17b07c73d9e7a6a2d93d93463e1dea40fc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1a1d3fc359388f5303be808786a929840a409d29505949601b54bd9c7a8b18cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544585"
 ---
-# <a name="ms-ds-site-affinity-attribute"></a>atributo MS-DS-site-Affinity
+# <a name="ms-ds-site-affinity-attribute"></a>Atributo ms-DS-Site-Affinity
 
-El atributo **MS-DS-site-Affinity** es utilizado por el administrador de cuentas de seguridad para la expansión de grupos durante la evaluación de tokens.
+El administrador de cuentas de seguridad usa el **atributo ms-DS-Site-Affinity** para la expansión de grupos durante la evaluación del token.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
-| CN                | Afinidad de MS-DS-site                                                                     |
-| Nombre para mostrar de LDAP | msDS-site-Affinity                                                                      |
-| Tamaño              | BLOB binario de varios valores, donde cada valor es sizeof (GUID) + sizeof (entero grande \_ ). |
-| Actualizar privilegio  | \-                                                                                      |
+| CN                | ms-DS-Site-Affinity                                                                     |
+| Ldap-Display-Name | msDS-Site-Affinity                                                                      |
+| Size              | BLOB binario con varios valores, donde cada valor es sizeof(GUID) + sizeof(LARGE \_ INTEGER). |
+| Actualizar privilegios  | \-                                                                                      |
 | Frecuencia de actualización  | De forma predeterminada, una vez cada tres meses.                                                     |
 | Attribute-Id      | 1.2.840.113556.1.4.1443                                                                 |
-| System-ID-GUID    | c17c5602-bcb7-46f0-9656-6370ca884b72                                                    |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md)                                   |
+| System-Id-Guid    | c17c5602-bcb7-46f0-9656-6370ca884b72                                                    |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md)                                   |
 
 
 
@@ -54,18 +54,18 @@ El atributo **MS-DS-site-Affinity** es utilizado por el administrador de cuentas
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | True                              |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Verdadero                              |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ El atributo **MS-DS-site-Affinity** es utilizado por el administrador de cuentas
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | True                              |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Verdadero                              |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ El atributo **MS-DS-site-Affinity** es utilizado por el administrador de cuentas
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | True                              |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Verdadero                              |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ El atributo **MS-DS-site-Affinity** es utilizado por el administrador de cuentas
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | True                              |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Verdadero                              |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -138,13 +138,13 @@ El atributo **MS-DS-site-Affinity** es utilizado por el administrador de cuentas
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | True                              |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Verdadero                              |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |

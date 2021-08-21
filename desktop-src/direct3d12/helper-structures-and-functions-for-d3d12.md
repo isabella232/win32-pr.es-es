@@ -1,55 +1,37 @@
 ---
-title: Estructuras y funciones auxiliares de D3D12
-description: Estas estructuras auxiliares y funciones auxiliares se declaran en d3dx12. h.
+title: Estructuras y funciones auxiliares para Direct3D 12
+description: Estas estructuras auxiliares y funciones auxiliares se declaran en `d3dx12.h` .
 ms.assetid: 095958A9-345B-45AE-8363-B353534044B2
 keywords:
 - Funciones auxiliares
 - Estructuras auxiliares
-- d3dx12. h
+- d3dx12.h
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4d612d97610a749f32a6a23010b632c17d34461
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0b42bc9ae73f3537cc786a465feba596b3392401
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105720081"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812178"
 ---
-# <a name="helper-structures-and-functions-for-d3d12"></a>Estructuras y funciones auxiliares de D3D12
+# <a name="helper-structures-and-functions-for-direct3d-12"></a>Estructuras y funciones auxiliares para Direct3D 12
 
-Estas estructuras auxiliares y funciones auxiliares se declaran en **d3dx12. h**.
+Estas estructuras auxiliares y funciones auxiliares se declaran en `d3dx12.h` .
 
-Puede usar estas estructuras auxiliares para crear e inicializar estructuras de Direct3D. Estas estructuras auxiliares se comportan como clases de C++. Cada estructura de aplicación auxiliar tiene normalmente un constructor predeterminado, un constructor explícito, un destructor y un operador de conversión para la estructura D3D12 asociada. Cada estructura auxiliar tiene un prefijo "C" y está asociada a una estructura D3D12 que carece del prefijo "C". La mayoría de las estructuras auxiliares contienen métodos de miembro de inicialización, algunos contienen funciones de comparación.
+`d3dx12.h` está disponible por separado de los encabezados de Direct3D 12. Puede descargar desde `d3dx12.h` [la biblioteca auxiliar D3D12](https://github.com/microsoft/DirectX-Headers/blob/main/include/directx/d3dx12.h).
 
-**d3dx12. h** está disponible por separado de los encabezados de Direct3D 12. Puede descargar **d3dx12. h** desde [la biblioteca auxiliar de D3D12](https://github.com/Microsoft/DirectX-Graphics-Samples/tree/master/Libraries/D3DX12).
+Puede usar estas estructuras auxiliares para crear e inicializar estructuras de Direct3D. Estas estructuras auxiliares se comportan como clases de C++. Cada estructura auxiliar normalmente tiene un constructor predeterminado, un constructor explícito, un destructor y un operador de conversión para la estructura D3D12 asociada. Cada estructura auxiliar tiene un prefijo "C" y está asociada a una estructura D3D12 que carece del prefijo "C". La mayoría de las estructuras auxiliares contienen métodos de miembro de inicialización, algunos contienen funciones de comparación.
 
 ## <a name="in-this-section"></a>En esta sección
 
-
-
-| Tema                                                                     | Descripción                                                                                                              |
-|---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| [Interfaces auxiliares para D3D12](helper-interfaces-for-d3d12.md)<br/> | Estas interfaces auxiliares ayudan especialmente en el control de Subrecursos y se declaran en **d3dx12. h**. <br/>        |
-| [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)<br/> | Estas estructuras auxiliares ayudan a inicializar muchas de las estructuras de Direct3D 12 y se declaran en **d3dx12. h**.<br/> |
-| [Funciones auxiliares de D3D12](helper-functions-for-d3d12.md)<br/>   | Estas funciones auxiliares ayudan especialmente en el control de Subrecursos y se declaran en **d3dx12. h**. <br/>         |
-
-
-
- 
+| Tema | Descripción |
+|-|-|
+| [Interfaces auxiliares para D3D12](helper-interfaces-for-d3d12.md) | Estas interfaces auxiliares ayudan especialmente a controlar los subrecursos y se declaran en `d3dx12.h` .  |
+| [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md) | Estas estructuras auxiliares ayudan a inicializar muchas de las estructuras de Direct3D 12 y se declaran en `d3dx12.h` . |
+| [Funciones auxiliares de D3D12](helper-functions-for-d3d12.md) | Estas funciones auxiliares ayudan especialmente a controlar los subrecursos y se declaran en `d3dx12.h` .  |
 
 ## <a name="related-topics"></a>Temas relacionados
 
-<dl> <dt>
-
-[Referencia de Direct3D 12](direct3d-12-reference.md)
-</dt> </dl>
-
- 
-
- 
-
-
-
-
-
+* [Referencia de Direct3D 12](direct3d-12-reference.md)

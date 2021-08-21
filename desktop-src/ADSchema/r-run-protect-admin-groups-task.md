@@ -1,10 +1,10 @@
 ---
-title: Ejecutar-Protect-admin-Groups-Task Extended Right
-description: Controlan los derechos de acceso que autorizan las operaciones de modificación de rootDSE en un PDC FSMO para desencadenar la operación de protección AdminSDHolder.
+title: Derecho extendido Run-Protect-Admin-Groups-Task
+description: Controlar los derechos de acceso que autorizan las operaciones de modificación de rootDSE en un FSMO de PDC para desencadenar la operación de protección AdminSDHolder.
 ms.assetid: d6395d65-881b-4c60-9622-90f23b3cd09f
 ms.tgt_platform: multiple
 keywords:
-- Ejecutar-Protect-admin-Groups-Task extensión de AD de derecho extendido
+- Run-Protect-Admin-Groups-Task extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9835c0cf82699e5959a48199cf063bb73c6da537
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3a71970ea5ad88998f2243f06743e6fce50fdd35f3a678ab61c6f7fad0dce86a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531395"
 ---
-# <a name="run-protect-admin-groups-task-extended-right"></a>Ejecutar-Protect-admin-Groups-Task Extended Right
+# <a name="run-protect-admin-groups-task-extended-right"></a>Derecho extendido Run-Protect-Admin-Groups-Task
 
-Controlan los derechos de acceso que autorizan las operaciones de modificación de rootDSE en un PDC FSMO para desencadenar la operación de protección AdminSDHolder.
+Controlar los derechos de acceso que autorizan las operaciones de modificación de rootDSE en un FSMO de PDC para desencadenar la operación de protección AdminSDHolder.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | Ejecutar-Protect-admin-Groups-Task        |
-| Display-Name | Tarea ejecutar proteger grupos de administración        |
+| CN           | Run-Protect-Admin-Groups-Task        |
+| Display-Name | Ejecutar la tarea Proteger grupos de administradores        |
 | Rights-GUID  | 7726b9d5-a4b4-4288-a6b2-dce952e80a7f |
 
 
@@ -43,10 +43,10 @@ Controlan los derechos de acceso que autorizan las operaciones de modificación 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 78                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 78                                           |
 
 
 
@@ -56,8 +56,8 @@ Controlan los derechos de acceso que autorizan las operaciones de modificación 
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 78                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 78                                           |
 
 
 

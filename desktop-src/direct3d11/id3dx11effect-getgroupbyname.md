@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11Effect GetGroupByName (D3dx11effect. h)
+title: Método ID3DX11Effect GetGroupByName (D3dx11effect.h)
 description: Obtiene un grupo de efectos por nombre.
 ms.assetid: 14b4b484-848a-409c-9a99-207ab25b7566
 keywords:
 - Método GetGroupByName Direct3D 11
 - Método GetGroupByName Direct3D 11, interfaz ID3DX11Effect
-- Interfaz ID3DX11Effect Direct3D 11, método GetGroupByName
+- Interfaz ID3DX11Effect Direct3D 11 , método GetGroupByName
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1c2132dedb34fe71db30bf82b1c6d336f110a8f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 905fb9fb439dcf613e5abfee22f03bf968c81838c89af17d72e7f4a74d887c6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046603"
 ---
-# <a name="id3dx11effectgetgroupbyname-method"></a>ID3DX11Effect:: GetGroupByName (método)
+# <a name="id3dx11effectgetgroupbyname-method"></a>Método ID3DX11Effect::GetGroupByName
 
 Obtiene un grupo de efectos por nombre.
 
@@ -56,12 +56,12 @@ Nombre del grupo de efectos.
 
 Tipo: **[ **ID3DX11EffectGroup**](id3dx11effectgroup.md)\***
 
-Puntero a una interfaz [**ID3DX11EffectGroup**](id3dx11effectgroup.md) .
+Puntero a una [**interfaz ID3DX11EffectGroup.**](id3dx11effectgroup.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Puntero a una interfaz [**ID3DX11EffectGroup**](id3dx11effectgroup.md) .
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

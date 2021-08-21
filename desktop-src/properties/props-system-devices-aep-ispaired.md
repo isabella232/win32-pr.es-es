@@ -1,19 +1,19 @@
 ---
-description: Si el extremo de la Asociación de dispositivos se empareja con el sistema o no.
+description: Si el punto de conexión de asociación de dispositivos está emparejado con el sistema o no.
 ms.assetid: 7338cae2-5bc4-4643-9311-7845d5c08381
 title: System.Devices.Aep.IsPaired
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b86e40b46f36c8ad62fbf3f8fdfa079c7969d468
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95b31cda52776a74fa5fdec45339f9863baad9c263900355ba4823014e96f69d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938455"
 ---
 # <a name="systemdevicesaepispaired"></a>System.Devices.Aep.IsPaired
 
-Si el extremo de la Asociación de dispositivos se empareja con el sistema o no
+Si el punto de conexión de asociación de dispositivos está emparejado con el sistema o no
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

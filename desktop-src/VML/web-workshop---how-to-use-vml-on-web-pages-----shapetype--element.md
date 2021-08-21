@@ -1,55 +1,55 @@
 ---
-title: Usar el elemento TipoForma
-description: Usar el elemento TipoForma
+title: Usar el elemento Shapetype
+description: Usar el elemento Shapetype
 ms.assetid: ad9e5c00-fbee-4bec-b4cd-075cf5a4d8c7
 keywords:
-- Web Workshop, TipoForma (elemento)
-- diseñar páginas web, TipoForma (elemento)
-- Lenguaje de marcado de vectores (VML), elemento TipoForma
-- VML (Lenguaje de marcado de vectores), elemento TipoForma
-- Vector Graphics, TipoForma (elemento)
-- TipoForma (elemento)
-- Elementos VML, TipoForma
-- Formas VML, elemento TipoForma
+- Taller web, elemento shapetype
+- diseñar páginas web, elemento shapetype
+- Lenguaje de marcado de vectores (VML),elemento shapetype
+- VML (Lenguaje de marcado de vectores),elemento shapetype
+- vector graphics,shapetype element
+- elemento shapetype
+- Elementos VML,shapetype
+- VmL shapes,shapetype element
 - Lenguaje de marcado de vectores (VML), definir formas usadas con frecuencia
-- VML (Lenguaje de marcado de vectores), definir formas usadas con frecuencia
-- gráficos vectoriales, definir formas usadas con frecuencia
+- VML (Lenguaje de marcado de vectores), definición de formas usadas con frecuencia
+- gráficos vectoriales, definición de formas usadas con frecuencia
 - definir formas usadas con frecuencia
-- Formas VML, definir las usadas con frecuencia
+- Formas de VML, definición de uso frecuente
 - Lenguaje de marcado de vectores (VML), crear instancias de copias de formas
-- VML (Lenguaje de marcado de vectores), crear instancias de copias de formas
-- gráficos vectoriales, crear instancias de copias de formas
+- VML (Lenguaje de marcado de vectores), creación de instancias de copias de formas
+- gráficos vectoriales, creación de instancias de copias de formas
 - crear instancias de copias de formas
-- Formas VML, crear instancias
+- Formas de VML, creación de instancias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cfa7ec47dde492231e8bcd54f68e4637454613b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f6d815d9f5f911e1a34d558496881ae606819d328a501c635ff463a84f2926ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104488170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512659"
 ---
-# <a name="using-the-shapetype-element"></a>Usar el elemento TipoForma
+# <a name="using-the-shapetype-element"></a>Usar el elemento Shapetype
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-En este tema, se muestra cómo usar el `<shapetype>` elemento para definir sus propias formas usadas con frecuencia y, a continuación, crear una instancia de las formas del TipoForma, o crearlas.
+En este tema, se ilustrará cómo usar el elemento para definir sus propias formas usadas con frecuencia y, a continuación, crear instancias de formas a partir del `<shapetype>` tipo de forma.
 
-Si desea dibujar muchas formas que tienen las mismas propiedades o similares, sería tedioso si tuviera que escribir repetidamente los mismos atributos de propiedad para cada forma. VML proporciona el `<shapetype>` elemento para que pueda definir un prototipo de una forma. Después, puede usar el `<shape>` elemento para crear instancias de muchas copias de formas del mismo TipoForma.
+Si quisiera dibujar muchas formas que tengan las mismas propiedades o propiedades similares, sería tedioso si tuviera que escribir repetidamente los mismos atributos de propiedad para cada forma. VML proporciona el `<shapetype>` elemento para que pueda definir un prototipo de una forma. A continuación, puede usar el elemento para crear instancias de muchas `<shape>` copias de formas del mismo tipo de forma.
 
-Puede seguir los tres pasos para definir un TipoForma y, a continuación, crear una instancia de una forma desde la TipoForma:
+Puede seguir los tres pasos para definir un tipo de forma y, a continuación, crear una instancia de una forma a partir del tipo de forma:
 
-1.  Escriba un `<shapetype>` elemento y asígnele un nombre especificando el atributo id.
-2.  Describa el TipoForma mediante sus atributos o subelementos de propiedad.
-3.  Cree una instancia de una forma escribiendo un `<shape>` elemento y haga referencia al atributo de tipo de la forma en el atributo ID del TipoForma.
+1.  Escriba un `<shapetype>` elemento y asízcále un nombre especificando el atributo id.
+2.  Describa el tipo de forma mediante sus atributos de propiedad o sub-elementos.
+3.  Cree una instancia de una forma escribiendo un elemento y haga referencia al atributo type de la forma al atributo `<shape>` id del tipo de forma.
 
-Por ejemplo, escriba las líneas siguientes para crear un TipoForma denominado "alshape":
+Por ejemplo, escriba las líneas siguientes para crear un tipo de forma denominado "MyShape":
 
 
 ```HTML
@@ -59,7 +59,7 @@ Por ejemplo, escriba las líneas siguientes para crear un TipoForma denominado "
 
 
 
-A continuación, modifique el TipoForma estableciendo algunos atributos de propiedad, como `fillcolor="red" strokecolor="blue"` . O bien, puede usar subelementos dentro del TipoForma, como `<path>` , `<fill>` , `<stroke>` (hablaremos sobre esos subelementos en temas posteriores).
+A continuación, modifique el tipo de forma estableciendo algunos atributos de propiedad, como `fillcolor="red" strokecolor="blue"` . O bien, puede usar sub-elementos dentro del tipo de forma, como , , (hablaremos sobre esos `<path>` `<fill>` `<stroke>` sub-elementos en temas posteriores).
 
 
 ```HTML
@@ -69,7 +69,7 @@ A continuación, modifique el TipoForma estableciendo algunos atributos de propi
 
 
 
-A continuación, cree una instancia de una forma a partir de la sección TipoForma "conshape" especificando `type="#MyShape"` , tal y como se muestra en la siguiente representación de VML. Esta forma hereda todas las propiedades del TipoForma ", y se muestra en el cuadro contenedor con un tamaño de 100 a 80.
+A continuación, cree una instancia de una forma a partir del tipo de forma "MyShape" especificando , como se muestra `type="#MyShape"` en la siguiente representación de VML. Esta forma hereda todas las propiedades del tipo de forma "MyShape" y se muestra dentro de su cuadro de contenido con un tamaño de 100 por 80.
 
 
 ```HTML
@@ -78,7 +78,7 @@ A continuación, cree una instancia de una forma a partir de la sección TipoFor
 
 
 
-Puede crear una instancia de otra forma desde la sección TipoForma "conshape" especificando `type="#MyShape"` y sobrescribiendo algunas propiedades, como `fillcolor="maroon"` , como se muestra en la siguiente representación VML. Esta forma hereda todas las propiedades de la sección TipoForma "disshape" excepto la propiedad fillColor y se muestra en el cuadro contenedor con un tamaño de 70 a 90.
+Puede crear instancias de otra forma a partir del tipo de forma "MyShape" especificando y sobrescribiendo algunas propiedades, como , como se muestra en la siguiente representación `type="#MyShape"` `fillcolor="maroon"` de VML. Esta forma hereda todas las propiedades del tipo de forma "MyShape", excepto la propiedad fillcolor, y se muestra dentro de su cuadro de contenido con un tamaño de 70 por 90.
 
 
 ```HTML
@@ -88,9 +88,9 @@ style='width:70; height:90'/>
 
 
 
-Esta es la representación VML completa del ejemplo anterior:
+Esta es la representación completa de VML del ejemplo anterior:
 
-![\-1.gif tipo1 (477 bytes)](images/type1-1.gif)![\-2.gif tipo1 (471 bytes)](images/type1-2.gif)
+![type1 \-1.gif (477 bytes)](images/type1-1.gif)![type1 \-2.gif (471 bytes)](images/type1-2.gif)
 
 
 ```HTML
@@ -111,11 +111,11 @@ path="m10860,2187c10451,1746,9529,1018,9015,730,7865,152,6685,,5415,,4175,
 
 
 
-Como ha aprendido, cuando se crea una instancia de una forma a partir de un TipoForma, se heredan todos los atributos de propiedad del TipoForma. Puede sobrescribir algunos o todos los atributos heredados mediante la redefinición de los atributos dentro del `<shape>` elemento. Tenga en cuenta que la herencia es solo un nivel. Esto se debe a que solo un `<shape>` elemento puede hacer referencia a un `<shapetype>` elemento. Un `<shapetype>` elemento no puede hacer referencia A otro `<shapetype>` elemento.
+Como ha aprendido, cuando se crea una instancia de una forma a partir de un tipo de forma, hereda todos los atributos de propiedad del tipo de forma. Puede sobrescribir algunos o todos los atributos heredados mediante la redefinición de los atributos dentro del `<shape>` elemento . Tenga en cuenta que la herencia es solo un nivel. Esto se debe a que solo `<shape>` un elemento puede hacer referencia a un elemento `<shapetype>` . Un `<shapetype>` elemento no puede hacer referencia a otro `<shapetype>` elemento.
 
-Además, el TipoForma no pertenece a ningún grupo. Por lo tanto, el `<shapetype>` elemento puede aparecer por sí solo o dentro de un `<group>` elemento. Puede tener muchas formas dentro de grupos diferentes que hagan referencia al mismo TipoForma. Si aparece un TipoForma dentro de un grupo, una forma que vive en otro grupo puede seguir haciendo referencia a este TipoForma.
+Además, un tipo de forma no pertenece a ningún grupo. Por lo tanto, `<shapetype>` el elemento puede aparecer por sí mismo o dentro de un elemento `<group>` . Puede tener muchas formas dentro de grupos diferentes que hacen referencia al mismo tipo de forma. Si aparece un tipo de forma dentro de un grupo, una forma que se encuentra en otro grupo todavía puede hacer referencia a este tipo de forma.
 
-Por ejemplo, en la siguiente representación de VML, Rect1 y Rect2 están en GroupA y Rect3 está en GroupB. Se crean instancias de los tres rectángulos de la forma de TipoForma.
+Por ejemplo, en la siguiente representación de VML, Rect1 y Rect2 están en GroupA y Rect3 en GroupB. Se crea una instancia de los tres rectángulos a partir del tipo de forma MyShape.
 
 
 ```HTML
@@ -140,6 +140,6 @@ Por ejemplo, en la siguiente representación de VML, Rect1 y Rect2 están en Gro
 
 Para obtener más información sobre este elemento, vea la [especificación de VML](https://www.w3.org/TR/NOTE-VML#-toc416858387) .
 
- 
+ 
 
- 
+ 

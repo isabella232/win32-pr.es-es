@@ -1,17 +1,17 @@
 ---
 description: Se produce cuando se presiona una tecla mientras el control InkPicture tiene el foco.
 ms.assetid: adb61eff-a92c-40b0-940c-02e14cd34e5f
-title: Evento InkPicture. KeyPress (Msinkaut. h)
+title: Evento InkPicture.KeyPress (Msyecciónut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35f9ef48a0e117d6a3d4c29a9ca69aba3bf6e054
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7545b0de722ec9b48c66aa5d2236bf81eb576d87916c15e618508e537981a2cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119939015"
 ---
-# <a name="inkpicturekeypress-event"></a>Evento InkPicture. KeyPress
+# <a name="inkpicturekeypress-event"></a>Evento InkPicture.KeyPress
 
 Se produce cuando se presiona una tecla mientras el control [InkPicture](inkpicture-control-reference.md) tiene el foco.
 
@@ -33,7 +33,7 @@ void KeyPress(
 *KeyAscii* \[ in, out\]
 </dt> <dd>
 
-Valor ASCII de la tecla que se va a presionar.
+Valor ASCII de la tecla que se está pulsando.
 
 </dd> </dl>
 
@@ -41,9 +41,9 @@ Valor ASCII de la tecla que se va a presionar.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método de evento se define en la interfaz **\_ IInkPictureEvents** . La interfaz **\_ IInkPictureEvents** implementa la interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de DISPID \_ IPEKeyPress.
+Este método de evento se define en la **\_ interfaz IInkPictureEvents.** La **\_ interfaz IInkPictureEvents** implementa la [**interfaz IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de DISPID \_ IPEKeyPress.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,9 +51,9 @@ Este método de evento se define en la interfaz **\_ IInkPictureEvents** . La in
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

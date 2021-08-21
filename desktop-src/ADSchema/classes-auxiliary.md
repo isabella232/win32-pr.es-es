@@ -1,28 +1,28 @@
 ---
 title: Clases auxiliares
-description: A continuación se enumeran las clases auxiliares definidas por Active Directory.
+description: Estas son las clases auxiliares definidas por Active Directory.
 ms.assetid: ce981795-a76f-4043-852a-249c79dff7e9
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6c9e0c25476b2667d5acdfb962886b044973790
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e28515cc33f1af16f07ac46b11ddfb599e7ae46c818d329d968942a9aec7a9f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119533075"
 ---
 # <a name="auxiliary-classes"></a>Clases auxiliares
 
-A continuación se enumeran las clases auxiliares definidas por Active Directory.
+Estas son las clases auxiliares definidas por Active Directory.
 
 ## <a name="windows-2000-server"></a>Windows 2000 Server
 
 <dl>
 
 [**Destinatario de correo**](c-mailrecipient.md)  
-[**Sam-dominio**](c-samdomain.md)  
-[**Sam-dominio-base**](c-samdomainbase.md)  
+[**Sam-Domain**](c-samdomain.md)  
+[**Sam-Domain-Base**](c-samdomainbase.md)  
 [**Entidad de seguridad**](c-securityprincipal.md)  
 </dl>
 
@@ -31,21 +31,21 @@ A continuación se enumeran las clases auxiliares definidas por Active Directory
 <dl>
 
 [**domainRelatedObject**](c-domainrelatedobject.md)  
-[**Objeto dinámico**](c-dynamicobject.md)  
+[**Dynamic-Object**](c-dynamicobject.md)  
 [**Destinatario de correo**](c-mailrecipient.md)  
-[**Sam-dominio**](c-samdomain.md)  
-[**Sam-dominio-base**](c-samdomainbase.md)  
+[**Sam-Domain**](c-samdomain.md)  
+[**Sam-Domain-Base**](c-samdomainbase.md)  
 [**Entidad de seguridad**](c-securityprincipal.md)  
 [**simpleSecurityObject**](c-simplesecurityobject.md)  
 </dl>
 
-## <a name="active-directory-application-mode-adam"></a>Active Directory Application Mode (ADAM)
+## <a name="active-directory-application-mode-adam"></a>Active Directory modo de aplicación (ADAM)
 
 <dl>
 
-[**Objeto dinámico**](c-dynamicobject.md)  
-[**Objeto MS-DS-Bindable**](c-msds-bindableobject.md)  
-[**MS-DS-BIND-proxy**](c-msds-bindproxy.md)  
+[**Dynamic-Object**](c-dynamicobject.md)  
+[**ms-DS-Bindable-Object**](c-msds-bindableobject.md)  
+[**ms-DS-Bind-Proxy**](c-msds-bindproxy.md)  
 [**Entidad de seguridad**](c-securityprincipal.md)  
 </dl>
 
@@ -55,14 +55,14 @@ A continuación se enumeran las clases auxiliares definidas por Active Directory
 
 [**bootableDevice**](c-bootabledevice.md)  
 [**domainRelatedObject**](c-domainrelatedobject.md)  
-[**Objeto dinámico**](c-dynamicobject.md)  
+[**Dynamic-Object**](c-dynamicobject.md)  
 [**ieee802Device**](c-ieee802device.md)  
 [**ipHost**](c-iphost.md)  
 [**Destinatario de correo**](c-mailrecipient.md)  
 [**posixAccount**](c-posixaccount.md)  
 [**posixGroup**](c-posixgroup.md)  
-[**Sam-dominio**](c-samdomain.md)  
-[**Sam-dominio-base**](c-samdomainbase.md)  
+[**Sam-Domain**](c-samdomain.md)  
+[**Sam-Domain-Base**](c-samdomainbase.md)  
 [**Entidad de seguridad**](c-securityprincipal.md)  
 [**shadowAccount**](c-shadowaccount.md)  
 [**simpleSecurityObject**](c-simplesecurityobject.md)  
@@ -74,14 +74,14 @@ A continuación se enumeran las clases auxiliares definidas por Active Directory
 
 [**bootableDevice**](c-bootabledevice.md)  
 [**domainRelatedObject**](c-domainrelatedobject.md)  
-[**Objeto dinámico**](c-dynamicobject.md)  
+[**Dynamic-Object**](c-dynamicobject.md)  
 [**ieee802Device**](c-ieee802device.md)  
 [**ipHost**](c-iphost.md)  
 [**Destinatario de correo**](c-mailrecipient.md)  
 [**posixAccount**](c-posixaccount.md)  
 [**posixGroup**](c-posixgroup.md)  
-[**Sam-dominio**](c-samdomain.md)  
-[**Sam-dominio-base**](c-samdomainbase.md)  
+[**Sam-Domain**](c-samdomain.md)  
+[**Sam-Domain-Base**](c-samdomainbase.md)  
 [**Entidad de seguridad**](c-securityprincipal.md)  
 [**shadowAccount**](c-shadowaccount.md)  
 [**simpleSecurityObject**](c-simplesecurityobject.md)  
@@ -93,14 +93,14 @@ A continuación se enumeran las clases auxiliares definidas por Active Directory
 
 [**bootableDevice**](c-bootabledevice.md)  
 [**domainRelatedObject**](c-domainrelatedobject.md)  
-[**Objeto dinámico**](c-dynamicobject.md)  
+[**Dynamic-Object**](c-dynamicobject.md)  
 [**ieee802Device**](c-ieee802device.md)  
 [**ipHost**](c-iphost.md)  
 [**Destinatario de correo**](c-mailrecipient.md)  
 [**posixAccount**](c-posixaccount.md)  
 [**posixGroup**](c-posixgroup.md)  
-[**Sam-dominio**](c-samdomain.md)  
-[**Sam-dominio-base**](c-samdomainbase.md)  
+[**Sam-Domain**](c-samdomain.md)  
+[**Sam-Domain-Base**](c-samdomainbase.md)  
 [**Entidad de seguridad**](c-securityprincipal.md)  
 [**shadowAccount**](c-shadowaccount.md)  
 [**simpleSecurityObject**](c-simplesecurityobject.md)  
@@ -112,22 +112,22 @@ A continuación se enumeran las clases auxiliares definidas por Active Directory
 
 [**bootableDevice**](c-bootabledevice.md)  
 [**domainRelatedObject**](c-domainrelatedobject.md)  
-[**Objeto dinámico**](c-dynamicobject.md)  
+[**Dynamic-Object**](c-dynamicobject.md)  
 [**ieee802Device**](c-ieee802device.md)  
 [**ipHost**](c-iphost.md)  
 [**Destinatario de correo**](c-mailrecipient.md)  
 [**posixAccount**](c-posixaccount.md)  
 [**posixGroup**](c-posixgroup.md)  
-[**Sam-dominio**](c-samdomain.md)  
-[**Sam-dominio-base**](c-samdomainbase.md)  
+[**Sam-Domain**](c-samdomain.md)  
+[**Sam-Domain-Base**](c-samdomainbase.md)  
 [**Entidad de seguridad**](c-securityprincipal.md)  
 [**shadowAccount**](c-shadowaccount.md)  
 [**simpleSecurityObject**](c-simplesecurityobject.md)  
 </dl>
 
- 
+ 
 
- 
+ 
 
 
 

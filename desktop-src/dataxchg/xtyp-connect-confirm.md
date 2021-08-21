@@ -1,9 +1,9 @@
 ---
-title: XTYP_CONNECT_CONFIRM transacción (ddeml. h)
-description: Una función de devolución de llamada de servidor Intercambio dinámico de datos (DDE), DdeCallback, recibe la transacción de confirmación de XTYP \_ Connect \_ para confirmar que se ha establecido una conversación con un cliente y para proporcionar al servidor el identificador de conversación.
+title: XTYP_CONNECT_CONFIRM transacción (Ddeml.h)
+description: Una función de devolución de llamada de servidor datos dinámicos Exchange (DDE), DdeCallback, recibe la transacción CONFIRM de XTYP CONNECT para confirmar que se ha establecido una conversación con un cliente y para proporcionar al servidor el identificador de \_ \_ conversación.
 ms.assetid: 4db67539-9322-44d7-bf2b-749bd6cfcbb4
 keywords:
-- Intercambio de datos de transacciones XTYP_CONNECT_CONFIRM
+- XTYP_CONNECT_CONFIRM datos de transacción Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e880dfffc7f7825c99ab9e4e3bf980baa978b786
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8a0259540801a49bc631dc60e33979a8730b46bdfc06ac81142098e851b8a51a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119499094"
 ---
-# <a name="xtyp_connect_confirm-transaction"></a>XTYP \_ conectar \_ confirmar transacción
+# <a name="xtyp_connect_confirm-transaction"></a>Transacción XTYP \_ CONNECT \_ CONFIRM
 
-Una función de devolución de llamada de servidor Intercambio dinámico de datos (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe la transacción de **confirmación de XTYP \_ Connect \_** para confirmar que se ha establecido una conversación con un cliente y para proporcionar al servidor el identificador de conversación. El sistema envía esta transacción como resultado de una transacción [**XTYP \_ Connect**](xtyp-connect.md) o [**XTYP \_ WILDCONNECT**](xtyp-wildconnect.md) anterior.
+Una función datos dinámicos Exchange de devolución de llamada de servidor (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe la transacción **XTYP \_ CONNECT \_ CONFIRM** para confirmar que se ha establecido una conversación con un cliente y para proporcionar al servidor el identificador de conversación. El sistema envía esta transacción como resultado de una [**transacción XTYP \_ CONNECT**](xtyp-connect.md) o [**\_ XTYP WILDCONNECT**](xtyp-wildconnect.md) anterior.
 
 
 ```C++
@@ -48,7 +48,7 @@ El tipo de transacción.
 *uFmt* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
@@ -76,14 +76,14 @@ Identificador del nombre del servicio en el que se ha establecido la conversaci�
 *hdata* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *dwData1* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
@@ -94,21 +94,21 @@ Especifica si el cliente es la misma instancia de aplicación que el servidor. S
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta transacción se filtra si la aplicación de servidor especificó la marca **CBF \_ SKIP \_ Connect \_ Confirmations** en la función [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) .
+Esta transacción se filtra si la aplicación de servidor especificó la marca **CBF \_ SKIP CONNECT \_ \_ CONFIRMS** en la [**función DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 
-Un servidor no puede bloquear este tipo de transacción; se omite el código de retorno del **\_ bloque CBR** .
+Un servidor no puede bloquear este tipo de transacción; Se omite el código de retorno **\_ CBR BLOCK.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>Ddeml. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ddeml.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -128,10 +128,10 @@ Un servidor no puede bloquear este tipo de transacción; se omite el código de 
 [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Biblioteca de administración de Intercambio dinámico de datos](dynamic-data-exchange-management-library.md)
+[datos dinámicos Exchange management library](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

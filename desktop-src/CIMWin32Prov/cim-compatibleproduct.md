@@ -1,8 +1,8 @@
 ---
-description: La \_ clase CIM CompatibleProduct representa una asociación entre productos que indica si dos productos a los que se hace referencia son interoperables, por ejemplo, si se pueden instalar juntos o si puede ser el contenedor físico del otro, etc.
+description: La clase CIM CompatibleProduct representa una asociación entre productos que indica si dos productos a los que se hace referencia son interoperables, como si se pueden instalar juntos, o si uno puede ser el contenedor físico para el otro, y así \_ sucesivamente.
 ms.assetid: d822b052-981a-4a66-8404-b4f5f4681502
 ms.tgt_platform: multiple
-title: CIM_CompatibleProduct (clase)
+title: CIM_CompatibleProduct clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,19 +17,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 94969b1f2e45a27e402e132a0b9593de413a653b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5d0d4721d8554723bb9ab808ff55884bb896f59e6050103cf127cc4df77109f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080879"
 ---
-# <a name="cim_compatibleproduct-class"></a>\_Clase CompatibleProduct de CIM
+# <a name="cim_compatibleproduct-class"></a>Cim \_ CompatibleProduct (clase)
 
-La clase **CIM \_ CompatibleProduct** representa una asociación entre productos que indica si dos productos a los que se hace referencia son interoperables, por ejemplo, si se pueden instalar juntos o si puede ser el contenedor físico del otro, etc.
+La **clase CIM \_ CompatibleProduct** representa una asociación entre productos que indica si dos productos a los que se hace referencia son interoperables, como si se pueden instalar juntos, o si uno puede ser el contenedor físico para el otro, y así sucesivamente.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -49,13 +49,13 @@ class CIM_CompatibleProduct
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ CompatibleProduct** tiene estos tipos de miembros:
+La **clase CIM \_ CompatibleProduct** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ CompatibleProduct** tiene estas propiedades.
+La **clase \_ CIM CompatibleProduct** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -68,14 +68,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena de forma libre que define el modo en que los dos productos a los que se hace referencia son interoperables, compatibles y si existen limitaciones de compatibilidad.
+Cadena de forma libre que define cómo los dos productos a los que se hace referencia son interoperables, compatibles y si existen limitaciones de compatibilidad.
 
 </dd> <dt>
 
 **CompatibleProduct**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ Product**
+Tipo de datos: **Producto \_ CIM**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -88,21 +88,21 @@ Referencia al producto compatible.
 **Producto**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **CIM \_ Product**
+Tipo de datos: **Producto \_ CIM**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Referencia al producto para el que se definen las ofertas compatibles.
+Referencia al producto para el que se definen ofertas compatibles.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -112,8 +112,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

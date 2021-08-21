@@ -1,6 +1,6 @@
 ---
-title: Métodos de la propiedad IADsFileService (iAds. h)
-description: Los métodos de propiedad de la interfaz IADsFileService obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea métodos de propiedad de interfaz.
+title: Métodos de propiedad IADsFileService (Iads.h)
+description: Los métodos de propiedad de la interfaz IADsFileService obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea Métodos de propiedad de interfaz.
 ms.assetid: 1455df61-9218-450b-b956-1cf127364f24
 ms.tgt_platform: multiple
 keywords:
@@ -21,16 +21,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e1f3a46b37522bbdce6e99b969811e2909c8ecc9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cd12e1f9c52606f76cf6c0828767819e318874c323b22f5e1a91b70d71965465
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082449"
 ---
 # <a name="iadsfileservice-property-methods"></a>Métodos de propiedad IADsFileService
 
-Los métodos de propiedad de la interfaz [**IADsFileService**](/windows/desktop/api/Iads/nn-iads-iadsfileservice) obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de propiedad [**de la interfaz IADsFileService**](/windows/desktop/api/Iads/nn-iads-iadsfileservice) obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -39,11 +39,11 @@ Los métodos de propiedad de la interfaz [**IADsFileService**](/windows/desktop/
 **Descripción**
 </dt> <dd> <dl>
 
-La descripción del servicio de archivos.
+Descripción del servicio de archivos.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -67,14 +67,14 @@ HRESULT put_Description(
 **MaxUserCount**
 </dt> <dd> <dl>
 
-Número máximo de usuarios permitidos en el servicio en cualquier momento.
+Número máximo de usuarios permitido en el servicio en cualquier momento.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -94,13 +94,13 @@ HRESULT put_MaxUserCount(
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Debe pasar por el servicio archivo para tener acceso a recursos compartidos de archivos, sesiones y recursos de un equipo.
+Debe pasar por el servicio de archivos para acceder a recursos compartidos de archivos, sesiones y recursos de un equipo.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se escribe una descripción de y se comprueba el límite de usuario del servicio archivo.
+En el ejemplo de código siguiente se escribe una descripción para y se comprueba el límite de usuario del servicio de archivos.
 
 
 ```VB
@@ -127,7 +127,7 @@ Cleanup:
 
 
 
-En el ejemplo de código siguiente se escribe una descripción de y se comprueba el límite de usuario en un objeto de servicio de archivos.
+En el ejemplo de código siguiente se escribe una descripción para y se comprueba el límite de usuario en un objeto de servicio de archivos.
 
 
 ```C++
@@ -169,13 +169,13 @@ Cleanup:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>       |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsFileService se define como A89D1900-31CA-11cf-A98A-00AA006BC149<br/>      |
+| IID<br/>                      | IID \_ IADsFileService se define como A89D1900-31CA-11CF-A98A-00AA006BC149<br/>      |
 
 
 

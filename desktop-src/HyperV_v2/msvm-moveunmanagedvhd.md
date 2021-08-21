@@ -1,7 +1,7 @@
 ---
 description: Mueve una unidad de disco duro virtual desde el origen a la ruta de acceso de destino.
 ms.assetid: f51f7bf3-585a-442d-b84d-51d633c38dea
-title: Msvm_MoveUnmanagedVhd (clase)
+title: Msvm_MoveUnmanagedVhd clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: e98139b747f4b32265e27bc84ca240f496dea715
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e631b95c9961262df288b76cf83f953589780c2feb294e940314d08975bcfd57
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521125"
 ---
-# <a name="msvm_moveunmanagedvhd-class"></a>MSVM \_ MoveUnmanagedVhd (clase)
+# <a name="msvm_moveunmanagedvhd-class"></a>Clase Msvm \_ MoveUnmanagedVhd
 
 Mueve una unidad de disco duro virtual desde el origen a la ruta de acceso de destino.
 
@@ -41,13 +41,13 @@ class Msvm_MoveUnmanagedVhd : CIM_ManagedElement
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ MoveUnmanagedVhd** tiene estos tipos de miembros:
+La **clase \_ MoveUnmanagedVhd de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ MoveUnmanagedVhd** tiene estas propiedades.
+La **clase Msvm \_ MoveUnmanagedVhd** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -73,7 +73,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Ruta de acceso de origen del disco duro virtual que se va a trasladar.
+Ruta de acceso de origen de la unidad de disco duro virtual que se moverá.
 
 </dd> </dl>
 
@@ -81,12 +81,12 @@ Ruta de acceso de origen del disco duro virtual que se va a trasladar.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -95,7 +95,7 @@ Ruta de acceso de origen del disco duro virtual que se va a trasladar.
 
 <dl> <dt>
 
-[**ManagedElement de CIM \_**](cim-managedelement.md)
+[**CIM \_ ManagedElement**](cim-managedelement.md)
 </dt> </dl>
 
  

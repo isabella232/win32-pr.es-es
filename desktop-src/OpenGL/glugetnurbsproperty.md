@@ -1,9 +1,9 @@
 ---
-title: función gluGetNurbsProperty (GLU. h)
-description: La función gluGetNurbsProperty obtiene una propiedad no uniforme B-spline racional (NURBS).
+title: Función gluGetNurbsProperty (Glu.h)
+description: La función gluGetNurbsProperty obtiene una propiedad NON-Uniform Rational B-Spline (SPLINEBS).
 ms.assetid: 7dbc75a0-d04e-4794-b3dd-a602addf9dfa
 keywords:
-- gluGetNurbsProperty (función) OpenGL
+- Función GluGetNurbsProperty OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 583da688e3495ebc2eb9d6f71972658c6426469c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a68e91fbdaafc2a1857a95e059125bf62347777edfbcc764868ceea0a8fce578
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119519595"
 ---
-# <a name="glugetnurbsproperty-function"></a>gluGetNurbsProperty función)
+# <a name="glugetnurbsproperty-function"></a>Función gluGetNurbsProperty
 
-La función **gluGetNurbsProperty** obtiene una propiedad no uniforme B-spline racional ([NURBS](using-nurbs-curves-and-surfaces.md)).
+La **función gluGetNurbsProperty** obtiene una propiedad Non-Uniform Rational B-Spline [(SPLINEBS).](using-nurbs-curves-and-surfaces.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,14 +45,14 @@ void WINAPI gluGetNurbsProperty(
 *nobj* 
 </dt> <dd>
 
-El objeto NURBS (creado con [**gluNewNurbsRenderer**](glunewnurbsrenderer.md)).
+El objeto RGBBS (creado [**con gluNewNurbsRenderer).**](glunewnurbsrenderer.md)
 
 </dd> <dt>
 
 *property* 
 </dt> <dd>
 
-Propiedad cuyo valor se va a recuperar. Los valores siguientes son válidos: GLU, la tolerancia de muestreo, el \_ modo de presentación de Glu, la selección de Glu, la \_ matriz de \_ \_ \_ \_ \_ carga automática de Glu, la \_ \_ tolerancia paramétrica de Glu, el \_ \_ \_ método de muestreo Glu, el paso de Glu \_ U \_ y Glu \_ V \_ .
+Propiedad cuyo valor se va a recuperar. Los valores siguientes son válidos: GLU \_ SAMPLING \_ TOLERANCE, GLU \_ DISPLAY \_ MODE, GLU \_ CULLING, GLU \_ AUTO LOAD \_ \_ MATRIX, GLU \_ PARAMETRIC \_ TOLERANCE, GLU SAMPLING METHOD, GLU U \_ STEP \_ \_ \_ \_ \_ y GLU V STEP.
 
 </dd> <dt>
 
@@ -67,9 +67,9 @@ Puntero a la ubicación en la que se escribe el valor de la propiedad con nombre
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use **gluGetNurbsProperty** para recuperar las propiedades almacenadas en un objeto NURBS. Estas propiedades afectan a la manera en que se representan las curvas y curvas de NURBS. Para obtener información acerca de las propiedades de NURBS, vea [**gluNurbsProperty**](glunurbsproperty.md).
+Use **gluGetNurbsProperty para** recuperar las propiedades almacenadas en un objeto RECORDSETBS. Estas propiedades afectan a la forma en que se representan las curvas y superficies DE LABS. Para obtener información sobre las propiedades de LABS, [**vea gluNurbsProperty**](glunurbsproperty.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Use **gluGetNurbsProperty** para recuperar las propiedades almacenadas en un obj
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

@@ -6,12 +6,12 @@ keywords:
 - Http de la propiedad Tiempos de espera del servidor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26fcd1376e8b7394a3a037bbbe00495466e32609
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bfd0495950a83ba2e675fc5b89efd33d3c53c90e0c21ad306d5845b6bafae324
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119562475"
 ---
 # <a name="server-timeouts-property"></a>Propiedad Tiempos de espera del servidor
 
@@ -31,12 +31,12 @@ En la tabla siguiente se enumeran los límites de tiempo de espera de conexión 
 
 
 
-| Temporizador           | Definición                                                                                                        | Valor predeterminado de LA API del servidor HTTP | Configurable como TODA LA API del servidor HTTP | Configurable como específico de la aplicación |
+| Timer           | Definición                                                                                                        | Valor predeterminado de LA API del servidor HTTP | Configurable como TODA LA API del servidor HTTP | Configurable como específico de la aplicación |
 |-----------------|-------------------------------------------------------------------------------------------------------------------|-------------------------|--------------------------------------|--------------------------------------|
-| IdleConnection  | La conexión expiró mientras estaba inactiva.                                                                        | 120 segundos                 | Yes                                  | Limitado                              |
-| HeaderWait      | La conexión expiró mientras se esperaba que la API del servidor HTTP analizara el encabezado.                                 | 120 segundos                 | Yes                                  | Limitado                              |
-| EntityBody      | La conexión expiró mientras esperaba a que llegara el cuerpo de la entidad de solicitud.                                       | 120 segundos                 | No                                   | Sí                                  |
-| DrainEntityBody | La conexión expiró mientras se esperaba que la API del servidor HTTP purgara el cuerpo de la entidad en una Keep-Alive conexión. | 120 segundos                 | No                                   | Sí                                  |
+| IdleConnection  | La conexión expiró mientras estaba inactiva.                                                                        | 120 segundos                 | Sí                                  | Limitado                              |
+| HeaderWait      | La conexión expiró mientras se esperaba que la API del servidor HTTP analizara el encabezado.                                 | 120 segundos                 | Sí                                  | Limitado                              |
+| EntityBody      | La conexión expiró mientras se esperaba que llegara el cuerpo de la entidad de solicitud.                                       | 120 segundos                 | No                                   | Sí                                  |
+| DrainEntityBody | La conexión expiró mientras se esperaba que la API del servidor HTTP purgara el cuerpo de la entidad en Keep-Alive conexión. | 120 segundos                 | No                                   | Sí                                  |
 | MinSendRate     | La conexión expiró porque la velocidad de envío de respuesta era más lenta que el valor predeterminado de 150 bytes/s.               | 150 segundos                 | No                                   | Sí                                  |
 | RequestQueue    | La conexión expiró porque la solicitud permanecía en la cola de solicitudes antes de que la aplicación la seleccionara.     | 120 bytes/s           | No                                   | Sí                                  |
 

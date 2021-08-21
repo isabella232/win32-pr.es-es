@@ -1,35 +1,35 @@
 ---
-description: El servicio de detección de lenguaje ELS se llama Microsoft Detección de idioma. Este servicio usa tecnología Microsoft-patentada para permitir que las aplicaciones detecten el idioma en el que se escribe el texto específico.
+description: El servicio de detección de idioma ELS se denomina Microsoft Detección de idioma. Este servicio usa tecnología de microsoft para permitir que las aplicaciones detecten el idioma en el que se escribe texto específico.
 ms.assetid: 11438e0b-d841-44d0-b68f-77868be4c92f
 title: Microsoft Detección de idioma
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0b395f6a1a320b66f00d996510b7cafc28b8e64
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 472c4c4df0484287ef8bebcfdb2f395212b1985b282b7391d6c047dfb98d2ed8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119788385"
 ---
 # <a name="microsoft-language-detection"></a>Microsoft Detección de idioma
 
-El servicio de detección de lenguaje ELS se llama Microsoft Detección de idioma. Este servicio usa tecnología Microsoft-patentada para permitir que las aplicaciones detecten el idioma en el que se escribe el texto específico.
+El servicio de detección de idioma ELS se denomina Microsoft Detección de idioma. Este servicio usa tecnología de microsoft para permitir que las aplicaciones detecten el idioma en el que se escribe texto específico.
 
 ## <a name="input-to-microsoft-language-detection"></a>Entrada a Microsoft Detección de idioma
 
-La entrada del servicio Microsoft Detección de idioma es UTF-16 (formato normalizado C). El servicio tiene que determinar el idioma de este texto.
+La entrada al servicio microsoft Detección de idioma es texto UTF-16 (formato normalizado C). El servicio tiene que determinar el idioma de este texto.
 
 ## <a name="output-of-microsoft-language-detection"></a>Salida de Microsoft Detección de idioma
 
-El servicio Microsoft Detección de idioma recupera los lenguajes de lista de cadenas UTF-16 con formato del registro y terminadas en null, representados por sus nombres, separados por delimitadores de caracteres null. La lista se ordena por relevancia. Para la mayoría de los idiomas, se usan nombres neutros. Sin embargo, para algunos, por ejemplo, Sr-Cyrl, Sr-Latn, ZH-hant y ZH-Hans, se usan nombres completos.
+El servicio microsoft Detección de idioma recupera una cadena UTF-16 terminada en doble null con formato de registro, representada por sus nombres, separada por delimitadores de caracteres NULL. La lista se ordena por relevancia. En la mayoría de los idiomas, se usan nombres neutros. Sin embargo, para algunos, por ejemplo, sr-Cyrl, sr-Latn, zh-Hant y zh-Hans, se usan nombres completos.
 
-## <a name="microsoft-language-detection-operation"></a>Operación de Microsoft Detección de idioma
+## <a name="microsoft-language-detection-operation"></a>Operación de Detección de idioma Microsoft
 
-El servicio Microsoft Detección de idioma comprueba el script Unicode del texto proporcionado por la aplicación. Segmenta el texto en función de los scripts que detecta y, a continuación, determina el idioma en el que se escribe cada segmento. Si un script indica un solo idioma, se garantiza que el idioma está presente en la lista de resultados de los idiomas. El servicio utiliza un algoritmo patentado para determinar la relevancia de cada idioma admitido.
+El servicio Detección de idioma microsoft comprueba el script Unicode del texto proporcionado por la aplicación. Segmenta el texto en función de los scripts que detecta y, a continuación, determina el idioma en el que se escribe cada segmento. Si un script indica un idioma único, se garantiza que el idioma esté presente en la lista de salida de idiomas. El servicio usa un algoritmo de compresión para determinar la relevancia de cada idioma admitido.
 
-## <a name="microsoft-language-detection-guid"></a>GUID de Microsoft Detección de idioma
+## <a name="microsoft-language-detection-guid"></a>GUID Detección de idioma Microsoft
 
-El GUID del servicio Microsoft Detección de idioma se declara en Elssrvc. h, tal como se muestra en el código siguiente.
+El GUID del servicio de Detección de idioma Microsoft se declara en Elssrvc.h, como se muestra en el código siguiente.
 
 
 ```C++

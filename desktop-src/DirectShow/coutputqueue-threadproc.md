@@ -1,7 +1,7 @@
 ---
 description: El método ThreadProc recupera ejemplos de la cola y los entrega al pin de entrada.
 ms.assetid: e5da0a12-c722-4d08-bf84-5e3aa60b64a9
-title: Método COutputQueue. ThreadProc (Outputq. h)
+title: Método COutputQueue.ThreadProc (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 75e2e6bd7fa05480603f30e68eeaf0487918ae7f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d37158d71a74726e9bf27e76ffedb076f99b7380ffcca4edfa95928767eedbf4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073639"
 ---
-# <a name="coutputqueuethreadproc-method"></a>COutputQueue. ThreadProc (método)
+# <a name="coutputqueuethreadproc-method"></a>Método COutputQueue.ThreadProc
 
 El `ThreadProc` método recupera ejemplos de la cola y los entrega al pin de entrada.
 
@@ -44,16 +44,16 @@ Este método no tiene parámetros.
 
 Devuelve cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**COutputQueue:: InitialThreadProc**](coutputqueue-initialthreadproc.md) llama a este método, que implementa el bucle de subproceso principal. Dentro del bucle, el método realiza los pasos siguientes:
+El [**método COutputQueue::InitialThreadProc**](coutputqueue-initialthreadproc.md) llama a este método, que implementa el bucle de subproceso principal. Dentro del bucle , el método realiza los pasos siguientes:
 
 1.  Recupera un ejemplo para la cola.
-2.  Si el ejemplo es un mensaje de control, el subproceso ejecuta la acción de control. De lo contrario, coloca el ejemplo en la matriz [**COutputQueue:: m \_ ppSamples**](coutputqueue-m-ppsamples.md) .
-3.  Cuando la matriz está llena (o si [**COutputQueue:: m \_ BBatchExact**](coutputqueue-m-bbatchexact.md) es **false**), el subproceso llama al método [**IMemInputPin:: ReceiveMultiple**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receivemultiple) para proporcionar los ejemplos.
-4.  Si no hay ningún ejemplo en cola, el subproceso espera en el semáforo [**COutputQueue:: m \_ hSem**](coutputqueue-m-hsem.md) .
+2.  Si el ejemplo es un mensaje de control, el subproceso ejecuta la acción de control. De lo contrario, coloca el ejemplo en la [**matriz COutputQueue::m \_ ppSamples.**](coutputqueue-m-ppsamples.md)
+3.  Cuando la matriz está llena (o si [**COutputQueue::m \_ bBatchExact**](coutputqueue-m-bbatchexact.md) es **FALSE),** el subproceso llama al método [**IMemInputPin::ReceiveMultiple**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receivemultiple) para entregar los ejemplos.
+4.  Si no hay ejemplos en cola, el subproceso espera en el semáforo [**COutputQueue::m \_ hSem.**](coutputqueue-m-hsem.md)
 
-El subproceso finaliza cuando la variable miembro [**COutputQueue:: m \_ BTerminate**](coutputqueue-m-bterminate.md) es **true**.
+El subproceso finaliza cuando la variable miembro [**COutputQueue::m \_ bTerminate**](coutputqueue-m-bterminate.md) se convierte en **TRUE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ El subproceso finaliza cuando la variable miembro [**COutputQueue:: m \_ BTermin
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -70,7 +70,7 @@ El subproceso finaliza cuando la variable miembro [**COutputQueue:: m \_ BTermin
 
 <dl> <dt>
 
-[**Clase COutputQueue**](coutputqueue.md)
+[**COutputQueue (clase)**](coutputqueue.md)
 </dt> </dl>
 
  

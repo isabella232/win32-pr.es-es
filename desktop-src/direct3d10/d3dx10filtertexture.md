@@ -1,7 +1,7 @@
 ---
-description: Genera una cadena de mipmap mediante un filtro de textura determinado.
+description: Genera la cadena mipmap mediante un filtro de textura determinado.
 ms.assetid: 19e651dd-dc34-405b-8769-00d91c097a1f
-title: Función D3DX10FilterTexture (D3DX10Tex. h)
+title: Función D3DX10FilterTexture (D3DX10Tex.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Tex.h
-ms.openlocfilehash: e2f500bcd7f7465ca1c24f1adaab3a77dd5cb7b0
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 225caf2c9b08a498e77723dbb7ab43c8fd4850262c1f58f5ae37a3157e953edd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119497645"
 ---
-# <a name="d3dx10filtertexture-function"></a>D3DX10FilterTexture función)
+# <a name="d3dx10filtertexture-function"></a>Función D3DX10FilterTexture
 
-Genera una cadena de mipmap mediante un filtro de textura determinado.
+Genera la cadena mipmap mediante un filtro de textura determinado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,18 +53,18 @@ Objeto de textura que se va a filtrar. Vea [**ID3D10Resource**](/windows/desktop
 *SrcLevel* 
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Nivel de mipmap cuyos datos se utilizan para generar el resto de la cadena de mipmap.
+Nivel de mapa mip cuyos datos se usan para generar el resto de la cadena mipmap.
 
 </dd> <dt>
 
 *MipFilter* 
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Marcas que controlan cómo se filtra cada miplevel (o el \_ valor predeterminado de D3DX10 para el \_ cuadro de filtro D3DX10 \_ ). Vea [**D3DX10 \_ Filter \_ Flag**](d3dx10-filter-flag.md).
+Marcas que controlan cómo se filtra cada miplevel (o D3DX10 \_ DEFAULT para D3DX10 \_ FILTER \_ BOX). Vea [**D3DX10 \_ FILTER \_ FLAG**](d3dx10-filter-flag.md).
 
 </dd> </dl>
 
@@ -72,7 +72,7 @@ Marcas que controlan cómo se filtra cada miplevel (o el \_ valor predeterminado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que aparecen en los [códigos de retorno de Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ El valor devuelto es uno de los valores que aparecen en los [códigos de retorno
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10Tex. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10Tex.h</dt> </dl> |
 
 
 

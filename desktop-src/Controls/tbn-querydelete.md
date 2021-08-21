@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TBN_QUERYDELETE (commctrl. h)
-description: Notifica a la ventana primaria de la barra de herramientas si se puede eliminar un botón de una barra de herramientas mientras el usuario está personalizando la barra de herramientas. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: TBN_QUERYDELETE de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de la barra de herramientas si un botón se puede eliminar de una barra de herramientas mientras el usuario está personalizando la barra de herramientas. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: fa6a8fe4-a9a3-4c59-9237-d28bd34d664c
 keywords:
-- TBN_QUERYDELETE controles de código de notificación de Windows
+- TBN_QUERYDELETE código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a416545ecf7ad8562c1327160d683a109eccb3b5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a01d1322ce8461c5cdb53fc76cfc220bbb5d292dedbe589d8b6ada5a48756d55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104533747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077889"
 ---
-# <a name="tbn_querydelete-notification-code"></a>Código de notificación de QUERYDELETE de TBN \_
+# <a name="tbn_querydelete-notification-code"></a>Código de notificación QUERYDELETE de TBN \_
 
-Notifica a la ventana primaria de la barra de herramientas si se puede eliminar un botón de una barra de herramientas mientras el usuario está personalizando la barra de herramientas. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de la barra de herramientas si un botón se puede eliminar de una barra de herramientas mientras el usuario está personalizando la barra de herramientas. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,23 +41,23 @@ TBN_QUERYDELETE
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMTOOLBAR**](/windows/win32/api/commctrl/ns-commctrl-nmtoolbara) . El miembro **iItem** contiene el índice basado en cero del botón que se va a eliminar.
+Puntero a una [**estructura NMTOOLBAR.**](/windows/win32/api/commctrl/ns-commctrl-nmtoolbara) El miembro **iItem** contiene el índice basado en cero del botón que se va a eliminar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** para permitir que el botón se elimine o **false** para impedir que se elimine el botón.
+Devuelve **TRUE** para permitir que se elimine el botón o **FALSE** para evitar que se elimine el botón.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

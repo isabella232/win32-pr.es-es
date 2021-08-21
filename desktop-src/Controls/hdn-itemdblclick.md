@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de HDN_ITEMDBLCLICK (commctrl. h)
-description: Notifica a la ventana primaria de un control de encabezado que el usuario hizo doble clic en el control. Este código de notificación se envía en forma de mensaje de \_ notificación de WM. Solo los controles de encabezado que se establecen en el estilo de los botones de HDS \_ envían este código de notificación.
+title: HDN_ITEMDBLCLICK de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de un control de encabezado que el usuario ha hecho doble clic en el control. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY. Solo los controles de encabezado establecidos en el estilo HDS \_ BUTTONS envían este código de notificación.
 ms.assetid: 72bb00b9-226f-4409-b788-b623868f78b6
 keywords:
-- HDN_ITEMDBLCLICK controles de código de notificación de Windows
+- HDN_ITEMDBLCLICK código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e61117303ecc478a998da8799867988dbc1ca08
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7117ceb8d17447eed8003f7da3dab70a17252c750bfb3885cd3f235a70b7bb53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104274547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544624"
 ---
-# <a name="hdn_itemdblclick-notification-code"></a>Código de notificación de ITEMDBLCLICK de HDN \_
+# <a name="hdn_itemdblclick-notification-code"></a>Código de notificación \_ ITEMDBLCLICK de HDN
 
-Notifica a la ventana primaria de un control de encabezado que el usuario hizo doble clic en el control. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) . Solo los controles de encabezado que se establecen en el estilo de los [**\_ botones de HDS**](header-control-styles.md) envían este código de notificación.
+Notifica a la ventana primaria de un control de encabezado que el usuario ha hecho doble clic en el control. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md) Solo los controles de encabezado establecidos en el estilo [**HDS \_ BUTTONS**](header-control-styles.md) envían este código de notificación.
 
 
 ```C++
@@ -55,11 +55,11 @@ No de devuelve ningún valor.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **HDN \_ ITEMDBLCLICKW** (Unicode) y **HDN \_ ITEMDBLCLICKA** (ANSI)<br/>         |
 
 

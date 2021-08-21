@@ -1,7 +1,7 @@
 ---
-description: Representa los datos de configuración de la característica de asignación de equipo de puerto.
+description: Representa los datos de configuración de la característica de asignación de equipos de puertos.
 ms.assetid: 7c9a392d-c95e-4b0d-8201-e50adabd21b2
-title: Msvm_EthernetSwitchPortTeamMappingSettingData (clase)
+title: Msvm_EthernetSwitchPortTeamMappingSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3f0d7385499dcdf6e84c361de03950a4e78be0a9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c65926c01c2ec4d2b333ba4800a355eeb42cf63d905c6c339a81b9b9ed97a891
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105670023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531345"
 ---
-# <a name="msvm_ethernetswitchportteammappingsettingdata-class"></a>MSVM \_ EthernetSwitchPortTeamMappingSettingData (clase)
+# <a name="msvm_ethernetswitchportteammappingsettingdata-class"></a>Clase Msvm \_ EthernetSwitchPortTeamMappingSettingData
 
-Representa los datos de configuración de la característica de asignación de equipo de puerto.
+Representa los datos de configuración de la característica de asignación de equipos de puertos.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -41,13 +41,13 @@ class Msvm_EthernetSwitchPortTeamMappingSettingData : Msvm_EthernetSwitchPortFea
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ EthernetSwitchPortTeamMappingSettingData** tiene estos tipos de miembros:
+La **clase Msvm \_ EthernetSwitchPortTeamMappingSettingData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ EthernetSwitchPortTeamMappingSettingData** tiene estas propiedades.
+La **clase Msvm \_ EthernetSwitchPortTeamMappingSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -57,13 +57,13 @@ La clase **MSVM \_ EthernetSwitchPortTeamMappingSettingData** tiene estas propie
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (127), **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-IDENTIFICADOR de dispositivo del adaptador físico asignado preferido.
+Id. de dispositivo del adaptador físico asignado preferido.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ IDENTIFICADOR de dispositivo del adaptador físico asignado preferido.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (127), **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -87,12 +87,12 @@ Nombre del adaptador físico asignado preferido.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -101,7 +101,7 @@ Nombre del adaptador físico asignado preferido.
 
 <dl> <dt>
 
-[**MSVM \_ EthernetSwitchPortFeatureSettingData**](msvm-ethernetswitchportfeaturesettingdata.md)
+[**Msvm \_ EthernetSwitchPortFeatureSettingData**](msvm-ethernetswitchportfeaturesettingdata.md)
 </dt> </dl>
 
  

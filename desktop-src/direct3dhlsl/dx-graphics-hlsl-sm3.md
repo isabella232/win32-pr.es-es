@@ -1,6 +1,6 @@
 ---
 title: Modelo de sombreador 3
-description: El modelo de sombreador 3 agregó capacidades adicionales al sombreador modelo 2.
+description: Shader Model 3 agregó funcionalidades adicionales al modelo de sombreador 2.
 ms.assetid: bd09f86e-946f-4281-bc48-1db5cd32b2ae
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9c53b8252f617c6ee3b95512a5d930a93f646479
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.openlocfilehash: ed2d64ccfb06fc0fe50e5bd0075732c1fd9cbb70ca1e05bda5afd24cd5c5f98f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "104421506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789545"
 ---
-# <a name="shader-model-3-hlsl-reference"></a>Shader Model 3 (referencia de HLSL)
+# <a name="shader-model-3-hlsl-reference"></a>Shader Model 3 (referencia HLSL)
 
-El modelo de sombreador 3 agregó capacidades adicionales al [sombreador modelo 2](dx-graphics-hlsl-sm2.md).
+Shader Model 3 agregó funcionalidades adicionales al modelo [de sombreador 2.](dx-graphics-hlsl-sm2.md)
 
 
 
@@ -35,27 +35,27 @@ El modelo de sombreador 3 agregó capacidades adicionales al [sombreador modelo 
 <tr class="even">
 <td>Conjunto de instrucciones</td>
 <td><ul>
-<li><a href="dx-graphics-hlsl-intrinsic-functions.md"><strong>Funciones de HLSL</strong></a></li>
-<li>Instrucciones de ensamblado (vea <a href="dx9-graphics-reference-asm-ps-instructions-ps-3-0.md">instrucciones de ps_3_0</a>, <a href="dx9-graphics-reference-asm-vs-instructions-vs-3-0.md">instrucciones-vs_3_0</a>)</li>
+<li><a href="dx-graphics-hlsl-intrinsic-functions.md"><strong>Funciones HLSL</strong></a></li>
+<li>Instrucciones de ensamblado <a href="dx9-graphics-reference-asm-ps-instructions-ps-3-0.md">(consulte instrucciones ps_3_0</a>, <a href="dx9-graphics-reference-asm-vs-instructions-vs-3-0.md">instrucciones - vs_3_0</a>)</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Conjunto de registros</td>
+<td>Conjunto de registro</td>
 <td><ul>
-<li>Registros del sombreador de píxeles (consulte <a href="dx9-graphics-reference-asm-ps-registers-ps-3-0.md">registros de ps_3_0</a>)</li>
-<li>Registros del sombreador de vértices (consulte <a href="dx9-graphics-reference-asm-vs-registers-vs-3-0.md">registros-vs_3_0</a>)</li>
+<li>Registros del sombreador de píxeles <a href="dx9-graphics-reference-asm-ps-registers-ps-3-0.md">(consulte ps_3_0 registros)</a></li>
+<li>Registros del sombreador de vértices (consulte <a href="dx9-graphics-reference-asm-vs-registers-vs-3-0.md">Registros - vs_3_0</a>)</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Sombreador de píxeles máximo</td>
-<td>512 como mínimo y hasta el número de ranuras de D3DCAPS9. MaxPixelShader30InstructionSlots (vea <a href="/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dpshadercaps2_0"><strong>D3DPSHADERCAPS2_0</strong></a>).</td>
+<td>Máximo de sombreador de píxeles</td>
+<td>512 como mínimo y hasta el número de ranuras en D3DCAPS9. MaxPixelShader30InstructionSlots (vea <a href="/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dpshadercaps2_0"><strong>D3DPSHADERCAPS2_0</strong></a>).</td>
 </tr>
 <tr class="odd">
-<td>Sombreador de vértices máximo</td>
-<td>512 como mínimo y hasta el número de ranuras de D3DCAPS9. MaxVertexShader30InstructionSlots (vea <a href="/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcaps9"><strong>D3DCAPS9</strong></a>).</td>
+<td>Máximo del sombreador de vértices</td>
+<td>512 como mínimo y hasta el número de ranuras en D3DCAPS9. MaxVertexShader30InstructionSlots (vea <a href="/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dcaps9"><strong>D3DCAPS9).</strong></a></td>
 </tr>
 <tr class="even">
-<td>Perfiles del sombreador</td>
+<td>Perfiles de sombreador</td>
 <td>ps_3_0, vs_3_0</td>
 </tr>
 </tbody>
@@ -63,12 +63,12 @@ El modelo de sombreador 3 agregó capacidades adicionales al [sombreador modelo 
 
 
 
- 
+ 
 
-Para obtener más información sobre los sombreadores de modelo 3, vea:
+Para más información sobre los sombreadores del modelo 3, consulte:
 
--   [Sombreador de píxeles 3,0](dx9-graphics-reference-asm-ps-3-0.md)
--   [Sombreador de vértices 3,0](dx9-graphics-reference-asm-vs-3-0.md)
+-   [Sombreador de píxeles 3.0](dx9-graphics-reference-asm-ps-3-0.md)
+-   [Sombreador de vértices 3.0](dx9-graphics-reference-asm-vs-3-0.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -77,6 +77,6 @@ Para obtener más información sobre los sombreadores de modelo 3, vea:
 [Modelos de sombreador frente a perfiles de sombreador](dx-graphics-hlsl-models.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

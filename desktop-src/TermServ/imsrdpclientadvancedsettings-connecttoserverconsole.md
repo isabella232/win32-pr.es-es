@@ -1,26 +1,26 @@
 ---
-title: Propiedad ConnectToServerConsole de IMsRdpClientAdvancedSettings
-description: Esta propiedad no es compatible. Las llamadas a ConnectToServerConsole siempre devuelven S \_ false.
+title: Propiedad IMsRdpClientAdvancedSettings ConnectToServerConsole
+description: Esta propiedad no es compatible. Las llamadas a ConnectToServerConsole siempre devuelven S \_ FALSE.
 ms.assetid: 58f79085-4364-408f-8bf1-97a82ad68f4b
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad ConnectToServerConsole
-- Propiedad ConnectToServerConsole Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad ConnectToServerConsole
-- Propiedad ConnectToServerConsole Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad ConnectToServerConsole
-- Propiedad ConnectToServerConsole Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad ConnectToServerConsole
-- Propiedad ConnectToServerConsole Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad ConnectToServerConsole
-- Propiedad ConnectToServerConsole Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad ConnectToServerConsole
-- Propiedad ConnectToServerConsole Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad ConnectToServerConsole
-- Propiedad ConnectToServerConsole Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad ConnectToServerConsole
-- Propiedad ConnectToServerConsole Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad ConnectToServerConsole
+- Propiedad ConnectToServerConsole Servicios de Escritorio remoto
+- Propiedad ConnectToServerConsole Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad ConnectToServerConsole
+- Propiedad ConnectToServerConsole Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad ConnectToServerConsole
+- Propiedad ConnectToServerConsole Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad ConnectToServerConsole
+- Propiedad ConnectToServerConsole Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad ConnectToServerConsole
+- Propiedad ConnectToServerConsole Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad ConnectToServerConsole
+- Propiedad ConnectToServerConsole Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad ConnectToServerConsole
+- Propiedad ConnectToServerConsole Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad ConnectToServerConsole
+- Propiedad ConnectToServerConsole Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad ConnectToServerConsole
 topic_type:
 - apiref
 api_name:
@@ -54,22 +54,22 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18e3385b25a9dbe3e77085ae011b85e9be21b224
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83c6b935c34dda3f8a676d025bc1995a30e1bbb3f11dd4db3c055f6e28437ba3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119515294"
 ---
-# <a name="imsrdpclientadvancedsettingsconnecttoserverconsole-property"></a>IMsRdpClientAdvancedSettings:: ConnectToServerConsole (propiedad)
+# <a name="imsrdpclientadvancedsettingsconnecttoserverconsole-property"></a>Propiedad IMsRdpClientAdvancedSettings::ConnectToServerConsole
 
-Esta propiedad no es compatible. Las llamadas a **ConnectToServerConsole** siempre devuelven **S \_ false**.
+Esta propiedad no es compatible. Las llamadas **a ConnectToServerConsole** siempre **devuelven S \_ FALSE.**
 
-Use la propiedad [**ConnectToAdministerServer**](imsrdpclientadvancedsettings6-connecttoadministerserver.md) para conectarse a la sesión que se usa con fines administrativos.
+Use la [**propiedad ConnectToAdminadminserver**](imsrdpclientadvancedsettings6-connecttoadministerserver.md) para conectarse a la sesión que se usa con fines administrativos.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -86,15 +86,15 @@ HRESULT get_ConnectToServerConsole(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establezca este parámetro en **Variant \_ false**. **Variante \_ TRUE** no se admite.
+Establezca este parámetro en **VARIANT \_ FALSE.** **VARIANT \_ No** se admite TRUE.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

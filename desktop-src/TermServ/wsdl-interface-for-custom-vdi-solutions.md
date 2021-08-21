@@ -1,10 +1,10 @@
 ---
-title: Interfaz WSDL para soluciones VDI personalizadas
+title: Interfaz WSDL para soluciones de VDI personalizadas
 description: Los desarrolladores pueden crear servicios web personalizados que administren soluciones de infraestructura de escritorio virtual (VDI).
 ms.assetid: ae2dad51-be37-4311-a7c3-e99b2f41bed1
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de Servicios de Escritorio remoto, interfaz WSDL para VDI personalizada
+- Servicios de Escritorio remoto Servicios de Escritorio remoto , interfaz WSDL para VDI personalizada
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 52c51c3348f41f4cd3fad990a2cc7ef94a865173
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bc90f574edcf306b2141a54ccc3b34c79814e1dd5c705690af1b16103b1b8c05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513865"
 ---
-# <a name="wsdl-interface-for-custom-vdi-solutions"></a>Interfaz WSDL para soluciones VDI personalizadas
+# <a name="wsdl-interface-for-custom-vdi-solutions"></a>Interfaz WSDL para soluciones de VDI personalizadas
 
 Los desarrolladores pueden crear servicios web personalizados que administren soluciones de infraestructura de escritorio virtual (VDI).
 
-A partir de Windows Server 2008 R2, los equipos cliente pueden comunicarse con los servicios web que realizan la administración de máquinas virtuales mediante el complemento de filtro de VMMWebServerClient.dll. Puede implementar un servicio web personalizado que funcione con este complemento de filtro. Para comunicarse con el complemento de filtro, el servicio Web debe implementar los métodos definidos en el siguiente archivo WSDL (lenguaje de definición de servicios web).
+A partir de Windows Server 2008 R2, los equipos cliente pueden comunicarse con los servicios web que realizan la administración de máquinas virtuales mediante el complemento VMMWebServerClient.dll filtro. Puede implementar un servicio web personalizado que funcione con este complemento de filtro. Para comunicarse con el complemento de filtro, el servicio web debe implementar los métodos definidos en el siguiente archivo WSDL (Lenguaje de definición de servicios Web).
 
 
 ```XML
@@ -290,7 +290,7 @@ A partir de Windows Server 2008 R2, los equipos cliente pueden comunicarse con l
 
 
 
-Este archivo WSDL define los siguientes métodos:
+Este archivo WSDL define los métodos siguientes:
 
 -   [GetVM](#getvm)
 -   [JobUpdated](#jobupdated)
@@ -300,9 +300,9 @@ Este archivo WSDL define los siguientes métodos:
 
 ## <a name="getvm"></a>GetVM
 
-El complemento de filtro llama a este método para obtener información sobre una máquina virtual especificada. Debe devolver el estado de la máquina virtual, el nombre de host, el tipo de host y el GUID.
+El complemento de filtro llama a este método para obtener información sobre una máquina virtual especificada. Debe devolver el estado, el nombre de host, el tipo de host y el GUID de la máquina virtual.
 
-El complemento de filtro pasa el siguiente elemento al método.
+El complemento de filtro pasa el siguiente elemento al método .
 
 
 ```XML
@@ -318,7 +318,7 @@ El complemento de filtro pasa el siguiente elemento al método.
 
 
 
-El servicio Web debe devolver el elemento siguiente al complemento de filtro.
+El servicio web debe devolver el siguiente elemento al complemento de filtro.
 
 
 ```XML
@@ -335,9 +335,9 @@ El servicio Web debe devolver el elemento siguiente al complemento de filtro.
 
 ## <a name="jobupdated"></a>JobUpdated
 
-El servicio Web llama a este método para notificar al complemento de filtro que se realizaron cambios en un trabajo existente. Cuando implemente este método, devuelva el valor **\_ correcto** si la función se ejecuta correctamente. Si se produce un error, devuelve un valor **HRESULT** que indica el error. Para obtener una lista de los códigos de error comunes, vea [Valores HRESULT comunes](/windows/desktop/SecCrypto/common-hresult-values) .
+El servicio web llama a este método para notificar al complemento de filtro que se realizaron cambios en un trabajo existente. Cuando implemente este método, devuelva **S \_ OK** si la función se realiza correctamente. Si se produce un error, devuelve **un valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values (Valores HRESULT comunes).](/windows/desktop/SecCrypto/common-hresult-values)
 
-El servicio Web pasa el siguiente elemento al complemento de filtro.
+El servicio web pasa el siguiente elemento al complemento de filtro.
 
 
 ```XML
@@ -354,9 +354,9 @@ El servicio Web pasa el siguiente elemento al complemento de filtro.
 
 ## <a name="placevm"></a>PlaceVM
 
-El complemento de filtro llama a este método para migrar una máquina virtual de una biblioteca a un equipo host. El método debe generar un trabajo y devolver un identificador de trabajo único al complemento de filtro con fines de seguimiento. Una vez completado el procesamiento, el servicio Web debe llamar a JobUpdated.
+El complemento de filtro llama a este método para migrar una máquina virtual de una biblioteca a un equipo host. El método debe generar un trabajo y devolver un identificador de trabajo único al complemento de filtro con fines de seguimiento. Una vez completado el procesamiento, el servicio web debe llamar a JobUpdated.
 
-El complemento de filtro pasa el siguiente elemento al método.
+El complemento de filtro pasa el siguiente elemento al método .
 
 
 ```XML
@@ -372,7 +372,7 @@ El complemento de filtro pasa el siguiente elemento al método.
 
 
 
-El servicio Web debe devolver el elemento siguiente al complemento de filtro.
+El servicio web debe devolver el siguiente elemento al complemento de filtro.
 
 
 ```XML
@@ -389,9 +389,9 @@ El servicio Web debe devolver el elemento siguiente al complemento de filtro.
 
 ## <a name="setlocale"></a>SetLocale
 
-El complemento de filtro llama a este método para especificar la configuración regional que se va a usar para las cadenas de error.
+El complemento de filtro llama a este método para especificar la configuración regional que se usará para las cadenas de error.
 
-El complemento de filtro pasa el siguiente elemento al método.
+El complemento de filtro pasa el siguiente elemento al método .
 
 
 ```XML
@@ -406,7 +406,7 @@ El complemento de filtro pasa el siguiente elemento al método.
 
 
 
-El servicio Web debe devolver el elemento siguiente al complemento de filtro.
+El servicio web debe devolver el siguiente elemento al complemento de filtro.
 
 
 ```XML
@@ -423,9 +423,9 @@ El servicio Web debe devolver el elemento siguiente al complemento de filtro.
 
 ## <a name="startvm"></a>StartVM
 
-El complemento de filtro llama a este método para iniciar la máquina virtual en el equipo host actual. Si no se puede iniciar la máquina virtual en el equipo host actual, este método debe migrar la máquina virtual al mejor host posible y, a continuación, iniciarla. El método debe generar un trabajo y devolver un identificador de trabajo único al complemento de filtro con fines de seguimiento. Una vez completado el procesamiento, el servicio Web debe llamar a JobUpdated.
+El complemento de filtro llama a este método para iniciar la máquina virtual en el equipo host actual. Si la máquina virtual no se puede iniciar en el equipo host actual, este método debe migrar la máquina virtual al mejor host posible e iniciarla. El método debe generar un trabajo y devolver un identificador de trabajo único al complemento de filtro con fines de seguimiento. Una vez completado el procesamiento, el servicio web debe llamar a JobUpdated.
 
-El complemento de filtro pasa el siguiente elemento al método.
+El complemento de filtro pasa el siguiente elemento al método .
 
 
 ```XML
@@ -441,7 +441,7 @@ El complemento de filtro pasa el siguiente elemento al método.
 
 
 
-El servicio Web debe devolver el elemento siguiente al complemento de filtro.
+El servicio web debe devolver el siguiente elemento al complemento de filtro.
 
 
 ```XML
@@ -456,6 +456,6 @@ El servicio Web debe devolver el elemento siguiente al complemento de filtro.
 
 
 
- 
+ 
 
- 
+ 
