@@ -13,7 +13,7 @@ ms.locfileid: "119058226"
 ---
 # <a name="tool-help-functions"></a>Funciones de ayuda de herramientas
 
-Las funciones siguientes forman parte de la biblioteca de ayuda de herramientas.
+Las siguientes funciones forman parte de la biblioteca de ayuda de herramientas.
 
 
 
@@ -25,11 +25,11 @@ Las funciones siguientes forman parte de la biblioteca de ayuda de herramientas.
 | [**Heap32ListNext**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32listnext)                           | Recupera información sobre el siguiente montón asignado por un proceso.                                  |
 | [**Heap32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-heap32next)                                   | Recupera información sobre el siguiente bloque de un montón asignado por un proceso.                       |
 | [**Module32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-module32first)                             | Recupera información sobre el primer módulo asociado a un proceso.                                          |
-| [**Module32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-module32next)                               | Recupera información sobre el siguiente módulo asociado a un proceso o subproceso.                                 |
+| [**Module32Siguiente**](/windows/desktop/api/TlHelp32/nf-tlhelp32-module32next)                               | Recupera información sobre el siguiente módulo asociado a un proceso o subproceso.                                 |
 | [**Process32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-process32first)                           | Recupera información sobre el primer proceso encontrado en una instantánea del sistema.                                  |
-| [**Process32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-process32next)                             | Recupera información sobre el siguiente proceso registrado en una instantánea del sistema.                                      |
+| [**Process32Siguiente**](/windows/desktop/api/TlHelp32/nf-tlhelp32-process32next)                             | Recupera información sobre el siguiente proceso registrado en una instantánea del sistema.                                      |
 | [**Thread32First**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32first)                             | Recupera información sobre el primer subproceso de cualquier proceso encontrado en una instantánea del sistema.                    |
-| [**Thread32Next**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32next)                               | Recupera información sobre el siguiente subproceso de cualquier proceso encontrado en la instantánea de memoria del sistema.            |
+| [**Thread32Siguiente**](/windows/desktop/api/TlHelp32/nf-tlhelp32-thread32next)                               | Recupera información sobre el siguiente subproceso de cualquier proceso encontrado en la instantánea de memoria del sistema.            |
 | [**Toolhelp32ReadProcessMemory**](/windows/desktop/api/TlHelp32/nf-tlhelp32-toolhelp32readprocessmemory) | Copia la memoria asignada a otro proceso en un búfer proporcionado por la aplicación.                                  |
 
 

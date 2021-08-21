@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119078049"
 ---
-# <a name="tbm_setpos-message"></a>Mensaje TBM \_ SETPOS
+# <a name="tbm_setpos-message"></a>Mensaje \_ SETPOS de TBM
 
 Establece la posición lógica actual del control deslizante en una barra de seguimiento.
 
@@ -32,7 +32,7 @@ Establece la posición lógica actual del control deslizante en una barra de seg
 *wParam* 
 </dt> <dd>
 
-Volver a dibujar la marca. Si este parámetro es **TRUE,** el mensaje vuelve a dibujar el control con el control deslizante en la posición dada por *lParam*. Si este parámetro es **FALSE,** el mensaje no vuelve a dibujar el control deslizante en la nueva posición. Tenga en cuenta que el mensaje establece el valor de la posición del control deslizante (tal como lo devuelve el mensaje [**\_ GETPOS de TBM)**](tbm-getpos.md) independientemente del *parámetro wParam.*
+Vuelva a dibujar la marca. Si este parámetro es **TRUE**, el mensaje vuelve a dibujar el control con el control deslizante en la posición dada por *lParam*. Si este parámetro es **FALSE,** el mensaje no vuelve a dibujar el control deslizante en la nueva posición. Tenga en cuenta que el mensaje establece el valor de la posición del control deslizante (tal como lo devuelve el [**mensaje \_ GETPOS de TBM)**](tbm-getpos.md) independientemente del *parámetro wParam.*
 
 </dd> <dt>
 

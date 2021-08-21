@@ -15,7 +15,7 @@ ms.locfileid: "119059843"
 ---
 # <a name="task-scheduler-glossary"></a>Programador de tareas glosario
 
-En esta sección se proporciona un glosario de términos técnicos usados en la Programador de tareas documentación.
+En esta sección se proporciona un glosario de términos técnicos usados en la documentación Programador de tareas datos.
 
 A B C D [E](e.md) F G H [I](i.md) J K L M N O [P](p.md) Q R [S](s.md) [T](t.md) U V [W](w.md) X Y Z
 

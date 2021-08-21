@@ -4,12 +4,12 @@ ms.assetid: f45214a9-64a8-468d-8224-83aca8586268
 title: System.Software.DateLastUsed
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96ab75011a26da1617892634b3d208404ee8ad43
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8f79f1e05dad2ac16060fd8354dfa13fb144a1d445980b7a794c1488398e31b8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774505"
 ---
 # <a name="systemsoftwaredatelastused"></a>System.Software.DateLastUsed
 

@@ -1,9 +1,9 @@
 ---
 title: BALANCESLIDER
-description: Este es un control deslizante predefinido con los siguientes valores predeterminados. | BALANCESLIDER
+description: Se trata de un control SLIDER predefinido con los siguientes valores predeterminados. | BALANCESLIDER
 ms.assetid: 89f027bf-1c31-4bd5-bb87-ebfd62b02def
 keywords:
-- BALANCESLIDER Windows Media Player
+- BalanceSLIDER Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0de083f0b34b32f9f837791719a6fedec3e4b2ec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5294a1139ffe3884c38b741faf84aae652e72146c4fb81ca79079494bfc4af71
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119573475"
 ---
 # <a name="balanceslider"></a>BALANCESLIDER
 
-Este es un **control deslizante** predefinido con los siguientes valores predeterminados.
+Se trata de un **control SLIDER** predefinido con los siguientes valores predeterminados.
 
 ``` syntax
 toolTip="Balance"
@@ -32,17 +32,17 @@ value="wmpprop:player.settings.balance"
 value_onchange="jscript:player.settings.balance=value;"
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esto crea un control **deslizante** que establece el equilibrio de audio. La información sobre herramientas está localizada. Todas las propiedades de este **control deslizante** se pueden invalidar si se especifican de forma explícita.
+Esto crea un control **SLIDER** que establece el equilibrio de audio. La información sobre herramientas está localizada. Todas las propiedades de **este CONTROL DESLIZANTE** se pueden invalidar si se especifican explícitamente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|----------------------------------------------|
-| Versión<br/> | Windows Media Player 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media 7.0 o posterior<br/> |
 
 
 
@@ -50,7 +50,7 @@ Esto crea un control **deslizante** que establece el equilibrio de audio. La inf
 
 <dl> <dt>
 
-[**Elemento SLIDEr**](slider-element.md)
+[**Elemento SLIDER**](slider-element.md)
 </dt> </dl>
 
  

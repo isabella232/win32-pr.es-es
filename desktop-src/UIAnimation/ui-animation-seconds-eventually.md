@@ -27,7 +27,7 @@ Indica que Windows animación puede retrasar el inicio programado de un guión g
 
 | Constante o valor                                                                                                                                                                                                                                                                  | Descripción                       |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------|
-| <span id="UI_ANIMATION_SECONDS_EVENTUALLY"></span><span id="ui_animation_seconds_eventually"></span><dl> <dt>**Interfaz de usuario \_ SEGUNDOS \_ DE \_ ANIMACIÓN FINALMENTE**</dt> <dt>-1,0</dt> </dl> | SEGUNDOS DE \_ ANIMACIÓN DE LA INTERFAZ DE \_ USUARIO<br/> |
+| <span id="UI_ANIMATION_SECONDS_EVENTUALLY"></span><span id="ui_animation_seconds_eventually"></span><dl> <dt>**Interfaz de usuario \_ SEGUNDOS \_ DE ANIMACIÓN CON EL \_ TIEMPO**</dt> <dt>-1,0</dt> </dl> | SEGUNDOS DE \_ ANIMACIÓN DE LA INTERFAZ DE \_ USUARIO<br/> |
 
 
 
@@ -35,7 +35,7 @@ Indica que Windows animación puede retrasar el inicio programado de un guión g
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8, Windows 7 y Actualización de plataforma solo para Windows 7 \[ aplicaciones de escritorio\]<br/>    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                  |
@@ -44,7 +44,7 @@ Indica que Windows animación puede retrasar el inicio programado de un guión g
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

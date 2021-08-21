@@ -1,73 +1,73 @@
 ---
 title: UI Automation Specification y Community Promise
-description: La especificación de automatización de la interfaz de usuario proporciona información sobre los marcos de accesibilidad de Microsoft, incluidos Microsoft Active Accessibility y Microsoft UI Automation.
+description: La especificación Automatización de la interfaz de usuario proporciona información sobre los marcos de accesibilidad de Microsoft, incluidos Microsoft Active Accessibility y Microsoft Automatización de la interfaz de usuario.
 ms.assetid: 5fab2d7a-0b1c-4119-b7f4-afdf86db74e7
 keywords:
-- Automatización de la interfaz de usuario, especificaciones
-- Automatización de la interfaz de usuario, compromiso de la comunidad
-- Especificaciones para la automatización de la interfaz de usuario
-- promesa de la comunidad para la automatización de la interfaz de usuario
-- Automatización de la interfaz de usuario, acerca de
+- Automatización de la interfaz de usuario,especificaciones
+- Automatización de la interfaz de usuario, promesa de la comunidad
+- Especificaciones de Automatización de la interfaz de usuario
+- promesa de la comunidad para Automatización de la interfaz de usuario
+- Automatización de la interfaz de usuario,about
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c1d369493fae6bd82f882dc9251df7185be7b862
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ed9a71b5946f7e0b38241a1d7ef7ced9832203bfd4f0637032903f4dad948607
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119570495"
 ---
 # <a name="ui-automation-specification-and-community-promise"></a>UI Automation Specification y Community Promise
 
-La especificación de automatización de la interfaz de usuario proporciona información sobre los marcos de accesibilidad de Microsoft, incluidos Microsoft Active Accessibility y Microsoft UI Automation. Se describen los componentes principales de cada marco, se proporcionan consideraciones de diseño y ejemplos, y se describen los requisitos para la implementación. Para obtener más información, consulte [UI Automation Specification](ui-automation-specification.md).
+La especificación Automatización de la interfaz de usuario proporciona información sobre los marcos de accesibilidad de Microsoft, incluidos Microsoft Active Accessibility y Microsoft Automatización de la interfaz de usuario. Se describen los componentes principales de cada marco, se proporcionan ejemplos y consideraciones de diseño y se describen los requisitos de implementación. Para obtener más información, [vea Automatización de la interfaz de usuario especificación](ui-automation-specification.md).
 
-La promesa de la comunidad de automatización de la interfaz de usuario permite a cualquier usuario implementar libremente la especificación de UI Automation sin necesidad de firmar ningún contrato con Microsoft. Además, no es necesario hacer ninguna mención de, ni de ninguna referencia a, Microsoft. Para obtener más información, vea [UI Automation Community Promise](uiauto-specandcommunitypromise.md).
+La Automatización de la interfaz de usuario Community Promise permite a cualquiera implementar libremente la especificación de Automatización de la interfaz de usuario sin necesidad de firmar ningún contrato con Microsoft. Además, no es necesario hacer ninguna mención o referencia a Microsoft. Para obtener más información, [vea Automatización de la interfaz de usuario Community Promise](uiauto-specandcommunitypromise.md).
 
-## <a name="ui-automation-specification"></a>Especificación de UI Automation
+## <a name="ui-automation-specification"></a>Automatización de la interfaz de usuario especificación
 
-La especificación de automatización de la interfaz de usuario proporciona información sobre los marcos de accesibilidad de Microsoft, incluidos Active Accessibility, automatización de la interfaz de usuario y UI Automation Express. Se describen los componentes principales de cada marco, se proporcionan consideraciones de diseño y ejemplos, y se describen los requisitos para la implementación.
+La Automatización de la interfaz de usuario proporciona información sobre los marcos de accesibilidad de Microsoft, incluidos Active Accessibility, Automatización de la interfaz de usuario y Automatización de la interfaz de usuario Express. Se describen los componentes principales de cada marco, se proporcionan ejemplos y consideraciones de diseño y se describen los requisitos de implementación.
 
-### <a name="ui-automation-specification-copyright-license"></a>Licencia de copyright de especificación de UI Automation
+### <a name="ui-automation-specification-copyright-license"></a>Automatización de la interfaz de usuario licencia de copyright de especificación de datos
 
-La siguiente licencia de copyright se aplica a la especificación de automatización de la interfaz de usuario y debe incluirse en las copias que se realicen de la especificación de automatización de la interfaz de usuario. La especificación de automatización de la interfaz de usuario actual está disponible en el centro de descarga de Microsoft.
+La siguiente licencia de copyright se aplica a Automatización de la interfaz de usuario Specification y debe incluirse en las copias que se realizan de Automatización de la interfaz de usuario Specification. La especificación Automatización de la interfaz de usuario actual está disponible en el Centro de descarga de Microsoft.
 
 ### <a name="legal-notice"></a>Aviso legal
 
-Por el presente documento se concede permiso para copiar, mostrar y distribuir el contenido de este documento (la "especificación"), en cualquier medio y sin cánones ni regalías, siempre que incluya el siguiente aviso en todas las copias de la especificación, o partes de ella, que realice:
+Se concede permiso para copiar, mostrar y distribuir el contenido de este documento (la "Especificación"), en cualquier medio para cualquier propósito sin cuota ni canon, siempre que incluya el siguiente aviso en TODAS las copias de la especificación, o partes de ella, que realice:
 
-Copyright © Microsoft Corporation. Todos los derechos reservados. El permiso para copiar, mostrar y distribuir este documento está disponible en la [comunidad de UI Automation Community Promise](uiauto-specandcommunitypromise.md).
+Copyright © Microsoft Corporation. All rights reserved. El permiso para copiar, mostrar y distribuir este documento está disponible en [Automatización de la interfaz de usuario Community Promise](uiauto-specandcommunitypromise.md).
 
 Puede crear trabajos derivados de la especificación, siempre que incluya todas las partes necesarias de la especificación en el trabajo derivado y proporcione el aviso anterior.
 
-Existe una promesa de patente independiente disponible para las partes interesadas en la implementación de software que se ajusta a la especificación de UI Automation. Esta licencia de patente está disponible en esta ubicación: compromiso de la [comunidad de UI Automation](uiauto-specandcommunitypromise.md)
+Hay una promesa de licencia independiente disponible para las partes interesadas en implementar software que se ajuste a la Automatización de la interfaz de usuario especificación. Esta licencia de patent está disponible en esta ubicación: [Automatización de la interfaz de usuario Community Promise](uiauto-specandcommunitypromise.md)
 
-La especificación se proporciona "tal cual" y Microsoft no realiza ninguna declaración ni garantía, ni expresa ni implícita, incluidas, entre otras, garantías de comerciabilidad, idoneidad para un propósito determinado, ausencia de infracción o título; que el contenido de la especificación es adecuado para cualquier propósito; ni que la implementación de dicho contenido no infrinja ninguna patente, copyright, marca comercial u otros derechos de terceros. Microsoft no será responsable de los daños directos, indirectos, especiales, incidentales o consecuenciales que se deriven de cualquier uso o distribución de la especificación.
+La especificación se proporciona "tal cual" y Microsoft no realiza ninguna representación ni garantía, expresa o implícita, incluidas, entre otras, las garantías de comerciabilidad, idoneidad para un propósito determinado, no infracción o título; que el contenido de la especificación es adecuado para cualquier propósito; ni que la implementación de dicho contenido no infringirá ninguna ley de terceros, derechos de autor, marcas comerciales u otros derechos. Microsoft no será responsable de ningún daño directo, indirecto, especial, accidental o consecuencial derivado de o relacionado con cualquier uso o distribución de la especificación.
 
-El nombre y las marcas comerciales de Microsoft no se pueden usar de ninguna manera, incluida la publicidad o la publicidad correspondiente a la especificación o su contenido sin ningún permiso específico y escrito con antelación. El título a derechos de autor en la especificación permanecerá en todo momento con Microsoft.
+El nombre y las marcas comerciales de Microsoft NO se pueden usar de ninguna manera, incluida la publicidad o publicidad relativa a la especificación o su contenido sin permiso previo específico y por escrito. El título de copyright en la especificación permanecerá en todo momento con Microsoft.
 
 No se conceden otros derechos por implicación, impedimento o de otra manera.
 
-## <a name="ui-automation-community-promise"></a>Compromiso de la comunidad de UI Automation
+## <a name="ui-automation-community-promise"></a>Automatización de la interfaz de usuario Community Promise
 
-Microsoft promete de forma irrevocable no a imponer las reclamaciones necesarias de Microsoft en lo que se requiera para realizar, usar, vender, ofrecer ventas, importar o distribuir cualquier implementación, en la medida en que se ajusta a una de las especificaciones descritas, y es compatible con todas las partes necesarias de las disposiciones obligatorias de esa Especificación ("implementación"), sujeta a lo siguiente:
+Microsoft se compromete irrevocablemente a no hacer ninguna reclamación necesaria de Microsoft en su contra para realizar, usar, vender, ofrecer para la venta, importar o distribuir cualquier implementación, en la medida en que se ajuste a una de las especificaciones cubiertas, y sea compatible con todas las partes necesarias de las disposiciones obligatorias de esa especificación ("Implementación cubierta"), sujeto a lo siguiente:
 
-Esta es una promesa personal directamente de Microsoft, y usted reconoce como una condición de benefician de que no se reciben derechos de Microsoft de proveedores, distribuidores o de otro modo en relación con este compromiso. Si archiva, mantiene o participa de forma voluntaria en una demanda de infracción de patentes contra una implementación de Microsoft de cualquier especificación tratada, esta promesa personal no se aplica en lo que respecta a las implementaciones que haya realizado o que use usted. Para aclararlo, las "notificaciones necesarias de Microsoft" son las notificaciones de las patentes de propiedad de Microsoft o controladas por Microsoft que son necesarias para implementar las partes requeridas (que también incluyen los elementos necesarios de partes opcionales) de la especificación tratada que se describen en detalle y no solo se hace referencia a ellas en la especificación tratada.
+Se trata de una promesa personal directamente de Microsoft para usted y usted reconoce como condición para beneficiarse de ella que no se reciben derechos de Microsoft de proveedores, distribuidores o de otro modo en relación con esta promesa. Si realiza, mantiene o participa voluntariamente en una infracción de la infracción de la concesión de una infracción de la protección contra una implementación de Microsoft de cualquier especificación cubierta, esta promesa personal no se aplica con respecto a ninguna implementación cubierta realizada o usada por el usuario. Para aclararlo, las "notificaciones necesarias de Microsoft" son aquellas reclamaciones de las garantías controladas por Microsoft o propiedad de Microsoft que son necesarias para implementar las partes necesarias (que también incluyen los elementos necesarios de las partes opcionales) de la especificación cubierta que se describen en detalle y no las que simplemente se hacen referencia en la especificación cubierta.
 
-Este compromiso por parte de Microsoft no es una garantía de que (i) cualquiera de las reclamaciones de patentes emitidas por Microsoft cubra una implementación cubiertas o que se pueda aplicar, o (II) una implementación cubiertas no infringiría las patentes u otros derechos de propiedad intelectual de terceros. No se considerará que ningún otro derecho, salvo los que se indique expresamente en este compromiso, se conceda, condone o reciba por implicación, agotamiento, desestimación o de otra manera.
+Esta promesa de Microsoft no garantiza que (i) cualquiera de las reclamaciones de la licencia emitidas por Microsoft cubre una implementación cubierta o es ejecutable, o (ii) una implementación cubierta no infringiría las marcas de ni otros derechos de propiedad intelectual de terceros. Ningún otro derecho, excepto los indicados expresamente en esta promesa, se considerarán concedidos, anulados o recibidos por implicación, agotamiento, estoppel o de otro modo.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Fundamentos de UI Automation](entry-uiautocore-overview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,7 +13,7 @@ ms.locfileid: "119083409"
 ---
 # <a name="support-in-windows-xp"></a>Compatibilidad con Windows XP
 
-Para que la aplicación se ejecute en Windows XP, el usuario necesitará una copia del runtime Windows Media Format en su equipo. Puede redistribuir este entorno de ejecución con la aplicación WPD. (El runtime se encuentra en una carpeta de redistribuibles en el SDK Windows Media Format).
+Para que la aplicación se ejecute en Windows XP, el usuario necesitará una copia del runtime Windows Media Format en su equipo. Puede redistribuir este entorno de ejecución con la aplicación WPD. (El tiempo de ejecución se encuentra en una carpeta de redistribuibles en el SDK Windows Media Format).
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -1,5 +1,5 @@
 ---
-description: Especifica si el modo alfa para los tipos de vídeo multimedia de color es premultiplicado o directo.
+description: Especifica si el modo alfa para los tipos de vídeo multimedia de color es premultiplicado o recta.
 ms.assetid: A263C3F7-357B-426D-B38C-533F9F6A1262
 title: MF_MT_ALPHA_MODE atributo (Mfapi.h)
 ms.topic: reference
@@ -11,11 +11,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119035323"
 ---
-# <a name="mf_mt_alpha_mode-attribute"></a>Atributo \_ MF MT ALPHA \_ \_ MODE
+# <a name="mf_mt_alpha_mode-attribute"></a>Atributo MF \_ MT \_ ALPHA \_ MODE
 
-\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Especifica si el modo alfa para los tipos de vídeo multimedia de color es premultiplicado o directo.
+Especifica si el modo alfa para los tipos de vídeo multimedia de color es premultiplicado o recta.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -29,7 +29,7 @@ Este valor se puede convertir en un [**valor DXGI \_ ALPHA \_ MODE.**](/windows/
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                          |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                      |

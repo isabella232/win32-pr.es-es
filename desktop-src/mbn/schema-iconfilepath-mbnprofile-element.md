@@ -1,5 +1,5 @@
 ---
-description: Contiene la ruta de acceso del archivo de icono para la conexión.
+description: Contiene la ruta de acceso del archivo de icono de la conexión.
 ms.assetid: 9daf4916-914b-4326-9933-b433cc00b4c1
 title: Elemento ICONFilePath (MBNProfile)
 ms.topic: reference
@@ -20,11 +20,11 @@ ms.locfileid: "119035823"
 ---
 # <a name="iconfilepath-mbnprofile-element"></a>Elemento ICONFilePath (MBNProfile)
 
-El **elemento ICONFilePath (MBNProfile)** contiene la ruta de acceso del archivo de icono para la conexión.
+El **elemento ICONFilePath (MBNProfile)** contiene la ruta de acceso del archivo de icono de la conexión.
 
-La interfaz de usuario de conexión del sistema operativo mostrará este icono cuando se realiza una conexión mediante este elemento.
+La interfaz de usuario de conexión del sistema operativo mostrará este icono cuando se realiza una conexión con este elemento.
 
-Al pasar el XML para crear el perfil en el [**método CreateConnectionProfile**](/windows/desktop/api/mbnapi/nf-mbnapi-imbnconnectionprofilemanager-createconnectionprofile) de la interfaz [**IMbnConnectionProfileManager,**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnconnectionprofilemanager) esta ruta de acceso debe apuntar a la ubicación de origen del archivo de icono. Si se crea correctamente el objeto [**IMbnConnectionProfile,**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnconnectionprofile) el servicio banda ancha móvil copiará el archivo de icono en su almacén interno y la ruta de acceso del perfil se modificará para reflejarlo.
+Al pasar el XML para crear el perfil en el [**método CreateConnectionProfile**](/windows/desktop/api/mbnapi/nf-mbnapi-imbnconnectionprofilemanager-createconnectionprofile) de la interfaz [**IMbnConnectionProfileManager,**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnconnectionprofilemanager) esta ruta de acceso debe apuntar a la ubicación de origen del archivo de icono. Si se crea correctamente el objeto [**IMbnConnectionProfile,**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnconnectionprofile) el servicio Banda ancha móvil copiará el archivo de icono en su almacén interno y la ruta de acceso del perfil se modificará para reflejarlo.
 
 El archivo de icono debe estar en .bmp con una dimensión de 32 x 32 píxeles.
 
@@ -46,12 +46,12 @@ El **elemento ICONFilePath** se define mediante el [**elemento MBNProfile.**](sc
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio \| para UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

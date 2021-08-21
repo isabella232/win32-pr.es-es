@@ -1,27 +1,27 @@
 ---
-description: Obtiene y establece las propiedades del certificado e ilustra las siguientes tareas y funciones de CryptoAPI.
+description: Obtiene y establece las propiedades de certificado e ilustra las siguientes tareas y funciones cryptoAPI.
 ms.assetid: 4cc20a59-d8e9-4c9b-9438-21bccbbe4a64
-title: 'Programa C de ejemplo: obtener y establecer propiedades de certificado'
+title: 'Programa C de ejemplo: obtención y configuración de propiedades de certificado'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99ac3d865eb90f57f1c687dbf58e89a2725066aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f4197d4ba716f780fec419aaf9588807d379ac85ccbfdb95535936539129dbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007673"
 ---
-# <a name="example-c-program-getting-and-setting-certificate-properties"></a>Programa C de ejemplo: obtener y establecer propiedades de certificado
+# <a name="example-c-program-getting-and-setting-certificate-properties"></a>Programa C de ejemplo: obtención y configuración de propiedades de certificado
 
-En el ejemplo siguiente se obtienen y establecen las propiedades del certificado, y se muestran las siguientes tareas y funciones de [*CryptoAPI*](../secgloss/c-gly.md) .
+En el ejemplo siguiente se obtienen y establecen propiedades de certificado, y se ilustran las siguientes tareas y [*funciones cryptoAPI.*](../secgloss/c-gly.md)
 
--   Apertura de un almacén del sistema mediante [**CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea).
--   Uso de [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore) para enumerar todos los certificados del almacén abierto.
--   Recuperación e impresión del nombre del firmante del certificado mediante [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
--   Establecer la propiedad [*uso mejorado de clave*](../secgloss/e-gly.md) en los certificados mediante la función [**CertAddEnhancedKeyUsageIdentifier**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddenhancedkeyusageidentifier) .
--   Establecer la propiedad nombre para mostrar en el certificado mediante [**CertSetCertificateContextProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsetcertificatecontextproperty).
--   Recuperación de las propiedades de un certificado mediante [**CertGetCertificateContextProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetcertificatecontextproperty).
--   Cerrar un almacén de certificados mediante [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore) con la marca de marca de comprobación del almacén de certificados \_ \_ \_ \_ .
+-   Abrir un almacén del sistema mediante [**CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea).
+-   Usar [**CertEnumCertificatesInStore para**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore) enumerar todos los certificados del almacén abierto.
+-   Recuperar e imprimir el nombre del firmante del certificado mediante [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
+-   Establecer la [*propiedad de uso mejorado*](../secgloss/e-gly.md) de claves en certificados mediante la función [**CertAddEnhancedKeyUsageIdentifier.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddenhancedkeyusageidentifier)
+-   Establecer la propiedad de nombre para mostrar en el certificado mediante [**CertSetCertificateContextProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsetcertificatecontextproperty).
+-   Recuperar las propiedades de un certificado mediante [**CertGetCertificateContextProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetcertificatecontextproperty).
+-   Cierre un almacén de certificados mediante [**CertCloseStore con**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore) la marca CERT \_ CLOSE STORE CHECK \_ \_ \_ FLAG.
 
 
 ```C++

@@ -19,7 +19,7 @@ ms.locfileid: "119033733"
 
 | Tema                                                                                                                      | Descripción                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| [System.LayoutPattern.ContentViewModeForBrowse](./props-system-layoutpattern-contentviewmodeforbrowse.md)<br/> | Identifica el patrón de diseño que el modo de vista de contenido debe aplicar a este elemento en el contexto de exploración.<br/>  |
+| [System.LayoutPattern.ContentViewModeForBrowse](./props-system-layoutpattern-contentviewmodeforbrowse.md)<br/> | Identifica el patrón de diseño que el modo de vista de contenido debe aplicar a este elemento en el contexto de la exploración.<br/>  |
 | [System.LayoutPattern.ContentViewModeForSearch](./props-system-layoutpattern-contentviewmodeforsearch.md)<br/> | Identifica el patrón de diseño que el modo de vista de contenido debe aplicar a este elemento en el contexto de la búsqueda.<br/> |
 
 

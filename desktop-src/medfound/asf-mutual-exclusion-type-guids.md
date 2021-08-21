@@ -38,7 +38,7 @@ Los siguientes GUID definen los tipos para el objeto de exclusión mutua para se
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

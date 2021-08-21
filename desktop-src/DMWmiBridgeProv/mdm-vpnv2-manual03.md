@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119076949"
 ---
-# <a name="mdm_vpnv2_manual03-class"></a>Clase \_ MDM VPNv2 \_ Manual03
+# <a name="mdm_vpnv2_manual03-class"></a>MDM \_ VPNv2 \_ Manual03 (clase)
 
 \[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
@@ -52,7 +52,7 @@ La **clase MDM \_ VPNv2 \_ Manual03** tiene estos tipos de miembros:
 
 ### <a name="properties"></a>Propiedades
 
-La **clase MDM \_ VPNv2 \_ Manual03** tiene estas propiedades.
+La **clase \_ MDM VPNv2 \_ Manual03** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -65,7 +65,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica el nombre del nodo primario.
@@ -81,7 +81,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/VPNv2/*ProfileName*/Proxy/"
@@ -113,11 +113,11 @@ Tipo de acceso: lectura y escritura
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Uso de scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripts de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

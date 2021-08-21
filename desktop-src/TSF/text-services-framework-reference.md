@@ -1,26 +1,26 @@
 ---
-title: Referencia de marco de trabajo de servicios de texto
-description: Referencia de marco de trabajo de servicios de texto
+title: Text Services Framework referencia
+description: Text Services Framework referencia
 ms.assetid: cd2685f2-cbb9-417e-ae07-2af60c212b51
 keywords:
-- Text Services Framework (TSF), referencia
-- TSF (marco de trabajo de servicios de texto), referencia
-- servicios de texto, referencia
+- Text Services Framework (TSF),reference
+- TSF (Text Services Framework),reference
+- text services,reference
 - Aplicaciones habilitadas para TSF, referencia
 - Referencia de TSF, acerca de
 - referencia de TSF, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7e650728ccfd1bc709a35bb7f0b9dda87ae2440
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a8424940cbfbff0d5daad6cd24a90aebdefa5064d0b5e357346e88549909bc29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118874927"
 ---
-# <a name="text-services-framework-reference"></a>Referencia de marco de trabajo de servicios de texto
+# <a name="text-services-framework-reference"></a>Text Services Framework referencia
 
-En esta sección se incluyen las siguientes referencias de programación para el marco de trabajo de servicios de texto de Windows.
+En esta sección se incluyen las siguientes referencias de programación para el Windows Text Services Framework.
 
 -   [Interfaces](text-services-framework-interfaces.md)
 -   [Funciones](text-services-framework-functions.md)
@@ -30,9 +30,9 @@ En esta sección se incluyen las siguientes referencias de programación para el
 -   [Constantes](text-services-framework-constants.md)
 -   [Valores devueltos](text-services-framework-return-values.md)
 
- 
+ 
 
- 
+ 
 
 
 

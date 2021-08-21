@@ -198,7 +198,7 @@ Marcador generado por el kit de desarrollo de software (SDK) Windows media forma
 <span id="wmformat.individualization"></span><span id="WMFORMAT.INDIVIDUALIZATION"></span>**individualización**
 </dt> <dd>
 
-Proceso de hacer que el componente de administración de derechos digitales (DRM) del reproductor del consumidor sea único. Este proceso aumenta la seguridad al dificultar la dañar más de un jugador a la vez. Este proceso también se conoce como obtención de una actualización de seguridad.
+Proceso de hacer que el componente de administración de derechos digitales (DRM) del reproductor del consumidor sea único. Este proceso aumenta la seguridad al hacer que sea difícil dañar más de un jugador a la vez. Este proceso también se conoce como obtención de una actualización de seguridad.
 
 </dd> <dt>
 
@@ -209,7 +209,7 @@ Para mostrar un fotograma de vídeo en dos campos. Un campo contiene las líneas
 
 </dd> <dt>
 
-<span id="wmformat.inverse_telecine"></span><span id="WMFORMAT.INVERSE_TELECINE"></span>**televisa inversa**
+<span id="wmformat.inverse_telecine"></span><span id="WMFORMAT.INVERSE_TELECINE"></span>**tele telefónica inversa**
 </dt> <dd>
 
 Proceso que quita los fotogramas que se agregaron cuando la película de 24 fps se convirtió en vídeo de 30 fps.
@@ -247,7 +247,7 @@ Datos adjuntos al contenido protegido que describen cómo se puede usar el conte
 <span id="wmformat.license_acquisition"></span><span id="WMFORMAT.LICENSE_ACQUISITION"></span>**adquisición de licencias**
 </dt> <dd>
 
-Proceso de obtención de una licencia para reproducir un archivo Windows multimedia empaquetado. El reproductor intenta obtener una licencia de una dirección URL de adquisición de licencias, que se especifica en el archivo Windows Media.
+Proceso de obtención de una licencia para reproducir un archivo Windows media empaquetado. El reproductor intenta obtener una licencia de una dirección URL de adquisición de licencias, que se especifica en el archivo Windows Media.
 
 </dd> <dt>
 
@@ -289,14 +289,14 @@ Respuesta a un desafío de revocación de licencias que indica qué licencias qu
 <span id="wmformat.licensing_server"></span><span id="WMFORMAT.LICENSING_SERVER"></span>**servidor de licencias**
 </dt> <dd>
 
-Un equipo que ejecuta Windows Servicio de licencias multimedia y emite licencias.
+Un equipo que ejecuta Windows servicio de licencias multimedia y emite licencias.
 
 </dd> <dt>
 
 <span id="wmformat.marker"></span><span id="WMFORMAT.MARKER"></span>**marcador**
 </dt> <dd>
 
-Cadena de texto asociada a una hora designada en Windows contenido basado en multimedia. Los marcadores a menudo denotan puntos prácticos para comenzar la reproducción, como el inicio de una nueva escena.
+Cadena de texto asociada a una hora designada en Windows contenido basado en medios. Los marcadores a menudo denotan puntos prácticos para comenzar la reproducción, como el inicio de una nueva escena.
 
 </dd> <dt>
 
@@ -310,21 +310,21 @@ Vea la definición de: [ *velocidad de bits múltiple (MBR)*](/windows)
 <span id="wmformat.mime"></span><span id="WMFORMAT.MIME"></span>**MIME**
 </dt> <dd>
 
-Vea la definición de: [ *Extensión multipropósito de Correo electrónico de Internet (MIME)*](/windows)
+Vea la definición de: [ *Multipurpose Internet Mail Extension (MIME)*](/windows)
 
 </dd> <dt>
 
 <span id="wmformat.multiple_bit_rate__mbr_"></span><span id="WMFORMAT.MULTIPLE_BIT_RATE__MBR_"></span>**velocidad de bits múltiple (MBR)**
 </dt> <dd>
 
-Una característica de un flujo de datos en el que el mismo contenido se codifica con varias velocidades de bits diferentes para optimizar la entrega de contenido.
+Una característica de un flujo de datos en el que el mismo contenido se codifica a varias velocidades de bits diferentes con el fin de optimizar la entrega de contenido.
 
 </dd> <dt>
 
-<span id="wmformat.multipurpose_internet_mail_extension__mime_"></span><span id="WMFORMAT.MULTIPURPOSE_INTERNET_MAIL_EXTENSION__MIME_"></span>**Extensión multipropósito de Correo electrónico de Internet (MIME)**
+<span id="wmformat.multipurpose_internet_mail_extension__mime_"></span><span id="WMFORMAT.MULTIPURPOSE_INTERNET_MAIL_EXTENSION__MIME_"></span>**Multipurpose Internet Mail Extension (MIME)**
 </dt> <dd>
 
-Estándar que amplía el Protocolo simple de transporte de correo (SMTP) para codificar archivos de datos no ASCII, como archivos de vídeo, sonido y binarios para los datos adjuntos al correo electrónico de Internet.
+Un estándar que extiende el Protocolo simple de transporte de correo (SMTP) para codificar archivos de datos no ASCII, como archivos de vídeo, sonido y binarios para los datos adjuntos al correo electrónico de Internet.
 
 </dd> <dt>
 
@@ -345,7 +345,7 @@ Un Windows multimedia cifrado con una clave, que los consumidores no pueden repr
 <span id="wmformat.packaging"></span><span id="WMFORMAT.PACKAGING"></span>**empaquetado**
 </dt> <dd>
 
-Proceso que protege y firma un archivo multimedia Windows, generando un archivo Windows archivo multimedia empaquetado. El proceso de empaquetado incluye la generación o especificación de una clave, la generación y firma del encabezado de contenido y, a continuación, el cifrado del Windows multimedia con esta información.
+Proceso que protege y firma un archivo Windows multimedia, lo que genera un archivo Windows multimedia empaquetado. El proceso de empaquetado incluye generar o especificar una clave, generar y firmar el encabezado de contenido y, a continuación, cifrar el archivo Windows Media con esta información.
 
 </dd> <dt>
 
@@ -380,14 +380,14 @@ Proceso en el que un consumidor escribe información para adquirir una licencia,
 <span id="wmformat.revocation_list"></span><span id="WMFORMAT.REVOCATION_LIST"></span>**lista de revocación**
 </dt> <dd>
 
-Lista que contiene todos los certificados de aplicación de esas aplicaciones de reproductor que se sabe que están dañadas o dañadas. Esta lista se incluye en las licencias y, a continuación, se almacena en los equipos de los consumidores mediante el componente de administración de derechos digitales (DRM) de la aplicación del reproductor.
+Lista que contiene todos los certificados de aplicación de las aplicaciones de reproductor que se sabe que están dañadas o dañadas. Esta lista se incluye en las licencias y, a continuación, se almacena en los equipos de los consumidores mediante el componente de administración de derechos digitales (DRM) de la aplicación de reproductor.
 
 </dd> <dt>
 
 <span id="wmformat.rgb"></span><span id="WMFORMAT.RGB"></span>**RGB**
 </dt> <dd>
 
-Modelo de color que describe la información de color en términos de las intensidades de color rojo (R), verde (G) y azul (B) que lo forma.
+Modelo de color que describe la información de color en términos de las intensidades de color rojo (R), verde (G) y azul (B) que lo convierten en color.
 
 </dd> <dt>
 
@@ -408,7 +408,7 @@ Una organización que establece estándares para la música digital segura. Uno 
 <span id="wmformat.security_upgrade"></span><span id="WMFORMAT.SECURITY_UPGRADE"></span>**actualización de seguridad**
 </dt> <dd>
 
-Proceso de hacer que el componente de administración de derechos digitales (DRM) en el reproductor del consumidor sea único. Este proceso aumenta la seguridad al hacer que sea difícil dañar más de un jugador a la vez. Este proceso también se conoce como individualización.
+Proceso de hacer que el componente de administración de derechos digitales (DRM) del reproductor del consumidor sea único. Este proceso aumenta la seguridad al hacer que sea difícil dañar más de un jugador a la vez. Este proceso también se conoce como individualización.
 
 </dd> <dt>
 
@@ -443,7 +443,7 @@ Número de bits que se transfieren a los usuarios en función de sus velocidades
 <span id="wmformat.telecine"></span><span id="WMFORMAT.TELECINE"></span>**televisa**
 </dt> <dd>
 
-El sistema de conversión de película a vídeo que agrega fotogramas al vídeo para compensar las diferencias en las velocidades de fotogramas entre películas y vídeos.
+El sistema de conversión de películas a vídeo que agrega fotogramas al vídeo para compensar las diferencias en las velocidades de fotogramas entre películas y vídeos.
 
 </dd> <dt>
 
@@ -464,7 +464,7 @@ Protocolo de transporte sin conexión en la pila del protocolo TCP/IP que se uti
 <span id="wmformat.variable_bit_rate__vbr_"></span><span id="WMFORMAT.VARIABLE_BIT_RATE__VBR_"></span>**velocidad de bits variable (VBR)**
 </dt> <dd>
 
-Una característica de un flujo de datos en el que la velocidad de bits fluctúa, dependiendo de la complejidad de los datos.
+Característica de un flujo de datos en el que la velocidad de bits fluctúa, en función de la complejidad de los datos.
 
 </dd> <dt>
 
@@ -478,28 +478,28 @@ Vea la definición de: [ *velocidad de bits variable (VBR)*](/windows)
 <span id="wmformat.windows_media_file"></span><span id="WMFORMAT.WINDOWS_MEDIA_FILE"></span>**Windows archivo multimedia**
 </dt> <dd>
 
-Archivo que contiene audio, vídeo o datos de guión. El contenido del archivo se codifica con uno de los códecs Windows media.
+Archivo que contiene audio, vídeo o datos de guión. El contenido del archivo se codifica con uno de los códecs Windows Media.
 
 </dd> <dt>
 
-<span id="wmformat.windows_media_format"></span><span id="WMFORMAT.WINDOWS_MEDIA_FORMAT"></span>**Windows multimedia**
+<span id="wmformat.windows_media_format"></span><span id="WMFORMAT.WINDOWS_MEDIA_FORMAT"></span>**Windows formato multimedia**
 </dt> <dd>
 
-Formato de un archivo multimedia digital o secuencia codificado con códecs Windows media.
+El formato de un archivo multimedia digital o una secuencia que se codificaron con códecs Windows media.
 
 </dd> <dt>
 
 <span id="wmformat.windows_media_license_service"></span><span id="WMFORMAT.WINDOWS_MEDIA_LICENSE_SERVICE"></span>**Windows Media License Service**
 </dt> <dd>
 
-Componente del SDK de Windows Media Rights Manager que proporciona servicios de adquisición de licencias.
+Componente del SDK Windows Media Rights Manager que proporciona servicios de adquisición de licencias.
 
 </dd> <dt>
 
 <span id="wmformat.yuv"></span><span id="WMFORMAT.YUV"></span>**YUV**
 </dt> <dd>
 
-Modelo de color que describe la información de color en términos de brillo (luminosidad o Y) y color (chrominance, o usted y V).
+Modelo de color que describe la información de color en términos de su brillo (luminosidad, o Y) y color (chrominance, o usted y V).
 
 </dd> </dl>
 

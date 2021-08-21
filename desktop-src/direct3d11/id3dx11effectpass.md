@@ -4,7 +4,7 @@ description: Una interfaz ID3DX11EffectPass encapsula las asignaciones de estado
 ms.assetid: 4d86c362-b0f8-4396-86de-c7c89710f46d
 keywords:
 - Interfaz ID3DX11EffectPass direct3D 11
-- Interfaz ID3DX11EffectPass direct3D 11, descrita
+- Interfaz ID3DX11EffectPass Direct3D 11 , descrita
 topic_type:
 - apiref
 api_name:
@@ -41,7 +41,7 @@ La **interfaz ID3DX11EffectPass** tiene estos métodos.
 |:-------------------------------------------------------------------------|:------------------------------------------------------------------|
 | [**Aplicar**](id3dx11effectpass-apply.md)                                 | Establezca el estado contenido en un paso al dispositivo.<br/>       |
 | [**ComputeStateBlockMask**](id3dx11effectpass-computestateblockmask.md) | Genere una máscara para permitir o evitar cambios de estado.<br/> |
-| [**GetAnnotationByIndex**](id3dx11effectpass-getannotationbyindex.md)   | Obtiene una anotación por índice.<br/>                            |
+| [**GetAnnotationByIndex**](id3dx11effectpass-getannotationbyindex.md)   | Obtener una anotación por índice.<br/>                            |
 | [**GetAnnotationByName**](id3dx11effectpass-getannotationbyname.md)     | Obtiene una anotación por nombre.<br/>                             |
 | [**GetComputeShaderDesc**](id3dx11effectpass-getcomputeshaderdesc.md)   | Obtiene una descripción del sombreador de proceso.<br/>                      |
 | [**GetDesc**](id3dx11effectpass-getdesc.md)                             | Obtenga una descripción de paso.<br/>                                |
@@ -56,14 +56,14 @@ La **interfaz ID3DX11EffectPass** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Un paso es un bloque de código que establece objetos de estado de representación y sombreadores. Un paso se declara dentro de una técnica.
 
 Para obtener una interfaz de paso de efecto, llame a un método como [**ID3DX11EffectTechnique::GetPassByName**](id3dx11effecttechnique-getpassbyname.md).
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -82,7 +82,7 @@ Para obtener una interfaz de paso de efecto, llame a un método como [**ID3DX11E
 
 <dl> <dt>
 
-[Efectos 11 interfaces](d3d11-graphics-reference-effects11-interfaces.md)
+[Efectos 11 Interfaces](d3d11-graphics-reference-effects11-interfaces.md)
 </dt> <dt>
 
 [D3DX Interfaces](d3d11-graphics-reference-d3dx11-interfaces.md)

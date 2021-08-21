@@ -1,32 +1,32 @@
 ---
 description: En el ejemplo siguiente se muestra cómo crear una clave criptográfica de sesión a partir del hash de una contraseña, así como el uso de la función CryptDeriveKey y las funciones relacionadas.
 ms.assetid: f4748725-2a47-487c-b18c-7b27112d1090
-title: 'Programa C de ejemplo: derivar una clave de sesión de una contraseña'
+title: 'Programa C de ejemplo: derivación de una clave de sesión a partir de una contraseña'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e46884fa40a3a5682ca21229048004314bf03609
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b33b43e69b9db2f77e04bad2f8941e6fc0c1bf4e30e5f1d0ff7a5e3bac5ce06
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007843"
 ---
-# <a name="example-c-program-deriving-a-session-key-from-a-password"></a>Programa C de ejemplo: derivar una clave de sesión de una contraseña
+# <a name="example-c-program-deriving-a-session-key-from-a-password"></a>Programa C de ejemplo: derivación de una clave de sesión a partir de una contraseña
 
-En el ejemplo siguiente se muestra cómo crear una [*clave criptográfica de sesión*](../secgloss/s-gly.md) a partir del [*hash*](../secgloss/h-gly.md) de una contraseña, así como el uso de la función [**CryptDeriveKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptderivekey) y las funciones relacionadas.
+En el ejemplo siguiente se muestra cómo crear una clave [*criptográfica*](../secgloss/s-gly.md) de sesión a partir del [*hash*](../secgloss/h-gly.md) de una contraseña, así como el uso de la función [**CryptDeriveKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptderivekey) y las funciones relacionadas.
 
-En este ejemplo se muestran las siguientes tareas y funciones de CryptoAPI:
+En este ejemplo se muestran las siguientes tareas y funciones cryptoAPI:
 
--   Llamar a [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) para adquirir un identificador para el CSP predeterminado y el [*contenedor de claves*](../secgloss/k-gly.md)predeterminado.
--   Usar [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash) para crear un objeto hash vacío.
--   Aplicar un algoritmo hash al texto de una contraseña mediante [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata).
+-   Llamar [**a CryptAcquireContext para**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) adquirir un identificador para el CSP predeterminado y el contenedor de claves [*predeterminado.*](../secgloss/k-gly.md)
+-   Usar [**CryptCreateHash para**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash) crear un objeto hash vacío.
+-   Hashing the text of a password using [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata).
 -   Derivar una clave de sesión de la contraseña con hash mediante [**CryptDeriveKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptderivekey).
 -   Destruir el hash y la contraseña.
--   Uso de [**CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext) para liberar el CSP.
+-   Uso [**de CryptReleaseContext para**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext) liberar el CSP.
 
-En este ejemplo se usa la función [**MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo.
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo.
 
-El código de esta y otras funciones auxiliares también se enumeran en [funciones de de uso general](general-purpose-functions.md).
+El código de esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
 
 ```C++

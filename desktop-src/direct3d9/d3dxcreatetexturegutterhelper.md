@@ -1,5 +1,5 @@
 ---
-description: Crea un objeto ID3DXTextureGutterHelper a partir de una malla de entrada y datos de textura.
+description: Crea un objeto ID3DXTextureGutterHelper a partir de datos de textura y malla de entrada.
 ms.assetid: 1696fc3d-5b35-48cc-a79b-c0d4ed44e420
 title: Función D3DXCreateTextureGutterHelper (D3DX9Mesh.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "119045143"
 ---
 # <a name="d3dxcreatetexturegutterhelper-function"></a>Función D3DXCreateTextureGutterHelper
 
-Crea un [**objeto ID3DXTextureGutterHelper**](id3dxtexturegutterhelper.md) a partir de una malla de entrada y datos de textura.
+Crea un [**objeto ID3DXTextureGutterHelper**](id3dxtexturegutterhelper.md) a partir de datos de textura y malla de entrada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -67,7 +67,7 @@ Alto de la textura, en píxeles.
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntero a un objeto de [**malla ID3DXMesh**](id3dxmesh.md) de entrada.
+Puntero a un objeto de malla [**ID3DXMesh**](id3dxmesh.md) de entrada.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Puntero a un objeto de [**malla ID3DXMesh**](id3dxmesh.md) de entrada.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Número de elementos de textura por los que se muestrea en exceso la textura y se crea la región de medianía. Debe ser al menos 1.
+Número de elementos de textura por los que se va a muestrear en exceso la textura y crear la región del medianía. Debe ser al menos 1.
 
 </dd> <dt>
 
@@ -110,11 +110,11 @@ Use [**D3DXConcatenateMeshes**](d3dxconcatenatemeshes.md) para transformar una e
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Funciones de transferencia de radiancia precalcaladas](dx9-graphics-reference-d3dx-functions-prt.md)
+[Funciones de transferencia de radiancia precalutadas](dx9-graphics-reference-d3dx-functions-prt.md)
 </dt> </dl>
 
  

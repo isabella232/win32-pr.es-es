@@ -32,7 +32,7 @@ typedef unsigned __int64 TOPOID;
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -45,7 +45,7 @@ typedef unsigned __int64 TOPOID;
 [**IMFTopology::GetTopologyID**](/windows/desktop/api/mfidl/nf-mfidl-imftopology-gettopologyid)
 </dt> <dt>
 
-[**IMFTopologyNode::GetTopoNodeID**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-gettoponodeid)
+[**NODETopologyNode::GetTopoNodeID**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-gettoponodeid)
 </dt> </dl>
 
  

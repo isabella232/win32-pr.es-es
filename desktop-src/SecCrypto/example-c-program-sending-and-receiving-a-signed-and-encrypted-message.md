@@ -1,39 +1,39 @@
 ---
-description: En el ejemplo siguiente se firma un mensaje mediante la clave privada de un remitente y se cifra el mensaje firmado mediante la clave pública del receptor.
+description: En el ejemplo siguiente se firma un mensaje mediante la clave privada de un remitente y se cifra el mensaje firmado mediante la clave pública de un receptor.
 ms.assetid: f2863e4a-d22a-4ff0-91d8-052eeaade14e
-title: 'Programa C de ejemplo: envío y recepción de un mensaje firmado y cifrado'
+title: 'Programa C de ejemplo: Envío y recepción de un mensaje firmado y cifrado'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7c2ce7c5ba04d6fb57afbb0c15e32c115dcbd5b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ac7bdfdfd664d278fe72d81743e7116eb64a11099ef37b43200d55378472c383
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007543"
 ---
-# <a name="example-c-program-sending-and-receiving-a-signed-and-encrypted-message"></a>Programa C de ejemplo: envío y recepción de un mensaje firmado y cifrado
+# <a name="example-c-program-sending-and-receiving-a-signed-and-encrypted-message"></a>Programa C de ejemplo: Envío y recepción de un mensaje firmado y cifrado
 
-En el ejemplo siguiente se firma un mensaje mediante la [*clave privada*](../secgloss/p-gly.md) de un remitente y se cifra el mensaje firmado mediante la [*clave pública*](../secgloss/p-gly.md)del receptor. A continuación, el ejemplo descifra el mensaje mediante la clave privada del receptor y comprueba la firma mediante la clave pública del remitente. El certificado del remitente que contiene la clave pública necesaria se incluye en el mensaje cifrado. En este ejemplo también se escribe el mensaje firmado y cifrado en un archivo. Para obtener más información, vea [el ejemplo de programa C: recibir un mensaje firmado y cifrado](example-c-program-receiving-a-signed-and-encrypted-message.md).
+En el ejemplo siguiente se firma [](../secgloss/p-gly.md) un mensaje con la clave privada de un remitente y se cifra el mensaje firmado mediante la [*clave pública de un receptor.*](../secgloss/p-gly.md) A continuación, el ejemplo descifra el mensaje mediante la clave privada del receptor y comprueba la firma mediante la clave pública del remitente. El certificado del remitente que contiene la clave pública necesaria se incluye en el mensaje cifrado. En este ejemplo también se escribe el mensaje firmado y cifrado en un archivo. Para obtener más información, vea [Example C Program: Receiving a Signed and Encrypted Message](example-c-program-receiving-a-signed-and-encrypted-message.md).
 
-Para firmar el mensaje, la clave privada del firmante y el certificado del firmante deben estar disponibles. Para cifrar el mensaje firmado, debe estar disponible el certificado del receptor que incluye la clave pública del receptor.
+Para firmar el mensaje, la clave privada del firmante y el certificado del firmante deben estar disponibles. Para cifrar el mensaje firmado, debe estar disponible el certificado de un receptor que incluya la clave pública del receptor.
 
-Para descifrar el mensaje, la clave privada del receptor debe estar disponible. Una vez descifrado el mensaje, se comprueba la firma mediante la clave pública del certificado incluido en el mensaje cifrado.
+Para descifrar el mensaje, la clave privada del receptor debe estar disponible. Una vez descifrado el mensaje, la firma se comprueba mediante la clave pública del certificado incluido en el mensaje cifrado.
 
 > [!Note]  
-> No todos los certificados de un [*almacén de certificados*](../secgloss/c-gly.md) proporcionan acceso a la [*clave privada*](../secgloss/p-gly.md) asociada a ese certificado. Cuando el mensaje está firmado y cifrado, se debe usar un certificado que pertenezca al firmante con acceso a la clave privada de dicho firmante. Además, el receptor del mensaje debe tener acceso a la clave privada asociada a la clave pública que se usa para cifrar el mensaje.
+> No todos los certificados de un almacén [*de certificados*](../secgloss/c-gly.md) proporcionan acceso a la clave [*privada asociada*](../secgloss/p-gly.md) a ese certificado. Cuando el mensaje está firmado y cifrado, se debe usar un certificado que pertenezca al firmante con acceso a la clave privada de ese firmante. Además, el receptor del mensaje debe tener acceso a la clave privada asociada a la clave pública utilizada para cifrar el mensaje.
 
  
 
 En este ejemplo se muestran las tareas siguientes:
 
 -   Abrir y cerrar almacenes de certificados del sistema.
--   Buscar certificados para un remitente de mensaje y un receptor de mensajes en los almacenes de certificados abiertos.
--   Buscar e imprimir el nombre de sujeto de los certificados.
--   Inicializar las estructuras de datos necesarias para firmar, cifrar, descifrar y comprobar un mensaje.
--   Llamar a una función CryptoAPI para buscar el tamaño necesario de un búfer, asignar el búfer del tamaño requerido y volver a llamar a la función CryptoAPI para rellenar el búfer. Para obtener más información, vea [recuperar datos de longitud desconocida](retrieving-data-of-unknown-length.md).
--   Mostrar parte del contenido cifrado de un búfer. La función local incluida, **ShowBytes**, muestra caracteres en el búfer con valores entre ' 0 ' y ' z '. Todos los demás caracteres se muestran como el carácter "-".
+-   Buscar certificados para un remitente de mensajes y un receptor de mensajes en los almacenes de certificados abiertos.
+-   Buscar e imprimir el nombre del firmantes a partir de certificados.
+-   Inicializar estructuras de datos necesarias para firmar, cifrar, descifrar y comprobar un mensaje.
+-   Llamar a una función CryptoAPI para buscar el tamaño necesario de un búfer, asignar el búfer del tamaño necesario y llamar de nuevo a la función CryptoAPI para rellenar el búfer. Para obtener más información, vea [Recuperar datos de longitud desconocida.](retrieving-data-of-unknown-length.md)
+-   Mostrar parte del contenido cifrado de un búfer. La función local incluida, **ShowBytes,** muestra caracteres en el búfer con valores entre "0" y "z". Todos los demás caracteres se muestran como el carácter "-".
 
-En este ejemplo se usan las siguientes funciones de CryptoAPI:
+En este ejemplo se usan las siguientes funciones CryptoAPI:
 
 -   [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore)
 -   [**CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore)
@@ -44,7 +44,7 @@ En este ejemplo se usan las siguientes funciones de CryptoAPI:
 -   [**CertFreeCertificateContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfreecertificatecontext)
 -   [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
 
-En este ejemplo se usan funciones independientes para mostrar el proceso de firma y cifrado y el proceso de descifrado y comprobación de firmas. También usa [**MyHandleError**](myhandleerror.md) para salir del programa correctamente en caso de que se produzca algún error. El código **MyHandleError** se incluye con el ejemplo y también se puede encontrar junto con otras funciones auxiliares en [funciones de de uso general](general-purpose-functions.md).
+En este ejemplo se usan funciones independientes para mostrar el proceso de firma y cifrado y el proceso de descifrado o comprobación de firma. También usa [**MyHandleError para**](myhandleerror.md) salir del programa correctamente en caso de error. El código **MyHandleError** se incluye con el ejemplo y también se puede encontrar junto con otras funciones auxiliares en [De uso general Functions](general-purpose-functions.md).
 
 
 ```C++

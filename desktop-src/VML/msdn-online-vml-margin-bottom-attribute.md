@@ -46,7 +46,7 @@ Estos valores incluyen:
 
 
 
-| Valor      | Descripción                                                                                                                                                                                       |
+| Value      | Descripción                                                                                                                                                                                       |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Auto       | Posición predeterminada de un elemento en el flujo de la página.                                                                                                                                           |
 | units      | Predeterminada. Número con un designador de unidades absolutas (cm, mm, in, pt, pc o px) o un designador de unidades relativas (em o ex). Si no se da ninguna unidad, se suponen píxeles (px). El valor predeterminado es 0. |

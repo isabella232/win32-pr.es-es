@@ -69,7 +69,7 @@ class Win32_PerfRawData : Win32_Perf
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ Win32 PerfRawData** tiene estos tipos de miembros:
+La **clase Win32 \_ PerfRawData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
@@ -138,7 +138,7 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Frecuencia en pasos por segundo de la **propiedad Frequency \_ PerfTime.** Se puede obtener un valor llamando a la Windows función [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter).
+Frecuencia en pasos por segundo de la **propiedad Frequency \_ PerfTime.** Se puede obtener un valor llamando a la Windows [**función QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter).
 
 Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
@@ -207,7 +207,7 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Marca de tiempo del contador de alto rendimiento. Se puede obtener un valor llamando a la Windows función [**QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter).
+Marca de tiempo del contador de alto rendimiento. Se puede obtener un valor llamando a la Windows [**función QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter).
 
 Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/previous-versions//aa393262(v=vs.85))
 
@@ -236,13 +236,13 @@ Esta propiedad se hereda de [**Win32 \_ Perf**](win32-perf.md).
 
 La **clase \_ Win32 PerfRawData** se deriva de [**Win32 \_ Perf**](win32-perf.md), que se deriva de [**CIM \_ StatisticalInformation**](cim-statisticalinformation.md).
 
-Todas las clases derivadas de [**Win32 \_ Perf**](win32-perf.md) están diseñadas para usarse con un [*objeto de actualizador.*](../wmisdk/gloss-r.md) Para obtener más información sobre cómo crear y usar un objeto de actualizador en el lenguaje de programación C++, vea Acceso a datos [de rendimiento en C++.](../wmisdk/accessing-performance-data-in-c--.md) Para obtener más información sobre cómo crear y usar un objeto de actualizador en un lenguaje de programación de script, vea [Actualizar datos WMI en scripts](../wmisdk/refreshing-wmi-data-in-scripts.md).
+Todas las clases derivadas de [**Win32 \_ Perf**](win32-perf.md) están diseñadas para usarse con un [*objeto de actualizador.*](../wmisdk/gloss-r.md) Para obtener más información sobre cómo crear y usar un objeto de actualizador en el lenguaje de programación C++, vea Acceso a datos [de rendimiento en C++.](../wmisdk/accessing-performance-data-in-c--.md) Para obtener más información sobre cómo crear y usar un objeto de actualizador en un lenguaje de programación de scripts, vea [Actualizar datos WMI en scripts](../wmisdk/refreshing-wmi-data-in-scripts.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                             |
@@ -252,7 +252,7 @@ Todas las clases derivadas de [**Win32 \_ Perf**](win32-perf.md) están diseñad
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

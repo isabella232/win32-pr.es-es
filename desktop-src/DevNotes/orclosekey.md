@@ -1,7 +1,7 @@
 ---
-description: Cierra un identificador de la clave del registro especificada en un subárbol del registro sin conexión.
+description: Cierra un identificador a la clave del Registro especificada en un subárbol del Registro sin conexión.
 ms.assetid: 01bb21b1-217b-4716-ae1e-466cf8383155
-title: Función ORCloseKey (Offreg. h)
+title: Función ORCloseKey (Offreg.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Offreg.dll
-ms.openlocfilehash: df6b8d9176efc1eb1e4ffb4e0453ec665ec19b6c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 28f93c2bb1de61da072d7fde6d811463106be0c56f049b3ebf7e74f79ef740fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119572115"
 ---
-# <a name="orclosekey-function"></a>ORCloseKey función)
+# <a name="orclosekey-function"></a>Función ORCloseKey
 
-Cierra un identificador de la clave del registro especificada en un subárbol del registro sin conexión.
+Cierra un identificador a la clave del Registro especificada en un subárbol del Registro sin conexión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,35 +39,35 @@ DWORD ORCloseKey(
 
 <dl> <dt>
 
-*Identificador* \[ de de\]
+*Identificador* \[ En\]
 </dt> <dd>
 
-Identificador de una clave del registro abierta en un subárbol del registro sin conexión.
+Identificador de una clave del Registro abierta en un subárbol del Registro sin conexión.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es ERROR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es ERROR \_ SUCCESS.
 
-Si se produce un error en la función, el valor devuelto es un código de error distinto de cero definido en Winerror. h. Puede usar la función [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) con la \_ \_ marca de formato mensaje de \_ sistema para obtener una descripción genérica del error.
+Si se produce un error en la función, el valor devuelto es un código de error distinto de cero definido en Winerror.h. Puede usar la función [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) con la marca FORMAT \_ MESSAGE FROM SYSTEM para obtener una descripción genérica del \_ \_ error.
 
-Si la clave especificada es la clave raíz del subárbol del registro, se produce un ERROR en la función con un \_ parámetro no válido \_ .
+Si la clave especificada es la clave raíz del subárbol del Registro, se produce un error en la función error \_ INVALID \_ PARAMETER.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El identificador de una clave especificada no debe usarse una vez que se ha cerrado, porque ya no será válido. Los identificadores de clave no deben dejarse abiertos más tiempo del necesario.
+El identificador de una clave especificada no debe usarse después de que se haya cerrado, porque ya no será válido. Los identificadores de clave no se deben dejar abiertos más tiempo del necesario.
 
-Use la función [**ORCloseHive**](orclosehive.md) para cerrar un subárbol del registro sin conexión.
+Use la [**función ORCloseHive**](orclosehive.md) para cerrar un subárbol del Registro sin conexión.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------------|---------------------------------------------------------------------------------------|
-| Redistribuible<br/> | Windows offline Registry Library versión 1,0 o posterior<br/>                      |
-| Encabezado<br/>          | <dl> <dt>Offreg. h</dt> </dl>   |
+| Redistribuible<br/> | Windows Biblioteca del Registro sin conexión versión 1.0 o posterior<br/>                      |
+| Header<br/>          | <dl> <dt>Offreg.h</dt> </dl>   |
 | Archivo DLL<br/>             | <dl> <dt>Offreg.dll</dt> </dl> |
 
 

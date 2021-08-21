@@ -13,13 +13,13 @@ ms.locfileid: "119035433"
 ---
 # <a name="building-a-playback-topology-with-topoedit"></a>Creación de una topología de reproducción con TopoEdit
 
-TopoEdit puede compilar una topología de reproducción para un archivo multimedia local agregando y conectando automáticamente los nodos de origen, transformación y salida. TopoEdit no resuelve automáticamente la topología. Para reproducir la topología, resálala y, a continuación, use los controles de transporte.
+TopoEdit puede crear una topología de reproducción para un archivo multimedia local agregando y conectando automáticamente los nodos de origen, transformación y salida. TopoEdit no resuelve automáticamente la topología. Para reproducir la topología, resálala y, a continuación, use los controles de transporte.
 
 ## <a name="to-build-and-play-a-topology-for-a-media-file"></a>Para compilar y reproducir una topología para un archivo multimedia
 
-1.  En el menú **Archivo** , haga clic en **Representar archivo**.
+1.  En el menú **Archivo** , haga clic **en Representar archivo**.
 
-    Se abrirá el cuadro **de diálogo Seleccionar origen** multimedia.
+    Se abrirá el cuadro **de diálogo Seleccionar origen** multimedia .
 
 2.  Vaya a la carpeta donde se encuentra el archivo multimedia.
 3.  En el **campo Nombre de archivo:** , escriba el nombre del archivo.
@@ -42,7 +42,7 @@ TopoEdit puede compilar una topología de reproducción para un archivo multimed
 [Controles de reproducción en TopoEdit](playback-controls-in-topoedit.md)
 </dt> <dt>
 
-[Resolver una topología con TopoEdit](resolving-a-topology-with-topoedit.md)
+[Resolución de una topología con TopoEdit](resolving-a-topology-with-topoedit.md)
 </dt> <dt>
 
 [TopoEdit](topoedit.md)

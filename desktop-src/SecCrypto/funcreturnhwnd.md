@@ -1,7 +1,7 @@
 ---
-description: Lo utiliza un proveedor de servicios criptográficos (CSP) para obtener el identificador de ventana que el CSP debe utilizar como elemento primario o propietario de cualquier interfaz de usuario que se muestre.
+description: Lo usa un proveedor de servicios criptográficos (CSP) para obtener el identificador de ventana que el CSP debe usar como primario o propietario de cualquier interfaz de usuario que se muestre.
 ms.assetid: 56f189e7-073b-4b42-b6ab-0147853fe6d5
-title: CRYPT_RETURN_HWND puntero a función (Cspdk. h)
+title: CRYPT_RETURN_HWND puntero de función (Cspdk.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - UserDefined
 api_location:
 - Cspdk.h
-ms.openlocfilehash: 32fadef6c231aa2ca63305a3da9d2142d0abe9c2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 387e1e9140dac8081acf851eb7125a612506783adbeefe1174137ff7f74fae9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119006753"
 ---
-# <a name="crypt_return_hwnd-function-pointer"></a>CRYPT \_ Return ( \_ puntero de función HWND)
+# <a name="crypt_return_hwnd-function-pointer"></a>Puntero de \_ función CRYPT RETURN \_ HWND
 
-Un [*proveedor de servicios criptográficos*](../secgloss/c-gly.md) (CSP) utiliza la función de devolución de llamada **FuncReturnhWnd** para obtener el identificador de ventana que el CSP debe usar como elemento primario o propietario de cualquier interfaz de usuario que se muestra.
+Un proveedor de servicios criptográficos (CSP) [](../secgloss/c-gly.md) usa la función de devolución de llamada **FuncReturnhWnd** para obtener el identificador de ventana que debe usar el CSP como el primario o el propietario de cualquier interfaz de usuario que se muestre.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ typedef void ( WINAPI *CRYPT_RETURN_HWND)(
 *phWnd* \[ in, out\]
 </dt> <dd>
 
-Dirección de una variable **hWnd** que recibe el identificador de la ventana primaria.
+Dirección de una variable **HWND** que recibe el identificador de ventana principal.
 
 </dd> </dl>
 
@@ -56,9 +56,9 @@ Este puntero de función no devuelve un valor.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Cspdk. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Cspdk.h</dt> </dl> |
 
 
 

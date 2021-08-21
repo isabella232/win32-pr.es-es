@@ -1,11 +1,11 @@
 ---
 title: Método IVMVirtualMachineEvents OnGuestLogoff (VPCCOMInterfaces.h)
-description: Recibe la notificación de que un usuario ha cerrado la sesión del sistema operativo invitado.
+description: Recibe la notificación de que un usuario ha cerrado sesión en el sistema operativo invitado.
 ms.assetid: 3771ba28-eea9-4c8b-9224-231b00d2f2f5
 keywords:
 - OnGuestLogoff, método Virtual PC
-- Método OnGuestLogoff De PC virtual, interfaz IVMVirtualMachineEvents
-- IVMVirtualMachineEvents interface Virtual PC , OnGuestLogoff method
+- Método OnGuestLogoff Virtual PC , interfaz IVMVirtualMachineEvents
+- IVMVirtualMachineEvents interface Virtual PC , Método OnGuestLogoff
 topic_type:
 - apiref
 api_name:
@@ -27,7 +27,7 @@ ms.locfileid: "119056584"
 
 \[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Recibe la notificación de que un usuario ha cerrado la sesión del sistema operativo invitado.
+Recibe la notificación de que un usuario ha cerrado sesión en el sistema operativo invitado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,7 +59,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
@@ -70,7 +70,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

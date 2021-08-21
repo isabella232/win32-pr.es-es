@@ -23,9 +23,9 @@ ms.locfileid: "119047143"
 ---
 # <a name="dodownloadstate-enumeration"></a>DODownloadState (enumeración)
 
-La **enumeración DODownloadState** especifica el identificador del estado de descarga actual, que forma parte de la **estructura DO_DOWNLOAD_STATUS** datos.
+La **enumeración DODownloadState** especifica el identificador del estado de descarga actual, que forma parte de la **DO_DOWNLOAD_STATUS** actual.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef enum _DODownloadState
@@ -41,7 +41,7 @@ typedef enum _DODownloadState
 
 ## <a name="constants"></a>Constantes
 
-| Requisito | Value |
+| Requisito | Valor |
 |-|-|
 | DODownloadState_Created | El objeto de descarga se ha creado, pero aún no se ha iniciado. |
 | DODownloadState_Transferring | La descarga está en curso. |

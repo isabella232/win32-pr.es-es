@@ -21,13 +21,13 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119083739"
 ---
-# <a name="wmt_videoimage_transition_reveal"></a>WMT \_ VIDEOIMAGE \_ TRANSITION \_ REVEAL
+# <a name="wmt_videoimage_transition_reveal"></a>VÍDEO DE \_ WMTIMAGE \_ TRANSITION \_ REVEAL
 
 La transición reveal revela la nueva imagen a lo largo de una línea recta que se origina en un lado del marco.
 
 ## <a name="parameters"></a>Parámetros
 
-En la tabla siguiente se describen los parámetros usados por esta transición y se enumeran los miembros de la estructura [**\_ VIDEOIMAGE \_ SAMPLE2**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2) de WMT a la que están asignados.
+En la tabla siguiente se describen los parámetros utilizados por esta transición y se enumeran los miembros de la estructura [**\_ VIDEOIMAGE \_ SAMPLE2**](/previous-versions/windows/desktop/api/Wmsdkidl/ns-wmsdkidl-wmt_videoimage_sample2) de WMT a la que se asignan.
 
 
 
@@ -55,10 +55,10 @@ En la tabla siguiente se describen los parámetros usados por esta transición y
 <td><strong>fEffectPara1</strong></td>
 <td>Dirección de la revelación. Establezca en uno de los siguientes valores:<br/>
 <ul>
-<li>0: mostrar a la derecha; originar desde el lado izquierdo del marco.</li>
-<li>1 - Mostrar a la izquierda; originar desde el lado derecho del marco.</li>
-<li>2 - Mostrar hacia arriba; originar desde la parte inferior del marco.</li>
-<li>3 - Mostrar hacia abajo; originar desde la parte superior del marco.</li>
+<li>0- Mostrar a la derecha; se origina en el lado izquierdo del marco.</li>
+<li>1 - Mostrar a la izquierda; se origina en el lado derecho del marco.</li>
+<li>2 - Mostrar hacia arriba; se origina en la parte inferior del marco.</li>
+<li>3 - Mostrar hacia abajo; se originan en la parte superior del marco.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -87,7 +87,7 @@ En la tabla siguiente se describen los parámetros usados por esta transición y
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

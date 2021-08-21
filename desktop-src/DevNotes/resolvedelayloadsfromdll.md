@@ -1,7 +1,7 @@
 ---
-description: Reenvía el trabajo en la resolución de las importaciones de carga retrasada del archivo binario primario a un binario de destino.
+description: Reenvía el trabajo para resolver las importaciones de carga retrasada desde el binario primario a un binario de destino.
 ms.assetid: 65629d7b-36b0-426b-a20d-ec736b8461dc
-title: ResolveDelayLoadsFromDll función)
+title: Función ResolveDelayLoadsFromDll
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_location:
 - kernelbase.dll
 - mincoredload.dll
 - minkernelbase.dll
-ms.openlocfilehash: a0fb517de7384a964c21c9e1a0a3e695a0d6e6cc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 894360a20456b73d0cfad19cd125405caf0c3624821aca21e3e107699d1cc372
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119571545"
 ---
-# <a name="resolvedelayloadsfromdll-function"></a>ResolveDelayLoadsFromDll función)
+# <a name="resolvedelayloadsfromdll-function"></a>Función ResolveDelayLoadsFromDll
 
-Reenvía el trabajo en la resolución de las importaciones de carga retrasada del archivo binario primario a un binario de destino.
+Reenvía el trabajo para resolver las importaciones de carga retrasada desde el binario primario a un binario de destino.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,14 +45,14 @@ NTSTATUS WINAPI ResolveDelayLoadsFromDll(
 
 <dl> <dt>
 
-*ParentBase* \[ de\]
+*ParentBase* \[ En\]
 </dt> <dd>
 
-La dirección base del módulo que retrasa la carga otro binario.
+La dirección base del módulo que retrasa carga otro binario.
 
 </dd> <dt>
 
-*TargetDllName* \[ de\]
+*TargetDllName* \[ En\]
 </dt> <dd>
 
 Nombre del archivo DLL de destino.
@@ -62,13 +62,13 @@ Nombre del archivo DLL de destino.
 *Marcas* 
 </dt> <dd>
 
-Sector debe ser 0.
+Reservado; debe ser 0.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La dirección del descriptor de carga retrasada, si se encuentra; de lo contrario, **es null**.
+Dirección del descriptor de carga retrasada, si se encuentra; de lo contrario, **NULL.**
 
 ## <a name="requirements"></a>Requisitos
 

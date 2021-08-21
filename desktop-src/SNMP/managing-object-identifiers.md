@@ -13,7 +13,7 @@ ms.locfileid: "119009423"
 ---
 # <a name="managing-object-identifiers"></a>Administrar identificadores de objeto
 
-La API de WinSNMP proporciona varias funciones de utilidad [WinSNMP](winsnmp-functions.md) que simplifican la manipulación de identificadores de objeto para aplicaciones WinSNMP.
+La API de WinSNMP proporciona varias funciones de utilidad [WinSNMP](winsnmp-functions.md) que simplifican la manipulación de identificadores de objetos para aplicaciones WinSNMP.
 
 La [**función SnmpOidToStr**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpoidtostr) convierte la representación binaria interna de un identificador de objeto a su formato de cadena numérica de puntos. Al llamar a [**SnmpOidToStr**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpoidtostr), especifique un búfer de cadena de longitud MAXOBJIDSTRSIZE (1408 bytes) para asegurarse de que el búfer de salida es lo suficientemente grande como para contener la cadena convertida. Para convertir un identificador de objeto del formato de cadena numérica de puntos a su representación binaria interna, llame a [**la función SnmpStrToOid.**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpstrtooid)
 

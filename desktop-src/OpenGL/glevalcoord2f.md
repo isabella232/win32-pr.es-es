@@ -61,13 +61,13 @@ Esta función no devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-La [**función glEvalCoord2f**](glevalcoord2d.md) evalúa los mapas bidimensionales habilitados mediante dos valores de dominio, *u* y *v*. Defina mapas con [**glMap2.**](glmap2.md) Habilite o deshabilite con [**glEnable**](glenable.md) [**y glDisable**](gldisable.md).
+La [**función glEvalCoord2f**](glevalcoord2d.md) evalúa los mapas bidimensionales habilitados mediante dos valores de dominio, *u* y *v*. Defina mapas con [**glMap2.**](glmap2.md) Habilite o deshabilite con [**glEnable**](glenable.md) [**y glDisable.**](gldisable.md)
 
-Cuando se emite una de las funciones **glEvalCoord,** se evalúan todos los mapas habilitados actualmente de la dimensión indicada. A continuación, para cada asignación habilitada, es como si la función OpenGL correspondiente se emitiese con el valor calculado. Es decir, si GL \_ MAP1 \_ INDEX o GL \_ MAP2 INDEX están \_ habilitados, se simula una función [**glIndex.**](glindex-functions.md) Si GL \_ MAP1 \_ COLOR \_ 4 o GL \_ MAP2 \_ COLOR \_ 4 están habilitados, se simula una función **glcolor.** Si GL MAP1 NORMAL o GL MAP2 NORMAL están habilitados, Se genera un vector normal y, si se habilita alguna de LAS FUNCIONES \_ \_ \_ \_ \_ MAP1 \_ TEXTURE \_ COORD \_ 1, GL \_ MAP1 \_ TEXTURE \_ COORD \_ 2, GL \_ \_ MAP1 TEXTURE \_ COORD \_ 3, GL \_ MAP1 TEXTURE \_ \_ \_ COORD 4, GL \_ MAP2 TEXTURE \_ \_ COORD \_ 1, GL \_ MAP2 TEXTURE \_ \_ COORD \_ 2, GL \_ MAP2 TEXTURE \_ \_ COORD 3 y GL \_ MAP2 TEXTURE COORD 4, \_ \_ \_ \_ [](gltexcoord-functions.md) se simula una función glTexCoord adecuada.
+Cuando se emite una de las funciones **glEvalCoord,** se evalúan todos los mapas habilitados actualmente de la dimensión indicada. A continuación, para cada asignación habilitada, es como si la función OpenGL correspondiente se emitiese con el valor calculado. Es decir, si GL MAP1 INDEX o \_ \_ GL \_ MAP2 INDEX están \_ habilitados, se simula una función [**glIndex.**](glindex-functions.md) Si GL \_ MAP1 \_ COLOR \_ 4 o GL \_ MAP2 COLOR 4 están habilitados, se simula \_ una función \_ **glcolor.** Si GL MAP1 NORMAL o GL MAP2 NORMAL están habilitados, Se genera un vector normal y, si se ha habilitado alguna de las funciones \_ \_ GL \_ \_ \_ MAP1 TEXTURE \_ \_ COORD \_ 1, GL \_ MAP1 TEXTURE \_ \_ COORD \_ 2, GL \_ \_ MAP1 TEXTURE \_ COORD \_ 3, GL \_ MAP1 TEXTURE \_ \_ \_ COORD 4, GL \_ MAP2 TEXTURE \_ \_ \_ COORD 1, GL \_ MAP2 TEXTURE \_ \_ COORD \_ 2, GL \_ MAP2 TEXTURE \_ \_ COORD 3 y GL \_ MAP2 TEXTURE COORD 4, \_ \_ \_ \_ [](gltexcoord-functions.md) se simula una función glTexCoord adecuada.
 
-OpenGL usa valores evaluados en lugar de valores actuales para las evaluaciones habilitadas y los valores actuales en caso contrario, para las coordenadas de color, índice de color, normal y textura. Sin embargo, los valores evaluados no actualizan los valores actuales. Por lo tanto, si las funciones [**glVertex**](glvertex-functions.md) se intercalan con funciones **glEvalCoord,** las coordenadas de color, normal y textura asociadas a las funciones **glVertex** no se ven afectadas por los valores generados por las funciones **glEvalCoord,** sino solo por las funciones [**glColor**](glcolor-functions.md), [**glIndex,**](glindex-functions.md) [**glNormal**](glnormal-functions.md)y [**glTexCoord**](gltexcoord-functions.md) más recientes.
+OpenGL usa valores evaluados en lugar de valores actuales para las evaluaciones que están habilitadas y los valores actuales en caso contrario, para las coordenadas de color, índice de color, normal y textura. Sin embargo, los valores evaluados no actualizan los valores actuales. Por lo tanto, si las funciones [**glVertex**](glvertex-functions.md) se intercalan con funciones **glEvalCoord,** las coordenadas de color, normal y textura asociadas a las funciones **glVertex** no se ven afectadas por los valores generados por las funciones **glEvalCoord,** sino solo por las funciones [**glColor**](glcolor-functions.md), [**glIndex**](glindex-functions.md), [**glNormal**](glnormal-functions.md)y [**glTexCoord**](gltexcoord-functions.md) más recientes.
 
-Si la generación normal automática está habilitada, [**glEvalCoord2f**](glevalcoord2d.md) llama [**a glEnable**](glenable.md) con el argumento GL AUTO NORMAL para generar normales de superficie de forma analítica, independientemente del contenido o de la habilitación del mapa \_ NORMAL DE GL \_ \_ \_ MAP2. Let
+Si la generación normal automática está habilitada, [**glEvalCoord2f**](glevalcoord2d.md) llama a [**glEnable**](glenable.md) con el argumento GL AUTO NORMAL para generar normales de superficie analíticamente, independientemente del contenido o de la habilitación del mapa \_ NORMAL de GL \_ \_ \_ MAP2. Let
 
 ![Ecuación que muestra un valor entre productos para un mapa m.](images/evlcrd01.png)
 
@@ -129,7 +129,7 @@ Las siguientes funciones recuperan información relacionada con [**la función g
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -43,7 +43,7 @@ El **elemento de publicación** se define mediante el tipo complejo [**ChannelTy
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

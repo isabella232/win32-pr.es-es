@@ -99,7 +99,7 @@ public static void JetGetColumnInfo(
     
     Rellenado con información sobre la columna.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
