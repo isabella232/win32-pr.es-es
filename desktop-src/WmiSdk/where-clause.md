@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Cláusula WHERE (WMI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0587bffb1a10c4611773de8a61fdb7ac1576952
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 6a6a51657dac26a002890bde8346cd7570f6057f2ace5cdfb5350d6c90d0fee8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111386733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118312186"
 ---
 # <a name="where-clause-wmi"></a>Cláusula WHERE (WMI)
 
-Use la cláusula WHERE para restringir el ámbito de una consulta de datos, eventos o esquema. Para obtener más información, [vea Consulta con WQL.](querying-with-wql.md) La cláusula WHERE se forma de una propiedad o palabra clave, un operador y una constante. Todas las cláusulas WHERE deben especificar uno de los operadores predefinidos que se incluyen en el lenguaje de consulta (WQL) Instrumental de administración de Windows (WMI). Puede anexar la cláusula WHERE a la instrucción SELECT mediante uno de los siguientes formularios:
+Use la cláusula WHERE para restringir el ámbito de una consulta de datos, eventos o esquema. Para obtener más información, [vea Consulta con WQL.](querying-with-wql.md) La cláusula WHERE se forma de una propiedad o palabra clave, un operador y una constante. Todas las cláusulas WHERE deben especificar uno de los operadores predefinidos que se incluyen en el lenguaje de consulta (WQL) Windows Management Instrumentation (WMI). Puede anexar la cláusula WHERE a la instrucción SELECT mediante uno de los siguientes formularios:
 
 
 ```sql
@@ -24,17 +24,17 @@ SELECT * FROM class WHERE constant operator property
 
 
 
-donde es el elemento sobre el que se consulta, class es la clase en la que se consulta, y constant, operator y property son la constante, el operador y la propiedad o palabra clave que se van a \* usar. Para obtener más información sobre la instrucción SELECT, vea [Instrucción SELECT](select-statement-for-data-queries.md)para consultas de datos , Instrucción SELECT para consultas [de](select-statement-for-event-queries.md)eventos o Instrucción SELECT para consultas [de esquema.](select-statement-for-schema-queries.md)
+donde es el elemento sobre el que se consulta, class es la clase en la que se va a consultar, y constant, operator y property son la constante, el operador y la propiedad o palabra clave que se van a \* usar. Para obtener más información sobre la instrucción SELECT, vea [Instrucción SELECT](select-statement-for-data-queries.md)para consultas de datos , Instrucción SELECT para consultas [de](select-statement-for-event-queries.md)eventos o Instrucción SELECT para consultas [de esquema.](select-statement-for-schema-queries.md)
 
 El valor de la constante debe ser del tipo correcto para la propiedad . Además, el operador debe estar entre la lista de operadores [WQL válidos.](wql-operators.md) Un nombre de propiedad o una constante deben aparecer a ambos lados del operador en la cláusula WHERE.
 
-Puede usar literales de cadena, como "NTFS", en una cláusula WHERE. Si desea incluir los siguientes caracteres especiales en la cadena, primero debe usar como prefijo el carácter con una barra diagonal inversa ( \\ ):
+Puede usar literales de cadena, como "NTFS", en una cláusula WHERE. Si desea incluir los siguientes caracteres especiales en la cadena, primero debe hacer un escape del carácter antefiriendo el carácter con una barra diagonal inversa ( \\ ):
 
 -   barra diagonal inversa ( \\ \\ )
 -   comillas dobles ( \\ ")
 -   comillas simples ( \\ ')
 
-No se pueden usar expresiones aritméticas arbitrarias. Por ejemplo, la consulta siguiente devuelve solo las instancias de la clase [**\_ LogicalDisk de Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) que representan unidades NTFS:
+No se pueden usar expresiones aritméticas arbitrarias. Por ejemplo, la consulta siguiente devuelve solo las instancias de la [**clase \_ LogicalDisk de Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) que representan unidades NTFS:
 
 
 ```sql

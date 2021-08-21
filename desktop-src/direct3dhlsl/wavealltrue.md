@@ -1,9 +1,9 @@
 ---
 title: Función WaveActiveAllTrue
-description: Devuelve true si la expresión es true en todos los carriles activos de la ola actual.
+description: Devuelve true si la expresión es true en todos los sentidos activos de la ola actual.
 ms.assetid: C4EC5A02-6070-4FF4-B855-F597FFFE66F0
 keywords:
-- Función WaveActiveAllTrue HLSL
+- Función HLSL de WaveActiveAllTrue
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "118504875"
 ---
 # <a name="waveactivealltrue-function"></a>Función WaveActiveAllTrue
 
-Devuelve true si la expresión es true en todos los carriles activos de la ola actual.
+Devuelve true si la expresión es true en todos los sentidos activos de la ola actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ Expresión booleana que se evaluará.
 
 ## <a name="return-value"></a>Valor devuelto
 
-True si la expresión es true en todos los carriles.
+True si la expresión es true en todos los sentidos.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -55,14 +55,14 @@ Esta función se admite desde el modelo de sombreador 6.0 en todas las fases del
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [Información general del modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
 </dt> <dt>
 
-[Shader Model 6](shader-model-6-0.md)
+[Modelo de sombreador 6](shader-model-6-0.md)
 </dt> </dl>
 
  

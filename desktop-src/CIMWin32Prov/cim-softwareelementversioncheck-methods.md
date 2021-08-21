@@ -12,12 +12,12 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118421286"
 ---
-# <a name="cim_softwareelementversioncheck-methods"></a>Métodos \_ de CIM SoftwareElementVersionCheck
+# <a name="cim_softwareelementversioncheck-methods"></a>Métodos \_ Cim SoftwareElementVersionCheck
 
 La [**clase \_ CIM SoftwareElementVersionCheck**](cim-softwareelementversioncheck.md) expone los métodos siguientes.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

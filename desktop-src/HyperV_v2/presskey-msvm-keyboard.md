@@ -1,7 +1,7 @@
 ---
 description: Simula una pulsación de tecla.
 ms.assetid: 42C11F92-6143-40D7-9C07-56A6514EB4D1
-title: Método PressKey de la clase Msvm_Keyboard
+title: Método PressKey de la Msvm_Keyboard clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5e9f196c5af3f8946460564e56bb425ffc24b51c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93dfa4ca5ad1233f1d36323e5d59c31e194398df2b0b941036c8fc0ff182d505
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118146164"
 ---
-# <a name="presskey-method-of-the-msvm_keyboard-class"></a>Método PressKey de la \_ clase de teclado MSVM
+# <a name="presskey-method-of-the-msvm_keyboard-class"></a>Método PressKey de la clase Msvm \_ Keyboard
 
-Simula una pulsación de tecla. Cuando se realice correctamente, la clave estará en estado inactivo.
+Simula una pulsación de tecla. Cuando se realiza correctamente, la clave estará en estado de baja.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,20 +39,20 @@ uint32 PressKey(
 
 <dl> <dt>
 
-*KeyCode* \[ de\]
+*keyCode* \[ En\]
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Código de tecla virtual de la tecla que se va a presionar. Para obtener la lista de códigos de tecla virtual, consulte [**códigos de tecla virtual**](../inputdev/virtual-key-codes.md).
+Código de clave virtual de la tecla que se debe presionar. Para obtener la lista de códigos de clave virtual, vea [**Códigos de clave virtual**](../inputdev/virtual-key-codes.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Un valor devuelto de cero indica que se ha realizado correctamente. Un valor distinto de cero indica un error al modificar el estado de la clave.
+Un valor devuelto de cero indica que se ha correcto. Un valor distinto de cero indica un error al modificar el estado de la clave.
 
 <dl> <dt>
 
@@ -71,16 +71,16 @@ Un valor devuelto de cero indica que se ha realizado correctamente. Un valor dis
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**Sistema en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -89,21 +89,21 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método **PressKey** asigna referencias a los **\_ menús VK** (18), **VK \_ (** 17) y **VK \_ Shift** (16) a **VK \_ LMENU** (164), **VK \_ LCONTROL** (162) y **VK \_ LSHIFT** (160), respectivamente, ya que el **\_ menú VK**, el **\_ control VK** y los códigos de tecla virtual **\_ Shift de VK** no representan claves reales en un teclado.
+El método **PressKey** asigna referencias al menú de **VK \_** (18), **\_ VK CONTROL** (17) y **VK \_ SHIFT** (16) a **VK \_ LMENU** (164), **VK \_ LCONTROL** (162) y **VK \_ LSHIFT** (160), respectivamente, porque los códigos de clave virtual **VK \_ MENU,** **VK \_ CONTROL** y **VK \_ MAYÚS** no representan claves reales en un teclado.
 
-El acceso a la clase de [**\_ teclado MSVM**](msvm-keyboard.md) puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a [**la clase Msvm \_ Keyboard**](msvm-keyboard.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de C# se simula una pulsación de tecla. Las utilidades a las que se hace referencia se pueden encontrar en [utilidades comunes para los ejemplos de virtualización (V2)](common-utilities-for-the-virtualization-samples-v2.md).
+El siguiente ejemplo de C# simula una pulsación de tecla. Las utilidades a las que se hace referencia se pueden encontrar [en Utilidades comunes para los ejemplos de virtualización (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 
 ```CSharp
@@ -185,7 +185,7 @@ namespace HyperVSamples
 
 
 
-En el siguiente ejemplo de Visual Basic Scripting Edition (VBScript) se simula una pulsación de tecla.
+El ejemplo Visual Basic Scripting Edition (VBScript) siguiente simula una pulsación de tecla.
 
 
 ```VB
@@ -321,12 +321,12 @@ End Function
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -335,10 +335,10 @@ End Function
 
 <dl> <dt>
 
-[**\_Teclado MSVM**](msvm-keyboard.md)
+[**Teclado de \_ Msvm**](msvm-keyboard.md)
 </dt> <dt>
 
-[**Códigos de tecla virtual**](../inputdev/virtual-key-codes.md)
+[**Códigos de clave virtual**](../inputdev/virtual-key-codes.md)
 </dt> </dl>
 
  

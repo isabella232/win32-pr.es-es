@@ -1,9 +1,9 @@
 ---
-title: Enumeraciones (referencia de HLSL)
+title: Enumeraciones (referencia hlsl)
 description: Esta sección contiene información sobre las siguientes enumeraciones del compilador HLSL de Direct3D
 ms.assetid: 684508d8-2289-4124-9910-93c6bf0a1f99
 keywords:
-- enumeraciones, compilador
+- enumeraciones, Compilador
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,14 +11,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0df5c590b308ff8dd2992566b7519018bbe3b057
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: db9acf03af6dfee919f452a58dca64f72200646713d16cc426422b2020eb12bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118091522"
 ---
-# <a name="enumerations-hlsl-reference"></a>Enumeraciones (referencia de HLSL)
+# <a name="enumerations-hlsl-reference"></a>Enumeraciones (referencia hlsl)
 
 Esta sección contiene información sobre las siguientes enumeraciones del compilador HLSL de Direct3D:
 
@@ -26,12 +26,12 @@ Esta sección contiene información sobre las siguientes enumeraciones del compi
 
 | Enumeración                                                  | Descripción                                                |
 |--------------------------------------------------------------|------------------------------------------------------------|
-| [**\_Elemento de BLOB D3D \_**](/windows/win32/api/d3dcompiler/ne-d3dcompiler-d3d_blob_part)                     | Identifica las partes de un BLOB (búfer de datos de longitud arbitraria). |
-| [**D3DCOMPILER \_ marcas de franjas \_**](/windows/win32/api/d3dcompiler/ne-d3dcompiler-d3dcompiler_strip_flags) | Opciones de marca de franja.                                        |
+| [**D3D \_ BLOB \_ PART**](/windows/win32/api/d3dcompiler/ne-d3dcompiler-d3d_blob_part)                     | Identifica partes de un blob (búfer de datos de longitud arbitraria). |
+| [**MARCAS DE FRANJA DE D3DCOMPILER \_ \_**](/windows/win32/api/d3dcompiler/ne-d3dcompiler-d3dcompiler_strip_flags) | Opciones de marca de franja.                                        |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -40,6 +40,6 @@ Esta sección contiene información sobre las siguientes enumeraciones del compi
 [Referencia de D3DCompiler](dx-graphics-d3dcompiler-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

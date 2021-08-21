@@ -48,7 +48,7 @@ Identificador de la aplicación que se va a registrar como cliente.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** los efectos 3D están activos; de lo contrario, devuelve **FALSE**.
+Devuelve **TRUE si** los efectos 3D están activos; de lo contrario, devuelve **FALSE.**
 
 ## <a name="remarks"></a>Comentarios
 

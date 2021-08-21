@@ -36,7 +36,7 @@ Para una propiedad de recurso, este atributo indica si se está utilizando como 
 | Frecuencia de actualización  | \-                                           |
 | Attribute-Id      | 1.2.840.113556.1.4.2095                      |
 | System-Id-Guid    | 51c9f89d-4730-468d-a2b5-1d493212d17e         |
-| Syntax            | [**Booleana**](s-boolean.md)                 |
+| Syntax            | [**Boolean**](s-boolean.md)                 |
 
 
 
@@ -48,7 +48,7 @@ Para una propiedad de recurso, este atributo indica si se está utilizando como 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |

@@ -3,7 +3,7 @@ title: ProxyStubClsid32
 description: Mapas un IID a un CLSID en archivos DLL de proxy de 32 bits.
 ms.assetid: 8d63d2b1-c8ba-4fe8-8025-e7ceee422ee7
 keywords:
-- Valor del Registro PROXYStubClsid32 COM
+- ProxyStubClsid32 valor del Registro COM
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 4d9098ffc7771d3f900489292694ade462a2214e733294a1ed18e6ddb9817692
@@ -29,7 +29,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface
 
 Se trata de **un valor \_ SZ reg** que especifica el CLSID para el IID.
 
-Se trata de una entrada obligatoria, ya que la asignación de IID a CLSID puede ser diferente para interfaces de 16 y 32 bits. La asignación de IID a CLSID depende de la forma en que los servidores proxy de interfaz se empaquetan en un conjunto de archivos DLL de proxy.
+Se trata de una entrada necesaria, ya que la asignación de IID a CLSID puede ser diferente para interfaces de 16 y 32 bits. La asignación de IID a CLSID depende de la forma en que los servidores proxy de interfaz se empaquetan en un conjunto de archivos DLL de proxy.
 
 Si agrega interfaces, debe usar esta entrada para registrarlas (sistemas de 32 bits) para que OLE pueda encontrar el código de comunicación remota adecuado para establecer la comunicación entre procesos.
 

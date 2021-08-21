@@ -1,11 +1,11 @@
 ---
-title: 'Phone-Home: atributo principal'
+title: Teléfono-Home-Primary
 description: Número de teléfono principal del usuario.
 ms.assetid: 624d89fd-942c-448d-bd51-7d93954370b1
 ms.tgt_platform: multiple
 keywords:
-- 'Phone-Home: esquema de AD de atributo principal'
-- homePhone esquema de AD de atributos
+- Teléfono esquema de AD de atributo principal-principal de Teléfono inicio
+- Esquema de AD del atributo homePhone
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c2d2e68116a15dcbf4431d33bb56b4ffed8ee2e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 321ba35912db00e8b33f840d73cd68010166c7e38a19e6b6a43e64bc886a8496
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118176714"
 ---
-# <a name="phone-home-primary-attribute"></a>Phone-Home: atributo principal
+# <a name="phone-home-primary-attribute"></a>Teléfono-Home-Primary
 
 Número de teléfono principal del usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | Teléfono-Inicio-principal                                                               |
-| Nombre para mostrar de LDAP | homePhone                                                                        |
-| Tamaño              | \-                                                                               |
-| Actualizar privilegio  | Administrador de dominio o propietario de la cuenta.                                           |
-| Frecuencia de actualización  | Cuando se crea el registro del usuario y cada vez que es necesario cambiar el número de teléfono. |
+| CN                | Teléfono-Home-Primary                                                               |
+| Ldap-Display-Name | homePhone                                                                        |
+| Size              | \-                                                                               |
+| Actualizar privilegios  | Administrador de dominio o propietario de la cuenta.                                           |
+| Frecuencia de actualización  | Cuando se crea el registro del usuario y siempre que sea necesario cambiar el número de teléfono. |
 | Attribute-Id      | 0.9.2342.19200300.100.1.20                                                       |
-| System-ID-GUID    | f0f8ffa1-1191-11d0-a060-00aa006c33ed                                             |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | f0f8ffa1-1191-11d0-a060-00aa006c33ed                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -55,13 +55,13 @@ Número de teléfono principal del usuario.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x3A09                                                             |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | True                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Verdadero                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -76,18 +76,18 @@ Número de teléfono principal del usuario.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                       |
+| Id. de vínculo                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A09                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                    |
-| Tiene un único valor       | True                                                                                                                                                     |
-| Está indexado             | False                                                                                                                                                    |
-| En el catálogo global      | True                                                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                             |
+| System-Only            | Falso                                                                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                                                                     |
+| Está indexado             | Falso                                                                                                                                                    |
+| En el catálogo global      | Verdadero                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                               |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Número de teléfono principal del usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                       |
+| Id. de vínculo                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A09                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                    |
-| Tiene un único valor       | True                                                                                                                                                     |
-| Está indexado             | False                                                                                                                                                    |
-| En el catálogo global      | True                                                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                             |
+| System-Only            | Falso                                                                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                                                                     |
+| Está indexado             | Falso                                                                                                                                                    |
+| En el catálogo global      | Verdadero                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                               |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Número de teléfono principal del usuario.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                       |
+| Id. de vínculo                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A09                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                    |
-| Tiene un único valor       | True                                                                                                                                                     |
-| Está indexado             | False                                                                                                                                                    |
-| En el catálogo global      | True                                                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                             |
+| System-Only            | Falso                                                                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                                                                     |
+| Está indexado             | Falso                                                                                                                                                    |
+| En el catálogo global      | Verdadero                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                               |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Número de teléfono principal del usuario.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                       |
+| Id. de vínculo                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A09                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                    |
-| Tiene un único valor       | True                                                                                                                                                     |
-| Está indexado             | False                                                                                                                                                    |
-| En el catálogo global      | True                                                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                             |
+| System-Only            | Falso                                                                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                                                                     |
+| Está indexado             | Falso                                                                                                                                                    |
+| En el catálogo global      | Verdadero                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
 | System-Flags           | 0x00000010                                                                                                                                               |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Organizational-Person**](c-organizationalperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -160,13 +160,13 @@ Número de teléfono principal del usuario.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                       |
+| Id. de vínculo                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A09                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                    |
-| Tiene un único valor       | True                                                                                                                                                     |
-| Está indexado             | False                                                                                                                                                    |
-| En el catálogo global      | True                                                                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                             |
+| System-Only            | Falso                                                                                                                                                    |
+| Es de un solo valor       | Verdadero                                                                                                                                                     |
+| Está indexado             | Falso                                                                                                                                                    |
+| En el catálogo global      | Verdadero                                                                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |

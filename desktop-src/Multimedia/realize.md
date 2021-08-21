@@ -1,9 +1,9 @@
 ---
-title: comando de realización
-description: El comando de vista indica a un dispositivo que seleccione y dé su paleta en el contexto de presentación de la ventana mostrada. Los dispositivos de vídeo digital reconocen este comando.
+title: comando realize
+description: El comando realize indica a un dispositivo que seleccione y se dé cuenta de su paleta en el contexto de presentación de la ventana mostrada. Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: ad3a52dc-5c8d-47fc-95bd-437b700fc029
 keywords:
-- obtener comandos de Windows multimedia
+- realización del comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33accaa9638210adf4385a1776fcd8d2bd2021e7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fc0aba1e610f4636c7dbfb71fbc959d9b4b8496cc23e91a97100ef6edce133b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118371440"
 ---
-# <a name="realize-command"></a>comando de realización
+# <a name="realize-command"></a>comando realize
 
-El comando de vista indica a un dispositivo que seleccione y dé su paleta en el contexto de presentación de la ventana mostrada. Los dispositivos de vídeo digital reconocen este comando.
+El comando realize indica a un dispositivo que seleccione y se dé cuenta de su paleta en el contexto de presentación de la ventana mostrada. Los dispositivos de vídeo digital reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -53,10 +53,10 @@ Una de las marcas siguientes.
 
 
 
-| Value      | Significado                                                                   |
+| Valor      | Significado                                                                   |
 |------------|---------------------------------------------------------------------------|
-| background | Obtiene la paleta como una paleta de fondo.                             |
-| normal     | Obtiene la paleta de una ventana de nivel superior. Esta es la configuración predeterminada. |
+| background | Realiza la paleta como una paleta de fondo.                             |
+| normal     | Realiza la paleta de una ventana de nivel superior. Esta es la configuración predeterminada. |
 
 
 
@@ -67,21 +67,21 @@ Una de las marcas siguientes.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify" o ambos. En el caso de los dispositivos de vídeo digital, también se puede especificar "Test". Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo digital, también se puede especificar "prueba". Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use este comando solo si la aplicación usa un identificador de ventana y recibe un mensaje de **WM \_ QUERYNEWPALLETTE** o **WM \_ PALETTECHANGED** .
+Use este comando solo si la aplicación usa un identificador de ventana y recibe un mensaje **\_ WM QUERYNEWPALVARIABLE** **o WM \_ PALETTECHANGED.**
 
 ## <a name="examples"></a>Ejemplos
 
-El comando siguiente indica al dispositivo "Televideo" que dé su paleta.
+El comando siguiente indica al dispositivo "myvideo" que se dé cuenta de su paleta.
 
 ``` syntax
 realize myvideo normal
@@ -91,21 +91,21 @@ realize myvideo normal
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> </dl>
 
  

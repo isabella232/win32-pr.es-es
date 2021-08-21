@@ -1,53 +1,53 @@
 ---
-title: Ámbitos de portabilidad
-description: 'Al trasladar esferas a OpenGL, tenga en cuenta los puntos siguientes:'
+title: Porte de esferas
+description: Al portear esferas a OpenGL, tenga en cuenta los siguientes puntos
 ms.assetid: ca6bb515-076d-45fc-bcdd-3d71877560fb
 keywords:
-- Migración de la contabilidad de IRIS, esferas
-- portabilidad de IRIS GL, esferas
-- trasladar a OpenGL desde IRIS GL, esferas
-- Exportación de OpenGL desde IRIS GL, esferas
-- dibujar funciones, esferas
-- esferas
+- Porte de IRIS GL, esferas
+- porting from IRIS GL,spheres
+- porte a OpenGL desde IRIS GL, esferas
+- Porte de OpenGL desde IRIS GL,spheres
+- funciones de dibujo, esferas
+- Esferas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f48ac31c0204111173d9eb2d31a3119873ef45b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: af1e0666393e923767d342d215622e0ed58bfa7b1b620e045a0054b31918a7a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118358315"
 ---
-# <a name="porting-spheres"></a>Ámbitos de portabilidad
+# <a name="porting-spheres"></a>Porte de esferas
 
-Al trasladar esferas a OpenGL, tenga en cuenta los puntos siguientes:
+Al portear esferas a OpenGL, tenga en cuenta los siguientes puntos:
 
--   No se puede controlar el tipo de primitivas que se usan para dibujar la esfera. Puede controlar la precisión del dibujo de otra manera: usar los parámetros de segmentos y pilas. Los sectores son longitudinales; las pilas son latitudinal.
--   Los esferas se dibujan centrados en el origen. En lugar de especificar la ubicación, como se hace con la función **sphdraw** de la contabilidad de iris, preceda a una llamada a la función Glu [**gluSphere**](glusphere.md) con una traducción.
--   La biblioteca de esfera todavía no está disponible para OpenGL.
+-   No se puede controlar el tipo de primitivas usadas para dibujar la esfera. Puede controlar la precisión del dibujo de otra manera: use los parámetros de segmentos y pilas. Los segmentos son muy diferentes; las pilas son latitudinales.
+-   Las esferas se dibujan centradas en el origen. En lugar de especificar la ubicación, como se hace con la función **sphdraw** de IRIS GL, preceda una llamada a la función [**gluSphere de**](glusphere.md) GLU con una traducción.
+-   La biblioteca sphere aún no está disponible para OpenGL.
 
-En la tabla siguiente se enumeran las funciones de GL de IRIS para dibujar esferas y sus funciones equivalentes de GLU cuando están disponibles.
+En la tabla siguiente se enumeran las funciones GL de IRIS para dibujar esferas y sus funciones GLU equivalentes cuando estén disponibles.
 
 
 
-| Función de GL de IRIS | GLU función)                                 | Significado                                       |
+| Función GL de IRIS | Función GLU                                 | Significado                                       |
 |------------------|----------------------------------------------|-----------------------------------------------|
 | **sphobj**       | [**gluNewQuadric**](glunewquadric.md)       | Crea un nuevo objeto sphere.                  |
-| **sphfree**      | [**gluDeleteQuadric**](gludeletequadric.md) | Elimina el objeto de esfera y la memoria libre utilizada.   |
+| **sphfree**      | [**gluDeleteQuadric**](gludeletequadric.md) | Elimina el objeto sphere y la memoria libre usada.   |
 | **sphdraw**      | [**gluSphere**](glusphere.md)               | Dibuja una esfera.                               |
 | **sphmode**      |                                              | Establece atributos de esfera.                       |
-| **sphrotmatrix** |                                              | Controla la orientación de esfera.                  |
+| **sphrotmatrix** |                                              | Controla la orientación de la esfera.                  |
 | **sphgnpolys**   |                                              | Devuelve el número de polígonos en la esfera actual. |
 
 
 
- 
+ 
 
 ??
 
- 
+ 
 
- 
+ 
 
 
 

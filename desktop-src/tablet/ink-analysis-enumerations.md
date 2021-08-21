@@ -21,7 +21,7 @@ Esta sección contiene información sobre las enumeraciones usadas en el anális
 
 | Enumeración                                              | Descripción                                                                                                                               |
 |----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AnalysisModes**](analysismodes.md)                   | Especifica cómo [**realiza IInkAnalyzer**](iinkanalyzer.md) el análisis de entrada de lápiz.<br/>                                                  |
+| [**AnalysisModes**](analysismodes.md)                   | Especifica cómo [**IInkAnalyzer**](iinkanalyzer.md) realiza el análisis de entrada de lápiz.<br/>                                                  |
 | [**AnalysisWarningCode**](analysiswarningcode.md)       | Especifica el conjunto de advertencias disponibles que pueden producirse durante el análisis de entrada de lápiz.<br/>                                                    |
 | [**ConfirmationType**](confirmationtype.md)             | Especifica el tipo de confirmación que puede producirse en un [**objeto IContextNode.**](icontextnode.md)<br/>                           |
 | [**ContextLinkDirection**](contextlinkdirection.md)     | Especifica los tipos de [**objetos IContextLink.**](icontextlink.md)<br/>                                                           |

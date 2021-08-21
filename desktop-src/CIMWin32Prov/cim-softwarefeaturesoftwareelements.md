@@ -28,11 +28,11 @@ ms.locfileid: "118421117"
 La **\_ asociación CIM SoftwareFeatureSoftwareElements** identifica los elementos de software que son una característica de software específica.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-La sintaxis siguiente se simplifica a Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -94,7 +94,7 @@ Esta propiedad se hereda del [**componente CIM \_**](cim-component.md).
 
 La **\_ asociación CIM SoftwareFeatureSoftwareElements** se deriva del [**componente \_ CIM**](cim-component.md).
 
-WMI no implementa esta clase. Para las clases WMI derivadas de **CIM \_ SoftwareFeatureSoftwareElements**, vea [Clases Win32](win32-provider.md).
+WMI no implementa esta clase. Para obtener clases WMI derivadas de **CIM \_ SoftwareFeatureSoftwareElements**, vea [Clases win32](win32-provider.md).
 
 Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
@@ -112,7 +112,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

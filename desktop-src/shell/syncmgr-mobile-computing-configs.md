@@ -22,7 +22,7 @@ El Administrador de sincronización es útil para los equipos configurados de la
 
 -   El equipo móvil se usa en una estación de acoplamiento en una red de ancho de banda alto, pero en ocasiones se usa a través de una conexión de acceso telefónico.
 -   Equipo móvil que se usa principalmente a través de una conexión de acceso telefónico.
--   Equipo de escritorio que se usa estrictamente a través de una conexión de acceso telefónico, como un equipo usado por un teletrabajo.
+-   Equipo de escritorio usado estrictamente a través de una conexión de acceso telefónico, como un equipo usado por un teletrabajo.
 -   Equipo de escritorio usado estrictamente a través de una red de ancho de banda alto.
 
 Aunque el último caso no es un escenario móvil típico, los problemas de latencia con el acceso a la red pueden hacer que sea conveniente almacenar en caché los recursos localmente. En todas estas configuraciones, la aplicación puede usar SyncMgr para mantener los archivos y otros recursos almacenados en caché localmente y sincronizados entre el uso en línea y sin conexión.

@@ -19,7 +19,7 @@ ms.locfileid: "118493549"
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentOSSnapshotInvalidSequenceException](./esentossnapshotinvalidsequenceexception-class.md) expone los miembros siguientes.
+El [tipo EsentOSSnapshotInvalidSequenceException](./esentossnapshotinvalidsequenceexception-class.md) expone los siguientes miembros.
 
 ## <a name="methods"></a>Métodos
 

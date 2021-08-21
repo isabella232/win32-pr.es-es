@@ -15,16 +15,16 @@ ms.locfileid: "118449335"
 
 En esta sección se explica cómo recuperar el marcado MathML del control de entrada matemática mediante el Active Template Library (ATL) y el modelo de objetos componentes (COM).
 
-Para recuperar la ecuación matemática reconocida del control de entrada matemática, puede invalidar el comportamiento que se produce cuando se presiona el botón insertar. Para ello, deberá configurar un controlador de eventos que implemente los distintos eventos admitidos por la [**\_ interfaz IMathInputControlEvents.**](/windows/win32/api/micaut/nn-micaut-_imathinputcontrolevents) La configuración del controlador de eventos implica realizar los pasos siguientes para los eventos que desea admitir (inserte en este caso).
+Para recuperar la ecuación matemática reconocida del control de entrada matemática, puede invalidar el comportamiento que se produce cuando se presiona el botón insertar. Para ello, deberá configurar un controlador de eventos que implemente los distintos eventos compatibles con la [**\_ interfaz IMathInputControlEvents.**](/windows/win32/api/micaut/nn-micaut-_imathinputcontrolevents) La configuración del controlador de eventos implica realizar los pasos siguientes para los eventos que desea admitir (insertar en este caso).
 
 -   [Creación de una clase de plantilla que contiene receptores de eventos](#create-a-template-class-that-contains-event-sinks)
 -   [Configuración de los controladores de eventos](#set-up-the-event-handlers)
--   [Heredar la clase de controlador de eventos de la clase principal](#inherit-the-event-handler-class-in-your-main-class)
--   [Inicialice la clase para heredar los receptores de eventos.](#initialize-your-class-to-inherit-the-event-sinks)
+-   [Heredar la clase de controlador de eventos en la clase principal](#inherit-the-event-handler-class-in-your-main-class)
+-   [Inicialización de la clase para heredar los receptores de eventos](#initialize-your-class-to-inherit-the-event-sinks)
 
 ## <a name="create-a-template-class-that-contains-event-sinks"></a>Creación de una clase de plantilla que contiene receptores de eventos
 
-Al implementar un receptor de eventos que usa el control de entrada matemático, primero debe especificar un identificador de receptor. A continuación, debe crear una clase de plantilla que herede de las interfaces de eventos event, event control handler e math input control. El código siguiente muestra cómo establecer un identificador de receptor y crear una clase de plantilla, CMathInputControlEventHandler, que hereda de las interfaces necesarias. Esta clase de plantilla también está configurada para tener un puntero de interfaz desconocido privado que se usará para pasarle el control de entrada matemático en la inicialización y el miembro m ulAdviseCount para contar el número de llamadas que se aconsejan o \_ desvía.
+Al implementar un receptor de eventos que usa el control de entrada matemático, primero debe especificar un identificador de receptor. A continuación, debe crear una clase de plantilla que herede del evento, el controlador de control de eventos y las interfaces de eventos de control de entrada matemáticas. El código siguiente muestra cómo establecer un identificador de receptor y crear una clase de plantilla, CMathInputControlEventHandler, que hereda de las interfaces necesarias. Esta clase de plantilla también está configurada para tener un puntero de interfaz desconocido privado que se usará para pasarle el control de entrada matemático en la inicialización y el miembro m ulAdviseCount para contar el número de llamadas que se aconsejan o \_ desvía.
 
 
 ```
@@ -50,7 +50,7 @@ private:
 
  
 
-Ahora que tiene la clase de plantilla básica, debe proporcionar una declaración de reenvío para los controladores de eventos que va a invalidar y, a continuación, debe configurar un mapa de receptor para los eventos que va a controlar. El código siguiente muestra cómo configurar controladores de eventos para el método [**Insert,**](/previous-versions/windows/desktop/legacy/dd317352(v=vs.85)) al que se llama cuando un usuario hace clic en el botón insertar en el control de entrada matemática, y el método [**Close,**](/previous-versions/windows/desktop/legacy/dd317351(v=vs.85)) al que se llama cuando un usuario hace clic en el botón cancelar del control de entrada matemática.
+Ahora que tiene la clase de plantilla básica, debe proporcionar una declaración adelantada para los controladores de eventos que va a invalidar y, a continuación, debe configurar un mapa receptor para los eventos que va a controlar. En el código siguiente se muestra cómo configurar controladores de eventos para el método [**Insert,**](/previous-versions/windows/desktop/legacy/dd317352(v=vs.85)) al que se llama cuando un usuario hace clic en el botón insertar en el control de entrada matemática y el método [**Close,**](/previous-versions/windows/desktop/legacy/dd317351(v=vs.85)) al que se llama cuando un usuario hace clic en el botón cancelar del control de entrada matemática.
 
 
 ```
@@ -86,7 +86,7 @@ Puesto que trabajará con el control de entrada matemática, será útil estable
 
 ## <a name="set-up-the-event-handlers"></a>Configuración de los controladores de eventos
 
-Una vez configurados los receptores de eventos, deberá crear las implementaciones de los receptores de eventos. En ambos métodos del ejemplo de código siguiente, los receptores de eventos recuperan un identificador para la interfaz de control de entrada matemática. En la [**función Insert,**](/previous-versions/windows/desktop/legacy/dd317352(v=vs.85)) el resultado del reconocimiento se muestra como MathML y el control está oculto. En la [**función Close,**](/previous-versions/windows/desktop/legacy/dd317351(v=vs.85)) el control de entrada matemático está oculto.
+Una vez que haya configurado los receptores de eventos, deberá crear las implementaciones de los receptores de eventos. En ambos métodos del ejemplo de código siguiente, los receptores de eventos recuperan un identificador a la interfaz de control de entrada matemática. En la [**función Insert,**](/previous-versions/windows/desktop/legacy/dd317352(v=vs.85)) el resultado del reconocimiento se muestra como MathML y el control está oculto. En la [**función Close,**](/previous-versions/windows/desktop/legacy/dd317351(v=vs.85)) el control de entrada matemática está oculto.
 
 
 ```
@@ -121,9 +121,9 @@ Una vez configurados los receptores de eventos, deberá crear las implementacion
 
 
 
-## <a name="inherit-the-event-handler-class-in-your-main-class"></a>Heredar la clase de controlador de eventos de la clase principal
+## <a name="inherit-the-event-handler-class-in-your-main-class"></a>Heredar la clase de controlador de eventos en la clase principal
 
-Una vez implementada la clase de plantilla, deberá heredarla en la clase en la que va a configurar el control de entrada matemática. Para los fines de esta guía, esta clase es un diálogo, CMIC \_ TEST \_ EVENTSDlg. En el encabezado del cuadro de diálogo, se deben incluir los encabezados necesarios y se debe heredar la clase de plantilla que creó. La clase en la que hereda y los controladores de eventos deben tener declaraciones de reenvío para que se pueda implementar la plantilla. En el ejemplo de código siguiente se muestra cómo se hace esto.
+Una vez implementada la clase de plantilla, deberá heredarla en la clase en la que configurará el control de entrada matemática. Para los fines de esta guía, esta clase es un diálogo, CMIC \_ TEST \_ EVENTSDlg. En el encabezado del cuadro de diálogo, se deben incluir los encabezados necesarios y se debe heredar la clase de plantilla que creó. La clase que hereda dentro de y los controladores de eventos deben tener declaraciones de reenvío para que se pueda implementar la plantilla. En el ejemplo de código siguiente se muestra cómo se hace esto.
 
 
 ```
@@ -160,9 +160,9 @@ class CMIC_TEST_EVENTSDlg : public CDialog,
 
  
 
-## <a name="initialize-your-class-to-inherit-the-event-sinks"></a>Inicialice la clase para heredar los receptores de eventos.
+## <a name="initialize-your-class-to-inherit-the-event-sinks"></a>Inicialización de la clase para heredar los receptores de eventos
 
-Una vez que haya configurado la clase para heredar de la clase de plantilla, estará listo para configurarla para controlar eventos. Esto conste de inicializar la clase para que tenga un identificador para el control de entrada matemático y la clase que realiza la llamada. Además, el control de entrada matemático desde el que controlar eventos se debe enviar al método DispEventAdvise que hereda la clase de ejemplo CMathInputControlEventHandler. Se llama al código siguiente desde el método OnInitDialog de la clase de ejemplo para realizar estas acciones.
+Una vez que haya configurado la clase para heredar de la clase de plantilla, estará listo para configurarla para controlar los eventos. Esto constará de inicializar la clase para que tenga un identificador para el control de entrada matemática y la clase que realiza la llamada. Además, el control de entrada matemático desde el que se controlan los eventos debe enviarse al método DispEventAdvise que hereda la clase de ejemplo CMathInputControlEventHandler. Se llama al código siguiente desde el método OnInitDialog de la clase de ejemplo para realizar estas acciones.
 
 
 ```

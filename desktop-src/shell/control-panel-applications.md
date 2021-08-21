@@ -1,6 +1,6 @@
 ---
-description: Panel de control son archivos DLL o archivos ejecutables (.exe) que permiten a los usuarios configurar el entorno de Windows. Normalmente se accede a ellos haciendo clic en un icono de la Panel de control.
-title: Implementación de Panel de control de datos
+description: Panel de control son archivos DLL o ejecutables (.exe) que permiten a los usuarios configurar el entorno de Windows. Normalmente se accede a ellos haciendo clic en un icono de la Panel de control.
+title: Implementación de Panel de control elementos
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 2e61cbc0-fbb5-4680-8123-f8ffdcf98210
@@ -16,23 +16,23 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118460625"
 ---
-# <a name="implementing-control-panel-items"></a>Implementación de Panel de control de datos
+# <a name="implementing-control-panel-items"></a>Implementación de Panel de control elementos
 
-Panel de control son archivos DLL o archivos ejecutables (.exe) que permiten a los usuarios configurar el entorno de Windows. Normalmente se accede a ellos haciendo clic en un icono de la Panel de control.
+Panel de control son archivos DLL o ejecutables (.exe) que permiten a los usuarios configurar el entorno de Windows. Normalmente se accede a ellos haciendo clic en un icono de la Panel de control.
 
-En esta sección se Panel de control y se explica cómo crearlos y registrarlos para que aparezcan correctamente en el Panel de control. Para Windows Vista, se incluye información que indica cómo agregar vínculos de tareas que aparecen en el elemento Panel de control y en los Panel de control de búsqueda.
+En esta sección se Panel de control y se explica cómo crearlos y registrarlos para que aparezcan correctamente en el Panel de control. Para Windows Vista, se incluye información que indica cómo agregar vínculos de tarea que aparecen en el elemento Panel de control y en los resultados Panel de control búsqueda.
 
 -   [Directrices de la experiencia de usuario](user-experience-guidelines.md)
 -   [Registro de Panel de control elementos](registering-control-panel-items.md)
 -   [Cómo registrar elementos ejecutables Panel de control aplicación](how-to-register-an-executable-control-panel-item-registration-.md)
--   [Cómo registrar elementos de Panel de control DLL](how-to-register-dll-control-panel-item-registration-.md)
+-   [Registro de elementos de Panel de control DLL](how-to-register-dll-control-panel-item-registration-.md)
 -   [Uso de CPLApplet](using-cplapplet.md)
 -   [Panel de control de mensajes](message-processing.md)
--   [Ejecución de Panel de control de datos](executing-control-panel-items.md)
+-   [Ejecución de Panel de control elementos](executing-control-panel-items.md)
 -   [Extender elementos de Panel de control sistema](extending-system-control-panel-items.md)
 -   [Asignación de Panel de control categorías](assigning-control-panel-categories.md)
--   [Crear vínculos de tareas buscables para un elemento Panel de control búsqueda](creating-searchable-task-links.md)
--   [Acceso al Panel de control en modo Caja fuerte usuario](accessing-the-cp-in-safe-mode-under-vista.md)
+-   [Crear vínculos de tareas que se pueden buscar para un elemento Panel de control búsqueda](creating-searchable-task-links.md)
+-   [Acceso a la Panel de control en Caja fuerte modo](accessing-the-cp-in-safe-mode-under-vista.md)
 -   [Nombres canónicos de Panel de control elementos](controlpanel-canonical-names.md)
 
  

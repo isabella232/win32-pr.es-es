@@ -1,6 +1,6 @@
 ---
-description: En esta sección se describen las Windows control de la paleta de colores de Shell. Los elementos de programación que se explican en esta documentación se exportan Shlwapi.dll y se definen en Shlwapi.h y Shlwapi.lib.
-title: Funciones de control de paleta de colores de shell
+description: En esta sección se describen las funciones Windows control de la paleta de colores de Shell. Los elementos de programación que se explican en esta documentación se exportan Shlwapi.dll y se definen en Shlwapi.h y Shlwapi.lib.
+title: Funciones de control de paleta de colores de Shell
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 93848cb3-60c6-4b2f-82d9-abfee97e372a
@@ -16,9 +16,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118452122"
 ---
-# <a name="shell-color-palette-handling-functions"></a>Funciones de control de paleta de colores de shell
+# <a name="shell-color-palette-handling-functions"></a>Funciones de control de paleta de colores de Shell
 
-En esta sección se describen las Windows control de la paleta de colores de Shell. Los elementos de programación que se explican en esta documentación se exportan Shlwapi.dll y se definen en Shlwapi.h y Shlwapi.lib.
+En esta sección se describen las funciones Windows control de la paleta de colores de Shell. Los elementos de programación que se explican en esta documentación se exportan Shlwapi.dll y se definen en Shlwapi.h y Shlwapi.lib.
 
 ## <a name="in-this-section"></a>En esta sección
 

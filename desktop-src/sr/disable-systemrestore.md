@@ -3,8 +3,8 @@ title: Método Disable de la clase SystemRestore
 description: Deshabilita la supervisión en una unidad determinada.
 ms.assetid: 2ad37dd4-7d80-4697-9dbb-abb329a34ff7
 keywords:
-- Deshabilitar método Restaurar sistema
-- Disable method Restaurar sistema , SystemRestore (clase)
+- Deshabilitar el método Restaurar sistema
+- Deshabilitar método Restaurar sistema , clase SystemRestore
 - SystemRestore class Restaurar sistema , Disable (método)
 topic_type:
 - apiref
@@ -81,16 +81,16 @@ End If
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                       |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                         |
 | Espacio de nombres<br/>                | Raíz \\ predeterminada<br/>                                                          |
 | MOF<br/>                      | <dl> <dt>Sr.mof</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

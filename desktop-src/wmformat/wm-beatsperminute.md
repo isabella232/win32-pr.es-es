@@ -31,7 +31,7 @@ g \_ wszWMBeatsPerMinute
 
 **CADENA DE \_ TIPO \_ WMT**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El valor de un **atributo BeatsPerMinute** es un entero almacenado como una cadena.
 

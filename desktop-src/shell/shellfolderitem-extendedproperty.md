@@ -44,7 +44,7 @@ retVal = ShellFolderItem.ExtendedProperty(
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Valor **String** que especifica la propiedad . Para obtener información detallada, consulte la sección Comentarios.
+Valor **string** que especifica la propiedad . Para obtener información detallada, consulte la sección Comentarios.
 
 </dd> </dl>
 
@@ -52,21 +52,21 @@ Valor **String** que especifica la propiedad . Para obtener información detalla
 
 Tipo: **\* Variant**
 
-Cuando este método devuelve un resultado, contiene el valor de la propiedad , si existe para el elemento especificado. El valor tendrá escritura completa; por ejemplo, las fechas se devuelven como fechas, no como cadenas.
+El resultado que devuelve este método contiene el valor de la propiedad , si existe para el elemento especificado. El valor tendrá escritura completa; por ejemplo, las fechas se devuelven como fechas, no como cadenas.
 
-Este método devuelve una cadena de longitud cero si la propiedad es válida pero no existe para el elemento especificado, o bien un código de error en caso contrario.
+Este método devuelve una cadena de longitud cero si la propiedad es válida pero no existe para el elemento especificado o un código de error de lo contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Hay dos maneras de especificar una propiedad. La primera es asignar el nombre conocido de la propiedad, como "Author" o "Date", a *sPropName*. Sin embargo, cada propiedad es miembro de un conjunto de propiedades del Modelo de objetos componentes (COM) y también se puede identificar especificando su identificador de formato (FMTID) y el identificador de propiedad (PID). Un [**FMTID**](../stg/structured-storage-serialized-property-set-format.md) es un GUID que identifica el conjunto de propiedades y un [**PID**](../stg/structured-storage-serialized-property-set-format.md) es un entero que identifica una propiedad determinada dentro del conjunto de propiedades.
 
-Especificar una propiedad por sus valores FMTID/PID suele ser más eficaz que usar su nombre. Para usar los valores FMTID/PID de una propiedad **con ExtendedProperty**, deben combinarse en un SCID. Un SCID es una cadena que contiene los valores FMTID/PID con el formato *"FMTID**PID",* donde FMTID es la forma de cadena del GUID del conjunto de propiedades. Por ejemplo, el SCID de la propiedad author del conjunto de información de resumen es "{F29F85E0-4FF9-1068-AB91-08002B27B3D9} 4".
+Especificar una propiedad por sus valores FMTID/PID suele ser más eficaz que usar su nombre. Para usar los valores FMTID/PID de una propiedad **con ExtendedProperty,** deben combinarse en un SCID. Un SCID es una cadena que contiene los valores FMTID/PID con el formato *"FMTID**PID",* donde FMTID es la forma de cadena del GUID del conjunto de propiedades. Por ejemplo, el SCID de la propiedad author del conjunto de información de resumen es "{F29F85E0-4FF9-1068-AB91-08002B27B3D9} 4".
 
-Para obtener una lista de FMTID y PID que son compatibles actualmente con el shell, vea [**SHCOLUMNID**](./objects.md).
+Para obtener una lista de FMTID y PID que admite actualmente el shell, vea [**SHCOLUMNID**](./objects.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En este código de ejemplo se muestra cómo usar **ExtendedProperty para** recuperar las propiedades "Title" y "Author" de un documento de Word. Una vez que tenga el [**objeto ShellFolderItem**](shellfolderitem-object.md) asociado al archivo, *fiWordDoc* en este ejemplo, recupere el valor de la propiedad pasando su nombre a **ExtendedProperty**.
+Este código de ejemplo muestra cómo usar **ExtendedProperty para** recuperar las propiedades "Title" y "Author" de un documento de Word. Una vez que tenga el [**objeto ShellFolderItem**](shellfolderitem-object.md) asociado al archivo, *fiWordDoc* en este ejemplo, recupere el valor de la propiedad pasando su nombre a **ExtendedProperty**.
 
 
 ```none
@@ -203,7 +203,7 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                    |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |

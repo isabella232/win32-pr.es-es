@@ -23,7 +23,7 @@ Teredo está diseñado para su uso por los desarrolladores de C/C++ con experien
 
 ## <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 
-La interfaz teredo es compatible principalmente con Windows Vista y Windows Server 2008. La funcionalidad limitada de la interfaz teredo compatible con Windows XP con Service Pack 2 (SP2) y Windows Server 2003 se detalla en Recepción de tráfico solicitado a través [de Teredo.](receiving-solicited-traffic-over-teredo.md)
+La interfaz teredo es compatible principalmente con Windows Vista y Windows Server 2008. La funcionalidad limitada de la interfaz teredo compatible con Windows XP con Service Pack 2 (SP2) y Windows Server 2003 se detalla en Recepción de tráfico solicitado a través [de Teredo](receiving-solicited-traffic-over-teredo.md).
 
 ## <a name="in-this-section"></a>En esta sección
 
