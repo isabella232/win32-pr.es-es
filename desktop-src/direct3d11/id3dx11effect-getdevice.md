@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11Effect GetDevice (D3dx11effect. h)
-description: Obtiene el dispositivo que creó el efecto.
+title: Método Id3DX11Effect GetDevice (D3dx11effect.h)
+description: Obtenga el dispositivo que creó el efecto.
 ms.assetid: efcc0358-9842-46eb-a521-ea220ec18735
 keywords:
 - Método GetDevice Direct3D 11
 - Método GetDevice Direct3D 11, interfaz ID3DX11Effect
-- Interfaz ID3DX11Effect Direct3D 11, método GetDevice
+- ID3DX11Effect interface Direct3D 11 , GetDevice method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25317740cade8a937aeeeac29f5a608bb4a43931
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 54a27dece1915373699d130f8a537a22045f7e86f246402d85bbb400ceb1d8cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124520"
 ---
-# <a name="id3dx11effectgetdevice-method"></a>ID3DX11Effect:: GetDevice (método)
+# <a name="id3dx11effectgetdevice-method"></a>Método ID3DX11Effect::GetDevice
 
-Obtiene el dispositivo que creó el efecto.
+Obtenga el dispositivo que creó el efecto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,7 +48,7 @@ HRESULT GetDevice(
 
 Tipo: **[ **ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device)\*\***
 
-Un puntero a un [**ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device).
+Puntero a [**id3D11Dispositivo.**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device)
 
 </dd> </dl>
 
@@ -56,14 +56,14 @@ Un puntero a un [**ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11dev
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Devuelve uno de los siguientes [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Se crea un efecto para un dispositivo específico mediante una llamada a una función como [**D3DX11CreateEffectFromMemory**](d3dx11createeffectfrommemory.md).
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -73,12 +73,12 @@ Se crea un efecto para un dispositivo específico mediante una llamada a una fun
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

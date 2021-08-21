@@ -1,23 +1,23 @@
 ---
 description: Un TSP usa estas constantes para identificar el tipo de nivel de QoS (calidad de servicio) necesario.
 ms.assetid: 9fc3f6eb-7103-43c5-84f8-3842757e5be7
-title: Constantes de LINEQOSSERVICELEVEL_ (TSPI. h)
+title: LINEQOSSERVICELEVEL_ constantes (Tspi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c0629715e461a15e21e1730f86edb61d83d60db
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1a74a4508b54a8b56e8e9cb359f966122c5c009f0e5ede0f1b8544cd1e46330c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003013"
 ---
-# <a name="lineqosservicelevel_-constants"></a>Constantes de LINEQOSSERVICELEVEL \_
+# <a name="lineqosservicelevel_-constants"></a>LineQOSSERVICELEVEL \_ (Constantes)
 
 Un TSP usa estas constantes para identificar el tipo de nivel de QoS (calidad de servicio) necesario.
 
 <dl> <dt>
 
-<span id="LINEQOSSERVICELEVEL_NEEDED"></span><span id="lineqosservicelevel_needed"></span>**LINEQOSSERVICELEVEL \_ necesaria**
+<span id="LINEQOSSERVICELEVEL_NEEDED"></span><span id="lineqosservicelevel_needed"></span>**LINEQOSSERVICELEVEL \_ NEEDED**
 </dt> <dd> <dl> <dt>
 
  0x00000001
@@ -25,7 +25,7 @@ Un TSP usa estas constantes para identificar el tipo de nivel de QoS (calidad de
 
 
 
-El nivel de calidad de servicio solicitado es un requisito.
+La calidad del nivel de servicio solicitado es un requisito.
 
 
 </dt> </dl> </dd> <dt>
@@ -38,7 +38,7 @@ El nivel de calidad de servicio solicitado es un requisito.
 
 
 
-El nivel de calidad de servicio necesario, si está disponible.
+La calidad del nivel de servicio necesaria, si está disponible.
 
 
 </dt> </dl> </dd> <dt>
@@ -51,7 +51,7 @@ El nivel de calidad de servicio necesario, si está disponible.
 
 
 
-El nivel de calidad de servicio necesario es "mejor esfuerzo".
+La calidad del nivel de servicio necesaria es el "mejor esfuerzo".
 
 
 </dt> </dl> </dd> </dl>
@@ -62,8 +62,8 @@ El nivel de calidad de servicio necesario es "mejor esfuerzo".
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,2<br/>                                                      |
-| Encabezado<br/>       | <dl> <dt>TSPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.2<br/>                                                      |
+| Header<br/>       | <dl> <dt>Tspi.h</dt> </dl> |
 
 
 

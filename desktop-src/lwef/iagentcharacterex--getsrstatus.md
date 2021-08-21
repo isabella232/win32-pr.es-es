@@ -4,16 +4,16 @@ description: IAgentCharacterEx GetSRStatus
 ms.assetid: ccb34108-8078-421a-a883-731b51fae179
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4396e325f5afba161046f2a001cebb29033d709b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 82f9f888fcea9069ff31ccef6b2c1ef5a0148fbb34ba21d03ee881c52056f10b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105543"
 ---
 # <a name="iagentcharacterexgetsrstatus"></a>IAgentCharacterEx::GetSRStatus
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT GetSRStatus(
@@ -23,7 +23,7 @@ HRESULT GetSRStatus(
 
 Recupera el estado de la condición necesaria para admitir la entrada de voz.
 
--   Devuelve S \_ OK para indicar que la operación se realizó correctamente.
+-   Devuelve S \_ OK para indicar que la operación se ha realizado correctamente.
 
 <dl> <dt>
 
@@ -34,15 +34,15 @@ Dirección de una variable que recibe uno de los siguientes valores para la conf
 
 
 
-| Value                                                                               | Descripción                                                                                                                                                                                                                               |
+| Valor                                                                               | Descripción                                                                                                                                                                                                                               |
 |-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **const unsigned Long** **Listen \_ status \_ CANLISTEN = 0;**<br/>               | Las condiciones admiten la entrada de voz.                                                                                                                                                                                                          |
-| **const unsigned Long** **Listen \_ status \_ = 1;**<br/>                 | No hay ningún dispositivo de entrada de audio disponible en este sistema. (Tenga en cuenta que esto no detecta si hay un micrófono instalado; solo puede detectar si el usuario tiene una tarjeta de sonido habilitada para la entrada instalada correctamente con un controlador de trabajo). |
-| **const unsigned Long** **Listen \_ status \_ NOTTOPMOST = 2;**<br/>              | Otro cliente es el cliente activo de este carácter o el carácter actual no es el nivel superior.                                                                                                                                           |
-| **const unsigned Long** **Listen \_ status \_ CANTOPENAUDIO = 3;**<br/>           | El canal de entrada o salida de audio está ocupado actualmente, otra aplicación está usando audio.                                                                                                                                               |
-| **const unsigned Long** **Listen \_ status \_ COULDNTINITIALIZESPEECH = 4;**<br/> | Se produjo un error no especificado en el proceso de inicialización del subsistema de reconocimiento de voz. Esto incluye la posibilidad de que no haya ningún motor de voz disponible que coincida con la configuración de idioma del carácter.                          |
-| **const unsigned Long** **Listen \_ status \_ SPEECHDISABLED = 5;**<br/>          | El usuario ha deshabilitado la entrada de voz en la ventana Opciones de carácter avanzadas.                                                                                                                                                              |
-| **const unsigned Long** **Listen \_ error status \_ = 6;**<br/>                   | Error al comprobar el estado de audio, pero el sistema no ha devuelto la causa del error.                                                                                                                                |
+| **const unsigned long** **LISTEN STATUS \_ \_ CANLISTEN = 0;**<br/>               | Las condiciones admiten la entrada de voz.                                                                                                                                                                                                          |
+| **const unsigned long** **LISTEN STATUS \_ \_ NOAUDIO = 1;**<br/>                 | No hay ningún dispositivo de entrada de audio disponible en este sistema. (Tenga en cuenta que esto no detecta si un micrófono está instalado; solo puede detectar si el usuario tiene una tarjeta de sonido habilitada para entrada correctamente instalada con un controlador de trabajo). |
+| **const unsigned long** **LISTEN STATUS \_ \_ NOTTOPMOST = 2;**<br/>              | Otro cliente es el cliente activo de este carácter o el carácter actual no está en la parte superior.                                                                                                                                           |
+| **const unsigned long** **LISTEN STATUS \_ \_ ¡y¡3;**<br/>           | El canal de entrada o salida de audio está ocupado actualmente, otra aplicación usa audio.                                                                                                                                               |
+| **const unsigned long** **LISTEN STATUS \_ \_ COULDNZONETIALIZESPEECH = 4;**<br/> | Se produjo un error no especificado en el proceso de inicialización del subsistema de reconocimiento de voz. Esto incluye la posibilidad de que no haya ningún motor de voz disponible que coincida con la configuración de idioma del carácter.                          |
+| **const unsigned long** **LISTEN STATUS \_ \_ SPEECHDISABLED = 5;**<br/>          | El usuario ha deshabilitado la entrada de voz en la ventana Opciones avanzadas de caracteres.                                                                                                                                                              |
+| **const unsigned long** **LISTEN STATUS ERROR = \_ \_ 6;**<br/>                   | Se produjo un error al comprobar el estado del audio, pero el sistema no devolvió la causa del error.                                                                                                                                |
 
 
 
@@ -50,11 +50,11 @@ Dirección de una variable que recibe uno de los siguientes valores para la conf
 
 </dd> </dl>
 
-Esta función permite consultar si las condiciones actuales admiten la entrada del reconocimiento de voz, incluido el estado del dispositivo de audio. Si su aplicación usa el método [**IAgentCharacterEx:: Listen**](iagentcharacterex--listen.md) , puede usar esta función para asegurarse de que la llamada se realizará correctamente. La llamada a este método también carga el motor de voz si aún no está cargado. Sin embargo, no activa el modo de escucha.
+Esta función permite consultar si las condiciones actuales admiten la entrada de reconocimiento de voz, incluido el estado del dispositivo de audio. Si la aplicación usa [**el método IAgentCharacterEx::Listen,**](iagentcharacterex--listen.md) puede usar esta función para asegurarse de que la llamada se realizará correctamente. Al llamar a este método también se carga el motor de voz si aún no está cargado. Sin embargo, no activa el modo de escucha.
 
-Cuando se habilita la entrada de voz en la hoja de propiedades del agente (opciones de caracteres avanzadas), al consultar el estado se cargará el motor asociado (si aún no está cargado) e iniciará servicios de voz. Es decir, la clave de escucha está disponible y la sugerencia de escucha es visible. (La clave de escucha y la sugerencia de escucha solo están habilitadas si también están habilitadas en opciones de caracteres avanzadas). Sin embargo, si consulta la propiedad cuando la voz está deshabilitada, el servidor no inicia Speech Services.
+Cuando la entrada de voz está habilitada en la hoja de propiedades del Agente (Opciones avanzadas de caracteres), al consultar el estado se cargará el motor asociado (si aún no está cargado) y se iniciarán los servicios de voz. Es decir, la clave de escucha está disponible y se puede mostrar la sugerencia de escucha. (La clave de escucha y la sugerencia de escucha solo se habilitan si también están habilitadas en Opciones avanzadas de caracteres). Sin embargo, si consulta la propiedad cuando la voz está deshabilitada, el servidor no inicia los servicios de voz.
 
-Esta función solo devuelve el valor del uso de la aplicación cliente del carácter; la configuración no refleja otros clientes del carácter u otros caracteres de la aplicación cliente.
+Esta función devuelve solo la configuración para el uso del carácter por parte de la aplicación cliente; la configuración no refleja otros clientes del carácter u otros caracteres de la aplicación cliente.
 
  
 

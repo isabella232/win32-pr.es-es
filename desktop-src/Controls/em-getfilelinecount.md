@@ -1,9 +1,9 @@
 ---
-title: Mensaje de EM_GETFILELINECOUNT (CommCtrl. h)
-description: Obtiene el número de líneas de un control de edición de varias líneas, independientemente de cómo se muestran las líneas en la pantalla.
+title: EM_GETFILELINECOUNT mensaje (CommCtrl.h)
+description: Obtiene el número de líneas de un control de edición multilínea, independientemente de cómo se muestren las líneas en la pantalla.
 ms.assetid: 9fe63c10-7395-4f98-a672-14960a70d14f
 keywords:
-- EM_GETFILELINECOUNT controles de mensajes de Windows
+- EM_GETFILELINECOUNT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 10/19/2018
-ms.openlocfilehash: bf48b3abeb10b98bf0c22a7dd2ef93c73a2a59c6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 28539af32212a699e12d2cf1d1787fa2e7aaa224f374eb6a63717279fcad16b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019683"
 ---
-# <a name="em_getfilelinecount-message-commctrlh"></a>Mensaje de EM_GETFILELINECOUNT (CommCtrl. h)
+# <a name="em_getfilelinecount-message-commctrlh"></a>EM_GETFILELINECOUNT mensaje (CommCtrl.h)
 
-Obtiene el número de líneas de un control de edición de varias líneas, independientemente de cómo se muestran las líneas en la pantalla.
+Obtiene el número de líneas de un control de edición multilínea, independientemente de cómo se muestren las líneas en la pantalla.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,26 +32,26 @@ Obtiene el número de líneas de un control de edición de varias líneas, indep
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es un entero que especifica el número total de líneas de texto en el control de edición de varias líneas, independientemente de cómo se muestren las líneas en la pantalla. Si el control no tiene texto, el valor devuelto es 1. El valor devuelto nunca será menor que 1.
+El valor devuelto es un entero que especifica el número total de líneas de texto en el control de edición multilínea, independientemente de cómo se muestren las líneas en la pantalla. Si el control no tiene texto, el valor devuelto es 1. El valor devuelto nunca será menor que 1.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El **mensaje \_ GETFILELINECOUNT em** recupera el número total de líneas de texto, independientemente de cómo se muestren las líneas en la pantalla, no solo el número de líneas que están visibles actualmente.
+El **mensaje EM \_ GETFILELINECOUNT** recupera el número total de líneas de texto, independientemente de cómo se muestren las líneas en la pantalla, no solo el número de líneas que están visibles actualmente.
 
-El ajuste automático de línea no cambia el número de líneas que devuelve este mensaje, ya que este mensaje funciona independientemente del modo en que se muestran las líneas en la pantalla.
+El ajuste de línea no cambia el número de líneas que devuelve este mensaje, ya que este mensaje funciona independientemente de cómo se muestran las líneas en la pantalla.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ El ajuste automático de línea no cambia el número de líneas que devuelve est
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 y 1809 \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2019 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio 1809 \[\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2019 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>CommCtrl.h</dt> </dl> |
 
 
 
@@ -72,10 +72,10 @@ El ajuste automático de línea no cambia el número de líneas que devuelve est
 **Referencia**
 </dt> <dt>
 
-[**\_GETFILELINE em**](em-getfileline.md)
+[**EM \_ GETFILELINE**](em-getfileline.md)
 </dt> <dt>
 
-[**\_FILELINELENGTH em**](em-filelinelength.md)
+[**EM \_ FILELINELENGTH**](em-filelinelength.md)
 </dt> <dt>
 
 [**Editar \_ GetFileLineCount**](/windows/win32/api/commctrl/nf-commctrl-edit_getfilelinecount)

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 813483efb161a06db5ef7e40da99c391f53565bc
-ms.sourcegitcommit: 88049609e29f91a42442235885abf56f598b06b3
+ms.openlocfilehash: fce4b8f2fec887397794914604a0755049615699af77c5572536b5758bda2d88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110153488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986365"
 ---
 # <a name="message-pragma-directive"></a>message pragma (Directiva)
 
@@ -56,14 +56,14 @@ En el ejemplo siguiente se muestra el procesamiento de mensajes durante el prepr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [Directivas de preprocesador (HLSL de DirectX)](dx-graphics-hlsl-appendix-preprocessor.md)
 </dt> <dt>
 
-[\#Directiva pragma (DirectX HLSL)](dx-graphics-hlsl-appendix-pre-pragma.md)
+[\#directiva pragma (DirectX HLSL)](dx-graphics-hlsl-appendix-pre-pragma.md)
 </dt> </dl>
 
  

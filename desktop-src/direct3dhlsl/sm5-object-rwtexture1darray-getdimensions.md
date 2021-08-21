@@ -1,5 +1,5 @@
 ---
-title: FUNCIÓN RWTexture1DArray::GetDimensions
+title: RWTexture1DArray::GetDimensions (Función)
 description: Devuelve las dimensiones del recurso. | RWTexture1DArray::GetDimensions (Función)
 ms.assetid: 64f2757e-c03c-4f72-b081-1c57656d6e95
 keywords:
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118986025"
 ---
-# <a name="rwtexture1darraygetdimensions-function"></a>FUNCIÓN RWTexture1DArray::GetDimensions
+# <a name="rwtexture1darraygetdimensions-function"></a>RWTexture1DArray::GetDimensions (Función)
 
 Devuelve las dimensiones del recurso.
 
@@ -78,7 +78,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -86,7 +86,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

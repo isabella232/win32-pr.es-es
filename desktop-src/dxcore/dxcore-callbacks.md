@@ -1,19 +1,19 @@
 ---
 title: Devoluciones de llamada de DXCore
-description: Las siguientes devoluciones de llamada se declaran en dxcore_interface. h.
+description: Las devoluciones de llamada siguientes se declaran en dxcore_interface.h.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: 36d829a7803ab08485524b6a791ca3ae7f8071f6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1e1b2e9ef5527b0abbbde29057bc62e5b5df31aab467fc011d1f77e6c15ffc0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078335"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985235"
 ---
 # <a name="dxcore-callbacks"></a>Devoluciones de llamada de DXCore
 
-Las siguientes devoluciones de llamada se declaran en dxcore_interface. h.
+Las devoluciones de llamada siguientes se declaran en dxcore_interface.h.
 
 ## <a name="in-this-section"></a>En esta sección
 

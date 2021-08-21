@@ -1,17 +1,17 @@
 ---
 description: 'D3DX proporciona las siguientes funciones de uso general:'
 ms.assetid: cb2c6b6d-6ac5-47e2-96c2-4a68e86af00f
-title: Funciones de De uso general (gráficos de Direct3D 9)
+title: De uso general (gráficos de Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 228af2d89a0c26d8aacfb0127b7e7fe299d12965
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 4fbd3acbb3248708efb2d9aff4e2baf198f73d5426b186b5531b3d23907e3b33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104494908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122502"
 ---
-# <a name="general-purpose-functions-direct3d-9-graphics"></a>Funciones de De uso general (gráficos de Direct3D 9)
+# <a name="general-purpose-functions-direct3d-9-graphics"></a>De uso general (gráficos de Direct3D 9)
 
 D3DX proporciona las siguientes funciones de uso general:
 
@@ -29,7 +29,7 @@ D3DX proporciona las siguientes funciones de uso general:
 
 <dl> <dt>
 
-[Funciones de D3DX](dx9-graphics-reference-d3dx-functions.md)
+[Funciones D3DX](dx9-graphics-reference-d3dx-functions.md)
 </dt> </dl>
 
  

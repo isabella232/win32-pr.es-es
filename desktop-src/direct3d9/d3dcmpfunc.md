@@ -1,7 +1,7 @@
 ---
 description: Define las funciones de comparación admitidas.
 ms.assetid: 999af3eb-a208-4312-acee-373192ea69e4
-title: Enumeración D3DCMPFUNC (D3D9Types. h)
+title: Enumeración D3DCMPFUNC (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: e49f0e058e795e00349020619f1e6d6310dfd94f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1fa8d0c9288e6c0d516e7fc9b8a07237f553dd6c86072f1895edf9a79c297077
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103914709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989115"
 ---
-# <a name="d3dcmpfunc-enumeration"></a>Enumeración D3DCMPFUNC
+# <a name="d3dcmpfunc-enumeration"></a>D3DCMPFUNC (enumeración)
 
 Define las funciones de comparación admitidas.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -47,21 +47,21 @@ typedef enum D3DCMPFUNC {
 
 <dl> <dt>
 
-<span id="D3DCMP_NEVER"></span><span id="d3dcmp_never"></span>**D3DCMP \_ nunca**
+<span id="D3DCMP_NEVER"></span><span id="d3dcmp_never"></span>**D3DCMP \_ NUNCA**
 </dt> <dd>
 
-Siempre produce un error en la prueba.
+Siempre se producirá un error en la prueba.
 
 </dd> <dt>
 
-<span id="D3DCMP_LESS"></span><span id="d3dcmp_less"></span>**D3DCMP \_ menos**
+<span id="D3DCMP_LESS"></span><span id="d3dcmp_less"></span>**D3DCMP \_ LESS**
 </dt> <dd>
 
 Acepte el nuevo píxel si su valor es menor que el valor del píxel actual.
 
 </dd> <dt>
 
-<span id="D3DCMP_EQUAL"></span><span id="d3dcmp_equal"></span>**Igual a D3DCMP \_**
+<span id="D3DCMP_EQUAL"></span><span id="d3dcmp_equal"></span>**D3DCMP \_ EQUAL**
 </dt> <dd>
 
 Acepte el nuevo píxel si su valor es igual al valor del píxel actual.
@@ -75,44 +75,44 @@ Acepte el nuevo píxel si su valor es menor o igual que el valor del píxel actu
 
 </dd> <dt>
 
-<span id="D3DCMP_GREATER"></span><span id="d3dcmp_greater"></span>**D3DCMP \_ mayor**
+<span id="D3DCMP_GREATER"></span><span id="d3dcmp_greater"></span>**D3DCMP \_ GREATER**
 </dt> <dd>
 
 Acepte el nuevo píxel si su valor es mayor que el valor del píxel actual.
 
 </dd> <dt>
 
-<span id="D3DCMP_NOTEQUAL"></span><span id="d3dcmp_notequal"></span>**\_NOTEQUAL D3DCMP**
+<span id="D3DCMP_NOTEQUAL"></span><span id="d3dcmp_notequal"></span>**D3DCMP \_ NOTEQUAL**
 </dt> <dd>
 
 Acepte el nuevo píxel si su valor no es igual al valor del píxel actual.
 
 </dd> <dt>
 
-<span id="D3DCMP_GREATEREQUAL"></span><span id="d3dcmp_greaterequal"></span>**D3DCMP \_ mayor criticalthreshold**
+<span id="D3DCMP_GREATEREQUAL"></span><span id="d3dcmp_greaterequal"></span>**D3DCMP \_ GREATEREQUAL**
 </dt> <dd>
 
 Acepte el nuevo píxel si su valor es mayor o igual que el valor del píxel actual.
 
 </dd> <dt>
 
-<span id="D3DCMP_ALWAYS"></span><span id="d3dcmp_always"></span>**D3DCMP \_ siempre**
+<span id="D3DCMP_ALWAYS"></span><span id="d3dcmp_always"></span>**D3DCMP \_ ALWAYS**
 </dt> <dd>
 
 Pase siempre la prueba.
 
 </dd> <dt>
 
-<span id="D3DCMP_FORCE_DWORD"></span><span id="d3dcmp_force_dword"></span>**D3DCMP \_ forzar \_ DWORD**
+<span id="D3DCMP_FORCE_DWORD"></span><span id="d3dcmp_force_dword"></span>**D3DCMP \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores de este tipo enumerado definen las funciones de comparación admitidas para los \_ Estados de representación D3DRS ZFUNC, D3DRS \_ ALPHAFUNC y D3DRS \_ STENCILFUNC.
+Los valores de este tipo enumerado definen las funciones de comparación admitidas para los estados de representación D3DRSUNC, \_ D3DRS \_ ALPHAFUNC y D3DRS \_ STENCILFUNC.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -120,7 +120,7 @@ Los valores de este tipo enumerado definen las funciones de comparación admitid
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 

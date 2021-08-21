@@ -13,19 +13,19 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 9A9B6B3F-FBBC-4e76-8018-8858B6392276
-ms.openlocfilehash: 1a1c024b316472be00f119485326b704a4fe8dd0
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 89ea8431df7e8cac09a041bd9a16c805633cd3ec82a2cc506cb30fcf0f0cd39b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032263"
 ---
 # <a name="ishelldispatchcontrolpanelitem-method"></a>Método IShellDispatch.ControlPanelItem
 
 Ejecuta la aplicación Panel de control especificada. Si la aplicación ya está abierta, activará la instancia en ejecución.
 
 > [!Note]  
-> Desde Windows Vista, la mayoría Panel de control aplicaciones son elementos de Shell y no se pueden abrir con esta función. Para abrir esas Panel de control, pase el nombre canónico a control.exe. Por ejemplo:
+> A Windows Vista, la mayoría Panel de control aplicaciones son elementos de Shell y no se pueden abrir con esta función. Para abrir esas Panel de control, pase el nombre canónico a control.exe. Por ejemplo:
 >
 > ``` syntax
 > control.exe /name Microsoft.Personalization
@@ -63,7 +63,7 @@ IShellDispatch.ControlPanelItem( _
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-El Panel de control de archivo de la aplicación.
+El Panel de control nombre de archivo de la aplicación.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Este método no devuelve ningún valor.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método se implementa y se accede a través del [**método Shell.ControlPanelItem.**](shell-controlpanelitem.md)
 
@@ -85,7 +85,7 @@ Este método se implementa y se accede a través del [**método Shell.ControlPan
 
 En los ejemplos siguientes se [**usa ControlPanelItem**](shell-controlpanelitem.md) para ejecutar el Panel de control **de** Propiedades de pantalla elemento. El uso se muestra para JScript, VBScript y Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -139,9 +139,9 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

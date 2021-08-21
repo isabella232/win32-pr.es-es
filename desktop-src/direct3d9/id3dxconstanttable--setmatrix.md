@@ -1,5 +1,5 @@
 ---
-description: Establece una matriz no transaccional.
+description: Establece una matriz sin transacciones.
 ms.assetid: 30369e34-6e9d-4480-a142-e38f46fd38b0
 title: Método ID3DXConstantTable::SetMatrix (D3DX9Shader.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118987565"
 ---
 # <a name="id3dxconstanttablesetmatrix-method"></a>Método ID3DXConstantTable::SetMatrix
 
-Establece una matriz no transaccional.
+Establece una matriz sin transacciones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Puntero a una [**interfaz IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de la matriz de constantes. Vea [D3DXHANDLE.](dx9-graphics-reference-effects-constants.md)
+Identificador único de la matriz de constantes. Vea [D3DXHANDLE](dx9-graphics-reference-effects-constants.md).
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Identificador único de la matriz de constantes. Vea [D3DXHANDLE.](dx9-graphics-
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Puntero a una matriz no transpuesta. Vea [**D3DXMATRIX.**](d3dxmatrix.md)
+Puntero a una matriz sin transacciones. Vea [**D3DXMATRIX.**](d3dxmatrix.md)
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Puntero a una matriz no transpuesta. Vea [**D3DXMATRIX.**](d3dxmatrix.md)
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,7 +86,7 @@ Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,19 +1,19 @@
 ---
-description: Se produce después de cambiarse la propiedad SizeMode del control InkPicture.
+description: Se produce después de cambiar la propiedad SizeMode del control InkPicture.
 ms.assetid: ae56b5a2-e3e2-468c-a572-a9b46eb1d39d
-title: Evento InkPicture. SizeModeChanged (Msinkaut. h)
+title: Evento InkPicture.SizeModeChanged (Msalterut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f270ea141bc8803cbcf1ce4e54b0f73318ed69d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bebcd5a659894c6f70a87ea75f7a99321d94dba2826fd538530f7e6d060d5730
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032033"
 ---
-# <a name="inkpicturesizemodechanged-event"></a>Evento InkPicture. SizeModeChanged
+# <a name="inkpicturesizemodechanged-event"></a>Evento InkPicture.SizeModeChanged
 
-Se produce después de cambiarse la propiedad [**SizeMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_sizemode) del control [InkPicture](inkpicture-control-reference.md) .
+Se produce después de cambiar la propiedad [**SizeMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_sizemode) del control [InkPicture.](inkpicture-control-reference.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -31,17 +31,17 @@ void SizeModeChanged(
 
 <dl> <dt>
 
-*Newmode* \[ de\]
+*NewMode* \[ En\]
 </dt> <dd>
 
-Nuevo estado del control [InkPicture](inkpicture-control-reference.md) , basado en el nuevo valor de la propiedad [**SizeMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_sizemode) .
+Nuevo estado del control [InkPicture,](inkpicture-control-reference.md) basado en el nuevo valor de la [**propiedad SizeMode.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_sizemode)
 
 </dd> <dt>
 
-*OldMode* \[ de\]
+*OldMode* \[ En\]
 </dt> <dd>
 
-Estado anterior del control [InkPicture](inkpicture-control-reference.md) , basado en el valor anterior de la propiedad [**SizeMode**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_sizemode) .
+Estado anterior del control [InkPicture,](inkpicture-control-reference.md) basado en el valor anterior de la [**propiedad SizeMode.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_sizemode)
 
 </dd> </dl>
 
@@ -49,19 +49,19 @@ Estado anterior del control [InkPicture](inkpicture-control-reference.md) , basa
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método de evento se define en la interfaz **\_ IInkPictureEvents** . La interfaz **\_ IInkPictureEvents** implementa la interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de DISPID \_ IPESizeModeChanged.
+Este método de evento se define en la **\_ interfaz IInkPictureEvents.** La **\_ interfaz IInkPictureEvents** implementa la [**interfaz IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de DISPID \_ IPESizeModeChanged.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

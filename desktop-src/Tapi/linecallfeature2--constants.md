@@ -1,19 +1,19 @@
 ---
-description: En las \_ constantes LINECALLFEATURE2 se enumeran las características complementarias disponibles para las conferencias, la transferencia y las llamadas de estacionamiento.
+description: Las constantes LINECALLFEATURE2 enumera las características complementarias disponibles para las \_ llamadas de conferencia, transferencia y aparcamiento.
 ms.assetid: 67a3b587-dd5b-4ccf-ab69-2137604706b8
-title: Constantes de LINECALLFEATURE2_ (TAPI. h)
+title: LINECALLFEATURE2_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 977e71f722fba34da6b2ecbd6a3e914c34a0aae5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 55b1ef95c5427c70455466fdc4e44424a8d7bc92f768698bd3356f28256b4dbc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003143"
 ---
-# <a name="linecallfeature2_-constants"></a>Constantes de LINECALLFEATURE2 \_
+# <a name="linecallfeature2_-constants"></a>LineCALLFEATURE2 \_ Constantes
 
-En las constantes **LINECALLFEATURE2 \_** se enumeran las características complementarias disponibles para las conferencias, la transferencia y las llamadas de estacionamiento.
+Las **constantes LINECALLFEATURE2 \_** enumera las características complementarias disponibles para las llamadas de conferencia, transferencia y aparcamiento.
 
 <dl> <dt>
 
@@ -22,7 +22,7 @@ En las constantes **LINECALLFEATURE2 \_** se enumeran las características compl
 
 
 
-Si este bit está activado, se puede invocar la característica de "devolución de llamada" mediante la \_ opción de devolución de llamada LINECOMPLMODE con [**lineCompleteCall**](/windows/desktop/api/Tapi/nf-tapi-linecompletecall). El \_ bit LINECALLFEATURE COMPLETECALL también estará activado en el miembro **dwCallFeatures** .
+Si este bit está activado, se puede invocar la característica de "devolución de llamada" mediante la opción LINECOMPLMODE \_ CALLBACK [**con lineCompleteCall**](/windows/desktop/api/Tapi/nf-tapi-linecompletecall). El bit LINECALLFEATURE \_ COMPLETECALL también estará en en el **miembro dwCallFeatures.**
 
 
 </dt> </dl> </dd> <dt>
@@ -32,7 +32,7 @@ Si este bit está activado, se puede invocar la característica de "devolución 
 
 
 
-Si este bit está activado, se puede invocar la característica "Camp on" mediante la opción LINECOMPLMODE \_ campoN con [**lineCompleteCall**](/windows/desktop/api/Tapi/nf-tapi-linecompletecall). El \_ bit LINECALLFEATURE COMPLETECALL también estará activado en el miembro **dwCallFeatures** .
+Si este bit está activado, se puede invocar la característica "campo en" mediante la opción LINECOMPLMODE \_ CAMPON [**con lineCompleteCall**](/windows/desktop/api/Tapi/nf-tapi-linecompletecall). El bit LINECALLFEATURE \_ COMPLETECALL también estará en en el **miembro dwCallFeatures.**
 
 
 </dt> </dl> </dd> <dt>
@@ -42,7 +42,7 @@ Si este bit está activado, se puede invocar la característica "Camp on" median
 
 
 
-Si este bit está activado, se puede invocar la característica "intrusión" mediante la opción de \_ intrusión LINECOMPLMODE con [**lineCompleteCall**](/windows/desktop/api/Tapi/nf-tapi-linecompletecall). El \_ bit LINECALLFEATURE COMPLETECALL también estará activado en el miembro **dwCallFeatures** .
+Si este bit está activado, se puede invocar la característica "intrude" mediante la opción LINECOMPLMODE \_ INTRUDE [**con lineCompleteCall**](/windows/desktop/api/Tapi/nf-tapi-linecompletecall). El bit LINECALLFEATURE \_ COMPLETECALL también estará en en el **miembro dwCallFeatures.**
 
 
 </dt> </dl> </dd> <dt>
@@ -52,7 +52,7 @@ Si este bit está activado, se puede invocar la característica "intrusión" med
 
 
 
-Si este bit está activado, se puede invocar la característica "dejar mensaje" mediante la opción de \_ mensaje LINECOMPLMODE con [**lineCompleteCall**](/windows/desktop/api/Tapi/nf-tapi-linecompletecall). El \_ bit LINECALLFEATURE COMPLETECALL también estará activado en el miembro **dwCallFeatures** .
+Si este bit está activado, se puede invocar la característica "leave message" mediante la opción LINECOMPLMODE \_ MESSAGE con [**lineCompleteCall**](/windows/desktop/api/Tapi/nf-tapi-linecompletecall). El bit LINECALLFEATURE \_ COMPLETECALL también estará en en el **miembro dwCallFeatures.**
 
 
 </dt> </dl> </dd> <dt>
@@ -62,7 +62,7 @@ Si este bit está activado, se puede invocar la característica "dejar mensaje" 
 
 
 
-Si este bit está activado, se puede crear una "Conferencia sin celebrar" mediante la \_ opción NOHOLDCONFERENCE de LINECALLPARAMFLAGS con [**lineSetupConference**](/windows/desktop/api/Tapi/nf-tapi-linesetupconference). El \_ bit LINECALLFEATURE SETUPCONF también estará activado en el miembro **dwCallFeatures** .
+Si este bit está en, se puede crear una "conferencia sin espera" mediante la opción LINECALLPARAMFLAGS \_ NOHOLDCONFERENCE [**con lineSetupConference**](/windows/desktop/api/Tapi/nf-tapi-linesetupconference). El bit LINECALLFEATURE \_ SETUPCONF también estará en en el **miembro dwCallFeatures.**
 
 
 </dt> </dl> </dd> <dt>
@@ -72,10 +72,10 @@ Si este bit está activado, se puede crear una "Conferencia sin celebrar" median
 
 
 
-Si este bit está activado, se puede crear una transferencia de un solo paso mediante la \_ opción ONESTEPTRANSFER de LINECALLPARAMFLAGS con [**lineSetupTransfer**](/windows/desktop/api/Tapi/nf-tapi-linesetuptransfer). El \_ bit LINECALLFEATURE SETUPTRANSFER también estará activado en el miembro **dwCallFeatures** .
+Si este bit está en, se puede crear "transferencia de un paso" mediante la opción LINECALLPARAMFLAGS \_ ONESTEPTRANSFER [**con lineSetupTransfer**](/windows/desktop/api/Tapi/nf-tapi-linesetuptransfer). El bit LINECALLFEATURE \_ SETUPTRANSFER también estará en en el **miembro dwCallFeatures.**
 
 > [!Note]  
-> Si no se especifica ninguno de los bits "COMPl" en el miembro **dwCallFeatures2** de [**LINECALLSTATUS**](/windows/desktop/api/Tapi/ns-tapi-linecallstatus) , pero se \_ especifica LINECALLFEATURE COMPLETECALL, es posible que cualquiera de ellos funcione, pero el proveedor de servicios no ha especificado cuál.
+> Si no se especifica ninguno de los bits "COMPL" en el miembro **dwCallFeatures2** en [**LINECALLSTATUS**](/windows/desktop/api/Tapi/ns-tapi-linecallstatus) pero se especifica LINECALLFEATURE COMPLETECALL, es posible que cualquiera de ellos funcione, pero el proveedor de servicios no ha especificado \_ cuál.
 
  
 
@@ -87,7 +87,7 @@ Si este bit está activado, se puede crear una transferencia de un solo paso med
 
 
 
-Si este bit está activado, se puede usar la función [**lineCompleteTransfer**](/windows/desktop/api/Tapi/nf-tapi-linecompletetransfer) para resolver la transferencia como una conferencia de tres vías. El \_ bit LINECALLFEATURE COMPLETETRANSF también estará activado en el miembro **dwCallFeatures** .
+Si este bit está activado, la [**función lineCompleteTransfer**](/windows/desktop/api/Tapi/nf-tapi-linecompletetransfer) se puede usar para resolver la transferencia como una conferencia triple. El bit LINECALLFEATURE \_ COMPLETETRANSF también estará en en el **miembro dwCallFeatures.**
 
 
 </dt> </dl> </dd> <dt>
@@ -97,10 +97,10 @@ Si este bit está activado, se puede usar la función [**lineCompleteTransfer**]
 
 
 
-Si este bit está activado, se puede usar la función [**lineCompleteTransfer**](/windows/desktop/api/Tapi/nf-tapi-linecompletetransfer) para resolver la transferencia como una transferencia normal. El \_ bit LINECALLFEATURE COMPLETETRANSF también estará activado en el miembro **dwCallFeatures** .
+Si este bit está activado, se puede usar [**la función lineCompleteTransfer**](/windows/desktop/api/Tapi/nf-tapi-linecompletetransfer) para resolver la transferencia como una transferencia normal. El bit LINECALLFEATURE \_ COMPLETETRANSF también estará en en el **miembro dwCallFeatures.**
 
 > [!Note]  
-> Si no se especifica TRANSFERNORM ni TRANSFERCONF en el miembro **dwCallFeatures2** de [**LINECALLSTATUS**](/windows/desktop/api/Tapi/ns-tapi-linecallstatus) pero \_ se especifica LINECALLFEATURE COMPLETETRANSF, es posible que funcione, pero el proveedor de servicios no ha especificado cuál.
+> Si no se especifica TRANSFERNORM ni TRANSFERCONF en el miembro **dwCallFeatures2** en [**LINECALLSTATUS**](/windows/desktop/api/Tapi/ns-tapi-linecallstatus) pero se especifica LINECALLFEATURE COMPLETETRANSF, es posible que cualquiera de ellos funcione, pero el proveedor de servicios no ha especificado \_ cuál.
 
  
 
@@ -112,7 +112,7 @@ Si este bit está activado, se puede usar la función [**lineCompleteTransfer**]
 
 
 
-Si este bit está activado, se puede invocar la característica "estacionamiento dirigido" mediante la \_ opción dirigida LINEPARKMODE con [**linePark**](/windows/desktop/api/Tapi/nf-tapi-linepark). El bit de estacionamiento de LINECALLFEATURE \_ también estará activado en el miembro de **dwCallFeatures** .
+Si este bit está on, la característica "directedpark" se puede invocar mediante la opción LINEPARKMODE \_ DIRECTED con [**linePark**](/windows/desktop/api/Tapi/nf-tapi-linepark). El bit LINECALLFEATURE \_ PARK también estará en en el miembro **dwCallFeatures.**
 
 
 </dt> </dl> </dd> <dt>
@@ -122,10 +122,10 @@ Si este bit está activado, se puede invocar la característica "estacionamiento
 
 
 
-Si este bit está activado, se puede invocar la característica "estacionamiento no dirigido" mediante la opción LINEPARKMODE no \_ Directed con [**linePark**](/windows/desktop/api/Tapi/nf-tapi-linepark). El bit de estacionamiento de LINECALLFEATURE \_ también estará activado en el miembro de **dwCallFeatures** .
+Si este bit está on, la característica "non-directedpark" se puede invocar mediante la opción LINEPARKMODE \_ NONDIRECTED con [**linePark**](/windows/desktop/api/Tapi/nf-tapi-linepark). El bit LINECALLFEATURE \_ PARK también estará en en el miembro **dwCallFeatures.**
 
 > [!Note]  
-> Si no se especifica PARKDIRECT ni PARKNONDIRECT en el miembro **dwCallFeatures2** de [**LINECALLSTATUS**](/windows/desktop/api/Tapi/ns-tapi-linecallstatus) pero \_ se especifica LINECALLFEATURE Park, es posible que funcione, pero el proveedor de servicios no ha especificado cuál.
+> Si no se especifica NI PARKDIRECT ni PARKNONDIRECT en el miembro **dwCallFeatures2** en [**LINECALLSTATUS**](/windows/desktop/api/Tapi/ns-tapi-linecallstatus) pero se especifica LINECALLFEATURE PARK, es posible que cualquiera de ellos funcione, pero el proveedor de servicios no ha especificado \_ cuál.
 
  
 
@@ -138,8 +138,8 @@ Si este bit está activado, se puede invocar la característica "estacionamiento
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

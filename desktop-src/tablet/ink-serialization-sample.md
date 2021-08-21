@@ -1,33 +1,33 @@
 ---
-description: Este ejemplo muestra cómo serializar y deserializar la entrada de lápiz en varios formatos.
+description: En este ejemplo se muestra cómo serializar y deserializar la entrada de lápiz en varios formatos.
 ms.assetid: 468d9c2a-0b3c-4a44-a049-3f3b78e952ba
-title: Ejemplo de serialización de tinta
+title: Ejemplo de serialización de entrada de lápiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e898f91db17efcb7579c067e7db5c422da8213a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80e71eed5c91bf4fa1524cc52af163516ced0c7362d0d20b8ecf52ac1a08ccd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032273"
 ---
-# <a name="ink-serialization-sample"></a>Ejemplo de serialización de tinta
+# <a name="ink-serialization-sample"></a>Ejemplo de serialización de entrada de lápiz
 
-Este ejemplo muestra cómo serializar y deserializar la entrada de lápiz en varios formatos. La aplicación representa un formulario con campos para insertar el nombre, el apellido y la firma. El usuario puede guardar estos datos como formato serializado de tinta puro (ISF), lenguaje de marcado extensible (XML) con el ISF con codificación base64 o HTML, que hace referencia a la tinta en una imagen de formato de intercambio de gráficos enriquecido (GIF) codificado en Base64. La aplicación también permite al usuario abrir archivos que se guardaron como formatos XML y ISF. El formato ISF utiliza propiedades extendidas para almacenar el nombre y los apellidos, mientras que los formatos XML y HTML almacenan esta información en atributos personalizados.
+En este ejemplo se muestra cómo serializar y deserializar la entrada de lápiz en varios formatos. La aplicación representa un formulario con campos para introducir el nombre, el apellido y la firma. El usuario puede guardar estos datos como formato serializado de lápiz puro (ISF), lenguaje de marcado extensible (XML) mediante ISF codificado en Base64 o HTML, que hace referencia a la entrada de lápiz en una imagen de Formato de intercambio de gráficos (GIF) codificada en base64. La aplicación también permite al usuario abrir los archivos que se guardaron como formatos XML e ISF. El formato ISF usa propiedades extendidas para almacenar el nombre y los apellidos, mientras que los formatos XML y HTML almacenan esta información en atributos personalizados.
 
-Este ejemplo no admite la carga desde el formato HTML, porque HTML no es adecuado para almacenar datos estructurados. Dado que los datos se separan en el nombre, la firma, etc., se requiere un formato que conserve esta separación, como XML u otro tipo de formato de base de datos.
+Este ejemplo no admite la carga desde el formato HTML, porque HTML no es adecuado para almacenar datos estructurados. Dado que los datos se separan en nombre, firma, entre otros, se requiere un formato que conserve esta separación, como XML u otro tipo de formato de base de datos.
 
-HTML es muy útil en un entorno en el que el formato es importante, por ejemplo, en un documento de procesamiento de texto. El HTML que se guarda en este ejemplo utiliza archivos GIF enriquecidos. Estos archivos GIF tienen ISF incrustados dentro de ellos, lo que conserva la fidelidad total de la tinta. Una aplicación de procesamiento de texto puede guardar un documento que contenga varios tipos de datos, como imágenes, tablas, texto con formato y tinta conservadas en formato HTML. Este código HTML se representaría en exploradores que no reconocen la tinta. Sin embargo, cuando se carga en una aplicación que está habilitada para tinta, la fidelidad total de la tinta original está disponible y se puede representar, editar o utilizar para el reconocimiento.
+HTML es muy útil en un entorno en el que el formato es importante, como en un documento de procesamiento de palabras. El CÓDIGO HTML que se guarda en este ejemplo usa ARCHIVOS GIF con notificación. Estos GIF tienen ISF insertado en ellos, lo que conserva la fidelidad total de la entrada de lápiz. Una aplicación de procesamiento de palabras puede guardar un documento que contiene varios tipos de datos, como imágenes, tablas, texto con formato y entrada de lápiz persistentes en formato HTML. Este CÓDIGO HTML se representaría en exploradores que no reconocen la entrada de lápiz. Sin embargo, cuando se carga en una aplicación habilitada para la entrada de lápiz, la fidelidad total de la entrada de lápiz original está disponible y se puede representar, editar o usar para el reconocimiento.
 
 En este ejemplo se usan las siguientes características:
 
--   Método [Load](/previous-versions/ms569609(v=vs.100)) del objeto [Ink](/previous-versions/aa515768(v=msdn.10))
--   Método [Save](/previous-versions/dotnet/netframework-3.5/ms571335(v=vs.90)) del objeto [Ink](/previous-versions/aa515768(v=msdn.10))
--   Propiedad [ExtendedProperties](/previous-versions/ms582214(v=vs.100)) del objeto de [entrada de lápiz](/previous-versions/aa515768(v=msdn.10))
+-   Método Load del [objeto](/previous-versions/ms569609(v=vs.100)) [Ink](/previous-versions/aa515768(v=msdn.10))
+-   Método Save del [objeto](/previous-versions/dotnet/netframework-3.5/ms571335(v=vs.90)) [Ink](/previous-versions/aa515768(v=msdn.10))
+-   Propiedad [ExtendedProperties](/previous-versions/aa515768(v=msdn.10)) del [objeto Ink](/previous-versions/ms582214(v=vs.100))
 
 ## <a name="collecting-ink"></a>Recopilación de entradas manuscritas
 
-En primer lugar, haga referencia a la API de Tablet PC, que se instala con el kit de desarrollo de software (SDK) de Windows Vista y Windows XP Tablet PC Edition.
+En primer lugar, haga referencia a Tablet PC API, que se instala con Windows Vista y Windows XP Tablet PC Edition Software Development Kit (SDK).
 
 
 ```C++
@@ -36,7 +36,7 @@ using Microsoft.Ink;
 
 
 
-El constructor crea y habilita [InkCollector](/previous-versions/ms836493(v=msdn.10)), `ic` , para el formulario.
+El constructor crea y habilita [un elemento InkCollector](/previous-versions/ms836493(v=msdn.10)), `ic` , para el formulario.
 
 
 ```C++
@@ -48,11 +48,11 @@ ic.Enabled = true;
 
 ## <a name="saving-a-file"></a>Guardar un archivo
 
-El `SaveAsMenu_Click` método controla el cuadro de diálogo Guardar como, crea una secuencia de archivos en la que se guardan los datos de tinta y llama al método Save que corresponde a la elección del usuario.
+El método controla el cuadro de diálogo Guardar como, crea una secuencia de archivos en la que guardar los datos de entrada de lápiz y llama al método save que corresponde a la elección `SaveAsMenu_Click` del usuario.
 
 ## <a name="saving-to-an-isf-file"></a>Guardar en un archivo ISF
 
-En el `SaveISF` método, se agregan los valores de nombre y apellidos a la propiedad [ExtendedProperties](/previous-versions/ms582214(v=vs.100)) de la propiedad [Ink](/previous-versions/ms836505(v=msdn.10)) del objeto [InkCollector](/previous-versions/ms836493(v=msdn.10)) , antes de que la entrada de lápiz se serialice y se escriba en el archivo. Una vez serializada la tinta, se quitan los valores de nombre y apellidos de la propiedad ExtendedProperties del objeto de [entrada de lápiz](/previous-versions/aa515768(v=msdn.10)) .
+En el método , los valores de nombre y apellido se agregan a la propiedad ExtendedProperties de la propiedad Ink del objeto `SaveISF` [InkCollector,](/previous-versions/ms836493(v=msdn.10)) [](/previous-versions/ms582214(v=vs.100)) antes de serializar y escribir la entrada de lápiz en el archivo. [](/previous-versions/ms836505(v=msdn.10)) Una vez serializada la entrada de lápiz, los [](/previous-versions/aa515768(v=msdn.10)) valores de nombre y apellido se quitan de la propiedad ExtendedProperties del objeto Ink.
 
 
 ```C++
@@ -98,7 +98,7 @@ s.Write(isf,0,isf.Length);
 
 ## <a name="saving-to-an-xml-file"></a>Guardar en un archivo XML
 
-En el `SaveXML` método, se utiliza un objeto [XmlTextWriter](/dotnet/api/system.xml.xmltextwriter?view=netcore-3.1) para crear y escribir en un documento XML. Con el método [Save](/previous-versions/dotnet/netframework-3.5/ms571335(v=vs.90)) del objeto [Ink](/previous-versions/aa515768(v=msdn.10)) , la tinta se convierte primero en una matriz de bytes de formato serializado de tinta codificada en Base64 y, a continuación, la matriz de bytes se convierte en una cadena que se va a escribir en el archivo XML. Los datos de texto del formulario también se escriben en el archivo XML.
+En el `SaveXML` método , se usa un objeto [XmlTextWriter](/dotnet/api/system.xml.xmltextwriter?view=netcore-3.1) para crear y escribir en un documento XML. Con el método [Save](/previous-versions/dotnet/netframework-3.5/ms571335(v=vs.90)) del objeto [Ink,](/previous-versions/aa515768(v=msdn.10)) la entrada de lápiz se convierte primero en una matriz de bytes Ink Serialized Format codificada en Base64 y, a continuación, la matriz de bytes se convierte en una cadena que se va a escribir en el archivo XML. Los datos de texto del formulario también se escriben en el archivo XML.
 
 
 ```C++
@@ -123,7 +123,7 @@ xwriter.WriteElementString("LastName",LastNameBox.Text);
 
 ## <a name="saving-to-an-html-file"></a>Guardar en un archivo HTML
 
-El método SaveHTML usa el rectángulo de selección de la colección [Strokes](/previous-versions/ms827799(v=msdn.10)) para comprobar la presencia de una firma. Si la firma existe, se convierte al formato GIF enriquecido mediante el método [Save](/previous-versions/dotnet/netframework-3.5/ms571335(v=vs.90)) del objeto Ink y se escribe en un archivo. A continuación, se hace referencia al GIF en el archivo HTML.
+El método SaveHTML usa el cuadro de límite de la [colección Strokes](/previous-versions/ms827799(v=msdn.10)) para comprobar la presencia de una firma. Si la firma existe, se convierte al formato GIF con notificación mediante el método [Save](/previous-versions/dotnet/netframework-3.5/ms571335(v=vs.90)) del objeto ink y se escribe en un archivo. A continuación, se hace referencia al GIF en el archivo HTML.
 
 
 ```C++
@@ -155,11 +155,11 @@ else
 
 ## <a name="loading-a-file"></a>Cargar un archivo
 
-El `OpenMenu_Click` método controla el cuadro de diálogo abrir, abre el archivo y llama al método de carga que corresponde a la elección del usuario.
+El método controla el cuadro de diálogo Abrir, abre el archivo y llama al método de carga correspondiente `OpenMenu_Click` a la elección del usuario.
 
-## <a name="loading-an-isf-file"></a>Cargar un archivo ISF
+## <a name="loading-an-isf-file"></a>Carga de un archivo ISF
 
-El `LoadISF` método lee el archivo creado previamente y convierte la matriz de bytes en tinta con el método [Load](/previous-versions/ms569609(v=vs.100)) del objeto [Ink](/previous-versions/aa515768(v=msdn.10)) . El recopilador de tinta está deshabilitado temporalmente para asignarle el objeto de entrada manuscrita. `LoadISF`A continuación, el método comprueba la propiedad [ExtendedProperties](/previous-versions/ms582214(v=vs.100)) del objeto de entrada de lápiz para la primera y la última cadena de nombre.
+El método lee el archivo creado anteriormente y convierte la matriz Byte en ink con el método `LoadISF` [Load del objeto Ink.](/previous-versions/ms569609(v=vs.100)) [](/previous-versions/aa515768(v=msdn.10)) El recopilador de entrada de lápiz está deshabilitado temporalmente para asignarle el objeto Ink. A `LoadISF` continuación, el método comprueba la propiedad [ExtendedProperties](/previous-versions/ms582214(v=vs.100)) del objeto Ink para las cadenas de nombre y apellidos.
 
 
 ```C++
@@ -212,9 +212,9 @@ else
 
 
 
-## <a name="loading-an-xml-file"></a>Cargar un archivo XML
+## <a name="loading-an-xml-file"></a>Carga de un archivo XML
 
-El `LoadXML` método carga un archivo XML creado previamente, recupera datos del nodo de tinta y convierte los datos del nodo en tinta mediante el método [Load](/previous-versions/ms569609(v=vs.100)) del objeto de [entrada manuscrita](/previous-versions/aa515768(v=msdn.10)) . [InkCollector](/previous-versions/ms836493(v=msdn.10)) está deshabilitado temporalmente para asignarle el objeto de entrada manuscrita. Se invalida el cuadro firma y se recupera la información sobre el nombre y el apellido del documento XML.
+El método carga un archivo XML creado previamente, recupera datos del nodo Ink y convierte los datos del nodo en ink mediante el método Load del `LoadXML` [objeto Ink.](/previous-versions/ms569609(v=vs.100)) [](/previous-versions/aa515768(v=msdn.10)) [InkCollector está](/previous-versions/ms836493(v=msdn.10)) deshabilitado temporalmente para asignarle el objeto Ink. El cuadro de firma se invalida y la información de nombre y apellidos se recupera del documento XML.
 
 
 ```C++
@@ -269,9 +269,9 @@ else
 
 
 
-## <a name="closing-the-form"></a>Cierre del formulario
+## <a name="closing-the-form"></a>Cerrar el formulario
 
-El método [Dispose](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) del formulario desecha el objeto [InkCollector](/previous-versions/ms836493(v=msdn.10)) .
+El método [Dispose](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) del formulario elimina el [objeto InkCollector.](/previous-versions/ms836493(v=msdn.10))
 
  
 

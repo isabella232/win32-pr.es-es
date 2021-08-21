@@ -1,6 +1,6 @@
 ---
 title: WM_CTLCOLORLISTBOX mensaje (Winuser.h)
-description: Se envía a la ventana primaria de un cuadro de lista antes de que el sistema dibuje el cuadro de lista. Al responder a este mensaje, la ventana primaria puede establecer el texto y los colores de fondo del cuadro de lista mediante el identificador de contexto del dispositivo para mostrar especificado.
+description: Se envía a la ventana primaria de un cuadro de lista antes de que el sistema dibuje el cuadro de lista. Al responder a este mensaje, la ventana primaria puede establecer los colores de texto y fondo del cuadro de lista mediante el identificador de contexto del dispositivo de presentación especificado.
 ms.assetid: e128e77f-e966-44c4-9f0e-efcf421b6c82
 keywords:
 - WM_CTLCOLORLISTBOX controles de Windows mensaje
@@ -23,7 +23,7 @@ ms.locfileid: "119077669"
 ---
 # <a name="wm_ctlcolorlistbox-message"></a>Mensaje \_ CTLCOLORLISTBOX de WM
 
-Se envía a la ventana primaria de un cuadro de lista antes de que el sistema dibuje el cuadro de lista. Al responder a este mensaje, la ventana primaria puede establecer el texto y los colores de fondo del cuadro de lista mediante el identificador de contexto del dispositivo para mostrar especificado.
+Se envía a la ventana primaria de un cuadro de lista antes de que el sistema dibuje el cuadro de lista. Al responder a este mensaje, la ventana primaria puede establecer los colores de texto y fondo del cuadro de lista mediante el identificador de contexto del dispositivo de presentación especificado.
 
 
 ```C++
@@ -77,7 +77,7 @@ Si un procedimiento de cuadro de diálogo controla este mensaje, debe convertir 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

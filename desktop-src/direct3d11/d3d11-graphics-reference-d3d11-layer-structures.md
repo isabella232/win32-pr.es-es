@@ -1,21 +1,21 @@
 ---
-title: Estructuras de capas
-description: Esta sección contiene información sobre las estructuras de capas.
+title: Estructuras de capa
+description: Esta sección contiene información sobre las estructuras de capa.
 ms.assetid: 65f0830f-f009-47fb-b04e-24790e677338
 keywords:
-- estructuras, capa de Direct3D 11
+- estructuras, Capa 11 de Direct3D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df8fa476d31fea9f77879f89604f591032476a59
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 74dfea7f801c357c16c31842166f1488a5b9306a503ecf74fc00967f2a7be672
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104984115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119126089"
 ---
-# <a name="layer-structures"></a>Estructuras de capas
+# <a name="layer-structures"></a>Estructuras de capa
 
-Esta sección contiene información sobre las estructuras de capas.
+Esta sección contiene información sobre las estructuras de capa.
 
 
 ## <a name="in-this-section"></a>En esta sección
@@ -24,9 +24,9 @@ Esta sección contiene información sobre las estructuras de capas.
 
 | Tema                                                                               | Descripción                                                                          |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [**\_Filtro de \_ cola de información de D3D11 \_**](/windows/desktop/api/D3D11SDKLayers/ns-d3d11sdklayers-d3d11_info_queue_filter)<br/>            | Filtro de mensajes de depuración; contiene una lista de tipos de mensaje que se va a permitir o denegar.<br/> |
-| [**D3D11 \_ info \_ cola \_ filtro \_ DESC**](/windows/desktop/api/D3D11SDKLayers/ns-d3d11sdklayers-d3d11_info_queue_filter_desc)<br/> | Permite o deniega determinados tipos de mensajes para pasar a través de un filtro.<br/>         |
-| [**\_Mensaje D3D11**](/windows/desktop/api/D3D11SDKLayers/ns-d3d11sdklayers-d3d11_message)<br/>                                  | Un mensaje de depuración en la cola de información.<br/>                                 |
+| [**FILTRO DE COLA DE INFORMACIÓN D3D11 \_ \_ \_**](/windows/desktop/api/D3D11SDKLayers/ns-d3d11sdklayers-d3d11_info_queue_filter)<br/>            | Filtro de mensajes de depuración; contiene una lista de tipos de mensaje para permitir o denegar.<br/> |
+| [**D3D11 \_ INFO \_ QUEUE \_ FILTER \_ DESC**](/windows/desktop/api/D3D11SDKLayers/ns-d3d11sdklayers-d3d11_info_queue_filter_desc)<br/> | Permitir o denegar determinados tipos de mensajes para pasar a través de un filtro.<br/>         |
+| [**D3D11 \_ MESSAGE**](/windows/desktop/api/D3D11SDKLayers/ns-d3d11sdklayers-d3d11_message)<br/>                                  | Mensaje de depuración en la cola de información.<br/>                                 |
 
 
 

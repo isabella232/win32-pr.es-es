@@ -1,75 +1,75 @@
 ---
-title: DISPID estándar
-description: Se ha definido un número de DISPID estándar para la especificación de los controles.
+title: DISPIDS estándar
+description: Se han definido varios problemas estándar para la especificación de controles.
 ms.assetid: f938b64f-5d45-40e7-ad02-665ce9c86a70
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 657a7cd12ac92504bb5d63dcd486b6a45da47310
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: af35ce4e4cad884b54bb0982037721608364a0249d3be6dd566f3aac766bb1f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105704609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129787"
 ---
-# <a name="standard-dispids"></a>DISPID estándar
+# <a name="standard-dispids"></a>DISPIDS estándar
 
-Se ha definido un número de DISPID estándar para la especificación de los controles.
+Se han definido varios problemas estándar para la especificación de controles.
 
-## <a name="dispid_mousepointer"></a>desspid- \_ MOUSEPOINTER
+## <a name="dispid_mousepointer"></a>DISPID \_ MOUSEPOINTER
 
-Propiedad de tipo Integer.
+Propiedad de tipo entero.
 
 ``` syntax
 #define DISPID_MOUSEPOINTER            -521
 ```
 
-La propiedad MousePointer identifica los iconos del mouse estándar.
+La propiedad Mousepointer identifica los iconos estándar del mouse.
 
 
 
 | Value         | Descripción                                                                |
 |---------------|----------------------------------------------------------------------------|
-| 0<br/>  | Predeterminada Forma determinada por el objeto.<br/>                       |
+| 0<br/>  | (Valor predeterminado) Forma determinada por el objeto .<br/>                       |
 | 1<br/>  | Flecha<br/>                                                           |
-| 2<br/>  | Cross (puntero de Cruz)<br/>                                      |
-| 3<br/>  | I<br/>                                                          |
+| 2<br/>  | Cross (puntero de vello cruzado)<br/>                                      |
+| 3<br/>  | I Beam<br/>                                                          |
 | 4<br/>  | Icono (cuadrado pequeño dentro de un cuadrado)<br/>                             |
 | 5<br/>  | Tamaño (flecha de cuatro puntas que apunta al norte, sur, este y oeste)<br/> |
-| 6<br/>  | Tamaño NE SW (doble flecha que apunta al noreste y suroeste)<br/>      |
+| 6<br/>  | Tamaño NE SW (flecha doble que apunta al noreste y al suroeste)<br/>      |
 | 7<br/>  | Tamaño N S (flecha doble que apunta al norte y al sur)<br/>                |
 | 8<br/>  | Tamaño NW, SE<br/>                                                     |
-| 9<br/>  | Tamaño E W (flecha doble que señala al este y oeste)<br/>                  |
+| 9<br/>  | Tamaño E W (flecha doble que señala este y oeste)<br/>                  |
 | 10<br/> | Flecha arriba<br/>                                                        |
-| 11<br/> | Reloj de arena (esperar)<br/>                                                |
-| 12<br/> | No eliminar<br/>                                                         |
-| 13<br/> | Flecha y reloj de arena<br/>                                             |
+| 11<br/> | Reloj de reloj (espera)<br/>                                                |
+| 12<br/> | Sin quitar<br/>                                                         |
+| 13<br/> | Flecha y reloj de reloj<br/>                                             |
 | 14<br/> | Flecha y signo de interrogación<br/>                                         |
-| 15<br/> | Ajustar todo<br/>                                                        |
+| 15<br/> | Tamaño de todo<br/>                                                        |
 | 99<br/> | Icono personalizado especificado por la propiedad MouseIcon<br/>                 |
 
 
 
  
 
-## <a name="dispid_mouseicon"></a>MOUSEICON de DISPID \_
+## <a name="dispid_mouseicon"></a>ICONO DEL \_ MOUSE DISPID
 
-Propiedad de tipo imagen.
+Propiedad de la imagen de tipo.
 
 ``` syntax
 #define DISPID_MOUSEICON               -522
 ```
 
-## <a name="dispid_picture"></a>imagen de DISPID \_
+## <a name="dispid_picture"></a>IMAGEN \_ DESPID
 
-Propiedad de tipo imagen.
+Propiedad de la imagen de tipo.
 
 ``` syntax
 #define DISPID_PICTURE                 -523
 ```
 
-## <a name="dispid_valid"></a>DISPID \_ válido
+## <a name="dispid_valid"></a>DISPID \_ VÁLIDO
 
-Se utiliza para determinar si el control tiene datos válidos o no.
+Se usa para determinar si el control tiene datos válidos o no.
 
 Propiedad de tipo BOOL.
 
@@ -77,9 +77,9 @@ Propiedad de tipo BOOL.
 #define DISPID_VALID                   -524
 ```
 
-## <a name="dispid_-ambient_palette"></a>paleta ambiente de DISPID \_ \_
+## <a name="dispid_-ambient_palette"></a>PALETA \_ AMBIENTAL DISPID \_
 
-Se utiliza para permitir que el control obtenga el HPAL del contenedor. Si el contenedor proporciona una paleta ambiente, es la única paleta que se puede realizar en primer plano. Los controles que deseen obtener sus propias paletas deben hacerlo en segundo plano. Si no hay ninguna paleta ambiente proporcionada por el contenedor, el control activo puede obtener su paleta en primer plano. El control de paleta se describe con más detalle en el comportamiento de la paleta para los controles OLE que se encuentra en el SDK de ActiveX.
+Se usa para permitir que el control obtenga el HPAL del contenedor. Si el contenedor proporciona una paleta ambiente, esa es la única paleta que se puede realizar en primer plano. Los controles que quieran realizar sus propias paletas deben hacerlo en segundo plano. Si el contenedor no proporciona ninguna paleta ambiente, el control activo puede realizar su paleta en primer plano. El control de paletas se describe más adelante en Comportamiento de la paleta para controles OLE, que se encuentra en el SDK ActiveX.
 
 ``` syntax
 #define DISPID_AMBIENT_PALETTE         -726

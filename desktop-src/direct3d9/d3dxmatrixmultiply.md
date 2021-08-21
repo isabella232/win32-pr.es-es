@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3d183fc3c79797bab886d3a40211448ccf57d552
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 64831287ab16f9b866ec5cd21b376fa190e8b42716453265875b2d8b5e7137d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119122905"
 ---
 # <a name="d3dxmatrixmultiply-function-d3dx9mathh"></a>Función D3DXMatrixMultiply (D3dx9math.h)
 
@@ -79,7 +79,7 @@ Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que es el producto de d
 
 El resultado representa la transformación M1 seguida de la transformación M2 (Out = M1 \* M2).
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXMatrixMultiply** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXMatrixMultiply** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,7 +92,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

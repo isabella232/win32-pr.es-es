@@ -34,7 +34,7 @@ Lee los datos de textura de [**rwtexture3D.**](sm5-object-rwtexture3d.md)
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

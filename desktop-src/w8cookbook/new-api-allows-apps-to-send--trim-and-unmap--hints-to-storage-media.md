@@ -1,39 +1,39 @@
 ---
-title: La nueva API permite que las aplicaciones envíen sugerencias "recortar y desasignar" a los medios de almacenamiento
-description: La nueva API permite que las aplicaciones envíen \ 0034; TRIM y desasignar \ 0034; sugerencias para medios de almacenamiento
+title: La nueva API permite que las aplicaciones envíen sugerencias "TRIM y Unmap" a los medios de almacenamiento.
+description: La nueva API permite que las aplicaciones envíen \ 0034; TRIM y Unmap \ 0034; sugerencias a medios de almacenamiento
 ms.assetid: DDBC3592-BD4D-4826-83FE-387564DA07E8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e043c1188bda790b4ed151e8a79e1f7b4c6f0f9
-ms.sourcegitcommit: ea4baf9953a78d2d6bd530b680601e39f3884541
+ms.openlocfilehash: 78d79d47dceb5c8bf2e7575836c9a40ddf0347b7e5c616ab4b7196b547742c97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "105695774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028833"
 ---
-# <a name="new-api-allows-apps-to-send-trim-and-unmap-hints-to-storage-media"></a>La nueva API permite que las aplicaciones envíen sugerencias "recortar y desasignar" a los medios de almacenamiento
+# <a name="new-api-allows-apps-to-send-trim-and-unmap-hints-to-storage-media"></a>La nueva API permite que las aplicaciones envíen sugerencias "TRIM y Unmap" a los medios de almacenamiento.
 
 ## <a name="platforms"></a>Plataformas
 
-**Clientes** : Windows 8  
-**Servidores** : Windows Server 2012  
+**Clientes:** Windows 8  
+**Servidores:** Windows Server 2012  
 
 
 ## <a name="description"></a>Descripción
 
-Las sugerencias de recorte notifican a la unidad que ciertos sectores que anteriormente se asignaron ya no son necesarios para la aplicación y se pueden purgar. Normalmente se usa cuando una aplicación realiza asignaciones de espacio grande a través de un archivo y, a continuación, administra automáticamente las asignaciones en el archivo (por ejemplo, archivos de disco duro virtual).
+Las sugerencias TRIM notifican a la unidad que determinados sectores asignados anteriormente ya no son necesarios para la aplicación y se pueden purgar. Esto se suele usar cuando una aplicación realiza grandes asignaciones de espacio a través de un archivo y, a continuación, administra las asignaciones al archivo (por ejemplo, archivos de disco duro virtual).
 
 **¿Qué es TRIM?**
 
-Las unidades de estado sólido (SSD) suelen ser dispositivos con bloqueo en bloque basado en memoria Flash. Esto significa que cuando se escriben datos en la SSD, no se puede sobrescribir en su lugar y se deben escribir en otro lugar hasta que el bloque se pueda recolectar como elemento no utilizado. Dado que SSD no tiene ningún mecanismo interno para determinar que se han quitado determinados bloques y que se necesitan otros. La única vez que SSD puede marcar un sector como ' sucio ' es cuando está sobrescrito. En otros casos, como cuando se elimina un archivo, el SSD conserva estos sectores, ya que la eliminación se realiza solo como un cambio en la tabla de archivos maestros (MFT) y no como una operación para todos los sectores del archivo. En Windows 7, se presentó una forma estándar de comunicarse con SSD sobre sectores que no son necesarios. Este comando se define en la [especificación T13](https://www.t13.org/Standards/Default.aspx?DocumentType=3) como el comando Trim. NTFS envía el comando TRIM para algunas operaciones en línea normales, como "DeleteFile".
+Las unidades de estado sólido (SSD) suelen ser dispositivos borrados por bloques basados en memoria flash. Esto significa que, cuando los datos se escriben en ssd, no se pueden sobres escribir en su lugar y se deben escribir en otro lugar hasta que el bloque se pueda recopilar como elementos no utilizados. Dado que ssd no tiene ningún mecanismo interno para determinar que se quitan determinados bloques y se necesitan otros. La única vez que ssd puede marcar un sector "sucio" es cuando se escribe en exceso. En otros casos, como cuando se elimina un archivo, SSD conserva estos sectores porque la eliminación se realiza solo como un cambio de tabla de archivos maestro (MFT) y no como una operación para todos los sectores del archivo. En Windows 7, presentamos una manera estándar de comunicarse con los SD sobre los sectores que ya no son necesarios. Este comando se define en la especificación [T13](https://www.t13.org/Standards/Default.aspx?DocumentType=3) como el comando TRIM; NTFS envía el comando TRIM para algunas operaciones en línea normales, como "deletefile".
 
-**Otros usos de TRIM en el mundo de almacenamiento**
+**Otros usos de TRIM en el mundo del almacenamiento**
 
-Como las SSD, las redes de área de almacenamiento (San) y las nuevas implementaciones de espacios de software de características de Windows 8 usan sugerencias de comando de recorte para administrar sus espacios en entornos con aprovisionamiento fino. Las San y los espacios de software asignan regiones de almacenamiento en tamaños que son mayores que los sectores o clústeres (desde 1 MB a 1 GB). Cuando reciben sugerencias de recorte para su tamaño de asignación (o mayor que el tamaño de asignación), la SAN o SSD puede anular la asignación de una región para liberar espacio para otros archivos. Normalmente pasan por todas las sugerencias de recorte al medio subyacente (SSD o HDD) para que puedan consumir el espacio liberado según corresponda. Normalmente no mueven los datos a las regiones de anulación de asignación, ni realizan un seguimiento de las áreas de recorte a regiones desasignadas (cuando la región está vacía).
+Al igual que los SSD, las redes de área de almacenamiento (SAN) y las nuevas implementaciones de espacios de software de la característica Windows 8 consumen sugerencias de comando TRIM para administrar sus espacios en entornos con aprovisionamiento fino. Las SAN y los espacios de software asignan regiones de almacenamiento en tamaños mayores que los sectores o clústeres (desde 1 MB hasta 1 GB). Cuando reciben sugerencias TRIM para su tamaño de asignación (o mayor que el tamaño de asignación), san/SSD puede desasignar una región para liberar espacio para otros archivos. Normalmente pasan todas las sugerencias TRIM al medio subyacente (SSD o HDD) para que puedan consumir el espacio libre según corresponda. Normalmente no mueven datos a regiones desasignadas, ni hacen un seguimiento de las áreas TRIM a regiones desasignadas (cuando la región está vacía).
 
-Las redes San con aprovisionamiento fino usan las sugerencias de recorte que se les pasan para ayudar a reducir la superficie general de almacenamiento físico, lo que reduce el costo. La [especificación de SCSI de T10](https://www.t10.org) define el comando "desasignar" (similar al comando Trim); Aquí el comando es aplicable a todos los tipos de almacenamiento, incluidos HDD, SSD y otros. El comando desasignar ayuda a quitar los bloques físicos de la asignación de la SAN.
+Las SAN de aprovisionamiento fino usan las sugerencias TRIM que se les pasan para ayudar a reducir la superficie de almacenamiento físico general, lo que reduce el costo. La [especificación SCSI T10](https://www.t10.org) define el comando "Unmap" (similar al comando TRIM); aquí el comando es aplicable a todos los tipos de almacenamiento, incluidos los DS, los DS y otros. El comando UnMap ayuda a quitar bloques físicos de la asignación de SAN.
 
-## <a name="how-to-use-the-new-api"></a>Cómo usar la nueva API
+## <a name="how-to-use-the-new-api"></a>Uso de la nueva API
 
 
 ```
@@ -59,46 +59,46 @@ typedef struct _FILE_LEVEL_TRIM {
 
 
 
-El recorte de archivos se pasa a través del búfer si es posible o de forma asincrónica (no almacenada en búfer) al recorte del comando DSM de IOCTL del dispositivo. Esto se asigna al comando de recorte para dispositivos ATA y al comando desasociar para dispositivos SCSI. El código de recorte de archivos envía las regiones una por una, tal y como se especifica en las extensiones anteriores.
+El archivo TRIM se pasa a través del búfer si es posible o de forma asincrónica (sin búfer) al comando TRIM de DEVICE IOCTL DSM. Esto se asigna al comando TRIM para dispositivos ATA y al comando UnMap para dispositivos SCSI. El código TRIM del archivo envía las regiones una a una según lo especificado en las extensiones anteriores.
 
-El recorte de archivos no espera las devoluciones del dispositivo, ya que los comandos de recorte y desasignación se definen como sugerencias para los medios de almacenamiento subyacentes y los códigos de retorno no se esperan.
+El archivo TRIM no espera devoluciones del dispositivo, ya que los comandos TRIM y Unmap se definen como sugerencias para el medio de almacenamiento subyacente y no se esperan códigos de retorno.
 
 **Flujo de trabajo de un extremo a otro:**
 
-1.  Recorte del archivo de llamadas
-    1.  El recorte de archivos examina las entradas en busca de errores
-    2.  El recorte de archivos divide las extensiones en regiones de LCN
-    3.  El recorte de archivo se redondea hacia arriba y hacia abajo para las regiones no alineadas que se pasan a TRIM
-    4.  El recorte de archivos purga las entradas de la memoria caché que están relacionadas con las áreas de recorte
-    5.  El recorte de archivos supera IOCTL \_ DSM (Trim) por región
-2.  Errores o devoluciones de recorte de archivos
+1.  Recorte del archivo de llamada
+    1.  Trim de archivo examina las entradas en busca de errores
+    2.  El archivo TRIM divide las extensiones en regiones LCN
+    3.  Trim de archivo se redondea hacia arriba y hacia abajo para las regiones mal alineadas que se pasan a TRIM
+    4.  Trim de archivo purga las entradas de la memoria caché relacionadas con las áreas TRIM
+    5.  Trim de archivo pasa IOCTL \_ DSM (Trim) por región
+2.  Errores o devoluciones de TRIM de archivo
     1.  La comprobación de errores se realiza en la validez de la entrada
-    2.  Si solo algunas de las extensiones son válidas, se devuelve un error para la llamada de API completa
+    2.  Si solo algunas de las extensiones son válidas, se devuelve un error para la llamada API completa.
 
 **Casos de uso**
 
-**Disco duro virtual (VHD) de consumidor montado en una SSD:**
+**Disco duro virtual (VHD) de consumidor montado en un DISCO SSD:**
 
-El disco duro virtual se monta inicialmente en un medio sin usar "Clean". A medida que se usa el disco duro virtual, el disco duro virtual consume partes de los medios de almacenamiento para los archivos, etc. Cuando elimina archivos en el medio de almacenamiento, estos archivos no se quitan de la SSD, ya que el disco duro virtual completo se almacena como un archivo en la SSD. El entorno de Hyper-V llama al recorte de archivos para todas las regiones que se eliminan cuando se produce delete-file en el entorno de VHD. Los \_ recortes de archivo se traducen a la SSD para que se pueda optimizar el rendimiento de SSD.
+El disco duro virtual se monta inicialmente en medios sin usar "limpios". A medida que se usa el disco duro virtual, el VHD consume partes del medio de almacenamiento para los archivos, etc. Cuando elimina archivos en el medio de almacenamiento, estos archivos no se quitan de SSD, ya que el VHD completo se almacena como un archivo en la SSD. El entorno de Hyper-V llama a File TRIM para todas las regiones que se eliminan cuando se produce delete-file en el entorno de VHD. Las \_ TDM de archivo se traducen al SSD para que se pueda optimizar el rendimiento de SSD.
 
-**VHD de consumidor montado en una SAN con aprovisionamiento fino:**
+**VHD de consumidor montado en una SAN de aprovisionamiento fino:**
 
-El disco duro virtual se monta inicialmente en una losa mínima de un entorno con aprovisionamiento fino. A medida que los archivos se almacenan en el disco duro virtual, la superficie de almacenamiento del disco duro virtual crece en múltiplos de bloques. Cuando se quitan archivos en el disco duro virtual, Hyper-V llama al recorte de archivos en \_ la red San de aprovisionamiento fino subyacente. Si los recortes son mayores que la granularidad de los bloques, la SAN puede quitar ahora una losa y, por tanto, reducir la superficie del VHD en esa SAN.
+El disco duro virtual se monta inicialmente en una losa mínima de un entorno de aprovisionamiento fino. A medida que los archivos se almacenan en el disco duro virtual, la superficie de almacenamiento del disco duro virtual crece en múltiplo de losas. Cuando se quitan archivos en el disco duro virtual, Hyper-V llama a \_ File TRIM a la SAN de aprovisionamiento fino subyacente. Si las TDM son mayores que la granularidad de SLAB, la SAN ahora puede quitar un SLAB y, por tanto, reducir la superficie del VHD en esa SAN.
 
-Si el disco duro virtual reside en un servidor basado en Windows 8, el optimizador de almacenamiento también enviará recortes para reducir la superficie de la losa del VHD desde el VHD montado.
+Si el DISCO duro virtual se encuentra en un servidor basado en Windows 8, el optimizador de Storage también enviará TDM para reducir la superficie de losa del disco duro virtual desde dentro del VHD montado.
 
 ## <a name="tests"></a>Pruebas
 
-No hay ninguna API comparable en las versiones anteriores del sistema operativo. No debería haber ningún impacto en el rendimiento de la propia API real, aunque el medio de almacenamiento (si se implementa correctamente) puede mostrar un mejor rendimiento de escritura. La API debe usarse con sumo cuidado; solo se deben pasar las extensiones que ya no sean necesarias, ya que esas extensiones se quitarán permanentemente de los medios de almacenamiento.
+No hay API comparables en versiones anteriores del sistema operativo. No debería haber ningún impacto en el rendimiento de la PROPIA API real, aunque los medios de almacenamiento (si se implementan correctamente) pueden mostrar un mejor rendimiento de escritura. La API debe usarse con mucho cuidado; solo se deben pasar las extensiones que ya no sean necesarias, ya que dichas extensiones se quitarán permanentemente de los medios de almacenamiento.
 
 ## <a name="resources"></a>Recursos
 
--   [Especificación de T13](http://www.t13.org/Standards/Default.aspx?DocumentType=3)
--   [Especificación de SCSI de T10](https://www.t10.org/)
+-   [Especificación T13](http://www.t13.org/Standards/Default.aspx?DocumentType=3)
+-   [Especificación SCSI T10](https://www.t10.org/)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,22 +1,22 @@
 ---
-description: El término blit es una abreviatura para &\# 0034; transferencia de bloque de bits, &\# 0034; que es el proceso de transferir bloques de datos de un lugar de memoria a otro.
+description: El término blit es una abreviatura de &0034;transferencia de bloques de \# bits,&0034; que es el proceso de transferencia de bloques de datos de un lugar en memoria a \# otro.
 ms.assetid: 5f2aed2e-66d2-40e6-be35-92c3f92d17bd
 title: Copiar superficies (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50000e3b620c4d2fd217695551d898e5892430ba
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 61d31d897bcb9e1a8fefa45a7770959ecb4121f807e4ca51d26ca7da5b5f5f5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119123382"
 ---
 # <a name="copying-surfaces-direct3d-9"></a>Copiar superficies (Direct3D 9)
 
-El término blit es una abreviatura de "transferencia de bloque de bits", que es el proceso de transferir bloques de datos de un lugar de memoria a otro. La interfaz de controlador de dispositivo (DDI) de blitting se sigue usando en Direct3D 9 como el mecanismo principal para mover grandes rectángulos de píxeles en cada fotograma, el mecanismo detrás del IDirect3DDevice9 orientado a copia [**::P método reenviado**](/windows/desktop/api) . El transporte de material gráfico en la operación de blit lo realiza el método [**IDirect3DDevice9:: UpdateTexture**](/windows/desktop/api) . También se puede copiar material gráfico en Direct3D 9 mediante el método [**IDirect3DDevice9:: UpdateSurface**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-updatesurface) , que copia un subconjunto rectangular de píxeles.
+El término blit es una abreviatura de "transferencia de bloques de bits", que es el proceso de transferir bloques de datos de un lugar en memoria a otro. La interfaz de controlador de dispositivos (DDI) de borrado se sigue usando en Direct3D 9 como mecanismo principal para mover rectángulos grandes de píxeles por fotograma, el mecanismo detrás del método [**IDirect3DDevice9::P resent**](/windows/desktop/api) orientado a copias. El transporte de ilustraciones en la operación blit se realiza mediante el [**método IDirect3DDevice9::UpdateTexture.**](/windows/desktop/api) Las ilustraciones también se pueden copiar en Direct3D 9 mediante el método [**IDirect3DDevice9::UpdateSurface,**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-updatesurface) que copia un subconjunto rectangular de píxeles.
 
 > [!Note]  
-> Direct3D 9 proporciona funciones de D3DX que permiten cargar ilustraciones desde archivos, aplicar la conversión de colores y cambiar el tamaño de la ilustración. Para obtener más información sobre las funciones disponibles, consulte [funciones de textura en D3DX 9](dx9-graphics-reference-d3dx-functions-texture.md).
+> Direct3D 9 proporciona funciones D3DX que permiten cargar ilustraciones de archivos, aplicar conversión de color y cambiar el tamaño de las ilustraciones. Para obtener más información sobre las funciones disponibles, vea [Funciones de textura en D3DX 9.](dx9-graphics-reference-d3dx-functions-texture.md)
 
  
 

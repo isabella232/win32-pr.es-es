@@ -64,7 +64,7 @@ Los valores de código de Huffman, en orden de aumentar la longitud del código.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

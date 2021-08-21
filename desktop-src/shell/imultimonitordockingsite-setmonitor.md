@@ -12,12 +12,12 @@ api_type:
 - COM
 api_location: ''
 ms.assetid: ba4ace13-7096-4f05-bcb0-ab37f1632406
-ms.openlocfilehash: be773ee68c214f6a2fab8da89f1f48b867e71239
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: c79a2ec497e8eaaafead20e6fa01e10844f9c4786a158f869fe16e4eee19e7c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032403"
 ---
 # <a name="imultimonitordockingsitesetmonitor-method"></a>IMultiMonitorDockingSite::SetMonitor (Método)
 
@@ -40,7 +40,7 @@ HRESULT SetMonitor(
 
 <dl> <dt>
 
-*yerbaSrc* \[ En\]
+*después de la 1:00* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown)\***
@@ -79,8 +79,8 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/> |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                   |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                   |
 
 
 

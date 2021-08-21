@@ -1,32 +1,32 @@
 ---
-title: Paquete, implementación y Glosario de consultas
-description: Proporciona definiciones de los términos relacionados con el empaquetado, la implementación y la consulta de aplicaciones de Windows.
+title: Glosario de empaquetado, implementación y consulta
+description: Proporciona definiciones de términos relacionados con el empaquetado, la implementación y la consulta de Windows aplicaciones.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 15E35DCF-C6C1-446A-B09B-6428F9C8A677
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83a2112b593e2d2a5aaf4f06525160e2d799bad1
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 678a273b82806a724e50c7f29c512d19e1723283582abb3aa8b97f49f6293182
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104420532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130277"
 ---
-# <a name="packaging-deployment-and-query-glossary"></a>Paquete, implementación y Glosario de consultas
+# <a name="packaging-deployment-and-query-glossary"></a>Glosario de empaquetado, implementación y consulta
 
 <dl> <dt>
 
-<span id="appxpkg.appx_packaging_glossary_application_user_model_id"></span><span id="APPXPKG.APPX_PACKAGING_GLOSSARY_APPLICATION_USER_MODEL_ID"></span>**IDENTIFICADOR de modelo de usuario de aplicación**
+<span id="appxpkg.appx_packaging_glossary_application_user_model_id"></span><span id="APPXPKG.APPX_PACKAGING_GLOSSARY_APPLICATION_USER_MODEL_ID"></span>**Id. de modelo de usuario de la aplicación**
 </dt> <dd>
 
 El identificador de modelo de usuario de la aplicación identifica de forma única una aplicación en el sistema operativo para que el sistema operativo pueda enviar notificaciones y así sucesivamente a la aplicación.
 
 </dd> <dt>
 
-<span id="appxpkg.appx_packaging_glossary_block_map"></span><span id="APPXPKG.APPX_PACKAGING_GLOSSARY_BLOCK_MAP"></span>**asignación de bloques**
+<span id="appxpkg.appx_packaging_glossary_block_map"></span><span id="APPXPKG.APPX_PACKAGING_GLOSSARY_BLOCK_MAP"></span>**mapa de bloques**
 </dt> <dd>
 
-Define los índices y los hashes criptográficos para los bloques de código ejecutable y los datos que se almacenan en los archivos de un paquete de la aplicación. Se requiere un archivo BlockMap.xml para cada paquete de la aplicación.
+Define los índices y los hashes criptográficos para los bloques de código ejecutable y los datos que se almacenan en los archivos de un paquete de aplicación. Se BlockMap.xml archivo para cada paquete de aplicación.
 
 </dd> <dt>
 
@@ -40,77 +40,77 @@ Paquete del que depende otro paquete. La dependencia se declara en el manifiesto
 <span id="appxpkg.appx_packaging_glossary_dependent_package"></span><span id="APPXPKG.APPX_PACKAGING_GLOSSARY_DEPENDENT_PACKAGE"></span>**paquete dependiente**
 </dt> <dd>
 
-Paquete que toma una dependencia en otro paquete. La dependencia se declara en el manifiesto del paquete dependiente.
+Un paquete que toma una dependencia de otro paquete. La dependencia se declara en el manifiesto del paquete dependiente.
 
 </dd> <dt>
 
 <span id="appxpkg_packaging_glossary_footpint_files"></span><span id="APPXPKG_PACKAGING_GLOSSARY_FOOTPINT_FILES"></span>**archivos de superficie**
 </dt> <dd>
 
-Archivos dentro de un paquete de la aplicación que no forman parte de la aplicación que se va a implementar. Estos archivos proporcionan metadatos que pertenecen al paquete. Los archivos de superficie estándar incluyen el manifiesto, el mapa de bloques, el mapa de flujo y la firma digital. Los archivos de superficie se crean como parte del proceso de compilación del paquete. Además, según la especificación de OPC, los \[ tipos de contenido \_ \] . XML y los archivos cuyos nombres coinciden con el \* \\ \_ patrón "Rels \\ \* . Rels" son archivos de superficie.
+Archivos dentro de un paquete de aplicación que no forman parte de la aplicación que se va a implementar. Estos archivos proporcionan metadatos relacionados con el paquete. Los archivos de superficie estándar incluyen el manifiesto, el mapa de bloques, el mapa de flujo y la firma digital. Los archivos de superficie se crean como parte del proceso de compilación del paquete. Además, según la especificación de OPC, los tipos de.xml y los archivos cuyos nombres coinciden con el patrón \[ \_ \] \* \\ \_ \\ \* "rels .rels" son archivos de superficie.
 
 </dd> <dt>
 
-<span id="appxpkg_packaging_glossary_manifest"></span><span id="APPXPKG_PACKAGING_GLOSSARY_MANIFEST"></span>**manifiesto**
+<span id="appxpkg_packaging_glossary_manifest"></span><span id="APPXPKG_PACKAGING_GLOSSARY_MANIFEST"></span>**Manifiesto**
 </dt> <dd>
 
-Archivo XML que describe el contenido y los metadatos asociados a un paquete, incluido el identificador del paquete. Se requiere un archivo XML de manifiesto para cada paquete de aplicación.
+Un archivo XML que describe el contenido y los metadatos asociados a un paquete, incluido el identificador del paquete. Se requiere un archivo XML de manifiesto para cada paquete de aplicación.
 
 </dd> <dt>
 
-<span id="appxpkg_packaging_glossary_opc"></span><span id="APPXPKG_PACKAGING_GLOSSARY_OPC"></span>**OPC**
+<span id="appxpkg_packaging_glossary_opc"></span><span id="APPXPKG_PACKAGING_GLOSSARY_OPC"></span>**Opc**
 </dt> <dd>
 
-Open Packaging Conventions (OPC) describe una tecnología de archivos de contenedor que se documenta en los estándares ISO/IEC 29500 y ECMA 376. Los paquetes de aplicaciones son compatibles con OPC.
+Convenciones de empaquetado abierto (OPC) describe una tecnología de archivo de contenedor que se documenta en los estándares ISO/IEC 29500 y ECMA 376. Los paquetes de aplicaciones son compatibles con OPC.
 
 </dd> <dt>
 
-<span id="appxpkg.appx_packaging_glossary_package"></span><span id="APPXPKG.APPX_PACKAGING_GLOSSARY_PACKAGE"></span>**configura**
+<span id="appxpkg.appx_packaging_glossary_package"></span><span id="APPXPKG.APPX_PACKAGING_GLOSSARY_PACKAGE"></span>**Paquete**
 </dt> <dd>
 
-Unidad de software de implementación, administración y mantenimiento asociada al modelo de empaquetado de aplicaciones. Un paquete contiene los archivos que constituyen la aplicación, junto con un archivo de manifiesto que describe el software para Windows.
+Unidad de software de implementación, administración y mantenimiento asociada al modelo de empaquetado de aplicaciones. Un paquete contiene los archivos que constituyen la aplicación, junto con un archivo de manifiesto que describe el software que se va a Windows.
 
 </dd> <dt>
 
-<span id="appxpkg.appx_packaging_glossary_package_family_moniker"></span><span id="APPXPKG.APPX_PACKAGING_GLOSSARY_PACKAGE_FAMILY_MONIKER"></span>**nombre de familia de paquete**
+<span id="appxpkg.appx_packaging_glossary_package_family_moniker"></span><span id="APPXPKG.APPX_PACKAGING_GLOSSARY_PACKAGE_FAMILY_MONIKER"></span>**nombre de familia del paquete**
 </dt> <dd>
 
-Formato serializado del identificador de paquete que representa de forma única la familia de paquetes en el equipo. Es adecuado para asignar nombres a objetos como archivos y carpetas. El nombre de familia del paquete es similar al nombre completo del paquete, pero solo incluye el nombre y el publicador. Como excluye la información que cambia con el servicio (versión, arquitectura e información de recursos), resulta útil para las referencias independientes de la versión al paquete.
+Forma serializada del identificador de paquete que representa de forma única la familia de paquetes en el equipo. Es adecuado para asignar nombres a objetos como archivos y carpetas. El nombre de familia del paquete es similar al nombre completo del paquete, pero solo incluye el nombre y el publicador. Dado que excluye la información que cambia con el mantenimiento (versión, arquitectura e información de recursos), resulta útil para las referencias independientes de la versión al paquete.
 
 </dd> <dt>
 
 <span id="appxpkg.appx_packaging_glossary_package_moniker"></span><span id="APPXPKG.APPX_PACKAGING_GLOSSARY_PACKAGE_MONIKER"></span>**nombre completo del paquete**
 </dt> <dd>
 
-Formato serializado del identificador de paquete que representa de forma única esta versión del paquete en el equipo. Es adecuado para asignar nombres a objetos como archivos y carpetas.
+Forma serializada del identificador de paquete que representa de forma única esta versión del paquete en el equipo. Es adecuado para asignar nombres a objetos como archivos y carpetas.
 
 </dd> <dt>
 
-<span id="appxpkg.appx_packaging_glossary_package_id"></span><span id="APPXPKG.APPX_PACKAGING_GLOSSARY_PACKAGE_ID"></span>**IDENTIFICADOR de paquete**
+<span id="appxpkg.appx_packaging_glossary_package_id"></span><span id="APPXPKG.APPX_PACKAGING_GLOSSARY_PACKAGE_ID"></span>**id. de paquete**
 </dt> <dd>
 
-Un identificador único global para un paquete. Se compone de una tupla de atributos para el paquete, incluidos el nombre, el publicador, la arquitectura admitida, la información de recursos y la versión. Consulte nombre completo de paquete y nombre de familia de paquete para las formas serializadas del identificador de paquete.
+Identificador único global de un paquete. Se compone de una tupla de atributos para el paquete, incluidos el nombre, el publicador, la arquitectura admitida, la información de recursos y la versión. Consulte el nombre completo del paquete y el nombre de familia del paquete para obtener información sobre los formularios serializados del identificador de paquete.
 
 </dd> <dt>
 
-<span id="appxpkg.appx_packaging_glossary_package_relative_application_id"></span><span id="APPXPKG.APPX_PACKAGING_GLOSSARY_PACKAGE_RELATIVE_APPLICATION_ID"></span>**IDENTIFICADOR de aplicación relativa de paquete**
+<span id="appxpkg.appx_packaging_glossary_package_relative_application_id"></span><span id="APPXPKG.APPX_PACKAGING_GLOSSARY_PACKAGE_RELATIVE_APPLICATION_ID"></span>**id. de aplicación relativa del paquete**
 </dt> <dd>
 
-El atributo **ID** del elemento [**Application**](/uwp/schemas/appxpackage/appxmanifestschema2010-v2/element-application) en el manifiesto del paquete, que también se conoce como PRAID. Esta cadena identifica de forma única una aplicación dentro de un paquete. Este atributo es necesario para el elemento **Application** .
+Atributo **Id** del elemento [**Application**](/uwp/schemas/appxpackage/appxmanifestschema2010-v2/element-application) dentro del manifiesto del paquete, que también se conoce como PRAID. Esta cadena identifica de forma única una aplicación dentro de un paquete. Este atributo es necesario para el **elemento Application.**
 
 </dd> <dt>
 
 <span id="appxpkg.appx_packaging_glossary_payload_file"></span><span id="APPXPKG.APPX_PACKAGING_GLOSSARY_PAYLOAD_FILE"></span>**archivos de carga**
 </dt> <dd>
 
-Archivos de un paquete de la aplicación que forman parte de la aplicación que se va a implementar. Estos archivos se extraen y se colocan en la carpeta de instalación del usuario.
+Los archivos de un paquete de aplicación que forman parte de la aplicación que se va a implementar. Estos archivos se extraen y colocan en la carpeta de instalación del usuario.
 
 </dd> <dt>
 
-<span id="appxpkg.appx_packaging_glossary_resource_id"></span><span id="APPXPKG.APPX_PACKAGING_GLOSSARY_RESOURCE_ID"></span>**IDENTIFICADOR de recurso**
+<span id="appxpkg.appx_packaging_glossary_resource_id"></span><span id="APPXPKG.APPX_PACKAGING_GLOSSARY_RESOURCE_ID"></span>**id. de recurso**
 </dt> <dd>
 
-Parte opcional de un identificador de paquete que se usa para diferenciar los recursos del paquete. Por ejemplo, un identificador de recurso se puede usar para especificar el idioma o la configuración regional.
+Parte opcional de un identificador de paquete que se usa para diferenciar los recursos del paquete. Por ejemplo, se puede usar un identificador de recurso para especificar el idioma o la configuración regional.
 
 </dd> <dt>
 
@@ -121,6 +121,6 @@ Secuencias de bytes en un archivo ZIP que almacenan metadatos sobre el archivo Z
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 

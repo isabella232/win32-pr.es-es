@@ -1,6 +1,6 @@
 ---
-title: Variables de estado del control Framebuffer
-description: Variables de estado del control Framebuffer
+title: Variables de estado del control del buffer de fotogramas
+description: Variables de estado del control del buffer de fotogramas
 ms.assetid: ab57e07d-a694-45e7-a3b3-2e856111b87d
 keywords:
 - Variables de estado de control framebuffer OpenGL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 998414271956de44710e9ef456722d7499adb862
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 276019f790e5f4750e446cf4ae2d035e0178d0e79130100a5a5e1954cbdcb73a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107910083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061917"
 ---
-# <a name="framebuffer-control-state-variables"></a>Variables de estado del control Framebuffer
+# <a name="framebuffer-control-state-variables"></a>Variables de estado del control del buffer de fotogramas
 
-<dl> <dt><span id="GL_DRAW_BUFFER"></span><span id="gl_draw_buffer"></span>BÚFER \_ DE DRAW DE \_ GL</dt> <dd> 
+<dl> <dt><span id="GL_DRAW_BUFFER"></span><span id="gl_draw_buffer"></span>BÚFER \_ DE DIBUJO DE \_ GL</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|----------------------------------------|
@@ -90,7 +90,7 @@ ms.locfileid: "107910083"
 
 | Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Valor sin formato de búfer de color (modo RGBA)                                           |
+| Descripción:     | Valor de borrar búfer de color (modo RGBA)                                           |
 | Grupo de atributos: | búfer de color                                                                   |
 | Valor inicial:   | 0, 0, 0, 0                                                                     |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -112,11 +112,11 @@ ms.locfileid: "107910083"
 
  
 
-</dd> <dt><span id="GL_DEPTH_CLEAR_VALUE"></span><span id="gl_depth_clear_value"></span>VALOR \_ CLARO DE PROFUNDIDAD DE \_ \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_DEPTH_CLEAR_VALUE"></span><span id="gl_depth_clear_value"></span>GL \_ DEPTH \_ CLEAR \_ VALUE</dt> <dd> 
 
 | Propiedad | Value |
 |------------------|----------------------------------------------------------------------------------|
-| Descripción:     | Valor clear del búfer de profundidad                                                         |
+| Descripción:     | Valor sin borrar del búfer de profundidad                                                         |
 | Grupo de atributos: | depth-buffer                                                                     |
 | Valor inicial:   | 1                                                                                |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -142,7 +142,7 @@ ms.locfileid: "107910083"
 
 | Propiedad | Value |
 |------------------|--------------------------------------------------------------------------------|
-| Descripción:     | Valor sin almacenamiento en búfer de acumulación                                                |
+| Descripción:     | Valor clear del búfer de acumulación                                                |
 | Grupo de atributos: | accum-buffer                                                                   |
 | Valor inicial:   | 0                                                                              |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |

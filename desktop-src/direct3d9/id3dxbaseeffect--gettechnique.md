@@ -1,7 +1,7 @@
 ---
 description: Obtiene el identificador de una técnica.
 ms.assetid: da139706-734b-4d5e-896d-52f045942218
-title: 'ID3DXBaseEffect:: GetTechnique (método) (D3DX9Shader. h)'
+title: Método ID3DXBaseEffect::GetTechnique (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 4f0c82c301a48eb939d182062240c4dba6d3fc63
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6d193e08bf40ac67ba46218e9ce3e11b510d7014239a09b1c1b0000be5ec9420
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104157252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987745"
 ---
-# <a name="id3dxbaseeffectgettechnique-method"></a>ID3DXBaseEffect:: GetTechnique (método)
+# <a name="id3dxbaseeffectgettechnique-method"></a>Método ID3DXBaseEffect::GetTechnique
 
 Obtiene el identificador de una técnica.
 
@@ -40,10 +40,10 @@ D3DXHANDLE GetTechnique(
 
 <dl> <dt>
 
-*Índice* \[ de de\]
+*Índice* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Índice de técnica.
 
@@ -53,7 +53,7 @@ Tipo: **[ **uint**](../winprog/windows-data-types.md)**
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Devuelve el identificador de la técnica especificada, o **null** si el índice no era válido. Vea [identificadores (Direct3D 9)](handles.md).
+Devuelve el identificador de la técnica especificada o **NULL** si el índice no era válido. Vea [Identificadores (Direct3D 9).](handles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Devuelve el identificador de la técnica especificada, o **null** si el índice 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

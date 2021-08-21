@@ -4,12 +4,12 @@ description: Mensajes ComboBoxEx
 ms.assetid: cca4332e-2b88-4e72-82b3-e65da695b40f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e3aec229ea9d1b5a5cd913efa4a76efe7a3238c
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 772515b3cfb15b8cbc1e4bbdb2c41b285016a20a58adf2bc185c50a261102d29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105660027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119079319"
 ---
 # <a name="comboboxex-messages"></a>Mensajes ComboBoxEx
 
@@ -20,7 +20,7 @@ ms.locfileid: "105660027"
 -   [**CBEM \_ GETEDITCONTROL**](cbem-geteditcontrol.md)
 -   [**CBEM \_ GETEXTENDEDSTYLE**](cbem-getextendedstyle.md)
 -   [**CBEM \_ GETIMAGELIST**](cbem-getimagelist.md)
--   [**\_GETITEM CBEM**](cbem-getitem.md)
+-   [**CBEM \_ GETITEM**](cbem-getitem.md)
 -   [**CBEM \_ GETUNICODEFORMAT**](cbem-getunicodeformat.md)
 -   [**CBEM \_ HASEDITCHANGED**](cbem-haseditchanged.md)
 -   [**CBEM \_ INSERTITEM**](cbem-insertitem.md)

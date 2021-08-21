@@ -1,21 +1,21 @@
 ---
 description: El método GetRange recupera el intervalo de valores válidos para una propiedad de dispositivo de audio determinada.
 ms.assetid: df8985f4-8153-4f32-a90c-a5eb7c76b3c7
-title: 'ITAudioDeviceControl:: GetRange (método) (Ipmsp. h)'
+title: Método ITAudioDeviceControl::GetRange (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cbf5bf36d4ec754440e1612f2e228c495d165c0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 87779131dea5bb01a1575074e4f019dbfa2a62addebf5b91a7eee6e9cc041710
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003453"
 ---
-# <a name="itaudiodevicecontrolgetrange-method"></a>ITAudioDeviceControl:: GetRange (método)
+# <a name="itaudiodevicecontrolgetrange-method"></a>ItAudioDeviceControl::GetRange (método)
 
-\[ Este método no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Este método no está disponible para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **GetRange** recupera el intervalo de valores válidos para una [**propiedad de dispositivo de audio**](audiodeviceproperty.md)determinada.
+El **método GetRange** recupera el intervalo de valores válidos para una propiedad de [**dispositivo de audio determinada.**](audiodeviceproperty.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,45 +32,45 @@ HRESULT get_Terminal(
 
 <dl> <dt>
 
-*Propiedad* \[ de\]
+*Propiedad* \[ En\]
 </dt> <dd>
 
-Miembro de la enumeración [**AudioDeviceProperty**](audiodeviceproperty.md) .
+Miembro de la [**enumeración AudioDeviceProperty.**](audiodeviceproperty.md)
 
 </dd> <dt>
 
-*plMin* \[ enuncia\]
+*plMin* \[ out\]
 </dt> <dd>
 
 Valor mínimo válido para la propiedad de entrada.
 
 </dd> <dt>
 
-*plMax* \[ enuncia\]
+*plMax* \[ out\]
 </dt> <dd>
 
 Valor máximo válido para la propiedad de entrada.
 
 </dd> <dt>
 
-*plSteppingDelta* \[ enuncia\]
+*plSteppingDelta* \[ out\]
 </dt> <dd>
 
-Incremento por el que se puede aumentar o disminuir el valor de la propiedad.
+Incremento en el que se puede aumentar o disminuir el valor de la propiedad.
 
 </dd> <dt>
 
-*plDefault* \[ enuncia\]
+*plDefault* \[ out\]
 </dt> <dd>
 
-Valor predeterminado del parámetro *Property* .
+Valor predeterminado para el *parámetro Property.*
 
 </dd> <dt>
 
-*plFlags* \[ enuncia\]
+*plFlags* \[ out\]
 </dt> <dd>
 
-Valor de la enumeración [**TAPIControlFlags**](tapicontrolflags.md) que indica cómo se controla el valor de la *propiedad* .
+Valor de la [**enumeración TAPIControlFlags**](tapicontrolflags.md) que indica cómo se controla el *valor* property.
 
 </dd> </dl>
 
@@ -82,8 +82,8 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                   | Descripción                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/> |
 
 
 
@@ -95,9 +95,9 @@ Este método puede devolver uno de estos valores.
 
 | Requisito | Value |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,1<br/>                                                         |
-| Encabezado<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versión de TAPI<br/> | Requiere TAPI 3.1<br/>                                                         |
+| Header<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | Archivo DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 

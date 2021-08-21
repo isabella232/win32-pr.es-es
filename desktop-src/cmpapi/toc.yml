@@ -1,12 +1,12 @@
 - name: API de compresión
   href: '-compression-portal.md'
   items:
-    - name: Uso de la API de compresión
+    - name: Uso de Compression API
       href: using-the-compression-api.md
       items:
-        - name: Uso de la API de compresión en modo de búfer
+        - name: Uso de compression API en modo de búfer
           href: using-the-compression-api-in-buffer-mode.md
-        - name: Uso de la API de compresión en modo de bloqueo
+        - name: Uso de compression API en modo de bloque
           href: using-the-compression-api-in-block-mode.md
     - name: Funciones de la API de compresión
       href: compression-api-functions.md

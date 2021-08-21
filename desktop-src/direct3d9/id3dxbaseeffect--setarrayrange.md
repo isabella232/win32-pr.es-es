@@ -1,7 +1,7 @@
 ---
 description: Establezca el intervalo de una matriz que se va a pasar al dispositivo.
 ms.assetid: 43f1c258-770c-4756-9033-e5667b379fe6
-title: 'ID3DXBaseEffect:: SetArrayRange (método) (D3DX9Shader. h)'
+title: Método ID3DXBaseEffect::SetArrayRange (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 59b981c1f2aff18d4bdb57f5726136945203f5fe
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1cf4f51bfca29f1aa46238197818bb10bc4d0fe811218e5cedc59c24deb2446f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104157132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118987635"
 ---
-# <a name="id3dxbaseeffectsetarrayrange-method"></a>ID3DXBaseEffect:: SetArrayRange (método)
+# <a name="id3dxbaseeffectsetarrayrange-method"></a>Método ID3DXBaseEffect::SetArrayRange
 
 Establezca el intervalo de una matriz que se va a pasar al dispositivo.
 
@@ -42,28 +42,28 @@ HRESULT SetArrayRange(
 
 <dl> <dt>
 
-*hParameter* \[ de\]
+*hParameter* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único. Vea [identificadores (Direct3D 9)](handles.md).
+Identificador único. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*Iniciar* \[ de\]
+*Inicio* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Índice de inicio.
+Índice inicial.
 
 </dd> <dt>
 
-*Detener* \[ de\]
+*Detener* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Detener índice.
 
@@ -73,7 +73,7 @@ Detener índice.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

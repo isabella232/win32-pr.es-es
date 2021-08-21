@@ -1,24 +1,24 @@
 ---
-description: El proveedor de Modelo de controlador de Windows (WDM) concede acceso a las clases, instancias, métodos y eventos de los controladores de hardware que se ajustan al modelo WDM.
+description: El proveedor Windows Driver Model (WDM) concede acceso a las clases, instancias, métodos y eventos de los controladores de hardware que se ajustan al modelo WDM.
 ms.assetid: 8686a613-0e53-4e6e-b193-7839abfb70de
 ms.tgt_platform: multiple
-title: Acceder a los datos desde los controladores de dispositivos
+title: Acceso a datos desde controladores de dispositivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72a59b59116ca0f71178fb2faed290d6bc76c9d6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 82bec478f83ddbc6d58419710fb868ddd233f820a06004210c1dac495de86b16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131918"
 ---
-# <a name="accessing-data-from-device-drivers"></a>Acceder a los datos desde los controladores de dispositivos
+# <a name="accessing-data-from-device-drivers"></a>Acceso a datos desde controladores de dispositivos
 
-El proveedor de Modelo de controlador de Windows (WDM) concede acceso a las clases, instancias, métodos y eventos de los controladores de hardware que se ajustan al modelo WDM. Las clases para los controladores de hardware residen en el \\ \\ \\ espacio de nombres WMI raíz.
+El proveedor Windows Driver Model (WDM) concede acceso a las clases, instancias, métodos y eventos de los controladores de hardware que se ajustan al modelo WDM. Las clases de los controladores de hardware residen en el espacio \\ \\ de nombres wmi \\ raíz.
 
-El proveedor de WDM es de interés para los usuarios que escriben controladores de dispositivos y para los administradores interesados en los datos de controladores de dispositivos.
+El proveedor de WDM es de interés para aquellos que escriben controladores de dispositivos y para los administradores que están interesados en los datos del controlador de dispositivo.
 
-En este tema se describen las siguientes secciones:
+En este tema se de abordan las secciones siguientes:
 
 -   [Información para escritores de controladores de dispositivos](#information-for-device-driver-writers)
 -   [Información para administradores y usuarios de datos de controladores](#information-for-administrators-and-users-of-driver-data)
@@ -26,29 +26,29 @@ En este tema se describen las siguientes secciones:
 
 ## <a name="information-for-device-driver-writers"></a>Información para escritores de controladores de dispositivos
 
-Las clases WMI relacionadas con un controlador de dispositivo específico se crean cuando el proveedor de WDM extrae el MOF binario del archivo ejecutable del controlador de dispositivo. Esto tiene lugar cuando se inicia WMI, se instala un nuevo controlador de dispositivo o se elimina la instancia de [WMIBinaryMofResource](/windows/desktop/WmiCoreProv/wmibinarymofresource) para un controlador determinado. Al comprobar Wmiprov. log, puede determinar si se produjo un error al extraer el archivo MOF binario. Los detalles de los errores de [MOFCOMP](mofcomp.md) se muestran en MOFCOMP. log. Para obtener más información, consulte [archivos de registro de WMI](wmi-log-files.md). Por motivos de rendimiento, el proveedor de WDM no genera eventos al crear o eliminar clases debido a que un proveedor de WDM se inicia o se detiene.
+Las clases WMI relacionadas con un controlador de dispositivo específico se crean cuando el proveedor de WDM extrae el MOF binario del archivo ejecutable del controlador de dispositivo. Esto tiene lugar siempre que se inicia WMI, se instala un nuevo controlador de dispositivo o se elimina la instancia de [WMIBinaryMofResource](/windows/desktop/WmiCoreProv/wmibinarymofresource) para un controlador determinado. Al comprobar Wmiprov.log, puede determinar si se produjo un error al extraer el archivo MOF binario. Los detalles [de los errores de mofcomp](mofcomp.md) se notifican en Mofcomp.log. Para obtener más información, vea [Archivos de registro WMI.](wmi-log-files.md) Por motivos de rendimiento, el proveedor de WDM no genera eventos al crear o eliminar clases debido a un inicio o detención de un proveedor de WDM.
 
-El proveedor de WDM transforma todos los datos de WNODE en información de clase. Si se produce un error al transformar los datos de WNODE en datos de clase, se notifica en Wmiprov. log con el encabezado con formato y los bytes representados en el mismo formato que un volcado de memoria.
+El proveedor WDM transforma todos los datos WNODE en información de clase. Si se produce un error al transformar los datos de WNODE en datos de clase, se notifica en Wmiprov.log con el encabezado con formato y bytes representados en el mismo formato que un volcado de memoria.
 
-Los cambios realizados en la configuración de seguridad del controlador no surtirán efecto hasta que el proveedor de WDM se descargue y se vuelva a cargar. Para obtener más información, vea [descargar un proveedor](unloading-a-provider.md).
+Los cambios realizados en la configuración de seguridad del controlador no tienen efecto hasta que el proveedor de WDM se descarga y se vuelve a cargar. Para obtener más información, [vea Descargar un proveedor](unloading-a-provider.md).
 
-WMI también puede crear contadores de alto rendimiento para los controladores de hardware disponibles. Para obtener más información acerca de cómo crear clases de alto rendimiento y Mostrar datos en el monitor de sistema de Perfmon, consulte [mejorar la eficacia de un proveedor de instancias](improving-the-efficiency-of-an-instance-provider.md). Para obtener más información acerca de la escritura de controladores de dispositivos habilitados para WMI, consulte [https://www.microsoft.com/ddk](https://msdn.microsoft.com/library/aa972908.aspx) . Para obtener más información acerca de los calificadores específicos de WDM en el archivo MOF, consulte [**calificadores específicos del proveedor de WDM**](qualifiers-specific-to-the-wdm-provider.md).
+WMI también puede hacer que los contadores de alto rendimiento para los controladores de hardware estén disponibles. Para obtener más información sobre cómo crear clases de alto rendimiento y mostrar datos en el Monitor de sistema de Perfmon, vea [Improving the Efficiency of an Instance Provider](improving-the-efficiency-of-an-instance-provider.md). Para obtener más información sobre cómo escribir controladores de dispositivo habilitados para WMI, vea [https://www.microsoft.com/ddk](https://msdn.microsoft.com/library/aa972908.aspx) . Para obtener más información sobre los calificadores específicos de WDM en el archivo MOF, vea [**Calificadores específicos del proveedor de WDM.**](qualifiers-specific-to-the-wdm-provider.md)
 
 ## <a name="information-for-administrators-and-users-of-driver-data"></a>Información para administradores y usuarios de datos de controladores
 
-Al enumerar las instancias de la clase [WMIBinaryMofResource](/windows/desktop/WmiCoreProv/wmibinarymofresource) , se proporciona una lista de los controladores del sistema e información sobre si el proveedor de WDM ha realizado correctamente la compilación de MOF para cada controlador. Puede forzar que el proveedor vuelva a compilar y regenerar las clases para un controlador eliminando la instancia de WMIBinaryMofResource que representa ese controlador. Los detalles de los errores de [MOFCOMP](mofcomp.md) se muestran en el archivo MOFCOMP. log.
+Enumerar las instancias de la [clase WMIBinaryMofResource](/windows/desktop/WmiCoreProv/wmibinarymofresource) proporciona una lista de los controladores del sistema e información sobre si el proveedor de WDM ha logrado compilar correctamente los MOF para cada controlador. Puede forzar al proveedor a volver a compilar y volver a generar las clases de un controlador mediante la eliminación de la instancia de WMIBinaryMofResource que representa ese controlador. Los detalles de los errores de [mofcomp](mofcomp.md) se notifican en Mofcomp.log.
 
-Si el espacio de nombres WMI está dañado, se puede eliminar y volver a abrir para forzar a WDM a volver a generar las clases de controlador. Para obtener más información sobre cómo abrir un espacio de nombres, vea [Crear jerarquías en WMI](creating-hierarchies-within-wmi.md).
+Si el espacio de nombres WMI está dañado, se puede eliminar y volver a abrir para forzar a WDM a volver a generar las clases de controlador. Para obtener más información sobre cómo abrir un espacio de nombres, vea [Crear jerarquías dentro de WMI.](creating-hierarchies-within-wmi.md)
 
-En ocasiones, las clases de controlador pueden aparecer "en desuso" si se interrumpe la carga de controladores o se producen otras operaciones anómalas. El proveedor de WDM solo buscará y limpiará las clases "en desuso" cuando se instale un nuevo controlador o cuando el valor de clave del registro de **\\ Microsoft \\ WBEM \\ WDMProvider del software** **ProcessStrandedClasses** esté establecido en **true**. Si se establece este valor en **true** , se ralentiza el rendimiento de inicio de WMI debido a la operación de limpieza. El valor predeterminado es **FALSE**. El proveedor de WDM solo comprueba este valor del registro cuando \\ se abre por primera vez el espacio de nombres "root WMI".
+En ocasiones, las clases de controlador pueden "desenlazado" si se interrumpe la carga del controlador o se producen otras operaciones anómalas. El proveedor de WDM solo buscará y limpiará las clases "desenlazados" cuando se instale un nuevo controlador o cuando el valor de clave del Registro **ProcessClassedClasses** de **\\ Microsoft \\ WBEM \\** de Software esté establecido en **TRUE.** Establecer este valor en **TRUE ralentiza** el rendimiento de inicio de WMI debido a la operación de limpieza. El valor predeterminado es **FALSE**. El proveedor WDM solo comprueba este valor del Registro cuando el espacio de nombres \\ "Wmi raíz" se abre por primera vez.
 
-Si se realizan cambios de seguridad en un controlador de dispositivo WDM, los cambios no entrarán en vigor hasta que el proveedor de WDM se descargue y se vuelva a cargar. El servicio de administración de Windows debe detenerse y reiniciarse para lograrlo.
+Si se realizan cambios de seguridad en un controlador de dispositivo WDM, los cambios no se harán efectivos hasta que el proveedor de WDM se descargue y se vuelva a cargar. El Windows management debe detenerse y reiniciarse para lograr esto.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar WMI](using-wmi.md)
+[Uso de WMI](using-wmi.md)
 </dt> </dl>
 
  

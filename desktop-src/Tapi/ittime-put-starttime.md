@@ -1,21 +1,21 @@
 ---
-description: El \_ método startTime Put establece el valor de hora de inicio de 32 bits NTP (Protocolo de tiempo de red). La sesión se considera activa desde este momento.
+description: El método put StartTime establece el valor de hora de inicio NTP (Protocolo de hora de \_ red) de 32 bits. La sesión se considera activa desde este momento.
 ms.assetid: c7c96265-4588-4f05-83b6-6ef54f02650b
-title: 'ITTime: método de ut_StartTime de:p (Sdpblb. h)'
+title: ItTime::p ut_StartTime (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a5b574f7c90d7cc2f92204e3a045b33e6fb8480
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6b0e1fe25f2518396ec507f88d0a89c5928f676b64d626c32307336b95ef21e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003233"
 ---
-# <a name="ittimeput_starttime-method"></a>ITTime::p \_ método startTime de UT
+# <a name="ittimeput_starttime-method"></a>ItTime::p ut \_ StartTime (método)
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Los controles e interfaces de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El **método \_ startTime Put** establece el valor de hora de inicio de 32 bits NTP (Protocolo de tiempo de red). La sesión se considera activa desde este momento.
+El **método put \_ StartTime** establece el valor de hora de inicio NTP (Protocolo de hora de red) de 32 bits. La sesión se considera activa desde este momento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,7 +32,7 @@ HRESULT put_StartTime(
 
 <dl> <dt>
 
-*Hora* \[ de de\]
+*Hora* \[ En\]
 </dt> <dd>
 
 Hora de inicio de la sesión.
@@ -47,9 +47,9 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                   | Descripción                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | El parámetro *Tim* e no es válido.<br/>                   |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | El *parámetro Tim* e no es válido.<br/>                   |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/> |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>        | Error no especificado.<br/>                                   |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método aún no se ha implementado.<br/>                  |
 
@@ -57,9 +57,9 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función puede enviar datos a través de la conexión en formato no cifrado. por lo tanto, es posible que alguien que escucha en la red pueda leer los datos. El riesgo de seguridad de enviar los datos en texto no cifrado debe tenerse en cuenta antes de usar este método.
+Esta función puede enviar datos a través de la conexión sin cifrar; por lo tanto, alguien que intercepta en la red puede leer los datos. El riesgo de seguridad de enviar los datos en texto sin formato debe tenerse en cuenta antes de usar este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,9 +67,9 @@ Esta función puede enviar datos a través de la conexión en formato no cifrado
 
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
@@ -81,7 +81,7 @@ Esta función puede enviar datos a través de la conexión en formato no cifrado
 [**ITTime**](ittime.md)
 </dt> <dt>
 
-[**ITTime:: get \_ startTime**](ittime-get-starttime.md)
+[**ITTime::get \_ StartTime**](ittime-get-starttime.md)
 </dt> </dl>
 
  

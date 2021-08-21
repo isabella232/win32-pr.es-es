@@ -1,5 +1,5 @@
 ---
-description: El archivo siguiente define un cubo simple que tiene cuatro lados rojos y dos verdes. En este archivo, se usa información opcional para agregar información al objeto de datos definido por la plantilla Mesh.
+description: El archivo siguiente define un cubo simple que tiene cuatro lados rojos y dos verdes. En este archivo, se usa información opcional para agregar información al objeto de datos definido por la plantilla mesh.
 ms.assetid: 310981bf-3536-43dd-ad7c-40ab6c8ef6c4
 title: Definir un cubo simple (Direct3D 9)
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118988323"
 ---
 # <a name="defining-a-simple-cube-direct3d-9"></a>Definir un cubo simple (Direct3D 9)
 
-El archivo siguiente define un cubo simple que tiene cuatro lados rojos y dos verdes. En este archivo, se usa información opcional para agregar información al objeto de datos definido por la [**plantilla Mesh.**](mesh.md)
+El archivo siguiente define un cubo simple que tiene cuatro lados rojos y dos verdes. En este archivo, se usa información opcional para agregar información al objeto de datos definido por la [**plantilla mesh.**](mesh.md)
 
 
 ```

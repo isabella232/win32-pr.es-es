@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: EsentResource. Dispose (método)'
-title: EsentResource. Dispose (método)
+description: 'Más información sobre: Método EsentResource.Dispose'
+title: Método EsentResource.Dispose
 TOCTitle: 'Dispose method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentResource.Dispose
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentresource.dispose(v=EXCHG.10)
@@ -20,21 +20,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d301b3b1f43d57631091003bf77d06d749bd98ae
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 454e1de49c74e33da796fc6c1dec9559223834eb3e92437a0b671814847e5190
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119115195"
 ---
-# <a name="esentresourcedispose-method"></a>EsentResource. Dispose (método)
+# <a name="esentresourcedispose-method"></a>Método EsentResource.Dispose
 
-Desechar este objeto, liberando el recurso esent subyacente.
+Elimine este objeto y libere el recurso subyacente de Esent.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -51,9 +51,9 @@ public void Dispose()
 
 #### <a name="implements"></a>Implementaciones
 
-[IDisposable. Dispose ()](/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose)  
+[IDisposable.Dispose()](/dotnet/api/system.idisposable.dispose#System_IDisposable_Dispose)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
@@ -61,6 +61,6 @@ public void Dispose()
 
 [Miembros de EsentResource](./esentresource-members.md)
 
-[Eliminar sobrecarga](./esentresource.dispose-method.md)
+[Sobrecarga de Dispose](./esentresource.dispose-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
