@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DFSR-ReplicationGroupGuid
+title: Atributo ms-DFSR-ReplicationGroupGuid
 description: Contiene el GUID del grupo de replicación.
 ms.assetid: cf510f09-b527-4306-9e08-06401c350c45
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DFSR-ReplicationGroupGuid
-- msDFSR-ReplicationGroupGuid atributo AD Schema
+- Esquema de AD del atributo ms-DFSR-ReplicationGroupGuid
+- Esquema de AD del atributo msDFSR-ReplicationGroupGuid
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d58e106ee88c45e5f43cd71d83ad86bb442ee661
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 53f6688591478e49c9baeedf8b5b4db27b8c905b47ca825a91f079216278285b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118015381"
 ---
-# <a name="ms-dfsr-replicationgroupguid-attribute"></a>atributo MS-DFSR-ReplicationGroupGuid
+# <a name="ms-dfsr-replicationgroupguid-attribute"></a>Atributo ms-DFSR-ReplicationGroupGuid
 
 Contiene el GUID del grupo de replicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-DFSR-ReplicationGroupGuid                          |
-| Nombre para mostrar de LDAP | msDFSR-ReplicationGroupGuid                           |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | ms-DFSR-ReplicationGroupGuid                          |
+| Ldap-Display-Name | msDFSR-ReplicationGroupGuid                           |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.23                            |
-| System-ID-GUID    | 2dad8796-7619-4ff8-966e-0a5cc67b287f                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 2dad8796-7619-4ff8-966e-0a5cc67b287f                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -53,18 +53,18 @@ Contiene el GUID del grupo de replicación.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | True                                                                                                                          |
 | Está indexado             | True                                                                                                                          |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | 16                                                                                                                            |
 | Range-Upper            | 16                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
 | System-Flags           | 0x00000000                                                                                                                    |
-| Clases usadas en        | [**MS-DFSR-suscriptor**](c-msdfsr-subscriber.md)<br/> [**MS-DFSR-suscripción**](c-msdfsr-subscription.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-Subscriber**](c-msdfsr-subscriber.md)<br/> [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 
@@ -74,18 +74,18 @@ Contiene el GUID del grupo de replicación.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | True                                                                                                                          |
 | Está indexado             | True                                                                                                                          |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | 16                                                                                                                            |
 | Range-Upper            | 16                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
 | System-Flags           | 0x00000000                                                                                                                    |
-| Clases usadas en        | [**MS-DFSR-suscriptor**](c-msdfsr-subscriber.md)<br/> [**MS-DFSR-suscripción**](c-msdfsr-subscription.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-Subscriber**](c-msdfsr-subscriber.md)<br/> [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 
@@ -95,18 +95,18 @@ Contiene el GUID del grupo de replicación.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | True                                                                                                                          |
 | Está indexado             | True                                                                                                                          |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | 16                                                                                                                            |
 | Range-Upper            | 16                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
 | System-Flags           | 0x00000000                                                                                                                    |
-| Clases usadas en        | [**MS-DFSR-suscriptor**](c-msdfsr-subscriber.md)<br/> [**MS-DFSR-suscripción**](c-msdfsr-subscription.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-Subscriber**](c-msdfsr-subscriber.md)<br/> [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 
@@ -114,26 +114,26 @@ Contiene el GUID del grupo de replicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                            |
+| Id. de vínculo                | \-                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                            |
-| System-Only            | False                                                                                                                         |
-| Tiene un único valor       | True                                                                                                                          |
-| Está indexado             | True                                                                                                                          |
-| En el catálogo global      | False                                                                                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                  |
+| System-Only            | Falso                                                                                                                         |
+| Es de un solo valor       | True                                                                                                                          |
+| Está indexado             | Verdadero                                                                                                                          |
+| En el catálogo global      | Falso                                                                                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                  |
 | Range-Lower            | 16                                                                                                                            |
 | Range-Upper            | 16                                                                                                                            |
 | Search-Flags           | 0x00000001                                                                                                                    |
 | System-Flags           | 0x00000000                                                                                                                    |
-| Clases usadas en        | [**MS-DFSR-suscriptor**](c-msdfsr-subscriber.md)<br/> [**MS-DFSR-suscripción**](c-msdfsr-subscription.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-Subscriber**](c-msdfsr-subscriber.md)<br/> [**ms-DFSR-Subscription**](c-msdfsr-subscription.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El atributo **MS-DFSR-ReplicationGroupGuid** forma parte de la compatibilidad con el servicio de replicación sistema de archivos distribuido (DFS).
+El **atributo ms-DFSR-ReplicationGroupGuid** forma parte de la compatibilidad del servicio de replicación Sistema de archivos distribuido (DFS).
 
  
 

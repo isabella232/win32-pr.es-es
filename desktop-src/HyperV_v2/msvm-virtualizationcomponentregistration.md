@@ -1,7 +1,7 @@
 ---
-description: Representa el registro de un servicio en la plataforma de Microsoft Hyper-V.
+description: Representa el registro de un servicio en Microsoft Hyper-V plataforma.
 ms.assetid: 706557C2-49D6-453F-9DC0-2C655888EEBE
-title: Msvm_VirtualizationComponentRegistration (clase)
+title: Msvm_VirtualizationComponentRegistration clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7e9704dcade0474a10ca60383280941ec2e3591b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7acd111ab95f59146763e874d40c4efb411313938c94b1a4527aa1e2d08490c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118146559"
 ---
-# <a name="msvm_virtualizationcomponentregistration-class"></a>MSVM \_ VirtualizationComponentRegistration (clase)
+# <a name="msvm_virtualizationcomponentregistration-class"></a>Clase Msvm \_ VirtualizationComponentRegistration
 
-Representa el registro de un servicio en la plataforma de Microsoft Hyper-V.
+Representa el registro de un servicio en Microsoft Hyper-V plataforma.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF).
+La sintaxis siguiente se simplifica Managed Object Format (MOF).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,20 +40,20 @@ class Msvm_VirtualizationComponentRegistration
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ VirtualizationComponentRegistration** tiene estos tipos de miembros:
+La **clase Msvm \_ VirtualizationComponentRegistration** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ VirtualizationComponentRegistration** tiene estas propiedades.
+La **clase Msvm \_ VirtualizationComponentRegistration** tiene estas propiedades.
 
 <dl> <dt>
 
 **Componente**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **[ **MSVM \_ VirtualizationComponent**](msvm-virtualizationcomponent.md)**
+Tipo de datos: **[ **Msvm \_ VirtualizationComponent**](msvm-virtualizationcomponent.md)**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -66,7 +66,7 @@ Referencia a una instancia de que describe el objeto COM que implementa esta cla
 **ResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **[ **MSVM \_ ResourceTypeDefinition**](msvm-resourcetypedefinition.md)**
+Tipo de datos: **[ **Msvm \_ ResourceTypeDefinition**](msvm-resourcetypedefinition.md)**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -76,22 +76,22 @@ Referencia a una instancia de que describe un tipo de recurso admitido por el se
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase **MSVM \_ VirtualizationComponentRegistration** puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a **la clase Msvm \_ VirtualizationComponentRegistration** puede estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows 8.1<br/>                                                                                  |
-| Fin de compatibilidad de servidor<br/>    | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Fin de compatibilidad de servidor<br/>    | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

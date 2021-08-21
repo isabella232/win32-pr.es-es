@@ -1,19 +1,19 @@
 ---
-title: Funciones de red de Windows
-description: Las siguientes funciones se usan en las redes de Windows
+title: Windows Funciones de red
+description: Las siguientes funciones se usan en Windows redes
 ms.assetid: 95e30f8f-a326-424d-bd80-5fc9b3078dad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3d962d82cc613416838fcdc75734d26c17f9d40
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7b6028720b5987261398789ad00ecb2c84c283ab82332984e9dd5c7a53cf9dec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104421361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118330899"
 ---
-# <a name="windows-networking-functions"></a>Funciones de red de Windows
+# <a name="windows-networking-functions"></a>Windows Funciones de red
 
-Las siguientes funciones se usan en las redes de Windows:
+Las siguientes funciones se usan en Windows redes:
 
 <dl>
 
@@ -43,13 +43,13 @@ Las siguientes funciones se usan en las redes de Windows:
 
 ## <a name="obsolete-functions"></a>Funciones obsoletas
 
-La función siguiente solo se proporciona para la compatibilidad con versiones de Windows de 16 bits:
+La siguiente función solo se proporciona por compatibilidad con versiones de 16 bits de Windows:
 
 <dl>
 
 [**WNetAddConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnectiona)  
 </dl>
 
- 
+ 
 
- 
+ 

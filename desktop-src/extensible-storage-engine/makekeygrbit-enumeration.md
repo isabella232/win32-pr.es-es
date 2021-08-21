@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración MakeKeyGrbit'
-title: Enumeración MakeKeyGrbit
+description: 'Más información sobre: Enumeración MakeKeyGrbit'
+title: MakeKeyGrbit (enumeración)
 TOCTitle: MakeKeyGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.MakeKeyGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.makekeygrbit(v=EXCHG.10)
@@ -44,21 +44,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1c19a8c24b5adc4e8655c5372bd9c374e8674e9e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5adfb504237710277a75e3c5ecb12e00e8bf54042a01ca1b794a63f2795f3db0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118071859"
 ---
-# <a name="makekeygrbit-enumeration"></a>Enumeración MakeKeyGrbit
+# <a name="makekeygrbit-enumeration"></a>MakeKeyGrbit (enumeración)
 
 Opciones de JetMakeKey.
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -88,53 +88,53 @@ public enum MakeKeyGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>None</td>
+<td>Ninguno</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
 <td></td>
-<td>Nuevaclave</td>
-<td>Se debe crear una nueva clave de búsqueda. Se descarta cualquier clave de búsqueda existente previamente.</td>
+<td>NewKey</td>
+<td>Se debe construir una nueva clave de búsqueda. Se descarta cualquier clave de búsqueda existente anteriormente.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>NormalizedKey</td>
-<td>Cuando se especifica esta opción, se omiten todas las demás opciones, se descarta cualquier clave de búsqueda existente y el contenido del búfer de entrada se carga como la nueva clave de búsqueda.</td>
+<td>Cuando se especifica esta opción, se omiten todas las demás opciones, se descarta cualquier clave de búsqueda existente anteriormente y el contenido del búfer de entrada se carga como la nueva clave de búsqueda.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>KeyDataZeroLength</td>
-<td>Si el tamaño del búfer de entrada es cero y la columna de clave actual es una columna de longitud variable, esta opción indica que el búfer de entrada contiene un valor de longitud cero. De lo contrario, el tamaño del búfer de entrada cero indicaría un valor NULL.</td>
+<td>Si el tamaño del búfer de entrada es cero y la columna de clave actual es una columna de longitud variable, esta opción indica que el búfer de entrada contiene un valor de longitud cero. De lo contrario, un tamaño de búfer de entrada de cero indicaría un valor NULL.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>StrLimit</td>
-<td>Esta opción indica que la clave de búsqueda debe construirse de tal forma que las columnas de clave que aparecen después de la columna de clave actual se consideren como caracteres comodín.</td>
+<td>Esta opción indica que la clave de búsqueda debe construirse de forma que todas las columnas de clave que vienen después de la columna de clave actual se consideren caracteres comodín.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>SubStrLimit</td>
-<td>Esta opción indica que la clave de búsqueda debe construirse de tal forma que la columna de clave actual se considere un carácter comodín de prefijo y que las columnas de clave que se encuentran después de la columna de clave actual se consideren como caracteres comodín.</td>
+<td>Esta opción indica que la clave de búsqueda debe construirse de forma que la columna de clave actual se considere un carácter comodín de prefijo y que todas las columnas de clave que vienen después de la columna de clave actual se consideren como caracteres comodín.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>FullColumnStartLimit</td>
-<td>La clave de búsqueda se debe construir de modo que las columnas de clave que se encuentran después de la columna de clave actual se consideren como caracteres comodín.</td>
+<td>La clave de búsqueda debe construirse de forma que todas las columnas de clave que vienen después de la columna de clave actual se consideren caracteres comodín.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>FullColumnEndLimit</td>
-<td>La clave de búsqueda debe construirse de tal forma que las columnas de clave que aparecen después de la columna de clave actual se consideren como caracteres comodín.</td>
+<td>La clave de búsqueda debe construirse de forma que las columnas de clave que vienen después de la columna de clave actual se consideren caracteres comodín.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>PartialColumnStartLimit</td>
-<td>La clave de búsqueda debe construirse de tal forma que la columna de clave actual se considere un carácter comodín de prefijo y que las columnas de clave que aparecen después de la columna de clave actual se consideren como caracteres comodín.</td>
+<td>La clave de búsqueda debe construirse de forma que la columna de clave actual se considere un carácter comodín de prefijo y que las columnas de clave que vienen después de la columna de clave actual se consideren caracteres comodín.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>PartialColumnEndLimit</td>
-<td>La clave de búsqueda debe construirse de tal forma que la columna de clave actual se considere un carácter comodín de prefijo y que las columnas de clave que aparecen después de la columna de clave actual se consideren como caracteres comodín.</td>
+<td>La clave de búsqueda debe construirse de forma que la columna de clave actual se considere un carácter comodín de prefijo y que las columnas de clave que vienen después de la columna de clave actual se consideren caracteres comodín.</td>
 </tr>
 </tbody>
 </table>
@@ -144,4 +144,4 @@ public enum MakeKeyGrbit
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_GETSTATE (commctrl. h)
-description: Recupera información sobre el estado del botón especificado en una barra de herramientas, como, por ejemplo, si está habilitado, presionado o activado.
+title: TB_GETSTATE mensaje (Commctrl.h)
+description: Recupera información sobre el estado del botón especificado en una barra de herramientas, como si está habilitado, presionado o activado.
 ms.assetid: e8a9e1ff-506f-413b-8f8c-986c25bce736
 keywords:
-- TB_GETSTATE controles de mensajes de Windows
+- TB_GETSTATE controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3b5c50978da78218be7f3d47208c0ea430ff36c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: de1757cfd71427904dc7060cc0084c64b82f143e1a8db666e40fe9e08c64c7ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118168241"
 ---
-# <a name="tb_getstate-message"></a>\_Mensaje GETSTATE TB
+# <a name="tb_getstate-message"></a>Mensaje \_ GETSTATE de TB
 
-Recupera información sobre el estado del botón especificado en una barra de herramientas, como, por ejemplo, si está habilitado, presionado o activado.
+Recupera información sobre el estado del botón especificado en una barra de herramientas, como si está habilitado, presionado o activado.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -41,17 +41,17 @@ Identificador de comando del botón para el que se va a recuperar información.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la información de estado del botón si se realiza correctamente, o-1 en caso contrario. La información sobre el estado de los botones puede ser una combinación de los valores que aparecen en [**los Estados**](toolbar-button-states.md)de los botones de la barra de herramientas.
+Devuelve la información de estado del botón si se realiza correctamente o -1 en caso contrario. La información de estado del botón puede ser una combinación de los valores enumerados en Estados del [**botón de la**](toolbar-button-states.md)barra de herramientas .
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

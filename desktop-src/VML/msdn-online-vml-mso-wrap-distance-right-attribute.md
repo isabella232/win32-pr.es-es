@@ -1,26 +1,26 @@
 ---
-title: VML MSO-Wrap-Distance-Right (atributo)
-description: VML MSO-Wrap-Distance-Right (atributo)
+title: Atributo MSO-Wrap-Distance-Right de VML
+description: Atributo MSO-Wrap-Distance-Right de VML
 ms.assetid: 2f0ec7a3-036e-4f45-a330-f8ddccb75791
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf38fc62812b0ce300e4d18067a0f2497233f2e7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3e7984c44325e62f3192725a52f2730b3ebcfc1daa78524855f8416fb840472d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103904674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118124325"
 ---
-# <a name="vml-mso-wrap-distance-right-attribute"></a>VML MSO-Wrap-Distance-Right (atributo)
+# <a name="vml-mso-wrap-distance-right-attribute"></a>Atributo MSO-Wrap-Distance-Right de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Define la distancia entre el lado derecho de la forma y el texto que se ajusta alrededor de ella. Lectura/escritura **Cadena**.
+Define la distancia desde el lado derecho de la forma hasta el texto que la contiene. Lectura/escritura **Cadena**.
 
 **Se aplica a**
 
@@ -28,13 +28,13 @@ Define la distancia entre el lado derecho de la forma y el texto que se ajusta a
 
 **Sintaxis de etiquetas**
 
-<v: *Element* style = "MSO-Wrap-Distance-Right: *expresión* " >
+<v: *element* style="mso-wrap-distance-right: *expression* ">
 
 **Comentarios:**
 
-Tenga en cuenta que este atributo es diferente del atributo de **margen** de CSS. **Margen** cambia el origen de la forma para incluir las áreas de margen, pero la distancia de ajuste en Microsoft Office no cambia el origen de la forma.
+Tenga en cuenta que este atributo es diferente del **atributo** margen CSS. **El** margen cambia el origen de la forma para incluir las áreas de margen, pero la distancia de ajuste en Microsoft Office no cambia el origen de la forma.
 
-*Microsoft Office atributo Extensions*
+*Microsoft Office Atributo Extensions*
 
 **Ejemplo**
 
@@ -52,6 +52,6 @@ La forma tiene una distancia de ajuste derecha de 10 puntos.
 
 
 
- 
+ 
 
- 
+ 

@@ -13,7 +13,7 @@ ms.locfileid: "118308947"
 ---
 # <a name="using-a-com-interface"></a>Uso de una interfaz COM
 
-El código de cliente es el usuario de la interfaz COM. Para usar cualquier interfaz COM, personalizada o estándar, un cliente debe conocer su IID. En el ejemplo siguiente, el controlador que llama a CustomRpt le pasa el nombre del objeto que se convierte a un formato de caracteres anchos. El nombre del objeto se introduce en [**CreateFileMoniker**](/windows/desktop/api/Objbase/nf-objbase-createfilemoniker) para que se pueda crear un moniker de archivo y el cliente pueda enlazarse al objeto en ejecución. Una vez que se ejecuta el objeto, CustomRpt puede acceder a un puntero a una interfaz del proxy o código auxiliar estándar, como [**IPersistFile,**](/windows/desktop/api/ObjIdl/nn-objidl-ipersistfile)o a la interfaz personalizada, ICustomInterface.
+El código de cliente es el usuario de la interfaz COM. Para usar cualquier interfaz COM, personalizada o estándar, un cliente debe conocer su IID. En el ejemplo siguiente, el controlador que llama a CustomRpt le pasa el nombre del objeto que se convierte a un formato de caracteres anchos. El nombre del objeto se introduce en [**CreateFileMoniker**](/windows/desktop/api/Objbase/nf-objbase-createfilemoniker) para que se pueda crear un moniker de archivo y el cliente pueda enlazarse al objeto en ejecución. Una vez que se ejecuta el objeto, CustomRpt puede tener acceso a un puntero a una interfaz en el proxy o código auxiliar estándar, como [**IPersistFile,**](/windows/desktop/api/ObjIdl/nn-objidl-ipersistfile)o a la interfaz personalizada, ICustomInterface.
 
 
 ```C++

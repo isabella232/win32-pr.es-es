@@ -4,7 +4,7 @@ description: Licencia de vehículo o placa de registro.
 ms.assetid: 09505889-3dcc-46a3-851d-d9594c3a2ccb
 ms.tgt_platform: multiple
 keywords:
-- CarLicense attribute AD Schema (Esquema de AD del atributo carLicense)
+- Esquema de AD del atributo carLicense
 topic_type:
 - apiref
 api_name:
@@ -31,7 +31,7 @@ Licencia de vehículo o placa de registro.
 | CN                | carLicense                                  |
 | Ldap-Display-Name | carLicense                                  |
 | Size              | \-                                          |
-| Actualizar privilegios  | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 2.16.840.1.113730.3.1.1                     |
 | System-Id-Guid    | d4159c92-957d-4a87-8a67-8d2934e01649        |
@@ -51,7 +51,7 @@ Licencia de vehículo o placa de registro.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
@@ -72,7 +72,7 @@ Licencia de vehículo o placa de registro.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
@@ -93,7 +93,7 @@ Licencia de vehículo o placa de registro.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
@@ -135,7 +135,7 @@ Licencia de vehículo o placa de registro.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |

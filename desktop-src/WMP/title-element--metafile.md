@@ -1,9 +1,9 @@
 ---
-title: TITLE (elemento) (metarchivo)
+title: ELEMENTO TITLE (metarchivo)
 description: El elemento TITLE define una cadena de texto que especifica el título de un elemento ASX o ENTRY.
 ms.assetid: d7ad7f00-fcf2-456d-a106-98bf0a258b81
 keywords:
-- Elemento TITLE (metarchivo) Windows Media Player
+- Elemento TITLE (metarchivo) Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bdb58edbb3ffd99e8be557fdb05a7e51298fda14
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 085bec9a9937c8dbd02fad6df785f4bce7afea90a74117e745f09cb5135633d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118117725"
 ---
-# <a name="title-element-metafile"></a>TITLE (elemento) (metarchivo)
+# <a name="title-element-metafile"></a>ELEMENTO TITLE (metarchivo)
 
-El elemento **title** define una cadena de texto que especifica el título de un elemento **ASX** o **entry** .
+El **elemento TITLE** define una cadena de texto que especifica el título de un elemento **ASX** **o ENTRY.**
 
 ``` syntax
 <TITLE>
@@ -40,7 +40,7 @@ Este elemento no tiene atributos.
 
 | Hierarchy       | Elementos           |
 |-----------------|--------------------|
-| Elementos primarios | **ASX**, **entrada** |
+| Elementos primarios | **ASX**, **ENTRY** |
 | Elementos secundarios  | Ninguno               |
 
 
@@ -49,13 +49,13 @@ Este elemento no tiene atributos.
 
 ## <a name="remarks"></a>Observaciones
 
-Este elemento define una cadena de texto que especifica el título de un elemento **ASX** o **entry** . El título se muestra en el panel de información y en el cuadro de diálogo **propiedades** .
+Este elemento define una cadena de texto que especifica el título de un **elemento ASX** o **ENTRY.** El título se muestra en el panel de presentación y en el **cuadro de diálogo** Propiedades.
 
-Cuando este elemento aparece dentro de un elemento **ASX** , el texto se muestra como **Mostrar** información. Cuando este elemento aparece dentro de un elemento de **entrada** , el texto se muestra como información de **recorte** .
+Cuando este elemento aparece dentro de un **elemento ASX,** el texto se muestra como **Mostrar** información. Cuando este elemento aparece dentro de un **elemento ENTRY,** el texto se muestra como **Información de** clip.
 
-Si un elemento **MOREINFO** también se usa con el elemento (primario) asociado, es el texto del título en el que el usuario hace clic para obtener acceso a la dirección URL definida en el elemento **MOREINFO** .
+Si también se usa un elemento **MOREINFO** con el elemento asociado (primario), es el texto del título en el que el usuario hace clic para acceder a la dirección URL definida en el **elemento MOREINFO.**
 
-Cada elemento **ASX** y **entry** primarios debe contener como máximo un elemento secundario **title** . Varios elementos **title** después del primero se omitirán y no se mostrarán.
+Cada elemento **ASX y** **ENTRY** primario debe contener como máximo un elemento **SECUNDARIO TITLE.** Varios **elementos TITLE** después de la primera se omitirán y no se mostrarán.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -78,7 +78,7 @@ Cada elemento **ASX** y **entry** primarios debe contener como máximo un elemen
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
@@ -86,10 +86,10 @@ Cada elemento **ASX** y **entry** primarios debe contener como máximo un elemen
 
 <dl> <dt>
 
-[**Referencia de elementos de metarchivo de Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referencia de elementos de metarchivo multimedia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referencia de metarchivos de Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referencia de metarchivo multimedia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

@@ -1,12 +1,12 @@
 ---
-title: ELEMENTO PLAYLIST
-description: ELEMENTO PLAYLIST
+title: Elemento PLAYLIST
+description: Elemento PLAYLIST
 ms.assetid: de568529-81f2-476b-ad1b-bb53f7e97b13
 keywords:
-- Reproductor de Windows Media máscaras,elemento PLAYLIST
-- skins,ELEMENTO PLAYLIST
+- Reproductor de Windows Media máscaras, elemento PLAYLIST
+- máscaras, elemento PLAYLIST
 - Elemento PLAYLIST
-- referencia de máscaras,elemento PLAYLIST
+- referencia de máscaras, elemento PLAYLIST
 - elements,PLAYLIST
 ms.topic: article
 ms.date: 05/31/2018
@@ -17,30 +17,30 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118336751"
 ---
-# <a name="playlist-element"></a>ELEMENTO PLAYLIST
+# <a name="playlist-element"></a>Elemento PLAYLIST
 
-El **elemento PLAYLIST** proporciona una manera de organizar los elementos multimedia en una lista para facilitar la manipulación mediante los siguientes atributos y métodos. Los elementos **DE LISTA DE** REPRODUCCIÓN predefinidos también se proporcionan para mayor comodidad. Las columnas personalizadas se pueden especificar para una lista de reproducción mediante la **inclusión de elementos COLUMN** como elementos secundarios del **elemento PLAYLIST.**
+El **elemento PLAYLIST** proporciona una manera de organizar elementos multimedia en una lista para facilitar la manipulación mediante los siguientes atributos y métodos. También se **proporcionan elementos de lista** de reproducción predefinidos para mayor comodidad. Las columnas personalizadas se pueden especificar para una lista de reproducción mediante la **inclusión de elementos COLUMN** como elementos secundarios del elemento **PLAYLIST.**
 
-El **elemento PLAYLIST** admite los siguientes atributos.
+El **elemento PLAYLIST** admite los atributos siguientes.
 
 
 
 | Atributo                                                                                 | Descripción                                                                                                                                |
 |-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| [allowColumnSorting](playlist-allowcolumnsorting.md)                                     | Especifica o recupera un valor que indica si se permite la ordenación por encabezados de columna.                                                    |
+| [allowColumnSorting](playlist-allowcolumnsorting.md)                                     | Especifica o recupera un valor que indica si se permite la ordenación en encabezados de columna.                                                    |
 | [allowItemEditing](playlist-allowitemediting.md)                                         | Especifica o recupera un valor que indica si los elementos de una lista de reproducción admiten la edición en contexto.                                            |
 | [Backgroundcolor](playlist-backgroundcolor.md)                                           | Especifica o recupera el color de fondo.                                                                                               |
 | [backgroundImage](playlist-backgroundimage.md)                                           | Especifica o recupera la imagen de fondo.                                                                                               |
 | [checkboxesVisible](playlist-checkboxesvisible.md)                                       | Especifica o recupera un valor que indica si las casillas están visibles.                                                                  |
 | [columnCount](playlist-columncount.md)                                                   | Recupera el número de columnas que se muestran.                                                                                                     |
-| [columnOrder](playlist-columnorder.md)                                                   | Especifica o recupera el orden de las columnas de lista de reproducción.                                                                                  |
+| [columnOrder](playlist-columnorder.md)                                                   | Especifica o recupera el orden de las columnas de la lista de reproducción.                                                                                  |
 | [Columnas](playlist-columns.md)                                                           | Define las columnas que aparecen en el elemento **PLAYLIST.**                                                                               |
 | [columnsVisible](playlist-columnsvisible.md)                                             | Especifica o recupera un valor que indica si se muestran columnas.                                                                       |
 | [Copiar](playlist-copying.md)                                                           | Recupera un valor que indica si el elemento **PLAYLIST** está en el acto de copiar.                                                    |
 | [disabledItemColor](playlist-disableditemcolor.md)                                       | Especifica o recupera el color de una pista de CD deshabilitada o de contenido en línea cuando está sin conexión.                                                 |
 | [dropDownBackgroundImage](playlist-dropdownbackgroundimage.md)                           | Especifica o recupera el nombre de la imagen que se muestra en el fondo de la lista desplegable.                                        |
 | [dropDownImage](playlist-dropdownimage.md)                                               | Especifica o recupera el nombre de la imagen usada para el botón de lista desplegable que se muestra en el borde derecho de la lista desplegable. |
-| [Dropdownlist](playlist-dropdownlist.md)                                                 | Especifica o recupera un valor que indica qué elementos se muestran en la lista desplegable para una instancia determinada del elemento **PLAYLIST.**   |
+| [Dropdownlist](playlist-dropdownlist.md)                                                 | Especifica o recupera un valor que indica qué elementos se muestran en la lista desplegable de una instancia determinada del elemento **PLAYLIST.**   |
 | [dropDownToolTip](playlist-dropdowntooltip.md)                                           | Especifica o recupera la información sobre herramientas que se muestra cuando el usuario mantiene el puntero sobre el menú desplegable del elemento **PLAYLIST.**                                |
 | [dropDownVisible](playlist-dropdownvisible.md)                                           | Especifica o recupera un valor que indica si el selector desplegable del elemento **PLAYLIST** está visible.                                  |
 | [editButtonVisible](playlist-editbuttonvisible.md)                                       | Especifica o recupera un valor que indica si el botón de edición del elemento **PLAYLIST** está visible.                                         |
@@ -80,17 +80,17 @@ El **elemento PLAYLIST** admite los métodos siguientes.
 | [copy](playlist-copy.md)                                           | Comienza una operación de copia desde el CD.                                                                                      |
 | [deleteSelected](playlist-deleteselected.md)                       | Elimina el elemento seleccionado de la lista de reproducción.                                                                              |
 | [deleteSelectedFromLibrary](playlist-deleteselectedfromlibrary.md) | Elimina el elemento seleccionado de la lista de reproducción y de la biblioteca.                                                         |
-| [getNextCheckedItem](playlist-getnextcheckeditem.md)               | Recupera el índice del siguiente elemento activado en la lista de reproducción después del índice especificado.                               |
-| [getNextCheckedItem2](playlist-getnextcheckeditem2.md)             | Recupera el índice del siguiente elemento activado en la lista de reproducción después del índice especificado. Funciona con listas de reproducción anidadas.  |
-| [getNextSelectedItem](playlist-getnextselecteditem.md)             | Recupera el índice del siguiente elemento seleccionado en la lista de reproducción después del índice especificado.                              |
-| [getNextSelectedItem2](playlist-getnextselecteditem2.md)           | Recupera el índice del siguiente elemento seleccionado en la lista de reproducción después del índice especificado. Funciona con listas de reproducción anidadas. |
+| [getNextCheckedItem](playlist-getnextcheckeditem.md)               | Recupera el índice del siguiente elemento activado en la lista de reproducción que sigue al índice especificado.                               |
+| [getNextCheckedItem2](playlist-getnextcheckeditem2.md)             | Recupera el índice del siguiente elemento activado en la lista de reproducción que sigue al índice especificado. Funciona con listas de reproducción anidadas.  |
+| [getNextSelectedItem](playlist-getnextselecteditem.md)             | Recupera el índice del siguiente elemento seleccionado en la lista de reproducción que sigue al índice especificado.                              |
+| [getNextSelectedItem2](playlist-getnextselecteditem2.md)           | Recupera el índice del siguiente elemento seleccionado en la lista de reproducción que sigue al índice especificado. Funciona con listas de reproducción anidadas. |
 | [moveSelectedDown](playlist-moveselecteddown.md)                   | Mueve el elemento seleccionado hacia abajo una posición de la lista.                                                                    |
 | [moveSelectedUp](playlist-moveselectedup.md)                       | Mueve el elemento seleccionado hacia arriba una posición de la lista.                                                                      |
-| [setCheckedState](playlist-setcheckedstate.md)                     | Especifica que el elemento indexado de la lista de reproducción está activado.                                                               |
+| [setCheckedState](playlist-setcheckedstate.md)                     | Especifica que el elemento indizado de la lista de reproducción está activado.                                                               |
 | [setCheckedState2](playlist-setcheckedstate2.md)                   | Establece el estado comprobado del elemento con el índice especificado en el elemento **PLAYLIST.** Funciona con listas de reproducción anidadas.     |
 | [setColumnResizeMode](playlist-setcolumnresizemode.md)             | Especifica el tamaño de las columnas indizadas.                                                                            |
 | [setColumnWidth](playlist-setcolumnwidth.md)                       | Especifica el ancho de columna y cambia el modo de cambio de tamaño de la columna a "wmpcrmFixed".                                    |
-| [setSelectedState](playlist-setselectedstate.md)                   | Especifica que el elemento indexado de la lista de reproducción está seleccionado.                                                              |
+| [setSelectedState](playlist-setselectedstate.md)                   | Especifica que el elemento indizado de la lista de reproducción está seleccionado.                                                              |
 | [setSelectedState2](playlist-setselectedstate2.md)                 | Establece el estado seleccionado del elemento con el índice especificado en el elemento **PLAYLIST.** Funciona con listas de reproducción anidadas.    |
 | [sortColumn](playlist-sortcolumn.md)                               | Ordena los datos de la columna especificada.                                                                                   |
 
@@ -98,15 +98,15 @@ El **elemento PLAYLIST** admite los métodos siguientes.
 
  
 
-El **elemento PLAYLIST** admite los atributos ambientales y puede implementar los controladores de eventos ambientales, excepto donde se indica. Para obtener más información, vea [Atributos de ambiente](ambient-attributes.md) y Controladores de eventos [ambientales.](ambient-event-handlers.md)
+El **elemento PLAYLIST** admite los atributos de ambiente y puede implementar los controladores de eventos de ambiente, excepto donde se indica. Para obtener más información, vea [Atributos ambientales](ambient-attributes.md) y [controladores de eventos de ambiente.](ambient-event-handlers.md)
 
-Las listas de reproducción predefinidas son elementos **de lista de reproducción** normales con varias configuraciones de atributos comunes especificadas de forma predeterminada. Están disponibles las siguientes listas de reproducción predefinidas.
+Las listas de reproducción predefinidas son elementos **DE LISTA DE REPRODUCCIÓN** normales con varias configuraciones de atributos comunes especificadas de forma predeterminada. Están disponibles las siguientes listas de reproducción predefinidas.
 
 
 
 | LISTA DE REPRODUCCIÓN predefinida                      | Descripción                                                       |
 |------------------------------------------|-------------------------------------------------------------------|
-| [LISTA DESPLEGABLEPLAYLIST](dropdownplaylist.md) | Lista de reproducción **desplegable** sin elementos visibles.                   |
+| [DROPDOWNPLAYLIST](dropdownplaylist.md) | Lista de reproducción **desplegable** sin elementos visibles.                   |
 | [ITEMSPLAYLIST](itemsplaylist.md)       | Lista de reproducción **desplegable** sin elementos ni encabezados de columna visibles. |
 
 

@@ -4,7 +4,7 @@ description: Los métodos de propiedad de la interfaz IADsSecurityDescriptor obt
 ms.assetid: e0c50740-de98-4913-b3df-6fd53263bcc8
 ms.tgt_platform: multiple
 keywords:
-- Métodos de propiedad IADsSecurityDescriptor ADSI
+- IADsSecurityDescriptor Property Methods ADSI
 topic_type:
 - apiref
 api_name:
@@ -63,7 +63,7 @@ Los métodos de propiedad [**de la interfaz IADsSecurityDescriptor**](/windows/d
 **Control**
 </dt> <dd> <dl>
 
-Marcas que califican el significado del descriptor de seguridad. Los valores se toman de la estructura CONTROL DEL DESCRIPTOR DE [**\_ SEGURIDAD \_ de**](/windows/desktop/SecAuthZ/security-descriptor-control) Win32.
+Marcas que califican el significado del descriptor de seguridad. Los valores se toman de la estructura [**CONTROL DEL DESCRIPTOR DE SEGURIDAD \_ \_ de**](/windows/desktop/SecAuthZ/security-descriptor-control) Win32.
 
 <dt>
 
@@ -91,7 +91,7 @@ HRESULT put_Control(
 **DaclDefaulted**
 </dt> <dd> <dl>
 
-Marca del tipo BOOL que indica si la DACL se deriva de un mecanismo predeterminado, en lugar de ser proporcionada explícitamente por el proveedor original del descriptor de seguridad. Por ejemplo, si el creador de un objeto no especifica una DACL, el objeto recibe la DACL predeterminada del token de acceso del creador. Esta marca puede afectar al modo en que el sistema trata la DACL, con respecto a la herencia ace. El sistema omite esta marca si no SE \_ marca DACL \_ PRESENT.
+Marca del tipo BOOL que indica si la DACL se deriva de un mecanismo predeterminado, en lugar de proporcionarla explícitamente el proveedor original del descriptor de seguridad. Por ejemplo, si el creador de un objeto no especifica una DACL, el objeto recibe la DACL predeterminada del token de acceso del creador. Esta marca puede afectar a cómo el sistema trata la DACL, con respecto a la herencia ace. El sistema omite esta marca si no SE \_ marca DACL \_ PRESENT.
 
 <dt>
 
@@ -119,7 +119,7 @@ HRESULT put_DaclDefaulted(
 **DiscretionaryAcl**
 </dt> <dd> <dl>
 
-Lista de control de acceso discrecional (DACL) que especifica los tipos de acceso concedidos al objeto para usuarios y grupos especificados. Para obtener más información sobre las DACL, vea [NULL DACLs y Empty DACLs](/windows/desktop/AD/null-dacls-and-empty-dacls).
+Lista de control de acceso discrecional (DACL) que especifica los tipos de acceso concedidos al objeto para usuarios y grupos especificados. Para obtener más información sobre las DACL, vea [NULL DACLs and Empty DACLs](/windows/desktop/AD/null-dacls-and-empty-dacls).
 
 <dt>
 
@@ -175,7 +175,7 @@ HRESULT put_Group(
 **GroupDefaulted**
 </dt> <dd> <dl>
 
-Marca del tipo BOOL que indica si los datos de grupo se derivan de un mecanismo predeterminado, en lugar de ser proporcionados explícitamente por el proveedor original del descriptor de seguridad.
+Marca del tipo BOOL que indica si los datos de grupo se derivan de un mecanismo predeterminado, en lugar de proporcionarse explícitamente por el proveedor original del descriptor de seguridad.
 
 <dt>
 
@@ -231,7 +231,7 @@ HRESULT put_Owner(
 **OwnerDefaulted**
 </dt> <dd> <dl>
 
-Marca del tipo BOOL que indica que los datos del propietario se derivan de un mecanismo predeterminado, en lugar de ser proporcionados explícitamente por el proveedor original del descriptor de seguridad.
+Marca del tipo BOOL que indica que los datos del propietario se derivan de un mecanismo predeterminado, en lugar de proporcionarse explícitamente por el proveedor original del descriptor de seguridad.
 
 <dt>
 
@@ -287,7 +287,7 @@ HRESULT put_Revision(
 **SaclDefaulted**
 </dt> <dd> <dl>
 
-Marca del tipo BOOL que indica que la SACL se deriva de un mecanismo predeterminado, en lugar de ser proporcionada explícitamente por el proveedor original del descriptor de seguridad. Esta marca puede afectar a la forma en que el sistema controla la SACL, con respecto a la herencia ace. El sistema omite esta marca si no se SE la marca \_ SACL \_ PRESENT.
+Marca del tipo BOOL que indica que la SACL se deriva de un mecanismo predeterminado, en lugar de proporcionarse explícitamente por el proveedor original del descriptor de seguridad. Esta marca puede afectar a la forma en que el sistema controla la SACL, con respecto a la herencia ace. El sistema omite esta marca si no se SE \_ la marca SACL \_ PRESENT.
 
 <dt>
 
@@ -391,7 +391,7 @@ Cleanup:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

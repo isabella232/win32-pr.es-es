@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-IS-User-Cachable-at-RODC
-description: En el caso de un controlador de dominio de Read-Only (RODC), identifica si se pueden almacenar en caché los secretos del usuario especificado.
+title: Atributo ms-DS-Is-User-Cachable-At-Rodc
+description: Para un Read-Only de dominio (RODC), identifica si los secretos del usuario especificado se pueden almacenar en caché.
 ms.assetid: 1118d0a9-2219-478a-82b0-8ea4bbeae47d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-IS-User-Cachable-at-RODC
-- Esquema de AD de atributo msDS-IsUserCachableAtRodc
+- Esquema de AD del atributo ms-DS-Is-User-Cachable-At-Rodc
+- msDS-IsUserCachableAtRodc attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5699208cebe4c49321186813a64611f79ec52f4b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d0c218656e8c300fe4045e4e889dc6c7aa55df3d2a2e767627e6c97aa3596ae5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103805017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118014436"
 ---
-# <a name="ms-ds-is-user-cachable-at-rodc-attribute"></a>atributo MS-DS-IS-User-Cachable-at-RODC
+# <a name="ms-ds-is-user-cachable-at-rodc-attribute"></a>Atributo ms-DS-Is-User-Cachable-At-Rodc
 
-En el caso de un controlador de dominio de Read-Only (RODC), identifica si se pueden almacenar en caché los secretos del usuario especificado.
+Para un Read-Only de dominio (RODC), identifica si los secretos del usuario especificado se pueden almacenar en caché.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DS-IS-User-Cachable-at-RODC       |
-| Nombre para mostrar de LDAP | msDS-IsUserCachableAtRodc            |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DS-Is-User-Cachable-At-Rodc       |
+| Ldap-Display-Name | msDS-IsUserCachableAtRodc            |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2025              |
-| System-ID-GUID    | fe01245a-341f-4556-951f-48c033a89050 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | fe01245a-341f-4556-951f-48c033a89050 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -52,18 +52,18 @@ En el caso de un controlador de dominio de Read-Only (RODC), identifica si se pu
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                       |
+| Id. de vínculo                | \-                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                       |
-| System-Only            | False                                                                                                                    |
-| Tiene un único valor       | True                                                                                                                     |
-| Está indexado             | False                                                                                                                    |
-| En el catálogo global      | False                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                             |
+| System-Only            | Falso                                                                                                                    |
+| Es de un solo valor       | True                                                                                                                     |
+| Está indexado             | Falso                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                             |
 | Range-Lower            | \-                                                                                                                       |
 | Range-Upper            | \-                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                               |
 | System-Flags           | 0x00000014                                                                                                               |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Server**](c-server.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Servidor**](c-server.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ En el caso de un controlador de dominio de Read-Only (RODC), identifica si se pu
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                       |
+| Id. de vínculo                | \-                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                       |
-| System-Only            | False                                                                                                                    |
-| Tiene un único valor       | True                                                                                                                     |
-| Está indexado             | False                                                                                                                    |
-| En el catálogo global      | False                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                             |
+| System-Only            | Falso                                                                                                                    |
+| Es de un solo valor       | True                                                                                                                     |
+| Está indexado             | Falso                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                             |
 | Range-Lower            | \-                                                                                                                       |
 | Range-Upper            | \-                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                               |
 | System-Flags           | 0x00000014                                                                                                               |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Server**](c-server.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Servidor**](c-server.md)<br/> |
 
 
 
@@ -94,13 +94,13 @@ En el caso de un controlador de dominio de Read-Only (RODC), identifica si se pu
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                       |
+| Id. de vínculo                | \-                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                       |
-| System-Only            | False                                                                                                                    |
-| Tiene un único valor       | True                                                                                                                     |
-| Está indexado             | False                                                                                                                    |
-| En el catálogo global      | False                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                             |
+| System-Only            | Falso                                                                                                                    |
+| Es de un solo valor       | True                                                                                                                     |
+| Está indexado             | Falso                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                             |
 | Range-Lower            | \-                                                                                                                       |
 | Range-Upper            | \-                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                               |

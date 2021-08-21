@@ -103,10 +103,10 @@ Para una reproducción de vídeo sencilla, es todo el código que necesita. En e
 El código que se muestra en la sección anterior reproducirá el archivo multimedia hasta que llegue al final del archivo. Puede detener e iniciar la reproducción llamando a los métodos siguientes en la interfaz [**DEPMediaPlayer:**](/windows/desktop/api/mfplay/nn-mfplay-imfpmediaplayer)
 
 -   [**IMFPMediaPlayer::P ause pausa**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-pause) la reproducción. Mientras la reproducción está en pausa, se muestra el fotograma de vídeo más reciente y el audio es silencioso.
--   [**DETENTE DE LA REPRODUCCIÓN::Stop**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-stop) detiene la reproducción. No se muestra ningún vídeo y la posición de reproducción se restablece al inicio del archivo.
+-   [**IMFPMediaPlayer::Stop detiene la**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-stop) reproducción. No se muestra ningún vídeo y la posición de reproducción se restablece al inicio del archivo.
 -   [**IMFPMediaPlayer::P lay**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-play) reanuda la reproducción después de detener o pausar.
 
-El código siguiente pausa o reanuda la reproducción al presionar la **barra espaciadora**.
+El código siguiente pausa o reanuda la reproducción al presionar la **BARRA ESPACIADORA**.
 
 
 ```C++
@@ -226,7 +226,7 @@ En este ejemplo se usa el [**evento \_ GET PLAY \_ \_ EVENT**](/windows/desktop/
 
 Para obtener una lista de todos los tipos de eventos y las estructuras de datos correspondientes, vea [**MFP \_ EVENT \_ TYPE**](/windows/desktop/api/mfplay/ne-mfplay-mfp_event_type).
 
-Nota sobre el subprocesamiento: de forma predeterminada, MFPlay invoca la devolución de llamada desde el mismo subproceso que llamó [**a MFPCreateMediaPlayer**](/windows/desktop/api/mfplay/nf-mfplay-mfpcreatemediaplayer). Este subproceso debe tener un bucle de mensajes. Como alternativa, puede pasar la marca DE DEVOLUCIÓN DE LLAMADA FREE **\_ \_ \_ \_ THREADED** DE MFP OPTION en el parámetro *creationOptions* **de MFPCreateMediaPlayer**. Esta marca hace que MFPlay invoque devoluciones de llamada desde un subproceso independiente. Cualquiera de las opciones tiene implicaciones para la aplicación. La opción predeterminada significa que la devolución de llamada no puede hacer nada que espere en el bucle de mensajes, como esperar una acción de interfaz de usuario, porque eso bloqueará el procedimiento de la ventana. La opción de subproceso libre significa que debe usar secciones críticas para proteger los datos a los que tiene acceso en la devolución de llamada. En la mayoría de los casos, la opción predeterminada es más sencilla.
+Nota sobre el subprocesamiento: de forma predeterminada, MFPlay invoca la devolución de llamada del mismo subproceso que llamó [**a MFPCreateMediaPlayer**](/windows/desktop/api/mfplay/nf-mfplay-mfpcreatemediaplayer). Este subproceso debe tener un bucle de mensajes. Como alternativa, puede pasar la marca DE DEVOLUCIÓN DE LLAMADA FREE **\_ \_ \_ \_ THREADED** DE MFP OPTION en el parámetro *creationOptions* **de MFPCreateMediaPlayer**. Esta marca hace que MFPlay invoque devoluciones de llamada desde un subproceso independiente. Cualquiera de las opciones tiene implicaciones para la aplicación. La opción predeterminada significa que la devolución de llamada no puede hacer nada que espere en el bucle de mensajes, como esperar una acción de interfaz de usuario, porque eso bloqueará el procedimiento de la ventana. La opción de subproceso libre significa que debe usar secciones críticas para proteger los datos a los que tiene acceso en la devolución de llamada. En la mayoría de los casos, la opción predeterminada es más sencilla.
 
 ## <a name="getting-information-about-a-media-file"></a>Obtener información sobre un archivo multimedia
 
@@ -256,10 +256,10 @@ Si el archivo de origen contiene una secuencia de vídeo seleccionada para la re
 
 ## <a name="managing-video-playback"></a>Administración de la reproducción de vídeo
 
-Cuando MFPlay reproduce un archivo de vídeo, dibuja el vídeo en la ventana que especificó en la [**función MFPCreateMediaPlayer.**](/windows/desktop/api/mfplay/nf-mfplay-mfpcreatemediaplayer) Esto sucede en un subproceso independiente que pertenece a la canalización Microsoft Media Foundation reproducción. En su mayor parte, la aplicación no necesita administrar este proceso. Sin embargo, hay dos situaciones en las que la aplicación debe notificar a MFPlay que actualice el vídeo.
+Cuando MFPlay reproduce un archivo de vídeo, dibuja el vídeo en la ventana que especificó en la [**función MFPCreateMediaPlayer.**](/windows/desktop/api/mfplay/nf-mfplay-mfpcreatemediaplayer) Esto sucede en un subproceso independiente que pertenece a la canalización de Microsoft Media Foundation reproducción. En su mayor parte, la aplicación no necesita administrar este proceso. Sin embargo, hay dos situaciones en las que la aplicación debe notificar a MFPlay que actualice el vídeo.
 
--   Si la reproducción está en pausa o detenida, MFPlay debe recibir una notificación cada vez que la ventana de vídeo de la aplicación reciba un mensaje WM \_ PAINT. Esto permite a MFPlay volver a dibujar la ventana.
--   Si se cambia el tamaño de la ventana, MFPlay debe recibir una notificación para que pueda escalar el vídeo para que coincida con el nuevo tamaño de la ventana.
+-   Si la reproducción está en pausa o detenida, se debe notificar a MFPlay cada vez que la ventana de vídeo de la aplicación recibe un mensaje WM \_ PAINT. Esto permite a MFPlay volver a dibujar la ventana.
+-   Si se cambia el tamaño de la ventana, se debe notificar a MFPlay para que pueda escalar el vídeo para que coincida con el nuevo tamaño de la ventana.
 
 El [**método IMFPMediaPlayer::UpdateVideo**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-updatevideo) controla ambos casos. Llame a este método dentro de los controladores de mensajes WM PAINT y \_ WM SIZE para la ventana de \_ vídeo.
 
@@ -301,18 +301,18 @@ void OnPaint(HWND hwnd)
 
 
 
-A menos que especifique lo contrario, MFPlay muestra el vídeo con la relación de aspecto correcta, mediante la conversión de letras si es necesario. Si no desea conservar la relación de aspecto, llame a [**MFPMediaPlayer::SetAspectRatioMode**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setaspectratiomode) con la marca **MFVideoARMode \_ None.** Esto hará que MFPlay a stretch the video to fill the entire rectangle, with no letterboxing. Normalmente, debe usar la configuración predeterminada y dejar que mfplay letterboxe el vídeo. El color predeterminado del cuadro de letras es negro, pero puede cambiarlo llamando a [**IMFPMediaPlayer::SetBorderColor**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setbordercolor).
+A menos que especifique lo contrario, MFPlay muestra el vídeo con la relación de aspecto correcta, mediante la conversión de letras si es necesario. Si no desea conservar la relación de aspecto, llame a [**MFPMediaPlayer::SetAspectRatioMode**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setaspectratiomode) con la marca **MFVideoARMode \_ None.** Esto hará que MFPlay es mejore el vídeo para rellenar todo el rectángulo, sin necesidad de usar el cuadro de texto. Normalmente, debe usar la configuración predeterminada y dejar que MFPlay cree una caja de texto en el vídeo. El color predeterminado del cuadro de letras es negro, pero puede cambiarlo llamando a [**ALFMEDIAPlayer::SetBorderColor.**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setbordercolor)
 
 ## <a name="limitations-of-mfplay"></a>Limitaciones de MFPlay
 
 La versión actual de MFPlay tiene las siguientes limitaciones:
 
--   MFPlay no admite contenido protegido con DRM.
+-   MFPlay no admite contenido protegido por DRM.
 -   De forma predeterminada, MFPlay no admite protocolos de streaming de red. Para obtener más información, [**vea IMFPMediaPlayer::CreateMediaItemFromURL**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-createmediaitemfromurl).
 -   MFPlay no admite listas de reproducción del lado servidor (SSPL) u otros tipos de origen que reproducen más de un segmento. En términos técnicos, MFPlay detiene la reproducción después de la primera presentación y omite los eventos [MENewPresentation](menewpresentation.md) del origen multimedia.
--   MFPlay no admite transiciones sin problemas entre orígenes multimedia.
+-   MFPlay no admite transiciones perfectas entre orígenes multimedia.
 -   MFPlay no admite la combinación de varias secuencias de vídeo.
--   MFPlay solo admite los formatos multimedia Media Foundation de forma nativa. (Esto incluye componentes de Media Foundation de terceros que podrían instalarse en el sistema).
+-   MFPlay solo admite los formatos multimedia Media Foundation de forma nativa. (Esto incluye componentes de Media Foundation de terceros que podrían estar instalados en el sistema).
 
 ## <a name="related-topics"></a>Temas relacionados
 

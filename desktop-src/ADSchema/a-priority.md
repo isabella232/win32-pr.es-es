@@ -53,7 +53,7 @@ La prioridad actual (de un proceso, un trabajo de impresión, y así sucesivamen
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------|
 | Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
@@ -74,7 +74,7 @@ La prioridad actual (de un proceso, un trabajo de impresión, y así sucesivamen
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------|
 | Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
@@ -137,7 +137,7 @@ La prioridad actual (de un proceso, un trabajo de impresión, y así sucesivamen
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------|
 | Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
@@ -158,7 +158,7 @@ La prioridad actual (de un proceso, un trabajo de impresión, y así sucesivamen
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------|
 | Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |

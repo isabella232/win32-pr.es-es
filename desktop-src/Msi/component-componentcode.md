@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: f72f9fbbeece6fff2bb3fad77a4d06bb773ffd27
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 221d54fd0aca5d1698b55af03e12f80b2e7dd2d75733167eab023a7d3cee8eed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118144986"
 ---
 # <a name="componentcomponentcode-property"></a>Component.ComponentCode, propiedad
 
 Código de componente del componente en cuestión. Esta propiedad llama a [**la función MsiEnumComponentsEx.**](/windows/desktop/api/Msi/nf-msi-msienumcomponentsexa)
 
-**[Windows Installer versión 4.5 o anterior:](not-supported-in-windows-installer-4-5.md)** No se admite. Esta propiedad está disponible a partir de Windows Installer 5.0.
+**[Windows Instalador 4.5 o anterior:](not-supported-in-windows-installer-4-5.md)** No se admite. Esta propiedad está disponible a partir de Windows Installer 5.0.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,7 +36,7 @@ Código de componente del componente en cuestión. Esta propiedad llama a [**la 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5.0 o posterior.<br/>                                         |
+| Versión<br/> | Windows Instalador 5.0 o posterior.<br/>                                         |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl> |
 | IID<br/>     | IID IComponent se define como \_ 000C1097-0000-0000-C000-000000000046<br/>      |
 

@@ -1,5 +1,5 @@
 ---
-title: atributo de descodificación
+title: atributo decode
 description: El atributo \ decode\ ACF especifica que un procedimiento o un tipo necesita compatibilidad con la deserialización.
 ms.assetid: 78cd855f-6731-4ef8-9097-e8da5a9b3bdc
 keywords:
@@ -19,9 +19,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118384737"
 ---
-# <a name="decode-attribute"></a>atributo de descodificación
+# <a name="decode-attribute"></a>atributo decode
 
-El **\[ atributo \]** ACF de descodificación especifica que un procedimiento o un tipo necesitan compatibilidad con la deserialización.
+El **\[ atributo \] ACF** de descodificación especifica que un procedimiento o un tipo necesita compatibilidad con la deserialización.
 
 ``` syntax
 [ 
@@ -95,11 +95,11 @@ Especifica un tipo definido en el archivo IDL.
 
 El **\[ atributo \] de descodificación** hace que el compilador MIDL genere código que una aplicación puede usar para recuperar datos serializados de un búfer. El **\[** [**atributo de codificación**](encode.md) **\]** proporciona compatibilidad con la serialización, generando el código para serializar los datos en un búfer.
 
-Use los **\[** [**atributos de**](encode.md) **\]** **\[ \]** codificación y descodificación de un ACF para generar código de serialización para procedimientos o tipos definidos en el archivo IDL de una interfaz. Cuando se usa como atributo de interfaz, **\[ la descodificación \]** se aplica a todos los tipos y procedimientos definidos en el archivo IDL. Cuando se usa como atributo de tipo, **\[ la descodificación \]** solo se aplica al tipo especificado. Cuando se usa como atributo operativo, **\[ la descodificación \]** solo se aplica a ese procedimiento.
+Use los **\[** [**atributos de**](encode.md) **\]** **\[ \]** codificación y descodificación en un ACF para generar código de serialización para procedimientos o tipos definidos en el archivo IDL de una interfaz. Cuando se usa como atributo de interfaz, **\[ la descodificación \]** se aplica a todos los tipos y procedimientos definidos en el archivo IDL. Cuando se usa como atributo de tipo, **\[ la descodificación \]** solo se aplica al tipo especificado. Cuando se usa como atributo operativo, **\[ la descodificación \]** solo se aplica a ese procedimiento.
 
-Para obtener más información sobre el uso de esta compatibilidad con la serialización, vea [Servicios de serialización](/windows/desktop/Rpc/serialization-services) y **\[** [**codificación de**](encode.md) **\]** .
+Para obtener más información sobre el uso de esta compatibilidad con la serialización, vea [Servicios de serialización](/windows/desktop/Rpc/serialization-services) **\[** [**y codificación de**](encode.md) **\]** .
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

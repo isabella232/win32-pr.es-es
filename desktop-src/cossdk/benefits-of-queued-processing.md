@@ -27,7 +27,7 @@ En una aplicación de procesamiento en tiempo real, si solo un componente de la 
 
 ## <a name="component-lifetimes"></a>Duraciones de los componentes
 
-Una aplicación que usa el servicio de componentes en cola permite que el componente de servidor funcione independientemente del cliente. Como resultado, los componentes del servidor se pueden completar más rápidamente. En un sistema en tiempo real, el componente de servidor existe desde el momento en que se crea hasta que el objeto se libera finalmente. El servidor espera a que el cliente realice llamadas al método y a que se devuelvan los resultados, lo que anula el rápido ciclo de objetos de servidor y limita la escalabilidad del servidor.
+Una aplicación que usa el servicio de componentes en cola permite que el componente de servidor funcione independientemente del cliente. Como resultado, los componentes del servidor se pueden completar más rápidamente. En un sistema en tiempo real, el componente de servidor existe desde el momento en que se crea hasta que el objeto se libera finalmente. El servidor espera a que el cliente realice llamadas a métodos y que se devuelvan resultados, lo que anula el rápido ciclo de objetos de servidor y limita la escalabilidad del servidor.
 
 ## <a name="disconnected-applications"></a>Aplicaciones desconectadas
 

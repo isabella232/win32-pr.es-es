@@ -3,8 +3,8 @@ title: Método Error.item
 description: El método item recupera un objeto ErrorItem de la cola de errores.
 ms.assetid: 3aca21ff-4c6b-4c24-a85d-3d015612a496
 keywords:
-- método item Reproductor de Windows Media
-- método item Reproductor de Windows Media , Clase Error
+- item method Reproductor de Windows Media
+- item method Reproductor de Windows Media , Clase Error
 - Clase de error Reproductor de Windows Media , método de elemento
 topic_type:
 - apiref
@@ -61,7 +61,7 @@ Debe establecer *Configuración*. **enableErrorDialogs en** false si decide most
 
 ## <a name="examples"></a>Ejemplos
 
-En el JScript siguiente se usa *el error*. **Objeto** item en un controlador de eventos para alertar al usuario del error más reciente. El **objeto Player** se creó con id. = "Player".
+En el ejemplo JScript siguiente se usa *el error*. **objeto** item en un controlador de eventos para alertar al usuario del error más reciente. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -97,7 +97,7 @@ alert(errNum + "\n" + errDesc);
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

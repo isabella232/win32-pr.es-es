@@ -1,6 +1,6 @@
 ---
 title: Atributo MS-DS-Creator-SID
-description: IDENTIFICADOR de seguridad del creador del objeto que contiene este atributo.
+description: Identificador de seguridad del creador del objeto que contiene este atributo.
 ms.assetid: 5e643c56-bfe9-4489-89a9-5ce56f90f288
 ms.tgt_platform: multiple
 keywords:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73b5b5635773271c4864ac2c8ec1898edcc9a9f9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 752e64d09336bf61e444a44b94f88d4bf2f911dfa4dd2a9be0a8ea1c402f88bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118016572"
 ---
 # <a name="ms-ds-creator-sid-attribute"></a>Atributo MS-DS-Creator-SID
 
-IDENTIFICADOR de seguridad del creador del objeto que contiene este atributo.
+Identificador de seguridad del creador del objeto que contiene este atributo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | MS-DS-Creator-SID                    |
-| Nombre para mostrar de LDAP | mS-DS-CreatorSID                     |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | El sistema establece este valor.     |
-| Frecuencia de actualización  | Cada vez que se crea un nuevo objeto.    |
+| Ldap-Display-Name | mS-DS-CreatorSID                     |
+| Size              | \-                                   |
+| Privilegio actualizar  | El sistema establece este valor.     |
+| Frecuencia de actualización  | Cada vez que se crea un nuevo objeto .    |
 | Attribute-Id      | 1.2.840.113556.1.4.1410              |
-| System-ID-GUID    | c5e60132-1480-11d3-91c1-0000f87a57d4 |
-| Sintaxis            | [**Cadena (SID)**](s-string-sid.md)  |
+| System-Id-Guid    | c5e60132-1480-11d3-91c1-0000f87a57d4 |
+| Syntax            | [**String(Sid)**](s-string-sid.md)  |
 
 
 
@@ -55,18 +55,18 @@ IDENTIFICADOR de seguridad del creador del objeto que contiene este atributo.
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| Tiene un único valor       | True                              |
+| System-Only            | Verdadero                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | True                              |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ IDENTIFICADOR de seguridad del creador del objeto que contiene este atributo.
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| Tiene un único valor       | True                              |
+| System-Only            | Verdadero                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | True                              |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ IDENTIFICADOR de seguridad del creador del objeto que contiene este atributo.
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| Tiene un único valor       | True                              |
+| System-Only            | Verdadero                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | True                              |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ IDENTIFICADOR de seguridad del creador del objeto que contiene este atributo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | True                              |
-| Tiene un único valor       | True                              |
-| Está indexado             | True                              |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| Es de un solo valor       | True                              |
+| Está indexado             | Verdadero                              |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ IDENTIFICADOR de seguridad del creador del objeto que contiene este atributo.
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| Tiene un único valor       | True                              |
+| System-Only            | Verdadero                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | True                              |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -160,13 +160,13 @@ IDENTIFICADOR de seguridad del creador del objeto que contiene este atributo.
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| Tiene un único valor       | True                              |
+| System-Only            | Verdadero                              |
+| Es de un solo valor       | True                              |
 | Está indexado             | True                              |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000001                        |

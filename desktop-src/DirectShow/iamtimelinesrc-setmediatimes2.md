@@ -1,7 +1,7 @@
 ---
-description: 'El método SetMediaTimes2 establece las horas de detención e inicio del medio. Este método es equivalente a IAMTimelineSrc:: SetMediaTimes, pero toma valores REFTIME.'
+description: El método SetMediaTimes2 establece las horas de detenerse e iniciar los medios. Este método es equivalente a IAMTimelineSrc::SetMediaTimes, pero toma valores REFTIME.
 ms.assetid: 9eea7965-46c5-416c-97df-134d29130c8a
-title: 'IAMTimelineSrc:: SetMediaTimes2 (método) (QEDIT. h)'
+title: Método IAMTimelineSrc::SetMediaTimes2 (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 4aa4f68a6fb93c329507edceea4e9665bfecd5f7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5d94515f2e810f74e788f5d8909ddee377bebee29525cc3d0c12b0463635043e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118154907"
 ---
-# <a name="iamtimelinesrcsetmediatimes2-method"></a>IAMTimelineSrc:: SetMediaTimes2 (método)
+# <a name="iamtimelinesrcsetmediatimes2-method"></a>Método IAMTimelineSrc::SetMediaTimes2
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `SetMediaTimes2` método establece las horas de detención e inicio del medio. Este método es equivalente a [**IAMTimelineSrc:: SetMediaTimes**](iamtimelinesrc-setmediatimes.md), pero toma valores [**REFTIME**](reftime.md) .
+El `SetMediaTimes2` método establece las horas de detenerse e iniciar los medios. Este método es equivalente a [**IAMTimelineSrc::SetMediaTimes**](iamtimelinesrc-setmediatimes.md), pero toma [**valores REFTIME.**](reftime.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,23 +56,23 @@ Hora de inicio del medio, en segundos.
 *Detención* 
 </dt> <dd>
 
-Tiempo de detención del medio, en segundos.
+Tiempo de detenerse de medios, en segundos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El archivo de encabezado QEDIT. h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
+> El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
 
  
 
 > [!Note]  
-> Para obtener QEDIT. h, descargue la [actualización Microsoft Windows SDK para Windows Vista y .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). QEDIT. h no está disponible en el Microsoft Windows SDK para Windows 7 y .NET Framework 3,5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -82,8 +82,8 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>QEDIT. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -91,10 +91,10 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 <dl> <dt>
 
-[**Interfaz IAMTimelineSrc**](iamtimelinesrc.md)
+[**IamTimelineSrc (interfaz)**](iamtimelinesrc.md)
 </dt> <dt>
 
-[Códigos de error y de éxito](error-and-success-codes.md)
+[Códigos de error y correcto](error-and-success-codes.md)
 </dt> </dl>
 
  

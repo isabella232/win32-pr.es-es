@@ -28,7 +28,7 @@ ms.locfileid: "118339196"
 
  
 
-La **propiedad version** recupera la versión actual de Reproductor de Windows Media.
+La **propiedad** version recupera la versión actual de Reproductor de Windows Media.
 
 ## <a name="syntax"></a>Syntax
 
@@ -51,7 +51,7 @@ Esta propiedad es una cadena de solo **lectura.**
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

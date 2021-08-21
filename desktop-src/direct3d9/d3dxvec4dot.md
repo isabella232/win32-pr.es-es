@@ -1,7 +1,7 @@
 ---
-description: Determina el producto de punto de dos vectores 4D.
+description: Determina el producto de puntos de dos vectores 4D.
 ms.assetid: 565dede8-6cc8-4313-9480-2f252cac94f2
-title: Función D3DXVec4Dot (D3dx9math. h)
+title: Función D3DXVec4Dot (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a0ef075a768fe9b70a38a4bc3d88b094359bd546
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 6c8e6f938538f0ee37ce1c115481a1793787ad1dae2d1cb1a31b06950c86fdd6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104424416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118095265"
 ---
-# <a name="d3dxvec4dot-function"></a>D3DXVec4Dot función)
+# <a name="d3dxvec4dot-function"></a>Función D3DXVec4Dot
 
-Determina el producto de punto de dos vectores 4D.
+Determina el producto de puntos de dos vectores 4D.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,27 +41,27 @@ FLOAT D3DXVec4Dot(
 
 <dl> <dt>
 
-*pV1* \[ de\]
+*pV1* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntero a una estructura de [**D3DXVECTOR4**](d3dxvector4.md) de origen.
+Puntero a una estructura [**D3DXVECTOR4 de**](d3dxvector4.md) origen.
 
 </dd> <dt>
 
-*pV2* \[ de\]
+*pV2* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntero a una estructura de [**D3DXVECTOR4**](d3dxvector4.md) de origen.
+Puntero a una estructura [**D3DXVECTOR4 de**](d3dxvector4.md) origen.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Producto escalar.
 
@@ -71,8 +71,8 @@ Producto escalar.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

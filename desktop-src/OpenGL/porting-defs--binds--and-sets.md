@@ -1,43 +1,43 @@
 ---
-title: Portabilidad de los conjuntos, enlaces y conjuntos
-description: Portabilidad de los conjuntos, enlaces y conjuntos
+title: Portar defs, binds y sets
+description: Portar defs, binds y sets
 ms.assetid: 971feb14-ed39-4492-a62b-9930bdc506e9
 keywords:
-- Migración de la contabilidad de IRIS, definiciones
-- trasladar de IRIS GL, definiciones
-- trasladar a OpenGL desde IRIS GL, definiciones
-- Exportación de OpenGL desde IRIS GL, definiciones
-- Migración de la contabilidad de IRIS, enlaces
-- portabilidad de IRIS GL, enlaces
-- trasladar a OpenGL desde IRIS GL, enlaces
-- Exportación de OpenGL desde IRIS GL, enlaces
-- Migración de la contabilidad de IRIS, conjuntos
-- portabilidad de IRIS GL, conjuntos
-- trasladar a OpenGL desde IRIS GL, conjuntos
-- Exportación de OpenGL desde IRIS GL, conjuntos
+- Porte de IRIS GL, definiciones
+- porte desde IRIS GL, definiciones
+- porte a OpenGL desde IRIS GL, definiciones
+- Porte de OpenGL desde IRIS GL, definiciones
+- Porte de IRIS GL,binds
+- portar desde IRIS GL,binds
+- portar a OpenGL desde IRIS GL, enlaza
+- Portar OpenGL desde IRIS GL, enlaza
+- Porte de IRIS GL, conjuntos
+- porting from IRIS GL,sets
+- porte a OpenGL desde IRIS GL, conjuntos
+- Porte de OpenGL desde IRIS GL, conjuntos
 - definitions
-- enlaza
+- Ata
 - conjuntos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0f9a88253390ee99f5b5870fd7a09e272f1c549
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 56a4c3776d3e5eb8000a4e81578bb5df95658a37e0793944a9cda6923fc7a2e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665606"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118132667"
 ---
-# <a name="porting-defs-binds-and-sets"></a>Portabilidad de los conjuntos, enlaces y conjuntos
+# <a name="porting-defs-binds-and-sets"></a>Portar defs, binds y sets
 
-OpenGL no tiene tablas de definiciones almacenadas. no se pueden definir modelos de iluminación, material, texturas, estilos de línea o patrones como objetos independientes como se puede hacer en la contabilidad de IRIS. Por lo tanto, OpenGL no tiene equivalentes directos a las siguientes funciones de GL de IRIS:
+OpenGL no tiene tablas de definiciones almacenadas; No se pueden definir modelos de iluminación, material, texturas, estilos de línea o patrones como objetos independientes como se puede en IRIS GL. Por lo tanto, OpenGL no tiene equivalentes directos a las siguientes funciones GL de IRIS:
 
--   **Imdef** e **inbind**
+-   **Imdef** e **Imbind**
 -   **tevdef** y **tevbind**
 -   **textdef** y **textbind**
--   **definestyle** y **setStyle**
+-   **definestyle** y **setstyle**
 -   **defpattern** y **setpattern**
 
-Puede usar listas de visualización de OpenGL para imitar el mecanismo de Def/BIND de IRIS. Por ejemplo, aquí se muestra una definición de material en IRIS GL:
+Puede usar listas de visualización de OpenGL para imitar el mecanismo de def/bind de IRIS GL. Por ejemplo, esta es una definición de material en IRIS GL:
 
 
 ```C++
@@ -54,7 +54,7 @@ lmbind(MATERIAL, 1);
 
 
 
-El siguiente ejemplo de código OpenGL define el mismo material en una lista de visualización a la que se hace referencia mediante el número de lista definido por el **valor de la función.**
+El siguiente ejemplo de código OpenGL define el mismo material en una lista de visualización a la que hace referencia el número de lista definido **por MYMATERIAL.**
 
 
 ```C++
@@ -75,9 +75,9 @@ glCallList( MYMATERIAL );
 
 
 
- 
+ 
 
- 
+ 
 
 
 

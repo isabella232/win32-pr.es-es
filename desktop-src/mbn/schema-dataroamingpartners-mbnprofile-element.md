@@ -11,24 +11,24 @@ api_name:
 - DataRoamingPartners
 api_type:
 - Schema
-ms.openlocfilehash: 7f721abd608dd241c399f16eee90369ebcf19594
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 21b3b218a55fa3f56c5069b53ca45769a726b4a9aabab2d080f547d479c0be26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118066159"
 ---
 # <a name="dataroamingpartners-mbnprofile-element"></a>Elemento DataRoamingPartners (MBNProfile)
 
-El elemento **DataRoamingPartners (MBNProfile)** especifica la lista de proveedores de red preferidos en el momento de la itinerancia.
+El **elemento DataRoamingPartners (MBNProfile)** especifica la lista de proveedores de red preferidos en el momento de la itinerancia.
 
-El servicio de banda ancha móvil usa este elemento para seleccionar la red preferida que se proporciona en itinerancia.
+El servicio banda ancha móvil usa este elemento para seleccionar la red preferida durante la itinerancia.
 
 El elemento tiene el siguiente elemento secundario que se debe definir al menos una vez, pero se puede definir varias veces.
 
 -   [**Proveedor**](schema-provider-dataroamingpartners-element.md)
 
-Este elemento puede tener un máximo de una repetición.
+Este elemento puede tener un máximo de una aparición.
 
 Este elemento es opcional.
 
@@ -45,7 +45,7 @@ Este elemento es opcional.
 </xs:element>
 ```
 
-El elemento **DataRoamingPartners** se define mediante el elemento [**MBNProfile**](schema-mbnprofile-element.md) .
+El **elemento DataRoamingPartners** se define mediante el [**elemento MBNProfile.**](schema-mbnprofile-element.md)
 
 ## <a name="child-elements"></a>Elementos secundarios
 
@@ -53,7 +53,7 @@ El elemento **DataRoamingPartners** se define mediante el elemento [**MBNProfile
 
 | Elemento                                                         | Tipo                                                    | Descripción                                            |
 |-----------------------------------------------------------------|---------------------------------------------------------|--------------------------------------------------------|
-| [**Proveedor**](schema-provider-dataroamingpartners-element.md) | [**providerType**](schema-providertype-complextype.md) | Nombre y identificador de proveedor de una red de telefonía móvil.<br/> |
+| [**Proveedor**](schema-provider-dataroamingpartners-element.md) | [**providerType**](schema-providertype-complextype.md) | Nombre e identificador de proveedor de una red de telefonía móvil.<br/> |
 
 
 
@@ -61,9 +61,9 @@ El elemento **DataRoamingPartners** se define mediante el elemento [**MBNProfile
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |
 
 

@@ -1,7 +1,7 @@
 ---
-description: 'Método reset de la Msvm_DisketteDrive clase : solicita un restablecimiento.'
+description: 'Método reset de la Msvm_DisketteDrive : solicita un restablecimiento.'
 ms.assetid: 7d848e32-344d-4a55-84f2-d2f2f599fe1c
-title: Método reset de la Msvm_DisketteDrive clase
+title: Método Reset de la Msvm_DisketteDrive clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 93f95bf31a546e5503fe41ae437ddb0ef662c48f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 77aac2c1ac1ed7e28f771d3bf9e2def34a27175c05b08d5c300b67cc35b7e1a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118148702"
 ---
 # <a name="reset-method-of-the-msvm_diskettedrive-class"></a>Método Reset de la clase \_ DisketteDrive de Msvm
 
@@ -53,7 +53,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -63,11 +63,11 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**DisketteDrive de Msvm \_**](msvm-diskettedrive.md)
+[**Msvm \_ DisketteDrive**](msvm-diskettedrive.md)
 </dt> </dl>
 
  

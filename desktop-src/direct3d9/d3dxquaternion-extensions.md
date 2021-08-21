@@ -1,7 +1,7 @@
 ---
-description: Proporciona las siguientes sobrecargas de operador y conversiones de tipo para las estructuras D3DXQUATERNION.
+description: Proporciona las siguientes sobrecargas de operador y las conversión de tipos para las estructuras D3DXQUATERNION.
 ms.assetid: a49975a4-a9a7-4183-91b3-3d56f70747ef
-title: Extensiones de D3DXQUATERNION (D3dx9math. h)
+title: Extensiones D3DXQUATERNION (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: a937dcf23f894d094fb5f6cc75a765b1d563a1b7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cfe6f25c8da74c3ee74d386748a278b156c33579ecdab9c0ca4b8aa69ff4d97b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118095426"
 ---
-# <a name="d3dxquaternion-extensions"></a>Extensiones de D3DXQUATERNION
+# <a name="d3dxquaternion-extensions"></a>Extensiones D3DXQUATERNION
 
-Proporciona las siguientes sobrecargas de operador y conversiones de tipo para las estructuras [**D3DXQUATERNION**](d3dxquaternion.md) .
+Proporciona las siguientes sobrecargas de operador y las conversión de tipos [**para las estructuras D3DXQUATERNION.**](d3dxquaternion.md)
 
 ``` syntax
 typedef struct D3DXQUATERNION
@@ -69,11 +69,11 @@ public:
 
 Tipos derivados: \* LPD3DXQUATERNION
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información sobre los miembros de la estructura, consulte [**D3DXQUATERNION**](d3dxquaternion.md).
+Para obtener más información sobre los miembros de estructura, consulte [**D3DXQUATERNION**](d3dxquaternion.md).
 
-Las sobrecargas de operador y las conversiones de tipo para esta estructura se implementan en d3dx9math. INL.
+Las sobrecargas de operador y las conversión de tipos para esta estructura se implementan en d3dx9math.inl.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,7 +81,7 @@ Las sobrecargas de operador y las conversiones de tipo para esta estructura se i
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9math. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9math.h</dt> </dl> |
 
 
 
@@ -89,7 +89,7 @@ Las sobrecargas de operador y las conversiones de tipo para esta estructura se i
 
 <dl> <dt>
 
-[Estructuras de D3DX](dx9-graphics-reference-d3dx-structures.md)
+[Estructuras D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Recupera el objeto IContextNode en el índice especificado de esta colección.
+description: Recupera el objeto IContextNode en el índice especificado dentro de esta colección.
 ms.assetid: 4b266512-9e58-43d2-8430-68310230fc27
-title: 'IContextNodes:: GetContextNode (método) (IACom. h)'
+title: Método IContextNodes::GetContextNode (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: ec907fdcac5a1ed18cca54c79a876959868f2ecc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5543faa9b0c66fa8a68775b8b76c25b50378b8cd705189831cbff7983ea7c3c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118044475"
 ---
-# <a name="icontextnodesgetcontextnode-method"></a>IContextNodes:: GetContextNode (método)
+# <a name="icontextnodesgetcontextnode-method"></a>IContextNodes::GetContextNode (método)
 
-Recupera el objeto [**IContextNode**](icontextnode.md) en el índice especificado de esta colección.
+Recupera el [**objeto IContextNode**](icontextnode.md) en el índice especificado dentro de esta colección.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,28 +40,28 @@ HRESULT GetContextNode(
 
 <dl> <dt>
 
-*ulIndex* \[ de\]
+*ulIndex* \[ En\]
 </dt> <dd>
 
-Índice de base cero del objeto [**IContextNode**](icontextnode.md) que se va a obtener.
+Índice de base cero del objeto [**IContextNode**](icontextnode.md) que se obtiene.
 
 </dd> <dt>
 
-*ppContextNode* \[ enuncia\]
+*ppContextNode* \[ out\]
 </dt> <dd>
 
-Puntero a la [**IContextNode**](icontextnode.md) a la que se hace referencia en el índice especificado.
+Puntero al [**IContextNode al**](icontextnode.md) que se hace referencia en el índice especificado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
-> Para evitar una pérdida de memoria, llame a [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en \* *ppContextNode* cuando ya no necesite usar el nodo de contexto.
+> Para evitar una pérdida de memoria, llame a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en \* *ppContextNode* cuando ya no necesite usar el nodo de contexto.
 
  
 
@@ -70,9 +70,9 @@ Para obtener una descripción de los valores devueltos, vea [clases e interfaces
 En este ejemplo se muestra un método, `ExploreContextNode` , que examina un [**IContextNode**](icontextnode.md). El método hace lo siguiente:
 
 -   Obtiene el tipo del nodo de contexto.
--   Examina las propiedades específicas del tipo de nodo mediante una llamada a un método auxiliar, si el nodo de contexto es una tinta sin clasificar, una sugerencia de análisis o un nodo de reconocedor personalizado.
--   Examina cada subnodo llamando a sí mismo, si el nodo tiene subnodos.
--   Examina los datos de trazo del nodo llamando a un método auxiliar, si el nodo es un nodo de hoja de tinta.
+-   Examina propiedades específicas del tipo de nodo llamando a un método auxiliar, si el nodo de contexto es un nodo de lápiz, sugerencia de análisis o reconocedor personalizado sin clasificar.
+-   Examina cada subnodo mediante una llamada a sí mismo, si el nodo tiene subnodos.
+-   Examina los datos de trazo del nodo llamando a un método auxiliar, si el nodo es un nodo hoja de entrada de lápiz.
 
 
 ```C++
@@ -180,11 +180,11 @@ HRESULT CMyClass::ExploreContextNode(
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -196,7 +196,7 @@ HRESULT CMyClass::ExploreContextNode(
 [**IContextNodes**](icontextnodes.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

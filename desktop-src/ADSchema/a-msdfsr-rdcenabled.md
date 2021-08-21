@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DFSR-RdcEnabled
+title: Atributo ms-DFSR-RdcEnabled
 description: Contiene el valor que especifica si RDC está habilitado o deshabilitado.
 ms.assetid: 05a4257c-cc8b-4ddf-ae5f-4d3b456a2bae
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DFSR-RdcEnabled
-- msDFSR-RdcEnabled atributo AD Schema
+- Esquema de AD del atributo ms-DFSR-RdcEnabled
+- Esquema de AD del atributo msDFSR-RdcEnabled
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83c5951cee2dab4af716a3673cf400144ab9ed54
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 44ae383d4f46be022a2ce3a86d0a607b25d11e333311c82b881d2e637bc4cf72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118015465"
 ---
-# <a name="ms-dfsr-rdcenabled-attribute"></a>atributo MS-DFSR-RdcEnabled
+# <a name="ms-dfsr-rdcenabled-attribute"></a>Atributo ms-DFSR-RdcEnabled
 
 Contiene el valor que especifica si RDC está habilitado o deshabilitado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DFSR-RdcEnabled                   |
-| Nombre para mostrar de LDAP | msDFSR-RdcEnabled                    |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DFSR-RdcEnabled                   |
+| Ldap-Display-Name | msDFSR-RdcEnabled                    |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.19           |
-| System-ID-GUID    | e3b44e05-f4a7-4078-a730-f48670a743f8 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | e3b44e05-f4a7-4078-a730-f48670a743f8 |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -53,18 +53,18 @@ Contiene el valor que especifica si RDC está habilitado o deshabilitado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | True                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Clases usadas en        | [**Conexión MS-DFSR**](c-msdfsr-connection.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-Connection**](c-msdfsr-connection.md)<br/> |
 
 
 
@@ -74,18 +74,18 @@ Contiene el valor que especifica si RDC está habilitado o deshabilitado.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | True                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Clases usadas en        | [**Conexión MS-DFSR**](c-msdfsr-connection.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-Connection**](c-msdfsr-connection.md)<br/> |
 
 
 
@@ -93,20 +93,20 @@ Contiene el valor que especifica si RDC está habilitado o deshabilitado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | True                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Clases usadas en        | [**Conexión MS-DFSR**](c-msdfsr-connection.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-Connection**](c-msdfsr-connection.md)<br/> |
 
 
 
@@ -114,26 +114,26 @@ Contiene el valor que especifica si RDC está habilitado o deshabilitado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Clases usadas en        | [**Conexión MS-DFSR**](c-msdfsr-connection.md)<br/> |
+| Clases usadas en        | [**ms-DFSR-Connection**](c-msdfsr-connection.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El atributo **MS-DFSR-RdcEnabled** forma parte de la compatibilidad con el servicio de replicación sistema de archivos distribuido (DFS).
+El **atributo ms-DFSR-RdcEnabled** forma parte de la compatibilidad del servicio de replicación Sistema de archivos distribuido (DFS).
 
  
 

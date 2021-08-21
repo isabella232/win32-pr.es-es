@@ -42,7 +42,7 @@ El **método setCheckedState2** establece el estado comprobado del elemento con 
 <span id="checked"></span><span id="CHECKED"></span>*Comprobado*
 </dt> <dd>
 
-**Valor** booleano que indica si el elemento especificado se va a comprobar (true) o no (false).
+**Valor** booleano que indica si el elemento especificado se debe comprobar (true) o desactivar (false).
 
 </dd> </dl>
 
@@ -52,7 +52,7 @@ Este método devuelve un **valor booleano**.
 
 ## <a name="remarks"></a>Comentarios
 
-Este método puede trabajar con listas de reproducción anidadas y reemplaza el **método setCheckedState,** que no puede. Puede establecer todos los elementos en el estado solicitado especificando 1 en el *parámetro item.*
+Este método puede trabajar con listas de reproducción anidadas y reemplaza el **método setCheckedState,** que no puede. Puede establecer todos los elementos en el estado solicitado especificando 1 en el parámetro *item.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ Este método puede trabajar con listas de reproducción anidadas y reemplaza el 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

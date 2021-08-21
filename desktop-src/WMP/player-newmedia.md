@@ -4,8 +4,8 @@ description: El método newMedia crea un nuevo objeto Media.
 ms.assetid: fccf1559-bac3-4edf-bd88-da2c72cdec21
 keywords:
 - Método newMedia Reproductor de Windows Media
-- método newMedia Reproductor de Windows Media , Clase Player
-- Clase player Reproductor de Windows Media , método newMedia
+- Método newMedia Reproductor de Windows Media , clase Player
+- Clase player Reproductor de Windows Media método , newMedia
 topic_type:
 - apiref
 api_name:
@@ -42,20 +42,20 @@ retVal = Player.newMedia(
 
 <dl> <dt>
 
-*Dirección URL* \[ En\]
+*DIRECCIÓN URL* \[ En\]
 </dt> <dd>
 
-**Cadena** que contiene la dirección URL del archivo multimedia digital con el que se crea **el objeto** Multimedia.
+**Cadena** que contiene la dirección URL del archivo multimedia digital con el que se creará el **objeto** Multimedia.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve un **objeto Media.**
+Este método devuelve un **objeto** Media.
 
 ## <a name="remarks"></a>Comentarios
 
-El *parámetro URL* no debe ser una cadena vacía o null.
+El *parámetro url* no debe ser una cadena vacía o null.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ El *parámetro URL* no debe ser una cadena vacía o null.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

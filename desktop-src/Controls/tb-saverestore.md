@@ -34,7 +34,7 @@ Envíe este mensaje para iniciar la guardado o restauración de un estado de la 
 *wParam* 
 </dt> <dd>
 
-Guardar o restaurar marca. Si este parámetro es **TRUE**, se guarda la información. Si es **FALSE**, se restaura la información.
+Guardar o restaurar marca. Si este parámetro es **TRUE,** se guarda la información. Si es **FALSE,** se restaura la información.
 
 </dd> <dt>
 
@@ -51,9 +51,9 @@ No de devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Para la versión 4.72 y anteriores, para usar este mensaje para guardar o restaurar una barra de herramientas, la ventana primaria del control de barra de herramientas debe implementar un controlador para el código de [notificación \_ GETBUTTONINFO de TBN.](tbn-getbuttoninfo.md) La barra de herramientas emite esta notificación para recuperar información sobre cada botón a medida que se restaura.
+Para la versión 4.72 y anteriores, para usar este mensaje para guardar o restaurar una barra de herramientas, la ventana primaria del control de barra de herramientas debe implementar un controlador para el código de [notificación \_ TBN GETBUTTONINFO.](tbn-getbuttoninfo.md) La barra de herramientas emite esta notificación para recuperar información sobre cada botón a medida que se restaura.
 
-La versión 5.80 incluye una nueva opción de guardar o restaurar. Al principio del proceso y, a medida que se guarde o restaure cada botón, la aplicación recibirá una notificación [ \_ TBN SAVE](tbn-save.md) o [TBN \_ RESTORE.](tbn-restore.md) Para usar esta opción, debe implementar controladores de notificación para proporcionar al Shell la información de mapa de bits y estado que necesita para guardar o restaurar correctamente el estado de la barra de herramientas.
+La versión 5.80 incluye una nueva opción de guardar o restaurar. Al principio del proceso y, a medida que se guarde o restaure cada botón, la aplicación recibirá una notificación [TBN \_ SAVE](tbn-save.md) o [TBN \_ RESTORE.](tbn-restore.md) Para usar esta opción, debe implementar controladores de notificación para proporcionar al Shell la información de mapa de bits y estado que necesita para guardar o restaurar correctamente el estado de la barra de herramientas.
 
 ## <a name="requirements"></a>Requisitos
 

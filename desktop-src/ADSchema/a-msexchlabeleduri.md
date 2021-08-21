@@ -1,11 +1,11 @@
 ---
-title: atributo MS-Exch-LabeledURI
-description: Un URI de Exchange seguido de una etiqueta.
+title: Atributo ms-Exch-LabeledURI
+description: Un Exchange URI seguido de una etiqueta.
 ms.assetid: 56b92fb9-0000-4ce4-8319-f3cad2b6f392
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-Exch-LabeledURI
-- msExchLabeledURI esquema de AD de atributos
+- Esquema de AD del atributo ms-Exch-LabeledURI
+- Esquema de AD del atributo msExchLabeledURI
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8632f1b4de60aa9ba04de15781d7e34fe0c105e7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 89e64a12ac273bf487df6fa983c214812e538d7ebc1194f14b7e85a589aaf0fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118014094"
 ---
-# <a name="ms-exch-labeleduri-attribute"></a>atributo MS-Exch-LabeledURI
+# <a name="ms-exch-labeleduri-attribute"></a>Atributo ms-Exch-LabeledURI
 
-Un URI de Exchange seguido de una etiqueta. La etiqueta se usa para describir el recurso al que apunta el URI y está pensado como un nombre legible.
+Un Exchange URI seguido de una etiqueta. La etiqueta se usa para describir el recurso al que apunta el URI y está pensado como un nombre legible.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-Exch-LabeledURI                          |
-| Nombre para mostrar de LDAP | msExchLabeledURI                            |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-Exch-LabeledURI                          |
+| Ldap-Display-Name | msExchLabeledURI                            |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.593                      |
-| System-ID-GUID    | 16775820-47f3-11d1-a9c3-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 16775820-47f3-11d1-a9c3-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -54,13 +54,13 @@ Un URI de Exchange seguido de una etiqueta. La etiqueta se usa para describir el
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x921                                                |
-| System-Only            | False                                                |
-| Tiene un único valor       | False                                                |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Falso                                                |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
@@ -73,15 +73,15 @@ Un URI de Exchange seguido de una etiqueta. La etiqueta se usa para describir el
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x921                                                |
-| System-Only            | False                                                |
-| Tiene un único valor       | False                                                |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Falso                                                |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
@@ -96,18 +96,18 @@ Un URI de Exchange seguido de una etiqueta. La etiqueta se usa para describir el
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x921                                                |
-| System-Only            | False                                                |
-| Tiene un único valor       | False                                                |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Falso                                                |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Un URI de Exchange seguido de una etiqueta. La etiqueta se usa para describir el
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x921                                                |
-| System-Only            | False                                                |
-| Tiene un único valor       | False                                                |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Falso                                                |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> |
 
 
 
@@ -136,20 +136,20 @@ Un URI de Exchange seguido de una etiqueta. La etiqueta se usa para describir el
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | 0x921                                                |
-| System-Only            | False                                                |
-| Tiene un único valor       | False                                                |
-| Está indexado             | False                                                |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Falso                                                |
+| Está indexado             | Falso                                                |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | 1                                                    |
 | Range-Upper            | 1024                                                 |
 | Search-Flags           | 0x00000000                                           |
 | System-Flags           | 0x00000000                                           |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> |
 
 
 

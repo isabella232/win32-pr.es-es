@@ -40,7 +40,7 @@ Debe establecer *Configuración*. **enableErrorDialogs en** false si decide most
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo JScript siguiente se usa *error*. **errorCount** en un controlador de eventos para alertar al usuario sobre el error más reciente en la cola de errores. El **objeto Player** se creó con id. = "Player".
+En el ejemplo JScript siguiente se usa *Error*. **errorCount** en un controlador de eventos para alertar al usuario sobre el error más reciente en la cola de errores. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -73,7 +73,7 @@ alert(errDesc);
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
