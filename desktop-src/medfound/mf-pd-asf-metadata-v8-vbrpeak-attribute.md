@@ -26,7 +26,7 @@ Este atributo se aplica a los descriptores de presentación para el contenido de
 El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generatepresentationdescriptor) genera este atributo.
 
 > [!Note]  
-> Este atributo solo se aplica a los archivos creados por la versión 8 del SDK Windows Media Format. Corresponde al atributo **VBRPeak del** SDK Windows Media Format.
+> Este atributo solo se aplica a los archivos creados por la versión 8 del SDK Windows Media Format. Corresponde al atributo **VBRPeak** en el SDK Windows Media Format.
 
  
 
@@ -34,7 +34,7 @@ El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desk
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
@@ -42,7 +42,7 @@ El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desk
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

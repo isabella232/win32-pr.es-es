@@ -1,11 +1,11 @@
 ---
-title: Interfaz IMsRdpClientNonScriptable3
-description: Proporciona acceso a las propiedades que no admiten scripts de la sesión remota de un cliente en el control ActiveX Escritorio remoto. Deriva de la interfaz IMsRdpClientNonScriptable2.
+title: IMsRdpClientNonScriptable3 (interfaz)
+description: Proporciona acceso a las propiedades noscriptables de la sesión remota de un cliente en el control Escritorio remoto ActiveX cliente. Deriva de la interfaz IMsRdpClientNonScriptable2.
 ms.assetid: 40cfcd8e-5dd7-497d-8c57-da1f542136b8
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable3, descrito
+- Interfaz IMsRdpClientNonScriptable3 Servicios de Escritorio remoto
+- Interfaz IMsRdpClientNonScriptable3 Servicios de Escritorio remoto , descrito
 topic_type:
 - apiref
 api_name:
@@ -16,26 +16,26 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c456393ee00c06bcd16135a7fbc73b0f1686259f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c799fe96da433e09a5cb472887b9bcf992db0b2f3b423f5f99758bb68d164c97
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117941561"
 ---
-# <a name="imsrdpclientnonscriptable3-interface"></a>Interfaz IMsRdpClientNonScriptable3
+# <a name="imsrdpclientnonscriptable3-interface"></a>IMsRdpClientNonScriptable3 (interfaz)
 
-Proporciona acceso a las propiedades que no admiten scripts de la sesión remota de un cliente en el control ActiveX Escritorio remoto. Deriva de la interfaz [**IMsRdpClientNonScriptable2**](imsrdpclientnonscriptable2.md) . Solo se puede tener acceso a los métodos de esta interfaz a través de vtable; no están disponibles para los clientes con scripts.
+Proporciona acceso a las propiedades noscriptables de la sesión remota de un cliente en el control Escritorio remoto ActiveX cliente. Deriva de la [**interfaz IMsRdpClientNonScriptable2.**](imsrdpclientnonscriptable2.md) Solo se puede acceder a los métodos de esta interfaz a través de la tabla virtual; no están disponibles para su uso en clientes que pueden incluir scripts.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IMsRdpClientNonScriptable3** hereda de [**IMsRdpClientNonScriptable2**](imsrdpclientnonscriptable2.md). **IMsRdpClientNonScriptable3** también tiene estos tipos de miembros:
+La **interfaz IMsRdpClientNonScriptable3** hereda de [**IMsRdpClientNonScriptable2**](imsrdpclientnonscriptable2.md). **IMsRdpClientNonScriptable3** también tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La interfaz **IMsRdpClientNonScriptable3** tiene estas propiedades.
+La **interfaz IMsRdpClientNonScriptable3** tiene estas propiedades.
 
 
 
@@ -56,17 +56,17 @@ La interfaz **IMsRdpClientNonScriptable3** tiene estas propiedades.
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable3-connectionbartext.md"><strong>ConnectionBarText</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Cadena de texto que se va a mostrar para la barra de conexión.<br/></td>
+<td style="text-align: left;">Cadena de texto que se mostrará para la barra de conexión.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="imsrdpclientnonscriptable3-devicecollection.md"><strong>Recopilación</strong></a><br/></td>
+<td style="text-align: left;"><a href="imsrdpclientnonscriptable3-devicecollection.md"><strong>DeviceCollection</strong></a><br/></td>
 <td style="text-align: left;">Solo lectura<br/></td>
-<td style="text-align: left;">La colección de dispositivos PnP que están disponibles para la redirección.<br/></td>
+<td style="text-align: left;">La colección de dispositivos PnP que están disponibles para el redireccionamiento.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable3-drivecollection.md"><strong>DriveCollection</strong></a><br/></td>
 <td style="text-align: left;">Solo lectura<br/></td>
-<td style="text-align: left;">La colección de unidades de disco que está disponible para la redirección.<br/></td>
+<td style="text-align: left;">Colección de unidades de disco que está disponible para el redireccionamiento.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>EnableCredSspSupport</strong></a><br/></td>
@@ -76,10 +76,10 @@ La interfaz **IMsRdpClientNonScriptable3** tiene estas propiedades.
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable3-negotiatesecuritylayer.md"><strong>NegotiateSecurityLayer</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si la configuración NegotiateSecurityLayer es compatible con esta conexión.<br/>
+<td style="text-align: left;">Especifica si se admite la configuración NegotiateSecurityLayer para esta conexión.<br/>
 <blockquote>
 [!Note]<br />
-Cuando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>CredSspSupport</strong></a> está habilitado y presente en el cliente, o cuando capa de sockets seguros (SSL) está habilitado con la autenticación de usuario, NegotiateSecurityLayer se omite.
+Cuando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>CredSspSupport</strong></a> está habilitado y presente en el cliente, o cuando Capa de sockets seguros (SSL) está habilitado con la autenticación de usuario, NegotiateSecurityLayer se omite.
 </blockquote>
 <br/></td>
 </tr>
@@ -91,22 +91,22 @@ Cuando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable3-redirectdynamicdevices.md"><strong>RedirectDynamicDevices</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si los dispositivos PnP conectados dinámicamente que se enumeran mientras están en una sesión están disponibles para la redirección.<br/></td>
+<td style="text-align: left;">Especifica si los dispositivos PnP conectados dinámicamente que se enumeran mientras están en una sesión están disponibles para el redireccionamiento.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable3-redirectdynamicdrives.md"><strong>RedirectDynamicDrives</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si las unidades PnP conectadas dinámicamente que se enumeran mientras están en una sesión están disponibles para la redirección.<br/></td>
+<td style="text-align: left;">Especifica si las unidades PnP conectadas dinámicamente que se enumeran mientras están en una sesión están disponibles para el redireccionamiento.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable3-showredirectionwarningdialog.md"><strong>ShowRedirectionWarningDialog</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si se debe mostrar el cuadro de diálogo Advertencia de seguridad de redirección antes de iniciar una sesión.<br/></td>
+<td style="text-align: left;">Especifica si se debe mostrar el cuadro de diálogo de advertencia de seguridad de redireccionamiento antes de iniciar una sesión.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable3-warnaboutclipboardredirection.md"><strong>WarnAboutClipboardRedirection</strong></a><br/></td>
 <td style="text-align: left;">Lectura/escritura<br/></td>
-<td style="text-align: left;">Especifica si el cuadro de diálogo Advertencia de seguridad debe incluir una advertencia sobre la redirección del portapapeles antes de iniciar una sesión.<br/></td>
+<td style="text-align: left;">Especifica si el cuadro de diálogo de advertencia de seguridad debe incluir una advertencia sobre el redireccionamiento del Portapapeles antes de iniciar una sesión.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable3-warnaboutsendingcredentials.md"><strong>WarnAboutSendingCredentials</strong></a><br/></td>
@@ -130,7 +130,7 @@ Cuando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| CLSID<br/>                    | CLSID \_ MsRdpClient10 se define como C0EFA91A-EEB7-41C7-97FA-F0ED645EFB24<br/> CLSID \_ MsRdpClient10NotSafeForScripting se define como A0C63C30-F08D-4AB4-907C-34905D770C7D<br/> CLSID \_ MsRdpClient5 se define como 4EB89FF4-7F78-4A0F-8B8D-2BF02E94E4B2<br/> CLSID \_ MsRdpClient5NotSafeForScripting se define como 4EB2F086-C818-447E-B32C-C51CE2B30D31<br/> CLSID \_ MsRdpClient6 se define como 7390F3D8-0439-4C05-91E3-CF5CB290C3D0<br/> CLSID \_ MsRdpClient6NotSafeForScripting se define como D2EA46A7-C2BF-426B-AF24-E19C44456399<br/> CLSID \_ MsRdpClient7 se define como A9D7038D-B5ED-472E-9C47-94BEA90A5910<br/> CLSID \_ MsRdpClient7NotSafeForScripting se define como 54D38BF7-B1EF-4479-9674-1BD6EA465258<br/> CLSID \_ MsRdpClient8 se define como 5F681803-2900-4C43-A1CC-CF405404A676<br/> CLSID \_ MsRdpClient8NotSafeForScripting se define como A3BC03A0-041D-42E3-AD22-882B7865C9C5<br/> CLSID \_ MsRdpClient9 se define como 301B94BA-5D25-4A12-BFFE-3B6E7A616585<br/> CLSID \_ MsRdpClient9NotSafeForScripting se define como 8B918B82-7985-4C24-89DF-C33AD2BBFBCD<br/> |
+| CLSID<br/>                    | CLSID \_ MsRdpClient10 se define como C0EFA91A-EEB7-41C7-97FA-F0ED645EFB24<br/> CLSID \_ MsRdpClient10NotSafeForScripting se define como A0C63C30-F08D-4AB4-907C-34905D770C7D<br/> CLSID MsRdpClient5 se define como \_ 4EB89FF4-7F78-4A0F-8B8D-2BF02E94E4B2<br/> CLSID \_ MsRdpClient5NotSafeForScripting se define como 4EB2F086-C818-447E-B32C-C51CE2B30D31<br/> CLSID MsRdpClient6 se define como \_ 7390F3D8-0439-4C05-91E3-CF5CB290C3D0<br/> CLSID \_ MsRdpClient6NotSafeForScripting se define como D2EA46A7-C2BF-426B-AF24-E19C44456399<br/> CLSID MsRdpClient7 se define como \_ A9D7038D-B5ED-472E-9C47-94BEA90A5910<br/> CLSID \_ MsRdpClient7NotSafeForScripting se define como 54D38BF7-B1EF-4479-9674-1BD6EA465258<br/> CLSID MsRdpClient8 se define como \_ 5F681803-2900-4C43-A1CC-CF405404A676<br/> CLSID \_ MsRdpClient8NotSafeForScripting se define como A3BC03A0-041D-42E3-AD22-882B7865C9C5<br/> CLSID MsRdpClient9 se define como \_ 301B94BA-5D25-4A12-BFFE-3B6E7A616585<br/> CLSID \_ MsRdpClient9NotSafeForScripting se define como 8B918B82-7985-4C24-89DF-C33AD2BBFBCD<br/> |
 | IID<br/>                      | IID \_ IMsRdpClientNonScriptable3 se define como b3378d90-0728-45c7-8ed7-b6159fb92219<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
 
@@ -148,7 +148,7 @@ Cuando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 [**IMsTscNonScriptable**](imstscnonscriptable-interface.md)
 </dt> <dt>
 
-[Referencia de Conexión web a Escritorio remoto](remote-desktop-web-connection-reference.md)
+[Conexión web a Escritorio remoto referencia](remote-desktop-web-connection-reference.md)
 </dt> </dl>
 
  

@@ -1,21 +1,21 @@
 ---
-description: Obtenga información sobre el parámetro PageMediaSizePSWidthOffset. Este tema no está actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
+description: Obtenga información sobre el parámetro PageMediaSizePSWidthOffset. Este tema no está actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: b93ad6e6-ab27-4fab-b488-6f402b6ee857
 title: PageMediaSizePSWidthOffset
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 265acad803dbc334be115440e195967465b3ef50
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 063ba9e8e0e4a9a6bfaab0e83eed412d835bbeab555248753963793f0b75dd7b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117686170"
 ---
 # <a name="pagemediasizepswidthoffset"></a>PageMediaSizePSWidthOffset
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica el desplazamiento hasta la dirección de orientación de la fuente (Referencia [PostScript especificación de formato de archivo de](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)descripción de impresora ).
+Especifica el desplazamiento horizontal hasta la dirección de orientación de la fuente (Referencia [PostScript especificación de](https://www.adobe.com/products/postscript/pdfs/PLRM.pdf)formato de archivo de descripción de impresora ).
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -71,14 +71,14 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                      |
+| Propiedad                | xsi:type           | Value                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | integer<br/> | no definido<br/>       |
 | MaxValue<br/>     | integer<br/> | no definido<br/>       |
 | MinValue<br/>     | integer<br/> | no definido<br/>       |
 | Mandatory<br/>    | string<br/>  | psk:Conditional<br/> |
-| Múltiple<br/>     | integer<br/> | 1<br/>               |
+| Varios<br/>     | integer<br/> | 1<br/>               |
 | UnitType<br/>     | string<br/>  | Micras<br/>         |
 
 

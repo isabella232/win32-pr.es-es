@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: Windows8Api. JetGetErrorInfo (método)'
-title: Método Windows8Api. JetGetErrorInfo (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: Método Windows8Api.JetGetErrorInfo'
+title: Método Windows8Api.JetGetErrorInfo (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'JetGetErrorInfo method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.Windows8Api.JetGetErrorInfo(Microsoft.Isam.Esent.Interop.JET_err,Microsoft.Isam.Esent.Interop.Windows8.JET_ERRINFOBASIC@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8api.jetgeterrorinfo(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c94e6594c2d52769f5034bdf1c7253bee838edaa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c05e66180a1d3821730b418e3a2f9fbf255e952f69d2ece290e71376583e612
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118069422"
 ---
-# <a name="windows8apijetgeterrorinfo-method"></a>Windows8Api. JetGetErrorInfo, método
+# <a name="windows8apijetgeterrorinfo-method"></a>Método Windows8Api.JetGetErrorInfo
 
 Obtiene información extendida sobre un error.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,14 +61,14 @@ public static void JetGetErrorInfo(
 #### <a name="parameters"></a>Parámetros
 
   - error  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_err](./jet-err-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)  
     
     Código de error sobre el que se va a recuperar información.
 
 <!-- end list -->
 
   - errinfo  
-    Tipo: [Microsoft.ISAM.esent.Interop.Windows8.JET_ERRINFOBASIC](./jet-errinfobasic-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Windows8.JET_ERRINFOBASIC](./jet-errinfobasic-class.md)  
     
     Información sobre el código de error especificado.
 
@@ -80,4 +80,4 @@ public static void JetGetErrorInfo(
 
 [Miembros de Windows8Api](./windows8api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

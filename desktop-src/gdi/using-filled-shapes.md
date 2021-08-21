@@ -1,25 +1,25 @@
 ---
-description: En esta sección se muestra cómo usar las funciones de forma rellenada. En el ejemplo se usa el procedimiento de ventana principal de una aplicación que permite al usuario dibujar elipses, rectángulos y rectángulos con esquinas redondeadas.
+description: En esta sección se muestra cómo usar funciones de forma rellena. En el ejemplo se usa el procedimiento de ventana principal de una aplicación que permite al usuario dibujar elipses, rectángulos y rectángulos con esquinas redondeadas.
 ms.assetid: c5fc3346-e5d7-49c0-979b-10d91ab965c5
 title: Usar formas rellenas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03092c0eea329759b70c18c4fa8247081ca99fa8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a63cf1371f18d6c21fb373bf787a0c93cb5de28143466b5860115a5493b8582
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117698022"
 ---
 # <a name="using-filled-shapes"></a>Usar formas rellenas
 
-En esta sección se muestra cómo usar las funciones de forma rellenada. En el ejemplo se usa el procedimiento de ventana principal de una aplicación que permite al usuario dibujar elipses, rectángulos y rectángulos con esquinas redondeadas.
+En esta sección se muestra cómo usar funciones de forma rellena. En el ejemplo se usa el procedimiento de ventana principal de una aplicación que permite al usuario dibujar elipses, rectángulos y rectángulos con esquinas redondeadas.
 
-El usuario dibuja una forma rellena seleccionando una forma determinada en el menú, colocando el cursor en la esquina superior izquierda de la forma (o el rectángulo delimitador de la forma en el caso de una elipse) y arrastrando el mouse hasta que se obtengan las dimensiones deseadas.
+El usuario dibuja una forma rellena seleccionando una forma determinada en el menú, colocando el cursor en la esquina superior izquierda de la forma (o el rectángulo delimitador de la forma en el caso de una elipse) y arrastrando el mouse hasta que se obtienen las dimensiones deseadas.
 
-La ilustración siguiente muestra tres formas rellenas dibujadas con el código de ejemplo de esta sección.
+En la ilustración siguiente se muestran tres formas rellenas dibujadas con el código de ejemplo de esta sección.
 
-![captura de pantalla que muestra un círculo y dos rectagles, uno con esquinas cuadradas y otro con esquinas redondeadas](images/fillshape.png)
+![captura de pantalla que muestra un círculo y dos rectagles: uno con esquinas cuadradas y otro con esquinas redondeadas](images/fillshape.png)
 
 Para permitir que el usuario dibuje formas rellenas, incluya el siguiente menú emergente en la aplicación.
 
@@ -35,7 +35,7 @@ Para permitir que el usuario dibuje formas rellenas, incluya el siguiente menú 
 
 
 
-Los valores de elemento de menú de la plantilla de menú son constantes que debe definir como se indica a continuación en el archivo de encabezado de la aplicación.
+Los valores de elemento de menú de la plantilla de menú son constantes que debe definir como se muestra a continuación en el archivo de encabezado de la aplicación.
 
 
 ```C++

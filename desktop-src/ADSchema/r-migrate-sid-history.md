@@ -1,10 +1,10 @@
 ---
-title: Migrar-SID-historial extendido derecho
+title: Derecho extendido migrate-SID-History
 description: Derecho extendido que permite a un usuario migrar el SID-History sin privilegios de administrador.
 ms.assetid: 8c7ed1ec-3bde-4a6c-85a6-65a2a2e5b4bf
 ms.tgt_platform: multiple
 keywords:
-- Migrate-SID-History esquema de AD de derecho extendido
+- Migrate-SID-History extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22046e195ff2c0731e5604226e55af08c9c08ec9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 220273556eff4550f9483a170778eb9cb5a040031934be2b01c10f7a98594af3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103805077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118010947"
 ---
-# <a name="migrate-sid-history-extended-right"></a>Migrar-SID-historial extendido derecho
+# <a name="migrate-sid-history-extended-right"></a>Derecho extendido migrate-SID-History
 
 Derecho extendido que permite a un usuario migrar el SID-History sin privilegios de administrador.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
 | CN           | Migrate-SID-History                  |
 | Display-Name | Migrar historial de Id. de seguridad                  |
@@ -46,10 +46,10 @@ Derecho extendido que permite a un usuario migrar el SID-History sin privilegios
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 63                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 63                                           |
 
 
 
@@ -59,8 +59,8 @@ Derecho extendido que permite a un usuario migrar el SID-History sin privilegios
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 63                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 63                                           |
 
 
 
@@ -68,10 +68,10 @@ Derecho extendido que permite a un usuario migrar el SID-History sin privilegios
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 63                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 63                                           |
 
 
 
@@ -81,8 +81,8 @@ Derecho extendido que permite a un usuario migrar el SID-History sin privilegios
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 63                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 63                                           |
 
 
 
@@ -92,8 +92,8 @@ Derecho extendido que permite a un usuario migrar el SID-History sin privilegios
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 63                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 63                                           |
 
 
 

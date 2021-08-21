@@ -1,12 +1,12 @@
 ---
-title: Propiedad AudioRedirectionMode de IMsRdpClientSecuredSettings
-description: Especifica la configuración de redirección de audio, que especifica si se deben redirigir sonidos o reproducir sonidos en el servidor de host de sesión de Escritorio remoto (host de sesión de escritorio remoto).
+title: Propiedad IMsRdpClientSecuredSettings AudioRedirectionMode
+description: Especifica la configuración de redireccionamiento de audio, que especifica si se deben redirigir sonidos o reproducir sonidos en el servidor Escritorio remoto session host (host de sesión de Escritorio remoto).
 ms.assetid: 6aa63a50-a714-4a9b-a4ec-c0551920467a
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad AudioRedirectionMode
-- Propiedad AudioRedirectionMode Servicios de Escritorio remoto, interfaz IMsRdpClientSecuredSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientSecuredSettings, propiedad AudioRedirectionMode
+- Propiedad AudioRedirectionMode Servicios de Escritorio remoto
+- Propiedad AudioRedirectionMode Servicios de Escritorio remoto , interfaz IMsRdpClientSecuredSettings
+- Interfaz IMsRdpClientSecuredSettings Servicios de Escritorio remoto , propiedad AudioRedirectionMode
 topic_type:
 - apiref
 api_name:
@@ -19,20 +19,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 858342811ec97def95031ebed0605b5a81cf80fc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 56ef48b0898dd461c9be4e4e9d0cd443d4f9cf8ab8aaad34de1ca0ad9e3218c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117941092"
 ---
-# <a name="imsrdpclientsecuredsettingsaudioredirectionmode-property"></a>IMsRdpClientSecuredSettings:: AudioRedirectionMode (propiedad)
+# <a name="imsrdpclientsecuredsettingsaudioredirectionmode-property"></a>Propiedad IMsRdpClientSecuredSettings::AudioRedirectionMode
 
-Especifica la configuración de redirección de audio, que especifica si se deben redirigir sonidos o reproducir sonidos en el servidor de host de sesión de Escritorio remoto (host de sesión de escritorio remoto).
+Especifica la configuración de redireccionamiento de audio, que especifica si se deben redirigir sonidos o reproducir sonidos en el servidor Escritorio remoto session host (host de sesión de Escritorio remoto).
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -49,7 +49,7 @@ HRESULT get_AudioRedirectionMode(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-La nueva configuración. Este parámetro puede ser uno de los valores siguientes.
+Nueva configuración. Este parámetro puede ser uno de los valores siguientes.
 
 <dt>
 
@@ -76,15 +76,15 @@ Deshabilitar el redireccionamiento de sonido; no reproducir sonidos en el servid
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Estas propiedades no se pueden establecer cuando el control está conectado.
 
-Para obtener más información, consulte [proporcionar seguridad de cliente RDP](providing-for-rdp-client-security.md) .
+Consulte Proporcionar [seguridad de cliente RDP](providing-for-rdp-client-security.md) para obtener más información.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,7 +96,7 @@ Para obtener más información acerca de Conexión web a Escritorio remoto, cons
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                 |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>         |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>         |
-| IID<br/>                      | IID \_ IMsRdpClientSecuredSettings se define como 605befcf-39c1-45cc-A811-068fb7be346d<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientSecuredSettings se define como 605befcf-39c1-45cc-a811-068fb7be346d<br/> |
 
 
 

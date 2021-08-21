@@ -1,5 +1,5 @@
 ---
-description: Cambiar qué vértices se ven influenciados por qué ramas.
+description: Cambiar los vértices que se ven influenciados por cada tronco.
 ms.assetid: b0d71f3e-9a2d-469d-808b-2fa768cf14b0
 title: Método ID3DX10SkinInfo::RemapVertices (D3DX10.h)
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.locfileid: "118302481"
 ---
 # <a name="id3dx10skininforemapvertices-method"></a>Método ID3DX10SkinInfo::RemapVertices
 
-Cambiar qué vértices se ven influenciados por qué ramas.
+Cambiar los vértices que se ven influenciados por cada tronco.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +55,7 @@ Nuevo número de vértices.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Puntero a una matriz de índices de vértices, que describen el remapping. Por ejemplo, diga que SkinInfo contiene algunos vértices, como que se asigna a la versión v0, a la 1 a la 1 y a la matriz con 2,1,0, y se especifica la matriz con 2,1,0 para pIqueRemap. Esto hará que cause que cause0 que se asigne a v2, a tanda1 a v1 y a 2 a v0.
+Puntero a una matriz de índices de vértices, que describen el remapping. Por ejemplo, por ejemplo, say SkinInfo contiene algunos vértices, por ejemplo, que se asigna a v0, amut1 a v1 y a la matriz con 2,1,0, y se especifica array con 2,1,0 para p ArrayRemap. Esto hará que cause que cause que se asignen a v2, a pero1 a v1 y a la versión 2 a v0.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Puntero a una matriz de índices de vértices, que describen el remapping. Por e
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser: E \_ OUTOFMEMORY o E \_ INVALIDARG.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser: E \_ OUTOFMEMORY o E \_ INVALIDARG.
 
 ## <a name="requirements"></a>Requisitos
 

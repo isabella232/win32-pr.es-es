@@ -1,29 +1,29 @@
 ---
-description: Las aplicaciones o marcos de interfaz de usuario usan las constantes siguientes para identificar cómo se procesan los comentarios de la interfaz de usuario cuando se detecta uno de los gestos de la lista.
+description: Las aplicaciones o marcos de interfaz de usuario usan las siguientes constantes para identificar cómo se procesan los comentarios de la interfaz de usuario cuando se detecta uno de los gestos enumerados.
 ms.assetid: 76D3DFF4-7BB2-49A9-8251-0B5D9376B649
-title: Visualización de gestos (Winuser. h)
+title: Visualización de gestos (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 551934380e1d5ec0902818466f5840e1dc6718e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f572addf2ad7a98dbe3afc63c69a305ea15546e9533918d952271372cf52b5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117849824"
 ---
 # <a name="gesture-visualization"></a>Visualización de gestos
 
-Las aplicaciones o marcos de interfaz de usuario usan las constantes siguientes para identificar cómo se procesan los comentarios de la interfaz de usuario cuando se detecta uno de los gestos de la lista.
+Las aplicaciones o marcos de interfaz de usuario usan las siguientes constantes para identificar cómo se procesan los comentarios de la interfaz de usuario cuando se detecta uno de los gestos enumerados.
 
-Estas constantes se utilizan con los parámetros **SPI \_ GETGESTUREVISUALIZATION** y **SPI \_ SETGESTUREVISUALIZATION** y la función [**SystemParametersInfo**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) .
+Estas constantes se usan con los parámetros **SPI \_ GETGESTUREVISUALIZATION** y **SPI \_ SETGESTUREVISUALIZATION** y la [**función SystemParametersInfo.**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa)
 
-**Note**  
+**Nota**  
 
-Para recuperar o establecer la información de visualización del lápiz, se recomienda usar los parámetros **SPI \_ GETPENVISUALIZATION** y **SPI \_ SETPENVISUALIZATION** y las constantes enumeradas en la [**visualización del lápiz**](pen-visualization.md).
+Para recuperar o establecer la información de visualización del lápiz, se recomienda usar los parámetros **SPI \_ GETPENVISUALIZATION** y **SPI \_ SETPENVISUALIZATION** y las constantes enumeradas en [**Visualización**](pen-visualization.md)de lápiz .
 
 <dl> <dt>
 
-<span id="GESTUREVISUALIZATION_OFF"></span><span id="gesturevisualization_off"></span>**GESTUREVISUALIZATION \_ desactivado**
+<span id="GESTUREVISUALIZATION_OFF"></span><span id="gesturevisualization_off"></span>**GESTUREVISUALIZATION \_ OFF**
 </dt> <dd> <dl> <dt>
 
 0x0000
@@ -36,7 +36,7 @@ Especifica que los comentarios de la interfaz de usuario para todos los gestos e
 
 </dt> </dl> </dd> <dt>
 
-<span id="GESTUREVISUALIZATION_ON"></span><span id="gesturevisualization_on"></span>**GESTUREVISUALIZATION \_**
+<span id="GESTUREVISUALIZATION_ON"></span><span id="gesturevisualization_on"></span>**GESTUREVISUALIZATION \_ ON**
 </dt> <dd> <dl> <dt>
 
 0x001F
@@ -44,12 +44,12 @@ Especifica que los comentarios de la interfaz de usuario para todos los gestos e
 
 
 
-Especifica que la información de la interfaz de usuario para todos los gestos está activada.
+Especifica que los comentarios de la interfaz de usuario para todos los gestos están en .
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="GESTUREVISUALIZATION_TAP"></span><span id="gesturevisualization_tap"></span>**GESTUREVISUALIZATION \_ TAP**
+<span id="GESTUREVISUALIZATION_TAP"></span><span id="gesturevisualization_tap"></span>**GESTOVISUALIZACIÓN \_ TAP**
 </dt> <dd> <dl> <dt>
 
 0x0001
@@ -57,7 +57,7 @@ Especifica que la información de la interfaz de usuario para todos los gestos e
 
 
 
-Especifica la información de la interfaz de usuario para una derivación.
+Especifica los comentarios de la interfaz de usuario para una pulsación.
 
 
 </dt> </dl> </dd> <dt>
@@ -70,7 +70,7 @@ Especifica la información de la interfaz de usuario para una derivación.
 
 
 
-Especifica la información de la interfaz de usuario para una doble punteo.
+Especifica los comentarios de la interfaz de usuario para una doble pulsación.
 
 
 </dt> </dl> </dd> <dt>
@@ -83,7 +83,7 @@ Especifica la información de la interfaz de usuario para una doble punteo.
 
 
 
-Especifica la información de la interfaz de usuario para presionar y pulsar.
+Especifica los comentarios de la interfaz de usuario para presionar y pulsar.
 
 
 </dt> </dl> </dd> <dt>
@@ -96,12 +96,12 @@ Especifica la información de la interfaz de usuario para presionar y pulsar.
 
 
 
-Especifica la información de la interfaz de usuario para mantener presionado.
+Especifica los comentarios de la interfaz de usuario para mantener presionado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="GESTUREVISUALIZATION_RIGHTTAP"></span><span id="gesturevisualization_righttap"></span>**GESTUREVISUALIZATION \_ RIGHTTAP**
+<span id="GESTUREVISUALIZATION_RIGHTTAP"></span><span id="gesturevisualization_righttap"></span>**GESTOVISUALIZACIÓN \_ RIGHTTAP**
 </dt> <dd> <dl> <dt>
 
 0x0010
@@ -109,7 +109,7 @@ Especifica la información de la interfaz de usuario para mantener presionado.
 
 
 
-Especifica la información de la interfaz de usuario para una derivación derecha.
+Especifica los comentarios de la interfaz de usuario para pulsar a la derecha.
 
 
 </dt> </dl> </dd> </dl>
@@ -120,9 +120,9 @@ Especifica la información de la interfaz de usuario para una derivación derech
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 

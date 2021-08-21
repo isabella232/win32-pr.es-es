@@ -64,7 +64,7 @@ Puntero a un objeto que expone la [**interfaz IQueueCommand.**](/windows/desktop
 *Punk* 
 </dt> <dd>
 
-Puntero a la interfaz **IUnknown externa** para la agregación.
+Puntero a la interfaz **IUnknown externa para** la agregación.
 
 </dd> <dt>
 
@@ -156,7 +156,7 @@ Valor que indica si el tiempo de comando diferido está en tiempo de secuencia (
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

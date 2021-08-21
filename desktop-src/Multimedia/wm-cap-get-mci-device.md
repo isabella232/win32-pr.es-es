@@ -3,7 +3,7 @@ title: WM_CAP_GET_MCI_DEVICE mensaje (Vfw.h)
 description: El mensaje GET MCI DEVICE de WM CAP recupera el nombre de un dispositivo MCI previamente establecido con el mensaje \_ \_ WM CAP SET \_ \_ \_ \_ \_ MCI \_ DEVICE. Puede enviar este mensaje explícitamente o mediante la macro capGetMCIDeviceName.
 ms.assetid: c5d7d955-ab6a-4959-b79e-9ff35a282ba2
 keywords:
-- WM_CAP_GET_MCI_DEVICE mensaje Windows multimedia
+- WM_CAP_GET_MCI_DEVICE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "117800664"
 ---
 # <a name="wm_cap_get_mci_device-message"></a>Mensaje \_ GET \_ \_ MCI DEVICE \_ de WM CAP
 
-El **mensaje GET \_ \_ \_ MCI DEVICE \_ de WM CAP** recupera el nombre de un dispositivo MCI previamente establecido con el mensaje WM CAP SET [**\_ \_ \_ MCI \_ DEVICE.**](wm-cap-set-mci-device.md) Puede enviar este mensaje explícitamente o mediante la macro [**capGetMCIDeviceName.**](/windows/desktop/api/Vfw/nf-vfw-capgetmcidevicename)
+El **mensaje \_ GET \_ \_ MCI DEVICE \_ de WM CAP** recupera el nombre de un dispositivo MCI previamente establecido con el mensaje WM CAP SET [**\_ \_ \_ MCI \_ DEVICE.**](wm-cap-set-mci-device.md) Puede enviar este mensaje explícitamente o mediante la macro [**capGetMCIDeviceName.**](/windows/desktop/api/Vfw/nf-vfw-capgetmcidevicename)
 
 
 ```C++
@@ -54,7 +54,7 @@ Puntero a una cadena terminada en NULL que contiene el nombre del dispositivo MC
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Devuelve **TRUE si** se realiza correctamente o FALSE en **caso** contrario.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

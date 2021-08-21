@@ -1,7 +1,7 @@
 ---
 description: Obtiene un objeto descodificador, si existe uno.
 ms.assetid: b8a1c7c9-e7ac-4b0e-a342-5b923ab83df3
-title: EncodedData. decodificador (método)
+title: Método EncodedData.Decoder
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 334895ed683d0c582628b4b623a7343ca561be22
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7496aa3873fda9e4cd0adc86773a8c06ca60be25e3625c26f3b7a97508f48e0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650034"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117766828"
 ---
-# <a name="encodeddatadecoder-method"></a>EncodedData. decodificador (método)
+# <a name="encodeddatadecoder-method"></a>Método EncodedData.Decoder
 
-\[CAPICOM es un componente de solo bits de 32 que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use la [**clase AsnEncodedData**](/dotnet/api/system.security.cryptography.asnencodeddata?view=netcore-3.1) en el espacio de nombres [**System. Security. Cryptography**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true) .\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use [**la clase AsnEncodedData en**](/dotnet/api/system.security.cryptography.asnencodeddata?view=netcore-3.1) el espacio de nombres [**System.Security.Cryptography.**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true)\]
 
-El método **descodificador** obtiene un objeto descodificador, si existe uno.
+El **método Decoder** obtiene un objeto descodificador, si existe uno.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,9 +39,9 @@ EncodedData.Decoder()
 
 Este método no tiene parámetros.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si los datos codificados no tienen un objeto descodificador, se devuelve **null** .
+Si los datos codificados no tienen un objeto descodificador, **se devuelve NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ Si los datos codificados no tienen un objeto descodificador, se devuelve **null*
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuible<br/>       | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/>       | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

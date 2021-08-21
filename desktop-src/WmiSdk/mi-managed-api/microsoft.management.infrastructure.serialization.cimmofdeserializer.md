@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: clase CimMofDeserializer'
+description: 'Más información sobre: CimMofDeserializer (clase)'
 title: Clase CimMofDeserializer (Microsoft.Management.Infrastructure.Serialization)
 TOCTitle: CimMofDeserializer class (Microsoft.Management.Infrastructure.Serialization)
 ms:assetid: T:Microsoft.Management.Infrastructure.Serialization.CimMofDeserializer
@@ -23,26 +23,26 @@ topic_type:
 - apiref
 product_family_name: VS
 ms.topic: reference
-ms.openlocfilehash: 895141e9c2ba1c8a41d8d77f3bf3f6c718406f4f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f718a6b932f33b1fa5a91ceccb69350eebe76a271c4ef70ecb0aca2fd12a89f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117923584"
 ---
-# <a name="cimmofdeserializer-class"></a>Clase CimMofDeserializer
+# <a name="cimmofdeserializer-class"></a>CimMofDeserializer (clase)
 
-Representa un deserializador MOF de CIM.
+Representa un deserializador de CIM MOF.
 
-**Espacio de nombres:**   [Microsoft. Management. Infrastructure. Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))  
-**Ensamblado:**  Microsoft. Management. Infrastructure (en Microsoft.Management.Infrastructure.dll)  
+**Espacio de nombres:**   [Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))  
+**Ensamblado:**  Microsoft.Management.Infrastructure (en Microsoft.Management.Infrastructure.dll)  
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object?view=netframework-4.8)  
-  Microsoft. Management. Infrastructure. Serialization. CimMofDeserializer  
+  Microsoft.Management.Infrastructure.Serialization.CimMofDeserializer  
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` csharp
 internal class CimMofDeserializer : IDisposable
@@ -66,8 +66,8 @@ Friend Class CimMofDeserializer
 
 ## <a name="thread-safety"></a>Seguridad para subprocesos
 
-Los miembros estáticos públicos (**compartidos** en Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
+Los miembros estáticos **públicos** (compartidos Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
 ## <a name="see-also"></a>Vea también
 
-[Microsoft. Management. Infrastructure. Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))
+[Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))

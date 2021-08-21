@@ -4,20 +4,20 @@ ms.assetid: 0f79de15-6ce9-4d89-afb5-b4a2f0cf2fe3
 title: Usar variables de condición
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70989ca0f62271aa5afabfd60deddaeca2187866
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c1b1bda85e0e5efecaf1572637601bc0031ac04cb91b6f7de735e1ca8590e31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667504"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765549"
 ---
 # <a name="using-condition-variables"></a>Usar variables de condición
 
-El código siguiente implementa una cola de productor/consumidor. La cola se representa como un búfer circular enlazado y está protegida por una sección crítica. El código usa dos variables de condición: una usada por los productores ( `BufferNotFull` ) y otra usada por los consumidores ( `BufferNotEmpty` ).
+El código siguiente implementa una cola de productor/consumidor. La cola se representa como un búfer circular delimitado y está protegida por una sección crítica. El código usa dos variables de condición: una usada por los productores ( ) y otra usada por `BufferNotFull` los consumidores ( `BufferNotEmpty` ).
 
-El código llama a la función [**InitializeConditionVariable**](/windows/win32/api/synchapi/nf-synchapi-initializeconditionvariable) para crear las variables de condición. Los subprocesos de consumidor llaman a la función [**SleepConditionVariableCS**](/windows/win32/api/synchapi/nf-synchapi-sleepconditionvariablecs) para esperar a que se agreguen elementos a la cola y a la función [**WakeConditionVariable**](/windows/win32/api/synchapi/nf-synchapi-wakeconditionvariable) para indicar al productor que está listo para más elementos. Los subprocesos de productor llaman a **SleepConditionVariableCS** para esperar a que el consumidor Quite los elementos de la cola y **WakeConditionVariable** para indicar al consumidor que hay más elementos en la cola.
+El código llama a la [**función InitializeConditionVariable**](/windows/win32/api/synchapi/nf-synchapi-initializeconditionvariable) para crear las variables de condición. Los subprocesos de consumidor llaman a la función [**SleepConditionVariableCS**](/windows/win32/api/synchapi/nf-synchapi-sleepconditionvariablecs) para esperar a que se agregan elementos a la cola y la [**función WakeConditionVariable**](/windows/win32/api/synchapi/nf-synchapi-wakeconditionvariable) para indicar al productor que está listo para más elementos. Los subprocesos productores llaman a **SleepConditionVariableCS** para esperar a que el consumidor quite elementos de la cola y **WakeConditionVariable** para indicar al consumidor que hay más elementos en la cola.
 
-**Windows Server 2003 y Windows XP:** No se admiten las variables de condición.
+**Windows Server 2003 y Windows XP:** No se admiten variables de condición.
 
 
 ```C++

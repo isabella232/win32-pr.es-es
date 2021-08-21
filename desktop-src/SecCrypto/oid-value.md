@@ -1,7 +1,7 @@
 ---
 description: Establece o recupera el valor del número de puntos del OID del identificador.
 ms.assetid: bb960e65-776e-4ae8-a557-62254dc10558
-title: OID. Value (propiedad)
+title: Oid. Propiedad Value
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: d8c3c59cfd3eadfb8aec56c6814a2af6ce9ff900
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: edaca987dbba57127c922161fbc6c6cd9473732ba1b7d1339618009335c904cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117979737"
 ---
-# <a name="oidvalue-property"></a>OID. Value (propiedad)
+# <a name="oidvalue-property"></a>Oid. Propiedad Value
 
-\[La propiedad **Value** está disponible para su uso en los sistemas operativos especificados en la sección requirements. En su lugar, use la [**clase OID**](/dotnet/api/system.security.cryptography.oid?view=netcore-3.1) en el espacio de nombres [**System. Security. Cryptography**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true) .\]
+\[La **propiedad Value** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En su lugar, use [**la clase Oid en**](/dotnet/api/system.security.cryptography.oid?view=netcore-3.1) el espacio de nombres [**System.Security.Cryptography.**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true)\]
 
-La propiedad **Value** establece o recupera el valor del número de puntos OID del identificador.
+La **propiedad Value** establece o recupera el valor del número de puntos del OID del identificador.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -37,19 +37,19 @@ OID.Value As String
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Valor del número de puntos del OID del identificador. Para obtener los valores posibles, consulte Wincrypt. h.
+Valor del número de puntos del OID del identificador. Para ver los valores posibles, consulte Wincrypt.h.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si se establece la propiedad **Value** , la propiedad [**FriendlyName**](oid-friendlyname.md) se establece en el nombre para mostrar correspondiente. Si se establece la propiedad **FriendlyName** , la propiedad **Value** se establece en el valor punteado correspondiente.
+Si se **establece** la propiedad Value, la [**propiedad FriendlyName**](oid-friendlyname.md) se establece en el nombre para mostrar correspondiente. Si se establece la propiedad **FriendlyName,** la **propiedad Value** se establece en el valor de puntos correspondiente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
@@ -58,7 +58,7 @@ Si se establece la propiedad **Value** , la propiedad [**FriendlyName**](oid-fri
 
 <dl> <dt>
 
-[**OID**](oid.md)
+[**Oid**](oid.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Freeze (comando)
-description: El comando Freeze inmoviliza la entrada de vídeo o la salida de vídeo en un VCR o deshabilita la adquisición de vídeo en el búfer de fotogramas. Los dispositivos digitales-vídeo, superposición de vídeo y VCR reconocen este comando.
+title: comando freeze
+description: El comando freeze inmoviliza la entrada de vídeo o la salida de vídeo en un VCR o deshabilita la adquisición de vídeo en el búfer de fotogramas. Los dispositivos de vídeo digital, superposición de vídeo y VCR reconocen este comando.
 ms.assetid: 49f3ab98-e893-402a-be78-6140af3b81df
 keywords:
-- comando Freeze Windows multimedia
+- comando freeze Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7b63fbb2d888fc1ca315c0b511bcb18224c8168
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ca3c3847d9c4802154e04627e06e97a2ca3f1d3f493edfcd5bb1367fd354dde6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117988357"
 ---
-# <a name="freeze-command"></a>Freeze (comando)
+# <a name="freeze-command"></a>comando freeze
 
-El comando Freeze inmoviliza la entrada de vídeo o la salida de vídeo en un VCR o deshabilita la adquisición de vídeo en el búfer de fotogramas. Los dispositivos digitales-vídeo, superposición de vídeo y VCR reconocen este comando.
+El comando freeze inmoviliza la entrada de vídeo o la salida de vídeo en un VCR o deshabilita la adquisición de vídeo en el búfer de fotogramas. Los dispositivos de vídeo digital, superposición de vídeo y VCR reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) con el parámetro *lpszCommand* establecido como se indica a continuación.
+Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
 ``` syntax
 _stprintf_s(
@@ -49,7 +49,7 @@ Identificador de un dispositivo MCI. Este identificador o alias se asigna cuando
 <span id="lpszFreezeFlags"></span><span id="lpszfreezeflags"></span><span id="LPSZFREEZEFLAGS"></span>*lpszFreezeFlags*
 </dt> <dd>
 
-Marca que identifica lo que se va a inmovilizar. En la tabla siguiente se enumeran los tipos de dispositivos que reconocen el comando **Freeze** y las marcas usadas por cada tipo.
+Marca que identifica qué se va a inmovilizar. En la tabla siguiente se enumeran los tipos de dispositivo que reconocen el comando **freeze** y las marcas usadas por cada tipo.
 
 
 
@@ -69,16 +69,16 @@ Marca que identifica lo que se va a inmovilizar. En la tabla siguiente se enumer
 <tbody>
 <tr class="odd">
 <td>digitalvideo</td>
-<td>en el <em>rectángulo</em></td>
-<td>ajena</td>
+<td>en <em>rectángulo</em></td>
+<td>Fuera</td>
 </tr>
 <tr class="even">
 <td>overlay</td>
-<td>en el <em>rectángulo</em></td>
+<td>en <em>rectángulo</em></td>
 
 </tr>
 <tr class="odd">
-<td>vídeos</td>
+<td>Vcr</td>
 <td><ul>
 <li>campo</li>
 <li>frame</li>
@@ -95,18 +95,18 @@ Marca que identifica lo que se va a inmovilizar. En la tabla siguiente se enumer
 
  
 
-En la tabla siguiente se enumeran las marcas que se pueden especificar en el parámetro *lpszFreezeFlags* y su significado.
+En la tabla siguiente se enumeran las marcas que se pueden especificar en el parámetro *lpszFreezeFlags* y sus significados.
 
 
 
 | Value          | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| en el *rectángulo* | Especifica la región que se va a inmovilizar. En el caso de los dispositivos de superposición de vídeo, esta región tendrá deshabilitada la adquisición de vídeo. En el caso de los dispositivos de vídeo digital, los píxeles del rectángulo tendrán el bit de máscara de bloqueo activado (a menos que se especifique la marca "exterior"). El rectángulo es relativo al origen del búfer de vídeo y se especifica como *x1 Y1 x2 Y2*. Las coordenadas *x1 Y1* especifican la esquina superior izquierda del rectángulo y las coordenadas *x2 Y2* especifican el ancho y el alto. |
+| en *rectángulo* | Especifica la región que se inmovilizará. En el caso de los dispositivos de superposición de vídeo, esta región tendrá deshabilitada la adquisición de vídeo. En el caso de los dispositivos de vídeo digital, los píxeles del rectángulo tendrán activado su bit de máscara de bloqueo (a menos que se especifique la marca "fuera"). El rectángulo es relativo al origen del búfer de vídeo y se especifica como *X1 Y1 X2 Y2.* Las coordenadas *X1 Y1* especifican la esquina superior izquierda del rectángulo y las coordenadas *X2 Y2* especifican el ancho y el alto. |
 | campo          | Inmoviliza el primer campo. El campo se supone de forma predeterminada (si no se especifica ningún marco ni campo).                                                                                                                                                                                                                                                                                                                                                                                               |
-| frame          | Inmoviliza todo el marco, mostrando ambos campos.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| input          | Inmoviliza el marco actual de la imagen de entrada, si está en pausa o en ejecución.                                                                                                                                                                                                                                                                                                                                                                                                                |
-| output         | Inmoviliza el marco actual de la salida del VCR. Si el VCR se está reproduciendo cuando se emite la inmovilización, el fotograma actual se congela y el VCR está en pausa. Si el VCR está en pausa cuando se emite este comando, se inmoviliza el marco actual. La imagen inmovilizada permanece en el dispositivo de salida hasta que se emite un comando [unfreeze](unfreeze.md) . Si no se especifica "Input" ni "Output", se asume "Output".                                                                                    |
-| ajena        | Indica que el área fuera de la región especificada mediante la marca "at" está inmovilizada.                                                                                                                                                                                                                                                                                                                                                                                                           |
+| frame          | Inmoviliza todo el marco y muestra ambos campos.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| input          | Inmoviliza el marco actual de la imagen de entrada, tanto si está en pausa como si está en ejecución.                                                                                                                                                                                                                                                                                                                                                                                                                |
+| output         | Inmoviliza el marco actual de la salida del VCR. Si el VCR se reproduce cuando se emite inmovilización, el fotograma actual se inmoviliza y el VCR está en pausa. Si el VCR se pausa cuando se emite este comando, el fotograma actual se inmoviliza. La imagen inmovilizada permanece en el dispositivo de salida hasta que se [emite un](unfreeze.md) comando de descongelar. Si no se especifica "input" ni "output", se supone "output".                                                                                    |
+| Fuera        | Indica que el área fuera de la región especificada mediante la marca "at" está inmovilizada.                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 
 
@@ -117,25 +117,25 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el par
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Puede ser "Wait", "Notify" o ambos. En el caso de los dispositivos de vídeo digital y vídeo, también se puede especificar "prueba". Para obtener más información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+Puede ser "wait", "notify" o ambos. En el caso de los dispositivos de vídeo digital y VCR, también se puede especificar "prueba". Para obtener más información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando se usa con dispositivos VCR, este comando está pensado para tarjetas que capturan fotogramas.
+Cuando se usa con dispositivos VCR, este comando está pensado para tarjetas de captura de fotogramas.
 
-Para especificar regiones de adquisición irregulares con la marca "at", use una serie de comandos Freeze y [unfreeze](unfreeze.md) . Algunos dispositivos de superposición de vídeo limitan la complejidad de la región de adquisición.
+Para especificar regiones de adquisición irregulares con la marca "at", use una serie de comandos inmovilizar y [descongelar.](unfreeze.md) Algunos dispositivos de superposición de vídeo limitan la complejidad de la región de adquisición.
 
-Este comando solo se admite si una llamada al comando [Capability](capability.md) con la marca "puede inmovilizar" devuelve **true**.
+Este comando solo se admite si una llamada al comando [de funcionalidad](capability.md) con la marca "can freeze" devuelve **TRUE.**
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente comando deshabilita la adquisición de vídeo en un cuadrado de 100 píxeles en la esquina superior izquierda del búfer de vídeo.
+El comando siguiente deshabilita la adquisición de vídeo en un cuadrado de 100 píxeles en la esquina superior izquierda del búfer de vídeo.
 
 ``` syntax
 freeze vboard at 0 0 100 100
@@ -156,16 +156,16 @@ freeze vboard at 0 0 100 100
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Cadenas de comandos MCI](mci-command-strings.md)
+[Cadenas de comandos de MCI](mci-command-strings.md)
 </dt> <dt>
 
 [capability](capability.md)
 </dt> <dt>
 
-[liberar](unfreeze.md)
+[Descongelar](unfreeze.md)
 </dt> </dl>
 
  

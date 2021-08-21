@@ -1,19 +1,19 @@
 ---
-description: Especifica el incremento diferencial entre el cuantificador de imágenes del marco de anclaje y el cuantificador de imágenes del fotograma B.
+description: Especifica el aumento diferencial entre el cuantificador de imagen del marco delimitador y el cuantificador de imágenes del fotograma B.
 ms.assetid: 8ab9401b-6fed-4178-955f-2e0bf950bf60
-title: Propiedad MFPKEY_BDELTAQP (Wmcodecdsp. h)
+title: MFPKEY_BDELTAQP (Propiedad, Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7ba1ca7d30e17841badeda0312f77471116a8e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e37bf5b319707e0bb5bf5a722b119b6078ac07d5ba0fe20978f0a212786ee268
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105697142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117873809"
 ---
-# <a name="mfpkey_bdeltaqp-property"></a>\_Propiedad BDELTAQP de MFPKEY
+# <a name="mfpkey_bdeltaqp-property"></a>Propiedad MFPKEY \_ BDELTAQP
 
-Especifica el incremento diferencial entre el cuantificador de imágenes del marco de anclaje y el cuantificador de imágenes del fotograma B.
+Especifica el aumento diferencial entre el cuantificador de imagen del marco delimitador y el cuantificador de imágenes del fotograma B.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -27,21 +27,21 @@ VT \_ I4
 
 0
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El cuantificador de imágenes (QP) es una medida de la compresión de un fotograma. Los valores más altos representan mayores proporciones de compresión. La QP se puede establecer en incrementos de punto medio. Un fotograma B normalmente se comprime en una QP igual que o 0,5 más arriba que el valor de QP del fotograma del delimitador. Al especificar una diferencia de QP de fotogramas B superior a 0, es posible comprimir los fotogramas B con una relación de compresión incluso mayor.
+El cuantificador de imágenes (QP) es una medida de la compresión de un marco. Los valores más altos representan mayores proporciones de compresión. El QP se puede establecer en incrementos de medio punto. Normalmente, un fotograma B se comprime en un QP igual o 0,5 más alto que el QP del marco delimitador. Al especificar una diferencia de QP de fotograma B superior a 0, es posible comprimir fotogramas B con una relación de compresión incluso mayor.
 
-La diferencia de fotogramas Delta QP solo se puede establecer en incrementos de punto entero. Esta propiedad debe establecerse en un valor entero comprendido entre 0 y 31. El valor recomendado es 1.
+El QP delta del marco B solo se puede establecer en incrementos de punto entero. Esta propiedad debe establecerse en un valor entero de 0 a 31. El valor recomendado es 1.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ La diferencia de fotogramas Delta QP solo se puede establecer en incrementos de 
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

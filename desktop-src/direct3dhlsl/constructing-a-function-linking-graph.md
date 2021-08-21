@@ -1,37 +1,37 @@
 ---
-title: Construir un grafo de función-vinculación y vincularlo a código compilado
-description: Aquí le mostramos cómo construir gráficos de vinculación de funciones (FLGs) para los sombreadores y cómo vincularlos con una biblioteca de sombreador para generar blobs de sombreador que el tiempo de ejecución de Direct3D puede usar.
+title: Construcción de un gráfico de vinculación de función y vinculación a código compilado
+description: Aquí se muestra cómo construir gráficos de vinculación de funciones (FLG) para sombreadores y cómo vincular esos sombreadores con una biblioteca de sombreadores para generar blobs de sombreador que el entorno de ejecución de Direct3D puede usar.
 ms.assetid: 82C3109E-8571-49D2-A8BF-298E30E1281B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c037e7ea111d11d24df173ffba7e56c8f486af82
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f58aa9f942d31e0321924a28ec9e9ea5d5e177d1631e38cfa9f14427de38212c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103904739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117909221"
 ---
-# <a name="constructing-a-function-linking-graph-and-linking-it-to-compiled-code"></a>Construir un grafo de función-vinculación y vincularlo a código compilado
+# <a name="constructing-a-function-linking-graph-and-linking-it-to-compiled-code"></a>Construcción de un gráfico de vinculación de función y vinculación a código compilado
 
-Aquí le mostramos cómo construir gráficos de vinculación de funciones (FLGs) para los sombreadores y cómo vincularlos con una biblioteca de sombreador para generar blobs de sombreador que el tiempo de ejecución de Direct3D puede usar.
+Aquí se muestra cómo construir gráficos de vinculación de funciones (FLG) para sombreadores y cómo vincular esos sombreadores con una biblioteca de sombreadores para generar blobs de sombreador que el entorno de ejecución de Direct3D puede usar.
 
-**Objetivo:** Para construir un grafo de función-vinculación y vincularlo a código compilado.
+**Objetivo:** Para construir un gráfico de vinculación de función y vincularlo al código compilado.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 Suponemos que estás familiarizado con C++. También necesitas tener experiencia básica en los conceptos de programación de elementos gráficos.
 
-También se supone que ha pasado por [el empaquetado de una biblioteca de sombreador](pachaging-a-shader-library.md).
+También se supone que ha pasado por [Empaquetado de una biblioteca de sombreador](pachaging-a-shader-library.md).
 
-**Tiempo de finalización:** 30 minutos.
+**Tiempo para completar:** 30 minutos.
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="1-construct-a-function-linking-graph-for-the-vertex-shader"></a>1. construya un grafo de función-vinculación para el sombreador de vértices.
+### <a name="1-construct-a-function-linking-graph-for-the-vertex-shader"></a>1. Construya un gráfico de vinculación de función para el sombreador de vértices.
 
-Llame a la función [**D3DCreateFunctionLinkingGraph**](/windows/desktop/api/D3Dcompiler/nf-d3dcompiler-d3dcreatefunctionlinkinggraph) para crear un gráfico de vinculación de funciones ([**ID3D11FunctionLinkingGraph**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11functionlinkinggraph)) que represente el sombreador de vértices.
+Llame a la función [**D3DCreateFunctionLinkingGraph**](/windows/desktop/api/D3Dcompiler/nf-d3dcompiler-d3dcreatefunctionlinkinggraph) para crear una función-linking-graph ([**ID3D11FunctionLinkingGraph**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11functionlinkinggraph)) para representar el sombreador de vértices.
 
-Use una matriz de [**estructuras \_ \_ DESC del parámetro D3D11**](/windows/desktop/api/d3d11shader/ns-d3d11shader-d3d11_parameter_desc) para definir los parámetros de entrada para el sombreador de vértices. La [etapa del ensamblador de entrada](/windows/desktop/direct3d11/d3d10-graphics-programming-guide-input-assembler-stage) alimenta los parámetros de entrada para el sombreador de vértices. El diseño de los parámetros de entrada del sombreador de vértices coincide con el diseño del sombreador de vértices en el código compilado. Después de definir los parámetros de entrada, llame al método [**ID3D11FunctionLinkingGraph:: SetInputSignature**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-setinputsignature) para definir el nodo de entrada ([**ID3D11LinkingNode**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linkingnode)) para el sombreador de vértices.
+Use una matriz de [**estructuras D3D11 \_ PARAMETER \_ DESC**](/windows/desktop/api/d3d11shader/ns-d3d11shader-d3d11_parameter_desc) para definir los parámetros de entrada para el sombreador de vértices. La [fase Input-Assembler (Ensamblador de](/windows/desktop/direct3d11/d3d10-graphics-programming-guide-input-assembler-stage) entrada) alimenta los parámetros de entrada al sombreador de vértices. El diseño de los parámetros de entrada del sombreador de vértices coincide con el diseño del sombreador de vértices en el código compilado. Después de definir los parámetros de entrada, llame al método [**ID3D11FunctionLinkingGraph::SetInputSignature**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-setinputsignature) para definir el nodo de entrada ([**ID3D11LinkingNode**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linkingnode)) para el sombreador de vértices.
 
 
 ```C++
@@ -52,7 +52,7 @@ Use una matriz de [**estructuras \_ \_ DESC del parámetro D3D11**](/windows/des
 
 
 
-Llame al método [**ID3D11FunctionLinkingGraph:: CallFunction**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-callfunction) para crear un nodo para la función de sombreador de vértices principal y realizar llamadas a [**ID3D11FunctionLinkingGraph::P assvalue**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-passvalue) para pasar valores del nodo de entrada al nodo de la función de sombreador de vértices principal.
+Llame al método [**ID3D11FunctionLinkingGraph::CallFunction**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-callfunction) para crear un nodo para la función principal del sombreador de vértices y realizar llamadas a [**ID3D11FunctionLinkingGraph::P assValue**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-passvalue) para pasar valores del nodo de entrada al nodo para la función principal del sombreador de vértices.
 
 
 ```C++
@@ -72,7 +72,7 @@ Llame al método [**ID3D11FunctionLinkingGraph:: CallFunction**](/windows/deskto
 
 
 
-Use una matriz de [**estructuras \_ \_ DESC del parámetro D3D11**](/windows/desktop/api/d3d11shader/ns-d3d11shader-d3d11_parameter_desc) para definir los parámetros de salida para el sombreador de vértices. El sombreador de vértices envía sus parámetros de salida al sombreador de píxeles. El diseño de los parámetros de salida del sombreador de vértices coincide con el diseño del sombreador de píxeles en el código compilado. Después de definir los parámetros de salida, llame al método [**ID3D11FunctionLinkingGraph:: SetOutputSignature**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-setoutputsignature) para definir el nodo de salida ([**ID3D11LinkingNode**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linkingnode)) para el sombreador de vértices.
+Use una matriz de [**estructuras D3D11 \_ PARAMETER \_ DESC**](/windows/desktop/api/d3d11shader/ns-d3d11shader-d3d11_parameter_desc) para definir los parámetros de salida para el sombreador de vértices. El sombreador de vértices alimenta sus parámetros de salida al sombreador de píxeles. El diseño de los parámetros de salida del sombreador de vértices coincide con el diseño del sombreador de píxeles en el código compilado. Después de definir los parámetros de salida, llame al método [**ID3D11FunctionLinkingGraph::SetOutputSignature**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-setoutputsignature) para definir el nodo de salida ([**ID3D11LinkingNode**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linkingnode)) para el sombreador de vértices.
 
 
 ```C++
@@ -90,7 +90,7 @@ Use una matriz de [**estructuras \_ \_ DESC del parámetro D3D11**](/windows/des
 
 
 
-Realice llamadas a [**ID3D11FunctionLinkingGraph::P assvalue**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-passvalue) para pasar valores del nodo de la función de sombreador de vértices principal al nodo de salida.
+Realice llamadas a [**ID3D11FunctionLinkingGraph::P assValue**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-passvalue) para pasar valores del nodo para la función del sombreador de vértices principal al nodo de salida.
 
 
 ```C++
@@ -104,7 +104,7 @@ Realice llamadas a [**ID3D11FunctionLinkingGraph::P assvalue**](/windows/desktop
 
 
 
-Llame al método [**ID3D11FunctionLinkingGraph:: CreateModuleInstance**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-createmoduleinstance) para finalizar el gráfico del sombreador de vértices.
+Llame al [**método ID3D11FunctionLinkingGraph::CreateModuleInstance**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-createmoduleinstance) para finalizar el gráfico del sombreador de vértices.
 
 
 ```C++
@@ -115,9 +115,9 @@ Llame al método [**ID3D11FunctionLinkingGraph:: CreateModuleInstance**](/window
 
 
 
-### <a name="2-link-the-vertex-shader"></a>2. vincular el sombreador de vértices
+### <a name="2-link-the-vertex-shader"></a>2. Vincular el sombreador de vértices
 
-Llame a la función [**D3DCreateLinker**](/windows/desktop/api/D3Dcompiler/nf-d3dcompiler-d3dcreatelinker) para crear un vinculador ([**ID3D11Linker**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linker)) que puede usar para vincular la instancia de la biblioteca de sombreador que creó en el [empaquetado de una biblioteca de sombreador](pachaging-a-shader-library.md) con la instancia del gráfico de sombreador de vértices que creó en el paso anterior. Llame al método [**ID3D11Linker:: UseLibrary**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11linker-uselibrary) para especificar la biblioteca de sombreador que se va a usar para la vinculación. Llame al método [**ID3D11Linker:: Link**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11linker-link) para vincular la biblioteca de sombreador con el gráfico del sombreador de vértices y generar un puntero a la interfaz [**ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85)) que puede usar para tener acceso al código del sombreador de vértices compilado. Después, puede pasar este código del sombreador de vértices compilado al método [**ID3D11Device:: CreateVertexShader**](/windows/desktop/api/d3d11/nf-d3d11-id3d11device-createvertexshader) para crear el objeto de sombreador de vértices y al método [**ID3D11Device:: CreateInputLayout**](/windows/desktop/api/d3d11/nf-d3d11-id3d11device-createinputlayout) para crear el objeto de diseño de entrada.
+Llame a la función [**D3DCreateLinker**](/windows/desktop/api/D3Dcompiler/nf-d3dcompiler-d3dcreatelinker) para crear un vinculador [**(ID3D11Linker)**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linker)que puede usar [](pachaging-a-shader-library.md) para vincular la instancia de la biblioteca de sombreadores que creó en Empaquetado de una biblioteca de sombreadores con la instancia del gráfico del sombreador de vértices que creó en el paso anterior. Llame al [**método ID3D11Linker::UseLibrary**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11linker-uselibrary) para especificar la biblioteca de sombreador que se usará para la vinculación. Llame al [**método ID3D11Linker::Link**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11linker-link) para vincular la biblioteca de sombreadores con el gráfico del sombreador de vértices y generar un puntero a la interfaz [**ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85)) que puede usar para acceder al código compilado del sombreador de vértices. A continuación, puede pasar este código compilado del sombreador de vértices al método [**ID3D11Device::CreateVertexShader**](/windows/desktop/api/d3d11/nf-d3d11-id3d11device-createvertexshader) para crear el objeto de sombreador de vértices y al método [**ID3D11Device::CreateInputLayout**](/windows/desktop/api/d3d11/nf-d3d11-id3d11device-createinputlayout) para crear el objeto de diseño de entrada.
 
 
 ```C++
@@ -158,11 +158,11 @@ Llame a la función [**D3DCreateLinker**](/windows/desktop/api/D3Dcompiler/nf-d3
 
 
 
-### <a name="3-construct-a-function-linking-graph-for-the-pixel-shader"></a>3. construir un grafo de función-vinculación para el sombreador de píxeles.
+### <a name="3-construct-a-function-linking-graph-for-the-pixel-shader"></a>3. Construya un gráfico de vinculación de función para el sombreador de píxeles.
 
-Llame a la función [**D3DCreateFunctionLinkingGraph**](/windows/desktop/api/D3Dcompiler/nf-d3dcompiler-d3dcreatefunctionlinkinggraph) para crear un gráfico de vinculación de funciones ([**ID3D11FunctionLinkingGraph**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11functionlinkinggraph)) que represente el sombreador de píxeles.
+Llame a la función [**D3DCreateFunctionLinkingGraph**](/windows/desktop/api/D3Dcompiler/nf-d3dcompiler-d3dcreatefunctionlinkinggraph) para crear una función-linking-graph ([**ID3D11FunctionLinkingGraph**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11functionlinkinggraph)) para representar el sombreador de píxeles.
 
-Use una matriz de [**estructuras \_ \_ DESC del parámetro D3D11**](/windows/desktop/api/d3d11shader/ns-d3d11shader-d3d11_parameter_desc) para definir los parámetros de entrada para el sombreador de píxeles. La fase del sombreador de vértices alimenta los parámetros de entrada para el sombreador de píxeles. El diseño de los parámetros de entrada del sombreador de píxeles coincide con el diseño del sombreador de píxeles en el código compilado. Después de definir los parámetros de entrada, llame al método [**ID3D11FunctionLinkingGraph:: SetInputSignature**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-setinputsignature) para definir el nodo de entrada ([**ID3D11LinkingNode**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linkingnode)) para el sombreador de píxeles.
+Use una matriz de [**estructuras D3D11 \_ PARAMETER \_ DESC**](/windows/desktop/api/d3d11shader/ns-d3d11shader-d3d11_parameter_desc) para definir los parámetros de entrada para el sombreador de píxeles. La fase del sombreador de vértices alimenta los parámetros de entrada al sombreador de píxeles. El diseño de los parámetros de entrada del sombreador de píxeles coincide con el diseño del sombreador de píxeles en el código compilado. Después de definir los parámetros de entrada, llame al método [**ID3D11FunctionLinkingGraph::SetInputSignature**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-setinputsignature) para definir el nodo de entrada ([**ID3D11LinkingNode**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linkingnode)) para el sombreador de píxeles.
 
 
 ```C++
@@ -183,7 +183,7 @@ Use una matriz de [**estructuras \_ \_ DESC del parámetro D3D11**](/windows/des
 
 
 
-Llame al método [**ID3D11FunctionLinkingGraph:: CallFunction**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-callfunction) para crear un nodo para la función de sombreador de píxeles principal y realizar llamadas a [**ID3D11FunctionLinkingGraph::P assvalue**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-passvalue) para pasar valores del nodo de entrada al nodo de la función de sombreador de píxeles principal.
+Llame al método [**ID3D11FunctionLinkingGraph::CallFunction**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-callfunction) para crear un nodo para la función principal del sombreador de píxeles y realizar llamadas a [**ID3D11FunctionLinkingGraph::P assValue**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-passvalue) para pasar valores del nodo de entrada al nodo de la función principal del sombreador de píxeles.
 
 
 ```C++
@@ -201,7 +201,7 @@ Llame al método [**ID3D11FunctionLinkingGraph:: CallFunction**](/windows/deskto
 
 
 
-Use una matriz de [**estructuras \_ \_ DESC del parámetro D3D11**](/windows/desktop/api/d3d11shader/ns-d3d11shader-d3d11_parameter_desc) para definir los parámetros de salida para el sombreador de píxeles. El sombreador de píxeles envía sus parámetros de salida a la [fase de combinación de salida](/windows/desktop/direct3d11/d3d10-graphics-programming-guide-output-merger-stage). Después de definir los parámetros de salida, llame al método [**ID3D11FunctionLinkingGraph:: SetOutputSignature**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-setoutputsignature) para definir el nodo de salida ([**ID3D11LinkingNode**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linkingnode)) para el sombreador de píxeles y realizar llamadas a [**ID3D11FunctionLinkingGraph::P assvalue**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-passvalue) para pasar valores de un nodo de función de sombreador de píxeles al nodo de salida.
+Use una matriz de [**estructuras D3D11 \_ PARAMETER \_ DESC**](/windows/desktop/api/d3d11shader/ns-d3d11shader-d3d11_parameter_desc) para definir los parámetros de salida del sombreador de píxeles. El sombreador de píxeles alimenta sus parámetros de salida a [la fase de fusión de salida.](/windows/desktop/direct3d11/d3d10-graphics-programming-guide-output-merger-stage) Después de definir los parámetros de salida, llame al método [**ID3D11FunctionLinkingGraph::SetOutputSignature**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-setoutputsignature) para definir el nodo de salida ([**ID3D11LinkingNode**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linkingnode)) para el sombreador de píxeles y realice llamadas a [**ID3D11FunctionLinkingGraph::P assValue para**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-passvalue) pasar valores de un nodo de función de sombreador de píxeles al nodo de salida.
 
 
 ```C++
@@ -219,7 +219,7 @@ Use una matriz de [**estructuras \_ \_ DESC del parámetro D3D11**](/windows/des
 
 
 
-Llame al método [**ID3D11FunctionLinkingGraph:: CreateModuleInstance**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-createmoduleinstance) para finalizar el gráfico del sombreador de píxeles.
+Llame al [**método ID3D11FunctionLinkingGraph::CreateModuleInstance**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-createmoduleinstance) para finalizar el gráfico del sombreador de píxeles.
 
 
 ```C++
@@ -230,9 +230,9 @@ Llame al método [**ID3D11FunctionLinkingGraph:: CreateModuleInstance**](/window
 
 
 
-### <a name="4-link-the-pixel-shader"></a>4. vincular el sombreador de píxeles
+### <a name="4-link-the-pixel-shader"></a>4. Vincular el sombreador de píxeles
 
-Llame a la función [**D3DCreateLinker**](/windows/desktop/api/D3Dcompiler/nf-d3dcompiler-d3dcreatelinker) para crear un vinculador ([**ID3D11Linker**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linker)) que puede usar para vincular la instancia de la biblioteca de sombreador que creó en el [empaquetado de una biblioteca de sombreador](pachaging-a-shader-library.md) con la instancia del gráfico de sombreador de píxeles que creó en el paso anterior. Llame al método [**ID3D11Linker:: UseLibrary**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11linker-uselibrary) para especificar la biblioteca de sombreador que se va a usar para la vinculación. Llame al método [**ID3D11Linker:: Link**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11linker-link) para vincular la biblioteca de sombreador con el gráfico del sombreador de píxeles y generar un puntero a la interfaz [**ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85)) que puede usar para tener acceso al código del sombreador de píxeles compilado. Después, puede pasar este código de sombreador de píxeles compilado al método [**ID3D11Device:: CreatePixelShader**](/windows/desktop/api/d3d11/nf-d3d11-id3d11device-createpixelshader) para crear el objeto de sombreador de píxeles.
+Llame a la función [**D3DCreateLinker**](/windows/desktop/api/D3Dcompiler/nf-d3dcompiler-d3dcreatelinker) para crear un vinculador [**(ID3D11Linker)**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linker)que puede usar [](pachaging-a-shader-library.md) para vincular la instancia de la biblioteca de sombreadores que creó en Empaquetado de una biblioteca de sombreadores con la instancia del gráfico de sombreador de píxeles que creó en el paso anterior. Llame al [**método ID3D11Linker::UseLibrary**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11linker-uselibrary) para especificar la biblioteca de sombreador que se usará para la vinculación. Llame al [**método ID3D11Linker::Link**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11linker-link) para vincular la biblioteca de sombreadores con el gráfico de sombreador de píxeles y generar un puntero a la interfaz [**ID3DBlob**](/previous-versions/windows/desktop/legacy/ff728743(v=vs.85)) que puede usar para acceder al código compilado del sombreador de píxeles. A continuación, puede pasar este código de sombreador de píxeles compilado al [**método ID3D11Device::CreatePixelShader**](/windows/desktop/api/d3d11/nf-d3d11-id3d11device-createpixelshader) para crear el objeto de sombreador de píxeles.
 
 
 ```C++
@@ -265,21 +265,21 @@ Llame a la función [**D3DCreateLinker**](/windows/desktop/api/D3Dcompiler/nf-d3
 
 ## <a name="summary"></a>Resumen
 
-Usamos los métodos [**ID3D11FunctionLinkingGraph**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11functionlinkinggraph) para construir los gráficos de sombreador de vértices y píxeles y para especificar la estructura del sombreador mediante programación.
+Hemos usado los [**métodos ID3D11FunctionLinkingGraph**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11functionlinkinggraph) para construir los gráficos de sombreador de vértices y píxeles y para especificar la estructura del sombreador mediante programación.
 
-Estas construcciones de grafos están formadas por secuencias de llamadas a funciones precompiladas que pasan valores entre sí. Los nodos FLG ([**ID3D11LinkingNode**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linkingnode)) representan los nodos del sombreador de entrada y salida y las invocaciones de las funciones de biblioteca precompiladas. El orden en el que se registran los nodos de llamada de función define la secuencia de invocaciones. Debe especificar primero el nodo de entrada ([**ID3D11FunctionLinkingGraph:: SetInputSignature**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-setinputsignature)) y el nodo de salida en último lugar ([**ID3D11FunctionLinkingGraph:: SetOutputSignature**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-setoutputsignature)). Los bordes de FLG definen cómo se pasan los valores de un nodo a otro. Los tipos de datos de los valores pasados deben ser iguales; no hay ninguna conversión de tipo implícita. Las reglas de forma y permutación siguen el comportamiento de HLSL. Los valores solo se pueden pasar hacia delante en esta secuencia.
+Estas construcciones de grafo constan de secuencias de llamadas de función precompiladas que pasan valores entre sí. Los nodos FLG ([**ID3D11LinkingNode**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linkingnode)) representan nodos de sombreador de entrada y salida e invocaciones de funciones de biblioteca precompiladas. El orden en el que se registran los nodos de llamada de función define la secuencia de invocaciones. Debe especificar primero el nodo de entrada ([**ID3D11FunctionLinkingGraph::SetInputSignature**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-setinputsignature)) y el nodo de salida en último lugar ([**ID3D11FunctionLinkingGraph::SetOutputSignature**](/windows/desktop/api/d3d11shader/nf-d3d11shader-id3d11functionlinkinggraph-setoutputsignature)). Los bordes de FLG definen cómo se pasan los valores de un nodo a otro. Los tipos de datos de los valores pasados deben ser los mismos; no hay ninguna conversión implícita de tipos. Las reglas de forma y desdobado siguen el comportamiento hlsl. Los valores solo se pueden pasar hacia delante en esta secuencia.
 
-También usamos métodos [**ID3D11Linker**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linker) para vincular la biblioteca de sombreador con los gráficos del sombreador y generar blobs de sombreador para que los use el tiempo de ejecución de Direct3D.
+También usamos [**métodos ID3D11Linker**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11linker) para vincular la biblioteca de sombreadores con los gráficos de sombreador y generar blobs de sombreador para que los use el entorno de ejecución de Direct3D.
 
-¡Enhorabuena! Ahora está listo para usar la vinculación del sombreador en sus propias aplicaciones.
+¡Enhorabuena! Ya está listo para usar la vinculación de sombreador en sus propias aplicaciones.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar la vinculación del sombreador](using-shader-linking.md)
+[Uso de la vinculación de sombreador](using-shader-linking.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

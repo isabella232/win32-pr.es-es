@@ -1,5 +1,5 @@
 ---
-description: La API de inscripción de certificados admite los atributos siguientes. Puede crear un atributo individual mediante la interfaz correspondiente identificada en cada una de las secciones siguientes.
+description: La API de inscripción de certificados admite los siguientes atributos. Puede crear un atributo individual mediante la interfaz correspondiente identificada en cada una de las secciones siguientes.
 ms.assetid: e14fd472-1974-4ad2-b35a-3ab58ba0d707
 title: Atributos compatibles
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117774418"
 ---
 # <a name="supported-attributes"></a>Atributos compatibles
 
-La API de inscripción de certificados admite los atributos siguientes. Puede crear un atributo individual mediante la interfaz correspondiente identificada en cada una de las secciones siguientes.
+La API de inscripción de certificados admite los siguientes atributos. Puede crear un atributo individual mediante la interfaz correspondiente identificada en cada una de las secciones siguientes.
 
 ## <a name="clientid"></a>ClientId
 
@@ -81,7 +81,7 @@ La [**interfaz IX509AttributeOSVersion**](/windows/desktop/api/CertEnroll/nn-cer
 
 **Se aplica a:** Solicitud PKCS \# 10 o CMC.
 
-**OID:** XCN \_ OID \_ OS \_ VERSION (1.3.6.1.4.1.311.13.2.3)
+**OID:** VERSIÓN DEL SISTEMA OPERATIVO OID de XCN \_ \_ \_ (1.3.6.1.4.1.311.13.2.3)
 
 ## <a name="renewalcertificate"></a>RenewalCertificate
 

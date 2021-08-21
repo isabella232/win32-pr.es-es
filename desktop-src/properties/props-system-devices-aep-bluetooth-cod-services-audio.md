@@ -1,19 +1,19 @@
 ---
-description: Clase Bluetooth de audio de servicio de dispositivo.
+description: Bluetooth clase de audio del servicio de dispositivo.
 ms.assetid: 0c9c1b43-d33f-43cb-a17e-8433ada42395
-title: System. Devices. AEP. Bluetooth. COD. Services. audio
+title: System.Devices.Aep. Bluetooth. Cod.Services.Audio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db1012fbdca05bdf67023536960976dd7ae234f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3bf6d889b0b4acae52a09a6e180a6c5b0ed3c798aff2fcc144ef20c2818698dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103814859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117684010"
 ---
-# <a name="systemdevicesaepbluetoothcodservicesaudio"></a>System. Devices. AEP. Bluetooth. COD. Services. audio
+# <a name="systemdevicesaepbluetoothcodservicesaudio"></a>System.Devices.Aep. Bluetooth. Cod.Services.Audio
 
-Clase Bluetooth de audio de servicio de dispositivo.
+Bluetooth clase de audio del servicio de dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -56,7 +56,7 @@ Componente de escalado en la dirección X.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Componente de escalado en la dirección Y.
+Componente de escalado en la dirección y.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Componente de escalado en la dirección Y.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Componente de escalado en dirección z.
+Componente de escalado en la dirección Z.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Si el método se realiza correctamente, el valor devuelto es D3D \_ OK.
 
 ## <a name="remarks"></a>Comentarios
 
-Este método multiplica a la izquierda la matriz actual con la matriz de escala calculada. La transformación trata sobre el origen local del objeto.
+Este método multiplica a la izquierda la matriz actual con la matriz de escala calculada. La transformación trata sobre el origen local del objeto .
 
 
 ```

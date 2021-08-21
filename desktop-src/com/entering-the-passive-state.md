@@ -13,7 +13,7 @@ ms.locfileid: "117736859"
 ---
 # <a name="entering-the-passive-state"></a>Especificación del estado pasivo
 
-El cierre de objetos fuerza un objeto incrustado o vinculado al estado pasivo. Normalmente se inicia desde la interfaz de usuario de la aplicación de servidor OLE, como cuando el usuario selecciona el comando Cerrar archivo. En este caso, la aplicación de servidor OLE notifica al contenedor, que libera su recuento de referencias en el objeto . Cuando se han liberado todas las referencias al objeto, se puede liberar el objeto . Cuando se han liberado todos los objetos, la aplicación de servidor OLE puede finalizar de forma segura.
+El cierre de objetos fuerza a un objeto incrustado o vinculado al estado pasivo. Normalmente se inicia desde la interfaz de usuario de la aplicación de servidor OLE, como cuando el usuario selecciona el comando Cerrar archivo. En este caso, la aplicación de servidor OLE notifica al contenedor, que libera su recuento de referencias en el objeto . Cuando se han liberado todas las referencias al objeto, el objeto se puede liberar. Cuando se han liberado todos los objetos, la aplicación de servidor OLE puede finalizar de forma segura.
 
 Una aplicación contenedora también puede iniciar el cierre de objetos. Para cerrar un objeto, el contenedor libera su recuento de referencias después de completar una operación de guardado opcional. Puede diseñar contenedores para liberar objetos cuando se desactivan después de una sesión de activación local, lo que permite al usuario hacer clic fuera del objeto sin perder la sesión de edición activa.
 

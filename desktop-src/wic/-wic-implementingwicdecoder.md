@@ -14,13 +14,13 @@ ms.locfileid: "118205715"
 # <a name="implementing-a-wic-enabled-decoder"></a>Implementación de un descodificador WIC-Enabled de datos
 
 
-La implementación de un descodificador Windows Imaging Component (WIC) requiere escribir dos clases. Las interfaces de estas clases se corresponden directamente [](-wic-howwicworks.md) con las responsabilidades del descodificador que se describen en la sección Descodificación de Cómo funciona el [componente Windows creación de imágenes.](-wic-howwicworks.md)
+Implementar un descodificador Windows Imaging Component (WIC) requiere escribir dos clases. Las interfaces de estas clases se corresponden directamente con las responsabilidades del descodificador que se describen en la sección [Descodificación](-wic-howwicworks.md) de Cómo funciona Windows componente de creación [de imágenes.](-wic-howwicworks.md)
 
-Una de las clases proporciona servicios de nivel de contenedor e implementa la [interfaz IWICBitmapDecoder.](-wic-imp-iwicbitmapdecoder.md) Si el formato de imagen admite metadatos de nivel de contenedor, también debe implementar la [interfaz IWICMetadataBlockReader](-wic-imp-iwicmetadatablockreader.md) en esta clase. Se recomienda que admita la interfaz [IWICBitmapCodecProgressNotification](-wic-imp-iwicbitmapcodecprogressnotification-decoder.md) en el descodificador y el codificador para admitir una mejor experiencia del usuario.
+Una de las clases proporciona servicios de nivel de contenedor e implementa la [interfaz IWICBitmapDecoder.](-wic-imp-iwicbitmapdecoder.md) Si el formato de imagen admite metadatos de nivel de contenedor, también debe implementar la [interfaz IWICMetadataBlockReader](-wic-imp-iwicmetadatablockreader.md) en esta clase. Se recomienda que admita la interfaz [IWICBitmapCodecProgressNotification](-wic-imp-iwicbitmapcodecprogressnotification-decoder.md) tanto en el descodificador como en el codificador para admitir una mejor experiencia del usuario.
 
-La otra clase que implementará proporciona servicios de nivel de fotogramas y realiza la decodificación real de los bits de imagen para cada fotograma del contenedor. Esta clase implementa la [interfaz IWICBitmapFrameDecode](-wic-imp-iwicbitmapframedecode.md) y la [interfaz IWICMetadataBlockReader.](-wic-imp-iwicmetadatablockreader.md) Si va a escribir un descodificador para un formato sin formato, también implementará la [interfaz IWICDevelopRaw](-wic-imp-iwicdevelopraw.md) en esta clase. Además de las interfaces necesarias, se recomienda encarecidamente implementar la interfaz [IWICBitmapSourceTransform](-wic-imp-iwicmetadatablockreader.md) en esta clase para habilitar el mejor rendimiento posible para el formato de imagen.
+La otra clase que va a implementar proporciona servicios de nivel de marco y realiza la decodificación real de los bits de imagen para cada fotograma del contenedor. Esta clase implementa la [interfaz IWICBitmapFrameDecode](-wic-imp-iwicbitmapframedecode.md) y la [interfaz IWICMetadataBlockReader.](-wic-imp-iwicmetadatablockreader.md) Si va a escribir un descodificador para un formato sin formato, también implementa la [interfaz IWICDevelopRaw](-wic-imp-iwicdevelopraw.md) en esta clase. Además de las interfaces necesarias, se recomienda encarecidamente implementar la interfaz [IWICBitmapSourceTransform](-wic-imp-iwicmetadatablockreader.md) en esta clase para habilitar el mejor rendimiento posible para el formato de imagen.
 
-Uno de los objetos proporcionados por WIC es [**ImagingFactory.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) Con frecuencia se usa [**la interfaz IWICComponentFactory**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwiccomponentfactory) en este objeto para crear varios componentes. Dado que se usa con frecuencia, debe mantener una referencia a ella como propiedad de miembro tanto en el descodificador como en las clases de codificador.
+Uno de los objetos proporcionados por WIC es [**ImagingFactory.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) Con frecuencia se usa [**la interfaz IWICComponentFactory**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwiccomponentfactory) en este objeto para crear varios componentes. Dado que se usa con frecuencia, debe mantener una referencia a ella como una propiedad de miembro en las clases de descodificador y codificador.
 
 
 ```C++
@@ -45,16 +45,16 @@ hr = m_pImagingFactory->QueryInterface(
 **Conceptual**
 </dt> <dt>
 
-[Funcionamiento del componente Windows imaging](-wic-howwicworks.md)
+[Funcionamiento del componente Windows creación de imágenes](-wic-howwicworks.md)
 </dt> <dt>
 
 [Interfaces de descodificador](-wic-decoderinterfaces.md)
 </dt> <dt>
 
-[Cómo escribir un códec de WIC-Enabled](-wic-howtowriteacodec.md)
+[Cómo escribir un códec WIC-Enabled datos](-wic-howtowriteacodec.md)
 </dt> <dt>
 
-[Windows Información general sobre los componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
+[Windows Información general sobre componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
 [Introducción a los metadatos de WIC](-wic-about-metadata.md)

@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: interfaz INullableJetStruct'
+description: 'Más información sobre: Interfaz INullableJetStruct'
 title: Interfaz INullableJetStruct
 TOCTitle: INullableJetStruct interface
 ms:assetid: T:Microsoft.Isam.Esent.Interop.INullableJetStruct
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ece8f653d7d3d296e2f3e264f7c2e97941c0bc21
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 256204d1214b2486831376c7d038fd0c92f0ef519c752878f785518038bb7b09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118076425"
 ---
 # <a name="inullablejetstruct-interface"></a>Interfaz INullableJetStruct
 
 Interfaz para estructuras jet que aceptan valores NULL (pueden tener valores NULL).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,10 +51,10 @@ Dim instance As INullableJetStruct
 public interface INullableJetStruct
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de INullableJetStruct](./inullablejetstruct-members.md)
+[Miembros INullableJetStruct](./inullablejetstruct-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

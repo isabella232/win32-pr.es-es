@@ -1,7 +1,7 @@
 ---
-description: Calcula, en un punto arbitrario que no está en una malla, un vector de transferencia que asigna Radiance de origen (representado mediante una aproximación de armónico (SH)) para salir de radiance.
+description: Calcula, en un punto arbitrario que no está en una malla, un vector de transferencia que asigna la radiancia de origen (representada por una aproximación de armónica esférica (SH) para salir de la luminosidad.
 ms.assetid: 44790465-440d-4426-b780-ed872fbf8efb
-title: 'ID3DXPRTEngine:: ComputeSurfSamplesDirectSH (método) (D3DX9Mesh. h)'
+title: Método ID3DXPRTEngine::ComputeSamplesDirectSH (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 03adb1729a8a2e771ea681ccbdd180999d3adcbf
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 310914d481aa477c11df0533a7cd448e5b760418aa19d4d0856a349e4a1d822a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362808"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117729646"
 ---
-# <a name="id3dxprtenginecomputesurfsamplesdirectsh-method"></a>ID3DXPRTEngine:: ComputeSurfSamplesDirectSH (método)
+# <a name="id3dxprtenginecomputesurfsamplesdirectsh-method"></a>Método ID3DXPRTEngine::ComputeSampleSamplesDirectSH
 
-Calcula, en un punto arbitrario que no está en una malla, un vector de transferencia que asigna Radiance de origen (representado mediante una aproximación de armónico (SH)) para salir de radiance.
+Calcula, en un punto arbitrario que no está en una malla, un vector de transferencia que asigna la radiancia de origen (representada por una aproximación de armónica esférica (SH) para salir de la luminosidad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,39 +44,39 @@ HRESULT ComputeSurfSamplesDirectSH(
 
 <dl> <dt>
 
-*SHOrder* \[ de\]
+*SHOrder* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la aproximación de SH que se va a usar.
+Orden de la aproximación de SH que se usará.
 
 </dd> <dt>
 
-*NumSamples* \[ de\]
+*NumSamples* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número de ubicaciones de ejemplo.
 
 </dd> <dt>
 
-*pSampleLocs* \[ de\]
+*pSampleLocs* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Posición de cada ejemplo.
+Posición para cada muestra.
 
 </dd> <dt>
 
-*pSampleNorms* \[ de\]
+*pSampleNorms* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Vector normal para cada ubicación de ejemplo.
+Vector normal para cada ubicación de muestra.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Vector normal para cada ubicación de ejemplo.
 
 Tipo: **[ **LPD3DXPRTBUFFER**](id3dxprtbuffer.md)**
 
-Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) de salida que modela la contribución de iluminación directa al punto mediante la aproximación SH.
+Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) de salida que modela la contribución de iluminación directa al punto, mediante la aproximación SH.
 
 </dd> </dl>
 
@@ -93,11 +93,11 @@ Puntero a un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) de salida que modela
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No utilice un búfer de textura al llamar a este método.
+No use un búfer de textura al llamar a este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ No utilice un búfer de textura al llamar a este método.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -120,7 +120,7 @@ No utilice un búfer de textura al llamar a este método.
 [**ID3DXPRTEngine::ComputeDirectLightingSH**](id3dxprtengine--computedirectlightingsh.md)
 </dt> <dt>
 
-[**ID3DXPRTEngine::ComputeSurfSamplesBounce**](id3dxprtengine--computesurfsamplesbounce.md)
+[**ID3DXPRTEngine::ComputeSamplesBounce**](id3dxprtengine--computesurfsamplesbounce.md)
 </dt> </dl>
 
  

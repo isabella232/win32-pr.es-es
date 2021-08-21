@@ -13,7 +13,7 @@ ms.locfileid: "117863689"
 ---
 # <a name="diacritic-sensitivity-in-searches"></a>Confidencialidad diacrítica en las búsquedas
 
-De forma predeterminada, el motor de Windows Search y el catálogo no son sensibles a los signos diacríticos, que son marcas de acento agregadas a las letras para modificar el significado o la pronunciación de una palabra. Sin embargo, Windows Search le permite cambiar esto para el catálogo mediante el Administrador de [catálogos](-search-3x-wds-mngidx-catalog-manager.md) para establecer la confidencialidad diacrítica. Por ejemplo, con la confidencialidad diacrítica establecida en **FALSE,** el catálogo trataría "resume" y "resumé" como si fueran la misma palabra.
+De forma predeterminada, el motor de Windows Search y el catálogo no son sensibles a los signos diacríticos, que son marcas de acento agregadas a las letras para modificar el significado o la pronunciación de una palabra. Sin embargo, Windows Search permite cambiar esto para el catálogo mediante el Administrador de [catálogos](-search-3x-wds-mngidx-catalog-manager.md) para establecer la confidencialidad diacrítica. Por ejemplo, con la confidencialidad diacrítica establecida en **FALSE,** el catálogo trataría "resume" y "resumé" como si fueran la misma palabra.
 
 En el nivel de consulta, los términos de consulta con signos diacríticos en las cláusulas FREETEXT y CONTAINS se pasan al motor y, a continuación, se normalizan (como lo harían en el momento del índice) para la coincidencia. La coincidencia con el catálogo siempre es diacrítica.
 

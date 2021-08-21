@@ -1,11 +1,11 @@
 ---
-title: Serial-Number atributo)
-description: Parte de la especificación X. 500. No se usa en Active Directory.
+title: Serial-Number atributo
+description: Parte de la especificación X.500. No lo usa Active Directory.
 ms.assetid: e5d68744-226b-42ee-a578-18380ddf4668
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Serial-Number
-- atributo serialNumber esquema de AD
+- Serial-Number esquema de AD de atributo
+- SerialNumber attribute AD Schema (Esquema de AD del atributo serialNumber)
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c1bd8435bbc742d3b2135d9f3b024b3196a7e7e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 49e89bb8424106aa9cdf104ce144d4118d8aae96520ddea106ae0a5efca443ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836630"
 ---
-# <a name="serial-number-attribute"></a>Serial-Number atributo)
+# <a name="serial-number-attribute"></a>Serial-Number atributo
 
-Parte de la especificación X. 500. No se usa en Active Directory.
+Parte de la especificación X.500. No lo usa Active Directory.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Serial-Number                        |
-| Nombre para mostrar de LDAP | serialNumber                         |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | serialNumber                         |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 2.5.4.5                              |
-| System-ID-GUID    | bf967a32-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | bf967a32-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -53,20 +53,20 @@ Parte de la especificación X. 500. No se usa en Active Directory.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                          |
+| Id. de vínculo                | \-                                                                          |
 | MAPI-Id                | 0x8130                                                                      |
-| System-Only            | False                                                                       |
-| Tiene un único valor       | False                                                                       |
-| Está indexado             | False                                                                       |
-| En el catálogo global      | False                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                |
+| System-Only            | Falso                                                                       |
+| Es de un solo valor       | Falso                                                                       |
+| Está indexado             | Falso                                                                       |
+| En el catálogo global      | Falso                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                |
 | Range-Lower            | 1                                                                           |
 | Range-Upper            | 64                                                                          |
 | Search-Flags           | 0x00000000                                                                  |
 | System-Flags           | 0x00000010                                                                  |
-| Clases usadas en        | [**Dispositivos**](c-device.md)<br/> [**Server**](c-server.md)<br/> |
+| Clases usadas en        | [**Dispositivo**](c-device.md)<br/> [**Servidor**](c-server.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Parte de la especificación X. 500. No se usa en Active Directory.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                |
 | MAPI-Id                | 0x8130                                                                                                            |
-| System-Only            | False                                                                                                             |
-| Tiene un único valor       | False                                                                                                             |
-| Está indexado             | False                                                                                                             |
-| En el catálogo global      | False                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                      |
+| System-Only            | Falso                                                                                                             |
+| Es de un solo valor       | Falso                                                                                                             |
+| Está indexado             | Falso                                                                                                             |
+| En el catálogo global      | Falso                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | 1                                                                                                                 |
 | Range-Upper            | 64                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Clases usadas en        | [**Dispositivos**](c-device.md)<br/> [**Person**](c-person.md)<br/> [**Server**](c-server.md)<br/> |
+| Clases usadas en        | [**Dispositivo**](c-device.md)<br/> [**Person**](c-person.md)<br/> [**Servidor**](c-server.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Parte de la especificación X. 500. No se usa en Active Directory.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                |
 | MAPI-Id                | 0x8130                                                                                                            |
-| System-Only            | False                                                                                                             |
-| Tiene un único valor       | False                                                                                                             |
-| Está indexado             | False                                                                                                             |
-| En el catálogo global      | False                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                      |
+| System-Only            | Falso                                                                                                             |
+| Es de un solo valor       | Falso                                                                                                             |
+| Está indexado             | Falso                                                                                                             |
+| En el catálogo global      | Falso                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | 1                                                                                                                 |
 | Range-Upper            | 64                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Clases usadas en        | [**Dispositivos**](c-device.md)<br/> [**Person**](c-person.md)<br/> [**Server**](c-server.md)<br/> |
+| Clases usadas en        | [**Dispositivo**](c-device.md)<br/> [**Person**](c-person.md)<br/> [**Servidor**](c-server.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Parte de la especificación X. 500. No se usa en Active Directory.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                |
 | MAPI-Id                | 0x8130                                                                                                            |
-| System-Only            | False                                                                                                             |
-| Tiene un único valor       | False                                                                                                             |
-| Está indexado             | False                                                                                                             |
-| En el catálogo global      | False                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                      |
+| System-Only            | Falso                                                                                                             |
+| Es de un solo valor       | Falso                                                                                                             |
+| Está indexado             | Falso                                                                                                             |
+| En el catálogo global      | Falso                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | 1                                                                                                                 |
 | Range-Upper            | 64                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Clases usadas en        | [**Dispositivos**](c-device.md)<br/> [**Person**](c-person.md)<br/> [**Server**](c-server.md)<br/> |
+| Clases usadas en        | [**Dispositivo**](c-device.md)<br/> [**Person**](c-person.md)<br/> [**Servidor**](c-server.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Parte de la especificación X. 500. No se usa en Active Directory.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                |
 | MAPI-Id                | 0x8130                                                                                                            |
-| System-Only            | False                                                                                                             |
-| Tiene un único valor       | False                                                                                                             |
-| Está indexado             | False                                                                                                             |
-| En el catálogo global      | False                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                      |
+| System-Only            | Falso                                                                                                             |
+| Es de un solo valor       | Falso                                                                                                             |
+| Está indexado             | Falso                                                                                                             |
+| En el catálogo global      | Falso                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | 1                                                                                                                 |
 | Range-Upper            | 64                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Clases usadas en        | [**Dispositivos**](c-device.md)<br/> [**Person**](c-person.md)<br/> [**Server**](c-server.md)<br/> |
+| Clases usadas en        | [**Dispositivo**](c-device.md)<br/> [**Person**](c-person.md)<br/> [**Servidor**](c-server.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Parte de la especificación X. 500. No se usa en Active Directory.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                |
 | MAPI-Id                | 0x8130                                                                                                            |
-| System-Only            | False                                                                                                             |
-| Tiene un único valor       | False                                                                                                             |
-| Está indexado             | False                                                                                                             |
-| En el catálogo global      | False                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                      |
+| System-Only            | Falso                                                                                                             |
+| Es de un solo valor       | Falso                                                                                                             |
+| Está indexado             | Falso                                                                                                             |
+| En el catálogo global      | Falso                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | 1                                                                                                                 |
 | Range-Upper            | 64                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Clases usadas en        | [**Dispositivos**](c-device.md)<br/> [**Person**](c-person.md)<br/> [**Servidor**](c-server.md)<br/> |
+| Clases usadas en        | [**Dispositivo**](c-device.md)<br/> [**Person**](c-person.md)<br/> [**Servidor**](c-server.md)<br/> |
 
 
 

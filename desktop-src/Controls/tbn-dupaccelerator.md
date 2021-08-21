@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TBN_DUPACCELERATOR (commctrl. h)
-description: Determina si se puede usar una tecla de aceleración en dos o más barras de herramientas activas. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: TBN_DUPACCELERATOR de notificación (Commctrl.h)
+description: Determina si se puede usar una tecla de aceleración en dos o más barras de herramientas activas. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 98068d1a-1460-4be3-8575-9294b82ce903
 keywords:
-- TBN_DUPACCELERATOR controles de código de notificación de Windows
+- TBN_DUPACCELERATOR de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e530fa2101f8145148b7ede7d74f53a1828fa58
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a0ff0059a6071db79cab91fcf903a1e68f3550c766b3d16cd3571c3a785e7368
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829339"
 ---
-# <a name="tbn_dupaccelerator-notification-code"></a>Código de notificación de DUPACCELERATOR de TBN \_
+# <a name="tbn_dupaccelerator-notification-code"></a>Código de notificación \_ DE TBN DUPACCELERATOR
 
-Determina si se puede usar una tecla de aceleración en dos o más barras de herramientas activas. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Determina si se puede usar una tecla de aceleración en dos o más barras de herramientas activas. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -47,11 +47,11 @@ Puntero a una estructura que proporciona un acelerador y que recibe un valor que
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto; de lo contrario, **es false**.
+Devuelve **TRUE si** se realiza correctamente; en caso **contrario, FALSE.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La aplicación debe declarar la estructura **NMTBDUPACCELERATOR** como se indica a continuación:
+La aplicación debe declarar la **estructura NMTBDUPACCELERATOR** como se muestra a continuación:
 
 ``` syntax
 typedef struct tagNMTBDUPACCELERATOR
@@ -66,11 +66,11 @@ typedef struct tagNMTBDUPACCELERATOR
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Clase abstracta para las subclases que representan una colección de \_ objetos ManagedSystemElement de CIM. Estas colecciones permiten agrupar los elementos del sistema administrados con fines de identificación y simplificar la Asociación de configuraciones y configuraciones.
+description: Clase abstracta para subclases que representan una colección de objetos \_ ManagedSystemElement de CIM. Estas colecciones permiten agrupar elementos del sistema administrados con fines de identificación y simplificar la asociación de configuraciones y configuraciones.
 ms.assetid: f47bf1d6-6d89-4d9f-82d1-99a7343481bc
-title: CIM_CollectionOfMSEs (clase, administración de Hyper-V)
+title: CIM_CollectionOfMSEs (administración de Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7e467e775c78364718f25cc732d6689d9fb2b9da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8598b8208b9291ec9dabc405f1b1c8d18513ff111e22ec8caa6c8bf32fb946f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117813328"
 ---
-# <a name="cim_collectionofmses-class-hyper-v-management"></a>CIM_CollectionOfMSEs (clase, administración de Hyper-V)
+# <a name="cim_collectionofmses-class-hyper-v-management"></a>CIM_CollectionOfMSEs (administración de Hyper-V)
 
-Clase abstracta para las subclases que representan una colección de [**objetos \_ ManagedSystemElement de CIM**](cim-managedsystemelement.md) . Estas colecciones permiten agrupar los elementos del sistema administrados con fines de identificación y simplificar la Asociación de configuraciones y configuraciones.
+Clase abstracta para subclases que representan una colección de [**objetos \_ ManagedSystemElement de CIM.**](cim-managedsystemelement.md) Estas colecciones permiten agrupar elementos del sistema administrados con fines de identificación y simplificar la asociación de configuraciones y configuraciones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,17 +37,17 @@ class CIM_CollectionOfMSEs : CIM_Collection
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ CollectionOfMSEs** tiene estos tipos de miembros:
+La **clase \_ CollectionOfMSEs** de CIM tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ CollectionOfMSEs** tiene estas propiedades.
+La **clase \_ CollectionOfMSEs** de CIM tiene estas propiedades.
 
 <dl> <dt>
 
-**Recopilación**
+**CollectionID**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -59,7 +59,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-La identificación del objeto de colección. Cuando se subclasen, la propiedad **CollectionID** se puede invalidar como una propiedad de clave.
+Identificación del objeto de colección. Cuando se subclasifica, la **propiedad CollectionID** se puede invalidar como una propiedad de clave.
 
 </dd> </dl>
 
@@ -67,12 +67,12 @@ La identificación del objeto de colección. Cuando se subclasen, la propiedad *
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -81,7 +81,7 @@ La identificación del objeto de colección. Cuando se subclasen, la propiedad *
 
 <dl> <dt>
 
-[**\_Colección CIM**](cim-collection.md)
+[**Colección \_ CIM**](cim-collection.md)
 </dt> </dl>
 
  

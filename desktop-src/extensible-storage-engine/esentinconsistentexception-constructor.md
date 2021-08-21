@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentInconsistentException'
-title: Constructor de EsentInconsistentException
+description: 'Más información sobre: Constructor EsentInconsistentException'
+title: Constructor EsentInconsistentException
 TOCTitle: 'EsentInconsistentException constructor '
 ms:assetid: Overload:Microsoft.Isam.Esent.Interop.EsentInconsistentException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentinconsistentexception.esentinconsistentexception(v=EXCHG.10)
@@ -14,14 +14,14 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 6e1aef80b1ff29e788f23db20b05a01baecbcf51
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2e44d8bed66053c036b8e72fdcdb3f1d8c86d0c1f8445ba5f738029f63877002
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104566713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118081228"
 ---
-# <a name="esentinconsistentexception-constructor"></a>Constructor de EsentInconsistentException
+# <a name="esentinconsistentexception-constructor"></a>Constructor EsentInconsistentException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
@@ -39,12 +39,12 @@ Incluir miembros heredados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn274374(v=exchg.10).md">EsentInconsistentException (SerializationInfo, StreamingContext)</a></td>
-<td>Inicializa una nueva instancia de la clase EsentInconsistentException. Este constructor se utiliza para deserializar una excepción serializada.</td>
+<td><a href="dn274374(v=exchg.10).md">EsentInconsistentException(SerializationInfo, StreamingContext)</a></td>
+<td>Inicializa una nueva instancia de la clase EsentInconsistentException. Este constructor se usa para deserializar una excepción serializada.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn350429(v=exchg.10).md">EsentInconsistentException (cadena, JET_err)</a></td>
+<td><a href="dn350429(v=exchg.10).md">EsentInconsistentException(String, JET_err)</a></td>
 <td>Inicializa una nueva instancia de la clase EsentInconsistentException.</td>
 </tr>
 </tbody>
@@ -61,4 +61,4 @@ Superior
 
 [Miembros de EsentInconsistentException](./esentinconsistentexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

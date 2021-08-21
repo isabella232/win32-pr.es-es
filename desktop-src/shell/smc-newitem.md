@@ -1,6 +1,6 @@
 ---
-description: Le notifica un nuevo elemento, tal y como se especifica en la estructura SMDATA adjunta.
-title: Mensaje de SMC_NEWITEM (shobjidl. h)
+description: Notifica un nuevo elemento, tal y como especifica la estructura SMDATA que lo acompaña.
+title: SMC_NEWITEM mensaje (Shobjidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: e0ccf2db-cb46-469f-bc08-4b5100a410ba
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: ebd8f1b6454a2fb592374b860811ebfc7a14f09d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e8e3d4401541c988b7ad5ac77165c041ec208ad580c05a526cb807df976c3378
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118046996"
 ---
-# <a name="smc_newitem-message"></a>Mensaje de SMC \_ NEWITEM
+# <a name="smc_newitem-message"></a>Mensaje \_ NEWITEM de SMC
 
-Le notifica un nuevo elemento, tal y como se especifica en la estructura [**SMDATA**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-smdata) adjunta.
+Notifica un nuevo elemento, tal y como especifica la estructura [**SMDATA**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-smdata) que lo acompaña.
 
 
 ```C++
@@ -38,11 +38,11 @@ Este mensaje no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devolver S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
+El método [**IShellMenuCallback::CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,8 +52,8 @@ El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_c
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Shobjidl. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shobjidl. idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

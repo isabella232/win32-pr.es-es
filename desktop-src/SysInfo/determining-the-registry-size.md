@@ -15,7 +15,7 @@ ms.locfileid: "117764516"
 
 En Windows 2000, es habitual que una utilidad de instalación compruebe el tamaño actual y máximo del registro para determinar si hay suficiente espacio disponible para los nuevos datos que va a agregar. En este ejemplo se muestra cómo hacerlo mediante programación mediante el contador de rendimiento "% de cuota del Registro en uso" dentro del objeto System.
 
-En el ejemplo siguiente se usa el asistente de datos de rendimiento (PDH) para obtener el valor del contador; debe estar vinculado a Pdh.lib. PDH es un conjunto de API de alto nivel que se usa para obtener datos de rendimiento.
+En el ejemplo siguiente se usa el asistente de datos de rendimiento (PDH) para obtener el valor del contador; debe vincularse con Pdh.lib. PDH es un conjunto de API de alto nivel que se usa para obtener datos de rendimiento.
 
 > [!Note]  
 > No es necesario implementar esta comprobación de tamaño del Registro en Windows Server 2003 o Windows XP porque no tienen un límite de cuota del Registro.

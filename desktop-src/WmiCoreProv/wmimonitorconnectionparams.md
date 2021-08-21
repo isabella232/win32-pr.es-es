@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: a88b80773ec60b161df51fc759cc932d5c53c931
-ms.sourcegitcommit: cfcac5a083b72fd7f2a5188166d470cc0e95d02d
+ms.openlocfilehash: 4a0ec181cebbb832eed64cd915e8a4b7bfb1f1cb214055c187c5bb4a2355c07f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "109626697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117926723"
 ---
 # <a name="wmimonitorconnectionparams-class"></a>Clase WmiMonitorConnectionParams
 
@@ -98,7 +98,7 @@ Tipo de conexión de tecnología de salida de vídeo. Los valores válidos se do
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
@@ -108,7 +108,7 @@ Tipo de conexión de tecnología de salida de vídeo. Los valores válidos se do
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

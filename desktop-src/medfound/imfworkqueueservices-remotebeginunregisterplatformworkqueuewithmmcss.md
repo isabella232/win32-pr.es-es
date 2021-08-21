@@ -25,7 +25,7 @@ HRESULT RemoteBeginUnregisterPlatformWorkQueueWithMMCSS(
 
 ## <a name="remarks"></a>Comentarios
 
-Las aplicaciones no pueden llamar directamente a este método y los objetos no implementan este método. El método no aparece en la tabla virtual de la interfaz . Si se llama a [**BeginUnregisterPlatformWorkQueueWithMMCSS**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginunregisterplatformworkqueuewithmmcss) a través de los límites del proceso, el archivo DLL de proxy o código auxiliar de Media Foundation traduce la llamada en una llamada al método remoto y, a continuación, la vuelve a traducir.
+Las aplicaciones no pueden llamar directamente a este método y los objetos no implementan este método. El método no aparece en la tabla virtual de la interfaz . Si se llama a [**BeginUnregisterPlatformWorkQueueWithMMCSS**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginunregisterplatformworkqueuewithmmcss) a través de los límites del proceso, el archivo DLL de proxy o código auxiliar de Media Foundation convierte la llamada en una llamada al método remoto y, a continuación, la convierte de nuevo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -40,7 +40,7 @@ Las aplicaciones no pueden llamar directamente a este método y los objetos no i
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

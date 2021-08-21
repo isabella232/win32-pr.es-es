@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TBM_GETBUDDY (commctrl. h)
-description: Recupera el identificador de una ventana relacionada del control TrackBar en una ubicación determinada. La ubicación especificada es relativa a la orientación del control (horizontal o vertical).
+title: TBM_GETBUDDY mensaje (Commctrl.h)
+description: Recupera el identificador en una ventana de control de barra de seguimiento en una ubicación determinada. La ubicación especificada es relativa a la orientación del control (horizontal o vertical).
 ms.assetid: 69e4e467-150d-4505-b1c2-2ed9dd83f1a6
 keywords:
-- TBM_GETBUDDY controles de mensajes de Windows
+- TBM_GETBUDDY controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4c076f001a1dff62541c3aa32bc12744b30c012
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6e03053981ed16b97d68d5b2f0c77db64062d64fd2df7b5a347e4757736d4844
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829619"
 ---
-# <a name="tbm_getbuddy-message"></a>TBM \_ GETBUDDY
+# <a name="tbm_getbuddy-message"></a>Mensaje \_ GETBUDDY de TBM
 
-Recupera el identificador de una ventana relacionada del control TrackBar en una ubicación determinada. La ubicación especificada es relativa a la orientación del control (horizontal o vertical).
+Recupera el identificador en una ventana de control de barra de seguimiento en una ubicación determinada. La ubicación especificada es relativa a la orientación del control (horizontal o vertical).
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,14 +32,14 @@ Recupera el identificador de una ventana relacionada del control TrackBar en una
 *wParam* 
 </dt> <dd>
 
-Valor que indica el identificador de ventana relacionado que se va a recuperar, por ubicación relativa. Este valor puede ser uno de los siguientes:
+Valor que indica qué identificador de ventana de amón se recuperará, por ubicación relativa. Este valor puede ser uno de los siguientes:
 
 
 
-| Value                                                                                                                                    | Significado                                                                                                                                                                                                                          |
+| Valor                                                                                                                                    | Significado                                                                                                                                                                                                                          |
 |------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="TRUE"></span><span id="true"></span><dl> <dt>TRUE * * * *</dt> </dl>    | Recupera el identificador del Buddy situado a la izquierda de la barra de control. Si el control TrackBar usa el [**estilo \_ vertical de TBS**](trackbar-control-styles.md) , el mensaje recuperará el amigo sobre la barra de control.<br/>  |
-| <span id="FALSE"></span><span id="false"></span><dl> <dt>FALSE * * * *</dt> </dl> | Recupera el identificador del relacionado a la derecha de la barra de control. Si el control TrackBar usa el [**estilo \_ vertical de TBS**](trackbar-control-styles.md) , el mensaje recuperará el amigo debajo de la barra de control.<br/> |
+| <span id="TRUE"></span><span id="true"></span><dl> <dt>TRUE*"</dt> </dl>    | Recupera el identificador del compañero a la izquierda de la barra de seguimiento. Si el control trackbar usa el [**estilo \_ VERT de TBS,**](trackbar-control-styles.md) el mensaje recuperará el compañero encima de la barra de seguimiento.<br/>  |
+| <span id="FALSE"></span><span id="false"></span><dl> <dt>FALSE**</dt> </dl> | Recupera el identificador del compañero a la derecha de la barra de seguimiento. Si el control trackbar usa el [**estilo \_ VERT de TBS,**](trackbar-control-styles.md) el mensaje recuperará el compañero debajo de la barra de seguimiento.<br/> |
 
 
 
@@ -52,17 +52,17 @@ Valor que indica el identificador de ventana relacionado que se va a recuperar, 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador de la ventana relacionada en la ubicación especificada por *wParam*, o **null** si no existe ninguna ventana relacionada en esa ubicación.
+Devuelve el identificador a la ventana del compañero en la ubicación especificada por *wParam* o **NULL** si no existe ninguna ventana de amigos en esa ubicación.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

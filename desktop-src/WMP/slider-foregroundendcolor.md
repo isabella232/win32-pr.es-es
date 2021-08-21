@@ -1,9 +1,9 @@
 ---
-title: SLIDEr. foregroundEndColor
-description: El atributo foregroundEndColor especifica o recupera el color final del primer plano del control deslizante.
+title: SLIDER.foregroundEndColor
+description: El atributo foregroundEndColor especifica o recupera el color final de primer plano del control deslizante.
 ms.assetid: a13dbd62-dda3-40e9-9700-1e53c9fc26aa
 keywords:
-- CONTROL SLIDEr. foregroundEndColor Windows Media Player
+- SLIDER.foregroundEndColor Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c2c12c786c1440652319c8527a51d0aecdcd2b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 68e3db4666c35e77e8d15a5fd9be045b097070a41832d6faa50658d7c4c99441
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117933635"
 ---
-# <a name="sliderforegroundendcolor"></a>SLIDEr. foregroundEndColor
+# <a name="sliderforegroundendcolor"></a>SLIDER.foregroundEndColor
 
-El atributo **foregroundEndColor** especifica o recupera el color final del primer plano del control deslizante.
+El **atributo foregroundEndColor** especifica o recupera el color final de primer plano del control deslizante.
 
 ``` syntax
         elementID.foregroundEndColor
@@ -29,19 +29,19 @@ El atributo **foregroundEndColor** especifica o recupera el color final del prim
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene cualquier valor de color de Microsoft Internet Explorer. No tiene valor predeterminado.
+Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer microsoft. No tiene valor predeterminado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**ForegroundEndColor** se usa junto con **foregroundColor**. El efecto creado es una atenuación del degradado desde el **foregroundColor** al **foregroundEndColor**.
+**ForegroundEndColor** se usa junto con **foregroundColor.** El efecto creado es un degradado de **foregroundColor** a **foregroundEndColor.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -52,10 +52,10 @@ Este atributo es una **cadena** de lectura/escritura que contiene cualquier valo
 [**Referencia de color**](color-reference.md)
 </dt> <dt>
 
-[**Elemento SLIDEr**](slider-element.md)
+[**Elemento SLIDER**](slider-element.md)
 </dt> <dt>
 
-[**SLIDEr. foregroundColor**](slider-foregroundcolor.md)
+[**SLIDER.foregroundColor**](slider-foregroundcolor.md)
 </dt> </dl>
 
  

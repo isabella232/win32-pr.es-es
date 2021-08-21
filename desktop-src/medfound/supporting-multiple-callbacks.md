@@ -1,19 +1,19 @@
 ---
-description: Admitir varias devoluciones de llamada
+description: Compatibilidad con varias devoluciones de llamada
 ms.assetid: d57544cc-f16c-4415-9411-d06d6c16cb2f
-title: Admitir varias devoluciones de llamada
+title: Compatibilidad con varias devoluciones de llamada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b77a15899488e44ea3c1499b11af65894d47483c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 614d92a50101a5ed4e7c281dc76a3edce930fa06d68e11484dc89a3cad83de05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103812596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118057710"
 ---
-# <a name="supporting-multiple-callbacks"></a>Admitir varias devoluciones de llamada
+# <a name="supporting-multiple-callbacks"></a>Compatibilidad con varias devoluciones de llamada
 
-Si llama a más de un método asincrónico, cada uno de ellos requiere una implementación independiente de [**IMFAsyncCallback:: Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke). Sin embargo, es posible que desee implementar las devoluciones de llamada en una sola clase de C++. La clase solo puede tener un método de **invocación** , por lo que una solución consiste en proporcionar una clase auxiliar que delegue las llamadas de **invocación** a otro método en una clase contenedora.
+Si llama a más de un método asincrónico, cada uno de ellos requiere una implementación independiente de [**IMFAsyncCallback::Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke). Sin embargo, es posible que quiera implementar las devoluciones de llamada dentro de una sola clase de C++. La clase solo puede tener un **método Invoke,** por lo que una solución consiste en proporcionar una clase auxiliar que delegue las llamadas **Invoke** a otro método en una clase contenedora.
 
 En el código siguiente se muestra una plantilla de clase denominada `AsyncCallback` , que muestra este enfoque.
 
@@ -88,9 +88,9 @@ public:
 
 
 
-El parámetro de plantilla es el nombre de la clase contenedora. El `AsyncCallback` constructor tiene dos parámetros: un puntero a la clase de contenedor y la dirección de un método de devolución de llamada en la clase contenedora. La clase contenedora puede tener varias instancias de la `AsyncCallback` clase como variables miembro, una para cada método asincrónico. Cuando la clase de contenedor llama a un método asincrónico, se usa la interfaz [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) del `AsyncCallback` objeto adecuado. Cuando `AsyncCallback` se llama al método [**Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke) del objeto, la llamada se delega al método correcto en la clase contenedora.
+El parámetro de plantilla es el nombre de la clase contenedora. El constructor tiene dos parámetros: un puntero a la clase contenedora y la dirección de un método de devolución de `AsyncCallback` llamada en la clase contenedora. La clase contenedora puede tener varias instancias de la clase `AsyncCallback` como variables miembro, una para cada método asincrónico. Cuando la clase contenedora llama a un método asincrónico, usa la interfaz [**DEVOLUCIÓNAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) del objeto `AsyncCallback` adecuado. Cuando se `AsyncCallback` llama al método [**Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke) del objeto, la llamada se delega al método correcto en la clase contenedora.
 
-El `AsyncCallback` objeto también delega las llamadas **AddRef** y **Release** a la clase de contenedor, por lo que la clase contenedora administra la duración del `AsyncCallback` objeto. Esto garantiza que el `AsyncCallback` objeto no se eliminará hasta que se elimine el propio objeto contenedor.
+El `AsyncCallback` objeto también delega las llamadas **AddRef** y **Release** a la clase contenedora, por lo que la clase contenedora administra la duración del `AsyncCallback` objeto. Esto garantiza que el objeto no se eliminará hasta que se elimine `AsyncCallback` el propio objeto contenedor.
 
 En el código siguiente se muestra cómo usar esta plantilla:
 
@@ -125,13 +125,13 @@ private:
 
 
 
-En este ejemplo, la clase de contenedor se denomina `CMyObject` . La variable miembro *m \_ CB* es un `AsyncCallback` objeto. En el `CMyObject` constructor, la variable miembro *m \_ CB* se inicializa con la dirección del `CMyObject::OnInvoke` método.
+En este ejemplo, la clase contenedora se denomina `CMyObject` . La *variable miembro m \_ CB* es un `AsyncCallback` objeto . En el `CMyObject` constructor , la variable miembro m *\_ CB* se inicializa con la dirección del `CMyObject::OnInvoke` método .
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Métodos de devolución de llamada asincrónica](asynchronous-callback-methods.md)
+[Métodos de devolución de llamada asincrónicos](asynchronous-callback-methods.md)
 </dt> </dl>
 
  

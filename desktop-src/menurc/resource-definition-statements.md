@@ -47,7 +47,7 @@ En las tablas siguientes se describen las instrucciones de definición de recurs
 | **PLUGPLAY**                                  | Obsoleto.                                                                                                                                                                       |
 | [**RCDATA**](rcdata-resource.md)             | Define los recursos de datos. Los recursos de datos permiten incluir datos binarios en el archivo ejecutable.                                                                                      |
 | [**STRINGTABLE**](stringtable-resource.md)   | Define los recursos de cadena. Los recursos de cadena son cadenas Unicode o ASCII que se pueden cargar desde el archivo ejecutable.                                                            |
-| **TEXTINCLUDE**                               | Un recurso especial interpretado por Visual C++. Para obtener más información, vea [TN035](/cpp/mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp?view=vs-2019).                                        |
+| **TEXTINCLUDE**                               | Un recurso especial interpretado por Visual C++. Para obtener más información, [vea TN035](/cpp/mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp?view=vs-2019).                                        |
 | **TYPELIB**                                   | Un recurso especial que se usa con las opciones del vinculador [/TLBID](/cpp/build/reference/tlbid-specify-resource-id-for-typelib?view=vs-2019) y [/TLBOUT.](/cpp/build/reference/tlbout-name-dot-tlb-file?view=vs-2019) |
 | [**Definido por el usuario**](user-defined-resource.md) | Define un recurso que contiene datos específicos de la aplicación.                                                                                                                     |
 | [**VERSIONINFO**](versioninfo-resource.md)   | Define un recurso de información de versión. Contiene información como el número de versión, el sistema operativo previsto, y así sucesivamente.                                                  |
@@ -57,7 +57,7 @@ En las tablas siguientes se describen las instrucciones de definición de recurs
 
  
 
-Para obtener más información sobre los recursos de MFC predefinidos, vea [TN023](/cpp/mfc/tn023-standard-mfc-resources?view=vs-2019) y [TN024](/cpp/mfc/tn024-mfc-defined-messages-and-resources?view=vs-2019).
+Para obtener más información sobre los recursos de MFC predefinidos, vea [TN023](/cpp/mfc/tn023-standard-mfc-resources?view=vs-2019) y [TN024.](/cpp/mfc/tn024-mfc-defined-messages-and-resources?view=vs-2019)
 
 ## <a name="controls"></a>Controles
 

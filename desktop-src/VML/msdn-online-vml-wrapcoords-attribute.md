@@ -4,21 +4,21 @@ description: Atributo WrapCoords de VML
 ms.assetid: 14a67ca9-3d36-4523-bdb1-5b7c36cd3d39
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61a4dc57b37cd84563c8ba3132244dff6daf6b23
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bae4d7e3c0424de58e64fb68b27b863de2b1d0bf64e23ac653f7121c891bd47d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117938901"
 ---
 # <a name="vml-wrapcoords-attribute"></a>Atributo WrapCoords de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Define el polígono delimitador que rodea una forma. Lectura/escritura **Cadena**.
 
@@ -28,17 +28,17 @@ Define el polígono delimitador que rodea una forma. Lectura/escritura **Cadena*
 
 **Sintaxis de etiquetas**
 
-<v: *Element* o:wrapcoords = " *expresión* " >
+<v: *element* o:wrapcoords=" *expression* ">
 
 **Comentarios:**
 
-Describe una lista delimitada por comas de x y ycoordinates; es decir, "x1, Y1, x2, Y2, x3, Y3,..." Se usa cuando el texto se ajusta estrechamente alrededor de una forma. El valor predeterminado es **null** (una cadena vacía) hasta que el atributo **MSO-Wrap-Mode** esté establecido en **tight** o **a través** de.
+Describe una lista delimitada por comas de x e ycoordinates; es decir, "x1,y1,x2,y2,x3,y3,..." Esto se usa cuando el texto se ajusta estrechamente alrededor de una forma. El valor predeterminado **es NULL** (una cadena vacía) hasta que el atributo **MSO-Wrap-Mode** se establece en **tight** o a **través de**.
 
-*Microsoft Office atributo Extensions*
+*Microsoft Office Atributo Extensions*
 
 **Ejemplo**
 
-La forma tiene un cuadro de límite de ajuste de texto que es 5 unidades mayor que la ruta de acceso.
+La forma tiene un cuadro de límite de ajuste de texto que es 5 unidades más grande que la ruta de acceso.
 
 
 ```HTML
@@ -52,6 +52,6 @@ La forma tiene un cuadro de límite de ajuste de texto que es 5 unidades mayor q
 
 
 
- 
+ 
 
- 
+ 

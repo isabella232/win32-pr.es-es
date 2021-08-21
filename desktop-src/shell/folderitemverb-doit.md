@@ -1,7 +1,7 @@
 ---
-description: Ejecuta un verbo en el carpeta asociado con el verbo.
+description: Ejecuta un verbo en el elemento FolderItem asociado al verbo.
 ms.assetid: 92400fe9-e4d1-4bc9-b4ee-d2adaf38154f
-title: Método FolderItemVerb. DoIt (Shldisp. h)
+title: Método FolderItemVerb.DoIt (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 0703b9403dfe9ff6600de68aaa710cd5a55c225a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a30c29e30ca3cfb63cd2080476d84e21bee7495c8e2f7fa99efadfaeeb8038d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118050027"
 ---
-# <a name="folderitemverbdoit-method"></a>FolderItemVerb. DoIt, método
+# <a name="folderitemverbdoit-method"></a>Método FolderItemVerb.DoIt
 
-Ejecuta un verbo en el [**carpeta**](folderitem.md) asociado con el verbo.
+Ejecuta un verbo en el [**elemento FolderItem**](folderitem.md) asociado al verbo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,9 +43,9 @@ Este método no devuelve ningún valor.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **doit** para ejecutar el primer verbo en la colección de verbos a la que responde la carpeta de programa del usuario. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa DoIt** para ejecutar el primer verbo de la colección de verbos a los que responde la carpeta Program del usuario. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -73,7 +73,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -138,13 +138,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

@@ -23,7 +23,7 @@ Windows sistemas operativos 2000 y posteriores permiten a los desarrolladores pr
 -   [**RasCustomEntryDlg**](/windows/desktop/api/Rasdlg/nc-rasdlg-rascustomentrydlgfn)
 -   [**RasCustomDeleteEntryNotify**](/windows/desktop/api/Ras/nc-ras-rascustomdeleteentrynotifyfn)
 
-El archivo DLL de marcado personalizado debe exportar todos estos puntos de entrada y debe implementar los puntos de entrada como funciones Unicode. Para obtener más información sobre estas funciones, consulte la página de referencia de cada función en la referencia del servicio de acceso remoto del SDK de Windows.
+El archivo DLL de marcado personalizado debe exportar todos estos puntos de entrada y debe implementar los puntos de entrada como funciones Unicode. Para más información sobre estas funciones, consulte la página de referencia de cada función en la referencia del servicio de acceso remoto Windows SDK.
 
 Para que una conexión RAS use el marcador personalizado, la entrada de la libreta de teléfonos de la conexión debe contener la ruta de acceso al archivo DLL de marcado personalizado. Use las funciones [**rasGetEntryProperties**](/windows/desktop/api/Ras/nf-ras-rasgetentrypropertiesa) y [**RasSetEntryProperties**](/windows/desktop/api/Ras/nf-ras-rassetentrypropertiesa) de la API de RAS para establecer esta ruta de acceso en el **miembro szCustomDialDll** de la estructura [**RASENTRY**](/previous-versions/windows/desktop/legacy/aa377274(v=vs.85)) de la entrada del libro de teléfonos.
 
@@ -51,7 +51,7 @@ Dado **que CustomDLL** es de tipo **REG MULTI \_ \_ SZ,** puede contener rutas d
 
 De forma predeterminada, este valor del Registro solo lo puede escribir un usuario con privilegios de administrador o sistema. Por motivos de seguridad, no cambie los permisos de esta clave del Registro.
 
-## <a name="using-custom-dialers-at-system-logon"></a>Uso de marcador personalizados en el inicio de sesión del sistema
+## <a name="using-custom-dialers-at-system-logon"></a>Uso de marcador personalizados durante el inicio de sesión del sistema
 
 Windows sistemas operativos 2000 y posteriores permiten a un usuario establecer una conexión RAS en el momento de iniciar sesión. Para ello, el usuario comprueba el inicio **de sesión** mediante redes de acceso telefónico en el cuadro de diálogo **Información de** inicio de sesión. Después de que el usuario haga clic en el botón Aceptar, el sistema mostrará las conexiones disponibles.
 
@@ -59,7 +59,7 @@ Windows sistemas operativos 2000 y posteriores permiten a un usuario establecer 
 
 En la mayoría de los casos, un marcador personalizado funciona con los privilegios de seguridad del usuario que lo invoca. Sin embargo, si el marcador personalizado se invoca en el inicio de sesión, funciona con privilegios del sistema. Por lo tanto, diseñe el marcador personalizado para que no se pueda usar para infringir la seguridad del sistema. Por ejemplo, el marcador no debe presentar una interfaz de usuario que permita al usuario escribir acceso al sistema de archivos del equipo. Las interfaces de usuario que proporcionan este  acceso incluyen el cuadro de diálogo **Buscar archivo,** el cuadro de diálogo común Abrir archivo y Windows **Ayuda .**
 
-## <a name="custom-dialer-user-interface-must-support-idcancel"></a>El marcador personalizado Interfaz de usuario debe admitir IDCANCEL
+## <a name="custom-dialer-user-interface-must-support-idcancel"></a>Custom Dialer Interfaz de usuario debe admitir IDCANCEL
 
 Si el marcador personalizado muestra una interfaz de usuario, la interfaz de usuario debe admitir mensajes WM COMMAND donde \_ LOWORD(*wParam*) es igual a IDCANCEL.
 

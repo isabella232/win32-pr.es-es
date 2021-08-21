@@ -1,23 +1,23 @@
 ---
-title: Creación de los SPN para un servicio con un SCP
-description: En el ejemplo de código siguiente se compone un SPN para un servicio que usa un punto de conexión de servicio (SCP).
+title: Crear los SPN para un servicio con un SCP
+description: En el ejemplo de código siguiente se crea un SPN para un servicio que usa un punto de conexión de servicio (SCP).
 ms.assetid: cbaa11ba-d32b-46cf-86a4-9050bb1be3a6
 ms.tgt_platform: multiple
 keywords:
-- Creación de los SPN para un servicio con un AD de SCP
-- Nombre de entidad de seguridad de servicio AD, creación de SPN para un servicio con un SCP
+- Crear los SPN para un servicio con un SCP AD
+- Nombre de entidad de seguridad de servicio AD , composición de SPN para un servicio con un SCP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0a9c44bc603372af35e874acfea4c1e12a2433d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9e48175bc5fa3d686aab104f8e025d66d7900162235292ed5b853c3284285cd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118022225"
 ---
-# <a name="composing-the-spns-for-a-service-with-an-scp"></a>Creación de los SPN para un servicio con un SCP
+# <a name="composing-the-spns-for-a-service-with-an-scp"></a>Crear los SPN para un servicio con un SCP
 
-En el ejemplo de código siguiente se compone un SPN para un servicio que usa un punto de conexión de servicio (SCP). El SPN devuelto tiene el formato siguiente.
+En el ejemplo de código siguiente se crea un SPN para un servicio que usa un punto de conexión de servicio (SCP). El SPN devuelto tiene el formato siguiente.
 
 
 ```C++
@@ -26,7 +26,7 @@ En el ejemplo de código siguiente se compone un SPN para un servicio que usa un
 
 
 
-" &lt; clase &gt; de servicio" y " &lt; nombre de servicio &gt; " se corresponden con los parámetros *pszDNofSCP* y *pszServiceClass* . " &lt; host &gt; " tiene como valor predeterminado el nombre DNS del equipo local.
+" &lt; service class " and " service name " corresponden a los parámetros &gt; &lt; &gt; *pszDNofSCP* y *pszServiceClass.* " &lt; host " tiene como valor predeterminado el nombre DNS del equipo &gt; local.
 
 
 ```C++
@@ -57,9 +57,9 @@ return dwStatus;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,20 +1,20 @@
 ---
-title: Funciones del recopilador de eventos de Windows
-description: En la siguiente lista se describen brevemente las funciones que se usan en el recopilador de eventos de Windows.
+title: Windows Funciones del recopilador de eventos
+description: En la lista siguiente se describen brevemente las funciones que se usan en Windows recopilador de eventos.
 ms.assetid: 48155df6-ba9c-4abe-ba84-6190cee95878
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48c20e3bbee6226d385681c7471bb7fd3f337dfa
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 17dd89cb98e3803f171633df0f902250f1147a25bce9d43c83947c2d1e83b6ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117937227"
 ---
-# <a name="windows-event-collector-functions"></a>Funciones del recopilador de eventos de Windows
+# <a name="windows-event-collector-functions"></a>Windows Funciones del recopilador de eventos
 
-En la siguiente lista se describen brevemente las funciones que se usan en el recopilador de eventos de Windows.
+En la lista siguiente se describen brevemente las funciones que se usan en Windows recopilador de eventos.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -65,7 +65,7 @@ Recupera un valor de propiedad de un objeto de suscripción.
 [**EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus)
 </dt> <dd>
 
-Recupera la información de estado de tiempo de ejecución para un origen de eventos de una suscripción o la propia suscripción.
+Recupera la información de estado de tiempo de ejecución de un origen de eventos de una suscripción o de la propia suscripción.
 
 </dd> <dt>
 
@@ -86,7 +86,7 @@ Crea un enumerador de suscripciones para enumerar todas las suscripciones regist
 [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription)
 </dt> <dd>
 
-Abre una suscripción existente o crea una nueva suscripción.
+Abre una suscripción existente o crea una nueva.
 
 </dd> <dt>
 
@@ -121,13 +121,13 @@ Quita un elemento de una matriz de objetos que contienen valores de propiedad pa
 [**EcRetrySubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecretrysubscription)
 </dt> <dd>
 
-Reintenta la conexión con el origen de eventos de una suscripción que no está conectada.
+Reintentos de conexión al origen de eventos de una suscripción que no está conectada.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,35 +1,35 @@
 ---
-title: Ejemplo de cifrado de ejemplo multimedia
-description: Ejemplo de cifrado de ejemplo multimedia
+title: Ejemplo de cifrado de ejemplo de medios
+description: Ejemplo de cifrado de ejemplo de medios
 ms.assetid: f57f9ffc-47fd-47fb-b553-07b9cd6abb70
 keywords:
-- SDK de formato de Windows Media, cifrado de ejemplo multimedia
-- SDK de Windows Media Format, código de ejemplo
-- SDK de Windows Media Format, ejemplos de código
-- Administración de derechos digitales (DRM), cifrado de ejemplo multimedia
+- Windows SDK de formato multimedia, cifrado de ejemplo multimedia
+- Windows SDK de formato multimedia, código de ejemplo
+- Windows SDK de formato multimedia, ejemplos de código
+- administración de derechos digitales (DRM), cifrado de ejemplo multimedia
 - DRM (administración de derechos digitales), cifrado de ejemplo multimedia
-- Administración de derechos digitales (DRM), código de ejemplo
-- DRM (administración de derechos digitales), código de ejemplo
-- Administración de derechos digitales (DRM), ejemplos de código
-- DRM (administración de derechos digitales), ejemplos de código
-- API extendidas del cliente DRM, cifrado de ejemplo multimedia
+- administración de derechos digitales (DRM),código de ejemplo
+- DRM (administración de derechos digitales),código de ejemplo
+- administración de derechos digitales (DRM),ejemplos de código
+- DRM (administración de derechos digitales),ejemplos de código
+- API extendidas de cliente DRM, cifrado de ejemplo multimedia
 - API extendidas de cliente, cifrado de ejemplo multimedia
-- API extendidas del cliente DRM, código de ejemplo
+- API extendidas de cliente DRM, código de ejemplo
 - API extendidas de cliente, código de ejemplo
-- API extendidas del cliente DRM, ejemplos de código
+- API extendidas de cliente DRM, ejemplos de código
 - API extendidas de cliente, ejemplos de código
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a669ab957aa7510cdd57daca798ec3e3ac3bf73
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ccab97c5a27518d1a31c8c5cdcdbe0defe897bd2bdd47fee1c709a9192262bc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117846572"
 ---
-# <a name="media-sample-encryption-example"></a>Ejemplo de cifrado de ejemplo multimedia
+# <a name="media-sample-encryption-example"></a>Ejemplo de cifrado de ejemplo de medios
 
-En el siguiente ejemplo incompleto se muestra cómo cifrar un ejemplo multimedia mediante el cifrado DRM. El algoritmo de cifrado RC4 se ha omitido del ejemplo debido a restricciones de espacio.
+En el ejemplo incompleto siguiente se muestra cómo cifrar un ejemplo multimedia mediante el cifrado DRM. El algoritmo de cifrado RC4 se ha quedado fuera del ejemplo debido a restricciones de espacio.
 
 
 ```C++
@@ -78,9 +78,9 @@ EXIT:
 [**Ejemplos de importación de DRM**](drm-import-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

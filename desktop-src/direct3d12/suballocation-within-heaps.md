@@ -1,20 +1,20 @@
 ---
-title: Subasignación dentro de montones
-description: Los montones de recursos transfieren datos de la CPU a la GPU (carga) y de la GPU a la CPU (lectura inversa).
+title: Subasignación en los búferes
+description: Los montones de recursos transfieren datos de la CPU a la GPU (carga) y de la GPU a la CPU (read back).
 ms.assetid: 7E319BCF-FF3F-43CB-9C48-A9DD2A043592
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 701e68e31e698bbf2c955a252bd46876f45d6b7c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b5bdda33f1db1b0f798e9c3d18d8b3f33f7fbc30638ae6d62d38c0d5e2767463
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "74105027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117912141"
 ---
-# <a name="suballocation-within-heaps"></a>Subasignación dentro de montones
+# <a name="suballocation-within-heaps"></a>Subasignación en los búferes
 
-Los montones de recursos transfieren datos de la CPU a la GPU (carga) y de la GPU a la CPU (lectura inversa).
+Los montones de recursos transfieren datos de la CPU a la GPU (carga) y de la GPU a la CPU (read back).
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -22,8 +22,8 @@ Los montones de recursos transfieren datos de la CPU a la GPU (carga) y de la GP
 
 | Tema                                                                                       | Descripción                                                                                                                                                                                                                                                              |
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Alias de memoria y herencia de datos](memory-aliasing-and-data-inheritance.md)<br/> | Los recursos colocados y reservados pueden asignar un alias a la memoria física dentro de un montón. Los recursos colocados permiten más escenarios de herencia de datos que los recursos reservados cuando el montón tiene establecida la marca compartida o cuando los recursos con alias tienen diseños de memoria totalmente definidos. <br/> |
-| [Montones compartidos](shared-heaps.md)<br/>                                                 | Compartir es útil para arquitecturas multiproceso y multiadaptador.<br/>                                                                                                                                                                                          |
+| [Alias de memoria y herencia de datos](memory-aliasing-and-data-inheritance.md)<br/> | Los recursos colocados y reservados pueden crear un alias de memoria física dentro de un montón. Los recursos colocados permiten más escenarios de herencia de datos que recursos reservados cuando el montón tiene establecida la marca compartida o cuando los recursos con alias tienen diseños de memoria totalmente definidos. <br/> |
+| [Montones compartidos](shared-heaps.md)<br/>                                                 | El uso compartido es útil para arquitecturas de varios procesos y adaptadores.<br/>                                                                                                                                                                                          |
 
 
 

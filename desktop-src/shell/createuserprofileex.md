@@ -1,7 +1,7 @@
 ---
 description: Crea un perfil de usuario para un usuario especificado.
 ms.assetid: e4ea4032-d8d3-45c1-b2e5-7fef52a8a869
-title: CreateUserProfileEx función)
+title: Función CreateUserProfileEx
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Userenv.dll
-ms.openlocfilehash: 8dbb76293fda769ec720221ca1bfa4474af1620c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e6a507c508d508bc11946fe4c68d79e459135956e0a0539dd4c9a0fee2f04a7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104987499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118050822"
 ---
-# <a name="createuserprofileex-function"></a>CreateUserProfileEx función)
+# <a name="createuserprofileex-function"></a>Función CreateUserProfileEx
 
-\[Esta función no está disponible en Windows Vista.\]
+\[Esta función no está disponible a Windows Vista.\]
 
 Crea un perfil de usuario para un usuario especificado.
 
@@ -48,16 +48,16 @@ BOOL WINAPI CreateUserProfileEx(
 
 <dl> <dt>
 
-*pSid* \[ de\]
+*pSid* \[ En\]
 </dt> <dd>
 
-Tipo: **psid**
+Tipo: **PSID**
 
 SID del nuevo usuario.
 
 </dd> <dt>
 
-*lpUserName* \[ de\]
+*lpUserName* \[ En\]
 </dt> <dd>
 
 Tipo: **LPCTSTR**
@@ -71,7 +71,7 @@ Puntero a un búfer que contiene el nombre de usuario del nuevo usuario.
 
 Tipo: **LPCTSTR**
 
-Puntero a un búfer que contiene el [subárbol del registro](../sysinfo/registry-hives.md) que se va a usar. Este parámetro puede ser **NULL**.
+Puntero a un búfer que contiene el [subárbol del Registro que se usará.](../sysinfo/registry-hives.md) Este parámetro puede ser **NULL**.
 
 </dd> <dt>
 
@@ -80,47 +80,47 @@ Puntero a un búfer que contiene el [subárbol del registro](../sysinfo/registry
 
 Tipo: **LPTSTR**
 
-Puntero a un búfer que, cuando esta función devuelve, recibe la ruta de acceso del directorio del perfil del usuario. Este parámetro puede ser **NULL**.
+Puntero a un búfer que, cuando esta función vuelve, recibe la ruta de acceso del directorio del perfil del usuario. Este parámetro puede ser **NULL**.
 
 </dd> <dt>
 
-*dwDirSize* \[ de\]
+*dwDirSize* \[ En\]
 </dt> <dd>
 
 Tipo: **DWORD**
 
-Tamaño del búfer especificado por *lpProfileDir*, en TCHARs.
+Tamaño del búfer especificado por *lpProfileDir*, en TCHAR.
 
 </dd> <dt>
 
-*bWin9xUpg* \[ de\]
+*bWin9xUpg* \[ En\]
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-**True** si el perfil de usuario se crea como parte de una migración de perfil desde Windows 9x; en caso contrario, **false**.
+**TRUE** si el perfil de usuario se crea como parte de una migración de perfil desde Windows 9x; de lo contrario, **FALSE**.
 
-Si es **true**, el perfil de usuario se configura en el directorio de perfil predeterminado, normalmente C: \\ Documents and Settings \\ *username*. Si ese directorio ya existe, se utiliza. Si no es así, se crea.
+Cuando **es TRUE,** el perfil de usuario se configura en el directorio de perfil predeterminado, normalmente C: \\ Documents y Configuración \\ *UserName*. Si ese directorio ya existe, se usa. Si no es así, se crea.
 
-Si es **false**, se crea el directorio de perfil predeterminado si no existe. Si el directorio de perfil predeterminado ya existe, se crea un nuevo directorio para este perfil de usuario.
+Si **es FALSE,** se crea el directorio de perfil predeterminado si no existe. Si el directorio de perfil predeterminado ya existe, se crea un nuevo directorio para este perfil de usuario.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-Devuelve **true** si el nuevo perfil de usuario se creó correctamente; en caso contrario, **false**.
+Devuelve **TRUE** si el nuevo perfil de usuario se creó correctamente; de lo contrario, **FALSE**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no se declara en los encabezados del kit de desarrollo de software (SDK) y no tiene asociada ninguna biblioteca de importación. Debe utilizar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular a Userenv.dll. La versión ANSI de la función, a la que se hace referencia **CreateUserProfileExA** desde Userenv.dll como ordinal 153. En la versión Unicode, se hace referencia a **CreateUserProfileExW** como el ordinal 154.
+Esta función no se declara en los encabezados del Kit de desarrollo de software (SDK) y no tiene ninguna biblioteca de importación asociada. Debe usar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular a Userenv.dll. Se hace referencia a la versión ANSI de la función **CreateUserProfileExA** desde Userenv.dll como ordinal 153. Se hace referencia a la versión Unicode **CreateUserProfileExW** como ordinal 154.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/>  | Windows XP<br/>                                                                  |
 | Archivo DLL<br/>                    | <dl> <dt>Userenv.dll</dt> </dl> |

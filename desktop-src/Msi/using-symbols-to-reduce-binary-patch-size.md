@@ -19,11 +19,11 @@ Para reducir el tamaño de una revisión binaria mediante símbolos, debe propor
 
 Por ejemplo, TargetImage para una revisión podría ser el paquete de instalación que se incluye con Windows 2000 y que instala la versión 1.1.1029.0 de MSI.DLL. UpgradedImage podría ser el paquete de instalación actualizado que se incluye con Windows 2000 con Service Pack 1 (SP1) y que instala la versión 1.11.1314.0 de MSI.DLL. A continuación, se tendrían que crear dos archivos de propiedades de creación de revisiones (PATCH), uno con la columna SymbolPaths de las tablas [TargetImages](targetimages-table-patchwiz-dll-.md) y [UpgradedImages](upgradedimages-table-patchwiz-dll-.md) que dejó NULL (en blanco) y la otra con la columna SymbolPaths de las tablas TargetImages y UpgradedImages rellenada con la ubicación de los símbolos de los archivos binarios. En este caso, el tamaño de la revisión generada sin usar símbolos puede ser aproximadamente tres veces el tamaño de la revisión generada mediante símbolos.
 
-La Mpatch.exe se puede usar para probar la generación de revisiones binarias para un solo archivo y para comprobar si los símbolos son válidos o no. La utilidad Mpatch.exe se incluye en los componentes del SDK de [Windows para desarrolladores Windows Installer](platform-sdk-components-for-windows-installer-developers.md). La salida de Mpatch.exe indicará si los símbolos no coinciden.
+La Mpatch.exe se puede usar para probar la generación de revisiones binarias para un único archivo y para comprobar si los símbolos son válidos o no. La utilidad Mpatch.exe se incluye en los componentes del [SDK de Windows para Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md). La salida de Mpatch.exe indicará si los símbolos no coinciden.
 
 Por ejemplo, escriba la siguiente línea de comandos para comprobar si los símbolos son válidos o no.
 
-**mpatch.exe -NEWSYMPATH:d: \\ update -OLDSYMPATH:d: \\ target d: targetexample.dll \\ \\ d: updateexample.dll \\ \\ example.pat**
+**mpatch.exe -NEWSYMPATH:d: \\ update -OLDSYMPATH:d: \\ target d: \\ targetexample.dll \\ d: updateexample.dll \\ \\ example.pat**
 
 Si los símbolos no están en la ubicación correcta, la salida de Mpatch.exe puede incluir la advertencia siguiente.
 

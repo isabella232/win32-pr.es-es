@@ -1,9 +1,9 @@
 ---
 title: Elemento LOGURL
-description: El elemento LOGURL indica a Windows Media Player que envíe los datos de registro a la dirección URL especificada.
+description: El elemento LOGURL indica a Reproductor de Windows Media que envíe los datos de registro a la dirección URL especificada.
 ms.assetid: fc1895af-c9d7-43ca-9839-7e884cc219f4
 keywords:
-- Elemento LOGURL Media Player Windows
+- Elemento LOGURL Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0f5fc4a5259f009e7298c0609fc4e6fa8c533b94
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fad38d8272c2f4d8a8e7a8f3f06e4d8db149f0d314e93b32d6f8d330e281f268
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117934595"
 ---
 # <a name="logurl-element"></a>Elemento LOGURL
 
-El elemento **LOGURL** indica a Windows Media Player que envíe los datos de registro a la dirección URL especificada.
+El **elemento LOGURL** indica a Reproductor de Windows Media que envíe los datos de registro a la dirección URL especificada.
 
 ``` syntax
 <LOGURL
@@ -32,9 +32,9 @@ El elemento **LOGURL** indica a Windows Media Player que envíe los datos de reg
 
 ## <a name="attributes"></a>Atributos
 
-**Href** (obligatorio)
+**HREF** (obligatorio)
 
-Dirección URL de un host que puede procesar solicitudes de registro.
+Dirección URL a un host que puede procesar solicitudes de registro.
 
 ## <a name="parentchild-elements"></a>Elementos primarios y secundarios
 
@@ -42,7 +42,7 @@ Dirección URL de un host que puede procesar solicitudes de registro.
 
 | Hierarchy       | Elementos           |
 |-----------------|--------------------|
-| Elementos primarios | **ASX**, **entrada** |
+| Elementos primarios | **ASX**, **ENTRY** |
 | Elementos secundarios  | Ninguno               |
 
 
@@ -51,13 +51,13 @@ Dirección URL de un host que puede procesar solicitudes de registro.
 
 ## <a name="remarks"></a>Observaciones
 
-El elemento **LOGURL** permite que una lista de reproducción de metarchivo de cliente envíe información de registro adicional a los servidores especificados. La información de registro se envía automáticamente al servidor de origen de una lista de reproducción cuando se abre y a cada uno de los **LOGURL** especificados para el elemento **ASX** , si hay alguno. La información de registro también se envía a cada **LOGURL** especificado para un elemento de **entrada** cuando se alcanza dicha entrada. La dirección URL especificada en el atributo **href** de un elemento **LOGURL** debe ser la dirección de un host que pueda procesar solicitudes de registro. La dirección URL puede ser cualquier dirección URL HTTP válida. La dirección URL también puede indicar la ubicación de un script CGI.
+El **elemento LOGURL** permite que una lista de reproducción de metarchivo de cliente envíe información de registro adicional a los servidores especificados. La información de registro se envía automáticamente al servidor de origen de una lista de reproducción cuando se abre y a cada **LOGURL** especificado para el elemento **ASX,** si existe alguno. La información de registro también se envía a cada **LOGURL** especificado para un **elemento ENTRY** cuando se alcanza esa entrada. La dirección URL especificada en el **atributo HREF** de un elemento **LOGURL** debe ser la dirección de un host que pueda procesar solicitudes de registro. La dirección URL puede ser cualquier dirección URL HTTP válida. La dirección URL también puede indicar la ubicación de un script CGI.
 
-Los únicos protocolos válidos para un elemento **LOGURL** son http y https.
+Los únicos protocolos válidos para **un elemento LOGURL** son HTTP y HTTPS.
 
-Un elemento **LOGURL** dentro del ámbito de un elemento **ASX** solo es aplicable al metarchivo en el que reside, independientemente de si se hace referencia a ese metarchivo desde otro metarchivo. Un elemento **LOGURL** fuerza el envío de datos de registro para todo el contenido transmitido desde dentro de su ámbito definido y solo para el contenido transmitido desde dentro de su ámbito definido. Los datos de registro se enviarán al servidor de origen y a todas las direcciones URL que aparecen en cada elemento **LOGURL** en el ámbito. Los datos de registro se enviarán una sola vez a cada dirección URL indicada, incluso si la misma dirección URL aparece más de una vez en un ámbito determinado. Una repetición de una **entrada** produciría otro envío a las direcciones URL enumeradas.
+Un **elemento LOGURL** dentro del ámbito de un elemento **ASX** solo es aplicable al metarchivo en el que reside, independientemente de si se hace referencia a ese metarchivo desde otro metarchivo. Un **elemento LOGURL** fuerza el envío de datos de registro para todo el contenido transmitido desde su ámbito definido y solo para el contenido transmitido desde su ámbito definido. Los datos de registro se envían al servidor de origen y a todas las direcciones URL enumeradas en cada **elemento LOGURL** del ámbito. Los datos de registro solo se envían una vez a cada dirección URL de la lista, incluso si la misma dirección URL aparece más de una vez en un ámbito determinado. Una repetición de **una entrada daría** lugar a otro envío a las direcciones URL enumeradas.
 
-No hay ningún límite en el número de elementos **LOGURL** de una lista de reproducción de metarchivo.
+No hay ningún límite en el número de elementos **LOGURL** en una lista de reproducción de metarchivo.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -110,7 +110,7 @@ https://www.proseware.com/some/arbitrary/path/My_WMS_Logging_Page.asp?PubPoint=F
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
@@ -118,10 +118,10 @@ https://www.proseware.com/some/arbitrary/path/My_WMS_Logging_Page.asp?PubPoint=F
 
 <dl> <dt>
 
-[**Referencia de elementos de metarchivo de Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referencia de elementos de metarchivo multimedia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referencia de metarchivos de Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referencia de metarchivo multimedia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

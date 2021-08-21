@@ -1,33 +1,33 @@
 ---
-description: Las siguientes funciones se usan con el administrador de protección de salida (OPM).
+description: Las siguientes funciones se usan con Output Protection Manager (OPM).
 ms.assetid: 7ecde6ae-56fd-451b-bebb-224c6801be05
 title: Funciones de OPM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e32b4ef210ace3f7f179b59980cedb962a5bee44
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3de880584716c5caac94c93e48dd89ded481c14e1c7a08be3e23ac334e1c8bfe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118058769"
 ---
 # <a name="opm-functions"></a>Funciones de OPM
 
-Las siguientes funciones se usan con el [Administrador de protección de salida](output-protection-manager.md) (OPM).
+Las siguientes funciones se usan con [Output Protection Manager](output-protection-manager.md) (OPM).
 
 
 
 | Función                                                                                             | Descripción                                                                                                                           |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| [**OPMGetVideoOutputForTarget**](/windows/desktop/api/opmapi/nf-opmapi-opmgetvideooutputfortarget)                                     | Devuelve un objeto de salida de vídeo para el destino de VidPN en el adaptador especificado.                                                          |
-| [**OPMGetVideoOutputsFromHMONITOR**](/windows/desktop/api/opmapi/nf-opmapi-opmgetvideooutputsfromhmonitor)                             | Crea un objeto de administrador de protección de salida (OPM) para cada monitor físico que está asociado a un identificador de **HMONITOR** determinado. |
-| [**OPMGetVideoOutputsFromIDirect3DDevice9Object**](/windows/desktop/api/opmapi/nf-opmapi-opmgetvideooutputsfromidirect3ddevice9object) | Crea un objeto OPM para cada monitor físico que está asociado a un dispositivo Direct3D determinado.                                 |
+| [**OPMGetVideoOutputForTarget**](/windows/desktop/api/opmapi/nf-opmapi-opmgetvideooutputfortarget)                                     | Devuelve un objeto de salida de vídeo para el destino VidPN en el adaptador especificado.                                                          |
+| [**OPMGetVideoOutputsFromHMONITOR**](/windows/desktop/api/opmapi/nf-opmapi-opmgetvideooutputsfromhmonitor)                             | Crea un objeto de Administrador de protección de salida (OPM) para cada monitor físico asociado a un identificador **HMONITOR** determinado. |
+| [**OPMGetVideoOutputsFromIDirect3DDevice9Object**](/windows/desktop/api/opmapi/nf-opmapi-opmgetvideooutputsfromidirect3ddevice9object) | Crea un objeto OPM para cada monitor físico asociado a un dispositivo Direct3D determinado.                                 |
 
 
 
  
 
-OPM usa las siguientes funciones para tener acceso a la funcionalidad del controlador de pantalla. Las aplicaciones no deben llamar a estas funciones.
+OPM usa las siguientes funciones para acceder a la funcionalidad del controlador de pantalla. Las aplicaciones no deben llamar a estas funciones.
 
 -   [**ConfigureOPMProtectedOutput**](configureopmprotectedoutput.md)
 -   [**CreateOPMProtectedOutputs**](createopmprotectedoutputs.md)

@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de EN_SETFOCUS (Winuser. h)
-description: Se envía cuando un control de edición recibe el foco de teclado. La ventana primaria del control de edición recibe este código de notificación a través de un mensaje de comando de WM \_ .
+title: EN_SETFOCUS de notificación (Winuser.h)
+description: Se envía cuando un control de edición recibe el foco del teclado. La ventana primaria del control de edición recibe este código de notificación a través de un mensaje \_ WM COMMAND.
 ms.assetid: 482d2afa-4e21-4f3f-bdf4-6966b34cc3c4
 keywords:
-- EN_SETFOCUS controles de código de notificación de Windows
+- EN_SETFOCUS código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f5cb96482f0e42669658dde3a39637e3c2311619
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e0851d7df2e3943efc1b4aac2ba0f16c01aa90bf0bcc1389b64a3216df934b25
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118171252"
 ---
-# <a name="en_setfocus-notification-code"></a>\_Código de notificación en SETFOCUS
+# <a name="en_setfocus-notification-code"></a>Código de notificación DE EN \_ SETFOCUS
 
-Se envía cuando un control de edición recibe el foco de teclado. La ventana primaria del control de edición recibe este código de notificación a través de un mensaje de [**\_ comando de WM**](/windows/desktop/menurc/wm-command) .
+Se envía cuando un control de edición recibe el foco del teclado. La ventana primaria del control de edición recibe este código de notificación a través de un [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ EN_SETFOCUS
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene el identificador del control de edición. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica el código de notificación.
+LOWORD [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador del control de edición. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
 
 </dd> <dt>
 
@@ -53,21 +53,21 @@ Identificador del control de edición.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La ventana primaria siempre recibe un mensaje de [**\_ comando de WM**](/windows/desktop/menurc/wm-command) para este evento, pero no requiere que se envíe una máscara de notificación con [**em \_**](em-seteventmask.md).
+La ventana primaria siempre recibe un [**mensaje \_ WM COMMAND**](/windows/desktop/menurc/wm-command) para este evento, no requiere una máscara de notificación enviada con EM [**\_ SETEVENTMASK**](em-seteventmask.md).
 
-**Edición enriquecida:** Compatible con Microsoft Rich Edit 1,0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecidas con las distintas versiones del sistema, vea acerca de los [controles Rich Edit](about-rich-edit-controls.md).
+**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ La ventana primaria siempre recibe un mensaje de [**\_ comando de WM**](/windows
 **Otros recursos**
 </dt> <dt>
 
-[**comando de WM \_**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

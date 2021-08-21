@@ -1,5 +1,5 @@
 ---
-description: En este tema se muestra código de ejemplo que encapsula el codificador Windows Media Audio (WMA) en una clase de C++ denominada CWmaEncoder.
+description: En este tema se muestra algún código de ejemplo que encapsula el codificador Windows Media Audio (WMA) en una clase de C++ denominada CWmaEncoder.
 ms.assetid: 59bd5b6a-86fe-4d39-ab7c-9563ac1a8e94
 title: Código de ejemplo del codificador
 ms.topic: article
@@ -30,7 +30,7 @@ En varios temas se hace referencia a este código:
 
 -   [Tutorial: Escritura de un archivo WMA mediante la codificación CBR](tutorial--writing-a-wma-file-by-using-cbr-encoding.md)
 
-En Media Foundation, los codificadores se implementan como [transformaciones](media-foundation-transforms.md) de Media Foundation (MTA) y exponen la [**interfaz DETRANSFORMTransform.**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)
+En Media Foundation, los codificadores se implementan [como transformaciones](media-foundation-transforms.md) de Media Foundation (MTA) y exponen la [**interfaz DEFTRANSFORM.**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)
 
 ## <a name="class-declaration"></a>Declaración de clase
 

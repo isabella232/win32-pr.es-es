@@ -1,7 +1,7 @@
 ---
-description: Devuelve el elemento especificado en la colección.
+description: Devuelve el elemento especificado de la colección.
 ms.assetid: c013508f-ce77-4fb2-9bf4-21fcba1284f3
-title: Colección. Item (propiedad)
+title: Propiedad Collection.Item
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 037a3a9ba1c0c7130d64cfac8fd5b7529720b47a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dc629d11fb4760aa46ff5d990a09b31cf14593858203b0b54034183e6097f42a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117670268"
 ---
-# <a name="collectionitem-property"></a>Colección. Item (propiedad)
+# <a name="collectionitem-property"></a>Propiedad Collection.Item
 
-Devuelve el elemento especificado en la colección.
+Devuelve el elemento especificado de la colección.
 
 Esta propiedad es de solo lectura.
 
@@ -41,11 +41,11 @@ propVal = Collection.Item
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4,90 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 
 
 

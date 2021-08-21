@@ -1,9 +1,9 @@
 ---
-title: Estructura de STOWED_EXCEPTION_INFORMATION_V2
-description: Contiene información de excepción estibada.
+title: STOWED_EXCEPTION_INFORMATION_V2 estructura
+description: Contiene información de excepción stowed.
 ms.assetid: 79267974-EE1B-4427-A6D6-265F6BC5D73A
 keywords:
-- Estructura de STOWED_EXCEPTION_INFORMATION_V2 Informe de errores de Windows
+- STOWED_EXCEPTION_INFORMATION_V2 estructura Informe de errores de Windows
 - PSTOWED_EXCEPTION_INFORMATION_V2 puntero de estructura Informe de errores de Windows
 topic_type:
 - apiref
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eefd313f0edcc122708f141cd65418beaade03a9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9bb7ed638007bbffd67e61c07d26a591149318d64171467053dec2f7593f347e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105705181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117670643"
 ---
-# <a name="stowed_exception_information_v2-structure"></a>Estructura de la información de excepción de la \_ \_ \_ versión V2
+# <a name="stowed_exception_information_v2-structure"></a>Estructura STOWED \_ EXCEPTION \_ INFORMATION \_ V2
 
-Contiene información de excepción estibada.
+Contiene información de excepción stowed.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,11 +62,11 @@ typedef struct _STOWED_EXCEPTION_INFORMATION_V2 {
 **Header**
 </dt> <dd>
 
-Tipo: **[ **\_ \_ \_ encabezado de información de excepción estibada**](stowed-exception-information-header.md)**
+Tipo: **[ **ENCABEZADO DE INFORMACIÓN \_ DE EXCEPCIÓN \_ CON \_ STOWED**](stowed-exception-information-header.md)**
 
 </dd> <dd>
 
-La estructura de [**encabezado de \_ información de excepción \_ \_ estibada**](stowed-exception-information-header.md) que contiene información para esta estructura primaria.
+Estructura [**STOWED \_ EXCEPTION INFORMATION \_ \_ HEADER**](stowed-exception-information-header.md) que contiene información para esta estructura primaria.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Tipo: **[ **HRESULT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Código [**HRESULT**](/windows/desktop/WinProg/windows-data-types) para la excepción estibada.
+Código [**HRESULT**](/windows/desktop/WinProg/windows-data-types) para la excepción stowed.
 
 </dd> <dt>
 
@@ -88,14 +88,14 @@ Tipo: **[ **DWORD**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor de 2 bits que identifica el formato de la excepción.
+Valor de 2 bits que identifica la forma de la excepción.
 
 
 
-| Value                                                                                                                                                                                                                                                                  | Significado                                                                   |
+| Valor                                                                                                                                                                                                                                                                  | Significado                                                                   |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| <span id="STOWED_EXCEPTION_FORM_BINARY"></span><span id="stowed_exception_form_binary"></span><dl> <dt>**\_ Estibada Formulario de excepción \_ \_ binario**</dt> <dt>0x01</dt> </dl> | Este valor indica que el formato de la excepción es binario.<br/> |
-| <span id="STOWED_EXCEPTION_FORM_TEXT"></span><span id="stowed_exception_form_text"></span><dl> <dt>**\_ Estibada \_ \_ Texto del formulario de excepción**</dt> <dt>0x02</dt> </dl>       | Este valor indica que el formato de la excepción es texto.<br/>   |
+| <span id="STOWED_EXCEPTION_FORM_BINARY"></span><span id="stowed_exception_form_binary"></span><dl> <dt>**STOWED \_ FORMULARIO \_ DE \_ EXCEPCIÓN BINARY**</dt> <dt>0x01</dt> </dl> | Este valor indica que la forma de la excepción es binaria.<br/> |
+| <span id="STOWED_EXCEPTION_FORM_TEXT"></span><span id="stowed_exception_form_text"></span><dl> <dt>**STOWED \_ TEXTO \_ DEL FORMULARIO \_ DE**</dt> <dt>EXCEPCIÓN 0x02</dt> </dl>       | Este valor indica que la forma de la excepción es texto.<br/>   |
 
 
 
@@ -110,7 +110,7 @@ Tipo: **[ **DWORD**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Un valor de 30 bits que identifica el subproceso que ha generado la excepción. El valor se desplaza a la derecha 2 bits cuando se almacena. Para volver a convertirlo en un identificador de subproceso válido, desplace el valor a la izquierda en 2. Por ejemplo:
+Valor de 30 bits que identifica el subproceso que produjo la excepción. El valor se desplaza a la derecha en 2 bits cuando se almacena. Para volver a convertirlo en un identificador de subproceso válido, cambie el valor a la izquierda por 2. Por ejemplo:
 
 ``` syntax
 DWORD ActualThreadId = (StowedException.ThreadId << 2);
@@ -118,10 +118,10 @@ DWORD ActualThreadId = (StowedException.ThreadId << 2);
 
 </dd> <dt>
 
-(*struct sin nombre*)
+(*estructura sin nombre*)
 </dt> <dd>
 
-Los miembros de esta estructura anidada solo son válidos si el miembro **ExceptionForm** se establece en un **\_ \_ \_ archivo binario de formulario de excepción estibada**.
+Los miembros de esta estructura anidada solo son válidos si el **miembro ExceptionForm** está establecido en **STOWED \_ EXCEPTION FORM \_ \_ BINARY**.
 
 <dl> <dt>
 
@@ -132,29 +132,29 @@ Tipo: **[ **PVOID**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Puntero que contiene la dirección de la excepción.
+Puntero que contiene la dirección de excepción.
 
 </dd> <dt>
 
 **StackTraceWordSize**
 </dt> <dd>
 
-Tipo: **[ **ULong**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **ULONG**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Tamaño, en bytes, de cada palabra del seguimiento de la pila al que apunta el miembro **StackTrace** . Este valor se establece en 4 para las plataformas de 32 bits y 8 para las plataformas de 64 bits.
+Tamaño, en bytes, de cada palabra del seguimiento de pila al que apunta el miembro **StackTrace.** Este valor se establece en 4 para plataformas de 32 bits y 8 para plataformas de 64 bits.
 
 </dd> <dt>
 
 **StackTraceWords**
 </dt> <dd>
 
-Tipo: **[ **ULong**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **ULONG**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-El número de palabras del seguimiento de la pila al que apunta el miembro **StackTrace** . El número de palabras es igual al número de elementos de la matriz.
+Número de palabras en el seguimiento de la pila al que **apunta el miembro StackTrace.** El número de palabras es igual al número de elementos de la matriz.
 
 </dd> <dt>
 
@@ -165,14 +165,14 @@ Tipo: **[ **PVOID**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Un puntero a un bloque de memoria que contiene el seguimiento de la pila.
+Puntero a un bloque de memoria que contiene el seguimiento de la pila.
 
 </dd> </dl> </dd> <dt>
 
-(*struct sin nombre*)
+(*estructura sin nombre*)
 </dt> <dd>
 
-El miembro de esta estructura anidada solo es válido si el miembro **ExceptionForm** está establecido en **texto de \_ \_ formulario de \_ excepción estibada**.
+El miembro de esta estructura anidada solo es válido si el **miembro ExceptionForm** está establecido en **STOWED \_ EXCEPTION FORM \_ \_ TEXT**.
 
 <dl> <dt>
 
@@ -183,18 +183,18 @@ Tipo: **[ **PWSTR**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Un puntero a una cadena terminada en null que contiene el texto del error de la excepción.
+Puntero a una cadena terminada en NULL que contiene el texto de error de la excepción.
 
 </dd> </dl> </dd> <dt>
 
 **NestedExceptionType**
 </dt> <dd>
 
-Tipo: **[ **ULong**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **ULONG**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor de 32 bits que especifica el tipo de objeto al que apunta el miembro **NestedException** . Defina el valor con esta macro de definición de tipo de intercambio de bytes que presupone Little-Endian:
+Valor de 32 bits que especifica el tipo de objeto al que apunta el **miembro NestedException.** Defina el valor con esta macro de definición de tipo de intercambio de bytes que supone little-endian:
 
 ``` syntax
 #define STOWED_EXCEPTION_NESTED_TYPE(t) ((((((ULONG)(t)) >> 24) & 0xFF) <<  0) | \
@@ -203,17 +203,17 @@ Valor de 32 bits que especifica el tipo de objeto al que apunta el miembro **Nes
                                          (((((ULONG)(t)) >>  0) & 0xFF) << 24))
 ```
 
-Estas son algunas definiciones de tipos comunes:
+Estas son algunas definiciones de tipo comunes:
 
 
 
 | Value                                                                                                                                                                                                                                                                                                                           | Significado                                                                                                                                                                                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="STOWED_EXCEPTION_NESTED_TYPE_NONE"></span><span id="stowed_exception_nested_type_none"></span><dl> <dt>**\_ Estibada \_Tipo anidado de excepción \_ \_ ninguno**</dt> <dt>(0x00000000)</dt> </dl>                                  | Este valor especifica que no hay ningún objeto de excepción anidado.<br/>                                                                                                                                                                                                                                                                                                                                |
-| <span id="STOWED_EXCEPTION_NESTED_TYPE_WIN32"></span><span id="stowed_exception_nested_type_win32"></span><dl> <dt>**\_ Estibada \_Tipo anidado \_ de \_ excepción**</dt> tipo <dt>anidado de excepción Win32 estibada \_ \_ \_ (' W32E ')</dt> </dl>    | Este valor especifica que el miembro **NestedException** señala a un objeto de [**\_ registro de excepción**](/windows/desktop/api/winnt/ns-winnt-exception_record) .<br/>                                                                                                                                                                                                                                                              |
-| <span id="STOWED_EXCEPTION_NESTED_TYPE_STOWED"></span><span id="stowed_exception_nested_type_stowed"></span><dl> <dt>**\_ Estibada tipo \_ \_ \_ anidado**</dt> de excepción de tipo anidado de <dt>excepción estibada \_ \_ \_ (' estiba ')</dt> </dl> | Este valor especifica que el miembro **NestedException** señala a otro objeto de excepción estibada. El otro objeto de excepción estibada puede ser un objeto de **\_ información de excepción de \_ \_ V2** u otra versión con un miembro de **encabezado** válido, es decir, un miembro de **encabezado** que contenga un encabezado de [**\_ información de excepción \_ \_ estibada**](stowed-exception-information-header.md)válido.<br/> |
-| <span id="STOWED_EXCEPTION_NESTED_TYPE_CLR"></span><span id="stowed_exception_nested_type_clr"></span><dl> <dt>**\_ Estibada Tipo \_ anidado \_ \_**</dt> de excepción tipo <dt>anidado de excepción CLR estibada \_ \_ \_ (' archivo clr1 ')</dt> </dl>          | Este valor especifica que el miembro **NestedException** señala a un objeto de excepción ' archivo clr1 '.<br/>                                                                                                                                                                                                                                                                                                 |
-| <span id="STOWED_EXCEPTION_NESTED_TYPE_LEO"></span><span id="stowed_exception_nested_type_leo"></span><dl> <dt>**\_ Estibada Tipo \_ anidado \_ \_**</dt> de excepción <dt> \_ \_ tipo anidado de excepción \_ (' LEO1 ')</dt> </dl>          | Este valor especifica que el miembro **NestedException** señala a un objeto de excepción de idioma.<br/>                                                                                                                                                                                                                                                                                               |
+| <span id="STOWED_EXCEPTION_NESTED_TYPE_NONE"></span><span id="stowed_exception_nested_type_none"></span><dl> <dt>**STOWED \_ EXCEPTION \_ NESTED \_ TYPE \_ NONE**</dt> <dt>(0x00000000)</dt> </dl>                                  | Este valor especifica que no hay ningún objeto de excepción anidado.<br/>                                                                                                                                                                                                                                                                                                                                |
+| <span id="STOWED_EXCEPTION_NESTED_TYPE_WIN32"></span><span id="stowed_exception_nested_type_win32"></span><dl> <dt>**STOWED \_ EXCEPTION \_ NESTED \_ TYPE \_ WIN32**</dt> <dt>STOWED EXCEPTION NESTED \_ \_ \_ TYPE('W32E')</dt> </dl>    | Este valor especifica que el miembro **NestedException** apunta a un [**objeto EXCEPTION \_ RECORD.**](/windows/desktop/api/winnt/ns-winnt-exception_record)<br/>                                                                                                                                                                                                                                                              |
+| <span id="STOWED_EXCEPTION_NESTED_TYPE_STOWED"></span><span id="stowed_exception_nested_type_stowed"></span><dl> <dt>**STOWED \_ EXCEPTION \_ NESTED \_ TYPE \_ STOWED**</dt> <dt>STOWED EXCEPTION NESTED \_ \_ \_ TYPE('STOW')</dt> </dl> | Este valor especifica que el miembro **NestedException** apunta a otro objeto de excepción con stowed. El otro objeto de excepción con stowed puede ser un objeto **STOWED \_ EXCEPTION INFORMATION \_ \_ V2** o una versión diferente con un miembro **Header** válido, es decir, un miembro **Header** que contiene un encabezado [**STOWED EXCEPTION INFORMATION \_ HEADER \_ \_ válido.**](stowed-exception-information-header.md)<br/> |
+| <span id="STOWED_EXCEPTION_NESTED_TYPE_CLR"></span><span id="stowed_exception_nested_type_clr"></span><dl> <dt>**STOWED \_ EXCEPTION \_ NESTED \_ TYPE \_ CLR**</dt> <dt>STOWED EXCEPTION NESTED \_ \_ \_ TYPE('CLR1')</dt> </dl>          | Este valor especifica que el miembro **NestedException** apunta a un objeto de excepción 'CLR1'.<br/>                                                                                                                                                                                                                                                                                                 |
+| <span id="STOWED_EXCEPTION_NESTED_TYPE_LEO"></span><span id="stowed_exception_nested_type_leo"></span><dl> <dt>**STOWED \_ TIPO \_ ANIDADO DE \_ \_ EXCEPCIÓN:**</dt> <dt> \_ EXCEPCIÓN \_ DE EXCEPCIÓN STOWED NESTED \_ TYPE('ASÍNS1')</dt> </dl>          | Este valor especifica que el miembro **NestedException** apunta a un objeto de excepción de lenguaje.<br/>                                                                                                                                                                                                                                                                                               |
 
 
 
@@ -228,15 +228,15 @@ Tipo: **[ **PVOID**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Un puntero a un tipo de excepción anidada. El miembro **NestedExceptionType** indica el tipo de objeto.
+Puntero a un tipo de excepción anidada. El tipo de objeto se indica mediante el **miembro NestedExceptionType.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**\_ Estibada La \_ información \_ de excepción V2** y el [**\_ encabezado de \_ información \_ de excepción estibada**](stowed-exception-information-header.md) no se definen actualmente en un encabezado que está disponible públicamente, por lo que debe definirlos en el código fuente antes de usarlos.
+**STOWED \_ EXCEPTION \_ INFORMATION \_ V2** y [**STOWED EXCEPTION INFORMATION \_ \_ \_ HEADER**](stowed-exception-information-header.md) no están definidos actualmente en un encabezado que esté disponible públicamente, por lo que debe definirlos en el código fuente antes de usarlos.
 
-La estructura V1 de la **\_ información de excepción \_ \_ estibada** es idéntica a esta estructura, salvo que no contiene los miembros **NestedExceptionType** y **NestedException** .
+La **estructura STOWED \_ EXCEPTION INFORMATION \_ \_ V1** es idéntica a esta estructura, salvo que no contiene los **miembros NestedExceptionType** y **NestedException.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -244,9 +244,9 @@ La estructura V1 de la **\_ información de excepción \_ \_ estibada** es idén
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                         |
-| Encabezado<br/>                   | <dl> <dt>None</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                    |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                         |
+| Header<br/>                   | <dl> <dt>None</dt> </dl> |
 
 
 
@@ -254,10 +254,10 @@ La estructura V1 de la **\_ información de excepción \_ \_ estibada** es idén
 
 <dl> <dt>
 
-[**registro de excepción \_**](/windows/desktop/api/winnt/ns-winnt-exception_record)
+[**REGISTRO DE \_ EXCEPCIONES**](/windows/desktop/api/winnt/ns-winnt-exception_record)
 </dt> <dt>
 
-[**encabezado de \_ información de excepción estibada \_ \_**](stowed-exception-information-header.md)
+[**ENCABEZADO DE INFORMACIÓN \_ DE EXCEPCIÓN \_ STOWED \_**](stowed-exception-information-header.md)
 </dt> </dl>
 
  

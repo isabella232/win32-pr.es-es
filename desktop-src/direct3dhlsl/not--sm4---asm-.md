@@ -1,23 +1,23 @@
 ---
-title: no (SM4-ASM)
-description: Not bit a bit.
+title: not (sm4 - asm)
+description: No bit a bit.
 ms.assetid: AC7EBBC2-4B52-4793-812C-B25897FB8D05
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0bf224e6e5af7f2db6bcbaf7ae287ba2d399727
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: e74018cf7dcffcc557785b5f0cccd06e70f61786e800d6673e339bb12d44851c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104983886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118088981"
 ---
-# <a name="not-sm4---asm"></a>no (SM4-ASM)
+# <a name="not-sm4---asm"></a>not (sm4 - asm)
 
-Not bit a bit.
+No bit a bit.
 
 
 
-| no dest \[ . Mask \] , src0 \[ . swizzle\] |
+| not dest \[ .mask \] , src0 \[ .swzzle\] |
 |-------------------------------------|
 
 
@@ -28,16 +28,16 @@ Not bit a bit.
 
 | Elemento                                                            | Descripción                                                   |
 |-----------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[en \] la dirección del resultado de la operación.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] los componentes originales.<br/>                    |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en \] La dirección del resultado de la operación.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] Los componentes originales.<br/>                    |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta instrucción realiza un complemento de uno de los componentes de cada valor de 32 bits de *src0*. Los resultados de 32 bits se almacenan en *dest*.
+Esta instrucción realiza un complemento de uno por componente de cada valor de 32 bits en *src0*. Los resultados de 32 bits se almacenan *en dest*.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
@@ -51,7 +51,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -59,12 +59,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -74,7 +74,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

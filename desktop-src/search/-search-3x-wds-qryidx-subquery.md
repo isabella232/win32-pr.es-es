@@ -1,17 +1,17 @@
 ---
 description: Obtenga información sobre el argumento SUBQUERY en Windows Search. Una subconsulta es un archivo de búsqueda guardado que puede usar como filtro para una nueva consulta.
 ms.assetid: a92c774f-310b-4c40-be1c-0c2b0cac907b
-title: Argumento SUBQUERY (Windows Search)
+title: Argumento SUBQUERY (Windows search)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93b23028d0bddcc674714f51f8b31883052431bd
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: a53ff863f018fa3ed1310d704179e0b022d6d7853a9b91e9b5a038c846ce9b4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112011038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117681059"
 ---
-# <a name="subquery-argument-windows-search"></a>Argumento SUBQUERY (Windows Search)
+# <a name="subquery-argument-windows-search"></a>Argumento SUBQUERY (Windows search)
 
 Una subconsulta es un archivo de búsqueda guardado (.search-ms) que puede usar como \* filtro para una nueva consulta. Los resultados de la subconsulta se usan como origen de la nueva consulta. Por ejemplo, supongamos que tiene varios archivos de búsqueda guardados que restringen una consulta por lista de distribución de correo electrónico: mydepartment.search-ms, teamproject.search-ms y corporatewide.search-ms. El uso `subquery` del argumento permite limitar las búsquedas de correo electrónico a cualquiera de estas búsquedas guardadas o a todas ellas.
 

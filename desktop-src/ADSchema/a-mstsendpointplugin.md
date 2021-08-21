@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TS-Endpoint-plugin
+title: Atributo ms-TS-Endpoint-Plugin
 description: Este atributo representa el nombre del complemento que controla la orquestación.
 ms.assetid: 99f6acd3-1e3c-45bd-bdd2-3add56630397
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-TS-Endpoint-plugin
-- msTSEndpointPlugin esquema de AD de atributos
+- Esquema de AD del atributo ms-TS-Endpoint-Plugin
+- Esquema de AD del atributo msTSEndpointPlugin
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28a7f86ca40df4a639a034af603d6a84f8845a92
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ea0c95f0bd5ccadba86b3684daf652756044a647bbd85b47cdda5537a0ccf0e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117837838"
 ---
-# <a name="ms-ts-endpoint-plugin-attribute"></a>atributo MS-TS-Endpoint-plugin
+# <a name="ms-ts-endpoint-plugin-attribute"></a>Atributo ms-TS-Endpoint-Plugin
 
 Este atributo representa el nombre del complemento que controla la orquestación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Complemento MS-TS-Endpoint-                       |
-| Nombre para mostrar de LDAP | msTSEndpointPlugin                          |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-TS-Endpoint-Plugin                       |
+| Ldap-Display-Name | msTSEndpointPlugin                          |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2072                     |
-| System-ID-GUID    | 3c08b569-801f-4158-b17b-e363d6ae696a        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 3c08b569-801f-4158-b17b-e363d6ae696a        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -51,13 +51,13 @@ Este atributo representa el nombre del complemento que controla la orquestación
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 0                                         |
 | Range-Upper            | 32767                                     |
 | Search-Flags           | 0x00000000                                |
@@ -72,13 +72,13 @@ Este atributo representa el nombre del complemento que controla la orquestación
 
 | Entrada | Value |
 |------------------------|-------------------------------------------|
-| Identificador de vínculo                | \-                                        |
+| Id. de vínculo                | \-                                        |
 | MAPI-Id                | \-                                        |
-| System-Only            | False                                     |
-| Tiene un único valor       | True                                      |
-| Está indexado             | False                                     |
-| En el catálogo global      | False                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                              |
+| System-Only            | Falso                                     |
+| Es de un solo valor       | Verdadero                                      |
+| Está indexado             | Falso                                     |
+| En el catálogo global      | Falso                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                              |
 | Range-Lower            | 0                                         |
 | Range-Upper            | 32767                                     |
 | Search-Flags           | 0x00000000                                |
