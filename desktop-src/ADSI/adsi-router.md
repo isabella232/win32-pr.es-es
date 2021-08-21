@@ -17,7 +17,7 @@ ms.locfileid: "118429123"
 ---
 # <a name="adsi-router"></a>Enrutador ADSI
 
-El enrutador ADSI se encuentra entre un cliente y los proveedores adsi. Implementa un conjunto básico de objetos que ofrecen características y servicios básicos comunes a todos los proveedores. Por lo tanto, cualquier característica admitida en el enrutador también se admite en cualquiera de los proveedores a menos que el proveedor elija lo contrario. El módulo de enrutador ADSI corresponde a Activeds.dll.
+El enrutador ADSI se encuentra entre un cliente y los proveedores adsi. Implementa un conjunto básico de objetos que ofrecen características y servicios básicos comunes a todos los proveedores. Por lo tanto, cualquier característica admitida en el enrutador también se admite en cualquiera de los proveedores a menos que el proveedor elija lo contrario. El módulo del enrutador ADSI corresponde a Activeds.dll.
 
  
 

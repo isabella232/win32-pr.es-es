@@ -37,7 +37,7 @@ Este atributo usa un valor FILETIME, que es un valor de 64 bits que representa e
 
 No es un atributo codificado. Debe establecerlo manualmente si desea incluirlo en los archivos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: 'Métodos TextureCubeArray:: TextureCubeArray GatherRed'
-description: 'Devuelve los componentes rojo de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal. | Métodos TextureCubeArray:: TextureCubeArray GatherRed'
+title: Métodos GatherRed de TextureCubeArray::TextureCubeArray
+description: Devuelve los componentes rojos de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal. | Métodos GatherRed de TextureCubeArray::TextureCubeArray
 ms.assetid: EF52E362-D65B-4D5C-A09F-5E67303502C5
 keywords:
-- GatherRed métodos HLSL
+- Métodos de GatherRed HLSL
 topic_type:
 - apiref
 api_type:
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 6c867b17c1f5613b6a72a9e29d29b8b0b659b0c1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c96fc7a02855baa27c9790132df1bfb49d99cd1dca8f84ced298aa0b9656e151
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104998089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118786283"
 ---
-# <a name="texturecubearraygatherred-methods"></a>TextureCubeArray:: GatherRed (métodos)
+# <a name="texturecubearraygatherred-methods"></a>Métodos TextureCubeArray::GatherRed
 
-Devuelve los componentes rojo de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal.
+Devuelve los componentes rojos de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,11 +29,11 @@ Devuelve los componentes rojo de los cuatro valores de textura que se utilizarí
 
 | Método                                                                | Descripción                                                                                                                                     |
 |:----------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GatherRed (S, Float, uint)**](tcubearray-gatherred-s-float-uint-.md)  | Devuelve los componentes rojo de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal, junto con el estado de asignación de mosaicos.<br/> |
+| [**GatherRed(S,float,uint)**](tcubearray-gatherred-s-float-uint-.md)  | Devuelve los componentes rojos de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal, junto con el estado de asignación de mosaicos.<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

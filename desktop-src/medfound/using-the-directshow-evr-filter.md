@@ -1,35 +1,35 @@
 ---
-description: Usar el filtro EVR de DirectShow
+description: Uso del DirectShow EVR
 ms.assetid: 4d85aed0-4b11-4c5f-bfc0-cad0a7d2f490
-title: Usar el filtro EVR de DirectShow
+title: Uso del DirectShow EVR
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02568a5ea9cbaa0310409a5a0966a2bea1bbfffe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3bc454b6d298546afdbb5a06b7081505d9ddd7c2ab87a816e79bdb13836e9a51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118737318"
 ---
-# <a name="using-the-directshow-evr-filter"></a>Usar el filtro EVR de DirectShow
+# <a name="using-the-directshow-evr-filter"></a>Uso del DirectShow EVR
 
-Para crear el filtro de representador de vídeo mejorado (EVR), llame a **CoCreateInstance**. El CLSID es CLSID \_ EnhancedVideoRenderer, definido en UUID. h. No es necesario llamar a [**MFStartup**](/windows/desktop/api/mfapi/nf-mfapi-mfstartup) o [**MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown) para usar el filtro EVR.
+Para crear el filtro de representador de vídeo mejorado (EVR), llame a **CoCreateInstance**. El CLSID es CLSID \_ EnhancedVideoRenderer, definido en uuids.h. No es necesario llamar a [**MFStartup**](/windows/desktop/api/mfapi/nf-mfapi-mfstartup) o [**MFShutdown para**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown) usar el filtro EVR.
 
-Para obtener más información sobre el uso del filtro EVR en una aplicación de DirectShow, vea [reproducción de audio y vídeo en DirectShow](../directshow/audio-video-playback-in-directshow.md).
+Para obtener más información sobre el uso del filtro EVR en una DirectShow, vea Reproducción de audio y vídeo [en DirectShow](../directshow/audio-video-playback-in-directshow.md).
 
-El filtro EVR se inicia con un PIN de entrada, que corresponde a la secuencia de referencia. Para agregar PIN para subflujos, consulte el filtro de la interfaz [**IEVRFilterConfig**](/windows/desktop/api/evr/nn-evr-ievrfilterconfig) y llame a [**IEVRFilterConfig:: SetNumberOfStreams**](/windows/desktop/api/evr/nf-evr-ievrfilterconfig-setnumberofstreams). Llame a este método antes de conectar cualquier clavija de entrada. El pin 0 siempre es el flujo de referencia. Conecte este PIN antes de cualquier otro PIN, ya que el formato del flujo de referencia puede limitar los formatos de subsecuencia que están disponibles.
+El filtro EVR comienza con un pin de entrada, que corresponde a la secuencia de referencia. Para agregar pines para substreams, consulte el filtro de la interfaz [**IEVRFilterConfig**](/windows/desktop/api/evr/nn-evr-ievrfilterconfig) y llame a [**IEVRFilterConfig::SetNumberOfStreams**](/windows/desktop/api/evr/nf-evr-ievrfilterconfig-setnumberofstreams). Llame a este método antes de conectar los pines de entrada. El pin 0 siempre es la secuencia de referencia. Conectar este pin antes que cualquier otro pin, ya que el formato de la secuencia de referencia podría limitar los formatos de subtransmisión disponibles.
 
-Antes de iniciar el gráfico, establezca la ventana de recorte de vídeo y el rectángulo de destino. Para obtener más información, vea [usar los controles de presentación de vídeo](using-the-video-display-controls.md).
+Antes de iniciar el gráfico, establezca la ventana de recorte de vídeo y el rectángulo de destino. Para obtener más información, vea [Usar los controles de visualización de vídeo.](using-the-video-display-controls.md)
 
-A diferencia del representador de mezcla de vídeo (VMR), EVR no tiene modos operativos (windowed, Windowless, etc.). En concreto:
+A diferencia del representador de mezcla de vídeo (VMR), el EVR no tiene modos operativos (ventanas, sin ventanas, etc.). En concreto:
 
--   EVR no admite el modo de ventana. La aplicación debe proporcionar la ventana de recorte.
--   EVR no tiene un modo sin procesar. Para reemplazar el presentador predeterminado, llame a [**IMFVideoRenderer:: InitializeRenderer**](/windows/desktop/api/evr/nf-evr-imfvideorenderer-initializerenderer).
--   El EVR no tiene un modo de mezcla. EVR siempre crea el mezclador. Si tiene un flujo de entrada, no es necesario llamar a [**SetNumberOfStreams**](/windows/desktop/api/evr/nf-evr-ievrfilterconfig-setnumberofstreams) para obligar a EVR a usar el mezclador.
+-   El EVR no admite el modo de ventana. La aplicación debe proporcionar la ventana de recorte.
+-   El EVR no tiene un modo sin representación. Para reemplazar el presentador predeterminado, llame [**a IMFVideoRenderer::InitializeRenderer**](/windows/desktop/api/evr/nf-evr-imfvideorenderer-initializerenderer).
+-   El EVR no tiene un modo de combinación. El EVR siempre crea el mezclador. Si tiene un flujo de entrada, no es necesario llamar a [**SetNumberOfStreams**](/windows/desktop/api/evr/nf-evr-ievrfilterconfig-setnumberofstreams) para forzar al EVR a usar el mezclador.
 
 ## <a name="filter-interfaces"></a>Interfaces de filtro
 
-El filtro EVR expone las siguientes interfaces. Algunas de estas interfaces se documentan en el SDK de DirectShow. Use **QueryInterface** para recuperar punteros a estas interfaces:
+El filtro EVR expone las interfaces siguientes. Algunas de estas interfaces se documentan en el SDK de DirectShow. Use **QueryInterface para** recuperar punteros a estas interfaces:
 
 -   [**IAMCertifiedOutputProtection**](/windows/win32/api/strmif/nn-strmif-iamcertifiedoutputprotection) (DirectShow)
 -   [**IAMFilterMiscFlags**](/windows/win32/api/strmif/nn-strmif-iamfiltermiscflags) (DirectShow)
@@ -39,15 +39,15 @@ El filtro EVR expone las siguientes interfaces. Algunas de estas interfaces se d
 -   [**IMediaEventSink**](/windows/win32/api/strmif/nn-strmif-imediaeventsink) (DirectShow)
 -   [**IMFGetService**](/windows/desktop/api/mfidl/nn-mfidl-imfgetservice)
 -   [**IMFVideoPositionMapper**](/windows/desktop/api/evr/nn-evr-imfvideopositionmapper)
--   [**IMFVideoRenderer**](/windows/desktop/api/evr/nn-evr-imfvideorenderer)
--   **IPersistStream**
+-   [**RENDERERVideoRenderer**](/windows/desktop/api/evr/nn-evr-imfvideorenderer)
+-   **Ipersiststream**
 -   [**IQualityControl**](/windows/win32/api/strmif/nn-strmif-iqualitycontrol) (DirectShow)
 -   [**IQualProp**](/previous-versions/windows/desktop/api/amvideo/nn-amvideo-iqualprop) (DirectShow)
 -   **ISpecifyPropertyPages**
 
-## <a name="input-pin-interfaces"></a>Interfaces de PIN de entrada
+## <a name="input-pin-interfaces"></a>Interfaces de pin de entrada
 
-Los pin de entrada del filtro EVR exponen las interfaces siguientes. Use **QueryInterface** para recuperar punteros a estas interfaces:
+Las clavijas de entrada del filtro EVR exponen las interfaces siguientes. Use **QueryInterface para** recuperar punteros a estas interfaces:
 
 -   [**IEVRVideoStreamControl**](/windows/desktop/api/evr9/nn-evr9-ievrvideostreamcontrol)
 -   [**IMemInputPin**](/windows/win32/api/strmif/nn-strmif-imeminputpin) (DirectShow)

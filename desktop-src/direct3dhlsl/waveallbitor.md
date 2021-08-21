@@ -1,9 +1,9 @@
 ---
 title: Función WaveActiveBitOr
-description: Devuelve el OR bit a bit de todos los valores de la expresión en todos los sentidos activos de la onda actual y lo replica de nuevo en todos los calles activos.
+description: Devuelve el OR bit a bit de todos los valores de la expresión en todos los sentidos activos de la onda actual y lo replica de nuevo en todos los sentidos activos.
 ms.assetid: FC8E5987-DAA7-41E6-A1AB-AA0E6A82CFC7
 keywords:
-- Función HLSL de WaveActiveBitOr
+- Función HlSL de WaveActiveBitOr
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "118504895"
 ---
 # <a name="waveactivebitor-function"></a>Función WaveActiveBitOr
 
-Devuelve el OR bit a bit de todos los valores de la expresión en todos los sentidos activos de la onda actual y lo replica de nuevo en todos los calles activos.
+Devuelve el OR bit a bit de todos los valores de la expresión en todos los sentidos activos de la onda actual y lo replica de nuevo en todos los sentidos activos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +55,7 @@ Esta función se admite desde el modelo de sombreador 6.0 en todas las fases del
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

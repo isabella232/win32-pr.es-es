@@ -1,9 +1,9 @@
 ---
-title: 'Buffer:: Operator (función)'
-description: 'Devuelve una variable de recurso de solo lectura. | Buffer:: Operator (función)'
+title: Buffer::Operator (Función)
+description: Devuelve una variable de recurso de solo lectura. | Buffer::Operator (Función)
 ms.assetid: 6a9e1176-439b-4565-9c7e-957d7c4045f0
 keywords:
-- Función de operador de escritura directa
+- Función de operador Direct Write
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0b811dd2409a00bb07f0b2441f6d57d4bd122f50
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6c2b89ec69fd81e4852be41521add3103b0b2e5472856cd6668f421ede46225a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104424175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118790437"
 ---
-# <a name="bufferoperator--function"></a>Buffer:: Operator (función)
+# <a name="bufferoperator--function"></a>Buffer::Operator (Función)
 
 Devuelve una variable de recurso de solo lectura.
 
@@ -36,12 +36,12 @@ R Operator[](
 
 <dl> <dt>
 
-*PDV* \[ de de\]
+*pos* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Posición de índice.
+Posición del índice.
 
 </dd> </dl>
 
@@ -51,13 +51,13 @@ Tipo: **R**
 
 Variable de recurso de solo lectura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -65,7 +65,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

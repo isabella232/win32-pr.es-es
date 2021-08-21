@@ -78,7 +78,7 @@ Una técnica contiene uno o varios pases; obtener un paso mediante un nombre o u
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

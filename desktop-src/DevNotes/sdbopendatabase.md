@@ -1,7 +1,7 @@
 ---
-description: Abre la base de datos de Shim especificada.
+description: Abre la base de datos de correcciones de compatibilidad (shim) especificada.
 ms.assetid: 148181d7-a20a-467c-984b-e32013960783
-title: SdbOpenDatabase función)
+title: Función SdbOpenDatabase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: ae0bca035f203593c43bb36e70119fbaf3024059
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: df0081d7373bf67d3df1723be7d5beb272ef7ee4c77c54da8a6985dfe250d7c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118161201"
 ---
-# <a name="sdbopendatabase-function"></a>SdbOpenDatabase función)
+# <a name="sdbopendatabase-function"></a>Función SdbOpenDatabase
 
-Abre la base de datos de Shim especificada.
+Abre la base de datos de correcciones de compatibilidad (shim) especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,23 +40,23 @@ PDB WINAPI SdbOpenDatabase(
 
 <dl> <dt>
 
-*pwszPath* \[ de\]
+*pwszPath* \[ En\]
 </dt> <dd>
 
-Ruta de acceso de la base de datos. Este parámetro no puede ser **null**.
+Ruta de acceso de la base de datos. Este parámetro no puede ser **NULL.**
 
 </dd> <dt>
 
-*ETYPE* \[ de\]
+*eType* \[ En\]
 </dt> <dd>
 
-Tipo de ruta de acceso. Consulte [**\_ tipo de ruta de acceso**](path-type.md) para obtener una lista de valores.
+Tipo de ruta de acceso. Vea [**PATH \_ TYPE (TIPO DE**](path-type.md) RUTA DE ACCESO) para obtener una lista de valores.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve un identificador a la base de datos de correcciones de compatibilidad.
+La función devuelve un identificador a la base de datos shim.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,8 +64,8 @@ La función devuelve un identificador a la base de datos de correcciones de comp
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

@@ -1,11 +1,11 @@
 ---
-title: Propiedad HeaderStyle de IResultsViewer (WdsView. h)
-description: Estilo del encabezado que se muestra en la vista.
+title: Propiedad IResultsViewer HeaderStyle (WdsView.h)
+description: Estilo de encabezado que se muestra en la vista.
 ms.assetid: 092a2ff2-eb88-4347-a81c-6a8005971ca9
 keywords:
-- Propiedad HeaderStyle características de entorno de Windows heredadas
-- HeaderStyle (propiedad) características del entorno heredado de Windows, interfaz IResultsViewer
-- Interfaz IResultsViewer características del entorno heredado de Windows, propiedad HeaderStyle
+- Características heredadas del entorno de Windows HeaderStyle
+- Propiedad HeaderStyle Legacy Windows Environment Features , IResultsViewer (interfaz)
+- IResultsViewer interface Legacy Windows Environment Features , HeaderStyle property
 topic_type:
 - apiref
 api_name:
@@ -18,23 +18,23 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ddc4d0ad56e1303914af712e2a9b6fa0fd416785
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6c7c60687c3d306c3f9c3fcbb551f2d746723c7223b1964d42386464729b4069
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118753896"
 ---
-# <a name="iresultsviewerheaderstyle-property"></a>IResultsViewer:: HeaderStyle (propiedad)
+# <a name="iresultsviewerheaderstyle-property"></a>IResultsViewer::HeaderStyle, propiedad
 
 > [!NOTE]
-> Windows Desktop Search 2. x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API de búsqueda de Windows](../search/-search-reference-entry-page.md) en su lugar. 
+> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API Windows Search en](../search/-search-reference-entry-page.md) su lugar. 
 
-Estilo del encabezado que se muestra en la vista.
+Estilo de encabezado que se muestra en la vista.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -51,18 +51,18 @@ HRESULT get_HeaderStyle(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establece el estilo del encabezado que se muestra.
+Establece el estilo del encabezado mostrado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP2 \[\]<br/>                                 |
-| Servidor mínimo compatible<br/> | Windows Server 2003 con \[ solo aplicaciones de escritorio de SP1\]<br/>                        |
-| Redistribuible<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>WdsView. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP2 \[\]<br/>                                 |
+| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio de SP1 \[\]<br/>                        |
+| Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 2.6.5<br/>                                        |
+| Header<br/>                   | <dl> <dt>WdsView.h</dt> </dl> |
 
 
 

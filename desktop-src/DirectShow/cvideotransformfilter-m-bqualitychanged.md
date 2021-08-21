@@ -1,7 +1,7 @@
 ---
-description: Valor booleano que indica si el filtro ha quitado fotogramas. Esta variable miembro controla cuándo el filtro envía eventos de cambio de calidad de EC \_ \_ .
+description: Valor booleano que indica si el filtro ha eliminado marcos. Esta variable miembro controla cuándo el filtro envía eventos \_ EC QUALITY \_ CHANGE.
 ms.assetid: fc85c6a8-b849-4acd-bcd7-49274c8ceb58
-title: 'Miembro CVideoTransformFilter:: m_bQualityChanged (Vtrans. h)'
+title: CVideoTransformFilter::m_bQualityChanged miembro (Vtrans.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6a40906a04a385d58e06a505195e9d61f07b349b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 60cf48188a4de7fe244bff2d008b3a27bd5824870aff52ee0647fbe2ad55c2d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118155869"
 ---
-# <a name="cvideotransformfilterm_bqualitychanged-member"></a>Miembro bQualityChanged CVideoTransformFilter:: m \_
+# <a name="cvideotransformfilterm_bqualitychanged-member"></a>Miembro CVideoTransformFilter::m \_ bQualityChanged
 
-Valor booleano que indica si el filtro ha quitado fotogramas. Esta variable miembro controla cuándo el filtro envía eventos de [**\_ \_ cambio de calidad de EC**](ec-quality-change.md) .
+Valor booleano que indica si el filtro ha eliminado marcos. Esta variable miembro controla cuándo el filtro envía eventos [**\_ EC QUALITY \_ CHANGE.**](ec-quality-change.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ BOOL m_bQualityChanged;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Vtrans. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Vtrans.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ BOOL m_bQualityChanged;
 
 <dl> <dt>
 
-[**Clase CVideoTransformFilter**](cvideotransformfilter.md)
+[**CVideoTransformFilter (clase)**](cvideotransformfilter.md)
 </dt> </dl>
 
  

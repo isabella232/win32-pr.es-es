@@ -1,7 +1,7 @@
 ---
-description: 'El método EndFlush finaliza una operación de vaciado. Este método invalida el método CTransformFilter:: EndFlush.'
+description: El método EndFlush finaliza una operación de vaciado. Este método invalida el método CTransformFilter::EndFlush.
 ms.assetid: e7dfc6f9-1630-426b-95b2-9814331b5e61
-title: Método CVideoTransformFilter. EndFlush (Vtrans. h)
+title: Método CVideoTransformFilter.EndFlush (Vtrans.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ca160bd2e3e66df3bcf6f293abe6f828309172c0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 359229e690715667d7bbfbe3d3a9134f41f5af9febc185885e08cde7d986896e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118155879"
 ---
-# <a name="cvideotransformfilterendflush-method"></a>CVideoTransformFilter. EndFlush, método
+# <a name="cvideotransformfilterendflush-method"></a>Método CVideoTransformFilter.EndFlush
 
-El `EndFlush` método finaliza una operación de vaciado. Este método invalida el método [**CTransformFilter:: EndFlush**](ctransformfilter-endflush.md) .
+El `EndFlush` método finaliza una operación de vaciado. Este método invalida el [**método CTransformFilter::EndFlush.**](ctransformfilter-endflush.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,9 +42,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve \_ si es correcto, o un código de error.
+Devuelve S \_ OK si se realiza correctamente o un código de error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método restablece todas las medidas de rendimiento internas del filtro.
 
@@ -54,8 +54,8 @@ Este método restablece todas las medidas de rendimiento internas del filtro.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Vtrans. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Vtrans.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Este método restablece todas las medidas de rendimiento internas del filtro.
 
 <dl> <dt>
 
-[**Clase CVideoTransformFilter**](cvideotransformfilter.md)
+[**CVideoTransformFilter (clase)**](cvideotransformfilter.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Representa una parte que se pueden administrar o se pueden implementar individualmente de un \_ SOFTWAREFEATURE CIM.
+description: Representa una parte que se puede administrar individualmente o que se puede implementar de un \_ objeto SoftwareFeature de CIM.
 ms.assetid: 96affc55-b001-4122-b883-3610bf95a786
-title: CIM_SoftwareElement (clase, administración de Hyper-V)
+title: CIM_SoftwareElement (administración de Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,16 +25,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1d11b428e9a17819f850ce210e6854e4f1d17e52
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6454b6080a4841ef261233ce304725ec4a08a1a793cfb657c87e20ef56592df0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103816251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118647365"
 ---
-# <a name="cim_softwareelement-class-hyper-v-management"></a>CIM_SoftwareElement (clase, administración de Hyper-V)
+# <a name="cim_softwareelement-class-hyper-v-management"></a>CIM_SoftwareElement (administración de Hyper-V)
 
-Representa una parte que se pueden administrar o se pueden implementar individualmente de un **\_ SoftwareFeature CIM**.
+Representa una parte que se puede administrar individualmente o que se puede implementar de un **\_ objeto SoftwareFeature de CIM.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,13 +59,13 @@ class CIM_SoftwareElement : CIM_LogicalElement
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ SoftwareElement** tiene estos tipos de miembros:
+La **clase \_ Cim SoftwareElement** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ SoftwareElement** tiene estas propiedades.
+La **clase \_ CIM SoftwareElement** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -78,14 +78,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Información del componente de software de DMTF \| 002,4 ")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.4")
 </dt> </dl>
 
 Identificador interno de la compilación del elemento de software.
 
 </dd> <dt>
 
-**Dese**
+**CodeSet**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -97,11 +97,11 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-La codificación de caracteres utilizada por el elemento de software, como UTF-8 y ISO8859-1.
+Codificación de caracteres utilizada por el elemento de software, como UTF-8 e ISO8859-1.
 
 </dd> <dt>
 
-**IdentificationCode**
+**Código de identificación**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -110,10 +110,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Software de subcomponentes DMTF \| 001,6 ")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| SubComponent Software \| 001.6")
 </dt> </dl>
 
-Identificador del fabricante del elemento de software. Suele ser una referencia de almacén (SKU) o un número de pieza.
+Identificador del fabricante del elemento de software. Suele ser una unidad de almacén (SKU) o un número de pieza.
 
 </dd> <dt>
 
@@ -126,14 +126,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Software de subcomponentes DMTF \| 001,7 ")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| SubComponent Software \| 001.7")
 </dt> </dl>
 
-Edición de idioma del elemento de software. Se deben usar los códigos de idioma definidos en el estándar ISO 639. Si el elemento representa una versión multilingüe o internacional, se debe usar la cadena "multilingüe".
+Edición de idioma del elemento de software. Se deben usar los códigos de idioma definidos en el estándar ISO 639. Si el elemento representa una versión multilingüe o internacional, se debe usar la cadena "Multilingüe".
 
 </dd> <dt>
 
-**Le**
+**Fabricante**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -142,7 +142,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Software de subcomponentes DMTF \| 001,3 ")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| SubComponent Software \| 001.3")
 </dt> </dl>
 
 Fabricante del elemento de software.
@@ -158,10 +158,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("nombre"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Name"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nombre usado para identificar el elemento de software.
+Nombre utilizado para identificar el elemento de software.
 
 </dd> <dt>
 
@@ -177,7 +177,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](/windows/desktop/CIMWin32Prov/cim-operatingsystem).**OtherTypeDescription**")
 </dt> </dl>
 
-El fabricante y el tipo de sistema operativo cuando la propiedad **TargetOperatingSystem** está establecida en **other** ("1").
+El fabricante y el tipo de sistema operativo cuando la **propiedad TargetOperatingSystem** se establece en **Other** ("1").
 
 </dd> <dt>
 
@@ -190,7 +190,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,4 ")
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.4")
 </dt> </dl>
 
 Número de serie asignado del elemento de software.
@@ -206,32 +206,32 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Identificador del elemento de software que se va a usar junto con otras claves para crear de forma única el elemento.
+Identificador del elemento de software que se usará junto con otras claves para crear una identificación única del elemento.
 
 </dd> <dt>
 
 **SoftwareElementState**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **Clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Estado del ciclo de vida del elemento de software.
 
-\- Un SoftwareElement en el estado implementable describe los detalles necesarios para distribuirlo correctamente y los detalles (comprobaciones y acciones) necesarios para moverlo al estado instalable (es decir, el siguiente estado).
+\- Un SoftwareElement en estado implementable describe los detalles necesarios para distribuirlo correctamente y los detalles (comprobaciones y acciones) necesarios para moverlo al estado instalable (es decir, el siguiente estado).
 
-\- Un SoftwareElement en el estado instalable describe los detalles necesarios para instalarlo correctamente y los detalles (comprobaciones y acciones) necesarios para crear un elemento en el estado ejecutable (es decir, el siguiente estado).
+\- Un SoftwareElement en estado instalable describe los detalles necesarios para instalarlo correctamente y los detalles (comprobaciones y acciones) necesarios para crear un elemento en el estado ejecutable (es decir, el siguiente estado).
 
-\- Un SoftwareElement en el estado ejecutable describe los detalles necesarios para iniciarlo correctamente y los detalles (comprobaciones y acciones) necesarios para moverlo al estado en ejecución (es decir, el siguiente estado).
+\- Un SoftwareElement en estado ejecutable describe los detalles necesarios para iniciarlo correctamente y los detalles (Comprobaciones y acciones) necesarios para moverlo al estado en ejecución (es decir, el siguiente estado).
 
 \- Un SoftwareElement en estado de ejecución describe los detalles necesarios para administrar el elemento iniciado.
 
@@ -239,7 +239,7 @@ Estado del ciclo de vida del elemento de software.
 
 <span id="Deployable"></span><span id="deployable"></span><span id="DEPLOYABLE"></span>
 
-Se pueden **implementar** (0)
+**Implementable** (0)
 
 
 </dt> <dd></dd> <dt>
@@ -253,14 +253,14 @@ Se pueden **implementar** (0)
 
 <span id="Executable"></span><span id="executable"></span><span id="EXECUTABLE"></span>
 
-**Archivo ejecutable** (2)
+**Ejecutable** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-En **ejecución** (3)
+**En** ejecución (3)
 
 
 </dt> <dd></dd> </dl>
@@ -270,16 +270,16 @@ En **ejecución** (3)
 **TargetOperatingSystem**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Software de subcomponentes DMTF \| 001,8 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](/windows/desktop/CIMWin32Prov/cim-operatingsystem).**OSType**")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| SubComponent Software \| 001.8"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](/windows/desktop/CIMWin32Prov/cim-operatingsystem).**OSType**")
 </dt> </dl>
 
-El sistema operativo del elemento de software. El valor de esta propiedad no garantiza que sea ejecutable binario.
+Sistema operativo del elemento de software. El valor de esta propiedad no garantiza que sea ejecutable binario.
 
 <dt>
 
@@ -292,14 +292,14 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="MACOS"></span><span id="macos"></span>
 
-**MacOS** (2)
+**MACOS** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -348,7 +348,7 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="AIX"></span><span id="aix"></span>
 
-**Aix** (9)
+**AIX** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -369,7 +369,7 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-**Os/2** (12)
+**SISTEMA OPERATIVO/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -383,7 +383,7 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="MSDOS"></span><span id="msdos"></span>
 
-**Msdos** (14)
+**MSDOS** (14)
 
 
 </dt> <dd></dd> <dt>
@@ -397,28 +397,28 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="WIN95"></span><span id="win95"></span>
 
-**Win95** (16)
+**WIN95** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WIN98"></span><span id="win98"></span>
 
-**Win98** (17)
+**WIN98** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WINNT"></span><span id="winnt"></span>
 
-**WinNT** (18)
+**WINNT** (18)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WINCE"></span><span id="wince"></span>
 
-**WinCE** (19)
+**WINCE** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -446,14 +446,14 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="DC_OS"></span><span id="dc_os"></span>
 
-**DC/os** (23)
+**DC/OS** (23)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>
 
-**UNIX que depende** de (24)
+**Reliant UNIX** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -481,7 +481,7 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="IRIX"></span><span id="irix"></span>
 
-**IRIX** (28)
+**IIONES** (28)
 
 
 </dt> <dd></dd> <dt>
@@ -516,14 +516,14 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="HP_NonStop_OS"></span><span id="hp_nonstop_os"></span><span id="HP_NONSTOP_OS"></span>
 
-**Sistema operativo HP no stop** (33)
+**SISTEMA OPERATIVO HP nonStop** (33)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="HP_NonStop_OSS"></span><span id="hp_nonstop_oss"></span><span id="HP_NONSTOP_OSS"></span>
 
-**Sistemas operativos HP Nonstop** (34)
+**HP NonStop OSS** (34)
 
 
 </dt> <dd></dd> <dt>
@@ -537,21 +537,21 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="LINUX"></span><span id="linux"></span>
 
-**Linux** (36)
+**LINUX** (36)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lynx"></span><span id="lynx"></span><span id="LYNX"></span>
 
-**Lynx** (37)
+**Estorba** (37)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="XENIX"></span><span id="xenix"></span>
 
-**Xenix** (38)
+**XENIX** (38)
 
 
 </dt> <dd></dd> <dt>
@@ -565,7 +565,7 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>
 
-**UNIX interactivo** (40)
+**Interactive UNIX** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -607,7 +607,7 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>
 
-**Kernel de Mach** (46)
+**Kernel de MACH** (46)
 
 
 </dt> <dd></dd> <dt>
@@ -649,7 +649,7 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>
 
-**Menta** (52)
+**MiNT** (52)
 
 
 </dt> <dd></dd> <dt>
@@ -726,14 +726,14 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="Windows__R__Me"></span><span id="windows__r__me"></span><span id="WINDOWS__R__ME"></span>
 
-**Windows (R) me** (63)
+**Windows (R) Me** (63)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Caldera_Open_UNIX"></span><span id="caldera_open_unix"></span><span id="CALDERA_OPEN_UNIX"></span>
 
-**Caldera Open UNIX** (64)
+**Puerta Open UNIX** (64)
 
 
 </dt> <dd></dd> <dt>
@@ -775,14 +775,14 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="Microsoft_Windows_Server_2003_64-Bit"></span><span id="microsoft_windows_server_2003_64-bit"></span><span id="MICROSOFT_WINDOWS_SERVER_2003_64-BIT"></span>
 
-**Microsoft Windows Server 2003 64 bits** (70)
+**Microsoft Windows Server 2003 de 64 bits** (70)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Windows_XP_64-Bit"></span><span id="windows_xp_64-bit"></span><span id="WINDOWS_XP_64-BIT"></span>
 
-**Windows XP 64 bits** (71)
+**Windows XP de 64 bits** (71)
 
 
 </dt> <dd></dd> <dt>
@@ -803,14 +803,14 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="Windows_Vista_64-Bit"></span><span id="windows_vista_64-bit"></span><span id="WINDOWS_VISTA_64-BIT"></span>
 
-**Windows Vista 64 bits** (74)
+**Windows Vista de 64 bits** (74)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Windows_Embedded_for_Point_of_Service"></span><span id="windows_embedded_for_point_of_service"></span><span id="WINDOWS_EMBEDDED_FOR_POINT_OF_SERVICE"></span>
 
-**Windows Embedded para el punto de servicio** (75)
+**Windows embedded for Point of Service** (75)
 
 
 </dt> <dd></dd> <dt>
@@ -824,14 +824,14 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="Microsoft_Windows_Server_2008_64-Bit"></span><span id="microsoft_windows_server_2008_64-bit"></span><span id="MICROSOFT_WINDOWS_SERVER_2008_64-BIT"></span>
 
-**Microsoft Windows Server 2008 64 bits** (77)
+**Microsoft Windows Server 2008 de 64 bits** (77)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="FreeBSD_64-Bit"></span><span id="freebsd_64-bit"></span><span id="FREEBSD_64-BIT"></span>
 
-**FreeBSD 64 bits** (78)
+**FreeBSD de 64 bits** (78)
 
 
 </dt> <dd></dd> <dt>
@@ -845,56 +845,56 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="RedHat_Enterprise_Linux_64-Bit"></span><span id="redhat_enterprise_linux_64-bit"></span><span id="REDHAT_ENTERPRISE_LINUX_64-BIT"></span>
 
-**RedHat Enterprise Linux 64 bits** (80)
+**RedHat Enterprise Linux de 64 bits** (80)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Solaris_64-Bit"></span><span id="solaris_64-bit"></span><span id="SOLARIS_64-BIT"></span>
 
-**Solaris 64** bits (81)
+**Solaris de 64 bits** (81)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SUSE"></span><span id="suse"></span>
 
-**SuSE** (82)
+**SUSE** (82)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SUSE_64-Bit"></span><span id="suse_64-bit"></span><span id="SUSE_64-BIT"></span>
 
-**SUSE 64 bits** (83)
+**SUSE de 64 bits** (83)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SLES"></span><span id="sles"></span>
 
-**Sles** (84)
+**SLES** (84)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SLES_64-Bit"></span><span id="sles_64-bit"></span><span id="SLES_64-BIT"></span>
 
-**SLES 64-bit** (85)
+**SLES de 64 bits** (85)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Novell_OES"></span><span id="novell_oes"></span><span id="NOVELL_OES"></span>
 
-**Novell OES** (86)
+**OES Desasoy** (86)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Novell_Linux_Desktop"></span><span id="novell_linux_desktop"></span><span id="NOVELL_LINUX_DESKTOP"></span>
 
-**Novell Linux Desktop** (87)
+**Escritorio De Linux de Linux** de Linux (87)
 
 
 </dt> <dd></dd> <dt>
@@ -915,21 +915,21 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="Mandriva_64-Bit"></span><span id="mandriva_64-bit"></span><span id="MANDRIVA_64-BIT"></span>
 
-**Mandriva 64 bits** (90)
+**Mandriva de 64 bits** (90)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="TurboLinux"></span><span id="turbolinux"></span><span id="TURBOLINUX"></span>
 
-**Turbolinux** (91)
+**TurboLinux** (91)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="TurboLinux_64-Bit"></span><span id="turbolinux_64-bit"></span><span id="TURBOLINUX_64-BIT"></span>
 
-**TurboLinux 64** bits (92)
+**TurboLinux de 64 bits** (92)
 
 
 </dt> <dd></dd> <dt>
@@ -943,7 +943,7 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="Ubuntu_64-Bit"></span><span id="ubuntu_64-bit"></span><span id="UBUNTU_64-BIT"></span>
 
-**Ubuntu 64 bits** (94)
+**Ubuntu de 64 bits** (94)
 
 
 </dt> <dd></dd> <dt>
@@ -957,49 +957,49 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="Debian_64-Bit"></span><span id="debian_64-bit"></span><span id="DEBIAN_64-BIT"></span>
 
-**Debian 64** bits (96)
+**Debian de 64 bits** (96)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Linux_2.4.x"></span><span id="linux_2.4.x"></span><span id="LINUX_2.4.X"></span>
 
-**Linux 2.4. x** (97)
+**Linux 2.4.x** (97)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Linux_2.4.x_64-Bit"></span><span id="linux_2.4.x_64-bit"></span><span id="LINUX_2.4.X_64-BIT"></span>
 
-**Linux 2.4. x 64** bits (98)
+**Linux 2.4.x de 64 bits** (98)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Linux_2.6.x"></span><span id="linux_2.6.x"></span><span id="LINUX_2.6.X"></span>
 
-**Linux 2.6. x** (99)
+**Linux 2.6.x** (99)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Linux_2.6.x_64-Bit"></span><span id="linux_2.6.x_64-bit"></span><span id="LINUX_2.6.X_64-BIT"></span>
 
-**Linux 2.6. x 64** bits (100)
+**Linux 2.6.x de 64 bits** (100)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Linux_64-Bit"></span><span id="linux_64-bit"></span><span id="LINUX_64-BIT"></span>
 
-**Linux 64 bits** (101)
+**Linux de 64 bits** (101)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Other_64-Bit"></span><span id="other_64-bit"></span><span id="OTHER_64-BIT"></span>
 
-**Otro 64 bits** (102)
+**Otros 64 bits** (102)
 
 
 </dt> <dd></dd> <dt>
@@ -1027,35 +1027,35 @@ El sistema operativo del elemento de software. El valor de esta propiedad no gar
 
 <span id="CentOS_32-bit"></span><span id="centos_32-bit"></span><span id="CENTOS_32-BIT"></span>
 
-**De 32** bits (106)
+**CentOS de 32 bits** (106)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="CentOS_64-bit"></span><span id="centos_64-bit"></span><span id="CENTOS_64-BIT"></span>
 
-**De 64** bits (107)
+**CentOS de 64 bits** (107)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Oracle_Enterprise_Linux_32-bit"></span><span id="oracle_enterprise_linux_32-bit"></span><span id="ORACLE_ENTERPRISE_LINUX_32-BIT"></span>
 
-**Oracle Enterprise Linux 32 bits** (108)
+**Oracle Enterprise Linux de 32 bits** (108)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Oracle_Enterprise_Linux_64-bit"></span><span id="oracle_enterprise_linux_64-bit"></span><span id="ORACLE_ENTERPRISE_LINUX_64-BIT"></span>
 
-**Oracle Enterprise Linux 64 bits** (109)
+**Oracle Enterprise Linux de 64 bits** (109)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="eComStation_32-bitx"></span><span id="ecomstation_32-bitx"></span><span id="ECOMSTATION_32-BITX"></span>
 
-**eComStation 32-BITX** (110)
+**eComStation 32 bitsx** (110)
 
 
 </dt> <dd></dd> </dl>
@@ -1071,10 +1071,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Software de subcomponentes DMTF \| 001,4 ")
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| SubComponent Software \| 001.4")
 </dt> </dl>
 
-La versión de software con el formato *<Major>* . *<Minor>* .*<Revision>* o *<Major>* . *<Minor><letter><revision>* .
+La versión de software con el formato *<Major>* *<Minor>* .*<Revision>* o *<Major>* *<Minor><letter><revision>* .
 
 </dd> </dl>
 
@@ -1082,21 +1082,21 @@ La versión de software con el formato *<Major>* . *<Minor>* .*<Revision>* o *<M
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_LOGICALELEMENT CIM**](cim-logicalelement.md)
+[**Elemento \_ lógico CIM**](cim-logicalelement.md)
 </dt> </dl>
 
  

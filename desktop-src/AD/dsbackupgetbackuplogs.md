@@ -90,7 +90,7 @@ El autor de la llamada no tiene los privilegios de acceso adecuados para llamar 
 **ERROR \_ PARÁMETRO NO \_ VÁLIDO**
 </dt> <dd>
 
-*hbc,* *pszBackupLogFiles* o *pwSize* no es válido.
+*hbc,* *pszBackupLogFiles* o *vhSize no* es válido.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ La **función DsBackupGetBackupLogs proporciona** una lista de los archivos de r
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

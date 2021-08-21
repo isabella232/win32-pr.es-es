@@ -4,7 +4,7 @@ description: La interfaz ID3DX11EffectType tiene acceso a las variables de efect
 ms.assetid: 700076ee-a5fe-4af2-a5f4-053c05d8ddf0
 keywords:
 - Interfaz ID3DX11EffectType direct3D 11
-- Interfaz ID3DX11EffectType Direct3D 11 , descrita
+- Interfaz ID3DX11EffectType Direct3D 11, descrita
 topic_type:
 - apiref
 api_name:
@@ -71,7 +71,7 @@ Para obtener información sobre un tipo de efecto de una variable de efecto, lla
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

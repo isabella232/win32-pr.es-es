@@ -1,7 +1,7 @@
 ---
-description: La propiedad ModuleFiles del objeto GetFiles devuelve todas las claves principales de la tabla de archivos para el módulo actualmente abierto.
+description: La propiedad ModuleFiles del objeto GetFiles devuelve todas las claves principales de la tabla File para el módulo abierto actualmente.
 ms.assetid: e1c8049c-b271-4def-abde-89ea99393574
-title: Propiedad GetFiles. ModuleFiles (Mergemod. h)
+title: Propiedad GetFiles.ModuleFiles (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: d13d624f2cfb24bfa6946ca6c45fe799602f55b3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b4b7d498979c94de048e72058df4c8bf87fb8607220efe808554d66deb5d89ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118635945"
 ---
-# <a name="getfilesmodulefiles-property"></a>Propiedad GetFiles. ModuleFiles
+# <a name="getfilesmodulefiles-property"></a>GetFiles.ModuleFiles, propiedad
 
-La propiedad **ModuleFiles** del objeto [**GetFiles**](getfiles-object.md) devuelve todas las claves principales de la [tabla de archivos](file-table.md) para el módulo actualmente abierto. Las claves principales se devuelven como una colección de cadenas. El módulo debe abrirse mediante una llamada al método [**OpenModule**](merge-openmodule.md) del [objeto Merge](merge-object.md) antes de llamar a **ModuleFiles**.
+**La propiedad ModuleFiles** del [**objeto GetFiles**](getfiles-object.md) devuelve todas las claves principales de la [tabla File](file-table.md) para el módulo abierto actualmente. Las claves principales se devuelven como una colección de cadenas. El módulo debe abrirse mediante una llamada al método [**OpenModule**](merge-openmodule.md) del objeto [Merge antes](merge-object.md) de llamar a **ModuleFiles.**
 
 Esta propiedad es de solo lectura.
 
@@ -38,24 +38,24 @@ propVal = GetFiles.ModuleFiles
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Tenga en cuenta que el orden de los archivos enumerados en la colección puede no estar en la misma secuencia que se muestra en la tabla de archivos.
+Tenga en cuenta que es posible que el orden de los archivos enumerados en la colección no esté en la misma secuencia que en la tabla Archivo.
 
-Si el módulo no tiene ninguna tabla de archivos o no contiene ningún archivo en el idioma en particular, ModuleFiles devuelve una colección vacía de cadenas.
+Si el módulo no tiene ninguna tabla File o no contiene archivos en el lenguaje determinado, ModuleFiles devuelve una colección vacía de cadenas.
 
 ### <a name="c"></a>C++
 
-Consulte [**Get \_ ModuleFiles**](/windows/win32/api/mergemod/nf-mergemod-imsmgetfiles-get_modulefiles) function.
+Consulte [**la función get \_ ModuleFiles.**](/windows/win32/api/mergemod/nf-mergemod-imsmgetfiles-get_modulefiles)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versión<br/> | Mergemod.dll 1,0 o posterior<br/>                                                    |
-| Encabezado<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
+| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

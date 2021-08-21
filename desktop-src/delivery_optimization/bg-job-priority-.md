@@ -1,10 +1,10 @@
 ---
-title: Enumeración BG_JOB_PRIORITY (Deliveryoptimization. h)
-description: La enumeración BG_JOB_PRIORITY define los valores constantes que especifican el nivel de prioridad de un trabajo.
+title: BG_JOB_PRIORITY enumeración (Deliveryoptimization.h)
+description: La BG_JOB_PRIORITY enumeración define los valores constantes que especifican el nivel de prioridad de un trabajo.
 ms.assetid: AF1F1F6D-473A-49E5-B24D-644A70DF304C
 keywords:
-- Enumeración BG_JOB_PRIORITY
-- Enumeración BG_JOB_PRIORITY
+- BG_JOB_PRIORITY enumeración
+- BG_JOB_PRIORITY enumeración
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 45b1f0f3029cc6157f2f100b3324165cfac1b03b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ddeb3ea128f173d53c71467d4098c1b777beea48f7b1304922f7468d55fc3b89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118810959"
 ---
-# <a name="bg_job_priority-enumeration"></a>Enumeración BG_JOB_PRIORITY
+# <a name="bg_job_priority-enumeration"></a>BG_JOB_PRIORITY enumeración
 
-La enumeración **BG_JOB_PRIORITY** define los valores constantes que especifican el nivel de prioridad de un trabajo.
+La **BG_JOB_PRIORITY** enumeración define los valores constantes que especifican el nivel de prioridad de un trabajo.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -62,18 +62,18 @@ Transfiere el trabajo en segundo plano. Las transferencias en segundo plano usan
 <span id="BG_JOB_PRIORITY_NORMAL"></span><span id="bg_job_priority_normal"></span>**BG_JOB_PRIORITY_NORMAL**
 </dt> <dd>
 
-El comportamiento es el mismo para todos los trabajos que no están en primer plano. Vea los comentarios en BG_JOB_PRIORITY_HIGH para obtener más información.
+El comportamiento de DO es el mismo para todos los trabajos que no son de primer plano. Consulte los comentarios en BG_JOB_PRIORITY_HIGH para obtener más información.
 
 </dd> <dt>
 
 <span id="BG_JOB_PRIORITY_LOW"></span><span id="bg_job_priority_low"></span>**BG_JOB_PRIORITY_LOW**
 </dt> <dd>
 
-El comportamiento es el mismo para todos los trabajos que no están en primer plano. Vea los comentarios en BG_JOB_PRIORITY_HIGH para obtener más información.
+El comportamiento de DO es el mismo para todos los trabajos que no son de primer plano. Consulte los comentarios en BG_JOB_PRIORITY_HIGH para obtener más información.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Se pueden realizar varias transferencias en primer plano y en segundo plano simultáneamente.
 
@@ -81,22 +81,22 @@ Se pueden realizar varias transferencias en primer plano y en segundo plano simu
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1709 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Windows Server, versión 1709 \[ solo para aplicaciones de escritorio\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**IBackgroundCopyJob:: GetPriority (**](ibackgroundcopyjob-getpriority.md)
+[**IBackgroundCopyJob::GetPriority**](ibackgroundcopyjob-getpriority.md)
 </dt> <dt>
 
-[**IBackgroundCopyJob:: SetPriority**](ibackgroundcopyjob-setpriority.md)
+[**IBackgroundCopyJob::SetPriority**](ibackgroundcopyjob-setpriority.md)
 </dt> </dl>
 
  

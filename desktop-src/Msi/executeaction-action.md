@@ -1,31 +1,31 @@
 ---
-description: La acción ExecuteAction inicia la secuencia de ejecución mediante la propiedad EXECUTEACTION para determinar el tipo de instalación que se va a realizar.
+description: La acción ExecuteAction inicia la secuencia de ejecución mediante la propiedad EXECUTEACTION para determinar qué tipo de instalación se va a realizar.
 ms.assetid: 61878317-ac87-4f6e-9375-12a78969e29e
 title: Acción ExecuteAction
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2970a0fb4e9297264071769ac7415cd2acf866b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20555af337f8774aec6c58769f2235da97ae763e044665e407a8dc29e75de750
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118636892"
 ---
 # <a name="executeaction-action"></a>Acción ExecuteAction
 
-La acción ExecuteAction inicia la secuencia de ejecución mediante la propiedad [**ExecuteAction**](executeaction.md) para determinar el tipo de instalación que se va a realizar.
+La acción ExecuteAction inicia la secuencia de ejecución mediante la [**propiedad EXECUTEACTION**](executeaction.md) para determinar qué tipo de instalación se va a realizar.
 
 ## <a name="sequence-restrictions"></a>Restricciones de secuencia
 
-Esta acción se debe secuenciar después de que se complete toda la recopilación de información necesaria para iniciar la instalación. Se pueden secuenciar acciones adicionales después de la acción ExecuteAction en la [tabla InstallUISequence](installuisequence-table.md)y la [tabla AdminUISequence](adminuisequence-table.md). Normalmente, una secuencia comienza con acciones de [*costo*](c-gly.md) , como la [acción CostInitialize](costinitialize-action.md), seguida de las acciones de la interfaz de usuario y, a continuación, la acción ExecuteAction.
+Esta acción debe secuenciarse una vez completada toda la recopilación de información necesaria para iniciar la instalación. Se pueden secuenciar acciones adicionales después de la acción ExecuteAction en la [tabla InstallUISequence](installuisequence-table.md)y la [tabla AdminUISequence](adminuisequence-table.md). Normalmente, una secuencia [](c-gly.md) comienza con acciones de cálculo del costo, como la acción [CostInitialize](costinitialize-action.md), seguidas de las acciones de la interfaz de usuario y, a continuación, la acción ExecuteAction.
 
 ## <a name="actiondata-messages"></a>Mensajes ActionData
 
-No hay mensajes ActionData.
+No hay ningún mensaje ActionData.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La acción ExecuteAction se ejecuta con privilegios del sistema si está habilitado el servicio de instalador. Las acciones de nivel superior, como la [acción de instalación](install-action.md), la [acción de anuncio](advertise-action.md)y la acción de [Administrador](admin-action.md) incluyen lógica interna que determina si la llamada a la acción de ExecuteAction requiere la secuencia de ejecución o la secuencia de interfaz de usuario para ejecutarse.
+La acción ExecuteAction se ejecuta con privilegios del sistema si el servicio de instalador está habilitado. Las acciones de nivel superior, como la acción [INSTALL](install-action.md), la acción [ADVERTISE](advertise-action.md)y la acción [ADMIN](admin-action.md) incluyen lógica interna que determina si la llamada a la acción ExecuteAction requiere que se ejecute la secuencia de ejecución o la secuencia de la interfaz de usuario.
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -1,19 +1,19 @@
 ---
-description: El tipo de datos de identificador de SCE \_ es un identificador opaco proporcionado por el conjunto de herramientas de configuración de seguridad. Lo usan \_ las funciones PFSCE Query \_ info y PFSCE \_ set \_ info support para pasar información entre los datos adjuntos y la base de datos de seguridad.
+description: El tipo de datos SCE HANDLE es un identificador \_ opaco proporcionado por el conjunto de herramientas de configuración de seguridad. Las funciones de compatibilidad de PFSCE QUERY INFO y PFSCE SET INFO lo usan para pasar información entre los datos adjuntos y la \_ base de datos de \_ \_ \_ seguridad.
 ms.assetid: 8db91e6f-b31e-40c6-a158-b4b3b00ba0c0
-title: SCE_HANDLE (scesvc. h)
+title: SCE_HANDLE (Scesvc.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fef21dbe03d97dfa14537d5df132ba3cb222643
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 92e9023cb03a906b154c8bedd70370c5e3c3d9a4679f71504102e222ae0442d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118893536"
 ---
-# <a name="sce_handle"></a>identificador de SCE \_
+# <a name="sce_handle"></a>Identificador \_ de SCE
 
-El tipo de datos de **\_ identificador de SCE** es un identificador opaco proporcionado por el conjunto de herramientas de configuración de seguridad. Lo usan las funciones [**PFSCE \_ query \_ info**](/windows/win32/api/scesvc/nc-scesvc-pfsce_query_info) y [**PFSCE \_ set \_ info**](/windows/win32/api/scesvc/nc-scesvc-pfsce_set_info) support para pasar información entre los datos adjuntos y la base de datos de seguridad.
+El **tipo de datos \_ SCE HANDLE** es un identificador opaco proporcionado por el conjunto de herramientas de configuración de seguridad. Las funciones de compatibilidad [**DE PFSCE \_ QUERY \_ INFO**](/windows/win32/api/scesvc/nc-scesvc-pfsce_query_info) y [**PFSCE \_ SET \_ INFO**](/windows/win32/api/scesvc/nc-scesvc-pfsce_set_info) lo usan para pasar información entre los datos adjuntos y la base de datos de seguridad.
 
 
 ```C++
@@ -26,11 +26,11 @@ typedef PVOID SCE_HANDLE;
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Scesvc. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                |
+| Header<br/>                   | <dl> <dt>Scesvc.h</dt> </dl> |
 
 
 
@@ -38,10 +38,10 @@ typedef PVOID SCE_HANDLE;
 
 <dl> <dt>
 
-[**\_información de consulta de PFSCE \_**](/windows/win32/api/scesvc/nc-scesvc-pfsce_query_info)
+[**INFORMACIÓN DE CONSULTA \_ PFSCE \_**](/windows/win32/api/scesvc/nc-scesvc-pfsce_query_info)
 </dt> <dt>
 
-[**PFSCE \_ establecer \_ información**](/windows/win32/api/scesvc/nc-scesvc-pfsce_set_info)
+[**INFORMACIÓN DEL CONJUNTO DE PFSCE \_ \_**](/windows/win32/api/scesvc/nc-scesvc-pfsce_set_info)
 </dt> </dl>
 
  

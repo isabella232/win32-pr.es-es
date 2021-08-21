@@ -1,26 +1,26 @@
 ---
 title: Código de ejemplo para detectar colisiones de nomenclatura de esquemas
-description: En este tema se incluye un ejemplo de código que detecta colisiones de nomenclatura de esquemas.
+description: En este tema se incluye un ejemplo de código que detecta conflictos de nomenclatura de esquemas.
 ms.assetid: e56cefcf-ea34-4217-9aa7-2f0d4a4d06a4
 ms.tgt_platform: multiple
 keywords:
-- Código de ejemplo para detectar colisiones de nomenclatura de esquemas AD
+- Código de ejemplo para detectar colisiones de nomenclatura de esquemas de AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 861b7a93a53c47a234b63b5f52887a22557a2d1b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7203cb9c1d03b02c77a57dde6ebfdda004f21792b7fab94bc37ccfe07e6b0eae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103773189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118694011"
 ---
 # <a name="example-code-for-detecting-schema-naming-collisions"></a>Código de ejemplo para detectar colisiones de nomenclatura de esquemas
 
-En este tema se incluye un ejemplo de código que detecta colisiones de nomenclatura de esquemas.
+En este tema se incluye un ejemplo de código que detecta conflictos de nomenclatura de esquemas.
 
-El siguiente ejemplo de código de C/C++ consulta el esquema para los atributos de nomenclatura de claves en un objeto **ClassSchema** o **attributeSchema** .
+En el siguiente ejemplo de código de C/C++ se consulta el esquema para los atributos de nomenclatura de claves en un **objeto classSchema** **o attributeSchema.**
 
-Devuelve **true** si se encuentran atributos o clases en conflicto. Devuelve **false** si el atributo o la clase con el **CN**, **lDAPDisplayName**, **OID**, **schemaIDGUID** o **LinkId** especificado no entra en conflicto con el esquema y, por tanto, es seguro agregarlo al esquema.
+Devuelve **TRUE si** se encuentran atributos o clases en conflicto. Devuelve **FALSE** si el atributo o la clase con el **cn**, **lDAPDisplayName**, **OID**, **schemaIDGUID** o **linkID** especificados no entra en conflicto con el esquema y, por lo tanto, es seguro agregarlo al esquema.
 
 
 ```C++
@@ -177,9 +177,9 @@ HRESULT FindCollidingAttributesOrClasses(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

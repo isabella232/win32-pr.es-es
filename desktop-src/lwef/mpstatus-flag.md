@@ -1,10 +1,10 @@
 ---
-title: Enumeración MPSTATUS_FLAG (MpClient. h)
-description: Posibles marcas de bits de estado de producto generales.
+title: MPSTATUS_FLAG enumeración (MpClient.h)
+description: Posibles marcas de bits de estado general del producto.
 ms.assetid: BF2E6506-E76A-4785-8E91-99937B413548
 keywords:
-- MPSTATUS_FLAG enumeración características de entorno heredado de Windows
-- PMPSTATUS_FLAG el puntero de enumeración características de entorno heredado de Windows
+- MPSTATUS_FLAG enumeración heredada de Windows environment
+- PMPSTATUS_FLAG puntero de enumeración heredados Windows environment
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c7175980c09c63938be04626091c31b53335756
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4d850f0e8de9a3b0ed18a1a1353dfdef40d41bcb1ce4d17265ec245e82ba73f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105665979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747039"
 ---
-# <a name="mpstatus_flag-enumeration"></a>\_Enumeración de marcas MPSTATUS
+# <a name="mpstatus_flag-enumeration"></a>Enumeración \_ MPSTATUS FLAG
 
-Posibles marcas de bits de estado de producto generales.
+Posibles marcas de bits de estado general del producto.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -67,189 +67,189 @@ typedef enum tagMPSTATUS_FLAG {
 
 <dl> <dt>
 
-<span id="MP_STATUS_FLAG_NONE"></span><span id="mp_status_flag_none"></span>**marca de estado de MP \_ \_ \_ ninguno**
+<span id="MP_STATUS_FLAG_NONE"></span><span id="mp_status_flag_none"></span>**MARCA \_ DE ESTADO DE MP \_ \_ NONE**
 </dt> <dd>
 
-No se ha establecido ninguna marca de estado (estado no inicializado).
+No hay marcas de estado establecidas (estado no inicializado).
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_SERVICE_UNAVAILABLE"></span><span id="mp_status_flag_service_unavailable"></span>**marca de estado de MP \_ \_ \_ servicio \_ no disponible**
+<span id="MP_STATUS_FLAG_SERVICE_UNAVAILABLE"></span><span id="mp_status_flag_service_unavailable"></span>**SERVICIO DE \_ MARCA DE ESTADO DE MP NO \_ \_ \_ DISPONIBLE**
 </dt> <dd>
 
 El servicio no se está ejecutando.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_MPENGINE_UNAVAILABLE"></span><span id="mp_status_flag_mpengine_unavailable"></span>**marca de estado de MP \_ \_ \_ MPENGINE \_ no disponible**
+<span id="MP_STATUS_FLAG_MPENGINE_UNAVAILABLE"></span><span id="mp_status_flag_mpengine_unavailable"></span>**MP \_ STATUS \_ FLAG \_ MPENGINE \_ UNAVAILABLE**
 </dt> <dd>
 
 El servicio se inició sin ningún motor de protección contra malware.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_THREAT_FULLSCAN_REQUIRED"></span><span id="mp_status_flag_threat_fullscan_required"></span>**marca de estado de MP \_ \_ \_ amenaza \_ \_ requerida**
+<span id="MP_STATUS_FLAG_THREAT_FULLSCAN_REQUIRED"></span><span id="mp_status_flag_threat_fullscan_required"></span>**MP \_ STATUS \_ FLAG \_ THREAT \_ FULLSCAN \_ REQUIRED**
 </dt> <dd>
 
 Examen completo pendiente debido a una acción de amenaza.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_THREAT_REBOOT_REQUIRED"></span><span id="mp_status_flag_threat_reboot_required"></span>**marca de estado de MP se \_ \_ \_ \_ requiere reinicio de amenazas \_**
+<span id="MP_STATUS_FLAG_THREAT_REBOOT_REQUIRED"></span><span id="mp_status_flag_threat_reboot_required"></span>**SE REQUIERE \_ EL REINICIO DE LA AMENAZA DE MARCA DE ESTADO DEL \_ \_ \_ \_ MP**
 </dt> <dd>
 
 Reinicio pendiente debido a una acción de amenaza.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_THREAT_MANUAL_STEPS_REQUIRED"></span><span id="mp_status_flag_threat_manual_steps_required"></span>**marca de estado de MP \_ \_ \_ \_ pasos manuales de amenazas \_ \_ necesarios**
+<span id="MP_STATUS_FLAG_THREAT_MANUAL_STEPS_REQUIRED"></span><span id="mp_status_flag_threat_manual_steps_required"></span>**PASOS MANUALES \_ DE AMENAZAS DE MARCA DE ESTADO DE MP \_ \_ \_ \_ \_ REQUERIDOS**
 </dt> <dd>
 
-Pasos manuales pendientes debidos a una acción de amenaza.
+Pasos manuales pendientes debido a una acción de amenaza.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_DUE_AV_SIGNATURE"></span><span id="mp_status_flag_due_av_signature"></span>**marca de estado de MP \_ \_ \_ por \_ firma de AV \_**
+<span id="MP_STATUS_FLAG_DUE_AV_SIGNATURE"></span><span id="mp_status_flag_due_av_signature"></span>**MARCA DE \_ ESTADO DE MP DUE AV \_ \_ \_ \_ SIGNATURE**
 </dt> <dd>
 
 Firmas de antivirus no actualizadas.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_DUE_AS_SIGNATURE"></span><span id="mp_status_flag_due_as_signature"></span>**\_ \_ marca de estado \_ de MP debida \_ como \_ firma**
+<span id="MP_STATUS_FLAG_DUE_AS_SIGNATURE"></span><span id="mp_status_flag_due_as_signature"></span>**MARCA DE \_ ESTADO DE MP DEBIDO COMO \_ \_ \_ \_ FIRMA**
 </dt> <dd>
 
-Firmas de AntiSpyware no actualizadas.
+Firmas antispyware no actualizadas.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_DUE_QUICK_SCAN"></span><span id="mp_status_flag_due_quick_scan"></span>**detección de estado de MP \_ \_ debido a \_ \_ \_ examen rápido**
+<span id="MP_STATUS_FLAG_DUE_QUICK_SCAN"></span><span id="mp_status_flag_due_quick_scan"></span>**MARCA DE \_ ESTADO DE MP DUE QUICK \_ \_ \_ \_ SCAN**
 </dt> <dd>
 
 No se ha producido ningún examen rápido durante un período especificado.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_DUE_FULL_SCAN"></span><span id="mp_status_flag_due_full_scan"></span>**marca de estado del módulo de administración \_ \_ debido a \_ \_ \_ examen completo**
+<span id="MP_STATUS_FLAG_DUE_FULL_SCAN"></span><span id="mp_status_flag_due_full_scan"></span>**MARCA DE \_ ESTADO DE MP DUE FULL \_ \_ \_ \_ SCAN**
 </dt> <dd>
 
-no se ha producido ningún examen completo durante un período especificado
+no se ha producido ningún examen completo durante un período especificado.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_INPROGRESS_SYSTEM_SCAN"></span><span id="mp_status_flag_inprogress_system_scan"></span>**marca de estado del módulo de administración \_ \_ \_ \_ examen del sistema en curso \_**
+<span id="MP_STATUS_FLAG_INPROGRESS_SYSTEM_SCAN"></span><span id="mp_status_flag_inprogress_system_scan"></span>**MP \_ STATUS \_ FLAG \_ INPROGRESS \_ SYSTEM \_ SCAN**
 </dt> <dd>
 
 Examen iniciado por el sistema en curso.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_INPROGRESS_ROUTINE_CLEANING"></span><span id="mp_status_flag_inprogress_routine_cleaning"></span>**marca de estado de MP \_ \_ limpieza de \_ rutina en curso \_ \_**
+<span id="MP_STATUS_FLAG_INPROGRESS_ROUTINE_CLEANING"></span><span id="mp_status_flag_inprogress_routine_cleaning"></span>**LIMPIEZA \_ \_ RUTINARIA \_ DE MARCA DE \_ \_ ESTADO DE MP**
 </dt> <dd>
 
-Limpieza iniciada por el sistema.
+Limpieza iniciada por el sistema en curso.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_DUE_SAMPLES"></span><span id="mp_status_flag_due_samples"></span>**marca de estado de MP \_ \_ \_ por \_ ejemplos**
+<span id="MP_STATUS_FLAG_DUE_SAMPLES"></span><span id="mp_status_flag_due_samples"></span>**EJEMPLOS DE \_ MARCA DE ESTADO DE MP \_ \_ DUE \_**
 </dt> <dd>
 
-Hay ejemplos de envío pendientes.
+Hay ejemplos pendientes de envío.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_EVALUATION_MODE"></span><span id="mp_status_flag_evaluation_mode"></span>**\_modo de \_ evaluación de marca de estado de MP \_ \_**
+<span id="MP_STATUS_FLAG_EVALUATION_MODE"></span><span id="mp_status_flag_evaluation_mode"></span>**MODO DE \_ EVALUACIÓN DE MARCA DE ESTADO DE \_ \_ \_ MP**
 </dt> <dd>
 
-El producto se está ejecutando en modo de evaluación.
+El producto se ejecuta en modo de evaluación.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_NONGENUINE"></span><span id="mp_status_flag_nongenuine"></span>**marca de estado de MP no \_ \_ \_ original**
+<span id="MP_STATUS_FLAG_NONGENUINE"></span><span id="mp_status_flag_nongenuine"></span>**MARCA \_ DE ESTADO DE MP \_ \_ NOGENUINE**
 </dt> <dd>
 
-El producto se está ejecutando en modo Windows no original.
+El producto se ejecuta en modo de Windows original.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_PRODUCT_EXPIRED"></span><span id="mp_status_flag_product_expired"></span>**marca de estado de MP \_ \_ \_ \_ expirada del producto**
+<span id="MP_STATUS_FLAG_PRODUCT_EXPIRED"></span><span id="mp_status_flag_product_expired"></span>**PRODUCTO DE \_ MARCA DE ESTADO DE MP \_ \_ \_ EXPIRADO**
 </dt> <dd>
 
-Producto expirado.
+El producto ha expirado.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_THREAT_CALLISTO_REQUIRED"></span><span id="mp_status_flag_threat_callisto_required"></span>**marca de estado de MP \_ \_ \_ amenaza \_ Callisto \_ requerida**
+<span id="MP_STATUS_FLAG_THREAT_CALLISTO_REQUIRED"></span><span id="mp_status_flag_threat_callisto_required"></span>**MP \_ STATUS \_ FLAG \_ THREAT \_ CALLISTO \_ REQUIRED**
 </dt> <dd>
 
-Se requiere un análisis sin conexión de Callisto.
+Se requiere un examen fuera de línea de Callisto.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_SERVICE_ON_SYSTEM_SHUTDOWN"></span><span id="mp_status_flag_service_on_system_shutdown"></span>**\_ \_ \_ servicio \_ de marca de estado de MP al \_ apagar el sistema \_**
+<span id="MP_STATUS_FLAG_SERVICE_ON_SYSTEM_SHUTDOWN"></span><span id="mp_status_flag_service_on_system_shutdown"></span>**SERVICIO DE \_ MARCA DE ESTADO DE MP AL APAGAR EL \_ \_ \_ \_ \_ SISTEMA**
 </dt> <dd>
 
-El servicio se está cerrando como parte del cierre del sistema.
+El servicio se está cerrando como parte del apagado del sistema.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_SERVICE_CRITICAL_FAILURE"></span><span id="mp_status_flag_service_critical_failure"></span>**\_ \_ \_ error crítico de servicio de indicador \_ de estado de MP \_**
+<span id="MP_STATUS_FLAG_SERVICE_CRITICAL_FAILURE"></span><span id="mp_status_flag_service_critical_failure"></span>**ERROR CRÍTICO \_ DEL SERVICIO DE MARCA DE ESTADO DE \_ \_ \_ \_ MP**
 </dt> <dd>
 
-Error en la corrección de amenazas de forma crítica.
+Error crítico en la corrección de amenazas.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_SERVICE_NON_CRITICAL_FAILURE"></span><span id="mp_status_flag_service_non_critical_failure"></span>**error de servicio de indicador de estado de MP \_ \_ \_ \_ no \_ crítico \_**
+<span id="MP_STATUS_FLAG_SERVICE_NON_CRITICAL_FAILURE"></span><span id="mp_status_flag_service_non_critical_failure"></span>**ERROR CRÍTICO \_ DEL SERVICIO DE MARCA DE ESTADO DE \_ \_ \_ \_ \_ MP**
 </dt> <dd>
 
 Error de corrección de amenazas no crítico.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_HEALTH_INITIALIZED"></span><span id="mp_status_flag_health_initialized"></span>**Estado de indicador de estado de MP \_ \_ \_ \_ inicializado**
+<span id="MP_STATUS_FLAG_HEALTH_INITIALIZED"></span><span id="mp_status_flag_health_initialized"></span>**ESTADO DEL \_ \_ MP: ESTADO \_ \_ INICIALIZADO**
 </dt> <dd>
 
-No se ha establecido ninguna marca de estado (estado bien inicializado).
+No hay marcas de estado establecidas (estado bien inicializado).
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_DUE_PLATFORM_UPDATE"></span><span id="mp_status_flag_due_platform_update"></span>**marca de estado de MP \_ \_ \_ debida \_ actualización de plataforma \_**
+<span id="MP_STATUS_FLAG_DUE_PLATFORM_UPDATE"></span><span id="mp_status_flag_due_platform_update"></span>**MP \_ STATUS \_ FLAG \_ DUE \_ PLATFORM \_ UPDATE**
 </dt> <dd>
 
 La plataforma no está actualizada.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_INPROGRESS_PLATFORM_UPDATE"></span><span id="mp_status_flag_inprogress_platform_update"></span>**marca de estado de MP \_ \_ actualización de \_ plataforma en curso \_ \_**
+<span id="MP_STATUS_FLAG_INPROGRESS_PLATFORM_UPDATE"></span><span id="mp_status_flag_inprogress_platform_update"></span>**MP \_ STATUS \_ FLAG \_ INPROGRESS \_ PLATFORM \_ UPDATE**
 </dt> <dd>
 
 La actualización de la plataforma está en curso.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_PLATFORM_ABOUT_TO_BE_OUTDATED"></span><span id="mp_status_flag_platform_about_to_be_outdated"></span>**\_plataforma de marca de estado de MP \_ \_ \_ \_ a punto de \_ ser \_ obsoleto**
+<span id="MP_STATUS_FLAG_PLATFORM_ABOUT_TO_BE_OUTDATED"></span><span id="mp_status_flag_platform_about_to_be_outdated"></span>**PLATAFORMA DE \_ MARCA DE ESTADO DE MP A PUNTO DE ESTAR \_ \_ \_ \_ \_ \_ OBSOLETA**
 </dt> <dd>
 
 La plataforma está a punto de estar obsoleta
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_END_OF_LIFE"></span><span id="mp_status_flag_end_of_life"></span>**\_ \_ marca de estado \_ de MP final \_ de \_ ciclo de vida**
+<span id="MP_STATUS_FLAG_END_OF_LIFE"></span><span id="mp_status_flag_end_of_life"></span>**FIN \_ DEL CICLO DE VIDA DE LA MARCA DE ESTADO DEL \_ \_ \_ \_ MP**
 </dt> <dd>
 
-La firma o el final de la plataforma de la vida es posterior o está pendiente.
+El final del ciclo de vida de la firma o plataforma es pasado o está pendiente.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_MAX"></span><span id="mp_status_flag_max"></span>**marca de estado de MP \_ \_ \_ máx.**
+<span id="MP_STATUS_FLAG_MAX"></span><span id="mp_status_flag_max"></span>**MARCA \_ DE ESTADO DE MP \_ \_ MÁX.**
 </dt> <dd>
 
 Marca válida máxima.
 
 </dd> <dt>
 
-<span id="MP_STATUS_FLAG_ALL"></span><span id="mp_status_flag_all"></span>**marca de estado de MP \_ \_ \_ todos**
+<span id="MP_STATUS_FLAG_ALL"></span><span id="mp_status_flag_all"></span>**MARCA \_ DE ESTADO DE MP \_ \_ ALL**
 </dt> <dd>
 
 Valor máximo posible.
@@ -260,11 +260,11 @@ Valor máximo posible.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

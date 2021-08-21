@@ -41,7 +41,7 @@ El sistema genera este valor y no se puede escribir directamente. Los valores de
 
 
 
-| Pedido | Path                   | Formato de disco |
+| Pedido | Ruta de acceso                   | Formato de disco |
 |-------|------------------------|-------------|
 | 1     | /app1/ifd/{ushort=283} |             |
 | 2     | /xmp/tiff:YResolution  |             |
@@ -54,7 +54,7 @@ El sistema genera este valor y no se puede escribir directamente. Los valores de
 
 
 
-| Pedido | Path                        |
+| Pedido | Ruta de acceso                        |
 |-------|-----------------------------|
 | 1     | /app1/ifd/exif/{ushort=283} |
 | 2     | /xmp/tiff:yresolution       |
@@ -69,7 +69,7 @@ El sistema genera este valor y no se puede escribir directamente. Los valores de
 
 
 
-| Pedido | Path                      | Formato de disco |
+| Pedido | Ruta de acceso                      | Formato de disco |
 |-------|---------------------------|-------------|
 | 1     | /ifd/exif/{ushort=283}    |             |
 | 2     | /ifd/xmp/tiff:YResolution |             |
@@ -82,7 +82,7 @@ El sistema genera este valor y no se puede escribir directamente. Los valores de
 
 
 
-| Pedido | Path                      |
+| Pedido | Ruta de acceso                      |
 |-------|---------------------------|
 | 1     | /ifd/exif/{ushort=283}    |
 | 2     | /ifd/xmp/tiff:yresolution |
@@ -91,7 +91,7 @@ El sistema genera este valor y no se puede escribir directamente. Los valores de
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 

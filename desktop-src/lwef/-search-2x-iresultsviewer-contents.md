@@ -3,7 +3,7 @@ title: Propiedad IResultsViewer Contents (WdsView.h)
 description: Esta propiedad realiza un seguimiento del tipo de contenido que se muestra en la vista de resultados.
 ms.assetid: fad3c9c9-9bf4-4725-962a-ae285bcd23d4
 keywords:
-- Propiedades de contenido Características heredadas Windows entorno de contenido
+- Características heredadas del entorno de Windows contenido
 - Propiedad Contents Legacy Windows Environment Features , IResultsViewer (Interfaz IResultsViewer)
 - IResultsViewer interface Legacy Windows Environment Features , Contents property
 topic_type:

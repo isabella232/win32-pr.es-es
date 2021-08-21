@@ -1,6 +1,6 @@
 ---
 title: patchconstantfunc
-description: Define la función para calcular los datos constantes de la revisión.
+description: Define la función para calcular los datos constantes de revisión.
 ms.assetid: aee99055-7258-458f-8677-bb79e305dd79
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 455a10e8af567cf7c1adbf569700b00f769ef512
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 3d7c6b0e7820742356c00a47d928f5fe69a4b968b075f0f92c688216455532f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104077074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118790666"
 ---
 # <a name="patchconstantfunc"></a>patchconstantfunc
 
-Define la función para calcular los datos constantes de la revisión.
+Define la función para calcular los datos constantes de revisión.
 
 
 ```
@@ -27,21 +27,21 @@ patchconstantfunc("function_name")
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-*\_ nombre de función* es el nombre de una función independiente que genera los datos de la constante patch.
+*nombre \_ de* función es el nombre de una función independiente que genera los datos de revisión constante.
 
-Este atributo es compatible con los siguientes tipos de sombreadores:
+Este atributo se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 |        | x    |        |          |       |         |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -53,9 +53,9 @@ Este atributo es compatible con los siguientes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

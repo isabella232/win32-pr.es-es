@@ -1,10 +1,10 @@
 ---
-title: Métodos de la propiedad IADsFileShare (iAds. h)
-description: Los métodos de propiedad de la interfaz IADsFileshare obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea métodos de propiedad de interfaz.
+title: Métodos de propiedad IADsFileShare (Iads.h)
+description: Los métodos de propiedad de la interfaz IADsFileshare obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea Métodos de propiedad de interfaz.
 ms.assetid: c5a81c42-507f-4a68-b6f4-83097bd0fa01
 ms.tgt_platform: multiple
 keywords:
-- Métodos de propiedad IADsFileShare ADSI
+- IADsFileShare Property Methods ADSI
 topic_type:
 - apiref
 api_name:
@@ -28,16 +28,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f38369a4054f1848d5e35ff8bdb2dda9e9423a87
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6daec9905990d0f5cc5826b82b5361e0fc0653fafb0c617633a34b87c7a0e995
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118691423"
 ---
 # <a name="iadsfileshare-property-methods"></a>Métodos de propiedad IADsFileShare
 
-Los métodos de propiedad de la interfaz [**IADsFileshare**](/windows/desktop/api/Iads/nn-iads-iadsfileshare) obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de propiedad [**de la interfaz IADsFileshare**](/windows/desktop/api/Iads/nn-iads-iadsfileshare) obtienen o establecen las propiedades descritas en la tabla siguiente. Para obtener más información, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -53,7 +53,7 @@ Número de usuarios conectados al recurso compartido.
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -71,11 +71,11 @@ HRESULT get_CurrentUserCount(
 **Descripción**
 </dt> <dd> <dl>
 
-La descripción del recurso compartido de archivos.
+Descripción del recurso compartido de archivos.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -99,11 +99,11 @@ HRESULT put_Description(
 **HostComputer**
 </dt> <dd> <dl>
 
-Una referencia ADsPath al equipo host.
+Referencia de ADsPath al equipo host.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -127,14 +127,14 @@ HRESULT put_HostComputer(
 **MaxUserCount**
 </dt> <dd> <dl>
 
-Número máximo de usuarios con permiso para obtener acceso al recurso compartido al mismo tiempo.
+Número máximo de usuarios a los que se permite acceder al recurso compartido al mismo tiempo.
 
 <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -156,7 +156,7 @@ Ruta de acceso del sistema de archivos al directorio compartido.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Tipo de datos de scripting: **BSTR**
@@ -181,7 +181,7 @@ HRESULT put_Path(
 
 ## <a name="examples"></a>Ejemplos
 
-Para tener acceso a las propiedades de los recursos compartidos de archivos de un equipo, primero debe enlazar a "LanmanServer" en el equipo. En el ejemplo de código siguiente se muestra cómo configurar la descripción y el número máximo de usuarios permitidos para todos los recursos compartidos de archivos públicos del equipo, denominados "MiEquipo", en el dominio predeterminado.
+Para acceder a las propiedades de los recursos compartidos de archivos en un equipo, primero debe enlazar a "LanmanServer" en el equipo. En el ejemplo de código siguiente se muestra cómo configurar la descripción y el número máximo de usuarios permitidos para todos los recursos compartidos de archivos públicos del equipo, denominados "myMachine", en el dominio predeterminado.
 
 
 ```VB
@@ -208,7 +208,7 @@ Cleanup:
 
 
 
-En el ejemplo de código siguiente se muestra cómo convertir el directorio C: carpetas existente en \\ un recurso compartido de archivos público.
+En el ejemplo de código siguiente se muestra cómo convertir el directorio C: \\ MyFolder existente en un recurso compartido de archivos público.
 
 
 ```VB
@@ -233,7 +233,7 @@ Cleanup:
 
 
 
-En el ejemplo de código siguiente se hace que el directorio C: \\ carpeta de carpetas existente sea un recurso compartido de archivos público.
+En el ejemplo de código siguiente se convierte el directorio C: \\ MyFolder existente en un recurso compartido de archivos público.
 
 
 ```C++
@@ -266,17 +266,17 @@ Cleanup:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>       |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IADsFileShare se define como EB6DCAF0-4B83-11cf-A995-00AA006BC149<br/>        |
+| IID<br/>                      | IID \_ IADsFileShare se define como EB6DCAF0-4B83-11CF-A995-00AA006BC149<br/>        |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

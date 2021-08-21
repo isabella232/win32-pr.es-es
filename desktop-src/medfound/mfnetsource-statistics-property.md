@@ -1,27 +1,27 @@
 ---
-description: Contiene las estadísticas de red para el origen de red.
+description: Contiene estadísticas de red para el origen de red.
 ms.assetid: 1948481b-febd-434b-a5dc-faef592ea0ed
-title: Propiedad MFNETSOURCE_STATISTICS (Mfidl. h)
+title: MFNETSOURCE_STATISTICS propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a09e6c0fe4697595ff3600135327ba093350e0e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 822e9ae2e65170f3bf6e0f9ce065dd0ea5c62189a9a2b77fe2cd59beeb164248
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118738572"
 ---
-# <a name="mfnetsource_statistics-property"></a>\_Propiedad MFNETSOURCE Statistics
+# <a name="mfnetsource_statistics-property"></a>Propiedad MFNETSOURCE \_ STATISTICS
 
-Contiene las estadísticas de red para el origen de red.
+Contiene estadísticas de red para el origen de red.
 
 ## <a name="data-type"></a>Tipo de datos
 
-Varía Vea la sección Comentarios.
+Varía; vea Comentarios.
 
 ## <a name="remarks"></a>Observaciones
 
-La constante MFNETSOURCE \_ Statistics define un GUID que se usa junto con la enumeración [**\_ \_ IDS de MFNETSOURCE Statistics**](/windows/desktop/api/mfidl/ne-mfidl-mfnetsource_statistics_ids) para definir un conjunto de claves de propiedad. Cada clave de propiedad del conjunto tiene **fmtid** igual a MFNETSOURCE \_ Statistics y **PID** igual a un miembro de la enumeración. Para obtener más información, consulte [**MFNETSOURCE \_ Statistics \_ IDS**](/windows/desktop/api/mfidl/ne-mfidl-mfnetsource_statistics_ids).
+La constante MFNETSOURCE STATISTICS define un GUID que se usa junto con la enumeración \_ [**MFNETSOURCE \_ STATISTICS \_ IDS**](/windows/desktop/api/mfidl/ne-mfidl-mfnetsource_statistics_ids) para definir un conjunto de claves de propiedad. Cada clave de propiedad del conjunto tiene **fmtid** igual a MFNETSOURCE \_ STATISTICS y **pid** igual a un miembro de la enumeración. Para obtener más información, [**vea MFNETSOURCE \_ STATISTICS \_ IDS**](/windows/desktop/api/mfidl/ne-mfidl-mfnetsource_statistics_ids).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -29,9 +29,9 @@ La constante MFNETSOURCE \_ Statistics define un GUID que se usa junto con la en
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -42,10 +42,10 @@ La constante MFNETSOURCE \_ Statistics define un GUID que se usa junto con la en
 [Registro de cliente](client-logging.md)
 </dt> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
-[Funciones de red en Media Foundation](networking-in-media-foundation.md)
+[Redes en Media Foundation](networking-in-media-foundation.md)
 </dt> </dl>
 
  

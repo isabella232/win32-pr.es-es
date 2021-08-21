@@ -1,17 +1,17 @@
 ---
 description: Especifica la latencia máxima del descodificador, en milisegundos.
 ms.assetid: c4452c29-2d06-4c71-b960-26c805c29227
-title: Propiedad MFPKEY_MAXDECLATENCYMS (Wmcodecdsp. h)
+title: MFPKEY_MAXDECLATENCYMS (Propiedad, Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2330278788736e7ca71538b583346f11c817a85f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1b5aa867df416c91b7fe747a0177d92d278ab02e191a542b7ee21fdf814e103
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118737892"
 ---
-# <a name="mfpkey_maxdeclatencyms-property"></a>\_Propiedad MAXDECLATENCYMS de MFPKEY
+# <a name="mfpkey_maxdeclatencyms-property"></a>Propiedad MFPKEY \_ MAXDECLATENCYMS
 
 Especifica la latencia máxima del descodificador, en milisegundos.
 
@@ -29,9 +29,9 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -39,10 +39,10 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 <dl> <dt>
 
-[**\_Propiedad CONSTRAINDECLATENCY de MFPKEY**](mfpkey-constraindeclatencyproperty.md)
+[**Propiedad MFPKEY \_ CONSTRAINDECLATENCY**](mfpkey-constraindeclatencyproperty.md)
 </dt> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

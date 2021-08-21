@@ -43,7 +43,7 @@ Windows Dispositivos portátiles admite las siguientes propiedades de dispositiv
 <tr class="even">
 <td><span id="wpd_device_firmware_version"></span><span id="WPD_DEVICE_FIRMWARE_VERSION"></span><strong>WPD_DEVICE_FIRMWARE_VERSION</strong></td>
 <td><strong>VT_LPWSTR</strong></td>
-<td>La versión de firmware del dispositivo.</td>
+<td>Versión de firmware del dispositivo.</td>
 </tr>
 <tr class="odd">
 <td><span id="wpd_device_functional_unique_id"></span><span id="WPD_DEVICE_FUNCTIONAL_UNIQUE_ID"></span><strong>WPD_DEVICE_FUNCTIONAL_UNIQUE_ID</strong></td>
@@ -123,7 +123,7 @@ Windows Dispositivos portátiles admite las siguientes propiedades de dispositiv
 <tr class="even">
 <td><span id="wpd_device_type"></span><span id="WPD_DEVICE_TYPE"></span><strong>WPD_DEVICE_TYPE</strong></td>
 <td><strong>VT_UI4</strong></td>
-<td>Valor que especifica el tipo de dispositivo; las aplicaciones usan esta propiedad solo con fines de representación. Las características funcionales del dispositivo se deciden a través de objetos funcionales. Los dispositivos que no proporcionen un <strong></strong> icono de dispositivo, por ejemplo, un WPD_RESOURCE_ICON para el objeto de dispositivo, se representarán en el espacio de nombres de WPD con un icono genérico. Este icono dependerá del tipo de dispositivo especificado; por ejemplo, si el tipo de dispositivo es un teléfono móvil, se usa el icono de teléfono genérico. En la primera instalación del dispositivo, el instalador de clase WPD consultará este valor de propiedad y lo almacenará en el registro de dispositivos en el valor PORTABLE_DEVICE_TYPE como REG_DWORD.<br/> Los valores posibles de este parámetro son de la <a href="object-properties.md"><strong>WPD_DEVICE_TYPES</strong></a> enumeración definida en PortableDevice.h. Los valores son:<br/> <dl> <strong>WPD_DEVICE_TYPE_GENERIC</strong><br />
+<td>Valor que especifica el tipo de dispositivo; las aplicaciones usan esta propiedad solo con fines de representación. Las características funcionales del dispositivo se deciden a través de objetos funcionales. Los dispositivos que no proporcionen un <strong></strong> icono de dispositivo, por ejemplo, un WPD_RESOURCE_ICON para el objeto de dispositivo, se representarán en el espacio de nombres de WPD con un icono genérico. Este icono dependerá del tipo de dispositivo especificado; por ejemplo, si el tipo de dispositivo es un teléfono móvil, se usa el icono de teléfono genérico. En la primera instalación del dispositivo, el Instalador de clase WPD consultará este valor de propiedad y lo almacenará en el registro de dispositivos en el valor PORTABLE_DEVICE_TYPE como REG_DWORD.<br/> Los valores posibles de este parámetro son de la <a href="object-properties.md"><strong>WPD_DEVICE_TYPES</strong></a> enumeración definida en PortableDevice.h. Los valores son:<br/> <dl> <strong>WPD_DEVICE_TYPE_GENERIC</strong><br />
 <strong>WPD_DEVICE_TYPE_CAMERA</strong><br />
 <strong>WPD_DEVICE_TYPE_MEDIA_PLAYER</strong><br />
 <strong>WPD_DEVICE_TYPE_PHONE</strong><br />
@@ -154,7 +154,7 @@ Windows Dispositivos portátiles admite las siguientes propiedades de dispositiv
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

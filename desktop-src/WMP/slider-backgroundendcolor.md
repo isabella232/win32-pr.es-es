@@ -1,9 +1,9 @@
 ---
-title: SLIDEr. backgroundEndColor
-description: El atributo backgroundEndColor especifica o recupera el color final del fondo del control deslizante.
+title: SLIDER.backgroundEndColor
+description: El atributo backgroundEndColor especifica o recupera el color final de fondo del control deslizante.
 ms.assetid: 6406bb81-d5a7-4da1-abc3-51da1ff00a46
 keywords:
-- CONTROL SLIDEr. backgroundEndColor Windows Media Player
+- SLIDER.backgroundEndColor Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bb3d0a3024432e4dddf232ade185898a516d9e1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e1510aed0ad3f20f311b127f162bac300aa3ef4325418d86f55724c4fe29b3c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118833092"
 ---
-# <a name="sliderbackgroundendcolor"></a>SLIDEr. backgroundEndColor
+# <a name="sliderbackgroundendcolor"></a>SLIDER.backgroundEndColor
 
-El atributo **backgroundEndColor** especifica o recupera el color final del fondo del control deslizante.
+El **atributo backgroundEndColor** especifica o recupera el color final de fondo del control deslizante.
 
 ``` syntax
         elementID.backgroundEndColor
@@ -29,19 +29,19 @@ El atributo **backgroundEndColor** especifica o recupera el color final del fond
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene cualquier valor de color de Microsoft Internet Explorer. No tiene valor predeterminado.
+Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer microsoft. No tiene valor predeterminado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**BackgroundEndColor** se usa junto con un **BackgroundColor**. El efecto creado es una atenuación del degradado desde el **BackgroundColor** hasta el **backgroundEndColor**.
+**BackgroundEndColor se** usa junto con **backgroundColor.** El efecto creado es un degradado de **backgroundColor** a **backgroundEndColor.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -52,10 +52,10 @@ Este atributo es una **cadena** de lectura/escritura que contiene cualquier valo
 [**Referencia de color**](color-reference.md)
 </dt> <dt>
 
-[**Elemento SLIDEr**](slider-element.md)
+[**Elemento SLIDER**](slider-element.md)
 </dt> <dt>
 
-[**Control deslizante. backgroundColor**](slider-backgroundcolor.md)
+[**SLIDER.backgroundColor**](slider-backgroundcolor.md)
 </dt> </dl>
 
  

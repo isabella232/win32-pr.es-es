@@ -1,5 +1,5 @@
 ---
-title: IMsRdpClientAdvancedSettings TransportType, propiedad
+title: Propiedad IMsRdpClientAdvancedSettings TransportType
 description: Especifica el tipo de transporte utilizado por el cliente.
 ms.assetid: 752f5fbc-eb5a-48eb-8750-fc25c8a2f024
 ms.tgt_platform: multiple
@@ -69,7 +69,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

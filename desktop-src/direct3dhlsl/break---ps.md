@@ -1,5 +1,5 @@
 ---
-title: 'break: ps'
+title: break- ps
 description: 'Salga del bucle actual en el endloop más cercano: ps o endrep - ps.'
 ms.assetid: c1f81e40-5df3-4094-8ab2-1d8009130367
 ms.topic: reference
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b5df9f4edf7a4261e907bd715a5528b8036799b5
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: e0d39562a6bbbaef7913e5be6ad4a60087f86b3b75bd7258164d0d5d6b7701ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118794593"
 ---
-# <a name="break---ps"></a>break: ps
+# <a name="break---ps"></a>break- ps
 
 Salga del bucle actual en el [endloop más cercano: ps](endloop---ps.md) o [endrep - ps](endrep---ps.md).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
@@ -31,9 +31,9 @@ Salga del bucle actual en el [endloop más cercano: ps](endloop---ps.md) o [endr
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta instrucción se admite en las siguientes versiones.
+Esta instrucción se admite en las versiones siguientes.
 
 
 

@@ -49,7 +49,7 @@ La **interfaz ITsSbResourcePluginStoreEx** tiene estos métodos.
 | [**DeleteTarget**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-deletetarget)                                                     | Elimina un destino.<br/>                                                                                    |
 | [**EnumerateEnvironments**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-enumerateenvironments)                                   | Devuelve una matriz que contiene los entornos presentes en el almacén del complemento de recursos.<br/>               |
 | [**EnumerateFarms**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-enumeratefarms)                                                 | Enumera todas las granjas de servidores que se han agregado al almacén del complemento de recursos.<br/>                         |
-| [**EnumerateSessions**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-enumeratesessions)                                           | Enumera un conjunto de sesiones especificado.<br/>                                                              |
+| [**EnumerateSessions**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-enumeratesessions)                                           | Enumera un conjunto especificado de sesiones.<br/>                                                              |
 | [**EnumerateTargets**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-enumeratetargets)                                             | Devuelve una matriz que contiene los destinos especificados que están presentes en el almacén del complemento de recursos.<br/> |
 | [**GetFarmProperty**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-getfarmproperty)                                               | Recupera una propiedad de una granja.<br/>                                                                      |
 | [**QueryEnvironment**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbresourcepluginstore-queryenvironment)                                             | Devuelve el objeto de entorno especificado.<br/>                                                            |
@@ -84,7 +84,7 @@ La **interfaz ITsSbResourcePluginStoreEx** tiene estos métodos.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

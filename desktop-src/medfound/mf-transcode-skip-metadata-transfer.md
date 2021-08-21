@@ -1,17 +1,17 @@
 ---
 description: Especifica si los metadatos se escriben en el archivo transcodificado.
 ms.assetid: 0fbfc035-c9d1-4014-a28a-93d7e6adc718
-title: MF_TRANSCODE_SKIP_METADATA_TRANSFER atributo (Mfidl. h)
+title: MF_TRANSCODE_SKIP_METADATA_TRANSFER atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54978d76ec1392c3be731e1452a653d1423976a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7874d7d8cc20bbf5222cd8fd2fa0ca938c0b597dbc42914ab809dad926968306
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118739427"
 ---
-# <a name="mf_transcode_skip_metadata_transfer-attribute"></a>MF \_ Transcode \_ omitir \_ atributo de transferencia de metadatos \_
+# <a name="mf_transcode_skip_metadata_transfer-attribute"></a>Atributo SKIP \_ METADATA TRANSFER de TRANSCODE \_ \_ \_ DE MF
 
 Especifica si los metadatos se escriben en el archivo transcodificado. Este atributo de contenedor se almacena en el perfil de transcodificación.
 
@@ -19,13 +19,13 @@ Especifica si los metadatos se escriben en el archivo transcodificado. Este atri
 
 **UINT32**
 
-\_ \_ \_ \_ En la tabla siguiente se describen los posibles valores para el atributo de transferencia de metadatos del salto de transcodificación de MF.
+Los valores posibles para el atributo SKIP METADATA TRANSFER de MF \_ TRANSCODE \_ se \_ \_ describen en la tabla siguiente.
 
 
 
 | Value                                                                        | Significado                                                                                             |
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| <dl> <dt>0</dt> </dl> | Transfiere automáticamente los metadatos de nivel de archivo del archivo de código fuente al archivo transcodificado.<br/> |
+| <dl> <dt>0</dt> </dl> | Transfiere automáticamente los metadatos de nivel de archivo del archivo de origen al archivo transcodificado.<br/> |
 | <dl> <dt>1</dt> </dl> | Los metadatos del archivo de origen no se escriben en el archivo transcodificado.<br/>                          |
 
 
@@ -34,13 +34,13 @@ Especifica si los metadatos se escriben en el archivo transcodificado. Este atri
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para establecer este atributo, llame a [**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="remarks"></a>Observaciones
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,9 +48,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                            |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -58,7 +58,7 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [**IMFTranscodeProfile::GetContainerAttributes**](/windows/desktop/api/mfidl/nf-mfidl-imftranscodeprofile-getcontainerattributes)

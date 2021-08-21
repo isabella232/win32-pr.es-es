@@ -4,12 +4,12 @@ ms.assetid: 6e180c12-8cbe-4013-8bb4-3ac5bb9c65f1
 title: Funciones matemáticas (gráficos de Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85b47aec382f8b21d8769722afab51cb69a7452e
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: cd29c5ef304b1824bd2583f4058c7b5a6428fba4054305e2adc4a413429d2553
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118809753"
 ---
 # <a name="math-functions-direct3d-10-graphics"></a>Funciones matemáticas (gráficos de Direct3D 10)
 
@@ -118,7 +118,7 @@ La biblioteca matemática proporcionada por la biblioteca de utilidades D3DX pro
 
 ## <a name="resolving-link-errors-with-d3dx-math-functions"></a>Resolución de errores de vínculo con funciones matemáticas D3DX
 
-Las funciones matemáticas D3DX se implementan de forma idéntica en D3DX10 (D3DX10math.h) y D3DX9 (D3DX9math.h). Esto puede provocar errores de vínculo si un proyecto implementa código DirectX 9 y DirectX 10 e intenta vincular una función desde un encabezado con la biblioteca opuesta.
+Las funciones matemáticas D3DX se implementan de forma idéntica en D3DX10 (D3DX10math.h) y D3DX9 (D3DX9math.h). Esto puede provocar errores de vínculo si un proyecto implementa código de DirectX 9 y DirectX 10 e intenta vincular una función desde un encabezado con la biblioteca opuesta.
 
 Para eliminar el problema de incluir ambos encabezados, D3DX10math.h incluye la siguiente \# definición:
 
@@ -130,7 +130,7 @@ Para eliminar el problema de incluir ambos encabezados, D3DX10math.h incluye la 
 
 
 
-Para eliminar posibles errores de vínculo, los ejemplos del SDK de DX vinculan primero a las bibliotecas D3DX9d.lib y D3DX9.lib y, después, a las bibliotecas D3DX10 en segundo lugar (D3DX10d.lib y D3DX10.lib). Esta configuración se encuentra en Proyecto/Propiedades si usa Visual Studio.
+Para eliminar posibles errores de vínculo, los ejemplos del SDK de DX se vinculan primero a las bibliotecas D3DX9 (D3DX9d.lib y D3DX9.lib) y, después, a las bibliotecas D3DX10 segundo (D3DX10d.lib y D3DX10.lib). Esta configuración se encuentra en Project/Propiedades si usa Visual Studio.
 
 ## <a name="related-topics"></a>Temas relacionados
 

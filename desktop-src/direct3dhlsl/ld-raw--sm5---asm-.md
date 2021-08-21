@@ -44,9 +44,9 @@ Lectura de acceso aleatorio de componentes de 1 a 4 de 32 bits desde un búfer s
 -   Sombreador de cálculo o sombreador de píxeles: UAV (u \# )
 -   Sombreador de proceso: memoria compartida del grupo de subprocesos (g \# )
 
-*srcByteOffset* especifica el valor base de 32 bits en memoria para una ventana de 4 valores secuenciales de 32 bits en los que se pueden leer los datos, en función del swlino y la máscara de otros parámetros.
+*srcByteOffset* especifica el valor base de 32 bits en memoria para una ventana de 4 valores secuenciales de 32 bits en los que se pueden leer los datos, en función del swzzle y mask de otros parámetros.
 
-Los datos leídos del búfer sin formato son equivalentes al pseudocódigo siguiente: donde tenemos el desplazamiento, la dirección, el puntero al contenido del búfer, el intervalo del origen y los datos almacenados linealmente.
+Los datos leídos desde el búfer sin formato son equivalentes al pseudocódigo siguiente: donde tenemos el desplazamiento, la dirección, el puntero al contenido del búfer, el intervalo del origen y los datos almacenados linealmente.
 
 ``` syntax
                     BYTE *BufferContents;         // from src0
@@ -64,9 +64,9 @@ Los datos leídos del búfer sin formato son equivalentes al pseudocódigo sigui
                     ApplyWriteMask(dstRegister, dstWriteMask, Temp);
 ```
 
-El direccionamiento fuera de límites en u /t de un componente de \# \# 32 bits determinado devuelve 0 para ese componente.
+El direccionamiento fuera de límites en u /t de cualquier componente de \# \# 32 bits determinado devuelve 0 para ese componente.
 
-Fuera de los límites que se direccionen en g (los límites de ese g determinado, en lugar de toda la memoria compartida) para cualquier componente de 32 bits determinado devuelve un resultado \# \# indefinido.
+El direccionamiento fuera de límites en g (los límites de ese g determinado, en lugar de toda la memoria compartida) para cualquier componente de 32 bits determinado devuelve un resultado \# \# indefinido.
 
 cs \_ 4 \_ 0 y cs \_ 4 \_ 1 admiten esta instrucción para UAV y SRV.
 
@@ -74,7 +74,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -82,11 +82,11 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-Dado que los UAV están disponibles en todas las fases del sombreador para Direct3D 11.1, esta instrucción se aplica a todas las fases del sombreador para los UAV para el entorno de ejecución de Direct3D 11.1, que está disponible a partir de Windows 8.
+Dado que los UAV están disponibles en todas las fases del sombreador para Direct3D 11.1, esta instrucción se aplica a todas las fases del sombreador para los UAV para el tiempo de ejecución de Direct3D 11.1, que está disponible a partir de Windows 8.
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -102,9 +102,9 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
 | [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |

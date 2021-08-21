@@ -1,33 +1,33 @@
 ---
-description: Para crear un proveedor de instancias WMI, debe registrar la \_ \_ instancia de Win32Provider que representa el proveedor mediante una instancia de \_ \_ InstanceProviderRegistration.
+description: Para crear un proveedor de instancias WMI, debe registrar la instancia de Win32Provider que representa al proveedor mediante una instancia \_ \_ de \_ \_ InstanceProviderRegistration.
 ms.assetid: 5ac8e964-606f-4010-84a8-7c0ae6ca2133
 ms.tgt_platform: multiple
-title: Registrar un proveedor de instancias
+title: Registro de un proveedor de instancias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bde8189559b04f2e45ac8357ab47cc17bd253fc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cc97668a41327eabbeab43760703519fa9009c855c25cf77638459050bb5c71d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544694"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118817083"
 ---
-# <a name="registering-an-instance-provider"></a>Registrar un proveedor de instancias
+# <a name="registering-an-instance-provider"></a>Registro de un proveedor de instancias
 
-Para crear un [*proveedor de instancias*](gloss-i.md) WMI, debe registrar la instancia de [**\_ \_ Win32Provider**](--win32provider.md) que representa el proveedor mediante una instancia de [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md). Como objeto COM, el proveedor debe registrarse en el sistema operativo y en WMI. En el procedimiento siguiente se supone que ya ha implementado el proceso de registro como se describe en [registrar un proveedor](registering-a-provider.md).
+Para crear un proveedor de [*instancias*](gloss-i.md) WMI, debe registrar la instancia [**\_ \_ de Win32Provider**](--win32provider.md) que representa al proveedor mediante una instancia de [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md). Como objeto COM, el proveedor debe registrarse con el sistema operativo y WMI. En el procedimiento siguiente se da por supuesto que ya ha implementado el proceso de registro como se describe en [Registro de un proveedor.](registering-a-provider.md)
 
 En el procedimiento siguiente se describe cómo registrar un proveedor de instancias.
 
 **Para registrar un proveedor de instancias**
 
-1.  Cree una instancia de la clase [**\_ \_ Win32Provider**](--win32provider.md) que describa el proveedor.
-2.  Cree una instancia de la clase [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md) que describa el conjunto de características del proveedor.
+1.  Cree una instancia de la [**\_ \_ clase Win32Provider**](--win32provider.md) que describa el proveedor.
+2.  Cree una instancia de la [**\_ \_ clase InstanceProviderRegistration**](--instanceproviderregistration.md) que describa el conjunto de características del proveedor.
 
-    La clase [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md) hereda muchas propiedades de la clase primaria [**\_ \_ ObjectProviderRegistration**](--objectproviderregistration.md) , que proporciona valores booleanos que indican la compatibilidad con características concretas y una matriz de cadenas para indicar la compatibilidad con consultas.
+    La [**\_ \_ clase InstanceProviderRegistration**](--instanceproviderregistration.md) hereda muchas propiedades de la clase primaria [**\_ \_ ObjectProviderRegistration,**](--objectproviderregistration.md) que proporciona valores booleanos que indican compatibilidad con características concretas y una matriz de cadenas para indicar la compatibilidad con consultas.
 
-    Asegúrese de etiquetar la clase con los calificadores de [**proveedor**](/windows/desktop/api/Provider/nl-provider-provider) y [**dinámicos**](standard-wmi-qualifiers.md) . El calificador indica que WMI debe utilizar un proveedor **dinámico** para recuperar las instancias de clase. El calificador de **proveedor** especifica el nombre del proveedor que debe usar WMI.
+    Asegúrese de etiquetar la clase con los calificadores [**Dynamic**](standard-wmi-qualifiers.md) [**y Provider.**](/windows/desktop/api/Provider/nl-provider-provider) El calificador indica que WMI debe usar un **proveedor dinámico** para recuperar las instancias de clase. El **calificador** Provider especifica el nombre del proveedor que WMI debe usar.
 
-En el ejemplo de código siguiente se describe cómo registrar una instancia de [**\_ \_ Win32Provider**](--win32provider.md) y [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md) .
+En el ejemplo de código siguiente se describe cómo registrar una [**\_ \_ instancia de Win32Provider**](--win32provider.md) e [**\_ \_ InstanceProviderRegistration.**](--instanceproviderregistration.md)
 
 ``` syntax
 instance of __Win32Provider as $P

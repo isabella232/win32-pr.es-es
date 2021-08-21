@@ -4,7 +4,7 @@ description: Obtiene una anotación por índice. | Método ID3DX11EffectVariable
 ms.assetid: fc130098-0269-4c78-bc45-284aa0b77865
 keywords:
 - Método GetAnnotationByIndex Direct3D 11
-- Método GetAnnotationByIndex Direct3D 11 , interfaz ID3DX11EffectVariable
+- Método GetAnnotationByIndex Direct3D 11, interfaz ID3DX11EffectVariable
 - Interfaz ID3DX11EffectVariable Direct3D 11 , método GetAnnotationByIndex
 topic_type:
 - apiref
@@ -63,7 +63,7 @@ Puntero a [**id3DX11EffectVariable**](id3dx11effectvariable.md).
 Las anaonaciones se pueden adjuntar a una técnica, un paso o una variable global.
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -74,11 +74,11 @@ Las anaonaciones se pueden adjuntar a una técnica, un paso o una variable globa
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

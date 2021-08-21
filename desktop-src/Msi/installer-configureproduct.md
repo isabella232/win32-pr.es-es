@@ -1,5 +1,5 @@
 ---
-description: El método ConfigureProduct del objeto de instalador instala o desinstala un producto.
+description: El método ConfigureProduct del objeto Installer instala o desinstala un producto.
 ms.assetid: 1215a03f-6c96-4416-881f-0071c1b3c5df
 title: Installer.Configmétodo ureProduct
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 989855508215b2cd5d04bff7903628513314b9a5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7fd64424105bc06364abf2b047ba4d986fdd5540d007109dfb9fdc087250c194
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105654018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118632162"
 ---
 # <a name="installerconfigureproduct-method"></a>Installer.Configmétodo ureProduct
 
-El método **ConfigureProduct** del objeto de [**instalador**](installer-object.md) instala o desinstala un producto.
+El **método ConfigureProduct** del [**objeto Installer**](installer-object.md) instala o desinstala un producto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,24 +51,24 @@ Especifica el código de producto del producto.
 *InstallLevel* 
 </dt> <dd>
 
-Especifica la configuración de instalación predeterminada del producto. Se omite el parámetro InstallLevel y se instalan todas las características si el parámetro InstallState está establecido en cualquier otro valor que msiInstallStateDefault.
+Especifica la configuración de instalación predeterminada del producto. El parámetro InstallLevel se omite y todas las características se instalan si el parámetro InstallState está establecido en cualquier otro valor que no sea msiInstallStateDefault.
 
-Este parámetro debe ser 0 (instalar con los niveles de características creados), 65535 (instalar todas las características) o un valor entre 0 y 65535 para instalar un subconjunto de características disponibles.
+Este parámetro debe ser 0 (instalar mediante niveles de características de creación), 65535 (instalar todas las características) o un valor entre 0 y 65535 para instalar un subconjunto de características disponibles.
 
 </dd> <dt>
 
 *InstallState* 
 </dt> <dd>
 
-Especifica el estado de instalación de la característica. Este parámetro debe ser uno de los valores siguientes.
+Especifica el estado de instalación de la característica. Este parámetro debe ser uno de los siguientes valores.
 
 
 
-| Value                                                                                                                                                                                                                                        | Significado                                                      |
+| Valor                                                                                                                                                                                                                                        | Significado                                                      |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| <span id="msiInstallStateAdvertised"></span><span id="msiinstallstateadvertised"></span><span id="MSIINSTALLSTATEADVERTISED"></span><dl> <dt>**msiInstallStateAdvertised**</dt> </dl> | La característica se anuncia<br/>                         |
+| <span id="msiInstallStateAdvertised"></span><span id="msiinstallstateadvertised"></span><span id="MSIINSTALLSTATEADVERTISED"></span><dl> <dt>**msiInstallStateAdvertised**</dt> </dl> | Se anuncia la característica<br/>                         |
 | <span id="msiInstallStateLocal"></span><span id="msiinstallstatelocal"></span><span id="MSIINSTALLSTATELOCAL"></span><dl> <dt>**msiInstallStateLocal**</dt> </dl>                     | La característica se instala localmente.<br/>                 |
-| <span id="msiInstallStateAbsent"></span><span id="msiinstallstateabsent"></span><span id="MSIINSTALLSTATEABSENT"></span><dl> <dt>**msiInstallStateAbsent**</dt> </dl>                 | La característica está desinstalada.<br/>                       |
+| <span id="msiInstallStateAbsent"></span><span id="msiinstallstateabsent"></span><span id="MSIINSTALLSTATEABSENT"></span><dl> <dt>**msiInstallStateAbsent**</dt> </dl>                 | La característica se desinstala.<br/>                       |
 | <span id="msiInstallStateSource"></span><span id="msiinstallstatesource"></span><span id="MSIINSTALLSTATESOURCE"></span><dl> <dt>**msiInstallStateSource**</dt> </dl>                 | La característica se instala para ejecutarse desde el origen.<br/>      |
 | <span id="msiInstallStateDefault"></span><span id="msiinstallstatedefault"></span><span id="MSIINSTALLSTATEDEFAULT"></span><dl> <dt>**msiInstallStateDefault**</dt> </dl>             | La característica se instala en su ubicación predeterminada.<br/> |
 
@@ -82,25 +82,25 @@ Especifica el estado de instalación de la característica. Este parámetro debe
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método **ConfigureProduct** muestra la interfaz de usuario mediante la configuración actual. La configuración de la interfaz de usuario se puede cambiar modificando la [**propiedad elemento uilevel (objeto Installer)**](installer-uilevel.md) antes de llamar al método **ConfigureProduct** .
+El **método ConfigureProduct** muestra la interfaz de usuario mediante la configuración actual. La configuración de la interfaz de usuario se puede cambiar modificando la [**propiedad UILevel (objeto Installer)**](installer-uilevel.md) antes de llamar al **método ConfigureProduct.**
 
-Si el parámetro *InstallState* se establece en cualquier otro valor que no sea msiInstallStateDefault, el parámetro *InstallLevel* se omite y se instalan todas las características del producto. Use el método [**ConfigureFeature**](installer-configurefeature.md) para controlar la instalación de características individuales cuando el parámetro *InstallState* no se establece en msiInstallStateDefault.
+Si el *parámetro InstallState* se establece en cualquier otro valor que no sea msiInstallStateDefault, se omite el parámetro *InstallLevel* y se instalan todas las características del producto. Use el [**método ConfigureFeature**](installer-configurefeature.md) para controlar la instalación de características individuales cuando el parámetro *InstallState* no esté establecido en msiInstallStateDefault.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller se define como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

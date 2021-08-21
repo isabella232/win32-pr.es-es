@@ -1,9 +1,9 @@
 ---
 title: immediatebind (atributo)
-description: El atributo \ immediatebind \ indica que se notificará inmediatamente a la base de datos todos los cambios en una propiedad de un objeto enlazado a datos.
+description: El atributo \ immediatebind\ indica que se notificará inmediatamente a la base de datos todos los cambios realizados en una propiedad de un objeto enlazado a datos.
 ms.assetid: 1c08ddca-e273-43b3-a8f6-ed7f552e4e0e
 keywords:
-- immediatebind (atributo) MIDL
+- atributo immediatebind MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc8a797514c15f8d4c46bb6161946d5d0b6bd10b
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 40396343177da07a2747c79473cdc52f2d665fea8411f4d6f117a5032d66707a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104270839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118642981"
 ---
 # <a name="immediatebind-attribute"></a>immediatebind (atributo)
 
-El atributo **\[ immediatebind \]** indica que se notificará inmediatamente a la base de datos todos los cambios en una propiedad de un objeto enlazado a datos.
+El **\[ atributo \] immediatebind** indica que se notificará inmediatamente a la base de datos todos los cambios realizados en una propiedad de un objeto enlazado a datos.
 
 ``` syntax
 [
@@ -37,28 +37,28 @@ interface | dispinterface interface-name
 
 <dl> <dt>
 
-*interfaz-atributo-lista* 
+*interface-attribute-list* 
 </dt> <dd>
 
-Especifica una lista de uno o más atributos que se aplican a la interfaz en conjunto.
+Especifica una lista de uno o varios atributos que se aplican a la interfaz en su conjunto.
 
 </dd> <dt>
 
-*nombre de interfaz* 
+*interface-name* 
 </dt> <dd>
 
-Especifica el nombre de la [**interfaz**](interface.md) o [**dispinterface**](dispinterface.md).
+Especifica el nombre de la [**interfaz o**](interface.md) [**dispinterface**](dispinterface.md).
 
 </dd> <dt>
 
-*opcional-Attribute-List* 
+*optional-attribute-list* 
 </dt> <dd>
 
 Cero o más atributos de función.
 
 </dd> <dt>
 
-*ReturnType* 
+*returntype* 
 </dt> <dd>
 
 Especifica el tipo de valor devuelto de la función.
@@ -79,11 +79,11 @@ Cero o más parámetros de función.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El atributo **\[ immediatebind \]** permite a los controles diferenciar entre las propiedades que necesitan notificar a la base de datos todos los cambios y las que no lo hacen. Por ejemplo, cada cambio en un control CheckBox debe enviarse inmediatamente a la base de datos subyacente, incluso si el control no ha perdido el foco. Sin embargo, para un control ListBox, se produce un cambio cada vez que se resalta una selección diferente. Notificar a la base de datos un cambio antes de que el control pierda el foco sería ineficaz e innecesario. El atributo **\[ immediatebind \]** permite especificar, estableciendo el bit immediatebind, propiedades individuales en un formulario cuyos cambios se deben notificar inmediatamente.
+El **\[ atributo \] immediatebind** permite a los controles diferenciar entre las propiedades que necesitan notificar a la base de datos cada cambio y las que no. Por ejemplo, cada cambio en un control de casilla se debe enviar inmediatamente a la base de datos subyacente, incluso si el control no ha perdido el foco. Sin embargo, para un control de cuadro de lista, se produce un cambio cada vez que se resalta una selección diferente. Notificar a la base de datos un cambio antes de que el control pierda el foco sería ineficaz e innecesario. El **\[ atributo \] immediatebind** permite especificar, estableciendo el bit ImmediateBind, propiedades individuales en un formulario cuyos cambios se deben indicar inmediatamente.
 
-Las propiedades que tienen el atributo **\[ immediatebind \]** también deben tener el **\[** atributo [**enlazable**](bindable.md) **\]** .
+Las propiedades que tienen **\[ el atributo immediatebind \]** también deben tener el atributo **\[** [**enlazable.**](bindable.md) **\]**
 
 ### <a name="flags"></a>Marcas
 
@@ -116,13 +116,13 @@ interface MyObject : IUnknown
 [**TYPEFLAGS**](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> <dt>
 
-[**interfaz**](interface.md)
+[**Interfaz**](interface.md)
 </dt> <dt>
 
-[**dispinterface**](dispinterface.md)
+[**Dispinterface**](dispinterface.md)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
@@ -131,6 +131,6 @@ interface MyObject : IUnknown
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

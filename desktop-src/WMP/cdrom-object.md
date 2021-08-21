@@ -31,7 +31,7 @@ El **objeto Cdrom** admite las siguientes propiedades.
 | Propiedad                                   | Descripción                                                                                                                                             |
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [driveSpecifier](cdrom-drivespecifier.md) | Recupera la letra de unidad de CD o DVD.                                                                                                                   |
-| [Reproducción](cdrom-playlist.md)             | Recupera un objeto [Playlist que](playlist-object.md) representa las pistas del CD actualmente en la unidad de CD o las entradas de título de nivel de raíz para DVD. |
+| [Reproducción](cdrom-playlist.md)             | Recupera un objeto [Playlist que](playlist-object.md) representa las pistas del CD actualmente en la unidad de CD o las entradas de título de nivel raíz para DVD. |
 
 
 
@@ -49,7 +49,7 @@ El **objeto Cdrom** admite el método siguiente.
 
  
 
-Se **accede al objeto Cdrom** mediante el método siguiente.
+Se accede al objeto **Cdrom** mediante el método siguiente.
 
 
 
@@ -63,7 +63,7 @@ Se **accede al objeto Cdrom** mediante el método siguiente.
 
 Para fines ilustrativos, se usa player.cdromCollection.item(*index*) en las secciones de sintaxis de referencia.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

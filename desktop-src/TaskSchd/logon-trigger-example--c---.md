@@ -1,45 +1,45 @@
 ---
-title: Ejemplo de desencadenador Logon (C++)
-description: Este ejemplo de C++ muestra cómo crear una tarea programada para ejecutar el Bloc de notas cuando un usuario inicia sesión.
+title: Ejemplo de desencadenador de inicio de sesión (C++)
+description: En este ejemplo de C++ se muestra cómo crear una tarea que está programada para ejecutarse Bloc de notas cuando un usuario inicia sesión.
 ms.assetid: 15647234-8d1f-4d75-b215-92927b300c1f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 137155a28a84a981b6013b6651f327a8c6bb4474
-ms.sourcegitcommit: f19e3b30abea739d83178cdc8f2478eb4905f1d0
+ms.openlocfilehash: 44c253d1374df527839647ddc64ea86e7ad2d851e6ba624ac2817790280a5423
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2020
-ms.locfileid: "104359493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118859613"
 ---
-# <a name="logon-trigger-example-c"></a>Ejemplo de desencadenador Logon (C++)
+# <a name="logon-trigger-example-c"></a>Ejemplo de desencadenador de inicio de sesión (C++)
 
-Este ejemplo de C++ muestra cómo crear una tarea programada para ejecutar el Bloc de notas cuando un usuario inicia sesión. La tarea contiene un desencadenador Logon que especifica un límite de inicio para que la tarea se inicie y un identificador de usuario que especifica el usuario. La tarea se registra mediante el grupo administradores como contexto de seguridad para ejecutar la tarea.
+En este ejemplo de C++ se muestra cómo crear una tarea que está programada para ejecutarse Bloc de notas cuando un usuario inicia sesión. La tarea contiene un desencadenador de inicio de sesión que especifica un límite de inicio para el inicio de la tarea y un identificador de usuario que especifica el usuario. La tarea se registra mediante el grupo Administradores como contexto de seguridad para ejecutar la tarea.
 
 En el procedimiento siguiente se describe cómo programar una tarea para iniciar un ejecutable cuando un usuario inicia sesión.
 
-**Para programar el inicio del Bloc de notas cuando un usuario inicia sesión**
+**Para programar Bloc de notas iniciar cuando un usuario inicia sesión**
 
 1.  Inicialice COM y establezca la seguridad COM general.
-2.  Cree el objeto [**ITaskService**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice) .
+2.  Cree el [**objeto ITaskService.**](/windows/desktop/api/taskschd/nn-taskschd-itaskservice)
 
     Este objeto permite crear tareas en una carpeta especificada.
 
-3.  Obtenga una carpeta de tareas para crear una tarea en.
+3.  Obtenga una carpeta de tareas en la que crear una tarea.
 
-    Use el método [**ITaskService:: GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) para obtener la carpeta y el método [**ITaskService:: newtask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) para crear el objeto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) .
+    Use el [**método ITaskService::GetFolder**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-getfolder) para obtener la carpeta y el método [**ITaskService::NewTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskservice-newtask) para crear el [**objeto ITaskDefinition.**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition)
 
-4.  Defina la información sobre la tarea mediante el objeto [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) , como la información de registro de la tarea.
+4.  Defina información sobre la tarea mediante el [**objeto ITaskDefinition,**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) como la información de registro de la tarea.
 
-    Use la [**propiedad RegistrationInfo de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) y otras propiedades de la interfaz [**ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) para definir la información de la tarea.
+    Use la [**propiedad RegistrationInfo de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_registrationinfo) y otras propiedades de la [**interfaz ITaskDefinition**](/windows/desktop/api/taskschd/nn-taskschd-itaskdefinition) para definir la información de la tarea.
 
-5.  Cree un desencadenador Logon mediante la [**propiedad triggers de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) para tener acceso a la interfaz [**ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) de la tarea.
+5.  Cree un desencadenador de inicio de sesión mediante la [**propiedad Triggers de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) para acceder a la [**interfaz ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) de la tarea.
 
-    Use el método [**ITriggerCollection:: Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) para especificar que desea crear un desencadenador Logon. Puede establecer el límite inicial y la propiedad [**userid**](/windows/desktop/api/taskschd/nf-taskschd-ilogontrigger-get_userid) del desencadenador para que las acciones de la tarea se programen para que se ejecuten cuando el usuario inicie sesión después del límite de inicio.
+    Use el [**método ITriggerCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) para especificar que desea crear un desencadenador de inicio de sesión. Puede establecer el límite de inicio y la propiedad [**UserId**](/windows/desktop/api/taskschd/nf-taskschd-ilogontrigger-get_userid) del desencadenador para que las acciones de la tarea se programen para que se ejecuten cuando el usuario inicie sesión después del límite de inicio.
 
-6.  Cree una acción para que la tarea se ejecute mediante la [**propiedad Actions de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para tener acceso a la interfaz [**IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) de la tarea. Use el método [**IActionCollection:: Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) para especificar el tipo de acción que desea crear. En este ejemplo se usa un objeto [**IExecAction**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) , que representa una acción que ejecuta una operación de línea de comandos.
-7.  Registre la tarea mediante el método [**ITaskFolder:: RegisterTaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition) .
+6.  Cree una acción para que la tarea se ejecute mediante la propiedad Actions de [**ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para tener acceso a la [**interfaz IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) de la tarea. Use el [**método IActionCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-iactioncollection-create) para especificar el tipo de acción que desea crear. En este ejemplo se [**usa un objeto IExecAction,**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) que representa una acción que ejecuta una operación de línea de comandos.
+7.  Registre la tarea mediante el [**método ITaskFolder::RegisterTaskDefinition.**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertaskdefinition)
 
-En el siguiente ejemplo de C++ se muestra cómo programar una tarea para ejecutar el Bloc de notas cuando un usuario inicia sesión.
+En el siguiente ejemplo de C++ se muestra cómo programar una tarea para ejecutar Bloc de notas cuando un usuario inicia sesión.
 
 
 ```C++
@@ -365,12 +365,12 @@ int __cdecl wmain()
 
 <dl> <dt>
 
-[Usar el Programador de tareas](using-the-task-scheduler.md)
+[Uso del Programador de tareas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
