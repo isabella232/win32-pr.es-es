@@ -1,25 +1,25 @@
 ---
-description: Las aplicaciones o marcos de interfaz de usuario usan las constantes siguientes para identificar cómo se procesan los comentarios de la interfaz de usuario cuando se detecta un contacto de entrada.
+description: Las aplicaciones o marcos de interfaz de usuario usan las siguientes constantes para identificar cómo se procesan los comentarios de la interfaz de usuario cuando se detecta un contacto de entrada.
 ms.assetid: 6FE8444C-A575-4E89-86D1-1873206688F5
-title: Visualización de contactos (Winuser. h)
+title: Visualización de contactos (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 100892624f3e656e33ddf798c5795eeab6b11a17
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ea196017b1731bb176cd21a7dc02aaa360f4fe70503bd204b9c488d38eff99ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118437258"
 ---
 # <a name="contact-visualization"></a>Visualización de contactos
 
-Las aplicaciones o marcos de interfaz de usuario usan las constantes siguientes para identificar cómo se procesan los comentarios de la interfaz de usuario cuando se detecta un contacto de entrada.
+Las aplicaciones o marcos de interfaz de usuario usan las siguientes constantes para identificar cómo se procesan los comentarios de la interfaz de usuario cuando se detecta un contacto de entrada.
 
-Estas constantes se utilizan con los parámetros **SPI \_ GETCONTACTVISUALIZATION** y **SPI \_ SETCONTACTVISUALIZATION** y la función [**SystemParametersInfo**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) .
+Estas constantes se usan con los parámetros **SPI \_ GETCONTACTVISUALIZATION** y **SPI \_ SETCONTACTVISUALIZATION** y la [**función SystemParametersInfo.**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa)
 
 <dl> <dt>
 
-<span id="CONTACTVISUALIZATION_OFF"></span><span id="contactvisualization_off"></span>**CONTACTVISUALIZATION \_ desactivado**
+<span id="CONTACTVISUALIZATION_OFF"></span><span id="contactvisualization_off"></span>**CONTACTVISUALIZATION \_ OFF**
 </dt> <dd> <dl> <dt>
 
 0x0000
@@ -27,12 +27,12 @@ Estas constantes se utilizan con los parámetros **SPI \_ GETCONTACTVISUALIZATIO
 
 
 
-Especifica la información de la interfaz de usuario para todos los contactos está desactivada.
+Especifica que los comentarios de la interfaz de usuario para todos los contactos están desactivados.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CONTACTVISUALIZATION_ON"></span><span id="contactvisualization_on"></span>**CONTACTVISUALIZATION \_**
+<span id="CONTACTVISUALIZATION_ON"></span><span id="contactvisualization_on"></span>**CONTACTVISUALIZATION \_ ON**
 </dt> <dd> <dl> <dt>
 
 0x0001
@@ -40,7 +40,7 @@ Especifica la información de la interfaz de usuario para todos los contactos es
 
 
 
-Especifica la información de la interfaz de usuario para todos los contactos está activada.
+Especifica los comentarios de la interfaz de usuario para todos los contactos.
 
 
 </dt> </dl> </dd> <dt>
@@ -53,7 +53,7 @@ Especifica la información de la interfaz de usuario para todos los contactos es
 
 
 
-Especifica la información de la interfaz de usuario para todos los contactos está activada con los objetos visuales de modo de presentación.
+Especifica los comentarios de la interfaz de usuario para todos los contactos con objetos visuales en modo de presentación.
 
 
 </dt> </dl> </dd> </dl>
@@ -62,15 +62,15 @@ Especifica la información de la interfaz de usuario para todos los contactos es
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

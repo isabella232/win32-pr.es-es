@@ -64,7 +64,7 @@ Cantidad máxima permitido, en megabytes, de memoria física por máquina virtua
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
@@ -75,7 +75,7 @@ Cantidad máxima permitido, en megabytes, de memoria física por máquina virtua
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

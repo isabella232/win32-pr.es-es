@@ -1,6 +1,6 @@
 ---
 title: Función WaveReadLaneAt
-description: Devuelve el valor de la expresión para el índice de la cadena especificado dentro de la onda especificada.
+description: Devuelve el valor de la expresión para el índice de lane especificado dentro de la ola especificada.
 ms.assetid: CA9467D9-8885-4A5D-87F3-5BA40AE78993
 keywords:
 - Función HLSL de WaveReadLaneAt
@@ -22,7 +22,7 @@ ms.locfileid: "118504625"
 ---
 # <a name="wavereadlaneat-function"></a>Función WaveReadLaneAt
 
-Devuelve el valor de la expresión para el índice de la cadena especificado dentro de la onda especificada.
+Devuelve el valor de la expresión para el índice de lane especificado dentro de la ola especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ La expresión que se va a evaluar.
 *laneIndex* 
 </dt> <dd>
 
-Índice del lane para el que se devolverá el resultado *expr.*
+Índice del carril para el que se devolverá el resultado de *expr.*
 
 </dd> </dl>
 
@@ -57,11 +57,11 @@ El valor resultante es el resultado de *expr*. Será uniforme si *laneIndex* es 
 
 ## <a name="remarks"></a>Comentarios
 
-Esta función es efectivamente una difusión del valor en *el laneIndex*'th lane.
+Esta función es realmente una difusión del valor en *el laneIndex*'th lane.
 
 Esta función se admite desde el modelo de sombreador 6.0 en todas las fases del sombreador.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 * [Información general del modelo de sombreador 6](hlsl-shader-model-6-0-features-for-direct3d-12.md)
-* [Modelo de sombreador 6](shader-model-6-0.md)
+* [Shader Model 6](shader-model-6-0.md)

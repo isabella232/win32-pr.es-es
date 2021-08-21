@@ -1,24 +1,24 @@
 ---
-description: Describe los formatos de fecha admitidos para su uso en la cláusula WQL WHERE.
+description: Describe los formatos de fecha admitidos para su uso en la cláusula WHERE de WQL.
 ms.assetid: 24d70b7f-681b-4a36-bb67-beaf69f4919f
 ms.tgt_platform: multiple
 title: WQL-Supported formatos de fecha
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01e5741de24943defc4df0e59e7255bc1a37effd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a0451778d82905b5ec74d4e6feecb62a63ab630d83a9a5db81f2a10a0488b7c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118106979"
 ---
 # <a name="wql-supported-date-formats"></a>WQL-Supported formatos de fecha
 
-Además del formato **DateTime** de WMI, se admiten los siguientes formatos de fecha para su uso en la cláusula **Where** de WQL.
+Además del formato **DATETIME de** WMI, se admiten los siguientes formatos de fecha para su uso en la cláusula **WHERE** de WQL.
 
-El formato de hora mostrado es diferente para las distintas configuraciones regionales. Los scripts que se conectan a los equipos remotos deben especificar la hora con el formato adecuado para la configuración regional del equipo de destino.
+El formato de hora mostrado es diferente para distintas configuraciones regionales. Los scripts que se conectan a equipos remotos deben especificar la hora en el formato adecuado para la configuración regional del equipo de destino.
 
-Por ejemplo, el formato de fecha y hora Estados Unidos es MM-DD-YYYY. Si un script de un equipo de EE. UU. se conecta a un equipo de destino en una configuración regional en la que el formato es DD-MM-AAAA, las consultas se procesan en el equipo de destino como DD-MM-AAAA. Para evitar distintos resultados entre configuraciones regionales, use el formato de [**fecha y hora**](datetime.md) . Para obtener más información, vea [formato de fecha y hora](date-and-time-format.md).
+Por ejemplo, el Estados Unidos de fecha y hora es MM-DD-YYYY. Si un script de un equipo de Estados Unidos se conecta a un equipo de destino en una configuración regional donde el formato es DD-MM-YYYY, las consultas se procesan en el equipo de destino como DD-MM-YYYY. Para evitar resultados diferentes entre configuraciones regionales, use el [**formato DATETIME.**](datetime.md) Para obtener más información, vea [Formato de fecha y hora.](date-and-time-format.md)
 
 
 
@@ -31,82 +31,82 @@ Por ejemplo, el formato de fecha y hora Estados Unidos es MM-DD-YYYY. Si un scri
 </thead>
 <tbody>
 <tr class="odd">
-<td>Mon [th] DD [,] [AA] AA</td>
-<td>Mes (deletreado o abreviado en tres letras), día, coma opcional y dos o cuatro dígitos de año.<br/> <dl> 21 de enero de 1932<br />
+<td>Mon[th] dd[,] [yy]yy</td>
+<td>Mes (escrito o abreviado en tres letras), día, coma opcional y año de dos o cuatro dígitos.<br/> <dl> 21 de enero de 1932<br />
 21 de enero de 32<br />
-21 1932 de enero<br />
-21 32 de enero<br />
+21 de enero de 1932<br />
+21 de enero de 32<br />
 </dl></td>
 </tr>
 <tr class="even">
-<td>Mon [th] [,] AAAA</td>
-<td>Mes (deletreado o abreviado en tres letras), una coma opcional y un año de cuatro dígitos.<br/> <dl> 1932 de enero<br />
-1932 de enero<br />
-</dl></td>
-</tr>
-<tr class="odd">
-<td>Mon [th] [yy] yy DD</td>
-<td>Mes (deletreado o abreviado en tres letras), dos o cuatro dígitos de año y día.<br/> <dl> 1932 21 de enero<br />
-32 21 de enero<br />
-</dl></td>
-</tr>
-<tr class="even">
-<td>DD mes [th] [,] [] [AA] AA</td>
-<td>Día del mes, mes (deletreado o abreviado en tres letras), coma opcional, espacio opcional y dos o cuatro dígitos de año.<br/> <dl> 21 de enero de 1932<br />
-21 Jan32<br />
+<td>Mon[th][,] yyyy</td>
+<td>Mes (escrito o abreviado en tres letras), coma opcional y año de cuatro dígitos.<br/> <dl> Enero de 1932<br />
+Enero de 1932<br />
 </dl></td>
 </tr>
 <tr class="odd">
-<td>DD [AA] AA Mon [th]</td>
-<td>Día del mes, dos o cuatro dígitos año y mes (deletreado o abreviado en tres letras).<br/> <dl> 21 1932 de enero<br />
+<td>Mon[th] [yy]yy dd</td>
+<td>Mes (escrito o abreviado en tres letras), año de dos o cuatro dígitos y día.<br/> <dl> Enero de 1932, 21<br />
+32 de enero de 21<br />
 </dl></td>
 </tr>
 <tr class="even">
-<td>[yy] yy mes [th] DD</td>
-<td>Año de dos o cuatro dígitos, mes (deletreado o abreviado en tres letras) y día.<br/> <dl> 21 de enero de 1932<br />
+<td>dd Mon[th][,][ ][yy]yy</td>
+<td>Día del mes, mes (escrito o abreviado en tres letras), coma opcional, espacio opcional y año de dos o cuatro dígitos.<br/> <dl> 21 de enero de 1932<br />
+21 ene32<br />
 </dl></td>
 </tr>
 <tr class="odd">
-<td>yyyy Mon [th]</td>
-<td>Año y mes de dos o cuatro dígitos (deletreado o abreviado en tres letras).<br/> <dl> 1932 de enero<br />
+<td>dd [yy]yy Mon[th]</td>
+<td>Día del mes, año de dos o cuatro dígitos y mes (escrito o abreviado en tres letras).<br/> <dl> 21 de enero de 1932<br />
 </dl></td>
 </tr>
 <tr class="even">
-<td>AAAA DD mes [th]</td>
-<td>Año, día y mes de dos o cuatro dígitos (deletreado o abreviado en tres letras).<br/> <dl> 1932 21 de enero<br />
+<td>[yy]yy Mon[th] dd</td>
+<td>Año de dos o cuatro dígitos, mes (escrito o abreviado en tres letras) y día.<br/> <dl> 21 de enero de 1932<br />
 </dl></td>
 </tr>
 <tr class="odd">
-<td>F M {/-.} DD {/-.} [yy] AA</td>
-<td>Mes, día y dos o cuatro dígitos de año. Tenga en cuenta que los separadores deben ser iguales.<br/></td>
+<td>yyyy Mon[th]</td>
+<td>Año y mes de dos o cuatro dígitos (escritos o abreviados en tres letras).<br/> <dl> Enero de 1932<br />
+</dl></td>
 </tr>
 <tr class="even">
-<td>DD {/-.} F M {/-.} [yy] AA</td>
-<td>Día del mes, mes y año de dos o cuatro dígitos. Tenga en cuenta que los separadores deben ser iguales.<br/></td>
+<td>yyyy dd Mon[th]</td>
+<td>Año, día y mes de dos o cuatro dígitos (escritos o abreviados en tres letras).<br/> <dl> 21 de enero de 1932<br />
+</dl></td>
 </tr>
 <tr class="odd">
-<td>F M {/-.} [yy] yy {/-.} DD</td>
-<td>Mes, dos o cuatro dígitos de año y día. Tenga en cuenta que los separadores deben ser iguales.<br/></td>
+<td>[M] M{/-.} dd{/-.} [yy]yy</td>
+<td>Mes, día y año de dos o cuatro dígitos. Tenga en cuenta que los separadores deben ser los mismos.<br/></td>
 </tr>
 <tr class="even">
-<td>DD {/-.} [yy] yy {/-.} F F</td>
-<td>Día del mes, dos o cuatro dígitos de año y mes. Tenga en cuenta que los separadores deben ser iguales.<br/></td>
+<td>dd{/-.} [M] M{/-.} [yy]yy</td>
+<td>Día del mes, mes y año de dos o cuatro dígitos. Tenga en cuenta que los separadores deben ser los mismos.<br/></td>
 </tr>
 <tr class="odd">
-<td>[yy] yy {/-.} DD {/-.} F F</td>
-<td>Año, día y mes de dos o cuatro dígitos. Tenga en cuenta que los separadores deben ser iguales.<br/></td>
+<td>[M] M{/-.} [yy]yy{/-.} Dd</td>
+<td>Mes, año de dos o cuatro dígitos y día. Tenga en cuenta que los separadores deben ser los mismos.<br/></td>
 </tr>
 <tr class="even">
-<td>[yy] yy {/-.} F M {/-.} DD</td>
-<td>Año, mes y día de dos o cuatro dígitos. Tenga en cuenta que los separadores deben ser iguales.<br/></td>
+<td>dd{/-.} [yy]yy{/-.} [M] M</td>
+<td>Día del mes, año de dos o cuatro dígitos y mes. Tenga en cuenta que los separadores deben ser los mismos.<br/></td>
 </tr>
 <tr class="odd">
-<td>[yy] AAMMDD</td>
-<td>Dos o cuatro dígitos de año, mes y día, sin espacios.<br/></td>
+<td>[yy]yy{/-.} dd{/-.} [M] M</td>
+<td>Año, día y mes de dos o cuatro dígitos. Tenga en cuenta que los separadores deben ser los mismos.<br/></td>
 </tr>
 <tr class="even">
-<td>aaaa [MM [DD]]</td>
-<td>Año de dos o cuatro dígitos, un mes opcional y un día opcional, sin espacios.<br/></td>
+<td>[yy]yy{/-.} [M] M{/-.} Dd</td>
+<td>Año, mes y día de dos o cuatro dígitos. Tenga en cuenta que los separadores deben ser los mismos.<br/></td>
+</tr>
+<tr class="odd">
+<td>[yy]yyMMdd</td>
+<td>Año, mes y día de dos o cuatro dígitos, sin espacios.<br/></td>
+</tr>
+<tr class="even">
+<td>yyyy[MM[dd]]</td>
+<td>Año de dos o cuatro dígitos, mes opcional y día opcional, sin espacios.<br/></td>
 </tr>
 </tbody>
 </table>

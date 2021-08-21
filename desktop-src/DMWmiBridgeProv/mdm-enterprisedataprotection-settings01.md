@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118165838"
 ---
-# <a name="mdm_enterprisedataprotection_settings01-class"></a>Clase MDM \_ EnterpriseDataProtection \_ Settings01
+# <a name="mdm_enterprisedataprotection_settings01-class"></a>Clase \_ MDM EnterpriseDataProtection \_ Settings01
 
 \[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
@@ -54,7 +54,7 @@ class MDM_EnterpriseDataProtection_Settings01
 
 ## <a name="members"></a>Miembros
 
-La **clase MDM \_ EnterpriseDataProtection \_ Settings01** tiene estos tipos de miembros:
+La **clase \_ ENTERPRISEDataProtection \_ Settings01 de MDM** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
@@ -142,7 +142,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica el nombre del nodo primario. Para esta clase, la cadena es "Configuración".
@@ -158,10 +158,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/EnterpriseDataProtection"
+Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/EnterpriseDataProtection".
 
 </dd> <dt>
 

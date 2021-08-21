@@ -1,7 +1,7 @@
 ---
 description: Obtiene el tamaño de la revisión del triángulo.
 ms.assetid: 3bfbed4c-59af-43eb-a462-478e89cfe9ae
-title: Función D3DXTriPatchSize (D3DX9Mesh. h)
+title: Función D3DXTriPatchSize (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5ee254b12485153f4d5c5ba0843189399d1aed0f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 54eba8131d59b9d1e68526cd26bb74b497bcec21fcbffdb4229678f166646806
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105717726"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118298247"
 ---
-# <a name="d3dxtripatchsize-function"></a>D3DXTriPatchSize función)
+# <a name="d3dxtripatchsize-function"></a>Función D3DXTriPatchSize
 
 Obtiene el tamaño de la revisión del triángulo.
 
@@ -42,30 +42,30 @@ HRESULT D3DXTriPatchSize(
 
 <dl> <dt>
 
-*pfNumSegs* \[ de\]
+*pfNumSegs* \[ En\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Número de segmentos por borde a dividirlas.
+Número de segmentos por borde a tessentar.
 
 </dd> <dt>
 
-*pdwTriangles* \[ enuncia\]
+*pdwTriangles* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntero a un valor DWORD que contiene el número de triángulos de la revisión.
+Puntero a un DWORD que contiene el número de triángulos de la revisión.
 
 </dd> <dt>
 
-*pdwVertices* \[ enuncia\]
+*pdwVertices* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntero a un valor DWORD que contiene el número de vértices de la revisión del triángulo.
+Puntero a un DWORD que contiene el número de vértices en la revisión del triángulo.
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Puntero a un valor DWORD que contiene el número de vértices de la revisión de
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,12 +81,12 @@ Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

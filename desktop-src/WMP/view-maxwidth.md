@@ -1,9 +1,9 @@
 ---
-title: VIEW. maxWidth
-description: El atributo maxWidth especifica o recupera el ancho máximo en píxeles de la vista al cambiar el tamaño.
+title: VIEW.maxWidth
+description: El atributo maxWidth especifica o recupera el ancho máximo en píxeles de VIEW al volver a ajustar el tamaño.
 ms.assetid: 41912c42-a43f-428c-9f52-6918561674db
 keywords:
-- Vista Media Player de Windows. maxWidth
+- VIEW.maxWidth Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4969a4cba3c874a2c5ec857b8a3e737c74bff420
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4fb566bf8925c8d6a79b107ce440504318d188c9b7ab551dd7dc405fa80dcd48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718912"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116790"
 ---
-# <a name="viewmaxwidth"></a>VIEW. maxWidth
+# <a name="viewmaxwidth"></a>VIEW.maxWidth
 
-El atributo **MaxWidth** especifica o recupera el ancho máximo en píxeles de la **vista** al cambiar el tamaño.
+El **atributo maxWidth** especifica o recupera el ancho máximo en píxeles de **VIEW** al volver a ajustar el tamaño.
 
 ``` syntax
         elementID.maxWidth
@@ -29,15 +29,15 @@ El atributo **MaxWidth** especifica o recupera el ancho máximo en píxeles de l
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura y escritura (**Long**) con un valor de cero o superior. Tiene un valor predeterminado de cero, lo que significa que no hay ninguna restricción en el ancho máximo de la **vista**.
+Este atributo es un número de **lectura** y escritura (**long**) con un valor de cero o mayor. Tiene un valor predeterminado de cero, lo que significa que no hay ninguna restricción en el ancho máximo de **VIEW**.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -45,10 +45,10 @@ Este atributo es un **número** de lectura y escritura (**Long**) con un valor d
 
 <dl> <dt>
 
-[**Elemento de vista**](view-element.md)
+[**ELEMENTO VIEW**](view-element.md)
 </dt> <dt>
 
-[**VER. minWidth**](view-minwidth.md)
+[**VIEW.minWidth**](view-minwidth.md)
 </dt> </dl>
 
  

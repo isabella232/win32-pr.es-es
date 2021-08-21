@@ -1,39 +1,39 @@
 ---
-title: Introducción con gestos táctiles de Windows
-description: En esta sección se describen los pasos básicos para usar gestos de multitoque.
+title: Tareas iniciales con Windows táctiles
+description: En esta sección se describen los pasos básicos para usar gestos multitáctil.
 ms.assetid: 0ffe222a-a0ac-498b-a4ca-85cfb1caba93
 keywords:
-- Windows Touch, gestos
-- Windows Touch, mensajes
+- Windows Táctil, gestos
+- Windows Touch,messages
 - gestos, acerca de
 - gestos, mensajes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 506fee0667e6eb38469bda10af9ded0ea6d3439f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c47b114eebc80946652d7118cc4eaab23092b779fa8897053aae229072fbc428
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118030342"
 ---
-# <a name="getting-started-with-windows-touch-gestures"></a>Introducción con gestos táctiles de Windows
+# <a name="getting-started-with-windows-touch-gestures"></a>Tareas iniciales con Windows táctiles
 
-En esta sección se describen los pasos básicos para usar gestos de multitoque.
+En esta sección se describen los pasos básicos para usar gestos multitáctil.
 
-Normalmente, los siguientes pasos se realizan al usar gestos táctiles de Windows:
+Normalmente, los pasos siguientes se realizan al usar Windows táctiles:
 
-1.  Configurar una ventana para recibir gestos.
-2.  Controle los mensajes de gestos.
-3.  Interprete los mensajes de gestos.
+1.  Configure una ventana para recibir gestos.
+2.  Controle los mensajes de gesto.
+3.  Interpretar los mensajes de gesto.
 
 ## <a name="setting-up-a-window-to-receive-gestures"></a>Configuración de una ventana para recibir gestos
 
-De forma predeterminada, recibe mensajes de [**\_ gestos de WM**](wm-gesture.md) .
+De forma predeterminada, recibe mensajes [**\_ WM GESTURE.**](wm-gesture.md)
 
 > [!Note]  
-> Si llama a [**RegisterTouchWindow**](/windows/desktop/api/winuser/nf-winuser-registertouchwindow), dejará de recibir mensajes de [**\_ gestos de WM**](wm-gesture.md) . Si no recibe mensajes de **\_ gestos de WM** , asegúrese de que no ha llamado a **RegisterTouchWindow**.
+> Si llama a [**RegisterTouchWindow**](/windows/desktop/api/winuser/nf-winuser-registertouchwindow), dejará de recibir mensajes [**\_ WM GESTURE.**](wm-gesture.md) Si no recibe mensajes **DE WM \_ GESTURE,** asegúrese de que no ha llamado a **RegisterTouchWindow.**
 
- 
+ 
 
 En el código siguiente se muestra una implementación de InitInstance simple.
 
@@ -65,11 +65,11 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 
 
 
-## <a name="handling-gesture-messages"></a>Control de mensajes de gestos
+## <a name="handling-gesture-messages"></a>Control de mensajes de gesto
 
-De forma similar a la administración de mensajes de entrada táctiles de Windows, puede controlar los mensajes de gestos de muchas maneras. Si está utilizando Win32, puede buscar el mensaje de [**\_ gestos de WM**](wm-gesture.md) en WndProc. Si va a crear otro tipo de aplicación, puede Agregar el mensaje **de \_ movimiento de WM** al mapa de mensajes y, a continuación, implementar un controlador personalizado.
+De forma similar a Windows los mensajes de entrada táctiles, puede controlar los mensajes de gestos de muchas maneras. Si usa Win32, puede buscar el mensaje [**WM \_ GESTURE**](wm-gesture.md) en WndProc. Si va a crear otro tipo de aplicación, puede agregar el mensaje **WM \_ GESTURE** al mapa de mensajes y, a continuación, implementar un controlador personalizado.
 
-En el código siguiente se muestra cómo se pueden controlar los mensajes de gestos.
+El código siguiente muestra cómo se podrían controlar los mensajes de gestos.
 
 
 ```C++
@@ -88,9 +88,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 
 
 
-## <a name="interpreting-the-gesture-messages"></a>Interpretar los mensajes de gestos
+## <a name="interpreting-the-gesture-messages"></a>Interpretación de los mensajes de gesto
 
-La función [**GetGestureInfo**](/windows/desktop/api/winuser/nf-winuser-getgestureinfo) se usa para interpretar un mensaje de gesto en una estructura que describe el gesto. La estructura [**GESTUREINFO**](/windows/win32/api/winuser/ns-winuser-gestureinfo)contiene información sobre el gesto, como la ubicación en la que se realizó el gesto y el tipo de gesto. En el código siguiente se muestra cómo se puede recuperar e interpretar un mensaje de gesto.
+La [**función GetGestureInfo**](/windows/desktop/api/winuser/nf-winuser-getgestureinfo) se usa para interpretar un mensaje de gesto en una estructura que describe el gesto. La [**estructura, GESTUREINFO**](/windows/win32/api/winuser/ns-winuser-gestureinfo), tiene información sobre el gesto, como la ubicación donde se realizó el gesto y el tipo de gesto. El código siguiente muestra cómo recuperar e interpretar un mensaje de gesto.
 
 
 ```C++
@@ -152,12 +152,12 @@ La función [**GetGestureInfo**](/windows/desktop/api/winuser/nf-winuser-getgest
 
 <dl> <dt>
 
-[Gestos táctiles de Windows](guide-multi-touch-gestures.md)
+[Windows Gestos táctiles](guide-multi-touch-gestures.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

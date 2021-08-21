@@ -1,5 +1,5 @@
 ---
-title: Interfaz IMsRdpClientAdvancedSettings6
+title: IMsRdpClientAdvancedSettings6 (interfaz)
 description: Expone propiedades que administran la configuración avanzada ActiveX control.
 ms.assetid: 45b48cdf-3860-4359-99b2-8d2598146d1d
 ms.tgt_platform: multiple
@@ -23,15 +23,15 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118352132"
 ---
-# <a name="imsrdpclientadvancedsettings6-interface"></a>Interfaz IMsRdpClientAdvancedSettings6
+# <a name="imsrdpclientadvancedsettings6-interface"></a>IMsRdpClientAdvancedSettings6 (interfaz)
 
 Expone propiedades que administran la configuración avanzada ActiveX control. La **interfaz IMsRdpClientAdvancedSettings6** se deriva de la [**interfaz IMsRdpClientAdvancedSettings5.**](imsrdpclientadvancedsettings5.md)
 
-Para obtener una instancia de esta interfaz, use la propiedad [**IMsTscAx::AdvancedSettings**](imstscax-advancedsettings.md) para obtener un puntero de interfaz [**IMsTscAdvancedSettings.**](imstscadvancedsettings-interface.md) A continuación, llame a [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) en el puntero **IMsTscAdvancedSettings** y pase **IID \_ IMsRdpClientAdvancedSettings6** a **QueryInterface**.
+Para obtener una instancia de esta interfaz, use la propiedad [**IMsTscAx::AdvancedSettings**](imstscax-advancedsettings.md) para obtener un puntero de interfaz [**IMsTscAdvancedSettings.**](imstscadvancedsettings-interface.md) A continuación, llame a [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) en el puntero **IMsTscAdvancedSettings** y pase **\_ IMSRdpClientAdvancedSettings6** a **QueryInterface**.
 
 ## <a name="members"></a>Miembros
 
-La **interfaz IMsRdpClientAdvancedSettings6** hereda de [**IMsRdpClientAdvancedSettings5.**](imsrdpclientadvancedsettings5.md) **IMsRdpClientAdvancedSettings6** también tiene estos tipos de miembros:
+La **interfaz IMsRdpClientAdvancedSettings6** hereda de [**IMsRdpClientAdvancedSettings5**](imsrdpclientadvancedsettings5.md). **IMsRdpClientAdvancedSettings6** también tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
@@ -47,9 +47,9 @@ La **interfaz IMsRdpClientAdvancedSettings6** tiene estas propiedades.
 | [**AuthenticationType**](imsrdpclientadvancedsettings6-authenticationtype.md)<br/>                 | Solo lectura<br/>  | Especifica el tipo de autenticación utilizada para esta conexión.<br/>                                                          |
 | [**ConnectToAdminadminserver**](imsrdpclientadvancedsettings6-connecttoadministerserver.md)<br/>   | Lectura/escritura<br/> | Recupera o especifica si el control ActiveX debe intentar conectarse al servidor con fines administrativos.<br/> |
 | [**EnableCredSspSupport**](imsrdpclientadvancedsettings6-enablecredsspsupport.md)<br/>             | Lectura/escritura<br/> | Especifica si el proveedor de servicios de seguridad de credenciales (CredSSP) está habilitado para esta conexión.<br/>                    |
-| [**HotKeyFocusReleaseLeft**](imsrdpclientadvancedsettings6-hotkeyfocusreleaseleft.md)<br/>         | Lectura/escritura<br/> | Especifica el código de clave virtual que se agregará a CTRL+ALT para determinar el reemplazo de la tecla de acceso rápido para CTRL+ALT+FLECHA IZQUIERDA.<br/>          |
+| [**HotKeyFocusReleaseLeft**](imsrdpclientadvancedsettings6-hotkeyfocusreleaseleft.md)<br/>         | Lectura/escritura<br/> | Especifica el código de clave virtual que se agregará a CTRL+ALT para determinar el reemplazo de teclas de acceso rápido para CTRL+ALT+FLECHA IZQUIERDA.<br/>          |
 | [**HotKeyFocusReleaseRight**](imsrdpclientadvancedsettings6-hotkeyfocusreleaseright.md)<br/>       | Lectura/escritura<br/> | Especifica el código de clave virtual que se agregará a CTRL+ALT para determinar el reemplazo de la tecla de acceso rápido para CTRL+ALT+FLECHA DERECHA.<br/>         |
-| [**Pcb**](imsrdpclientadvancedsettings6-pcb.md)<br/>                                               | Lectura/escritura<br/> | Especifica la configuración de BLOB de preconexión (PWS) que se usará antes de conectarse para la transmisión al servidor.<br/>               |
+| [**Pcb**](imsrdpclientadvancedsettings6-pcb.md)<br/>                                               | Lectura/escritura<br/> | Especifica la configuración de BLOB de preconexión (LDAP) que se usará antes de conectarse para la transmisión al servidor.<br/>               |
 | [**RelativeMouseMode**](imsrdpclientadvancedsettings6-relativemousemode.md)<br/>                   | Lectura/escritura<br/> | Especifica si el mouse debe usar el modo relativo.<br/>                                                                   |
 
 
@@ -74,7 +74,7 @@ Esta interfaz se ha ampliado mediante la interfaz [**IMsRdpClientAdvancedSetting
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

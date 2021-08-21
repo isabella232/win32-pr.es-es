@@ -24,7 +24,7 @@ Esta sección contiene información sobre las clases proporcionadas por DirectXM
 | [**BoundingBox**](/windows/desktop/api/DirectXCollision/ns-directxcollision-boundingbox)<br/>                 | Objeto alineado en el eje delimitador.<br/>  |
 | [**BoundingFrustum**](/windows/win32/api/directxcollision/ns-directxcollision-boundingfrustum)<br/>         | Objeto de frustum delimitador.<br/>       |
 | [**BoundingOrientedBox**](/windows/win32/api/directxcollision/ns-directxcollision-boundingorientedbox)<br/> | Objeto de cuadro de límite orientado.<br/> |
-| [**BoundingSphere**](/windows/win32/api/directxcollision/ns-directxcollision-boundingsphere)<br/>           | Objeto de esfera de límite.<br/>        |
+| [**BoundingSphere**](/windows/win32/api/directxcollision/ns-directxcollision-boundingsphere)<br/>           | Objeto de esfera delimitadora.<br/>        |
 
 
 

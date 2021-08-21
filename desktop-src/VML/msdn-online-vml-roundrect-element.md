@@ -4,29 +4,29 @@ description: Elemento RoundRect de VML
 ms.assetid: 9ed36aa0-6cb1-4522-80c8-7fb81833da7d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb3b61f8386ac7c1f29cc23984d0c5af5e9c1a4d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 37740a91201fd46c8f7c4aee511f6e6f3b1ec672fe0d53e1c370e96d800ec8c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104421367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118124248"
 ---
 # <a name="vml-roundrect-element"></a>Elemento RoundRect de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Forma de rectángulo redondeado predefinido.
 
-**RoundRect** [usa el atributo](msdn-online-vml-arcsize-attribute.md) separation.
+**RoundRect usa** el [atributo ArcSize.](msdn-online-vml-arcsize-attribute.md)
 
 **Comentarios:**
 
-A continuación se encuentra el código mínimo necesario para generar un rectángulo redondeado.
+A continuación se muestra el código mínimo necesario para generar un rect de redondeo.
 
 
 ```HTML
@@ -40,6 +40,6 @@ A continuación se encuentra el código mínimo necesario para generar un rectá
 
 
 
- 
+ 
 
- 
+ 

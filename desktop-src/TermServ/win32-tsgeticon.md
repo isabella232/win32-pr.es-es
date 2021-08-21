@@ -1,11 +1,11 @@
 ---
-title: Win32_TSGetIcon (clase)
-description: Devuelve el contenido del icono especificado por la ruta de acceso y el índice del archivo.
+title: Win32_TSGetIcon clase
+description: Devuelve el contenido del icono especificado por la ruta de acceso del archivo y el índice.
 ms.assetid: c0ab50f1-f5a9-4f5e-8280-40c638f09e1c
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSGetIcon clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSGetIcon de clase, se describe
+- Win32_TSGetIcon clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -21,16 +21,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a0186e158f025be8e8a5e6cf3e87f3ad5d8b296
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: afe118acc9b0e722d881e6277469f2fe298e2a81042fe7b1c5e248c82c0cc196
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118126535"
 ---
-# <a name="win32_tsgeticon-class"></a>\_Clase Win32 TSGetIcon
+# <a name="win32_tsgeticon-class"></a>Clase TSGetIcon de Win32 \_
 
-Devuelve el contenido del icono especificado por la ruta de acceso y el índice del archivo.
+Devuelve el contenido del icono especificado por la ruta de acceso del archivo y el índice.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -56,7 +56,7 @@ La **clase \_ TSGetIcon de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ TSGetIcon** tiene estos métodos.
+La **clase \_ TSGetIcon de Win32** tiene estos métodos.
 
 
 
@@ -70,7 +70,7 @@ La clase **Win32 \_ TSGetIcon** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ TSGetIcon de Win32** tiene estas propiedades.
+La **clase \_ TSGetIcon win32** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -88,7 +88,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Descripción breve (cadena de una línea) del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -103,25 +103,25 @@ Tipo de acceso: solo lectura
 
 Descripción del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Fecha en que se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -136,7 +136,7 @@ Tipo de acceso: solo lectura
 
 El nombre del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -152,15 +152,15 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero prediciendo un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
 
 
- ("Correcto")
+ ("Ok")
 
 
 </dt> <dd></dd> <dt>
@@ -188,21 +188,21 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 
 
 
- ("Pred FAIL")
+ ("Error previo")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Iniciando")
+ ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Deteniéndose")
+ ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -224,8 +224,8 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ cimv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TsAllow. mof</dt> </dl>  |
+| Espacio de nombres<br/>                | \\TerminalServices cimv2 \\ raíz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TsAllow.mof</dt> </dl>  |
 | Archivo DLL<br/>                      | <dl> <dt>TsPubWmi.dll</dt> </dl> |
 
 

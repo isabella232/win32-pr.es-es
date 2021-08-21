@@ -13,18 +13,18 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 9fffebc8-29b9-4064-b60c-c8c63690a79e
-ms.openlocfilehash: b77d618c4c772859a9009f3cca761c59df83257a
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 86c0030f686cb0d9396c36404df1a8b43ce6b3de6ae8599d0b867cfc129c6af5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118047327"
 ---
 # <a name="shelluihelper-object"></a>Objeto ShellUIHelper
 
 Implementado por shell para ayudar a crear scripts y microsoft Visual Basic los desarrolladores usan algunas de las características disponibles en el shell. El **objeto ShellUIHelper** no tiene propiedades ni eventos. Se proporcionan métodos para agregar elementos al shell.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 El **objeto ShellUIHelper** tiene estos tipos de miembros:
 
@@ -67,7 +67,7 @@ Este método ya no se admite en Windows Vista. En ese sistema operativo, devuelv
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="shelluihelper-issubscribed.md"><strong>IsSubscribed</strong></a></td>
-<td style="text-align: left;">Indica si se ha suscrito una dirección URL especificada.<br/></td>
+<td style="text-align: left;">Indica si se ha suscrito a una dirección URL especificada.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -80,9 +80,9 @@ Este método ya no se admite en Windows Vista. En ese sistema operativo, devuelv
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |

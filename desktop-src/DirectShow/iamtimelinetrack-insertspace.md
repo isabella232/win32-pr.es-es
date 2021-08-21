@@ -62,7 +62,7 @@ Punto final del espacio insertado, en unidades de 100 nanosegundos.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un **valor HRESULT.** Entre los valores devueltos posibles se incluyen los siguientes:
+Devuelve un **valor HRESULT.** Entre los posibles valores devueltos se incluyen los siguientes:
 
 
 
@@ -107,7 +107,7 @@ Devuelve un **valor HRESULT.** Entre los valores devueltos posibles se incluyen 
 [**IamTimelineTrack (interfaz)**](iamtimelinetrack.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

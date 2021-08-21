@@ -13,7 +13,7 @@ ms.locfileid: "118504635"
 ---
 # <a name="directdraw-callback-functions"></a>Funciones de devolución de llamada de DirectDraw
 
-Esta sección contiene información sobre las siguientes funciones de devolución de llamada usadas con DirectDraw:
+Esta sección contiene información sobre las siguientes funciones de devolución de llamada que se usan con DirectDraw:
 
 -   [*DDEnumCallback*](/windows/desktop/api/Ddraw/nc-ddraw-lpddenumcallbacka)
 -   [*DDEnumCallbackEx*](/windows/desktop/api/Ddraw/nc-ddraw-lpddenumcallbackexa)

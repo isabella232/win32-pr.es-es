@@ -1,11 +1,11 @@
 ---
-title: Método Modify de la clase MicrosoftDNS_ATMAType
-description: El método Modify actualiza un registro de recursos de dirección ATM a nombre (ATMA).
+title: Método Modify de la MicrosoftDNS_ATMAType clase
+description: El método Modify actualiza un registro de recursos de dirección DE ATM a nombre (ATMA).
 ms.assetid: 202fc38d-fb8f-4044-bb7d-9e041cbde8ec
 keywords:
-- Modificar DNS de método
-- Modificar el método DNS, MicrosoftDNS_ATMAType clase
-- MicrosoftDNS_ATMAType de clase DNS, Modify (método)
+- Modificación del dns del método
+- Modificar el método DNS , MicrosoftDNS_ATMAType clase
+- MicrosoftDNS_ATMAType clase DNS , Método Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48d784e9421641dc53d64bb39a2e97b0d9ef257b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f3c8f98288c519340e6a95959964a4c42799201c7e1701bb748f634746a94226
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118163763"
 ---
-# <a name="modify-method-of-the-microsoftdns_atmatype-class"></a>Método Modify de la \_ clase MicrosoftDNS ATMAType
+# <a name="modify-method-of-the-microsoftdns_atmatype-class"></a>Método Modify de la clase ATMAType de MicrosoftDNS \_
 
-El método **Modify** actualiza un registro de recursos de dirección ATM a nombre (Atma).
+El **método Modify** actualiza un registro de recursos de dirección DE ATM a nombre (ATMA).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ de en, opcional\]
+*TTL* \[ en, opcional\]
 </dt> <dd>
 
 Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
@@ -55,21 +55,21 @@ Tiempo, en segundos, que un solucionador DNS puede almacenar en caché el RR.
 *Formato* \[ en, opcional\]
 </dt> <dd>
 
-Formato de dirección ATM. Dos valores posibles para FORMAT son: 0, que indica el formato de dirección del sistema de finalización (AESA) de ATM y 1 que indica el formato E. 164.
+Formato de dirección ATM. Dos valores posibles para FORMAT son: 0 que indica el formato de dirección del sistema de finalización de ATM (AESA) y 1 que indica el formato E.164.
 
 </dd> <dt>
 
 *ATMAddress* \[ en, opcional\]
 </dt> <dd>
 
-Cadena de longitud variable de octetos que contiene la dirección ATM del nodo/propietario al que pertenece este RR. Los primeros cuatro bytes de la matriz se utilizan para almacenar el tamaño de la cadena de octeto. El byte más significativo se almacena en byte 0.
+Cadena de longitud variable de octetos que contiene la dirección ATM del nodo o propietario al que pertenece este RR. Los cuatro primeros bytes de la matriz se usan para almacenar el tamaño de la cadena de octeto. El byte más significativo se almacena en byte 0.
 
 </dd> <dt>
 
-*RR* \[ out, Ref\]
+*RR* \[ out, ref\]
 </dt> <dd>
 
-Referencia al nuevo objeto.
+Referencia al nuevo objeto .
 
 </dd> </dl>
 
@@ -77,20 +77,20 @@ Referencia al nuevo objeto.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los parámetros no especificados se dejan sin cambios en el registro modificado.
+Cualquier parámetro no especificado se deja sin modificar en el registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -101,10 +101,10 @@ Los parámetros no especificados se dejan sin cambios en el registro modificado.
 [**MicrosoftDNS \_ ATMAType**](microsoftdns-atmatype.md)
 </dt> <dt>
 
-[**Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS ATMAType**](microsoftdns-atmatype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData de la clase \_ ATMAType de MicrosoftDNS**](microsoftdns-atmatype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

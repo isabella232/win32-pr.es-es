@@ -1,9 +1,9 @@
 ---
 title: Función InternetGetProxyInfo
-description: Recupera los datos de proxy para tener acceso a los recursos especificados.
+description: Recupera los datos de proxy para acceder a los recursos especificados.
 ms.assetid: 5fc0f471-420c-4125-8323-cb1e1e72e43f
 keywords:
-- Función InternetGetProxyInfo WinINet
+- Función WinINet internetGetProxyInfo
 topic_type:
 - apiref
 api_name:
@@ -14,19 +14,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef441754fd5de09e3792d9269f05d96ecc08aa23
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 76965f63afb751e810daa6feffe76774f03daaaf7278996b4c6800f0efa42dfa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118113689"
 ---
 # <a name="internetgetproxyinfo-function"></a>Función InternetGetProxyInfo
 
 > [!NOTE]
-> Esta función es desusada. En el caso de la compatibilidad con AutoProxy, use HTTP Services (WinHTTP) versión 5,1 en su lugar. Para obtener más información, consulte [compatibilidad con el AutoProxy WinHTTP](../winhttp/winhttp-autoproxy-support.md).
+> Esta función es desusada. Para admitir el proxy automático, use la versión 5.1 de servicios HTTP (WinHTTP) en su lugar. Para más información, consulte [Compatibilidad con WinHTTP AutoProxy.](../winhttp/winhttp-autoproxy-support.md)
 
-Recupera los datos de proxy para tener acceso a los recursos especificados. Solo se puede llamar a esta función mediante una vinculación dinámica a "JSProxy.dll".
+Recupera los datos de proxy para acceder a los recursos especificados. Solo se puede llamar a esta función mediante la vinculación dinámica a "JSProxy.dll".
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,55 +45,55 @@ BOOL InternetGetProxyInfo(
 
 <dl> <dt>
 
-*lpszUrl* \[ de\]
+*lpszUrl* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica la dirección URL del recurso HTTP de destino.
+Puntero a una cadena terminada en NULL que especifica la dirección URL del recurso HTTP de destino.
 
 </dd> <dt>
 
-*dwUrlLength* \[ de\]
+*dwUrlLength* \[ En\]
 </dt> <dd>
 
-Tamaño, en bytes, de la dirección URL a la que apunta *lpszUrl*.
+Tamaño, en bytes, de la dirección URL a la que *apunta lpszUrl.*
 
 </dd> <dt>
 
-*lpszUrlHostName* \[ de\]
+*lpszUrlHostName* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre de host de la dirección URL de destino.
+Puntero a una cadena terminada en NULL que especifica el nombre de host de la dirección URL de destino.
 
 </dd> <dt>
 
-*dwUrlHostNameLength* \[ de\]
+*dwUrlHostNameLength* \[ En\]
 </dt> <dd>
 
-Tamaño, en bytes, del nombre de host al que apunta *lpszUrlHostName*.
+Tamaño, en bytes, del nombre de host al que *apunta lpszUrlHostName*.
 
 </dd> <dt>
 
-*lplpszProxyHostName* \[ enuncia\]
+*lplpszProxyHostName* \[ out\]
 </dt> <dd>
 
-Puntero a la dirección de un búfer que recibe la dirección URL del proxy que se va a usar en una solicitud HTTP para el recurso especificado. La aplicación es responsable de liberar esta cadena.
+Puntero a la dirección de un búfer que recibe la dirección URL del proxy que se usará en una solicitud HTTP para el recurso especificado. La aplicación es responsable de liberar esta cadena.
 
 </dd> <dt>
 
-*lpdwProxyHostNameLength* \[ enuncia\]
+*lpdwProxyHostNameLength* \[ out\]
 </dt> <dd>
 
-Puntero a una variable que recibe el tamaño, en bytes, de la cadena devuelta en el búfer de *lplpszProxyHostName* .
+Puntero a una variable que recibe el tamaño, en bytes, de la cadena devuelta en el búfer *lplpszProxyHostName.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario. Para obtener los datos de error extendidos, llame a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario. Para obtener datos de error extendidos, llame [**a GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para llamar a **InternetGetProxyInfo**, debe vincular dinámicamente a él mediante el tipo de puntero de función definido **pfnInternetGetProxyInfo**. El siguiente fragmento de código muestra cómo declarar una instancia de este tipo de puntero de función y, a continuación, inicializarla y llamarla.
+Para llamar **a InternetGetProxyInfo**, debe vincularlo dinámicamente mediante el tipo de puntero de función **definido pfnInternetGetProxyInfo**. El fragmento de código siguiente muestra cómo declarar una instancia de este tipo de puntero de función y, a continuación, inicializar y llamarla.
 
 ```cpp
   HMODULE hModJS;                               // Handle for loading the DLL
@@ -119,14 +119,14 @@ Para llamar a **InternetGetProxyInfo**, debe vincular dinámicamente a él media
   // The pIGPI function pointer can now be used to call InternetGetProxyInfo.
 ```
 
-Al igual que todos los demás aspectos de la API de WinINet, no se puede llamar a esta función de forma segura desde DllMain o los constructores y destructores de objetos globales.
+Al igual que todos los demás aspectos de la API de WinINet, no se puede llamar a esta función de forma segura desde DllMain ni desde los constructores y destructores de objetos globales.
 
 > [!Note]  
-> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. En el caso de servicios o implementaciones de servidor, use los [servicios http de Microsoft Windows (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para las implementaciones o servicios de servidor, use [Microsoft Windows servicios HTTP (WinHTTP).](/windows/desktop/WinHttp/winhttp-start-page)
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |

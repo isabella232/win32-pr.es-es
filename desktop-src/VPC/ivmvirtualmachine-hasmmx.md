@@ -1,11 +1,11 @@
 ---
-title: Propiedad IVMVirtualMachine HasMMX (VPCCOMInterfaces. h)
-description: Determina si el procesador admite el conjunto de instrucciones MMX. | Propiedad IVMVirtualMachine HasMMX (VPCCOMInterfaces. h)
+title: Propiedad IVMVirtualMachine HasMMX (VPCCOMInterfaces.h)
+description: Determina si el procesador admite el conjunto de instrucciones MMX. | Propiedad HasMMX IVMVirtualMachine (VPCCOMInterfaces.h)
 ms.assetid: 85350abe-ab44-42d2-9f3e-0fbdb64ff854
 keywords:
-- Propiedad HasMMX Virtual PC
-- Propiedad HasMMX Virtual PC, interfaz IVMVirtualMachine
-- Interfaz IVMVirtualMachine Virtual PC, propiedad HasMMX
+- Equipo virtual de la propiedad HasMMX
+- Interfaz virtual de la propiedad HasMMX, IVMVirtualMachine
+- IVMVirtualMachine interface Virtual PC , Propiedad HasMMX
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26e6b780d14749db193b2a7ce9a41083c6bf7031
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4b72729998167811cc450adfaee876f2318b3a0e0cd169d6a9877ca8e668224b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104083688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118123165"
 ---
-# <a name="ivmvirtualmachinehasmmx-property"></a>IVMVirtualMachine:: HasMMX (propiedad)
+# <a name="ivmvirtualmachinehasmmx-property"></a>IVMVirtualMachine::HasMMX, propiedad
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
 Determina si el procesador admite el conjunto de instrucciones MMX.
 
@@ -45,7 +45,7 @@ HRESULT get_HasMMX(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**True** si el procesador admite el conjunto de instrucciones MMX, **false** en caso contrario.
+**TRUE** si el procesador admite el conjunto de instrucciones MMX; en caso contrario, **FALSE.**
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -53,10 +53,10 @@ HRESULT get_HasMMX(
 
 | Nombre o valor                                                                                                                                                    | Significado                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>     |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **null**.<br/>        |
-| <dl> <dt>Máquina virtual \_ 0xA0040207 de \_ máquina virtual \_ desconocida</dt> <dt></dt> </dl> | La configuración es desconocida.<br/>     |
-| <dl> <dt>DISP \_ . E \_ excepción</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/> |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>     |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **NULL.**<br/>        |
+| <dl> <dt>Máquina virtual \_ E \_ VM \_ UNKNOWN</dt> <dt>0xA0040207</dt> </dl> | La configuración es desconocida.<br/>     |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/> |
 
 
 
@@ -66,12 +66,12 @@ HRESULT get_HasMMX(
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMVirtualMachine se define como f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMVirtualMachine se define como \_ f7092aa1-33ed-4f78-a59f-c00adfc2edd7<br/>          |
 
 
 

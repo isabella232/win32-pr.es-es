@@ -1,32 +1,32 @@
 ---
-description: Monitor de red o el archivo DLL del analizador pueden dar formato a los datos que se muestran en el panel de detalles de la interfaz de usuario de Monitor de red.
+description: Monitor de red o el archivo DLL del analizador pueden dar formato a los datos que se muestran en el panel de detalles de la interfaz Monitor de red usuario.
 ms.assetid: 60ab9253-ec0f-4c97-a475-ce2a74d469c4
 title: Datos de formato mostrados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 017946dab9db443cf7083109dd75ccee1f6d278a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d843214804e50d6baa7bd60f49da170dbe561029e0643c5a57c8677da3735936
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117982471"
 ---
 # <a name="formatting-displayed-data"></a>Datos de formato mostrados
 
-Monitor de red o el archivo DLL del analizador pueden dar formato a los datos que se muestran en el panel de detalles de la interfaz de usuario de Monitor de red.
+Monitor de red o el archivo DLL del analizador pueden dar formato a los datos que se muestran en el panel de detalles de la interfaz Monitor de red usuario.
 
 Monitor de red proporciona un formateador genérico que proporciona los servicios básicos necesarios para mostrar la mayoría de los tipos de datos que existen dentro de un protocolo. Sin embargo, el formateador genérico no admite todos los tipos de datos. Por ejemplo, el formateador genérico no admite lo siguiente:
 
 -   Varios tipos de direcciones.
 -   Nombres descriptivos de origen y destino.
--   Identificadores de objetos.
+-   Identificadores de objeto.
 -   Tipos de datos enteros grandes.
--   Tipos de datos enteros de longitud variable pequeños.
+-   Tipos de datos enteros pequeños de longitud variable.
 
-En el ejemplo siguiente se identifican dos cadenas con formato para la propiedad ID. de privilegio.
+En el ejemplo siguiente se identifican dos cadenas con formato para la propiedad Id. de privilegio.
 
--   La primera línea de código muestra la salida del formateador genérico. El resultado se basa en el tipo de datos.
--   En la segunda línea de código se muestra la salida de un formateador personalizado con una cadena para los datos de la propiedad.
+-   La primera línea de código muestra la salida del formateador genérico. La salida se basa en el tipo de datos.
+-   La segunda línea de código muestra la salida de un formateador personalizado con una cadena para los datos de propiedad.
 
 ``` syntax
 Privilege ID (PID) = 0x0029
@@ -34,7 +34,7 @@ Privilege ID   (PID) = 0x0029   The Process has privileges
 ```
 
 > [!Note]  
-> Cuando sea posible, use el formateador genérico para mostrar los datos porque le permite controlar el tamaño de la DLL del analizador y proporciona mejores capacidades multiplataforma para el archivo DLL del analizador.
+> Cuando sea posible, use el formateador genérico para mostrar los datos, ya que permite controlar el tamaño de la DLL del analizador y proporciona mejores funcionalidades multiplataforma para el archivo DLL del analizador.
 
  
 

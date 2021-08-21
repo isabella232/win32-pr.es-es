@@ -1,7 +1,7 @@
 ---
 description: El método CreateInstance crea una nueva instancia de la clase CMemAllocator.
 ms.assetid: 87a831a4-2414-4240-8448-c5d90f130470
-title: Método CMemAllocator. CreateInstance (Amfilter. h)
+title: Método CMemAllocator.CreateInstance (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7ef85de95db74e8a9d7aa6a7b1ba977620a29826
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a8682a667685f38cd7a73e091067a86f528f64e1ec110c473f50000c18ba4d87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156024"
 ---
-# <a name="cmemallocatorcreateinstance-method"></a>CMemAllocator. CreateInstance (método)
+# <a name="cmemallocatorcreateinstance-method"></a>Método CMemAllocator.CreateInstance
 
-El `CreateInstance` método crea una nueva instancia de la clase **CMemAllocator** .
+El `CreateInstance` método crea una nueva instancia de la clase **CMemAllocator.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,23 +43,23 @@ static CUnknown* CreateInstance(
 
 <dl> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Puntero al propietario de este objeto. Si se agrega el objeto, pase un puntero a la interfaz **IUnknown** del objeto de agregación. De lo contrario, establezca este parámetro en **null**.
+Puntero al propietario de este objeto. Si el objeto se agrega, pase un puntero a la interfaz **IUnknown** del objeto de agregación. De lo contrario, establezca este parámetro en **NULL.**
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Puntero a una variable que recibe un valor **HRESULT** que indica si el método se ha ejecutado correctamente o no.
+Puntero a una variable que recibe un **valor HRESULT** que indica el éxito o error del método.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero a un nuevo objeto **CMemAllocator** , escrito como un objeto **CUnknown** .
+Devuelve un puntero a un **nuevo objeto CMemAllocator,** con el tipo **CUnknown.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,8 +67,8 @@ Devuelve un puntero a un nuevo objeto **CMemAllocator** , escrito como un objeto
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Devuelve un puntero a un nuevo objeto **CMemAllocator** , escrito como un objeto
 
 <dl> <dt>
 
-[**Clase CMemAllocator**](cmemallocator.md)
+[**CMemAllocator (clase)**](cmemallocator.md)
 </dt> </dl>
 
  

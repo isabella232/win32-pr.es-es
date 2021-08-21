@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_FILE_GET_CAPTURE_FILE (VFW. h)
-description: El \_ mensaje de archivo Cap de WM \_ \_ Get \_ Capture \_ file devuelve el nombre del archivo de captura actual. Puede enviar este mensaje explícitamente o mediante la macro capFileGetCaptureFile.
+title: WM_CAP_FILE_GET_CAPTURE_FILE mensaje (Vfw.h)
+description: El mensaje \_ WM CAP FILE GET CAPTURE FILE devuelve el nombre del archivo de captura \_ \_ \_ \_ actual. Puede enviar este mensaje explícitamente o mediante la macro capFileGetCaptureFile.
 ms.assetid: 86ce2904-834d-449f-9ef8-5a158c55bbaa
 keywords:
-- Mensaje de WM_CAP_FILE_GET_CAPTURE_FILE de Windows multimedia
+- WM_CAP_FILE_GET_CAPTURE_FILE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7008e0b217f29ad9602afbdc41cc97f9cb7ecaa3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 462f919458078129f6756782c2fde5322b3cd814c3108cb0ba8ee24e2f54c022
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135323"
 ---
-# <a name="wm_cap_file_get_capture_file-message"></a>\_Mensaje de \_ obtención \_ de \_ \_ archivo de Cap de WM
+# <a name="wm_cap_file_get_capture_file-message"></a>Mensaje GET CAPTURE FILE DE WM \_ CAP \_ \_ \_ \_ FILE
 
-El mensaje de archivo **Cap de WM \_ \_ \_ Get \_ Capture \_ File** devuelve el nombre del archivo de captura actual. Puede enviar este mensaje explícitamente o mediante la macro [**capFileGetCaptureFile**](/windows/desktop/api/Vfw/nf-vfw-capfilegetcapturefile) .
+El **mensaje WM CAP FILE GET CAPTURE \_ \_ \_ \_ \_ FILE** devuelve el nombre del archivo de captura actual. Puede enviar este mensaje explícitamente o mediante la [**macro capFileGetCaptureFile.**](/windows/desktop/api/Vfw/nf-vfw-capfilegetcapturefile)
 
 
 ```C++
@@ -41,7 +41,7 @@ lParam = (LPARAM) (LPVOID) (LPSTR) (szName);
 <span id="wSize"></span><span id="wsize"></span><span id="WSIZE"></span>*wSize*
 </dt> <dd>
 
-Tamaño, en bytes, del búfer definido por la aplicación al que se hace referencia en **szName**.
+Tamaño, en bytes, del búfer definido por la aplicación al que hace referencia **szName**.
 
 </dd> <dt>
 
@@ -54,9 +54,9 @@ Puntero a un búfer definido por la aplicación que se usa para devolver el nomb
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o FALSE **de** lo contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El nombre de archivo de captura predeterminado es C: \\CAPTURE.AVI.
 
@@ -64,11 +64,11 @@ El nombre de archivo de captura predeterminado es C: \\CAPTURE.AVI.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

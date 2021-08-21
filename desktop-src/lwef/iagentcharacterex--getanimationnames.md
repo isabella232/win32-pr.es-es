@@ -4,16 +4,16 @@ description: IAgentCharacterEx GetAnimationNames
 ms.assetid: d565b258-dc12-422b-a13d-aeec56057f64
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e31dcb7ea34a9f0d833f8c1665a092fe4f3a30e7
-ms.sourcegitcommit: baa7cd1709e48672f5f07ff83a9c9d5699c0efcd
+ms.openlocfilehash: 58c9cb1bc1b51b0bead2f071e0cd8561ef055ef6b7eb7986b3be969208452331
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "105697896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118478037"
 ---
 # <a name="iagentcharacterexgetanimationnames"></a>IAgentCharacterEx::GetAnimationNames
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT GetAnimationNames(
@@ -23,18 +23,18 @@ HRESULT GetAnimationNames(
 
 Recupera los nombres de animación de un carácter.
 
--   Devuelve **S \_ OK** para indicar que la operación se realizó correctamente.
+-   Devuelve **S \_ OK para** indicar que la operación se ha realizado correctamente.
 
 <dl> <dt>
 
-<span id="IUnknown"></span><span id="iunknown"></span><span id="IUNKNOWN"></span>*IUnknown*
+<span id="IUnknown"></span><span id="iunknown"></span><span id="IUNKNOWN"></span>*Iunknown*
 </dt> <dd>
 
-Dirección de la interfaz [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) para la colección de animaciones del carácter.
+Dirección de la [**interfaz IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) para la colección de animaciones del carácter.
 
 </dd> </dl>
 
-Esta función permite enumerar los nombres de las animaciones de un carácter. Los elementos de la colección no tienen ninguna propiedad, por lo que no se puede tener acceso a los elementos individuales directamente. Para obtener acceso a la colección, consulte punkEnum para la interfaz IEnumVARIANT:
+Esta función permite enumerar los nombres de las animaciones de un carácter. Los elementos de la colección no tienen propiedades, por lo que no se puede acceder directamente a los elementos individuales. Para acceder a la colección, consulte la interfaz IEnumVARIANT:
 
 
 ```c++
@@ -67,4 +67,4 @@ punkEnum->Release();
 
 
 > [!Note]  
-> En el caso de los caracteres ACF, la colección devuelve todas las animaciones definidas para el carácter, agregando a las que se han recuperado con el método [**Get**](https://www.bing.com/search?q=**Get**) .
+> Para los caracteres ACF, la colección devuelve todas las animaciones que se han definido para el carácter, agregando a las que se han recuperado con el [**método Get.**](https://www.bing.com/search?q=**Get**)

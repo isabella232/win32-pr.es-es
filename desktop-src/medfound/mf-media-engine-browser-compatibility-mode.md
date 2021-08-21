@@ -1,17 +1,17 @@
 ---
 description: Especifica el modo de compatibilidad del explorador.
 ms.assetid: 9F850CDE-D862-4E72-8B55-5FAFDA43E399
-title: MF_MEDIA_ENGINE_BROWSER_COMPATIBILITY_MODE atributo)
+title: MF_MEDIA_ENGINE_BROWSER_COMPATIBILITY_MODE atributo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e8d6ce4858a35270187f7adf8e42e37c5b11f58
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 749d0918794c8f568399008ebb1155c5c2fa7e281f72c082916ea5a2869ded68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105707543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118060618"
 ---
-# <a name="mf_media_engine_browser_compatibility_mode-attribute"></a>MF \_ \_ atributo de \_ modo de compatibilidad de explorador de motor multimedia \_ \_
+# <a name="mf_media_engine_browser_compatibility_mode-attribute"></a>Atributo MF \_ MEDIA ENGINE BROWSER COMPATIBILITY \_ \_ \_ \_ MODE
 
 Especifica el modo de compatibilidad del explorador.
 
@@ -19,21 +19,21 @@ Especifica el modo de compatibilidad del explorador.
 
 **GUID**
 
-Establezca \_ \_ \_ \_ el modo de compatibilidad del explorador de media Engine MF \_ en uno de los siguientes valores:
+Establezca MF MEDIA ENGINE BROWSER COMPATIBILITY MODE (MODO DE COMPATIBILIDAD DEL EXPLORADOR DE MF \_ MEDIA \_ ENGINE) \_ en uno de los \_ valores \_ siguientes:
 
--   **MF \_ \_ modo de compatibilidad del explorador del motor multimedia \_ \_ \_ \_ IE9**
--   **MF \_ \_ modo de compatibilidad del explorador del motor multimedia \_ \_ \_ \_ IE10**
--   **MF \_ \_ modo de compatibilidad del explorador de motor multimedia \_ \_ \_ \_ IE11**
+-   **MODO \_ DE COMPATIBILIDAD DEL EXPLORADOR MF MEDIA ENGINE \_ \_ \_ \_ \_ IE9**
+-   **MODO \_ DE COMPATIBILIDAD DEL EXPLORADOR MF MEDIA ENGINE \_ \_ \_ \_ \_ IE10**
+-   **MODO \_ DE COMPATIBILIDAD DEL EXPLORADOR MF MEDIA ENGINE \_ \_ \_ \_ \_ IE11**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                            |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 \|\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
@@ -41,7 +41,7 @@ Establezca \_ \_ \_ \_ el modo de compatibilidad del explorador de media Engine 
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

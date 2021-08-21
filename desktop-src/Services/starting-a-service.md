@@ -1,21 +1,21 @@
 ---
-description: Para iniciar un servicio, un programa de control de servicios abre un identificador a una base de datos instalada y, a continuación, especifica el identificador en una llamada a la función StartService.
+description: Para iniciar un servicio, un programa de control de servicio abre un identificador para una base de datos instalada y, a continuación, especifica el identificador en una llamada a la función StartService.
 ms.assetid: 7ee5254d-b035-4888-88e9-93e3e55d737e
 title: Iniciar un servicio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c8f30bb7f6ce9695a050033314a62ae870250c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef4725b49f1bfe08ce31c57bd7f500b1fe5f04d2b632d1815e2a359974f32f8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117967065"
 ---
 # <a name="starting-a-service"></a>Iniciar un servicio
 
-Para iniciar un servicio, un [programa de control de servicios](service-control-programs.md) abre un identificador a una base de datos instalada y, a continuación, especifica el identificador en una llamada a la función [**StartService**](/windows/desktop/api/Winsvc/nf-winsvc-startservicea) . Después de iniciar el servicio, el programa usa los miembros de la estructura de [**\_ \_ proceso de estado de servicio**](/windows/desktop/api/Winsvc/ns-winsvc-service_status_process) devuelta por la función [**QueryServiceStatusEx**](/windows/desktop/api/Winsvc/nf-winsvc-queryservicestatusex) para realizar el seguimiento del progreso del servicio.
+Para iniciar un servicio, un programa de [control](service-control-programs.md) de servicio abre un identificador para una base de datos instalada y, a continuación, especifica el identificador en una llamada a la [**función StartService.**](/windows/desktop/api/Winsvc/nf-winsvc-startservicea) Después de iniciar el servicio, el programa usa los miembros de la estructura [**SERVICE \_ STATUS \_ PROCESS**](/windows/desktop/api/Winsvc/ns-winsvc-service_status_process) devuelta por la [**función QueryServiceStatusEx**](/windows/desktop/api/Winsvc/nf-winsvc-queryservicestatusex) para realizar un seguimiento del progreso del servicio.
 
-La función DoStartSvc del ejemplo siguiente muestra cómo iniciar un servicio. La variable szSvcName es una variable global que contiene el nombre del servicio que se va a iniciar. Para obtener el ejemplo completo en el que se establece esta variable, vea [SvcControl. cpp](svccontrol-cpp.md).
+La función DoStartSvc del ejemplo siguiente muestra cómo iniciar un servicio. La variable szSvcName es una variable global que contiene el nombre del servicio que se va a iniciar. Para obtener el ejemplo completo que establece esta variable, vea [SvcControl.cpp](svccontrol-cpp.md).
 
 
 ```C++
@@ -254,7 +254,7 @@ VOID __stdcall DoStartSvc()
 [Inicio del servicio](service-startup.md)
 </dt> <dt>
 
-[El ejemplo de servicio completo](the-complete-service-sample.md)
+[Ejemplo de servicio completo](the-complete-service-sample.md)
 </dt> </dl>
 
  

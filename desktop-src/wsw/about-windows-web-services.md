@@ -1,41 +1,41 @@
 ---
-title: Acerca de los servicios Web de Windows
-description: La API de servicios Web de Windows es una API en capas y se puede mostrar como se indica a continuación.
+title: Acerca de Windows Web Services
+description: La Windows Web Services API es una API por capas y se puede ver como se muestra a continuación.
 ms.assetid: 6e8c23d1-c86b-432d-8e0c-e16982849239
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7546aaa72d58e43d7faefccf394a3e27756f4a96
-ms.sourcegitcommit: 5b98bf8c68922f8f03c14f793fbe17504900559c
+ms.openlocfilehash: 38ed82d21568b407d3fc4fd33b561f238fc21f8ce4a38fbb6bf197016d0c4f0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "104566041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118026248"
 ---
-# <a name="about-windows-web-services"></a>Acerca de los servicios Web de Windows
+# <a name="about-windows-web-services"></a>Acerca de Windows Web Services
 
-La API de servicios Web de Windows es una API en capas y se puede ilustrar del siguiente modo:
+La Windows Web Services API es una API en capas y se puede ver como se muestra a continuación.
 
-![Diagrama que muestra las capas y las áreas de capas cruzadas de la API de servicios Web de Windows.](images/apistack.png)
+![Diagrama que muestra las capas y las áreas entre capas de la API Windows Web Services.](images/apistack.png)
 
-WWSAPI es una API en capas. Esperamos que la mayoría de los desarrolladores tengan como destino el modelo de servicio, que es un modelo de programación basado en métodos. En el modelo de servicio, el host de servicio proporciona el modelo de programación del lado servidor, mientras que el proxy de servicio proporciona el modelo de programación del lado cliente.
+WWSAPI es una API por capas. Esperamos que la mayoría de los desarrolladores tengan como destino el modelo de servicio, que es un modelo de programación basado en métodos. En el modelo de servicio, el host de servicio proporciona el modelo de programación del lado servidor, mientras que el proxy de servicio proporciona el modelo de programación del lado cliente.
 
 Cada capa expone un conjunto de API y tipos que se pueden usar con las API de esa capa.
 
 ## <a name="service-model"></a>Modelo de servicio
 
-La capa de nivel superior denominada [modelo de servicio](service-model-layer-overview.md) proporciona un modelo de programación basado en métodos y es el modelo más sencillo de usar. En el modelo de servicio, el [host de servicio](service-host.md) proporciona el modelo de programación del lado servidor, mientras que el proxy de [servicio](service-proxy.md) proporciona el modelo de programación del lado cliente. El [contexto](context.md) se usa en el modelo de servicio para pasar un estado relevante disponible para la operación de servicio y/o la devolución de llamada cuando se invoca. Y el [contrato de servicio](contract.md) se usa para especificar un contrato de servicio en un extremo expuesto en el servicio. Los siguientes componentes y operaciones forman parte del nivel de servicio:
+La capa de nivel superior denominada [Modelo de servicio](service-model-layer-overview.md) proporciona un modelo de programación basado en métodos y es el modelo más fácil de usar. En el modelo de servicio, el host de [servicio](service-host.md) proporciona el modelo de programación del lado servidor, mientras que el proxy de [servicio](service-proxy.md) proporciona el modelo de programación del lado cliente. [El](context.md) contexto se usa dentro del modelo de servicio para pasar un estado pertinente disponible para la operación de servicio o la devolución de llamada cuando se invoca. Y [el Contrato de](contract.md) servicio se usa para especificar un contrato de servicio en un punto de conexión expuesto en el servicio. Los siguientes componentes y operaciones forman parte de la capa de servicio:
 
 -   [Host de servicio](service-host.md)
 -   [Proxy de servicio](service-proxy.md)
 -   [Contexto](context.md)
--   [DataContract](contract.md)
+-   [Contrato](contract.md)
 -   [Metadatos de servicio](service-metadata.md)
 
-## <a name="channel-layer"></a>Nivel de canal
+## <a name="channel-layer"></a>Capa de canal
 
-El modelo de servicio se basa en una capa de canal, lo que proporciona una flexibilidad completa, pero es más difícil de usar. Los siguientes componentes y operaciones forman parte de la capa del canal:
+El modelo de servicio se basa en una capa de canal, que proporciona total flexibilidad, pero es más difícil de usar. Los siguientes componentes y operaciones forman parte de la capa de canal:
 
--   [Message](message.md)
+-   [Mensaje](message.md)
 -   [Canal](channel.md)
 -   [Agente de escucha](listener.md)
 -   [Errores](faults.md)
@@ -43,19 +43,19 @@ El modelo de servicio se basa en una capa de canal, lo que proporciona una flexi
 -   [Seguridad](security-overview.md)
 -   [Importación de metadatos](metadata-import.md)
 
-## <a name="xml-layer"></a>Nivel XML
+## <a name="xml-layer"></a>Capa XML
 
-La capa de canales a su vez se basa en un marco XML ligero, que incluye la deserialización de los tipos de datos de C. Los siguientes componentes y operaciones forman parte de la capa XML:
+La capa de canal se basa a su vez en un marco XML ligero, que incluye la deserialización de tipos de datos de C. Los siguientes componentes y operaciones forman parte de la capa XML:
 
 -   [Escritor XML](xml-writer.md)
 -   [Lector XML](xml-reader.md)
 -   [Búfer XML](xml-buffer.md)
 -   [Serialización](serialization.md)
--   [Compatibilidad con el lenguaje XML](xml-language-support.md)
+-   [Compatibilidad con lenguaje XML](xml-language-support.md)
 
 ## <a name="common-to-all-layers"></a>Común a todas las capas
 
-A continuación se muestran los temas que se aplican a cualquiera de las tres capas:
+A continuación se incluyen temas que se aplican a cualquiera de las tres capas:
 
 -   [Errores](errors.md)
 -   [Modelo asincrónico](asynchronous-model.md)
@@ -64,12 +64,12 @@ A continuación se muestran los temas que se aplican a cualquiera de las tres ca
 -   [Cancelación](cancellation.md)
 -   [Utilidades](utilities.md)
 -   [Depuración](debugging.md)
--   [Herramienta del compilador Wsutil](wsutil-compiler-tool.md)
+-   [Herramienta Wsutil Compiler](wsutil-compiler-tool.md)
 -   [Montón](heap.md)
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener más información sobre los elementos de la API, consulte [referencia de servicios Web de Windows](windows-web-services-reference.md). Para obtener ejemplos del uso de la API, vea [uso de servicios Web de Windows](using-windows-web-services.md).
+Para obtener más información sobre los elementos de API, [vea Windows referencia de servicios web](windows-web-services-reference.md). Para obtener ejemplos de uso de la API, [consulte Uso de Windows Web Services](using-windows-web-services.md).
 
  
 

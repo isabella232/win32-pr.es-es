@@ -1,9 +1,9 @@
 ---
-title: Función FreePrivateData (NapUtil. h)
+title: Función FreePrivateData (NapUtil.h)
 description: Libera una estructura de datos PrivateData.
 ms.assetid: 94b3618e-224f-4801-94f3-2faa1a298ec0
 keywords:
-- FreePrivateData función NAP
+- Función NAP de FreePrivateData
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4629c264c91a4e0c6e18443cf27a9fd9d182164
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c760a22ef377bd8d198ea3b913c6062e90338218a187cb9dec3af457a8a02493
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134621"
 ---
-# <a name="freeprivatedata-function"></a>FreePrivateData función)
+# <a name="freeprivatedata-function"></a>Función FreePrivateData
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-La función **FreePrivateData** libera una estructura de datos [**PrivateData**](/windows/win32/api/naptypes/ns-naptypes-privatedata) .
+La **función FreePrivateData** libera una [**estructura de datos PrivateData.**](/windows/win32/api/naptypes/ns-naptypes-privatedata)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,20 +45,20 @@ NAPAPI VOID WINAPI FreePrivateData(
 
 <dl> <dt>
 
-*privateData* \[ de\]
+*privateData* \[ En\]
 </dt> <dd>
 
-Puntero a la estructura de datos [**PrivateData**](/windows/win32/api/naptypes/ns-naptypes-privatedata) que se va a liberar.
+Puntero a la estructura [**de datos PrivateData**](/windows/win32/api/naptypes/ns-naptypes-privatedata) que se liberará.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Todas las interfaces COM que admite el sistema NAP usan reglas estándar de administración de memoria COM y los asignadores de memoria COM (**CoTaskMemAlloc** y **CoTaskMemFree**):
+Todas las interfaces COM compatibles con el sistema NAP usan reglas de administración de memoria COM estándar y los asignadores de memoria COM (**CoTaskMemAlloc** y **CoTaskMemFree**):
 
--   El autor de la llamada asigna y libera los parámetros **in** .
--   El destinatario asigna los parámetros **out** y el llamador los libera mediante **CoTaskMem**.
--   Los parámetros **in/out** son asignados por el autor de la llamada, liberados y reasignados por el destinatario y, en última instancia, liberados por el llamador, mediante **CoTaskMem**.
+-   **El** autor de la llamada asigna y libera los parámetros de .
+-   **El** destinatario asigna los parámetros out y el autor de la llamada lo libera **mediante CoTaskMem**.
+-   **El autor de** la llamada asigna los parámetros de entrada y salida, los libera y reasigna el destinatario y, en última instancia, los libera el autor de la llamada, mediante **CoTaskMem**.
 
 Todas las funciones NAP para liberar memoria también liberan todos los punteros incrustados.
 
@@ -66,11 +66,11 @@ Todas las funciones NAP para liberar memoria también liberan todos los punteros
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>NapUtil. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>NapUtil.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl> |
 
 

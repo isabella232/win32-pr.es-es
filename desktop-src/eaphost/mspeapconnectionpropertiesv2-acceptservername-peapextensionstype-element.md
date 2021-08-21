@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 64e82defae9c5ae9f7cf60056cfdac8b58373602
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: b608629c9eb9d3e3fb592ead73ddc0ba9545e6b92a642adf4ce76bb0524b57ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086044"
 ---
 # <a name="acceptservername-peapextensionstype-element"></a>Elemento AcceptServerName (PeapExtensionsType)
 
@@ -31,7 +31,7 @@ El **elemento AcceptServerName (PeapExtensionsType)** indica si el nombre del se
  />
 ```
 
-El **elemento AcceptServerName** se define mediante el [**elemento PeapExtensionsType.**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md)
+El elemento [**PeapExtensionsType**](mspeapconnectionpropertiesv1schema-peapextensionstype-complextype.md) define el elemento **AcceptServerName.**
 
 ## <a name="remarks"></a>Comentarios
 
@@ -43,8 +43,8 @@ El **elemento AcceptServerName** es opcional.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[ R2\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 
@@ -70,7 +70,7 @@ El **elemento AcceptServerName** es opcional.
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[Mspeapconnectionpropertiesv2 Schema](mspeapconnectionpropertiesv2schema-schema.md)
+[Esquema mspeapconnectionpropertiesv2](mspeapconnectionpropertiesv2schema-schema.md)
 </dt> <dt>
 
 [Elementos de esquema mspeapconnectionpropertiesv2](mspeapconnectionpropertiesv2schema-elements.md)

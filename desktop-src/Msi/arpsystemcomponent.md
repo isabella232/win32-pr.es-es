@@ -13,7 +13,7 @@ ms.locfileid: "118381370"
 ---
 # <a name="arpsystemcomponent-property"></a>Propiedad ARPSYSTEMCOMPONENT
 
-Establecer la **propiedad ARPSYSTEMCOMPONENT** en 1 mediante la línea de comandos  o una transformación impide que la aplicación se muestre en la lista Agregar o **quitar programas de Panel de control**.
+Establecer la **propiedad ARPSYSTEMCOMPONENT** en 1 mediante la línea de comandos  o una transformación impide que la aplicación se muestre en la lista Agregar o quitar **programas de Panel de control**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -21,7 +21,7 @@ Establecer la **propiedad ARPSYSTEMCOMPONENT** en 1 mediante la línea de comand
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte Windows [Installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una Windows Installer.<br/> |
 
 
 

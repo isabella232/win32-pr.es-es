@@ -15,13 +15,13 @@ ms.locfileid: "118401153"
 
 Este artículo está pensado para ofrecer el tipo de programación DirectShow programación. Presenta una aplicación de consola sencilla que reproduce un archivo de audio o vídeo. El programa tiene solo unas pocas líneas de longitud, pero muestra parte de la capacidad de DirectShow programación.
 
-Como se describe en el artículo Introducción a [DirectShow programación de](introduction-to-directshow-application-programming.md) aplicaciones, DirectShow aplicación siempre realiza los mismos pasos básicos:
+Como se describe en el [artículo Introducción a DirectShow programación de](introduction-to-directshow-application-programming.md) aplicaciones, DirectShow aplicación siempre realiza los mismos pasos básicos:
 
 1.  Cree una instancia de [Filter Graph Manager](filter-graph-manager.md).
 2.  Use el Administrador de Graph filtros para crear un gráfico de filtros.
 3.  Ejecute el gráfico, lo que hace que los datos se muevan a través de los filtros.
 
-Para compilar y vincular el código de este tema, incluya el archivo de encabezado Dshow.h y el vínculo al archivo de biblioteca estática strmiids.lib. Para obtener más información, vea [Building DirectShow Applications](setting-up-the-build-environment.md).
+Para compilar y vincular el código de este tema, incluya el archivo de encabezado Dshow.h y el vínculo al archivo de biblioteca estática strmiids.lib. Para obtener más información, vea [Compilar DirectShow aplicaciones](setting-up-the-build-environment.md).
 
 Para empezar, [**llame a CoInitialize**](/windows/desktop/api/objbase/nf-objbase-coinitialize) [**o CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) para inicializar la biblioteca COM:
 
@@ -49,12 +49,12 @@ HRESULT hr = CoCreateInstance(CLSID_FilterGraph, NULL,
 
 
 
-Como se muestra, el identificador de clase (CLSID) es CLSID \_ FilterGraph. El Administrador Graph filtro se proporciona mediante un archivo DLL en proceso, por lo que el contexto de ejecución es **CLSCTX \_ INPROC \_ SERVER**. DirectShow admite el modelo de subprocesamiento libre, por lo que también puede llamar a [**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) con la marca **COINIT \_ MULTITHREADED.**
+Como se muestra, el identificador de clase (CLSID) es CLSID \_ FilterGraph. El Administrador Graph filtro se proporciona mediante un archivo DLL en proceso, por lo que el contexto de ejecución es **CLSCTX \_ INPROC \_ SERVER**. DirectShow admite el modelo de subprocesamiento libre, por lo que también puede llamar a [**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) con la **marca COINIT \_ MULTITHREADED.**
 
 La llamada a [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) devuelve la [**interfaz IGraphBuilder,**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) que contiene principalmente métodos para compilar el gráfico de filtro. Para este ejemplo se necesitan otras dos interfaces:
 
 -   [**IMediaControl controla**](/windows/desktop/api/Control/nn-control-imediacontrol) el streaming. Contiene métodos para detener e iniciar el gráfico.
--   [**IMediaEvent tiene**](/windows/desktop/api/Control/nn-control-imediaevent) métodos para obtener eventos de Filter Graph Manager. En este ejemplo, la interfaz se usa para esperar a que se complete la reproducción.
+-   [**IMediaEvent tiene**](/windows/desktop/api/Control/nn-control-imediaevent) métodos para obtener eventos del Administrador de Graph Filtros. En este ejemplo, la interfaz se usa para esperar a que se complete la reproducción.
 
 El Administrador de filtros Graph expone ambas interfaces. Use el puntero [**IGraphBuilder devuelto**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) para consultarlos:
 

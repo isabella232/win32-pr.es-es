@@ -1,5 +1,5 @@
 ---
-description: Puede usar el procedimiento y los ejemplos de código de este tema para crear una aplicación cliente WMI completa que realice la inicialización COM, se conecte a WMI en el equipo local, obtiene los datos de forma asincrónica y, a continuación, limpia.
+description: Puede usar el procedimiento y los ejemplos de código de este tema para crear una aplicación cliente WMI completa que realiza la inicialización COM, se conecta a WMI en el equipo local, obtiene los datos de forma asincrónica y, a continuación, limpia.
 ms.assetid: 1e11ca27-e67d-486c-8fc5-a10382edfff3
 ms.tgt_platform: multiple
 title: 'Ejemplo: Obtener datos WMI del equipo local de forma asincrónica'
@@ -14,9 +14,9 @@ ms.locfileid: "118319433"
 ---
 # <a name="example-getting-wmi-data-from-the-local-computer-asynchronously"></a>Ejemplo: Obtener datos WMI del equipo local de forma asincrónica
 
-Puede usar el procedimiento y los ejemplos de código de este tema para crear una aplicación cliente WMI completa que realice la inicialización COM, se conecte a WMI en el equipo local, obtiene los datos de forma asincrónica y, a continuación, limpia. En este ejemplo se obtiene el nombre del sistema operativo en el equipo local y se muestra.
+Puede usar el procedimiento y los ejemplos de código de este tema para crear una aplicación cliente WMI completa que realiza la inicialización COM, se conecta a WMI en el equipo local, obtiene los datos de forma asincrónica y, a continuación, limpia. En este ejemplo se obtiene el nombre del sistema operativo en el equipo local y se muestra.
 
-El siguiente procedimiento se usa para ejecutar la aplicación WMI. Los pasos 1 a 5 contienen todos los pasos necesarios para configurar y conectarse a WMI, y los pasos 6 y siete son donde se recupera el nombre del sistema operativo de forma asincrónica.
+El procedimiento siguiente se usa para ejecutar la aplicación WMI. Los pasos del 1 al 5 contienen todos los pasos necesarios para configurar y conectarse a WMI, y los pasos 6 y 7 son donde el nombre del sistema operativo se recupera de forma asincrónica.
 
 **Para obtener datos WMI del equipo local de forma asincrónica**
 
@@ -24,7 +24,7 @@ El siguiente procedimiento se usa para ejecutar la aplicación WMI. Los pasos 1 
 
     Para obtener más información, [vea Inicializar COM para una aplicación WMI.](initializing-com-for-a-wmi-application.md)
 
-2.  Inicialice la seguridad del proceso COM mediante una [**llamada a CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity).
+2.  Inicialice la seguridad del proceso COM mediante [**una llamada a CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity).
 
     Para obtener más información, vea [Establecer el nivel de seguridad de proceso predeterminado mediante C++.](setting-the-default-process-security-level-using-c-.md)
 
@@ -40,9 +40,9 @@ El siguiente procedimiento se usa para ejecutar la aplicación WMI. Los pasos 1 
 
     Para obtener más información, vea [Establecer los niveles de seguridad en una conexión WMI.](setting-the-security-levels-on-a-wmi-connection.md)
 
-6.  Use el [**puntero IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para realizar solicitudes a WMI. En este ejemplo se [**usa el método IWbemServices::ExecQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync) para recibir los datos de forma asincrónica. Siempre que reciba datos de forma asincrónica, debe proporcionar una implementación de [**IWbemObjectSink**](iwbemobjectsink.md). En este ejemplo se proporciona la implementación en la clase QuerySink. El código de implementación y el código de archivo de encabezado de esta clase se proporcionan siguiendo el ejemplo principal. El **método IWbemServices::ExecQueryAsync** llama al método QuerySink::Indicate cada vez que se reciben los datos.
+6.  Use el [**puntero IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) para realizar solicitudes a WMI. En este ejemplo se [**usa el método IWbemServices::ExecQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync) para recibir los datos de forma asincrónica. Siempre que reciba datos de forma asincrónica, debe proporcionar una implementación de [**IWbemObjectSink**](iwbemobjectsink.md). En este ejemplo se proporciona la implementación en la clase QuerySink. El código de implementación y el código de archivo de encabezado para esta clase se proporcionan siguiendo el ejemplo principal. El **método IWbemServices::ExecQueryAsync** llama al método QuerySink::Indicate cada vez que se reciben los datos.
 
-    Para obtener más información sobre cómo crear una solicitud WMI, vea [Manipular](manipulating-class-and-instance-information.md) información de clase e instancia y [Llamar a un método](calling-a-method.md).
+    Para obtener más información sobre cómo crear una solicitud WMI, vea Manipular información de clase [e instancia](manipulating-class-and-instance-information.md) y Llamar a [un método](calling-a-method.md).
 
 7.  Espere a que los datos se recuperen de forma asincrónica. Use el [**método IWbemServices::CancelAsyncCall**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-cancelasynccall) para detener manualmente la llamada asincrónica.
 

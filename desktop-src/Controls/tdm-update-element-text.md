@@ -3,7 +3,7 @@ title: TDM_UPDATE_ELEMENT_TEXT mensaje (Commctrl.h)
 description: 'TDM_UPDATE_ELEMENT_TEXT mensaje: actualiza un elemento de texto en un cuadro de diálogo de tarea.'
 ms.assetid: 2df446c8-db87-42b5-b5bd-40fadbf9d45b
 keywords:
-- TDM_UPDATE_ELEMENT_TEXT de mensajes controles de Windows
+- TDM_UPDATE_ELEMENT_TEXT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c155b426b92645c0b9cdbabe00c44ffa722b89f3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5abf6eb91b3eadfea71d0c9a4b5386e44db100c3a548998d5113636ff7f8cc29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118166918"
 ---
 # <a name="tdm_update_element_text-message"></a>Mensaje DE \_ TEXTO DEL ELEMENTO UPDATE \_ \_ de TDM
 
@@ -32,13 +32,13 @@ Actualiza un elemento de texto en un cuadro de diálogo de tarea.
 *wParam* \[ En\]
 </dt> <dd>
 
-Indica el elemento que se debe actualizar. (Para obtener una ilustración de los elementos, vea [Acerca de los cuadros de diálogo de tarea).](task-dialogs-overview.md) Este parámetro debe ser uno de los siguientes valores:
+Indica el elemento que se debe actualizar. (Para obtener una ilustración de los elementos, vea [Acerca de los diálogos de tarea).](task-dialogs-overview.md) Este parámetro debe ser uno de los siguientes valores:
 
 
 
 | Valor                                                                                                                                                                                           | Significado                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| <span id="TDE_CONTENT"></span><span id="tde_content"></span><dl> <dt>**CONTENIDO \_ de TDE**</dt> </dl>                                         | Contenido.<br/>              |
+| <span id="TDE_CONTENT"></span><span id="tde_content"></span><dl> <dt>**CONTENIDO \_ DE TDE**</dt> </dl>                                         | Contenido.<br/>              |
 | <span id="TDE_EXPANDED_INFORMATION"></span><span id="tde_expanded_information"></span><dl> <dt>**INFORMACIÓN EXPANDIDA DE TDE \_ \_**</dt> </dl> | Información expandida.<br/> |
 | <span id="TDE_FOOTER"></span><span id="tde_footer"></span><dl> <dt>**PIE DE PÁGINA DE TDE \_**</dt> </dl>                                            | Texto del pie de página.<br/>          |
 | <span id="TDE_MAIN_INSTRUCTION"></span><span id="tde_main_instruction"></span><dl> <dt>**INSTRUCCIÓN PRINCIPAL DE TDE \_ \_**</dt> </dl>             | Instrucción principal.<br/>     |
@@ -64,7 +64,7 @@ Se omite el valor devuelto.
 
 Para evitar el recorte, el nuevo texto no debe ser mayor que el texto existente. Establecer el texto en una cadena más corta no hace que el cuadro de diálogo cambie de tamaño.
 
-Si el miembro **pszExpandedInformation** de la estructura [**TASKDIALOGCONFIG**](/windows/desktop/api/Commctrl/ns-commctrl-taskdialogconfig) usada para crear el cuadro de diálogo de tarea era **NULL** y envía un mensaje **\_ TDM UPDATE \_ ELEMENT \_ TEXT** con TDE \_ EXPANDED INFORMATION, no ocurrirá \_ nada.
+Si el miembro **pszExpandedInformation** de la estructura [**TASKDIALOGCONFIG**](/windows/desktop/api/Commctrl/ns-commctrl-taskdialogconfig) utilizada para crear el cuadro de diálogo de tarea era **NULL** y envía un mensaje **\_ TDM UPDATE \_ ELEMENT \_ TEXT** con TDE \_ EXPANDED INFORMATION, no ocurrirá \_ nada.
 
 Lo anterior también se aplica al pie de página y al pie de página de \_ TDE.
 
@@ -74,13 +74,13 @@ Lo anterior también se aplica al pie de página y al pie de página de \_ TDE.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -21,7 +21,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118399135"
 ---
-# <a name="idxtkeyput_similarity-method"></a>Método IDxtKey::p ut \_ Similarity
+# <a name="idxtkeyput_similarity-method"></a>IDxtKey::p ut \_ Similarity (Método de similitud de IDxtKey::p ut)
 
 > [!Note]  
 > \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]

@@ -1,19 +1,19 @@
 ---
 title: Interfaces necesarias (COM)
-description: Obtenga información sobre las interfaces de contenedor de controles ActiveX que pueden o deben implementarse mediante contenedores de control.
+description: Obtenga información sobre las ActiveX de contenedor de control que los contenedores de control pueden o deben implementar.
 ms.assetid: ae238882-d0c9-4120-b8a8-001bf9559cfa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55015ee5837754c073d2590144687131c285bb80
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: cf19cb8d0c72b365f6a8faa263fc76ddede1e5231fc34a9090c064f54d75b7f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118309667"
 ---
 # <a name="required-interfaces-com"></a>Interfaces necesarias (COM)
 
-En la tabla siguiente se enumeran las interfaces del contenedor de controles ActiveX y se denota qué interfaces son opcionales y cuáles son obligatorias y deben implementarse mediante contenedores de control.
+En la tabla siguiente se enumeran las interfaces ActiveX Control Container y se denota qué interfaces son opcionales y cuáles son obligatorias y deben implementarse mediante contenedores de control.
 
 
 
@@ -24,7 +24,7 @@ En la tabla siguiente se enumeran las interfaces del contenedor de controles Act
 | [**IOleInPlaceSite**](/windows/desktop/api/OleIdl/nn-oleidl-ioleinplacesite)<br/>                          | Sí<br/> |                                                                                                                                                                                                                                                                                                                                                              |
 | [**IOleControlSite**](/windows/desktop/api/OCIdl/nn-ocidl-iolecontrolsite)<br/>                          | Sí<br/> |                                                                                                                                                                                                                                                                                                                                                              |
 | [**IOleInPlaceFrame**](/windows/desktop/api/OleIdl/nn-oleidl-ioleinplaceframe)<br/>                        | Sí<br/> |                                                                                                                                                                                                                                                                                                                                                              |
-| [**IOleContainer**](/windows/desktop/api/OleIdl/nn-oleidl-iolecontainer)<br/>                              | Sí<br/> | Consulte la nota 1<br/>                                                                                                                                                                                                                                                                                                                                        |
+| [**IOleContainer**](/windows/desktop/api/OleIdl/nn-oleidl-iolecontainer)<br/>                              | Sí<br/> | Consulte la nota 1.<br/>                                                                                                                                                                                                                                                                                                                                        |
 | **IDispatch para** propiedades de ambiente<br/>                                | Sí<br/> | Vea la nota 2 y [Propiedades ambientales de los controles.](ambient-properties-for-controls.md)<br/>                                                                                                                                                                                                                                                             |
 | Controlar conjuntos de eventos<br/>                                                  | Sí<br/> | Consulte la nota 2.<br/>                                                                                                                                                                                                                                                                                                                                        |
 | [**ISimpleFrameSite**](/windows/desktop/api/OCIdl/nn-ocidl-isimpleframesite)<br/>                        | No<br/>  | [**ISimpleFrameSite y la**](/windows/desktop/api/OCIdl/nn-ocidl-isimpleframesite) compatibilidad con marcos simples anidados es opcional.<br/>                                                                                                                                                                                                                                                    |
@@ -37,9 +37,9 @@ En la tabla siguiente se enumeran las interfaces del contenedor de controles Act
  
 
 1.  [**IOleContainer**](/windows/desktop/api/OleIdl/nn-oleidl-iolecontainer) se implementa en el documento o objeto de formulario (o análogo adecuado) que contiene los sitios de contenedor. Los controles **usan IOleContainer** para navegar a otros controles en el mismo documento o formulario.
-2.  La compatibilidad con interfaces duales no es obligatoria, pero se recomienda encarecidamente. La escritura de contenedores de controles ActiveX para aprovechar las ventajas de las interfaces duales ofrece un mejor rendimiento con controles que ofrecen compatibilidad con interfaces duales.
+2.  La compatibilidad con interfaces duales no es obligatoria, pero se recomienda encarecidamente. Escribir ActiveX contenedores de control para aprovechar las ventajas de las interfaces duales ofrece un mejor rendimiento con controles que ofrecen compatibilidad con interfaces duales.
 
-Los contenedores de controles ActiveX deben admitir excepciones de OLE Automation. Si un contenedor de controles admite interfaces duales, debe capturar excepciones de automatización a través [de IErrorInfo](/windows/win32/api/oaidl/nn-oaidl-ierrorinfo).
+ActiveX contenedores de control deben admitir excepciones de OLE Automation. Si un contenedor de controles admite interfaces duales, debe capturar excepciones de automatización a través [de IErrorInfo](/windows/win32/api/oaidl/nn-oaidl-ierrorinfo).
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -29,18 +29,18 @@ El espacio *de nombres de* Shell organiza el sistema de archivos y otros objetos
 
 ## <a name="introduction"></a>Introducción
 
-Una de las principales responsabilidades del Shell es administrar y proporcionar acceso a la amplia variedad de objetos que la consonan. Los objetos más numerosos y familiares son las carpetas y los archivos que residen en unidades de disco del equipo. Sin embargo, shell también administra una serie  de sistemas que no son archivos o objetos virtuales. Estos son algunos ejemplos:
+Una de las principales responsabilidades del Shell es administrar y proporcionar acceso a la amplia variedad de objetos que lo conste. Los objetos más numerosos y familiares son las carpetas y los archivos que residen en unidades de disco del equipo. Sin embargo, el Shell también administra una  serie de sistemas que no son archivos o objetos virtuales. Estos son algunos ejemplos:
 
 -   Impresoras de red
 -   Otros equipos en red
 -   Panel de control aplicaciones
 -   La Papelera de reciclaje
 
-Algunos objetos virtuales no implican almacenamiento físico en absoluto. El objeto de impresora, por ejemplo, contiene una colección de vínculos a impresoras en red. Otros objetos virtuales, como papelera de reciclaje, pueden contener datos almacenados en una unidad de disco, pero deben controlarse de forma diferente a los archivos normales. Por ejemplo, se puede usar un objeto virtual para representar los datos almacenados en una base de datos. En cuanto al espacio de nombres, los distintos elementos de la base de datos podrían aparecer en el Explorador de Windows como objetos independientes, aunque todos se almacenen en un único archivo de disco.
+Algunos objetos virtuales no implican almacenamiento físico en absoluto. Por ejemplo, el objeto de impresora contiene una colección de vínculos a impresoras en red. Otros objetos virtuales, como el papelera de reciclaje, pueden contener datos almacenados en una unidad de disco, pero deben controlarse de forma diferente a los archivos normales. Por ejemplo, se puede usar un objeto virtual para representar los datos almacenados en una base de datos. En cuanto al espacio de nombres, los distintos elementos de la base de datos podrían aparecer en el Explorador de Windows como objetos independientes, aunque todos se almacenen en un único archivo de disco.
 
 Los objetos virtuales pueden incluso encontrarse en equipos remotos. Por ejemplo, para facilitar la itinerancia, los archivos de documento de un usuario podrían almacenarse en un servidor. Para proporcionar a los usuarios acceso a sus archivos desde varios equipos de escritorio, la carpeta Mis documentos del equipo de escritorio que usa actualmente apuntará al servidor, no al disco duro del equipo de escritorio. Su ruta de acceso incluirá una unidad de red asignada o un nombre de ruta de acceso UNC.
 
-Al igual que el sistema de archivos, el espacio de nombres incluye dos tipos básicos de objeto: carpetas y archivos. Los objetos de carpeta *son los nodos* del árbol; son contenedores para objetos de archivo y otras carpetas. Los objetos de archivo son *las hojas* del árbol; son archivos de disco normales u objetos virtuales, como vínculos de impresora. Las carpetas que no forman parte del sistema de archivos a veces se conocen como *carpetas virtuales.*
+Al igual que el sistema de archivos, el espacio de nombres incluye dos tipos básicos de objeto: carpetas y archivos. Los objetos de carpeta son *los nodos* del árbol; son contenedores para objetos de archivo y otras carpetas. Los objetos de archivo son *las hojas* del árbol; son archivos de disco normales u objetos virtuales, como vínculos de impresora. Las carpetas que no forman parte del sistema de archivos a veces se conocen como *carpetas virtuales.*
 
 Al igual que las carpetas del sistema de archivos, la colección de carpetas virtuales suele variar de sistema a sistema. Hay tres clases de carpetas virtuales:
 
@@ -50,13 +50,13 @@ Al igual que las carpetas del sistema de archivos, la colección de carpetas vir
 
 A diferencia de las carpetas del sistema de archivos, los usuarios no pueden crear carpetas virtuales. Solo pueden instalar los creados por desarrolladores que no son de Microsoft. Por lo tanto, el número de carpetas virtuales suele ser mucho menor que el número de carpetas del sistema de archivos. Para obtener una explicación sobre cómo implementar carpetas virtuales, vea [Extensiones de espacio de nombres](nse-works.md).
 
-Puede ver una representación visual de cómo se estructura el espacio de nombres en la barra del explorador de Windows Explorer. Por ejemplo, la siguiente captura de pantalla de Windows Explorer muestra un espacio de nombres relativamente sencillo.
+Puede ver una representación visual de cómo se estructura el espacio de nombres en la barra del explorador de Windows Explorer. Por ejemplo, la siguiente captura de pantalla de Windows Explorer muestra un espacio de nombres relativamente simple.
 
 ![captura de pantalla que muestra una vista del espacio de nombres del shell](images/prog1.png)
 
-La raíz final de la jerarquía de espacios de nombres es el escritorio. Inmediatamente debajo de la raíz hay varias carpetas virtuales, como Mi PC y el papelera de reciclaje.
+La raíz final de la jerarquía de espacios de nombres es el escritorio. Inmediatamente debajo de la raíz hay varias carpetas virtuales, como Mi PC y papelera de reciclaje.
 
-Se puede ver que los sistemas de archivos de las distintas unidades de disco son subconjuntos de la jerarquía de espacios de nombres más grandes. Las raíces de estos sistemas de archivos son subcarpetas de Mi PC carpeta. Mi PC también incluye las raíces de las unidades de red asignadas. Otros nodos del árbol, como Mis documentos, son carpetas virtuales.
+Se puede ver que los sistemas de archivos de las distintas unidades de disco son subconjuntos de la jerarquía de espacios de nombres más grandes. Las raíces de estos sistemas de archivos son subcarpetas de la carpeta Mi PC archivos. Mi PC también incluye las raíces de las unidades de red asignadas. Otros nodos del árbol, como Mis documentos, son carpetas virtuales.
 
 ## <a name="identifying-namespace-objects"></a>Identificar objetos de espacio de nombres
 
@@ -98,17 +98,17 @@ El PIDL que se muestra en la ilustración anterior se conoce como PIDL completo 
 
 Los PIDL completos se usan con poca frecuencia. Muchas funciones y métodos esperan un *PIDL relativo.* La raíz de un PIDL relativo es una carpeta, no el escritorio. Al igual que con las rutas de acceso relativas, la serie de identificadores de elemento que forma la estructura define una ruta de acceso en el espacio de nombres entre dos objetos . Aunque no identifican de forma única el objeto, suelen ser más pequeños que un PIDL completo y suficientes para muchos propósitos.
 
-Las PIDL relativas más usadas, las *PIDL* de un solo nivel, son relativas a la carpeta primaria del objeto. Solo contienen el identificador de elemento del objeto y un valor **NULL de terminación.** Los PIDL de varios niveles también se usan para muchos fines. Contienen dos o más iDs de elemento y normalmente definen una ruta de acceso de una carpeta primaria a un objeto a través de una serie de una o varias subcarpetas. Tenga en cuenta que un PIDL de un solo nivel todavía puede ser un PIDL completo. En concreto, los objetos de escritorio son elementos secundarios del escritorio, por lo que sus PIDL completos solo contienen un identificador de elemento.
+Las PIDL relativas que se usan con más frecuencia, las *PIDL* de un solo nivel, son relativas a la carpeta primaria del objeto. Contienen solo el identificador de elemento del objeto y un valor **NULL final.** Los PIDL de varios niveles también se usan para muchos fines. Contienen dos o más iDs de elemento y normalmente definen una ruta de acceso de una carpeta primaria a un objeto a través de una serie de una o varias subcarpetas. Tenga en cuenta que un PIDL de un solo nivel todavía puede ser un PIDL completo. En concreto, los objetos de escritorio son elementos secundarios del escritorio, por lo que sus PIDL completos contienen solo un identificador de elemento.
 
 Como se describe en [Obtención](folder-id.md)del identificador de una carpeta, la API de Shell proporciona varias maneras de recuperar el PIDL de un objeto. Una vez que lo tenga, normalmente solo lo usará para identificar el objeto cuando llame a otras funciones y métodos de la API de Shell. En este contexto, el contenido interno de un PIDL es opaco e irrelevante. Para los fines de esta discusión, piense en los PIDL como tokens que representan objetos de espacio de nombres determinados y céntrate en cómo usarlos para tareas comunes.
 
 ### <a name="allocating-pidls"></a>Asignación de PIDL
 
-Aunque los PIDL tienen cierta similitud con las rutas de acceso, su uso requiere un enfoque algo diferente. La diferencia principal es cómo asignar y desasignar memoria para ellos.
+Aunque los PIDL tienen cierta similitud con las rutas de acceso, su uso requiere un enfoque algo diferente. La principal diferencia radica en cómo asignar y desasignar memoria para ellos.
 
-Al igual que la cadena utilizada para una ruta de acceso, se debe asignar memoria para un PIDL. Si una aplicación crea un PIDL, debe asignar memoria suficiente para la [**estructura ITEMIDLIST.**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) En la mayoría de los casos aquí analizados, el shell crea el PIDL y controla la asignación de memoria. Independientemente de lo que haya asignado el PIDL, la aplicación suele ser responsable de desasignar el PIDL cuando ya no sea necesario.
+Al igual que la cadena utilizada para una ruta de acceso, se debe asignar memoria para un PIDL. Si una aplicación crea un PIDL, debe asignar suficiente memoria para la [**estructura ITEMIDLIST.**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) En la mayoría de los casos aquí analizados, el shell crea el PIDL y controla la asignación de memoria. Independientemente de lo que haya asignado el PIDL, la aplicación suele ser responsable de desasignar el PIDL cuando ya no sea necesario.
 
-Use la [**función CoTaskMemAlloc**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc) para asignar el PIDL y la función [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) para desasignarlo.
+Use la [**función CoTaskMemAlloc**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc) para asignar pidl y la [**función CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) para desasignar.
 
  
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: clase EsentIndexMustStayException'
-title: Clase EsentIndexMustStayException
+description: 'Más información sobre: Clase EsentIndexMustException'
+title: Clase EsentIndexMustException
 TOCTitle: EsentIndexMustStayException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentIndexMustStayException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentindexmuststayexception(v=EXCHG.10)
@@ -24,31 +24,31 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: eeeb5949caa79d26894f5869ed31cc79ebba934d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44fca3fead68476f9972a386d475ad6a04489a4f947fafcaef9f0192a9a9fb6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118080806"
 ---
-# <a name="esentindexmuststayexception-class"></a>Clase EsentIndexMustStayException
+# <a name="esentindexmuststayexception-class"></a>Clase EsentIndexMustException
 
-Clase base para JET_err. Excepciones IndexMustStay.
+Clase base para JET_err. Excepciones IndexMustException.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. esent. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. esent. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. esent. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. esent. Interop. EsentUsageException](./esentusageexception-class.md)  
-            Microsoft. ISAM. esent. Interop. EsentIndexMustStayException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentUsageException](./esentusageexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentIndexMustException  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -72,6 +72,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de EsentIndexMustStayException](./esentindexmuststayexception-members.md)
+[Miembros de EsentIndexMustException](./esentindexmuststayexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

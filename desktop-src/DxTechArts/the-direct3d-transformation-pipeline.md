@@ -31,9 +31,9 @@ La transformación de proyección cambia la geometría del espacio de la cámara
 
 Por último, la geometría del espacio de recorte se transforma en coordenadas de píxeles (espacio de pantalla). Esta transformación se controla mediante la configuración de la ventanilla.
 
-Los vértices de recorte y transformación deben tener lugar en un espacio homogéneo (simplemente, espacio en el que el sistema de coordenadas incluye un cuarto elemento), pero el resultado final para la mayoría de las aplicaciones debe ser coordenadas tridimensionales no homogéneos (3D) definidas en "espacio de pantalla". Esto significa que los vértices de entrada y el volumen de recorte deben traducirse en un espacio homogéneo para realizar el recorte y, a continuación, traducirse de nuevo al espacio no homogéneo que se va a mostrar.
+Los vértices de recorte y transformación deben tener lugar en un espacio homogéneo (simplemente, espacio en el que el sistema de coordenadas incluye un cuarto elemento), pero el resultado final para la mayoría de las aplicaciones debe ser coordenadas tridimensionales no homogéneos (3D) definidas en "espacio de pantalla". Esto significa que los vértices de entrada y el volumen de recorte deben traducirse en un espacio homogéneo para realizar el recorte y, a continuación, traducirse de nuevo en un espacio no homogéneo que se va a mostrar.
 
-Las tres transformaciones de Direct3D (transformación de mundo, vista y proyección) se definen mediante matrices de Direct3D. Una matriz direct3D es una matriz homogéneo de 4x4 definida por una [**estructura D3DMATRIX.**](/windows/desktop/direct3d9/d3dmatrix) Aunque las matrices de Direct3D no son objetos estándar (no se representan mediante una interfaz COM), puede crearlas y establecerlas igual que cualquier otro objeto de Direct3D. Para obtener más información sobre las matrices de Direct3D, vea [Transformaciones.](/windows/desktop/direct3d9/transforms)
+Las tres transformaciones de Direct3D (transformación de mundo, vista y proyección) se definen mediante matrices de Direct3D. Una matriz Direct3D es una matriz homogéneo de 4x4 definida por una [**estructura D3DMATRIX.**](/windows/desktop/direct3d9/d3dmatrix) Aunque las matrices de Direct3D no son objetos estándar (no se representan mediante una interfaz COM), puede crearlas y establecerlas igual que cualquier otro objeto de Direct3D. Para obtener más información sobre las matrices de Direct3D, vea [Transformaciones.](/windows/desktop/direct3d9/transforms)
 
 ## <a name="the-transformation-pipeline"></a>Canalización de transformación
 
@@ -75,16 +75,16 @@ Estas son las descripciones de las fases que se muestran en la ilustración ante
         0 < Zp <= Wp 
     ```
 
-    Se recortarán todos los puntos que no cumplan estas ecuaciones.
+    Todos los puntos que no cumplan estas ecuaciones se recortarán.
 
     Si un volumen de vista se define como:
 
-    -   Ancho de la ventana sw-screen en el espacio de la cámara en un plano de recorte cercano
+    -   Ancho de la ventana de pantalla sw-screen en el espacio de la cámara en un plano de recorte cercano
     -   Altura de la ventana sh-screen en el espacio de la cámara en un plano de recorte cercano
     -   Distancia Zn al plano de recorte cercano a lo largo de los ejes Z en el espacio de la cámara
     -   Distancia hacia el plano de recorte lejano a lo largo de los ejes Z en el espacio de la cámara
 
-    a continuación, se podría escribir una matriz de proyección de perspectiva de la siguiente manera:
+    a continuación, se podría escribir una matriz de proyección de perspectiva como se muestra a continuación:
 
     ![Muestra una matriz de proyección de perspectiva.](images/d3dxfrm62.gif)
 
@@ -139,7 +139,7 @@ Estas son las descripciones de las fases que se muestran en la ilustración ante
         (Xc, Yc, Zc, Wc) = (Xp, Yp, Zp, Wp) * Mclip   
     ```
 
-5.  La fase de recorte es opcional si el usuario especifica la marca D3DDP \_ DONOTCLIP en una llamada DrawPrimitive. En este caso, se pueden combinar todas las matrices (incluidos los mvs).
+5.  La fase de recorte es opcional si el usuario especifica la marca D3DDP \_ DONOTCLIP en una llamada a DrawPrimitive. En este caso, se pueden combinar todas las matrices (incluidos los mvs).
 6.  La matriz de escala de ventanilla Mvs escala las coordenadas para que se encuentran dentro de la ventana de ventanilla y voltea el eje Y de arriba abajo:
 
     ![mvs de matriz de escala de ventanilla](images/d3dxfrm68.gif)
@@ -160,7 +160,7 @@ Estas son las descripciones de las fases que se muestran en la ilustración ante
 Estas son algunas sugerencias para usar la canalización de transformación de Direct3D:
 
 -   La última columna del mundo y las matrices de vistas deben ser (0, 0, 0, 1) o la iluminación será incorrecta.
--   Establezca los parámetros de ventanilla para crear una matriz de Mclip de identidad, a menos que comprenda exactamente para qué se necesita.
+-   Establezca los parámetros de la ventanilla para crear una matriz de Mclip de identidad, a menos que comprenda exactamente para qué se necesita.
 
     ``` syntax
         dvClipWidth = 2 

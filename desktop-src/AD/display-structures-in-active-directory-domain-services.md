@@ -1,28 +1,28 @@
 ---
 title: Mostrar estructuras en Active Directory Domain Services
-description: Las funciones e interfaces de visualización de Active Directory Domain Services usan las siguientes estructuras para contener datos de visualización sobre los elementos de la interfaz de usuario del directorio.
+description: Las funciones e interfaces de Active Directory Domain Services usan las estructuras siguientes para contener datos para mostrar sobre los elementos de la interfaz de usuario del directorio.
 ms.assetid: bf6aa066-ee7e-4b13-9a4b-1e097632ec5a
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f91b5b5dc91097a1d300e7f76970dc24211771d2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b701ebb64134288778db6e6d10c82976e18bf2ccf237af656cbbef97588a2363
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103993910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118018722"
 ---
 # <a name="display-structures-in-active-directory-domain-services"></a>Mostrar estructuras en Active Directory Domain Services
 
-Las funciones e interfaces de visualización de Active Directory Domain Services usan las siguientes estructuras para contener datos de visualización sobre los elementos de la interfaz de usuario del directorio:
+Las funciones e interfaces de Active Directory Domain Services usan las estructuras siguientes para contener datos para mostrar sobre los elementos de la interfaz de usuario del directorio:
 
 -   [**CQFORM**](/windows/desktop/api/Cmnquery/ns-cmnquery-cqform)
 -   [**CQPAGE**](/windows/desktop/api/Cmnquery/ns-cmnquery-cqpage)
--   [**información de página de DSA \_ s \_ \_**](dsa-sec-page-info.md)
+-   [**INFORMACIÓN DE PÁGINA DE DSA \_ \_ \_ SEC**](dsa-sec-page-info.md)
 -   [**DOMAINDESC**](/windows/desktop/api/Dsclient/ns-dsclient-domaindesc)
 -   [**DOMAINTREE**](/windows/desktop/api/Dsclient/ns-dsclient-domain_tree)
--   [**DSBITEM**](/windows/desktop/api/Dsclient/ns-dsclient-dsbitema)
--   [**DSBROWSEINFO**](/windows/desktop/api/Dsclient/ns-dsclient-dsbrowseinfoa)
+-   [**ITEMITEM DE LA PROPIEDAD**](/windows/desktop/api/Dsclient/ns-dsclient-dsbitema)
+-   [**ROWSEINFO DE LA INSENSATEZ**](/windows/desktop/api/Dsclient/ns-dsclient-dsbrowseinfoa)
 -   [**DSCLASSCREATIONINFO**](/windows/desktop/api/Dsclient/ns-dsclient-dsclasscreationinfo)
 -   [**DSCOLUMN**](/windows/desktop/api/Dsquery/ns-dsquery-dscolumn)
 -   [**DSDISPLAYSPECOPTIONS**](/windows/desktop/api/Dsclient/ns-dsclient-dsdisplayspecoptions)
@@ -35,9 +35,9 @@ Las funciones e interfaces de visualización de Active Directory Domain Services
 -   [**OPENQUERYWINDOW**](/windows/desktop/api/Cmnquery/ns-cmnquery-openquerywindow)
 -   [**PROPSHEETCFG**](propsheetcfg.md)
 
- 
+ 
 
- 
+ 
 
 
 

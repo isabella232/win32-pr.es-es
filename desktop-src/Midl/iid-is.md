@@ -21,7 +21,7 @@ ms.locfileid: "118383872"
 ---
 # <a name="iid_is-attribute"></a>iid \_ es atributo
 
-El **\[ atributo de puntero iid \_ es \]** especifica el IID de la interfaz COM a la que apunta un puntero de interfaz.
+El **\[ atributo de \_ puntero \] iid** es especifica el IID de la interfaz COM a la que apunta un puntero de interfaz.
 
 ``` syntax
 [ iid_is(limited-expression) ]
@@ -40,9 +40,9 @@ Especifica una expresión de lenguaje C. El compilador MIDL admite expresiones c
 
 ## <a name="remarks"></a>Comentarios
 
-Puede usar **\[ iid \_ is en listas \]** de atributos para parámetros de función y para miembros de estructura o unión. Los códigos auxiliares usan el IID para determinar cómo serializar el puntero de interfaz. Esto es útil para un puntero de interfaz que se escribe como un parámetro de clase base.
+Puede usar **\[ iid is \_ en \] listas** de atributos para parámetros de función y para miembros de estructura o unión. Los códigos auxiliares usan el IID para determinar cómo serializar el puntero de interfaz. Esto es útil para un puntero de interfaz que se escribe como un parámetro de clase base.
 
-Los archivos que usan **\[ el atributo iid \_ is \]** deben compilarse con el compilador MIDL en modo predeterminado, que no usa el [**modificador /osf.**](-osf.md)
+Los archivos que usan el **\[ atributo iid \_ is \]** deben compilarse con el compilador MIDL en modo predeterminado, que no usa el [**modificador /osf.**](-osf.md)
 
 ## <a name="examples"></a>Ejemplos
 

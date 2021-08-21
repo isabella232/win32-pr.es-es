@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_SET_PREVIEWRATE (VFW. h)
-description: El \_ \_ mensaje PREVIEWRATE del conjunto de límites de WM \_ establece la velocidad de presentación del marco en el modo de vista previa. Puede enviar este mensaje explícitamente o mediante la macro capPreviewRate.
+title: WM_CAP_SET_PREVIEWRATE mensaje (Vfw.h)
+description: El mensaje WM CAP SET PREVIEWRATE establece la velocidad de visualización \_ de \_ \_ fotogramas en modo de vista previa. Puede enviar este mensaje explícitamente o mediante la macro capPreviewRate.
 ms.assetid: 1189ad4a-1f32-4684-920b-ee3c26ef97f8
 keywords:
-- Mensaje de WM_CAP_SET_PREVIEWRATE de Windows multimedia
+- WM_CAP_SET_PREVIEWRATE mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1134255b73e579841800af6cd5f6900965217106
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fa9b9a24614a40c5efb545b91a80069bf915c77c4b7d8fb289ed581f750ac0cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135087"
 ---
-# <a name="wm_cap_set_previewrate-message"></a>\_ \_ Mensaje PREVIEWRATE de conjunto de Cap de WM \_
+# <a name="wm_cap_set_previewrate-message"></a>Mensaje \_ WM CAP SET \_ \_ PREVIEWRATE
 
-El **mensaje \_ \_ \_ PREVIEWRATE del conjunto de límites de WM** establece la velocidad de presentación del marco en el modo de vista previa. Puede enviar este mensaje explícitamente o mediante la macro [**capPreviewRate**](/windows/desktop/api/Vfw/nf-vfw-cappreviewrate) .
+El **mensaje WM CAP SET \_ \_ \_ PREVIEWRATE** establece la velocidad de visualización de fotogramas en modo de vista previa. Puede enviar este mensaje explícitamente o mediante la [**macro capPreviewRate.**](/windows/desktop/api/Vfw/nf-vfw-cappreviewrate)
 
 
 ```C++
@@ -38,20 +38,20 @@ lParam = 0L;
 
 <dl> <dt>
 
-<span id="wMS"></span><span id="wms"></span><span id="WMS"></span>*wMS*
+<span id="wMS"></span><span id="wms"></span><span id="WMS"></span>*Wms*
 </dt> <dd>
 
-Velocidad, en milisegundos, a la que se capturan y muestran los nuevos fotogramas.
+Velocidad, en milisegundos, en la que se capturan y muestran nuevos fotogramas.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** si la ventana de captura no está conectada a un controlador de captura.
+Devuelve **TRUE si** se realiza **correctamente o FALSE** si la ventana de captura no está conectada a un controlador de captura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El modo de vista previa utiliza recursos de CPU importantes. Las aplicaciones pueden deshabilitar la vista previa o reducir la velocidad de vista previa cuando otra aplicación tiene el foco. Durante la captura de vídeo en streaming, la tarea de vista previa tiene una prioridad más baja que la escritura de tramas en el disco, y los marcos de vista previa solo se muestran si no hay otros búferes disponibles para escritura.
+El modo de vista previa usa recursos de CPU considerables. Las aplicaciones pueden deshabilitar la vista previa o reducir la velocidad de vista previa cuando otra aplicación tiene el foco. Durante la captura de vídeo de streaming, la tarea de vista previa tiene una prioridad menor que escribir fotogramas en el disco y los fotogramas de vista previa solo se muestran si no hay ningún otro búfer disponible para escritura.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ El modo de vista previa utiliza recursos de CPU importantes. Las aplicaciones pu
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

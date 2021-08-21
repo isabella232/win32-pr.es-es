@@ -126,7 +126,7 @@ Si el método se realiza correctamente, devuelve cero. Si el método no se reali
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje EM_SETUIANAME (RichEdit. h)
-description: Establece el nombre de un control Rich Edit para la automatización de la interfaz de usuario (UIA).
+title: EM_SETUIANAME mensaje (Richedit.h)
+description: Establece el nombre de un control de edición enriquecido para Automatización de la interfaz de usuario (UIA).
 ms.assetid: 60506FEE-9708-4668-8846-42B0B696DD9A
 keywords:
-- EM_SETUIANAME controles de mensajes de Windows
+- EM_SETUIANAME controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b0102b792a9eccfc6116acc3a534b00fb64b7ee5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 603d59b7bf246ee8ed7987d42399281ac1b0520ef27e206f2f8eeddf8f363d87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118412330"
 ---
-# <a name="em_setuianame-message"></a>\_Mensaje SETUIANAME em
+# <a name="em_setuianame-message"></a>Mensaje \_ EM SETUIANAME
 
-Establece el nombre de un control Rich Edit para la automatización de la interfaz de usuario (UIA).
+Establece el nombre de un control de edición enriquecido para Automatización de la interfaz de usuario (UIA).
 
 
 ```C++
@@ -39,7 +39,7 @@ Establece el nombre de un control Rich Edit para la automatización de la interf
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
@@ -58,11 +58,11 @@ TRUE si el nombre de UIA se ha establecido correctamente; de lo contrario, FALSE
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

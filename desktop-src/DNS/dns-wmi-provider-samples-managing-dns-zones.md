@@ -1,32 +1,32 @@
 ---
-title: 'Ejemplos del proveedor WMI de DNS: administrar Zonas DNS'
-description: 'Ejemplos del proveedor WMI de DNS: administrar Zonas DNS'
+title: 'Ejemplos de proveedores WMI de DNS: administración de zonas DNS'
+description: 'Ejemplos de proveedores WMI de DNS: administración de zonas DNS'
 ms.assetid: 12958b71-b47d-4dd7-bd08-409ecd369e4f
 keywords:
-- Ejemplos del proveedor WMI de DNS 8212; Administrar Zonas DNS
+- Ejemplos de proveedor WMI de DNS 8212; Administración de zonas DNS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb7f0468cd4550dc3c7c3ed0b2a7a585a3b17488
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 452c6ef3e9e072ffba6b1bf9ab58e9e15e15405b7bca418dc7619441ae43e125
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118163854"
 ---
-# <a name="dns-wmi-provider-samplesmanaging-dns-zones"></a>Ejemplos del proveedor WMI de DNS: administrar Zonas DNS
+# <a name="dns-wmi-provider-samplesmanaging-dns-zones"></a>Ejemplos de proveedores WMI de DNS: administración de zonas DNS
 
-En esta sección se muestran las tareas de scripting asociadas a la administración de zonas DNS. Los vínculos siguientes vinculan a las subrutinas del archivo de script.
+En esta sección se muestran las tareas de scripting asociadas a la administración de zonas DNS. Los vínculos siguientes vinculan a subrutinas en el archivo de script.
 
 -   [Creación de una zona DNS](#create-a-dns-zone)
--   [Modificar una zona DNS](#modify-a-dns-zone)
--   [Eliminar una zona DNS](#delete-a-dns-zone)
--   [Agregar una dirección IP de zona](#add-a-zone-ip-address)
+-   [Modificación de una zona DNS](#modify-a-dns-zone)
+-   [Eliminación de una zona DNS](#delete-a-dns-zone)
+-   [Adición de una dirección IP de zona](#add-a-zone-ip-address)
 -   [Eliminación de una dirección IP de zona](#delete-a-zone-ip-address)
 -   [Pausar una zona](#pause-a-zone)
 -   [Reanudación de una zona](#resume-a-zone)
--   [Actualizar una zona](#update-a-zone)
+-   [Actualización de una zona](#update-a-zone)
 -   [Recarga de una zona](#reload-a-zone)
--   [Actualizar una zona](#refresh-a-zone)
+-   [Actualización de una zona](#refresh-a-zone)
 
 
 ```VB
@@ -515,7 +515,7 @@ End Sub
 
 
 
-## <a name="modify-a-dns-zone"></a>Modificar una zona DNS
+## <a name="modify-a-dns-zone"></a>Modificación de una zona DNS
 
 
 ```VB
@@ -2907,9 +2907,9 @@ End Function
 
 
 
- 
+ 
 
- 
+ 
 
 
 

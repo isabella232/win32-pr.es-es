@@ -1,11 +1,11 @@
 ---
-title: Print-páginas por minuto (atributo)
-description: Tasa de impresión proporcionada por el controlador en páginas por minuto.
+title: Atributo Print-Pages-Per-Minute
+description: Velocidad de impresión proporcionada por el controlador en páginas por minuto.
 ms.assetid: 80b3a86b-5b7f-4e59-b3ef-c3f8c11ab0da
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de páginas por minuto de impresión
-- printPagesPerMinute esquema de AD de atributos
+- Esquema de AD del atributo Print-Pages-Per-Minute
+- PrintPagesPerMinute attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a42cc793b69406e548f4c0967bea176419c1405
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 926bdefce05c42038c7184efa0c02f84a5b331853a0be22dea41f9d747b5e260
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118011774"
 ---
-# <a name="print-pages-per-minute-attribute"></a>Print-páginas por minuto (atributo)
+# <a name="print-pages-per-minute-attribute"></a>Atributo Print-Pages-Per-Minute
 
-Tasa de impresión proporcionada por el controlador en páginas por minuto.
+Velocidad de impresión proporcionada por el controlador en páginas por minuto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Impresión: páginas por minuto               |
-| Nombre para mostrar de LDAP | printPagesPerMinute                  |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | Imprimir páginas por minuto               |
+| Ldap-Display-Name | printPagesPerMinute                  |
+| Size              | 4 bytes                              |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.631               |
-| System-ID-GUID    | 19405b97-3cfa-11d1-a9c0-0000f80367c1 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 19405b97-3cfa-11d1-a9c0-0000f80367c1 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,13 +55,13 @@ Tasa de impresión proporcionada por el controlador en páginas por minuto.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | True                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Verdadero                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -76,13 +76,13 @@ Tasa de impresión proporcionada por el controlador en páginas por minuto.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | True                                           |
+| Está indexado             | Falso                                          |
 | En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -97,13 +97,13 @@ Tasa de impresión proporcionada por el controlador en páginas por minuto.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | True                                           |
+| Está indexado             | Falso                                          |
 | En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -116,15 +116,15 @@ Tasa de impresión proporcionada por el controlador en páginas por minuto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
-| En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | True                                           |
+| Está indexado             | Falso                                          |
+| En el catálogo global      | Verdadero                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -139,13 +139,13 @@ Tasa de impresión proporcionada por el controlador en páginas por minuto.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | True                                           |
+| Está indexado             | Falso                                          |
 | En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
@@ -160,13 +160,13 @@ Tasa de impresión proporcionada por el controlador en páginas por minuto.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------|
-| Identificador de vínculo                | \-                                             |
+| Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
-| System-Only            | False                                          |
-| Tiene un único valor       | True                                           |
-| Está indexado             | False                                          |
+| System-Only            | Falso                                          |
+| Es de un solo valor       | True                                           |
+| Está indexado             | Falso                                          |
 | En el catálogo global      | True                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |

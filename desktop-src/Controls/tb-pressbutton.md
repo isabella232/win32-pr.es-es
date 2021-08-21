@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TB_PRESSBUTTON (commctrl. h)
+title: TB_PRESSBUTTON mensaje (Commctrl.h)
 description: Presiona o suelta el botón especificado en una barra de herramientas.
 ms.assetid: 03f6c3c2-d679-4e3a-a07b-c7e46c97972a
 keywords:
-- TB_PRESSBUTTON controles de mensajes de Windows
+- TB_PRESSBUTTON controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b0e86092951b242cee7388fc0d5d1bbdbca835e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8c72bd3e58b06510463fcfb872060d7fcbb529ce3e5a96376ae8cb25e142d9e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118168015"
 ---
-# <a name="tb_pressbutton-message"></a>\_Mensaje PRESSBUTTON TB
+# <a name="tb_pressbutton-message"></a>Mensaje \_ PRESSBUTTON de TB
 
 Presiona o suelta el botón especificado en una barra de herramientas.
 
@@ -32,32 +32,32 @@ Presiona o suelta el botón especificado en una barra de herramientas.
 *wParam* 
 </dt> <dd>
 
-Identificador de comando del botón que se va a presionar o liberar.
+Identificador de comando del botón que se debe presionar o liberar.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) es un **booleano** que indica si se debe presionar o liberar el botón especificado. Si es **true**, el botón está presionado. Si es **false**, se libera el botón.
+[**LOWORD es**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) un **BOOL** que indica si se debe presionar o liberar el botón especificado. Si **es TRUE,** se presiona el botón. Si **es FALSE,** se libera el botón.
 
-El valor de [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) debe ser cero.
+HIWORD [**debe**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

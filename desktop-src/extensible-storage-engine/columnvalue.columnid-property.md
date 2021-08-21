@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: ColumnValue. columnid (propiedad)'
-title: Propiedad ColumnValue. columnid
+description: 'Más información sobre: Propiedad ColumnValue.Columnid'
+title: Propiedad ColumnValue.Columnid
 TOCTitle: 'Columnid property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.ColumnValue.Columnid
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnvalue.columnid(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 86206b10eeb17468f2708205106b9321b4dd37ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 61743d1aa49200cf871b9ec37d3506ed3ccd040c87dfea5ca1f4150b57328278
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118083786"
 ---
-# <a name="columnvaluecolumnid-property"></a>Propiedad ColumnValue. columnid
+# <a name="columnvaluecolumnid-property"></a>Propiedad ColumnValue.Columnid
 
 Obtiene o establece el columnid que se va a establecer o recuperar.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,14 +62,14 @@ public JET_COLUMNID Columnid { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase ColumnValue](./columnvalue-class.md)
+[ColumnValue (clase)](./columnvalue-class.md)
 
-[Miembros de ColumnValue](./columnvalue-members.md)
+[Miembros ColumnValue](./columnvalue-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

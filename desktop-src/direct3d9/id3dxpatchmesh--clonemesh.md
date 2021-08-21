@@ -1,7 +1,7 @@
 ---
 description: Crea una nueva malla de revisión con la declaración de vértice especificada.
 ms.assetid: cc488cd3-fb38-468f-8aec-17c6ed842582
-title: 'ID3DXPatchMesh:: CloneMesh (método) (D3DX9Mesh. h)'
+title: Método ID3DXPatchMesh::CloneMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 249b4282aa84e3f7c5ba619a0b42e8c0b1fdf846
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1418bf890ae0ba10adec9e0c7de74eb5f118f91566554eb325cc2badaedfc613
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118294386"
 ---
-# <a name="id3dxpatchmeshclonemesh-method"></a>ID3DXPatchMesh:: CloneMesh (método)
+# <a name="id3dxpatchmeshclonemesh-method"></a>Método ID3DXPatchMesh::CloneMesh
 
 Crea una nueva malla de revisión con la declaración de vértice especificada.
 
@@ -42,30 +42,30 @@ HRESULT CloneMesh(
 
 <dl> <dt>
 
-*Opciones* \[ de de\]
+*Opciones* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinación de una o varias marcas [**D3DXMESH**](./d3dxmesh.md) que especifican las opciones de creación de la malla.
+Combinación de una o varias [**marcas D3DXMESH**](./d3dxmesh.md) que especifican opciones de creación para la malla.
 
 </dd> <dt>
 
-*pDecl* \[ de\]
+*pDecl* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) \***
 
-Matriz de elementos [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) que especifican el formato de vértice de los vértices de la malla de salida.
+Matriz [**de elementos D3DVERTEXELEMENT9**](d3dvertexelement9.md) que especifican el formato de vértice para los vértices de la malla de salida.
 
 </dd> <dt>
 
-*pmesh* \[ out, retval\]
+*pMesh* \[ out, retval\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXPATCHMESH**](id3dxpatchmesh.md)\***
 
-Dirección de un puntero a una interfaz [**ID3DXPatchMesh**](id3dxpatchmesh.md) que representa la malla clonada.
+Dirección de un puntero a una [**interfaz ID3DXPatchMesh**](id3dxpatchmesh.md) que representa la malla clonada.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Dirección de un puntero a una interfaz [**ID3DXPatchMesh**](id3dxpatchmesh.md) 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**CloneMesh** convierte el búfer de vértices en la nueva declaración de vértices. Las entradas en la declaración de vértices que son nuevas en la malla original se establecen en 0. Si la malla actual tiene adyacencias, la nueva malla también tendrá adyacencias.
+**CloneMesh convierte** el búfer de vértices en la nueva declaración de vértice. Las entradas de la declaración de vértice que son nuevas en la malla original se establecen en 0. Si la malla actual tiene adyacencia, la nueva malla también tendrá adyacencia.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,12 +85,12 @@ Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,10 +1,10 @@
 ---
-title: Mensaje de CQPM_INITIALIZE (Cmnquery. h)
+title: CQPM_INITIALIZE mensaje (Cmnquery.h)
 description: Se envía a la función de devolución de llamada CQPageProc de una página de extensión de formulario de consulta cuando la página se agrega a un formulario.
 ms.assetid: 29cb39d5-9bc4-472e-8a2f-dc6cd505144a
 ms.tgt_platform: multiple
 keywords:
-- CQPM_INITIALIZE Active Directory de mensaje
+- CQPM_INITIALIZE mensaje Active Directory
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e95c7087a9cd2d40387c8d7dd07aa93c8f697fe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 14f31b88db921e464505b36f24d5c172b4088876d9891b8cc018c968bacdb047
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079316"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118021058"
 ---
-# <a name="cqpm_initialize-message"></a>CQPM \_ inicializar mensaje
+# <a name="cqpm_initialize-message"></a>Mensaje DE INICIALIZACIÓN de CQPM \_
 
-El mensaje de **\_ inicialización CQPM** se envía a la función de devolución de llamada [**CQPageProc**](/windows/desktop/api/Cmnquery/nc-cmnquery-lpcqpageproc) de una página de extensión de formulario de consulta cuando la página se agrega a un formulario.
+El mensaje INITIALIZE de **CQPM \_** se envía a la función de devolución de llamada [**CQPageProc**](/windows/desktop/api/Cmnquery/nc-cmnquery-lpcqpageproc) de una página de extensión de formulario de consulta cuando la página se agrega a un formulario.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -33,14 +33,14 @@ El mensaje de **\_ inicialización CQPM** se envía a la función de devolución
 *wParam* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> </dl>
 
@@ -56,7 +56,7 @@ Se omite el valor devuelto para este mensaje.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                        |
-| Encabezado<br/>                   | <dl> <dt>Cmnquery. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Cmnquery.h</dt> </dl> |
 
 
 

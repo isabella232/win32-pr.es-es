@@ -4,12 +4,12 @@ ms.assetid: 6fc19244-0f42-4d23-899d-c79e97018855
 title: Topologías
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a853cac385c8e77d2a9cdb2aa182c3c2f8a7616
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f25e141dc7338dcd2706b57a5beb47c399552075c7f04644c74376abe1cc6212
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118057700"
 ---
 # <a name="topologies"></a>Topologías
 
@@ -21,10 +21,10 @@ Esta sección contiene los temas siguientes.
 
 | Tema                                                            | Descripción                                          |
 |------------------------------------------------------------------|------------------------------------------------------|
-| [Acerca de las topologías](about-topologies.md)                         | Información general de las topologías.                              |
-| [Crear topologías](creating-topologies.md)                   | Describe las reglas generales para crear topologías. |
-| [Crear topologías de reproducción](creating-playback-topologies.md) | Cómo crear una topología para la reproducción de audio y vídeo.   |
-| [Creación de topologías avanzadas](advanced-topology-building.md)     | Técnicas avanzadas para crear topologías personalizadas.  |
+| [Acerca de las topologías](about-topologies.md)                         | Introducción a las topologías.                              |
+| [Creación de topologías](creating-topologies.md)                   | Describe las reglas generales para crear topologías. |
+| [Creación de topologías de reproducción](creating-playback-topologies.md) | Cómo crear una topología para la reproducción de audio y vídeo.   |
+| [Creación de topología avanzada](advanced-topology-building.md)     | Técnicas avanzadas para crear topologías personalizadas.  |
 
 
 
@@ -34,7 +34,7 @@ Esta sección contiene los temas siguientes.
 
 <dl> <dt>
 
-[Sesión de medios](media-session.md)
+[Sesión multimedia](media-session.md)
 </dt> <dt>
 
 [**IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology)

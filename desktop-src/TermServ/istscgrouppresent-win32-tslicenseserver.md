@@ -30,7 +30,7 @@ ms.locfileid: "118351344"
 
 No se admite este método.
 
-**Windows Server 2008 R2 y Windows Server 2008:** Recupera si el grupo local Equipos de Terminal Server existe en el Escritorio remoto de licencias.
+**Windows Server 2008 R2 y Windows Server 2008:** Recupera si el grupo local Equipos de Terminal Server existe en Escritorio remoto servidor de licencias.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -82,7 +82,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

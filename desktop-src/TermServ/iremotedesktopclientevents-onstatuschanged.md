@@ -66,7 +66,7 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                           |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                 |
@@ -77,7 +77,7 @@ Este método no devuelve ningún valor.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
