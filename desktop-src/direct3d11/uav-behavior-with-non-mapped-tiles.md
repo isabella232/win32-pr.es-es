@@ -13,11 +13,11 @@ ms.locfileid: "119857665"
 ---
 # <a name="uav-behavior-with-non-mapped-tiles"></a>Comportamiento UAV con iconos sin asignar
 
-El comportamiento de las lecturas y escrituras de la vista de acceso no ordenado (UAV) depende del nivel de compatibilidad con hardware. Para ver un desglose de los requisitos, consulte el comportamiento general de lectura y escritura de los niveles [de características de recursos en mosaico.](tiled-resources-features-tiers.md) En esta sección se resume el comportamiento ideal.
+El comportamiento de las lecturas y escrituras de la vista de acceso no ordenado (UAV) depende del nivel de compatibilidad con hardware. Para ver un desglose de los requisitos, consulte comportamiento general de lectura y escritura para niveles de características [de recursos en mosaico.](tiled-resources-features-tiers.md) En esta sección se resume el comportamiento ideal.
 
 Las operaciones de sombreador que leen de un icono no asignado en un UAV devuelven 0 en todos los componentes que no faltan del formato y el valor predeterminado para los componentes que faltan.
 
-Las operaciones de sombreador que intentan escribir en un icono no asignado no hacen que no se escriba nada en el área no asignada (mientras las escrituras en un área asignada continúen). Esta definición ideal para el control de escritura no es necesaria para [el nivel 2](tier-2.md); Las escrituras en iconos no asignados pueden acabar en una memoria caché que las lecturas posteriores podrían recoger.
+Las operaciones de sombreador que intentan escribir en un icono no asignado no hacen que no se escriba nada en el área no asignada (mientras las escrituras en un área asignada prosiga). Esta definición ideal para el control de escritura no es necesaria para [el nivel 2;](tier-2.md) Las escrituras en iconos no asignados pueden acabar en una caché que las lecturas posteriores podrían recoger.
 
 ## <a name="related-topics"></a>Temas relacionados
 

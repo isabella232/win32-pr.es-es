@@ -21,7 +21,7 @@ ms.locfileid: "119801125"
 ---
 # <a name="profilelist-lanpolicy-element"></a>elemento profileList (LANPolicy)
 
-El elemento profileList (LANPolicy) contiene una lista de perfiles que se aplicarán en el nivel de dominio o equipo. Los perfiles deben basarse en el esquema de [ \_ perfil de LAN](lan-profileschema-schema.md), con un elemento raíz de [**LANProfile**](lan-profileschema-lanprofile-element.md). Se omitirán los perfiles basados en cualquier otro esquema.
+El elemento profileList (LANPolicy) contiene una lista de perfiles que se aplicarán en el nivel de dominio o equipo. Los perfiles deben basarse en el esquema de [ \_ perfil LAN](lan-profileschema-schema.md), con un elemento raíz de [**LANProfile**](lan-profileschema-lanprofile-element.md). Se omitirán los perfiles basados en cualquier otro esquema.
 
 Cuando [**enableAutoConfig**](lan-policyschema-enableautoconfig-globalflags-element.md) se establece en FALSE, este elemento no debe estar presente en un perfil de directiva LAN. Cuando **enableAutoConfig** se establece en TRUE, se requiere este elemento.
 
@@ -56,7 +56,7 @@ Este elemento debe contener exactamente un perfil de red. Si se especifica más 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

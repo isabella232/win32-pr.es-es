@@ -1,25 +1,25 @@
 ---
-description: Especifica el sistema de protección de medios que se va a usar para el contenido.
+description: Especifica el sistema de protección de medios que se usará para el contenido.
 ms.assetid: D0380C89-872A-4863-983F-A52FBACEF4FD
-title: Propiedad MFPKEY_MediaProtectionSystemId
+title: MFPKEY_MediaProtectionSystemId propiedad
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9817cccca002cceaf72463482aecea69aaf1ce25
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cace6ccf4cff4cd197d090584821779a0b1fe7eaceef526dd29389a9b179654f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119555445"
 ---
-# <a name="mfpkey_mediaprotectionsystemid-property"></a>\_Propiedad MediaProtectionSystemId de MFPKEY
+# <a name="mfpkey_mediaprotectionsystemid-property"></a>Propiedad MFPKEY \_ MediaProtectionSystemId
 
-Especifica el sistema de protección de medios que se va a usar para el contenido.
+Especifica el sistema de protección de medios que se usará para el contenido.
 
 
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
@@ -31,7 +31,7 @@ VT \_ CLSID
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El valor de esta propiedad es un GUID que identifica el sistema de protección de medios que se va a usar para el contenido.
 
@@ -41,7 +41,7 @@ El valor de esta propiedad es un GUID que identifica el sistema de protección d
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Mfidl. idl</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Mfidl.idl</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ El valor de esta propiedad es un GUID que identifica el sistema de protección d
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

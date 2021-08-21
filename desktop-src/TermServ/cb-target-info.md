@@ -1,10 +1,10 @@
 ---
-title: CB_TARGET_INFO estructura (Cbclient. h)
+title: CB_TARGET_INFO estructura (Cbclient.h)
 description: Contiene información sobre el equipo de destino y las direcciones IP donde se deben redirigir las conexiones entrantes.
 ms.assetid: 60612E10-9D82-4F38-87F7-B24F51E6EBDA
 ms.tgt_platform: multiple
 keywords:
-- Estructura de CB_TARGET_INFO Servicios de Escritorio remoto
+- CB_TARGET_INFO estructura Servicios de Escritorio remoto
 - PCB_TARGET_INFO puntero de estructura Servicios de Escritorio remoto
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9bbb982636449075b758ac61178f5e97da47ce7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1e7c00e1997ee36b42b21b833942597d9b43f393b2bcdfcee1aa0ee18e3a4548
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422089"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001613"
 ---
-# <a name="cb_target_info-structure"></a>Estructura de información del \_ destino CB \_
+# <a name="cb_target_info-structure"></a>Estructura CB \_ TARGET \_ INFO
 
-Contiene información sobre el equipo de destino y las direcciones IP donde se deben redirigir las conexiones entrantes. Esta estructura se usa con el método [**IConnectionBrokerClient:: GetTargetInfo**](iconnectionbrokerclient-gettargetinfo.md) .
+Contiene información sobre el equipo de destino y las direcciones IP donde se deben redirigir las conexiones entrantes. Esta estructura se usa con [**el método IConnectionBrokerClient::GetTargetInfo.**](iconnectionbrokerclient-gettargetinfo.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,21 +47,21 @@ typedef struct {
 **ServerName**
 </dt> <dd>
 
-Representa el nombre de dominio completo del servidor de destino. En un escenario de virtualización de Escritorio remoto (RDV), este miembro es **null**. En un escenario de host de sesión Escritorio remoto (RDSH), este miembro contiene el nombre del servidor al que se redirige la conexión entrante.
+Representa el nombre de dominio completo del servidor de destino. Para un escenario Escritorio remoto virtualización de datos (RDV), este miembro es **NULL.** Para un Escritorio remoto host de sesión de sesión (RDSH), este miembro contiene el nombre del servidor donde se redirige la conexión entrante.
 
 </dd> <dt>
 
 **AddressCount**
 </dt> <dd>
 
-El número de entradas válidas en la matriz **Addresses** .
+Número de entradas válidas en la matriz **Addresses.**
 
 </dd> <dt>
 
 **Direcciones**
 </dt> <dd>
 
-Matriz de cadenas que contienen las direcciones IP a las que se redirigen las conexiones entrantes. El número de elementos válidos en esta matriz se especifica en el miembro **AddressCount** .
+Matriz de cadenas que contienen las direcciones IP a las que se redirigen las conexiones entrantes. El número de elementos válidos de esta matriz se especifica en el **miembro AddressCount.**
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Matriz de cadenas que contienen las direcciones IP a las que se redirigen las co
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                        |
-| Encabezado<br/>                   | <dl> <dt>Cbclient. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Cbclient.h</dt> </dl> |
 
 
 

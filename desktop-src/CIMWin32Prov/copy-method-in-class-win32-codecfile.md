@@ -1,8 +1,8 @@
 ---
-description: Copia el archivo o directorio lógico del códec especificado en la ruta de acceso del objeto en la ubicación especificada por el parámetro de entrada.
+description: Copia el archivo de códec lógico o directorio especificado en la ruta de acceso del objeto a la ubicación especificada por el parámetro de entrada.
 ms.assetid: 77e67b01-561b-4233-899d-fa4bbf75ecf8
 ms.tgt_platform: multiple
-title: Método de copia de la clase Win32_CodecFile
+title: Método Copy de la clase Win32_CodecFile copia
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: e3bd6621c065192eb45176444257f1c29c897201
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2a7320e4e8474f88ac6721862b50b89534c098db74ac3dc844b50987cb08095d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119504955"
 ---
-# <a name="copy-method-of-the-win32_codecfile-class"></a>Método de copia de la \_ clase Win32 CodecFile
+# <a name="copy-method-of-the-win32_codecfile-class"></a>Método Copy de la clase CodecFile de Win32 \_
 
-El método **copiar** [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) copia el archivo de códec lógico o el directorio especificado en la ruta de acceso del objeto en la ubicación especificada por el parámetro de entrada. No se admite una copia si se requiere sobrescribir un archivo lógico existente.
+El **método copy** wmi [class](/windows/desktop/WmiSdk/retrieving-a-class) copia el archivo de códec lógico o el directorio especificados en la ruta de acceso del objeto a la ubicación especificada por el parámetro de entrada. No se admite una copia si se requiere sobrescribir un archivo lógico existente.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ Nombre completo de la copia del archivo (o directorio). Ejemplo: c: \\ temp \\ n
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si el archivo se ha copiado correctamente y cualquier otro número para indicar un error.
+Devuelve un valor de 0 (cero) si el archivo se copió correctamente y cualquier otro número para indicar un error.
 
 <dl> <dt>
 
@@ -72,7 +72,7 @@ Se denegó el acceso.
 **8**
 </dt> <dd>
 
-Se produjo un error no especificado.
+Error no especificado.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ El sistema de archivos no es NTFS.
 **12**
 </dt> <dd>
 
-La plataforma no es Windows.
+La plataforma no está Windows.
 
 </dd> <dt>
 
@@ -121,7 +121,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha producido una infracción de uso compartido.
+Ha habido una infracción de uso compartido.
 
 </dd> <dt>
 
@@ -154,8 +154,8 @@ Un parámetro especificado no es válido.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -167,7 +167,7 @@ Un parámetro especificado no es válido.
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Win32 \_ CodecFile**](win32-codecfile.md)
+[**CodecFile de Win32 \_**](win32-codecfile.md)
 </dt> </dl>
 
  

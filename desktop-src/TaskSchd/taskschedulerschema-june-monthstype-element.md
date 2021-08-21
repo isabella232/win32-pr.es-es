@@ -3,7 +3,7 @@ title: Elemento June (monthsType)
 description: Especifica que la tarea se ejecuta en junio.
 ms.assetid: 15b0e8c2-4dc1-4ca3-99c5-bd9a36718904
 keywords:
-- Junio, elemento Programador de tareas
+- Elemento June Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -38,14 +38,14 @@ El **elemento June** se define mediante el tipo complejo [**monthsType.**](tasks
 
 | Elemento                                                                                                          | Derivado de                                                     | Descripción                                                                                                |
 |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [**Months (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Especifica los meses del año durante los que la tarea se ejecuta para una programación mensual del día de la semana.<br/> |
+| [**Months (monthlyDayOfWeekScheduleType)**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Especifica los meses del año durante los que se ejecuta la tarea para una programación mensual del día de la semana.<br/> |
 | [**Months (monthlyScheduleType)**](taskschedulerschema-months-monthlyscheduletype-element.md)                   | [**monthsType**](taskschedulerschema-monthstype-complextype.md) | Especifica los meses del año durante los que se ejecuta la tarea para una programación mensual.<br/>             |
 
 
 
 ## <a name="examples"></a>Ejemplos
 
-El código XML siguiente define un calendario de meses que ejecuta la tarea en junio.
+El siguiente XML define un calendario de meses que ejecuta la tarea en junio.
 
 
 ```XML
@@ -60,14 +60,14 @@ El código XML siguiente define un calendario de meses que ejecuta la tarea en j
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

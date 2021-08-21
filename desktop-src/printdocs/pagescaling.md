@@ -4,16 +4,16 @@ ms.assetid: cf35bb37-bf67-4e86-bfef-9838606982a5
 title: PageScaling
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 795332f38da331a9f16b614154bf0a9270e613de
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: c4cf1a122f71148570cf69fc17455c8ca5c917ee4f441d1bc16be1922705eb81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948135"
 ---
 # <a name="pagescaling"></a>PageScaling
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Describe las características de escalado de la salida. Algunas opciones de esta característica requieren que el consumidor pueda determinar las características de las "dimensiones de contenido de la aplicación". En ausencia de la capacidad de determinar estas características, el consumidor debe establecer de forma predeterminada la opción de identidad. Estas características son:
 
@@ -21,9 +21,9 @@ Describe las características de escalado de la salida. Algunas opciones de esta
 
 | Característica de escalado                         | Descripción                                                                                                                                                                                                                                                      |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tamaño del medio de aplicación   | Dimensiones del medio definido por el diseño de la aplicación. El tamaño del medio de aplicación puede o no corresponder a pageMediaSize compatible con el consumidor.<br/>                                                                          |
-| Tamaño del contenido de la aplicación | Dimensiones del medio definido por el diseño de la aplicación. El tamaño del medio de aplicación puede o no corresponder a pageMediaSize compatible con el consumidor.<br/>                                                                          |
-| Tamaño de la sangría de la aplicación   | Desplazamiento y extensión del área de sangría de la aplicación, un cuadro de desbordamiento utilizado por la aplicación para el registro y el diseño, en relación con el tamaño del medio de la aplicación. El área de purga será mayor o igual que el tamaño del medio de aplicación.<br/> |
+| Tamaño del medio de aplicación   | Dimensiones del medio definido por el diseño de la aplicación. El tamaño del medio de la aplicación puede o no corresponder a pageMediaSize compatible con el consumidor.<br/>                                                                          |
+| Tamaño del contenido de la aplicación | Dimensiones del medio definido por el diseño de la aplicación. El tamaño del medio de la aplicación puede o no corresponder a pageMediaSize compatible con el consumidor.<br/>                                                                          |
+| Tamaño de la sangría de la aplicación   | Desplazamiento y extensión del área de sangría de la aplicación, un cuadro de desbordamiento utilizado por la aplicación para el registro y el diseño, en relación con el tamaño del medio de la aplicación. El área de sangría será mayor o igual que el tamaño del medio de aplicación.<br/> |
 
 
 
@@ -37,7 +37,7 @@ Describe las características de escalado de la salida. Algunas opciones de esta
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Característica<br/>                                                                                                                                                                                    |
 | Prefijo de ámbito <br/> | Página<br/>                                                                                                                                                                                       |
@@ -124,7 +124,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 ## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave públicas del esquema de impresión se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) de esta palabra clave se define a continuación:
+Las palabras clave de esquema de impresión públicas se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible (XML) de esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:PageScaling">

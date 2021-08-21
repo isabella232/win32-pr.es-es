@@ -53,7 +53,7 @@ Este atributo controla el retraso en el tiempo entre la notificación de cada as
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------|
 | Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
@@ -74,7 +74,7 @@ Este atributo controla el retraso en el tiempo entre la notificación de cada as
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------|
 | Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
@@ -95,7 +95,7 @@ Este atributo controla el retraso en el tiempo entre la notificación de cada as
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------|
 | Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
@@ -137,7 +137,7 @@ Este atributo controla el retraso en el tiempo entre la notificación de cada as
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------|
 | Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |
@@ -158,7 +158,7 @@ Este atributo controla el retraso en el tiempo entre la notificación de cada as
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------|
 | Id. de vínculo                | \-                                         |
 | MAPI-Id                | \-                                         |

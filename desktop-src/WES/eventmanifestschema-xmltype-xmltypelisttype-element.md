@@ -1,5 +1,5 @@
 ---
-title: Elemento xmlType (XmlTypeListType)
+title: elemento xmlType (XmlTypeListType)
 description: Define un tipo XML.
 ms.assetid: 4443963f-f47a-4371-87d8-58f508ba15d6
 keywords:
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119863285"
 ---
-# <a name="xmltype-xmltypelisttype-element"></a>Elemento xmlType (XmlTypeListType)
+# <a name="xmltype-xmltypelisttype-element"></a>elemento xmlType (XmlTypeListType)
 
 Define un tipo XML.
 
@@ -58,7 +58,7 @@ El tipo complejo XmlTypeListType define el [**elemento xmlType.**](eventmanifest
 | Nombre   | Tipo      | Descripción                                                                                                                                                                                                                                                |
 |--------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | name   | **QName** | Nombre del tipo de salida.<br/>                                                                                                                                                                                                                    |
-| símbolo | string    | Símbolo que se usará para hacer referencia al tipo de salida en la aplicación. El [**compilador de mensajes (MC.exe)**](message-compiler--mc-exe-.md) usa el símbolo para crear una constante para el tipo de salida en el archivo de encabezado que genera el compilador.<br/> |
+| símbolo | string    | Símbolo que se usará para hacer referencia al tipo de salida de la aplicación. El [**compilador de mensajes (MC.exe)**](message-compiler--mc-exe-.md) usa el símbolo para crear una constante para el tipo de salida en el archivo de encabezado que genera el compilador.<br/> |
 | value  | string    | Valor entero que identifica de forma única el tipo de salida en la lista de tipos de salida que defina.<br/>                                                                                                                                          |
 
 
@@ -67,14 +67,14 @@ El tipo complejo XmlTypeListType define el [**elemento xmlType.**](eventmanifest
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

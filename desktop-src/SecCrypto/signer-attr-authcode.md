@@ -24,7 +24,7 @@ ms.locfileid: "118898952"
 La **estructura SIGNER \_ ATTR \_ AUTHCODE** especifica los atributos de una [*firma Authenticode.*](../secgloss/a-gly.md)
 
 > [!Note]  
-> Esta estructura no se define en ningún archivo de encabezado. Para usar esta estructura, debe definirla usted mismo como se muestra en este tema.
+> Esta estructura no está definida en ningún archivo de encabezado. Para usar esta estructura, debe definirla usted mismo como se muestra en este tema.
 
  
 
@@ -86,14 +86,14 @@ Nombre para mostrar de la dirección URL del archivo tras la descarga.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

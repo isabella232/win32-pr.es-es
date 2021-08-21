@@ -71,7 +71,7 @@ Objeto [**RunningTaskCollection**](runningtaskcollection.md) que contiene las ta
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

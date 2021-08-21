@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 384d4a7ed5e1b769218b9290ed6cc0f7f060bd66
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d516d9fc5a92ff3661caaf5fbca17372804ea2805688542a0283736cf55f4959
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119790675"
 ---
 # <a name="id3dxbaseeffectsetmatrixtranspose-method"></a>Método ID3DXBaseEffect::SetMatrixTranspose
 
@@ -82,7 +82,7 @@ Si la matriz de destino es menor que la matriz de origen, se omitirán los compo
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

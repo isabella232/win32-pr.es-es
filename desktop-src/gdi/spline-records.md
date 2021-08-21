@@ -1,31 +1,31 @@
 ---
-description: Los registros de spline representan las curvas cuadráticas (es decir, las splines de b cuadrática) utilizadas por TrueType.
+description: Los registros spline representan las curvas cuadráticas (es decir, b-splines cuadráticas) usadas por TrueType.
 ms.assetid: 39b81ffc-382b-467c-83d7-d0754847759a
-title: Registros de spline
+title: Registros spline
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1e10f36e4a0481f9950f63c4cbbb59d48d24df0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dbaf3730f327501bd55b2e35b9410f03fd0559cbb5e36d87a3052901d26e5f0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103813028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119613655"
 ---
-# <a name="spline-records"></a>Registros de spline
+# <a name="spline-records"></a>Registros spline
 
-Los registros de spline representan las curvas cuadráticas (es decir, las splines de b cuadrática) utilizadas por TrueType. Un registro de spline comienza con el último punto del registro anterior (o para el primer registro del contorno, con el punto inicial). En el primer registro de spline, el punto inicial y el último punto del registro se encuentran en el contorno del glifo. En el caso de todos los demás registros de spline, solo el último punto está en el contorno del glifo. Todos los demás puntos de los registros de spline están fuera del contorno del glifo y deben representarse como puntos de control de las splines b.
+Los registros spline representan las curvas cuadráticas (es decir, b-splines cuadráticas) usadas por TrueType. Un registro spline comienza con el último punto del registro anterior (o para el primer registro del contorno, con el punto inicial). Para el primer registro spline, el punto inicial y el último punto del registro se encuentran en el contorno del glifo. Para todos los demás registros spline, solo el último punto está en el contorno del glifo. Todos los demás puntos de los registros spline están fuera del contorno del glifo y deben representarse como puntos de control de b-splines.
 
-El último registro de spline o Polyline de un contorno finaliza siempre con el punto inicial del contorno. Esta disposición garantiza que todos los contornos estén cerrados.
+El último registro de spline o polilínea de un contorno siempre termina con el punto inicial del contorno. Esta disposición garantiza que se cierren todos los contornos.
 
-Dado que las splines b requieren tres puntos (un punto en el contorno del glifo entre dos puntos que se encuentran en el contorno), debe realizar algunos cálculos cuando un registro de spline contiene más de un punto fuera de curva.
+Dado que b-splines requieren tres puntos (un punto fuera del contorno del glifo entre dos puntos que están en el contorno), debe realizar algunos cálculos cuando un registro spline contenga más de un punto fuera de curva.
 
-Por ejemplo, si un registro de spline contiene tres puntos (A, B y C) y no es el primer registro, los puntos A y B están fuera del contorno del glifo. Para interpretar el punto A, use la posición actual (que siempre está en el contorno del glifo) y el punto en el contorno del glifo entre los puntos A y B. Para buscar el punto medio (M) entre A y B, puede realizar el cálculo siguiente.
+Por ejemplo, si un registro spline contiene tres puntos (A, B y C) y no es el primer registro, los puntos A y B están fuera del contorno del glifo. Para interpretar el punto A, use la posición actual (que siempre está en el contorno del glifo) y el punto en el contorno del glifo entre los puntos A y B. Para buscar el punto medio (M) entre A y B, puede realizar el siguiente cálculo.
 
 M = A + (B A)/2
 
-El punto medio entre los puntos no contornos consecutivos en un registro de spline es un punto en el contorno del glifo, de acuerdo con la definición del formato de spline usado en las fuentes TrueType.
+El punto medio entre los puntos fuera de esquema consecutivos de un registro spline es un punto en el contorno del glifo, según la definición del formato spline utilizado en las fuentes TrueType.
 
-Si la posición actual se designa mediante P, las dos curvas spline cuadráticas definidas por este registro de spline son (P, A, M) y (M, B, C).
+Si la posición actual la designa P, las dos splines cuadráticas definidas por este registro spline son (P, A, M) y (M, B, C).
 
  
 

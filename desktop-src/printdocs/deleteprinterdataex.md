@@ -1,7 +1,7 @@
 ---
 description: La función DeletePrinterDataEx elimina un valor especificado de los datos de configuración de una impresora.
 ms.assetid: bcc9cdb3-0fbf-40b6-9de2-1479c3c0ff55
-title: Función DeletePrinterDataEx (winspool. h)
+title: Función DeletePrinterDataEx (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,18 +18,18 @@ api_location:
 - Ext-MS-Win-printer-Winspool-l1-1-1.dll
 - Ext-MS-Win-Printer-WinSpool-l1-1-2.dll
 - Ext-MS-Win-Printer-WinSpool-L1-1-3.dll
-ms.openlocfilehash: 07cf6262db0a1e3a3c4c098ee26e03b3fdad4002
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7a47b3a7a62ac9dd48a86a7ddf4d6634304a402b69d5dc191ce17e3f149ffb27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103814875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950075"
 ---
-# <a name="deleteprinterdataex-function"></a>DeletePrinterDataEx función)
+# <a name="deleteprinterdataex-function"></a>Función DeletePrinterDataEx
 
-La función **DeletePrinterDataEx** elimina un valor especificado de los datos de configuración de una impresora. Los datos de configuración de una impresora se componen de un conjunto de valores con nombre y con tipo que se almacenan en una jerarquía de claves del registro. La función elimina un valor especificado en una clave especificada.
+La **función DeletePrinterDataEx** elimina un valor especificado de los datos de configuración de una impresora. Los datos de configuración de una impresora constan de un conjunto de valores con nombre y con tipo almacenados en una jerarquía de claves del Registro. La función elimina un valor especificado bajo una clave especificada.
 
-Al igual que la función [**DeletePrinterData**](deleteprinterdata.md) , **DeletePrinterDataEx** puede eliminar valores almacenados por la función [**SetPrinterData**](setprinterdata.md) . Además, **DeletePrinterDataEx** puede eliminar valores almacenados en una clave especificada por la función [**SetPrinterDataEx**](setprinterdataex.md) .
+Al igual [**que la función DeletePrinterData,**](deleteprinterdata.md) **DeletePrinterDataEx** puede eliminar los valores almacenados por la [**función SetPrinterData.**](setprinterdata.md) Además, **DeletePrinterDataEx puede** eliminar los valores almacenados bajo una clave especificada por la [**función SetPrinterDataEx.**](setprinterdataex.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,39 +48,39 @@ DWORD DeletePrinterDataEx(
 
 <dl> <dt>
 
-*hPrinter* \[ de\]
+*hPrinter* \[ En\]
 </dt> <dd>
 
-Identificador de la impresora para la que la función elimina un valor. Use la función [**OpenPrinter**](openprinter.md) o [**AddPrinter (**](addprinter.md) para recuperar un identificador de impresora.
+Identificador de la impresora para la que la función elimina un valor. Use la [**función OpenPrinter**](openprinter.md) [**o AddPrinter**](addprinter.md) para recuperar un identificador de impresora.
 
 </dd> <dt>
 
-*pKeyName* \[ de\]
+*pKeyName* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica la clave que contiene el valor que se va a eliminar. Use el carácter de barra diagonal inversa ( \\ ) como delimitador para especificar una ruta de acceso que tenga una o más subclaves.
+Puntero a una cadena terminada en NULL que especifica la clave que contiene el valor que se debe eliminar. Use el carácter de barra diagonal inversa ( ) como delimitador para especificar una ruta de \\ acceso que tenga una o varias subclaves.
 
-Si *pKeyName* es **null** o una cadena vacía, **DeletePrinterDataEx** devuelve un \_ parámetro no válido \_ .
+Si *pKeyName es* **NULL o** una cadena vacía, **DeletePrinterDataEx** devuelve ERROR \_ INVALID \_ PARAMETER.
 
 </dd> <dt>
 
-*pValueName* \[ de\]
+*pValueName* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre del valor que se va a eliminar.
+Puntero a una cadena terminada en NULL que especifica el nombre del valor que se eliminará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es ERROR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es ERROR \_ SUCCESS.
 
 Si se produce un error en la función, el valor devuelto es un código de error del sistema.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Se trata de una función de bloqueo o sincrónica y podría no volver inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que parezca que la aplicación no responde.
+> Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
@@ -92,9 +92,9 @@ Si se produce un error en la función, el valor devuelto es un código de error 
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winspool. lib</dt> </dl>                   |
-| Archivo DLL<br/>                      | <dl> <dt>Winspool. drv</dt> </dl>                   |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
+| Archivo DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl>                   |
 | Nombres Unicode y ANSI<br/>   | **DeletePrinterDataExW** (Unicode) y **DeletePrinterDataExA** (ANSI)<br/>                         |
 
 

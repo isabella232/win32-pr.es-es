@@ -1,11 +1,11 @@
 ---
-title: atributo MS-SPP-CSVLK-SKU-ID
-description: IDENTIFICADOR de SKU de la clave de producto CSVLK utilizada para crear el objeto de activación
+title: Atributo ms-SPP-CSVLK-Sku-Id
+description: Identificador de SKU de clave de producto CSVLK que se usa para crear el objeto de activación
 ms.assetid: 92d0acaa-1da4-4980-87c7-7c90e95bd9f0
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-SPP-CSVLK-SKU-ID
-- msSPP-CSVLKSkuId atributo AD Schema
+- Esquema de AD del atributo ms-SPP-CSVLK-Sku-Id
+- Esquema de AD del atributo msSPP-CSVLKSkuId
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c3c77f9b29747d715252882f75384afbfa01172
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d40a082dd790cf84852a1d5cbb0d27c5ceb2fba3f9fd52b50c3bf744fc2d123f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659051"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802735"
 ---
-# <a name="ms-spp-csvlk-sku-id-attribute"></a>atributo MS-SPP-CSVLK-SKU-ID
+# <a name="ms-spp-csvlk-sku-id-attribute"></a>Atributo ms-SPP-CSVLK-Sku-Id
 
-IDENTIFICADOR de SKU de la clave de producto CSVLK utilizada para crear el objeto de activación
+Identificador de SKU de clave de producto CSVLK que se usa para crear el objeto de activación
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-SPP-CSVLK-SKU-ID                                   |
-| Nombre para mostrar de LDAP | msSPP-CSVLKSkuId                                      |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | ms-SPP-CSVLK-Sku-Id                                   |
+| Ldap-Display-Name | msSPP-CSVLKSkuId                                      |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2081                               |
-| System-ID-GUID    | 9684f739-7b78-476d-8d74-31ad7692eef4                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 9684f739-7b78-476d-8d74-31ad7692eef4                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -50,18 +50,18 @@ IDENTIFICADOR de SKU de la clave de producto CSVLK utilizada para crear el objet
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                      |
+| Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
-| System-Only            | False                                                                   |
-| Tiene un único valor       | True                                                                    |
-| Está indexado             | False                                                                   |
-| En el catálogo global      | False                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                            |
+| System-Only            | Falso                                                                   |
+| Es de un solo valor       | Verdadero                                                                    |
+| Está indexado             | Falso                                                                   |
+| En el catálogo global      | Falso                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                            |
 | Range-Lower            | 16                                                                      |
 | Range-Upper            | 16                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Clases usadas en        | [**MS-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
+| Clases usadas en        | [**ms-SPP-Activation-Object**](c-msspp-activationobject.md)<br/> |
 
 
 

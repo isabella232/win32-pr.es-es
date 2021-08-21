@@ -1,8 +1,8 @@
 ---
-description: Cambia el nombre del archivo lógico (o directorio) especificado en la ruta de acceso del objeto. No se admite el cambio de nombre si el destino está en otra unidad o si se requiere sobrescribir un archivo lógico existente.
+description: Cambia el nombre del archivo lógico (o directorio) especificado en la ruta de acceso del objeto. No se admite el cambio de nombre si el destino está en otra unidad o se requiere sobrescribir un archivo lógico existente.
 ms.assetid: 728737a7-7cb8-4237-be03-16c4dac530b2
 ms.tgt_platform: multiple
-title: Cambiar el nombre del método de la clase CIM_Directory
+title: Método Rename de la CIM_Directory clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,25 +14,25 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 83429f3a5248b1d3be24832b26bf99213d442ce5
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b9236b3384b8d945cea41c1a1fbe7b8db22f7ed70d692144e1691c6bfcf97270
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104496552"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077485"
 ---
-# <a name="rename-method-of-the-cim_directory-class"></a>Cambiar el nombre del método de la \_ clase de directorio CIM
+# <a name="rename-method-of-the-cim_directory-class"></a>Método Rename de la clase Cim \_ Directory
 
-El método **Rename** cambia el nombre del archivo lógico (o directorio) especificado en la ruta de acceso del objeto. No se admite el cambio de nombre si el destino está en otra unidad o si se requiere sobrescribir un archivo lógico existente.
+El **método Rename** cambia el nombre del archivo lógico (o directorio) especificado en la ruta de acceso del objeto. No se admite el cambio de nombre si el destino está en otra unidad o se requiere sobrescribir un archivo lógico existente.
 
-Este método se hereda de [**\_ LogicalFile CIM**](cim-logicalfile.md).
+Este método se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,7 +49,7 @@ uint32 Rename(
 
 <dl> <dt>
 
-*Nombre de archivo* \[ de\]
+*FileName* \[ En\]
 </dt> <dd>
 
 Nuevo nombre completo del archivo (o directorio).
@@ -60,7 +60,7 @@ Ejemplo: "c: \\ temp \\newname.txt"
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si se realiza correctamente y cualquier otro número para indicar un error.
+Devuelve un valor de 0 (cero) si se ejecuta correctamente y cualquier otro número para indicar un error.
 
 <dl> <dt>
 
@@ -74,7 +74,7 @@ Correcto.
 **2**
 </dt> <dd>
 
-Acceso denegado.
+Acceso denegado:
 
 </dd> <dt>
 
@@ -155,22 +155,22 @@ Parámetro no válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no está implementado actualmente por WMI. Para usar este método, debe implementarlo en su propio proveedor.
+Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -179,10 +179,10 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[\_Directorio CIM](rename-method-in-class-cim-directory.md)
+[Directorio \_ CIM](rename-method-in-class-cim-directory.md)
 </dt> <dt>
 
-[**\_Directorio CIM**](cim-directory.md)
+[**Directorio \_ CIM**](cim-directory.md)
 </dt> </dl>
 
  

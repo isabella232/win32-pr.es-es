@@ -1,9 +1,9 @@
 ---
 title: Función RtmBlockDeleteRoutes (Rtm.h)
-description: La función RtmBlockDeleteRoutes elimina todas las rutas del subconjunto especificado de rutas de la tabla.
+description: La función RtmBlockDeleteRoutes elimina todas las rutas del subconjunto de rutas especificado en la tabla.
 ms.assetid: d191883d-da3d-4a91-92e6-4979db96f4a4
 keywords:
-- Función RAS de RtmBlockDeleteRoutes
+- Función RTMBlockDeleteRoutes RAS
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.locfileid: "120073885"
 ---
 # <a name="rtmblockdeleteroutes-function"></a>Función RtmBlockDeleteRoutes
 
-\[Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
+\[Esta API ha sido reemplazada por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
-La **función RtmBlockDeleteRoutes** elimina todas las rutas del subconjunto especificado de rutas de la tabla.
+La **función RtmBlockDeleteRoutes** elimina todas las rutas del subconjunto de rutas especificado en la tabla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -78,7 +78,7 @@ Si se produce un error en la función, el valor devuelto es uno de los siguiente
 | <dl> <dt>**ERROR \_ SIN \_ RUTAS**</dt> </dl>            | No hay ninguna ruta que tenga los criterios especificados.<br/>                                           |
 | <dl> <dt>**IDENTIFICADOR \_ DE ERROR NO \_ VÁLIDO**</dt> </dl>       | El *parámetro ClientHandle* no es válido.<br/>                                                      |
 | <dl> <dt>**ERROR \_ PARÁMETRO NO \_ VÁLIDO**</dt> </dl>    | Uno o varios de los parámetros de entrada no son válidos, por ejemplo, las marcas de enumeración no son válidas.<br/> |
-| <dl> <dt>**ERROR \_ SIN RECURSOS DEL \_ \_ SISTEMA**</dt> </dl> | No hay recursos suficientes para llevar a cabo la operación.<br/>                                    |
+| <dl> <dt>**ERROR \_ NO HAY RECURSOS DEL \_ \_ SISTEMA**</dt> </dl> | No hay recursos suficientes para llevar a cabo la operación.<br/>                                    |
 | <dl> <dt>**ERROR \_ NO HAY SUFICIENTE \_ \_ MEMORIA**</dt> </dl>   | No hay memoria suficiente para llevar a cabo la operación.<br/>                                        |
 
 
@@ -104,11 +104,11 @@ La función genera los mensajes de notificación adecuados a todos los clientes 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Referencia de la versión 1 de Routing Table Manager](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 del Administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
 [Funciones de Routing Table Manager versión 1](routing-table-manager-version-1-functions.md)

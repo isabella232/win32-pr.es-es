@@ -1,27 +1,27 @@
 ---
-description: El depurador utiliza la función WaitForDebugEvent al principio de su bucle principal.
+description: El depurador usa la función WaitForDebugEvent al principio de su bucle main.
 ms.assetid: 5a45854e-2711-49d5-982b-6b85248ec632
-title: Escribir el bucle principal del depurador
+title: Escribir el bucle main del depurador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f21c56364c314c676c5fd5dbb1cd6e9d1acd63e6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6695488e6391fa83a7d8aea999487beaae30360786872e3c345d52c201494cc9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120103895"
 ---
-# <a name="writing-the-debuggers-main-loop"></a>Escribir el bucle principal del depurador
+# <a name="writing-the-debuggers-main-loop"></a>Escribir el bucle main del depurador
 
-El depurador utiliza la función [**WaitForDebugEvent**](/windows/win32/api/debugapi/nf-debugapi-waitfordebugevent) al principio de su bucle principal. Esta función bloquea el depurador hasta que se produce un evento de depuración. Cuando se produce el evento de depuración, el sistema suspende todos los subprocesos del proceso que se está depurando y notifica al depurador del evento.
+El depurador usa la [**función WaitForDebugEvent**](/windows/win32/api/debugapi/nf-debugapi-waitfordebugevent) al principio de su bucle main. Esta función bloquea el depurador hasta que se produce un evento de depuración. Cuando se produce el evento de depuración, el sistema suspende todos los subprocesos del proceso que se está depurando y notifica al depurador del evento.
 
-El depurador puede interactuar con el usuario o manipular el estado del proceso que se está depurando mediante las funciones [**GetThreadContext**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getthreadcontext), [**GetThreadSelectorEntry**](/windows/desktop/api/WinBase/nf-winbase-getthreadselectorentry), [**ReadProcessMemory**](/windows/win32/api/memoryapi/nf-memoryapi-readprocessmemory), [**SetThreadContext**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadcontext)y [**writeprocessmemory**](/windows/win32/api/memoryapi/nf-memoryapi-writeprocessmemory) . **GetThreadSelectorEntry** devuelve la entrada de la tabla de descriptores para un selector y un subproceso especificados. Los depuradores usan la entrada de la tabla de descriptores para convertir una dirección relativa del segmento en una dirección virtual lineal. Las funciones **ReadProcessMemory** y **writeprocessmemory** requieren direcciones virtuales lineales.
+El depurador puede interactuar con el usuario o manipular el estado del proceso que se está depurando mediante las funciones [**GetThreadContext**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getthreadcontext), [**GetThreadSelectorEntry,**](/windows/desktop/api/WinBase/nf-winbase-getthreadselectorentry) [**ReadProcessMemory,**](/windows/win32/api/memoryapi/nf-memoryapi-readprocessmemory) [**SetThreadContext**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadcontext) [**y WriteProcessMemory.**](/windows/win32/api/memoryapi/nf-memoryapi-writeprocessmemory) **GetThreadSelectorEntry devuelve** la entrada de tabla de descriptores para un selector y subproceso especificados. Los depuradores usan la entrada de la tabla de descriptores para convertir una dirección relativa al segmento en una dirección virtual lineal. Las **funciones ReadProcessMemory** **y WriteProcessMemory** requieren direcciones virtuales lineales.
 
-Los depuradores suelen leer la memoria del proceso que se está depurando y escribir la memoria que contiene instrucciones para la caché de instrucciones. Una vez escritas las instrucciones, el depurador llama a la función [**FlushInstructionCache**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-flushinstructioncache) para ejecutar las instrucciones almacenadas en caché.
+Los depuradores leen con frecuencia la memoria del proceso que se está depurando y escriben la memoria que contiene instrucciones en la memoria caché de instrucciones. Una vez escritas las instrucciones, el depurador llama a la función [**FlushInstructionCache**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-flushinstructioncache) para ejecutar las instrucciones almacenadas en caché.
 
-El depurador utiliza la función [**ContinueDebugEvent**](/windows/win32/api/debugapi/nf-debugapi-continuedebugevent) al final de su bucle principal. Esta función permite que el proceso que se está depurando continúe ejecutándose.
+El depurador usa la [**función ContinueDebugEvent**](/windows/win32/api/debugapi/nf-debugapi-continuedebugevent) al final de su bucle principal. Esta función permite que el proceso que se está depurando continúe ejecutándose.
 
-En el ejemplo siguiente se usan las funciones [**WaitForDebugEvent**](/windows/win32/api/debugapi/nf-debugapi-waitfordebugevent) y [**ContinueDebugEvent**](/windows/win32/api/debugapi/nf-debugapi-continuedebugevent) para mostrar cómo se puede organizar un depurador simple.
+En el ejemplo siguiente se [**usan las funciones WaitForDebugEvent**](/windows/win32/api/debugapi/nf-debugapi-waitfordebugevent) y [**ContinueDebugEvent**](/windows/win32/api/debugapi/nf-debugapi-continuedebugevent) para ilustrar cómo se podría organizar un depurador simple.
 
 
 ```C++

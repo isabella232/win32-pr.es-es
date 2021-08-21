@@ -31,7 +31,7 @@ Objeto de diccionario para traducir atributos de enrutamiento específicos del p
 |-------------------|--------------------------------------|
 | CN                | RRAS-Administration-Dictionary       |
 | Ldap-Display-Name | rRASAdministrationDictionary         |
-| Actualizar privilegios  | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Schema-Id-Guid    | f39b98ae-938d-11d1-aebd-0000f80367c1 |
 
@@ -59,7 +59,7 @@ Objeto de diccionario para traducir atributos de enrutamiento específicos del p
 | Default-Object-Category     | \-                                                                                                                               |
 | Governs-Id                  | 1.2.840.113556.1.5.156                                                                                                           |
 | Valor predeterminado de ocultación        | 1                                                                                                                                |
-| Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                                                           |
+| Rdn-Att-Id                  | [**Nombre común**](a-cn.md)<br/>                                                                                           |
 | Subclase de                 | [**Arriba**](c-top.md)<br/>                                                                                                  |
 | Posibles superiores          | [**Contenedor**](c-container.md)                                                                                                 |
 | Clases auxiliares           | \-                                                                                                                               |
@@ -69,15 +69,15 @@ Objeto de diccionario para traducir atributos de enrutamiento específicos del p
 
 
 
-## <a name="windows-2000-server-attributes"></a>Windows 2000 Atributos de servidor
+## <a name="windows-2000-server-attributes"></a>Windows atributos de servidor 2000
 
-Esta clase contiene los atributos siguientes para Windows 2000 Server:
+Esta clase contiene los siguientes atributos para Windows 2000 Server:
 
 
 
 | Atributo                                                                 | Mandatory | Derivado de                       |
 |---------------------------------------------------------------------------|-----------|------------------------------------|
-| [**Admin-Description**](a-admindescription.md)                           | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Descripción del administrador**](a-admindescription.md)                           | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Admin-Display-Name**](a-admindisplayname.md)                          | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Atributos permitidos**](a-allowedattributes.md)                         | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)      | Falso     | [**Arriba**](c-top.md)<br/>    |
@@ -85,8 +85,8 @@ Esta clase contiene los atributos siguientes para Windows 2000 Server:
 | [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md) | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)             | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Canonical-Name**](a-canonicalname.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Common-Name**](a-cn.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Create-Time-Stamp**](a-createtimestamp.md)                            | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Nombre común**](a-cn.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Crear marca de tiempo**](a-createtimestamp.md)                            | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Descripción**](a-description.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Nombre para mostrar**](a-displayname.md)                                     | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Display-Name-Printable**](a-displaynameprintable.md)                  | Falso     | [**Arriba**](c-top.md)<br/>    |
@@ -160,7 +160,7 @@ Esta clase contiene los atributos siguientes para Windows 2000 Server:
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | System-Only                 | Falso                                                                                                                            |
 | Object-Category             | 1                                                                                                                                |
@@ -179,13 +179,13 @@ Esta clase contiene los atributos siguientes para Windows 2000 Server:
 
 ## <a name="windows-server-2003-attributes"></a>Windows Atributos de Server 2003
 
-Esta clase contiene los atributos siguientes para Windows Server 2003:
+Esta clase contiene los siguientes atributos para Windows Server 2003:
 
 
 
 | Atributo                                                                   | Mandatory | Derivado de                       |
 |-----------------------------------------------------------------------------|-----------|------------------------------------|
-| [**Admin-Description**](a-admindescription.md)                             | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Descripción del administrador**](a-admindescription.md)                             | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Admin-Display-Name**](a-admindisplayname.md)                            | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Atributos permitidos**](a-allowedattributes.md)                           | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)        | Falso     | [**Arriba**](c-top.md)<br/>    |
@@ -194,10 +194,10 @@ Esta clase contiene los atributos siguientes para Windows Server 2003:
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)               | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Canonical-Name**](a-canonicalname.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Common-Name**](a-cn.md)                                                 | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Create-Time-Stamp**](a-createtimestamp.md)                              | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Marca de tiempo de creación**](a-createtimestamp.md)                              | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Descripción**](a-description.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Nombre para mostrar**](a-displayname.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Display-Name-Printable**](a-displaynameprintable.md)                    | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Nombre para mostrar imprimible**](a-displaynameprintable.md)                    | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Firma DSA**](a-dsasignature.md)                                     | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                 | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Nombre de extensión**](a-extensionname.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>    |
@@ -214,7 +214,7 @@ Esta clase contiene los atributos siguientes para Windows Server 2003:
 | [**Último elemento primario conocido**](a-lastknownparent.md)                              | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Objetos administrados**](a-managedobjects.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Mastered-By**](a-masteredby.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Modify-Time-Stamp**](a-modifytimestamp.md)                              | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Modificación de marca de tiempo**](a-modifytimestamp.md)                              | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**ms-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                 | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**ms-COM-UserLink**](a-mscom-userlink.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**ms-DS-Approx-Immed-Subordinates**](a-msds-approx-immed-subordinates.md) | Falso     | [**Arriba**](c-top.md)<br/>    |
@@ -243,12 +243,12 @@ Esta clase contiene los atributos siguientes para Windows Server 2003:
 | [**Object-Class**](a-objectclass.md)                                       | Verdadero      | [**Arriba**](c-top.md)<br/>    |
 | [**Guid de objeto**](a-objectguid.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Object-Version**](a-objectversion.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                 | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Otros objetos well-known-objects**](a-otherwellknownobjects.md)                 | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)   | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                      | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Posibles inferiores**](a-possibleinferiors.md)                           | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                          | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Direcciones proxy**](a-proxyaddresses.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Direcciones de proxy**](a-proxyaddresses.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Rdn**](a-name.md)                                                       | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                   | Falso     | [**Arriba**](c-top.md)<br/>    |
@@ -259,7 +259,7 @@ Esta clase contiene los atributos siguientes para Windows Server 2003:
 | [**Revisión**](a-revision.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                          | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                          | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)              | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Mostrar solo en vista avanzada**](a-showinadvancedviewonly.md)              | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Site-Object-BL**](a-siteobjectbl.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Structural-Object-Class**](a-structuralobjectclass.md)                  | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Sub refs**](a-subrefs.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>    |
@@ -286,14 +286,14 @@ Esta clase contiene los atributos siguientes para Windows Server 2003:
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | System-Only                 | Falso                                                                                                                            |
 | Object-Category             | 1                                                                                                                                |
 | Default-Object-Category     | \-                                                                                                                               |
 | Governs-Id                  | 1.2.840.113556.1.5.156                                                                                                           |
 | Valor predeterminado de ocultación        | 1                                                                                                                                |
-| Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                                                           |
+| Rdn-Att-Id                  | [**Nombre común**](a-cn.md)<br/>                                                                                           |
 | Subclase de                 | [**Arriba**](c-top.md)<br/>                                                                                                  |
 | Posibles superiores          | [**Contenedor**](c-container.md)                                                                                                 |
 | Clases auxiliares           | \-                                                                                                                               |
@@ -305,13 +305,13 @@ Esta clase contiene los atributos siguientes para Windows Server 2003:
 
 ## <a name="windows-server-2003-r2-attributes"></a>Windows Atributos de Server 2003 R2
 
-Esta clase contiene los siguientes atributos para Windows Server 2003 R2:
+Esta clase contiene los atributos siguientes para Windows Server 2003 R2:
 
 
 
 | Atributo                                                                   | Mandatory | Derivado de                       |
 |-----------------------------------------------------------------------------|-----------|------------------------------------|
-| [**Descripción del administrador**](a-admindescription.md)                             | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Admin-Description**](a-admindescription.md)                             | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Admin-Display-Name**](a-admindisplayname.md)                            | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Atributos permitidos**](a-allowedattributes.md)                           | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)        | Falso     | [**Arriba**](c-top.md)<br/>    |
@@ -320,10 +320,10 @@ Esta clase contiene los siguientes atributos para Windows Server 2003 R2:
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)               | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Canonical-Name**](a-canonicalname.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Common-Name**](a-cn.md)                                                 | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Marca de tiempo de creación**](a-createtimestamp.md)                              | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Create-Time-Stamp**](a-createtimestamp.md)                              | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Descripción**](a-description.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Nombre para mostrar**](a-displayname.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Nombre para mostrar imprimible**](a-displaynameprintable.md)                    | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Display-Name-Printable**](a-displaynameprintable.md)                    | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Firma DSA**](a-dsasignature.md)                                     | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                 | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Nombre de extensión**](a-extensionname.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>    |
@@ -377,7 +377,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2003 R2:
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                      | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Posibles inferiores**](a-possibleinferiors.md)                           | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                          | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Direcciones proxy**](a-proxyaddresses.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Direcciones de proxy**](a-proxyaddresses.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Rdn**](a-name.md)                                                       | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                   | Falso     | [**Arriba**](c-top.md)<br/>    |
@@ -388,23 +388,23 @@ Esta clase contiene los siguientes atributos para Windows Server 2003 R2:
 | [**Revisión**](a-revision.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                          | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                          | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)              | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Mostrar solo en vista avanzada**](a-showinadvancedviewonly.md)              | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Site-Object-BL**](a-siteobjectbl.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Structural-Object-Class**](a-structuralobjectclass.md)                  | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Sub refs**](a-subrefs.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                            | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Marcas del sistema**](a-systemflags.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**USN cambiado**](a-usnchanged.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Creado por USN**](a-usncreated.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**UsN creado**](a-usncreated.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                  | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**USN-Intersite**](a-usnintersite.md)                                     | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**USN-Source**](a-usnsource.md)                                           | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Wbem-Path**](a-wbempath.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Objetos conocidos**](a-wellknownobjects.md)                            | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Well-Known-Objects**](a-wellknownobjects.md)                            | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Cuándo se ha cambiado**](a-whenchanged.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Cuando se crea**](a-whencreated.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**WWW-Página principal**](a-wwwhomepage.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**WWW-Page-Other**](a-url.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>    |
 
 
@@ -517,7 +517,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2008:
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                         | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Posibles inferiores**](a-possibleinferiors.md)                              | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                             | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Direcciones proxy**](a-proxyaddresses.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Direcciones de proxy**](a-proxyaddresses.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                     | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Rdn**](a-name.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                      | Falso     | [**Arriba**](c-top.md)<br/>    |
@@ -535,16 +535,16 @@ Esta clase contiene los siguientes atributos para Windows Server 2008:
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                               | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Marcas del sistema**](a-systemflags.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**USN cambiado**](a-usnchanged.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**UsN creado**](a-usncreated.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Creado por USN**](a-usncreated.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                     | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**USN-Intersite**](a-usnintersite.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**USN-Source**](a-usnsource.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Wbem-Path**](a-wbempath.md)                                                | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Well-Known-Objects**](a-wellknownobjects.md)                               | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Objetos conocidos**](a-wellknownobjects.md)                               | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Cuándo se ha cambiado**](a-whenchanged.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Cuando se crea**](a-whencreated.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**WWW-Página principal**](a-wwwhomepage.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**WWW-Page-Other**](a-url.md)                                                | Falso     | [**Arriba**](c-top.md)<br/>    |
 
 
@@ -555,14 +555,14 @@ Esta clase contiene los siguientes atributos para Windows Server 2008:
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-----------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | System-Only                 | Falso                                                                                                                            |
 | Object-Category             | 1                                                                                                                                |
 | Default-Object-Category     | \-                                                                                                                               |
 | Governs-Id                  | 1.2.840.113556.1.5.156                                                                                                           |
 | Valor predeterminado de ocultación        | 1                                                                                                                                |
-| Rdn-Att-Id                  | [**Nombre común**](a-cn.md)<br/>                                                                                           |
+| Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                                                           |
 | Subclase de                 | [**Arriba**](c-top.md)<br/>                                                                                                  |
 | Posibles superiores          | [**Contenedor**](c-container.md)                                                                                                 |
 | Clases auxiliares           | \-                                                                                                                               |
@@ -574,13 +574,13 @@ Esta clase contiene los siguientes atributos para Windows Server 2008:
 
 ## <a name="windows-server-2008-r2-attributes"></a>Windows Atributos de Server 2008 R2
 
-Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
+Esta clase contiene los atributos siguientes para Windows Server 2008 R2:
 
 
 
 | Atributo                                                                        | Mandatory | Derivado de                       |
 |----------------------------------------------------------------------------------|-----------|------------------------------------|
-| [**Descripción del administrador**](a-admindescription.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Admin-Description**](a-admindescription.md)                                  | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Admin-Display-Name**](a-admindisplayname.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Atributos permitidos**](a-allowedattributes.md)                                | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)             | Falso     | [**Arriba**](c-top.md)<br/>    |
@@ -588,11 +588,11 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 | [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)        | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                    | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Canonical-Name**](a-canonicalname.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Common-Name**](a-cn.md)                                                      | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Marca de tiempo de creación**](a-createtimestamp.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Nombre común**](a-cn.md)                                                      | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Crear marca de tiempo**](a-createtimestamp.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Descripción**](a-description.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Nombre para mostrar**](a-displayname.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Nombre para mostrar imprimible**](a-displaynameprintable.md)                         | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Display-Name-Printable**](a-displaynameprintable.md)                         | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Firma DSA**](a-dsasignature.md)                                          | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                      | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Nombre de extensión**](a-extensionname.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>    |
@@ -659,7 +659,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 | [**Object-Class**](a-objectclass.md)                                            | Verdadero      | [**Arriba**](c-top.md)<br/>    |
 | [**Guid de objeto**](a-objectguid.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Object-Version**](a-objectversion.md)                                        | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Otros objetos well-known-objects**](a-otherwellknownobjects.md)                      | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Otros objetos conocidos**](a-otherwellknownobjects.md)                      | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)        | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                           | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Posibles inferiores**](a-possibleinferiors.md)                                | Falso     | [**Arriba**](c-top.md)<br/>    |
@@ -675,7 +675,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 | [**Revisión**](a-revision.md)                                                   | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**SD-Rights-Effective**](a-sdrightseffective.md)                               | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Server-Reference-BL**](a-serverreferencebl.md)                               | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Mostrar solo en vista avanzada**](a-showinadvancedviewonly.md)                   | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Show-In-Advanced-View-Only**](a-showinadvancedviewonly.md)                   | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Site-Object-BL**](a-siteobjectbl.md)                                         | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Structural-Object-Class**](a-structuralobjectclass.md)                       | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Sub refs**](a-subrefs.md)                                                    | Falso     | [**Arriba**](c-top.md)<br/>    |
@@ -688,10 +688,10 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                      | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**USN-Source**](a-usnsource.md)                                                | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Wbem-Path**](a-wbempath.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Objetos conocidos**](a-wellknownobjects.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Well-Known-Objects**](a-wellknownobjects.md)                                 | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Cuándo se ha cambiado**](a-whenchanged.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Cuando se crea**](a-whencreated.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**WWW-Página principal**](a-wwwhomepage.md)                                           | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**PÁGINA PRINCIPAL DE WWW**](a-wwwhomepage.md)                                           | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**WWW-Page-Other**](a-url.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>    |
 
 
@@ -709,7 +709,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2008 R2:
 | Default-Object-Category     | \-                                                                                                                               |
 | Governs-Id                  | 1.2.840.113556.1.5.156                                                                                                           |
 | Valor predeterminado de ocultación        | 1                                                                                                                                |
-| Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                                                           |
+| Rdn-Att-Id                  | [**Nombre común**](a-cn.md)<br/>                                                                                           |
 | Subclase de                 | [**Arriba**](c-top.md)<br/>                                                                                                  |
 | Posibles superiores          | [**Contenedor**](c-container.md)                                                                                                 |
 | Clases auxiliares           | \-                                                                                                                               |
@@ -727,7 +727,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2012:
 
 | Atributo                                                                                    | Mandatory | Derivado de                       |
 |----------------------------------------------------------------------------------------------|-----------|------------------------------------|
-| [**Admin-Description**](a-admindescription.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Descripción del administrador**](a-admindescription.md)                                              | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Admin-Display-Name**](a-admindisplayname.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Atributos permitidos**](a-allowedattributes.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)                         | Falso     | [**Arriba**](c-top.md)<br/>    |
@@ -735,8 +735,8 @@ Esta clase contiene los siguientes atributos para Windows Server 2012:
 | [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)                    | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                                | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Canonical-Name**](a-canonicalname.md)                                                    | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Common-Name**](a-cn.md)                                                                  | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Create-Time-Stamp**](a-createtimestamp.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Nombre común**](a-cn.md)                                                                  | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Crear marca de tiempo**](a-createtimestamp.md)                                               | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Descripción**](a-description.md)                                                         | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Nombre para mostrar**](a-displayname.md)                                                        | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Display-Name-Printable**](a-displaynameprintable.md)                                     | Falso     | [**Arriba**](c-top.md)<br/>    |
@@ -817,7 +817,7 @@ Esta clase contiene los siguientes atributos para Windows Server 2012:
 | [**Partial-Attribute-Set**](a-partialattributeset.md)                                       | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Posibles inferiores**](a-possibleinferiors.md)                                            | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Proxied-Object-Name**](a-proxiedobjectname.md)                                           | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Direcciones de proxy**](a-proxyaddresses.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Direcciones proxy**](a-proxyaddresses.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Query-Policy-BL**](a-querypolicybl.md)                                                   | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Rdn**](a-name.md)                                                                        | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Repl-Property-Meta-Data**](a-replpropertymetadata.md)                                    | Falso     | [**Arriba**](c-top.md)<br/>    |
@@ -835,13 +835,13 @@ Esta clase contiene los siguientes atributos para Windows Server 2012:
 | [**SubSchemaSubEntry**](a-subschemasubentry.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Marcas del sistema**](a-systemflags.md)                                                        | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**USN cambiado**](a-usnchanged.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**UsN creado**](a-usncreated.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Creado por USN**](a-usncreated.md)                                                          | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**USN-DSA-Last-Obj-Removed**](a-usndsalastobjremoved.md)                                   | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**USN-Intersite**](a-usnintersite.md)                                                      | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**USN-Last-Obj-Rem**](a-usnlastobjrem.md)                                                  | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**USN-Source**](a-usnsource.md)                                                            | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Wbem-Path**](a-wbempath.md)                                                              | Falso     | [**Arriba**](c-top.md)<br/>    |
-| [**Well-Known-Objects**](a-wellknownobjects.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>    |
+| [**Objetos conocidos**](a-wellknownobjects.md)                                             | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Cuándo se ha cambiado**](a-whenchanged.md)                                                        | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**Cuando se crea**](a-whencreated.md)                                                        | Falso     | [**Arriba**](c-top.md)<br/>    |
 | [**WWW-Página principal**](a-wwwhomepage.md)                                                       | Falso     | [**Arriba**](c-top.md)<br/>    |

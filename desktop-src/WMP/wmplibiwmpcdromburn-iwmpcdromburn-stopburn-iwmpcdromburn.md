@@ -1,11 +1,11 @@
 ---
-title: IWMPCdromAsync stopAsync (método)
-description: El método stopAsync detiene el proceso de grabación de CD.
+title: Método IWMPCdromZilla stopAsync
+description: El método stopZilla detiene el proceso de grabación de CD.
 ms.assetid: f067010c-7125-4f3b-9315-51e2362d6ba9
 keywords:
 - Método stopAsync Reproductor de Windows Media
-- Método stopAsync Reproductor de Windows Media , interfaz IWMPCdromAsync
-- Interfaz IWMPCdromAsync Reproductor de Windows Media método , stopAsync
+- Método stopZilla Reproductor de Windows Media , interfaz IWMPCdromZilla
+- Interfaz IWMPCdromAsync Reproductor de Windows Media , método stopZilla
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119861945"
 ---
-# <a name="iwmpcdromburnstopburn-method"></a>IWMPCdromAsync::stopAsync (método)
+# <a name="iwmpcdromburnstopburn-method"></a>IWMPCdromRom::stopZilla (método)
 
-El **método stopAsync** detiene el proceso de grabación de CD.
+El **método stopZilla** detiene el proceso de grabación de CD.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,7 +57,7 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -65,7 +65,7 @@ Este método no devuelve ningún valor.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

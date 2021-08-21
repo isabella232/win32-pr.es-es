@@ -1,19 +1,19 @@
 ---
-description: Define un valor FLOAT de efecto heredado. Esta plantilla se ha reemplazado por la plantilla EffectParamFloats.
+description: Define un efecto heredado FLOAT. Esta plantilla se ha reemplazado por la plantilla EffectParamFloats.
 ms.assetid: f3d66e23-5c55-478f-921d-3a5bdcfb8679
 title: EffectFloats
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b60c59605a6a45d94fa6a005adf0cbe348ada759
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: c7a847cde48a126e86db47d1df0f9b4e635292862baa5d60b7fa9326703aa21f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103997897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951895"
 ---
 # <a name="effectfloats"></a>EffectFloats
 
-Define un valor FLOAT de efecto heredado. Esta plantilla se ha reemplazado por la plantilla [**EffectParamFloats**](effectparamfloats.md) .
+Define un efecto heredado FLOAT. Esta plantilla se ha reemplazado por la [**plantilla EffectParamFloats.**](effectparamfloats.md)
 
 ``` syntax
 template EffectFloats
@@ -27,7 +27,7 @@ template EffectFloats
 Donde:
 
 -   nFloats: número de flotantes.
--   Flota \[ nFloats \] -matriz de valores float.
+-   Floats \[ nFloats: \] matriz de valores float.
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,7 +1,7 @@
 ---
-description: Se llama al método OnWaitEnd cuando el filtro se realiza en espera de un tiempo de presentación de un ejemplo.
+description: Se llama al método OnWaitEnd cuando se realiza el filtro a la espera del tiempo de presentación de una muestra.
 ms.assetid: 47ff8f79-da69-4dcf-8cbb-02c1b56e382e
-title: Método CBaseRenderer. OnWaitEnd (Renbase. h)
+title: Método CBaseRenderer.OnWaitEnd (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a5a290ad5d39fc83a4213d1c8a32119b4caa9858
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 451f475f8830e1b6e2c51f3e0fc571f86f520030fe8ec3dad6acf3d9d5e5c6fb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119537445"
 ---
-# <a name="cbaserendereronwaitend-method"></a>CBaseRenderer. OnWaitEnd, método
+# <a name="cbaserendereronwaitend-method"></a>Método CBaseRenderer.OnWaitEnd
 
-`OnWaitEnd`Se llama al método cuando el filtro se realiza en espera de un tiempo de presentación de un ejemplo.
+Se `OnWaitEnd` llama al método cuando se realiza el filtro esperando el tiempo de presentación de una muestra.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,11 +44,11 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**CBaseRenderer:: WaitForRenderTime**](cbaserenderer-waitforrendertime.md) llama a este método cuando ha terminado de esperar el tiempo de presentación de un ejemplo. Este método no hace nada en la clase base, pero la clase derivada puede invalidarlo.
+El [**método CBaseRenderer::WaitForRenderTime**](cbaserenderer-waitforrendertime.md) llama a este método cuando ha terminado de esperar el tiempo de presentación de un ejemplo. Este método no hace nada en la clase base, pero la clase derivada puede invalidarla.
 
-Si está implementando el control de calidad, puede invalidar este método junto con el método [**CBaseRenderer:: OnWaitStart**](cbaserenderer-onwaitstart.md) . Puede utilizar estos métodos para realizar el seguimiento del rendimiento del filtro.
+Si va a implementar el control de calidad, puede invalidar este método junto con el [**método CBaseRenderer::OnWaitStart.**](cbaserenderer-onwaitstart.md) Puede usar estos métodos para realizar un seguimiento del rendimiento del filtro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,8 +56,8 @@ Si está implementando el control de calidad, puede invalidar este método junto
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Si está implementando el control de calidad, puede invalidar este método junto
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

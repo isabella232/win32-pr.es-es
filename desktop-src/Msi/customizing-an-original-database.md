@@ -27,7 +27,7 @@ Incluya el nuevo archivo de recursos para la lista de teléfonos, Phone.txt, en 
 
  
 
-Use el editor de base de datos para agregar un registro a la [tabla File](file-table.md) MNP2000t.msi para el nuevo archivo.
+Use el editor de base de datos para agregar un registro a la [tabla Archivo](file-table.md) MNP2000t.msi para el nuevo archivo.
 
 [Tabla de archivos](file-table.md)
 
@@ -43,7 +43,7 @@ Use el editor de base de datos para agregar un registro a la [tabla File](file-t
 
 Como se explica en la [sección:](using-transforms-to-add-resources.md)Uso de transformaciones para agregar recursos, la transformación debe agregar uno o varios componentes nuevos a la base de datos de instalación para que contenga la nueva característica de lista de teléfonos. Use el editor de bases de datos para agregar el registro siguiente a la [tabla Component de](component-table.md) MNP2000t.msi.
 
-El Teléfono componente debe identificarse con un GUID de identificador de [componente único.](guid.md) Si va a reproducir el ejemplo, no reutilice el mismo GUID de identificador de componente que en la tabla siguiente. En su lugar, use una utilidad como Guidgen.exe para generar un nuevo GUID. Asegúrese de usar una cadena GUID coherente con el tipo de Windows [guid del](guid.md) instalador.
+El Teléfono componente debe identificarse con un GUID de identificador de [componente único.](guid.md) Si va a reproducir el ejemplo, no reutilice el mismo GUID de identificador de componente que en la tabla siguiente. En su lugar, use una utilidad como Guidgen.exe generar un nuevo GUID. Asegúrese de usar una cadena GUID coherente con el tipo de datos GUID Windows [installer.](guid.md)
 
 [Tabla de componentes](component-table.md)
 
@@ -73,7 +73,7 @@ Use el editor de bases de datos para modificar los datos de la [tabla Caracterí
 | Puerta        |                 | Puerta          | Admisiones de Red Park      | 6       | 0     | NOTEPADDIR  | 0          |
 | Ayuda        | Bloc de notas         | Ayuda          | Archivo de ayuda.                 | 5       | 3     | NOTEPADDIR  | 1          |
 | January     | Puerta            | January       | Admisiones de enero         | 10      | 3     | MONDIR      | 2          |
-| NewYears    | January         | Día de los nuevos años | Admisiones de año nuevo   | 11      | 3     | HOLDIR      | 2          |
+| NewYears    | January         | Día de los años nuevos | Admisiones de año nuevo   | 11      | 3     | HOLDIR      | 2          |
 | Bloc de notas     |                 | Bloc de notas       | Bloc de notas Editor             | 1       | 3     | NOTEPADDIR  | 0          |
 | Léame      | Bloc de notas         | Léame        | Archivo Léame                | 3       | 3     | NOTEPADDIR  | 0          |
 | Deporte       |                 | Eventos deportivos  | Eventos deportivos en Red Park   | 14      | 3     | NOTEPADDIR  | 0          |

@@ -4,13 +4,13 @@ description: Interfaces de complemento DE DSP
 ms.assetid: 4660f928-2e92-468f-9e2b-b411931dfded
 keywords:
 - Reproductor de Windows Media complementos, interfaces DSP
-- Reproductor de Windows Media complementos, interfaces
+- Reproductor de Windows Media complementos,interfaces
 - complementos, interfaces DSP
 - complementos, interfaces
 - complementos de procesamiento de señales digitales, interfaces
 - complementos de procesamiento de señales digitales, interfaz ISpecifyPropertyPage
 - Complementos de DSP, interfaces
-- Complementos de DSP, interfaz ISpecifyPropertyPage
+- Complementos DE DSP, interfaz ISpecifyPropertyPage
 - interfaces, complementos DSP
 - ISpecifyPropertyPage
 ms.topic: article
@@ -24,19 +24,19 @@ ms.locfileid: "119863375"
 ---
 # <a name="dsp-plug-in-interfaces"></a>Interfaces de complemento DE DSP
 
-Las interfaces de complemento de procesamiento de señales digitales (DSP) se usan para administrar la transferencia de datos entre Reproductor de Windows Media y el complemento. Todos los complementos de DSP pueden implementar opcionalmente la **interfaz ISpecifyPropertyPage** para proporcionar una implementación de página de propiedades.
+Las interfaces de complemento de procesamiento de señal digital (DSP) se usan para administrar la transferencia de datos entre Reproductor de Windows Media y el complemento. Todos los complementos de DSP pueden implementar opcionalmente la **interfaz ISpecifyPropertyPage** para proporcionar una implementación de página de propiedades.
 
-Las siguientes interfaces son necesarias para crear complementos DE DSP.
+Las interfaces siguientes son necesarias para crear complementos DSP.
 
 
 
 | Interfaz                                                | Descripción                                                                                                                                            |
 |----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **IMediaObject**                                         | Administra el intercambio de datos con Reproductor de Windows Media y realiza tareas de procesamiento de señales digitales. Se incluye documentación detallada con el SDK de DirectX. |
+| **IMediaObject**                                         | Administra el intercambio de datos con Reproductor de Windows Media realiza tareas de procesamiento de señales digitales. La documentación detallada se incluye con el SDK de DirectX. |
 | [IWMPMediaPluginRegistrar](/previous-versions/windows/desktop/api/wmpservices/nn-wmpservices-iwmpmediapluginregistrar) | Administra el registro del complemento.                                                                                                                          |
 | [IWMPPlugin](/previous-versions/windows/desktop/api/wmpservices/nn-wmpservices-iwmpplugin)                             | Administra la conexión a Reproductor de Windows Media.                                                                                                        |
 | [IWMPPluginEnable](/previous-versions/windows/desktop/api/wmpservices/nn-wmpservices-iwmppluginenable)                 | Almacena si el complemento está habilitado actualmente por Reproductor de Windows Media.                                                                               |
-| [IWMPServices](/previous-versions/windows/desktop/api/wmpservices/nn-wmpservices-iwmpservices)                         | Recupera información del reproductor sobre el tiempo de secuencia actual y el estado de la secuencia.                                                                  |
+| [IWMPServices](/previous-versions/windows/desktop/api/wmpservices/nn-wmpservices-iwmpservices)                         | Recupera información del reproductor sobre el tiempo de transmisión actual y el estado de la secuencia.                                                                  |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Crea un objeto de malla con un código de formato de vértice flexible (FVF).
+description: Crea un objeto de malla mediante un código de formato de vértice flexible (FVF).
 ms.assetid: 4681f181-8a16-42d4-bbfa-bdee5ed69fd3
-title: Función D3DXCreateMeshFVF (D3DX9Mesh. h)
+title: Función D3DXCreateMeshFVF (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e9d5589b0f02bfcb85f9c0f0dc4dc5de69e2fb23
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: db168b710d0454c30ccd3dc19252b455ae22178cb70bba84972b8f904a411109
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857115"
 ---
-# <a name="d3dxcreatemeshfvf-function"></a>D3DXCreateMeshFVF función)
+# <a name="d3dxcreatemeshfvf-function"></a>Función D3DXCreateMeshFVF
 
-Crea un objeto de malla con un código de formato de vértice flexible (FVF).
+Crea un objeto de malla mediante un código de formato de vértice flexible (FVF).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,16 +45,16 @@ HRESULT D3DXCreateMeshFVF(
 
 <dl> <dt>
 
-*NumFaces* \[ de\]
+*NumFaces* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número de caras de la malla. El intervalo válido para este número es mayor que 0 y uno menos que el valor DWORD máximo, normalmente 2 ³ ²-1, porque el último índice está reservado.
+Número de caras para la malla. El intervalo válido para este número es mayor que 0 y uno menor que el valor DWORD máximo, normalmente de 2 al 1, porque el último índice está reservado.
 
 </dd> <dt>
 
-*NumVertices* \[ de\]
+*NumVertices* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -63,39 +63,39 @@ Número de vértices de la malla. Este parámetro debe ser mayor que 0.
 
 </dd> <dt>
 
-*Opciones* \[ de de\]
+*Opciones* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinación de una o varias marcas de la enumeración [**D3DXMESH**](./d3dxmesh.md) , especificando las opciones de creación para la malla.
+Combinación de una o varias marcas de la [**enumeración D3DXMESH,**](./d3dxmesh.md) especificando las opciones de creación para la malla.
 
 </dd> <dt>
 
-*FVF* \[ de\]
+*FVF* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinación de [D3DFVF](d3dfvf.md) que describe el formato de vértice de la malla devuelta. Esta función no es compatible con D3DFVF \_ XYZRHW.
+Combinación de [D3DFVF](d3dfvf.md) que describe el formato de vértice de la malla devuelta. Esta función no admite D3DFVF \_ XYZRHW.
 
 </dd> <dt>
 
-*pD3DDevice* \[ de\]
+*pD3DDevice* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Puntero a una interfaz [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , el objeto de dispositivo que se va a asociar a la malla.
+Puntero a una [**interfaz IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) el objeto de dispositivo que se va a asociar a la malla.
 
 </dd> <dt>
 
-*ppMesh* \[ enuncia\]
+*ppMesh* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)\***
 
-Dirección de un puntero a una interfaz [**ID3DXMesh**](id3dxmesh.md) que representa el objeto de malla creado.
+Dirección de un puntero a una [**interfaz ID3DXMesh,**](id3dxmesh.md) que representa el objeto de malla creado.
 
 </dd> </dl>
 
@@ -103,7 +103,7 @@ Dirección de un puntero a una interfaz [**ID3DXMesh**](id3dxmesh.md) que repres
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,8 +111,8 @@ Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

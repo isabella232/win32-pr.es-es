@@ -1,7 +1,7 @@
 ---
-description: Propiedades de la muestra más reciente.
+description: Propiedades del ejemplo más reciente.
 ms.assetid: bd83790c-72b2-4ed3-9f83-ce4f08d40833
-title: 'Miembro CBaseInputPin:: m_SampleProps (Amfilter. h)'
+title: Miembro CBaseInputPin::m_SampleProps (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 871f2d159c9b0e284de5d716206fc5d79bb3e15a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 099a7c40dcdf96b938c99724c7fab28c80768fd24224c65db04074f60b210899
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076615"
 ---
-# <a name="cbaseinputpinm_sampleprops-member"></a>Miembro SampleProps CBaseInputPin:: m \_
+# <a name="cbaseinputpinm_sampleprops-member"></a>Miembro CBaseInputPin::m \_ SampleProps
 
-Propiedades de la muestra más reciente.
+Propiedades del ejemplo más reciente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ AM_SAMPLE2_PROPERTIES m_SampleProps;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ AM_SAMPLE2_PROPERTIES m_SampleProps;
 
 <dl> <dt>
 
-[**Clase CBaseInputPin**](cbaseinputpin.md)
+[**CBaseInputPin (clase)**](cbaseinputpin.md)
 </dt> </dl>
 
  

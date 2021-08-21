@@ -4,7 +4,7 @@ description: Nota En esta sección se describe la funcionalidad diseñada para s
 ms.assetid: 3947a99d-5853-432d-a47b-7b19adebc3a5
 keywords:
 - Borrar método Reproductor de Windows Media
-- Clear method Reproductor de Windows Media , DownloadCollection (Clase)
+- Clear method Reproductor de Windows Media , DownloadCollection (clase)
 - DownloadCollection class Reproductor de Windows Media , Clear (método)
 topic_type:
 - apiref
@@ -53,14 +53,14 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/>                                  |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

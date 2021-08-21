@@ -23,9 +23,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120076185"
 ---
-# <a name="ctransinplaceoutputpinconnectedimeminputpin-method"></a>Método CTransInPlaceOutputPin.ConnectedIMemInputPin
+# <a name="ctransinplaceoutputpinconnectedimeminputpin-method"></a>CTransInPlaceOutputPin.ConnectedIMemInputPin (método)
 
-El `ConnectedIMemInputPin` método recupera un puntero al pin de entrada de bajada. Este método devuelve la variable [**miembro CBaseOutputPin::m \_ pInputPin.**](cbaseoutputpin-m-pinputpin.md)
+El `ConnectedIMemInputPin` método recupera un puntero a la patilla de entrada de nivel inferior. Este método devuelve la variable [**miembro CBaseOutputPin::m \_ pInputPin.**](cbaseoutputpin-m-pinputpin.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +55,7 @@ Devuelve un puntero a la [**interfaz IMemInputPin**](/windows/desktop/api/Strmif
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

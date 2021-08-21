@@ -116,7 +116,7 @@
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getattributes
                 - name: GetCacheTime (método)
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getcachetime
-                - name: Método GetDiagnosticsInfo
+                - name: GetDiagnosticsInfo (método)
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getdiagnosticsinfo
                 - name: GetDownStreamHypotheses (método)
                   href: /windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-getdownstreamhypotheses

@@ -1,23 +1,23 @@
 ---
-title: DEQ (SM5-ASM)
-description: Comparación de igualdad de doble precisión de componentes.
+title: deq (sm5 - asm)
+description: Comparación de igualdad de precisión doble por componentes.
 ms.assetid: 99806989-D3A0-43F4-832A-5F1BD9C59A11
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f0ed263deec975815f29050d2de0a877a312258c
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 5781c0b7d757e8bf72b81da54a4d6a8fe7467a40fa2509abdf093e27eb119ddc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104532872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119950555"
 ---
-# <a name="deq-sm5---asm"></a>DEQ (SM5-ASM)
+# <a name="deq-sm5---asm"></a>deq (sm5 - asm)
 
-Comparación de igualdad de doble precisión de componentes.
+Comparación de igualdad de precisión doble por componentes.
 
 
 
-| DEQ \[ \_ SAT \] dest \[ . Mask \] , \[ - \] src0 \[ \_ ABS \] \[ . swizzle \] , \[ - \] SRC1 \[ \_ ABS \] \[ . swizzle\] |
+| deq \[ \_ sat \] dest \[ .mask \] , \[ - \] src0 \[ \_ abs \] \[ .swzzle \] , \[ - \] src1 abs \[ \_ \] \[ .swzzle\] |
 |--------------------------------------------------------------------------------------------|
 
 
@@ -28,34 +28,34 @@ Comparación de igualdad de doble precisión de componentes.
 
 | Elemento                                                            | Descripción                                                    |
 |-----------------------------------------------------------------|----------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[en \] la dirección de los resultados de la operación.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] los componentes que se van a comparar con *SRC1*.<br/>         |
-| <span id="src1"></span><span id="SRC1"></span>*SRC1*<br/> | \[en \] los componentes que se van a comparar con *src0*.<br/>         |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en \] La dirección de los resultados de la operación.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] Componentes que se comparan con *src1.*<br/>         |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[en \] Componentes que se va a comparar con *src0*.<br/>         |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta instrucción realiza la comparación de punto flotante de precisión doble (*src0*  ==  *SRC1*) para cada componente y escribe el resultado en *dest*.
+Esta instrucción realiza la comparación de punto flotante de precisión doble (*src0*  ==  *src1*) para cada componente y escribe el resultado en *dest*.
 
-Si la comparación es true, se devuelve 32-bit 0xFFFFFFFF para ese componente. De lo contrario, se devuelve 32-bit 0x00000000.
+Si la comparación es verdadera, se devuelven 0xFFFFFFFF de 32 bits para ese componente. De lo contrario, se devuelve 0x00000000 de 32 bits.
 
 La comparación con NaN devuelve false.
 
-Las máscaras de *destino* válidas son uno o dos componentes. Es decir:. x,. y,. z,. w,. XY,. XZ,. XW,. YZ,. YW,. ZW el primer componente *dest* de la máscara recibe el resultado de 32 bits para la primera comparación Double. El segundo componente de la máscara, si está presente, recibe el resultado de 32 bits para la segunda comparación Double.
+Las *máscaras dest* válidas son uno o dos componentes. Es decir: .x, .y, .z, .w, .xy, .xz, .xw, .yz, .yw, .zw El primer componente *dest* de la máscara recibe el resultado de 32 bits para la primera comparación doble. El segundo componente de la máscara, si está presente, recibe el resultado de 32 bits para la segunda comparación doble.
 
-El swizzles válido para los parámetros de origen son. xyzw,. xyxy,. zwxy,. zwzw. Las siguientes asignaciones *src* son post-swizzle:
+Los swzzles válidos para los parámetros de origen son .xyzw, .xyxy, .zwxy, .zwzw. Las siguientes *asignaciones de src* son posteriores a swzzle:
 
--   *src0* es un doble vec2 entre (x 32LSB, y 32MSB) y (z 32LSB, w 32MSB).
--   *SRC1* es un doble vec2 entre (x 32LSB, y 32MSB) y (z 32LSB, w 32MSB).
+-   *src0* es un vec2 doble entre (x 32LSB, y 32MSB) y (z 32LSB, w 32MSB).
+-   *src1* es un vec2 doble entre (x 32LSB, y 32MSB) y (z 32LSB, w 32MSB).
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -63,20 +63,20 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Esta instrucción es compatible con los siguientes modelos de sombreador:
+Esta instrucción se admite en los siguientes modelos de sombreador:
 
 
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -86,7 +86,7 @@ Esta instrucción es compatible con los siguientes modelos de sombreador:
 
 <dl> <dt>
 
-[Ensamblador modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Ensamblado del modelo de sombreador 5 (HLSL de DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

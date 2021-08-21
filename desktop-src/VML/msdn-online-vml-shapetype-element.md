@@ -1,51 +1,51 @@
 ---
-title: Elemento TipoForma de VML
-description: Elemento TipoForma de VML
+title: Elemento ShapeType de VML
+description: Elemento ShapeType de VML
 ms.assetid: 4e0288c9-ab0f-4399-982a-97dcf16f4ec4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ebbb35eef0a3c987fe1e6ec35d15701236ae0af1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0632919a141ae04f80b0b6cd6782ea907aa8cfe1d720e599964110c038f3998e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104271270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120099095"
 ---
-# <a name="vml-shapetype-element"></a>Elemento TipoForma de VML
+# <a name="vml-shapetype-element"></a>Elemento ShapeType de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Define una forma que se puede utilizar para crear otras formas.
+Define una forma que se puede usar para crear otras formas.
 
-El atributo siguiente modifica un **TipoForma**.
+El atributo siguiente modifica un **objeto ShapeType.**
 
 
 
 | Atributo                                      | Descripción                                             |
 |------------------------------------------------|---------------------------------------------------------|
-| [Maestra](msdn-online-vml-master-attribute.md) | Determina si **TipoForma** es un elemento principal. |
+| [Maestro](msdn-online-vml-master-attribute.md) | Determina si un **objeto ShapeType** es un elemento maestro. |
 
 
 
- 
+ 
 
 **Comentarios:**
 
-**TipoForma** es idéntico al elemento **Shape** , pero no puede hacer referencia a otro elemento **TipoForma** .
+**ShapeType** es idéntico al elemento **Shape,** salvo que no puede hacer referencia a otro **elemento ShapeType.**
 
-Cuando un elemento de **forma** hace referencia a un **TipoForma**, la **forma** puede duplicar algunas de las propiedades que ya se han especificado en el **TipoForma**. En estos casos, los atributos de la **forma** invalidan los del **TipoForma**.
+Cuando un **elemento Shape** hace referencia a **un shapeType**, **la forma** puede duplicar algunas de las propiedades que ya se han especificado en **shapeType**. En estos casos, los atributos de **shape** invalidan los de **ShapeType**.
 
-El atributo de **tipo** no se puede usar con **TipoForma**.
+El **atributo Type** no se puede usar con **ShapeType.**
 
-Los atributos de colocación de CSS (como **Top**, **left**, etc.) no se pasan a una **forma** de **TipoForma**.
+Los atributos de posicionamiento CSS (como **Top,** **Left,** etc.) no se pasan a **una forma** desde **un shapeType**.
 
-Para usar este elemento, cree un **TipoForma** con un atributo de [identificador](id-attribute--vml.md) específico. A continuación, cree una **forma** y haga referencia al **TipoForma** con el atributo **Type** . Vea el atributo [Type](type-attribute--shape--vml.md) para obtener más información.
+Para usar este elemento, cree un **shapeType** con un atributo [id.](id-attribute--vml.md) específico. A continuación, **cree una forma** y haga referencia a **ShapeType** con el **atributo Type.** Consulte el [atributo Type](type-attribute--shape--vml.md) para obtener más información.
 
- 
+ 
 
- 
+ 

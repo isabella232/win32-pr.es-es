@@ -1,23 +1,23 @@
 ---
-title: dcl_input vJoinInstanceID (SM5-ASM)
+title: dcl_input vJoinInstanceID (sm5 - asm)
 description: Declare el identificador de instancia en una fase de combinación del sombreador de casco.
 ms.assetid: 2EABB24A-7ED7-460D-A2AD-D2C40DCCB2DC
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bae9351fc7183aa37cd660c265aab803f4661e9
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 499da42f6f0b63c6a5315a16cf0d4f1615fdbd9dc99f224c374189c6f73d185e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103994844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789875"
 ---
-# <a name="dcl_input-vjoininstanceid-sm5---asm"></a>\_vJoinInstanceID de entrada de DCL (SM5-ASM)
+# <a name="dcl_input-vjoininstanceid-sm5---asm"></a>dcl \_ input vJoinInstanceID (sm5 - asm)
 
 Declare el identificador de instancia en una fase de combinación del sombreador de casco.
 
 
 
-| vJoinInstanceID de entrada de DCL \_ |
+| dcl \_ input vJoinInstanceID |
 |----------------------------|
 
 
@@ -28,19 +28,19 @@ Declare el identificador de instancia en una fase de combinación del sombreador
 
 | Elemento                                                                                                                               | Descripción                        |
 |------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
-| <span id="vJoinInstanceID"></span><span id="vjoininstanceid"></span><span id="VJOININSTANCEID"></span>*vJoinInstanceID*<br/> | \[en \] el ID. de instancia.<br/> |
+| <span id="vJoinInstanceID"></span><span id="vjoininstanceid"></span><span id="VJOININSTANCEID"></span>*vJoinInstanceID*<br/> | \[en \] El identificador de instancia.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        | X    |        |          |       |         |
 
@@ -48,20 +48,20 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Esta instrucción es compatible con los siguientes modelos de sombreador:
+Esta instrucción se admite en los siguientes modelos de sombreador:
 
 
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -71,7 +71,7 @@ Esta instrucción es compatible con los siguientes modelos de sombreador:
 
 <dl> <dt>
 
-[Ensamblador modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Ensamblado del modelo de sombreador 5 (HLSL de DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

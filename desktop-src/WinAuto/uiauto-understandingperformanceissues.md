@@ -1,10 +1,10 @@
 ---
 title: Descripción de los problemas de rendimiento
-description: En este tema se describen los problemas de rendimiento asociados con el uso de los patrones de control Text y TextRange.
+description: En este tema se describen los problemas de rendimiento asociados al uso de los patrones de control Text y TextRange.
 ms.assetid: D78BFFA8-E303-441D-9D32-AD22E1B1A249
 keywords:
 - clientes, descripción de problemas de rendimiento
-- clients,controles basados en texto
+- clientes, controles basados en texto
 - clients,text ranges
 - clients,Text control pattern
 - clients,Patrón de control TextRange
@@ -19,12 +19,12 @@ ms.locfileid: "119861225"
 ---
 # <a name="understanding-performance-issues"></a>Descripción de los problemas de rendimiento
 
-En este tema se describen los problemas de rendimiento asociados con el uso de los patrones de control [Text y TextRange.](uiauto-implementingtextandtextrange.md)
+En este tema se describen los problemas de rendimiento asociados al uso de los patrones de control [Text y TextRange.](uiauto-implementingtextandtextrange.md)
 
 
-Las interfaces [**IUIAutomationTextPattern**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtextpattern) e [**IUIAutomationTextRange**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtextrange) se basan en llamadas entre procesos, ya que no proporcionan un mecanismo de almacenamiento en caché para mejorar el rendimiento al recuperar o procesar contenido textual.
+Las interfaces [**IUIAutomationTextPattern**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtextpattern) e [**IUIAutomationTextRange**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtextrange) se basan en llamadas entre procesos: no proporcionan un mecanismo de almacenamiento en caché para mejorar el rendimiento al recuperar o procesar contenido textual.
 
-Una aplicación cliente puede mejorar el rendimiento mediante el método [**IUIAutomationTextRange::GetText**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext) para recuperar bloques de texto de tamaño moderado. Por ejemplo, si se usa **GetText** para recuperar caracteres únicos, se generará un impacto en el rendimiento entre procesos de cada carácter, mientras que si no se especifica una longitud máxima al llamar a **GetText,** se generará un impacto entre procesos, pero puede tener una latencia alta en función del tamaño del intervalo de texto.
+Una aplicación cliente puede mejorar el rendimiento mediante el método [**IUIAutomationTextRange::GetText**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext) para recuperar bloques de texto de tamaño moderado. Por ejemplo, si se usa **GetText** para recuperar caracteres únicos, se generará un impacto en el rendimiento entre procesos para cada carácter, mientras que si no se especifica una longitud máxima al llamar a **GetText,** se generará una llamada entre procesos, pero puede tener una latencia alta en función del tamaño del intervalo de texto.
 
 ## <a name="related-topics"></a>Temas relacionados
 

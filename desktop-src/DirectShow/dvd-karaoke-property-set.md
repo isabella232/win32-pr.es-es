@@ -13,7 +13,7 @@ ms.locfileid: "119016023"
 ---
 # <a name="dvd-karaoke-property-set"></a>Conjunto de propiedades DVD Dvd Dvd
 
-Cuando el [filtro DVD Navigator](dvd-navigator-filter.md) entra en modo de vídeo, informa al descodificador de audio a través de la propiedad **\_ \_ DVDKARAOKE \_ ENABLE de AM PROPERTY.** A continuación, el descodificador debe silenciar los canales de audio del 2 al 5 hasta que reciba desde el navegador de DVD una propiedad DE AM **\_ PROPERTY \_ DVDKARAOKE \_ DATA** con un puntero a una estructura de datos [**\_ DVDKaraokeData**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-am_dvdkaraokedata) de AM que indica cómo se van a mezclar los canales auxiliares.
+Cuando el [filtro DVD Navigator](dvd-navigator-filter.md) entra en modo de vídeo, informa al descodificador de audio a través de la propiedad **\_ \_ DVDKARAOKE \_ ENABLE de AM PROPERTY.** A continuación, el descodificador debe silenciar los canales de audio del 2 al 5 hasta que reciba desde el navegador de DVD una propiedad **\_ \_ DVDKARAOKE \_ DATA** de AM PROPERTY con un puntero a una estructura de datos [**\_ DVDKaraokeData**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-am_dvdkaraokedata) de AM que indica cómo se van a mezclar los canales auxiliares.
 
 
 
@@ -46,7 +46,7 @@ Cuando el [filtro DVD Navigator](dvd-navigator-filter.md) entra en modo de víde
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

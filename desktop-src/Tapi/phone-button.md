@@ -57,7 +57,7 @@ Modo de botón del botón. Este parámetro usa una de las [**constantes PHONEBUT
 *dwParam3* 
 </dt> <dd>
 
-Especifica si se trata de un evento de botón hacia abajo o un evento de botón hacia arriba. Este parámetro usa una de las [**constantes PHONEBUTTONSTATE \_**](phonebuttonstate--constants.md).
+Especifica si se trata de un evento de botón hacia abajo o un evento de botón arriba. Este parámetro usa una de las [**constantes PHONEBUTTONSTATE \_**](phonebuttonstate--constants.md).
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ No de devuelve ningún valor.
 
 ## <a name="remarks"></a>Comentarios
 
-Se envía un mensaje **\_ PHONE BUTTON** cada vez que un botón cambia de estado. Se garantiza que, para cada evento de botón hacia abajo, se envía finalmente un evento de botón hacia arriba correspondiente. Un proveedor de servicios que no pueda detectar el botón real hacia arriba es necesario para generar el mensaje de botón hacia arriba poco después del mensaje de botón hacia abajo para cada pulsación del botón.
+Se **envía un mensaje PHONE \_ BUTTON** cada vez que un botón cambia de estado. Se garantiza que, para cada evento de botón hacia abajo, se envía finalmente un evento de botón hacia arriba correspondiente. Se necesita un proveedor de servicios que no pueda detectar el botón real hacia arriba para generar el mensaje de botón hacia arriba poco después del mensaje de botón hacia abajo para cada pulsación del botón.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ Se envía un mensaje **\_ PHONE BUTTON** cada vez que un botón cambia de estado
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

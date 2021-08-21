@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120073045"
 ---
-# <a name="lineinitializeexoption_-constants"></a>Constantes LINEINITIALIZEEXOPTION \_
+# <a name="lineinitializeexoption_-constants"></a>LINEINITIALIZEEXOPTION \_ (Constantes)
 
 Las **constantes LINEINITIALIZEEXOPTION \_** especifican qué mecanismo de notificación de eventos se va a usar al inicializar una sesión.
 
@@ -22,7 +22,7 @@ Las **constantes LINEINITIALIZEEXOPTION \_** especifican qué mecanismo de notif
 
 
 
-La aplicación desea usar el mecanismo de notificación de eventos de seguimiento del centro de llamadas. Esta constante solo se expone a las aplicaciones que negocian una versión TAPI de 3.0 o superior.
+La aplicación desea usar el mecanismo de notificación de eventos de seguimiento del centro de llamadas. Esta constante solo se expone a las aplicaciones que negocian una versión TAPI de 3.0 o posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -32,7 +32,7 @@ La aplicación desea usar el mecanismo de notificación de eventos de seguimient
 
 
 
-La aplicación desea usar el mecanismo de notificación de eventos puerto de finalización. Esta marca solo se expone a las aplicaciones que negocian una versión TAPI de 2.0 o superior.
+La aplicación desea usar el mecanismo de notificación de eventos puerto de finalización. Esta marca solo se expone a las aplicaciones que negocian una versión tapi de la versión 2.0 o posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -42,7 +42,7 @@ La aplicación desea usar el mecanismo de notificación de eventos puerto de fin
 
 
 
-La aplicación desea usar el mecanismo de notificación de eventos event handle. Esta marca solo se expone a las aplicaciones que negocian una versión TAPI de 2.0 o superior.
+La aplicación desea usar el mecanismo de notificación de eventos event handle. Esta marca solo se expone a las aplicaciones que negocian una versión tapi de la versión 2.0 o posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -52,7 +52,7 @@ La aplicación desea usar el mecanismo de notificación de eventos event handle.
 
 
 
-La aplicación desea usar el mecanismo de notificación de eventos ventana oculta. Esta marca solo se expone a las aplicaciones que negocian una versión TAPI de 2.0 o superior.
+La aplicación desea usar el mecanismo de notificación de eventos de ventana oculta. Esta marca solo se expone a las aplicaciones que negocian una versión tapi de la versión 2.0 o posterior.
 
 
 </dt> </dl> </dd> </dl>

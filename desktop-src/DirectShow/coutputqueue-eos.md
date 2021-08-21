@@ -1,7 +1,7 @@
 ---
-description: El método EOS entrega una llamada de final de secuencia al pin de entrada.
+description: El método EOS entrega una llamada de fin de flujo al pin de entrada.
 ms.assetid: 65e8db14-6ca8-4c4f-8bd8-2442f743499e
-title: Método COutputQueue. EOS (Outputq. h)
+title: Método COutputQueue.EOS (Outputq.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ab05d4ab3f2620c11bd62d566be851e16b28cecd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3effb06498ae65cad8eefd9a3144cab140926006cd38acee45c553c4295b0a58
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119537145"
 ---
-# <a name="coutputqueueeos-method"></a>COutputQueue. EOS, método
+# <a name="coutputqueueeos-method"></a>Método COutputQueue.EOS
 
-El `EOS` método entrega una llamada de final de secuencia al pin de entrada.
+El `EOS` método entrega una llamada de fin de flujo al pin de entrada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,11 +44,11 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el objeto utiliza un subproceso, pone en cola un mensaje de control de paquetes de EOS \_ . El subproceso entrega cualquier ejemplo pendiente y llama al método [**IPin:: EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream) en el PIN de entrada.
+Si el objeto usa un subproceso, pone en cola un mensaje de \_ control EOS PACKET. El subproceso entrega los ejemplos pendientes y llama al método [**IPin::EndOfStream**](/windows/desktop/api/Strmif/nf-strmif-ipin-endofstream) en el pin de entrada.
 
-Si el objeto no utiliza un subproceso, llama al método [**COutputQueue:: SendAnyway**](coutputqueue-sendanyway.md) para proporcionar cualquier ejemplo pendiente. A continuación, llama a **IPin:: EndOfStream** en el PIN de entrada.
+Si el objeto no usa un subproceso, llama al método [**COutputQueue::SendAnyway**](coutputqueue-sendanyway.md) para entregar los ejemplos pendientes. A continuación, **llama a IPin::EndOfStream en** el pin de entrada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,8 +56,8 @@ Si el objeto no utiliza un subproceso, llama al método [**COutputQueue:: SendAn
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Outputq. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Outputq.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Si el objeto no utiliza un subproceso, llama al método [**COutputQueue:: SendAn
 
 <dl> <dt>
 
-[**Clase COutputQueue**](coutputqueue.md)
+[**COutputQueue (clase)**](coutputqueue.md)
 </dt> </dl>
 
  

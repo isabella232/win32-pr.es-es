@@ -1,10 +1,10 @@
 ---
 title: MSMQ-Interval2 atributo
-description: En modo mixto de MSMQ, tiempo de replicación predeterminado entre sitios.
+description: En modo mixto de MSMQ, el tiempo de replicación predeterminado entre sitios.
 ms.assetid: 6b04fbb2-bab2-45f1-81ce-3dcd85de9b8a
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-Interval2 esquema de AD del atributo
+- MSMQ-Interval2 esquema de AD de atributo
 - Esquema de AD del atributo mSMQInterval2
 topic_type:
 - apiref
@@ -23,7 +23,7 @@ ms.locfileid: "119803314"
 ---
 # <a name="msmq-interval2-attribute"></a>MSMQ-Interval2 atributo
 
-En modo mixto de MSMQ, tiempo de replicación predeterminado entre sitios.
+En modo mixto de MSMQ, el tiempo de replicación predeterminado entre sitios.
 
 
 
@@ -32,7 +32,7 @@ En modo mixto de MSMQ, tiempo de replicación predeterminado entre sitios.
 | CN                | MSMQ-Interval2                       |
 | Ldap-Display-Name | mSMQInterval2                        |
 | Size              | \-                                   |
-| Privilegio actualizar  | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1309              |
 | System-Id-Guid    | 99b88f52-3b7b-11d2-90cc-00c04fd91ab1 |
@@ -53,7 +53,7 @@ En modo mixto de MSMQ, tiempo de replicación predeterminado entre sitios.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
@@ -74,7 +74,7 @@ En modo mixto de MSMQ, tiempo de replicación predeterminado entre sitios.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
@@ -95,7 +95,7 @@ En modo mixto de MSMQ, tiempo de replicación predeterminado entre sitios.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
@@ -137,7 +137,7 @@ En modo mixto de MSMQ, tiempo de replicación predeterminado entre sitios.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
@@ -158,7 +158,7 @@ En modo mixto de MSMQ, tiempo de replicación predeterminado entre sitios.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |

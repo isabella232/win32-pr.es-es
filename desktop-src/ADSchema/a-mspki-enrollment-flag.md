@@ -4,7 +4,7 @@ description: Contiene las marcas relacionadas con la inscripción.
 ms.assetid: e854acb1-75f4-4379-b404-8fa096419ee6
 ms.tgt_platform: multiple
 keywords:
-- ms-PKI-Enrollment-Flag attribute AD Schema
+- Esquema de AD del atributo ms-PKI-Enrollment-Flag
 - Esquema de AD del atributo msPKI-Enrollment-Flag
 topic_type:
 - apiref
@@ -32,7 +32,7 @@ Contiene las marcas relacionadas con la inscripción.
 | CN                | ms-PKI-Enrollment-Flag                                                                            |
 | Ldap-Display-Name | msPKI-Enrollment-Flag                                                                             |
 | Size              | 4 bytes                                                                                           |
-| Actualizar privilegios  | Administrador de dominio                                                                              |
+| Privilegio actualizar  | Administrador de dominio                                                                              |
 | Frecuencia de actualización  | Cuando se edita, crea o clona el objeto de plantilla de certificado (ms-PKI-Certificate-Template). |
 | Attribute-Id      | 1.2.840.113556.1.4.1430                                                                           |
 | System-Id-Guid    | d15ef7d8-f226-46db-ae79-b34e560bd12c                                                              |
@@ -52,7 +52,7 @@ Contiene las marcas relacionadas con la inscripción.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
@@ -73,7 +73,7 @@ Contiene las marcas relacionadas con la inscripción.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
@@ -94,7 +94,7 @@ Contiene las marcas relacionadas con la inscripción.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
@@ -136,7 +136,7 @@ Contiene las marcas relacionadas con la inscripción.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |

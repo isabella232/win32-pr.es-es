@@ -81,7 +81,7 @@ El autor de la llamada debe liberar la memoria utilizada por **pPropDesc.** Para
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

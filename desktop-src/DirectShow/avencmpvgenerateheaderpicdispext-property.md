@@ -41,7 +41,7 @@ Si el valor es **VARIANT \_ TRUE,** el codificador genera encabezados de extensi
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

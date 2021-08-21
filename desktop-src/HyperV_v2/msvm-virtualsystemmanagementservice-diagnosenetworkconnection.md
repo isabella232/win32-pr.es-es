@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119681135"
 ---
-# <a name="diagnosenetworkconnection-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método DiagnoseNetworkConnection de la clase Msvm \_ VirtualSystemManagementService
+# <a name="diagnosenetworkconnection-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método DiagnoseNetworkConnection de la clase \_ Msvm VirtualSystemManagementService
 
 Diagnostica la conectividad de red de una máquina virtual en un Windows Network Virtualization Environment.
 
@@ -45,7 +45,7 @@ uint32 DiagnoseNetworkConnection(
 *TargetNetworkAdapter* \[ En\]
 </dt> <dd>
 
-Referencia a un [**Msvm \_ EthernetPortAllocationSettingData**](msvm-ethernetportallocationsettingdata.md) que describe el adaptador de red de destino.
+Referencia a [**Msvm \_ EthernetPortAllocationSettingData**](msvm-ethernetportallocationsettingdata.md) que describe el adaptador de red de destino.
 
 </dd> <dt>
 
@@ -66,13 +66,13 @@ Si se realiza correctamente, devuelve la información de diagnóstico.
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 o 4096 si se ejecuta correctamente; de lo contrario, devuelve un error.
+Devuelve un valor 0 o 4096 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -107,9 +107,9 @@ Devuelve 0 o 4096 si se ejecuta correctamente; de lo contrario, devuelve un erro
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10, versión 1703 \[ solo para aplicaciones de escritorio\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
 | Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
@@ -117,7 +117,7 @@ Devuelve 0 o 4096 si se ejecuta correctamente; de lo contrario, devuelve un erro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

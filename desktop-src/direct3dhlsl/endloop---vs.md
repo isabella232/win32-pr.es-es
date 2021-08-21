@@ -1,6 +1,6 @@
 ---
-title: ENDLOOP-vs
-description: Fin de un bucle... bloque ENDLOOP.
+title: endloop- vs
+description: Final de un bucle... bloque endloop.
 ms.assetid: fd7df120-a927-4a66-b152-6ce5247446e4
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,39 +9,39 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8a9aec4d1b2c5237a87fae2c0beab4e8d995db97
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: cdd9158d12ecc29073526833a7a4ca5eec03100558a9ebdc711822c7ca74c9bc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104419879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119949895"
 ---
-# <a name="endloop---vs"></a>ENDLOOP-vs
+# <a name="endloop---vs"></a>endloop- vs
 
-Fin de un [bucle](loop---vs.md)... bloque ENDLOOP.
+Final de un [bucle](loop---vs.md)... bloque endloop.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| ENDLOOP |
+| endloop |
 |---------|
 
 
 
- 
+ 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| ENDLOOP                |      | x    | x    | x     | x    | x     |
+| endloop                |      | x    | x    | x     | x    | x     |
 
 
 
- 
+ 
 
 Esta instrucción funciona como se muestra aquí.
 
@@ -55,7 +55,7 @@ if (LoopIterationCount > 0)
 
 
 
-ENDLOOP debe seguir la última instrucción de un bloque [Loop-vs](loop---vs.md) .
+endloop debe seguir la última instrucción de un [bucle: vs](loop---vs.md) block.
 
 ## <a name="example"></a>Ejemplo
 
@@ -75,9 +75,9 @@ endloop
 [Instrucciones del sombreador de vértices](dx9-graphics-reference-asm-vs-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

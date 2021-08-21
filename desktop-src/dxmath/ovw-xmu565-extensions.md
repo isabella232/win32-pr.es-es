@@ -1,22 +1,22 @@
 ---
-description: XMU565 describe un vector 4D con componentes x-y z sin signo de 5 bits y un componente y de 6 bits sin signo.
+description: XMU565 describe un vector 4D con componentes x y z sin signo de 5 bits y un componente Y de 6 bits sin signo.
 ms.assetid: c661e018-f8c7-40bf-ab5a-211a3b9300a3
-title: Extensiones de XMU565
+title: Extensiones XMU565
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6125ef46af422e0331929126866cd5473cb88afe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f767af5c023d773cddb2858943cff7f8d5902a7751f5975d234a7c52fd12082
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948805"
 ---
-# <a name="xmu565-extensions"></a>Extensiones de XMU565
+# <a name="xmu565-extensions"></a>Extensiones XMU565
 
-[**XMU565**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmu565) describe un vector 4D con componentes x-y z sin signo de 5 bits y un componente y de 6 bits sin signo.
+[**XMU565**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmu565) describe un vector 4D con componentes x y z sin signo de 5 bits y un componente Y de 6 bits sin signo.
 
 > [!Note]  
-> Las características que se enumeran aquí solo están disponibles cuando se desarrollan con C++.
+> Las características enumeradas aquí solo están disponibles al desarrollar con C++.
 
  
 
