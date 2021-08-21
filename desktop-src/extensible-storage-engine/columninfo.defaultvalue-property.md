@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: ColumnInfo. DefaultValue (propiedad)'
-title: ColumnInfo. DefaultValue (propiedad)
+description: 'Más información sobre: Propiedad ColumnInfo.DefaultValue'
+title: Propiedad ColumnInfo.DefaultValue
 TOCTitle: 'DefaultValue property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.ColumnInfo.DefaultValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columninfo.defaultvalue(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d1e2fdb9a2acc10c24720c7adfdb640e7da7b019
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 74ba20fbeae81dcaaa7c52a14021450348734e3da09dfd337e50ff8ea4a47682
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042413"
 ---
-# <a name="columninfodefaultvalue-property"></a>ColumnInfo. DefaultValue (propiedad)
+# <a name="columninfodefaultvalue-property"></a>Propiedad ColumnInfo.DefaultValue
 
 Obtiene el valor predeterminado de la columna.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -58,14 +58,14 @@ public IList<byte> DefaultValue { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Collections. Generic. IList](/dotnet/api/system.collections.generic.ilist-1)\<[Byte](/dotnet/api/system.byte)\>  
+Tipo: [System.Collections.Generic.IList](/dotnet/api/system.collections.generic.ilist-1)\<[Byte](/dotnet/api/system.byte)\>  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase ColumnInfo](./columninfo-class.md)
+[ColumnInfo (clase)](./columninfo-class.md)
 
-[Miembros de ColumnInfo](./columninfo-members.md)
+[Miembros ColumnInfo](./columninfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

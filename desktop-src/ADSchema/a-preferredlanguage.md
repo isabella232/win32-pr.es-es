@@ -1,10 +1,10 @@
 ---
 title: atributo preferredLanguage
-description: Idioma preferido escrito o hablado de una persona.
+description: Idioma escrito o hablado preferido para una persona.
 ms.assetid: 425f87cf-6281-4841-84eb-dbe5e8dca680
 ms.tgt_platform: multiple
 keywords:
-- preferredLanguage esquema de AD de atributos
+- PreferredLanguage attribute AD Schema (Esquema de AD del atributo preferredLanguage)
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea38cd17aabbfd8660ae27506110eea6cf9e9784
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 48ca95eb1f3370305d9544830001d6ead5d41316959bbb81ad7d1780fa667236
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022423"
 ---
 # <a name="preferredlanguage-attribute"></a>atributo preferredLanguage
 
-Idioma preferido escrito o hablado de una persona.
+Idioma escrito o hablado preferido para una persona.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | preferredLanguage                           |
-| Nombre para mostrar de LDAP | preferredLanguage                           |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | preferredLanguage                           |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 2.16.840.1.113730.3.1.39                    |
-| System-ID-GUID    | 856be0d0-18e7-46e1-8f5f-7ee4d9020e0d        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 856be0d0-18e7-46e1-8f5f-7ee4d9020e0d        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,18 +53,18 @@ Idioma preferido escrito o hablado de una persona.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Tiene un único valor       | True                                                                                  |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                  |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -74,18 +74,18 @@ Idioma preferido escrito o hablado de una persona.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Tiene un único valor       | True                                                                                  |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                  |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -95,18 +95,18 @@ Idioma preferido escrito o hablado de una persona.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Tiene un único valor       | True                                                                                  |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                  |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -116,18 +116,18 @@ Idioma preferido escrito o hablado de una persona.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Tiene un único valor       | True                                                                                  |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                  |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000000                                                                            |
-| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**inetOrgPerson**](c-inetorgperson.md)<br/> [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -137,13 +137,13 @@ Idioma preferido escrito o hablado de una persona.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                    |
+| Id. de vínculo                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
-| System-Only            | False                                                                                 |
-| Tiene un único valor       | True                                                                                  |
-| Está indexado             | False                                                                                 |
-| En el catálogo global      | False                                                                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                          |
+| System-Only            | Falso                                                                                 |
+| Es de un solo valor       | Verdadero                                                                                  |
+| Está indexado             | Falso                                                                                 |
+| En el catálogo global      | Falso                                                                                 |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                          |
 | Range-Lower            | \-                                                                                    |
 | Range-Upper            | \-                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |

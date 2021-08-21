@@ -1,45 +1,45 @@
 ---
-title: Leer metadatos en la reproducción
-description: Leer metadatos en la reproducción
+title: Leer metadatos en reproducción
+description: Leer metadatos en reproducción
 ms.assetid: 48d37a9e-5e22-4298-abc4-b69998906dcb
 keywords:
-- SDK de Windows Media Format, leer metadatos
-- SDK de Windows Media Format, lectores asincrónicos
-- SDK de Windows Media Format, lectores sincrónicos
-- Advanced Systems Format (ASF), leer metadatos
+- Windows SDK de formato multimedia, leer metadatos
+- Windows SDK de formato multimedia, lectores asincrónicos
+- Windows SDK de formato multimedia, lectores sincrónicos
+- Formato de sistemas avanzados (ASF), leer metadatos
 - ASF (formato de sistemas avanzados), leer metadatos
-- Advanced Systems Format (ASF), lectores asincrónicos
+- Formato de sistemas avanzados (ASF), lectores asincrónicos
 - ASF (formato de sistemas avanzados), lectores asincrónicos
-- Advanced Systems Format (ASF), lectores sincrónicos
+- Formato de sistemas avanzados (ASF), lectores sincrónicos
 - ASF (formato de sistemas avanzados), lectores sincrónicos
 - lectores asincrónicos, leer metadatos
 - lectores sincrónicos, leer metadatos
-- metadatos, leer en la reproducción
+- metadata,reading at playback
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42a2515dd62092d02a45b0261fe2b501e0833a31
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: f62100da8c2f27e626e27ae6686e08f7217867ec2775f69292aac495d218fcb8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104077434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027353"
 ---
-# <a name="reading-metadata-at-playback"></a>Leer metadatos en la reproducción
+# <a name="reading-metadata-at-playback"></a>Leer metadatos en reproducción
 
-Tanto el objeto lector asincrónico como el objeto lector sincrónico pueden leer los metadatos desde el encabezado de un archivo ASF cargado. Al leer archivos, los atributos de metadatos son de solo lectura. Ambos objetos de lector se pueden consultar para las interfaces [**IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) y [**IWMHeaderInfo2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo2) .
+Tanto el objeto de lector asincrónico como el objeto de lector sincrónico pueden leer los metadatos del encabezado de un archivo ASF cargado. Al leer archivos, los atributos de metadatos son de solo lectura. Ambos objetos de lector se pueden consultar para las interfaces [**IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) [**e IWMHeaderInfo2.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo2)
 
-Para obtener más información sobre el acceso a los metadatos, vea [trabajar con metadatos](working-with-metadata.md).
+Para obtener más información sobre cómo obtener acceso a los metadatos, vea [Trabajar con metadatos.](working-with-metadata.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Leer archivos ASF**](reading-asf-files.md)
+[**Lectura de archivos ASF**](reading-asf-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

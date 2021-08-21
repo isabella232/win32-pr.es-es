@@ -1,7 +1,7 @@
 ---
-description: Comprueba que la región de medios de la unidad de DVD coincide con la región de la unidad de DVD.
+description: Comprueba que la región multimedia de la unidad de DVD coincide con la región de la unidad de DVD.
 ms.assetid: 864de493-94c2-4f32-96a8-14cfea13dbef
-title: DvdLauncher función)
+title: Función DvdLauncher
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - StorProp.dll
-ms.openlocfilehash: ef49be579052e5a9fd493f5bf246a2efbd217c34
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a52ac620e5ec9aa3d9060d35921fcfd9c5bcc6e73cebf71ef336ceb54fc0806e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956914"
 ---
-# <a name="dvdlauncher-function"></a>DvdLauncher función)
+# <a name="dvdlauncher-function"></a>Función DvdLauncher
 
-Comprueba que la región de medios de la unidad de DVD coincide con la región de la unidad de DVD.
+Comprueba que la región multimedia de la unidad de DVD coincide con la región de la unidad de DVD.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,27 +40,27 @@ BOOL WINAPI DvdLauncher(
 
 <dl> <dt>
 
-*HWnd* \[ de\]
+*HWnd* \[ En\]
 </dt> <dd>
 
 Identificador de la ventana de nivel superior que se va a usar para cualquier interfaz de usuario necesaria.
 
 </dd> <dt>
 
-*LetraDeUnidad* \[ de\]
+*DriveLetter* \[ En\]
 </dt> <dd>
 
-Letra de la unidad.
+Letra de unidad.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente y las regiones coinciden, el valor devuelto es distinto de cero. De lo contrario, el valor devuelto es cero.
+Si la función se realiza correctamente y las regiones coinciden, el valor devuelto es distinto de cero. De lo contrario, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene ninguna biblioteca de importación asociada. Debe utilizar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a StorProp.dll.
+Esta función no tiene ninguna biblioteca de importación asociada. Debe usar las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a StorProp.dll.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,7 +78,7 @@ Esta función no tiene ninguna biblioteca de importación asociada. Debe utiliza
 
 <dl> <dt>
 
-[Funciones de administración de dispositivos](device-management-functions.md)
+[Administración de dispositivos functions](device-management-functions.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: La función DuplicateBlob copia un BLOB específico.
 ms.assetid: d2478f53-328c-4799-890c-7849ce1f22e9
-title: Función DuplicateBlob (Netmon. h)
+title: Función DuplicateBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: df0fc00f0bd51e89da432e6f3b0143ce6092cedb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a8fd41bff4700915c43ab709efa0033905cc5895c81839d399f81fc7bc4317e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119064105"
 ---
-# <a name="duplicateblob-function"></a>DuplicateBlob función)
+# <a name="duplicateblob-function"></a>Función DuplicateBlob
 
-La función **DuplicateBlob** copia un BLOB específico.
+La **función DuplicateBlob** copia un BLOB específico.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,25 +40,25 @@ DWORD DuplicateBlob(
 
 <dl> <dt>
 
-*hSrcBlob* \[ de\]
+*hSrcBlob* \[ En\]
 </dt> <dd>
 
 Identificador del BLOB que se copia.
 
 </dd> <dt>
 
-*hBlobThatWillBeCreated* \[ enuncia\]
+*hBlobThatWillBeCreated* \[ out\]
 </dt> <dd>
 
-Identificador del BLOB duplicado.
+Controle el blob duplicado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un valor de NMERR que describe el error.
+Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que describe el error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,8 +68,8 @@ Si la función no es correcta, el valor devuelto es un valor de NMERR que descri
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

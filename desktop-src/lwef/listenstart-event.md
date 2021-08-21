@@ -4,30 +4,30 @@ description: Evento ListenStart
 ms.assetid: 59feacd6-0b9f-4bf4-b544-48de49384312
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19b8cc19ad727f8e9c4606bbbfba7b2e03e7d638
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b0017b628af3ca266058de74508d379bd665c94f94c64207f4d7bef5487a0f4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976115"
 ---
 # <a name="listenstart-event"></a>Evento ListenStart
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Denominación**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descripción**
 </dt> <dd>
 
 Se produce cuando comienza el modo de escucha (reconocimiento de voz).
 
 </dd> <dt>
 
-<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintáctica**
+<span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**
 </dt> <dd>
 
-**Sub** *Agent. * * * ListenStart (ByVal* *  *CharacterID ** * *)*
+**Sub** *agent.**ListenStart (ByVal* *  *CharacterID"))**
 
 
 
@@ -37,26 +37,26 @@ Se produce cuando comienza el modo de escucha (reconocimiento de voz).
 
 
 
- 
+ 
 
 </dd> </dl>
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
-Este evento se envía a todos los clientes cuando comienza el modo de escucha porque el usuario presionó la clave de escucha o el cliente de entrada-activo llamó al método [**Listen**](listen-method.md) con **true**. Puede usar este evento para evitar que el personaje hable mientras el modo de escucha está activado.
+Este evento se envía a todos los clientes cuando comienza el modo de escucha porque el usuario presionó la tecla Escuchando o el cliente activo de entrada llamó al método [**Listen**](listen-method.md) con **True**. Puede usar este evento para evitar que el carácter hable mientras el modo de escucha está en funcionamiento.
 
-Si activa el modo de escucha con el método [**Listen**](listen-method.md) y el usuario presiona la tecla de escucha, el modo de escucha se restablece y continúa hasta que se completa el tiempo de espera de la clave de escucha, se libera la clave de escucha o el usuario termina de hablar, lo que sea posterior. En esta situación, cuando el modo de escucha ya está activado, no recibirá un evento **ListenStart** adicional cuando el usuario presione la tecla de escucha.
+Si activa el modo de escucha con el método [**Listen**](listen-method.md) y, a continuación, el usuario presiona la tecla Escuchando, el modo de escucha se restablece y continúa hasta que se complete el tiempo de espera de la clave de escucha, se libera la tecla Listening o el usuario termina de hablar, lo que sea más adelante. En esta situación, cuando el modo de escucha ya está en funcionamiento, no recibirá un evento **ListenStart** adicional cuando el usuario presione la tecla Listening.
 
-El evento devuelve el carácter a los clientes que actualmente tienen este carácter cargado. El resto de clientes reciben un carácter nulo (cadena vacía).
+El evento devuelve el carácter a los clientes que tienen este carácter cargado actualmente. Todos los demás clientes reciben un carácter nulo (cadena vacía).
 
 ### <a name="see-also"></a>Consulte también
 
 [**Evento ListenComplete**](listencomplete-event.md), [ **método Listen**](listen-method.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

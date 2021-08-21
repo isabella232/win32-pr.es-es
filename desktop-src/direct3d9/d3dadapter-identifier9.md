@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 85401573956d29386b5ddabbd48711a7be140463
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: 843dff64de7ad4b97b2719f469bb8fb13813f06b8045d7de1b9f5ec4215a76ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989245"
 ---
 # <a name="d3dadapter_identifier9-structure"></a>Estructura D3DADAPTER \_ IDENTIFIER9
 
@@ -181,7 +181,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Se usa para determinar el Laboratorios de calidad de hardware de Windows (WHQL) de validación de controladores (WHQL) para este par de controladores y dispositivos. DWORD es una estructura de fecha empaquetada que define la fecha de lanzamiento de la prueba WHQL más reciente superada por el controlador. Es válido realizar operaciones < y > en este valor. A continuación se muestra el formato de fecha.
+Se usa para determinar el Windows de validación de Hardware Quality Labs (WHQL) para este par de controladores y dispositivos. DWORD es una estructura de fecha empaquetada que define la fecha de lanzamiento de la prueba WHQL más reciente superada por el controlador. Es válido realizar operaciones < y > en este valor. A continuación se muestra el formato de fecha.
 
 
 
@@ -199,7 +199,7 @@ También se usan los siguientes valores.
 
 
 
-| Valor    |  Descripción                                                     |
+| Value    |  Descripción                                                     |
 |-----|-------------------------------------------------------|
 | 0   | No certificado.                                        |
 | 1   | WHQL validado, pero no hay información de fecha disponible. |
@@ -214,7 +214,7 @@ Para Direct3D9Ex que se ejecuta en Windows Vista, Windows Server 2008, Windows 7
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 En el ejemplo de pseudocódigo siguiente se muestra el formato de versión codificado en los miembros DriverVersion, DriverVersionLowPart y DriverVersionHighPart.
 
@@ -251,7 +251,7 @@ Los miembros VendorId, DeviceId, SubSysId y Revision se pueden usar conjuntament
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

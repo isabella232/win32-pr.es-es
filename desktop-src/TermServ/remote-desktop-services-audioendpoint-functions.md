@@ -1,20 +1,20 @@
 ---
-title: Servicios de Escritorio remoto funciones AudioEndpoint
-description: Las siguientes funciones se usan con la API de AudioEndpoint.
+title: Servicios de Escritorio remoto AudioEndpoint Functions
+description: Las siguientes funciones se usan con audioEndpoint API.
 ms.assetid: c7914d33-9874-4bb4-b4f6-47036bbdd852
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d22716b0c53846d90d04435f3d2f93dcb9c79e80
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4c647f8289408fe89132a78df9a06726d2a41e2814ba99ff7a7b256e39f35875
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058633"
 ---
-# <a name="remote-desktop-services-audioendpoint-functions"></a>Servicios de Escritorio remoto funciones AudioEndpoint
+# <a name="remote-desktop-services-audioendpoint-functions"></a>Servicios de Escritorio remoto AudioEndpoint Functions
 
-Las siguientes funciones se usan con la API de AudioEndpoint.
+Las siguientes funciones se usan con audioEndpoint API.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -23,17 +23,17 @@ Las siguientes funciones se usan con la API de AudioEndpoint.
 [*GetTSAudioEndpointEnumeratorForSession*](gettsaudioendpointenumeratorforsession.md)
 </dt> <dd>
 
-Devuelve una referencia a un enumerador de punto de conexión de audio para el ID. de sesión especificado.
+Devuelve una referencia a un enumerador de punto de conexión de audio para el identificador de sesión especificado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La API de Servicios de Escritorio remoto AudioEndpoint es para su uso en escenarios de Escritorio remoto; no es para las aplicaciones cliente.
+La SERVICIOS DE ESCRITORIO REMOTO AudioEndpoint API es para su uso en Escritorio remoto escenarios; no es para aplicaciones cliente.
 
- 
+ 
 
- 
+ 
 
 
 

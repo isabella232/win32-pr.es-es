@@ -1,17 +1,17 @@
 ---
 description: Establece los controles admitidos para un codificador de vídeo.
 ms.assetid: 42FD987A-7D6C-4434-BD48-3CC289F2748D
-title: Propiedad CODECAPI_AVEncVideoSupportedControls (Codecapi. h)
+title: CODECAPI_AVEncVideoSupportedControls propiedad (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28c2ce5cf01fccafec0fdcf0410c22ba673fa580
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38c3a4743e25078a97d636f5305f73d4d3973804011dc72abe1172715822c8d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974874"
 ---
-# <a name="codecapi_avencvideosupportedcontrols-property"></a>\_Propiedad AVEncVideoSupportedControls de CODECAPI
+# <a name="codecapi_avencvideosupportedcontrols-property"></a>Propiedad CODECAPI \_ AVEncVideoSupportedControls
 
 Establece los controles admitidos para un codificador de vídeo.
 
@@ -23,9 +23,9 @@ Establece los controles admitidos para un codificador de vídeo.
 
 **CODECAPI \_ AVEncVideoSupportedControls**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad solo se usa con [codificadores de cámara H. 264 UVC 1,5](camera-encoder-h264-uvc-1-5.md).
+Esta propiedad solo se usa con codificadores de cámara [H.264 UVC 1.5.](camera-encoder-h264-uvc-1-5.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ Esta propiedad solo se usa con [codificadores de cámara H. 264 UVC 1,5](camera-
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                     |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                     |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ Esta propiedad solo se usa con [codificadores de cámara H. 264 UVC 1,5](camera-
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Puntero a la interfaz IMediaEventSink en el administrador de gráficos de filtro.
+description: Puntero a la interfaz IMediaEventSink en el administrador de gráficos de filtros.
 ms.assetid: 0d61e8b6-e9a3-495b-8bb1-9dab1f8b3626
-title: 'Miembro CBaseFilter:: m_pSink (Amfilter. h)'
+title: CBaseFilter::m_pSink miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5d38b2c9a3b1d5b65992f6e84af80a19ed05119c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2f080cc047215c8111956aa95525629d78d579df5beb6dc913321d741d55d8d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017133"
 ---
-# <a name="cbasefilterm_psink-member"></a>Miembro pSink CBaseFilter:: m \_
+# <a name="cbasefilterm_psink-member"></a>CBaseFilter::m \_ miembro pSink
 
-Puntero a la interfaz [**IMediaEventSink**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) en el administrador de gráficos de filtro.
+Puntero a la [**interfaz IMediaEventSink**](/windows/desktop/api/Strmif/nn-strmif-imediaeventsink) en el administrador de gráficos de filtros.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ IMediaEventSink *m_pSink;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ IMediaEventSink *m_pSink;
 
 <dl> <dt>
 
-[**Clase CBaseFilter**](cbasefilter.md)
+[**CBaseFilter (clase)**](cbasefilter.md)
 </dt> </dl>
 
  

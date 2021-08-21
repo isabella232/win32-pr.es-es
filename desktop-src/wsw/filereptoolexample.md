@@ -1,45 +1,45 @@
 ---
 title: FileRepToolExample
-description: Esta es la herramienta de línea de comandos que controla el servicio FileRep.
+description: Esta es la herramienta de línea de comandos que impulsa el servicio FileRep.
 ms.assetid: e6273036-2e31-4cbb-b72b-8f4d3ade6336
 keywords:
 - FileRepToolExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c31128f66304fc9a369b3c445fe5e81617287f8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 45f420f9b941858af3409b4d3b50664ed970695ef0541f5b03e7a1617a4a4686
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104269101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026553"
 ---
 # <a name="filereptoolexample"></a>FileRepToolExample
 
-Esta es la herramienta de línea de comandos que controla el [servicio FileRep](filerepserviceexample.md). Puede encontrar una descripción más detallada de este ejemplo.
+Esta es la herramienta de línea de comandos que impulsa el [servicio FileRep](filerepserviceexample.md). Puede encontrar una descripción más detallada de este ejemplo allí.
 
 Los parámetros de la línea de comandos son los siguientes:
 
-WsFileRep.exe <Client Service Url> <Server Service Url> <Source File> <Destination File> \[ /Encoding: <Binary/Text/MTOM>\] \[ /Sync\]
+WsFileRep.exe <Client Service Url> <Server Service Url> <Source File> <Destination File> \[ /encoding:<binary/text/MTOM>\] \[ /sync\]
 
-URL del servicio de cliente: obligatorio. Dirección URL del servicio de cliente.
+Dirección URL del servicio cliente: obligatorio. Dirección URL del servicio cliente.
 
-URL del servicio de servidor: obligatorio. Dirección URL del servicio de servidor.
+Dirección URL del servicio de servidor: obligatorio. Dirección URL del servicio de servidor.
 
-Archivo de origen: obligatorio. Nombre local completo del archivo de código fuente. El archivo se encuentra en el equipo en el que se ejecuta el servicio de servidor.
+Archivo de origen: obligatorio. Nombre local completo del archivo de origen. El archivo se encuentra en la máquina donde se ejecuta el servicio de servidor.
 
-Archivo de destino: obligatorio. Nombre local completo del archivo de destino. El archivo se ubicará en el equipo en el que se ejecuta el servicio de cliente.
+Archivo de destino: obligatorio. Nombre local completo del archivo de destino. El archivo se ubicará en la máquina donde se ejecuta el servicio cliente.
 
-Codificación: opcional. Especifica la codificación de mensajes para los mensajes enviados entre los servicios de cliente y servidor. La codificación utilizada para la comunicación entre la herramienta de línea de comandos y el servicio de cliente no se puede cambiar por razones de simplicidad. Los parámetros válidos son Binary, Text y MTOM. Si no se especifica el parámetro, se usa la codificación predeterminada para el transporte.
+Codificación: opcional. Especifica la codificación de mensajes para los mensajes enviados entre los servicios cliente y servidor. La codificación utilizada para la comunicación entre la herramienta de línea de comandos y el servicio cliente no se puede cambiar por motivos de simplicidad. Los parámetros válidos son binary, text y MTOM. Si no se especifica el parámetro, se usa la codificación predeterminada para el transporte.
 
 Sincronización: opcional. Cuando se establece, la solicitud se completa de forma sincrónica. De lo contrario, la solicitud se completará de forma asincrónica.
 
--   [Herramienta. cpp](#toolcpp)
--   [Common. h](#commonh)
+-   [Tool.cpp](#toolcpp)
+-   [common.h](#commonh)
 -   [Temas relacionados](#related-topics)
 
-## <a name="toolcpp"></a>Herramienta. cpp
+## <a name="toolcpp"></a>Tool.cpp
 
 
 ```C++
@@ -1048,9 +1048,9 @@ static WS_XML_STRING faultAction = WS_XML_STRING_VALUE("https://tempuri.org/File
 [FileRepServiceExample](filerepserviceexample.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

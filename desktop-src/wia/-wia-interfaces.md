@@ -1,6 +1,6 @@
 ---
-title: Interfaces de WIA
-description: Esta sección contiene información de referencia sobre las interfaces usadas con Windows Image Acquisition (WIA)API.
+title: Interfaces WIA
+description: Esta sección contiene información de referencia sobre las interfaces que se usan con Windows Image Acquisition (WIA)API.
 ms.assetid: 0b496d6b-486a-42d3-a0e5-8e9e52e27608
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,13 +11,13 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118965804"
 ---
-# <a name="wia-interfaces"></a>Interfaces de WIA
+# <a name="wia-interfaces"></a>Interfaces WIA
 
-Esta sección contiene información de referencia sobre las interfaces usadas con Windows Image Acquisition (WIA)API. Se presentan las interfaces siguientes:
+Esta sección contiene información de referencia sobre las interfaces que se usan con Windows Image Acquisition (WIA)API. Se presentan las interfaces siguientes:
 
 ## <a name="interfaces"></a>Interfaces
 
--   [**CAPS de \_ DESARROLLO de IEnumWIA \_**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_caps)
+-   [**IEnumWIA \_ DEV \_ CAPS**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_caps)
 -   [**IEnumWIA \_ DEV \_ INFO**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info)
 -   [**IEnumWIA \_ FORMAT \_ INFO**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_format_info)
 -   [**IEnumWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwiaitem)

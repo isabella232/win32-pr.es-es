@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-ManagedPasswordId
-description: Este atributo construido contiene el identificador de clave de los datos de contraseña administrados actuales para un grupo MSA.
+title: Atributo ms-DS-ManagedPasswordId
+description: Este atributo construido contiene el identificador de clave de los datos de contraseña administrada actuales para una MSA de grupo.
 ms.assetid: 82e78b10-d10c-4fb8-a4ee-5f775d4dbdf2
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-ManagedPasswordId
-- Esquema de AD de atributo msDS-ManagedPasswordId
+- Esquema de AD del atributo ms-DS-ManagedPasswordId
+- Esquema de AD del atributo msDS-ManagedPasswordId
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 029128133e8e5003d2b3b1905ea597eb04ce7179
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 03ba91db79119515d70bc52e170307f4a2433a6680975d953a876d210b089797
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552325"
 ---
-# <a name="ms-ds-managedpasswordid-attribute"></a>atributo MS-DS-ManagedPasswordId
+# <a name="ms-ds-managedpasswordid-attribute"></a>Atributo ms-DS-ManagedPasswordId
 
-Este atributo construido contiene el identificador de clave de los datos de contraseña administrados actuales para un grupo MSA.
+Este atributo construido contiene el identificador de clave de los datos de contraseña administrada actuales para una MSA de grupo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-DS-ManagedPasswordId                               |
-| Nombre para mostrar de LDAP | msDS-ManagedPasswordId                                |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | ms-DS-ManagedPasswordId                               |
+| Ldap-Display-Name | msDS-ManagedPasswordId                                |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2197                               |
-| System-ID-GUID    | 0e78295a-c6d3-0a40-b491-d62251ffa0a6                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 0e78295a-c6d3-0a40-b491-d62251ffa0a6                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -50,18 +50,18 @@ Este atributo construido contiene el identificador de clave de los datos de cont
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                          |
+| Id. de vínculo                | \-                                                                                          |
 | MAPI-Id                | \-                                                                                          |
-| System-Only            | True                                                                                        |
-| Tiene un único valor       | True                                                                                        |
-| Está indexado             | False                                                                                       |
-| En el catálogo global      | False                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                |
+| System-Only            | Verdadero                                                                                        |
+| Es de un solo valor       | Verdadero                                                                                        |
+| Está indexado             | Falso                                                                                       |
+| En el catálogo global      | Falso                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                |
 | Range-Lower            | \-                                                                                          |
 | Range-Upper            | \-                                                                                          |
 | Search-Flags           | 0x00000000                                                                                  |
 | System-Flags           | 0x00000010                                                                                  |
-| Clases usadas en        | [**MS-DS-Group-Managed-Service-Account**](c-msds-groupmanagedserviceaccount.md)<br/> |
+| Clases usadas en        | [**ms-DS-Group-Managed-Service-Account**](c-msds-groupmanagedserviceaccount.md)<br/> |
 
 
 

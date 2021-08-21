@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetEnumerateColumns (método)'
-title: Método API. JetEnumerateColumns
+description: Más información sobre el método Api.JetEnumerateColumns
+title: Método Api.JetEnumerateColumns
 TOCTitle: 'JetEnumerateColumns method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetEnumerateColumns(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.Int32,Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMNID[],System.Int32@,Microsoft.Isam.Esent.Interop.JET_ENUMCOLUMN[]@,Microsoft.Isam.Esent.Interop.JET_PFNREALLOC,System.IntPtr,System.Int32,Microsoft.Isam.Esent.Interop.EnumerateColumnsGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetenumeratecolumns(v=EXCHG.10)
@@ -24,21 +24,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c9a9848d4470d54cc2a146098343b664c9bd3419
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 713b02835aa063e888a2385df9bd8abdff9af1300a2e9885c06e995f2b814bbf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082052"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042713"
 ---
-# <a name="apijetenumeratecolumns-method"></a>Método API. JetEnumerateColumns
+# <a name="apijetenumeratecolumns-method"></a>Método Api.JetEnumerateColumns
 
-Recupera eficazmente un conjunto de columnas y sus valores del registro actual de un cursor o del búfer de copia de ese cursor. Las columnas y los valores recuperados se pueden restringir por una lista de identificadores de columna, números de itagSequence y otras características. Esta API de recuperación de columnas es única, ya que devuelve información en memoria asignada dinámicamente que se obtiene mediante una devolución de llamada compatible con realloc proporcionada por el usuario. Esta nueva flexibilidad permite la recuperación eficaz de datos de columna con características específicas (como el tamaño y la multiplicidad) que son desconocidas para el autor de la llamada. Esto elimina la necesidad de usar los modos de detección de JetRetrieveColumn para determinar esas características a fin de configurar una llamada final a JetRetrieveColumn que recupere correctamente los datos deseados.
+Recupera eficazmente un conjunto de columnas y sus valores del registro actual de un cursor o del búfer de copia de ese cursor. Las columnas y los valores recuperados se pueden restringir mediante una lista de id. de columna, números de itagSequence y otras características. Esta API de recuperación de columnas es única en que devuelve información en memoria asignada dinámicamente que se obtiene mediante una devolución de llamada compatible con el reasignación proporcionada por el usuario. Esta nueva flexibilidad permite la recuperación eficaz de datos de columna con características específicas (como el tamaño y la multiplicidad) que el autor de la llamada desconoce. Esto elimina la necesidad de usar los modos de detección de JetRetrieveColumn para determinar esas características con el fin de configurar una llamada final a JetRetrieveColumn que recupere correctamente los datos deseados.
 
 Esta API no es conforme a CLS. 
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -95,84 +95,84 @@ public static JET_wrn JetEnumerateColumns(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor del que se van a recuperar datos.
+    Cursor del que se recuperarán los datos.
 
 <!-- end list -->
 
   - numColumnids  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Número de JET_ENUMCOLUMNIDS.
+    Números de JET_ENUMCOLUMNIDS.
 
 <!-- end list -->
 
   - columnids  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
-    Una matriz opcional de identificadores de columna, cada uno con una matriz opcional de números itagSequence para enumerar.
+    Matriz opcional de id. de columna, cada uno con una matriz opcional de números de itagSequence que se va a enumerar.
 
 <!-- end list -->
 
   - numColumnValues  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Devuelve el número de valores de columna recuperados.
 
 <!-- end list -->
 
   - columnValues  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
     Devuelve los valores de columna enumerados.
 
 <!-- end list -->
 
   - allocator  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_PFNREALLOC](./jet-pfnrealloc-delegate.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_PFNREALLOC](./jet-pfnrealloc-delegate.md)  
     
     Devolución de llamada usada para asignar memoria.
 
 <!-- end list -->
 
   - allocatorContext  
-    Tipo: [System. IntPtr](/dotnet/api/system.intptr)  
+    Tipo: [System.IntPtr](/dotnet/api/system.intptr)  
     
     Contexto para la devolución de llamada de asignación.
 
 <!-- end list -->
 
   - maxDataSize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Establece un límite en la cantidad de datos que se van a devolver de una columna de texto largo o binario largo. Este parámetro se puede utilizar para evitar la enumeración de un valor de columna extremadamente grande.
+    Establece un límite en la cantidad de datos que se devolverán de una columna de texto largo o binario largo. Este parámetro se puede usar para evitar la enumeración de un valor de columna extremadamente grande.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. EnumerateColumnsGrbit](./enumeratecolumnsgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.EnumerateColumnsGrbit](./enumeratecolumnsgrbit-enumeration.md)  
     
-    Opciones de recuperación.
+    Recuperar opciones.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
-ADVERTENCIA o éxito.  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
+Una advertencia o un éxito.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

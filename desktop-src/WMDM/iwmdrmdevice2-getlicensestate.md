@@ -1,11 +1,11 @@
 ---
-title: IWMDRMDevice2 GetLicenseState, método
+title: Método IWMDRMDevice2 GetLicenseState
 description: El método GetLicenseState obtiene el estado de la licencia.
 ms.assetid: a98847f6-00ec-4211-9716-79714d7ba169
 keywords:
-- Método GetLicenseState de Windows Media Administrador de dispositivos
-- Método GetLicenseState de Windows Media Administrador de dispositivos, interfaz IWMDRMDevice2
-- Interfaz IWMDRMDevice2 de Windows Media Administrador de dispositivos, método GetLicenseState
+- Método GetLicenseState windows Media Administrador de dispositivos
+- Método GetLicenseState windows Media Administrador de dispositivos interfaz , IWMDRMDevice2
+- Interfaz IWMDRMDevice2 windows Media Administrador de dispositivos , método GetLicenseState
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d075d123ae99b26767621fb1a958cd172bc9e42c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e068d537f460053800b0d52d667ba39b0577d717b08f83794a73b2bf8c854aeb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055703"
 ---
-# <a name="iwmdrmdevice2getlicensestate-method"></a>IWMDRMDevice2:: GetLicenseState (método)
+# <a name="iwmdrmdevice2getlicensestate-method"></a>IWMDRMDevice2::GetLicenseState (método)
 
-El método **GetLicenseState** obtiene el estado de la licencia.
+El **método GetLicenseState** obtiene el estado de la licencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,42 +48,42 @@ HRESULT GetLicenseState(
 
 <dl> <dt>
 
-*pbStateQueryData* \[ de\]
+*pbStateQueryData* \[ En\]
 </dt> <dd>
 
 Puntero a los datos consultados del estado de la licencia.
 
 </dd> <dt>
 
-*cbStateQueryData* \[ de\]
+*cbStateQueryData* \[ En\]
 </dt> <dd>
 
 Recuento de los datos consultados.
 
 </dd> <dt>
 
-*pdwCategory* \[ enuncia\]
+*pdwCategory* \[ out\]
 </dt> <dd>
 
 Puntero a la categoría.
 
 </dd> <dt>
 
-*pcRemainingCounts* \[ enuncia\]
+*pcRemainingCounts* \[ out\]
 </dt> <dd>
 
 Puntero a los recuentos restantes.
 
 </dd> <dt>
 
-*pcRemainingHours* \[ enuncia\]
+*pcRemainingHours* \[ out\]
 </dt> <dd>
 
-Puntero al resto de horas.
+Puntero a las horas restantes.
 
 </dd> <dt>
 
-*pdwReserved* \[ enuncia\]
+*pdwReserved* \[ out\]
 </dt> <dd>
 
 Reservado para uso futuro.
@@ -92,13 +92,13 @@ Reservado para uso futuro.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                     |
 |--------------------------------------------------------------------------------------|---------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ejecuta correctamente.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se realiza correctamente.<br/> |
 
 
 
@@ -110,8 +110,8 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>WMDDRMSP. idl</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>Mssachlp. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>WMDDRMSP.idl</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Mssachlp.lib</dt> </dl> |
 
 
 
@@ -119,7 +119,7 @@ El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen
 
 <dl> <dt>
 
-[**Interfaz IWMDRMDevice2**](iwmdrmdevice2.md)
+[**IWMDRMDevice2 (interfaz)**](iwmdrmdevice2.md)
 </dt> </dl>
 
  

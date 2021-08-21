@@ -1,7 +1,7 @@
 ---
 description: El método ThrottleWait inserta un período de espera después de cada fotograma.
 ms.assetid: 69306093-f5db-4170-b30f-e33cfa448e9f
-title: Método CBaseVideoRenderer. ThrottleWait (Renbase. h)
+title: Método CBaseVideoRenderer.ThrottleWait (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7408cfb011fa0fbbb223b6757ddb10ff9cbd357b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d61c0e934208ad72e678595ce668c6c7ff72eda3371c792b294df9f2d5915612
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954754"
 ---
-# <a name="cbasevideorendererthrottlewait-method"></a>CBaseVideoRenderer. ThrottleWait, método
+# <a name="cbasevideorendererthrottlewait-method"></a>Método CBaseVideoRenderer.ThrottleWait
 
 El `ThrottleWait` método inserta un período de espera después de cada fotograma.
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro espera un período de tiempo obtenido del miembro de datos **m \_ trThrottle** .
+Esta función miembro espera un período de tiempo obtenido del miembro de datos **m \_ trThrottle.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Esta función miembro espera un período de tiempo obtenido del miembro de datos
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Esta función miembro espera un período de tiempo obtenido del miembro de datos
 
 <dl> <dt>
 
-[**Clase CBaseVideoRenderer**](cbasevideorenderer.md)
+[**CBaseVideoRenderer (clase)**](cbasevideorenderer.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Propiedad RegisteredTask. NextRunTime
-description: En el caso de scripting, obtiene la hora a la que se programa la próxima ejecución de la tarea registrada.
+title: RegisteredTask.NextRunTime, propiedad
+description: Para el scripting, obtiene la hora a la que se programa la siguiente ejecución de la tarea registrada.
 ms.assetid: f63298a8-c9fa-4fea-ad0b-2c8739aced19
 keywords:
-- Programador de tareas de la propiedad NextRunTime
-- Programador de tareas de la propiedad NextRunTime, objeto RegisteredTask
-- Programador de tareas de objeto RegisteredTask, propiedad NextRunTime
+- Propiedad NextRunTime Programador de tareas
+- Propiedad NextRunTime Programador de tareas , objeto RegisteredTask
+- Objeto RegisteredTask Programador de tareas propiedad , NextRunTime
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94db26c023ddd2c146586fbc433548517a84f234
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 850c0215555fd24b729b1d71acaff9fa7083c0f53289f28e4228b8e57ff40e52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060053"
 ---
-# <a name="registeredtasknextruntime-property"></a>Propiedad RegisteredTask. NextRunTime
+# <a name="registeredtasknextruntime-property"></a>RegisteredTask.NextRunTime, propiedad
 
-En el caso de scripting, obtiene la hora a la que se programa la próxima ejecución de la tarea registrada.
+Para el scripting, obtiene la hora a la que se programa la siguiente ejecución de la tarea registrada.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -38,21 +38,21 @@ RegisteredTask.NextRunTime As String
 
 ## <a name="property-value"></a>Valor de propiedad
 
-La hora a la que se ha programado la próxima ejecución de la tarea registrada.
+Hora a la que se programa la siguiente ejecución de la tarea registrada.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la tarea registrada contiene desencadenadores que se deshabilitan de forma individual, estos desencadenadores todavía afectarán a la siguiente hora de ejecución programada que se devuelva aunque estén deshabilitados.
+Si la tarea registrada contiene desencadenadores que están deshabilitados individualmente, estos desencadenadores seguirán afectando al siguiente tiempo de ejecución programado que se devuelve aunque estén deshabilitados.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

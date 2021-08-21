@@ -1,19 +1,19 @@
 ---
-description: Valor entero comprendido entre 0 y 100 que representa el porcentaje completado.
+description: Valor entero entre 0 y 100 que representa el porcentaje completado.
 ms.assetid: 88ff4ca0-183c-4e9a-a240-ee69ef6eaf38
-title: System. Sync. ProgressPercentage
+title: System.Sync.ProgressPercentage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f005332e870fcd5b187918e1caaf5aae0880634
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a25ee53de0a24fffb1a639e82e723a6f7798fa7eb6d6543c0d0f9b9d58e348f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033303"
 ---
-# <a name="systemsyncprogresspercentage"></a>System. Sync. ProgressPercentage
+# <a name="systemsyncprogresspercentage"></a>System.Sync.ProgressPercentage
 
-Valor entero comprendido entre 0 y 100 que representa el porcentaje completado.
+Valor entero entre 0 y 100 que representa el porcentaje completado.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -30,9 +30,9 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

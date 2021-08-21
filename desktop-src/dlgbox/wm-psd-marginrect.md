@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_PSD_MARGINRECT (commdlg. h)
-description: Notifica al procedimiento de enlace un cuadro de diálogo de configuración de página, PagePaintHook, que el cuadro de diálogo está a punto de dibujar el rectángulo de margen de la página de ejemplo.
+title: WM_PSD_MARGINRECT mensaje (Commdlg.h)
+description: Notifica al procedimiento de enlace de un cuadro de diálogo Configuración de página, PagePaintHook, que el cuadro de diálogo está a punto de dibujar el rectángulo de margen de la página de ejemplo.
 ms.assetid: 81c057ab-6faf-4dd8-8b0c-34a2753e572c
 keywords:
-- WM_PSD_MARGINRECT cuadros de diálogo de mensaje
+- WM_PSD_MARGINRECT cuadro de diálogo de mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4718cfbe16db53378544d9fca0ab44ade23ffb3f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 09523258d1f67cfc4f35433a43a6b5a17db0be9dedaea87511c0c6d1327f82cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985265"
 ---
-# <a name="wm_psd_marginrect-message"></a>\_ \_ Mensaje MARGINRECT de WM PSD
+# <a name="wm_psd_marginrect-message"></a>Mensaje \_ WM PSD \_ MARGINRECT
 
-Notifica al procedimiento de enlace un cuadro de diálogo de **configuración de página** , [**PagePaintHook**](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook), que el cuadro de diálogo está a punto de dibujar el rectángulo de margen de la página de ejemplo.
+Notifica al procedimiento de enlace de un **cuadro** de diálogo Configuración de página, [**PagePaintHook**](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook), que el cuadro de diálogo está a punto de dibujar el rectángulo de margen de la página de ejemplo.
 
 
 ```C++
@@ -40,26 +40,26 @@ Notifica al procedimiento de enlace un cuadro de diálogo de **configuración de
 *wParam* 
 </dt> <dd>
 
-Identificador del contexto de dispositivo para la página de ejemplo.
+Identificador del contexto del dispositivo para la página de ejemplo.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**Rect**](/previous-versions//dd162897(v=vs.85)) que contiene las coordenadas, en píxeles, del rectángulo del margen.
+Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) que contiene las coordenadas, en píxeles, del rectángulo de margen.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el procedimiento de enlace devuelve **true**, el cuadro de diálogo no dibuja el rectángulo de margen en la página de ejemplo.
+Si el procedimiento de enlace devuelve **TRUE**, el cuadro de diálogo no dibuja el rectángulo de margen en la página de ejemplo.
 
-Si el procedimiento de enlace devuelve **false**, el cuadro de diálogo dibuja el rectángulo de margen en la página de ejemplo.
+Si el procedimiento de enlace devuelve **FALSE**, el cuadro de diálogo dibuja el rectángulo de margen en la página de ejemplo.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El cuadro de diálogo **Configurar página** incluye una imagen de una página de ejemplo que muestra cómo afectan las selecciones del usuario a la apariencia de la salida impresa. Cuando llame a la función [**PageSetupDlg**](/previous-versions/windows/desktop/legacy/ms646937(v=vs.85)) , puede proporcionar un procedimiento de enlace [*PagePaintHook*](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) para personalizar la apariencia de la página de ejemplo. Cada vez que el cuadro de diálogo está a punto de dibujar el contenido de la página de ejemplo, el cuadro de diálogo envía una secuencia de mensajes al procedimiento de enlace.
+El **cuadro de diálogo Configuración** de página incluye una imagen de una página de ejemplo que muestra cómo afectan las selecciones del usuario a la apariencia de la salida impresa. Al llamar a la [**función PageSetupDlg,**](/previous-versions/windows/desktop/legacy/ms646937(v=vs.85)) puede proporcionar un procedimiento de enlace [*PagePaintHook*](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) para personalizar la apariencia de la página de ejemplo. Cada vez que el cuadro de diálogo está a punto de dibujar el contenido de la página de ejemplo, el cuadro de diálogo envía una secuencia de mensajes al procedimiento de enlace.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,7 +69,7 @@ El cuadro de diálogo **Configurar página** incluye una imagen de una página d
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commdlg.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -86,13 +86,13 @@ El cuadro de diálogo **Configurar página** incluye una imagen de una página d
 [**PageSetupDlg**](/previous-versions/windows/desktop/legacy/ms646937(v=vs.85))
 </dt> <dt>
 
-[**\_PAGESETUPDLG de PSD de WM \_**](wm-psd-pagesetupdlg.md)
+[**WM \_ PSD \_ PAGESETUPDLG**](wm-psd-pagesetupdlg.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Biblioteca de cuadros de diálogo comunes](common-dialog-box-library.md)
+[Biblioteca común de cuadros de diálogo](common-dialog-box-library.md)
 </dt> </dl>
 
  

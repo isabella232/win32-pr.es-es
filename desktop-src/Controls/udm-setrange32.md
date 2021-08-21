@@ -1,9 +1,9 @@
 ---
-title: Mensaje de UDM_SETRANGE32 (commctrl. h)
+title: UDM_SETRANGE32 mensaje (Commctrl.h)
 description: Establece el intervalo de 32 bits de un control de flechas.
 ms.assetid: 6167db8f-a823-44d3-a515-888b6d1a39c2
 keywords:
-- UDM_SETRANGE32 controles de mensajes de Windows
+- UDM_SETRANGE32 controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80de7c9583a10abe7c62ec5a074dcfa91a59cc7c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f5d98a55f503ebc194a00a65ff207aaed4a3a20d614b6416b4f6049e342df4f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957734"
 ---
-# <a name="udm_setrange32-message"></a>\_Mensaje SETRANGE32 UDM
+# <a name="udm_setrange32-message"></a>Mensaje \_ SETRANGE32 de UDM
 
 Establece el intervalo de 32 bits de un control de flechas.
 
@@ -32,20 +32,20 @@ Establece el intervalo de 32 bits de un control de flechas.
 *wParam* 
 </dt> <dd>
 
-Valor entero con signo que representa el nuevo límite inferior del intervalo de control de flechas.
+Valor entero con signo que representa el nuevo límite inferior del intervalo de control hacia abajo.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Valor entero con signo que representa el nuevo límite superior del intervalo de control de flechas.
+Valor entero con signo que representa el nuevo límite superior del intervalo de control hacia abajo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto para este mensaje.
+No se usa el valor devuelto para este mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ No se utiliza el valor devuelto para este mensaje.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

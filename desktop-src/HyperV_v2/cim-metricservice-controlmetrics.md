@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 19e732e50f8c367463e7f528a520a736117999b6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c78f575bb68673c364fe627766b3709944c2a062e0407f927262ff019764b7d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068655"
 ---
 # <a name="controlmetrics-method-of-the-cim_metricservice-class"></a>Método ControlMetrics de la clase \_ MetricService de CIM
 
-Habilita y deshabilita la colección de métricas. **ControlMetrics** se usa para controlar la colección de cada tipo de métrica para un [**elemento \_ ManagedElement**](cim-managedelement.md)de CIM, la colección de un tipo determinado de métrica para todos los elementos administrados o la colección de una métrica específica para un elemento administrado específico.
+Habilita y deshabilita la colección de métricas. **ControlMetrics** se usa para controlar la colección de cada tipo de métrica para un [**\_ elemento ManagedElement**](cim-managedelement.md)de CIM, la colección de un tipo determinado de métrica para todos los elementos administrados o la colección de una métrica específica para un elemento administrado específico.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,14 +44,14 @@ uint32 ControlMetrics(
 *Asunto* \[ En\]
 </dt> <dd>
 
-ManagedElement [**\_ de CIM**](cim-managedelement.md) que identifica los elementos administrados para los que se controlarán las métricas.
+Un [**elemento \_ ManagedElement de CIM**](cim-managedelement.md) que identifica los elementos administrados para los que se controlarán las métricas.
 
 </dd> <dt>
 
 *Definición* \[ En\]
 </dt> <dd>
 
-Identifica una [**\_ baseMetricDefinition de CIM**](cim-basemetricdefinition.md) para la que se controlarán las métricas.
+Identifica una [**\_ baseMetricDefinition cim**](cim-basemetricdefinition.md) para la que se controlarán las métricas.
 
 </dd> <dt>
 
@@ -99,7 +99,7 @@ Indica la operación deseada que se realizará en las métricas.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
+Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -122,7 +122,7 @@ Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un er
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -132,7 +132,7 @@ Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un er
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

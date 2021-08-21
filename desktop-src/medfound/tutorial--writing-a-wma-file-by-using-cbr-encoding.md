@@ -1,58 +1,58 @@
 ---
-description: En este tutorial se muestra cómo escribir un nuevo archivo de audio (. WMA) extrayendo contenido multimedia de un archivo de audio sin comprimir (. wav) y, a continuación, comprimirlo en formato ASF.
+description: En este tutorial se muestra cómo escribir un nuevo archivo de audio (.wma) extrayendo contenido multimedia de un archivo de audio sin comprimir (.wav) y comprima en formato ASF.
 ms.assetid: f310c6ed-52e7-4828-9d4c-2f7ced9080c5
-title: 'Tutorial: escribir un archivo WMA con objetos WMContainer'
+title: 'Tutorial: Escritura de un archivo WMA mediante objetos WMContainer'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d156b75ced6cde2953ec90362ed13b0cc53bb83c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4aed89eb9ef656fe9240a1ed56e712f92209ba5c7e6d5bea2cca3d909d4315ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972774"
 ---
-# <a name="tutorial-writing-a-wma-file-by-using-wmcontainer-objects"></a>Tutorial: escribir un archivo WMA con objetos WMContainer
+# <a name="tutorial-writing-a-wma-file-by-using-wmcontainer-objects"></a>Tutorial: Escritura de un archivo WMA mediante objetos WMContainer
 
-En este tutorial se muestra cómo escribir un nuevo archivo de audio (. WMA) extrayendo contenido multimedia de un archivo de audio sin comprimir (. wav) y, a continuación, comprimirlo en formato ASF. El modo de codificación utilizado para la conversión es la [codificación de velocidad de bits constante](constant-bit-rate-encoding.md) (CBR). En este modo, antes de la sesión de codificación, la aplicación especifica una velocidad de bits de destino que el codificador debe lograr.
+En este tutorial se muestra cómo escribir un nuevo archivo de audio (.wma) extrayendo contenido multimedia de un archivo de audio sin comprimir (.wav) y comprima en formato ASF. El modo de codificación utilizado para la conversión es [Codificación de velocidad de bits constante](constant-bit-rate-encoding.md) (CBR). En este modo, antes de la sesión de codificación, la aplicación especifica una velocidad de bits de destino que el codificador debe lograr.
 
-En este tutorial, creará una aplicación de consola que toma los nombres de archivo de entrada y salida como argumentos. La aplicación obtiene los ejemplos de medios sin comprimir de una aplicación de análisis de archivos de onda, que se proporciona con este tutorial. Estos ejemplos se envían al codificador para convertirlos al formato Windows Media Audio 9. El codificador está configurado para la codificación CBR y usa la primera velocidad de bits disponible durante la negociación de tipos de medios como la velocidad de bits de destino. Los ejemplos codificados se envían al multiplexor para la packetización en formato de datos ASF. Estos paquetes se escribirán en una secuencia de bytes que representa el objeto de datos ASF. Una vez que la sección de datos esté lista, creará un archivo de audio ASF y escribirá el nuevo objeto de encabezado ASF que consolida toda la información de encabezado y, a continuación, anexa la secuencia de bytes del objeto de datos ASF.
+En este tutorial, creará una aplicación de consola que toma los nombres de archivo de entrada y salida como argumentos. La aplicación obtiene los ejemplos de medios sin comprimir de una aplicación de análisis de archivos de onda, que se proporciona con este tutorial. Estos ejemplos se envían al codificador para su conversión Windows formato De audio multimedia 9. El codificador está configurado para la codificación CBR y usa la primera velocidad de bits disponible durante la negociación del tipo de medio como velocidad de bits de destino. Los ejemplos codificados se envían al multiplexor para la aplicación de paquetes en formato de datos ASF. Estos paquetes se escribirán en una secuencia de bytes que representa el objeto de datos de ASF. Una vez que la sección de datos esté lista, creará un archivo de audio ASF y escribirá el nuevo objeto de encabezado ASF que consolida toda la información de encabezado y, a continuación, anexará el flujo de bytes del objeto de datos de ASF.
 
-Este tutorial contiene las siguientes secciones:
+Este tutorial contiene las secciones siguientes:
 
 -   [Requisitos previos](#prerequisites)
 -   [Terminología](#terminology)
--   [1. configurar el proyecto](#1-set-up-the-project)
--   [2. declarar funciones auxiliares](#2-declare-helper-functions)
--   [3. abrir un archivo de audio](#3-open-an-audio-file)
--   [4. configurar el codificador](#4-configure-the-encoder)
--   [5. cree el objeto ContentInfo de ASF.](#5-create-the-asf-contentinfo-object)
--   [6. crear el multiplexor de ASF](#6-create-the-asf-multiplexer)
--   [7. generar nuevos paquetes de datos ASF](#7-generate-new-asf-data-packets)
--   [8. escribir el archivo ASF](#8-write-the-asf-file)
--   [9. definir la función Entry-Point](#9-define-the-entry-point-function)
+-   [1. Configure el Project](#1-set-up-the-project)
+-   [2. Declarar funciones auxiliares](#2-declare-helper-functions)
+-   [3. Abrir un archivo de audio](#3-open-an-audio-file)
+-   [4. Configuración del codificador](#4-configure-the-encoder)
+-   [5. Cree el objeto ContentInfo de ASF.](#5-create-the-asf-contentinfo-object)
+-   [6. Creación del multiplexor de ASF](#6-create-the-asf-multiplexer)
+-   [7. Generar nuevos paquetes de datos de ASF](#7-generate-new-asf-data-packets)
+-   [8. Escribir el archivo ASF](#8-write-the-asf-file)
+-   [9. Definición de la Entry-Point función](#9-define-the-entry-point-function)
 -   [Temas relacionados](#related-topics)
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
 En este tutorial se da por hecho lo siguiente:
 
--   Está familiarizado con la estructura de un archivo ASF y los componentes proporcionados por Media Foundation para trabajar con objetos ASF. Estos componentes incluyen los objetos ContentInfo, Splitter, multiplexor y Profile. Para obtener más información, consulte [WMCONTAINER ASF Components](wmcontainer-asf-components.md).
--   Está familiarizado con los codificadores de Windows Media y con los distintos tipos de codificación, especialmente CBR. Para obtener más información, consulte [codificadores de Windows Media](windows-media-encoders.md) .
--   Está familiarizado con los [búferes multimedia](media-buffers.md) y los flujos de bytes: en concreto, las operaciones de archivo que usan un flujo de bytes y la escritura del contenido de un búfer multimedia en una secuencia de bytes.
+-   Está familiarizado con la estructura de un archivo ASF y los componentes proporcionados por Media Foundation para trabajar con objetos de ASF. Estos componentes incluyen ContentInfo, splitter, multiplexor y objetos de perfil. Para obtener más información, vea [WmContainer ASF Components](wmcontainer-asf-components.md).
+-   Está familiarizado con los Windows multimedia y los distintos tipos de codificación, especialmente CBR. Para obtener más información, [vea Windows Media Encoders](windows-media-encoders.md) .
+-   Está familiarizado con los búferes multimedia y las [secuencias](media-buffers.md) de bytes: en concreto, las operaciones de archivo mediante una secuencia de bytes y la escritura del contenido de un búfer multimedia en una secuencia de bytes.
 
 ## <a name="terminology"></a>Terminología
 
-En este tutorial se usan los siguientes términos:
+En este tutorial se usan los términos siguientes:
 
--   Tipo de medio de origen: objeto de tipo de medio, expone la interfaz [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) , que describe el contenido del archivo de entrada.
--   Perfil de audio: objeto de perfil, expone la interfaz [**IMFASFProfile**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfprofile) , que solo contiene secuencias de audio del archivo de salida.
--   Stream Sample: ejemplo multimedia, expone la interfaz [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) , representa los datos multimedia del archivo de entrada obtenidos del codificador en un estado comprimido.
--   Objeto ContentInfo: el [objeto ContentInfo de ASF](asf-contentinfo-object.md), expone la interfaz [**IMFASFContentInfo**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) , que representa el objeto de encabezado ASF del archivo de salida.
--   Secuencia de bytes de datos: objeto de secuencia de bytes, expone la interfaz [**IMFByteStream**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream) , que representa la parte del objeto de datos ASF completa del archivo de salida.
--   Paquete de datos: ejemplo multimedia, expone la interfaz [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) , generada por el [multiplexor ASF](asf-multiplexer.md); representa un paquete de datos ASF que se escribirá en la secuencia de bytes de datos.
--   Secuencia de bytes de salida: objeto de flujo de bytes, expone la interfaz [**IMFByteStream**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream) , que incluye el contenido del archivo de salida.
+-   Tipo de medio de origen: objeto de tipo de medio, expone la interfaz [**IMFMediaType,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) que describe el contenido del archivo de entrada.
+-   Perfil de audio: objeto de perfil, expone la interfaz [**RECORDSETASFProfile,**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfprofile) que solo contiene secuencias de audio del archivo de salida.
+-   Ejemplo de secuencia: muestra multimedia, expone la interfaz [**DE PRUEBASEJEMPLO,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) representa los datos multimedia del archivo de entrada obtenidos del codificador en un estado comprimido.
+-   Objeto ContentInfo: [objeto ContentInfo](asf-contentinfo-object.md)de ASF , expone la interfaz [**DEFFContentInfo,**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) que representa el objeto de encabezado ASF del archivo de salida.
+-   Flujo de bytes de datos: objeto de secuencia de bytes, expone la interfaz [**BYTEByteStream,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream) que representa toda la parte del objeto de datos ASF del archivo de salida.
+-   Paquete de datos: ejemplo de medios, expone [**la interfaz DESAMPLESAMPLE,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample) generada por el [multiplexor de ASF](asf-multiplexer.md); representa un paquete de datos de ASF que se escribirá en el flujo de bytes de datos.
+-   Secuencia de bytes de salida: objeto de secuencia de bytes, expone la interfaz [**BYTEByteStream,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream) que contiene el contenido del archivo de salida.
 
-## <a name="1-set-up-the-project"></a>1. configurar el proyecto
+## <a name="1-set-up-the-project"></a>1. Configure el Project
 
 1.  Incluya los siguientes encabezados en el archivo de código fuente:
 
@@ -69,21 +69,21 @@ En este tutorial se usan los siguientes términos:
 
 2.  Vínculo a los siguientes archivos de biblioteca:
 
-    -   mfplat. lib
-    -   MF. lib
-    -   mfuuid. lib
+    -   mfplat.lib
+    -   mf.lib
+    -   mfuuid.lib
 
-3.  Declare la función [SafeRelease](saferelease.md) .
-4.  Incluya la clase CWmaEncoder en el proyecto. Para obtener el código fuente completo de esta clase, vea [código de ejemplo del codificador](encoder-example-code.md).
+3.  Declare la [función SafeRelease.](saferelease.md)
+4.  Incluya la clase CWmaEncoder en el proyecto. Para obtener el código fuente completo de esta clase, vea [Código de ejemplo de codificador](encoder-example-code.md).
 
-## <a name="2-declare-helper-functions"></a>2. declarar funciones auxiliares
+## <a name="2-declare-helper-functions"></a>2. Declarar funciones auxiliares
 
-En este tutorial se usan las siguientes funciones auxiliares para leer y escribir en una secuencia de bytes.
+En este tutorial se usan las siguientes funciones auxiliares para leer y escribir desde una secuencia de bytes.
 
--   `AppendToByteStream`: Anexa el contenido de una secuencia de bytes a otra secuencia de bytes.
+-   `AppendToByteStream`: anexa el contenido de una secuencia de bytes a otra secuencia de bytes.
 -   WriteBufferToByteStream: escribe datos de un búfer multimedia en una secuencia de bytes.
 
-Para obtener más información, vea [**IMFByteStream:: Write**](/windows/desktop/api/mfobjects/nf-mfobjects-imfbytestream-write). En el código siguiente se muestran estas funciones auxiliares:
+Para obtener más información, [**vea IMFByteStream::Write**](/windows/desktop/api/mfobjects/nf-mfobjects-imfbytestream-write). El código siguiente muestra estas funciones auxiliares:
 
 
 ```C++
@@ -169,9 +169,9 @@ HRESULT WriteBufferToByteStream(
 
 
 
-## <a name="3-open-an-audio-file"></a>3. abrir un archivo de audio
+## <a name="3-open-an-audio-file"></a>3. Abrir un archivo de audio
 
-En este tutorial se da por supuesto que la aplicación generará audio sin comprimir para la codificación. Para ello, se declaran dos funciones en este tutorial:
+En este tutorial se da por supuesto que la aplicación generará audio sin comprimir para la codificación. Para ello, en este tutorial se declaran dos funciones:
 
 
 ```C++
@@ -183,19 +183,19 @@ HRESULT GetNextAudioSample(BOOL *pbEOS, IMFSample **ppSample);
 
 La implementación de estas funciones se deja al lector.
 
--   La `OpenAudioFile` función debe abrir el archivo multimedia especificado por *pszURL* y devolver un puntero a un tipo de medio que describe una secuencia de audio.
--   La `GetNextAudioSample` función debe leer el audio PCM sin comprimir del archivo que abrió `OpenAudioFile` . Cuando se alcanza el final del archivo, *pbEOS* recibe el valor **true**. De lo contrario, *ppSample* recibe un ejemplo multimedia que contiene el búfer de audio.
+-   La función debe abrir el archivo multimedia especificado por pszURL y devolver un puntero a un tipo de medio que `OpenAudioFile` describa una secuencia de audio. 
+-   La `GetNextAudioSample` función debe leer el audio PCM sin comprimir del archivo abierto por `OpenAudioFile` . Cuando se alcanza el final del archivo, *pbEOS* recibe el valor **TRUE**. De lo contrario, *ppSample* recibe un ejemplo multimedia que contiene el búfer de audio.
 
-## <a name="4-configure-the-encoder"></a>4. configurar el codificador
+## <a name="4-configure-the-encoder"></a>4. Configuración del codificador
 
-A continuación, cree el codificador, configúrelo para que genere ejemplos de secuencias con codificación CBR y negocie los tipos de medios de entrada y salida.
+A continuación, cree el codificador, configúrelo para generar ejemplos de secuencias codificadas con CBR y negocie los tipos de medios de entrada y salida.
 
-En Media Foundation, los codificadores (exponer la interfaz [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) ) se implementan como [transformaciones Media Foundation](media-foundation-transforms.md) (MFT).
+En Media Foundation, los codificadores (exponen la interfaz [**DETRANSFORMTRANSFORM)**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) se implementan [como Media Foundation transforms](media-foundation-transforms.md) (MFT).
 
-En este tutorial, el codificador se implementa en la `CWmaEncoder` clase que proporciona un contenedor para la MFT. Para obtener el código fuente completo de esta clase, vea [código de ejemplo del codificador](encoder-example-code.md).
+En este tutorial, el codificador se implementa en la `CWmaEncoder` clase que proporciona un contenedor para MFT. Para obtener el código fuente completo de esta clase, vea [Código de ejemplo de codificador](encoder-example-code.md).
 
 > [!Note]  
-> Opcionalmente, puede especificar el tipo de codificación como CBR. De forma predeterminada, el codificador está configurado para usar codificación CBR. Para obtener más información, consulte [codificación de velocidad de bits constante](constant-bit-rate-encoding.md). Puede establecer propiedades adicionales en función del tipo de codificación, para obtener información sobre las propiedades que son específicas de un modo de codificación, consulte codificación de [velocidad de bits variable basada en la calidad](quality-based-variable-bit-rate--vbr--encoding.md), [codificación de velocidad](unconstrained-variable-bit-rate--vbr--encoding.md)de bits variable sin restricciones y [codificación de velocidad de bits variable restringida](peak-constrained-variable-bit-rate--vbr--encoding.md).
+> Opcionalmente, puede especificar el tipo de codificación como CBR. De forma predeterminada, el codificador está configurado para usar la codificación CBR. Para obtener más información, vea [Codificación de velocidad de bits constante.](constant-bit-rate-encoding.md) Puede establecer propiedades adicionales en función del tipo de codificación, para obtener información sobre las propiedades específicas de un modo de codificación, vea Codificación de velocidad de bits [variable](quality-based-variable-bit-rate--vbr--encoding.md)basada en calidad, Codificación de velocidad de bits variable sin [restricciones](unconstrained-variable-bit-rate--vbr--encoding.md)y Codificación de velocidad de bits [variable](peak-constrained-variable-bit-rate--vbr--encoding.md)limitada por pico.
 
  
 
@@ -239,23 +239,23 @@ En este tutorial, el codificador se implementa en la `CWmaEncoder` clase que pro
 
 
 
-## <a name="5-create-the-asf-contentinfo-object"></a>5. cree el objeto ContentInfo de ASF.
+## <a name="5-create-the-asf-contentinfo-object"></a>5. Cree el objeto ContentInfo de ASF.
 
 El [objeto ContentInfo de ASF](asf-contentinfo-object.md) contiene información sobre los distintos objetos de encabezado del archivo de salida.
 
-En primer lugar, cree un perfil ASF para la secuencia de audio:
+En primer lugar, cree un perfil de ASF para la secuencia de audio:
 
-1.  Llame a [**MFCreateASFProfile**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfprofile) para crear un objeto de perfil ASF vacío. El perfil ASF expone la interfaz [**IMFASFProfile**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfprofile) . Para obtener más información, vea [crear y configurar secuencias ASF](creating-and-configuring-asf-streams.md).
-2.  Obtiene el formato de audio codificado del `CWmaEncoder` objeto.
-3.  Llame a [**IMFASFProfile:: CreateStream (**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-createstream) para crear una nueva secuencia para el perfil ASF. Pase un puntero a la interfaz [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) , que representa el formato del flujo.
-4.  Llame a [**IMFASFStreamConfig:: SetStreamNumber**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-setstreamnumber) para asignar un identificador de flujo.
-5.  Establezca los parámetros de "depósito de fugas" estableciendo el atributo [**MF \_ ASFSTREAMCONFIG \_ LEAKYBUCKET1**](mf-asfstreamconfig-leakybucket1-attribute.md) en el objeto de secuencia.
-6.  Llame a [**IMFASFProfile:: SetStream**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-setstream) para agregar el nuevo flujo al perfil.
+1.  Llame [**a MFCreateASFProfile para**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfprofile) crear un objeto de perfil de ASF vacío. El perfil de ASF expone la [**interfaz IMFASFProfile.**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfprofile) Para obtener más información, [vea Creating and Configuring ASF Secuencias](creating-and-configuring-asf-streams.md).
+2.  Obtenga el formato de audio codificado del `CWmaEncoder` objeto .
+3.  Llame [**a IMFASFProfile::CreateStream**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-createstream) para crear una nueva secuencia para el perfil de ASF. Pase un puntero a la interfaz [**IMFMediaType,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype) que representa el formato de secuencia.
+4.  Llame [**a IMFASFStreamConfig::SetStreamNumber para**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfstreamconfig-setstreamnumber) asignar un identificador de secuencia.
+5.  Establezca los parámetros "leaky bucket" estableciendo el atributo [**MF \_ ASFSTREAMCONFIG \_ LEAKYBUCKET1**](mf-asfstreamconfig-leakybucket1-attribute.md) en el objeto de secuencia.
+6.  Llame [**a IMFASFProfile::SetStream**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfprofile-setstream) para agregar la nueva secuencia al perfil.
 
-Ahora, cree el objeto ASF ContentInfo como se indica a continuación:
+Ahora cree el objeto ContentInfo de ASF como se muestra a continuación:
 
-1.  Llame a [**MFCreateASFContentInfo**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfcontentinfo) para crear un objeto ContentInfo vacío.
-2.  Llame a [**IMFASFContentInfo:: SetProfile**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-setprofile) para establecer el perfil de ASF.
+1.  Llame [**a MFCreateASFContentInfo para**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfcontentinfo) crear un objeto ContentInfo vacío.
+2.  Llame [**a IMFASFContentInfo::SetProfile**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-setprofile) para establecer el perfil de ASF.
 
 El siguiente código muestra estos pasos:
 
@@ -360,13 +360,13 @@ done:
 
 
 
-## <a name="6-create-the-asf-multiplexer"></a>6. crear el multiplexor de ASF
+## <a name="6-create-the-asf-multiplexer"></a>6. Creación del multiplexor de ASF
 
-El [multiplexor de ASF](asf-multiplexer.md) genera paquetes de datos ASF.
+El [multiplexor de ASF](asf-multiplexer.md) genera paquetes de datos de ASF.
 
-1.  Llame a [**MFCreateASFMultiplexer**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmultiplexer) para crear el multiplexor de ASF.
-2.  Llame a [**IMFASFMultiplexer:: Initialize**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-initialize) para inicializar el multiplexor. Pase un puntero al objeto de información de contenido ASF, que se creó en la sección anterior.
-3.  Llame a [**IMFASFMultiplexer:: SetFlags**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-setflags) para establecer la marca de **velocidad de \_ \_ \_ bits autoajuste del multiplexor de MFASF** . Cuando se usa esta configuración, el multiplexor ajusta automáticamente la velocidad de bits del contenido ASF para que coincida con las características de las secuencias que se multiplexan.
+1.  Llame [**a MFCreateASFMultiplexer para**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmultiplexer) crear el multiplexor de ASF.
+2.  Llame [**a IMFASFMultiplexer::Initialize**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-initialize) para inicializar el multiplexor. Pase un puntero al objeto De información de contenido de ASF, que se creó en la sección anterior.
+3.  Llame [**a IMFASFMultiplexer::SetFlags**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-setflags) para establecer la marca **MFASF \_ MULTIPLEXER \_ AUTOADJUST \_ BITRATE.** Cuando se usa esta configuración, el multiplexor ajusta automáticamente la velocidad de bits del contenido de ASF para que coincida con las características de las secuencias que se multiplexa.
 
 
 ```C++
@@ -413,20 +413,20 @@ done:
 
 
 
-## <a name="7-generate-new-asf-data-packets"></a>7. generar nuevos paquetes de datos ASF
+## <a name="7-generate-new-asf-data-packets"></a>7. Generar nuevos paquetes de datos de ASF
 
-A continuación, genere paquetes de datos ASF para el nuevo archivo. Estos paquetes de datos constituirán el último objeto de datos ASF del nuevo archivo. Para generar nuevos paquetes de datos ASF:
+A continuación, genere paquetes de datos de ASF para el nuevo archivo. Estos paquetes de datos constituyen el objeto de datos de ASF final para el nuevo archivo. Para generar nuevos paquetes de datos de ASF:
 
-1.  Llame a [**MFCreateTempFile**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatetempfile) para crear una secuencia de bytes temporal que contenga los paquetes de datos ASF.
-2.  Llame a la función definida por la aplicación `GetNextAudioSample` para obtener datos de audio sin comprimir para el codificador.
-3.  Pase el audio sin comprimir al codificador para la compresión. Para obtener más información, vea [procesar datos en el codificador](processing-data-in-the-encoder.md)
-4.  Llame a [**IMFASFMultiplexer::P rocesssample**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-processsample) para enviar las muestras de audio comprimidas al multiplexor de ASF para la packetización.
-5.  Obtenga los paquetes ASF del multiplexor y escríbalos en la secuencia de bytes temporal. Para obtener más información, consulte [generación de nuevos paquetes de datos ASF](generating-new-asf-data-packets.md).
-6.  Cuando llegue al final de la secuencia de origen, vacíe el codificador y extraiga los ejemplos comprimidos restantes del codificador. Para obtener más información acerca de cómo purgar una MFT, vea [modelo de procesamiento de MFT básico](basic-mft-processing-model.md).
-7.  Después de enviar todas las muestras al multiplexor, llame a [**IMFASFMultiplexer:: Flush**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-flush) y extraiga los paquetes ASF restantes del multiplexor.
-8.  Llame a [**IMFASFMultiplexer:: end**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-end).
+1.  Llame [**a MFCreateTempFile para**](/windows/desktop/api/mfapi/nf-mfapi-mfcreatetempfile) crear una secuencia de bytes temporal para contener los paquetes de datos de ASF.
+2.  Llame a la función definida por la aplicación para obtener datos de audio sin `GetNextAudioSample` comprimir para el codificador.
+3.  Pase el audio sin comprimir al codificador para la compresión. Para más información, consulte [Procesamiento de datos en el codificador.](processing-data-in-the-encoder.md)
+4.  Llame [**a IMFASFMultiplexer::P rocessSample**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-processsample) para enviar las muestras de audio comprimido al multiplexor de ASF para la aplicación de paquetes.
+5.  Obtenga los paquetes ASF del multiplexor y escríbalos en la secuencia de bytes temporal. Para obtener más información, vea [Generar nuevos paquetes de datos de ASF.](generating-new-asf-data-packets.md)
+6.  Cuando llegue al final de la secuencia de origen, escurra el codificador y extrae las muestras comprimidas restantes del codificador. Para obtener más información sobre cómo purgar un MFT, vea [Basic MFT Processing Model](basic-mft-processing-model.md).
+7.  Una vez que se envíen todas las muestras al multiplexor, llame a [**MULTICASTASFMultiplexer::Flush**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-flush) y extraiga los paquetes ASF restantes del multiplexor.
+8.  Llame [**a IMFASFMultiplexer::End**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-end).
 
-El código siguiente genera paquetes de datos ASF. La función devuelve un puntero a una secuencia de bytes que contiene el objeto de datos ASF.
+El código siguiente genera paquetes de datos de ASF. La función devuelve un puntero a una secuencia de bytes que contiene el objeto de datos ASF.
 
 
 ```C++
@@ -593,13 +593,13 @@ done:
 
 
 
-El código de la `GenerateASFDataPackets` función se muestra en el tema [generar nuevos paquetes de datos ASF](generating-new-asf-data-packets.md).
+El código de `GenerateASFDataPackets` la función se muestra en el tema [Generating New ASF Data Packets](generating-new-asf-data-packets.md).
 
-## <a name="8-write-the-asf-file"></a>8. escribir el archivo ASF
+## <a name="8-write-the-asf-file"></a>8. Escribir el archivo ASF
 
-Después, escriba el encabezado ASF en un búfer multimedia mediante una llamada a [**IMFASFContentInfo:: GenerateHeader**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generateheader). Este método convierte los datos almacenados en el objeto ContentInfo en datos binarios en formato de objeto de encabezado ASF. Para obtener más información, vea [generar un nuevo objeto de encabezado ASF](generating-a-new-asf-header-object.md).
+A continuación, escriba el encabezado ASF en un búfer multimedia mediante una llamada a [**IMFASFContentInfo::GenerateHeader**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-generateheader). Este método convierte los datos almacenados en el objeto ContentInfo en datos binarios en formato de objeto de encabezado ASF. Para obtener más información, vea [Generar un nuevo objeto de encabezado ASF](generating-a-new-asf-header-object.md).
 
-Una vez generado el nuevo objeto de encabezado ASF, cree una secuencia de bytes para el archivo de salida. En primer lugar, escriba el objeto de encabezado en la secuencia de bytes de salida. Siga el objeto de encabezado con el objeto de datos contenido en la secuencia de bytes de datos.
+Una vez generado el nuevo objeto de encabezado ASF, cree una secuencia de bytes para el archivo de salida. En primer lugar, escriba el objeto de encabezado en el flujo de bytes de salida. Siga el objeto de encabezado con el objeto de datos incluido en la secuencia de bytes de datos.
 
 
 ```C++
@@ -674,11 +674,11 @@ done:
 
 
 
-## <a name="9-define-the-entry-point-function"></a>9. definir la función Entry-Point
+## <a name="9-define-the-entry-point-function"></a>9. Definición de la Entry-Point función
 
-Ahora puede poner los pasos anteriores juntos en una aplicación completa. Antes de usar cualquiera de los objetos Media Foundation, inicialice la plataforma de Media Foundation mediante una llamada a [**MFStartup**](/windows/desktop/api/mfapi/nf-mfapi-mfstartup). Cuando haya terminado, llame a [**MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown). Para obtener más información, vea [inicializar Media Foundation](initializing-media-foundation.md).
+Ahora puede colocar los pasos anteriores en una aplicación completa. Antes de usar cualquiera de los Media Foundation, inicialice la plataforma Media Foundation mediante una llamada [**a MFStartup**](/windows/desktop/api/mfapi/nf-mfapi-mfstartup). Cuando haya terminado, llame a [**MFShutdown**](/windows/desktop/api/mfapi/nf-mfapi-mfshutdown). Para obtener más información, vea [Inicializar Media Foundation](initializing-media-foundation.md).
 
-En el código siguiente se muestra la aplicación de consola completa. El argumento de línea de comandos especifica el nombre del archivo que se va a convertir y el nombre del nuevo archivo de audio.
+El código siguiente muestra la aplicación de consola completa. El argumento de línea de comandos especifica el nombre del archivo que se convertirá y el nombre del nuevo archivo de audio.
 
 
 ```C++
@@ -799,7 +799,7 @@ done:
 
 <dl> <dt>
 
-[Componentes de WMContainer ASF](wmcontainer-asf-components.md)
+[Componentes de ASF de WMContainer](wmcontainer-asf-components.md)
 </dt> <dt>
 
 [Compatibilidad con ASF en Media Foundation](asf-support-in-media-foundation.md)

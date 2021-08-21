@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. dropDownImage
-description: El atributo dropDownImage especifica o recupera el nombre de la imagen utilizada para el botón de lista desplegable que se muestra en el borde derecho de la lista desplegable.
+title: PLAYLIST.dropDownImage
+description: El atributo dropDownImage especifica o recupera el nombre de la imagen usada para el botón de lista desplegable que se muestra en el borde derecho de la lista desplegable.
 ms.assetid: 92454a8a-1688-4b5d-887d-6847f4232d87
 keywords:
-- Windows Media Player de lista de reproducción. dropDownImage
+- PLAYLIST.dropDownImage Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f583fb0cb7b10bd56c19a3863649ac750f5b254a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b3173462cc7b055639a685917b87f1560adf5eabc8d0d7678788fa6a6c72129d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054213"
 ---
-# <a name="playlistdropdownimage"></a>Lista de reproducción. dropDownImage
+# <a name="playlistdropdownimage"></a>PLAYLIST.dropDownImage
 
-El atributo **dropDownImage** especifica o recupera el nombre de la imagen utilizada para el botón de lista desplegable que se muestra en el borde derecho de la lista desplegable.
+El **atributo dropDownImage** especifica o recupera el nombre de la imagen usada para el botón de lista desplegable que se muestra en el borde derecho de la lista desplegable.
 
 ``` syntax
         elementID.dropDownImage
@@ -29,19 +29,19 @@ El atributo **dropDownImage** especifica o recupera el nombre de la imagen utili
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene el nombre de un archivo de imagen. No tiene valor predeterminado.
+Este atributo es una cadena de **lectura** y escritura que contiene el nombre de un archivo de imagen. No tiene valor predeterminado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo admite archivos PNG, JPG, BMP y GIF. Si la imagen es un archivo BMP de 8 bits, sus valores de matiz y saturación se pueden cambiar dinámicamente con los atributos **hueShift** y **saturación** .
+Este atributo admite archivos PNG, JPG, BMP y GIF. Si la imagen es un archivo BMP de 8 bits, sus valores de matiz y saturación se pueden cambiar dinámicamente mediante los **atributos hueShift** y **saturación.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -49,16 +49,16 @@ Este atributo admite archivos PNG, JPG, BMP y GIF. Si la imagen es un archivo BM
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**Lista de reproducción. dropDownBackgroundImage**](playlist-dropdownbackgroundimage.md)
+[**PLAYLIST.dropDownBackgroundImage**](playlist-dropdownbackgroundimage.md)
 </dt> <dt>
 
-[**Lista de reproducción. hueShift**](playlist-hueshift.md)
+[**PLAYLIST.hueShift**](playlist-hueshift.md)
 </dt> <dt>
 
-[**Lista de reproducción. saturación**](playlist-saturation.md)
+[**PLAYLIST.saturation**](playlist-saturation.md)
 </dt> </dl>
 
  

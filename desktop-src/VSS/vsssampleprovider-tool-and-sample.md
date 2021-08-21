@@ -1,29 +1,29 @@
 ---
-description: Muestra cómo usar las interfaces VSS para crear un proveedor de hardware VSS.
+description: Muestra cómo usar las interfaces de VSS para crear un proveedor de hardware de VSS.
 ms.assetid: 4d3c3f3c-22d2-4246-afef-aee2a0bd52d6
-title: Herramienta y ejemplo de VssSampleProvider
+title: Ejemplo y herramienta VssSampleProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1fceaa65b851e5469a3e82323da92d8bde0651a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8263c8c0db811892cf32f3887a862e13156a22934edac44d0b2c7a6922cbd6bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118842393"
 ---
-# <a name="vsssampleprovider-tool-and-sample"></a>Herramienta y ejemplo de VssSampleProvider
+# <a name="vsssampleprovider-tool-and-sample"></a>Ejemplo y herramienta VssSampleProvider
 
-Muestra cómo usar las [interfaces](volume-shadow-copy-api-interfaces.md) VSS para crear un proveedor de hardware VSS.
+Muestra cómo usar las [interfaces](volume-shadow-copy-api-interfaces.md) de VSS para crear un proveedor de hardware de VSS.
 
 > [!Note]  
-> La herramienta VssSampleProvider y el ejemplo se incluyen en el kit de desarrollo de software (SDK) de Microsoft Windows. Puede descargar el Windows SDK desde el [Kit de desarrollo de software (SDK) de Windows para Windows 8](https://developer.microsoft.com/windows/downloads/windows-8-sdk).
+> La herramienta VssSampleProvider y el ejemplo se incluyen en el Kit de desarrollo de software (SDK) de Microsoft Windows. Puede descargar el SDK de Windows desde [Windows Software Development Kit (SDK) para Windows 8](https://developer.microsoft.com/windows/downloads/windows-8-sdk).
 
  
 
-En la instalación de Windows SDK, la herramienta VssSampleProvider se puede encontrar en `%Program Files(x86)%\Windows Kits\8.1\bin\x64` (para Windows de 64 bits) y `%Program Files(x86)%\Windows Kits\8.1\bin\x86` (para windows de 32 bits).
+En la instalación del SDK de Windows, la herramienta VssSampleProvider se puede encontrar en (para Windows de 64 bits) y (para archivos de `%Program Files(x86)%\Windows Kits\8.1\bin\x64` `%Program Files(x86)%\Windows Kits\8.1\bin\x86` 32 Windows).
 
 > [!Note]  
-> Los proveedores de hardware solo se admiten en sistemas operativos Windows Server. En un sistema operativo de cliente de Windows, puede compilar el ejemplo VssSampleProvider, pero no puede registrarlo como proveedor de hardware.
+> Los proveedores de hardware solo se admiten en Windows operativos server. En un Windows operativo cliente, puede compilar el ejemplo VssSampleProvider, pero no puede registrarlo como proveedor de hardware.
 
  
 
@@ -36,9 +36,9 @@ La herramienta VssSampleProvider consta de los siguientes archivos:
 
 El ejemplo VssSampleProvider incluye los siguientes scripts de instalación y desinstalación:
 
--   Install-sampleprovider. cmd
--   Uninstall-sampleprovider. cmd
--   Registrar \_app.vbs
+-   Install-sampleprovider.cmd
+-   Uninstall-sampleprovider.cmd
+-   Registro \_app.vbs
 
 **Para instalar y usar el ejemplo VssSampleProvider**
 
@@ -71,15 +71,15 @@ El ejemplo VssSampleProvider incluye los siguientes scripts de instalación y de
 
         
 
-        Este comando crea un LUN virtual cuyo identificador de almacenamiento es **proveedor de HW de ejemplo de VSS**. Para crear LUN virtuales adicionales, repita este paso.
+        Este comando crea un LUN virtual cuyo identificador de almacenamiento es proveedor de HW de ejemplo **de VSS.** Para crear LUN virtuales adicionales, repita este paso.
 
-        El proveedor de ejemplo de VSS reconoce un LUN solo si el **proveedor de HW de ejemplo de VSS** forma parte del identificador de almacenamiento. Para obtener más información sobre el identificador de almacenamiento, consulte la siguiente entrada de blog.
+        El proveedor de ejemplo de VSS reconoce un LUN solo si el proveedor de HW de ejemplo de **VSS** forma parte del identificador de almacenamiento. Para obtener más información sobre el identificador de almacenamiento, vea la siguiente entrada de blog.
 
-        [LUN: resincronización con DiskShadow y almacenamiento virtual](https://blogs.msdn.microsoft.com/b/himanshu_kale/archive/2009/06/02/lun-resync-with-diskshadow-virtual-storage.aspx)
+        [LUN: resincronización con Diskshadow y Virtual Storage](https://blogs.msdn.microsoft.com/b/himanshu_kale/archive/2009/06/02/lun-resync-with-diskshadow-virtual-storage.aspx)
 
-    2.  En la ventana del símbolo del sistema, use diskpart.exe para formatear el disco virtual y asignarle una letra de unidad.
+    2.  En la ventana del símbolo del sistema, use diskpart.exe para dar formato al disco virtual y asignarle una letra de unidad.
 
-        Este es un script de ejemplo para ejecutar en el símbolo del sistema de Diskpart.
+        Este es un script de ejemplo para ejecutarlo en el símbolo del sistema diskpart.
 
         ```cmd
         Select disk 

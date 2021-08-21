@@ -1,9 +1,9 @@
 ---
-title: Métodos SetClip IDCompositionVisual (Dcomp. h)
-description: Establece la propiedad clip de este objeto visual en la región rectangular o el objeto de clip especificados.
+title: Métodos IDCompositionVisual SetClip (Dcomp.h)
+description: Establece la propiedad Clip de este objeto visual en la región rectangular o el objeto de recorte especificados.
 ms.assetid: ACEBA4F9-E1B0-459B-8DC2-272A822AB214
 keywords:
-- SetClip (métodos) DirectComposition
+- Métodos SetClip DirectComposition
 topic_type:
 - apiref
 api_location:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: e421c916d305b95029bb6ffd8328346b4ea36918
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1cc1d0f24c30e6ec11ecaa40b0317109eddaf432ee311a5b9545f34f7afa8582
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043063"
 ---
-# <a name="idcompositionvisualsetclip-methods"></a>IDCompositionVisual:: SetClip (métodos)
+# <a name="idcompositionvisualsetclip-methods"></a>Métodos IDCompositionVisual::SetClip
 
-Establece la propiedad clip de este objeto visual en la región rectangular o el objeto de clip especificados. La propiedad clip restringe la representación del subárbol visual que está en la raíz de este visual a una región rectangular.
+Establece la propiedad Clip de este objeto visual en la región rectangular o el objeto de recorte especificados. La propiedad Clip restringe la representación del subárbol visual que se basa en este objeto visual a una región rectangular.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Establece la propiedad clip de este objeto visual en la región rectangular o el
 
 | Método                                                                                | Descripción                                                            |
 |:--------------------------------------------------------------------------------------|:-----------------------------------------------------------------------|
-| [**SetClip (const D2D \_ Rect \_ F&)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setclip(constd2d_rect_f_)) | Establece la propiedad clip en la región rectangular especificada.<br/> |
-| [**SetClip (IDCompositionClip \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setclip(idcompositionclip)) | Establece la propiedad clip en el objeto de clip especificado.<br/>        |
+| [**SetClip(const D2D \_ RECT \_ F&)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setclip(constd2d_rect_f_)) | Establece la propiedad Clip en la región rectangular especificada.<br/> |
+| [**SetClip(IDCompositionClip \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setclip(idcompositionclip)) | Establece la propiedad Clip en el objeto de recorte especificado.<br/>        |
 
 
 
@@ -38,12 +38,12 @@ Establece la propiedad clip de este objeto visual en la región rectangular o el
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Dcomp. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Dcomp. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows solo 8 \[ aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2012 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 

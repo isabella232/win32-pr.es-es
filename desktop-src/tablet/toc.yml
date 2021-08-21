@@ -4,9 +4,9 @@
     - name: Introducción
       href: getting-started.md
       items:
-        - name: Historial de plataformas de Tableta PC
+        - name: Historial de la plataforma de Tablet PC
           href: tablet-pc-platform-history.md
-        - name: Novedades del desarrollo de tablet PC
+        - name: Novedades del desarrollo de tabletas PC
           href: what-s-new-in-tablet-pc-development.md
         - name: El entorno de desarrollo
           href: the-development-environment.md
@@ -19,7 +19,7 @@
               href: managed-library-and-controls--tablet-pc.md
             - name: Windows Presentation Foundation (Tablet PC)
               href: windows-presentation-foundation--tablet-pc.md
-            - name: Biblioteca COM y controles ActiveX (Tablet PC)
+            - name: Biblioteca COM y ActiveX (Tablet PC)
               href: com-library-and-activex-controls--tablet-pc.md
         - name: Preguntas más frecuentes
           href: frequently-asked-questions.yml
@@ -40,7 +40,7 @@
             - name: Uso del contexto para mejorar la precisión
               href: using-context-to-improve-accuracy.md
               items:
-                - name: Uso del contexto en la plataforma de tablet PC
+                - name: Uso del contexto en la plataforma de Tablet PC
                   href: how-the-tablet-pc-platform-uses-context.md
                   items:
                     - name: Acerca de los modelos de lenguaje
@@ -49,9 +49,9 @@
                       href: input-scopes-and-factoids.md
                     - name: Diccionarios y listas de frases
                       href: dictionaries-and-phrase-lists.md
-                - name: Establecer contexto con las API SetInputScope
+                - name: Establecer el contexto con las API SetInputScope
                   href: setting-context-with-the-setinputscope-apis.md
-                - name: Establecer contexto para Ink-Enabled controles
+                - name: Establecer el contexto para Ink-Enabled controles
                   href: setting-context-for-ink-enabled-controls.md
                 - name: Establecer contexto para controles sin ventanas
                   href: setting-context-for-windowless-controls.md
@@ -74,7 +74,7 @@
                           href: english--united-states--factoids.md
                         - name: Factoids en inglés (en todo el mundo)
                           href: english--worldwide--factoids.md
-                        - name: Factoids francés
+                        - name: Factoids en francés
                           href: french-factoids.md
                         - name: Factoids en alemán
                           href: german-factoids.md
@@ -83,15 +83,15 @@
                     - name: Factoids para idiomas de Asia Oriental
                       href: factoids-for-east-asian-languages.md
                       items:
-                        - name: Factoids japoneses
+                        - name: Factoids en japonés
                           href: japanese-factoids.md
-                        - name: Factoids chino (simplificado)
+                        - name: Factoids de chino (simplificado)
                           href: chinese--simplified--factoids.md
-                        - name: Factoids chino (tradicional)
+                        - name: Factoids de chino (tradicional)
                           href: chinese--traditional--factoids.md
                         - name: Factoids coreanos
                           href: korean-factoids.md
-            - name: Diccionarios y factoides
+            - name: Diccionarios y factoids
               href: dictionaries-and-factoids.md
             - name: Segmentos de reconocimiento
               href: recognition-segments.md
@@ -104,11 +104,11 @@
               items:
                 - name: 'Descripción de las listas de palabras, el contexto del reconocedor y factoids'
                   href: understanding-wordlists--the-recognizercontext--and-factoids.md
-                - name: Uso de diccionarios de aplicaciones con las API de la plataforma de TABLET PC
+                - name: Uso de diccionarios de aplicaciones con las API de la plataforma de Tablet PC
                   href: using-application-dictionaries-with-the-tablet-pc-platform-apis.md
-                - name: Crear diccionarios personalizados para el reconocimiento de escritura a mano en Windows 7 y Windows Server 2008 R2
+                - name: Creación de diccionarios personalizados para el reconocimiento de escritura a mano en Windows 7 y Windows Server 2008 R2
                   href: creating-custom-dictionaries-for-handwriting-recognition-in-windows-7-and-windows-server-2008-r2.md
-            - name: 'Propiedad Confidence [Acerca del reconocimiento'
+            - name: 'Propiedad Confianza [Acerca del reconocimiento'
               href: confidence-property--about-recognition.md
             - name: Alternativas
               href: alternates.md
@@ -123,7 +123,7 @@
                   href: hrecognizer-and-hrecocontext.md
                 - name: Recognizer Lattice (estructura)
                   href: recognizer-lattice-structure.md
-                - name: Registro del archivo DLL de Recognizer
+                - name: Registrar el archivo DLL de Recognizer
                   href: registering-your-recognizer-dll.md
                 - name: Consideraciones sobre el subprocesamiento del reconocedor
                   href: recognizer-threading-considerations.md
@@ -153,7 +153,7 @@
                   href: ink-collection-plug-ins.md
                 - name: Dynamic-Renderer complementos
                   href: dynamic-renderer-plug-ins.md
-                - name: Complementos de Recognizer
+                - name: Complementos de recognizer
                   href: recognizer-plug-ins.md
             - name: Consideraciones al usar stylusinput API
               href: considerations-when-using-the-stylusinput-apis.md
@@ -162,22 +162,22 @@
                   href: design-considerations-for-the-stylusinput-apis.md
                 - name: Consideraciones sobre subprocesos para StylusInput API
                   href: threading-considerations-for-the-stylusinput-apis.md
-                - name: El modelo RealTimeStylus en cascada
+                - name: Modelo RealTimeStylus en cascada
                   href: the-cascaded-realtimestylus-model.md
                 - name: Consideraciones sobre el control de errores para StylusInput API
                   href: error-handling-considerations-for-the-stylusinput-apis.md
-                - name: Consideraciones de rendimiento para stylusInput API
+                - name: Consideraciones de rendimiento para StylusInput API
                   href: performance-considerations-for-the-stylusinput-apis.md
                 - name: Consideraciones de confianza parcial para StylusInput API
                   href: partial-trust-considerations-for-the-stylusinput-apis.md
         - name: Creación de una instalación redistribuible
           href: creating-a-redistributable-setup.md
-        - name: Determinar si un pc es un tablet PC
+        - name: Determinar si un equipo es un tablet PC
           href: determining-whether-a-pc-is-a-tablet-pc.md
-        - name: Borrado de la entrada de lápiz con el lápiz
+        - name: Borrar la entrada de lápiz con el lápiz
           href: erasing-ink-with-the-pen.md
           items:
-            - name: Borrado mediante el objeto InkOverlay
+            - name: Borrado mediante el uso del objeto InkOverlay
               href: erasing-by-using-the-inkoverlay-object.md
             - name: Borrado mediante el lápiz
               href: erasing-by-using-the-pen.md
@@ -190,12 +190,12 @@
               href: basic-recognition-and-ink-analysis.md
             - name: Proxy de datos con análisis de entrada de lápiz
               href: data-proxy-with-ink-analysis.md
-            - name: Flujo de eventos del proxy de datos
+            - name: Eventos de proxy de datos Flow
               href: data-proxy-event-flow.md
             - name: El objeto divisor
               href: the-divider-object.md
               items:
-                - name: Análisis de entrada de lápiz con el objeto divisor
+                - name: Ink Analyis con el objeto divisor
                   href: ink-analyis-with-the-divider-object.md
                 - name: Análisis de diseño
                   href: layout-analysis.md
@@ -209,12 +209,12 @@
                   href: working-with-a-strokes-collection.md
                 - name: Trabajar con un contexto de reconocedor
                   href: working-with-a-recognizer-context.md
-                - name: Otras consideraciones sobre el divisor
+                - name: Otras consideraciones del divisor
                   href: other-divider-considerations.md
         - name: Controles de entrada de lápiz
           href: ink-controls.md
           items:
-            - name: Agregar controles de entrada de lápiz a un proyecto
+            - name: Agregar controles ink a un Project
               href: adding-ink-controls-to-a-project.md
             - name: InkEdit Control
               href: inkedit-control.md
@@ -261,7 +261,7 @@
               href: no-touch-deployment.md
             - name: Controles web
               href: web-controls.md
-            - name: Ink-Enabled web
+            - name: Ink-Enabled Web Applications
               href: ink-enabled-web-applications.md
             - name: Seguridad y confianza
               href: security-and-trust.md
@@ -276,7 +276,7 @@
               href: ink-recognition.md
             - name: Análisis de la entrada de lápiz
               href: ink-analysis.md
-            - name: Reconocimiento de escritura a mano en Windows Server 2008 R2
+            - name: Reconocimiento de escritura a mano Windows Server 2008 R2
               href: handwriting-recognition-in-windows-server-2008-r2.md
         - name: Programar el Control de entrada matemática
           href: programming-the-math-input-control.md
@@ -344,7 +344,7 @@
                   href: recognizercontext-object-events.md
                 - name: Eventos de colección de trazos
                   href: strokes-collection-events.md
-        - name: Herramienta Recortes en Windows Vista
+        - name: Herramienta Recortes compatibilidad con Windows Vista
           href: snipping-tool-support-in-windows-vista.md
         - name: Voz y accesibilidad
           href: speech-and-accessibility.md
@@ -354,7 +354,7 @@
             - name: Exponer controles y menús
               href: exposing-controls-and-menus.md
               items:
-                - name: Uso de controles estándar de Windows
+                - name: Uso de controles Windows estándar
                   href: using-standard-windows-controls.md
                 - name: Usar controles personalizados
                   href: using-custom-controls.md
@@ -830,7 +830,7 @@
                   items:
                     - name: get_Id (método)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizer2-get_id
-                    - name: get_UnicodeRanges (método)
+                    - name: get_UnicodeRanges método
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizer2-get_unicoderanges
                 - name: IInkRecognizerContext2 (Interfaz)
                   href: /windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognizercontext2
@@ -919,7 +919,7 @@
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinktablet-get_maximuminputrectangle
                     - name: Propiedad PlugAndPlayID
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinktablet-get_plugandplayid
-                - name: IInkTablet2 (interfaz)
+                - name: Interfaz IInkTablet2
                   href: /windows/desktop/api/msinkaut/nn-msinkaut-iinktablet2
                   items:
                     - name: Propiedad DeviceKind
@@ -1003,7 +1003,7 @@
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-get_renderer
                     - name: SetAllTabletsMode (método)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-setalltabletsmode
-                    - name: SetEventInterest (método)
+                    - name: Método SetEventInterest
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-seteventinterest
                     - name: SetGestureStatus (método)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkcollector-setgesturestatus
@@ -1085,14 +1085,14 @@
                       href: /windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivider-divide
                     - name: Propiedad LineHeight
                       href: /windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivider-get_lineheight
-                    - name: Propiedad RecognizerContext
+                    - name: RecognizerContext (propiedad)
                       href: /windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivider-get_recognizercontext
                     - name: Propiedad Strokes
                       href: /windows/desktop/api/msinkaut15/nf-msinkaut15-iinkdivider-get_strokes
                 - name: InkDrawingAttributes (clase)
                   href: inkdrawingattributes-class.md
                   items:
-                    - name: Propiedad AntiAliased
+                    - name: AntiAliased (propiedad)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_antialiased
                     - name: Método Clone
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-clone
@@ -1110,7 +1110,7 @@
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_pentip
                     - name: Propiedad RasterOperation
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_rasteroperation
-                    - name: Propiedad Transparencia
+                    - name: Propiedad Transparency
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_transparency
                     - name: Propiedad Width
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkdrawingattributes-get_width
@@ -1121,7 +1121,7 @@
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_attachmode
                     - name: Propiedad AutoRedraw
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_autoredraw
-                    - name: Propiedad CollectingInk
+                    - name: CollectingInk (propiedad)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_collectingink
                     - name: Propiedad CollectionMode
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_collectionmode
@@ -1135,7 +1135,7 @@
                       href: inkoverlay-cursorinrange.md
                     - name: Evento CursorOutOfRange
                       href: inkoverlay-cursoroutofrange.md
-                    - name: Propiedad Cursors
+                    - name: Cursors (propiedad)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_cursors
                     - name: Propiedad DefaultDrawingAttributes
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_defaultdrawingattributes
@@ -1153,7 +1153,7 @@
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_enabled
                     - name: Propiedad EraserMode
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_erasermode
-                    - name: Propiedad EraserWidth
+                    - name: EraserWidth (propiedad)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_eraserwidth
                     - name: Evento de gesto
                       href: inkoverlay-gesture.md
@@ -1161,7 +1161,7 @@
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-geteventinterest
                     - name: GetGestureStatus (método)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-getgesturestatus
-                    - name: GetWindowInputRectangle (método)
+                    - name: Método GetWindowInputRectangle
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-getwindowinputrectangle
                     - name: HitTestSelection (método)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-hittestselection
@@ -1189,11 +1189,11 @@
                       href: inkoverlay-newinairpackets.md
                     - name: Evento NewPackets
                       href: inkoverlay-newpackets.md
-                    - name: Evento painted
+                    - name: Evento dibujado
                       href: inkoverlay-painted.md
                     - name: Evento de dibujo
                       href: inkoverlay-painting.md
-                    - name: Propiedad Renderer
+                    - name: Renderer (propiedad)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_renderer
                     - name: Propiedad Selection
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_selection
@@ -1211,7 +1211,7 @@
                       href: inkoverlay-selectionresizing.md
                     - name: SetAllTabletsMode (método)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-setalltabletsmode
-                    - name: SetEventInterest (método)
+                    - name: Método SetEventInterest
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-seteventinterest
                     - name: SetGestureStatus (método)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-setgesturestatus
@@ -1221,7 +1221,7 @@
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-setwindowinputrectangle
                     - name: Evento de trazo
                       href: inkoverlay-stroke.md
-                    - name: Evento StrokesDeleted
+                    - name: StrokesDeleted (evento)
                       href: inkoverlay-strokesdeleted.md
                     - name: Evento StrokesDeleting
                       href: inkoverlay-strokesdeleting.md
@@ -1233,7 +1233,7 @@
                       href: inkoverlay-systemgesture.md
                     - name: Propiedad de tableta
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkoverlay-get_tablet
-                    - name: Evento tabletadded
+                    - name: Evento de tableta agregada
                       href: inkoverlay-tabletadded.md
                     - name: Evento TabletRemoved
                       href: inkoverlay-tabletremoved.md
@@ -1248,15 +1248,15 @@
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_characterautocompletionmode
                     - name: Método Clone
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-clone
-                    - name: Método EndInkInput
+                    - name: EndInkInput (método)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-endinkinput
-                    - name: Propiedad Factoid
+                    - name: Factoid (propiedad)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_factoid
                     - name: Propiedad Guide
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_guide
-                    - name: IsStringSupported (método)
+                    - name: Método IsStringSupported
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-isstringsupported
-                    - name: Propiedad PrefixText
+                    - name: PrefixText (propiedad)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_prefixtext
                     - name: Evento de reconocimiento
                       href: inkrecognizercontext-recognition.md
@@ -1266,9 +1266,9 @@
                       href: inkrecognizercontext-recognitionwithalternates.md
                     - name: Método Recognize
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-recognize
-                    - name: Propiedad Recognizer
+                    - name: Recognizer (propiedad)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_recognizer
-                    - name: Método StopBackgroundRecognition
+                    - name: StopBackgroundRecognition (método)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-stopbackgroundrecognition
                     - name: Propiedad Strokes
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_strokes
@@ -1285,7 +1285,7 @@
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizerguide-get_drawnbox
                     - name: Propiedad GuideData
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizerguide-get_guidedata
-                    - name: Midline (Propiedad)
+                    - name: Propiedad midline
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizerguide-get_midline
                     - name: Propiedad Rows
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizerguide-get_rows
@@ -1296,7 +1296,7 @@
                   items:
                     - name: Count (propiedad)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizers-get_count
-                    - name: GetDefaultRecognizer (método)
+                    - name: Método GetDefaultRecognizer
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizers-getdefaultrecognizer
                     - name: Item (método)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizers-item
@@ -1311,11 +1311,11 @@
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrectangle-getrectangle
                     - name: Left (Propiedad)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrectangle-get_left
-                    - name: Right (Propiedad)
+                    - name: Propiedad Right
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrectangle-get_right
                     - name: SetRectangle (método)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrectangle-setrectangle
-                    - name: Top (Propiedad)
+                    - name: Propiedad Top
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrectangle-get_top
                 - name: InkRenderer (clase)
                   href: inkrenderer-class.md
@@ -1332,7 +1332,7 @@
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrenderer-inkspacetopixel
                     - name: InkSpaceToPixelFromPoints (método)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrenderer-inkspacetopixelfrompoints
-                    - name: Measure (método)
+                    - name: Método Measure
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrenderer-measure
                     - name: MeasureStroke (método)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrenderer-measurestroke
@@ -1340,7 +1340,7 @@
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrenderer-move
                     - name: PixelToInkSpace (método)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrenderer-pixeltoinkspace
-                    - name: Método PixelToInkSpaceFromPoints
+                    - name: PixelToInkSpaceFromPoints (método)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrenderer-pixeltoinkspacefrompoints
                     - name: Rotate (método)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrenderer-rotate
@@ -1350,7 +1350,7 @@
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrenderer-setobjecttransform
                     - name: SetViewTransform (método)
                       href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkrenderer-setviewtransform
-                - name: Colección InkStrokes
+                - name: InkStrokes Collection
                   href: /previous-versions/windows/desktop/legacy/ms703293(v=vs.85)
                   items:
                     - name: Agregar método
@@ -1455,9 +1455,9 @@
                       href: /windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_attachededitwindow
                     - name: Propiedad AutoShow
                       href: /windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_autoshow
-                    - name: Busy (Propiedad)
+                    - name: Propiedad Busy
                       href: /windows/desktop/api/Peninputpanel/nf-peninputpanel-ipeninputpanel-get_busy
-                    - name: Método CommitPendingInput
+                    - name: CommitPendingInput (método)
                       href: /windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-commitpendinginput
                     - name: Propiedad CurrentPanel
                       href: /windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_currentpanel
@@ -1465,7 +1465,7 @@
                       href: /windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_defaultpanel
                     - name: EnableTsf (método)
                       href: /windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-enabletsf
-                    - name: Factoid (propiedad)
+                    - name: Propiedad Factoid
                       href: /windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_factoid
                     - name: Propiedad Height
                       href: /windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_height
@@ -1475,15 +1475,15 @@
                       href: peninputpanel-inputfailed.md
                     - name: Left (Propiedad)
                       href: /windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_left
-                    - name: MoveTo (método)
+                    - name: Método MoveTo
                       href: /windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-moveto
                     - name: Evento PanelChanged
                       href: peninputpanel-panelchanged.md
-                    - name: Evento PanelMoving
+                    - name: PanelMoving (evento)
                       href: peninputpanel-panelmoving.md
                     - name: Método Refresh
                       href: /windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-refresh
-                    - name: Top (Propiedad)
+                    - name: Propiedad Top
                       href: /windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_top
                     - name: Propiedad VerticalOffset
                       href: /windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_verticaloffset
@@ -1493,21 +1493,21 @@
                       href: peninputpanel-visiblechanged.md
                     - name: Propiedad Width
                       href: /windows/desktop/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_width
-            - name: Constantes de PC de tableta principal
+            - name: Constantes principales de Pc de tableta
               href: constants---tablet-pc-com-library.md
               items:
                 - name: Constantes factoid
                   href: factoid-constants.md
-                - name: Constantes de PacketPropertyGuids
+                - name: Constantes packetPropertyGuids
                   href: packetpropertyguids-constants.md
-                - name: Constantes RecognitionProperty
+                - name: Constantes recognitionProperty
                   href: recognitionproperty-constants.md
             - name: Enumeraciones de pc de tableta principal
               href: enumerations--tablet-pc-com-library.md
               items:
                 - name: InkApplicationGesture (enumeración)
                   href: /windows/desktop/api/msinkaut/ne-msinkaut-inkapplicationgesture
-                - name: InkBoundingBoxMode (Enumeración)
+                - name: InkBoundingBoxMode (enumeración)
                   href: /windows/desktop/api/msinkaut/ne-msinkaut-inkboundingboxmode
                 - name: InkClipboardFormats (enumeración)
                   href: /windows/desktop/api/msinkaut/ne-msinkaut-inkclipboardformats
@@ -1517,7 +1517,7 @@
                   href: /windows/desktop/api/msinkaut/ne-msinkaut-inkcollectionmode
                 - name: InkCollectorEventInterest (enumeración)
                   href: /windows/desktop/api/msinkaut/ne-msinkaut-inkcollectoreventinterest
-                - name: InkCursorButtonState (Enumeración)
+                - name: InkCursorButtonState (enumeración)
                   href: /windows/desktop/api/msinkaut/ne-msinkaut-inkcursorbuttonstate
                 - name: InkDivisionType (enumeración)
                   href: /windows/desktop/api/msinkaut15/ne-msinkaut15-inkdivisiontype
@@ -1529,9 +1529,9 @@
                   href: /windows/desktop/api/msinkaut/ne-msinkaut-inkmousepointer
                 - name: InkOverlayAttachMode (enumeración)
                   href: /windows/desktop/api/msinkaut/ne-msinkaut-inkoverlayattachmode
-                - name: InkOverlayEditingMode (Enumeración)
+                - name: InkOverlayEditingMode (enumeración)
                   href: /windows/desktop/api/msinkaut/ne-msinkaut-inkoverlayeditingmode
-                - name: InkOverlayMode (enumeración)
+                - name: InkOverlay ManualeserMode (enumeración)
                   href: /windows/desktop/api/msinkaut/ne-msinkaut-inkoverlayerasermode
                 - name: InkPenTip (enumeración)
                   href: /windows/desktop/api/msinkaut/ne-msinkaut-inkpentip
@@ -1607,29 +1607,29 @@
             - name: Enumeraciones flicks
               href: flicks-enumerations.md
               items:
-                - name: ENUMERACIÓN FLICKDIRECTION
+                - name: Enumeración FLICKDIRECTION
                   href: /windows/desktop/api/tabflicks/ne-tabflicks-flickdirection
-                - name: ENUMERACIÓN FLICKMODE
+                - name: FLICKMODE (enumeración)
                   href: /windows/desktop/api/tabflicks/ne-tabflicks-flickmode
                 - name: FLICKACTION_COMMANDMODE enumeración
                   href: /windows/desktop/api/tabflicks/ne-tabflicks-flickaction_commandcode
-                - name: SCROLLDIRECTION (enumeración)
+                - name: ScrollDIRECTION (enumeración)
                   href: /windows/desktop/api/tabflicks/ne-tabflicks-scrolldirection
-                - name: ENUMERACIÓN KEYMODIFIER
+                - name: KEYMODIFIER (enumeración)
                   href: /windows/desktop/api/tabflicks/ne-tabflicks-keymodifier
-            - name: Estructuras de gestos
+            - name: Estructuras de flicks
               href: flicks-structures.md
               items:
                 - name: FLICK_POINT estructura
                   href: /windows/desktop/api/tabflicks/ns-tabflicks-flick_point
                 - name: FLICK_DATA estructura
                   href: /windows/desktop/api/tabflicks/ns-tabflicks-flick_data
-            - name: Constantes de gestos
+            - name: Constantes flicks
               href: flicks-constants.md
         - name: Referencia de análisis de entrada de lápiz
           href: ink-analysis-reference.md
           items:
-            - name: Clases e interfaces de análisis de entrada de lápiz
+            - name: Clases e interfaces de análisis de lápiz
               href: classes-and-interfaces---ink-analysis.md
               items:
                 - name: AnalysisRegion (clase)
@@ -1650,7 +1650,7 @@
                 - name: IAnalysisAlternates (interfaz)
                   href: ianalysisalternates.md
                   items:
-                    - name: Método GetAnalysisAlternate
+                    - name: GetAnalysisAlternate (método)
                       href: ianalysisalternates-getanalysisalternate.md
                     - name: Método GetCount
                       href: ianalysisalternates-getcount.md
@@ -1669,9 +1669,9 @@
                       href: ianalysisregion-getbounds.md
                     - name: GetRegionScans (método)
                       href: ianalysisregion-getregionscans.md
-                    - name: IntersectRectangle (método)
+                    - name: Método IntersectRectangle
                       href: ianalysisregion-intersectrectangle.md
-                    - name: IntersectRegion (método)
+                    - name: Método IntersectRegion
                       href: ianalysisregion-intersectregion.md
                     - name: IntersectsWith (método)
                       href: ianalysisregion-intersectswith.md
@@ -1685,12 +1685,12 @@
                       href: ianalysisregion-makeinfinite.md
                     - name: Método UnionRectangle
                       href: ianalysisregion-unionrectangle.md
-                    - name: UnionRegion (método)
+                    - name: Método UnionRegion
                       href: ianalysisregion-unionregion.md
                 - name: IAnalysisStatus (interfaz)
                   href: ianalysisstatus.md
                   items:
-                    - name: Método GetAppliedChangesRegion
+                    - name: GetAppliedChangesRegion (método)
                       href: ianalysisstatus-getappliedchangesregion.md
                     - name: GetWarnings (método)
                       href: ianalysisstatus-getwarnings.md
@@ -1781,7 +1781,7 @@
                       href: icontextnode-gettypename.md
                     - name: Método IsAlternateStringSupported
                       href: icontextnode-isalternatestringsupported.md
-                    - name: IsConfirmed (método)
+                    - name: Método IsConfirmed
                       href: icontextnode-isconfirmed.md
                     - name: Método IsStringSupported
                       href: icontextnode-isstringsupported.md
@@ -1825,7 +1825,7 @@
                       href: iinkanalysisrecognizer-getlanguages.md
                     - name: Método GetName
                       href: iinkanalysisrecognizer-getname.md
-                    - name: GetSupportedProperties (método)
+                    - name: Método GetSupportedProperties
                       href: iinkanalysisrecognizer-getsupportedproperties.md
                     - name: GetUnicodeRanges (método)
                       href: iinkanalysisrecognizer-getunicoderanges.md
@@ -1871,7 +1871,7 @@
                       href: iinkanalyzer-createcustomrecognizer.md
                     - name: DeleteAnalysisHint (método)
                       href: iinkanalyzer-deleteanalysishint.md
-                    - name: Método FindInkLeafNodes
+                    - name: FindInkLeafNodes (método)
                       href: iinkanalyzer-findinkleafnodes.md
                     - name: Método FindInkLeafNodesForStrokes
                       href: iinkanalyzer-findinkleafnodesforstrokes.md
@@ -1931,7 +1931,7 @@
                       href: iinkanalyzer-removestroke.md
                     - name: RemoveStrokes (método)
                       href: iinkanalyzer-removestrokes.md
-                    - name: Método SaveResults
+                    - name: SaveResults (método)
                       href: iinkanalyzer-saveresults.md
                     - name: Método SaveResultsForNodes
                       href: iinkanalyzer-saveresultsfornodes.md
@@ -1960,23 +1960,23 @@
                 - name: IMatchesCriteriaCallBack (Interfaz)
                   href: imatchescriteriacallback.md
                   items:
-                    - name: EvaluateContextNode (método)
+                    - name: Método EvaluateContextNode
                       href: imatchescriteriacallback-evaluatecontextnode.md
             - name: Constantes de análisis de entrada de lápiz
               href: ink-analysis-constants.md
               items:
-                - name: Propiedades de sugerencias de análisis
+                - name: Propiedades de la sugerencia de análisis
                   href: analysis-hint-properties.md
                 - name: Propiedades del nodo de contexto
                   href: context-node-properties.md
                 - name: Tipos de nodo de contexto
                   href: context-node-types.md
-            - name: Enumeraciones de análisis de lápiz
+            - name: Enumeraciones de análisis de entrada de lápiz
               href: ink-analysis-enumerations.md
               items:
                 - name: AnalysisModes (enumeración)
                   href: analysismodes.md
-                - name: AnalysisWarningCode (enumeración)
+                - name: AnalysisWarningCode (Enumeración)
                   href: analysiswarningcode.md
                 - name: ConfirmationType (enumeración)
                   href: confirmationtype.md
@@ -2017,17 +2017,17 @@
                       href: '-ianalysisproxyevents-contextnodelinkdeleting.md'
                     - name: Evento ContextNodeMovingToPosition
                       href: '-ianalysisproxyevents-contextnodemovingtoposition.md'
-                    - name: Evento ContextNodePropertiesUpdated
+                    - name: ContextNodePropertiesUpdated (evento)
                       href: '-ianalysisproxyevents-contextnodepropertiesupdated.md'
                     - name: Evento ContextNodeReparenting
                       href: '-ianalysisproxyevents-contextnodereparenting.md'
-                    - name: Evento InkAnalyzerStateChanging
+                    - name: InkAnalyzerStateChanging (evento)
                       href: '-ianalysisproxyevents-inkanalyzerstatechanging.md'
                     - name: Evento PopulateContextNode
                       href: '-ianalysisproxyevents-populatecontextnode.md'
                     - name: Evento StrokeReparented
                       href: '-ianalysisproxyevents-strokereparented.md'
-            - name: Estructuras de análisis de lápiz
+            - name: Estructuras de análisis de entrada de lápiz
               href: ink-analysis-structures.md
               items:
                 - name: InkAnalysisRecognizerGuide (estructura)
@@ -2044,7 +2044,7 @@
                   href: inkedit-click.md
                 - name: Evento DblClick
                   href: inkedit-dblclick.md
-                - name: 'Evento Gesture [InkEdit (Control)'
+                - name: 'Evento de gesto [Control InkEdit'
                   href: inkedit-gesture.md
                 - name: 'Evento KeyDown [Control InkEdit'
                   href: inkedit-keydown.md
@@ -2062,9 +2062,9 @@
                   href: inkedit-recognitionresult.md
                 - name: Evento SelChange
                   href: inkedit-selchange.md
-                - name: 'Evento de trazo [Control InkEdit'
+                - name: 'Evento de trazo [control InkEdit'
                   href: inkedit-stroke.md
-                - name: 'Método GetGestureStatus [Control InkEdit'
+                - name: 'Método GetGestureStatus [control InkEdit'
                   href: /windows/desktop/api/inked/nf-inked-iinkedit-getgesturestatus
                 - name: 'Método Recognize [Control InkEdit'
                   href: /windows/desktop/api/inked/nf-inked-iinkedit-recognize
@@ -2094,7 +2094,7 @@
                   href: /windows/desktop/api/inked/nf-inked-iinkedit-get_inkinsertmode
                 - name: Propiedad InkMode
                   href: /windows/desktop/api/inked/nf-inked-iinkedit-get_inkmode
-                - name: Propiedad Bloqueada
+                - name: Propiedad bloqueada
                   href: /windows/desktop/api/inked/nf-inked-iinkedit-get_locked
                 - name: MaxLength (propiedad)
                   href: /windows/desktop/api/inked/nf-inked-iinkedit-get_maxlength
@@ -2149,7 +2149,7 @@
             - name: Enumeraciones InkEdit
               href: inkedit-enumerations.md
               items:
-                - name: AppearanceConstants (enumeración)
+                - name: Enumeración AppearanceConstants
                   href: /windows/desktop/api/inked/ne-inked-appearanceconstants
                 - name: BorderStyleConstants (enumeración)
                   href: /windows/desktop/api/inked/ne-inked-borderstyleconstants
@@ -2172,9 +2172,9 @@
               items:
                 - name: InkEdit Messages (solo Win32)
                   href: inkedit-messages--win32-only-.md
-            - name: InkEdit (métodos)
+            - name: Métodos InkEdit
               href: inkedit-methods.md
-            - name: Propiedades de InkEdit
+            - name: InkEdit (Propiedades)
               href: inkedit-properties.md
             - name: InkEdit Structures
               href: inkedit-structures.md
@@ -2236,7 +2236,7 @@
                   href: inkpicture-newinairpackets.md
                 - name: Evento NewPackets
                   href: inkpicture-newpackets.md
-                - name: Evento painted
+                - name: Evento dibujado
                   href: inkpicture-painted.md
                 - name: Evento de dibujo
                   href: inkpicture-painting.md
@@ -2262,7 +2262,7 @@
                   href: inkpicture-stroke.md
                 - name: Evento StrokesAdded
                   href: inkpicture-strokesadded.md
-                - name: Evento StrokesDeleted
+                - name: StrokesDeleted (evento)
                   href: inkpicture-strokesdeleted.md
                 - name: Evento StrokesDeleting
                   href: inkpicture-strokesdeleting.md
@@ -2270,7 +2270,7 @@
                   href: inkpicture-systemcolorschanged.md
                 - name: Evento SystemGesture
                   href: inkpicture-systemgesture.md
-                - name: Evento tabletadded
+                - name: Evento de tableta agregada
                   href: inkpicture-tabletadded.md
                 - name: Evento TabletRemoved
                   href: inkpicture-tabletremoved.md
@@ -2281,17 +2281,17 @@
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-geteventinterest
                 - name: GetGestureStatus (método)
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-getgesturestatus
-                - name: GetWindowInputRectangle (método)
+                - name: Método GetWindowInputRectangle
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-getwindowinputrectangle
                 - name: HitTestSelection (método)
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-hittestselection
                 - name: SetAllTabletsMode (método)
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-setalltabletsmode
-                - name: SetEventInterest (método)
+                - name: Método SetEventInterest
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-seteventinterest
                 - name: SetGestureStatus (método)
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-setgesturestatus
-                - name: SetSingleTabletIntegratedMode (método)
+                - name: Método SetSingleTabletIntegratedMode
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-setsingletabletintegratedmode
                 - name: SetWindowInputRectangle (método)
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-setwindowinputrectangle
@@ -2302,13 +2302,13 @@
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_autoredraw
                 - name: Propiedad BackColor
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_backcolor
-                - name: Propiedad CollectingInk
+                - name: CollectingInk (propiedad)
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_collectingink
                 - name: 'Propiedad CollectionMode [Control InkPicture'
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_collectionmode
-                - name: Propiedad Cursors
+                - name: Cursors (propiedad)
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_cursors
-                - name: 'Propiedad CustomStrokes [Control InkPicture'
+                - name: 'Propiedad CustomStrokes [control InkPicture'
                   href: /previous-versions/windows/desktop/legacy/ms703274(v=vs.85)
                 - name: Propiedad DefaultDrawingAttributes
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_defaultdrawingattributes
@@ -2322,7 +2322,7 @@
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_erasermode
                 - name: 'Propiedad Enabled [Control InkPicture'
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_enabled
-                - name: 'Propiedad EraserWidth [control InkPicture'
+                - name: 'Propiedad EraserWidth [Control InkPicture'
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_eraserwidth
                 - name: hWnd (propiedad)
                   href: /windows/desktop/api/msinkaut/nf-msinkaut-iinkpicture-get_hwnd
@@ -2383,7 +2383,7 @@
                       href: /previous-versions/windows/desktop/legacy/dd317351(v=vs.85)
                     - name: Método Insert
                       href: /previous-versions/windows/desktop/legacy/dd317352(v=vs.85)
-                    - name: Paint (método)
+                    - name: Paint Método
                       href: /previous-versions/windows/desktop/legacy/dd317353(v=vs.85)
                 - name: IMathInputControl
                   href: /windows/desktop/api/micaut/nn-micaut-imathinputcontrol
@@ -2394,7 +2394,7 @@
                       href: /windows/desktop/api/micaut/nf-micaut-imathinputcontrol-clear
                     - name: EnableAutoGrow (método)
                       href: /windows/desktop/api/micaut/nf-micaut-imathinputcontrol-enableautogrow
-                    - name: Método EnableExtendedButtons
+                    - name: EnableExtendedButtons (método)
                       href: /windows/desktop/api/micaut/nf-micaut-imathinputcontrol-enableextendedbuttons
                     - name: GetHoverIcon (método)
                       href: /windows/desktop/api/micaut/nf-micaut-imathinputcontrol-gethovericon
@@ -2450,7 +2450,7 @@
                       href: /windows/desktop/api/RTSCom/nf-rtscom-idynamicrenderer-get_datacacheenabled
                     - name: Draw (propiedad)
                       href: /windows/desktop/api/RTSCom/nf-rtscom-idynamicrenderer-draw
-                    - name: DrawingAttributes (propiedad)
+                    - name: Propiedad DrawingAttributes
                       href: /windows/desktop/api/RTSCom/nf-rtscom-idynamicrenderer-get_drawingattributes
                     - name: Propiedad Enabled
                       href: /windows/desktop/api/RTSCom/nf-rtscom-idynamicrenderer-get_enabled
@@ -2531,7 +2531,7 @@
                 - name: IRealTimeStylus2 (interfaz)
                   href: /windows/desktop/api/RTSCom/nn-rtscom-irealtimestylus2
                   items:
-                    - name: get_FlicksEnabled método
+                    - name: get_FlicksEnabled (método)
                       href: /windows/desktop/api/RTSCom/nf-rtscom-irealtimestylus2-get_flicksenabled
                     - name: put_FlicksEnabled método
                       href: /windows/desktop/api/RTSCom/nf-rtscom-irealtimestylus2-put_flicksenabled
@@ -2560,12 +2560,12 @@
                       href: /windows/desktop/api/RTSCom/nf-rtscom-istrokebuilder-endstroke
                     - name: Propiedad Ink
                       href: /windows/desktop/api/RTSCom/nf-rtscom-istrokebuilder-get_ink
-                - name: IStylusAsyncPlugin (Interfaz)
+                - name: Interfaz IStylusAsyncPlugin
                   href: /windows/desktop/api/rtscom/nn-rtscom-istylusasyncplugin
-                - name: IStylusPlugin (interfaz)
+                - name: Interfaz IStylusPlugin
                   href: /windows/desktop/api/RTSCom/nn-rtscom-istylusplugin
                   items:
-                    - name: CustomStylusDataAdded (método)
+                    - name: Método CustomStylusDataAdded
                       href: /windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-customstylusdataadded
                     - name: DataInteres (método)
                       href: /windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-datainterest
@@ -2577,29 +2577,29 @@
                       href: /windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-packets
                     - name: Método RealTimeStylusEnabled
                       href: /windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-realtimestylusenabled
-                    - name: Método RealTimeStylusDisabled
+                    - name: RealTimeStylusDisabled (método)
                       href: /windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-realtimestylusdisabled
                     - name: Método StylusButtonDown
                       href: /windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-stylusbuttondown
                     - name: Método StylusButtonUp
                       href: /windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-stylusbuttonup
-                    - name: StylusDown (método)
+                    - name: Método StylusDown
                       href: /windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-stylusdown
                     - name: SystemEvent (método)
                       href: /windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-systemevent
                     - name: StylusInRange (método)
                       href: /windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-stylusinrange
-                    - name: Método StylusOutOfRange
+                    - name: StylusOutOfRange (método)
                       href: /windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-stylusoutofrange
-                    - name: Método StylusUp
+                    - name: StylusUp (método)
                       href: /windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-stylusup
-                    - name: Método tabletadded
+                    - name: Método TabletAdded
                       href: /windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-tabletadded
                     - name: TabletRemoved (método)
                       href: /windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-tabletremoved
                     - name: UpdateMapping (método)
                       href: /windows/desktop/api/RTSCom/nf-rtscom-istylusplugin-updatemapping
-                - name: IStylusSyncPlugin (Interfaz)
+                - name: Interfaz IStylusSyncPlugin
                   href: /windows/desktop/api/rtscom/nn-rtscom-istylussyncplugin
                 - name: RealTimeStylus (clase)
                   href: realtimestylus-class.md
@@ -2624,7 +2624,7 @@
         - name: Referencia del reconocedor
           href: recognizer-apis.md
           items:
-            - name: Identificador HRECOALT
+            - name: Identificador de HRECOALT
               href: hrecoalt-handle.md
               items:
                 - name: DestroyAlternate (Función)
@@ -2643,14 +2643,14 @@
                   href: /previous-versions/windows/desktop/legacy/ms704890(v=vs.85)
                 - name: GetStrokeRanges (Función)
                   href: /previous-versions/windows/desktop/legacy/ms705304(v=vs.85)
-            - name: Identificador HRECOCONTEXT
+            - name: Identificador de HRECOCONTEXT
               href: hrecocontext-handle.md
               items:
-                - name: Función AddStroke
+                - name: AddStroke (Función)
                   href: /windows/desktop/api/recapis/nf-recapis-addstroke
-                - name: Función AdviseInkChange
+                - name: AdviseInkChange (Función)
                   href: /windows/desktop/api/recapis/nf-recapis-adviseinkchange
-                - name: CloneContext (Función)
+                - name: Función CloneContext
                   href: /windows/desktop/api/recapis/nf-recapis-clonecontext
                 - name: EndInkInput (Función)
                   href: /windows/desktop/api/recapis/nf-recapis-endinkinput
@@ -2705,7 +2705,7 @@
                   href: /windows/desktop/api/recapis/nf-recapis-createcontext
                 - name: CreateRecognizer (Función)
                   href: /windows/desktop/api/recapis/nf-recapis-createrecognizer
-                - name: Función DestroyContext
+                - name: DestroyContext (Función)
                   href: /windows/desktop/api/recapis/nf-recapis-destroycontext
                 - name: DestroyRecognizer (Función)
                   href: /windows/desktop/api/recapis/nf-recapis-destroyrecognizer
@@ -3042,12 +3042,12 @@
         - name: Trabajar con el objeto Text Ink
           href: working-with-the-text-ink-object.md
           items:
-            - name: Convertir un objeto text ink en ink
+            - name: Convertir un objeto de entrada de lápiz de texto en lápiz
               href: converting-a-text-ink-object-to-ink.md
             - name: Referencia de Entrada manuscrita de texto
               href: text-ink-apis.md
               items:
-                - name: IInkLineInfo (interfaz)
+                - name: IInkLineInfo (Interfaz)
                   href: /windows/desktop/api/msinkaut/nn-msinkaut-iinklineinfo
                   items:
                     - name: GetCandidate (método)
