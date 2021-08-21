@@ -1,35 +1,35 @@
 ---
-description: Desarrollo del codificador y descodificador
+description: Desarrollo de codificadores y descodificadores
 ms.assetid: 075aaf0f-63c6-4286-966e-fdc72d0acb6e
-title: Desarrollo del codificador y descodificador
+title: Desarrollo de codificadores y descodificadores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dbe45fc726338e33205831959986178f4527673a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8619225f5d4df9596523724259eb4eee1a9b3bb4c978a3fc400156bc9ee56a4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015823"
 ---
-# <a name="encoder-and-decoder-development"></a>Desarrollo del codificador y descodificador
+# <a name="encoder-and-decoder-development"></a>Desarrollo de codificadores y descodificadores
 
-Esta sección contiene artículos sobre el desarrollo de codificadores y descodificadores para DirectShow. Estos temas no son relevantes para los desarrolladores de aplicaciones.
+Esta sección contiene artículos sobre el desarrollo de codificadores y descodificadores para DirectShow. Estos temas no son pertinentes para los desarrolladores de aplicaciones.
 
-Un descodificador de software que admita DirectX video Acceleration (VA) debe implementarse como un filtro de transformación de copia de DirectShow. Si el descodificador no admite DirectX VA, también puede implementarse como un objeto multimedia de DirectX (DMO). Un descodificador que se conecta a un representador de vídeo no debe implementarse como un filtro de transbordo en contexto, ya que esto dará lugar a una degradación significativa del rendimiento. Para obtener información sobre cómo escribir un filtro de transformación de copia, consulte [escribir filtros de transformación](writing-transform-filters.md).
+Un descodificador de software que admita la aceleración de vídeo directX (VA) debe implementarse como filtro de transformación DirectShow copia automática. Si el descodificador no admite DirectX VA, también se puede implementar como un objeto multimedia directX (DMO). Un descodificador que se conecta a un representador de vídeo no debe implementarse como filtro trans-in-place, ya que esto provocará una degradación significativa del rendimiento. Para obtener información sobre cómo escribir un filtro de transformación de copia, vea [Escribir filtros de transformación.](writing-transform-filters.md)
 
-Los codificadores de software se pueden implementar como filtros de transformación o DMOs. Los codificadores no usan DirectX VA, ya que actualmente DirectX se usa solo para la descompresión. La especificación de la API del codificador que se describe en esta sección es relevante para los codificadores de hardware y software.
+Los codificadores de software se pueden implementar como filtros de transformación o DDO. Los codificadores no usan DirectX VA, ya que DirectX VA actualmente solo se usa para la descompresión. La especificación de Encoder API descrita en esta sección es relevante para los codificadores de hardware y software.
 
 Esta sección contiene los siguientes temas:
 
--   [API del codificador](encoder-api.md)
+-   [Encoder API](encoder-api.md)
 -   [Interfaces y especificaciones del descodificador](decoder-interfaces-and-specifications.md)
--   [Configuración del descodificador para Windows Media Center Edition](decoder-settings-for-windows-media-center-edition.md)
+-   [Descodificador Configuración para Windows Media Center Edition](decoder-settings-for-windows-media-center-edition.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar la VMR para desarrolladores de filtros de DirectShow](using-the-vmr-for-directshow-filter-developers.md)
+[Uso de VMR para DirectShow desarrolladores de filtros](using-the-vmr-for-directshow-filter-developers.md)
 </dt> </dl>
 
  

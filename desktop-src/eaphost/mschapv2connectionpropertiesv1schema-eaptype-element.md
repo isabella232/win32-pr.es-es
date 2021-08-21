@@ -59,7 +59,7 @@ El **elemento EapType** es un tipo derivado del elemento [EapType](baseeapconnec
 
 | Elemento                                                                                                       | Tipo    | Descripción                                                                                                                                                                                                                                                                                                                                      |
 |---------------------------------------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**UseWinLogonCredentials**](mschapv2connectionpropertiesv1schema-usewinlogoncredentials-eaptype-element.md) | boolean | Controla el uso de las credenciales de winlogin. Si es TRUE, eap MS-CHAPv2 obtener las credenciales de winlogon. Si es FALSE, eap MS-CHAPv2 obtener las credenciales del usuario. <br/> El [**elemento UseWinLogonCredentials (EapType)**](mschapv2connectionpropertiesv1schema-usewinlogoncredentials-eaptype-element.md) es opcional.<br/> |
+| [**UseWinLogonCredentials**](mschapv2connectionpropertiesv1schema-usewinlogoncredentials-eaptype-element.md) | boolean | Controla el uso de las credenciales de winlogin. Si es TRUE, EAP MS-CHAPv2 las credenciales de winlogon. Si es FALSE, eap MS-CHAPv2 las credenciales del usuario. <br/> El [**elemento UseWinLogonCredentials (EapType)**](mschapv2connectionpropertiesv1schema-usewinlogoncredentials-eaptype-element.md) es opcional.<br/> |
 
 
 
@@ -71,14 +71,14 @@ El **elemento processContents** permite futuras mejoras en el esquema. El **elem
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

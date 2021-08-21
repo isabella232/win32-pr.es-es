@@ -1,7 +1,7 @@
 ---
 description: El método SetVariableSize especifica que los ejemplos no tienen un tamaño fijo.
 ms.assetid: 2a207cdb-f8e6-44aa-8bf6-868267aeb42d
-title: Método CMediaType. SetVariableSize (mtype. h)
+title: Método CMediaType.SetVariableSize (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4621a639b3bc18382bc41ae9425c4de50db920ff
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 118167d0068c058c925e5b63e2e951ff860917c40a5c3533daf9f02e6927649a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073969"
 ---
-# <a name="cmediatypesetvariablesize-method"></a>CMediaType. SetVariableSize, método
+# <a name="cmediatypesetvariablesize-method"></a>Método CMediaType.SetVariableSize
 
 El `SetVariableSize` método especifica que los ejemplos no tienen un tamaño fijo.
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método establece el miembro **bFixedSizeSamples** en **false**. Las llamadas subsiguientes al método [**CMediaType:: GetSampleSize**](cmediatype-getsamplesize.md) devuelven cero.
+Este método establece el **miembro bFixedSizeSamples** en **FALSE.** Las llamadas posteriores [**al método CMediaType::GetSampleSize**](cmediatype-getsamplesize.md) devuelven cero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Este método establece el miembro **bFixedSizeSamples** en **false**. Las llamad
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Mtype. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Mtype.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Este método establece el miembro **bFixedSizeSamples** en **false**. Las llamad
 
 <dl> <dt>
 
-[**Clase CMediaType**](cmediatype.md)
+[**CMediaType (clase)**](cmediatype.md)
 </dt> </dl>
 
  

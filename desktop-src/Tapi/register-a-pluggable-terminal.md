@@ -1,19 +1,19 @@
 ---
-description: Se puede llamar al registro de un terminal acoplable en la función DllRegisterServer del componente que implementa el terminal. El siguiente ejemplo de código se puede colocar en el código para DllRegisterServer.
+description: Se puede llamar al registro de un terminal conectable en la función DllRegisterServer del componente que implementa el terminal. El ejemplo de código siguiente se puede colocar en el código de DllRegisterServer.
 ms.assetid: d88a8d2c-4b05-4c31-928f-0baf1dbc218c
-title: Registrar un terminal conectable
+title: Registro de un terminal conectable
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7be84d9e2063c28a320c49d5249ea6434094b9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca70081c5ffbee5d038488a245c528992015ed8679c35263666f456479e249dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678565"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060433"
 ---
-# <a name="register-a-pluggable-terminal"></a>Registrar un terminal conectable
+# <a name="register-a-pluggable-terminal"></a>Registro de un terminal conectable
 
-Se puede llamar al registro de un terminal acoplable en la función **DllRegisterServer** del componente que implementa el terminal. El siguiente ejemplo de código se puede colocar en el código para **DllRegisterServer**.
+Se puede llamar al registro de un terminal conectable en la **función DllRegisterServer** del componente que implementa el terminal. El ejemplo de código siguiente se puede colocar en el código de **DllRegisterServer**.
 
 ``` syntax
 ITPluggableTerminalClassRegistration* pTerminal;

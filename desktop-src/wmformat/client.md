@@ -1,10 +1,10 @@
 ---
-title: Registro de cliente (Windows Media Format SDK 11)
-description: Obtenga información sobre el registro de cliente Windows Media Format SDK 11. El registro proporciona una manera de que el servidor multimedia realice un seguimiento de la actividad de los clientes que se conectan a él.
+title: Registro de cliente (Windows SDK de formato multimedia 11)
+description: Obtenga información sobre el registro de cliente Windows SDK de Formato multimedia 11. El registro proporciona una manera de que el servidor multimedia realice un seguimiento de la actividad de los clientes que se conectan a él.
 ms.assetid: 3e0d0fea-4370-41f8-b461-73a37de8d8bc
 keywords:
-- Windows Media Format SDK,registro de cliente
-- Windows Media Format SDK, registro
+- Windows SDK de formato multimedia, registro de cliente
+- Windows SDK de formato multimedia, registro
 - Formato de sistemas avanzados (ASF), registro de cliente
 - ASF (formato de sistemas avanzados), registro de cliente
 - Formato de sistemas avanzados (ASF), registro
@@ -13,14 +13,14 @@ keywords:
 - registrar clientes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 095e01fcf0730fdec8d06a931a9a988ca79ea77f
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 460058d6ad4009fab301c6ce322df3144bdd0e5d9bb4732d54126f7675cd9e2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028033"
 ---
-# <a name="client-logging-windows-media-format-11-sdk"></a>Registro de cliente (Windows Media Format SDK 11)
+# <a name="client-logging-windows-media-format-11-sdk"></a>Registro de cliente (Windows SDK de formato multimedia 11)
 
 Cuando el objeto de lector lee datos de un servidor, envía información de registro al servidor. Normalmente, los proveedores de contenido usan esta información para medir la calidad del servicio, generar información de facturación o realizar un seguimiento de la publicidad. La información de registro no contiene datos personales.
 

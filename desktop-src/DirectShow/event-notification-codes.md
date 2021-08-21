@@ -17,7 +17,7 @@ En esta sección se enumeran DirectShow eventos que no son específicos de DVD. 
 
 Los filtros envían eventos al Administrador de Graph filtro mediante una llamada [**al método IMediaEventSink::Notify.**](/windows/desktop/api/Strmif/nf-strmif-imediaeventsink-notify) Filter Graph Manager controla algunos eventos y pone en cola otros para la aplicación. La aplicación los recupera llamando al [**método IMediaEvent::GetEvent.**](/windows/desktop/api/Control/nf-control-imediaevent-getevent)
 
-En las secciones siguientes, cada entrada muestra el código de evento, el significado de los parámetros de evento y la acción predeterminada de Filter Graph Manager para el evento, si lo hay. Para invalidar la acción predeterminada, llame a [**IMediaEvent::CancelDefaultHandling**](/windows/desktop/api/Control/nf-control-imediaevent-canceldefaulthandling). Los códigos de evento se definen en los archivos de encabezado Evcode.h y Audevcod.h. Si no hay ninguna acción predeterminada, filter Graph Manager reenvía automáticamente el evento a la aplicación (a través de la cola de eventos).
+En las secciones siguientes, cada entrada muestra el código de evento, el significado de los parámetros de evento y la acción predeterminada del Administrador de filtros Graph para el evento, si lo hay. Para invalidar la acción predeterminada, llame a [**IMediaEvent::CancelDefaultHandling**](/windows/desktop/api/Control/nf-control-imediaevent-canceldefaulthandling). Los códigos de evento se definen en los archivos de encabezado Evcode.h y Audevcod.h. Si no hay ninguna acción predeterminada, filter Graph Manager reenvía automáticamente el evento a la aplicación (a través de la cola de eventos).
 
 **Eventos personalizados**
 

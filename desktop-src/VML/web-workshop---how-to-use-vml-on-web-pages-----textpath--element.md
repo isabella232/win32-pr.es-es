@@ -3,46 +3,46 @@ title: Usar el elemento Textpath
 description: Usar el elemento Textpath
 ms.assetid: 7728cdd6-d291-4ec5-b5e0-4a44a7d72eae
 keywords:
-- Web Workshop, elemento textpath
+- Taller web, elemento textpath
 - diseñar páginas web, elemento textpath
-- Lenguaje de marcado de vectores (VML), elemento textpath
-- VML (Lenguaje de marcado de vectores), elemento textpath
-- graphics Vector, elemento textpath
+- Lenguaje de marcado de vectores (VML),elemento textpath
+- VML (Lenguaje de marcado de vectores),elemento textpath
+- gráficos vectoriales, elemento textpath
 - elemento textpath
-- Elementos VML, textpath
-- Formas VML, elemento textpath
+- Elementos VML,textpath
+- Formas de VML, elemento textpath
 - Lenguaje de marcado de vectores (VML), dibujar texto
-- VML (Lenguaje de marcado de vectores), texto de dibujo
+- VML (Lenguaje de marcado de vectores), dibujar texto
 - gráficos vectoriales, dibujar texto VML
 - dibujar texto
-- Formas VML, texto de dibujo
+- Formas de VML, dibujar texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 148c032d14307dc07ec56911f4c5cc45a4c69664
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c5db3b76d0c4ad2e56c59cfcf6dd39a2af51317b63ee190f47d794933282b5a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056986"
 ---
 # <a name="using-the-textpath-element"></a>Usar el elemento Textpath
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-En este tema, se muestra cómo usar el `<textpath>` elemento para dibujar texto con varios estilos.
+En este tema, se ilustrará cómo usar el `<textpath>` elemento para dibujar texto con varios estilos.
 
-Puede colocar el `<textpath>` subelemento dentro `<shape>` o `<shapetype>` para dibujar el texto. Después, puede usar los atributos de propiedad del `<textpath>` subelemento para personalizar el texto. También puede usar el `<formulas>` subelemento para definir el contorno del texto.
+Puede colocar el `<textpath>` sub elemento dentro de o para dibujar `<shape>` `<shapetype>` texto. A continuación, puede usar los atributos de propiedad del `<textpath>` sub elemento para personalizar el texto. También puede usar el `<formulas>` sub element para definir el contorno del texto.
 
-Por ejemplo, para crear el texto que se muestra en la siguiente imagen, puede escribir la representación de VML a continuación. Observe que usamos el `<shapetype>` elemento para definir un prototipo para el contorno del texto. A continuación, se crean instancias de dos formas del mismo TipoForma. Simplemente puede cambiar el atributo de propiedad de **cadena** para mostrar texto diferente.
+Por ejemplo, para crear el texto que se muestra en la siguiente imagen, puede escribir la siguiente representación de VML. Observe que usamos el `<shapetype>` elemento para definir un prototipo para el esquema del texto. A continuación, creamos una instancia de dos formas a partir del mismo tipo de forma. Simplemente puede cambiar el atributo **de propiedad de** cadena para mostrar texto diferente.
 
-![\-1.gif shape1 (4898 bytes)](images/shape1-1t.gif)
+![shape1 \-1.gif (4898 bytes)](images/shape1-1t.gif)
 
-![\-2.gif shape1 (2789 bytes)](images/shape1-2t.gif)
+![shape1 \-2.gif (2789 bytes)](images/shape1-2t.gif)
 
 
 ```HTML
@@ -92,8 +92,8 @@ trim="t" fitpath="t" xscale="f" string="VML"/>
 
 
 
-Para obtener más información sobre este elemento, vea la [especificación de VML](https://www.w3.org/TR/NOTE-VML#-toc416858398) .
+Para obtener más información sobre este elemento, consulte la [especificación de VML](https://www.w3.org/TR/NOTE-VML#-toc416858398) .
 
- 
+ 
 
- 
+ 

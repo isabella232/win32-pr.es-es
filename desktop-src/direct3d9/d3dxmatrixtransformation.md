@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: dc3b6502a8015564207f208166cec15227d3b18a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 59656e1716dcf3fbc7844c8369de032f5e6e69776e5b89452a35d71512aea87c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044813"
 ---
 # <a name="d3dxmatrixtransformation-function-d3dx9mathh"></a>Función D3DXMatrixTransformation (D3dx9math.h)
 
@@ -129,7 +129,7 @@ M <sub>sc</sub> = matriz del centro de escalado (*pScalingCenter*)
 
 M <sub>sr</sub> = matriz de rotación de escalado (*pScalingRotation*)
 
-Ms = matriz de escalado (*escalado pScaling*)
+Ms = matriz de escalado (*pScaling*)
 
 M <sub>rc</sub> = centro de la matriz de rotación (*pRotationCenter*)
 
@@ -137,9 +137,9 @@ M <sub>r</sub> = matriz de rotación (*pRotation*)
 
 Mt = matriz de traducción (*pTranslation*)
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXMatrixTransformation** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXMatrixTransformation** se puede usar como parámetro para otra función.
 
-Para las transformaciones 2D, use [**D3DXMatrixTransformation2D**](d3dxmatrixtransformation2d.md).
+Para las transformaciones 2D, use [**D3DXMatrixTransformation2D.**](d3dxmatrixtransformation2d.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -152,7 +152,7 @@ Para las transformaciones 2D, use [**D3DXMatrixTransformation2D**](d3dxmatrixtra
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

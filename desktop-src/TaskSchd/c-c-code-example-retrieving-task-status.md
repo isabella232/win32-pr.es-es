@@ -1,22 +1,22 @@
 ---
-title: Ejemplo de código de C/C++ recuperar el estado de la tarea
-description: En este ejemplo se recupera el estado actual de la tarea y se muestra en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+title: Ejemplo de código de C/C++ para recuperar el estado de la tarea
+description: En este ejemplo se recupera el estado actual de la tarea y se muestra en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 ms.assetid: 7ad40ac7-2363-481a-87fa-18dcf2d749b3
 keywords:
-- recuperando Programador de tareas de estado de la tarea
-- recuperar propiedades de elementos de trabajo Programador de tareas, estado de tarea
+- recuperar el estado de la tarea Programador de tareas
+- recuperar propiedades de elemento de trabajo Programador de tareas , estado de la tarea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 068e2be84750ac8fead97eac146400139dee85fe
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 626b3e169e51deca34b8a8e4795671998e482a2640d2f222e2b734f69c5d2eb7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060253"
 ---
-# <a name="cc-code-example-retrieving-task-status"></a>Ejemplo de código de C/C++: recuperar el estado de la tarea
+# <a name="cc-code-example-retrieving-task-status"></a>Ejemplo de código de C/C++: Recuperar el estado de la tarea
 
-En este ejemplo se recupera el estado actual de la tarea y se muestra en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+En este ejemplo se recupera el estado actual de la tarea y se muestra en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 
 
 ```C++
@@ -140,12 +140,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

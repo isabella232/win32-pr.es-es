@@ -18,22 +18,22 @@ Los valores del sistema se recuperan mediante funciones intrínsecas especiales,
 
 ## <a name="in-this-section"></a>En esta sección
 
-### <a name="ray-dispatch-system-values"></a>Valores del sistema de distribución de rayos
+### <a name="ray-dispatch-system-values"></a>Valores del sistema de distribución de Ray
 
 | Tema | Descripción |
 |-|-|
 | [**DispatchRaysIndex**](dispatchraysindex.md) | Obtiene la ubicación x e y actual dentro del ancho y alto obtenidos con el valor intrínseco del sistema **DispatchRaysDimensions.** |
-| [**DispatchRaysDimensions**](dispatchraysdimensions.md) | Los valores de ancho, alto y profundidad de la estructura **D3D12 \_ DISPATCH \_ RAYS \_ DESC** especificada en la **llamada a DispatchRays de** origen. |
+| [**DispatchRaysDimensions**](dispatchraysdimensions.md) | Los valores de ancho, alto y profundidad de la estructura **D3D12 \_ DISPATCH \_ RAYS \_ DESC** especificada en la llamada **a DispatchRays de** origen. |
 
 ### <a name="ray-system-values"></a>Valores del sistema ray
 
 | Tema | Descripción |
 |-|-|
 | [**WorldRayOrigin**](worldrayorigin.md) | Origen del espacio mundial del rayo actual. |
-| [**WorldRayDirection**](worldraydirection.md) | Dirección del espacio mundial para el rayo actual. |
-| [**RayTMin**](raytmin.md) | Float que representa el punto inicial paramétrico actual del rayo. |
+| [**WorldRayDirection**](worldraydirection.md) | Dirección del espacio del mundo para el rayo actual. |
+| [**RayTMin**](raytmin.md) | Un valor float que representa el punto inicial paramétrico actual para el rayo. |
 | [**RayTCurrent**](raytcurrent.md) | Float que representa el punto final paramétrico actual del rayo.  |
-| [**RayFlags**](rayflags.md) | Entero sin signo que contiene las marcas **ray_flag** actuales. |
+| [**RayFlags**](rayflags.md) | Entero sin signo que contiene las **marcas** ray_flag actuales. |
 
 ### <a name="primitiveobject-space-system-values"></a>Valores primitivos o del sistema de espacio de objetos
 
@@ -41,14 +41,14 @@ Los valores del sistema se recuperan mediante funciones intrínsecas especiales,
 |-|-|
 | [**InstanceIndex**](instanceindex.md) | Índice generado automáticamente de la instancia actual en la estructura de aceleración de rayos de nivel superior. |
 | [**InstanceID**](instanceid.md) | Identificador proporcionado por el usuario para la instancia en la instancia de la estructura de aceleración de nivel inferior dentro de la estructura de nivel superior. |
-| [**PrimitiveIndex**](primitiveindex.md) | Índice generado automáticamente de la primitiva dentro de la geometría dentro de la instancia de estructura de aceleración de nivel inferior. |
+| [**PrimitiveIndex**](primitiveindex.md) | Índice generado automáticamente de la primitiva dentro de la geometría dentro de la instancia de la estructura de aceleración de nivel inferior. |
 | [**ObjectRayOrigin**](objectrayorigin.md) | Origen del espacio de objetos para el rayo actual. |
 | [**ObjectRayDirection**](objectraydirection.md) | Dirección del espacio del objeto para el rayo actual. |
 | [**ObjectToWorld3x4**](objecttoworld3x4.md) | Matriz para transformar del espacio de objetos al espacio del mundo. |
 | [**ObjectToWorld4x3**](objecttoworld4x3.md) | Matriz para transformar del espacio de objetos al espacio del mundo. |
-| [**WorldToObject3x4**](worldtoobject3x4.md) | Matriz para transformar del espacio del mundo al espacio de objetos |
-| [**WorldToObject4x3**](worldtoobject4x3.md) | Matriz para transformar del espacio del mundo al espacio de objetos |
-### <a name="hit-specific-system-values"></a>Valores del sistema específicos de las pulsaciones
+| [**WorldToObject3x4**](worldtoobject3x4.md) | Matriz para la transformación del espacio del mundo al espacio de objetos |
+| [**WorldToObject4x3**](worldtoobject4x3.md) | Matriz para la transformación del espacio del mundo al espacio de objetos |
+### <a name="hit-specific-system-values"></a>Valores del sistema específicos de la aplicación
 
 | Tema | Descripción |
 |-|-|

@@ -1,7 +1,7 @@
 ---
 description: El método IsStopped determina si el filtro está detenido actualmente.
 ms.assetid: 89358523-d8e2-4c79-9ab8-6cc2f77a277f
-title: Método CBaseFilter. IsStopped (Amfilter. h)
+title: Método CBaseFilter.IsStopped (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 681ceb0a8dcc6b82a2bd6845119e2ca7fe0128eb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8e7b2e5e74eafe118c6e1297320d33b222083c0b132311a8c99ec6a40d6d4531
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017183"
 ---
-# <a name="cbasefilterisstopped-method"></a>CBaseFilter. IsStopped, método
+# <a name="cbasefilterisstopped-method"></a>CBaseFilter.IsStopped (método)
 
 El `IsStopped` método determina si el filtro está detenido actualmente.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si el filtro está detenido o **false** en caso contrario.
+Devuelve **TRUE si** se detiene el filtro o **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve **true** si el filtro está detenido o **false** en caso contrario.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve **true** si el filtro está detenido o **false** en caso contrario.
 
 <dl> <dt>
 
-[**Clase CBaseFilter**](cbasefilter.md)
+[**CBaseFilter (clase)**](cbasefilter.md)
 </dt> </dl>
 
  

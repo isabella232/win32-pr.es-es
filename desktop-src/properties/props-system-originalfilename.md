@@ -4,12 +4,12 @@ ms.assetid: 54c0ebd1-d270-4e8b-88e6-d58698ddd208
 title: System.OriginalFileName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5adeb0f9920698bd3b6896559a79081aa51382b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 477d0ed56873b71e9f7cbe71bb59aa28500385ea529e1e51466dbf853cd8ca59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970184"
 ---
 # <a name="systemoriginalfilename"></a>System.OriginalFileName
 
@@ -32,7 +32,7 @@ propertyDescription
 
 Los valores PKEY se definen en Propkey.h.
 
-El requisito de una referencia de cadena indirecta específica para el atributo de labelInfo se agregó para Windows Vista con `label` Service Pack 1 (SP1). 
+El requisito de una referencia de cadena indirecta específica para el atributo de labelInfo se agregó `label` para Windows Vista con Service Pack 1 (SP1). 
 
 ## <a name="related-topics"></a>Temas relacionados
 

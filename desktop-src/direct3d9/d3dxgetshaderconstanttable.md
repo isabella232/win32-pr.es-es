@@ -67,7 +67,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 ## <a name="remarks"></a>Comentarios
 
-[**D3DXCompileShader**](d3dxcompileshader.md) genera una tabla constante e incrustada en el cuerpo del sombreador. Si necesita más espacio de direcciones virtuales, vea [**D3DXGetShaderConstantTableEx.**](d3dxgetshaderconstanttableex.md)
+[**D3DXCompileShader**](d3dxcompileshader.md) genera una tabla constante e incrustada en el cuerpo del sombreador. Si necesita más espacio de direcciones virtuales, consulte [**D3DXGetShaderConstantTableEx.**](d3dxgetshaderconstanttableex.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -80,7 +80,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

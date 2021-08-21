@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-TS-ExpireDate2
-description: Fecha de expiración de la segunda CAL por usuario de TS.
+description: Fecha de expiración del segundo TS por cal de usuario.
 ms.assetid: d594dbcf-249a-4d72-a9fa-06a4c62fc895
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD del atributo MS-TS-ExpireDate2
-- msTSExpireDate2 esquema de AD de atributos
+- Esquema de AD del atributo msTSExpireDate2
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af30b760485b519770ec1014dc12148fd5340850
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 32afe84d3bbda149b8fa4e65746e06b6b2cf0f975a316076ac6cbf77ef58d31f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960174"
 ---
 # <a name="ms-ts-expiredate2-attribute"></a>Atributo MS-TS-ExpireDate2
 
-Fecha de expiración de la segunda CAL por usuario de TS.
+Fecha de expiración del segundo TS por cal de usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------------------------|
 | CN                | MS-TS-ExpireDate2                                             |
-| Nombre para mostrar de LDAP | msTSExpireDate2                                               |
-| Tamaño              | \-                                                            |
-| Actualizar privilegio  | \-                                                            |
+| Ldap-Display-Name | msTSExpireDate2                                               |
+| Size              | \-                                                            |
+| Privilegio actualizar  | \-                                                            |
 | Frecuencia de actualización  | \-                                                            |
 | Attribute-Id      | 1.2.840.113556.1.4.2000                                       |
-| System-ID-GUID    | 54dfcf71-bc3f-4f0b-9d5a-4b2476bb8925                          |
-| Sintaxis            | [**String(Generalized-Time)**](s-string-generalized-time.md) |
+| System-Id-Guid    | 54dfcf71-bc3f-4f0b-9d5a-4b2476bb8925                          |
+| Syntax            | [**String(Generalized-Time)**](s-string-generalized-time.md) |
 
 
 
@@ -50,15 +50,15 @@ Fecha de expiración de la segunda CAL por usuario de TS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | True         |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Verdadero         |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
@@ -71,15 +71,15 @@ Fecha de expiración de la segunda CAL por usuario de TS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | True         |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Verdadero         |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
@@ -92,15 +92,15 @@ Fecha de expiración de la segunda CAL por usuario de TS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | True         |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Verdadero         |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |

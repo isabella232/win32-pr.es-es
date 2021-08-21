@@ -1,5 +1,5 @@
 ---
-title: Método IBackgroundCopyFile2 GetFileRanges (Deliveryoptimization. h)
+title: Método IBackgroundCopyFile2 GetFileRanges (Deliveryoptimization.h)
 description: Recupera los intervalos que desea descargar del archivo remoto.
 ms.assetid: 19B7B4FC-371F-482B-B997-C240B5483F4D
 keywords:
@@ -17,14 +17,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 37352176ca460587343bed0a154ee992c12c2fff
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 156bb2eb1e136593bfec4310599200f2d2800e271defa0e4a3259a4a67acb648
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047083"
 ---
-# <a name="ibackgroundcopyfile2getfileranges-method"></a>IBackgroundCopyFile2:: GetFileRanges (método)
+# <a name="ibackgroundcopyfile2getfileranges-method"></a>IBackgroundCopyFile2::GetFileRanges (método)
 
 Recupera los intervalos que desea descargar del archivo remoto.
 
@@ -47,14 +47,14 @@ HRESULT GetFileRanges(
 *RangeCount* \[ in, out\]
 </dt> <dd>
 
-Número de elementos de *intervalos*.
+Número de elementos de *ranges.*
 
 </dd> <dt>
 
-*Intervalos* \[ de enuncia\]
+*Intervalos* \[ out\]
 </dt> <dd>
 
-Matriz de estructuras [**BG_FILE_RANGE**](bg-file-range.md) que especifican los intervalos que se van a descargar. Cuando haya terminado, llame a la función [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) para liberar *intervalos*.
+Matriz de [**BG_FILE_RANGE**](bg-file-range.md) que especifican los intervalos que se van a descargar. Cuando haya terminado, llame a [**la función CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) para liberar *intervalos*.
 
 </dd> </dl>
 
@@ -66,8 +66,8 @@ Este método devuelve los siguientes valores devueltos, así como otros.
 
 | Código devuelto                                                                              | Descripción                                                                                                                                   |
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>S_OK * * * *</dt> </dl> | Correcto<br/>                                                                                                                            |
-| <dl> <dt>**S_FALSE**</dt> </dl>  | No se especificó ningún intervalo o el trabajo es un trabajo de carga o de carga-respuesta. *RangeCount* se establece en cero y *Ranges* se establece en **null**.<br/> |
+| <dl> <dt>S_OK**</dt> </dl> | Success<br/>                                                                                                                            |
+| <dl> <dt>**S_FALSE**</dt> </dl>  | No se especificó ningún intervalo o el trabajo es un trabajo de carga o carga-respuesta. *RangeCount* se establece en cero y *Ranges* en **NULL.**<br/> |
 
 
 
@@ -77,13 +77,13 @@ Este método devuelve los siguientes valores devueltos, así como otros.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1709 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Windows Server, versión 1709 \[ solo para aplicaciones de escritorio\]<br/>                                       |
-| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
+| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | Archivo DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyFile2 se define como 83e81b93-0873-474d-8a8c-f2018b1a939c<br/>             |
 

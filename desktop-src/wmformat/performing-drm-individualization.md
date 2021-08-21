@@ -1,49 +1,49 @@
 ---
-title: Realización de una individualización DRM
-description: Realización de una individualización DRM
+title: Realización de la individualización de DRM
+description: Realización de la individualización de DRM
 ms.assetid: daad1a31-f0a7-43ab-b920-94b9f050a44e
 keywords:
-- SDK de Windows Media Format, API extendidas del cliente DRM
-- SDK de Windows Media Format, API extendidas de cliente
-- SDK de Windows Media Format, API extendidas
-- SDK de Windows Media Format, API
-- SDK de Windows Media Format, administración de derechos digitales (DRM)
-- SDK de Windows Media Format, individualización de DRM
-- SDK de Windows Media Format, individualización
-- Administración de derechos digitales (DRM), API extendidas de cliente
+- Windows SDK de formato multimedia, API extendidas de cliente DRM
+- Windows SDK de formato multimedia, API extendidas de cliente
+- Windows SDK de formato multimedia, API extendidas
+- Windows SDK de formato multimedia, API
+- Windows SDK de formato multimedia, administración de derechos digitales (DRM)
+- Windows SDK de formato multimedia, individualización de DRM
+- Windows SDK de formato multimedia, individualización
+- administración de derechos digitales (DRM), API extendidas de cliente
 - DRM (administración de derechos digitales), API extendidas de cliente
-- Administración de derechos digitales (DRM), API extendidas
+- administración de derechos digitales (DRM), API extendidas
 - DRM (administración de derechos digitales), API extendidas
-- Administración de derechos digitales (DRM), API
+- administración de derechos digitales (DRM), API
 - DRM (administración de derechos digitales), API
-- Administración de derechos digitales (DRM), individualización
+- digital rights management (DRM), individualización
 - DRM (administración de derechos digitales), individualización
-- Administración de derechos digitales (DRM), individualización de DRM
+- administración de derechos digitales (DRM), individualización de DRM
 - DRM (administración de derechos digitales), individualización de DRM
-- API extendidas del cliente DRM, individualización
+- API extendidas de cliente DRM, individualización
 - API extendidas de cliente, individualización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d8f7f04add4ed626985651d5220e69ea713e4d0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 72c46d2cd6fccd2c6c1a8898a2d0215b6bc62a3655b12412192d1809021747ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027393"
 ---
-# <a name="performing-drm-individualization"></a>Realización de una individualización DRM
+# <a name="performing-drm-individualization"></a>Realización de la individualización de DRM
 
-La individualización es el proceso de actualizar el componente DRM en el equipo cliente, cifrarlo y hacerlo único. Cuando se crea un equipo, el componente DRM está asociado al equipo y no podrá descodificar el contenido en ningún otro equipo. Las API extendidas del cliente DRM de Windows Media ofrecen compatibilidad para la individualización del componente DRM en los equipos cliente.
+La individualización es el proceso de actualizar el componente DRM en el equipo cliente, cifrarlo y hacer que sea único. Cuando un equipo se individualiza, el componente DRM está asociado al equipo y no podrá descodificar contenido en ningún otro equipo. Las API extendidas Windows de cliente DRM multimedia proporcionan compatibilidad para individualizar el componente DRM en los equipos cliente.
 
-La individualización se realiza llamando al método [**IWMDRMSecurity::P erformsecurityupdate**](iwmdrmsecurity-performsecurityupdate.md) . Puede llamar a **PerformSecurityUpdate** para que se pueda individualizar solo si la versión del servidor es más reciente que la instalada en el equipo cliente, o puede forzar la individualización sin tener en cuenta las versiones de seguridad relativas. La marca para la individualización necesaria es la seguridad de WMDRM que \_ \_ realiza \_ indiv. La marca para la individualización forzada es la seguridad de WMDRM y \_ \_ \_ forzar \_ indiv.
+La individualización se realiza mediante una llamada [**al método IWMDRMSecurity::P erformSecurityUpdate.**](iwmdrmsecurity-performsecurityupdate.md) Puede llamar a **PerformSecurityUpdate** para que se individualice solo si la versión del servidor es más reciente que la instalada en el equipo cliente, o puede forzar la individualización sin tener en cuenta las versiones de seguridad relativas. La marca para la individualización según sea necesario es WMDRM \_ SECURITY \_ PERFORM \_ INDIV. La marca para la individualización forzada es WMDRM \_ SECURITY \_ PERFORM FORCE \_ \_ INDIV.
 
-**PerformSecurityUpdate** es una llamada asincrónica. Se devolverá rápidamente y después generará eventos para proporcionar información de estado sobre el proceso de individualización. La mayoría de los eventos generados serán eventos **MEWMDRMIndividualizationProgress** y cada uno tiene una interfaz [**IWMDRMIndividualizationStatus**](iwmdrmindividualizationstatus.md) asociada. Para obtener la interfaz de estado, debe llamar a **IMFMediaEvent:: GetValue** para recuperar un puntero **IUnknown** que esté en el mismo objeto y, a continuación, consultarlo para **IWMDRMIndividualizationStatus**.
+**PerformSecurityUpdate es** una llamada asincrónica. Se devolverá rápidamente y, a continuación, generará eventos para proporcionar información de estado sobre el proceso de individualización. La mayoría de los eventos generados serán eventos **MEWMDRMIndividualizationProgress** y cada uno tiene una interfaz [**IWMDRMIndividualizationStatus**](iwmdrmindividualizationstatus.md) asociada. Para obtener la interfaz de estado, debe llamar a **IMFMediaEvent::GetValue** para recuperar un **puntero IUnknown** que se encuentra en el mismo objeto y, a continuación, consultarlo para **IWMDRMIndividualizationStatus**.
 
-Puede obtener datos de una estructura [**de \_ \_ Estado**](drmwm-individualize-status.md) de la función de usuario de WM llamando a [**IWMDRMIndividualizeStatus:: getStatus**](iwmdrmindividualizationstatus-getstatus.md). Cada evento que se genera tiene su propio objeto con estado, por lo que debe seguir el proceso de obtención del valor de evento y la consulta de la interfaz de estado cada vez.
+Puede obtener datos para una estructura [**WM \_ INDIVIDUALIZE \_ STATUS**](drmwm-individualize-status.md) llamando a [**IWMDRMIndividualizeStatus::GetStatus**](iwmdrmindividualizationstatus-getstatus.md). Cada evento que se genera tiene su propio objeto con estado, por lo que debe seguir el proceso de obtener el valor del evento y consultar la interfaz de estado cada vez.
 
-En función del tamaño de la descarga, puede haber docenas o cientos de eventos **MEWMDRMIndividualizationProgress** . Cuando finaliza el proceso de individualización, se genera un evento **MEWMDRMIndividualizationCompleted** .
+Según el tamaño de la descarga, puede haber docenas o cientos de eventos **MEWMDRMIndividualizationProgress.** Cuando finaliza el proceso de individualización, se genera un evento **MEWMDRMIndividualizationCompleted.**
 
-Cuando se completa la individualización, los únicos objetos existentes que reflejen el nuevo estado de forma individual son los que heredan de [**IWMDRMSecurity**](iwmdrmsecurity.md). No se actualizarán todos los demás objetos existentes. Debe liberar y volver a crear los demás objetos para que reflejen el nuevo estado de forma individual.
+Cuando se completa la individualización, los únicos objetos existentes que reflejarán el nuevo estado individualizado son los que heredan de [**IWMDRMSecurity**](iwmdrmsecurity.md). No se actualizarán todos los demás objetos existentes. Debe liberar y volver a crear cualquier otro objeto para que refleje el nuevo estado individualizado.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -55,15 +55,15 @@ Cuando se completa la individualización, los únicos objetos existentes que ref
 [**Guía de programación**](drm-programming-guide.md)
 </dt> <dt>
 
-[**Usar el modelo de eventos Media Foundation**](using-the-media-foundation-model.md)
+[**Uso del modelo Media Foundation eventos**](using-the-media-foundation-model.md)
 </dt> <dt>
 
-[Prácticas recomendadas para la individualización de DRM de Windows Media](/previous-versions/ms867216(v=msdn.10))
+[Windows Procedimientos recomendados de individualización de DRM multimedia](/previous-versions/ms867216(v=msdn.10))
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetBeginExternalBackupInstance (método)'
-title: Método API. JetBeginExternalBackupInstance
+description: Más información sobre el método Api.JetBeginExternalBackupInstance
+title: Método Api.JetBeginExternalBackupInstance
 TOCTitle: 'JetBeginExternalBackupInstance method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetBeginExternalBackupInstance(Microsoft.Isam.Esent.Interop.JET_INSTANCE,Microsoft.Isam.Esent.Interop.BeginExternalBackupGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetbeginexternalbackupinstance(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1c42f5d1f62de0af7582247fb47d407f82981a42
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b590ed0fb13c4540a4fad15eea1de5c4ad24e40611285d976ebf04b6269c6b6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983645"
 ---
-# <a name="apijetbeginexternalbackupinstance-method"></a>Método API. JetBeginExternalBackupInstance
+# <a name="apijetbeginexternalbackupinstance-method"></a>Método Api.JetBeginExternalBackupInstance
 
 Inicia una copia de seguridad externa mientras el motor y la base de datos están en línea y activos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,14 +62,14 @@ public static void JetBeginExternalBackupInstance(
 #### <a name="parameters"></a>Parámetros
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
     La instancia se prepara para la copia de seguridad.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. BeginExternalBackupGrbit](./beginexternalbackupgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.BeginExternalBackupGrbit](./beginexternalbackupgrbit-enumeration.md)  
     
     Opciones de copia de seguridad.
 
@@ -79,6 +79,6 @@ public static void JetBeginExternalBackupInstance(
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

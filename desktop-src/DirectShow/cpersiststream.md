@@ -1,7 +1,7 @@
 ---
-description: CPersistStream es la clase base para las propiedades persistentes de los filtros (es decir, las propiedades de filtro en los gráficos guardados).
+description: CPersistStream es la clase base para las propiedades persistentes de los filtros (es decir, filtrar propiedades en gráficos guardados).
 ms.assetid: 8073e2be-aaf9-4b01-a7d5-bab5c1dcc19b
-title: Clase CPersistStream
+title: CPersistStream (clase)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,55 +12,55 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 690a0f45fab7c3612d215a859798460abc81728e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 60a48b35ae1559e9b8dfa718c5bca38689cdf0101ce4a343a907b713c8988de0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104536741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073589"
 ---
-# <a name="cpersiststream-class"></a>Clase CPersistStream
+# <a name="cpersiststream-class"></a>CPersistStream (clase)
 
 ![jerarquía de clases cpersiststream](images/pstrm01.png)
 
-`CPersistStream` es la clase base para las propiedades persistentes de los filtros (es decir, las propiedades de filtro en los gráficos guardados).
+`CPersistStream` es la clase base para las propiedades persistentes de los filtros (es decir, filtrar propiedades en gráficos guardados).
 
-La manera más sencilla de usar `CPersistStream` es:
+La manera más sencilla de `CPersistStream` usar es:
 
 1.  Organice para que el filtro herede esta clase.
-2.  Implemente [**WriteToStream**](cpersiststream-writetostream.md) y [**ReadFromStream**](cpersiststream-readfromstream.md) en la clase. Estos invalidarán las funciones aquí, que no hacen nada pero actúan como marcadores de posición.
-3.  Cambie **NonDelegatingQueryInterface** para controlar **IPersistStream**.
-4.  Implemente [**SizeMax**](cpersiststream-sizemax.md) para devolver un límite superior en el número de bytes de datos que se guardan.
+2.  Implemente [**WriteToStream**](cpersiststream-writetostream.md) [**y ReadFromStream**](cpersiststream-readfromstream.md) en la clase . Estas invalidarán las funciones aquí, que no hacen nada más que actuar como marcadores de posición.
+3.  Cambie **nonDelegatingQueryInterface para** controlar **IPersistStream.**
+4.  Implemente [**SizeMax**](cpersiststream-sizemax.md) para devolver un límite superior en el número de bytes de datos guardados.
 
-    Si guarda datos de™ Unicode, recuerde que WCHAR tiene 2 bytes.
+    Si guarda datos ™ Unicode, recuerde que un WCHAR es de 2 bytes.
 
-5.  Cuando cambien los datos, llame a [**SetDirty**](cpersiststream-setdirty.md).
+5.  Cuando cambien los datos, llame [**a SetDirty**](cpersiststream-setdirty.md).
 
 ## <a name="version-numbers"></a>Números de versión
 
-En algún momento puede decidir modificar o ampliar el formato de los datos. A continuación, le interesará tener un número de versión en todas las secuencias guardadas antiguas para que pueda saber cuándo las Lee, si representan el formulario antiguo o nuevo. Para ayudarle, esta clase escribe y lee un número de versión. Cuando escribe, llama a [**GetSoftwareVersion**](cpersiststream-getsoftwareversion.md) para consultar la versión del software que se usa en ese momento. (En efecto, se trata de un número de versión del diseño de datos en el archivo). Escribe esto como la primera cosa en los datos. Si desea cambiar la versión, implemente (invalide) **GetSoftwareVersion**. Lee el número de versión del archivo en **MP \_ dwFileVersion** antes de llamar a [**ReadFromStream**](cpersiststream-readfromstream.md), por lo que en **ReadFromStream** puede comprobar **MPS \_ dwFileVersion** para ver si está leyendo un archivo de versión anterior. Normalmente, debe aceptar archivos cuya versión no sea más reciente que la versión de software que los Lee.
+En algún momento puede decidir modificar o ampliar el formato de los datos. A continuación, le gustaría tener un número de versión en todas las secuencias guardadas antiguas para poder saber, al leerlas, si representan el formulario antiguo o nuevo. Para ayudarle, esta clase escribe y lee un número de versión. Cuando escribe, llama a [**GetSoftwareVersion**](cpersiststream-getsoftwareversion.md) para consultar la versión del software que se usa en este momento. (En efecto, se trata de un número de versión del diseño de datos en el archivo). Escribe esto como lo primero en los datos. Si desea cambiar la versión, implemente (invalide) **GetSoftwareVersion**. Lee el número de versión del archivo en **mPS \_ dwFileVersion** antes de llamar a [**ReadFromStream,**](cpersiststream-readfromstream.md)por lo que en **ReadFromStream** puede comprobar **mPS \_ dwFileVersion** para ver si está leyendo un archivo de versión anterior. Normalmente, debe aceptar archivos cuya versión no sea más reciente que la versión de software que los está leyendo.
 
-**CPersistStream** implementa [**IPersistStream**](/windows/desktop/api/objidl/nn-objidl-ipersiststream). Para obtener más información sobre la implementación, vea la referencia de COM en el SDK de la plataforma de Microsoft.
+**CPersistStream** implementa [**IPersistStream.**](/windows/desktop/api/objidl/nn-objidl-ipersiststream) Para obtener más información sobre la implementación, consulte la Referencia COM en el SDK de la plataforma de Microsoft.
 
 
 
 | Miembros de datos protegidos                                          | Descripción                                                                   |
 |-----------------------------------------------------------------|-------------------------------------------------------------------------------|
-| dwFileVersion de mPS \_                                              | Número de versión del archivo.                                                   |
-| fDirty de mPS \_                                                     | Los datos de esta secuencia se deben guardar.                                           |
+| mPS \_ dwFileVersion                                              | Número de versión del archivo.                                                   |
+| mPS \_ fDirty                                                     | Se deben guardar los datos de esta secuencia.                                           |
 | Funciones de miembro                                                | Descripción                                                                   |
-| [**CPersistStream**](cpersiststream-cpersiststream.md)         | Construye un objeto **CPersistStream** .                                       |
-| [**SetDirty**](cpersiststream-setdirty.md)                     | Indica que el objeto se debe guardar en la secuencia.                        |
+| [**CPersistStream**](cpersiststream-cpersiststream.md)         | Construye un **objeto CPersistStream.**                                       |
+| [**SetDirty**](cpersiststream-setdirty.md)                     | Indica que el objeto debe guardarse en la secuencia.                        |
 | Funciones miembro reemplazables                                    | Descripción                                                                   |
 | [**GetClassID**](cpersiststream-getclassid.md)                 | Recupera el identificador de clase de esta secuencia.                                |
-| [**GetSoftwareVersion**](cpersiststream-getsoftwareversion.md) | Recupera el número de versión de este formato de archivo.                            |
+| [**GetSoftwareVersion**](cpersiststream-getsoftwareversion.md) | Recupera el número de versión para este formato de archivo.                            |
 | [**ReadFromStream**](cpersiststream-readfromstream.md)         | Lee los datos del filtro de la secuencia.                                      |
 | [**SizeMax**](cpersiststream-sizemax.md)                       | Recupera el número de bytes necesarios para los datos (sin incluir el número de versión). |
 | [**WriteToStream**](cpersiststream-writetostream.md)           | Escribe los datos del filtro en la secuencia.                                       |
 | Métodos IPersistStream                                          | Descripción                                                                   |
 | [**GetSizeMax**](cpersiststream-getsizemax.md)                 | Recupera el número de bytes necesarios para los datos (incluido el número de versión).     |
-| [**IsDirty**](cpersiststream-isdirty.md)                       | Comprueba si se debe guardar el objeto.                                           |
-| [**Cargar**](cpersiststream-load.md)                             | Carga los datos de la secuencia en la memoria.                                   |
+| [**IsDirty**](cpersiststream-isdirty.md)                       | Comprueba si el objeto debe guardarse.                                           |
+| [**Cargar**](cpersiststream-load.md)                             | Carga los datos del flujo en memoria.                                   |
 | [**Guardar**](cpersiststream-save.md)                             | Guarda los datos de la memoria en la secuencia.                                     |
 
 

@@ -23,7 +23,7 @@ ms.locfileid: "119047123"
 ---
 # <a name="do_download_range-structure"></a>DO_DOWNLOAD_RANGE estructura
 
-La **DO_DOWNLOAD_RANGE** estructura identifica un único intervalo de bytes para descargar de un archivo. La **DO_DOWNLOAD_RANGE** se incluye dentro **de DO_DOWNLOAD_RANGES_INFO** estructura para proporcionar una matriz de intervalos para descargar.
+La **DO_DOWNLOAD_RANGE** estructura identifica un único intervalo de bytes que se van a descargar de un archivo. La **DO_DOWNLOAD_RANGE** se incluye dentro **de DO_DOWNLOAD_RANGES_INFO** estructura para proporcionar una matriz de intervalos para descargar.
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp

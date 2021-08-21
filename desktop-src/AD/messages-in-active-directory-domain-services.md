@@ -1,40 +1,40 @@
 ---
 title: Mensajes en Active Directory Domain Services
-description: Los mensajes de Active Directory Domain Services son funcionales en Windows 2000 y Windows NT 4,0 con Service Pack 6a (SP6a) y posterior con DSClient.
+description: Los mensajes de Active Directory Domain Services son funcionales en Windows 2000 y Windows NT 4.0 con Service Pack 6a (SP6a) y versiones posteriores con DSClient.
 ms.assetid: 32a4724b-3182-4521-975c-cef33afee0b2
 ms.tgt_platform: multiple
 keywords:
-- Active Directory mensajes de AD
+- Active Directory Messages AD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6895aee711af04778318cf42920d0b0416725205
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6b3f5a9a5e92048f64cc1b49ea67cae05443eda685d588df0c78bb3f48cf0dbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105656221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025923"
 ---
 # <a name="messages-in-active-directory-domain-services"></a>Mensajes en Active Directory Domain Services
 
-Los mensajes de Active Directory Domain Services son funcionales en Windows 2000 y Windows NT 4,0 con Service Pack 6a (SP6a) y posterior con DSClient. También son funcionales en estaciones de trabajo de Windows 98/95 con IE 4.01 y versiones posteriores y DSClient. Sin embargo, si las páginas de propiedades de selección MultiSelect se inician desde el Shell, el mensaje de [**\_ \_ \_ error de notificaciones de WM ADSPROP**](wm-adsprop-notify-error.md) y sus funciones auxiliares correspondientes, [**ADsPropSendErrorMessage**](/windows/desktop/api/Adsprop/nf-adsprop-adspropsenderrormessage) y [**ADsPropShowErrorDialog**](/windows/desktop/api/Adsprop/nf-adsprop-adspropshowerrordialog) , no estarán funcionales y no se mostrarán. Si las páginas de propiedades de selección MultiSelect se inician en una herramienta de administración, por ejemplo, usuarios y equipos de AD, todos los mensajes estarán funcionales y estarán disponibles para que se muestren en las páginas de propiedades de selección MultiSelect.
+Los mensajes de Active Directory Domain Services son funcionales en Windows 2000 y Windows NT 4.0 con Service Pack 6a (SP6a) y versiones posteriores con DSClient. También son funcionales en Windows de trabajo 98/95 con IE4.01 y versiones posteriores y DSClient. Sin embargo, si se inician páginas de propiedades de selección múltiple desde el shell, el mensaje DE [**\_ ERROR WM ADSPROP NOTIFY \_ \_ y**](wm-adsprop-notify-error.md) sus funciones auxiliares [**correspondientes, ADsPropSendErrorMessage**](/windows/desktop/api/Adsprop/nf-adsprop-adspropsenderrormessage) y [**ADsPropShowErrorDialog**](/windows/desktop/api/Adsprop/nf-adsprop-adspropshowerrordialog) no son funcionales y no se mostrarán. Si las páginas de propiedades de selección múltiple se inician dentro de una herramienta de administración, por ejemplo, Usuarios y equipos de AD, todos los mensajes son funcionales y están disponibles para mostrarse en las páginas de propiedades de selección múltiple.
 
-Active Directory Domain Services usar los siguientes mensajes:
+Active Directory Domain Services los mensajes siguientes:
 
--   [**\_solicitud de ADSPROP de WM \_ \_**](wm-adsprop-notify-apply.md)
--   [**\_ \_ notificar cambio de ADSPROP de WM \_**](wm-adsprop-notify-change.md)
--   [**\_error de \_ notificación de ADSPROP de WM \_**](wm-adsprop-notify-error.md)
--   [**\_salida de \_ notificación de ADSPROP de WM \_**](wm-adsprop-notify-exit.md)
--   [**\_ \_ notificar a \_ primer plano ADSPROP de WM**](wm-adsprop-notify-foreground.md)
--   [**\_ADSPROP \_ notificar a \_ PAGEHWND de WM**](wm-adsprop-notify-pagehwnd.md)
--   [**\_ADSPROP \_ notificar a \_ PAGEINIT de WM**](wm-adsprop-notify-pageinit.md)
--   [**\_ADSPROP \_ notificar \_ SETFOCUS de WM**](wm-adsprop-notify-setfocus.md)
--   [**hoja de ADSPROP de WM \_ \_ \_ creación**](wm-adsprop-sheet-create.md)
--   [**\_notificación de \_ cierre de hoja DSA \_ de WM \_**](wm-dsa-sheet-close-notify.md)
--   [**\_ \_ \_ crear notificación de la hoja DSA de WM \_**](wm-dsa-sheet-create-notify.md)
+-   [**WM \_ ADSPROP \_ NOTIFY \_ APPLY**](wm-adsprop-notify-apply.md)
+-   [**WM \_ ADSPROP \_ NOTIFY \_ CHANGE**](wm-adsprop-notify-change.md)
+-   [**ERROR \_ DE NOTIFICACIÓN DE ADSPROP \_ DE WM \_**](wm-adsprop-notify-error.md)
+-   [**WM \_ ADSPROP \_ NOTIFY \_ EXIT**](wm-adsprop-notify-exit.md)
+-   [**WM \_ ADSPROP \_ NOTIFY \_ FOREGROUND**](wm-adsprop-notify-foreground.md)
+-   [**PÁGINA \_ DE NOTIFICACIÓN DE ADSPROP DE \_ \_ WMHWND**](wm-adsprop-notify-pagehwnd.md)
+-   [**PÁGINA \_ DE NOTIFICACIÓN DE WM ADSPROPINIT \_ \_**](wm-adsprop-notify-pageinit.md)
+-   [**WM \_ ADSPROP \_ NOTIFY \_ SETFOCUS**](wm-adsprop-notify-setfocus.md)
+-   [**WM \_ ADSPROP \_ SHEET \_ CREATE**](wm-adsprop-sheet-create.md)
+-   [**NOTIFICACIÓN \_ DE CIERRE DE HOJA DE WM DSA \_ \_ \_**](wm-dsa-sheet-close-notify.md)
+-   [**WM \_ DSA \_ SHEET \_ CREATE \_ NOTIFY**](wm-dsa-sheet-create-notify.md)
 
- 
+ 
 
- 
+ 
 
 
 

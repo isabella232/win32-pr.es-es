@@ -1,7 +1,7 @@
 ---
 description: Escala un vector 3D.
 ms.assetid: b2483d6e-56e4-4557-a603-d59c0767774d
-title: Función D3DXVec3Scale (D3dx9math. h)
+title: Función D3DXVec3Scale (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e5357b862b9cf82e458429edea27001163eb9635
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5fe84ca9a1a718c14e582007933051d07683252915bca8a99b77316bc7fc9b22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105708098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044533"
 ---
-# <a name="d3dxvec3scale-function"></a>D3DXVec3Scale función)
+# <a name="d3dxvec3scale-function"></a>Función D3DXVec3Scale
 
 Escala un vector 3D.
 
@@ -47,23 +47,23 @@ D3DXVECTOR3* D3DXVec3Scale(
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntero a la estructura [**D3DXVECTOR3**](d3dxvector3.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXVECTOR3**](d3dxvector3.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*PV* \[ de\]
+*pV* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a la estructura de [**D3DXVECTOR3**](d3dxvector3.md) de origen.
+Puntero a la estructura [**D3DXVECTOR3 de**](d3dxvector3.md) origen.
 
 </dd> <dt>
 
 *s* \[ en\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Valor de escalado.
 
@@ -73,11 +73,11 @@ Valor de escalado.
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Puntero a una estructura [**D3DXVECTOR3**](d3dxvector3.md) que es el vector escalado.
+Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) que es el vector escalado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro *pOut* . De esta manera, la función **D3DXVec3Scale** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec3Scale** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -97,7 +97,7 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 [Funciones matemáticas](dx9-graphics-reference-d3dx-functions-math.md)
 </dt> <dt>
 
-[**D3DXVec3Add**](d3dxvec3add.md)
+[**D3DXVec3Agregue**](d3dxvec3add.md)
 </dt> <dt>
 
 [**D3DXVec3Subtract**](d3dxvec3subtract.md)

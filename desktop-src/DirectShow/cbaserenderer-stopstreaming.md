@@ -1,5 +1,5 @@
 ---
-description: El método StopStreaming detiene el streaming cuando el filtro deja de funcionar.
+description: El método StopStreaming detiene el streaming cuando el filtro sale del estado en ejecución.
 ms.assetid: 465dde15-adec-46da-b8c8-56743e0cbd29
 title: Método CBaseRenderer.StopStreaming (Renbase.h)
 ms.topic: reference
@@ -46,7 +46,7 @@ Devuelve S \_ OK.
 
 ## <a name="remarks"></a>Comentarios
 
-Este método llama al [**método CBaseRenderer::OnStopStreaming.**](cbaserenderer-onstopstreaming.md) Ese método no hace nada en la clase base, pero la clase derivada puede invalidarla.
+Este método llama al [**método CBaseRenderer::OnStopStreaming.**](cbaserenderer-onstopstreaming.md) Ese método no hace nada en la clase base, pero la clase derivada puede invalidarlo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Este método llama al [**método CBaseRenderer::OnStopStreaming.**](cbaserendere
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

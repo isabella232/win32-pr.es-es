@@ -1,7 +1,7 @@
 ---
-description: El \_ método get visible recupera la visibilidad de la ventana actual.
+description: El método get \_ Visible recupera la visibilidad de la ventana actual.
 ms.assetid: 7e643569-1116-4562-be33-babd12a7e899
-title: Método CBaseControlWindow.get_Visible (Ctlutil. h)
+title: CBaseControlWindow.get_Visible método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3bc38a0b35f46de223ed84174c3b10f5300cc94d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ef75aaf396e8677e9c470239d5dfca747729b534b67f8fef53a065280175f017
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017383"
 ---
-# <a name="cbasecontrolwindowget_visible-method"></a>CBaseControlWindow. get ( \_ método visible)
+# <a name="cbasecontrolwindowget_visible-method"></a>Método CBaseControlWindow.get \_ Visible
 
 El `get_Visible` método recupera la visibilidad de la ventana actual.
 
@@ -45,17 +45,17 @@ HRESULT get_Visible(
 *pVisible* 
 </dt> <dd>
 
-Puntero a una marca booleana de Automation (0 es OFF, 1 es ON).
+Puntero a una marca booleana de Automation (0 está desactivado, 1 está on).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro devuelve 1 si la ventana tiene el \_ estilo visible de WS; en caso contrario, es 0.
+Esta función miembro devuelve 1 si la ventana tiene el estilo VISIBLE de \_ WS; 0 en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta función miembro devuelve 1 si la ventana tiene el \_ estilo visible de WS;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Esta función miembro devuelve 1 si la ventana tiene el \_ estilo visible de WS;
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

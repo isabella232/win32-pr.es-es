@@ -4,18 +4,18 @@ ms.assetid: 384f0732-e0c5-4b1f-b590-195e0acf90e1
 title: Implementar una barra de búsqueda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: acd3f2440c011267c792c79c8bc3550926c5767f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 15e86dc52f92a4800639a5dbb1659f70fbe1cfaca7cbc2f0d022df889f970ea5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104537810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015553"
 ---
 # <a name="implementing-a-seek-bar"></a>Implementar una barra de búsqueda
 
-En esta sección se describe cómo implementar una barra de búsqueda para una aplicación de reproductor de media. La barra de búsqueda se implementa como un control TrackBar. Para obtener información general sobre la búsqueda en DirectShow, consulte [búsqueda del gráfico de filtro](seeking-the-filter-graph.md).
+En esta sección se describe cómo implementar una barra de búsqueda para una aplicación de reproductor multimedia. La barra de búsqueda se implementa como un control trackbar. Para obtener información general sobre la búsqueda en DirectShow, vea [Buscar el filtro Graph](seeking-the-filter-graph.md).
 
-Cuando se inicie la aplicación, inicialice el TrackBar:
+Cuando se inicie la aplicación, inicialice la barra de seguimiento:
 
 
 ```C++
@@ -31,9 +31,9 @@ void InitSlider(HWND hwnd)
 
 
 
-El elemento TrackBar se deshabilita hasta que el usuario abre un archivo multimedia. El intervalo de TrackBar se establece de 0 a 100. Durante la reproducción de archivos, la aplicación calculará la posición de reproducción como un porcentaje de la duración del archivo y actualizará la barra de la barra en consecuencia. Por ejemplo, la posición de TrackBar "50" siempre corresponde a la mitad del archivo.
+La barra de seguimiento se deshabilita hasta que el usuario abre un archivo multimedia. El intervalo de la barra de seguimiento se establece entre 0 y 100. Durante la reproducción de archivos, la aplicación calculará la posición de reproducción como un porcentaje de la duración del archivo y actualizará la barra de seguimiento en consecuencia. Por ejemplo, la posición de la barra de seguimiento "50" siempre se corresponde con el centro del archivo.
 
-Cuando el usuario abre un archivo, cree un gráfico de reproducción de archivos con **RenderFile**. El código para esto se muestra en [Cómo reproducir un archivo](how-to-play-a-file.md). A continuación, consulte el administrador de gráficos de filtro para la interfaz **IMediaSeeking** y almacene el puntero de interfaz:
+Cuando el usuario abra un archivo, compile un gráfico de reproducción de archivos mediante **RenderFile**. El código para esto se muestra [en Cómo reproducir un archivo](how-to-play-a-file.md). A continuación, consulte Graph Administrador de filtros para la **interfaz IMediaSeeking** y almacene el puntero de interfaz:
 
 
 ```C++
@@ -43,7 +43,7 @@ hr = pGraph->QueryInterface(IID_IMediaSeeking, (void**)&g_pSeek);
 
 
 
-Para determinar si se puede buscar en el archivo, llame al método [**IMediaSeeking:: CheckCapabilities**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-checkcapabilities) o al método [**IMediaSeeking:: GetCapabilities**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getcapabilities) . Estos métodos hacen casi lo mismo, pero su semántica es ligeramente diferente. En el ejemplo siguiente se usa **CheckCapabilites**:
+Para determinar si el archivo es buscable, llame al método [**IMediaSeeking::CheckCapabilities**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-checkcapabilities) o al [**método IMediaSeeking::GetCapabilities.**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getcapabilities) Estos métodos hacen casi lo mismo, pero su semántica es ligeramente diferente. En el ejemplo siguiente se **usa CheckCapabilites**:
 
 
 ```C++
@@ -63,9 +63,9 @@ if (bCanSeek)
 
 
 
-La \_ marca de CanSeekAbsolute de búsqueda de búsquedas \_ comprueba si se puede buscar en el archivo de origen y la \_ marca AM Seek \_ CanGetDuration comprueba si la duración del archivo se puede determinar de antemano. Si se admiten las dos funciones, la aplicación habilita la barra de opciones y recupera la duración del archivo.
+La marca \_ CanSeekAbsolute de AM SEEKING comprueba si el archivo de origen es buscable y la marca \_ \_ CanGetDuration de AM SEEKING comprueba si la duración del archivo se puede determinar \_ de antemano. Si se admiten ambas funcionalidades, la aplicación habilita la barra de seguimiento y recupera la duración del archivo.
 
-Si se realiza búsquedas en el gráfico, la aplicación usará un temporizador para actualizar la posición de TrackBar durante la reproducción. Al ejecutar el gráfico de filtro para reproducir el archivo, inicie el evento de temporizador llamando a una de las funciones de temporizador de Windows, como **SetTimer**. Para obtener más información sobre los temporizadores, vea el tema sobre temporizadores en Platform SDK.
+Si el gráfico es buscable, la aplicación usará un temporizador para actualizar la posición de la barra de seguimiento durante la reproducción. Al ejecutar el gráfico de filtros para reproducir el archivo, inicie el evento de temporizador mediante una llamada a una de las funciones de temporizador de Windows, como **SetTimer**. Para obtener más información sobre los temporizadores, vea el tema "Temporizadores" en el SDK de plataforma.
 
 
 ```C++
@@ -95,7 +95,7 @@ void StopTimer()
 
 
 
-Utilice el evento de temporizador para actualizar la posición de la barra de la barra. Llame a [**IMediaSeeking:: GetCurrentPosition**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getcurrentposition) para recuperar la posición de reproducción Currant y, a continuación, calcule la posición como un porcentaje de la duración del archivo:
+Use el evento de temporizador para actualizar la posición de la barra de seguimiento. Llame a [**IMediaSeeking::GetCurrentPosition**](/windows/desktop/api/Strmif/nf-strmif-imediaseeking-getcurrentposition) para recuperar la posición de reproducción del currant y, a continuación, calcule la posición como un porcentaje de la duración del archivo:
 
 
 ```C++
@@ -117,7 +117,7 @@ case WM_TIMER:
 
 
 
-El usuario también puede trasladar la barra de desplazamiento para buscar el archivo. Cuando el usuario arrastra o hace clic en el control TrackBar, la aplicación recibe un \_ evento HSCROLL de WM. La palabra baja del parámetro *wParam* es el mensaje de notificación de TrackBar. Por ejemplo, TB \_ ENDTRACK se envía al final de la acción TrackBar y TB \_ THUMBTRACK se envía continuamente mientras el usuario arrastra la barra de información. En el código siguiente se muestra una manera de controlar el mensaje de HSCROLL de WM \_ :
+El usuario también puede mover la barra de seguimiento para buscar el archivo. Cuando el usuario arrastra o hace clic en el control trackbar, la aplicación recibe un evento \_ WM HSCROLL. La palabra baja del parámetro *wParam* es el mensaje de notificación de la barra de seguimiento. Por ejemplo, TB ENDTRACK se envía al final de la acción de barra de seguimiento y TB THUMBTRACK se envía continuamente mientras el usuario arrastra la \_ \_ barra de seguimiento. El código siguiente muestra una manera de controlar el mensaje \_ WM HSCROLL:
 
 
 ```C++
@@ -156,7 +156,7 @@ case WM_HSCROLL:
 
 
 
-Si el usuario arrastra la barra de comandos, la aplicación emite una serie de comandos de búsqueda, uno para cada mensaje de TB \_ THUMBTRACK que recibe. Para que las operaciones de búsqueda sean lo más suaves posible, la aplicación pausa el gráfico. Al pausar el gráfico se detiene la reproducción pero se asegura de que se actualiza la ventana de vídeo. Cuando la aplicación recibe el mensaje de TB \_ ENDTRACK, restaura el gráfico a su estado original.
+Si el usuario arrastra la barra de seguimiento, la aplicación emite una serie de comandos de búsqueda, uno para cada mensaje THUMBTRACK de TB \_ que recibe. Para que las operaciones de búsqueda se realicen lo más fluidas posible, la aplicación pausa el gráfico. Al pausar el gráfico se detiene la reproducción, pero se garantiza que la ventana de vídeo se actualiza. Cuando la aplicación recibe el mensaje \_ ENDTRACK de TB, restaura el gráfico a su estado original.
 
  
 

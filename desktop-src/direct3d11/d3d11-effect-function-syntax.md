@@ -15,7 +15,7 @@ ms.locfileid: "119046623"
 
 Una función de efecto se escribe en HLSL y se declara con la sintaxis descrita en esta sección.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 *ReturnType* *FunctionName* ( \[ *ArgumentList* \] )
 
@@ -33,13 +33,13 @@ Una función de efecto se escribe en HLSL y se declara con la sintaxis descrita 
 | ReturnType   | Cualquier [tipo HLSL](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax)                                                                                                                                                                                                       |
 | FunctionName | Cadena ASCII que identifica de forma única el nombre de la función de sombreador.                                                                                                                                                                                            |
 | ArgumentList | Uno o varios argumentos, separados por comas (vea [Argumentos de función (DirectX HLSL).](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-function-parameters)                                                                                                                             |
-| Instrucciones   | Una o varias instrucciones (vea [Instrucciones (HLSL de DirectX)](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-statements)) que son el cuerpo de la función. Si una función se define sin un cuerpo, se considera un prototipo; y se deben volver a definir con un cuerpo antes de su uso. |
+| Instrucciones   | Una o varias instrucciones (vea [Instrucciones (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-statements)) que son el cuerpo de la función. Si una función se define sin un cuerpo, se considera un prototipo; y se deben volver a definir con un cuerpo antes de su uso. |
 
 
 
  
 
-Una función de efecto puede ser un sombreador o simplemente puede ser una función a la que llama un sombreador. Una función se identifica de forma única por su nombre, los tipos de sus parámetros y la plataforma de destino. por lo tanto, las funciones se pueden sobrecargar. Cualquier función HLSL válida debe ajustarse a este formato; Para obtener una lista más detallada de la sintaxis de las funciones HLSL, vea [Functions (DirectX HLSL).](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-functions)
+Una función de efecto puede ser un sombreador o simplemente una función a la que llama un sombreador. Una función se identifica de forma única por su nombre, los tipos de sus parámetros y la plataforma de destino. por lo tanto, las funciones se pueden sobrecargar. Cualquier función HLSL válida debe ajustarse a este formato; Para obtener una lista más detallada de la sintaxis de las funciones HLSL, vea [Funciones (DirectX HLSL).](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-functions)
 
 ## <a name="example"></a>Ejemplo
 

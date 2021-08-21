@@ -1,67 +1,67 @@
 ---
-title: Autenticación mutua en un servicio de Windows Sockets con SCP
-description: En los temas de esta sección se incluyen ejemplos de código que muestran cómo realizar la autenticación mutua con un servicio que se publica mediante un punto de conexión de servicio (SCP).
+title: Autenticación mutua en un servicio Windows sockets con SCP
+description: Los temas de esta sección incluyen ejemplos de código que muestran cómo realizar la autenticación mutua con un servicio que se publica a sí mismo mediante un punto de conexión de servicio (SCP).
 ms.assetid: f730464c-95ac-4285-960c-18862f6f7852
 ms.tgt_platform: multiple
 keywords:
-- Autenticación mutua en un servicio de Windows Sockets con un AD de SCP
-- Active Directory, uso, autenticación mutua, servicio de Windows Sockets con un SCP
+- Autenticación mutua en un servicio Windows Sockets con UN SCP AD
+- Active Directory, mediante la autenticación mutua, Windows de sockets con un SCP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 527715c4a35dc15cd67f5820e6fa891b56452399
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: be8f3e65b044198c5ebf703b1c62ac03eb07a4d57b6bc5dcf7c5463247815f1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103904488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025773"
 ---
-# <a name="mutual-authentication-in-a-windows-sockets-service-with-scp"></a>Autenticación mutua en un servicio de Windows Sockets con SCP
+# <a name="mutual-authentication-in-a-windows-sockets-service-with-scp"></a>Autenticación mutua en un servicio Windows sockets con SCP
 
-En los temas de esta sección se incluyen ejemplos de código que muestran cómo realizar la autenticación mutua con un servicio que se publica mediante un punto de conexión de servicio (SCP). Los ejemplos se basan en un servicio de Microsoft Windows Sockets que usa un paquete SSPI para controlar la negociación de la autenticación mutua entre un cliente y el servicio. Utilice los procedimientos siguientes para implementar la autenticación mutua en este escenario.
+Los temas de esta sección incluyen ejemplos de código que muestran cómo realizar la autenticación mutua con un servicio que se publica a sí mismo mediante un punto de conexión de servicio (SCP). Los ejemplos se basan en un servicio microsoft Windows Sockets que usa un paquete SSPI para controlar la negociación de autenticación mutua entre un cliente y el servicio. Use los procedimientos siguientes para implementar la autenticación mutua en este escenario.
 
-**Para registrar los SPN en un directorio cuando se instala un servicio**
+**Para registrar SPN en un directorio cuando se instala un servicio**
 
-1.  Llame a la función [**DsGetSpn**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsgetspna) para crear nombres de entidad de seguridad de servicio (SPN) para el servicio.
-2.  Llame a la función [**DsWriteAccountSpn**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dswriteaccountspna) para registrar los SPN en la cuenta de servicio o la cuenta de equipo en cuyo contexto se ejecutará el servicio. Este paso lo debe realizar un administrador de dominio; una excepción es que un servicio que se ejecuta con la cuenta LocalSystem puede registrar su SPN con el formato " <service class> / <host> " en la cuenta de equipo del host del servicio.
+1.  Llame a [**la función DsGetSpn**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dsgetspna) para crear nombres de entidad de seguridad de servicio (SPN) para el servicio.
+2.  Llame a [**la función DsWriteAccountSpn**](/windows/desktop/api/Ntdsapi/nf-ntdsapi-dswriteaccountspna) para registrar los SPN en la cuenta de servicio o la cuenta de equipo en cuyo contexto se ejecutará el servicio. Este paso lo debe realizar un administrador de dominio; Una excepción es que un servicio que se ejecuta en la cuenta LocalSystem puede registrar su SPN con el formato " " en la cuenta de <service class> / <host> equipo del host de servicio.
 
-**Para comprobar la configuración en el inicio del servicio**
+**Para comprobar la configuración al iniciar el servicio**
 
--   Compruebe que los SPN adecuados están registrados en la cuenta en la que se está ejecutando el servicio. Para obtener más información, consulte tareas de mantenimiento de la [cuenta de inicio de sesión](logon-account-maintenance-tasks.md).
+-   Compruebe que los SPN adecuados están registrados en la cuenta con la que se ejecuta el servicio. Para obtener más información, vea [Tareas de mantenimiento de cuentas de inicio de sesión.](logon-account-maintenance-tasks.md)
 
 **Para autenticar el servicio en el inicio del cliente**
 
-1.  Recuperar datos de conexión desde el punto de conexión de servicio del servicio.
+1.  Recupere los datos de conexión del punto de conexión de servicio del servicio.
 2.  Establezca una conexión con el servicio.
-3.  Llame a la función [**DsMakeSpn**](/windows/desktop/api/Dsparse/nf-dsparse-dsmakespna) para crear un SPN para el servicio. Cree el SPN a partir de la cadena de clase de servicio conocida y los datos recuperados del punto de conexión de servicio. Estos datos incluyen el nombre de host del servidor en el que se ejecuta el servicio. Tenga en cuenta que el nombre de host debe ser un nombre DNS.
-4.  Use un paquete de seguridad de SSPI para realizar la autenticación:
-    1.  Llame a la función [**AcquireCredentialsHandle**](../SecAuthN/acquirecredentialshandle--general.md) para adquirir las credenciales del cliente.
-    2.  Pase las credenciales de cliente y el SPN a la función [**InitializeSecurityContext**](../SecAuthN/initializesecuritycontext--general.md) para generar un BLOB de seguridad que se enviará al servicio para la autenticación. Establezca la marca **ISC \_ req \_ Mutual \_ auth** para solicitar autenticación mutua.
-    3.  Intercambie blobs con el servicio hasta que se complete la autenticación.
-5.  Compruebe la máscara de funcionalidades devueltas para la marca de autenticación mutua de REQ de ISC para comprobar que se realizó la autenticación mutua. **\_ \_ \_**
-6.  Si la autenticación se realizó correctamente, intercambie el tráfico con el servicio autenticado. Use la firma digital para asegurarse de que los mensajes entre el cliente y el servicio no se han alterado. A menos que los requisitos de rendimiento sean graves, use el cifrado. Para obtener más información y un ejemplo de código que muestra cómo usar las funciones [**MakeSignature**](/windows/desktop/api/sspi/nf-sspi-makesignature), [**VerifySignature**](/windows/desktop/api/sspi/nf-sspi-verifysignature), [**EncryptMessage**](../SecAuthN/encryptmessage--general.md)y [**DecryptMessage**](../SecAuthN/decryptmessage--general.md) en un paquete SSPI, consulte [garantizar la integridad de la comunicación durante el intercambio de mensajes](/windows/desktop/SecAuthN/ensuring-communication-integrity-during-message-exchange).
+3.  Llame a [**la función DsMakeSpn**](/windows/desktop/api/Dsparse/nf-dsparse-dsmakespna) para crear un SPN para el servicio. Cree el SPN a partir de la cadena de clase de servicio conocida y los datos recuperados del punto de conexión de servicio. Estos datos incluyen el nombre de host del servidor en el que se ejecuta el servicio. Tenga en cuenta que el nombre de host debe ser un nombre DNS.
+4.  Use un paquete de seguridad SSPI para realizar la autenticación:
+    1.  Llame a [**la función AcquireCredentialsHandle**](../SecAuthN/acquirecredentialshandle--general.md) para adquirir las credenciales del cliente.
+    2.  Pase las credenciales de cliente y el SPN a la [**función InitializeSecurityContext**](../SecAuthN/initializesecuritycontext--general.md) para generar un blob de seguridad que se enviará al servicio para la autenticación. Establezca la **marca ISC \_ REQ \_ MUTUAL \_ AUTH para** solicitar la autenticación mutua.
+    3.  Exchange blobs con el servicio hasta que se complete la autenticación.
+5.  Compruebe la máscara de funcionalidades devueltas para la marca **\_ DE AUTENTICACIÓN \_ MUTUA \_ de ISC REQ** para comprobar que se realizó la autenticación mutua.
+6.  Si la autenticación se ha realizado correctamente, intercamba el tráfico con el servicio autenticado. Use la firma digital para asegurarse de que los mensajes entre el cliente y el servicio no se han alterado. A menos que los requisitos de rendimiento sean graves, use el cifrado. Para obtener más información y un ejemplo de código que muestra cómo usar las funciones [**MakeSignature**](/windows/desktop/api/sspi/nf-sspi-makesignature), [**VerifySignature**](/windows/desktop/api/sspi/nf-sspi-verifysignature), [**EncryptMessage**](../SecAuthN/encryptmessage--general.md)y [**DecryptMessage**](../SecAuthN/decryptmessage--general.md) en un paquete SSPI, vea [Ensuring Communication Integrity During Message Exchange](/windows/desktop/SecAuthN/ensuring-communication-integrity-during-message-exchange).
 
-**Para autenticar el cliente por el servicio cuando un cliente se conecta**
+**Para autenticar el cliente por el servicio cuando se conecta un cliente**
 
-1.  Cargue un paquete de seguridad de SSPI que admita la autenticación mutua.
-2.  Cuando se conecte un cliente, use el paquete de seguridad para realizar la autenticación:
-    1.  Llame a la función [**AcquireCredentialsHandle**](../SecAuthN/acquirecredentialshandle--general.md) para adquirir las credenciales del servicio.
-    2.  Pase las credenciales de servicio y el BLOB de seguridad recibido del cliente a la función [**AcceptSecurityContext**](../SecAuthN/acceptsecuritycontext--general.md) para generar un BLOB de seguridad que se devolverá al cliente.
-    3.  Intercambie blobs con el cliente hasta que se complete la autenticación.
-3.  Compruebe la máscara de funcionalidades devueltas para la marca de autenticación **\_ \_ mutua \_ de ASC RET** para comprobar que se realizó la autenticación mutua.
-4.  Si la autenticación se realizó correctamente, intercambie el tráfico con el cliente autenticado. Utilice la firma digital y el cifrado a menos que el rendimiento sea un problema.
+1.  Cargue un paquete de seguridad SSPI que admita la autenticación mutua.
+2.  Cuando un cliente se conecta, use el paquete de seguridad para realizar la autenticación:
+    1.  Llame a [**la función AcquireCredentialsHandle**](../SecAuthN/acquirecredentialshandle--general.md) para adquirir las credenciales del servicio.
+    2.  Pase las credenciales de servicio y el blob de seguridad recibidos del cliente a la función [**AcceptSecurityContext**](../SecAuthN/acceptsecuritycontext--general.md) para generar un blob de seguridad para enviarlo de vuelta al cliente.
+    3.  Exchange blobs con el cliente hasta que se complete la autenticación.
+3.  Compruebe la máscara de funcionalidades devueltas para la marca **\_ ASC RET \_ MUTUAL \_ AUTH** para comprobar que se realizó la autenticación mutua.
+4.  Si la autenticación se ha realizado correctamente, intercamba el tráfico con el cliente autenticado. Use la firma digital y el cifrado a menos que el rendimiento sea un problema.
 
 Para obtener más información y un ejemplo de código para este escenario de autenticación mutua, vea:
 
--   [Cómo un cliente autentica un servicio de Windows Sockets basado en SCP](how-a-client-authenticates-an-scp-based-windows-sockets-service.md)
--   [Creación y registro de SPN para un servicio de Windows Sockets basado en SCP](composing-and-registering-spns-for-an-scp-based-windows-sockets-service.md)
--   [Cómo autentica un servicio de Windows Sockets un cliente](how-a-windows-sockets-service-authenticates-a-client.md)
+-   [Cómo autentica un cliente un servicio de sockets de Windows basado en SCP](how-a-client-authenticates-an-scp-based-windows-sockets-service.md)
+-   [Crear y registrar SPN para un servicio de sockets de Windows basado en SCP](composing-and-registering-spns-for-an-scp-based-windows-sockets-service.md)
+-   [Cómo un servicio Windows sockets autentica un cliente](how-a-windows-sockets-service-authenticates-a-client.md)
 
 Para más información, consulte:
 
--   [Publicar con puntos de conexión de servicio](publishing-with-service-connection-points.md)
+-   [Publicación con puntos de conexión de servicio](publishing-with-service-connection-points.md)
 -   [Documentación de SSPI](/windows/desktop/SecAuthN/sspi)
--   [Documentación de Windows Sockets](/windows/desktop/WinSock/windows-sockets-start-page-2)
+-   [Windows Documentación de Sockets](/windows/desktop/WinSock/windows-sockets-start-page-2)
 
- 
+ 
 
- 
+ 

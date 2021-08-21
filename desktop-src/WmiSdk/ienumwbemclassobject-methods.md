@@ -5,24 +5,24 @@ ms.tgt_platform: multiple
 title: Métodos IEnumWbemClassObject
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df87cf55546adb61b957b48082ba416f628a653e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f9f8b16f2930e4df5ec58cec31e3ae4b61441d7a8b3d3dfe9ef1fd892d1131d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118993135"
 ---
 # <a name="ienumwbemclassobject-methods"></a>Métodos IEnumWbemClassObject
 
-La interfaz [**IEnumWbemClassObject**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) expone los métodos siguientes.
+La [**interfaz IEnumWbemClassObject**](/windows/desktop/api/Wbemcli/nn-wbemcli-ienumwbemclassobject) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Clone (método)**](/windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-clone)
+-   [**Clone method (Método de clonación)**](/windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-clone)
 -   [**Método Next**](/windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-next)
 -   [**Método NextAsync**](/windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-nextasync)
--   [**RESET (método)**](/windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-reset)
--   [**SKIP (método)**](/windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-skip)
+-   [**Método de restablecimiento**](/windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-reset)
+-   [**Método Skip**](/windows/desktop/api/Wbemcli/nf-wbemcli-ienumwbemclassobject-skip)
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: Identificador de la instancia de módulo.
+description: Identificador de la instancia del módulo.
 ms.assetid: ad889ebe-2bd8-4456-9517-9e2909697a02
-title: 'Miembro CBaseWindow:: m_hInstance (Winutil. h)'
+title: CBaseWindow::m_hInstance miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6482aac80c1298ea403019f43ddc4effdc30b00a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ddf1da2d7f947bbaed9972a40a20497a81f84ebda68dba31cd5518b64f6e8434
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016533"
 ---
-# <a name="cbasewindowm_hinstance-member"></a>Miembro hInstance CBaseWindow:: m \_
+# <a name="cbasewindowm_hinstance-member"></a>Miembro CBaseWindow::m \_ hInstance
 
-Identificador de la instancia de módulo.
+Identificador de la instancia del módulo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -36,9 +36,9 @@ HINSTANCE m_hInstance;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función de punto de entrada de DLL establece una variable global con un identificador para la instancia de módulo. La clase **CBaseWindow** almacena este identificador en su método constructor.
+La función de punto de entrada dll establece una variable global con un identificador para la instancia del módulo. La **clase CBaseWindow** almacena este identificador en su método de constructor.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ La función de punto de entrada de DLL establece una variable global con un iden
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ La función de punto de entrada de DLL establece una variable global con un iden
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

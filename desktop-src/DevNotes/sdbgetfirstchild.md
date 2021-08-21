@@ -1,7 +1,7 @@
 ---
 description: Busca una etiqueta secundaria dentro del elemento primario especificado y devuelve el TAGID del primer elemento secundario.
 ms.assetid: 67538c7e-6360-40fa-b50f-dcbc7a6a147d
-title: SdbGetFirstChild función)
+title: Función SdbGetFirstChild
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: abc06ae0e4b5d842a968d0f3fbeb7a15702660b9
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 58e63b3c1c8b3e56c9610ec795c1706fe58990e4611c36886ee4a3061d0816fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104538254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075979"
 ---
-# <a name="sdbgetfirstchild-function"></a>SdbGetFirstChild función)
+# <a name="sdbgetfirstchild-function"></a>Función SdbGetFirstChild
 
 Busca una etiqueta secundaria dentro del elemento primario especificado y devuelve el **TAGID** del primer elemento secundario.
 
@@ -40,23 +40,23 @@ TAGID WINAPI SdbGetFirstChild(
 
 <dl> <dt>
 
-archivo *PDB* \[ de\]
+*pdb* \[ En\]
 </dt> <dd>
 
-Identificador de la base de datos de correcciones de compatibilidad.
+Identificador de la base de datos shim.
 
 </dd> <dt>
 
-*tiParent* \[ de\]
+*tiParent* \[ En\]
 </dt> <dd>
 
-El **TAGID** del inicio de la búsqueda. Este parámetro puede ser **la \_ raíz de TAGID** o la **lista de \_ tipos \_ de etiqueta**.
+TAGID **del** inicio de la búsqueda. Este parámetro puede ser **TAGID \_ ROOT o** **TAG TYPE \_ \_ LIST.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor de **TagID** del primer elemento secundario o **TagID \_ null** no se encuentra.
+No **se encuentra el TAGID** del primer elemento secundario o **TAGID \_ NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,8 +64,8 @@ El valor de **TagID** del primer elemento secundario o **TagID \_ null** no se e
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 
