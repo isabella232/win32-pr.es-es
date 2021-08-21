@@ -32,7 +32,7 @@ Cuota asignada en términos de número de objetos que pertenecen a la base de da
 | CN                | ms-DS-Quota-Amount                   |
 | Ldap-Display-Name | msDS-QuotaAmount                     |
 | Size              | \-                                   |
-| Actualizar privilegios  | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1845              |
 | System-Id-Guid    | fbb9a00d-3a8c-4233-9cf9-7189264903a1 |
@@ -53,7 +53,7 @@ Cuota asignada en términos de número de objetos que pertenecen a la base de da
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------|
 | Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
@@ -74,7 +74,7 @@ Cuota asignada en términos de número de objetos que pertenecen a la base de da
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------|
 | Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
@@ -95,7 +95,7 @@ Cuota asignada en términos de número de objetos que pertenecen a la base de da
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------|
 | Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
@@ -116,7 +116,7 @@ Cuota asignada en términos de número de objetos que pertenecen a la base de da
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------|
 | Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
@@ -137,7 +137,7 @@ Cuota asignada en términos de número de objetos que pertenecen a la base de da
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------|
 | Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
@@ -158,7 +158,7 @@ Cuota asignada en términos de número de objetos que pertenecen a la base de da
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------|
 | Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |

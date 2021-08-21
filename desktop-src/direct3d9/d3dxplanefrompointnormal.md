@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e34765d150932d6a7b3b0293e603237ffb2b45ad
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0acf7dd26a2eb261830dbdf1f0e1fff185184a645e469fbe02a5b0032c141e1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118524922"
 ---
 # <a name="d3dxplanefrompointnormal-function-d3dx9mathh"></a>Función D3DXPlaneFromPointNormal (D3dx9math.h)
 
@@ -65,7 +65,7 @@ Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) que define el punto 
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) que define la normal usada para construir el plano.
+Puntero a una [**estructura D3DXVECTOR3,**](d3dxvector3.md) que define el normal utilizado para construir el plano.
 
 </dd> </dl>
 
@@ -90,7 +90,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

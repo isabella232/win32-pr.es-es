@@ -1,23 +1,23 @@
 ---
-description: El archivo de mensaje de ejemplo siguiente muestra cómo crear y usar un archivo de texto de mensaje que define los mensajes en varios idiomas.
+description: El siguiente archivo de mensaje de ejemplo muestra cómo crear y usar un archivo de texto de mensaje que define los mensajes en varios idiomas.
 ms.assetid: 403eaccc-07a3-4368-a39a-18c706c65537
 title: Archivo de texto de mensaje de ejemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2e4247b1e39ef94c006262f282d8d830af11851
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e60f59e6d20f53560da6f1230886fe6c8cbb54b9052b97c2293d0f49720743ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151491"
 ---
 # <a name="sample-message-text-file"></a>Archivo de texto de mensaje de ejemplo
 
-El archivo de mensaje de ejemplo siguiente muestra cómo crear y usar un archivo de texto de mensaje que define los mensajes en varios idiomas.
+El siguiente archivo de mensaje de ejemplo muestra cómo crear y usar un archivo de texto de mensaje que define los mensajes en varios idiomas.
 
 ## <a name="sample-message-file"></a>Archivo de mensaje de ejemplo
 
-Este archivo de mensaje de ejemplo, Sample.mc, contiene un bloque de comentario seguido de una sección de encabezado, seguido de mensajes en dos idiomas. Debe usar un editor compatible con Unicode para admitir simultáneamente los caracteres que se usan en distintos idiomas escritos. Para obtener más información y una descripción detallada de la sintaxis de los archivos. MC, vea [archivos de texto de mensaje](message-text-files.md).
+Este archivo de mensaje de ejemplo, Sample.mc, contiene un bloque de comentarios, seguido de una sección de encabezado, seguido de mensajes en dos idiomas. Debe usar un editor compatible con Unicode para admitir simultáneamente los caracteres usados en distintos idiomas escritos. Para obtener más información y una descripción detallada de la sintaxis de los archivos .mc, vea [Archivos de texto de mensaje](message-text-files.md).
 
 ``` syntax
 ; // ***** Sample.mc *****

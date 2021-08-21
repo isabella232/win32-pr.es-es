@@ -1,6 +1,6 @@
 ---
-title: dcl_output_siv (SM4-ASM)
-description: '\_ \_ SIV de salida de DCL (SM4-ASM)'
+title: dcl_output_siv (sm4 - asm)
+description: siv \_ de \_ salida dcl (sm4 - asm)
 ms.assetid: 5a87a113-7413-48ef-9a6a-13eb185650be
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,20 +9,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: df57ea991b9177dc081443301e426560834df894
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 3035724a76aff71c2ba2b7500874365ea284f55b0bf16389b3d83c99205e606b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104996976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118515686"
 ---
-# <a name="dcl_output_siv-sm4---asm"></a>\_ \_ SIV de salida de DCL (SM4-ASM)
+# <a name="dcl_output_siv-sm4---asm"></a>siv \_ de \_ salida dcl (sm4 - asm)
 
-Declara un registro de salida que contiene un parámetro [de valor del sistema](dx-graphics-hlsl-semantics.md) .
+Declara un registro de salida que contiene un [parámetro de valor del](dx-graphics-hlsl-semantics.md) sistema.
 
 
 
-| \_ \_ SIV de salida de DCL en \[ *. masks* \] , *systemValue* |
+| dcl \_ output \_ siv oN \[ *.masks* \] , *systemValue* |
 |------------------------------------------------|
 
 
@@ -33,9 +33,9 @@ Declara un registro de salida que contiene un parámetro [de valor del sistema](
 
 | Elemento                                                                                                                               | Descripción                                                                                                                                         |
 |------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="oN"></span><span id="on"></span><span id="ON"></span>o *N*<br/>                                                     | \[en \] un registro de datos de salida; *N* es un entero que denota el número de registro.<br/>                                                      |
-| <span id="_.mask_"></span><span id="_.MASK_"></span>*\[. Mask\]*<br/>                                                         | \[en \] opcional. Máscara de componente (. xyzw) que especifica cuál de los componentes de registro se va a usar.<br/>                                        |
-| <span id="systemValueName"></span><span id="systemvaluename"></span><span id="SYSTEMVALUENAME"></span>*systemValueName*<br/> | \[en \] el nombre del valor del sistema, que es una cadena (vea [semántica de valor del sistema](dx-graphics-hlsl-semantics.md)) sin el \_ prefijo "VP".<br/> |
+| <span id="oN"></span><span id="on"></span><span id="ON"></span>o *N*<br/>                                                     | \[en \] Un registro de datos de salida; *N* es un entero que denota el número de registro.<br/>                                                      |
+| <span id="_.mask_"></span><span id="_.MASK_"></span>*\[.mask\]*<br/>                                                         | \[en \] Opcional. Máscara de componente (.xyzw) que especifica cuál de los componentes de registro se va a usar.<br/>                                        |
+| <span id="systemValueName"></span><span id="systemvaluename"></span><span id="SYSTEMVALUENAME"></span>*systemValueName*<br/> | \[en El nombre del valor del sistema, que es una cadena (vea semántica del valor del \] [sistema](dx-graphics-hlsl-semantics.md)) sin el prefijo \_ "SV".<br/> |
 
 
 
@@ -53,7 +53,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-Esta instrucción se incluye para ayudar en la depuración de un sombreador en el ensamblado. no se puede crear un sombreador en lenguaje de ensamblado con el modelo de sombreador 4.
+Esta instrucción se incluye para ayudar a depurar un sombreador en el ensamblado; No se puede crear un sombreador en el lenguaje de ensamblado mediante El modelo de sombreador 4.
 
 ## <a name="example"></a>Ejemplo
 
@@ -68,7 +68,7 @@ dcl_output_siv o[0].z, cullDistance
 
 
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -76,12 +76,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Shader Model 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -91,7 +91,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado modelo de sombreador 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

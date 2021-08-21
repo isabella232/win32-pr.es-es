@@ -39,13 +39,13 @@ Identificador de comando del botón.
 *lParam* 
 </dt> <dd>
 
-[**LOWORD es una combinación**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) de valores enumerados en Estados [del botón de la](toolbar-button-states.md)barra de herramientas . [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) debe ser cero.
+LOWORD [**es una combinación**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) de valores enumerados en Estados del botón de la barra de [herramientas](toolbar-button-states.md). HIWORD [**debe**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 

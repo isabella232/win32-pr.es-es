@@ -1,5 +1,5 @@
 ---
-description: La tabla Validation es una tabla del sistema que contiene los nombres de columna y los valores de columna \_ de todas las tablas de la base de datos.
+description: La tabla Validación es una tabla del sistema que contiene los nombres de columna y los valores de columna de todas las \_ tablas de la base de datos.
 ms.assetid: 52b1c537-efb6-4bb8-9e7f-b4848be52a71
 title: _Validation tabla
 ms.topic: article
@@ -13,13 +13,13 @@ ms.locfileid: "118640450"
 ---
 # <a name="_validation-table"></a>\_Tabla de validación
 
-La tabla Validation es una tabla del sistema que contiene los nombres de columna y los valores de columna \_ de todas las tablas de la base de datos. Se usa durante el proceso de validación de la base de datos para asegurarse de que todas las columnas se tienen en cuenta y tienen los valores correctos. Esta tabla no se incluye con la base de datos del instalador.
+La tabla Validación es una tabla del sistema que contiene los nombres de columna y los valores de columna de todas las \_ tablas de la base de datos. Se usa durante el proceso de validación de la base de datos para asegurarse de que todas las columnas se tienen en cuenta y tienen los valores correctos. Esta tabla no se incluye con la base de datos del instalador.
 
-La \_ tabla Validation tiene las columnas siguientes.
+La \_ tabla Validation tiene las siguientes columnas.
 
 
 
-| Columna      | Tipo                               | Key | Nullable |
+| Columna      | Tipo                               | Clave | Nullable |
 |-------------|------------------------------------|-----|----------|
 | Tabla       | [Identificador](identifier.md)       | Y   | N        |
 | Columna      | [Identificador](identifier.md)       | Y   | N        |
@@ -43,14 +43,14 @@ La \_ tabla Validation tiene las columnas siguientes.
 <span id="Table"></span><span id="table"></span><span id="TABLE"></span>Mesa
 </dt> <dd>
 
-Se usa para identificar una tabla determinada. Esta clave y la clave de columna forman la clave principal de la \_ tabla Validation.
+Se usa para identificar una tabla determinada. Esta clave y la clave de columna forman la clave principal de la \_ tabla Validación.
 
 </dd> <dt>
 
 <span id="Column"></span><span id="column"></span><span id="COLUMN"></span>Columna
 </dt> <dd>
 
-Se usa para identificar una columna determinada de la tabla. Esta clave y la clave de tabla forman la clave principal de la \_ tabla Validation.
+Se usa para identificar una columna determinada de la tabla. Esta clave y la clave de tabla forman la clave principal de la \_ tabla Validación.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Esta columna puede tener uno de los valores siguientes.
 <span id="MinValue"></span><span id="minvalue"></span><span id="MINVALUE"></span>MinValue
 </dt> <dd>
 
-Este campo se aplica a las columnas que tienen un valor numérico. El campo contiene el valor mínimo permitido. Puede ser el valor mínimo para un entero o el valor mínimo para una cadena de fecha o versión.
+Este campo se aplica a las columnas que tienen un valor numérico. El campo contiene el valor mínimo permitido. Puede ser el valor mínimo de un entero o el valor mínimo de una cadena de fecha o versión.
 
 </dd> <dt>
 
@@ -91,21 +91,21 @@ Este campo se aplica a las columnas que tienen un valor numérico. El campo es e
 <span id="KeyTable"></span><span id="keytable"></span><span id="KEYTABLE"></span>KeyTable
 </dt> <dd>
 
-Este campo se aplica a las columnas que son claves externas. El campo identificado en Column debe vincularse al número de columna especificado por KeyColumn en la tabla denominada en KeyTable. Puede ser una lista de tablas separadas por punto y coma.
+Este campo se aplica a las columnas que son claves externas. El campo identificado en Columna debe vincularse al número de columna especificado por KeyColumn en la tabla denominada en KeyTable. Puede ser una lista de tablas separadas por punto y coma.
 
 </dd> <dt>
 
 <span id="KeyColumn"></span><span id="keycolumn"></span><span id="KEYCOLUMN"></span>KeyColumn
 </dt> <dd>
 
-Este campo se aplica a las columnas de tabla que son claves externas. El campo identificado en Column debe vincularse al número de columna especificado por KeyColumn en la tabla denominada en KeyTable. El intervalo permitido del campo KeyColumn es de 1 a 32.
+Este campo se aplica a las columnas de tabla que son claves externas. El campo identificado en Columna debe vincularse al número de columna especificado por KeyColumn en la tabla denominada en KeyTable. El intervalo permitido del campo KeyColumn es 1-32.
 
 </dd> <dt>
 
 <span id="Category"></span><span id="category"></span><span id="CATEGORY"></span>Categoría
 </dt> <dd>
 
-Este es el tipo de datos contenido en el campo de base de datos especificado por las columnas Tabla y Columna de la \_ tabla Validación. Si se trata de un tipo que tiene un valor numérico, como [Integer](integer.md), [DoubleInteger](doubleinteger.md) o [Time/Date,](time-date.md)escriba null en este campo y especifique el intervalo del valor mediante las columnas MinValue y MaxValue. Use la columna Categoría para especificar los tipos de datos no numéricos descritos en [Tipos de datos de columna](column-data-types.md).
+Este es el tipo de datos contenidos en el campo de base de datos especificado por las columnas Tabla y Columna de la \_ tabla Validación. Si se trata de un tipo que tiene un valor numérico, como [Integer](integer.md), [DoubleInteger](doubleinteger.md) o [Time/Date,](time-date.md)escriba null en este campo y especifique el intervalo del valor mediante las columnas MinValue y MaxValue. Use la columna Categoría para especificar los tipos de datos no numéricos descritos en [Tipos de datos de columna](column-data-types.md).
 
 </dd> <dt>
 
@@ -132,9 +132,9 @@ Descripción de los datos almacenados en la columna.
 [ICE32](ice32.md)  
 </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El campo Categoría de esta tabla solo se aplica a los datos de cadena. Si el campo Columna hace referencia a una columna con datos binarios, el tipo de datos binario debe especificarse en el campo Categoría. Tipos de columna de datos enteros omiten el campo Categoría durante la validación.
+El campo Categoría de esta tabla solo se aplica a los datos de cadena. Si el campo Columna hace referencia a una columna con datos binarios, el tipo de datos binario debe especificarse en el campo Categoría. Datos enteros Los tipos de columna omiten el campo Categoría durante la validación.
 
  
 

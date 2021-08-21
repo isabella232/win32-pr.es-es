@@ -1,7 +1,7 @@
 ---
-description: El método Invoke proporciona acceso a las propiedades y los métodos expuestos por el objeto.
+description: El método Invoke proporciona acceso a las propiedades y los métodos expuestos por el objeto .
 ms.assetid: 3c03751d-239b-4cc5-bfab-8d1aed1074b8
-title: Método CMediaPosition. Invoke (Ctlutil. h)
+title: Método CMediaPosition.Invoke (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3955848bf2a87e0983ddd7dc3bef48f157ae6648
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6dac439b94a62e9dbd11ca9e12ab80023071fc00cf22abcf6b9b4b93b07c356c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156861"
 ---
-# <a name="cmediapositioninvoke-method"></a>CMediaPosition. Invoke (método)
+# <a name="cmediapositioninvoke-method"></a>Método CMediaPosition.Invoke
 
-El `Invoke` método proporciona acceso a las propiedades y los métodos expuestos por el objeto.
+El `Invoke` método proporciona acceso a las propiedades y los métodos expuestos por el objeto .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,21 +52,21 @@ HRESULT Invoke(
 *dispidMember* 
 </dt> <dd>
 
-Identificador del miembro. Use [**CMediaPosition:: GetIDsOfNames**](cmediaposition-getidsofnames.md) para obtener el identificador de envío.
+Identificador del miembro. Use [**CMediaPosition::GetIDsOfNames**](cmediaposition-getidsofnames.md) para obtener el identificador de distribución.
 
 </dd> <dt>
 
 *riid* 
 </dt> <dd>
 
-Reservado para uso futuro. Debe ser un IID \_ null.
+Reservado para uso futuro. Debe ser IID \_ NULL.
 
 </dd> <dt>
 
 *lcid* 
 </dt> <dd>
 
-Contexto de configuración regional en el que se interpretan los argumentos.
+Contexto de configuración regional en el que se interpretarán los argumentos.
 
 </dd> <dt>
 
@@ -80,14 +80,14 @@ Marcas que describen el contexto de la llamada.
 *pdispparams* 
 </dt> <dd>
 
-Puntero a una estructura **DIPPARAMS** que contiene los argumentos.
+Puntero a una **estructura DIPPARAMS** que contiene los argumentos.
 
 </dd> <dt>
 
 *pvarResult* 
 </dt> <dd>
 
-Puntero a una **variante** que recibe el resultado, o **null** si el llamador no espera ningún resultado.
+Puntero a **una VARIANT que** recibe el resultado o **NULL** si el autor de la llamada no espera ningún resultado.
 
 </dd> <dt>
 
@@ -107,14 +107,14 @@ Puntero a una variable que recibe el índice del primer argumento que produce un
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
+Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
 
 
 | Código devuelto                                                                                              | Descripción                                      |
 |----------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>                     | Correcto.<br/>                              |
-| <dl> <dt>**DISP \_ E \_ UNKNOWNINTERFACE**</dt> </dl> | El parámetro *riid* no es un IID \_ nulo<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>                     | Correcto.<br/>                              |
+| <dl> <dt>**DISP \_ E \_ UNKNOWNINTERFACE**</dt> </dl> | El *parámetro riid* no es IID \_ NULL<br/> |
 
 
 
@@ -126,8 +126,8 @@ Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -135,7 +135,7 @@ Devuelve un valor **HRESULT** . Estos son algunos de los valores posibles.
 
 <dl> <dt>
 
-[**Clase CMediaPosition**](cmediaposition.md)
+[**CMediaPosition (clase)**](cmediaposition.md)
 </dt> </dl>
 
  

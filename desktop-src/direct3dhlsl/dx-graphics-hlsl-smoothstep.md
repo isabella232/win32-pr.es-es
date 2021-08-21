@@ -22,7 +22,7 @@ ms.locfileid: "118513806"
 ---
 # <a name="smoothstep"></a>smoothstep
 
-Devuelve una interpolación hermite suave entre 0 y 1, si *x* está en el intervalo \[ *min*, *max* \] .
+Devuelve una interpolación hermite suave entre 0 y 1, si *x* está en el intervalo \[ *mínimo*, *máx.* \]
 
 
 
@@ -49,11 +49,11 @@ Devuelve una interpolación hermite suave entre 0 y 1, si *x* está en el interv
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si *x* es menor que *min*; 1 si *x* es mayor que *max*; de lo contrario, un valor entre 0 y 1 si *x* está en el intervalo \[ *min*, *max* \] .
+Devuelve 0 si *x* es menor que *min*; 1 si *x* es mayor que *max*; de lo contrario, un valor entre 0 y 1 si *x* está en el intervalo \[ *mínimo*, *máx.* \]
 
 ## <a name="remarks"></a>Comentarios
 
-Use la función intrínseca HLSL **smoothstep** para crear una transición fluida entre dos valores. Por ejemplo, puede usar esta función para combinar dos colores sin problemas.
+Use la función intrínseca HLSL **smoothstep** para crear una transición sin problemas entre dos valores. Por ejemplo, puede usar esta función para combinar dos colores sin problemas.
 
 ## <a name="type-description"></a>Descripción del tipo
 
@@ -61,10 +61,10 @@ Use la función intrínseca HLSL **smoothstep** para crear una transición fluid
 
 | Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vector** o **matriz** | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
-| *min* | igual que la entrada *x*                                                                                              | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *x* |
-| *max* | igual que la entrada *x*                                                                                              | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *x* |
-| *Ret* | igual que la entrada *x*                                                                                              | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *x* |
+| *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vector** o **matriz** | [**Flotador**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
+| *min* | igual que la entrada *x*                                                                                              | [**Flotador**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *x* |
+| *max* | igual que la entrada *x*                                                                                              | [**Flotador**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *x* |
+| *Ret* | igual que la entrada *x*                                                                                              | [**Flotador**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *x* |
 
 
 
@@ -85,7 +85,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,7 +1,7 @@
 ---
-description: 'El método GetInfo recupera información sobre la configuración actual del control de flujo, incluidas las horas de inicio y detención. Este método implementa el método IAMStreamControl:: GetInfo.'
+description: El método GetInfo recupera información sobre la configuración actual del control de flujo, incluidas las horas de inicio y de detenerse. Este método implementa el método IAMStreamControl::GetInfo.
 ms.assetid: 3bc9bb32-eb33-4752-b22c-9033c28b41f7
-title: Método CBaseStreamControl. GetInfo (Strmctl. h)
+title: Método CBaseStreamControl.GetInfo (Strmctl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ab0ba31fa5692a6bc92372860ec1a28ab776206f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 96bc59b6dc55d73aa16b08f53f831428ae2d2fb7b181d3bb255b61a323b236a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118157222"
 ---
-# <a name="cbasestreamcontrolgetinfo-method"></a>CBaseStreamControl. GetInfo (método)
+# <a name="cbasestreamcontrolgetinfo-method"></a>Método CBaseStreamControl.GetInfo
 
-El `GetInfo` método recupera información sobre la configuración actual del control de flujo, incluidas las horas de inicio y detención. Este método implementa el método [**IAMStreamControl:: GetInfo**](/windows/desktop/api/Strmif/nf-strmif-iamstreamcontrol-getinfo) .
+El `GetInfo` método recupera información sobre la configuración actual del control de flujo, incluidas las horas de inicio y de detenerse. Este método implementa el [**método IAMStreamControl::GetInfo.**](/windows/desktop/api/Strmif/nf-strmif-iamstreamcontrol-getinfo)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,13 +45,13 @@ HRESULT GetInfo(
 *pInfo* 
 </dt> <dd>
 
-Puntero a una estructura de [**\_ \_ información de flujo AM**](/windows/desktop/api/strmif/ns-strmif-am_stream_info) , asignada por el llamador, que recibe la configuración de control de flujo actual.
+Puntero a una [**estructura DE AM STREAM \_ \_ INFO,**](/windows/desktop/api/strmif/ns-strmif-am_stream_info) asignada por el autor de la llamada, que recibe la configuración actual del control de flujo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el \_ puntero S o E \_ .
+Devuelve S \_ OK o E \_ POINTER.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve el \_ puntero S o E \_ .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Strmctl. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Strmctl.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve el \_ puntero S o E \_ .
 
 <dl> <dt>
 
-[**Clase CBaseStreamControl**](cbasestreamcontrol.md)
+[**CBaseStreamControl (clase)**](cbasestreamcontrol.md)
 </dt> </dl>
 
  

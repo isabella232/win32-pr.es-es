@@ -1,6 +1,6 @@
 ---
 title: IMsRdpClientAdvancedSettings6 HotKeyFocusReleaseRight, propiedad
-description: Especifica el código de clave virtual que se agregará a Ctrl+Alt para determinar el reemplazo de teclas de acceso rápido para Ctrl+Alt+Flecha derecha.
+description: Especifica el código de clave virtual que se agregará a Ctrl+Alt para determinar el reemplazo de la tecla de acceso rápido para Ctrl+Alt+Flecha derecha.
 ms.assetid: 9AEEB712-E4C4-435E-A847-40C2B3A41C15
 ms.tgt_platform: multiple
 keywords:
@@ -38,7 +38,7 @@ ms.locfileid: "118352279"
 ---
 # <a name="imsrdpclientadvancedsettings6hotkeyfocusreleaseright-property"></a>IMsRdpClientAdvancedSettings6::HotKeyFocusReleaseRight, propiedad
 
-Especifica el código de clave virtual que se agregará a Ctrl+Alt para determinar el reemplazo de teclas de acceso rápido para Ctrl+Alt+Flecha derecha.
+Especifica el código de clave virtual que se agregará a Ctrl+Alt para determinar el reemplazo de la tecla de acceso rápido para Ctrl+Alt+Flecha derecha.
 
 Esta propiedad es de lectura y escritura.
 
@@ -63,7 +63,7 @@ Nuevo código de clave virtual.
 
 ## <a name="remarks"></a>Comentarios
 
-Esta propiedad solo es compatible con Conexión a Escritorio remoto 6.1 y 7.0.
+Esta propiedad solo es compatible con Conexión a Escritorio remoto clientes 6.1 y 7.0.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,7 +79,7 @@ Esta propiedad solo es compatible con Conexión a Escritorio remoto 6.1 y 7.0.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

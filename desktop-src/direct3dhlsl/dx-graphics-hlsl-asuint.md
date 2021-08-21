@@ -56,7 +56,7 @@ Entrada interpretada como un entero sin signo.
 | Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md)                 | Size                           |
 |-------|----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|--------------------------------|
 | *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vector** o **matriz** | [**float**](/windows/desktop/WinProg/windows-data-types), [ **int**](/windows/desktop/WinProg/windows-data-types) | cualquiera                            |
-| *Ret* | igual que la entrada *x*                                                                                              | [**uint**](/windows/desktop/WinProg/windows-data-types)                                         | las mismas dimensiones que la entrada *x* |
+| *Ret* | igual que la entrada *x*                                                                                              | [**Uint**](/windows/desktop/WinProg/windows-data-types)                                         | las mismas dimensiones que la entrada *x* |
 
 
 

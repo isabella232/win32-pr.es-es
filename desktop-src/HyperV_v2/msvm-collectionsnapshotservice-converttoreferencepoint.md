@@ -1,7 +1,7 @@
 ---
-description: Convertir una instantánea de colección existente en una colección de puntos de referencia. La colección de instantáneas se elimina como un efecto secundario. Solo las instantáneas de recuperación se pueden convertir en puntos de referencia.
+description: Convertir una instantánea de colección existente en una colección de puntos de referencia. La colección de instantáneas se elimina como efecto secundario. Solo las instantáneas de recuperación se pueden convertir en puntos de referencia.
 ms.assetid: 6b304782-9e5e-43b1-af7d-08617d65850c
-title: Método ConvertToReferencePoint de la clase Msvm_CollectionSnapshotService
+title: Método ConvertToReferencePoint de la Msvm_CollectionSnapshotService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 810761b67303ad33ced6fdaef857c96f65365091
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 97faedea1cdb852e26f6b94211586e5539075c0a225bf98f1a10cf45305d7296
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118148871"
 ---
-# <a name="converttoreferencepoint-method-of-the-msvm_collectionsnapshotservice-class"></a>Método ConvertToReferencePoint de la \_ clase CollectionSnapshotService de MSVM
+# <a name="converttoreferencepoint-method-of-the-msvm_collectionsnapshotservice-class"></a>Método ConvertToReferencePoint de la clase \_ CollectionSnapshotService de Msvm
 
-Convertir una instantánea de colección existente en una colección de puntos de referencia. La colección de instantáneas se elimina como un efecto secundario. Solo las instantáneas de recuperación se pueden convertir en puntos de referencia.
+Convertir una instantánea de colección existente en una colección de puntos de referencia. La colección de instantáneas se elimina como efecto secundario. Solo las instantáneas de recuperación se pueden convertir en puntos de referencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,24 +41,24 @@ uint32 ConvertToReferencePoint(
 
 <dl> <dt>
 
-*AffectedSnapshotCollection* \[ de\]
+*AffectedSnapshotCollection* \[ En\]
 </dt> <dd>
 
-Referencia a un [**\_ SnapshotCollection de MSVM**](msvm-snapshotcollection.md) que contiene la colección de instantáneas del sistema virtual afectada.
+Referencia a [**Msvm \_ SnapshotCollection que**](msvm-snapshotcollection.md) contiene la colección de instantáneas del sistema virtual afectada.
 
 </dd> <dt>
 
 *ResultingReferencePointCollection* \[ in, out\]
 </dt> <dd>
 
-Referencia a un [**\_ ReferencePointCollection de MSVM**](msvm-referencepointcollection.md) que contiene la colección de puntos de referencia del sistema virtual resultante
+Referencia a una [**colección \_ ReferencePointCollection de Msvm**](msvm-referencepointcollection.md) que contiene la colección de puntos de referencia del sistema virtual resultante
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación es de larga ejecución, opcionalmente se puede devolver un trabajo.
+Si la operación es de larga duración, opcionalmente se puede devolver un trabajo.
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Si se ejecuta correctamente, devuelve 0 (completado) o 4096 (trabajo iniciado); 
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -95,10 +95,10 @@ Si se ejecuta correctamente, devuelve 0 (completado) o 4096 (trabajo iniciado); 
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -107,10 +107,10 @@ Si se ejecuta correctamente, devuelve 0 (completado) o 4096 (trabajo iniciado); 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -119,7 +119,7 @@ Si se ejecuta correctamente, devuelve 0 (completado) o 4096 (trabajo iniciado); 
 
 <dl> <dt>
 
-[**MSVM \_ CollectionSnapshotService**](msvm-collectionsnapshotservice.md)
+[**Colección de \_ MsvmSnapshotService**](msvm-collectionsnapshotservice.md)
 </dt> </dl>
 
  

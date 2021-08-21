@@ -29,7 +29,7 @@ El **atributo gainLevel2** especifica o recupera el nivel de ganancia de la band
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un número de lectura y **escritura** **(float)** con un valor que normalmente oscila entre 20 y +20. Tiene un valor predeterminado de cero.
+Este atributo es un número de lectura y **escritura** (**float**) con un valor que normalmente oscila entre 20 y +20. Tiene un valor predeterminado de cero.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -47,7 +47,7 @@ Si no se especifica este atributo, se conservará el valor anterior.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

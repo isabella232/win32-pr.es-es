@@ -5,13 +5,13 @@ ms.assetid: c653f593-9912-4ade-a0a3-70d9afac2ab1
 ms.tgt_platform: multiple
 keywords:
 - Propiedad RedirectClipboard Servicios de Escritorio remoto
-- Interfaz redirectClipboard Servicios de Escritorio remoto , IMsRdpClientAdvancedSettings5
+- Propiedad RedirectClipboard Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
 - Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad RedirectClipboard
 - Propiedad RedirectClipboard Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
 - Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad RedirectClipboard
 - Propiedad RedirectClipboard Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
 - Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad RedirectClipboard
-- Propiedad RedirectClipboard Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz de propiedad RedirectClipboard Servicios de Escritorio remoto , IMsRdpClientAdvancedSettings8
 - Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad RedirectClipboard
 topic_type:
 - apiref
@@ -70,7 +70,7 @@ Establece el modo de redireccionamiento del Portapapeles **en TRUE** o **FALSE.*
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                         |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                   |
@@ -80,7 +80,7 @@ Establece el modo de redireccionamiento del Portapapeles **en TRUE** o **FALSE.*
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
 title: MDM_Policy_Config01_BitLocker02 clase
-description: La clase MDM \_ Policy \_ Config01 \_ Bitlocker02 representa las directivas de BitLocker disponibles.
+description: La clase Mdm \_ Policy \_ Config01 \_ Bitlocker02 representa las directivas de BitLocker disponibles.
 ms.assetid: 885df93f-41f5-4cf7-8bce-9b253b190e17
 keywords:
 - MDM_Policy_Config01_BitLocker02 clase
@@ -28,7 +28,7 @@ ms.locfileid: "118165406"
 
 \[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La **clase MDM Policy \_ \_ Config01 \_ Bitlocker02 representa** las directivas de BitLocker disponibles.
+La **clase Mdm Policy \_ \_ Config01 \_ Bitlocker02** representa las directivas de BitLocker disponibles.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -46,13 +46,13 @@ class MDM_Policy_Config01_BitLocker02
 
 ## <a name="members"></a>Miembros
 
-La **clase MDM Policy \_ \_ Config01 \_ BitLocker02** tiene estos tipos de miembros:
+La **clase Mdm Policy \_ \_ Config01 \_ BitLocker02** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase MDM Policy \_ \_ Config01 \_ BitLocker02** tiene estas propiedades.
+La **clase Mdm Policy \_ \_ Config01 \_ BitLocker02** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -76,7 +76,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica el nombre del nodo primario. Para esta clase, la cadena es "BitLocker".
@@ -92,7 +92,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/Policy/Config"
@@ -103,7 +103,7 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
@@ -113,11 +113,11 @@ Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Uso de scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripts de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

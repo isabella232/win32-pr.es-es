@@ -10,11 +10,11 @@ keywords:
 - Propiedad minInputSendInterval Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
 - Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad minInputSendInterval
 - Propiedad minInputSendInterval Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
-- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto propiedad , minInputSendInterval
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad minInputSendInterval
 - Propiedad minInputSendInterval Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
 - Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad minInputSendInterval
 - Propiedad minInputSendInterval Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
-- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto propiedad , minInputSendInterval
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad minInputSendInterval
 - Propiedad minInputSendInterval Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
 - Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad minInputSendInterval
 - Propiedad minInputSendInterval Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
@@ -108,7 +108,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

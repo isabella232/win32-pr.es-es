@@ -58,7 +58,7 @@ Puntero a una variable **BSTR** que recibe el nombre de usuario de esta sesión.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

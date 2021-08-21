@@ -1,7 +1,7 @@
 ---
-description: Representa la configuración de ACL del puerto extendido.
+description: Representa la configuración de ACL de puerto extendido.
 ms.assetid: 357dd891-6692-4ffc-b8a8-4ece40d4af28
-title: Msvm_EthernetSwitchPortExtendedAclSettingData (clase)
+title: Msvm_EthernetSwitchPortExtendedAclSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,16 +25,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 25ae81e4f00e87e41170ac5713ced0d9b523c844
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 27f94de089df73c246de887268d34c187bef2507391ceeb33dd7c8cc8068bc43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118148324"
 ---
-# <a name="msvm_ethernetswitchportextendedaclsettingdata-class"></a>MSVM \_ EthernetSwitchPortExtendedAclSettingData (clase)
+# <a name="msvm_ethernetswitchportextendedaclsettingdata-class"></a>Clase Msvm \_ EthernetSwitchPortExtendedAclSettingData
 
-Representa la configuración de ACL del puerto extendido.
+Representa la configuración de ACL de puerto extendido.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -61,29 +61,29 @@ class Msvm_EthernetSwitchPortExtendedAclSettingData : Msvm_EthernetSwitchPortFea
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ EthernetSwitchPortExtendedAclSettingData** tiene estos tipos de miembros:
+La **clase Msvm \_ EthernetSwitchPortExtendedAclSettingData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ EthernetSwitchPortExtendedAclSettingData** tiene estas propiedades.
+La **clase Msvm \_ EthernetSwitchPortExtendedAclSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
 **Acción**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-La acción de la ACL extendida.
+Acción de la ACL extendida.
 
 <dt>
 
@@ -113,16 +113,16 @@ La acción de la ACL extendida.
 **Dirección**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica si la ACL extendida se aplica a la dirección de entrada o de salida.
+Indica si la ACL extendida se aplica a la dirección entrante o saliente.
 
 <dt>
 
@@ -155,13 +155,13 @@ Indica si la ACL extendida se aplica a la dirección de entrada o de salida.
 Tipo de datos: **Uint16**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (11), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Valor de tiempo de espera de sesión inactiva (en segundos) para ACL con estado.
+Valor de tiempo de espera de sesión inactiva (en segundos) para la ACL con estado.
 
 </dd> <dt>
 
@@ -171,13 +171,13 @@ Valor de tiempo de espera de sesión inactiva (en segundos) para ACL con estado.
 Tipo de datos: **Uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **InterfaceVersion** (1), **InterfaceRevision** (0), **WmiDataId** (12)
 </dt> </dl>
 
-IDENTIFICADOR de aislamiento para el que se debe aplicar la ACL extendida.
+Id. de aislamiento para el que se debe aplicar la ACL extendida.
 
 </dd> <dt>
 
@@ -187,7 +187,7 @@ IDENTIFICADOR de aislamiento para el que se debe aplicar la ACL extendida.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -203,13 +203,13 @@ Dirección IP local.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (21), **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-El intervalo de puertos local.
+Intervalo de puertos local.
 
 </dd> <dt>
 
@@ -219,7 +219,7 @@ El intervalo de puertos local.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -235,7 +235,7 @@ Nombre descriptivo de la ACL extendida.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (15), **WmiDataId** (8), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -251,7 +251,7 @@ Cadena de protocolo.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -267,13 +267,13 @@ Dirección IP remota.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (21), **WmiDataId** (7), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-El intervalo de puertos remotos.
+Intervalo de puertos remotos.
 
 </dd> <dt>
 
@@ -283,13 +283,13 @@ El intervalo de puertos remotos.
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (10), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica si la ACL extendida es con estado o sin estado.
+Indica si la ACL extendida tiene estado o no tiene estado.
 
 </dd> <dt>
 
@@ -299,7 +299,7 @@ Indica si la ACL extendida es con estado o sin estado.
 Tipo de datos: **Uint16**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (9), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -316,9 +316,9 @@ Peso aplicado a la ACL extendida.
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -327,7 +327,7 @@ Peso aplicado a la ACL extendida.
 
 <dl> <dt>
 
-[**MSVM \_ EthernetSwitchPortFeatureSettingData**](msvm-ethernetswitchportfeaturesettingdata.md)
+[**Msvm \_ EthernetSwitchPortFeatureSettingData**](msvm-ethernetswitchportfeaturesettingdata.md)
 </dt> </dl>
 
  

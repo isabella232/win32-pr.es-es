@@ -1,30 +1,30 @@
 ---
-description: Agregar objetos Effect y Transition
+description: Agregar objetos de efecto y transición
 ms.assetid: fe82392f-33e2-432a-a6e3-710e475547b3
-title: Agregar objetos Effect y Transition
+title: Agregar objetos de efecto y transición
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e6d33ed27faa0c69a755a17c72d9c5b136a4670
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 929678759d55a51b022cd7b870ddfa7cc5abb72279bcabe1694b5cc4eef211b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104079956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118160066"
 ---
-# <a name="adding-effect-and-transition-objects"></a>Agregar objetos Effect y Transition
+# <a name="adding-effect-and-transition-objects"></a>Agregar objetos de efecto y transición
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
-En DES, un efecto o una transición se representa con dos objetos:
+En DES, un efecto o transición se representa con dos objetos:
 
--   Un *objeto Timeline* representa el efecto o la transición dentro de la escala de tiempo. En el caso de los efectos, el objeto Timeline admite la interfaz [**IAMTimelineEffect**](iamtimelineeffect.md) . En el caso de las transiciones, admite la interfaz [**IAMTimelineTrans**](iamtimelinetrans.md) . Ambos tipos admiten la interfaz [**IAMTimelineObj**](iamtimelineobj.md) .
--   El *subobjeto* es un objeto que implementa el procesamiento de datos para el efecto o la transición. El objeto Timeline contiene un puntero al subobjeto.
+-   Un *objeto de escala de* tiempo representa el efecto o la transición dentro de la escala de tiempo. Para los efectos, el objeto timeline admite la [**interfaz IAMTimelineEffect.**](iamtimelineeffect.md) Para las transiciones, admite la [**interfaz IAMTimelineTrans.**](iamtimelinetrans.md) Ambos tipos admiten la [**interfaz IAMTimelineObj.**](iamtimelineobj.md)
+-   El *subobjeto* es un objeto que implementa el procesamiento de datos para el efecto o la transición. El objeto de escala de tiempo contiene un puntero al subobjeto.
 
 Para agregar un efecto o una transición, realice los pasos siguientes.
 
-**1. crear el objeto Timeline**
+**1. Crear el objeto timeline**
 
-Para crear el objeto Timeline, llame al método [**IAMTimeline:: CreateEmptyNode**](iamtimeline-createemptynode.md) . Establezca el tipo igual a la **escala de tiempo del \_ \_ \_ efecto de tipo principal** para un efecto o la **\_ \_ \_ transición de tipo principal** de la escala de tiempo para una transición.
+Para crear el objeto timeline, llame al [**método IAMTimeline::CreateEmptyNode.**](iamtimeline-createemptynode.md) Establezca el tipo igual a **TIMELINE MAJOR \_ TYPE \_ \_ EFFECT** para un efecto o **TIMELINE MAJOR TYPE \_ \_ \_ TRANSITION** para una transición.
 
 En el ejemplo siguiente se crea un objeto de transición:
 
@@ -36,13 +36,13 @@ pTimeline->CreateEmptyNode(&pTransObj, TIMELINE_MAJOR_TYPE_TRANSITION);
 
 
 
-**2. especificar el subobjeto**
+**2. Especificar el subobjeto**
 
-El objeto Timeline actúa como contenedor de otro objeto, denominado *subobjeto*, que realiza el trabajo real. El subobjeto implementa una transformación de datos que produce el efecto o la transición deseados. Para obtener una lista de las transiciones y los efectos proporcionados con DES, consulte [transiciones y efectos](transitions-and-effects.md).
+El objeto de escala de tiempo actúa como un contenedor para otro objeto, denominado *subobjeto*, que realiza el trabajo real. El subobjeto implementa una transformación de datos que produce el efecto o la transición deseados. Para obtener una lista de transiciones y efectos proporcionados con DES, vea [Transiciones y efectos.](transitions-and-effects.md)
 
-Para establecer el subobjeto, llame al método [**IAMTimelineObj:: SetSubObjectGUID**](iamtimelineobj-setsubobjectguid.md) en el objeto Timeline, pasándole el identificador de clase (CLSID) del subobjeto. DirectShow proporciona un enumerador para los efectos de vídeo y las transiciones de vídeo, que puede usar para obtener el CLSID. Para obtener más información, consulte [enumeración de efectos y transiciones](enumerating-effects-and-transitions.md).
+Para establecer el subobjeto, llame al método [**IAMTimelineObj::SetSubObjectGUID**](iamtimelineobj-setsubobjectguid.md) en el objeto timeline, pasando el identificador de clase (CLSID) del subobjeto. DirectShow proporciona un enumerador para efectos de vídeo y transiciones de vídeo, que puede usar para obtener el CLSID. Para obtener más información, [vea Enumerar efectos y transiciones.](enumerating-effects-and-transitions.md)
 
-En el ejemplo siguiente se establece la [transición de borrado de SMPTE](smpte-wipe-transition.md) como el subobjeto:
+En el ejemplo siguiente se establece la transición de borrado de [SMPTE](smpte-wipe-transition.md) como subobjeto :
 
 
 ```C++
@@ -51,11 +51,11 @@ hr = pTransObj->SetSubObjectGUID(CLSID_DxtJpeg);  // SMPTE Wipe
 
 
 
-**3. establecer las horas de inicio y detención**
+**3. Establecer las horas de inicio y de detenerse**
 
-Para establecer las horas de inicio y detención, llame al método [**IAMTimelineObj:: SetStartStop**](iamtimelineobj-setstartstop.md) . Estas horas son relativas a la hora de inicio del objeto primario. Los efectos pueden superponerse dentro del mismo objeto, pero las transiciones no.
+Para establecer las horas de inicio y de detenerse, llame al [**método IAMTimelineObj::SetStartStop.**](iamtimelineobj-setstartstop.md) Estas horas son relativas a la hora de inicio del objeto primario. Los efectos pueden superponerse dentro del mismo objeto, pero las transiciones no.
 
-En el ejemplo siguiente se establece la hora de inicio en 5 segundos y la hora de detención en 10 segundos:
+En el ejemplo siguiente se establece la hora de inicio en 5 segundos y la hora de detenerse en 10 segundos:
 
 
 ```C++
@@ -65,18 +65,18 @@ hr = pTransObj->SetStartStop(5 * ONE_SECOND, 10 * ONE_SECOND);
 
 
 
-Cuando se representa una transición, el progreso de la transición en cada fotograma se calcula en función de una propiedad de **progreso** , que se normaliza en un intervalo de 0,0 a 1,0. DES usa la hora de inicio de cada fotograma para calcular el valor de progreso. Esto significa que si la hora de detención de la transición es igual a la hora de detención del origen, el valor de **progreso** nunca alcanzará exactamente 1,0, porque la hora de inicio del último fotograma es ligeramente menor que la hora de detención. Para que la transición llegue a 1,0, establezca la hora de detención de la transición para que sea al menos un fotograma anterior a la hora de detención del origen.
+Cuando se representa una transición, el progreso de la transición en cada fotograma se calcula en función de una propiedad **Progress,** que se normaliza a un intervalo de 0,0 a 1,0. DES usa la hora de inicio de cada fotograma para calcular el valor de progreso. Esto significa que si la hora de detenerse de la transición es igual a la hora de detenerse de origen, el valor de **Progreso** nunca alcanzará exactamente 1,0, porque la hora de inicio del último fotograma es ligeramente superior a la hora de detenerse. Para que la transición alcance la versión 1.0, establezca la hora de detenerse de la transición en al menos un fotograma antes de la hora de detenerse de origen.
 
 **4. Insertar el objeto en la escala de tiempo**
 
-Para insertar el objeto en la escala de tiempo, llame a uno de los métodos siguientes en el elemento primario, en función del tipo de objeto:
+Para insertar el objeto en la escala de tiempo, llame a uno de los métodos siguientes en el elemento primario, según el tipo de objeto:
 
--   Efectos: [ **IAMTimelineEffectable:: EffectInsBefore**](iamtimelineeffectable-effectinsbefore.md)
--   Transiciones: [ **IAMTimelineTransable:: TransAdd**](iamtimelinetransable-transadd.md)
+-   Efectos: [ **IAMTimelineEffectable::EffectInsBefore**](iamtimelineeffectable-effectinsbefore.md)
+-   Transiciones: [ **IAMTimelineTransable::TransAdd**](iamtimelinetransable-transadd.md)
 
-En el método [**IAMTimelineEffectable:: EffectInsBefore**](iamtimelineeffectable-effectinsbefore.md) , debe especificar la prioridad del efecto. Cuando los efectos se superponen en el mismo objeto, se aplican en orden de prioridad. El efecto de audio de sobre de volumen es una excepción; Consulte la referencia de [efectos de sobre de volumen](volume-envelope-effect.md) para más información. Dentro de una composición, todas las pistas de audio se mezclan antes de que se apliquen los efectos de audio de la composición.
+En el [**método IAMTimelineEffectable::EffectInsBefore,**](iamtimelineeffectable-effectinsbefore.md) debe especificar la prioridad del efecto. Cuando los efectos se superponen en el mismo objeto, se aplican por orden de prioridad. El efecto de audio Sobre de volumen es una excepción; Consulte la referencia [del efecto de sobre de](volume-envelope-effect.md) volumen para obtener más información. Dentro de una composición, todas las pistas de audio se mezclan antes de que se apliquen los efectos de audio para esa composición.
 
-Dado que las transiciones no pueden superponerse en el mismo objeto, no tienen un valor de prioridad.
+Dado que las transiciones no se pueden superponer en el mismo objeto, no tienen un valor de prioridad.
 
 En el ejemplo siguiente se agrega el objeto de transición a una pista:
 
@@ -90,15 +90,15 @@ pTransable->Release();
 
 
 
-En el ejemplo se consulta el objeto Track para la interfaz [**IAMTimelineTransable**](iamtimelinetransable.md) antes de llamar a AddTrans.
+En el ejemplo se consulta el objeto track para la [**interfaz IAMTimelineTransable**](iamtimelinetransable.md) antes de llamar a AddTrans.
 
-**5. establecer propiedades**
+**5. Establecer propiedades**
 
-Muchos efectos y transiciones admiten propiedades personalizadas. Para obtener más información, vea [establecer propiedades en efectos y transiciones](setting-properties-on-effects-and-transitions.md).
+Muchos efectos y transiciones admiten propiedades personalizadas. Para obtener información, vea [Establecer propiedades en efectos y transiciones.](setting-properties-on-effects-and-transitions.md)
 
 Ejemplo
 
-En el ejemplo de código siguiente se agrega una [transición de borrado de SMPTE](smpte-wipe-transition.md) a una pista. Se supone que el objeto Track ya existe en la escala de tiempo.
+En el ejemplo de código siguiente se agrega una [transición de borrado de SMPTE](smpte-wipe-transition.md) a una pista. Se supone que el objeto de seguimiento ya existe en la escala de tiempo.
 
 
 ```C++

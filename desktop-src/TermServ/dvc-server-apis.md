@@ -50,7 +50,7 @@ Esta enumeración no se utiliza.
 
 -   [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile)
 
-    Si se recupera el identificador de archivo para dvc mediante una llamada a [**WTSVirtualChannelQuery con**](/windows/desktop/api/Wtsapi32/nf-wtsapi32-wtsvirtualchannelquery) el parámetro *WTSVirtualFileHandle*, se aplicará la misma regla. Todas las lecturas incluirán [**CHANNEL \_ PDU \_ HEADER**](/windows/win32/api/pchannel/ns-pchannel-channel_pdu_header)y el búfer de lectura debe tener al menos el tamaño **de CHANNEL \_ PDU \_ LENGTH.**
+    Si se recupera el identificador de archivo para la DVC mediante una llamada a [**WTSVirtualChannelQuery**](/windows/desktop/api/Wtsapi32/nf-wtsapi32-wtsvirtualchannelquery) con el parámetro *WTSVirtualFileHandle,* se aplicará la misma regla. Todas las lecturas incluirán [**CHANNEL \_ PDU \_ HEADER**](/windows/win32/api/pchannel/ns-pchannel-channel_pdu_header)y el búfer de lectura debe tener al menos el tamaño **CHANNEL \_ PDU \_ LENGTH.**
 
  
 

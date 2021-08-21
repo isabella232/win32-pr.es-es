@@ -1,36 +1,36 @@
 ---
-description: Utilice las constantes siguientes para identificar la sesión del registrador del kernel de NT.
+description: Use las siguientes constantes para identificar la sesión del registrador de kernel de NT.
 ms.assetid: f64f05c1-b904-4847-8502-4abb9cf4d37f
-title: Constantes del registrador del kernel de NT
+title: Constantes del registrador de kernel nt
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13767400ff851e358f6665c88e16767cc378a4da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dbd5b8176fb3b0ca6c63bc5a0aa3bf4bcd6d7067f4c3710a9a6e74b48603dc50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104986006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151461"
 ---
-# <a name="nt-kernel-logger-constants"></a>Constantes del registrador del kernel de NT
+# <a name="nt-kernel-logger-constants"></a>Constantes del registrador de kernel nt
 
-Utilice las constantes siguientes para identificar la sesión del registrador del kernel de NT.
+Use las siguientes constantes para identificar la sesión del registrador de kernel de NT.
 
 
 
 | Constante               | Descripción                                                      |
 |------------------------|------------------------------------------------------------------|
-| SystemTraceControlGuid | GUID de control de la sesión de seguimiento de eventos del registrador del kernel de NT. |
-| \_nombre del registrador de kernel \_   | Nombre de la sesión de seguimiento de eventos del registrador del kernel de NT.          |
+| SystemTraceControlGuid | GUID de control para la sesión de seguimiento de eventos del registrador de kernel de NT. |
+| NOMBRE \_ DEL REGISTRADOR DE \_ KERNEL   | Nombre de la sesión de seguimiento de eventos del registrador de kernel nt.          |
 
 
 
  
 
-La sesión del registrador del kernel de NT es la única sesión que puede aceptar eventos de proveedores de eventos de kernel. La sesión del registrador del kernel de NT no acepta eventos de otros proveedores. Si desea capturar eventos y eventos de kernel de otros proveedores, debe usar dos sesiones independientes y el consumidor deberá combinar los eventos de los archivos de registro para proporcionar resultados de un extremo a otro.
+La sesión del registrador de kernel nt es la única sesión que puede aceptar eventos de proveedores de eventos de kernel. La sesión del registrador de kernel nt no acepta eventos de otros proveedores. Si desea capturar eventos y eventos del kernel de otros proveedores, debe usar dos sesiones independientes y el consumidor tendría que combinar los eventos de los archivos de registro para proporcionar resultados de un extremo a otro.
 
-ETW usa la \_ macro definir GUID para definir los GUID. Para usar **SystemTraceControlGuid** en el código, debe incluir \# define INITGUID antes de incluir Evntrace. h. Después, el compilador convertirá el GUID de definición \_ en un GUID de constante.
+ETW usa la \_ macro DEFINE GUID para definir GUID. Para usar **SystemTraceControlGuid** en el código, debe incluir \# definir INITGUID antes de incluir Evntrace.h. A continuación, el compilador convertirá el \_ GUID DEFINE en un GUID constante.
 
-Los valores siguientes definen los GUID de clase posibles para los eventos de kernel a los que puede realizar un seguimiento una sesión del registrador del kernel de NT. Puede pasar los GUID de clase a la función [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) para configurar el procesamiento especial para cada clase de evento.
+Los valores siguientes definen los posibles GUID de clase para los eventos de kernel de los que puede realizar un seguimiento una sesión de registrador de kernel nt. Puede pasar los GUID de clase a la [**función SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) para configurar un procesamiento especial para cada clase de evento.
 
 
 
@@ -57,7 +57,7 @@ Los valores siguientes definen los GUID de clase posibles para los eventos de ke
   );</code></pre></td>
 </tr>
 <tr class="even">
-<td><a href="diskio.md"><strong>Desmontaje</strong></a></td>
+<td><a href="diskio.md"><strong>DiskIo</strong></a></td>
 <td><pre class="syntax" data-space="preserve"><code>DEFINE_GUID ( /* 3d6fa8d4-fe05-11d0-9dda-00c04fd7ba7c */
     DiskIoGuid,
     0x3d6fa8d4,
@@ -147,7 +147,7 @@ Los valores siguientes definen los GUID de clase posibles para los eventos de ke
 );</code></pre></td>
 </tr>
 <tr class="odd">
-<td><a href="tcpip.md"><strong>Luego</strong></a></td>
+<td><a href="tcpip.md"><strong>Tcpip</strong></a></td>
 <td><pre class="syntax" data-space="preserve"><code>DEFINE_GUID ( /* 9a280ac0-c8e0-11d1-84e2-00c04fb998a2 */
     TcpIpGuid,
     0x9a280ac0,
@@ -157,7 +157,7 @@ Los valores siguientes definen los GUID de clase posibles para los eventos de ke
   );</code></pre></td>
 </tr>
 <tr class="even">
-<td><a href="thread.md"><strong>Conversaciones</strong></a></td>
+<td><a href="thread.md"><strong>Hilo</strong></a></td>
 <td><pre class="syntax" data-space="preserve"><code>DEFINE_GUID ( /* 3d6fa8d1-fe05-11d0-9dda-00c04fd7ba7c */
     ThreadGuid,
     0x3d6fa8d1,
@@ -183,9 +183,9 @@ Los valores siguientes definen los GUID de clase posibles para los eventos de ke
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar los GUID, copie las definiciones de GUID que desee usar en el código fuente. Debe incluir \# define INITGUID antes de las definiciones que se incluyen en el código fuente, por lo que el compilador convertirá el GUID de definición \_ en un GUID de constante. Por ejemplo,
+Para usar los GUID, copie las definiciones de GUID que desea usar en el código fuente. Debe incluir definir INITGUID antes de las definiciones que incluya en el código fuente, por lo que el compilador convertirá el \# GUID DEFINE en un GUID \_ constante. Por ejemplo,
 
 ``` syntax
 #define INITGUID
@@ -207,7 +207,7 @@ DEFINE_GUID ( /* 3d6fa8d0-fe05-11d0-9dda-00c04fd7ba7c */
   );
 ```
 
-Como alternativa, puede definir el GUID constante para las definiciones de GUID. Por ejemplo,
+Como alternativa, puede definir el GUID constante para las definiciones de GUID usted mismo. Por ejemplo,
 
 ``` syntax
 static const GUID ThreadGuid = 

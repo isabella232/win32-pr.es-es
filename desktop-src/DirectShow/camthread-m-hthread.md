@@ -1,7 +1,7 @@
 ---
 description: Identificador del subproceso.
 ms.assetid: 93d1182a-58f0-4570-8568-fe0fded762cb
-title: 'Miembro CAMThread:: m_hThread (Wxutil. h)'
+title: Miembro M_HTHREAD(Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e83dd225da0c3673f9c7f423e0bf56da7431b097
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f7293a97373a53d102887e5958c4296aff3dcfe3d392c80492ed773af62a8f11
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105691040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118158916"
 ---
-# <a name="camthreadm_hthread-member"></a>Miembro hThread CAMThread:: m \_
+# <a name="camthreadm_hthread-member"></a>Miembro CAMThread::m \_ hThread
 
 Identificador del subproceso.
 
@@ -36,9 +36,9 @@ HANDLE m_hThread;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta variable se inicializa como **null**. El método [**CAMThread:: Create**](camthread-create.md) establece esta variable en el identificador del subproceso. Para determinar si el subproceso existe, llame al método [**CAMThread:: ThreadExists**](camthread-threadexists.md) .
+Esta variable se inicializa como **NULL.** El [**método CAMThread::Create**](camthread-create.md) establece esta variable en el identificador del subproceso. Para determinar si el subproceso existe, llame al [**método CAMThread::ThreadExists.**](camthread-threadexists.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Esta variable se inicializa como **null**. El método [**CAMThread:: Create**](c
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Esta variable se inicializa como **null**. El método [**CAMThread:: Create**](c
 
 <dl> <dt>
 
-[**Clase CAMThread**](camthread.md)
+[**CLASE CAMThread**](camthread.md)
 </dt> </dl>
 
  

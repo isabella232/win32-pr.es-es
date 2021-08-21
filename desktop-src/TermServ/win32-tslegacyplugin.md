@@ -1,6 +1,6 @@
 ---
 title: Win32_TSLegacyPlugin clase
-description: Representa un Escritorio remoto que los complementos de Administración de conexiones de RemoteApp y Escritorio Service integrados consultarán para los programas RemoteApp.
+description: Representa un servidor Escritorio remoto que los complementos Administración de conexiones de RemoteApp y Escritorio Service integrados consultarán para los programas RemoteApp.
 ms.assetid: 99bec477-ae9d-4bc9-bf9d-11a4e439306b
 ms.tgt_platform: multiple
 keywords:
@@ -31,7 +31,7 @@ ms.locfileid: "118348857"
 ---
 # <a name="win32_tslegacyplugin-class"></a>Clase TSLegacyPlugin de Win32 \_
 
-Representa un Escritorio remoto que los complementos de Administración de conexiones de RemoteApp y Escritorio Service integrados consultarán para los programas RemoteApp.
+Representa un servidor Escritorio remoto que los complementos Administración de conexiones de RemoteApp y Escritorio Service integrados consultarán para los programas RemoteApp.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -142,7 +142,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -232,7 +232,7 @@ Escritorio remoto servidor.
 
 <span id="Dummy_Terminal_Server_for_VM_Farm_1_"></span><span id="dummy_terminal_server_for_vm_farm_1_"></span><span id="DUMMY_TERMINAL_SERVER_FOR_VM_FARM_1_"></span>
 
-<span id="Dummy_Terminal_Server_for_VM_Farm_1_"></span><span id="dummy_terminal_server_for_vm_farm_1_"></span><span id="DUMMY_TERMINAL_SERVER_FOR_VM_FARM_1_"></span>**Servidor terminal ficticio para la granja de máquinas virtuales(1)** (1)
+<span id="Dummy_Terminal_Server_for_VM_Farm_1_"></span><span id="dummy_terminal_server_for_vm_farm_1_"></span><span id="DUMMY_TERMINAL_SERVER_FOR_VM_FARM_1_"></span>**Servidor terminal ficticio para vm farm(1)** (1)
 
 
 </dt> <dd>
@@ -247,11 +247,11 @@ Servidor Escritorio remoto para una granja de máquinas virtuales.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                        |
-| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                 |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                 |
 | MOF<br/>                      | <dl> <dt>TscPub.mof</dt> </dl>    |
 | Archivo DLL<br/>                      | <dl> <dt>TscPubWmi.dll</dt> </dl> |
 

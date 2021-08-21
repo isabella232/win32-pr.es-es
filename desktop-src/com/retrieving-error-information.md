@@ -13,14 +13,14 @@ ms.locfileid: "118309657"
 ---
 # <a name="retrieving-error-information"></a>Recuperar información sobre errores
 
-Con las funciones y las interfaces de control de errores COM, puede recuperar la información de error como se muestra a continuación:
+Con las funciones y las interfaces de control de errores COM, puede recuperar información de error como se muestra a continuación:
 
 1.  Compruebe si el valor devuelto representa un error que el objeto está preparado para controlar.
 2.  Llame [**a QueryInterface**](/windows/desktop/api/Unknwn/nf-unknwn-iunknown-queryinterface(q)) para obtener un puntero a la [**interfaz ISupportErrorInfo.**](/windows/win32/api/oaidl/nn-oaidl-isupporterrorinfo) A continuación, llame a [**ISupportErrorInfo::InterfaceSupportsErrorInfo**](/windows/win32/api/oaidl/nf-oaidl-isupporterrorinfo-interfacesupportserrorinfo) para comprobar que el error lo ha producido el objeto que lo devolvió y que el objeto de error pertenece al error actual y no a una llamada anterior.
 3.  Para obtener un puntero al objeto de error, llame a [**la función GetErrorInfo.**](/windows/win32/api/oleauto/nf-oleauto-geterrorinfo)
 4.  Para recuperar información del objeto de error, use los [**métodos IErrorInfo.**](/windows/win32/api/oaidl/nn-oaidl-ierrorinfo)
 
-Si el objeto no está preparado para controlar el error, pero necesita propagar la información de error más abajo en la cadena de llamadas, simplemente debe pasar el valor devuelto a su autor de la llamada. Dado que la función [**GetErrorInfo**](/windows/win32/api/oleauto/nf-oleauto-geterrorinfo) borra la información de error y pasa la propiedad del objeto de error al autor de la llamada, solo debe llamar a la función el objeto que controla el error.
+Si el objeto no está preparado para controlar el error, pero necesita propagar la información de error más abajo en la cadena de llamadas, simplemente debe pasar el valor devuelto a su autor de la llamada. Dado que [**la función GetErrorInfo**](/windows/win32/api/oleauto/nf-oleauto-geterrorinfo) borra la información de error y pasa la propiedad del objeto de error al autor de la llamada, el objeto que controla el error solo debe llamar a la función.
 
  
 

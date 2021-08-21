@@ -1,23 +1,23 @@
 ---
-title: Progreso del compresor y descompresor de supervisión
-description: Progreso del compresor y descompresor de supervisión
+title: Supervisión del progreso de la supervisión y el descompresión
+description: Supervisión del progreso de la supervisión y el descompresión
 ms.assetid: 7c87c688-75b6-4d3e-9dd5-5f509ff2e473
 keywords:
-- Administrador de compresión de vídeo (VCM), supervisión
-- VCM (Administrador de compresión de vídeo), supervisar
-- ICSetStatusProc función)
+- administrador de compresión de vídeo (VCM), supervisión
+- VCM (administrador de compresión de vídeo), supervisión
+- Función ICSetStatusProc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: beb86a40bb653380dc93e758ada1b2eef6ec9ca7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 724d3e6a8bee645717ef624eddd1276d3e55e856f1aab3c6edc5f9585b3f5feb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137186"
 ---
-# <a name="monitoring-compressor-and-decompressor-progress"></a>Progreso del compresor y descompresor de supervisión
+# <a name="monitoring-compressor-and-decompressor-progress"></a>Supervisión del progreso de la supervisión y el descompresión
 
-En el ejemplo siguiente se muestra cómo se usa la función [**ICSetStatusProc**](/windows/desktop/api/Vfw/nf-vfw-icsetstatusproc) para informar al compresor o descompresor de la dirección de la función de devolución de llamada:
+En el ejemplo siguiente se muestra cómo se usa la función [**ICSetStatusProc**](/windows/desktop/api/Vfw/nf-vfw-icsetstatusproc) para informar al regidor o descomprimidor de la dirección de la función de devolución de llamada:
 
 
 ```C++
@@ -78,9 +78,9 @@ LONG CALLBACK export PreviewStatusProc(LPARAM lParam,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

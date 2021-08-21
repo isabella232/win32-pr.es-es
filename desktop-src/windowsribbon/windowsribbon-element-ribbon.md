@@ -1,6 +1,6 @@
 ---
 title: Elemento Ribbon
-description: Representa el control de la cinta de opciones en la vista de cinta de opciones.
+description: Representa el control de la cinta de opciones en la vista de cinta.
 ms.assetid: 51083180-4e86-4c90-9fd1-a58c12bcc756
 keywords:
 - Cinta de opciones de Windows cinta de opciones
@@ -22,7 +22,7 @@ ms.locfileid: "118202206"
 ---
 # <a name="ribbon-element"></a>Elemento Ribbon
 
-Representa el control de la cinta de opciones en la vista de cinta de opciones.
+Representa el control de la cinta de opciones en la vista de cinta.
 
 ## <a name="usage"></a>Uso
 
@@ -49,7 +49,7 @@ Representa el control de la cinta de opciones en la vista de cinta de opciones.
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Requerido</th>
+<th>Obligatorio</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -65,7 +65,7 @@ Representa el control de la cinta de opciones en la vista de cinta de opciones.
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Se usa para anotar el elemento de comando.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cualquier secuencia de cero o más caracteres.<br/> La longitud máxima es sin enlazar.<br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cualquier secuencia de cero o más caracteres.<br/> La longitud máxima no está desenlazada.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>

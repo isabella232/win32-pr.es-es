@@ -4,7 +4,7 @@ description: Puntero hacia atrás a objetos externos.
 ms.assetid: 99d6d80f-b11a-48f2-93c9-866a99105488
 ms.tgt_platform: multiple
 keywords:
-- Remote-Source esquema de AD de atributo
+- Remote-Source esquema de AD del atributo
 - Esquema de AD del atributo remoteSource
 topic_type:
 - apiref
@@ -32,7 +32,7 @@ Puntero hacia atrás a objetos externos.
 | CN                | Remote-Source                               |
 | Ldap-Display-Name | remoteSource                                |
 | Size              | \-                                          |
-| Actualizar privilegios  | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.107                      |
 | System-Id-Guid    | bf967a14-0de6-11d0-a285-00aa003049e2        |
@@ -53,7 +53,7 @@ Puntero hacia atrás a objetos externos.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
@@ -66,7 +66,7 @@ Puntero hacia atrás a objetos externos.
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Clases usadas en        | [**Remote-Mail-Recipient**](c-remotemailrecipient.md)<br/> |
+| Clases usadas en        | [**Destinatario de correo remoto**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -87,7 +87,7 @@ Puntero hacia atrás a objetos externos.
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Clases usadas en        | [**Remote-Mail-Recipient**](c-remotemailrecipient.md)<br/> |
+| Clases usadas en        | [**Destinatario de correo remoto**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -95,7 +95,7 @@ Puntero hacia atrás a objetos externos.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
@@ -108,7 +108,7 @@ Puntero hacia atrás a objetos externos.
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Clases usadas en        | [**Destinatario de correo remoto**](c-remotemailrecipient.md)<br/> |
+| Clases usadas en        | [**Remote-Mail-Recipient**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -129,7 +129,7 @@ Puntero hacia atrás a objetos externos.
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Clases usadas en        | [**Destinatario de correo remoto**](c-remotemailrecipient.md)<br/> |
+| Clases usadas en        | [**Remote-Mail-Recipient**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -150,7 +150,7 @@ Puntero hacia atrás a objetos externos.
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Clases usadas en        | [**Destinatario de correo remoto**](c-remotemailrecipient.md)<br/> |
+| Clases usadas en        | [**Remote-Mail-Recipient**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -158,7 +158,7 @@ Puntero hacia atrás a objetos externos.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                |
 | MAPI-Id                | \-                                                                |
@@ -171,7 +171,7 @@ Puntero hacia atrás a objetos externos.
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Clases usadas en        | [**Destinatario de correo remoto**](c-remotemailrecipient.md)<br/> |
+| Clases usadas en        | [**Remote-Mail-Recipient**](c-remotemailrecipient.md)<br/> |
 
 
 

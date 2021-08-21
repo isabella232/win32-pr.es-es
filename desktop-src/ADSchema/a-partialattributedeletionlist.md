@@ -1,10 +1,10 @@
 ---
 title: Atributo Partial-Attribute-Deletion-List
-description: Realiza un seguimiento del estado de replicación interno de las réplicas parciales (es decir, en los GCs). Atributo del objeto NC de réplica parcial. Se usa cuando el GC está en proceso de quitar atributos de los objetos de sus NCs de réplica parcial.
+description: Realiza un seguimiento del estado de replicación interno de las réplicas parciales (es decir, en los GC). Atributo del objeto NC de réplica parcial. Se usa cuando el GC está en proceso de quitar atributos de los objetos de sus NCs de réplica parcial.
 ms.assetid: 0084774b-7231-4cfc-8f60-c014006da2b9
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo Partial-Attribute-Deletion-List
+- Esquema de AD del atributo Partial-Attribute-Deletion-List
 - Esquema de AD del atributo partialAttributeDeletionList
 topic_type:
 - apiref
@@ -23,7 +23,7 @@ ms.locfileid: "118423948"
 ---
 # <a name="partial-attribute-deletion-list-attribute"></a>Atributo Partial-Attribute-Deletion-List
 
-Realiza un seguimiento del estado de replicación interno de las réplicas parciales (es decir, en los GCs). Atributo del objeto NC de réplica parcial. Se usa cuando el GC está en proceso de quitar atributos de los objetos de sus NCs de réplica parcial.
+Realiza un seguimiento del estado de replicación interno de las réplicas parciales (es decir, en los GC). Atributo del objeto NC de réplica parcial. Se usa cuando el GC está en proceso de quitar atributos de los objetos de sus NCs de réplica parcial.
 
 
 
@@ -54,7 +54,7 @@ Realiza un seguimiento del estado de replicación interno de las réplicas parci
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
@@ -75,7 +75,7 @@ Realiza un seguimiento del estado de replicación interno de las réplicas parci
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
@@ -96,7 +96,7 @@ Realiza un seguimiento del estado de replicación interno de las réplicas parci
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
@@ -138,7 +138,7 @@ Realiza un seguimiento del estado de replicación interno de las réplicas parci
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
@@ -159,7 +159,7 @@ Realiza un seguimiento del estado de replicación interno de las réplicas parci
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------|
 | Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |

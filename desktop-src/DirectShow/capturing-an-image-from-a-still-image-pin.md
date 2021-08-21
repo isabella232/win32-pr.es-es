@@ -1,23 +1,23 @@
 ---
-description: Captura de una imagen a partir de un PIN de imagen fija
+description: Captura de una imagen a partir de un pin de imagen fija
 ms.assetid: cbcb4d6d-dc85-4ae2-b0a8-110f15092733
-title: Captura de una imagen a partir de un PIN de imagen fija
+title: Captura de una imagen a partir de un pin de imagen fija
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3510f318f3107dd698dc753704d6c09d70ddd308
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: cab750fb6b847bc39d28c8906df8dcb982278f7a4447bfc3d79631ee58eb574e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103805714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118158667"
 ---
-# <a name="capturing-an-image-from-a-still-image-pin"></a>Captura de una imagen a partir de un PIN de imagen fija
+# <a name="capturing-an-image-from-a-still-image-pin"></a>Captura de una imagen a partir de un pin de imagen fija
 
-Algunas cámaras pueden producir una imagen fija independiente de la secuencia de captura y, a menudo, la imagen sigue siendo de mayor calidad que las imágenes generadas por la secuencia de captura. Es posible que la cámara tenga un botón que actúe como un desencadenador de hardware o que admita la activación de software. Una cámara que admita imágenes fijas expondrá un PIN de imagen fija, que sigue siendo la categoría PIN de la categoría PIN \_ \_ .
+Algunas cámaras pueden generar una imagen fija independiente de la secuencia de captura y, a menudo, la imagen fija es de mayor calidad que las imágenes producidas por la secuencia de captura. La cámara puede tener un botón que actúa como un desencadenador de hardware o puede admitir la activación de software. Una cámara que admita imágenes fijas expondrá un pin de imagen fija, que es pin category PIN \_ CATEGORY \_ STILL.
 
-La manera recomendada de obtener imágenes estáticas del dispositivo es usar las API de adquisición de imágenes de Windows (WIA). Para obtener más información, vea "adquisición de imagen de Windows" en la documentación de Platform SDK. Sin embargo, también puede usar DirectShow para capturar una imagen.
+La manera recomendada de obtener imágenes fijas del dispositivo es usar las API Windows Image Acquisition (WIA). Para más información, consulte "adquisición Windows imagen" en la documentación de Platform SDK. Sin embargo, también puede usar DirectShow para capturar una imagen.
 
-Para desencadenar el PIN fijo, use el método [**IAMVideoControl:: SetMode**](/windows/desktop/api/Strmif/nf-strmif-iamvideocontrol-setmode) cuando el gráfico se esté ejecutando, como se indica a continuación:
+Para desencadenar el pin, use el [**método IAMVideoControl::SetMode**](/windows/desktop/api/Strmif/nf-strmif-iamvideocontrol-setmode) cuando se ejecute el gráfico, como se muestra a continuación:
 
 
 ```C++
@@ -59,18 +59,18 @@ if (SUCCEEDED(hr))
 
 
 
-Consulte el filtro de captura para [**IAMVideoControl**](/windows/desktop/api/Strmif/nn-strmif-iamvideocontrol). Si se admite la interfaz, obtenga un puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del PIN fijo llamando al método [**ICaptureGraphBuilder2:: FindPin**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findpin) , como se muestra en el ejemplo anterior. Después, llame a [**IAMVideoControl:: SetMode**](/windows/desktop/api/Strmif/nf-strmif-iamvideocontrol-setmode) con el puntero **IPin** y la \_ marca de desencadenador VideoControlFlag.
+Consulte el filtro de captura [**para IAMVideoControl.**](/windows/desktop/api/Strmif/nn-strmif-iamvideocontrol) Si se admite la interfaz, obtenga un puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del todavía anclado mediante una llamada al método [**ICaptureGraphBuilder2::FindPin,**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findpin) como se muestra en el ejemplo anterior. A [**continuación, llame a IAMVideoControl::SetMode**](/windows/desktop/api/Strmif/nf-strmif-iamvideocontrol-setmode) con el **puntero IPin** y la marca VideoControlFlag \_ Trigger.
 
 > [!Note]  
-> En función de la cámara, es posible que deba representar el PIN de captura ( \_ captura de categoría de PIN \_ ) antes de que se conecte el PIN fijo.
+> Dependiendo de la cámara, es posible que tenga que representar el pin de captura (PIN CATEGORY CAPTURE) antes de que se conecte \_ \_ el pin.
 
  
 
-### <a name="example-using-the-sample-grabber-filter"></a>Ejemplo: uso del filtro de enganche de ejemplo
+### <a name="example-using-the-sample-grabber-filter"></a>Ejemplo: Uso del filtro de captura de ejemplo
 
-Una manera de capturar la imagen es con el filtro de [**enganche de ejemplo**](sample-grabber-filter.md) . El enganche de ejemplo utiliza una función de devolución de llamada definida por la aplicación para procesar la imagen. Para obtener más información sobre el filtro de enganche de ejemplo, vea [usar el enganche de ejemplo](using-the-sample-grabber.md).
+Una manera de capturar la imagen es con el filtro [**Sample Grabber**](sample-grabber-filter.md) . Sample Grabber usa una función de devolución de llamada definida por la aplicación para procesar la imagen. Para obtener más información sobre el filtro Sample Grabber, vea [Using the Sample Grabber](using-the-sample-grabber.md).
 
-En el siguiente ejemplo se da por supuesto que el PIN sigue entrega una imagen RGB sin comprimir. En primer lugar, defina una clase que implemente la interfaz de devolución de llamada del enganche de ejemplo, [**ISampleGrabberCB**](isamplegrabbercb.md):
+En el ejemplo siguiente se da por supuesto que el pin sigue entregando una imagen RGB sin comprimir. En primer lugar, defina una clase que implemente la interfaz de devolución de llamada de Sample Grabber, [**ISampleGrabberCB**](isamplegrabbercb.md):
 
 
 ```C++
@@ -88,7 +88,7 @@ SampleGrabberCallback g_StillCapCB;
 
 La implementación de la clase se describe en breve.
 
-A continuación, conecte el anclado todavía al enganche de ejemplo y conecte el captador de ejemplo al filtro de [**representador nulo**](null-renderer-filter.md) . El representador null simplemente descarta los ejemplos multimedia que recibe; el trabajo real se realizará dentro de la devolución de llamada. (La única razón para el representador nulo es conectar el PIN de salida del enganche de ejemplo a algo). Llame a [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para crear el enganche de ejemplo y los filtros de representador nulos, y llame a [**IFilterGraph:: addFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-addfilter) para agregar ambos filtros al gráfico:
+A continuación, conecte el pin todavía al sample grabber y conecte sample grabber al [**filtro Representador**](null-renderer-filter.md) nulo. El representador null simplemente descarta los ejemplos de medios que recibe; el trabajo real se realizará dentro de la devolución de llamada. (La única razón para que el representador null conecte el pin de salida de Sample Grabber a algo). Llame [**a CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para crear los filtros Sample Grabber y Null Renderer y llame a [**IFilterGraph::AddFilter**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph-addfilter) para agregar ambos filtros al gráfico:
 
 
 ```C++
@@ -120,7 +120,7 @@ hr = pGraph->AddFilter(pNull, L"NullRender");
 
 
 
-Puede usar el método [**ICaptureGraphBuilder2:: RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) para conectar los tres filtros en una llamada al método, desde el PIN fijo hasta el enganche de ejemplo y desde el enganche de ejemplo al representador NULL:
+Puede usar el método [**ICaptureGraphBuilder2::RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) para conectar los tres filtros en una llamada de método, desde el pin hasta sample grabber y desde sample grabber al representador null:
 
 
 ```C++
@@ -134,7 +134,7 @@ hr = pBuild->RenderStream(
 
 
 
-Ahora use la interfaz [**ISampleGrabber**](isamplegrabber.md) para configurar el captador de ejemplo de modo que almacene en búfer ejemplos:
+Ahora use la [**interfaz ISampleGrabber para**](isamplegrabber.md) configurar Sample Grabber para almacenar en búfer los ejemplos:
 
 
 ```C++
@@ -161,7 +161,7 @@ hr = pSG->SetCallback(&g_StillCapCB, 0); // 0 = Use the SampleCB callback method
 
 
 
-Obtiene el tipo de medio que el PIN sigue usando para conectarse con el enganche de ejemplo:
+Obtenga el tipo de medio que el pin todavía usa para conectarse con sample grabber:
 
 
 ```C++
@@ -174,7 +174,7 @@ pSG->Release();
 
 
 
-Este tipo de medio contendrá la estructura [**BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) que define el formato de la imagen fija. Libere el tipo de medio antes de salir de la aplicación:
+Este tipo de medio contendrá la [**estructura BITMAPINFOHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapinfoheader) que define el formato de la imagen fija. Liberar el tipo de medio antes de que se cierre la aplicación:
 
 
 ```C++
@@ -184,9 +184,9 @@ FreeMediaType(g_StillMediaType);
 
 
 
-A continuación se muestra un ejemplo de la clase de devolución de llamada. Tenga en cuenta que la clase implementa **IUnknown**, que hereda a través de la interfaz [**ISampleGrabber**](isamplegrabber.md) , pero no mantiene un recuento de referencias. Esto es seguro porque la aplicación crea el objeto en la pila y el objeto permanece en el ámbito a lo largo de la duración del gráfico de filtro.
+A continuación se muestra un ejemplo de la clase de devolución de llamada. Tenga en cuenta que la clase implementa **IUnknown**, que hereda a través de la [**interfaz ISampleGrabber,**](isamplegrabber.md) pero no mantiene un recuento de referencias. Esto es seguro porque la aplicación crea el objeto en la pila y el objeto permanece en el ámbito a lo largo de la duración del gráfico de filtros.
 
-Todo el trabajo se produce en el método [**BufferCB**](isamplegrabbercb-buffercb.md) , al que llama el enganche de ejemplo cada vez que obtiene un nuevo ejemplo. En el ejemplo siguiente, el método escribe el mapa de bits en un archivo:
+Todo el trabajo se produce en el [**método BufferCB,**](isamplegrabbercb-buffercb.md) al que llama sample Grabber cada vez que obtiene un nuevo ejemplo. En el ejemplo siguiente, el método escribe el mapa de bits en un archivo:
 
 
 ```C++

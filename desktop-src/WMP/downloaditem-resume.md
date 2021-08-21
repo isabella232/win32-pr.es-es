@@ -1,11 +1,11 @@
 ---
-title: Método DownloadItem.resume
+title: DownloadItem.resume (método)
 description: Nota En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea. El método resume reanuda la descarga.
 ms.assetid: f58e4838-7b00-4485-90c6-ba5960a17699
 keywords:
-- método resume Reproductor de Windows Media
-- método resume Reproductor de Windows Media , Clase DownloadItem
-- DownloadItem class Reproductor de Windows Media , resume (método)
+- resume method Reproductor de Windows Media
+- resume method Reproductor de Windows Media , DownloadItem (clase)
+- DownloadItem class Reproductor de Windows Media , resume method
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118340690"
 ---
-# <a name="downloaditemresume-method"></a>Método DownloadItem.resume
+# <a name="downloaditemresume-method"></a>DownloadItem.resume (método)
 
 > [!Note]  
 > En esta sección se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
@@ -64,7 +64,7 @@ El **método resume** no tiene ningún efecto en las descargas en tiempo real.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

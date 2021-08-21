@@ -1,7 +1,7 @@
 ---
-description: 'El métodoful recupera el tamaño del búfer. Este método implementa el método IMediaSample:: se obtiene.'
+description: El método GetSize recupera el tamaño del búfer. Este método implementa el método IMediaSample::GetSize.
 ms.assetid: 14562ef4-f554-4d5a-83d3-1a29abae08a4
-title: Método CMediaSample .FUL (Amfilter. h)
+title: Método CMediaSample.GetSize (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ff4146b66ca62905fe54eeb88d1e38ccf56ceea9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f3559f972f35a01738c60f32414ab0b42a079032ac5bc6b3ab0e5b7212900d61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156756"
 ---
-# <a name="cmediasamplegetsize-method"></a>CMediaSample. Método método
+# <a name="cmediasamplegetsize-method"></a>Método CMediaSample.GetSize
 
-El `GetSize` método recupera el tamaño del búfer. Este método implementa el método [**IMediaSample:: se obtiene**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getsize) .
+El `GetSize` método recupera el tamaño del búfer. Este método implementa el [**método IMediaSample::GetSize.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getsize)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,8 +50,8 @@ Devuelve el tamaño del búfer, en bytes.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve el tamaño del búfer, en bytes.
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

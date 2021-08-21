@@ -23,7 +23,7 @@ Los siguientes Programador de tareas cambios se introducen en Windows 10.
 
 -   Cuando ahorro de batería está activado, Windows Programador de tareas las tareas se desencadenan solo si la tarea es:
 
-    -   No se establece **en Iniciar la tarea solo si el equipo está inactivo...** (la tarea no usa [**IdleSettings)**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_idlesettings)
+    -   No se establece **en Iniciar la tarea solo si el equipo está inactivo...** (la tarea no usa [**IdleSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_idlesettings))
     -   No se establece para ejecutarse durante el mantenimiento automático (la tarea no usa [**MaintenanceSettings**](/windows/desktop/api/Taskschd/nf-taskschd-itasksettings3-get_maintenancesettings))
     -   Se establece en **Ejecutar solo cuando el usuario ha iniciado sesión** (la tarea [**LogonType**](/windows/desktop/api/taskschd/nf-taskschd-iprincipal-get_logontype) es **TASK LOGON INTERACTIVE \_ \_ \_ TOKEN** o **TASK LOGON \_ \_ GROUP**)
 
@@ -33,25 +33,25 @@ Los siguientes Programador de tareas cambios se introducen en Windows 10.
 
 ## <a name="windows-8"></a>Windows 8
 
-Los siguientes Programador de tareas cambios de la versión 2.0 se presentan en Windows 8:
+Los siguientes Programador de tareas cambios de la versión 2.0 se introducen en Windows 8:
 
 -   Compatibilidad con PowerShell: los usuarios pueden administrar (crear, eliminar, modificar, iniciar, detener explícitamente, etc.) Windows Programador de tareas tareas mediante el módulo de PowerShell ScheduledTasks.
 -   Contraseñas administradas: los administradores pueden usar las Active Directory de contraseña administradas como entidades de seguridad de tareas. Estas tareas ya no requieren una directiva de restablecimiento de contraseña aplicada.
--   Cambios en la API: se han introducido dos nuevas opciones de configuración de tareas con [**la interfaz ITaskSettings3.**](/windows/desktop/api/taskschd/nn-taskschd-itasksettings3)
+-   Cambios en la API: se han introducido dos nuevas configuraciones de tareas con [**la interfaz ITaskSettings3.**](/windows/desktop/api/taskschd/nn-taskschd-itasksettings3)
     -   [**MaintenanceSettings:**](/windows/desktop/api/Taskschd/nf-taskschd-itasksettings3-get_maintenancesettings)las tareas que usan esta configuración se tratan como un nuevo tipo de tareas programadas que se invocan durante el tiempo de mantenimiento automático del sistema operativo, según la periodicidad y la fecha límite especificadas.
     -   [**Volatile:**](/windows/desktop/api/Taskschd/nf-taskschd-itasksettings3-get_volatile)las tareas que se establecen como volátiles siempre están deshabilitadas en un arranque del sistema operativo y se deben volver a habilitar explícitamente cuando sea necesario. Los clústeres de conmutación por error usan las tareas volátiles para asegurarse de que solo se programa una instancia de tarea en un clúster a la vez.
 -   El motor de programación unificado ahora admite las siguientes características:
-    -   Tipo de inicio de sesión S4U, a través del [**elemento LogonType.**](taskschedulerschema-logontype-principaltype-element.md)
+    -   Tipo de inicio de sesión S4U, a través [**del elemento LogonType.**](taskschedulerschema-logontype-principaltype-element.md)
     -   Valores de consulta XPath para desencadenadores de eventos, a través [**del elemento ValueQueries.**](taskschedulerschema-valuequeries-eventtriggertype-element.md)
     -   No permita que la tarea finalice de forma dura, a través [**del elemento AllowHardTerminate.**](taskschedulerschema-allowhardterminate-settingstype-element.md)
 -   Características en desuso en esta versión
-    -   Acción: [**sendEmail**](taskschedulerschema-sendemail-actiongroup-element.md) (puede usar [**IExecAction**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) con el cmdlet [Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx)[Send-MailMessage](/powershell/module/microsoft.powershell.utility/send-mailmessage?view=powershell-7&preserve-view=true) como solución alternativa).
+    -   Acción: [**sendEmail**](taskschedulerschema-sendemail-actiongroup-element.md) (puede usar [**IExecAction**](/windows/desktop/api/taskschd/nn-taskschd-iexecaction) con [el](https://technet.microsoft.com/library/bb978526.aspx)cmdlet [Windows PowerShell Send-MailMessage](/powershell/module/microsoft.powershell.utility/send-mailmessage?view=powershell-7&preserve-view=true) como solución alternativa).
     -   Acción: [**showMessage**](taskschedulerschema-showmessage-actiongroup-element.md).
     -   AT.exe de cmdline
 
 ## <a name="windows-7"></a>Windows 7
 
-En Programador de tareas 7 se presentan los siguientes cambios Windows 2.0:
+En Programador de tareas 7 se presentan los siguientes Windows 2.0:
 
 -   Uso del motor de programación unificado proporcionado por el sistema operativo subyacente.
 -   Capacidad de rechazar las tareas de inicio en sesiones integradas localmente (RAIL) de aplicaciones remotas.
@@ -96,7 +96,7 @@ En Programador de tareas 7 se presentan los siguientes cambios Windows 2.0:
 
 ## <a name="windows-vista"></a>Windows Vista
 
-La API Programador de tareas 2.0 debe usarse en el desarrollo de aplicaciones que usan el servicio Programador de tareas en Windows Vista. Para obtener más información, [vea Programador de tareas y](task-scheduler-reference.md) Uso de [Programador de tareas](using-the-task-scheduler.md).
+La API Programador de tareas 2.0 debe usarse en el desarrollo de aplicaciones que usan el servicio Programador de tareas en Windows Vista. Para obtener más información, [vea Programador de tareas referencia](task-scheduler-reference.md) y Uso de [Programador de tareas](using-the-task-scheduler.md).
 
 ## <a name="windows-2000-windows-xp-and-windows-server-2003"></a>Windows 2000, Windows XP y Windows Server 2003
 

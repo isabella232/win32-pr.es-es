@@ -32,7 +32,7 @@ Especifica qué puerto usa el servicio de directorio para escuchar las solicitud
 | CN                | ms-DS-Port-LDAP                      |
 | Ldap-Display-Name | msDS-PortLDAP                        |
 | Size              | \-                                   |
-| Privilegio actualizar  | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1859              |
 | System-Id-Guid    | 977225c1-5bdf-42b7-b6db-c3af077f558f |
@@ -48,7 +48,7 @@ Especifica qué puerto usa el servicio de directorio para escuchar las solicitud
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------|
 | Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |

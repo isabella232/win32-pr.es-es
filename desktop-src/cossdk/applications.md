@@ -52,7 +52,7 @@ Puede navegar a esta colección desde las siguientes colecciones:
 
 ## <a name="properties"></a>Propiedades
 
-El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección admite las siguientes propiedades:
+El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las siguientes propiedades dentro de la colección:
 
 -   [3GigSupportEnabled](#3gigsupportenabled)
 -   [AccessChecksLevel](#accesscheckslevel)
@@ -141,7 +141,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | La activación local indica que los objetos dentro de la aplicación se ejecutan dentro de un proceso de servidor local dedicado (aplicación de servidor). La activación en proceso indica que los objetos se ejecutan en el proceso de su creador (aplicación de biblioteca). |
 | Acceso         | ReadWrite                                                                                                                                                                                                                           |
@@ -286,7 +286,7 @@ Para obtener más información, vea "Ensamblados en paralelo" en Cambios en serv
 | Descripción    | Determina si se permiten cambios en la configuración de la aplicación o en los de sus componentes, ya sea mediante programación o a través de la herramienta de administración servicios de componentes. |
 | Acceso         | ReadWrite                                                                                                                                                                     |
 | Tipo           | Bool                                                                                                                                                                          |
-| Valor predeterminado        | True                                                                                                                                                                          |
+| Valor predeterminado        | Verdadero                                                                                                                                                                          |
 | Sistema mínimo | Windows 2000                                                                                                                                                                  |
 
 
@@ -379,10 +379,10 @@ Para obtener más información, vea "Ensamblados en paralelo" en Cambios en serv
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Establece si la aplicación se puede eliminar, ya sea mediante programación o a través de la herramienta de administración servicios de componentes. |
+| Descripción    | Establece si la aplicación se puede eliminar mediante programación o a través de la herramienta de administración servicios de componentes. |
 | Acceso         | ReadWrite                                                                                                                   |
 | Tipo           | Bool                                                                                                                        |
-| Valor predeterminado        | True                                                                                                                        |
+| Valor predeterminado        | Verdadero                                                                                                                        |
 | Sistema mínimo | Windows 2000                                                                                                                |
 
 
@@ -409,7 +409,7 @@ Para obtener más información, vea "Ensamblados en paralelo" en Cambios en serv
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |----------------|-------------------------------------------------------------------------------------------------------|
 | Descripción    | Habilita el volcado del estado de una aplicación COM+ en el momento del error en un directorio designado. |
 | Acceso         | ReadWrite                                                                                             |
@@ -422,7 +422,7 @@ Para obtener más información, vea "Ensamblados en paralelo" en Cambios en serv
  
 
 > [!Note]  
-> A partir Windows Server 2003, solo los administradores tienen privilegios de acceso de lectura a los archivos de volcado com+.
+> A partir Windows Server 2003, solo los administradores tienen privilegios de acceso de lectura a los archivos de volcado de com+.
 
  
 
@@ -432,7 +432,7 @@ Para obtener más información, vea "Ensamblados en paralelo" en Cambios en serv
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Habilita el volcado del estado de una aplicación COM+ cuando la aplicación produce una excepción no controlada y el tiempo de ejecución de COM+ finaliza. |
+| Descripción    | Habilita el volcado del estado de una aplicación COM+ cuando la aplicación provoca una excepción no controlada y el tiempo de ejecución de COM+ finaliza. |
 | Acceso         | ReadWrite                                                                                                                                     |
 | Tipo           | Bool                                                                                                                                          |
 | Valor predeterminado        | False                                                                                                                                         |
@@ -462,7 +462,7 @@ Para obtener más información, vea "Ensamblados en paralelo" en Cambios en serv
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |----------------|--------------------------------------------------------------|
 | Descripción    | Ruta de acceso del directorio en el que se guardan los archivos de volcado. |
 | Acceso         | ReadWrite                                                    |
@@ -475,7 +475,7 @@ Para obtener más información, vea "Ensamblados en paralelo" en Cambios en serv
  
 
 > [!Note]  
-> A partir Windows Server 2003, solo los administradores tienen privilegios de acceso de lectura a los archivos de volcado com+.
+> A partir Windows Server 2003, solo los administradores tienen privilegios de acceso de lectura a los archivos de volcado de com+.
 
  
 
@@ -488,7 +488,7 @@ Para obtener más información, vea "Ensamblados en paralelo" en Cambios en serv
 | Descripción    | Indica si los eventos están habilitados para la aplicación. |
 | Acceso         | ReadWrite                                                 |
 | Tipo           | Bool                                                      |
-| Valor predeterminado        | True                                                      |
+| Predeterminado        | Verdadero                                                      |
 | Sistema mínimo | Windows 2000                                              |
 
 
@@ -501,7 +501,7 @@ Para obtener más información, vea "Ensamblados en paralelo" en Cambios en serv
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | GUID que representa la aplicación. Esta propiedad se devuelve cuando se llama [**al método**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) de propiedad Key en un objeto de esta colección. |
+| Descripción    | GUID que representa la aplicación. Esta propiedad se devuelve cuando se llama al método de propiedad [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) en un objeto de esta colección. |
 | Acceso         | WriteOnce                                                                                                                                                            |
 | Tipo           | String                                                                                                                                                               |
 | Predeterminado        | <Generated>                                                                                                                                                    |
@@ -515,7 +515,7 @@ Para obtener más información, vea "Ensamblados en paralelo" en Cambios en serv
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | Establece la identidad de proceso del servidor para la aplicación. Especifique una cuenta de usuario válida o "Usuario interactivo" para que la aplicación asuma la identidad del usuario que ha iniciado sesión actual. También puede especificar las cadenas "nt authority \\ localservice", "nt authority \\ networkservice" y "nt authority \\ system". La contraseña predeterminada para estas tres cuentas es "" (cadena vacía). |
 | Acceso         |                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -540,7 +540,7 @@ La propiedad Password debe establecerse al mismo tiempo que Identity, antes de u
 | Descripción    | Establece el nivel de suplantación utilizado para las llamadas realizadas a otras aplicaciones.                                                                                           |
 | Acceso         | ReadWrite                                                                                                                                                     |
 | Tipo           | Long Possible values:COMAdminImpersonationAnonymous (1)COMAdminImpersonationIdentify (2)COMAdminImpersonationImpersonate (3)COMAdminImpersonationDelegate (4) |
-| Valor predeterminado        | COMAdminImpersonationImpersonate (3)                                                                                                                          |
+| Predeterminado        | COMAdminImpersonationImpersonate (3)                                                                                                                          |
 | Sistema mínimo | Windows 2000                                                                                                                                                  |
 
 
@@ -556,7 +556,7 @@ La propiedad Password debe establecerse al mismo tiempo que Identity, antes de u
 | Descripción    | Si la aplicación o componente COM+ está deshabilitado, IsEnabled es False. Si la aplicación o componente COM+ está habilitado, IsEnabled es True. |
 | Acceso         | ReadWrite                                                                                                                                 |
 | Tipo           | Bool                                                                                                                                      |
-| Valor predeterminado        | True                                                                                                                                      |
+| Valor predeterminado        | Verdadero                                                                                                                                      |
 | Sistema mínimo | Windows XP                                                                                                                                |
 
 
@@ -638,7 +638,7 @@ La contraseña debe establecerse al mismo tiempo que Identity, antes de usar [**
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | Indica en qué circunstancias se autentican las solicitudes en cola a una aplicación.                                                 |
 | Acceso         | ReadWrite                                                                                                                               |
@@ -656,7 +656,7 @@ La contraseña debe establecerse al mismo tiempo que Identity, antes de usar [**
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Indica el número máximo de subprocesos de escucha simultáneos. El intervalo válido para esta propiedad es de 0 a 1000. Para una aplicación recién creada, la configuración se deriva del algoritmo que se usa actualmente para determinar el número predeterminado de subprocesos de escucha: 16 veces el número de CPU en el servidor. |
+| Descripción    | Indica el número máximo de subprocesos de escucha simultáneos. El intervalo válido para esta propiedad es de 0 a 1000. Para una aplicación recién creada, la configuración se deriva del algoritmo utilizado actualmente para determinar el número predeterminado de subprocesos de escucha: 16 veces el número de CPU en el servidor. |
 | Acceso         | ReadWrite                                                                                                                                                                                                                                                                                                 |
 | Tipo           | Long (0-1000)                                                                                                                                                                                                                                                                                             |
 | Valor predeterminado        | 0                                                                                                                                                                                                                                                                                                         |
@@ -693,7 +693,7 @@ La contraseña debe establecerse al mismo tiempo que Identity, antes de usar [**
 
 | Entrada | Value |
 |----------------|--------------------------------------------------------------------------------------|
-| Descripción    | Indica si el servicio Componentes en cola de COM+ está habilitado para la aplicación. |
+| Descripción    | Indica si el servicio componentes en cola de COM+ está habilitado para la aplicación. |
 | Acceso         | ReadWrite                                                                            |
 | Tipo           | Bool                                                                                 |
 | Valor predeterminado        | False                                                                                |
@@ -709,7 +709,7 @@ La contraseña debe establecerse al mismo tiempo que Identity, antes de usar [**
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Indica el número máximo de activaciones de objetos configurados en la aplicación que se deben aceptar antes de reciclar el proceso. El número predeterminado de activaciones es 0. |
+| Descripción    | Indica el número máximo de activaciones de objetos configurados en la aplicación que se aceptan antes de reciclar el proceso. El número predeterminado de activaciones es 0. |
 | Acceso         | ReadWrite                                                                                                                                                            |
 | Tipo           | Long (0-1048576)                                                                                                                                                     |
 | Valor predeterminado        | 0                                                                                                                                                                    |
@@ -741,7 +741,7 @@ La contraseña debe establecerse al mismo tiempo que Identity, antes de usar [**
 
 | Entrada | Value |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Indica la cantidad de tiempo (en minutos) para permitir que se ejecute un proceso reciclado antes de apagarlo. La cuenta atrás comienza inmediatamente después de reciclar el proceso. El tiempo de espera máximo de expiración es de 1440 minutos (24 horas) y el valor predeterminado es 15 minutos. |
+| Descripción    | Indica la cantidad de tiempo (en minutos) para permitir que un proceso reciclado se ejecute antes de apagarlo. La cuenta atrás comienza inmediatamente después de reciclar el proceso. El tiempo de espera máximo de expiración es de 1440 minutos (24 horas) y el valor predeterminado es 15 minutos. |
 | Acceso         | ReadWrite                                                                                                                                                                                                                                                        |
 | Tipo           | Long (1-1440)                                                                                                                                                                                                                                                    |
 | Valor predeterminado        | 15                                                                                                                                                                                                                                                               |
@@ -755,7 +755,7 @@ La contraseña debe establecerse al mismo tiempo que Identity, antes de usar [**
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | Indica el número máximo de minutos para permitir que un proceso se ejecute antes de reciclarlo. El límite máximo de duración es de 30240 minutos (21 días) y el valor predeterminado es 0 minutos. |
 | Acceso         | ReadWrite                                                                                                                                                                   |
@@ -771,9 +771,9 @@ La contraseña debe establecerse al mismo tiempo que Identity, antes de usar [**
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Indica la cantidad máxima de uso de memoria (en kilobytes) permitida para un proceso antes de reciclarse. Si el uso de memoria del proceso supera el número especificado durante un período superior a un minuto, se recicla el proceso. La cantidad predeterminada de uso de memoria es de 0 KB. |
+| Descripción    | Indica la cantidad máxima de uso de memoria (en kilobytes) permitida para un proceso antes de reciclarse. Si el uso de memoria del proceso supera el número especificado durante un período superior a un minuto, el proceso se recicla. La cantidad predeterminada de uso de memoria es de 0 KB. |
 | Acceso         | ReadWrite                                                                                                                                                                                                                                                              |
 | Tipo           | Long (0-1048576)                                                                                                                                                                                                                                                       |
 | Valor predeterminado        | 0                                                                                                                                                                                                                                                                      |
@@ -789,10 +789,10 @@ La contraseña debe establecerse al mismo tiempo que Identity, antes de usar [**
 
 | Entrada | Value |
 |----------------|------------------------------------------------------|
-| Descripción    | Indica si se puede replicar la aplicación. |
+| Descripción    | Indica si la aplicación se puede replicar. |
 | Acceso         | ReadWrite                                            |
 | Tipo           | Bool                                                 |
-| Valor predeterminado        | True                                                 |
+| Predeterminado        | Verdadero                                                 |
 | Sistema mínimo | Windows XP                                           |
 
 
@@ -805,7 +805,7 @@ La contraseña debe establecerse al mismo tiempo que Identity, antes de usar [**
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Permite que un proceso de servidor continúe si una aplicación está inactiva. Si se establece en True, el proceso del servidor no se cierra cuando se deja inactivo. Si se establece en False, el proceso se cierra según el valor establecido por la propiedad ShutdownAfter. RunForever no está habilitado para aplicaciones de biblioteca (en proceso). |
+| Descripción    | Permite que un proceso de servidor continúe si una aplicación está inactiva. Si se establece en True, el proceso del servidor no se cierra cuando se deja inactivo. Si se establece en False, el proceso se cierra según el valor establecido por la propiedad ShutdownAfter. RunForever no está habilitado para las aplicaciones de biblioteca (en proceso). |
 | Acceso         | ReadWrite                                                                                                                                                                                                                                                                                                |
 | Tipo           | Bool                                                                                                                                                                                                                                                                                                     |
 | Valor predeterminado        | False                                                                                                                                                                                                                                                                                                    |
@@ -837,7 +837,7 @@ La contraseña debe establecerse al mismo tiempo que Identity, antes de usar [**
 
 | Entrada | Value |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Establece el retraso antes de apagar un proceso de servidor después de que se vuelva inactivo. La latencia de apagado oscila entre 0 y 1440 minutos (24 horas). Si RunForever se establece en True, se omite esta propiedad. ShutdownAfter no está habilitado para aplicaciones de biblioteca (en proceso). |
+| Descripción    | Establece el retraso antes de apagar un proceso de servidor después de que esté inactivo. La latencia de apagado oscila entre 0 y 1440 minutos (24 horas). Si RunForever está establecido en True, esta propiedad se omite. ShutdownAfter no está habilitado para las aplicaciones de biblioteca (en proceso). |
 | Acceso         | ReadWrite                                                                                                                                                                                                                                                          |
 | Tipo           | Long (0-1440)                                                                                                                                                                                                                                                      |
 | Valor predeterminado        | 3                                                                                                                                                                                                                                                                  |
@@ -867,9 +867,9 @@ La contraseña debe establecerse al mismo tiempo que Identity, antes de usar [**
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |----------------|------------------------------------------------------------------------------|
-| Descripción    | Punto de conexión de dirección URL en el que esta aplicación se expone a través del protocolo SOAP. |
+| Descripción    | Punto de conexión de dirección URL en el que se expone esta aplicación a través del protocolo SOAP. |
 | Acceso         | ReadWrite                                                                    |
 | Tipo           | String                                                                       |
 | Predeterminado        | ""                                                                           |
@@ -883,7 +883,7 @@ La contraseña debe establecerse al mismo tiempo que Identity, antes de usar [**
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |----------------|-------------------------------------------------------------------------------|
 | Descripción    | Dirección de correo electrónico en la que se expone esta aplicación a través del protocolo SOAP. |
 | Acceso         | ReadWrite                                                                     |
@@ -936,14 +936,14 @@ La contraseña debe establecerse al mismo tiempo que Identity, antes de usar [**
 | Descripción    | Indica el nivel de confianza de la directiva de restricción de software (SRP) de la aplicación. Esta propiedad solo se usa si la propiedad SRPEnabled está establecida en True. El nivel de confianza de SRP hace referencia al nivel de confianza que está dispuesto a dar a una aplicación. Un nivel de confianza de SRP sin restricciones corresponde al valor de enumeración SAFER LEVELID FULLYTRUSTED, mientras que un nivel de confianza de SRP no permitido corresponde al valor de enumeración \_ \_ SAFER \_ LEVELID \_ DISALLOWED. La enumeración de los niveles de confianza se define en Winsafer.h. |
 | Acceso         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Tipo           | Long Possible values:SAFER \_ LEVELID \_ DISALLOWED (0x0)SAFER \_ LEVELID \_ FULLYTRUSTED (0x40000)                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Valor predeterminado        | LEVELID \_ MÁS SEGURO TOTALMENTE DE CONFIANZA \_ (0x40000)                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Valor predeterminado        | \_LEVELID \_ FULLYTRUSTED MÁS SEGURO (0x40000)                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
 
 
  
 
-Una aplicación en la que esté dispuesto a confiar con acceso sin restricciones debe tener asociada la seguridad más estricta. Las aplicaciones que no están restringidas solo pueden cargar componentes sin restricciones, mientras que las aplicaciones no permitidas no podrán ejecutarse y, por tanto, no podrán cargar ningún componente.
+Una aplicación en la que esté dispuesto a confiar con acceso sin restricciones debe tener asociada la seguridad más estricta. Las aplicaciones sin restricciones solo pueden cargar componentes sin restricciones, mientras que las aplicaciones no permitidas no podrán ejecutarse y, por tanto, no podrán cargar ningún componente.
 
 ## <a name="see-also"></a>Vea también
 

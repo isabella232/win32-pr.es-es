@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3b5eca7ddcc506d158175782e3e13796e56de267
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6f489f2c9dbc5685561b3105001de5ae5dca5fef4d68f80b5d2b0d41d479cd8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118147170"
 ---
 # <a name="setkeyprotector-method-of-the-msvm_securityservice-class"></a>Método SetKeyProtector de la clase SecurityService de Msvm \_
 
@@ -44,7 +44,7 @@ uint32 SetKeyProtector(
 *SecuritySettingData* \[ En\]
 </dt> <dd>
 
-String contiene una instancia incrustada de la clase [**\_ SecuritySettingData de Msvm**](msvm-securitysettingdata.md) que representa la configuración de seguridad de un sistema virtual.
+String contiene una instancia incrustada de la [**clase \_ SecuritySettingData de Msvm**](msvm-securitysettingdata.md) que representa la configuración de seguridad de un sistema virtual.
 
 </dd> <dt>
 
@@ -101,7 +101,7 @@ Si se ejecuta correctamente, devuelve 0 o 4096; de lo contrario, devuelve un err
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-**El sistema no está** disponible (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
 **Memoria sin memoria** (32778)
@@ -111,9 +111,9 @@ Si se ejecuta correctamente, devuelve 0 o 4096; de lo contrario, devuelve un err
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1703 \[ solo para aplicaciones de escritorio\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
 | Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
@@ -121,11 +121,11 @@ Si se ejecuta correctamente, devuelve 0 o 4096; de lo contrario, devuelve un err
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**SecurityService de Msvm \_**](msvm-securityservice.md)
+[**Msvm \_ SecurityService**](msvm-securityservice.md)
 </dt> </dl>
 
  
