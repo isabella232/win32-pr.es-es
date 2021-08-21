@@ -4,7 +4,7 @@ description: Una interfaz ID3DX11EffectTechnique es una colección de pases. La 
 ms.assetid: 63d52cac-287d-4432-bf2b-7b4e67e525e6
 keywords:
 - Interfaz ID3DX11EffectTechnique Direct3D 11
-- Interfaz ID3DX11EffectTechnique Direct3D 11, descrita
+- Interfaz ID3DX11EffectTechnique Direct3D 11 , descrita
 topic_type:
 - apiref
 api_name:
@@ -40,8 +40,8 @@ La **interfaz ID3DX11EffectTechnique** tiene estos métodos.
 | Método                                                                        | Descripción                                                           |
 |:------------------------------------------------------------------------------|:----------------------------------------------------------------------|
 | [**ComputeStateBlockMask**](id3dx11effecttechnique-computestateblockmask.md) | Calcule una máscara de bloque de estado para permitir o evitar cambios de estado.<br/> |
-| [**GetAnnotationByIndex**](id3dx11effecttechnique-getannotationbyindex.md)   | Obtener una anotación por índice.<br/>                                |
-| [**GetAnnotationByName**](id3dx11effecttechnique-getannotationbyname.md)     | Obtiene una anotación por nombre.<br/>                                 |
+| [**GetAnnotationByIndex**](id3dx11effecttechnique-getannotationbyindex.md)   | Obtiene una anotación por índice.<br/>                                |
+| [**GetAnnotationByName**](id3dx11effecttechnique-getannotationbyname.md)     | Obtenga una anotación por nombre.<br/>                                 |
 | [**GetDesc**](id3dx11effecttechnique-getdesc.md)                             | Obtenga una descripción de la técnica.<br/>                               |
 | [**GetPassByIndex**](id3dx11effecttechnique-getpassbyindex.md)               | Obtener un paso por índice.<br/>                                       |
 | [**GetPassByName**](id3dx11effecttechnique-getpassbyname.md)                 | Obtenga un pase por nombre.<br/>                                        |
@@ -58,7 +58,7 @@ Un efecto contiene una o varias técnicas; cada técnica contiene uno o varios p
 Para obtener una interfaz de técnica de efecto, llame a un método como [**ID3DX11Effect::GetTechniqueByName**](id3dx11effect-gettechniquebyname.md).
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -69,15 +69,15 @@ Para obtener una interfaz de técnica de efecto, llame a un método como [**ID3D
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Efectos 11 Interfaces](d3d11-graphics-reference-effects11-interfaces.md)
+[Interfaces de Efectos 11](d3d11-graphics-reference-effects11-interfaces.md)
 </dt> <dt>
 
 [D3DX Interfaces](d3d11-graphics-reference-d3dx11-interfaces.md)

@@ -52,7 +52,7 @@ Número de versión para indicar que AzApplication está actualizado.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
@@ -73,7 +73,7 @@ Número de versión para indicar que AzApplication está actualizado.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
@@ -94,7 +94,7 @@ Número de versión para indicar que AzApplication está actualizado.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
@@ -136,7 +136,7 @@ Número de versión para indicar que AzApplication está actualizado.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |

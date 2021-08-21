@@ -5,7 +5,7 @@ ms.assetid: F0817184-70F2-43AC-A2BE-A15F4B195085
 keywords:
 - Media Streaming API del método IsSeekAvailable
 - Método IsSeekAvailable de Media Streaming API, interfaz IMediaRendererActionInformation
-- IMediaRendererActionInformation interface Media Streaming API , método IsSeekAvailable
+- IMediaRendererActionInformation interface Media Streaming API , Método IsSeekAvailable
 topic_type:
 - apiref
 api_name:
@@ -44,7 +44,7 @@ HRESULT IsSeekAvailable(
 *value* \[ out\]
 </dt> <dd>
 
-Valor booleano que es **True si** la DMR está aceptando actualmente el [**método SeekAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-seekasync) y **False** si no lo está.
+Valor booleano que es **True si** la DMR acepta actualmente el método [**SeekAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-seekasync) y **False** si no lo está.
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

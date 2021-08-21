@@ -4,7 +4,7 @@ description: Obtiene una variable unordered-access-view.
 ms.assetid: e8b7c104-09f7-4bfb-9980-a5603550b723
 keywords:
 - Método AsUnorderedAccessView Direct3D 11
-- Método AsUnorderedAccessView Direct3D 11, interfaz ID3DX11EffectVariable
+- Método AsUnorderedAccessView Direct3D 11 , interfaz ID3DX11EffectVariable
 - Interfaz ID3DX11EffectVariable Direct3D 11 , método AsUnorderedAccessView
 topic_type:
 - apiref
@@ -45,12 +45,12 @@ Este método no tiene parámetros.
 
 Tipo: **[ **ID3DX11EffectUnorderedAccessViewVariable**](id3dx11effectunorderedaccessviewvariable.md)\***
 
-Puntero a una variable unordered-access-view. Vea [**ID3DX11EffectUnorderedAccessViewVariable.**](id3dx11effectunorderedaccessviewvariable.md)
+Puntero a una variable unordered-access-view. Vea [**ID3DX11EffectUnorderedAccessViewVariable**](id3dx11effectunorderedaccessviewvariable.md).
 
 ## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -61,11 +61,11 @@ Puntero a una variable unordered-access-view. Vea [**ID3DX11EffectUnorderedAcces
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

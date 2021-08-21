@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_XBUTTONUP (Winuser. h)
-description: Se envía cuando el usuario suelta el primer o el segundo botón X mientras el cursor está en el área de cliente de una ventana.
+title: WM_XBUTTONUP mensaje (Winuser.h)
+description: Se publica cuando el usuario suelta el primer o segundo botón X mientras el cursor está en el área cliente de una ventana.
 ms.assetid: ad726859-368a-4603-bffa-4e639bc69a6a
 keywords:
-- Entrada de mouse y teclado de mensaje de WM_XBUTTONUP
+- WM_XBUTTONUP entrada de teclado y mouse
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 08/23/2019
-ms.openlocfilehash: 521faefb2e2a76e94a0517c28a5fa812ef34ef5c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 55b26ae92889261e7a5fea3e57281d6407fc39fb03aad0124d00aa135f9ed438
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118757116"
 ---
-# <a name="wm_xbuttonup-message"></a>Mensaje de XBUTTONUP de WM \_
+# <a name="wm_xbuttonup-message"></a>Mensaje \_ XBUTTONUP de WM
 
-Se envía cuando el usuario suelta el primer o el segundo botón X mientras el cursor está en el área de cliente de una ventana. Si no se captura el mouse, el mensaje se envía a la ventana debajo del cursor. De lo contrario, el mensaje se envía a la ventana que ha capturado el mouse.
+Se publica cuando el usuario suelta el primer o segundo botón X mientras el cursor está en el área cliente de una ventana. Si no se captura el mouse, el mensaje se publica en la ventana debajo del cursor. De lo contrario, el mensaje se publica en la ventana que ha capturado el mouse.
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -41,32 +41,32 @@ Una ventana recibe este mensaje a través de su función [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-La palabra de orden inferior indica si varias claves virtuales están inactivas. Puede ser uno o varios de los valores siguientes.
+La palabra de orden bajo indica si varias claves virtuales están abajo. Puede ser uno o varios de los valores siguientes.
 
 
 
-| Value                                                                                                                                                                                                               | Significado                                     |
+| Valor                                                                                                                                                                                                               | Significado                                     |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| <span id="MK_CONTROL"></span><span id="mk_control"></span><dl> <dt>**MK \_**</dt> <dt>0X0008</dt> de control </dl>    | La tecla CTRL está presionada.<br/>            |
-| <span id="MK_LBUTTON"></span><span id="mk_lbutton"></span><dl> <dt>**MK \_ LBUTTON**</dt> <dt>0x0001</dt> </dl>    | El botón primario del mouse está inactivo.<br/>   |
-| <span id="MK_MBUTTON"></span><span id="mk_mbutton"></span><dl> <dt>**MK \_ MBUTTON**</dt> <dt>0x0010</dt> </dl>    | El botón central del mouse está presionado.<br/> |
-| <span id="MK_RBUTTON"></span><span id="mk_rbutton"></span><dl> <dt>**MK \_ RBUTTON**</dt> <dt>0x0002</dt> </dl>    | El botón secundario del mouse está inactivo.<br/>  |
-| <span id="MK_SHIFT"></span><span id="mk_shift"></span><dl> <dt>**MK \_ SHIFT**</dt> <dt>0x0004</dt> </dl>          | La tecla Mayús está presionada.<br/>           |
-| <span id="MK_XBUTTON1"></span><span id="mk_xbutton1"></span><dl> <dt>**MK \_ XBUTTON1**</dt> <dt>0x0020</dt> </dl> | El primer botón X está inactivo.<br/>      |
-| <span id="MK_XBUTTON2"></span><span id="mk_xbutton2"></span><dl> <dt>**MK \_ XBUTTON2**</dt> <dt>0x0040</dt> </dl> | El segundo botón X está inactivo.<br/>     |
+| <span id="MK_CONTROL"></span><span id="mk_control"></span><dl> <dt>**MK \_ Control**</dt> <dt>0x0008</dt> </dl>    | La tecla CTRL está presionada.<br/>            |
+| <span id="MK_LBUTTON"></span><span id="mk_lbutton"></span><dl> <dt>**MK \_ LBUTTON**</dt> <dt>0x0001</dt> </dl>    | El botón izquierdo del mouse está apagado.<br/>   |
+| <span id="MK_MBUTTON"></span><span id="mk_mbutton"></span><dl> <dt>**MK \_ MBUTTON**</dt> <dt>0x0010</dt> </dl>    | El botón central del mouse está apagado.<br/> |
+| <span id="MK_RBUTTON"></span><span id="mk_rbutton"></span><dl> <dt>**MK \_ RBUTTON**</dt> <dt>0x0002</dt> </dl>    | El botón derecho del mouse está apagado.<br/>  |
+| <span id="MK_SHIFT"></span><span id="mk_shift"></span><dl> <dt>**MK \_ Mayús**</dt> <dt>0x0004</dt> </dl>          | La tecla MAYÚS está abajo.<br/>           |
+| <span id="MK_XBUTTON1"></span><span id="mk_xbutton1"></span><dl> <dt>**MK \_ XBUTTON1**</dt> <dt>0x0020</dt> </dl> | El primer botón X está apagado.<br/>      |
+| <span id="MK_XBUTTON2"></span><span id="mk_xbutton2"></span><dl> <dt>**MK \_ XBUTTON2**</dt> <dt>0x0040</dt> </dl> | El segundo botón X está apagado.<br/>     |
 
 
 
  
 
-La palabra de orden superior indica qué botón se liberó. Puede ser uno de los siguientes valores:
+La palabra de orden superior indica qué botón se ha liberado. Puede ser uno de los siguientes valores:
 
 
 
-| Value                                                                                                                                                                                                     | Significado                                            |
+| Valor                                                                                                                                                                                                     | Significado                                            |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| <span id="XBUTTON1"></span><span id="xbutton1"></span><dl> <dt>**XBUTTON1**</dt> <dt>0x0001</dt> </dl> | Se liberó el primer botón X.<br/>  |
-| <span id="XBUTTON2"></span><span id="xbutton2"></span><dl> <dt>**XBUTTON2**</dt> <dt>0x0002</dt> </dl> | Se liberó el segundo botón X.<br/> |
+| <span id="XBUTTON1"></span><span id="xbutton1"></span><dl> <dt>**XBUTTON1**</dt> <dt>0x0001</dt> </dl> | Se ha liberado el primer botón X.<br/>  |
+| <span id="XBUTTON2"></span><span id="xbutton2"></span><dl> <dt>**XBUTTON2**</dt> <dt>0x0002</dt> </dl> | Se ha liberado el segundo botón X.<br/> |
 
 
 
@@ -77,19 +77,19 @@ La palabra de orden superior indica qué botón se liberó. Puede ser uno de los
 *lParam* 
 </dt> <dd>
 
-La palabra de orden inferior especifica la coordenada x del cursor. La coordenada es relativa a la esquina superior izquierda del área cliente.
+La palabra de orden bajo especifica la coordenada x del cursor. La coordenada es relativa a la esquina superior izquierda del área de cliente.
 
-La palabra de orden superior especifica la coordenada y del cursor. La coordenada es relativa a la esquina superior izquierda del área cliente.
+La palabra de orden superior especifica la coordenada y del cursor. La coordenada es relativa a la esquina superior izquierda del área de cliente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si una aplicación procesa este mensaje, debe devolver **true**. Para obtener más información sobre cómo procesar el valor devuelto, vea la sección Comentarios.
+Si una aplicación procesa este mensaje, debe devolver **TRUE**. Para obtener más información sobre cómo procesar el valor devuelto, vea la sección Comentarios.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use el código siguiente para obtener la información del parámetro *wParam* :
+Use el código siguiente para obtener la información en el *parámetro wParam:*
 
 
 ```
@@ -109,44 +109,44 @@ yPos = GET_Y_LPARAM(lParam);
 
 
 
-Como se indicó anteriormente, la coordenada x está en el **corto** orden inferior del valor devuelto. la coordenada y está en el valor **Short** de orden superior (ambos representan valores *firmados* porque pueden tomar valores negativos en sistemas con varios monitores). Si el valor devuelto se asigna a una variable, puede usar la macro [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints) para obtener una estructura [**Points**](/previous-versions//dd162808(v=vs.85)) del valor devuelto. También puede usar la macro [**Get \_ x \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) u [**Get \_ Y \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para extraer la coordenada x o y.
+Como se indicó anteriormente, la coordenada x está en el orden bajo **corto** del valor devuelto; la coordenada y está en el  orden corto de orden superior **(ambos** representan valores con signo porque pueden tomar valores negativos en sistemas con varios monitores). Si el valor devuelto se asigna a una variable, puede usar la macro [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints) para obtener una estructura [**POINTS**](/previous-versions//dd162808(v=vs.85)) del valor devuelto. También puede usar la macro [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) o [**GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para extraer la coordenada x o y.
 
 > [!IMPORTANT]
-> No use las macros [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) para extraer las coordenadas x e y de la posición del cursor porque estas macros devuelven resultados incorrectos en sistemas con varios monitores. Los sistemas con varios monitores pueden tener coordenadas x e y negativas, y **LOWORD** y **HIWORD** tratan las coordenadas como cantidades sin signo.
+> No use las macros [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) para extraer las coordenadas x e y- de la posición del cursor porque estas macros devuelven resultados incorrectos en sistemas con varios monitores. Los sistemas con varios monitores pueden tener coordenadas x e y negativas, y **LOWORD** y **HIWORD** tratan las coordenadas como cantidades sin signo.
 
  
 
-A diferencia de los mensajes [**WM \_ LBUTTONUP**](wm-lbuttonup.md), [**WM \_ MBUTTONUP**](wm-mbuttonup.md)y [**WM \_ RBUTTONUP**](wm-rbuttonup.md) , una aplicación debe devolver **true** desde este mensaje si lo procesa. Esto permitirá que el software que simula este mensaje en sistemas Windows anteriores a Windows 2000 determine si el procedimiento de ventana procesó el mensaje o llamó a [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para procesarlo.
+A diferencia de los mensajes [**\_ WM LBUTTONUP,**](wm-lbuttonup.md) [**WM \_ MBUTTONUP**](wm-mbuttonup.md)y [**WM \_ RBUTTONUP,**](wm-rbuttonup.md) una aplicación debe devolver **TRUE** desde este mensaje si lo procesa. Esto permitirá que el software que simula este mensaje en sistemas de Windows anteriores a Windows 2000 determine si el procedimiento de ventana procesó el mensaje o llamó a [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para procesarlo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir windowsx. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windowsx.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Referencia**
 </dt> <dt>
 
-[**OBTENER \_ KEYSTATE \_ wParam**](/windows/win32/api/winuser/nf-winuser-get_keystate_wparam)
+[**GET \_ KEYSTATE \_ WPARAM**](/windows/win32/api/winuser/nf-winuser-get_keystate_wparam)
 </dt> <dt>
 
-[**OBTENER \_ X \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam)
+[**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam)
 </dt> <dt>
 
-[**OBTENER \_ botón xbutton \_ wParam**](/windows/win32/api/winuser/nf-winuser-get_xbutton_wparam)
+[**GET \_ XBUTTON \_ WPARAM**](/windows/win32/api/winuser/nf-winuser-get_xbutton_wparam)
 </dt> <dt>
 
-[**OBTENER \_ \_ lParam**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam)
+[**GET \_ Y \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam)
 </dt> <dt>
 
 [**GetCapture**](/windows/win32/api/winuser/nf-winuser-getcapture)
@@ -155,13 +155,13 @@ A diferencia de los mensajes [**WM \_ LBUTTONUP**](wm-lbuttonup.md), [**WM \_ MB
 [**SetCapture**](/windows/win32/api/winuser/nf-winuser-setcapture)
 </dt> <dt>
 
-[**XBUTTONDBLCLK de WM \_**](wm-xbuttondblclk.md)
+[**WM \_ XBUTTONDBLCLK**](wm-xbuttondblclk.md)
 </dt> <dt>
 
-[**XBUTTONDOWN de WM \_**](wm-xbuttondown.md)
+[**WM \_ XBUTTONDOWN**](wm-xbuttondown.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Entrada del mouse](mouse-input.md)
@@ -173,7 +173,7 @@ A diferencia de los mensajes [**WM \_ LBUTTONUP**](wm-lbuttonup.md), [**WM \_ MB
 [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
-[**CIMA**](/previous-versions//dd162808(v=vs.85))
+[**Puntos**](/previous-versions//dd162808(v=vs.85))
 </dt> </dl>
 
  

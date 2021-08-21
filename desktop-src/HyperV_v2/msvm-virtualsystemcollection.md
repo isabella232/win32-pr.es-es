@@ -28,7 +28,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118644822"
 ---
-# <a name="msvm_virtualsystemcollection-class"></a>Clase Msvm \_ VirtualSystemCollection
+# <a name="msvm_virtualsystemcollection-class"></a>Clase VirtualSystemCollection de Msvm \_
 
 Representa una colección de sistemas virtuales.
 
@@ -168,7 +168,7 @@ Nivel de coherencia de la última diferencia aplicada.
 
 </dt> <dd>
 
-La última diferencia aplicada indica un momento dado en el tiempo en el que el sistema virtual estaba en estado coherente con la aplicación.
+La última diferencia aplicada indica un momento dado en el que el sistema virtual estaba en estado coherente con la aplicación.
 
 </dd> <dt>
 
@@ -179,7 +179,7 @@ La última diferencia aplicada indica un momento dado en el tiempo en el que el 
 
 </dt> <dd>
 
-La última diferencia aplicada indica un momento dado en el tiempo en el que el sistema virtual estaba en estado coherente frente a bloqueos.
+La última diferencia aplicada indica un momento dado en el tiempo en el que el sistema virtual estaba en estado coherente con los bloqueos.
 
 </dd> <dt>
 
@@ -307,7 +307,7 @@ Estado de replicación de la colección del sistema virtual.
 
 <span id="Ready_for_replication"></span><span id="ready_for_replication"></span><span id="READY_FOR_REPLICATION"></span>
 
-**Listo para la replicación** (1)
+**Listo para replicación** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -384,14 +384,14 @@ Estado de replicación de la colección del sistema virtual.
 
 <span id="Partially_disabled"></span><span id="partially_disabled"></span><span id="PARTIALLY_DISABLED"></span>
 
-**Deshabilitado parcialmente** (12)
+**Parcialmente deshabilitado** (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Partially_recovered"></span><span id="partially_recovered"></span><span id="PARTIALLY_RECOVERED"></span>
 
-**Recuperada parcialmente** (13)
+**Parcialmente recuperado** (13)
 
 
 </dt> <dd></dd> <dt>

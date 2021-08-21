@@ -3,8 +3,8 @@ title: Elemento Actions (taskType)
 description: Contiene las acciones realizadas por la tarea.
 ms.assetid: 0a48fbd6-8a6f-4bad-9b28-0631dce15748
 keywords:
-- Programador de tareas del elemento Actions (taskType)
-- acciones Programador de tareas, XML
+- Elemento Actions (taskType) Programador de tareas
+- actions Programador de tareas , XML
 - Elemento Actions Programador de tareas
 topic_type:
 - apiref
@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 21af0f8a06faa9cdc61917dcb3b3b0672c47e0e7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 79fb5fe36b6fcff3622e0d12f0571e7f06c5f00d1ae930abc2bca805315f7dd4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422096"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118357111"
 ---
 # <a name="actions-tasktype-element"></a>Elemento Actions (taskType)
 
@@ -32,7 +32,7 @@ Contiene las acciones realizadas por la tarea.
  />
 ```
 
-El elemento **Actions** se define mediante el tipo complejo [**taskType**](taskschedulerschema-tasktype-complextype.md) .
+El **elemento Actions** se define mediante el tipo complejo [**taskType.**](taskschedulerschema-tasktype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -40,7 +40,7 @@ El elemento **Actions** se define mediante el tipo complejo [**taskType**](tasks
 
 | Elemento                                          | Derivado de                                                 | Descripción                                                                    |
 |--------------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [**Task**](taskschedulerschema-task-element.md) | [**taskType**](taskschedulerschema-tasktype-complextype.md) | Describe la tarea que realiza el servicio Programador de tareas.<br/> |
+| [**Task**](taskschedulerschema-task-element.md) | [**taskType**](taskschedulerschema-tasktype-complextype.md) | Describe la tarea que realiza el servicio Programador de tareas trabajo.<br/> |
 
 
 
@@ -50,10 +50,10 @@ El elemento **Actions** se define mediante el tipo complejo [**taskType**](tasks
 
 | Elemento                                                                    | Tipo                                                                       | Descripción                                                            |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [**Controlador**](taskschedulerschema-comhandler-actiongroup-element.md)   | [**comHandlerType**](taskschedulerschema-comhandlertype-complextype.md)   | Especifica una acción que activa un controlador.<br/>                   |
-| [**Ejec**](taskschedulerschema-exec-actiongroup-element.md)               | [**execType**](taskschedulerschema-exectype-complextype.md)               | Especifica una acción que ejecuta una operación de línea de comandos.<br/> |
+| [**ComHandler**](taskschedulerschema-comhandler-actiongroup-element.md)   | [**comHandlerType**](taskschedulerschema-comhandlertype-complextype.md)   | Especifica una acción que llama a un controlador.<br/>                   |
+| [**Exec**](taskschedulerschema-exec-actiongroup-element.md)               | [**execType**](taskschedulerschema-exectype-complextype.md)               | Especifica una acción que ejecuta una operación de línea de comandos.<br/> |
 | [**SendEmail**](taskschedulerschema-sendemail-actiongroup-element.md)     | [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md)     | Especifica una acción que envía un mensaje de correo electrónico.<br/>            |
-| [**ShowMessage**](taskschedulerschema-showmessage-actiongroup-element.md) | [**showMessageType**](taskschedulerschema-showmessagetype-complextype.md) | Especifica una acción que muestra un cuadro de mensaje.<br/>               |
+| [**Showmessage**](taskschedulerschema-showmessage-actiongroup-element.md) | [**showMessageType**](taskschedulerschema-showmessagetype-complextype.md) | Especifica una acción que muestra un cuadro de mensaje.<br/>               |
 
 
 
@@ -67,17 +67,17 @@ El elemento **Actions** se define mediante el tipo complejo [**taskType**](tasks
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los elementos secundarios enumerados anteriormente (el máximo 32) se definen mediante el grupo [**actionGroup**](taskschedulerschema-actiongroup-group.md) . Estos elementos se pueden agregar en cualquier orden.
+El grupo [**actionGroup**](taskschedulerschema-actiongroup-group.md) define los elementos secundarios enumerados anteriormente (máximo 32). Estos elementos se pueden agregar en cualquier orden.
 
-En el desarrollo de C++, las acciones de una tarea se definen en la interfaz [**IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) .
+Para el desarrollo de C++, las acciones de una tarea se definen en la [**interfaz IActionCollection.**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection)
 
-Para el desarrollo de scripts, las acciones de una tarea se definen en el objeto [**ActionCollection**](actioncollection.md) .
+Para el desarrollo de scripts, las acciones de una tarea se definen en el [**objeto ActionCollection.**](actioncollection.md)
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener más información y un ejemplo completo del XML para una tarea que contiene una única acción de ejecución, vea [ejemplo de desencadenador de tiempo (XML)](time-trigger-example--xml-.md).
+Para obtener más información y un ejemplo completo del XML para una tarea que contiene una sola acción de ejecución, vea Ejemplo de desencadenador de tiempo [(XML).](time-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ Para obtener más información y un ejemplo completo del XML para una tarea que 
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -100,7 +100,7 @@ Para obtener más información y un ejemplo completo del XML para una tarea que 
 [**actionGroup**](taskschedulerschema-actiongroup-group.md)
 </dt> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

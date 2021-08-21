@@ -1,28 +1,28 @@
 ---
-title: Ejemplos (automatización de la interfaz de usuario)
-description: Las aplicaciones de ejemplo siguientes muestran cómo usar el proveedor de automatización de la interfaz de usuario y las API de cliente no administrados de Microsoft.
+title: Ejemplos (Automatización de la interfaz de usuario)
+description: En las siguientes aplicaciones de ejemplo se muestra cómo usar las API de cliente Automatización de la interfaz de usuario de Microsoft no administradas.
 ms.assetid: 53ba32de-85d2-477a-944a-963e1d5e1e95
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f961c4cb02bd69a95ee7b409fd464ae0b7bb0f6
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: cd6c8ce86c6a59dd0c4ec0af90534262c1e07acce167bed0f9f2f144144215e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105705097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118828166"
 ---
-# <a name="samples-ui-automation"></a>Ejemplos (automatización de la interfaz de usuario)
+# <a name="samples-ui-automation"></a>Ejemplos (Automatización de la interfaz de usuario)
 
-Las aplicaciones de ejemplo siguientes muestran cómo usar el proveedor de automatización de la interfaz de usuario y las API de cliente no administrados de Microsoft. 
+En las siguientes aplicaciones de ejemplo se muestra cómo usar las API de cliente Automatización de la interfaz de usuario de Microsoft no administradas. 
 
 | Tema                                                                                                        | Descripción                                                                                                                                                                       |
 |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Ejemplo de proveedor simple de UI Automation](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/UI%20Automation%20simple%20provider%20sample)<br/>           | Crea un control personalizado simple que implementa las interfaces del proveedor de automatización de la interfaz de usuario<br/>                                                                                      |
-| [Ejemplo de cierre limpio de UI Automation](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/UI%20Automation%20clean%20shutdown%20sample)<br/>            | Muestra la manera correcta de limpiar y cerrar un control de automatización de la interfaz de usuario que se hospeda en un archivo DLL.<br/>                                                                       |
-| [Ejemplo de proveedor de fragmentos de UI Automation](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/UI%20Automation%20fragment%20provider%20sample)<br/>         | Muestra cómo implementar un proveedor de automatización de la interfaz de usuario para los elementos de un fragmento que se hospeda en un objeto de ventana (HWND).<br/>                                               |
-| [Ejemplo de cliente de contenido de documento de UI Automation](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/UI%20Automation%20document%20content%20client%20sample)<br/>   | Muestra cómo una aplicación puede usar los patrones de control de automatización de la interfaz de usuario para tener acceso al contenido del documento que se muestra en la ventana de otra aplicación.<br/>             |
-| [Ejemplo de proveedor de contenido de documento de UI Automation](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/UI%20Automation%20document%20content%20provider%20sample)<br/> | Muestra cómo usar la automatización de la interfaz de usuario para exponer el contenido textual de una aplicación para que sea accesible a las aplicaciones de tecnología de asistencia, como los lectores de pantalla.<br/> |
-| [Ejemplo de proveedor de ventana principal de UI Automation](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/UI%20Automation%20core%20window%20provider%20sample)<br/>      | Muestra cómo usar la automatización de la interfaz de usuario para hacer que una aplicación de Direct2D sea accesible.<br/>                                                                                       |
+| [Automatización de la interfaz de usuario ejemplo de proveedor simple](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/UI%20Automation%20simple%20provider%20sample)<br/>           | Crea un control personalizado simple que implementa interfaces Automatización de la interfaz de usuario proveedor de servicios<br/>                                                                                      |
+| [Automatización de la interfaz de usuario ejemplo de apagado limpio](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/UI%20Automation%20clean%20shutdown%20sample)<br/>            | Muestra la manera correcta de limpiar y apagar un control Automatización de la interfaz de usuario que se hospeda en un archivo DLL.<br/>                                                                       |
+| [Automatización de la interfaz de usuario de proveedor de fragmentos](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/UI%20Automation%20fragment%20provider%20sample)<br/>         | Muestra cómo implementar un proveedor Automatización de la interfaz de usuario para los elementos de un fragmento hospedado en un objeto de ventana (HWND).<br/>                                               |
+| [Automatización de la interfaz de usuario ejemplo de cliente de contenido de documento](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/UI%20Automation%20document%20content%20client%20sample)<br/>   | Muestra cómo una aplicación puede usar Automatización de la interfaz de usuario de control para acceder al contenido del documento que se muestra en la ventana de otra aplicación.<br/>             |
+| [Automatización de la interfaz de usuario de proveedor de contenido de documento](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/UI%20Automation%20document%20content%20provider%20sample)<br/> | Muestra cómo usar Automatización de la interfaz de usuario para exponer el contenido textual de una aplicación para que sea accesible para las aplicaciones de tecnología de asistencia, como los lectores de pantalla.<br/> |
+| [Automatización de la interfaz de usuario de proveedor de ventana principal](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/UI%20Automation%20core%20window%20provider%20sample)<br/>      | Muestra cómo usar Automatización de la interfaz de usuario para que una aplicación de Direct2D sea accesible.<br/>                                                                                       |
 
 
 

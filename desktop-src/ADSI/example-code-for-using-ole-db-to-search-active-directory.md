@@ -5,31 +5,31 @@ ms.assetid: 71812a4b-5e27-4389-b949-3d96c87b222d
 ms.tgt_platform: multiple
 keywords:
 - Código de ejemplo para usar OLE DB para buscar Active Directory ADSI
-- ADSI ADSI, código de ejemplo C/C++, uso de OLE DB para tener acceso a Active Directory
-- consulta ADSI, búsqueda con OLE DB, código de ejemplo para usar OLE DB para tener acceso a Active Directory
+- ADSI ADSI, código de ejemplo C/C++, con OLE DB para acceder a Active Directory
+- consulta ADSI, buscando con OLE DB, código de ejemplo para usar OLE DB para acceder a Active Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb98e84035cdfef3c95d47919354622df3808b86
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 5d55e115978025a95cc4c48f99f9ab05061c3cf384860eeb25b96f793d664605
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "105656439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118428448"
 ---
 # <a name="example-code-for-using-ole-db-to-search-active-directory"></a>Código de ejemplo para usar OLE DB para buscar Active Directory
 
-En el ejemplo de código siguiente se muestra cómo buscar Active Directory mediante C++, COM y OLE DB. Este es un ejemplo de una función que toma el nombre distintivo del contenedor en el que se va a buscar y las credenciales que se van a usar para la búsqueda. En el ejemplo se realizará una búsqueda de subárbol en el contenedor especificado para todos los objetos que tengan un **objectClass** de "User". En el ejemplo se imprimirán los atributos **Name** y **ADsPath** de cada usuario en la ventana de la consola.
+En el ejemplo de código siguiente se muestra cómo buscar Active Directory mediante C++, COM y OLE DB. Este es un ejemplo de una función que toma el nombre distintivo del contenedor en el que se va a buscar y las credenciales que se usarán para la búsqueda. En el ejemplo se realizará una búsqueda de subárbol en el contenedor especificado para todos los objetos que tienen una **clase objectClass** de "user". En el ejemplo se imprimirán **los atributos name** y **ADsPath** de cada usuario en la ventana de consola.
 
-Hay dos dialectos de consulta que se pueden usar con el proveedor de OLE DB ADSI, LDAP y SQL. El dialecto se especifica en el método [ICommandText:: SetCommandText](/previous-versions/windows/desktop/ms709757(v=vs.85)) con uno de los siguientes GUID:
+Hay dos dialectos de consulta que se pueden usar con el proveedor de OLE DB ADSI, LDAP y SQL. El dialecto se especifica en el [método ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757(v=vs.85)) con uno de los siguientes GUID:
 
--   **DBGUID \_ SQL** para el dialecto SQL.
--   **DBGUID \_ LDAPDialect** para el dialecto LDAP.
+-   **DBGUID \_ SQL** para el SQL dialecto.
+-   **DBGUID \_ LDAPDialect para** el dialecto LDAP.
 
 En este ejemplo se usa el dialecto LDAP.
 
-El método [ICommandText:: SetCommandText](/previous-versions/windows/desktop/ms709757(v=vs.85)) también puede aceptar el **GUID \_ predeterminado DBGUID** para el dialecto. En este caso, ADSI intentará usar primero el dialecto SQL; Si se produce un error, ADSI intentará usar el dialecto LDAP. Para obtener más información, consulte [lenguaje LDAP](ldap-dialect.md) y [dialecto SQL](sql-dialect.md).
+El [método ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757(v=vs.85)) también puede aceptar el GUID DEFAULT de **DBGUID \_** para el dialecto. En este caso, ADSI intentará usar primero el SQL dialecto; Si se produce un error, ADSI intentará usar el dialecto LDAP. Para obtener más información, vea [Dialecto LDAP](ldap-dialect.md) [y SQL dialecto .](sql-dialect.md)
 
-Para obtener más información acerca de OLE DB, vea la guía del programador de OLE DB.
+Para obtener más información OLE DB, consulte la guía OLE DB del programador.
 
 
 

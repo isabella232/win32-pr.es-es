@@ -1,26 +1,26 @@
 ---
-title: Propiedad BitmapVirtualCache24BppSize de IMsRdpClientAdvancedSettings
-description: Especifica el tamaño, en megabytes, del archivo de caché de mapa de bits persistente que se va a usar para la configuración de alto color de 24 bits por píxel.
+title: Propiedad IMsRdpClientAdvancedSettings BitmapVirtualCache24BppSize
+description: Especifica el tamaño, en megabytes, del archivo de caché de mapa de bits persistente que se usará para la configuración de alto color de 24 bits por píxel.
 ms.assetid: 5891c90d-f463-4f27-b212-351ebf21ae00
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad BitmapVirtualCache24BppSize
-- Propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad BitmapVirtualCache24BppSize
-- Propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad BitmapVirtualCache24BppSize
-- Propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad BitmapVirtualCache24BppSize
-- Propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad BitmapVirtualCache24BppSize
-- Propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad BitmapVirtualCache24BppSize
-- Propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad BitmapVirtualCache24BppSize
-- Propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad BitmapVirtualCache24BppSize
-- Propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad BitmapVirtualCache24BppSize
+- Propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto
+- Propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad BitmapVirtualCache24BppSize
+- La propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad BitmapVirtualCache24BppSize
+- La propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad BitmapVirtualCache24BppSize
+- La propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad BitmapVirtualCache24BppSize
+- La propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad BitmapVirtualCache24BppSize
+- La propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad BitmapVirtualCache24BppSize
+- La propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad BitmapVirtualCache24BppSize
+- La propiedad BitmapVirtualCache24BppSize Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad BitmapVirtualCache24BppSize
 topic_type:
 - apiref
 api_name:
@@ -54,20 +54,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0fc31954ff191f795146e3894b0394b29484fb1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e984eef21fa74aa3f3134f19c1d6e7503a24ec9fb67e0ef3bfb0daa6330cfcd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118353276"
 ---
-# <a name="imsrdpclientadvancedsettingsbitmapvirtualcache24bppsize-property"></a>IMsRdpClientAdvancedSettings:: BitmapVirtualCache24BppSize (propiedad)
+# <a name="imsrdpclientadvancedsettingsbitmapvirtualcache24bppsize-property"></a>Propiedad IMsRdpClientAdvancedSettings::BitmapVirtualCache24BppSize
 
-Especifica el tamaño, en megabytes, del archivo de caché de mapa de bits persistente que se va a usar para la configuración de alto color de 24 bits por píxel.
+Especifica el tamaño, en megabytes, del archivo de caché de mapa de bits persistente que se usará para la configuración de alto color de 24 bits por píxel.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -84,23 +84,23 @@ HRESULT get_BitmapVirtualCache24BppSize(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Nuevo tamaño de la memoria caché. Los valores válidos son de 1 a 32, ambos inclusive, y el valor predeterminado es 30. Tenga en cuenta que el tamaño máximo de todos los archivos de caché virtual es 128 MB.
+Nuevo tamaño de caché. Los valores válidos son de 1 a 32 inclusive y el valor predeterminado es 30. Tenga en cuenta que el tamaño máximo de todos los archivos de caché virtual es de 128 MB.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Entre las propiedades relacionadas se incluyen las propiedades **BitmapVirtualCacheSize** y **BitmapVirtualCache16BppSize** .
+Entre las propiedades relacionadas se **incluyen las propiedades BitmapVirtualCacheSize** **y BitmapVirtualCache16BppSize.**
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                        |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                  |

@@ -1,9 +1,9 @@
 ---
-title: CD3DX12_VIEWPORT estructura (D3dx12. h)
-description: Una estructura auxiliar para habilitar la inicialización sencilla de una estructura de la ventanilla de D3D12 \_ .
+title: CD3DX12_VIEWPORT estructura (D3dx12.h)
+description: Estructura auxiliar para permitir la inicialización sencilla de una estructura VIEWPORT D3D12. \_
 ms.assetid: 1A824F54-596B-450E-A191-B60FBBBB60ED
 keywords:
-- Estructura de CD3DX12_VIEWPORT
+- CD3DX12_VIEWPORT estructura
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da29adc50b62bd645070d9667bec1e5c7ce7ab15
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5dce5a009dba6b047b599772586db60a022f4c62126a6d58575166b5ca2bec5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118808277"
 ---
-# <a name="cd3dx12_viewport-structure"></a>CD3DX12 (estructura de la \_ ventanilla)
+# <a name="cd3dx12_viewport-structure"></a>Estructura DE VENTANILLA DE CD3DX12 \_
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Una estructura auxiliar para habilitar la inicialización sencilla de una estructura de la [**\_ ventanilla de D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_viewport) .
+Estructura auxiliar para permitir la inicialización sencilla de una [**estructura \_ VIEWPORT D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_viewport)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,71 +48,71 @@ struct CD3DX12_VIEWPORT  : public D3D12_VIEWPORT{
 
 <dl> <dt>
 
-**CD3DX12 \_ ventanilla ()**
+**CD3DX12 \_ VIEWPORT()**
 </dt> <dd>
 
-Crea una nueva instancia no inicializada de una \_ ventanilla CD3DX12.
+Crea una nueva instancia sin inicializar de una VENTANILLA CD3DX12. \_
 
 </dd> <dt>
 
-**ventanilla CD3DX12 explícita \_ (const D3D12 \_ viewport& o)**
+**explicit CD3DX12 \_ VIEWPORT(const D3D12 \_ VIEWPORT& o)**
 </dt> <dd>
 
-Crea una nueva instancia de una ventanilla de CD3DX12 \_ , inicializando los siguientes parámetros:
+Crea una nueva instancia de UNA VENTANILLA CD3DX12, \_ inicializando los parámetros siguientes:
 
 const D3D12 \_ VIEWPORT& o
 
 </dd> <dt>
 
-**CD3DX12 \_ de ventanilla explícita (float topLeftX, Float Lefty, Float width, Float height, Float minDepth = D3D12 \_ min \_ Depth, Float maxDepth = D3D12 \_ Max \_ Depth)**
+**EXPLICIT CD3DX12 \_ VIEWPORT(FLOAT topLeftX, FLOAT topLeftY, FLOAT width, FLOAT height, FLOAT minDepth = D3D12 \_ MIN \_ DEPTH, FLOAT maxDepth = D3D12 \_ MAX \_ DEPTH)**
 </dt> <dd>
 
-Crea una nueva instancia de una ventanilla de CD3DX12 \_ , inicializando los siguientes parámetros:
+Crea una nueva instancia de UNA VENTANILLA CD3DX12, \_ inicializando los parámetros siguientes:
 
 FLOAT topLeftX
 
-FLOAT izquierda
+FLOAT topLeftY
 
-Ancho flotante
+Ancho float
 
-Alto de FLOAT
+Alto float
 
-FLOAT minDepth = D3D12 \_ min \_ Depth
+FLOAT minDepth = D3D12 \_ MIN \_ DEPTH
 
-FLOAT maxDepth = D3D12 \_ Max \_ Depth
+FLOAT maxDepth = D3D12 \_ MAX \_ DEPTH
 
 </dd> <dt>
 
-**CD3DX12 \_ de ventanilla explícita (ID3D12Resource \* PreSource, uint mipSlice = 0, Float topLeftX = 0.0 f, Float Lefty = 0.0 f, Float MINDEPTH = D3D12 \_ min \_ Depth, Float maxDepth = D3D12 \_ Max \_ Depth)**
+**explicit CD3DX12 \_ VIEWPORT(ID3D12Resource \* pResource, UINT mipSlice = 0, FLOAT topLeftX = 0.0f, FLOAT topLeftY = 0.0f, FLOAT minDepth = D3D12 \_ MIN \_ DEPTH, FLOAT maxDepth = D3D12 \_ MAX \_ DEPTH)**
 </dt> <dd>
 
-Crea una nueva instancia de una ventanilla de CD3DX12 \_ , inicializando los siguientes parámetros:
+Crea una nueva instancia de UNA VENTANILLA CD3DX12, \_ inicializando los parámetros siguientes:
 
-\*Código fuente de ID3D12Resource
+ID3D12Resource \* pResource
 
 UINT mipSlice = 0
 
-FLOAT topLeftX = 0.0 f
+FLOAT topLeftX = 0,0f
 
-FLOAT izquierda = 0.0 f
+FLOAT topLeftY = 0,0f
 
-FLOAT minDepth = D3D12 \_ min \_ Depth
+FLOAT minDepth = D3D12 \_ MIN \_ DEPTH
 
-FLOAT maxDepth = D3D12 \_ Max \_ Depth
-
-</dd> <dt>
-
-**~ CD3DX12 \_ ventanilla ()**
-</dt> <dd>
-
-Destruye una instancia de una ventanilla de D3DX12 \_ .
+FLOAT maxDepth = D3D12 \_ MAX \_ DEPTH
 
 </dd> <dt>
 
-**Operator const D3D12 \_ VIEWPORT& () Const**
+**~CD3DX12 \_ VIEWPORT()**
 </dt> <dd>
 
-Define el & operador de paso por referencia para el tipo de estructura primaria.
+Destruye una instancia de una ventanilla D3DX12. \_
+
+</dd> <dt>
+
+**operator const D3D12 \_ VIEWPORT&() const**
+</dt> <dd>
+
+Define el & de paso por referencia para el tipo de estructura primaria.
 
 </dd> </dl>
 
@@ -122,7 +122,7 @@ Define el & operador de paso por referencia para el tipo de estructura primaria.
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -130,7 +130,7 @@ Define el & operador de paso por referencia para el tipo de estructura primaria.
 
 <dl> <dt>
 
-[**Ventanilla de D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_viewport)
+[**VENTANILLA D3D12 \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_viewport)
 </dt> <dt>
 
 [Estructuras auxiliares de D3D12](helper-structures-for-d3d12.md)

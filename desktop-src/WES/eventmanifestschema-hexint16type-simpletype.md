@@ -3,7 +3,7 @@ title: Tipo simple UInt16Type
 description: Define un tipo corto sin signo.
 ms.assetid: 2200bb14-8f38-43fd-aed3-2a6b3ac33ed5
 keywords:
-- Tipo simple EventLog de UInt16Type
+- UInt16Tipo de tipo simple EventLog
 topic_type:
 - apiref
 api_name:

@@ -1,10 +1,10 @@
 ---
-title: Enumeración BITS_FILE_PROPERTY_ID (Deliveryoptimization. h)
-description: La enumeración BITS_FILE_PROPERTY_ID especifica valores que definen los valores de identificador correspondientes a las propiedades BackgroundCopyFile.
+title: BITS_FILE_PROPERTY_ID enumeración (Deliveryoptimization.h)
+description: La BITS_FILE_PROPERTY_ID especifica los valores que definen los valores de identificador correspondientes a las propiedades BackgroundCopyFile.
 ms.assetid: 47EFD160-7CA8-48E6-A18E-38D85F7C6E47
 keywords:
-- Enumeración BITS_FILE_PROPERTY_ID
-- Enumeración BITS_FILE_PROPERTY_ID
+- BITS_FILE_PROPERTY_ID enumeración
+- BITS_FILE_PROPERTY_ID enumeración
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1b6c6b8a4de359e8313e3127080f2cc17ae6478c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5eb8593e018a5c38c6788dfffefe827ed2e086774aedca1d051680b9cb6a433a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105714570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118810779"
 ---
-# <a name="bits_file_property_id-enumeration"></a>Enumeración BITS_FILE_PROPERTY_ID
+# <a name="bits_file_property_id-enumeration"></a>BITS_FILE_PROPERTY_ID enumeración
 
-La enumeración **BITS_FILE_PROPERTY_ID** especifica valores que definen los valores de identificador correspondientes a las propiedades **BackgroundCopyFile** .
+La **BITS_FILE_PROPERTY_ID** especifica los valores que definen los valores de identificador correspondientes a **las propiedades BackgroundCopyFile.**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -53,11 +53,11 @@ Conjunto completo de encabezados de respuesta HTTP del último paquete de respue
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1709 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Windows Server, versión 1709 \[ solo para aplicaciones de escritorio\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1709 \[ solo aplicaciones de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 

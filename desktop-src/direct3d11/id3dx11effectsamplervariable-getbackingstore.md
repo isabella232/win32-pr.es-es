@@ -86,7 +86,7 @@ Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graph
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

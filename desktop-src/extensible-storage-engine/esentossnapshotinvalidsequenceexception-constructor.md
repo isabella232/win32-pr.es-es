@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentOSSnapshotInvalidSequenceException'
-title: Constructor de EsentOSSnapshotInvalidSequenceException
+description: 'Más información sobre: Constructor EsentOSSnapshotInvalidSequenceException'
+title: Constructor EsentOSSnapshotInvalidSequenceException
 TOCTitle: 'EsentOSSnapshotInvalidSequenceException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentOSSnapshotInvalidSequenceException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentossnapshotinvalidsequenceexception.esentossnapshotinvalidsequenceexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1832264fb239b6006414fa376e66866fb889a281
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1cee55564520a2f1dbb1ab34b1926060e802af2d2de6a91fa8e779bbe46dd117
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118493451"
 ---
-# <a name="esentossnapshotinvalidsequenceexception-constructor"></a>Constructor de EsentOSSnapshotInvalidSequenceException
+# <a name="esentossnapshotinvalidsequenceexception-constructor"></a>Constructor EsentOSSnapshotInvalidSequenceException
 
 Inicializa una nueva instancia de la clase EsentOSSnapshotInvalidSequenceException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentOSSnapshotInvalidSequenceException()
 public EsentOSSnapshotInvalidSequenceException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentOSSnapshotInvalidSequenceException()
 
 [Miembros de EsentOSSnapshotInvalidSequenceException](./esentossnapshotinvalidsequenceexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -32,11 +32,11 @@ El **atributo netboot-Limit-Clients** está reservado para uso interno.
 | CN                | netboot-Limit-Clients                |
 | Ldap-Display-Name | netbootLimitClients                  |
 | Size              | \-                                   |
-| Actualizar privilegios  | El sistema establece este valor.     |
+| Privilegio actualizar  | El sistema establece este valor.     |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.850               |
 | System-Id-Guid    | 07383077-91df-11d1-aebc-0000f80367c1 |
-| Sintaxis            | [**Booleana**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -57,10 +57,10 @@ El **atributo netboot-Limit-Clients** está reservado para uso interno.
 |------------------------|------------------------------------------------------------|
 | Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
+| System-Only            | Falso                                                      |
 | Es de un solo valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
@@ -78,10 +78,10 @@ El **atributo netboot-Limit-Clients** está reservado para uso interno.
 |------------------------|------------------------------------------------------------|
 | Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Es de un solo valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
@@ -99,10 +99,10 @@ El **atributo netboot-Limit-Clients** está reservado para uso interno.
 |------------------------|------------------------------------------------------------|
 | Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Es de un solo valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
@@ -120,10 +120,10 @@ El **atributo netboot-Limit-Clients** está reservado para uso interno.
 |------------------------|------------------------------------------------------------|
 | Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
-| Es de un solo valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
+| System-Only            | Falso                                                      |
+| Es de un solo valor       | Verdadero                                                       |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
@@ -141,10 +141,10 @@ El **atributo netboot-Limit-Clients** está reservado para uso interno.
 |------------------------|------------------------------------------------------------|
 | Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
+| System-Only            | Falso                                                      |
 | Es de un solo valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
@@ -162,10 +162,10 @@ El **atributo netboot-Limit-Clients** está reservado para uso interno.
 |------------------------|------------------------------------------------------------|
 | Id. de vínculo                | \-                                                         |
 | MAPI-Id                | \-                                                         |
-| System-Only            | False                                                      |
+| System-Only            | Falso                                                      |
 | Es de un solo valor       | True                                                       |
-| Está indexado             | False                                                      |
-| En el catálogo global      | False                                                      |
+| Está indexado             | Falso                                                      |
+| En el catálogo global      | Falso                                                      |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |

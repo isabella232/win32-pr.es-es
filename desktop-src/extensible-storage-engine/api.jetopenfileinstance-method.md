@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. JetOpenFileInstance (método)'
-title: Método API. JetOpenFileInstance
+description: Más información sobre el método Api.JetOpenFileInstance
+title: Método Api.JetOpenFileInstance
 TOCTitle: 'JetOpenFileInstance method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetOpenFileInstance(Microsoft.Isam.Esent.Interop.JET_INSTANCE,System.String,Microsoft.Isam.Esent.Interop.JET_HANDLE@,System.Int64@,System.Int64@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetopenfileinstance(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3b58b3a426fd2eb7e33cce1f5f539418bcc993ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1dc526cb9d70b86faa54c476cb1d2fa85a93ec032b2fcc5a3d1755779108a8cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118084964"
 ---
-# <a name="apijetopenfileinstance-method"></a>Método API. JetOpenFileInstance
+# <a name="apijetopenfileinstance-method"></a>Método Api.JetOpenFileInstance
 
-Abre una base de datos adjunta, un archivo de revisión de base de datos o un archivo de registro de transacciones de una instancia activa con el fin de realizar una copia de seguridad aproximada de streaming. Posteriormente, los datos de estos archivos se pueden leer a través del controlador devuelto mediante JetReadFileInstance. El identificador devuelto debe cerrarse mediante JetCloseFileInstance. Se debe haber iniciado previamente una copia de seguridad externa de la instancia mediante JetBeginExternalBackupInstance.
+Abre una base de datos adjunta, un archivo de revisión de base de datos o un archivo de registro de transacciones de una instancia activa con el fin de realizar una copia de seguridad aproximada de streaming. Posteriormente, los datos de estos archivos se pueden leer a través del identificador devuelto mediante JetReadFileInstance. El identificador devuelto debe cerrarse mediante JetCloseFileInstance. Debe haber iniciado previamente una copia de seguridad externa de la instancia mediante JetBeginExternalBackupInstance.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -71,44 +71,44 @@ public static void JetOpenFileInstance(
 #### <a name="parameters"></a>Parámetros
 
   - instance  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
     La instancia de que se utilizará.
 
 <!-- end list -->
 
   - archivo  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Archivo que se va a abrir.
 
 <!-- end list -->
 
   - handle  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_HANDLE](./jet-handle-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_HANDLE](./jet-handle-structure.md)  
     
-    Devuelve un identificador para el archivo.
+    Devuelve un identificador al archivo.
 
 <!-- end list -->
 
   - fileSizeLow  
-    Tipo: [System. Int64](/dotnet/api/system.int64)  
+    Tipo: [System.Int64](/dotnet/api/system.int64)  
     
-    Devuelve los 32 bits menos significativos del tamaño de archivo.
+    Devuelve los 32 bits menos significativos del tamaño del archivo.
 
 <!-- end list -->
 
   - fileSizeHigh  
-    Tipo: [System. Int64](/dotnet/api/system.int64)  
+    Tipo: [System.Int64](/dotnet/api/system.int64)  
     
-    Devuelve los bits 32 más significativos del tamaño de archivo.
+    Devuelve los 32 bits más significativos del tamaño del archivo.
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

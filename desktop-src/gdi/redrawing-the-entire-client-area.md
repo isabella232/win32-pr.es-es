@@ -1,21 +1,21 @@
 ---
-description: Puede hacer que la aplicación vuelva a dibujar todo el contenido del área cliente cada vez que cambie el tamaño de la ventana mediante el establecimiento de los \_ estilos CS HREDRAW y CS \_ VREDRAW para la clase Window.
+description: Puede hacer que la aplicación vuelva a dibujar todo el contenido del área de cliente cada vez que la ventana cambie de tamaño estableciendo los estilos \_ HREDRAW y CS DRAW de CS para la clase \_ de ventana.
 ms.assetid: ed68b85e-8382-4450-b07d-0422b44dc2e3
-title: Volver a dibujar todo el área cliente
+title: Volver a dibujar todo el área de cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d67640d1b464173755029bef1d0feb91f215cda6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e3c438fe36160f27b1015daf7874e237035f927825199b93b3a508668f40bd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118759151"
 ---
-# <a name="redrawing-the-entire-client-area"></a>Volver a dibujar todo el área cliente
+# <a name="redrawing-the-entire-client-area"></a>Volver a dibujar todo el área de cliente
 
-Puede hacer que la aplicación vuelva a dibujar todo el contenido del área cliente cada vez que cambie el tamaño de la ventana mediante el establecimiento de los \_ estilos CS HREDRAW y CS \_ VREDRAW para la clase Window. Las aplicaciones que ajustan el tamaño del dibujo en función del tamaño de la ventana usan estos estilos para asegurarse de que se inician con un área cliente completamente vacía al dibujar.
+Puede hacer que la aplicación vuelva a dibujar todo el contenido del área de cliente cada vez que la ventana cambie de tamaño estableciendo los estilos \_ HREDRAW y CS DRAW de CS para la clase \_ de ventana. Las aplicaciones que ajustan el tamaño del dibujo en función del tamaño de la ventana usan estos estilos para asegurarse de que comienzan con un área de cliente completamente vacía al dibujar.
 
-En el ejemplo siguiente, el procedimiento de ventana dibuja una estrella de cinco puntas que encaja perfectamente en el área de cliente. Utiliza un contexto de dispositivo común y debe establecer el modo de asignación, así como las extensiones de ventana y ventanilla, cada vez que se procesa el mensaje de [**\_ pintura de WM**](wm-paint.md) .
+En el ejemplo siguiente, el procedimiento de ventana dibuja una estrella de cinco puntas que encaja perfectamente en el área cliente. Usa un contexto de dispositivo común y debe establecer el modo de asignación, así como las extensiones de ventana y ventanilla cada vez que se procesa el mensaje [**\_ WM PAINT.**](wm-paint.md)
 
 
 ```C++

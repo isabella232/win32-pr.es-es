@@ -1,7 +1,7 @@
 ---
 description: Clona o copia un controlador de animación.
 ms.assetid: 9836653c-9ea5-4fbc-89ac-0b46054a12d7
-title: 'ID3DXAnimationController:: CloneAnimationController (método) (D3dx9anim. h)'
+title: Método ID3DXAnimationController::CloneAnimationController (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 49c4a1c000df469c72a5e5538237e7110ded126f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5afb99126967163318c82bac6b8cac655fec65e8a28e4cdb349c7f2b1c679435
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118522786"
 ---
-# <a name="id3dxanimationcontrollercloneanimationcontroller-method"></a>ID3DXAnimationController:: CloneAnimationController (método)
+# <a name="id3dxanimationcontrollercloneanimationcontroller-method"></a>Método ID3DXAnimationController::CloneAnimationController
 
 Clona o copia un controlador de animación.
 
@@ -44,43 +44,43 @@ HRESULT CloneAnimationController(
 
 <dl> <dt>
 
-*MaxNumAnimationOutputs* \[ de\]
+*MaxNumAnimationOutputs* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número máximo de salidas de animación que el controlador puede admitir.
 
 </dd> <dt>
 
-*MaxNumAnimationSets* \[ de\]
+*MaxNumAnimationSets* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número máximo de conjuntos de animaciones que el controlador puede admitir.
+Número máximo de conjuntos de animación que el controlador puede admitir.
 
 </dd> <dt>
 
-*MaxNumTracks* \[ de\]
+*MaxNumTracks* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número máximo de pistas que el controlador puede admitir.
 
 </dd> <dt>
 
-*MaxNumEvents* \[ de\]
+*MaxNumEvents* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Número máximo de eventos que el controlador puede admitir.
 
 </dd> <dt>
 
-*ppAnimController* \[ de\]
+*ppAnimController* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXANIMATIONCONTROLLER**](id3dxanimationcontroller.md)\***
@@ -93,7 +93,7 @@ Dirección de un puntero al controlador de animación [**ID3DXAnimationControlle
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los valores siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,8 +101,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

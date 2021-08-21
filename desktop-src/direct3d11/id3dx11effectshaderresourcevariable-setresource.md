@@ -1,6 +1,6 @@
 ---
 title: Método ID3DX11EffectShaderResourceVariable SetResource (D3dx11effect.h)
-description: Establezca un recurso de sombreador.
+description: Establecer un recurso de sombreador.
 ms.assetid: f85c33ff-dc00-4421-939c-74f9317faadc
 keywords:
 - Método SetResource Direct3D 11
@@ -26,7 +26,7 @@ ms.locfileid: "118533443"
 ---
 # <a name="id3dx11effectshaderresourcevariablesetresource-method"></a>Método ID3DX11EffectShaderResourceVariable::SetResource
 
-Establezca un recurso de sombreador.
+Establecer un recurso de sombreador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,7 +61,7 @@ Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graph
 ## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -72,11 +72,11 @@ Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graph
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

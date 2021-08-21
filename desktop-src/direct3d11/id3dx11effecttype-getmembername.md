@@ -1,5 +1,5 @@
 ---
-title: Método ID3DX11EffectType GetMemberName (D3dx11effect. h)
+title: Método ID3DX11EffectType GetMemberName (D3dx11effect.h)
 description: Obtiene el nombre de un miembro.
 ms.assetid: cd231741-09e1-4e69-9384-5cdfbf83fc8b
 keywords:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4aa9a24067d8ef19680ca58e41659da850659b2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: db740b11e8da886d1c2b3339b1cdf64fa941dcb4947e9f399be8b49b2747bbe5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118532347"
 ---
-# <a name="id3dx11effecttypegetmembername-method"></a>ID3DX11EffectType:: GetMemberName (método)
+# <a name="id3dx11effecttypegetmembername-method"></a>Método ID3DX11EffectType::GetMemberName
 
 Obtiene el nombre de un miembro.
 
@@ -46,7 +46,7 @@ LPCSTR GetMemberName(
 *Index* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Un índice basado en cero.
 
@@ -58,10 +58,10 @@ Tipo: **[ **LPCSTR**](/windows/desktop/WinProg/windows-data-types)**
 
 Nombre del miembro.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Nombre del miembro.
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

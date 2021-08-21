@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 24f0c579f4fb9c947ea02ff677cd433da3103cfc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6986e5ac907784a19c14fb8dc6b9c086031863f322c3c35a58edcf3fd4089ea8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151225"
 ---
 # <a name="systemconfig_v0-class"></a>Clase SystemConfig \_ V0
 
@@ -40,7 +40,7 @@ La **clase SystemConfig \_ V0** no define ningún miembro.
 
 ## <a name="remarks"></a>Comentarios
 
-Para los eventos de configuración de hardware en Windows XP, consulte la [**clase HWConfig.**](hwconfig.md)
+Para los eventos de configuración de hardware Windows XP, consulte la [**clase HWConfig.**](hwconfig.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,11 +49,11 @@ Para los eventos de configuración de hardware en Windows XP, consulte la [**cla
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

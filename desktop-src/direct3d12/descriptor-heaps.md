@@ -5,12 +5,12 @@ ms.assetid: 04d3facf-21ec-45ca-ad9b-78fdcddc7136
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f19821cff5e8730c376e5c80fef07e67974d31d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cd883436954cb6e1f0270646f1a57d564f3d51d29b6023bec749d1728fda40fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "74104865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118807557"
 ---
 # <a name="descriptor-heaps"></a>Montones de descriptores
 
@@ -22,13 +22,13 @@ Un montón de descriptores es una colección de asignaciones contiguas de descri
 
 | Tema                                                                                             | Descripción                                                                                                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Información general sobre montones de descriptores](descriptor-heaps-overview.md)<br/>                             | Los montones descriptores contienen muchos tipos de objetos que no forman parte de un objeto de estado de canalización (PSO), como las vistas de recursos del sombreador (SRVs), las vistas de acceso desordenado (UAVs), las vistas de búfer de constantes (CBVs) y los muestreadores. <br/>                |
-| [Niveles de hardware](hardware-support.md)<br/>                                                 | Los niveles de hardware del nivel 1 al nivel 3 tienen recursos crecientes disponibles para la canalización. <br/>                                                                                                                              |
-| [Montones de descriptor visibles del sombreador](shader-visible-descriptor-heaps.md)<br/>                 | Los montones de descriptor visibles del sombreador, son montones de descriptor a los que pueden hacer referencia los sombreadores a través de tablas de descriptores.<br/>                                                                                                              |
-| [Montones de descriptor visibles sin sombreador](non-shader-visible-descriptor-heaps.md)<br/>         | Los sombreadores no pueden hacer referencia a algunos montones de descriptor a través de tablas de descriptores, pero existen para ayudar a la aplicación a ensayar los descriptores antes de grabar una lista de comandos o porque no se requiere ningún montón visible del sombreador.<br/> |
-| [Crear montones de descriptor](creating-descriptor-heaps.md)<br/>                             | Para crear y configurar un montón de descriptores, debe seleccionar un tipo de montón de descriptores, determinar el número de descriptores que contiene y establecer marcas que indiquen si es visible para la CPU o el sombreador. <br/>                    |
-| [Establecer y rellenar montones de descriptores](setting-descriptor-heaps.md)<br/>                | Los tipos de montón descriptor que se pueden establecer en una lista de comandos son aquellos que contienen descriptores para los que se pueden usar tablas de descriptor (como máximo una de cada cada vez). <br/>                                                        |
-| [Resumen de la capacidad de configurar el montón de descriptores](descriptor-heap-configurability-summary.md)<br/> | En la tabla siguiente se resume la información sobre el sombreador y la compatibilidad con el montón visible de no sombreador.<br/>                                                                                                                                    |
+| [Información general sobre los montones de descriptores](descriptor-heaps-overview.md)<br/>                             | Los montones de descriptores contienen muchos tipos de objeto que no forman parte de un objeto de estado de canalización (PSO), como vistas de recursos de sombreador (SRV), vistas de acceso desordenado (UAV), vistas de búfer constante (CBV) y muestreadores. <br/>                |
+| [Niveles de hardware](hardware-support.md)<br/>                                                 | Los niveles de hardware del nivel 1 al nivel 3 tienen cada vez más recursos disponibles para la canalización. <br/>                                                                                                                              |
+| [Montones de descriptores visibles por el sombreador](shader-visible-descriptor-heaps.md)<br/>                 | Los montones de descriptores visibles del sombreador son montones de descriptores a los que pueden hacer referencia los sombreadores a través de tablas de descriptores.<br/>                                                                                                              |
+| [Montones de descriptores no visibles por el sombreador](non-shader-visible-descriptor-heaps.md)<br/>         | Los sombreadores no pueden hacer referencia a algunos montones de descriptores a través de tablas de descriptores, pero existen para ayudar a la aplicación a almacenamiento provisional de los descriptores antes de registrar una lista de comandos o porque no se requiere ningún montón visible para el sombreador.<br/> |
+| [Creación de montones de descriptores](creating-descriptor-heaps.md)<br/>                             | Para crear y configurar un montón de descriptores, debe seleccionar un tipo de montón de descriptores, determinar cuántos descriptores contiene y establecer marcas que indiquen si está visible en la CPU o en el sombreador. <br/>                    |
+| [Configuración y relleno de los montones de descriptores](setting-descriptor-heaps.md)<br/>                | Los tipos de montón de descriptores que se pueden establecer en una lista de comandos son aquellos que contienen descriptores para los que se pueden usar tablas de descriptores (como máximo una de cada una a la vez). <br/>                                                        |
+| [Resumen de la capacidad de configuración del montón de descriptores](descriptor-heap-configurability-summary.md)<br/> | En la tabla siguiente se resume información sobre la compatibilidad del montón visible de sombreador y no sombreador.<br/>                                                                                                                                    |
 
 
 
