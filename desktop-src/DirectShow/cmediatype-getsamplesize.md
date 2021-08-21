@@ -1,7 +1,7 @@
 ---
 description: El método GetSampleSize recupera el tamaño de la muestra.
 ms.assetid: 5cc98556-cca6-46ca-ad33-cd40011ff6f4
-title: Método CMediaType. GetSampleSize (mtype. h)
+title: Método CMediaType.GetSampleSize (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cc5b80e20ad2a16af9c25c68499348ffa744c0fa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 120ae54e615e96b368f44c1523703ca35f89d40313f79b450e2cbbd8923829dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156409"
 ---
-# <a name="cmediatypegetsamplesize-method"></a>CMediaType. GetSampleSize, método
+# <a name="cmediatypegetsamplesize-method"></a>Método CMediaType.GetSampleSize
 
 El `GetSampleSize` método recupera el tamaño de la muestra.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el tamaño de la muestra es fijo, devuelve el tamaño de ejemplo en bytes. De lo contrario, devuelve cero.
+Si el tamaño de la muestra es fijo, devuelve el tamaño de la muestra en bytes. De lo contrario, devuelve cero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Si el tamaño de la muestra es fijo, devuelve el tamaño de ejemplo en bytes. De
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Mtype. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Mtype.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Si el tamaño de la muestra es fijo, devuelve el tamaño de ejemplo en bytes. De
 
 <dl> <dt>
 
-[**Clase CMediaType**](cmediatype.md)
+[**CMediaType (clase)**](cmediatype.md)
 </dt> </dl>
 
  

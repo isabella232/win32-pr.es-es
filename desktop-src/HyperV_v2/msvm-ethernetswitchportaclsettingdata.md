@@ -1,7 +1,7 @@
 ---
 description: Representa la lista de control de acceso (ACL) para la configuración del puerto del conmutador.
 ms.assetid: c0d6dfa1-017c-4e66-9ee3-425182d84231
-title: Msvm_EthernetSwitchPortAclSettingData (clase)
+title: Msvm_EthernetSwitchPortAclSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,18 +26,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 92735718e339a0caf33910dec703276aea946a67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9cecb30265de4a86c3b6bd6b07d7047607349a74cef9da379fb384ca5a5dc9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105689582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119524195"
 ---
-# <a name="msvm_ethernetswitchportaclsettingdata-class"></a>MSVM \_ EthernetSwitchPortAclSettingData (clase)
+# <a name="msvm_ethernetswitchportaclsettingdata-class"></a>Clase Msvm \_ EthernetSwitchPortAclSettingData
 
 Representa la lista de control de acceso (ACL) para la configuración del puerto del conmutador.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,29 +63,29 @@ class Msvm_EthernetSwitchPortAclSettingData : Msvm_EthernetSwitchPortFeatureSett
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ EthernetSwitchPortAclSettingData** tiene estos tipos de miembros:
+La **clase Msvm \_ EthernetSwitchPortAclSettingData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ EthernetSwitchPortAclSettingData** tiene estas propiedades.
+La **clase Msvm \_ EthernetSwitchPortAclSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
 **AclType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica el tipo de extremo de ACL.
+Esto indica el tipo de punto de conexión de ACL.
 
 <dt>
 
@@ -98,21 +98,21 @@ Indica el tipo de extremo de ACL.
 
 <span id="MAC_Acl"></span><span id="mac_acl"></span><span id="MAC_ACL"></span>
 
-**ACL de Mac** (1)
+**ACL de MAC** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IPv4_Acl"></span><span id="ipv4_acl"></span><span id="IPV4_ACL"></span>
 
-**ACL IPv4** (2)
+**IPv4 Acl** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IPv6_Acl"></span><span id="ipv6_acl"></span><span id="IPV6_ACL"></span>
 
-**ACL de IPv6** (3)
+**IPv6 Acl** (3)
 
 
 </dt> <dd></dd> </dl>
@@ -122,16 +122,16 @@ Indica el tipo de extremo de ACL.
 **Acción**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica la acción de la ACL.
+Esto indica la acción de la ACL.
 
 <dt>
 
@@ -168,16 +168,16 @@ Indica la acción de la ACL.
 **Aplicabilidad**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica si la ACL se aplica al punto de conexión local o remoto.
+Esto indica si la ACL se aplica al punto de conexión local o remoto.
 
 <dt>
 
@@ -213,7 +213,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "configuración de ACL del puerto de conmutador Ethernet".
+Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)de CIM y siempre se establece en "Ethernet Switch Port ACL Configuración".
 
 </dd> <dt>
 
@@ -226,23 +226,23 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "representa la clase base para la configuración del puerto del conmutador".
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "Representa la clase base para la configuración del puerto del conmutador".
 
 </dd> <dt>
 
 **Dirección**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica si la ACL se aplica a la dirección de entrada o de salida.
+Esto indica si la ACL se aplica a la dirección de entrada o salida.
 
 <dt>
 
@@ -278,7 +278,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "configuración de ACL del puerto de conmutador Ethernet".
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)de CIM y siempre se establece en "Ethernet Switch Port ACL Configuración".
 
 </dd> <dt>
 
@@ -291,10 +291,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -304,7 +304,7 @@ Identifica de forma única una instancia de esta clase. Esta propiedad se hereda
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -317,16 +317,16 @@ Dirección local de la máquina virtual. Puede ser una dirección IPv4, IPv6 o M
 **LocalAddressPrefixLength**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (7), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-La longitud del prefijo de dirección local.
+Longitud del prefijo de dirección local.
 
 </dd> <dt>
 
@@ -336,7 +336,7 @@ La longitud del prefijo de dirección local.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -352,29 +352,29 @@ Nombre para mostrar de la ACL.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (8), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-La dirección remota de la máquina virtual. Puede ser IPv4, IPv6 o una dirección MAC.
+Dirección remota de la máquina virtual. Puede ser IPv4, IPv6 o una dirección MAC.
 
 </dd> <dt>
 
 **RemoteAddressPrefixLength**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (9), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-La longitud del prefijo de la dirección remota.
+Longitud del prefijo de dirección remota.
 
 </dd> </dl>
 
@@ -384,10 +384,10 @@ La longitud del prefijo de la dirección remota.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -1,6 +1,6 @@
 ---
-title: Métodos de la propiedad IADsPrintJobOperations (iAds. h)
-description: Los métodos de propiedad de la interfaz IADsPrintJobOperations leen y escriben las propiedades que se muestran en la tabla siguiente. Para obtener más información sobre los métodos de propiedad, vea métodos de propiedad de interfaz.
+title: Métodos de propiedad IADsPrintJobOperations (Iads.h)
+description: Los métodos de propiedad de la interfaz IADsPrintJobOperations leen y escriben las propiedades enumeradas en la tabla siguiente. Para obtener más información sobre los métodos de propiedad, vea Métodos de propiedad de interfaz.
 ms.assetid: d1710bd4-e600-4d92-892a-16b4316851d4
 ms.tgt_platform: multiple
 keywords:
@@ -24,16 +24,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2981fcdd8043c0eb0ee8b05cfd0331fe3abfabe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 70f337681cb7e75a478000bd06daaac1165edaaaf1cb4255b2890347fbcff7de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118691074"
 ---
 # <a name="iadsprintjoboperations-property-methods"></a>Métodos de propiedad IADsPrintJobOperations
 
-Los métodos de propiedad de la interfaz [**IADsPrintJobOperations**](/windows/desktop/api/Iads/nn-iads-iadsprintjoboperations) leen y escriben las propiedades que se muestran en la tabla siguiente. Para obtener más información sobre los métodos de propiedad, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de propiedad [**de la interfaz IADsPrintJobOperations**](/windows/desktop/api/Iads/nn-iads-iadsprintjoboperations) leen y escriben las propiedades enumeradas en la tabla siguiente. Para obtener más información sobre los métodos de propiedad, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -49,7 +49,7 @@ Contiene el número de páginas impresas.
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -71,10 +71,10 @@ Contiene la posición de este trabajo de impresión en la cola de impresión.
 
 <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -95,14 +95,14 @@ HRESULT put_Position(
 **Estado**
 </dt> <dd> <dl>
 
-Contiene el estado actual del trabajo de impresión indicado por uno de los valores de [**constantes de estado del trabajo de impresión de ADSI**](adsi-print-job-status-constants.md) .
+Contiene el estado actual del trabajo de impresión tal como se indica en uno de los valores de Constantes de estado del trabajo de impresión [**ADSI.**](adsi-print-job-status-constants.md)
 
 <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -127,7 +127,7 @@ Contiene el número de milisegundos transcurridos desde que se inició el trabaj
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -146,7 +146,7 @@ HRESULT get_TimeElapsed(
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestra cómo se pueden usar las propiedades de [**IADsPrintJobOperations**](/windows/desktop/api/Iads/nn-iads-iadsprintjoboperations) .
+En el ejemplo de código siguiente se muestra cómo se pueden usar las propiedades de [**IADsPrintJobOperations.**](/windows/desktop/api/Iads/nn-iads-iadsprintjoboperations)
 
 
 ```VB
@@ -178,17 +178,17 @@ Cleanup:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>         |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>         |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl>   |
-| IID<br/>                      | IID \_ IADsPrintJobOperations se define como 32FB6780-1ED0-11cf-A988-00AA006BC149<br/> |
+| IID<br/>                      | IID \_ IADsPrintJobOperations se define como 32FB6780-1ED0-11CF-A988-00AA006BC149<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

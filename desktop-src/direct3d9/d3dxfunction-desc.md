@@ -1,7 +1,7 @@
 ---
 description: Describe una función utilizada por un efecto.
 ms.assetid: 5d9deb82-7fe5-4408-8a6a-b34ecd97e8ba
-title: D3DXFUNCTION_DESC estructura (D3dx9effect. h)
+title: D3DXFUNCTION_DESC estructura (D3dx9effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9effect.h
-ms.openlocfilehash: ec53cae4689ebc1795937012259b2e219630568b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fb67f99daa1c0ed551ce989c15e9be2d1f89f8352dfebf7a021ea16f7c69f49e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118525662"
 ---
 # <a name="d3dxfunction_desc-structure"></a>D3DXFUNCTION \_ DESC (estructura)
 
@@ -51,14 +51,14 @@ Nombre de la función.
 
 </dd> <dt>
 
-**Anotaciones**
+**anotaciones**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Sin usar. Este miembro siempre se establecerá en cero por [**GetFunctionDesc**](id3dxbaseeffect--getfunctiondesc.md).
+Sin usar. [**GetFunctionDesc**](id3dxbaseeffect--getfunctiondesc.md)siempre establecerá este miembro en cero.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ Sin usar. Este miembro siempre se establecerá en cero por [**GetFunctionDesc**]
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9effect. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9effect.h</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Sin usar. Este miembro siempre se establecerá en cero por [**GetFunctionDesc**]
 
 <dl> <dt>
 
-[Estructuras de efectos](dx9-graphics-reference-effects-structures.md)
+[Estructuras de efecto](dx9-graphics-reference-effects-structures.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Comando MCI_UNFREEZE (mmsystem. h)
-description: El \_ comando MCI unfreeze restaura el movimiento en un área del búfer de vídeo inmovilizado con el \_ comando MCI Freeze. Los dispositivos digitales-vídeo, VCR y superposición de vídeo reconocen este comando.
+title: MCI_UNFREEZE (Mmsystem.h)
+description: El comando UNFREEZE de MCI restaura el movimiento en un área del búfer de vídeo \_ inmovilizado con el comando MCI \_ FREEZE. Los dispositivos de vídeo digital, VCR y superposición de vídeo reconocen este comando.
 ms.assetid: 79ff1be5-6e30-4ef4-ab81-fc5643e3a72d
 keywords:
-- Comando de MCI_UNFREEZE de Windows multimedia
+- MCI_UNFREEZE comando Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8736e27998330f9337bb21569e145a4395e90020
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3011f3d2c05c304b37957c6f4cb78f2ada9389ab727a7af63a358fd4b5afdd3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119525575"
 ---
-# <a name="mci_unfreeze-command"></a>\_Comando MCI UNfreeze
+# <a name="mci_unfreeze-command"></a>Comando \_ MCI UNFREEZE
 
-El \_ comando MCI unfreeze restaura el movimiento en un área del búfer de vídeo inmovilizado con el comando [MCI \_ Freeze](mci-freeze.md) . Los dispositivos digitales-vídeo, VCR y superposición de vídeo reconocen este comando.
+El comando UNFREEZE de MCI restaura el movimiento en un área del búfer de vídeo \_ inmovilizado con el [comando MCI \_ FREEZE.](mci-freeze.md) Los dispositivos de vídeo digital, VCR y superposición de vídeo reconocen este comando.
 
-Para enviar este comando, llame a la función [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
+Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
 
 ```C++
@@ -50,74 +50,74 @@ Identificador de dispositivo del dispositivo MCI que va a recibir el mensaje de 
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-MCI \_ Notify, espera de MCI \_ o, para dispositivos de vídeo digital y VCR, prueba de MCI \_ . Para obtener información acerca de estas marcas, vea [las marcas wait, Notify y test](the-wait-notify-and-test-flags.md).
+MCI \_ NOTIFY, MCI \_ WAIT o, para dispositivos de vídeo digital y VCR, MCI \_ TEST. Para obtener información sobre estas marcas, vea [The Wait, Notify, and Test Flags](the-wait-notify-and-test-flags.md).
 
 </dd> <dt>
 
 <span id="lpUnfreeze"></span><span id="lpunfreeze"></span><span id="LPUNFREEZE"></span>*lpUnfreeze*
 </dt> <dd>
 
-Puntero a una [**estructura \_ \_ parms genérica de MCI**](mci-generic-parms.md) . (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura con una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si es correcto o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Con el tipo de dispositivo **DigitalVideo** se usa la siguiente marca adicional:
+La siguiente marca adicional se usa con el **tipo de dispositivo digitalvideo:**
 
-\_DGV \_ Rect
+MCI \_ DGV \_ RECT
 
-El miembro **RC** de la estructura identificada por *lpUnfreeze* contiene un rectángulo de presentación válido. El rectángulo especifica una región en el búfer de fotogramas cuyos píxeles deben tener el bit de máscara de bloqueo desactivado. Las regiones rectangulares se especifican como se describe en el comando [MCI \_ Put](mci-put.md) . Si se omite, el rectángulo tiene como valor predeterminado el búfer de fotogramas completo. Mediante el uso de una secuencia de comandos Freeze y unfreeze con distintos rectángulos, se pueden describir patrones arbitrarios de bits de máscara de bloqueos.
+El **miembro rc** de la estructura identificada por *lpUnfreeze* contiene un rectángulo de presentación válido. El rectángulo especifica una región dentro del búfer de marco cuyos píxeles deben tener desactivado su bit de máscara de bloqueo. Las regiones rectangulares se especifican como se describe para el [comando \_ PUT de MCI.](mci-put.md) Si se omite, el rectángulo tiene como valor predeterminado todo el búfer de fotogramas. Mediante el uso de una secuencia de comandos inmovilizar y descongelar con rectángulos diferentes, se pueden describir patrones arbitrarios de bits de máscara de bloqueo.
 
-En el caso de los dispositivos de vídeo digital, el parámetro *lpUnfreeze* apunta a una estructura **\_ DGV \_ unfreeze \_ parms de MCI** . Para obtener más información, vea los comentarios de la estructura [**MCI \_ DGV \_ Rect \_ parms**](/windows/win32/api/digitalv/ns-digitalv-mci_dgv_rect_parms) .
+En el caso de los dispositivos de vídeo digital, el parámetro *lpUnfreeze* apunta a una estructura **\_ MCI DGV \_ UNFREEZE \_ PARMS.** Para más información, consulte los comentarios de la estructura [**\_ MCI DGV \_ RECT \_ PARMS.**](/windows/win32/api/digitalv/ns-digitalv-mci_dgv_rect_parms)
 
-Se usan las siguientes marcas adicionales con el tipo de dispositivo **VCR** :
+Las siguientes marcas adicionales se usan con el tipo **de dispositivo vcr:**
 
 <dl> <dt>
 
-<span id="MCI_VCR_UNFREEZE_INPUT"></span><span id="mci_vcr_unfreeze_input"></span>\_entrada de \_ desbloqueo de VCR de MCI \_
+<span id="MCI_VCR_UNFREEZE_INPUT"></span><span id="mci_vcr_unfreeze_input"></span>ENTRADA DE \_ DESCONGELAR VCR \_ DE MCI \_
 </dt> <dd>
 
-Libere la entrada.
+Descongele la entrada.
 
 </dd> <dt>
 
-<span id="MCI_VCR_UNFREEZE_OUTPUT"></span><span id="mci_vcr_unfreeze_output"></span>\_salida de \_ desbloqueo de VCR de MCI \_
+<span id="MCI_VCR_UNFREEZE_OUTPUT"></span><span id="mci_vcr_unfreeze_output"></span>SALIDA DE \_ DESCONGELAR VCR \_ DE MCI \_
 </dt> <dd>
 
-Libere la salida.
+Descongele la salida.
 
 </dd> </dl>
 
-La siguiente marca adicional se usa con el tipo de dispositivo **superpuesto** :
+La siguiente marca adicional se usa con el tipo **de dispositivo de** superposición:
 
 <dl> <dt>
 
-<span id="MCI_OVLY_RECT"></span><span id="mci_ovly_rect"></span>\_OVLY \_ Rect
+<span id="MCI_OVLY_RECT"></span><span id="mci_ovly_rect"></span>MCI \_ OVLY \_ RECT
 </dt> <dd>
 
-El miembro **RC** de la estructura identificada por *lpUnfreeze* contiene un rectángulo de presentación válido. Es un parámetro obligatorio.
+El **miembro rc** de la estructura identificada por *lpUnfreeze* contiene un rectángulo de presentación válido. Es un parámetro obligatorio.
 
 </dd> </dl>
 
-En el caso de los dispositivos de superposición de vídeo, el parámetro *lpUnfreeze* apunta a una estructura [**MCI \_ OVLY \_ Rect \_ parms**](mci-ovly-rect-parms.md) .
+En el caso de los dispositivos de superposición de vídeo, el parámetro *lpUnfreeze* apunta a una estructura [**\_ MCI OVLY \_ RECT \_ PARMS.**](mci-ovly-rect-parms.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -125,10 +125,10 @@ En el caso de los dispositivos de superposición de vídeo, el parámetro *lpUnf
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
-[Comandos MCI](mci-commands.md)
+[Comandos de MCI](mci-commands.md)
 </dt> </dl>
 
  

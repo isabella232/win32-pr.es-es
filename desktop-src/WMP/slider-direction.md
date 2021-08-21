@@ -1,9 +1,9 @@
 ---
-title: Control deslizante. Direction
-description: El atributo Direction especifica o recupera la dirección en la que se colocan las imágenes de control deslizante.
+title: SLIDER.direction
+description: El atributo direction especifica o recupera la dirección en la que se menten las imágenes del control deslizante.
 ms.assetid: a6add56b-3fc6-4c78-90e4-6daafd701eda
 keywords:
-- Control deslizante. Direction Windows Media Player
+- Slider.direction Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfc49f2963747508c56573a7ff699f28e93113d9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cf35e0901de44e859a9f7b11c52dd4c8d4362e3304dfba5083d268b8509e571f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118832625"
 ---
-# <a name="sliderdirection"></a>Control deslizante. Direction
+# <a name="sliderdirection"></a>SLIDER.direction
 
-El atributo **Direction** especifica o recupera la dirección en la que se colocan las imágenes de control deslizante.
+El **atributo direction** especifica o recupera la dirección en la que se menten las imágenes del control deslizante.
 
 ``` syntax
         elementID.direction
@@ -29,30 +29,30 @@ El atributo **Direction** especifica o recupera la dirección en la que se coloc
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura.
+Este atributo es una cadena de lectura y **escritura.**
 
 
 
-| Value      | Descripción                                                                             |
+| Valor      | Descripción                                                                             |
 |------------|-----------------------------------------------------------------------------------------|
-| horizontal | Predeterminada. La posición mínima está a la izquierda y la posición máxima es la derecha. |
-| vertical   | La posición mínima está en la parte inferior y la posición máxima está en la parte superior.          |
+| horizontal | Predeterminada. La posición mínima está a la izquierda y la posición máxima a la derecha. |
+| Vertical   | La posición mínima está en la parte inferior y la posición máxima en la parte superior.          |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El relleno o movimiento de **foregroundColor** o **foregroundImage** está a lo largo del eje vertical u horizontal según el valor especificado.
+El relleno o el movimiento de **foregroundColor** o **foregroundImage** se encuentra a lo largo del eje vertical u horizontal según el valor especificado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -60,13 +60,13 @@ El relleno o movimiento de **foregroundColor** o **foregroundImage** está a lo 
 
 <dl> <dt>
 
-[**Elemento SLIDEr**](slider-element.md)
+[**Elemento SLIDER**](slider-element.md)
 </dt> <dt>
 
-[**SLIDEr. foregroundColor**](slider-foregroundcolor.md)
+[**SLIDER.foregroundColor**](slider-foregroundcolor.md)
 </dt> <dt>
 
-[**SLIDEr. foregroundImage**](slider-foregroundimage.md)
+[**SLIDER.foregroundImage**](slider-foregroundimage.md)
 </dt> </dl>
 
  

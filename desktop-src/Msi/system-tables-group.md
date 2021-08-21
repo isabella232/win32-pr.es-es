@@ -1,25 +1,25 @@
 ---
-description: Las tablas del grupo tablas del sistema realizan un seguimiento de las tablas y columnas de la base de datos de instalación.
+description: Las tablas del grupo de tablas del sistema realiza un seguimiento de las tablas y columnas de la base de datos de instalación.
 ms.assetid: d20be8b6-f456-4f90-aa9e-dc122c20d20c
-title: Grupo tablas del sistema
+title: Grupo de tablas del sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 482333ec3f6f483d431aced9a984c7db1ae5cef4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c05bfd06bcff049d2aea847a2bb8d0c4c3fc3d1443a615f75912ac7d4f86d73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118623924"
 ---
-# <a name="system-tables-group"></a>Grupo tablas del sistema
+# <a name="system-tables-group"></a>Grupo de tablas del sistema
 
-Las tablas del grupo tablas del sistema realizan un seguimiento de las tablas y columnas de la base de datos de instalación.
+Las tablas del grupo de tablas del sistema realiza un seguimiento de las tablas y columnas de la base de datos de instalación.
 
--   La [ \_ tabla tablas](-tables-table.md) realiza un seguimiento de todas las tablas de la base de datos. Esto incluye las tablas que puede haber creado para sus propias acciones personalizadas. Consulte esta tabla para averiguar si existe una tabla.
--   La [ \_ tabla de columnas](-columns-table.md) realiza un seguimiento de las columnas de la base de datos de instalación. Actualmente no se realiza el seguimiento de las columnas temporales en esta tabla. Consulte esta tabla para averiguar si existe una columna determinada.
--   En la [ \_ tabla streams](-streams-table.md) se enumeran los flujos de datos OLE incrustados.
--   La [ \_ tabla Storages](-storages-table.md) enumera los almacenamientos de datos OLE incrustados.
--   [ \_ Tabla de validación](-validation-table.md). La \_ tabla de validación realiza un seguimiento de los tipos y los intervalos permitidos de cada columna de la base de datos. La \_ tabla de validación se utiliza durante el proceso de validación de la base de datos para asegurarse de que todas las columnas se han contabilizado y tienen los valores correctos. Esta tabla no se incluye con la base de datos del instalador.
+-   La [ \_ tabla Tablas realiza un](-tables-table.md) seguimiento de todas las tablas de la base de datos. Esto incluye las tablas que puede haber creado para sus propias acciones personalizadas. Consulte esta tabla para averiguar si existe una tabla.
+-   La [ \_ tabla Columnas realiza un seguimiento](-columns-table.md) de las columnas de la base de datos de instalación. Actualmente, esta tabla no realiza el seguimiento de las columnas temporales. Consulte esta tabla para averiguar si existe una columna determinada.
+-   La [ \_ Secuencias enumera los](-streams-table.md) flujos de datos OLE incrustados.
+-   En [ \_ la tabla Storages se enumeran](-storages-table.md) los almacenamientos de datos OLE incrustados.
+-   La [ \_ tabla Validation](-validation-table.md). La \_ tabla Validation realiza un seguimiento de los tipos y los intervalos permitidos de cada columna de la base de datos. La tabla Validation se usa durante el proceso de validación de la base de datos para asegurarse de que todas las columnas se tienen en cuenta \_ y tienen los valores correctos. Esta tabla no se incluye con la base de datos del instalador.
 
  
 

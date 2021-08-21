@@ -1,9 +1,9 @@
 ---
 title: Objeto PlayerApplication
-description: El objeto PlayerApplication proporciona una manera de coordinar el cambio entre un control de Windows Media Player remoto y el modo completo de Windows Media Player.
+description: El objeto PlayerApplication proporciona una manera de coordinar el cambio entre un control Reproductor de Windows Media remoto y el modo completo de Reproductor de Windows Media.
 ms.assetid: 904bb30c-939d-4aeb-ba4b-c27afee471ea
 keywords:
-- Objeto PlayerApplication Media Player de Windows
+- PlayerApplication Object Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,42 +13,42 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 950efeb0a84f43dec904b3ffd21f715061e50d4d
-ms.sourcegitcommit: 4f5016b1fbfd703dbf769c508db464c2518c0fa5
+ms.openlocfilehash: 46ac009ead54fc4d32b1a302f9228f84484ba6911b353ebb5443653378d9ce61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104358341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571836"
 ---
 # <a name="playerapplication-object"></a>Objeto PlayerApplication
 
-El objeto **PlayerApplication** proporciona una manera de coordinar el cambio entre un control de Windows Media Player remoto y el modo completo de Windows Media Player. Este objeto solo se usa con programas de C++ que implementan la interfaz **IWMPRemoteMediaServices** e incrustan el control Player en modo remoto. Los archivos de máscara usados como interfaces personalizadas para el control remoto de Windows Media Player tienen acceso a este objeto en el código de script a través del atributo global **playerApplication** .
+El **objeto PlayerApplication** proporciona una manera de coordinar el cambio entre un control Reproductor de Windows Media remoto y el modo completo de Reproductor de Windows Media. Este objeto solo se usa con programas de C++ que implementan la interfaz **IWMPRemoteMediaServices** e insertan el control Player en modo remoto. Los archivos de máscara usados como interfaces personalizadas para el control Reproductor de Windows Media acceso a este objeto en el código de script a través del atributo global **playerApplication.**
 
-El objeto **PlayerApplication** admite las siguientes propiedades.
+El **objeto PlayerApplication** admite las siguientes propiedades.
 
 
 
 | Propiedad                                           | Descripción                                                                                              |
 |----------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| [hasDisplay](playerapplication-hasdisplay.md)     | Recupera un valor que indica si el vídeo puede mostrarse a través del control remoto de Windows Media Player. |
-| [playerDocked](playerapplication-playerdocked.md) | Recupera un valor que indica si el Media Player de Windows está en un estado acoplado.                          |
+| [hasDisplay](playerapplication-hasdisplay.md)     | Recupera un valor que indica si el vídeo se puede mostrar a través del control Reproductor de Windows Media remoto. |
+| [playerDocked](playerapplication-playerdocked.md) | Recupera un valor que indica si Reproductor de Windows Media está en estado acoplado.                          |
 
 
 
- 
+ 
 
-El objeto **PlayerApplication** admite los siguientes métodos.
+El **objeto PlayerApplication** admite los métodos siguientes.
 
 
 
 | Método                                                                       | Descripción                                                                     |
 |------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [switchToControl](playerapplication-switchtocontrol.md)                     | Cambia un control de Windows Media Player remoto al estado acoplado.            |
-| [switchToPlayerApplication](playerapplication-switchtoplayerapplication.md) | Cambia un control de Windows Media Player remoto al modo completo del reproductor. |
+| [switchToControl](playerapplication-switchtocontrol.md)                     | Cambia un control Reproductor de Windows Media remoto al estado acoplado.            |
+| [switchToPlayerApplication](playerapplication-switchtoplayerapplication.md) | Cambia un control Reproductor de Windows Media remoto al modo completo del reproductor. |
 
 
 
- 
+ 
 
 Se tiene acceso al objeto **PlayerApplication** a través de la propiedad siguiente.
 
@@ -60,9 +60,9 @@ Se tiene acceso al objeto **PlayerApplication** a través de la propiedad siguie
 
 
 
- 
+ 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -72,9 +72,9 @@ Se tiene acceso al objeto **PlayerApplication** a través de la propiedad siguie
 [**Control remoto del Reproductor de Windows Media**](remoting-the-windows-media-player-control.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

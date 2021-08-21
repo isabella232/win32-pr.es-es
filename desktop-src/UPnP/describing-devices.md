@@ -1,39 +1,39 @@
 ---
-title: Describir dispositivos
+title: Descripción de dispositivos
 description: Hay dos maneras de obtener objetos de dispositivo.
 ms.assetid: a83fbf21-586e-4b92-9875-476d820c377d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5abc84f15f6b52328585e05abfd95503087124b5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9e40e7f3a8d4a535771c0a670b482122d78dd7c011d6f766608270fa577e5dbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118847386"
 ---
-# <a name="describing-devices"></a>Describir dispositivos
+# <a name="describing-devices"></a>Descripción de dispositivos
 
 Hay dos maneras de obtener objetos de dispositivo:
 
--   Uso de la interfaz [**IUPnPDescriptionDocument**](/windows/desktop/api/Upnp/nn-upnp-iupnpdescriptiondocument) . La interfaz **IUPnPDescriptionDocument** es la única interfaz segura para el scripting.
--   Uso de la interfaz [**IUPnPDeviceFinder**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevicefinder) para obtener una interfaz [**IUPnPDevices**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevices) .
+-   Uso de [**la interfaz IUPnPDescriptionDocument.**](/windows/desktop/api/Upnp/nn-upnp-iupnpdescriptiondocument) La **interfaz IUPnPDescriptionDocument** es la única interfaz segura para scripting.
+-   Uso de [**la interfaz IUPnPDeviceDeviceDevice Para**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevicefinder) obtener una interfaz [**IUPnPDevices.**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevices)
 
-Ambos métodos devuelven colecciones de dispositivos. Las aplicaciones usan los métodos de dispositivo para recuperar propiedades acerca de los dispositivos.
+Ambos métodos devuelven recopilaciones de dispositivos. A continuación, las aplicaciones usan los métodos device para recuperar propiedades sobre los dispositivos.
 
 Las aplicaciones pueden recuperar los siguientes tipos de información:
 
--   Información de la jerarquía de dispositivos, incluidos los dispositivos raíz, los dispositivos primarios y los dispositivos secundarios.
--   Propiedades de dispositivo, incluidas UDNs, identificadores uniformes de recursos (URI) y nombres legibles por el usuario.
+-   Información de jerarquía de dispositivos, incluidos los dispositivos raíz, los dispositivos primarios y los dispositivos secundarios.
+-   Propiedades del dispositivo, incluidas las UDN, los identificadores uniformes de recursos (URI) y los nombres legibles por el usuario.
 -   Información del fabricante, incluidos los nombres y las páginas web relacionadas.
--   Información del modelo, incluidos el nombre, el número, el UPC, los números de serie y las descripciones de los dispositivos.
--   Mostrar información, incluida la dirección URL para controlar el dispositivo y las direcciones URL desde las que se descargan los iconos.
+-   Información del modelo, incluidos el nombre, el número, el UPC, los números de serie y las descripciones del dispositivo.
+-   Muestra información, incluida la dirección URL para controlar el dispositivo y las direcciones URL desde las que se descargan los iconos.
 -   Servicios proporcionados por un dispositivo determinado.
 
-Las aplicaciones también obtienen la dirección URL del documento de Descripción del dispositivo mediante la interfaz [**IUPnPDeviceDocumentAccess**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevicedocumentaccess) . A continuación, la aplicación carga el documento de Descripción y trabaja con las propiedades del dispositivo y del servicio que no se exponen mediante la interfaz [**IUPnPDevice**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevice) . Esta interfaz no se puede usar en scripting porque no es la interfaz predeterminada.
+Las aplicaciones también obtienen la dirección URL del documento de descripción del dispositivo mediante la [**interfaz IUPnPDeviceDocumentAccess.**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevicedocumentaccess) A continuación, la aplicación carga el documento de descripción y trabaja con propiedades de dispositivo y servicio que no están expuestas por la [**interfaz IUPnPDevice.**](/windows/desktop/api/Upnp/nn-upnp-iupnpdevice) Esta interfaz no se puede usar en el scripting, porque no es la interfaz predeterminada.
 
-## <a name="visual-basic-example"></a>Ejemplo de Visual Basic
+## <a name="visual-basic-example"></a>Visual Basic Ejemplo
 
-En el ejemplo de código siguiente se muestra el uso de [**IUPnPDeviceDocumentAccess:: GetDocumentURL**](/windows/desktop/api/Upnp/nf-upnp-iupnpdevicedocumentaccess-getdocumenturl).
+El código de ejemplo siguiente muestra el uso de [**IUPnPDeviceDocumentAccess::GetDocumentURL**](/windows/desktop/api/Upnp/nf-upnp-iupnpdevicedocumentaccess-getdocumenturl).
 
 
 ```VB
@@ -55,7 +55,7 @@ End If
 
 ## <a name="c-example"></a>Ejemplo de C++
 
-En el ejemplo de código siguiente se muestra el uso de [**IUPnPDeviceDocumentAccess:: GetDocumentURL**](/windows/desktop/api/Upnp/nf-upnp-iupnpdevicedocumentaccess-getdocumenturl).
+El código de ejemplo siguiente muestra el uso de [**IUPnPDeviceDocumentAccess::GetDocumentURL**](/windows/desktop/api/Upnp/nf-upnp-iupnpdevicedocumentaccess-getdocumenturl).
 
 
 ```C++
@@ -139,9 +139,9 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

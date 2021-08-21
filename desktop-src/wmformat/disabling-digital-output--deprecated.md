@@ -1,33 +1,33 @@
 ---
-title: Deshabilitar la salida digital (desusado)
-description: Deshabilitar la salida digital (desusado)
+title: Deshabilitar la salida digital (en desuso)
+description: Deshabilitar la salida digital (en desuso)
 ms.assetid: 208ceb23-e0a0-4dee-aeba-e9d640248f75
 keywords:
-- Windows Media Format SDK, Microsoft Secure audio Path (SAP)
-- Administración de derechos digitales (DRM), Microsoft Secure audio Path (SAP)
-- DRM (administración de derechos digitales), Microsoft Secure audio Path (SAP)
-- SDK de Windows Media Format, ruta de acceso de audio segura (SAP)
-- Administración de derechos digitales (DRM), ruta de acceso de audio segura (SAP)
-- DRM (administración de derechos digitales), ruta de acceso de audio segura (SAP)
-- Microsoft Secure audio Path (SAP), deshabilitar la salida digital
+- Windows SDK de formato multimedia, ruta de acceso de audio seguro de Microsoft (SAP)
+- administración de derechos digitales (DRM),Ruta de acceso de audio seguro de Microsoft (SAP)
+- DRM (administración de derechos digitales),Ruta de acceso de audio seguro de Microsoft (SAP)
+- Windows SDK de formato multimedia, ruta de acceso de audio seguro (SAP)
+- administración de derechos digitales (DRM),Ruta de acceso de audio seguro (SAP)
+- DRM (administración de derechos digitales),Ruta de acceso de audio seguro (SAP)
+- Ruta de acceso de audio seguro de Microsoft (SAP), deshabilitar la salida digital
 - Ruta de acceso de audio segura (SAP), deshabilitar la salida digital
-- SAP (ruta de acceso segura de audio), deshabilitar la salida digital
+- SAP (ruta de acceso de audio seguro), deshabilitar la salida digital
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1a667034d6b56a3f764865205681847b195eaaf
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 95c7891fc541f926e28baa70bfc06e95f443d1b9e47bbc0650144a8ff7d4f1ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104419140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118704830"
 ---
-# <a name="disabling-digital-output-deprecated"></a>Deshabilitar la salida digital (desusado)
+# <a name="disabling-digital-output-deprecated"></a>Deshabilitar la salida digital (en desuso)
 
-En esta página se documenta una característica que se admitirá con una solución técnica diferente en versiones futuras de Windows.
+En esta página se documenta una característica que será compatible con otra solución técnica en versiones futuras de Windows.
 
-Otra característica de la ruta de acceso de audio seguro de Microsoft es la posibilidad de deshabilitar la salida digital. Ciertas tarjetas de sonido proporcionan una manera de enviar salidas digitales desde un dispositivo de hardware. Estos dispositivos pueden estar certificados y pasarán la autorización del componente kernel de DRM. Por lo tanto, si una tarjeta de sonido legítima tiene habilitada la salida digital, los usuarios aún podrán capturar una grabación digital perfecta de música protegida.
+Otra característica de la ruta de acceso de audio seguro de Microsoft es la capacidad de deshabilitar la salida digital. Ciertas tarjetas de sonido proporcionan una manera de enviar salidas digitales desde un dispositivo de hardware. estos dispositivos pueden estar certificados y pasarán la autorización del componente de kernel drm. Por lo tanto, si una tarjeta de sonido legítima tiene habilitada la salida digital, las personas todavía pueden capturar una grabación digital perfecta de música protegida.
 
-Esta característica permite a los propietarios de contenido o a los emisores de licencias deshabilitar la salida digital estableciendo un parámetro en las licencias para su música. Si se establece este parámetro, la tarjeta de sonido deshabilita su capacidad de salida digital al reproducir música protegida. Los usuarios pueden escuchar música descifrada, pero no pueden realizar copias.
+Esta característica permite a los propietarios de contenido o emisores de licencias deshabilitar la salida digital estableciendo un parámetro en licencias para su música. Si se establece este parámetro, la tarjeta de sonido deshabilita su capacidad de salida digital al reproducir música protegida. Los usuarios pueden escuchar música descifrada, pero no pueden realizar copias.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -36,9 +36,9 @@ Esta característica permite a los propietarios de contenido o a los emisores de
 [**Ruta de acceso de audio seguro de Microsoft**](microsoft-secure-audio-path--deprecated.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

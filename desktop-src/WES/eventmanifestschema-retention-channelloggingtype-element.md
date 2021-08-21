@@ -30,7 +30,7 @@ Determina si el archivo de registro es un archivo de registro secuencial o circu
  />
 ```
 
-El **elemento retention** se define mediante el tipo complejo [**ChannelLoggingType.**](eventmanifestschema-channelloggingtype-complextype.md)
+El **tipo** complejo [**ChannelLoggingType**](eventmanifestschema-channelloggingtype-complextype.md) define el elemento retention.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ El **elemento retention** se define mediante el tipo complejo [**ChannelLoggingT
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

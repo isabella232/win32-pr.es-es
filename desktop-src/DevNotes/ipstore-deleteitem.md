@@ -1,7 +1,7 @@
 ---
 description: Elimina el elemento especificado del almacenamiento protegido.
 ms.assetid: 1d071245-a563-4fba-9300-c47ca9a9d625
-title: IPStore::D método eleteItem (pstore. h)
+title: Método IPStore::D eleteItem (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Pstorec.dll
-ms.openlocfilehash: 3a882b9178160e8e82222943501c3317f8f11536
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e99a2ec9b39b035b4a4af24aa18c2936decd399043cc507ed0bf279c5696fd53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118667456"
 ---
-# <a name="ipstoredeleteitem-method"></a>IPStore::D método eleteItem
+# <a name="ipstoredeleteitem-method"></a>Método IPStore::D eleteItem
 
-\[El almacenamiento protegido (pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para las operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede no estar disponible en las versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura proporcionada por las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[Protected Storage (Pstore) está disponible para su uso en Windows Server 2003 y Windows XP. Solo está disponible para operaciones de solo lectura en Windows Server 2008 y Windows Vista, pero puede que no esté disponible en versiones posteriores. Pstore usa una implementación anterior de la protección de datos. Se recomienda encarecidamente a los desarrolladores que aprovechen la protección de datos más segura que proporcionan las funciones [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) y [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
 Elimina el elemento especificado del almacenamiento protegido.
 
@@ -46,7 +46,7 @@ HRESULT DeleteItem(
 
 <dl> <dt>
 
-*Clave* \[ de de\]
+*Clave* \[ En\]
 </dt> <dd>
 
 Área de almacenamiento del proveedor.
@@ -55,8 +55,8 @@ HRESULT DeleteItem(
 
 | Value                                                                                                                                                                                                                                                   | Significado                                                                            |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <span id="PST_KEY_CURRENT_USER"></span><span id="pst_key_current_user"></span><dl> <dt>**Archivo pst \_ \_ \_ Usuario actual clave**</dt> <dt>0x00000000</dt> </dl>    | El almacenamiento se mantiene en la sección usuario actual del registro.<br/>  |
-| <span id="PST_KEY_LOCAL_MACHINE"></span><span id="pst_key_local_machine"></span><dl> <dt>**Archivo pst \_ \_ \_ Máquina local de claves**</dt> <dt>0x00000001</dt> </dl> | El almacenamiento se mantiene en la sección del equipo local del registro.<br/> |
+| <span id="PST_KEY_CURRENT_USER"></span><span id="pst_key_current_user"></span><dl> <dt>**PST \_ Clave \_ de \_ usuario actual**</dt> <dt>0x00000000</dt> </dl>    | El almacenamiento se mantiene en la sección de usuario actual del registro.<br/>  |
+| <span id="PST_KEY_LOCAL_MACHINE"></span><span id="pst_key_local_machine"></span><dl> <dt>**PST \_ Clave \_ de \_ máquina local**</dt> <dt>0x00000001</dt> </dl> | El almacenamiento se mantiene en la sección máquina local del registro.<br/> |
 
 
 
@@ -64,44 +64,44 @@ HRESULT DeleteItem(
 
 </dd> <dt>
 
-*pItemType* \[ de\]
+*pItemType* \[ En\]
 </dt> <dd>
 
-Un puntero a un **GUID** que identifica el tipo de datos del elemento que se va a eliminar.
+Puntero a un **GUID** que identifica el tipo de datos del elemento que se eliminará.
 
 </dd> <dt>
 
-*pItemSubType* \[ de\]
+*pItemSubType* \[ En\]
 </dt> <dd>
 
-**GUID** que indica el subtipo de elemento que se va a eliminar.
+GUID **que** indica el subtipo de elemento que se debe eliminar.
 
 </dd> <dt>
 
-*szItemName* \[ de\]
+*szItemName* \[ En\]
 </dt> <dd>
 
-Cadena que contiene el nombre del elemento que se va a eliminar.
+Cadena que contiene el nombre del elemento que se eliminará.
 
 </dd> <dt>
 
-*pPromptInfo* \[ de\]
+*pPromptInfo* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**\_ PROMPTINFO de PST**](pst-promptinfo.md) .
+Puntero a una [**estructura \_ PROMPTINFO de PST.**](pst-promptinfo.md)
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Especifica la interfaz de usuario y los comportamientos de seguridad para la operación de eliminación.
+Especifica los comportamientos de seguridad y la interfaz de usuario para la operación de eliminación.
 
 
 
 | Value                                                                                                                                                                                                                                             | Significado                                                                     |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| <span id="PST_NO_UI_MIGRATION"></span><span id="pst_no_ui_migration"></span><dl> <dt>**Archivo pst \_ SIN \_ \_ migración de IU**</dt> <dt>0x00000010</dt> </dl> | No mostrar la interfaz de usuario a menos que se requiera una contraseña personalizada.<br/> |
+| <span id="PST_NO_UI_MIGRATION"></span><span id="pst_no_ui_migration"></span><dl> <dt>**PST \_ NO SE \_ HA \_ 0X00000010**</dt> <dt></dt> </dl> | No muestre la interfaz de usuario a menos que se requiera una contraseña personalizada.<br/> |
 
 
 
@@ -111,7 +111,7 @@ Especifica la interfaz de usuario y los comportamientos de seguridad para la ope
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es un valor **HRESULT** . Un valor de **PST \_ E \_ OK** indica que la función se realizó correctamente.
+El valor devuelto es un **valor HRESULT.** Un valor de **PST \_ E OK \_ indica** que la función se ha realizado correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -119,7 +119,7 @@ El valor devuelto es un valor **HRESULT** . Un valor de **PST \_ E \_ OK** indic
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Pstore. h</dt> </dl>    |
+| Encabezado<br/> | <dl> <dt>Pstore.h</dt> </dl>    |
 | Archivo DLL<br/>    | <dl> <dt>Pstorec.dll</dt> </dl> |
 
 
@@ -131,7 +131,7 @@ El valor devuelto es un valor **HRESULT** . Un valor de **PST \_ E \_ OK** indic
 [**IPStore**](ipstore.md)
 </dt> <dt>
 
-[**PST \_ PROMPTINFO**](pst-promptinfo.md)
+[**PROMPTINFO \_ de PST**](pst-promptinfo.md)
 </dt> </dl>
 
  

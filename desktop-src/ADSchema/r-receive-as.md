@@ -1,10 +1,10 @@
 ---
-title: Receive-As derecha extendida
-description: Exchange Right permite recibir correo como un buzón determinado.
+title: Receive-As derecho extendido
+description: Exchange derecho permite recibir correo como un buzón determinado.
 ms.assetid: 3fa0cab3-5de4-4bd9-9e6c-95b0b6a4c0f8
 ms.tgt_platform: multiple
 keywords:
-- Receive-As esquema de AD derecho extendido
+- Receive-As de AD derecho extendido
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca5a79de774579ac7c259d5a1c8ca9c590ac5cb2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1a1e2d8650e2db18b5b76447446aa1e7d510f869e15d6ee0a1eccf4aa1d8d569
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118680228"
 ---
-# <a name="receive-as-extended-right"></a>Receive-As derecha extendida
+# <a name="receive-as-extended-right"></a>Receive-As derecho extendido
 
-Exchange Right: permite recibir correo como un buzón determinado.
+Exchange derecho: permite recibir correo como un buzón determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
 | CN           | Receive-As                           |
 | Display-Name | Recibir como                           |
@@ -47,10 +47,10 @@ Exchange Right: permite recibir correo como un buzón determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-----------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> |
-| Localización: ID. de presentación | 5                                                                           |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> |
+| Localization-Display-ID | 5                                                                           |
 
 
 
@@ -58,10 +58,10 @@ Exchange Right: permite recibir correo como un buzón determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localización: ID. de presentación | 5                                                                                                                               |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 5                                                                                                                               |
 
 
 
@@ -69,10 +69,10 @@ Exchange Right: permite recibir correo como un buzón determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localización: ID. de presentación | 5                                                                                                                               |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 5                                                                                                                               |
 
 
 
@@ -80,10 +80,10 @@ Exchange Right: permite recibir correo como un buzón determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localización: ID. de presentación | 5                                                                                                                               |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 5                                                                                                                               |
 
 
 
@@ -91,10 +91,10 @@ Exchange Right: permite recibir correo como un buzón determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**Cuenta de servicio de MS-DS-Managed**](c-msds-managedserviceaccount.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localización: ID. de presentación | 5                                                                                                                                                                                                                |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 5                                                                                                                                                                                                                |
 
 
 
@@ -102,10 +102,10 @@ Exchange Right: permite recibir correo como un buzón determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**Cuenta de servicio de MS-DS-Managed**](c-msds-managedserviceaccount.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localización: ID. de presentación | 5                                                                                                                                                                                                                |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 5                                                                                                                                                                                                                |
 
 
 

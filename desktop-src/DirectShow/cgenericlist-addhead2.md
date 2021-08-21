@@ -1,7 +1,7 @@
 ---
-description: El método AddHead agrega una lista al principio de la lista.
+description: El método AddHead agrega una lista al frente de la lista.
 ms.assetid: 9a344bed-d871-4082-9bbb-330f2ff42cca
-title: 'Método CGenericList. AddHead (Wxlist. h): parámetro plist'
+title: 'Método CGenericList.AddHead (Wxlist.h): parámetro pList'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0039566f111033062bca080cb24924c7ea4324ac
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: c26667ce12af902f3d5cf355a6556dc95e5dd1f5e0cad77f944e663eeef8ce67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105670275"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118656160"
 ---
-# <a name="cgenericlistaddhead-method-wxlisth---plist-parameter"></a>Método CGenericList. AddHead (Wxlist. h): parámetro plist
+# <a name="cgenericlistaddhead-method-wxlisth---plist-parameter"></a>Método CGenericList.AddHead (Wxlist.h): parámetro pList
 
-El `AddHead` método agrega una lista al principio de la lista.
+El `AddHead` método agrega una lista al frente de la lista.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,29 +42,29 @@ BOOL AddHead(
 
 <dl> <dt>
 
-*pList* 
+*Plist* 
 </dt> <dd>
 
-Puntero a la lista de elementos que se van a agregar.
+Puntero a la lista de elementos que se agregarán.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto, o **false** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Value |
 |-|-|
-| Encabezado | Wxlist. h (incluir streams. h) |
-| Biblioteca| Strmbase. lib (compilaciones comerciales); Strmbasd. lib (compilaciones de depuración) |
+| Encabezado | Wxlist.h (incluir Secuencias.h) |
+| Biblioteca| Strmbase.lib (compilaciones comerciales); Strmbasd.lib (compilaciones de depuración) |
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Clase CGenericList**](cgenericlist.md)
+[**CGenericList (clase)**](cgenericlist.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Representa los datos de configuración del dominio de enrutamiento.
 ms.assetid: 6216cc4e-b2aa-4344-b8fa-489b986c14be
-title: Msvm_EthernetSwitchPortRoutingDomainSettingData (clase)
+title: Msvm_EthernetSwitchPortRoutingDomainSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,14 +17,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 40e16a3c952e63ab89c345201742dafe24cdde7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b0bc01c7e771996d46c29b0f6341e3a535860c4c36996562e7e526ca5db59a2e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119523845"
 ---
-# <a name="msvm_ethernetswitchportroutingdomainsettingdata-class"></a>MSVM \_ EthernetSwitchPortRoutingDomainSettingData (clase)
+# <a name="msvm_ethernetswitchportroutingdomainsettingdata-class"></a>Clase Msvm \_ EthernetSwitchPortRoutingDomainSettingData
 
 Representa los datos de configuración del dominio de enrutamiento.
 
@@ -45,45 +45,45 @@ class Msvm_EthernetSwitchPortRoutingDomainSettingData : Msvm_EthernetSwitchPortF
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ EthernetSwitchPortRoutingDomainSettingData** tiene estos tipos de miembros:
+La **clase Msvm \_ EthernetSwitchPortRoutingDomainSettingData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ EthernetSwitchPortRoutingDomainSettingData** tiene estas propiedades.
+La **clase Msvm \_ EthernetSwitchPortRoutingDomainSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
 **IsolationIdList**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32** array
+Tipo de datos: **matriz uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (3), [**versión**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**revisión**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Calificadores: **WmiDataId** (3), [**Versión**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisión**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
-Los identificadores de VirtualSubnetId o VLAN para los dominios de enrutamiento.
+Identificadores de VLAN o VirtualSubnetId para los dominios de enrutamiento.
 
 </dd> <dt>
 
 **IsolationIdNameList**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (4), [**versión**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**revisión**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Calificadores: **WmiDataId** (4), [**Versión**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisión**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
-La matriz de nombres descriptivos de VirtualSubnetId o VLAN.
+Matriz de nombres descriptivos de VirtualSubnetId o VLAN.
 
 </dd> <dt>
 
@@ -93,10 +93,10 @@ La matriz de nombres descriptivos de VirtualSubnetId o VLAN.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (38), **WmiDataId** (1), [**versión**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**revisión**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (38), **WmiDataId** (1), [**Versión**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisión**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
 GUID del dominio de enrutamiento.
@@ -109,10 +109,10 @@ GUID del dominio de enrutamiento.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (127), **WmiDataId** (2), [**versión**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**revisión**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (127), **WmiDataId** (2), [**Versión**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisión**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
 Nombre descriptivo del dominio de enrutamiento.
@@ -123,12 +123,12 @@ Nombre descriptivo del dominio de enrutamiento.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -137,7 +137,7 @@ Nombre descriptivo del dominio de enrutamiento.
 
 <dl> <dt>
 
-[**MSVM \_ EthernetSwitchPortFeatureSettingData**](msvm-ethernetswitchportfeaturesettingdata.md)
+[**Msvm \_ EthernetSwitchPortFeatureSettingData**](msvm-ethernetswitchportfeaturesettingdata.md)
 </dt> </dl>
 
  

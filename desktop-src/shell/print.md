@@ -1,36 +1,36 @@
 ---
-description: La API de Shell proporciona funciones que se pueden usar para administrar impresoras en red. Si un archivo tiene asociado el verbo imprimir, puede usar el comando ShellExecuteEx para imprimirlo.
+description: Shell API proporciona funciones que puede usar para administrar impresoras en red. Si un archivo tiene asociado el verbo de impresión, puede usar el comando ShellExecuteEx para imprimirlo.
 ms.assetid: b94fca60-237a-43b1-a75a-faccf9dc63fb
-title: Administrar impresoras
+title: Administración de impresoras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73e9625fbe17c0dd350a10c0c71dcd5332fb9154
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7086b360355d0ad85be440bc8bc9e330bfa6dd25793cc943d3aacdbaa0d4a8f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118719603"
 ---
-# <a name="managing-printers"></a>Administrar impresoras
+# <a name="managing-printers"></a>Administración de impresoras
 
-La API de Shell proporciona funciones que se pueden usar para administrar impresoras en red. Si un archivo tiene asociado el verbo **Imprimir** , puede usar el comando [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) para imprimirlo.
+Shell API proporciona funciones que puede usar para administrar impresoras en red. Si un archivo tiene asociado **el** verbo de impresión, puede usar el [**comando ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) para imprimirlo.
 
 -   [Administración de impresoras](#printer-management)
--   [Imprimir archivos con ShellExecuteEx](#printing-files-with-shellexecuteex)
+-   [Impresión de archivos con ShellExecuteEx](#printing-files-with-shellexecuteex)
 
 ## <a name="printer-management"></a>Administración de impresoras
 
-Puede administrar impresoras en un sistema con la función [**SHInvokePrinterCommand**](/windows/desktop/api/Shellapi/nf-shellapi-shinvokeprintercommanda) . Esta función le permite:
+Puede administrar impresoras en un sistema con la [**función SHInvokePrinterCommand.**](/windows/desktop/api/Shellapi/nf-shellapi-shinvokeprintercommanda) Esta función le permite:
 
--   Instalar impresoras.
+-   Instale impresoras.
 -   Abra impresoras.
 -   Obtiene las propiedades de la impresora.
--   Crear vínculos de impresora.
+-   Cree vínculos de impresora.
 -   Imprima una página de prueba.
 
-## <a name="printing-files-with-shellexecuteex"></a>Imprimir archivos con ShellExecuteEx
+## <a name="printing-files-with-shellexecuteex"></a>Impresión de archivos con ShellExecuteEx
 
-Si un tipo de archivo tiene un comando de impresión asociado, puede imprimir el archivo llamando a [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) con **Print** como el verbo. Este comando suele ser el mismo que el utilizado para el verbo **abierto** , con la adición de una marca para indicar a la aplicación que imprima el archivo. Por ejemplo, Microsoft WordPad puede imprimir archivos. txt. El verbo **Open** de un archivo. txt se correspondería a algo como el comando siguiente:
+Si un tipo de archivo tiene un comando de impresión asociado, puede imprimir el archivo llamando a [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) con **print** como verbo. Este comando suele ser el mismo que el que se usa para el **verbo** abierto, con la adición de una marca para que la aplicación imprima el archivo. Por ejemplo, .txt archivos se pueden imprimir mediante Microsoft WordPad. El **verbo** abierto para un .txt archivo se correspondería con algo parecido al comando siguiente:
 
 
 ```C++
@@ -39,7 +39,7 @@ Si un tipo de archivo tiene un comando de impresión asociado, puede imprimir el
 
 
 
-Cuando se usa [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) para imprimir un archivo. txt, WordPad abre el archivo, lo imprime y, a continuación, lo cierra, y devuelve el control a la aplicación. La siguiente función de ejemplo toma una ruta de acceso completa y usa **ShellExecuteEx** para imprimirla, mediante el comando Print asociado a su extensión de nombre de archivo.
+Cuando se usa [**ShellExecuteEx**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecuteexa) para imprimir un archivo .txt, WordPad abre el archivo, lo imprime y, a continuación, se cierra, devolviendo el control a la aplicación. La siguiente función de ejemplo toma una ruta de acceso completa y usa **ShellExecuteEx** para imprimirla, mediante el comando print asociado a su extensión de nombre de archivo.
 
 
 ```C++

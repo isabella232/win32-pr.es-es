@@ -4,12 +4,12 @@ description: En el ejemplo siguiente se muestra cómo enviar una solicitud de fo
 ms.assetid: 1dd32e17-88bb-4729-80f6-f4f1184788d5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 591ea3ab0cba39cacacd7657aa12f205e5198966
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: db3bf42c9ccd9378c748171b39523e816444ea89d73cdd7226fa95105d6ef3b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104268936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118562328"
 ---
 # <a name="asynchronous-example-application"></a>Aplicación de ejemplo asincrónica
 
@@ -1829,9 +1829,9 @@ Return Value:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

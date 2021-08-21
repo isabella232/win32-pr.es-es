@@ -1,7 +1,7 @@
 ---
-description: El método IsStreamTime especifica si el comando se va a ejecutar en el momento de la secuencia o en el tiempo de presentación.
+description: El método IsStreamTime especifica si el comando se va a ejecutar en tiempo de transmisión o en tiempo de presentación.
 ms.assetid: 4fb315a4-1bc6-49c8-a47f-0a8a46f3f790
-title: Método CDeferredCommand. IsStreamTime (Ctlutil. h)
+title: Método CDeferredCommand.IsStreamTime (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0e15b579f911f6461df30c6b5ae9d3fc29f6fa1b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 82c541220a2b89ecdd23e4676175f4c7b2aacd93aac008546349b38e7bc2455a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118657208"
 ---
-# <a name="cdeferredcommandisstreamtime-method"></a>CDeferredCommand. IsStreamTime, método
+# <a name="cdeferredcommandisstreamtime-method"></a>Método CDeferredCommand.IsStreamTime
 
-El `IsStreamTime` método especifica si el comando se va a ejecutar en el momento de la secuencia o en el tiempo de presentación.
+El método especifica si el comando se va a ejecutar en tiempo `IsStreamTime` de transmisión o en tiempo de presentación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si se establece en Stream Time; de lo contrario, devuelve **false**.
+Devuelve **TRUE si** se establece en stream time; de lo contrario, **devuelve FALSE**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve **true** si se establece en Stream Time; de lo contrario, devuelve **fa
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve **true** si se establece en Stream Time; de lo contrario, devuelve **fa
 
 <dl> <dt>
 
-[**Clase CDeferredCommand**](cdeferredcommand.md)
+[**CDeferredCommand (clase)**](cdeferredcommand.md)
 </dt> </dl>
 
  

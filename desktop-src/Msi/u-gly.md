@@ -1,19 +1,19 @@
 ---
-description: Obtenga información Windows Installer conceptos que comienzan por la letra U, como la degradación y el control de cuentas de usuario.
+description: Obtenga información Windows conceptos del instalador que comienzan por la letra U, como la actualización y el control de cuentas de usuario.
 ms.assetid: 8dacad71-2cc3-4c9a-b5d4-d9781f4f9d51
-title: U (Windows Installer)
+title: U (Windows instalador)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4609520ab7599c5202a60afd4e51834034e4ae41
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: 6f34f203807482f9671c2ccc38ed1718d47bf3c9bc2fa19283935637e5a0fbea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112010708"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118623514"
 ---
-# <a name="u-windows-installer"></a>U (Windows Installer)
+# <a name="u-windows-installer"></a>U (Windows instalador)
 
-[A](a-gly.md) [B](b-gly.md) [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) [F](f-gly.md) [G](g-gly.md) H [I](i-gly.md) J K L M [N](m-gly.md) [O](o-gly.md) P [P](p-gly.md) [Q](q-gly.md) [R](r-gly.md) [S](s-gly.md) [T](t-gly.md) U [V](v-gly.md) W X Y Z
+[A](a-gly.md) [B](b-gly.md) [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) [F](f-gly.md) [G](g-gly.md) H [I](i-gly.md) J K L M [N](m-gly.md) [O](o-gly.md) [P](p-gly.md) [Q](q-gly.md) [R](r-gly.md) [S](s-gly.md) [T](t-gly.md) U [V](v-gly.md) W X Y Z
 
 <dl> <dt>
 

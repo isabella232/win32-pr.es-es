@@ -1,5 +1,5 @@
 ---
-description: 'Método IShellDispatch4.WindowsSecurity: muestra el Seguridad de Windows diálogo.'
+description: 'Método IShellDispatch4.WindowsSecurity: muestra el Seguridad de Windows de diálogo.'
 title: Método IShellDispatch4.WindowsSecurity (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 665c4644-7749-446e-8212-3ecc9901a035
-ms.openlocfilehash: 6eadb580c73e5e56592c94e997bdc22c2cf894b4
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 8142867d8d0423729794460a077a0f7f12d97f5d9744a119571d3ddd2b90a592
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118720717"
 ---
-# <a name="ishelldispatch4windowssecurity-method"></a>Método IShellDispatch4.WindowsSecurity
+# <a name="ishelldispatch4windowssecurity-method"></a>IShellDispatch4.WindowsSecurity (método)
 
 Muestra el **cuadro Seguridad de Windows** de diálogo.
 
@@ -55,7 +55,7 @@ Este método no devuelve ningún valor.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método muestra el cuadro de diálogo que se muestra después de presionar CTRL+ALT+SUPR o usar la opción de seguridad en el **menú** Inicio.
 
@@ -68,7 +68,7 @@ Este método muestra el cuadro de diálogo que se muestra después de presionar 
 
 En los ejemplos siguientes se muestra el uso de **WindowsSecurity** para JScript, VBScript y Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -120,10 +120,10 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                                                   |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                                   |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6.0 o posterior)</dt> </dl> |

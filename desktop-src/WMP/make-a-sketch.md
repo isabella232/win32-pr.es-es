@@ -3,41 +3,41 @@ title: Crear un boceto
 description: Crear un boceto
 ms.assetid: 4030aae7-26e7-4acd-a988-6ac53ce43639
 keywords:
-- Aspectos de Windows Media Player Mobile, bocetos
+- Reproductor de Windows Media Máscaras móviles, bocetos
 - máscaras, bocetos
 - crear máscaras, bocetos
 - bocetos en máscaras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aff7edba0eaa115f6cc88c2a62f0060b700ed21a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1e498850b723645f43cb2858cac9d40f7bf06822c49b70155ae5448c9d012910
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104269470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118837237"
 ---
 # <a name="make-a-sketch"></a>Crear un boceto
 
-No es necesario hacer esto, pero puede ser muy útil para que el diseño tenga la apariencia que desee. Si planea por adelantado, puede dejar de moverse por varios archivos de mapa de bits.
+No es necesario hacerlo, pero puede ser muy útil para que el diseño tenga el aspecto que desee. Si planea con antelación, puede ahorrarse tener que mover el arte en varios archivos de mapa de bits.
 
-Inicie Photoshop y cree una nueva imagen del tamaño requerido. Cree una nueva capa que contenga el boceto aproximado. Si tiene un boceto y un escáner, es posible que desee escanear el boceto en Photoshop. En la ilustración siguiente se muestra un ejemplo de un boceto aproximado.
+Inicie Photoshop y cree una nueva imagen del tamaño necesario. Cree una nueva capa para contener el boceto aproximado. Si tiene un boceto y un escáner, es posible que quiera examinar el boceto en Photoshop. En la ilustración siguiente se muestra un ejemplo de un boceto aproximado.
 
 ![boceto aproximado](images/ceswmskt.png)
 
-El botón PlayPause se encuentra en la parte superior izquierda, los botones detener, siguiente y anterior están a la izquierda, la barra de desplazamiento del volumen está en la parte inferior y la marquesina está entre el botón PlayPause y la barra de desplazamiento del volumen.
+El botón PlayPause está en la parte superior izquierda, los botones Detener, Siguiente y Anterior están a la izquierda, la barra de seguimiento de volumen está en la parte inferior y la marquesina está entre el botón PlayPause y la barra de seguimiento volume.
 
-Al crear una máscara para Windows Media Player 10 Mobile o posterior, se debe usar un botón PlayPauseStop en lugar de un botón PlayPause. No es necesario un botón de detención adicional.
+Al crear una máscara para Reproductor de Windows Media 10 Mobile o posterior, se debe usar un botón PlayPauseStop en lugar de un botón PlayPause. No se necesita un botón Detener adicional.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Crear el arte**](creating-the-art.md)
+[**Creación del arte**](creating-the-art.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

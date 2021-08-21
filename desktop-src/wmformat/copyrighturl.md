@@ -29,13 +29,13 @@ g \_ wszWMCopyrightURL
 
 ## <a name="data-type"></a>Tipo de datos
 
-**CADENA DE TIPO WMT \_ \_**
+**CADENA DE \_ TIPO \_ WMT**
 
 ## <a name="remarks"></a>Comentarios
 
 Este atributo se aplica a todo el archivo.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

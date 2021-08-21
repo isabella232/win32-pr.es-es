@@ -1,11 +1,11 @@
 ---
-title: Address-Book-Roots (atributo)
-description: Utilizado por Exchange. Exchange configura árboles de contenedores de libretas de direcciones para que se muestren en la libreta de direcciones MAPI. Este atributo en el objeto de configuración de Exchange muestra las raíces de los árboles de contenedores de libretas de direcciones. | Address-Book-Roots (atributo)
+title: Atributo Address-Book-Roots
+description: Usado por Exchange. Exchange configura árboles de contenedores de libretas de direcciones para que se muestren en la libreta de direcciones de MAPI. Este atributo en el objeto Exchange config enumera las raíces de los árboles de contenedor de la libreta de direcciones. | Atributo Address-Book-Roots
 ms.assetid: 7e6d2677-9818-4870-8429-50f73f9c8c1f
 ms.tgt_platform: multiple
 keywords:
-- Address-Book-Roots atributo AD Schema
-- addressBookRoots esquema de AD de atributos
+- Esquema de AD del atributo Address-Book-Roots
+- Esquema de AD del atributo addressBookRoots
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab195744bb7fb5029a9a48aeca55d703e6e05b62
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d2a1d6edd1ba18da126be413224bd32c71c707e8cb905dca9445513467b9af22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105660031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118689012"
 ---
-# <a name="address-book-roots-attribute"></a>Address-Book-Roots (atributo)
+# <a name="address-book-roots-attribute"></a>Atributo Address-Book-Roots
 
-Utilizado por Exchange. Exchange configura árboles de contenedores de libretas de direcciones para que se muestren en la libreta de direcciones MAPI. Este atributo en el objeto de configuración de Exchange muestra las raíces de los árboles de contenedores de libretas de direcciones.
+Usado por Exchange. Exchange configura árboles de contenedores de libretas de direcciones para que se muestren en la libreta de direcciones de MAPI. Este atributo en el objeto Exchange config enumera las raíces de los árboles de contenedor de la libreta de direcciones.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | Libretas de direcciones: raíces                      |
-| Nombre para mostrar de LDAP | addressBookRoots                        |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | Address-Book-Roots                      |
+| Ldap-Display-Name | addressBookRoots                        |
+| Size              | \-                                      |
+| Privilegio actualizar  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1244                 |
-| System-ID-GUID    | f70b6e48-06f4-11d2-aa53-00c04fd7d83a    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | f70b6e48-06f4-11d2-aa53-00c04fd7d83a    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -53,20 +53,20 @@ Utilizado por Exchange. Exchange configura árboles de contenedores de libretas 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                   |
+| Id. de vínculo                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
-| System-Only            | False                                                                                |
-| Tiene un único valor       | False                                                                                |
-| Está indexado             | False                                                                                |
-| En el catálogo global      | False                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                         |
+| System-Only            | Falso                                                                                |
+| Es de un solo valor       | Falso                                                                                |
+| Está indexado             | Falso                                                                                |
+| En el catálogo global      | Falso                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Clases usadas en        | [**MS-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
+| Clases usadas en        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -74,20 +74,20 @@ Utilizado por Exchange. Exchange configura árboles de contenedores de libretas 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                   |
+| Id. de vínculo                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
-| System-Only            | False                                                                                |
-| Tiene un único valor       | False                                                                                |
-| Está indexado             | False                                                                                |
-| En el catálogo global      | False                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                         |
+| System-Only            | Falso                                                                                |
+| Es de un solo valor       | Falso                                                                                |
+| Está indexado             | Falso                                                                                |
+| En el catálogo global      | Falso                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Clases usadas en        | [**MS-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
+| Clases usadas en        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -95,20 +95,20 @@ Utilizado por Exchange. Exchange configura árboles de contenedores de libretas 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                   |
+| Id. de vínculo                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
-| System-Only            | False                                                                                |
-| Tiene un único valor       | False                                                                                |
-| Está indexado             | False                                                                                |
-| En el catálogo global      | False                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                         |
+| System-Only            | Falso                                                                                |
+| Es de un solo valor       | Falso                                                                                |
+| Está indexado             | Falso                                                                                |
+| En el catálogo global      | Falso                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Clases usadas en        | [**MS-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
+| Clases usadas en        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Utilizado por Exchange. Exchange configura árboles de contenedores de libretas 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                   |
+| Id. de vínculo                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
-| System-Only            | False                                                                                |
-| Tiene un único valor       | False                                                                                |
-| Está indexado             | False                                                                                |
-| En el catálogo global      | False                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                         |
+| System-Only            | Falso                                                                                |
+| Es de un solo valor       | Falso                                                                                |
+| Está indexado             | Falso                                                                                |
+| En el catálogo global      | Falso                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Clases usadas en        | [**MS-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
+| Clases usadas en        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -137,20 +137,20 @@ Utilizado por Exchange. Exchange configura árboles de contenedores de libretas 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                   |
+| Id. de vínculo                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
-| System-Only            | False                                                                                |
-| Tiene un único valor       | False                                                                                |
-| Está indexado             | False                                                                                |
-| En el catálogo global      | False                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                         |
+| System-Only            | Falso                                                                                |
+| Es de un solo valor       | Falso                                                                                |
+| Está indexado             | Falso                                                                                |
+| En el catálogo global      | Falso                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Clases usadas en        | [**MS-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
+| Clases usadas en        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -158,20 +158,20 @@ Utilizado por Exchange. Exchange configura árboles de contenedores de libretas 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                   |
+| Id. de vínculo                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
-| System-Only            | False                                                                                |
-| Tiene un único valor       | False                                                                                |
-| Está indexado             | False                                                                                |
-| En el catálogo global      | False                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                         |
+| System-Only            | Falso                                                                                |
+| Es de un solo valor       | Falso                                                                                |
+| Está indexado             | Falso                                                                                |
+| En el catálogo global      | Falso                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Clases usadas en        | [**MS-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
+| Clases usadas en        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 

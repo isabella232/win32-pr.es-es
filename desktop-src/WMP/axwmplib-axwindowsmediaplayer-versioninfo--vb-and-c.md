@@ -1,11 +1,11 @@
 ---
-title: Propiedad AxWindowsMediaPlayer. versionInfo
-description: La propiedad versionInfo obtiene un valor que especifica la versión de Windows Media Player.
+title: Propiedad AxWindowsMediaPlayer.versionInfo
+description: La propiedad versionInfo obtiene un valor que especifica la versión del Reproductor de Windows Media.
 ms.assetid: e128bec5-1ae9-4710-800e-4f97df362909
 keywords:
-- propiedades de versionInfo Media Player de Windows
-- propiedad versionInfo Media Player de Windows, clase AxWindowsMediaPlayer
-- Clase AxWindowsMediaPlayer Windows Media Player, propiedad versionInfo
+- propiedad versionInfo Reproductor de Windows Media
+- Propiedad versionInfo Reproductor de Windows Media , clase AxWindowsMediaPlayer
+- Clase AxWindowsMediaPlayer Reproductor de Windows Media , propiedad versionInfo
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2f759c2aedb19e21c4b7d90f3634141e4c37ec8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2fd7491af0fc102f03da9855b78ecef79ac0a09ca9b3ab8b49f9bf6b948f0d86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699986"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118841166"
 ---
-# <a name="axwindowsmediaplayerversioninfo-property"></a>Propiedad AxWindowsMediaPlayer. versionInfo
+# <a name="axwindowsmediaplayerversioninfo-property"></a>Propiedad AxWindowsMediaPlayer.versionInfo
 
-La propiedad versionInfo obtiene un valor que especifica la versión de Windows Media Player.
+La propiedad versionInfo obtiene un valor que especifica la versión del Reproductor de Windows Media.
 
 Esta propiedad es de solo lectura.
 
@@ -48,11 +48,11 @@ Public ReadOnly Property versionInfo As System.String
 
 ## <a name="property-value"></a>Valor de propiedad
 
-System. String que es la información de versión con el siguiente formato: "*X*. 0,0. *Yyyy*", donde *X* representa el número de versión principal e *yyyy* representa el número de compilación.
+System.String que es la información de versión en el formato siguiente: "*X*.0.0. *YYYY "* donde *X* representa el número de versión principal y *YYYY representa* el número de compilación.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crea un botón que, cuando se hace clic en él, muestra un cuadro de mensaje que contiene la información de versión de Windows Media Player. El objeto AxWMPLib. AxWindowsMediaPlayer se representa mediante la variable denominada Player.
+En el ejemplo siguiente se crea un botón que, al hacer clic en él, muestra un cuadro de mensaje que contiene la información de versión de Reproductor de Windows Media. El objeto AxWMPLib.AxWindowsMediaPlayer se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -90,7 +90,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

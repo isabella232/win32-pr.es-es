@@ -1,19 +1,19 @@
 ---
-description: La extensión de archivo del destino de vínculo. Vea System. FileExtension.
+description: Extensión de archivo del destino del vínculo. Consulte System.FileExtension.
 ms.assetid: b3271c47-31a5-46c9-83ac-b18c0f392def
-title: System. Link. TargetExtension
+title: System.Link.TargetExtension
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d212bcd9ad3b86c91e0ec1ceeb0cd7db9134f62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 666144876ded3e71842d4a6305f5a6b81494c7ede0b2fe3cec061c8d5bdb6f45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716467"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118726455"
 ---
-# <a name="systemlinktargetextension"></a>System. Link. TargetExtension
+# <a name="systemlinktargetextension"></a>System.Link.TargetExtension
 
-La extensión de archivo del destino de vínculo. Vea [System. FileExtension](./props-system-fileextension.md)
+Extensión de archivo del destino del vínculo. Consulte [System.FileExtension.](./props-system-fileextension.md)
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

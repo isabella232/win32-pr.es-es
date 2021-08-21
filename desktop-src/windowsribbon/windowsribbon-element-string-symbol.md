@@ -1,9 +1,9 @@
 ---
-title: String. Symbol (propiedad)
+title: Propiedad String.Symbol
 description: Representa el nombre de un recurso de cadena.
 ms.assetid: 7c1d0197-2c9b-4f42-afba-73fd1c366deb
 keywords:
-- Propiedad String. Symbol de la cinta de opciones de Windows
+- String.Symbol, propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7bf7d30ddd8677b1c5ff0a5e55d4b9c119795ab
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fe6c071461fcdeb5f2bbbdbb15fce0f3f6e6031edddf4bd18e034416ba8c49e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118706875"
 ---
-# <a name="stringsymbol-property"></a>String. Symbol (propiedad)
+# <a name="stringsymbol-property"></a>Propiedad String.Symbol
 
 Representa el nombre de un recurso de cadena.
 
@@ -43,25 +43,25 @@ No hay elementos secundarios.
 
 | Elemento                                                   |
 |-----------------------------------------------------------|
-| [**String@**](windowsribbon-element-string.md)<br/> |
+| [**String**](windowsribbon-element-string.md)<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Opcional.
 
-Puede aparecer como máximo una vez para cada elemento de [**cadena**](windowsribbon-element-string.md) .
+Puede producirse como máximo una vez para cada [**elemento String.**](windowsribbon-element-string.md)
 
 El símbolo está asociado a una definición de cadena en el archivo de encabezado de la cinta de opciones, por ejemplo, `#define strSave 59999` .
 
-Este elemento contiene un valor de tipo *xs: String*. El valor está restringido a una cadena formada por una letra o un carácter de subrayado seguido de cualquier secuencia de letras, dígitos o caracteres de subrayado.
+Este elemento contiene un valor de tipo *xs:string.* El valor está restringido a una cadena compuesta por una letra o un carácter de subrayado seguido de cualquier secuencia de letras, dígitos o caracteres de subrayado.
 
 La longitud máxima es de 100 caracteres.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado de un elemento [**Command. LabelTitle**](windowsribbon-element-command-labeltitle.md) con una declaración **String. Symbol** .
+En el ejemplo siguiente se muestra el marcado de [**un elemento Command.LabelTitle**](windowsribbon-element-command-labeltitle.md) con una **declaración String.Symbol.**
 
 
 ```XML
@@ -80,10 +80,10 @@ En el ejemplo siguiente se muestra el marcado de un elemento [**Command. LabelTi
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 
 

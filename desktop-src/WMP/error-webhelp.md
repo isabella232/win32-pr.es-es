@@ -1,11 +1,11 @@
 ---
-title: Error. WebHelp (método)
-description: El método WebHelp inicia la página de ayuda Web de Windows Media Player para mostrar información adicional sobre el primer error en la cola de errores (índice cero). | Error. WebHelp (método)
+title: Método Error.webHelp
+description: El método webHelp inicia la página Reproductor de Windows Media Web Help para mostrar más información sobre el primer error en la cola de errores (índice cero). | Método Error.webHelp
 ms.assetid: 79797b41-1d47-4347-aa47-c104f7f7fbaf
 keywords:
-- método WebHelp Windows Media Player
-- método WebHelp Windows Media Player, clase error
-- Clase de error Windows Media Player, método WebHelp
+- Método webHelp Reproductor de Windows Media
+- método webHelp Reproductor de Windows Media , Clase Error
+- Clase de error Reproductor de Windows Media , método webHelp
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 862376be956bc8b37a778f5c9d1d2238c876208d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2fee647d8f3ddca89ed36c224caab05543715864347700d35ae8e80ee45078cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118577879"
 ---
-# <a name="errorwebhelp-method"></a>Error. WebHelp (método)
+# <a name="errorwebhelp-method"></a>Método Error.webHelp
 
-El método **WebHelp** inicia la página de ayuda Web de Windows Media Player para mostrar información adicional sobre el primer error en la cola de errores (índice cero).
+El **método webHelp** inicia la página Reproductor de Windows Media Web Help para mostrar más información sobre el primer error en la cola de errores (índice cero).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,20 +44,20 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las páginas de ayuda web siempre contienen la información más reciente y más detallada sobre los errores de Windows Media Player. Este método transfiere automáticamente la otra información que necesita la ayuda Web, como la versión del sistema operativo que se está usando.
+Las páginas de Ayuda web siempre contienen la información más reciente y más detallada sobre Reproductor de Windows Media errores. Este método transfiere automáticamente la otra información necesaria para la Ayuda web, como la versión del sistema operativo que se usa.
 
-Para tener acceso directamente a las páginas de ayuda Web, use el código de error y los vínculos del centro de soporte técnico siguientes.
+Para acceder directamente a las páginas de Ayuda web, use el código de error siguiente y los vínculos del Centro de soporte técnico.
 
--   [Información del código de error de Windows Media Player](https://support.microsoft.com/kb/886273)
--   [Centro de soluciones de Windows Media Player](https://support.microsoft.com/ph/7763#tab0)
+-   [Reproductor de Windows Media Información del código de error](https://support.microsoft.com/kb/886273)
+-   [Reproductor de Windows Media Centro de soluciones](https://support.microsoft.com/ph/7763#tab0)
 
-**Windows Media Player 10 Mobile:** Este método siempre se realiza correctamente, pero no realiza la operación deseada.
+**Reproductor de Windows Media 10 Mobile:** Este método siempre se realiza correctamente, pero no realiza la operación prevista.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crea un elemento de botón HTML que inicia la página de ayuda Web de Microsoft Windows Media Player. El objeto **Player** se creó con ID = "Player".
+En el ejemplo siguiente se crea un elemento HTML BUTTON que inicia la página microsoft Reproductor de Windows Media Web Help. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -77,14 +77,14 @@ OnClick = "Player.error.webHelp();
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

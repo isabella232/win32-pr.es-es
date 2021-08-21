@@ -1,19 +1,19 @@
 ---
-description: Forma descriptiva de System. Photo. PhotometricInterpretation.
+description: La forma fácil de usar de System.Photo.PhotometricInterpretation.
 ms.assetid: e61bdfd5-0602-4964-b761-720fe58f5d31
-title: System. Photo. PhotometricInterpretationText
+title: System.Photo.PhotometricInterpretationText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1eeef82b979ea2f4eb5256bc016e38e34ea6d83
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 726832227421d99c505faea785fd096d5387d76e148f53913fa9afba22ad6059
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105697061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118723703"
 ---
-# <a name="systemphotophotometricinterpretationtext"></a>System. Photo. PhotometricInterpretationText
+# <a name="systemphotophotometricinterpretationtext"></a>System.Photo.PhotometricInterpretationText
 
-Forma descriptiva de [System. Photo. PhotometricInterpretation](./props-system-photo-photometricinterpretation.md). No se ha diseñado para analizarse mediante programación.
+La forma fácil de usar [de System.Photo.PhotometricInterpretation](./props-system-photo-photometricinterpretation.md). No está pensado para analizarse mediante programación.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,20 +1,20 @@
 ---
-title: IMsRdpClientNonScriptable SendKeys (método)
-description: Envía una serie de pulsaciones de teclas al control. Las pulsaciones de teclas están en formato de código de examen, que son los datos de teclado de las claves físicas reales.
+title: Método SendKeys IMsRdpClientNonScriptable
+description: Envía una serie de pulsaciones de tecla al control. Las pulsaciones de tecla están en formato de código de examen, que son los datos del teclado de las teclas físicas reales.
 ms.assetid: 1f07a9cc-4795-43cb-ac99-4bb70b8b544a
 ms.tgt_platform: multiple
 keywords:
 - Método SendKeys Servicios de Escritorio remoto
-- Método SendKeys Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable, método SendKeys
-- Método SendKeys Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable2, método SendKeys
-- Método SendKeys Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable3, método SendKeys
-- Método SendKeys Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable4, método SendKeys
-- Método SendKeys Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable5, método SendKeys
+- Método SendKeys Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable
+- Interfaz IMsRdpClientNonScriptable Servicios de Escritorio remoto , método SendKeys
+- Método SendKeys Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable2
+- Interfaz IMsRdpClientNonScriptable2 Servicios de Escritorio remoto , método SendKeys
+- Método SendKeys Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable3
+- Interfaz IMsRdpClientNonScriptable3 Servicios de Escritorio remoto , método SendKeys
+- Método SendKeys Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable4
+- Interfaz IMsRdpClientNonScriptable4 Servicios de Escritorio remoto , método SendKeys
+- Método SendKeys Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable5
+- Interfaz IMsRdpClientNonScriptable5 Servicios de Escritorio remoto , método SendKeys
 topic_type:
 - apiref
 api_name:
@@ -29,16 +29,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9effa3bbd40eb64df55914b9adbc07a03ea0c465
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 530f74bdab808ce6cad6f777d12da932db073ddec022e007eb73fabc538fab20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118855323"
 ---
-# <a name="imsrdpclientnonscriptablesendkeys-method"></a>IMsRdpClientNonScriptable:: SendKeys (método)
+# <a name="imsrdpclientnonscriptablesendkeys-method"></a>IMsRdpClientNonScriptable::SendKeys (método)
 
-Envía una serie de pulsaciones de teclas al control. Las pulsaciones de teclas están en formato de código de examen, que son los datos de teclado de las claves físicas reales.
+Envía una serie de pulsaciones de tecla al control. Las pulsaciones de tecla están en formato de código de examen, que son los datos del teclado de las teclas físicas reales.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,44 +57,44 @@ HRESULT SendKeys(
 
 <dl> <dt>
 
-*numKeys* \[ de\]
+*numKeys* \[ En\]
 </dt> <dd>
 
-Número de pulsaciones de tecla que se van a enviar. El número máximo de claves que se pueden enviar en una operación es 20. El método devuelve **E \_ INVALIDARG** si este parámetro es mayor que 20. Para obtener más información, vea la sección Comentarios que se muestra más adelante.
+Número de pulsaciones de tecla que se envían. El número máximo de claves que se pueden enviar en una operación es 20. El método devuelve **E \_ INVALIDARG** si este parámetro es mayor que 20. Para obtener más información, vea la sección Comentarios que se muestra más adelante.
 
 </dd> <dt>
 
-*pbArrayKeyUp* \[ de\]
+*pbArrayKeyUp* \[ En\]
 </dt> <dd>
 
-Matriz cuyo tamaño es igual a *numKeys*. Un elemento es **true** si la tecla correspondiente está activa y **false** si la tecla correspondiente está fuera de la actividad.
+Matriz cuyo tamaño es igual a *numKeys.* Un elemento es **TRUE si** la clave correspondiente es UP y **FALSE** si la clave correspondiente es DOWN.
 
 </dd> <dt>
 
-*plKeyData* \[ de\]
+*plKeyData* \[ En\]
 </dt> <dd>
 
-Matriz cuyo tamaño es igual a *numKeys*. La matriz contiene datos de pulsación de teclas y corresponde al valor del parámetro *lParam* del mensaje de [ \_ KEYDOWN de WM](../inputdev/wm-keydown.md) . Los datos especifican el número de repeticiones, el código de digitalización, la marca de clave extendida, el código de contexto, la marca de estado de clave anterior y la marca de estado de transición. Para obtener una descripción de los bits de esta matriz, vea la muestra de [WM \_ ](../inputdev/wm-keydown.md).
+Matriz cuyo tamaño es igual a *numKeys.* La matriz contiene datos de pulsación de tecla y corresponde al valor del parámetro *lParam* del [mensaje \_ KEYDOWN de WM.](../inputdev/wm-keydown.md) Los datos especifican el recuento de repeticiones, el código de examen, la marca de clave extendida, el código de contexto, la marca de estado de clave anterior y la marca de estado de transición. Para obtener una descripción de los bits de esta matriz, vea [WM \_ KEYDOWN](../inputdev/wm-keydown.md).
 
-El elemento correspondiente en *pbArrayKeyUp* indica si la tecla está arriba o abajo.
+El elemento correspondiente de *pbArrayKeyUp* indica si la clave es UP o DOWN.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método **SendKeys** no combina las pulsaciones de teclas realizadas por el usuario local con pulsaciones de teclas que el método está enviando. Todas las pulsaciones de tecla que se pasan al método se envían a la sesión remota en una sola secuencia atómica.
+El **método SendKeys** no combina las pulsaciones de tecla realizadas por el usuario local con las pulsaciones de tecla que envía el método. Todas las pulsaciones de tecla que se pasan al método se envían a la sesión remota en una única secuencia atómica.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                     |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                               |
@@ -123,7 +123,7 @@ Para obtener más información acerca de Conexión web a Escritorio remoto, cons
 [**IMsRdpClientNonScriptable**](imsrdpclientnonscriptable-interface.md)
 </dt> <dt>
 
-[KEYDOWN de WM \_](../inputdev/wm-keydown.md)
+[WM \_ KEYDOWN](../inputdev/wm-keydown.md)
 </dt> </dl>
 
  

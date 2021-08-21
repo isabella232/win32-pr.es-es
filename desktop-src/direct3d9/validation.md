@@ -1,30 +1,30 @@
 ---
-description: La validación se realiza durante la compilación del efecto. Para validar la técnica actual, especifique NULL como el identificador de técnica que se va a validar.
+description: La validación se realiza durante la compilación del efecto. Para validar la técnica actual, especifique NULL como identificador de técnica que se va a validar.
 ms.assetid: d1268f68-2893-4d7f-acd2-484346a20193
 title: Validación (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ecc64a17aba21af4b43bd41cc060a8711e5bb4e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 4c3d6c49f3bdf3bc0ba75f52bd8138fa6f5d777c3613d105b2706929c01b3ee4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105714697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118519452"
 ---
 # <a name="validation-direct3d-9"></a>Validación (Direct3D 9)
 
-La validación se realiza durante la compilación del efecto. Para validar la técnica actual, especifique **null** como el identificador de técnica que se va a validar.
+La validación se realiza durante la compilación del efecto. Para validar la técnica actual, especifique **NULL como** identificador de técnica que se va a validar.
 
-Se producirá un error en la validación para cualquiera de las siguientes acciones:
+Se producirá un error en la validación para cualquiera de las siguientes opciones:
 
 -   Si el identificador de técnica especificado no existe.
 -   Si se produce un error en la aplicación de cualquier estado en cualquier paso de la técnica.
--   Si se produce un error en la validación del dispositivo después de la aplicación de todos los Estados en cualquier paso de la técnica.
--   Si los Estados de efecto u o VERTEXSHADER se asignan sombreadores no válidos en cualquier paso de la técnica.
--   Si las Cap del dispositivo no admiten la asignación de cubos y se asigna a un estado de efecto de textura un valor de tipo textureCUBE en cualquier paso de la técnica.
--   Si las Cap del dispositivo no admiten la asignación de volúmenes y se asigna a un estado de efecto de textura un valor de tipo texture3D en cualquier paso de la técnica.
+-   Si se produce un error en la validación del dispositivo después de la aplicación de todos los estados en cualquier paso de la técnica.
+-   Si a los estados de efecto PIXELSHADER o VERTEXSHADER se les asignan sombreadores no válidos en cualquier paso de la técnica.
+-   Si los límites de dispositivo no admiten la asignación de cubos y se asigna un estado de efecto TEXTURE a un valor de tipo textureCUBE en cualquier paso de la técnica.
+-   Si los límites de dispositivo no admiten la asignación de volúmenes y se asigna un estado de efecto TEXTURE a un valor de tipo texture3D en cualquier paso de la técnica.
 
-Para obtener más información, vea [Estados de efectos (Direct3D 9)](effect-states.md).
+Para obtener más información, [vea Estados de efecto (Direct3D 9).](effect-states.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 47c8277a76dbf0fbb9e05262eea5b419466044cc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e4944d121c4fe99ee36c893a4d51ca0cd72344dfa47dde17629f5ca2a1ce3fd1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108096343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118660770"
 ---
 # <a name="cbasecontrolwindowcbasecontrolwindow-constructor"></a>Constructor CBaseControlWindow.CBaseControlWindow
 
@@ -49,7 +49,7 @@ CBaseControlWindow(
 *pFilter* 
 </dt> <dd>
 
-Puntero al objeto de filtro multimedia propietario.
+Puntero al objeto de filtro de medios propietario.
 
 </dd> <dt>
 
@@ -87,12 +87,12 @@ Puntero a una variable que recibe un valor HRESULT que indica el éxito o error 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Streams.h)</dt> </dl>                                                                                   |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -5,27 +5,27 @@ ms.assetid: 9C984215-33FC-4FB8-AE1F-38E2F5730614
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 76471eb077d2dc2443a583322f5e0a5c7d07d2ee
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: e54c4d9bc7c9dc423f2ac99b269f40e56b5daa4316d496f8e2a951cc836b7e6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105676285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118606715"
 ---
 # <a name="imsrdpdevice-properties"></a>Propiedades de IMsRdpDevice
 
-La interfaz [**IMsRdpDevice**](imsrdpdevice.md) expone las siguientes propiedades.
+La [**interfaz IMsRdpDevice**](imsrdpdevice.md) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [**Propiedad DeviceDescription**](imsrdpdevice-devicedescription.md)
 -   [**Propiedad DeviceInstanceId**](imsrdpdevice-deviceinstanceid.md)
--   [**FriendlyName (propiedad)**](imsrdpdevice-friendlyname.md)
+-   [**FriendlyName, propiedad**](imsrdpdevice-friendlyname.md)
 -   [**Propiedad RedirectionState**](imsrdpdevice-redirectionstate.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,21 +1,21 @@
 ---
-title: Dibujar texto en una Double-Buffered ventana de OpenGL
-description: El texto se dibuja en una ventana de OpenGL de doble búfer mediante la creación de listas de visualización para los caracteres seleccionados en una fuente y, a continuación, la ejecución de la lista de visualización adecuada para cada carácter que se desea dibujar.
+title: Dibujar texto en una ventana Double-Buffered OpenGL
+description: Para dibujar texto en una ventana openGL de doble búfer, cree listas para mostrar para los caracteres seleccionados en una fuente y, a continuación, ejecute la lista de presentación adecuada para cada carácter que quiera dibujar.
 ms.assetid: 59ac0414-a845-4f40-be9c-9962fd1585f6
 keywords:
-- OpenGL en Windows, texto
+- OpenGL en Windows,text
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b0bf4cc99a1806d734ccde5cfae98f4d367da13
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 84202f59ca1a232bae37603b2ff657cb5c61ae0a1d3961b960b624d061ab20cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103779482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118618551"
 ---
-# <a name="drawing-text-in-a-double-buffered-opengl-window"></a>Dibujar texto en una Double-Buffered ventana de OpenGL
+# <a name="drawing-text-in-a-double-buffered-opengl-window"></a>Dibujar texto en una ventana Double-Buffered OpenGL
 
-El texto se dibuja en una ventana de OpenGL de doble búfer mediante la creación de listas de visualización para los caracteres seleccionados en una fuente y, a continuación, la ejecución de la lista de visualización adecuada para cada carácter que se desea dibujar. En el ejemplo de código siguiente se crea un contexto de representación, se dibuja un triángulo rojo y, a continuación, se etiqueta con texto. En este ejemplo de código, se supone que hay un contexto de dispositivo, con un formato de fuente y de píxel.
+Para dibujar texto en una ventana openGL de doble búfer, cree listas para mostrar para los caracteres seleccionados en una fuente y, a continuación, ejecute la lista de presentación adecuada para cada carácter que quiera dibujar. En el ejemplo de código siguiente se crea un contexto de representación, se dibuja un triángulo rojo y, a continuación, se etiqueta con texto. Para este código de ejemplo, se supone que hay un contexto de dispositivo, con un formato de fuente y píxel.
 
 
 ```C++
@@ -72,9 +72,9 @@ wglDeleteContext(hglrc);
 
 
 
- 
+ 
 
- 
+ 
 
 
 

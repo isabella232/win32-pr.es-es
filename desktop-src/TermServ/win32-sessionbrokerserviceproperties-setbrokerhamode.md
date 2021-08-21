@@ -1,12 +1,12 @@
 ---
-title: Método SetBrokerHAMode de la clase Win32_SessionBrokerServiceProperties
-description: Migra datos de una base de datos WID local a la nueva base de datos basada en SQL Server. También configura el servidor de agente para usar SQL Server central.
+title: Método SetBrokerHAMode de la Win32_SessionBrokerServiceProperties clase
+description: Migra datos de una base de datos WID local a la nueva base SQL base de datos basada en servidor. También configura el servidor de agente para que use el servidor SQL central.
 ms.assetid: 8f14590d-3042-403c-a1cb-a3b257866284
 ms.tgt_platform: multiple
 keywords:
 - Método SetBrokerHAMode Servicios de Escritorio remoto
-- Método SetBrokerHAMode Servicios de Escritorio remoto, clase Win32_SessionBrokerServiceProperties
-- Win32_SessionBrokerServiceProperties de clase Servicios de Escritorio remoto, método SetBrokerHAMode
+- Método SetBrokerHAMode Servicios de Escritorio remoto , Win32_SessionBrokerServiceProperties clase
+- Win32_SessionBrokerServiceProperties clase Servicios de Escritorio remoto , método SetBrokerHAMode
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4526f8ded96086ccf223b3c8e5aad72d9e0262cc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 17b72233b51686911e4b1d0a661f4e46fa9bcaa813bb6ccc973b2f8a5b12da24
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118604554"
 ---
-# <a name="setbrokerhamode-method-of-the-win32_sessionbrokerserviceproperties-class"></a>Método SetBrokerHAMode de la \_ clase SessionBrokerServiceProperties de Win32
+# <a name="setbrokerhamode-method-of-the-win32_sessionbrokerserviceproperties-class"></a>Método SetBrokerHAMode de la clase SessionBrokerServiceProperties de Win32 \_
 
-Migra datos de una base de datos WID local a la nueva base de datos basada en SQL Server. También configura el servidor de agente para usar SQL Server central.
+Migra datos de una base de datos WID local a la nueva base SQL base de datos basada en servidor. También configura el servidor de agente para que use el servidor SQL central.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,35 +46,35 @@ uint32 SetBrokerHAMode(
 
 <dl> <dt>
 
-*connStringToCentralDBRdcms* \[ de\]
+*connStringToCentralDBRdcms* \[ En\]
 </dt> <dd>
 
 Cadena de conexión a la base de datos central.
 
 </dd> <dt>
 
-*secondaryConnStringToCentralDBRdcms* \[ de\]
+*secondaryConnStringToCentralDBRdcms* \[ En\]
 </dt> <dd>
 
 Cadena de conexión secundaria a la base de datos central.
 
-**Windows server 2012 R2 y Windows server 2012:** Este parámetro no está disponible antes de Windows Server 2016.
+**Windows Server 2012 R2 y Windows Server 2012:** Este parámetro no está disponible antes de Windows Server 2016.
 
 </dd> <dt>
 
-*brokerDnsRRName* \[ de\]
+*brokerDnsRRName* \[ En\]
 </dt> <dd>
 
 Nombre DNS del agente.
 
 </dd> <dt>
 
-*activeBrokerName* \[ de\]
+*activeBrokerName* \[ En\]
 </dt> <dd>
 
 Nombre del agente activo.
 
-**Windows server 2012 R2 y Windows server 2012:** Este parámetro no está disponible antes de Windows Server 2016.
+**Windows Server 2012 R2 y Windows Server 2012:** Este parámetro no está disponible antes de Windows Server 2016.
 
 </dd> </dl>
 
@@ -82,12 +82,12 @@ Nombre del agente activo.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                         |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                               |
-| MOF<br/>                      | <dl> <dt>TssdWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                               |
+| MOF<br/>                      | <dl> <dt>TssdWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TssdWmi.dll</dt> </dl> |
 
 
@@ -96,7 +96,7 @@ Nombre del agente activo.
 
 <dl> <dt>
 
-[**Win32 \_ SessionBrokerServiceProperties**](win32-sessionbrokerserviceproperties.md)
+[**SessionBrokerServiceProperties de Win32 \_**](win32-sessionbrokerserviceproperties.md)
 </dt> </dl>
 
  

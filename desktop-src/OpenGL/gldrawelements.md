@@ -1,9 +1,9 @@
 ---
-title: función glDrawElements (GL. h)
-description: La función glDrawElements representa primitivos de los datos de la matriz.
+title: Función glDrawElements (Gl.h)
+description: La función glDrawElements representa primitivas a partir de datos de matriz.
 ms.assetid: fb433294-106e-48d5-ad49-4434934fe072
 keywords:
-- glDrawElements (función) OpenGL
+- Función glDrawElements OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 976e779235dc330467d610406156534b5e72841d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b260c1112f7ec588b4d83655e5d0aa465b63682164f2ca745b63d3f421e5794c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118616577"
 ---
-# <a name="gldrawelements-function"></a>glDrawElements función)
+# <a name="gldrawelements-function"></a>Función glDrawElements
 
-La función **glDrawElements** representa primitivos de los datos de la matriz.
+La **función glDrawElements** representa primitivas a partir de datos de matriz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,21 +46,21 @@ void WINAPI glDrawElements(
 *mode* 
 </dt> <dd>
 
-Tipo de primitivas que se van a representar. Puede suponer uno de los siguientes valores simbólicos: \_ puntos de contabilidad, \_ franja de línea de contabilidad, bucle de línea de libro de contabilidad, \_ \_ \_ líneas de contabilidad general, franja de \_ \_ triángulo de contabilidad \_ , ventilador de triángulo de contabilidad general, \_ \_ \_ triángulos de GL, franja cuádruple de contabilidad, \_ \_ cuádruples de contabilidad \_ y polígono de contabilidad \_ .
+Tipo de primitivas que se representará. Puede asumir uno de los siguientes valores \_ simbólicos: GL POINTS, GL \_ LINE \_ STRIP, GL LINE \_ \_ LOOP, GL \_ LINES, GL TRIANGLE \_ \_ STRIP, GL TRIANGLE \_ \_ FAN, GL TRIANGLE \_ FAN, GL TRIANGLES, \_ GL QUAD \_ STRIP, GL \_ QUADS y GL \_ POLYGON.
 
 </dd> <dt>
 
 *count* 
 </dt> <dd>
 
-Número de elementos que se van a representar.
+Número de elementos que se representarán.
 
 </dd> <dt>
 
 *type* 
 </dt> <dd>
 
-Tipo de los valores de los índices. Debe ser un byte sin signo de libro de contabilidad, un valor \_ \_ \_ Short sin signo o un valor entero de GL \_ \_ sin signo \_ .
+Tipo de los valores de los índices. Debe ser uno de GL \_ UNSIGNED \_ BYTE, GL \_ UNSIGNED \_ SHORT o GL \_ UNSIGNED \_ INT.
 
 </dd> <dt>
 
@@ -83,24 +83,24 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>      | el *modo* no era un valor aceptado.<br/>                                                                                          |
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl>     | *Count* era un valor negativo.<br/>                                                                                              |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**ENUMERACIÓN \_ NO \_ VÁLIDA DE GL**</dt> </dl>      | *mode* no era un valor aceptado.<br/>                                                                                          |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | *count* era un valor negativo.<br/>                                                                                              |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-La función **glDrawElements** permite especificar varias primitivas geométricas con muy pocas llamadas de función. En lugar de llamar a una función de OpenGL para pasar cada vértice, normal o color individual, puede especificar de antemano matrices independientes de vértices, normales y colores y utilizarlos para definir una secuencia de primitivas (todo el mismo tipo) con una única llamada a **glDrawElements**.
+La **función glDrawElements** permite especificar varias primitivas geométricas con muy pocas llamadas de función. En lugar de llamar a una función OpenGL para pasar cada vértice individual, normal o color, puede especificar matrices independientes de vértices, normales y colores con antelación y usarlas para definir una secuencia de primitivas (todas del mismo tipo) con una sola llamada a **glDrawElements**.
 
-Cuando se llama a la función **glDrawElements** , se usan elementos secuenciales de *recuento* de *índices* para construir una secuencia de primitivas geométricas. El parámetro *mode* especifica qué tipo de primitivas se construyen y cómo se usan los elementos de la matriz para construir estos primitivos. Si \_ \_ no está habilitada la matriz de vértices de contabilidad, no se generan primitivas geométricas.
+Cuando se llama a la función  **glDrawElements,** se usan elementos secuenciales de recuento de *índices* para construir una secuencia de primitivas geométricas. El *parámetro mode* especifica qué tipo de primitivas se construyen y cómo se usan los elementos de la matriz para construir estos primitivos. Si GL \_ VERTEX ARRAY no está \_ habilitado, no se genera ninguna primitiva geométrica.
 
-Los atributos de vértices modificados por **glDrawElements** tienen un valor no especificado después de que **glDrawElements** devuelve. Por ejemplo, si \_ \_ la matriz de colores de GL está habilitada, el valor del color actual no está definido después de que se ejecute **glDrawElements** . Los atributos que no se modifican permanecen inalterados.
+Los atributos de vértice modificados por **glDrawElements** tienen un valor no especificado después de que se devuelva **glDrawElements.** Por ejemplo, si GL COLOR ARRAY está habilitado, el valor del color actual no está \_ definido después de ejecutar \_ **glDrawElements.** Los atributos que no se modifican permanecen sin cambios.
 
-Puede incluir la función **glDrawElements** en mostrar listas. Cuando **glDrawElements** se incluye en una lista de visualización, los datos de la matriz necesarios (determinados por los punteros de matriz y habilitados) también se especifican en la lista de visualización. Dado que los punteros de matriz y los habilitados son variables de estado de cliente, sus valores afectan a las listas de visualización cuando se crean las listas, no cuando se ejecutan las listas.
+Puede incluir la función **glDrawElements** en las listas de presentación. Cuando **glDrawElements** se incluye en una lista de visualización, los datos de matriz necesarios (determinados por los punteros de matriz y las habilitaciones) también se introducen en la lista de visualización. Dado que los punteros de matriz y las habilitaciones son variables de estado del lado cliente, sus valores afectan a las listas de presentación cuando se crean las listas, no cuando se ejecutan las listas.
 
 > [!Note]  
-> La función **glDrawElements** solo está disponible en la versión 1,1 o posterior de OpenGL.
+> La **función glDrawElements** solo está disponible en OpenGL versión 1.1 o posterior.
 
  
 
@@ -112,8 +112,8 @@ Puede incluir la función **glDrawElements** en mostrar listas. Cuando **glDrawE
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

@@ -1,11 +1,11 @@
 ---
-title: msSFU-30-Max-UID-atributo de número
-description: Contiene el número máximo de usuarios que se pueden migrar a un dominio NIS.
+title: Atributo msSFU-30-Max-Uid-Number
+description: Contiene el número máximo de usuarios que se pueden migrar a un dominio de NIS.
 ms.assetid: 76dca1aa-2c1c-4ba0-a76b-12c678278f56
 ms.tgt_platform: multiple
 keywords:
-- msSFU-30-Max-UID-atributo de número esquema de AD
-- msSFU30MaxUidNumber esquema de AD de atributos
+- Esquema de AD del atributo msSFU-30-Max-Uid-Number
+- Esquema de AD del atributo msSFU30MaxUidNumber
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38ba4e4d3a4b85d6faf83386078aae413447bfc4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8f55ee108bb58ef3c4121ee06631f39f9430feeeda9795c062cec5fd0b089c91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104535956"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682501"
 ---
-# <a name="mssfu-30-max-uid-number-attribute"></a>msSFU-30-Max-UID-atributo de número
+# <a name="mssfu-30-max-uid-number-attribute"></a>Atributo msSFU-30-Max-Uid-Number
 
-Contiene el número máximo de usuarios que se pueden migrar a un dominio NIS.
+Contiene el número máximo de usuarios que se pueden migrar a un dominio de NIS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | msSFU-30-Max-UID-número              |
-| Nombre para mostrar de LDAP | msSFU30MaxUidNumber                  |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | msSFU-30-Max-Uid-Number              |
+| Ldap-Display-Name | msSFU30MaxUidNumber                  |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.343          |
-| System-ID-GUID    | ec998437-d944-4a28-8500-217588adfc75 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | ec998437-d944-4a28-8500-217588adfc75 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -51,20 +51,20 @@ Contiene el número máximo de usuarios que se pueden migrar a un dominio NIS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -72,20 +72,20 @@ Contiene el número máximo de usuarios que se pueden migrar a un dominio NIS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -93,20 +93,20 @@ Contiene el número máximo de usuarios que se pueden migrar a un dominio NIS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -114,20 +114,20 @@ Contiene el número máximo de usuarios que se pueden migrar a un dominio NIS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | True                                                           |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Verdadero                                                           |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Clases usadas en        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Clases usadas en        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
