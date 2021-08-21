@@ -1,12 +1,12 @@
 ---
-title: Método DisconnectProtocol de la clase Win32_TSGatewayConnection
-description: Desconecta todas las conexiones del protocolo especificado del servidor de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto).
+title: Método DisconnectProtocol de la Win32_TSGatewayConnection clase
+description: Desconecta todas las conexiones del protocolo especificado del servidor Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
 ms.assetid: 0ca3f478-dfdc-404e-ac17-43b6873b7256
 ms.tgt_platform: multiple
 keywords:
 - Método DisconnectProtocol Servicios de Escritorio remoto
-- Método DisconnectProtocol Servicios de Escritorio remoto, clase Win32_TSGatewayConnection
-- Win32_TSGatewayConnection de clase Servicios de Escritorio remoto, método DisconnectProtocol
+- Método DisconnectProtocol Servicios de Escritorio remoto , Win32_TSGatewayConnection clase
+- Win32_TSGatewayConnection clase Servicios de Escritorio remoto , método DisconnectProtocol
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 53a37050cbd622c6fea14b8b4e5dc6a414eaad85
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a5c3c987a07dddfee5814cc32fbab8e77e2b7af5d6e55768965294cfeadaf5fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118856251"
 ---
-# <a name="disconnectprotocol-method-of-the-win32_tsgatewayconnection-class"></a>Método DisconnectProtocol de la \_ clase TSGatewayConnection de Win32
+# <a name="disconnectprotocol-method-of-the-win32_tsgatewayconnection-class"></a>Método DisconnectProtocol de la clase \_ TSGatewayConnection de Win32
 
-Desconecta todas las conexiones del protocolo especificado del servidor de puerta de enlace de Escritorio remoto (puerta de enlace de escritorio remoto).
+Desconecta todas las conexiones del protocolo especificado del servidor Escritorio remoto Gateway (puerta de enlace de Escritorio remoto).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,40 +43,40 @@ uint32 DisconnectProtocol(
 
 <dl> <dt>
 
-*ProtocolName* \[ de\]
+*ProtocolName* \[ En\]
 </dt> <dd>
 
-El nombre de protocolo para una conexión específica. Se puede recuperar de la propiedad **ProtocolName** de la clase **\_ TSGatewayConnection de Win32** .
+Nombre del protocolo para una conexión específica. Esto se puede recuperar de la **propiedad ProtocolName** de la **clase \_ TSGatewayConnection de Win32.**
 
 <dt>
 
-TS
+"TS"
 </dt> <dd>
 
-El protocolo para el servidor de puerta de enlace de escritorio remoto.
+Protocolo para el servidor de puerta de enlace de Escritorio remoto.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 

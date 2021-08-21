@@ -1,59 +1,59 @@
 ---
-title: Marcar eventos
-description: Un marcador identifica un evento en un canal o un archivo de registro.
+title: Eventos de marcador
+description: Un marcador identifica un evento en un canal o archivo de registro.
 ms.assetid: e7eeafc3-deb9-4cdc-9763-f784db7333be
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64d7fb4aef883a51084420c5a2d78e4f0ff25dac
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d4ebc6c8f48bff25989fedf056e87a7eabe4d420b2e923d056ef24116b24a33f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105695641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056143"
 ---
-# <a name="bookmarking-events"></a>Marcar eventos
+# <a name="bookmarking-events"></a>Eventos de marcador
 
-Un marcador identifica un evento en un canal o un archivo de registro. Puede usar un marcador al consultar o suscribirse a eventos para empezar a leer los eventos de ese evento marcado. Normalmente, se crea un marcador del último evento en el conjunto de resultados (suponiendo que se han enumerado todos los eventos del conjunto de resultados).
+Un marcador identifica un evento en un canal o archivo de registro. Puede usar un marcador al consultar o suscribirse a eventos para empezar a leer eventos de ese evento marcado. Normalmente se crea un marcador del último evento en el conjunto de resultados (suponiendo que se han enumerado todos los eventos del conjunto de resultados).
 
 En el procedimiento siguiente se describe cómo crear un marcador a partir de un evento.
 
 **Para crear un marcador a partir de un evento**
 
-1.  Llame a la función [**EvtCreateBookmark**](/windows/desktop/api/WinEvt/nf-winevt-evtcreatebookmark) para crear un marcador. Pase **null** para el argumento.
-2.  Llame a la función [**EvtUpdateBookmark**](/windows/desktop/api/WinEvt/nf-winevt-evtupdatebookmark) para actualizar el marcador con el evento. Pase el identificador al evento como argumento.
-3.  Llame a la función [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) para crear una cadena XML que represente el marcador. Pase EvtRenderBookmark como marca de representación.
-4.  Conservar la cadena XML para su uso posterior (por ejemplo, puede conservar la cadena XML en un archivo o en el registro).
+1.  Llame a [**la función EvtCreateBookmark**](/windows/desktop/api/WinEvt/nf-winevt-evtcreatebookmark) para crear un marcador. Pase **NULL** para el argumento .
+2.  Llame a [**la función EvtUpdateBookmark**](/windows/desktop/api/WinEvt/nf-winevt-evtupdatebookmark) para actualizar el marcador con el evento . Pase el identificador al evento como argumento.
+3.  Llame a [**la función EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) para crear una cadena XML que represente el marcador. Pase EvtRenderBookmark como marca de representación.
+4.  Conserve la cadena XML para usarla más adelante (por ejemplo, puede conservar la cadena XML en un archivo o en el Registro).
 
-En el procedimiento siguiente se describe cómo crear un marcador mediante una cadena de marcador XML persistente en el procedimiento anterior.
+En el procedimiento siguiente se describe cómo crear un marcador mediante una cadena de marcador XML que se conservaba en el procedimiento anterior.
 
 **Para crear un marcador mediante una cadena de marcador XML**
 
-1.  Obtiene la cadena XML que representa el marcador que se ha guardado anteriormente.
-2.  Llame a la función [**EvtCreateBookmark**](/windows/desktop/api/WinEvt/nf-winevt-evtcreatebookmark) para crear un marcador. Pase la cadena XML para el argumento.
+1.  Obtenga la cadena XML que representa el marcador que ha guardado anteriormente.
+2.  Llame a [**la función EvtCreateBookmark**](/windows/desktop/api/WinEvt/nf-winevt-evtcreatebookmark) para crear un marcador. Pase la cadena XML para el argumento .
 
 En el procedimiento siguiente se describe cómo usar un marcador en una consulta.
 
 **Para usar un marcador en una consulta**
 
-1.  Llame a la función [**EvtQuery**](/windows/desktop/api/WinEvt/nf-winevt-evtquery) para obtener los eventos que coinciden con la consulta.
-2.  Llame a la función [**EvtSeek**](/windows/desktop/api/WinEvt/nf-winevt-evtseek) para buscar el evento marcado. Pase el identificador al marcador y la marca EvtSeekRelativeToBookmark.
-3.  Llame a la función [**EvtNext**](/windows/desktop/api/WinEvt/nf-winevt-evtnext) en un bucle para enumerar los eventos que comienzan después del evento marcado (dependiendo del desplazamiento especificado en [**EvtSeek**](/windows/desktop/api/WinEvt/nf-winevt-evtseek)).
+1.  Llame a [**la función EvtQuery**](/windows/desktop/api/WinEvt/nf-winevt-evtquery) para obtener eventos que coincidan con la consulta.
+2.  Llame a [**la función EvtSeek**](/windows/desktop/api/WinEvt/nf-winevt-evtseek) para buscar en el evento marcado. Pase el identificador al marcador y la marca EvtSeekRelativeToBookmark.
+3.  Llame a [**la función EvtNext**](/windows/desktop/api/WinEvt/nf-winevt-evtnext) en un bucle para enumerar los eventos que comienzan después del evento marcado (según el desplazamiento especificado en [**EvtSeek**](/windows/desktop/api/WinEvt/nf-winevt-evtseek)).
 
-Para obtener un ejemplo, vea [usar un marcador en una consulta](#using-a-bookmark-in-a-query).
+Para obtener un ejemplo, vea [Usar un marcador en una consulta](#using-a-bookmark-in-a-query).
 
 En el procedimiento siguiente se describe cómo usar un marcador en una suscripción.
 
 **Para usar un marcador en una suscripción**
 
-1.  Llame a la función [**EvtSubscribe**](/windows/desktop/api/WinEvt/nf-winevt-evtsubscribe) para suscribirse a eventos que coincidan con la consulta. Pase el identificador al marcador y la marca EvtSubscribeStartAfterBookmark.
-2.  Si implementó la función de [**\_ devolución de \_ llamada evt subscribe**](/windows/win32/api/winevt/nc-winevt-evt_subscribe_callback) , la devolución de llamada recibirá eventos que comienzan después del evento marcado.
+1.  Llame a [**la función EvtSubscribe**](/windows/desktop/api/WinEvt/nf-winevt-evtsubscribe) para suscribirse a eventos que coincidan con la consulta. Pase el identificador al marcador y la marca EvtSubscribeStartAfterBookmark.
+2.  Si implementó la función [**EVT \_ SUBSCRIBE \_ CALLBACK,**](/windows/win32/api/winevt/nc-winevt-evt_subscribe_callback) la devolución de llamada recibirá eventos que comienzan después del evento marcado.
 3.  Si no implementó la devolución de llamada, llame a la función [**EvtNext**](/windows/desktop/api/WinEvt/nf-winevt-evtnext) en un bucle para enumerar los eventos que comienzan después del evento marcado.
 
-Para obtener un ejemplo, vea [usar un marcador en una suscripción](#using-a-bookmark-in-a-subscription).
+Para obtener un ejemplo, vea [Usar un marcador en una suscripción.](#using-a-bookmark-in-a-subscription)
 
-## <a name="using-a-bookmark-in-a-query"></a>Usar un marcador en una consulta
+## <a name="using-a-bookmark-in-a-query"></a>Uso de un marcador en una consulta
 
-En el ejemplo siguiente se muestra cómo usar un marcador en una consulta. En el ejemplo se expande el ejemplo en la [consulta de eventos](querying-for-events.md).
+En el ejemplo siguiente se muestra cómo usar un marcador en una consulta. El ejemplo se expande en el ejemplo de [Consulta de eventos](querying-for-events.md).
 
 
 ```C++
@@ -234,9 +234,9 @@ cleanup:
 
 
 
-## <a name="using-a-bookmark-in-a-subscription"></a>Usar un marcador en una suscripción
+## <a name="using-a-bookmark-in-a-subscription"></a>Uso de un marcador en una suscripción
 
-En el ejemplo siguiente se muestra cómo usar un marcador en una suscripción de extracción.
+En el ejemplo siguiente se muestra cómo usar un marcador en una suscripción de inserción.
 
 
 ```C++
@@ -461,6 +461,6 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 

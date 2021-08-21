@@ -1,7 +1,7 @@
 ---
-description: La \_ variable miembro m pPageSite especifica un identificador de recurso para una cadena que contiene el título del cuadro de diálogo. Esta variable se inicializa en el método de constructor.
+description: La \_ variable miembro m pPageSite especifica un identificador de recurso para una cadena que contiene el título del cuadro de diálogo. Esta variable se inicializa en el método constructor.
 ms.assetid: 34eb04ac-cde6-45bb-a339-e4d38e3d5940
-title: 'Miembro CBasePropertyPage:: m_TitleId (Cprop. h)'
+title: CBasePropertyPage::m_TitleId miembro (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e31ba10d04b7a3929ad77449a5e704da13d05bfd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e4a4e301b120d431066ad0d0b2ad3dd0fe806d86453c67424e91cee6da5b26e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955004"
 ---
-# <a name="cbasepropertypagem_titleid-member"></a>Miembro CBasePropertyPage:: m \_ idcargo
+# <a name="cbasepropertypagem_titleid-member"></a>Miembro CBasePropertyPage::m \_ TitleId
 
-La variable miembro **m \_ pPageSite** especifica un identificador de recurso para una cadena que contiene el título del cuadro de diálogo. Esta variable se inicializa en el método de constructor.
+La **variable miembro m \_ pPageSite** especifica un identificador de recurso para una cadena que contiene el título del cuadro de diálogo. Esta variable se inicializa en el método constructor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ int m_TitleId;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Cprop. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Cprop.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ int m_TitleId;
 
 <dl> <dt>
 
-[**Clase CBasePropertyPage**](cbasepropertypage.md)
+[**CBasePropertyPage (clase)**](cbasepropertypage.md)
 </dt> </dl>
 
  

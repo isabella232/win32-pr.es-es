@@ -1,5 +1,5 @@
 ---
-description: Especifica el nivel medio de volumen del contenido de audio.
+description: Especifica el nivel medio de volumen de contenido de audio.
 ms.assetid: eabb36ff-300f-4ed1-aca3-9415627ac1a7
 title: MFPKEY_WMADRC_AVGREF propiedad (Wmcodecdsp.h)
 ms.topic: reference
@@ -11,9 +11,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118973244"
 ---
-# <a name="mfpkey_wmadrc_avgref-property"></a>Propiedad MFPKEY \_ WMADRC \_ AVGREF
+# <a name="mfpkey_wmadrc_avgref-property"></a>Propiedad AVGREF de MFPKEY \_ WMADRC \_
 
-Especifica el nivel medio de volumen del contenido de audio.
+Especifica el nivel medio de volumen de contenido de audio.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -33,15 +33,15 @@ Para obtener más información sobre el control de intervalo dinámico, vea el a
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

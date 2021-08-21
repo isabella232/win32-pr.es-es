@@ -1,18 +1,18 @@
 ---
-title: V (marco de trabajo de servicios de texto)
+title: V (Text Services Framework)
 description: Página de glosario
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: a0f43bec-d653-4e85-aaa7-c6a84490c14b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90e952b04d9f436daba8ac61f8e4b1370a9e7219
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 2ca1f21ba0a678e83cb6bb97115c6ff4b44419349ddf1eea54ed922b53fed8fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105676547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118873219"
 ---
-# <a name="v-text-services-framework"></a>V (marco de trabajo de servicios de texto)
+# <a name="v-text-services-framework"></a>V (Text Services Framework)
 
 <dl> <dt>
 

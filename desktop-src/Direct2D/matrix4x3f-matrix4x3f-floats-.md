@@ -1,10 +1,10 @@
 ---
-title: Constructor Matrix4x3F Matrix4x3F (FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT) (D2d1 \_ helper. h)
-description: Crea una nueva instancia de una clase Matrix4x3F que se inicializa con todos los valores de la matriz de punto flotante.
+title: Matrix4x3F Matrix4x3F(FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT) (D2d1 \_ helper.h)
+description: Crea una instancia nueva de una clase Matrix4x3F que se inicializa con todos los valores de la matriz de punto flotante.
 ms.assetid: 1B4359BD-9B92-4C9F-9FED-49246D45F0E3
 keywords:
-- Constructor de Matrix4x3F Direct2D
-- Constructor Matrix4x3F Direct2D, interfaz Matrix4x3F
+- Matrix4x3F constructor Direct2D
+- Constructor Matrix4x3F Direct2D , interfaz Matrix4x3F
 - Interfaz Matrix4x3F Direct2D, constructor Matrix4x3F
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7858a0d5a6204e3f966205c7cf6dab6e68180524
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a75cd618595ec6d993daaa0dd25bf50469c1a4c237f54016aa0157b0f5b47df5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955584"
 ---
-# <a name="matrix4x3fmatrix4x3ffloat-float-float-float-float-float-float-float-float-float-float-float-constructor"></a>Constructor Matrix4x3F:: Matrix4x3F (FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT)
+# <a name="matrix4x3fmatrix4x3ffloat-float-float-float-float-float-float-float-float-float-float-float-constructor"></a>Constructor Matrix4x3F::Matrix4x3F(FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT)
 
-Crea una nueva instancia de una clase [**Matrix4x3F**](matrix4x3f.md) que se inicializa con todos los valores de la matriz de punto flotante.
+Crea una instancia nueva de una clase [**Matrix4x3F**](matrix4x3f.md) que se inicializa con todos los valores de la matriz de punto flotante.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,16 +56,16 @@ inline Matrix4x3F(
 *m11* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valor de la primera fila y primera columna de la matriz.
 
 </dd> <dt>
 
-*M12* 
+*m12* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valor de la primera fila y segunda columna de la matriz.
 
@@ -74,52 +74,52 @@ Valor de la primera fila y segunda columna de la matriz.
 *m13* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Valor de la primera fila y de la tercera columna de la matriz.
+Valor de la primera fila y tercera columna de la matriz.
 
 </dd> <dt>
 
 *m21* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-El valor de la segunda fila y la primera columna de la matriz.
+Valor de la segunda fila y primera columna de la matriz.
 
 </dd> <dt>
 
 *m22* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Valor de la segunda fila y de la segunda columna de la matriz.
+Valor de la segunda fila y segunda columna de la matriz.
 
 </dd> <dt>
 
 *m23* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-El valor de la segunda fila y la tercera columna de la matriz.
+Valor de la segunda fila y tercera columna de la matriz.
 
 </dd> <dt>
 
 *m31* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valor de la tercera fila y primera columna de la matriz.
 
 </dd> <dt>
 
-*M32* 
+*m32* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 Valor de la tercera fila y segunda columna de la matriz.
 
@@ -128,36 +128,36 @@ Valor de la tercera fila y segunda columna de la matriz.
 *m33* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-El valor de la tercera fila y la tercera columna de la matriz.
+Valor de la tercera fila y tercera columna de la matriz.
 
 </dd> <dt>
 
 *m41* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-El valor de la cuarta fila y la primera columna de la matriz.
+Valor de la cuarta fila y primera columna de la matriz.
 
 </dd> <dt>
 
 *m42* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Valor de la cuarta fila y de la segunda columna de la matriz.
+Valor de la cuarta fila y segunda columna de la matriz.
 
 </dd> <dt>
 
 *m43* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
-Valor de la cuarta fila y de la tercera columna de la matriz.
+Valor de la cuarta fila y tercera columna de la matriz.
 
 </dd> </dl>
 
@@ -167,12 +167,12 @@ Valor de la cuarta fila y de la tercera columna de la matriz.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y actualización de plataforma solo para aplicaciones de escritorio de Windows Vista \[\]<br/>                          |
-| Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y actualización de plataforma solo para aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
-| Teléfono mínimo compatible<br/>  | Windows Phone 8,1 \[ Windows Phone aplicaciones de Windows Runtime Silverlight 8,1 y\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows 7, Windows Vista con SP2 y Actualización de plataforma solo para Windows de escritorio de Vista \[\]<br/>                          |
+| Servidor mínimo compatible<br/> | Windows Server 2008 R2, Windows Server 2008 con SP2 y Actualización de plataforma solo para aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Teléfono mínimo compatible<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 y Windows Runtime\]<br/>                                           |
 | Espacio de nombres<br/>                | D2D1<br/>                                                                                                                   |
-| Encabezado<br/>                   | <dl> <dt>\_Aplicación auxiliar de D2d1. h</dt> </dl>                                         |
-| Biblioteca<br/>                  | <dl> <dt>D2d1. lib</dt> </dl>                                               |
+| Header<br/>                   | <dl> <dt>D2d1 \_ helper.h</dt> </dl>                                         |
+| Biblioteca<br/>                  | <dl> <dt>D2d1.lib</dt> </dl>                                               |
 | Archivo DLL<br/>                      | <dl> <dt>D2d1.dll</dt> </dl>                                               |
 
 

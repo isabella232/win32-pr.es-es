@@ -1,7 +1,7 @@
 ---
 description: Inicia una operación de reinicio del sistema operativo en la máquina virtual secundaria asociada.
 ms.assetid: 9f3ebbaf-ee0f-4c01-8f73-1f37c08a0feb
-title: Método InitiateReboot de la clase Msvm_ShutdownComponent
+title: Método InitiateReboot de la Msvm_ShutdownComponent clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 527569e8a5d6c2bb0a54294637ae19c13f5e3af2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20ec6e4522f4a9060ced517b5f9944177a98dfa5455c35e15285921467ed4620
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950494"
 ---
-# <a name="initiatereboot-method-of-the-msvm_shutdowncomponent-class"></a>Método InitiateReboot de la \_ clase ShutdownComponent de MSVM
+# <a name="initiatereboot-method-of-the-msvm_shutdowncomponent-class"></a>Método InitiateReboot de la clase ShutdownComponent de Msvm \_
 
 Inicia una operación de reinicio del sistema operativo en la máquina virtual secundaria asociada.
 
-Si se devuelve cero (0), el reinicio se ha iniciado correctamente. Cualquier otro código de retorno indica una condición de error.
+Si se devuelve cero (0), el reinicio se inició correctamente. Cualquier otro código de retorno indica una condición de error.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,17 +42,17 @@ uint32 InitiateReboot(
 
 <dl> <dt>
 
-*Forzar* \[ de\]
+*Forzar* \[ En\]
 </dt> <dd>
 
-Marca que, si es TRUE, obliga a que se cierren las aplicaciones a pesar de tener datos no guardados.
+Marca que, si es TRUE, obliga a cerrar las aplicaciones a pesar de tener datos no guardados.
 
 </dd> <dt>
 
-*Motivo* \[ de\]
+*Motivo* \[ En\]
 </dt> <dd>
 
-Motivo de la operación de reinicio. Esta es una cadena definida por el usuario.
+El motivo de la operación de reinicio. Se trata de una cadena definida por el usuario.
 
 </dd> </dl>
 
@@ -77,16 +77,16 @@ Este método devuelve uno de los siguientes valores:
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**Sistema en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -95,22 +95,22 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> <dt>
 
 **El sistema no está listo** (32780)
 </dt> <dt>
 
-**El equipo está bloqueado y no se puede apagar sin la opción Force** (32781)
+**La máquina está bloqueada y no se puede apagar sin la opción forzar** (32781).
 </dt> <dt>
 
-**Un apagado del sistema está en curso** (32782)
+**Hay un apagado del sistema en curso** (32782)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -119,10 +119,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -131,7 +131,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ ShutdownComponent**](msvm-shutdowncomponent.md)
+[**Msvm \_ ShutdownComponent**](msvm-shutdowncomponent.md)
 </dt> </dl>
 
  

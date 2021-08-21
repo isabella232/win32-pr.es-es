@@ -4,8 +4,8 @@ description: Los certificados que están a punto de ser efectivos para esta enti
 ms.assetid: ec803ff6-3408-4361-84ef-33c47a96e66a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo Pending-CA-Certificates
-- pendingCACertificates esquema de AD de atributos
+- Esquema de AD del atributo Pending-CA-Certificates
+- Esquema de AD del atributo pendingCACertificates
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1990d336c8cfb8efa0eefd1bfd9c1ccf3f8fa93f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f95dbcb06a510c60a23448d250248923479eda274988d0657d1904a9810c8f93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022433"
 ---
 # <a name="pending-ca-certificates-attribute"></a>Atributo Pending-CA-Certificates
 
@@ -30,13 +30,13 @@ Los certificados que están a punto de ser efectivos para esta entidad de certif
 | Entrada | Value |
 |-------------------|-------------------------------------------------------|
 | CN                | Pending-CA-Certificates                               |
-| Nombre para mostrar de LDAP | pendingCACertificates                                 |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | pendingCACertificates                                 |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.693                                |
-| System-ID-GUID    | 963d273c-48be-11d1-a9c3-0000f80367c1                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 963d273c-48be-11d1-a9c3-0000f80367c1                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,13 +55,13 @@ Los certificados que están a punto de ser efectivos para esta entidad de certif
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -76,13 +76,13 @@ Los certificados que están a punto de ser efectivos para esta entidad de certif
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -97,13 +97,13 @@ Los certificados que están a punto de ser efectivos para esta entidad de certif
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -118,13 +118,13 @@ Los certificados que están a punto de ser efectivos para esta entidad de certif
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -139,13 +139,13 @@ Los certificados que están a punto de ser efectivos para esta entidad de certif
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -160,13 +160,13 @@ Los certificados que están a punto de ser efectivos para esta entidad de certif
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | True                                                                   |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Verdadero                                                                   |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |

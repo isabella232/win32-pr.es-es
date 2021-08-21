@@ -1,10 +1,10 @@
 ---
 title: Método DisableDpiCursorScalingForProcess de la interfaz IMsRdpClientNonScriptable7
-description: Deshabilita el escalado local del cursor del mouse recibido del servidor, asegurándose de que la forma del cursor se represente correctamente sin modificarla.
+description: Deshabilita el escalado local del cursor del mouse recibido del servidor, lo que garantiza que la forma del cursor se represente correctamente sin modificaciones.
 ms.tgt_platform: multiple
 keywords:
 - Método DisableDpiCursorScalingForProcess Servicios de Escritorio remoto
-- Método DisableDpiCursorScalingForProcess Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable7
+- Interfaz DisableDpiCursorScalingForProcess Servicios de Escritorio remoto, IMsRdpClientNonScriptable7
 - Interfaz IMsRdpClientNonScriptable7 Servicios de Escritorio remoto, método DisableDpiCursorScalingForProcess
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: a0de989fb0b1c3c644c73f214d368f2cab2ba5d5
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: b054e75edd9ae8d012d117a603cac9679c28c81b555f63d7390a17b7022157e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104359880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118854876"
 ---
-# <a name="imsrdpclientnonscriptable7disabledpicursorscalingforprocess-method"></a>IMsRdpClientNonScriptable7::D método isableDpiCursorScalingForProcess
+# <a name="imsrdpclientnonscriptable7disabledpicursorscalingforprocess-method"></a>IMsRdpClientNonScriptable7::D isableDpiCursorScalingForProcess
 
-Deshabilita el escalado local del cursor del mouse recibido del servidor, asegurándose de que la forma del cursor se represente correctamente sin modificarla.
+Deshabilita el escalado local del cursor del mouse recibido del servidor, lo que garantiza que la forma del cursor se represente correctamente sin modificaciones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="requirements"></a>Requisitos
 

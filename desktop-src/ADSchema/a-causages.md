@@ -1,11 +1,11 @@
 ---
-title: CA-Usages atributo)
-description: Lista de concatenaciones de nombres OID/CSP.
+title: CA-Usages atributo
+description: Lista de concatenaciones de nombres de OID/CSP.
 ms.assetid: b68a868c-6627-4233-ba7e-2fd50b513298
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de CA-Usages
-- cAUsages esquema de AD de atributos
+- CA-Usages esquema de AD del atributo
+- Esquema de AD del atributo cAUsages
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 704d78ee9c085749fd61b65bdf3f21e3710321da
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 9362d621a84b8f017d0e8a42201c54866217e535a9d29f41913aadad1b2bee3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022663"
 ---
-# <a name="ca-usages-attribute"></a>CA-Usages atributo)
+# <a name="ca-usages-attribute"></a>CA-Usages atributo
 
-Lista de concatenaciones de nombres OID/CSP.
+Lista de concatenaciones de nombres de OID/CSP.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | CA-Usages                                   |
-| Nombre para mostrar de LDAP | cAUsages                                    |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | cAUsages                                    |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.690                      |
-| System-ID-GUID    | 963d2738-48be-11d1-a9c3-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 963d2738-48be-11d1-a9c3-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ Lista de concatenaciones de nombres OID/CSP.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | False                                                                  |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Falso                                                                  |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -76,13 +76,13 @@ Lista de concatenaciones de nombres OID/CSP.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | False                                                                  |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Falso                                                                  |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -97,13 +97,13 @@ Lista de concatenaciones de nombres OID/CSP.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | False                                                                  |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Falso                                                                  |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -118,13 +118,13 @@ Lista de concatenaciones de nombres OID/CSP.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | False                                                                  |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Falso                                                                  |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -139,13 +139,13 @@ Lista de concatenaciones de nombres OID/CSP.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | False                                                                  |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Falso                                                                  |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |
@@ -160,13 +160,13 @@ Lista de concatenaciones de nombres OID/CSP.
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                     |
+| Id. de vínculo                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
-| System-Only            | False                                                                  |
-| Tiene un único valor       | False                                                                  |
-| Está indexado             | False                                                                  |
-| En el catálogo global      | False                                                                  |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                           |
+| System-Only            | Falso                                                                  |
+| Es de un solo valor       | Falso                                                                  |
+| Está indexado             | Falso                                                                  |
+| En el catálogo global      | Falso                                                                  |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                           |
 | Range-Lower            | \-                                                                     |
 | Range-Upper            | \-                                                                     |
 | Search-Flags           | 0x00000000                                                             |

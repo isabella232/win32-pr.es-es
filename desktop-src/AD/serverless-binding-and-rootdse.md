@@ -1,27 +1,27 @@
 ---
 title: Enlace sin servidor y RootDSE
-description: Si es posible, no codifique un nombre de servidor.
+description: Si es posible, no codifie de forma hard-code un nombre de servidor.
 ms.assetid: 24cfd8ce-18e6-42f1-8bc5-2c6dee82d133
 ms.tgt_platform: multiple
 keywords:
-- Enlace sin servidor y AD de RootDSE
-- Enlace sin servidor AD
-- AD de RootDSE
-- Active Directory, uso, enlace, enlace sin servidor
+- Enlace sin servidor y RootDSE AD
+- AD de enlace sin servidor
+- RootDSE AD
+- Active Directory, Using, Binding, Serverless Binding
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 492a1ed115c4b0d9160305eb54b08c24db86abb8
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 2d3c88386ae95efdebd031199e135ff4c5d610e402b9cba522256df5eef097e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104487403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024933"
 ---
 # <a name="serverless-binding-and-rootdse"></a>Enlace sin servidor y RootDSE
 
-Si es posible, no codifique un nombre de servidor. Además, en la mayoría de los casos, el enlace no debe estar asociado innecesariamente a un solo servidor. Active Directory Domain Services admiten el enlace sin servidor, lo que significa que Active Directory se pueden enlazar a en el dominio predeterminado sin especificar el nombre de un controlador de dominio. En el caso de las aplicaciones normales, suele ser el dominio del usuario que ha iniciado sesión. En el caso de las aplicaciones de servicio, es el dominio de la cuenta de inicio de sesión del servicio o el del cliente que suplanta el servicio.
+Si es posible, no codifie de forma hard-code un nombre de servidor. Además, en la mayoría de las circunstancias, el enlace no debe asociarse innecesariamente a un único servidor. Active Directory Domain Services enlace sin servidor, lo que significa Active Directory se puede enlazar a en el dominio predeterminado sin especificar el nombre de un controlador de dominio. En el caso de las aplicaciones normales, suele ser el dominio del usuario que ha iniciado sesión. Para las aplicaciones de servicio, este es el dominio de la cuenta de inicio de sesión del servicio o el del cliente que suplanta el servicio.
 
-En LDAP 3,0, rootDSE se define como la raíz del árbol de datos de directorio en un servidor de directorio. RootDSE no forma parte de ningún espacio de nombres. El propósito de rootDSE es proporcionar datos sobre el servidor de directorio. A continuación se encuentra la cadena de enlace que se utiliza para enlazar a rootDSE.
+En LDAP 3.0, rootDSE se define como la raíz del árbol de datos de directorio en un servidor de directorios. RootDSE no forma parte de ningún espacio de nombres. El propósito de rootDSE es proporcionar datos sobre el servidor de directorios. A continuación se muestra la cadena de enlace que se usa para enlazar a rootDSE.
 
 
 ```C++
@@ -30,7 +30,7 @@ LDAP://<servername>/rootDSE
 
 
 
-<servername>Es el nombre DNS de un servidor. <servername>Es opcional, como se muestra en el siguiente formato.
+es <servername> el nombre DNS de un servidor. es <servername> opcional, como se muestra en el formato siguiente.
 
 
 ```C++
@@ -39,16 +39,16 @@ LDAP://rootDSE
 
 
 
-En este caso, se utilizará un controlador de dominio predeterminado del dominio en el que se encuentra el contexto de seguridad del subproceso que realiza la llamada. Si no se puede tener acceso a un controlador de dominio en el sitio, se utilizará el primer controlador de dominio que se pueda encontrar.
+En este caso, se usará un controlador de dominio predeterminado del dominio en el que se encuentra el contexto de seguridad del subproceso que realiza la llamada. Si no se puede acceder a un controlador de dominio dentro del sitio, se usará el primer controlador de dominio que se pueda encontrar.
 
-RootDSE es una ubicación conocida y confiable en cada servidor de directorio para obtener nombres distintivos de los contenedores de dominio, esquema y configuración, y otros datos sobre el servidor y el contenido de su árbol de datos de directorio. Estas propiedades rara vez cambian en un servidor determinado. Una aplicación puede leer estas propiedades en el inicio y usarlas en toda la sesión.
+RootDSE es una ubicación conocida y confiable en cada servidor de directorio para obtener nombres distintivos de los contenedores de dominio, esquema y configuración, y otros datos sobre el servidor y el contenido de su árbol de datos de directorio. Estas propiedades rara vez cambian en un servidor determinado. Una aplicación puede leer estas propiedades en el inicio y usarlas a lo largo de la sesión.
 
-En Resumen, una aplicación debe usar el enlace sin servidor para enlazar con el directorio en el dominio actual, usar rootDSE para obtener el nombre distintivo de un espacio de nombres y usar ese nombre distintivo para enlazar con los objetos del espacio de nombres.
+En resumen, una aplicación debe usar el enlace sin servidor para enlazar con el directorio del dominio actual, usar rootDSE para obtener el nombre distintivo de un espacio de nombres y usar ese nombre distintivo para enlazar a los objetos del espacio de nombres.
 
-Para obtener más información acerca de los atributos admitidos por rootDSE, consulte [RootDSE](/windows/desktop/ADSchema/rootdse) en la documentación del esquema de Active Directory.
+Para obtener más información sobre los atributos admitidos por rootDSE, vea [RootDSE](/windows/desktop/ADSchema/rootdse) en la documentación Active Directory schema.
 
-Para obtener más información y un ejemplo de código que muestra cómo usar el enlace sin servidor y rootDSE, consulte [el código de ejemplo para obtener el nombre distintivo del dominio](example-code-for-getting-the-distinguished-name-of-the-domain.md).
+Para obtener más información y un ejemplo de código que muestra cómo usar el enlace sin servidor y rootDSE, vea Código de ejemplo para obtener el nombre distintivo [del dominio](example-code-for-getting-the-distinguished-name-of-the-domain.md).
 
- 
+ 
 
- 
+ 

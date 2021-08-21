@@ -1,5 +1,5 @@
 ---
-description: Instala un paquete de excepción.
+description: Instala un paquete de excepciones.
 ms.assetid: c4c3c01c-9aaf-42cd-a690-13e2113b15b3
 title: Función InstallComponentW
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.locfileid: "118955924"
 ---
 # <a name="installcomponentw-function"></a>Función InstallComponentW
 
-Instala un paquete de excepción.
+Instala un paquete de excepciones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,14 +49,14 @@ void InstallComponentW(
 *InfPath* \[ En\]
 </dt> <dd>
 
-Ruta de acceso a la excepción INF que se debe procesar.
+Ruta de acceso a la excepción INF que se procesará.
 
 </dd> <dt>
 
-*CompGuid* \[ in, opcional\]
+*CompGuid* \[ en, opcional\]
 </dt> <dd>
 
-GUID del componente de excepción que se está instalando.
+GUID del componente de excepción que se va a instalar.
 
 </dd> <dt>
 
@@ -70,11 +70,11 @@ Marcas usadas para controlar los comportamientos de instalación. Este parámetr
 | Valor                                                                                                                                                                                                                                                               | Significado                                                                                                                                                     |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="COMP_FLAGS_FORCE"></span><span id="comp_flags_force"></span><dl> <dt>**COMP \_ FLAGS \_ FORCE**</dt> <dt>0x00000020</dt> </dl>                             | Omite la comprobación de versión en los reemplazos de archivos.<br/>                                                                                                    |
-| <span id="COMP_FLAGS_NEEDS_UNINSTALL"></span><span id="comp_flags_needs_uninstall"></span><dl> <dt>**COMP \_ FLAGS \_ NEEDS \_ UNINSTALL**</dt><dt></dt> </dl>        | Haga una copia de seguridad de los archivos que se actualizan para que los utilice una desinstalación del componente.<br/>                                                                      |
+| <span id="COMP_FLAGS_NEEDS_UNINSTALL"></span><span id="comp_flags_needs_uninstall"></span><dl> <dt>**COMP \_ FLAGS \_ NEEDS \_ UNINSTALL**</dt><dt></dt> </dl>        | Realizar una copia de seguridad de los archivos que se actualizan para que los utilice una desinstalación del componente.<br/>                                                                      |
 | <span id="COMP_FLAGS_NO_OVERWRITE"></span><span id="comp_flags_no_overwrite"></span><dl> <dt>**COMP \_ MARCAS \_ SIN \_ SOBRESCRITURA**</dt><dt></dt> </dl>                 | Omite la copia de seguridad de archivos si la versión del componente de excepción es la misma que la de un componente instalado. Esta marca se usa en un escenario de reinstalación.<br/> |
-| <span id="COMP_FLAGS_NOUI"></span><span id="comp_flags_noui"></span><dl> <dt>**COMP \_ Marcas \_ noui**</dt> <dt>0x00000002</dt> </dl>                                | Suprime toda la interfaz de usuario.<br/>                                                                                                                               |
-| <span id="COMP_FLAGS_UPDATE_DLLCACHE"></span><span id="comp_flags_update_dllcache"></span><dl> <dt>**COMP \_ FLAGS \_ UPDATE \_ DLLCACHE**</dt><dt></dt> </dl>        | Fuerza la actualización del directorio DLLCACHE cuando se actualiza un archivo del sistema.<br/>                                                                       |
-| <span id="COMP_FLAGS_USE_SVCPACK_CACHE"></span><span id="comp_flags_use_svcpack_cache"></span><dl> <dt>**COMP \_ LAS MARCAS \_ USAN \_ SVCPACK \_ CACHE**</dt><dt></dt> </dl> | Usa los archivos almacenados en caché Windows instalación de Service Pack para reemplazar los archivos de los que se ha creado una copia de seguridad.<br/>                                                                |
+| <span id="COMP_FLAGS_NOUI"></span><span id="comp_flags_noui"></span><dl> <dt>**COMP \_ MARCAS \_ NOUI**</dt> <dt>0x00000002</dt> </dl>                                | Suprime toda la interfaz de usuario.<br/>                                                                                                                               |
+| <span id="COMP_FLAGS_UPDATE_DLLCACHE"></span><span id="comp_flags_update_dllcache"></span><dl> <dt>**COMP \_ DLLCACHE \_ DE ACTUALIZACIÓN DE \_ MARCAS**</dt><dt></dt> </dl>        | Fuerza la actualización del directorio DLLCACHE cuando se actualiza un archivo del sistema.<br/>                                                                       |
+| <span id="COMP_FLAGS_USE_SVCPACK_CACHE"></span><span id="comp_flags_use_svcpack_cache"></span><dl> <dt>**COMP \_ LAS MARCAS \_ USAN \_ SVCPACK \_ CACHE**</dt><dt></dt> </dl> | Usa los archivos almacenados en caché Windows service pack para reemplazar los archivos de los que se ha creado una copia de seguridad.<br/>                                                                |
 
 
 
@@ -82,38 +82,38 @@ Marcas usadas para controlar los comportamientos de instalación. Este parámetr
 
 </dd> <dt>
 
-*VerMajor* \[ in, opcional\]
+*VerMajor* \[ en, opcional\]
 </dt> <dd>
 
 Versión principal del componente Exception.
 
 </dd> <dt>
 
-*VerMinor* \[ in, opcional\]
+*VerMinor* \[ en, opcional\]
 </dt> <dd>
 
-Versión secundaria del componente Exception.
+Versión secundaria del componente De excepción.
 
 </dd> <dt>
 
-*VerBuild* \[ in, opcional\]
+*VerBuild* \[ en, opcional\]
 </dt> <dd>
 
 Versión de compilación del componente Exception.
 
 </dd> <dt>
 
-*VerQFE* \[ in, opcional\]
+*VerQFE* \[ en, opcional\]
 </dt> <dd>
 
-Revisión de revisión del componente Exception.
+Revisión del componente Exception.
 
 </dd> <dt>
 
-*Nombre* \[ in, opcional\]
+*Nombre* \[ en, opcional\]
 </dt> <dd>
 
-Cadena descriptiva del componente que muestra el cuadro de diálogo protección de archivos de Windows si el sistema operativo detecta que un archivo de protección de Windows File Protection está dañado, alterado o dañado.
+Cadena descriptiva del componente que muestra el cuadro de diálogo Protección de archivos de Windows si el sistema operativo detecta que un archivo de protección de Windows File Protection está dañado, alterado o dañado.
 
 </dd> </dl>
 
@@ -123,11 +123,11 @@ Esta función devuelve un **valor HRESULT** (S \_ OK o un código de error). Se 
 
 ## <a name="remarks"></a>Comentarios
 
-Los paquetes de excepción Windows archivos del sistema que se liberan fuera de un paquete completo Windows versión y que actualizan los archivos del sistema operativo. Los paquetes de excepciones solo son creados por equipos de sistema operativo a los que se les ha concedido autorización para actualizar Windows archivos del sistema.
+Los paquetes de excepciones Windows archivos del sistema que se liberan fuera de un paquete completo Windows versión y que actualizan los archivos del sistema operativo. Los paquetes de excepciones solo son creados por equipos de sistema operativo a los que se les ha concedido autorización para actualizar Windows archivos del sistema.
 
-Para instalar y desinstalar archivos que no están protegidos por Windows File Protection, use las funciones documentadas en [Funciones de instalación general](https://msdn.microsoft.com/library/ms794585.aspx). Para instalar controladores de dispositivo, los vendedores deben usar funciones documentadas en [Funciones](https://msdn.microsoft.com/library/ms792954.aspx) de instalación de dispositivos [y PnP Administrador de configuración Functions](https://msdn.microsoft.com/library/ms790838.aspx).
+Para instalar y desinstalar archivos que no están protegidos por Windows File Protection, use las funciones documentadas en [Funciones de instalación general](https://msdn.microsoft.com/library/ms794585.aspx). Para instalar controladores de dispositivos, los vendedores deben usar funciones documentadas en [Funciones de](https://msdn.microsoft.com/library/ms792954.aspx) instalación de dispositivos [y PnP Administrador de configuración Functions](https://msdn.microsoft.com/library/ms790838.aspx).
 
-Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

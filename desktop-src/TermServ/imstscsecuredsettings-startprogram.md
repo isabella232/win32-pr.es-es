@@ -1,14 +1,14 @@
 ---
 title: Propiedad StartProgram de IMsTscSecuredSettings
-description: Especifica el programa que se va a iniciar en el servidor remoto en el momento de la conexión.
+description: Especifica el programa que se va a iniciar en el servidor remoto tras la conexión.
 ms.assetid: bd2a5ced-468b-48db-ad51-9940577a0310
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad StartProgram
-- Propiedad StartProgram Servicios de Escritorio remoto, interfaz IMsTscSecuredSettings
-- Servicios de Escritorio remoto de la interfaz IMsTscSecuredSettings, propiedad StartProgram
-- Propiedad StartProgram Servicios de Escritorio remoto, interfaz IMsRdpClientSecuredSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientSecuredSettings, propiedad StartProgram
+- Propiedad StartProgram Servicios de Escritorio remoto
+- Propiedad StartProgram Servicios de Escritorio remoto , interfaz IMsTscSecuredSettings
+- Interfaz IMsTscSecuredSettings Servicios de Escritorio remoto , propiedad StartProgram
+- Propiedad StartProgram Servicios de Escritorio remoto , interfaz IMsRdpClientSecuredSettings
+- Interfaz IMsRdpClientSecuredSettings Servicios de Escritorio remoto , propiedad StartProgram
 topic_type:
 - apiref
 api_name:
@@ -24,20 +24,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e79612855117f48e629e9a06246f3fad922d37f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 743bfba4e699726d76209d9df74d516a24ffaf2ee0f17b8b7510447140c2350d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118853548"
 ---
-# <a name="imstscsecuredsettingsstartprogram-property"></a>IMsTscSecuredSettings:: StartProgram (propiedad)
+# <a name="imstscsecuredsettingsstartprogram-property"></a>Propiedad IMsTscSecuredSettings::StartProgram
 
-Especifica el programa que se va a iniciar en el servidor remoto en el momento de la conexión.
+Especifica el programa que se va a iniciar en el servidor remoto tras la conexión.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -54,27 +54,27 @@ HRESULT get_StartProgram(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Nombre del nuevo programa de inicio. La longitud máxima de esta cadena es **la \_ ruta de acceso Max**-1 caracteres.
+Nombre del nuevo programa de inicio. La longitud máxima de esta cadena es **MAX \_ PATH**-1 caracteres.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si no se establece el valor de esta propiedad, se ejecutará el comando de Shell del usuario de la sesión. El comando de Shell se leerá desde el siguiente valor del registro en el servidor:
+Si no se establece el valor de esta propiedad, se ejecutará el comando shell del usuario de sesión. El comando de shell se leerá del siguiente valor del Registro en el servidor:
 
-**HKEY \_ SOFTWARE de \_ equipo local** \\  \\ **Microsoft** \\ **Windows NT** \\ **CurrentVersion** \\ **Winlogon** \\ **Shell**
+**HKEY \_ SOFTWARE \_ DE MÁQUINA** \\ **LOCAL** \\ **Microsoft** \\ **Windows NT** \\ **CurrentVersion** \\ **WinLogon** \\ **Shell**
 
-Para obtener más información, consulte [proporcionar seguridad de cliente RDP](providing-for-rdp-client-security.md) .
+Consulte Proporcionar [seguridad de cliente RDP](providing-for-rdp-client-security.md) para obtener más información.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |

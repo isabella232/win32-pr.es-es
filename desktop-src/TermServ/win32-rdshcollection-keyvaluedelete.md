@@ -1,12 +1,12 @@
 ---
-title: Método KeyValueDelete de la clase Win32_RDSHCollection
+title: Método KeyValueDelete de la Win32_RDSHCollection clase
 description: Elimina la clave especificada (y el valor asociado) de la colección.
 ms.assetid: 968d6744-7b4a-45e5-87fb-90c408dbc771
 ms.tgt_platform: multiple
 keywords:
 - Método KeyValueDelete Servicios de Escritorio remoto
-- Método KeyValueDelete Servicios de Escritorio remoto, clase Win32_RDSHCollection
-- Win32_RDSHCollection de clase Servicios de Escritorio remoto, método KeyValueDelete
+- Método KeyValueDelete Servicios de Escritorio remoto , Win32_RDSHCollection clase
+- Win32_RDSHCollection clase Servicios de Escritorio remoto método , KeyValueDelete
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de1b4b29aea7890817c8d3cd8599f6effceb53c1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 64efd9beb6aaca70cd92d8eefe8e7b93b91aea9fbbecb6377d76f8c69b7f85c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118849080"
 ---
-# <a name="keyvaluedelete-method-of-the-win32_rdshcollection-class"></a>Método KeyValueDelete de la \_ clase RDSHCollection de Win32
+# <a name="keyvaluedelete-method-of-the-win32_rdshcollection-class"></a>Método KeyValueDelete de la clase \_ RDSHCollection de Win32
 
 Elimina la clave especificada (y el valor asociado) de la colección.
 
@@ -43,10 +43,10 @@ uint32 KeyValueDelete(
 
 <dl> <dt>
 
-*Clave* \[ de de\]
+*Clave* \[ En\]
 </dt> <dd>
 
-Clave que se va a eliminar.
+Clave que se debe eliminar.
 
 </dd> </dl>
 
@@ -54,12 +54,12 @@ Clave que se va a eliminar.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ cimv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ cimv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -68,7 +68,7 @@ Clave que se va a eliminar.
 
 <dl> <dt>
 
-[**Win32 \_ RDSHCollection**](win32-rdshcollection.md)
+[**RdsHCollection de Win32 \_**](win32-rdshcollection.md)
 </dt> </dl>
 
  

@@ -1,30 +1,30 @@
 ---
-title: Método de desconexión IMsTscAx
+title: Método IMsTscAx Disconnect
 description: Desconecta la conexión activa.
 ms.assetid: 9fcffd45-b293-4650-be8f-1b0d01d592a2
 ms.tgt_platform: multiple
 keywords:
-- Desconectar método Servicios de Escritorio remoto
-- Método Disconnect Servicios de Escritorio remoto, interfaz IMsTscAx
-- Interfaz IMsTscAx Servicios de Escritorio remoto, método Disconnect
-- Método Disconnect Servicios de Escritorio remoto, interfaz IMsRdpClient
-- Interfaz IMsRdpClient Servicios de Escritorio remoto, método Disconnect
-- Método Disconnect Servicios de Escritorio remoto, interfaz IMsRdpClient2
-- Interfaz IMsRdpClient2 Servicios de Escritorio remoto, método Disconnect
-- Método Disconnect Servicios de Escritorio remoto, interfaz IMsRdpClient3
-- Interfaz IMsRdpClient3 Servicios de Escritorio remoto, método Disconnect
-- Método Disconnect Servicios de Escritorio remoto, interfaz IMsRdpClient4
-- Interfaz IMsRdpClient4 Servicios de Escritorio remoto, método Disconnect
-- Método Disconnect Servicios de Escritorio remoto, interfaz IMsRdpClient5
-- Interfaz IMsRdpClient5 Servicios de Escritorio remoto, método Disconnect
-- Método Disconnect Servicios de Escritorio remoto, interfaz IMsRdpClient6
-- Interfaz IMsRdpClient6 Servicios de Escritorio remoto, método Disconnect
-- Método Disconnect Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Interfaz IMsRdpClient7 Servicios de Escritorio remoto, método Disconnect
-- Método Disconnect Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Interfaz IMsRdpClient8 Servicios de Escritorio remoto, método Disconnect
-- Método Disconnect Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Interfaz IMsRdpClient9 Servicios de Escritorio remoto, método Disconnect
+- Método disconnect Servicios de Escritorio remoto
+- Método Disconnect Servicios de Escritorio remoto , interfaz IMsTscAx
+- Interfaz IMsTscAx Servicios de Escritorio remoto , método Disconnect
+- Método Disconnect Servicios de Escritorio remoto , interfaz IMsRdpClient
+- Interfaz IMsRdpClient Servicios de Escritorio remoto , método Disconnect
+- Método Disconnect Servicios de Escritorio remoto , interfaz IMsRdpClient2
+- Interfaz IMsRdpClient2 Servicios de Escritorio remoto , método Disconnect
+- Método Disconnect Servicios de Escritorio remoto , interfaz IMsRdpClient3
+- Interfaz IMsRdpClient3 Servicios de Escritorio remoto , método Disconnect
+- Método Disconnect Servicios de Escritorio remoto , interfaz IMsRdpClient4
+- Interfaz IMsRdpClient4 Servicios de Escritorio remoto , método Disconnect
+- Método Disconnect Servicios de Escritorio remoto , interfaz IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto , método Disconnect
+- Método Disconnect Servicios de Escritorio remoto , interfaz IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto , método Disconnect
+- Método Disconnect Servicios de Escritorio remoto , interfaz IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , método Disconnect
+- Método Disconnect Servicios de Escritorio remoto , interfaz IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , método Disconnect
+- Método Disconnect Servicios de Escritorio remoto , interfaz IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , método Disconnect
 topic_type:
 - apiref
 api_name:
@@ -44,14 +44,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d4f1545a8244209c0b4fa8267fcc8ce2a41e090
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5a993bb1927dd0e1d13e65cffe69faa3706b6cee3876af8de66fe0415d2fe249
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118854429"
 ---
-# <a name="imstscaxdisconnect-method"></a>IMsTscAx::D método Ulta
+# <a name="imstscaxdisconnect-method"></a>Método IMsTscAx::D isconnect
 
 Desconecta la conexión activa.
 
@@ -70,27 +70,27 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método devuelve un valor de error si se llama cuando el control no está conectado.
+Este método devuelve un valor de error si se llama a cuando el control no está conectado.
 
-También es posible desconectar el control cerrando la ventana principal. Por ejemplo, si el control está hospedado en una página web, no es necesario llamar a este método antes de que se abandone la página; el cierre del control desencadena una desconexión.
+También es posible desconectar el control cerrando su ventana principal. Por ejemplo, si el control se hospeda en una página web, no es necesario llamar a este método antes de salir de la página. el cierre del control desencadena una desconexión.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsTscAx se define como 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
+| IID<br/>                      | IID IMsTscAx se define como \_ 8C11EFAE-92C3-11D1-BC1E-00C04FA31489<br/>            |
 
 
 

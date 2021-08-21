@@ -1,20 +1,20 @@
 ---
-title: Interfaces de virtualización Escritorio remoto
-description: La API de virtualización de Escritorio remoto admite las siguientes interfaces.
+title: Escritorio remoto interfaces de virtualización
+description: La API Escritorio remoto Virtualization admite las interfaces siguientes.
 ms.assetid: 150a3c9a-d504-4854-adaa-92e3a7e8ea70
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26674bfb4af3d858ed914ea48e210c7506d5f454
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 4627b29bcb5fba6518d89a4d92eca48e2665a6bda98f724a0219de5fca884f4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118851851"
 ---
-# <a name="remote-desktop-virtualization-interfaces"></a>Interfaces de virtualización Escritorio remoto
+# <a name="remote-desktop-virtualization-interfaces"></a>Escritorio remoto interfaces de virtualización
 
-La API de virtualización de Escritorio remoto admite las siguientes interfaces.
+La API Escritorio remoto Virtualization admite las interfaces siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -23,7 +23,7 @@ La API de virtualización de Escritorio remoto admite las siguientes interfaces.
 [**ITsSbBaseNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbbasenotifysink)
 </dt> <dd>
 
-Expone métodos que notifican el estado y los mensajes de error a Conexión a Escritorio remoto Broker (agente de conexión a escritorio remoto).
+Expone métodos que informan del estado y los mensajes de error a Conexión a Escritorio remoto Broker (Agente de conexión a Escritorio remoto).
 
 </dd> <dt>
 
@@ -37,7 +37,7 @@ Expone métodos y propiedades que almacenan información de estado sobre una sol
 [**ITsSbClientConnectionPropertySet**](/windows/win32/api/sbtsv/nn-sbtsv-itssbclientconnectionpropertyset)
 </dt> <dd>
 
-Se puede usar para definir las propiedades personalizadas de una conexión de cliente según corresponda.
+Se puede usar para definir propiedades personalizadas de una conexión de cliente según corresponda.
 
 </dd> <dt>
 
@@ -51,28 +51,28 @@ Expone métodos y propiedades que contienen información sobre el entorno que ho
 [**ITsSbEnvironmentPropertySet**](/windows/win32/api/sbtsv/nn-sbtsv-itssbenvironmentpropertyset)
 </dt> <dd>
 
-Se puede usar para definir las propiedades personalizadas de un entorno que hospede los equipos de destino según corresponda.
+Se puede usar para definir propiedades personalizadas de un entorno que hospeda equipos de destino según corresponda.
 
 </dd> <dt>
 
 [**ITsSbFilterPluginStore**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbfilterpluginstore)
 </dt> <dd>
 
-Filtrar el almacén de complementos
+Filtrar almacén de complementos
 
 </dd> <dt>
 
 [**ITsSbGenericNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbgenericnotifysink)
 </dt> <dd>
 
-Expone métodos que notifican la finalización de y obtiene el tiempo de espera del agente de conexión a escritorio remoto.
+Expone métodos que informan de la finalización a y obtiene el tiempo de espera del Agente de conexión a Escritorio remoto.
 
 </dd> <dt>
 
 [**ITsSbGlobalStore**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbglobalstore)
 </dt> <dd>
 
-Expone métodos que consultan los equipos de destino, las sesiones, los entornos y las granjas de servidores que se han agregado al almacén de agentes de conexión a escritorio remoto.
+Expone métodos que consultan equipos de destino, sesiones, entornos y granjas de servidores que se han agregado al almacén del Agente de conexión a Escritorio remoto.
 
 </dd> <dt>
 
@@ -86,28 +86,28 @@ Expone métodos y propiedades que almacenan el nombre de destino devuelto por un
 [**ITsSbLoadBalancing**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbloadbalancing)
 </dt> <dd>
 
-Expone métodos que se pueden usar para proporcionar un algoritmo de equilibrio de carga personalizado.
+Expone métodos que puede usar para proporcionar un algoritmo de equilibrio de carga personalizado.
 
 </dd> <dt>
 
 [**ITsSbLoadBalancingNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbloadbalancingnotifysink)
 </dt> <dd>
 
-Expone métodos que devuelven el resultado de un algoritmo de equilibrio de carga al agente de conexión a escritorio remoto.
+Expone métodos que devuelven el resultado de un algoritmo de equilibrio de carga al Agente de conexión a Escritorio remoto.
 
 </dd> <dt>
 
 [**ITsSbOrchestration**](/windows/desktop/api/sbtsv/nn-sbtsv-itssborchestration)
 </dt> <dd>
 
-Expone los métodos que usa el agente de conexión a escritorio remoto para asegurarse de que el destino está listo antes de que un cliente se redirija a él.
+Expone los métodos que usa el Agente de conexión a Escritorio remoto para asegurarse de que el destino está listo antes de que se le redirija un cliente.
 
 </dd> <dt>
 
 [**ITsSbOrchestrationNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssborchestrationnotifysink)
 </dt> <dd>
 
-Expone métodos que devuelven un objeto [**ITsSbTarget**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtarget) al agente de conexión a escritorio remoto después de preparar correctamente el destino para una conexión.
+Expone métodos que devuelven un [**objeto ITsSbTarget**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtarget) al Agente de conexión a Escritorio remoto después de que el destino se haya preparado correctamente para una conexión.
 
 </dd> <dt>
 
@@ -121,42 +121,42 @@ Expone métodos que preparan el entorno (el equipo que hospeda la máquina virtu
 [**ITsSbPlacementNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbplacementnotifysink)
 </dt> <dd>
 
-Expone métodos que devuelven información acerca de los entornos al agente de conexión a escritorio remoto.
+Expone métodos que devuelven información sobre los entornos al Agente de conexión a Escritorio remoto.
 
 </dd> <dt>
 
 [**ITsSbPlugin**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbplugin)
 </dt> <dd>
 
-Expone métodos que inicializan y terminan complementos.
+Expone métodos que inicializan y finalizan complementos.
 
 </dd> <dt>
 
 [**ITsSbPluginNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbpluginnotifysink)
 </dt> <dd>
 
-Expone métodos que envían una notificación al agente de conexión a escritorio remoto sobre la inicialización o terminación de un complemento.
+Expone métodos que notifican al Agente de conexión a Escritorio remoto la inicialización o finalización de un complemento.
 
 </dd> <dt>
 
 [**ITsSbPluginPropertySet**](/windows/win32/api/sbtsv/nn-sbtsv-itssbpluginpropertyset)
 </dt> <dd>
 
-Se puede usar para definir las propiedades del complemento personalizado según corresponda.
+Se puede usar para definir propiedades de complemento personalizadas según corresponda.
 
 </dd> <dt>
 
 [**ITsSbPropertySet**](/windows/win32/api/sbtsv/nn-sbtsv-itssbpropertyset)
 </dt> <dd>
 
-Se puede usar para definir las propiedades personalizadas según corresponda.
+Se puede usar para definir propiedades personalizadas según corresponda.
 
 </dd> <dt>
 
 [**ITsSbProvider**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbprovider)
 </dt> <dd>
 
-Expone métodos que crean implementaciones predeterminadas de objetos que se usan en Escritorio remoto virtualización.
+Expone métodos que crean implementaciones predeterminadas de objetos que se usan en Escritorio remoto Virtualización.
 
 </dd> <dt>
 
@@ -170,28 +170,28 @@ Expone métodos que crean y mantienen máquinas virtuales.
 [**ITsSbProvisioningPluginNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbprovisioningpluginnotifysink)
 </dt> <dd>
 
-Expone métodos que notifican al agente de conexión a escritorio remoto sobre el aprovisionamiento de máquinas virtuales.
+Expone métodos que notifican al Agente de conexión a Escritorio remoto sobre el aprovisionamiento de máquinas virtuales.
 
 </dd> <dt>
 
 [**ITsSbResourceNotification**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbresourcenotification)
 </dt> <dd>
 
-Expone métodos que el agente de conexión a escritorio remoto usa para notificar complementos de cualquier cambio de estado que se produzca en los objetos de conexión de cliente, destino y sesión.
+Expone los métodos que usa el Agente de conexión a Escritorio remoto para notificar a los complementos los cambios de estado que se producen en los objetos de conexión de sesión, destino y cliente.
 
 </dd> <dt>
 
 [**ITsSbResourceNotificationEx**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbresourcenotificationex)
 </dt> <dd>
 
-Expone métodos que el agente de conexión a escritorio remoto usa para notificar complementos de cualquier cambio de estado que se produzca en los objetos de conexión de cliente, destino y sesión.
+Expone los métodos que usa el Agente de conexión a Escritorio remoto para notificar a los complementos los cambios de estado que se producen en los objetos de conexión de sesión, destino y cliente.
 
 </dd> <dt>
 
 [**ITsSbResourcePlugin**](/windows/win32/api/sbtsv/nn-sbtsv-itssbresourceplugin)
 </dt> <dd>
 
-Expone métodos que amplían las capacidades del agente de conexión a escritorio remoto.
+Expone métodos que amplían las funciones del Agente de conexión a Escritorio remoto.
 
 </dd> <dt>
 
@@ -212,7 +212,7 @@ Expone métodos que permiten a los complementos de recursos almacenar objetos co
 [**ITsSbServiceNotification**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbservicenotification)
 </dt> <dd>
 
-Expone los métodos que usa el agente de conexión a escritorio remoto para notificar los complementos de los cambios de estado que se producen en el propio agente de conexión a escritorio remoto.
+Expone los métodos que usa el Agente de conexión a Escritorio remoto para notificar a los complementos los cambios de estado que se producen en el propio Agente de conexión a Escritorio remoto.
 
 </dd> <dt>
 
@@ -247,31 +247,31 @@ Derive de esta interfaz para definir un conjunto de propiedades de destino perso
 [**ITsSbTaskInfo**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtaskinfo)
 </dt> <dd>
 
-Expone propiedades que el agente de Conexión a Escritorio remoto usa para establecer la cola de un complemento.
+Expone las propiedades que usa Conexión a Escritorio remoto Broker para establecer la cola de un complemento.
 
 </dd> <dt>
 
 [**ITsSbTaskPlugin**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtaskplugin)
 </dt> <dd>
 
-Expone métodos que actualizan la cola de tareas para los complementos de Conexión a Escritorio remoto Broker.
+Expone métodos que actualizan la cola de tareas para Conexión a Escritorio remoto complementos de Broker.
 
 </dd> <dt>
 
 [**ITsSbTaskPluginNotifySink**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtaskpluginnotifysink)
 </dt> <dd>
 
-Expone métodos que notifican el estado y los mensajes de error sobre las tareas del agente de conexión a escritorio remoto.
+Expone métodos que informan del estado y los mensajes de error sobre las tareas al Agente de conexión a Escritorio remoto.
 
 </dd> <dt>
 
 [**IWTSSBPlugin**](/windows/desktop/api/Tssbx/nn-tssbx-iwtssbplugin)
 </dt> <dd>
 
-Se usa para ampliar las capacidades de Terminal Services agente de sesiones (agente de sesiones de TS). Implemente esta interfaz cuando desee proporcionar un complemento que invalide la lógica de redirección del agente de sesiones de TS.
+Se usa para ampliar las funcionalidades del Agente de sesión de Terminal Services (TS Session Broker). Implemente esta interfaz cuando desee proporcionar un complemento que invalide la lógica de redireccionamiento del Agente de sesión de TS.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 

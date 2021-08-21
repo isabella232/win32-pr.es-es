@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 727744445e952fa0135feff944c768aaba1aba36
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 69847ff648d11f13c87066f765fe92de7e92d831fd137a87bf1b61ebeafeed85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990575"
 ---
 # <a name="d3dxvec3unprojectarray-function-d3dx10mathh"></a>Función D3DXVec3UnprojectArray (D3DX10Math.h)
 
@@ -52,7 +52,7 @@ D3DXVECTOR3* D3DXVec3UnprojectArray(
 
 Tipo: **[ **D3DXVECTOR3**](../direct3d9/d3dxvector3.md)\***
 
-Puntero a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que es el resultado de la operación.
+Puntero a [**D3DXVECTOR3 que**](d3d10-d3dxvector3.md) es el resultado de la operación.
 
 </dd> <dt>
 
@@ -61,7 +61,7 @@ Puntero a [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que es el resultado de la oper
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Pasos entre vectores en el flujo de datos de salida.
+Paso entre vectores en el flujo de datos de salida.
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Puntero a la estructura D3DXVECTOR3 de origen.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Pasos entre vectores en el flujo de datos de entrada.
+Paso entre vectores en el flujo de datos de entrada.
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Pasos entre vectores en el flujo de datos de entrada.
 
 Tipo: **const [**D3D10 \_ VIEWPORT**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_viewport) \***
 
-Puntero a una [**ventanilla D3D10 \_**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_viewport)que representa la ventanilla.
+Puntero a una [**ventanilla D3D10 \_**](/windows/desktop/api/D3D10/ns-d3d10-d3d10_viewport), que representa la ventanilla.
 
 </dd> <dt>
 
@@ -148,7 +148,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -18,16 +18,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 35cb4b3548654c72686a8843cc697f109f661d87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca942fce42388eaeb2eb90b7b7ecd992dd6df39bca554bb63bbc55fb6bbb867a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118821470"
 ---
 # <a name="wmimonitorlistedsupportedsourcemodes-class"></a>Clase WmiMonitorListedSupportedSourceModes
 
-El **WmiMonitorListedSupportedSourceModes** enumera los modos de origen admitidos para un monitor de vídeo en su descriptor de monitor, si existe alguno. En el caso de los monitores que no tienen ninguna descripción, esta lista de modos se genera en función del tipo de monitor, tal y como se especifica en el controlador de bus de supervisión.
+**WmiMonitorListedSupportedSourceModes** enumera los modos de origen admitidos para un monitor de vídeo en su descriptor de monitor, si existe alguno. En el caso de los monitores que no tienen ninguna descripción, esta lista de modos se genera en función del tipo de monitor, según lo especificado por el controlador de bus de supervisión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,13 +44,13 @@ class WmiMonitorListedSupportedSourceModes : MSMonitorClass
 
 ## <a name="members"></a>Miembros
 
-La clase **WmiMonitorListedSupportedSourceModes** tiene estos tipos de miembros:
+La **clase WmiMonitorListedSupportedSourceModes** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **WmiMonitorListedSupportedSourceModes** tiene estas propiedades.
+La **clase WmiMonitorListedSupportedSourceModes** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -76,7 +76,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
 Nombre de la instancia de monitor específica.
@@ -86,33 +86,33 @@ Nombre de la instancia de monitor específica.
 **MonitorSourceModes**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **VideoModeDescriptor**
+Tipo de datos: **matriz VideoModeDescriptor**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Enumera los modos de origen de monitor que representan las instancias de la clase [**VideoModeDescriptor**](videomodedescriptor.md) .
+Enumera los modos de origen del monitor representados por instancias de la [**clase VideoModeDescriptor.**](videomodedescriptor.md)
 
 </dd> <dt>
 
 **NumOfMonitorSourceModes**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de modo de origen de monitor compatible.
+Número de monitores admitidos en la lista.
 
 </dd> <dt>
 
 **PreferredMonitorSourceModeIndex**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -126,12 +126,12 @@ Tipo de acceso: solo lectura
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
-| Espacio de nombres<br/>                | \\WMI raíz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Wmi \\ raíz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

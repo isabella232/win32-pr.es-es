@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 519ce82a8d5a8c6adaf22b69047a8d365bd777ac
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: ab9f3fdd53b1fbad4fa0b6a92c07589a8c0fab41c162dc49939f0e7254bf99c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991195"
 ---
 # <a name="d3dxplanefrompointnormal-function-d3dx10mathh"></a>Función D3DXPlaneFromPointNormal (D3DX10Math.h)
 
@@ -90,7 +90,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

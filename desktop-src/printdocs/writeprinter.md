@@ -100,9 +100,9 @@ La secuencia de un trabajo de impresión es la siguiente:
 5.  Repita 2, 3 y 4 para tantas páginas como sea necesario.
 6.  Para finalizar el trabajo de impresión, llame [**a EndDocPrinter**](enddocprinter.md).
 
-Cuando se envía un documento de alto nivel (como un archivo de Adobe PDF o Microsoft Word) u otros datos de impresora (por ejemplo, PCL, PS o HPGL) directamente a una impresora, la configuración de impresión definida en el documento precede sobre Windows de impresión. Los documentos se devuelven cuando el valor del miembro *pDatatype* de la estructura [**DOC INFO \_ \_ 1**](doc-info-1.md) que se pasó en el *parámetro pDocInfo* de la llamada [**a StartDocPrinter**](startdocprinter.md) es "RAW" debe describir completamente la configuración del trabajo de impresión [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea)-style en el lenguaje comprendido por el hardware.
+Cuando un documento de alto nivel (por ejemplo, un archivo de Adobe PDF o Microsoft Word) u otros datos de impresora (como PCL, PS o HPGL) se envían directamente a una impresora, la configuración de impresión definida en el documento precede sobre Windows de impresión. Los documentos se devuelven cuando el valor del miembro *pDatatype* de la estructura [**DOC INFO \_ \_ 1**](doc-info-1.md) que se pasó en el *parámetro pDocInfo* de la llamada [**a StartDocPrinter**](startdocprinter.md) es "RAW" debe describir completamente la configuración del trabajo de impresión [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea)-style en el lenguaje comprendido por el hardware.
 
-En versiones de Windows anteriores a Windows XP, cuando una página de un archivo en cola supera aproximadamente 350 MB, puede no imprimir y no enviar un mensaje de error. Por ejemplo, esto puede ocurrir al imprimir archivos EMF grandes. El límite de tamaño de página en las versiones de Windows anteriores a Windows XP depende de muchos factores, como la cantidad de memoria virtual disponible, la cantidad de memoria asignada mediante la llamada a procesos y la cantidad de fragmentación en el montón de procesos. En Windows XP y versiones posteriores de Windows, los archivos EMF deben tener un tamaño de 2 GB o menos. Si **writePrinter se** usa para escribir datos que no son EMF, como la PDL lista para impresora, el tamaño del archivo solo está limitado por el espacio en disco disponible.
+En versiones de Windows anteriores a Windows XP, cuando una página de un archivo en cola supera aproximadamente 350 MB, puede no imprimirse y no enviar un mensaje de error. Por ejemplo, esto puede ocurrir al imprimir archivos EMF grandes. El límite de tamaño de página en las versiones de Windows anteriores a Windows XP depende de muchos factores, como la cantidad de memoria virtual disponible, la cantidad de memoria asignada mediante la llamada a procesos y la cantidad de fragmentación en el montón de procesos. En Windows XP y versiones posteriores de Windows, los archivos EMF deben tener un tamaño de 2 GB o menos. Si **writePrinter se** usa para escribir datos que no son EMF, como la PDL lista para impresora, el tamaño del archivo solo está limitado por el espacio en disco disponible.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -112,7 +112,7 @@ Para obtener un programa de ejemplo que use esta función, [vea Cómo: Imprimir 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -122,7 +122,7 @@ Para obtener un programa de ejemplo que use esta función, [vea Cómo: Imprimir 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

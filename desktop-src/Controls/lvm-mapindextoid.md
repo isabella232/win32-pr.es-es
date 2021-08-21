@@ -1,6 +1,6 @@
 ---
 title: LVM_MAPINDEXTOID mensaje (Commctrl.h)
-description: Mapas índice de un elemento a un identificador único.
+description: Mapas el índice de un elemento a un identificador único.
 ms.assetid: d0486e21-2703-4289-abb0-f5f9c7b60b40
 keywords:
 - LVM_MAPINDEXTOID controles de Windows mensaje
@@ -23,7 +23,7 @@ ms.locfileid: "118958154"
 ---
 # <a name="lvm_mapindextoid-message"></a>Mensaje \_ MAPINDEXTOID de LVM
 
-Mapas índice de un elemento a un identificador único.
+Mapas el índice de un elemento a un identificador único.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -49,7 +49,7 @@ Devuelve un identificador único.
 
 ## <a name="remarks"></a>Comentarios
 
-Los controles de vista de lista realiza un seguimiento interno de los elementos por índice. Esto puede presentar problemas porque los índices pueden cambiar durante la duración del control.
+Los controles de vista de lista realiza un seguimiento interno de los elementos por índice. Esto puede presentar problemas porque los índices pueden cambiar durante la vigencia del control.
 
 El control list-view puede etiquetar un elemento con un identificador cuando se crea el elemento. Puede usar este identificador para garantizar la unidad durante la vigencia del control list-view.
 
@@ -69,7 +69,7 @@ Para identificar de forma única un elemento, tome el índice que se devuelve de
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |

@@ -1,12 +1,12 @@
 ---
 title: Propiedad RdpFileContents de IMsRdpClientShell
-description: Especifica o recupera el contenido del archivo Protocolo de escritorio remoto (RDP) que se va a iniciar desde Escritorio remoto Web Access (acceso web de escritorio remoto) o desde otro portal web.
+description: Especifica o recupera el contenido de Protocolo de escritorio remoto (RDP) que se va a iniciar desde Escritorio remoto Web Access (Acceso web de Escritorio remoto) o desde algún otro portal web.
 ms.assetid: fcf37221-0fd5-41fd-83da-7fafc1aff944
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad RdpFileContents
-- Propiedad RdpFileContents Servicios de Escritorio remoto, interfaz IMsRdpClientShell
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientShell, propiedad RdpFileContents
+- Propiedad RdpFileContents Servicios de Escritorio remoto
+- Propiedad RdpFileContents Servicios de Escritorio remoto , interfaz IMsRdpClientShell
+- Interfaz IMsRdpClientShell Servicios de Escritorio remoto , propiedad RdpFileContents
 topic_type:
 - apiref
 api_name:
@@ -19,20 +19,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed2d1c682c06415757f29f2226f48970f4268800
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 121a2015b90def02342aede3342cca3566a9ed8fc7693f89b57a112f16869511
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118854449"
 ---
-# <a name="imsrdpclientshellrdpfilecontents-property"></a>IMsRdpClientShell:: RdpFileContents (propiedad)
+# <a name="imsrdpclientshellrdpfilecontents-property"></a>Propiedad IMsRdpClientShell::RdpFileContents
 
-Especifica o recupera el contenido del archivo Protocolo de escritorio remoto (RDP) que se va a iniciar desde Escritorio remoto Web Access (acceso web de escritorio remoto) o desde otro portal web.
+Especifica o recupera el contenido de Protocolo de escritorio remoto (RDP) que se va a iniciar desde Escritorio remoto Web Access (Acceso web de Escritorio remoto) o desde algún otro portal web.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -61,7 +61,7 @@ Especifica el contenido del archivo RDP que se va a iniciar desde el portal web.
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpClientShell se define como d012ae6d-c19a-4bfe-B367-201f8911f134<br/>   |
+| IID<br/>                      | IID IMsRdpClientShell se define como \_ d012ae6d-c19a-4bfe-b367-201f8911f134<br/>   |
 
 
 

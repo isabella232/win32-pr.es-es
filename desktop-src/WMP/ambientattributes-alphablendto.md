@@ -3,7 +3,7 @@ title: AmbientAttributes.alphaBlendTo
 description: El método alphaBlendTo ajusta la propiedad alphaBlend durante un período de tiempo.
 ms.assetid: 5cb259bd-3010-4086-be9d-65022be297b7
 keywords:
-- AmbientAttributes. alphaBlendTo Windows Media Player
+- AmbientAttributes.alphaBlendTo Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 16b21e78de3510e2e4a58c7214995f7888f778c1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a8e0e29df897d070cd4d337e27a7f5f7f7e3a86c7f44a784afadb5bc203674ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055233"
 ---
 # <a name="ambientattributesalphablendto"></a>AmbientAttributes.alphaBlendTo
 
-El método **alphaBlendTo** ajusta la propiedad **alphaBlend** durante un período de tiempo.
+El **método alphaBlendTo** ajusta la **propiedad alphaBlend** durante un período de tiempo.
 
 ``` syntax
         elementID.alphaBlendTo(newVal, alphaTime)
@@ -35,14 +35,14 @@ El método **alphaBlendTo** ajusta la propiedad **alphaBlend** durante un perío
 <span id="newVal"></span><span id="newval"></span><span id="NEWVAL"></span>*newVal*
 </dt> <dd>
 
-**Número** (largo) que especifica el nuevo valor de opacidad. Oscila entre 0 (sin opacidad) y 255 (opacidad completa).
+**Número** (long) que especifica el nuevo valor de opacidad. Oscila entre 0 (sin opacidad) y 255 (opacidad completa).
 
 </dd> <dt>
 
 <span id="alphaTime"></span><span id="alphatime"></span><span id="ALPHATIME"></span>*alphaTime*
 </dt> <dd>
 
-**Número** (**largo**) que especifica el tiempo, en milisegundos, que toma el elemento para cambiar la opacidad.
+**Number** (**long**) que especifica el tiempo, en milisegundos, que tarda el elemento en cambiar la opacidad.
 
 </dd> </dl>
 
@@ -50,11 +50,11 @@ El método **alphaBlendTo** ajusta la propiedad **alphaBlend** durante un perío
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método es útil para que los elementos aparezcan o desaparezcan gradualmente.
+Este método es útil para hacer que los elementos aparezcan o desaparezcan gradualmente.
 
-Cuando se usa **alphaBlendTo** con un elemento de **texto** que no tiene el parámetro **BackgroundColor** especificado, se usará un color de fondo negro. Si el color de primer plano también es negro (que es el valor predeterminado del *texto*).**foregroundColor**), es posible que el texto sea ilegible. Para evitarlo, especifique siempre el atributo **BackgroundColor** o establezca **foregroundColor** en un color distinto de Black.
+Cuando se usa **alphaBlendTo con** un elemento **TEXT** que no tiene especificado **backgroundColor,** se usará un color de fondo negro. Si el color de primer plano también es negro (que es el valor predeterminado para *TEXT.***foregroundColor**), es posible que el texto se vuelva ilegible. Para evitarlo, especifique siempre el atributo **backgroundColor** o establezca **foregroundColor** en un color distinto del negro.
 
 > [!Note]  
 > Este atributo no se admite en Windows 98.
@@ -67,7 +67,7 @@ Cuando se usa **alphaBlendTo** con un elemento de **texto** que no tiene el par�
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -75,7 +75,7 @@ Cuando se usa **alphaBlendTo** con un elemento de **texto** que no tiene el par�
 
 <dl> <dt>
 
-[**Atributos de ambiente**](ambient-attributes.md)
+[**Atributos ambientales**](ambient-attributes.md)
 </dt> <dt>
 
 [**AmbientAttributes.alphaBlend**](ambientattributes-alphablend.md)
@@ -84,10 +84,10 @@ Cuando se usa **alphaBlendTo** con un elemento de **texto** que no tiene el par�
 [**Elemento TEXT**](text-element.md)
 </dt> <dt>
 
-[**TEXT. backgroundColor**](text-backgroundcolor.md)
+[**TEXT.backgroundColor**](text-backgroundcolor.md)
 </dt> <dt>
 
-[**TEXT. foregroundColor**](text-foregroundcolor.md)
+[**TEXT.foregroundColor**](text-foregroundcolor.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Win32_RDCentralPublishedFarm (clase)
-description: La lista de granjas de servidores desde la que se publicaron los equipos de escritorio o las aplicaciones.
+title: Win32_RDCentralPublishedFarm clase
+description: Lista de granjas de servidores desde las que se han publicado escritorios o aplicaciones.
 ms.assetid: 8fead659-42b4-4a10-892a-a6b616c47255
 ms.tgt_platform: multiple
 keywords:
 - Win32_RDCentralPublishedFarm clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_RDCentralPublishedFarm de clase, se describe
+- Win32_RDCentralPublishedFarm clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -27,16 +27,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9377053906168d4228e3b2cb8ae4f24cbb571634
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f7ce689349b92d47ad816a79da14dd0868c0a91b6e33ab513c4405bfa3bd05c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104490103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118850000"
 ---
-# <a name="win32_rdcentralpublishedfarm-class"></a>\_Clase Win32 RDCentralPublishedFarm
+# <a name="win32_rdcentralpublishedfarm-class"></a>Clase \_ RDCentralPublishedFarm de Win32
 
-La lista de granjas de servidores desde la que se publicaron los equipos de escritorio o las aplicaciones.
+Lista de granjas de servidores desde las que se han publicado escritorios o aplicaciones.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -78,13 +78,13 @@ La **clase \_ RDCentralPublishedFarm de Win32** tiene estas propiedades.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-El nombre de la granja desde la que se publicaron los equipos de escritorio o las aplicaciones.
+Nombre de la granja desde la que se han publicado escritorios o aplicaciones.
 
 </dd> <dt>
 
@@ -102,7 +102,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Descripción breve (cadena de una línea) del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -117,17 +117,17 @@ Tipo de acceso: solo lectura
 
 Descripción del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **FarmType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
@@ -170,18 +170,18 @@ El tipo de granja:
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Fecha en que se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -191,13 +191,13 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-**true** si es necesario agregar un usuario al grupo de administradores locales tras la conexión; en caso contrario, **false**. Solo se aplica a los tipos de granja de ManualPersonalVm y AutoPersonalVM.
+**true** si un usuario debe agregarse al grupo de administradores local tras la conexión; de lo contrario, **false**. Solo se aplica a los tipos de granja ManualPersonalVm y AutoPersonalVM.
 
 </dd> <dt>
 
@@ -212,7 +212,7 @@ Tipo de acceso: solo lectura
 
 El nombre del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -222,13 +222,13 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-**true** para revertir automáticamente la máquina virtual a una instantánea después de cerrar la sesión del usuario; en caso contrario, **false**. Solo se aplica a los tipos de granja de TempVm.
+**True para** revertir automáticamente la máquina virtual a una instantánea después del cierre de sesión del usuario; de lo contrario, **false**. Solo se aplica a los tipos de granja de TempVm.
 
 </dd> <dt>
 
@@ -238,13 +238,13 @@ Calificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Nombre del descriptor de seguridad que controla el acceso a la aplicación, en formato SDDL. El uso de una cadena vacía implica permitir todo acceso.
+Nombre del descriptor de seguridad que controla el acceso a la aplicación, en formato SDDL. El uso de una cadena vacía implica permitir todo el acceso.
 
 </dd> <dt>
 
@@ -260,15 +260,15 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero prediciendo un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
 
 
- ("Correcto")
+ ("Ok")
 
 
 </dt> <dd></dd> <dt>
@@ -296,21 +296,21 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 
 
 
- ("Pred FAIL")
+ ("Error previo")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Iniciando")
+ ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Deteniéndose")
+ ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -330,13 +330,13 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-La configuración de la granja de máquinas virtuales.
+Configuración de la granja de máquinas virtuales.
 
 </dd> </dl>
 
@@ -344,12 +344,12 @@ La configuración de la granja de máquinas virtuales.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ cimv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>Tscpub. mof</dt> </dl>    |
+| Espacio de nombres<br/>                | \\TerminalServices cimv2 \\ raíz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>Tscpub.mof</dt> </dl>    |
 | Archivo DLL<br/>                      | <dl> <dt>TscPubWmi.dll</dt> </dl> |
 
 

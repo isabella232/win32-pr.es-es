@@ -1,29 +1,29 @@
 ---
 description: Codifica y descodifica datos simples y generales e ilustra las siguientes tareas y funciones de CryptoAPI.
 ms.assetid: 7634bd05-fca0-4538-94da-7af6e3d8e6b8
-title: 'Programa C de ejemplo: codificación y descodificación de datos'
+title: 'Programa C de ejemplo: codificación y codificación de datos'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b694bcb9836dfa750940ef75d41ba703251ee190
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 45c5840711fbbf71badd6bc50dec7cc154a7c8bf9bf7caaacc4fa9b5d9b00f7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007703"
 ---
-# <a name="example-c-program-encoding-and-decoding-data"></a>Programa C de ejemplo: codificación y descodificación de datos
+# <a name="example-c-program-encoding-and-decoding-data"></a>Programa C de ejemplo: codificación y codificación de datos
 
-En el ejemplo siguiente se codifican y descodifican datos simples y generales, y se muestran las siguientes tareas y funciones de CryptoAPI.
+En el ejemplo siguiente se codifican y descodifican datos simples y generales, y se ilustran las siguientes tareas y funciones cryptoAPI.
 
--   Determinar la longitud necesaria para que el búfer contenga los datos codificados mediante [**CryptMsgCalculateEncodedLength**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcalculateencodedlength).
--   Abrir un mensaje para la codificación mediante [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode).
+-   Determinar la longitud necesaria para que el búfer mantenga los datos codificados mediante [**CryptMsgCalculateEncodedLength**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcalculateencodedlength).
+-   Abrir un mensaje para codificar mediante [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode).
 -   Agregar contenido al mensaje codificado mediante [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate).
 -   Copiar el mensaje codificado en un búfer mediante [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
--   Cerrar el mensaje codificado mediante [**CryptMsgClose**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgclose).
--   Abrir un mensaje para descodificar con [**CryptMsgOpenToDecode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentodecode).
+-   Cierre el mensaje codificado mediante [**CryptMsgClose**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgclose).
+-   Abrir un mensaje para descodificar mediante [**CryptMsgOpenToDecode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentodecode).
 -   Usar [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate) y [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam) para obtener los datos descodificados.
 
-En este ejemplo se usa la función [**MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código de esta y otras funciones auxiliares también se enumeran en [funciones de de uso general](general-purpose-functions.md).
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código de esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
 
 ```C++

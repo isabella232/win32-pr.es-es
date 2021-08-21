@@ -1,12 +1,12 @@
 ---
-title: Método RemoveDesktopAssignment de la clase Win32_RDMSDesktopAssignment
+title: Método RemoveDesktopAssignment de la Win32_RDMSDesktopAssignment clase
 description: Quita una asignación de escritorio.
 ms.assetid: e1a8cf03-1d21-4bf4-a868-3da4d5bbf43b
 ms.tgt_platform: multiple
 keywords:
 - Método RemoveDesktopAssignment Servicios de Escritorio remoto
-- Método RemoveDesktopAssignment Servicios de Escritorio remoto, clase Win32_RDMSDesktopAssignment
-- Win32_RDMSDesktopAssignment de clase Servicios de Escritorio remoto, método RemoveDesktopAssignment
+- Método RemoveDesktopAssignment Servicios de Escritorio remoto , Win32_RDMSDesktopAssignment clase
+- Win32_RDMSDesktopAssignment clase Servicios de Escritorio remoto , método RemoveDesktopAssignment
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6645a79efc970cf7c3288d0765e9aac8cac68a89
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ae311ca8efd9d1a79287be1207bfc0f0cd5c7e6d7a9d45c40fb7591c1ee3839b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118849754"
 ---
-# <a name="removedesktopassignment-method-of-the-win32_rdmsdesktopassignment-class"></a>Método RemoveDesktopAssignment de la \_ clase RDMSDesktopAssignment de Win32
+# <a name="removedesktopassignment-method-of-the-win32_rdmsdesktopassignment-class"></a>Método RemoveDesktopAssignment de la clase \_ RDMSDesktopAssignment de Win32
 
 Quita una asignación de escritorio
 
@@ -46,31 +46,31 @@ uint32 RemoveDesktopAssignment(
 
 <dl> <dt>
 
-*CollectionAlias* \[ de\]
+*CollectionAlias* \[ En\]
 </dt> <dd>
 
-El alias de la colección.
+Alias de colección.
 
 </dd> <dt>
 
-*DesktopName* \[ de\]
+*DesktopName* \[ En\]
 </dt> <dd>
 
 Nombre del escritorio.
 
 </dd> <dt>
 
-*UserDomain* \[ de\]
+*UserDomain* \[ En\]
 </dt> <dd>
 
-El nombre de dominio de la cuenta de usuario.
+Nombre de dominio de la cuenta de usuario.
 
 </dd> <dt>
 
-*Nombre de usuario* \[ de\]
+*UserName* \[ En\]
 </dt> <dd>
 
-El nombre de la cuenta de usuario.
+Nombre de la cuenta de usuario.
 
 </dd> </dl>
 
@@ -78,12 +78,12 @@ El nombre de la cuenta de usuario.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ cimv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ cimv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -92,7 +92,7 @@ El nombre de la cuenta de usuario.
 
 <dl> <dt>
 
-[**Win32 \_ RDMSDesktopAssignment**](win32-rdmsdesktopassignment.md)
+[**\_RDMSDesktopAssignment de Win32**](win32-rdmsdesktopassignment.md)
 </dt> </dl>
 
  

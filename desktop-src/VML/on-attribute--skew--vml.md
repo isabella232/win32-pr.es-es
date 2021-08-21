@@ -1,26 +1,26 @@
 ---
-title: En atributo (sesgo) (VML)
-description: En atributo (sesgo) (VML)
+title: Atributo On (Skew)(VML)
+description: Atributo On (Skew)(VML)
 ms.assetid: fe5516a0-c7f7-4e35-a04e-006afe84ba69
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3427cd573592ca44a5337ce54e1599ead195ec8
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b5999a3e41d9dc3742afaf492e3d9b9b080bef591325ea92c0afffc22ecc034a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118844987"
 ---
-# <a name="on-attribute-skewvml"></a>En atributo (sesgo) (VML)
+# <a name="on-attribute-skewvml"></a>Atributo On (Skew)(VML)
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Determina si se mostrará un sesgo. Lectura/escritura **VgTriState**.
+Determina si se mostrará un sesgo. Lectura/escritura **DvTriState**.
 
 **Se aplica a**
 
@@ -28,20 +28,20 @@ Determina si se mostrará un sesgo. Lectura/escritura **VgTriState**.
 
 **Sintaxis de etiquetas**
 
-<o: *elemento* on = " *expresión* " >
+<o: *element* on=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . on = "*expresión*"
+*Element* .on="*expression*"
 
-*expresión* = de *elemento*. on
+*expresión* = *elemento*.on
 
 **Comentarios:**
 
-El valor predeterminado es **False**. No se mostrará un sesgo a menos que el valor esté establecido en **true**.
+El valor predeterminado es **False**. No se mostrará un sesgo a menos que el valor se establezca en **True.**
 
-*Microsoft Office atributo Extensions*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

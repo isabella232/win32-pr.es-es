@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: b1d8eed447b56e6f379ffe96cbbcb4820fbdaf14
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 18b239ea888d576dcbcc87b07944efb21a77ac9f13f671b2bd4f096b93b976de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990695"
 ---
 # <a name="d3dxvec2transform-function-d3dx10mathh"></a>Función D3DXVec2Transform (D3DX10Math.h)
 
@@ -77,7 +77,7 @@ Puntero a una estructura D3DXVECTOR4 que es el vector transformado.
 
 ## <a name="remarks"></a>Comentarios
 
-Esta función transforma el vector pV (x, y, 0, 1) por el pM de matriz.
+Esta función transforma el vector pV (x, y, 0, 1) mediante la matriz pM.
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXVec2Transform se puede usar como parámetro para otra función.
 
@@ -92,7 +92,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

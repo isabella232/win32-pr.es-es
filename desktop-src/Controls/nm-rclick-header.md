@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_RCLICK (encabezado) (commctrl. h)
-description: Notifica a la ventana primaria de un control de vista de árbol que el usuario ha hace clic con el botón secundario del mouse en el control. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: NM_RCLICK (encabezado) de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de un control de vista de árbol que el usuario ha hecho clic en el botón derecho del mouse dentro del control. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: b453db51-9c41-4a85-8bc0-72bec10f8646
 keywords:
-- Controles de Windows de código de notificación de NM_RCLICK (encabezado)
+- NM_RCLICK (encabezado) de notificación de Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bab91d3e35f4da74657faa2fce0e9a9881577087
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: eb3c5ff6a6e8bd86c2f5a69fdd6f7337178b12e68c8c0c9f12c945b27cfb13b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958124"
 ---
-# <a name="nm_rclick-header-notification-code"></a>NM \_ código de notificación de RCLICK (encabezado)
+# <a name="nm_rclick-header-notification-code"></a>Código \_ de notificación de NM RCLICK (encabezado)
 
-Notifica a la ventana primaria de un control de vista de árbol que el usuario ha hace clic con el botón secundario del mouse en el control. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de vista de árbol que el usuario ha hecho clic en el botón derecho del mouse dentro del control. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_RCLICK
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
+Puntero a una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero para no permitir el procesamiento predeterminado, o cero para permitir el procesamiento predeterminado.
+Devuelve un valor distinto de cero para no permitir el procesamiento predeterminado o cero para permitir el procesamiento predeterminado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ Devuelve un valor distinto de cero para no permitir el procesamiento predetermin
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

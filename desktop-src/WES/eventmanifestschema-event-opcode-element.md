@@ -1,9 +1,9 @@
 ---
-title: Elemento Event (OpCode)
+title: elemento event (opcode)
 description: Define un evento para un código de operación específico de la tarea.
 ms.assetid: 7ca8fff2-ef1a-45c4-b082-e4745330bf0b
 keywords:
-- EventLog del elemento Event
+- event element EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 25f7a7f3a92c07895529d6dad59df22a7389735d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 987bf0b8b84e574a83211e90dffcd1f636920b1ced0c34b9d1d239515d16cdd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105696055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056003"
 ---
-# <a name="event-opcode-element"></a>Elemento Event (OpCode)
+# <a name="event-opcode-element"></a>elemento event (opcode)
 
-\[A partir del compilador de mensajes que se incluye con la versión de Windows 7 del Windows SDK, este elemento ya no está disponible.\]
+\[A partir del compilador de mensajes que se incluye Windows versión 7 del SDK de Windows, este elemento ya no está disponible.\]
 
 Define un evento para un código de operación específico de la tarea.
 
@@ -32,16 +32,16 @@ Define un evento para un código de operación específico de la tarea.
  />
 ```
 
-El elemento de [**código de operación**](eventmanifestschema-opcode-taskeventdefinitiontype-element.md) define el elemento de **evento** .
+El **elemento event** se define mediante el elemento [**opcode.**](eventmanifestschema-opcode-taskeventdefinitiontype-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -52,7 +52,7 @@ El elemento de [**código de operación**](eventmanifestschema-opcode-taskeventd
 **Elemento primario**
 </dt> <dt>
 
-[**OpCode (TaskEventDefinitionType)**](eventmanifestschema-opcode-taskeventdefinitiontype-element.md)
+[**opcode (TaskEventDefinitionType)**](eventmanifestschema-opcode-taskeventdefinitiontype-element.md)
 </dt> </dl>
 
  

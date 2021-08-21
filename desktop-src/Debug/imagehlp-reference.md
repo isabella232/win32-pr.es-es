@@ -1,5 +1,5 @@
 ---
-description: Los siguientes elementos forman parte de ImageHlp.
+description: Los elementos siguientes forman parte de ImageHlp.
 ms.assetid: 86a1b61b-6b2f-4328-a00d-5eb3cc9a2784
 title: Referencia de ImageHlp
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118957084"
 ---
 # <a name="imagehlp-reference"></a>Referencia de ImageHlp
 
-Los siguientes elementos forman parte de ImageHlp.
+Los elementos siguientes forman parte de ImageHlp.
 
 -   [ImageHlp (Funciones)](imagehlp-functions.md)
 -   [Estructuras imageHlp](imagehlp-structures.md)

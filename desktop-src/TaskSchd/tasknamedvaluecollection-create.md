@@ -1,11 +1,11 @@
 ---
-title: TaskNamedValueCollection. Create (método)
-description: En el caso de scripting, crea un par nombre-valor en la colección.
+title: Método TaskNamedValueCollection.Create
+description: Para el scripting, crea un par nombre-valor en la colección.
 ms.assetid: f64e0548-fad3-4682-b50b-ff8ec685af36
 keywords:
-- Crear método Programador de tareas
-- Create Method Programador de tareas, TaskNamedValueCollection Object
-- Programador de tareas de objeto TaskNamedValueCollection, Create (método)
+- Creación de métodos Programador de tareas
+- Create method Programador de tareas , TaskNamedValueCollection object
+- TaskNamedValueCollection object Programador de tareas , Create (método)
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3926142b25cbb2d65efaa45d6b767ce2e56ba86
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d974eb7fb93d3bb617ce122426b4003a708cbe3ed753ba758fdd5f71ed8bc87a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118858074"
 ---
-# <a name="tasknamedvaluecollectioncreate-method"></a>TaskNamedValueCollection. Create (método)
+# <a name="tasknamedvaluecollectioncreate-method"></a>Método TaskNamedValueCollection.Create
 
-En el caso de scripting, crea un par nombre-valor en la colección.
+Para el scripting, crea un par nombre-valor en la colección.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,21 +44,21 @@ TaskNamedValueCollection.Create( _
 
 <dl> <dt>
 
-*nombre* \[ de de\]
+*name* \[ En\]
 </dt> <dd>
 
-El nombre que está asociado a un valor en un par nombre-valor.
+Nombre asociado a un valor en un par nombre-valor.
 
 </dd> <dt>
 
-*valor* \[ de de\]
+*value* \[ En\]
 </dt> <dd>
 
 Valor asociado a un nombre en un par nombre-valor.
 
 </dd> <dt>
 
-*pareja* \[ de enuncia\]
+*pair* \[ out\]
 </dt> <dd>
 
 Par nombre-valor que se crea en la colección.
@@ -75,9 +75,9 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

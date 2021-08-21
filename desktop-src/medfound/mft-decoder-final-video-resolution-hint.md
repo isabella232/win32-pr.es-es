@@ -21,7 +21,7 @@ Especifica la resolución de salida final de la imagen descodificada, después d
 
 ## <a name="remarks"></a>Comentarios
 
-Este atributo es compatible con algunos descodificadores de vídeo. Una aplicación puede establecer este atributo para indicar el ancho y alto de la imagen después del procesamiento de vídeo. El descodificador puede usar esta información para optimizar el proceso de descodificación, especialmente si el tamaño final de la imagen es mucho menor que el tamaño de la imagen nativa. Por ejemplo, el descodificador podría omitir un filtro fuera de bucle.
+Algunos descodificadores de vídeo admiten este atributo. Una aplicación puede establecer este atributo para indicar el ancho y alto de la imagen después del procesamiento de vídeo. El descodificador puede usar esta información para optimizar el proceso de descodificación, especialmente si el tamaño final de la imagen es mucho menor que el tamaño de la imagen nativa. Por ejemplo, el descodificador podría omitir un filtro fuera de bucle.
 
 Los 32 bits superiores contienen el ancho y los 32 bits inferiores contienen el alto.
 
@@ -34,7 +34,7 @@ Para establecer este atributo:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
@@ -42,7 +42,7 @@ Para establecer este atributo:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

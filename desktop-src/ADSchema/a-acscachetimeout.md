@@ -1,11 +1,11 @@
 ---
-title: Atributo ACS-cache-timeout
-description: La cantidad de tiempo antes de la expiración de los objetos de ACS almacenados en memoria caché por el servicio de ACS.
+title: Atributo ACS-Cache-Timeout
+description: Cantidad de tiempo antes de la expiración de los objetos de ACS almacenados en caché por el servicio ACS.
 ms.assetid: 8927ca01-d550-42df-8a14-96ddbea3fdb8
 ms.tgt_platform: multiple
 keywords:
-- ACS-cache-timeout atributo AD Schema
-- aCSCacheTimeout esquema de AD de atributos
+- Esquema de AD del atributo ACS-Cache-Timeout
+- Esquema de AD del atributo aCSCacheTimeout
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bb72ca9708c3e4edd8f1229d887439ff133d201
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c7e2b1780c095317601ac3ba9cbc8123c46c589871046fda36154e7962b03bea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022963"
 ---
-# <a name="acs-cache-timeout-attribute"></a>Atributo ACS-cache-timeout
+# <a name="acs-cache-timeout-attribute"></a>Atributo ACS-Cache-Timeout
 
-La cantidad de tiempo antes de la expiración de los objetos de ACS almacenados en memoria caché por el servicio de ACS.
+Cantidad de tiempo antes de la expiración de los objetos de ACS almacenados en caché por el servicio ACS.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | ACS-cache-timeout                    |
-| Nombre para mostrar de LDAP | aCSCacheTimeout                      |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | Tiempo de espera de caché de ACS                    |
+| Ldap-Display-Name | aCSCacheTimeout                      |
+| Size              | 4 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.779               |
-| System-ID-GUID    | 1cb355a1-56d0-11d1-a9c6-0000f80367c1 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 1cb355a1-56d0-11d1-a9c6-0000f80367c1 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ La cantidad de tiempo antes de la expiración de los objetos de ACS almacenados 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ La cantidad de tiempo antes de la expiración de los objetos de ACS almacenados 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ La cantidad de tiempo antes de la expiración de los objetos de ACS almacenados 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ La cantidad de tiempo antes de la expiración de los objetos de ACS almacenados 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ La cantidad de tiempo antes de la expiración de los objetos de ACS almacenados 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ La cantidad de tiempo antes de la expiración de los objetos de ACS almacenados 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 

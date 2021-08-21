@@ -11,7 +11,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118973034"
 ---
-# <a name="mft_message_notify_start_of_stream"></a>MENSAJE MFT \_ \_ NOTIFY START OF \_ \_ \_ STREAM
+# <a name="mft_message_notify_start_of_stream"></a>MENSAJE MFT \_ NOTIFY \_ START OF \_ \_ \_ STREAM
 
 Notifica a una Media Foundation transformación de datos (MFT) que el primer ejemplo está a punto de procesarse.
 
@@ -37,7 +37,7 @@ Un MFT asincrónico debe implementar este mensaje, como se describe en [MTA asin
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
@@ -45,7 +45,7 @@ Un MFT asincrónico debe implementar este mensaje, como se describe en [MTA asin
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

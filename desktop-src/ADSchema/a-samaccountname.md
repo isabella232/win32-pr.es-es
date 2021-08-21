@@ -1,11 +1,11 @@
 ---
 title: Atributo SAM-Account-Name
-description: Nombre de inicio de sesión que se usa para admitir clientes y servidores que ejecutan versiones anteriores del sistema operativo, como Windows NT 4,0, Windows 95, Windows 98 y LAN Manager.
+description: Nombre de inicio de sesión usado para admitir clientes y servidores que ejecutan versiones anteriores del sistema operativo, como Windows NT 4.0, Windows 95, Windows 98 y LAN Manager.
 ms.assetid: dc661e59-9a36-4d2b-93f0-f88edf7efd66
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de nombre de cuenta SAM
-- atributo sAMAccountName esquema de AD
+- Esquema de AD del atributo SAM-Account-Name
+- Esquema de AD del atributo sAMAccountName
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cb64cba7825c3b4400641cdc5c62890f64bc299
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c74aa558f63c2e1822f1435cdafd6290755b92b4d5e34c329d8472693f37185d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022233"
 ---
 # <a name="sam-account-name-attribute"></a>Atributo SAM-Account-Name
 
-Nombre de inicio de sesión que se usa para admitir clientes y servidores que ejecutan versiones anteriores del sistema operativo, como Windows NT 4,0, Windows 95, Windows 98 y LAN Manager.
+Nombre de inicio de sesión usado para admitir clientes y servidores que ejecutan versiones anteriores del sistema operativo, como Windows NT 4.0, Windows 95, Windows 98 y LAN Manager.
 
 Este atributo debe tener 20 caracteres o menos para admitir clientes anteriores y no puede contener ninguno de estos caracteres:
 
@@ -33,14 +33,14 @@ Este atributo debe tener 20 caracteres o menos para admitir clientes anteriores 
 
 | Entrada | Value |
 |-------------------|------------------------------------------------------------------------------------------|
-| CN                | Nombre de cuenta SAM                                                                         |
-| Nombre para mostrar de LDAP | sAMAccountName                                                                           |
-| Tamaño              | 20 caracteres o menos.                                                                   |
-| Actualizar privilegio  | Administrador de dominio                                                                     |
-| Frecuencia de actualización  | Este valor debe asignarse cuando se crea el registro de cuenta y no debe cambiar. |
+| CN                | SAM-Account-Name                                                                         |
+| Ldap-Display-Name | sAMAccountName                                                                           |
+| Size              | 20 caracteres o menos.                                                                   |
+| Actualizar privilegios  | Administrador de dominio                                                                     |
+| Frecuencia de actualización  | Este valor se debe asignar cuando se crea el registro de cuenta y no debe cambiar. |
 | Attribute-Id      | 1.2.840.113556.1.4.221                                                                   |
-| System-ID-GUID    | 3e0abfd0-126a-11d0-a060-00aa006c33ed                                                     |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                              |
+| System-Id-Guid    | 3e0abfd0-126a-11d0-a060-00aa006c33ed                                                     |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                              |
 
 
 
@@ -59,13 +59,13 @@ Este atributo debe tener 20 caracteres o menos para admitir clientes anteriores 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | True                                                         |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 256                                                          |
 | Search-Flags           | 0x0000000D                                                   |
@@ -80,13 +80,13 @@ Este atributo debe tener 20 caracteres o menos para admitir clientes anteriores 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | True                                                         |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 256                                                          |
 | Search-Flags           | 0x0000000D                                                   |
@@ -101,13 +101,13 @@ Este atributo debe tener 20 caracteres o menos para admitir clientes anteriores 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | True                                                         |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 256                                                          |
 | Search-Flags           | 0x0000000D                                                   |
@@ -122,13 +122,13 @@ Este atributo debe tener 20 caracteres o menos para admitir clientes anteriores 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | True                                                         |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 256                                                          |
 | Search-Flags           | 0x0000000D                                                   |
@@ -143,13 +143,13 @@ Este atributo debe tener 20 caracteres o menos para admitir clientes anteriores 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | True                                                         |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 256                                                          |
 | Search-Flags           | 0x0000000D                                                   |
@@ -164,13 +164,13 @@ Este atributo debe tener 20 caracteres o menos para admitir clientes anteriores 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | True                                                         |
-| Está indexado             | True                                                         |
-| En el catálogo global      | True                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Verdadero                                                         |
+| Está indexado             | Verdadero                                                         |
+| En el catálogo global      | Verdadero                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 256                                                          |
 | Search-Flags           | 0x0000000D                                                   |

@@ -1,7 +1,7 @@
 ---
-description: 'Alineación de cada búfer. La dirección de cada búfer debe ser un múltiplo par de este valor. El prefijo debe calcularse en la alineación; vea CBaseAllocator:: m \_ lPrefix.'
+description: Alineación de cada búfer. La dirección de cada búfer debe ser incluso un múltiplo de este valor. El prefijo debe calcularse en la alineación; vea CBaseAllocator::m \_ lPrefix.
 ms.assetid: 2b71b60a-feeb-4f09-bd56-e126eac8e150
-title: 'Miembro CBaseAllocator:: m_lAlignment (Amfilter. h)'
+title: CBaseAllocator::m_lAlignment miembro (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6bfdfe7a83a244d5c8cd40a0a4ec747f286c5099
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 441be92b79022327ed6a1140e5dae208718e4104c0600cb1c88bf5800783a01c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955374"
 ---
-# <a name="cbaseallocatorm_lalignment-member"></a>Miembro lAlignment CBaseAllocator:: m \_
+# <a name="cbaseallocatorm_lalignment-member"></a>Miembro CBaseAllocator::m \_ lAlignment
 
-Alineación de cada búfer. La dirección de cada búfer debe ser un múltiplo par de este valor. El prefijo debe calcularse en la alineación; vea [**CBaseAllocator:: m \_ lPrefix**](cbaseallocator-m-lprefix.md).
+Alineación de cada búfer. La dirección de cada búfer debe ser incluso un múltiplo de este valor. El prefijo debe calcularse en la alineación; vea [**CBaseAllocator::m \_ lPrefix**](cbaseallocator-m-lprefix.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ long m_lAlignment;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ long m_lAlignment;
 
 <dl> <dt>
 
-[**Clase CBaseAllocator**](cbaseallocator.md)
+[**CBaseAllocator (clase)**](cbaseallocator.md)
 </dt> </dl>
 
  

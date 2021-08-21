@@ -1,9 +1,9 @@
 ---
 title: Evento CdromMediaChange del objeto AxWindowsMediaPlayer
-description: El evento CdromMediaChange se produce cuando se inserta o se expulsa un CD o DVD en una unidad de CD o DVD. | Evento CdromMediaChange del objeto AxWindowsMediaPlayer
+description: El evento CdromMediaChange tiene lugar cuando se inserta o expulsa un CD o DVD en una unidad de CD o DVD. | Evento CdromMediaChange del objeto AxWindowsMediaPlayer
 ms.assetid: 0a6378c1-59e4-4be3-8764-d5c4ab478b6c
 keywords:
-- Evento CdromMediaChange del objeto AxWindowsMediaPlayer Media Player de Windows
+- Evento CdromMediaChange del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35385541f6bc91b6935f148fd8ae28df6a415f3d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 55dac05b3ca8a8675bfae431d3f2e8ffbb38db8701a2501fa80d282cd3c976ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055022"
 ---
 # <a name="cdrommediachange-event-of-the-axwindowsmediaplayer-object"></a>Evento CdromMediaChange del objeto AxWindowsMediaPlayer
 
-El evento **CdromMediaChange** se produce cuando se inserta o se expulsa un CD o DVD en una unidad de CD o DVD.
+El **evento CdromMediaChange** tiene lugar cuando se inserta o expulsa un CD o DVD en una unidad de CD o DVD.
 
 ``` syntax
 [C#]
@@ -47,13 +47,13 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad | Descripción                                                        |
 |----------|--------------------------------------------------------------------|
-| CdromNum | System. Int32Specifies índice de la unidad de CD o DVD.<br/> |
+| CdromNum | System.Int32 Especifica el índice de la unidad de CD o DVD.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 El índice de la unidad de CD corresponde al índice de una interfaz IWMPCdrom accesible a través de la interfaz IWMPCdromCollection.
 
@@ -61,9 +61,9 @@ El índice de la unidad de CD corresponde al índice de una interfaz IWMPCdrom a
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

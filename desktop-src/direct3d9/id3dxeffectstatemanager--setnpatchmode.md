@@ -1,7 +1,7 @@
 ---
-description: Una función de devolución de llamada que debe ser implementada por un usuario para establecer el número de segmentos de subdivisión para N-patches.
+description: Función de devolución de llamada que debe implementar un usuario para establecer el número de segmentos de subdivisión para N revisiones.
 ms.assetid: f94910ee-3385-44d3-b4f1-a0e88c7afa39
-title: 'ID3DXEffectStateManager:: SetNPatchMode (método) (D3DX9Effect. h)'
+title: Método ID3DXEffectStateManager::SetNPatchMode (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 9b8725a0482b6945b04013df43d34a502f25b7b9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 220d0541e6779ab1a3d4f3e189175abd7da82b1c8b7f378522d0c9df11896e88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044433"
 ---
-# <a name="id3dxeffectstatemanagersetnpatchmode-method"></a>ID3DXEffectStateManager:: SetNPatchMode (método)
+# <a name="id3dxeffectstatemanagersetnpatchmode-method"></a>Método ID3DXEffectStateManager::SetNPatchMode
 
-Una función de devolución de llamada que debe ser implementada por un usuario para establecer el número de segmentos de subdivisión para N-patches.
+Función de devolución de llamada que debe implementar un usuario para establecer el número de segmentos de subdivisión para N revisiones.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT SetNPatchMode(
 
 <dl> <dt>
 
-*nSegments* \[ de\]
+*nSegments* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Divida la superficie en este número de subdivisiones. Es lo mismo que el número usado por [**IDirect3DDevice9:: SetNPatchMode**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setnpatchmode).
+Dividir la superficie en este número de subdivisiones. Es el mismo que el número usado por [**IDirect3DDevice9::SetNPatchMode**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setnpatchmode).
 
 </dd> </dl>
 
@@ -53,10 +53,10 @@ Divida la superficie en este número de subdivisiones. Es lo mismo que el númer
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El método implementado por el usuario debe devolver S \_ correcto. Si se produce un error en la devolución de llamada al establecer el estado del dispositivo, se producirá una de las siguientes acciones:
+El método implementado por el usuario debe devolver S \_ OK. Si se produce un error en la devolución de llamada al establecer el estado del dispositivo, se producirá una de las siguientes acciones:
 
--   Se producirá un error en el efecto durante [**ID3DXEffect:: BeginPass**](id3dxeffect--beginpass.md).
--   Se producirá un error en la llamada de estado de efecto dinámico (como [**IDirect3DDevice9:: SetNPatchMode**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setnpatchmode)).
+-   Se producirá un error en el efecto [**durante ID3DXEffect::BeginPass**](id3dxeffect--beginpass.md).
+-   Se producirá un error en la llamada de estado de efecto dinámico (como [**IDirect3DDevice9::SetNPatchMode).**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setnpatchmode)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,8 +64,8 @@ El método implementado por el usuario debe devolver S \_ correcto. Si se produc
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

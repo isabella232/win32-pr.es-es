@@ -15,7 +15,7 @@ ms.locfileid: "118956134"
 
 El archivo de encabezado Denl.h expone prototipos de API Windows internas. No hay ninguna biblioteca de importación asociada, por lo que los desarrolladores deben usar la vinculación dinámica en tiempo de ejecución para llamar a las funciones descritas en este archivo de encabezado.
 
-Las funciones y estructuras de Winternl.h son internas del sistema operativo y están sujetas a cambios de una versión de Windows a la siguiente, y posiblemente incluso entre Service Pack para cada versión. Para mantener la compatibilidad de la aplicación, debe usar las funciones públicas equivalentes en su lugar. Hay más información disponible en el archivo de encabezado, Invernal.h, y la documentación de cada función.
+Las funciones y estructuras de Invernal.h son internas del sistema operativo y están sujetas a cambios de una versión de Windows a la siguiente, y posiblemente incluso entre Service Pack para cada versión. Para mantener la compatibilidad de la aplicación, debe usar las funciones públicas equivalentes en su lugar. Hay más información disponible en el archivo de encabezado, Invernal.h, y la documentación de cada función.
 
 Si usa estas funciones, puede acceder a ellas mediante la vinculación dinámica en tiempo de ejecución mediante [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress). Esto ofrece al código la oportunidad de responder correctamente si la función se ha cambiado o quitado del sistema operativo. Sin embargo, es posible que los cambios de firma no sean detectables.
 

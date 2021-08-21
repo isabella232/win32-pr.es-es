@@ -1,24 +1,24 @@
 ---
-title: Atributo HRef (ImageData) (VML)
-description: Atributo HRef (ImageData) (VML)
+title: Atributo HRef (ImageData)(VML)
+description: Atributo HRef (ImageData)(VML)
 ms.assetid: vs|vml|~\shape\image\image_href.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4ea1c5a5eb4c37773d012c1ff888aa372cb7717
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fd3c8640992ba5c71334cd4ac7170d7cebdea1997de228e29f6e50a9c7234ec4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103791722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118846137"
 ---
-# <a name="href-attribute-imagedatavml"></a>Atributo HRef (ImageData) (VML)
+# <a name="href-attribute-imagedatavml"></a>Atributo HRef (ImageData)(VML)
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Define una dirección URL para una imagen. Lectura/escritura **Cadena**.
 
@@ -28,27 +28,27 @@ Define una dirección URL para una imagen. Lectura/escritura **Cadena**.
 
 **Sintaxis de etiquetas**
 
-<v: *Element* o:href = " *expresión* " >
+<v: *element* o:href=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . href = "*expresión*"
+*Element* .href="*expression*"
 
-*expresión* = de *elemento*. href
+*expresión* = *elemento*.href
 
 **Comentarios:**
 
-Al hacer clic en la forma, el explorador cargará la dirección URL. El atributo **href** es similar al atributo **href** de HTML estándar de los delimitadores.
+Cuando se hace clic en la forma, el explorador cargará la dirección URL. El **atributo HRef** es similar al atributo **HRef** HTML estándar de delimitadores.
 
-El uso de este atributo facilita la creación de imágenes de buttonswith en una página web.
+El uso de este atributo facilita la creación de botones con imágenes en una página web.
 
-Este atributo lo usa Microsoft Office solo si una imagen se ha vinculado e incrustado. Microsoft Word tiene una interfaz de usuario para insertar imágenes de esta manera.
+Este atributo se usa en Microsoft Office solo si se ha vinculado e insertado una imagen. Microsoft Word tiene una interfaz de usuario para insertar imágenes de esta manera.
 
-*Microsoft Office atributo Extensions*
+*Microsoft Office Atributo Extensions*
 
 **Ejemplo**
 
-Cuando se hace clic en la imagen, el explorador carga la Página principal de Microsoft Corporation.
+Cuando se hace clic en la imagen, el explorador cargará el Microsoft Corporation página principal.
 
 
 ```HTML
@@ -63,6 +63,6 @@ Cuando se hace clic en la imagen, el explorador carga la Página principal de Mi
 
 
 
- 
+ 
 
- 
+ 

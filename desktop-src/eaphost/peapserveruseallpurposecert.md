@@ -1,54 +1,54 @@
 ---
 title: PeapServerUseAllPurposeCert
-description: La clave del registro PeapServerUseAllPurposeCert determina si se usan certificados para la autenticación PEAP.
+description: La clave del Registro PeapServerUseAllPurposeCert determina si se usan certificados de uso completo para la autenticación peap.
 ms.assetid: e239fb88-4bf3-49b6-a95c-67a8c060a50d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc90f083f9020ad02960d7620a2ab54706df203e
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: 3a5086a0067bab70a0e222def34d1adf236b37127c0d1ff6c91ac83b8b28c73c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "104358538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042823"
 ---
 # <a name="peapserveruseallpurposecert"></a>PeapServerUseAllPurposeCert
 
-La clave del registro PeapServerUseAllPurposeCert determina si se usan certificados para la autenticación PEAP.
+La clave del Registro PeapServerUseAllPurposeCert determina si se usan certificados de uso completo para la autenticación peap.
 
 ## <a name="registry-entry"></a>Entrada del Registro
 
 ```
 HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Rasman\PPP\EAP\25
-   PeapServerUseAllPurposeCert = value
+   PeapServerUseAllPurposeCert = value
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se trata de un valor de **Registro \_ DWORD** .
+Se trata de **un valor \_ REG DWORD.**
 
 
 
-| Value        | Descripción                                                                                                      |
+| Valor        | Descripción                                                                                                      |
 |--------------|------------------------------------------------------------------------------------------------------------------|
-| 1            | Los certificados para todos los propósitos del almacén de certificados del cliente o del servidor se seleccionan para la autenticación PEAP.     |
-| Otros valores | Los certificados de todos los propósitos del almacén de certificados del cliente o del servidor no se seleccionan para la autenticación PEAP. |
+| 1            | Los certificados de uso completo del almacén de certificados del cliente o del servidor se seleccionan para la autenticación PEAP.     |
+| Otros valores | Los certificados de uso completo del almacén de certificados del cliente o del servidor no están seleccionados para la autenticación PEAP. |
 
 
 
- 
+ 
 
-Si este valor del registro no está presente, se seleccionan los certificados de todos los propósitos en el almacén de certificados del cliente o del servidor para la autenticación PEAP.
+Si este valor del Registro no está presente, se seleccionan certificados de uso general en el almacén de certificados del cliente o del servidor para la autenticación PEAP.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Configuración del registro de EAPHost](eaphost-registry-settings.md)
+[EapHost Registry Configuración](eaphost-registry-settings.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

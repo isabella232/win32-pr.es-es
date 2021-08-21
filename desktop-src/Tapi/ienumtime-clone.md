@@ -4,16 +4,16 @@ ms.assetid: 0e9973de-d179-4a2d-a9bd-6d5f2523da52
 title: Método IEnumTime::Clone (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 406dac1fad611ee5d3cb6c8b6ef32dfdb62cc963
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8deb34e6fea6ec08cb15b42b3952c34a73edad27fbcae268d1b99addb54f5438
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118865759"
 ---
-# <a name="ienumtimeclone-method"></a>IEnumTime::Clone (método)
+# <a name="ienumtimeclone-method"></a>IEnumTime::Clone (Método)
 
-\[ Los controles e interfaces de Conferencia de telefonía IP de Encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
+\[Las interfaces y los controles de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
 El **método Clone** crea otro enumerador que contiene el mismo estado de enumeración que el actual.
 
@@ -45,7 +45,7 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Valor                                                                                         | Significado                                                         |
+| Value                                                                                         | Significado                                                         |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                    |
 | <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | El *parámetro ppEnum* no es un puntero válido.<br/>       |
@@ -58,7 +58,7 @@ Este método puede devolver uno de estos valores.
 
 ## <a name="remarks"></a>Comentarios
 
-TAPI llama al **método AddRef** en la [**interfaz IEnumTime**](ienumtime.md) devuelta por **IEnumTime::Clone**. La aplicación debe llamar **a Release** en la **interfaz IEnumTime** para liberar recursos asociados a ella.
+TAPI llama al **método AddRef** en la [**interfaz IEnumTime devuelta**](ienumtime.md) por **IEnumTime::Clone**. La aplicación debe llamar **a Release** en la **interfaz IEnumTime** para liberar recursos asociados a ella.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,13 +67,13 @@ TAPI llama al **método AddRef** en la [**interfaz IEnumTime**](ienumtime.md) de
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

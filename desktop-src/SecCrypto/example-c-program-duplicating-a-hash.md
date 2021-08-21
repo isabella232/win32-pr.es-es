@@ -1,19 +1,19 @@
 ---
-description: En el ejemplo siguiente se crea y duplica un hash de texto. A continuación, agrega texto adicional al hash original y diferente texto al duplicado.
+description: En el ejemplo siguiente se crea y se duplica un hash de texto. A continuación, agrega texto adicional al hash original y otro texto al duplicado.
 ms.assetid: 7aa7c9a1-471b-4b40-9967-b1da946c83a5
 title: 'Programa C de ejemplo: duplicación de un hash'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a418f1e5e615d8c4b4c0e8a0af3061b9b6f860e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19684dfd452ea887d9106453de1a8e996992042d25fb920b0f10e718cfec4ab3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007803"
 ---
 # <a name="example-c-program-duplicating-a-hash"></a>Programa C de ejemplo: duplicación de un hash
 
-En el ejemplo siguiente se crea y duplica un [*hash*](../secgloss/h-gly.md) de texto. A continuación, agrega texto adicional al hash original y diferente texto al duplicado.
+En el ejemplo siguiente se crea y se duplica [*un hash*](../secgloss/h-gly.md) de texto. A continuación, agrega texto adicional al hash original y otro texto al duplicado.
 
 En este ejemplo se usan las siguientes funciones de CryptoAPI:
 
@@ -25,7 +25,7 @@ En este ejemplo se usan las siguientes funciones de CryptoAPI:
 -   [**CryptDestroyHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroyhash)
 -   [**CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext)
 
-En este ejemplo se usa la función [**MyHandleError**](myhandleerror.md). El código de esta función se incluye al final del ejemplo. El código de esta y otras funciones auxiliares también se enumeran en [funciones de de uso general](general-purpose-functions.md).
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye al final del ejemplo. El código para esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
 
 ```C++
