@@ -1,7 +1,7 @@
 ---
 description: Representa los parámetros para copiar un archivo del host en el invitado.
 ms.assetid: 255F4132-C212-4A3B-A9B8-3F531E7D1CF9
-title: Msvm_CopyFileToGuestSettingData (clase)
+title: Msvm_CopyFileToGuestSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,16 +21,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 05e27340acc9dd341bec7857c164f50344abc36f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6eb011ec8d03153bd5f1b7d956775327d2582410e9ca12591e19a39ddb4af5fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118148844"
 ---
-# <a name="msvm_copyfiletoguestsettingdata-class"></a>MSVM \_ CopyFileToGuestSettingData (clase)
+# <a name="msvm_copyfiletoguestsettingdata-class"></a>Clase \_ CopyFileToGuestSettingData de Msvm
 
-Representa los parámetros para copiar un archivo del host en el invitado. Esta clase se deriva de [**un \_ SettingData de CIM**](/previous-versions//cc136911(v=vs.85)).
+Representa los parámetros para copiar un archivo del host en el invitado. Esta clase se deriva de [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)).
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -53,13 +53,13 @@ class Msvm_CopyFileToGuestSettingData : CIM_SettingData
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ CopyFileToGuestSettingData** tiene estos tipos de miembros:
+La **clase \_ CopyFileToGuestSettingData de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ CopyFileToGuestSettingData** tiene estas propiedades.
+La **clase \_ CopyFileToGuestSettingData de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -72,7 +72,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **MaxLen** (64)
+Calificadores: **MaxLen** ( 64 )
 </dt> </dl>
 
 Breve descripción textual del objeto.
@@ -101,7 +101,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una descripción textual del objeto.
+Descripción textual del objeto.
 
 </dd> <dt>
 
@@ -114,7 +114,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Ruta de acceso completa del archivo de destino que se va a copiar. Este archivo de destino debe ser accesible para el invitado y puede contener variables de entorno, que se expanden mediante el invitado. Si la ruta de acceso especificada es un directorio existente en el invitado, el archivo de destino se crea en este directorio. En este caso, el nombre de archivo de **SourcePath** se utiliza como nombre de archivo de destino.
+Ruta de acceso completa del archivo de destino que se va a copiar. Este archivo de destino debe ser accesible para el invitado y puede contener variables de entorno, que el invitado expande. Si la ruta de acceso especificada es un directorio existente en el invitado, el archivo de destino se crea en este directorio. En este caso, el nombre de archivo de **SourcePath** se usa como nombre de archivo de destino.
 
 </dd> <dt>
 
@@ -127,7 +127,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar de esta instancia de SettingData. Además, el nombre para mostrar se puede usar como una propiedad de índice para una búsqueda o una consulta. (Nota: el nombre no tiene que ser único dentro de un espacio de nombres).
+Nombre para mostrar de esta instancia de SettingData. Además, el nombre para mostrar se puede usar como una propiedad de índice para una búsqueda o consulta. (Nota: El nombre no tiene que ser único dentro de un espacio de nombres).
 
 </dd> <dt>
 
@@ -140,10 +140,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Dentro del ámbito del espacio de nombres de la creación de instancias, InstanceID identifica de forma opaca y única una instancia de esta clase. Para garantizar la unicidad dentro del espacio de nombres, el valor de InstanceID debe construirse con el siguiente algoritmo "preferido": *OrgID*:*LocalID* donde *orgid* y *LocalID* se separan mediante dos puntos (:), y donde *OrgID* debe incluir un nombre con copyright, marca comercial o de otro tipo que sea propiedad de la entidad empresarial que está creando o definiendo el InstanceID o que es un ID (Este requisito es similar al de *SchemaName* \_ Estructura *className* de los nombres de clase de esquema.) Además, para garantizar la exclusividad, *OrgID* no debe contener dos puntos (:). Al usar este algoritmo, el primer signo de dos puntos que aparece en InstanceID debe aparecer entre *OrgID* y *LocalID*. La entidad empresarial elige *LocalID* y no se debe volver a usar para identificar distintos elementos subyacentes (del mundo real). Si no se utiliza el algoritmo preferido anterior, la entidad de definición debe asegurarse de que el InstanceID resultante no se reutiliza en ningún InstanceIDs producido por este u otros proveedores para el espacio de nombres de esta instancia. En el caso de las instancias definidas por DMTF, el algoritmo "preferido" se debe usar con el valor de *OrgID* establecido en CIM.
+Dentro del ámbito del espacio de nombres de creación de instancias, InstanceID identifica de forma opaca e inequívoca una instancia de esta clase. Para garantizar la unidad dentro del Espacio de nombres, el valor de InstanceID debe construirse mediante el siguiente algoritmo *"preferido": OrgID:**LocalID,* donde *OrgID* y *LocalID* están separados por dos puntos (:), y donde *OrgID* debe incluir un nombre con derechos de autor, marca comercial o único que sea propiedad de la entidad empresarial que crea o define instanceID o que es un identificador registrado asignado a la entidad empresarial por una autoridad global reconocida. (Este requisito es similar a *SchemaName* \_ *Estructura ClassName* de nombres de clase de esquema). Además, para garantizar la unidad, *OrgID* no debe contener dos puntos (:). Cuando se usa este algoritmo, los primeros dos puntos que aparecen en InstanceID deben aparecer entre *OrgID* y *LocalID.* La entidad empresarial elige *LocalID* y no debe reutilizarse para identificar diferentes elementos subyacentes (reales). Si no se usa el algoritmo preferido anterior, la entidad de definición debe asegurarse de que el InstanceID resultante no se reutiliza en ningún instanceID generado por este u otros proveedores para el Espacio de nombres de esta instancia. En el caso de las instancias definidas por DMTF, el algoritmo "preferido" debe usarse con *el OrgID* establecido en CIM.
 
 </dd> <dt>
 
@@ -169,7 +169,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Ruta de acceso completa del archivo de código fuente que se va a copiar. Este archivo de origen debe ser accesible para el host de Hyper-V y puede contener variables de entorno, que se expanden mediante el host de Hyper-V.
+Ruta de acceso completa del archivo de origen que se va a copiar. Este archivo de origen debe ser accesible para el host de Hyper-V y puede contener variables de entorno, que se expanden mediante el host de Hyper-V.
 
 </dd> </dl>
 
@@ -179,10 +179,10 @@ Ruta de acceso completa del archivo de código fuente que se va a copiar. Este a
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                                 |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                                 |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -191,10 +191,10 @@ Ruta de acceso completa del archivo de código fuente que se va a copiar. Este a
 
 <dl> <dt>
 
-[**SettingData de CIM \_**](cim-settingdata.md)
+[**CIM \_ SettingData**](cim-settingdata.md)
 </dt> <dt>
 
-[**SettingData de CIM \_**](/previous-versions//cc136911(v=vs.85))
+[**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85))
 </dt> </dl>
 
  

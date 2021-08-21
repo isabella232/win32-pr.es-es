@@ -1,7 +1,7 @@
 ---
 description: El método HideCursor oculta o muestra el cursor.
 ms.assetid: 80175d1b-9874-4295-9ebc-b0d78961a263
-title: Método CBaseControlWindow. HideCursor (Ctlutil. h)
+title: Método CBaseControlWindow.HideCursor (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d0f379c719052de77b54dba47f83b34ae235415f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6421a650471d0954031433db3814e8453cbc82586c7f37608ae947e7301c6969
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118158386"
 ---
-# <a name="cbasecontrolwindowhidecursor-method"></a>CBaseControlWindow. HideCursor, método
+# <a name="cbasecontrolwindowhidecursor-method"></a>CBaseControlWindow.HideCursor (método)
 
 El `HideCursor` método oculta o muestra el cursor.
 
@@ -45,13 +45,13 @@ HRESULT HideCursor(
 *HideCursor* 
 </dt> <dd>
 
-Valor que especifica si se va a mostrar el cursor. Establézcalo en OATRUE para ocultar el cursor, o OAFALSE para mostrar el cursor.
+Valor que especifica si se va a mostrar el cursor. Establezca en OATRUE para ocultar el cursor o en OAFALSE para mostrar el cursor.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve un valor **HRESULT** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve un valor **HRESULT** .
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

@@ -1,27 +1,27 @@
 ---
-title: Cookies HTTP
+title: HTTP Cookies
 description: Las cookies HTTP proporcionan al servidor un mecanismo para almacenar y recuperar información de estado en el sistema de la aplicación cliente.
 ms.assetid: c3574592-572f-4fde-adfa-aed3e862f13f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a6855f0b105dc73760541bf9eb7a6da80dfb38e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f0ba5b2d3917ea8f140e334f5f78b1bd730908d25506d9023667403410833c80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105704977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118113719"
 ---
-# <a name="http-cookies"></a>Cookies HTTP
+# <a name="http-cookies"></a>HTTP Cookies
 
-Las cookies HTTP proporcionan al servidor un mecanismo para almacenar y recuperar información de estado en el sistema de la aplicación cliente. Este mecanismo permite a las aplicaciones basadas en Web almacenar información sobre los elementos seleccionados, las preferencias del usuario, la información de registro y otra información que se puede recuperar más adelante.
+Las cookies HTTP proporcionan al servidor un mecanismo para almacenar y recuperar información de estado en el sistema de la aplicación cliente. Este mecanismo permite a las aplicaciones basadas en web almacenar información sobre los elementos seleccionados, las preferencias del usuario, la información de registro y otra información que se puede recuperar más adelante.
 
-## <a name="cookie-related-headers"></a>Encabezados de Cookie-Related
+## <a name="cookie-related-headers"></a>Cookie-Related encabezados
 
-Hay dos encabezados, Set-Cookie y cookie, que están relacionados con las cookies. El servidor envía el encabezado Set-Cookie como respuesta a una solicitud HTTP, que se usa para crear una cookie en el sistema del usuario. La aplicación cliente incluye el encabezado de la cookie con una solicitud HTTP enviada a un servidor, si hay una cookie que tenga un dominio y una ruta de acceso coincidentes.
+Hay dos encabezados, Set-Cookie y Cookie, que están relacionados con las cookies. El Set-Cookie envía el encabezado de la aplicación en respuesta a una solicitud HTTP, que se usa para crear una cookie en el sistema del usuario. La aplicación cliente incluye el encabezado Cookie con una solicitud HTTP enviada a un servidor, si hay una cookie que tiene un dominio y una ruta de acceso correspondientes.
 
-### <a name="set-cookie-header"></a>Encabezado Set-Cookie
+### <a name="set-cookie-header"></a>Set-Cookie encabezado
 
-El encabezado de respuesta Set-Cookie utiliza el formato siguiente:
+El Set-Cookie de respuesta utiliza el formato siguiente:
 
 ``` syntax
 Set-Cookie: <name>=<value>[; <name>=<value>]...
@@ -29,88 +29,88 @@ Set-Cookie: <name>=<value>[; <name>=<value>]...
 [; path=<some_path>][; secure][; httponly]
 ```
 
- = En el encabezado de respuesta Set-Cookie se deben incluir una o varias secuencias de cadenas (separadas por punto y coma) que sigan el *valor* del nombre del patrón. El servidor puede utilizar estas secuencias de cadenas para almacenar datos en el sistema del cliente.
+Una o varias secuencias de cadena (separadas por punto y coma) que siguen el valor del nombre del patrón deben incluirse en el encabezado Set-Cookie =  respuesta. El servidor puede usar estas secuencias de cadenas para almacenar datos en el sistema del cliente.
 
-La fecha de expiración se establece mediante el formato Expires =*Date*, donde *Date* es la fecha de expiración en la hora del meridiano de Greenwich (GMT). Si no se establece la fecha de expiración, la cookie expira una vez finalizada la sesión de Internet. De lo contrario, la cookie se conserva en la memoria caché hasta la fecha de expiración. La fecha debe tener el formato siguiente:
+La fecha de expiración se establece con el formato expires=*date*, donde *date* es la fecha de expiración en Greenwich Mean Time (GMT). Si no se establece la fecha de expiración, la cookie expira una vez que finaliza la sesión de Internet. De lo contrario, la cookie se conserva en la memoria caché hasta la fecha de expiración. La fecha debe usar el formato siguiente:
 
-*día*, *DD* - *MMM* - *AAAA* *HH*:*mm*:*SS* GMT
+*DAY*, *DD* - *MMM* - *YYYY* *HH*:*MM*:*SS* GMT
 
 <dl> <dt>
 
-<span id="DAY"></span><span id="day"></span>*DIARIAMENTE*
+<span id="DAY"></span><span id="day"></span>*Día*
 </dt> <dd>
 
-El día de la semana (sol, Lun, mar, Mié, Jue, Vie, SAT).
+El día de la semana (Dom, Mon, Mar, Mié, Jue, Viernes, Sábado).
 
 </dd> <dt>
 
-<span id="DD"></span><span id="dd"></span>*DD*
+<span id="DD"></span><span id="dd"></span>*Dd*
 </dt> <dd>
 
-Día del mes (por ejemplo, 01 para el primer día del mes).
+El día del mes (por ejemplo, 01 para el primer día del mes).
 
 </dd> <dt>
 
-<span id="MMM"></span><span id="mmm"></span>*MMM*
+<span id="MMM"></span><span id="mmm"></span>*Mmm*
 </dt> <dd>
 
-La abreviatura de tres letras para el mes (Jan, Feb, mar, Apr, mayo, Jun, Jul, ago, Sep, Oct, Nov, DEC).
+Abreviatura de tres letras del mes (enero, febrero, marzo, abril, mayo, junio, julio, agosto, sep, octubre, noviembre, dec).
 
 </dd> <dt>
 
-<span id="YYYY"></span><span id="yyyy"></span>*AAA*
+<span id="YYYY"></span><span id="yyyy"></span>*Aaaa*
 </dt> <dd>
 
 Año.
 
 </dd> <dt>
 
-<span id="HH"></span><span id="hh"></span>*HH*
+<span id="HH"></span><span id="hh"></span>*Hh*
 </dt> <dd>
 
-El valor de hora en hora militar (22 sería de 10:00 P.M., por ejemplo).
+El valor de hora en hora de las fuerzas (22 sería 10:00 p. m., por ejemplo).
 
 </dd> <dt>
 
-<span id="MM"></span><span id="mm"></span>*MM*
+<span id="MM"></span><span id="mm"></span>*Mm*
 </dt> <dd>
 
 Valor del minuto.
 
 </dd> <dt>
 
-<span id="SS"></span><span id="ss"></span>*SS*
+<span id="SS"></span><span id="ss"></span>*Ss*
 </dt> <dd>
 
 Segundo valor.
 
 </dd> </dl>
 
-Especificar el nombre de dominio, con el patrón domain =*\_ nombre de dominio*, es opcional para las cookies persistentes y se usa para indicar el final del dominio para el que la cookie es válida. Se rechazan las cookies de sesión que especifican un dominio. Si el nombre de dominio especificado finaliza con la solicitud, la cookie intenta coincidir con la ruta de acceso para determinar si se debe enviar la cookie. Por ejemplo, si el nombre de dominio final es. microsoft.com, las solicitudes a home.microsoft.com y support.microsoft.com se comprueban para ver si el patrón especificado coincide con la solicitud. El nombre de dominio debe tener al menos dos o tres períodos para evitar que las cookies se establezcan para los finales de nombres de dominio ampliamente utilizados, como. com,. edu y co.jp. Los nombres de dominio permitidos serían similares a. microsoft.com,. someschool.edu y. someserver.co.jp. Solo los hosts dentro del dominio especificado pueden establecer una cookie para un dominio.
+La especificación del nombre de dominio, con el patrón domain= nombre de dominio , es opcional para las cookies persistentes y se usa para indicar el final del dominio para el que la cookie es válida.*\_* Se rechazan las cookies de sesión que especifican un dominio. Si el nombre de dominio especificado que finaliza coincide con la solicitud, la cookie intenta coincidir con la ruta de acceso para determinar si se debe enviar la cookie. Por ejemplo, si el nombre de dominio final es .microsoft.com, se comprobarán las solicitudes a home.microsoft.com y support.microsoft.com para ver si el patrón especificado coincide con la solicitud. El nombre de dominio debe tener al menos dos o tres períodos para evitar que se establezcan cookies para los finales de nombres de dominio ampliamente usados, como .com, .edu y co.jp. Los nombres de dominio permitidos serían similares a .microsoft.com, .someschool.edu y .someserver.co.jp. Solo los hosts del dominio especificado pueden establecer una cookie para un dominio.
 
-La configuración de la ruta de acceso, mediante la ruta de acceso del patrón =*some \_*, es opcional y se puede usar para especificar un subconjunto de las direcciones URL para las que la cookie es válida. Si se especifica una ruta de acceso, la cookie se considera válida para las solicitudes que coinciden con dicha ruta de acceso. Por ejemplo, si la ruta de acceso especificada es/example, las solicitudes con las rutas de acceso/examplecode y/example/code.htm coincidirán. Si no se especifica ninguna ruta de acceso, se supone que la ruta de acceso es la ruta de acceso del recurso asociado al encabezado Set-Cookie.
+Establecer la ruta de acceso, mediante la ruta de acceso del patrón = alguna ruta de acceso , es opcional y se puede usar para especificar un subconjunto de las direcciones URL para las que la cookie es válida.*\_* Si se especifica una ruta de acceso, la cookie se considera válida para las solicitudes que coincidan con esa ruta de acceso. Por ejemplo, si la ruta de acceso especificada es /example, las solicitudes con las rutas de acceso /examplecode y /example/code.htm coincidirían. Si no se especifica ninguna ruta de acceso, se supone que es la ruta de acceso del recurso asociado al Set-Cookie encabezado.
 
-La cookie también se puede marcar como segura, lo que especifica que la cookie solo se puede enviar a servidores https.
+La cookie también se puede marcar como segura, lo que especifica que la cookie solo se puede enviar a servidores HTTPS.
 
-Por último, una cookie se puede marcar como HttpOnly (los atributos no distinguen mayúsculas de minúsculas) para indicar que la cookie no admite scripts y no debe revelarse a la aplicación cliente por motivos de seguridad. Dentro de Windows Internet, esto significa que no se puede recuperar la cookie a través de la función **InternetGetCookie** .
+Por último, una cookie se puede marcar como HttpOnly (los atributos no distinguen mayúsculas de minúsculas), para indicar que la cookie no es de script y no debe mostrarse a la aplicación cliente, por motivos de seguridad. En Windows Internet, esto significa que la cookie no se puede recuperar a través de la **función InternetGetCookie.**
 
 ### <a name="cookie-header"></a>Encabezado de cookie
 
-El encabezado de la cookie se incluye con todas las solicitudes HTTP que tienen una cookie cuyo dominio y ruta de acceso coinciden con la solicitud. El encabezado de la cookie tiene el siguiente formato:
+El encabezado Cookie se incluye con cualquier solicitud HTTP que tenga una cookie cuyo dominio y ruta de acceso coincidan con la solicitud. El encabezado Cookie tiene el formato siguiente:
 
 ``` syntax
 Cookie: <name>=<value> [;<name>=<value>]...
 ```
 
-Una o varias secuencias de cadenas, utilizando el valor de *nombre* de formato = , contienen la información que se estableció en la cookie.
+Una o varias secuencias de cadena, con el valor de *nombre de* formato , contienen la información que se = estableció en la cookie.
 
-## <a name="generating-cookies"></a>Generar cookies
+## <a name="generating-cookies"></a>Generación de cookies
 
-Existen tres métodos para generar cookies para Microsoft Internet Explorer: usar Microsoft JScript, usar las funciones de WinINet y usar un script CGI. Todos los métodos deben establecer la información que se incluye en el encabezado de Set-Cookie.
+Hay tres métodos para generar cookies para Microsoft Internet Explorer: usar Microsoft JScript, usar las funciones WinINet y usar un script CGI. Todos los métodos deben establecer la información que se incluye en el Set-Cookie encabezado.
 
 ### <a name="generating-a-cookie-using-the-dhtml-object-model"></a>Generar una cookie mediante el modelo de objetos DHTML
 
-Con el modelo de objetos de HTML dinámico (DHTML), las cookies se pueden establecer mediante una llamada a la propiedad **Cookie** del objeto de documento, tal y como se muestra en el ejemplo siguiente.
+Con el modelo de objetos HTML dinámico (DHTML), las cookies se pueden establecer llamando a la propiedad **cookie** del objeto de documento, como se muestra en el ejemplo siguiente.
 
 ``` syntax
 <SCRIPT language="JavaScript">
@@ -120,13 +120,13 @@ Con el modelo de objetos de HTML dinámico (DHTML), las cookies se pueden establ
 </SCRIPT>
 ```
 
-### <a name="generating-a-cookie-using-the-wininet-functions"></a>Generar una cookie mediante las funciones WinInet
+### <a name="generating-a-cookie-using-the-wininet-functions"></a>Generar una cookie mediante las funciones de WinInet
 
-Las aplicaciones pueden crear cookies mediante la función [**InternetSetCookie**](/windows/desktop/api/Wininet/nf-wininet-internetsetcookiea) . Para obtener más información, consulte [configuración de una cookie](managing-cookies.md).
+Las aplicaciones pueden crear cookies mediante la [**función InternetSetCookie.**](/windows/desktop/api/Wininet/nf-wininet-internetsetcookiea) Para obtener más información, vea [Establecer una cookie.](managing-cookies.md)
 
-### <a name="generating-a-cookie-using-a-cgi-script"></a>Generación de una cookie mediante un script CGI
+### <a name="generating-a-cookie-using-a-cgi-script"></a>Generar una cookie mediante un script CGI
 
-Las cookies se generan mediante la inclusión de un encabezado Set-Cookie como parte de un script CGI incluido en la respuesta HTTP a una solicitud.
+Las cookies se generan mediante la inclusión Set-Cookie encabezado como parte de un script CGI incluido en la respuesta HTTP a una solicitud.
 
 El ejemplo siguiente es un script CGI que incluye un encabezado Set-Cookie mediante Perl.
 
@@ -137,10 +137,10 @@ print "Set-Cookie:Test=test_value;
 ```
 
 > [!Note]  
-> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. En el caso de servicios o implementaciones de servidor, use los [servicios http de Microsoft Windows (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para las implementaciones o servicios de servidor, use [Microsoft Windows HTTP Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
- 
+ 
 
- 
+ 
 
- 
+ 

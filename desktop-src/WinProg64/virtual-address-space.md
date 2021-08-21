@@ -16,7 +16,7 @@ ms.locfileid: "118113375"
 ---
 # <a name="virtual-address-space-programming-guide-for-64-bit-windows"></a>Espacio de direcciones virtuales (Guía de programación para aplicaciones de 64 Windows)
 
-De forma predeterminada, las aplicaciones basadas Windows microsoft de 64 bits tienen un espacio de direcciones en modo de usuario de varios terabytes. Para obtener valores precisos, vea [Límites](/windows/desktop/Memory/memory-limits-for-windows-releases)de memoria para Windows y Windows versiones de servidor . Sin embargo, las aplicaciones pueden especificar que el sistema debe asignar toda la memoria para la aplicación por debajo de 2 gigabytes. Esta característica es beneficiosa para las aplicaciones de 64 bits si se cumplen las condiciones siguientes:
+De forma predeterminada, las aplicaciones basadas Windows microsoft de 64 bits tienen un espacio de direcciones en modo de usuario de varios terabytes. Para obtener valores precisos, vea Límites de memoria [para Windows y Windows server releases](/windows/desktop/Memory/memory-limits-for-windows-releases). Sin embargo, las aplicaciones pueden especificar que el sistema debe asignar toda la memoria para la aplicación por debajo de 2 gigabytes. Esta característica es beneficiosa para las aplicaciones de 64 bits si se cumplen las condiciones siguientes:
 
 -   Un espacio de direcciones de 2 GB es suficiente.
 -   El código tiene muchas advertencias de truncamiento de puntero.

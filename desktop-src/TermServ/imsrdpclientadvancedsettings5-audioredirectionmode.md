@@ -1,18 +1,18 @@
 ---
-title: Propiedad AudioRedirectionMode de IMsRdpClientAdvancedSettings5
-description: Establece y recupera el modo de redirección de audio y las distintas opciones de redirección de audio.
+title: Propiedad IMsRdpClientAdvancedSettings5 AudioRedirectionMode
+description: Establece y recupera el modo de redireccionamiento de audio y las distintas opciones de redireccionamiento de audio.
 ms.assetid: c0f5762b-00fd-40bb-ac97-3351b999f38d
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad AudioRedirectionMode
-- Propiedad AudioRedirectionMode Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad AudioRedirectionMode
-- Propiedad AudioRedirectionMode Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad AudioRedirectionMode
-- Propiedad AudioRedirectionMode Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad AudioRedirectionMode
-- Propiedad AudioRedirectionMode Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad AudioRedirectionMode
+- Propiedad AudioRedirectionMode Servicios de Escritorio remoto
+- Propiedad AudioRedirectionMode Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad AudioRedirectionMode
+- Propiedad AudioRedirectionMode Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad AudioRedirectionMode
+- Propiedad AudioRedirectionMode Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad AudioRedirectionMode
+- Propiedad AudioRedirectionMode Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad AudioRedirectionMode
 topic_type:
 - apiref
 api_name:
@@ -34,20 +34,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b40be8b8e63f210d060c0f585c9fe31328ac6ed6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df4216b4babf74e5e5f15994c0d8387e0d5087c4f69e4d0245b59cb5765dfe88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118352517"
 ---
-# <a name="imsrdpclientadvancedsettings5audioredirectionmode-property"></a>IMsRdpClientAdvancedSettings5:: AudioRedirectionMode (propiedad)
+# <a name="imsrdpclientadvancedsettings5audioredirectionmode-property"></a>IMsRdpClientAdvancedSettings5::AudioRedirectionMode, propiedad
 
-Establece y recupera el modo de redirección de audio y las distintas opciones de redirección de audio.
+Establece y recupera el modo de redireccionamiento de audio y las distintas opciones de redireccionamiento de audio.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -64,27 +64,27 @@ HRESULT get_AudioRedirectionMode(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establece valores diferentes para el modo de redirección de audio. Este parámetro tiene los siguientes valores posibles.
+Establece valores diferentes para el modo de redireccionamiento de audio. Este parámetro tiene los siguientes valores posibles.
 
 <dt>
 
 <span id="AUDIO_MODE_REDIRECT___0"></span><span id="audio_mode_redirect___0"></span>
 
-**Audio \_ de \_** Redireccionamiento de modo 0 (la redirección de audio está habilitada y la opción para la redirección es "traer a este equipo". Este es el modo predeterminado).
+**AUDIO \_ MODE \_ REDIRECT 0** (el redireccionamiento de audio está habilitado y la opción para el redireccionamiento es "Bring to this computer" (Traer a este equipo). Este es el modo predeterminado).
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AUDIO_MODE_PLAY_ON_SERVER_1"></span><span id="audio_mode_play_on_server_1"></span>
 
-**Audio \_ de MODO \_ Play \_ en el \_ servidor 1** (la redirección de audio está habilitada y la opción es "dejar en el equipo remoto". La opción "dejar en el equipo remoto" solo se admite cuando se conecta de forma remota a un equipo host que ejecuta Windows Vista. Si la conexión se realiza a un equipo host que ejecuta Windows Server 2008, la opción "dejar en el equipo remoto" cambia a "no reproducir").
+**AUDIO \_ MODE \_ PLAY ON SERVER \_ \_ 1** (el redireccionamiento de audio está habilitado y la opción es "Salir en el equipo remoto". La opción "Salir en el equipo remoto" solo se admite cuando se conecta de forma remota a un equipo host que ejecuta Windows Vista. Si la conexión es a un equipo host que ejecuta Windows Server 2008, la opción "Salir en el equipo remoto" cambia a "No reproducir").
 
 
 </dt> <dd></dd> <dt>
 
 <span id="AUDIO_MODE_NONE_2"></span><span id="audio_mode_none_2"></span>
 
-**Audio \_ de MODO \_ ninguno 2** (la redirección de audio está habilitada y el modo es "no reproducir").
+**AUDIO \_ MODE \_ NONE 2** (la redirección de audio está habilitada y el modo es "No reproducir").
 
 
 </dt> <dd></dd> </dl>
@@ -93,7 +93,7 @@ Establece valores diferentes para el modo de redirección de audio. Este paráme
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                         |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                   |

@@ -28,18 +28,18 @@ Una vez creada una suscripción iniciada por el recopilador, puede agregar oríg
 
  
 
-Para obtener más información sobre cómo agregar orígenes de eventos a una suscripción iniciada por el origen, vea [Configurar una suscripción iniciada por origen.](setting-up-a-source-initiated-subscription.md)
+Para obtener más información sobre cómo agregar orígenes de eventos a una suscripción iniciada por el origen, vea [Configurar una suscripción iniciada por el origen](setting-up-a-source-initiated-subscription.md).
 
 Este ejemplo sigue una serie de pasos para agregar un origen de eventos a una suscripción iniciada por el recopilador.
 
 **Para agregar un origen de eventos a una suscripción iniciada por el recopilador**
 
-1.  Abra la suscripción existente proporcionando el nombre de la suscripción y los derechos de acceso como parámetros para la [**función EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Para obtener más información sobre los derechos de acceso, vea Windows event collector constants (Constantes [**del recopilador de eventos).**](windows-event-collector-constants.md)
-2.  Obtenga la matriz de orígenes de eventos de la suscripción mediante una llamada a la [**función EcGetSubscriptionProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) Para obtener más información sobre las propiedades de suscripción que se pueden recuperar, vea la [**\_ enumeración EC SUBSCRIPTION \_ PROPERTY \_ ID.**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id)
+1.  Abra la suscripción existente proporcionando el nombre de la suscripción y los derechos de acceso como parámetros a la [**función EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Para obtener más información sobre los derechos de acceso, vea Windows event collector constants (Constantes [**del recopilador de eventos).**](windows-event-collector-constants.md)
+2.  Obtenga la matriz de orígenes de eventos de la suscripción mediante una llamada a [**la función EcGetSubscriptionProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty) Para obtener más información sobre las propiedades de suscripción que se pueden recuperar, vea la [**\_ enumeración EC SUBSCRIPTION \_ PROPERTY \_ ID**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) .
 3.  Agregue un nuevo origen de eventos a la matriz de orígenes de eventos de la suscripción mediante una llamada a la [**función EcInsertObjectArrayElement.**](/windows/desktop/api/Evcoll/nf-evcoll-ecinsertobjectarrayelement)
-4.  Establezca las propiedades de origen del evento llamando a la [**función EcSetObjectArrayProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetobjectarrayproperty) La **propiedad EcSubscriptionEventSourceAddress** se establece en una dirección para el equipo local (Localhost) o en un nombre de dominio completo para un equipo remoto. Para obtener más información sobre las propiedades de origen de eventos que se pueden establecer, vea la **\_ enumeración EC SUBSCRIPTION \_ PROPERTY \_ ID.**
+4.  Establezca las propiedades de origen del evento llamando a [**la función EcSetObjectArrayProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetobjectarrayproperty) La **propiedad EcSubscriptionEventSourceAddress** se establece en una dirección para el equipo local (Localhost) o en un nombre de dominio completo para un equipo remoto. Para obtener más información sobre las propiedades de origen de eventos que se pueden establecer, vea la **\_ enumeración EC SUBSCRIPTION \_ PROPERTY \_ ID** .
 5.  Guarde la suscripción mediante una llamada a [**la función EcSaveSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription)
-6.  Cierre la suscripción mediante una llamada a la [**función EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
+6.  Cierre la suscripción mediante una llamada a [**la función EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 
 En el siguiente ejemplo de código de C++ se muestra cómo agregar un origen de eventos a una suscripción iniciada por el recopilador:
 

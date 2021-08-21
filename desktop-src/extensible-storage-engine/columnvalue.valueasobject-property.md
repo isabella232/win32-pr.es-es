@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: ColumnValue. ValueAsObject (propiedad)'
-title: Propiedad ColumnValue. ValueAsObject
+description: 'Más información sobre: Propiedad ColumnValue.ValueAsObject'
+title: Propiedad ColumnValue.ValueAsObject
 TOCTitle: 'ValueAsObject property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.ColumnValue.ValueAsObject
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnvalue.valueasobject(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1cc7d96f9b8584e81da5cfa66073b19989b0a476
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c7b5117f75fb195fe065493d942cee6c244f56eed1fe6170bdd53fd243143d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118083658"
 ---
-# <a name="columnvaluevalueasobject-property"></a>Propiedad ColumnValue. ValueAsObject
+# <a name="columnvaluevalueasobject-property"></a>Propiedad ColumnValue.ValueAsObject
 
 Obtiene el último valor establecido o recuperado de la columna. El valor se devuelve como un objeto genérico.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -58,14 +58,14 @@ public abstract Object ValueAsObject { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Object](/dotnet/api/system.object)  
+Tipo: [System.Object](/dotnet/api/system.object)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase ColumnValue](./columnvalue-class.md)
+[ColumnValue (clase)](./columnvalue-class.md)
 
-[Miembros de ColumnValue](./columnvalue-members.md)
+[Miembros ColumnValue](./columnvalue-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

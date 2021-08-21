@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: método API. JetGetColumnInfo (JET_SESID, JET_DBID, cadena, cadena JET_COLUMNLIST)'
-title: Método API. JetGetColumnInfo (JET_SESID, JET_DBID, cadena, cadena, JET_COLUMNLIST)
+description: 'Más información sobre: Método Api.JetGetColumnInfo (JET_SESID, JET_DBID, String, String, JET_COLUMNLIST)'
+title: Método Api.JetGetColumnInfo (JET_SESID, JET_DBID, String, String, JET_COLUMNLIST)
 TOCTitle: JetGetColumnInfo method (JET_SESID, JET_DBID, String, String, JET_COLUMNLIST)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetColumnInfo(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_DBID,System.String,System.String,Microsoft.Isam.Esent.Interop.JET_COLUMNLIST@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgetcolumninfo(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6f3f0ea95e82217f0d9b44e6a00558d3530a7616
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a2f872c3ff5e0a865fb135426251955936bff0a9423a40e428cbb75d622d15b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118085363"
 ---
-# <a name="apijetgetcolumninfo-method-jet_sesid-jet_dbid-string-string-jet_columnlist"></a>Método API. JetGetColumnInfo (JET_SESID, JET_DBID, cadena, cadena, JET_COLUMNLIST)
+# <a name="apijetgetcolumninfo-method-jet_sesid-jet_dbid-string-string-jet_columnlist"></a>Método Api.JetGetColumnInfo (JET_SESID, JET_DBID, String, String, JET_COLUMNLIST)
 
-Recupera información acerca de todas las columnas de una tabla.
+Recupera información sobre todas las columnas de una tabla.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -67,37 +67,37 @@ public static void JetGetColumnInfo(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
   - dbid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_DBID](./jet-dbid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
-    La base de datos que contiene la tabla.
+    Base de datos que contiene la tabla.
 
 <!-- end list -->
 
   - tablename  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Nombre de la tabla que contiene la columna.
 
 <!-- end list -->
 
   - columnName  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Este parámetro se ignora.
 
 <!-- end list -->
 
   - columnlist  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNLIST](./jet-columnlist-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNLIST](./jet-columnlist-class.md)  
     
-    Se rellena con información acerca de las columnas de la tabla.
+    Se rellena con información sobre las columnas de la tabla.
 
 ## <a name="see-also"></a>Vea también
 
@@ -105,8 +105,8 @@ public static void JetGetColumnInfo(
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Sobrecarga JetGetColumnInfo](./api.jetgetcolumninfo-method.md)
+[Sobrecarga de JetGetColumnInfo](./api.jetgetcolumninfo-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

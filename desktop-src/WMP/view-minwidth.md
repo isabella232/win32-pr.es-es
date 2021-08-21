@@ -29,7 +29,7 @@ El **atributo minWidth** especifica o recupera el ancho mínimo en píxeles de *
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un número de **lectura** y escritura (**long**) con un valor de cero o mayor. Tiene un valor predeterminado de cero, lo que significa que no hay ninguna restricción en el ancho mínimo de **VIEW**.
+Este atributo es un número de lectura y **escritura** (**long**) con un valor de cero o mayor. Tiene un valor predeterminado de cero, lo que significa que no hay ninguna restricción en el ancho mínimo de **VIEW**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Este atributo es un número de **lectura** y escritura (**long**) con un valor d
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

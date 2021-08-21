@@ -1,61 +1,61 @@
 ---
-title: Trasladar superficies NURBS
-description: En la tabla siguiente se enumeran las funciones de la contabilidad de IRIS para dibujar superficies NURBS y sus funciones de OpenGL equivalentes.
+title: Porte de superficies DE LA BASE DE DATOS
+description: En la tabla siguiente se enumeran las funciones GL de IRIS para dibujar superficies DE LABS y sus funciones OpenGL equivalentes.
 ms.assetid: d34ac6af-55d7-4128-bcd9-3c910607895f
 keywords:
-- Migración de la contabilidad de IRIS, superficies de NURBS
-- trasladar de IRIS GL, superficies de NURBS
-- trasladar a OpenGL desde IRIS GL, superficies de NURBS
-- Exportación de OpenGL desde IRIS GL, superficies de NURBS
-- Superficies NURBS
-- NURBS (no uniforme, B-spline racional)
-- B-spline racional no uniforme (NURBS)
+- Porte de IRIS GL, superficies DE LA BASE DE DATOS
+- porte desde superficies IRIS GL,GLBS
+- porte a OpenGL desde iris gl,superficies DE IRISBS
+- Porte de OpenGL desde superficies IRIS GL,GLBS
+- Superficies DE LA BASE DE DATOS
+- SPLINEBS (B-spline no uniforme)
+- Spline B no uniforme lógica (SPLINE) (SPLINEBS)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7260750db4d221743d3e764d6dd30e2de499383
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0a57de3a3b413d909ed034e9d355f4099c196a89b1e7ed93a69fe99ea72fca54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103778049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118132354"
 ---
-# <a name="porting-nurbs-surfaces"></a>Trasladar superficies NURBS
+# <a name="porting-nurbs-surfaces"></a>Porte de superficies DE LA BASE DE DATOS
 
-En la tabla siguiente se enumeran las funciones de la contabilidad de IRIS para dibujar superficies NURBS y sus funciones de OpenGL equivalentes.
+En la tabla siguiente se enumeran las funciones GL de IRIS para dibujar superficies DE LABS y sus funciones OpenGL equivalentes.
 
 
 
-| Función de GL de IRIS | Función OpenGL                            | Significado                       |
+| Función GL de IRIS | Función OpenGL                            | Significado                       |
 |------------------|--------------------------------------------|-------------------------------|
-| **bgnsurface**   | [**gluBeginSurface**](glubeginsurface.md) | Comienza una definición de Surface.  |
-| **nurbssurface** | [**gluNurbsSurface**](glunurbssurface.md) | Especifica los atributos de la superficie. |
+| **bgnsurface**   | [**gluBeginSurface**](glubeginsurface.md) | Comienza una definición de superficie.  |
+| **ybssurface** | [**gluNurbsSurface**](glunurbssurface.md) | Especifica atributos de superficie. |
 | **endsurface**   | [**gluEndSurface**](gluendsurface.md)     | Finaliza una definición de superficie.    |
 
 
 
- 
+ 
 
-En la tabla siguiente se enumeran los parámetros de la contabilidad de IRIS para tipos de superficie y sus parámetros de OpenGL equivalentes.
+En la tabla siguiente se enumeran los parámetros GL de IRIS para los tipos de superficie y sus parámetros OpenGL equivalentes.
 
 
 
-| Tipo de GL de IRIS | Tipo de OpenGL                 | Significado                                                |
+| Tipo GL de IRIS | Tipo OpenGL                 | Significado                                                |
 |--------------|-----------------------------|--------------------------------------------------------|
-| N \_ V3D       | \_ \_ Vértice \_ 3 de GL MAP2 (         | Curva polinómica.                                      |
-| N \_ V3DR      | \_ \_ Vértice \_ 4 de GL MAP2 (         | Curva racional.                                        |
-| N \_ C4D       | GL \_ MAP2 (, \_ color \_ 4          | Los puntos de control definen la superficie de color en el formulario (R, G, B, A). |
+| N \_ V3D       | GL \_ MAP2 \_ VERTEX \_ 3         | Curva polinómica.                                      |
+| N \_ V3DR      | GL \_ MAP2 \_ VERTEX \_ 4         | Curva racionalizada.                                        |
+| N \_ C4D       | GL \_ MAP2 \_ COLOR \_ 4          | Los puntos de control definen la superficie de color en el formulario (R, G, B, A). |
 | N \_ C4DR      |                             |                                                        |
-| N \_ T2D       | MAP2 (de la textura de GL \_ \_ \_ \_ 2 | Los puntos de control son coordenadas de textura.                |
-| N \_ T2DR      | MAP2 (de textura de GL \_ \_ \_ \_ 3 | Los puntos de control son coordenadas de textura.                |
-|              | GL \_ MAP2 ( \_ normal            | Los puntos de control son normales.                            |
+| N \_ T2D       | GL \_ MAP2 \_ TEXTURE \_ COORD \_ 2 | Los puntos de control son coordenadas de textura.                |
+| N \_ T2DR      | GL \_ MAP2 \_ TEXTURE \_ COORD \_ 3 | Los puntos de control son coordenadas de textura.                |
+|              | GL \_ MAP2 \_ NORMAL            | Los puntos de control son normales.                            |
 
 
 
- 
+ 
 
-Para obtener más información sobre los tipos de evaluador disponibles, vea [**glMap2**](glmap2.md).
+Para obtener más información sobre los tipos de evaluador disponibles, [**vea glMap2**](glmap2.md).
 
-En el ejemplo de código siguiente se dibuja una superficie NURBS recortada:
+En el ejemplo de código siguiente se dibuja una superficie recortada de LABS:
 
 
 ```C++
@@ -191,9 +191,9 @@ int main(int argc, char** argv)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

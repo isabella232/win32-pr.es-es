@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 31b03ee8a941b0715b85f6a749c4ba59ade032f7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c3ce4e95fe99eca0616d886ca16fefcb771be50f1a8cc0a46e6780e0411a6ad1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118147099"
 ---
 # <a name="setsecuritypolicy-method-of-the-msvm_securityservice-class"></a>Método SetSecurityPolicy de la clase SecurityService de Msvm \_
 
@@ -44,14 +44,14 @@ uint32 SetSecurityPolicy(
 *SecuritySettingData* \[ En\]
 </dt> <dd>
 
-String contiene una instancia incrustada de la [**clase \_ SecuritySettingData de Msvm**](msvm-securitysettingdata.md) que representa la configuración de seguridad de un sistema virtual.
+String contiene una instancia incrustada de la clase [**\_ SecuritySettingData de Msvm**](msvm-securitysettingdata.md) que representa la configuración de seguridad de un sistema virtual.
 
 </dd> <dt>
 
 *SecurityPolicy* \[ En\]
 </dt> <dd>
 
-Matriz de bytes sin formato que contiene la directiva de seguridad que se establece.
+Matriz de bytes sin formato que contiene la directiva de seguridad que se debe establecer.
 
 </dd> <dt>
 
@@ -64,7 +64,7 @@ Parámetro opcional para supervisar el progreso de la operación, que se usa si 
 
 ## <a name="return-value"></a>Valor devuelto
 
-On, success, devuelve un valor de 0; de lo contrario, devuelve un error.
+On, success, devuelve un valor 0; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -101,7 +101,7 @@ On, success, devuelve un valor de 0; de lo contrario, devuelve un error.
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-**El sistema no está** disponible (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
 **Memoria sin memoria** (32778)
@@ -111,7 +111,7 @@ On, success, devuelve un valor de 0; de lo contrario, devuelve un error.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
@@ -121,7 +121,7 @@ On, success, devuelve un valor de 0; de lo contrario, devuelve un error.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: OpCodes (ProviderType) (elemento)
-description: Define una lista de códigos de tareas que se pueden usar para agrupar eventos dentro de una tarea. | OpCodes (ProviderType) (elemento)
+title: elemento opcodes (ProviderType)
+description: Define una lista de códigos de operación que puede usar para agrupar eventos dentro de una tarea. | elemento opcodes (ProviderType)
 ms.assetid: 28f67c43-053d-42e6-81eb-2353cc3898af
 keywords:
-- elemento OpCodes EventLog
+- elemento opcodes EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b551f1158e58cb671a0fb872f73eabec1b29de33
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 56900a306b6e4714131715f0936346fad40d8a71d3b694142c4be9392ba08f56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120593"
 ---
-# <a name="opcodes-providertype-element"></a>OpCodes (ProviderType) (elemento)
+# <a name="opcodes-providertype-element"></a>elemento opcodes (ProviderType)
 
-Define una lista de códigos de tareas que se pueden usar para agrupar eventos dentro de una tarea.
+Define una lista de códigos de operación que puede usar para agrupar eventos dentro de una tarea.
 
 ``` syntax
 <xs:element name="opcodes"
@@ -30,7 +30,7 @@ Define una lista de códigos de tareas que se pueden usar para agrupar eventos d
  />
 ```
 
-El elemento **OpCodes** se define mediante el tipo complejo de [**ProviderType**](eventmanifestschema-providertype-complextype.md) .
+El **elemento opcodes** se define mediante el [**tipo complejo ProviderType.**](eventmanifestschema-providertype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **OpCodes** se define mediante el tipo complejo de [**ProviderType**
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento **OpCodes** se define mediante el tipo complejo de [**ProviderType**
 **Elemento primario**
 </dt> <dt>
 
-[**proveedor (EventsType)**](eventmanifestschema-provider-eventstype-element.md)
+[**provider (EventsType)**](eventmanifestschema-provider-eventstype-element.md)
 </dt> </dl>
 
  

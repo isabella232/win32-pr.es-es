@@ -1,9 +1,9 @@
 ---
-title: VER. categoría
+title: VIEW.category
 description: El atributo category especifica o recupera la categoría para la que está prevista la vista.
 ms.assetid: ab724647-8898-4bbf-82a3-b5852faed858
 keywords:
-- Ver Media Player ventanas de la categoría
+- View.category Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7623c321cbf2ff37724bbd99d24a4d94c1856dc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a483bf8e7ded89e10b46926fee82442becdb73f0a43e879310f55c915ce18b10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116780"
 ---
-# <a name="viewcategory"></a>VER. categoría
+# <a name="viewcategory"></a>VIEW.category
 
-El atributo **Category** especifica o recupera la categoría para la que está prevista la **vista** .
+El **atributo** category especifica o recupera la categoría para la **que** está prevista la vista.
 
 ``` syntax
         elementID.category
@@ -29,15 +29,15 @@ El atributo **Category** especifica o recupera la categoría para la que está p
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene uno de los valores siguientes.
+Este atributo es una cadena de **lectura** y escritura que contiene uno de los valores siguientes.
 
 
 
-| Value | Descripción                           |
+| Valor | Descripción                           |
 |-------|---------------------------------------|
 | Todo   | Predeterminada. Tema para todos los tipos de medios |
 | Radio | La interfaz de usuario para la reproducción de radio             |
-| CD    | La interfaz de usuario para la reproducción del CD                |
+| CD    | La interfaz de usuario para la reproducción de CD                |
 | DVD   | La interfaz de usuario para la reproducción de DVD               |
 | Música | La interfaz de usuario para MP3, WAV, MIDI, WMA        |
 | Vídeo | La interfaz de usuario para la reproducción de vídeo             |
@@ -52,7 +52,7 @@ Este atributo es una **cadena** de lectura/escritura que contiene uno de los val
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -60,7 +60,7 @@ Este atributo es una **cadena** de lectura/escritura que contiene uno de los val
 
 <dl> <dt>
 
-[**Elemento de vista**](view-element.md)
+[**ELEMENTO VIEW**](view-element.md)
 </dt> </dl>
 
  

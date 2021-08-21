@@ -1,19 +1,19 @@
 ---
-description: Especifica la clase del servicio Programador de clases multimedia (MMCSS) para el subproceso de descodificación.
+description: Especifica la clase Servicio programador de clases multimedia (MMCSS) para el subproceso decoding.
 ms.assetid: 77724879-62e4-439e-9dd0-3642cd7f75ca
-title: Propiedad AVDecMmcss (UUID. h)
+title: Propiedad AVDecMmcss (Uuids.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0092ac516f9600929a9772d044f51e7e375548d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7b9084db3cce8d555afa44097271a6b08f58cfea2f2edcb7acb5845730afc86b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118159956"
 ---
 # <a name="avdecmmcss-property"></a>Propiedad AVDecMmcss
 
-Especifica la clase del servicio Programador de clases multimedia (MMCSS) para el subproceso de descodificación.
+Especifica la clase Servicio programador de clases multimedia (MMCSS) para el subproceso decoding.
 
 Esta propiedad es de lectura y escritura.
 
@@ -29,13 +29,13 @@ Esta propiedad es de lectura y escritura.
 
 El valor de esta propiedad es el nombre de la clase MMCSS.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-MMCSS permite a las aplicaciones asegurarse de que el procesamiento dependiente del tiempo ha priorizado el acceso a los recursos de la CPU. Funciona mediante la elevación de subprocesos registrados a prioridades de subprocesos mayores, a la vez que reduce periódicamente sus prioridades para dar tiempo a otros procesos.
+MMCSS permite a las aplicaciones asegurarse de que el procesamiento con límite de tiempo ha priorizado el acceso a los recursos de CPU. Funciona elevando los subprocesos registrados a prioridades de subprocesos más altas, a la vez que disminuye periódicamente sus prioridades para producir tiempo a otros procesos.
 
-El valor recomendado para los descodificadores de audio es "audio", y el valor recomendado para los descodificadores de vídeo es "reproducción".
+El valor recomendado para los descodificadores de audio es "Audio" y el valor recomendado para los descodificadores de vídeo es "Playback".
 
-Si el servicio MMCSS no está disponible o la clase de MMCSS especificada no existe, el establecimiento de la propiedad no tiene ningún efecto.
+Si el servicio MMCSS no está disponible o la clase MMCSS especificada no existe, establecer la propiedad no tiene ningún efecto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Si el servicio MMCSS no está disponible o la clase de MMCSS especificada no exi
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>UUID. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Uuids.h</dt> </dl> |
 
 
 
@@ -54,7 +54,7 @@ Si el servicio MMCSS no está disponible o la clase de MMCSS especificada no exi
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

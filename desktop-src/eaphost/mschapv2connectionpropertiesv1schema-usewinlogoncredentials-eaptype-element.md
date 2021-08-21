@@ -1,9 +1,9 @@
 ---
 title: Elemento UseWinLogonCredentials (EapType)
-description: Obtenga información sobre el elemento UseWinLogonCredentials (EapType). Este elemento controla el uso de las credenciales de WinLogin.
+description: Obtenga información sobre el elemento UseWinLogonCredentials (EapType). Este elemento controla el uso de credenciales de winlogin.
 ms.assetid: 8ebd87ce-7d2b-4305-b50c-239bb9c7af75
 keywords:
-- Elemento UseWinLogonCredentials EAPHost
+- Elemento EAPHost de UseWinLogonCredentials
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f17520d4eaee64d3dd9809ecb465ca8e39690fc4
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 2a407c505139562a155e5aa9d7ed57fed5d15077cf5d035ea8bb7bbe0e177363
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103793929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086196"
 ---
 # <a name="usewinlogoncredentials-eaptype-element"></a>Elemento UseWinLogonCredentials (EapType)
 
-El elemento **UseWinLogonCredentials (EapType)** controla el uso de las credenciales de WinLogin.
+El **elemento UseWinLogonCredentials (EapType)** controla el uso de las credenciales de winlogin.
 
 ``` syntax
 <xs:element name="UseWinLogonCredentials"
@@ -31,20 +31,20 @@ El elemento **UseWinLogonCredentials (EapType)** controla el uso de las credenci
  />
 ```
 
-El elemento **UseWinLogonCredentials** se define mediante el elemento [**EapType**](mschapv2connectionpropertiesv1schema-eaptype-element.md) .
+El elemento [**EapType**](mschapv2connectionpropertiesv1schema-eaptype-element.md) define el elemento **UseWinLogonCredentials.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si es TRUE, EAP MS-CHAPv2 obtiene las credenciales de Winlogon. Si es FALSE, EAP MS-CHAPv2 obtiene las credenciales del usuario. El elemento **UseWinLogonCredentials (EapType)** es opcional.
+Si es TRUE, eap MS-CHAPv2 obtener las credenciales de winlogon. Si es FALSE, eap MS-CHAPv2 obtener las credenciales del usuario. El **elemento UseWinLogonCredentials (EapType)** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versiones mínimas admitidas del sistema operativo |
+| Rol | Versiones mínimas del sistema operativo admitidas |
 |------|-------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

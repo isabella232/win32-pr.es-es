@@ -1,44 +1,44 @@
 ---
-title: Detectando el estado de la instalación del programa de instalación de Windows Media
-description: Detectando el estado de la instalación del programa de instalación de Windows Media
+title: Detección del estado de instalación de Windows instalación de medios
+description: Detección del estado de instalación de Windows instalación de medios
 ms.assetid: c3acc268-934b-4a10-aab5-4b1764cb4c87
 keywords:
-- Windows Media Player, detectar el estado de la instalación
-- Windows Media Player, estado de la instalación
-- Windows Media Player, redistribuir software
-- Windows Media Player, redistribución de software
-- detección del estado de la instalación
-- Estado de la instalación
+- Reproductor de Windows Media, detectar el estado de instalación
+- Reproductor de Windows Media,estado de instalación
+- Reproductor de Windows Media, redistribuir software
+- Reproductor de Windows Media, redistribución de software
+- detectar el estado de configuración
+- estado de configuración
 - redistribuir software
 - redistribución de software
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e28a4df9b842a1b6491a0ec98ca0a3182630c389
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 797c7cb5fe4d34895109777c4da7e15489a0d32acd9cf42660b3346521f6f059
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104419070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118340904"
 ---
-# <a name="detecting-setup-status-for-windows-media-setup"></a>Detectando el estado de la instalación del programa de instalación de Windows Media
+# <a name="detecting-setup-status-for-windows-media-setup"></a>Detección del estado de instalación de Windows instalación de medios
 
-El siguiente código se puede utilizar con los paquetes de redistribución de Windows Media Player. El estado de la instalación se almacena en la entrada del registro **InstallResult** en la siguiente subclave:
+El código siguiente se puede usar con los paquetes Reproductor de Windows Media redistribución. El estado de instalación se almacena en la entrada del Registro **InstallResult** en la subclave siguiente:
 
-**HKEY \_ Current \_ User \\ software \\ Microsoft \\ MediaPlayer \\ setup**
+**HKEY \_ CURRENT \_ USER \\ Software \\ Microsoft \\ MediaPlayer \\ Setup**
 
-La entrada del registro **InstallResult** tiene el formato siguiente.
+La **entrada del Registro InstallResult** tiene el siguiente formulario.
 
 
 
-| Nombre              | Tipo           | Value                                                                                                                   |
+| Nombre              | Tipo           | Valor                                                                                                                   |
 |-------------------|----------------|-------------------------------------------------------------------------------------------------------------------------|
-| **InstallResult** | **\_valor DWORD reg** | Un **valor HRESULT** que indica si la instalación de Windows Media Player realizó correctamente y si es necesario reiniciar. |
+| **InstallResult** | **REG \_ DWORD** | HRESULT **que** indica si la Reproductor de Windows Media se ha realizado correctamente y si es necesario reiniciar. |
 
 
 
- 
+ 
 
-Este es un ejemplo de código de C++ que se puede incorporar en una aplicación de configuración de llamada. Este código establecerá las `fSuccess` `fRebootNeeded` variables y en **true** o **false**, según corresponda, en función del valor **HRESULT** escrito por el programa de instalación de Windows Media Player en el paquete de redistribución de componentes.
+Este es un ejemplo de código de C++ que se podría incorporar a una aplicación de instalación de llamada. Este código establecerá las variables y en true o false, según corresponda, en función del valor HRESULT escrito por Reproductor de Windows Media setup en el paquete `fSuccess` `fRebootNeeded` de redistribución de componentes.   
 
 
 ```C++
@@ -103,12 +103,12 @@ if( ERROR_SUCCESS == RegQueryValueExA(
 
 <dl> <dt>
 
-[**Redistribuir el software de Windows Media Player**](redistributing-windows-media-player-software.md)
+[**Redistribuir Reproductor de Windows Media Software**](redistributing-windows-media-player-software.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Simula una secuencia de teclas mediante códigos de recorrido.
+description: Simula una secuencia de claves mediante códigos de examen.
 ms.assetid: F67D2FBA-3CE0-4135-9043-FAB59381DE3C
-title: Método TypeScancodes de la clase Msvm_Keyboard
+title: Método TypeScancodes de la Msvm_Keyboard clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 97479a1a0926894f72472b7459f77cd9325ac6fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f1ca4aebc94ed7571c2b1cda00d5f81ce363396c2960108c441950782558ec29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810418"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118147622"
 ---
-# <a name="typescancodes-method-of-the-msvm_keyboard-class"></a>Método TypeScancodes de la \_ clase de teclado MSVM
+# <a name="typescancodes-method-of-the-msvm_keyboard-class"></a>Método TypeScancodes de la clase Msvm \_ Keyboard
 
-Simula una secuencia de teclas mediante códigos de recorrido.
+Simula una secuencia de claves mediante códigos de examen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,20 +39,20 @@ uint32 TypeScancodes(
 
 <dl> <dt>
 
-*Scancodes* \[ de\]
+*Códigos de digitalización* \[ En\]
 </dt> <dd>
 
-Tipo: **Uint8 \[ \]**
+Tipo: **uint8 \[ \]**
 
-Una matriz que contiene los códigos de recorrido que se van a escribir.
+Matriz que contiene los códigos de examen que se escriben.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Este método devuelve 0 si se realiza correctamente. Cualquier otro valor devuelto indica un error. El valor devuelto puede ser uno de los valores siguientes.
+Este método devuelve 0 si se realiza correctamente. Cualquier otro valor devuelto indica un error. El valor devuelto puede ser uno de los siguientes valores.
 
 <dl> <dt>
 
@@ -71,16 +71,16 @@ Este método devuelve 0 si se realiza correctamente. Cualquier otro valor devuel
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**Sistema en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -89,26 +89,26 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase de [**\_ teclado MSVM**](msvm-keyboard.md) puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a [**la clase Msvm \_ Keyboard**](msvm-keyboard.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -117,7 +117,7 @@ El acceso a la clase de [**\_ teclado MSVM**](msvm-keyboard.md) puede estar rest
 
 <dl> <dt>
 
-[**\_Teclado MSVM**](msvm-keyboard.md)
+[**Teclado de \_ Msvm**](msvm-keyboard.md)
 </dt> </dl>
 
  

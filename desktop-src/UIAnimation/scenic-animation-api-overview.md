@@ -85,7 +85,7 @@ Para conservar los recursos del sistema, se puede configurar un temporizador par
 
 La WINDOWS Animation API es una API basada en COM de un solo subproceso que proporciona las siguientes características para desarrolladores:
 
--   Un objeto de administrador de animaciones, [**UIAnimationManager,**](/previous-versions/windows/desktop/legacy/dd317019(v=vs.85))para crear objetos de animación y controlar animaciones
+-   Un objeto de administrador de animación, [**UIAnimationManager,**](/previous-versions/windows/desktop/legacy/dd317019(v=vs.85))para crear objetos de animación y controlar animaciones
 -   Variables de animación y guiones gráficos
 -   Una biblioteca fundamental, [**UIAnimationTransitionLibrary,**](/previous-versions/windows/desktop/legacy/dd317028(v=vs.85))de transiciones listas para usar
 -   Un objeto de temporizador, [**UIAnimationTimer,**](/previous-versions/windows/desktop/legacy/dd317021(v=vs.85))para determinar la hora actual y, opcionalmente, para impulsar la animación
@@ -93,7 +93,7 @@ La WINDOWS Animation API es una API basada en COM de un solo subproceso que prop
 
 Para obtener la referencia completa de la API, [consulte Windows Animation Reference](windows-animation-reference.md). Para obtener código de ejemplo, [vea Windows Animation Tasks](using-windows-animation.md) y Windows Animation [Samples](windows-animation-samples.md).
 
-## <a name="configurations"></a>Configurations
+## <a name="configurations"></a>Configuraciones
 
 Las aplicaciones deben obtener la hora actual antes de programar una animación nueva. Estos son los mecanismos de control de tiempo admitidos por Windows Animation:
 
@@ -114,7 +114,7 @@ En la configuración más sencilla, una aplicación volverá a dibujar todo cada
 
 En lugar de actualizar el administrador de animaciones directamente, las aplicaciones pueden permitir que el temporizador de animación informe al administrador de animaciones cuándo actualizar su estado y simplemente recibir una notificación cuando se haya realizado cada actualización. Este enfoque se recomienda para las API de gráficos anteriores. En general, si es posible sincronizar con la frecuencia de actualización del monitor, es mejor hacerlo y usar la animación controlada por la aplicación.
 
-En el diagrama siguiente se muestran las interacciones entre una aplicación y los componentes de animación Windows cuando el temporizador de animación está impulsando las actualizaciones de animación.
+En el diagrama siguiente se muestran las interacciones entre una aplicación y los componentes Windows animation cuando el temporizador de animación está impulsando las actualizaciones de animación.
 
 ![diagrama que muestra las interacciones entre una aplicación y los componentes de animación de Windows cuando el temporizador de animación está impulsando las actualizaciones de animación.](images/animationtimerupdates.png)
 

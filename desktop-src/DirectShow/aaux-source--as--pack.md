@@ -1,25 +1,25 @@
 ---
-description: Paquete de origen (AS) de AAUX
+description: Paquete de origen (AS) de APACK
 ms.assetid: 0e173fe5-0b9d-48e8-bcbd-403614d51558
-title: Paquete de origen (AS) de AAUX
+title: Paquete de origen (AS) de APACK
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe479a0740da08f42ca5d80e1f0b6f5174f6917b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 89a2d8aa11c9560b2aa59165afd9bdaae775be7755a7a7d2a5e87a80df412d1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104274789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118160266"
 ---
-# <a name="aaux-source-as-pack"></a>Paquete de origen (AS) de AAUX
+# <a name="aaux-source-as-pack"></a>Paquete de origen (AS) de APACK
 
-En las tablas siguientes se enumeran los valores utilizados por el controlador MSDV para rellenar los miembros **dwDVAAuxSrc** y **dwDVAAuxSrc1** de la estructura [**DVINFO**](/windows/desktop/api/strmif/ns-strmif-dvinfo) . Para obtener más información, consulte [configuración de los campos DVINFO en el controlador MSDV](dvinfo-field-settings-in-the-msdv-driver.md).
+En las tablas siguientes se muestran los valores utilizados por el controlador MSDV para rellenar los **miembros dwDVAJdbcSrc** y **dwDVAJdbcSrc1** de la [**estructura DVINFO.**](/windows/desktop/api/strmif/ns-strmif-dvinfo) Para obtener más información, [vea DVINFO Field Configuración en el controlador MSDV](dvinfo-field-settings-in-the-msdv-driver.md).
 
-Configuración de DVCR
+Dvcr Configuración
 
 
 
-Estándar DV
+DV Estándar
 
 DVCR (IEC 61834)
 
@@ -29,7 +29,7 @@ dvsl
 
 dvsd
 
-System
+Sistema
 
 525-60
 
@@ -59,7 +59,7 @@ Reservado (1)
 
 1
 
-TAMAÑO AF (6)
+AF SIZE (6)
 
 00:1111
 
@@ -99,7 +99,7 @@ PA (1)
 
 1
 
-MODO DE AUDIO (4)
+MODO AUDIO (4)
 
     Audio Block 1\*
 
@@ -151,7 +151,7 @@ ML (1)
 
 1
 
-SSE ESPERABA UNA (5)
+STYPE (5)
 
 0:0001
 
@@ -201,7 +201,7 @@ QU (3)
 
 001
 
-Paquete de AS
+PAQUETE DE AS
 
     Audio Block 1\*
 
@@ -227,11 +227,11 @@ Paquete de AS
 
  
 
-Configuración de DVCR 25 y DVCPRO 50 (planeada)
+DVCR 25 y DVCPRO 50 Configuración (planeado)
 
 
 
-Estándar DV
+DV Estándar
 
 DVCPRO (SMPTE 314M): planeado
 
@@ -241,7 +241,7 @@ dv25
 
 dv50
 
-System
+Sistema
 
 525-60
 
@@ -271,7 +271,7 @@ Reservado (1)
 
 1
 
-TAMAÑO AF (6)
+AF SIZE (6)
 
 01:0110
 
@@ -311,7 +311,7 @@ Reservado (1)
 
 1
 
-MODO DE AUDIO (4)
+MODO AUDIO (4)
 
     Audio Block 1\*
 
@@ -325,13 +325,13 @@ MODO DE AUDIO (4)
 
     Audio Block 2\*
 
-0,001
+0001
 
-0,001
+0001
 
-0,001
+0001
 
-0,001
+0001
 
 Reservado (2)
 
@@ -353,7 +353,7 @@ Reservado (2)
 
 1
 
-SSE ESPERABA UNA (5)
+STYPE (5)
 
 0:0000
 
@@ -393,7 +393,7 @@ QU (3)
 
 000
 
-Paquete de AS
+PAQUETE DE AS
 
     Audio Block 1\*
 
@@ -420,15 +420,15 @@ Paquete de AS
  
 
 > [!Note]  
-> \* La estructura [**DVINFO**](/windows/desktop/api/strmif/ns-strmif-dvinfo) contiene dos AAUX como paquetes, para los bloques de audio 1 y 2. DV50 tiene cuatro bloques de audio; los bloques 3 y 4 no se representan en la estructura **DVINFO** .
+> \* La [**estructura DVINFO**](/windows/desktop/api/strmif/ns-strmif-dvinfo) contiene dos paquetes as de A AHORA, para los bloques de audio 1 y 2. DV50 tiene cuatro bloques de audio; Los bloques 3 y 4 no se representan en la **estructura DVINFO.**
 
  
 
-Configuración de DVCR 100 (planeada)
+DVCR 100 Configuración (planeado)
 
 
 
-Estándar DV
+DV Estándar
 
 DVCPRO 100: planeado
 
@@ -436,7 +436,7 @@ FOURCC
 
 dvh1
 
-System
+Sistema
 
 1080-60i
 
@@ -460,7 +460,7 @@ Reservado (1)
 
 1
 
-TAMAÑO AF (6)
+AF SIZE (6)
 
 01:0110
 
@@ -492,7 +492,7 @@ Reservado (1)
 
 1
 
-MODO DE AUDIO (4)
+MODO AUDIO (4)
 
     Audio Block 1\*
 
@@ -504,11 +504,11 @@ MODO DE AUDIO (4)
 
     Audio Block 2\*
 
-0,001
+0001
 
-0,001
+0001
 
-0,001
+0001
 
 Reservado (2)
 
@@ -526,7 +526,7 @@ Reservado (2)
 
 1
 
-SSE ESPERABA UNA (5)
+STYPE (5)
 
 0:0011
 
@@ -558,7 +558,7 @@ QU (3)
 
 000
 
-Paquete de AS
+PAQUETE DE AS
 
     Audio Block 1\*
 
@@ -581,62 +581,62 @@ Paquete de AS
  
 
 > [!Note]  
-> \* DVCPRO 100 tiene ocho bloques de audio; los bloques 3 a 8 no se representan en la estructura [DVINFO](dvinfo-field-settings-in-the-msdv-driver.md) .
+> \*DVCPRO 100 tiene 8 bloques de audio; Los bloques del 3 al 8 no se representan en la [estructura DVINFO.](dvinfo-field-settings-in-the-msdv-driver.md)
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los siguientes códigos de campo son de interés:
 
 -   LF: marca de modo bloqueado. Indica si el audio está bloqueado.
-    -   0 = bloqueado
-    -   1 = desbloqueado
+    -   0 = Bloqueado
+    -   1 = Desbloqueado
 -   AF SIZE: tamaño del fotograma de audio. Especifica el número de muestras de audio por fotograma.
 
     Definición de IEC 61834:
 
-    -   00:1111 = 1068 ejemplos por fotograma
-    -   01:0000 = 1280 ejemplos por fotograma
+    -   00:1111 = 1068 muestras por fotograma
+    -   01:0000 = 1280 muestras por fotograma
 
-    Definición de 314M SMPTE:
+    Definición de SMPTE 314M:
 
-    -   01:0110 = 1602 ejemplos por fotograma
-    -   01:1000 = 1920 ejemplos por fotograma
+    -   01:0110 = 1602 muestras por fotograma
+    -   01:1000 = 1920 muestras por fotograma
 
-    En función de la velocidad de fotogramas, el número exacto de muestras de un fotograma puede variar. Por ejemplo, NTSC es 30000/1001 fotogramas por segundo (29,97 fps). Con audio de 32 kHz, hay aproximadamente 1067,73 muestras de audio por fotograma. Por lo tanto, la tasa nominal es 1068, pero el número real varía según el fotograma. Además, con audio desbloqueado, se permite que el número de muestras de audio por fotograma varíe dentro de un intervalo determinado a lo largo del tiempo.
+    En función de la velocidad de fotogramas, el número exacto de muestras de un fotograma puede variar. Por ejemplo, UNOS es de 30 000/1001 fotogramas por segundo (29,97 fps). Con audio de 32 kHz, hay aproximadamente 1067,73 muestras de audio por fotograma. Por lo tanto, la tasa nominal es 1068, pero el número real varía por fotograma. Además, con el audio desbloqueado, el número de muestras de audio por fotograma puede variar dentro de un intervalo determinado a lo largo del tiempo.
 
 <!-- -->
 
 -   SM: modo estéreo.
-    -   0 = estéreo
-    -   1 = mono
+    -   0 = Estéreo
+    -   1 = Mono
 -   CHN: número de canales de audio por bloque de audio.
-    -   0 = un canal por bloque de audio
-    -   1 = dos canales por bloque de audio
--   MODO de AUDIO: indica el contenido de la señal de audio en cada canal. La interpretación de este campo depende de los valores que se colocan en los campos SM y CHN. Las definiciones que se indican a continuación son para los valores usados por MSDV; Consulte las especificaciones para obtener más información.
+    -   0 = Un canal por bloque de audio
+    -   1 = Dos canales por bloque de audio
+-   MODO AUDIO: indica el contenido de la señal de audio en cada canal. La interpretación de este campo depende de qué valores se colocan en los campos SM y CHN. Las definiciones que se indican a continuación son para los valores usados por MSDV; Consulte las especificaciones para obtener más información.
 
     Definición de IEC 61834:
 
-    -   0000 = CH a/c/e/g es el canal izquierdo, CH b/d/f/h es el canal derecho
+    -   0000 = Ch a/c/e/g es el canal izquierdo, Ch b/d/f/h es el canal derecho
     -   1111 = sin datos de audio
 
-    Definición de 314M SMPTE:
+    Definición de SMPTE 314M:
 
     -   0000 = CH1 (CH3)
     -   0001 = CH2 (CH4)
 
 -   50/60: número de campos.
-    -   0 = campos 60
-    -   1 = campos 50
--   SSE esperaba una: tipo de sistema.
+    -   0 = 60 campos
+    -   1 = 50 campos
+-   STYPE: tipo de sistema.
 
     Definición de IEC 61834:
 
-    -   00000 = 525-60 o 625-50, DVSD
-    -   00001 = 525-60 o 625-50, DVSL (véase IEC 61883-5)
+    -   00000 = 525-60 o 625-50, dvsd
+    -   00001 = 525-60 o 625-50, dvsl (vea IEC 61883-5)
 
-    Definición 370 de SMPTE 314M/SPMTE:
+    Definición de SMPTE 314M/SPMTE 370:
 
     -   00000 = 2 bloques de audio por fotograma de vídeo
     -   00010 = 4 bloques de audio por fotograma de vídeo
@@ -645,9 +645,9 @@ Los siguientes códigos de campo son de interés:
 -   SMP: frecuencia de muestreo.
     -   000 = 48 kHz
     -   010 = 32 kHz
--   QU: cuantificación.
-    -   0 = 16 bits lineal
-    -   1 = 12 bits no lineal
+-   QU: Cuantificación.
+    -   0 = 16 bits lineales
+    -   1 = 12 bits no lineales
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -656,7 +656,7 @@ Los siguientes códigos de campo son de interés:
 [Vídeo digital en DirectShow](digital-video-in-directshow.md)
 </dt> <dt>
 
-[Configuración del campo DVINFO en el controlador MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
+[Campo DVINFO Configuración en el controlador MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-AZ-script-Engine-cache-Max
-description: Número máximo de scripts almacenados en memoria caché por la aplicación.
+title: Atributo ms-DS-Az-Script-Engine-Cache-Max
+description: Número máximo de scripts almacenados en caché por la aplicación.
 ms.assetid: 957c1b75-b70c-450c-9a16-771b147324be
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-DS-AZ-script-Engine-cache-Max
-- Esquema de AD de atributo msDS-AzScriptEngineCacheMax
+- Esquema de AD del atributo ms-DS-Az-Script-Engine-Cache-Max
+- Esquema de AD del atributo msDS-AzScriptEngineCacheMax
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b3eedf1f5fdd857bb10b12c0249cfa4ba221b68a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 53cd2a5a74eff9af3068b6aa64d97ed4bf6dc163b02b43d8ae86ce354070e70c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104274582"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118014996"
 ---
-# <a name="ms-ds-az-script-engine-cache-max-attribute"></a>atributo MS-DS-AZ-script-Engine-cache-Max
+# <a name="ms-ds-az-script-engine-cache-max-attribute"></a>Atributo ms-DS-Az-Script-Engine-Cache-Max
 
-Número máximo de scripts almacenados en memoria caché por la aplicación.
+Número máximo de scripts almacenados en caché por la aplicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-AZ-script-Engine-cache-Max        |
-| Nombre para mostrar de LDAP | msDS-AzScriptEngineCacheMax             |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | Administrador de AzRoles                           |
+| CN                | ms-DS-Az-Script-Engine-Cache-Max        |
+| Ldap-Display-Name | msDS-AzScriptEngineCacheMax             |
+| Size              | \-                                      |
+| Actualizar privilegios  | Administrador de AzRoles                           |
 | Frecuencia de actualización  | Durante la inicialización o el cambio de directiva. |
 | Attribute-Id      | 1.2.840.113556.1.4.1796                 |
-| System-ID-GUID    | 2629f66a-1f95-4bf3-a296-8e9d7b9e30c8    |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)    |
+| System-Id-Guid    | 2629f66a-1f95-4bf3-a296-8e9d7b9e30c8    |
+| Syntax            | [**Enumeración**](s-enumeration.md)    |
 
 
 
@@ -54,18 +54,18 @@ Número máximo de scripts almacenados en memoria caché por la aplicación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | True                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Número máximo de scripts almacenados en memoria caché por la aplicación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | True                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Número máximo de scripts almacenados en memoria caché por la aplicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | True                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Número máximo de scripts almacenados en memoria caché por la aplicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | True                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Número máximo de scripts almacenados en memoria caché por la aplicación.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | True                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 

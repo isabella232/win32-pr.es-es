@@ -1,11 +1,11 @@
 ---
-title: Win32_TSLicenseReportEntry (clase)
-description: Proporciona detalles de la licencia de acceso de cliente por usuario Servicios de Escritorio remoto emitida (RDS \ 160; CAL por usuario).
+title: Win32_TSLicenseReportEntry clase
+description: Proporciona detalles de la licencia de acceso de cliente Servicios de Escritorio remoto por usuario (RDS \ 160; Cal por usuario).
 ms.assetid: 75fa7f39-af5b-45a0-ba2b-5c667edfec16
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSLicenseReportEntry clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSLicenseReportEntry de clase, se describe
+- Win32_TSLicenseReportEntry clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -21,16 +21,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44fa97a91561a9d4cf3fd571c773288796754858
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e08041ac0878f3466712001a0a5e2cc90eb74ea1e360da9785b5d84805574389
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421960"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118126525"
 ---
-# <a name="win32_tslicensereportentry-class"></a>\_Clase Win32 TSLicenseReportEntry
+# <a name="win32_tslicensereportentry-class"></a>Clase \_ TSLicenseReportEntry de Win32
 
-Proporciona detalles de la licencia de acceso de cliente por usuario de Servicios de Escritorio remoto emitida (CAL por usuario de RDS).
+Proporciona detalles de la licencia de acceso de cliente Servicios de Escritorio remoto por usuario (CAL por usuario de RDS).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -67,42 +67,42 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el tipo de CAL emitida. Será uno de los valores siguientes.
+Especifica el tipo de CAL emitido. Este será uno de los siguientes valores.
 
-**Windows server 2008 R2 y Windows server 2008:** Esta propiedad no se admite.
+**Windows Server 2008 R2 y Windows Server 2008:** Esta propiedad no se admite.
 
-"CAL por dispositivo de TS integrada"
+"CAL de TS por dispositivo integrada"
 
-"CAL por dispositivo de TS"
+"TS per Device CAL"
 
-"CAL de conector de Internet de TS"
+"TS Internet Connector CAL"
 
-"CAL por usuario de TS"
+"TS per User CAL"
 
-"CAL por dispositivo de TS o RDS"
+"CAL de TS o RDS por dispositivo"
 
-"CAL por usuario de TS o RDS"
+"CAL de TS o RDS por usuario"
 
-"Licencia de suscripción por dispositivo de VDI Standard Suite"
+"Licencia de suscripción de VDI Standard Suite per Device"
 
-"Licencia de suscripción por dispositivo de VDI Premium Suite"
+"Licencia de suscripción de VDI Premium Suite por dispositivo"
 
-"CAL por dispositivo de RDS"
+"CAL de RDS por dispositivo"
 
-"CAL por usuario de RDS"
+"CAL de RDS por usuario"
 
 </dd> <dt>
 
 **ExpirationDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **DATETIME**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha de expiración de la licencia que se emitió para el usuario.
+Fecha de expiración de la licencia que se emitió al usuario.
 
 </dd> <dt>
 
@@ -122,21 +122,21 @@ Versión de Servicios de Escritorio remoto para la que se emitió la CAL por usu
 "Windows Server 2012"
 </dt> <dd>
 
-En esta licencia solo se admiten servidores que ejecuten Windows Server 2012, Windows Server 2008 R2 o Windows Server 2008.
+Solo los servidores que Windows Server 2012, Windows Server 2008 R2 o Windows Server 2008 son compatibles con esta licencia.
 
 </dd> <dt>
 
 "Windows Server 7"
 </dt> <dd>
 
-Con esta licencia solo se admiten servidores que ejecuten Windows Server 2008 R2 o Windows Server 2008.
+Solo los servidores que Windows Server 2008 R2 o Windows Server 2008 son compatibles con esta licencia.
 
 </dd> <dt>
 
 "Windows Server 2008"
 </dt> <dd>
 
-Con esta licencia solo se admiten servidores que ejecuten Windows Server 2008.
+Solo los servidores que Windows Server 2008 son compatibles con esta licencia.
 
 </dd> </dl>
 
@@ -145,13 +145,13 @@ Con esta licencia solo se admiten servidores que ejecuten Windows Server 2008.
 **ProductVersionID**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador de la versión del producto para el paquete de claves de licencia de Servicios de Escritorio remoto.
+Identificador de versión del producto para el Servicios de Escritorio remoto de claves de licencia.
 
 <dt>
 
@@ -179,14 +179,14 @@ Windows Server 2008
 1
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> <dt>
 
 0
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> </dl>
 
@@ -201,29 +201,29 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nombre del usuario al que se emitió la licencia.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar esta clase, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para usar esta clase.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |
 | Espacio de nombres<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 

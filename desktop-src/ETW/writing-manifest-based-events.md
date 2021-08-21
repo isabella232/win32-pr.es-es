@@ -4,30 +4,30 @@ ms.assetid: 76e7202e-74ce-40a3-a04b-9af5117fe20e
 title: Escribir eventos basados en manifiestos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc2887194d731ca93379b07c9929de239cef3cdb
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: 6963051f65beb652eda04e3d0be6db99925e4eed81032c5687850915a0f1c173
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112261967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151084"
 ---
 # <a name="writing-manifest-based-events"></a>Escribir eventos basados en manifiestos
 
-Para poder escribir eventos en una sesión de seguimiento, debe registrar el proveedor. El registro de un proveedor indica a ETW que el proveedor está listo para escribir eventos en una sesión de seguimiento. Un proceso puede registrar hasta 1024 GUID de proveedor; sin embargo, debe limitar el número de proveedores que el proceso registra a uno o dos.
+Para poder escribir eventos en una sesión de seguimiento, debe registrar el proveedor. El registro de un proveedor indica a ETW que el proveedor está listo para escribir eventos en una sesión de seguimiento. Un proceso puede registrar hasta 1024 GUID de proveedor; sin embargo, debe limitar el número de proveedores que registra el proceso a uno o dos.
 
 **Antes de Windows Vista:** No hay ningún límite en el número de proveedores que un proceso puede registrar.
 
-Para registrar un proveedor basado en manifiesto, llame a la [**función EventRegister.**](/windows/desktop/api/Evntprov/nf-evntprov-eventregister) La función registra el GUID del proveedor e identifica una devolución de llamada opcional a la que ETW llama cuando un controlador habilita o deshabilita el proveedor.
+Para registrar un proveedor basado en manifiestos, llame a la [**función EventRegister.**](/windows/desktop/api/Evntprov/nf-evntprov-eventregister) La función registra el GUID del proveedor e identifica una devolución de llamada opcional a la que ETW llama cuando un controlador habilita o deshabilita el proveedor.
 
-Antes de que se cierre el proveedor, llame a [**la función EventUnregister**](/windows/desktop/api/Evntprov/nf-evntprov-eventunregister) para quitar el registro del proveedor de ETW. La [**función EventRegister**](/windows/desktop/api/Evntprov/nf-evntprov-eventregister) devuelve el identificador de registro que se pasa a **la función EventUnregister.**
+Antes de que se cierre el proveedor, llame a [**la función EventUnregister**](/windows/desktop/api/Evntprov/nf-evntprov-eventunregister) para quitar el registro del proveedor de ETW. La [**función EventRegister**](/windows/desktop/api/Evntprov/nf-evntprov-eventregister) devuelve el identificador de registro que se pasa a la **función EventUnregister.**
 
-[Los proveedores basados](about-event-tracing.md) en manifiestos no tienen que implementar una [**función EnableCallback**](/windows/desktop/api/Evntprov/nc-evntprov-penablecallback) para recibir notificaciones cuando una sesión habilita o deshabilita el proveedor. La devolución de llamada es opcional y se usa con fines informativos; no es necesario especificar ni implementar la devolución de llamada al registrar el proveedor. Un proveedor basado en manifiestos puede escribir simplemente eventos y ETW decidirá si el evento se registra en una sesión de seguimiento. Si un evento requiere que realice un trabajo exhaustivo para generar los datos del evento, puede llamar primero a la función [**EventEnabled**](/windows/desktop/api/Evntprov/nf-evntprov-eventenabled) o [**EventProviderEnabled**](/windows/desktop/api/Evntprov/nf-evntprov-eventproviderenabled) para comprobar que el evento se escribirá en una sesión antes de realizar el trabajo.
+[Los proveedores basados](about-event-tracing.md) en manifiestos no tienen que implementar una [**función EnableCallback**](/windows/desktop/api/Evntprov/nc-evntprov-penablecallback) para recibir notificaciones cuando una sesión habilita o deshabilita el proveedor. La devolución de llamada es opcional y se usa con fines informativos. no es necesario especificar ni implementar la devolución de llamada al registrar el proveedor. Un proveedor basado en manifiestos puede escribir simplemente eventos y ETW decidirá si el evento se registra en una sesión de seguimiento. Si un evento requiere que realice un trabajo exhaustivo para generar los datos del evento, puede llamar primero a las funciones [**EventEnabled**](/windows/desktop/api/Evntprov/nf-evntprov-eventenabled) o [**EventProviderEnabled**](/windows/desktop/api/Evntprov/nf-evntprov-eventproviderenabled) para comprobar que el evento se escribirá en una sesión antes de realizar el trabajo.
 
 Normalmente, implementaría la devolución de llamada si el proveedor requiere que el controlador pase los datos de filtro definidos por el proveedor (vea el parámetro *FilterData* de [**EnableCallback**](/windows/desktop/api/Evntprov/nc-evntprov-penablecallback)) al proveedor o si el proveedor usa la información de contexto que especificó cuando se registró (vea el parámetro *CallbackContext* de [**EventRegister**](/windows/desktop/api/Evntprov/nf-evntprov-eventregister)).
 
-[Los proveedores basados en](about-event-tracing.md) manifiestos llaman a [**la función EventWrite**](/windows/desktop/api/Evntprov/nf-evntprov-eventwrite) [**o EventWriteString**](/windows/desktop/api/Evntprov/nf-evntprov-eventwritestring) para escribir eventos en una sesión. Si los datos del evento son una cadena o si no define un manifiesto para el proveedor y los datos del evento son una sola cadena, llame a la función [**EventWriteString**](/windows/desktop/api/Evntprov/nf-evntprov-eventwritestring) para escribir el evento. Para los datos de eventos que contienen tipos de datos numéricos o complejos, llame a la [**función EventWrite**](/windows/desktop/api/Evntprov/nf-evntprov-eventwrite) para registrar el evento.
+[Los proveedores basados](about-event-tracing.md) en manifiestos llaman a [**la función EventWrite**](/windows/desktop/api/Evntprov/nf-evntprov-eventwrite) o [**EventWriteString**](/windows/desktop/api/Evntprov/nf-evntprov-eventwritestring) para escribir eventos en una sesión. Si los datos del evento son una cadena o si no define un manifiesto para el proveedor y los datos del evento son una sola cadena, llame a la [**función EventWriteString**](/windows/desktop/api/Evntprov/nf-evntprov-eventwritestring) para escribir el evento. Para los datos de eventos que contienen tipos de datos numéricos o complejos, llame a la [**función EventWrite**](/windows/desktop/api/Evntprov/nf-evntprov-eventwrite) para registrar el evento.
 
-En el ejemplo siguiente se muestra cómo preparar los datos del evento que se escribirán mediante la [**función EventWrite.**](/windows/desktop/api/Evntprov/nf-evntprov-eventwrite) En el ejemplo se hace referencia a los eventos definidos [en Publishing Your Event Schema for a Manifest-based Provider](publishing-your-event-schema-for-a-manifest-base-provider.md).
+En el ejemplo siguiente se muestra cómo preparar los datos del evento que se escribirán mediante la [**función EventWrite.**](/windows/desktop/api/Evntprov/nf-evntprov-eventwrite) En el ejemplo se hace referencia a los eventos definidos en [Publishing Your Event Schema for a Manifest-based Provider](publishing-your-event-schema-for-a-manifest-base-provider.md).
 
 
 ```C++
@@ -158,7 +158,7 @@ cleanup:
 
 
 
-Al compilar el manifiesto (consulte [Compilación](../wes/compiling-an-instrumentation-manifest.md)de un manifiesto de instrumentación) que se usa en el ejemplo anterior, se crea el siguiente archivo de encabezado (al que se hace referencia en el ejemplo anterior).
+Cuando se compila el manifiesto (vea [Compilar](../wes/compiling-an-instrumentation-manifest.md)un manifiesto de instrumentación) que se usa en el ejemplo anterior, se crea el siguiente archivo de encabezado (al que se hace referencia en el ejemplo anterior).
 
 
 ```C++

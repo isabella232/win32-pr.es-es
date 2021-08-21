@@ -1,7 +1,7 @@
 ---
-description: Representa el estado del dispositivo de TPM.
+description: Representa el estado del dispositivo TPM.
 ms.assetid: 74f43334-a578-4288-b5d7-83423d8af15f
-title: Msvm_TPM (clase)
+title: Msvm_TPM clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: b77af82e28e816371e638a1c6df8ddcfd6e31d1c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94ba928255445e500fbbb1580913adbbc831e751c2ef3a1f90cd28734e0ae04a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118146684"
 ---
-# <a name="msvm_tpm-class"></a>\_Clase TPM MSVM
+# <a name="msvm_tpm-class"></a>Msvm \_ TPM (clase)
 
-Representa el estado del dispositivo de TPM.
+Representa el estado del dispositivo TPM.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -37,7 +37,7 @@ class Msvm_TPM : CIM_TPM
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ TPM MSVM** no define ningún miembro.
+La **clase \_ TPM de Msvm** no define ningún miembro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,10 +45,10 @@ La **clase \_ TPM MSVM** no define ningún miembro.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -57,7 +57,7 @@ La **clase \_ TPM MSVM** no define ningún miembro.
 
 <dl> <dt>
 
-[**TPM de CIM \_**](cim-tpm.md)
+[**TPM \_ de CIM**](cim-tpm.md)
 </dt> </dl>
 
  

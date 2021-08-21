@@ -1,12 +1,12 @@
 ---
-title: Funcionamiento del ejemplo de eco
-description: Funcionamiento del ejemplo de eco
+title: Cómo funciona el ejemplo de eco
+description: Cómo funciona el ejemplo de eco
 ms.assetid: 554afc08-6e4f-427c-8a09-0d1ebf3ca8dc
 keywords:
 - Reproductor de Windows Media complementos, Información general del ejemplo de eco
 - complementos, información general de ejemplo de eco
 - complementos de procesamiento de señales digitales, información general de ejemplo de eco
-- Complementos DE DSP, Información general del ejemplo de eco
+- Complementos DE DSP, información general de ejemplo de eco
 - Ejemplo de complemento DSP de eco, acerca de
 ms.topic: article
 ms.date: 05/31/2018
@@ -17,7 +17,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118338960"
 ---
-# <a name="how-the-echo-sample-works"></a>Funcionamiento del ejemplo de eco
+# <a name="how-the-echo-sample-works"></a>Cómo funciona el ejemplo de eco
 
 El código crea el efecto de eco asignando un búfer lo suficientemente grande como para contener exactamente la cantidad de datos de audio que se pueden representar en el período de tiempo especificado por el valor de tiempo de retraso. El tamaño del búfer se calcula, en bytes, mediante la fórmula siguiente:
 
@@ -38,7 +38,7 @@ Una vez que existe el búfer de retraso y Reproductor de Windows Media ha asigna
 7.  Copie el resultado en el búfer de salida. A continuación, mueva el puntero del búfer de salida hacia delante a la unidad siguiente para prepararse para la siguiente iteración del bucle.
 8.  Repita el proceso hasta que se procese todos los ejemplos.
 
-Cuando se copia un ejemplo de entrada recuperado en el paso 2 en el búfer de retraso en el paso 4, permanece allí hasta que el puntero móvil atraviesa cada muestra en el búfer de retraso y, por último, vuelve a la misma posición. Dado que el tamaño del búfer de retraso está diseñado para corresponder al tiempo de retraso, el tiempo transcurrido entre la muestra que se copia en el búfer de retraso y la muestra que se recupera una vez más es igual al retraso especificado (más cualquier latencia introducida por el procesamiento real).
+Cuando se copia un ejemplo de entrada recuperado en el paso 2 en el búfer de retraso en el paso 4, permanece allí hasta que el puntero móvil pasa por cada muestra del búfer de retraso y, por último, vuelve a la misma posición. Dado que el tamaño del búfer de retraso está diseñado para corresponder al tiempo de retraso, el tiempo transcurrido entre la muestra que se copia en el búfer de retraso y la muestra que se recupera una vez más es igual al retraso especificado (más cualquier latencia introducida por el procesamiento real).
 
 Cuando se inicia una secuencia, no se generan datos de retraso hasta que transcurre el tiempo de retraso. Por lo tanto, es importante que el búfer de retraso inicialmente contenga silencio. Si el búfer de retraso contiene datos aleatorios, el usuario escuchará ruido blanco hasta que el complemento genere suficientes datos de retraso para sobrescribir todo el búfer de retraso.
 

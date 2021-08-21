@@ -1,15 +1,15 @@
 ---
 description: Especifica cómo se comporta el codificador cuando detecta una nueva escena. Esta propiedad se aplica a los codificadores de vídeo MPEG.
 ms.assetid: 9950a55c-75c5-4b49-bd8a-1ce40ac71ee5
-title: Propiedad AVEncMPVSceneDetection (Codecapi. h)
+title: Propiedad AVEncMPVSceneDetection (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c11ac3d0ddc79ef3c0f8746e4d25934f5248193
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e6220cf67de5a9aa169006aaa863177dcc76dc6f72c39574c814a2e08a3eb857
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103997682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118159351"
 ---
 # <a name="avencmpvscenedetection-property"></a>Propiedad AVEncMPVSceneDetection
 
@@ -27,17 +27,17 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad es un miembro de la enumeración [**eAVEncMPVSceneDetection**](/windows/win32/api/codecapi/ne-codecapi-eavencmpvscenedetection) .
+El valor de esta propiedad es un miembro de la [**enumeración eAVEncMPVSceneDetection.**](/windows/win32/api/codecapi/ne-codecapi-eavencmpvscenedetection)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -48,7 +48,7 @@ El valor de esta propiedad es un miembro de la enumeración [**eAVEncMPVSceneDet
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: BUTTONELEMENT. adhesiva
-description: El atributo de permanencia especifica o recupera un valor que indica si BUTTONELEMENT es un botón de alternancia, es decir, si es un botón de dos Estados o de un solo Estado.
+title: BUTTONELEMENT.sticky
+description: El atributo permanente especifica o recupera un valor que indica si BUTTONELEMENT es un botón de alternancia, es decir, si es un botón de dos estados o de un solo estado.
 ms.assetid: a7e74f70-9fa6-45a1-ab65-2db107e13551
 keywords:
-- BUTTONELEMENT. Windows Media Player
+- ButtonELEMENT.sticky Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 713b26fdee3062fbe803d05e034bc9896cdd5563
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cc8a709fc28f0d1529c58725db5856931195a66cc370559dd9d14af61e869db6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699800"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120061"
 ---
-# <a name="buttonelementsticky"></a>BUTTONELEMENT. adhesiva
+# <a name="buttonelementsticky"></a>BUTTONELEMENT.sticky
 
-El atributo de **permanencia** especifica o recupera un valor que indica si **BUTTONELEMENT** es un botón de alternancia, es decir, si es un botón de dos Estados o de un solo Estado.
+El **atributo** permanente especifica o recupera un valor que indica si **BUTTONELEMENT** es un botón de alternancia, es decir, si es un botón de dos estados o de un solo estado.
 
 ``` syntax
         elementID.sticky
@@ -29,7 +29,7 @@ El atributo de **permanencia** especifica o recupera un valor que indica si **BU
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un valor booleano de lectura **y escritura.**
 
 
 
@@ -42,9 +42,9 @@ Este atributo es un **valor booleano** de lectura/escritura.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el atributo de **permanencia** está establecido en true, el elemento de botón cambiará al estado desactivado cuando se haga clic en él y permanecerá en ese estado hasta que se vuelva a hacer clic. Cuando el elemento de botón está inactivo, el atributo **Down** será true y se mostrará la parte adecuada del grupo de botones **downImage** .
+Si el **atributo permanente** se establece en true, el elemento de botón cambiará al estado anterior cuando se haga clic en él y permanecerá en ese estado hasta que se vuelva a hacer clic en él. Cuando el elemento button está en estado down, el atributo **down** será true y se mostrará la parte adecuada del grupo de botones **downImage.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Si el atributo de **permanencia** está establecido en true, el elemento de bot�
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -60,10 +60,10 @@ Si el atributo de **permanencia** está establecido en true, el elemento de bot�
 
 <dl> <dt>
 
-[**BUTTONELEMENT (elemento)**](buttonelement-element.md)
+[**Elemento BUTTONELEMENT**](buttonelement-element.md)
 </dt> <dt>
 
-[**BUTTONELEMENT. Down**](buttonelement-down.md)
+[**BUTTONELEMENT.down**](buttonelement-down.md)
 </dt> <dt>
 
 [**BUTTONGROUP.downImage**](buttongroup-downimage.md)

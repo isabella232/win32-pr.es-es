@@ -48,7 +48,7 @@ Este elemento no tiene atributos.
 
 ## <a name="remarks"></a>Comentarios
 
-Normalmente, **el elemento principal** contiene un elemento **title** y uno o varios elementos **meta** que definen las características globales de la lista de reproducción.
+Normalmente, **el elemento** principal contiene un elemento **title** y uno o varios elementos **meta** que definen las características globales de la lista de reproducción.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -76,7 +76,7 @@ Normalmente, **el elemento principal** contiene un elemento **title** y uno o va
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

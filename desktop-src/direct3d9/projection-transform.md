@@ -15,7 +15,7 @@ ms.locfileid: "118092727"
 
 Puede pensar que la transformación de proyección controla el interior de la cámara. es análogo a elegir una lente para la cámara. Este es el más complicado de los tres tipos de transformación. Esta explicación de la transformación de proyección se organiza en los temas siguientes.
 
-La matriz de proyección suele ser una proyección de escala y perspectiva. La transformación de proyección convierte el frustum de visualización en una forma cuboid. Dado que el extremo cercano del gráfico de visualización es menor que el extremo lejano, esto tiene el efecto de expandir objetos que están cerca de la cámara. así es cómo se aplica la perspectiva a la escena.
+La matriz de proyección suele ser una proyección de escala y perspectiva. La transformación de proyección convierte el frustum de visualización en una forma cuboid. Dado que el extremo cercano del frustum de visualización es menor que el extremo lejano, esto tiene el efecto de expandir objetos que están cerca de la cámara. así es cómo se aplica la perspectiva a la escena.
 
 En [la frustum](viewports-and-clipping.md)de visualización, la distancia entre la cámara y el origen del espacio de transformación de visualización se define arbitrariamente como D, por lo que la matriz de proyección tiene un aspecto similar al de la ilustración siguiente.
 
@@ -43,7 +43,7 @@ En esta matriz, Zn es el valor z del plano de recorte cercano. Las variables w, 
 
 ![ecuaciones de los significados de las variables](images/prjmatx2.png)
 
-Para la aplicación, el uso de ángulos de campo de vista para definir los coeficientes de escalado x e y podría no ser tan cómodo como usar las dimensiones horizontal y vertical de la ventanilla (en el espacio de la cámara). A medida que las matemáticas funcionan, las dos ecuaciones siguientes para w y h usan las dimensiones de la ventanilla y son equivalentes a las ecuaciones anteriores.
+Para la aplicación, el uso de ángulos de campo de vista para definir los coeficientes de escalado X e Y podría no ser tan cómodo como usar las dimensiones horizontal y vertical de la ventanilla (en el espacio de la cámara). A medida que las matemáticas funcionan, las dos ecuaciones siguientes para w y h usan las dimensiones de la ventanilla y son equivalentes a las ecuaciones anteriores.
 
 ![ecuaciones de los significados de las variables w y h](images/prjmatx3.png)
 
@@ -104,7 +104,7 @@ La biblioteca de utilidades D3DX proporciona las siguientes funciones para ayuda
 
 ## <a name="a-w-friendly-projection-matrix"></a>Una matriz de proyección W-Friendly
 
-Direct3D puede usar el componente w de un vértice que se ha transformado por las matrices de mundo, vista y proyección para realizar cálculos basados en profundidad en efectos de búfer de profundidad o de impacto. Los cálculos como estos requieren que la matriz de proyección normalice w para que sea equivalente al espacio mundial z. En resumen, si la matriz de proyección incluye un coeficiente (3,4) que no es 1, debe escalar todos los coeficientes por el inverso del coeficiente (3,4) para crear una matriz adecuada. Si no proporciona una matriz compatible, no se aplican correctamente los efectos de efecto y el almacenamiento en búfer de profundidad.
+Direct3D puede usar el componente w de un vértice que se ha transformado por el mundo, la vista y las matrices de proyección para realizar cálculos basados en profundidad en efectos de búfer de profundidad o sombreado. Los cálculos como estos requieren que la matriz de proyección normalice w para que sea equivalente al espacio mundial z. En resumen, si la matriz de proyección incluye un coeficiente (3,4) que no es 1, debe escalar todos los coeficientes por el inverso del coeficiente (3,4) para crear una matriz adecuada. Si no proporciona una matriz compatible, no se aplican correctamente los efectos de efecto y el almacenamiento en búfer de profundidad.
 
 En la ilustración siguiente se muestra una matriz de proyección no conforme y la misma matriz se escale para que se habilite el ángulo relativo a los ojos.
 

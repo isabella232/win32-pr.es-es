@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 2e5a9fdd92a2d978c746543fbbbeec6503d07404
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 58d75e358216e14df52f26b3f25d9cfb7d32490cf705b3fc80c4b61dfef7b310
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118095191"
 ---
 # <a name="d3dxvec4transform-function-d3dx9mathh"></a>Función D3DXVec4Transform (D3dx9math.h)
 
@@ -90,7 +90,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

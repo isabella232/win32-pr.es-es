@@ -3,57 +3,57 @@ title: Crear un archivo de definición de máscara
 description: Crear un archivo de definición de máscara
 ms.assetid: ea7f8e7c-a505-478d-80c3-cb3a3f67859d
 keywords:
-- Máscaras móviles de Windows Media Player, archivos de definición de máscara
+- Reproductor de Windows Media Máscaras móviles, archivos de definición de máscara
 - máscaras, archivos de definición de máscara
 - archivos para máscaras, definición de máscara
 - archivos de definición de máscara, crear
 - crear máscaras, acerca de
-- crear máscaras, Windows Media Player Mobile
+- crear máscaras,Reproductor de Windows Media Mobile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b8a2920a08a3f57f740ff5ed3ca6e291ffd1bde
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a0bb18289a8ed124c820e983c37ccc9fff60c5c1c2b0794e4964a8e170c84909
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103777257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118341605"
 ---
 # <a name="creating-a-skin-definition-file"></a>Crear un archivo de definición de máscara
 
-Un archivo de definición de máscara es un archivo de texto que define una máscara y todas sus partes compuestas. La extensión de nombre de archivo debe ser. SKN.
+Un archivo de definición de máscara es un archivo de texto que define una máscara y todas sus partes compuestas. La extensión de nombre de archivo debe ser .skn.
 
-Cada archivo de definición de máscara debe comenzar con la línea siguiente, que especifica el número de versión del archivo de máscara. En la tabla siguiente se muestran las versiones de Windows Media Player y la línea de código que se debe usar para identificar cada una de ellas en un archivo de definición de máscara. Aunque algunos de los números de las líneas de código no son los que cabría esperar, son correctos como se muestra en la tabla siguiente.
+Cada archivo de definición de máscara debe comenzar con la línea siguiente, que especifica el número de versión del archivo de máscara. En la tabla siguiente se Reproductor de Windows Media y la línea de código que se debe usar para identificar cada una de ellas en un archivo de definición de máscara. Aunque algunos de los números de las líneas de código no son los esperados, son correctos, como se muestra en la tabla siguiente.
 
 
 
-| Versión de Windows Media Player | Primera línea del archivo de definición de máscara |
+| Reproductor de Windows Media versión | Primera línea del archivo de definición de máscara |
 |------------------------------|------------------------------------|
-| 1.01.1<br/>            | \[Archivo de máscara de Pocket WMP v 1.0\]      |
-| 1.2                          | \[Archivo de máscara de Pocket WMP v 1.2\]      |
-| 7.0                          | \[Archivo de máscara de Pocket WMP v 2.0\]      |
-| 7.1                          | \[Archivo de máscara de Pocket WMP v 8.0\]      |
-| Series 9                     | \[Archivo de máscara de Pocket WMP v 9.0.1\]    |
-| 10 Mobile                    | \[Archivo de máscara de Pocket WMP v 9.0.1\]    |
-| móvil 10,1                  | \[Archivo de máscara de Pocket WMP v 9.0.1\]    |
+| 1.01.1<br/>            | \[Archivo de máscara de WMP de pocket v1.0\]      |
+| 1.2                          | \[Archivo de máscara de WMP de pocket v1.2\]      |
+| 7,0                          | \[Archivo de máscara de WMP de pocket v2.0\]      |
+| 7.1                          | \[Archivo de máscara de WMP de pocket v8.0\]      |
+| Serie 9                     | \[Archivo de máscara de WMP de pocket v9.0.1\]    |
+| 10 Mobile                    | \[Archivo de máscara de WMP de pocket v9.0.1\]    |
+| 10.1 Mobile                  | \[Archivo de máscara de WMP de pocket v9.0.1\]    |
 
 
 
  
 
-El número de versión 9.0.1 es para las máscaras creadas específicamente para Windows Media Player 9 series o posterior. Las máscaras que tienen un número de versión anterior se abren con Windows Media Player 9 series o posterior como modo vertical, con máscaras de 96 puntos por pulgada (PPP).
+El número de versión 9.0.1 es para máscaras creadas específicamente para Reproductor de Windows Media serie 9 o posterior. Las máscaras con un número de versión anterior se abren Reproductor de Windows Media serie 9 o posterior como modo vertical, máscaras de 96 puntos por pulgada (PPP).
 
-El archivo de definición de máscara consta de varias secciones. Cada sección define un área determinada de la máscara. Las secciones se deben colocar en el orden siguiente:
+El archivo de definición de máscara consta de varias secciones. Cada sección define un área concreta de la máscara. Las secciones deben colocarse en el orden siguiente:
 
 1.  Descripción
 2.  Mapas de bits
 3.  Vídeo
 4.  Botones
-5.  Status
+5.  Estado
 6.  Texto
 7.  Marquesina
-8.  Trackbars
+8.  Barras de seguimiento
 
-Cada sección comienza con el nombre de la sección entre corchetes, por ejemplo:
+Cada sección comienza por el nombre de la sección entre corchetes, por ejemplo:
 
 
 ```C++
@@ -68,7 +68,7 @@ Cada sección comienza con el nombre de la sección entre corchetes, por ejemplo
 
  
 
-A continuación, una o más líneas definen imágenes individuales, botones, etc. Por ejemplo, una sección de mapas de bits podría incluir lo siguiente:
+A continuación, una o varias líneas definen imágenes individuales, botones, etc. Por ejemplo, una sección Mapas de bits podría incluir lo siguiente:
 
 
 ```C++
@@ -82,10 +82,10 @@ A continuación, una o más líneas definen imágenes individuales, botones, etc
 
 
 
-No es necesario alinear los valores de las columnas, pero ayudará a que el código sea más legible. Para obtener más información sobre cada sección del archivo de definición de máscara, vea la referencia de la [máscara](skin-reference.md).
+No es necesario hacer una alineación de los valores de las columnas, pero ayudará a que el código sea más legible. Para obtener más detalles sobre cada sección del archivo de definición de máscara, vea la [referencia de máscara](skin-reference.md).
 
 > [!Note]  
-> No use pestañas en ningún lugar del archivo; en su lugar, use espacios adicionales. Esto es muy importante, ya que si se presiona la tecla TAB mientras se escribe o edita el archivo de definición de máscara, se producirá un error en toda la máscara. Cada línea debe estar completa y no puede continuar en una segunda línea. Además, la región y los súper valores están desusados para las máscaras usadas con Windows Media Player 10 Mobile o posterior.
+> No use tabulaciones en ningún lugar del archivo; use espacios adicionales en su lugar. Esto es muy importante, ya que al presionar la tecla TAB al escribir o editar el archivo de definición de máscara, se producirá un error en toda la máscara. Cada línea debe estar completa y no puede continuar en una segunda línea. Además, los valores Región y Super están en desuso para las máscaras usadas con Reproductor de Windows Media 10 Mobile o posterior.
 
  
 

@@ -1,15 +1,15 @@
 ---
 description: Especifica si la escala del cuantificador es lineal o no lineal. Esta propiedad se aplica a los codificadores de vídeo MPEG.
 ms.assetid: 0d1a62a2-7595-4c10-a1cf-d32dda337ecd
-title: Propiedad AVEncMPVQScaleType (Codecapi. h)
+title: Propiedad AVEncMPVQScaleType (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8e3936acd9a74acfeb2a3bc48f2f73f1706fd4c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b7651c865828e951b13b14f2ea460c171b195669d3c4c225c9ddb5eaf2697bbc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103997754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118159506"
 ---
 # <a name="avencmpvqscaletype-property"></a>Propiedad AVEncMPVQScaleType
 
@@ -27,17 +27,17 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad es un miembro de la enumeración [**eAVEncMPVQScaleType**](/windows/desktop/api/codecapi/ne-codecapi-eavencmpvqscaletype) .
+El valor de esta propiedad es un miembro de la [**enumeración eAVEncMPVQScaleType.**](/windows/desktop/api/codecapi/ne-codecapi-eavencmpvqscaletype)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -48,7 +48,7 @@ El valor de esta propiedad es un miembro de la enumeración [**eAVEncMPVQScaleTy
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

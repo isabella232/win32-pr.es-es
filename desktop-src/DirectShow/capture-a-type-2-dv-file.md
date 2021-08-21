@@ -1,25 +1,25 @@
 ---
-description: Capturar un archivo de tipo-2 DV
+description: Capturar un archivo DV de tipo 2
 ms.assetid: c7d49c86-1b5d-43bf-98a5-78b297682375
-title: Capturar un archivo de tipo-2 DV
+title: Capturar un archivo DV de tipo 2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b919928a4c02ce9e3f3f3e6fcf3d2cd376f880a8
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9c944c84ed6cf04ec46de99a209a7b3d2942ae5157bc3ff9d14104da6615d03d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118158751"
 ---
-# <a name="capture-a-type-2-dv-file"></a>Capturar un archivo de tipo-2 DV
+# <a name="capture-a-type-2-dv-file"></a>Capturar un archivo DV de tipo 2
 
-Un archivo AVI de tipo 2 DV tiene dos flujos, uno que contiene vídeo DV y otro que contiene audio. Para capturar un archivo de tipo 2 durante la vista previa, use el gráfico de filtro que se muestra en el diagrama siguiente.
+Un archivo AVI DV de tipo 2 tiene dos secuencias, una que contiene vídeo DV y otra que contiene audio. Para capturar un archivo de tipo 2 durante la vista previa, use el gráfico de filtros que se muestra en el diagrama siguiente.
 
-![captura de tipo 2 con vista previa](images/dv2-cap.png)
+![Captura de tipo 2 con versión preliminar](images/dv2-cap.png)
 
-Este gráfico es casi el mismo que el gráfico para la captura de tipo 1 (vea [capturar un archivo de tipo 1 DV](capture-a-type-1-dv-file.md)). Sin embargo, el flujo de captura atraviesa el filtro de [divisor de DV](dv-splitter-filter.md) antes de alcanzar el filtro de [AVI](avi-mux-filter.md) . Por tanto, el MUX de AVI recibe dos flujos, una secuencia de audio y una secuencia de vídeo codificada en DV.
+Este gráfico es casi el mismo que el gráfico para la captura de tipo 1 (vea [Capturar un archivo DV de tipo 1).](capture-a-type-1-dv-file.md) Sin embargo, la secuencia de captura pasa por el filtro [dv splitter](dv-splitter-filter.md) antes de llegar al [filtro Mux de AVI.](avi-mux-filter.md) Por lo tanto, el Mux avi recibe dos secuencias, una secuencia de audio y una secuencia de vídeo codificada en DV.
 
-Compile este gráfico como se indica a continuación:
+Compile este gráfico como se muestra a continuación:
 
 
 ```C++
@@ -57,10 +57,10 @@ hr = pBuilder->RenderStream(&PIN_CATEGORY_PREVIEW, &MEDIATYPE_Interleaved,
 
 
 
-1.  Cree el divisor de DV y agréguelo al gráfico de filtros.
-2.  Llame a [**ICaptureGraphBuilder2:: SetOutputFileName**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-setoutputfilename) para conectar el filtro de AVI en el filtro del escritor de archivos.
-3.  Llame a [**ICaptureGraphBuilder2:: RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) para conectar el filtro de captura MSDV al divisor DV. Esta llamada también conecta uno de los pin de salida del divisor DV a AVI Mux.
-4.  Vuelva a llamar a RenderStream para conectar el otro PIN del divisor DV a AVI Mux.
+1.  Cree el divisor DV y agrégrélo al gráfico de filtros.
+2.  Llame [**a ICaptureGraphBuilder2::SetOutputFileName para**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-setoutputfilename) conectar el filtro Mux avi al filtro escritor de archivos.
+3.  Llame [**a ICaptureGraphBuilder2::RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) para conectar el filtro de captura MSDV al divisor DV. Esta llamada también conecta uno de los pines de salida del divisor DV al Mux avi.
+4.  Vuelva a llamar a RenderStream para conectar el otro pin del divisor DV al Mux de AVI.
 5.  Llame a RenderStream una tercera vez para representar la secuencia de vista previa. Omita este paso si no desea obtener una vista previa del vídeo.
 
 ## <a name="related-topics"></a>Temas relacionados

@@ -16,16 +16,16 @@ ms.locfileid: "118347572"
 
 Contiene términos relacionados con UPnP que comienzan por la letra N.
 
-[A](a-gly.md) B [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) F G [H I](h-gly.md) J K L M N O P [P](p-gly.md) [Q R](r-gly.md) [S](s-gly.md) T [U](u-gly.md) V W X Y Z
+[A](a-gly.md) B [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) F G [H I](h-gly.md) J K L M N O [P](p-gly.md) Q [R](r-gly.md) [S](s-gly.md) T [U](u-gly.md) V W X Y Z
 
 <dl> <dt>
 
-<span id="upnp.n_1_gly"></span><span id="UPNP.N_1_GLY"></span>**dispositivo que no se ejecuta**
+<span id="upnp.n_1_gly"></span><span id="UPNP.N_1_GLY"></span>**dispositivo que no se está ejecutando**
 </dt> <dd>
 
 Un dispositivo que no se ejecuta es un dispositivo para el que el código se carga solo cuando se recibe una solicitud para ese dispositivo. A menudo se trata de dispositivos para los que se conocen las descripciones del servicio antes del registro.
 
-Un ejemplo típico de dispositivos que no se ejecutan es un dispositivo flexible, como un dispositivo de reproductor multimedia.
+Un ejemplo típico de dispositivos que no se ejecutan es un dispositivo soft, como un dispositivo de reproductor multimedia.
 
 </dd> </dl>
 

@@ -1,12 +1,12 @@
 ---
-title: Método Create de la clase Win32_TSGatewayResourceAuthorizationPolicy
-description: Crea una directiva de autorización de recursos de Escritorio remoto (RD \ 160; RAP).
+title: Método Create de la Win32_TSGatewayResourceAuthorizationPolicy clase
+description: Crea una directiva Escritorio remoto autorización de recursos de escritorio remoto (RD \ 160; RAP).
 ms.assetid: 3301a543-cdf9-4528-a29e-691054ef81c9
 ms.tgt_platform: multiple
 keywords:
 - Crear método Servicios de Escritorio remoto
-- Create Method Servicios de Escritorio remoto, Win32_TSGatewayResourceAuthorizationPolicy (clase)
-- Win32_TSGatewayResourceAuthorizationPolicy Servicios de Escritorio remoto de clase, Create (método)
+- Create method Servicios de Escritorio remoto , Win32_TSGatewayResourceAuthorizationPolicy class
+- Win32_TSGatewayResourceAuthorizationPolicy clase Servicios de Escritorio remoto , Create (método)
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d6372706a294902b03f22807049db9a954de4f7e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2a85055ed9c8930a47e9a9949693457456fd8f261e1cb458e1092eb570532231
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118131189"
 ---
-# <a name="create-method-of-the-win32_tsgatewayresourceauthorizationpolicy-class"></a>Método Create de la \_ clase Win32 TSGatewayResourceAuthorizationPolicy
+# <a name="create-method-of-the-win32_tsgatewayresourceauthorizationpolicy-class"></a>Método Create de la clase \_ TSGatewayResourceAuthorizationPolicy de Win32
 
-Crea una directiva de autorización de recursos de Escritorio remoto (RAP de RD).
+Crea una directiva Escritorio remoto autorización de recursos de escritorio remoto (RD RAP).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,92 +50,92 @@ uint32 Create(
 
 <dl> <dt>
 
-*Nombre* \[ de de\]
+*Nombre* \[ En\]
 </dt> <dd>
 
-Nombre de la RAP de RD.
+Nombre de RD RAP.
 
 </dd> <dt>
 
-*Descripción* \[ de de\]
+*Descripción* \[ En\]
 </dt> <dd>
 
-Descripción de la RAP de RD.
+Descripción del RD RAP.
 
 </dd> <dt>
 
-*Habilitado* \[ de\]
+*Habilitado* \[ En\]
 </dt> <dd>
 
-Indica si se va a habilitar la RAP de RD.
+Indica si el RAP de Escritorio remoto se va a habilitar.
 
 </dd> <dt>
 
-*ResourceGroupType* \[ de\]
+*ResourceGroupType* \[ En\]
 </dt> <dd>
 
 Tipo de grupo de recursos.
 
 <dt>
 
-RG
+"RG"
 </dt> <dd>
 
 Un grupo de recursos
 
 </dd> <dt>
 
-CG
+"CG"
 </dt> <dd>
 
 Grupo de equipos, tal como se almacena en Active Directory Domain Services.
 
 </dd> <dt>
 
-TODOS
+"ALL"
 </dt> <dd>
 
 Todos los recursos.
 
 </dd> </dl> </dd> <dt>
 
-*ResourceGroupName* \[ de\]
+*ResourceGroupName* \[ En\]
 </dt> <dd>
 
 Nombre del grupo de recursos.
 
 </dd> <dt>
 
-*UserGroupNames* \[ de\]
+*UserGroupNames* \[ En\]
 </dt> <dd>
 
-Lista separada por puntos y comas de nombres de grupos de usuarios. Si el usuario pertenece a alguno de estos grupos de usuarios, se permitirá el acceso. Los nombres de grupos de usuarios deben tener el formato *dominio \\ UserGroupName*.
+Lista de nombres de grupos de usuarios separados por punto y coma. Si el usuario pertenece a cualquiera de estos grupos de usuarios, se permitirá el acceso. Los nombres de grupo de usuarios deben tener el formato *Dominio \\ UserGroupName*.
 
 </dd> <dt>
 
-*ProtocolNames* \[ de\]
+*ProtocolNames* \[ En\]
 </dt> <dd>
 
-Lista separada por puntos y comas de nombres de protocolo que están habilitados para esta Directiva. Los nombres deben coincidir con el valor devuelto del método [**GetProtocolName**](getprotocolname-win32-tsgatewayserversettings.md) de la clase [**\_ TSGatewayServerSettings de Win32**](win32-tsgatewayserversettings.md) .
+Lista separada por punto y coma de los nombres de protocolo que están habilitados para esta directiva. Los nombres deben coincidir con la devolución del [**método GetProtocolName**](getprotocolname-win32-tsgatewayserversettings.md) de la clase [**\_ TSGatewayServerSettings de Win32.**](win32-tsgatewayserversettings.md)
 
 </dd> <dt>
 
-*PortNumbers* \[ de\]
+*PortNumbers* \[ En\]
 </dt> <dd>
 
-Lista separada por puntos y comas de números de puerto que están habilitados para esta Directiva. Para permitir cualquier número de puerto, establezca " \* ".
+Lista separada por punto y coma de números de puerto que están habilitados para esta directiva. Para permitir cualquier número de puerto, establezca " \* ".
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no es correcto, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -145,8 +145,8 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                           |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>TSGateway. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>TSGateway.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>AagWmi.dll</dt> </dl>    |
 
 

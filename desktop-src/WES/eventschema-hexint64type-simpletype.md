@@ -1,9 +1,9 @@
 ---
-title: HexInt64Type (tipo simple) (esquema de eventos)
-description: Define un tipo hexadecimal de 8 bytes. | HexInt64Type (tipo simple) (esquema de eventos)
+title: Tipo simple HexInt64Type (esquema de eventos)
+description: Define un tipo hexadecimal de 8 bytes. | Tipo simple HexInt64Type (esquema de eventos)
 ms.assetid: b4d8f416-d9e3-4a07-9b08-6f634c0de06c
 keywords:
-- HexInt64Type de tipo simple de registro
+- Tipo simple HexInt64Type EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e290c2326415664fbbae3feed9628b86452b10c6
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 1fcc4e3cea12be0fecaf7cef2dcd6f9687f4aa4340f9eaca4f8a6bad10c88eab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698138"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120150"
 ---
-# <a name="hexint64type-simple-type-event-schema"></a>HexInt64Type (tipo simple) (esquema de eventos)
+# <a name="hexint64type-simple-type-event-schema"></a>Tipo simple HexInt64Type (esquema de eventos)
 
 Define un tipo hexadecimal de 8 bytes.
 
@@ -38,11 +38,11 @@ Define un tipo hexadecimal de 8 bytes.
 
 ## <a name="patterns"></a>Patrones
 
-El tipo simple **HexInt64Type** es una **cadena** restringida por el siguiente patrón:
+El **tipo simple HexInt64Type** es una **cadena** restringida por el siguiente patrón:
 
 -   `0[xX][0-9A-Fa-f]{1,16}`
 
-    El valor puede contener de 1 a dieciséis caracteres hexadecimales (por ejemplo, 0xA o 0xac7bd361004fe190).
+    El valor puede contener de uno a dieciséis caracteres hexadecimales (por ejemplo, 0xa o 0xac7bd361004fe190).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ El tipo simple **HexInt64Type** es una **cadena** restringida por el siguiente p
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

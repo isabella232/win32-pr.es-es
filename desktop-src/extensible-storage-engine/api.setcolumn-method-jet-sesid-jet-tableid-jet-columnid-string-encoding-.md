@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: método API. SetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, cadena, codificación)'
-title: Método API. SetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, cadena, codificación)
+description: 'Más información sobre: Método Api.SetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, Cadena, Codificación)'
+title: Método Api.SetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, String, Encoding)
 TOCTitle: SetColumn method (JET_SESID, JET_TABLEID, JET_COLUMNID, String, Encoding)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.SetColumn(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_COLUMNID,System.String,System.Text.Encoding)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.setcolumn(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d7237bd6ba02e15ade70ee03330332242977822d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dfa67d3aba1ee79226bad4a52a688e60e0532f720d338c6efc20e3c95b05e6ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118084414"
 ---
-# <a name="apisetcolumn-method-jet_sesid-jet_tableid-jet_columnid-string-encoding"></a>Método API. SetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, cadena, codificación)
+# <a name="apisetcolumn-method-jet_sesid-jet_tableid-jet_columnid-string-encoding"></a>Método Api.SetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, String, Encoding)
 
-Modifica un valor de columna única en un registro modificado que se va a insertar o actualizar el registro actual.
+Modifica un valor de columna única en un registro modificado que se va a insertar o para actualizar el registro actual.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -67,37 +67,37 @@ public static void SetColumn(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor que se va a actualizar. Se debe preparar una actualización.
+    Cursor que se actualizará. Se debe preparar una actualización.
 
 <!-- end list -->
 
   - columnid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
     
-    Columnid que se va a establecer.
+    Columnid que se establece.
 
 <!-- end list -->
 
   - datos  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Datos que se van a establecer.
 
 <!-- end list -->
 
   - encoding  
-    Tipo: [System. Text. Encoding](/dotnet/api/system.text.encoding)  
+    Tipo: [System.Text.Encoding](/dotnet/api/system.text.encoding)  
     
-    Codificación que se usa para convertir la cadena.
+    Codificación utilizada para convertir la cadena.
 
 ## <a name="see-also"></a>Vea también
 
@@ -105,8 +105,8 @@ public static void SetColumn(
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Sobrecarga SetColumn](./api.setcolumn-method.md)
+[Sobrecarga de SetColumn](./api.setcolumn-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

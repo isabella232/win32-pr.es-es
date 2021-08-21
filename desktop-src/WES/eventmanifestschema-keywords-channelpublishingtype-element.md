@@ -3,7 +3,7 @@ title: Elemento keywords (ChannelPublishingType)
 description: Máscara de bits que determina la categoría de eventos que se escriben en el canal.
 ms.assetid: 5157e63f-3e46-4248-b0ca-116a5d5ada2c
 keywords:
-- Elemento keywords EventLog
+- elemento keywords EventLog
 topic_type:
 - apiref
 api_name:
@@ -43,7 +43,7 @@ El **elemento keywords** se define mediante el tipo complejo [**ChannelPublishin
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

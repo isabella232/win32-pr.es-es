@@ -22,7 +22,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118147801"
 ---
-# <a name="msvm_guestserviceinterfacesettingdatacomponent-class"></a>Clase Msvm \_ GuestServiceInterfaceSettingDataComponent
+# <a name="msvm_guestserviceinterfacesettingdatacomponent-class"></a>Clase \_ GuestServiceInterfaceSettingDataComponent de Msvm
 
 Clase de asociación entre un componente de interfaz de servicio invitado y el recurso de servicio invitado.
 
@@ -47,7 +47,7 @@ La **clase Msvm \_ GuestServiceInterfaceSettingDataComponent** tiene estos tipos
 
 ### <a name="properties"></a>Propiedades
 
-La **clase Msvm \_ GuestServiceInterfaceSettingDataComponent** tiene estas propiedades.
+La **clase \_ GuestServiceInterfaceSettingDataComponent de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -63,14 +63,14 @@ Tipo de acceso: solo lectura
 Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
-[**Msvm \_ GuestServiceInterfaceComponentSettingData que**](msvm-guestserviceinterfacecomponentsettingdata.md) hace referencia al componente de interfaz de servicio invitado.
+[**Msvm \_ GuestServiceInterfaceComponentSettingData que**](msvm-guestserviceinterfacecomponentsettingdata.md) hace referencia al componente de interfaz del servicio invitado.
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Cim \_ SettingData**
+Tipo de datos: **CIM \_ SettingData**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -79,7 +79,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-Valor [**CIM \_ SettingData que**](cim-settingdata.md) hace referencia al recurso de servicio invitado.
+Valor [**de \_ CIM SettingData que**](cim-settingdata.md) hace referencia al recurso de servicio invitado.
 
 </dd> </dl>
 
@@ -97,7 +97,7 @@ Valor [**CIM \_ SettingData que**](cim-settingdata.md) hace referencia al recurs
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
