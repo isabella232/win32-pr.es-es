@@ -1,10 +1,10 @@
 ---
-title: Métodos de la propiedad IADsNameTranslate (iAds. h)
+title: Métodos de propiedad IADsNameTranslate (Iads.h)
 description: Establece la propiedad ChaseReferral.
 ms.assetid: 7c44fe9b-16a5-4bd5-a80b-8f3dcfec20cc
 ms.tgt_platform: multiple
 keywords:
-- Métodos de propiedad IADsNameTranslate ADSI
+- IADsNameTranslate Property Methods ADSI
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b90d068da3b8dca1bbcae361d1dbacafcf44464
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3993c3f3680dca46d2f880705fae44812a3bb5fd7a046084c1d818c3433ea7f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082389"
 ---
 # <a name="iadsnametranslate-property-methods"></a>Métodos de propiedad IADsNameTranslate
 
-El método Property de la interfaz [**IADsNameTranslate**](/windows/desktop/api/Iads/nn-iads-iadsnametranslate) establece la propiedad **ChaseReferral** . Para obtener más información, vea [métodos de propiedad de interfaz](interface-property-methods.md).
+El método de propiedad [**de la interfaz IADsNameTranslate**](/windows/desktop/api/Iads/nn-iads-iadsnametranslate) establece la **propiedad ChaseReferral.** Para obtener más información, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -35,14 +35,14 @@ El método Property de la interfaz [**IADsNameTranslate**](/windows/desktop/api/
 **ChaseReferral**
 </dt> <dd> <dl>
 
-Opciones de seguimiento de referencia tal y como se define en la [**\_ \_ \_ enumeración**](/windows/win32/api/iads/ne-iads-ads_chase_referrals_enum)de referencias de seguimiento de anuncios. Cuando se establece el seguimiento de referencias, la traducción del nombre se realiza en objetos que no pertenecen a este directorio y son las referencias devueltas por el seguimiento de la referencia.
+Opciones de búsqueda de referencias, tal como se define en [**\_ ADS CHASE \_ REFERRALS \_ ENUM**](/windows/win32/api/iads/ne-iads-ads_chase_referrals_enum). Cuando se establece la búsqueda de referencias, la traducción de nombres se realiza en objetos que no pertenecen a este directorio y son las referencias devueltas de la búsqueda de referencias.
 
 <dt>
 
 Tipo de acceso: solo escritura
 </dt> <dt>
 
-Tipo de datos de scripting: **largo**
+Tipo de datos de scripting: **LONG**
 </dt> <dt>
 
 
@@ -59,23 +59,23 @@ HRESULT put_ChaseReferral(
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las opciones de seguimiento de referencia solo se aplican cuando se usa [**IADsNameTranslate:: set**](/windows/desktop/api/Iads/nf-iads-iadsnametranslate-set) y [**IADsNameTranslate:: get**](/windows/desktop/api/Iads/nf-iads-iadsnametranslate-get). La característica no está disponible con [**IADsNameTranslate:: SetEx**](/windows/desktop/api/Iads/nf-iads-iadsnametranslate-setex) o [**IADsNameTranslate:: GETEX**](/windows/desktop/api/Iads/nf-iads-iadsnametranslate-getex).
+Las opciones de búsqueda de referencias solo se aplican cuando se usan [**IADsNameTranslate::Set**](/windows/desktop/api/Iads/nf-iads-iadsnametranslate-set) e [**IADsNameTranslate::Get**](/windows/desktop/api/Iads/nf-iads-iadsnametranslate-get). La característica no está disponible con [**IADsNameTranslate::SetEx**](/windows/desktop/api/Iads/nf-iads-iadsnametranslate-setex) o [**IADsNameTranslate::GetEx**](/windows/desktop/api/Iads/nf-iads-iadsnametranslate-getex).
 
-La interfaz [**IADsNameTranslate**](/windows/desktop/api/Iads/nn-iads-iadsnametranslate) tiene una implementación parcial de [**la \_ \_ \_ enumeración de referencias de seguimiento de anuncios**](/windows/win32/api/iads/ne-iads-ads_chase_referrals_enum) mediante la propiedad **ChaseReferral** . Si la propiedad **ChaseReferral** se establece en cero (0), es lo mismo que especificar las **referencias de \_ seguimiento de anuncios \_ \_ nunca** (0). Si se usa un valor distinto de cero, es lo mismo que especificar las **referencias de seguimiento de anuncios \_ \_ \_ siempre** (0x60). **IADsNameTranslate** no implementa las opciones externas de referencias de **\_ seguimiento \_ \_ subordinadas** (0X20) **o \_ \_ referencias \_ de seguimiento de ADS** (0x40).
+La [**interfaz IADsNameTranslate**](/windows/desktop/api/Iads/nn-iads-iadsnametranslate) tiene una implementación parcial de [**ADS CHASE \_ \_ REFERRALS \_ ENUM**](/windows/win32/api/iads/ne-iads-ads_chase_referrals_enum) mediante la **propiedad ChaseReferral.** Si la **propiedad ChaseReferral** se establece en cero (0), es lo mismo que especificar **ADS CHASE \_ \_ REFERRALS \_ NEVER** (0). Si se usa un valor distinto de cero, es lo mismo que especificar **ADS \_ CHASE \_ REFERRALS \_ ALWAYS** (0x60). **IADsNameTranslate** no implementa las opciones **ADS \_ CHASE \_ REFERRALS \_ SUBORDINATE** (0x20) o **ADS CHASE \_ \_ REFERRALS \_ EXTERNAL** (0x40).
 
-La configuración predeterminada para el seguimiento de referencias está habilitada (las **referencias de seguimiento de anuncios \_ \_ \_ siempre**). Sin el seguimiento de la referencia, puede hacer que la traducción del nombre se realice en los objetos que residen solo en el servidor de directorio conectado. Si no está seguro de si el objeto de interés está en el servidor especificado, debe establecer esta propiedad para que sea **\_ \_ \_ siempre referencias de seguimiento de anuncios**.
+La configuración predeterminada para la búsqueda de referencias está habilitada **(ADS \_ CHASE \_ REFERRALS \_ ALWAYS**). Sin la búsqueda de referencias, puede realizar la traducción de nombres en los objetos que residen solo en el servidor de directorio conectado. Si no está seguro de si el objeto de interés está en el servidor especificado, debe establecer esta propiedad en **ADS \_ CHASE \_ REFERRALS \_ ALWAYS**.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>IAds. h</dt> </dl>       |
+| Header<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IADsNameTranslate se define como B1B272A3-3625-11D1-A3A4-00C04FB950DC<br/>    |
 
@@ -85,19 +85,19 @@ La configuración predeterminada para el seguimiento de referencias está habili
 
 <dl> <dt>
 
-[**\_ \_ enumeración de referencias de seguimiento de ADS \_**](/windows/win32/api/iads/ne-iads-ads_chase_referrals_enum)
+[**ENUMERACIÓN \_ DE REFERENCIAS DE ADS \_ CHASE \_**](/windows/win32/api/iads/ne-iads-ads_chase_referrals_enum)
 </dt> <dt>
 
 [**IADsNameTranslate**](/windows/desktop/api/Iads/nn-iads-iadsnametranslate)
 </dt> <dt>
 
-[**IADsNameTranslate:: get**](/windows/desktop/api/Iads/nf-iads-iadsnametranslate-get)
+[**IADsNameTranslate::Get**](/windows/desktop/api/Iads/nf-iads-iadsnametranslate-get)
 </dt> <dt>
 
 [**IADsNameTranslate::GetEx**](/windows/desktop/api/Iads/nf-iads-iadsnametranslate-getex)
 </dt> <dt>
 
-[**IADsNameTranslate:: set**](/windows/desktop/api/Iads/nf-iads-iadsnametranslate-set)
+[**IADsNameTranslate::Set**](/windows/desktop/api/Iads/nf-iads-iadsnametranslate-set)
 </dt> <dt>
 
 [**IADsNameTranslate::SetEx**](/windows/desktop/api/Iads/nf-iads-iadsnametranslate-setex)

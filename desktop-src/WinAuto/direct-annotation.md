@@ -4,12 +4,12 @@ description: En esta sección se proporciona información sobre el uso de la ano
 ms.assetid: 4ae8efb0-3500-4c6b-82d5-f72fbd8aaa2a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 224a46e0bd4b09d99fdf5c614f1ed0455215f575
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d4900c8838b820230ae3c7ba5770b92e01b2ccff01459c499603bfb98b6c5ced
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103777946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052813"
 ---
 # <a name="direct-annotation"></a>Anotación directa
 
@@ -17,17 +17,17 @@ En esta sección se proporciona información sobre el uso de la anotación direc
 
 ## <a name="summary"></a>Resumen
 
-La anotación directa es la forma más sencilla de una anotación dinámica. Se utiliza para invalidar el valor de uno o un número limitado de propiedades de un elemento accesible. Resulta muy útil para los elementos accesibles cuyas propiedades anotadas no dependen del estado del control y no requieren la compatibilidad adicional proporcionada por la anotación del [mapa de valores](value-map-annotation.md) y la [anotación del servidor](server-annotation.md).
+La anotación directa es la forma más sencilla de anotación dinámica. Se usa para invalidar el valor de una o un número limitado de propiedades de un elemento accesible. Es muy útil para los elementos accesibles cuyas propiedades anotadas no dependen del estado [](value-map-annotation.md) del control y no requieren la compatibilidad adicional proporcionada por la anotación de mapa de valores y la anotación [del servidor](server-annotation.md).
 
 ## <a name="when-to-use-this-technique"></a>Cuándo usar esta técnica
 
-Utilice esta técnica cuando desee reemplazar el valor de uno o un número limitado de propiedades para un elemento accesible.
+Use esta técnica cuando desee invalidar el valor de una o un número limitado de propiedades para un elemento accesible.
 
-Para obtener más información, vea uso de la [anotación directa](using-direct-annotation.md).
+Para obtener más información, vea [Usar anotación directa.](using-direct-annotation.md)
 
- 
+ 
 
- 
+ 
 
 
 

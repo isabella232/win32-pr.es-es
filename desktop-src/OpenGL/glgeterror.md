@@ -1,9 +1,9 @@
 ---
-title: función glGetError (GL. h)
+title: Función glGetError (Gl.h)
 description: La función glGetError devuelve información de error.
 ms.assetid: 18f0368f-054f-4b84-8397-3f9ee4aa07fa
 keywords:
-- glGetError (función) OpenGL
+- Función glGetError OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 74c0abf6ec03ca0c29ede3b7d396db375fd06ac6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 212a76930e87d5a83c32a2f6707def8e2af40b89c5ede621ec0c31159d3aa0c2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119962405"
 ---
-# <a name="glgeterror-function"></a>glGetError función)
+# <a name="glgeterror-function"></a>Función glGetError
 
-La función **glGetError** devuelve información de error.
+La **función glGetError** devuelve información de error.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,35 +40,35 @@ Esta función no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función **glGetError** devuelve uno de los siguientes códigos de error.
+La **función glGetError** devuelve uno de los siguientes códigos de error.
 
 
 
 | Código devuelto                                                                                           | Descripción                                                                                                                                                                  |
 |-------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>      | Se ha especificado un valor inaceptable para un argumento enumerado. La función infractora se omite y no tiene ningún efecto secundario que no sea para establecer la marca de error.<br/>         |
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl>     | Un argumento numérico está fuera del intervalo. La función infractora se omite y no tiene ningún efecto secundario que no sea para establecer la marca de error.<br/>                                    |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | No se permite la operación especificada en el estado actual. La función infractora se omite y no tiene ningún efecto secundario que no sea para establecer la marca de error.<br/>           |
-| <dl> <dt>**GL \_ no \_ error**</dt> </dl>          | No se ha registrado ningún error. Se garantiza que el valor de esta constante simbólica es cero.<br/>                                                                         |
-| <dl> <dt>**desbordamiento de la pila de GL \_ \_**</dt> </dl>    | Esta función produciría un desbordamiento de pila. La función infractora se omite y no tiene ningún efecto secundario que no sea para establecer la marca de error.<br/>                            |
-| <dl> <dt>**subdesbordamiento de la pila de GL \_ \_**</dt> </dl>   | Esta función produciría un subdesbordamiento de la pila. La función infractora se omite y no tiene ningún efecto secundario que no sea para establecer la marca de error.<br/>                           |
-| <dl> <dt>**\_memoria insuficiente para GL \_ \_**</dt> </dl>    | No queda suficiente memoria para ejecutar la función. El estado de OpenGL es indefinido, excepto el estado de las marcas de error, después de que se registre este error.<br/> |
+| <dl> <dt>**ENUMERACIÓN \_ NO \_ VÁLIDA DE GL**</dt> </dl>      | Se especifica un valor inaceptable para un argumento enumerado. La función de ofendencia se omite, sin ningún efecto secundario que no sea establecer la marca de error.<br/>         |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | Un argumento numérico está fuera del intervalo. La función de ofendencia se omite, sin ningún efecto secundario que no sea establecer la marca de error.<br/>                                    |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | No se permite la operación especificada en el estado actual. La función de ofendencia se omite, sin ningún efecto secundario que no sea establecer la marca de error.<br/>           |
+| <dl> <dt>**GL \_ NO \_ ERROR**</dt> </dl>          | No se ha registrado ningún error. Se garantiza que el valor de esta constante simbólica es cero.<br/>                                                                         |
+| <dl> <dt>**GL \_ STACK \_ OVERFLOW**</dt> </dl>    | Esta función provocaría un desbordamiento de pila. La función de ofendencia se omite, sin ningún efecto secundario que no sea establecer la marca de error.<br/>                            |
+| <dl> <dt>**GL \_ STACK \_ UNDERFLOW**</dt> </dl>   | Esta función provocaría un subdesbordamiento de la pila. La función de ofendencia se omite, sin ningún efecto secundario que no sea establecer la marca de error.<br/>                           |
+| <dl> <dt>**GL \_ FUERA \_ DE \_ MEMORIA**</dt> </dl>    | No queda suficiente memoria para ejecutar la función. El estado de OpenGL no está definido, excepto el estado de las marcas de error, después de registrar este error.<br/> |
 
 
 
  
 
-Tenga en cuenta que **glGetError** devuelve \_ una operación no válida GL \_ si se llama entre una llamada a [**glBegin**](glbegin.md) y su correspondiente llamada a [**glEnd**](glend.md).
+Tenga en **cuenta que glGetError** devuelve GL INVALID OPERATION si se llama entre una llamada \_ a \_ [**glBegin**](glbegin.md) y su llamada correspondiente [**a glEnd**](glend.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-A cada error detectable se le asigna un código numérico y un nombre simbólico. Cuando se produce un error, la marca de error se establece en el valor de código de error adecuado. No se registra ningún otro error hasta que se llama a **glGetError** , se devuelve el código de error y la marca se restablece a GL \_ no \_ error. Si una llamada a **glGetError** devuelve GL \_ no \_ error, no habrá ningún error detectable desde la última llamada a **glGetError** o desde que se inicializó OpenGL.
+A cada error detectable se le asigna un código numérico y un nombre simbólico. Cuando se produce un error, la marca de error se establece en el valor de código de error adecuado. No se registran otros errores hasta que **se llama a glGetError,** se devuelve el código de error y la marca se restablece a GL \_ NO \_ ERROR. Si una llamada a **glGetError** devuelve GL NO ERROR, no se ha producido ningún error detectable desde la última llamada a glGetError o desde que se inicializó \_ \_ OpenGL. 
 
-Para permitir implementaciones distribuidas, puede haber varias marcas de error. Si una marca de error individual ha registrado un error, se devuelve el valor de esa marca y la marca se restablece en GL \_ sin \_ errores cuando se llama a **glGetError** . Si se ha registrado un error en más de una marca, **glGetError** devuelve y borra un valor de marca de error arbitrario. Si todas las marcas de error se van a restablecer, siempre debe llamar a **glGetError** en un bucle hasta que devuelva GL \_ no \_ error.
+Para permitir implementaciones distribuidas, puede haber varias marcas de error. Si alguna marca de error única ha registrado un error, se devuelve el valor de esa marca y esa marca se restablece a GL NO ERROR cuando se llama \_ \_ a **glGetError.** Si más de una marca ha registrado un error, **glGetError** devuelve y borra un valor de marca de error arbitrario. Si se van a restablecer todas las marcas de error, siempre debe llamar a **glGetError** en un bucle hasta que devuelva GL \_ NO \_ ERROR.
 
-Inicialmente, todas las marcas de error se establecen en GL \_ no \_ error.
+Inicialmente, todas las marcas de error se establecen en GL \_ NO \_ ERROR.
 
-Cuando se establece una marca de error, los resultados de una operación de OpenGL no se definen solo si se \_ ha agotado el libro \_ de \_ memoria. En todos los demás casos, la función que genera el error se omite y no tiene ningún efecto en el contenido de fotogramas o estado de OpenGL.
+Cuando se establece una marca de error, los resultados de una operación OpenGL solo son indefinidos si se ha producido \_ GL OUT \_ OF \_ MEMORY. En todos los demás casos, la función que genera el error se omite y no tiene ningún efecto en el estado OpenGL ni en el contenido del búfer de fotogramas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,8 +78,8 @@ Cuando se establece una marca de error, los resultados de una operación de Open
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

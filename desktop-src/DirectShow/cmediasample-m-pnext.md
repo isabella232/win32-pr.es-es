@@ -1,7 +1,7 @@
 ---
-description: Puntero al siguiente ejemplo de la lista de ejemplos del asignador.
+description: Puntero al ejemplo siguiente en la lista de ejemplos del asignador.
 ms.assetid: a3a6c812-fc9d-4856-b33c-f60453f98909
-title: 'Miembro CMediaSample:: m_pNext (Amfilter. h)'
+title: Miembro CMediaSample::m_pNext (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 41192cef75beca6fa80619dcafb7e176615500ba
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f1e2282d5c2181a8e3d700d76c00f05376cdce62b953e5973775a9f07230698b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634365"
 ---
-# <a name="cmediasamplem_pnext-member"></a>Miembro pNext CMediaSample:: m \_
+# <a name="cmediasamplem_pnext-member"></a>Miembro CMediaSample::m \_ pNext
 
-Puntero al siguiente ejemplo de la lista de ejemplos del asignador.
+Puntero al ejemplo siguiente en la lista de ejemplos del asignador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ CMediaSample *m_pNext;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ CMediaSample *m_pNext;
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

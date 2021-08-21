@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_PSTR'
+description: 'Más información sobre: JET_PSTR'
 title: JET_PSTR
 TOCTitle: JET_PSTR
 ms:assetid: acb1143f-a5ee-4088-9f05-cc2aeef23442
@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6bbed2cad9f9c7816d010a429b1db8eb5306fc1c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71e5c60b07c7152cf52d1e2ab68925b181d4b356
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697620"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467242"
 ---
 # <a name="jet_pstr"></a>JET_PSTR
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_pstr"></a>JET_PSTR
 
-El tipo de datos JET_PSTR contiene una cadena ASCII terminada en null (char \* ).
+El JET_PSTR de datos contiene una cadena ASCII terminada en NULL (char \* ).
 
-**Windows Vista: JET_PSTR** se incorpora en Windows Vista.
+**Windows Vista: JET_PSTR** se presenta en Windows Vista.
 
 ```cpp
     typedef __nullterminated char *  JET_PSTR;
@@ -41,28 +41,11 @@ El tipo de datos JET_PSTR contiene una cadena ASCII terminada en null (char \* )
 
 JET_PSTR
 
-Cadena ASCII terminada en null (char \* ).
+Cadena ASCII terminada en NULL \* (char).
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 

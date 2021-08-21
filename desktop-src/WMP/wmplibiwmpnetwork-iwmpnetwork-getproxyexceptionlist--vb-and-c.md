@@ -1,11 +1,11 @@
 ---
-title: IWMPNetwork getProxyExceptionList, método
+title: Método IWMPNetwork getProxyExceptionList
 description: El método getProxyExceptionList devuelve la lista de excepciones de proxy.
 ms.assetid: 1b209d75-0fa7-420e-831c-160f3826cf3a
 keywords:
-- método getProxyExceptionList de Windows Media Player
-- método getProxyExceptionList Windows Media Player, interfaz IWMPNetwork
-- Interfaz IWMPNetwork Windows Media Player, método getProxyExceptionList
+- Método getProxyExceptionList Reproductor de Windows Media
+- Método getProxyExceptionList Reproductor de Windows Media , interfaz IWMPNetwork
+- Interfaz IWMPNetwork Reproductor de Windows Media , método getProxyExceptionList
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 402e3b28d5423314b499213c9ddb02bca482d629
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 96434d4ea2341a8d33fcb9673898f4adca5eae7ace27eb7a7cafb9d482d74a53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053543"
 ---
-# <a name="iwmpnetworkgetproxyexceptionlist-method"></a>IWMPNetwork:: getProxyExceptionList (método)
+# <a name="iwmpnetworkgetproxyexceptionlist-method"></a>IWMPNetwork::getProxyExceptionList (método)
 
-El método **getProxyExceptionList** devuelve la lista de excepciones de proxy.
+El **método getProxyExceptionList** devuelve la lista de excepciones de proxy.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,28 +53,28 @@ Implements IWMPNetwork.getProxyExceptionList
 
 <dl> <dt>
 
-*bstrProtocol* \[ de\]
+*bstrProtocol* \[ En\]
 </dt> <dd>
 
-**System. String** que es el nombre del protocolo. Para obtener una lista de protocolos admitidos, consulte [protocolos y tipos de archivo admitidos](supported-protocols-and-file-types.md).
+**System.String que** es el nombre del protocolo. Para obtener una lista de los protocolos admitidos, vea [Protocolos y tipos de archivo admitidos.](supported-protocols-and-file-types.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**System. String** que es una lista de hosts delimitados por punto y coma para los que se omite el servidor proxy. El valor solo es significativo cuando **IWMPNetwork. getProxySettings** devuelve un valor de 2 (use la configuración manual).
+**System.String que** es una lista delimitada por punto y coma de hosts para los que se omite el servidor proxy. El valor solo es significativo cuando **IWMPNetwork.getProxySettings** devuelve un valor de 2 (use la configuración manual).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta es una lista de equipos, dominios y/o direcciones que omitirán el servidor proxy cuando la parte del host de la dirección URL de destino coincida con una entrada de la lista.
+Se trata de una lista de equipos, dominios o direcciones que omitirán el servidor proxy cuando la parte del host de la dirección URL de destino coincida con una entrada de la lista.
 
-El \* carácter se puede usar como carácter comodín para enumerar entradas. Por ejemplo, \* . com coincidiría con todos los hosts del dominio com, mientras \* que 67. coincidiría con todos los hosts de la clase 67 A la subred.
+El \* carácter se puede usar como carácter comodín para enumerar entradas. Por ejemplo, .com coincidiría con todos los hosts del dominio com, mientras que 67. coincidiría con todos los hosts de la subred de la \* \* clase A 67.
 
-Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o en la intranet.
+Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se usa **getProxyExceptionList** para mostrar si Windows Media Player está establecido para omitir el servidor proxy para las direcciones locales. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo de código siguiente se **usa getProxyExceptionList** para mostrar si Reproductor de Windows Media está establecido para omitir el servidor proxy para las direcciones locales. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -139,9 +139,9 @@ proxyExceptionList.Lines = proxyExList
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -154,10 +154,10 @@ proxyExceptionList.Lines = proxyExList
 [**Interfaz IWMPNetwork (VB y C#)**](iwmpnetwork--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. getProxySettings (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
+[**IWMPNetwork.getProxySettings (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-getproxysettings--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPNetwork. setProxyExceptionList (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-setproxyexceptionlist--vb-and-c.md)
+[**IWMPNetwork.setProxyExceptionList (VB y C#)**](wmplibiwmpnetwork-iwmpnetwork-setproxyexceptionlist--vb-and-c.md)
 </dt> </dl>
 
  

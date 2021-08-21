@@ -1,25 +1,25 @@
 ---
 title: StreamingNamedPipesServerExample
-description: En este ejemplo se muestra un cliente de canalizaciones con nombre que acepta un canal y Lee los mensajes unidireccionales en modo de transmisión por secuencias.
+description: En este ejemplo se muestra un cliente de canalizaciones con nombre que acepta un canal y lee mensajes un solo sentido de forma de streaming.
 ms.assetid: 7658FA0B-343F-453D-9427-B40BEAE50345
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d5e3c7c2330f02369ae30a58dcc73957c180c57
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0446a255b3de4955510bfdf17d85dd7652beece79b8f6f54126755967df7223d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103775421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119083129"
 ---
 # <a name="streamingnamedpipesserverexample"></a>StreamingNamedPipesServerExample
 
-En este ejemplo se muestra un cliente de canalizaciones con nombre que acepta un canal y Lee los mensajes unidireccionales en modo de transmisión por secuencias.
+En este ejemplo se muestra un cliente de canalizaciones con nombre que acepta un canal y lee mensajes un solo sentido de forma de streaming.
 
--   [StreamingNamedPipesServer. cpp](#streamingnamedpipesservercpp)
--   [PurchaseOrder. wsdl](#purchaseorderwsdl)
+-   [StreamingNamedPipesServer.cpp](#streamingnamedpipesservercpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="streamingnamedpipesservercpp"></a>StreamingNamedPipesServer. cpp
+## <a name="streamingnamedpipesservercpp"></a>StreamingNamedPipesServer.cpp
 
 
 ```C++
@@ -339,7 +339,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. wsdl
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -483,9 +483,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

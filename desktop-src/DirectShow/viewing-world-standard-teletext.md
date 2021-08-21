@@ -1,36 +1,36 @@
 ---
-description: Ver teletexto estándar del mundo
+description: Visualización del texto teletexto estándar del mundo
 ms.assetid: 99b3395b-8775-4fe8-b173-187fa359978f
-title: Ver teletexto estándar del mundo
+title: Visualización del texto teletexto estándar del mundo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f9b0885c08403de9578a8dee1eca6e000408ee5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2129538d91a7ac48fea26fd5f1987473896760c164fb3e2b1d4a2b1d142a1f04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120078555"
 ---
-# <a name="viewing-world-standard-teletext"></a>Ver teletexto estándar del mundo
+# <a name="viewing-world-standard-teletext"></a>Visualización del texto teletexto estándar del mundo
 
 > [!Note]  
 > Esta funcionalidad se ha quitado de Windows Vista y sistemas operativos posteriores. Está disponible para su uso en los sistemas operativos Microsoft Windows 2000, Windows XP y Windows Server 2003.
 
  
 
-El teletexto estándar universal (elemento WST) está codificado en el intervalo de blanking vertical (VBI) de la señal de televisión analógica. El gráfico de filtro para obtener una vista previa del teletexto es similar al gráfico que se usa para ver los subtítulos cerrados. En el siguiente diagrama se ilustra este gráfico.
+El teletexto estándar del mundo (WST) se codifica en el intervalo de espacio en blanco vertical (VBI) de la señal de televisión análoga. El gráfico de filtro para obtener una vista previa del teletexto es similar al gráfico que se usa para ver los títulos cerrados. En el diagrama siguiente se muestra este gráfico.
 
-![gráfico de vista previa de elemento WST](images/vidcap10.png)
+![wst preview graph](images/vidcap10.png)
 
-En este gráfico se usan los siguientes filtros para la visualización de elemento WST:
+Este gráfico usa los siguientes filtros para la presentación de WST:
 
--   [Convertidor Tee/Sink-to-Sink](tee-sink-to-sink-converter.md). Acepta la información de VBI del filtro de captura y la divide en secuencias independientes para cada uno de los servicios de datos presentes en la señal.
--   [Códec elemento WST](wst-codec-filter.md). Descodifica los datos de teletexto de los ejemplos de VBI.
--   [Descodificador de elemento WST](wst-decoder-filter.md). Traduce los datos de teletexto y dibuja el texto en mapas de bits. El filtro de nivel inferior (en este caso, el mezclador de superposición) superpone los mapas de bits al vídeo.
+-   [Convertidor de tee/sink-to-sink](tee-sink-to-sink-converter.md). Acepta la información de VBI del filtro de captura y la divide en secuencias independientes para cada uno de los servicios de datos presentes en la señal.
+-   [Códec WST](wst-codec-filter.md). Descodifica los datos de teletexto de los ejemplos de VBI.
+-   [Descodificador WST](wst-decoder-filter.md). Traduce los datos de teletexto y dibuja el texto en mapas de bits. El filtro de nivel inferior (en este caso, la propiedad Overlay Mixer) superpone los mapas de bits en el vídeo.
 
-El método **RenderStream** del generador de gráficos de captura no admite directamente los filtros elemento WST, por lo que la aplicación debe realizar algún trabajo adicional.
+El método **RenderStream** de Capture Graph Builder no admite directamente los filtros WST, por lo que la aplicación debe realizar algún trabajo adicional.
 
-1.  Agregue el filtro de mezclador de superposición al gráfico de filtro. En el código siguiente se usa la función AddFilterByCLSID que se describe en [Agregar un filtro por CLSID](add-a-filter-by-clsid.md). (AddFilterByCLSID no es una API de DirectShow).
+1.  Agregue el filtro Overlay Mixer al gráfico de filtros. El código siguiente usa la función AddFilterByCLSID descrita en [Agregar un filtro por CLSID.](add-a-filter-by-clsid.md) (AddFilterByCLSID no es DirectShow API).
     ```C++
     IBaseFilter *pOvMix = NULL;  // Pointer to the Overlay Mixer filter.
     hr = AddFilterByCLSID(pGraph, CLSID_OverlayMixer, L"OVMix", &pOvMix);
@@ -42,7 +42,7 @@ El método **RenderStream** del generador de gráficos de captura no admite dire
 
     
 
-2.  Conecte el PIN de vista previa al filtro de representador de vídeo a través del mezclador de superposición. Puede usar el método **RenderStream** , como se indica a continuación:
+2.  Conectar el pin de vista previa al filtro Representador de vídeo a través de la ventana Superposición Mixer. Puede usar el **método RenderStream,** como se muestra a continuación:
     ```C++
     hr = pBuild->RenderStream(&PIN_CATEGORY_PREVIEW, &MEDIATYPE_Video, 
         pCap, pOvMix, 0);
@@ -50,7 +50,7 @@ El método **RenderStream** del generador de gráficos de captura no admite dire
 
     
 
-3.  Agregue el filtro de convertidor Tee/Sink-to-Sink al gráfico de filtro. En el código siguiente se usa la función CreateKernelFilter que se describe en [crear Kernel-Mode filtros](creating-kernel-mode-filters.md). (CreateKernelFilter no es una API de DirectShow).
+3.  Agregue el filtro Tee/Sink-to-Sink Converter al gráfico de filtros. En el código siguiente se usa la función CreateKernelFilter que se describe en [Creación de Kernel-Mode filtros](creating-kernel-mode-filters.md). (CreateKernelFilter no es una API DirectShow).
     ```C++
     IBaseFilter* pKernelTee = NULL;
     hr = CreateKernelFilter(AM_KSCATEGORY_SPLITTER, 
@@ -63,7 +63,7 @@ El método **RenderStream** del generador de gráficos de captura no admite dire
 
     
 
-4.  Agregue el filtro de códec elemento WST al gráfico de filtros:
+4.  Agregue el filtro códec WST al gráfico de filtros:
     ```C++
     IBaseFilter* pWstCodec = NULL;
     hr = CreateKernelFilter(AM_KSCATEGORY_VBICODEC, 
@@ -76,7 +76,7 @@ El método **RenderStream** del generador de gráficos de captura no admite dire
 
     
 
-5.  Llame a **RenderStream** para conectar el PIN VBI del filtro de captura al convertidor Tee/Sink-to-Sink y el convertidor Tee/Sink-to-Sink al filtro de códec elemento WST:
+5.  Llame **a RenderStream** para conectar el pin de VBI del filtro de captura al convertidor tee/sink-to-sink y al convertidor de receptor a receptor con el filtro de códec WST:
     ```C++
     hr = pBuild->RenderStream(&PIN_CATEGORY_VBI, 0, pCap, 
         pKernelTee, pWstCodec);
@@ -84,14 +84,14 @@ El método **RenderStream** del generador de gráficos de captura no admite dire
 
     
 
-6.  Vuelva a llamar a **RenderStream** para conectar el filtro de códec elemento WST al mezclador de superposición. El filtro del descodificador de elemento WST se incorpora automáticamente al gráfico.
+6.  Vuelva **a llamar a RenderStream** para conectar el filtro de códec WST al filtro Overlay Mixer. El filtro descodificador de WST se incluye automáticamente en el gráfico.
     ```C++
     hr = pBuild->RenderStream(0, 0, pWstCodec, 0, pOvMix);
     ```
 
     
 
-7.  Recuerde liberar todas las interfaces de filtro.
+7.  No olvide liberar todas las interfaces de filtro.
     ```C++
     pOvMix->Release();
     pKernelTee->Release();
@@ -101,11 +101,11 @@ El método **RenderStream** del generador de gráficos de captura no admite dire
     
 
 > [!Note]  
-> Actualmente, el filtro del descodificador de elemento WST no admite conexiones al filtro de representador de mezcla de vídeo (VMR). Por lo tanto, debe usar el filtro de representador de vídeo heredado para ver el teletexto.
+> Actualmente, el filtro descodificador WST no admite conexiones con el filtro de representador de mezcla de vídeo (VMR). Por lo tanto, debe usar el filtro representador de vídeo heredado para ver el teletexto.
 
  
 
-Si el filtro de captura tiene un PIN de puerto de vídeo VBI (PIN \_ CATEGPORY \_ videopuerto \_ VBI), conéctelo al filtro de [asignador de superficie de VBI](vbi-surface-allocator.md) . De lo contrario, el gráfico no se ejecutará correctamente. En el ejemplo de código siguiente se usa la función AddFilterByCLSID, que se describe en [Agregar un filtro por CLSID](add-a-filter-by-clsid.md)y la función FindPinByCategory, que se describe en [trabajar con categorías de PIN](working-with-pin-categories.md). (Ninguna de las funciones es una API de DirectShow).
+Si el filtro de captura tiene un pin de VBI de puerto de vídeo (PIN \_ CATEGPORY \_ VIDEOPORT \_ VBI), conéctelo al filtro Asignador de superficie de [VBI.](vbi-surface-allocator.md) De lo contrario, el gráfico no se ejecutará correctamente. En el ejemplo de código siguiente se usa la función AddFilterByCLSID, descrita en Agregar un filtro por [CLSID](add-a-filter-by-clsid.md)y la función FindPinByCategory, que se describe en Trabajar con categorías de [pin](working-with-pin-categories.md). (Ninguna de las funciones es DirectShow API).
 
 
 ```C++

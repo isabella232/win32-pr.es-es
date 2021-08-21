@@ -1,9 +1,9 @@
 ---
-title: función glBitmap (GL. h)
+title: Función glBitmap (Gl.h)
 description: La función glBitmap dibuja un mapa de bits.
 ms.assetid: 3cd8e41b-016b-4610-833a-048b5e50ae7c
 keywords:
-- glBitmap (función) OpenGL
+- Función glBitmap OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7aeb97bb16a1e3c4c29d1dfb1a5320c02f44404d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8da90b8e592f8cd9d1702c7810990042b3929ef40e70814e8fb7d3326d902cb4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082235"
 ---
-# <a name="glbitmap-function"></a>glBitmap función)
+# <a name="glbitmap-function"></a>Función glBitmap
 
-La función **glBitmap** dibuja un mapa de bits.
+La **función glBitmap** dibuja un mapa de bits.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,42 +49,42 @@ void WINAPI glBitmap(
 *width* 
 </dt> <dd>
 
-Ancho en píxeles de la imagen de mapa de bits.
+Ancho de píxel de la imagen de mapa de bits.
 
 </dd> <dt>
 
 *height* 
 </dt> <dd>
 
-Alto en píxeles de la imagen de mapa de bits.
+Alto de píxeles de la imagen de mapa de bits.
 
 </dd> <dt>
 
 *xorig* 
 </dt> <dd>
 
-Ubicación *x* del origen en la imagen de mapa de bits. El origen se mide desde la esquina inferior izquierda del mapa de bits, con las direcciones correctas y hacia arriba que son los ejes positivos.
+Ubicación *x* del origen en la imagen de mapa de bits. El origen se mide desde la esquina inferior izquierda del mapa de bits, siendo los ejes positivos las direcciones derecha e superior.
 
 </dd> <dt>
 
 *yorig* 
 </dt> <dd>
 
-Ubicación *y* del origen en la imagen de mapa de bits. El origen se mide desde la esquina inferior izquierda del mapa de bits, con las direcciones correctas y hacia arriba que son los ejes positivos.
+Ubicación *y del* origen en la imagen de mapa de bits. El origen se mide desde la esquina inferior izquierda del mapa de bits, siendo los ejes positivos las direcciones derecha e superior.
 
 </dd> <dt>
 
 *xmove* 
 </dt> <dd>
 
-Desplazamiento *x* que se va a agregar a la posición de la cuadrícula actual después de dibujar el mapa de bits.
+Desplazamiento *x* que se va a agregar a la posición de trama actual después de dibujar el mapa de bits.
 
 </dd> <dt>
 
 *ymove* 
 </dt> <dd>
 
-Desplazamiento *y* que se va a agregar a la posición de la cuadrícula actual después de dibujar el mapa de bits.
+Desplazamiento *y* que se va a agregar a la posición de trama actual después de dibujar el mapa de bits.
 
 </dd> <dt>
 
@@ -107,46 +107,46 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl>     | el *ancho* o el *alto* es negativo.<br/>                                                                                           |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | *width* o *height es* negativo.<br/>                                                                                           |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un mapa de bits es una imagen binaria. Cuando se dibuja, el mapa de bits se coloca en relación con la posición de la trama actual y los píxeles de fotogramas correspondientes a 1s en el mapa de bits se escriben utilizando el color o el índice de la trama actual. Los píxeles de búfer de fotogramas correspondientes a ceros en el mapa de bits no se modifican.
+Un mapa de bits es una imagen binaria. Cuando se dibuja, el mapa de bits se coloca en relación con la posición de trama actual y los píxeles de búfer de fotogramas correspondientes a 1 en el mapa de bits se escriben con el color de trama o el índice actuales. No se modifican los píxeles del búfer de fotogramas correspondientes a ceros en el mapa de bits.
 
-La imagen de mapa de bits se interpreta como los datos de imagen de la función [**glDrawPixels**](gldrawpixels.md) , con el *ancho* y el *alto* que se corresponden con los argumentos de ancho y alto de esa función, y con el *tipo* establecido en el mapa de bits de contabilidad \_ y el *formato* establecido en Índice de \_ color GL \_ . Los modos que se especifican mediante [**glPixelStore**](glpixelstore-functions.md) afectan a la interpretación de los datos de imagen de mapa de bits. los modos que se especifican con [**glPixelTransfer**](glpixeltransfer.md) no lo hacen.
+La imagen de mapa de bits se interpreta como datos  de  imagen para la función [**glDrawPixels,**](gldrawpixels.md) con ancho y alto correspondientes a los argumentos de ancho y alto de esa función, y con el tipo establecido en GL BITMAP y el formato establecido en GL COLOR  \_  \_ \_ INDEX. Los modos que especifique mediante [**glPixelStore afectan**](glpixelstore-functions.md) a la interpretación de los datos de imagen de mapa de bits; Los modos que especifique mediante [**glPixelTransfer**](glpixeltransfer.md) no lo hacen.
 
-Si la posición de la trama actual no es válida, se omite **glBitmap** . De lo contrario, la esquina inferior izquierda de la imagen de mapa de bits se coloca en las siguientes coordenadas de la ventana:
+Si la posición de trama actual no es válida, **glBitmap** se omite. De lo contrario, la esquina inferior izquierda de la imagen de mapa de bits se coloca en las siguientes coordenadas de ventana:
 
-*x*<sub>w</sub>  =  *x*<sub>r</sub> *x*
+*x*<sub>w</sub>  =  *x*<sub>r</sub> x *?*
 
 *y*<sub>w</sub>  =  *y*<sub>r</sub> *y*?
 
-En estas coordenadas, (*x*<sub>r</sub> , *y*<sub>r</sub> ) es la posición de la trama y (*x*? , *y*? ) es el origen del mapa de bits. A continuación, se generan fragmentos para cada píxel correspondiente a un 1 en la imagen de mapa de bits. Estos fragmentos se generan utilizando la coordenada *z* de rasterización actual, el color o el índice de color y las coordenadas de textura de rasterizado actuales. A continuación, se tratan como si hubieran sido generados por un punto, línea o polígono, incluida la asignación de texturas, la luneta térmica y todas las operaciones por fragmento, como las pruebas alfa y de profundidad.
+En estas coordenadas, (*x*<sub>r</sub> , *y*<sub>r</sub> ) es la posición del trama y (*x*? , *y*? ) es el origen del mapa de bits. A continuación, se generan fragmentos para cada píxel correspondiente a un 1 en la imagen de mapa de bits. Estos fragmentos se generan mediante la coordenada z del trama *actual,* el índice de color o color y las coordenadas de textura de trama actuales. A continuación, se tratan como si hubieran sido generados por un punto, una línea o un polígono, incluida la asignación de texturas, la afición y todas las operaciones por fragmento, como las pruebas alfa y de profundidad.
 
-Una vez dibujado el mapa de bits, *xmove* y *ymove* desplazan las coordenadas *x* *e y* de la posición de la trama actual. No se realiza ningún cambio en la coordenada *z* de la posición de la trama actual ni en las coordenadas de color, índice o textura de la trama actual.
+Una vez dibujado el mapa de bits, las coordenadas *x* e *y* de la posición de trama actual se desplazan por *xmove* *y ymove*. No se realiza ningún cambio en la coordenada *z* de la posición de trama actual o en las coordenadas de color, índice o textura del trama actual.
 
-Las siguientes funciones recuperan información relacionada con la función **glBitmap** :
+Las funciones siguientes recuperan información relacionada con **la función glBitmap:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento \_ \_ posición de RASTERIZAción actual de GL \_
-
- 
-
-**glGet** con el argumento \_ \_ color de RASTERIZAdo actual de GL \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ CURRENT RASTER \_ \_ POSITION
 
  
 
-**glGet** con el argumento \_ \_ Índice de trama actual de GL \_
+**glGet con** el argumento GL \_ CURRENT RASTER \_ \_ COLOR
 
  
 
-**glGet** con argumento de \_ \_ textura de RASTERIZAdo actual \_ de GL \_
+**glGet con** el argumento GL \_ CURRENT RASTER \_ \_ INDEX
 
  
 
-**glGet** con argumento de \_ posición de rasterizado actual de GL \_ \_ \_ válido
+**glGet con** el argumento GL \_ CURRENT RASTER TEXTURE \_ \_ \_ COORDS
+
+ 
+
+**glGet con** el argumento GL \_ CURRENT RASTER POSITION \_ \_ \_ VALID
 
 ## <a name="requirements"></a>Requisitos
 
@@ -156,8 +156,8 @@ Las siguientes funciones recuperan información relacionada con la función **gl
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

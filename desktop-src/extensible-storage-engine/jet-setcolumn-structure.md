@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_SETCOLUMN'
-title: Estructura de JET_SETCOLUMN
+description: 'Más información sobre: JET_SETCOLUMN estructura'
+title: JET_SETCOLUMN estructura
 TOCTitle: JET_SETCOLUMN Structure
 ms:assetid: 3fdb8ec0-3c40-44f3-9859-72e22a504b90
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269233(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a170132fd4d832133e0f0bcad4a3499fa743db38
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ffdcd2ea11fad6c9ec2baae1a37bdd1965acb852
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809038"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466372"
 ---
-# <a name="jet_setcolumn-structure"></a>Estructura de JET_SETCOLUMN
+# <a name="jet_setcolumn-structure"></a>JET_SETCOLUMN estructura
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jet_setcolumn-structure"></a>Estructura de JET_SETCOLUMN
+## <a name="jet_setcolumn-structure"></a>JET_SETCOLUMN estructura
 
-La estructura **JET_SETCOLUMN** contiene los parámetros de entrada y salida de [JetSetColumns](./jetsetcolumns-function.md). Los campos de la estructura describen qué valor de columna se va a establecer, cómo se establece y dónde se obtienen los datos del conjunto de columnas.
+La **JET_SETCOLUMN** contiene parámetros de entrada y salida [para JetSetColumns](./jetsetcolumns-function.md). Los campos de la estructura describen qué valor de columna se va a establecer, cómo establecerlo y dónde obtener los datos del conjunto de columnas.
 
 ```cpp
     typedef struct {
@@ -47,106 +47,52 @@ La estructura **JET_SETCOLUMN** contiene los parámetros de entrada y salida de 
 
 **columnid**
 
-Identificador de columna de una columna que se va a establecer.
+Identificador de columna de una columna que se establecerá.
 
 **pvData**
 
-Puntero a los datos que se van a establecer en una columna.
+Puntero a los datos que se establecen en una columna.
 
 **cbData**
 
-Tamaño de la asignación, en bytes, que empieza en **pvData** en bytes.
+Tamaño de asignación, en bytes, a partir de **pvData** en bytes.
 
 **grbit**
 
-Grupo de bits que contiene las opciones que se van a usar para esta llamada, que incluyen cero o más de los siguientes elementos.
+Grupo de bits que contienen las opciones que se usarán para esta llamada, que incluyen cero o más de lo siguiente.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Value</p></th>
-<th><p>Significado</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>JET_bitSetAppendLV</p></td>
-<td><p>Anexa datos a una columna de tipo <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a> o <a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a>. Se puede lograr el mismo comportamiento determinando el tamaño del valor Long existente y especificando <strong>ibLongValue</strong> en <strong>psetinfo</strong>. Sin embargo, es más fácil usar este <em>grbit</em>, ya que no es necesario conocer el tamaño del valor de la columna existente.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitSetOverwriteLV</p></td>
-<td><p>Reemplaza el valor Long existente por los nuevos datos. Cuando se usa esta opción, es como si el valor Long existente se hubiera establecido en la longitud 0 (cero) antes de establecer los datos nuevos.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitSetSizeLV</p></td>
-<td><p>Interpreta el búfer de entrada como un número entero de bytes que se establecerá como la longitud del valor largo descrito por el columnid determinado y, si se proporciona, el número de secuencia en psetinfo- &gt; itagSequence. Si el tamaño dado es mayor que el valor de columna existente, la columna se extenderá con 0s. Si el tamaño es menor que el valor de la columna existente, el valor se truncará.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitSetZeroLength</p></td>
-<td><p>Establece un valor de longitud cero. Normalmente, un valor de columna se establece en NULL pasando un cbMax de 0. Sin embargo, para algunos tipos, como <a href="gg269213(v=exchg.10).md">JET_coltypText</a>, un valor de columna puede tener una longitud de 0 en lugar de NULL, y esta opción se usa para diferenciar entre NULL y 0.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitSetSeparateLV</p></td>
-<td><p>Fuerza un valor Long, columnas de tipo <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a> o <a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a>, que se almacenarán por separado del resto de datos de registro. Esto ocurre normalmente cuando el tamaño del valor Long impide que se almacene con los datos de registro restantes. Sin embargo, esta opción se puede usar para forzar el almacenamiento del valor largo por separado. Tenga en cuenta que no se puede forzar la separación de los valores largos de cuatro bytes o de menor tamaño. En estos casos, se omite la opción.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitSetUniqueMultiValues</p></td>
-<td><p>Aplica valores distintos en una columna con varios valores. Esta opción compara los datos de la columna de origen, sin ninguna transformación, con otros valores de columna existentes y se devuelve un error si se encuentra un duplicado. Si se proporciona esta opción, no se pueden proporcionar también JET_bitSetAppendLv, JET_bitSetOverwriteLV y JET_bitSetSizeLV.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitSetUniqueNormalizedMultiValues</p></td>
-<td><p>Aplica valores distintos en una columna con varios valores. Esta opción compara la transformación normalizada de datos de columna con otros valores de columna existentes transformados de forma similar y se devuelve un error si se encuentra un duplicado. Si se proporciona esta opción, no se pueden proporcionar también JET_bitSetAppendLv, JET_bitSetOverwriteLV y JET_bitSetSizeLV.</p></td>
-</tr>
-<tr class="even">
-<td><p>JET_bitSetRevertToDefaultValue</p></td>
-<td><p>Hace que la columna devuelva el valor de columna predeterminado en operaciones de recuperación de columnas posteriores. Se quitan todos los valores de columna existentes. Esta opción solo es aplicable para columnas etiquetadas, dispersas o con varios valores.</p></td>
-</tr>
-<tr class="odd">
-<td><p>JET_bitSetIntrinsicLV</p></td>
-<td><p>Mantiene el valor largo, las columnas de tipo <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a> o JET_coltypeLongBinary, que se almacenan con los datos de registro restantes si es posible. Normalmente, las columnas de tipo Long se almacenan por separado cuando su longitud supera los 1024 bytes o, de lo contrario, haría que la longitud del registro superara su límite de tamaño de página relacionado. Sin embargo, si se establece esta opción, la operación establecer columna producirá un error JET_errColumnTooBig en lugar de almacenar el valor de esta columna de forma independiente de los datos de registro restantes.</p></td>
-</tr>
-</tbody>
-</table>
+
+| <p>Valor</p> | <p>Significado</p> | 
+|--------------|----------------|
+| <p>JET_bitSetAppendLV</p> | <p>Anexa datos a una columna de tipo <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a> o <a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a>. El mismo comportamiento se puede lograr determinando el tamaño del valor long existente y especificando <strong>ibLongValue</strong> en <strong>psetinfo</strong>. Sin embargo, es más sencillo usar este <em>grbit</em>, ya que no es necesario conocer el tamaño del valor de columna existente.</p> | 
+| <p>JET_bitSetOverwriteLV</p> | <p>Reemplaza el valor long existente por los nuevos datos. Cuando se usa esta opción, es como si el valor long existente se hubiera establecido en 0 (cero) longitud antes de establecer los nuevos datos.</p> | 
+| <p>JET_bitSetSizeLV</p> | <p>Interpreta el búfer de entrada como un número entero de bytes que se va a establecer como la longitud del valor largo descrito por el columnid especificado y, si se proporciona, el número de secuencia en psetinfo- &gt; itagSequence. Si el tamaño especificado es mayor que el valor de columna existente, la columna se ampliará con 0s. Si el tamaño es menor que el valor de columna existente, el valor se truncará.</p> | 
+| <p>JET_bitSetZeroLength</p> | <p>Establece un valor en longitud cero. Normalmente, un valor de columna se establece en NULL pasando cbMax de 0. Sin embargo, para algunos tipos, <a href="gg269213(v=exchg.10).md">como JET_coltypText</a>, un valor de columna puede tener una longitud de 0 en lugar de NULL, y esta opción se usa para diferenciar entre null y 0 longitud.</p> | 
+| <p>JET_bitSetSeparateLV</p> | <p>Fuerza que un valor largo, las columnas de <a href="gg269213(v=exchg.10).md">tipo JET_coltypLongText</a> o <a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a>, se almacenen por separado del resto de datos de registro. Esto sucede normalmente cuando el tamaño del valor largo impide que se almacene con los datos de registro restantes. Sin embargo, esta opción se puede usar para forzar que el valor long se almacene por separado. Tenga en cuenta que los valores largos de cuatro bytes de tamaño o más pequeños no se pueden forzar para que sean independientes. En tales casos, se omite la opción .</p> | 
+| <p>JET_bitSetUniqueMultiValues</p> | <p>Aplica valores distintos en una columna con varios valores. Esta opción compara los datos de la columna de origen, sin ninguna transformación, con otros valores de columna existentes y se devuelve un error si se encuentra un duplicado. Si se proporciona esta opción, JET_bitSetAppendLv, JET_bitSetOverwriteLV y JET_bitSetSizeLV también se pueden proporcionar.</p> | 
+| <p>JET_bitSetUniqueNormalizedMultiValues</p> | <p>Aplica valores distintos en una columna con varios valores. Esta opción compara la transformación normalizada de clave de los datos de columna con otros valores de columna existentes transformados de forma similar y se devuelve un error si se encuentra un duplicado. Si se proporciona esta opción, JET_bitSetAppendLv, JET_bitSetOverwriteLV y JET_bitSetSizeLV también se pueden proporcionar.</p> | 
+| <p>JET_bitSetRevertToDefaultValue</p> | <p>Hace que la columna devuelva el valor de columna predeterminado en las operaciones de recuperación de columnas posteriores. Se quitan todos los valores de columna existentes. Esta opción solo es aplicable a las columnas etiquetadas, dispersas o con varios valores.</p> | 
+| <p>JET_bitSetIntrinsicLV</p> | <p>Mantiene el valor largo, las columnas de <a href="gg269213(v=exchg.10).md">tipo JET_coltypLongText</a> o JET_coltypeLongBinary, almacenados con los datos de registro restantes, si es posible. Normalmente, las columnas largas se almacenan por separado cuando su longitud supera los 1024 bytes o, de lo contrario, hace que la longitud del registro supere su limitación de tamaño de página relacionada. Sin embargo, si se establece esta opción, se producirá un error en la operación de establecimiento de columna JET_errColumnTooBig en lugar de almacenar este valor de columna independiente de los datos de registro restantes.</p> | 
+
 
 
 **ibLongValue**
 
-Desplazamiento al primer byte que se va a recuperar de una columna de tipo [JET_coltypLongBinary](./jet-coltyp.md), o [JET_coltypLongText](./jet-coltyp.md).
+Desplazamiento al primer byte que se va a recuperar de una columna de [tipo JET_coltypLongBinary](./jet-coltyp.md)o [JET_coltypLongText](./jet-coltyp.md).
 
 **itagSequence**
 
-Describe el número de secuencia de un valor en una columna con varios valores. Un valor de **itagSequence** de 0 indica que el conjunto de valores de columna debe agregarse como una nueva instancia de una columna con varios valores.
+Describe el número de secuencia de valor de una columna de varios valores. Una **itagSequence** de 0 indica que el conjunto de valores de columna debe agregarse como una nueva instancia de una columna de varios valores.
 
-**ERR**
+**Err**
 
-Códigos de error y advertencias devueltos por la operación establecer columna.
+Códigos de error y advertencias devueltos por la operación de establecer columna.
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Server</strong></p></td>
-<td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+
 
 
 ### <a name="see-also"></a>Consulte también

@@ -1,11 +1,11 @@
 ---
-title: ACS-Max-token-Rate-per-Flow (atributo)
-description: La tasa máxima de tokens que puede tener un solo flujo para un usuario determinado.
+title: Atributo ACS-Max-Token-Rate-Per-Flow
+description: La tasa máxima de tokens que cualquier flujo único puede tener para un usuario determinado.
 ms.assetid: 2898b7a6-f2b1-4e08-aba6-9e1ac655a4db
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo ACS-Max-token-Rate-per-Flow
-- aCSMaxTokenRatePerFlow esquema de AD de atributos
+- Esquema de AD del atributo acs-max-token-rate-per-Flow
+- Esquema de AD del atributo aCSMaxTokenRatePerFlow
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5165c20a27f7d1a389b9aada118d89786c015d2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 33e3c4319345e47a90b09e5f101fec875fbd97dde7d704618f39fbbb76385e14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104079815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082079"
 ---
-# <a name="acs-max-token-rate-per-flow-attribute"></a>ACS-Max-token-Rate-per-Flow (atributo)
+# <a name="acs-max-token-rate-per-flow-attribute"></a>Atributo ACS-Max-Token-Rate-Per-Flow
 
-La tasa máxima de tokens que puede tener un solo flujo para un usuario determinado.
+La tasa máxima de tokens que cualquier flujo único puede tener para un usuario determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ACS-Max-token-Rate-per-Flow          |
-| Nombre para mostrar de LDAP | aCSMaxTokenRatePerFlow               |
-| Tamaño              | 8 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | ACS-Max-Token-Rate-Per-Flow          |
+| Ldap-Display-Name | aCSMaxTokenRatePerFlow               |
+| Size              | 8 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.758               |
-| System-ID-GUID    | 7f56127b-5301-11d1-a9c5-0000f80367c1 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | 7f56127b-5301-11d1-a9c5-0000f80367c1 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,18 +55,18 @@ La tasa máxima de tokens que puede tener un solo flujo para un usuario determin
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> [**ACS-recursos-límites**](c-acsresourcelimits.md)<br/> [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> [**Límites de recursos de ACS**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ La tasa máxima de tokens que puede tener un solo flujo para un usuario determin
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> [**ACS-recursos-límites**](c-acsresourcelimits.md)<br/> [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> [**Límites de recursos de ACS**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ La tasa máxima de tokens que puede tener un solo flujo para un usuario determin
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> [**ACS-recursos-límites**](c-acsresourcelimits.md)<br/> [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> [**Límites de recursos de ACS**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ La tasa máxima de tokens que puede tener un solo flujo para un usuario determin
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> [**ACS-recursos-límites**](c-acsresourcelimits.md)<br/> [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> [**Límites de recursos de ACS**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ La tasa máxima de tokens que puede tener un solo flujo para un usuario determin
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> [**ACS-recursos-límites**](c-acsresourcelimits.md)<br/> [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> [**Límites de recursos de ACS**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ La tasa máxima de tokens que puede tener un solo flujo para un usuario determin
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                      |
+| Id. de vínculo                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
-| System-Only            | False                                                                                                                                                   |
-| Tiene un único valor       | True                                                                                                                                                    |
-| Está indexado             | False                                                                                                                                                   |
-| En el catálogo global      | False                                                                                                                                                   |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                            |
+| System-Only            | Falso                                                                                                                                                   |
+| Es de un solo valor       | Verdadero                                                                                                                                                    |
+| Está indexado             | Falso                                                                                                                                                   |
+| En el catálogo global      | Falso                                                                                                                                                   |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                            |
 | Range-Lower            | \-                                                                                                                                                      |
 | Range-Upper            | \-                                                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                                              |
 | System-Flags           | 0x00000010                                                                                                                                              |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> [**ACS-recursos-límites**](c-acsresourcelimits.md)<br/> [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> [**Límites de recursos de ACS**](c-acsresourcelimits.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 

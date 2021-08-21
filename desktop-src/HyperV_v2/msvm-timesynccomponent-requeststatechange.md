@@ -1,5 +1,5 @@
 ---
-description: 'Método RequestStateChange de la Msvm_TimeSyncComponent clase : solicita un cambio de estado.'
+description: 'Método RequestStateChange de la Msvm_TimeSyncComponent: solicita un cambio de estado.'
 ms.assetid: ca014a24-1d16-468d-bc9c-8043249dabe2
 title: Método RequestStateChange de la Msvm_TimeSyncComponent clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0f43072a9673664d05702981bbaf2772bc83f42e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c616fa06f02807e31ae5e58910bea1c9900c467186f6ec5943954198cd73c9f6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119811815"
 ---
 # <a name="requeststatechange-method-of-the-msvm_timesynccomponent-class"></a>Método RequestStateChange de la clase \_ TimeSyncComponent de Msvm
 
@@ -44,7 +44,7 @@ uint32 RequestStateChange(
 *RequestedState* \[ En\]
 </dt> <dd>
 
-El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del método **RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
+El nuevo estado. La información se coloca en la **propiedad RequestedState** de la instancia si el código de retorno del **método RequestStateChange** es 0 o 4096. Para obtener más información, vea la descripción de las propiedades **EnabledState** y **RequestedState** del elemento. Debe ser uno de los siguientes valores.
 
 <dt>
 
@@ -106,7 +106,7 @@ El nuevo estado. La información se coloca en la **propiedad RequestedState** de
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Restablecimiento** (11)
+**Restablecer** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -128,7 +128,7 @@ El nuevo estado. La información se coloca en la **propiedad RequestedState** de
 *Trabajo* \[ out\]
 </dt> <dd>
 
-Puede contener una referencia al Trabajo concreto creado para realizar un seguimiento de la transición de estado iniciada por la invocación del método.
+Puede contener una referencia al Trabajo concreto creado para realizar un seguimiento de la transición de estado iniciada por la invocación del método .
 
 </dd> <dt>
 
@@ -157,7 +157,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -167,7 +167,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

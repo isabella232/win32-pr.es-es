@@ -1,43 +1,43 @@
 ---
-title: Configuración de secuencias arbitrarias personalizadas
-description: Configuración de secuencias arbitrarias personalizadas
+title: Configuración de parámetros arbitrarios personalizados Secuencias
+description: Configuración de parámetros arbitrarios personalizados Secuencias
 ms.assetid: 09b28fd3-a0a3-44d9-b664-7421290abf02
 keywords:
-- flujos, configurar secuencias arbitrarias personalizadas
+- streams,configuring custom arbitrary streams
 - códecs, configurar secuencias arbitrarias personalizadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29d5cf3e95a5514ddeede9eb3c25df01ed4cd2ae
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0b9b98b25ae9f973682ee3987ed8b590d485288e72e0b5ef7977eb7f3da0d1da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103775697"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119809815"
 ---
-# <a name="configuring-custom-arbitrary-streams"></a>Configuración de secuencias arbitrarias personalizadas
+# <a name="configuring-custom-arbitrary-streams"></a>Configuración de parámetros arbitrarios personalizados Secuencias
 
-Al usar su propio tipo de datos arbitrario, debe crear un valor de GUID para que sirva como el identificador de tipo de medio principal para él. Cuando el escritor encuentra una secuencia en un perfil con un tipo principal que no reconoce, se supone que la secuencia son datos arbitrarios personalizados. Aceptará sus ejemplos, los pondrá en paquetes y los combinará con ejemplos de las otras secuencias del archivo sin comprobar de ningún modo los datos.
+Al usar su propio tipo de datos arbitrario, debe crear un valor GUID para que sirva como identificador de tipo multimedia principal para él. Cuando el escritor encuentra una secuencia en un perfil con un tipo principal que no reconoce, asume que la secuencia son datos arbitrarios personalizados. Aceptará los ejemplos, los paquetes y los combinará con ejemplos de las otras secuencias del archivo sin comprobar los datos de ninguna manera.
 
-También puede crear sus propios identificadores GUID de subtipos para definir subcategorías de los datos personalizados. El escritor omitirá todos estos subtipos por completo, pero se conservarán en la sección de encabezado del archivo ASF, de modo que la aplicación de lectura pueda recuperarlos y tomar decisiones basadas en ellos.
+También puede crear sus propios identificadores GUID de subtipo para definir subcategorías de los datos personalizados. El escritor omitirá estos subtipos por completo, pero se conservarán en la sección de encabezado del archivo ASF, por lo que la aplicación de lectura puede recuperarlos y tomar decisiones basadas en ellos.
 
-Una secuencia arbitraria requiere una ventana de velocidad de bits y de búfer, y debe tener una estructura de [**\_ \_ tipo de medio de WM**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type) con los valores borrados, excepto el tipo de medio principal y el subtipo (si se usa uno).
+Una secuencia arbitraria requiere una velocidad de bits y una ventana de búfer, y debe tener una estructura [**WM \_ MEDIA \_ TYPE**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type) con los valores borrados, excepto el tipo de medio principal y el subtipo (si se usa uno).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Configuración común para todos los flujos**](configuration-common-to-all-streams.md)
+[**Configuración común a todas las Secuencias**](configuration-common-to-all-streams.md)
 </dt> <dt>
 
-[**Configuración de tipos de flujo arbitrarios**](configuring-arbitrary-stream-types.md)
+[**Configuración de tipos de secuencia arbitrarios**](configuring-arbitrary-stream-types.md)
 </dt> <dt>
 
-[**Flujos de datos arbitrarios personalizados**](custom-arbitrary-data-streams.md)
+[**Datos arbitrarios personalizados Secuencias**](custom-arbitrary-data-streams.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

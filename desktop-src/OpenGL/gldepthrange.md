@@ -1,9 +1,9 @@
 ---
-title: función glDepthRange (GL. h)
-description: La función glDepthRange especifica la asignación de valores z de coordenadas de dispositivo normalizadas a coordenadas de la ventana.
+title: Función glDepthRange (Gl.h)
+description: La función glDepthRange especifica la asignación de valores z de coordenadas de dispositivo normalizadas a coordenadas de ventana.
 ms.assetid: 44aed5e5-4bd2-4e7f-ad05-1cf4be5254a5
 keywords:
-- glDepthRange (función) OpenGL
+- Función glDepthRange OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0bd6a22ae91877c9b20fa5387edd9438942a07d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0ac72155449e70a59265e4ffd2576245059a547906092df2a932e84f221e48fd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081655"
 ---
-# <a name="gldepthrange-function"></a>glDepthRange función)
+# <a name="gldepthrange-function"></a>Función glDepthRange
 
-La función **glDepthRange** especifica la asignación de valores *z* de coordenadas de dispositivo normalizadas a coordenadas de la ventana.
+La **función glDepthRange** especifica la asignación de valores *z* de coordenadas de dispositivo normalizadas a coordenadas de ventana.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,14 +44,14 @@ void WINAPI glDepthRange(
 *zNear* 
 </dt> <dd>
 
-Asignación del plano de recorte cercano a las coordenadas de la ventana. El valor predeterminado es cero.
+Asignación del plano de recorte cercano a coordenadas de ventana. El valor predeterminado es cero.
 
 </dd> <dt>
 
 *zFar* 
 </dt> <dd>
 
-Asignación del plano de recorte lejano a las coordenadas de la ventana. El valor predeterminado es 1.
+Asignación del plano de recorte lejano a coordenadas de ventana. El valor predeterminado es 1.
 
 </dd> </dl>
 
@@ -61,27 +61,27 @@ Esta función no devuelve ningún valor.
 
 ## <a name="error-codes"></a>Códigos de error
 
-La función [**glGetError**](glgeterror.md) puede recuperar el siguiente código de error.
+La función [**glGetError**](glgeterror.md) puede recuperar el código de error siguiente.
 
 
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Después del recorte y la división por *w*, las coordenadas *z* van de 0,0 a 1,0, correspondientes a los planos de recorte Near y Far. La función **glDepthRange** especifica una asignación lineal de las coordenadas *z* normalizadas en este intervalo a las coordenadas *z* de la ventana. Independientemente de la implementación del búfer de profundidad real, los valores de profundidad de coordenadas de la ventana se tratan como si fueran de 0,0 a 1,0 (como los componentes de color). Por lo tanto, los valores aceptados por **glDepthRange** se fijan a este intervalo antes de aceptarlos.
+Después del recorte y la división *por w*, las coordenadas *z* oscilan entre 0,0 y 1,0, correspondientes a los planos de recorte cercanos y lejanos. La **función glDepthRange** especifica una asignación lineal de las coordenadas *z* normalizadas de este intervalo a las *coordenadas z* de la ventana. Independientemente de la implementación real del búfer de profundidad, los valores de profundidad de coordenadas de ventana se tratan como si oscilase entre 0,0 y 1,0 (como los componentes de color). Por lo tanto, los valores aceptados por **glDepthRange** se fijan a este intervalo antes de que se acepten.
 
-La asignación predeterminada de (0,0) asigna el plano cercano a 0 y el plano lejano a 1. Con esta asignación, el intervalo de búfer de profundidad se ha utilizado por completo.
+La asignación predeterminada de (0,1) asigna el plano cercano a 0 y el plano lejano a 1. Con esta asignación, el intervalo de búfer de profundidad se utiliza completamente.
 
-No es necesario que *zNear* sea menor que *zFar*. Las asignaciones inversas como (1,0) son aceptables.
+No es necesario que *zNear* sea menor que *zFar.* Las asignaciones inversas como (1,0) son aceptables.
 
-La siguiente función recupera información relacionada con **glDepthRange**:
+La función siguiente recupera información relacionada con **glDepthRange**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con rango de profundidad de contabilidad de argumentos \_ \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ DEPTH \_ RANGE
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,8 +91,8 @@ La siguiente función recupera información relacionada con **glDepthRange**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

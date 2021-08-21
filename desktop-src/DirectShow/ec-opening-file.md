@@ -1,17 +1,17 @@
 ---
 description: El gráfico está abriendo un archivo o ha terminado de abrir un archivo.
 ms.assetid: 352867e1-025f-4adb-be32-f7941c0ec8cf
-title: EC_OPENING_FILE (DShow. h)
+title: EC_OPENING_FILE (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf275a2f9b64f9a30c8049b5207622270edc5098
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 436a48a90640577504871dfe835d6c81c398680ae070065189cb4031493e7fc3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079125"
 ---
-# <a name="ec_opening_file"></a>\_archivo de apertura de EC \_
+# <a name="ec_opening_file"></a>ARCHIVO \_ DE APERTURA DE \_ EC
 
 El gráfico está abriendo un archivo o ha terminado de abrir un archivo.
 
@@ -22,7 +22,7 @@ El gráfico está abriendo un archivo o ha terminado de abrir un archivo.
 <span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
 </dt> <dd>
 
-**True** si el gráfico se está iniciando para abrir un archivo, o **false** si el gráfico ya no abre el archivo.
+**TRUE** si el gráfico está empezando a abrir un archivo, o **FALSE** si el gráfico ya no abre el archivo.
 
 </dd> <dt>
 
@@ -37,9 +37,9 @@ Cero.
 
 Ninguno.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un filtro puede enviar este evento si se tarda mucho tiempo en abrir un archivo. (Por ejemplo, el archivo podría estar ubicado en una red). La aplicación puede usar este evento para ajustar su interfaz de usuario.
+Un filtro puede enviar este evento si dedica mucho tiempo a abrir un archivo. (Por ejemplo, el archivo podría encontrarse en una red). La aplicación puede usar este evento para ajustar su interfaz de usuario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Un filtro puede enviar este evento si se tarda mucho tiempo en abrir un archivo.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 
