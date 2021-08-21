@@ -1,10 +1,10 @@
 ---
-title: MicrosoftDNS_PTRType (clase)
-description: La subclase de MicrosoftDNS \_ ResourceRecord que representa un registro de puntero (PTR).
+title: MicrosoftDNS_PTRType clase
+description: Subclase de ResourceRecord de MicrosoftDNS \_ que representa un registro pointer (PTR).
 ms.assetid: 2cb0f13b-e683-473b-9cdd-bc5d805b919d
 keywords:
-- DNS de la clase MicrosoftDNS_PTRType
-- MicrosoftDNS_PTRType de la clase DNS, descrito
+- MicrosoftDNS_PTRType DNS de clase
+- MicrosoftDNS_PTRType clase DNS , descrita
 topic_type:
 - apiref
 api_name:
@@ -18,18 +18,18 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65dc434eb751ed925ab9efcdaf29f04741b749ea
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a5c78cf945ff58071930e5e65fec08f075ddb9337977e6cd5575853e9c437a73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076759"
 ---
-# <a name="microsoftdns_ptrtype-class"></a>MicrosoftDNS ( \_ clase PTRType)
+# <a name="microsoftdns_ptrtype-class"></a>Clase MicrosoftDNS \_ PTRType
 
-La subclase de [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) que representa un registro de puntero (PTR).
+Subclase de [**\_ ResourceRecord de MicrosoftDNS**](microsoftdns-resourcerecord.md) que representa un registro pointer (PTR).
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,21 +42,21 @@ class MicrosoftDNS_PTRType : MicrosoftDNS_ResourceRecord
 
 ## <a name="members"></a>Miembros
 
-La clase **MicrosoftDNS \_ PTRType** tiene estos tipos de miembros:
+La **clase MicrosoftDNS \_ PTRType** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La clase **MicrosoftDNS \_ PTRType** tiene estos métodos.
+La **clase \_ PTRType de MicrosoftDNS** tiene estos métodos.
 
 
 
 | Método                             | Descripción                                                                                                                                                                                                                                                                                                                                           |
 |:-----------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CreateInstanceFromPropertyData** | Crea una instancia de un registro de recursos de DNS PTR en función de los datos de los parámetros de entrada del método: el nombre del servidor DNS del registro, el nombre del contenedor, el nombre del propietario, la clase (valor predeterminado = IN), el valor de período de vida y el FQDN del registro PTR. Devuelve una referencia al nuevo objeto como parámetro de salida. <br/> Calificadores: implementados, estáticos<br/> |
-| **Modify**                         | Actualiza el nombre de dominio TTL y PTR a los valores especificados como parámetros de entrada de este método. Si no se especifica un nuevo valor para un parámetro, no se cambia el valor actual del parámetro. El método devuelve una referencia al objeto modificado como parámetro de salida. <br/> Calificadores: implementados<br/>                 |
+| **CreateInstanceFromPropertyData** | Crea una instancia de un registro de recursos PTR de DNS en función de los datos de los parámetros de entrada del método: el nombre del servidor DNS del registro, el nombre del contenedor, el nombre del propietario, la clase (valor predeterminado = IN), el valor de período de vida y el FQDN del registro PTR. Devuelve una referencia al nuevo objeto como parámetro de salida. <br/> Calificadores: Implementado, estático<br/> |
+| **Modificar**                         | Actualiza el TTL y el nombre de dominio PTR a los valores especificados como parámetros de entrada de este método. Si no se especifica un nuevo valor para un parámetro, no se cambia el valor actual del parámetro. El método devuelve una referencia al objeto modificado como parámetro de salida. <br/> Calificadores: Implementado<br/>                 |
 
 
 
@@ -64,7 +64,7 @@ La clase **MicrosoftDNS \_ PTRType** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MicrosoftDNS \_ PTRType** tiene estas propiedades.
+La **clase MicrosoftDNS \_ PTRType** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -77,7 +77,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-FQDN de los datos del registro PTR.
+FQDN de los datos de registro PTR.
 
 </dd> </dl>
 
@@ -85,12 +85,12 @@ FQDN de los datos del registro PTR.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -98,13 +98,13 @@ FQDN de los datos del registro PTR.
 
 <dl> <dt>
 
-[**Método CreateInstanceFromPropertyData de la \_ clase MicrosoftDNS PTRType**](microsoftdns-ptrtype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData de la clase MicrosoftDNS \_ PTRType**](microsoftdns-ptrtype-createinstancefrompropertydata.md)
 </dt> <dt>
 
-[**Método Modify de la \_ clase MicrosoftDNS PTRType**](microsoftdns-ptrtype-modify.md)
+[**Método Modify de la clase MicrosoftDNS \_ PTRType**](microsoftdns-ptrtype-modify.md)
 </dt> <dt>
 
-[**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)
+[**ResourceRecord de MicrosoftDNS \_**](microsoftdns-resourcerecord.md)
 </dt> </dl>
 
  

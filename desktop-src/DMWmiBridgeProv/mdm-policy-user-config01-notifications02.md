@@ -24,9 +24,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119077069"
 ---
-# <a name="mdm_policy_user_config01_notifications02-class"></a>Clase \_ \_ \_ Config01 \_ Notifications02 de usuario de directiva MDM
+# <a name="mdm_policy_user_config01_notifications02-class"></a>Clase Mdm \_ Policy \_ User \_ Config01 \_ Notifications02
 
-\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
 La **clase Mdm Policy User \_ \_ \_ Config01 \_ Notifications02** representa las directivas de notificación disponibles.
 
@@ -46,7 +46,7 @@ class MDM_Policy_User_Config01_Notifications02
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ \_ \_ Config01 \_ Notifications02 del** usuario de directiva MDM tiene estos tipos de miembros:
+La **clase Mdm Policy User \_ \_ \_ Config01 \_ Notifications02** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
@@ -76,7 +76,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica el nombre del nodo primario. Para esta clase, la cadena es "Notifications".
@@ -92,7 +92,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./User/Vendor/MSFT/Policy/Config"

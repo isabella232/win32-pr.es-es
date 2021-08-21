@@ -1,15 +1,15 @@
 ---
-description: La propiedad DefaultMenuLanguage recupera el idioma del menú predeterminado.
+description: La propiedad DefaultMenuLanguage recupera el idioma de menú predeterminado.
 ms.assetid: 103f44f8-d9e3-4f88-a882-7bf3195a8546
 title: Propiedad DefaultMenuLanguage
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c9fe60090627095da3b3029086a61cbdc3426a9c
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 77c1025cd15bbdfe242aceff048f92459e8b48fc04249a4c026e396c849e81c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104495581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953024"
 ---
 # <a name="defaultmenulanguage-property"></a>Propiedad DefaultMenuLanguage
 
@@ -18,7 +18,7 @@ ms.locfileid: "104495581"
 
  
 
-La `DefaultMenuLanguage` propiedad recupera el idioma del menú predeterminado.
+La `DefaultMenuLanguage` propiedad recupera el idioma de menú predeterminado.
 
 ``` syntax
 [ iLang = ] MSWebDVD.DefaultMenuLanguage
@@ -28,7 +28,7 @@ La `DefaultMenuLanguage` propiedad recupera el idioma del menú predeterminado.
 
 Devuelve un valor LCID que contiene el identificador de idioma principal para el idioma de audio predeterminado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta propiedad es de lectura y escritura sin ningún valor predeterminado.
 

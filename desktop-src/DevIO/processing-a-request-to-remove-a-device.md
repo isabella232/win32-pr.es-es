@@ -1,5 +1,5 @@
 ---
-description: Una aplicación recibe un evento de dispositivo DBT DEVICEQUERYREMOVE cuando una característica del sistema ha decidido \_ quitar un dispositivo especificado.
+description: Una aplicación recibe un evento de dispositivo DBT DEVICEQUERYREMOVE cuando una característica del sistema ha \_ decidido quitar un dispositivo especificado.
 ms.assetid: 66f6c9f4-93fa-4ee8-adf8-cde4e63f9fb7
 title: Procesamiento de una solicitud para quitar un dispositivo
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "118956784"
 ---
 # <a name="processing-a-request-to-remove-a-device"></a>Procesamiento de una solicitud para quitar un dispositivo
 
-Una aplicación recibe un evento [de dispositivo \_ DBT DEVICEQUERYREMOVE](dbt-devicequeryremove.md) cuando una característica del sistema ha decidido quitar un dispositivo especificado. Cuando la aplicación recibe este evento, debe determinar si usa el dispositivo especificado y cancelar o preparar la eliminación.
+Una aplicación recibe un [evento de dispositivo \_ DBT DEVICEQUERYREMOVE](dbt-devicequeryremove.md) cuando una característica del sistema ha decidido quitar un dispositivo especificado. Cuando la aplicación recibe este evento, debe determinar si usa el dispositivo especificado y cancelar o preparar la eliminación.
 
-En el ejemplo siguiente, una aplicación mantiene un identificador abierto, hFile, en el archivo o dispositivo representado por FileName. La aplicación se registra para la notificación de eventos de dispositivo en el dispositivo subyacente mediante una llamada a la función [**RegisterDeviceNotification,**](/windows/desktop/api/Winuser/nf-winuser-registerdevicenotificationa) mediante un filtro de notificación de tipo HANDLE de **\_ \_ DBT DEVTYP** y especificando la variable hFile en el miembro de identificador **dbch \_** del filtro.
+En el ejemplo siguiente, una aplicación mantiene un identificador abierto, hFile, en el archivo o dispositivo representado por FileName. La aplicación se registra para la notificación de eventos de dispositivo en el dispositivo subyacente mediante una llamada a la función [**RegisterDeviceNotification,**](/windows/desktop/api/Winuser/nf-winuser-registerdevicenotificationa) mediante un filtro de notificación de tipo HANDLE de **DBT \_ DEVTYP \_** y especificando la variable hFile en el miembro de identificador **dbch \_** del filtro.
 
-La aplicación procesa el evento [de dispositivo \_ DBT DEVICEQUERYREMOVE](dbt-devicequeryremove.md) cerrando el identificador de archivo abierto al dispositivo que se va a quitar. En caso de que se cancele la eliminación de este dispositivo, la aplicación procesa el evento de dispositivo [DBT \_ DEVICEQUERYREMOVEFAILED](dbt-devicequeryremovefailed.md) para volver a abrir el identificador en el dispositivo. Una vez que el dispositivo se ha quitado del sistema, la aplicación procesa los eventos de dispositivo [DBT \_ DEVICEREMOVECOMPLETE](dbt-deviceremovecomplete.md) y [DBT \_ DEVICEREMOVEPENDING](dbt-deviceremovepending.md) anulando el registro de su identificador de notificación para el dispositivo y cerrando los identificadores que todavía están abiertos en el dispositivo.
+La aplicación procesa el evento [de dispositivo DBT \_ DEVICEQUERYREMOVE](dbt-devicequeryremove.md) cerrando el identificador de archivo abierto al dispositivo que se va a quitar. En caso de que se cancele la eliminación de este dispositivo, la aplicación procesa el evento de dispositivo [DBT \_ DEVICEQUERYREMOVEFAILED](dbt-devicequeryremovefailed.md) para volver a abrir el identificador en el dispositivo. Después de quitar el dispositivo del sistema, la aplicación procesa los eventos de dispositivo [DBT \_ DEVICEREMOVECOMPLETE](dbt-deviceremovecomplete.md) y [DBT \_ DEVICEREMOVEPENDING](dbt-deviceremovepending.md) anulando el registro de su identificador de notificación para el dispositivo y cerrando los identificadores que todavía están abiertos en el dispositivo.
 
 
 ```C++

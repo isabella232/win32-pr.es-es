@@ -70,7 +70,7 @@ Por ejemplo, suponga que crea un subproceso y, a continuación, bloquea hasta qu
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

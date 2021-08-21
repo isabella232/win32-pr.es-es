@@ -1,23 +1,23 @@
 ---
 title: Definición de filtros
-description: Un proveedor puede definir los filtros que una sesión utiliza para filtrar los eventos basándose en los datos de evento.
+description: Un proveedor puede definir filtros que una sesión usa para filtrar eventos en función de los datos de eventos.
 ms.assetid: b43912af-0e9c-414b-b3fa-03e7e35e493c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61dd2a21b9c4e01ebc4a32a160b24022c79197b0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 37d9d065fe3a46fc22114cfb4aed5b5b51d9a89eafa3280e2e258199e06aad3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056023"
 ---
 # <a name="defining-filters"></a>Definición de filtros
 
-Un proveedor puede definir los filtros que una sesión utiliza para filtrar los eventos basándose en los datos de evento. Con el nivel y las palabras clave, ETW determina si el evento se escribe en el registro. Sin embargo, con los filtros, el proveedor utiliza los criterios de datos de filtro que la sesión de control le pasa (vea la función [*EnableCallback*](/windows/desktop/api/evntprov/nc-evntprov-penablecallback) ) para determinar si escribe el evento en esa sesión. Los filtros solo se aplican cuando una sesión de seguimiento de ETW habilita el proveedor.
+Un proveedor puede definir filtros que una sesión usa para filtrar eventos en función de los datos de eventos. Con las palabras clave level y , ETW determina si el evento se escribe en el registro. Sin embargo, con los filtros, el proveedor usa los criterios de datos de filtro que la sesión de control le pasa (vea la función [*EnableCallback)*](/windows/desktop/api/evntprov/nc-evntprov-penablecallback) para determinar si escribe el evento en esa sesión. Los filtros solo son aplicables cuando una sesión de seguimiento de ETW habilita al proveedor.
 
-Normalmente, los proveedores simplemente escriben eventos y la sesión identifica los tipos de eventos que desea usar el nivel y las palabras clave. Si el proveedor definía un filtro de datos para un tipo de evento, la sesión podría utilizarlo para filtrar los eventos de ese tipo de evento en función de los datos de evento (la semántica del filtro se define mediante el proveedor). Por ejemplo, si el proveedor genera eventos de proceso, podría definir un filtro de datos que filtrara los eventos de proceso en función de un identificador de proceso. A continuación, la sesión podría pasar un identificador de proceso como datos de filtro al proveedor y recibir solo los eventos de proceso para ese identificador de proceso.
+Normalmente, los proveedores solo escriben eventos y la sesión identifica los tipos de eventos que desea usar las palabras clave level y . Si el proveedor definió un filtro de datos para un tipo de evento, la sesión podría usarlo para filtrar los eventos de ese tipo de evento en función de los datos del evento (el proveedor define la semántica del filtro). Por ejemplo, si el proveedor genera eventos de proceso, podría definir un filtro de datos que filtrara los eventos de proceso en función de un identificador de proceso. A continuación, la sesión podría pasar un identificador de proceso como datos de filtro al proveedor y recibir solo eventos de proceso para ese identificador de proceso.
 
-En el ejemplo siguiente se muestra cómo utilizar el elemento **Filter** para definir un filtro. Debe especificar los atributos de **nombre** y **valor** del filtro; los demás atributos son opcionales. El atributo **TID** es obligatorio si el filtro requiere que la sesión pase los datos de filtro.
+En el ejemplo siguiente se muestra cómo usar el **elemento filter** para definir un filtro. Debe especificar los atributos de nombre **y** **valor del** filtro; los demás atributos son opcionales. El **atributo tid** es necesario si el filtro requiere que la sesión pase los datos del filtro.
 
 
 ```XML

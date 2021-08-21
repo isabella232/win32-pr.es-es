@@ -13,7 +13,7 @@ ms.locfileid: "119047703"
 ---
 # <a name="what-support-for-an-interface-means"></a>Qué significa la compatibilidad con una interfaz
 
-Además de la [**interfaz IUnknown,**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) un control ActiveX o un objeto COM expresan cualquier funcionalidad opcional que admita a través de interfaces adicionales. Es decir, no se requieren otras interfaces por encima **de IUnknown**. Para ello, en la tabla siguiente se enumeran las interfaces que un control ActiveX Control podría admitir y lo que significa admitir esa interfaz.
+Además de la [**interfaz IUnknown,**](/windows/desktop/api/Unknwn/nn-unknwn-iunknown) un control ActiveX o un objeto COM expresan cualquier funcionalidad opcional que admita a través de interfaces adicionales. Es decir, no se requieren otras interfaces por encima **de IUnknown**. Con ese fin, en la tabla siguiente se enumeran las interfaces que un control ActiveX Control podría admitir y lo que significa admitir esa interfaz.
 
 
 

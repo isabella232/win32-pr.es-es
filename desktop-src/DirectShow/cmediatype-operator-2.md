@@ -1,7 +1,7 @@
 ---
 description: Este operador sobrecarga el operador de asignación para copiar un tipo de medio.
 ms.assetid: 5b94191d-b5e4-42b2-b0c5-8c2da2483c54
-title: 'CMediaType. CMediaType:: Operator = Method (mtype. h): parámetro mtype'
+title: 'Método CMediaType.CMediaType::operator= (Mtype.h): parámetro mtype'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dfa577c8c8cfcdbcb0b62287a80cd998ab8775c6
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: b5960ac5f9dc3e685aa0b8b281989185580fd5b683392aaf93a0891d0ebaa35d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016272"
 ---
-# <a name="cmediatypecmediatypeoperator-method-mtypeh"></a>CMediaType. CMediaType:: Operator = método (mtype. h)
+# <a name="cmediatypecmediatypeoperator-method-mtypeh"></a>Método CMediaType.CMediaType::operator= (Mtype.h)
 
 Este operador sobrecarga el operador de asignación para copiar un tipo de medio.
 
@@ -42,16 +42,16 @@ CMediaType& CMediaType::operator=(
 
 <dl> <dt>
 
-*mtype* \[ CLI\]
+*mtype* \[ Ref\]
 </dt> <dd>
 
-Referencia a una estructura de [**\_ \_ tipo de medio am**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
+Referencia a una [**estructura \_ AM MEDIA \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve una referencia al objeto.
+Devuelve una referencia al objeto .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve una referencia al objeto.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Mtype. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Mtype.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve una referencia al objeto.
 
 <dl> <dt>
 
-[**Clase CMediaType**](cmediatype.md)
+[**CMediaType (clase)**](cmediatype.md)
 </dt> </dl>
 
  

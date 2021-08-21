@@ -1,9 +1,9 @@
 ---
-title: BUTTON. transparencyColor
-description: El atributo transparencyColor especifica o recupera el color que será transparente en las imágenes del botón.
+title: BUTTON.transparencyColor
+description: El atributo transparencyColor especifica o recupera el color que será transparente en las imágenes BUTTON.
 ms.assetid: c22f9965-3118-4c96-8ff5-7fbaa28cbb57
 keywords:
-- BUTTON. transparencyColor Windows Media Player
+- BUTTON.transparencyColor Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 771249ddb070c596dc126b9b0c8c7d04a4b4268f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7d51e42b1636958edd772d27c4e5a29720fa0dd87a74784f28f3ffeb7891873c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118840468"
 ---
-# <a name="buttontransparencycolor"></a>BUTTON. transparencyColor
+# <a name="buttontransparencycolor"></a>BUTTON.transparencyColor
 
-El atributo **transparencyColor** especifica o recupera el color que será transparente en las imágenes del **botón** .
+El **atributo transparencyColor** especifica o recupera el color que será transparente en las **imágenes BUTTON.**
 
 ``` syntax
         elementID.transparencyColor
@@ -29,37 +29,37 @@ El atributo **transparencyColor** especifica o recupera el color que será trans
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura sin valor predeterminado que contiene uno de los valores siguientes.
+Este atributo es una cadena de lectura **y** escritura sin ningún valor predeterminado que contenga uno de los valores siguientes.
 
 
 
-| Value                                    | Descripción                                                                                               |
+| Valor                                    | Descripción                                                                                               |
 |------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Automático                                     | El color del píxel en la ubicación 0, 0 en la imagen se convierte en el color transparente.                        |
-| Cualquier valor de formato de color de Internet Explorer | Un valor de formato de color de Internet Explorer se convierte en el color transparente (por ejemplo, "red" o " \# FF0000"). |
-| None                                     | Sin transparencia.                                                                                          |
+| Auto                                     | El color del píxel en la ubicación 0,0 de la imagen se convierte en el color transparente.                        |
+| Cualquier Internet Explorer de formato de color | Un Internet Explorer de formato de color se convierte en el color transparente (por ejemplo, "rojo" o \# "FF0000"). |
+| Ninguno                                     | Sin transparencia.                                                                                          |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un color transparente en una imagen permite que el que está detrás de la imagen se muestre a través de las áreas transparentes. El **botón** seguirá recibiendo clics en la región transparente.
+Un color transparente en una imagen permite que lo que hay detrás de la imagen se muestre a través de las áreas transparentes. El **BOTÓN** seguirá recibiendo clics en la región transparente.
 
-El color transparente puede ser cualquier valor de color de Internet Explorer. Si el valor del atributo **transparencyColor** se establece en "auto", se usa el color del píxel en la ubicación 0, 0 en la imagen.
+El color transparente puede ser cualquier valor Internet Explorer de color. Si el valor del atributo **transparencyColor** se establece en "Auto", se usa el color del píxel en la ubicación 0,0 de la imagen.
 
-Si el color especificado no es ninguno de los colores de IE válidos, se mantiene el valor anterior.
+Si el color especificado no es uno de los colores de IE válidos, se mantiene el valor anterior.
 
-Dado que los JPGs se pierden y, por lo tanto, están sujetos a cambios de color inesperados, no se recomiendan cuando se usa **transparencyColor** .
+Dado que los JPG son de pérdida y, por tanto, están sujetos a un cambio de color inesperado, no se recomiendan cuando **se usa transparencyColor.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -70,7 +70,7 @@ Dado que los JPGs se pierden y, por lo tanto, están sujetos a cambios de color 
 [**Elemento BUTTON**](button-element.md)
 </dt> <dt>
 
-[**BOTÓN. imagen**](button-image.md)
+[**BUTTON.image**](button-image.md)
 </dt> <dt>
 
 [**Referencia de color**](color-reference.md)

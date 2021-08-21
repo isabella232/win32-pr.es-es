@@ -1,5 +1,5 @@
 ---
-description: Microsoft Telephony Application Programming Interface (TAPI) versión 2.2 (TAPI/C) permite la implementación de aplicaciones de comunicaciones que van desde el control de módem básico hasta los centros de llamadas con varios agentes y conmutadores.
+description: La versión 2.2 (TAPI/C) de la Interfaz de programación de aplicaciones de telefonía de Microsoft (TAPI) permite la implementación de aplicaciones de comunicaciones que van desde el control de módem básico hasta los centros de llamadas con varios agentes y conmutadores.
 ms.assetid: 02bfe923-9915-439e-ac7c-a570416d054a
 title: Interfaz de programación de aplicaciones de telefonía versión 2.2
 ms.topic: article
@@ -15,23 +15,23 @@ ms.locfileid: "119060273"
 
 ## <a name="purpose"></a>Propósito
 
-Microsoft Telephony Application Programming Interface (TAPI) versión 2.2 (TAPI/C) permite la implementación de aplicaciones de comunicaciones que van desde el control de módem básico hasta los centros de llamadas con varios agentes y conmutadores.
+La versión 2.2 (TAPI/C) de la Interfaz de programación de aplicaciones de telefonía de Microsoft (TAPI) permite la implementación de aplicaciones de comunicaciones que van desde el control de módem básico hasta los centros de llamadas con varios agentes y conmutadores.
 
 ## <a name="where-applicable"></a>Donde sea aplicable
 
 Las posibles aplicaciones TAPI 2.2 incluyen:
 
 -   Llamadas de voz básicas en la red telefónica conmutada pública (RTC)
--   Aplicaciones de centro de llamadas para el seguimiento de varios agentes
+-   Aplicaciones del centro de llamadas para el seguimiento de varios agentes
 -   Control de módem
 -   Control DE CONTROL DE CONTROL
 -   Sistemas de respuesta de voz interactiva (IVR)
 -   Buzón de voz
--   Control detallado de dispositivos telefónicos
+-   Control detallado de dispositivos de teléfono
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-TAPI/C está diseñado para su uso por los programadores de C/C++. La experiencia de desarrollo con telecomunicaciones u otras aplicaciones de telefonía es útil, pero no es necesaria.
+TAPI/C está diseñado para su uso por parte de programadores de C/C++. La experiencia de desarrollo con telecomunicaciones u otras aplicaciones de telefonía es útil, pero no es necesaria.
 
 ## <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 

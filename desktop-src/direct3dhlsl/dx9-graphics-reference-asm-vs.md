@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: aa36895afc34c2604cdeb60366b08aff6a1aafb6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c9fa88a3ca5b89f1fdb8a0694e4ae9cdcca54e9b400db75a5df9bfb057b3c43f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119539"
 ---
 # <a name="vertex-shaders"></a>Sombreadores de vértices
 
@@ -32,7 +32,7 @@ ms.locfileid: "104418698"
 -   [Instrucciones del sombreador de vértices](dx9-graphics-reference-asm-vs-instructions.md)
 -   [Registros del sombreador de vértices](dx9-graphics-reference-asm-vs-registers.md)
 
-Para ver las características más recientes introducidas en el modelo de sombreador 3, consulte:
+Para ver las características más nuevas introducidas en el modelo de sombreador 3, consulte:
 
 -   [Shader Model 3 (DirectX HLSL)](shader-model-3.md)
 
@@ -40,12 +40,12 @@ Para ver las características más recientes introducidas en el modelo de sombre
 
 <dl> <dt>
 
-[Referencia del sombreador de ASM](dx9-graphics-reference-asm.md)
+[Referencia del sombreador asm](dx9-graphics-reference-asm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

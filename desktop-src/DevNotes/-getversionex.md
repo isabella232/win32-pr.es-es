@@ -49,13 +49,13 @@ BOOL _GetVersionEx(
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Archivo DLL<br/> | <dl> <dt>Msmdun80.dll; </dt> <dt>Sqlunirl.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

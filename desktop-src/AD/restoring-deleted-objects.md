@@ -1,84 +1,84 @@
 ---
 title: Restaurar objetos eliminados
-description: Windows Server 2003 incluye 0034; restore Deleted Objects \ 0034; ofrecen.
+description: Windows Server 2003 incluye \ 0034;restaurar objetos eliminados \ 0034; Característica.
 ms.assetid: b64c5c91-fb76-4323-b78d-f692aa887c96
 ms.tgt_platform: multiple
 keywords:
-- Restaurando objetos eliminados AD
-- Active Directory, usar, restaurar objetos eliminados
-- objetos AD, restaurar objetos eliminados
+- Restauración de objetos eliminados de AD
+- Active Directory, mediante, restaurar objetos eliminados
+- objetos ad , restaurar objetos eliminados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f8f1d3511bb4246826e677aa239ca594918127a
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 431bcddcbd15366a6accf9b8368fa8d34377b27af923fb102803b6316462634e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104533088"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025123"
 ---
 # <a name="restoring-deleted-objects"></a>Restaurar objetos eliminados
 
 Windows Server 2003 incluye la característica "restaurar objetos eliminados".
 
-Para habilitar la restauración de objetos eliminados, al menos un controlador de dominio en el dominio debe ejecutarse en Windows Server 2003 o en una versión posterior de Windows. De forma predeterminada, solo los administradores de dominio pueden restaurar los objetos eliminados, aunque esto se puede delegar a otros usuarios.
+Para habilitar la restauración de objetos eliminados, al menos un controlador de dominio del dominio debe ejecutarse en Windows Server 2003 o en una versión posterior de Windows. De forma predeterminada, solo los administradores de dominio pueden restaurar objetos eliminados, aunque esto se puede delegar a otros.
 
-Se aplican las siguientes limitaciones a la restauración de objetos eliminados:
+Las siguientes limitaciones se aplican a la restauración de objetos eliminados:
 
--   No se puede restaurar un objeto cuando la duración del objeto de desecho del objeto ha expirado porque cuando la duración de los objetos de desecho ha expirado, el objeto se elimina permanentemente.
+-   No se puede restaurar un objeto cuando la duración del objeto ha expirado porque, cuando ha expirado la duración del mismo, el objeto se elimina permanentemente.
 -   Los objetos que existen en la raíz del contexto de nomenclatura, como un dominio o una partición de aplicación, no se pueden restaurar.
--   Los objetos de esquema no se pueden restaurar. Los objetos de esquema no deben eliminarse nunca.
--   Es posible restaurar los contenedores eliminados, pero la restauración de los objetos eliminados que estaban en el contenedor antes de la eliminación es difícil porque la estructura de árbol del contenedor debe reconstruirse manualmente.
+-   Los objetos de esquema no se pueden restaurar. Los objetos de esquema nunca se deben eliminar.
+-   Es posible restaurar los contenedores eliminados, pero la restauración de los objetos eliminados que estaban en el contenedor antes de la eliminación es difícil porque la estructura de árbol bajo el contenedor debe reconstruirse manualmente.
 
 ## <a name="permissions-required-to-restore-a-deleted-object"></a>Permisos necesarios para restaurar un objeto eliminado
 
-Cuando se elimina un objeto, se conserva el descriptor de seguridad del objeto. Aunque el propietario se puede identificar desde el descriptor de seguridad, por motivos de seguridad, solo los administradores de dominio pueden restaurar los objetos eliminados. Los administradores de dominio pueden conceder el permiso para restaurar los objetos de eliminación a otros usuarios y grupos; para ello, se concede al usuario o grupo el derecho de acceso de control "reanimación de marcadores de exclusión". El derecho de acceso de control "reanimar marcadores de exclusión" se concede en la raíz del contexto de nomenclatura. Solo los usuarios con permiso de acceso de lectura en un objeto y sus atributos pueden leer el objeto y los atributos accesibles una vez eliminado el objeto.
+Cuando se elimina un objeto, se conserva el descriptor de seguridad del objeto. Aunque el propietario se puede identificar desde el descriptor de seguridad, por motivos de seguridad, solo los administradores de dominio pueden restaurar objetos eliminados. Los administradores de dominio pueden conceder el permiso para restaurar objetos de eliminación a otros usuarios y grupos concediendo al usuario o grupo el derecho de acceso de control "Reanimate Tombstone". El derecho de acceso de control "Reanimate Tombstone" se concede en la raíz contexto de nomenclatura. Solo los usuarios que tenían permiso de acceso de lectura en un objeto y sus atributos pueden leer el objeto y los atributos accesibles después de eliminar el objeto.
 
 > [!Note]  
-> Conceder a un usuario este permiso puede suponer un riesgo para la seguridad porque podría permitir al usuario restaurar un objeto de cuenta que tiene acceso a los recursos a los que el usuario no tendría acceso normalmente. Al restaurar una cuenta, el usuario adquiere esencialmente el control de esta cuenta, ya que el usuario debe establecer la contraseña inicial en la cuenta cuando se restaure la cuenta.
+> Conceder este permiso a un usuario puede ser un riesgo de seguridad porque podría permitir al usuario restaurar un objeto de cuenta que tenga acceso a recursos a los que normalmente no tendría acceso el usuario. Al restaurar una cuenta, el usuario obtiene básicamente el control de esta cuenta porque el usuario debe establecer la contraseña inicial en la cuenta cuando se restaura la cuenta.
 
- 
+ 
 
 Para restaurar completamente un objeto eliminado, el usuario debe:
 
--   Tener o ser miembro de un grupo que tenga, el derecho de acceso de control "reanimación de marcadores de exclusión".
+-   Tener o ser miembro de un grupo que tenga el derecho de acceso de control "Reanimate Tombstone".
 
--   Tenga acceso de escritura para cada atributo obligatorio que requiere actualización.
+-   Tener acceso de escritura para cada atributo obligatorio que requiera actualización.
 
 -   Tener acceso de escritura al nombre distintivo relativo (RDN).
 
--   Tenga acceso de escritura a cada atributo opcional que deba actualizarse.
+-   Tener acceso de escritura a cada atributo opcional que deba actualizarse.
 
--   Tener derechos de creación secundarios en el contenedor de destino para la clase de objeto del objeto restaurado.
+-   Tener derechos de creación de elementos secundarios en el contenedor de destino para la clase de objeto del objeto restaurado.
 
     > [!Note]  
-    > El atributo **IsDeleted** no se comprueba durante la operación de restauración. Ni se comprobará el permiso Delete-Child en el contenedor "objetos eliminados".
+    > El **atributo isDeleted** no se comprueba durante la operación de restauración. Tampoco se comprobará el permiso delete-child en el contenedor "Deleted Objects".
 
-     
+     
 
 ## <a name="restoring-a-deleted-object"></a>Restaurar un objeto eliminado
 
-Para restaurar un objeto eliminado, primero se debe encontrar el objeto en el contenedor de objetos eliminados. Para obtener más información sobre la recuperación de objetos eliminados, vea [recuperar objetos eliminados](retrieving-deleted-objects.md).
+Para restaurar un objeto eliminado, el objeto debe encontrarse primero en el contenedor Objetos eliminados. Para obtener más información sobre cómo recuperar objetos eliminados, vea [Recuperar objetos eliminados.](retrieving-deleted-objects.md)
 
-Cuando se encuentra el objeto, se deben completar las siguientes operaciones en una única operación LDAP. Esto requiere el uso de la [**función \_ \_ ext \_ s de LDAP Modify**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_modify_ext_s) con el [**servidor LDAP para mostrar el control \_ \_ \_ \_ OID eliminado**](/previous-versions/windows/desktop/ldap/ldap-server-show-deleted-oid) .
+Cuando se ha ubicado el objeto , las siguientes operaciones deben completarse en una única operación LDAP. Esto requiere el uso de la función [**ldap \_ modify ext \_ \_ s**](/previous-versions/windows/desktop/api/winldap/nf-winldap-ldap_modify_ext_s) con el control [**\_ \_ \_ \_ OID SHOW DELETED de LDAP SERVER.**](/previous-versions/windows/desktop/ldap/ldap-server-show-deleted-oid)
 
--   Quite el valor del atributo **IsDeleted** . El valor del atributo **IsDeleted** debe quitarse y no debe estar establecido en **false**.
--   Reemplace el nombre distintivo del objeto para que se mueva a un contenedor que no sea el contenedor de objetos eliminados. Puede ser cualquier contenedor que normalmente pueda contener el objeto. El nombre distintivo del contenedor anterior del objeto se puede encontrar en el atributo **lastKnownParent** del objeto eliminado. El atributo **lastKnownParent** solo se establece si el objeto se eliminó en un controlador de dominio de Windows Server 2003. Por lo tanto, es posible que el contenido del atributo **lastKnownParent** sea inexacto.
--   Restaure los atributos obligatorios para el objeto que se borró durante la eliminación.
+-   Quite el **valor del atributo isDeleted.** El **valor del atributo isDeleted** debe quitarse, no establecerse en **FALSE.**
+-   Reemplace el nombre distintivo del objeto para que se traslade a un contenedor que no sea el contenedor Objetos eliminados. Puede ser cualquier contenedor que normalmente pueda contener el objeto . El nombre distintivo del contenedor anterior del objeto se puede encontrar en el atributo **lastKnownParent** del objeto eliminado. El **atributo lastKnownParent** solo se establece si el objeto se eliminó en un Windows de dominio de Server 2003. Por lo tanto, es posible que el contenido del atributo **lastKnownParent** sea inexacto.
+-   Restaure los atributos obligatorios para el objeto que se borraron durante la eliminación.
 
 > [!Note]  
-> El atributo **objectCategory** también se puede establecer cuando se restaura el objeto, pero no es necesario. Si no se especifica ningún valor **objectCategory** , se utiliza el **objectCategory** predeterminado para el objeto **objectClass** .
+> El **atributo objectCategory** también se puede establecer cuando se restaura el objeto, pero no es necesario. Si no se especifica ningún valor **objectCategory,** se usa **el valor predeterminado objectCategory** para **objectClass** del objeto.
 
- 
+ 
 
-Una vez restaurado el objeto, se puede obtener acceso a él como estaba antes de eliminarlo. En este momento, se deben restaurar todos los atributos opcionales que sean importantes. También se deben restaurar las referencias al objeto desde otros objetos del directorio.
+Una vez restaurado el objeto, se puede acceder a él tal y como estaba antes de que se eliminara. En este momento, se deben restaurar los atributos opcionales que sean importantes. También se deben restaurar las referencias al objeto desde otros objetos del directorio.
 
-Como medida de seguridad, los objetos de usuario se deshabilitan cuando se restauran. Los objetos de usuario deben estar habilitados después de restaurar los atributos opcionales para permitir el uso del objeto de usuario.
+Como medida de seguridad, los objetos de usuario se deshabilitan cuando se restauran. Los objetos de usuario deben habilitarse después de restaurar los atributos opcionales para permitir el uso del objeto de usuario.
 
-Para obtener más información y un ejemplo de código que muestra cómo restaurar un objeto eliminado, vea la siguiente función RestoreDeletedObject.
+Para obtener más información y un ejemplo de código que muestra cómo restaurar un objeto eliminado, vea la función RestoreDeletedObject a continuación.
 
 ## <a name="restoredeletedobject"></a>RestoreDeletedObject
 
-En el ejemplo de código de C++ siguiente se muestra cómo restaurar un objeto eliminado.
+En el siguiente ejemplo de código de C++ se muestra cómo restaurar un objeto eliminado.
 
 
 ```C++
@@ -246,6 +246,6 @@ HRESULT RestoreDeletedObject(LPCWSTR pwszDeletedDN, LPCWSTR pwszDestContainerDN)
 
 
 
- 
+ 
 
- 
+ 

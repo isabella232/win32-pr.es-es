@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectVariable asblend (D3dx11effect. h)
-description: Obtiene una variable Effect-Blend.
+title: Método ASBlend ID3DX11EffectVariable (D3dx11effect.h)
+description: Obtiene una variable effect-blend.
 ms.assetid: e9670d13-e006-408b-9cdf-352bcfa66a52
 keywords:
-- Asblend (método) Direct3D 11
-- Método asblend Direct3D 11, interfaz ID3DX11EffectVariable
-- Interfaz ID3DX11EffectVariable Direct3D 11, asblend (método)
+- Método AsBlend Direct3D 11
+- Método AsBlend Direct3D 11, interfaz ID3DX11EffectVariable
+- Interfaz ID3DX11EffectVariable Direct3D 11 , método AsBlend
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87f7e3d09a1299d00482e9a5cfbb75f563d4bba5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3fd9f6f76c0e3aa46e176b2f35960196fcc73eb021d4e5a250be4a5b245a5ca4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118531607"
 ---
-# <a name="id3dx11effectvariableasblend-method"></a>ID3DX11EffectVariable:: asblend (método)
+# <a name="id3dx11effectvariableasblend-method"></a>Método ID3DX11EffectVariable::AsBlend
 
-Obtiene una variable Effect-Blend.
+Obtiene una variable effect-blend.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,16 +45,16 @@ Este método no tiene parámetros.
 
 Tipo: **[ **ID3DX11EffectBlendVariable**](id3dx11effectblendvariable.md)\***
 
-Puntero a una variable de Blend de efecto. Vea [**ID3DX11EffectBlendVariable**](id3dx11effectblendvariable.md).
+Puntero a una variable de combinación de efecto. Vea [**ID3DX11EffectBlendVariable.**](id3dx11effectblendvariable.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Asblend devuelve una versión de la variable de efecto que se ha especializado en una variable Effect-Blend. De forma similar a una conversión, esta especialización devolverá un objeto no válido si la variable de efecto no contiene datos de mezcla de efectos.
+AsBlend devuelve una versión de la variable de efecto que se ha especializado en una variable de combinación de efecto. De forma similar a una conversión, esta especialización devolverá un objeto no válido si la variable de efecto no contiene datos de combinación de efecto.
 
-Las aplicaciones pueden probar la validez del objeto devuelto mediante una llamada a [**IsValid**](id3dx11effectvariable-isvalid.md).
+Las aplicaciones pueden probar la validez del objeto devuelto llamando a [**IsValid.**](id3dx11effectvariable-isvalid.md)
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -64,8 +64,8 @@ Las aplicaciones pueden probar la validez del objeto devuelto mediante una llama
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

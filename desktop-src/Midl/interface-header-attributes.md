@@ -23,18 +23,18 @@ Incorpore estos atributos en el encabezado de interfaz para transmitir informaci
 |---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**uuid \_ asincrónico**](async-uuid.md)           | Dirige al compilador MIDL para definir las versiones sincrónicas y asincrónicas de una interfaz COM.                                                                                                                                               |
 | [**Uuid**](uuid.md)                        | Designa un valor de 128 bits que distingue una interfaz determinada de todas las demás. El valor real puede representar un GUID, un CLSID o un IID.                                                                                                 |
-| [**local**](local.md)                      | Dirige al compilador MIDL para generar solo archivos de encabezado. Una interfaz debe tener un [**uuid**](uuid.md) o un [**atributo local.**](local.md)                                                                                             |
-| [**ms \_ union**](-ms-union.md)              | Controla la alineación de API de las uniones no superadas. Se usa para la compatibilidad con versiones anteriores con interfaces creadas en MIDL 1.0 o 2.0.                                                                                                                   |
-| [**object**](object.md)                    | Identifica la interfaz como una interfaz COM y dirige al compilador MIDL para que genere código proxy/stub en lugar de código auxiliar de cliente RPC y servidor.                                                                                                    |
+| [**Local**](local.md)                      | Dirige al compilador MIDL para que genere solo archivos de encabezado. Una interfaz debe tener un [**uuid**](uuid.md) o un [**atributo local.**](local.md)                                                                                             |
+| [**ms \_ union**](-ms-union.md)              | Controla la alineación de BAND de las uniones nocapsuladas. Se usa para la compatibilidad con versiones anteriores con interfaces creadas en MIDL 1.0 o 2.0.                                                                                                                   |
+| [**object**](object.md)                    | Identifica la interfaz como una interfaz COM y dirige al compilador MIDL para que genere código proxy/stub en lugar de código auxiliar de cliente y servidor RPC.                                                                                                    |
 | [**Versión**](version.md)                  | Identifica una versión determinada de una interfaz en los casos en los que existen varias versiones de la interfaz. Dado que las interfaces COM son inmutables, no se puede usar el [**atributo version**](version.md) en una [**interfaz de**](object.md) objeto. |
-| [**valor \_ predeterminado del puntero**](pointer-default.md) | Especifica el tipo de puntero predeterminado para todos los punteros, excepto para los incluidos en las listas de parámetros. El tipo predeterminado puede ser [**único,**](unique.md) [**ref**](ref.md)o [**ptr**](ptr.md).                                                   |
+| [**valor \_ predeterminado del puntero**](pointer-default.md) | Especifica el tipo de puntero predeterminado para todos los punteros, excepto los incluidos en las listas de parámetros. El tipo predeterminado puede ser [**único,**](unique.md) [**ref**](ref.md)o [**ptr.**](ptr.md)                                                   |
 | [**Extremo**](endpoint.md)                | Especifica un punto de conexión estático (conocido) en el que una aplicación de servidor escuchará las llamadas a procedimiento remoto.                                                                                                                                   |
 
 
 
  
 
-Vea [Atributos de la biblioteca](type-library-attributes.md) de tipos para los atributos de interfaz, como [**dual**](dual.md) y [**oleautomation,**](oleautomation.md)que son específicos de las interfaces definidas o a las que se hace referencia dentro de una instrucción de biblioteca.
+Vea [Atributos de la biblioteca de](type-library-attributes.md) tipos para los atributos de interfaz, como [**dual**](dual.md) y [**oleautomation,**](oleautomation.md)que son específicos de las interfaces definidas o a las que se hace referencia dentro de una instrucción de biblioteca.
 
  
 

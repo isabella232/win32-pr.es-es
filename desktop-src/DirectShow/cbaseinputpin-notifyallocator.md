@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c63e448d0cf2d287a441a4983f6a2e06bd9b8151
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 37bcd7d8d69f18dce98339a34a4641ddd2502e946e29a0097fe6c381f4af5c2b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017013"
 ---
-# <a name="cbaseinputpinnotifyallocator-method"></a>CBaseInputPin.NotifyAllocator (método)
+# <a name="cbaseinputpinnotifyallocator-method"></a>Método CBaseInputPin.NotifyAllocator
 
 El `NotifyAllocator` método especifica un asignador para la conexión. Este método implementa el [**método IMemInputPin::NotifyAllocator.**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-notifyallocator)
 
@@ -53,7 +53,7 @@ Puntero a la interfaz [**IMemAllocator del asignador.**](/windows/desktop/api/St
 *bReadOnly* 
 </dt> <dd>
 
-Marca que especifica si los ejemplos de este asignador son de solo lectura. Si **es TRUE,** los ejemplos son de solo lectura.
+Marca que especifica si las muestras de este asignador son de solo lectura. Si **es TRUE,** los ejemplos son de solo lectura.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Devuelve S \_ OK.
 
 ## <a name="remarks"></a>Comentarios
 
-Durante la conexión de anclado, el pin de salida elige un asignador y llama a este método para notificar al pin de entrada. El pin de salida puede usar el asignador que el pin de entrada propuesto en el método [**IMemInputPin::GetAllocator,**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-getallocator) o puede proporcionar su propio asignador.
+Durante la conexión de pin, el pin de salida elige un asignador y llama a este método para notificar al pin de entrada. El pin de salida puede usar el asignador que el pin de entrada propuesto en el método [**IMemInputPin::GetAllocator,**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-getallocator) o puede proporcionar su propio asignador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,12 +71,12 @@ Durante la conexión de anclado, el pin de salida elige un asignador y llama a e
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

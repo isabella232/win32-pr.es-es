@@ -3,9 +3,9 @@ title: IResultsViewer GoBack (método)
 description: Reservado. | IResultsViewer GoBack (método)
 ms.assetid: e297fd70-96ec-4a01-81b2-de28b8fd37dd
 keywords:
-- Método GoBack características de entorno de Windows heredadas
-- Método GoBack características del entorno de Windows heredado, interfaz IResultsViewer
-- Interfaz IResultsViewer características del entorno de Windows heredado, método GoBack
+- Método GoBack Legacy Windows Environment Features
+- Método GoBack Legacy Windows Environment Features , interfaz IResultsViewer
+- IResultsViewer interface Legacy Windows Environment Features , GoBack method
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 37bd121befff1ad92b757ff39f3447a2651179b9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b7079eebba11d5476c0240326d506d893c74725464a96844a8fcc36377b75233
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118754264"
 ---
-# <a name="iresultsviewergoback-method"></a>IResultsViewer:: GoBack (método)
+# <a name="iresultsviewergoback-method"></a>IResultsViewer::GoBack (método)
 
 Este método no se implementa.
 

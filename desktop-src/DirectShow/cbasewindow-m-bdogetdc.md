@@ -1,7 +1,7 @@
 ---
-description: Marca que especifica si se debe recuperar el contexto de dispositivo (DC). Si es TRUE, el objeto recupera un identificador del controlador de dominio de la ventana y crea un controlador de dominio de memoria compatible.
+description: Marca que especifica si se debe recuperar el contexto del dispositivo (DC). Si es TRUE, el objeto recupera un identificador en el controlador de dominio de la ventana y crea un controlador de dominio de memoria compatible.
 ms.assetid: e8b8dcc9-0046-40f8-9009-e23d839ef1db
-title: 'Miembro CBaseWindow:: m_bDoGetDC (Winutil. h)'
+title: CBaseWindow::m_bDoGetDC miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0d0b08951944c93b8873eddae26a825aacadf4be
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8efb4deef07cd6109fa6f4c9d4513d664cfde9370ff7d19a81208a81adef77b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016583"
 ---
-# <a name="cbasewindowm_bdogetdc-member"></a>Miembro bDoGetDC CBaseWindow:: m \_
+# <a name="cbasewindowm_bdogetdc-member"></a>Miembro CBaseWindow::m \_ bDoGetDC
 
-Marca que especifica si se debe recuperar el contexto de dispositivo (DC). Si **es true**, el objeto recupera un identificador del controlador de dominio de la ventana y crea un controlador de dominio de memoria compatible.
+Marca que especifica si se debe recuperar el contexto del dispositivo (DC). Si **es TRUE,** el objeto recupera un identificador en el controlador de dominio de la ventana y crea un controlador de dominio de memoria compatible.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ BOOL m_bDoGetDC;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ BOOL m_bDoGetDC;
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

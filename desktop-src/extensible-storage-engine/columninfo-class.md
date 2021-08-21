@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: clase ColumnInfo'
-title: Clase ColumnInfo
+description: 'Más información sobre: ColumnInfo (clase)'
+title: ColumnInfo (clase)
 TOCTitle: ColumnInfo class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.ColumnInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columninfo(v=EXCHG.10)
@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 19e04584584bf3f6c0f19254df83025a47fc8eb9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6dcea5c501628d355067f124c4919118f5b7841a8f63b5af1c7d715a85405f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042423"
 ---
-# <a name="columninfo-class"></a>Clase ColumnInfo
+# <a name="columninfo-class"></a>ColumnInfo (clase)
 
-Información sobre una columna esent. Esta no es una clase de interoperabilidad, pero la usan los métodos auxiliares de metadatos.
+Información sobre una columna de Esent. No se trata de una clase de interoperabilidad, sino que la usan los métodos auxiliares de metadatos.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. ColumnInfo  
+  Microsoft.Isam.Esent.Interop.ColumnInfo  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -64,6 +64,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de ColumnInfo](./columninfo-members.md)
+[Miembros ColumnInfo](./columninfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

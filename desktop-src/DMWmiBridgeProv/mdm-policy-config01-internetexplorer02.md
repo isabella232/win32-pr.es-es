@@ -1,6 +1,6 @@
 ---
 title: Clase MDM_Policy_Config01_InternetExplorer02
-description: La clase MDM \_ Policy \_ Config01 \_ InternetExplorer02 configura las directivas Internet Explorer mdm.
+description: La clase MDM \_ Policy \_ Config01 \_ InternetExplorer02 configura las directivas Internet Explorer MDM.
 ms.assetid: 32cc6a64-3008-4add-96e8-33b31beb207f
 keywords:
 - Clase MDM_Policy_Config01_InternetExplorer02
@@ -26,9 +26,9 @@ ms.locfileid: "119077218"
 ---
 # <a name="mdm_policy_config01_internetexplorer02-class"></a>Clase Mdm \_ Policy \_ Config01 \_ InternetExplorer02
 
-\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La clase MDM \_ Policy \_ Config01 \_ InternetExplorer02 configura las directivas Internet Explorer mdm.
+La clase MDM \_ Policy \_ Config01 \_ InternetExplorer02 configura las directivas Internet Explorer MDM.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -918,7 +918,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -2307,7 +2307,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 </dd> <dt>
@@ -2466,7 +2466,7 @@ Tipo de acceso: lectura y escritura
 
 </dd> <dt>
 
-[RestrictedSitesZoneAllowLessPrivilegedSites](/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-restrictedsiteszoneallowlessprivilegedsites)
+[Sitios restringidosZoneAllowLessPrivilegedSites](/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-restrictedsiteszoneallowlessprivilegedsites)
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -2664,7 +2664,7 @@ Tipo de acceso: lectura y escritura
 
 </dd> <dt>
 
-[RestrictedSitesZoneEnableMIMESniffing](/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-restrictedsiteszoneenablemimesniffing)
+[Sitios restringidosZoneEnableMIMESniffing](/windows/client-management/mdm/policy-csp-internetexplorer#internetexplorer-restrictedsiteszoneenablemimesniffing)
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**

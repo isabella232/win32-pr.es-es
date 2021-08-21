@@ -1,7 +1,7 @@
 ---
-description: Se llama al método StartStreaming cuando el filtro cambia al estado de pausa.
+description: Se llama al método StartStreaming cuando el filtro cambia al estado en pausa.
 ms.assetid: 1e3bbca7-b5b1-41fd-8f70-b7ef39c9491b
-title: Método CTransformFilter. StartStreaming (Transfrm. h)
+title: Método CTransformFilter.StartStreaming (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 50df2db2aada7f96744af5e553f474818594d399
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6d4a0c6e0e047819c208c8e592b971f013f9ed40d456a5b73ad64ea9153ddeaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953434"
 ---
-# <a name="ctransformfilterstartstreaming-method"></a>CTransformFilter. StartStreaming, método
+# <a name="ctransformfilterstartstreaming-method"></a>Método CTransformFilter.StartStreaming
 
-`StartStreaming`Se llama al método cuando el filtro cambia al estado de pausa.
+Se `StartStreaming` llama al método cuando el filtro cambia al estado en pausa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no hace nada en la clase base, pero la clase derivada puede invalidarlo.
+Este método no hace nada en la clase base, pero la clase derivada puede invalidarla.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Este método no hace nada en la clase base, pero la clase derivada puede invalid
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Este método no hace nada en la clase base, pero la clase derivada puede invalid
 
 <dl> <dt>
 
-[**Clase CTransformFilter**](ctransformfilter.md)
+[**CTransformFilter (clase)**](ctransformfilter.md)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: SystemMonitor RESET (método)
-description: Quita todos los objetos de elemento de contador del objeto de colección counters y borra las vistas gráfico y informe.
+title: Método SystemMonitor Reset
+description: Quita todos los objetos CounterItem del objeto de colección Counters y borra las vistas de gráfico y informe.
 ms.assetid: 5d098aea-b0dc-44d7-acc8-23a3f9dd0b2a
 keywords:
-- Restablecer método SysMon
-- Restablecer método SysMon, interfaz SystemMonitor
-- Interfaz SystemMonitor SysMon, método Reset
+- Restablecer el método SysMon
+- Método de restablecimiento SysMon , interfaz SystemMonitor
+- SystemMonitor interface SysMon , Reset (método)
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3928c3cd9d10fd0ecb2d3c273a79be9a84ac5c60
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cc3364fe20c5f82ce0a14deecd8f91f7d4d4c663cb598da1ae27c5ffa4496168
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105665969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118881529"
 ---
-# <a name="systemmonitorreset-method"></a>SystemMonitor:: RESET (método)
+# <a name="systemmonitorreset-method"></a>SystemMonitor::Reset (método)
 
-Quita todos los objetos de [**elemento**](counteritem.md) de contador del objeto de colección **counters** y borra las vistas gráfico y informe.
+Quita todos los [**objetos CounterItem**](counteritem.md) del objeto **de colección Counters** y borra las vistas de gráfico y informe.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Este método no devuelve ningún valor.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                            |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
-| Archivo DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
@@ -60,13 +60,13 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**Counters. Remove**](counters-remove.md)
+[**Counters.Remove**](counters-remove.md)
 </dt> <dt>
 
-[**Logfiles. Remove**](systemmonitor-logfiles-remove.md)
+[**LogFiles.Remove**](systemmonitor-logfiles-remove.md)
 </dt> <dt>
 
-[**SystemMonitor**](systemmonitor.md)
+[**Systemmonitor**](systemmonitor.md)
 </dt> </dl>
 
  

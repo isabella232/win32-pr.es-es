@@ -13,9 +13,9 @@ ms.locfileid: "118975525"
 ---
 # <a name="the-speechinput-object"></a>El objeto SpeechInput
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
-El [**objeto SpeechInput**](https://www.bing.com/search?q=**SpeechInput**) proporciona acceso a las propiedades de entrada de voz mantenidas por el servidor del Agente . Las propiedades son de solo lectura para las aplicaciones cliente, pero el usuario puede cambiarlas en la hoja de propiedades de Microsoft Agent. El servidor devuelve valores solo si se ha instalado un motor de voz compatible y está habilitado.
+El [**objeto SpeechInput**](https://www.bing.com/search?q=**SpeechInput**) proporciona acceso a las propiedades de entrada de voz que mantiene el servidor del Agente . Las propiedades son de solo lectura para las aplicaciones cliente, pero el usuario puede cambiarlas en la hoja de propiedades de Microsoft Agent. El servidor devuelve valores solo si se ha instalado un motor de voz compatible y está habilitado.
 
 Las [**propiedades Engine**](https://www.bing.com/search?q=**Engine**), [**Installed**](https://www.bing.com/search?q=**Installed**)y [**Language**](https://www.bing.com/search?q=**Language**) ya no se admiten, pero (por compatibilidad con versiones anteriores) devuelven valores NULL si se consultan. Para consultar o establecer el modo de un reconocimiento de voz, use la [**propiedad SRModeID.**](srmodeid-property.md)
 

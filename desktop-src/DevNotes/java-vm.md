@@ -16,7 +16,7 @@ ms.locfileid: "118955774"
 ## <a name="in-this-section"></a>En esta sección
 
 -   [**DescargarJavaEX**](downloadjavaex.md)
--   [**CONFIANZA DE JAVA \_**](/windows/desktop/api/Capi/ns-capi-java_trust)
+-   [**CONFIANZA DE \_ JAVA**](/windows/desktop/api/Capi/ns-capi-java_trust)
 -   [**NotifyBrowserShutdown**](notifybrowsershutdown.md)
 -   [**ShowJavaConsole**](showjavaconsole.md)
 

@@ -46,7 +46,7 @@ Devuelve S \_ OK.
 
 ## <a name="remarks"></a>Comentarios
 
-El procedimiento de subproceso, [**CSourceStream::ThreadProc**](csourcestream-threadproc.md), llama a este método antes de salir. El método no hace nada en la clase base; está disponible para que la clase derivada invalide. Si la clase derivada devuelve un código de error, el subproceso se cierra con un error.
+El procedimiento de subproceso, [**CSourceStream::ThreadProc**](csourcestream-threadproc.md), llama a este método antes de salir. El método no hace nada en la clase base; está disponible para la clase derivada que se va a invalidar. Si la clase derivada devuelve un código de error, el subproceso se cierra con un error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ El procedimiento de subproceso, [**CSourceStream::ThreadProc**](csourcestream-th
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

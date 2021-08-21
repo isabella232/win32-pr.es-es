@@ -1,9 +1,9 @@
 ---
-title: Mensaje de MCM_SETCALID (commctrl. h)
-description: Establece el identificador de calendario para el control de calendario determinado. Puede enviar este mensaje explícitamente o mediante la macro MonthCal \_ SetCALID.
+title: MCM_SETCALID mensaje (Commctrl.h)
+description: Establece el identificador de calendario para el control de calendario especificado. Puede enviar este mensaje explícitamente o mediante la macro MonthCal \_ SetPROCD.
 ms.assetid: 4b9d06f5-0784-4a17-b401-982206d4be67
 keywords:
-- MCM_SETCALID controles de mensajes de Windows
+- MCM_SETCALID controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a661a685062fe737a1927c3a6ab455e8499c6ca9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b40e7f4577382aa0e003165e38e4557b8dc234592f747a579e5a071ce2440a37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079005"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119575585"
 ---
-# <a name="mcm_setcalid-message"></a>Mensaje de MCM \_ SETCALID
+# <a name="mcm_setcalid-message"></a>Mensaje \_ SET UNAD DE MCM
 
-Establece el identificador de calendario para el control de calendario determinado. Puede enviar este mensaje explícitamente o mediante la macro [**MonthCal \_ SetCALID**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setcalid) .
+Establece el identificador de calendario para el control de calendario especificado. Puede enviar este mensaje explícitamente o mediante la macro [**MonthCal \_ SetPROCD.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setcalid)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,7 +32,7 @@ Establece el identificador de calendario para el control de calendario determina
 *wParam* 
 </dt> <dd>
 
-IDENTIFICADOR del calendario. Una de las constantes de los [identificadores de calendario](/windows/desktop/Intl/calendar-identifiers) .
+Identificador del calendario. Una de las [constantes de identificadores de](/windows/desktop/Intl/calendar-identifiers) calendario.
 
 </dd> <dt>
 
@@ -51,11 +51,11 @@ Sin usar.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

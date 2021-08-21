@@ -22,7 +22,7 @@ ms.locfileid: "118956754"
 ---
 # <a name="ntgdid3dgetdriverstate-function"></a>Función NtGdiD3DGetDriverState
 
-\[Esta función está sujeta a cambios con cada revisión del sistema operativo. En su lugar, use DirectDraw y Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios del sistema operativo y ocultan muchas otras dificultades implicadas en la interacción directa con los controladores de pantalla.\]
+\[Esta función está sujeta a cambios con cada revisión del sistema operativo. En su lugar, use DirectDraw y Direct3DAPI; estas API aíslan las aplicaciones de estos cambios del sistema operativo y ocultan muchas otras dificultades implicadas en la interacción directa con los controladores de pantalla.\]
 
 Los tiempos de ejecución de Microsoft DirectDraw y Microsoft Direct3D los usan para obtener información del controlador sobre su estado actual.
 
@@ -67,7 +67,7 @@ Puntero a una [**estructura \_ GETDRIVERSTATEDATA**](/windows/win32/api/ddrawint
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
@@ -75,7 +75,7 @@ Puntero a una [**estructura \_ GETDRIVERSTATEDATA**](/windows/win32/api/ddrawint
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

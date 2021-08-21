@@ -1,9 +1,9 @@
 ---
 title: Elemento RestartOnIdle (idleSettingsType)
-description: Especifica si la tarea se reinicia cuando el equipo se recorre en una condición de inactividad más de una vez.
+description: Especifica si la tarea se reinicia cuando el equipo entra en una condición de inactividad más de una vez.
 ms.assetid: 7a7a388c-8dc9-4106-82c1-3435d9f89866
 keywords:
-- Programador de tareas del elemento RestartOnIdle
+- Elemento RestartOnIdle Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ec1d20798b7ceb6ad6ebe2c3a92896600e36eec1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 16a636ebc052bb04a150390659909f0b73cae78871acaacfb4ba529ea2d8e917
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119575145"
 ---
 # <a name="restartonidle-idlesettingstype-element"></a>Elemento RestartOnIdle (idleSettingsType)
 
-Especifica si la tarea se reinicia cuando el equipo se recorre en una condición de inactividad más de una vez.
+Especifica si la tarea se reinicia cuando el equipo entra en una condición de inactividad más de una vez.
 
 ``` syntax
 <xs:element name="RestartOnIdle"
@@ -32,7 +32,7 @@ Especifica si la tarea se reinicia cuando el equipo se recorre en una condición
  />
 ```
 
-El elemento **RestartOnIdle** se define mediante el tipo complejo de [**idleSettingsType**](taskschedulerschema-idlesettingstype-complextype.md) .
+El tipo complejo [**idleSettingsType**](taskschedulerschema-idlesettingstype-complextype.md) define el elemento **RestartOnIdle.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -40,21 +40,21 @@ El elemento **RestartOnIdle** se define mediante el tipo complejo de [**idleSett
 
 | Elemento                                                                       | Derivado de                                                                 | Descripción                                                                                       |
 |-------------------------------------------------------------------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [**IdleSettings**](taskschedulerschema-idlesettings-settingstype-element.md) | [**idleSettingsType**](taskschedulerschema-idlesettingstype-complextype.md) | Especifica cómo realiza el Programador de tareas las tareas cuando el equipo está en un estado de inactividad.<br/> |
+| [**IdleSettings**](taskschedulerschema-idlesettings-settingstype-element.md) | [**idleSettingsType**](taskschedulerschema-idlesettingstype-complextype.md) | Especifica cómo el Programador de tareas realiza tareas cuando el equipo está en estado inactivo.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este elemento solo se utiliza si el elemento [**TerminateOnIdleEnd**](taskschedulerschema-terminateonidleend-idlesettingstype-element.md) está establecido en true.
+Este elemento solo se usa si el [**elemento TerminateOnIdleEnd**](taskschedulerschema-terminateonidleend-idlesettingstype-element.md) está establecido en True.
 
-Para el desarrollo de scripts, esta configuración de tarea se especifica mediante la propiedad [**IdleSettings. RestartOnIdle**](idlesettings-restartonidle.md) .
+Para el desarrollo de scripts, esta configuración de tarea se especifica mediante la [**propiedad IdleSettings.RestartOnIdle.**](idlesettings-restartonidle.md)
 
-En el desarrollo de C++, esta configuración de tarea se especifica mediante la propiedad [**IIdleSettings:: RestartOnIdle**](/windows/desktop/api/taskschd/nf-taskschd-iidlesettings-get_restartonidle) .
+Para el desarrollo de C++, esta configuración de tarea se especifica mediante la [**propiedad IIdleSettings::RestartOnIdle.**](/windows/desktop/api/taskschd/nf-taskschd-iidlesettings-get_restartonidle)
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente código XML define un valor de inactivo que indica que la tarea no debe reiniciarse cuando la condición de inactividad se repite.
+El xml siguiente define una configuración inactiva que indica que la tarea no debe reiniciarse cuando la condición de inactividad se cycle.
 
 
 ```XML
@@ -70,10 +70,10 @@ El siguiente código XML define un valor de inactivo que indica que la tarea no 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -81,7 +81,7 @@ El siguiente código XML define un valor de inactivo que indica que la tarea no 
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

@@ -1,5 +1,5 @@
 ---
-description: Muestra cómo enumerar las bibliotecas como contenedores.
+description: Muestra cómo enumerar bibliotecas como contenedores.
 title: Ejemplo de copia de seguridad de biblioteca de shell
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 7e1b4746d2e559b567adb4cbd2305ea474b03129
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29c7399fb4bda82ffce234379d51c4cd7ceb17a281f82f3e13db8b45c6b0a449
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104986039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032193"
 ---
 # <a name="shell-library-backup-sample"></a>Ejemplo de copia de seguridad de biblioteca de shell
 
-Muestra cómo enumerar las bibliotecas como contenedores. Las bibliotecas son el nuevo paradigma de almacenamiento para los archivos de usuario y se introducen en Windows 7.
+Muestra cómo enumerar bibliotecas como contenedores. Las bibliotecas son el nuevo paradigma de almacenamiento para los archivos de usuario y se presentan en Windows 7.
 
 En este tema se incluyen las siguientes secciones.
 
@@ -26,11 +26,11 @@ En este tema se incluyen las siguientes secciones.
 -   [Requisitos](#requirements)
 -   [Descargar el ejemplo](#downloading-the-sample)
 -   [Compilar el ejemplo](#building-the-sample)
--   [Ejecutar el ejemplo](#running-the-sample)
+-   [Ejecución del ejemplo](#running-the-sample)
 
 ## <a name="description"></a>Descripción
 
-Este ejemplo es una aplicación de copia de seguridad ficticia que muestra cómo elegir bibliotecas a través del cuadro de diálogo archivo común. También muestra cómo realizar copias de seguridad de las bibliotecas mediante el rastreador de espacios de nombres de Shell.
+Este ejemplo es una aplicación ficticia de copia de seguridad que muestra cómo seleccionar bibliotecas a través del cuadro de diálogo de archivo común. También se muestra cómo hacer una copia de seguridad de las bibliotecas mediante el andador de espacios de nombres de Shell.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,27 +39,27 @@ Este ejemplo es una aplicación de copia de seguridad ficticia que muestra cómo
 | Producto                                | Versión mínima del producto |
 |----------------------------------------|-------------------------|
 | Windows                                | Windows 7               |
-| Kit de desarrollo de software de Windows (SDK) | 7.0                     |
+| Kit de desarrollo de software de Windows (SDK) | 7,0                     |
 
 
 
  
 
-Para conocer los requisitos adicionales, consulte el archivo Léame incluido con el ejemplo.
+Para obtener requisitos adicionales, consulte el archivo Léame incluido con el ejemplo.
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-| Ubicación      | URL de ruta de acceso                                                                                             |
+| Location      | Dirección URL de ruta de acceso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Ejemplo de ShellLibraryBackup](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/ShellLibraryBackup) |
 
 ## <a name="building-the-sample"></a>Generar el ejemplo
 
-Para obtener instrucciones sobre cómo generar el ejemplo, vea el archivo Léame incluido con el ejemplo.
+Para obtener instrucciones sobre cómo compilar el ejemplo, vea el archivo Léame incluido con el ejemplo.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-Para obtener instrucciones sobre cómo generar el ejemplo, vea el archivo Léame incluido con el ejemplo.
+Para obtener instrucciones sobre cómo compilar el ejemplo, vea el archivo Léame incluido con el ejemplo.
 
  
 

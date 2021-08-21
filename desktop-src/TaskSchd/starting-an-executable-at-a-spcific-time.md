@@ -20,11 +20,11 @@ La escritura de una tarea que inicia un ejecutable en un momento específico se 
 
 ## <a name="start-boundary"></a>Límite de inicio
 
-Es importante tener en cuenta que un desencadenador de hora es diferente de otros desencadenadores basados en tiempo en que se desencadena cuando el desencadenador se activa por su límite de inicio. Otros desencadenadores basados en tiempo se activan por su límite de inicio, pero no comienzan a realizar sus acciones (en este caso, iniciando un ejecutable) hasta que se alcanza una fecha programada.
+Es importante tener en cuenta que un desencadenador de hora es diferente de otros desencadenadores basados en el tiempo en que se desencadena cuando el desencadenador se activa por su límite de inicio. Otros desencadenadores basados en tiempo se activan por su límite de inicio, pero no comienzan a realizar sus acciones (en este caso, iniciando un ejecutable) hasta que se alcanza una fecha programada.
 
 ## <a name="time-trigger-examples"></a>Ejemplos de desencadenador de tiempo
 
-Los ejemplos siguientes se Bloc de notas 30 segundos después de activar la tarea:
+Los ejemplos siguientes comienzan Bloc de notas 30 segundos después de activar la tarea:
 
 -   [Ejemplo de desencadenador de tiempo (C++)](time-trigger-example--c---.md)
 -   [Ejemplo de desencadenador de tiempo (scripting)](time-trigger-example--scripting-.md)

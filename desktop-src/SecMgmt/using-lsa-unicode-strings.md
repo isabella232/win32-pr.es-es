@@ -1,21 +1,21 @@
 ---
-description: Varias de las funciones de directiva de LSA usan la \_ estructura de cadena Unicode LSA \_ para almacenar información de cadena. Esta estructura almacena la cadena y su información de longitud.
+description: Varias de las funciones de directiva LSA usan la estructura \_ STRING UNICODE LSA para almacenar información de \_ cadena. Esta estructura almacena la cadena y su información de longitud.
 ms.assetid: 8a02cbb4-0b59-4c1e-9831-592a2005905e
-title: Usar cadenas Unicode de LSA
+title: Uso de cadenas Unicode LSA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc00e5b98bf2e287f32934b4ea093570ba3359ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ddb3c3c41ddd1e3a76ca86880fa47c1d0b2a47897727b820c5f4caf501f4263d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118893002"
 ---
-# <a name="using-lsa-unicode-strings"></a>Usar cadenas Unicode de LSA
+# <a name="using-lsa-unicode-strings"></a>Uso de cadenas Unicode LSA
 
-Varias de las funciones de directiva de LSA usan la estructura de [**\_ \_ cadena Unicode LSA**](/windows/desktop/api/lsalookup/ns-lsalookup-lsa_unicode_string) para almacenar información de cadena. Esta estructura almacena la cadena y su información de longitud.
+Varias de las funciones de directiva LSA usan la estructura [**\_ STRING UNICODE \_ LSA**](/windows/desktop/api/lsalookup/ns-lsalookup-lsa_unicode_string) para almacenar información de cadena. Esta estructura almacena la cadena y su información de longitud.
 
-El código siguiente implementa una función que convierte los datos de **LPWStr** en estructuras de [**\_ \_ cadena Unicode LSA**](/windows/desktop/api/lsalookup/ns-lsalookup-lsa_unicode_string) :
+El código siguiente implementa una función que convierte los datos **LPWSTR** en estructuras [**STRING UNICODE \_ \_ LSA:**](/windows/desktop/api/lsalookup/ns-lsalookup-lsa_unicode_string)
 
 
 ```C++

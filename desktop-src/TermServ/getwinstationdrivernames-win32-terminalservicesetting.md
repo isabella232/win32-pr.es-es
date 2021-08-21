@@ -79,7 +79,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

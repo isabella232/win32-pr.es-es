@@ -19,7 +19,7 @@ Las siguientes funciones se usan con líneas y curvas.
 
 | Función                                   | Descripción                                                                                                   |
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [**Angle Vertical**](/windows/desktop/api/Wingdi/nf-wingdi-anglearc)               | Dibuja un segmento de línea y un arco.                                                                              |
+| [**Angle Angle (Ángulo)**](/windows/desktop/api/Wingdi/nf-wingdi-anglearc)               | Dibuja un segmento de línea y un arco.                                                                              |
 | [**Arc**](/windows/desktop/api/Wingdi/nf-wingdi-arc)                         | Dibuja un arco elíptico.                                                                                      |
 | [**ArcTo**](/windows/desktop/api/Wingdi/nf-wingdi-arcto)                     | Dibuja un arco elíptico.                                                                                      |
 | [**GetDirection**](/windows/desktop/api/Wingdi/nf-wingdi-getarcdirection) | Recupera la dirección del arco actual para el contexto de dispositivo especificado.                                         |
@@ -29,11 +29,11 @@ Las siguientes funciones se usan con líneas y curvas.
 | [**MoveToEx**](/windows/desktop/api/Wingdi/nf-wingdi-movetoex)               | Actualiza la posición actual al punto especificado y, opcionalmente, devuelve la posición anterior.             |
 | [**PolyBezier**](/windows/desktop/api/Wingdi/nf-wingdi-polybezier)           | Dibuja una o varias curvas de Bézier.                                                                              |
 | [**PolyBezierTo**](/windows/desktop/api/Wingdi/nf-wingdi-polybezierto)       | Dibuja una o varias curvas de Bézier.                                                                              |
-| [**PolyDraw**](/windows/desktop/api/Wingdi/nf-wingdi-polydraw)               | Dibuja un conjunto de segmentos de línea y curvas bézier.                                                               |
+| [**PolyDraw**](/windows/desktop/api/Wingdi/nf-wingdi-polydraw)               | Dibuja un conjunto de segmentos de línea y curvas de Bézier.                                                               |
 | [**Polilínea**](/windows/desktop/api/Wingdi/nf-wingdi-polyline)               | Dibuja una serie de segmentos de línea conectando los puntos de la matriz especificada.                              |
 | [**PolylineTo**](/windows/desktop/api/Wingdi/nf-wingdi-polylineto)           | Dibuja una o varias líneas rectas.                                                                             |
 | [**PolyPolyline**](/windows/desktop/api/Wingdi/nf-wingdi-polypolyline)       | Dibuja varias series de segmentos de línea conectados.                                                             |
-| [**SetRecDirection**](/windows/desktop/api/Wingdi/nf-wingdi-setarcdirection) | Establece la dirección de dibujo que se va a usar para las funciones de arco y rectángulo.                                        |
+| [**SetDirection**](/windows/desktop/api/Wingdi/nf-wingdi-setarcdirection) | Establece la dirección de dibujo que se va a usar para las funciones de arco y rectángulo.                                        |
 
 
 

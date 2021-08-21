@@ -25,7 +25,7 @@ ms.locfileid: "118956524"
 ---
 # <a name="ntgdidddestroyd3dbuffer-function"></a>Función NtGdiDdDestroyD3DBuffer
 
-\[Esta función está sujeta a cambios con cada revisión del sistema operativo. En su lugar, use DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios en el sistema operativo y ocultan muchas otras dificultades implicadas en la interacción directa con los controladores de pantalla.\]
+\[Esta función está sujeta a cambios con cada revisión del sistema operativo. En su lugar, use DirectDraw y Microsoft Direct3DAPIs; estas API aíslan las aplicaciones de estos cambios del sistema operativo y ocultan muchas otras dificultades implicadas en la interacción directa con los controladores de pantalla.\]
 
 Destruye un objeto de superficie de Microsoft DirectDraw en modo kernel asignado previamente que se creó con el **miembro dwCaps** de la estructura [**DDSCAPS**](/previous-versions/windows/hardware/drivers/ff550286(v=vs.85)) establecida en DDSCAPS \_ EXECUTEBUFFER.
 
@@ -47,7 +47,7 @@ DWORD APIENTRY NtGdiDdDestroyD3DBuffer(
 *hSurface* \[ En\]
 </dt> <dd>
 
-Controle una [**estructura DD \_ DESTROYSURFACEDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_destroysurfacedata) que contenga la información necesaria para destruir un comando o búfer de vértices de Direct3D.
+Controlar una estructura [**DD \_ DESTROYSURFACEDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_destroysurfacedata) que contiene la información necesaria para destruir un comando de Direct3D o un búfer de vértices.
 
 </dd> </dl>
 
@@ -59,7 +59,7 @@ Controle una [**estructura DD \_ DESTROYSURFACEDATA**](/windows/win32/api/ddrawi
 
 | Código devuelto                                                                                              | Descripción                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**CONTROLADOR DDHAL \_ \_ MANIPULADO**</dt> </dl>    | El controlador ha realizado la operación y ha devuelto un código de retorno válido para esa operación. Si este código es DD \_ correcto, DirectDraw o Direct3D continúa con la función . De lo contrario, DirectDraw o Direct3D devuelven el código de error proporcionado por el controlador y anulan la función.<br/>                                                                                 |
+| <dl> <dt>**CONTROLADOR DDHAL \_ \_ MANIPULADO**</dt> </dl>    | El controlador ha realizado la operación y ha devuelto un código de retorno válido para esa operación. Si este código es correcto para \_ DD, DirectDraw o Direct3D continúa con la función . De lo contrario, DirectDraw o Direct3D devuelven el código de error proporcionado por el controlador y anulan la función.<br/>                                                                                 |
 | <dl> <dt>**CONTROLADOR DDHAL \_ \_ NO CONTROLADA**</dt> </dl> | El controlador no tiene ningún comentario sobre la operación solicitada. Si el controlador debe haber implementado una devolución de llamada determinada, DirectDraw o Direct3D notifica una condición de error. De lo contrario, DirectDraw o Direct3D controla la operación como si la devolución de llamada del controlador no se hubiera definido mediante la ejecución de la implementación independiente del dispositivo DirectDraw o Direct3D.<br/> |
 
 
@@ -70,7 +70,7 @@ Controle una [**estructura DD \_ DESTROYSURFACEDATA**](/windows/win32/api/ddrawi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
@@ -78,7 +78,7 @@ Controle una [**estructura DD \_ DESTROYSURFACEDATA**](/windows/win32/api/ddrawi
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
