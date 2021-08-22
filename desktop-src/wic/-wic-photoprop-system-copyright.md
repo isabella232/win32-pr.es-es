@@ -1,23 +1,23 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. Copyright.
+description: Directiva de metadatos de fotos para la propiedad System.Copyright.
 ms.assetid: 84d2f55b-5ca4-4912-b038-c18a72e6fc34
-title: Directiva de metadatos de fotos de System. Copyright
+title: Directiva de metadatos de fotos System.Copyright
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fc65024458d88088e3c0cbeccc3bc9ea0211910
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b00b57bc3523feaa29da9008340bd34c32401879a8fc4e872082bbdcddd1fdf8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118710818"
 ---
-# <a name="systemcopyright-photo-metadata-policy"></a>Directiva de metadatos de fotos de System. Copyright
+# <a name="systemcopyright-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Copyright
 
-La Directiva de metadatos de la fotografía para la propiedad [System. Copyright](../properties/props-system-copyright.md) .
+Directiva de metadatos de fotos para la [propiedad System.Copyright.](../properties/props-system-copyright.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-Copyright de PKEY \_
+PKEY \_ Copyright
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,17 +27,17 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
-VT \_ LPWStr
+VT \_ LPWSTR
 
-### <a name="input-propvariant-type"></a>Tipo de PROPVARIANT de entrada
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT de entrada
 
 String
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
@@ -45,28 +45,28 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                                      | Formato de disco |
+| Pedido | Ruta de acceso                                      | Formato de disco |
 |-------|-------------------------------------------|-------------|
-|       | /app1/IFD/{ushort = 33432}                  | ascii       |
-|       | Aviso de/app13/IRB/8bimiptc/IPTC/Copyright |             |
-|       | /XMP/ <xmpalt> DC: derechos              | unicode     |
-|       | /XMP/DC: derechos                            | unicode     |
-|       | Aviso de/app13/IRB/8bimiptc/IPTC/Copyright |             |
+|       | /app1/ifd/{ushort=33432}                  | ascii       |
+|       | /app13/irb/8bimiptc/iptc/copyright notice |             |
+|       | /xmp/ <xmpalt> dc:rights              | unicode     |
+|       | /xmp/dc:rights                            | unicode     |
+|       | /app13/irb/8bimiptc/iptc/copyright notice |             |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                                      | Formato de disco |
+| Pedido | Ruta de acceso                                      | Formato de disco |
 |-------|-------------------------------------------|-------------|
-|       | /XMP/DC: derechos                            | unicode     |
-|       | /XMP/ <xmpalt> DC: derechos              | unicode     |
-|       | Aviso de/app13/IRB/8bimiptc/IPTC/Copyright |             |
-|       | /app1/IFD/{ushort = 33432}                  | ascii       |
+|       | /xmp/dc:rights                            | unicode     |
+|       | /xmp/ <xmpalt> dc:rights              | unicode     |
+|       | /app13/irb/8bimiptc/iptc/copyright notice |             |
+|       | /app1/ifd/{ushort=33432}                  | ascii       |
 
 
 
@@ -76,11 +76,11 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                                      |
+| Pedido | Ruta de acceso                                      |
 |-------|-------------------------------------------|
-|       | /XMP/DC: derechos                            |
-|       | Aviso de/app13/IRB/8bimiptc/IPTC/Copyright |
-|       | /app1/IFD/{ushort = 33432}                  |
+|       | /xmp/dc:rights                            |
+|       | /app13/irb/8bimiptc/iptc/copyright notice |
+|       | /app1/ifd/{ushort=33432}                  |
 
 
 
@@ -92,30 +92,30 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                                    | Formato de disco |
+| Pedido | Ruta de acceso                                    | Formato de disco |
 |-------|-----------------------------------------|-------------|
-|       | /IFD/{ushort = 33432}                     | ascii       |
-|       | Aviso de/IFD/IPTC/Copyright              |             |
-|       | /IFD/XMP/ <xmpalt> DC: derechos        | unicode     |
-|       | /IFD/XMP/DC: derechos                      | unicode     |
-|       | Aviso de/IFD/IPTC/Copyright              |             |
-|       | Aviso de/IFD/IRB/8bimiptc/IPTC/Copyright |             |
+|       | /ifd/{ushort=33432}                     | ascii       |
+|       | /ifd/iptc/aviso de copyright              |             |
+|       | /ifd/xmp/ <xmpalt> dc:rights        | unicode     |
+|       | /ifd/xmp/dc:rights                      | unicode     |
+|       | /ifd/iptc/aviso de copyright              |             |
+|       | /ifd/irb/8bimiptc/iptc/copyright notice |             |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                                    | Formato de disco |
+| Pedido | Ruta de acceso                                    | Formato de disco |
 |-------|-----------------------------------------|-------------|
-|       | /IFD/XMP/DC: derechos                      | unicode     |
-|       | /IFD/XMP/ <xmpalt> DC: derechos        | unicode     |
-|       | Aviso de/IFD/IPTC/Copyright              |             |
-|       | Aviso de/IFD/IRB/8bimiptc/IPTC/Copyright |             |
-|       | /IFD/{ushort = 33432}                     | ascii       |
+|       | /ifd/xmp/dc:rights                      | unicode     |
+|       | /ifd/xmp/ <xmpalt> dc:rights        | unicode     |
+|       | /ifd/iptc/aviso de copyright              |             |
+|       | /ifd/irb/8bimiptc/iptc/copyright notice |             |
+|       | /ifd/{ushort=33432}                     | ascii       |
 
 
 
@@ -125,24 +125,24 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                                    |
+| Pedido | Ruta de acceso                                    |
 |-------|-----------------------------------------|
-|       | /IFD/XMP/DC: derechos                      |
-|       | Aviso de/IFD/IPTC/Copyright              |
-|       | Aviso de/IFD/IRB/8bimiptc/IPTC/Copyright |
-|       | /IFD/{ushort = 33432}                     |
+|       | /ifd/xmp/dc:rights                      |
+|       | /ifd/iptc/aviso de copyright              |
+|       | /ifd/irb/8bimiptc/iptc/copyright notice |
+|       | /ifd/{ushort=33432}                     |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. Copyright](../properties/props-system-copyright.md)
+[System.Copyright](../properties/props-system-copyright.md)
 </dt> </dl>
 
  

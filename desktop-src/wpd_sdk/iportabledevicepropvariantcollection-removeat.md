@@ -1,7 +1,7 @@
 ---
 description: 'Método IPortableDevicePropVariantCollection::RemoveAt: el método RemoveAt quita el elemento almacenado en la ubicación especificada por el índice especificado.'
 ms.assetid: cfee2454-5103-48ce-b9f7-1f76f5c18b6d
-title: IPortableDevicePropVariantCollection::RemoveAt (PortableDeviceTypes.h)
+title: Método IPortableDevicePropVariantCollection::RemoveAt (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 5c62df57a95a9f5a8238ff61c4ca6dc3cb73ed36
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 311b3511329ed15f5afd83d5a84c0c5abd62fe3f44000962fbdcd2f8ddd67c9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026903"
 ---
-# <a name="iportabledevicepropvariantcollectionremoveat-method"></a>IPortableDevicePropVariantCollection::RemoveAt (Método)
+# <a name="iportabledevicepropvariantcollectionremoveat-method"></a>IPortableDevicePropVariantCollection::RemoveAt (método)
 
 El **método RemoveAt** quita el elemento almacenado en la ubicación especificada por el índice especificado.
 
@@ -49,7 +49,7 @@ Especifica el índice del elemento que se va a quitar.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT.** Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
@@ -77,7 +77,7 @@ Debe especificar un índice de base cero.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
-title: Condiciones de filtrado disponibles en cada nivel de filtrado (Fwpmu. h)
-description: El motor de filtro de la plataforma de filtrado de Windows (WFP) admite un conjunto diferente de condiciones de filtrado en cada una de sus capas de filtrado.
+title: Condiciones de filtrado disponibles en cada capa de filtrado (Fwpmu.h)
+description: El Windows de filtro de la Plataforma de filtrado de filtros (WFP) admite un conjunto diferente de condiciones de filtrado en cada una de sus capas de filtrado.
 ms.assetid: 6faace21-44ec-49dd-8e77-e403c258c14a
 topic_type:
 - apiref
@@ -44,20 +44,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fd0c3806c7c3c7a5fa7f10af0e5e11c212bd93e3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c66aaceadec9a04e926806cf95859ffff2e4fa542b592edb4a11608a621a3338
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103995919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951204"
 ---
-# <a name="filtering-conditions-available-at-each-filtering-layer"></a>Condiciones de filtrado disponibles en cada nivel de filtrado
+# <a name="filtering-conditions-available-at-each-filtering-layer"></a>Condiciones de filtrado disponibles en cada capa de filtrado
 
-El motor de filtro de la plataforma de filtrado de Windows (WFP) admite un conjunto diferente de condiciones de filtrado en cada una de sus capas de filtrado.
+El Windows de filtro de la Plataforma de filtrado de filtros (WFP) admite un conjunto diferente de condiciones de filtrado en cada una de sus capas de filtrado.
 
-La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
+La lista de condiciones de filtrado que están disponibles en cada capa es la siguiente.
 
-## <a name="fwpm_layer_inbound_ippacket_v4--fwpm_layer_inbound_ippacket_v4_discard--fwpm_layer_inbound_ippacket_v6--fwpm_layer_inbound_ippacket_v6_discard"></a>FWPM_LAYER_INBOUND_IPPACKET_V4/FWPM_LAYER_INBOUND_IPPACKET_V4_DISCARD/FWPM_LAYER_INBOUND_IPPACKET_V6/FWPM_LAYER_INBOUND_IPPACKET_V6_DISCARD
+## <a name="fwpm_layer_inbound_ippacket_v4--fwpm_layer_inbound_ippacket_v4_discard--fwpm_layer_inbound_ippacket_v6--fwpm_layer_inbound_ippacket_v6_discard"></a>FWPM_LAYER_INBOUND_IPPACKET_V4 / FWPM_LAYER_INBOUND_IPPACKET_V4_DISCARD / FWPM_LAYER_INBOUND_IPPACKET_V6 / FWPM_LAYER_INBOUND_IPPACKET_V6_DISCARD
 - FWPM_CONDITION_FLAGS
 - FWPM_CONDITION_INTERFACE_INDEX
 - FWPM_CONDITION_INTERFACE_TYPE
@@ -67,7 +67,7 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_IP_REMOTE_ADDRESS
 - FWPM_CONDITION_SUB_INTERFACE_INDEX
 - FWPM_CONDITION_TUNNEL_TYPE
-## <a name="fwpm_layer_outbound_ippacket_v4--fwpm_layer_outbound_ippacket_v4_discard--fwpm_layer_outbound_ippacket_v6--fwpm_layer_outbound_ippacket_v6_discard"></a>FWPM_LAYER_OUTBOUND_IPPACKET_V4/FWPM_LAYER_OUTBOUND_IPPACKET_V4_DISCARD/FWPM_LAYER_OUTBOUND_IPPACKET_V6/FWPM_LAYER_OUTBOUND_IPPACKET_V6_DISCARD
+## <a name="fwpm_layer_outbound_ippacket_v4--fwpm_layer_outbound_ippacket_v4_discard--fwpm_layer_outbound_ippacket_v6--fwpm_layer_outbound_ippacket_v6_discard"></a>FWPM_LAYER_OUTBOUND_IPPACKET_V4/ FWPM_LAYER_OUTBOUND_IPPACKET_V4_DISCARD / FWPM_LAYER_OUTBOUND_IPPACKET_V6 / FWPM_LAYER_OUTBOUND_IPPACKET_V6_DISCARD
 - FWPM_CONDITION_FLAGS
 - FWPM_CONDITION_INTERFACE_INDEX
 - FWPM_CONDITION_INTERFACE_TYPE
@@ -77,7 +77,7 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_IP_REMOTE_ADDRESS
 - FWPM_CONDITION_SUB_INTERFACE_INDEX
 - FWPM_CONDITION_TUNNEL_TYPE
-## <a name="fwpm_layer_ipforward_v4--fwpm_layer_ipforward_v4_discard--fwpm_layer_ipforward_v6--fwpm_layer_ipforward_v6_discard"></a>FWPM_LAYER_IPFORWARD_V4/FWPM_LAYER_IPFORWARD_V4_DISCARD/FWPM_LAYER_IPFORWARD_V6/FWPM_LAYER_IPFORWARD_V6_DISCARD
+## <a name="fwpm_layer_ipforward_v4--fwpm_layer_ipforward_v4_discard--fwpm_layer_ipforward_v6--fwpm_layer_ipforward_v6_discard"></a>FWPM_LAYER_IPFORWARD_V4/ FWPM_LAYER_IPFORWARD_V4_DISCARD / FWPM_LAYER_IPFORWARD_V6 / FWPM_LAYER_IPFORWARD_V6_DISCARD
 - FWPM_CONDITION_FLAGS
 - FWPM_CONDITION_DESTINATION_INTERFACE_INDEX
 - FWPM_CONDITION_DESTINATION_SUB_INTERFACE_INDEX
@@ -93,7 +93,7 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_IP_PHYSICAL_NEXTHOP_INTERFACE
 - FWPM_CONDITION_ARRIVAL_INTERFACE_PROFILE_ID
 - FWPM_CONDITION_NEXTHOP_INTERFACE_PROFILE_ID
-## <a name="fwpm_layer_inbound_transport_v4--fwpm_layer_inbound_transport_v4_discard--fwpm_layer_inbound_transport_v6--fwpm_layer_inbound_transport_v6_discard"></a>FWPM_LAYER_INBOUND_TRANSPORT_V4/FWPM_LAYER_INBOUND_TRANSPORT_V4_DISCARD/FWPM_LAYER_INBOUND_TRANSPORT_V6/FWPM_LAYER_INBOUND_TRANSPORT_V6_DISCARD
+## <a name="fwpm_layer_inbound_transport_v4--fwpm_layer_inbound_transport_v4_discard--fwpm_layer_inbound_transport_v6--fwpm_layer_inbound_transport_v6_discard"></a>FWPM_LAYER_INBOUND_TRANSPORT_V4/ FWPM_LAYER_INBOUND_TRANSPORT_V4_DISCARD / FWPM_LAYER_INBOUND_TRANSPORT_V6 / FWPM_LAYER_INBOUND_TRANSPORT_V6_DISCARD
 - FWPM_CONDITION_FLAGS
 - FWPM_CONDITION_INTERFACE_INDEX
 - FWPM_CONDITION_INTERFACE_TYPE
@@ -108,7 +108,7 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_TUNNEL_TYPE
 ###  <a name="windows-7--and-later"></a>Windows 7 y versiones posteriores
 - FWPM_CONDITION_CURRENT_PROFILE_ID
-## <a name="fwpm_layer_outbound_transport_v4--fwpm_layer_outbound_transport_v4_discard--fwpm_layer_outbound_transport_v6--fwpm_layer_outbound_transport_v6_discard"></a>FWPM_LAYER_OUTBOUND_TRANSPORT_V4/FWPM_LAYER_OUTBOUND_TRANSPORT_V4_DISCARD/FWPM_LAYER_OUTBOUND_TRANSPORT_V6/FWPM_LAYER_OUTBOUND_TRANSPORT_V6_DISCARD
+## <a name="fwpm_layer_outbound_transport_v4--fwpm_layer_outbound_transport_v4_discard--fwpm_layer_outbound_transport_v6--fwpm_layer_outbound_transport_v6_discard"></a>FWPM_LAYER_OUTBOUND_TRANSPORT_V4/ FWPM_LAYER_OUTBOUND_TRANSPORT_V4_DISCARD / FWPM_LAYER_OUTBOUND_TRANSPORT_V6 / FWPM_LAYER_OUTBOUND_TRANSPORT_V6_DISCARD
 - FWPM_CONDITION_FLAGS
 - FWPM_CONDITION_INTERFACE_INDEX
 - FWPM_CONDITION_INTERFACE_TYPE
@@ -124,7 +124,7 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_TUNNEL_TYPE
 ###  <a name="windows-7--and-later"></a>Windows 7 y versiones posteriores
 - FWPM_CONDITION_CURRENT_PROFILE_ID
-## <a name="fwpm_layer_stream_v4--fwpm_layer_stream_v4_discard--fwpm_layer_stream_v6--fwpm_layer_stream_v6_discard"></a>FWPM_LAYER_STREAM_V4/FWPM_LAYER_STREAM_V4_DISCARD/FWPM_LAYER_STREAM_V6/FWPM_LAYER_STREAM_V6_DISCARD
+## <a name="fwpm_layer_stream_v4--fwpm_layer_stream_v4_discard--fwpm_layer_stream_v6--fwpm_layer_stream_v6_discard"></a>FWPM_LAYER_STREAM_V4/ FWPM_LAYER_STREAM_V4_DISCARD / FWPM_LAYER_STREAM_V6 / FWPM_LAYER_STREAM_V6_DISCARD
 - FWPM_CONDITION_DIRECTION
 - FWPM_CONDITION_FLAGS
 - FWPM_CONDITION_IP_LOCAL_ADDRESS
@@ -132,7 +132,7 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_IP_LOCAL_PORT
 - FWPM_CONDITION_IP_REMOTE_ADDRESS
 - FWPM_CONDITION_IP_REMOTE_PORT
-## <a name="fwpm_layer_datagram_data_v4--fwpm_layer_datagram_data_v4_discard--fwpm_layer_datagram_data_v6--fwpm_layer_datagram_data_v6_discard"></a>FWPM_LAYER_DATAGRAM_DATA_V4/FWPM_LAYER_DATAGRAM_DATA_V4_DISCARD/FWPM_LAYER_DATAGRAM_DATA_V6/FWPM_LAYER_DATAGRAM_DATA_V6_DISCARD
+## <a name="fwpm_layer_datagram_data_v4--fwpm_layer_datagram_data_v4_discard--fwpm_layer_datagram_data_v6--fwpm_layer_datagram_data_v6_discard"></a>FWPM_LAYER_DATAGRAM_DATA_V4 / FWPM_LAYER_DATAGRAM_DATA_V4_DISCARD / FWPM_LAYER_DATAGRAM_DATA_V6 / FWPM_LAYER_DATAGRAM_DATA_V6_DISCARD
 - FWPM_CONDITION_DIRECTION
 - FWPM_CONDITION_FLAGS
 - FWPM_CONDITION_INTERFACE_INDEX
@@ -159,10 +159,10 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_IP_REMOTE_PORT
 - FWPM_CONDITION_SUB_INTERFACE_INDEX
 - FWPM_CONDITION_TUNNEL_TYPE
-## <a name="fwpm_layer_inbound_icmp_error_v4--fwpm_layer_inbound_icmp_error_v4_discard--fwpm_layer_inbound_icmp_error_v6--fwpm_layer_inbound_icmp_error_v6_discard"></a>FWPM_LAYER_INBOUND_ICMP_ERROR_V4/FWPM_LAYER_INBOUND_ICMP_ERROR_V4_DISCARD/FWPM_LAYER_INBOUND_ICMP_ERROR_V6/FWPM_LAYER_INBOUND_ICMP_ERROR_V6_DISCARD
+## <a name="fwpm_layer_inbound_icmp_error_v4--fwpm_layer_inbound_icmp_error_v4_discard--fwpm_layer_inbound_icmp_error_v6--fwpm_layer_inbound_icmp_error_v6_discard"></a>FWPM_LAYER_INBOUND_ICMP_ERROR_V4/ FWPM_LAYER_INBOUND_ICMP_ERROR_V4_DISCARD / FWPM_LAYER_INBOUND_ICMP_ERROR_V6 / FWPM_LAYER_INBOUND_ICMP_ERROR_V6_DISCARD
 - FWPM_CONDITION_ARRIVAL_INTERFACE_INDEX
 - FWPM_CONDITION_ARRIVAL_INTERFACE_TYPE
-- FWPM_CONDITION_ARRIVAL_SUB_INTERFACE_INDEX **Windows Vista/Windows 7:** FWPM_CONDITION_SUB_INTERFACE_INDEX
+- FWPM_CONDITION_ARRIVAL_SUB_INTERFACE_INDEX Windows **Vista/Windows 7:** FWPM_CONDITION_SUB_INTERFACE_INDEX
 - FWPM_CONDITION_ARRIVAL_TUNNEL_TYPE
 - FWPM_CONDITION_FLAGS
 - FWPM_CONDITION_ICMP_CODE
@@ -182,7 +182,7 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_LOCAL_TUNNEL_TYPE **Windows Vista/Windows 7:** FWPM_CONDITION_TUNNEL_TYPE
 ###  <a name="windows-7--and-later"></a>Windows 7 y versiones posteriores
 - FWPM_CONDITION_ARRIVAL_INTERFACE_PROFILE_ID
-## <a name="fwpm_layer_outbound_icmp_error_v4--fwpm_layer_outbound_icmp_error_v4_discard--fwpm_layer_outbound_icmp_error_v6--fwpm_layer_outbound_icmp_error_v6_discard"></a>FWPM_LAYER_OUTBOUND_ICMP_ERROR_V4/FWPM_LAYER_OUTBOUND_ICMP_ERROR_V4_DISCARD/FWPM_LAYER_OUTBOUND_ICMP_ERROR_V6/FWPM_LAYER_OUTBOUND_ICMP_ERROR_V6_DISCARD
+## <a name="fwpm_layer_outbound_icmp_error_v4--fwpm_layer_outbound_icmp_error_v4_discard--fwpm_layer_outbound_icmp_error_v6--fwpm_layer_outbound_icmp_error_v6_discard"></a>FWPM_LAYER_OUTBOUND_ICMP_ERROR_V4 / FWPM_LAYER_OUTBOUND_ICMP_ERROR_V4_DISCARD / FWPM_LAYER_OUTBOUND_ICMP_ERROR_V6 / FWPM_LAYER_OUTBOUND_ICMP_ERROR_V6_DISCARD
 - FWPM_CONDITION_FLAGS
 - FWPM_CONDITION_ICMP_CODE
 - FWPM_CONDITION_ICMP_TYPE
@@ -208,7 +208,7 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_IP_PROTOCOL
 ###  <a name="windows-8--and-later"></a>Windows 8 y versiones posteriores
 - FWPM_CONDITION_ALE_PACKAGE_ID
-## <a name="fwpm_layer_ale_resource_assignment_v4--fwpm_layer_ale_resource_assignment_v4_discard--fwpm_layer_ale_resource_assignment_v6--fwpm_layer_ale_resource_assignment_v6_discard"></a>FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V4/FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V4_DISCARD/FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V6/FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V6_DISCARD
+## <a name="fwpm_layer_ale_resource_assignment_v4--fwpm_layer_ale_resource_assignment_v4_discard--fwpm_layer_ale_resource_assignment_v6--fwpm_layer_ale_resource_assignment_v6_discard"></a>FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V4/ FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V4_DISCARD / FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V6 / FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V6_DISCARD
 - FWPM_CONDITION_ALE_APP_ID
 - FWPM_CONDITION_ALE_PROMISCUOUS_MODE
 - FWPM_CONDITION_ALE_USER_ID
@@ -251,7 +251,7 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_IP_REMOTE_PORT
 ###  <a name="windows-8--and-later"></a>Windows 8 y versiones posteriores
 - FWPM_CONDITION_ALE_PACKAGE_ID
-## <a name="fwpm_layer_ale_auth_listen_v4--fwpm_layer_ale_auth_listen_v4_discard--fwpm_layer_ale_auth_listen_v6--fwpm_layer_ale_auth_listen_v6_discard"></a>FWPM_LAYER_ALE_AUTH_LISTEN_V4/FWPM_LAYER_ALE_AUTH_LISTEN_V4_DISCARD/FWPM_LAYER_ALE_AUTH_LISTEN_V6/FWPM_LAYER_ALE_AUTH_LISTEN_V6_DISCARD
+## <a name="fwpm_layer_ale_auth_listen_v4--fwpm_layer_ale_auth_listen_v4_discard--fwpm_layer_ale_auth_listen_v6--fwpm_layer_ale_auth_listen_v6_discard"></a>FWPM_LAYER_ALE_AUTH_LISTEN_V4/ FWPM_LAYER_ALE_AUTH_LISTEN_V4_DISCARD / FWPM_LAYER_ALE_AUTH_LISTEN_V6 / FWPM_LAYER_ALE_AUTH_LISTEN_V6_DISCARD
 - FWPM_CONDITION_ALE_APP_ID
 - FWPM_CONDITION_ALE_USER_ID
 - FWPM_CONDITION_FLAGS
@@ -266,7 +266,7 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_ALE_SIO_FIREWALL_SYSTEM_PORT
 ###  <a name="windows-8--and-later"></a>Windows 8 y versiones posteriores
 - FWPM_CONDITION_ALE_PACKAGE_ID
-## <a name="fwpm_layer_ale_auth_recv_accept_v4--fwpm_layer_ale_auth_recv_accept_v4_discard--fwpm_layer_ale_auth_recv_accept_v6--fwpm_layer_ale_auth_recv_accept_v6_discard"></a>FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V4/FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V4_DISCARD/FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V6/FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V6_DISCARD
+## <a name="fwpm_layer_ale_auth_recv_accept_v4--fwpm_layer_ale_auth_recv_accept_v4_discard--fwpm_layer_ale_auth_recv_accept_v6--fwpm_layer_ale_auth_recv_accept_v6_discard"></a>FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V4/ FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V4_DISCARD / FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V6 / FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V6_DISCARD
 - FWPM_CONDITION_ALE_APP_ID
 - FWPM_CONDITION_ALE_NAP_CONTEXT
 - FWPM_CONDITION_ALE_REMOTE_MACHINE_ID
@@ -275,7 +275,7 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_ALE_USER_ID
 - FWPM_CONDITION_ARRIVAL_INTERFACE_INDEX
 - FWPM_CONDITION_ARRIVAL_INTERFACE_TYPE
-- FWPM_CONDITION_ARRIVAL_SUB_INTERFACE_INDEX **Windows Vista/Windows 7:** FWPM_CONDITION_SUB_INTERFACE_INDEX
+- FWPM_CONDITION_ARRIVAL_SUB_INTERFACE_INDEX Windows **Vista/Windows 7:** FWPM_CONDITION_SUB_INTERFACE_INDEX
 - FWPM_CONDITION_ARRIVAL_TUNNEL_TYPE
 - FWPM_CONDITION_FLAGS
 - FWPM_CONDITION_IP_ARRIVAL_INTERFACE
@@ -288,7 +288,7 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_IP_REMOTE_PORT
 - FWPM_CONDITION_LOCAL_INTERFACE_INDEX **Windows Vista/Windows 7:** FWPM_CONDITION_INTERFACE_INDEX
 - FWPM_CONDITION_LOCAL_INTERFACE_TYPE **Windows Vista/Windows 7:** FWPM_CONDITION_INTERFACE_TYPE
-- FWPM_CONDITION_LOCAL_TUNNEL_TYPE **Windows Vista/Windows 7:** FWPM_CONDITION_TUNNEL_TYPE
+- FWPM_CONDITION_LOCAL_TUNNEL_TYPE Windows **Vista/Windows 7:** FWPM_CONDITION_TUNNEL_TYPE
 ###  <a name="windows-7--and-later"></a>Windows 7 y versiones posteriores
 - FWPM_CONDITION_NEXTHOP_SUB_INTERFACE_INDEX
 - FWPM_CONDITION_IP_NEXTHOP_INTERFACE
@@ -315,7 +315,7 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_IP_DESTINATION_ADDRESS_TYPE
 ###  <a name="windows-8--and-later"></a>Windows 8 y versiones posteriores
 - FWPM_CONDITION_ALE_PACKAGE_ID
-## <a name="fwpm_layer_ale_auth_connect_v4--fwpm_layer_ale_auth_connect_v4_discard--fwpm_layer_ale_auth_connect_v6--fwpm_layer_ale_auth_connect_v6_discard"></a>FWPM_LAYER_ALE_AUTH_CONNECT_V4/FWPM_LAYER_ALE_AUTH_CONNECT_V4_DISCARD/FWPM_LAYER_ALE_AUTH_CONNECT_V6/FWPM_LAYER_ALE_AUTH_CONNECT_V6_DISCARD
+## <a name="fwpm_layer_ale_auth_connect_v4--fwpm_layer_ale_auth_connect_v4_discard--fwpm_layer_ale_auth_connect_v6--fwpm_layer_ale_auth_connect_v6_discard"></a>FWPM_LAYER_ALE_AUTH_CONNECT_V4/ FWPM_LAYER_ALE_AUTH_CONNECT_V4_DISCARD / FWPM_LAYER_ALE_AUTH_CONNECT_V6 / FWPM_LAYER_ALE_AUTH_CONNECT_V6_DISCARD
 - FWPM_CONDITION_ALE_APP_ID
 - FWPM_CONDITION_ALE_REMOTE_MACHINE_ID
 - FWPM_CONDITION_ALE_REMOTE_USER_ID
@@ -335,7 +335,7 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_IP_ARRIVAL_INTERFACE
 - FWPM_CONDITION_ARRIVAL_INTERFACE_TYPE
 - FWPM_CONDITION_ARRIVAL_TUNNEL_TYPE
-- FWPM_CONDITION_ARRIVAL_INTERFACE_INDEX _sp1 y laterFWPM_CONDITION_INTERFACE_INDEX de Windows Vista 
+- FWPM_CONDITION_ARRIVAL_INTERFACE_INDEX Windows Vista _sp1 y laterFWPM_CONDITION_INTERFACE_INDEX 
 ###  <a name="windows-7--and-later"></a>Windows 7 y versiones posteriores
 - FWPM_CONDITION_NEXTHOP_SUB_INTERFACE_INDEX
 - FWPM_CONDITION_IP_NEXTHOP_INTERFACE
@@ -349,7 +349,7 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_ORIGINAL_ICMP_TYPE
 ###  <a name="windows-8--and-later"></a>Windows 8 y versiones posteriores
 - FWPM_CONDITION_ALE_PACKAGE_ID
-## <a name="fwpm_layer_ale_flow_established_v4--fwpm_layer_ale_flow_established_v4_discard--fwpm_layer_ale_flow_established_v6--fwpm_layer_ale_flow_established_v6_discard"></a>FWPM_LAYER_ALE_FLOW_ESTABLISHED_V4/FWPM_LAYER_ALE_FLOW_ESTABLISHED_V4_DISCARD/FWPM_LAYER_ALE_FLOW_ESTABLISHED_V6/FWPM_LAYER_ALE_FLOW_ESTABLISHED_V6_DISCARD
+## <a name="fwpm_layer_ale_flow_established_v4--fwpm_layer_ale_flow_established_v4_discard--fwpm_layer_ale_flow_established_v6--fwpm_layer_ale_flow_established_v6_discard"></a>FWPM_LAYER_ALE_FLOW_ESTABLISHED_V4 / FWPM_LAYER_ALE_FLOW_ESTABLISHED_V4_DISCARD / FWPM_LAYER_ALE_FLOW_ESTABLISHED_V6 / FWPM_LAYER_ALE_FLOW_ESTABLISHED_V6_DISCARD
 - FWPM_CONDITION_ALE_APP_ID
 - FWPM_CONDITION_ALE_REMOTE_MACHINE_ID
 - FWPM_CONDITION_ALE_REMOTE_USER_ID
@@ -368,13 +368,13 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_TUNNEL_TYPE
 ###  <a name="windows-8--and-later"></a>Windows 8 y versiones posteriores
 - FWPM_CONDITION_ALE_PACKAGE_ID
-## <a name="fwpm_layer_name_resolution_cache_v4--fwpm_layer_name_resolution_cache_v6"></a>FWPM_LAYER_NAME_RESOLUTION_CACHE_V4/FWPM_LAYER_NAME_RESOLUTION_CACHE_V6
+## <a name="fwpm_layer_name_resolution_cache_v4--fwpm_layer_name_resolution_cache_v6"></a>FWPM_LAYER_NAME_RESOLUTION_CACHE_V4 /FWPM_LAYER_NAME_RESOLUTION_CACHE_V6
 ###  <a name="windows-7--and-later"></a>Windows 7 y versiones posteriores
 - FWPM_CONDITION_ALE_USER_ID
 - FWPM_CONDITION_ALE_APP_ID
 - FWPM_CONDITION_IP_REMOTE_ADDRESS
 - FWPM_CONDITION_PEER_NAME
-## <a name="fwpm_layer_ipsec_km_demux_v4--fwpm_layer_ipsec_km_demux_v6"></a>FWPM_LAYER_IPSEC_KM_DEMUX_V4/FWPM_LAYER_IPSEC_KM_DEMUX_V6
+## <a name="fwpm_layer_ipsec_km_demux_v4--fwpm_layer_ipsec_km_demux_v6"></a>FWPM_LAYER_IPSEC_KM_DEMUX_V4 /FWPM_LAYER_IPSEC_KM_DEMUX_V6
 - FWPM_CONDITION_IP_LOCAL_ADDRESS
 - FWPM_CONDITION_IP_REMOTE_ADDRESS
 ## <a name="fwpm_layer_ipsec_v4--fwpm_layer_ipsec_v6"></a>FWPM_LAYER_IPSEC_V4/FWPM_LAYER_IPSEC_V6
@@ -455,7 +455,7 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_KM_MODE
 - FWPM_CONDITION_DIRECTION
 - FWPM_CONDITION_IPSEC_POLICY_KEY
-## <a name="fwpm_layer_inbound_mac_frame_ethernet--fwpm_layer_outbound_mac_frame_ethernet"></a>FWPM_LAYER_INBOUND_MAC_FRAME_ETHERNET/FWPM_LAYER_OUTBOUND_MAC_FRAME_ETHERNET
+## <a name="fwpm_layer_inbound_mac_frame_ethernet--fwpm_layer_outbound_mac_frame_ethernet"></a>FWPM_LAYER_INBOUND_MAC_FRAME_ETHERNET /FWPM_LAYER_OUTBOUND_MAC_FRAME_ETHERNET
 ###  <a name="windows-8--and-later"></a>Windows 8 y versiones posteriores
 - FWPM_CONDITION_INTERFACE_MAC_ADDRESS
 - FWPM_CONDITION_MAC_LOCAL_ADDRESS
@@ -477,7 +477,7 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_INTERFACE_INDEX
 - FWPM_CONDITION_NDIS_PORT
 - FWPM_CONDITION_L2_FLAGS
-## <a name="fwpm_layer_egress_vswitch_ethernet--fwpm_layer_ingress_vswitch_ethernet"></a>FWPM_LAYER_EGRESS_VSWITCH_ETHERNET/FWPM_LAYER_INGRESS_VSWITCH_ETHERNET
+## <a name="fwpm_layer_egress_vswitch_ethernet--fwpm_layer_ingress_vswitch_ethernet"></a>FWPM_LAYER_EGRESS_VSWITCH_ETHERNET /FWPM_LAYER_INGRESS_VSWITCH_ETHERNET
 ###  <a name="windows-8--and-later"></a>Windows 8 y versiones posteriores
 - FWPM_CONDITION_MAC_SOURCE_ADDRESS
 - FWPM_CONDITION_MAC_SOURCE_ADDRESS_TYPE
@@ -492,7 +492,7 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 - FWPM_CONDITION_VSWITCH_SOURCE_INTERFACE_TYPE
 - FWPM_CONDITION_VSWITCH_SOURCE_VM_ID
 - FWPM_CONDITION_VSWITCH_L2_FLAGS
-##  <a name="fwpm_layer_egress_vswitch_transport_v4--fwpm_layer_ingress_vswitch_transport_v4--fwpm_layer_egressvswitch_transport_v6--fwpm_layer_ingress_vswitch_transport_v6"></a>FWPM_LAYER_EGRESS_VSWITCH_TRANSPORT_V4/FWPM_LAYER_INGRESS_VSWITCH_TRANSPORT_V4/FWPM_LAYER_EGRESSVSWITCH_TRANSPORT_V6/FWPM_LAYER_INGRESS_VSWITCH_TRANSPORT_V6
+##  <a name="fwpm_layer_egress_vswitch_transport_v4--fwpm_layer_ingress_vswitch_transport_v4--fwpm_layer_egressvswitch_transport_v6--fwpm_layer_ingress_vswitch_transport_v6"></a>FWPM_LAYER_EGRESS_VSWITCH_TRANSPORT_V4 / FWPM_LAYER_INGRESS_VSWITCH_TRANSPORT_V4 / FWPM_LAYER_EGRESSVSWITCH_TRANSPORT_V6 / FWPM_LAYER_INGRESS_VSWITCH_TRANSPORT_V6
 ###  <a name="windows-8--and-later"></a>Windows 8 y versiones posteriores
 - FWPM_CONDITION_IP_SOURCE_ADDRESS
 - FWPM_CONDITION_IP_DESTINATION_ADDRESS
@@ -512,9 +512,9 @@ La lista de condiciones de filtrado disponibles en cada nivel es la siguiente.
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los sufijos V4 y V6 al final de los identificadores de capa indican si la capa está ubicada en la pila de red IPv4 o en la pila de red IPv6.
+Los sufijos V4 y V6 al final de los identificadores de capa indican si la capa se encuentra en la pila de red IPv4 o en la pila de red IPv6.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -522,9 +522,9 @@ Los sufijos V4 y V6 al final de los identificadores de capa indican si la capa e
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Fwpmu. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Fwpmu.h</dt> </dl> |
 
 
 

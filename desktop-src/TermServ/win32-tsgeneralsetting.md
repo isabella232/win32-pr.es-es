@@ -1,11 +1,11 @@
 ---
 title: Win32_TSGeneralSetting class (Clase Win32_TSGeneralSetting)
-description: Representa la configuración general del terminal como el nivel de cifrado y el protocolo de transporte.
+description: Representa la configuración general del terminal, como el nivel de cifrado y el protocolo de transporte.
 ms.assetid: a31d68c0-e446-4d78-85e0-5173e7870255
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSGeneralSetting clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSGeneralSetting de clase, se describe
+- Win32_TSGeneralSetting clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -36,18 +36,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 172f18bbddd364d74dfcfb00e7e665628267af36
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: de2cc2e7ede46b503e0d33f65c5735d5e0cc653a75184384be2d706bfc8ac9cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999815"
 ---
-# <a name="win32_tsgeneralsetting-class"></a>\_Clase Win32 TSGeneralSetting
+# <a name="win32_tsgeneralsetting-class"></a>Clase \_ TSGeneralSetting de Win32
 
-La clase WMI **\_ TSGeneralSetting de Win32** representa la configuración general del terminal como el nivel de cifrado y el protocolo de transporte.
+La clase WMI **\_ TSGeneralSetting de Win32** representa la configuración general del terminal, como el nivel de cifrado y el protocolo de transporte.
 
-La siguiente sintaxis se simplifica desde el código MOF e incluye todas las propiedades definidas y heredadas, en orden alfabético. Para obtener información de referencia sobre los métodos, vea la tabla de métodos más adelante en este tema.
+La sintaxis siguiente se simplifica a partir del código MOF e incluye todas las propiedades definidas y heredadas, en orden alfabético. Para obtener información de referencia sobre los métodos, vea la tabla de métodos más adelante en este tema.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -87,15 +87,15 @@ La **clase \_ TSGeneralSetting de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ TSGeneralSetting** tiene estos métodos.
+La **clase \_ TSGeneralSetting de Win32** tiene estos métodos.
 
 
 
 | Método                                                                                        | Descripción                                                                                                                                                             |
 |:----------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**SetEncryptionLevel**](win32-tsgeneralsetting-setencryptionlevel.md)                       | Establece el nivel de cifrado.<br/>                                                                                                                                   |
-| [**SetSecurityLayer**](win32-tsgeneralsetting-setsecuritylayer.md)                           | Establece el nivel de seguridad en uno de "nivel de seguridad RDP" (0), "Negotiate" (1) o "SSL" (2).<br/>                                                                   |
-| [**SetUserAuthenticationRequired**](setuserauthenticationrequired-win32-tsgeneralsetting.md) | Habilita o deshabilita el requisito de que los usuarios se deben autenticar en el momento de la conexión estableciendo el valor de la propiedad **UserAuthenticationRequired** .<br/> |
+| [**SetSecurityLayer**](win32-tsgeneralsetting-setsecuritylayer.md)                           | Establece la capa de seguridad en una de las opciones "Capa de seguridad rdp" (0), "Negociar" (1) o "SSL" (2).<br/>                                                                   |
+| [**SetUserAuthenticationRequired**](setuserauthenticationrequired-win32-tsgeneralsetting.md) | Habilita o deshabilita el requisito de que los usuarios se deben autenticar en el momento de la conexión estableciendo el valor de la **propiedad UserAuthenticationRequired.**<br/> |
 
 
 
@@ -121,7 +121,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Descripción breve (cadena de una línea) del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -141,26 +141,26 @@ Nombre para mostrar del nombre de sujeto del certificado personal del equipo loc
 **Certificados**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8** array
+Tipo de datos: **matriz uint8**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Contiene un almacén de certificados serializado que contiene todos los certificados del almacén de **cuentas de usuario** del equipo que son certificados de servidor válidos para su uso con la capa de sockets seguros (SSL).
+Contiene un almacén de certificados serializado que  contiene todos los certificados del almacén Mi cuenta de usuario del equipo que son certificados de servidor válidos para su uso con la capa de sockets seguros (SSL).
 
 </dd> <dt>
 
-**Comentario**
+**Comment**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Nombre descriptivo de la combinación de nivel de sesión y Protocolo de transporte.
+Nombre descriptivo de la combinación de la capa de sesión y el protocolo de transporte.
 
 </dd> <dt>
 
@@ -175,41 +175,41 @@ Tipo de acceso: solo lectura
 
 Descripción del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001,5 ")
+Calificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 Fecha en que se instaló el objeto. La falta de un valor no indica que el objeto no está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **MinEncryptionLevel**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **bajo** ("solo los datos enviados del cliente al servidor están protegidos por cifrado según el nivel de clave estándar del servidor. Los datos enviados desde el servidor al cliente no están protegidos. "), **medio** (" todos los datos enviados entre el servidor y el cliente están protegidos por cifrado según el nivel de clave estándar del servidor. "), **alto** (" todos los datos enviados entre el servidor y el cliente están protegidos con el nivel máximo de clave del servidor basado en cifrado ").
+Calificadores: **bajo** ("Solo los datos enviados desde el cliente al servidor están protegidos por cifrado en función de la seguridad de clave estándar del servidor. Los datos enviados desde el servidor al cliente no están **protegidos"),** Medio ("Todos los datos enviados entre el servidor y el cliente están protegidos por cifrado en función de la seguridad de clave estándar del servidor"). Alto **("Todos** los datos enviados entre el servidor y el cliente están protegidos por el cifrado en función de la seguridad de clave máxima del servidor").
 </dt> </dl>
 
-El nivel mínimo de cifrado.
+Nivel de cifrado mínimo.
 
 <dt>
 
@@ -220,18 +220,18 @@ El nivel mínimo de cifrado.
 
 </dt> <dd>
 
-Bajo nivel de cifrado. Solo los datos enviados desde el cliente al servidor se cifran mediante el cifrado de 56 bits. Tenga en cuenta que no se cifran los datos enviados desde el servidor al cliente.
+Bajo nivel de cifrado. Solo los datos enviados desde el cliente al servidor se cifran mediante el cifrado de 56 bits. Tenga en cuenta que los datos enviados desde el servidor al cliente no están cifrados.
 
 </dd> <dt>
 
 <span id="Medium___Client_Compatible"></span><span id="medium___client_compatible"></span><span id="MEDIUM___CLIENT_COMPATIBLE"></span>
 
-<span id="Medium___Client_Compatible"></span><span id="medium___client_compatible"></span><span id="MEDIUM___CLIENT_COMPATIBLE"></span>**Medio/cliente compatible** (2)
+<span id="Medium___Client_Compatible"></span><span id="medium___client_compatible"></span><span id="MEDIUM___CLIENT_COMPATIBLE"></span>**Compatible con el cliente o** medio (2)
 
 
 </dt> <dd>
 
-Nivel de cifrado compatible con el cliente. Todos los datos enviados del cliente al servidor y del servidor al cliente se cifran con el nivel de clave máximo admitido por el cliente.
+Nivel de cifrado compatible con el cliente. Todos los datos enviados de cliente a servidor y de servidor a cliente se cifran con el nivel máximo de clave admitido por el cliente.
 
 </dd> <dt>
 
@@ -242,7 +242,7 @@ Nivel de cifrado compatible con el cliente. Todos los datos enviados del cliente
 
 </dt> <dd>
 
-Alto nivel de cifrado. Todos los datos enviados del cliente al servidor y del servidor al cliente se cifran mediante cifrado de 128 bits seguro. Los clientes que no admiten este nivel de cifrado no se pueden conectar.
+Alto nivel de cifrado. Todos los datos enviados de cliente a servidor y de servidor a cliente se cifran mediante un cifrado seguro de 128 bits. Los clientes que no admiten este nivel de cifrado no se pueden conectar.
 
 </dd> <dt>
 
@@ -253,7 +253,7 @@ Alto nivel de cifrado. Todos los datos enviados del cliente al servidor y del se
 
 </dt> <dd>
 
-Cifrado compatible con FIPS. Todos los datos enviados del cliente al servidor y del servidor al cliente están cifrados y descifrados con los algoritmos de cifrado de Estándar federal de procesamiento de información (FIPS) mediante los módulos criptográficos de Microsoft. FIPS es un estándar titulado "requisitos de seguridad para los módulos criptográficos". FIPS 140-1 (1994) y FIPS 140-2 (2001) describen los requisitos gubernamentales para los módulos criptográficos de hardware y software que se usan en el gobierno de EE. UU.
+Cifrado compatible con FIPS. Todos los datos enviados de cliente a servidor y de servidor a cliente se cifran y descifran con los algoritmos de cifrado Estándar federal de procesamiento de información (FIPS) mediante los módulos criptográficos de Microsoft. FIPS es un estándar denominado "Requisitos de seguridad para módulos criptográficos". FIPS 140-1 (1994) y FIPS 140-2 (2001) describen los requisitos gubernamentales para los módulos criptográficos de hardware y software que se usan en la administración gubernamental de Estados Unidos.
 
 </dd> </dl>
 
@@ -270,24 +270,24 @@ Tipo de acceso: solo lectura
 
 El nombre del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **PolicySourceMinEncryptionLevel**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la propiedad **MinEncryptionLevel** está configurada por el servidor, por la Directiva de grupo o de forma predeterminada.
+Indica si el servidor, la directiva de grupo o de forma predeterminada configuran la propiedad **MinEncryptionLevel.**
 
 <dt>
 
-0 (0X0)
+0 (0x0)
 </dt> <dd>
 
 Servidor
@@ -301,7 +301,7 @@ Directiva de grupo
 
 </dd> <dt>
 
-2 (0X2)
+2 (0x2)
 </dt> <dd>
 
 Valor predeterminado
@@ -313,17 +313,17 @@ Valor predeterminado
 **PolicySourceSecurityLayer**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la propiedad **SecurityLayer** está configurada por el servidor, por la Directiva de grupo o de forma predeterminada.
+Indica si la **propiedad SecurityLayer** está configurada por el servidor, por directiva de grupo o de forma predeterminada.
 
 <dt>
 
-0 (0X0)
+0 (0x0)
 </dt> <dd>
 
 Servidor
@@ -337,7 +337,7 @@ Directiva de grupo
 
 </dd> <dt>
 
-2 (0X2)
+2 (0x2)
 </dt> <dd>
 
 Valor predeterminado
@@ -349,17 +349,17 @@ Valor predeterminado
 **PolicySourceUserAuthenticationRequired**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la propiedad **UserAuthenticationRequired** está configurada por el servidor, por la Directiva de grupo o de forma predeterminada.
+Indica si la **propiedad UserAuthenticationRequired** está configurada por el servidor, por directiva de grupo o de forma predeterminada.
 
 <dt>
 
-0 (0X0)
+0 (0x0)
 </dt> <dd>
 
 Servidor
@@ -373,7 +373,7 @@ Directiva de grupo
 
 </dd> <dt>
 
-2 (0X2)
+2 (0x2)
 </dt> <dd>
 
 Valor predeterminado
@@ -385,22 +385,22 @@ Valor predeterminado
 **SecurityLayer**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **RDPSecurityLayer** ("capa de seguridad de RDP: comunicación entre serverand el cliente usará el cifrado RDP nativo"), **Negotiate** ("se usará la capa más segura compatible con el cliente. Si se admite, se usará TLS 1,0. "), se usará **SSL** (" SSL (TLS 1,0) para la autenticación del servidor, así como forencrypting todos los datos transferidos entre el servidor y el cliente. Esta configuración requiere que el servidor tenga un certificado compatible con SSL. "), **NEWTBD** (" un nuevo nivel de seguridad en Longhorn ").
+Calificadores: **RDPSecurityLayer** ("Capa de seguridad de RDP: comunicación entre el servidor y el cliente usará el cifrado RDP nativo"), **Negotiate** ("Se usará la capa más segura admitida por el cliente. Si se admite, se usará TLS 1.0."), **SSL** ("SSL (TLS 1.0) se usará para la autenticación del servidor, así como para cifrar todos los datos transferidos entre el servidor y el cliente. Esta configuración requiere que el servidor tenga un certificado compatible con SSL. ") **NEWTBD** ("A NEW SECURITY LAYER in LONG RADIUS").
 </dt> </dl>
 
-Especifica el nivel de seguridad utilizado entre el cliente y el servidor.
+Especifica la capa de seguridad utilizada entre el cliente y el servidor.
 
 <dt>
 
 <span id="RDP_Security_Layer"></span><span id="rdp_security_layer"></span><span id="RDP_SECURITY_LAYER"></span>
 
-<span id="RDP_Security_Layer"></span><span id="rdp_security_layer"></span><span id="RDP_SECURITY_LAYER"></span>**Nivel de seguridad de RDP** (1)
+<span id="RDP_Security_Layer"></span><span id="rdp_security_layer"></span><span id="RDP_SECURITY_LAYER"></span>**Capa de seguridad rdp** (1)
 
 
 </dt> <dd>
@@ -416,7 +416,7 @@ La comunicación entre el servidor y el cliente usa el cifrado RDP nativo.
 
 </dt> <dd>
 
-Se usa la capa más segura compatible con el cliente. Si se admite, se usa SSL (TLS 1,0).
+Se usa la capa más segura que admite el cliente. Si se admite, se usa SSL (TLS 1.0).
 
 </dd> <dt>
 
@@ -427,7 +427,7 @@ Se usa la capa más segura compatible con el cliente. Si se admite, se usa SSL (
 
 </dt> <dd>
 
-SSL (TLS 1,0) se utiliza para la autenticación de servidor y para el cifrado de todos los datos transferidos entre el servidor y el cliente. Esta configuración requiere que el servidor tenga un certificado compatible con SSL. Esta configuración no es compatible con un valor de **MinEncryptionLevel** de 1.
+SSL (TLS 1.0) se usa para la autenticación del servidor y para cifrar todos los datos transferidos entre el servidor y el cliente. Esta configuración requiere que el servidor tenga un certificado compatible con SSL. Esta configuración no es compatible con un **valor MinEncryptionLevel** de 1.
 
 </dd> <dt>
 
@@ -438,7 +438,7 @@ SSL (TLS 1,0) se utiliza para la autenticación de servidor y para el cifrado de
 
 </dt> <dd>
 
-Un nuevo nivel de seguridad.
+Nueva capa de seguridad.
 
 </dd> </dl>
 
@@ -450,29 +450,29 @@ Un nuevo nivel de seguridad.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Especifica el hash SHA1 en formato hexadecimal del certificado SSL que va a usar el servidor de destino.
+Especifica el hash SHA1 en formato hexadecimal del certificado SSL que se usará en el servidor de destino.
 
-La huella digital de un certificado puede encontrarse con el complemento MMC certificados en la pestaña detalles de la página Propiedades del certificado.
+La huella digital de un certificado se puede encontrar mediante el complemento MMC Certificados en la pestaña Detalles de la página de propiedades del certificado.
 
 </dd> <dt>
 
 **SSLCertificateSHA1HashType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica el estado de la propiedad **SSLCertificateSHA1Hash** .
+Indica el estado de la **propiedad SSLCertificateSHA1Hash.**
 
 <dt>
 
-0 (0X0)
+0 (0x0)
 </dt> <dd>
 
 No válido
@@ -486,17 +486,17 @@ Autofirmado predeterminado
 
 </dd> <dt>
 
-2 (0X2)
+2 (0x2)
 </dt> <dd>
 
 Directiva de grupo predeterminada aplicada
 
 </dd> <dt>
 
-3 (0X3)
+3 (0x3)
 </dt> <dd>
 
-Personalizados
+Personalizado
 
 </dd> </dl>
 
@@ -514,15 +514,15 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero prediciendo un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
 
 
- ("Correcto")
+ ("Ok")
 
 
 </dt> <dd></dd> <dt>
@@ -550,21 +550,21 @@ Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsys
 
 
 
- ("Pred FAIL")
+ ("Error previo")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Iniciando")
+ ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 
 
- ("Deteniéndose")
+ ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
@@ -589,7 +589,7 @@ Tipo de acceso: solo lectura
 
 Nombre del terminal.
 
-Esta propiedad se hereda de [**Win32 \_ TerminalSetting**](win32-terminalsetting.md).
+Esta propiedad se hereda de [**\_ TerminalSetting de Win32.**](win32-terminalsetting.md)
 
 </dd> <dt>
 
@@ -602,7 +602,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del Protocolo de capa de sesión; por ejemplo, Microsoft RDP 5,0.
+Nombre del protocolo de capa de sesión; por ejemplo, Microsoft RDP 5.0.
 
 </dd> <dt>
 
@@ -615,28 +615,28 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El tipo de transporte utilizado en la conexión; por ejemplo, TCP, NetBIOS o IPX/SPX.
+Tipo de transporte utilizado en la conexión; por ejemplo, TCP, NetBIOS o IPX/SPX.
 
 </dd> <dt>
 
 **UserAuthenticationRequired**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el tipo de autenticación de usuario que se usa para las conexiones remotas. Si se establece en 1, lo que significa habilitado, **UserAuthenticationRequired** requiere autenticación de usuario en el momento de la conexión para aumentar la protección del servidor frente a ataques de red. Solo los clientes [Protocolo de escritorio remoto](remote-desktop-protocol.md) (RDP) que admiten la versión 6,0 o posterior de RDP pueden conectarse. Para evitar interrupciones para los usuarios remotos, se recomienda que implemente los clientes RDP que admitan la versión de protocolo adecuada antes de habilitar la propiedad.
+Especifica el tipo de autenticación de usuario que se usa para las conexiones remotas. Si se establece en 1, lo que significa habilitado, **UserAuthenticationRequired** requiere autenticación de usuario en el momento de la conexión para aumentar la protección del servidor frente a ataques de red. Solo [los Protocolo de escritorio remoto](remote-desktop-protocol.md) (RDP) que admiten RDP versión 6.0 o posterior pueden conectarse. Para evitar interrupciones para los usuarios remotos, se recomienda implementar clientes RDP que admitan la versión de protocolo adecuada antes de habilitar la propiedad .
 
-Use el método [**SetUserAuthenticationRequired**](setuserauthenticationrequired-win32-tsgeneralsetting.md) para habilitar o deshabilitar esta propiedad.
+Use el [**método SetUserAuthenticationRequired**](setuserauthenticationrequired-win32-tsgeneralsetting.md) para habilitar o deshabilitar esta propiedad.
 
 <dt>
 
 <span id="FALSE"></span><span id="false"></span>
 
-<span id="FALSE"></span><span id="false"></span>**False** (0)
+<span id="FALSE"></span><span id="false"></span>**FALSE** (0)
 
 
 </dt> <dd>
@@ -647,7 +647,7 @@ La autenticación de usuario en la conexión está deshabilitada.
 
 <span id="TRUE"></span><span id="true"></span>
 
-<span id="TRUE"></span><span id="true"></span>**True** (1)
+<span id="TRUE"></span><span id="true"></span>**TRUE** (1)
 
 
 </dt> <dd>
@@ -661,45 +661,45 @@ La autenticación de usuario en la conexión está habilitada.
 **WindowsAuthentication**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Especifica si la conexión tiene como valor predeterminado el proceso de autenticación de Windows estándar o un paquete de autenticación que se ha instalado en el sistema.
+Especifica si el valor predeterminado de la conexión es Windows proceso de autenticación o en otro paquete de autenticación que se haya instalado en el sistema.
 
 <dt>
 
 <span id="FALSE"></span><span id="false"></span>
 
-<span id="FALSE"></span><span id="false"></span>**False** (0)
+<span id="FALSE"></span><span id="false"></span>**FALSE** (0)
 
 
 </dt> <dd>
 
-No tiene como valor predeterminado el proceso de autenticación de Windows estándar.
+No es el valor predeterminado del proceso de autenticación Windows estándar.
 
 </dd> <dt>
 
 <span id="TRUE"></span><span id="true"></span>
 
-<span id="TRUE"></span><span id="true"></span>**True** (1)
+<span id="TRUE"></span><span id="true"></span>**TRUE** (1)
 
 
 </dt> <dd>
 
-Tiene como valor predeterminado el proceso de autenticación de Windows estándar.
+El valor predeterminado es el proceso de autenticación Windows estándar.
 
 </dd> </dl>
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Tenga en cuenta que las estaciones de ventana no asociadas a la sesión de consola no pueden tener acceso a los métodos y las propiedades de esta clase. Si se realiza un intento de hacerlo especificando "Console" como el valor de la propiedad TerminalName, los métodos de este objeto devolverán **WBEM \_ E \_ no \_ compatible**. También se devolverá este código de error si una estación de ventana intenta llamar a métodos de este objeto con el fin de agregar o modificar las propiedades de seguridad de las cuentas LocalSystem, LocalService o NetworkService.
+Tenga en cuenta que las estaciones de ventana no asociadas a la sesión de consola no pueden tener acceso a los métodos y propiedades de esta clase. Si se intenta hacerlo especificando "Console" como valor de la propiedad TerminalName, los métodos de este objeto **devolverán WBEM \_ E NOT \_ \_ SUPPORTED**. Este código de error también se devolverá si una estación de ventana intenta llamar a métodos de este objeto con el fin de agregar o modificar las propiedades de seguridad de las cuentas LocalSystem, LocalService o NetworkService.
 
-Para conectarse al \\ espacio de \\ nombres TerminalServices de cimv2 raíz \\ , el nivel de autenticación debe incluir privacidad de paquetes. En el caso de las llamadas de C/C++, se trata de un nivel de autenticación de **\_ \_ \_ \_ \_ privacidad de nivel** de autenticación de RPC C. En el caso de las llamadas de Visual Basic y scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el siguiente ejemplo de Visual Basic Scripting Edition (VBScript) se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
+Para conectarse al espacio \\ de nombres Raíz de \\ TerminalServices CIMV2, el nivel de \\ autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación **de WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de 6. En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
 
 ```VB
@@ -710,7 +710,7 @@ Set objServices = GetObject( _
 
 
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -720,8 +720,8 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -730,7 +730,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 <dl> <dt>
 
-[**Win32 \_ TerminalSetting**](win32-terminalsetting.md)
+[**TerminalSetting de Win32 \_**](win32-terminalsetting.md)
 </dt> </dl>
 
  

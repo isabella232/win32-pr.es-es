@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: c63e779b6d6d090544af40a7ee6d9c05f8c49494
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 33a33be48462f72008b273d2666b535479f7ba38a8a4b51e6405b4eee01d9878
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "104494146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118855239"
 ---
-# <a name="imsrdpclientnonscriptable6sendlocation3d-method"></a>IMsRdpClientNonScriptable6:: SendLocation3D (método)
+# <a name="imsrdpclientnonscriptable6sendlocation3d-method"></a>Método IMsRdpClientNonScriptable6::SendLocation3D
 
 Envía un valor de latitud, longitud y altitud al servidor para que la ubicación geográfica del cliente se pueda reflejar en la sesión remota.
 
@@ -39,21 +39,21 @@ HRESULT SendLocation3D(
 
 ## <a name="parameters"></a>Parámetros
 
-*latitud* \[ de\]
+*latitud* \[ En\]
 
-La latitud de una ubicación geográfica. El intervalo válido de valores de latitud es de-90,0 a 90,0 grados.
+Latitud de una ubicación geográfica. El intervalo válido de valores de latitud está entre -90,0 y 90,0 grados.
 
-*longitud* \[ de\]
+*longitud* \[ En\]
 
-Longitud de una ubicación geográfica. El intervalo válido de valores de latitud es de-180,0 a 180,0 grados.
+Longitud de una ubicación geográfica. El intervalo válido de valores de latitud está entre -180,0 y 180,0 grados.
 
-*altitud* \[ de\]
+*altitud* \[ En\]
 
-La altitud de una ubicación geográfica en metros.
+Altitud de una ubicación geográfica en metros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Vuelva **a \_ Aceptar si es** correcto.
+Devuelve **S \_ OK si** se realiza correctamente.
 
 ## <a name="requirements"></a>Requisitos
 

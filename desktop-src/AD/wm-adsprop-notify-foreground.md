@@ -1,10 +1,10 @@
 ---
-title: Mensaje de WM_ADSPROP_NOTIFY_FOREGROUND (Adsprop. h)
-description: El \_ objeto de \_ \_ notificación usa internamente el mensaje de notificación en primer plano ADSPROP de WM.
+title: WM_ADSPROP_NOTIFY_FOREGROUND mensaje (Adsprop.h)
+description: El objeto de notificación usa internamente el mensaje \_ WM ADSPROP \_ NOTIFY \_ FOREGROUND.
 ms.assetid: c984edd5-deca-490b-ac46-846a365d20c4
 ms.tgt_platform: multiple
 keywords:
-- WM_ADSPROP_NOTIFY_FOREGROUND Active Directory de mensaje
+- WM_ADSPROP_NOTIFY_FOREGROUND mensaje Active Directory
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa901d31407a4f3ce11e86bdda94f98e45a1096f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a8e7cf7ce67a7db18855bfd72678c6194628c46771f9add22c1f71d4ec7be12c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024313"
 ---
-# <a name="wm_adsprop_notify_foreground-message"></a>\_ \_ Mensaje Notify en \_ primer plano de ADSPROP de WM
+# <a name="wm_adsprop_notify_foreground-message"></a>Mensaje \_ WM ADSPROP \_ NOTIFY \_ FOREGROUND
 
-El objeto de notificación usa internamente el mensaje de notificación en **\_ \_ \_ primer plano ADSPROP de WM** .
+El objeto de notificación usa internamente el mensaje **\_ WM ADSPROP NOTIFY \_ \_ FOREGROUND.**
 
 
 ```C++
@@ -41,24 +41,24 @@ WM_ADSPROP_NOTIFY_FOREGROUND
 
 <dl> <dt>
 
-*identificador* 
+*Hwnd* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> </dl>
 
@@ -74,7 +74,7 @@ Este mensaje no tiene ningún valor devuelto.
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Adsprop. h</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Adsprop.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: Evento PlaylistChange del objeto AxWindowsMediaPlayer
-description: El evento PlaylistChange se produce cuando cambia una lista de reproducción. | Evento PlaylistChange del objeto AxWindowsMediaPlayer
+description: El evento PlaylistChange tiene lugar cuando cambia una lista de reproducción. | Evento PlaylistChange del objeto AxWindowsMediaPlayer
 ms.assetid: e4166d81-a205-401a-94c4-a1619e764647
 keywords:
-- Evento PlaylistChange del objeto AxWindowsMediaPlayer Media Player de Windows
+- Evento PlaylistChange del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9989b303d8e9077c158fd844c93431100205d9f6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 994c16ef79ad308e363e8cad4586cdbf0cca90a168d9bcb59ae6f943d108b74d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118841224"
 ---
 # <a name="playlistchange-event-of-the-axwindowsmediaplayer-object"></a>Evento PlaylistChange del objeto AxWindowsMediaPlayer
 
-El evento PlaylistChange se produce cuando cambia una lista de reproducción.
+El evento PlaylistChange tiene lugar cuando cambia una lista de reproducción.
 
 ``` syntax
 [C#]
@@ -47,8 +47,8 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad     | Descripción                                                                                                                   |
 |--------------|-------------------------------------------------------------------------------------------------------------------------------|
-| **automáticas** | Objeto System. ObjectThe que cambió. Puede convertirlo en una interfaz IWMPPlaylist para tener acceso a él.<br/>                |
-| **change**   | Valor de enumeración WMPLib. WMPPlaylistChangeEventTypeAn que indica el tipo de cambio que se produjo en la lista de reproducción.<br/> |
+| **Reproducción** | System.ObjectEl objeto que ha cambiado. Puede convertir esto en una interfaz IWMPPlaylist para acceder a ella.<br/>                |
+| **change**   | WMPLib.WMPPlaylistChangeEventTypeAn valor de enumeración que indica el tipo de cambio que se produjo en la lista de reproducción.<br/> |
 
 
 
@@ -58,9 +58,9 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                          |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Ensamblado<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

@@ -3,9 +3,9 @@ title: Método IEnumTfContextViews
 description: Método IEnumTfContextViews | Método IEnumTfContextViews
 ms.assetid: 159e7444-d9cc-4e56-8d1f-ade2284acc0b
 keywords:
-- Marco de trabajo de servicios de texto de método
-- Method Text Services Framework, IEnumTfContextViews (interfaz)
-- IEnumTfContextViews interface Text Services Framework, método
+- método Text Services Framework
+- método Text Services Framework interfaz , IEnumTfContextViews
+- Interfaz IEnumTfContextViews Text Services Framework método ,
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f0202094d9a5a25bfc932e61b3ac6b89659f2243
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 28b8c631616ff5932e471ccc3c5112c35bbf17789b0f775240844155d0ac587d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104157120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118878929"
 ---
 # <a name="ienumtfcontextviews-method"></a>Método IEnumTfContextViews
 

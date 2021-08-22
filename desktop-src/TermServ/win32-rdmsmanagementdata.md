@@ -1,11 +1,11 @@
 ---
-title: Win32_RDMSManagementData (clase)
+title: Win32_RDMSManagementData clase
 description: Sincroniza los datos de publicación para Escritorio remoto Management Services (RDMS).
 ms.assetid: 17f06294-6580-4297-9301-f88314db7775
 ms.tgt_platform: multiple
 keywords:
 - Win32_RDMSManagementData clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_RDMSManagementData de clase, se describe
+- Win32_RDMSManagementData clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dddf2a73673e886456eb43bfbd2cefc72250cc3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 40c6db0223a18c2fa43de8eed38e670aea36c024f1e66509005bb74f0a8f1cd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104078964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118849286"
 ---
-# <a name="win32_rdmsmanagementdata-class"></a>\_Clase Win32 RDMSManagementData
+# <a name="win32_rdmsmanagementdata-class"></a>Clase \_ RDMSManagementData de Win32
 
 Sincroniza los datos de publicación para Escritorio remoto Management Services (RDMS).
 
@@ -46,7 +46,7 @@ La **clase \_ RDMSManagementData de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ RDMSManagementData** tiene estos métodos.
+La **clase \_ RDMSManagementData de Win32** tiene estos métodos.
 
 
 
@@ -63,12 +63,12 @@ La clase **Win32 \_ RDMSManagementData** tiene estos métodos.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                              |
-| Espacio de nombres<br/>                | RDMs raíz de \\ cimv2 \\<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Rdms \\ cimv2 \\ raíz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -77,7 +77,7 @@ La clase **Win32 \_ RDMSManagementData** tiene estos métodos.
 
 <dl> <dt>
 
-[Proveedor de servicios de administración de Escritorio remoto](rdms-api-reference.md)
+[Escritorio remoto Management Services Provider](rdms-api-reference.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Indica a una ventana de IME que especifique la fuente lógica que se va a utilizar para mostrar caracteres intermedios en la ventana de composición. Para enviar este comando, la aplicación usa el mensaje de control de IME de WM \_ \_ con la configuración de parámetros que se muestra a continuación.
+description: Indica a una ventana de IME que especifique la fuente lógica que se usará para mostrar caracteres intermedios en la ventana de composición. Para enviar este comando, la aplicación usa el mensaje WM \_ IME \_ CONTROL con la configuración de parámetros que se muestra a continuación.
 ms.assetid: 17b222e7-bf57-4cdd-8475-d9a8be03ab7f
-title: Comando IMC_SETCOMPOSITIONFONT (IMM. h)
+title: IMC_SETCOMPOSITIONFONT comando (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbb84c9e05ab19206064988a71b0ffc39b21a44b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ebc9f435371d4ae08b12191419c95fd53c69256064f0e90bb654e75fab922f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118949276"
 ---
-# <a name="imc_setcompositionfont-command"></a>\_Comando IMC SETCOMPOSITIONFONT
+# <a name="imc_setcompositionfont-command"></a>Comando \_ SETCOMPOSITIONFONT de IMC
 
-Indica a una ventana de IME que especifique la fuente lógica que se va a utilizar para mostrar caracteres intermedios en la ventana de composición. Para enviar este comando, la aplicación usa el mensaje de [**\_ \_ control de IME de WM**](wm-ime-control.md) con la configuración de parámetros que se muestra a continuación.
+Indica a una ventana de IME que especifique la fuente lógica que se usará para mostrar caracteres intermedios en la ventana de composición. Para enviar este comando, la aplicación usa el mensaje [**WM \_ IME \_ CONTROL**](wm-ime-control.md) con la configuración de parámetros que se muestra a continuación.
 
 
 ```C++
@@ -26,27 +26,27 @@ LRESULT IMC_SETCOMPOSITIONFONT
 
 <dl> <dt>
 
-<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*wParam*
+<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*Wparam*
 </dt> <dd>
 
 Establezca en IMC \_ SETCOMPOSITIONFONT.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Puntero a una estructura [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) que contiene información sobre la fuente lógica.
+Puntero a una [**estructura LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) que contiene información sobre la fuente lógica.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se realiza correctamente, o un valor distinto de cero en caso contrario.
+Devuelve 0 si se realiza correctamente o un valor distinto de cero de lo contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al procesar este comando, la ventana del IME cambia la fuente seleccionada actualmente en el contexto de entrada.
+Al procesar este comando, la ventana IME cambia la fuente seleccionada actual en el contexto de entrada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ Al procesar este comando, la ventana del IME cambia la fuente seleccionada actua
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>IMM. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Imm.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -67,10 +67,10 @@ Al procesar este comando, la ventana del IME cambia la fuente seleccionada actua
 [Administrador de métodos de entrada](input-method-manager.md)
 </dt> <dt>
 
-[Comandos del administrador de métodos de entrada](input-method-manager-commands.md)
+[Comandos del Administrador de métodos de entrada](input-method-manager-commands.md)
 </dt> <dt>
 
-[**\_control IME de WM \_**](wm-ime-control.md)
+[**WM \_ IME \_ CONTROL**](wm-ime-control.md)
 </dt> </dl>
 
  

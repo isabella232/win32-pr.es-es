@@ -1,26 +1,26 @@
 ---
 title: Buscar el nombre completo de un usuario
-description: Los equipos pueden organizarse en un dominio, que es una colección de redes de equipos. El administrador del dominio mantiene la información centralizada de la cuenta de usuario y de grupo.
+description: Los equipos se pueden organizar en un dominio, que es una red de recopilación de equipos. El administrador de dominio mantiene la información centralizada de la cuenta de usuario y grupo.
 ms.assetid: 296ecfd0-1b65-482c-bee1-eff2130cc14e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cb2daa6bc2bc7d7255e961537c641a999d5a0bb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 434bdff00483b38ef12355af4dcda4a48d60bf849a8fd5d6829640ae8907e426
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012523"
 ---
 # <a name="looking-up-a-users-full-name"></a>Buscar el nombre completo de un usuario
 
-Los equipos pueden organizarse en un *dominio*, que es una colección de redes de equipos. El administrador del dominio mantiene la información centralizada de la cuenta de usuario y de grupo.
+Los equipos se pueden organizar en *un dominio*, que es una colección de redes de equipos. El administrador de dominio mantiene la información centralizada de la cuenta de usuario y grupo.
 
-Para buscar el nombre completo de un usuario, dado el nombre de usuario y el nombre de dominio:
+Para buscar el nombre completo de un usuario, dados el nombre de usuario y el nombre de dominio:
 
--   Convierta el nombre de usuario y el nombre de dominio a Unicode, si aún no son cadenas Unicode.
--   Busca el nombre del equipo del controlador de dominio (DC) mediante una llamada a [**NetGetDCName**](/windows/desktop/api/Lmaccess/nf-lmaccess-netgetdcname).
--   Para buscar el nombre de usuario en el equipo DC, llame a [**NetUserGetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusergetinfo).
--   Convierta el nombre de usuario completo en ANSI, a menos que el programa esté esperando trabajar con cadenas Unicode.
+-   Convierta el nombre de usuario y el nombre de dominio en Unicode, si aún no son cadenas Unicode.
+-   Busque el nombre de equipo del controlador de dominio (DC) mediante una llamada a [**NetGetDCName**](/windows/desktop/api/Lmaccess/nf-lmaccess-netgetdcname).
+-   Busque el nombre de usuario en el equipo del controlador de dominio mediante una llamada [**a NetUserGetInfo**](/windows/desktop/api/Lmaccess/nf-lmaccess-netusergetinfo).
+-   Convierta el nombre de usuario completo en ANSI, a menos que el programa espere trabajar con cadenas Unicode.
 
 El código de ejemplo siguiente es una función (GetFullName) que toma un nombre de usuario y un nombre de dominio en los dos primeros argumentos y devuelve el nombre completo del usuario en el tercer argumento.
 
@@ -75,9 +75,9 @@ BOOL GetFullName( char *UserName, char *Domain, char *dest )
 
 
 
- 
+ 
 
- 
+ 
 
 
 

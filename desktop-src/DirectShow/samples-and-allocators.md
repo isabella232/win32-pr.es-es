@@ -1,51 +1,51 @@
 ---
-description: Muestras y asignadores
+description: Ejemplos y asignadores
 ms.assetid: 1fbea741-f29a-4815-9885-94ca9cf4bb95
-title: Muestras y asignadores
+title: Ejemplos y asignadores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f9132ff2c70b5ade63f8853b5c03bacb7a25371
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8d196adeb9b5d5bd1220c9d71d74e2c0b23769c20bcad8daf80385aaee3920e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104552810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952014"
 ---
-# <a name="samples-and-allocators"></a>Muestras y asignadores
+# <a name="samples-and-allocators"></a>Ejemplos y asignadores
 
-Cuando un PIN entrega datos multimedia a otro PIN, no pasa un puntero directo al búfer de memoria. En su lugar, proporciona un puntero a un objeto COM que administra la memoria. Este objeto, denominado *ejemplo multimedia*, expone la interfaz [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) . El PIN receptor accede al búfer de memoria llamando a métodos de **IMediaSample** , como [**IMediaSample:: GetPointer**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getpointer), [**IMediaSample::FUL**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getsize)y [**IMediaSample:: GetActualDataLength**](/windows/win32/api/strmif/nf-strmif-imediasample-getactualdatalength).
+Cuando un pin entrega datos multimedia a otro pin, no pasa un puntero directo al búfer de memoria. En su lugar, entrega un puntero a un objeto COM que administra la memoria. Este objeto, denominado ejemplo *multimedia,* expone la [**interfaz IMediaSample.**](/windows/desktop/api/Strmif/nn-strmif-imediasample) El pin receptor tiene acceso al búfer de memoria mediante una llamada a métodos **IMediaSample,** como [**IMediaSample::GetPointer**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getpointer), [**IMediaSample::GetSize**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getsize)e [**IMediaSample::GetActualDataLength**](/windows/win32/api/strmif/nf-strmif-imediasample-getactualdatalength).
 
-Los ejemplos siempre viajan hacia abajo, desde la clavija de salida a la clavija de entrada. En el modelo de entrada, el PIN de salida proporciona una muestra llamando a [**IMemInputPin:: Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) en el PIN de entrada. El PIN de entrada procesará los datos sincrónicamente (es decir, completamente dentro del método de **recepción** ) o los procesará de forma asincrónica en un subproceso de trabajo. El PIN de entrada puede bloquearse dentro del método de **recepción** , si tiene que esperar recursos.
+Los ejemplos siempre viajan de bajada, desde el pin de salida al pin de entrada. En el modelo de inserción, el pin de salida entrega un ejemplo mediante una llamada a [**IMemInputPin::Receive**](/windows/desktop/api/Strmif/nf-strmif-imeminputpin-receive) en el pin de entrada. El pin de entrada procesará los datos sincrónicamente (es decir, completamente dentro del **método Receive)** o los procesará de forma asincrónica en un subproceso de trabajo. El pin de entrada puede bloquearse dentro del **método Receive,** si necesita esperar recursos.
 
-Otro objeto COM, denominado *allocator*, es responsable de la creación y administración de los ejemplos de multimedia. Los asignadores exponen la interfaz [**IMemAllocator**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) . Cada vez que un filtro necesita un ejemplo multimedia con un búfer vacío, llama al método [**IMemAllocator:: getBuffer**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-getbuffer) , que devuelve un puntero al ejemplo. Cada conexión de PIN comparte un asignador. Cuando dos patillas se conectan, deciden qué filtro proporcionará el asignador. Los pin también establecen propiedades en el asignador, como el número de búferes y el tamaño de cada búfer. (Para obtener más información, vea [cómo los filtros conectan](how-filters-connect.md) y [negocian los asignadores](negotiating-allocators.md)).
+Otro objeto COM, denominado *asignador,* es responsable de crear y administrar ejemplos multimedia. Los asignadores exponen la [**interfaz IMemAllocator.**](/windows/desktop/api/Strmif/nn-strmif-imemallocator) Cada vez que un filtro necesita un ejemplo multimedia con un búfer vacío, llama al método [**IMemAllocator::GetBuffer,**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-getbuffer) que devuelve un puntero al ejemplo. Cada conexión de pin comparte un asignador. Cuando se conectan dos pines, deciden qué filtro proporcionará el asignador. Los pines también establecen propiedades en el asignador, como el número de búferes y el tamaño de cada búfer. (Para obtener más información, vea [How Filters Conectar](how-filters-connect.md) and [Nego allocators](negotiating-allocators.md).)
 
-En la ilustración siguiente se muestran las relaciones entre el asignador, los ejemplos multimedia y el filtro.
+En la ilustración siguiente se muestran las relaciones entre el asignador, los ejemplos de medios y el filtro.
 
 ![ejemplos de medios y asignadores](images/mediasamples.png)
 
 **Recuentos de referencias de ejemplo multimedia**
 
-Un asignador crea un grupo finito de ejemplos. En cualquier momento, algunos ejemplos pueden estar en uso, mientras que otros están disponibles para las llamadas de **getBuffer** . El asignador utiliza el recuento de referencias para realizar un seguimiento de los ejemplos. El método **getBuffer** devuelve un ejemplo con un recuento de referencias de 1. Si el recuento de referencias llega a cero, el ejemplo vuelve al grupo del asignador, donde se puede usar en la siguiente llamada a **getBuffer** . Siempre que el recuento de referencias se mantenga por encima de cero, el ejemplo no está disponible para **getBuffer**. Si cada ejemplo que pertenece al asignador está en uso, el método **getBuffer** se bloquea hasta que haya una muestra disponible.
+Un asignador crea un grupo finito de ejemplos. En cualquier momento, algunos ejemplos pueden estar en uso, mientras que otros están disponibles para **las llamadas GetBuffer.** El asignador usa el recuento de referencias para realizar un seguimiento de los ejemplos. El **método GetBuffer** devuelve un ejemplo con un recuento de referencias de 1. Si el recuento de referencias va a cero, el ejemplo vuelve al grupo del asignador, donde se puede usar en la siguiente **llamada a GetBuffer.** Siempre que el recuento de referencias permanezca por encima de cero, el ejemplo no está disponible para **GetBuffer.** Si cada muestra que pertenece al asignador está en uso, el **método GetBuffer** se bloquea hasta que hay disponible una muestra.
 
-Por ejemplo, supongamos que un PIN de entrada recibe un ejemplo. Si procesa el ejemplo sincrónicamente, dentro del método **Receive** , no incrementa el recuento de referencias. Una vez que **Receive** devuelve, la clavija de salida libera el ejemplo, el recuento de referencias llega a cero y el ejemplo vuelve al grupo del asignador. Por otro lado, si el PIN de entrada procesa el ejemplo en un subproceso de trabajo, incrementa el recuento de referencias antes de que se abandone el método de **recepción** . Ahora, el recuento de referencias es 2. Cuando el PIN de salida libera el ejemplo, el recuento llega a 1; el ejemplo todavía no vuelve al grupo. Una vez que el subproceso de trabajo se realiza con el ejemplo, llama a **Release** para liberar el ejemplo. Ahora el ejemplo vuelve al grupo.
+Por ejemplo, suponga que un pin de entrada recibe una muestra. Si procesa el ejemplo de forma sincrónica, dentro del **método Receive,** no incrementa el recuento de referencias. Una **vez que receive** devuelve, el pin de salida libera el ejemplo, el recuento de referencias va a cero y el ejemplo vuelve al grupo del asignador. Por otro lado, si el pin de entrada procesa el ejemplo en un subproceso de trabajo, incrementa el recuento de referencias antes de salir del **método Receive.** El recuento de referencias ahora es 2. Cuando el pin de salida libera el ejemplo, el recuento va a 1; el ejemplo aún no vuelve al grupo. Una vez que el subproceso de trabajo ha terminado con el ejemplo, llama a **Release** para liberar el ejemplo. Ahora el ejemplo vuelve al grupo.
 
-Cuando un PIN recibe un ejemplo, puede copiar los datos en otro ejemplo o puede modificar el ejemplo original y entregarlo al siguiente filtro. Potencialmente, un ejemplo puede viajar a la longitud completa del gráfico, y cada filtro llama a **AddRef** y **Release** a su vez. Por lo tanto, el PIN de salida nunca debe volver a usar un ejemplo después de llamar a **Receive**, ya que un filtro de nivel inferior puede estar usando el ejemplo. El PIN de salida siempre debe llamar a **getBuffer** para obtener un nuevo ejemplo.
+Cuando un pin recibe una muestra, puede copiar los datos en otra muestra o puede modificar la muestra original y entregarla al filtro siguiente. Potencialmente, un ejemplo puede recorrer toda la longitud del gráfico, cada filtro que llama a **AddRef** **y Release** a su vez. Por lo tanto, el pin de salida nunca debe volver a usar un ejemplo después de llamar a **Receive**, porque un filtro de nivel inferior puede estar usando el ejemplo. El pin de salida siempre debe llamar **a GetBuffer** para obtener un nuevo ejemplo.
 
-Este mecanismo reduce la cantidad de asignación de memoria, ya que los filtros vuelven a usar los mismos búferes. También impide que los filtros escriban accidentalmente sobre los datos que no se han procesado, porque el asignador mantiene una lista de ejemplos disponibles.
+Este mecanismo reduce la cantidad de asignación de memoria, ya que los filtros usan de nuevo los mismos búferes. También evita que los filtros escriban accidentalmente datos que no se han procesado, porque el asignador mantiene una lista de ejemplos disponibles.
 
-Un filtro puede utilizar asignadores independientes para la entrada y la salida. Podría hacer esto si expande los datos de entrada (por ejemplo, descomprimiendo). Si el resultado no es mayor que la entrada, un filtro podría procesar los datos en su lugar, sin copiarlos en un nuevo ejemplo. En ese caso, dos o más conexiones de PIN pueden compartir un asignador.
+Un filtro puede usar asignadores independientes para la entrada y la salida. Podría hacerlo si expande los datos de entrada (por ejemplo, descomprimiendo). Si la salida no es mayor que la entrada, un filtro podría procesar los datos en su lugar, sin copiarlos en un nuevo ejemplo. En ese caso, dos o más conexiones de pin pueden compartir un asignador.
 
-**Confirmación y desconfirmación de asignadores**
+**Confirmación y desasignación de asignadores**
 
-Cuando un filtro crea primero un asignador, el asignador no ha reservado ningún búfer de memoria. En este momento, se producirá un error en todas las llamadas al método **getBuffer** . Cuando se inicia el streaming, el PIN de salida llama a [**IMemAllocator:: commit**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-commit), que confirma el asignador, lo que hace que se asigne memoria. Ahora, los pin pueden llamar a **getBuffer**.
+Cuando un filtro crea por primera vez un asignador, el asignador no ha reservado ningún búfer de memoria. En este momento, se producirá un error en las llamadas **al método GetBuffer.** Cuando se inicia el streaming, el pin de salida llama a [**IMemAllocator::Commit**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-commit), que confirma el asignador, lo que hace que asigne memoria. Los pines ahora pueden llamar **a GetBuffer.**
 
-Cuando se detiene el streaming, el PIN llama a [**IMemAllocator::D ecommit**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-decommit), que anula la confirmación del asignador. Se producirá un error en todas las llamadas subsiguientes a **getBuffer** hasta que se confirme de nuevo el asignador. Además, si alguna llamada a **getBuffer** está bloqueada actualmente a la espera de un ejemplo, devolverá inmediatamente un código de error. El método de **desconfirmación** puede liberar o no la memoria, en función de la implementación. Por ejemplo, la clase [**CMemAllocator**](cmemallocator.md) espera hasta que su método de destructor libere memoria.
+Cuando se detiene el streaming, el pin llama a [**IMemAllocator::D ecommit**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-decommit), que desasigna el asignador. Todas las llamadas subsiguientes **a GetBuffer producirán** un error hasta que el asignador vuelva a estar confirmado. Además, si alguna llamada a **GetBuffer** está bloqueada actualmente a la espera de un ejemplo, devuelve inmediatamente un código de error. El **método Decommit** puede liberar o no la memoria, en función de la implementación. Por ejemplo, la [**clase CMemAllocator**](cmemallocator.md) espera hasta que su método destructor libera memoria.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Flujo de datos en el gráfico de filtros](data-flow-in-the-filter-graph.md)
+[Datos Flow en el filtro Graph](data-flow-in-the-filter-graph.md)
 </dt> </dl>
 
  

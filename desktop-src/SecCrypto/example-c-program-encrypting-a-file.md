@@ -1,25 +1,25 @@
 ---
-description: En el siguiente ejemplo se cifra un archivo de datos. El ejemplo solicita interactivamente el nombre del archivo que contiene el texto sin formato que se va a cifrar y el nombre de un archivo donde se escribirán los datos cifrados.
+description: En el ejemplo siguiente se cifra un archivo de datos. En el ejemplo se solicita interactivamente el nombre del archivo que contiene texto no cifrado que se va a cifrar y el nombre de un archivo donde se escribirán los datos cifrados.
 ms.assetid: a21dd25a-ac3c-483b-b270-6d86f10ae0a0
-title: 'Programa C de ejemplo: cifrado de un archivo'
+title: 'Programa C de ejemplo: Cifrado de un archivo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4f20d05b1456c6b38783bc9ec10d4c26633c2d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5b67729c5b6068d1c85b3ecdf1b345b89c9554166d1942f266966f5c3702499
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007663"
 ---
-# <a name="example-c-program-encrypting-a-file"></a>Programa C de ejemplo: cifrado de un archivo
+# <a name="example-c-program-encrypting-a-file"></a>Programa C de ejemplo: Cifrado de un archivo
 
-En el siguiente ejemplo se cifra un archivo de datos. El ejemplo solicita interactivamente el nombre del archivo que contiene el [*texto sin formato*](../secgloss/p-gly.md) que se va a cifrar y el nombre de un archivo donde se escribirán los datos cifrados.
+En el ejemplo siguiente se cifra un archivo de datos. En el ejemplo se solicita interactivamente [](../secgloss/p-gly.md) el nombre del archivo que contiene texto no cifrado que se va a cifrar y el nombre de un archivo donde se escribirán los datos cifrados.
 
-En el ejemplo se solicita al usuario los nombres de un archivo de entrada y un archivo de salida. También pregunta al usuario si se va a usar una contraseña para crear la clave de sesión de cifrado. Si se va a usar una contraseña en el cifrado de los datos, se debe usar la misma contraseña en el programa que descifra el archivo. Para obtener más información, vea [el ejemplo C programa: descifrar un archivo](example-c-program-decrypting-a-file.md).
+En el ejemplo se solicita al usuario los nombres de un archivo de entrada y un archivo de salida. También solicita al usuario si se va a usar una contraseña para crear la clave de sesión de cifrado. Si se va a usar una contraseña en el cifrado de los datos, se debe usar la misma contraseña en el programa que descifra el archivo. Para obtener más información, vea [Ejemplo de programa C: Descifrar un archivo](example-c-program-decrypting-a-file.md).
 
-Debido al cambio en las restricciones de control de exportación, el [*proveedor de servicios criptográficos*](../secgloss/c-gly.md) (CSP) y la [*longitud de clave*](../secgloss/k-gly.md) predeterminada pueden cambiar entre las versiones del sistema operativo. Es importante que tanto el cifrado como el descifrado usen el mismo CSP y que la longitud de la clave se establezca explícitamente para garantizar la interoperabilidad en distintas plataformas de sistema operativo.
+Debido al cambio de las restricciones de control de exportación, el proveedor de [*servicios*](../secgloss/c-gly.md) criptográficos (CSP) predeterminado y la longitud de clave predeterminada [*pueden*](../secgloss/k-gly.md) cambiar entre las versiones del sistema operativo. Es importante que tanto el cifrado como el descifrado usen el mismo CSP y que la longitud de la clave se establezca explícitamente para garantizar la interoperabilidad en distintas plataformas de sistema operativo.
 
-En este ejemplo se usa la función [**MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código de esta y otras funciones auxiliares también se enumeran en [funciones de de uso general](general-purpose-functions.md).
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código para esta y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
 
 ```C++

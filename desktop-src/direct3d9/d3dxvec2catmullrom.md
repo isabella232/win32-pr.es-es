@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c734727f3f2f44c9094885e0e743f605f16c91d2
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 9742a9a0787fe605c84972b87f0a8a6fa17b93fc7a8f091dc3aa38048a9f1dbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108114323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044653"
 ---
 # <a name="d3dxvec2catmullrom-function-d3dx9mathh"></a>Función D3DXVec2CatmullRom (D3dx9math.h)
 
@@ -119,7 +119,7 @@ Q(s) is parallel to the line joining p2 to p4 when s is 1.
 
 
 
-La Catmull-Rom spline se puede derivar de la spline de Hermite estableciendo:
+El Catmull-Rom spline se puede derivar de la spline hermite estableciendo:
 
 
 ```
@@ -141,7 +141,7 @@ p3 es el contenido de pV2.
 
 p4 es el contenido de pV3.
 
-Uso de la ecuación spline de Hermite:
+Uso de la ecuación spline hermite:
 
 
 ```
@@ -159,7 +159,7 @@ Q(s) = (2s3 - 3s2 + 1)p2 + (-2s3 + 3s2)p3 + (s3 - 2s2 + s)(p3 - p1) / 2 + (s3 - 
 
 
 
-Esto se puede reorganizar de la siguiente forma:
+Esto se puede reorganizar como:
 
 
 ```
@@ -179,7 +179,7 @@ Q(s) = [(-s3 + 2s2 - s)p1 + (3s3 - 5s2 + 2)p2 + (-3s3 + 4s2 + s)p3 + (s3 - s2)p4
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

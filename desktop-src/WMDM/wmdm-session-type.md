@@ -1,9 +1,9 @@
 ---
-title: Enumeración WMDM_SESSION_TYPE
-description: El tipo \_ de \_ enumeración de tipo de sesión WMDM define el tipo de sesión.
+title: WMDM_SESSION_TYPE enumeración
+description: El tipo de \_ enumeración WMDM SESSION \_ TYPE define el tipo de sesión.
 ms.assetid: e4ed41c0-521f-4da0-8361-287b64d74d77
 keywords:
-- Enumeración WMDM_SESSION_TYPE Administrador de dispositivos de Windows Media
+- WMDM_SESSION_TYPE enumeración windows Media Administrador de dispositivos
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 84322986266143e5ff4ecc469c56504f29de9e3a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e4e3d3d774667ca0c7026caa05609efd69443e00c0c2e273a1e6ad0ac086aa9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055533"
 ---
-# <a name="wmdm_session_type-enumeration"></a>\_Enumeración de tipo de sesión WMDM \_
+# <a name="wmdm_session_type-enumeration"></a>Enumeración \_ WMDM SESSION \_ TYPE
 
-El tipo de enumeración de **\_ \_ tipo de sesión WMDM** define el tipo de sesión.
+El **tipo de \_ enumeración WMDM SESSION \_ TYPE** define el tipo de sesión.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -44,35 +44,35 @@ typedef enum tagWMDM_SESSION_TYPE {
 
 <dl> <dt>
 
-<span id="WMDM_SESSION_NONE"></span><span id="wmdm_session_none"></span>**sesión de WMDM \_ \_ ninguno**
+<span id="WMDM_SESSION_NONE"></span><span id="wmdm_session_none"></span>**WMDM \_ SESSION \_ NONE**
 </dt> <dd>
 
 La sesión no está definida.
 
 </dd> <dt>
 
-<span id="WMDM_SESSION_TRANSFER_TO_DEVICE"></span><span id="wmdm_session_transfer_to_device"></span>**\_ \_ transferencia de sesión \_ de WMDM al \_ dispositivo**
+<span id="WMDM_SESSION_TRANSFER_TO_DEVICE"></span><span id="wmdm_session_transfer_to_device"></span>**TRANSFERENCIA DE SESIÓN DE WMDM \_ \_ AL \_ \_ DISPOSITIVO**
 </dt> <dd>
 
 La sesión se define como la transferencia de datos al dispositivo.
 
 </dd> <dt>
 
-<span id="WMDM_SESSION_TRANSFER_FROM_DEVICE"></span><span id="wmdm_session_transfer_from_device"></span>**\_ \_ transferencia de sesión \_ de WMDM desde el \_ dispositivo**
+<span id="WMDM_SESSION_TRANSFER_FROM_DEVICE"></span><span id="wmdm_session_transfer_from_device"></span>**TRANSFERENCIA DE SESIÓN DE WMDM \_ \_ DESDE EL \_ \_ DISPOSITIVO**
 </dt> <dd>
 
 La sesión se define como la transferencia de datos desde el dispositivo.
 
 </dd> <dt>
 
-<span id="WMDM_SESSION_DELETE"></span><span id="wmdm_session_delete"></span>**\_eliminación de sesión de WMDM \_**
+<span id="WMDM_SESSION_DELETE"></span><span id="wmdm_session_delete"></span>**WMDM \_ SESSION \_ DELETE**
 </dt> <dd>
 
 La sesión se define como la eliminación de datos.
 
 </dd> <dt>
 
-<span id="WMDM_SESSION_CUSTOM"></span><span id="wmdm_session_custom"></span>**sesión de WMDM \_ \_ personalizada**
+<span id="WMDM_SESSION_CUSTOM"></span><span id="wmdm_session_custom"></span>**WMDM \_ SESSION \_ CUSTOM**
 </dt> <dd>
 
 La sesión se define como una sesión personalizada.
@@ -85,7 +85,7 @@ La sesión se define como una sesión personalizada.
 
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMDM. idl</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdm.idl</dt> </dl> |
 
 
 

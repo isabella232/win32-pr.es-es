@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: clase ByteColumnValue'
-title: Clase ByteColumnValue
+description: 'Más información sobre: Clase ByteColumnValue'
+title: ByteColumnValue (clase)
 TOCTitle: ByteColumnValue class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.ByteColumnValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.bytecolumnvalue(v=EXCHG.10)
@@ -24,28 +24,28 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a79f3f382ee58465bb70d71b00e0ac79c67b1bc3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78ddaa281a65ed01030bcc97312f4fcf64c001a3f0ad976f771c64b46ddab4b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105720758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042513"
 ---
-# <a name="bytecolumnvalue-class"></a>Clase ByteColumnValue
+# <a name="bytecolumnvalue-class"></a>ByteColumnValue (clase)
 
-Valor de columna de [bytes](/dotnet/api/system.byte) .
+Valor [de la](/dotnet/api/system.byte) columna Byte.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  [Microsoft. ISAM. esent. Interop. ColumnValue](./columnvalue-class.md)  
-    [Microsoft. ISAM. esent. Interop. ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Byte](/dotnet/api/system.byte)\>  
-      Microsoft. ISAM. esent. Interop. ByteColumnValue  
+  [Microsoft.Isam.Esent.Interop.ColumnValue](./columnvalue-class.md)  
+    [Microsoft.Isam.Esent.Interop.ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Byte](/dotnet/api/system.byte)\>  
+      Microsoft.Isam.Esent.Interop.ByteColumnValue  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -67,6 +67,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de ByteColumnValue](./bytecolumnvalue-members.md)
+[Miembros ByteColumnValue](./bytecolumnvalue-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

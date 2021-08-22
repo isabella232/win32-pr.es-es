@@ -1,10 +1,10 @@
 ---
-title: MPSCAN_DATA estructura (MpClient. h)
+title: MPSCAN_DATA estructura (MpClient.h)
 description: Examinar los datos pasados a la devolución de llamada.
 ms.assetid: 6C9AAF1E-7566-43EE-A100-5112E9B8878C
 keywords:
-- MPSCAN_DATA estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPSCAN_DATA características de entorno heredado de Windows
+- MPSCAN_DATA estructura heredada de Windows environment
+- PMPSCAN_DATA puntero de estructura heredado de Windows environment
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e78508313f102e2baad19cf359a5c3a7c172db0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5b7c00357b8f104fff42b94de552d52979c364dee64a82bb8e438946319c8c13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493060"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975995"
 ---
-# <a name="mpscan_data-structure"></a>\_Estructura de datos MPSCAN
+# <a name="mpscan_data-structure"></a>Estructura DE DATOS DE MPSCAN \_
 
 Examinar los datos pasados a la devolución de llamada.
 
-Esta estructura contiene estadísticas acumuladas de recursos y amenazas. Estos campos de STAT siempre son válidos.
+Esta estructura contiene estadísticas acumulativas de amenazas y recursos. Estos campos de estadísticas siempre son válidos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,7 +49,7 @@ typedef struct tagMPSCAN_DATA {
 **ScanType**
 </dt> <dd>
 
-Tipo: **[ **MPSCAN \_ Type**](mpscan-type.md)**
+Tipo: **[ **MPSCAN \_ TYPE**](mpscan-type.md)**
 
 </dd> <dd>
 
@@ -60,18 +60,18 @@ Tipo de examen.
 **ResourceInfo**
 </dt> <dd>
 
-Tipo: **PMPRESOURCE \_ info**
+Tipo: **PMPRESOURCE \_ INFO**
 
 </dd> <dd>
 
-Información de recursos. Vea [**\_ información de MPRESOURCE**](mpresource-info.md).
+Información de recursos. Vea [**MPRESOURCE \_ INFO**](mpresource-info.md).
 
 </dd> <dt>
 
 **ResourceStats**
 </dt> <dd>
 
-Tipo: **[ **\_ estadísticas de MPRESOURCE**](mpresource-stats.md)**
+Tipo: **[ **MPRESOURCE \_ STATS**](mpresource-stats.md)**
 
 </dd> <dd>
 
@@ -82,11 +82,11 @@ Estadísticas acumulativas relacionadas con recursos.
 **ThreatStats**
 </dt> <dd>
 
-Tipo: **[ **\_ estadísticas de MPTHREAT**](mpthreat-stats.md)**
+Tipo: **[ **MPTHREAT \_ STATS**](mpthreat-stats.md)**
 
 </dd> <dd>
 
-Estadísticas de amenazas con finalizaciones de análisis correctas.
+Estadísticas de amenazas con finalizaciones de examen correctas.
 
 </dd> </dl>
 
@@ -96,9 +96,9 @@ Estadísticas de amenazas con finalizaciones de análisis correctas.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
@@ -106,16 +106,16 @@ Estadísticas de amenazas con finalizaciones de análisis correctas.
 
 <dl> <dt>
 
-[**información de MPRESOURCE \_**](mpresource-info.md)
+[**MPRESOURCE \_ INFO**](mpresource-info.md)
 </dt> <dt>
 
-[**estadísticas de MPRESOURCE \_**](mpresource-stats.md)
+[**ESTADÍSTICAS DE MPRESOURCE \_**](mpresource-stats.md)
 </dt> <dt>
 
-[**\_tipo MPSCAN**](mpscan-type.md)
+[**TIPO \_ MPSCAN**](mpscan-type.md)
 </dt> <dt>
 
-[**estadísticas de MPTHREAT \_**](mpthreat-stats.md)
+[**ESTADÍSTICAS DE MPTHREAT \_**](mpthreat-stats.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Devuelve un valor booleano que indica si la extensión EKU está presente. Esta es la propiedad predeterminada.
 ms.assetid: d7568525-1054-47e1-a176-f154792f9589
-title: Propiedad ExtendedKeyUsage. IsPresent
+title: Propiedad ExtendedKeyUsage.IsPresent
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,20 +13,20 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 785fa3c973e7f90eeab20bd76826b9e5bf612891
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 43c561e6c848380326151af12aebf584fb53eb7332c8e6c0d61074da03f7d3de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007343"
 ---
-# <a name="extendedkeyusageispresent-property"></a>Propiedad ExtendedKeyUsage. IsPresent
+# <a name="extendedkeyusageispresent-property"></a>Propiedad ExtendedKeyUsage.IsPresent
 
-\[CAPICOM es un componente de solo bits de 32 que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use la [**clase X509EnhancedKeyUsageExtension**](/dotnet/api/system.security.cryptography.x509certificates.x509enhancedkeyusageextension?view=netcore-3.1) en el espacio de nombres [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) .\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use la clase [**X509EnhancedKeyUsageExtension**](/dotnet/api/system.security.cryptography.x509certificates.x509enhancedkeyusageextension?view=netcore-3.1) en el espacio de nombres [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-La propiedad **IsPresent** devuelve un valor booleano que indica si la extensión EKU está presente. Esta es la propiedad predeterminada.
+La **propiedad IsPresent** devuelve un valor booleano que indica si la extensión EKU está presente. Esta es la propiedad predeterminada.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -37,7 +37,7 @@ ExtendedKeyUsage.IsPresent As Boolean
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Si es **true**, la extensión EKU está presente.
+Si **es true,** la extensión EKU está presente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Si es **true**, la extensión EKU está presente.
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/> | Windows Vista<br/>                                                               |
 | Fin de compatibilidad de servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuible<br/>       | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/>       | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

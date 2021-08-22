@@ -4,12 +4,12 @@ ms.assetid: 43a97dc8-19b3-412c-a015-339099bf4f6c
 title: Creación de un procesador de vídeo DXVA-HD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e89c5a361335f83296eec538a5a6a710b9e19604
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4945153dfd3e14f1d2caae9b0a84f201745ea24722781bf998930477054138c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974824"
 ---
 # <a name="creating-a-dxva-hd-video-processor"></a>Creación de un procesador de vídeo DXVA-HD
 
@@ -73,9 +73,9 @@ Para crear un procesador de vídeo DXVA-HD:
 
     
 
-4.  Compruebe si el dispositivo DXVA-HD admite los formatos de vídeo de entrada que necesita. En el tema [Comprobación de formatos DXVA-HD](checking-supported-dxva-hd-formats.md) admitidos se describe este paso con más detalle.
+4.  Compruebe si el dispositivo DXVA-HD admite los formatos de vídeo de entrada que necesita. En el tema [Comprobar formatos DXVA-HD](checking-supported-dxva-hd-formats.md) admitidos se describe este paso con más detalle.
 5.  Compruebe si el dispositivo DXVA-HD admite el formato de salida que necesita. En la sección [Comprobación de los formatos DXVA-HD](checking-supported-dxva-hd-formats.md) admitidos se describe este paso con más detalle.
-6.  Asigne una matriz de [**estructuras \_ DE DXVAHD VPCAPS.**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) El miembro **VideoProcessorCount** de la estructura [**\_ DXVAHD VPDEVCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) obtiene el número de elementos de matriz que se deben asignar, obtenido en el paso 3.
+6.  Asigne una matriz de [**estructuras \_ DXVAHD VPCAPS.**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) El número de elementos de matriz que se deben asignar lo asigna el miembro **VideoProcessorCount** de la estructura [**DXVAHD \_ VPDEVCAPS,**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) obtenido en el paso 3.
     ```C++
         // Create the array of video processor caps. 
         
@@ -90,8 +90,8 @@ Para crear un procesador de vídeo DXVA-HD:
 
     
 
-7.  Cada [**estructura DXVAHD \_ VPCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) representa un procesador de vídeo distinto. Puede recorrer en bucle esta matriz para detectar las funcionalidades de cada procesador de vídeo. La estructura incluye información sobre las funcionalidades de desenlazado, tele telefónica y conversión de velocidad de fotogramas del procesador de vídeo.
-8.  Seleccione un procesador de vídeo para crearlo. El **miembro VPGuid** de la [**estructura DXVAHD \_ VPCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) contiene un GUID que identifica de forma única el procesador de vídeo. Pase este GUID al [**método IDXVAHD \_ Device::CreateVideoProcessor.**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-createvideoprocessor) El método devuelve un [**puntero iDXVAHD \_ VideoProcessor.**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_videoprocessor)
+7.  Cada [**estructura DXVAHD \_ VPCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) representa un procesador de vídeo distinto. Puede recorrer en bucle esta matriz para detectar las funcionalidades de cada procesador de vídeo. La estructura incluye información sobre las funcionalidades de desenlazado, televersión y conversión de velocidad de fotogramas del procesador de vídeo.
+8.  Seleccione un procesador de vídeo para crear. El **miembro VPGuid** de la [**estructura DXVAHD \_ VPCAPS**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpcaps) contiene un GUID que identifica de forma única el procesador de vídeo. Pase este GUID al [**método IDXVAHD \_ Device::CreateVideoProcessor.**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-createvideoprocessor) El método devuelve un [**puntero IDXVAHD \_ VideoProcessor.**](/windows/desktop/api/dxvahd/nn-dxvahd-idxvahd_videoprocessor)
     ```C++
         HRESULT hr = pDXVAHD->GetVideoProcessorCaps(
             caps.VideoProcessorCount, pVPCaps);

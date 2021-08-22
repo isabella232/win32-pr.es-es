@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec2BaryCentric (D3DX10Math.h): devuelve un punto en coordenadas baricéntricas, mediante los vectores 2D especificados.'
+description: 'Función D3DXVec2BaryCentric (D3DX10Math.h): devuelve un punto en coordenadas centradas en Barycentric, mediante los vectores 2D especificados.'
 ms.assetid: 8eceb2c0-26a0-4a7f-9830-85327dcb31ab
 title: Función D3DXVec2BaryCentric (D3DX10Math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 5b78d08c67fed04af9ef0d54d0c6895106b99208
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: be7cf659a3f6c8aeffd07cdc9990e1e705d8b1db84aef019f77c0201961d16a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990745"
 ---
 # <a name="d3dxvec2barycentric-function-d3dx10mathh"></a>Función D3DXVec2BaryCentric (D3DX10Math.h)
 
-Devuelve un punto en coordenadas baricéntricas, utilizando los vectores 2D especificados.
+Devuelve un punto en coordenadas centradas en Barycentric, utilizando los vectores 2D especificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -90,7 +90,7 @@ Factor de ponderación. Vea la sección Comentarios.
 
 </dd> <dt>
 
-*g* \[ in\]
+*g* \[ en\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -103,7 +103,7 @@ Factor de ponderación. Vea la sección Comentarios.
 
 Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
 
-Puntero a una estructura D3DXVECTOR2 en coordenadas centradas en Bary.
+Puntero a una estructura D3DXVECTOR2 en coordenadas centradas en Barycentric.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -135,7 +135,7 @@ Las coordenadas centradas en barras definen un punto dentro de un triángulo en 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

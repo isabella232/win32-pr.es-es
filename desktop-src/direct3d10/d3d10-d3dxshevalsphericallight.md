@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: e1e509ea4695f143bd5399cbda004bcba53f514c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fa5d1a8dedd9620a3111a1973a26c62c69f138325a19b58632d978f25415b268
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990859"
 ---
 # <a name="d3dxshevalsphericallight-function-d3dx10h"></a>Función D3DXSHEvalSphericalLight (D3DX10.h)
 
-Evalúa una luz esférica y devuelve datos esféricos de armónica esférica (SH).
+Evalúa una luz esférica y devuelve datos esféricos esféricos (SH).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -137,7 +137,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 ## <a name="remarks"></a>Comentarios
 
-Evalúa una luz esférica y devuelve datos sh espectrales. No hay ninguna normalización de la intensidad de la luz como para las luces direccionales, por lo que se debe tener cuidado al especificar las intensidades. Esto calculará tres ejemplos espectrales; se devolverá pROut, mientras que se pueden devolver pGOut y pBOut.
+Evalúa una luz esférica y devuelve datos sh espectrales. No hay ninguna normalización de la intensidad de la luz como en el caso de las luces direccionales, por lo que se debe tener cuidado al especificar las intensidades. Esto calculará tres ejemplos espectrales; Se devolverá pROut, mientras que se pueden devolver pGOut y pBOut.
 
 En la esfera con radio de unidad, como se muestra en la ilustración siguiente, la dirección se puede especificar simplemente con theta, el ángulo sobre el eje Z en la dirección derecha y el ángulo de la z.
 
@@ -158,7 +158,7 @@ Las ecuaciones siguientes muestran la relación entre las coordenadas cartesiana
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

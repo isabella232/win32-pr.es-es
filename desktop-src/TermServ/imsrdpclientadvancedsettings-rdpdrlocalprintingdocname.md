@@ -1,26 +1,26 @@
 ---
-title: Propiedad RdpdrLocalPrintingDocName de IMsRdpClientAdvancedSettings
-description: Esta propiedad no es compatible. | Propiedad RdpdrLocalPrintingDocName de IMsRdpClientAdvancedSettings
+title: IMsRdpClientAdvancedSettings RdpdrLocalPrintingDocName, propiedad
+description: Esta propiedad no es compatible. | IMsRdpClientAdvancedSettings RdpdrLocalPrintingDocName, propiedad
 ms.assetid: ccff4695-920b-4595-9beb-f084ccca420e
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad RdpdrLocalPrintingDocName
-- Propiedad RdpdrLocalPrintingDocName Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad RdpdrLocalPrintingDocName
-- Propiedad RdpdrLocalPrintingDocName Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad RdpdrLocalPrintingDocName
-- Propiedad RdpdrLocalPrintingDocName Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad RdpdrLocalPrintingDocName
-- Propiedad RdpdrLocalPrintingDocName Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad RdpdrLocalPrintingDocName
-- Propiedad RdpdrLocalPrintingDocName Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad RdpdrLocalPrintingDocName
-- Propiedad RdpdrLocalPrintingDocName Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad RdpdrLocalPrintingDocName
-- Propiedad RdpdrLocalPrintingDocName Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad RdpdrLocalPrintingDocName
-- Propiedad RdpdrLocalPrintingDocName Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad RdpdrLocalPrintingDocName
+- Propiedad RdpdrLocalPrintingDocName Servicios de Escritorio remoto
+- Propiedad RdpdrLocalPrintingDocName Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad RdpdrLocalPrintingDocName
+- Propiedad RdpdrLocalPrintingDocName Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad RdpdrLocalPrintingDocName
+- Propiedad RdpdrLocalPrintingDocName Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad RdpdrLocalPrintingDocName
+- Propiedad RdpdrLocalPrintingDocName Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad RdpdrLocalPrintingDocName
+- Propiedad RdpdrLocalPrintingDocName Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad RdpdrLocalPrintingDocName
+- Propiedad RdpdrLocalPrintingDocName Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad RdpdrLocalPrintingDocName
+- Propiedad RdpdrLocalPrintingDocName Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad RdpdrLocalPrintingDocName
+- Propiedad RdpdrLocalPrintingDocName Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad RdpdrLocalPrintingDocName
 topic_type:
 - apiref
 api_name:
@@ -54,20 +54,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98eb602e7a882d4c202b4a81aefec9c31105ca0d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b470e9a0e1bc22a06f690cc9577944d73aab9d7381fc38102e5b0489e00c04de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105689847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058983"
 ---
-# <a name="imsrdpclientadvancedsettingsrdpdrlocalprintingdocname-property"></a>IMsRdpClientAdvancedSettings:: RdpdrLocalPrintingDocName (propiedad)
+# <a name="imsrdpclientadvancedsettingsrdpdrlocalprintingdocname-property"></a>IMsRdpClientAdvancedSettings::RdpdrLocalPrintingDocName, propiedad
 
 Esta propiedad no es compatible.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -88,13 +88,13 @@ Nuevo nombre.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ false**.
+Devuelve **S \_ FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                       |

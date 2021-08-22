@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 593b007f75c7eb134de4bb4c9f83c7246e9a51b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1c8a99ea92391626975d635802f82dd81b663247f4bb3522db19d14237d920f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051123"
 ---
 # <a name="wmisetalsbrightnessstate-method-of-the-wmimonitorbrightnessmethods-class"></a>Método WmiSetALSBrightnessState de la clase WmiMonitorBrightnessMethods
 
-El método **WmiSetALSBrightnessState** se usa para controlar el estado de brillo del sensor de luz ambiente. Si se estableció una invalidación de brillo activa mediante el método [**WmiSetBrightness**](wmisetbrightness-method-in-class-wmimonitorbrightnessmethods.md) , esa invalidación tendrá prioridad sobre el conjunto de brillo de ALS mediante este método. Para que una invalidación de brillo de ALS habilitada surta efecto, se debe revertir la Directiva de brillo mediante el método [**WmiRevertToPolicyBrightness**](wmireverttopolicybrightness-method-in-class-wmimonitorbrightnessmethods.md) .
+El **método WmiSetALSBrightnessState** se usa para controlar el estado de brillo del sensor de luz ambiente. Si se estableció una invalidación de brillo activa mediante el método [**WmiSetBrightness,**](wmisetbrightness-method-in-class-wmimonitorbrightnessmethods.md) esa invalidación tendrá prioridad sobre el brillo de ALS establecido mediante este método. Para que una invalidación de brillo de ALS habilitada suba efecto, la directiva de brillo debe revertirse mediante el [**método WmiRevertToPolicyBrightness.**](wmireverttopolicybrightness-method-in-class-wmimonitorbrightnessmethods.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,24 +42,24 @@ uint32 WmiSetALSBrightnessState(
 *State* 
 </dt> <dd>
 
-Estado de brillo de ALS. False deshabilita la invalidación de brillo de ALS y true la habilita.
+Estado de brillo de ALS. False deshabilita la invalidación de brillo de ALS y true lo habilita.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero (0) para indicar que la operación se ha realizado correctamente. Cualquier otro número indica que hubo un error. Para obtener más información sobre los códigos de error, vea [**constantes error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).
+Devuelve cero (0) para indicar que se ha correcto. Cualquier otro número indica que hubo un error. Para obtener más información sobre los códigos de [**error,**](/windows/desktop/WmiSdk/wmi-error-constants) vea Constantes de error WMI o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
-| Espacio de nombres<br/>                | \\WMI raíz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Wmi \\ raíz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

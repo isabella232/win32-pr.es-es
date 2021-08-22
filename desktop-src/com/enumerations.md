@@ -1,46 +1,46 @@
 ---
 title: Enumeraciones (COM)
 ms.assetid: 57faa6ef-76fa-4b81-8aae-aa3263b952fd
-description: 'Más información acerca de: enumeraciones (COM)'
+description: 'Más información sobre: Enumeraciones (COM)'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb24dc014342027a6f3a34c35b8eedfcf4c3a81c
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: c88b1f4d72d0d0770566d59212f1403c309a28aaa4b6703ed55f5fe8269224a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "104279904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048303"
 ---
 # <a name="enumerations-com"></a>Enumeraciones (COM)
 
-COM proporciona las siguientes enumeraciones:
+COM proporciona las enumeraciones siguientes:
 
 -   [**APTTYPE**](/windows/win32/api/objidlbase/ne-objidlbase-apttype)
 -   [**APTTYPEQUALIFIER**](/windows/win32/api/objidlbase/ne-objidlbase-apttype)
--   [**ENLAZAr \_ marcas**](/windows/win32/api/objidl/ne-objidl-bind_flags)
+-   [**MARCAS \_ DE ENLACE**](/windows/win32/api/objidl/ne-objidl-bind_flags)
 -   [**BINDSPEED**](/windows/win32/api/oleidl/ne-oleidl-bindspeed)
--   **\_opción BSCO**
--   [**copia de CALLFRAME \_**](/windows/win32/api/callobj/ne-callobj-callframe_copy)
--   [**CALLFRAME \_ gratis**](/windows/desktop/api/CallObj/ne-callobj-callframe_free)
--   [**paseo por CALLFRAME \_**](/windows/desktop/api/CallObj/ne-callobj-callframe_walk)
+-   **OPCIÓN \_ BSCO**
+-   [**COPIA \_ DE CALLFRAME**](/windows/win32/api/callobj/ne-callobj-callframe_copy)
+-   [**CALLFRAME \_ FREE**](/windows/desktop/api/CallObj/ne-callobj-callframe_free)
+-   [**CALLFRAME \_ WALK**](/windows/desktop/api/CallObj/ne-callobj-callframe_walk)
 -   [**CALLTYPE**](/windows/win32/api/objidl/ne-objidl-calltype)
 -   [**CLSCTX**](/windows/win32/api/wtypesbase/ne-wtypesbase-clsctx)
--   [**CO \_ serialización \_ de \_ atributos de contexto**](/windows/desktop/api/objidl/ne-objidl-co_marshaling_context_attributes)
--   [**Coinit**](/windows/win32/api/objbase/ne-objbase-coinit)
--   [**En com**](/windows/win32/api/objbase/ne-objbase-comsd)
--   [**marcas de cowait \_**](/windows/win32/api/combaseapi/ne-combaseapi-cowait_flags)
--   [**ChangeType de EOC \_**](/windows/win32/api/eventsys/ne-eventsys-eoc_changetype)
--   [**\_capacidades de autenticación Eole \_**](/windows/win32/api/objidlbase/ne-objidlbase-eole_authentication_capabilities)
+-   [**ATRIBUTOS DE \_ CONTEXTO DE \_ SERIALIZACIÓN \_ CO**](/windows/desktop/api/objidl/ne-objidl-co_marshaling_context_attributes)
+-   [**COINIT**](/windows/win32/api/objbase/ne-objbase-coinit)
+-   [**COMSD**](/windows/win32/api/objbase/ne-objbase-comsd)
+-   [**MARCAS DE \_ COWAIT**](/windows/win32/api/combaseapi/ne-combaseapi-cowait_flags)
+-   [**EOC \_ ChangeType**](/windows/win32/api/eventsys/ne-eventsys-eoc_changetype)
+-   [**FUNCIONALIDADES DE AUTENTICACIÓN DE EOLE \_ \_**](/windows/win32/api/objidlbase/ne-objidlbase-eole_authentication_capabilities)
 -   [**EXTCONN**](/windows/win32/api/objidlbase/ne-objidlbase-extconn)
--   [**propiedades de GLOBALOPT \_**](/windows/win32/api/objidl/ne-objidl-globalopt_properties)
--   [**GLOBALOPT anular \_ serialización de \_ valores de directiva \_**](/windows/win32/api/objidl/ne-objidl-globalopt_unmarshaling_policy_values)
+-   [**PROPIEDADES DE \_ GLOBALOPT**](/windows/win32/api/objidl/ne-objidl-globalopt_properties)
+-   [**VALORES DE DIRECTIVA \_ DE DESMARQUE GLOBALOPT \_ \_**](/windows/win32/api/objidl/ne-objidl-globalopt_unmarshaling_policy_values)
 -   [**MKRREDUCE**](/windows/win32/api/objidl/ne-objidl-mkrreduce)
 -   [**MKSYS**](/windows/win32/api/objidl/ne-objidl-mksys)
 -   [**MSHCTX**](/windows/win32/api/wtypesbase/ne-wtypesbase-mshctx)
 -   [**MSHLFLAGS**](/windows/win32/api/wtypesbase/ne-wtypesbase-mshlflags)
 -   [**PENDINGMSG**](/windows/win32/api/objidl/ne-objidl-pendingmsg)
 -   [**PENDINGTYPE**](/windows/win32/api/objidl/ne-objidl-pendingtype)
--   [**\_Directiva de lectura de registros \_**](/windows/desktop/api/TxLogpub/ne-txlogpub-record_reading_policy)
+-   [**DIRECTIVA DE \_ LECTURA \_ DE REGISTROS**](/windows/desktop/api/TxLogpub/ne-txlogpub-record_reading_policy)
 -   [**REGCLS**](/windows/win32/api/combaseapi/ne-combaseapi-regcls)
 -   [**SERVERCALL**](/windows/win32/api/objidl/ne-objidl-servercall)
 -   [**THDTYPE**](/windows/win32/api/objidlbase/ne-objidlbase-thdtype)

@@ -1,6 +1,6 @@
 ---
-title: Si Pred-PS
-description: Inicio de una expresión if bool-PS... Else-PS... bloque endif-PS, con la condición tomada del contenido del registro de predicado.
+title: if pred - ps
+description: 'Inicio de un if bool - ps... else - ps... endif: bloque ps, con la condición tomada del contenido del registro de predicado.'
 ms.assetid: 7b43bf71-a2e9-468f-805f-620de065db08
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,53 +9,53 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ead7c5936550715d48ee1ef6a3938b6219558823
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: a1a9e1c531e5dc6cd76bdd220a94730f2fb7b859eb99d9bba217a008fb02b4c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103784912"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118511921"
 ---
-# <a name="if-pred---ps"></a>Si Pred-PS
+# <a name="if-pred---ps"></a>if pred - ps
 
-Inicio de una expresión [If bool-PS](if-bool---ps.md)... [else-PS](else---ps.md)... bloque [endif-PS](endif---ps.md) , con la condición tomada del contenido del registro de predicado.
+Inicio de un [if bool - ps](if-bool---ps.md)... [else - ps](else---ps.md)... [endif: bloque ps,](endif---ps.md) con la condición tomada del contenido del registro de predicado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| Si \[ ! \] Pred. replicateSwizzle |
+| si \[ ! \] pred.replicateSwiquele |
 |-------------------------------|
 
 
 
- 
+ 
 
 Donde:
 
--   \[!\] es un modificador NOT opcional. Esto modifica el valor en el registro del predicado.
--   Pred es el [registro del predicado](dx9-graphics-reference-asm-ps-registers-predicate.md).
--   replicateSwizzle es un componente único que se copia (o se replica) en los cuatro componentes (swizzled). Los componentes válidos son: \[ x, y, z, w \] o \[ r, g, b, a \] .
+-   \[!\] es un modificador NOT opcional. Esto modifica el valor en el registro de predicado.
+-   pred es el [registro de predicado.](dx9-graphics-reference-asm-ps-registers-predicate.md)
+-   replicateSwzzle es un único componente que se copia (o replica) en los cuatro componentes (despláctese). Los componentes válidos \[ son: x, y, z, w \] o \[ r, g, b, a \] .
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| Si es \_ Pred              |      |      |      |      |      | x    | x     | x    | x     |
+| si \_ pred              |      |      |      |      |      | x    | x     | x    | x     |
 
 
 
- 
+ 
 
-Esta instrucción se usa para omitir un bloque de código, basado en un canal del registro del predicado. Cada si el \_ bloque Pred debe terminar con una instrucción [else-PS](else---ps.md) o [endif-PS](endif---ps.md) .
+Esta instrucción se usa para omitir un bloque de código, en función de un canal del registro de predicado. Cada bloque \_ pred debe terminar con una [instrucción else - ps](else---ps.md) o [endif - ps.](endif---ps.md)
 
 Entre las restricciones se incluyen:
 
-Si \_ se pueden anidar los bloques pred. Cuenta con la profundidad de anidamiento dinámica total junto con los bloques de [ \_ COMP if](if-comp---ps.md) .
+si \_ se pueden anidar bloques pred. Esto cuenta con la profundidad total de anidamiento dinámico junto con los [bloques \_ if comp.](if-comp---ps.md)
 
-Un \_ bloque if Pred no puede ocupar un bloque de bucle; debe estar completamente dentro o delimitarlo.
+Un bloque si el pred no puede encontrarse en un bloque de bucle; debe estar completamente dentro de él \_ o rodearse.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -64,9 +64,9 @@ Un \_ bloque if Pred no puede ocupar un bloque de bucle; debe estar completament
 [Instrucciones del sombreador de píxeles](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

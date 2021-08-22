@@ -1,8 +1,8 @@
 ---
-description: La propiedad Methods \_ del objeto SWbemObject devuelve un objeto SWbemMethodSet que es una colección de los métodos de la clase o la instancia actual. Esta propiedad es de solo lectura.
+description: La propiedad Methods del objeto SWbemObject devuelve un objeto SWbemMethodSet que es una colección de los métodos para la clase o instancia \_ actual. Esta propiedad es de solo lectura.
 ms.assetid: ef9abced-5126-4698-b01e-f3e9c871162f
 ms.tgt_platform: multiple
-title: Propiedad SWbemObject.Methods_ (Wbemdisp. h)
+title: SWbemObject.Methods_ propiedad (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 6a702f0acf0736810de4d3176f8695fa8008d3ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e0442798a7630de20ff062a631baa335c5f6ed960900d571ca1d0e9e9a067f89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991985"
 ---
-# <a name="swbemobjectmethods_-property"></a>Propiedad SWbemObject. Methods \_
+# <a name="swbemobjectmethods_-property"></a>Propiedad SWbemObject.Methods \_
 
-La **propiedad \_ Methods** del objeto [**SWbemObject**](swbemobject.md) devuelve un objeto [**SWbemMethodSet**](swbemmethodset.md) que es una colección de los métodos de la clase o la instancia actual. Esta propiedad es de solo lectura.
+La **\_ propiedad Methods** del objeto [**SWbemObject**](swbemobject.md) devuelve un objeto [**SWbemMethodSet**](swbemmethodset.md) que es una colección de los métodos para la clase o instancia actual. Esta propiedad es de solo lectura.
 
-Para obtener una explicación de esta sintaxis, vea [convenciones de documentos para la API de scripting](document-conventions-for-the-scripting-api.md).
+Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Esta propiedad es de solo lectura.
 
@@ -44,7 +44,7 @@ SWbemObject.Methods_ As Object
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente [ejemplo de código](https://Gallery.TechNet.Microsoft.Com/c15624ee-e335-4d58-a022-aed73ad330a1), tomado de la galería de TechNet, se describe cómo enumerar todos los métodos de una clase.
+En el [ejemplo de código siguiente,](https://Gallery.TechNet.Microsoft.Com/c15624ee-e335-4d58-a022-aed73ad330a1)tomado de la Galería de TechNet, se describe cómo enumerar todos los métodos de una clase.
 
 
 ```VB
@@ -73,11 +73,11 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemObject<br/>                                                           |
-| IID<br/>                      | \_ISWBEMOBJECT IID<br/>                                                            |
+| IID<br/>                      | IID \_ ISWbemObject<br/>                                                            |
 
 
 

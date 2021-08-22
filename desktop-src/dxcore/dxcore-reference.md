@@ -1,30 +1,30 @@
 ---
 title: Referencia de DXCore
-description: En esta sección se tratan las API de DXCore declaradas en DXCore. h y dxcore_interface. h.
+description: En esta sección se tratan las API de DXCore declaradas en dxcore.h y dxcore_interface.h.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: e90981e05b81508ce54cad1019dcf405f21442c1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 14e4b6999bec8b95a2701f4ffe59b826c19f01ac3633c7597b04957307dcc07c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104421204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042963"
 ---
 # <a name="dxcore-reference"></a>Referencia de DXCore
 
-En esta sección se tratan las API de DXCore declaradas en DXCore. h y dxcore_interface. h.
+En esta sección se tratan las API de DXCore declaradas en dxcore.h y dxcore_interface.h.
 
 ## <a name="in-this-section"></a>En esta sección
 
 | Tema | Descripción |
 |-|-|
-| [GUID de atributos de adaptador de DXCore](dxcore-adapter-attribute-guids.md) | Los siguientes GUID de atributo de adaptador se declaran en dxcore_interface. h. |
-| [Devoluciones de llamada de DXCore](dxcore-callbacks.md) | Las siguientes devoluciones de llamada se declaran en dxcore_interface. h. |
-| [Enumeraciones de DXCore](dxcore-enumerations.md) | Las enumeraciones siguientes se declaran en dxcore_interface. h. |
-| [Funciones de DXCore](dxcore-functions.md) | Las siguientes funciones libres se declaran en dxcore. h. |
-| [Interfaces de DXCore](dxcore-interfaces.md) | Las siguientes interfaces, y sus métodos, se declaran en dxcore_interface. h. |
-| [Estructuras de DXCore](dxcore-structures.md) | Las siguientes estructuras se declaran en dxcore_interface. h. |
+| [GUID de atributos de adaptador de DXCore](dxcore-adapter-attribute-guids.md) | Los siguientes GUID de atributo de adaptador se declaran en dxcore_interface.h. |
+| [Devoluciones de llamada de DXCore](dxcore-callbacks.md) | Las devoluciones de llamada siguientes se declaran en dxcore_interface.h. |
+| [Enumeraciones de DXCore](dxcore-enumerations.md) | Las enumeraciones siguientes se declaran en dxcore_interface.h. |
+| [Funciones de DXCore](dxcore-functions.md) | Las siguientes funciones gratuitas se declaran en dxcore.h. |
+| [Interfaces de DXCore](dxcore-interfaces.md) | Las interfaces siguientes y sus métodos se declaran en dxcore_interface.h. |
+| [Estructuras de DXCore](dxcore-structures.md) | Las estructuras siguientes se declaran en dxcore_interface.h. |
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -1,23 +1,23 @@
 ---
-description: Si se establece la propiedad LIMITUI, el nivel de la interfaz de usuario (UI) que se usa al instalar el paquete está restringido a básico.
+description: Si se establece la propiedad LIMITUI, el nivel de interfaz de usuario (UI) usado al instalar el paquete se restringe a Básico.
 ms.assetid: 1a75e66b-958a-4fa8-b13c-ced976c9508e
-title: Propiedad LIMITUI
+title: LimitUI, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e564e82a2daba4b6d5a91cb05acd74e1efc26c84
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 969b6e1c1de5a55581fa8d24f6d538c829e18fb48afb9bdc2fd04bae69c15162
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013143"
 ---
-# <a name="limitui-property"></a>Propiedad LIMITUI
+# <a name="limitui-property"></a>LimitUI, propiedad
 
-Si se establece la propiedad **LIMITUI** , el nivel de la interfaz de usuario (UI) que se usa al instalar el paquete está restringido a básico. Esta propiedad es necesaria en los paquetes que no tienen ninguna interfaz de usuario creada pero que todavía contienen tablas de interfaz de usuario como la [tabla de diálogo](dialog-table.md). Para obtener una descripción de los niveles de interfaz de usuario, consulte [ **MsiSetInternalUI**](/windows/desktop/api/Msi/nf-msi-msisetinternalui)
+Si se establece la propiedad **LIMITUI,** el nivel de interfaz de usuario (UI) usado al instalar el paquete se restringe a Básico. Esta propiedad es necesaria en paquetes que no tienen ninguna interfaz de usuario de creación pero que todavía contienen tablas de interfaz de usuario como la [tabla Dialog](dialog-table.md). Para obtener una descripción de los niveles de interfaz de usuario, [ **vea MsiSetInternalUI.**](/windows/desktop/api/Msi/nf-msi-msisetinternalui)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los paquetes de instalación que contienen la propiedad **LIMITUI** también deben contener la propiedad [**ARPNOMODIFY**](arpnomodify.md) . Esto es necesario para que un usuario obtenga el comportamiento correcto de **Agregar o quitar programas** en la utilidad del **Panel de control** al intentar configurar un producto.
+Los paquetes de instalación que **contienen la propiedad LIMITUI** también deben contener [**la propiedad ARPNOMODIFY.**](arpnomodify.md) Esto es necesario para que un usuario  obtenga el comportamiento correcto de agregar o quitar programas en la utilidad **Panel de control** al intentar configurar un producto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -25,7 +25,7 @@ Los paquetes de instalación que contienen la propiedad **LIMITUI** también deb
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

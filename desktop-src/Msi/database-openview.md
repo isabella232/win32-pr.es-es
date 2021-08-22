@@ -1,7 +1,7 @@
 ---
-description: El método OpenView del objeto de base de datos devuelve un objeto de vista que representa la consulta especificada por una cadena SQL.
+description: El método OpenView del objeto Database devuelve un objeto View que representa la consulta especificada por una SQL cadena.
 ms.assetid: 6afb2fdb-0e6a-468f-8faf-e48d8d1960b6
-title: Método Database. OpenView (Certview. h)
+title: Método Database.OpenView (Certview.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 8dc62ca38bfe28980da71ecf63eda8e6c39aaf0a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ccc37b72dd44064172672d1067dae293da30048853f3ca83f82fb50b0a90cfaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118947528"
 ---
-# <a name="databaseopenview-method"></a>Database. OpenView (método)
+# <a name="databaseopenview-method"></a>Método Database.OpenView
 
-El método **OpenView** del objeto de [**base de datos**](database-object.md) devuelve un objeto de [**vista**](view-object.md) que representa la consulta especificada por una cadena SQL.
+El **método OpenView** del objeto [**Database**](database-object.md) devuelve un [**objeto View**](view-object.md) que representa la consulta especificada por una SQL cadena.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Database.OpenView(
 *sql* 
 </dt> <dd>
 
-Cadena de consulta SQL necesaria.
+Se requiere SQL cadena de consulta.
 
 </dd> </dl>
 
@@ -50,11 +50,11 @@ Cadena de consulta SQL necesaria.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener información sobre la sintaxis de SQL implementada en el instalador, vea [Sintaxis de SQL](sql-syntax.md).
+Para obtener información sobre SQL sintaxis implementada en el instalador, vea [sintaxis SQL .](sql-syntax.md)
 
-Si se produce un error en el método, puede obtener información de error extendida mediante el método [**LastErrorRecord**](installer-lasterrorrecord.md) .
+Si se produce un error en el método , puede obtener información de error extendida mediante el [**método LastErrorRecord.**](installer-lasterrorrecord.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,10 +62,10 @@ Si se produce un error en el método, puede obtener información de error extend
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
-| Encabezado<br/>  | <dl> <dt>Certview. h</dt> </dl>                                                                                                                                                                   |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
+| Header<br/>  | <dl> <dt>Certview.h</dt> </dl>                                                                                                                                                                   |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IDatabase se define como 000C109D-0000-0000-C000-000000000046<br/>                                                                                                                                                                            |
+| IID<br/>     | IID IDatabase se define como \_ 000C109D-0000-0000-C000-000000000046<br/>                                                                                                                                                                            |
 
 
 

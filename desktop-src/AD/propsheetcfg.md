@@ -1,10 +1,10 @@
 ---
-title: Estructura PROPSHEETCFG
-description: Se usa para contener los datos de configuración de la hoja de propiedades.
+title: PROPSHEETCFG (estructura)
+description: Se usa para contener datos de configuración de hoja de propiedades.
 ms.assetid: d3bde744-9d85-4506-894f-f8be3463721f
 ms.tgt_platform: multiple
 keywords:
-- Active Directory de la estructura PROPSHEETCFG
+- Propiedades de la estructura PROPSHEETCFG Active Directory
 - Puntero de estructura PPROPSHEETCFG Active Directory
 topic_type:
 - apiref
@@ -15,19 +15,19 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 33f4a1186cc756435cc49ed7c81592385faaee60
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 971296e1e269e977919f142d1efe24426b9c83f19ac26da2e2362ab48da0aa9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025443"
 ---
-# <a name="propsheetcfg-structure"></a>Estructura PROPSHEETCFG
+# <a name="propsheetcfg-structure"></a>PROPSHEETCFG (estructura)
 
-La estructura **PROPSHEETCFG** se usa para contener los datos de configuración de la hoja de propiedades. Esta estructura se incluye en el formato del portapapeles [**CFSTR \_ DS \_ PROPSHEETCONFIG**](cfstr-ds-propsheetconfig.md) .
+La **estructura PROPSHEETCFG** se usa para contener datos de configuración de hoja de propiedades. Esta estructura se encuentra en el formato del Portapapeles [**\_ \_ PROPSHEETCONFIG de CFSTR DS.**](cfstr-ds-propsheetconfig.md)
 
 > [!Note]  
-> Esta estructura no está definida en un archivo de encabezado publicado. Para usar esta estructura, debe definirla usted mismo en el formato exacto que se muestra.
+> Esta estructura no se define en un archivo de encabezado publicado. Para usar esta estructura, debe definirla usted mismo en el formato exacto que se muestra.
 
  
 
@@ -52,7 +52,7 @@ typedef struct {
 **lNotifyHandle**
 </dt> <dd>
 
-Contiene el identificador de notificación. Es idéntico al identificador pasado para el parámetro *Handle* en el método [**IExtendPropertySheet2:: CreatePropertyPages**](/previous-versions/windows/desktop/legacy/aa814847(v=vs.85)) .
+Contiene el identificador de notificación. Esto es idéntico al identificador pasado para el parámetro *handle* [**en el método IExtendPropertySheet2::CreatePropertyPages.**](/previous-versions/windows/desktop/legacy/aa814847(v=vs.85))
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Contiene el identificador de la ventana oculta.
 **wParamSheetClose**
 </dt> <dd>
 
-Contiene un valor de 32 bits definido por la aplicación. Este valor se devuelve a la aplicación en el *wParam* del mensaje de [**notificación de cierre de la \_ \_ hoja \_ \_ DSA de WM**](wm-dsa-sheet-close-notify.md) .
+Contiene un valor de 32 bits definido por la aplicación. Este valor se pasa a la aplicación en *el wParam* del mensaje [**WM \_ DSA \_ SHEET CLOSE \_ \_ NOTIFY.**](wm-dsa-sheet-close-notify.md)
 
 </dd> </dl>
 
@@ -95,7 +95,7 @@ Contiene un valor de 32 bits definido por la aplicación. Este valor se devuelve
 [**CFSTR \_ DS \_ PROPSHEETCONFIG**](cfstr-ds-propsheetconfig.md)
 </dt> <dt>
 
-[**\_notificación de \_ cierre de hoja DSA \_ de WM \_**](wm-dsa-sheet-close-notify.md)
+[**NOTIFICACIÓN \_ DE CIERRE DE HOJA DE WM DSA \_ \_ \_**](wm-dsa-sheet-close-notify.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Este operador resta una hora de referencia de otra.
 ms.assetid: 5691cd76-0d25-45c0-bb58-6668abe1db01
-title: COARefTime. Operator-Method (Ctlutil. h)
+title: Método COARefTime.operator- (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e51ee8aaed69830a498d1d22cebdc3927987f045
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: da8de864f344321cc5dca801782aab1f8476eb91608b42577cca6a34c625e153
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073829"
 ---
-# <a name="coareftimeoperator--method"></a>COARefTime. Operator-(método)
+# <a name="coareftimeoperator--method"></a>COARefTime.operator- (método)
 
 Este operador resta una hora de referencia de otra.
 
@@ -42,16 +42,16 @@ COARefTime operator-(
 
 <dl> <dt>
 
-*RT* \[ CLI\]
+*rt* \[ Ref\]
 </dt> <dd>
 
-Referencia al objeto **COARefTime** que se va a restar.
+Referencia al **objeto COARefTime** que se resta.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un nuevo objeto **COARefTime** igual a la diferencia de los tiempos de referencia.
+Devuelve un nuevo **objeto COARefTime** igual a la diferencia de los tiempos de referencia.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,8 +59,8 @@ Devuelve un nuevo objeto **COARefTime** igual a la diferencia de los tiempos de 
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -68,7 +68,7 @@ Devuelve un nuevo objeto **COARefTime** igual a la diferencia de los tiempos de 
 
 <dl> <dt>
 
-[**Clase COARefTime**](coareftime.md)
+[**COARefTime (clase)**](coareftime.md)
 </dt> </dl>
 
  

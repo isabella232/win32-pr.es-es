@@ -1,9 +1,9 @@
 ---
-title: min.
+title: mín.
 description: Selecciona el menor de x e y.
 ms.assetid: 4e10cfc2-d680-4d7f-81b2-fa52024f902d
 keywords:
-- HLSL mín.
+- HLSL mínimo
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 129c5cb641c2d69b6c1365d8221663e264060532
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 8ba9474383af448c36c6bb1130470aa6706fd8bd06c2d21bef66eb1c4bbcda0b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104488211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118513826"
 ---
-# <a name="min"></a>min.
+# <a name="min"></a>mín.
 
 Selecciona el menor de x e y.
 
 
 
-| RET min (x, y) |
+| ret min(x, y) |
 |---------------|
 
 
@@ -39,8 +39,8 @@ Selecciona el menor de x e y.
 
 | Elemento                                                   | Descripción                          |
 |--------------------------------------------------------|--------------------------------------|
-| <span id="x"></span><span id="X"></span>*x1*<br/> | \[en \] el valor de entrada x.<br/> |
-| <span id="y"></span><span id="Y"></span>*sí*<br/> | \[en \] el valor de entrada y.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[en \] El valor de entrada x.<br/> |
+| <span id="y"></span><span id="Y"></span>*y*<br/> | \[en \] El valor de entrada y .<br/> |
 
 
 
@@ -48,17 +48,17 @@ Selecciona el menor de x e y.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Parámetro *x* o *y* , el que sea el valor más pequeño.
+Parámetro *x* o *y,* lo que sea el valor más pequeño.
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las desnormalizaciones se controlan de la siguiente manera:
+Los desnormales se controlan de la siguiente manera:
 
-| src0 SRC1-> | -inf | F             | +inf | NAN  |
+| src0 src1-> | -inf | F             | +inf | NAN  |
 |-------------|------|---------------|------|------|
 | -inf        | -inf | -inf          | -inf | -inf |
-| F           | -inf | src0 o SRC1  | src0 | src0 |
+| F           | -inf | src0 o src1  | src0 | src0 |
 | +inf        | -inf | src1          | +inf | +inf |
 | NaN         | -inf | src1          | +inf | NaN  |
 
@@ -67,17 +67,17 @@ F significa número finito-real.
 
 ## <a name="type-description"></a>Descripción del tipo
 
-| Nombre | Entrada o salida      | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md)                 | Tamaño                         |
+| Nombre | Entrada o salida      | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md)                 | Size                         |
 |------|-------------|----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|------------------------------|
-| x    | in          | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **Vector** o **matriz** | [**float**](/windows/desktop/WinProg/windows-data-types), [ **int**](/windows/desktop/WinProg/windows-data-types) | cualquiera                          |
+| x    | in          | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vector** o **matriz** | [**float**](/windows/desktop/WinProg/windows-data-types), [ **int**](/windows/desktop/WinProg/windows-data-types) | cualquiera                          |
 | y    | in          | igual que la entrada x                                                                                                | [**float**](/windows/desktop/WinProg/windows-data-types), [ **int**](/windows/desktop/WinProg/windows-data-types) | mismas dimensiones que la entrada x |
-| direcc  | Tipo de valor devuelto | igual que la entrada x                                                                                                | [**float**](/windows/desktop/WinProg/windows-data-types), [ **int**](/windows/desktop/WinProg/windows-data-types) | mismas dimensiones que la entrada x |
+| Ret  | Tipo de valor devuelto | igual que la entrada x                                                                                                | [**float**](/windows/desktop/WinProg/windows-data-types), [ **int**](/windows/desktop/WinProg/windows-data-types) | mismas dimensiones que la entrada x |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -85,8 +85,8 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible                   |
 |------------------------------------------------------------------------------------|-----------------------------|
-| Modelador [modelo 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador más altos | sí                         |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sí (vs \_ 1 \_ 1 y PS \_ 1 \_ 4) |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador superiores | Sí                         |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sí (frente \_ a \_ 1 1 y ps \_ 1 \_ 4) |
 
 
 
@@ -96,7 +96,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
 [**Especificación funcional de DirectX**](https://microsoft.github.io/DirectX-Specs/d3d/archive/D3D11_3_FunctionalSpec.htm#inst_MIN)

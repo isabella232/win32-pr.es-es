@@ -1,9 +1,9 @@
 ---
-title: 'Texture2DMSArray:: sample. Operador (función)'
-description: 'Devuelve una variable de recurso de solo lectura. | Texture2DMSArray:: sample. Operador (función)'
+title: Texture2DMSArray::sample. Función operator
+description: Devuelve una variable de recurso de solo lectura. | Texture2DMSArray::sample. Función de operador
 ms.assetid: 5334c1d5-dfbd-4987-875c-0b92967b0f13
 keywords:
-- AdventureWorks. Función de operador HLSL
+- Muestra. Función de operador HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e78746e0afe03e65a313982ca35c27a75ea14f1b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 09ac18e7830dfe6b18718deed56e8495ba476dcedcb8290eab4e16aa0d7f24fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118508330"
 ---
-# <a name="texture2dmsarraysampleoperator----function"></a>Texture2DMSArray:: sample. Operador (función)
+# <a name="texture2dmsarraysampleoperator----function"></a>Texture2DMSArray::sample. Función operator
 
 Devuelve una variable de recurso de solo lectura.
 
@@ -37,21 +37,21 @@ R sample.Operator[][](
 
 <dl> <dt>
 
-*sampleSlice* \[ de\]
+*sampleSlice* \[ En\]
 </dt> <dd>
 
 Tipo: **uint**
 
-Índice del segmento de ejemplo.
+Índice de segmento de ejemplo.
 
 </dd> <dt>
 
-*PDV* \[ de de\]
+*pos* \[ En\]
 </dt> <dd>
 
-Tipo: **UInt3**
+Tipo: **uint3**
 
-Posición de índice. Los componentes primero y segundo contienen las coordenadas (x, y). El tercer componente indica el segmento de matriz deseado.
+Posición del índice. El primer y segundo componente contienen las coordenadas (x, y). El tercer componente indica el segmento de matriz deseado.
 
 </dd> </dl>
 
@@ -61,7 +61,7 @@ Tipo: **R**
 
 Variable de recurso de solo lectura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ### <a name="usage-example"></a>Ejemplo de uso
 
@@ -77,11 +77,11 @@ float4 main( float3 tcoord : texturecoord0 ) : SV_Target
 
 
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

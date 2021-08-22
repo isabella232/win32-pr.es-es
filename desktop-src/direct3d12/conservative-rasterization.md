@@ -1,223 +1,223 @@
 ---
 title: Rasterización conservadora de Direct3D 12
-description: La rasterización conservadora agrega cierta certeza a la representación en píxeles, lo que resulta útil en especial a los algoritmos de detección de colisiones.
+description: La rasterización conservadora agrega cierta certeza a la representación de píxeles, lo que resulta útil en particular para los algoritmos de detección de colisiones.
 ms.assetid: 081199AD-1702-4EC8-95AD-B1148C676199
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e4fae3489d54ab7b6b7abfda56f54dd8d970962
-ms.sourcegitcommit: cba7f424a292fd7f3a8518947b9466439b455419
+ms.openlocfilehash: 15bb5893e944c5d495cf91fdb334bd6ab5f755b7f1e200648242cb46b281f695
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "104549187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045779"
 ---
 # <a name="direct3d-12-conservative-rasterization"></a>Rasterización conservadora de Direct3D 12
 
-La rasterización conservadora agrega cierta certeza a la representación en píxeles, lo que resulta útil en especial a los algoritmos de detección de colisiones.
+La rasterización conservadora agrega cierta certeza a la representación de píxeles, lo que resulta útil en particular para los algoritmos de detección de colisiones.
 
 -   [Información general](#overview)
 -   [Interacciones con la canalización](#interactions-with-the-pipeline)
-    -   [Interacción de las reglas de rasterización](#rasterization-rules-interaction)
-    -   [Interacción con muestreo múltiple](#multisampling-interaction)
-    -   [Interacción con SampleMask](#samplemask-interaction)
-    -   [Interacción de prueba de profundidad/estarcido](#depthstencil-test-interaction)
-    -   [Interacción de píxeles de la aplicación auxiliar](#helper-pixel-interaction)
-    -   [Interacción de la cobertura de salida](#output-coverage-interaction)
-    -   [Interacción con InputCoverage](#inputcoverage-interaction)
-    -   [Interacción con InnerCoverage](#innercoverage-interaction)
+    -   [Interacción de reglas de rasterización](#rasterization-rules-interaction)
+    -   [Interacción multimuestreo](#multisampling-interaction)
+    -   [Interacción de SampleMask](#samplemask-interaction)
+    -   [Interacción de la prueba de profundidad y galería de símbolos](#depthstencil-test-interaction)
+    -   [Interacción de píxeles del asistente](#helper-pixel-interaction)
+    -   [Interacción de cobertura de salida](#output-coverage-interaction)
+    -   [Interacción inputCoverage](#inputcoverage-interaction)
+    -   [Interacción de InnerCoverage](#innercoverage-interaction)
     -   [Interacción de interpolación de atributos](#attribute-interpolation-interaction)
     -   [Interacción de recorte](#clipping-interaction)
-    -   [Interacción de distancia del clip](#clip-distance-interaction)
+    -   [Interacción de la distancia de recorte](#clip-distance-interaction)
     -   [Interacción de rasterización independiente de destino](#target-independent-rasterization-interaction)
-    -   [Interacción de topología de primitivas de IA](#ia-primitive-topology-interaction)
+    -   [Interacción de la topología primitiva de IA](#ia-primitive-topology-interaction)
     -   [Interacción de consultas](#query-interaction)
-    -   [Interacción del estado de culling](#cull-state-interaction)
-    -   [Interacción con IsFrontFace](#isfrontface-interaction)
+    -   [Interacción de estado Cull](#cull-state-interaction)
+    -   [Interacción de IsFrontFace](#isfrontface-interaction)
     -   [Interacción de los modos de relleno](#fill-modes-interaction)
--   [Detalles de implementación](#implementation-details)
+-   [Detalles de la implementación](#implementation-details)
 -   [Resumen de API](#api-summary)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="overview"></a>Información general
 
-La rasterización conservadora significa que se rasterizan todos los píxeles que están al menos parcialmente incluidos en una primitiva representada, lo que significa que se invoca el sombreador de píxeles. El comportamiento normal es el muestreo, que no se usa si está habilitada la rasterización conservadora.
+La rasterización conservadora significa que todos los píxeles que están cubiertos parcialmente por un primitivo representado se rasterizan, lo que significa que se invoca el sombreador de píxeles. El comportamiento normal es el muestreo, que no se usa si está habilitada la rasterización conservadora.
 
-La rasterización conservadora es útil en una serie de situaciones, como la certeza de la detección de colisiones, la selección de la oclusión y la representación en mosaico.
+La rasterización conservadora es útil en una serie de situaciones, incluida la certeza en la detección de colisiones, la selección de oclusión y la representación en mosaico.
 
-Por ejemplo, en la siguiente ilustración se muestra un triángulo verde representado mediante la rasterización conservadora, tal como aparecería en el rasterizador (es decir, con coordenadas de vértice de punto fijo 16,8). El área marrón se conoce como "región de incertidumbre", una región conceptual que representa los límites extendidos del triángulo, necesaria para garantizar que la primitiva en el rasterizador es conservadora con respecto a las coordenadas de vértice de punto flotante originales. Los cuadrados rojos de cada vértice muestran cómo se calcula la región de incertidumbre: como un cuadrado de barrido.
+Por ejemplo, en la ilustración siguiente se muestra un triángulo verde representado mediante rasterización conservadora, como aparecería en el rasterizador (es decir, con 16,8 coordenadas de vértice de punto fijo). El área morena se conoce como "región de incertidumbre", una región conceptual que representa los límites extendidos del triángulo, necesario para garantizar que la primitiva del rasterizador es conservadora con respecto a las coordenadas de vértice de punto flotante originales. Los cuadrados rojos de cada vértice muestran cómo se calcula la región de incertidumbre: como un cuadrado insociado.
 
-Los cuadrados grises grandes muestran los píxeles que se representarán. Los cuadrados de color rosa muestran los píxeles representados mediante la "regla superior izquierda", que entran en juego cuando el borde del triángulo cruza el borde de los píxeles. Puede haber falsos positivos (píxeles establecidos que no deberían haber) que el sistema normalmente, pero no siempre seleccionará.
+Los cuadrados grises grandes muestran los píxeles que se representarán. Los cuadrados rosas muestran píxeles representados mediante la "regla superior izquierda", que entra en juego cuando el borde del triángulo cruza el borde de los píxeles. Puede haber falsos positivos (conjunto de píxeles que no deberían haber sido) que el sistema normalmente, pero no siempre cull.
 
 ![la regla superior izquierda](images/conservative-rasterization-0.png)
 
 ## <a name="interactions-with-the-pipeline"></a>Interacciones con la canalización
 
-### <a name="rasterization-rules-interaction"></a>Interacción de las reglas de rasterización
+### <a name="rasterization-rules-interaction"></a>Interacción de reglas de rasterización
 
-En el modo de rasterización conservador, las reglas de rasterización se aplican de la misma manera que cuando no se habilita el modo de rasterización conservadora con las excepciones para la regla de Top-Left, descrita anteriormente y cobertura de píxeles. 16,8 Fixed-Point se debe usar la precisión del rasterizador.
+En el modo de rasterización conservadora, las reglas de rasterización se aplican de la misma manera que cuando el modo de rasterización conservadora no está habilitado con excepciones para la regla de Top-Left, descrita anteriormente, y la cobertura de píxeles. 16.8 Fixed-Point se debe usar la precisión del rasterizador.
 
-Los píxeles que no se tratarían si el hardware usara coordenadas de vértices de punto flotante completas solo se pueden incluir si se encuentran dentro de una región de incertidumbre no más de la mitad de un píxel en el dominio de punto fijo. Se espera que el hardware futuro llegue a la región de incertidumbre apretada especificada en el nivel 2. Tenga en cuenta que este requisito evita que los triángulos de astillas se extiendan más de lo necesario.
+Los píxeles que no se cubrirían si el hardware usara coordenadas de vértice de punto flotante completos solo se pueden incluir si se encuentran dentro de una región de incertidumbre sin más de medio píxel en el dominio de punto fijo. Se espera que el hardware futuro llegue a la región de incertidumbre más apretada especificada en el nivel 2. Tenga en cuenta que este requisito impide que los triángulos de aslo se extienda más de lo necesario.
 
-También se aplica una región de incertidumbre válida similar `InnerCoverage` , pero es más estrecha, ya que no hay implementaciones que requieran una región de incertidumbre más grande para este caso. Consulte [interacción de InnerCoverage](#innercoverage-interaction) para obtener más detalles.
+También se aplica una región de incertidumbre válida similar, pero es más estricta, ya que ninguna implementación requiere una región de incertidumbre mayor `InnerCoverage` para este caso. Consulte [Interacción de InnerCoverage](#innercoverage-interaction) para obtener más detalles.
 
-Las regiones de incertidumbre interna y externa deben ser mayores o iguales que el tamaño de la mitad de la cuadrícula de subpíxeles, o 1/512 de un píxel, en el dominio de punto fijo. Esta es la región de incertidumbre mínima válida. 1/512 procede de la representación de coordenadas del rasterizador de punto fijo 16,8 y la regla de redondeo a la más cercana que se aplica cuando se convierten coordenadas de vértices de punto flotante en las coordenadas de punto fijo de 16,8. 1/512 puede cambiar si cambia la precisión del rasterizador. Si una implementación implementa esta región de incertidumbre mínima, debe seguir la regla de Top-Left cuando el borde o la esquina de la región de incertidumbre cae a lo largo del borde o la esquina de un píxel. Los bordes recortados de la región de incertidumbre deben tratarse como el vértice más cercano, lo que significa que cuenta como dos bordes: los dos que se unen en el vértice asociado. Top-Left regla es necesaria cuando se usa la región de incertidumbre mínima, ya que, si no es así, una implementación de rasterización conservadora no podría rasterizar los píxeles que se podrían cubrir cuando el modo de rasterización conservador esté deshabilitado.
+Las regiones de incertidumbre interna y externa deben ser mayores o iguales que el tamaño de la mitad de la cuadrícula de sub píxeles, o 1/512 de un píxel, en el dominio de punto fijo. Esta es la región de incertidumbre mínima válida. 1/512 procede de la representación de coordenadas de rasterizador de punto fijo de 16,8 y de la regla redondeada a la más cercana que se aplica al convertir coordenadas de vértice de punto flotante en coordenadas de punto fijo 16,8. 1/512 puede cambiar si cambia la precisión del rasterizador. Si una implementación implementa esta región de incertidumbre mínima, debe seguir la regla de Top-Left cuando un borde o una esquina de la región de incertidumbre se encuentra a lo largo del borde o la esquina de un píxel. Los bordes recortados de la región de incertidumbre deben tratarse como el vértice más cercano, lo que significa que cuenta como dos bordes: los dos que se unen en el vértice asociado. Top-Left regla es necesaria cuando se usa la región de incertidumbre mínima porque, si no es así, una implementación de rasterización conservadora no podría rasterizar píxeles que podrían cubrirse cuando el modo de rasterización conservadora está deshabilitado.
 
-En el diagrama siguiente se muestra una región de incertidumbre externa válida que se genera mediante el barrido de un cuadrado alrededor de los bordes de la primitiva en el dominio de punto fijo (es decir, los vértices se han cuantificado por la representación de punto fijo 16,8). Las dimensiones de este cuadrado se basan en el tamaño de la región de incertidumbre externa válida: para 1/2 de un píxel, el cuadrado es 1 píxel en ancho y alto, para 1/512 de un píxel, el cuadrado es 1/256 de un píxel en ancho y alto. El triángulo verde representa un primitivo determinado, la línea de puntos rojo representa el límite de la rasterización conservadora sobreestimada, los cuadrados negros sólidos representan el cuadrado que se barre a lo largo de los bordes primitivos, y el área de la caja de la incertidumbre externa es la región de incertidumbre externa:
+En el diagrama siguiente se muestra una región de incertidumbre externa válida producida al barrido de un cuadrado alrededor de los bordes de la primitiva en el dominio de punto fijo (es decir, los vértices se han cuantificado mediante la representación de punto fijo de 16,8). Las dimensiones de este cuadrado se basan en el tamaño válido de la región de incertidumbre externa: para el 1/2 de un píxel, el cuadrado tiene 1 píxel de ancho y alto; para 1/512 de píxel, el cuadrado es 1/256 de un píxel de ancho y alto. El triángulo verde representa una primitiva determinada, la línea de puntos rojo representa el límite de la rasterización conservadora sobreestimada, los cuadrados negros sólidos representan el cuadrado que se representa a lo largo de los bordes primitivos, y el área azul a cuadros es la región de incertidumbre externa:
 
 ![región de incertidumbre externa.](images/outercoverage.jpg)
 
-### <a name="multisampling-interaction"></a>Interacción con muestreo múltiple
+### <a name="multisampling-interaction"></a>Interacción multimuestreo
 
-Independientemente del número de muestras en las  / superficies **DepthStencil** de RenderTarget (o de si se está usando o no *ForcedSampleCount* ), todas las muestras se describen para los píxeles rasterizados por la rasterización conservadora. Las ubicaciones de ejemplo individuales no se comprueban si se encuentran en el primitivo o no.
+Independientemente del número de muestras de las superficies **renderTarget** / **DepthStencil** (o si *se usa ForcedSampleCount* o no), todas las muestras se tratan para píxeles rasterizados por rasterización conservadora. Las ubicaciones de ejemplo individuales no se prueban si se encuentran en la primitiva o no.
 
-### <a name="samplemask-interaction"></a>Interacción con SampleMask
+### <a name="samplemask-interaction"></a>Interacción de SampleMask
 
-El estado del rasterizador *SampleMask* se aplica de la misma manera que cuando la rasterización conservadora no está habilitada para `InputCoverage` , pero no afecta a `InnerCoverage` (es decir, no se AND'ed en una entrada declarada con `InnerCoverage` ). Esto se debe `InnerCoverage` a que no está relacionado con si se enmascaran los ejemplos de MSAA: 0 `InnerCoverage` solo significa que no se garantiza que el píxel esté totalmente incluido, y no que no se actualizará ningún ejemplo.
+El estado rasterizador de *SampleMask* se aplica de la misma manera que cuando la rasterización conservadora no está habilitada para , pero no afecta `InputCoverage` `InnerCoverage` (es decir, no se convierte en AND en una entrada declarada con `InnerCoverage` ). Esto se debe a que no está relacionado con si las muestras de MSAA se enmascaran: 0 solo significa que no se garantiza que el píxel esté totalmente cubierto, no que no se actualizará ninguna `InnerCoverage` `InnerCoverage` muestra.
 
-### <a name="depthstencil-test-interaction"></a>Interacción de prueba de profundidad/estarcido
+### <a name="depthstencil-test-interaction"></a>Interacción de la prueba de profundidad y galería de símbolos
 
-Las pruebas de profundidad y estarcido se comprueban para un píxel con rasterización conservadora de la misma manera que si todas las muestras se incluyen cuando la rasterización conservadora no está habilitada.
+Depth/Stencil Testing continúa para un píxel rasterizado conservadoramente de la misma manera que si todas las muestras se cubren cuando la rasterización conservadora no está habilitada.
 
-Continuar con todos los ejemplos que se incluyen pueden provocar la extrapolación de profundidad, que es válida y se debe fijar en la ventanilla tal y como se especifica cuando no se habilita la rasterización conservadora. Esto es similar a cuando se usan los modos de interpolación de frecuencia de píxeles en **RenderTarget** con un recuento de muestras mayor que 1, aunque en el caso de una rasterización conservadora, es el valor de profundidad que entra en la prueba de profundidad de la función fija que se puede extrapolar.
+Continuar con todas las muestras cubiertas puede provocar la extrapolación de profundidad, que es válida y debe fijarse a la ventanilla como se especifica cuando la rasterización conservadora no está habilitada. Esto es similar a cuando se usan modos de interpolación de frecuencia de píxeles en **renderTarget** con un recuento de muestras mayor que 1, aunque en el caso de la rasterización conservadora, es el valor de profundidad que entra en la prueba de profundidad de función fija que se puede extrapolar.
 
-El comportamiento de selección de profundidad temprana con la extrapolación de profundidad es indefinido. Esto se debe a que algunos de los hardware de selección de profundidad de nivel temprano no admiten correctamente los valores de profundidad extrapolada. Sin embargo, el comportamiento de selección de profundidad temprana en la presencia de la extrapolación de profundidad es problemático incluso con hardware que puede admitir valores de profundidad extrapolada. Este problema se puede solucionar si se fija la profundidad de entrada del sombreador de píxeles a los valores de profundidad mínimo y máximo de la primitiva que se está rasterizando y escribiendo el valor en `oDepth` (el registro de profundidad de salida del sombreador de píxeles). Las implementaciones son necesarias para deshabilitar la selección de profundidad temprana en este caso, debido a la `oDepth` escritura.
+El comportamiento de la selección de profundidad temprana con la extrapolación de profundidad no está definido. Esto se debe a que algún hardware de selección de profundidad temprana no puede admitir correctamente valores de profundidad extrapolados. Sin embargo, el comportamiento de la selección de profundidad temprana en presencia de la extrapolación de profundidad es problemático incluso con el hardware que puede admitir valores de profundidad extrapolados. Este problema se puede resolver mediante la fijación de la profundidad de entrada del sombreador de píxeles en los valores de profundidad mínima y máxima de la primitiva que se va a rasterizar y escribiendo ese valor en (el registro de profundidad de salida del sombreador de `oDepth` píxeles). Las implementaciones son necesarias para deshabilitar la selección de profundidad temprana en este caso, debido a la `oDepth` escritura.
 
-### <a name="helper-pixel-interaction"></a>Interacción de píxeles de la aplicación auxiliar
+### <a name="helper-pixel-interaction"></a>Interacción de píxeles del asistente
 
-Las reglas de píxeles auxiliares se aplican de la misma manera que cuando la rasterización conservadora no está habilitada. Como parte de esto, todos los píxeles, incluidos los píxeles de la aplicación auxiliar, deben notificarse con `InputCoverage` exactitud tal y como se especifica en la `InputCoverage` sección interacción. Por lo tanto, el informe 0 de píxeles totalmente no cubiertos.
+Las reglas de píxeles del asistente se aplican de la misma manera que cuando la rasterización conservadora no está habilitada. Como parte de esto, todos los píxeles, incluidos los píxeles del asistente, deben informar con precisión `InputCoverage` como se especifica en la sección de `InputCoverage` interacción. Por lo tanto, los píxeles no cubiertos informan de la cobertura 0.
 
-### <a name="output-coverage-interaction"></a>Interacción de la cobertura de salida
+### <a name="output-coverage-interaction"></a>Interacción de cobertura de salida
 
-La cobertura de salida ( `oMask` ) se comporta para un píxel con rasterización conservadora tal como hace cuando la rasterización conservadora no está habilitada con todos los ejemplos cubiertos.
+La cobertura de salida ( ) se comporta para un píxel con rasterización conservadora, al igual que cuando la rasterización conservadora no está habilitada con todas `oMask` las muestras cubiertas.
 
-### <a name="inputcoverage-interaction"></a>Interacción con InputCoverage
+### <a name="inputcoverage-interaction"></a>Interacción inputCoverage
 
-En el modo de rasterización conservador, este registro de entrada se rellena como si todos los ejemplos se trataran cuando no se habilita la rasterización conservadora para un píxel determinado con rasterización conservadora. Es decir, se aplican todas las interacciones existentes (por ejemplo, se aplica *SampleMask* ) y los primeros n bits de `InputCoverage` la LSB se establecen en 1 para un píxel con rasterización conservadora, dado una muestra n por  píxel y/o búfer de **DepthStencil** enlazado en la **fusión de salida**, o una *ForcedSampleCount* de ejemplo n. El resto de los bits son 0.
+En el modo de rasterización conservadora, este registro de entrada se rellena como si todas las muestras se cubren cuando la rasterización conservadora no está habilitada para un píxel rasterizado conservadoramente determinado. Es decir, se aplican todas las interacciones existentes (por ejemplo, se aplica *SampleMask)* y los primeros n bits de la LSB se establecen en 1 para un píxel con rasterización conservadora, dada una muestra n por píxel RenderTarget o un búfer `InputCoverage` **DepthStencil**  enlazado en la fusión de salida, o un n ejemplo  *ForcedSampleCount*. El resto de los bits son 0.
 
-Esta entrada está disponible en un sombreador independientemente del uso de la rasterización conservadora, aunque la rasterización conservadora cambia su comportamiento para mostrar solo todos los ejemplos incluidos (o ninguno para los píxeles auxiliares).
+Esta entrada está disponible en un sombreador independientemente del uso de rasterización conservadora, aunque la rasterización conservadora cambia su comportamiento para mostrar solo todas las muestras cubiertas (o ninguna para los píxeles auxiliares).
 
-### <a name="innercoverage-interaction"></a>Interacción con InnerCoverage
+### <a name="innercoverage-interaction"></a>Interacción de InnerCoverage
 
-Esta característica es necesaria para y solo está disponible en el nivel 3. El tiempo de ejecución producirá un error en la creación del sombreador para los sombreadores que utilizan este modo cuando una implementación admite un nivel inferior al nivel 3.
+Esta característica es necesaria para el nivel 3 y solo está disponible en este nivel. El tiempo de ejecución producirá un error en la creación del sombreador para los sombreadores que usan este modo cuando una implementación admite un nivel inferior al nivel 3.
 
-El sombreador de píxeles tiene un valor de generación de sistema entero escalar de 32 bits disponible: `InnerCoverage` . Se trata de un campo de bits con un bit 0 de LSB establecido en 1 para un píxel determinado con rasterización conservadora, solo cuando se garantiza que ese píxel está completamente dentro del primitivo actual. El resto de bits de registro de entrada debe establecerse en 0 cuando no se establece el bit 0, pero no están definidos cuando el bit 0 está establecido en 1 (esencialmente, este campo de bits representa un valor booleano en el que false debe ser exactamente 0, pero true puede ser cualquier valor distinto de cero (es decir, bit 0 establecido). Esta entrada se utiliza para la información de rasterización conservadora subestimada. Informa al sombreador de píxeles si el píxel actual está completamente dentro de la geometría.
+El sombreador de píxeles tiene un entero escalar de 32 bits que genera valor del sistema disponible: `InnerCoverage` . Se trata de un campo de bits que tiene el bit 0 del LSB establecido en 1 para un píxel determinado con rasterización conservadora, solo cuando se garantiza que ese píxel está completamente dentro de la primitiva actual. Todos los demás bits de registro de entrada deben establecerse en 0 cuando el bit 0 no está establecido, pero son indefinidos cuando el bit 0 se establece en 1 (básicamente, este campo de bits representa un valor booleano donde false debe ser exactamente 0, pero true puede ser cualquier valor impar (es decir, bit 0 establecido) distinto de cero). Esta entrada se usa para obtener información de rasterización conservadora infravalora. Informa al sombreador de píxeles si el píxel actual se encuentra completamente dentro de la geometría.
 
-Este debe tener en cuenta el error de ajuste en resoluciones mayores o iguales que la resolución en la que está funcionando el dibujo actual. No debe haber falsos positivos (estableciendo `InnerCoverage` bits cuando el píxel no está totalmente incluido en los errores de ajuste en resoluciones mayores o iguales que la resolución en la que está funcionando el dibujo actual), pero se permiten falsos negativos. En Resumen, la implementación no debe identificar incorrectamente los píxeles como están totalmente descritos, lo que no sería con coordenadas de vértices de punto flotante completas en el rasterizador.
+Esto debe tener en cuenta el error de ajuste en resoluciones mayores o iguales que la resolución en la que está funcionando el draw actual. No debe haber falsos positivos (establecer bits cuando el píxel no está totalmente cubierto para cualquier error de ajuste en resoluciones mayores o iguales que la resolución en la que está funcionando el draw actual), pero se permiten `InnerCoverage` falsos negativos. En resumen, la implementación no debe identificar incorrectamente los píxeles como totalmente cubiertos que no estarían con coordenadas de vértice de punto flotante completa en el rasterizador.
 
-Los píxeles que se tratarán totalmente si el hardware estaba usando coordenadas de vértices de punto flotante completas solo se pueden omitir si se intersecan con la región de incertidumbre interna, que no debe ser mayor que el tamaño de la cuadrícula de subpíxeles, o 1/256 de un píxel, en el dominio de punto fijo. Dicho de otro modo, los píxeles que están completamente dentro del límite interno de la región de incertidumbre interna deben estar marcados como totalmente descritos. El límite interno de la región de incertidumbre se ilustra en el diagrama siguiente por la línea de puntos negro en negrita. 1/256 procede de la representación de coordenadas del rasterizador de punto fijo 16,8, que puede cambiar si cambia la precisión del rasterizador. Esta región de incertidumbre es suficiente para tener en cuenta el error de ajuste provocado por la conversión de coordenadas de vértices de punto flotante en coordenadas de vértice de punto fijo en el rasterizador.
+Los píxeles que se cubrirían por completo si el hardware usase coordenadas de vértice de punto flotante completos solo se pueden omitir si se cruzan con la región de incertidumbre interna, que no debe ser mayor que el tamaño de la cuadrícula de sub píxeles, o 1/256 de un píxel, en el dominio de punto fijo. Dicho de otro modo, los píxeles que se encuentran completamente dentro del límite interno de la región de incertidumbre interna deben marcarse como totalmente cubiertos. El límite interno de la región de incertidumbre se ilustra en el diagrama siguiente mediante la línea de puntos negra en negrita. 1/256 procede de la representación de coordenadas de rasterizador de punto fijo de 16,8, que puede cambiar si cambia la precisión del rasterizador. Esta región de incertidumbre es suficiente para tener en cuenta el error de ajuste causado por la conversión de coordenadas de vértice de punto flotante en coordenadas de vértice de punto fijo en el rasterizador.
 
-Los mismos requisitos de la región de incertidumbre mínima de 1/512 definidos en reglas de rasterización también se aplican aquí.
+Aquí también se aplican los mismos requisitos de región de incertidumbre mínima de 1/512 definidos en la interacción de reglas de rasterización.
 
-En el diagrama siguiente se muestra una región de incertidumbre interna válida que se genera mediante el barrido de un cuadrado alrededor de los bordes de la primitiva en el dominio de punto fijo (es decir, los vértices se han cuantificado por la representación de punto fijo 16,8). Las dimensiones de este cuadrado se basan en el tamaño de la región de incertidumbre interna válida: para 1/256 de un píxel, el cuadrado es 1/128 de un píxel en ancho y alto. El triángulo verde representa un primitivo determinado, mientras que la línea de puntos negros en negrita representa el límite de la región de incertidumbre interna, los cuadrados negros sólidos representan el cuadrado que se barre a lo largo de los bordes primitivos y el área de la incertidumbre de color naranja es la región de incertidumbre interna:
+En el diagrama siguiente se muestra una región de incertidumbre interna válida producida al barrido de un cuadrado alrededor de los bordes de la primitiva en el dominio de punto fijo (es decir, los vértices se han cuantificado mediante la representación de punto fijo de 16,8). Las dimensiones de este cuadrado se basan en el tamaño válido de la región de incertidumbre interna: para 1/256 de un píxel, el cuadrado es 1/128 de píxel de ancho y alto. El triángulo verde representa una primitiva determinada, la línea de puntos negra en negrita representa el límite de la región de incertidumbre interna, los cuadrados negros sólidos representan el cuadrado que se representa a lo largo de los bordes primitivos y el área de color naranja a la que se hace el checkered es la región de incertidumbre interna:
 
 ![reqion de incertidumbre interna.](images/innercoverage.jpg)
 
-El uso de `InnerCoverage` no afecta a si un píxel se rasteriza de manera conservadora, es decir, el uso de uno de estos `InputCoverage` modos no afecta a qué píxeles se rasterizan cuando se habilita el modo de rasterización conservador. Por lo tanto, cuando `InnerCoverage` se usa y el sombreador de píxeles está procesando un píxel que no está completamente incluido en la geometría, su valor será 0, pero la invocación del sombreador de píxeles tendrá las muestras actualizadas. Es diferente de cuando `InputCoverage` es 0, lo que significa que no se actualizará ningún ejemplo.
+El uso de no afecta a si un píxel se rasteriza de forma conservadora, es decir, el uso de uno de estos modos no afecta a los píxeles que se rasterizan cuando está habilitado el modo `InnerCoverage` `InputCoverage` rasterización conservadora. Por lo tanto, cuando se usa y el sombreador de píxeles está procesando un píxel que no está completamente cubierto por la geometría, su valor será 0, pero la invocación del sombreador de píxeles tendrá muestras `InnerCoverage` actualizadas. Esto es diferente de cuando `InputCoverage` es 0, lo que significa que no se actualizará ninguna muestra.
 
 Esta entrada es mutuamente excluyente con `InputCoverage` : no se pueden usar ambos.
 
-Para tener acceso a `InnerCoverage` , se debe declarar como un componente único de uno de los registros de entrada del sombreador de píxeles. El modo de interpolación en la declaración debe ser constante (no se aplica la interpolación).
+Para tener acceso a , debe declararse como un único componente de uno de los registros de entrada del `InnerCoverage` sombreador de píxeles. El modo de interpolación de la declaración debe ser constante (no se aplica la interpolación).
 
-El `InnerCoverage` campo de bits no se ve afectado por las pruebas de profundidad/estarcido, ni tampoco por el estado de rasterizador *SampleMask* .
+El campo de bits no se ve afectado por las pruebas de profundidad o galería de símbolos, ni por el estado `InnerCoverage` *rasterizador samplemask.*
 
-Esta entrada solo es válida en el modo de rasterización conservador. Cuando no se habilita la rasterización conservadora, `InnerCoverage` genera un valor indefinido.
+Esta entrada solo es válida en el modo de rasterización conservadora. Cuando la rasterización conservadora no está habilitada, `InnerCoverage` genera un valor indefinido.
 
-Las invocaciones del sombreador de píxeles provocadas por la necesidad de píxeles de aplicación auxiliar, pero que de otro modo no están incluidos en la primitiva, deben tener el `InnerCoverage` registro establecido en 0.
+Las invocaciones del sombreador de píxeles causadas por la necesidad de píxeles del asistente, pero no cubiertas por la primitiva, deben tener el `InnerCoverage` registro establecido en 0.
 
 ### <a name="attribute-interpolation-interaction"></a>Interacción de interpolación de atributos
 
-Los modos de interpolación de atributos no cambian y continúan de la misma manera que cuando la rasterización conservadora no está habilitada, donde se usan los vértices con escala de ventanilla y conversión de punto fijo. Dado que se consideran todas las muestras de un píxel con rasterización conservadora, es válido para la extrapolación de los valores, de forma similar a cuando se usan los modos de interpolación de frecuencia de píxeles en **RenderTarget** con un recuento de muestras mayor que 1. Los modos de interpolación centroide producen resultados idénticos al modo de interpolación no centroide correspondiente; la noción de centroide no tiene sentido en este escenario, donde la cobertura de ejemplo solo es Full o 0.
+Los modos de interpolación de atributos no se modifican y avanzan de la misma manera que cuando la rasterización conservadora no está habilitada, donde se usan los vértices con escala de ventanilla y con conversión de punto fijo. Dado que todas las muestras de un píxel con rasterización conservadora se consideran cubiertas, es válido que los valores se puedan extrapolar, de forma similar a cuando se usan modos de interpolación de frecuencia de píxeles en **renderTarget** con un recuento de muestras mayor que 1. Los modos de interpolación centroide generan resultados idénticos al modo de interpolación no centroide correspondiente; La noción de centroide no tiene sentido en este escenario, donde la cobertura de ejemplo solo está completa o 0.
 
-La rasterización conservadora permite que los triángulos degenerados generen invocaciones del sombreador de píxeles; por lo tanto, los triángulos degenerados deben usar los valores asignados al vértice 0 para todos los valores interpolados.
+La rasterización conservadora permite que los triángulos degenerados produzcan invocaciones de sombreador de píxeles, por lo que los triángulos degenerados deben usar los valores asignados al vértice 0 para todos los valores interpolados.
 
 ### <a name="clipping-interaction"></a>Interacción de recorte
 
-Cuando está habilitado el modo de rasterización conservador y se deshabilita el clip de profundidad (cuando el estado del rasterizador *DepthClipEnable* está establecido en false), puede haber variaciones en la interpolación de atributos para los segmentos de una primitiva que se encuentran fuera del 0 <= z <= w, dependiendo de la implementación: los valores constantes se utilizan desde un punto en el que el primitivo intersecta con el plano pertinente (Near o Far) o la interpolación de atributos se comporta como cuando el modo de rasterización conservador está deshabilitado. Sin embargo, el comportamiento del valor de profundidad es el mismo, independientemente del modo de rasterización conservador, es decir, los primitivos que se encuentran fuera del intervalo de profundidad deben seguir teniendo el valor del límite más cercano del intervalo de profundidad de la ventanilla. El comportamiento de interpolación de atributo dentro del 0 <= z <= el intervalo de w debe permanecer sin cambios.
+Cuando el modo de rasterización conservadora está habilitado y el clip de profundidad está deshabilitado (cuando *DepthClipEnable* Rasterizer State está establecido en FALSE), puede haber variaciones en la interpolación de atributos para segmentos de una primitiva que se encuentran fuera del intervalo 0 <= z <= w, dependiendo de la implementación: los valores constantes se usan desde un punto en el que la primitiva forma una intersección con el plano pertinente (cerca o lejos) o la interpolación de atributos se comporta como cuando se deshabilita el modo de rasterización conservadora. Sin embargo, el comportamiento del valor de profundidad es el mismo independientemente del modo de rasterización conservadora, es decir, las primitivas que se encuentran fuera del intervalo de profundidad deben seguir teniendo el valor del límite más cercano del intervalo de profundidad de la ventanilla. El comportamiento de interpolación de atributos dentro del intervalo 0 <= z <= w debe permanecer sin cambios.
 
-### <a name="clip-distance-interaction"></a>Interacción de distancia del clip
+### <a name="clip-distance-interaction"></a>Interacción de la distancia de recorte
 
-La distancia del clip es válida cuando el modo de rasterización conservador está habilitado y se comporta para un píxel con rasterización conservadora, tal como se hace cuando la rasterización conservadora no está habilitada con todos los ejemplos que se incluyen.
+La distancia de recorte es válida cuando el modo rasterización conservadora está habilitado y se comporta para un píxel rasterizado conservadoramente, al igual que cuando la rasterización conservadora no está habilitada con todas las muestras cubiertas.
 
-Tenga en cuenta que la rasterización conservadora puede producir la extrapolación de la coordenada del vértice W, lo que puede dar lugar a W <= 0. Esto podría provocar que las implementaciones de la distancia de los clips por píxel funcionen en una distancia de recorte que se ha dividido entre un valor W no válido. Las implementaciones de la distancia de clip deben protegerse contra la invocación de rasterización para los píxeles en los que la coordenada de vértices W <= 0 (por ejemplo, debido a la extrapolación en el modo de rasterización conservador).
+Tenga en cuenta que la rasterización conservadora puede provocar la extrapolación de la coordenada del vértice W, lo que puede provocar que W <= 0. Esto podría hacer que las implementaciones de clip distance por píxel funcionen en una distancia de recorte que se ha dividido en perspectiva por un valor W no válido. Las implementaciones de clip distance deben protegerse frente a la invocación de rasterización para píxeles donde la coordenada de vérticeS <= 0 (por ejemplo, debido a la extrapolación cuando se encuentra en modo de rasterización conservadora).
 
 ### <a name="target-independent-rasterization-interaction"></a>Interacción de rasterización independiente de destino
 
-El modo de rasterización conservador es compatible con la rasterización independiente de destino (TIR). Se aplican las reglas y restricciones de TIR, comparando un píxel con rasterización conservadora como si se trataran todos los ejemplos.
+El modo de rasterización conservadora es compatible con la rasterización independiente de destino (TIR). Se aplican las reglas y restricciones de TIR, que se comportan para un píxel rasterizado de forma conservadora como si se cubren todas las muestras.
 
-### <a name="ia-primitive-topology-interaction"></a>Interacción de topología de primitivas de IA
+### <a name="ia-primitive-topology-interaction"></a>Interacción de la topología primitiva de IA
 
-La rasterización conservadora no se define para los primitivos de línea o punto. Por lo tanto, las topologías primitivas que especifican puntos o líneas producen un comportamiento indefinido si se alimentan a la unidad de rasterizador cuando se habilita la rasterización conservadora.
+La rasterización conservadora no se define para primitivas de línea o punto. Por lo tanto, las topologías primitivas que especifican puntos o líneas generan un comportamiento indefinido si se alimentan a la unidad de rasterizador cuando está habilitada la rasterización conservadora.
 
 La validación de la capa de depuración comprueba que las aplicaciones no usan estas topologías primitivas.
 
 ### <a name="query-interaction"></a>Interacción de consultas
 
-En el caso de un píxel con rasterización conservadora, las consultas se comportan de la misma manera que cuando la rasterización conservadora no está habilitada cuando se incluyen todas las muestras. Por ejemplo, para un píxel con rasterización conservadora, las estadísticas de tipo de consulta D3D12 \_ \_ y las \_ \_ \_ \_ estadísticas de canalización de tipo de consulta D3D12 \_ (del [**\_ \_ tipo de consulta D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_query_type)) deben comportarse tal y como lo harían si la rasterización conservadora no estuviera habilitada cuando se cubran todas las muestras.
+En el caso de un píxel con rasterización conservadora, las consultas se comportan como cuando la rasterización conservadora no está habilitada cuando se cubren todas las muestras. Por ejemplo, para un píxel de rasterización conservadora, D3D12 \_ QUERY \_ TYPE OCCLUSION y \_ D3D12 \_ QUERY TYPE PIPELINE \_ \_ \_ STATISTICS (from [**D3D12 \_ QUERY \_ TYPE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_query_type)) deben comportarse como lo harían cuando la rasterización conservadora no está habilitada cuando se cubren todas las muestras.
 
-Las invocaciones del sombreador de píxeles deben incrementarse para cada píxel con rasterización conservadora en el modo de rasterización conservador.
+Las invocaciones del sombreador de píxeles deben incrementarse por cada píxel rasterizado conservador en el modo de rasterización conservadora.
 
-### <a name="cull-state-interaction"></a>Interacción del estado de culling
+### <a name="cull-state-interaction"></a>Interacción de estado Cull
 
-Todos los Estados de selección son válidos en el modo de rasterización conservador y siguen las mismas reglas que cuando la rasterización conservadora no está habilitada.
+Todos los estados Cull son válidos en el modo de rasterización conservadora y siguen las mismas reglas que cuando la rasterización conservadora no está habilitada.
 
-Al comparar la rasterización conservadora entre resoluciones a sí misma o sin rasterización conservadora habilitada, existe la posibilidad de que algunos primitivos puedan tener una falta de coincidencia (es decir, uno hacia atrás, el otro frente). Las aplicaciones pueden evitar esta incertidumbre mediante \_ el uso \_ \_ del modo de selección de D3D12 no (en el [**\_ \_ modo de selección de D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_cull_mode)) y no usar el valor generado por el `IsFrontFace` sistema.
+Al comparar la rasterización conservadora entre resoluciones a sí misma o sin la rasterización conservadora habilitada, existe la posibilidad de que algunas primitivas tengan una cara no coincidente (es decir, una hacia atrás, la otra orientada hacia delante). Las aplicaciones pueden evitar esta incertidumbre si se usa D3D12 \_ CULL \_ MODE NONE \_ (from [**D3D12 \_ CULL \_ MODE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_cull_mode)) y no se usa el valor `IsFrontFace` generado por el sistema.
 
-### <a name="isfrontface-interaction"></a>Interacción con IsFrontFace
+### <a name="isfrontface-interaction"></a>Interacción de IsFrontFace
 
-El `IsFrontFace` valor generado por el sistema es válido para su uso en el modo de rasterización conservador y sigue el comportamiento definido cuando no se habilita la rasterización conservadora.
+El valor generado por el sistema es válido para usarse en el modo de rasterización conservadora y sigue el comportamiento definido cuando la rasterización conservadora `IsFrontFace` no está habilitada.
 
 ### <a name="fill-modes-interaction"></a>Interacción de los modos de relleno
 
-El único [**modo de \_ relleno \_ D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_fill_mode) válido para la rasterización conservadora es D3D12 \_ Fill \_ Solid, cualquier otro modo de relleno es un parámetro no válido para el estado de rasterizador.
+El único modo FILL de [**D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_fill_mode) válido para la rasterización conservadora es D3D12 FILL SOLID, cualquier otro modo de relleno es un parámetro no válido para el \_ estado de \_ Rasterizer.
 
-Esto se debe a que la especificación funcional de D3D12 especifica que el modo de relleno de trama de alambre debe convertir los bordes de triángulo en líneas y seguir las reglas de rasterización de línea y el comportamiento de rasterización de líneas conservadora no se ha definido.
+Esto se debe a que la especificación funcional D3D12 especifica que el modo de relleno de wireframe debe convertir los bordes del triángulo en líneas y seguir las reglas de rasterización de línea y no se ha definido el comportamiento de rasterización de línea conservadora.
 
 ## <a name="implementation-details"></a>Detalles de la implementación
 
-El tipo de rasterización compatible con Direct3D 12 a veces se conoce como "rasterización conservadora sobreestimada". También existe el concepto de "rasterización conservadora desestimada", lo que significa que solo se rasterizan los píxeles que están totalmente incluidos en una primitiva representada. La información de rasterización conservadora subestimada está disponible a través del sombreador de píxeles mediante el uso de datos de cobertura de entrada y solo está disponible la rasterización conservadora sobreestimada como modo de rasterización.
+El tipo de rasterización admitido en Direct3D 12 a veces se conoce como "rasterización conservadora sobreestimada". También existe el concepto de "Rasterización conservadora subestimizada", lo que significa que solo se rasterizan los píxeles que están totalmente cubiertos por una primitiva representado. La información de rasterización conservadora subvalora está disponible a través del sombreador de píxeles mediante el uso de datos de cobertura de entrada, y solo está disponible la rasterización conservadora sobrestimada como modo de rasterización.
 
-Si alguna parte de una primitiva se superpone a un píxel, ese píxel se considerará tratado y se rasterizará. Cuando un borde o esquina de una primitiva cae a lo largo del borde o la esquina de un píxel, la aplicación de la "regla superior izquierda" es específica de la implementación. Sin embargo, para las implementaciones que admiten triángulos degenerados, un triángulo degenerado a lo largo de un borde o una esquina debe cubrir al menos un píxel.
+Si alguna parte de una primitiva se superpone a un píxel, ese píxel se considera cubierto y, a continuación, se rasteriza. Cuando un borde o una esquina de una primitiva se encuentra a lo largo del borde o la esquina de un píxel, la aplicación de la "regla superior izquierda" es específica de la implementación. Sin embargo, para las implementaciones que admiten triángulos degenerados, un triángulo degenerado a lo largo de un borde o una esquina debe cubrir al menos un píxel.
 
-Las implementaciones de rasterización conservadora pueden variar en hardware diferente y generar falsos positivos, lo que significa que pueden decidir incorrectamente que los píxeles están incluidos. Esto puede deberse a detalles específicos de la implementación, como los errores primitivos de aumento o ajuste inherentes a las coordenadas de vértices de punto fijo utilizadas en la rasterización. La razón por la que los falsos positivos (con respecto a las coordenadas de vértices de punto fijo) son válidos es que se necesita una cantidad de falsos positivos para permitir que una implementación realice la evaluación de cobertura en los vértices con ajuste de nivel (es decir, las coordenadas de vértices que se han convertido desde el punto flotante al punto fijo 16,8 usado en el rasterizador), pero
+Las implementaciones de rasterización conservadoras pueden variar en hardware diferente y producen falsos positivos, lo que significa que pueden decidir incorrectamente que se cubren píxeles. Esto puede ocurrir debido a detalles específicos de la implementación, como errores primitivos de crecimiento o ajuste inherentes a las coordenadas de vértice de punto fijo que se usan en la rasterización. La razón por la que los falsos positivos (con respecto a las coordenadas de vértice de punto fijo) son válidos es porque se necesita cierta cantidad de falsos positivos para permitir que una implementación realice la evaluación de cobertura con vértices posteriores al ajuste (es decir, coordenadas de vértice que se han convertido de punto flotante al punto fijo 16.8 usado en el rasterizador), pero respetan la cobertura producida por las coordenadas de vértice de punto flotante originales.
 
-Las implementaciones de rasterización conservadora no producen falsos negativos con respecto a las coordenadas de vértices de punto flotante para primitivas posteriores al ajuste no generadas: Si alguna parte de una primitiva se superpone a cualquier parte de un píxel, ese píxel se rasteriza.
+Las implementaciones de rasterización conservadora no generan falsos negativos con respecto a las coordenadas de vértice de punto flotante para primitivas post snap no degeneradas: si alguna parte de una primitiva se superpone a cualquier parte de un píxel, ese píxel se rasteriza.
 
-Los triángulos degenerados (índices duplicados en un búfer de índice o colineales en 3D), o se convierten en degenerados después de la conversión de punto fijo (vértices colineales en el rasterizador), pueden o no ser reactivados; ambos son comportamientos válidos. Los triángulos degenerados se deben tener en cuenta hacia atrás, por lo que si una aplicación requiere un comportamiento concreto, puede utilizar la selección de la parte trasera o la prueba para orientarse hacia delante. Los triángulos degenerados usan los valores asignados al vértice 0 para todos los valores interpolados.
+Los triángulos que son degenerados (índices duplicados en un búfer de índice o colisionador en 3D) o que se vuelven degenerados después de la conversión de punto fijo (vértices de colisión en el rasterizador), pueden ser o no culled; ambos son comportamientos válidos. Los triángulos degenerados deben considerarse orientados hacia atrás, por lo que si una aplicación requiere un comportamiento específico, puede usar la selección de cara posterior o probar la orientación frontal. Los triángulos degenerados usan los valores asignados a Vértice 0 para todos los valores interpolados.
 
-Hay tres niveles de compatibilidad de hardware, además de la posibilidad de que el hardware no sea compatible con esta característica.
+Hay tres niveles de compatibilidad con hardware, además de la posibilidad de que el hardware no admita esta característica.
 
--   El nivel 1 aplica una región de incertidumbre de 1/2 píxeles como máximo y no admite la degeneración posterior al ajuste. Esto es adecuado para la representación en mosaico, un Atlas de textura, la generación de mapas ligeros y las instantáneas de subpíxeles.
--   El nivel 2 reduce la región de incertidumbre máxima a 1/256 y requiere que se devuelvan las desgeneraciones posteriores a la instantánea. Este nivel es útil para la aceleración del algoritmo basado en la CPU (por ejemplo, voxelization).
--   El nivel 3 mantiene una región de incertidumbre 1/256 máxima y agrega compatibilidad con la cobertura de entrada interna. La cobertura de entrada interna agrega el nuevo valor `SV_InnerCoverage` al lenguaje de sombreado de alto nivel (HLSL). Se trata de un entero escalar de 32 bits que se puede especificar en la entrada a un sombreador de píxeles y que representa la información de rasterización conservadora subestimada (es decir, si se garantiza que un píxel está totalmente incluido). Este nivel es útil para la selección de la oclusión.
+-   El nivel 1 aplica una región de incertidumbre máxima de 1/2 píxeles y no admite degenerados posteriores a la instantánea. Esto es bueno para la representación en mosaico, un atlas de textura, la generación de mapas claros y los mapas de sombra de subpíxeles.
+-   El nivel 2 reduce la región de incertidumbre máxima a 1/256 y requiere que los degenerados posteriores a la instantánea no se puedan realizar. Este nivel es útil para la aceleración de algoritmos basada en CPU (por ejemplo, vóxelización).
+-   El nivel 3 mantiene una región de incertidumbre máxima de 1/256 y agrega compatibilidad con la cobertura de entrada interna. La cobertura de entrada interna agrega el nuevo valor al lenguaje de `SV_InnerCoverage` sombreado de alto nivel (HLSL). Se trata de un entero escalar de 32 bits que se puede especificar en la entrada de un sombreador de píxeles y representa la información de rasterización conservadora infravalora (es decir, si se garantiza que un píxel esté totalmente cubierto). Este nivel es útil para la selección de oclusión.
 
 ## <a name="api-summary"></a>API summary
 
-Los siguientes métodos, estructuras, enumeraciones y clases auxiliares hacen referencia a la rasterización conservadora:
+Los métodos, estructuras, enumeraciones y clases auxiliares siguientes hacen referencia a la rasterización conservadora:
 
--   [**D3D12 \_ RASTERIZAdor \_ DESC**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_rasterizer_desc) : estructura que contiene la descripción del rasterizador.
--   [**D3D12 \_ \_ \_ Modo de rasterización conservador**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_conservative_rasterization_mode) : valores de enumeración para el modo (activado o desactivado).
--   [**D3D12 \_ \_Opciones de \_ D3D12 \_ de datos de características**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options) : estructura que contiene el nivel de compatibilidad.
--   [**D3D12 \_ \_ \_ Nivel de rasterización conservador**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_conservative_rasterization_tier) : valores de enumeración para cada nivel de soporte del hardware.
--   [**CheckFeatureSupport**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport) : método para tener acceso a las características admitidas.
--   [**CD3DX12 \_ RASTERIZAdor \_ DESC**](cd3dx12-rasterizer-desc.md) : clase auxiliar para crear descripciones de rasterizador.
+-   [**D3D12 \_ RASTERIZER \_ DESC:**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_rasterizer_desc) estructura que mantiene la descripción del rasterizador.
+-   [**D3D12 \_ MODO \_ RASTERIZATION \_ CONSERVADOR:**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_conservative_rasterization_mode) valores de enumeración para el modo (on o off).
+-   [**D3D12 \_ FEATURE \_ DATA \_ D3D12 \_ OPTIONS:**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options) estructura que mantiene el nivel de soporte técnico.
+-   [**D3D12 \_ NIVEL \_ DE RASTERIZACIÓN \_ CONSERVADOR:**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_conservative_rasterization_tier) valores de enumeración para cada nivel de compatibilidad del hardware.
+-   [**CheckFeatureSupport:**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport) método para acceder a las características admitidas.
+-   [**CD3DX12 \_ RASTERIZER \_ DESC:**](cd3dx12-rasterizer-desc.md) clase auxiliar para crear descripciones de rasterizador.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Tutoriales de vídeo de aprendizaje avanzado de DirectX: rasterización conservadora](https://www.youtube.com/watch?v=zL0oSY_YmDY)
+[Tutoriales de vídeo de aprendizaje avanzado de DirectX: Rasterización conservadora](https://www.youtube.com/watch?v=zL0oSY_YmDY)
 </dt> <dt>
 
-[Vistas ordenadas de rasterizador](rasterizer-order-views.md)
+[Vistas ordenadas por el rasterizador](rasterizer-order-views.md)
 </dt> <dt>
 
 [Representación](rendering.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

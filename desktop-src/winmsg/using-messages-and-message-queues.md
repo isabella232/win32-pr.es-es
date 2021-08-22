@@ -1,19 +1,19 @@
 ---
-description: En los siguientes ejemplos de código se muestra cómo realizar las siguientes tareas asociadas a mensajes de Windows y colas de mensajes.
+description: En los ejemplos de código siguientes se muestra cómo realizar las siguientes tareas asociadas a Windows mensajes y colas de mensajes.
 ms.assetid: 62b4616c-37bf-4d9f-8891-7010c7035d18
 title: Uso de mensajes y colas de mensajes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a33f422a1a7c77f2c2fcd5913f931168a350a26
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee617f2c48325eccf5a2fdb07741bb88b47738dea812d372acda1454c9dd3d9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105659889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028343"
 ---
 # <a name="using-messages-and-message-queues"></a>Uso de mensajes y colas de mensajes
 
-En los siguientes ejemplos de código se muestra cómo realizar las siguientes tareas asociadas a mensajes de Windows y colas de mensajes.
+En los ejemplos de código siguientes se muestra cómo realizar las siguientes tareas asociadas a Windows mensajes y colas de mensajes.
 
 -   [Crear un bucle de mensajes](#creating-a-message-loop)
 -   [Examinar una cola de mensajes](#examining-a-message-queue)
@@ -22,11 +22,11 @@ En los siguientes ejemplos de código se muestra cómo realizar las siguientes t
 
 ## <a name="creating-a-message-loop"></a>Crear un bucle de mensajes
 
-El sistema no crea automáticamente una cola de mensajes para cada subproceso. En su lugar, el sistema crea una cola de mensajes solo para los subprocesos que realizan operaciones que requieren una cola de mensajes. Si el subproceso crea una o más ventanas, se debe proporcionar un bucle de mensajes. este bucle de mensajes recupera mensajes de la cola de mensajes del subproceso y los envía a los procedimientos de ventana adecuados.
+El sistema no crea automáticamente una cola de mensajes para cada subproceso. En su lugar, el sistema crea una cola de mensajes solo para los subprocesos que realizan operaciones que requieren una cola de mensajes. Si el subproceso crea una o varias ventanas, se debe proporcionar un bucle de mensajes; este bucle de mensajes recupera mensajes de la cola de mensajes del subproceso y los envía a los procedimientos de ventana adecuados.
 
-Dado que el sistema dirige los mensajes a ventanas individuales en una aplicación, un subproceso debe crear al menos una ventana antes de iniciar su bucle de mensajes. La mayoría de las aplicaciones contienen un único subproceso que crea ventanas. Una aplicación típica registra la clase de ventana para su ventana principal, crea y muestra la ventana principal y, a continuación, inicia su bucle de mensajes, todo en la función [**WinMain**](/windows/win32/api/winbase/nf-winbase-winmain) .
+Dado que el sistema dirige mensajes a ventanas individuales de una aplicación, un subproceso debe crear al menos una ventana antes de iniciar su bucle de mensajes. La mayoría de las aplicaciones contienen un único subproceso que crea ventanas. Una aplicación típica registra la clase de ventana para su ventana principal, crea y muestra la ventana principal y, a continuación, inicia su bucle de mensajes, todo en la [**función WinMain.**](/windows/win32/api/winbase/nf-winbase-winmain)
 
-Puede crear un bucle de mensajes mediante las funciones [**GetMessage**](/windows/win32/api/winuser/nf-winuser-getmessage) y [**DispatchMessage**](/windows/win32/api/winuser/nf-winuser-dispatchmessage) . Si la aplicación debe obtener la entrada de caracteres del usuario, incluya la función [**TranslateMessage**](/windows/win32/api/winuser/nf-winuser-translatemessage) en el bucle. **TranslateMessage** traduce los mensajes de clave virtual en mensajes de caracteres. En el ejemplo siguiente se muestra el bucle de mensajes en la función [**WinMain**](/windows/win32/api/winbase/nf-winbase-winmain) de una aplicación sencilla basada en Windows.
+Puede crear un bucle de mensajes mediante las [**funciones GetMessage**](/windows/win32/api/winuser/nf-winuser-getmessage) y [**DispatchMessage.**](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Si la aplicación debe obtener la entrada de caracteres del usuario, incluya la [**función TranslateMessage**](/windows/win32/api/winuser/nf-winuser-translatemessage) en el bucle . **TranslateMessage** traduce los mensajes de clave virtual en mensajes de caracteres. En el ejemplo siguiente se muestra el bucle de mensajes [**en la función WinMain**](/windows/win32/api/winbase/nf-winbase-winmain) de una aplicación Windows aplicación sencilla.
 
 
 ```
@@ -105,7 +105,7 @@ int PASCAL WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 
 
 
-En el ejemplo siguiente se muestra un bucle de mensajes para un subproceso que usa aceleradores y muestra un cuadro de diálogo no modal. Cuando [**TranslateAccelerator**](/windows/win32/api/winuser/nf-winuser-translateacceleratora) o [**IsDialogMessage**](/windows/win32/api/winuser/nf-winuser-isdialogmessagea) devuelve **true** (lo que indica que se ha procesado el mensaje), no se llama a [**TranslateMessage**](/windows/win32/api/winuser/nf-winuser-translatemessage) y [**DispatchMessage**](/windows/win32/api/winuser/nf-winuser-dispatchmessage) . La razón de esto es que **TranslateAccelerator** y **IsDialogMessage** realizan todas las tareas de traducción y distribución de mensajes necesarias.
+En el ejemplo siguiente se muestra un bucle de mensajes para un subproceso que usa aceleradores y muestra un cuadro de diálogo no modelo. Cuando [**TranslateAccelerator**](/windows/win32/api/winuser/nf-winuser-translateacceleratora) o [**IsDialogMessage**](/windows/win32/api/winuser/nf-winuser-isdialogmessagea) devuelve **TRUE** (lo que indica que se ha procesado el mensaje), no se llama a [**TranslateMessage**](/windows/win32/api/winuser/nf-winuser-translatemessage) y [**DispatchMessage.**](/windows/win32/api/winuser/nf-winuser-dispatchmessage) El motivo es que **TranslateAccelerator** e **IsDialogMessage** realizan todas las operaciones necesarias de traducción y distribución de mensajes.
 
 
 ```
@@ -142,9 +142,9 @@ while( (bRet = GetMessage( &msg, NULL, 0, 0 )) != 0)
 
 ## <a name="examining-a-message-queue"></a>Examinar una cola de mensajes
 
-En ocasiones, una aplicación necesita examinar el contenido de la cola de mensajes de un subproceso desde fuera del bucle de mensajes del subproceso. Por ejemplo, si el procedimiento de ventana de una aplicación realiza una operación de dibujo prolongada, puede que desee que el usuario pueda interrumpir la operación. A menos que la aplicación examine periódicamente la cola de mensajes durante la operación de los mensajes del mouse y del teclado, no responderá a la entrada del usuario hasta que se haya completado la operación. La razón de esto es que la función [**DispatchMessage**](/windows/win32/api/winuser/nf-winuser-dispatchmessage) en el bucle de mensajes del subproceso no vuelve hasta que el procedimiento de ventana finaliza el procesamiento de un mensaje.
+En ocasiones, una aplicación debe examinar el contenido de la cola de mensajes de un subproceso desde fuera del bucle de mensajes del subproceso. Por ejemplo, si el procedimiento de ventana de una aplicación realiza una operación de dibujo larga, es posible que desee que el usuario pueda interrumpir la operación. A menos que la aplicación examine periódicamente la cola de mensajes durante la operación para los mensajes del mouse y el teclado, no responderá a la entrada del usuario hasta que se haya completado la operación. El motivo es que la función [**DispatchMessage**](/windows/win32/api/winuser/nf-winuser-dispatchmessage) del bucle de mensajes del subproceso no se devuelve hasta que el procedimiento de ventana termina de procesar un mensaje.
 
-Puede usar la función [**PeekMessage**](/windows/win32/api/winuser/nf-winuser-peekmessagea) para examinar una cola de mensajes durante una operación larga. **PeekMessage** es similar a la función [**GetMessage**](/windows/win32/api/winuser/nf-winuser-getmessage) ; ambos comprueban una cola de mensajes para un mensaje que coincide con los criterios de filtro y, a continuación, copia el mensaje en una estructura [**MSG**](/windows/win32/api/winuser/ns-winuser-msg) . La principal diferencia entre las dos funciones es que **GetMessage** no vuelve hasta que un mensaje que coincide con los criterios de filtro se coloca en la cola, mientras que **PeekMessage** vuelve inmediatamente, independientemente de si un mensaje está en la cola.
+Puede usar la función [**PeekMessage**](/windows/win32/api/winuser/nf-winuser-peekmessagea) para examinar una cola de mensajes durante una operación larga. **PeekMessage** es similar a la [**función GetMessage;**](/windows/win32/api/winuser/nf-winuser-getmessage) ambos comprueban una cola de mensajes para un mensaje que coincida con los criterios de filtro y, a continuación, copian el mensaje en una [**estructura MSG.**](/windows/win32/api/winuser/ns-winuser-msg) La principal diferencia entre las dos funciones es que **GetMessage** no devuelve hasta que un mensaje que coincide con los criterios de filtro se coloca en la cola, mientras que **PeekMessage** devuelve inmediatamente independientemente de si un mensaje está en la cola.
 
 En el ejemplo siguiente se muestra cómo usar [**PeekMessage**](/windows/win32/api/winuser/nf-winuser-peekmessagea) para examinar una cola de mensajes para los clics del mouse y la entrada del teclado durante una operación larga.
 
@@ -184,17 +184,17 @@ while (!fDone)
 
 
 
-Otras funciones, como [**GetQueueStatus**](/windows/win32/api/winuser/nf-winuser-getqueuestatus) y [**GetInputState**](/windows/win32/api/winuser/nf-winuser-getinputstate), también permiten examinar el contenido de la cola de mensajes de un subproceso. **GetQueueStatus** devuelve una matriz de marcas que indica los tipos de mensajes de la cola; el uso de esta es la manera más rápida de detectar si la cola contiene algún mensaje. **GetInputState** devuelve **true** si la cola contiene mensajes del mouse o del teclado. Ambas funciones se pueden usar para determinar si la cola contiene mensajes que deben procesarse.
+Otras funciones, [**como GetQueueStatus**](/windows/win32/api/winuser/nf-winuser-getqueuestatus) y [**GetInputState,**](/windows/win32/api/winuser/nf-winuser-getinputstate)también permiten examinar el contenido de la cola de mensajes de un subproceso. **GetQueueStatus** devuelve una matriz de marcas que indica los tipos de mensajes de la cola; es la manera más rápida de detectar si la cola contiene algún mensaje. **GetInputState devuelve** **TRUE si** la cola contiene mensajes del mouse o del teclado. Ambas funciones se pueden usar para determinar si la cola contiene mensajes que deben procesarse.
 
 ## <a name="posting-a-message"></a>Publicar un mensaje
 
-Puede publicar un mensaje en una cola de mensajes mediante la función [**PostMessage**](/windows/win32/api/winuser/nf-winuser-postmessagea) . **PostMessage** coloca un mensaje al final de la cola de mensajes de un subproceso y vuelve inmediatamente, sin esperar a que el subproceso procese el mensaje. Los parámetros de la función incluyen un identificador de ventana, un identificador de mensaje y dos parámetros de mensaje. El sistema copia estos parámetros en una estructura [**MSG**](/windows/win32/api/winuser/ns-winuser-msg) , rellena los miembros **Time** y **PT** de la estructura y coloca la estructura en la cola de mensajes.
+Puede publicar un mensaje en una cola de mensajes mediante la [**función PostMessage.**](/windows/win32/api/winuser/nf-winuser-postmessagea) **PostMessage** coloca un mensaje al final de la cola de mensajes de un subproceso y vuelve inmediatamente, sin esperar a que el subproceso procese el mensaje. Los parámetros de la función incluyen un identificador de ventana, un identificador de mensaje y dos parámetros de mensaje. El sistema copia estos parámetros en una estructura [**MSG,**](/windows/win32/api/winuser/ns-winuser-msg) rellena los miembros **time** y **pt** de la estructura y coloca la estructura en la cola de mensajes.
 
-El sistema utiliza el identificador de ventana que se pasa con la función [**PostMessage**](/windows/win32/api/winuser/nf-winuser-postmessagea) para determinar qué cola de mensajes de subprocesos debe recibir el mensaje. Si el identificador es **hWnd \_ más** alto, el sistema envía el mensaje a las colas de mensajes de subproceso de todas las ventanas de nivel superior.
+El sistema usa el identificador de ventana pasado con la [**función PostMessage**](/windows/win32/api/winuser/nf-winuser-postmessagea) para determinar qué cola de mensajes de subproceso debe recibir el mensaje. Si el identificador es **HWND \_ TOPMOST,** el sistema envía el mensaje a las colas de mensajes de subproceso de todas las ventanas de nivel superior.
 
-Puede usar la función [**PostThreadMessage**](/windows/win32/api/winuser/nf-winuser-postthreadmessagea) para publicar un mensaje en una cola de mensajes de subproceso específica. **PostThreadMessage** es similar a [**PostMessage**](/windows/win32/api/winuser/nf-winuser-postmessagea), excepto que el primer parámetro es un identificador de subproceso en lugar de un identificador de ventana. Puede recuperar el identificador del subproceso llamando a la función [**GetCurrentThreadId**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentthreadid) .
+Puede usar la función [**PostThreadMessage**](/windows/win32/api/winuser/nf-winuser-postthreadmessagea) para publicar un mensaje en una cola de mensajes de subproceso específica. **PostThreadMessage** es similar a [**PostMessage,**](/windows/win32/api/winuser/nf-winuser-postmessagea)salvo que el primer parámetro es un identificador de subproceso en lugar de un identificador de ventana. Puede recuperar el identificador del subproceso llamando a [**la función GetCurrentThreadId.**](/windows/win32/api/processthreadsapi/nf-processthreadsapi-getcurrentthreadid)
 
-Utilice la función [**PostQuitMessage**](/windows/win32/api/winuser/nf-winuser-postquitmessage) para salir de un bucle de mensajes. **PostQuitMessage** envía el mensaje de [**\_ salida de WM**](wm-quit.md) al subproceso que se está ejecutando actualmente. El bucle de mensajes del subproceso finaliza y devuelve el control al sistema cuando encuentra el mensaje de **\_ salida de WM** . Una aplicación normalmente llama a **PostQuitMessage** en respuesta al mensaje de [**\_ destrucción de WM**](wm-destroy.md) , tal como se muestra en el ejemplo siguiente.
+Use la [**función PostQuitMessage**](/windows/win32/api/winuser/nf-winuser-postquitmessage) para salir de un bucle de mensajes. **PostQuitMessage publica** el mensaje [**DE SALIDA \_ de WM**](wm-quit.md) en el subproceso que se está ejecutando actualmente. El bucle de mensajes del subproceso finaliza y devuelve el control al sistema cuando encuentra el **mensaje \_ QUIT de WM.** Normalmente, una aplicación llama **a PostQuitMessage** en respuesta al mensaje [**WM \_ DESTROY,**](wm-destroy.md) como se muestra en el ejemplo siguiente.
 
 
 ```
@@ -210,11 +210,11 @@ case WM_DESTROY:
 
 ## <a name="sending-a-message"></a>Envío de un mensaje
 
-La función [**SendMessage**](/windows/win32/api/winuser/nf-winuser-sendmessage) se utiliza para enviar un mensaje directamente a un procedimiento de ventana. **SendMessage** llama a un procedimiento de ventana y espera a que ese procedimiento procese el mensaje y devuelve un resultado.
+La [**función SendMessage**](/windows/win32/api/winuser/nf-winuser-sendmessage) se usa para enviar un mensaje directamente a un procedimiento de ventana. **SendMessage** llama a un procedimiento de ventana y espera a que ese procedimiento procese el mensaje y devuelva un resultado.
 
-Se puede enviar un mensaje a cualquier ventana del sistema; lo único que se necesita es un identificador de ventana. El sistema utiliza el identificador para determinar qué procedimiento de ventana debe recibir el mensaje.
+Se puede enviar un mensaje a cualquier ventana del sistema; todo lo que se necesita es un identificador de ventana. El sistema usa el identificador para determinar qué procedimiento de ventana debe recibir el mensaje.
 
-Antes de procesar un mensaje que puede haberse enviado desde otro subproceso, un procedimiento de ventana debe llamar primero a la función [**InSendMessage**](/windows/win32/api/winuser/nf-winuser-insendmessage) . Si esta función devuelve **true**, el procedimiento de ventana debe llamar a [**ReplyMessage**](/windows/win32/api/winuser/nf-winuser-replymessage) antes que cualquier función que haga que el subproceso entregue el control, como se muestra en el ejemplo siguiente.
+Antes de procesar un mensaje que se puede haber enviado desde otro subproceso, un procedimiento de ventana debe llamar primero a la [**función InSendMessage.**](/windows/win32/api/winuser/nf-winuser-insendmessage) Si esta función devuelve **TRUE**, el procedimiento de ventana debe llamar a [**ReplyMessage**](/windows/win32/api/winuser/nf-winuser-replymessage) antes de cualquier función que haga que el subproceso devuelva el control, como se muestra en el ejemplo siguiente.
 
 
 ```
@@ -228,9 +228,9 @@ case WM_USER + 5:
 
 
 
-Se pueden enviar varios mensajes a los controles de un cuadro de diálogo. Estos mensajes de control establecen el aspecto, el comportamiento y el contenido de los controles o recuperan información sobre los controles. Por ejemplo, el mensaje [**CB \_ ADDSTRING**](../controls/cb-addstring.md) puede Agregar una cadena a un cuadro combinado y el mensaje [**BM \_ SETCHECK**](../controls/bm-setcheck.md) puede establecer el estado de activación de una casilla o un botón de radio.
+Se pueden enviar varios mensajes a los controles de un cuadro de diálogo. Estos mensajes de control establecen la apariencia, el comportamiento y el contenido de los controles o recuperan información sobre los controles. Por ejemplo, el mensaje [**\_ CB ADDSTRING**](../controls/cb-addstring.md) puede agregar una cadena a un cuadro combinado y el mensaje [**BM \_ SETCHECK**](../controls/bm-setcheck.md) puede establecer el estado de una casilla o un botón de radio.
 
-Utilice la función [**SendDlgItemMessage**](/windows/win32/api/winuser/nf-winuser-senddlgitemmessagea) para enviar un mensaje a un control, especificando el identificador del control y el identificador de la ventana del cuadro de diálogo que contiene el control. En el ejemplo siguiente, tomado de un procedimiento de cuadro de diálogo, se copia una cadena del control de edición de un cuadro combinado en el cuadro de lista. En el ejemplo se usa **SendDlgItemMessage** para enviar un mensaje [**CB \_ ADDSTRING**](../controls/cb-addstring.md) al cuadro combinado.
+Use la [**función SendDlgItemMessage**](/windows/win32/api/winuser/nf-winuser-senddlgitemmessagea) para enviar un mensaje a un control, especificando el identificador del control y el identificador de la ventana del cuadro de diálogo que contiene el control. En el ejemplo siguiente, tomado de un procedimiento de cuadro de diálogo, se copia una cadena del control de edición de un cuadro combinado en su cuadro de lista. En el ejemplo **se usa SendDlgItemMessage** para enviar un mensaje [**\_ ADDSTRING de CB**](../controls/cb-addstring.md) al cuadro combinado.
 
 
 ```

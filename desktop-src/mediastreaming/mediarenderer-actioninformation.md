@@ -1,11 +1,11 @@
 ---
-title: Propiedad MediaRenderer. ActionInformation
-description: Obtiene información acerca de los métodos que se pueden invocar actualmente en el DMR.
+title: Propiedad MediaRenderer.ActionInformation
+description: Obtiene información sobre qué métodos se pueden invocar actualmente en la DMR.
 ms.assetid: c36d45cb-c01a-4418-8f21-906c95950d6f
 keywords:
-- Propiedad ActionInformation API de streaming de multimedia
-- Propiedad ActionInformation API de streaming de multimedia, interfaz MediaRenderer
-- Interfaz MediaRenderer API de streaming de multimedia, propiedad ActionInformation
+- Propiedad ActionInformation de Media Streaming API
+- Propiedad ActionInformation Media Streaming API, interfaz de MediaRenderer
+- Interfaz de MediaRenderer Media Streaming API, propiedad ActionInformation
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8f5ce6c0bf9baf30cd8184d5271ed996c6406ddf
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f23b0463397f38dd8d438f21767ca9e45c9f68465bee4452d46a63b3a3dc9027
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105695586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972154"
 ---
-# <a name="mediarendereractioninformation-property"></a>Propiedad MediaRenderer. ActionInformation
+# <a name="mediarendereractioninformation-property"></a>Propiedad MediaRenderer.ActionInformation
 
-Obtiene información acerca de los métodos que se pueden invocar actualmente en el DMR.
+Obtiene información sobre qué métodos se pueden invocar actualmente en la DMR.
 
 Esta propiedad es de solo lectura.
 
@@ -33,7 +33,7 @@ Esta propiedad es de solo lectura.
 
 ```C++
 HRESULT get_ActionInformation(
-  [out] IMediaRendererActionInformation **value
+  [out] IMediaRendererActionInformation **value
 );
 ```
 
@@ -41,15 +41,15 @@ HRESULT get_ActionInformation(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Referencia a una interfaz [**IMediaRendererActionInformation**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-imediarendereractioninformation) .
+Referencia a una [**interfaz IMediaRendererActionInformation.**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-imediarendereractioninformation)
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**MediaRenderer**](mediarenderer.md)
+[**Representador de medios**](mediarenderer.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

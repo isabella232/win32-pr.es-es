@@ -1,7 +1,7 @@
 ---
-description: El método IsEndOfStreamDelivered consulta si el evento de finalización de EC se ha \_ entregado al administrador de gráficos de filtro.
+description: El método IsEndOfStreamDelivered consulta si el evento EC COMPLETE se ha entregado al administrador de \_ gráficos de filtros.
 ms.assetid: 13138626-35b0-4da1-9c7e-5d22d86ad2e3
-title: Método CBaseRenderer. IsEndOfStreamDelivered (Renbase. h)
+title: Método CBaseRenderer.IsEndOfStreamDelivered (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f60216afc6481411010fb2f2b0618c36a7d7acf4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4f15c2bca14e6c0f55f46441bbb4de362e6375d0b67f3012a4ad234a9366b188
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954884"
 ---
-# <a name="cbaserendererisendofstreamdelivered-method"></a>CBaseRenderer. IsEndOfStreamDelivered, método
+# <a name="cbaserendererisendofstreamdelivered-method"></a>Método CBaseRenderer.IsEndOfStreamDelivered
 
-El `IsEndOfStreamDelivered` método consulta si el evento de finalización de EC se ha \_ entregado al administrador de gráficos de filtro.
+El `IsEndOfStreamDelivered` método consulta si el evento EC COMPLETE se ha entregado al administrador de \_ gráficos de filtro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la marca [**CBaseRenderer:: m \_ bEOSDelivered**](cbaserenderer-m-beosdelivered.md) .
+Devuelve la [**marca CBaseRenderer::m \_ bEOSDelivered.**](cbaserenderer-m-beosdelivered.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve la marca [**CBaseRenderer:: m \_ bEOSDelivered**](cbaserenderer-m-beosd
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve la marca [**CBaseRenderer:: m \_ bEOSDelivered**](cbaserenderer-m-beosd
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

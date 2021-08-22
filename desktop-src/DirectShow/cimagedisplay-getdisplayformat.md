@@ -1,7 +1,7 @@
 ---
 description: El método GetDisplayFormat recupera un formato de vídeo que describe el modo de presentación actual.
 ms.assetid: 98134704-0453-4090-94de-d92cdf324538
-title: Método CImageDisplay. GetDisplayFormat (Winutil. h)
+title: Método CImageDisplay.GetDisplayFormat (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 901d61f3597156853b0f2d6f93b43c3cf99ec5e8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f8841e95f4097d043e7ef01abdb067c248f43b9295a8c8466ba50f07d23bd7dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074149"
 ---
-# <a name="cimagedisplaygetdisplayformat-method"></a>CImageDisplay. GetDisplayFormat, método
+# <a name="cimagedisplaygetdisplayformat-method"></a>Método CImageDisplay.GetDisplayFormat
 
 El `GetDisplayFormat` método recupera un formato de vídeo que describe el modo de presentación actual.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero a una estructura de [**videoinfo**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo) .
+Devuelve un puntero a una [**estructura VIDEOINFO.**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfo)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve un puntero a una estructura de [**videoinfo**](/previous-versions/windo
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve un puntero a una estructura de [**videoinfo**](/previous-versions/windo
 
 <dl> <dt>
 
-[**Clase CImageDisplay**](cimagedisplay.md)
+[**CImageDisplay (clase)**](cimagedisplay.md)
 </dt> </dl>
 
  

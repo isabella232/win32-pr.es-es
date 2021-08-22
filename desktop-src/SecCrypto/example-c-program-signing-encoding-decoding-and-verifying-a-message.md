@@ -1,43 +1,43 @@
 ---
-description: En el ejemplo siguiente se combinan la firma y la codificación de un mensaje y la descodificación de un mensaje firmado y la comprobación de la firma.
+description: En el ejemplo siguiente se combina la firma y la codificación de un mensaje, y la codificación de un mensaje firmado y la comprobación de la firma.
 ms.assetid: 2cad11a8-75ad-4726-a7bb-82870b71c721
-title: 'Programa C de ejemplo: firma, codificación, descodificación y comprobación de un mensaje'
+title: 'Programa C de ejemplo: firma, codificación, codificación y comprobación de un mensaje'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 128b4368a75d5f7636394fdf9a3b1b2694f45176
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8b274c8db1bc36c32616c84c4771d95a144f965effc7a849e77dde9d276950b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810261"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007473"
 ---
-# <a name="example-c-program-signing-encoding-decoding-and-verifying-a-message"></a>Programa C de ejemplo: firma, codificación, descodificación y comprobación de un mensaje
+# <a name="example-c-program-signing-encoding-decoding-and-verifying-a-message"></a>Programa C de ejemplo: firma, codificación, codificación y comprobación de un mensaje
 
-En el ejemplo siguiente se combinan la firma y la codificación de un mensaje y la descodificación de un mensaje firmado y la comprobación de la firma. Las dos operaciones suelen estar en programas independientes. El ejemplo de codificación crearía el mensaje codificado, lo guardaría en un archivo de disco o de algún otro modo, lo enviaría a otro usuario. El ejemplo de descodificación recibirá el mensaje codificado, lo descodificará y comprobará la firma. Los dos procesos se han combinado aquí para mostrar que ambos procedimientos funcionan.
+En el ejemplo siguiente se combina la firma y la codificación de un mensaje, y la codificación de un mensaje firmado y la comprobación de la firma. Las dos operaciones normalmente estarían en programas independientes. El ejemplo de codificación crearía el mensaje codificado, lo guardaría en un archivo de disco o, de alguna otra manera, lo enviaría a otro usuario. El ejemplo de descodificación recibiría el mensaje codificado, lo descodificaría y comprobaría la firma. Los dos procesos se han combinado aquí para mostrar que ambos procedimientos funcionan.
 
-La firma y la codificación de un mensaje no garantiza la privacidad de ese mensaje. En su lugar, garantiza la autenticidad del mensaje. Dado que el mensaje se firma con la clave privada del remitente, cuando el receptor del mensaje descifra la firma con la [*clave pública*](../secgloss/p-gly.md) del remitente (disponible en el certificado que se envía junto con el mensaje), el receptor puede estar seguro de que el mensaje se ha enviado por la persona o entidad asociada con el certificado y que el mensaje no se ha cambiado después de que se firmó.
+La firma y codificación de un mensaje no garantiza la privacidad de ese mensaje. En su lugar, garantiza la autenticidad del mensaje. Dado que el mensaje está firmado con la clave privada del remitente, cuando el receptor del mensaje descifra la firma con la clave pública del remitente [*(disponible*](../secgloss/p-gly.md) en el certificado que se envía junto con el mensaje), el receptor puede estar seguro de que el mensaje lo envió la persona o entidad asociada al certificado y que el mensaje no se cambió después de firmarlo.
 
-En este ejemplo se muestran las siguientes tareas y funciones de CryptoAPI para codificar un mensaje:
+En este ejemplo se muestran las siguientes tareas y funciones cryptoAPI para codificar un mensaje:
 
--   Apertura de un almacén de certificados con [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore).
+-   Abrir un almacén de certificados [**mediante CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore).
 -   Recuperar un certificado con un nombre de sujeto específico mediante [**CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore).
--   Obtener e imprimir el nombre de sujeto de un certificado mediante [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
--   Inicialización de un [**mensaje de firma de cifrado \_ \_ \_**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_sign_message_para) para su uso en una llamada a [**CryptSignMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignmessage).
--   Firmar y codificar un mensaje con [**CryptSignMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignmessage).
+-   Obtener e imprimir el nombre de sujeto de un certificado [**mediante CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
+-   Inicializar una [**estructura CRYPT \_ SIGN MESSAGE \_ \_ PARA**](/windows/desktop/api/Wincrypt/ns-wincrypt-crypt_sign_message_para) que se usará en una llamada a [**CryptSignMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignmessage).
+-   Firmar y codificar un mensaje [**con CryptSignMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignmessage).
 
-En este ejemplo se muestran las siguientes tareas y funciones de CryptoAPI para descodificar un mensaje y comprobar la firma:
+En este ejemplo se muestran las siguientes tareas y funciones de CryptoAPI para lacoding de un mensaje y la comprobación de la firma:
 
 -   Abrir un mensaje para descodificar con [**CryptMsgOpenToDecode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentodecode).
--   Agregar el [*BLOB*](../secgloss/b-gly.md) codificado al mensaje que se va a descodificar mediante [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate).
--   Descodificar el mensaje con [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
--   Apertura de un almacén de certificados en la memoria con [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore) mediante el mensaje recibido y descodificado.
--   Usar [**CertGetSubjectCertificateFromStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetsubjectcertificatefromstore) para obtener el certificado del firmante del mensaje.
+-   Agregar el [*BLOB codificado*](../secgloss/b-gly.md) al mensaje que se va a descodificar mediante [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate).
+-   Decoding the message using [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
+-   Abrir un almacén de certificados en memoria [**con CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore) mediante el mensaje recibido y descodificado.
+-   Usar [**CertGetSubjectCertificateFromStore para**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetsubjectcertificatefromstore) obtener el certificado del firmante del mensaje.
 -   Comprobar la firma de un mensaje mediante [**CryptMsgControl**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcontrol).
--   Liberar memoria, cerrar [*almacenes de certificados*](../secgloss/c-gly.md)y liberar el [*contexto de certificado*](../secgloss/c-gly.md).
+-   Liberar memoria, cerrar almacenes [*de certificados*](../secgloss/c-gly.md)y liberar contexto [*de certificado*](../secgloss/c-gly.md).
 
-Para obtener un ejemplo de cómo realizar estas operaciones similares con una devolución de llamada de secuencia, vea el [ejemplo de programa C: codificar y descodificar un mensaje mediante un flujo](example-c-program--encoding-and-decoding-a-message-using-a-stream.md).
+Para obtener un ejemplo de cómo realizar estas operaciones similares mediante una devolución de llamada de secuencia, vea Ejemplo de programa C: Codificación y [decoding de](example-c-program--encoding-and-decoding-a-message-using-a-stream.md)un mensaje mediante una secuencia .
 
-En este ejemplo se usa la función [**MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código de esta y otras funciones auxiliares también se enumeran en [ \_ \_ funciones de uso general](general-purpose-functions.md).
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo. El código de esta y otras funciones auxiliares también se muestra en [Funciones \_ de uso \_ general](general-purpose-functions.md).
 
 
 ```C++

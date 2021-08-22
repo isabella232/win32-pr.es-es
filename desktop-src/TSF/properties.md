@@ -20,12 +20,12 @@ keywords:
 - almacenamiento persistente de propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5b94a1f6c504fcd3e6491af9e66b399d59a3eeb
-ms.sourcegitcommit: 8ebcf6cd36f67f8bcf78e76ae8923d65b8995c8a
+ms.openlocfilehash: 97bb8ef470600dcb0c782ffcfde1f24071111aadd7c40ef641e4486877e2065d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111524219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118875650"
 ---
 # <a name="properties-common-elements"></a>Propiedades (elementos comunes)
 
@@ -87,7 +87,7 @@ El valor de propiedad y los atributos se obtienen mediante la [interfaz ITfReadO
 
 Si se requiere un tipo de propiedad específico, [se usa ITfContext::GetProperty.](/windows/desktop/api/msctf/nf-msctf-itfcontext-getproperty) **ITfContext::GetProperty** requiere un **GUID** que identifique la propiedad que se debe obtener. TSF define un conjunto de identificadores de propiedad [predefinidos usados](predefined-properties.md) o un servicio de texto puede definir sus propios identificadores de propiedad. Si se usa una propiedad personalizada, el proveedor de propiedades debe publicar el **GUID de** propiedad y el formato de los datos obtenidos.
 
-Por ejemplo, para obtener el **CLSID** para el propietario de un intervalo de texto, llame a **ITfContext::GetProperty** para obtener el objeto de propiedad, llame a [ITfProperty::FindRange](/windows/desktop/api/msctf/nf-msctf-itfproperty-findrange) para obtener el intervalo que cubre completamente la propiedad y, a continuación, llame a [ITfReadOnlyProperty::GetValue](/windows/desktop/api/msctf/nf-msctf-itfreadonlyproperty-getvalue) para obtener un [TfGuidAtom](/windows/desktop/TSF/tfguidatom) que representa el **CLSID** del servicio de texto que posee el texto. En el ejemplo siguiente se muestra una función que, dado un contexto, un intervalo y una cookie de edición, obtendrá el **CLSID** del servicio de texto que posee el texto.
+Por ejemplo, para obtener el **CLSID** del propietario de un intervalo de texto, llame a **ITfContext::GetProperty** para obtener el objeto de propiedad, llame a [ITfProperty::FindRange](/windows/desktop/api/msctf/nf-msctf-itfproperty-findrange) para obtener el intervalo que cubre completamente la propiedad y, a continuación, llame a [ITfReadOnlyProperty::GetValue](/windows/desktop/api/msctf/nf-msctf-itfreadonlyproperty-getvalue) para obtener un [TfGuidAtom](/windows/desktop/TSF/tfguidatom) que representa el **CLSID** del servicio de texto que posee el texto. En el ejemplo siguiente se muestra una función que, dado un contexto, un intervalo y una cookie de edición, obtendrá el **CLSID** del servicio de texto que posee el texto.
 
 
 ```C++
@@ -167,16 +167,16 @@ HRESULT GetTextOwner(   ITfContext *pContext,
 
 Las propiedades también se pueden enumerar mediante la obtención de una [interfaz IEnumTfProperties](/windows/desktop/api/msctf/nn-msctf-ienumtfproperties) de [ITfContext::EnumProperties](/windows/desktop/api/msctf/nf-msctf-itfcontext-enumproperties).
 
-## <a name="persistent-storage-of-properties"></a>Almacenamiento persistente de propiedades
+## <a name="persistent-storage-of-properties"></a>Propiedades Storage persistentes
 
-A menudo, las propiedades son transparentes para una aplicación y los usan uno o varios servicios de texto. Para conservar los datos de propiedad, como cuando se guardan en un archivo, una aplicación debe serializar los datos de propiedad cuando se almacenan y deserializar los datos de propiedad cuando se restauran. En este caso, la aplicación no debe estar interesada en propiedades individuales, pero debe enumerar todas las propiedades del contexto y almacenarlas.
+A menudo, las propiedades son transparentes para una aplicación y los usan uno o varios servicios de texto. Para conservar los datos de propiedad, como cuando se guardan en un archivo, una aplicación debe serializar los datos de propiedad cuando se almacenan y deserializar los datos de propiedad cuando se restauran los datos. En este caso, la aplicación no debe estar interesada en propiedades individuales, pero debe enumerar todas las propiedades del contexto y almacenarlas.
 
 Al almacenar datos de propiedad, una aplicación debe realizar los pasos siguientes.
 
 1.  Obtenga un enumerador de propiedades mediante una **llamada a ITfContext::EnumProperties**.
 2.  Para enumerar cada propiedad, llame a [IEnumTfProperties::Next](/windows/desktop/api/msctf/nf-msctf-ienumtfproperties-next).
 3.  Para cada propiedad, obtenga un enumerador de intervalo llamando a [ITfReadOnlyProperty::EnumRanges](/windows/desktop/api/msctf/nf-msctf-itfreadonlyproperty-enumranges).
-4.  Para enumerar cada intervalo de la propiedad , llame a [IEnumTfRanges::Next](/windows/desktop/api/msctf/nf-msctf-ienumtfranges-next).
+4.  Enumere cada intervalo de la propiedad llamando a [IEnumTfRanges::Next.](/windows/desktop/api/msctf/nf-msctf-ienumtfranges-next)
 5.  Para cada intervalo de la propiedad , llame a [ITextStoreACPServices::Serialize](/windows/desktop/api/msctf/nf-msctf-itextstoreacpservices-serialize) con la propiedad , el intervalo, una estructura [TF PERSISTENT PROPERTY HEADER \_ \_ \_ \_ ACP](/windows/desktop/api/msctf/ns-msctf-tf_persistent_property_header_acp) y un objeto de secuencia implementado por la aplicación.
 6.  Escriba el contenido de la estructura **TF PERSISTENT PROPERTY HEADER \_ \_ \_ \_ ACP** en memoria persistente.
 7.  Escriba el contenido del objeto de secuencia en memoria persistente.

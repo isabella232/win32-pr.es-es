@@ -4,12 +4,12 @@ description: Obtenga información sobre la propiedad Visible del objeto Commands
 ms.assetid: 0178a789-141b-4d4c-ba7c-05c7995f13bc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6ea780ed5f19dbe732b18de741f9d7ee376df67
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: c742733d06f0a4c7ae2d10c7fb97a20e735b59370c61efa5f7204003f1cd81bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975475"
 ---
 # <a name="visible-property-commands-object"></a>Propiedad Visible (objeto Commands)
 
@@ -41,7 +41,7 @@ Devuelve o establece un valor que determina si el título de la colección [**Co
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Para que el título aparezca en el menú emergente del carácter cuando la aplicación no sea el cliente activo de entrada, esta propiedad debe establecerse en **True** y la propiedad [**Caption**](caption-property.md) para la colección Commands. Además, esta propiedad debe establecerse en **True** para que los comandos de la colección aparezcan en el menú emergente cuando la aplicación esté activa en la entrada.
 
