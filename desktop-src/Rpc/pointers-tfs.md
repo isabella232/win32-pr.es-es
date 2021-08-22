@@ -4,12 +4,12 @@ description: Obtenga información sobre un puntero común RPC, que se define com
 ms.assetid: 9756E637-BCBB-48F1-B962-25AF2C917921
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ade676610a310e230eb6fa89dd666996bb82040f
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: 30a87c13f9657d56e3f85d1d5828dc097c25e29990c617c5f20679a1d6cbe91e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118927355"
 ---
 # <a name="pointers-rpc"></a>Punteros (RPC)
 
@@ -31,7 +31,7 @@ pointer_type<1> pointer_attributes<1>
 offset_to_complex_description<2>
 ```
 
-El primer formato se usa si el puntero es un puntero a un tipo simple o a un puntero de cadena no especificado. El segundo formato se usa para punteros a todos los demás tipos. Los atributos de puntero indican qué diseño de descripción es con la marca \_ FC SIMPLE \_ POINTER.
+El primer formato se usa si el puntero es un puntero a un tipo simple o a un puntero de cadena no especificado. El segundo formato se usa para punteros a todos los demás tipos. Los atributos de puntero indican qué diseño de descripción tiene la marca \_ FC SIMPLE \_ POINTER.
 
 el \_ tipo de<1> es uno de los siguientes.
 
@@ -50,7 +50,7 @@ el \_ tipo de<1> es uno de los siguientes.
 
 La razón para distinguir FC OP es semántica: en las interfaces de objeto, se debe liberar un puntero in-out antes de desmarque un nuevo objeto y asignar un nuevo valor \_ \[ de \] puntero.
 
-Los \_ atributos<1> pueden tener cualquiera de las marcas que se muestran en la tabla siguiente.
+Los atributos<1> pueden tener cualquiera de las marcas \_ que se muestran en la tabla siguiente.
 
 
 
@@ -88,7 +88,7 @@ FC_IP FC_PAD
 iid_description<> 
 ```
 
-La descripción de iid<> descriptor de correlación y tiene 4 o 6 bytes, dependiendo de \_ si [**se usa /robust.**](/windows/desktop/Midl/-robust) El valor calculado por **la función ComputeConformance** es el puntero IID.
+La descripción de iid<> es un descriptor de correlación y tiene 4 o 6 bytes, dependiendo de \_ si [**se usa /robust.**](/windows/desktop/Midl/-robust) El valor calculado por **la función ComputeConformance** es el puntero IID.
 
 ## <a name="byte-count-pointers"></a>Punteros de recuento de bytes
 
@@ -111,7 +111,7 @@ pointee_description<>
 
 La descripción del recuento<> es un descriptor de correlación y tiene 4 o 6 bytes, dependiendo de \_ \_ si se usa [**/robust.**](/windows/desktop/Midl/-robust)
 
-La descripción \_ de<> es una descripción del tipo más importante.
+La descripción \_ de<> es una descripción del tipo de objeto .
 
  
 

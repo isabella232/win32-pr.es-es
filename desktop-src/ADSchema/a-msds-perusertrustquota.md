@@ -52,7 +52,7 @@ Se usa para aplicar una cuota por usuario para crear objetos Trusted-Domain auto
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
@@ -136,7 +136,7 @@ Se usa para aplicar una cuota por usuario para crear objetos Trusted-Domain auto
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------|
 | Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |

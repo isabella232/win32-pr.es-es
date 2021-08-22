@@ -1,21 +1,21 @@
 ---
-title: La función named_type_to_local
-description: El código auxiliar llama al tipo con nombre \_ \_ a la \_ función local para convertir datos de un tipo transmitido al tipo que presentan en la aplicación.
+title: La named_type_to_local función
+description: Los códigos auxiliares llaman al tipo con nombre a la función local para convertir los datos de un tipo transmitido al \_ tipo que presentan a la \_ \_ aplicación.
 ms.assetid: c272cc1f-e47b-4d5a-a4e2-cefeaeb8c175
 keywords:
 - named_type_to_local
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 746cbdd01ea657408b1bf355f41b3b9dfba673a9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 59fc1d45545c920ef19eb4c230045e62322833d3ef38e765357c29b20a48589c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075721"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118924065"
 ---
-# <a name="the-named_type_to_local-function"></a>El tipo con nombre \_ \_ a la \_ función local
+# <a name="the-named_type_to_local-function"></a>Tipo con \_ nombre \_ de función \_ local
 
-El código auxiliar llama al tipo **con nombre a la función \_ \_ \_ local** para convertir datos de un tipo transmitido al tipo que presentan en la aplicación. La función se define como:
+Los códigos auxiliares llaman al tipo con nombre a la función **\_ \_ \_ local** para convertir los datos de un tipo transmitido al tipo que presentan a la aplicación. La función se define como:
 
 ``` syntax
 void __RPC_USER <named_type>_to_local( 
@@ -23,13 +23,13 @@ void __RPC_USER <named_type>_to_local(
     <local_type> __RPC_FAR * );
 ```
 
-El primer parámetro apunta a los datos transmitidos. La función establece el segundo parámetro para apuntar a los datos presentados.
+El primer parámetro apunta a los datos transmitidos. La función establece el segundo parámetro para que apunte a los datos presentados.
 
-El **tipo con nombre de la función \_ \_ \_ local** debe administrar la memoria para el tipo presentado. La función debe asignar memoria para toda la estructura de datos que comienza en la dirección indicada por el segundo parámetro, excepto para el propio parámetro (el código auxiliar asigna memoria para el nodo raíz y lo pasa a la función). El valor del segundo parámetro no puede cambiar durante la llamada. La función puede cambiar el contenido en esa dirección.
+El **tipo con nombre de la función \_ \_ \_ local** debe administrar la memoria del tipo presentado. La función debe asignar memoria para toda la estructura de datos que comienza en la dirección indicada por el segundo parámetro, excepto para el propio parámetro (el código auxiliar asigna memoria para el nodo raíz y lo pasa a la función). El valor del segundo parámetro no puede cambiar durante la llamada. La función puede cambiar el contenido en esa dirección.
 
- 
+ 
 
- 
+ 
 
 
 

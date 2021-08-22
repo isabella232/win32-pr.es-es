@@ -1,6 +1,6 @@
 ---
 title: Windows Redes (WNet)
-description: Las Windows de redes virtuales (WNet) permiten implementar funcionalidades de red en la aplicación sin tener que hacer concesiones para un proveedor de red determinado o implementación de red física.
+description: Las Windows de red de red (WNet) permiten implementar funcionalidades de red en la aplicación sin tener que hacer concesiones para un proveedor de red determinado o la implementación de red física.
 ms.assetid: 7668ac55-7104-4ddb-88eb-920cfe4e36fd
 keywords:
 - Windows WNet de red
@@ -16,7 +16,7 @@ ms.locfileid: "118566418"
 ---
 # <a name="windows-networking-wnet"></a>Windows Redes (WNet)
 
-Las Windows de redes virtuales (WNet) permiten implementar funcionalidades de red en la aplicación sin tener que hacer concesiones para un proveedor de red determinado o implementación de red física. Esto se debe a que las funciones de WNet son independientes de la red.
+Las Windows de red de red (WNet) permiten implementar funcionalidades de red en la aplicación sin tener que hacer concesiones para un proveedor de red determinado o la implementación de red física. Esto se debe a que las funciones de WNet son independientes de la red.
 
 -   [Acerca de Windows redes](about-windows-networking.md)
 -   [Uso de Windows redes](using-windows-networking.md)

@@ -1,21 +1,21 @@
 ---
-title: RPC_AUTHZ_HANDLE (Rpcdce. h)
-description: El tipo de datos de identificador de RPC \_ AUTHZ \_ declara un identificador de autorización. Este identificador apunta a la información de privilegios de la aplicación cliente que realizó la llamada a procedimiento remoto.
+title: RPC_AUTHZ_HANDLE (Rpcdce.h)
+description: El tipo de datos RPC \_ AUTHZ \_ HANDLE declara un identificador de autorización. Este identificador apunta a la información de privilegios de la aplicación cliente que realizó la llamada a procedimiento remoto.
 ms.assetid: 35b6a3f4-1703-4244-98fd-fad7de48b262
 keywords:
 - RPC_AUTHZ_HANDLE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b095100e1e224590ef6a285785da632e198e1b0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4280d25a44f7c88ac99486900eb92086d27f472f27ac3e198108f562c204b2aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118926552"
 ---
-# <a name="rpc_authz_handle"></a>identificador de RPC \_ AUTHZ \_
+# <a name="rpc_authz_handle"></a>IDENTIFICADOR \_ DE RPC \_ AUTHZ
 
-El tipo de datos de **\_ \_ identificador de RPC AUTHZ** declara un identificador de autorización. Este identificador apunta a la información de privilegios de la aplicación cliente que realizó la llamada a procedimiento remoto.
+El **tipo de datos RPC \_ AUTHZ \_ HANDLE** declara un identificador de autorización. Este identificador apunta a la información de privilegios de la aplicación cliente que realizó la llamada a procedimiento remoto.
 
 
 ```C++
@@ -28,15 +28,15 @@ typedef void* RPC_AUTHZ_HANDLE;
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                |
-| Encabezado<br/>                   | <dl> <dt>Rpcdce. h (incluir RPC. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Rpcdce.h (incluir Rpc.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

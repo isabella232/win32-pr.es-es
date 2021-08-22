@@ -32,11 +32,11 @@ Este atributo identifica si ms-DS-Claim-Possible-Values en la propiedad de recur
 | CN                | ms-DS-Is-Possible-Values-Present     |
 | Ldap-Display-Name | msDS-IsPossibleValuesPresent         |
 | Size              | \-                                   |
-| Privilegio actualizar  | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2186              |
 | System-Id-Guid    | 6fabdcda-8c53-204f-b1a4-9df0c67c1eb4 |
-| Syntax            | [**Booleana**](s-boolean.md)         |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -48,7 +48,7 @@ Este atributo identifica si ms-DS-Claim-Possible-Values en la propiedad de recur
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------|
 | Id. de vínculo                | \-                                                      |
 | MAPI-Id                | \-                                                      |

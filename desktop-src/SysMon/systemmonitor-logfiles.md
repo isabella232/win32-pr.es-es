@@ -1,6 +1,6 @@
 ---
 title: Propiedad SystemMonitor.LogFiles
-description: Colección de uno o varios archivos de registro que se usarán como origen de los valores de contador mostrados en el Monitor de sistema.
+description: Colección de uno o varios archivos de registro que se usarán como origen de los valores de contador que se muestran en el Monitor de sistema.
 ms.assetid: 6e9e7205-3516-404d-b67d-777e484900da
 keywords:
 - Propiedad SysMon de LogFiles
@@ -25,7 +25,7 @@ ms.locfileid: "118882185"
 ---
 # <a name="systemmonitorlogfiles-property"></a>Propiedad SystemMonitor.LogFiles
 
-Colección de uno o varios archivos de registro que se usarán como origen de los valores de contador mostrados en el Monitor de sistema.
+Colección de uno o varios archivos de registro que se usarán como origen de los valores de contador que se muestran en el Monitor de sistema.
 
 ## <a name="syntax"></a>Syntax
 

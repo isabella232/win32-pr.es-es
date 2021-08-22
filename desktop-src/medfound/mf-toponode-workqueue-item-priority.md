@@ -1,19 +1,19 @@
 ---
-description: Especifica la prioridad del elemento de trabajo para una bifurcación de la topología.
+description: Especifica la prioridad del elemento de trabajo para una rama de la topología.
 ms.assetid: B2FA1151-08D3-46F9-A38D-AC8908EFA6A2
-title: MF_TOPONODE_WORKQUEUE_ITEM_PRIORITY atributo (Mfidl. h)
+title: MF_TOPONODE_WORKQUEUE_ITEM_PRIORITY atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec5f7df6630e41a32eeb069c2a07b8030da79929
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1ff67e48bda6ac00baeab9418b80d366c23808713b4689a013949b364f09b6e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118739839"
 ---
-# <a name="mf_toponode_workqueue_item_priority-attribute"></a>MF \_ TOPONODE \_ WORKQUEUE \_ atributo de prioridad de elemento \_
+# <a name="mf_toponode_workqueue_item_priority-attribute"></a>Atributo MF \_ TOPONODE \_ WORKQUEUE \_ ITEM \_ PRIORITY
 
-Especifica la prioridad del elemento de trabajo para una bifurcación de la topología.
+Especifica la prioridad del elemento de trabajo para una rama de la topología.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -21,11 +21,11 @@ Especifica la prioridad del elemento de trabajo para una bifurcación de la topo
 
 ## <a name="remarks"></a>Observaciones
 
-Este atributo se aplica a los nodos de origen (**\_ \_ \_ nodo SOURCESTREAM de topología MF**). El atributo es opcional.
+Este atributo se aplica a los nodos de origen **(MF \_ TOPOLOGY \_ SOURCESTREAM \_ NODE).** El atributo es opcional.
 
 Este atributo requiere el atributo [MF \_ TOPONODE \_ WORKQUEUE \_ ID](mf-toponode-workqueue-id-attribute.md) en el mismo nodo.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,9 +33,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -43,22 +43,22 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos de nodo de topología](topology-node-attributes.md)
 </dt> <dt>
 
-[Mejoras en la cola de trabajo y subprocesos](media-foundation-work-queue-and-threading-improvements.md)
+[Mejoras de cola de trabajo y subprocesos](media-foundation-work-queue-and-threading-improvements.md)
 </dt> <dt>
 
-[**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
+[**NODETopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
 </dt> <dt>
 
 [**IMFWorkQueueServices::BeginRegisterTopologyWorkQueuesWithMMCSS**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginregistertopologyworkqueueswithmmcss)
 </dt> <dt>
 
-[**identificador de WORKQUEUE de MF \_ TOPONODE \_ \_**](mf-toponode-workqueue-id-attribute.md)
+[**ID. \_ DE \_ WORKQUEUE DE MF TOPONODE \_**](mf-toponode-workqueue-id-attribute.md)
 </dt> </dl>
 
  

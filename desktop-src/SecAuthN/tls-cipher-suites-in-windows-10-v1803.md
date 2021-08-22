@@ -3,18 +3,18 @@ description: Obtenga información sobre los conjuntos de cifrado TLS Windows 10 
 title: Conjuntos de cifrado TLS en Windows 10 v1803
 ms.topic: article
 ms.date: 10/09/2018
-ms.openlocfilehash: a86bb7b4d1ab3b104d8336ffab598686efcd99c4
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: 3656ae05209b040385b512bf738cc9d01e4a5af2a3c3b0319f40e4c10400f63d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262367"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118916154"
 ---
 # <a name="tls-cipher-suites-in-windows-10-v1803"></a>Conjuntos de cifrado TLS en Windows 10 v1803
 
 \[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Los conjuntos de cifrado solo se pueden negociar para las versiones TLS que los admiten. Siempre se prefiere la versión de TLS más alta admitida en el protocolo de enlace TLS.
+Los conjuntos de cifrado solo se pueden negociar para las versiones TLS que los admiten. Siempre se prefiere la versión más alta compatible de TLS en el protocolo de enlace TLS.
 
 La disponibilidad de los conjuntos de cifrado debe controlarse de una de estas dos maneras:
 
@@ -97,7 +97,7 @@ Los siguientes conjuntos de cifrado PSK están habilitados y en este orden de pr
 |--------------------------------------------------|-------------------------------------|---------------------------|
 | TLS \_ PSK \_ CON \_ AES \_ 256 \_ GCM \_ SHA384<br/> | Sí<br/>                      | TLS 1.2<br/>        |
 | TLS \_ PSK \_ CON \_ AES \_ 128 \_ GCM \_ SHA256<br/> | Sí<br/>                      | TLS 1.2<br/>        |
-| TLS \_ PSK \_ WITH \_ AES \_ 256 \_ CBC \_ SHA384<br/> | Sí<br/>                      | TLS 1.2<br/>        |
+| TLS \_ PSK \_ CON \_ AES \_ 256 \_ CBC \_ SHA384<br/> | Sí<br/>                      | TLS 1.2<br/>        |
 | TLS \_ PSK \_ WITH \_ AES \_ 128 \_ CBC \_ SHA256<br/> | Sí<br/>                      | TLS 1.2<br/>        |
 | TLS \_ PSK \_ CON \_ \_ SHA384 NULL<br/>          | No<br/>                       | TLS 1.2<br/>        |
 | TLS \_ PSK \_ CON \_ \_ SHA256 NULL<br/>          | No<br/>                       | TLS 1.2<br/>        |
@@ -113,11 +113,11 @@ Los siguientes conjuntos de cifrado PSK están habilitados y en este orden de pr
 
 Para agregar conjuntos de cifrado, implemente una directiva de grupo o use los cmdlets TLS:
 
--   Para usar la directiva de grupo, configure el orden del conjunto de cifrado SSL en Configuración del equipo > Plantillas administrativas > Network > Opciones de configuración de SSL con la lista de prioridad de todos los conjuntos de cifrado que quiera habilitar.
+-   Para usar la directiva de grupo, configure el orden del conjunto de cifrado SSL en Configuración del equipo > Plantillas administrativas > Network > Configuración de SSL Configuración con la lista de prioridad de todos los conjuntos de cifrado que quiera habilitar.
 -   Para usar PowerShell, consulte [Cmdlets de TLS.](/powershell/module/tls/?view=win10-ps)
 
 > [!Note]  
-> Antes de Windows 10, las cadenas del conjunto de cifrado se anexaban con la curva elíptica para determinar la prioridad de la curva. Windows 10 admite una configuración de orden de prioridad de curva elíptica, por lo que el sufijo de curva elíptica no es necesario y se reemplaza por el nuevo orden de prioridad de curva elíptica, cuando se proporciona, para permitir que las organizaciones usen la directiva de grupo para configurar distintas versiones de Windows con los mismos conjuntos de cifrado.
+> Antes de Windows 10, las cadenas del conjunto de cifrado se anexaban con la curva elíptica para determinar la prioridad de la curva. Windows 10 admite una configuración de orden de prioridad de curva elíptica, por lo que el sufijo de curva elíptica no es necesario y se reemplaza por el nuevo orden de prioridad de curva elíptica, cuando se proporciona, para permitir que las organizaciones usen la directiva de grupo para configurar diferentes versiones de Windows con los mismos conjuntos de cifrado.
 
  
 

@@ -1,6 +1,6 @@
 ---
 title: Propiedades de DMO S/PDIF
-description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows MEDIA Audio and Video Codec and DSP API (API de códecs de audio y vídeo multimedia y DSP). | Propiedades de DMO S/PDIF
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP API (API de códecs de audio y vídeo multimedia y DSP). | Propiedades de DMO S/PDIF
 ms.assetid: cc9bbe33-2a4c-4662-b0db-36db3451343f
 keywords:
 - S/PDIF DMO windows Media Format
@@ -21,7 +21,7 @@ ms.locfileid: "118699992"
 ---
 # <a name="spdif-dmo-properties"></a>Propiedades de DMO S/PDIF
 
-Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP APIs (API](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
+Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señales digitales, consulte Windows [Media Audio and Video Codec y LAS API de DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

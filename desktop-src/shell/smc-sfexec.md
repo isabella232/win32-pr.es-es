@@ -1,6 +1,6 @@
 ---
-description: Ejecute el elemento de carpeta de Shell especificado en la estructura SMDATA correspondiente.
-title: Mensaje de SMC_SFEXEC (shobjidl. h)
+description: Ejecute el elemento de carpeta shell especificado en la estructura SMDATA que lo acompaña.
+title: SMC_SFEXEC mensaje (Shobjidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: bb8f6434-0936-460f-b7dc-39be58bb70ce
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: b4e414cd7dab9968882272b19b9b21b95da0f1d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e4d02763745a0ffb548777c92d14ee7928a29a58d6a46ff7c335ac0300f64bd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968004"
 ---
-# <a name="smc_sfexec-message"></a>Mensaje de SFEXEC de SMC \_
+# <a name="smc_sfexec-message"></a>Mensaje \_ SFEXEC de SMC
 
-Ejecute el elemento de carpeta de Shell especificado en la estructura [**SMDATA**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-smdata) correspondiente.
+Ejecute el elemento de carpeta shell especificado en la estructura [**SMDATA**](/windows/win32/api/shobjidl_core/ns-shobjidl_core-smdata) que lo acompaña.
 
 
 ```C++
@@ -38,11 +38,11 @@ Este mensaje no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devolver S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
+El método [**IShellMenuCallback::CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,8 +52,8 @@ El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_c
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Shobjidl. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shobjidl. idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: GUID de la aplicación del objeto de la clase de evento.
+description: GUID de aplicación del objeto de clase de evento.
 ms.assetid: 0d19183a-429c-4564-b6a5-f06481d27e00
-title: 'IEventSubscription3:: EventClassApplicationID (propiedad)'
+title: Propiedad IEventSubscription3::EventClassApplicationID
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,20 +14,20 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 3e80a8d8f557c80a1b2605328728260eb8ae7bd7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 228650f97f8662e60f7866fd36c184583316e494286b55c1f70e03a148e5e979
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118813836"
 ---
-# <a name="ieventsubscription3eventclassapplicationid-property"></a>IEventSubscription3:: EventClassApplicationID (propiedad)
+# <a name="ieventsubscription3eventclassapplicationid-property"></a>Propiedad IEventSubscription3::EventClassApplicationID
 
-GUID de la aplicación del objeto de la clase de evento.
+GUID de aplicación del objeto de clase de evento.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -44,11 +44,11 @@ HRESULT get_EventClassApplicationID(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Cadena que contiene el GUID de la aplicación de la clase de eventos.
+Cadena que contiene el GUID de la aplicación de clase de eventos.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Este método puede devolver los valores devueltos estándar E \_ INVALIDARG, e \_ OUTOFMEMORY, e \_ inesperado, e \_ FAIL y S \_ OK.
+Este método puede devolver los valores devueltos estándar E \_ INVALIDARG, E \_ OUTOFMEMORY, E \_ UNEXPECTED, E \_ FAIL y S \_ OK.
 
 ## <a name="requirements"></a>Requisitos
 

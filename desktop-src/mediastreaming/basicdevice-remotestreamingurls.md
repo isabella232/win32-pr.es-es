@@ -1,11 +1,11 @@
 ---
-title: Propiedad BasicDevice. RemoteStreamingUrls
+title: BasicDevice.RemoteStreamingUrls, propiedad
 description: Obtiene un vector de direcciones URL de streaming remoto.
 ms.assetid: E0F05E04-FED0-42E7-BC42-AFFA9780C366
 keywords:
-- Propiedad RemoteStreamingUrls API de streaming de multimedia
-- Propiedad RemoteStreamingUrls API de streaming de multimedia, interfaz BasicDevice
-- Interfaz BasicDevice API de streaming de multimedia, propiedad RemoteStreamingUrls
+- Propiedad RemoteStreamingUrls de Media Streaming API
+- RemoteStreamingUrls, propiedad Media Streaming API, interfaz BasicDevice
+- Interfaz BásicaDispositivo Media Streaming API, propiedad RemoteStreamingUrls
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ca1d5695c22c8b514475c6336c29ee70caa01f93
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f708c3f230b0345a9799abd617205864ec737f1bb2fb2a448fd3ba639d5bacb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104487666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118736221"
 ---
-# <a name="basicdeviceremotestreamingurls-property"></a>Propiedad BasicDevice. RemoteStreamingUrls
+# <a name="basicdeviceremotestreamingurls-property"></a>BasicDevice.RemoteStreamingUrls, propiedad
 
 Obtiene un vector de direcciones URL de streaming remoto.
 
@@ -33,7 +33,7 @@ Esta propiedad es de solo lectura.
 
 ```C++
 HRESULT get_RemoteStreamingUrls(
-  [out] IVector< HSTRING > **value
+  [out] IVector< HSTRING > **value
 );
 ```
 
@@ -50,6 +50,6 @@ Colección enumerable de punteros a direcciones URL de streaming remoto.
 [**BasicDevice**](/previous-versions/windows/desktop/legacy/hh828813(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

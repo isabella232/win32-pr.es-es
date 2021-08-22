@@ -1,9 +1,9 @@
 ---
-title: función glReadBuffer (GL. h)
-description: La función glReadBuffer selecciona un origen de búfer de color para los píxeles.
+title: Función glReadBuffer (Gl.h)
+description: La función glReadBuffer selecciona un origen de búfer de color para píxeles.
 ms.assetid: 734153fa-e809-4b70-867e-55e46ab95712
 keywords:
-- glReadBuffer (función) OpenGL
+- Función glReadBuffer OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59f0e88cdcb2b1b3257b23606f8160e0986584db
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3a25e9a799185b1a509510abb81617895fbbd0624d8816110e4c2ba8e4a7c1cb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118937955"
 ---
-# <a name="glreadbuffer-function"></a>glReadBuffer función)
+# <a name="glreadbuffer-function"></a>función glReadBuffer
 
-La función **glReadBuffer** selecciona un origen de búfer de color para los píxeles.
+La **función glReadBuffer** selecciona un origen de búfer de color para píxeles.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ void WINAPI glReadBuffer(
 *mode* 
 </dt> <dd>
 
-Un búfer de color. Los valores aceptados son GL \_ Front \_ left, GL \_ Front \_ right, GL \_ back \_ left, GL back Right, GL Front, GL up, GL \_ \_ \_ \_ \_ left, GL \_ right y GL \_ AUX *i*, donde *i* está entre 0 y \_ búferes auxiliares de GL \_ 1.
+Búfer de color. Los valores aceptados son GL \_ FRONT \_ LEFT, GL \_ FRONT \_ RIGHT, GL BACK \_ \_ \_ LEFT, GL BACK \_ RIGHT, GL \_ FRONT, GL BACK, GL LEFT, GL RIGHT y GL AUX i , donde i está entre 0 y \_ \_ GL AUX \_ \_   \_ \_ BUFFERS 1.
 
 </dd> </dl>
 
@@ -59,23 +59,23 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>      | el *modo* no era uno de los doce (o más) valores aceptados.<br/>                                                             |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | el *modo* especificó un búfer que no existe.<br/>                                                                             |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>      | *el* modo no era uno de los doce (o más) valores aceptados.<br/>                                                             |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | *el* modo especificó un búfer que no existe.<br/>                                                                             |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glReadBuffer** especifica un búfer de color como el origen de los siguientes comandos [**glReadPixels**](glreadpixels.md) y [**glCopyPixels**](glcopypixels.md) . El parámetro de *modo* acepta uno de doce valores predefinidos o más. (GL \_ ) \_Siempre se definen AUX0 a GL AUX3). En un sistema completamente configurado, GL \_ Front, GL \_ left y GL \_ Front \_ left, todo el nombre del búfer de la izquierda, la \_ parte delantera derecha y el nombre de la contabilidad de la derecha el búfer de la derecha, y el nombre de contabilidad de la izquierda \_ \_ y la parte posterior \_ \_ \_ del búfer de retroceso.
+La **función glReadBuffer** especifica un búfer de color como origen para los siguientes comandos [**glReadPixels**](glreadpixels.md) y [**glCopyPixels.**](glcopypixels.md) El *parámetro* mode acepta uno de los doce o más valores predefinidos. (GL) \_ Siempre se definen DESDE AUX0 hasta \_ GL AUX3). En un sistema completamente configurado, GL FRONT, GL LEFT y GL FRONT LEFT, todo el nombre del búfer de la izquierda, GL FRONT RIGHT y GL RIGHT el búfer de \_ \_ \_ \_ \_ \_ \_ front-right, y GL \_ BACK \_ LEFT \_ y GL BACK el búfer de la parte posterior izquierda.
 
-Las configuraciones de búfer doble no estéreo tienen solo un búfer de la izquierda y la derecha. Las configuraciones de un solo búfer tienen un búfer de front-end y front-Right si es estéreo, y solo un búfer de Front-Left si es no estéreo. Es un error especificar un búfer inexistente para **glReadBuffer**.
+Las configuraciones que no son de almacenamiento en búfer doble tienen solo un búfer front-left y un búfer de back-left. Las configuraciones de un solo búfer tienen un búfer front-left y un búfer de front-right si son estéreo, y solo un búfer de front-left si no son destereo. Es un error especificar un búfer inexistente en **glReadBuffer.**
 
-De forma predeterminada, el *modo* está \_ en la parte frontal de la contabilidad en configuraciones de búfer único y \_ en las configuraciones de búfer doble.
+De forma predeterminada, *el modo* es GL FRONT en configuraciones de un solo búfer y GL BACK \_ en \_ configuraciones de doble búfer.
 
-La siguiente función recupera información relacionada con **glReadBuffer**:
+La función siguiente recupera información relacionada con **glReadBuffer**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento \_ búfer de lectura de GL \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ READ \_ BUFFER
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ La siguiente función recupera información relacionada con **glReadBuffer**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

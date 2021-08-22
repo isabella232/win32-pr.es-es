@@ -1,7 +1,7 @@
 ---
-description: Recupera las capacidades de las impresoras con el formato compatible con el esquema de impresión XML.
+description: Recupera las funcionalidades de impresoras con formato conforme al esquema de impresión XML.
 ms.assetid: 15219c19-b64c-4c51-9357-15a797557693
-title: GetPrintCapabilitiesThunk2 función)
+title: Función GetPrintCapabilitiesThunk2
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - prntvpt.dll
-ms.openlocfilehash: eb60f1cdabad6287e236fc099fc304e9e7de83ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 55127d15eae41380fd5376ca54589488e255a740a7881042f54bc203873701f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971394"
 ---
-# <a name="getprintcapabilitiesthunk2-function"></a>GetPrintCapabilitiesThunk2 función)
+# <a name="getprintcapabilitiesthunk2-function"></a>Función GetPrintCapabilitiesThunk2
 
-\[Esta función no se admite y podría deshabilitarse o eliminarse en versiones futuras de Windows. [**PTGetPrintCapabilities**](/windows/desktop/api/prntvpt/nf-prntvpt-ptgetprintcapabilities) proporciona una funcionalidad equivalente y se debe usar en su lugar.\]
+\[Esta función no se admite y podría deshabilitarse o eliminarse en versiones futuras de Windows. [**PTGetPrintCapabilities proporciona**](/windows/desktop/api/prntvpt/nf-prntvpt-ptgetprintcapabilities) una funcionalidad equivalente y se debe usar en su lugar.\]
 
-Recupera las capacidades de la impresora con el formato de compatibilidad con el [esquema de impresión](./printschema.md)Xml.
+Recupera las funciones de la impresora con formato conforme al esquema [de impresión](./printschema.md)XML .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,51 +46,51 @@ HRESULT GetPrintCapabilitiesThunk2(
 
 <dl> <dt>
 
-*hProvider* \[ de\]
+*hProvider* \[ En\]
 </dt> <dd>
 
-Identificador de un proveedor de entradas de impresión abierto. La función [**BindPTProviderThunk**](bindptproviderthunk.md) devuelve este identificador.
+Identificador de un proveedor de vales de impresión abierto. La función [**BindPTProviderThunk**](bindptproviderthunk.md) devuelve este identificador.
 
 </dd> <dt>
 
-*pPrintTicket* \[ de\]
+*pPrintTicket* \[ En\]
 </dt> <dd>
 
-El búfer que contiene los datos de los vales de impresión, expresados en XML, tal como se describe en el [esquema de impresión](./printschema.md).
+Búfer que contiene los datos del vale de impresión, expresados en XML como se describe en [el esquema de impresión](./printschema.md).
 
 </dd> <dt>
 
-*cbPrintTicket* \[ de\]
+*cbPrintTicket* \[ En\]
 </dt> <dd>
 
-Tamaño, en bytes, del búfer al que hace referencia *pPrintTicket*.
+Tamaño, en bytes, del búfer al que hace referencia *pPrintTicket.*
 
 </dd> <dt>
 
-*ppbPrintCapabilities* \[ enuncia\]
+*ppbPrintCapabilities* \[ out\]
 </dt> <dd>
 
-La dirección del búfer asignado por esta función y contiene la información de funcionalidad de impresión válida, codificada como XML. Esta función llama a [**CoTaskMemAlloc**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) para asignar este búfer. Cuando el búfer ya no se necesita, el llamador debe liberarlo llamando a [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).
+Dirección del búfer asignado por esta función y que contiene la información de las funcionalidades de impresión válidas, codificadas como XML. Esta función llama [**a CoTaskMemAlloc para**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) asignar este búfer. Cuando el búfer ya no es necesario, el autor de la llamada debe liberarlo llamando a [**CoTaskMemFree.**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree)
 
 </dd> <dt>
 
-*pcbPrintCapabilitiesLength* \[ enuncia\]
+*printPrintCapabilitiesLength* \[ out\]
 </dt> <dd>
 
-Tamaño, en bytes, del búfer al que hace referencia *ppbPrintCapabilities*.
+Tamaño, en bytes, del búfer al que hace referencia *ppbPrintCapabilities.*
 
 </dd> <dt>
 
 *pbstrErrorMessage* \[ out, opcional\]
 </dt> <dd>
 
-Un puntero a una cadena que especifica qué, si no hay nada, no es válido para *pPrintTicket*. Si es válido, este valor es **null**. Si *pbstrErrorMessage* no es **null** cuando la función devuelve, el llamador debe liberar la cadena con [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring).
+Puntero a una cadena que especifica qué, si hay algo, no es válido sobre *pPrintTicket.* Si es válido, este valor es **NULL.** Si *pbstrErrorMessage* no es **NULL cuando** la función vuelve, el autor de la llamada debe liberar la cadena con [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve **S \_ OK**; de lo contrario, devuelve un código de error **HRESULT** . Para obtener más información sobre los códigos de error COM, vea [control de errores](../com/error-handling-in-com.md).
+Si el método se realiza correctamente, devuelve **S \_ OK;** de lo contrario, devuelve un código de error **HRESULT.** Para obtener más información sobre los códigos de error COM, vea [Control de errores.](../com/error-handling-in-com.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,8 +98,8 @@ Si el método se ejecuta correctamente, devuelve **S \_ OK**; de lo contrario, d
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Archivo DLL<br/>                      | <dl> <dt>Prntvpt.dll</dt> </dl> |
 
 
@@ -111,7 +111,7 @@ Si el método se ejecuta correctamente, devuelve **S \_ OK**; de lo contrario, d
 [**PTGetPrintCapabilities**](/windows/desktop/api/prntvpt/nf-prntvpt-ptgetprintcapabilities)
 </dt> <dt>
 
-[Imprimir esquema](./printschema.md)
+[Esquema de impresión](./printschema.md)
 </dt> <dt>
 
 [Impresión](printdocs-printing.md)

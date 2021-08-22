@@ -1,7 +1,7 @@
 ---
-description: Especifica el contexto de connenction de un dispositivo de banda ancha móvil.
+description: Especifica el contexto de conexiones de un dispositivo de banda ancha móvil.
 ms.assetid: 513e744d-bd62-43e9-a636-6690867d8b9b
-title: Tipo complejo de contextType
+title: contextType Complex Type
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -11,16 +11,16 @@ api_name:
 - contextType
 api_type:
 - Schema
-ms.openlocfilehash: 63d221c6bd388196abfb73a8ac38a26de516d0df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58189cf27f667b3d7e5e6c387a52143b8c757724106e8d9941d31d2582002b0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118744452"
 ---
-# <a name="contexttype-complex-type"></a>Tipo complejo de contextType
+# <a name="contexttype-complex-type"></a>contextType Complex Type
 
-El tipo complejo **contextType** especifica el contexto connenction de un dispositivo de banda ancha móvil.
+El **tipo complejo contextType** especifica el contexto de conexiones de un dispositivo de banda ancha móvil.
 
 ``` syntax
 <xs:complexType name="contextType">
@@ -108,13 +108,13 @@ El tipo complejo **contextType** especifica el contexto connenction de un dispos
 
 | Elemento                                                               | Tipo                                           | Descripción                                                                                    |
 |-----------------------------------------------------------------------|------------------------------------------------|------------------------------------------------------------------------------------------------|
-| [**AccessString**](schema-accessstring-contexttype-element.md)       |                                                | APN o cadena de marcado que se va a usar para establecer una conexión de datos<br/>                        |
-| [**AuthProtocol**](schema-authprotocol-contexttype-element.md)       |                                                | Protocolo de autenticación que se va a usar para activar un contexto PDP.<br/>                    |
-| [**Compresión**](schema-compression-contexttype-element.md)         |                                                | Especifica si se usará la compresión en el vínculo de datos para el encabezado y la transferencia de datos<br/> |
-| [**IgnorePassword**](schema-ignorepassword-userlogoncred-element.md) | boolean                                        | Cómo administrar las contraseñas al actualizar perfiles.<br/>                                    |
+| [**AccessString**](schema-accessstring-contexttype-element.md)       |                                                | APN o cadena de marcado que se usará para establecer una conexión de datos<br/>                        |
+| [**AuthProtocol**](schema-authprotocol-contexttype-element.md)       |                                                | Protocolo de autenticación que se usará para activar un contexto de PDP.<br/>                    |
+| [**Compresión**](schema-compression-contexttype-element.md)         |                                                | Especifica si se usará la compresión en el vínculo de datos para la transferencia de encabezados y datos.<br/> |
+| [**IgnorePassword**](schema-ignorepassword-userlogoncred-element.md) | boolean                                        | Cómo controlar contraseñas al actualizar perfiles.<br/>                                    |
 | [**Contraseña**](schema-password-userlogoncred-element.md)             | string                                         | Contraseña usada para autenticar a un usuario<br/>                                                |
 | [**UserLogonCred**](schema-userlogoncred-contexttype-element.md)     |                                                | Credenciales de inicio de sesión para una conexión.<br/>                                                |
-| [**Nombre**](schema-username-userlogoncred-element.md)             | [**nameType**](schema-nametype-simpletype.md) | Nombre de usuario para el inicio de sesión<br/>                                                                 |
+| [**nombre de usuario**](schema-username-userlogoncred-element.md)             | [**nameType**](schema-nametype-simpletype.md) | Nombre de usuario para el inicio de sesión<br/>                                                                 |
 
 
 
@@ -122,9 +122,9 @@ El tipo complejo **contextType** especifica el contexto connenction de un dispos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |
 
 

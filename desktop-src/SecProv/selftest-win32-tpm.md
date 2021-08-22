@@ -1,7 +1,7 @@
 ---
-description: Realiza una prueba automática del TPM y devuelve el resultado.
+description: Realiza una autoprobación del TPM y devuelve el resultado.
 ms.assetid: 0f8fdb68-80b1-4fc4-beb9-e87f51b85031
-title: Método SelfTest de la clase Win32_Tpm
+title: Método SelfTest de la Win32_Tpm clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: 8681ee8ca49b8b2f7de550ffc5baa0ff8c0c9470
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42e0cf4e458be4ff95c05086d603f64d17fb7ff3c3da5a6781529d4632627f75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118891380"
 ---
-# <a name="selftest-method-of-the-win32_tpm-class"></a>Método SelfTest de la \_ clase Win32 TPM
+# <a name="selftest-method-of-the-win32_tpm-class"></a>Método SelfTest de la clase Tpm de \_ Win32
 
-El método **SelfTest** de la clase [**Win32 \_ TPM**](win32-tpm.md) realiza una prueba automática del TPM y devuelve el resultado.
+El **método SelfTest** de la [**clase \_ Tpm de Win32**](win32-tpm.md) realiza una autoprueba del TPM y devuelve el resultado.
 
 Una prueba automática de TPM se ejecuta automáticamente cuando se inicia el equipo.
 
@@ -41,18 +41,18 @@ uint32 SelfTest(
 
 <dl> <dt>
 
-*SelfTestResult* \[ enuncia\]
+*SelfTestResult* \[ out\]
 </dt> <dd>
 
-Tipo: **Uint8 \[ \]**
+Tipo: **uint8 \[ \]**
 
-Matriz de bytes que contiene el resultado de la prueba automática. El formato de este parámetro es específico del fabricante.
+Matriz de bytes que contiene el resultado de la prueba. El formato de este parámetro es específico del fabricante.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Se pueden devolver todos los errores de TPM, así como los errores específicos de los servicios base de TPM.
 
@@ -62,35 +62,35 @@ En la tabla siguiente se enumeran algunos de los códigos de retorno comunes.
 
 | Código o valor devuelto                                                                                                                                 | Descripción                             |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> <dt>0 (0X0)</dt> </dl> | El método se ejecutó correctamente.<br/> |
+| <dl> <dt>**S \_ Ok**</dt> <dt>0 (0x0)</dt> </dl> | El método se ejecutó correctamente.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte de la Windows SDK. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](../wmisdk/managed-object-format--mof-.md).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                      |
-| Espacio de nombres<br/>                | \\MicrosoftTpm de \\ seguridad de cimv2 raíz \\<br/>                                            |
-| MOF<br/>                      | <dl> <dt>Win32 \_ TPM. mof</dt> </dl> |
-| Archivo DLL<br/>                      | <dl> <dt>\_tpm.dllWin32</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                      |
+| Espacio de nombres<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftTpm<br/>                                            |
+| MOF<br/>                      | <dl> <dt>Win32 \_ tpm.mof</dt> </dl> |
+| Archivo DLL<br/>                      | <dl> <dt>Win32 \_tpm.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**TPM de Win32 \_**](win32-tpm.md)
+[**Tpm de \_ Win32**](win32-tpm.md)
 </dt> </dl>
 
  

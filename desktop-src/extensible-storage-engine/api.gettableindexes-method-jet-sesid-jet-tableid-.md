@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: método API. GetTableIndexes (JET_SESID, JET_TABLEID)'
-title: Método API. GetTableIndexes (JET_SESID, JET_TABLEID)
+description: 'Más información sobre: Método Api.GetTableIndexes (JET_SESID, JET_TABLEID)'
+title: Método Api.GetTableIndexes (JET_SESID, JET_TABLEID)
 TOCTitle: GetTableIndexes method (JET_SESID, JET_TABLEID)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.GetTableIndexes(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.gettableindexes(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8708f285445b13ecb1c9d2cb306ec14c7976905b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7110ad8adaa9f6656a415410ea4e273984e5a0eecace21f0c8856316cbb2a14c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983815"
 ---
-# <a name="apigettableindexes-method-jet_sesid-jet_tableid"></a>Método API. GetTableIndexes (JET_SESID, JET_TABLEID)
+# <a name="apigettableindexes-method-jet_sesid-jet_tableid"></a>Método Api.GetTableIndexes (JET_SESID, JET_TABLEID)
 
 Recorre en iteración todos los índices de la tabla y devuelve información sobre cada uno de ellos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,21 +61,21 @@ public static IEnumerable<IndexInfo> GetTableIndexes(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Tabla para la que se va a recuperar información de índice.
+    Tabla para la que se recupera la información de índice.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Collections. Generic. IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1)\<[IndexInfo](./indexinfo-class.md)\>  
-Un iterador sobre un IndexInfo para cada índice de la tabla.  
+Tipo: [System.Collections.Generic.IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1)\<[IndexInfo](./indexinfo-class.md)\>  
+Iterador sobre un IndexInfo para cada índice de la tabla.  
 
 ## <a name="see-also"></a>Vea también
 
@@ -83,8 +83,8 @@ Un iterador sobre un IndexInfo para cada índice de la tabla.
 
 [Clase de API](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Sobrecarga GetTableIndexes](./api.gettableindexes-method.md)
+[Sobrecarga de GetTableIndexes](./api.gettableindexes-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

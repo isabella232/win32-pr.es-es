@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectType GetMemberTypeByIndex (D3dx11effect. h)
+title: Método ID3DX11EffectType GetMemberTypeByIndex (D3dx11effect.h)
 description: Obtiene un tipo de miembro por índice.
 ms.assetid: 6421f08f-0236-4d8f-b3c2-ef7ec5ffe2a1
 keywords:
 - Método GetMemberTypeByIndex Direct3D 11
-- Método GetMemberTypeByIndex Direct3D 11, interfaz ID3DX11EffectType
-- Interfaz ID3DX11EffectType Direct3D 11, método GetMemberTypeByIndex
+- Método GetMemberTypeByIndex Direct3D 11 , interfaz ID3DX11EffectType
+- Interfaz ID3DX11EffectType Direct3D 11 , método GetMemberTypeByIndex
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da5023e064539f57af9998c788385f2a1316433f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 53500ec94791ff534bf6b3c9a2e7d46a51b7b69bc889f35515e9b653c5bbb422
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104547982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118532327"
 ---
-# <a name="id3dx11effecttypegetmembertypebyindex-method"></a>ID3DX11EffectType:: GetMemberTypeByIndex (método)
+# <a name="id3dx11effecttypegetmembertypebyindex-method"></a>Método ID3DX11EffectType::GetMemberTypeByIndex
 
 Obtiene un tipo de miembro por índice.
 
@@ -46,7 +46,7 @@ ID3DX11EffectType* GetMemberTypeByIndex(
 *Index* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Un índice basado en cero.
 
@@ -56,12 +56,12 @@ Un índice basado en cero.
 
 Tipo: **[ **ID3DX11EffectType**](id3dx11effecttype.md)\***
 
-Un puntero a un [**ID3DX11EffectType**](id3dx11effecttype.md).
+Puntero a [**id3DX11EffectType.**](id3dx11effecttype.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Un puntero a un [**ID3DX11EffectType**](id3dx11effecttype.md).
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

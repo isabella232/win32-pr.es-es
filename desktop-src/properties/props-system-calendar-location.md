@@ -1,17 +1,17 @@
 ---
 description: Indica la ubicación del evento.
 ms.assetid: 014d4c90-f029-479a-bdc9-c1ef5c9e3529
-title: System. Calendar. Location
+title: System.Calendar.Location
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d4695bbedf0cce3a9781c1dea8c088d60ede483
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6171691452d0d2196bbc3f789ad0af017cbc9fe245bc2bf6f72f66013cfb618d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118731025"
 ---
-# <a name="systemcalendarlocation"></a>System. Calendar. Location
+# <a name="systemcalendarlocation"></a>System.Calendar.Location
 
 Indica la ubicación del evento.
 
@@ -30,9 +30,9 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

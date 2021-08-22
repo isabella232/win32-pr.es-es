@@ -1,7 +1,7 @@
 ---
-description: 'Longitud de los datos válidos en el búfer, en bytes. El valor debe ser igual o menor que el tamaño del búfer, especificado por la variable miembro CMediaSample:: m \_ cbBuffer.'
+description: Longitud de los datos válidos en el búfer, en bytes. El valor debe ser igual o menor que el tamaño del búfer, especificado por la variable miembro cbBuffer CMediaSample::m. \_
 ms.assetid: 75610043-fe0b-4cd0-9fd6-292f25040d72
-title: 'Miembro CMediaSample:: m_lActual (Amfilter. h)'
+title: Miembro CMediaSample::m_lActual (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 69d7abd5eb64db0ab5801de9b7e27b84a991ae06
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 02758c5486debee870a7e6509df1de23a15cfc3064a9131f84d186638954a4ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016383"
 ---
-# <a name="cmediasamplem_lactual-member"></a>Miembro lActual CMediaSample:: m \_
+# <a name="cmediasamplem_lactual-member"></a>Miembro CMediaSample::m \_ lActual
 
-Longitud de los datos válidos en el búfer, en bytes. El valor debe ser igual o menor que el tamaño del búfer, especificado por la variable miembro [**CMediaSample:: m \_ cbBuffer**](cmediasample-m-cbbuffer.md) .
+Longitud de los datos válidos en el búfer, en bytes. El valor debe ser igual o menor que el tamaño del búfer, especificado por la variable miembro [**\_ cbBuffer CMediaSample::m.**](cmediasample-m-cbbuffer.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ LONG m_lActual;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ LONG m_lActual;
 
 <dl> <dt>
 
-[**Clase CMediaSample**](cmediasample.md)
+[**CMediaSample (clase)**](cmediasample.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_KILLFOCUS (Winuser. h)
-description: Se envía a una ventana inmediatamente antes de que pierda el foco de teclado.
+title: WM_KILLFOCUS mensaje (Winuser.h)
+description: Se envía a una ventana inmediatamente antes de perder el foco del teclado.
 ms.assetid: 6d32a09b-a856-4f94-9544-3345b3a700f4
 keywords:
-- Entrada de mouse y teclado de mensaje de WM_KILLFOCUS
+- WM_KILLFOCUS entrada de teclado y mouse
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0e3bba54f2cdb500ba2ba691ffd30419d5beff1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 644ea7d82a2ae3f316985a882c284d77f3869a75341142d4372b612d66ada1ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118757459"
 ---
-# <a name="wm_killfocus-message"></a>Mensaje de KILLFOCUS de WM \_
+# <a name="wm_killfocus-message"></a>Mensaje \_ KILLFOCUS de WM
 
-Se envía a una ventana inmediatamente antes de que pierda el foco de teclado.
+Se envía a una ventana inmediatamente antes de perder el foco del teclado.
 
 
 ```C++
@@ -39,7 +39,7 @@ Se envía a una ventana inmediatamente antes de que pierda el foco de teclado.
 *wParam* 
 </dt> <dd>
 
-Identificador de la ventana que recibe el foco de teclado. Este parámetro puede ser **NULL**.
+Identificador de la ventana que recibe el foco del teclado. Este parámetro puede ser **NULL**.
 
 </dd> <dt>
 
@@ -54,38 +54,38 @@ Este parámetro no se utiliza.
 
 Una aplicación debe devolver cero si procesa este mensaje.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si una aplicación muestra un símbolo de intercalación, el símbolo de intercalación debería destruirse en este momento.
+Si una aplicación muestra un aviso de inserción, el aviso debe destruirse en este momento.
 
-Al procesar este mensaje, no realice ninguna llamada de función que muestre o Active una ventana. Esto hace que el subproceso produzca el control y puede hacer que la aplicación deje de responder a los mensajes. Para obtener más información, vea [interbloqueos de mensajes](/windows/desktop/winmsg/about-messages-and-message-queues).
+Al procesar este mensaje, no realice ninguna llamada de función que muestre o active una ventana. Esto hace que el subproceso ceda el control y puede hacer que la aplicación deje de responder a los mensajes. Para obtener más información, vea [Interbloqueos de mensajes.](/windows/desktop/winmsg/about-messages-and-message-queues)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Referencia**
 </dt> <dt>
 
-[**SetFocus**](/windows/win32/api/winuser/nf-winuser-setfocus)
+[**Setfocus**](/windows/win32/api/winuser/nf-winuser-setfocus)
 </dt> <dt>
 
-[**SETFOCUS de WM \_**](wm-setfocus.md)
+[**WM \_ SETFOCUS**](wm-setfocus.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Entrada de teclado](keyboard-input.md)

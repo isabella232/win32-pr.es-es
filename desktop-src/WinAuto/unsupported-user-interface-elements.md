@@ -19,7 +19,7 @@ Microsoft Active Accessibility no admite los controles comunes enumerados en la 
 
 | Nombre del control                  | Nombre de clase de ventana   |
 |-------------------------------|---------------------|
-| Controles selectores de fecha y hora | DATETIMEPICK \_ (CLASE) |
+| Controles de selector de fecha y hora | DATETIMEPICK \_ (CLASE) |
 | Controles de paginación                | WC \_ PAGESCROLLER    |
 | Controles Rebar                | REBARCLASSNAME      |
 
@@ -35,7 +35,7 @@ Microsoft Active Accessibility no admite los controles predefinidos y los elemen
 |-------------------|-------------------------------------------------------------|
 | DDEMLEvent        | Windows NT: la clase para eventos DDEML                      |
 | Message           | Windows 2000 y versiones posteriores: la clase para una ventana de solo mensaje |
-| \#32772           | Windows NT: la clase para los títulos de icono                       |
+| \#32772           | Windows NT: la clase para los títulos de los iconos                       |
 
 
 

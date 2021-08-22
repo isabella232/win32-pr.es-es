@@ -43,15 +43,15 @@ HRESULT IsMultiTouch(
 *bIsMultiTouch* \[ out\]
 </dt> <dd>
 
-Indica si el dispositivo es multitáctil.
+Indica si el dispositivo es multitouch.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **S OK si \_ se** ejecuta correctamente; de lo contrario, devuelve un código de error como **E \_ FAIL**.
+Devuelve **S OK si \_ se** ejecuta correctamente; de lo contrario, devuelve un código de error como **E \_ FAIL.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Después de determinar a través de [**IRealTimeStylus3::MultiTouchEnabled**](/windows/desktop/api/rtscom/nf-rtscom-irealtimestylus3-get_multitouchenabled) o **ITablet3::IsMultiTouch** que multitouch está disponible, una aplicación puede optar por participar en los mensajes de entrada multitouch. Encontrará información adicional sobre el filtrado de métodos multitouch en la sección de la propiedad **IRealTimeStylus3::MultiTouchEnabled.**
 
@@ -70,7 +70,7 @@ spITablet3->get_IsMultiTouch(&b);
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
@@ -78,7 +78,7 @@ spITablet3->get_IsMultiTouch(&b);
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

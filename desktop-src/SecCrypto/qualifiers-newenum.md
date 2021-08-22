@@ -24,9 +24,9 @@ ms.locfileid: "118900981"
 
 \[La **\_ propiedad NewEnum** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En su lugar, use la clase [**X509Extension**](/dotnet/api/system.security.cryptography.x509certificates.x509extension?view=netcore-3.1) en el espacio de nombres [**System.Security.Cryptography.X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) llamando al constructor que toma un OID como parámetro y, a continuación, use el OID para las directivas de certificado para procesar calificadores que forman parte de la información de directiva en la extensión Directivas de certificado.\]
 
-La **\_ propiedad NewEnum** recupera una [**interfaz IEnumVARIANT en**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) un objeto que se puede usar para enumerar la colección. Esta propiedad está oculta en Visual Basic Scripting Edition (VBScript).
+La **\_ propiedad NewEnum** recupera una [**interfaz IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) en un objeto que se puede usar para enumerar la colección. Esta propiedad está oculta en Visual Basic Scripting Edition (VBScript).
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -39,7 +39,7 @@ Qualifiers._NewEnum As IUnknown
 
 Interfaz [**IEnumVARIANT en**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) un objeto que se puede usar para enumerar la colección.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Esta propiedad se usa automáticamente internamente cuando se usa la construcción `For Each In` en Visual Basic Scripting Edition (VBScript).
 
@@ -47,7 +47,7 @@ Esta propiedad se usa automáticamente internamente cuando se usa la construcci�
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |

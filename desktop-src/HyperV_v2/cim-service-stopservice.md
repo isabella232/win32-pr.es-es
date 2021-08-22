@@ -45,13 +45,13 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
+Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -61,7 +61,7 @@ Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un er
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

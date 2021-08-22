@@ -1,23 +1,23 @@
 ---
-title: Ejemplo de código de formato de Windows píxeles
-description: En el ejemplo de código siguiente se muestra una función que establece el formato de píxel mediante las funciones de Windows
+title: Windows Ejemplo de código de formato de píxel
+description: En el ejemplo de código siguiente se muestra una función que establece el formato de píxel mediante Windows funciones.
 ms.assetid: fa863999-72f1-4280-b278-d9336f62108d
 keywords:
-- píxeles OpenGL, ejemplo de Windows
-- trasladar a OpenGL, píxeles
-- Portabilidad de OpenGL, píxeles
+- píxeles OpenGL , Windows ejemplo
+- porting to OpenGL,pixels
+- Porte de OpenGL, píxeles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4328976a3622d19c3482aa2845c2094975dd7f74
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7fdd9569b6bef7dd273f6c3ff0370e2e4e44bbbbb6ec41362d1fb7dd32bd7745
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118932785"
 ---
-# <a name="windows-pixel-format-code-sample"></a>Ejemplo de código de formato de Windows píxeles
+# <a name="windows-pixel-format-code-sample"></a>Windows Ejemplo de código de formato de píxel
 
-En el ejemplo de código siguiente se muestra una función que establece el formato de píxel mediante las funciones de Windows:
+En el ejemplo de código siguiente se muestra una función que establece el formato de píxel mediante Windows funciones:
 
 
 ```C++
@@ -59,9 +59,9 @@ BOOL bSetupPixelFormat(HDC hdc)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

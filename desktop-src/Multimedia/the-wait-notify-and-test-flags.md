@@ -1,6 +1,6 @@
 ---
-title: Marcas wait, Notify y test
-description: Marcas wait, Notify y test
+title: Las marcas Wait, Notify y Test
+description: Las marcas Wait, Notify y Test
 ms.assetid: c4d99c15-1046-422f-8f44-396deacf38cf
 keywords:
 - MCI_WAIT marca
@@ -8,24 +8,24 @@ keywords:
 - MCI_TEST marca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af50e0b19d24d3012d6cb6025ea1ad8ee4b7e822
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5ecb3c8cf1125f199f2c12ffa2749a33f0366b6671f53bf4077585e9ff1a9c73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103772871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118941182"
 ---
-# <a name="the-wait-notify-and-test-flags"></a>Marcas wait, Notify y test
+# <a name="the-wait-notify-and-test-flags"></a>Las marcas Wait, Notify y Test
 
-La mayoría de los comandos MCI incluyen marcas que modifican el comando. Las marcas "Wait" ( \_ espera de MCI) y "Notify" (notificación de MCI \_ ) son comunes a todos los comandos. La marca "probar" ( \_ prueba de MCI) está disponible para dispositivos digitales y vídeo. En los temas siguientes se describe el uso de estas marcas.
+La mayoría de los comandos MCI incluyen marcas que modifican el comando. Las marcas "wait" (MCI WAIT) y \_ "notify" (MCI NOTIFY) son comunes \_ a cada comando. La marca "test" (MCI \_ TEST) está disponible para dispositivos de vídeo digital y VCR. En los temas siguientes se describe el uso de estas marcas.
 
 -   [Marca de espera](the-wait-flag.md)
--   [Marca de notificación](the-notify-flag.md)
+-   [La marca Notificar](the-notify-flag.md)
 -   [Marca de prueba](the-test-flag.md)
 
- 
+ 
 
- 
+ 
 
 
 

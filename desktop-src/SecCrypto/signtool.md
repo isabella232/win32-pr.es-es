@@ -4,12 +4,12 @@ description: SignTool es una herramienta de línea de comandos que firma digital
 ms.assetid: aa59cb35-5fba-4ce8-97ea-fc767c83f88e
 ms.topic: article
 ms.date: 10/12/2020
-ms.openlocfilehash: f738eddb6e47da12297bffd13a816398ba2c46c9
-ms.sourcegitcommit: 5a78723ad484955ac91a23cf282cf9c176c1eab6
+ms.openlocfilehash: f7105e81b958e463612a5065003ed04c24b913f87f52d8d72bb7a708917ebbed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/22/2021
-ms.locfileid: "114436450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118897960"
 ---
 # <a name="signtool"></a>SignTool
 
@@ -18,7 +18,7 @@ SignTool es una herramienta de línea de comandos que firma digitalmente archivo
 SignTool está disponible como parte del SDK Windows, que puede descargar desde <https://developer.microsoft.com/windows/downloads/windows-10-sdk/> .
 
 > [!Note]  
-> El SDK de Windows 10, Windows 10 HLK, Windows 10 WDK y Windows 10 ADK compila **20236** y posteriores requerirán ahora especificar el algoritmo de síntesis. El comando sign SignTool requiere que se especifiquen las opciones /fd y /td durante la firma y la marca de `file digest algorithm` `timestamp digest algorithm` tiempo, respectivamente. Se producirá una advertencia (código de error 0, inicialmente) si no se especifica /fd durante la firma y si no se especifica /td durante la marca de tiempo. En versiones posteriores de SignTool, la advertencia se convertirá en un error. Se recomienda SHA256, el que el sector considera más seguro que SHA1.  
+> El SDK de Windows 10, Windows 10 HLK, Windows 10 WDK y Windows 10 ADK compila **20236** y posteriores requerirán ahora especificar el algoritmo de síntesis. El comando SignTool sign requiere que se especifiquen las opciones /fd y /td durante la firma y la marca de `file digest algorithm` `timestamp digest algorithm` tiempo, respectivamente. Se producirá una advertencia (código de error 0, inicialmente) si no se especifica /fd durante la firma y si no se especifica /td durante la marca de tiempo. En versiones posteriores de SignTool, la advertencia se convertirá en un error. Se recomienda SHA256, el que el sector considera más seguro que SHA1.  
 
 
 ## <a name="syntax"></a>Sintaxis  
@@ -38,7 +38,7 @@ signtool [command] [options] [file_name | ...]
 
 SignTool admite los siguientes comandos.
 
-|Comando|Descripción|  
+|Get-Help|Descripción|  
 |----|----|  
 |`Catdb`|Agrega un archivo de catálogo a una base de datos de catálogo o bien lo quita de esta. Las bases de datos de catálogo se utilizan para la búsqueda automática de archivos de catálogo y se identifican mediante un GUID. Para obtener una lista de las opciones admitidas por el comando `catdb`, vea [Opciones del comando catdb](/dotnet/framework/tools/signtool-exe#catdb-command-options).|  
 |`Sign`|Firma archivos digitalmente. Las signaturas digitales protegen los archivos contra la manipulación y permiten a los usuarios comprobar el firmante en función de un certificado de firma. Para obtener una lista de las opciones admitidas por el comando `sign`, vea [Opciones del comando sign](/dotnet/framework/tools/signtool-exe#sign-command-options).|  
@@ -84,12 +84,12 @@ SignTool admite los siguientes comandos.
 |`/dg`  *Ruta de acceso*|Genera el resumen que se va a firmar y los archivos PKCS7 sin firmar. El resumen de salida y los archivos PKCS7 serán: *Path\FileName.dig* y *Path\FileName.p7u*. Para generar un archivo XML adicional, vea <strong>/dxml</strong>.|  
 |`/di`  *Ruta de acceso*|Crea la firma ingiendo el resumen con signo en el archivo PKCS7 sin firmar. Los archivos PKCS7 y de resumen con signo de entrada deben ser: *Path\FileName.dig.signed* y *Path\FileName.p7u*.|  
 |`/dlib`  *Dll*|Especifica el archivo DLL que implementa la <code>AuthenticodeDigestSign</code> función con la que se firmará el resumen. Esta opción equivale a usar <strong>SignTool</strong> por separado con los modificadores <strong>/dg</strong>, <strong>/ds</strong>y <strong>/di,</strong> salvo que esta opción invoca los tres como una operación atómica.|  
-|`/dmdf`  *Filename*|Cuando se usa con <strong>la opción /dg,</strong> pasa el contenido del archivo a la <code>AuthenticodeDigestSign</code> función sin modificaciones.|  
+|`/dmdf`  *Nombre*|Cuando se usa con <strong>la opción /dg,</strong> pasa el contenido del archivo a la <code>AuthenticodeDigestSign</code> función sin modificaciones.|  
 |`/ds`  |Firma solo la síntesis. El archivo de entrada debe ser el resumen generado por la <strong>opción /dg.</strong> El archivo de salida será: *File.signed.*|  
 |`/du`  *URL*|Especifica el localizador uniforme de recursos (URL) de la descripción ampliada del contenido firmado.|  
 |`/dxml`  |Cuando se usa con <strong>la opción /dg,</strong> genera un archivo XML. El archivo de salida será: *Path\FileName.dig.xml*.|  
 |`/f`  *SignCertFile*|Especifica el certificado de firma en un archivo. Si el archivo está en formato de intercambio de información personal (PFX) y protegido por una contraseña, utilice la opción `/p` para especificar la contraseña. Si el archivo no contiene claves privadas, utilice las opciones `/csp` y `/kc` para especificar el CSP y el nombre de contenedor de claves privadas, respectivamente.|  
-|`/fd`*alg*|Especifica el algoritmo de resumen de archivo que se va a usar para crear signaturas de archivo. </br> **Nota:** Se genera una advertencia si <strong>no se proporciona el modificador /fd</strong> durante la firma. El alg predeterminado es SHA1, pero se recomienda SHA256.|
+|`/fd`*alg*|Especifica el algoritmo de resumen de archivo que se va a usar para crear signaturas de archivo. </br> **Nota:** Se genera una advertencia si no se <strong>proporciona el modificador /fd</strong> durante la firma. El valor predeterminado de alg es SHA1, pero se recomienda SHA256.|
 |`/fd`  *certHash*|Si se especifica la cadena certHash, se establecerá de manera predeterminada en el algoritmo que se usa en el certificado de firma. </br> **Nota:** Solo está disponible en Windows 10 kit de compilaciones 20236 y adicionales.|  
 |`/i`  *IssuerName*|Especifica el nombre del emisor del certificado de firma. Este valor puede corresponder a una subcadena del nombre del emisor completo.|  
 |`/kc`  *PrivKeyContainerName*|Especifica el nombre del contenedor de claves privadas.|  
@@ -105,7 +105,7 @@ SignTool admite los siguientes comandos.
 |`/sha1`  *Hash*|Especifica el hash SHA1 del certificado de firma. El hash SHA1 se especifica normalmente cuando varios certificados cumplen los criterios especificados por los modificadores restantes.|  
 |`/sm`|Especifica que se utiliza un almacén de equipo, en lugar de un almacén de usuario.|  
 |`/t`  *URL*|Especifica la dirección URL del servidor con marca de tiempo. Si esta opción (o `/tr`) no está presente, el archivo firmado no tendrá marca de tiempo. Se genera una advertencia si se produce algún error relacionado con la marca de tiempo. Esta opción no se puede combinar con la opción `/tr`.|  
-|`/td`  *alg*|Se utiliza con la opción `/tr` para solicitar un algoritmo de resumen utilizado por el servidor de marca de tiempo RFC 3161. </br> **Nota:** Se genera una advertencia si no se <strong>proporciona el modificador /td</strong> durante la marca de tiempo. El alg predeterminado es SHA1, pero se recomienda SHA256. <br/> El <strong>modificador /td</strong> debe declararse después del modificador <strong>/tr,</strong> no antes. Si el <strong>modificador /td</strong> se declara antes del modificador <strong>/tr,</strong> la marca de tiempo que se devuelve es de un algoritmo SHA1 en lugar del algoritmo SHA256 previsto. |
+|`/td`  *alg*|Se utiliza con la opción `/tr` para solicitar un algoritmo de resumen utilizado por el servidor de marca de tiempo RFC 3161. </br> **Nota:** Se genera una advertencia si no se <strong>proporciona el modificador /td</strong> durante la marca de tiempo. El valor predeterminado de alg es SHA1, pero se recomienda SHA256. <br/> El <strong>modificador /td</strong> debe declararse después del modificador <strong>/tr,</strong> no antes. Si el <strong>modificador /td</strong> se declara antes del modificador <strong>/tr,</strong> la marca de tiempo que se devuelve es de un algoritmo SHA1 en lugar del algoritmo SHA256 previsto. |
 |`/tr`  *URL*|Especifica la dirección URL del servidor con marca de tiempo RFC 3161. Si esta opción (o `/t`) no está presente, el archivo firmado no tendrá marca de tiempo. Se genera una advertencia si se produce algún error relacionado con la marca de tiempo. Esta opción no se puede combinar con la opción `/t`.|  
 |`/u`  *Usage*|Especifica el uso mejorado de clave (EKU) que debe encontrarse en el certificado de firma. El valor de uso se puede especificar mediante un identificador de objetos (OID) o una cadena. El uso predeterminado es "Firma de código" (1.3.6.1.5.5.7.3.3).|  
 |`/uw`|Especifica el uso de "Comprobación de componentes del sistema de Windows" (1.3.6.1.4.1.311.10.3.6).|  
@@ -121,7 +121,7 @@ SignTool admite los siguientes comandos.
 |----|----|  
 |`/p7`|Agrega marcas de tiempo a archivos PKCS #7.|  
 |`/t`  *URL*|Especifica la dirección URL del servidor con marca de tiempo. El archivo al que se va a agregar la marca de tiempo se debe haber firmado previamente. Se requiere la opción `/t` o `/tr`.|  
-|`/td`  *alg*|Se utiliza con la opción `/tr` para solicitar un algoritmo de resumen utilizado por el servidor de marca de tiempo RFC 3161. </br> **Nota:** Se genera una advertencia si no se <strong>proporciona el modificador /td</strong> durante la marca de tiempo. El alg predeterminado es SHA1, pero se recomienda SHA256. <br/> El <strong>modificador /td</strong> debe declararse después del modificador <strong>/tr,</strong> no antes. Si el <strong>modificador /td</strong> se declara antes del modificador <strong>/tr,</strong> la marca de tiempo que se devuelve es de un algoritmo SHA1 en lugar del algoritmo SHA256 previsto. |
+|`/td`  *alg*|Se utiliza con la opción `/tr` para solicitar un algoritmo de resumen utilizado por el servidor de marca de tiempo RFC 3161. </br> **Nota:** Se genera una advertencia si no se <strong>proporciona el modificador /td</strong> durante la marca de tiempo. El valor predeterminado de alg es SHA1, pero se recomienda SHA256. <br/> El <strong>modificador /td</strong> debe declararse después del modificador <strong>/tr,</strong> no antes. Si el <strong>modificador /td</strong> se declara antes del modificador <strong>/tr,</strong> la marca de tiempo que se devuelve es de un algoritmo SHA1 en lugar del algoritmo SHA256 previsto. |
 |`/tp` *index*|Agrega una marca de tiempo a la signatura en *index*.|  
 |`/tr`  *URL*|Especifica la dirección URL del servidor con marca de tiempo RFC 3161. El archivo al que se va a agregar la marca de tiempo se debe haber firmado previamente. Se requiere la opción `/tr` o `/t`.|  
 

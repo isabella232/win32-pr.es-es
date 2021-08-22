@@ -1,7 +1,7 @@
 ---
-description: Inicia el dibujo de cada una de las caras de un mapa de entorno.
+description: Inicie el dibujo de cada cara de un mapa de entorno.
 ms.assetid: c100e138-c5a8-49bb-9a91-e7f70410470f
-title: 'ID3DXRenderToEnvMap:: facial (método) (D3dx9core. h)'
+title: Método ID3DXRenderToEnvMap::Face (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 452933c0d85a7aad2987011796ff47eff41dc32b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 1190e033f9aa83b13f327fcb8a8b530be17132bfd330c9be6b9cc6d87d5e35a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118801224"
 ---
-# <a name="id3dxrendertoenvmapface-method"></a>ID3DXRenderToEnvMap:: facial (método)
+# <a name="id3dxrendertoenvmapface-method"></a>Método ID3DXRenderToEnvMap::Face
 
-Inicia el dibujo de cada una de las caras de un mapa de entorno.
+Inicie el dibujo de cada cara de un mapa de entorno.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT Face(
 
 <dl> <dt>
 
-*Caras* \[ de\]
+*Face* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **D3DCUBEMAP \_ caras**](./d3dcubemap-faces.md)**
+Tipo: **[ **CARAS de \_ D3DCUBEMAP**](./d3dcubemap-faces.md)**
 
-Primera superficie del mapa de cubo del entorno. Vea [**\_ caras de D3DCUBEMAP**](./d3dcubemap-faces.md).
+Primera cara del mapa del cubo ambiental. Vea [**D3DCUBEMAP \_ FACES**](./d3dcubemap-faces.md).
 
 </dd> <dt>
 
-*MipFilter* \[ de\]
+*MipFilter* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinación válida de una o más marcas [de \_ filtro de D3DX](d3dx-filter.md) .
+Combinación válida de una o varias [marcas D3DX \_ FILTER.](d3dx-filter.md)
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Combinación válida de una o más marcas [de \_ filtro de D3DX](d3dx-filter.md)
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se debe llamar a este método una vez para cada tipo de asignación de entorno. La única excepción es un mapa de entorno cúbico que requiere que se llame a este método seis veces, una vez para cada cara de D3DCUBEMAP \_ caras. Para obtener más información, vea [asignación de entorno (Direct3D 9)](environment-mapping.md).
+Se debe llamar a este método una vez para cada tipo de mapa de entorno. La única excepción es un mapa de entorno cúbica que requiere que se llame a este método seis veces, una vez por cada cara de D3DCUBEMAP \_ FACES. Para obtener más información, vea [Asignación de entorno (Direct3D 9).](environment-mapping.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,12 +75,12 @@ Se debe llamar a este método una vez para cada tipo de asignación de entorno. 
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

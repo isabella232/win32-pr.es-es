@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentTooManyKeysException'
-title: Constructor de EsentTooManyKeysException
+description: 'Más información sobre: Constructor EsentTooManyKeysException'
+title: Constructor EsentTooManyKeysException
 TOCTitle: 'EsentTooManyKeysException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentTooManyKeysException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esenttoomanykeysexception.esenttoomanykeysexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 99602a768af587162cf7e41862cfd7ecfe547fee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e5c20cb66c566afd730245c2b91fa4626f7251eca8598aa5977616ed0a02ba4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118768568"
 ---
-# <a name="esenttoomanykeysexception-constructor"></a>Constructor de EsentTooManyKeysException
+# <a name="esenttoomanykeysexception-constructor"></a>Constructor EsentTooManyKeysException
 
 Inicializa una nueva instancia de la clase EsentTooManyKeysException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentTooManyKeysException()
 
 [Miembros de EsentTooManyKeysException](./esenttoomanykeysexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

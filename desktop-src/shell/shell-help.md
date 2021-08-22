@@ -1,7 +1,7 @@
 ---
-description: Muestra el centro de ayuda y soporte técnico de Windows. Este método tiene el mismo efecto que hacer clic en el menú Inicio y seleccionar ayuda y soporte técnico.
+description: Muestra el Windows Centro de ayuda y soporte técnico. Este método tiene el mismo efecto que hacer clic en el menú Inicio y seleccionar Ayuda y soporte técnico.
 ms.assetid: fc13fef8-dac8-4c59-936d-8da0e63e06d4
-title: Método Shell. Help (Shldisp. h)
+title: Método Shell.Help (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: bfb4e9b3272355c41d13526d2e526515ff65d42b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3bd471f4252caaf33edfd5429160b6ff8a2b0bdd901507a7f2074dff95509e10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968564"
 ---
-# <a name="shellhelp-method"></a>Shell. Help (método)
+# <a name="shellhelp-method"></a>Método Shell.Help
 
-Muestra el centro de ayuda y soporte técnico de Windows. Este método tiene el mismo efecto que hacer clic en el menú **Inicio** y seleccionar **ayuda y soporte técnico**.
+Muestra el Windows Centro de ayuda y soporte técnico. Este método tiene el mismo efecto que hacer clic en **el menú** Inicio y seleccionar Ayuda y **soporte técnico.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,9 +57,9 @@ Este método no devuelve ningún valor.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra la **ayuda** en uso. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **muestra la Ayuda** en uso. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -75,7 +75,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -115,11 +115,11 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

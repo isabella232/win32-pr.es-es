@@ -1,11 +1,11 @@
 ---
-title: Método ActiveBasicDevice GetCachedExtraSinkProtocolInfo (PlayToDevice. h)
-description: Obtiene información adicional del protocolo receptor en caché para el dispositivo.
+title: Método ActiveBasicDevice GetCachedExtraSinkProtocolInfo (PlayToDevice.h)
+description: Obtiene información adicional del protocolo de receptor almacenado en caché para el dispositivo.
 ms.assetid: 97112921-1C1D-4FC9-8FE6-1381F3773351
 keywords:
-- Método GetCachedExtraSinkProtocolInfo API de streaming de multimedia
-- Método GetCachedExtraSinkProtocolInfo API de streaming de multimedia, interfaz ActiveBasicDevice
-- Interfaz ActiveBasicDevice API de streaming de multimedia, método GetCachedExtraSinkProtocolInfo
+- Método GetCachedExtraSinkProtocolInfo de Media Streaming API
+- Método GetCachedExtraSinkProtocolInfo de Media Streaming API, interfaz ActiveBasicDevice
+- Interfaz ActiveBasicDevice Media Streaming API, método GetCachedExtraSinkProtocolInfo
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be5bb013d1356d5ff02e709a92f01eceff6c2e0f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1bf4508c40fd0abcb0df809216a9bae1d8811c8a8bd79bfb31dfbbd5062ddce1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422409"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118736411"
 ---
-# <a name="activebasicdevicegetcachedextrasinkprotocolinfo-method"></a>ActiveBasicDevice:: GetCachedExtraSinkProtocolInfo (método)
+# <a name="activebasicdevicegetcachedextrasinkprotocolinfo-method"></a>Método ActiveBasicDevice::GetCachedExtraSinkProtocolInfo
 
-Obtiene información adicional del protocolo receptor en caché para el dispositivo.
+Obtiene información adicional del protocolo de receptor almacenado en caché para el dispositivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,16 +42,16 @@ HRESULT GetCachedExtraSinkProtocolInfo(
 
 <dl> <dt>
 
-*valor* \[ de out, retval\]
+*value* \[ out, retval\]
 </dt> <dd>
 
-Información adicional del protocolo receptor en caché para el dispositivo.
+Información adicional del protocolo de receptor almacenado en caché para el dispositivo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,10 +59,10 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>PlayToDevice. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>PlayToDevice. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>PlayToDevice.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>PlayToDevice.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Playtodevice.dll</dt> </dl> |
 
 

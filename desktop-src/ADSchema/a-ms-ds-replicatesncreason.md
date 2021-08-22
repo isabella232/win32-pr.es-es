@@ -27,7 +27,7 @@ Atributo del objeto ntdsConnection que indica por qué (o si) el KCC muestra que
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | CN                | MS-DS-Replicates-NC-Reason                                                                                                                 |
 | Ldap-Display-Name | mS-DS-ReplicatesNCReason                                                                                                                   |
@@ -36,7 +36,7 @@ Atributo del objeto ntdsConnection que indica por qué (o si) el KCC muestra que
 | Frecuencia de actualización  | Puede cambiar en respuesta a los cambios en la topología de red.                                                                                 |
 | Attribute-Id      | 1.2.840.113556.1.4.1408                                                                                                                    |
 | System-Id-Guid    | 0ea12b84-08b3-11d3-91bc-0000f87a57d4                                                                                                       |
-| Sintaxis            | [**Object(DN-Binary)**](s-object-dn-binary.md)                                                                                            |
+| Syntax            | [**Object(DN-Binary)**](s-object-dn-binary.md)                                                                                            |
 
 
 
@@ -54,14 +54,14 @@ Atributo del objeto ntdsConnection que indica por qué (o si) el KCC muestra que
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------|
 | Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Es de un solo valor       | False                                                  |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | Falso                                                  |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
@@ -75,14 +75,14 @@ Atributo del objeto ntdsConnection que indica por qué (o si) el KCC muestra que
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------|
 | Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Es de un solo valor       | False                                                  |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | Falso                                                  |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
@@ -96,14 +96,14 @@ Atributo del objeto ntdsConnection que indica por qué (o si) el KCC muestra que
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------|
 | Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Es de un solo valor       | False                                                  |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | Falso                                                  |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
@@ -117,14 +117,14 @@ Atributo del objeto ntdsConnection que indica por qué (o si) el KCC muestra que
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------|
 | Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Es de un solo valor       | False                                                  |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | Falso                                                  |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
@@ -138,14 +138,14 @@ Atributo del objeto ntdsConnection que indica por qué (o si) el KCC muestra que
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------|
 | Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Es de un solo valor       | False                                                  |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | Falso                                                  |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
@@ -159,14 +159,14 @@ Atributo del objeto ntdsConnection que indica por qué (o si) el KCC muestra que
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------|
 | Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Es de un solo valor       | False                                                  |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | Falso                                                  |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |
@@ -180,14 +180,14 @@ Atributo del objeto ntdsConnection que indica por qué (o si) el KCC muestra que
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------|
 | Id. de vínculo                | \-                                                     |
 | MAPI-Id                | \-                                                     |
-| System-Only            | False                                                  |
-| Es de un solo valor       | False                                                  |
-| Está indexado             | False                                                  |
-| En el catálogo global      | False                                                  |
+| System-Only            | Falso                                                  |
+| Es de un solo valor       | Falso                                                  |
+| Está indexado             | Falso                                                  |
+| En el catálogo global      | Falso                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                           |
 | Range-Lower            | \-                                                     |
 | Range-Upper            | \-                                                     |

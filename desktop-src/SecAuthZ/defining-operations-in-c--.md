@@ -1,21 +1,21 @@
 ---
-description: En Administrador de autorización, una operación es una función o método de bajo nivel de una aplicación.
+description: En el Administrador de autorización, una operación es una función o un método de bajo nivel de una aplicación.
 ms.assetid: 458c5418-94c5-4977-8203-f8299387c6da
 title: Definir operaciones en C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31431390d3c95dbf4248ffeebc63f29f1fa6757d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87cf547e89c7767f6e04cd2bfb9cdc9e0b42123ce3c7c784c89a4b394af60bbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118913788"
 ---
 # <a name="defining-operations-in-c"></a>Definir operaciones en C++
 
-En Administrador de autorización, una operación es una función o método de bajo nivel de una aplicación. Estas operaciones se agrupan como tareas. Los usuarios de la aplicación solicitan permiso para completar tareas. Una operación se representa mediante un objeto [**IAzOperation**](/windows/desktop/api/Azroles/nn-azroles-iazoperation) . Para obtener más información sobre las operaciones, vea [operaciones y tareas](operations-and-tasks.md).
+En el Administrador de autorización, una operación es una función o un método de bajo nivel de una aplicación. Estas operaciones se agrupan como tareas. Los usuarios de la aplicación solicitan permiso para completar tareas. Una operación se representa mediante un [**objeto IAzOperation.**](/windows/desktop/api/Azroles/nn-azroles-iazoperation) Para obtener más información sobre las operaciones, vea [Operaciones y tareas](operations-and-tasks.md).
 
-En el ejemplo siguiente se muestra cómo definir operaciones en un almacén de directivas de autorización. En el ejemplo se da por supuesto que hay un almacén de directivas XML denominado MyStore.xml en el directorio raíz de la unidad C y que este almacén contiene una aplicación denominada///Expense.
+En el ejemplo siguiente se muestra cómo definir operaciones en un almacén de directivas de autorización. En el ejemplo se supone que hay un almacén de directivas XML existente denominado MyStore.xml en el directorio raíz de la unidad C y que este almacén contiene una aplicación denominada Expense.
 
 
 ```C++

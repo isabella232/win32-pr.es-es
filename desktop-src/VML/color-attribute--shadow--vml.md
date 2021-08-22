@@ -1,26 +1,26 @@
 ---
-title: Atributo de color (sombra) (VML)
-description: Atributo de color (sombra) (VML)
+title: Atributo de color (Shadow)(VML)
+description: Atributo de color (Shadow)(VML)
 ms.assetid: 677615b7-b4a4-411f-b04e-3ed0399f4c05
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73df77e65a3ae0f74c6e79b9c179c31da27698f9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: abb83314cafc7f44c6251d0edc297341e556f45e96a830fef62ce9e4fce5b321
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105695620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118846252"
 ---
-# <a name="color-attribute-shadowvml"></a>Atributo de color (sombra) (VML)
+# <a name="color-attribute-shadowvml"></a>Atributo de color (Shadow)(VML)
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Define el color de la sombra. Lectura/escritura **VgColor**.
+Define el color de la sombra. Lectura/escritura **DvColor**.
 
 **Se aplica a**
 
@@ -28,17 +28,17 @@ Define el color de la sombra. Lectura/escritura **VgColor**.
 
 **Sintaxis de etiquetas**
 
-<v: *elemento* color = " *expresión* " >
+<v: *element* color=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . color = "*expresión*"
+*element* .color="*expression*"
 
-*expresión* = de *elemento*. color
+*expresión* = *elemento*.color
 
 **Comentarios:**
 
-Use el atributo color para establecer u obtener el color de una sombra.
+Use el atributo de color para establecer u obtener el color de una sombra.
 
 *Atributo estándar de VML*
 
@@ -59,6 +59,6 @@ La sombra es verde.
 
 
 
- 
+ 
 
- 
+ 

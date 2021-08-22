@@ -13,7 +13,7 @@ ms.locfileid: "118901595"
 ---
 # <a name="prov_rsa_aes"></a>PROV \_ RSA \_ AES
 
-El tipo de proveedor \_ PROV RSA \_ AES admite firmas [digitales y](digital-signatures.md) cifrado de datos. Se considera un proveedor de servicios [*criptográficos*](../secgloss/c-gly.md) (CSP) de uso general. El algoritmo de [*clave pública RSA*](../secgloss/p-gly.md) se usa para todas las operaciones de [*clave*](../secgloss/p-gly.md) pública.
+El tipo de proveedor \_ PROV RSA \_ AES admite firmas [digitales y](digital-signatures.md) cifrado de datos. Se considera un proveedor de [*servicios criptográficos*](../secgloss/c-gly.md) (CSP) de uso general. El algoritmo de [*clave pública RSA*](../secgloss/p-gly.md) se usa para todas las operaciones de [*clave*](../secgloss/p-gly.md) pública.
 
 ## <a name="algorithms-supported"></a>Algoritmos admitidos
 

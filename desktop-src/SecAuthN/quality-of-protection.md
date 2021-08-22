@@ -1,58 +1,58 @@
 ---
-description: La calidad de protección, identificada por la Directiva qop, la especifica primero el servidor en el desafío de síntesis y, a continuación, la confirma el cliente en la respuesta de desafío.
+description: La calidad de protección, identificada por la directiva qop, la especifica primero el servidor en el desafío Digest y, a continuación, la confirma el cliente en la respuesta del desafío.
 ms.assetid: bee4236c-69e5-4281-a6b3-be316bac0a11
 title: Calidad de protección
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4643c9e2de77647a3adf2cbf0441e31bcf5be5de
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 202acbf319601af74efc35117990f27cc6edff76f27da243453f82bf50984977
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118920454"
 ---
 # <a name="quality-of-protection"></a>Calidad de protección
 
-La calidad de protección, identificada por la Directiva qop, la especifica primero el servidor en el desafío de síntesis y, a continuación, la confirma el cliente en la respuesta de desafío. Si el cliente requiere una calidad de protección que el servidor no admite, el cliente debe finalizar la autenticación.
+La calidad de protección, identificada por la directiva qop, la especifica primero el servidor en el desafío Digest y, a continuación, la confirma el cliente en la respuesta del desafío. Si el cliente requiere una calidad de protección que el servidor no admite, el cliente debe finalizar la autenticación.
 
-Los valores posibles de la Directiva qop se describen en la tabla siguiente.
+Los valores posibles para la directiva qop se describen en la tabla siguiente.
 
 
 
 | Value                   | Descripción                                                                                                                                  |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| autenticación                  | Sólo autenticación.                                                                                                                         |
-| "auth-int"              | Autenticación y comprobación de la [*integridad*](../secgloss/i-gly.md) mediante firmas.                  |
-| (Solo SASL) "auth-conf" | Autenticación, integridad y comprobación de confidencialidad mediante firmas y cifrado. Para obtener más información, vea [cifrado](ciphers.md). |
+| "auth"                  | Sólo autenticación.                                                                                                                         |
+| "auth-int"              | Comprobación de la [*autenticación y*](../secgloss/i-gly.md) la integridad mediante firmas.                  |
+| (solo SASL) "auth-conf" | Comprobación de autenticación, integridad y confidencialidad mediante firmas y cifrado. Para obtener más información, vea [Ciphers](ciphers.md). |
 
 
 
  
 
-La calidad de la protección viene determinada por las marcas de requisitos de contexto que se pasan al Microsoft Digest SSP. En la tabla siguiente se enumeran las marcas relacionadas con la calidad de la protección y el valor resultante de la Directiva qop.
+La calidad de protección viene determinada por las marcas de requisitos de contexto que se pasan al Microsoft Digest SSP. En la tabla siguiente se enumeran las marcas relacionadas con la calidad de protección y el valor resultante de la directiva qop.
 
 
 
-| Marca                         | valor qop               |
+| Marca                         | Valor de qop               |
 |------------------------------|-------------------------|
-| *XXX* \_ \_confidencialidad de REQ  | "auth-conf" (solo SASL) |
-| *XXX* \_ detección de la reproducción de REQ \_ \_   | "auth-int"              |
-| *XXX* \_ \_detección de secuencia de REQ \_ | "auth-int"              |
-| *XXX* \_ integridad de REQ \_        | "auth-int"              |
-| (ninguno)                       | autenticación                  |
+| *XXX* \_ CONFIDENCIALIDAD DE REQ \_  | "auth-conf" (solo SASL) |
+| *XXX* \_ REQ \_ REPLAY \_ DETECT   | "auth-int"              |
+| *XXX* \_ REQ \_ SEQUENCE \_ DETECT | "auth-int"              |
+| *XXX* \_ INTEGRIDAD \_ DE REQ        | "auth-int"              |
+| (ninguno)                       | "auth"                  |
 
 
 
  
 
 > [!Note]  
-> Las marcas de requisitos de contexto especificadas por las aplicaciones de servidor tienen un prefijo de ASC y las especificadas por los clientes tienen el prefijo ISC. Para determinar los valores de marca usados por la aplicación, sustituya uno de estos prefijos por *XXX*.
+> Las marcas de requisitos de contexto especificadas por las aplicaciones de servidor tienen un prefijo de ASC y las especificadas por los clientes tienen el prefijo ISC. Para determinar los valores de marca utilizados por la aplicación, sustituya uno de estos prefijos por *XXX.*
 
  
 
-Para obtener información adicional relacionada con el servidor, consulte [generación del desafío de síntesis](generating-the-digest-challenge.md).
+Para obtener información adicional relacionada con el servidor, vea [Generating the Digest Challenge](generating-the-digest-challenge.md).
 
-Para obtener información adicional relacionada con el cliente, consulte [generación de la respuesta de desafío de síntesis](generating-the-digest-challenge-response.md).
+Para obtener información adicional relacionada con el cliente, vea [Generating the Digest Challenge Response](generating-the-digest-challenge-response.md).
 
  
 

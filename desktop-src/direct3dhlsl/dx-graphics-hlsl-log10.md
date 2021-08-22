@@ -3,7 +3,7 @@ title: log10
 description: Devuelve el logaritmo en base 10 del valor especificado.
 ms.assetid: a94f8438-8153-4a31-bde3-98831edf99e5
 keywords:
-- HLSL de log10
+- log10 HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2d226dcc33da1aee6d55e21c6d97febc23577503
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1a0a6aa00037fcf93df39dc40f694f0460878121c9c8f962e4cc28ba0b4a0a94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118791550"
 ---
 # <a name="log10"></a>log10
 
@@ -26,7 +26,7 @@ Devuelve el logaritmo en base 10 del valor especificado.
 
 
 
-| *RET* log10 (*x*) |
+| *ret* log10(*x*) |
 |------------------|
 
 
@@ -39,7 +39,7 @@ Devuelve el logaritmo en base 10 del valor especificado.
 
 | Elemento                                                   | Descripción                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*x1*<br/> | \[en \] el valor especificado.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[en \] El valor especificado.<br/> |
 
 
 
@@ -47,22 +47,22 @@ Devuelve el logaritmo en base 10 del valor especificado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Logaritmo en base 10 del parámetro *x* . Si el parámetro *x* es negativo, esta función devuelve un valor indefinido. Si *x* es 0, esta función devuelve-INF.
+Logaritmo en base 10 del *parámetro x.* Si el *parámetro x* es negativo, esta función devuelve un valor indefinido. Si x *es* 0, esta función devuelve -INF.
 
 ## <a name="type-description"></a>Descripción del tipo
 
 
 
-| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamaño                           |
+| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **Vector** o **matriz** | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
-| *direcc* | igual que la entrada *x*                                                                                              | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | mismas dimensiones que la entrada *x* |
+| *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vector** o **matriz** | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
+| *Ret* | igual que la entrada *x*                                                                                              | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -70,18 +70,18 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible           |
 |------------------------------------------------------------------------------------|---------------------|
-| Modelador [modelo 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador más altos | sí                 |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sí ( \_ solo vs 1 \_ 1) |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador superiores | Sí                 |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sí (solo \_ frente a \_ 1 1) |
 
 
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

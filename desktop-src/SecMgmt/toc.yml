@@ -4,7 +4,7 @@
     - name: Acerca de la administración de seguridad
       href: about-management.md
       items:
-        - name: Directiva de LSA
+        - name: Directiva LSA
           href: lsa-policy.md
           items:
             - name: Directiva de seguridad local
@@ -13,23 +13,23 @@
               href: built-in-and-account-domains.md
             - name: Dominios principales y de confianza
               href: primary-and-trusted-domains.md
-            - name: Objetos de directiva de LSA
+            - name: Objetos de directiva LSA
               href: lsa-policy-objects.md
               items:
-                - name: Objeto de Directiva
+                - name: Objeto de directiva
                   href: policy-object.md
                 - name: Objeto TrustedDomain
                   href: trusteddomain-object.md
-                - name: Objeto de cuenta
+                - name: Objeto account
                   href: account-object.md
-                - name: 'Private Data, objeto'
+                - name: Objeto de datos privados
                   href: private-data-object.md
         - name: Filtros de contraseña
           href: password-filters.md
           items:
-            - name: Consideraciones sobre la programación de filtros de contraseña
+            - name: Consideraciones sobre la programación de filtros de contraseñas
               href: password-filter-programming-considerations.md
-            - name: Aplicación segura de contraseñas y Passfilt.dll
+            - name: Aplicación de contraseñas seguras y Passfilt.dll
               href: strong-password-enforcement-and-passfilt-dll.md
         - name: Más seguro
           href: safer.md
@@ -44,36 +44,36 @@
               href: security-templates.md
             - name: Configuración y análisis de seguridad
               href: security-configuration-and-analysis.md
-    - name: Uso de la administración de seguridad
+    - name: Uso de administración de seguridad
       href: using-management.md
       items:
-        - name: Uso de la Directiva LSA
+        - name: Uso de la directiva LSA
           href: using-lsa-policy.md
           items:
-            - name: Usar cadenas Unicode de LSA
+            - name: Uso de cadenas Unicode LSA
               href: using-lsa-unicode-strings.md
-            - name: Apertura de un identificador de objeto de Directiva
+            - name: Apertura de un identificador de objeto de directiva
               href: opening-a-policy-object-handle.md
-            - name: Administrar la información de directivas
+            - name: Administración de información de directivas
               href: managing-policy-information.md
-            - name: Recepción de eventos de cambio de Directiva
+            - name: Recepción de eventos de cambio de directiva
               href: receiving-policy-change-events.md
-            - name: Administrar permisos de cuenta
+            - name: Administración de permisos de cuenta
               href: managing-account-permissions.md
-            - name: Administrar información de dominios de confianza
+            - name: Administración de información de dominio de confianza
               href: managing-trusted-domain-information.md
-            - name: Traducir entre nombres y SID
+            - name: Traducción entre nombres y SID
               href: translating-between-names-and-sids.md
-            - name: Asignar identificadores POSIX
+            - name: Asignación de identificadores posix
               href: mapping-posix-identifiers.md
-            - name: Almacenar datos privados
+            - name: Almacenamiento de datos privados
               href: storing-private-data.md
-        - name: Usar filtros de contraseñas
+        - name: Uso de filtros de contraseña
           href: using-password-filters.md
           items:
-            - name: Instalación y registro de un archivo DLL de filtro de contraseñas
+            - name: Instalación y registro de un archivo DLL de filtro de contraseña
               href: installing-and-registering-a-password-filter-dll.md
-        - name: Uso de datos adjuntos de seguridad del servicio
+        - name: Uso de datos adjuntos de seguridad de servicio
           href: using-service-security-attachments.md
           items:
             - name: Crear una extensión de complemento de datos adjuntos
@@ -83,19 +83,19 @@
                   href: implementing-iscesvcattachmentpersistinfo.md
                 - name: Mostrar información de configuración y análisis
                   href: displaying-configuration-and-analysis-information.md
-                - name: Agregar un nodo de extensión del complemento de datos adjuntos
+                - name: Agregar un nodo de extensión de complemento de datos adjuntos
                   href: adding-an-attachment-snap-in-extension-node.md
-                - name: Establecer la comunicación con los complementos de configuración
+                - name: Establecer la comunicación con complementos de configuración
                   href: establishing-communication-with-configuration-snap-ins.md
-                - name: Obtención de datos de los complementos de configuración
+                - name: Obtener datos de los complementos de configuración
                   href: getting-data-from-the-configuration-snap-ins.md
-                - name: Modificación de la información de configuración en la interfaz de usuario
+                - name: Modificar la información de configuración en el Interfaz de usuario
                   href: modifying-configuration-information-in-the-user-interface.md
                 - name: Modificar la información de configuración en la base de datos
                   href: modifying-configuration-information-in-the-database.md
-            - name: Registrar una extensión de complemento de datos adjuntos
+            - name: Registro de una extensión de complemento de datos adjuntos
               href: registering-an-attachment-snap-in-extension.md
-            - name: Crear un motor de datos adjuntos
+            - name: Creación de un motor de datos adjuntos
               href: creating-an-attachment-engine.md
               items:
                 - name: Implementación de SceSvcAttachmentAnalyze
@@ -104,7 +104,7 @@
                   href: implementing-scesvcattachmentconfig.md
                 - name: Implementación de SceSvcAttachmentUpdate
                   href: implementing-scesvcattachmentupdate.md
-            - name: Registrar un motor de datos adjuntos
+            - name: Registro de un motor de datos adjuntos
               href: registering-an-attachment-engine.md
     - name: Referencia de administración de seguridad
       href: management-reference.md
@@ -271,9 +271,9 @@
                   items:
                     - name: CloseHandle (método)
                       href: /windows/desktop/api/Scesvc/nf-scesvc-iscesvcattachmentdata-closehandle
-                    - name: Método FreeBuffer
+                    - name: FreeBuffer (método)
                       href: /windows/desktop/api/Scesvc/nf-scesvc-iscesvcattachmentdata-freebuffer
-                    - name: Método GetData
+                    - name: GetData (método)
                       href: /windows/desktop/api/Scesvc/nf-scesvc-iscesvcattachmentdata-getdata
                     - name: Método Initialize
                       href: /windows/desktop/api/Scesvc/nf-scesvc-iscesvcattachmentdata-initialize
@@ -283,37 +283,37 @@
                 - name: Métodos ISceSvcAttachmentPersistInfo
                   href: iscesvcattachmentpersistinfo-methods.md
                   items:
-                    - name: Método FreeBuffer
+                    - name: FreeBuffer (método)
                       href: /windows/desktop/api/Scesvc/nf-scesvc-iscesvcattachmentpersistinfo-freebuffer
-                    - name: IsDirty (método)
+                    - name: Método IsDirty
                       href: /windows/desktop/api/Scesvc/nf-scesvc-iscesvcattachmentpersistinfo-isdirty
                     - name: Save (método)
                       href: /windows/desktop/api/Scesvc/nf-scesvc-iscesvcattachmentpersistinfo-save
         - name: Objetos de administración de seguridad
           href: management-objects.md
           items:
-            - name: El tipo de objeto de Directiva
+            - name: Tipo de objeto de directiva
               href: the-policy-object-type.md
               items:
-                - name: Derechos de acceso a objetos de Directiva
+                - name: Derechos de acceso a objetos de directiva
                   href: policy-object-access-rights.md
-                - name: Protección de objetos de Directiva
+                - name: Protección de objetos de directiva
                   href: policy-object-protection.md
             - name: El tipo de objeto TrustedDomain
               href: the-trusteddomain-object-type.md
               items:
-                - name: Derechos de acceso a objetos de TrustedDomain
+                - name: Derechos de acceso a objetos TrustedDomain
                   href: trusteddomain-object-access-rights.md
-                - name: Protección de objetos de TrustedDomain
+                - name: Protección de objetos TrustedDomain
                   href: trusteddomain-object-protection.md
-            - name: El tipo de objeto de cuenta
+            - name: Tipo de objeto de cuenta
               href: the-account-object-type.md
               items:
                 - name: Derechos de acceso a objetos de cuenta
                   href: account-object-access-rights.md
                 - name: Protección de objetos de cuenta
                   href: account-object-protection.md
-            - name: El tipo de objeto de datos privado
+            - name: Tipo de objeto de datos privados
               href: the-private-data-object-type.md
               items:
                 - name: Derechos de acceso a objetos de datos privados

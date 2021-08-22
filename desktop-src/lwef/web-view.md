@@ -1,74 +1,74 @@
 ---
-title: Personalización de la vista Web de una carpeta
-description: Una vista Web es una forma eficaz y flexible de usar el explorador de Windows para mostrar información sobre el contenido de una carpeta de Shell.
+title: Personalizar la vista web de una carpeta
+description: Una vista web es una manera eficaz y flexible de usar Windows Explorer para mostrar información sobre el contenido de una carpeta de Shell.
 ms.assetid: a894df21-bcc6-4760-b7d7-9bf95a0dba7f
 keywords:
-- Vistas Web
+- Vistas web
 - Estilo clásico
-- Estilo Web
+- Estilo web
 - titulares
 - Región FileList
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e364551d461eff6ae17a780bafc0b69182a1f16f
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 73ebe106bdada4da55eef8891a3c93ee82aba3cc4da9194e1fcd4c7e71bcd4e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103789670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118745699"
 ---
-# <a name="customizing-a-folders-web-view"></a>Personalización de la vista Web de una carpeta
+# <a name="customizing-a-folders-web-view"></a>Personalizar la vista web de una carpeta
 
 \[Esta característica solo se admite en Windows XP o versiones anteriores. \]
 
-Una vista Web es una forma eficaz y flexible de usar el explorador de Windows para mostrar información sobre el contenido de una carpeta de Shell.
+Una vista web es una manera eficaz y flexible de usar Windows Explorer para mostrar información sobre el contenido de una carpeta de Shell.
 
 -   [Introducción](#introduction)
--   [Usar la plantilla Vista Web](#using-the-web-view-template)
-    -   [El cuerpo de la plantilla](#the-template-body)
-    -   [El encabezado de la plantilla](#the-template-head)
+-   [Uso de la plantilla de vista web](#using-the-web-view-template)
+    -   [Cuerpo de la plantilla](#the-template-body)
+    -   [El jefe de plantilla](#the-template-head)
 -   [Resumen](#summary)
 
 ## <a name="introduction"></a>Introducción
 
-Windows ofrece a los usuarios dos maneras principales de ver y navegar por el espacio de nombres del shell. Lo más familiar, el estilo clásico, es similar al conocido administrador de archivos de Windows. En el panel derecho se muestra el contenido de la carpeta actualmente seleccionada en uno de los cinco formatos siguientes: iconos grandes, iconos pequeños, lista, detalles y miniatura. La diferencia principal del administrador de archivos de Windows es el panel izquierdo, que es muy similar a la barra del explorador de Windows Internet Explorer. Se puede cambiar de tamaño o quitar, y puede mostrar varios paneles además del árbol del sistema de archivos conocido, como un panel de búsqueda.
+Windows ofrece a los usuarios dos formas principales de ver y navegar por el espacio de nombres de Shell. La más conocida, el estilo clásico, es similar a la conocida Windows file manager. En el panel derecho se muestra el contenido de la carpeta seleccionada actualmente en uno de los cinco formatos: Icono grande, Icono pequeño, Lista, Detalles y Miniatura. La principal diferencia con respecto Windows Administrador de archivos es el panel izquierdo, que es muy similar a la barra de explorador de Windows Internet Explorer. Se puede cambiar de tamaño o quitarse, y puede mostrar varios paneles además del conocido árbol del sistema de archivos, como un panel de búsqueda.
 
 > [!Note]  
-> La información de este documento no se aplica a Windows XP, las técnicas descritas solo se aplican a versiones anteriores de Windows.
+> La información de este documento no se aplica a Windows XP, las técnicas analizadas solo se aplican a versiones anteriores de Windows.
 
- 
+ 
 
 En la ilustración siguiente se muestra la carpeta Impresoras en estilo clásico.
 
 ![estilo clásico de la carpeta de impresoras.](images/webview1.png)
 
-El estilo clásico funciona razonablemente bien para carpetas y archivos normales del sistema de archivos. Sin embargo, con la introducción de Windows 95, el sistema de archivos ha evolucionado en el espacio de nombres. El espacio de nombres permite la creación de *carpetas virtuales*, como las impresoras o el entorno de red, que pueden representar tipos de información muy diferentes de los de una carpeta de sistema de archivos normal.
+El estilo clásico funciona razonablemente bien para archivos y carpetas normales del sistema de archivos. Sin embargo, con la introducción de Windows 95, el sistema de archivos ha evolucionado hasta convertirse en el espacio de nombres . El espacio de nombres permite la creación de carpetas *virtuales,* como Impresoras o Vecinos de red, que pueden representar tipos de información muy diferentes a una carpeta normal del sistema de archivos.
 
-El estilo Web, también conocido como vista Web, ofrece una manera más flexible y eficaz de presentar información que el estilo clásico. En una vista Web, el usuario básicamente ve y navega por el espacio de nombres mediante Internet Explorer. El diseño básico de una vista Web es similar al estilo clásico. La barra del explorador no cambia. Sin embargo, la región ocupada por la lista de archivos se convierte en un área de visualización de uso general que es realmente una página web. Una vista Web todavía se usa para mostrar información sobre el contenido de una carpeta, pero hay pocas restricciones en cuanto a la información que se muestra o cómo. Cada carpeta puede tener su propia vista Web, personalizada para adaptarse a sus características concretas.
+El estilo web, también conocido como vista web, ofrece una manera más flexible y eficaz de presentar información que el estilo clásico. En una vista web, el usuario básicamente ve y navega por el espacio de nombres mediante Internet Explorer. El diseño básico de una vista web es similar al estilo clásico. La barra del explorador no ha cambiado. Sin embargo, la región ocupada por la lista de archivos se convierte en un área de presentación de uso general que es en la práctica una página web. Una vista web se sigue utilizando para mostrar información sobre el contenido de una carpeta, pero hay pocas restricciones sobre qué información se muestra o cómo. Cada carpeta puede tener su propia vista web, personalizada para adaptarse a sus características concretas.
 
-En la ilustración siguiente se muestra una vista Web de la carpeta Impresoras (mostrada anteriormente en estilo clásico).
+En la ilustración siguiente se muestra una vista web de la carpeta Impresoras (mostrada anteriormente en el estilo clásico).
 
-![Vista Web predeterminada de la carpeta de impresoras.](images/webview2.png)
+![vista web predeterminada de la carpeta de impresoras.](images/webview2.png)
 
-Al igual que las páginas web convencionales, las vistas Web se controlan mediante una plantilla basada en HTML. La creación de una plantilla de vista Web es prácticamente idéntica a la creación de una página web y proporciona el mismo grado de flexibilidad en el contenido y el diseño de la información. Las plantillas de vista Web pueden usar HTML dinámico (DHTML) y scripting para responder a eventos, como un usuario que hace clic en un elemento. También pueden hospedar objetos que les permiten obtener y Mostrar información de la carpeta o de su contenido.
+Al igual que las páginas web convencionales, las vistas web se controlan mediante una plantilla basada en HTML. La creación de una plantilla de vista web es casi idéntica a la creación de una página web y proporciona el mismo grado de flexibilidad en el contenido y el diseño de la información. Las plantillas de vista web pueden usar HTML dinámico (DHTML) y scripting para responder a eventos, como un usuario que hace clic en un elemento. También pueden hospedar objetos que les permiten obtener y mostrar información de la carpeta o su contenido.
 
-El usuario puede elegir una vista Web iniciando el explorador de Windows, haciendo clic en **Opciones de carpeta** en el menú **Ver** y seleccionando esta opción: **Habilitar contenido web en carpetas**. Sin embargo, el usuario también puede iniciar Internet Explorer y señalar el explorador en el sistema de archivos; para ello, haga clic en el menú **Ver** , seleccione **barra del explorador** y haga clic en **carpetas**. En una vista Web, no hay prácticamente ninguna diferencia entre Internet Explorer y el explorador de Windows.
+El usuario puede elegir una vista web iniciando  Windows Explorer, haciendo clic en Opciones de carpeta en el menú Ver y seleccionando esta opción: Habilitar contenido web en **carpetas**.  Sin embargo, el usuario también puede iniciar Internet Explorer el explorador en  el sistema de archivos haciendo clic en el menú Ver, apuntando a Barra del explorador y haciendo clic en **Carpetas.** En una vista web, no hay prácticamente ninguna diferencia entre Internet Explorer y Windows Explorer.
 
-En el lado izquierdo del panel derecho, la vista Web impresoras muestra un banner con el nombre y el icono de la carpeta, seguido de un bloque de información sobre la carpeta. La lista de archivos habitual ocupa el lado derecho de la página.
+En el lado izquierdo del panel derecho, la vista web impresoras muestra un banner con el nombre y el icono de la carpeta, seguido de un bloque de información sobre la carpeta. La lista de archivos habitual ocupa el lado derecho de la página.
 
-Cuando un usuario hace clic en un elemento, en el bloque de información aparece información detallada sobre el elemento. La vista Web de impresoras muestra realmente la misma información que está disponible en el estilo clásico, pero lo hace en un formato más utilizable. Sin embargo, una vista Web no es simplemente una manera diferente de Mostrar información de estilo clásico. Por ejemplo, se puede mostrar un vínculo a un sitio web útil debajo del bloque de información, una característica que no está disponible en el estilo clásico. Si el usuario hace clic en el vínculo, se mostrará el sitio.
+Cuando un usuario hace clic en un elemento, aparece información detallada sobre el elemento en el bloque de información. La vista web impresoras muestra realmente la misma información que está disponible en el estilo clásico, pero lo hace en un formato más utilizable. Sin embargo, una vista web no es simplemente una manera diferente de mostrar información de estilo clásico. Por ejemplo, se puede mostrar un vínculo a un sitio web útil debajo del bloque de información, una característica que no está disponible en el estilo clásico. Si el usuario hace clic en el vínculo, se mostrará el sitio.
 
-La vista Web de impresoras mostrada en la ilustración anterior es similar al estilo clásico, porque la plantilla de vista Web subyacente (un archivo. htt) se escribió de este modo. La lista de archivos, por ejemplo, no se genera directamente en la plantilla de vista Web. Se crea y muestra mediante un objeto [**WebViewFolderContents**](webviewfoldercontents.md) hospedado por la plantilla de vista Web. Los métodos y las propiedades del objeto permiten a la vista Web controlar su diseño y obtener información sobre elementos concretos. El contenido y el diseño del encabezado y el bloque de información se especifican en la plantilla de vista Web.
+La vista Web impresoras que se muestra en la ilustración anterior es similar al estilo clásico, porque la plantilla de vista web subyacente (un archivo .htt) se escribió de esa manera. Por ejemplo, la plantilla de vista web no genera directamente la lista de archivos. Se crea y muestra mediante un [**objeto WebViewFolderContents**](webviewfoldercontents.md) hospedado por la plantilla de vista web. Los métodos y propiedades del objeto permiten a la vista web controlar su diseño y obtener información sobre elementos concretos. El contenido y el diseño del banner y el bloque de información se especifican en la plantilla de vista web.
 
-Dado que una vista Web es compatible con DHTML, la plantilla también se puede utilizar para controlar la interacción del usuario. Por ejemplo, cuando un usuario hace clic en uno de los iconos de la impresora, el objeto **WebViewFolderIcon** activa un evento [**SelectionChanged**](/windows/desktop/shell/application-support-bumper) . La plantilla usa un controlador de eventos DHTML escrito en el script para recuperar la información solicitada y mostrarla en el bloque de información.
+Dado que una vista web admite DHTML, la plantilla también se puede usar para controlar la interacción del usuario. Por ejemplo, cuando un usuario hace clic en uno de los iconos de impresora, el **objeto WebViewFolderIcon** muestra un [**evento SelectionChanged.**](/windows/desktop/shell/application-support-bumper) La plantilla usa un controlador de eventos DHTML escrito en script para recuperar la información solicitada y mostrarla en el bloque de información.
 
-Este sencillo ejemplo de la carpeta de impresoras no es, la única manera de usar una vista Web. Si escribe su propia plantilla y, si es necesario, los objetos, puede usar una vista Web para mostrar información e interactuar con el usuario de la forma que más le convenga. Tenga en cuenta que, en la actualidad, las plantillas de vista web solo muestran carpetas virtuales definidas por el sistema. Aunque los desarrolladores pueden crear una carpeta virtual mediante la implementación de una extensión de espacio de nombres, deben usar las técnicas descritas en [extensiones de espacio de nombres](/windows/desktop/shell/nse-works) para mostrarla.
+Este sencillo ejemplo de la carpeta Impresoras no es la única manera de usar una vista web. Al escribir su propia plantilla y, si es necesario, objetos, puede usar una vista web para mostrar información e interactuar con el usuario de la manera que le sea más eficaz. Tenga en cuenta que, en la actualidad, las plantillas de vista web solo muestran carpetas virtuales definidas por el sistema. Aunque los desarrolladores pueden crear una carpeta virtual implementando una extensión de espacio de nombres, deben usar las técnicas [descritas](/windows/desktop/shell/nse-works) en Extensiones de espacio de nombres para mostrarla.
 
-## <a name="using-the-web-view-template"></a>Usar la plantilla Vista Web
+## <a name="using-the-web-view-template"></a>Uso de la plantilla de vista web
 
-La forma en que se muestran los datos en una vista Web puede personalizarse de una manera limitada modificando el archivo de Desktop.ini de una carpeta. Consulte [Personalización de carpetas con Desktop.ini](/windows/desktop/shell/how-to-customize-folders-with-desktop-ini) para obtener más información. Una manera mucho más flexible y eficaz de personalizar una vista Web es crear una plantilla de vista web personalizada.
+La forma en que se muestran los datos en una vista web se puede personalizar de forma limitada modificando el archivo de Desktop.ini carpeta. Consulte [Personalización de carpetas con Desktop.ini](/windows/desktop/shell/how-to-customize-folders-with-desktop-ini) para obtener más información. Una manera mucho más flexible y eficaz de personalizar una vista web es crear una plantilla de vista web personalizada.
 
-La plantilla Vista Web controla lo que se muestra en una vista Web y cómo. Utiliza las técnicas estándar de HTML, DHTML y scripting para obtener y Mostrar información e interactuar con el usuario. En esta sección se describe cómo crear una vista Web mediante el examen de una plantilla simple: Generic. htt.
+La plantilla vista web controla lo que se muestra en una vista web y cómo. Usa html estándar, DHTML y técnicas de scripting para obtener y mostrar información e interactuar con el usuario. En esta sección se describe cómo crear una vista web mediante el examen de una plantilla simple: Generic.htt.
 
 
 ```
@@ -240,23 +240,23 @@ La plantilla Vista Web controla lo que se muestra en una vista Web y cómo. Util
 
 
 
-Una manera sencilla de crear su propia plantilla de vista Web es usar Generic. htt y modificarla. Dado que es bastante limitado, también debe examinar otros ejemplos más complejos para ver ideas adicionales. Puede encontrarlos buscando en el sistema la extensión. htt usada por todas las plantillas de vista Web. Si desea crear una plantilla personalizada para una carpeta, debe comenzar con la plantilla default. htt, que normalmente se almacena en C: \\ WinNT \\ Web o c: \\ Windows \\ Web. Tenga en cuenta que estos archivos se definen como ocultos, por lo que es posible que tenga que modificar la configuración del explorador de Windows para verlos. Una vez creado un archivo. htt, debe marcarse como de solo lectura y estar oculto.
+Una manera sencilla de crear su propia plantilla de vista web es tomar Generic.htt y modificarla. Dado que es bastante limitado, también debe ver otros ejemplos más complejos para obtener ideas adicionales. Para encontrarlos, busque en el sistema la extensión .htt que usan todas las plantillas de vista web. Si quieres crear una plantilla personalizada para una carpeta, debes comenzar con la plantilla Folder.htt predeterminada, que normalmente se almacena en C: Winnt Web o \\ \\ C: \\ Windows \\ Web. Tenga en cuenta que estos archivos se definen como ocultos, por lo que puede que tenga que modificar la configuración Windows Explorer para verlos. Una vez creado un archivo .htt, debe marcarse como de solo lectura y estar oculto.
 
-Las plantillas de vista web usan la extensión. htt porque difieren ligeramente de los documentos convencionales. htm. La diferencia principal son varias variables especiales en los archivos. htt que el sistema reemplaza con los valores de espacio de nombres actuales. Las variables% THISDIR% y% THISDIRPATH% representan el nombre y la ruta de acceso de la carpeta actualmente seleccionada. La variable% TEMPLATEDIR% representa la carpeta donde se almacenan las hojas de estilos de vista Web.
+Las plantillas de vista web usan la extensión .htt porque difieren ligeramente de los documentos .htm convencionales. La principal diferencia son varias variables especiales en los archivos .htt que el sistema reemplaza por los valores de espacio de nombres actuales. Las variables %THISDIR% y %THISDIRPATH% representan el nombre y la ruta de acceso de la carpeta seleccionada actualmente. La variable %TEMPLATEDIR% representa la carpeta donde se almacenan las hojas de estilos de vista web.
 
-Al igual que la mayoría de las plantillas HTML, los archivos. htt tienen dos partes básicas: un cuerpo y un encabezado. El cuerpo de la plantilla controla el diseño básico de la vista Web y carga los objetos utilizados para comunicarse con el espacio de nombres y Mostrar información. El encabezado contiene scripts y funciones que realizan tareas como controlar el cambio de tamaño y obtener información de la carpeta. La mayoría de las plantillas, incluido Generic. htt, también incluyen una hoja de estilos. En general, es mejor incluir la información de la hoja de estilos en la plantilla. Es posible que las hojas de estilos independientes no funcionen correctamente cuando se utiliza una vista Web con espacios de nombres remotos.
+Al igual que la mayoría de las plantillas HTML, los archivos .htt tienen dos partes básicas: un cuerpo y una cabeza. El cuerpo de la plantilla controla el diseño básico de la vista web y carga los objetos utilizados para comunicarse con el espacio de nombres y mostrar información. El head contiene scripts y funciones que hacen tareas como controlar el tamaño y obtener información de la carpeta. La mayoría de las plantillas, incluido Generic.htt, también incluyen una hoja de estilos. En general, es mejor incluir la información de la hoja de estilos en la plantilla. Es posible que hojas de estilos independientes no funcionen correctamente cuando se usa una vista web con espacios de nombres remotos.
 
-### <a name="the-template-body"></a>El cuerpo de la plantilla
+### <a name="the-template-body"></a>Cuerpo de la plantilla
 
-El cuerpo de la plantilla especifica lo que presentará una vista Web. También es donde se cargan los objetos que se usan para mostrar información y comunicarse con las carpetas de espacio de nombres. El diseño definido por Generic. htt es similar al que se muestra en la ilustración de la sección anterior. Hay tres regiones para mostrar: el titular y el bloque de información en el lado izquierdo de la vista, y la lista de archivos a la derecha.
+El cuerpo de la plantilla especifica lo que presentará una vista web. También es donde se cargan los objetos utilizados para mostrar información y comunicarse con carpetas de espacio de nombres. El diseño definido por Generic.htt es similar al que se muestra en la ilustración de la sección anterior. Hay tres regiones para mostrar: el banner y el bloque de información en el lado izquierdo de la vista y la lista de archivos a la derecha.
 
-Todas las regiones son identificadores asignados que van a usar la hoja de estilos y DHTML. Como se describe en la sección siguiente, hay dos banners posibles, con identificadores de "Banner" y "MiniBanner". El identificador de la región del bloque de información es "info". El identificador del objeto de la lista de archivos es "FileList". Los detalles del [diseño](#controlling-the-web-view-layout) de la región se controlan mediante la hoja de estilos y una función de Microsoft JScript, [FixSize](#adjusting-the-layout-by-using-the-fixsize-function), que se describe más adelante en el capítulo.
+Todas las regiones son identificadores asignados que la hoja de estilos y DHTML usarán. Como se describe en la sección siguiente, hay dos banners posibles, con identificadores de "Banner" y "MiniBanner". El identificador de la región del bloque de información es "Info". El identificador del objeto de lista de archivos es "FileList". Los detalles del diseño [](#controlling-the-web-view-layout) de la región se controlan mediante la hoja de estilos y una función de Microsoft JScript, [FixSize](#adjusting-the-layout-by-using-the-fixsize-function), que se describe más adelante en el capítulo.
 
-### <a name="the-banner-region"></a>La región del banner
+### <a name="the-banner-region"></a>Región del banner
 
-El banner se encuentra en la parte superior de la pantalla, en la esquina superior izquierda de la vista Web. El banner normal muestra el nombre y el icono de la carpeta cuyo contenido se muestra en la lista de archivos de la derecha. Sin embargo, si la ventana es demasiado corta, puede que no haya espacio debajo del icono para mostrar la información. Por esta razón, Generic. htt también define un minibanner que solo muestra el nombre de la carpeta. Ambos banners se definen inicialmente como ocultos. [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) elige cuál Mostrar y lo establece en "visible".
+El banner se encuentra en la parte superior de la pantalla, en la esquina superior izquierda de la vista web. El banner normal muestra el nombre y el icono de la carpeta cuyo contenido se muestra en la lista de archivos de la derecha. Sin embargo, si la ventana se vuelve demasiado corta, es posible que no haya espacio debajo del icono para mostrar información. Por este motivo, Generic.htt también define un minibanner que solo muestra el nombre de la carpeta. Ambos banners se definen inicialmente como ocultos. [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) elige cuál se va a mostrar y lo establece en "visible".
 
-El banner normal de Generic. htt se define mediante:
+El banner normal de Generic.htt se define mediante:
 
 
 ```
@@ -275,9 +275,9 @@ El banner normal de Generic. htt se define mediante:
 
 
 
-La primera parte de la sección de pancarta muestra el título con una regla horizontal debajo. Las etiquetas de tabla se utilizan para controlar su posición. El atributo NoWrap está establecido para <TD> etiqueta para evitar el ajuste de palabras. El sistema reemplazará% THISDIRNAME% por el nombre de la carpeta actual. Un objeto **WebViewFolderIcon** , con un identificador de "Icon" para simplificar, se carga para extraer y mostrar el icono de la carpeta.
+La primera parte de la sección banner muestra el título con una regla horizontal debajo. Las etiquetas de tabla se usan para controlar su posición. El atributo nowrap se establece para <TD> etiqueta para evitar el ajuste de palabras. El sistema reemplazará %THISDIRNAME% por el nombre de la carpeta actual. A continuación, se carga un objeto **WebViewFolderIcon,** con un identificador de "Icono" para simplificar, para extraer y mostrar el icono de la carpeta.
 
-La sección minibanner es similar al banner normal. El formato del título se coloca ligeramente más alto y no tiene una regla. Dado que no hay ningún icono, el objeto **WebViewFolderIcon** no se carga.
+La sección minibanner es similar al banner normal. El formato del título se coloca ligeramente más alto y no tiene una regla. Dado que no hay ningún icono, no se carga el objeto **WebViewFolderIcon.**
 
 
 ```
@@ -294,7 +294,7 @@ La sección minibanner es similar al banner normal. El formato del título se co
 
 ### <a name="the-info-region"></a>La región de información
 
-La parte de la vista Web situada debajo del banner se usa para presentar información detallada sobre el elemento seleccionado. Si no hay ningún elemento seleccionado, se muestra un mensaje predeterminado. Dado que Generic. htt solo muestra un solo bloque de texto, esta sección es bastante sencilla.
+La parte de la vista web debajo del banner se usa para presentar información detallada sobre el elemento seleccionado. Si no se selecciona ningún elemento, se muestra un mensaje predeterminado. Dado que Generic.htt solo muestra un único bloque de texto, esta sección es bastante sencilla.
 
 
 ```
@@ -308,9 +308,9 @@ La parte de la vista Web situada debajo del banner se usa para presentar informa
 
 
 
-La mayor parte del trabajo de recopilación de la información se controla mediante un [script de información de carpeta](#retrieving-and-displaying-folder-information) que se describe más adelante en el capítulo. Muestra la información asignando el texto a [TextBlock. innerHTML](https://msdn.microsoft.com/library/ms533897(VS.85).aspx).
+La mayor parte del trabajo de recopilación de la información se controla mediante un [script](#retrieving-and-displaying-folder-information) de información de carpetas que se describe más adelante en el capítulo. Muestra la información asignando el texto a [TextBlock.innerHTML.](https://msdn.microsoft.com/library/ms533897(VS.85).aspx)
 
-Puede personalizar fácilmente la presentación de la información modificando estos elementos o incluyendo otros adicionales. Se puede usar todo lo que se puede colocar en una página web. Por ejemplo, para mostrar un vínculo a su sitio web, puede Agregar un elemento delimitador después del bloque de texto en Generic. htt.
+Puede personalizar fácilmente la presentación de información modificando estos elementos o incluyendo otros adicionales. Se puede usar todo lo que se puede colocar en una página web. Por ejemplo, para mostrar un vínculo a su sitio web, puede agregar un elemento delimitador después del bloque de texto en Generic.htt.
 
 
 ```
@@ -329,7 +329,7 @@ Puede personalizar fácilmente la presentación de la información modificando e
 
 ### <a name="the-filelist-region"></a>La región FileList
 
-Por último, Generic. htt carga un objeto [**WebViewFolderContents**](webviewfoldercontents.md) para la región FileList. Dado que su identificador se establece en "FileList", se hará referencia a él como el objeto FileList de Now.
+Por último, Generic.htt carga un [**objeto WebViewFolderContents**](webviewfoldercontents.md) para la región FileList. Dado que su identificador se establece en "FileList", a partir de ahora se hará referencia a él como el objeto FileList.
 
 
 ```
@@ -340,17 +340,17 @@ Por último, Generic. htt carga un objeto [**WebViewFolderContents**](webviewfol
 
 
 
-El objeto FileList se encuentra en la mayoría de las vistas web y sirve para varios propósitos. FileList muestra la lista de elementos contenidos en la carpeta seleccionada con las mismas opciones y apariencia que la lista de archivos en estilo clásico. Cuando se selecciona un elemento, FileList notifica a la vista Web desencadenando un evento [SelectionChanged](#retrieving-and-displaying-folder-information) . FileList también expone métodos y propiedades que se pueden utilizar para recuperar información sobre elementos individuales y controlar la posición y el tamaño de su área de presentación.
+El objeto FileList se encuentra en la mayoría de las vistas web y tiene varios propósitos. FileList muestra la lista de elementos contenidos en la carpeta seleccionada con las mismas opciones y apariencia que la lista de archivos en el estilo clásico. Cuando se selecciona un elemento, FileList notifica a la vista web mediante la activación de [un evento SelectionChanged.](#retrieving-and-displaying-folder-information) FileList también expone métodos y propiedades que se pueden usar para recuperar información sobre elementos individuales y controlar la posición y el tamaño de su área de presentación.
 
-Aunque el objeto FileList es muy útil, solo devuelve información estándar del sistema de archivos, como el tamaño de archivo o los atributos. Para recuperar otros tipos de información de una carpeta de Shell, tendrá que cargar y controlar los objetos adicionales. Cualquier objeto que pueda hospedarse en una página web puede usarse con una vista Web.
+Aunque el objeto FileList es muy útil, solo devuelve información estándar del sistema de archivos, como el tamaño de archivo o los atributos. Para recuperar otros tipos de información de una carpeta de Shell, tendrá que cargar y controlar objetos adicionales. Cualquier objeto que se pueda hospedar en una página web se puede usar con una vista web.
 
-### <a name="the-template-head"></a>El encabezado de la plantilla
+### <a name="the-template-head"></a>El jefe de plantilla
 
-El encabezado de la plantilla de vista Web contiene los scripts y las funciones que realizan la mayor parte del trabajo real. Hay dos tareas esenciales que deben administrarse. Uno es el diseño de la presentación de la vista Web, que debe ajustarse para adaptarse a distintas regiones de presentación. El otro está recuperando y mostrando información de la carpeta cuando se selecciona un elemento. Al igual que con las hojas de estilos, es mejor incluir todos los scripts y las funciones en la plantilla en lugar de hacer referencia a ellos como archivos independientes.
+El responsable de la plantilla de vista web contiene los scripts y las funciones que hacen la mayor parte del trabajo real. Hay dos tareas esenciales que deben controlarse. Uno es el diseño de la presentación de la vista web, que debe ajustarse para adaptarse a diferentes regiones de visualización. La otra es recuperar y mostrar información de la carpeta cuando se selecciona un elemento. Al igual que con las hojas de estilos, es mejor incluir todos los scripts y funciones en la plantilla en lugar de hacer referencia a ellos como archivos independientes.
 
-### <a name="controlling-the-web-view-layout"></a>Controlar el diseño de la vista Web
+### <a name="controlling-the-web-view-layout"></a>Controlar el diseño de la vista web
 
-El área disponible para una vista Web depende del tamaño de la ventana de vista Web y de la parte de la barra del explorador de Windows. Esta área cambiará siempre que se cambie el tamaño de la ventana o de la barra del explorador de Windows. Por lo tanto, el diseño debe coincidir con el área disponible cuando se carga una vista Web y cambiar adecuadamente cuando se cambia el tamaño. Gran parte del diseño se especifica en la hoja de estilos. La región de información, por ejemplo, se define para ocupar el 30 por ciento más a la izquierda de la vista Web.
+El área disponible para una vista web depende del tamaño de la ventana vista web y de la cantidad de ella que la barra Windows Explorador. Esta área cambiará cada vez que se cambie el tamaño de Windows la barra del Explorador. Por lo tanto, el diseño debe coincidir con el área disponible cuando se carga una vista web y cambiar correctamente cuando se cambia de tamaño. Gran parte del diseño se especifica en la hoja de estilos. La región info, por ejemplo, se define para ocupar el 30 % más a la izquierda de la vista web.
 
 
 ```
@@ -361,11 +361,11 @@ El área disponible para una vista Web depende del tamaño de la ventana de vist
 
 
 
-A medida que se cambia el tamaño de una vista Web, el ancho de la región de información cambiará para mantener ese porcentaje. [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) administra los problemas de diseño que no se pueden controlar mediante una hoja de estilos.
+A medida que se cambia el tamaño de una vista web, el ancho de la región de información cambiará para mantener ese porcentaje. [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) administra los problemas de diseño que no se pueden controlar mediante una hoja de estilos.
 
-### <a name="loading-and-initializing-the-web-view"></a>Cargar e inicializar la vista Web
+### <a name="loading-and-initializing-the-web-view"></a>Cargar e inicializar la vista web
 
-Cuando se carga una vista Web, el diseño debe ajustarse para ajustarse al área de presentación disponible. Dado que todavía no se ha seleccionado ningún elemento, las vistas Web suelen mostrar información predeterminada que se aplica a toda la carpeta. Para controlar la inicialización, el <BODY> la etiqueta de Generic. htt detecta el evento [OnLoad](/previous-versions//ms531409(v=vs.85)) y llama a la función **init** .
+Cuando se carga una vista web, el diseño debe ajustarse para ajustarse al área de presentación disponible. Dado que aún no se ha seleccionado ningún elemento, las vistas web normalmente muestran información predeterminada que se aplica a toda la carpeta. Para controlar la inicialización, el <BODY> Tag para Generic.htt detecta el evento [onload](/previous-versions//ms531409(v=vs.85)) y llama a la **función Init.**
 
 
 ```
@@ -375,7 +375,7 @@ Cuando se carga una vista Web, el diseño debe ajustarse para ajustarse al área
 
 
 
-**Init** es una sencilla función de JScript.
+**Init** es una función JScript sencilla.
 
 
 ```
@@ -389,7 +389,7 @@ function Init() {
 
 
 
-**Init** enlaza [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) al evento [window. OnResize](https://msdn.microsoft.com/library/ms536959(VS.85).aspx) para que se llame a este método cada vez que cambie el área de visualización de la vista Web. A continuación, ejecuta FixSize para establecer el diseño inicial y asigna el \_ \_ texto de introducción L a la región de información. L \_ \_ el texto de introducción es un bloque de texto introductorio que se define en la sección hoja de estilos.
+**Init** enlaza [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) al evento [window.onresize](https://msdn.microsoft.com/library/ms536959(VS.85).aspx) para que se le llame cada vez que cambie el área de presentación de la vista web. A continuación, ejecuta FixSize para establecer el diseño inicial y asigna L \_ Intro Text a la región \_ Info. L \_ Intro Text es un bloque de texto \_ introductorio que se define en la sección de hoja de estilos.
 
 
 ```
@@ -402,9 +402,9 @@ var L_Intro_Text    = "This folder contains a variety of interesting stuff.<br>
 
 ### <a name="adjusting-the-layout-by-using-the-fixsize-function"></a>Ajustar el diseño mediante la función FixSize
 
-La función [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) se usa para especificar varios aspectos del diseño que no se pueden controlar mediante la hoja de estilos.
+La [función FixSize](#adjusting-the-layout-by-using-the-fixsize-function) se usa para especificar varios aspectos del diseño que la hoja de estilos no puede controlar.
 
-Se pueden usar dos banners posibles, en función del alto de la vista Web.
+Hay dos banners posibles que se pueden usar, en función del alto de la vista web.
 
 
 ```
@@ -428,9 +428,9 @@ else {
 
 
 
-Generic. htt usa un alto de 200 píxeles como la línea de división entre normal y minibanners. Establece el estilo del banner seleccionado en visible y el otro en oculto. También establece varias propiedades de diseño para las regiones info y FileList de modo que se ajusten correctamente a la pancarta seleccionada.
+Generic.htt usa una altura de 200 píxeles como línea divisora entre normales y minibanners. Establece el estilo del banner seleccionado en visible y el otro en oculto. También establece varias propiedades de diseño para las regiones Info y FileList para que quepa correctamente con el banner seleccionado.
 
-Si una vista Web es demasiado estrecha, [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) usa el ancho completo del área de presentación de la pantalla de FileList.
+Si una vista web se vuelve demasiado estrecha, [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) usa el ancho completo del área de presentación para la pantalla FileList.
 
 
 ```
@@ -451,9 +451,9 @@ else {
 
 
 
-Generic. htt usa 400 píxeles como línea divisoria entre las pantallas estrechas y anchas. Si la vista Web es demasiado estrecha, [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) oculta la región de información y modifica la propiedad FileList [pixelLeft](https://msdn.microsoft.com/library/ms534336(VS.85).aspx) para que ocupe toda la región debajo del banner.
+Generic.htt usa 400 píxeles como línea divisora entre las pantallas estrechas y anchas. Si la vista web es demasiado estrecha, [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) oculta la región Info y modifica la propiedad [pixelLeft](https://msdn.microsoft.com/library/ms534336(VS.85).aspx) de FileList para que rellene toda la región debajo del banner.
 
-Las pocas líneas finales de [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) ajustan varias propiedades de diseño en función de los resultados del código anterior. El ancho de la región FileList se ajusta para que rellene exactamente la parte de la vista Web no ocupada por la región info. El alto de la región de información se ajusta para ajustarse al banner y a la parte inferior de la vista Web.
+Las últimas líneas de [FixSize ajustan](#adjusting-the-layout-by-using-the-fixsize-function) varias propiedades de diseño en función de los resultados del código anterior. El ancho de la región FileList se ajusta para que rellene exactamente la parte de la vista web no ocupada por la región de información. El alto de la región de información tiene el tamaño que cabe entre el banner y la parte inferior de la vista web.
 
 
 ```
@@ -468,9 +468,9 @@ document.all.Info.style.pixelHeight = document.body.clientHeight
 
 
 
-### <a name="retrieving-and-displaying-folder-information"></a>Recuperar y Mostrar información de carpetas
+### <a name="retrieving-and-displaying-folder-information"></a>Recuperar y mostrar información de carpeta
 
-Cuando un usuario selecciona un elemento, el objeto FileList activa un evento [SelectionChanged](#retrieving-and-displaying-folder-information) . Este evento se controla mediante un script de JScript. Para simplificar, el script que se encuentra en Generic. htt supone que solo se puede seleccionar un elemento cada vez.
+Cuando un usuario selecciona un elemento, el objeto FileList activará un [evento SelectionChanged.](#retrieving-and-displaying-folder-information) Este evento se controla mediante un JScript script. Para simplificar, el script que se encuentra en Generic.htt supone que solo se puede seleccionar un elemento a la vez.
 
 
 ```
@@ -509,14 +509,14 @@ Cuando un usuario selecciona un elemento, el objeto FileList activa un evento [S
 
 
 
-El script usa dos propiedades FileList, [**FileList. FocusedItem**](/windows/desktop/shell/shellfolderview-focuseditem)y [**FileList. Folder**](/windows/desktop/shell/shellfolderview-folder) para obtener información sobre el elemento. **FileList. FocusedItem** identifica el elemento seleccionado, con el nombre del elemento dado por **FileList.FocusedItem.Name**. **FileList. Folder** es realmente un puntero a un objeto de [**carpeta**](../shell/folder.md) . El método [**GetDetailsOf**](/windows/desktop/shell/folder-getdetailsof) del objeto de carpeta se usa para recuperar la información restante sobre el elemento.
+El script usa dos propiedades FileList, [**FileList.FocusedItem**](/windows/desktop/shell/shellfolderview-focuseditem)y [**FileList.Folder**](/windows/desktop/shell/shellfolderview-folder) para obtener información sobre el elemento. **FileList.FocusedItem** identifica el elemento seleccionado, con el nombre del elemento especificado **por FileList.FocusedItem.Name**. **FileList.Folder es** realmente un puntero a un [**objeto Folder.**](../shell/folder.md) El método [**GetDetailsOf**](/windows/desktop/shell/folder-getdetailsof) del objeto Folder se usa para recuperar la información restante sobre el elemento.
 
-Toda la información se concatena en una sola cadena de texto, separadas por <BR> Etiquetas para mejorar la legibilidad. Después, se muestra el texto asignándole a [TextBlock. innerHTML](https://msdn.microsoft.com/library/ms533897(VS.85).aspx).
+Toda la información se concatena en una sola cadena de texto, separada por <BR> etiquetas para mejorar la legibilidad. A continuación, se muestra el texto asignándose a [TextBlock.innerHTML.](https://msdn.microsoft.com/library/ms533897(VS.85).aspx)
 
 ## <a name="summary"></a>Resumen
 
-En este capítulo se describen algunas de las técnicas que puede usar para personalizar el modo en que el explorador de Windows muestra información acerca de las carpetas de Shell. La creación de un archivo de Desktop.ini permite realizar algunas personalizaciones sencillas, como mostrar un icono personalizado en lugar del icono de carpeta estándar. Cuando una carpeta aparece en una vista Web, el diseño y la presentación se controlan mediante una plantilla basada en HTML que determina qué información se muestra y cómo. Puede usar un alto grado de control sobre la vista Web de una carpeta mediante el uso de las técnicas estándar de HTML, DHTML y scripting para crear una plantilla personalizada.
+En este capítulo se describen algunas de las técnicas que puede usar para personalizar la forma en que el Explorador de Windows muestra información sobre las carpetas de Shell. La creación de Desktop.ini archivo le permite realizar una personalización sencilla, como mostrar un icono personalizado en lugar del icono de carpeta estándar. Cuando una carpeta aparece en una vista web, su diseño y presentación se controlan mediante una plantilla basada en HTML que determina qué información se muestra y cómo. Puede ejercer un alto grado de control sobre la vista web de una carpeta mediante el uso de técnicas estándar de HTML, DHTML y scripting para crear una plantilla personalizada.
 
- 
+ 
 
- 
+ 

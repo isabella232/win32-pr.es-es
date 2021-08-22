@@ -1,5 +1,5 @@
 ---
-description: El objeto Qualifier expone las siguientes propiedades.
+description: El objeto Calificador expone las siguientes propiedades.
 ms.assetid: C705B936-1233-4E1C-8176-813D26F05883
 title: Propiedades del calificador
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118901035"
 ---
 # <a name="qualifier-properties"></a>Propiedades del calificador
 
-El [**objeto Qualifier**](qualifier.md) expone las siguientes propiedades.
+El [**objeto Calificador**](qualifier.md) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 

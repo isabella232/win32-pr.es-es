@@ -1,35 +1,35 @@
 ---
-title: Usar el control ActiveX Escritorio remoto
-description: Cómo puede utilizar el control ActiveX Escritorio remoto para personalizar la experiencia del usuario Servicios de Escritorio remoto.
+title: Uso del control Escritorio remoto ActiveX control
+description: Cómo puede usar el control Escritorio remoto ActiveX para personalizar la experiencia Servicios de Escritorio remoto usuario.
 ms.assetid: ea80a99a-7bf6-48e2-8bd0-c9a158bcf475
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto Servicios de Escritorio remoto, usar Escritorio remoto control ActiveX
-- Conexión web a Escritorio remoto Servicios de Escritorio remoto, usar
+- Servicios de Escritorio remoto Servicios de Escritorio remoto , mediante Escritorio remoto ActiveX control
+- Conexión web a Escritorio remoto Servicios de Escritorio remoto , mediante
 - Protocolo de escritorio remoto Servicios de Escritorio remoto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b06f575d5cffc16bd19f6bbe5fd4b3237dda7b1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 58d97f333cce6fd96ac7c41e5b61103cdc7c60600a58a0b63acc4e8d65c86b54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105685486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118850751"
 ---
-# <a name="using-the-remote-desktop-activex-control"></a>Usar el control ActiveX Escritorio remoto
+# <a name="using-the-remote-desktop-activex-control"></a>Uso del control Escritorio remoto ActiveX control
 
-Los temas siguientes contienen información sobre cómo puede utilizar el control ActiveX Escritorio remoto para personalizar la experiencia del usuario Servicios de Escritorio remoto.
+Los temas siguientes contienen información sobre cómo puede usar el control Escritorio remoto ActiveX para personalizar la experiencia Servicios de Escritorio remoto usuario.
 
-El control ActiveX Escritorio remoto está disponible en los siguientes formatos:
+El Escritorio remoto ActiveX control está disponible en los formularios siguientes:
 
--   **El control Scriptable**: implementa interfaces que son seguras para el scripting. Esta forma de control la pueden usar los clientes Web o los hosts de scripting (como VBScript).
--   **El control que no admite scripts**: ofrece funcionalidad adicional que no es segura para el scripting. Este formulario del control se puede usar desde código nativo o administrado, pero los clientes Web o los hosts de scripting no pueden usar este formulario.
+-   **El control que permite scripts:** implementa interfaces que son seguras para el scripting. Esta forma del control se puede usar en clientes web o hosts de scripting (como VBScript).
+-   **El control noscriptable** ofrece funcionalidad adicional que no es segura para el scripting. Esta forma del control se puede usar desde código nativo o administrado, pero este formulario no lo pueden usar clientes web ni hosts de solo scripting.
 
-La lista siguiente contiene los **CLSID** para los diferentes controles de diferentes versiones de sistema operativo. Cada **CLSID** es compatible con versiones posteriores del sistema. Por ejemplo, el **CLSID** para el control con scripts en Windows Vista funcionará en versiones posteriores del sistema, como Windows 7.
+La lista siguiente contiene los **CLSID** de los distintos controles para las distintas versiones del sistema operativo. Cada uno de **los CLSID** es compatible con versiones posteriores del sistema. Por ejemplo, el **CLSID** del control que permite scripts en Windows Vista funcionará en versiones posteriores del sistema, como Windows 7.
 
 
 
-| Versión del sistema                          | CLSID de control que admite scripts             | CLSID de control que no admite scripts          |
+| Versión del sistema                          | CLSID de control que puede incluirse en scripts             | CLSID de control noscriptable          |
 |-----------------------------------------|--------------------------------------|--------------------------------------|
 | Windows 8.1, Windows Server 2012 R2     | 301B94BA-5D25-4A12-BFFE-3B6E7A616585 | 8B918B82-7985-4C24-89DF-C33AD2BBFBCD |
 | Windows 8, Windows Server 2012          | 5F681803-2900-4C43-A1CC-CF405404A676 | A3BC03A0-041D-42E3-AD22-882B7865C9C5 |
@@ -39,59 +39,59 @@ La lista siguiente contiene los **CLSID** para los diferentes controles de difer
 
 
 
- 
+ 
 
 ## <a name="in-this-section"></a>En esta sección
 
 <dl> <dt>
 
-[Incrustar el control ActiveX Escritorio remoto en una página web](embedding-the-remote-desktop-activex-control-in-a-web-page.md)
+[Inserción del control Escritorio remoto ActiveX en una página web](embedding-the-remote-desktop-activex-control-in-a-web-page.md)
 </dt> <dd>
 
-Ejemplo que muestra el uso de las interfaces que admiten scripts.
+Ejemplo que muestra el uso de las interfaces que pueden incluirse en scripts.
 
 </dd> <dt>
 
-[Implementación de canales virtuales con scripts mediante Conexión web a Escritorio remoto](implementing-scriptable-virtual-channels-using-remote-desktop-web-connection.md)
+[Implementación de canales virtuales que pueden incluirse en scripts mediante Conexión web a Escritorio remoto](implementing-scriptable-virtual-channels-using-remote-desktop-web-connection.md)
 </dt> <dd>
 
-Ejemplos de código que muestran los pasos para implementar canales virtuales que admiten scripts con Conexión web a Escritorio remoto.
+Ejemplos de código que muestran los pasos para implementar canales virtuales que pueden incluirse en scripts con Conexión web a Escritorio remoto.
 
 </dd> <dt>
 
-[Usar el control ActiveX Escritorio remoto con canales virtuales](using-the-remote-desktop-activex-control-with-virtual-channels.md)
+[Uso del control Escritorio remoto ActiveX con canales virtuales](using-the-remote-desktop-activex-control-with-virtual-channels.md)
 </dt> <dd>
 
-Si ha habilitado una aplicación de canales virtuales en la implementación de Servicios de Escritorio remoto, puede hacer que esta aplicación esté disponible para los equipos cliente.
+Si ha habilitado una aplicación de canales virtuales en Servicios de Escritorio remoto implementación, puede hacer que esta aplicación esté disponible para los equipos cliente.
 
 </dd> <dt>
 
-[Página Web de ejemplo incluida con el control ActiveX Escritorio remoto](sample-web-page-included-with-the-remote-desktop-activex-control.md)
+[Página web de ejemplo incluida con el control Escritorio remoto ActiveX datos](sample-web-page-included-with-the-remote-desktop-activex-control.md)
 </dt> <dd>
 
-Una página web de ejemplo (Default.htm) está en el directorio donde está instalado Conexión web a Escritorio remoto.
+Una página web de ejemplo (Default.htm) está en el directorio donde Conexión web a Escritorio remoto está instalado.
 
 </dd> <dt>
 
 [Proporcionar seguridad de cliente RDP](providing-for-rdp-client-security.md)
 </dt> <dd>
 
-Algunas propiedades del objeto de control ActiveX Escritorio remoto están restringidas a zonas de seguridad de direcciones URL específicas de Internet Explorer.
+Algunas propiedades del objeto Escritorio remoto ActiveX control están restringidas a zonas de seguridad Internet Explorer URL específicas.
 
 </dd> <dt>
 
-[Deshabilitar características de Servicios de Escritorio remoto](disabling-terminal-services-features.md)
+[Deshabilitación de Servicios de Escritorio remoto características](disabling-terminal-services-features.md)
 </dt> <dd>
 
 Para mejorar la seguridad, puede optar por deshabilitar Servicios de Escritorio remoto características.
 
 </dd> </dl>
 
-Para obtener más información acerca de la Página Web de ejemplo que se incluye con la instalación del control ActiveX Escritorio remoto, vea [Página Web de ejemplo que se incluye con el control activex escritorio remoto](sample-web-page-included-with-the-remote-desktop-activex-control.md).
+Para obtener más información sobre la página web de ejemplo que se incluye con la instalación del control Escritorio remoto ActiveX, vea Página web de ejemplo incluida con [el control Escritorio remoto ActiveX .](sample-web-page-included-with-the-remote-desktop-activex-control.md)
 
- 
+ 
 
- 
+ 
 
 
 

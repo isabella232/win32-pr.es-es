@@ -1,23 +1,23 @@
 ---
-description: 'Cómo usar los procesadores de mismo: creación, escritura y lectura desde los procesadores de buzones.'
+description: 'Cómo usar mailslots: crear, escribir en y leer desde mailslots.'
 ms.assetid: 4a8597ad-97ba-4141-9e65-9a843000c3b2
-title: Uso de buzones de
+title: Uso de Mailslots
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a3c69b7f3fb5bea87a2aedc36114dc2beb8ba3b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 214bd58b3ef3fe57669dc733f4e8ce2da9f44e39e9041c3e357804e8955bf929
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118755867"
 ---
-# <a name="using-mailslots"></a>Uso de buzones de
+# <a name="using-mailslots"></a>Uso de Mailslots
 
-En los temas siguientes se muestra cómo usar los procesadores de buzones:
+En los temas siguientes se muestra cómo usar mailslots:
 
--   [Creación de un buzón de correo](creating-a-mailslot.md)
--   [Escribir en un buzón de correo](writing-to-a-mailslot.md)
--   [Leer de un buzón de correo](reading-from-a-mailslot.md)
+-   [Creación de un mailslot](creating-a-mailslot.md)
+-   [Escribir en un mailslot](writing-to-a-mailslot.md)
+-   [Lectura desde un mailslot](reading-from-a-mailslot.md)
 
  
 

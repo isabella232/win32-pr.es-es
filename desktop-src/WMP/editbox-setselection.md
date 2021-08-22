@@ -1,9 +1,9 @@
 ---
-title: EDITBOX. setSelection
-description: El método setSelection selecciona el texto del control de cuadro de edición desde el índice de inicio especificado hasta el índice final especificado.
+title: EDITBOX.setSelection
+description: El método setSelection selecciona el texto del control de cuadro de edición del índice inicial especificado al índice final especificado.
 ms.assetid: 97b20a17-4b9c-4144-b448-8d7611c0e994
 keywords:
-- SetSelection Windows Media Player
+- EDITBOX.setSelection Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9d7077de0ea59940c4afa551d22188d5583d0e4c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0b4ed2bc9ca861bcf38c2b9aecc4969c80b14ba56d87ad2250dd53ed8c7a6655
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118838723"
 ---
-# <a name="editboxsetselection"></a>EDITBOX. setSelection
+# <a name="editboxsetselection"></a>EDITBOX.setSelection
 
-El método **setSelection** selecciona el texto del control de cuadro de edición desde el índice de inicio especificado hasta el índice final especificado.
+El **método setSelection** selecciona el texto del control de cuadro de edición del índice inicial especificado al índice final especificado.
 
 ``` syntax
         elementID.setSelection(start, end)
@@ -32,17 +32,17 @@ El método **setSelection** selecciona el texto del control de cuadro de edició
 
 <dl> <dt>
 
-<span id="start"></span><span id="START"></span>*iniciales*
+<span id="start"></span><span id="START"></span>*Empezar*
 </dt> <dd>
 
-**Número** (**largo**) que contiene el índice de carácter de la posición inicial del texto seleccionado.
+**Number** (**long**) que contiene el índice de caracteres de la posición inicial del texto seleccionado.
 
 </dd> <dt>
 
-<span id="end"></span><span id="END"></span>*extremo*
+<span id="end"></span><span id="END"></span>*Final*
 </dt> <dd>
 
-**Número** (**largo**) que contiene el índice de carácter de la posición final del texto seleccionado.
+**Number** (**long**) que contiene el índice de caracteres de la posición final del texto seleccionado.
 
 </dd> </dl>
 
@@ -50,9 +50,9 @@ El método **setSelection** selecciona el texto del control de cuadro de edició
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el inicio es 0 y el final es 1, se selecciona todo el texto del control cuadro de edición. Si el inicio es 1, se anula la selección de cualquier selección actual.
+Si el inicio es 0 y el final es 1, se selecciona todo el texto del control de cuadro de edición. Si el inicio es 1, se deselecciona cualquier selección actual.
 
 Solo se puede llamar a este método después de que el control se vuelva visible.
 
@@ -60,9 +60,9 @@ Solo se puede llamar a este método después de que el control se vuelva visible
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------|
-| Versión<br/> | Windows Media Player para Windows XP o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 
@@ -73,13 +73,13 @@ Solo se puede llamar a este método después de que el control se vuelva visible
 [**Elemento EDITBOX**](editbox-element.md)
 </dt> <dt>
 
-[**EDITBOX. getSelectionEnd**](editbox-getselectionend.md)
+[**EDITBOX.getSelectionEnd**](editbox-getselectionend.md)
 </dt> <dt>
 
-[**EDITBOX. getSelectionStart**](editbox-getselectionstart.md)
+[**EDITBOX.getSelectionStart**](editbox-getselectionstart.md)
 </dt> <dt>
 
-[**EDITBOX. replaceSelection**](editbox-replaceselection.md)
+[**EDITBOX.replaceSelection**](editbox-replaceselection.md)
 </dt> </dl>
 
  
