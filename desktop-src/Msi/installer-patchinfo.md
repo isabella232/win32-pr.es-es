@@ -1,7 +1,7 @@
 ---
-description: La propiedad PatchInfo de solo lectura del objeto de instalador devuelve información acerca de una revisión.
+description: La propiedad PatchInfo de solo lectura del objeto Installer devuelve información sobre una revisión.
 ms.assetid: a92e409e-b4a5-42cc-a87d-239c23655e5e
-title: Propiedad Installer. PatchInfo
+title: Installer.PatchInfo, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 5f7105c872b453877876e92a7cf6710a71bd1ed5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 01087b3c193ca3f984d485385315bf20ee212909949a89b03f97a2bfad525ac3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119580695"
 ---
-# <a name="installerpatchinfo-property"></a>Propiedad Installer. PatchInfo
+# <a name="installerpatchinfo-property"></a>Installer.PatchInfo, propiedad
 
-La propiedad **PatchInfo** de solo lectura del objeto de [**instalador**](installer-object.md) devuelve información acerca de una revisión.
+La propiedad **PatchInfo de** solo lectura del [**objeto Installer**](installer-object.md) devuelve información sobre una revisión.
 
 Esta propiedad es de solo lectura.
 
@@ -41,11 +41,11 @@ propVal = Installer.PatchInfo
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller se define como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

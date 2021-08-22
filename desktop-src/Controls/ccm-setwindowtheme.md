@@ -1,9 +1,9 @@
 ---
-title: Mensaje de CCM_SETWINDOWTHEME (commctrl. h)
-description: Establece el estilo visual de un control.
+title: CCM_SETWINDOWTHEME mensaje (Commctrl.h)
+description: Establece el estilo visual de un control .
 ms.assetid: 0200fa11-847f-477c-92e0-790b4d1ca0ef
 keywords:
-- CCM_SETWINDOWTHEME controles de mensajes de Windows
+- CCM_SETWINDOWTHEME controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cea8996273a0c9d03123ce58f5fbb0dfb099be94
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4656290a861247dc474e46cb396314f762f0084f45ae60d32198aa7bb464f8d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119320055"
 ---
-# <a name="ccm_setwindowtheme-message"></a>\_Mensaje SETWINDOWTHEME de CCM
+# <a name="ccm_setwindowtheme-message"></a>Mensaje \_ SETWINDOWTHEME de CCM
 
-Establece el estilo visual de un control.
+Establece el estilo visual de un control .
 
 ## <a name="parameters"></a>Parámetros
 
@@ -35,18 +35,18 @@ Establece el estilo visual de un control.
 *lParam* 
 </dt> <dd>
 
-Puntero a una cadena Unicode que contiene el estilo visual de control que se va a establecer.
+Puntero a una cadena Unicode que contiene el estilo visual de control que se establecerá.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto.
+No se usa el valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6,0. Para obtener más información sobre los manifiestos, vea [habilitar estilos visuales](cookbook-overview.md).
+> Para usar este mensaje, debe proporcionar un manifiesto que especifique Comclt32.dll versión 6.0. Para obtener más información sobre los manifiestos, vea [Habilitar estilos visuales.](cookbook-overview.md)
 
  
 
@@ -54,11 +54,11 @@ No se utiliza el valor devuelto.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

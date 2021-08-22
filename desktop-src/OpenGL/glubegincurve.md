@@ -1,9 +1,9 @@
 ---
-title: función gluBeginCurve (GLU. h)
-description: Las funciones gluBeginCurve y gluEndCurve delimitan una definición de curva B-spline racional (NURBS) no uniforme. | función gluBeginCurve (GLU. h)
+title: Función gluBeginCurve (Glu.h)
+description: Las funciones gluBeginCurve y gluEndCurve delimitan una definición de curva B-Spline racionalizada no uniforme (DSLBS). | Función gluBeginCurve (Glu.h)
 ms.assetid: f7f2e765-1a07-4faa-940c-9cb957dd54d4
 keywords:
-- gluBeginCurve (función) OpenGL
+- Función GluBeginCurve OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4e17bd88cfcb49801450ead865c437843d179b5
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 171c6ce95acf7592fcb2c3badccfeb9f2c5d68413f963f7b5043ec63502ee720
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105689858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119489745"
 ---
-# <a name="glubegincurve-function"></a>gluBeginCurve función)
+# <a name="glubegincurve-function"></a>Función gluBeginCurve
 
-Las funciones **gluBeginCurve** y [**gluEndCurve**](gluendcurve.md) delimitan una definición de curva B-spline racional ([NURBS](using-nurbs-curves-and-surfaces.md)) no uniforme.
+Las **funciones gluBeginCurve** y [**gluEndCurve**](gluendcurve.md) delimitan una definición de curva B-Spline racionalizada no uniforme [(SPLINEBS).](using-nurbs-curves-and-surfaces.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ void WINAPI gluBeginCurve(
 *nobj* 
 </dt> <dd>
 
-El objeto NURBS (creado con [**gluNewNurbsRenderer**](glunewnurbsrenderer.md)).
+El objeto RGBBS (creado [**con gluNewNurbsRenderer).**](glunewnurbsrenderer.md)
 
 </dd> </dl>
 
@@ -51,15 +51,15 @@ El objeto NURBS (creado con [**gluNewNurbsRenderer**](glunewnurbsrenderer.md)).
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use **gluBeginCurve** para marcar el inicio de una definición de curva NURBS. Después de llamar a **gluBeginCurve**, realice una o varias llamadas a [**gluNurbsCurve**](glunurbscurve.md) para definir los atributos de la curva. Exactamente una de las llamadas a **gluNurbsCurve** debe tener un tipo de curva de GL \_ MAP1 \_ Vertex \_ 3 o GL \_ MAP1 \_ Vertex \_ 4. Para marcar el final de la definición de curva NURBS, llame a [**gluEndCurve**](gluendcurve.md).
+Use **gluBeginCurve para** marcar el principio de una definición de curva DE DSLBS. Después de **llamar a gluBeginCurve,** realice una o varias llamadas a [**gluNurbsCurve**](glunurbscurve.md) para definir los atributos de la curva. Exactamente una de las llamadas a **gluNurbsCurve** debe tener un tipo de curva de GL \_ MAP1 VERTEX 3 o GL \_ \_ \_ MAP1 \_ VERTEX \_ 4. Para marcar el final de la definición de la curva DE ASEBS, llame [**a gluEndCurve**](gluendcurve.md).
 
-Los evaluadores de OpenGL se utilizan para representar la curva NURBS como una serie de segmentos de línea. El estado del evaluador se conserva durante la representación con [**glPushAttrib**](glpushattrib.md) (el bit de evaluación de GL \_ \_ ) y [**glPopAttrib**](glpopattrib.md). Para obtener información sobre exactamente el estado que estas llamadas conservan, vea **glPushAttrib**.
+Los evaluadores OpenGL se usan para representar la curva DE ASEBS como una serie de segmentos de línea. El estado del evaluador se conserva durante la representación [**con glPushAttrib**](glpushattrib.md) (GL \_ EVAL \_ BIT) y [**glPopAttrib**](glpopattrib.md). Para obtener información sobre exactamente qué estado conservan estas llamadas, **vea glPushAttrib**.
 
 ## <a name="examples"></a>Ejemplos
 
-Las siguientes funciones representan una curva NURBS con texturas con normalidad; las coordenadas de textura y las normales también se especifican como curvas NURBS:
+Las funciones siguientes representan una curva TEXTUREBS con textura con normales; Las coordenadas de textura y las normales también se especifican como curvas DE TIPO XYZBS:
 
 ``` syntax
 gluBeginCurve(nobj); 
@@ -73,12 +73,12 @@ gluEndCurve(nobj);
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

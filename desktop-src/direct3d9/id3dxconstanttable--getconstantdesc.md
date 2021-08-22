@@ -1,7 +1,7 @@
 ---
-description: Obtiene un puntero a una matriz de descripciones constantes en la tabla Constant.
+description: Obtiene un puntero a una matriz de descripciones constantes de la tabla constante.
 ms.assetid: bd407fd6-b1cc-4197-ae98-1c2ca74d2ad0
-title: 'ID3DXConstantTable:: GetConstantDesc (método) (D3DX9Shader. h)'
+title: Método ID3DXConstantTable::GetConstantDesc (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e5574c72fabd7561da0c60c903ae815faaebbfd5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8462ccfbbf306da08c67d460584a470d82301a5bda5f95a1ad09b2062702ee62
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607215"
 ---
-# <a name="id3dxconstanttablegetconstantdesc-method"></a>ID3DXConstantTable:: GetConstantDesc (método)
+# <a name="id3dxconstanttablegetconstantdesc-method"></a>Método ID3DXConstantTable::GetConstantDesc
 
-Obtiene un puntero a una matriz de descripciones constantes en la tabla Constant.
+Obtiene un puntero a una matriz de descripciones constantes de la tabla constante.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ HRESULT GetConstantDesc(
 
 <dl> <dt>
 
-*hConstant* \[ de\]
+*hConstant* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
@@ -63,9 +63,9 @@ Devuelve un puntero a una matriz de descripciones. Vea [**D3DXCONSTANT \_ DESC**
 *pCount* \[ in, out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-La entrada proporcionada debe ser el tamaño máximo de la matriz. El resultado es el número de elementos que se rellenan en la matriz cuando la función devuelve.
+La entrada proporcionada debe ser el tamaño máximo de la matriz. La salida es el número de elementos que se rellenan en la matriz cuando se devuelve la función.
 
 </dd> </dl>
 
@@ -73,13 +73,13 @@ La entrada proporcionada debe ser el tamaño máximo de la matriz. El resultado 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**ID3DXConstantTable:: GetConstantDesc** devolverá a veces una [**\_ Descripción de D3DXCONSTANT**](d3dxconstant-desc.md) con un \_ recuento de registros de 0. Esto ocurrirá cuando una constante aparezca en más de un conjunto de registros, \_ pero no en el conjunto de registros asignado.
+**ID3DXConstantTable::GetConstantDesc** a veces devolverá un [**\_ DESC D3DXCONSTANT**](d3dxconstant-desc.md) con un recuento de registros \_ de 0. Esto ocurrirá con una constante que aparece en más de un conjunto de registros, pero no tiene espacio en \_ ese conjunto de registros asignado.
 
-Dado que una muestra puede aparecer más de una vez en una tabla de constantes, este método puede devolver una matriz de descripciones, cada una con un índice de registro diferente.
+Dado que un sampler puede aparecer más de una vez en una tabla constante, este método puede devolver una matriz de descripciones, cada una con un índice de registro diferente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,8 +87,8 @@ Dado que una muestra puede aparecer más de una vez en una tabla de constantes, 
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

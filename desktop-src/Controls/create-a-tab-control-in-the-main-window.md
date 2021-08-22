@@ -1,38 +1,38 @@
 ---
 title: Cómo crear un control de pestaña en la ventana principal
-description: En el ejemplo de esta sección se muestra cómo crear un control de pestaña y cómo mostrarlo en el área cliente de la ventana principal de la aplicación.
+description: En el ejemplo de esta sección se muestra cómo crear un control de pestaña y mostrarlo en el área cliente de la ventana principal de la aplicación.
 ms.assetid: 24157B8B-177B-471C-9DA0-548D09EA5F89
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 686a9a4fe4f6be95ccdcf3bbcb597c2c48ff3b2d
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: d8b7d945b01c1e6409cf795d7f42f29999830ed1272bb661a9bb13e52cd1e293
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104488346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119320015"
 ---
 # <a name="how-to-create-a-tab-control-in-the-main-window"></a>Cómo crear un control de pestaña en la ventana principal
 
-En el ejemplo de esta sección se muestra cómo crear un control de pestaña y cómo mostrarlo en el área cliente de la ventana principal de la aplicación. La aplicación muestra una tercera ventana (un control estático) en el área de presentación del control de ficha. La ventana primaria coloca y ajusta el tamaño del control de pestaña y del control estático cuando procesa el mensaje de [**\_ tamaño de WM**](/windows/desktop/winmsg/wm-size) .
+En el ejemplo de esta sección se muestra cómo crear un control de pestaña y mostrarlo en el área cliente de la ventana principal de la aplicación. La aplicación muestra una tercera ventana (un control estático) en el área de presentación del control de pestaña. La ventana primaria coloca y tamaño el control de tabulación y el control estático cuando procesa el [**mensaje WM \_ SIZE.**](/windows/desktop/winmsg/wm-size)
 
-En este ejemplo hay siete pestañas, una para cada día de la semana. Cuando el usuario selecciona una pestaña, la aplicación muestra el nombre del día correspondiente en el control estático.
+Hay siete pestañas en este ejemplo, una para cada día de la semana. Cuando el usuario selecciona una pestaña, la aplicación muestra el nombre del día correspondiente en el control estático.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="create-a-tab-control-in-the-main-window"></a>Crear un control de pestaña en la ventana principal
+### <a name="create-a-tab-control-in-the-main-window"></a>Crear un control tab en la ventana principal
 
-La función siguiente crea el control de pestaña y agrega una pestaña para cada día de la semana. Los nombres de los días se definen como recursos de cadena, numerados consecutivamente a partir de los ID \_ . Domingo (definidos en el archivo de encabezado de recursos de la aplicación). Tanto la ventana primaria como el control de ficha deben tener el estilo de ventana [**WS \_ CLIPSIBLINGS**](/windows/desktop/winmsg/window-styles) . La función de inicialización de la aplicación llama a esta función después de crear la ventana principal.
+La función siguiente crea el control de ficha y agrega una pestaña para cada día de la semana. Los nombres de los días se definen como recursos de cadena, numerados consecutivamente a partir de IDS SUNDAY (definido en el archivo de encabezado de recursos de la \_ aplicación). Tanto la ventana primaria como el control de pestaña deben tener el estilo [**de ventana WS \_ CLIPSIBLINGS.**](/windows/desktop/winmsg/window-styles) La función de inicialización de la aplicación llama a esta función después de crear la ventana principal.
 
 
 ```C++
@@ -115,9 +115,9 @@ HWND DoCreateDisplayWindow(HWND hwndTab)
 
 
 
-Se llama a las funciones de ejemplo siguientes desde el procedimiento de ventana de la aplicación. La aplicación llama a la `OnSize` función al procesar el mensaje de [**\_ tamaño de WM**](/windows/desktop/winmsg/wm-size) para colocar y cambiar el tamaño del control de pestaña para ajustarse al área de cliente de la ventana principal.
+Las siguientes funciones de ejemplo se llaman desde el procedimiento de ventana de la aplicación. La aplicación llama a la función al procesar el mensaje WM SIZE para colocar y ajustar el tamaño del control de pestaña para que se ajuste al `OnSize` área de cliente de la ventana principal. [**\_**](/windows/desktop/winmsg/wm-size)
 
-Cuando se selecciona una ficha, el control de pestaña envía un mensaje de notificación de [**WM \_**](wm-notify.md) , especificando el código de notificación de [TCN \_ SELCHANGE](tcn-selchange.md) . La función de la aplicación `OnNotify` procesa este código de notificación estableciendo el texto del control estático.
+Cuando se selecciona una pestaña, el control de pestaña envía un mensaje [**\_ WM NOTIFY,**](wm-notify.md) especificando el [código de notificación DE TCN \_ SELCHANGE.](tcn-selchange.md) La función de la `OnNotify` aplicación procesa este código de notificación estableciendo el texto del control estático.
 
 
 ```C++
@@ -183,12 +183,12 @@ BOOL OnNotify(HWND hwndTab, HWND hwndDisplay, LPARAM lParam)
 
 <dl> <dt>
 
-[Usar controles de ficha](using-tab-controls.md)
+[Usar controles tab](using-tab-controls.md)
 </dt> <dt>
 
-[Demostración de controles comunes de Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows demostración de controles comunes (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

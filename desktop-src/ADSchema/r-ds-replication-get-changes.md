@@ -1,10 +1,10 @@
 ---
-title: DS-Replication-Get-Changes Extended Right
-description: Derecho extendido necesario para replicar los cambios de un NC determinado.
+title: DS-Replication-Get-Changes extendido a la derecha
+description: Derecho extendido necesario para replicar los cambios de una NC determinada.
 ms.assetid: 83477f61-c14c-4304-88d2-e2f99ea486d9
 ms.tgt_platform: multiple
 keywords:
-- DS-Replication-Get-Changes extensión de AD de derecho extendido
+- DS-Replication-Get-Changes extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c14a91a0b0bc4792b162deb7992b8672afcc59da
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1de99b14fb45501af0e10ab335f780f8c4527d46b3cf22e23fa174beafd12f86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119548675"
 ---
-# <a name="ds-replication-get-changes-extended-right"></a>DS-Replication-Get-Changes Extended Right
+# <a name="ds-replication-get-changes-extended-right"></a>DS-Replication-Get-Changes extendido a la derecha
 
-Derecho extendido necesario para replicar los cambios de un NC determinado.
+Derecho extendido necesario para replicar los cambios de una NC determinada.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
 | CN           | DS-Replication-Get-Changes           |
 | Display-Name | Replicación de los cambios de directorio        |
@@ -38,7 +38,7 @@ Derecho extendido necesario para replicar los cambios de un NC determinado.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -48,10 +48,10 @@ Derecho extendido necesario para replicar los cambios de un NC determinado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 25                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 25                                                                                                                               |
 
 
 
@@ -61,19 +61,19 @@ Derecho extendido necesario para replicar los cambios de un NC determinado.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 25                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 25                                                                                                                               |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 25                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 25                                                                                                                               |
 
 
 
@@ -83,8 +83,8 @@ Derecho extendido necesario para replicar los cambios de un NC determinado.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 25                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 25                                                                                                                               |
 
 
 
@@ -94,8 +94,8 @@ Derecho extendido necesario para replicar los cambios de un NC determinado.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 25                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 25                                                                                                                               |
 
 
 
@@ -105,8 +105,8 @@ Derecho extendido necesario para replicar los cambios de un NC determinado.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 25                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 25                                                                                                                               |
 
 
 
@@ -116,8 +116,8 @@ Derecho extendido necesario para replicar los cambios de un NC determinado.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 25                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 25                                                                                                                               |
 
 
 

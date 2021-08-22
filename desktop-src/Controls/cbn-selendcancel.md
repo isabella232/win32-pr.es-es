@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de CBN_SELENDCANCEL (Winuser. h)
-description: Se envía cuando el usuario selecciona un elemento, pero selecciona otro control o cierra el cuadro de diálogo. Indica que la selección inicial del usuario se va a omitir. La ventana primaria del cuadro combinado recibe este código de notificación a través del \_ mensaje de comando de WM.
+title: CBN_SELENDCANCEL de notificación (Winuser.h)
+description: Se envía cuando el usuario selecciona un elemento, pero luego selecciona otro control o cierra el cuadro de diálogo. Indica que se omitirá la selección inicial del usuario. La ventana primaria del cuadro combinado recibe este código de notificación a través del mensaje \_ WM COMMAND.
 ms.assetid: ac8d6d9f-4455-42d6-b0f1-5aaa55b8ee42
 keywords:
-- CBN_SELENDCANCEL controles de código de notificación de Windows
+- CBN_SELENDCANCEL código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da5b588fbd55af9dfa66a03c7912d4918821168b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 869168bfb970df9afc6399e6b1ec40e02b9ccdeaa2f2fef93fcbd86c16e9c6d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103803434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119314405"
 ---
-# <a name="cbn_selendcancel-notification-code"></a>Código de notificación de SELENDCANCEL de CBN \_
+# <a name="cbn_selendcancel-notification-code"></a>Código de notificación \_ DE CBN SELENDCANCEL
 
-Se envía cuando el usuario selecciona un elemento, pero selecciona otro control o cierra el cuadro de diálogo. Indica que la selección inicial del usuario se va a omitir. La ventana primaria del cuadro combinado recibe este código de notificación a través del mensaje de [**\_ comando de WM**](/windows/desktop/menurc/wm-command) .
+Se envía cuando el usuario selecciona un elemento, pero luego selecciona otro control o cierra el cuadro de diálogo. Indica que se omitirá la selección inicial del usuario. La ventana primaria del cuadro combinado recibe este código de notificación a través del [**mensaje \_ WM COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -42,7 +42,7 @@ CBN_SELENDCANCEL
 *wParam* 
 </dt> <dd>
 
-[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) contiene el identificador de control del cuadro combinado. [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) especifica el código de notificación.
+Loword [**contiene**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) el identificador de control del cuadro combinado. [**HIWORD especifica**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) el código de notificación.
 
 </dd> <dt>
 
@@ -53,9 +53,9 @@ Identificador del cuadro combinado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En un cuadro combinado con el [**estilo \_ simple CBS**](combo-box-styles.md) , \_ no se envía el código de notificación SELENDCANCEL de CBN. El código de notificación de [ \_ SELENDOK de CBN](cbn-selendok.md) se envía inmediatamente antes de cada código de notificación de [CBN \_ SELCHANGE](cbn-selchange.md) .
+En un cuadro combinado con el estilo SIMPLE de [**CBS, \_**](combo-box-styles.md) no se envía el código de notificación \_ DE CBN SELENDCANCEL. El [código de notificación DE \_ CBN SELENDOK](cbn-selendok.md) se envía inmediatamente antes de cada [código de notificación DE \_ CBN SELCHANGE.](cbn-selchange.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,13 +63,13 @@ En un cuadro combinado con el [**estilo \_ simple CBS**](combo-box-styles.md) , 
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -91,7 +91,7 @@ En un cuadro combinado con el [**estilo \_ simple CBS**](combo-box-styles.md) , 
 [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**comando de WM \_**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

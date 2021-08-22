@@ -1,10 +1,10 @@
 ---
-title: Enumeración DRM_ACTION_ALLOWED_QUERY_RESULTS (wmdrmsdk. h)
-description: La \_ \_ interfaz IWMDRMLicenseQuery QueryActionAllowed usa el tipo de enumeración de resultados de consulta permitidos de la acción DRM \_ \_ para especificar la razón por la que no se permite una acción.
+title: DRM_ACTION_ALLOWED_QUERY_RESULTS enumeración (Wmdrmsdk.h)
+description: La interfaz \_ \_ \_ \_ IWMDRMLicenseQuery QueryActionAllowed usa el tipo de enumeración DRM ACTION ALLOWED QUERY RESULTS para especificar el motivo por el que no se permite una acción.
 ms.assetid: dc784cdf-6efe-415b-ba72-eb8fc50bef10
 keywords:
-- DRM_ACTION_ALLOWED_QUERY_RESULTS enumeración formato de Windows Media
-- enumeración Windows Media Format
+- DRM_ACTION_ALLOWED_QUERY_RESULTS enumeración windows Media Format
+- enumeración windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d1e328acb915bd32547f3455e8556e4caba2360
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d66973838bb6d9cf745ae30b885acccf7b4b311834bbe827d96ccbeea501bd17
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119547815"
 ---
-# <a name="drm_action_allowed_query_results-enumeration"></a>\_Acción DRM \_ permitida \_ \_ enumeración de resultados de consulta
+# <a name="drm_action_allowed_query_results-enumeration"></a>ENUMERACIÓN DE \_ \_ RESULTADOS \_ DE CONSULTA PERMITIDOS \_ DE ACCIÓN DRM
 
-La interfaz [**IWMDRMLicenseQuery:: QueryActionAllowed**](iwmdrmlicensequery-queryactionallowed.md) usa el tipo de enumeración de **\_ \_ \_ \_ resultados de consulta permitidos de la acción DRM** para especificar la razón por la que no se permite una acción.
+La interfaz [**IWMDRMLicenseQuery::QueryActionAllowed**](iwmdrmlicensequery-queryactionallowed.md) usa el tipo de enumeración **DRM ACTION ALLOWED QUERY \_ \_ \_ \_ RESULTS** para especificar el motivo por el que no se permite una acción.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -53,98 +53,98 @@ typedef enum DRM_ACTION_ALLOWED_QUERY_RESULTS {
 
 <dl> <dt>
 
-<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED"></span><span id="drm_action_allowed_query_not_enabled"></span>**no se habilitó la \_ consulta de acción DRM \_ permitida \_ \_ \_**
+<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED"></span><span id="drm_action_allowed_query_not_enabled"></span>**CONSULTA \_ PERMITIDA DE ACCIÓN DRM NO \_ \_ \_ \_ HABILITADA**
 </dt> <dd>
 
-Especifica que no se permite la acción de consultas. En el caso de las acciones no permitidas, el valor devuelto es este valor combinado mediante una operación OR bit a bit con uno o varios de los valores de esta enumeración.
+Especifica que no se permite la acción de consultas. Para las acciones que no se permiten, el valor devuelto es este valor combinado mediante un OR bit a bit con uno o varios de los otros valores de esta enumeración.
 
 </dd> <dt>
 
-<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_NO_LICENSE"></span><span id="drm_action_allowed_query_not_enabled_no_license"></span>**la \_ consulta de acción DRM \_ \_ \_ no \_ está habilitada \_ sin \_ licencia**
+<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_NO_LICENSE"></span><span id="drm_action_allowed_query_not_enabled_no_license"></span>**CONSULTA \_ PERMITIDA DE ACCIÓN DRM NO HABILITADA SIN \_ \_ \_ \_ \_ \_ LICENCIA**
 </dt> <dd>
 
 Especifica que no existe una licencia para el contenido solicitado.
 
 </dd> <dt>
 
-<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_NO_RIGHT"></span><span id="drm_action_allowed_query_not_enabled_no_right"></span>**no \_ se \_ \_ \_ ha \_ habilitado la \_ consulta de acción DRM \_**
+<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_NO_RIGHT"></span><span id="drm_action_allowed_query_not_enabled_no_right"></span>**CONSULTA \_ PERMITIDA DE ACCIÓN DRM NO HABILITADA SIN \_ \_ \_ \_ \_ \_ DERECHO**
 </dt> <dd>
 
-Especifica que existe una licencia para el contenido, pero que no se permite el derecho consultado.
+Especifica que existe una licencia para el contenido, pero que no se permite el derecho de consulta.
 
 </dd> <dt>
 
-<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_EXHAUSTED"></span><span id="drm_action_allowed_query_not_enabled_exhausted"></span>**\_no se \_ \_ \_ ha \_ habilitado la \_ consulta de acción DRM permitida**
+<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_EXHAUSTED"></span><span id="drm_action_allowed_query_not_enabled_exhausted"></span>**CONSULTA \_ PERMITIDA DE ACCIÓN DRM NO HABILITADA \_ \_ \_ \_ \_ AGOTADA**
 </dt> <dd>
 
-Especifica que el derecho consultado está restringido por un recuento y que no quedan más usos.
+Especifica que el derecho de consulta está restringido por un recuento y que no quedan más usos.
 
 </dd> <dt>
 
-<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_EXPIRED"></span><span id="drm_action_allowed_query_not_enabled_expired"></span>**la \_ consulta de la acción DRM \_ permitida \_ \_ no \_ está habilitada \_**
+<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_EXPIRED"></span><span id="drm_action_allowed_query_not_enabled_expired"></span>**LA CONSULTA \_ PERMITIDA DE ACCIÓN DRM NO HABILITADA \_ \_ \_ \_ \_ EXPIRÓ**
 </dt> <dd>
 
-Especifica que el derecho consultado está restringido con una fecha de expiración anterior a la fecha actual.
+Especifica que el derecho de consulta está restringido con una fecha de expiración anterior a la fecha actual.
 
 </dd> <dt>
 
-<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_NOT_STARTED"></span><span id="drm_action_allowed_query_not_enabled_not_started"></span>**\_no se \_ \_ \_ \_ \_ \_ ha iniciado la consulta de acción DRM habilitada**
+<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_NOT_STARTED"></span><span id="drm_action_allowed_query_not_enabled_not_started"></span>**CONSULTA \_ PERMITIDA DE ACCIÓN DRM NO HABILITADA NO \_ \_ \_ \_ \_ \_ INICIADA**
 </dt> <dd>
 
-Especifica que el derecho consultado está restringido con una fecha de inicio posterior a la fecha actual.
+Especifica que la derecha consultada está restringida con una fecha de inicio posterior a la fecha actual.
 
 </dd> <dt>
 
-<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_APPSEC_TOO_LOW"></span><span id="drm_action_allowed_query_not_enabled_appsec_too_low"></span>**la \_ consulta de DRM \_ permitida \_ \_ no \_ está habilitada \_ APPSEC \_ demasiado \_ baja**
+<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_APPSEC_TOO_LOW"></span><span id="drm_action_allowed_query_not_enabled_appsec_too_low"></span>**CONSULTA \_ PERMITIDA DE LA ACCIÓN DRM \_ \_ \_ \_ APPSEC NO HABILITADA \_ DEMASIADO \_ \_ BAJA**
 </dt> <dd>
 
-Especifica que existe una licencia para el contenido y que la licencia permite el derecho consultado, pero que el nivel de seguridad de la aplicación que realiza la llamada no es suficientemente alto.
+Especifica que existe una licencia para el contenido y que la licencia permite el derecho de consulta, pero que el nivel de seguridad de la aplicación que realiza la llamada no es lo suficientemente alto.
 
 </dd> <dt>
 
-<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_REQ_INDIV"></span><span id="drm_action_allowed_query_not_enabled_req_indiv"></span>**acción de DRM \_ \_ permitida de \_ solicitud \_ no \_ habilitada \_ \_ indiv**
+<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_REQ_INDIV"></span><span id="drm_action_allowed_query_not_enabled_req_indiv"></span>**CONSULTA \_ PERMITIDA DE LA ACCIÓN DRM NO HABILITADA PARA LA CONSULTA \_ \_ \_ \_ \_ \_ REQ INDIV**
 </dt> <dd>
 
-Especifica que existe una licencia para el contenido y que la licencia permite el derecho consultado, pero que se debe individualizar el subsistema DRM.
+Especifica que existe una licencia para el contenido y que la licencia permite el derecho de consulta, pero que el subsistema DRM debe ser individualizado.
 
 </dd> <dt>
 
-<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_COPY_OPL_TOO_LOW"></span><span id="drm_action_allowed_query_not_enabled_copy_opl_too_low"></span>**la \_ acción de DRM \_ permitió \_ consulta \_ no \_ habilitada de \_ copia de \_ OPL \_ demasiado \_ baja**
+<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_COPY_OPL_TOO_LOW"></span><span id="drm_action_allowed_query_not_enabled_copy_opl_too_low"></span>**CONSULTA \_ PERMITIDA DE ACCIÓN DRM NO HABILITADA PARA COPIAR \_ \_ \_ \_ \_ \_ OPL DEMASIADO \_ \_ BAJA**
 </dt> <dd>
 
 Especifica que el nivel de protección de salida del cliente es demasiado bajo.
 
 </dd> <dt>
 
-<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_COPY_OPL_EXCLUDED"></span><span id="drm_action_allowed_query_not_enabled_copy_opl_excluded"></span>**la \_ acción DRM \_ permitió la \_ consulta \_ no \_ habilitada de copia de \_ \_ OPL \_ excluida**
+<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_COPY_OPL_EXCLUDED"></span><span id="drm_action_allowed_query_not_enabled_copy_opl_excluded"></span>**CONSULTA \_ PERMITIDA DE ACCIÓN DRM NO HABILITADA PARA COPIAR \_ \_ \_ \_ \_ \_ OPL \_ EXCLUIDA**
 </dt> <dd>
 
-Especifica que el nivel de protección de salida del cliente se encuentra en la lista de exclusión.
+Especifica que el nivel de protección de salida del cliente está en la lista de exclusión.
 
 </dd> <dt>
 
-<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_NO_CLOCK_SUPPORT"></span><span id="drm_action_allowed_query_not_enabled_no_clock_support"></span>**la \_ consulta de acción DRM \_ permitía \_ \_ no \_ habilitada, \_ \_ no se admite el reloj \_**
+<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_NO_CLOCK_SUPPORT"></span><span id="drm_action_allowed_query_not_enabled_no_clock_support"></span>**CONSULTA \_ PERMITIDA DE ACCIÓN DRM NO HABILITADA SIN COMPATIBILIDAD CON \_ \_ \_ \_ \_ \_ \_ RELOJ**
 </dt> <dd>
 
 Especifica que la licencia requiere compatibilidad con el reloj seguro y que el cliente no la proporciona.
 
 </dd> <dt>
 
-<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_NO_METERING_SUPPORT"></span><span id="drm_action_allowed_query_not_enabled_no_metering_support"></span>**no \_ se \_ \_ \_ ha \_ habilitado la \_ \_ consulta de acción \_ DRM**
+<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_NO_METERING_SUPPORT"></span><span id="drm_action_allowed_query_not_enabled_no_metering_support"></span>**CONSULTA \_ PERMITIDA DE ACCIÓN DRM NO HABILITADA SIN COMPATIBILIDAD CON LA \_ \_ \_ \_ \_ \_ \_ MEDICIÓN**
 </dt> <dd>
 
-Especifica que la acción consultada está permitida por una licencia, pero que es necesaria y que el cliente no admite la medición.
+Especifica que una licencia permite la acción consultada, pero esa medición es necesaria y el cliente no admite la medición.
 
 </dd> <dt>
 
-<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_CHAIN_DEPTH_TOO_HIGH"></span><span id="drm_action_allowed_query_not_enabled_chain_depth_too_high"></span>**la \_ acción de DRM \_ permitió \_ consulta \_ no \_ habilitada \_ profundidad de cadena \_ \_ demasiado \_ alta**
+<span id="DRM_ACTION_ALLOWED_QUERY_NOT_ENABLED_CHAIN_DEPTH_TOO_HIGH"></span><span id="drm_action_allowed_query_not_enabled_chain_depth_too_high"></span>**CONSULTA PERMITIDA \_ DE LA ACCIÓN DRM NO HABILITADA PROFUNDIDAD DE CADENA \_ DEMASIADO \_ \_ \_ \_ \_ \_ \_ ALTA**
 </dt> <dd>
 
-Especifica que no se pueden determinar los derechos para la acción consultada porque el contenido está incluido en una licencia encadenada y falta la licencia de hoja.
+Especifica que no se pueden determinar los derechos de la acción consultada porque el contenido está cubierto por una licencia encadenada y falta la licencia hoja.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los valores de este tipo de enumeración indican que no se permite una acción. Un valor de cero indica que se permite la acción.
 
@@ -154,7 +154,7 @@ Los valores de este tipo de enumeración indican que no se permite una acción. 
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: En general, se llamará a este método desde DllUnregisterServer. El código de ejemplo siguiente se puede incluir en el código de DllUnregisterServer.
+description: En general, se llamará a este método desde DllUnregisterServer. El código de ejemplo siguiente se puede colocar en el código de DllUnregisterServer.
 ms.assetid: a5567c3b-edc0-427a-9751-ba221611e92c
-title: Anular el registro de un terminal acoplable
+title: Anulación del registro de un terminal conectable
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb53f27dc7b468fd4288fd407faee00ab1ece8ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3068cd6d749dda2f1b6618672a1aabaace72ba6c3ef137c1c47952209c87f9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119518115"
 ---
-# <a name="unregister-a-pluggable-terminal"></a>Anular el registro de un terminal acoplable
+# <a name="unregister-a-pluggable-terminal"></a>Anulación del registro de un terminal conectable
 
-En general, se llamará a este método desde **DllUnregisterServer**. El código de ejemplo siguiente se puede incluir en el código de **DllUnregisterServer**.
+En general, se llamará a este método **desde DllUnregisterServer**. El código de ejemplo siguiente se puede colocar en el código **de DllUnregisterServer**.
 
 ``` syntax
 ITPluggableTerminalClassRegistration* pTerminal;

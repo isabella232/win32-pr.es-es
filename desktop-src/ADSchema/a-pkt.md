@@ -1,11 +1,11 @@
 ---
-title: PKT (atributo)
-description: Tabla de información de particiones DFS. Describe la estructura de una jerarquía de Sistema de archivos distribuido.
+title: Atributo PKT
+description: Tabla de conocimiento de partición DFS. Describe la estructura de una Sistema de archivos distribuido jerarquía.
 ms.assetid: a7b2e9ee-04c0-40e8-8670-8261575a45ab
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo PKT
-- Esquema de AD de atributo pKT
+- Esquema de AD del atributo PKT
+- Esquema de AD del atributo pKT
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1647e2730b254121763b6598a8ec365b376dd52d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f01f0b1abcf73223848b75867c052b056ab2f0ff6dfdf2e4f9b633af676c57dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119581855"
 ---
-# <a name="pkt-attribute"></a>PKT (atributo)
+# <a name="pkt-attribute"></a>Atributo PKT
 
-Tabla de información de particiones DFS. Describe la estructura de una jerarquía de Sistema de archivos distribuido.
+Tabla de conocimiento de partición DFS. Describe la estructura de una Sistema de archivos distribuido jerarquía.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | PKT                                                   |
-| Nombre para mostrar de LDAP | pKT                                                   |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | Pkt                                                   |
+| Size              | \-                                                    |
+| Privilegio actualizar  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.206                                |
-| System-ID-GUID    | 8447f9f1-1027-11d0-a05f-00aa006c33ed                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 8447f9f1-1027-11d0-a05f-00aa006c33ed                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,18 +55,18 @@ Tabla de información de particiones DFS. Describe la estructura de una jerarqu�
 
 | Entrada | Value |
 |------------------------|--------------------------------------|
-| Identificador de vínculo                | \-                                   |
+| Id. de vínculo                | \-                                   |
 | MAPI-Id                | \-                                   |
-| System-Only            | False                                |
-| Tiene un único valor       | True                                 |
-| Está indexado             | False                                |
-| En el catálogo global      | False                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                         |
+| System-Only            | Falso                                |
+| Es de un solo valor       | Verdadero                                 |
+| Está indexado             | Falso                                |
+| En el catálogo global      | Falso                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | \-                                   |
 | Range-Upper            | \-                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Clases usadas en        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Clases usadas en        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Tabla de información de particiones DFS. Describe la estructura de una jerarqu�
 
 | Entrada | Value |
 |------------------------|--------------------------------------|
-| Identificador de vínculo                | \-                                   |
+| Id. de vínculo                | \-                                   |
 | MAPI-Id                | \-                                   |
-| System-Only            | False                                |
-| Tiene un único valor       | True                                 |
-| Está indexado             | False                                |
-| En el catálogo global      | False                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                         |
+| System-Only            | Falso                                |
+| Es de un solo valor       | Verdadero                                 |
+| Está indexado             | Falso                                |
+| En el catálogo global      | Falso                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | \-                                   |
 | Range-Upper            | \-                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Clases usadas en        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Clases usadas en        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Tabla de información de particiones DFS. Describe la estructura de una jerarqu�
 
 | Entrada | Value |
 |------------------------|--------------------------------------|
-| Identificador de vínculo                | \-                                   |
+| Id. de vínculo                | \-                                   |
 | MAPI-Id                | \-                                   |
-| System-Only            | False                                |
-| Tiene un único valor       | True                                 |
-| Está indexado             | False                                |
-| En el catálogo global      | False                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                         |
+| System-Only            | Falso                                |
+| Es de un solo valor       | Verdadero                                 |
+| Está indexado             | Falso                                |
+| En el catálogo global      | Falso                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | \-                                   |
 | Range-Upper            | \-                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Clases usadas en        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Clases usadas en        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Tabla de información de particiones DFS. Describe la estructura de una jerarqu�
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------|
-| Identificador de vínculo                | \-                                   |
+| Id. de vínculo                | \-                                   |
 | MAPI-Id                | \-                                   |
-| System-Only            | False                                |
-| Tiene un único valor       | True                                 |
-| Está indexado             | False                                |
-| En el catálogo global      | False                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                         |
+| System-Only            | Falso                                |
+| Es de un solo valor       | Verdadero                                 |
+| Está indexado             | Falso                                |
+| En el catálogo global      | Falso                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | \-                                   |
 | Range-Upper            | \-                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Clases usadas en        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Clases usadas en        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Tabla de información de particiones DFS. Describe la estructura de una jerarqu�
 
 | Entrada | Value |
 |------------------------|--------------------------------------|
-| Identificador de vínculo                | \-                                   |
+| Id. de vínculo                | \-                                   |
 | MAPI-Id                | \-                                   |
-| System-Only            | False                                |
-| Tiene un único valor       | True                                 |
-| Está indexado             | False                                |
-| En el catálogo global      | False                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                         |
+| System-Only            | Falso                                |
+| Es de un solo valor       | Verdadero                                 |
+| Está indexado             | Falso                                |
+| En el catálogo global      | Falso                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | \-                                   |
 | Range-Upper            | \-                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Clases usadas en        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Clases usadas en        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Tabla de información de particiones DFS. Describe la estructura de una jerarqu�
 
 | Entrada | Value |
 |------------------------|--------------------------------------|
-| Identificador de vínculo                | \-                                   |
+| Id. de vínculo                | \-                                   |
 | MAPI-Id                | \-                                   |
-| System-Only            | False                                |
-| Tiene un único valor       | True                                 |
-| Está indexado             | False                                |
-| En el catálogo global      | False                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                         |
+| System-Only            | Falso                                |
+| Es de un solo valor       | Verdadero                                 |
+| Está indexado             | Falso                                |
+| En el catálogo global      | Falso                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                         |
 | Range-Lower            | \-                                   |
 | Range-Upper            | \-                                   |
 | Search-Flags           | 0x00000000                           |
 | System-Flags           | 0x00000010                           |
-| Clases usadas en        | [**FT-DFS**](c-ftdfs.md)<br/> |
+| Clases usadas en        | [**FT-Dfs**](c-ftdfs.md)<br/> |
 
 
 

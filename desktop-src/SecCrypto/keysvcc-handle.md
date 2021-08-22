@@ -1,7 +1,7 @@
 ---
-description: El tipo de datos de identificador de KEYSVCC \_ define un identificador de servicio de claves. \_Las funciones RKeyOpenKeyService y RKeyCloseKeyService usan un identificador de identificador de KEYSVCC.
+description: El tipo de datos KEYSVCC \_ HANDLE define un identificador de servicio de claves. Las funciones RKeyOpenKeyService y RKeyCloseKeyService usan un identificador KEYSVCC \_ HANDLE.
 ms.assetid: d0fd5184-5c8e-4f96-9ff1-8abd6f718d05
-title: KEYSVCC_HANDLE (Rkeysvcc. h)
+title: KEYSVCC_HANDLE (Rkeysvcc.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1427a4ffd4637e073e517e5df54af72191992d11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 32e34285c6291cb7cb87aeb9095e5261b43999b0eefa82e33704719e7673f1b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119515955"
 ---
-# <a name="keysvcc_handle"></a>identificador de KEYSVCC \_
+# <a name="keysvcc_handle"></a>IDENTIFICADOR \_ KEYSVCC
 
-El tipo de datos de **\_ identificador de KEYSVCC** define un identificador de servicio de claves. Las funciones [**RKeyOpenKeyService**](rkeyopenkeyservice.md) y [**RKeyCloseKeyService**](rkeyclosekeyservice.md) usan un identificador de **\_ identificador de KEYSVCC** .
+El **tipo de datos KEYSVCC \_ HANDLE** define un identificador de servicio de claves. Las funciones [**RKeyOpenKeyService**](rkeyopenkeyservice.md) y [**RKeyCloseKeyService**](rkeyclosekeyservice.md) usan un identificador **KEYSVCC \_** HANDLE.
 
 
 ```C++
@@ -31,11 +31,11 @@ typedef void* KEYSVCC_HANDLE;
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Rkeysvcc. h</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Rkeysvcc.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Agrega orígenes de arranque a una configuración de sistema virtual cuando se aplica a un &\# 0034; estado&\# 0034; configuración del sistema virtual.
+description: Agrega orígenes de arranque a una configuración del sistema virtual cuando se aplica a una configuración del sistema \# virtual &0034;state&\# 0034;.
 ms.assetid: 2d091554-73d4-47c6-a0c2-97644fc9abe9
-title: Método AddBootSourceSettings de la clase Msvm_VirtualSystemManagementService
+title: Método AddBootSourceSettings de la Msvm_VirtualSystemManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8e20a1184e11113ba25ac060ec19dab5d2391b84
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d52333f3118caa1cf437fabb536bb62f84b99dab01b3115e7f6a65c3f182a17e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153889"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148078"
 ---
-# <a name="addbootsourcesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método AddBootSourceSettings de la \_ clase VirtualSystemManagementService de MSVM
+# <a name="addbootsourcesettings-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método AddBootSourceSettings de la clase Msvm \_ VirtualSystemManagementService
 
-Agrega orígenes de arranque a una configuración de sistema virtual cuando se aplica a una configuración de sistema virtual "State".
+Agrega orígenes de arranque a una configuración del sistema virtual cuando se aplica a una configuración del sistema virtual de "estado".
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,31 +42,31 @@ uint32 AddBootSourceSettings(
 
 <dl> <dt>
 
-*AffectedConfiguration* \[ de\]
+*AffectedConfiguration* \[ En\]
 </dt> <dd>
 
-Un [**\_ VirtualSystemSettingData de CIM**](cim-virtualsystemsettingdata.md) que contiene la configuración afectada.
+Cim [**\_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) que contiene la configuración afectada.
 
 </dd> <dt>
 
-*BootSourceSettings* \[ de\]
+*BootSourceSettings* \[ En\]
 </dt> <dd>
 
-Una matriz que contiene la configuración de origen de arranque.
+Matriz que contiene la configuración del origen de arranque.
 
 </dd> <dt>
 
-*ResultingBootSourceSettings* \[ enuncia\]
+*ResultingBootSourceSettings* \[ out\]
 </dt> <dd>
 
-Si se ejecuta correctamente, devuelve un [**\_ SettingData de CIM**](cim-settingdata.md) con la configuración de origen de arranque resultante.
+Si se ejecuta correctamente, devuelve [**un \_ valor settingData de CIM**](cim-settingdata.md) con la configuración de origen de arranque resultante.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -85,7 +85,7 @@ Si se ejecuta correctamente, devuelve 0 o 4096; de lo contrario, devuelve un err
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -97,10 +97,10 @@ Si se ejecuta correctamente, devuelve 0 o 4096; de lo contrario, devuelve un err
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -109,10 +109,10 @@ Si se ejecuta correctamente, devuelve 0 o 4096; de lo contrario, devuelve un err
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -121,7 +121,7 @@ Si se ejecuta correctamente, devuelve 0 o 4096; de lo contrario, devuelve un err
 
 <dl> <dt>
 
-[**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

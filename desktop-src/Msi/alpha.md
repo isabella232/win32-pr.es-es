@@ -1,22 +1,22 @@
 ---
-description: La propiedad alfa solo se define si se ejecuta en un procesador Alpha.
+description: La propiedad Alpha solo se define si se ejecuta en un procesador Alfa.
 ms.assetid: f242fd6f-ae73-4ea6-9650-f2661440f61f
-title: Propiedad alfa
+title: Propiedad Alfa
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a699f5d48d7cc21e51862630ebb8c246453cff69
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b6827ede2e675253984626849f5e0321ef1f9c8179a1c4a380dcd1cca0866417
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119315495"
 ---
-# <a name="alpha-property"></a>Propiedad alfa
+# <a name="alpha-property"></a>Propiedad Alfa
 
-La propiedad **alfa** solo se define si se ejecuta en un procesador Alpha. El instalador lo establece en el valor del nivel de procesador numérico.
+La **propiedad Alpha** solo se define si se ejecuta en un procesador Alfa. El instalador lo establece en el valor del nivel de procesador numérico.
 
 > [!Note]  
-> La plataforma Alpha no es compatible con Windows Installer.
+> La plataforma Alfa no es compatible con Windows Instalador.
 
  
 
@@ -26,7 +26,7 @@ La propiedad **alfa** solo se define si se ejecuta en un procesador Alpha. El in
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 
@@ -37,7 +37,7 @@ La propiedad **alfa** solo se define si se ejecuta en un procesador Alpha. El in
 [Propiedades](properties.md)
 </dt> <dt>
 
-[**Propiedad de Resumen de plantilla**](template-summary.md)
+[**Propiedad Resumen de plantilla**](template-summary.md)
 </dt> </dl>
 
  

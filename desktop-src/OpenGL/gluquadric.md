@@ -1,9 +1,9 @@
 ---
-title: función gluQuadricCallback (GLU. h)
-description: La función gluQuadricCallback define una devolución de llamada para un objeto quadric.
+title: Función gluQuadricCallback (Glu.h)
+description: La función gluQuadricCallback define una devolución de llamada para un objeto cuádigo.
 ms.assetid: 1f1e9fe9-7239-419c-92b6-af2534850ac5
 keywords:
-- gluQuadricCallback (función) OpenGL
+- Función GluQuadricCallback OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c0c92e3cd4e723b59ee9060c5e2f33b710e7f69
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 36ce32bf041a59f272b18ebe17916963c4e5fd8d208da9d739468c88b9286dfc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104534798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119488795"
 ---
-# <a name="gluquadriccallback-function"></a>gluQuadricCallback función)
+# <a name="gluquadriccallback-function"></a>función gluQuadricCallback
 
-La función **gluQuadricCallback** define una devolución de llamada para un objeto quadric.
+La **función gluQuadricCallback** define una devolución de llamada para un objeto cuádigo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,20 +45,20 @@ void WINAPI gluQuadricCallback(
 *qobj* 
 </dt> <dd>
 
-El objeto quadric (creado con [**gluNewQuadric**](glunewquadric.md)).
+Objeto cuádigo (creado [**con gluNewQuadric).**](glunewquadric.md)
 
 </dd> <dt>
 
-*cuales* 
+*Que* 
 </dt> <dd>
 
-Devolución de llamada que se está definiendo. El único valor válido es GLU \_ error.
+Devolución de llamada que se está definindo. El único valor válido es GLU \_ ERROR.
 
 
 
 | Value                                                                                                                                             | Significado                                                                                                                                                                                                                                                                                                 |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GLU_ERROR"></span><span id="glu_error"></span><dl> <dt>**\_error Glu**</dt> </dl> | Se llama a la función **gluQuadricCallback** cuando se produce un error. Su único argumento es de tipo **GLenum** y indica el error específico que se ha producido. Las cadenas de caracteres que describen estos errores se pueden recuperar con la llamada a [**gluErrorString**](gluerrorstring.md) .<br/> |
+| <span id="GLU_ERROR"></span><span id="glu_error"></span><dl> <dt>**ERROR DE GLU \_**</dt> </dl> | Se llama a la función **gluQuadricCallback** cuando se encuentra un error. Su único argumento es de tipo **GLenum** e indica el error específico que se produjo. Las cadenas de caracteres que describen estos errores se pueden recuperar con la [**llamada a gluErrorString.**](gluerrorstring.md)<br/> |
 
 
 
@@ -77,20 +77,20 @@ Función a la que se va a llamar.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Use **gluQuadricCallback** para definir una nueva devolución de llamada que se va a usar en un objeto quadric. Si la devolución de llamada especificada ya está definida, se reemplaza. Si *FN* es **null**, se borra cualquier devolución de llamada existente.
+Use **gluQuadricCallback para** definir una nueva devolución de llamada que usará un objeto cuádigo. Si la devolución de llamada especificada ya está definida, se reemplaza. Si *fn* es **NULL,** se borra cualquier devolución de llamada existente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

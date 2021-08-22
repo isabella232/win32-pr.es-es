@@ -1,33 +1,33 @@
 ---
-description: PNRP usa la función WSASetService para registrar o quitar nombres de mismo nivel.
+description: PNRP usa la función WSASetService para registrar o quitar nombres del mismo nivel.
 ms.assetid: ea7941cd-2b3c-42d1-a291-759cbc32db0c
 title: PNRP y WSASetService
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 005a04251a8b038c5895ae5dfafd65be9263edfe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2afbc11e65c9d583f91b5070e960435612ad05717b6ccfe087924da133c531b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119518105"
 ---
 # <a name="pnrp-and-wsasetservice"></a>PNRP y WSASetService
 
-PNRP usa la función [**WSASetService**](winsock-nsp-reference-links.md) para registrar o quitar [nombres de mismo nivel](peer-names.md).
+PNRP usa la [**función WSASetService**](winsock-nsp-reference-links.md) para registrar o quitar nombres [del mismo nivel.](peer-names.md)
 
 ## <a name="registering-a-name"></a>Registrar un nombre
 
-El registro incluye un nombre del mismo nivel y un conjunto de puntos de conexión en los que se puede establecer contacto con un servicio. Un registro es específico de una nube PNRP. Una vez registrado un elemento del mismo nivel, se produce un retraso entre el registro y la propagación de la información de registro a otros nodos. Durante este tiempo, es posible que otros nodos no puedan resolver un elemento del mismo nivel registrado recientemente.
+El registro incluye un nombre del mismo nivel y un conjunto de puntos de conexión en los que se puede ponerse en contacto con un servicio. Un registro es específico de una nube PNRP. Una vez registrado un elemento del mismo nivel, hay un retraso entre el registro y la propagación de la información de registro a otros nodos. Durante este tiempo, es posible que otros nodos no puedan resolver un elemento del mismo nivel recién registrado.
 
 El registro del servicio no es persistente.
 
--   Si un proceso de cliente que registra un nombre del mismo nivel sale o llama a [**WSACleanup**](winsock-nsp-reference-links.md), se anula el registro del nombre del mismo nivel.
--   Si el proceso actual ya ha registrado un nombre de mismo nivel especificado en la misma nube, se reemplaza con nuevos valores de registro.
+-   Si un proceso de cliente que registra un nombre del mismo nivel se cierra o llama a [**WSACleanup**](winsock-nsp-reference-links.md), se anula el registro del nombre del mismo nivel.
+-   Si el proceso actual ya ha registrado un nombre de mismo nivel especificado en la misma nube, se reemplaza por nuevos valores de registro.
 
 Al registrar un nombre del mismo nivel, se deben indicar los siguientes valores de parámetro:
 
--   el parámetro *essOperation* debe tener un valor de **RNRSERVICE \_ Register**.
--   el parámetro *dwControlFlags* debe ser cero (0).
+-   *El parámetro essOperation* debe tener un valor **de RNRSERVICE \_ REGISTER.**
+-   *El parámetro dwControlFlags* debe ser cero (0).
 
 Al registrar un nombre del mismo nivel, la estructura [**LPWSAQUERYSET**](pnrp-and-wsaqueryset.md) a la que hace referencia el parámetro *lpqsRegInfo* debe contener los valores siguientes:
 
@@ -43,7 +43,7 @@ Especifica el tamaño de esta estructura.
 <span id="lpszServiceInstanceName"></span><span id="lpszserviceinstancename"></span><span id="LPSZSERVICEINSTANCENAME"></span>**lpszServiceInstanceName**
 </dt> <dd>
 
-Especifica un nombre del mismo nivel que se va a registrar. Si el [nombre del mismo nivel](peer-names.md) no es seguro, la identidad es opcional. Si la identidad se especifica como **null**, PNRP usa la identidad local de la máquina, de forma predeterminada.
+Especifica un nombre del mismo nivel que se registrará. Si el [nombre del mismo](peer-names.md) nivel no es seguro, la identidad es opcional. Si la identidad se especifica como **NULL,** PNRP usa la identidad local de la máquina de forma predeterminada.
 
 </dd> <dt>
 
@@ -57,35 +57,35 @@ Debe ser SVCID \_ PNRPNAME.
 <span id="lpVersion"></span><span id="lpversion"></span><span id="LPVERSION"></span>**lpVersion**
 </dt> <dd>
 
-ignorado. Se establece en **null**.
+ignorado. Se establece en **NULL.**
 
 </dd> <dt>
 
 <span id="lpszComment"></span><span id="lpszcomment"></span><span id="LPSZCOMMENT"></span>**lpszComment**
 </dt> <dd>
 
-ignorado. Sin embargo, sigue siendo necesario que la cadena tenga menos de 40 caracteres, incluido el terminador **null** .
+ignorado. Sin embargo, la cadena debe tener menos de 40 caracteres, incluido el terminador **NULL.**
 
 </dd> <dt>
 
 <span id="dwNameSpace"></span><span id="dwnamespace"></span><span id="DWNAMESPACE"></span>**dwNameSpace**
 </dt> <dd>
 
-Debe ser **NS \_ PNRPNAME** o **NS \_ All**.
+Debe ser **NS \_ PNRPNAME o** **NS \_ ALL.**
 
 </dd> <dt>
 
 <span id="lpNSProviderID"></span><span id="lpnsproviderid"></span><span id="LPNSPROVIDERID"></span>**lpNSProviderID**
 </dt> <dd>
 
-Debe ser un **\_ proveedor NS \_ PNRPNAME** o **null**.
+Debe ser **NS \_ PROVIDER \_ PNRPNAME** o **NULL.**
 
 </dd> <dt>
 
 <span id="lpszContext"></span><span id="lpszcontext"></span><span id="LPSZCONTEXT"></span>**lpszContext**
 </dt> <dd>
 
-Debe ser un nombre de nube, una cadena vacía o **null**. Si este valor es **null** o una cadena vacía, se usa la nube predeterminada, "global". De lo contrario, debe apuntar a un nombre de nube válido.
+Debe ser un nombre de nube, una cadena vacía o **NULL.** Si este valor es **NULL o** una cadena vacía, se usa la nube predeterminada, "Global". De lo contrario, debe apuntar a un nombre de nube válido.
 
 </dd> <dt>
 
@@ -99,21 +99,21 @@ ignorado. Se establece en cero (0).
 <span id="lpszQueryString"></span><span id="lpszquerystring"></span><span id="LPSZQUERYSTRING"></span>**lpszQueryString**
 </dt> <dd>
 
-ignorado. Se establece en **null**.
+ignorado. Se establece en **NULL.**
 
 </dd> <dt>
 
 <span id="dwNumberOfCsAddrs"></span><span id="dwnumberofcsaddrs"></span><span id="DWNUMBEROFCSADDRS"></span>**dwNumberOfCsAddrs**
 </dt> <dd>
 
-Especifica el número de direcciones registradas por un servicio. El número máximo de direcciones que se pueden registrar para un único nombre es 10.
+Especifica el número de direcciones registradas por un servicio. El número máximo de direcciones que se pueden registrar para un nombre único es 10.
 
 </dd> <dt>
 
 <span id="lpcsaBuffer"></span><span id="lpcsabuffer"></span><span id="LPCSABUFFER"></span>**lpcsaBuffer**
 </dt> <dd>
 
-Puntero a una lista de direcciones que se van a registrar.
+Puntero a una lista de direcciones que se registrarán.
 
 </dd> <dt>
 
@@ -127,13 +127,13 @@ ignorado. Se establece en cero (0).
 <span id="lpBlob"></span><span id="lpblob"></span><span id="LPBLOB"></span>**lpBlob**
 </dt> <dd>
 
-Puntero a una estructura de [**BLOB**](winsock-nsp-reference-links.md) que apunta a una estructura [**PNRPINFO**](/windows/desktop/api/Pnrpns/ns-pnrpns-pnrpinfo_v1) . Se deben establecer los parámetros específicos de la estructura **PNRPINFO** . Para obtener más información, consulte la siguiente sección de la estructura **PNRPINFO** .
+Puntero a una [**estructura BLOB**](winsock-nsp-reference-links.md) que apunta a una [**estructura PNRPINFO.**](/windows/desktop/api/Pnrpns/ns-pnrpns-pnrpinfo_v1) Se deben establecer parámetros específicos en la estructura **PNRPINFO.** Para obtener más información, vea la siguiente **sección sobre la estructura PNRPINFO.**
 
 </dd> </dl>
 
-## <a name="pnrpinfo-structure"></a>Estructura PNRPINFO
+## <a name="pnrpinfo-structure"></a>PNRPINFO (estructura)
 
-Si se establece el miembro **lpBlob** de la estructura [**LPWSAQUERYSET**](pnrp-and-wsaqueryset.md) , se deben establecer los siguientes miembros de la estructura [**PNRPINFO**](/windows/desktop/api/Pnrpns/ns-pnrpns-pnrpinfo_v1) :
+Si se **establece el miembro lpBlob** de la estructura [**LPWSAQUERYSET,**](pnrp-and-wsaqueryset.md) se deben establecer los siguientes miembros de la estructura [**PNRPINFO:**](/windows/desktop/api/Pnrpns/ns-pnrpns-pnrpinfo_v1)
 
 <dl> <dt>
 
@@ -147,7 +147,7 @@ Especifica el tamaño de esta estructura.
 <span id="lpwszIdentity"></span><span id="lpwszidentity"></span><span id="LPWSZIDENTITY"></span>**lpwszIdentity**
 </dt> <dd>
 
-Especifica la identidad del nombre del mismo nivel que se crea mediante [**PeerIdentityCreate**](/windows/desktop/api/P2P/nf-p2p-peeridentitycreate). Si un nombre del mismo nivel no es seguro, la identidad es opcional. Si la identidad se especifica como **null**, PNRP usa la identidad local del equipo, de forma predeterminada.
+Especifica la identidad del nombre del mismo nivel que se crea mediante [**PeerIdentityCreate**](/windows/desktop/api/P2P/nf-p2p-peeridentitycreate). Si un nombre del mismo nivel no es seguro, la identidad es opcional. Si la identidad se especifica como **NULL,** PNRP usa la identidad local del equipo, de forma predeterminada.
 
 </dd> <dt>
 
@@ -179,10 +179,10 @@ ignorado. Se establece en cero (0).
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>**dwFlags**
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>**Dwflags**
 </dt> <dd>
 
-Debe ser cero (0) o una **\_ sugerencia PNRPINFO**. El valor predeterminado es cero (0). Esto significa que la parte de la ubicación del servicio del identificador PNRP se genera mediante la dirección IP de **saHint**. De lo contrario, la ubicación del servicio se genera con la primera dirección IP en la primera entrada IPv6 del miembro **lpcsaBuffer** .
+Debe ser cero (0) o **PNRPINFO \_ HINT**. El valor predeterminado es cero (0). Esto significa que la parte de la ubicación del servicio del identificador PNRP se basa en la dirección IP de **saHint**. De lo contrario, la ubicación del servicio se basa en la primera dirección IP de la primera entrada IPv6 del **miembro lpcsaBuffer.**
 
 </dd> <dt>
 
@@ -200,16 +200,16 @@ ignorado. Se establece en cero (0).
 
 </dd> </dl>
 
-## <a name="unregistering-a-peer-name"></a>Anular el registro de un nombre de mismo nivel
+## <a name="unregistering-a-peer-name"></a>Anular el registro de un nombre del mismo nivel
 
-La lista siguiente identifica la información importante sobre cómo anular el registro de un nombre de mismo nivel.
+En la lista siguiente se identifica la información importante sobre cómo anular el registro de un nombre del mismo nivel.
 
 -   Solo una aplicación que registra un nombre del mismo nivel puede anular su registro.
--   Un nombre del mismo nivel no se registra automáticamente si se llama a [**WSACleanup**](winsock-nsp-reference-links.md) .
--   PNRP siempre quita el registro del nombre de servicio completo. No permite la eliminación de direcciones individuales.
--   Al anular el registro de un nombre, el parámetro *essOperation* debe tener un valor de **RNRSERVICE \_ Delete**.
--   PNRP no admite el valor **RNRSERVICE \_ unregister**.
--   El parámetro *dwControlFlags* debe ser cero (0).
+-   Si se llama a [**WSACleanup,**](winsock-nsp-reference-links.md) se anula automáticamente el registro de un nombre del mismo nivel.
+-   PNRP siempre quita todo el registro de nombre de servicio. No permite la eliminación de direcciones individuales.
+-   Al anular el registro de un nombre, el *parámetro essOperation* debe tener un valor **de RNRSERVICE \_ DELETE**.
+-   PNRP no admite el valor **RNRSERVICE \_ DEREGISTER**.
+-   El *parámetro dwControlFlags* debe ser cero (0).
 
 Al anular el registro de un nombre, la estructura [**LPWSAQUERYSET**](pnrp-and-wsaqueryset.md) a la que hace referencia el parámetro *lpqsRegInfo* debe contener los valores siguientes:
 
@@ -225,91 +225,91 @@ Especifica el tamaño de esta estructura.
 <span id="lpszServiceInstanceName"></span><span id="lpszserviceinstancename"></span><span id="LPSZSERVICEINSTANCENAME"></span>**lpszServiceInstanceName**
 </dt> <dd>
 
-Especifica un nombre del mismo nivel del que se va a anular el registro.
+Especifica un nombre del mismo nivel para anular el registro.
 
 </dd> <dt>
 
 <span id="lpServiceClassID"></span><span id="lpserviceclassid"></span><span id="LPSERVICECLASSID"></span>**lpServiceClassID**
 </dt> <dd>
 
-Debe ser **SVCID \_ PNRPNAME**.
+Debe ser **SVCID \_ PNRPNAME.**
 
 </dd> <dt>
 
 <span id="lpVersion"></span><span id="lpversion"></span><span id="LPVERSION"></span>**lpVersion**
 </dt> <dd>
 
-ignorado. Se establece en **null**.
+ignorado. Se establece en **NULL.**
 
 </dd> <dt>
 
 <span id="lpszComment"></span><span id="lpszcomment"></span><span id="LPSZCOMMENT"></span>**lpszComment**
 </dt> <dd>
 
-ignorado. Se establece en **null**.
+ignorado. Se establece en **NULL.**
 
 </dd> <dt>
 
 <span id="dwNameSpace"></span><span id="dwnamespace"></span><span id="DWNAMESPACE"></span>**dwNameSpace**
 </dt> <dd>
 
-Debe ser **NS \_ PNRPNAME** o **NS \_ All**.
+Debe ser **NS \_ PNRPNAME o** **NS \_ ALL.**
 
 </dd> <dt>
 
 <span id="lpNSProviderID"></span><span id="lpnsproviderid"></span><span id="LPNSPROVIDERID"></span>**lpNSProviderID**
 </dt> <dd>
 
-Debe ser un **\_ proveedor NS \_ PNRPNAME** o **null**.
+Debe ser **NS \_ PROVIDER \_ PNRPNAME** o **NULL.**
 
 </dd> <dt>
 
 <span id="lpszContext"></span><span id="lpszcontext"></span><span id="LPSZCONTEXT"></span>**lpszContext**
 </dt> <dd>
 
-Debe ser un nombre de nube, una cadena vacía o **null**. Si este valor es **null** o una cadena vacía, se usa la nube predeterminada, "global". De lo contrario, debe apuntar a un nombre de nube válido.
+Debe ser un nombre de nube, una cadena vacía o **NULL.** Si este valor es **NULL o** una cadena vacía, se usa la nube predeterminada, "Global". De lo contrario, debe apuntar a un nombre de nube válido.
 
 </dd> <dt>
 
 <span id="dwNumberOfProtocols"></span><span id="dwnumberofprotocols"></span><span id="DWNUMBEROFPROTOCOLS"></span>**dwNumberOfProtocols**
 </dt> <dd>
 
-ignorado. Se establece en cero (0).
+ignorado. Establezca en cero (0).
 
 </dd> <dt>
 
 <span id="lpszQueryString"></span><span id="lpszquerystring"></span><span id="LPSZQUERYSTRING"></span>**lpszQueryString**
 </dt> <dd>
 
-ignorado. Se establece en **null**.
+ignorado. Se establece en **NULL.**
 
 </dd> <dt>
 
 <span id="dwNumberOfCsAddrs"></span><span id="dwnumberofcsaddrs"></span><span id="DWNUMBEROFCSADDRS"></span>**dwNumberOfCsAddrs**
 </dt> <dd>
 
-ignorado. Se establece en **null**.
+ignorado. Se establece en **NULL.**
 
 </dd> <dt>
 
 <span id="lpcsaBuffer"></span><span id="lpcsabuffer"></span><span id="LPCSABUFFER"></span>**lpcsaBuffer**
 </dt> <dd>
 
-ignorado. Se establece en **null**.
+ignorado. Se establece en **NULL.**
 
 </dd> <dt>
 
 <span id="dwOutputFlags"></span><span id="dwoutputflags"></span><span id="DWOUTPUTFLAGS"></span>**dwOutputFlags**
 </dt> <dd>
 
-ignorado. Se establece en cero (0).
+ignorado. Establezca en cero (0).
 
 </dd> <dt>
 
 <span id="lpBlob"></span><span id="lpblob"></span><span id="LPBLOB"></span>**lpBlob**
 </dt> <dd>
 
-Puntero a una estructura de [**BLOB**](winsock-nsp-reference-links.md) que apunta a una estructura [**PNRPINFO**](/windows/desktop/api/Pnrpns/ns-pnrpns-pnrpinfo_v1) . El miembro **lpszIdentity** de la estructura **lpBlob** identifica el nombre de la identidad que se usa para registrar un nombre del mismo nivel. Los miembros restantes se deben establecer en los mismos valores que se usan al registrar un nombre.
+Puntero a una [**estructura BLOB**](winsock-nsp-reference-links.md) que apunta a una [**estructura PNRPINFO.**](/windows/desktop/api/Pnrpns/ns-pnrpns-pnrpinfo_v1) El **miembro lpszIdentity** de la estructura **lpBlob** identifica el nombre de la identidad que se usa para registrar un nombre del mismo nivel. Los miembros restantes deben establecerse en los mismos valores que se usan al registrar un nombre.
 
 </dd> </dl>
 
@@ -326,7 +326,7 @@ Puntero a una estructura de [**BLOB**](winsock-nsp-reference-links.md) que apunt
 [**PNRPINFO**](/windows/desktop/api/Pnrpns/ns-pnrpns-pnrpinfo_v1)
 </dt> <dt>
 
-[Códigos de error NSP de PNRP](pnrp-nsp-error-codes.md)
+[Códigos de error de PNRP NSP](pnrp-nsp-error-codes.md)
 </dt> <dt>
 
 [**WSACleanup**](winsock-nsp-reference-links.md)

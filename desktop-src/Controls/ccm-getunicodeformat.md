@@ -1,9 +1,9 @@
 ---
-title: Mensaje de CCM_GETUNICODEFORMAT (commctrl. h)
-description: Obtiene la marca del formato de caracteres Unicode para el control.
+title: CCM_GETUNICODEFORMAT mensaje (Commctrl.h)
+description: Obtiene la marca de formato de caracteres Unicode para el control .
 ms.assetid: 8a23cd1c-549e-4d48-891a-b37dbf5c524b
 keywords:
-- CCM_GETUNICODEFORMAT controles de mensajes de Windows
+- CCM_GETUNICODEFORMAT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 095d49ccc57faa05e86d12df130b12ce3d542bf6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fa115ba341478990b46600bc76ee02e4ecf750d5a7ccde9f1110aa8856d30fa7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119438285"
 ---
-# <a name="ccm_getunicodeformat-message"></a>\_Mensaje GETUNICODEFORMAT de CCM
+# <a name="ccm_getunicodeformat-message"></a>Mensaje \_ GETUNICODEFORMAT de CCM
 
-Obtiene la marca del formato de caracteres Unicode para el control.
+Obtiene la marca de formato de caracteres Unicode para el control .
 
 ## <a name="parameters"></a>Parámetros
 
@@ -37,7 +37,7 @@ Obtiene la marca del formato de caracteres Unicode para el control.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve la marca de formato Unicode para el control. Si este valor es distinto de cero, el control utiliza caracteres Unicode. Si este valor es cero, el control usa caracteres ANSI.
+Devuelve la marca de formato Unicode del control. Si este valor es distinto de cero, el control usa caracteres Unicode. Si este valor es cero, el control usa caracteres ANSI.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Devuelve la marca de formato Unicode para el control. Si este valor es distinto 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Devuelve la marca de formato Unicode para el control. Si este valor es distinto 
 
 <dl> <dt>
 
-[**\_SETUNICODEFORMAT CCM**](ccm-setunicodeformat.md)
+[**CCM \_ SETUNICODEFORMAT**](ccm-setunicodeformat.md)
 </dt> </dl>
 
  

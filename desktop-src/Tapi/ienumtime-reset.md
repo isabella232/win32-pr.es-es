@@ -1,21 +1,21 @@
 ---
 description: El método Reset se restablece al principio de la secuencia de enumeración.
 ms.assetid: a9131da1-051d-493c-939d-07801fda2d49
-title: 'IEnumTime:: RESET (método)'
+title: IEnumTime::Reset (Método)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9615fbc07edfb93c2377a7455d94b5fcd8ccd698
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 210f99d6997d91c9e2b3d68649f4472747923f6706f5f66fc27550f1cea92b52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119519205"
 ---
-# <a name="ienumtimereset-method"></a>IEnumTime:: RESET (método)
+# <a name="ienumtimereset-method"></a>IEnumTime::Reset (Método)
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Las interfaces y los controles de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **RESET** se restablece al principio de la secuencia de enumeración.
+El **método Reset** se restablece al principio de la secuencia de enumeración.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,4 +32,4 @@ Este método puede devolver uno de estos valores.
 
 | Value | Significado                                                       |
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>      | El método se realizó correctamente. <br/>         |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | El método se realizó correctamente. <br/>         |

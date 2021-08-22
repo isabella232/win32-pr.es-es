@@ -4,37 +4,37 @@ description: Atributo StartArrowLength de VML
 ms.assetid: 7c108132-4f74-41cc-bfac-123f0259e6cb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90a57e10c9cf7b9a8683f4b1856355232afc16be
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 25446737118c546727d769d54d98e4503faaadd063102fa98a417ebea13c976d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119395835"
 ---
 # <a name="vml-startarrowlength-attribute"></a>Atributo StartArrowLength de VML
 
-En este tema se describe VML, una característica que está desusada en Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML se deben migrar a SVG u otros estándares ampliamente admitidos.
+En este tema se describe VML, una característica que está en desuso a partir Windows Internet Explorer 9. Las páginas web y las aplicaciones que se basan en VML deben migrarse a SVG u otros estándares ampliamente admitidos.
 
 > [!Note]  
-> A partir del 2011 de diciembre, este tema se ha archivado. Como resultado, ya no se mantiene de forma activa. Para obtener más información, vea [contenido archivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, consulte [Centro para desarrolladores de Internet Explorer](https://msdn.microsoft.com/ie/).
+> A partir de diciembre de 2011, este tema se archivó. Como resultado, ya no se mantiene activamente. Para obtener más información, vea [Contenido archivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obtener información, recomendaciones e instrucciones sobre la versión actual de Windows Internet Explorer, [vea Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
-Define la longitud de la punta de flecha para el inicio de una línea. Lectura/escritura **VgArrowheadLength**.
+Define la longitud de la punta de flecha para el inicio de una línea. Lectura/escritura **DvArrowheadLength**.
 
 **Se aplica a**
 
-[Stroke](msdn-online-vml-stroke-element.md)
+[Golpe](msdn-online-vml-stroke-element.md)
 
 **Sintaxis de etiquetas**
 
-<v: *Element* startarrowlength = " *expresión* " >
+<v: *element* startarrowlength=" *expression* ">
 
 **Sintaxis de script**
 
-*Element* . startarrowlength = "*expresión*"
+*Element* .startarrowlength="*expression*"
 
-*expresión* = de *elemento*. startarrowlength
+*expresión* = *elemento*.startarrowlength
 
 **Comentarios:**
 
@@ -48,7 +48,7 @@ Atributo estándar de VML
 
 **Ejemplo**
 
-Una línea se dibuja con una punta de flecha clásica corta en el inicio del trazo.
+Se dibuja una línea con una punta de flecha clásica corta al principio del trazo.
 
 
 ```HTML
@@ -60,6 +60,6 @@ Una línea se dibuja con una punta de flecha clásica corta en el inicio del tra
 
 
 
- 
+ 
 
- 
+ 

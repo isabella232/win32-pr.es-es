@@ -1,10 +1,10 @@
 ---
-title: User-Logon conjunto de propiedades
-description: Conjunto de propiedades que contiene los atributos de usuario que describen la información de inicio de sesión del usuario.
+title: User-Logon de propiedades
+description: Conjunto de propiedades que contiene atributos de usuario que describen la información de inicio de sesión del usuario.
 ms.assetid: 93d1af8d-f4d0-4aed-a03d-a2f34dd7ec37
 ms.tgt_platform: multiple
 keywords:
-- User-Logon el esquema de AD del conjunto de propiedades
+- User-Logon esquema de AD del conjunto de propiedades
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd9ce027ff98b5dd972db1964e0e5948017eb93d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 08b06cb7ccf22f77727a4789a29e2a884a276687a3cc42d348317dcd250e13dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119580565"
 ---
-# <a name="user-logon-property-set"></a>User-Logon conjunto de propiedades
+# <a name="user-logon-property-set"></a>User-Logon de propiedades
 
-Conjunto de propiedades que contiene los atributos de usuario que describen la información de inicio de sesión del usuario.
+Conjunto de propiedades que contiene atributos de usuario que describen la información de inicio de sesión del usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
 | CN           | User-Logon                           |
 | Display-Name | Información de inicio de sesión                    |
@@ -38,7 +38,7 @@ Conjunto de propiedades que contiene los atributos de usuario que describen la i
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -48,11 +48,11 @@ Conjunto de propiedades que contiene los atributos de usuario que describen la i
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Localización: ID. de presentación | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Miembros del conjunto de propiedades    | [**Incorrecto: PWD-Count**](a-badpwdcount.md)<br/> [**Directorio principal**](a-homedirectory.md)<br/> [**Unidad de inicio**](a-homedrive.md)<br/> [**Último cierre de sesión**](a-lastlogoff.md)<br/> [**Último inicio de sesión**](a-lastlogon.md)<br/> [**Logon-Count**](a-logoncount.md)<br/> [**Hora de inicio de sesión**](a-logonhours.md)<br/> [**Logon-Workstation**](a-logonworkstation.md)<br/> [**Perfil-ruta de acceso**](a-profilepath.md)<br/> |
+| Applies-To              | [**Usuario**](c-user.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Localization-Display-ID | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Miembros del conjunto de propiedades    | [**Bad-Pwd-Count**](a-badpwdcount.md)<br/> [**Directorio principal**](a-homedirectory.md)<br/> [**Unidad principal**](a-homedrive.md)<br/> [**Último cierre de sesión**](a-lastlogoff.md)<br/> [**Último inicio de sesión**](a-lastlogon.md)<br/> [**Recuento de inicios de sesión**](a-logoncount.md)<br/> [**Horas de inicio de sesión**](a-logonhours.md)<br/> [**Logon-Workstation**](a-logonworkstation.md)<br/> [**Profile-Path**](a-profilepath.md)<br/> |
 
 
 
@@ -62,21 +62,21 @@ Conjunto de propiedades que contiene los atributos de usuario que describen la i
 
 | Entrada | Value |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Localización: ID. de presentación | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Miembros del conjunto de propiedades    | [**Incorrecto: PWD-Count**](a-badpwdcount.md)<br/> [**Directorio principal**](a-homedirectory.md)<br/> [**Unidad de inicio**](a-homedrive.md)<br/> [**Último cierre de sesión**](a-lastlogoff.md)<br/> [**Último inicio de sesión**](a-lastlogon.md)<br/> [**Último inicio de sesión-marca de tiempo**](a-lastlogontimestamp.md)<br/> [**Logon-Count**](a-logoncount.md)<br/> [**Hora de inicio de sesión**](a-logonhours.md)<br/> [**Logon-Workstation**](a-logonworkstation.md)<br/> [**Perfil-ruta de acceso**](a-profilepath.md)<br/> [**Script-ruta de acceso**](a-scriptpath.md)<br/> [**Usuarios: estaciones de trabajo**](a-userworkstations.md)<br/> |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Localization-Display-ID | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Miembros del conjunto de propiedades    | [**Bad-Pwd-Count**](a-badpwdcount.md)<br/> [**Directorio principal**](a-homedirectory.md)<br/> [**Unidad principal**](a-homedrive.md)<br/> [**Último cierre de sesión**](a-lastlogoff.md)<br/> [**Último inicio de sesión**](a-lastlogon.md)<br/> [**Marca de tiempo del último inicio de sesión**](a-lastlogontimestamp.md)<br/> [**Recuento de inicios de sesión**](a-logoncount.md)<br/> [**Horas de inicio de sesión**](a-logonhours.md)<br/> [**Logon-Workstation**](a-logonworkstation.md)<br/> [**Profile-Path**](a-profilepath.md)<br/> [**Script-Path**](a-scriptpath.md)<br/> [**Estaciones de trabajo de usuario**](a-userworkstations.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------|
 | Applies-To              | \-                                                                                                                |
-| Localización: ID. de presentación | 10                                                                                                                |
-| Miembros del conjunto de propiedades    | [**Incorrecto: PWD-Count**](a-badpwdcount.md)<br/> [**Último inicio de sesión-marca de tiempo**](a-lastlogontimestamp.md)<br/> |
+| Localization-Display-ID | 10                                                                                                                |
+| Miembros del conjunto de propiedades    | [**Bad-Pwd-Count**](a-badpwdcount.md)<br/> [**Marca de tiempo del último inicio de sesión**](a-lastlogontimestamp.md)<br/> |
 
 
 
@@ -84,11 +84,11 @@ Conjunto de propiedades que contiene los atributos de usuario que describen la i
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Localización: ID. de presentación | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Miembros del conjunto de propiedades    | [**Incorrecto: PWD-Count**](a-badpwdcount.md)<br/> [**Directorio principal**](a-homedirectory.md)<br/> [**Unidad de inicio**](a-homedrive.md)<br/> [**Último cierre de sesión**](a-lastlogoff.md)<br/> [**Último inicio de sesión**](a-lastlogon.md)<br/> [**Último inicio de sesión-marca de tiempo**](a-lastlogontimestamp.md)<br/> [**Logon-Count**](a-logoncount.md)<br/> [**Hora de inicio de sesión**](a-logonhours.md)<br/> [**Logon-Workstation**](a-logonworkstation.md)<br/> [**Perfil-ruta de acceso**](a-profilepath.md)<br/> [**Script-ruta de acceso**](a-scriptpath.md)<br/> [**Usuarios: estaciones de trabajo**](a-userworkstations.md)<br/> |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Localization-Display-ID | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Miembros del conjunto de propiedades    | [**Bad-Pwd-Count**](a-badpwdcount.md)<br/> [**Directorio principal**](a-homedirectory.md)<br/> [**Unidad principal**](a-homedrive.md)<br/> [**Último cierre de sesión**](a-lastlogoff.md)<br/> [**Último inicio de sesión**](a-lastlogon.md)<br/> [**Marca de tiempo del último inicio de sesión**](a-lastlogontimestamp.md)<br/> [**Recuento de inicios de sesión**](a-logoncount.md)<br/> [**Horas de inicio de sesión**](a-logonhours.md)<br/> [**Logon-Workstation**](a-logonworkstation.md)<br/> [**Profile-Path**](a-profilepath.md)<br/> [**Script-Path**](a-scriptpath.md)<br/> [**Estaciones de trabajo de usuario**](a-userworkstations.md)<br/> |
 
 
 
@@ -98,9 +98,9 @@ Conjunto de propiedades que contiene los atributos de usuario que describen la i
 
 | Entrada | Value |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Localización: ID. de presentación | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Miembros del conjunto de propiedades    | [**Incorrecto: PWD-Count**](a-badpwdcount.md)<br/> [**Directorio principal**](a-homedirectory.md)<br/> [**Unidad de inicio**](a-homedrive.md)<br/> [**Último cierre de sesión**](a-lastlogoff.md)<br/> [**Último inicio de sesión**](a-lastlogon.md)<br/> [**Último inicio de sesión-marca de tiempo**](a-lastlogontimestamp.md)<br/> [**Logon-Count**](a-logoncount.md)<br/> [**Hora de inicio de sesión**](a-logonhours.md)<br/> [**Logon-Workstation**](a-logonworkstation.md)<br/> [**Perfil-ruta de acceso**](a-profilepath.md)<br/> [**Script-ruta de acceso**](a-scriptpath.md)<br/> [**Usuarios: estaciones de trabajo**](a-userworkstations.md)<br/> |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Localization-Display-ID | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Miembros del conjunto de propiedades    | [**Bad-Pwd-Count**](a-badpwdcount.md)<br/> [**Directorio principal**](a-homedirectory.md)<br/> [**Unidad principal**](a-homedrive.md)<br/> [**Último cierre de sesión**](a-lastlogoff.md)<br/> [**Último inicio de sesión**](a-lastlogon.md)<br/> [**Marca de tiempo del último inicio de sesión**](a-lastlogontimestamp.md)<br/> [**Recuento de inicios de sesión**](a-logoncount.md)<br/> [**Horas de inicio de sesión**](a-logonhours.md)<br/> [**Logon-Workstation**](a-logonworkstation.md)<br/> [**Profile-Path**](a-profilepath.md)<br/> [**Script-Path**](a-scriptpath.md)<br/> [**Estaciones de trabajo de usuario**](a-userworkstations.md)<br/> |
 
 
 
@@ -108,11 +108,11 @@ Conjunto de propiedades que contiene los atributos de usuario que describen la i
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Localización: ID. de presentación | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Miembros del conjunto de propiedades    | [**Incorrecto: PWD-Count**](a-badpwdcount.md)<br/> [**Directorio principal**](a-homedirectory.md)<br/> [**Unidad de inicio**](a-homedrive.md)<br/> [**Último cierre de sesión**](a-lastlogoff.md)<br/> [**Último inicio de sesión**](a-lastlogon.md)<br/> [**Último inicio de sesión-marca de tiempo**](a-lastlogontimestamp.md)<br/> [**Logon-Count**](a-logoncount.md)<br/> [**Hora de inicio de sesión**](a-logonhours.md)<br/> [**Logon-Workstation**](a-logonworkstation.md)<br/> [**Perfil-ruta de acceso**](a-profilepath.md)<br/> [**Script-ruta de acceso**](a-scriptpath.md)<br/> [**Usuarios: estaciones de trabajo**](a-userworkstations.md)<br/> |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Localization-Display-ID | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Miembros del conjunto de propiedades    | [**Bad-Pwd-Count**](a-badpwdcount.md)<br/> [**Directorio principal**](a-homedirectory.md)<br/> [**Unidad principal**](a-homedrive.md)<br/> [**Último cierre de sesión**](a-lastlogoff.md)<br/> [**Último inicio de sesión**](a-lastlogon.md)<br/> [**Marca de tiempo del último inicio de sesión**](a-lastlogontimestamp.md)<br/> [**Recuento de inicios de sesión**](a-logoncount.md)<br/> [**Horas de inicio de sesión**](a-logonhours.md)<br/> [**Logon-Workstation**](a-logonworkstation.md)<br/> [**Profile-Path**](a-profilepath.md)<br/> [**Script-Path**](a-scriptpath.md)<br/> [**Estaciones de trabajo de usuario**](a-userworkstations.md)<br/> |
 
 
 
@@ -122,9 +122,9 @@ Conjunto de propiedades que contiene los atributos de usuario que describen la i
 
 | Entrada | Value |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Localización: ID. de presentación | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Miembros del conjunto de propiedades    | [**Incorrecto: PWD-Count**](a-badpwdcount.md)<br/> [**Directorio principal**](a-homedirectory.md)<br/> [**Unidad de inicio**](a-homedrive.md)<br/> [**Último cierre de sesión**](a-lastlogoff.md)<br/> [**Último inicio de sesión**](a-lastlogon.md)<br/> [**Último inicio de sesión-marca de tiempo**](a-lastlogontimestamp.md)<br/> [**Logon-Count**](a-logoncount.md)<br/> [**Hora de inicio de sesión**](a-logonhours.md)<br/> [**Logon-Workstation**](a-logonworkstation.md)<br/> [**Perfil-ruta de acceso**](a-profilepath.md)<br/> [**Script-ruta de acceso**](a-scriptpath.md)<br/> [**Usuarios: estaciones de trabajo**](a-userworkstations.md)<br/> |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Localization-Display-ID | 10                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Miembros del conjunto de propiedades    | [**Bad-Pwd-Count**](a-badpwdcount.md)<br/> [**Directorio principal**](a-homedirectory.md)<br/> [**Unidad principal**](a-homedrive.md)<br/> [**Último cierre de sesión**](a-lastlogoff.md)<br/> [**Último inicio de sesión**](a-lastlogon.md)<br/> [**Marca de tiempo del último inicio de sesión**](a-lastlogontimestamp.md)<br/> [**Recuento de inicios de sesión**](a-logoncount.md)<br/> [**Horas de inicio de sesión**](a-logonhours.md)<br/> [**Logon-Workstation**](a-logonworkstation.md)<br/> [**Profile-Path**](a-profilepath.md)<br/> [**Script-Path**](a-scriptpath.md)<br/> [**Estaciones de trabajo de usuario**](a-userworkstations.md)<br/> |
 
 
 

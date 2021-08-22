@@ -3,22 +3,22 @@ title: Uso de módulos de administración del color (CMM)
 description: Los módulos de administración de colores (CMM) son módulos de código WCS que usan la información de los perfiles de dispositivo para realizar la conversión de colores y la asignación de colores.
 ms.assetid: df119e1a-b6f5-40a3-8852-8a57b21483d0
 keywords:
-- Sistema de colores de Windows (WCS),Módulo de administración de colores (CMM)
-- WCS (Sistema de colores de Windows),Módulo de administración de colores (CMM)
+- Windows Sistema de colores (WCS),Módulo de administración de colores (CMM)
+- WCS (Windows color),Módulo de administración de colores (CMM)
 - administración de colores de imagen,Módulo de administración de colores (CMM)
 - administración de colores,Módulo de administración de colores (CMM)
-- colors,Módulo de administración de colores (CMM)
+- colors,Color Management Module (CMM)
 - Módulo de administración de colores (CMM)
 - CMM (módulo de administración de colores)
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b12a087bfc972ffcbd7f9fb083a9d73d669f134
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 147c13a688942d46e400c2158c340fcea58d86616de042e9a44511861b67b802
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111386904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442355"
 ---
 # <a name="using-color-management-modules-cmm"></a>Uso de módulos de administración del color (CMM)
 
@@ -29,7 +29,7 @@ Los módulos de administración de colores (CMM) son módulos de código WCS que
 
  
 
-Cuando se instalan las CMM, el programa de instalación los registra en el Registro de Windows. Las aplicaciones pueden enumerar las CMM registradas y seleccionar una mediante la [**función SelectCMM.**](/windows/win32/api/icm/nf-icm-selectcmm) En la siguiente aplicación de ejemplo se muestra cómo enumerar todas las CMM registradas.
+Cuando se instalan las CMM, el programa de instalación los registra en el Windows registro. Las aplicaciones pueden enumerar las CMM registradas y seleccionar una mediante la [**función SelectCMM.**](/windows/win32/api/icm/nf-icm-selectcmm) En la siguiente aplicación de ejemplo se muestra cómo enumerar todas las CMM registradas.
 
 
 ```C++

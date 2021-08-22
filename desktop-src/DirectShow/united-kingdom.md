@@ -4,20 +4,20 @@ ms.assetid: c969b9c6-3068-43ae-9c1d-d606df2a1d0b
 title: Reino Unido
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf04d909787d38e494488dd365528e1301013e82
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c47df8b0b2aa17794e07f8f555ff05a6e77de50db7669d52c8bf1799cda682e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119315705"
 ---
 # <a name="united-kingdom"></a>Reino Unido
 
-Para obtener una explicación de las tablas siguientes, vea [tablas y asignaciones](tables-and-assignments.md).
+Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)
 
-Los índices de frecuencia de las tablas de Reino Unido no son adecuados para su uso como números de canal.
+Los índices de frecuencia de las tablas del Reino Unido no son adecuados para su uso como números de canal.
 
-### <a name="united-kingdom-broadcast-assignments"></a>Asignaciones de difusión de Reino Unido
+### <a name="united-kingdom-broadcast-assignments"></a>Asignaciones de difusión del Reino Unido
 
 
 ```C++
@@ -223,7 +223,7 @@ Los índices de frecuencia de las tablas de Reino Unido no son adecuados para su
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste de TELEVISIÓN análogo internacional](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

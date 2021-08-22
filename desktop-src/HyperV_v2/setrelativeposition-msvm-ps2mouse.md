@@ -1,7 +1,7 @@
 ---
-description: Desplaza la posición del puntero del mouse según las diferencias horizontales y verticales especificadas.
+description: Desplaza la posición del puntero del mouse por las diferencias horizontales y verticales especificadas.
 ms.assetid: C74E4BEA-C7E1-44C7-B4FC-8926F23DF1FE
-title: Método SetRelativePosition de la clase Msvm_Ps2Mouse
+title: Método SetRelativePosition de la Msvm_Ps2Mouse clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: b7f4d10f48bce4b33cd4965f08633b85b5a738bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dc3b0915795142b725ce26a2b8eac09dca613dc6094495fd3c188ba58aecbf1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147738"
 ---
-# <a name="setrelativeposition-method-of-the-msvm_ps2mouse-class"></a>Método SetRelativePosition de la \_ clase Ps2Mouse de MSVM
+# <a name="setrelativeposition-method-of-the-msvm_ps2mouse-class"></a>Método SetRelativePosition de la clase \_ Ps2Mouse de Msvm
 
-Desplaza la posición del puntero del mouse según las diferencias horizontales y verticales especificadas.
+Desplaza la posición del puntero del mouse por las diferencias horizontales y verticales especificadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,29 +40,29 @@ uint32 SetRelativePosition(
 
 <dl> <dt>
 
-*horizontalDelta* \[ de\]
+*horizontalDelta* \[ En\]
 </dt> <dd>
 
 Tipo: **sint8**
 
-Cambio horizontal en la posición del mouse, en píxeles.
+Cambio horizontal de la posición del mouse, en píxeles.
 
 </dd> <dt>
 
-*verticalDelta* \[ de\]
+*verticalDelta* \[ En\]
 </dt> <dd>
 
 Tipo: **sint8**
 
-Cambio vertical en la posición del mouse, en píxeles.
+Cambio vertical de la posición del mouse, en píxeles.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Un valor devuelto de cero indica que se ha realizado correctamente. Un valor distinto de cero indica un error al modificar la posición del mouse.
+Un valor devuelto de cero indica que se ha correcto. Un valor distinto de cero indica un error al modificar la posición del mouse.
 
 <dl> <dt>
 
@@ -81,16 +81,16 @@ Un valor devuelto de cero indica que se ha realizado correctamente. Un valor dis
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**Sistema en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -99,15 +99,15 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase [**MSVM \_ Ps2Mouse**](msvm-ps2mouse.md) puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a [**la clase \_ Ps2Mouse de Msvm**](msvm-ps2mouse.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -115,10 +115,10 @@ El acceso a la clase [**MSVM \_ Ps2Mouse**](msvm-ps2mouse.md) puede estar restri
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -127,7 +127,7 @@ El acceso a la clase [**MSVM \_ Ps2Mouse**](msvm-ps2mouse.md) puede estar restri
 
 <dl> <dt>
 
-[**MSVM \_ Ps2Mouse**](msvm-ps2mouse.md)
+[**Msvm \_ Ps2Mouse**](msvm-ps2mouse.md)
 </dt> </dl>
 
  

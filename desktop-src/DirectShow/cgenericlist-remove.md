@@ -1,7 +1,7 @@
 ---
 description: El método Remove quita el elemento en la posición especificada.
 ms.assetid: a7b8f6fb-f13a-4c24-aa18-463446602e29
-title: Método CGenericList. Remove (Wxlist. h)
+title: Método CGenericList.Remove (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d5fc3d0cd76cd78c83fa210d8b91ba97b93b92f7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 40b00d0772f391978fa6e581623446c67c2f37deabb1737e2602d7da7382fbaf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119317765"
 ---
-# <a name="cgenericlistremove-method"></a>CGenericList. Remove (método)
+# <a name="cgenericlistremove-method"></a>CGenericList.Remove (método)
 
 El `Remove` método quita el elemento en la posición especificada.
 
@@ -45,19 +45,19 @@ OBJECT* Remove(
 *pos* 
 </dt> <dd>
 
-Valor de posición que indica el elemento que se va a quitar.
+Valor POSITION que indica el elemento que se quitará.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero a un objeto de tipo **Object** (el tipo de plantilla).
+Devuelve un puntero a un objeto de tipo **OBJECT** (el tipo de plantilla).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método elimina el nodo de la lista, pero no elimina el elemento contenido en ese nodo.
 
-Si *pos* es **null**, el método devuelve **null**.
+Si *pos* es **NULL,** el método devuelve **NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Si *pos* es **null**, el método devuelve **null**.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Si *pos* es **null**, el método devuelve **null**.
 
 <dl> <dt>
 
-[**Clase CGenericList**](cgenericlist.md)
+[**CGenericList (Clase)**](cgenericlist.md)
 </dt> </dl>
 
  

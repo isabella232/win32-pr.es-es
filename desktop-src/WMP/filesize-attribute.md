@@ -1,9 +1,9 @@
 ---
-title: Atributo de archivo
-description: El atributo de archivo es el tamaño del archivo en bytes.
+title: Atributo FileSize
+description: El atributo FileSize es el tamaño del archivo en bytes.
 ms.assetid: e845cc82-6975-4fd9-800f-a66f59a5fb39
 keywords:
-- Archivos de Media Player de Windows de atributos
+- Atributo FileSize Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,50 +12,50 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cee243d85be59502acead3614dced49494c11104
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6fe1d3a1bed9bc5a8ca87991b910ffa3804267fc217ff8b500cae79f185cb8a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119390915"
 ---
-# <a name="filesize-attribute"></a>Atributo de archivo
+# <a name="filesize-attribute"></a>Atributo FileSize
 
-El **atributo de archivo es** el tamaño del archivo en bytes.
+El **atributo FileSize** es el tamaño del archivo en bytes.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de audio](audio-item-attributes.md)
--   [Archivos de Windows Media de uso frecuente](commonly-used-windows-media-file-attributes.md)
+-   [Archivos multimedia de Windows usados habitualmente](commonly-used-windows-media-file-attributes.md)
 -   [Otros elementos](other-item-attributes.md)
--   [Elementos de fotografía](photo-item-attributes.md)
+-   [Elementos de fotos](photo-item-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se almacena en la biblioteca y en el archivo multimedia digital.
+Este atributo se almacena tanto en la biblioteca como en el archivo multimedia digital.
 
-**Size** es un alias de este atributo.
+**Size** es un alias para este atributo.
 
-La constante del SDK de Windows Media Format para este atributo es g \_ wszWMFileSize.
+La Windows SDK de formato multimedia para este atributo es g \_ wszWMFileSize.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior (el elemento de fotografía solo se admite en Windows Media Player 10 o posterior)<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior (el elemento de foto solo se admite en Reproductor de Windows Media 10 o posterior)<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

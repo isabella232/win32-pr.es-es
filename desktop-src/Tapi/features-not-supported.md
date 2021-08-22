@@ -4,19 +4,19 @@ ms.assetid: e9a6a377-fc8f-455a-b6b3-12c4f84d5041
 title: Características no admitidas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a25ac11718aaf10daaef79dff28d681a38defe38
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 191ce0b73432e669c64d50ed716bbabe3bb05997349fe3e2f05479eb8e9c955d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140688"
 ---
 # <a name="features-not-supported"></a>Características no admitidas
 
--   El MSP derivado implementará el control dinámico de gráficos, si decide hacerlo.
--   El MSP derivado implementará las subsecuencias, si decide hacerlo.
--   Las interfaces privadas, como los participantes, el control de códec, etc., no se implementarán en las clases base.
--   La comunicación de TSP-MSP se implementará mediante el MSP derivado.
+-   El MSP derivado implementará el control dinámico de grafos, si decide hacerlo.
+-   El MSP derivado implementará substreams, si decide hacerlo.
+-   Las clases base no implementarán interfaces privadas, como participantes, control de códecs, entre otras.
+-   La comunicación TSP-MSP la implementará el MSP derivado.
 
  
 

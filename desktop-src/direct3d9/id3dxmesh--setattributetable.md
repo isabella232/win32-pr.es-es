@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a4cdb503e934ca00b41482601b59266eee750365
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e93bc3f077d239fb93ac23898635dfc2fe5157ed5d78c32719fca6980606658c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119606945"
 ---
 # <a name="id3dxmeshsetattributetable-method"></a>Método ID3DXMesh::SetAttributeTable
 
@@ -46,7 +46,7 @@ HRESULT SetAttributeTable(
 
 Tipo: **const [**D3DXATTRIBUTERANGE**](d3dxattributerange.md) \***
 
-Puntero a una matriz de [**estructuras D3DXATTRIBUTERANGE,**](d3dxattributerange.md) que representa las entradas de la tabla de atributos de malla.
+Puntero a una matriz de [**estructuras D3DXATTRIBUTERANGE,**](d3dxattributerange.md) que representan las entradas de la tabla de atributos de malla.
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Número de atributos de la tabla de atributos de malla.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Comentarios
 
@@ -80,7 +80,7 @@ Si una aplicación realiza un seguimiento de la información de una tabla de atr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

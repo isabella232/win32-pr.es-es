@@ -1,9 +1,9 @@
 ---
-title: función gluSphere (GLU. h)
+title: Función gluSphere (Glu.h)
 description: La función gluSphere dibuja una esfera.
 ms.assetid: 0f1919c6-0551-4d50-b782-767dacc088cb
 keywords:
-- gluSphere (función) OpenGL
+- Función gluSphere OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 899ff4833c705aae34fdb7830c264fee91414116
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 590c4b7335fe0596c5b5b0f3dc709998fafc21f7be78f493a05f6520ed9fd368
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491908"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119488735"
 ---
-# <a name="glusphere-function"></a>gluSphere función)
+# <a name="glusphere-function"></a>función gluSphere
 
-La función **gluSphere** dibuja una esfera.
+La **función gluSphere** dibuja una esfera.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,28 +46,28 @@ void WINAPI gluSphere(
 *qobj* 
 </dt> <dd>
 
-El objeto quadric (creado con [**gluNewQuadric**](glunewquadric.md)).
+Objeto cuádigo (creado [**con gluNewQuadric).**](glunewquadric.md)
 
 </dd> <dt>
 
-*tórica* 
+*Radio* 
 </dt> <dd>
 
 Radio de la esfera.
 
 </dd> <dt>
 
-*segmento* 
+*Rebanadas* 
 </dt> <dd>
 
-Número de subdivisiones alrededor del eje z (similar a las líneas de longitud).
+Número de subdivisiones alrededor del eje Z (similar a las líneas de longitud).
 
 </dd> <dt>
 
-*pilas* 
+*Pilas* 
 </dt> <dd>
 
-El número de subdivisiones a lo largo del eje z (similar a las líneas de la latitud).
+Número de subdivisiones a lo largo del eje Z (similar a las líneas de latitud).
 
 </dd> </dl>
 
@@ -75,24 +75,24 @@ El número de subdivisiones a lo largo del eje z (similar a las líneas de la la
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **gluSphere** dibuja una esfera del radio determinado centrado alrededor del origen. La esfera se subdivide alrededor del eje z en segmentos y a lo largo del eje z en pilas (similar a las líneas de longitud y latitud).
+La **función gluSphere** dibuja una esfera del radio dado centrada alrededor del origen. La esfera se subdivide alrededor del eje Z en segmentos y a lo largo del eje Z en pilas (similares a las líneas de longitud y latitud).
 
-Si la orientación se establece en GLU \_ fuera de (con **gluQuadricOrientation**), cualquier normal generado apunta fuera del centro de la esfera. De lo contrario, apuntan hacia el centro de la esfera.
+Si la orientación se establece en GLU \_ OUTSIDE (con **gluQuadricOrientation),** cualquier punto de normal generado lejos del centro de la esfera. De lo contrario, apuntan hacia el centro de la esfera.
 
-Si la texturización está activada (con **gluQuadricTexture**): se generan coordenadas de textura para que *t* vaya de 0,0 a *z* =*-RADIUS* a 1,0 en radio *z*  =   (*t* aumenta linealmente a lo largo de las líneas longitudinales); y *s* van desde 0,0 en el eje y positivo hasta 0,25 en el eje x positivo, a 0,5 en el eje y negativo, a 0,75 en el eje x negativo y de nuevo a 1,0 en el eje y positivo.
+Si texturing está activado (con **gluQuadricTexture):** las coordenadas de textura se generan para que *t* oscila entre 0,0 a *z* = -*radius* a 1,0 en el radio *z*(t aumenta linealmente a lo largo de las líneas de línea); y s oscila entre 0,0 en el eje  =   Y positivo, a 0,25 en el eje X positivo, a 0,5 en el eje Y negativo, a 0,75 en el eje X negativo y a 1,0 en el eje Y positivo. 
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

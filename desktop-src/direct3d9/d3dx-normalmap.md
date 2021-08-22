@@ -4,12 +4,12 @@ ms.assetid: edf4c3e4-1af4-43b4-80c7-6fab02575f7b
 title: D3DX_NORMALMAP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4263237cedf92a5e322f2fe139e9afe2297f6b9b
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 5d3a3d2f35fa409e4432dd7600cb544df25110d10aa9af7f5ee18fd622ea1309
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110342860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119374955"
 ---
 # <a name="d3dx_normalmap"></a>D3DX \_ NORMALMAP
 

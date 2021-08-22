@@ -1,11 +1,11 @@
 ---
-title: TaskDefinition.Xmlpropiedad Text
-description: Para scripting, obtiene o establece la definición con formato XML de la tarea.
+title: TaskDefinition.XmlText
+description: Para el scripting, obtiene o establece la definición con formato XML de la tarea.
 ms.assetid: b10dd3cd-51b5-4e0e-a6cb-3b6794afb4cd
 keywords:
 - Propiedad XmlText Programador de tareas
-- Propiedad XmlText Programador de tareas, objeto TaskDefinition
-- Programador de tareas objeto TaskDefinition, propiedad XmlText
+- Propiedad XmlText Programador de tareas , objeto TaskDefinition
+- Objeto TaskDefinition Programador de tareas , propiedad XmlText
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38b736e3c90dea08ca201a992634d388da87c9d8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ed952c6d43f9a1229a3fc89ae64d69eede5f7c8537a1f0317c093a4a236fa928
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119402395"
 ---
-# <a name="taskdefinitionxmltext-property"></a>TaskDefinition.Xmlpropiedad Text
+# <a name="taskdefinitionxmltext-property"></a>TaskDefinition.XmlText
 
-Para scripting, obtiene o establece la definición con formato XML de la tarea.
+Para el scripting, obtiene o establece la definición con formato XML de la tarea.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Definición con formato XML de la tarea.
 
 ## <a name="remarks"></a>Observaciones
 
-El [esquema de programador de tareas](task-scheduler-schema.md)define el XML de una tarea. Para obtener un ejemplo de XML de tarea, vea [ejemplo de desencadenador diario (XML)](daily-trigger-example--xml-.md).
+El xml de una tarea se define mediante el [esquema Programador de tareas .](task-scheduler-schema.md) Para obtener un ejemplo de XML de tarea, vea [Ejemplo de desencadenador diario (XML).](daily-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,9 +50,9 @@ El [esquema de programador de tareas](task-scheduler-schema.md)define el XML de 
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

@@ -1,28 +1,28 @@
 ---
-title: Cambiar el tamaño del búfer de e/s
-description: Cambiar el tamaño del búfer de e/s
+title: Cambiar el tamaño del búfer de E/S
+description: Cambiar el tamaño del búfer de E/S
 ms.assetid: eff97399-143e-477b-bb16-7305e83a2317
 keywords:
-- e/s de archivos multimedia, cambiar el tamaño del búfer
-- e/s de archivos, cambiar el tamaño del búfer
-- entrada y salida (e/s), cambiar el tamaño del búfer
-- E/s (entrada y salida), cambiar el tamaño del búfer
-- cambiar el tamaño del búfer de e/s
-- e/s no almacenada en búfer
-- e/s almacenada en búfer
-- mmioSetBuffer función)
+- E/S de archivo multimedia, cambiar el tamaño del búfer
+- E/S de archivo, cambiar el tamaño del búfer
+- entrada y salida (E/S), cambio del tamaño del búfer
+- E/S (entrada y salida), cambiar el tamaño del búfer
+- cambiar el tamaño del búfer de E/S
+- E/S sin búfer
+- E/S en búfer
+- Función mmioSetBuffer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad2171f4f09b933a3de5ec1e99750261fdda2f80
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 826fabfb7e51b80bf406721b3d5e7b094f83c1c3fe2061f7edea0810a41dc639
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119145088"
 ---
-# <a name="changing-the-io-buffer-size"></a>Cambiar el tamaño del búfer de e/s
+# <a name="changing-the-io-buffer-size"></a>Cambiar el tamaño del búfer de E/S
 
-En el ejemplo siguiente se abre un archivo denominado SAMPLE.TXT para la e/s no almacenada en búfer y, a continuación, se habilita la e/s del búfer con un búfer interno de 16 KB mediante la función [**mmioSetBuffer**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmiosetbuffer) .
+En el ejemplo siguiente se abre un archivo denominado SAMPLE.TXT para E/S sin búfer y, a continuación, se habilita la E/S almacenada en búfer con un búfer interno de 16K mediante la función [**mmioSetBuffer.**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmiosetbuffer)
 
 
 ```C++
@@ -42,6 +42,6 @@ else
 
 
 
- 
+ 
 
- 
+ 

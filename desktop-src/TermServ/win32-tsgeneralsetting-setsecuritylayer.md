@@ -1,12 +1,12 @@
 ---
-title: Método SetSecurityLayer de la clase Win32_TSGeneralSetting
-description: El método SetSecurityLayer establece el nivel de seguridad.
+title: Método SetSecurityLayer de la Win32_TSGeneralSetting clase
+description: El método SetSecurityLayer establece la capa de seguridad.
 ms.assetid: 3b894494-2180-4f1d-8e67-a66c679d286c
 ms.tgt_platform: multiple
 keywords:
 - Método SetSecurityLayer Servicios de Escritorio remoto
-- Método SetSecurityLayer Servicios de Escritorio remoto, clase Win32_TSGeneralSetting
-- Win32_TSGeneralSetting de clase Servicios de Escritorio remoto, método SetSecurityLayer
+- Método SetSecurityLayer Servicios de Escritorio remoto , Win32_TSGeneralSetting clase
+- Win32_TSGeneralSetting clase Servicios de Escritorio remoto , método SetSecurityLayer
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5e04c3f7e5a58ec8de345d570e36b35c7eb1e7e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0e01f761b63be028e2c507644f160b6742f9d781e517ea03ce549e3ac84419c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513875"
 ---
-# <a name="setsecuritylayer-method-of-the-win32_tsgeneralsetting-class"></a>Método SetSecurityLayer de la \_ clase TSGeneralSetting de Win32
+# <a name="setsecuritylayer-method-of-the-win32_tsgeneralsetting-class"></a>Método SetSecurityLayer de la clase \_ TSGeneralSetting de Win32
 
-El método **SetSecurityLayer** establece el nivel de seguridad.
+El **método SetSecurityLayer** establece la capa de seguridad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,16 +43,16 @@ uint32 SetSecurityLayer(
 
 <dl> <dt>
 
-*SecurityLayer* \[ de\]
+*SecurityLayer* \[ En\]
 </dt> <dd>
 
-Nivel de seguridad que se va a establecer. Si el nivel de cifrado actual es 1, el valor 2 para *SecurityLayer* no es válido.
+Capa de seguridad que se establecerá. Si el nivel de cifrado actual es 1, un valor de 2 para *SecurityLayer* no es válido.
 
 <dt>
 
 <span id="RDP_Security_Layer"></span><span id="rdp_security_layer"></span><span id="RDP_SECURITY_LAYER"></span>
 
-<span id="RDP_Security_Layer"></span><span id="rdp_security_layer"></span><span id="RDP_SECURITY_LAYER"></span>**Nivel de seguridad de RDP** (0)
+<span id="RDP_Security_Layer"></span><span id="rdp_security_layer"></span><span id="RDP_SECURITY_LAYER"></span>**Capa de seguridad RDP** (0)
 
 
 </dt> <dd>
@@ -79,28 +79,28 @@ Se usará la capa más segura que admita el cliente. Si se admite, se usará SSL
 
 </dt> <dd>
 
-SSL (TLS 1,0) se usará para la autenticación del servidor, así como para cifrar todos los datos transferidos entre el servidor y el cliente. Esta configuración requiere que el servidor tenga un certificado compatible con SSL. Esta configuración no es compatible con un valor de **MinEncryptionLevel** de 1.
+SSL (TLS 1.0) se usará para la autenticación del servidor, así como para cifrar todos los datos transferidos entre el servidor y el cliente. Esta configuración requiere que el servidor tenga un certificado compatible con SSL. Esta configuración no es compatible con un **valor MinEncryptionLevel** de 1.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve SUCCESS si es correcto; de lo contrario, devuelve un código de error de WMI. Consulte [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores.
+Devuelve Success si se ejecuta correctamente; de lo contrario, devuelve un código de error wmi. Consulte los [Servicios de Escritorio remoto de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md) para obtener una lista de estos valores.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Raíz de \\ CIMv2 \\ TerminalServices<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 

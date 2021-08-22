@@ -1,29 +1,29 @@
 ---
 title: MulticastUdpClientExample6
-description: En este ejemplo se muestra un cliente UDP que multidifusión una solicitud y, a continuación, espera los mensajes de respuesta de los servidores con IPv6.
+description: En este ejemplo se muestra un cliente UDP que multidifusión de una solicitud y, a continuación, espera los mensajes de respuesta de los servidores, mediante IPv6.
 ms.assetid: bd19bd5f-0617-4524-aa48-3d0c28c97747
 keywords:
 - MulticastUdpClientExample6 Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d36b8a2117f91e43b0e4ecbbcce12cbe1c8cd2c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c3e43d321fffefbdf29acd93d0ccd1a6deea99f5dd37cffd0c92311a717fc606
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119444515"
 ---
 # <a name="multicastudpclientexample6"></a>MulticastUdpClientExample6
 
-En este ejemplo se muestra un cliente UDP que multidifusión una solicitud y, a continuación, espera los mensajes de respuesta de los servidores con IPv6.
+En este ejemplo se muestra un cliente UDP que multidifusión de una solicitud y, a continuación, espera los mensajes de respuesta de los servidores, mediante IPv6.
 
--   [MulticastUdpClient6. cpp](#multicastudpclient6cpp)
--   [PurchaseOrder. wsdl](#purchaseorderwsdl)
+-   [MulticastUdpClient6.cpp](#multicastudpclient6cpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Archivo Make](#makefile)
 
-## <a name="multicastudpclient6cpp"></a>MulticastUdpClient6. cpp
+## <a name="multicastudpclient6cpp"></a>MulticastUdpClient6.cpp
 
 
 ```C++
@@ -570,7 +570,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. wsdl
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -714,9 +714,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 
