@@ -1,20 +1,20 @@
 ---
-title: Referencia de modos y ejecución
-description: Referencia de modos y ejecución
+title: Modos y referencia de ejecución
+description: Modos y referencia de ejecución
 ms.assetid: 6fb5682d-45f6-4eb2-85cb-741e8ab52304
 keywords:
 - OpenGL, referencia de modos
 - OpenGL, referencia de ejecución
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f5bb496fd7c081908133f26897520934a81ae0b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d58b288c2098d81225dc15de8f8634676aba6a4b8f225e8db50c6d230a30554e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105665625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144178"
 ---
-# <a name="modes-and-execution-reference"></a>Referencia de modos y ejecución
+# <a name="modes-and-execution-reference"></a>Modos y referencia de ejecución
 
 -   [**glDisable**](gldisable.md)
 -   [**glEnable**](glenable.md)
@@ -23,9 +23,9 @@ ms.locfileid: "105665625"
 -   [**glHint**](glhint.md)
 -   [**glIsEnabled**](glisenabled.md)
 
- 
+ 
 
- 
+ 
 
 
 

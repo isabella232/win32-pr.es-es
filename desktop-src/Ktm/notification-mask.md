@@ -1,23 +1,23 @@
 ---
-description: Enumera los distintos tipos de notificaciones que puede recibir una inscripción.
+description: Enumera los distintos tipos de notificaciones que puede recibir una alta.
 ms.assetid: 65db8ba5-193c-439b-8e8c-6cb4a9bd4efd
-title: NOTIFICATION_MASK (KtmTypes. h)
+title: NOTIFICATION_MASK (KtmTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f3650c10f619cf45db34d9172476261838897a5f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c17391d2b406b3f7a3ee9a3a868bc1b6734050c787fdbb432785e5be0b917468
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146548"
 ---
-# <a name="notification_mask"></a>máscara de notificación \_
+# <a name="notification_mask"></a>MÁSCARA DE \_ NOTIFICACIÓN
 
-Enumera los distintos tipos de notificaciones que puede recibir una inscripción.
+Enumera los distintos tipos de notificaciones que puede recibir una alta.
 
 <dl> <dt>
 
-<span id="TRANSACTION_NOTIFY_MASK"></span><span id="transaction_notify_mask"></span>**\_máscara de notificación de transacción \_**
+<span id="TRANSACTION_NOTIFY_MASK"></span><span id="transaction_notify_mask"></span>**TRANSACTION \_ NOTIFY \_ MASK**
 </dt> <dd> <dl> <dt>
 
 0x3FFFFFFF
@@ -30,7 +30,7 @@ Máscara que indica todos los bits válidos para una notificación de transacci�
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_PREPREPARE"></span><span id="transaction_notify_preprepare"></span>**prepreparación de \_ notificaciones de transacción \_**
+<span id="TRANSACTION_NOTIFY_PREPREPARE"></span><span id="transaction_notify_preprepare"></span>**NOTIFICACIÓN \_ DE \_ TRANSACCIÓN PREPREPARE**
 </dt> <dd> <dl> <dt>
 
 0x00000001
@@ -38,12 +38,12 @@ Máscara que indica todos los bits válidos para una notificación de transacci�
 
 
 
-Se llama a esta notificación después de que un cliente llame a [**CommitTransaction**](/windows/desktop/api/Ktmw32/nf-ktmw32-committransaction) y ningún administrador de recursos (RM) admita la confirmación en una fase o un administrador de transacciones superior (TM) llame a [**PrePrepareEnlistment**](/windows/desktop/api/KtmW32/nf-ktmw32-preprepareenlistment). El RMs recibe esta notificación que indica que deben completar cualquier trabajo que pueda hacer que otro RMs tenga que darse de alta en una transacción, como vaciar su memoria caché. Después de completar estas operaciones, RM debe llamar a [**PrePrepareComplete**](/windows/desktop/api/Ktmw32/nf-ktmw32-prepreparecomplete). Para recibir esta notificación, RM también debe admitir la **\_ \_ confirmación** de la notificación de transacciones **\_ \_ preparar** y la notificación de transacción.
+Se llama a esta notificación después de que un cliente llame a [**CommitTransaction**](/windows/desktop/api/Ktmw32/nf-ktmw32-committransaction) y ningún administrador de recursos (RM) admita la confirmación de una sola fase o un administrador de transacciones (TM) superior llame a [**PrePrepareEnlistment**](/windows/desktop/api/KtmW32/nf-ktmw32-preprepareenlistment). Los ADMINISTRADORes reciben esta notificación que indica que deben completar cualquier trabajo que pueda provocar que otros HSM necesiten dar de alta en una transacción, como vaciar su memoria caché. Después de completar estas operaciones, el rm debe llamar [**a PrePrepareComplete**](/windows/desktop/api/Ktmw32/nf-ktmw32-prepreparecomplete). Para recibir esta notificación, el RM también debe admitir **TRANSACTION \_ NOTIFY \_ PREPARE** y **TRANSACTION NOTIFY \_ \_ COMMIT**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_PREPARE"></span><span id="transaction_notify_prepare"></span>**\_preparar notificación de transacción \_**
+<span id="TRANSACTION_NOTIFY_PREPARE"></span><span id="transaction_notify_prepare"></span>**PREPARACIÓN DE \_ NOTIFICACIÓN DE \_ TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 0x00000002
@@ -51,12 +51,12 @@ Se llama a esta notificación después de que un cliente llame a [**CommitTransa
 
 
 
-Se llama a esta notificación después de que se complete el procesamiento de **\_ \_ prepreparación** de la transacción. Indica a RM que complete todo el trabajo asociado a esta inscripción para que pueda garantizar que una operación de confirmación puede realizarse correctamente y también se puede realizar una operación de anulación. Normalmente, la mayor parte del trabajo de una transacción se realiza durante la fase de preparación. En el caso de RMs duradero, deben registrar su estado antes de llamar a la función [**PrepareComplete**](/windows/desktop/api/Ktmw32/nf-ktmw32-preparecomplete) . Esta es la última oportunidad para que el RM solicite que se revierta la transacción.
+Se llama a esta notificación una vez completado el procesamiento **\_ de TRANSACTION NOTIFY \_ PREPREPARE.** Indica al RM que complete todo el trabajo asociado a esta alta para que pueda garantizar que una operación de confirmación se pueda realizar correctamente y que una operación de anulación también se realice correctamente. Normalmente, la mayor parte del trabajo de una transacción se realiza durante la fase de preparación. En el caso de los RMs duraderos, deben registrar su estado antes de llamar a la [**función PrepareComplete.**](/windows/desktop/api/Ktmw32/nf-ktmw32-preparecomplete) Esta es la última oportunidad para que el rm solicite que se revierte la transacción.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_COMMIT"></span><span id="transaction_notify_commit"></span>**\_confirmación de notificación de transacción \_**
+<span id="TRANSACTION_NOTIFY_COMMIT"></span><span id="transaction_notify_commit"></span>**CONFIRMACIÓN \_ DE NOTIFICACIÓN DE \_ TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 0x00000004
@@ -64,12 +64,12 @@ Se llama a esta notificación después de que se complete el procesamiento de **
 
 
 
-Esta notificación indica a RM que complete todo el trabajo asociado a esta inscripción. Normalmente, el RM libera los bloqueos, libera cualquier información necesaria para revertir la transacción. El RM debe responder llamando a la función [**CommitComplete**](/windows/desktop/api/Ktmw32/nf-ktmw32-commitcomplete) cuando haya finalizado estas operaciones.
+Esta notificación indica al RM que complete todo el trabajo asociado a esta alta. Normalmente, el rm libera los bloqueos y libera la información necesaria para revertir la transacción. El rm debe responder llamando a [**la función CommitComplete**](/windows/desktop/api/Ktmw32/nf-ktmw32-commitcomplete) cuando haya finalizado estas operaciones.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_ROLLBACK"></span><span id="transaction_notify_rollback"></span>**reversión de notificación de transacción \_ \_**
+<span id="TRANSACTION_NOTIFY_ROLLBACK"></span><span id="transaction_notify_rollback"></span>**REVERSIÓN \_ DE NOTIFICACIÓN \_ DE TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 0x00000008
@@ -77,12 +77,12 @@ Esta notificación indica a RM que complete todo el trabajo asociado a esta insc
 
 
 
-Esta notificación señala al RM para deshacer todo el trabajo que ha hecho que está asociado a la transacción.
+Esta notificación indica al rm que deshará todo el trabajo que ha realizado que está asociado a la transacción.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_PREPREPARE_COMPLETE"></span><span id="transaction_notify_preprepare_complete"></span>**\_finalización de notificación de transacción \_ \_ finalizada**
+<span id="TRANSACTION_NOTIFY_PREPREPARE_COMPLETE"></span><span id="transaction_notify_preprepare_complete"></span>**TRANSACTION \_ NOTIFY \_ PREPREPARE \_ COMPLETE**
 </dt> <dd> <dl> <dt>
 
 0x00000010
@@ -90,12 +90,12 @@ Esta notificación señala al RM para deshacer todo el trabajo que ha hecho que 
 
 
 
-Esta notificación señala al TM superior que se completó correctamente una operación previa a la preparación.
+Esta notificación indica a la tm superior que una operación de preparación previa se completó correctamente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_PREPARE_COMPLETE"></span><span id="transaction_notify_prepare_complete"></span>**preparación de notificación de transacción \_ \_ \_ completada**
+<span id="TRANSACTION_NOTIFY_PREPARE_COMPLETE"></span><span id="transaction_notify_prepare_complete"></span>**TRANSACTION \_ NOTIFY \_ PREPARE \_ COMPLETE**
 </dt> <dd> <dl> <dt>
 
 0x00000020
@@ -103,12 +103,12 @@ Esta notificación señala al TM superior que se completó correctamente una ope
 
 
 
-Esta notificación señala al TM superior que se completó correctamente una operación de preparación.
+Esta notificación indica a la tm superior que una operación de preparación se completó correctamente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_COMMIT_COMPLETE"></span><span id="transaction_notify_commit_complete"></span>**confirmación de notificación de transacción \_ \_ \_ completada**
+<span id="TRANSACTION_NOTIFY_COMMIT_COMPLETE"></span><span id="transaction_notify_commit_complete"></span>**TRANSACTION \_ NOTIFY \_ COMMIT \_ COMPLETE**
 </dt> <dd> <dl> <dt>
 
 0x00000040
@@ -116,12 +116,12 @@ Esta notificación señala al TM superior que se completó correctamente una ope
 
 
 
-Esta notificación señala al TM superior que una operación de confirmación se completó correctamente.
+Esta notificación indica a la tm superior que una operación de confirmación se completó correctamente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_ROLLBACK_COMPLETE"></span><span id="transaction_notify_rollback_complete"></span>**reversión de notificación de transacción \_ \_ \_ completada**
+<span id="TRANSACTION_NOTIFY_ROLLBACK_COMPLETE"></span><span id="transaction_notify_rollback_complete"></span>**TRANSACTION \_ NOTIFY \_ ROLLBACK \_ COMPLETE**
 </dt> <dd> <dl> <dt>
 
 0x00000080
@@ -129,12 +129,12 @@ Esta notificación señala al TM superior que una operación de confirmación se
 
 
 
-Esta notificación señala al TM superior que se completó correctamente una operación de reversión.
+Esta notificación indica a la tm superior que una operación de reversión se completó correctamente.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_RECOVER"></span><span id="transaction_notify_recover"></span>**TRANSACCIÓN de \_ notificación de \_ recuperación**
+<span id="TRANSACTION_NOTIFY_RECOVER"></span><span id="transaction_notify_recover"></span>**RECUPERACIÓN \_ DE NOTIFICACIÓN DE \_ TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 0x00000100
@@ -142,12 +142,12 @@ Esta notificación señala al TM superior que se completó correctamente una ope
 
 
 
-Esta notificación señala a RMs que debe recuperar su estado porque debe reenviarse un resultado de la transacción. Por ejemplo, cuando se recupera un RM y cuando hay transacciones pendientes. Esta notificación se entrega una vez que se resuelve el estado dudoso.
+Esta notificación indica a los HSM que deben recuperar su estado porque se debe volver a entregar un resultado de la transacción. Por ejemplo, cuando se recupera un RM y cuando hay transacciones que quedan en duda. Esta notificación se entrega una vez resuelto el estado dudoso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_SINGLE_PHASE_COMMIT"></span><span id="transaction_notify_single_phase_commit"></span>**\_confirmación de \_ una sola \_ fase \_ de notificación de transacción**
+<span id="TRANSACTION_NOTIFY_SINGLE_PHASE_COMMIT"></span><span id="transaction_notify_single_phase_commit"></span>**CONFIRMACIÓN DE \_ FASE ÚNICA DE NOTIFICACIÓN DE \_ \_ \_ TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 0x00000200
@@ -155,12 +155,12 @@ Esta notificación señala a RMs que debe recuperar su estado porque debe reenvi
 
 
 
-Esta notificación indica al RM que complete y confirme la transacción sin usar un protocolo de confirmación en dos fases. Si el RM quiere usar una operación en dos fases, debe responder llamando a la función [**SinglePhaseReject**](/windows/desktop/api/Ktmw32/nf-ktmw32-singlephasereject) .
+Esta notificación indica al rm que complete y confirme la transacción sin usar un protocolo de confirmación en dos fases. Si el rm quiere usar una operación en dos fases, debe responder llamando a la [**función SinglePhaseReject.**](/windows/desktop/api/Ktmw32/nf-ktmw32-singlephasereject)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_DELEGATE_COMMIT"></span><span id="transaction_notify_delegate_commit"></span>**\_confirmación de \_ delegado de notificación de transacción \_**
+<span id="TRANSACTION_NOTIFY_DELEGATE_COMMIT"></span><span id="transaction_notify_delegate_commit"></span>**CONFIRMACIÓN \_ DE DELEGADO DE NOTIFICACIÓN DE \_ \_ TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 0x00000400
@@ -168,12 +168,12 @@ Esta notificación indica al RM que complete y confirme la transacción sin usar
 
 
 
-KTM está señalando al TM superior para realizar una operación de confirmación.
+KTM señala a la TM superior para realizar una operación de confirmación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_RECOVER_QUERY"></span><span id="transaction_notify_recover_query"></span>**\_consulta de notificación de \_ recuperación de transacción \_**
+<span id="TRANSACTION_NOTIFY_RECOVER_QUERY"></span><span id="transaction_notify_recover_query"></span>**CONSULTA DE \_ RECUPERACIÓN DE NOTIFICACIÓN \_ DE \_ TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 0x00000800
@@ -181,12 +181,12 @@ KTM está señalando al TM superior para realizar una operación de confirmació
 
 
 
-KTM está señalando al TM superior para consultar el estado de una transacción dudosa.
+KTM señala a la TM superior para consultar el estado de una transacción dudosa.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_ENLIST_PREPREPARE"></span><span id="transaction_notify_enlist_preprepare"></span>**prepreparación de \_ notificaciones de notificación de transacción \_ \_**
+<span id="TRANSACTION_NOTIFY_ENLIST_PREPREPARE"></span><span id="transaction_notify_enlist_preprepare"></span>**TRANSACTION \_ NOTIFY \_ ENLIST \_ PREPREPARE**
 </dt> <dd> <dl> <dt>
 
 0x00001000
@@ -194,12 +194,12 @@ KTM está señalando al TM superior para consultar el estado de una transacción
 
 
 
-Esta notificación señala al TM superior que las notificaciones de prepreparación deben entregarse en la inscripción especificada.
+Esta notificación indica a la TM superior que las notificaciones previas a la preparación deben entregarse en la lista especificada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_LAST_RECOVER"></span><span id="transaction_notify_last_recover"></span>**\_ \_ última \_ recuperación de la notificación de transacción**
+<span id="TRANSACTION_NOTIFY_LAST_RECOVER"></span><span id="transaction_notify_last_recover"></span>**NOTIFICACIÓN \_ DE TRANSACCIÓN \_ ÚLTIMA \_ RECUPERACIÓN**
 </dt> <dd> <dl> <dt>
 
 0x00002000
@@ -207,12 +207,12 @@ Esta notificación señala al TM superior que las notificaciones de prepreparaci
 
 
 
-Esta notificación indica que la operación de recuperación se ha completado para este RM.
+Esta notificación indica que la operación de recuperación se ha completado para este rm.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_INDOUBT"></span><span id="transaction_notify_indoubt"></span>**induda de la notificación de transacción \_ \_**
+<span id="TRANSACTION_NOTIFY_INDOUBT"></span><span id="transaction_notify_indoubt"></span>**NOTIFICACIÓN \_ DE \_ TRANSACCIÓN A INDOUBT**
 </dt> <dd> <dl> <dt>
 
 0x00004000
@@ -220,12 +220,12 @@ Esta notificación indica que la operación de recuperación se ha completado pa
 
 
 
-La transacción especificada se encuentra en un estado dudoso. El RM recibe esta notificación durante las operaciones de recuperación cuando se ha preparado una transacción, pero no hay ningún administrador de transacciones superior (TM) disponible. Por ejemplo, cuando una transacción implica un TM remoto y ese nodo no está disponible, su nodo no está disponible o el servicio local [Coordinador de transacciones distribuidas](/previous-versions/windows/desktop/ms684146(v=vs.85)) no está disponible, el estado de la transacción es dudoso.
+La transacción especificada está en un estado dudoso. El administrador de transacciones recibe esta notificación durante las operaciones de recuperación cuando se ha preparado una transacción, pero no hay ningún administrador de transacciones (TM) superior disponible. Por ejemplo, cuando una transacción implica una TM remota y ese nodo no está disponible, su nodo no está disponible o el servicio [Coordinador de transacciones distribuidas](/previous-versions/windows/desktop/ms684146(v=vs.85)) local no está disponible, el estado de la transacción es dudoso.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_TM_ONLINE"></span><span id="transaction_notify_tm_online"></span>**TRANSACCIÓN \_ Notify \_ TM \_ en línea**
+<span id="TRANSACTION_NOTIFY_TM_ONLINE"></span><span id="transaction_notify_tm_online"></span>**TRANSACTION \_ NOTIFY \_ TM \_ ONLINE**
 </dt> <dd> <dl> <dt>
 
 0x02000000
@@ -233,12 +233,12 @@ La transacción especificada se encuentra en un estado dudoso. El RM recibe esta
 
 
 
-TM está en línea y acepta solicitudes.
+La TM está en línea y acepta solicitudes.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_REQUEST_OUTCOME"></span><span id="transaction_notify_request_outcome"></span>**\_resultado de \_ solicitud de notificación de transacción \_**
+<span id="TRANSACTION_NOTIFY_REQUEST_OUTCOME"></span><span id="transaction_notify_request_outcome"></span>**RESULTADO DE \_ LA SOLICITUD DE NOTIFICACIÓN DE \_ \_ TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 0x20000000
@@ -246,12 +246,12 @@ TM está en línea y acepta solicitudes.
 
 
 
-Señala a RMs que hay información de resultados disponible y que se debe realizar una solicitud de esa información.
+Indica a los HSM que hay información de resultados disponible y que se debe realizar una solicitud de esa información.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_NOTIFY_COMMIT_FINALIZE"></span><span id="transaction_notify_commit_finalize"></span>**\_Finalizar notificación de \_ confirmación \_ de transacción**
+<span id="TRANSACTION_NOTIFY_COMMIT_FINALIZE"></span><span id="transaction_notify_commit_finalize"></span>**TRANSACTION \_ NOTIFY \_ COMMIT \_ FINALIZE**
 </dt> <dd> <dl> <dt>
 
 0x40000000
@@ -272,7 +272,7 @@ Reservado.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                            |
-| Encabezado<br/>                   | <dl> <dt>KtmTypes. h (incluir Windows. h)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>KtmTypes.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -283,7 +283,7 @@ Reservado.
 [Coordinador de transacciones distribuidas](/previous-versions/windows/desktop/ms684146(v=vs.85))
 </dt> <dt>
 
-[Constantes del administrador de transacciones de kernel](kernel-transaction-manager-constants.md)
+[Constantes del Administrador de transacciones de kernel](kernel-transaction-manager-constants.md)
 </dt> <dt>
 
 [**CreateEnlistment**](/windows/desktop/api/KtmW32/nf-ktmw32-createenlistment)
@@ -304,7 +304,7 @@ Reservado.
 [**SinglePhaseReject**](/windows/desktop/api/Ktmw32/nf-ktmw32-singlephasereject)
 </dt> <dt>
 
-[**notificación de transacción \_**](/windows/desktop/api/KtmTypes/ns-ktmtypes-transaction_notification)
+[**NOTIFICACIÓN DE \_ TRANSACCIÓN**](/windows/desktop/api/KtmTypes/ns-ktmtypes-transaction_notification)
 </dt> </dl>
 
  

@@ -6,12 +6,12 @@
       items:
         - name: Tipos de eventos
           href: event-types.md
-        - name: Instrucciones de registro
+        - name: Directrices de registro
           href: logging-guidelines.md
         - name: Elementos de registro de eventos
           href: event-logging-elements.md
           items:
-            - name: Clave EventLog
+            - name: Clave del registro de eventos
               href: eventlog-key.md
             - name: Orígenes de eventos
               href: event-sources.md
@@ -26,7 +26,7 @@
                   href: message-text-files.md
                 - name: Archivo de texto de mensaje de ejemplo
                   href: sample-message-text-file.md
-            - name: Entradas del registro de eventos
+            - name: Registros de eventos
               href: event-log-records.md
             - name: Datos del evento
               href: event-data.md
@@ -35,22 +35,22 @@
         - name: Modelo de registro de eventos
           href: event-logging-model.md
           items:
-            - name: Formato de archivo de registro de eventos
+            - name: Formato del archivo de registro de eventos
               href: event-log-file-format.md
-            - name: Leer del registro de eventos
+            - name: Lectura desde el registro de eventos
               href: reading-from-the-event-log.md
-            - name: Ver el registro de eventos
+            - name: Visualización del registro de eventos
               href: viewing-the-event-log.md
         - name: Seguridad del registro de eventos
           href: event-logging-security.md
     - name: Uso del registro de eventos
       href: using-event-logging.md
       items:
-        - name: Consultar información de eventos
+        - name: Consulta de información de eventos
           href: querying-for-event-source-messages.md
         - name: Informes de eventos
           href: reporting-an-event.md
-        - name: Recibir notificación de eventos
+        - name: Recepción de notificaciones de eventos
           href: receiving-event-notification.md
     - name: Referencia del registro de eventos
       href: event-logging-reference.md

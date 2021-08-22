@@ -4,35 +4,35 @@ description: Mensajes de control de botón
 ms.assetid: 8aea1640-c962-40a4-9133-7beb78baf594
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a24aa49cfd0d807a66a942b3b115429748c6688
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c2021fd675289f7bf6377b50ddf2e634e58a5bc1a9600dcdb508742ec6eac944
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119699895"
 ---
 # <a name="button-control-messages"></a>Mensajes de control de botón
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**GETIDEALSIZE de BCM \_**](bcm-getidealsize.md)
--   [**GETIMAGELIST de BCM \_**](bcm-getimagelist.md)
--   [**GETNOTE de BCM \_**](bcm-getnote.md)
--   [**GETNOTELENGTH de BCM \_**](bcm-getnotelength.md)
--   [**GETSPLITINFO de BCM \_**](bcm-getsplitinfo.md)
--   [**GETTEXTMARGIN de BCM \_**](bcm-gettextmargin.md)
--   [**SETDROPDOWNSTATE de BCM \_**](bcm-setdropdownstate.md)
--   [**SETIMAGELIST de BCM \_**](bcm-setimagelist.md)
--   [**SETNOTE de BCM \_**](bcm-setnote.md)
--   [**SETSHIELD de BCM \_**](bcm-setshield.md)
--   [**SETSPLITINFO de BCM \_**](bcm-setsplitinfo.md)
--   [**SETTEXTMARGIN de BCM \_**](bcm-settextmargin.md)
--   [**\_clic en BM**](bm-click.md)
--   [**\_GETCHECK BM**](bm-getcheck.md)
--   [**BM \_ de BM**](bm-getimage.md)
--   [**\_GETSTATE BM**](bm-getstate.md)
--   [**\_SETCHECK BM**](bm-setcheck.md)
--   [**\_SETDONTCLICK BM**](bm-setdontclick.md)
+-   [**BCM \_ GETIDEALSIZE**](bcm-getidealsize.md)
+-   [**BCM \_ GETIMAGELIST**](bcm-getimagelist.md)
+-   [**BCM \_ GETNOTE**](bcm-getnote.md)
+-   [**BCM \_ GETNOTELENGTH**](bcm-getnotelength.md)
+-   [**BCM \_ GETSPLITINFO**](bcm-getsplitinfo.md)
+-   [**BCM \_ GETTEXTMARGIN**](bcm-gettextmargin.md)
+-   [**BCM \_ SETDROPDOWNSTATE**](bcm-setdropdownstate.md)
+-   [**BCM \_ SETIMAGELIST**](bcm-setimagelist.md)
+-   [**BCM \_ SETNOTE**](bcm-setnote.md)
+-   [**BCM \_ SETSHIELD**](bcm-setshield.md)
+-   [**BCM \_ SETSPLITINFO**](bcm-setsplitinfo.md)
+-   [**BCM \_ SETTEXTMARGIN**](bcm-settextmargin.md)
+-   [**BM \_ CLICK**](bm-click.md)
+-   [**BM \_ GETCHECK**](bm-getcheck.md)
+-   [**BM \_ GETIMAGE**](bm-getimage.md)
+-   [**BM \_ GETSTATE**](bm-getstate.md)
+-   [**BM \_ SETCHECK**](bm-setcheck.md)
+-   [**BM \_ SETDONTCLICK**](bm-setdontclick.md)
 -   [**BM \_ SETIMAGE**](bm-setimage.md)
 -   [**BM \_ SETSTATE**](bm-setstate.md)
 -   [**BM \_ SETSTYLE**](bm-setstyle.md)

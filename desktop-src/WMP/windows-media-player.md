@@ -3,54 +3,54 @@ title: Reproductor de Windows Media
 description: Reproductor de Windows Media
 ms.assetid: 5a7452c4-5778-439b-b3e3-4e6311bef276
 keywords:
-- Media Player de Windows, acerca de
+- Reproductor de Windows Media,about
 - SDK (kit de desarrollo de software), características
-- Kit de desarrollo de software (SDK), características
+- kit de desarrollo de software (SDK), características
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2187ae6c7ae1cd0cd0b38616ab36f934f69bee94
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a9fcd1de0241bc5902df29b77b364abcbba12cd92045a0a363d472000beed147
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053973"
 ---
 # <a name="windows-media-player"></a>Reproductor de Windows Media
 
-El SDK de Windows Media Player proporciona características que afectan al comportamiento de Windows Media Player y Windows Media Player para Windows Mobile.
+El SDK Reproductor de Windows Media proporciona características que afectan al comportamiento de Reproductor de Windows Media y Reproductor de Windows Media para Windows Mobile.
 
-En las secciones siguientes se detallan las características del SDK que se aplican a Windows Media Player en general.
+En las secciones siguientes se detallan las características del SDK que se aplican a Reproductor de Windows Media en general.
 
 
 
 | Sección                                                                                                        | Descripción                                                                                                                                                           |
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Configuración del registro](registry-settings.md)                                                                     | Valores de detalles que puede cambiar en el registro del usuario para habilitar Media Player de Windows para que reconozcan las extensiones de nombre de archivo personalizadas.                                    |
-| [Parámetros de la línea de comandos](command-line-parameters.md)                                                         | Detalla el conjunto de parámetros de la línea de comandos que especifican cómo se comporta Windows Media Player cuando se inicia.                                                              |
-| [Salidas de audio](audio-outputs.md)                                                                             | Describe cómo Windows Media Player y el control ActiveX de Windows Media Player eligen los dispositivos de salida de audio predeterminados.                                                  |
-| [Redistribuir el software de Windows Media Player](redistributing-windows-media-player-software.md)               | Proporciona información sobre cómo redistribuir Windows Media Player.                                                                                                       |
-| [Publicar códecs para Windows Media Player](publishing-codecs-for-windows-media-player.md)                   | Ya no se admite la publicación del códec en el sitio web de WMPlugins.                                                                                                |
-| [Cuadro de diálogo cambiar el tamaño del adquisición de licencias](resizing-the-license-acquisition-dialog-box.md)                 | Describe cómo modificar un atributo de archivo de Windows Media para especificar un tamaño para el cuadro de diálogo adquisición de licencias de Windows Media Player 10 o posterior.                     |
-| [Extensiones de dispositivo para la transferencia de metadatos acelerada](device-extensions-for-accelerated-metadata-transfer.md) | Describe cómo Windows Media Player recupera información de los dispositivos portátiles sobre los cambios que se producen en determinados elementos de contenido entre las sesiones de sincronización. |
-| [Extensiones de dispositivo para la generación de informes de contenido adquirido](device-extensions-for-reporting-acquired-content.md)       | Describe cómo Windows Media Player puede recuperar una lista de contenido nuevo adquirido por un dispositivo portátil entre sesiones de sincronización.                                 |
-| [Extensiones de dispositivo para preferencias de objetos de lista de reproducción](device-extensions-for-playlist-object-preferences.md)     | Describe cómo un dispositivo portátil puede especificar los tipos de objeto de lista de reproducción que Windows Media Player debe copiar en el dispositivo durante la sincronización automática.                |
-| [Códigos de control de e/s de dispositivo](device-i-o-control-codes.md)                                                       | Enumera los códigos de control de e/s de dispositivo usados por Windows Media Player 10 o posterior para comunicarse con dispositivos portátiles a través del SDK de Windows Media Administrador de dispositivos.            |
-| [Compatibilidad con imágenes personalizadas para dispositivos](custom-image-support-for-devices.md)                                       | Describe dos archivos de imagen que los fabricantes de dispositivos portátiles pueden crear para personalizar la personalización de marca en Windows Media Player 10 o posterior.                                    |
+| [Configuración del Registro](registry-settings.md)                                                                     | Detalles de los valores que puede cambiar en el registro del usuario para permitir que Reproductor de Windows Media reconocer extensiones de nombre de archivo personalizadas.                                    |
+| [Parámetros de la línea de comandos](command-line-parameters.md)                                                         | Detalla el conjunto de parámetros de línea de comandos que especifican Reproductor de Windows Media se comporta cuando se inicia.                                                              |
+| [Salidas de audio](audio-outputs.md)                                                                             | Describe cómo Reproductor de Windows Media y el control Reproductor de Windows Media ActiveX elegir dispositivos de salida de audio predeterminados.                                                  |
+| [Redistribuir Reproductor de Windows Media Software](redistributing-windows-media-player-software.md)               | Proporciona información sobre la redistribución Reproductor de Windows Media.                                                                                                       |
+| [Publicación de códecs para Reproductor de Windows Media](publishing-codecs-for-windows-media-player.md)                   | Ya no se admite la publicación del códec en el sitio web de WMPlugins.                                                                                                |
+| [Cambiar el tamaño del cuadro de diálogo Adquisición de licencias](resizing-the-license-acquisition-dialog-box.md)                 | Describe cómo modificar un atributo de archivo Windows media para especificar un tamaño para el cuadro de diálogo de adquisición de licencias Reproductor de Windows Media 10 o posterior.                     |
+| [Extensiones de dispositivo para la transferencia acelerada de metadatos](device-extensions-for-accelerated-metadata-transfer.md) | Describe cómo Reproductor de Windows Media recupera información de dispositivos portátiles sobre los cambios que se producen en elementos de contenido concretos entre sesiones de sincronización. |
+| [Extensiones de dispositivo para notificar contenido adquirido](device-extensions-for-reporting-acquired-content.md)       | Describe cómo Reproductor de Windows Media recuperar una lista de contenido nuevo adquirido por un dispositivo portátil entre sesiones de sincronización.                                 |
+| [Extensiones de dispositivo para las preferencias de objetos de lista de reproducción](device-extensions-for-playlist-object-preferences.md)     | Describe cómo un dispositivo portátil puede especificar qué tipos de objeto de lista Reproductor de Windows Media copiar en el dispositivo durante la sincronización automática.                |
+| [Códigos de control de E/S de dispositivo](device-i-o-control-codes.md)                                                       | Enumera los códigos de control de E/S de dispositivo usados por Reproductor de Windows Media 10 o posterior para comunicarse con dispositivos portátiles a través del SDK de Windows Media Administrador de dispositivos.            |
+| [Compatibilidad con imágenes personalizadas para dispositivos](custom-image-support-for-devices.md)                                       | Describe dos archivos de imagen que los fabricantes de dispositivos portátiles pueden crear para personalizar la personalización de marca Reproductor de Windows Media 10 o posterior.                                    |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**SDK de Media Player de Windows**](windows-media-player-sdk.md)
+[**Reproductor de Windows Media Sdk**](windows-media-player-sdk.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

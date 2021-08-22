@@ -1,25 +1,25 @@
 ---
-description: En este ejemplo se muestra el uso de la función GetProcessHeaps para recuperar los identificadores del montón de proceso predeterminado y los montones privados que están activos para el proceso actual.
+description: En este ejemplo se muestra el uso de la función GetProcessHeaps para recuperar identificadores en el montón de procesos predeterminado y en cualquier montón privado que esté activo para el proceso actual.
 ms.assetid: 00f69593-f03b-4f30-aeec-db3fda0ac356
-title: Obtener montones de proceso
+title: Obtención de montones de procesos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: caffc8dcc69b02ab671b379dbb5e133e65f8d448
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 52b055bd558d12506d5a900c369365cb497e3817dbfa1fd53dd6506f6a919eab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001882"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067845"
 ---
-# <a name="getting-process-heaps"></a>Obtener montones de proceso
+# <a name="getting-process-heaps"></a>Obtención de montones de procesos
 
-En este ejemplo se muestra el uso de la función [**GetProcessHeaps**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheaps) para recuperar los identificadores del montón de proceso predeterminado y los montones privados que están activos para el proceso actual.
+En este ejemplo se muestra el uso de la función [**GetProcessHeaps**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheaps) para recuperar identificadores en el montón de procesos predeterminado y en cualquier montón privado que esté activo para el proceso actual.
 
-En el ejemplo se llama a [**GetProcessHeaps**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheaps) dos veces, primero para calcular el tamaño del búfer necesario y de nuevo para recuperar los identificadores en el búfer. El búfer se asigna desde el montón de proceso predeterminado, utilizando el identificador devuelto por [**GetProcessHeap**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheap). En el ejemplo se imprime la dirección inicial de cada montón en la consola. A continuación, usa la función [**HeapFree**](/windows/desktop/api/HeapApi/nf-heapapi-heapfree) para liberar la memoria asignada para el búfer.
+En el ejemplo se llama a [**GetProcessHeaps**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheaps) dos veces, primero para calcular el tamaño del búfer necesario y de nuevo para recuperar los identificadores en el búfer. El búfer se asigna desde el montón de procesos predeterminado, utilizando el identificador devuelto por [**GetProcessHeap**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheap). En el ejemplo se imprime la dirección inicial de cada montón en la consola. A continuación, usa [**la función HeapFree**](/windows/desktop/api/HeapApi/nf-heapapi-heapfree) para liberar memoria asignada para el búfer.
 
-El número de montones de un proceso puede variar. Un proceso siempre tiene al menos un montón (el montón de proceso predeterminado) y puede tener uno o más montones privados creados por la aplicación o por los archivos DLL que se cargan en el espacio de direcciones del proceso.
+El número de montones de un proceso puede variar. Un proceso siempre tiene al menos un montón (el montón de proceso predeterminado) y puede tener uno o varios montones privados creados por la aplicación o por archivos DLL que se cargan en el espacio de direcciones del proceso.
 
-Tenga en cuenta que una aplicación debe llamar a las funciones del montón solo en su montón de proceso predeterminado o en los montones privados que ha creado la aplicación; la llamada a funciones del montón en un montón privado que pertenece a otro componente puede producir un comportamiento indefinido.
+Tenga en cuenta que una aplicación debe llamar a las funciones del montón solo en su montón de procesos predeterminado o en los montones privados que la aplicación ha creado; Llamar a funciones de montón en un montón privado propiedad de otro componente puede provocar un comportamiento indefinido.
 
 
 ```C++

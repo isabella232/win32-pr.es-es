@@ -1,21 +1,21 @@
 ---
-title: Ejemplo de código de C/C++ establecer la prioridad de la tarea
-description: En este ejemplo se establece la prioridad de una tarea de prueba y, a continuación, se guarda la tarea. En este ejemplo se da por supuesto que la tarea de prueba ya existe en el equipo local.
+title: Prioridad de tarea de configuración de ejemplo de código de C/C++
+description: En este ejemplo se establece la prioridad de una tarea de prueba y, a continuación, se guarda la tarea. En este ejemplo se supone que la tarea de prueba ya existe en el equipo local.
 ms.assetid: 498dc438-3703-4d5c-a8b1-609d5776942d
 keywords:
-- establecer las propiedades de la tarea Programador de tareas, prioridad
+- establecer propiedades de tarea Programador de tareas , prioridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 540405ebe3544d6fad9418533957ddcda8a567c0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 574d88a10bda5d9de93dde3607618aa3827ee89aa02588e0c1253f7fccdeca12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105685506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120011645"
 ---
-# <a name="cc-code-example-setting-task-priority"></a>Ejemplo de código de C/C++: establecer la prioridad de la tarea
+# <a name="cc-code-example-setting-task-priority"></a>Ejemplo de código de C/C++: Establecer prioridad de tarea
 
-En este ejemplo se establece la prioridad de una tarea de prueba y, a continuación, se guarda la tarea. En este ejemplo se da por supuesto que la tarea de prueba ya existe en el equipo local.
+En este ejemplo se establece la prioridad de una tarea de prueba y, a continuación, se guarda la tarea. En este ejemplo se supone que la tarea de prueba ya existe en el equipo local.
 
 
 ```C++
@@ -136,12 +136,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

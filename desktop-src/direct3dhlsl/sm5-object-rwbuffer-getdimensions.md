@@ -1,9 +1,9 @@
 ---
-title: 'RWBuffer:: Getdimensions ((función)'
-description: 'Obtiene la longitud del búfer. | RWBuffer:: Getdimensions ((función)'
+title: FUNCIÓN RWBuffer::GetDimensions
+description: Obtiene la longitud del búfer. | FUNCIÓN RWBuffer::GetDimensions
 ms.assetid: 600147cb-9513-4b74-a873-1ed22b31cdf7
 keywords:
-- Getdimensions (de función HLSL
+- Función GetDimensions HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 98e419d3e77a27f211f0e063573caffcd6c61ce8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 586f266fea0dbc035e8ff3a61e39cb18a7102d792ee05c44345a1b702cc1b574
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104998209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118245"
 ---
-# <a name="rwbuffergetdimensions-function"></a>RWBuffer:: Getdimensions ((función)
+# <a name="rwbuffergetdimensions-function"></a>FUNCIÓN RWBuffer::GetDimensions
 
 Obtiene la longitud del búfer.
 
@@ -36,12 +36,12 @@ void GetDimensions(
 
 <dl> <dt>
 
-*atenuar* \[\]
+*dim* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-La longitud, en bytes, del búfer.
+Longitud, en bytes, del búfer.
 
 </dd> </dl>
 
@@ -49,13 +49,13 @@ La longitud, en bytes, del búfer.
 
 Nada
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

@@ -1,33 +1,33 @@
 ---
-title: La contraseña nunca expira (proveedor de WinNT)
-description: Para habilitar esta opción mediante el proveedor ADSI de WinNT, establezca la \_ marca ADS up no \_ \_ expire \_ (0x10000) en el atributo UserFlags. Nota para Windows 2000 y versiones posteriores, use el proveedor ADSI LDAP para las operaciones de administración de usuarios, como se muestra.
+title: La contraseña nunca expira (proveedor winNT)
+description: Para habilitar esta opción mediante el proveedor ADSI de WinNT, establezca la marca ADS \_ UF \_ DONT EXPIRE PASSWD (0x10000) en el \_ atributo \_ UserFlags. Nota Para Windows 2000 y versiones posteriores, use el proveedor ADSI LDAP para las operaciones de administración de usuarios como se muestra.
 ms.assetid: 9e38b31c-399b-447f-bceb-36c599b2714e
 ms.tgt_platform: multiple
 keywords:
-- La contraseña nunca expira (proveedor de WinNT)
-- La contraseña nunca expira ADSI, el proveedor de Winnt
-- Proveedor de WinNT ADSI, ejemplos de administración de usuarios, la contraseña nunca expira
+- La contraseña nunca expira (proveedor winNT)
+- Password Never Expires ADSI , WinNT provider
+- ADSI del proveedor WinNT, ejemplos de administración de usuarios, Contraseña nunca expira
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 343871e7ba8748b3e406f7c84a5a34c01a2793a7
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: b47cdd7dc181c2875e8de06b66233d727c5b132963921b163b02fc09cbdc051d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "105660094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082169"
 ---
-# <a name="password-never-expires-winnt-provider"></a>La contraseña nunca expira (proveedor de WinNT)
+# <a name="password-never-expires-winnt-provider"></a>La contraseña nunca expira (proveedor winNT)
 
-Para habilitar esta opción mediante el proveedor ADSI de WinNT, establezca la marca **ADS \_ up no \_ \_ expire \_** (0x10000) en el atributo **UserFlags** .
+Para habilitar esta opción mediante el proveedor ADSI de WinNT, establezca la marca **ADS \_ UF \_ DONT \_ EXPIRE \_ PASSWD** (0x10000) en el **atributo UserFlags.**
 
 > [!Note]  
-> En Windows 2000 y versiones posteriores, use el proveedor ADSI LDAP para las operaciones de administración de usuarios, como se muestra. Para obtener más información, consulte la [contraseña nunca expira (proveedor LDAP)](password-never-expires.md).
+> Para Windows 2000 y versiones posteriores, use el proveedor ADSI LDAP para las operaciones de administración de usuarios como se muestra. Para obtener más información, vea [Password Never Expires (LDAP Provider) (La contraseña nunca expira [proveedor LDAP]).](password-never-expires.md)
 
  
 
 ## <a name="example-1"></a>Ejemplo 1
 
-En el ejemplo de código siguiente se muestra cómo establecer la opción la contraseña nunca expira mediante Visual Basic con ADSI.
+En el ejemplo de código siguiente se muestra cómo establecer la opción password never expires mediante Visual Basic con ADSI.
 
 
 ```VB
@@ -45,7 +45,7 @@ usr.SetInfo
 
 ## <a name="example-2"></a>Ejemplo 2
 
-En el ejemplo de código siguiente se muestra cómo establecer la opción la contraseña nunca expira con C++ con ADSI.
+En el ejemplo de código siguiente se muestra cómo establecer la opción password never expires mediante C++ con ADSI.
 
 
 ```C++

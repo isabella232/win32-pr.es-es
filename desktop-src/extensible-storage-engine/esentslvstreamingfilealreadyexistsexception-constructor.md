@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentSLVStreamingFileAlreadyExistsException'
-title: Constructor de EsentSLVStreamingFileAlreadyExistsException
+description: 'Más información sobre: Constructor EsentSLVStreamingFileAlreadyExistsException'
+title: Constructor EsentSLVStreamingFileAlreadyExistsException
 TOCTitle: 'EsentSLVStreamingFileAlreadyExistsException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentSLVStreamingFileAlreadyExistsException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvstreamingfilealreadyexistsexception.esentslvstreamingfilealreadyexistsexception(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0ead0f4c85337e1c13fe291eb69327353c9ced0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 368970181238fbb6f4a95f34789ed0c39a23efa54cc1dea45ac5718a98c789ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039773"
 ---
-# <a name="esentslvstreamingfilealreadyexistsexception-constructor"></a>Constructor de EsentSLVStreamingFileAlreadyExistsException
+# <a name="esentslvstreamingfilealreadyexistsexception-constructor"></a>Constructor EsentSLVStreamingFileAlreadyExistsException
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Dim instance As New EsentSLVStreamingFileAlreadyExistsException()
 public EsentSLVStreamingFileAlreadyExistsException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -58,4 +58,4 @@ public EsentSLVStreamingFileAlreadyExistsException()
 
 [Miembros de EsentSLVStreamingFileAlreadyExistsException](./esentslvstreamingfilealreadyexistsexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

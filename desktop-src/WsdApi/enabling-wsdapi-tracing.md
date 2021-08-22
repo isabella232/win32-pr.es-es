@@ -1,25 +1,25 @@
 ---
-description: Los registros de WSDAPI contienen información de depuración que se puede usar para encontrar la causa principal de los errores de aplicación de WSDAPI.
+description: Los registros de WSDAPI contienen información de depuración que se puede usar para encontrar la causa principal de los errores de la aplicación WSDAPI.
 ms.assetid: 28b4c032-1c9a-4b3a-9a6a-2948456572b2
-title: Habilitar el seguimiento de WSDAPI
+title: Habilitación del seguimiento de WSDAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 951f8ddfee6043cc662a456c70960e78ed1a3625
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd8f765249f4888a1dcfd2c6a44a81d3e2652a75bb983e85a881093d3c266b5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049703"
 ---
-# <a name="enabling-wsdapi-tracing"></a>Habilitar el seguimiento de WSDAPI
+# <a name="enabling-wsdapi-tracing"></a>Habilitación del seguimiento de WSDAPI
 
-Los registros de WSDAPI contienen información de depuración que se puede usar para encontrar la causa principal de los errores de aplicación de WSDAPI. Cuando el seguimiento está habilitado, la información de registro se almacena en un archivo. ETL en una ubicación especificada por el usuario. Este archivo. ETL se puede enviar al soporte técnico de Microsoft para desarrolladores para el análisis de la causa principal. Para obtener información sobre cómo ponerse en contacto con el soporte técnico, vaya a [https://support.microsoft.com](https://support.microsoft.com) .
+Los registros de WSDAPI contienen información de depuración que se puede usar para encontrar la causa principal de los errores de la aplicación WSDAPI. Cuando el seguimiento está habilitado, la información de registro se almacena en un archivo .etl en una ubicación especificada por el usuario. Este archivo .etl se puede enviar al soporte técnico para desarrolladores de Microsoft para el análisis de la causa principal. Para obtener información sobre cómo ponerse en contacto con el soporte técnico, vaya a [https://support.microsoft.com](https://support.microsoft.com) .
 
 Este procedimiento debe realizarse dos veces: una vez en el cliente y otra en el host.
 
 **Para habilitar el seguimiento de WSDAPI**
 
-1.  Con el Bloc de notas u otro editor de texto, cree un archivo de texto con el siguiente texto:
+1.  Con Bloc de notas u otro editor de texto, cree un archivo de texto con el texto siguiente:
 
     ``` syntax
     "{480217a9-f824-4bd4-bbe8-f371caaf9a0d}" 0xFF 0xFF
@@ -37,17 +37,17 @@ Este procedimiento debe realizarse dos veces: una vez en el cliente y otra en el
 
 2.  Guarde el archivo de texto como `C:\temp\traceguids.txt` y, a continuación, cierre el archivo.
 3.  Abra una ventana del símbolo del sistema con permisos elevados.
-4.  Ejecute el siguiente comando: **logman.exe Create Trace wsdlog-o c: \\ temp \\ WSD**
-5.  Ejecute el siguiente comando: **logman.exe Update wsdlog-PF c: \\ temp \\traceguids.txt**
-6.  Ejecute el siguiente comando: **logman.exe Start wsdlog**
-7.  Reproduzca el error iniciando el host y el cliente, o presionando F5 en el explorador de red.
+4.  Ejecute el siguiente comando: **logman.exe el wsdlog de seguimiento -o c: \\ temp \\ wsd**
+5.  Ejecute el siguiente comando: **logman.exe wsdlog -pf c: \\ temp \\traceguids.txt**
+6.  Ejecute el siguiente comando: **logman.exe wsdlog**
+7.  Reproduzca el error iniciando el host y el cliente o presionando F5 en el Explorador de red.
 
 **Para deshabilitar el seguimiento de WSDAPI**
 
 1.  Abra una ventana del símbolo del sistema con permisos elevados.
-2.  Ejecute el siguiente comando: **logman.exe STOP wsdlog**
+2.  Ejecute el siguiente comando: **logman.exe stop wsdlog**
 
-Una vez capturado el error de aplicación, los \* archivos. ETL se pueden enviar al soporte técnico de Microsoft. Estos archivos se encuentran en `C:\temp\wsd_*.etl` .
+Una vez capturado el error de la aplicación, los \* archivos .etl se pueden enviar al soporte técnico de Microsoft. Estos archivos se encuentran en `C:\temp\wsd_*.etl` .
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -56,7 +56,7 @@ Una vez capturado el error de aplicación, los \* archivos. ETL se pueden enviar
 [Procedimientos de diagnóstico de WSDAPI](wsdapi-diagnostic-procedures.md)
 </dt> <dt>
 
-[Introducción con la solución de problemas de WSDAPI](getting-started-with-wsdapi-troubleshooting.md)
+[Tareas iniciales solución de problemas de WSDAPI](getting-started-with-wsdapi-troubleshooting.md)
 </dt> <dt>
 
 [https://support.microsoft.com](https://support.microsoft.com)

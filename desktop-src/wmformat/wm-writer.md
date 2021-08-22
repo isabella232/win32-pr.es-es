@@ -31,7 +31,7 @@ g \_ wszWMWriter
 
 **CADENA DE \_ TIPO \_ WMT**
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

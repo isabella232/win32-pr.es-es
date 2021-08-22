@@ -2,7 +2,7 @@
 description: Comprime el archivo de entrada de directorio lógico (o directorio) especificado en la ruta de acceso del objeto.
 ms.assetid: 4db13622-75c5-45db-8536-451059c0e477
 ms.tgt_platform: multiple
-title: Método compress de la clase Win32_Directory
+title: Método Compress de la Win32_Directory clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ea694c09e11e5801016a4ea85b9774448c542991
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 15d9142abb95998fce803c30c439632775cd8ff807f3b7d99653875d08e534e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104152868"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020673"
 ---
-# <a name="compress-method-of-the-win32_directory-class"></a>Método compress de la \_ clase de directorio Win32
+# <a name="compress-method-of-the-win32_directory-class"></a>Método Compress de la clase Directory de \_ Win32
 
-El método **compress** [WMI Class](/windows/desktop/WmiSdk/retrieving-a-class) comprime el archivo de entrada de directorio lógico (o directorio) especificado en la ruta de acceso del objeto.
+El **método comprimir** [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) comprime el archivo de entrada de directorio lógico (o directorio) especificado en la ruta de acceso del objeto.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) si el archivo se ha comprimido correctamente y cualquier otro número para indicar un error.
+Devuelve un valor de 0 (cero) si el archivo se comprimió correctamente y cualquier otro número para indicar un error.
 
 <dl> <dt>
 
@@ -63,7 +63,7 @@ Se denegó el acceso.
 **8**
 </dt> <dd>
 
-Se produjo un error no especificado.
+Error no especificado.
 
 </dd> <dt>
 
@@ -91,7 +91,7 @@ El sistema de archivos no es NTFS.
 **12**
 </dt> <dd>
 
-La plataforma no es Windows.
+La plataforma no está Windows.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha producido una infracción de uso compartido.
+Se ha infringido el uso compartido.
 
 </dd> <dt>
 
@@ -137,19 +137,19 @@ Un parámetro especificado no es válido.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La compresión proporciona una forma de liberar espacio de almacenamiento adicional en una unidad de disco sin necesidad de adquirir hardware nuevo y sin quitar archivos o carpetas. En función del tamaño del disco duro y del tipo de archivos almacenados en ese disco, es posible que pueda recuperar cientos de megabytes de espacio en disco y, por lo tanto, no tenga que adquirir una nueva unidad de disco duro y dejar el equipo sin conexión hasta que se instale la nueva unidad.
+La compresión proporciona una manera de liberar espacio de almacenamiento adicional en una unidad de disco sin adquirir hardware nuevo y sin quitar archivos o carpetas. Según el tamaño del disco duro y el tipo de archivos almacenados en ese disco, es posible que pueda recuperar cientos de megabytes de espacio en disco y, por tanto, impedir la necesidad de adquirir una nueva unidad de disco duro y desconectar el equipo hasta que se instale la nueva unidad.
 
-El método compress comprime todos los archivos y subcarpetas de una carpeta especificada. Además, la clase también incluye un método UNCOMPRESS que quita la compresión de todos los archivos y subcarpetas de una carpeta. También se proporcionan métodos similares con la \_ clase de archivo de archivos CIM. Esto le permite comprimir o descomprimir archivos específicos de una carpeta de forma selectiva.
+El método Compress comprime todos los archivos y subcarpetas dentro de una carpeta especificada. Además, la clase también incluye un método Uncompress que quita la compresión de todos los archivos y subcarpetas de una carpeta. También se proporcionan métodos similares con la clase \_ de archivo de datos CIM. Esto le permite comprimir o descomprimir de forma selectiva archivos específicos dentro de una carpeta.
 
-Dado que la compresión es una ligera disminución del rendimiento, no se recomienda para los archivos o carpetas a los que se tiene acceso de forma rutinaria. por ejemplo, es probable que no desee comprimir archivos de base de datos, archivos de registro o carpetas de perfiles de usuario. Los mejores candidatos para la compresión son los archivos y las carpetas a los que no se tiene acceso con mucha frecuencia. Por ejemplo, puede escribir un script para devolver una colección de carpetas de una unidad a la que no se ha accedido durante un mes o más y, a continuación, comprimir cada una de esas carpetas.
+Dado que la compresión presenta una ligera reducción del rendimiento, no se recomienda para los archivos o carpetas a los que se accede de forma rutinaria; Por ejemplo, es probable que no quiera comprimir archivos de base de datos, archivos de registro o carpetas de perfil de usuario. Los mejores candidatos para la compresión son archivos y carpetas a los que no se accede con mucha frecuencia. Por ejemplo, podría escribir un script para devolver una colección de carpetas en una unidad a la que no se ha accedido durante un mes o más y, a continuación, comprimir cada una de esas carpetas.
 
-La cantidad de espacio en disco liberado por las carpetas de compresión varía en función del tipo de archivos almacenados en esa carpeta. Por ejemplo, los archivos. jpg ya están comprimidos y la compresión adicional tiene poco efecto en el tamaño del archivo. Con otros tipos de archivo, sin embargo, el ahorro puede ser considerable. Por ejemplo, se ha creado una nueva carpeta en un equipo de prueba basado en Windows 2000 y 33 documentos de Microsoft Word, con un total de 15 megabytes (MB) de espacio en disco, que se han copiado en esa carpeta. Cuando se comprimen los documentos, la carpeta solo tenía 7 MB de espacio en disco.
+La cantidad de espacio en disco liberada mediante la compresión de carpetas varía en función del tipo de archivos almacenados en esa carpeta. Por ejemplo, .jpg archivos ya están comprimidos y la compresión adicional tiene poco efecto en el tamaño del archivo. Sin embargo, con otros tipos de archivo, el ahorro puede ser considerable. Por ejemplo, se creó una nueva carpeta en un equipo de prueba basado en Windows 2000 y se copiaron en esa carpeta 33 documentos Microsoft Word, con un total de 15 megabytes (MB) de espacio en disco. Cuando se comprimían los documentos, la carpeta solo tenía 7 MB de espacio en disco.
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente ejemplo de VBScript comprime la carpeta C: \\ scripts.
+El siguiente ejemplo de VBScript comprime la carpeta C: \\ Scripts.
 
 
 ```VB
@@ -174,8 +174,8 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -187,7 +187,7 @@ Next
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Directorio Win32**](win32-directory.md)
+[**Directorio \_ win32**](win32-directory.md)
 </dt> <dt>
 
 [**Descomprimir**](uncompress-method-in-class-win32-directory.md)

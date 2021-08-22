@@ -1,27 +1,27 @@
 ---
-description: 'Más información acerca de: JET_INDEX_RANGE miembros'
-title: Miembros de JET_INDEX_RANGE (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: JET_INDEX_RANGE miembros'
+title: JET_INDEX_RANGE miembros (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JET_INDEX_RANGE members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_RANGE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_index_range_members(v=EXCHG.10)
 ms:contentKeyID: 55104323
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5c43e24f44ff232afbfddd81d7a7960faa3cb12c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d8b8d848a18d9682896e960f4976c260efd8c9a380c73de5896886fde0c3b0da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104561237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039163"
 ---
-# <a name="jet_index_range-members"></a>Miembros de JET_INDEX_RANGE
+# <a name="jet_index_range-members"></a>JET_INDEX_RANGE miembros
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Contiene la definición de [JetPrereadIndexRanges (JET_SESID, JET_TABLEID, \[ \] , Int32, Int32, Int32, \[ \] , PrereadIndexRangesGrbit)](./windows8api.jetprereadindexranges-method.md).
+Contiene la [definición de JetPrereadIndexRanges(JET_SESID, JET_TABLEID, \[ \] , Int32, Int32, Int32, \[ \] , PrereadIndexRangesGrbit).](./windows8api.jetprereadindexranges-method.md)
 
-El tipo de [JET_INDEX_RANGE](./jet-index-range-class.md) expone los siguientes miembros.
+El [JET_INDEX_RANGE](./jet-index-range-class.md) expone los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -90,7 +90,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -100,7 +100,7 @@ Superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -111,7 +111,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335361(v=exchg.10).md">ToString</a></td>
-<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el <a href="dn335481(v=exchg.10).md">JET_INDEX_RANGE</a>actual. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>).</td>
+<td>Devuelve un <a href="/dotnet/api/system.string">objeto String</a> que representa el objeto <a href="dn335481(v=exchg.10).md">JET_INDEX_RANGE</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -123,6 +123,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEX_RANGE (clase)](./jet-index-range-class.md)
+[JET_INDEX_RANGE clase](./jet-index-range-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

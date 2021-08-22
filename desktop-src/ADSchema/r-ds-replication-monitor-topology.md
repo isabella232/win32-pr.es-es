@@ -1,10 +1,10 @@
 ---
-title: DS-Replication-monitor-topología extendida a la derecha
-description: Derecho de acceso de control extendido que permite la lectura de datos de supervisión de la replicación, como el estado de la replicación y los metadatos del objeto.
+title: DS-Replication-Monitor-Topology extendido a la derecha
+description: Derecho de acceso de control extendido que permite la lectura de datos de supervisión de replicación, como el estado de replicación y los metadatos de objeto.
 ms.assetid: 9270d4c1-123f-4809-9038-3d2c7ebad782
 ms.tgt_platform: multiple
 keywords:
-- DS-Replication-monitor-esquema de AD extendido derecho de topología
+- DS-Replication-Monitor-Topology extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c793a814fa3c09d6877b9c155e613f0a41f303c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8765c4df108235cc2a18f5df34093849e33af88943d62a0ac18b447ba74bf8aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021713"
 ---
-# <a name="ds-replication-monitor-topology-extended-right"></a>DS-Replication-monitor-topología extendida a la derecha
+# <a name="ds-replication-monitor-topology-extended-right"></a>DS-Replication-Monitor-Topology extendido a la derecha
 
-Derecho de acceso de control extendido que permite la lectura de datos de supervisión de la replicación, como el estado de la replicación y los metadatos del objeto.
+Derecho de acceso de control extendido que permite la lectura de datos de supervisión de replicación, como el estado de replicación y los metadatos de objeto.
 
 
 
 | Entrada | Value |
 |--------------|--------------------------------------|
-| CN           | DS-Replication-monitor-topología      |
-| Display-Name | Supervisión de la replicación de Active Directory |
+| CN           | DS-Replication-Monitor-Topology      |
+| Display-Name | Supervisión de Active Directory replicación |
 | Rights-GUID  | f98340fb-7c5b-4cdb-a00b-2ebdfa115a96 |
 
 
@@ -48,8 +48,8 @@ Derecho de acceso de control extendido que permite la lectura de datos de superv
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 67                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 67                                                                                                                               |
 
 
 
@@ -59,8 +59,8 @@ Derecho de acceso de control extendido que permite la lectura de datos de superv
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 67                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 67                                                                                                                               |
 
 
 
@@ -70,8 +70,8 @@ Derecho de acceso de control extendido que permite la lectura de datos de superv
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 67                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 67                                                                                                                               |
 
 
 
@@ -81,8 +81,8 @@ Derecho de acceso de control extendido que permite la lectura de datos de superv
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 67                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 67                                                                                                                               |
 
 
 
@@ -92,8 +92,8 @@ Derecho de acceso de control extendido que permite la lectura de datos de superv
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 67                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 67                                                                                                                               |
 
 
 

@@ -1,12 +1,12 @@
 ---
-title: IMsTscAxEvents OnReceivedTSPublicKey, método
-description: Se llama durante la secuencia de conexión cuando el cliente recupera la clave pública del servidor. Solo se llama a este evento si la propiedad NotifyTSPublicKey es VARIANT \_ true.
+title: Método IMsTscAxEvents OnReceivedTSPublicKey
+description: Se llama durante la secuencia de conexión cuando el cliente recupera la clave pública del servidor. Solo se llama a este evento si la propiedad NotifyTSPublicKey es VARIANT \_ TRUE.
 ms.assetid: 1db98b8b-2f08-4252-ad8b-6764fa25b300
 ms.tgt_platform: multiple
 keywords:
 - Método OnReceivedTSPublicKey Servicios de Escritorio remoto
-- Método OnReceivedTSPublicKey Servicios de Escritorio remoto, interfaz IMsTscAxEvents
-- Interfaz IMsTscAxEvents Servicios de Escritorio remoto, método OnReceivedTSPublicKey
+- Método OnReceivedTSPublicKey Servicios de Escritorio remoto , interfaz IMsTscAxEvents
+- Interfaz IMsTscAxEvents Servicios de Escritorio remoto , método OnReceivedTSPublicKey
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 337a9efabe48dee7a5a4194c3b796b95f35a0592
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 73f2b12b59cbe8e6b7c5f8e614e2aed047d4f467117fa211839521fedc7f333b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120009485"
 ---
-# <a name="imstscaxeventsonreceivedtspublickey-method"></a>IMsTscAxEvents:: OnReceivedTSPublicKey (método)
+# <a name="imstscaxeventsonreceivedtspublickey-method"></a>Método IMsTscAxEvents::OnReceivedTSPublicKey
 
-Se llama durante la secuencia de conexión cuando el cliente recupera la clave pública del servidor. Solo se llama a este evento si la propiedad **NotifyTSPublicKey** es **Variant \_ true**. Esto es después de la [**conexión**](imstscaxevents-onconnecting.md), pero antes de [**OnAuthenticationWarningDisplayed**](imstscaxevents-onauthenticationwarningdisplayed.md) y de la [**conexión**](imstscaxevents-onconnected.md).
+Se llama durante la secuencia de conexión cuando el cliente recupera la clave pública del servidor. Este evento solo se llama si la propiedad **NotifyTSPublicKey** es **VARIANT \_ TRUE.** Esto es después [**de OnConnecting,**](imstscaxevents-onconnecting.md)pero antes de [**OnAuthenticationWarningDisplayed**](imstscaxevents-onauthenticationwarningdisplayed.md) [**y OnConnected.**](imstscaxevents-onconnected.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,17 +44,17 @@ void OnReceivedTSPublicKey(
 
 <dl> <dt>
 
-*publicKey* \[ de\]
+*publicKey* \[ En\]
 </dt> <dd>
 
 Contiene la clave pública del equipo remoto.
 
 </dd> <dt>
 
-*pfContinueLogon* \[ enuncia\]
+*pfContinueLogon* \[ out\]
 </dt> <dd>
 
-Un puntero a una variable de **tipo \_ bool** que recibe si el proceso de inicio de sesión debe continuar.
+Puntero a una variable **VARIANT \_ BOOL** que recibe si el proceso de inicio de sesión debe continuar.
 
 </dd> </dl>
 
@@ -62,9 +62,9 @@ Un puntero a una variable de **tipo \_ bool** que recibe si el proceso de inicio
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 

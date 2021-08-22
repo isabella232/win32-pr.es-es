@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 6e02d655-f7d8-460a-97d2-5b369493e941
-ms.openlocfilehash: 5e7b1f0142ea77967af15087131d3036aaec505e
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 7cd13fe534f3bb121a4056f67ceff47ddfa71fa5506c2020a243ab340768ce35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032663"
 ---
 # <a name="fmextensionproc-callback-function"></a>Función de devolución de llamada FMExtensionProc
 
@@ -89,7 +89,7 @@ El usuario presionó F1 al seleccionar un menú de extensión o un elemento de c
 
 </dt> <dd>
 
-El usuario ha seleccionado un menú de extensión o un elemento de comando de la barra de herramientas. Indica que la extensión debe proporcionar una cadena de Ayuda.
+El usuario seleccionó un menú de extensión o un elemento de comando de la barra de herramientas. Indica que la extensión debe proporcionar una cadena de Ayuda.
 
 </dd> <dt>
 
@@ -106,12 +106,12 @@ El usuario ha seleccionado el menú de la extensión. La extensión debe inicial
 
 <span id="FMEVENT_LOAD"></span><span id="fmevent_load"></span>
 
-<span id="FMEVENT_LOAD"></span><span id="fmevent_load"></span>**FMEVENT \_ LOAD**
+<span id="FMEVENT_LOAD"></span><span id="fmevent_load"></span>**CARGA DE \_ FMEVENT**
 
 
 </dt> <dd>
 
-El Administrador de archivos está cargando el archivo DLL de extensión y solicita al archivo DLL información sobre el menú que proporciona el archivo DLL.
+El Administrador de archivos carga el archivo DLL de extensión y solicita al archivo DLL información sobre el menú que proporciona el archivo DLL.
 
 </dd> <dt>
 
@@ -122,7 +122,7 @@ El Administrador de archivos está cargando el archivo DLL de extensión y solic
 
 </dt> <dd>
 
-La selección en la **ventana de directorio del Administrador** de archivos o en la ventana **Resultados de** la búsqueda ha cambiado.
+La selección en la **ventana del directorio del Administrador** de archivos o en la ventana **Resultados de** la búsqueda ha cambiado.
 
 </dd> <dt>
 
@@ -150,7 +150,7 @@ El Administrador de archivos está descargando el archivo DLL de extensión.
 
 <span id="FMEVENT_USER_REFRESH"></span><span id="fmevent_user_refresh"></span>
 
-<span id="FMEVENT_USER_REFRESH"></span><span id="fmevent_user_refresh"></span>**ACTUALIZACIÓN DE \_ USUARIO DE \_ FMEVENT**
+<span id="FMEVENT_USER_REFRESH"></span><span id="fmevent_user_refresh"></span>**ACTUALIZACIÓN DE USUARIO \_ DE \_ FMEVENT**
 
 
 </dt> <dd>

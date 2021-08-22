@@ -1,9 +1,9 @@
 ---
-title: VER. OnClose
-description: El controlador de eventos OnClose controla un evento que se produce cuando la vista está a punto de cerrarse.
+title: VIEW.onclose
+description: El controlador de eventos onclose controla un evento que tiene lugar cuando view está a punto de cerrarse.
 ms.assetid: 25760c01-9e43-4744-8f20-336d8c198eab
 keywords:
-- VIEW. OnClose Windows Media Player
+- VIEW.onclose Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b3d7cdfd838d1683ba64d89b20da1256062878da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3b801bbddd2c8d3d0fe3e1906ee17c0c5388631c81eb67c94243fe5dc2b60636
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054063"
 ---
-# <a name="viewonclose"></a>VER. OnClose
+# <a name="viewonclose"></a>VIEW.onclose
 
-El controlador de eventos **OnClose** controla un evento que se produce cuando la **vista** está a punto de cerrarse.
+El controlador de eventos **onclose** controla un evento que tiene lugar cuando **view** está a punto de cerrarse.
 
 ``` syntax
 onclose
@@ -32,9 +32,9 @@ onclose
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -42,7 +42,7 @@ onclose
 
 <dl> <dt>
 
-[**Elemento de vista**](view-element.md)
+[**ELEMENTO VIEW**](view-element.md)
 </dt> </dl>
 
  

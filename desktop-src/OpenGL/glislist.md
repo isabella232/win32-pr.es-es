@@ -1,9 +1,9 @@
 ---
-title: función glIsList (GL. h)
+title: Función glIsList (Gl.h)
 description: La función gllsList comprueba la existencia de la lista de visualización.
 ms.assetid: 86ef3684-8047-4ee4-befd-ec26bcd036c3
 keywords:
-- glIsList (función) OpenGL
+- Función glIsList OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fdc67d0a7dad18f8850c283f0d5eb224ff9ebbd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 562eb4040323452379659a068dbc4844a2e84c51009cb0ac843b2e5aa1b641a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493375"
 ---
-# <a name="glislist-function"></a>glIsList función)
+# <a name="glislist-function"></a>función glIsList
 
-La función **gllsList** comprueba la existencia de la lista de visualización.
+La **función gllsList** comprueba la existencia de la lista de visualización.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,36 +43,36 @@ GLboolean WINAPI glIsList(
 *list* 
 </dt> <dd>
 
-Un nombre de lista de visualización potencial.
+Un posible nombre de lista para mostrar.
 
 </dd> </dl>
 
 ## <a name="error-codes"></a>Códigos de error
 
-La función [**glGetError**](glgeterror.md) puede recuperar el siguiente código de error.
+La función [**glGetError**](glgeterror.md) puede recuperar el código de error siguiente.
 
 
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **gllsList** devuelve GL \_ true si *List* es el nombre de una lista de visualización y devuelve GL \_ false en caso contrario.
+La **función gllsList** devuelve GL TRUE si list es el nombre de una lista para mostrar y \_ devuelve GL FALSE en caso  \_ contrario.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

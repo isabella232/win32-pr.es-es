@@ -6,21 +6,21 @@ ms.tgt_platform: multiple
 keywords:
 - OrderDrawThreshold, propiedad Servicios de Escritorio remoto
 - Propiedad orderDrawThreshold Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
-- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad orderDrawThreshold
-- Propiedad orderDrawThreshold Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto propiedad , orderDrawThreshold
+- Propiedad orderDrawThreshold Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
 - Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad orderDrawThreshold
-- Propiedad orderDrawThreshold Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
+- Propiedad orderDrawThreshold Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
 - Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad orderDrawThreshold
-- Propiedad orderDrawThreshold Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Propiedad orderDrawThreshold Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
 - Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad orderDrawThreshold
-- Propiedad orderDrawThreshold Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Propiedad orderDrawThreshold Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
 - Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad orderDrawThreshold
-- Propiedad orderDrawThreshold Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Propiedad orderDrawThreshold Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
 - Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad orderDrawThreshold
-- Propiedad orderDrawThreshold Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Propiedad orderDrawThreshold Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
 - Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad orderDrawThreshold
-- Propiedad orderDrawThreshold Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
-- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad orderDrawThreshold
+- Propiedad orderDrawThreshold Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto propiedad , orderDrawThreshold
 topic_type:
 - apiref
 api_name:
@@ -61,7 +61,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119285035"
 ---
-# <a name="imsrdpclientadvancedsettingsorderdrawthreshold-property"></a>Propiedad IMsRdpClientAdvancedSettings::orderDrawThreshold
+# <a name="imsrdpclientadvancedsettingsorderdrawthreshold-property"></a>IMsRdpClientAdvancedSettings::orderDrawThreshold, propiedad
 
 Esta propiedad no es compatible.
 
@@ -106,7 +106,7 @@ Devuelve **S \_ FALSE.**
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_GETQUALITY (VFW. h)
-description: El \_ mensaje GETQUALITY ICM consulta un controlador de compresión de vídeo para devolver su configuración de calidad actual.
+title: ICM_GETQUALITY mensaje (Vfw.h)
+description: El ICM mensaje GETQUALITY consulta a un controlador de compresión \_ de vídeo para devolver su configuración de calidad actual.
 ms.assetid: 8da99a26-7b2a-4118-89e1-7485915cbdc9
 keywords:
-- Mensaje de ICM_GETQUALITY de Windows multimedia
+- ICM_GETQUALITY mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c4fa2a26e1fe5fa111585ce0a59422a2fe9b072
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cef214fe36c713e63659fcbd4dde2021c8d410b36ea9f5525ed54c76c5c4b6a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103997161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119495865"
 ---
-# <a name="icm_getquality-message"></a>\_Mensaje GETQUALITY ICM
+# <a name="icm_getquality-message"></a>\_ICM Mensaje GETQUALITY
 
-El **mensaje \_ GETQUALITY ICM** consulta un controlador de compresión de vídeo para devolver su configuración de calidad actual.
+El **ICM \_ mensaje GETQUALITY consulta** a un controlador de compresión de vídeo para devolver su configuración de calidad actual.
 
 
 ```C++
@@ -41,13 +41,13 @@ lParam = 0;
 <span id="dwICValue"></span><span id="dwicvalue"></span><span id="DWICVALUE"></span>*dwICValue*
 </dt> <dd>
 
-Dirección que va a contener el valor de calidad actual. Los valores de calidad oscilan entre 0 y 10.000.
+Dirección que contiene el valor de calidad actual. Los valores de calidad oscilan entre 0 y 10 000.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve ICERR \_ OK si el controlador admite este mensaje o ICERR \_ no se admite en caso contrario.
+Devuelve ICERR \_ OK si el controlador admite este mensaje o ICERR \_ UNSUPPORTED en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,7 +57,7 @@ Devuelve ICERR \_ OK si el controlador admite este mensaje o ICERR \_ no se admi
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

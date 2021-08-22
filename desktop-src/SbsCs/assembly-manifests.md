@@ -4,67 +4,67 @@ ms.assetid: f7973019-0a80-498e-adf1-c66267c813f4
 title: Manifiestos de ensamblado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 254702d5044331fa5d47def815556dbd8edef2f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5d7c6739bc83e56a42a926ca6aecb739fc41bbf39225cc531afc7afc6706ccc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142518"
 ---
 # <a name="assembly-manifests"></a>Manifiestos de ensamblado
 
-Un manifiesto de ensamblado es un archivo XML que describe un ensamblado en paralelo. Los manifiestos de ensamblado describen los nombres y las versiones de los ensamblados en paralelo, los archivos y los recursos del ensamblado, así como la dependencia del ensamblado en otros ensamblados en paralelo. La correcta instalación, activación y ejecución de ensamblados en paralelo requiere que el manifiesto del ensamblado acompañe siempre a un ensamblado del sistema.
+Un manifiesto de ensamblado es un archivo XML que describe un ensamblado en paralelo. Los manifiestos de ensamblado describen los nombres y versiones de ensamblados en paralelo, archivos y recursos del ensamblado, así como la dependencia del ensamblado en otros ensamblados en paralelo. La instalación, activación y ejecución correctas de ensamblados en paralelo requiere que el manifiesto de ensamblado siempre acompaña a un ensamblado en el sistema.
 
-Para obtener una lista completa del esquema XML, consulte [esquema del archivo de manifiesto](manifest-file-schema.md).
+Para obtener una lista completa del esquema XML, vea [Esquema de archivo de manifiesto.](manifest-file-schema.md)
 
 Los manifiestos de ensamblado tienen los siguientes elementos y atributos.
 
 
 
-| Elemento                           | Atributos                | Obligatorio |
+| Elemento                           | Atributos                | Requerido |
 |-----------------------------------|---------------------------|----------|
-| **assembl**                      |                           | Sí      |
+| **ensamblaje**                      |                           | Sí      |
 |                                   | **manifestVersion**       | Sí      |
-| **no se pudo heredar**                 |                           | No       |
-| **assemblyIdentity**              |                           | Sí      |
+| **noHeritable**                 |                           | No       |
+| **Assemblyidentity**              |                           | Sí      |
 |                                   | **type**                  | Sí      |
 |                                   | **name**                  | Sí      |
 |                                   | **language**              | No       |
 |                                   | **processorArchitecture** | No       |
 |                                   | **version**               | Sí      |
-|                                   | **publicKeyToken**        | No       |
-| **pendiente**                    |                           | No       |
+|                                   | **Publickeytoken**        | No       |
+| **Dependencia**                    |                           | No       |
 | **dependentAssembly**             |                           | No       |
 | **file**                          |                           | No       |
 |                                   | **name**                  | Sí      |
 |                                   | **hashalg**               | No       |
 |                                   | **hash**                  | No       |
-| **comclase**                      |                           | No       |
+| **comClass**                      |                           | No       |
 |                                   | **description**           | No       |
-|                                   | **CLSID**                 | Sí      |
+|                                   | **Clsid**                 | Sí      |
 |                                   | **threadingModel**        | No       |
 |                                   | **tlbid**                 | No       |
-|                                   | **Programa**                | No       |
+|                                   | **Progid**                | No       |
 |                                   | **miscStatus**            | No       |
 |                                   | **miscStatusIcon**        | No       |
 |                                   | **miscStatusContent**     | No       |
 |                                   | **miscStatusDocPrint**    | No       |
 |                                   | **miscStatusDocPrint**    | No       |
-| **typelib**                       |                           | No       |
+| **Typelib**                       |                           | No       |
 |                                   | **tlbid**                 | Sí      |
 |                                   | **version**               | Sí      |
-|                                   | **helpDir**               | Sí      |
-|                                   | **identificador**            | No       |
+|                                   | **helpdir**               | Sí      |
+|                                   | **resourceid**            | No       |
 |                                   | **flags**                 | No       |
 | **comInterfaceExternalProxyStub** |                           | No       |
-|                                   | **suscripto**                   | Sí      |
+|                                   | **Iid**                   | Sí      |
 |                                   | **baseInterface**         | No       |
 |                                   | **numMethods**            | No       |
 |                                   | **name**                  | No       |
 |                                   | **tlbid**                 | No       |
 |                                   | **proxyStubClsid32**      | No       |
 | **comInterfaceProxyStub**         |                           | No       |
-|                                   | **suscripto**                   | Sí      |
+|                                   | **Iid**                   | Sí      |
 |                                   | **name**                  | Sí      |
 |                                   | **tlbid**                 | No       |
 |                                   | **baseInterface**         | No       |
@@ -72,7 +72,7 @@ Los manifiestos de ensamblado tienen los siguientes elementos y atributos.
 |                                   | **proxyStubClsid32**      | No       |
 |                                   | **threadingModel**        | No       |
 | **windowClass**                   |                           | No       |
-|                                   | **versiones del**             | No       |
+|                                   | **Versionado**             | No       |
 
 
 
@@ -82,44 +82,44 @@ Los manifiestos de ensamblado tienen los siguientes elementos y atributos.
 
 Los manifiestos de ensamblado se pueden instalar en tres ubicaciones:
 
--   Como manifiestos que acompañan a los [ensamblados compartidos](/windows/desktop/Msi/shared-assemblies), los manifiestos de ensamblado deben instalarse como un archivo independiente en la caché de ensamblados en paralelo. Esta suele ser la carpeta WinSxS en el directorio de Windows.
--   Como manifiestos que acompañan a los [ensamblados privados](/windows/desktop/Msi/private-assemblies), los manifiestos de ensamblado deben instalarse en la estructura de directorios de la aplicación. Suele ser un archivo independiente en la misma carpeta que el archivo ejecutable de la aplicación.
--   Como recurso en un archivo DLL, el ensamblado está disponible para el uso privado del archivo DLL. Un manifiesto de ensamblado no se puede incluir como un recurso en un archivo EXE. Un archivo EXE puede incluir un [manifiesto de aplicación](application-manifests.md) como un recurso.
+-   Como manifiestos que acompañan a [ensamblados](/windows/desktop/Msi/shared-assemblies)compartidos, los manifiestos de ensamblado deben instalarse como un archivo independiente en la caché de ensamblados en paralelo. Esta suele ser la carpeta WinSxS del Windows directorio.
+-   Como manifiestos que acompañan [a ensamblados privados,](/windows/desktop/Msi/private-assemblies)los manifiestos de ensamblado deben instalarse en la estructura de directorios de la aplicación. Suele ser un archivo independiente en la misma carpeta que el archivo ejecutable de la aplicación.
+-   Como recurso de un archivo DLL, el ensamblado está disponible para el uso privado del archivo DLL. Un manifiesto de ensamblado no se puede incluir como un recurso en un archivo EXE. Un archivo EXE puede incluir un [manifiesto de aplicación](application-manifests.md) como recurso.
 
 ## <a name="file-name-syntax"></a>Sintaxis de los nombres de archivo
 
-El nombre de un manifiesto del ensamblado es cualquier nombre de archivo válido seguido de. manifest.
+El nombre de un manifiesto de ensamblado es cualquier nombre de archivo válido seguido de .manifest.
 
-Por ejemplo, un manifiesto de ensamblado que hace referencia a myAssembly usaría la siguiente sintaxis de nombre de archivo. Puede omitir el campo <*ID. de recurso*> si el manifiesto del ensamblado se instala como un archivo independiente o si el identificador de recurso es 1.
+Por ejemplo, un manifiesto de ensamblado que hace referencia a myassembly usaría la siguiente sintaxis de nombre de archivo. Puede omitir el campo  <identificador de recurso> si el manifiesto del ensamblado se está instalando como un archivo independiente o si el identificador de recurso es 1.
 
-<dl> myAssembly. <resource ID> . manifiesto
+<dl> myassembly. <resource ID> . Manifiesto
 </dl>
 
 > [!Note]  
-> Debido a las búsquedas en paralelo de ensamblados privados, se aplican las siguientes restricciones de nomenclatura al empaquetar un archivo DLL como ensamblado privado. Una manera recomendada de hacerlo es colocar el manifiesto del ensamblado en el archivo DLL como un recurso. En este caso, el identificador de recurso debe ser igual a 1 y el nombre del ensamblado privado puede ser el mismo que el nombre del archivo DLL. Por ejemplo, si el nombre del archivo DLL es Microsoft.Windows.mysample.dll, el valor del atributo name usado en el elemento **assemblyIdentity** del manifiesto también puede ser Microsoft. Windows. sample. Una manera alternativa consiste en colocar el manifiesto del ensamblado en un archivo independiente. En este caso, el nombre del ensamblado y su manifiesto deben ser diferentes del nombre del archivo DLL. Por ejemplo, Microsoft. Windows. mysampleAsm, Microsoft. Windows. mysampleAsm. manifest y Microsoft.Windows.Mysample.dll. Para obtener más información sobre cómo las búsquedas en paralelo de ensamblados privados, vea [secuencia de búsqueda de ensamblados](assembly-searching-sequence.md).
+> Debido a la forma en que busca ensamblados privados en paralelo, se aplican las siguientes restricciones de nomenclatura al empaquetar un archivo DLL como un ensamblado privado. Una manera recomendada de hacerlo es colocar el manifiesto de ensamblado en el archivo DLL como un recurso. En este caso, el identificador de recurso debe ser igual a 1 y el nombre del ensamblado privado puede ser el mismo que el nombre del archivo DLL. Por ejemplo, si el nombre del archivo DLL es Microsoft.Windows.mysample.dll, el valor del atributo name usado en el elemento **assemblyIdentity** del manifiesto también puede ser Microsoft. Windows.mysample. Una manera alternativa es colocar el manifiesto de ensamblado en un archivo independiente. En este caso, el nombre del ensamblado y su manifiesto deben ser diferentes del nombre del archivo DLL. Por ejemplo, Microsoft. Windows.mysampleAsm, Microsoft. Windows.mysampleAsm.manifest y Microsoft.Windows.Mysample.dll. Para obtener más información sobre cómo busca ensamblados privados en paralelo, vea [Secuencia de búsqueda de ensamblados](assembly-searching-sequence.md).
 
  
 
 ## <a name="elements"></a>Elementos
 
-Los nombres de los elementos y atributos distinguen mayúsculas de minúsculas. Los valores de los elementos y atributos no distinguen mayúsculas de minúsculas, excepto el valor del atributo type.
+Los nombres de elementos y atributos distinguen mayúsculas de minúsculas. Los valores de elementos y atributos no tienen en cuenta mayúsculas de minúsculas, excepto el valor del atributo de tipo.
 
 <dl> <dt>
 
-<span id="assembly"></span><span id="ASSEMBLY"></span>**assembl**
+<span id="assembly"></span><span id="ASSEMBLY"></span>**ensamblaje**
 </dt> <dd>
 
-Elemento contenedor. Su primer subelemento debe ser un elemento **assemblyIdentity** o **noinheritable** . El manifiesto del ensamblado describe de forma única el ensamblado en paralelo identificado por **assemblyIdentity**. Obligatorio.
+Elemento contenedor. Su primer subelemento debe ser **un elemento assemblyIdentity** **o noInheritable.** El manifiesto del ensamblado describe de forma única el ensamblado en paralelo identificado por **assemblyIdentity**. Obligatorio.
 
-El elemento de ensamblado debe estar en el espacio de nombres "urn: schemas-microsoft-com: ASM. v1". Los elementos secundarios del ensamblado también deben estar en este espacio de nombres, por herencia o mediante el etiquetado.
+El elemento de ensamblado debe estar en el espacio de nombres "urn:schemas-microsoft-com:asm.v1". Los elementos secundarios del ensamblado también deben estar en este espacio de nombres, por herencia o etiquetado.
 
-El elemento **Assembly** tiene el siguiente atributo.
+El **elemento** de ensamblado tiene el atributo siguiente.
 
 
 
 | Atributo           | Descripción                                           |
 |---------------------|-------------------------------------------------------|
-| **manifestVersion** | El atributo **manifestVersion** debe establecerse en 1,0. |
+| **manifestVersion** | El **atributo manifestVersion** debe establecerse en 1.0. |
 
 
 
@@ -127,34 +127,34 @@ El elemento **Assembly** tiene el siguiente atributo.
 
 </dd> <dt>
 
-<span id="noInheritable"></span><span id="noinheritable"></span><span id="NOINHERITABLE"></span>**no se pudo heredar**
+<span id="noInheritable"></span><span id="noinheritable"></span><span id="NOINHERITABLE"></span>**noInheritable**
 </dt> <dd>
 
-Incluya este elemento en un manifiesto del ensamblado para indicar que el ensamblado administra los [contextos de activación](activation-contexts.md) y sus objetos. El elemento **Noinheritable** debe ser un subelemento de un elemento **Assembly** . El elemento **assemblyIdentity** debe aparecer después de cualquier elemento que se haya **heredado** . El elemento **Noinheritable** es necesario en el manifiesto del ensamblado si el ensamblado lo usa cualquier [manifiesto de aplicación](application-manifests.md) que incluya el elemento **NoInherit** . Un elemento **Noinheritable** en un manifiesto de aplicación no tiene ningún efecto. Un elemento **Noinheritable** no tiene elementos secundarios.
+Incluya este elemento en un manifiesto de ensamblado para indicar que el ensamblado administra los [contextos de activación](activation-contexts.md) y sus objetos. El **elemento noInheritable** debe ser un subelemento de un **elemento de** ensamblado. El **elemento assemblyIdentity** debe ir después de cualquier **elemento noInheritable.** El **elemento noInheritable** es necesario en el manifiesto del ensamblado si el ensamblado lo usan los [manifiestos](application-manifests.md) de aplicación que incluyen **el elemento noInherit.** Un **elemento noInheritable** en un manifiesto de aplicación no tiene ningún efecto. Un **elemento noInheritable** no tiene elementos secundarios.
 
 </dd> <dt>
 
-<span id="assemblyIdentity"></span><span id="assemblyidentity"></span><span id="ASSEMBLYIDENTITY"></span>**assemblyIdentity**
+<span id="assemblyIdentity"></span><span id="assemblyidentity"></span><span id="ASSEMBLYIDENTITY"></span>**Assemblyidentity**
 </dt> <dd>
 
 Describe e identifica de forma única un ensamblado en paralelo.
 
-Como primer subelemento de un elemento **Assembly** , **assemblyIdentity** describe e identifica de forma única el ensamblado en paralelo que posee este manifiesto del ensamblado. Esto se denomina **assemblyIdentity** de Def-context del manifiesto del ensamblado.
+Como primer subelemento  de un elemento de ensamblado, **assemblyIdentity** describe e identifica de forma única el ensamblado en paralelo que posee este manifiesto de ensamblado. Esto se denomina ensamblado de contexto **DEFIdentity** del manifiesto del ensamblado.
 
-Como primer subelemento de un elemento **dependentAssembly** , **assemblyIdentity** describe e identifica de forma única un ensamblado en paralelo que usa el elemento **assemblyIdentity** de Def-context. Esto se denomina el método **assemblyIdentity** de contexto de referencia del manifiesto del ensamblado. El ensamblado DEF-context requiere que el ensamblado de contexto de referencia funcione correctamente. Tenga en cuenta que cada **assemblyIdentity** del contexto de referencia debe coincidir exactamente con el **assemblyIdentity** de Def-context correspondiente en el manifiesto del ensamblado del ensamblado de referencia.
+Como primer subelemento de un elemento **dependentAssembly,** **assemblyIdentity** describe e identifica de forma única un ensamblado en paralelo que usa el ensamblado de contexto de DEFIdentity .  Esto se denomina ensamblado de contexto **REFIdentity** del manifiesto del ensamblado. El ensamblado de contexto DEF requiere que el ensamblado de contexto REF funcione correctamente. Tenga en cuenta que todos los ensamblados de contexto **REFIdentity** deben coincidir exactamente con un ensamblado de contexto DEF **correspondienteIdentity** en el propio manifiesto de ensamblado del ensamblado al que se hace referencia.
 
-Este elemento no tiene subelementos. El elemento **assemblyIdentity** tiene los atributos siguientes.
+Este elemento no tiene subelementos. El **elemento assemblyIdentity** tiene los siguientes atributos.
 
 
 
 | Atributo                 | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **type**                  | Especifica el tipo de ensamblado. El valor debe ser Win32 y en minúsculas. Obligatorio.                                                                                                                                                                                                                                                                                                                                                         |
-| **name**                  | Designa de forma única el ensamblado. Use el siguiente formato para el nombre de ensamblado: Organization.Division.Name. Por ejemplo, Microsoft. Windows. mysampleAsm. Obligatorio. Tenga en cuenta que en el caso de una DLL empaquetada como un ensamblado privado con un archivo de manifiesto independiente, el nombre del ensamblado debe ser diferente del nombre del archivo DLL y del manifiesto.<br/>                                                                              |
-| **language**              | Identifica el idioma del ensamblado. Opcional. Si el ensamblado es específico del idioma, especifique el código de lenguaje DHTML. En el **assemblyIdentity** de Def-context de un manifiesto de ensamblado diseñado para uso internacional (idioma neutro), omita el atributo Language.<br/> En un grupo de referencias de referencia **assemblyIdentity** de un manifiesto de ensamblado diseñado para uso internacional (idioma neutro), establezca el valor de Language en " \* ".<br/> |
-| **processorArchitecture** | Especifica el procesador. Los valores válidos son x86 para Windows de 32 bits e ia64 para Windows de 64 bits. Opcional.                                                                                                                                                                                                                                                                                                                               |
-| **version**               | Especifica la versión del ensamblado. Use el formato de versión de cuatro partes: mmmmm. nnnnn. ooooo. ppppp. Cada una de las partes separadas por puntos puede ser 0-65535, ambos inclusive. Para obtener más información, vea [versiones de ensamblado](assembly-versions.md). Obligatorio.                                                                                                                                                                                               |
-| **publicKeyToken**        | Cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes del hash SHA-1 de la clave pública con la que se firma el ensamblado. La clave pública que se usa para firmar el catálogo debe ser de 2048 bits o superior. Se requiere para los ensamblados en paralelo compartidos.                                                                                                                                                                                |
+| **type**                  | Especifica el tipo de ensamblado. El valor debe ser win32 y en minúsculas. Obligatorio.                                                                                                                                                                                                                                                                                                                                                         |
+| **name**                  | Nombra de forma exclusiva el ensamblado. Use el formato siguiente para el nombre del ensamblado: Organization.Division.Name. Por ejemplo, Microsoft. Windows.mysampleAsm. Obligatorio. Tenga en cuenta que, en el caso de un archivo DLL empaquetado como un ensamblado privado con un archivo de manifiesto independiente, el nombre del ensamblado debe ser diferente del nombre del archivo DLL y del manifiesto.<br/>                                                                              |
+| **language**              | Identifica el idioma del ensamblado. Opcional. Si el ensamblado es específico del lenguaje, especifique el código de lenguaje DHTML. En el ensamblado de contexto **DEFIdentidad** de un manifiesto de ensamblado destinado a uso internacional (idioma neutro) omita el atributo language.<br/> En un ensamblado de contexto **REFIdentidad** de un manifiesto de ensamblado destinado a uso en todo el mundo (idioma neutro) establezca el valor de language en " \* ".<br/> |
+| **processorArchitecture** | Especifica el procesador. Los valores válidos son x86 para las Windows de 32 bits e ia64 para las Windows de 64 bits. Opcional.                                                                                                                                                                                                                                                                                                                               |
+| **version**               | Especifica la versión del ensamblado. Use el formato de versión de cuatro partes: mmmmm.nnnnn.ooooo.ppppp. Cada una de las partes separadas por puntos puede ser de 0 a 65535, ambos incluidos. Para obtener más información, vea [Versiones de ensamblado.](assembly-versions.md) Obligatorio.                                                                                                                                                                                               |
+| **Publickeytoken**        | Cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes del hash SHA-1 de la clave pública con la que se firma el ensamblado. La clave pública que se usa para firmar el catálogo debe ser de 2048 bits o superior. Se requiere para los ensamblados en paralelo compartidos.                                                                                                                                                                                |
 
 
 
@@ -162,34 +162,34 @@ Este elemento no tiene subelementos. El elemento **assemblyIdentity** tiene los 
 
 </dd> <dt>
 
-<span id="dependency"></span><span id="DEPENDENCY"></span>**pendiente**
+<span id="dependency"></span><span id="DEPENDENCY"></span>**Dependencia**
 </dt> <dd>
 
-Un elemento contenedor que incluye al menos un elemento **dependentAssembly**. El primer subelemento debe ser un elemento **dependentAssembly** . Una **dependencia** no tiene atributos. Opcional.
+Elemento contenedor que incluye al menos **un elemento dependentAssembly.** El primer subelemento debe ser **un elemento dependentAssembly.** Una **dependencia** no tiene atributos. Opcional.
 
 </dd> <dt>
 
 <span id="dependentAssembly"></span><span id="dependentassembly"></span><span id="DEPENDENTASSEMBLY"></span>**dependentAssembly**
 </dt> <dd>
 
-El primer subelemento debe ser un elemento **assemblyIdentity** que describe e identifica de forma única un ensamblado en paralelo que usa el ensamblado en paralelo que posee este manifiesto del ensamblado. Cada **dependentAssembly** debe estar dentro de una **dependencia** exactamente. Opcional.
+El primer subelemento debe ser un elemento **assemblyIdentity** que describa e identifique de forma única un ensamblado en paralelo utilizado por el ensamblado en paralelo que posee este manifiesto de ensamblado. Cada **dependentAssembly debe** estar dentro de exactamente una **dependencia**. Opcional.
 
 </dd> <dt>
 
-<span id="file"></span><span id="FILE"></span>**filesystem**
+<span id="file"></span><span id="FILE"></span>**Archivo**
 </dt> <dd>
 
-Contiene archivos usados por un ensamblado en paralelo. Contiene **subclases**, **typelib**, **windowClass**, **comInterfaceProxyStub** subelementos. Opcional.
+Contiene archivos usados por un ensamblado en paralelo. Contiene **subelementos comClass**, **typelib**, **windowClass**, **comInterfaceProxyStub.** Opcional.
 
-El elemento **File** tiene los atributos siguientes.
+El **elemento** file tiene los atributos siguientes.
 
 
 
 | Atributo   | Descripción                                                                                             |
 |-------------|---------------------------------------------------------------------------------------------------------|
 | **name**    | Nombre del archivo, por ejemplo, Conctl32.dll.                                                            |
-| **hashalg** | Algoritmo usado para crear un hash del archivo. Este valor debe ser SHA1.                                 |
-| **hash**    | Un hash del archivo al que se hace referencia por nombre. Cadena hexadecimal de longitud según el algoritmo hash. |
+| **hashalg** | Algoritmo utilizado para crear un hash del archivo. Este valor debe ser SHA1.                                 |
+| **hash**    | Hash del archivo al que se hace referencia por nombre. Cadena hexadecimal de longitud en función del algoritmo hash. |
 
 
 
@@ -197,35 +197,35 @@ El elemento **File** tiene los atributos siguientes.
 
 </dd> <dt>
 
-<span id="comClass"></span><span id="comclass"></span><span id="COMCLASS"></span>**comclase**
+<span id="comClass"></span><span id="comclass"></span><span id="COMCLASS"></span>**comClass**
 </dt> <dd>
 
-Un subelemento de un elemento **File** . Opcional.
+Subelemento de un **elemento de** archivo. Opcional.
 
-El elemento **comClass** tiene los siguientes atributos.
+El **elemento comClass** tiene los siguientes atributos.
 
 
 
 | Atributo               | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **description**         | Nombre de clase.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| **CLSID**               | GUID que identifica de forma única la clase. Obligatorio. El valor debe estar en el formato de un GUID válido.                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| **threadingModel**      | Modelo de subprocesos utilizado por las clases COM en proceso. Si esta propiedad es null, no se utiliza ningún modelo de subprocesos. El componente se crea en el subproceso principal del cliente y las referencias de otros subprocesos se serializan en este subproceso. Opcional. Los valores válidos son: "Apartment", "Free", "both" y "neutral".                                                                                                                                                                                                                         |
-| **tlbid**               | GUID de la biblioteca de tipos para este componente COM. El valor debe estar en el formato de un GUID. Opcional.                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| **Programa**              | Identificador de programación dependiente de la versión asociado al componente COM. El formato de un ProgID es <el *componente*> de *proveedor* . <>. <*versión*>.                                                                                                                                                                                                                                                                                                                                                                      |
-| **miscStatus**          | Los duplicados en el manifiesto de ensamblado proporcionan la información proporcionada por la clave del registro MiscStatus. Si no se encuentran los valores de los atributos **miscStatusIcon**, **miscStatusContent**, **miscStatusDocprint** o **miscStatusThumbnail** , se usa el valor predeterminado correspondiente indicado en **miscStatus** para los atributos que faltan. El valor puede ser una lista delimitada por comas de los valores de atributo de la tabla siguiente. Puede usar este atributo si la clase COM es una clase OCX que requiere valores de clave del registro Miscstatus. |
-| **miscStatusIcon**      | En el manifiesto del ensamblado se incluye la información proporcionada por el icono de DVASPECT \_ . Puede proporcionar un icono de un objeto. El valor puede ser una lista delimitada por comas de los valores de atributo de la tabla siguiente. Puede usar este atributo si la clase COM es una clase OCX que requiere valores de clave del registro Miscstatus.                                                                                                                                                                                                                |
-| **miscStatusContent**   | Los duplicados en el ensamblado manifiestan la información proporcionada por el contenido de DVASPECT \_ . Puede proporcionar un documento compuesto que se pueda mostrar en una pantalla o una impresora. El valor puede ser una lista delimitada por comas de los valores de atributo de la tabla siguiente. Puede usar este atributo si la clase COM es una clase OCX que requiere valores de clave del registro Miscstatus.                                                                                                                                                                          |
-| **miscStatusDocprint**  | Los duplicados en el ensamblado proporcionan la información proporcionada por DVASPECT \_ DOCPRINT. Puede proporcionar una representación de objeto que se pueda mostrar en la pantalla como si se imprimiera en una impresora. El valor puede ser una lista delimitada por comas de los valores de atributo de la tabla siguiente. Puede usar este atributo si la clase COM es una clase OCX que requiere valores de clave del registro Miscstatus.                                                                                                                                               |
-| **miscStatusThumbnail** | Los duplicados de un ensamblado manifiestan la información proporcionada por la miniatura de DVASPECT \_ . Puede proporcionar una miniatura de un objeto que se pueda mostrar en una herramienta de exploración. El valor puede ser una lista delimitada por comas de los valores de atributo de la tabla siguiente. Puede usar este atributo si la clase COM es una clase OCX que requiere valores de clave del registro Miscstatus.                                                                                                                                                                         |
+| **Clsid**               | GUID que identifica de forma única la clase . Obligatorio. El valor debe tener el formato de un GUID válido.                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| **threadingModel**      | Modelo de subprocesos utilizado por las clases COM en proceso. Si esta propiedad es NULL, no se usa ningún modelo de subprocesos. El componente se crea en el subproceso principal del cliente y las llamadas de otros subprocesos se serializan a este subproceso. Opcional. Los valores válidos son: "Apartment", "Free", "Both" y "Neutral".                                                                                                                                                                                                                         |
+| **tlbid**               | GUID de la biblioteca de tipos para este componente COM. El valor debe tener el formato de un GUID. Opcional.                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **Progid**              | Identificador de programación dependiente de la versión asociado al componente COM. El formato de un ProgID se <*proveedor>.<* componente *>.<* versión *>.*                                                                                                                                                                                                                                                                                                                                                                      |
+| **miscStatus**          | Duplica en el manifiesto del ensamblado la información proporcionada por la clave del Registro MiscStatus. Si no se encuentran valores para los atributos **miscStatusIcon**, **miscStatusContent**, **miscStatusDocprint** o **miscStatusThumbnail,** se usa el valor predeterminado correspondiente que aparece en **miscStatus** para los atributos que faltan. El valor puede ser una lista delimitada por comas de los valores de atributo de la tabla siguiente. Puede usar este atributo si la clase COM es una clase OCX que requiere valores de clave del Registro Miscstatus. |
+| **miscStatusIcon**      | Duplica en el manifiesto del ensamblado la información proporcionada por DVASPECT \_ ICON. Puede proporcionar un icono de un objeto . El valor puede ser una lista delimitada por comas de los valores de atributo de la tabla siguiente. Puede usar este atributo si la clase COM es una clase OCX que requiere valores de clave del Registro Miscstatus.                                                                                                                                                                                                                |
+| **miscStatusContent**   | Duplica en el manifiesto del ensamblado la información proporcionada por DVASPECT \_ CONTENT. Puede proporcionar un documento compuesto que se puede mostrar para una pantalla o impresora. El valor puede ser una lista delimitada por comas de los valores de atributo de la tabla siguiente. Puede usar este atributo si la clase COM es una clase OCX que requiere valores de clave del Registro Miscstatus.                                                                                                                                                                          |
+| **miscStatusDocprint**  | Duplica en el manifiesto del ensamblado la información proporcionada por DVASPECT \_ DOCPRINT. Puede proporcionar una representación de objeto que se puede mostrar en la pantalla como si se imprimira en una impresora. El valor puede ser una lista delimitada por comas de los valores de atributo de la tabla siguiente. Puede usar este atributo si la clase COM es una clase OCX que requiere valores de clave del Registro Miscstatus.                                                                                                                                               |
+| **miscStatusThumbnail** | Duplica en un manifiesto de ensamblado la información proporcionada por DVASPECT \_ THUMBNAIL. Puede proporcionar una miniatura de un objeto que se puede mostrar en una herramienta de exploración. El valor puede ser una lista delimitada por comas de los valores de atributo de la tabla siguiente. Puede usar este atributo si la clase COM es una clase OCX que requiere valores de clave del Registro Miscstatus.                                                                                                                                                                         |
 
 
 
  
 
-El elemento **comClass** puede tener los elementos <progid>...</progid> como elementos secundarios, que muestran los ProgID dependientes de la versión.
+El **elemento comClass** puede tener <progid>elementos ...</progid> como elementos secundarios, que enumera los progids dependientes de la versión.
 
-En el ejemplo siguiente se muestra un elemento **comClass** incluido en un elemento **File** .
+En el ejemplo siguiente se muestra **un elemento comClass** incluido en un **elemento de** archivo.
 
 ``` syntax
 <file name="sampleu.dll">
@@ -239,20 +239,20 @@ En el ejemplo siguiente se muestra un elemento **comClass** incluido en un eleme
     </file>
 ```
 
-Si la clase COM es una clase OCX que requiere que la subclave del registro MiscStatus especifique cómo crear y mostrar un objeto, puede habilitar el objeto duplicando esta información en el manifiesto del ensamblado. Especifique las características del objeto mediante los atributos **miscStatus**, **miscStatusIcon**, **miscStatusContent**, **miscStatusDocprint** y **miscStatusThumbnail** del elemento **comClass** . Establezca estos atributos en una lista separada por comas de valores de atributo de la tabla siguiente. Estos atributos duplican la información que proporcionaría una enumeración DVASPECT. Si no se encuentra ningún valor para **miscStatusIcon**, **miscStatusContent**, **miscStatusDocprint** o **miscStatusThumbnail**, se usan los valores predeterminados especificados en **miscStatus** . Utilice los valores de atributo de la tabla siguiente. Estos se corresponden con las marcas de bits de una enumeración [**OLEMISC**](/windows/win32/api/oleidl/ne-oleidl-olemisc) .
+Si la clase COM es una clase OCX que requiere la subclave del Registro MiscStatus para especificar cómo crear y mostrar un objeto, puede habilitar el objeto duplicando esta información en el manifiesto del ensamblado. Especifique las características del objeto mediante los atributos **miscStatus**, **miscStatusIcon**, **miscStatusContent**, **miscStatusDocprint y** **miscStatusThumbnail** del elemento **comClass.** Establezca estos atributos en una lista separada por comas de valores de atributo de la tabla siguiente. Estos atributos duplican la información que proporcionaría una enumeración DVASPECT. Si no se encuentra ningún valor para **miscStatusIcon**, **miscStatusContent**, **miscStatusDocprint** o **miscStatusThumbnail**, se usan los valores predeterminados especificados en **miscStatus.** Use valores de atributo de la tabla siguiente. Corresponden a las marcas de bits de una [**enumeración OLEMISC.**](/windows/win32/api/oleidl/ne-oleidl-olemisc)
 
 
 
-| Valor del atributo              | OLEMISC constante)                      |
+| Valor del atributo              | Constante OLEMISC                      |
 |------------------------------|---------------------------------------|
-| recomposeonresize            | OLEMISC \_ RECOMPOSEONRESIZE            |
+| rempomposeonresize            | REMPOMPOSEONRESIZE DE OLEMISC \_            |
 | onlyiconic                   | OLEMISC \_ ONLYICONIC                   |
 | insertnotreplace             | OLEMISC \_ INSERTNOTREPLACE             |
-| static                       | \_estático OLEMISC                       |
-| cantlinkinside               | OLEMISC \_ CANTLINKINSIDE               |
+| static                       | OLEMISC \_ STATIC                       |
+| cantlink reenlace               | OLEMISC \_ CANTLINK REENLACE               |
 | canlinkbyole1                | OLEMISC \_ CANLINKBYOLE1                |
 | islinkobject                 | OLEMISC \_ ISLINKOBJECT                 |
-| insideout                    | OLEMISC \_ InsideOut                    |
+| Insideout                    | OLEMISC \_ INSIDEOUT                    |
 | activatewhenvisible          | OLEMISC \_ ACTIVATEWHENVISIBLE          |
 | renderingisdeviceindependent | OLEMISC \_ RENDERINGISDEVICEINDEPENDENT |
 | invisibleatruntime           | OLEMISC \_ INVISIBLEATRUNTIME           |
@@ -260,10 +260,10 @@ Si la clase COM es una clase OCX que requiere que la subclave del registro MiscS
 | actslikebutton               | OLEMISC \_ ACTSLIKEBUTTON               |
 | actslikelabel                | OLEMISC \_ ACTSLIKELABEL                |
 | nouiactivate                 | OLEMISC \_ NOUIACTIVATE                 |
-| alineable                    | OLEMISC \_ alineable                    |
+| alineable                    | OLEMISC \_ ALIGNABLE                    |
 | simpleframe                  | OLEMISC \_ SIMPLEFRAME                  |
 | setclientsitefirst           | OLEMISC \_ SETCLIENTSITEFIRST           |
-| IMEMode                      | TOLEMISC \_ IMEMODE                     |
+| Imemode                      | TOLEMISC \_ IMEMODE                     |
 | ignoreativatewhenvisible     | OLEMISC \_ IGNOREACTIVATEWHENVISIBLE    |
 | wantstomenumerge             | OLEMISC \_ WANTSTOMENUMERGE             |
 | supportsmultilevelundo       | OLEMISC \_ SUPPORTSMULTILEVELUNDO       |
@@ -274,28 +274,28 @@ Si la clase COM es una clase OCX que requiere que la subclave del registro MiscS
 
 </dd> <dt>
 
-<span id="typelib"></span><span id="TYPELIB"></span>**typelib**
+<span id="typelib"></span><span id="TYPELIB"></span>**Typelib**
 </dt> <dd>
 
-Un subelemento de un elemento **File** . Opcional.
+Subelemento de un **elemento de** archivo. Opcional.
 
-El elemento **typelib** tiene los atributos que se muestran en la tabla siguiente.
+El **elemento typelib** tiene los atributos que se muestran en la tabla siguiente.
 
 
 
 | Atributo      | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **tlbid**      | IDENTIFICADOR único de la biblioteca de tipos. Obligatorio.                                                                                                                                                                                                                                                                                                                                                                                    |
+| **tlbid**      | Identificador único de la biblioteca de tipos. Obligatorio.                                                                                                                                                                                                                                                                                                                                                                                    |
 | **version**    | Número de versión de dos partes de la biblioteca de tipos. Si solo aumenta el número de versión secundaria, todas las características de la biblioteca de tipos anterior se admiten de una manera compatible. Si cambia el número de versión principal, se debe volver a compilar el código compilado con la biblioteca de tipos. El número de versión de la biblioteca de tipos puede diferir del número de versión de la aplicación. Obligatorio.                                      |
-| **helpDir**    | Directorio donde se encuentra el archivo de ayuda para los tipos de la biblioteca de tipos. Si la aplicación admite bibliotecas de tipos para varios idiomas, es posible que las bibliotecas hagan referencia a distintos nombres de archivo en el directorio del archivo de ayuda. Si no hay ningún valor, especifique "". Obligatorio.                                                                                                                                                          |
-| **identificador** | Representación de cadena hexadecimal del identificador de configuración regional (LCID). Es de uno a cuatro dígitos hexadecimales sin prefijo 0x y sin ceros a la izquierda. El LCID puede tener un identificador de subidioma neutro. Para obtener más información, vea [identificadores de configuración regional](/windows/desktop/Intl/locale-identifiers). Opcional.                                                                                                                                      |
-| **flags**      | Representación de cadena de las marcas de la biblioteca de tipos para esta biblioteca de tipos. En concreto, debe ser "restricted", "CONTROL", "HIDDEN" y "HASDISKIMAGE". Estos son los valores de la enumeración [**LIBFLAGS**](/windows/win32/api/oaidl/ne-oaidl-libflags) y son las mismas marcas especificadas en el parámetro *ULibFlags* del método [**ICreateTypeLib:: SetLibFlags**](/windows/win32/api/oaidl/nf-oaidl-icreatetypelib-setlibflags) . Opcional. |
+| **helpdir**    | Directorio donde se encuentra el archivo de Ayuda para los tipos de la biblioteca de tipos. Si la aplicación admite bibliotecas de tipos para varios lenguajes, las bibliotecas pueden hacer referencia a nombres de archivo diferentes en el directorio de archivos de Ayuda. Si no hay ningún valor, especifique "". Obligatorio.                                                                                                                                                          |
+| **resourceid** | Representación de cadena hexadecimal del identificador de configuración regional (LCID). Es de uno a cuatro dígitos hexadecimales sin prefijo 0x y sin ceros a la izquierda. El LCID puede tener un identificador de subidioma neutro. Para obtener más información, vea [Identificadores de configuración regional.](/windows/desktop/Intl/locale-identifiers) Opcional.                                                                                                                                      |
+| **flags**      | Representación de cadena de las marcas de la biblioteca de tipos para esta biblioteca de tipos. En concreto, debe ser "RESTRICTED", "CONTROL", "HIDDEN" y "HASDISKIMAGE". Estos son los valores de la enumeración [**LIBFLAGS**](/windows/win32/api/oaidl/ne-oaidl-libflags) y son las mismas marcas especificadas en el parámetro *uLibFlags* del método [**ICreateTypeLib::SetLibFlags.**](/windows/win32/api/oaidl/nf-oaidl-icreatetypelib-setlibflags) Opcional. |
 
 
 
  
 
-En el ejemplo siguiente se muestra un elemento **typelib** incluido en un elemento **File** .
+En el ejemplo siguiente se muestra un **elemento typelib** incluido en un **elemento de** archivo.
 
 ``` syntax
 <file name="sampleu.dll">
@@ -309,26 +309,26 @@ En el ejemplo siguiente se muestra un elemento **typelib** incluido en un elemen
 <span id="comInterfaceExternalProxyStub"></span><span id="cominterfaceexternalproxystub"></span><span id="COMINTERFACEEXTERNALPROXYSTUB"></span>**comInterfaceExternalProxyStub**
 </dt> <dd>
 
-**ComInterfaceExternalProxyStub** es un subelemento de un elemento **Assembly** y se utiliza para las interfaces de automatización. Por ejemplo, [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) y sus interfaces derivadas. Opcional.
+**comInterfaceExternalProxyStub** es un subelemento de un elemento **de** ensamblado y se usa para interfaces de automatización. Por ejemplo, [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) y sus interfaces derivadas. Opcional.
 
-La implementación de código auxiliar de proxy predeterminada es adecuada para la mayoría de las interfaces de automatización, como las interfaces derivadas de [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch). El código auxiliar del proxy de interfaz y todas las demás implementaciones externas de la interfaz de código auxiliar de proxy deben aparecer en **comInterfaceExternalProxyStub**. El elemento **comInterfaceExternalProxyStub** tiene los atributos que se muestran en la tabla siguiente.
+La implementación predeterminada del código auxiliar de proxy es adecuada para la mayoría de las interfaces de automatización, como las interfaces derivadas de [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch). El código auxiliar del proxy de interfaz y todas las demás implementaciones de interfaz de código auxiliar de proxy externo deben aparecer en **comInterfaceExternalProxyStub**. El **elemento comInterfaceExternalProxyStub** tiene los atributos que se muestran en la tabla siguiente.
 
 
 
 | Atributo         | Descripción                                                                                                                                                                                 |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **suscripto**           | IID de la interfaz para la que se declara el proxy. Obligatorio. El valor debe tener el formato: "{IID}".                                                                         |
-| **baseInterface** | El IID de la interfaz de la que se deriva el que describe el atributo **IID** . Este atributo es opcional. El valor debe tener el formato: "{IID}".                            |
-| **numMethods**    | El número de métodos implementados por la interfaz. Este atributo es opcional. El valor debe tener el formato: "n".                                                                       |
-| **name**          | Nombre de la interfaz tal y como aparecería en el código. Por ejemplo, "IViewObject". No debe ser una cadena descriptiva. Este atributo es opcional. El valor debe tener el formato: "nombre". |
-| **tlbid**         | Biblioteca de tipos que contiene la descripción de la interfaz especificada por el atributo **IID** . Este atributo es opcional. El valor debe tener el formato: "{TLBID}".                |
-| proxyStubClsid32  | Asigna un IID a un CLSID en dll de proxy de 32 bits.                                                                                                                                                |
+| **Iid**           | El IID de la interfaz para la que se declara el proxy. Obligatorio. El valor debe tener el formato: "{iid}".                                                                         |
+| **baseInterface** | El IID de la interfaz de la que se deriva el descrito por el atributo **iid.** Este atributo es opcional. El valor debe tener el formato: "{iid}".                            |
+| **numMethods**    | Número de métodos implementados por la interfaz . Este atributo es opcional. El valor debe tener el formato: "n".                                                                       |
+| **name**          | Nombre de la interfaz tal como aparecería en el código. Por ejemplo, "IViewObject". No debe ser una cadena descriptiva. Este atributo es opcional. El valor debe tener el formato: "name". |
+| **tlbid**         | Biblioteca de tipos que contiene la descripción de la interfaz especificada por el **atributo iid.** Este atributo es opcional. El valor debe tener el formato: "{tlbid}".                |
+| proxyStubClsid32  | Mapas un IID a un CLSID en archivos DLL de proxy de 32 bits.                                                                                                                                                |
 
 
 
  
 
-En el ejemplo siguiente se muestra un elemento **comInterfaceExternalProxyStub** .
+En el ejemplo siguiente se **muestra un elemento comInterfaceExternalProxyStub.**
 
 ``` syntax
 <comInterfaceExternalProxyStub 
@@ -343,23 +343,23 @@ En el ejemplo siguiente se muestra un elemento **comInterfaceExternalProxyStub**
 <span id="comInterfaceProxyStub"></span><span id="cominterfaceproxystub"></span><span id="COMINTERFACEPROXYSTUB"></span>**comInterfaceProxyStub**
 </dt> <dd>
 
-Un subelemento de un elemento **File** . Opcional.
+Subelemento de un **elemento de** archivo. Opcional.
 
-Si un archivo del ensamblado implementa un código auxiliar de proxy, la etiqueta de archivo correspondiente debe incluir un subelemento **comInterfaceProxyStub** que tenga atributos idénticos a un elemento **comInterfaceProxyStub** . La serialización de interfaces entre procesos y subprocesos puede no funcionar según lo esperado si omite algunas de las dependencias de **comInterfaceProxyStub** para el componente.
+Si un archivo del ensamblado implementa un código auxiliar de proxy, la etiqueta de archivo correspondiente debe incluir un subelemento **comInterfaceProxyStub** que tenga atributos idénticos a un **elemento comInterfaceProxyStub.** Es posible que las interfaces de serialización entre procesos y subprocesos no funcionen según lo previsto si omite algunas de las dependencias **comInterfaceProxyStub** para el componente.
 
-El elemento **comInterfaceProxyStub** tiene los siguientes atributos.
+El **elemento comInterfaceProxyStub** tiene los siguientes atributos.
 
 
 
 | Atributo            | Descripción                                                                                                                                                                                                                                                                                                 |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **suscripto**              | El. IID de la interfaz para la que se declara el proxy. Obligatorio. El valor debe tener el formato: "{IID}".                                                                                                                                                                                        |
-| **name**             | Nombre de la interfaz tal y como aparecería en el código. Por ejemplo, "IViewObject". No debe ser una cadena descriptiva. Este atributo es opcional. El valor debe tener el formato: "nombre".                                                                                                                 |
-| **tlbid**            | Biblioteca de tipos que contiene la descripción de la interfaz especificada por el atributo **IID** . Este atributo es opcional. El valor debe tener el formato: "{TLBID}".                                                                                                                                 |
-| **baseInterface**    | El IID de la interfaz de la que se deriva el que describe el atributo **IID** . Este atributo es opcional. El valor debe tener el formato: "{IID}".                                                                                                                                            |
-| **numMethods**       | El número de métodos implementados por la interfaz. Este atributo es opcional. El valor debe tener el formato: "n".                                                                                                                                                                                       |
-| **proxyStubClsid32** | Asigna un IID a un CLSID en dll de proxy de 32 bits.                                                                                                                                                                                                                                                                |
-| **threadingModel**   | Modelo de subprocesos utilizado por las clases COM en proceso. Si esta propiedad es null, no se utiliza ningún modelo de subprocesos. El componente se crea en el subproceso principal del cliente y las referencias de otros subprocesos se serializan en este subproceso. Opcional. Los valores válidos son: "Apartment", "Free", "both" y "neutral". |
+| **Iid**              | el. IID de la interfaz para la que se declara el proxy. Obligatorio. El valor debe tener el formato: "{iid}".                                                                                                                                                                                        |
+| **name**             | Nombre de la interfaz tal como aparecería en el código. Por ejemplo, "IViewObject". No debe ser una cadena descriptiva. Este atributo es opcional. El valor debe tener el formato: "name".                                                                                                                 |
+| **tlbid**            | Biblioteca de tipos que contiene la descripción de la interfaz especificada por el **atributo iid.** Este atributo es opcional. El valor debe tener el formato: "{tlbid}".                                                                                                                                 |
+| **baseInterface**    | El IID de la interfaz de la que se deriva el descrito por el atributo **iid.** Este atributo es opcional. El valor debe tener el formato: "{iid}".                                                                                                                                            |
+| **numMethods**       | Número de métodos implementados por la interfaz . Este atributo es opcional. El valor debe tener el formato: "n".                                                                                                                                                                                       |
+| **proxyStubClsid32** | Mapas un IID a un CLSID en archivos DLL de proxy de 32 bits.                                                                                                                                                                                                                                                                |
+| **threadingModel**   | Modelo de subprocesos utilizado por las clases COM en proceso. Si esta propiedad es NULL, no se usa ningún modelo de subprocesos. El componente se crea en el subproceso principal del cliente y las llamadas de otros subprocesos se serializan a este subproceso. Opcional. Los valores válidos son: "Apartment", "Free", "Both" y "Neutral". |
 
 
 
@@ -370,19 +370,19 @@ El elemento **comInterfaceProxyStub** tiene los siguientes atributos.
 <span id="windowclass"></span><span id="WINDOWCLASS"></span>**windowclass**
 </dt> <dd>
 
-Nombre de una clase de Windows de la que se va a crear una versión. El elemento **windowclass** tiene el siguiente atributo.
+Nombre de una clase de Windows de la que se va a crear una versión. El **elemento windowclass** tiene el atributo siguiente.
 
 
 
 | Atributo     | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **versiones del** | Este atributo controla si el nombre de la clase de ventana interna utilizada en el registro contiene la versión del ensamblado que contiene la clase de ventana. El valor de este atributo puede ser "Yes" o "no". El valor predeterminado es "sí". Solo se debe usar el valor "no" si la misma clase de ventana está definida por un componente en paralelo y un componente no en paralelo equivalente y desea tratarlos como la misma clase de ventana. Tenga en cuenta que las reglas habituales sobre el registro de clases de ventana solo se aplican el primer componente que registra la clase de ventana podrá registrarla, ya que no tiene versiones. |
+| **Versionado** | Este atributo controla si el nombre de clase de ventana interno usado en el registro contiene la versión del ensamblado que contiene la clase de ventana. El valor de este atributo puede ser "yes" o "no". El valor predeterminado es "yes". El valor "no" solo debe usarse si un componente en paralelo y un componente equivalente no en paralelo definen la misma clase de ventana y desea tratarlos como la misma clase de ventana. Tenga en cuenta que las reglas habituales sobre el registro de clases de ventana solo se aplican al primer componente que registra la clase de ventana, ya que no tiene versiones. |
 
 
 
  
 
-En el ejemplo siguiente se muestra un elemento **windowclass** incluido en un elemento **File** .
+En el ejemplo siguiente se muestra **un elemento windowclass** incluido en un **elemento de** archivo.
 
 ``` syntax
 <file name="comctl32.dll">
@@ -394,7 +394,7 @@ En el ejemplo siguiente se muestra un elemento **windowclass** incluido en un el
 
 ## <a name="example"></a>Ejemplo
 
-El siguiente es un ejemplo de manifiesto del ensamblado.
+A continuación se muestra un ejemplo de un manifiesto de ensamblado.
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>

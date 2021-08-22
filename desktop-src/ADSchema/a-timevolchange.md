@@ -53,7 +53,7 @@ Este atributo indica la última vez que se cambió un archivo en el volumen de a
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
@@ -74,7 +74,7 @@ Este atributo indica la última vez que se cambió un archivo en el volumen de a
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
@@ -95,7 +95,7 @@ Este atributo indica la última vez que se cambió un archivo en el volumen de a
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
@@ -116,7 +116,7 @@ Este atributo indica la última vez que se cambió un archivo en el volumen de a
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
@@ -137,7 +137,7 @@ Este atributo indica la última vez que se cambió un archivo en el volumen de a
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
@@ -158,7 +158,7 @@ Este atributo indica la última vez que se cambió un archivo en el volumen de a
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |

@@ -1,11 +1,11 @@
 ---
 title: Atributo User-Shared-Folder
-description: Especifica una ruta de acceso UNC a la carpeta de documentos compartidos del usuario. La ruta de acceso debe ser una ruta de acceso UNC de red con el formato \\ \\ servidor \\ recurso compartido \\ directorio. Este valor puede ser una cadena nula.
+description: Especifica una ruta de acceso UNC a la carpeta de documentos compartidos del usuario. La ruta de acceso debe ser una ruta de acceso UNC de red con el formato \\ \\ Server Share \\ \\ Directory. Este valor puede ser una cadena null.
 ms.assetid: 23b4177a-0a05-4111-affe-d81bc115580d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de carpeta compartida de usuario
-- userSharedFolder esquema de AD de atributos
+- Esquema de AD del atributo User-Shared-Folder
+- Esquema de AD del atributo userSharedFolder
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a20e9772302e79837fccd301943554191cf3b862
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4b3bcb2732fbaec9ac06db1bae3f07b03cac2018a4f88209b5391bd4a84b7836
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021993"
 ---
 # <a name="user-shared-folder-attribute"></a>Atributo User-Shared-Folder
 
-Especifica una ruta de acceso UNC a la carpeta de documentos compartidos del usuario. La ruta de acceso debe ser una ruta de acceso UNC de red con el formato **\\\\** _servidor_ *_\\_* _recurso compartido_ *_\\_* _directorio_. Este valor puede ser una cadena nula.
+Especifica una ruta de acceso UNC a la carpeta de documentos compartidos del usuario. La ruta de acceso debe ser una ruta de acceso UNC de red con el formato **\\\\** _Server_ *_\\_* _Share_ *_\\_* _Directory_. Este valor puede ser una cadena null.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------------------------------------------------|
 | CN                | User-Shared-Folder                                                                |
-| Nombre para mostrar de LDAP | userSharedFolder                                                                  |
-| Tamaño              | \-                                                                                |
-| Actualizar privilegio  | Administrador de dominio o propietario de la cuenta.                                            |
+| Ldap-Display-Name | userSharedFolder                                                                  |
+| Size              | \-                                                                                |
+| Privilegio actualizar  | Administrador de dominio o propietario de la cuenta.                                            |
 | Frecuencia de actualización  | Cuando se crea el registro del usuario y cada vez que es necesario cambiar la carpeta compartida. |
 | Attribute-Id      | 1.2.840.113556.1.4.751                                                            |
-| System-ID-GUID    | 9a9a021f-4a5b-11d1-a9c3-0000f80367c1                                              |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                                       |
+| System-Id-Guid    | 9a9a021f-4a5b-11d1-a9c3-0000f80367c1                                              |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                       |
 
 
 
@@ -55,18 +55,18 @@ Especifica una ruta de acceso UNC a la carpeta de documentos compartidos del usu
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Especifica una ruta de acceso UNC a la carpeta de documentos compartidos del usu
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Especifica una ruta de acceso UNC a la carpeta de documentos compartidos del usu
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Especifica una ruta de acceso UNC a la carpeta de documentos compartidos del usu
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Especifica una ruta de acceso UNC a la carpeta de documentos compartidos del usu
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -160,13 +160,13 @@ Especifica una ruta de acceso UNC a la carpeta de documentos compartidos del usu
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

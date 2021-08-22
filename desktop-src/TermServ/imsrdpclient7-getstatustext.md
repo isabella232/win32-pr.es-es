@@ -9,7 +9,7 @@ keywords:
 - Interfaz IMsRdpClient7 Servicios de Escritorio remoto método , GetStatusText
 - Método GetStatusText Servicios de Escritorio remoto interfaz , IMsRdpClient8
 - Interfaz IMsRdpClient8 Servicios de Escritorio remoto método , GetStatusText
-- Método GetStatusText Servicios de Escritorio remoto , interfaz IMsRdpClient9
+- Método GetStatusText Servicios de Escritorio remoto interfaz , IMsRdpClient9
 - Interfaz IMsRdpClient9 Servicios de Escritorio remoto método , GetStatusText
 - Método GetStatusText Servicios de Escritorio remoto interfaz , IMsRdpClient10
 - Interfaz IMsRdpClient10 Servicios de Escritorio remoto método , GetStatusText
@@ -75,7 +75,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7<br/>                                                                     |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                        |
@@ -86,7 +86,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

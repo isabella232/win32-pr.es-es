@@ -1,5 +1,5 @@
 ---
-description: 'Método StopService de la Msvm_MetricService clase : detiene el servicio.'
+description: 'Método StopService de la clase Msvm_MetricService : detiene el servicio.'
 ms.assetid: f317ee91-3f87-4089-8156-5124dec0fe5c
 title: Método StopService de la Msvm_MetricService clase
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f716307f8c705c23df8e6efa303a2ab7863e0861
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4ea646d756fa2204f3e492480b1c0946b745b82bf5e27dab42c9053d61ab9c77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148328"
 ---
-# <a name="stopservice-method-of-the-msvm_metricservice-class"></a>Método StopService de la clase \_ MetricService de Msvm
+# <a name="stopservice-method-of-the-msvm_metricservice-class"></a>Método StopService de la clase MetricService de Msvm \_
 
 detiene el servicio.
 
@@ -53,7 +53,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -63,7 +63,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

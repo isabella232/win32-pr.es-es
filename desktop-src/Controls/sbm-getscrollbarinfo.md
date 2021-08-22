@@ -1,9 +1,9 @@
 ---
-title: Mensaje de SBM_GETSCROLLBARINFO (Winuser. h)
-description: Lo envía una aplicación para recuperar información sobre la barra de desplazamiento especificada.
+title: SBM_GETSCROLLBARINFO mensaje (Winuser.h)
+description: Enviado por una aplicación para recuperar información sobre la barra de desplazamiento especificada.
 ms.assetid: db6f704f-99ee-448c-ae7a-dd5a23399fb6
 keywords:
-- SBM_GETSCROLLBARINFO controles de mensajes de Windows
+- SBM_GETSCROLLBARINFO controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b8bdd78eb665bd069d854538bb2bdfae1a946765
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 11f779f237d0ad04fe3e3d8f3348c51c195470280c9b0c20d12c1e245d04a089
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119503985"
 ---
-# <a name="sbm_getscrollbarinfo-message"></a>\_Mensaje GETSCROLLBARINFO SBM
+# <a name="sbm_getscrollbarinfo-message"></a>Mensaje \_ SBM GETSCROLLBARINFO
 
-Lo envía una aplicación para recuperar información sobre la barra de desplazamiento especificada.
+Enviado por una aplicación para recuperar información sobre la barra de desplazamiento especificada.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -32,20 +32,20 @@ Lo envía una aplicación para recuperar información sobre la barra de desplaza
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**SCROLLBARINFO**](/windows/win32/api/winuser/ns-winuser-scrollbarinfo) que recibe la información.
+Puntero a una [**estructura SCROLLBARINFO**](/windows/win32/api/winuser/ns-winuser-scrollbarinfo) que recibe la información.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor distinto de cero si es correcto o cero de lo contrario.
+Devuelve un valor distinto de cero si es correcto o cero en caso contrario.
 
 Para obtener información de error extendida, llame a [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
@@ -55,9 +55,9 @@ Para obtener información de error extendida, llame a [**GetLastError**](/window
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

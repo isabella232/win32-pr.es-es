@@ -1,9 +1,9 @@
 ---
-title: unsigned (atributo)
+title: atributo unsigned
 description: La palabra clave unsigned indica que el bit más significativo de una variable de entero representa un bit de datos en lugar de un bit con signo.
 ms.assetid: bfcc6bec-895e-45e1-b162-b79651662aa6
 keywords:
-- atributo sin signo MIDL
+- midl de atributo sin signo
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 329d638f1b5be97e5b441aa4e84825fe59a4a3f0
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 383a8fc0379ca81abb9ad0a88edab8750661bdfa429e32e7e91d193aa0fd2938
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105665759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146178"
 ---
-# <a name="unsigned-attribute"></a>unsigned (atributo)
+# <a name="unsigned-attribute"></a>atributo unsigned
 
-La palabra clave **unsigned** indica que el bit más significativo de una variable de entero representa un bit de datos en lugar de un bit con signo.
+La **palabra clave unsigned** indica que el bit más significativo de una variable de entero representa un bit de datos en lugar de un bit con signo.
 
 ``` syntax
 [[ unsigned ]] type-qualifier [[ int ]]identifier-name;
@@ -34,60 +34,60 @@ La palabra clave **unsigned** indica que el bit más significativo de una variab
 *type-qualifier* 
 </dt> <dd>
 
-Puede ser cualquiera de [**Char**](char-idl.md), [**WCHAR \_ t**](wchar-t.md), [**Long**](long.md), [**int**](int.md), [**Short**](short.md)y [**Small**](small.md).
+Puede ser cualquiera de [**char,**](char-idl.md) [**wchar \_ t,**](wchar-t.md) [**long,**](long.md) [**int,**](int.md) [**short**](short.md)y [**small.**](small.md)
 
 </dd> <dt>
 
-*identificador: nombre* 
+*identifier-name* 
 </dt> <dd>
 
-Especifica un identificador de MIDL válido. Los identificadores de MIDL válidos constan de hasta 31 caracteres alfanuméricos o de subrayado, y deben comenzar por un carácter alfabético o de subrayado.
+Especifica un identificador MIDL válido. Los identificadores MIDL válidos constan de hasta 31 caracteres alfanuméricos o de subrayado y deben comenzar con un carácter alfabético o de subrayado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta palabra clave es opcional y se puede usar con cualquiera de los tipos de carácter y entero [**Char**](char-idl.md), [**WCHAR \_ t**](wchar-t.md), [**Long**](long.md), [**Short**](short.md)y [**Small**](small.md). Opcionalmente, puede incluir la palabra clave [**int**](int.md) después de los calificadores de tipo **Long**, **Short** y **Small**.
+Esta palabra clave es opcional y se puede usar con cualquiera de los tipos de caracteres y enteros [**char**](char-idl.md), [**wchar \_ t**](wchar-t.md), [**long**](long.md), [**short**](short.md)y [**small**](small.md). Opcionalmente, puede incluir la palabra clave [**int**](int.md) después de los calificadores de tipo **long**, **short** y **small**.
 
-Cuando se usa el modificador de compilador MIDL [**/Char**](-char.md), los tipos de carácter y entero que aparecen en el archivo IDL sin palabras clave explícitas de signo pueden aparecer con la palabra clave [**signed**](signed.md) o **unsigned** en el archivo de encabezado generado. Para evitar confusiones, especifique el signo del entero y los tipos de caracteres.
+Cuando se usa el modificador del compilador MIDL [**/char**](-char.md), los tipos de caracteres y enteros que aparecen en el archivo IDL sin palabras clave sign explícitas pueden aparecer con la palabra clave [**signed**](signed.md) o **unsigned** en el archivo de encabezado generado. Para evitar confusiones, especifique el signo de los tipos de entero y carácter.
 
 ## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Tipos base de MIDL](midl-base-types.md)
+[Tipos base midl](midl-base-types.md)
 </dt> <dt>
 
-[**char**](char-idl.md)
+[**Char**](char-idl.md)
 </dt> <dt>
 
-[**/Char**](-char.md)
+[**/char**](-char.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**Inter**](int.md)
+[**int**](int.md)
 </dt> <dt>
 
-[**tal**](long.md)
+[**long**](long.md)
 </dt> <dt>
 
 [**short**](short.md)
 </dt> <dt>
 
-[**conectado**](signed.md)
+[**Firmado**](signed.md)
 </dt> <dt>
 
-[**pequeño**](small.md)
+[**Pequeño**](small.md)
 </dt> <dt>
 
-[**WCHAR \_ t**](wchar-t.md)
+[**wchar \_ t**](wchar-t.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

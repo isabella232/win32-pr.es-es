@@ -2,7 +2,7 @@
 description: El método Reset de la clase \_ CIM MediaAccessDevice solicita un restablecimiento del dispositivo lógico.
 ms.assetid: 89796284-3569-4ff0-873d-0c5ed58eaedc
 ms.tgt_platform: multiple
-title: Método reset de la CIM_MediaAccessDevice clase
+title: Método Reset de la CIM_MediaAccessDevice clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,10 +23,10 @@ ms.locfileid: "119217745"
 ---
 # <a name="reset-method-of-the-cim_mediaaccessdevice-class"></a>Método Reset de la clase \_ Cim MediaAccessDevice
 
-El **método Reset** de la clase Cim \_ MediaAccessDevice solicita un restablecimiento del dispositivo lógico. Este método se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
+El **método Reset** de la clase CIM \_ MediaAccessDevice solicita un restablecimiento del dispositivo lógico. Este método se hereda de [**CIM \_ LogicalDevice**](cim-logicaldevice.md).
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,7 +47,7 @@ Este método no tiene parámetros.
 
 Devuelve 0 (cero) si la solicitud se ejecutó correctamente, 1 (uno) si no se admite la solicitud y algún otro valor si se produjo un error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Wmi no implementa actualmente este método. Para usar este método, debe implementarlo en su propio proveedor.
 

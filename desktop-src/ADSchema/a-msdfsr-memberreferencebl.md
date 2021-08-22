@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DFSR-MemberReferenceBL
-description: Contiene el vínculo hacia atrás para el atributo MS-DFSR-MemberReference.
+title: Atributo ms-DFSR-MemberReferenceBL
+description: Contiene el vínculo hacia atrás para el atributo ms-DFSR-MemberReference.
 ms.assetid: 7bbc00ff-66e7-4269-9e47-0d41e8c60d95
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DFSR-MemberReferenceBL
-- msDFSR-MemberReferenceBL atributo AD Schema
+- Esquema de AD del atributo ms-DFSR-MemberReferenceBL
+- Esquema de AD del atributo msDFSR-MemberReferenceBL
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e40e963c1477ed67cc347db1f101d30a49be370c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2595cbb565fffd7d4100be34982f473c5770df3da035a5b8e8239f9bd276bac9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906214"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119298765"
 ---
-# <a name="ms-dfsr-memberreferencebl-attribute"></a>atributo MS-DFSR-MemberReferenceBL
+# <a name="ms-dfsr-memberreferencebl-attribute"></a>Atributo ms-DFSR-MemberReferenceBL
 
-Contiene el vínculo hacia atrás para el atributo [**MS-DFSR-MemberReference**](a-msdfsr-memberreference.md) .
+Contiene el vínculo hacia atrás para el [**atributo ms-DFSR-MemberReference.**](a-msdfsr-memberreference.md)
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-DFSR-MemberReferenceBL               |
-| Nombre para mostrar de LDAP | msDFSR-MemberReferenceBL                |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-DFSR-MemberReferenceBL               |
+| Ldap-Display-Name | msDFSR-MemberReferenceBL                |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.102             |
-| System-ID-GUID    | adde62c6-1880-41ed-bd3c-30b7d25e14f0    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | adde62c6-1880-41ed-bd3c-30b7d25e14f0    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -53,13 +53,13 @@ Contiene el vínculo hacia atrás para el atributo [**MS-DFSR-MemberReference**]
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2053                            |
+| Id. de vínculo                | 2053                            |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -74,13 +74,13 @@ Contiene el vínculo hacia atrás para el atributo [**MS-DFSR-MemberReference**]
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2053                            |
+| Id. de vínculo                | 2053                            |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -95,13 +95,13 @@ Contiene el vínculo hacia atrás para el atributo [**MS-DFSR-MemberReference**]
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2053                            |
+| Id. de vínculo                | 2053                            |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -114,15 +114,15 @@ Contiene el vínculo hacia atrás para el atributo [**MS-DFSR-MemberReference**]
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2053                            |
+| Id. de vínculo                | 2053                            |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -131,9 +131,9 @@ Contiene el vínculo hacia atrás para el atributo [**MS-DFSR-MemberReference**]
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El atributo **MS-DFSR-MemberReferenceBL** forma parte de la compatibilidad con el servicio de replicación sistema de archivos distribuido (DFS).
+El **atributo ms-DFSR-MemberReferenceBL** forma parte de la compatibilidad del servicio de replicación Sistema de archivos distribuido (DFS).
 
  
 

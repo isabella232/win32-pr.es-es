@@ -50,10 +50,10 @@ ms.locfileid: "119020993"
 ---
 # <a name="cim_operatingsystem-class"></a>Cim \_ OperatingSystem (clase)
 
-La **clase \_ CIM OperatingSystem** representa un sistema operativo del equipo, que se forma de software y firmware que hacen que el hardware de un sistema informático sea utilizable.
+La **clase CIM \_ OperatingSystem** representa un sistema operativo del equipo, que se forma de software y firmware que hacen que el hardware de un sistema informático sea utilizable.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -111,7 +111,7 @@ La **clase \_ Cim OperatingSystem** tiene estos métodos.
 | Método                                                           | Descripción                                                                                                                            |
 |:-----------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | [**Reboot**](reboot-method-in-class-cim-operatingsystem.md)     | Método de clase que apaga el sistema del equipo y, a continuación, lo reinicia. No implementado por WMI.<br/>                                 |
-| [**Apagado**](shutdown-method-in-class-cim-operatingsystem.md) | Método de clase que descarga programas y archivos DLL hasta el punto en el que es seguro desactivar el equipo. No implementado por WMI.<br/> |
+| [**Apagado**](shutdown-method-in-class-cim-operatingsystem.md) | Método de clase que descarga programas y archivos DLL hasta el punto en que es seguro desactivar el equipo. No implementado por WMI.<br/> |
 
 
 
@@ -317,7 +317,7 @@ Tipo de datos: **datetime**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Hora a la que se ha arrancado por última vez el sistema operativo.
+Hora a la que se arrancaron por última vez el sistema operativo.
 
 </dd> <dt>
 
@@ -514,7 +514,7 @@ Att UNIX
 
 </dt> <dd>
 
-Apertura de MÁQUINAS VIRTUALES
+Apertura de máquinas virtuales
 
 </dd> <dt>
 
@@ -1117,7 +1117,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("kilobytes")
 </dt> </dl>
 
-Espacio de intercambio total, en kilobytes. Este valor puede ser NULL (sin especificar) si el espacio de intercambio no se distingue de los archivos de página. Sin embargo, algunos sistemas operativos distinguen estos conceptos. Por ejemplo, los procesos completos se pueden "intercambiar" en UNIX cuando la lista de páginas libres cae y permanece por debajo de una cantidad especificada.
+Espacio de intercambio total, en kilobytes. Este valor puede ser NULL (sin especificar) si el espacio de intercambio no se distingue de los archivos de página. Sin embargo, algunos sistemas operativos distinguen estos conceptos. Por ejemplo, se pueden "intercambiar" procesos completos en UNIX cuando la lista de páginas libres cae y permanece por debajo de una cantidad especificada.
 
 Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
@@ -1192,7 +1192,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -1202,7 +1202,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

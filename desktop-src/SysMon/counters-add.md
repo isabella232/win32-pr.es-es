@@ -3,8 +3,8 @@ title: Método Counters.Add
 description: Agrega una instancia counterItem a la colección.
 ms.assetid: 9daecfe6-c2a9-48af-8b59-4f81f0325535
 keywords:
-- Adición del método SysMon
-- Add method SysMon , Counters class
+- Agregar método SysMon
+- Add method SysMon , Counters (Clase)
 - Clase Counters SysMon , Add (método)
 topic_type:
 - apiref
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a36d2b9bdc2edc9565b1eac5ebae335e5fbad80752f572c48c0f1b05c9668de1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a8d8169980de00338c7fdd0b804013f986a5a7ca
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118883403"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122466012"
 ---
 # <a name="countersadd-method"></a>Método Counters.Add
 
@@ -55,28 +55,11 @@ Para obtener más información sobre cómo especificar una ruta de acceso de con
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Tipo de excepción</th>
-<th>Condición</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>System.Runtime.InteropServices.COMException</strong></td>
-<td>Puede recibir esta excepción por uno de los siguientes motivos:
-<ul>
-<li>No se encontró el objeto de rendimiento especificado en el equipo. El valor Err.Number es 0xC0000BB8.</li>
-<li>No se encontró el contador especificado. El valor Err.Number es 0xC0000BB9.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+
+| Tipo de excepción | Condición | 
+|----------------|-----------|
+| <strong>System.Runtime.InteropServices.COMException</strong> | Puede recibir esta excepción por uno de los siguientes motivos:<ul><li>No se encontró el objeto de rendimiento especificado en el equipo. El valor Err.Number es 0xC0000BB8.</li><li>No se encontró el contador especificado. El valor Err.Number es 0xC0000BB9.</li></ul> | 
+
 
 
 
@@ -86,11 +69,11 @@ Para obtener más información sobre cómo especificar una ruta de acceso de con
 
 Si especifica un contador comodín en el parámetro *pathname,* el método **Add** crea un objeto [**CounterItem**](counteritem.md) para cada ruta de acceso expandida. A **continuación,** el método Add devuelve un puntero al primer **elemento CounterItem agregado.**
 
-Si el carácter comodín daría lugar a un contador duplicado, el error no se notifica y no se crea ningún duplicado. Si se produce una condición de error antes de crear todos los contadores, se notifica el error y no se crean los contadores restantes.
+Si el carácter comodín daría como resultado un contador duplicado, el error no se notifica y no se crea ningún duplicado. Si se produce una condición de error antes de crear todos los contadores, se notifica el error y no se crean los contadores restantes.
 
-No hay ningún límite en el número de contadores que puede agregar; sin embargo, SYSMON representará solo los primeros 1024 contadores de la colección. No hay ningún límite en el número de contadores que SYSMON mostrará en un informe.
+No hay ningún límite en el número de contadores que puede agregar. sin embargo, SYSMON solo representará los primeros 1024 contadores de la colección. No hay ningún límite en el número de contadores que SYSMON mostrará en un informe.
 
-Para recibir una notificación cuando se agrega un contador, implemente [el evento OnCounterAdded.](systemmonitor-oncounteradded.md)
+Para recibir una notificación cuando se agrega un contador, implemente el [evento OnCounterAdded.](systemmonitor-oncounteradded.md)
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,30 +1,30 @@
 ---
-description: La \_ clase HeatPipe de CIM expone los métodos siguientes.
+description: La clase CIM \_ HeatPipe expone los métodos siguientes.
 ms.assetid: D3A3677D-C037-41E6-AE1F-457D5C645B42
 ms.tgt_platform: multiple
-title: Métodos CIM_HeatPipe
+title: CIM_HeatPipe métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc5d53e233cfb1b04e0e6c09e3d9fc36b0991ca8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 7c0e5fe2513a4c2c11abe4bedeafa16bec183a4a30ea254d0fb261df7ef0a5b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119700425"
 ---
-# <a name="cim_heatpipe-methods"></a>\_Métodos HeatPipe de CIM
+# <a name="cim_heatpipe-methods"></a>Métodos \_ HeatPipe de CIM
 
-La [**clase \_ HeatPipe de CIM**](cim-heatpipe.md) expone los métodos siguientes.
+La [**clase CIM \_ HeatPipe**](cim-heatpipe.md) expone los métodos siguientes.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**RESET (método)**](reset-method-in-class-cim-heatpipe.md)
--   [**SetPowerState (método)**](setpowerstate-method-in-class-cim-heatpipe.md)
+-   [**Método de restablecimiento**](reset-method-in-class-cim-heatpipe.md)
+-   [**Método SetPowerState**](setpowerstate-method-in-class-cim-heatpipe.md)
 
  
 

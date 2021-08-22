@@ -1,5 +1,5 @@
 ---
-description: Representa las funciones del software de bajo nivel que se usa para iniciar y configurar un sistema informático.
+description: Representa las funcionalidades del software de bajo nivel que se usa para iniciar y configurar un sistema informático.
 ms.assetid: 54d03539-d908-4571-b8fd-934b972e8d84
 ms.tgt_platform: multiple
 title: CIM_BIOSFeature clase
@@ -37,7 +37,7 @@ ms.locfileid: "119218595"
 La **clase \_ CIM BIOSFeature** representa las funciones del software de bajo nivel que se usa para iniciar y configurar un sistema informático.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -65,13 +65,13 @@ class CIM_BIOSFeature : CIM_SoftwareFeature
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ BIOSFeature** de CIM tiene estos tipos de miembros:
+La **clase \_ CIM BIOSFeature** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ BIOSFeature** de CIM tiene estas propiedades.
+La **clase \_ CIM BIOSFeature** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -253,12 +253,12 @@ BIOS actualizable.
 
 <span id="BIOS_Shadowing_Allowed"></span><span id="bios_shadowing_allowed"></span><span id="BIOS_SHADOWING_ALLOWED"></span>
 
-<span id="BIOS_Shadowing_Allowed"></span><span id="bios_shadowing_allowed"></span><span id="BIOS_SHADOWING_ALLOWED"></span>**Se permite el sombreado de BIOS** (12)
+<span id="BIOS_Shadowing_Allowed"></span><span id="bios_shadowing_allowed"></span><span id="BIOS_SHADOWING_ALLOWED"></span>**Sombreado de BIOS permitido** (12)
 
 
 </dt> <dd>
 
-Se permite el sombreado de BIOS.
+Se permite el sombreado del BIOS.
 
 </dd> <dt>
 
@@ -269,7 +269,7 @@ Se permite el sombreado de BIOS.
 
 </dt> <dd>
 
-Compatibilidad con VESA de VL.
+Compatibilidad con VL VESA.
 
 </dd> <dt>
 
@@ -308,12 +308,12 @@ Compatibilidad con ACPI.
 
 <span id="I2O_Boot_Support"></span><span id="i2o_boot_support"></span><span id="I2O_BOOT_SUPPORT"></span>
 
-<span id="I2O_Boot_Support"></span><span id="i2o_boot_support"></span><span id="I2O_BOOT_SUPPORT"></span>**Compatibilidad con el arranque de I2O** (17)
+<span id="I2O_Boot_Support"></span><span id="i2o_boot_support"></span><span id="I2O_BOOT_SUPPORT"></span>**Compatibilidad con el arranque I2O** (17)
 
 
 </dt> <dd>
 
-Compatibilidad con el arranque de I2O.
+Compatibilidad con el arranque I2O.
 
 </dd> <dt>
 
@@ -434,12 +434,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ Product**](cim-product.md).**IdentifyingNumber**"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.4")
+Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Producto CIM \_**](cim-product.md).**IdentifyingNumber**"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.4")
 </dt> </dl>
 
 Identificación del producto, como un número de serie en software o un número de dado en un chip de hardware.
 
-Esta propiedad se hereda de [**CIM \_ SoftwareFeature**](cim-softwarefeature.md).
+Esta propiedad se hereda de [**CIM \_ SoftwareFeature.**](cim-softwarefeature.md)
 
 </dd> <dt>
 
@@ -635,13 +635,13 @@ Tipo de acceso: solo lectura
 Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ Product**](cim-product.md).**Version**"), [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.3")
 </dt> </dl>
 
-Información de la versión del producto, que corresponde a la **propiedad Version** del objeto de producto de la solución DMTF Exchange Estándar.
+Información de la versión del producto, que corresponde a la **propiedad Version** del objeto de producto de la solución DMTF Exchange Standard.
 
 Esta propiedad se hereda de [**CIM \_ SoftwareFeature**](cim-softwarefeature.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 La **clase \_ CIM BIOSFeature** se deriva de [**CIM \_ SoftwareFeature**](cim-softwarefeature.md).
 

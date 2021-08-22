@@ -1,9 +1,9 @@
 ---
-title: función glShadeModel (GL. h)
-description: La función glShadeModel selecciona el sombreado plano o suave.
+title: Función glShadeModel (Gl.h)
+description: La función glShadeModel selecciona sombreado plano o suave.
 ms.assetid: 52985ad7-1d6c-48fc-8f1e-4eb2c0324c8e
 keywords:
-- glShadeModel (función) OpenGL
+- Función glShadeModel OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 142ac518c91c6378f1606235e25502be8c06dd6a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 505ff0e2d74f9eb4f252e4e663ceec00fd86469b3d69374623b2763915a08b0d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119491615"
 ---
-# <a name="glshademodel-function"></a>glShadeModel función)
+# <a name="glshademodel-function"></a>Función glShadeModel
 
-La función **glShadeModel** selecciona el sombreado plano o suave.
+La **función glShadeModel** selecciona sombreado plano o suave.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ void WINAPI glShadeModel(
 *mode* 
 </dt> <dd>
 
-Un valor simbólico que representa una técnica de sombreado. Los valores aceptados son contabilidad \_ plana y contabilidad \_ suave. El valor predeterminado es GL \_ Smooth.
+Valor simbólico que representa una técnica de sombreado. Los valores aceptados son GL \_ FLAT y GL \_ SMOOTH. El valor predeterminado es GL \_ SMOOTH.
 
 </dd> </dl>
 
@@ -59,37 +59,37 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>      | el *modo* era un valor distinto de GL \_ Glat o GL \_ Smooth.<br/>                                                                      |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**ENUMERACIÓN \_ NO \_ VÁLIDA DE GL**</dt> </dl>      | *el* modo era un valor distinto de \_ GL GL O GL \_ SMOOTH.<br/>                                                                      |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los primitivos de OpenGL pueden tener un sombreado plano o suave. El sombreado suave, el valor predeterminado, hace que los colores calculados de los vértices se interpolen a medida que se rasteriza la primitiva, normalmente asignando distintos colores a cada fragmento de píxel resultante. El sombreado plano selecciona el color calculado de un solo vértice y lo asigna a todos los fragmentos de píxeles generados mediante la rasterización de un solo primitivo. En cualquier caso, el color calculado de un vértice es el resultado de la iluminación, si está habilitada la iluminación o es el color actual en el momento en que se especificó el vértice, si la iluminación está deshabilitada.
+Las primitivas openGL pueden tener sombreado plano o suave. El sombreado suave, el valor predeterminado, hace que los colores calculados de los vértices se interpolan a medida que se rasteriza la primitiva, normalmente asignando colores diferentes a cada fragmento de píxel resultante. El sombreado plano selecciona el color calculado de un solo vértice y lo asigna a todos los fragmentos de píxeles generados mediante la rasterización de una sola primitiva. En cualquier caso, el color calculado de un vértice es el resultado de la iluminación, si la iluminación está habilitada, o es el color actual en el momento en que se especificó el vértice, si la iluminación está deshabilitada.
 
-No se distinguen los sombreados planos y suaves en los puntos. Contando los vértices y los primitivos de uno, a partir del momento en que se emite [**glBegin**](glbegin.md) , cada segmento de línea con sombra plana *i* recibe el color calculado del vértice *i* + 1, su segundo vértice. Contando de forma similar a una, cada polígono con sombra plana recibe el color calculado del vértice mostrado en la tabla siguiente. Este es el último vértice para especificar el polígono en todos los casos excepto en polígonos únicos, donde el primer vértice especifica el color de sombra plana.
+El sombreado plano y suave no se puededistinguir para los puntos. Contar vértices y primitivos a partir de uno, a partir de la emisión de [**glBegin,**](glbegin.md) cada segmento de línea sombreada *plana i* tiene el color calculado del vértice *i* + 1, su segundo vértice. Contando de forma similar a partir de uno, a cada polígono sombreado plano se le da el color calculado del vértice que se muestra en la tabla siguiente. Este es el último vértice que especifica el polígono en todos los casos excepto en los polígonos individuales, donde el primer vértice especifica el color sombreado plano.
 
 
 
-| Tipo primitivo de Polygon i | Vértice   |
+| Tipo primitivo de polygon i | Vértice   |
 |-----------------------------|----------|
-| Un solo Polígono (*I*= 1)      | 1        |
+| Polígono único (*I*=1)      | 1        |
 | Franja de triángulo              | *i* + 2  |
 | Ventilador de triángulo                | *i* + 2  |
 | Triángulo independiente        | 3 *I*     |
-| Banda cuádruple                  | 2 *i* + 2 |
-| Cuádruple independiente            | 4 *I*     |
+| Banda cuád cuatro                  | 2 *i* + 2 |
+| Quad independiente            | 4 *I*     |
 
 
 
  
 
-Los sombreados planos y suaves se especifican mediante **glShadeModel** con el *modo* establecido en GL \_ plano y GL \_ Smooth, respectivamente.
+**GlShadeModel** especifica el sombreado plano y  suave con el modo establecido en GL FLAT y \_ GL \_ SMOOTH, respectivamente.
 
-La siguiente función recupera información relacionada con **glShadeModel**:
+La función siguiente recupera información relacionada con **glShadeModel**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento \_ modelo de SOMBREAdo de contabilidad \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ SHADE \_ MODEL
 
 ## <a name="requirements"></a>Requisitos
 
@@ -99,8 +99,8 @@ La siguiente función recupera información relacionada con **glShadeModel**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

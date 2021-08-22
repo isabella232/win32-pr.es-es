@@ -1,6 +1,6 @@
 ---
-title: Función SisFreeAllocatedMemory (Sisbkup. h)
-description: Libera memoria asignada por las funciones de la API de SIS.
+title: Función SisFreeAllocatedMemory (Sisbkup.h)
+description: Libera la memoria asignada por las funciones de LA API de SIS.
 ms.assetid: 8fab79c8-593c-46df-a885-09a59620a977
 keywords:
 - Copia de seguridad de la función SisFreeAllocatedMemory
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 724970817b89f6a9f2490b0776775f6a3a4e69ca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a4510e464c2201952823d144721614caa7b5f1397c68f4f129dac73a4015b86a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905110"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702185"
 ---
-# <a name="sisfreeallocatedmemory-function"></a>SisFreeAllocatedMemory función)
+# <a name="sisfreeallocatedmemory-function"></a>Función SisFreeAllocatedMemory
 
-La función **SisFreeAllocatedMemory** libera memoria asignada por las funciones de la API de SIS.
+La **función SisFreeAllocatedMemory** libera la memoria asignada por las funciones de LA API de SIS.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ void SisFreeAllocatedMemory(
 
 <dl> <dt>
 
-*allocatedSpace* \[ de\]
+*allocatedSpace* \[ En\]
 </dt> <dd>
 
 Puntero a la memoria asignada por la API de SIS.
@@ -51,22 +51,22 @@ Puntero a la memoria asignada por la API de SIS.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una vez completada la llamada a esta función, es posible que el llamador ya no tenga acceso a la memoria liberada.
+Una vez completada la llamada a esta función, es posible que el autor de la llamada ya no tenga acceso a la memoria liberada.
 
-Esta llamada debe usarse para desasignar la memoria asignada para las cadenas de parámetros de *commonStoreRootPathname* devueltas desde [**SisCreateBackupStructure**](siscreatebackupstructure.md) y [**SisCreateRestoreStructure**](siscreaterestorestructure.md), y la matriz de cadenas que contienen los nombres de archivo de almacenamiento común devueltos por **SisCreateBackupStructure**, [**SisCSFilesToBackupForLink**](siscsfilestobackupforlink.md), **SisCreateRestoreStructure** y [**SisRestoredLink**](sisrestoredlink.md). En el último caso, la propia matriz también se debe liberar llamando a **SisFreeAllocatedMemory**.
+Esta llamada debe usarse para desasignar la memoria asignada para las cadenas de parámetro *commonStoreRootPathname* devueltas desde [**SisCreateBackupStructure**](siscreatebackupstructure.md) y [**SisCreateRestoreStructure**](siscreaterestorestructure.md), y la matriz de cadenas que contienen nombres de archivo de almacén común devueltos desde **SisCreateBackupStructure**, [**SisCSFilesToBackupForLink,**](siscsfilestobackupforlink.md) **SisCreateRestoreStructure** y [**SisRestoredLink.**](sisrestoredlink.md) En el último caso, la propia matriz también debe liberarse llamando a **SisFreeAllocatedMemory**.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>Sisbkup. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Sisbkup. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
+| Header<br/>                   | <dl> <dt>Sisbkup.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Sisbkup.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Sisbkup.dll</dt> </dl> |
 
 

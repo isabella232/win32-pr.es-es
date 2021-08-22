@@ -1,19 +1,19 @@
 ---
-description: Este valor de cadena opcional permite invalidar el criterio de ordenación estándar de System. Music. artista. esto es muy importante para ordenar correctamente los archivos de música en japonés que no se pueden ordenar correctamente de forma fonética (el orden esperado por el usuario) sin este campo. También se puede usar para personalizar la ordenación en escenarios que no son de Asia oriental, como permitir que el usuario elimine artículos con fines de ordenación.
+description: Este valor de cadena opcional permite reemplazar el criterio de ordenación estándar de System. Música. Artist.This is very important for proper sorting of music files in Japanese which cannot becorrectly sorted phonetically (the user-expected ordering) without this field. También se puede usar para personalizar la ordenación en escenarios que no son de Asia Oriental, como permitir al usuario quitar artículos con fines de ordenación.
 ms.assetid: acdeff02-6e0d-4308-a81e-de45487d6517
-title: System. Music. ArtistSortOverride
+title: Sistema. Música. ArtistSortOverride
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72e719cdc12073474779f984cce8d50c84bd4b9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd5d0ee3d9e02746105bb7a733f2532a03d6173c26f88fa4223c7b6509627377
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010315"
 ---
-# <a name="systemmusicartistsortoverride"></a>System. Music. ArtistSortOverride
+# <a name="systemmusicartistsortoverride"></a>Sistema. Música. ArtistSortOverride
 
-Este valor de cadena opcional permite invalidar el criterio de ordenación estándar de System. Music. artista. esto es muy importante para ordenar correctamente los archivos de música en japonés que no se pueden ordenar correctamente de forma fonética (el orden esperado por el usuario) sin este campo. También se puede usar para personalizar la ordenación en escenarios que no son de Asia oriental, como permitir que el usuario elimine artículos con fines de ordenación.
+Este valor de cadena opcional permite reemplazar el criterio de ordenación estándar de System. Música. Artist.This is very important for proper sorting of music files in Japanese which cannot becorrectly sorted phonetically (the user-expected ordering) without this field. También se puede usar para personalizar la ordenación en escenarios que no son de Asia Oriental, como permitir al usuario quitar artículos con fines de ordenación.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -30,9 +30,9 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Optimize (atributo)
-description: El atributo \ Optimize \ ACF se usa para ajustar el nivel de degradado para calcular las referencias de los datos.
+title: atributo optimize
+description: El atributo \ optimize\ ACF se usa para ajustar el nivel de gradación para serializar los datos.
 ms.assetid: d636d940-0550-417f-a21a-065bdeaeb5d9
 keywords:
-- optimizar el atributo MIDL
+- optimización del atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,21 +12,21 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6025c40465ecf2e8fe7a33dcda50ece07d34b9d
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: a7703a3539ff16c7f2dc78d51c62cfe05612dcb6e935bb5c5701f9a7b59a9f1d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105651326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869575"
 ---
-# <a name="optimize-attribute"></a>Optimize (atributo)
+# <a name="optimize-attribute"></a>atributo optimize
 
-El atributo **\[ apoptimize \]** ACF se usa para ajustar el nivel de degradado para calcular las referencias de los datos.
+El **\[ atributo optimize \]** ACF se usa para ajustar el nivel de gradación para serializar los datos.
 
 > [!Note]  
-> Esta palabra clave es superceeded y no debe usarse. En su lugar, las compilaciones de MIDL actuales deben usar [**/Oicf**](-oi.md)[**/Robust**](-robust.md) .
+> Esta palabra clave se superceed y no se debe usar. Las compilaciones MIDL actuales deben [**usar /Oicf**](-oi.md)[**/robust en su**](-robust.md) lugar.
 
- 
+ 
 
 ``` syntax
 optimize ("optimization-options")
@@ -36,20 +36,20 @@ optimize ("optimization-options")
 
 <dl> <dt>
 
-*optimización: opciones* 
+*optimization-options* 
 </dt> <dd>
 
-Especifica el método de cálculo de referencias de datos. Use "s" para la serialización en modo mixto o "i" para el cálculo de referencias interpretado.
+Especifica el método de serialización de datos. Use "s" para la serialización en modo mixto o "i" para la serialización interpretada.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta versión de RPC proporciona dos métodos para calcular las referencias de datos: modo mixto ("s") e interpretado ("i"). Estos métodos corresponden a los modificadores de la línea de comandos [**/os**](-os.md) y [**/OI**](-oi.md) . El método interpretado calcula las referencias de los datos completamente sin conexión. Aunque esto puede reducir considerablemente el tamaño del código auxiliar, el rendimiento puede verse afectado.
+Esta versión de RPC proporciona dos métodos para serializar datos: modo mixto ("s") e interpretado ("i"). Estos métodos corresponden a los modificadores de línea de comandos [**/Os**](-os.md) y [**/Oi.**](-oi.md) El método interpretado serializa los datos completamente sin conexión. Aunque esto puede reducir considerablemente el tamaño del código auxiliar, el rendimiento puede verse afectado.
 
-Si el rendimiento es un problema, el método de modo mixto puede ser el mejor enfoque. El modo mixto permite que el compilador de MIDL realice la determinación entre los datos que se van a serializar insertados y los que se calcularán mediante una llamada a una biblioteca de vínculos dinámicos sin conexión. Si muchos procedimientos utilizan los mismos tipos de datos, se puede llamar a un único procedimiento repetidamente para calcular las referencias de los datos. De esta manera, los datos que son más adecuados para el cálculo de referencias en línea se procesan en línea mientras que otros datos se pueden serializar de forma más eficaz sin conexión.
+Si el rendimiento es un problema, el método de modo mixto puede ser el mejor enfoque. El modo mixto permite que el compilador MIDL realice la determinación entre qué datos se serializarán en línea y cuáles se serializarán mediante una llamada a una biblioteca de vínculos dinámicos sin conexión. Si muchos procedimientos usan los mismos tipos de datos, se puede llamar repetidamente a un único procedimiento para serializar los datos. De esta manera, los datos más adecuados para la serialización insertada se procesan en línea, mientras que otros datos se pueden serializar sin conexión de forma más eficaz.
 
-Tenga en cuenta que el atributo **\[ Optimize \]** se puede usar como atributo de interfaz o como atributo de operación. Si se usa como atributo de interfaz, establece el valor predeterminado para toda la interfaz, invalidando los modificadores de la línea de comandos. Sin embargo, si se usa como atributo de operación, solo afecta a esa operación, invalidando los modificadores de la línea de comandos y el valor predeterminado de la interfaz.
+Tenga en cuenta que **\[ el atributo optimize \]** se puede usar como atributo de interfaz o como atributo de operación. Si se usa como atributo de interfaz, establece el valor predeterminado para toda la interfaz, reemplazando los modificadores de línea de comandos. Sin embargo, si se usa como atributo de operación, solo afecta a esa operación, invalidando los modificadores de línea de comandos y el valor predeterminado de la interfaz.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -65,18 +65,18 @@ optimize ("i") HRESULT SmallerProcedure(...);
 [Archivo de configuración de la aplicación (ACF)](application-configuration-file-acf-.md)
 </dt> <dt>
 
-[**/OI**](-oi.md)
+[**/Oi**](-oi.md)
 </dt> <dt>
 
 [**/Os**](-os.md)
 </dt> <dt>
 
-[**/Robust**](-robust.md)
+[**/robust**](-robust.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

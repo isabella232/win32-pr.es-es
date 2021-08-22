@@ -11,18 +11,18 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: a4d192a3da7bbcd262eef95bc5ebbd9394ac32eed206636e219b91382ccce305
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9c03d58459f171979d12b0a06e4fd10bb8950a5
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119979035"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122465462"
 ---
 # <a name="xmfloat3pk-constructors"></a>Constructores XMFLOAT3PK
 
 Constructores expuestos por `XMFLOAT3PK` .
 
-Construye instancias de la estructura [**XMFLOAT3PK.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk)
+Construye instancias de la [**estructura XMFLOAT3PK.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk)
 
 > [!Note]  
 > Los constructores enumerados aquí solo están disponibles en C++.
@@ -33,60 +33,18 @@ Construye instancias de la estructura [**XMFLOAT3PK.**](/windows/win32/api/direc
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Constructor</th>
-<th style="text-align: left;">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-xmfloat3pk(constfloat)"><strong>XMFLOAT3PK ()</strong></a></td>
-<td style="text-align: left;">Constructor predeterminado para <code>XMFLOAT3PK</code> .<br/> Constructor predeterminado para <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK.</strong></a><br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-xmfloat3pk(uint32_t)"><strong>XMFLOAT3PK (uint32_t)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMFLOAT3PK</code> partir de una variable que contiene datos de componente en un formato <code>uint32_t</code> empaquetado.<br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK</strong></a> a partir de una variable que contiene datos de <code>uint32_t</code> componentes en un formato empaquetado.<br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-xmfloat3pk(constfloat)"><strong>XMFLOAT3PK (const float*)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a partir <code>XMFLOAT3PK</code> de un argumento de matriz de tres <code>float</code> elementos.<br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK</strong></a> a partir de un argumento de matriz <code>float</code> de tres elementos.<br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-xmfloat3pk(float_float_float)"><strong>XMFLOAT3PK (float,float,float)</strong></a></td>
-<td style="text-align: left;">Inicializa una nueva instancia de a <code>XMFLOAT3PK</code> partir de <code>float</code> tres argumentos.<br/> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK</strong></a> a partir de <code>float</code> tres argumentos.<br/>
-<blockquote>
-[!Note]<br />
-Este constructor solo está disponible en C++.
-</blockquote>
-<br/></td>
-</tr>
-</tbody>
-</table>
+
+| Constructor | Descripción | 
+|-------------|-------------|
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-xmfloat3pk(constfloat)"><strong>XMFLOAT3PK ()</strong></a> | Constructor predeterminado para <code>XMFLOAT3PK</code> .<br /> Constructor predeterminado para <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK.</strong></a><br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-xmfloat3pk(uint32_t)"><strong>XMFLOAT3PK (uint32_t)</strong></a> | Inicializa una nueva instancia de a <code>XMFLOAT3PK</code> partir de una variable que contiene datos de componentes en un formato <code>uint32_t</code> empaquetado.<br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK</strong></a> a partir de una variable que contiene datos de <code>uint32_t</code> componentes en un formato empaquetado.<br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-xmfloat3pk(constfloat)"><strong>XMFLOAT3PK (const float*)</strong></a> | Inicializa una nueva instancia de a partir <code>XMFLOAT3PK</code> de un argumento de matriz de tres <code>float</code> elementos.<br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK</strong></a> a partir de un argumento de matriz <code>float</code> de tres elementos.<br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
+| <a href="/windows/desktop/api/directxpackedvector/nf-directxpackedvector-xmfloat3pk-xmfloat3pk(float_float_float)"><strong>XMFLOAT3PK (float,float,float)</strong></a> | Inicializa una nueva instancia de a <code>XMFLOAT3PK</code> partir de tres <code>float</code> argumentos.<br /> Este constructor inicializa una nueva instancia de <a href="/windows/desktop/api/directxpackedvector/ns-directxpackedvector-xmfloat3pk"><strong>XMFLOAT3PK</strong></a> a partir de tres <code>float</code> argumentos.<br /><blockquote>[!Note]<br />Este constructor solo está disponible en C++.</blockquote><br /> | 
 
 
 
-## <a name="see-also"></a>Vea también
+
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

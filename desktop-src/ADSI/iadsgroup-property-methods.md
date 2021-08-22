@@ -4,7 +4,7 @@ description: Métodos de propiedad de la interfaz IADsGroup.
 ms.assetid: a8aa88d4-4695-47bc-bf7f-a17236a5671c
 ms.tgt_platform: multiple
 keywords:
-- AdsI de métodos de propiedad IADsGroup
+- ADSI de métodos de propiedad IADsGroup
 topic_type:
 - apiref
 api_name:
@@ -27,7 +27,7 @@ ms.locfileid: "119082409"
 ---
 # <a name="iadsgroup-property-methods"></a>Métodos de propiedad IADsGroup
 
-Los métodos de propiedad de [**la interfaz IADsGroup**](/windows/desktop/api/Iads/nn-iads-iadsgroup) leen y escriben las propiedades siguientes. Para obtener más información, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
+Los métodos de propiedad [**de la interfaz IADsGroup**](/windows/desktop/api/Iads/nn-iads-iadsgroup) leen y escriben las siguientes propiedades. Para obtener más información, vea [Métodos de propiedad de interfaz](interface-property-methods.md).
 
 ## <a name="properties"></a>Propiedades
 
@@ -132,7 +132,7 @@ Cleanup:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
