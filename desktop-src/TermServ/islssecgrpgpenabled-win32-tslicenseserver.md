@@ -1,12 +1,12 @@
 ---
-title: Método IsLSSecGrpGPEnabled de la clase Win32_TSLicenseServer
-description: Recupera si el grupo de seguridad del servidor de licencias \ 0034; \ 0034; la configuración de directiva de grupo está habilitada en el servidor de licencias de Escritorio remoto.
+title: Método IsLSSecGrpGPEnabled de la Win32_TSLicenseServer clase
+description: Recupera si \ 0034;grupo de seguridad del servidor de licencias \ 0034; la configuración de directiva de grupo está habilitada en Escritorio remoto servidor de licencias.
 ms.assetid: 715b619b-f082-4fed-ac4c-70d5e286e37c
 ms.tgt_platform: multiple
 keywords:
 - Método IsLSSecGrpGPEnabled Servicios de Escritorio remoto
-- Método IsLSSecGrpGPEnabled Servicios de Escritorio remoto, clase Win32_TSLicenseServer
-- Win32_TSLicenseServer de clase Servicios de Escritorio remoto, método IsLSSecGrpGPEnabled
+- Método IsLSSecGrpGPEnabled Servicios de Escritorio remoto , Win32_TSLicenseServer clase
+- Win32_TSLicenseServer clase Servicios de Escritorio remoto método , IsLSSecGrpGPEnabled
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27f3d7ec9de3d98849f9680f1b2a87bf5b22922a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 688843106583ea0ca32a3cc8ac7142d51aac737ad6722ab4ef95621b63b66eb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138368"
 ---
-# <a name="islssecgrpgpenabled-method-of-the-win32_tslicenseserver-class"></a>Método IsLSSecGrpGPEnabled de la \_ clase TSLicenseServer de Win32
+# <a name="islssecgrpgpenabled-method-of-the-win32_tslicenseserver-class"></a>Método IsLSSecGrpGPEnabled de la clase TSLicenseServer de Win32 \_
 
-Recupera si el valor de directiva de grupo "grupo de seguridad del servidor de licencias" está habilitado en el servidor de licencias de Escritorio remoto.
+Recupera si la configuración de directiva de grupo "grupo de seguridad del servidor de licencias" está habilitada en Escritorio remoto servidor de licencias.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,28 +43,28 @@ uint32 IsLSSecGrpGPEnabled(
 
 <dl> <dt>
 
-*Habilitado* \[ enuncia\]
+*Habilitado* \[ out\]
 </dt> <dd>
 
-Valor booleano que indica si está habilitada la configuración de directiva "grupo de seguridad del servidor de licencias".
+Valor booleano que indica si la configuración de directiva "Grupo de seguridad del servidor de licencias" está habilitada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, vea [servicios de escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
+Si el método se realiza correctamente, devuelve cero. Si el método no se realiza correctamente, devuelve un valor distinto de cero. Para obtener una lista de códigos de error, [vea Servicios de Escritorio remoto códigos de error del proveedor WMI](terminal-services-wmi-provider-error-codes.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para llamar a este método, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para llamar a este método.
 
-La configuración de directiva "grupo de seguridad del servidor de licencias" le permite especificar los servidores host de sesión de Escritorio remoto (host de sesión de escritorio remoto) que pueden ponerse en contacto con el servidor de licencias para obtener Servicios de Escritorio remoto licencias de acceso de cliente (cal de RDS). Si la configuración de directiva está habilitada en el servidor de licencias, el servidor solo responderá a las solicitudes CAL de RDS de los servidores host de sesión de escritorio remoto cuyas cuentas de equipo sean miembros del grupo local de Terminal Server equipos en el servidor de licencias.
+La configuración de directiva "grupo de seguridad del servidor de licencias" permite especificar los servidores de host de sesión de Escritorio remoto (host de sesión de Escritorio remoto) que pueden ponerse en contacto con el servidor de licencias para obtener licencias de acceso de cliente (CAL de RDS) de Servicios de Escritorio remoto. Si la configuración de directiva está habilitada en el servidor de licencias, el servidor solo responderá a las solicitudes cal de RDS de los servidores host de sesión de Escritorio remoto cuyas cuentas de equipo son miembros del grupo local Equipos de Terminal Server en el servidor de licencias.
 
-La configuración de Directiva se encuentra en el siguiente nodo del editor de directivas de grupo local:
+La configuración de directiva se encuentra en el siguiente nodo del editor de directivas de grupo local:
 
-Configuración del equipo \\ plantillas administrativas \\ componentes de Windows \\ Terminal Services licencias de \\ TS
+Configuración del \\ equipo Plantillas administrativas Windows licencias de \\ \\ TS de Terminal Services \\ para componentes de equipo
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,7 +75,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |
 | Espacio de nombres<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -84,7 +84,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 
 <dl> <dt>
 
-[**Win32 \_ TSLicenseServer**](win32-tslicenseserver.md)
+[**TSLicenseServer de Win32 \_**](win32-tslicenseserver.md)
 </dt> </dl>
 
  

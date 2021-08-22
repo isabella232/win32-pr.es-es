@@ -1,7 +1,7 @@
 ---
-description: La estructura de \_ bytes con etiqueta define un par de bits con etiqueta. La etiqueta del par de bits con etiqueta se muestra cuando se detecta un valor de propiedad de byte específico.
+description: La estructura LABELED \_ BYTE define un par BIT etiquetado. La etiqueta del par BIT etiquetado se muestra cuando se detecta un valor de propiedad de byte específico.
 ms.assetid: 6dc6a773-da75-4ffe-878f-b30ceef2acb1
-title: Estructura de LABELED_BYTE (Netmon. h)
+title: LABELED_BYTE estructura (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 4768e605892b9bfe2a3df67fbdea862f67dc1a16
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 05aa29942768c0c40816eafce112f12a95cd0a713bebe612d2e5ad32776a33a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119494985"
 ---
-# <a name="labeled_byte-structure"></a>Estructura de \_ bytes con etiqueta
+# <a name="labeled_byte-structure"></a>Estructura \_ BYTE ETIQUETADA
 
-La estructura de **\_ bytes con etiqueta** define un par de bits con etiqueta. La **etiqueta** del par de bits con etiqueta se muestra cuando se detecta un valor de propiedad de byte específico.
+La **estructura LABELED \_ BYTE** define un par BIT etiquetado. La **etiqueta** del par BIT etiquetado se muestra cuando se detecta un valor de propiedad de byte específico.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,30 +43,30 @@ typedef struct _LABELED_BYTE {
 **Valor**
 </dt> <dd>
 
-Valor de BYTE de la propiedad que desea detectar.
+Valor BYTE de la propiedad que desea detectar.
 
 </dd> <dt>
 
 **Label**
 </dt> <dd>
 
-Descripción o etiqueta textual que se muestra cuando se detecta el valor especificado en el miembro de **valor** .
+Descripción textual o etiqueta que se muestra cuando se detecta el valor especificado en el **miembro Value.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El miembro **lpLabeledByteTable** de la estructura de [conjunto](set.md) apunta a una matriz de estructuras **set** que definen uno o más miembros de **etiqueta** de los pares de valor de bytes. Estos pares se usan cuando se desea mostrar una etiqueta en lugar de un valor de BYTE específico que se encuentra en el paquete del protocolo.
+El **miembro lpLabeledByteTable** de la estructura [SET](set.md) apunta a una matriz de estructuras **SET** que definen uno o varios miembros **Label** de los pares de valores BYTE. Estos pares se usan cuando se desea mostrar una etiqueta en lugar de un valor BYTE específico que se encuentra en el paquete de protocolo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

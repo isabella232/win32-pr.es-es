@@ -1,9 +1,9 @@
 ---
-title: THEME. openDialog
+title: THEME.openDialog
 description: El método openDialog abre un cuadro de diálogo de archivo.
 ms.assetid: d7f4549c-a5c3-4902-b13b-51f3d4444ea9
 keywords:
-- Media Player de Windows de THEME. openDialog
+- THEME.openDialog Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 79b9478b6b970b1d8d18b6f40975479e4755fa6d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3d57218105aa081ddebcb98fadbdb40b4bbd42511de9df94e204320ce78cf03c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134558"
 ---
-# <a name="themeopendialog"></a>THEME. openDialog
+# <a name="themeopendialog"></a>THEME.openDialog
 
-El método **openDialog** abre un cuadro de diálogo de archivo.
+El **método openDialog** abre un cuadro de diálogo de archivo.
 
 ``` syntax
         theme.openDialog(dialogType, parameters)
@@ -35,24 +35,24 @@ El método **openDialog** abre un cuadro de diálogo de archivo.
 <span id="dialogType"></span><span id="dialogtype"></span><span id="DIALOGTYPE"></span>*dialogType*
 </dt> <dd>
 
-**Cadena** que especifica el tipo de cuadro de diálogo. Debe establecerse en "archivo \_ Abrir".
+Cadena **que** especifica el tipo de cuadro de diálogo. Debe establecerse en "FILE \_ OPEN".
 
 </dd> <dt>
 
-<span id="parameters"></span><span id="PARAMETERS"></span>*los*
+<span id="parameters"></span><span id="PARAMETERS"></span>*Parámetros*
 </dt> <dd>
 
-**Cadena** que se puede utilizar para obtener información adicional. Debe establecerse en "archivos \_ ALLMEDIA".
+Cadena **que** se puede usar para obtener información adicional. Debe establecerse en "FILES \_ ALLMEDIA".
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve una **cadena** que contiene la dirección URL del archivo seleccionado o "" (cadena vacía) si el usuario hace clic en Cancelar.
+Este método devuelve una **cadena que** contiene la dirección URL del archivo seleccionado o "" (cadena vacía) si el usuario hace clic en Cancelar.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se puede usar para los archivos de las unidades de disco duro locales o de las unidades de red.
+Este método se puede usar para archivos en las unidades de disco duro locales o en unidades de red.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -78,17 +78,17 @@ Este método se puede usar para los archivos de las unidades de disco duro local
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Elemento THEME**](theme-element.md)
+[**ELEMENTO THEME**](theme-element.md)
 </dt> </dl>
 
  

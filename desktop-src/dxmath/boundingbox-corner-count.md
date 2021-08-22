@@ -1,19 +1,19 @@
 ---
-description: Número de puntos que definen el BoundingBox.
+description: Número de puntos que definen boundingBox.
 ms.assetid: a73c44f8-14f9-47aa-b02b-31dcd34cd6c5
-title: BoundingBox.CORNER_COUNT (DirectXCollision. h)
+title: BoundingBox.CORNER_COUNT (DirectXCollision.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b354fcde4b32d0b0e10340fb186718410013af9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 395eabf0ff02bccf82cc9345a58b66fa58e7eafb51080729dcfdc058b5bc77e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118592"
 ---
-# <a name="boundingboxcorner_count"></a>Número de BoundingBox. CORNER \_
+# <a name="boundingboxcorner_count"></a>BoundingBox.CORNER \_ COUNT
 
-Número de puntos que definen el BoundingBox.
+Número de puntos que definen boundingBox.
 
 
 ```C++
@@ -23,11 +23,11 @@ public:
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ### <a name="platform-requirements"></a>Requisitos de la plataforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK para Windows 8. Se admite para aplicaciones de escritorio de Win32, aplicaciones de la tienda Windows y Windows Phone 8 aplicaciones.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK Windows para Windows 8. Compatible con aplicaciones de escritorio Win32, Windows store y Windows Phone 8 aplicaciones.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,12 +35,12 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el Windows SDK p
 
 | Requisito | Value |
 |----------------------|-----------------------------------------------------------------------------------------------|
-| Espacio de nombres<br/> | Usar DirectX.<br/>                                                                       |
-| Encabezado<br/>    | <dl> <dt>DirectXCollision. h</dt> </dl> |
+| Espacio de nombres<br/> | Use DirectX.<br/>                                                                       |
+| Header<br/>    | <dl> <dt>DirectXCollision.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

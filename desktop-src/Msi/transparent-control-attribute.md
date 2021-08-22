@@ -1,25 +1,25 @@
 ---
-description: Si el bit de control transparente se establece en un control de texto, el control se muestra de forma transparente con el fondo que se muestra a través del control en el que no hay ningún carácter. Si no se establece este bit, el control de texto es opaco.
+description: Si el bit Control transparente se establece en un control de texto, el control se muestra de forma transparente con el fondo que se muestra a través del control donde no hay caracteres. Si no se establece este bit, el control de texto es opaco.
 ms.assetid: 1938f6c5-d5a4-41ca-b272-1166a7688be2
 title: Atributo de control transparente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1bb5e27c9c39ab6433c8ffa0547c7c6004a68c1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 347a2f3c9b7d6e934ad591e5917e89579c60911870dfbff51f92bef108b6017a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104081979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119500155"
 ---
 # <a name="transparent-control-attribute"></a>Atributo de control transparente
 
-Si el bit de control transparente se establece en un control de texto, el control se muestra de forma transparente con el fondo que se muestra a través del control en el que no hay ningún carácter. Si no se establece este bit, el control de texto es opaco.
+Si el bit Control transparente se establece en un control de texto, el control se muestra de forma transparente con el fondo que se muestra a través del control donde no hay caracteres. Si no se establece este bit, el control de texto es opaco.
 
 ## <a name="valid-controls"></a>Controles válidos
 
 [Texto](text-control.md)
 
-## <a name="value"></a>Value
+## <a name="value"></a>Valor
 
 
 
@@ -31,9 +31,9 @@ Si el bit de control transparente se establece en un control de texto, el contro
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Vea [atributos de control](control-attributes.md) y el control que debe crear en [controles](controls.md).
+Vea [Atributos de](control-attributes.md) control y el control que debe crear en [Controles](controls.md).
 
  
 

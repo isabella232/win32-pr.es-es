@@ -1,40 +1,40 @@
 ---
 title: Manipulation-Target
-description: Los datos de destino a los que se aplica una regla de manipulación de atributos. La manipulación de atributos se conocía anteriormente como \ 0034; el procesamiento de los territorios \ 0034;. Para obtener más información, vea procesamiento de dominios y manipulación de atributos.
+description: Datos de destino a los que se aplica una regla de manipulación de atributos. La manipulación de atributos se conocía anteriormente como \ 0034;realms processing \ 0034;. Para obtener más información, vea Procesamiento de dominios y Manipulación de atributos.
 ms.assetid: a6d06a15-2694-410c-8083-6e5fe500b809
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ebbd2c2abf0c2f2423d64f7a8649793d68abaee6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 36b93073bff71d12c9974b0dbfd569b17f935db2d4bf7f4f3cd9e38ef3d3156c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119251132"
 ---
 # <a name="manipulation-target"></a>Manipulation-Target
 
 > [!Note]  
-> Se ha cambiado el nombre del servicio de autenticación de Internet (IAS) a partir de Windows Server 2008.
+> El nombre del Servicio de autenticación de Internet (IAS) se ha cambiado a Servidor de directivas de red (NPS) a partir Windows Server 2008.
 
- 
+ 
 
-Los datos de destino a los que se aplica una regla de manipulación de atributos. La manipulación de atributos se conocía anteriormente como "procesamiento de dominios". Para obtener más información, vea [procesamiento de dominios y manipulación de atributos](/windows/desktop/Nps/sdo-realms-processing-and-attribute-manipulation).
+Datos de destino a los que se aplica una regla de manipulación de atributos. La manipulación de atributos se conocía anteriormente como "procesamiento de dominios". Para obtener más información, vea [Procesamiento de dominios y Manipulación de atributos.](/windows/desktop/Nps/sdo-realms-processing-and-attribute-manipulation)
 
 **Nombre LDAP:** msManipulationTarget
 
-**ID:** 4113 = [ **\_ destino de \_ manipulación \_ de atributos de IAS**](/windows/desktop/api/sdoias/ne-sdoias-attributeid)
+**Identificador:** 4113 = DESTINO [ **DE MANIPULACIÓN \_ DE ATRIBUTOS \_ \_ IAS**](/windows/desktop/api/sdoias/ne-sdoias-attributeid)
 
-**Sintaxis:** Avanzó
+**Sintaxis:** Enumerador
 
-**Valores  **
+**Valores: **
 
-Definida por Internet Assigned Numbers Authority (IANA) en el documento de [tipos de RADIUS](https://www.iana.org/assignments/radius-types) basado en [RFC 2865](https://www.ietf.org/rfc/rfc2865.txt).
+Definido por la Autoridad de números asignados por Internet (IANA) en el documento [TIPOS RADIUS](https://www.iana.org/assignments/radius-types) basado en [RFC 2865](https://www.ietf.org/rfc/rfc2865.txt).
 
 -   User-Name (1)
--   Identificador de estación llamada (30)
--   Identificador de estación de llamada (31)
+-   Called-Station-Id (30)
+-   Calling-Station-Id (31)
 
- 
+ 
 
- 
+ 

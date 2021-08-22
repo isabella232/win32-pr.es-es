@@ -15,12 +15,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 9d80d5fbe57565d64e9ea53587d7a2c3488e6cf2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3659d89baa94da0c3161f7bcd6c9ff94d27efef467af8caafa70adfe1c4a7b84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104156728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070061"
 ---
 # <a name="obtypeevent-class"></a>Clase ObTypeEvent
 
@@ -42,20 +42,20 @@ class ObTypeEvent : ObTrace
 
 ## <a name="members"></a>Miembros
 
-La clase **ObTypeEvent** tiene estos tipos de miembros:
+La **clase ObTypeEvent** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **ObTypeEvent** tiene estas propiedades.
+La **clase ObTypeEvent** tiene estas propiedades.
 
 <dl> <dt>
 
 **ObjectType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -71,7 +71,7 @@ Tipo del objeto.
 **Reserved**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -106,9 +106,9 @@ Nombre del tipo.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                   |
-| MOF<br/>                      | <dl> <dt>Wmicore. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                   |
+| MOF<br/>                      | <dl> <dt>Wmicore.mof</dt> </dl> |
 
 
 

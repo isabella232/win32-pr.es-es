@@ -1,7 +1,7 @@
 ---
-description: Indica si el elemento se puede hospedar en un explorador o en un marco del explorador de Windows.
+description: Indica si el elemento se puede hospedar dentro de un explorador o Windows explorador.
 ms.assetid: 472e0906-9561-4390-a503-c5e490245ea0
-title: Propiedad carpeta. IsBrowsable (Shldisp. h)
+title: Propiedad FolderItem.IsBrowsable (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: d7c5f7a9cbde54647c299646bb6350c3be6aa2a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c417b3a225ba7d9f39329fe274d99ee09c3a98353a9822d1047ea426610411c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423515"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119093101"
 ---
-# <a name="folderitemisbrowsable-property"></a>Propiedad carpeta. IsBrowsable
+# <a name="folderitemisbrowsable-property"></a>Propiedad FolderItem.IsBrowsable
 
-Indica si el elemento se puede hospedar en un explorador o en un marco del explorador de Windows.
+Indica si el elemento se puede hospedar dentro de un explorador o Windows explorador.
 
 Esta propiedad es de solo lectura.
 
@@ -37,13 +37,13 @@ bIsBrowsable = FolderItem.IsBrowsable
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un **valor booleano** que recibe **true** si el elemento se puede examinar o **false** en caso contrario.
+Valor **booleano** que recibe **true** si se puede examinar el elemento o **false** si no es así.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **IsBrowsable** para determinar el estado de exploración de la carpeta Windows. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa IsBrowsable** para determinar el estado que se puede Windows carpeta. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -73,7 +73,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -146,13 +146,13 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

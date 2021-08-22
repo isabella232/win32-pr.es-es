@@ -1,23 +1,23 @@
 ---
-description: La Directiva de metadatos de fotos para la propiedad System. Photo. Contrast.
+description: Directiva de metadatos de fotos para la propiedad System.Photo.Contrast.
 ms.assetid: c5e2589d-507c-4b92-9ada-7d64e7c45dd8
-title: Directiva de metadatos de fotografía de System. Photo. Contrast
+title: Directiva de metadatos de fotos System.Photo.Contrast
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1d6ed34854b525e9eaac2ff5ac7339a75ad10e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4a9309ecab96a2244e08ebf05ff8896c792f7366c9db21d41072d2d94aacf47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104547043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087101"
 ---
-# <a name="systemphotocontrast-photo-metadata-policy"></a>Directiva de metadatos de fotografía de System. Photo. Contrast
+# <a name="systemphotocontrast-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Photo.Contrast
 
-La Directiva de metadatos de fotos para la propiedad [System. Photo. Contrast](../properties/props-system-photo-contrast.md) .
+Directiva de metadatos de fotos para [la propiedad System.Photo.Contrast.](../properties/props-system-photo-contrast.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-PKEY \_ contraste de fotografía \_
+PKEY \_ Photo \_ Contrast
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,7 +27,7 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ UI4
 
@@ -37,31 +37,31 @@ UShort
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                          | Formato de disco |
+| Pedido | Ruta de acceso                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /app1/IFD/Exif/{ushort = 41992} | ushort      |
-| 2     | /XMP/Exif: contraste            | unicode     |
+| 1     | /app1/ifd/exif/{ushort=41992} | ushort      |
+| 2     | /xmp/exif:Contrast            | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                          | Formato de disco |
+| Pedido | Ruta de acceso                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /app1/IFD/Exif/{ushort = 41992} | ushort      |
-| 2     | /XMP/Exif: contraste            | unicode     |
+| 1     | /app1/ifd/exif/{ushort=41992} | ushort      |
+| 2     | /xmp/exif:Contrast            | unicode     |
 
 
 
@@ -71,10 +71,10 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                          |
+| Pedido | Ruta de acceso                          |
 |-------|-------------------------------|
-| 1     | /app1/IFD/Exif/{ushort = 41992} |
-| 2     | /XMP/Exif: contraste            |
+| 1     | /app1/ifd/exif/{ushort=41992} |
+| 2     | /xmp/exif:contrast            |
 
 
 
@@ -82,27 +82,27 @@ Se reconcilian los valores de los distintos esquemas.
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                     | Formato de disco |
+| Pedido | Ruta de acceso                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /IFD/Exif/{ushort = 41992} | ushort      |
-| 2     | /IFD/XMP/Exif: contraste   | unicode     |
+| 1     | /ifd/exif/{ushort=41992} | ushort      |
+| 2     | /ifd/xmp/exif:Contrast   | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                     | Formato de disco |
+| Pedido | Ruta de acceso                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /IFD/Exif/{ushort = 41992} | ushort      |
-| 2     | /IFD/XMP/Exif: contraste   | unicode     |
+| 1     | /ifd/exif/{ushort=41992} | ushort      |
+| 2     | /ifd/xmp/exif:Contrast   | unicode     |
 
 
 
@@ -112,22 +112,22 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                     |
+| Pedido | Ruta de acceso                     |
 |-------|--------------------------|
-| 1     | /IFD/Exif/{ushort = 41992} |
-| 2     | /IFD/XMP/Exif: contraste   |
+| 1     | /ifd/exif/{ushort=41992} |
+| 2     | /ifd/xmp/exif:contrast   |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. Photo. Contrast](../properties/props-system-photo-contrast.md)
+[System.Photo.Contrast](../properties/props-system-photo-contrast.md)
 </dt> </dl>
 
  

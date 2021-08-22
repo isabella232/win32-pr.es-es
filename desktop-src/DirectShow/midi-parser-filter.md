@@ -4,16 +4,16 @@ ms.assetid: a56576ad-f949-48fa-85e0-3e9898d2970d
 title: Filtro del analizador DE MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 60ce659559852497b8ec55709e77f9510a1deaf2
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 9c5907c36e668a39494b46ec6bbc67e4d8cb4870357df9c1f0303c882bc86f0d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119256515"
 ---
 # <a name="midi-parser-filter"></a>Filtro del analizador DE MIDI
 
-El filtro Analizador DE MIDI lee los datos DE MIDI que se encuentran en . MID y . Archivos MID. El filtro acepta una secuencia de los filtros [Async File Source](file-source--async--filter.md) (Origen de archivo asincrónico) o URL File Source (Origen de archivo [URL)](file-source--url--filter.md) y genera ejemplos de MIDI en [**el representador de MIDI**](midi-renderer-filter.md) para su reproducción.
+El filtro analizador de MIDI lee los datos DE MIDI que se encuentran en . MID y . Archivos MID. El filtro acepta una secuencia de los filtros [Async File Source](file-source--async--filter.md) (Origen de archivo asincrónico) o URL File Source (Origen de archivo [URL)](file-source--url--filter.md) y genera ejemplos de MIDI en [**el representador de MIDI**](midi-renderer-filter.md) para su reproducción.
 
 
 
@@ -27,14 +27,14 @@ El filtro Analizador DE MIDI lee los datos DE MIDI que se encuentran en . MID y 
 | Filtrar CLSID                             | CLSID \_ MIDIParser                                                                                        |
 | CLSID de la página de propiedades                      | Ninguna página de propiedades                                                                                         |
 | Executable                               | quartz.dll                                                                                               |
-| [Mérito](merit.md)                       | NO ES \_ PROBABLE QUE SE PRODUZCA UN GRAN                                                                                          |
+| [Mérito](merit.md)                       | NO ES \_ PROBABLE QUE SE PRODUZCAN                                                                                          |
 | [Categoría de filtro](filter-categories.md) | CLSID \_ LegacyAmFilterCategory                                                                            |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información, vea [**Representador de MIDI.**](midi-renderer-filter.md)
 
@@ -42,7 +42,7 @@ Para obtener más información, vea [**Representador de MIDI.**](midi-renderer-f
 
 <dl> <dt>
 
-[Filtros de DirectShow](directshow-filters.md)
+[DirectShow Filtros](directshow-filters.md)
 </dt> </dl>
 
  

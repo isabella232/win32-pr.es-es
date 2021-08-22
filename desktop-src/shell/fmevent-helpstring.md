@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 55fb5bfe-2889-40e5-9798-85f63727e31f
-ms.openlocfilehash: 6fe187330e27f7e246c9bbd68005f68f346bbc90
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 06e3c13841c6b4dc85c2a1dcbea7dce18a15ab054ffb2953fa2e3ba2999d5863
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119094160"
 ---
 # <a name="fmevent_helpstring-message"></a>Mensaje \_ HELPSTRING de FMEVENT
 
@@ -34,7 +34,7 @@ Se envía a un procedimiento DLL de extensión del Administrador de archivos cua
 *lpfmshs* 
 </dt> <dd>
 
-Dirección de una estructura [**\_ HELPSTRING de FMS**](fms-helpstring.md) que comunica los datos de la cadena de ayuda del elemento de comando. La **estructura \_ HELPSTRING de FMS** identifica el elemento de comando para el que se desea una cadena de Ayuda, junto con un identificador para su menú. A continuación, una aplicación escribe la cadena de Ayuda adecuada en el miembro szHelp de la estructura **\_ HELPSTRING** **de FMS.**
+Dirección de una estructura [**\_ HELPSTRING de FMS**](fms-helpstring.md) que comunica los datos de cadena de ayuda del elemento de comando. La **estructura \_ HELPSTRING de FMS** identifica el elemento de comando para el que se desea una cadena de Ayuda, junto con un identificador para su menú. Después, una aplicación escribe la cadena de Ayuda adecuada en el miembro szHelp de la estructura **\_ HELPSTRING** **de FMS.**
 
 </dd> </dl>
 
@@ -54,7 +54,7 @@ Un procedimiento DLL de extensión debe devolver cero si procesa este mensaje.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

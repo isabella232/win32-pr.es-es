@@ -1,7 +1,7 @@
 ---
-description: Esta clase es la clase de tipo de evento para procesar eventos de contador. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de contador de procesos. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 7f1fa1c4-a2ff-4a1c-ac9d-e922a13c99a1
-title: Process_V2_TypeGroup2 (clase)
+title: Process_V2_TypeGroup2 clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -27,18 +27,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 284b77da03b53f9c2662c8729a7bf6606c45630a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51c24e12ed423b6240daeefee0b69a40f9b14b86813ca83cb09f74f807e24429
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069955"
 ---
-# <a name="process_v2_typegroup2-class"></a>\_ \_ Clase TypeGroup2 de proceso V2
+# <a name="process_v2_typegroup2-class"></a>Clase \_ \_ TypeGroup2 de Process V2
 
-Esta clase es la clase de tipo de evento para procesar eventos de contador.
+Esta clase es la clase de tipo de evento para los eventos de contador de procesos.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -66,26 +66,26 @@ class Process_V2_TypeGroup2 : Process_V2
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ \_ TypeGroup2 de Process V2** tiene estos tipos de miembros:
+La **clase Process \_ V2 \_ TypeGroup2** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ TypeGroup2 de proceso V2** tiene estas propiedades.
+La **clase Process \_ V2 \_ TypeGroup2** tiene estas propiedades.
 
 <dl> <dt>
 
 **HandleCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3)
+Calificadores: WmiDataId(3)
 </dt> </dl>
 
 Recuento de identificadores usados.
@@ -95,13 +95,13 @@ Recuento de identificadores usados.
 **PageFaultCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2)
+Calificadores: WmiDataId(2)
 </dt> </dl>
 
 Recuento de errores de página.
@@ -117,10 +117,10 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (12), extensión ("Sizet")
+Calificadores: WmiDataId(12), Extension("SizeT")
 </dt> </dl>
 
-Uso del archivo de paginación actual.
+Uso actual del archivo de página.
 
 </dd> <dt>
 
@@ -133,7 +133,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (7), extensión ("Sizet")
+Calificadores: WmiDataId(7), Extension("SizeT")
 </dt> </dl>
 
 Tamaño de archivo de página más grande usado.
@@ -149,7 +149,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5), extensión ("Sizet")
+Calificadores: WmiDataId(5), Extension("SizeT")
 </dt> </dl>
 
 Tamaño de página virtual más grande usado.
@@ -165,10 +165,10 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (6), extensión ("Sizet")
+Calificadores: WmiDataId(6), Extension("SizeT")
 </dt> </dl>
 
-Mayor tamaño del espacio de trabajo usado.
+Tamaño de conjunto de trabajo más grande usado.
 
 </dd> <dt>
 
@@ -181,7 +181,7 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (15), extensión ("Sizet")
+Calificadores: WmiDataId(15), Extension("SizeT")
 </dt> </dl>
 
 Recuento de páginas físicas privadas actuales.
@@ -191,16 +191,16 @@ Recuento de páginas físicas privadas actuales.
 ProcessId
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1), Format ("x")
+Calificadores: WmiDataId(1), Format("x")
 </dt> </dl>
 
-Identificador de proceso global que puede usar para identificar un proceso. El valor es válido desde el momento en que se crea un proceso hasta que se termina.
+Identificador de proceso global que puede usar para identificar un proceso. El valor es válido desde el momento en que se crea un proceso hasta que finaliza.
 
 </dd> <dt>
 
@@ -213,10 +213,10 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (14), extensión ("Sizet")
+Calificadores: WmiDataId(14), Extension("SizeT")
 </dt> </dl>
 
-Uso de memoria no paginada actual.
+Uso de memoria no paginada confirmado actual.
 
 </dd> <dt>
 
@@ -229,10 +229,10 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (13), extensión ("Sizet")
+Calificadores: WmiDataId(13), Extension("SizeT")
 </dt> </dl>
 
-Uso de memoria paginada actual.
+Uso de memoria paginada confirmado actual.
 
 </dd> <dt>
 
@@ -245,10 +245,10 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (9), extensión ("Sizet")
+Calificadores: WmiDataId(9), Extension("SizeT")
 </dt> </dl>
 
-Mayor memoria no paginada confirmada utilizada.
+Mayor memoria no paginada confirmada usada.
 
 </dd> <dt>
 
@@ -261,23 +261,23 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (8), extensión ("Sizet")
+Calificadores: WmiDataId(8), Extension("SizeT")
 </dt> </dl>
 
-Mayor memoria paginada confirmada utilizada.
+Mayor memoria paginada confirmada usada.
 
 </dd> <dt>
 
 **Reserved**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4)
+Calificadores: WmiDataId(4)
 </dt> </dl>
 
 Reservado.
@@ -293,10 +293,10 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (10), extensión ("Sizet")
+Calificadores: WmiDataId(10), Extension("SizeT")
 </dt> </dl>
 
-Tamaño actual de la página virtual.
+Tamaño de página virtual actual.
 
 </dd> <dt>
 
@@ -309,16 +309,16 @@ Tipo de datos: **objeto**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (11), extensión ("Sizet")
+Calificadores: WmiDataId(11), Extension("SizeT")
 </dt> </dl>
 
-Tamaño del espacio de trabajo actual.
+Tamaño actual del conjunto de trabajo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Estos eventos se registran cuando finaliza el proceso. El evento indica el modo en que un proceso controla el uso de memoria.
+Estos eventos se registran cuando finaliza el proceso. El evento indica cómo un proceso controló el uso de memoria.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -326,8 +326,8 @@ Estos eventos se registran cuando finaliza el proceso. El evento indica el modo 
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: atributo DllName (STR)
-description: El atributo \ DllName \ define el nombre del archivo DLL que contiene los puntos de entrada de un módulo.
+title: Atributo dllname(str)
+description: El atributo \ dllname\ define el nombre del archivo DLL que contiene los puntos de entrada de un módulo.
 ms.assetid: dbf062ce-9dcc-4cc6-b7cd-cdc5945e399b
 keywords:
-- DllName (STR) atributo MIDL
+- atributo dllname(str) MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 990d277db855c2988021d19a0a756c49454546f7
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 7db6f70fb65822a63bd2bf0f9919ac1b9554a664d1ac7ec9775c611b5b4e7f73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067295"
 ---
-# <a name="dllnamestr-attribute"></a>atributo DllName (STR)
+# <a name="dllnamestr-attribute"></a>Atributo dllname(str)
 
-El atributo **\[ DllName \]** define el nombre de la dll que contiene los puntos de entrada de un módulo.
+El **\[ atributo \] dllname** define el nombre del archivo DLL que contiene los puntos de entrada de un módulo.
 
 ``` syntax
 [
@@ -39,28 +39,28 @@ module modulename
 
 <dl> <dt>
 
-*UUID-número* 
+*uuid-number* 
 </dt> <dd>
 
-Especifica un número de identificación único universal para el [**módulo**](module.md).
+Especifica un número de identificación único universalmente para el [**módulo**](module.md).
 
 </dd> <dt>
 
 *filename* 
 </dt> <dd>
 
-Especifica una cadena terminada en NULL que contiene la ruta de acceso completa al archivo dll.
+Especifica una cadena terminada en NULL que contiene la ruta de acceso completa al archivo Dll.
 
 </dd> <dt>
 
-*opcional-Attribute-List* 
+*optional-attribute-list* 
 </dt> <dd>
 
-Especifica una lista de cero o más atributos de la interfaz de MIDL.
+Especifica una lista de cero o más atributos de interfaz MIDL.
 
 </dd> <dt>
 
-*ModuleName* 
+*modulename* 
 </dt> <dd>
 
 Especifica el nombre que otros componentes de software pueden usar para hacer referencia al módulo.
@@ -70,13 +70,13 @@ Especifica el nombre que otros componentes de software pueden usar para hacer re
 *elementlist* 
 </dt> <dd>
 
-Especifica una o más instrucciones de definición de elementos de módulo.
+Especifica una o varias instrucciones de definición de elemento de módulo.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El atributo **\[ DllName \]** es obligatorio en un módulo.
+El **\[ atributo \] dllname** es necesario en un módulo.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -96,13 +96,13 @@ module HandyStuff
 
 <dl> <dt>
 
-[**destina**](module.md)
+[**Módulo**](module.md)
 </dt> <dt>
 
-[**movimientos**](entry.md)
+[**Entrada**](entry.md)
 </dt> <dt>
 
-[Sintaxis del archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxis de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [Ejemplo de archivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
@@ -111,6 +111,6 @@ module HandyStuff
 [Generar una biblioteca de tipos con MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

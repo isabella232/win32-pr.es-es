@@ -1,21 +1,21 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. GPS. DestLongitude.
+description: Directiva de metadatos de fotos para la propiedad System.GPS.DestLongitude.
 ms.assetid: 885a522d-e1bf-43fb-a996-97e725b6cf0c
-title: Directiva de metadatos de la foto System. GPS. DestLongitude
+title: Directiva de metadatos de fotos System.GPS.DestLongitude
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72e0a4f56e49dfbb3397b96cf7fae35a6065b7aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 917c65dbd580b00cf25603e04050386383967e3a70c1896405346652667ef5f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104083172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087846"
 ---
-# <a name="systemgpsdestlongitude-photo-metadata-policy"></a>Directiva de metadatos de la foto System. GPS. DestLongitude
+# <a name="systemgpsdestlongitude-photo-metadata-policy"></a>Directiva de metadatos de fotos System.GPS.DestLongitude
 
-La Directiva de metadatos de la fotografía para la propiedad [System. GPS. DestLongitude](../properties/props-system-gps-destlongitude.md) .
+Directiva de metadatos de fotos para [la propiedad System.GPS.DestLongitude.](../properties/props-system-gps-destlongitude.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ GPS \_ DestLongitude
 
@@ -27,40 +27,40 @@ JPEG, TIFF
 
 Sí
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
-VT \_ Vector \| VT \_ R8
+VT \_ VECTOR \| VT \_ R8
 
-### <a name="input-propvariant-type"></a>Tipo de PROPVARIANT de entrada
+### <a name="input-propvariant-type"></a>Tipo PROPVARIANT de entrada
 
-VT \_ Vector \| VT \_ R8
+VT \_ VECTOR \| VT \_ R8
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Este valor se genera a partir de System. GPS. DestLongitudeNumerator y System. GPS. DestLongitudeDenominator. No se puede escribir directamente. Se reconcilian los valores de los distintos esquemas.
+Este valor se genera a partir de System.GPS.DestLongitudeNumerator y System.GPS.DestLongitudeDenominator. No se puede escribir directamente. Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                       | Formato de disco |
+| Pedido | Ruta de acceso                       | Formato de disco |
 |-------|----------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 22}  |             |
+| 1     | /app1/ifd/gps/{ushort=22}  |             |
 | 2     | /xmp/exif:GPSDestLongitude |             |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                       | Formato de disco |
+| Pedido | Ruta de acceso                       | Formato de disco |
 |-------|----------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 22}  |             |
+| 1     | /app1/ifd/gps/{ushort=22}  |             |
 | 2     | /xmp/exif:GPSDestLongitude |             |
 
 
@@ -71,9 +71,9 @@ Este valor se genera a partir de System. GPS. DestLongitudeNumerator y System. G
 
 
 
-| Pedido | Ruta                       |
+| Pedido | Ruta de acceso                       |
 |-------|----------------------------|
-| 1     | /app1/IFD/GPS/{ushort = 22}  |
+| 1     | /app1/ifd/gps/{ushort=22}  |
 | 2     | /xmp/exif:gpsdestlongitude |
 
 
@@ -82,26 +82,26 @@ Este valor se genera a partir de System. GPS. DestLongitudeNumerator y System. G
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                           | Formato de disco |
+| Pedido | Ruta de acceso                           | Formato de disco |
 |-------|--------------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 22}           |             |
+| 1     | /ifd/gps/{ushort=22}           |             |
 | 2     | /ifd/xmp/exif:GPSDestLongitude |             |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                           | Formato de disco |
+| Pedido | Ruta de acceso                           | Formato de disco |
 |-------|--------------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 22}           |             |
+| 1     | /ifd/gps/{ushort=22}           |             |
 | 2     | /ifd/xmp/exif:GPSDestLongitude |             |
 
 
@@ -112,22 +112,22 @@ Este valor se genera a partir de System. GPS. DestLongitudeNumerator y System. G
 
 
 
-| Pedido | Ruta                           |
+| Pedido | Ruta de acceso                           |
 |-------|--------------------------------|
-| 1     | /IFD/GPS/{ushort = 22}           |
+| 1     | /ifd/gps/{ushort=22}           |
 | 2     | /ifd/xmp/exif:gpsdestlongitude |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. GPS. DestLongitude](../properties/props-system-gps-destlongitude.md)
+[System.GPS.DestLongitude](../properties/props-system-gps-destlongitude.md)
 </dt> </dl>
 
  

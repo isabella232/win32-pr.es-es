@@ -1,7 +1,7 @@
 ---
 description: Recupera los certificados del sistema en un sistema host.
 ms.assetid: d470a57d-85b9-4d31-bb2c-9b6f21e2860d
-title: Método GetSystemCertificates de la clase Msvm_ReplicationService
+title: Método GetSystemCertificates de la Msvm_ReplicationService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5464d420b7fc019a0829d7255dafb1716e5e9f5d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bdc3fe1e2a12809dceb14a23e087d3e844f5e1a51401171b68dfe41303739c2d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119253625"
 ---
-# <a name="getsystemcertificates-method-of-the-msvm_replicationservice-class"></a>Método GetSystemCertificates de la \_ clase ReplicationService de MSVM
+# <a name="getsystemcertificates-method-of-the-msvm_replicationservice-class"></a>Método GetSystemCertificates de la clase ReplicationService de Msvm \_
 
 Recupera los certificados del sistema en un sistema host.
 
@@ -39,10 +39,10 @@ uint32 GetSystemCertificates(
 
 <dl> <dt>
 
-*EncodedCertificates* \[ enuncia\]
+*EncodedCertificates* \[ out\]
 </dt> <dd>
 
-Si se realiza correctamente, recibe los certificados disponibles en el almacén personal del equipo local. Cada entrada es una cadena de certificado codificada en base 64. Esta cadena se puede convertir en una matriz de bytes mediante la construcción de un objeto X509Certificate2.
+Si se realiza correctamente, recibe los certificados disponibles desde el almacén personal de la máquina local. Cada entrada es una cadena de certificado codificada en base 64. Esta cadena se puede convertir en una matriz de bytes mediante la construcción de un objeto X509Certificate2.
 
 </dd> </dl>
 
@@ -67,16 +67,16 @@ Este método devuelve uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**Sistema en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -85,13 +85,13 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -100,10 +100,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -112,7 +112,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ ReplicationService**](msvm-replicationservice.md)
+[**ReplicationService de Msvm \_**](msvm-replicationservice.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Indica a una ventana de IME que recupere la fuente lógica usada para mostrar caracteres intermedios en la ventana de composición. Para enviar este comando, la aplicación usa el mensaje de control de IME de WM \_ \_ con la configuración de parámetros que se muestra a continuación.
+description: Indica a una ventana de IME que recupere la fuente lógica usada para mostrar caracteres intermedios en la ventana de composición. Para enviar este comando, la aplicación usa el mensaje WM \_ IME \_ CONTROL con la configuración de parámetros que se muestra a continuación.
 ms.assetid: 43db70b6-f8bc-4241-9096-5d91fd1e332b
-title: Comando IMC_GETCOMPOSITIONFONT (IMM. h)
+title: IMC_GETCOMPOSITIONFONT comando (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 696d9809cadbe4f2c0e632719401e882777888dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ebf26592f2fd000f864685bd79d71b189fc24d695941691fe2e01d48132d00d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068105"
 ---
-# <a name="imc_getcompositionfont-command"></a>\_Comando IMC GETCOMPOSITIONFONT
+# <a name="imc_getcompositionfont-command"></a>Comando \_ GETCOMPOSITIONFONT de IMC
 
-Indica a una ventana de IME que recupere la fuente lógica usada para mostrar caracteres intermedios en la ventana de composición. Para enviar este comando, la aplicación usa el mensaje de [**\_ \_ control de IME de WM**](wm-ime-control.md) con la configuración de parámetros que se muestra a continuación.
+Indica a una ventana de IME que recupere la fuente lógica usada para mostrar caracteres intermedios en la ventana de composición. Para enviar este comando, la aplicación usa el mensaje [**WM \_ IME \_ CONTROL**](wm-ime-control.md) con la configuración de parámetros que se muestra a continuación.
 
 
 ```C++
@@ -26,23 +26,23 @@ LRESULT IMC_GETCOMPOSITIONFONT
 
 <dl> <dt>
 
-<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*wParam*
+<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*Wparam*
 </dt> <dd>
 
 Establezca en IMC \_ GETCOMPOSITIONFONT.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Puntero a una estructura [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) que recibe información sobre la fuente lógica.
+Puntero a una [**estructura LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) que recibe información sobre la fuente lógica.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve 0 si se realiza correctamente, o un valor distinto de cero en caso contrario.
+Devuelve 0 si se realiza correctamente o un valor distinto de cero de lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Devuelve 0 si se realiza correctamente, o un valor distinto de cero en caso cont
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>IMM. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Imm.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Devuelve 0 si se realiza correctamente, o un valor distinto de cero en caso cont
 [Administrador de métodos de entrada](input-method-manager.md)
 </dt> <dt>
 
-[Comandos del administrador de métodos de entrada](input-method-manager-commands.md)
+[Comandos del Administrador de métodos de entrada](input-method-manager-commands.md)
 </dt> </dl>
 
  

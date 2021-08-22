@@ -1,10 +1,10 @@
 ---
-title: atributo shadowMin
+title: Atributo shadowMin
 description: Contiene el número mínimo de días entre los cambios de sombra.
 ms.assetid: 10b54fb7-edd3-4700-a0ed-e4d8591968d3
 ms.tgt_platform: multiple
 keywords:
-- shadowMin esquema de AD de atributos
+- Esquema de AD del atributo shadowMin
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b87822d5348bb5aa889685e48a21043c849761a7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 94afe98986fc0ff8cd36e64d1633f01f4f4aa3307421dda91a81d30e4b62fbaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906107"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022163"
 ---
-# <a name="shadowmin-attribute"></a>atributo shadowMin
+# <a name="shadowmin-attribute"></a>Atributo shadowMin
 
 Contiene el número mínimo de días entre los cambios de sombra.
 
@@ -29,13 +29,13 @@ Contiene el número mínimo de días entre los cambios de sombra.
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | shadowMin                            |
-| Nombre para mostrar de LDAP | shadowMin                            |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | shadowMin                            |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.6                      |
-| System-ID-GUID    | a76b8737-e5a1-4568-b057-dc12e04be4b2 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | a76b8737-e5a1-4568-b057-dc12e04be4b2 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -52,13 +52,13 @@ Contiene el número mínimo de días entre los cambios de sombra.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
@@ -73,13 +73,13 @@ Contiene el número mínimo de días entre los cambios de sombra.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
@@ -94,13 +94,13 @@ Contiene el número mínimo de días entre los cambios de sombra.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
@@ -115,13 +115,13 @@ Contiene el número mínimo de días entre los cambios de sombra.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |

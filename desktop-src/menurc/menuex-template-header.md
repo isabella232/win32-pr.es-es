@@ -1,6 +1,6 @@
 ---
-title: Estructura de MENUEX_TEMPLATE_HEADER
-description: Define el encabezado de una plantilla de menú extendida. Esta definición de estructura solo es para explicación; no se encuentra en ningún archivo de encabezado estándar.
+title: MENUEX_TEMPLATE_HEADER estructura
+description: Define el encabezado de una plantilla de menú extendida. Esta definición de estructura es solo para explicación; no está presente en ningún archivo de encabezado estándar.
 ms.assetid: df763349-7127-482e-8613-74e68addde5d
 keywords:
 - MENUEX_TEMPLATE_HEADER menús de estructura y otros recursos
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: caa255ccdbe76c3959d9c730bcaa52ec07428742
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 31e52661e04a036cf7a49791be96af002b801af0e0ed1c4b6ad3ddebf971c2c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105714557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119226125"
 ---
-# <a name="menuex_template_header-structure"></a>Estructura del encabezado de \_ plantilla MENUEX \_
+# <a name="menuex_template_header-structure"></a>ESTRUCTURA DE ENCABEZADO \_ DE \_ PLANTILLA MENUEX
 
-Define el encabezado de una plantilla de menú extendida. Esta definición de estructura solo es para explicación; no se encuentra en ningún archivo de encabezado estándar.
+Define el encabezado de una plantilla de menú extendida. Esta definición de estructura es solo para explicación; no está presente en ningún archivo de encabezado estándar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,22 +44,22 @@ typedef struct {
 **wVersion**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-El número de versión de la plantilla. Este miembro debe ser 1 para las plantillas de menú extendidas.
+Número de versión de la plantilla. Este miembro debe ser 1 para las plantillas de menú extendidas.
 
 </dd> <dt>
 
 **wOffset**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-Desplazamiento a la primera estructura [**de \_ \_ elementos de plantilla MENUEX**](menuex-template-item.md) , con respecto al final de este miembro de estructura. Si la primera definición de elemento sigue inmediatamente al miembro **dwHelpId** , este miembro debe ser 4.
+Desplazamiento a la primera estructura [**MENUEX \_ TEMPLATE \_ ITEM,**](menuex-template-item.md) con respecto al final de este miembro de estructura. Si la definición del primer elemento sigue inmediatamente al **miembro dwHelpId,** este miembro debe ser 4.
 
 </dd> <dt>
 
@@ -70,13 +70,13 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-El identificador de la ayuda de la barra de menús.
+Identificador de ayuda de la barra de menús.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-Una plantilla de menú extendida está formada por una estructura de **\_ \_ encabezado de plantilla de MENUEX** , seguida de una o varias estructuras de [**\_ \_ elemento de plantilla MENUEX**](menuex-template-item.md) contiguas. Las estructuras de **\_ \_ elementos de plantilla MENUEX** , que son de longitud variable, se alinean en los límites **DWORD** . Para crear un menú a partir de una plantilla de menú extendida en memoria, use la función [**LoadMenuIndirect**](/windows/desktop/api/Winuser/nf-winuser-loadmenuindirecta) .
+Una plantilla de menú extendida consta de una estructura **MENUEX \_ TEMPLATE \_ HEADER** seguida de una o varias estructuras [**MENUEX \_ TEMPLATE ITEM contiguas. \_**](menuex-template-item.md) Las **estructuras MENUEX \_ TEMPLATE \_ ITEM,** que tienen una longitud variable, se alinean en **los límites DWORD.** Para crear un menú a partir de una plantilla de menú extendida en memoria, use la [**función LoadMenuIndirect.**](/windows/desktop/api/Winuser/nf-winuser-loadmenuindirecta)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -99,10 +99,10 @@ Una plantilla de menú extendida está formada por una estructura de **\_ \_ enc
 [**LoadMenuIndirect**](/windows/desktop/api/Winuser/nf-winuser-loadmenuindirecta)
 </dt> <dt>
 
-[**\_elemento de plantilla MENUEX \_**](menuex-template-item.md)
+[**ELEMENTO DE PLANTILLA \_ MENUEX \_**](menuex-template-item.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Menús](menus.md)

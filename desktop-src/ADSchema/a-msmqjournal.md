@@ -1,11 +1,11 @@
 ---
-title: MSMQ-Journal atributo)
-description: Indica si los mensajes recuperados de la cola deben mantenerse en Journal.
+title: MSMQ-Journal atributo
+description: Indica si los mensajes recuperados de la cola deben mantenerse en el diario.
 ms.assetid: fb1f73eb-57f4-413f-bd7a-9dfd5e5c797f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de MSMQ-Journal
-- mSMQJournal esquema de AD de atributos
+- MSMQ-Journal esquema de AD de atributo
+- Esquema de AD del atributo mSMQJournal
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f8a28e7740e41f8209e37345e934a36d10512bc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8b45cbb39bc0a0fd0f217d91ce7471f1a0f587315df2902fb6ce83c11f10a114
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658835"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081849"
 ---
-# <a name="msmq-journal-attribute"></a>MSMQ-Journal atributo)
+# <a name="msmq-journal-attribute"></a>MSMQ-Journal atributo
 
-Indica si los mensajes recuperados de la cola deben mantenerse en Journal.
+Indica si los mensajes recuperados de la cola deben mantenerse en el diario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | MSMQ-Journal                         |
-| Nombre para mostrar de LDAP | mSMQJournal                          |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | mSMQJournal                          |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.918               |
-| System-ID-GUID    | 9a0dc321-c100-11d1-bbc5-0080c76670c0 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | 9a0dc321-c100-11d1-gni5-0080c76670c0 |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -55,18 +55,18 @@ Indica si los mensajes recuperados de la cola deben mantenerse en Journal.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Indica si los mensajes recuperados de la cola deben mantenerse en Journal.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Indica si los mensajes recuperados de la cola deben mantenerse en Journal.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -118,18 +118,18 @@ Indica si los mensajes recuperados de la cola deben mantenerse en Journal.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Indica si los mensajes recuperados de la cola deben mantenerse en Journal.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Indica si los mensajes recuperados de la cola deben mantenerse en Journal.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | True                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Verdadero                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**MSMQ-cola**](c-msmqqueue.md)<br/> |
+| Clases usadas en        | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 
 
 

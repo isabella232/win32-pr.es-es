@@ -1,17 +1,17 @@
 ---
 description: Indica la compresión de audio utilizada en el archivo de audio.
 ms.assetid: 60c10412-ceda-42f8-8271-6ac82819b72f
-title: System. audio. Compression
+title: System.Audio.Compression
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46713b8c4dee584fbfe8072c8f00af4d2d29df61
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2b48c5370f160a1c7077638a2a4d7771c0bf7e30f2d7bd9dc3d0063d2bed60d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033713"
 ---
-# <a name="systemaudiocompression"></a>System. audio. Compression
+# <a name="systemaudiocompression"></a>System.Audio.Compression
 
 Indica la compresión de audio utilizada en el archivo de audio.
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -48,7 +48,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -60,7 +60,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -78,7 +78,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

@@ -1,23 +1,23 @@
 ---
-description: El proxy de propiedad de la Directiva de metadatos de la foto System. GPS. DestLatitude.
+description: Proxy de propiedad para la directiva de metadatos de fotos System.GPS.DestLatitude.
 ms.assetid: 640b9b30-d633-4a5b-a1c8-593d48461c7b
-title: Proxy System. GPS. DestLatitude
+title: System.GPS.DestLatitude Proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 10f8ced7e85a3c2d2af267e3dae99f6d0d6db027
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd57de1ff3b6be0d9a7844cb8a787aa3e50633f65e7401327849a60eb900d2bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087876"
 ---
-# <a name="systemgpsdestlatitude-proxy"></a>Proxy System. GPS. DestLatitude
+# <a name="systemgpsdestlatitude-proxy"></a>System.GPS.DestLatitude Proxy
 
-El proxy de propiedad de la Directiva de metadatos de la foto System. GPS. DestLatitude.
+Proxy de propiedad para la directiva de metadatos de fotos System.GPS.DestLatitude.
 
 ### <a name="description"></a>Descripción
 
-El proxy de propiedad devuelve un par racional a a través del miembro uhVal de [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) .
+El proxy de propiedad devuelve un par racionalizado a través del [miembro PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) uhVal.
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,23 +27,23 @@ JPEG, TIFF
 
 Sí
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ UI8
 
 ### <a name="denominator"></a>Denominador
 
-HighPart de uhVal.
+HighPart de la clase uhVal.
 
-### <a name="numerator"></a>Numera
+### <a name="numerator"></a>Numerador
 
-LowPart de uhVal.
+LowPart de la clase uhVal.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. GPS. DestLatitude](../properties/props-system-gps-destlatitude.md)
+[System.GPS.DestLatitude](../properties/props-system-gps-destlatitude.md)
 </dt> </dl>
 
  

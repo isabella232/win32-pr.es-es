@@ -4,16 +4,16 @@ ms.assetid: 1DC5A894-9092-469D-893F-29E9716C15F9
 title: Métodos ICertGetConfig
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d452f06452e1ca2953676fdb6b0ee92f0f1305f5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ceaf4d13efd7aef5af13f068caed10229b9d86259fec22fb8775b2cb76ed90f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104423935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005853"
 ---
 # <a name="icertgetconfig-methods"></a>Métodos ICertGetConfig
 
-La interfaz [**ICertGetConfig**](/windows/desktop/api/Certcli/nn-certcli-icertgetconfig) expone los métodos siguientes.
+La [**interfaz ICertGetConfig**](/windows/desktop/api/Certcli/nn-certcli-icertgetconfig) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

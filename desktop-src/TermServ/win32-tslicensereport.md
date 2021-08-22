@@ -1,11 +1,11 @@
 ---
-title: Win32_TSLicenseReport (clase)
-description: Proporciona instancias de Servicios de Escritorio remoto licencia de acceso de cliente por usuario (RDS \ 160; Los informes de uso de CAL por usuario) que se generan en el servidor de licencias de Escritorio remoto, y métodos para las operaciones de generación, recuperación y eliminación de informes de licencias.
+title: Win32_TSLicenseReport clase
+description: Proporciona instancias de Servicios de Escritorio remoto licencia de acceso de cliente por usuario (RDS \ 160; Por cal de usuario) informes de uso que se generan en el servidor de licencias de Escritorio remoto y métodos para las operaciones de generación, captura y eliminación de informes de licencias.
 ms.assetid: 8d67f158-cda3-4cf4-a766-09d08c21c49e
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSLicenseReport clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSLicenseReport de clase, se describe
+- Win32_TSLicenseReport clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -23,16 +23,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de997056222c1b525253f320f6fe191f017614f9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 93280c00cbd20993907901e1f9b8c16330863a47bddd4e08bc86d51b4b837233
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137838"
 ---
-# <a name="win32_tslicensereport-class"></a>\_Clase Win32 TSLicenseReport
+# <a name="win32_tslicensereport-class"></a>Clase \_ TSLicenseReport de Win32
 
-Proporciona instancias de Servicios de Escritorio remoto informes de uso de licencias de acceso de cliente por usuario (CAL por usuario de RDS) que se generan en el servidor de licencias de Escritorio remoto y métodos para la generación de informes de licencias, la recuperación y las operaciones de eliminación.
+Proporciona instancias de Servicios de Escritorio remoto informes de uso de la licencia de acceso de cliente por usuario (CAL de RDS por usuario) que se generan en el servidor de licencias de Escritorio remoto y métodos para las operaciones de generación, captura y eliminación de informes de licencias.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,20 +59,20 @@ La **clase \_ TSLicenseReport de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ TSLicenseReport** tiene estos métodos.
+La **clase \_ TSLicenseReport de Win32** tiene estos métodos.
 
 
 
 | Método                                                                                                         | Descripción                                                                                                                                                                                     |
 |:---------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**DeleteReport**](deletereport-win32-tslicensereport.md)                                                     | Elimina un objeto de informe en el servidor de licencias de Escritorio remoto. No es un método estático.<br/>                                                                                           |
-| [**FetchReportEntries**](fetchreportentries-win32-tslicensereport.md)                                         | Recupera entradas en el objeto de informe.<br/>                                                                                                                                              |
-| [**FetchReportFailedPerUserEntries**](fetchreportfailedperuserentries-win32-tslicensereport.md)               | Recupera los detalles de las licencias de acceso de cliente por usuario (cal por usuario de RDS) con Servicios de Escritorio remoto error en el informe.<br/>                                                             |
-| [**FetchReportFailedPerUserSummaryEntries**](fetchreportfailedperusersummaryentries-win32-tslicensereport.md) | Recupera información de Resumen de las licencias de acceso de cliente por usuario de Servicios de Escritorio remoto con errores (cal por usuario de RDS) del informe.<br/>                                                 |
-| [**FetchReportPerDeviceEntries**](fetchreportperdeviceentries-win32-tslicensereport.md)                       | Recupera la información de las licencias de acceso de cliente por dispositivo de Servicios de Escritorio remoto emitidas (cal por dispositivo de RDS) del informe.<br/>                                                     |
-| [**FetchReportSummaryEntries**](win32-tslicensereport-fetchreportsummaryentries.md)                           | Recupera los resúmenes de licencia del objeto de informe.<br/>                                                                                                                                  |
-| [**GenerateReport**](generatereport-win32-tslicensereport.md)                                                 | No se admite este método.<br/> **Windows server 2008 R2 y Windows server 2008:** Genera un informe de uso de licencias por usuario actual en el servidor de licencias de Escritorio remoto.<br/> |
-| [**GenerateReportEx**](generatereportex-win32-tslicensereport.md)                                             | Genera un informe de uso de licencias por usuario actual en el servidor de licencias de Escritorio remoto.<br/>                                                                                              |
+| [**DeleteReport**](deletereport-win32-tslicensereport.md)                                                     | Elimina un objeto de informe en el Escritorio remoto de licencias. No se trata de un método estático.<br/>                                                                                           |
+| [**FetchReportEntries**](fetchreportentries-win32-tslicensereport.md)                                         | Recupera las entradas del objeto de informe.<br/>                                                                                                                                              |
+| [**FetchReportFailedPerUserEntries**](fetchreportfailedperuserentries-win32-tslicensereport.md)               | Recupera los detalles de los Servicios de Escritorio remoto licencias de acceso de cliente por usuario (CAL de RDS por usuario) del informe.<br/>                                                             |
+| [**FetchReportFailedPerUserSummaryEntries**](fetchreportfailedperusersummaryentries-win32-tslicensereport.md) | Recupera la información de resumen de los Servicios de Escritorio remoto licencias de acceso de cliente por usuario (CAL de RDS por usuario) del informe.<br/>                                                 |
+| [**FetchReportPerDeviceEntries**](fetchreportperdeviceentries-win32-tslicensereport.md)                       | Recupera la información de las licencias Servicios de Escritorio remoto acceso de cliente por dispositivo (CAL de RDS por dispositivo) del informe.<br/>                                                     |
+| [**FetchReportSummaryEntries**](win32-tslicensereport-fetchreportsummaryentries.md)                           | Recupera resúmenes de licencia del objeto de informe.<br/>                                                                                                                                  |
+| [**GenerateReport**](generatereport-win32-tslicensereport.md)                                                 | No se admite este método.<br/> **Windows Server 2008 R2 y Windows Server 2008:** Genera un informe de uso de licencias por usuario actual en Escritorio remoto servidor de licencias.<br/> |
+| [**GenerateReportEx**](generatereportex-win32-tslicensereport.md)                                             | Genera un informe de uso de licencias por usuario actual en Escritorio remoto servidor de licencias.<br/>                                                                                              |
 
 
 
@@ -93,7 +93,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nombre del informe.
@@ -103,67 +103,67 @@ Nombre del informe.
 **GenerationDateTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **[DateTime](/windows/desktop/WmiSdk/datetime)**
+Tipo de datos: **[DATETIME](/windows/desktop/WmiSdk/datetime)**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha y hora de generación de informes de licencias de escritorio remoto.
+Fecha y hora de generación de informes de licencias de Escritorio remoto.
 
 </dd> <dt>
 
 **InstalledLicenses**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **EN DESUSO**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Esta propiedad no es compatible.
 
-**Windows server 2008 R2 y Windows server 2008:** Número de cal por usuario de RDS instaladas.
+**Windows Server 2008 R2 y Windows Server 2008:** Número de CAL de RDS por usuario que están instaladas.
 
 </dd> <dt>
 
 **LicenseUsageCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **EN DESUSO**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Esta propiedad no es compatible.
 
-**Windows server 2008 R2 y Windows server 2008:** Número de cal por usuario de RDS que están actualmente en uso.
+**Windows Server 2008 R2 y Windows Server 2008:** Número de CAL de RDS por usuario que están actualmente en uso.
 
 </dd> <dt>
 
 **ScopeType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **EN DESUSO**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Esta propiedad no es compatible.
 
-**Windows server 2008 R2 y Windows server 2008:** Tipo de ámbito de informe de licencias de escritorio remoto.
+**Windows Server 2008 R2 y Windows Server 2008:** Tipo de ámbito de informe de licencias de Escritorio remoto.
 
 </dd> <dt>
 
@@ -176,35 +176,35 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Calificadores: [ **EN DESUSO**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 Esta propiedad no es compatible.
 
-**Windows server 2008 R2 y Windows server 2008:** Valor de ámbito del informe de licencias de escritorio remoto.
+**Windows Server 2008 R2 y Windows Server 2008:** Valor del ámbito del informe de licencias de Escritorio remoto.
 
 </dd> <dt>
 
 **Versión**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Versión del informe de licencias de escritorio remoto.
+Versión del informe de licencias de Escritorio remoto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los informes que se generan mediante WMI se muestran en el administrador de licencias de escritorio remoto. Los informes que se eliminan mediante WMI también se eliminan del administrador de licencias de escritorio remoto.
+Los informes generados mediante WMI se muestran en el Administrador de licencias de Escritorio remoto. Los informes que se eliminan mediante WMI también se eliminan del Administrador de licencias de Escritorio remoto.
 
-Para usar esta clase, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para usar esta clase.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del Kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -215,7 +215,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |
 | Espacio de nombres<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 

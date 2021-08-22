@@ -4,16 +4,16 @@ description: En este tema se proporciona información sobre los roles de objeto 
 ms.assetid: 0c3a3ccf-f02a-4aca-9380-a13774598a19
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f17e8573142a57e0acf08980895fdae3ea6d1841
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: d4e29a4ef0345513912c8ad08e3a322e01b56bd3245291e9def64a49b35ac22b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444006"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052573"
 ---
 # <a name="other-object-roles-and-supported-methods-msaa-ui-element-reference"></a>Otros roles de objeto y métodos admitidos (Referencia de elementos de la interfaz de usuario de MSAA)
 
-En este tema se proporciona información sobre los roles de objeto que no se incluyen en los temas anteriores para los elementos de la interfaz de usuario. Cada rol de objeto incluye una lista de los métodos y propiedades [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) que se admiten para el rol de objeto. Aunque otros temas documentan propiedades y métodos **IAccessible** admitidos para los elementos de la interfaz de usuario, en este tema se enumeran los métodos y propiedades que puede esperar que se admiten para un rol de objeto determinado. Muchos de los elementos de la interfaz de usuario que podrían tener uno de los roles enumerados aquí se suelen ver en los exploradores.
+En este tema se proporciona información sobre los roles de objeto que no se incluyen en los temas anteriores para los elementos de la interfaz de usuario. Cada rol de objeto incluye una lista de los métodos y propiedades [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) que se admiten para el rol de objeto. Aunque otros temas documentan métodos y propiedades **IAccessible** admitidos para elementos de la interfaz de usuario, en este tema se enumeran los métodos y propiedades que puede esperar que se puedan usar para un rol de objeto determinado. Muchos de los elementos de la interfaz de usuario que pueden tener uno de los roles enumerados aquí se suelen ver en los exploradores.
 
 > [!Note]  
 > Use este tema como guía. Se recomienda encarecidamente usar herramientas de Microsoft Active Accessibility para comprobar el comportamiento esperado de un rol de objeto individual.
@@ -269,7 +269,7 @@ Para obtener más información sobre este rol, vea [**DIAGRAMA DEL SISTEMA DE \_
 -   get \_ accRole
 -   get \_ accState
 
-## <a name="role_system_dial"></a>MARCADO \_ DEL SISTEMA DE \_ ROL
+## <a name="role_system_dial"></a>MARCACIÓN \_ DEL SISTEMA \_ DE ROL
 
 Para obtener más información sobre este rol, vea [**ROLE \_ SYSTEM \_ DIAL**](object-roles.md).
 
@@ -308,7 +308,7 @@ Para obtener más información sobre este rol, vea [**ROLE \_ SYSTEM \_ DOCUMENT
 -   get \_ accRole
 -   get \_ accState
 
-## <a name="role_system_droplist"></a>LISTA DESPLEGABLE \_ DEL \_ SISTEMA DE ROL
+## <a name="role_system_droplist"></a>LISTA DESPLEGABLE \_ DEL \_ SISTEMA DE ROLES
 
 Para obtener más información sobre este rol, vea [**ROLE \_ SYSTEM \_ DROPLIST**](object-roles.md).
 

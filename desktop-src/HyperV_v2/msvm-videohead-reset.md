@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2cf736e28d6ef77944b2177e0f70ecbcff1ddc88
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a6ed2081a77c9de8682e97dab0e5f99913b20dee2c78cda47c95034dd2aaecb6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119340355"
 ---
 # <a name="reset-method-of-the-msvm_videohead-class"></a>Método Reset de la clase Msvm \_ VideoHead
 

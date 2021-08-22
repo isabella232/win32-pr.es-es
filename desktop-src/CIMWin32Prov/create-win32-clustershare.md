@@ -1,8 +1,8 @@
 ---
-description: Crea una nueva instancia de ClusterShare de Win32 \_ .
+description: Crea una nueva instancia de \_ ClusterShare de Win32.
 ms.assetid: a6fde28d-f19e-4a31-8f0d-35927c75a030
 ms.tgt_platform: multiple
-title: Método Create de la clase Win32_ClusterShare
+title: Método Create de la Win32_ClusterShare clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -10,16 +10,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7cbf7c42b8523bcd12b19e9b474ecc50bd031939
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: edaafa00f792cf01b4166d525171cf15b7f781c8c0c943c17377b3bd9b3401dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153512"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020593"
 ---
-# <a name="create-method-of-the-win32_clustershare-class"></a>Método Create de la \_ clase Win32 ClusterShare
+# <a name="create-method-of-the-win32_clustershare-class"></a>Método Create de la clase ClusterShare de Win32 \_
 
-Crea una nueva instancia de [**\_ ClusterShare de Win32**](win32-clustershare.md) .
+Crea una nueva [**instancia de \_ ClusterShare de Win32.**](win32-clustershare.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,32 +42,32 @@ static uint32 Create(
 
 <dl> <dt>
 
-*Ruta de acceso* \[ de\]
+*Ruta de acceso* \[ En\]
 </dt> <dd>
 
-Ruta de acceso local del recurso compartido de Windows.
+Ruta de acceso local del recurso Windows compartido.
 
-Ejemplo, "C: \\ archivos de programa".
+Ejemplo, "C: \\ Archivos de programa".
 
 </dd> <dt>
 
-*Nombre* \[ de de\]
+*Nombre* \[ En\]
 </dt> <dd>
 
-El alias de una ruta de acceso configurada como un recurso compartido en un equipo con Windows.
+Alias de una ruta de acceso configurada como recurso compartido en un sistema informático que ejecuta Windows.
 
-Ejemplo, "Public".
+Ejemplo, "public".
 
 </dd> <dt>
 
-*Tipo* \[ de de\]
+*Tipo* \[ En\]
 </dt> <dd>
 
-Tipo de recurso que se va a compartir. Entre los tipos se incluyen las unidades de disco, las colas de impresión, las comunicaciones entre procesos (IPC) y los dispositivos generales.
+Tipo de recurso que se comparte. Los tipos incluyen: unidades de disco, colas de impresión, comunicaciones entre procesos (IPC) y dispositivos generales.
 
 <dt>
 
-0 (0X0)
+0 (0x0)
 </dt> <dd>
 
 Unidad de disco
@@ -81,14 +81,14 @@ Cola de impresión
 
 </dd> <dt>
 
-2 (0X2)
+2 (0x2)
 </dt> <dd>
 
 Dispositivo
 
 </dd> <dt>
 
-3 (0X3)
+3 (0x3)
 </dt> <dd>
 
 IPC
@@ -119,35 +119,35 @@ Administrador de dispositivos
 2147483651 (0x80000003)
 </dt> <dd>
 
-Administración de IPC
+Administrador de IPC
 
 </dd> </dl> </dd> <dt>
 
-*MaximumAllowed* \[ en, opcional\]
+*MaximumAllowed* \[ in, opcional\]
 </dt> <dd>
 
-Límite en el número máximo de usuarios a los que se les permite usar este recurso al mismo tiempo.
+Limite el número máximo de usuarios que pueden usar este recurso simultáneamente.
 
 </dd> <dt>
 
-*Descripción* \[ de en, opcional\]
+*Descripción* \[ in, opcional\]
 </dt> <dd>
 
 Descripción del objeto.
 
 </dd> <dt>
 
-*Contraseña* \[ de en, opcional\]
+*Contraseña* \[ in, opcional\]
 </dt> <dd>
 
-TBD
+Por determinar
 
 </dd> <dt>
 
-*Acceso a* \[ en, opcional\]
+*Acceso* \[ in, opcional\]
 </dt> <dd>
 
-Instancia integrada opcional de una [**clase \_ SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) que contiene el descriptor de seguridad para el nuevo recurso compartido.
+Instancia incrustada opcional de una [**clase \_ SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) que contiene el descriptor de seguridad para el nuevo recurso compartido.
 
 </dd> </dl>
 
@@ -157,10 +157,10 @@ Instancia integrada opcional de una [**clase \_ SecurityDescriptor de Win32**](/
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                    |
+| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                       |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>Cimwin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>Cimwin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -169,7 +169,7 @@ Instancia integrada opcional de una [**clase \_ SecurityDescriptor de Win32**](/
 
 <dl> <dt>
 
-[**Win32 \_ ClusterShare**](win32-clustershare.md)
+[**ClusterShare de Win32 \_**](win32-clustershare.md)
 </dt> </dl>
 
  

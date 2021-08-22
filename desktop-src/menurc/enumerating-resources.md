@@ -5,18 +5,18 @@ ms.assetid: 388deaa1-3b04-43fa-aad2-8b52376d570c
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: project-verbatim
-ms.openlocfilehash: b978636303f3fc5bcae8c1d854289dde42ae0247
-ms.sourcegitcommit: 78ce1d1e3f12ee3e08390868e5b93c034f437657
+ms.openlocfilehash: 6d3fbe60e3013fbeabdb21d74999040b51c42be2a1bb4521cda28a976bfe7aa5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111910272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034343"
 ---
 # <a name="enumerating-resources"></a>Enumeración de recursos
 
-En determinadas situaciones, es posible que desee detectar el contenido de recursos de un módulo portable ejecutable (PE) desconocido. El Windows SDK proporciona funciones de enumeración de recursos que permiten a la aplicación obtener listas de tipos de recursos, nombres e idiomas en un módulo especificado.
+En determinadas situaciones, es posible que desee detectar el contenido de los recursos de un módulo portable ejecutable (PE) desconocido. El SDK Windows proporciona funciones de enumeración de recursos que permiten a la aplicación obtener listas de tipos de recursos, nombres e idiomas en un módulo especificado.
 
-* Las [**funciones EnumResourceTypeW**](/windows/win32/api/Winbase/nf-winbase-enumresourcetypesw) y [**EnumResourceTypesExW**](/windows/win32/api/libloaderapi/nf-libloaderapi-enumresourcetypesexw) proporcionan una lista de los tipos de recursos que se encuentran en el módulo.
+* Las [**funciones EnumResourceTypeW**](/windows/win32/api/Winbase/nf-winbase-enumresourcetypesw) y [**EnumResourceTypesExW**](/windows/win32/api/libloaderapi/nf-libloaderapi-enumresourcetypesexw) proporcionan una lista de tipos de recursos que se encuentran en el módulo.
 * Las [**funciones EnumResourceNamesW**](/windows/win32/api/libloaderapi/nf-libloaderapi-enumresourcenamesw) y [**EnumResourceNamesExW**](/windows/win32/api/libloaderapi/nf-libloaderapi-enumresourcenamesexw) proporcionan el nombre de cada recurso dentro de un tipo determinado.
 * Las [**funciones EnumResourceLanguagesW**](/windows/win32/api/Winbase/nf-winbase-enumresourcelanguagesw) y [**EnumResourceLanguagesExW**](/windows/win32/api/libloaderapi/nf-libloaderapi-enumresourcelanguagesexw) proporcionan el idioma de cada recurso de un nombre y tipo determinados. 
 

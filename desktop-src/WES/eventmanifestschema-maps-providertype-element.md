@@ -1,9 +1,9 @@
 ---
-title: Elemento Maps (ProviderType)
-description: Define una lista de pares de nombre/valor a los que se puede hacer referencia en la sección de plantilla del manifiesto.
+title: elemento maps (ProviderType)
+description: Define una lista de pares nombre-valor a los que puede hacer referencia en la sección de plantilla del manifiesto.
 ms.assetid: a0f7bc82-146b-4da1-a880-d4ba4f1993ec
 keywords:
-- elemento Maps EventLog
+- elemento maps EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 76299278aefdfd1b50f9cd31af62dfa9b919a6c6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 50c4d11ca81a513981f89c1b60c5219455744cf972bfd69f345028a9d2e5a22d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104533825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136348"
 ---
-# <a name="maps-providertype-element"></a>Elemento Maps (ProviderType)
+# <a name="maps-providertype-element"></a>elemento maps (ProviderType)
 
-Define una lista de pares de nombre/valor a los que se puede hacer referencia en la sección de plantilla del manifiesto.
+Define una lista de pares nombre-valor a los que puede hacer referencia en la sección de plantilla del manifiesto.
 
 ``` syntax
 <xs:element name="maps"
@@ -30,7 +30,7 @@ Define una lista de pares de nombre/valor a los que se puede hacer referencia en
  />
 ```
 
-El elemento **Maps** se define mediante el tipo complejo de [**ProviderType**](eventmanifestschema-providertype-complextype.md) .
+El **elemento maps** se define mediante el tipo complejo [**ProviderType.**](eventmanifestschema-providertype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **Maps** se define mediante el tipo complejo de [**ProviderType**](e
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento **Maps** se define mediante el tipo complejo de [**ProviderType**](e
 **Elemento primario**
 </dt> <dt>
 
-[**proveedor (EventsType)**](eventmanifestschema-provider-eventstype-element.md)
+[**provider (EventsType)**](eventmanifestschema-provider-eventstype-element.md)
 </dt> </dl>
 
  

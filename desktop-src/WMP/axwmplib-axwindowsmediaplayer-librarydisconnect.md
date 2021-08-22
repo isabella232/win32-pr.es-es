@@ -1,9 +1,9 @@
 ---
 title: Evento LibraryDisconnect del objeto AxWindowsMediaPlayer
-description: El evento LibraryDisconnect se produce cuando una biblioteca ya no está disponible.
+description: El evento LibraryDisconnect tiene lugar cuando una biblioteca ya no está disponible.
 ms.assetid: 053d914a-dcd9-4fd6-a789-10c26147d08a
 keywords:
-- Evento LibraryDisconnect del objeto AxWindowsMediaPlayer Media Player de Windows
+- Evento LibraryDisconnect del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 058c75ed0d1173661b16baa6e4b4394ba4d0c38f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a032dc95a68430768b0f2aa109a56dae80cdaecb14b67eb5dbf6b2657cdd5107
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136008"
 ---
 # <a name="librarydisconnect-event-of-the-axwindowsmediaplayer-object"></a>Evento LibraryDisconnect del objeto AxWindowsMediaPlayer
 
-El evento LibraryDisconnect se produce cuando una biblioteca ya no está disponible.
+El evento LibraryDisconnect tiene lugar cuando una biblioteca ya no está disponible.
 
 ``` syntax
 [C#]
@@ -41,19 +41,19 @@ Private Sub player_LibraryDisconnect(
 
 ## <a name="event-data"></a>Datos del evento
 
-El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ LibraryDisconnectEventHandler**. Este controlador recibe un argumento de tipo **AxWMPLib. \_ WMPOCXEvents \_ LibraryDisconnectEvent**, que contiene la siguiente propiedad relacionada con este evento.
+El controlador asociado a este evento es de tipo **AxWMPLib. \_ Biblioteca \_ WMPOCXEventsDisconnectEventHandler**. Este controlador recibe un argumento de tipo **AxWMPLib. \_ WMPOCXEvents \_ LibraryDisconnectEvent**, que contiene la siguiente propiedad relacionada con este evento.
 
 
 
 | Propiedad | Descripción                                                                                   |
 |----------|-----------------------------------------------------------------------------------------------|
-| pLibrary | **WMPLib. IWMPLibrary** La interfaz que representa la biblioteca que se ha desconectado.<br/> |
+| pLibrary | **WMPLib.IWMPLibrary** Interfaz que representa la biblioteca desconectada.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este evento no se produce para la biblioteca local.
 

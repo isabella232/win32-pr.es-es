@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: IndexInfo. CompareOptions (propiedad)'
-title: Propiedad IndexInfo. CompareOptions
+description: 'Más información sobre: Propiedad IndexInfo.CompareOptions'
+title: IndexInfo.CompareOptions, propiedad
 TOCTitle: 'CompareOptions property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.IndexInfo.CompareOptions
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.indexinfo.compareoptions(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ae4e9f77a8e899c4874e18c8faaa079a7d2cf83d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5bb3ba11f462d29d3298d344d3230c7aef0539f94cd65c4bb3441c6d5d5fb824
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039483"
 ---
-# <a name="indexinfocompareoptions-property"></a>Propiedad IndexInfo. CompareOptions
+# <a name="indexinfocompareoptions-property"></a>IndexInfo.CompareOptions, propiedad
 
-Obtiene el CompareOptions del índice.
+Obtiene compareOptions para el índice.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -58,14 +58,14 @@ public CompareOptions CompareOptions { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Globalization. CompareOptions](/dotnet/api/system.globalization.compareoptions)  
+Tipo: [System.Globalization.CompareOptions](/dotnet/api/system.globalization.compareoptions)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase IndexInfo](./indexinfo-class.md)
+[IndexInfo (clase)](./indexinfo-class.md)
 
-[Miembros de IndexInfo](./indexinfo-members.md)
+[Miembros IndexInfo](./indexinfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

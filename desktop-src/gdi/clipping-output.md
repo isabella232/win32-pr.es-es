@@ -1,19 +1,19 @@
 ---
-description: Una vez que el usuario hace clic en clip en el menú, la aplicación usa las coordenadas del rectángulo que creó el usuario para definir una región de recorte.
+description: Después de que el usuario haga clic en Clip en el menú, la aplicación usa las coordenadas del rectángulo que el usuario creó para definir una región de recorte.
 ms.assetid: 5ae60181-c72e-4a28-99eb-e23d35c46685
 title: Salida de recorte
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdc0181340b03421815ebe0f5cd8328d4793a406
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7a683fd276165b8c4556881f6aab47931978048b4699496a0f996abd888dbab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038143"
 ---
 # <a name="clipping-output"></a>Salida de recorte
 
-Una vez que el usuario hace clic en clip en el menú, la aplicación usa las coordenadas del rectángulo que creó el usuario para definir una región de recorte. Después de definir la región de recorte y seleccionarla en el contexto de dispositivo de la aplicación, la aplicación vuelve a dibujar la imagen de mapa de imágenes. La aplicación realiza estas tareas, como se indica a continuación.
+Después de que el usuario haga clic en Clip en el menú, la aplicación usa las coordenadas del rectángulo que el usuario creó para definir una región de recorte. Después de definir la región de recorte y seleccionarla en el contexto del dispositivo de la aplicación, la aplicación vuelve a dibujar la imagen de mapa de bits. La aplicación realiza estas tareas, como se muestra a continuación.
 
 
 ```C++

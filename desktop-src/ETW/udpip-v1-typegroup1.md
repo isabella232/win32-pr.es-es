@@ -18,14 +18,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: d7dadaac3d418d2351f9e27c694309deb373615e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2c4a16dc8e0d08ab70a15b1d6a887ff8863a1b81c46c4318421df2169fd5d196
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069345"
 ---
-# <a name="udpip_v1_typegroup1-class"></a>UdpIp \_ V1 \_ TypeGroup1 (clase)
+# <a name="udpip_v1_typegroup1-class"></a>Clase \_ \_ TypeGroup1 udpIp V1
 
 Esta clase es la clase de tipo de evento para eventos UDP/IP.
 
@@ -158,14 +158,14 @@ Número de puerto de origen.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

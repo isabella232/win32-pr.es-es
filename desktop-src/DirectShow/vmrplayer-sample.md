@@ -4,42 +4,42 @@ ms.assetid: 7fc893a6-afa5-4ada-9295-29122b43b21e
 title: Ejemplo de VMRPlayer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2214d94628a90daf0dd543f4e3a7f0166f4968a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85c6281147e2c140541ade480e5b2a5e0f0a1d4146dde59b4871441b68fec6f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119071919"
 ---
 # <a name="vmrplayer-sample"></a>Ejemplo de VMRPlayer
 
 ## <a name="description"></a>Descripción
 
-Este ejemplo usa el filtro de mezclador de vídeo 9 (VMR-9) para mezclar uno o dos vídeos en ejecución y una imagen estática.
+En este ejemplo se usa el filtro Representador de mezcla de vídeo 9 (VMR-9) para combinar alfa uno o dos vídeos en ejecución y una imagen estática.
 
 ## <a name="usage"></a>Uso
 
-Para abrir el primer vídeo, elija **abrir flujo principal** en el menú **archivo** . Para abrir un segundo vídeo, elija **abrir flujo secundario** en el menú **archivo** (primero debe abrir el flujo principal). Para reproducir el vídeo, haga clic en el botón **reproducir** .
+Para abrir el primer vídeo, elija **Abrir secuencia principal** en el **menú** Archivo. Para abrir un segundo vídeo, elija **Abrir secuencia secundaria** en el **menú** Archivo (primero debe abrir la secuencia principal). Para reproducir el vídeo, haga clic en **el botón Reproducir.**
 
-Puede establecer la posición, el tamaño y los valores alfa de los vídeos seleccionando **flujo principal** o **secuencia de Secondard** desde el menú de **propiedades de VMR** .
+Puede establecer los valores de posición, tamaño y alfa de los vídeos seleccionando **Secuencia** principal o Secuencia segunda **en** el menú Propiedades de **VMR.**
 
-Para agregar un mapa de bits estático sobre el vídeo, elija **imagen de aplicación estática** en el menú de **propiedades de VMR** y haga clic en el cuadro **Mostrar imagen de aplicación** . Puede usar el mismo cuadro de diálogo para controlar la posición, el tamaño y el valor alfa del mapa de bits.
+Para agregar un mapa de bits estático sobre el vídeo, elija **Imagen** de aplicación estática en el menú Propiedades de **VMR** y haga clic en el **cuadro Mostrar imagen de** aplicación. Puede usar el mismo cuadro de diálogo para controlar la posición, el tamaño y el valor alfa del mapa de bits.
 
-Para capturar la imagen de vídeo combinada, elija **capturar imagen de mapa de bits** en el menú de **propiedades de VMR** .
+Para capturar la imagen de vídeo combinado, elija **Capturar imagen de mapa de bits** en el menú Propiedades de **VMR.**
 
-También puede especificar la secuencia de imagen principal desde la línea de comandos:
+También puede especificar el flujo de imagen principal desde la línea de comandos:
 
-**VMRPlayer** **/p** *nombrearchivo*
+**Nombre de archivo de VMRPlayer** **/P** 
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-Para descargar los ejemplos del SDK de DirectShow, instale la versión más reciente de la [Windows SDK](https://msdn.microsoft.com/windowsvista/bb980924.aspx).
+Para descargar los ejemplos DirectShow SDK, instale la versión más reciente del [SDK de Windows.](https://msdn.microsoft.com/windowsvista/bb980924.aspx)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Ejemplos de DirectShow](directshow-samples.md)
+[DirectShow Muestras](directshow-samples.md)
 </dt> </dl>
 
  

@@ -1,8 +1,8 @@
 ---
-description: Las operaciones con privilegios requieren privilegios de seguridad como SeLoadDriverPrivilege (wbemPrivilegeLoadDriver en las constantes de API de scripting), un privilegio que debe habilitarse para una cuenta que está cargando un controlador de dispositivo.
+description: Las operaciones con privilegios requieren privilegios de seguridad como SeLoadDriverPrivilege (wbemPrivilegeLoadDriver en las constantes de API de scripting), privilegio que debe habilitarse para una cuenta que carga un controlador de dispositivo.
 ms.assetid: 11bb8723-f329-4083-8219-2256ce44a5e3
 ms.tgt_platform: multiple
-title: Ejecutar operaciones con privilegios
+title: Ejecución de operaciones con privilegios
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,24 +10,24 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 37abba9d774025825611e311f08414b50e660f65
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce87a5783462be86d6e2e2b0565e93d811b972393319a34f84be2ab3d8e34c64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050873"
 ---
-# <a name="executing-privileged-operations"></a>Ejecutar operaciones con privilegios
+# <a name="executing-privileged-operations"></a>Ejecución de operaciones con privilegios
 
-Las operaciones con privilegios requieren privilegios de seguridad como **SeLoadDriverPrivilege** (**WbemPrivilegeLoadDriver** en las [constantes de API de scripting](scripting-api-constants.md)), un privilegio que debe habilitarse para una cuenta que está cargando un controlador de dispositivo. No puede Agregar privilegios a un administrador o usuario a través de WMI, solo puede habilitar los privilegios que la cuenta ya tiene. Para obtener una lista de privilegios, [**consulte \_ constantes de privilegios**](privilege-constants.md).
+Las operaciones con privilegios requieren [privilegios](scripting-api-constants.md)de seguridad como **SeLoadDriverPrivilege** **(wbemPrivilegeLoadDriver en** las constantes de API de scripting), privilegio que debe habilitarse para una cuenta que carga un controlador de dispositivo. No puede agregar privilegios a un administrador o usuario a través de WMI, solo puede habilitar los privilegios que ya tiene la cuenta. Para obtener una lista de privilegios, vea [**Constantes \_ de privilegios**](privilege-constants.md).
 
-De forma predeterminada, un usuario local de un equipo puede leer datos estáticos del [*repositorio WMI*](gloss-w.md), escribir en instancias proporcionadas por los proveedores y ejecutar métodos de proveedor, a menos que el proveedor aplique requisitos de seguridad especiales por sí solos. Solo los administradores pueden [conectarse a un equipo remoto](connecting-to-wmi-on-a-remote-computer.md), cambiar los descriptores de seguridad o cambiar los datos estáticos del repositorio WMI, como una definición de clase WMI. Todos los privilegios están habilitados para una conexión remota. Para obtener más información, consulte [protección de una conexión WMI remota](securing-a-remote-wmi-connection.md).
+De forma predeterminada, un usuario local de un equipo puede leer datos estáticos del repositorio [*WMI,*](gloss-w.md)escribir en instancias proporcionadas por proveedores y ejecutar métodos de proveedor, a menos que el proveedor exija requisitos de seguridad especiales propios. Solo los administradores pueden [conectarse a](connecting-to-wmi-on-a-remote-computer.md)un equipo remoto, cambiar descriptores de seguridad o cambiar datos estáticos del repositorio WMI, como una definición de clase WMI. Todos los privilegios están habilitados para una conexión remota. Para obtener más información, [vea Proteger una conexión WMI remota.](securing-a-remote-wmi-connection.md)
 
-Las constantes de privilegios de C++ difieren de las que se usan en los lenguajes de automatización como Visual Basic. Los scripts deben usar el valor de la constante en lugar del nombre. Para obtener más información, vea [ejecutar operaciones con privilegios mediante C++](executing-privileged-operations-using-c-.md) o [ejecutar operaciones con privilegios mediante VBScript](executing-privileged-operations-using-vbscript.md).
+Las constantes de privilegios para C++ difieren de las que usan lenguajes de automatización como Visual Basic. Los scripts deben usar el valor de la constante en lugar del nombre. Para obtener más información, [vea Ejecutar operaciones con privilegios mediante C++](executing-privileged-operations-using-c-.md) o Ejecutar operaciones con [privilegios mediante VBScript](executing-privileged-operations-using-vbscript.md).
 
-Una causa común de los errores de acceso denegado cuando se usa WMI es la falta de un privilegio habilitado para las operaciones, como obtener todas las instancias de [**Win32 \_ NTEventlogFile**](/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)). Sin habilitar el privilegio **SeSecurity** , no se puede tener acceso al archivo de registro de seguridad.
+Una causa común de errores de acceso denegado al usar WMI es la falta de un privilegio habilitado para las operaciones, como obtener todas las instancias de [**\_ NTEventlogFile de Win32.**](/previous-versions/windows/desktop/legacy/aa394225(v=vs.85)) Sin habilitar el **privilegio SeSecurity,** no se puede acceder al archivo de registro de seguridad.
 
-En el ejemplo de código de VBScript siguiente se muestra cómo establecer el privilegio **SeSecurity** en la cadena de moniker. Cuando se usa en el moniker, el nombre de privilegio entre paréntesis quita el "se" inicial. Para obtener más información, vea [crear una cadena de moniker](constructing-a-moniker-string.md).
+En el ejemplo de código de VBScript siguiente se muestra cómo establecer el **privilegio SeSecurity** en la cadena de moniker. Cuando se usa en el moniker, el nombre de privilegio entre paréntesis quita la "Se" inicial. Para obtener más información, [vea Constructing a Moniker String](constructing-a-moniker-string.md).
 
 
 ```VB
@@ -49,7 +49,7 @@ Next
 
 <dl> <dt>
 
-[**Constantes de privilegio**](privilege-constants.md)
+[**Constantes de privilegios**](privilege-constants.md)
 </dt> </dl>
 
  

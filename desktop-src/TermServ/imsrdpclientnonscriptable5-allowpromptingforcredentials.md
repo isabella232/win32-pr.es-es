@@ -1,12 +1,12 @@
 ---
-title: Propiedad AllowPromptingForCredentials de IMsRdpClientNonScriptable5
-description: Especifica si el control ActiveX Escritorio remoto puede solicitar las credenciales al usuario.
+title: Propiedad IMsRdpClientNonScriptable5 AllowPromptingForCredentials
+description: Especifica si el control Escritorio remoto ActiveX puede solicitar credenciales al usuario.
 ms.assetid: 9a780886-39ee-4d3b-9a54-fa209708d9f8
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad AllowPromptingForCredentials
-- Propiedad AllowPromptingForCredentials Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable5, propiedad AllowPromptingForCredentials
+- Propiedad AllowPromptingForCredentials Servicios de Escritorio remoto
+- Propiedad AllowPromptingForCredentials Servicios de Escritorio remoto , interfaz IMsRdpClientNonScriptable5
+- Interfaz IMsRdpClientNonScriptable5 Servicios de Escritorio remoto , propiedad AllowPromptingForCredentials
 topic_type:
 - apiref
 api_name:
@@ -19,20 +19,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c326a83a46b41d3578c958e24fd901beb7c7b321
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: eea0fb854b5bb12533032cd6608228d81584cd8d9f4e99bccd8a5ba76b624f77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138758"
 ---
-# <a name="imsrdpclientnonscriptable5allowpromptingforcredentials-property"></a>IMsRdpClientNonScriptable5:: AllowPromptingForCredentials (propiedad)
+# <a name="imsrdpclientnonscriptable5allowpromptingforcredentials-property"></a>Propiedad IMsRdpClientNonScriptable5::AllowPromptingForCredentials
 
-Especifica si el control ActiveX Escritorio remoto puede solicitar las credenciales al usuario. Si esta propiedad contiene **Variant \_ true**, se puede solicitar credenciales al usuario. Si esta propiedad contiene **Variant \_ false**, no se puede solicitar credenciales al usuario.
+Especifica si el control Escritorio remoto ActiveX puede solicitar credenciales al usuario. Si esta propiedad contiene **VARIANT \_ TRUE**, se pueden solicitar credenciales al usuario. Si esta propiedad contiene **VARIANT \_ FALSE**, no se pueden solicitar credenciales al usuario.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -57,11 +57,11 @@ Especifica el nuevo valor de propiedad.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                          |
+| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                          |
 | Servidor mínimo compatible<br/> | Windows Server 2008 R2<br/>                                                             |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>        |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>        |
-| IID<br/>                      | IID \_ IMsRdpClientNonScriptable5 se define como 4f6996d5-d7b1-412C-b0ff-063718566907<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientNonScriptable5 se define como 4f6996d5-d7b1-412c-b0ff-063718566907<br/> |
 
 
 

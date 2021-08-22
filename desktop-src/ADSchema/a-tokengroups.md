@@ -1,11 +1,11 @@
 ---
-title: Token-Groups atributo)
-description: Un atributo calculado que contiene la lista de SID debido a una operación de expansión de pertenencia a grupos transitiva en un usuario o equipo determinado. No se pueden recuperar grupos de tokens si no hay ningún catálogo global presente para recuperar las pertenencias inversas transitivas.
+title: Token-Groups atributo
+description: Atributo calculado que contiene la lista de SID debido a una operación transitiva de expansión de pertenencia a grupos en un usuario o equipo determinado. Los grupos de tokens no se pueden recuperar si no hay ningún catálogo global para recuperar las pertenencias inversas transitivas.
 ms.assetid: bb430c9f-20b7-4f21-804d-fbd4864b6505
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Token-Groups
-- tokenGroups esquema de AD de atributos
+- Token-Groups esquema de AD del atributo
+- Esquema de AD del atributo tokenGroups
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5342d1ff2bf549796340532b0514d5c5b060c2c1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6b8971f9ba5baead73b7704760dcc86430f5ce1a318ac6bcbd9dfaf4125a21af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022073"
 ---
-# <a name="token-groups-attribute"></a>Token-Groups atributo)
+# <a name="token-groups-attribute"></a>Token-Groups atributo
 
-Un atributo calculado que contiene la lista de SID debido a una operación de expansión de pertenencia a grupos transitiva en un usuario o equipo determinado. No se pueden recuperar grupos de tokens si no hay ningún catálogo global presente para recuperar las pertenencias inversas transitivas.
+Atributo calculado que contiene la lista de SID debido a una operación transitiva de expansión de pertenencia a grupos en un usuario o equipo determinado. Los grupos de tokens no se pueden recuperar si no hay ningún catálogo global para recuperar las pertenencias inversas transitivas.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | Token-Groups                         |
-| Nombre para mostrar de LDAP | tokenGroups                          |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | El sistema establece este valor.     |
+| Ldap-Display-Name | tokenGroups                          |
+| Size              | \-                                   |
+| Privilegio actualizar  | El sistema establece este valor.     |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1301              |
-| System-ID-GUID    | b7c69e6d-2cc7-11d2-854e-00a0c983f608 |
-| Sintaxis            | [**Cadena (SID)**](s-string-sid.md)  |
+| System-Id-Guid    | b7c69e6d-2cc7-11d2-854e-00a0c983f608 |
+| Syntax            | [**String(Sid)**](s-string-sid.md)  |
 
 
 
@@ -44,7 +44,7 @@ Un atributo calculado que contiene la lista de SID debido a una operación de ex
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Un atributo calculado que contiene la lista de SID debido a una operación de ex
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -77,13 +77,13 @@ Un atributo calculado que contiene la lista de SID debido a una operación de ex
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -92,19 +92,19 @@ Un atributo calculado que contiene la lista de SID debido a una operación de ex
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -119,13 +119,13 @@ Un atributo calculado que contiene la lista de SID debido a una operación de ex
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -140,13 +140,13 @@ Un atributo calculado que contiene la lista de SID debido a una operación de ex
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -161,13 +161,13 @@ Un atributo calculado que contiene la lista de SID debido a una operación de ex
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -182,13 +182,13 @@ Un atributo calculado que contiene la lista de SID debido a una operación de ex
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |

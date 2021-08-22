@@ -1,19 +1,19 @@
 ---
-description: Especifica un archivo WSDL que se procesará para obtener información del contrato.
+description: Especifica un archivo WSDL para procesar la información del contrato.
 ms.assetid: d8f630cd-0541-431b-86a8-792846a85ea0
 title: elemento wsdl
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ef4bc7b76ce22184e4c2f1ceaa2131ef163a26d
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 158141fb8afdc216c47639f6bbb50c1d399e25f202ebbdd2f0a2c045859bffb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994712"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049523"
 ---
 # <a name="wsdl-element"></a>elemento wsdl
 
-Especifica un archivo WSDL que se procesará para obtener información del contrato.
+Especifica un archivo WSDL para procesar la información del contrato.
 
 ## <a name="usage"></a>Uso
 
@@ -33,8 +33,8 @@ No hay atributos.
 
 | Elemento                                           | Descripción                                                                                                                                       |
 |---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**excludeImport**](excludeimport.md)<br/> | Impide la generación de instrucciones de importación para destinos especificados denominados en \<wsdl:import> un elemento de un archivo WSDL. <br/> <br/> |
-| [**importHint**](importhint.md)<br/>       | Especifica la ubicación de descarga de una directiva que no especifica \<wsdl:import> explícitamente una ubicación.<br/> <br/>           |
+| [**excludeImport**](excludeimport.md)<br/> | Impide la generación de instrucciones import para destinos especificados denominados en \<wsdl:import> un elemento de un archivo WSDL. <br/> <br/> |
+| [**importHint**](importhint.md)<br/>       | Especifica la ubicación de descarga de una \<wsdl:import> directiva que no especifica explícitamente una ubicación.<br/> <br/>           |
 | [**Camino**](path.md)<br/>                   | Archivo y ruta de acceso del archivo de entrada WSDL.<br/> <br/>                                                                                      |
 
 

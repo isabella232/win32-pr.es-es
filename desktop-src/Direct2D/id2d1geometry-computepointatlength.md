@@ -1,6 +1,6 @@
 ---
 title: Métodos ID2D1Geometry ComputePointAtLength
-description: Calcula el vector de punto y tangente a la distancia especificada a lo largo de la geometría \ 160;.
+description: Calcula el punto y el vector tangente a la distancia especificada a lo largo de \ 160;geometry.
 ms.assetid: b76aa3db-2967-4baa-a449-f664b080fb74
 keywords:
 - Métodos de ComputePointAtLength Direct2D
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 5b49be0b5a17dd828c9bd86ca41b4a3ff115f47a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6665d5317b5359228f2e27803a8fee443ed8233e893cf7e8986e3af1c21a9373
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119342835"
 ---
-# <a name="id2d1geometrycomputepointatlength-methods"></a>ID2D1Geometry:: ComputePointAtLength (métodos)
+# <a name="id2d1geometrycomputepointatlength-methods"></a>Métodos ID2D1Geometry::ComputePointAtLength
 
 Calcula el vector de punto y tangente a la distancia especificada a lo largo de la geometría.
 
@@ -30,10 +30,10 @@ Calcula el vector de punto y tangente a la distancia especificada a lo largo de 
 
 | Método                                                                                                                                                                                                        | Descripción                                                                                                                                                                                        |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ComputePointAtLength (FLOAT, D2D1 \_ Matrix \_ 3X2 \_ F&, D2D1 \_ Point \_ 2F \* , D2D1 \_ Point \_ 2F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computepointatlength(float_constd2d1_matrix_3x2_f__d2d1_point_2f_d2d1_point_2f))              | Calcula el vector de punto y tangente a la distancia especificada a lo largo de la geometría después de que se haya transformado por la matriz especificada y se haya simplificado utilizando la tolerancia predeterminada.<br/>   |
-| [**ComputePointAtLength (FLOAT, D2D1 \_ Matrix \_ 3x2 \_ F \* , D2D1 \_ Point \_ 2F \* , D2D1 \_ Point \_ 2F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computepointatlength(float_constd2d1_matrix_3x2_f_d2d1_point_2f_d2d1_point_2f))             | Calcula el vector de punto y tangente a la distancia especificada a lo largo de la geometría después de que se haya transformado por la matriz especificada y se haya simplificado utilizando la tolerancia predeterminada.<br/>   |
-| [**ComputePointAtLength (FLOAT, D2D1 \_ Matrix \_ 3X2 \_ F&, Float, D2D1 \_ Point \_ 2F \* , D2D1 \_ Point \_ 2F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-combinewithgeometry(id2d1geometry_d2d1_combine_mode_constd2d1_matrix_3x2_f_float_id2d1simplifiedgeometrysink))  | Calcula el vector de punto y tangente a la distancia especificada a lo largo de la geometría después de que se haya transformado por la matriz especificada y se haya simplificado utilizando la tolerancia especificada.<br/> |
-| [**ComputePointAtLength (FLOAT, D2D1 \_ Matrix \_ 3x2 \_ F \* , Float, D2D1 \_ Point \_ 2F \* , D2D1 \_ Point \_ 2F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computepointatlength(float_constd2d1_matrix_3x2_f_float_d2d1_point_2f_d2d1_point_2f)) | Calcula el vector de punto y tangente a la distancia especificada a lo largo de la geometría después de que se haya transformado por la matriz especificada y se haya simplificado utilizando la tolerancia especificada.<br/> |
+| [**ComputePointAtLength(FLOAT,D2D1 \_ MATRIX \_ 3X2 \_ F&,D2D1 \_ POINT \_ 2F \* , D2D1 \_ POINT \_ 2F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computepointatlength(float_constd2d1_matrix_3x2_f__d2d1_point_2f_d2d1_point_2f))              | Calcula el punto y el vector tangente a la distancia especificada a lo largo de la geometría después de que la matriz especificada lo haya transformado y se haya aplanado con la tolerancia predeterminada.<br/>   |
+| [**ComputePointAtLength(FLOAT,D2D1 \_ MATRIX \_ 3X2 \_ F , \* D2D1 \_ POINT \_ 2F \* , D2D1 \_ POINT \_ 2F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computepointatlength(float_constd2d1_matrix_3x2_f_d2d1_point_2f_d2d1_point_2f))             | Calcula el punto y el vector tangente a la distancia especificada a lo largo de la geometría después de que la matriz especificada lo haya transformado y se haya aplanado con la tolerancia predeterminada.<br/>   |
+| [**ComputePointAtLength(FLOAT,D2D1 \_ MATRIX \_ 3X2 \_ F&,FLOAT,D2D1 \_ POINT \_ 2F \* , D2D1 \_ POINT \_ 2F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-combinewithgeometry(id2d1geometry_d2d1_combine_mode_constd2d1_matrix_3x2_f_float_id2d1simplifiedgeometrysink))  | Calcula el vector de punto y tangente a la distancia especificada a lo largo de la geometría después de que la matriz especificada lo haya transformado y aplanado con la tolerancia especificada.<br/> |
+| [**ComputePointAtLength(FLOAT,D2D1 \_ MATRIX \_ 3X2 \_ F , \* FLOAT,D2D1 \_ POINT \_ 2F \* , D2D1 POINT \_ \_ 2F \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-computepointatlength(float_constd2d1_matrix_3x2_f_float_d2d1_point_2f_d2d1_point_2f)) | Calcula el vector de punto y tangente a la distancia especificada a lo largo de la geometría después de que la matriz especificada lo haya transformado y aplanado con la tolerancia especificada.<br/> |
 
 
 
@@ -66,14 +66,14 @@ hr = m_pPathGeometry->ComputePointAtLength(
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

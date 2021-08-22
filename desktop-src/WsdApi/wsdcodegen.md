@@ -4,12 +4,12 @@ ms.assetid: 3d40172b-6ba1-4e42-9a1a-519c8e88c2b1
 title: wsdCodeGen, elemento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9861617854e0e75575f2993717f5b2a86515fb0f
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 67ffac9696371f53b073fa71c0b1903c826544a6f695b9b741b48936c0250d2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049543"
 ---
 # <a name="wsdcodegen-element"></a>wsdCodeGen, elemento
 
@@ -48,7 +48,7 @@ Es el elemento raíz de un archivo de script XML del generador de código WSDAPI
 | [**Macro**](macro.md)<br/>                               | Define el texto o CDATA que el elemento [**include**](include.md) va a reutilizar.<br/> <br/>                                                                                                                        |
 | [**Nombres**](namespace.md)<br/>                       | Describe un espacio de nombres que se usará para la generación de código.<br/> <br/>                                                                                                                                                |
 | [**relationshipMetadata**](relationshipmetadata.md)<br/> | Describe el host y los metadatos hospedados para el dispositivo.<br/> <br/>                                                                                                                                               |
-| [**thisModelMetadata**](thismodelmetadata.md)<br/>       | Metadatos del fabricante y del modelo para el dispositivo que se va a implementar. Este elemento solo se usa para implementaciones de dispositivos (hosts).<br/> <br/>                                                                  |
+| [**thisModelMetadata**](thismodelmetadata.md)<br/>       | Los metadatos del fabricante y del modelo para el dispositivo que se va a implementar. Este elemento solo se usa para implementaciones de dispositivos (hosts).<br/> <br/>                                                                  |
 | [**Wsdl**](wsdl.md)<br/>                                 | Especifica un archivo WSDL para procesar la información del contrato.<br/> <br/>                                                                                                                                           |
 | [**Xsd**](xsd.md)<br/>                                   | Especifica un archivo XSD para procesar la información del contrato.<br/> <br/>                                                                                                                                           |
 

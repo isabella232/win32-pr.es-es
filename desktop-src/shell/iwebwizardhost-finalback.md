@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: a0616388-cf94-4433-ae52-24f02f1d15ac
-ms.openlocfilehash: f131050bb5dd4cfc4b8533857c306f566f12ec2d
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 0338b20023fda059a5205c9a42a7b7d669c5554d5fca878fcb8904c807ceceae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119092612"
 ---
 # <a name="webwizardhostfinalback-method"></a>Método WebWizardHost.FinalBack
 
@@ -37,7 +37,7 @@ iRetVal = WebWizardHost.FinalBack()
 
 Este método no tiene parámetros.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Cuando el asistente muestra la primera página del  lado servidor y el usuario hace clic en el botón Atrás, el servidor invoca **FinalBack** cuando el controlador de eventos del cliente lo notifica.
 
@@ -47,8 +47,8 @@ Cuando el asistente muestra la primera página del  lado servidor y el usuario h
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                   |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
 | Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 
