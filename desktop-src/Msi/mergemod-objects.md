@@ -1,19 +1,19 @@
 ---
-description: En la tabla siguiente se enumeran los objetos e interfaces de Mergemod.
+description: En la tabla siguiente se enumeran las interfaces y los objetos Mergemod.
 ms.assetid: 7f242681-f8f3-494b-bdf7-eb35ab69fd6f
 title: Objetos Mergemod
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65bbaf3e65e743bcdcf2ef4b0b7eef5b4480a5f9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29489f513697d1a9df61427ff96e951f5279565777919b4fb345247fb85ef172
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118945492"
 ---
 # <a name="mergemod-objects"></a>Objetos Mergemod
 
-En la tabla siguiente se enumeran los objetos e interfaces de Mergemod.
+En la tabla siguiente se enumeran las interfaces y los objetos Mergemod.
 
 
 
@@ -24,7 +24,7 @@ En la tabla siguiente se enumeran los objetos e interfaces de Mergemod.
 | [**Dependencia**](dependency-object.md)             | [**IMsmDependency**](/windows/win32/api/mergemod/nn-mergemod-imsmdependency)                                 |
 | [**Error**](error-object.md)                       | [**IMsmError**](/windows/win32/api/mergemod/nn-mergemod-imsmerror)                                           |
 | [**GetFiles**](getfiles-object.md)                 | [**IMsmGetFiles**](/windows/win32/api/mergemod/nn-mergemod-imsmgetfiles)                                     |
-| [**Sin**](merge-object.md)                       | [**IMsmMerge2**](/windows/desktop/api/Mergemod/nn-mergemod-imsmmerge2)[**IMsmMerge**](/windows/win32/api/mergemod/nn-mergemod-imsmmerge) |
+| [**Combinar**](merge-object.md)                       | [**IMsmMerge2**](/windows/desktop/api/Mergemod/nn-mergemod-imsmmerge2)[**IMsmMerge**](/windows/win32/api/mergemod/nn-mergemod-imsmmerge) |
 
 
 

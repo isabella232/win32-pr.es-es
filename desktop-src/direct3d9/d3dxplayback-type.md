@@ -1,7 +1,7 @@
 ---
-description: Define el tipo de modos de bucle set de animación que se usan para la reproducción.
+description: Define el tipo de modos de bucle de conjunto de animación usados para la reproducción.
 ms.assetid: 2ce26bf0-2b33-4193-a58f-03493a051351
-title: Enumeración D3DXPLAYBACK_TYPE (D3dx9anim. h)
+title: D3DXPLAYBACK_TYPE enumeración (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: 0ce95b4765ec678c43c8e0ed92008deeb9927298
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 642c3e1d49792016ea1d161352d4dda9fc1330aab544880e754659c735d1ecd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103914717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044793"
 ---
-# <a name="d3dxplayback_type-enumeration"></a>\_Enumeración de tipo D3DXPLAYBACK
+# <a name="d3dxplayback_type-enumeration"></a>D3DXPLAYBACK \_ TYPE (enumeración)
 
-Define el tipo de modos de bucle set de animación que se usan para la reproducción.
+Define el tipo de modos de bucle de conjunto de animación usados para la reproducción.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -42,17 +42,17 @@ typedef enum D3DXPLAYBACK_TYPE {
 
 <dl> <dt>
 
-<span id="D3DXPLAY_LOOP"></span><span id="d3dxplay_loop"></span>**\_Bucle D3DXPLAY**
+<span id="D3DXPLAY_LOOP"></span><span id="d3dxplay_loop"></span>**BUCLE \_ D3DXPLAY**
 </dt> <dd>
 
-La animación se repite indefinidamente.
+La animación se repite sin fin.
 
 </dd> <dt>
 
-<span id="D3DXPLAY_ONCE"></span><span id="d3dxplay_once"></span>**D3DXPLAY \_ una vez**
+<span id="D3DXPLAY_ONCE"></span><span id="d3dxplay_once"></span>**D3DXPLAY \_ UNA VEZ**
 </dt> <dd>
 
-La animación se reproduce una vez y luego se detiene en el último fotograma.
+La animación se reproduce una vez y, a continuación, se detiene en el último fotograma.
 
 </dd> <dt>
 
@@ -63,10 +63,10 @@ La animación alterna infinitamente entre la reproducción hacia delante y la re
 
 </dd> <dt>
 
-<span id="D3DXPLAY_FORCE_DWORD"></span><span id="d3dxplay_force_dword"></span>**D3DXPLAY \_ forzar \_ DWORD**
+<span id="D3DXPLAY_FORCE_DWORD"></span><span id="d3dxplay_force_dword"></span>**D3DXPLAY \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase en un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, a
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9anim. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9anim.h</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ Obliga a esta enumeración a compilarse en 32 bits de tamaño. Sin este valor, a
 
 <dl> <dt>
 
-[Enumeraciones de D3DX](dx9-graphics-reference-d3dx-enums.md)
+[Enumeraciones D3DX](dx9-graphics-reference-d3dx-enums.md)
 </dt> </dl>
 
  

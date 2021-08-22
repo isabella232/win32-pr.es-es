@@ -1,23 +1,23 @@
 ---
-description: Los desarrolladores de paquetes de Windows Installer pueden optar por usar un tipo de acción personalizada 38 cuando las acciones estándar no son suficientes para ejecutar la instalación.
+description: Los desarrolladores Windows paquetes del instalador pueden optar por usar un tipo de acción personalizada 38 cuando las acciones estándar no son suficientes para ejecutar la instalación.
 ms.assetid: bb50fcbf-3de5-4f5a-b799-cec5d68fdd9d
 title: Tipo de acción personalizada 38
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b9372cd5035d27c02feaef3ed455ddeb756c449
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 361da558a6b1cf9d483d5cdb84d3a4290f9d25fb88ed844d564a26228378a14e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118947946"
 ---
 # <a name="custom-action-type-38"></a>Tipo de acción personalizada 38
 
-Esta acción personalizada se escribe en VBScript. Vea también [scripts](scripts.md).
+Esta acción personalizada se escribe en VBScript. Vea también [Scripts](scripts.md).
 
 ## <a name="source"></a>Source
 
-El campo de origen de la [tabla CustomAction](customaction-table.md) contiene el valor null. El código de script de la acción personalizada se almacena como una cadena de texto de script literal en el campo de destino.
+El campo Source de la [tabla CustomAction](customaction-table.md) contiene el valor NULL. El código de script para la acción personalizada se almacena como una cadena de texto de script literal en el campo Destino.
 
 ## <a name="type-value"></a>Valor de tipo
 
@@ -33,7 +33,7 @@ Incluya el siguiente valor en la columna Type de la [tabla CustomAction](customa
 
  
 
-Windows Installer puede usar las acciones personalizadas de 64 bits en sistemas operativos de 64 bits. Una acción personalizada de 64 bits basada en scripts debe incluir el bit **msidbCustomActionType64BitScript** en su tipo numérico. Para obtener información, consulte [acciones personalizadas de 64 bits](64-bit-custom-actions.md). Incluya el siguiente valor en la columna Type de la [tabla CustomAction](customaction-table.md) para especificar el tipo numérico básico de una acción personalizada de 64 bits.
+Windows El instalador puede usar acciones personalizadas de 64 bits en sistemas operativos de 64 bits. Una acción personalizada de 64 bits basada en scripts debe incluir el bit **msidbCustomActionType64BitScript** en su tipo numérico. Para obtener información, [vea Acciones personalizadas de 64 bits.](64-bit-custom-actions.md) Incluya el siguiente valor en la columna Type de la [tabla CustomAction](customaction-table.md) para especificar el tipo numérico básico de una acción personalizada de 64 bits.
 
 
 
@@ -47,33 +47,33 @@ Windows Installer puede usar las acciones personalizadas de 64 bits en sistemas 
 
 ## <a name="target"></a>Destino
 
-El campo de destino de la [tabla CustomAction](customaction-table.md) contiene el código de script para la acción personalizada como una cadena de texto de script literal.
+El campo Target de la [tabla CustomAction contiene](customaction-table.md) el código de script para la acción personalizada como una cadena de texto de script literal.
 
-## <a name="return-processing-options"></a>Opciones de procesamiento de valores devueltos
+## <a name="return-processing-options"></a>Opciones de procesamiento de devolución
 
-Incluya bits de marca opcionales en la columna tipo de la [tabla CustomAction](customaction-table.md) para especificar las opciones de procesamiento de valores devueltos. Para obtener una descripción de las opciones y los valores, vea [Opciones de procesamiento de devolución de acción personalizada](custom-action-return-processing-options.md).
+Incluya bits de marca opcionales en la columna Tipo de la [tabla CustomAction](customaction-table.md) para especificar las opciones de procesamiento de devolución. Para obtener una descripción de las opciones y los valores, vea [Custom Action Return Processing Options](custom-action-return-processing-options.md).
 
 ## <a name="execution-scheduling-options"></a>Opciones de programación de ejecución
 
-Incluya los bits de marca opcionales en la columna tipo de la [tabla CustomAction](customaction-table.md) para especificar las opciones de programación de la ejecución. Estas opciones controlan la ejecución múltiple de acciones personalizadas. Para obtener una descripción de las opciones, vea opciones de programación de la [ejecución de acciones personalizadas](custom-action-execution-scheduling-options.md).
+Incluya bits de marca opcionales en la columna Tipo de la [tabla CustomAction](customaction-table.md) para especificar las opciones de programación de ejecución. Estas opciones controlan la ejecución múltiple de acciones personalizadas. Para obtener una descripción de las opciones, vea [Custom Action Execution Scheduling Options](custom-action-execution-scheduling-options.md).
 
-## <a name="in-script-execution-options"></a>Opciones de ejecución de In-Script
+## <a name="in-script-execution-options"></a>In-Script de ejecución
 
-Incluya bits de marca opcionales en la columna tipo de la [tabla CustomAction](customaction-table.md) para especificar una opción de ejecución en el script. Estas opciones copian el código de acción en el script de ejecución, reversión o confirmación. Para obtener una descripción de las opciones, vea [Custom Action In-Script Execution Options](custom-action-in-script-execution-options.md).
+Incluya bits de marca opcionales en la columna Tipo de la [tabla CustomAction](customaction-table.md) para especificar una opción de ejecución en script. Estas opciones copian el código de acción en el script de ejecución, reversión o confirmación. Para obtener una descripción de las opciones, vea [Custom Action In-Script Execution Options](custom-action-in-script-execution-options.md).
 
 ## <a name="return-values"></a>Valores devueltos
 
-Este tipo de acción personalizada siempre devuelve SUCCESS.
+Este tipo de acción personalizada siempre devuelve correcto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Una acción personalizada escrita en JScript o VBScript requiere el objeto de [**sesión**](session-object.md) de instalación. El instalador adjunta el **objeto de sesión** al script con el nombre "session". Dado que es posible que el objeto de **sesión** no exista durante una reversión de la instalación, una acción personalizada diferida escrita en el script debe usar uno de los métodos o propiedades del objeto de **sesión** que se describe en la sección [obtener información de contexto para las acciones personalizadas de ejecución aplazada](obtaining-context-information-for-deferred-execution-custom-actions.md) para recuperar su contexto.
+Una acción personalizada escrita en JScript o VBScript requiere la instalación del [**objeto Session.**](session-object.md) El instalador asocia el **objeto de sesión** al script con el nombre "Session". Dado que es posible que el objeto **Session** no exista durante una reversión de la instalación, una acción [](obtaining-context-information-for-deferred-execution-custom-actions.md) personalizada diferida escrita en script debe usar uno de los métodos o propiedades del objeto **Session** descritos en la sección Obtención de información de contexto para acciones personalizadas de ejecución aplazada para recuperar su contexto.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[\_Acciones personalizadas](custom-actions.md)
+[Acciones \_ personalizadas](custom-actions.md)
 </dt> </dl>
 
  

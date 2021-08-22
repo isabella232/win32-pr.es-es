@@ -8,18 +8,18 @@ keywords:
 - grupos Active Directory , enumerando grupos con muchos miembros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7cab63b809fdbd2666f39a09d32f601346da00e
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 550ec2f4a77938b26e2273d468d3f9740d637249501aa2396fef3744cd105060
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118695143"
 ---
 # <a name="enumerating-groups-that-contain-many-members"></a>Enumeración de grupos que contienen muchos miembros
 
-Los miembros de un grupo se almacenan en un atributo de varios valores denominado **miembro**. El **atributo** miembro puede contener un gran número de valores. La enumeración de miembros puede ser ineficaz cuando el número de valores de un atributo con varios valores se vuelve grande. El servidor también limitará el número máximo de valores que se pueden recuperar en una sola consulta. Esto significa que si un grupo puede tener más miembros de los que puede proporcionar el servidor, la única manera de enumerar todos los miembros es usar la recuperación incremental de datos, conocida como recuperación de *intervalos.*
+Los miembros de un grupo se almacenan en un atributo de varios valores denominado **miembro**. El **atributo** miembro puede contener un gran número de valores. La enumeración de miembros puede ser ineficaz cuando el número de valores de un atributo de varios valores se vuelve grande. El servidor también limitará el número máximo de valores que se pueden recuperar en una sola consulta. Esto significa que si un grupo puede tener más miembros de los que puede proporcionar el servidor, la única manera de enumerar todos los miembros es usar la recuperación incremental de datos, conocida como recuperación de *intervalos.*
 
-La recuperación de intervalos implica solicitar un número limitado de valores de atributo en una sola consulta. El número de valores solicitados debe ser menor o igual que el número máximo de valores admitidos por el servidor. Para reducir el número de veces que la consulta debe ponerse en contacto con el servidor, el número de valores solicitados debe ser lo más cercano posible a este máximo. Para permitir que una aplicación funcione correctamente con todos los servidores, se debe usar un número máximo de 1000.
+La recuperación de intervalos implica solicitar un número limitado de valores de atributo en una sola consulta. El número de valores solicitados debe ser menor o igual que el número máximo de valores admitidos por el servidor. Para reducir el número de veces que la consulta debe ponerse en contacto con el servidor, el número de valores solicitados debe estar lo más cerca posible de este máximo. Para permitir que una aplicación funcione correctamente con todos los servidores, se debe usar un número máximo de 1000.
 
 La versión del servidor que proporciona los datos solicitados determina el número máximo de valores que se pueden recuperar en una sola consulta. En la tabla siguiente se muestra la versión del servidor y el número máximo de valores que se pueden recuperar en una sola consulta.
 
@@ -27,7 +27,7 @@ La versión del servidor que proporciona los datos solicitados determina el núm
 
 | Versión del sistema operativo del servidor | Valores máximos recuperados |
 |---------------------------------|--------------------------|
-| Windows 2000                    | 1000                     |
+| Windows 2000                    | 1000                     |
 | Windows Server 2003             | 1.500                     |
 
 

@@ -1,19 +1,19 @@
 ---
 title: Punteros de referencia
-description: Los punteros de referencia son los punteros más simples y requieren la menor cantidad de procesamiento que el código auxiliar del cliente.
+description: Los punteros de referencia son los punteros más sencillos y requieren la menor cantidad de procesamiento por parte del código auxiliar del cliente.
 ms.assetid: 393aec84-8e8f-41b9-956f-d28a80d3a8c4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 427605f330b1a73c541c95019f8ca4bdd6cc8ef4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6338b1017f05bdf004fee2b288c4eae1ee9775eaa2ad225d5f4b6afa3e74d8ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104078252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118927045"
 ---
 # <a name="reference-pointers"></a>Punteros de referencia
 
-Los punteros de referencia son los punteros más simples y requieren la menor cantidad de procesamiento que el código auxiliar del cliente. Cuando un programa cliente pasa un puntero de referencia a un procedimiento remoto, el puntero de referencia siempre contiene la dirección de un bloque de memoria válido. Seguirá señalando al mismo bloque de memoria cuando se complete el procedimiento remoto. Estos punteros se utilizan principalmente para implementar la semántica de referencia y para permitir parámetros \[ [**out**](/windows/desktop/Midl/out-idl) \] en C.
+Los punteros de referencia son los punteros más sencillos y requieren la menor cantidad de procesamiento por parte del código auxiliar del cliente. Cuando un programa cliente pasa un puntero de referencia a un procedimiento remoto, el puntero de referencia siempre contiene la dirección de un bloque de memoria válido. Seguirá apuntando al mismo bloque de memoria cuando se complete el procedimiento remoto. Estos punteros se usan principalmente para implementar la semántica de referencia y para permitir parámetros \[ [**out**](/windows/desktop/Midl/out-idl) \] en C.
 
 En el ejemplo siguiente, el valor del puntero no cambia durante la llamada, aunque el contenido de los datos en la dirección indicada por el puntero puede cambiar.
 
@@ -21,12 +21,12 @@ En el ejemplo siguiente, el valor del puntero no cambia durante la llamada, aunq
 
 Un puntero de referencia tiene las siguientes características:
 
--   Siempre apunta a un almacenamiento válido y nunca tiene el valor **null**.
+-   Siempre apunta al almacenamiento válido y nunca tiene el valor **NULL.**
 -   Nunca cambia durante una llamada y siempre apunta al mismo almacenamiento antes y después de la llamada.
--   Los datos devueltos del procedimiento remoto se escriben en el almacenamiento existente.
--   No se puede tener acceso al almacenamiento al que apunta un puntero de referencia a través de otro puntero o cualquier otro nombre de la función.
+-   Los datos devueltos por el procedimiento remoto se escriben en el almacenamiento existente.
+-   Ningún otro puntero o cualquier otro nombre de la función puede tener acceso al almacenamiento al que apunta un puntero de referencia.
 
-Utilice el \[ [](/windows/desktop/Midl/ref) \] atributo ref para especificar punteros de referencia en definiciones de interfaz, como se muestra en el ejemplo siguiente.
+Use el \[ [**atributo ref**](/windows/desktop/Midl/ref) \] para especificar punteros de referencia en definiciones de interfaz, como se muestra en el ejemplo siguiente.
 
 ``` syntax
 /* IDL file */
@@ -40,8 +40,8 @@ interface RefPtrInterface
 }
 ```
 
-En este ejemplo se define el parámetro *pChar* como un puntero a un carácter único, no una matriz de caracteres. Es un \[  \] parámetro de salida y un puntero de referencia que apunta a la memoria que la rutina de servidor RemoteFn rellenará con los datos.
+En este ejemplo se define el *parámetro pChar* como puntero a un solo carácter, no a una matriz de caracteres. Es un parámetro out y un puntero de referencia que apunta a la memoria que la rutina de servidor \[  \] RemoteFn rellenará con datos.
 
- 
+ 
 
- 
+ 

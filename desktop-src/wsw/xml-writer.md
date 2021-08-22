@@ -1,46 +1,46 @@
 ---
 title: Escritor XML
-description: El escritor XML es una API para emitir XML. En esencia, un escritor XML escribe un nodo XML a la vez, pero hay otras API auxiliares para facilitar la escritura de una secuencia de nodos.
+description: Xml Writer es una API para emitir XML. En esencia, un escritor XML escribe un nodo XML a la vez, pero hay API auxiliares adicionales para facilitar la escritura de una secuencia de nodos.
 ms.assetid: 69d50793-1d5b-4fc7-bf69-128f8e23a98d
 keywords:
 - Servicios web del escritor XML para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 085a02b3aca33ffa3b31e4579d47068a683ee4d8
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: a75b7937ac6d8f6e9daff40289dd34729eaf235f203a02b91b5d1af3632049b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "105714495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026063"
 ---
 # <a name="xml-writer"></a>Escritor XML
 
-El escritor XML es una API para emitir XML. En esencia, un escritor XML escribe un [nodo XML](xml-node.md) a la vez, pero hay otras API auxiliares para facilitar la escritura de una secuencia de nodos.
+Xml Writer es una API para emitir XML. En esencia, un escritor XML escribe un nodo [XML](xml-node.md) a la vez, pero hay API auxiliares adicionales para facilitar la escritura de una secuencia de nodos.
 
 
 Se admiten los siguientes tipos de salida de escritor:
 
 -   [**Búfer en memoria de bytes codificados**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_buffer_output)
--   [**Un flujo**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_stream_output)
+-   [**Una secuencia**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_stream_output)
 -   Un [búfer XML](xml-buffer.md)
 
-Las siguientes devoluciones de llamada se utilizan con el escritor de XML:
+Las devoluciones de llamada siguientes se usan con el sistema de escritura XML:
 
--   [**\_devolución de \_ llamada de cadena dinámica de WS \_**](/windows/desktop/api/WebServices/nc-webservices-ws_dynamic_string_callback)
--   [**\_devolución de \_ llamada de bytes de extracción de WS \_**](/windows/desktop/api/WebServices/nc-webservices-ws_pull_bytes_callback)
--   [**\_devolución de \_ llamada de bytes de inserciones de WS \_**](/windows/desktop/api/WebServices/nc-webservices-ws_push_bytes_callback)
--   [**devolución de llamada de WS- \_ Write \_**](/windows/desktop/api/WebServices/nc-webservices-ws_write_callback)
+-   [**WS \_ DYNAMIC \_ STRING \_ CALLBACK**](/windows/desktop/api/WebServices/nc-webservices-ws_dynamic_string_callback)
+-   [**WS \_ PULL \_ BYTES \_ CALLBACK**](/windows/desktop/api/WebServices/nc-webservices-ws_pull_bytes_callback)
+-   [**WS \_ PUSH \_ BYTES \_ CALLBACK**](/windows/desktop/api/WebServices/nc-webservices-ws_push_bytes_callback)
+-   [**WS \_ WRITE \_ CALLBACK**](/windows/desktop/api/WebServices/nc-webservices-ws_write_callback)
 
-Las enumeraciones siguientes se utilizan con el escritor de XML:
+Las enumeraciones siguientes se usan con el sistema de escritura XML:
 
--   [**juego de caracteres de WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_charset)
--   [**\_tipo de \_ codificación del escritor XML \_ de WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_writer_encoding_type)
--   [**\_tipo de \_ salida del escritor XML \_ de WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_writer_output_type)
--   [**\_identificador de \_ propiedad del escritor XML \_ de WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_writer_property_id)
+-   [**WS \_ CHARSET**](/windows/desktop/api/WebServices/ne-webservices-ws_charset)
+-   [**TIPO DE \_ \_ CODIFICACIÓN WS XML WRITER \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_writer_encoding_type)
+-   [**TIPO DE SALIDA DE WS \_ XML \_ WRITER \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_writer_output_type)
+-   [**ID. \_ DE PROPIEDAD DE WS XML \_ WRITER \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_xml_writer_property_id)
 
-Las siguientes funciones se usan con el escritor de XML:
+Las siguientes funciones se usan con el sistema de escritura XML:
 
 -   [**WsCopyNode**](/windows/desktop/api/WebServices/nf-webservices-wscopynode)
 -   [**WsCreateWriter**](/windows/desktop/api/WebServices/nf-webservices-wscreatewriter)
@@ -71,21 +71,21 @@ Las siguientes funciones se usan con el escritor de XML:
 -   [**WsWriteValue**](/windows/desktop/api/WebServices/nf-webservices-wswritevalue)
 -   [**WsWriteXmlnsAttribute**](/windows/desktop/api/WebServices/nf-webservices-wswritexmlnsattribute)
 
-El siguiente identificador se utiliza con el escritor de XML:
+El siguiente identificador se usa con el sistema de escritura XML:
 
--   [\_escritor de XML de WS \_](ws-xml-writer.md)
+-   [WS \_ XML \_ WRITER](ws-xml-writer.md)
 
-Las siguientes estructuras se utilizan con el escritor de XML:
+Las estructuras siguientes se usan con el sistema de escritura XML:
 
--   [**\_ \_ \_ codificación binaria de la escritura de WS XML \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_binary_encoding)
--   [**\_salida del \_ búfer del escritor XML \_ de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_buffer_output)
--   [**\_codificación del \_ escritor \_ XML de WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_encoding)
--   [**\_ \_ codificación MTOM del escritor XML \_ de \_ WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_mtom_encoding)
--   [**\_salida del \_ escritor \_ XML de WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_output)
--   [**\_propiedades del \_ escritor de XML de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_properties)
--   [**\_propiedad del \_ escritor \_ XML de WS**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_property)
--   [**\_salida de \_ flujo del escritor XML \_ de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_stream_output)
--   [**\_codificación de \_ texto del escritor XML \_ de WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_text_encoding)
+-   [**CODIFICACIÓN BINARIA DE WS \_ XML \_ WRITER \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_binary_encoding)
+-   [**SALIDA DEL \_ BÚFER DE WS XML \_ WRITER \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_buffer_output)
+-   [**CODIFICACIÓN \_ WS XML \_ WRITER \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_encoding)
+-   [**WS \_ XML \_ WRITER \_ MTOM \_ ENCODING**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_mtom_encoding)
+-   [**SALIDA DE WS \_ XML \_ WRITER \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_output)
+-   [**PROPIEDADES DE \_ WS XML \_ WRITER \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_properties)
+-   [**WS \_ XML \_ WRITER \_ PROPERTY**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_property)
+-   [**SALIDA DE SECUENCIA DE \_ WS XML \_ WRITER \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_stream_output)
+-   [**CODIFICACIÓN DE TEXTO DE WS \_ XML \_ WRITER \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_xml_writer_text_encoding)
 
  
 

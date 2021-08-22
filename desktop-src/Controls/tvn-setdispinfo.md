@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de TVN_SETDISPINFO (commctrl. h)
-description: Notifica a la ventana primaria de un control de vista de árbol que debe actualizar la información que mantiene sobre un elemento. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: TVN_SETDISPINFO de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de un control de vista de árbol que debe actualizar la información que mantiene sobre un elemento. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 40fa61bc-c043-4001-ada9-b627d68bd737
 keywords:
-- TVN_SETDISPINFO controles de código de notificación de Windows
+- TVN_SETDISPINFO código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b03e60ba7d8e6d7851c62fac030bd252cf957d3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e88a9b5fed4260fa88f5f40431113456950d99985ad2f2e0e97c2e951dce96bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105656485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957774"
 ---
-# <a name="tvn_setdispinfo-notification-code"></a>Código de notificación de SETDISPINFO de TVN \_
+# <a name="tvn_setdispinfo-notification-code"></a>Código de notificación \_ SETDISPINFO de TVN
 
-Notifica a la ventana primaria de un control de vista de árbol que debe actualizar la información que mantiene sobre un elemento. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control de vista de árbol que debe actualizar la información que mantiene sobre un elemento. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,7 +43,7 @@ TVN_SETDISPINFO
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMTVDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmtvdispinfoa) que describe el elemento que se está actualizando. El miembro **hItem** de la estructura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) especifica el elemento que se va a actualizar y el miembro **Mask** especifica los atributos del elemento que se van a actualizar.
+Puntero a una [**estructura NMTVDISPINFO**](/windows/win32/api/commctrl/ns-commctrl-nmtvdispinfoa) que describe el elemento que se está actualizando. El **miembro hItem** de la estructura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) especifica el elemento que se está actualizando y el miembro **mask** especifica qué atributos del elemento se están actualizando.
 
 </dd> </dl>
 
@@ -51,11 +51,11 @@ Puntero a una estructura [**NMTVDISPINFO**](/windows/win32/api/commctrl/ns-commc
 
 Se omite el valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el miembro **miembros pszText** de la estructura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) del elemento es el \_ valor LPSTR TEXTCALLBACK, el control envía esta notificación para establecer el texto del elemento. En este caso, el miembro de **máscara** de *lParam* tendrá establecido el \_ indicador de texto TVIF.
+Si el **miembro pszText** de la estructura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) del elemento es el valor LPSTR TEXTCALLBACK, el control envía esta notificación para establecer el texto \_ del elemento. En este caso, el **miembro mask** de *lParam* tendrá establecida la marca TEXT de TVIF. \_
 
-Si el miembro **iImage** o **iSelectedImage** de la estructura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) del elemento es el \_ valor I IMAGECALLBACK, el control envía esta notificación para recuperar el índice de la imagen del icono que se va a mostrar. En este caso, el miembro de **máscara** de *lParam* tendrá la \_ marca TVIF o TVIF \_ SELECTEDIMAGE establecida.
+Si el **miembro iImage** o **iSelectedImage** de la estructura [**TVITEM**](/windows/win32/api/commctrl/ns-commctrl-tvitema) del elemento es el valor I IMAGECALLBACK, el control envía esta notificación para recuperar el índice de la imagen de icono que se va a \_ mostrar. En este caso, el miembro **mask** de *lParam* tendrá establecida la marca TVIF IMAGE o \_ TVIF \_ SELECTEDIMAGE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,9 +63,9 @@ Si el miembro **iImage** o **iSelectedImage** de la estructura [**TVITEM**](/win
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **TVN \_ SETDISPINFOW** (Unicode) y **TVN \_ SETDISPINFOA** (ANSI)<br/>           |
 
 

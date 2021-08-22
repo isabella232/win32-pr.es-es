@@ -1,9 +1,9 @@
 ---
 title: AverageLevel
-description: El atributo AverageLevel contiene un valor de amplitud de 16 bits que designa el nivel de volumen medio del contenido de audio.
+description: El atributo AverageLevel contiene un valor de amplitud de 16 bits que designa el nivel medio de volumen del contenido de audio.
 ms.assetid: e6270ac8-5de3-4dee-824c-ba25fdd272c8
 keywords:
-- AverageLevel formato de Windows Media
+- Formato multimedia de Windows AverageLevel
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 632379e42fa6c64e44018173b9d40340add4ee61
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 7fd8745c5983eca67a02506b6cdeeabaca0a61a4c3f8b2a6993a73359d87adba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028163"
 ---
 # <a name="averagelevel"></a>AverageLevel
 
-El atributo **AverageLevel** contiene un valor de amplitud de 16 bits que designa el nivel de volumen medio del contenido de audio. Con [**PeakValue**](peakvalue.md), este atributo se usa para la normalización. La normalización es el proceso por el que se ajusta el nivel de volumen de reproducción de los archivos de audio para que las partes más fuertes de los archivos que se reproducen en el mismo nivel y el volumen medio para cada uno sea el mismo.
+El **atributo AverageLevel** contiene un valor de amplitud de 16 bits que designa el nivel medio de volumen del contenido de audio. Con [**PeakValue**](peakvalue.md), este atributo se usa para la normalización. La normalización es el proceso de ajustar el nivel de volumen de reproducción de los archivos de audio para que las partes más ruidosas de la reproducción de archivos en el mismo nivel y el volumen medio de cada uno sea el mismo.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,13 +29,13 @@ g \_ wszAverageLevel
 
 ## <a name="data-type"></a>Tipo de datos
 
-**tipo de WMT \_ \_ DWORD**
+**DWORD \_ DE TIPO \_ WMT**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo lo establece el objeto de escritor basándose en la información del códec. Solo las secuencias comprimidas con uno de los códecs Windows Media Audio tienen un valor establecido automáticamente.
+El objeto de escritor establece este atributo en función de la información del códec. Solo las secuencias comprimidas con uno de Windows códecs de Audio multimedia tienen un valor establecido automáticamente.
 
-**AverageLevel** no es de solo lectura. Sin embargo, si el archivo lo reproducirá el Media Player de Windows, no debe modificar este valor. El Media Player de Windows lo usa para normalizar los niveles de los archivos de una lista de reproducción.
+**AverageLevel** no es de solo lectura. Sin embargo, si el archivo se reproducirá Reproductor de Windows Media, no debe modificar este valor. El Reproductor de Windows Media usa esto para normalizar los niveles de archivos de una lista de reproducción.
 
 ## <a name="see-also"></a>Vea también
 
@@ -44,9 +44,9 @@ Este atributo lo establece el objeto de escritor basándose en la información d
 [**Lista de atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

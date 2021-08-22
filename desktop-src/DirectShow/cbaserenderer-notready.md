@@ -1,7 +1,7 @@
 ---
-description: El método indica que aún no se ha completado una transición de estado.
+description: El método NotReady indica que aún no se ha completado una transición de estado.
 ms.assetid: 85529a22-5343-4c22-b282-31c0e7ff0f5f
-title: Método CBaseRenderer. (Renbase. h)
+title: Método CBaseRenderer.NotReady (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ff07303f9aa8f68ae702ed09bc3a2fd544373f6c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 52fddcbd92544a109340697e5865f87e6c5f74a14b01543e768495b7717d8f4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954834"
 ---
-# <a name="cbaserenderernotready-method"></a>CBaseRenderer. (método)
+# <a name="cbaserenderernotready-method"></a>CBaseRenderer.NotReady (método)
 
-El `NotReady` método indica que aún no se ha completado una transición de estado.
+El método indica que aún no se ha completado una `NotReady` transición de estado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método hace que el método [**CBaseRenderer:: GetState**](cbaserenderer-getstate.md) devuelva un \_ Estado VFW S \_ \_ Intermediate, lo que indica que el filtro sigue pasando a su estado actual. El filtro llama a este método cada vez que hay pendiente una transición de estado. (Esto sucede cuando el filtro se detiene, hasta que recibe un ejemplo).
+Este método hace que el método [**CBaseRenderer::GetState**](cbaserenderer-getstate.md) devuelva VFW S STATE INTERMEDIATE, lo que indica que el filtro sigue en transición \_ a su estado \_ \_ actual. El filtro llama a este método cada vez que hay una transición de estado pendiente. (Esto ocurre cuando el filtro se detiene, hasta que recibe una muestra).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Este método hace que el método [**CBaseRenderer:: GetState**](cbaserenderer-ge
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Este método hace que el método [**CBaseRenderer:: GetState**](cbaserenderer-ge
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> <dt>
 
 [**CheckReady**](cbaserenderer-checkready.md)

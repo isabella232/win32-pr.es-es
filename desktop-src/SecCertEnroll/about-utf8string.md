@@ -1,19 +1,19 @@
 ---
-description: El tipo de datos ASN. 1 UTF8String se codifica en un tripledo TLV que comienza con un byte de etiqueta de 0x0C.
+description: El tipo de datos ASN.1 UTF8String se codifica en un triplete TLV que comienza con un byte tag de 0x0C.
 ms.assetid: e30737d3-8294-48d8-9e42-f21918acc73c
 title: UTF8String
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26048a46689d27b68e8cacfa4af13b37cde4d613
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 451b51a42d8c2b296b6c3c98c224b0052a7d89d95dbfe92483b852f6a0167b5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118903461"
 ---
 # <a name="utf8string"></a>UTF8String
 
-El tipo de datos ASN. 1 **UTF8String** se codifica en un tripledo TLV que comienza con un byte de **etiqueta** de 0x0c. En el ejemplo siguiente, del tema [ASN codificado de CMC. 1](cmc-encoded-asn-1.md) , se muestra cómo el atributo **ClientID** se codifica como un entero y tres tipos **UTF8String** . El identificador de objeto para el atributo es 1.3.6.1.4.1.311.21.20. La información, que se puede especificar mediante la interfaz [**IX509AttributeClientId**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid) , incluye un número de identificador de cliente, el nombre de equipo del sistema de nombres de dominio (DNS), el nombre de usuario del administrador de cuentas de seguridad (SAM) y el nombre de la aplicación que creó la solicitud de certificado.
+El tipo de datos ASN.1 **UTF8String** se codifica en un triplete TLV que comienza con un byte **tag** de 0x0C. En el ejemplo siguiente, del tema [ASN.1](cmc-encoded-asn-1.md) con codificación CMC, se muestra cómo se codifica el atributo **ClientId** como un entero y tres tipos **UTF8String.** El identificador de objeto del atributo es 1.3.6.1.4.1.311.21.20. La información, que se puede especificar mediante la interfaz [**IX509AttributeClientId,**](/windows/desktop/api/CertEnroll/nn-certenroll-ix509attributeclientid) incluye un número de identificador de cliente, el nombre de equipo del Sistema de nombres de dominio (DNS), el nombre de usuario del Administrador de cuentas de seguridad (SAM) y el nombre de la aplicación que creó la solicitud de certificado.
 
 ``` syntax
 06 09                                ; OBJECT_ID (9 Bytes)
@@ -36,16 +36,16 @@ El tipo de datos ASN. 1 **UTF8String** se codifica en un tripledo TLV que comien
          63 65 72 74 72 65 71        ;   certreq
 ```
 
-Si la cadena contiene menos de 128 bytes, el campo de **longitud** del trío TLV requiere un solo byte para especificar la longitud del contenido. Si la cadena tiene más de 127 bytes, el bit 7 del campo de **longitud** se establece en 1 y los bits 6 a 0 especifican el número de bytes adicionales que se usan para identificar la longitud del contenido. Para obtener más información, vea [longitud codificada y bytes de valor](about-encoded-length-and-value-bytes.md).
+Si la cadena contiene menos de 128 bytes, el campo **Longitud** del triplete TLV solo requiere un byte para especificar la longitud del contenido. Si la cadena tiene más de 127 bytes, el bit 7 del campo **Longitud** se establece en 1 y los bits del 6 al 0 especifican el número de bytes adicionales usados para identificar la longitud del contenido. Para obtener más información, vea [Longitud codificada y Bytes de valor](about-encoded-length-and-value-bytes.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Sistema de tipos ASN. 1](about-asn-1-type-system.md)
+[Sistema de tipo ASN.1](about-asn-1-type-system.md)
 </dt> <dt>
 
-[Codificación DER de tipos ASN. 1](about-der-encoding-of-asn-1-types.md)
+[Codificación DER de tipos ASN.1](about-der-encoding-of-asn-1-types.md)
 </dt> </dl>
 
  

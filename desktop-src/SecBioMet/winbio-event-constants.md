@@ -1,6 +1,6 @@
 ---
-title: Constantes de WINBIO_EVENT (Winbio \_ Types. h)
-description: Especifique los tipos de notificaciones de eventos del proveedor de servicios que se van a supervisar.
+title: WINBIO_EVENT constantes (Winbio \_ types.h)
+description: Especifique los tipos de notificaciones de eventos del proveedor de servicios que se supervisarán.
 ms.assetid: 73805413-a8d9-4682-aa21-7032451d750a
 topic_type:
 - apiref
@@ -13,23 +13,23 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 182a4ffe254e946f1b8deca2c5034e665a58f7ca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a871022c51a906bd078125ae6aa6aa30c2e97024279f3309ca4ece58c00a88f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104533861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910663"
 ---
-# <a name="winbio_event-constants"></a>\_Constantes de evento WINBIO
+# <a name="winbio_event-constants"></a>Constantes \_ DE EVENTOS WINBIO
 
-Se pueden usar las siguientes constantes en la función [**WinBioRegisterEventMonitor**](/windows/desktop/api/Winbio/nf-winbio-winbioregistereventmonitor) para especificar los tipos de notificaciones de eventos del proveedor de servicios que se van a supervisar.
+Las siguientes constantes se pueden usar en la [**función WinBioRegisterEventMonitor**](/windows/desktop/api/Winbio/nf-winbio-winbioregistereventmonitor) para especificar los tipos de notificaciones de eventos del proveedor de servicios que se supervisarán.
 
 
 
 | Constante                                                                                                                                                                                                                        | Descripción                                                                                                                                                                                                                                                                                     |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="WINBIO_EVENT_FP_UNCLAIMED"></span><span id="winbio_event_fp_unclaimed"></span><dl> <dt>**\_evento WINBIO \_ FP no \_ reclamado**</dt> </dl>                             | El sensor ha detectado un dedo deslizante que no ha solicitado la aplicación o que la ventana tiene el foco actualmente. El Plataforma de biometría de Windows llama a la función de devolución de llamada para indicar que se ha producido un deslizamiento de dedo pero no intenta identificar la huella digital.<br/> |
-| <span id="WINBIO_EVENT_FP_UNCLAIMED_IDENTIFY"></span><span id="winbio_event_fp_unclaimed_identify"></span><dl> <dt>**\_identificación no \_ \_ reclamada del evento WINBIO FP \_**</dt> </dl> | El sensor ha detectado un dedo deslizante que no ha solicitado la aplicación o que la ventana tiene el foco actualmente. El Plataforma de biometría de Windows intenta identificar la huella digital y pasa el resultado de ese proceso a la función de devolución de llamada.<br/>                        |
+| <span id="WINBIO_EVENT_FP_UNCLAIMED"></span><span id="winbio_event_fp_unclaimed"></span><dl> <dt>**EVENTO DE WINBIO \_ \_ FP NO \_ RECLAMADO**</dt> </dl>                             | El sensor detectó un deslizamiento de dedo que no fue solicitado por la aplicación o por la ventana que actualmente tiene el foco. El Windows Biometric Framework llama a la función de devolución de llamada para indicar que se ha producido un deslizamiento de dedo, pero no intenta identificar la huella digital.<br/> |
+| <span id="WINBIO_EVENT_FP_UNCLAIMED_IDENTIFY"></span><span id="winbio_event_fp_unclaimed_identify"></span><dl> <dt>**IDENTIFICACIÓN NO \_ RECLAMADA DEL \_ EVENTO DE WINBIO FP \_ \_**</dt> </dl> | El sensor detectó un deslizamiento de dedo que no fue solicitado por la aplicación o por la ventana que actualmente tiene el foco. El Windows Biometric Framework intenta identificar la huella digital y pasa el resultado de ese proceso a la función de devolución de llamada.<br/>                        |
 
 
 
@@ -39,9 +39,9 @@ Se pueden usar las siguientes constantes en la función [**WinBioRegisterEventMo
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
+| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 

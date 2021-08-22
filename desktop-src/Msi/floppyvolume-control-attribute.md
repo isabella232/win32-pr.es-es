@@ -1,21 +1,21 @@
 ---
-description: Si se establece el bit de control FloppyVolume, el control muestra todos los volúmenes implicados en la instalación actual, además de todos los volúmenes de disquete.
+description: Si se establece el bit control FloppyVolume, el control muestra todos los volúmenes implicados en la instalación actual más todos los volúmenes de disquete.
 ms.assetid: 65e17920-bb2c-4b98-a2dd-ebaee752ed0a
 title: Atributo de control FloppyVolume
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c70045ee5d6e16fbe1f679eafd83e6d657c9bf6e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4639960fee79336048082c91088e19c1b360f857216f2cf0ad9ed07c64b52b8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118947016"
 ---
 # <a name="floppyvolume-control-attribute"></a>Atributo de control FloppyVolume
 
-Si se establece el bit de control FloppyVolume, el control muestra todos los volúmenes implicados en la instalación actual, además de todos los volúmenes de disquete.
+Si se establece el bit control FloppyVolume, el control muestra todos los volúmenes implicados en la instalación actual más todos los volúmenes de disquete.
 
-Si no se establece este bit, el control muestra los volúmenes en la instalación actual.
+Si no se establece este bit, el control enumera los volúmenes de la instalación actual.
 
 ## <a name="valid-controls"></a>Controles válidos
 
@@ -31,17 +31,17 @@ Si no se establece este bit, el control muestra los volúmenes en la instalació
 
 | Decimal | Hexadecimal | Constante                               |
 |---------|-------------|----------------------------------------|
-| 2 097 152 | 0x00200000  | **msidbControlAttributesFloppyVolume** |
+| 2 097 152 | 0x00200000  | **msidbControlAttributesFstonepyVolume** |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para establecer este atributo en un control, incluya el bit FloppyVolume en la columna Attributes del registro del control en la [tabla de control](control-table.md).
+Para establecer este atributo en un control, incluya el bit FloppyVolume en la columna Atributos del registro del control en la [tabla Control](control-table.md).
 
-Vea [atributos de control](control-attributes.md) y el control que debe crear en [controles](controls.md).
+Vea [Atributos de](control-attributes.md) control y el control que debe crear en [Controles](controls.md).
 
  
 

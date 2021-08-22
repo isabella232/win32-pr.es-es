@@ -1,7 +1,7 @@
 ---
 description: Cadena estática que contiene el nombre de la clase de ventana.
 ms.assetid: a1edf252-23d1-4ee2-96b0-643b80259f38
-title: 'Miembro CBaseWindow:: m_pClassName (Winutil. h)'
+title: CBaseWindow::m_pClassName miembro (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4265c2289e517dc0b677c9a25a3727d5683856f2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 13cc59e79a230f51b02f10433225ae9672f2c6df10d37ed9ef18c1eb2a2557cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954573"
 ---
-# <a name="cbasewindowm_pclassname-member"></a>Miembro pClassName CBaseWindow:: m \_
+# <a name="cbasewindowm_pclassname-member"></a>Miembro CBaseWindow::m \_ pClassName
 
 Cadena estática que contiene el nombre de la clase de ventana.
 
@@ -42,8 +42,8 @@ LPTSTR m_pClassName;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ LPTSTR m_pClassName;
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

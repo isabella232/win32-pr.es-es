@@ -1,10 +1,10 @@
 ---
-title: Método INapServerManagement SetFailureCategoryMappings (NapServerManagement. h)
+title: Método INapServerManagement SetFailureCategoryMappings (NapServerManagement.h)
 description: Se usa para establecer las asignaciones de categorías de error de SHV.
 ms.assetid: be482f82-c79c-405c-b619-9bcb9b4dc349
 keywords:
-- Método SetFailureCategoryMappings NAP
-- Método SetFailureCategoryMappings NAP, interfaz INapServerManagement
+- Método NAP de SetFailureCategoryMappings
+- Método NAP de SetFailureCategoryMappings, interfaz INapServerManagement
 - Interfaz INapServerManagement NAP, método SetFailureCategoryMappings
 topic_type:
 - apiref
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a220d6603ef5bbb49377ac0e212d5d98afa4bdd0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c22bc51edf887d26bf34f59932248c62bfca86199771a2b971a10e9c1b323eac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939619"
 ---
-# <a name="inapservermanagementsetfailurecategorymappings-method"></a>INapServerManagement:: SetFailureCategoryMappings (método)
+# <a name="inapservermanagementsetfailurecategorymappings-method"></a>Método INapServerManagement::SetFailureCategoryMappings
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
 
  
 
-El método **INapServerManagement:: SetFailureCategoryMappings** se usa para establecer las asignaciones de categorías de error de SHV.
+El **método INapServerManagement::SetFailureCategoryMappings** se usa para establecer las asignaciones de categoría de error de SHV.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,17 +48,17 @@ HRESULT SetFailureCategoryMappings(
 
 <dl> <dt>
 
-*ID.* \[ en\]
+*id* \[ en\]
 </dt> <dd>
 
-[**SystemHealthEntityId**](nap-type-constants.md) que contiene el identificador único del SHV.
+[**SystemHealthEntityId que**](nap-type-constants.md) contiene el identificador único de la SHV.
 
 </dd> <dt>
 
-*asignación* \[ de de\]
+*asignación* \[ En\]
 </dt> <dd>
 
-Una estructura [**FailureCategoryMapping**](/windows/win32/api/naptypes/ns-naptypes-failurecategorymapping) que contiene los datos de asignación de la categoría de error.
+Estructura [**FailureCategoryMapping**](/windows/win32/api/naptypes/ns-naptypes-failurecategorymapping) que contiene los datos de asignación de categorías de error.
 
 </dd> </dl>
 
@@ -70,9 +70,9 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 | Código devuelto                                                                                     | Descripción                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ Aceptar**</dt> </dl>           | Operación realizada correctamente.<br/>                                    |
+| <dl> <dt>**S \_ Ok (Aceptar)**</dt> </dl>           | Operación realizada correctamente.<br/>                                    |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Error de permisos, acceso denegado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Límite de recursos del sistema, no se pudo realizar la operación.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | El límite de recursos del sistema no pudo realizar la operación.<br/> |
 
 
 
@@ -85,9 +85,9 @@ También se pueden devolver otros códigos de error específicos de COM.
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                               |
-| Encabezado<br/>                   | <dl> <dt>NapServerManagement. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapServerManagement. idl</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                               |
+| Header<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qsvrmgmt.dll</dt> </dl>            |
 
 

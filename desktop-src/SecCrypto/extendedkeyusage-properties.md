@@ -1,23 +1,23 @@
 ---
 description: El objeto ExtendedKeyUsage expone las siguientes propiedades.
 ms.assetid: 380D64EE-1551-4EBA-9C19-5F7D4D3ECF23
-title: Propiedades de ExtendedKeyUsage
+title: Propiedades extendedKeyUsage
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd57115851d59e072f672ca4b70485da3fc5852a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c98e00121fcab0a99d91394e74faa5b7e3679602d9a12f5d361212afef33d279
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103815763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007333"
 ---
-# <a name="extendedkeyusage-properties"></a>Propiedades de ExtendedKeyUsage
+# <a name="extendedkeyusage-properties"></a>Propiedades extendedKeyUsage
 
-El objeto [**ExtendedKeyUsage**](extendedkeyusage.md) expone las siguientes propiedades.
+El [**objeto ExtendedKeyUsage**](extendedkeyusage.md) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**EKU (propiedad)**](extendedkeyusage-ekus.md)
+-   [**Propiedad EKUs**](extendedkeyusage-ekus.md)
 -   [**Propiedad IsCritical**](extendedkeyusage-iscritical.md)
 -   [**Propiedad IsPresent**](extendedkeyusage-ispresent.md)
 

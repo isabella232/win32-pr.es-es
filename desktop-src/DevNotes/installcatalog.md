@@ -1,7 +1,7 @@
 ---
 description: Instala un catálogo en un directorio.
 ms.assetid: 9741f8e3-d9db-46cd-886d-587f332b0ab8
-title: InstallCatalog función)
+title: Función InstallCatalog
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Setupapi.dll
-ms.openlocfilehash: 57b2a9d29b72db6c04673f30f41f26c44701c69c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 240754024135b5bd5aa48529d49080afbdb04e170987102346cdda2c59b12427
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955934"
 ---
-# <a name="installcatalog-function"></a>InstallCatalog función)
+# <a name="installcatalog-function"></a>Función InstallCatalog
 
-\[Esta función no se admite y no debe usarse.\]
+\[Esta función no se admite y no se debe usar.\]
 
 Instala un catálogo en un directorio.
 
@@ -43,14 +43,14 @@ DWORD InstallCatalog(
 
 <dl> <dt>
 
-*CatalogFullPath* \[ de\]
+*CatalogFullPath* \[ En\]
 </dt> <dd>
 
 Puntero a una cadena que representa la ruta de acceso completa del catálogo antes de la instalación.
 
 </dd> <dt>
 
-*NewBaseName* \[ en, opcional\]
+*NewBaseName* \[ in, opcional\]
 </dt> <dd>
 
 Puntero al nuevo nombre base.
@@ -68,9 +68,9 @@ Puntero a una cadena que representa la ruta de acceso completa del catálogo des
 
 Esta función no está implementada actualmente, por lo que no devuelve un valor real.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; debe llamarlo mediante las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**y GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

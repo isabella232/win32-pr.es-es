@@ -1,7 +1,7 @@
 ---
-description: Calcula la clave secreta maestra del Protocolo de Capa de sockets seguros (SSL).
+description: Calcula la clave secreta maestra Capa de sockets seguros protocolo de cifrado (SSL).
 ms.assetid: c9408eb3-711d-42c3-a4ba-e388689da34e
-title: Función SslGenerateMasterKey (Sslprovider. h)
+title: Función SslGenerateMasterKey (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: ae8b357743cabf652721d3666c177990568718e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e1ca35493667cb6e7e3d5ba8b162a3d073d51fc397ce2e1a1da7ab7a380728d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104424075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118906258"
 ---
-# <a name="sslgeneratemasterkey-function"></a>SslGenerateMasterKey función)
+# <a name="sslgeneratemasterkey-function"></a>Función SslGenerateMasterKey
 
-La función **SslGenerateMasterKey** calcula la clave secreta maestra del [*Protocolo de capa de sockets seguros*](/windows/desktop/SecGloss/s-gly) (SSL).
+La **función SslGenerateMasterKey** calcula la [*clave secreta maestra Capa de sockets seguros protocolo*](/windows/desktop/SecGloss/s-gly) de seguridad (SSL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,59 +49,59 @@ SECURITY_STATUS WINAPI SslGenerateMasterKey(
 
 <dl> <dt>
 
-*hSslProvider* \[ de\]
+*hSslProvider* \[ En\]
 </dt> <dd>
 
 Identificador de la instancia del proveedor del protocolo SSL.
 
 </dd> <dt>
 
-*hPrivateKey* \[ de\]
+*hPrivateKey* \[ En\]
 </dt> <dd>
 
-Identificador de la [*clave privada*](/windows/desktop/SecGloss/p-gly) utilizada en el intercambio.
+Identificador de la [*clave privada usada*](/windows/desktop/SecGloss/p-gly) en el intercambio.
 
 </dd> <dt>
 
-*hPublicKey* \[ de\]
+*hPublicKey* \[ En\]
 </dt> <dd>
 
-Identificador de la [*clave pública*](/windows/desktop/SecGloss/p-gly) que se usa en el intercambio.
+Identificador de la [*clave pública usada*](/windows/desktop/SecGloss/p-gly) en el intercambio.
 
 </dd> <dt>
 
-*phMasterKey* \[ enuncia\]
+*phMasterKey* \[ out\]
 </dt> <dd>
 
-Puntero al identificador de la [*clave maestra*](/windows/desktop/SecGloss/m-gly)generada.
+Puntero al identificador de la clave [*maestra generada.*](/windows/desktop/SecGloss/m-gly)
 
 </dd> <dt>
 
-*dwProtocol* \[ de\]
+*dwProtocol* \[ En\]
 </dt> <dd>
 
-Uno de los valores del [**identificador de protocolo del proveedor de SSL de CNG**](https://msdn.microsoft.com/library/Hh971257(v=VS.85).aspx) .
+Uno de los valores [**de Identificador de protocolo de proveedor SSL de CNG.**](https://msdn.microsoft.com/library/Hh971257(v=VS.85).aspx)
 
 </dd> <dt>
 
-*dwCipherSuite* \[ de\]
+*dwCipherSuite* \[ En\]
 </dt> <dd>
 
-Uno de los valores del [**identificador del conjunto de cifrado del proveedor de SSL de CNG**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx) .
+Uno de los valores del identificador del conjunto de cifrado del proveedor SSL de [**CNG.**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx)
 
 </dd> <dt>
 
-*pParameterList* \[ de\]
+*pParameterList* \[ En\]
 </dt> <dd>
 
-Puntero a una matriz de búferes de [**NCryptBuffer**](https://msdn.microsoft.com/library/Aa376245(v=VS.85).aspx) que contienen información utilizada como parte de la operación de intercambio de claves. El conjunto preciso de búferes depende del protocolo y el conjunto de cifrado que se utiliza. Como mínimo, la lista contendrá búferes que contengan los valores aleatorios proporcionados por el cliente y el servidor.
+Puntero a una matriz de búferes [**NCryptBuffer**](https://msdn.microsoft.com/library/Aa376245(v=VS.85).aspx) que contienen información utilizada como parte de la operación de intercambio de claves. El conjunto preciso de búferes depende del protocolo y del conjunto de cifrado que se usa. Como mínimo, la lista contendrá búferes que contienen los valores aleatorios proporcionados por el cliente y el servidor.
 
 </dd> <dt>
 
-*pbOutput* \[ enuncia\]
+*pbOutput* \[ out\]
 </dt> <dd>
 
-Dirección de un búfer que recibe el secreto principal precifrado cifrado con la clave pública del servidor. El parámetro *cbOutput* contiene el tamaño de este búfer. Si este parámetro es **null**, esta función devuelve el tamaño necesario, en bytes, en el **valor DWORD** al que apunta el parámetro *pcbResult* .
+Dirección de un búfer que recibe el secreto premaster cifrado con la clave pública del servidor. El *parámetro cbOutput* contiene el tamaño de este búfer. Si este parámetro es **NULL,** esta función devuelve el tamaño necesario, en bytes, en el **DWORD** al que apunta el *parámetro byteResult.*
 
 > [!Note]  
 > Este búfer se usa al realizar un intercambio de claves RSA.
@@ -110,31 +110,31 @@ Dirección de un búfer que recibe el secreto principal precifrado cifrado con l
 
 </dd> <dt>
 
-*cbOutput* \[ de\]
+*cbOutput* \[ En\]
 </dt> <dd>
 
-Tamaño, en bytes, del búfer *pbOutput* .
+Tamaño, en bytes, del *búfer pbOutput.*
 
 </dd> <dt>
 
-*pcbResult* \[ enuncia\]
+*pwResult* \[ out\]
 </dt> <dd>
 
-Un puntero a un valor **DWORD** en el que se colocará el número de bytes escritos en el búfer *pbOutput* .
+Puntero a un valor **DWORD** en el que se va a colocar el número de bytes escritos en el *búfer pbOutput.*
 
 </dd> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Especifica si esta función se usa para el intercambio de claves del lado cliente o el servidor.
+Especifica si esta función se usa para el intercambio de claves del lado cliente o del lado servidor.
 
 
 
 | Value                                                                                                                                                                                                                                                      | Significado                                          |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| <span id="NCRYPT_SSL_CLIENT_FLAG"></span><span id="ncrypt_ssl_client_flag"></span><dl> <dt>**NCRYPT \_ \_ \_ Marca de cliente SSL**</dt> <dt>0x00000001</dt> </dl> | Especifica un intercambio de claves del lado cliente.<br/> |
-| <span id="NCRYPT_SSL_SERVER_FLAG"></span><span id="ncrypt_ssl_server_flag"></span><dl> <dt>**NCRYPT \_ \_ \_ Marca de servidor SSL**</dt> <dt>0x00000002</dt> </dl> | Especifica un intercambio de claves del lado servidor.<br/> |
+| <span id="NCRYPT_SSL_CLIENT_FLAG"></span><span id="ncrypt_ssl_client_flag"></span><dl> <dt>**NCRYPT \_ Marca \_ de \_ cliente SSL**</dt> <dt>0x00000001</dt> </dl> | Especifica un intercambio de claves del lado cliente.<br/> |
+| <span id="NCRYPT_SSL_SERVER_FLAG"></span><span id="ncrypt_ssl_server_flag"></span><dl> <dt>**NCRYPT \_ Marca \_ de \_ servidor SSL**</dt> <dt>0x00000002</dt> </dl> | Especifica un intercambio de claves del lado servidor.<br/> |
 
 
 
@@ -144,19 +144,19 @@ Especifica si esta función se usa para el intercambio de claves del lado client
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, devuelve cero.
+Si la función se realiza correctamente, devuelve cero.
 
 Si se produce un error en la función, devuelve un valor de error distinto de cero.
 
-Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
+Los códigos de retorno posibles incluyen, entre otros, los siguientes.
 
 
 
 | Código o valor devuelto                                                                                                                                                       | Descripción                                                              |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| <dl> <dt>**NTE \_ NO hay \_ memoria**</dt> <dt>0x8009000EL</dt> </dl>         | No hay suficiente memoria disponible para asignar los búferes necesarios.<br/> |
-| <dl> <dt>**NTE \_ \_Identificador no válido**</dt> <dt>0x80090026L</dt> </dl>    | Uno de los identificadores proporcionados no es válido.<br/>                     |
-| <dl> <dt>**NTE \_ \_Parámetro no válido**</dt> <dt>0x80090027L</dt> </dl> | El parámetro *phMasterKey* o *hPublicKey* no es válido.<br/>     |
+| <dl> <dt>**NTE \_ NO \_ MEMORY**</dt> <dt>0x8009000EL</dt> </dl>         | No hay suficiente memoria disponible para asignar los búferes necesarios.<br/> |
+| <dl> <dt>**NTE \_ IDENTIFICADOR \_ NO VÁLIDO**</dt> <dt>0x80090026L</dt> </dl>    | Uno de los identificadores proporcionados no es válido.<br/>                     |
+| <dl> <dt>**NTE \_ PARÁMETRO \_ NO VÁLIDO**</dt> <dt>0x80090027L</dt> </dl> | El *parámetro phMasterKey* o *hPublicKey* no es válido.<br/>     |
 
 
 
@@ -168,9 +168,9 @@ Los códigos de retorno posibles incluyen, entre otros, lo siguiente.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

@@ -1,9 +1,9 @@
 ---
-title: GatherBlue (S, Float, INT2, INT2, INT2, INT2) (función, referencia de HLSL)
-description: Devuelve los componentes azules de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal. | GatherBlue (S, Float, INT2, INT2, INT2, INT2) (función, referencia de HLSL)
+title: Función GatherBlue(S,float,int2,int2,int2,int2) (referencia HLSL)
+description: Devuelve los componentes azules de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal. | Función GatherBlue(S,float,int2,int2,int2,int2) (referencia HLSL)
 ms.assetid: 0DDD3235-4F12-4D74-975A-F70A271C1FC0
 keywords:
-- GatherBlue de función HLSL
+- Función GatherBlue HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a5676d9d6b25c6e67123c59dac14efa234386d4e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8d23ae18d403f83145b5746fa33b56fbadb9ea5d9a4b3f5b3ca79e13e5da7eb4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043663"
 ---
-# <a name="gatherbluesfloatint2int2int2int2-function-hlsl-reference"></a>GatherBlue (S, Float, INT2, INT2, INT2, INT2) (función, referencia de HLSL)
+# <a name="gatherbluesfloatint2int2int2int2-function-hlsl-reference"></a>Función GatherBlue(S,float,int2,int2,int2,int2) (referencia HLSL)
 
-Devuelve los componentes azules de los cuatro valores de textura que se utilizarían en una operación de filtrado bilineal.
+Devuelve los componentes azules de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,50 +49,50 @@ TemplateType GatherBlue(
 
 Tipo: **SamplerState**
 
-Índice de muestra de base cero.
+Índice de sampler de base cero.
 
 </dd> <dt>
 
-*Ubicación* \[ de de\]
+*Ubicación* \[ En\]
 </dt> <dd>
 
 Tipo: **float**
 
-Coordenadas de ejemplo (u, v).
+Coordenadas de ejemplo (u,v).
 
 </dd> <dt>
 
-*Offset1* \[ de\]
+*Offset1* \[ En\]
 </dt> <dd>
 
-Tipo: **INT2**
+Tipo: **int2**
 
 Primer componente de desplazamiento aplicado a las coordenadas de textura antes del muestreo.
 
 </dd> <dt>
 
-*Offset2* \[ de\]
+*Offset2* \[ En\]
 </dt> <dd>
 
-Tipo: **INT2**
+Tipo: **int2**
 
 Segundo componente de desplazamiento aplicado a las coordenadas de textura antes del muestreo.
 
 </dd> <dt>
 
-*Offset3* \[ de\]
+*Offset3* \[ En\]
 </dt> <dd>
 
-Tipo: **INT2**
+Tipo: **int2**
 
 Tercer componente de desplazamiento aplicado a las coordenadas de textura antes del muestreo.
 
 </dd> <dt>
 
-*Offset4* \[ de\]
+*Offset4* \[ En\]
 </dt> <dd>
 
-Tipo: **INT2**
+Tipo: **int2**
 
 Cuarto componente de desplazamiento aplicado a las coordenadas de textura antes del muestreo.
 
@@ -102,17 +102,17 @@ Cuarto componente de desplazamiento aplicado a las coordenadas de textura antes 
 
 Tipo: **TemplateType**
 
-Un valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
+Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los ejemplos de textura se pueden usar para la interpolación bilineal.
+Las muestras de textura se pueden usar para la interpolación bilineal.
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -124,7 +124,7 @@ Esta función se admite para los siguientes tipos de sombreadores:
 
 <dl> <dt>
 
-[Métodos GatherBlue](texture2darray-gatherblue.md)
+[Métodos de GatherBlue](texture2darray-gatherblue.md)
 </dt> </dl>
 
  

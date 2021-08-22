@@ -1,7 +1,7 @@
 ---
 description: El método HaveCurrentSample determina si el filtro tiene un ejemplo.
 ms.assetid: cd20aea8-bb0b-4aa5-8d06-2733652fde08
-title: Método CBaseRenderer. HaveCurrentSample (Renbase. h)
+title: Método CBaseRenderer.HaveCurrentSample (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fc7a594ce23f2e015a9c74864308e2e42528e145
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ea807ffc68fc27a3c276de1fabcd7eb3591311a3896acfd5b0d4f91cb7f1ed7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660791"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954954"
 ---
-# <a name="cbaserendererhavecurrentsample-method"></a>CBaseRenderer. HaveCurrentSample, método
+# <a name="cbaserendererhavecurrentsample-method"></a>Método CBaseRenderer.HaveCurrentSample
 
 El `HaveCurrentSample` método determina si el filtro tiene un ejemplo.
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si el filtro tiene un ejemplo o **false** en caso contrario.
+Devuelve **TRUE** si el filtro tiene un ejemplo o **FALSE** en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve **true** si el filtro tiene un ejemplo o **false** en caso contrario.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve **true** si el filtro tiene un ejemplo o **false** en caso contrario.
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

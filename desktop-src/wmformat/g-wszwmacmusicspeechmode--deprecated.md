@@ -1,9 +1,9 @@
 ---
-title: g_wszWMACMusicSpeechMode (Wmcodecdsp. h)
-description: Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte Windows Media Audio y vídeo códec y API de DSP. | g_wszWMACMusicSpeechMode (Wmcodecdsp. h)
+title: g_wszWMACMusicSpeechMode (Wmcodecdsp.h)
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (API de códecs de audio y vídeo multimedia y DSP). | g_wszWMACMusicSpeechMode (Wmcodecdsp.h)
 ms.assetid: 7cd57741-ee32-47ce-a390-b6663b5e158b
 keywords:
-- g_wszWMACMusicSpeechMode formato de Windows Media
+- g_wszWMACMusicSpeechMode windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c48270c935c93b1be50acb50db75afde978d2e68
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: df44fc6f760f8b2e24acf33637295fcdccca9b6535f3bb6db81bbf502c2a2c3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708190"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118703769"
 ---
-# <a name="g_wszwmacmusicspeechmode"></a>g \_ wszWMACMusicSpeechMode
+# <a name="g_wszwmacmusicspeechmode"></a>g \_ wszWMACModeSpeechMode
 
-Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte [Windows Media Audio y vídeo códec y API de DSP.](/previous-versions//dd464626(v=vs.85))
+Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP API (API](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,7 +31,7 @@ Para obtener la documentación actual sobre los códecs de Windows Media y los p
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

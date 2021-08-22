@@ -14,30 +14,30 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: a8755615e4d2f0fd074117438f8f305dce0cb681
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5fff72067c69345a9852718c377b179d16f398c0eb3b84c73ca82c3af1b08a71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105720168"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047093"
 ---
 # <a name="idomanager-interface"></a>Interfaz IDOManager
 
-La interfaz **IDOManager** se usa para crear una nueva descarga y enumerar las descargas existentes.
+La **interfaz IDOManager** se usa para crear una nueva descarga y enumerar las descargas existentes.
 
 ## <a name="methods"></a>Métodos
 
-La interfaz **IDOManager** tiene estos métodos.
+La **interfaz IDOManager** tiene estos métodos.
 
 | Método | Descripción |
 | ---- |:---- |
 | [IDOManager::CreateDownload](./nf-do-idomanager-createdownload.md) | Crea una nueva descarga. |
-| [IDOManager::EnumDownloads](./nf-do-idomanager-enumdownloads.md) | Recupera un puntero de interfaz a un objeto de enumerador que se usa para enumerar las descargas existentes. |
+| [IDOManager::EnumDownloads](./nf-do-idomanager-enumdownloads.md) | Recupera un puntero de interfaz a un objeto enumerador que se usa para enumerar las descargas existentes. |
 
 ## <a name="requirements"></a>Requisitos
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo compatible** | Solo aplicaciones Win32 de Windows 10, versión 1809 \[\] |
-| **Servidor mínimo compatible** | Windows Server, versión 1809 \[ Win32 Applications Only\] |
-| **Header** | Do. h |
+| **Cliente mínimo compatible** | \[Windows 10, versión 1809 Solo aplicaciones Win32\] |
+| **Servidor mínimo compatible** | Windows Servidor, versión 1809 \[ Solo aplicaciones Win32\] |
+| **Header** | Do.h |

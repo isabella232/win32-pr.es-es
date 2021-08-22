@@ -1,6 +1,6 @@
 ---
-title: Métodos IDCompositionTranslateTransform3D SetOffsetY (Dcomp. h)
-description: Cambia o anima el valor de la propiedad DESREF de un efecto transformación de traslación 3D.
+title: Métodos IDCompositionTranslateTransform3D SetOffsetY (Dcomp.h)
+description: Cambia o anima el valor de la propiedad OffsetY de un efecto de transformación de traducción 3D.
 ms.assetid: 254DCA74-DB51-442D-9483-F7597643C538
 keywords:
 - Métodos SetOffsetY DirectComposition
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 569b9bb7695b6fa4ce59a21aa2451d6f97d94155
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2aa653f119cd3627abd07f9f4f788395223cab15bc5002edc54534b7ecd50ad8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105705119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043163"
 ---
-# <a name="idcompositiontranslatetransform3dsetoffsety-methods"></a>IDCompositionTranslateTransform3D:: SetOffsetY (métodos)
+# <a name="idcompositiontranslatetransform3dsetoffsety-methods"></a>Métodos IDCompositionTranslateTransform3D::SetOffsetY
 
-Cambia o anima el valor de la propiedad DESREF de un efecto transformación de traslación 3D. La propiedad DESREF especifica la traslación a lo largo del eje y.
+Cambia o anima el valor de la propiedad OffsetY de un efecto de transformación de traducción 3D. La propiedad OffsetY especifica la traducción a lo largo del eje Y.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -29,8 +29,8 @@ Cambia o anima el valor de la propiedad DESREF de un efecto transformación de t
 
 | Método                                                                                                              | Descripción                                            |
 |:--------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------|
-| [**SetOffsetY (float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontranslatetransform3d-setoffsety(float))                                     | Cambia el valor de la propiedad DESREF.<br/>  |
-| [**SetOffsetY (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontranslatetransform3d-setoffsety(idcompositionanimation)) | Anima el valor de la propiedad DESREF.<br/> |
+| [**SetOffsetY(float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontranslatetransform3d-setoffsety(float))                                     | Cambia el valor de la propiedad OffsetY.<br/>  |
+| [**SetOffsetY(IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontranslatetransform3d-setoffsety(idcompositionanimation)) | Anima el valor de la propiedad OffsetY.<br/> |
 
 
 
@@ -38,12 +38,12 @@ Cambia o anima el valor de la propiedad DESREF de un efecto transformación de t
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Dcomp. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Dcomp. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows solo 8 \[ aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2012 \[\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 

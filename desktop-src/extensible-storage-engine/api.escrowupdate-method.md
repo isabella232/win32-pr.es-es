@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: API. EscrowUpdate (método)'
-title: Método API. EscrowUpdate
+description: Más información sobre el método Api.EscrowUpdate
+title: Método Api.EscrowUpdate
 TOCTitle: 'EscrowUpdate method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.EscrowUpdate(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_COLUMNID,System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.escrowupdate(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: dde632f01bd7ac9cbdf8bc4dc09e1337f32014b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4e9bfaf180c67bea6da979877f9f768c850032adc2d085c4c65d47f3326442c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042733"
 ---
-# <a name="apiescrowupdate-method"></a>Método API. EscrowUpdate
+# <a name="apiescrowupdate-method"></a>Método Api.EscrowUpdate
 
-Realizar la adición atómica en una columna. La columna debe ser de tipo [Long](./jet-coltyp-enumeration.md). Esta función permite que varias sesiones actualicen el mismo registro simultáneamente sin conflictos.
+Realice la adición atómica en una columna. La columna debe ser de tipo [Long.](./jet-coltyp-enumeration.md) Esta función permite que varias sesiones actualicen el mismo registro simultáneamente sin conflictos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -71,46 +71,46 @@ public static int EscrowUpdate(
 #### <a name="parameters"></a>Parámetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    La sesión que se va a usar.
+    Sesión que se usará.
 
 <!-- end list -->
 
-  - TABLEID  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Cursor que se va a actualizar.
+    Cursor que se actualizará.
 
 <!-- end list -->
 
   - columnid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
     
-    Columna que se va a actualizar. Debe ser una columna que se pueda actualizar con custodia.
+    Columna que se actualizará. Debe ser una columna que se pueda custodiar.
 
 <!-- end list -->
 
   - delta  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Delta que se va a aplicar a la columna.
+    Delta que se aplicará a la columna.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
-Valor actual de la columna tal y como se almacena en la base de datos (se omite el control de versiones).  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
+Valor actual de la columna tal como está almacenado en la base de datos (se omite el control de versiones).  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método encapsula [JetEscrowUpdate (JET_SESID, JET_TABLEID, JET_COLUMNID, \[ \] , Int32, \[ \] , Int32, Int32, EscrowUpdateGrbit)](./api.jetescrowupdate-method.md).
+Este método encapsula [JetEscrowUpdate(JET_SESID, JET_TABLEID, JET_COLUMNID, \[ \] , Int32, , \[ \] Int32, Int32, EscrowUpdateGrbit).](./api.jetescrowupdate-method.md)
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
-[Miembros de API](./api-members.md)
+[Miembros de api](./api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,8 +1,8 @@
 ---
-description: La \_ clase BootServiceAccessBySAP de CIM asocia un servicio de arranque y sus puntos de acceso.
+description: La clase CIM \_ BootServiceAccessBySAP asocia un servicio de arranque y sus puntos de acceso.
 ms.assetid: 993469dd-fb9c-4d21-99e0-03c4b19eb7fd
 ms.tgt_platform: multiple
-title: CIM_BootServiceAccessBySAP (clase)
+title: CIM_BootServiceAccessBySAP clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 90548be52defbcf3419d6c7defc21395da5cfbfe
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 78ea24cb3140d50552884887d66fa2607c00b51635ea38af2150295b0c516ef1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118959094"
 ---
-# <a name="cim_bootserviceaccessbysap-class"></a>\_Clase BootServiceAccessBySAP de CIM
+# <a name="cim_bootserviceaccessbysap-class"></a>Cim \_ BootServiceAccessBySAP (clase)
 
-La **clase \_ BootServiceAccessBySAP de CIM** asocia un servicio de arranque y sus puntos de acceso.
+La **clase CIM \_ BootServiceAccessBySAP** asocia un servicio de arranque y sus puntos de acceso.
 
 > [!IMPORTANT]
-> Las clases de CIM (Modelo de información común) de DMTF (Distributed Management Task Force) son las clases primarias en las que se compilan las clases de WMI. WMI actualmente solo admite los [esquemas de la versión CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,13 +47,13 @@ class CIM_BootServiceAccessBySAP : CIM_ServiceAccessBySAP
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ BootServiceAccessBySAP** tiene estos tipos de miembros:
+La **clase CIM \_ BootServiceAccessBySAP** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ BootServiceAccessBySAP** tiene estas propiedades.
+La **clase CIM \_ BootServiceAccessBySAP** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -66,14 +66,14 @@ Tipo de datos: **CIM \_ BootService**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecedente")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Un [**\_ BootService de CIM**](cim-bootservice.md) que describe el servicio de arranque.
+Un [**servicio de \_ arranque CIM**](cim-bootservice.md) que describe el servicio de arranque.
 
 </dd> <dt>
 
-**Dependientes**
+**Dependiente**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **CIM \_ BootSAP**
@@ -82,20 +82,20 @@ Tipo de datos: **CIM \_ BootSAP**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependiente")
+Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
-Un [**\_ BootSAP de CIM**](cim-bootsap.md) que describe un punto de acceso para el servicio de arranque.
+[**\_ BootSAP cim**](cim-bootsap.md) que describe un punto de acceso para el servicio de arranque.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **CIM \_ BootServiceAccessBySAP** se deriva de [**\_ ServiceAccessBySAP de CIM**](cim-serviceaccessbysap.md).
+La **clase \_ CIM BootServiceAccessBySAP** se deriva de [**CIM \_ ServiceAccessBySAP**](cim-serviceaccessbysap.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Es posible que Microsoft haya realizado cambios para corregir los errores menores, cumplir los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,8 +105,8 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 <dl> <dt>
 
-[**\_SERVICEACCESSBYSAP CIM**](cim-serviceaccessbysap.md)
+[**Servicio \_ CIMAccessBySAP**](cim-serviceaccessbysap.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: La autoridad de seguridad local (LSA) es un subsistema protegido de Windows que mantiene información sobre todos los aspectos de la seguridad local en un sistema, que se conoce colectivamente como la Directiva de seguridad local del sistema.
+description: La autoridad de seguridad local (LSA) es un subsistema protegido de Windows que mantiene información sobre todos los aspectos de la seguridad local en un sistema, conocido colectivamente como directiva de seguridad local del sistema.
 ms.assetid: 16c0a7cb-77c9-4c2d-ba82-e7b8edfbb3a2
-title: Directiva de LSA
+title: Directiva LSA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e317821ed22ac9d6beafbfdc8b1617ce5330a40
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4dc9ec9e79e83eea177a00ee88de47891c9852c20a9007d7f9fb9d417823b766
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118894491"
 ---
-# <a name="lsa-policy"></a>Directiva de LSA
+# <a name="lsa-policy"></a>Directiva LSA
 
-La [*autoridad de seguridad local*](/windows/desktop/SecGloss/l-gly) (LSA) es un subsistema protegido de Windows que mantiene información sobre todos los aspectos de la seguridad local en un sistema, que se conoce colectivamente como la [Directiva de seguridad local](local-security-policy.md) del sistema. Además de hospedar información de directivas, la LSA proporciona servicios de traducción entre nombres e [*identificadores de seguridad*](/windows/desktop/SecGloss/s-gly) (SID).
+La [](/windows/desktop/SecGloss/l-gly) autoridad de seguridad local (LSA) es un subsistema protegido de Windows que mantiene información sobre todos los aspectos de la seguridad local en un sistema, conocido colectivamente como directiva de seguridad [local](local-security-policy.md) del sistema. Además de la información de la directiva de alojamiento, [](/windows/desktop/SecGloss/s-gly) el LSA proporciona servicios para la traducción entre nombres e identificadores de seguridad (SID).
 
  
 

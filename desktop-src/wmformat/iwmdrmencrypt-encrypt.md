@@ -1,11 +1,11 @@
 ---
-title: Método Encrypt de IWMDRMEncrypt (wmdrmsdk. h)
-description: El método Encrypt cifra un búfer de datos en contexto.
+title: Método IWMDRMEncrypt Encrypt (Wmdrmsdk.h)
+description: El método Encrypt cifra un búfer de datos en su lugar.
 ms.assetid: 9626f53e-3602-4369-99ed-fbcd8d5f4d9e
 keywords:
-- Método de cifrado de Windows Media Format
-- Método Encrypt formato de Windows Media, interfaz IWMDRMEncrypt
-- Interfaz IWMDRMEncrypt formato de Windows Media, método Encrypt
+- Cifrado del método windows Media Format
+- Método encrypt windows Media Format , IWMDRMEncrypt (interfaz)
+- IWMDRMEncrypt interface windows Media Format , Encrypt method
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 13380b321b540cbb5edce3c03e422b49c7b90e54
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9ebb49b2857c23bb11b5e4d091dece820bb833b2b4e77224558f2d7972885445
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027749"
 ---
-# <a name="iwmdrmencryptencrypt-method"></a>IWMDRMEncrypt:: Encrypt (método)
+# <a name="iwmdrmencryptencrypt-method"></a>IWMDRMEncrypt::Encrypt (Método)
 
-El método **Encrypt** cifra un búfer de datos en contexto.
+El **método Encrypt** cifra un búfer de datos en su lugar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,33 +47,33 @@ HRESULT Encrypt(
 *pbData* \[ in, out\]
 </dt> <dd>
 
-Datos que se van a cifrar. Si el método se ejecuta correctamente, los datos se cifran en la devolución.
+Datos que se cifran. Si el método se realiza correctamente, los datos se cifran en la devolución.
 
 </dd> <dt>
 
-*cbData* \[ de\]
+*cbData* \[ En\]
 </dt> <dd>
 
 Tamaño de los datos en bytes.
 
 </dd> <dt>
 
-*pWMCryptoData* \[ de\]
+*pWMCryptoData* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura [**WMDRMCryptoData**](wmdrmcryptodata.md) que contiene parámetros adicionales. Establezca en **null** para usar los valores de cifrado predeterminados.
+Puntero a una [**estructura WMDRMCryptoData**](wmdrmcryptodata.md) que contiene parámetros adicionales. Establezca en **NULL** para usar los valores de cifrado predeterminados.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -89,7 +89,7 @@ Ninguno.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -97,7 +97,7 @@ Ninguno.
 
 <dl> <dt>
 
-[**Interfaz IWMDRMEncrypt**](iwmdrmencrypt.md)
+[**IWMDRMEncrypt (interfaz)**](iwmdrmencrypt.md)
 </dt> <dt>
 
 [**WMDRMCryptoData**](wmdrmcryptodata.md)
