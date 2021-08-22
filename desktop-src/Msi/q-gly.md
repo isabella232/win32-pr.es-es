@@ -1,19 +1,19 @@
 ---
-description: Obtenga información Windows Installer conceptos que comienzan por la letra Q, como el componente calificado.
+description: Obtenga información Windows conceptos del instalador que comienzan por la letra Q, como el componente calificado.
 ms.assetid: b3fb665e-9acf-414d-97c4-c69b81dd7309
-title: Q (Windows Installer)
+title: Q (Windows instalador)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a75b4438be8ae6ce80204d8bc8d1c77568168de5
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: bd2e135facc7b6653fb05191841f7964cd7c78770b17527effabcdecc1a96b1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112011338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119558145"
 ---
-# <a name="q-windows-installer"></a>Q (Windows Installer)
+# <a name="q-windows-installer"></a>Q (Windows instalador)
 
-[A](a-gly.md) [B](b-gly.md) [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) [F](f-gly.md) [G](g-gly.md) H [I](i-gly.md) J K L M [N](m-gly.md) [O](o-gly.md) P [P](p-gly.md) Q [R](r-gly.md) [S](s-gly.md) [T](t-gly.md) [U](u-gly.md) [V](v-gly.md) W X Y Z
+[A](a-gly.md) [B](b-gly.md) [C](c-gly.md) [D](d-gly.md) [E](e-gly.md) [F](f-gly.md) G [H](g-gly.md) [I](i-gly.md) J K L M [N](m-gly.md) [O](o-gly.md) P [P](p-gly.md) Q [R](r-gly.md) [S](s-gly.md) [T](t-gly.md) [U](u-gly.md) [V](v-gly.md) W X Y Z
 
 <dl> <dt>
 

@@ -1,10 +1,10 @@
 ---
-title: houseIdentifier (atributo)
-description: Especifica una construcción lingüística que se usa para identificar un edificio determinado, por ejemplo, un número de casa o un nombre de casa relativo a una calle, Avenue, ciudad, ciudad, etc.
+title: atributo houseIdentifier
+description: Especifica una construcción lingüística que se usa para identificar un edificio determinado, por ejemplo, un número de casa o un nombre de casa relativo a una calle, una calle, una calle, una ciudad, una ciudad, entre otras.
 ms.assetid: cba39780-e53f-47c7-bb16-217469acb626
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo houseIdentifier
+- Esquema de AD del atributo houseIdentifier
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6b186def10d3f592c1624a04ab37ef2b2ccf547
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b2832ed802c734565a37755a3b9121f3a18b41746f210058565290c0fc5d15a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119305055"
 ---
-# <a name="houseidentifier-attribute"></a>houseIdentifier (atributo)
+# <a name="houseidentifier-attribute"></a>atributo houseIdentifier
 
-Especifica una construcción lingüística que se usa para identificar un edificio determinado, por ejemplo, un número de casa o un nombre de casa relativo a una calle, Avenue, ciudad, ciudad, etc.
+Especifica una construcción lingüística que se usa para identificar un edificio determinado, por ejemplo, un número de casa o un nombre de casa relativo a una calle, una calle, una calle, una ciudad, una ciudad, entre otras.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | houseIdentifier                             |
-| Nombre para mostrar de LDAP | houseIdentifier                             |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | houseIdentifier                             |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 2.5.4.51                                    |
-| System-ID-GUID    | a45398b7-c44a-4eb6-82d3-13c10946dbfe        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | a45398b7-c44a-4eb6-82d3-13c10946dbfe        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -51,15 +51,15 @@ Especifica una construcción lingüística que se usa para identificar un edific
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 32 768                                                              |
 | Search-Flags           | 0x00000000                                                         |
@@ -72,15 +72,15 @@ Especifica una construcción lingüística que se usa para identificar un edific
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 32 768                                                              |
 | Search-Flags           | 0x00000000                                                         |
@@ -93,15 +93,15 @@ Especifica una construcción lingüística que se usa para identificar un edific
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 32 768                                                              |
 | Search-Flags           | 0x00000000                                                         |
@@ -114,15 +114,15 @@ Especifica una construcción lingüística que se usa para identificar un edific
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 32 768                                                              |
 | Search-Flags           | 0x00000000                                                         |
@@ -135,15 +135,15 @@ Especifica una construcción lingüística que se usa para identificar un edific
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | False                                                              |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Falso                                                              |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 32 768                                                              |
 | Search-Flags           | 0x00000000                                                         |

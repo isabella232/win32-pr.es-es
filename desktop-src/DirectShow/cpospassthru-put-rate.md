@@ -1,7 +1,7 @@
 ---
-description: El \_ método de velocidad Put establece la velocidad de reproducción. Este método implementa el método de velocidad IMediaPosition::p UT \_ .
+description: El método put \_ Rate establece la velocidad de reproducción. Este método implementa el método IMediaPosition::p ut \_ Rate.
 ms.assetid: c077f344-de34-4f8a-8e08-6d7086a5a4f1
-title: Método CPosPassThru.put_Rate (Ctlutil. h)
+title: CPosPassThru.put_Rate método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 21e7e654233f78adcda2addf73b87a178654872e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 90c89c9730ee057bea3bc776f551061c0e828385fe3c6ae054f4161bdb705ab1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105678930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119565514"
 ---
-# <a name="cpospassthruput_rate-method"></a>CPosPassThru. put ( \_ método de tasa)
+# <a name="cpospassthruput_rate-method"></a>Método CPosPassThru.put \_ Rate
 
-El `put_Rate` método establece la velocidad de reproducción. Este método implementa el método de [**\_ velocidad IMediaPosition::p UT**](/windows/desktop/api/Control/nf-control-imediaposition-put_rate) .
+El `put_Rate` método establece la velocidad de reproducción. Este método implementa el método [**IMediaPosition::p ut \_ Rate.**](/windows/desktop/api/Control/nf-control-imediaposition-put_rate)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,11 +51,11 @@ Velocidad de reproducción. No debe ser cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve E \_ INVALIDARG si *dRate* es cero. De lo contrario, devuelve el valor **HRESULT** del PIN conectado.
+Devuelve E \_ INVALIDARG si *dRate* es cero. De lo contrario, devuelve **el valor HRESULT** del pin conectado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los tipos negativos indican reproducción inversa. No todos los medios serán compatibles con la reproducción inversa.
+Las tasas negativas indican el juego inverso. No todos los medios admitirán la reproducción inversa.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Los tipos negativos indican reproducción inversa. No todos los medios serán co
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Los tipos negativos indican reproducción inversa. No todos los medios serán co
 
 <dl> <dt>
 
-[**Clase CPosPassThru**](cpospassthru.md)
+[**CPosPassThru (clase)**](cpospassthru.md)
 </dt> </dl>
 
  

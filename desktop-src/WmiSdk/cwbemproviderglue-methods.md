@@ -2,21 +2,21 @@
 description: La clase CWbemProviderGlue expone los métodos siguientes.
 ms.assetid: E09290AF-1C2E-458A-811E-5357D470D3DF
 ms.tgt_platform: multiple
-title: Métodos CWbemProviderGlue
+title: CWbemProviderGlue (métodos)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dea54ffdeaa6b74cda3b830ea65fdc17f8ffa129
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: db9099528d76efe1aa165881462bc12a0e30493ce5b817da350c6feefc7297e3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119244515"
 ---
-# <a name="cwbemproviderglue-methods"></a>Métodos CWbemProviderGlue
+# <a name="cwbemproviderglue-methods"></a>CWbemProviderGlue (métodos)
 
-\[La clase [**CWbemProviderGlue**](/windows/desktop/api/WbemGlue/nl-wbemglue-cwbemproviderglue) forma parte del marco de trabajo del proveedor WMI, que ahora se considera en el estado final, y no habrá más desarrollo, mejoras o actualizaciones para problemas no relacionados con la seguridad que afecten a estas bibliotecas. Las [API de mi](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) deben usarse para todo el desarrollo nuevo.\]
+\[La [**clase CWbemProviderGlue**](/windows/desktop/api/WbemGlue/nl-wbemglue-cwbemproviderglue) forma parte del marco de proveedores WMI que ahora se considera en estado final y no habrá más desarrollos, mejoras o actualizaciones disponibles para problemas no relacionados con la seguridad que afecten a estas bibliotecas. Las [API de MI](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) deben usarse para todo el desarrollo nuevo.\]
 
-La clase [**CWbemProviderGlue**](/windows/desktop/api/WbemGlue/nl-wbemglue-cwbemproviderglue) expone los métodos siguientes.
+La [**clase CWbemProviderGlue**](/windows/desktop/api/WbemGlue/nl-wbemglue-cwbemproviderglue) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 

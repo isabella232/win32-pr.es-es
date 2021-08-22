@@ -1,9 +1,9 @@
 ---
-title: THEME. openView
+title: THEME.openView
 description: El método openView abre una vista en una nueva ventana.
 ms.assetid: 2aa63c29-dafe-4942-a010-076f1503862b
 keywords:
-- THEME. openView Windows Media Player
+- THEME.openView Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d66ff2cf47004c7687a37f1f22a87bdeb534d344
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5e5dd33760cb86ef1f85f7efd8a3ff38cb36f0408076555e2fe8732ffb53779a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119466615"
 ---
-# <a name="themeopenview"></a>THEME. openView
+# <a name="themeopenview"></a>THEME.openView
 
-El método **openView** abre una **vista** en una nueva ventana.
+El **método openView** abre **una vista** en una nueva ventana.
 
 ``` syntax
         theme.openView(view)
@@ -32,10 +32,10 @@ El método **openView** abre una **vista** en una nueva ventana.
 
 <dl> <dt>
 
-<span id="view"></span><span id="VIEW"></span>*Visores*
+<span id="view"></span><span id="VIEW"></span>*Vista*
 </dt> <dd>
 
-**Cadena** que especifica el **identificador** de la **vista** que se va a abrir.
+Cadena **que** especifica el **identificador de** la **vista** que se abre.
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -74,13 +74,13 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**Elemento THEME**](theme-element.md)
+[**ELEMENTO THEME**](theme-element.md)
 </dt> <dt>
 
-[**THEME. closeView**](theme-closeview.md)
+[**THEME.closeView**](theme-closeview.md)
 </dt> <dt>
 
-[**THEME. openViewRelative**](theme-openviewrelative.md)
+[**THEME.openViewRelative**](theme-openviewrelative.md)
 </dt> </dl>
 
  

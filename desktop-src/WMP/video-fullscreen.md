@@ -1,9 +1,9 @@
 ---
-title: VÍDEO. fullScreen
-description: El atributo fullScreen especifica o recupera un valor que indica si el vídeo se muestra en el modo de pantalla completa.
+title: VIDEO.fullScreen
+description: El atributo fullScreen especifica o recupera un valor que indica si el vídeo se muestra en modo de pantalla completa.
 ms.assetid: de74d95a-31a2-4f65-811c-4e8018ee484a
 keywords:
-- VÍDEO de Windows. fullScreen Media Player
+- Video.fullScreen Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c27fa1bde6437b55689494751410145995862d8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e8150843ab14148d398b11cba82aa52711621c15962976ca37d5332a6ae58f24
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119465704"
 ---
-# <a name="videofullscreen"></a>VÍDEO. fullScreen
+# <a name="videofullscreen"></a>VIDEO.fullScreen
 
-El atributo **Fullscreen** especifica o recupera un valor que indica si el vídeo se muestra en el modo de pantalla completa.
+El **atributo fullScreen** especifica o recupera un valor que indica si el vídeo se muestra en modo de pantalla completa.
 
 ``` syntax
         elementID.fullScreen
@@ -29,14 +29,14 @@ El atributo **Fullscreen** especifica o recupera un valor que indica si el víde
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un booleano de lectura **y escritura.**
 
 
 
 | Value | Descripción                                          |
 |-------|------------------------------------------------------|
-| true  | El vídeo se muestra en el modo de pantalla completa.                  |
-| false | Predeterminada. El vídeo no se muestra en el modo de pantalla completa. |
+| true  | El vídeo se muestra en modo de pantalla completa.                  |
+| false | Predeterminada. El vídeo no se muestra en modo de pantalla completa. |
 
 
 
@@ -44,7 +44,7 @@ Este atributo es un **valor booleano** de lectura/escritura.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta propiedad solo se puede especificar en tiempo de ejecución, después de que se haya cargado un archivo. Por lo tanto, debe establecerse en un controlador de eventos de script. El botón escape se usa para volver a la vista normal.
+Esta propiedad solo se puede especificar en tiempo de ejecución, una vez cargado un archivo. Por lo tanto, debe establecerse dentro de un controlador de eventos de script. El botón de escape se usa para volver a la visualización normal.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Esta propiedad solo se puede especificar en tiempo de ejecución, después de qu
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -60,16 +60,16 @@ Esta propiedad solo se puede especificar en tiempo de ejecución, después de qu
 
 <dl> <dt>
 
-[**Elemento de vídeo**](video-element.md)
+[**Elemento VIDEO**](video-element.md)
 </dt> <dt>
 
-[**VÍDEO. maintainAspectRatio**](video-maintainaspectratio.md)
+[**VIDEO.maintainAspectRatio**](video-maintainaspectratio.md)
 </dt> <dt>
 
-[**VÍDEO. shrinkToFit**](video-shrinktofit.md)
+[**VIDEO.shrinkToFit**](video-shrinktofit.md)
 </dt> <dt>
 
-[**VÍDEO. stretchToFit**](video-stretchtofit.md)
+[**VIDEO.stretchToFit**](video-stretchtofit.md)
 </dt> </dl>
 
  

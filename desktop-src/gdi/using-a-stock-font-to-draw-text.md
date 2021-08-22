@@ -4,35 +4,35 @@ ms.assetid: 349ea57f-dd25-4e33-bbdf-63a320eae3a0
 title: Usar una fuente estándar para dibujar texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56a7e580175956185bcc26a7ebbae8d46dfff078
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9bd140a931a13f6232235036fb7b9cf3de1a20505666e869f214219b7a60a95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119468335"
 ---
 # <a name="using-a-stock-font-to-draw-text"></a>Usar una fuente estándar para dibujar texto
 
-El sistema proporciona seis fuentes estándar. Una fuente estándar es una fuente lógica que una aplicación puede obtener llamando a la función [GetStockObject](/windows/desktop/api/Wingdi/nf-wingdi-getstockobject) y especificando la fuente solicitada. La lista siguiente contiene los valores que se pueden especificar para obtener una fuente estándar.
+El sistema proporciona seis fuentes estándar. Una fuente estándar es una fuente lógica que una aplicación puede obtener llamando a la [función GetStockObject](/windows/desktop/api/Wingdi/nf-wingdi-getstockobject) y especificando la fuente solicitada. La lista siguiente contiene los valores que puede especificar para obtener una fuente estándar.
 
 
 
 | Value                 | Significado                                                                                                                                                                                                                                                                                         |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_fuente ANSI fija \_     | Especifica una fuente monoespaciada basada en el juego de caracteres de Windows. Normalmente se utiliza una fuente Courier.                                                                                                                                                                                                |
-| \_fuente ANSI var \_       | Especifica una fuente proporcional basada en el juego de caracteres de Windows. Normalmente se utiliza MS Sans Serif.                                                                                                                                                                                              |
-| \_fuente predeterminada del dispositivo \_ | Especifica la fuente preferida para el dispositivo especificado. Suele ser la fuente del sistema para los dispositivos de visualización; sin embargo, para algunas impresoras matriciales se trata de una fuente que reside en el dispositivo. (La impresión con esta fuente suele ser más rápida que la impresión con una fuente de mapa de bits descargada).    |
-| \_fuente fija \_ OEM      | Especifica una fuente monoespaciada basada en un juego de caracteres OEM. En el caso de los equipos de IBM y los compatibles, la fuente OEM se basa en el juego de caracteres de IBM PC.                                                                                                                                                 |
-| fuente del sistema \_          | Especifica la fuente del sistema. Se trata de una fuente proporcional basada en el juego de caracteres de Windows y que el sistema operativo utiliza para mostrar los títulos de ventana, los nombres de menú y el texto en los cuadros de diálogo. La fuente del sistema siempre está disponible. Otras fuentes solo están disponibles si se han instalado. |
-| \_fuente fija del sistema \_   | Especifica una fuente monoespaciada compatible con la fuente del sistema en versiones anteriores de Windows.                                                                                                                                                                                                        |
+| ANSI \_ FIXED \_ FONT     | Especifica una fuente monoespacial basada en el Windows de caracteres. Normalmente se usa una fuente Courier.                                                                                                                                                                                                |
+| ANSI \_ VAR \_ FONT       | Especifica una fuente proporcional basada en el juego Windows caracteres. Normalmente se usa MS Sans Serif.                                                                                                                                                                                              |
+| FUENTE \_ PREDETERMINADA DEL \_ DISPOSITIVO | Especifica la fuente preferida para el dispositivo especificado. Suele ser la fuente System para los dispositivos de visualización. sin embargo, para algunas impresoras de matriz de puntos, se trata de una fuente que se encuentra en el dispositivo. (La impresión con esta fuente suele ser más rápida que imprimir con una fuente de mapa de bits descargada).    |
+| FUENTE \_ FIJA DE \_ OEM      | Especifica una fuente monoespacial basada en un juego de caracteres OEM. Para equipos IBM y compatibles, la fuente OEM se basa en el juego de caracteres de PC de IBM.                                                                                                                                                 |
+| FUENTE DEL \_ SISTEMA          | Especifica la fuente System. Se trata de una fuente proporcional basada en el juego de caracteres Windows y lo usa el sistema operativo para mostrar títulos de ventana, nombres de menú y texto en cuadros de diálogo. La fuente System siempre está disponible. Otras fuentes solo están disponibles si se han instalado. |
+| FUENTE \_ FIJA DEL \_ SISTEMA   | Especifica una fuente monoespacial compatible con la fuente System en las primeras versiones de Windows.                                                                                                                                                                                                        |
 
 
 
  
 
-Para obtener más información sobre las fuentes, vea acerca de las [fuentes](about-fonts.md).
+Para obtener más información sobre las fuentes, vea [Acerca de las fuentes](about-fonts.md).
 
-En el ejemplo siguiente se recupera un identificador de la fuente stock variable, se selecciona en un contexto de dispositivo y, a continuación, se escribe una cadena con esa fuente:
+En el ejemplo siguiente se recupera un identificador de la fuente estándar variable, se selecciona en un contexto de dispositivo y, a continuación, se escribe una cadena con esa fuente:
 
 
 ```C++
@@ -54,7 +54,7 @@ if (hOldFont = (HFONT)SelectObject(hdc, hFont))
 
 
 
-Si otras fuentes bursátiles no están disponibles, [GetStockObject](/windows/desktop/api/Wingdi/nf-wingdi-getstockobject) devuelve un identificador a la fuente del sistema (fuente del sistema \_ ). Solo debe usar fuentes estándar si el modo de asignación del contexto de dispositivo de la aplicación es \_ texto mm.
+Si no hay otras fuentes estándar disponibles, [GetStockObject](/windows/desktop/api/Wingdi/nf-wingdi-getstockobject) devuelve un identificador a la fuente System (SYSTEM \_ FONT). Solo debe usar fuentes estándar si el modo de asignación para el contexto de dispositivo de la aplicación es MM \_ TEXT.
 
  
 

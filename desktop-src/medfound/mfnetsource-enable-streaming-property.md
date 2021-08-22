@@ -1,29 +1,29 @@
 ---
-description: Especifica si están habilitados todos los protocolos de streaming.
+description: Especifica si todos los protocolos de streaming están habilitados.
 ms.assetid: cf072572-58f7-429a-954a-8808d05248f0
-title: Propiedad MFNETSOURCE_ENABLE_STREAMING (Mfidl. h)
+title: MFNETSOURCE_ENABLE_STREAMING propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29fc8ae10dedd5cb904e43ee79ff64e8f451e37f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5fae2b127a52bbea9e8d122ec9ad219c61010068b07696b44cce49cc7546c9fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119463705"
 ---
-# <a name="mfnetsource_enable_streaming-property"></a>MFNETSOURCE \_ Habilitar la \_ propiedad de transmisión por secuencias
+# <a name="mfnetsource_enable_streaming-property"></a>Propiedad MFNETSOURCE \_ ENABLE \_ STREAMING
 
-Especifica si están habilitados todos los protocolos de streaming.
+Especifica si todos los protocolos de streaming están habilitados.
 
 
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
-Booleano (**Long**)
+Booleano (**LONG**)
 
 VT \_ I4
 
@@ -33,9 +33,9 @@ VT \_ I4
 
 ## <a name="remarks"></a>Observaciones
 
-La constante **MFNETSOURCE \_ enable \_ streaming** define el GUID para esta clave de propiedad. El identificador de propiedad (PID) es cero.
+La constante **MFNETSOURCE \_ ENABLE \_ STREAMING** define el GUID de esta clave de propiedad. El identificador de propiedad (PID) es cero.
 
-Las aplicaciones pueden utilizar esta propiedad para configurar el origen de red. Para establecer la propiedad, pase un puntero **IPropertyStore** a la [configuración de un origen de medios](configuring-a-media-source.md).
+Las aplicaciones pueden usar esta propiedad para configurar el origen de red. Para establecer la propiedad , pase un **puntero IPropertyStore** al elemento [Configuring a Media Source](configuring-a-media-source.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,9 +43,9 @@ Las aplicaciones pueden utilizar esta propiedad para configurar el origen de red
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,10 +53,10 @@ Las aplicaciones pueden utilizar esta propiedad para configurar el origen de red
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
-[Funciones de red en Media Foundation](networking-in-media-foundation.md)
+[Redes en Media Foundation](networking-in-media-foundation.md)
 </dt> <dt>
 
 [Protocolos admitidos](supported-protocols.md)

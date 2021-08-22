@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentFileCompressedException'
-title: Constructor de EsentFileCompressedException
+description: 'Más información sobre: Constructor EsentFileCompressedException'
+title: Constructor EsentFileCompressedException
 TOCTitle: 'EsentFileCompressedException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentFileCompressedException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentfilecompressedexception.esentfilecompressedexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 55dd38a7d9b58f44533d929d071271057c26bca8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b0fdfd6a74bd9513ef39627759f880418874e60ad52eb3922e1b02404f39f3c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119236800"
 ---
-# <a name="esentfilecompressedexception-constructor"></a>Constructor de EsentFileCompressedException
+# <a name="esentfilecompressedexception-constructor"></a>Constructor EsentFileCompressedException
 
 Inicializa una nueva instancia de la clase EsentFileCompressedException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentFileCompressedException()
 public EsentFileCompressedException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentFileCompressedException()
 
 [Miembros de EsentFileCompressedException](./esentfilecompressedexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

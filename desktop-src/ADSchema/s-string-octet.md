@@ -1,10 +1,10 @@
 ---
-title: Sintaxis de cadena (octeto)
+title: Sintaxis de string(octet)
 description: Cadena que representa una matriz de bytes.
 ms.assetid: 519ec9f3-f6ce-4542-937e-4cf5dfbda6e1
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de sintaxis de cadena (octeto)
+- Esquema de AD de sintaxis string(octet)
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e25ef05cc450688c76be792f4e9e4e447353935
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a531759cbe94632349aeb7c0063f0264d9bcb4209f9216ab1a9dee83303a425f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119530075"
 ---
-# <a name="stringoctet-syntax"></a>Sintaxis de cadena (octeto)
+# <a name="stringoctet-syntax"></a>Sintaxis de string(octet)
 
-Cadena que representa una matriz de bytes. Esta sintaxis se utiliza para almacenar datos binarios.
+Cadena que representa una matriz de bytes. Esta sintaxis se usa para almacenar datos binarios.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|-------------------------------------------------------------------|
 | Nombre         | String(Octet)                                                     |
-| IDENTIFICADOR de sintaxis    | 2.5.5.10                                                          |
-| IDENTIFICADOR DE OM        | 4                                                                 |
-| Tipo MAPI    | BINARY                                                            |
-| Tipo ADS     | ADSTYPE \_ cadena de octeto \_                                            |
-| Tipo Variant | \_Matriz VT UI1 \| VT \_                                              |
-| Tipo de SDS     | [System. Byte\[\]](/dotnet/api/system.byte) |
+| Identificador de sintaxis    | 2.5.5.10                                                          |
+| Id. de OM        | 4                                                                 |
+| Tipo DE MAPI    | BINARY                                                            |
+| ADS Type     | ADSTYPE \_ OCTET \_ STRING                                            |
+| Tipo de variante | VT \_ UI1 \| VT \_ ARRAY                                              |
+| Tipo sds     | [System.Byte\[\]](/dotnet/api/system.byte) |
 
 
 
@@ -42,7 +42,7 @@ Cadena que representa una matriz de bytes. Esta sintaxis se utiliza para almacen
 
 <dl> <dt>
 
-[System. Byte\[\]](/dotnet/api/system.byte)
+[System.Byte\[\]](/dotnet/api/system.byte)
 </dt> </dl>
 
  

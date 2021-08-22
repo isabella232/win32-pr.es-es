@@ -1,5 +1,5 @@
 ---
-description: Inicializa un objeto de servicio de sistema para instalar un objeto ActiveX cuando el usuario actual no tiene permiso para instalar el objeto.
+description: Inicializa un objeto de servicio del sistema para instalar un objeto ActiveX cuando el usuario actual no tiene permiso para instalar el objeto.
 ms.assetid: 42f7cf83-789b-42ea-bb1a-4b79137188ea
 title: Interfaz IeAxiService
 ms.topic: reference
@@ -12,20 +12,20 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 34c4743327b2539616dee6b09c34d9f479aa3303
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f799b0b306d10e8246afbef83e4677729f6a735a52e5e4ed4954b873ec5b6201
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119414725"
 ---
 # <a name="ieaxiservice-interface"></a>Interfaz IeAxiService
 
-La interfaz **IAxiService** Inicializa un objeto de servicio de sistema para instalar un objeto ActiveX cuando el usuario actual no tiene permiso para instalar el objeto.
+La **interfaz IAxiService** inicializa un objeto de servicio del sistema para instalar un objeto ActiveX cuando el usuario actual no tiene permiso para instalar el objeto.
 
-La clase [**CIeAxiInstallerService**](cieaxiinstallerservice.md) implementa esta interfaz.
+La [**clase CIeAxiInstallerService**](cieaxiinstallerservice.md) implementa esta interfaz.
 
-Esta interfaz no está declarada en un encabezado público. Las aplicaciones deben definirla. El siguiente fragmento del lenguaje de definición de interfaz (IDL) describe esta interfaz, incluido su IID.
+Esta interfaz no se declara en un encabezado público. Las aplicaciones deben definirla por sí mismas. El siguiente fragmento del lenguaje de definición de interfaz (IDL) describe esta interfaz, incluido su IID.
 
 ``` syntax
 [
@@ -53,19 +53,19 @@ interface IeAxiService : IUnknown{
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IeAxiService** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IeAxiService** también tiene estos tipos de miembros:
+La **interfaz IeAxiService** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IeAxiService** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IeAxiService** tiene estos métodos.
+La **interfaz IeAxiService** tiene estos métodos.
 
 
 
 | Método                                        | Descripción                                                        |
 |:----------------------------------------------|:-------------------------------------------------------------------|
-| [**Limpieza**](ieaxiservice-cleanup.md)       | Libera los recursos utilizados por la interfaz **IeAxiService** .<br/> |
+| [**Limpieza**](ieaxiservice-cleanup.md)       | Libera los recursos usados por la **interfaz IeAxiService.**<br/> |
 | [**Inicialización**](ieaxiservice-initialize.md) | Comprueba y descarga un objeto ActiveX.<br/>                 |
 
 
@@ -78,7 +78,7 @@ La interfaz **IeAxiService** tiene estos métodos.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista Business, Windows Vista Enterprise, Windows Vista Ultimate \[ solo aplicaciones de escritorio\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Vista Business, Windows Vista Enterprise, Windows aplicaciones de escritorio de Vista \[ Ultimate\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                 |
 | IID<br/>                      | IID \_ IeAxiService se define como E9E92380-9ECD-4982-A0EB-6815A56CCF27<br/>                           |
 

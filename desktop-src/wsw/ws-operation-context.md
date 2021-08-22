@@ -1,19 +1,19 @@
 ---
-title: WS_OPERATION_CONTEXT (webservices. h)
+title: WS_OPERATION_CONTEXT (WebServices.h)
 description: Tipo opaco que se usa para hacer referencia a un contexto.
 ms.assetid: 5c9b5906-15f0-4339-a4ad-39977d28ce5b
 keywords:
 - WS_OPERATION_CONTEXT
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5454146bac2941f76df646bb58e71ca2cdfd6e1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1fc355a3c594cb89d26f4f4312af93474e3bd2c2fd948cdadfab790fa6e6ee92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082999"
 ---
-# <a name="ws_operation_context"></a>\_contexto de operación WS \_
+# <a name="ws_operation_context"></a>CONTEXTO DE OPERACIÓN DE WS \_ \_
 
 Tipo opaco que se usa para hacer referencia a un [contexto](context.md).
 
@@ -24,19 +24,19 @@ typedef struct _WS_OPERATION_CONTEXT WS_OPERATION_CONTEXT;
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este objeto no es seguro para subprocesos. Para obtener más información, vea [seguridad para subprocesos](thread-safety.md).
+Este objeto no es seguro para subprocesos. Para obtener más información, vea [Seguridad para subprocesos.](thread-safety.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/>                                        |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 R2 \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Webservices. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio \| para UWP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                           |
+| Header<br/>                   | <dl> <dt>WebServices.h</dt> </dl> |
 
 
 

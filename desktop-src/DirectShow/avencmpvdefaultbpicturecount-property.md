@@ -1,19 +1,19 @@
 ---
-description: Especifica el número predeterminado de fotogramas B consecutivos entre los fotogramas I y P.
+description: Especifica el número predeterminado de fotogramas B consecutivos entre fotogramas I y P.
 ms.assetid: d41ed713-0159-4325-bc44-f4a3eea10aa2
-title: Propiedad AVEncMPVDefaultBPictureCount (Codecapi. h)
+title: Propiedad AVEncMPVDefaultBPictureCount (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2026ddcb6a2b4ce813bd8ba2f6144f0c4a32344
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 95604d8b3849175e579d276fa006f5a8c4d2833a167228316c4cf830b01618b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104080033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119276265"
 ---
 # <a name="avencmpvdefaultbpicturecount-property"></a>Propiedad AVEncMPVDefaultBPictureCount
 
-Especifica el número predeterminado de fotogramas B consecutivos entre los fotogramas I y P.
+Especifica el número predeterminado de fotogramas B consecutivos entre fotogramas I y P.
 
 Esta propiedad es de lectura y escritura.
 
@@ -27,11 +27,11 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Esta propiedad tiene un intervalo de valores lineal. Para obtener el intervalo admitido, llame a [**ICodecAPI:: GetParameterRange**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-getparameterrange).
+Esta propiedad tiene un intervalo lineal de valores. Para obtener el intervalo admitido, llame a [**ICodecAPI::GetParameterRange**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-getparameterrange).
 
 ## <a name="remarks"></a>Observaciones
 
-Antes de Windows 8, esta propiedad se aplica a los codificadores de vídeo MPEG. A partir de Windows 8, esta propiedad la usan los codificadores de vídeo MPEG, WMV y H. 264.
+Antes de Windows 8, esta propiedad se aplica a los codificadores de vídeo MPEG. A partir Windows 8, esta propiedad la usan los codificadores de vídeo MPEG, WMV y H.264.
 
 Si el codificador admite esta propiedad, se puede usar para controlar la estructura del grupo de imágenes (GOP).
 
@@ -41,9 +41,9 @@ Si el codificador admite esta propiedad, se puede usar para controlar la estruct
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -54,7 +54,7 @@ Si el codificador admite esta propiedad, se puede usar para controlar la estruct
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

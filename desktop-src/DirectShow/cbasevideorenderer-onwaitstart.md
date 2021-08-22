@@ -1,7 +1,7 @@
 ---
-description: El método OnWaitStart actualiza los tiempos de espera y no espera.
+description: El método OnWaitStart actualiza los tiempos dedicados a esperar y no a esperar.
 ms.assetid: 3f2e2bf2-f205-4b59-b969-cf8c2136437d
-title: Método CBaseVideoRenderer. OnWaitStart (Renbase. h)
+title: Método CBaseVideoRenderer.OnWaitStart (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d4fab7e1a1f24c3d00f46018db9478990be71666
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f9bc3b895f27490377fd5de188b7cea8ccd429c55d36a5cdd0fea4ce025bac29
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119502605"
 ---
-# <a name="cbasevideorendereronwaitstart-method"></a>CBaseVideoRenderer. OnWaitStart, método
+# <a name="cbasevideorendereronwaitstart-method"></a>Método CBaseVideoRenderer.OnWaitStart
 
-El `OnWaitStart` método actualiza los tiempos de espera y no espera.
+El `OnWaitStart` método actualiza los tiempos dedicados a esperar y no a esperar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Se llama a esta función miembro cuando se inicia la espera de un evento de representación. Se usa solo para las mediciones de rendimiento.
+Se llama a esta función miembro cuando se empieza a esperar un evento de representación. Solo se usa para las medidas de rendimiento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Se llama a esta función miembro cuando se inicia la espera de un evento de repr
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Se llama a esta función miembro cuando se inicia la espera de un evento de repr
 
 <dl> <dt>
 
-[**Clase CBaseVideoRenderer**](cbasevideorenderer.md)
+[**CBaseVideoRenderer (clase)**](cbasevideorenderer.md)
 </dt> </dl>
 
  

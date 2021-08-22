@@ -1,6 +1,6 @@
 ---
 title: Elemento FastReconnect (EapType)
-description: Obtenga información sobre el elemento FastReconnect (EapType). Este elemento indica si se va a realizar una reconexión rápida.
+description: Obtenga información sobre el elemento FastReconnect (EapType). Este elemento indica si se debe realizar una reconexión rápida.
 ms.assetid: 075285b0-7b1b-4d3c-af27-a718f3c20394
 keywords:
 - Elemento FastReconnect EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2214519db68b8c95b0e0efa91d68a7cd667b5f87
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 1bda956d698ebefef956e85557c6d940baa02f6bcc9ef7cca0081fd668107e18
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105695754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119238725"
 ---
 # <a name="fastreconnect-eaptype-element"></a>Elemento FastReconnect (EapType)
 
-El elemento **FastReconnect (EapType)** indica si se va a realizar una reconexión rápida.
+El **elemento FastReconnect (EapType)** indica si se debe realizar una reconexión rápida.
 
 ``` syntax
 <xs:element name="FastReconnect"
@@ -31,11 +31,11 @@ El elemento **FastReconnect (EapType)** indica si se va a realizar una reconexi�
  />
 ```
 
-El elemento **FastReconnect** se define mediante el elemento [**EapType**](mspeapconnectionpropertiesv1schema-eaptype-element.md) .
+El **elemento FastReconnect** se define mediante el [**elemento EapType.**](mspeapconnectionpropertiesv1schema-eaptype-element.md)
 
 ## <a name="remarks"></a>Observaciones
 
-Si el elemento **FastReconnect** es true, PEAP intenta realizar una reconexión rápida. Si es FALSE, PEAP realiza la autenticación completa. El elemento **FastReconnect** es opcional.
+Si el **elemento FastReconnect** es TRUE, PEAP intenta realizar una reconexión rápida. si es FALSE, PEAP realiza la autenticación completa. El **elemento FastReconnect** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,8 +43,8 @@ Si el elemento **FastReconnect** es true, PEAP intenta realizar una reconexión 
 
 | Role | Versión mínima admitida del sistema operativo |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Server<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

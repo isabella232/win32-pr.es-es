@@ -1,7 +1,7 @@
 ---
 description: Identifica los datos de recursos.
 ms.assetid: f2ace2ad-228f-4f76-ab31-16e045e09331
-title: D3DXF_FILELOADRESOURCE estructura (D3dx9xof. h)
+title: D3DXF_FILELOADRESOURCE estructura (D3dx9xof.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9xof.h
-ms.openlocfilehash: ee5dc27b551382a5fa5d1c7f4833c94b205e5521
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ddc105d3df7732e1572e41c3d9cb47a285caf69cba0a24f6ea65090706394592
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564935"
 ---
-# <a name="d3dxf_fileloadresource-structure"></a>D3DXF \_ estructura FILELOADRESOURCE
+# <a name="d3dxf_fileloadresource-structure"></a>Estructura FILELOADRESOURCE de D3DXF \_
 
 Identifica los datos de recursos.
 
@@ -48,7 +48,7 @@ Tipo: **[ **HMODULE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Identificador del módulo que contiene el recurso que se va a cargar. Si este miembro es **null**, el recurso se debe adjuntar al archivo ejecutable que lo usará.
+Identificador del módulo que contiene el recurso que se va a cargar. Si este miembro es **NULL,** el recurso se debe adjuntar al archivo ejecutable que lo usará.
 
 </dd> <dt>
 
@@ -74,9 +74,9 @@ Puntero a una cadena que especifica el tipo definido por el usuario que identifi
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura identifica un recurso que se va a cargar cuando una aplicación usa el método [**CreateEnumObject**](id3dxfile--createenumobject.md) y especifica la marca [D3DXF \_ FILELOAD \_ FROMRESOURCE](d3dxf.md) .
+Esta estructura identifica un recurso que se va a cargar cuando una aplicación usa el [**método CreateEnumObject**](id3dxfile--createenumobject.md) y especifica la marca [ \_ FILELOAD \_ FROMRESOURCE de D3DXF.](d3dxf.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,7 +84,7 @@ Esta estructura identifica un recurso que se va a cargar cuando una aplicación 
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9xof. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9xof.h</dt> </dl> |
 
 
 
@@ -92,7 +92,7 @@ Esta estructura identifica un recurso que se va a cargar cuando una aplicación 
 
 <dl> <dt>
 
-[Estructuras de archivos de D3DX X](dx9-graphics-reference-d3dx-x-file-structures.md)
+[Estructuras de archivo D3DX X](dx9-graphics-reference-d3dx-x-file-structures.md)
 </dt> </dl>
 
  

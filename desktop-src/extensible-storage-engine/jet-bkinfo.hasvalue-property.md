@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_BKINFO. Propiedad HasValue'
+description: 'Más información sobre: JET_BKINFO. Propiedad HasValue'
 title: JET_BKINFO. Propiedad HasValue
 TOCTitle: 'HasValue property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_BKINFO.HasValue
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 603d4ae97ee5a674d60c9fadca92404a1cd8f3ef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f13e4c7042c0aee72994f10c95bb95980e5f1ffa747d4636cf18cb0367fb2cba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119360355"
 ---
 # <a name="jet_bkinfohasvalue-property"></a>JET_BKINFO. Propiedad HasValue
 
 Obtiene un valor que indica si esta información de copia de seguridad es NULL.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -58,18 +58,18 @@ public bool HasValue { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 #### <a name="implements"></a>Implementaciones
 
-[INullableJetStruct. HasValue](./inullablejetstruct.hasvalue-property.md)  
+[INullableJetStruct.HasValue](./inullablejetstruct.hasvalue-property.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_BKINFO](./jet-bkinfo-structure2.md)
+[JET_BKINFO estructura](./jet-bkinfo-structure2.md)
 
-[Miembros de JET_BKINFO](./jet-bkinfo-members.md)
+[JET_BKINFO miembros](./jet-bkinfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

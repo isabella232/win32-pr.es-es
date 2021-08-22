@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_RELEASEDCAPTURE (arriba) (commctrl. h)
-description: Notifica a la ventana primaria de un control de flechas que el control está liberando la captura del mouse. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.
+title: NM_RELEASEDCAPTURE (arriba abajo) código de notificación (Commctrl.h)
+description: Notifica a la ventana primaria de un control hacia abajo que el control está liberando la captura del mouse. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 88a4a9a2-ba7f-4ccc-b5bf-749f49dc666b
 keywords:
-- NM_RELEASEDCAPTURE de código de notificación (arriba) controles de Windows
+- NM_RELEASEDCAPTURE (arriba abajo) código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b94f2a61727861cbf47720a41c7255763992b54
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 54e0adb7ace7f5a185cf7f0231622d4931c22af6932cf5547a7e9365bbca8669
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119344215"
 ---
-# <a name="nm_releasedcapture-up-down-notification-code"></a>NM \_ RELEASEDCAPTURE (arriba-abajo) código de notificación
+# <a name="nm_releasedcapture-up-down-notification-code"></a>Código \_ de notificación NM RELEASEDCAPTURE (arriba abajo)
 
-Notifica a la ventana primaria de un control de flechas que el control está liberando la captura del mouse. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a la ventana primaria de un control hacia abajo que el control está liberando la captura del mouse. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ NM_RELEASEDCAPTURE
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
+Puntero a una [**estructura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contiene información adicional sobre esta notificación.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ El control omite el valor devuelto de este código de notificación.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

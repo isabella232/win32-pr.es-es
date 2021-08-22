@@ -1,36 +1,36 @@
 ---
-title: Referencia de la API WinSNMP
-description: En la tabla siguiente se enumeran los temas que describen las funciones, las estructuras, los tipos de datos, los valores devueltos de función y los códigos de error comunes de la API WinSNMP.
+title: Referencia de la API de WinSNMP
+description: En la tabla siguiente se enumeran temas que tratan funciones, estructuras, tipos de datos, valores devueltos de función y códigos de error comunes de la API de WinSNMP.
 ms.assetid: 89135f67-7e58-4448-a1be-9c9df0b70eb9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e4b8c4de4f1b4ec55f7c5d8104f13a7d3fe8a5c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b7d3bd77700f7a19d5f3605e9ca212b10bdc7c76e83627108eec98db44998181
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104359222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143008"
 ---
-# <a name="winsnmp-api-reference"></a>Referencia de la API WinSNMP
+# <a name="winsnmp-api-reference"></a>Referencia de la API de WinSNMP
 
-\[SNMP está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En versiones posteriores podría modificarse o no estar disponible. En su lugar, use [administración remota de Windows](/windows/desktop/WinRM/portal), que es la implementación de Microsoft de WS-MAN.\]
+\[SNMP está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible. En su lugar, [Windows administración remota](/windows/desktop/WinRM/portal), que es la implementación de Microsoft de WS-Man.\]
 
-En la tabla siguiente se enumeran los temas que describen las funciones, las estructuras, los tipos de datos, los valores devueltos de función y los códigos de error comunes de la API WinSNMP.
+En la tabla siguiente se enumeran temas que tratan funciones, estructuras, tipos de datos, valores devueltos de función y códigos de error comunes de la API de WinSNMP.
 
 
 
 | Sección                                                              | Descripción                                                    |
 |----------------------------------------------------------------------|----------------------------------------------------------------|
-| [Tipos de datos WinSNMP](winsnmp-data-types.md)                         | Describe los tipos de datos que se definen en la API WinSNMP.  |
-| [Códigos de error comunes de WinSNMP](winsnmp-common-error-codes.md)         | Describe los códigos de error comunes para WinSNMP.                      |
-| [Valores devueltos de la función WinSNMP](winsnmp-function-return-values.md) | Describe los valores devueltos para las funciones WinSNMP.             |
-| [Funciones WinSNMP](winsnmp-functions.md)                           | Describe las funciones que se definen para la API WinSNMP.  |
-| [Estructuras WinSNMP](winsnmp-structures.md)                         | Describe las estructuras definidas para la API WinSNMP. |
+| [Tipos de datos WinSNMP](winsnmp-data-types.md)                         | Describe los tipos de datos que se definen en la API de WinSNMP.  |
+| [Códigos de error comunes de WinSNMP](winsnmp-common-error-codes.md)         | Describe códigos de error comunes para WinSNMP.                      |
+| [Valores devueltos de la función WinSNMP](winsnmp-function-return-values.md) | Describe los valores devueltos para las funciones winSNMP.             |
+| [Funciones de WinSNMP](winsnmp-functions.md)                           | Describe las funciones que se definen para la API de WinSNMP.  |
+| [Estructuras de WinSNMP](winsnmp-structures.md)                         | Describe las estructuras definidas para la API de WinSNMP. |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

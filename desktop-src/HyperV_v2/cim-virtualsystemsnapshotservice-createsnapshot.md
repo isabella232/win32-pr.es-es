@@ -1,7 +1,7 @@
 ---
 description: Crea una instantánea de un sistema virtual.
 ms.assetid: cad4cb4f-523f-4fda-ac88-8cece7abc227
-title: Método CreateSnapshot de la clase CIM_VirtualSystemSnapshotService
+title: Método CreateSnapshot de la CIM_VirtualSystemSnapshotService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: ee96098477501123cffc1fd59a52734bbbea35d5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ee1a2e66745ceac50cc00ba6e625a171f18c7d2b54d4e51af2c86f6711675ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532755"
 ---
-# <a name="createsnapshot-method-of-the-cim_virtualsystemsnapshotservice-class"></a>Método CreateSnapshot de la \_ clase VirtualSystemSnapshotService de CIM
+# <a name="createsnapshot-method-of-the-cim_virtualsystemsnapshotservice-class"></a>Método CreateSnapshot de la clase \_ CIM VirtualSystemSnapshotService
 
 Crea una instantánea de un sistema virtual.
 
@@ -43,21 +43,21 @@ uint32 CreateSnapshot(
 
 <dl> <dt>
 
-*AffectedSystem* \[ de\]
+*AffectedSystem* \[ En\]
 </dt> <dd>
 
-Una referencia de [**\_ ComputerSystem de CIM**](cim-computersystem.md) al sistema virtual afectado.
+Una [**referencia \_ cim computersystem**](cim-computersystem.md) al sistema virtual afectado.
 
 </dd> <dt>
 
-*SnapshotSettings* \[ de\]
+*SnapshotSettings* \[ En\]
 </dt> <dd>
 
 Configuración de parámetros.
 
 </dd> <dt>
 
-*SnapshotType* \[ de\]
+*SnapshotType* \[ En\]
 </dt> <dd>
 
 Tipo de instantánea solicitada:
@@ -95,7 +95,7 @@ Instantánea de discos del sistema virtual.
 
 <span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>
 
-<span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>**Específico del proveedor** (32768... 65535)
+<span id="Vendor_Specific"></span><span id="vendor_specific"></span><span id="VENDOR_SPECIFIC"></span>**Específico del** proveedor (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
@@ -103,17 +103,17 @@ Instantánea de discos del sistema virtual.
 *ResultingSnapshot* \[ in, out\]
 </dt> <dd>
 
-Una [**referencia \_ VirtualSystemSettingData de CIM**](cim-virtualsystemsettingdata.md) a la instantánea del sistema virtual resultante.
+Una [**referencia CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) a la instantánea del sistema virtual resultante.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación es de larga ejecución, opcionalmente se puede devolver un trabajo. En este caso, la instancia de la [**clase \_ VirtualSystemSettingData de CIM**](cim-virtualsystemsettingdata.md) que representa la nueva instantánea del sistema virtual se presenta a través de la Asociación [**\_ AffectedJobElement de CIM**](cim-affectedjobelement.md) con el valor de la propiedad **AffectedElement** que hace referencia a la nueva instancia de la clase **CIM \_ VirtualSystemSettingData** que representa la instantánea del sistema virtual y el valor de **ElementEffects** establecido en 5 (Create).
+Si la operación es de larga duración, opcionalmente se puede devolver un trabajo. En este caso, la instancia de la clase [**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md) que representa la nueva instantánea del sistema virtual se presenta a través de la asociación [**\_ AffectedJobElement**](cim-affectedjobelement.md) de CIM con el valor de la propiedad **AffectedElement** que hace referencia a la nueva instancia de la clase **CIM \_ VirtualSystemSettingData** que representa la instantánea del sistema virtual y el valor de **ElementEffects** establecido en 5 (Crear).
 
 > [!Note]  
-> Este parámetro era de lectura/escritura en Windows 8.1.
+> Este parámetro era de lectura y escritura en Windows 8.1.
 
  
 
@@ -134,7 +134,7 @@ Si se ejecuta correctamente, devuelve 0; de lo contrario, devuelve un error.
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -143,19 +143,19 @@ Si se ejecuta correctamente, devuelve 0; de lo contrario, devuelve un error.
 **Estado no válido** (5)
 </dt> <dt>
 
-**Tipo no válido** (6)
+**Tipo no** válido (6)
 </dt> <dt>
 
 **DMTF reservado** (..)
 </dt> <dt>
 
-**Parámetros de método comprobados: trabajo iniciado** (4096)
+**Parámetros de método activados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -165,9 +165,9 @@ Si se ejecuta correctamente, devuelve 0; de lo contrario, devuelve un error.
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -176,7 +176,7 @@ Si se ejecuta correctamente, devuelve 0; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
-[**\_VIRTUALSYSTEMSNAPSHOTSERVICE CIM**](cim-virtualsystemsnapshotservice.md)
+[**CIM \_ VirtualSystemSnapshotService**](cim-virtualsystemsnapshotservice.md)
 </dt> </dl>
 
  

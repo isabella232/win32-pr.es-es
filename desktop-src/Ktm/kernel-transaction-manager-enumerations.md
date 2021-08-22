@@ -1,25 +1,25 @@
 ---
-description: La siguiente enumeración se utiliza con las transacciones.
+description: La enumeración siguiente se usa con transacciones.
 ms.assetid: 0f320709-fe59-4577-be32-1a02ce9841b0
-title: Enumeraciones del administrador de transacciones de kernel
+title: Enumeraciones del Administrador de transacciones de kernel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fa7f08676b01634b1d0d8050b5a2a2d5dd35199
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 599d91c6159d8c0f3330a839990992be07cb96a51170ced1140eff7764311902
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119290035"
 ---
-# <a name="kernel-transaction-manager-enumerations"></a>Enumeraciones del administrador de transacciones de kernel
+# <a name="kernel-transaction-manager-enumerations"></a>Enumeraciones del Administrador de transacciones de kernel
 
-La siguiente enumeración se utiliza con las transacciones.
+La enumeración siguiente se usa con transacciones.
 
 
 
 | Enumeración                                         | Descripción                                                          |
 |-----------------------------------------------------|----------------------------------------------------------------------|
-| [**resultado de la transacción \_**](/windows/desktop/api/Winnt/ne-winnt-transaction_outcome) | Define los resultados (resultados) que KTM puede asignar a una transacción. |
+| [**RESULTADO DE \_ LA TRANSACCIÓN**](/windows/desktop/api/Winnt/ne-winnt-transaction_outcome) | Define los resultados (resultados) que KTM puede asignar a una transacción. |
 
 
 

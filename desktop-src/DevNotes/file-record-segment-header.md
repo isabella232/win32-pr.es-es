@@ -1,7 +1,7 @@
 ---
-description: Representa el segmento de registro de archivo. Este es el encabezado de cada segmento de registro de archivo de la tabla de archivos maestra (MFT).
+description: Representa el segmento de registro de archivo. Este es el encabezado de cada segmento de registro de archivo de la tabla de archivos maestros (MFT).
 ms.assetid: 4548ad49-1924-4888-8966-c45f8e453c6f
-title: Estructura de FILE_RECORD_SEGMENT_HEADER
+title: FILE_RECORD_SEGMENT_HEADER estructura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 293bb14dbaee0853aa1ef293502724458e02e26f
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0c9d7a3653ad965141e691546866f599d8615f5f12feb92fa25c861d7c429b74
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104274847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119260605"
 ---
-# <a name="file_record_segment_header-structure"></a>\_Estructura de \_ encabezado de segmento de registro de archivo \_
+# <a name="file_record_segment_header-structure"></a>FILE RECORD SEGMENT HEADER (Estructura DE \_ \_ \_ ENCABEZADO)
 
 \[Esta estructura solo es válida para la versión 3 de los volúmenes NTFS; se puede modificar en versiones futuras.\]
 
-Representa el segmento de registro de archivo. Este es el encabezado de cada segmento de registro de archivo de la tabla de archivos maestra (MFT).
+Representa el segmento de registro de archivo. Este es el encabezado de cada segmento de registro de archivo de la tabla de archivos maestros (MFT).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ typedef struct _FILE_RECORD_SEGMENT_HEADER {
 **MultiSectorHeader**
 </dt> <dd>
 
-Encabezado de multisector definido por el administrador de caché. La estructura de [**\_ \_ encabezado de varios sectores**](multi-sector-header.md) siempre contiene la firma "archivo" y una descripción de la ubicación y el tamaño de la matriz de la secuencia de actualización.
+Encabezado multisector definido por el administrador de caché. La [**estructura MULTI SECTOR \_ \_ HEADER**](multi-sector-header.md) siempre contiene la firma "FILE" y una descripción de la ubicación y el tamaño de la matriz de secuencia de actualización.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Reservado.
 **SequenceNumber**
 </dt> <dd>
 
-El número de secuencia global. Este valor se incrementa cada vez que se libera un segmento de registro de archivo; es 0 si no se utiliza el segmento. El campo **SequenceNumber** de una referencia de archivo debe coincidir con el contenido de este campo; Si no coinciden, la referencia de archivo es incorrecta y probablemente está obsoleta.
+El número de secuencia global. Este valor se incrementa cada vez que se libera un segmento de registro de archivo; es 0 si no se usa el segmento. El **campo SequenceNumber** de una referencia de archivo debe coincidir con el contenido de este campo; Si no coinciden, la referencia de archivo es incorrecta y probablemente obsoleta.
 
 </dd> <dt>
 
@@ -91,10 +91,10 @@ Marcas de archivo.
 
 <dl> <dt>
 
-<span id="FILE_RECORD_SEGMENT_IN_USE"></span><span id="file_record_segment_in_use"></span>**Archivo \_ de \_Segmento \_ de registro en \_ uso** (0x0001)
+<span id="FILE_RECORD_SEGMENT_IN_USE"></span><span id="file_record_segment_in_use"></span>**FILE \_ SEGMENTO \_ DE REGISTRO EN \_ \_ USO** (0x0001)
 </dt> <dt>
 
-<span id="FILE_FILE_NAME_INDEX_PRESENT"></span><span id="file_file_name_index_present"></span>**Archivo \_ de Índice de nombre de archivo \_ \_ \_ presente** (0x0002)
+<span id="FILE_FILE_NAME_INDEX_PRESENT"></span><span id="file_file_name_index_present"></span>**FILE \_ ÍNDICE \_ DE NOMBRE DE ARCHIVO \_ \_ PRESENTE** (0x0002)
 </dt> </dl> </dd> <dt>
 
 **Reserved3**
@@ -107,7 +107,7 @@ Reservado.
 **BaseFileRecordSegment**
 </dt> <dd>
 
-Referencia de archivo al segmento de registro de archivo base para este archivo. Si este es el registro del archivo base, el valor es 0. Consulte [**\_ \_ referencia de segmento de MFT**](mft-segment-reference.md).
+Referencia de archivo al segmento de registro de archivo base para este archivo. Si este es el registro de archivo base, el valor es 0. Vea MFT SEGMENT REFERENCE ( [**REFERENCIA DE SEGMENTO DE \_ \_ MFT).**](mft-segment-reference.md)
 
 </dd> <dt>
 
@@ -121,7 +121,7 @@ Reservado.
 **UpdateSequenceArray**
 </dt> <dd>
 
-La matriz de secuencias de actualización para proteger las transferencias multisector del segmento de registro de archivos.
+Matriz de secuencia de actualización para proteger las transferencias multisector del segmento de registro de archivo.
 
 </dd> </dl>
 
@@ -129,7 +129,7 @@ La matriz de secuencias de actualización para proteger las transferencias multi
 
 Tenga en cuenta que no hay ningún archivo de encabezado asociado para esta estructura.
 
-Esta definición de estructura solo es válida para la versión 3 principal y la secundaria 0 o 1, tal y como lo ha indicado el [**FSCTL \_ obtener \_ \_ \_ datos del volumen NTFS**](/windows/win32/api/winioctl/ni-winioctl-fsctl_get_ntfs_volume_data).
+Esta definición de estructura solo es válida para la versión principal 3 y la versión secundaria 0 o 1, como notifica [**FSCTL \_ GET NTFS VOLUME \_ \_ \_ DATA**](/windows/win32/api/winioctl/ni-winioctl-fsctl_get_ntfs_volume_data).
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,7 +1,7 @@
 ---
-description: El \_ método get WindowStyleEx recupera los estilos extendidos de ventana.
+description: El método get \_ WindowStyleEx recupera los estilos de ventana extendidos.
 ms.assetid: 72955958-bbda-4b8f-9c28-6d3f5eb56a82
-title: Método CBaseControlWindow.get_WindowStyleEx (Ctlutil. h)
+title: CBaseControlWindow.get_WindowStyleEx método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c59336ab57e92e99366494a272f2b995191b494b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 082b541c9f04122616f4f96548f1b1e58d940a6060fb4af1ac0fe51fa4887bb8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119331215"
 ---
-# <a name="cbasecontrolwindowget_windowstyleex-method"></a>CBaseControlWindow. Get \_ WindowStyleEx (método)
+# <a name="cbasecontrolwindowget_windowstyleex-method"></a>Método CBaseControlWindow.get \_ WindowStyleEx
 
-El `get_WindowStyleEx` método recupera los estilos extendidos de ventana.
+El `get_WindowStyleEx` método recupera los estilos de ventana extendidos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,11 +51,11 @@ Puntero a estilos de ventana extendidos.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro recupera los estilos extendidos de ventana. Llama a la función miembro [**CBaseControlWindow::D ogetwindowstyle**](cbasecontrolwindow-dogetwindowstyle.md) .
+Esta función miembro recupera los estilos de ventana extendidos. Llama a la [**función miembro CBaseControlWindow::D oGetWindowStyle.**](cbasecontrolwindow-dogetwindowstyle.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta función miembro recupera los estilos extendidos de ventana. Llama a la fun
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Esta función miembro recupera los estilos extendidos de ventana. Llama a la fun
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

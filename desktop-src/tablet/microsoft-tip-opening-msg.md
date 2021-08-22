@@ -1,19 +1,19 @@
 ---
-description: Notifica a la ventana cuando el panel de entrada de texto se está abriendo.
+description: Notifica a la ventana cuando se abre el Panel de entrada de texto.
 ms.assetid: 6eadd648-bffb-4227-bdcd-cd733f692734
-title: Mensaje de MICROSOFT_TIP_OPENING_MSG (Peninputpanel. h)
+title: MICROSOFT_TIP_OPENING_MSG mensaje (Peninputpanel.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f0938b8a00e39f54817b8ec52e86e00aae52111
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0e183cc426cd5d73e52c6aaef007bc5579ceb3eb0f4ceaf3f9f4084677b7a556
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718991"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119335905"
 ---
-# <a name="microsoft_tip_opening_msg-message"></a>\_Mensaje de \_ mensajes de apertura de propinas de Microsoft \_
+# <a name="microsoft_tip_opening_msg-message"></a>MICROSOFT \_ TIP OPENING MSG message (MENSAJE DE APERTURA DE \_ \_ SUGERENCIAS DE MICROSOFT)
 
-Notifica a la ventana cuando el panel de entrada de texto se está abriendo.
+Notifica a la ventana cuando se abre el Panel de entrada de texto.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -22,24 +22,24 @@ Notifica a la ventana cuando el panel de entrada de texto se está abriendo.
 *wParam* 
 </dt> <dd>
 
-Actualmente no se usa, debe ser **null**.
+Actualmente no se usa, debe ser **NULL.**
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Actualmente no se usa, debe ser **null**.
+Actualmente no se usa, debe ser **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Las aplicaciones deben llamar a [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) después de controlar este mensaje. Vea **DefWindowProc** para obtener información sobre los valores devueltos.
+Las aplicaciones deben llamar [**a DefWindowProc después**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) de controlar este mensaje. Vea **DefWindowProc para** obtener información sobre sus valores devueltos.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta notificación le permite saber cuándo se abre el panel de entrada. Si desea realizar una acción cuando esto sucede, controle el mensaje, realice la operación en el controlador y, a continuación, pase el mensaje a [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca).
+Esta notificación le permite saber cuándo se abre el panel de entrada. Si desea realizar una acción cuando esto sucede, controle el mensaje, realice la operación en el controlador y, a continuación, pase el mensaje [**a DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca).
 
 > [!Note]  
 > Este mensaje también se envía cuando el panel de entrada de texto ya está visible y el usuario cambia del teclado a la máscara de escritura a mano.
@@ -52,8 +52,8 @@ Esta notificación le permite saber cuándo se abre el panel de entrada. Si dese
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------------|
-| Remoto<br/> | Windows Vista<br/>                                                                   |
-| Encabezado<br/> | <dl> <dt>Peninputpanel. h</dt> </dl> |
+| Cliente<br/> | Windows Vista<br/>                                                                   |
+| Header<br/> | <dl> <dt>Peninputpanel.h</dt> </dl> |
 
 
 

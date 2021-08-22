@@ -1,10 +1,10 @@
 ---
-title: DS-check-obsoleto-fantasmas extendido derecho
-description: Derecho extendido necesario para forzar a DS a comprobar los objetos fantasma obsoletos.
+title: DS-Check-Stale-Phantoms extendido a la derecha
+description: Derecho extendido necesario para forzar a DS a comprobar objetos fantasma obsoletos.
 ms.assetid: 5f3e5b05-ebc4-4e79-acc0-0e4f7cf53098
 ms.tgt_platform: multiple
 keywords:
-- 'DS-check-obsoleto-fantasma: esquema de AD derecho extendido'
+- Esquema de AD extendido DS-Check-Stale-Phantoms
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f280d04a60b539d6559d9e5df830947742663b1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c2dcdec83da65117b0f04b7de08f4cd83abb589cc63fd1b8cfb053d3878e5196
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532365"
 ---
-# <a name="ds-check-stale-phantoms-extended-right"></a>DS-check-obsoleto-fantasmas extendido derecho
+# <a name="ds-check-stale-phantoms-extended-right"></a>DS-Check-Stale-Phantoms extendido a la derecha
 
-Derecho extendido necesario para forzar a DS a comprobar los objetos fantasma obsoletos.
+Derecho extendido necesario para forzar a DS a comprobar objetos fantasma obsoletos.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | DS-check-obsoleto-fantasmas              |
-| Display-Name | Comprobar fantasmas obsoletos                 |
+| CN           | DS-Check-Stale-Phantoms              |
+| Display-Name | Comprobación de fantasmas obsoletos                 |
 | Rights-GUID  | 69ae6200-7f46-11d2-b9ad-00c04f79f805 |
 
 
@@ -47,10 +47,10 @@ Derecho extendido necesario para forzar a DS a comprobar los objetos fantasma ob
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 53                                       |
+| Localization-Display-ID | 53                                       |
 
 
 
@@ -61,7 +61,7 @@ Derecho extendido necesario para forzar a DS a comprobar los objetos fantasma ob
 | Entrada | Value |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 53                                       |
+| Localization-Display-ID | 53                                       |
 
 
 
@@ -72,7 +72,7 @@ Derecho extendido necesario para forzar a DS a comprobar los objetos fantasma ob
 | Entrada | Value |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 53                                       |
+| Localization-Display-ID | 53                                       |
 
 
 
@@ -83,7 +83,7 @@ Derecho extendido necesario para forzar a DS a comprobar los objetos fantasma ob
 | Entrada | Value |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 53                                       |
+| Localization-Display-ID | 53                                       |
 
 
 
@@ -94,7 +94,7 @@ Derecho extendido necesario para forzar a DS a comprobar los objetos fantasma ob
 | Entrada | Value |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 53                                       |
+| Localization-Display-ID | 53                                       |
 
 
 
@@ -105,7 +105,7 @@ Derecho extendido necesario para forzar a DS a comprobar los objetos fantasma ob
 | Entrada | Value |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
-| Localización: ID. de presentación | 53                                       |
+| Localization-Display-ID | 53                                       |
 
 
 

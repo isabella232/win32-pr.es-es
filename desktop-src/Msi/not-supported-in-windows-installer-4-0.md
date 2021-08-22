@@ -1,23 +1,23 @@
 ---
-description: Las funciones, tablas y propiedades de Windows Installer que se enumeran en esta página no se admiten en Windows Installer&\# 160; 4.0 y versiones anteriores.
+description: Las funciones, las tablas y las propiedades del instalador de Windows enumeradas en esta página no son compatibles con Windows Installer&\# 160;4.0 y versiones anteriores.
 ms.assetid: 7256b759-3fb5-4195-b0e4-a1631327ebb7
-title: No se admite en Windows Installer 4,0
+title: No se admite en Windows Installer 4.0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4307422c71976057948759078dc321e38dc543b7
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 444040fca716b6bd64c8598d2d2e36013fe19cc62971483507756a66f3e961bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "105678669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119558805"
 ---
-# <a name="not-supported-in-windows-installer-40"></a>No se admite en Windows Installer 4,0
+# <a name="not-supported-in-windows-installer-40"></a>No se admite en Windows Installer 4.0
 
-Las funciones, tablas y propiedades de Windows Installer que se enumeran en esta página no se admiten en Windows Installer 4,0 y versiones anteriores. La ausencia de una característica de esta lista no garantiza que se admita la característica. Consulte la documentación principal para determinar qué versión de Windows Installer es necesaria para una característica determinada. Para obtener información sobre otras versiones de Windows Installer, vea [novedades de Windows Installer](what-s-new-in-windows-installer.md).
+Las Windows, las tablas y las propiedades del instalador que aparecen en esta página no son compatibles con Windows Installer 4.0 y versiones anteriores. La ausencia de una característica de esta lista no garantiza que se admite la característica. Consulte la documentación principal para determinar qué Windows installer es necesaria para una característica determinada. Para obtener información sobre otras versiones Windows Installer, vea [Novedades de Windows Installer](what-s-new-in-windows-installer.md).
 
-Windows Installer 4,0 está disponible para Microsoft Windows Server 2008 y Windows Vista. Para obtener una lista completa de todas las versiones de Windows Installer y redistribuibles, consulte [versiones publicadas de Windows Installer](released-versions-of-windows-installer.md).
+Windows El instalador 4.0 está disponible para Microsoft Windows Server 2008 y Windows Vista. Para obtener una lista completa de todas las versiones Windows Installer y redistribuibles, vea Versiones publicadas [de Windows Installer](released-versions-of-windows-installer.md).
 
-Las siguientes características no se admiten en Windows Installer 4,0 y versiones anteriores.
+Las siguientes características no se admiten en Windows Installer 4.0 y versiones anteriores.
 
 [Funciones del instalador](installer-functions.md)
 
@@ -42,7 +42,7 @@ Las siguientes características no se admiten en Windows Installer 4,0 y version
 -   [CustomAction](customaction-table.md) Columna ExtendedType  
     
 
-[Opción de desinstalación de revisión de acción personalizada](custom-action-patch-uninstall-option.md)
+[Opción de desinstalación de revisiones de acción personalizada](custom-action-patch-uninstall-option.md)
 
 
 
@@ -62,17 +62,17 @@ Prototipos de función de devolución de llamada
 -   *InitializeEmbeddedUI*
 -   *ShutdownEmbeddedUI*
 
-[Evaluadores de coherencia interna-CIEM](internal-consistency-evaluators-ices.md)
+[Evaluadores de coherencia internos: TIC](internal-consistency-evaluators-ices.md)
 
--   [ICE92](ice92.md) comprueba que ningún componente tiene los atributos **msidbComponentAttributesPermanent** y **msidbComponentAttributesUninstallOnSupersedence** .
+-   [ICE92 comprueba](ice92.md) que ningún componente tiene los atributos **msidbComponentAttributesPermanent** y **msidbComponentAttributesUninstallOnSupersedence.**
 
 ## <a name="notes"></a>Notas
 
-Windows Installer 4,0 no puede realizar [varias instalaciones de paquetes](multiple-package-installations.md) mediante el [*procesamiento de transacciones*](t-gly.md).
+Windows El instalador 4.0 no puede realizar [varias instalaciones de paquetes mediante](multiple-package-installations.md) el procesamiento de [*transacciones*](t-gly.md).
 
-Con Windows Installer 4,0 o versiones anteriores del programa de instalación, se puede producir un error en las actualizaciones pequeñas y las actualizaciones secundarias cuando se usa la directiva [EnforceUpgradeComponentRules](enforceupgradecomponentrules.md) o la propiedad [**MSIENFORCEUPGRADECOMPONENTRULES**](msienforceupgradecomponentrules.md) porque la actualización quita un componente.
+Con Windows Installer 4.0 o versiones anteriores del instalador, se pueden producir errores en las actualizaciones pequeñas y secundarias cuando se usa la directiva [EnforceUpgradeComponentRules](enforceupgradecomponentrules.md) o la propiedad [**MSIENFORCEUPGRADECOMPONENTRULES**](msienforceupgradecomponentrules.md) porque la actualización quita un componente.
 
-Una interfaz de usuario personalizada no se puede incrustar en el paquete de Windows Installer mediante el método descrito en [usar una interfaz de usuario incrustada](using-an-embedded-ui.md).
+Una interfaz de usuario personalizada no se puede incrustar en el paquete Windows Installer mediante el método descrito en [Uso de una interfaz de usuario insertada](using-an-embedded-ui.md).
 
  
 

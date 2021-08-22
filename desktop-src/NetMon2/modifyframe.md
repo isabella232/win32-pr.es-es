@@ -1,7 +1,7 @@
 ---
 description: La función ModifyFrame modifica un marco existente con nuevos datos.
 ms.assetid: ebd248e4-b248-4f4a-8b94-a6d1c331d12a
-title: Función ModifyFrame (Netmon. h)
+title: Función ModifyFrame (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: af3ef6c2c5ccae2b6410ac8fc81c815f790b17a6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04bc22af11d83078ecf98d0386b061b520fbf9a8dcab6f6beb360c45b1c6fe96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119555825"
 ---
-# <a name="modifyframe-function"></a>ModifyFrame función)
+# <a name="modifyframe-function"></a>Función ModifyFrame
 
-La función **ModifyFrame** modifica un marco existente con nuevos datos.
+La **función ModifyFrame** modifica un marco existente con nuevos datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,35 +43,35 @@ HFRAME WINAPI ModifyFrame(
 
 <dl> <dt>
 
-*hCapture* \[ de\]
+*hCapture* \[ En\]
 </dt> <dd>
 
-Identificador de la captura. Para obtener información acerca de cómo obtener el identificador de captura, vea la sección Comentarios de este tema **ModifyFrame** .
+Identificador de la captura. Para obtener información sobre cómo obtener el identificador de captura, vea la sección Comentarios de este **tema ModifyFrame.**
 
 </dd> <dt>
 
-*Númeromarco* \[ de\]
+*FrameNumber* \[ En\]
 </dt> <dd>
 
-Número de índice del marco.
+Número de índice de fotogramas.
 
 </dd> <dt>
 
-*FrameData* \[ de\]
+*FrameData* \[ En\]
 </dt> <dd>
 
-Puntero a una matriz de bytes que contiene los nuevos datos de marco.
+Puntero a una matriz de bytes que contienen los nuevos datos de marco.
 
 </dd> <dt>
 
-*FrameLength* \[ de\]
+*FrameLength* \[ En\]
 </dt> <dd>
 
-Longitud de los datos nuevos, en bytes.
+Longitud de los nuevos datos, en bytes.
 
 </dd> <dt>
 
-*Marca* \[ de tiempo enuncia\]
+*TimeStamp* \[ out\]
 </dt> <dd>
 
 Marca de tiempo que indica cuándo se modificó el marco.
@@ -80,26 +80,26 @@ Marca de tiempo que indica cuándo se modificó el marco.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función es correcta, el valor devuelto es un identificador de un nuevo marco.
+Si la función se realiza correctamente, el valor devuelto es un identificador para un nuevo marco.
 
-Si la función no se realiza correctamente, el valor devuelto es **null**.
+Si la función no se realiza correctamente, el valor devuelto es **NULL.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la llamada se realiza correctamente, la función **ModifyFrame** destruye el marco original.
+Si la llamada se realiza correctamente, **la función ModifyFrame** destruye el fotograma original.
 
-Los [*expertos*](e.md) y [*analizadores*](p.md) pueden llamar a la función **ModifyFrame** .
+[*Los*](e.md) expertos [*y analizadores pueden*](p.md) llamar a **la función ModifyFrame.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

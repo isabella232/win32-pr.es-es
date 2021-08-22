@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_ERRINFOBASIC. rgCategoricalHierarchy'
-title: Propiedad JET_ERRINFOBASIC. rgCategoricalHierarchy (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: JET_ERRINFOBASIC.rgCategoricalHierarchy'
+title: JET_ERRINFOBASIC.rgCategoricalHierarchy (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'rgCategoricalHierarchy property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Windows8.JET_ERRINFOBASIC.rgCategoricalHierarchy
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_errinfobasic.rgcategoricalhierarchy(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 37034ca35427c9470d69f5e90dd43a4640601574
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a64c043ccd63cfc8c60bd89e38b1b2bfa4c3cbb3f300144c4a6d436e7c67f2fc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119232755"
 ---
-# <a name="jet_errinfobasicrgcategoricalhierarchy-property"></a>Propiedad JET_ERRINFOBASIC. rgCategoricalHierarchy
+# <a name="jet_errinfobasicrgcategoricalhierarchy-property"></a>JET_ERRINFOBASIC.rgCategoricalHierarchy, propiedad
 
 Obtiene o establece la jerarquía de errores. La posición 0 es el nivel más alto de la jerarquía y el resto se JET_errcatUnknown.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,14 +62,14 @@ public JET_ERRCAT[] rgCategoricalHierarchy { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Automáticamente \[\]  
+Tipo: \[\]  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_ERRINFOBASIC (clase)](./jet-errinfobasic-class.md)
+[JET_ERRINFOBASIC clase](./jet-errinfobasic-class.md)
 
-[Miembros de JET_ERRINFOBASIC](./jet-errinfobasic-members.md)
+[JET_ERRINFOBASIC miembros](./jet-errinfobasic-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

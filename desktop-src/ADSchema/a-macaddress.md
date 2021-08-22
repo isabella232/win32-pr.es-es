@@ -1,6 +1,6 @@
 ---
 title: atributo macAddress
-description: Contiene la dirección MAC en la notación hexadecimal de valores máximos separados por dos puntos.
+description: Contiene la dirección MAC en notación hexadecimal máxima separada por dos puntos.
 ms.assetid: 332cd4f7-cdad-44ab-90b3-60b7d7b4fecb
 ms.tgt_platform: multiple
 keywords:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17be059be5aec041436393f9c9f251d8f15556de
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 374eb0078c172fd51507891c7e4fea5cdf8ad1b15529b6a318edf8be38355ddc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104493576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301495"
 ---
 # <a name="macaddress-attribute"></a>atributo macAddress
 
-Contiene la dirección MAC en la notación hexadecimal de valores máximos separados por dos puntos.
+Contiene la dirección MAC en notación hexadecimal máxima separada por dos puntos.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | macAddress                           |
-| Nombre para mostrar de LDAP | macAddress                           |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | macAddress                           |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.22                     |
-| System-ID-GUID    | e6a522dd-9770-43e1-89de-1de5044328f7 |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | e6a522dd-9770-43e1-89de-1de5044328f7 |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -52,13 +52,13 @@ Contiene la dirección MAC en la notación hexadecimal de valores máximos separ
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
+| Es de un solo valor       | False                                               |
 | Está indexado             | False                                               |
 | En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
@@ -73,13 +73,13 @@ Contiene la dirección MAC en la notación hexadecimal de valores máximos separ
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
+| Es de un solo valor       | False                                               |
 | Está indexado             | False                                               |
 | En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
@@ -94,13 +94,13 @@ Contiene la dirección MAC en la notación hexadecimal de valores máximos separ
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
+| Es de un solo valor       | False                                               |
 | Está indexado             | False                                               |
 | En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
@@ -115,13 +115,13 @@ Contiene la dirección MAC en la notación hexadecimal de valores máximos separ
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | False                                               |
-| Tiene un único valor       | False                                               |
+| Es de un solo valor       | False                                               |
 | Está indexado             | False                                               |
 | En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
@@ -130,7 +130,7 @@ Contiene la dirección MAC en la notación hexadecimal de valores máximos separ
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

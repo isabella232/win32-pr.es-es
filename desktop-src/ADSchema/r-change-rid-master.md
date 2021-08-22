@@ -1,10 +1,10 @@
 ---
-title: Cambiar-RID-maestro extendido derecho
-description: Derecho extendido necesario para cambiar el propietario del rol FSMO del maestro de identificadores relativos (RID).
+title: Derecho extendido de Change-Rid-Master
+description: Derecho extendido necesario para cambiar el propietario del rol FSMO maestro de identificador relativo (RID).
 ms.assetid: 6d726697-1841-4b9b-9d51-1b6c8d5df1b2
 ms.tgt_platform: multiple
 keywords:
-- Cambiar-RID-maestro esquema de AD derecho extendido
+- Esquema de AD derecho extendido de Change-Rid-Master
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c184630836ea92d5d51ca34e9afd44cd05cfd02
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 12f18dc8a4ffe00cace69647dbb4f06b5e5a7c2b0dd8222c86827f3adb703926
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104274599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532605"
 ---
-# <a name="change-rid-master-extended-right"></a>Cambiar-RID-maestro extendido derecho
+# <a name="change-rid-master-extended-right"></a>Derecho extendido de Change-Rid-Master
 
-Derecho extendido necesario para cambiar el propietario del rol FSMO del maestro de identificadores relativos (RID).
+Derecho extendido necesario para cambiar el propietario del rol FSMO maestro de identificador relativo (RID).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | Cambiar-RID-maestro                    |
-| Display-Name | Cambiar el maestro RID                    |
+| CN           | Change-Rid-Master                    |
+| Display-Name | Cambiar el maestro rid                    |
 | Rights-GUID  | d58d5f36-0a98-11d1-adbb-00c04fd8d5cd |
 
 
@@ -47,10 +47,10 @@ Derecho extendido necesario para cambiar el propietario del rol FSMO del maestro
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|------------------------------------------------|
-| Applies-To              | [**Administrador de RID**](c-ridmanager.md)<br/> |
-| Localización: ID. de presentación | 29                                             |
+| Applies-To              | [**Rid-Manager**](c-ridmanager.md)<br/> |
+| Localization-Display-ID | 29                                             |
 
 
 
@@ -60,8 +60,8 @@ Derecho extendido necesario para cambiar el propietario del rol FSMO del maestro
 
 | Entrada | Value |
 |-------------------------|------------------------------------------------|
-| Applies-To              | [**Administrador de RID**](c-ridmanager.md)<br/> |
-| Localización: ID. de presentación | 29                                             |
+| Applies-To              | [**Rid-Manager**](c-ridmanager.md)<br/> |
+| Localization-Display-ID | 29                                             |
 
 
 
@@ -69,10 +69,10 @@ Derecho extendido necesario para cambiar el propietario del rol FSMO del maestro
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|------------------------------------------------|
-| Applies-To              | [**Administrador de RID**](c-ridmanager.md)<br/> |
-| Localización: ID. de presentación | 29                                             |
+| Applies-To              | [**Rid-Manager**](c-ridmanager.md)<br/> |
+| Localization-Display-ID | 29                                             |
 
 
 
@@ -82,8 +82,8 @@ Derecho extendido necesario para cambiar el propietario del rol FSMO del maestro
 
 | Entrada | Value |
 |-------------------------|------------------------------------------------|
-| Applies-To              | [**Administrador de RID**](c-ridmanager.md)<br/> |
-| Localización: ID. de presentación | 29                                             |
+| Applies-To              | [**Rid-Manager**](c-ridmanager.md)<br/> |
+| Localization-Display-ID | 29                                             |
 
 
 
@@ -93,8 +93,8 @@ Derecho extendido necesario para cambiar el propietario del rol FSMO del maestro
 
 | Entrada | Value |
 |-------------------------|------------------------------------------------|
-| Applies-To              | [**Administrador de RID**](c-ridmanager.md)<br/> |
-| Localización: ID. de presentación | 29                                             |
+| Applies-To              | [**Rid-Manager**](c-ridmanager.md)<br/> |
+| Localization-Display-ID | 29                                             |
 
 
 
@@ -104,8 +104,8 @@ Derecho extendido necesario para cambiar el propietario del rol FSMO del maestro
 
 | Entrada | Value |
 |-------------------------|------------------------------------------------|
-| Applies-To              | [**Administrador de RID**](c-ridmanager.md)<br/> |
-| Localización: ID. de presentación | 29                                             |
+| Applies-To              | [**Rid-Manager**](c-ridmanager.md)<br/> |
+| Localization-Display-ID | 29                                             |
 
 
 

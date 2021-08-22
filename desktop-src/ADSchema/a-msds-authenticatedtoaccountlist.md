@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-AuthenticatedTo-Accountlist
-description: Vínculo hacia atrás para MS-DS-AuthenticatedAt-DC. Identifica los usuarios que se han autenticado en este equipo.
+title: Atributo ms-DS-AuthenticatedTo-Accountlist
+description: Vínculo hacia atrás para ms-DS-AuthenticatedAt-DC. Identifica qué usuarios se han autenticado en este equipo.
 ms.assetid: d3f4d53d-7c44-4d1c-b6ec-f504057c6e8d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-AuthenticatedTo-Accountlist
-- Esquema de AD de atributo msDS-AuthenticatedToAccountlist
+- ms-DS-AuthenticatedTo-Accountlist attribute AD Schema
+- msDS-AuthenticatedToAccountlist attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cbd77c5da7b63d01263fc7a804ef661349c86fdf
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 699ce0a0fb884ac540986c2ef0db8bb2266ce33b438b34ccfc23df9a17cbadc4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119296965"
 ---
-# <a name="ms-ds-authenticatedto-accountlist-attribute"></a>atributo MS-DS-AuthenticatedTo-Accountlist
+# <a name="ms-ds-authenticatedto-accountlist-attribute"></a>Atributo ms-DS-AuthenticatedTo-Accountlist
 
-Vínculo hacia atrás para [**MS-DS-AuthenticatedAt-DC**](a-msds-authenticatedatdc.md). Identifica los usuarios que se han autenticado en este equipo.
+Vínculo hacia atrás [**para ms-DS-AuthenticatedAt-DC**](a-msds-authenticatedatdc.md). Identifica qué usuarios se han autenticado en este equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-AuthenticatedTo-Accountlist       |
-| Nombre para mostrar de LDAP | msDS-AuthenticatedToAccountlist         |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-DS-AuthenticatedTo-Accountlist       |
+| Ldap-Display-Name | msDS-AuthenticatedToAccountlist         |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1957                 |
-| System-ID-GUID    | e8b2c971-a6df-47bc-8d6f-62770d527aa5    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | e8b2c971-a6df-47bc-8d6f-62770d527aa5    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -52,13 +52,13 @@ Vínculo hacia atrás para [**MS-DS-AuthenticatedAt-DC**](a-msds-authenticatedat
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2113                            |
+| Id. de vínculo                | 2113                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -73,13 +73,13 @@ Vínculo hacia atrás para [**MS-DS-AuthenticatedAt-DC**](a-msds-authenticatedat
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2113                            |
+| Id. de vínculo                | 2113                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,15 +92,15 @@ Vínculo hacia atrás para [**MS-DS-AuthenticatedAt-DC**](a-msds-authenticatedat
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | 2113                            |
+| Id. de vínculo                | 2113                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| Tiene un único valor       | False                           |
-| Está indexado             | False                           |
-| En el catálogo global      | False                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Verdadero                            |
+| Es de un solo valor       | Falso                           |
+| Está indexado             | Falso                           |
+| En el catálogo global      | Falso                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

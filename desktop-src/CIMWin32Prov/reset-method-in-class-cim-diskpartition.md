@@ -1,8 +1,8 @@
 ---
-description: 'Método de restablecimiento de CIM_DiskPartition clase : el método Reset solicita un restablecimiento del dispositivo lógico. Este método se hereda de CIM \_ LogicalDevice.'
+description: 'Método reset de la CIM_DiskPartition : el método Reset solicita un restablecimiento del dispositivo lógico. Este método se hereda de CIM \_ LogicalDevice.'
 ms.assetid: 874f8eb4-784a-41ab-9c58-9e48486a7f71
 ms.tgt_platform: multiple
-title: Método Reset de la CIM_DiskPartition clase
+title: Método reset de la CIM_DiskPartition clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: cce77ce076eb17132be6ed6908a49d1fcfc77f21
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 088230f2b09089fafaa1fbe4cb67684a873c97d14d612801383222d011e1ecfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119283745"
 ---
 # <a name="reset-method-of-the-cim_diskpartition-class"></a>Método Reset de la clase \_ DiskPartition de CIM
 
@@ -67,7 +67,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

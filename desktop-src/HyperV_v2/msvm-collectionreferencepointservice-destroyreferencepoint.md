@@ -1,7 +1,7 @@
 ---
-description: Destruye una colección de puntos de referencia existente. Este método puede ser un efecto secundario de la destrucción de otros puntos de referencia que dependen de la colección de puntos de referencia afectados.
+description: Destruye una colección de puntos de referencia existente. Este método puede destruir como efecto secundario otros puntos de referencia que dependen de la colección de puntos de referencia afectada.
 ms.assetid: 72c116f4-f844-494c-96ea-e97c49a2af7e
-title: Método DestroyReferencePoint de la clase Msvm_CollectionReferencePointService
+title: Método DestroyReferencePoint de la Msvm_CollectionReferencePointService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: d7fb3fd9168778854518022744f1a0c5ba3c5f79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95745646c410c2752f146fc05042b26215f41ef23d3637701497ad565e06583c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104156861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531995"
 ---
-# <a name="destroyreferencepoint-method-of-the-msvm_collectionreferencepointservice-class"></a>Método DestroyReferencePoint de la \_ clase CollectionReferencePointService de MSVM
+# <a name="destroyreferencepoint-method-of-the-msvm_collectionreferencepointservice-class"></a>Método DestroyReferencePoint de la clase \_ Msvm CollectionReferencePointService
 
-Destruye una colección de puntos de referencia existente. Este método puede ser un efecto secundario de la destrucción de otros puntos de referencia que dependen de la colección de puntos de referencia afectados.
+Destruye una colección de puntos de referencia existente. Este método puede destruir como efecto secundario otros puntos de referencia que dependen de la colección de puntos de referencia afectada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,23 +40,23 @@ uint32 DestroyReferencePoint(
 
 <dl> <dt>
 
-*AffectedReferencePointCollection* \[ de\]
+*AffectedReferencePointCollection* \[ En\]
 </dt> <dd>
 
 Referencia a la colección de puntos de referencia del sistema virtual afectada.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación es de larga ejecución, opcionalmente se puede devolver un trabajo.
+Si la operación es de larga duración, opcionalmente se puede devolver un trabajo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si se realiza correctamente, devuelve 0 (sin errores) o 4096 (se inició el trabajo). de lo contrario, devuelve un error.
+Si se realiza correctamente, devuelve 0 (sin error) o 4096 (trabajo iniciado); de lo contrario, devuelva un error.
 
 <dl> <dt>
 
@@ -69,7 +69,7 @@ Si se realiza correctamente, devuelve 0 (sin errores) o 4096 (se inició el trab
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -87,10 +87,10 @@ Si se realiza correctamente, devuelve 0 (sin errores) o 4096 (se inició el trab
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -99,10 +99,10 @@ Si se realiza correctamente, devuelve 0 (sin errores) o 4096 (se inició el trab
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -111,7 +111,7 @@ Si se realiza correctamente, devuelve 0 (sin errores) o 4096 (se inició el trab
 
 <dl> <dt>
 
-[**MSVM \_ CollectionReferencePointService**](msvm-collectionreferencepointservice.md)
+[**Colección de \_ MsvmReferencePointService**](msvm-collectionreferencepointservice.md)
 </dt> </dl>
 
  

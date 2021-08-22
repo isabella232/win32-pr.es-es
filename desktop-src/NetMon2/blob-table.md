@@ -1,7 +1,7 @@
 ---
-description: Contiene una matriz de blobs.
+description: Contiene una matriz de BLOB.
 ms.assetid: e87f493b-f160-4316-b369-75d20c735213
-title: Estructura de BLOB_TABLE (Netmon. h)
+title: BLOB_TABLE estructura (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Netmon.h
-ms.openlocfilehash: 32bacc925381f1c7ed30aa66247671b67e31b7e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e0615ad9c11657a47d9eaa87035207cb499634cd4ded6ae484d6f5d256c23e15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144348"
 ---
-# <a name="blob_table-structure"></a>\_Estructura de tabla BLOB
+# <a name="blob_table-structure"></a>Estructura \_ BLOB TABLE
 
-La estructura de la **\_ tabla BLOB** contiene una matriz de blobs.
+La **estructura BLOB \_ TABLE** contiene una matriz de BLOB.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,14 +43,14 @@ typedef struct {
 **dwNumBlobs**
 </dt> <dd>
 
-Indicador que siguen muchos BLOBs.
+Indicador que siguen muchos BLOB.
 
 </dd> <dt>
 
 **hBlobs**
 </dt> <dd>
 
-Identificador de la matriz de BLOBs.
+Identificador de la matriz BLOB.
 
 </dd> </dl>
 
@@ -62,7 +62,7 @@ Identificador de la matriz de BLOBs.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

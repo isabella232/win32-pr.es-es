@@ -1,17 +1,17 @@
 ---
-title: No se admite la llamada a ImmSetConversionStatus() o ImmGetConversionStatus() desde aplicaciones de la Tienda Windows
-description: No se admite la llamada a ImmSetConversionStatus() o ImmGetConversionStatus() desde aplicaciones de la Tienda Windows
+title: No se admite la llamada a ImmSetConversionStatus() o ImmGetConversionStatus() desde Windows store
+description: No se admite la llamada a ImmSetConversionStatus() o ImmGetConversionStatus() desde Windows store
 ms.assetid: C6F3C8E7-E07A-40C6-A257-037766C670E7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c8ca572b1ea88ca988ecba66231a87cb6ae6db2
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: d9950bc008ce96d6c0a80a6090c3312057a12c4a7a1f64a5563625a518831c27
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119348575"
 ---
-# <a name="calling-immsetconversionstatus-or-immgetconversionstatus-from-windows-store-apps-is-not-supported"></a>No se admite la llamada a ImmSetConversionStatus() o ImmGetConversionStatus() desde aplicaciones de la Tienda Windows
+# <a name="calling-immsetconversionstatus-or-immgetconversionstatus-from-windows-store-apps-is-not-supported"></a>No se admite la llamada a ImmSetConversionStatus() o ImmGetConversionStatus() desde Windows store
 
 ## <a name="platforms"></a>Plataformas
 
@@ -21,11 +21,11 @@ Servidores: Windows Server 2012 R2
 
 ## <a name="description"></a>Descripción
 
-No se admite la llamada a ImmSetConversionStatus() o ImmGetConversionStatus() desde una aplicación de la Tienda Windows y puede provocar resultados inesperados.
+No se admite la llamada a ImmSetConversionStatus() o ImmGetConversionStatus() desde una aplicación de Windows Store y puede provocar resultados inesperados.
 
 ## <a name="manifestations"></a>Manifestaciones
 
-Al iniciar la aplicación, el modo IME se establece en los valores predeterminados siguientes:
+Al iniciar la aplicación, el modo IME se establece en los siguientes valores predeterminados:
 
 
 

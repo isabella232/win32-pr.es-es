@@ -4,8 +4,8 @@ description: El atributo MS-SQL-PublicationURL no se usa actualmente.
 ms.assetid: d758274e-7b55-4f94-a652-a33960a78fef
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de MS-SQL-PublicationURL
-- Esquema de AD de atributos de mS-SQL-PublicationURL
+- Esquema de AD del atributo MS-SQL-PublicationURL
+- Esquema de AD del atributo mS-SQL-PublicationURL
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbea0cdad10c046d544529ad7b0467c32556c63a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: de0c2eb666cc848f7d64156bec109e8ae17dcd1b7a5a30828c4ea0974688d6df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119299605"
 ---
 # <a name="ms-sql-publicationurl-attribute"></a>Atributo MS-SQL-PublicationURL
 
-El atributo **MS-SQL-PublicationURL** no se usa actualmente.
+El **atributo MS-SQL-PublicationURL** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | MS-SQL-PublicationURL                       |
-| Nombre para mostrar de LDAP | mS-SQL-PublicationURL                       |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | mS-SQL-PublicationURL                       |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1384                     |
-| System-ID-GUID    | ae0c11b8-ccee-11d2-9993-0000f87a57d4        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | ae0c11b8-ccee-11d2-9993-0000f87a57d4        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -53,15 +53,15 @@ El atributo **MS-SQL-PublicationURL** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                                  |
-| System-Only            | False                                                                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                                                          |
@@ -74,15 +74,15 @@ El atributo **MS-SQL-PublicationURL** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                                  |
-| System-Only            | False                                                                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                                                          |
@@ -95,15 +95,15 @@ El atributo **MS-SQL-PublicationURL** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                                  |
-| System-Only            | False                                                                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                                                          |
@@ -116,15 +116,15 @@ El atributo **MS-SQL-PublicationURL** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                                  |
-| System-Only            | False                                                                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                                                          |
@@ -137,15 +137,15 @@ El atributo **MS-SQL-PublicationURL** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                                  |
-| System-Only            | False                                                                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                                                          |
@@ -158,15 +158,15 @@ El atributo **MS-SQL-PublicationURL** no se usa actualmente.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                                  |
-| System-Only            | False                                                                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                                               |
-| En el catálogo global      | False                                                                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                        |
+| System-Only            | Falso                                                                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                                                          |

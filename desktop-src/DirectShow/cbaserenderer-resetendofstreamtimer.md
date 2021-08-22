@@ -1,7 +1,7 @@
 ---
-description: El método ResetEndOfStreamTimer cancela el temporizador que programa las \_ notificaciones completas de EC.
+description: El método ResetEndOfStreamTimer cancela el temporizador que programa las notificaciones EC \_ COMPLETE.
 ms.assetid: 9d423241-1401-4181-8fbf-c409a1e8abdd
-title: Método CBaseRenderer. ResetEndOfStreamTimer (Renbase. h)
+title: Método CBaseRenderer.ResetEndOfStreamTimer (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 734673c4e2bd6719179eca00f03a6c2f41061132
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e589288059eabbbbaaa23904ba021199cb051d9034345cb2c92ac946a6cba9c1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119502685"
 ---
-# <a name="cbaserendererresetendofstreamtimer-method"></a>CBaseRenderer. ResetEndOfStreamTimer, método
+# <a name="cbaserendererresetendofstreamtimer-method"></a>Método CBaseRenderer.ResetEndOfStreamTimer
 
-El `ResetEndOfStreamTimer` método cancela el temporizador que programa las notificaciones [**\_ completas de EC**](ec-complete.md) .
+El `ResetEndOfStreamTimer` método cancela el temporizador que programa las notificaciones EC [**\_ COMPLETE.**](ec-complete.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,8 +50,8 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,13 +59,13 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> <dt>
 
 [**CBaseRenderer::SendEndOfStream**](cbaserenderer-sendendofstream.md)
 </dt> <dt>
 
-[**CBaseRenderer:: TimerCallback**](cbaserenderer-timercallback.md)
+[**CBaseRenderer::TimerCallback**](cbaserenderer-timercallback.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-title: Usar el modo de túnel
-description: En el código de ejemplo siguiente se muestra cómo configurar un túnel IPsec de punto a punto mediante la API de la plataforma de filtrado de Windows (WFP).
+title: Uso del Tunnel automático
+description: El siguiente código de ejemplo muestra cómo configurar un túnel IPsec de punto a punto mediante la API Windows Filtering Platform (WFP).
 ms.assetid: 6bbe7e94-6a5f-4984-ac61-b187dcf25366
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6727203a201c51f88558451fcd620d1a1be0c7f7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9f90a4c2068b32ce265054dc2d75e75c39622cc9745d8e320fc73aefd9c2739a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119535345"
 ---
-# <a name="using-tunnel-mode"></a>Usar el modo de túnel
+# <a name="using-tunnel-mode"></a>Uso del Tunnel automático
 
-En el código de ejemplo siguiente se muestra cómo configurar un túnel IPsec de punto a punto mediante la API de la plataforma de filtrado de Windows (WFP).
+El código de ejemplo siguiente muestra cómo configurar un túnel IPsec de punto a punto mediante la API Windows Filtering Platform (WFP).
 
 
 ```C++
@@ -189,9 +189,9 @@ CLEANUP:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

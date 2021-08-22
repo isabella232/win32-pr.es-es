@@ -1,11 +1,11 @@
 ---
-title: Last-Content-indexed (atributo)
-description: La hora en que este volumen fue el último índice de contenido.
+title: Atributo Last-Content-Indexed
+description: Hora en que se indexó por última vez este volumen.
 ms.assetid: b2089fef-6dc1-4ba8-81ea-3ffd50c3326c
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del último atributo indizado de contenido
-- lastContentIndexed esquema de AD de atributos
+- Esquema de AD del atributo Last-Content-Indexed
+- LastContentIndexed attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34d2d1c9432a650845229b05e04eb22079e87e10
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7913490178de46843d31f1cefb08e363228a7b7727d28453e975f89de4fa610e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119302275"
 ---
-# <a name="last-content-indexed-attribute"></a>Last-Content-indexed (atributo)
+# <a name="last-content-indexed-attribute"></a>Atributo Last-Content-Indexed
 
-La hora en que este volumen fue el último índice de contenido.
+Hora en que se indexó por última vez este volumen.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | Última indexación de contenido                 |
-| Nombre para mostrar de LDAP | lastContentIndexed                   |
-| Tamaño              | 8 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | Último contenido indexado                 |
+| Ldap-Display-Name | lastContentIndexed                   |
+| Size              | 8 bytes                              |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.50                |
-| System-ID-GUID    | bf967995-0de6-11d0-a285-00aa003049e2 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | bf967995-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -55,13 +55,13 @@ La hora en que este volumen fue el último índice de contenido.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
+| Es de un solo valor       | True                                  |
 | Está indexado             | False                                 |
 | En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -76,13 +76,13 @@ La hora en que este volumen fue el último índice de contenido.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
+| Es de un solo valor       | True                                  |
 | Está indexado             | False                                 |
 | En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -97,13 +97,13 @@ La hora en que este volumen fue el último índice de contenido.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
+| Es de un solo valor       | True                                  |
 | Está indexado             | False                                 |
 | En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -118,13 +118,13 @@ La hora en que este volumen fue el último índice de contenido.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
+| Es de un solo valor       | True                                  |
 | Está indexado             | False                                 |
 | En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -139,13 +139,13 @@ La hora en que este volumen fue el último índice de contenido.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
+| Es de un solo valor       | True                                  |
 | Está indexado             | False                                 |
 | En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
@@ -160,13 +160,13 @@ La hora en que este volumen fue el último índice de contenido.
 
 | Entrada | Value |
 |------------------------|---------------------------------------|
-| Identificador de vínculo                | \-                                    |
+| Id. de vínculo                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | False                                 |
-| Tiene un único valor       | True                                  |
+| Es de un solo valor       | True                                  |
 | Está indexado             | False                                 |
 | En el catálogo global      | False                                 |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |

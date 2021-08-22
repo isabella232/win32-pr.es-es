@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-SQL-AllowSnapshotFilesFTPDownloading
-description: True si la publicación permite descargar archivos de instantáneas mediante FTP.
+description: True si la publicación permite que los archivos de instantáneas se descarguen mediante FTP.
 ms.assetid: 227e1438-db8d-4e8f-b2dd-ffc6ef50e0d1
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de MS-SQL-AllowSnapshotFilesFTPDownloading
-- Esquema de AD de atributos de mS-SQL-AllowSnapshotFilesFTPDownloading
+- MS-SQL-AllowSnapshotFilesFTPDownloading attribute AD Schema
+- mS-SQL-AllowSnapshotFilesFTPDownloading attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed32d824f4832294b3484da4e871303b31820878
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c4c0f78de1eee1b69b838feadcdbdf3e3390870332b0f53ceecfab3d365cb7e9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300045"
 ---
 # <a name="ms-sql-allowsnapshotfilesftpdownloading-attribute"></a>Atributo MS-SQL-AllowSnapshotFilesFTPDownloading
 
-True si la publicación permite descargar archivos de instantáneas mediante FTP.
+True si la publicación permite que los archivos de instantáneas se descarguen mediante FTP.
 
 
 
 | Entrada | Value |
 |-------------------|-----------------------------------------|
 | CN                | MS-SQL-AllowSnapshotFilesFTPDownloading |
-| Nombre para mostrar de LDAP | mS-SQL-AllowSnapshotFilesFTPDownloading |
-| Tamaño              | 4 bytes                                 |
-| Actualizar privilegio  | El sistema establece este valor.        |
+| Ldap-Display-Name | mS-SQL-AllowSnapshotFilesFTPDownloading |
+| Size              | 4 bytes                                 |
+| Actualizar privilegios  | El sistema establece este valor.        |
 | Frecuencia de actualización  | Cuando se configura la replicación.              |
 | Attribute-Id      | 1.2.840.113556.1.4.1406                 |
-| System-ID-GUID    | c49b8be8-d34b-11d2-999a-0000f87a57d4    |
-| Sintaxis            | [**Booleano**](s-boolean.md)            |
+| System-Id-Guid    | c49b8be8-d34b-11d2-999a-0000f87a57d4    |
+| Syntax            | [**Booleana**](s-boolean.md)            |
 
 
 
@@ -55,13 +55,13 @@ True si la publicación permite descargar archivos de instantáneas mediante FTP
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
@@ -76,13 +76,13 @@ True si la publicación permite descargar archivos de instantáneas mediante FTP
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
@@ -97,13 +97,13 @@ True si la publicación permite descargar archivos de instantáneas mediante FTP
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
@@ -118,13 +118,13 @@ True si la publicación permite descargar archivos de instantáneas mediante FTP
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
@@ -139,13 +139,13 @@ True si la publicación permite descargar archivos de instantáneas mediante FTP
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
@@ -160,13 +160,13 @@ True si la publicación permite descargar archivos de instantáneas mediante FTP
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |

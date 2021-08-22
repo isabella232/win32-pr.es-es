@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: a7b4aceb53659fc2b1a4a95f964d068e6d7d2554
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 788c26f129bbd5078a63827653f0ec9b053321f1ca609f6cb1bda032f37c371c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119461504"
 ---
 # <a name="id3dxmatrixstackscale-method-d3dx10h"></a>Método ID3DXMATRIXStack::Scale (D3DX10.h)
 
@@ -65,7 +65,7 @@ Componente de escalado en la dirección Y.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Componente de escalado en dirección z.
+Componente de escalado en la dirección Z.
 
 </dd> </dl>
 
@@ -75,9 +75,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método multiplica a la derecha la matriz actual por la matriz de escala calculada. La transformación trata sobre el origen del mundo actual.
+Este método multiplica a la derecha la matriz actual con la matriz de escala calculada. La transformación trata sobre el origen del mundo actual.
 
 
 ```
@@ -99,7 +99,7 @@ m_stack[m_currentPos] = m_stack[m_currentPos] * tmp;
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

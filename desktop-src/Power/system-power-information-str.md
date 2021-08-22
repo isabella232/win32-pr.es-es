@@ -1,7 +1,7 @@
 ---
 description: Contiene información sobre la inactividad del sistema.
 ms.assetid: f6349b7c-1835-4492-95e3-9ce142628804
-title: Estructura de SYSTEM_POWER_INFORMATION
+title: SYSTEM_POWER_INFORMATION estructura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: c32a8ad86b71ea680bd2961c9196a0896b055e5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 665c19a99bffae46cf20af8c5c634e2e9594ecd07d02f003f56d42277ce9a46f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143308"
 ---
-# <a name="system_power_information-structure"></a>Estructura de información de \_ energía del sistema \_
+# <a name="system_power_information-structure"></a>Estructura \_ SYSTEM POWER \_ INFORMATION
 
 Contiene información sobre la inactividad del sistema.
 
@@ -44,36 +44,36 @@ typedef struct _SYSTEM_POWER_INFORMATION {
 **MaxIdlenessAllowed**
 </dt> <dd>
 
-La inactividad en la que se considera que el sistema está inactivo y el tiempo de espera de inactividad comienza el recuento, expresado en forma de porcentaje. Si se coloca debajo de este número, se cancela el temporizador.
+La inactividad en la que el sistema se considera inactivo y el tiempo de espera de inactividad comienza a contarse, expresado como un porcentaje. Si se coloca por debajo de este número, se cancela el temporizador.
 
 </dd> <dt>
 
 **Inactividad**
 </dt> <dd>
 
-Nivel de inactividad actual, expresado como un porcentaje.
+Nivel de inactividad actual, expresado como porcentaje.
 
 </dd> <dt>
 
 **TimeRemaining**
 </dt> <dd>
 
-Tiempo restante en el temporizador de inactividad, en segundos.
+Tiempo restante en el temporizador inactivo, en segundos.
 
 </dd> <dt>
 
 **CoolingMode**
 </dt> <dd>
 
-El modo de refrigeración del sistema actual. Este miembro debe tener uno de los valores siguientes.
+Modo de refrigeración del sistema actual. Este miembro debe tener uno de los valores siguientes.
 
 
 
 | Value                                                                                                                                                                                                                                 | Significado                                                                                                   |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| <span id="PO_TZ_ACTIVE"></span><span id="po_tz_active"></span><dl> <dt>**Pedido de compra \_ TZ \_ activo**</dt> <dt>0</dt> </dl>                    | El sistema está actualmente en modo de enfriamiento activo.<br/>                                                |
-| <span id="PO_TZ_INVALID_MODE"></span><span id="po_tz_invalid_mode"></span><dl> <dt>**Pedido de compra \_ \_ \_ Modo no válido de TZ**</dt> <dt>2</dt> </dl> | El sistema no admite la limitación de la CPU o no hay ninguna zona térmica definida en el sistema.<br/> |
-| <span id="PO_TZ_PASSIVE"></span><span id="po_tz_passive"></span><dl> <dt>**Pedido de compra \_ TZ \_ pasivo**</dt> <dt>1</dt> </dl>                 | El sistema está actualmente en modo de enfriamiento pasivo.<br/>                                               |
+| <span id="PO_TZ_ACTIVE"></span><span id="po_tz_active"></span><dl> <dt>**Pedido de compra \_ TZ \_ ACTIVE**</dt> <dt>0</dt> </dl>                    | El sistema está actualmente en modo de refrigeración activa.<br/>                                                |
+| <span id="PO_TZ_INVALID_MODE"></span><span id="po_tz_invalid_mode"></span><dl> <dt>**Pedido de compra \_ MODO TZ \_ NO \_ VÁLIDO**</dt> <dt>2</dt> </dl> | El sistema no admite la limitación de CPU o no hay ninguna zona térmico definida en el sistema.<br/> |
+| <span id="PO_TZ_PASSIVE"></span><span id="po_tz_passive"></span><dl> <dt>**Pedido de compra \_ TZ \_ PASSIVE**</dt> <dt>1</dt> </dl>                 | El sistema está actualmente en modo de refrigeración pasiva.<br/>                                               |
 
 
 
@@ -81,9 +81,9 @@ El modo de refrigeración del sistema actual. Este miembro debe tener uno de los
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Tenga en cuenta que esta definición de estructura se omitió accidentalmente en Winnt. h. Este error se corregirá en el futuro. Mientras tanto, para compilar la aplicación, incluya la definición de la estructura contenida en este tema en el código fuente.
+Tenga en cuenta que esta definición de estructura se omitió accidentalmente de WinNT.h. Este error se corregirá en el futuro. Mientras tanto, para compilar la aplicación, incluya la definición de estructura contenida en este tema en el código fuente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,8 +91,8 @@ Tenga en cuenta que esta definición de estructura se omitió accidentalmente en
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 

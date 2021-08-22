@@ -1,33 +1,33 @@
 ---
-description: Windows Installer contiene funcionalidad para mostrar un indicador de progreso en un cuadro de diálogo de presentación de acciones.
+description: Windows El instalador contiene la funcionalidad para mostrar un indicador de progreso en un cuadro de diálogo de presentación de acciones.
 ms.assetid: cfc2d974-4f2d-4f52-9835-eab1dc091c9b
-title: Crear un control ProgressBar
+title: Creación de un control ProgressBar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b872ed2dd36fb8ed04ee48fd69e4680fce002a18
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1074744220bde8734fe0cd1f65aa1037ff1f0cb26763a11845a7ea7f1b58e507
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103909077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119066165"
 ---
-# <a name="authoring-a-progressbar-control"></a>Crear un control ProgressBar
+# <a name="authoring-a-progressbar-control"></a>Creación de un control ProgressBar
 
-Windows Installer contiene funcionalidad para mostrar un indicador de progreso en un cuadro de diálogo de presentación de acciones. El [control ProgressBar](progressbar-control.md) representa gráficamente la instalación de componentes individuales e informa del tiempo total transcurrido con respecto al tiempo restante o del tiempo total aproximado restante hasta que se complete la instalación.
+Windows El instalador contiene la funcionalidad para mostrar un indicador de progreso en un cuadro de diálogo de presentación de acciones. El [control ProgressBar](progressbar-control.md) representa gráficamente la instalación de componentes individuales e informa del tiempo total transcurrido en relación con el tiempo restante o el tiempo total aproximado restante hasta que se completa la instalación.
 
-Para determinar el tiempo total previsto para la instalación, el instalador realiza un seguimiento de los tics de progreso totales previstos por cada acción durante la generación del script de ejecución. Una vez completada la generación del script, se almacena el total del paso de progreso y comienza la instalación.
+Para determinar el tiempo total previsto para la instalación, el instalador realiza un seguimiento de los tics de progreso totales previstos por cada acción durante la generación del script de ejecución. Una vez completada la generación de scripts, se almacena el total de la marca de progreso y comienza la instalación.
 
-Los mensajes de progreso que detallan el número transcurrido de TICs de progreso se envían al controlador de mensajes activo a medida que se ejecuta cada acción en el script. En cada mensaje de progreso, el instalador difunde un [SetProgress ControlEvent,](setprogress-controlevent.md) al cuadro de diálogo actualmente activo. La secuencia de la interfaz de usuario debe crearse para crear el cuadro de diálogo de visualización de la acción durante la ejecución del script para recibir los mensajes de ControlEvent, de SetProgress desde el instalador.
+Los mensajes de progreso que detallan el número transcurrido de pasos de progreso se envían al controlador de mensajes activo a medida que se ejecuta cada acción del script. En cada mensaje de progreso, el instalador difunde [un control SetProgress ControlEvent](setprogress-controlevent.md) al cuadro de diálogo activo actualmente. Se debe crear la secuencia de interfaz de usuario para crear el cuadro de diálogo de presentación de la acción durante la ejecución del script para recibir los mensajes SetProgress ControlEvent del instalador.
 
-Cuando el cuadro de diálogo de visualización de la acción recibe un ControlEvent, SetProgress, comprueba la [tabla EventMapping](eventmapping-table.md) de los controles que se suscriben a la ControlEvent,. El control ProgressBar del cuadro de diálogo Mostrar acción se suscribe a con el atributo control de progreso especificado en la columna atributos. El atributo control de progreso especifica que el control ProgressBar pasará los valores "ticksSoFar" y "totalTicks" junto con SetProgress ControlEvent,. El control de barra de progreso utiliza esta información para avanzar la barra gráfica de izquierda a derecha para una instalación y de derecha a izquierda para una operación de [reversión](rollback-installation.md) .
+Cuando el cuadro de diálogo de presentación de acciones recibe un control SetProgress ControlEvent, comprueba en la tabla [EventMapping](eventmapping-table.md) los controles que se suscriben al controlEvent. El control ProgressBar del cuadro de diálogo de presentación de la acción se suscribe con el atributo de control Progreso especificado en la columna Atributos . El atributo Progress Control especifica que se pasarán los valores "ticksSoFar" y "totalTicks" al control ProgressBar junto con SetProgress ControlEvent. El control de barra de progreso usa esta información para avanzar la barra gráfica de izquierda a derecha para una instalación y de derecha a izquierda para una [operación de reversión.](rollback-installation.md)
 
-Además, el instalador difunde un [ControlEvent, de TimeRemaining](timeremaining-controlevent.md) en cada mensaje de progreso. El tiempo total restante para la instalación se determina calculando primero la velocidad de ejecución, que es el número total de TICs transcurridos dividido por el tiempo total transcurrido desde que comenzó la instalación. Los tics totales que quedan divididos por la tasa de ejecución proporcionan el tiempo aproximado restante.
+Además, el instalador difunde un [control ControlEvent de TimeRemaining](timeremaining-controlevent.md) en cada mensaje de progreso. El tiempo total restante para la instalación se determina calculando primero la tasa de ejecución, que es el número total de pasos transcurridos dividido por el tiempo total desde que se inició la instalación. El total de tics restantes divididos por la tasa de ejecución proporciona el tiempo aproximado restante.
 
-Cuando el cuadro de diálogo Mostrar acción recibe el ControlEvent, TimeRemaining, vuelve a buscar en la tabla EventMapping los controles que están suscritos. Para mostrar el tiempo restante, se debe suscribir un [control de texto](text-control.md) a TimeRemaining ControlEvent, con el atributo de [control TimeRemaining](timeremaining-control-attribute.md) especificado en la columna Attributes.
+Cuando el cuadro de diálogo de presentación de la acción recibe el control ControlEvent de TimeRemaining, busca de nuevo en la tabla EventMapping los controles suscritos. Para mostrar el tiempo restante, se debe suscribir un [control Text](text-control.md) al control TimeRemaining ControlEvent con el atributo de [control TimeRemaining](timeremaining-control-attribute.md) especificado en la columna Atributos.
 
-El control de texto suscrito consulta la [tabla UIText](uitext-table.md) para obtener una cadena de plantilla con parámetros denominada "TimeRemaining". Esta cadena tiene dos parámetros, \[ 1 \] para minutos y \[ 2 \] para segundos. El control de texto convierte cada valor en minutos y segundos, evalúa la cadena de plantilla TimeRemaining y actualiza el control de texto con la nueva información.
+El control Text suscrito consulta la tabla [UIText](uitext-table.md) para obtener una cadena de plantilla con parámetros denominada "TimeRemaining". Esta cadena tiene dos parámetros, \[ 1 \] para minutos y \[ 2 para \] segundos. El control Text convierte cada valor en minutos y segundos, evalúa la cadena de plantilla TimeRemaining y actualiza el control de texto con la nueva información.
 
-Si el nivel de presentación de la interfaz de usuario se establece en básico o inferior, el instalador muestra un cuadro de diálogo predeterminado que contiene una barra de progreso y un campo de texto TimeRemaining. Para obtener más información, consulte niveles de la [interfaz de usuario](user-interface-levels.md).
+Si el nivel de presentación de la interfaz de usuario se establece en básico o inferior, el instalador muestra un cuadro de diálogo predeterminado que contiene una barra de progreso y un campo de texto TimeRemaining. Para obtener más información, [vea Interfaz de usuario Levels](user-interface-levels.md).
 
  
 
