@@ -1,9 +1,9 @@
 ---
-title: frexp ((Corecrt, \_ Math. h)
+title: frexp (Corecrt \_ math.h)
 description: Devuelve la mantisa y el exponente del valor de punto flotante especificado.
 ms.assetid: 9252feff-da85-4b3e-97db-1fcddd786695
 keywords:
-- HLSL de frexp (
+- frexp HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bddbcbbf9e97aff739bb06a0f0d0ddac12134463
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0f77ab30f525c37fcb2243bb6f634722420836f3893a4550edbb6604c8769773
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119276625"
 ---
 # <a name="frexp"></a>frexp
 
@@ -27,14 +27,14 @@ Devuelve la mantisa y el exponente del valor de punto flotante especificado.
 
 
 
-| *RET* frexp ((*x*, *exp*) |
+| *ret* frexp(*x*, *exp*) |
 |-------------------------|
 
 
 
  
 
-El valor devuelto es la mantisa y el valor devuelto por el parámetro *exp* es el exponente.
+El valor devuelto es la mantisa y el valor devuelto por *el parámetro exp* es el exponente.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -42,8 +42,8 @@ El valor devuelto es la mantisa y el valor devuelto por el parámetro *exp* es e
 
 | Elemento                                                         | Descripción                                                                                                                                      |
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="x"></span><span id="X"></span>*x1*<br/>       | \[en \] el valor de punto flotante especificado. Si el parámetro *x* es 0, esta función devuelve 0 para la mantisa y el exponente.<br/> |
-| <span id="exp"></span><span id="EXP"></span>*consumo*<br/> | \[\]el exponente devuelto del parámetro *x* .<br/>                                                                                   |
+| <span id="x"></span><span id="X"></span>*X*<br/>       | \[en \] El valor de punto flotante especificado. Si el *parámetro x* es 0, esta función devuelve 0 para la mantisa y el exponente.<br/> |
+| <span id="exp"></span><span id="EXP"></span>*Exp*<br/> | \[out \] El exponente devuelto del *parámetro x.*<br/>                                                                                   |
 
 
 
@@ -51,23 +51,23 @@ El valor devuelto es la mantisa y el valor devuelto por el parámetro *exp* es e
 
 ## <a name="return-value"></a>Valor devuelto
 
-La mantisa del parámetro *x* .
+Mantisa del *parámetro x.*
 
 ## <a name="type-description"></a>Descripción del tipo
 
 
 
-| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamaño                           |
+| Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **Vector** o **matriz** | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
-| *exp* | igual que la entrada *x*                                                                                              | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | mismas dimensiones que la entrada *x* |
-| *direcc* | igual que la entrada *x*                                                                                              | [**flot**](/windows/desktop/WinProg/windows-data-types)                        | mismas dimensiones que la entrada *x* |
+| *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vector** o **matriz** | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                            |
+| *exp* | igual que la entrada *x*                                                                                              | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *x* |
+| *Ret* | igual que la entrada *x*                                                                                              | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | las mismas dimensiones que la entrada *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -75,8 +75,8 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible           |
 |------------------------------------------------------------------------------------|---------------------|
-| Modelador [modelo 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) y modelos de sombreador más altos | sí                 |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)                          | sí ( \_ solo PS 2 \_ x) |
+| [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) y modelos de sombreador superiores | sí                 |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)                          | sí (solo ps \_ 2 \_ x) |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | no                  |
 
 
@@ -91,15 +91,15 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Corecrt \_ Math. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Corecrt \_ math.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

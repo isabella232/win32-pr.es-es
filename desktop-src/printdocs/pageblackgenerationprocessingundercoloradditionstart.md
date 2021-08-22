@@ -1,21 +1,21 @@
 ---
 title: PageBlackGenerationProcessingUnderColorAdditionStart
-description: Revise el parámetro PageBlackGenerationProcessingUnderColorAdditionStart. Este tema no es actual. Para obtener información actual, vea Especificación del esquema de impresión.
+description: Revise el parámetro PageBlackGenerationProcessingUnderColorAdditionStart. Este tema no está al día. Para obtener información actual, vea Especificación de esquema de impresión.
 ms.assetid: 6c2a7bb5-436d-40ed-a855-242a6a04bc16
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11bdbd970f30a7d573b7c803ea447e4ac3e94ca2
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: dd92834e85f4d95ea81eba7080632330e6951d6a99af29894d7f3adfcf3c18d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034103"
 ---
 # <a name="pageblackgenerationprocessingundercoloradditionstart"></a>PageBlackGenerationProcessingUnderColorAdditionStart
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe el nivel de sombra por debajo del que se aplicará SHADOW.
+Describe el nivel de sombra por debajo del cual se aplicará MICO.
 
 -   [Información de elemento](#element-information)
 -   [Contenido de la estructura](#structure-content)
@@ -70,13 +70,13 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                      |
+| Propiedad                | xsi:type           | Value                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | string<br/>  | no definido<br/>       |
 | MaxValue<br/>     | integer<br/> | 100<br/>             |
 | MinValue<br/>     | integer<br/> | 0<br/>               |
-| Múltiple<br/>     | integer<br/> | 1<br/>               |
+| Varios<br/>     | integer<br/> | 1<br/>               |
 | Mandatory<br/>    | string<br/>  | psk:Conditional<br/> |
 | UnitType<br/>     | string<br/>  | percent<br/>         |
 

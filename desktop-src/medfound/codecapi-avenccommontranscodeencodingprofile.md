@@ -1,23 +1,23 @@
 ---
-description: Especifica el perfil común de codificación de transcodificación.
+description: Especifica el perfil de codificación de transcodificación común.
 ms.assetid: 25315E05-2988-4E1A-8128-8420C8DBBB7C
-title: Propiedad CODECAPI_AVEncCommonTranscodeEncodingProfile (Codecapi. h)
+title: CODECAPI_AVEncCommonTranscodeEncodingProfile propiedad (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a18ec4835b2b535e028caf51c9102e0f2f1bb8cd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b5a538451d72b28084feab4876858bf2c03babc5d1d98b89121b6085fc372391
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119346995"
 ---
-# <a name="codecapi_avenccommontranscodeencodingprofile-property"></a>\_Propiedad AVEncCommonTranscodeEncodingProfile de CODECAPI
+# <a name="codecapi_avenccommontranscodeencodingprofile-property"></a>Propiedad CODECAPI \_ AVEncCommonTranscodeEncodingProfile
 
-Especifica el perfil común de codificación de transcodificación.
+Especifica el perfil de codificación de transcodificación común.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**UTILICEN**
+**Bstr**
 
 ## <a name="property-guid"></a>GUID de propiedad
 
@@ -29,9 +29,9 @@ Especifica el perfil común de codificación de transcodificación.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                     |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                     |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -39,7 +39,7 @@ Especifica el perfil común de codificación de transcodificación.
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

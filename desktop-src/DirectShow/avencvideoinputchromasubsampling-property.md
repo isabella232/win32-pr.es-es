@@ -1,19 +1,19 @@
 ---
-description: Especifica la colocación cromada para el vídeo de entrada. Croman define las posiciones de los ejemplos de croma en relación con los ejemplos de luminancia.
+description: Especifica el siting de la escala para el vídeo de entrada. La sima de los colores define las posiciones de las muestras de muestreo con respecto a las muestras de luma.
 ms.assetid: e9f8fef5-73da-424d-a239-09779b81a02b
-title: Propiedad AVEncVideoInputChromaSubsampling (Codecapi. h)
+title: Propiedad AVEncVideoInputChromaSubsampling (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 958237a50c42ef7e5387c89cb7476a12ae72968f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0a956f9320f7c920e68cbb1038cf11537ef14d791205eef8affabc4c38f8f67e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103997935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119342315"
 ---
 # <a name="avencvideoinputchromasubsampling-property"></a>Propiedad AVEncVideoInputChromaSubsampling
 
-Especifica la colocación cromada para el vídeo de entrada. Croman define las posiciones de los ejemplos de croma en relación con los ejemplos de luminancia.
+Especifica el siting de la escala para el vídeo de entrada. La sima de los colores define las posiciones de las muestras de muestreo con respecto a las muestras de luma.
 
 Esta propiedad es de lectura y escritura.
 
@@ -27,28 +27,28 @@ Esta propiedad es de lectura y escritura.
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El valor de esta propiedad es una operación OR bit a bit de las marcas de la enumeración [**eAVEncVideoChromaSubsampling**](/windows/desktop/api/codecapi/ne-codecapi-eavencvideochromasubsampling) .
+El valor de esta propiedad es un OR bit a bit de marcas de la [**enumeración eAVEncVideoChromaSubsampling.**](/windows/desktop/api/codecapi/ne-codecapi-eavencvideochromasubsampling)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 2000 Professional \|\]<br/>                     |
-| Servidor mínimo compatible<br/> | Aplicaciones \[ para UWP de aplicaciones de escritorio de Windows 2000 Server \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
+| Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
+| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Propiedades de la API de códec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interfaz ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI (interfaz)**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

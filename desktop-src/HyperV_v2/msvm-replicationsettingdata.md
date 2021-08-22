@@ -1,7 +1,7 @@
 ---
 description: Representa la configuración específica de la replicación para una máquina virtual.
 ms.assetid: f6f6a413-a949-4aca-930b-37e39bdc1fdb
-title: Msvm_ReplicationSettingData (clase)
+title: Msvm_ReplicationSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -55,18 +55,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 35bb97e531f8aca5f74801d55a71e5b3f2850c08
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90e16e70f7b5bd0a075ffdef54cf0c591719d4993031f3abee19dd8186ec5996
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148258"
 ---
-# <a name="msvm_replicationsettingdata-class"></a>MSVM \_ ReplicationSettingData (clase)
+# <a name="msvm_replicationsettingdata-class"></a>Clase Msvm \_ ReplicationSettingData
 
-Representa la configuración específica de la replicación para una máquina virtual. El cliente pasa una instancia de esta clase a [**MSVM \_ ReplicationService. CreateReplicationRelationship**](createreplicationrelationship-msvm-replicationservice.md) para crear una relación de replicación. El cliente no puede cambiar directamente los valores de cualquiera de las propiedades de esta clase; debe llamar al método [**MSVM \_ ReplicationService. ModifyReplicationSettings**](modifyreplicationsettings-msvm-replicationservice.md) para cambiar los valores. Cada relación de replicación tiene una única instancia de configuración.
+Representa la configuración específica de la replicación para una máquina virtual. El cliente pasa una instancia de esta clase a [**Msvm \_ ReplicationService.CreateReplicationRelationship**](createreplicationrelationship-msvm-replicationservice.md) para crear una relación de replicación. El cliente no puede cambiar directamente los valores de ninguna de las propiedades de esta clase; debe llamar al método [**Msvm \_ ReplicationService.ModifyReplicationSettings**](modifyreplicationsettings-msvm-replicationservice.md) para cambiar los valores. Cada relación de replicación tiene una única instancia de configuración.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -121,13 +121,13 @@ class Msvm_ReplicationSettingData : CIM_VirtualSystemSettingData
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ ReplicationSettingData** tiene estos tipos de miembros:
+La **clase \_ ReplicationSettingData de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ ReplicationSettingData** tiene estas propiedades.
+La **clase \_ ReplicationSettingData de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -149,26 +149,26 @@ Configuración de replicación adicional que puede usar el proveedor de puntos d
 **ApplicationConsistentSnapshotInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El intervalo de tiempo entre las instantáneas coherentes con la aplicación, especificado en horas. Los valores válidos son de 1 hora a 12 horas.
+Intervalo de tiempo entre instantáneas coherentes con la aplicación, especificadas en horas. Los valores válidos van de 1 hora a 12 horas.
 
 </dd> <dt>
 
 **AuthenticationType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Defina el modo de autenticación usado para conectarse al servidor de recuperación.
+Defina el modo de autenticación utilizado para conectarse al servidor de recuperación.
 
 <dt>
 
@@ -199,71 +199,71 @@ Autenticación basada en certificados.
 **AutomaticRecoveryAction**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
-Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85)).
+Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
 **AutomaticShutdownAction**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
-Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85)).
+Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
 **AutomaticStartupAction**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
-Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85)).
+Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
 **AutomaticStartupActionDelay**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El tiempo de retardo antes de que la máquina virtual se inicie automáticamente. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), pero no se usa.
+El tiempo de retraso antes de que la máquina virtual se inicie automáticamente. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData,**](/previous-versions//cc136954(v=vs.85))pero no se usa.
 
 </dd> <dt>
 
 **AutomaticStartupActionSequenceNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número que indica la secuencia relativa de activación de la máquina virtual cuando se inicia el sistema host. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), pero no se usa.
+Número que indica la secuencia relativa de activación de la máquina virtual cuando se inicia el sistema host. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData,**](/previous-versions//cc136954(v=vs.85))pero no se usa.
 
 </dd> <dt>
 
@@ -276,7 +276,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si las operaciones de resincronización se desencadenan automáticamente cuando se produce un error de replicación debido a errores de hardware y energía. Las operaciones de resincronización solo se desencadenan cuando el error se produce entre las horas especificadas por las propiedades **AutoResynchronizeIntervalStart** y **AutoResynchronizeIntervalEnd** .
+Especifica si las operaciones de resincronización se desencadenan automáticamente cuando se produce un error de replicación debido a errores de alimentación y hardware. Las operaciones de resincronización solo se desencadenan cuando el error se produce entre las horas especificadas por las propiedades **AutoResynchronizeIntervalStart** y **AutoResynchronizeIntervalEnd.**
 
 El valor predeterminado es **False**.
 
@@ -285,34 +285,34 @@ El valor predeterminado es **False**.
 **AutoResynchronizeIntervalEnd**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica la hora de finalización de las operaciones de resincronización automática que se van a desencadenar. Este valor se encuentra en la hora local. El valor predeterminado es 06:00 (6:00 A.M.).
+Especifica la hora de finalización de las operaciones de resincronización automáticas que se van a desencadenar. Este valor está en hora local. El valor predeterminado es 06:00 (6:00 a. m.).
 
-Las operaciones de resincronización solo se desencadenan cuando el error se produce entre las horas especificadas por las propiedades **AutoResynchronizeIntervalStart** y **AutoResynchronizeIntervalEnd** .
+Las operaciones de resincronización solo se desencadenan cuando el error se produce entre las horas especificadas por las propiedades **AutoResynchronizeIntervalStart** y **AutoResynchronizeIntervalEnd.**
 
-Las operaciones de resincronización también pueden programarse para que se desencadenen durante el siguiente intervalo.
+También se pueden programar operaciones de resincronización para que se desencadene durante el siguiente intervalo.
 
 </dd> <dt>
 
 **AutoResynchronizeIntervalStart**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica la hora de inicio de las operaciones de resincronización automática que se van a desencadenar. Este valor se encuentra en la hora local. El valor predeterminado es 18:30 (6:30 P.M.).
+Especifica la hora de inicio de las operaciones de resincronización automáticas que se van a desencadenar. Este valor está en hora local. El valor predeterminado es 18:30 (6:30 p. m.).
 
-Las operaciones de resincronización solo se desencadenan cuando el error se produce entre las horas especificadas por las propiedades **AutoResynchronizeIntervalStart** y **AutoResynchronizeIntervalEnd** .
+Las operaciones de resincronización solo se desencadenan cuando el error se produce entre las horas especificadas por las propiedades **AutoResynchronizeIntervalStart** y **AutoResynchronizeIntervalEnd.**
 
-Las operaciones de resincronización también pueden programarse para que se desencadenen durante el siguiente intervalo.
+También se pueden programar operaciones de resincronización para que se desencadene durante el siguiente intervalo.
 
 </dd> <dt>
 
@@ -338,7 +338,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "configuración de replicación".
+Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "Replication Configuración".
 
 </dd> <dt>
 
@@ -354,7 +354,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (128)
 </dt> </dl>
 
-Huella digital del certificado que se usará cuando la propiedad **AuthenticationType** sea autenticación basada en certificados.
+Huella digital del certificado que se va a usar **cuando la propiedad AuthenticationType** sea la autenticación basada en certificados.
 
 </dd> <dt>
 
@@ -380,9 +380,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-No se utiliza.
+No se usa.
 
-Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85)).
+Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
@@ -395,7 +395,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso relativa y el nombre de un archivo donde se almacena la información sobre la configuración de la máquina virtual. Esta ruta de acceso es relativa a la propiedad **ConfigurationDataRoot** . Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), pero no se usa.
+Ruta de acceso relativa y nombre de archivo de un archivo donde se almacena información sobre la configuración de la máquina virtual. Esta ruta de acceso es relativa a la **propiedad ConfigurationDataRoot.** Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData,**](/previous-versions//cc136954(v=vs.85))pero no se usa.
 
 </dd> <dt>
 
@@ -408,24 +408,24 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador único de la configuración de la máquina virtual. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), pero no se usa.
+Identificador único de la configuración de la máquina virtual. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData,**](/previous-versions//cc136954(v=vs.85))pero no se usa.
 
 </dd> <dt>
 
 **CreationTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha y hora en que se creó la configuración de la máquina virtual. Si este objeto representa la configuración actual de la máquina virtual, este valor sería la hora a la que se creó el sistema. Si este objeto representa la configuración de instantánea de la máquina virtual, este valor sería la hora a la que se tomó la instantánea. Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85)).
+Fecha y hora en que se creó la configuración de la máquina virtual. Si este objeto representa la configuración actual de la máquina virtual, este valor sería la hora a la que se creó el sistema. Si este objeto representa la configuración de instantáneas de la máquina virtual, este valor sería la hora a la que se tomó la instantánea. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
-Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifySystemSettings**](modifysystemsettings-msvm-virtualsystemmanagementservice.md) de la clase [**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) .
+Se trata de una propiedad de solo lectura, pero se puede cambiar mediante el método [**ModifySystemSettings**](modifysystemsettings-msvm-virtualsystemmanagementservice.md) de la clase [**Msvm \_ VirtualSystemManagementService.**](msvm-virtualsystemmanagementservice.md)
 
-Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85)).
+Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
@@ -438,7 +438,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**la \_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)y siempre se establece en "datos de configuración de replicación de máquina virtual".
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)de CIM y siempre se establece en "Virtual Machine Replication Configuración Data".
 
 </dd> <dt>
 
@@ -451,7 +451,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85))y está establecida en el nombre para mostrar de la máquina virtual.
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))y se establece en el nombre para mostrar de la máquina virtual.
 
 </dd> <dt>
 
@@ -464,28 +464,28 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("sin valor")
+Calificadores: [**en desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("Sin valor")
 </dt> </dl>
 
-Especifica si todos los discos duros virtuales de replicación de la máquina virtual se replican al mismo punto en el tiempo. Esto garantiza que la replicación respete el orden de escritura de las aplicaciones en la máquina virtual.
+Especifica si todos los discos duros virtuales de replicación de la máquina virtual se replican en el mismo momento dado. Esto garantiza que la replicación respeta el orden de escritura de las aplicaciones en la máquina virtual.
 
-**Windows 8.1:** A partir de Windows 8.1 y Windows Server 2012 R2, esta propiedad está en desuso y siempre se establece en **true**.
+**Windows 8.1:** A partir Windows 8.1 y Windows Server 2012 R2, esta propiedad está en desuso y siempre se establece en **TRUE.**
 
 </dd> <dt>
 
 **IncludedDisks**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **HyperVEmbeddedInstance** ("CIM \_ StorageAllocationSettingData"), [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado")
+Calificadores: **HyperVEmbeddedInstance** ("CIM \_ StorageAllocationSettingData"), [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexed")
 </dt> </dl>
 
-La lista de discos duros virtuales (VHD) conectados al sistema que replicará el motor de replicación. Se trata de una matriz de cadenas, cada una de las cuales contiene el **InstanceID** del [**\_ StorageAllocationSettingData de MSVM**](msvm-storageallocationsettingdata.md) que representa el VHD.
+Lista de discos duros virtuales (VHD) conectados al sistema que replicará el motor de replicación. Se trata de una matriz de cadenas, cada una de las que contiene el **InstanceID** de [**Msvm \_ StorageAllocationSettingData**](msvm-storageallocationsettingdata.md) que representa el VHD.
 
 </dd> <dt>
 
@@ -498,10 +498,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda del [**\_ SettingData de CIM**](/previous-versions//cc136911(v=vs.85)). En Windows 8, siempre se establece en "Microsoft:*GUID de máquina virtual* \\ HVR". Por Windows 8.1, se establece en "Microsoft:*GUID de máquina virtual* \\ HVR \\<0/1>". En el valor Windows 8.1, 0 indica principal y 1 indica replicación extendida. Para obtener más información acerca de la replicación extendida, consulte [**MSVM \_ ReplicationRelationship**](msvm-replicationrelationship.md).
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)). Por Windows 8, siempre se establece en "Microsoft:*VIRTUAL Machine GUID* \\ HVR". Por Windows 8.1, se establece en "Microsoft:*Virtual Machine GUID* \\ HVR<\\ 0/1>". En el Windows 8.1, 0 indica principal y 1 indica replicación extendida. Para obtener más información sobre la replicación extendida, vea [**Replicación de MsvmRelationship \_**](msvm-replicationrelationship.md).
 
 </dd> <dt>
 
@@ -514,22 +514,22 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso de un directorio en el que se almacena la información de registro de la máquina virtual. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), pero no se usa.
+Ruta de acceso de un directorio donde se almacena la información de registro de la máquina virtual. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData,**](/previous-versions//cc136954(v=vs.85))pero no se usa.
 
 </dd> <dt>
 
 **Notas**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-No se utiliza y no se puede establecer.
+No se usa y no se puede establecer.
 
-Esta propiedad se hereda de [**\_ VirtualSystemSettingData CIM**](/previous-versions//cc136954(v=vs.85)).
+Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData.**](/previous-versions//cc136954(v=vs.85))
 
 </dd> <dt>
 
@@ -545,7 +545,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nombre del punto de conexión principal. En el caso de un clúster principal, este es el nombre de la CAP de agente. En el caso de un servidor principal independiente, es el nombre del sistema host.
+Nombre del punto de conexión principal. En el caso de un clúster principal, este es el nombre CAP del agente. En el caso de un servidor principal independiente, este es el nombre del sistema host.
 
 </dd> <dt>
 
@@ -561,7 +561,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-El nombre de dominio completo del sistema host principal que hospeda la máquina virtual.
+Nombre de dominio completo del sistema host principal que hospeda la máquina virtual.
 
 </dd> <dt>
 
@@ -577,7 +577,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nombre del punto de conexión de recuperación. En el caso de un clúster de recuperación, este es el nombre de la CAP de agente. En el caso de un servidor de recuperación independiente, es el nombre del sistema host.
+Nombre del punto de conexión de recuperación. En el caso de un clúster de recuperación, este es el nombre CAP del agente. En el caso de un servidor de recuperación independiente, este es el nombre del sistema host.
 
 </dd> <dt>
 
@@ -590,20 +590,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso completa de un archivo donde se almacena información relacionada con la recuperación de la máquina virtual. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), pero no se usa.
+Ruta de acceso completa de un archivo donde se almacena la información relacionada con la recuperación de la máquina virtual. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData,**](/previous-versions//cc136954(v=vs.85))pero no se usa.
 
 </dd> <dt>
 
 **RecoveryHistory**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El número máximo de instantáneas de recuperación que se almacenarán en el servidor de recuperación. Los valores válidos son de 0 a 24.
+Número máximo de instantáneas de recuperación que se almacenarán en el servidor de recuperación. Los valores válidos van de 0 a 24.
 
 </dd> <dt>
 
@@ -619,20 +619,20 @@ Tipo de acceso: solo lectura
 Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-El nombre de dominio completo del sistema host de recuperación que hospeda la máquina virtual.
+Nombre de dominio completo del sistema host de recuperación que hospeda la máquina virtual.
 
 </dd> <dt>
 
 **RecoveryServerPortNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de puerto del servidor de recuperación que se va a usar al establecer una conexión segura para la replicación.
+Número de puerto del servidor de recuperación que se usará al realizar una conexión segura para la replicación.
 
 </dd> <dt>
 
@@ -645,14 +645,14 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica si se deben replicar los [**MSVM \_ KvpExchangeDataItem**](msvm-kvpexchangedataitem.md)de solo host de la máquina virtual principal a la máquina virtual de recuperación.
+Especifica si se debe replicar [**Msvm \_ KvpExchangeDataItem**](msvm-kvpexchangedataitem.md)s solo de host desde la máquina virtual principal a la máquina virtual de recuperación.
 
 </dd> <dt>
 
 **ReplicationInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -681,7 +681,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso a la instancia de la clase [**MSVM \_ ReplicationProvider**](msvm-replicationprovider.md) que identifica el extremo del proveedor de replicación.
+Ruta de acceso a la instancia de la clase [**\_ ReplicationProvider de Msvm**](msvm-replicationprovider.md) que identifica el punto de conexión del proveedor de replicación.
 
 **Windows 8.1:** Este valor no se admite hasta Windows 8.1 y Windows Server 2012 R2.
 
@@ -712,7 +712,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso de un directorio donde se almacena información sobre las instantáneas de la máquina virtual. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), pero no se usa.
+Ruta de acceso de un directorio donde se almacena información sobre las instantáneas de máquina virtual. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), pero no se usa.
 
 </dd> <dt>
 
@@ -725,7 +725,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso de un directorio donde se almacena información relacionada con la suspensión de la máquina virtual. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), pero no se usa.
+Ruta de acceso de un directorio donde se almacena información sobre la máquina virtual relacionada con la suspensión. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), pero no se usa.
 
 </dd> <dt>
 
@@ -738,11 +738,11 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso de un directorio donde se almacenan los archivos de intercambio de la máquina virtual. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), pero no se usa.
+Ruta de acceso de un directorio donde se almacenan los archivos de intercambio de la máquina virtual. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), pero no se usa.
 
 </dd> <dt>
 
-**Virtualsystemidentifer**
+**VirtualSystemIdentifier**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -751,7 +751,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre del objeto [**\_ ComputerSystem de CIM**](/windows/desktop/CIMWin32Prov/cim-computersystem) al que pertenecen estos datos de configuración. Esta propiedad es una invalidación de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Nombre del objeto [**\_ ComputerSystem cim**](/windows/desktop/CIMWin32Prov/cim-computersystem) al que pertenecen los datos de esta configuración. Esta propiedad es una invalidación de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
 
 </dd> <dt>
 
@@ -764,7 +764,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el tipo de máquina virtual que representan los datos de configuración. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))y siempre está establecida en "Microsoft: Hyper-V: replica".
+Especifica el tipo de máquina virtual que representan los datos de configuración. Esta propiedad se hereda de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))y siempre se establece en "Microsoft:Hyper-V:Replica".
 
 </dd> </dl>
 
@@ -774,10 +774,10 @@ Especifica el tipo de máquina virtual que representan los datos de configuraci�
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -786,7 +786,7 @@ Especifica el tipo de máquina virtual que representan los datos de configuraci�
 
 <dl> <dt>
 
-[**\_VIRTUALSYSTEMSETTINGDATA CIM**](cim-virtualsystemsettingdata.md)
+[**CIM \_ VirtualSystemSettingData**](cim-virtualsystemsettingdata.md)
 </dt> <dt>
 
 [**ModifyReplicationSettings**](modifyreplicationsettings-msvm-replicationservice.md)

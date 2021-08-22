@@ -1,39 +1,39 @@
 ---
-description: Componentes de Graph-Building
+description: Graph-Building componentes
 ms.assetid: d803c56c-6fb1-4937-92e7-9ed2db2afc46
-title: Componentes de Graph-Building
+title: Graph-Building componentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea3ba346356109d8080d887a510cfcb85b6a6c80
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 14aabcf31f55d0d42117e39cb22fa286b383641c94fe21f386345fd8db1cc890
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104152691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564645"
 ---
-# <a name="graph-building-components"></a>Componentes de Graph-Building
+# <a name="graph-building-components"></a>Graph-Building componentes
 
-DirectShow proporciona varios componentes que se pueden usar para crear gráficos de filtro. Entre ellas, figuran:
+DirectShow proporciona varios componentes que se pueden usar para generar gráficos de filtro. que incluyen la siguiente información:
 
--   [Filtre el administrador de gráficos](filter-graph-manager.md). Este objeto controla el gráfico de filtro. Admite las interfaces [**IGraphBuilder**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder), [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol)y [**IMediaEventEx**](/windows/desktop/api/Control/nn-control-imediaeventex) , entre otros. Todas las aplicaciones de DirectShow usan este objeto en algún momento, aunque en algunos casos otro objeto crea el administrador de gráficos de filtro para la aplicación.
--   [Generador de gráficos de captura](capture-graph-builder.md). Este objeto proporciona métodos adicionales para generar gráficos de filtros. Originalmente se diseñó para crear gráficos que realizan capturas de vídeo (por lo tanto, el nombre), pero resultan útiles para muchos otros tipos de gráficos de filtros personalizados. Admite la interfaz [**ICaptureGraphBuilder2**](/windows/desktop/api/Strmif/nn-strmif-icapturegraphbuilder2) .
--   [Asignador de filtros](filter-mapper.md) y [enumerador de dispositivos del sistema](system-device-enumerator.md). Estos objetos buscan filtros que están registrados en el sistema del usuario o que representan dispositivos de hardware.
--   [Generador de gráficos de DVD](dvd-graph-builder.md). Este objeto crea gráficos de filtro para la reproducción y la navegación de DVD. Admite la interfaz [**IDvdGraphBuilder**](/windows/desktop/api/Strmif/nn-strmif-idvdgraphbuilder) .
+-   [Filtrar Graph Manager](filter-graph-manager.md). Este objeto controla el gráfico de filtro. Admite las interfaces [**IGraphBuilder,**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol)e [**IMediaEventEx,**](/windows/desktop/api/Control/nn-control-imediaeventex) entre otras. Todas DirectShow aplicaciones usan este objeto en algún momento, aunque en algunos casos otro objeto crea el Administrador de filtros Graph para la aplicación.
+-   [Capture Graph Builder](capture-graph-builder.md). Este objeto proporciona métodos adicionales para crear gráficos de filtro. Originalmente se diseñó para crear gráficos que realizan la captura de vídeo (de ahí el nombre), pero es útil para muchos otros tipos de gráficos de filtros personalizados. Admite la [**interfaz ICaptureGraphBuilder2.**](/windows/desktop/api/Strmif/nn-strmif-icapturegraphbuilder2)
+-   [Filtrar asignador y](filter-mapper.md) [enumerador de dispositivos del sistema](system-device-enumerator.md). Estos objetos localizan filtros que están registrados en el sistema del usuario o que representan dispositivos de hardware.
+-   [DVD Graph Builder](dvd-graph-builder.md). Este objeto crea gráficos de filtro para la reproducción y navegación de DVD. Admite la [**interfaz IDvdGraphBuilder.**](/windows/desktop/api/Strmif/nn-strmif-idvdgraphbuilder)
 
-### <a name="intelligent-connect"></a>Conexión inteligente
+### <a name="intelligent-connect"></a>Inteligencia Conectar
 
-El término "conexión inteligente" abarca un conjunto de algoritmos que el administrador de gráficos de filtro utiliza para compilar todo o parte de un gráfico de filtros. Siempre que el administrador de gráficos de filtro requiere filtros adicionales para completar el gráfico, realiza aproximadamente lo siguiente:
+El término "Intelligent Conectar" abarca un conjunto de algoritmos que el Administrador de filtros Graph usa para compilar todo o parte de un gráfico de filtros. Siempre que filter Graph Manager requiere filtros adicionales para completar el gráfico, hace aproximadamente lo siguiente:
 
-1.  Si hay un filtro actualmente en el gráfico, con al menos un PIN de entrada sin conexión, el administrador de gráficos de filtros intenta usar ese filtro.
-2.  De lo contrario, Filter Graph Manager busca en el registro los filtros que pueden aceptar el tipo de medio correcto para la conexión. Cada filtro tiene un valor de registro denominado "mérito", que indica aproximadamente la probabilidad de que el filtro sea útil para completar el gráfico. Filter Graph Manager intenta filtrar en orden de valor de mérito. Para cada tipo de flujo (como audio, vídeo o MIDI), el representador predeterminado tiene un gran mérito. Los descodificadores también tienen un gran mérito. Los filtros de propósito especial tienen un mérito bajo.
+1.  Si hay un filtro actualmente en el gráfico, con al menos una marca de entrada no conectada, el Administrador de filtros Graph manager intenta usar ese filtro.
+2.  De lo contrario, el Administrador de Graph busca en el Registro filtros que puedan aceptar el tipo de medio correcto para la conexión. Cada filtro tiene un valor del Registro denominado "Valor", que indica aproximadamente la probabilidad de que el filtro sea útil para completar el gráfico. El Administrador de Graph prueba los filtros en orden de valor de meritorio. Para cada tipo de secuencia (por ejemplo, audio, vídeo o MIDI), el representador predeterminado tiene un gran grado. Los descodificadores también tienen un gran grado. Los filtros de uso especial tienen poco peso.
 
-Si el administrador de gráficos de filtro se bloquea, se devolverá y probará una combinación diferente de filtros. Puede encontrar los detalles exactos en el tema [conexión inteligente](intelligent-connect.md).
+Si el Administrador Graph filtros se queda bloqueado, se volverá a intentar y probará una combinación diferente de filtros. Puede encontrar los detalles exactos en el tema [Intelligent Conectar](intelligent-connect.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Compilar el gráfico de filtro](building-the-filter-graph.md)
+[Compilar el filtro Graph](building-the-filter-graph.md)
 </dt> </dl>
 
  

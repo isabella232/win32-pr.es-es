@@ -4,30 +4,30 @@ ms.assetid: 1aa3e2e6-3f05-411e-829f-aeddbb53445d
 title: ICE22
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26574b11f9d908026d901a74632766998246d31a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 177fcef5441e5b82738c76face70427cc6865ae59c11542fca080b3dc521c5e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119529025"
 ---
 # <a name="ice22"></a>ICE22
 
-ICE22 usa la [tabla FeatureComponents](featurecomponents-table.md) para validar la asignación de características y componentes a los que se hace referencia en la [tabla PublishComponent](publishcomponent-table.md).
+ICE22 usa la [tabla FeatureComponents para](featurecomponents-table.md) validar la asignación de características y componentes a los que se hace referencia en [la tabla PublishComponent](publishcomponent-table.md).
 
 ## <a name="result"></a>Resultado
 
-ICE22 envía un mensaje de error si las características y los componentes se asignan de forma incorrecta en la [tabla PublishComponent](publishcomponent-table.md).
+ICE22 publica un mensaje de error si las características y componentes se asignan incorrectamente en la [tabla PublishComponent](publishcomponent-table.md).
 
 ## <a name="example"></a>Ejemplo
 
-En el ejemplo siguiente, ICE22 envía un error que {00000003-0004-0000-0000-624474732465} no tiene la asignación correcta para las columnas de característica \_ y componente \_ .
+En el ejemplo siguiente, ICE22 publica un error que no tiene la asignación {00000003-0004-0000-0000-624474732465} correcta para las columnas Feature y \_ \_ Component.
 
 [Tabla PublishComponent](publishcomponent-table.md) (parcial)
 
 
 
-| ComponentId                            | Característica\_ | Componente\_ |
+| Componentid                            | Característica\_ | Componente\_ |
 |----------------------------------------|-----------|-------------|
 | {00000002-0003-0000-0000-624474736554} | Feat1     | Comp1       |
 | {00000003-0004-0000-0000-624474732465} | Feat1     | Comp2       |

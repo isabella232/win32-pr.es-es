@@ -1,7 +1,7 @@
 ---
-description: Se llama al método cambie las cuando cambia la posición de inicio.
+description: Se llama al método ChangeStart cuando cambia la posición inicial.
 ms.assetid: d0a5497e-43e9-4d1f-9106-1f4cd8fcb372
-title: Método CSourceSeeking. cambie las (Ctlutil. h)
+title: Método CSourceSeeking.ChangeStart (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d0a2751cf0ad1ecc6fddeeffd97b97c32b4a31b1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7f7c0d9a86d33d13c95295c5ef1ef46a3e6c02371d1b6520572750450320b1f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661310"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073369"
 ---
-# <a name="csourceseekingchangestart-method"></a>CSourceSeeking. cambie las, método
+# <a name="csourceseekingchangestart-method"></a>Método CSourceSeeking.ChangeStart
 
-`ChangeStart`Se llama al método cuando cambia la posición de inicio.
+Se `ChangeStart` llama al método cuando cambia la posición inicial.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**CSourceSeeking:: SetPositions**](csourceseeking-setpositions.md) llama a este método si cambia la posición de inicio. Este método es virtual puro; la clase derivada debe implementarla. Después de una operación de búsqueda, las marcas de tiempo se deben reiniciar desde cero. Las horas de los medios deben reflejar la nueva hora de inicio. En el ejemplo siguiente se muestra una posible implementación:
+El [**método CSourceSeeking::SetPositions**](csourceseeking-setpositions.md) llama a este método si cambia la posición inicial. Este método es virtual puro; la clase derivada debe implementarla. Después de una operación de búsqueda, las marcas de tiempo deben reiniciarse desde cero. Las horas de los medios deben reflejar la nueva hora de inicio. En el ejemplo siguiente se muestra una posible implementación:
 
 
 ```C++
@@ -67,8 +67,8 @@ HRESULT CMyStream::ChangeStart( )
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ HRESULT CMyStream::ChangeStart( )
 
 <dl> <dt>
 
-[**Clase CSourceSeeking**](csourceseeking.md)
+[**CSourceSeeking (clase)**](csourceseeking.md)
 </dt> </dl>
 
  

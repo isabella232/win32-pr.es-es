@@ -1,7 +1,7 @@
 ---
 description: Puntero al pin de entrada del filtro.
 ms.assetid: 405edb7d-7682-4cc0-b862-6ef5c44a26ab
-title: 'Miembro CBaseRenderer:: m_pInputPin (Renbase. h)'
+title: CBaseRenderer::m_pInputPin miembro (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3072951304094fd28435c60ec693ffffc7a327e6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 510927a5118e10a69473cd0d2e2eda24a4343aa59cb73d5e64c8616407d2ee16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119429305"
 ---
-# <a name="cbaserendererm_pinputpin-member"></a>Miembro pInputPin CBaseRenderer:: m \_
+# <a name="cbaserendererm_pinputpin-member"></a>Miembro CBaseRenderer::m \_ pInputPin
 
 Puntero al pin de entrada del filtro.
 
@@ -42,8 +42,8 @@ CRendererInputPin *m_pInputPin;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ CRendererInputPin *m_pInputPin;
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

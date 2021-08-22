@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_INSTANCE_INFO. szDatabaseFileName'
-title: Propiedad JET_INSTANCE_INFO. szDatabaseFileName
+description: 'Más información sobre: JET_INSTANCE_INFO.szDatabaseFileName'
+title: JET_INSTANCE_INFO.szDatabaseFileName, propiedad
 TOCTitle: 'szDatabaseFileName property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INSTANCE_INFO.szDatabaseFileName
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_instance_info.szdatabasefilename(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 55414184fd25a90f3fbb57be8fb5d84264fde5dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0bcf0360ea2c901c1fc68c97c8b29f222c1df2e9a65dacf87297e3b560ece0d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119272435"
 ---
-# <a name="jet_instance_infoszdatabasefilename-property"></a>Propiedad JET_INSTANCE_INFO. szDatabaseFileName
+# <a name="jet_instance_infoszdatabasefilename-property"></a>JET_INSTANCE_INFO.szDatabaseFileName, propiedad
 
-Obtiene una colección de cadenas, cada una de las cuales contiene el nombre de archivo de una base de datos que se adjunta a la instancia de base de datos. La matriz tiene elementos cDatabases.
+Obtiene una colección de cadenas, cada una de las que contiene el nombre de archivo de una base de datos asociada a la instancia de base de datos. La matriz tiene elementos cDatabases.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,14 +58,14 @@ public IList<string> szDatabaseFileName { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Collections. Generic. IList](/dotnet/api/system.collections.generic.ilist-1)\<[String](/dotnet/api/system.string)\>  
+Tipo: [System.Collections.Generic.IList](/dotnet/api/system.collections.generic.ilist-1)\<[String](/dotnet/api/system.string)\>  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_INSTANCE_INFO (clase)](./jet-instance-info-class.md)
+[JET_INSTANCE_INFO clase](./jet-instance-info-class.md)
 
-[Miembros de JET_INSTANCE_INFO](./jet-instance-info-members.md)
+[JET_INSTANCE_INFO miembros](./jet-instance-info-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

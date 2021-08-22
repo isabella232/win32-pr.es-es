@@ -1,11 +1,11 @@
 ---
-title: Método StartService de la clase MicrosoftDNS_Server
+title: Método StartService de la MicrosoftDNS_Server clase
 description: El método StartService inicia el servidor DNS.
 ms.assetid: f6343a34-9d1b-4f82-897e-289650af6be9
 keywords:
-- DNS del método StartService
-- Método StartService DNS, clase MicrosoftDNS_Server
-- MicrosoftDNS_Server de clase DNS, StartService
+- Dns del método StartService
+- Método StartService DNS , MicrosoftDNS_Server clase
+- MicrosoftDNS_Server clase DNS , método StartService
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2e103b3d2648bf2c061eb047090cfdfeb907518
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b5e74de96ad24ff16ea2c2effaef78003011f5d6bd5d421336084ac5c7701f79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119432645"
 ---
-# <a name="startservice-method-of-the-microsoftdns_server-class"></a>Método StartService de la \_ clase de servidor MicrosoftDNS
+# <a name="startservice-method-of-the-microsoftdns_server-class"></a>Método StartService de la clase de servidor MicrosoftDNS \_
 
-El método **StartService** inicia el servidor DNS.
+El **método StartService** inicia el servidor DNS.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-ERROR \_ correcto indica que el servicio se ha iniciado correctamente. Cualquier otro valor es un código de error.
+ERROR \_ SUCCESS indica que el servicio se inició correctamente. Cualquier otro valor es un código de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,7 +53,7 @@ ERROR \_ correcto indica que el servicio se ha iniciado correctamente. Cualquier
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -61,16 +61,16 @@ ERROR \_ correcto indica que el servicio se ha iniciado correctamente. Cualquier
 
 <dl> <dt>
 
-[**\_Servidor MicrosoftDNS**](microsoftdns-server.md)
+[**MicrosoftDNS \_ Server**](microsoftdns-server.md)
 </dt> <dt>
 
-[**Método StopService de la \_ clase de servidor MicrosoftDNS**](microsoftdns-server-stopservice.md)
+[**Método StopService de la clase de servidor MicrosoftDNS \_**](microsoftdns-server-stopservice.md)
 </dt> <dt>
 
-[**Método StartScavenging de la \_ clase de servidor MicrosoftDNS**](microsoftdns-server-startscavenging.md)
+[**Método StartScavenging de la clase de servidor MicrosoftDNS \_**](microsoftdns-server-startscavenging.md)
 </dt> <dt>
 
-[**Método GetDistinguishedName de la \_ clase de servidor MicrosoftDNS**](microsoftdns-server-getdistinguishedname.md)
+[**Método GetDistinguishedName de la clase de servidor MicrosoftDNS \_**](microsoftdns-server-getdistinguishedname.md)
 </dt> </dl>
 
  

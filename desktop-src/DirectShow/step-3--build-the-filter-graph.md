@@ -1,19 +1,19 @@
 ---
-description: En este tema se trata el paso 3 del tutorial reproducción de audio y vídeo en DirectShow.
+description: Este tema es el paso 3 del tutorial Reproducción de audio y vídeo en DirectShow.
 ms.assetid: 45679c14-2671-420d-9766-61f2b2bb713a
-title: 'Paso 3: compilar el gráfico de filtro'
+title: 'Paso 3: Compilar el filtro Graph'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a770ad823a2578fab88a09cc44a3c7f2be4a4ca8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ad4903e08b19e15721c8b62f130261bb4d05fcd94d544380b2e501f56d60704d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072509"
 ---
-# <a name="step-3-build-the-filter-graph"></a>Paso 3: compilar el gráfico de filtro
+# <a name="step-3-build-the-filter-graph"></a>Paso 3: Compilar el filtro Graph
 
-En este tema se trata el paso 3 del tutorial [reproducción de audio y vídeo en DirectShow](audio-video-playback-in-directshow.md). El código completo se muestra en el tema [ejemplo de reproducción de DirectShow](directshow-playback-example.md).
+Este tema es el paso 3 del tutorial [Reproducción de audio y vídeo en DirectShow](audio-video-playback-in-directshow.md). El código completo se muestra en el tema DirectShow [ejemplo de reproducción.](directshow-playback-example.md)
 
 El siguiente paso consiste en crear un gráfico de filtro para reproducir el archivo multimedia.
 
@@ -21,8 +21,8 @@ El siguiente paso consiste en crear un gráfico de filtro para reproducir el arc
 
 El `DShowPlayer::OpenFile` método abre un archivo multimedia para la reproducción. Este método hace lo siguiente:
 
-1.  Crea un nuevo gráfico de filtro (vacío).
-2.  Llama a [**IGraphBuilder:: AddSourceFilter**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-addsourcefilter) para agregar un filtro de origen para el archivo especificado.
+1.  Crea un nuevo gráfico de filtros (vacío).
+2.  Llama [**a IGraphBuilder::AddSourceFilter para**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-addsourcefilter) agregar un filtro de origen para el archivo especificado.
 3.  Representa las secuencias en el filtro de origen.
 
 
@@ -60,13 +60,13 @@ done:
 
 
 
-### <a name="creating-the-filter-graph-manager"></a>Crear el administrador de gráficos de filtro
+### <a name="creating-the-filter-graph-manager"></a>Crear el Administrador de Graph filtros
 
 El `DShowPlayer::InitializeGraph` método crea un nuevo gráfico de filtro. Este método hace lo siguiente:
 
-1.  Llama a [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) para crear una nueva instancia del [Administrador de gráficos de filtro](filter-graph-manager.md).
-2.  Consulta el administrador de gráficos de filtro para las interfaces [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) e [**IMediaEventEx**](/windows/desktop/api/Control/nn-control-imediaeventex) .
-3.  Llama a [**IMediaEventEx:: SetNotifyWindow**](/windows/desktop/api/Control/nf-control-imediaeventex-setnotifywindow) para configurar la notificación de eventos. Para obtener más información, vea [notificación de eventos en DirectShow](event-notification-in-directshow.md).
+1.  Llama [**a CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) para crear una nueva instancia de [Filter Graph Manager](filter-graph-manager.md).
+2.  Consulta el Administrador de Graph para las interfaces [**IMediaControl**](/windows/desktop/api/Control/nn-control-imediacontrol) [**e IMediaEventEx.**](/windows/desktop/api/Control/nn-control-imediaeventex)
+3.  Llama [**a IMediaEventEx::SetNotifyWindow para**](/windows/desktop/api/Control/nf-control-imediaeventex-setnotifywindow) configurar la notificación de eventos. Para obtener más información, vea [Notificación de eventos en DirectShow](event-notification-in-directshow.md).
 
 
 ```C++
@@ -110,19 +110,19 @@ done:
 
 
 
-### <a name="rendering-the-streams"></a>Representar las secuencias
+### <a name="rendering-the-streams"></a>Representación de la Secuencias
 
-El siguiente paso consiste en conectar el filtro de origen a uno o varios filtros de representación.
+El siguiente paso consiste en conectar el filtro de origen a uno o varios filtros de representador.
 
 El `DShowPlayer::RenderStreams` método realiza los pasos siguientes.
 
-1.  Consulta el administrador de gráficos de filtro para la interfaz [**IFilterGraph2**](/windows/desktop/api/Strmif/nn-strmif-ifiltergraph2) .
-2.  Agrega un filtro de representador de vídeo al gráfico de filtro.
-3.  Agrega el [filtro de representador de DirectSound](directsound-renderer-filter.md) al gráfico de filtros para admitir la reproducción de audio. Para obtener más información sobre cómo agregar filtros al gráfico de filtros, vea [Agregar un filtro por CLSID](add-a-filter-by-clsid.md).
-4.  Enumera los clavijas de salida en el filtro de origen. Para obtener más información sobre la enumeración de PIN, consulte [enumeración de PIN](enumerating-pins.md).
-5.  Para cada pin, llama al método [**IFilterGraph2:: RenderEx**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph2-renderex) . Este método conecta el PIN de salida a un filtro de representador, agregando filtros intermedios si es necesario (como descodificadores).
-6.  Llamadas `CVideoRenderer::FinalizeGraph` para finalizar la inicialización del representador de vídeo.
-7.  Quita el filtro de [representador de DirectSound](directsound-renderer-filter.md) si ese filtro no está conectado a otro filtro. Esto puede ocurrir si el archivo de origen no contiene una secuencia de audio.
+1.  Consulta el Administrador de Graph filtros para la [**interfaz IFilterGraph2.**](/windows/desktop/api/Strmif/nn-strmif-ifiltergraph2)
+2.  Agrega un filtro de representador de vídeo al gráfico de filtros.
+3.  Agrega el [filtro de representador de Direct Sound](directsound-renderer-filter.md) al gráfico de filtros para admitir la reproducción de audio. Para obtener más información sobre cómo agregar filtros al gráfico de filtros, vea [Agregar un filtro por CLSID.](add-a-filter-by-clsid.md)
+4.  Enumera los pines de salida en el filtro de origen. Para obtener más información sobre cómo enumerar los pins, [vea Enumerating Pins](enumerating-pins.md).
+5.  Para cada pin, llama al [**método IFilterGraph2::RenderEx.**](/windows/desktop/api/Strmif/nf-strmif-ifiltergraph2-renderex) Este método conecta el pin de salida a un filtro de representador y agrega filtros intermedios si es necesario (por ejemplo, descodificadores).
+6.  Llama `CVideoRenderer::FinalizeGraph` a para terminar de inicializar el representador de vídeo.
+7.  Quita el filtro [Representador de Direct Sound](directsound-renderer-filter.md) si ese filtro no está conectado a otro filtro. Esto puede ocurrir si el archivo de origen no contiene una secuencia de audio.
 
 
 ```C++
@@ -208,7 +208,7 @@ done:
 
 
 
-Este es el código de la `RemoveUnconnectedRenderer` función, que se usa en el ejemplo anterior.
+Este es el código de la `RemoveUnconnectedRenderer` función , que se usa en el ejemplo anterior.
 
 
 ```C++
@@ -239,9 +239,9 @@ HRESULT RemoveUnconnectedRenderer(IGraphBuilder *pGraph, IBaseFilter *pRenderer,
 
 
 
-### <a name="releasing-the-filter-graph"></a>Liberar el gráfico de filtros
+### <a name="releasing-the-filter-graph"></a>Liberar el filtro Graph
 
-Cuando se cierra la aplicación, debe liberar el gráfico de filtro, tal y como se muestra en el código siguiente.
+Cuando se cierra la aplicación, debe liberar el gráfico de filtro, como se muestra en el código siguiente.
 
 
 ```C++
@@ -266,7 +266,7 @@ void DShowPlayer::TearDownGraph()
 
 
 
-Siguiente: [paso 4: agregar el representador de vídeo](step-4--add-the-video-renderer.md).
+Siguiente: [Paso 4: Agregar el representador de vídeo](step-4--add-the-video-renderer.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -275,13 +275,13 @@ Siguiente: [paso 4: agregar el representador de vídeo](step-4--add-the-video-re
 [Reproducción de audio y vídeo en DirectShow](audio-video-playback-in-directshow.md)
 </dt> <dt>
 
-[Ejemplo de reproducción de DirectShow](directshow-playback-example.md)
+[DirectShow Ejemplo de reproducción](directshow-playback-example.md)
 </dt> <dt>
 
-[Compilar el gráfico de filtro](building-the-filter-graph.md)
+[Compilar el filtro Graph](building-the-filter-graph.md)
 </dt> <dt>
 
-[Técnicas generales de Graph-Building](general-graph-building-techniques.md)
+[Técnicas Graph-Building general](general-graph-building-techniques.md)
 </dt> </dl>
 
  

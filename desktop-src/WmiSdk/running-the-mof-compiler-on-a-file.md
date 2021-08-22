@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Ejecución del compilador MOF en un archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77f62834944e995c3e7f3763c460d72f9f70aa66
-ms.sourcegitcommit: 7eadd92b1da5eb4eab7d516a5a768e7f7fc02d4c
+ms.openlocfilehash: b1a70c32e82b826f2ab02403e7e269e711704d826ad4b4f9465638df0b0745f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "112230242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050333"
 ---
 # <a name="running-the-mof-compiler-on-a-file"></a>Ejecución del compilador MOF en un archivo
 
@@ -26,7 +26,7 @@ Hasta que ejecute el compilador MOF, [**Mofcomp.exe**](mofcomp.md), un proveedor
 
     El compilador de MOF admite una variedad de modificadores para controlar situaciones de procesamiento especiales. Todos los modificadores son opcionales y se permite cualquier combinación de modificadores. Sin embargo, no tiene sentido usar algunos de los modificadores en combinación con otros. Por ejemplo, para combinar los modificadores **-class:updateonly** y **-class:createonly,** el compilador no realiza ninguna acción.
 
-    De forma predeterminada, Mofcomp.exe las clases compiladas en el espacio de \\ nombres WMI predeterminado raíz. Tenga en cuenta que el espacio de nombres predeterminado Mofcomp.exe no es el mismo que el espacio de nombres predeterminado para scripting. El espacio de nombres predeterminado para scripting se especifica en el Control WMI de la pestaña Opciones avanzadas. Para obtener más información, vea [Establecer la seguridad del espacio de nombres con el control WMI](setting-namespace-security-with-the-wmi-control.md).
+    De forma predeterminada, Mofcomp.exe las clases compiladas en el espacio de \\ nombres WMI predeterminado raíz. Tenga en cuenta que el espacio de nombres Mofcomp.exe no es el mismo que el espacio de nombres predeterminado para scripting. El espacio de nombres predeterminado para scripting se especifica en el Control WMI de la pestaña Opciones avanzadas. Para obtener más información, vea [Establecer la seguridad del espacio de nombres con el control WMI](setting-namespace-security-with-the-wmi-control.md).
 
     Puede cambiar el espacio de nombres que recibe las clases de dos maneras.
 

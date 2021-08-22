@@ -1,11 +1,11 @@
 ---
-title: Win32_TSLicenseReportFailedPerUserEntry (clase)
-description: Proporciona detalles acerca de la licencia de acceso de cliente por usuario Servicios de Escritorio remoto con errores (RDS \ 160; CAL por usuario).
+title: Win32_TSLicenseReportFailedPerUserEntry clase
+description: Proporciona detalles sobre el error Servicios de Escritorio remoto licencia de acceso de cliente por usuario (RDS \ 160; Cal por usuario).
 ms.assetid: 27d155a4-938e-4bca-8d15-03c44740e506
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSLicenseReportFailedPerUserEntry clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSLicenseReportFailedPerUserEntry de clase, se describe
+- Win32_TSLicenseReportFailedPerUserEntry clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -21,16 +21,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18098ce0510a39f6083edcf688a18c10a3e20278
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c02d56c1a7e2c715f068d808d45ac6ae3295b16bb7382179ec0e32c93beee096
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119420845"
 ---
-# <a name="win32_tslicensereportfailedperuserentry-class"></a>\_Clase Win32 TSLicenseReportFailedPerUserEntry
+# <a name="win32_tslicensereportfailedperuserentry-class"></a>Clase \_ TSLicenseReportFailedPerUserEntry de Win32
 
-Proporciona detalles acerca de la licencia de acceso de cliente por usuario de Servicios de Escritorio remoto con errores (CAL por usuario de RDS).
+Proporciona detalles sobre el error Servicios de Escritorio remoto licencia de acceso de cliente por usuario (CAL de RDS por usuario).
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -69,27 +69,27 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Especifica el tipo de CAL emitida. Será uno de los valores siguientes.
+Especifica el tipo de CAL emitido. Este será uno de los siguientes valores.
 
-"CAL por dispositivo de TS integrada"
+"CAL de TS por dispositivo integrada"
 
-"CAL por dispositivo de TS"
+"TS per Device CAL"
 
-"CAL de conector de Internet de TS"
+"TS Internet Connector CAL"
 
-"CAL por usuario de TS"
+"TS per User CAL"
 
-"CAL por dispositivo de TS o RDS"
+"CAL de TS o RDS por dispositivo"
 
-"CAL por usuario de TS o RDS"
+"CAL de TS o RDS por usuario"
 
-"Licencia de suscripción por dispositivo de VDI Standard Suite"
+"Licencia de suscripción de VDI Standard Suite per Device"
 
-"Licencia de suscripción por dispositivo de VDI Premium Suite"
+"Licencia de suscripción de VDI Premium Suite por dispositivo"
 
-"CAL por dispositivo de RDS"
+"CAL de RDS por dispositivo"
 
-"CAL por usuario de RDS"
+"CAL de RDS por usuario"
 
 </dd> <dt>
 
@@ -102,28 +102,28 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Versión de Servicios de Escritorio remoto para la que se emitió la CAL por usuario de RDS. Será uno de los valores siguientes.
+La versión de Servicios de Escritorio remoto para la que se emitió la CAL por usuario de RDS. Este será uno de los siguientes valores.
 
 <dt>
 
 "Windows Server 2012"
 </dt> <dd>
 
-En esta licencia solo se admiten servidores que ejecuten Windows Server 2012, Windows Server 2008 R2 o Windows Server 2008.
+Solo los servidores que Windows Server 2012, Windows Server 2008 R2 o Windows Server 2008 son compatibles con esta licencia.
 
 </dd> <dt>
 
 "Windows Server 7"
 </dt> <dd>
 
-Con esta licencia solo se admiten servidores que ejecuten Windows Server 2008 R2 o Windows Server 2008.
+Solo los servidores que Windows Server 2008 R2 o Windows Server 2008 son compatibles con esta licencia.
 
 </dd> <dt>
 
 "Windows Server 2008"
 </dt> <dd>
 
-Con esta licencia solo se admiten servidores que ejecuten Windows Server 2008.
+Solo los servidores que Windows Server 2008 se admiten con esta licencia.
 
 </dd> </dl>
 
@@ -132,13 +132,13 @@ Con esta licencia solo se admiten servidores que ejecuten Windows Server 2008.
 **ProductVersionID**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador de la versión del producto para el paquete de claves de licencia de Servicios de Escritorio remoto.
+Identificador de versión del producto para el Servicios de Escritorio remoto de claves de licencia.
 
 <dt>
 
@@ -166,14 +166,14 @@ Windows Server 2008
 1
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> <dt>
 
 0
 </dt> <dd>
 
-No se admite.
+No compatible.
 
 </dd> </dl>
 
@@ -182,13 +182,13 @@ No se admite.
 **TriedIssuanceOn**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **DATETIME**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La fecha en la que se intentó la emisión de la licencia.
+Fecha en la que se intentó emitir la licencia.
 
 </dd> <dt>
 
@@ -201,10 +201,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Nombre del usuario al que se ha intentado emitir la licencia.
+Nombre del usuario al que se intentó emitir la licencia.
 
 </dd> </dl>
 
@@ -217,7 +217,7 @@ Nombre del usuario al que se ha intentado emitir la licencia.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                            |
 | Espacio de nombres<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 

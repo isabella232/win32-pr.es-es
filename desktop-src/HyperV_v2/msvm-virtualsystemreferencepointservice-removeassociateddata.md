@@ -1,5 +1,5 @@
 ---
-description: 'Método RemoveAssociatedData de la clase Msvm_VirtualSystemReferencePointService : quita el registro de datos asociado al punto de referencia.'
+description: 'Método RemoveAssociatedData de la clase Msvm_VirtualSystemReferencePointService: quita el registro de datos asociado al punto de referencia.'
 ms.assetid: b6206bda-c195-4c6f-9b80-508c20b53ce5
 title: Método RemoveAssociatedData de la Msvm_VirtualSystemReferencePointService clase
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: b5291e4e018edc89909ccde36ce0e420698af8e6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3f8cef79e55379df1f91a0e1291144a7f4fdf92378e44cd9ed3588c83b3a3d4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147908"
 ---
 # <a name="removeassociateddata-method-of-the-msvm_virtualsystemreferencepointservice-class"></a>Método RemoveAssociatedData de la clase Msvm \_ VirtualSystemReferencePointService
 
@@ -93,7 +93,7 @@ Si se ejecuta correctamente, devuelve 0 (completado sin error) o 4096 (trabajo i
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-**El sistema no está** disponible (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
 **Memoria sin memoria** (32778)
@@ -103,9 +103,9 @@ Si se ejecuta correctamente, devuelve 0 (completado sin error) o 4096 (trabajo i
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10 solo \[ aplicaciones de escritorio\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
 | Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
@@ -113,7 +113,7 @@ Si se ejecuta correctamente, devuelve 0 (completado sin error) o 4096 (trabajo i
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

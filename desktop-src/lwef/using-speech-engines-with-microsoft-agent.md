@@ -3,36 +3,36 @@ title: Uso de motores de voz con Microsoft Agent
 description: Uso de motores de voz con Microsoft Agent
 ms.assetid: f2687dd6-d38c-4ce7-9587-51e14614e767
 keywords:
-- Agente de Microsoft, uso de motores de voz
+- Microsoft Agent, mediante motores de voz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d008a3cbfe41d94add85147b67b909549cec2a9b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8f2be5bd7dda77ad091641b40cfd935e80d8d28d38dfd2e32dbb6d80ffa1dfb1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119347665"
 ---
 # <a name="using-speech-engines-with-microsoft-agent"></a>Uso de motores de voz con Microsoft Agent
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
-Microsoft proporciona un conjunto de motores de entrada de voz (reconocimiento) y de salida de voz (Tex a voz o TTS) que puede usar con las aplicaciones habilitadas para el agente de Microsoft o las páginas Web. El uso de estos motores está sujeto al contrato de licencia del agente de Microsoft y al apéndice complementario mostrado al instalar los motores. Esta licencia le da derecho a distribuir los motores, pero solo cuando se usan a través de la API del agente de Microsoft y con un carácter visible.
+Microsoft proporciona un conjunto de motores de entrada de voz (reconocimiento) y motores de salida de voz (texas to speech o TTS) que puede usar con las aplicaciones o páginas web habilitadas para Microsoft Agent. El uso de estos motores está sujeto al contrato de licencia de Microsoft Agent y al anexo complementario que se muestra al instalar los motores. Esta licencia le da derecho a distribuir los motores, pero solo cuando se usan a través de la API de Microsoft Agent y mediante un carácter visible.
 
-En las secciones siguientes se describe cómo usar los motores de voz con el agente de Microsoft.
+En las secciones siguientes se describe cómo usar motores de voz con Microsoft Agent.
 
--   [Obtener acceso a un motor de voz en el código](accessing-a-speech-engine-in-your-code.md)
--   [Etiquetas de salida de voz del agente de Microsoft](microsoft-agent-speech-output-tags.md)
--   [Normalización del texto de los motores de conversión de texto a voz](text-to-speech-engines-text-normalization.md)
+-   [Acceso a un motor de voz en el código](accessing-a-speech-engine-in-your-code.md)
+-   [Etiquetas de salida de voz de Microsoft Agent](microsoft-agent-speech-output-tags.md)
+-   [Normalización de texto de motores de texto a voz](text-to-speech-engines-text-normalization.md)
 -   [Otros motores de voz compatibles con Microsoft Agent](other-speech-engines-compatible-with-microsoft-agent.md)
 
-Busque los cambios en las características de reconocimiento de voz y voz del agente de Microsoft para Windows Vista en el siguiente vínculo.
+Busque cambios en las características de reconocimiento de voz y voz de Microsoft Agent Windows Vista en el vínculo siguiente.
 
--   [Cambios del agente de Microsoft en Windows Vista](microsoft-agent-changes-in-windows-vista.md)
+-   [Cambios de Microsoft Agent en Windows Vista](microsoft-agent-changes-in-windows-vista.md)
 
- 
+ 
 
- 
+ 
 
 
 

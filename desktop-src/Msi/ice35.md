@@ -1,50 +1,50 @@
 ---
-description: ICE35 valida que los componentes que contienen archivos comprimidos almacenados en un archivo. cab no estén configurados para ejecutarse desde el origen. Con Windows Installer 2,0 o posterior, esta restricción se ha quitado.
+description: ICE35 valida que los componentes que contienen archivos comprimidos almacenados en un archivo de archivador no se establecen para ejecutarse desde el origen. Con Windows Installer 2.0 o posterior, se ha quitado esta restricción.
 ms.assetid: b4df27e2-9790-4b18-a173-25fa8b0ecd4d
 title: ICE35
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cea6a98079d3c57e0c796332cf0cd5f11045a07b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b4ee42f97a049b165d41fef7391f0031836865dbf7bafec6b1b5e2fb868e75a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119528565"
 ---
 # <a name="ice35"></a>ICE35
 
-ICE35 valida que los componentes que contienen archivos comprimidos almacenados en un [archivo. cab](cabinet-files.md) no estén configurados para ejecutarse desde el origen. Con Windows Installer 2,0 o posterior, esta restricción se ha quitado.
+ICE35 valida que los componentes que contienen archivos comprimidos almacenados en un archivo [de](cabinet-files.md) archivador no se establecen para ejecutarse desde el origen. Con Windows Installer 2.0 o posterior, se ha quitado esta restricción.
 
-ICE35 consulta la columna Cabinet de la [tabla de medios](media-table.md) para determinar qué archivos se comprimen y almacenan en un archivo. cab. Consulta la [tabla de archivos](file-table.md) para determinar qué componentes contienen estos archivos. Finalmente, comprueba la [tabla de componentes](component-table.md) para determinar si los bits de origen de ejecución se establecen en la columna de atributos.
+ICE35 consulta la columna Gabinete de la [tabla Multimedia](media-table.md) para determinar qué archivos se comprimen y almacenan en un archivo de archivador. Consulta la tabla [File para determinar](file-table.md) qué componentes contienen estos archivos. Por último, comprueba la [tabla Component para](component-table.md) determinar si los bits de ejecución desde el origen se establecen en la columna Atributos.
 
 ## <a name="result"></a>Resultado
 
-ICE35 envía un mensaje de error si hay un archivo comprimido almacenado en un archivo. cab que pertenece a un componente con el bit msidbComponentAttributesSourceOnly establecido en la columna Attributes de la [tabla Component](component-table.md). Con Windows Installer 2,0 o posterior, se cambia de un error a un mensaje de advertencia. Un paquete que solo admite Windows Installer 2,0 y versiones posteriores tiene la \_ propiedad de PID PAGECOUNT de la secuencia de información de Resumen establecida en un valor de al menos 200.
+ICE35 envía un mensaje de error si hay un archivo comprimido almacenado en un archivo contenedor que pertenece a un componente con el conjunto de bits msidbComponentAttributesSourceOnly en la columna Atributos de la tabla [Component](component-table.md). Con Windows Installer 2.0 o posterior, se cambia de un error a un mensaje de advertencia. Un paquete que solo admite Windows Installer 2.0 y versiones posteriores tiene la propiedad PID PAGECOUNT del flujo de información de resumen establecida en un valor de al menos \_ 200.
 
-ICE35 envía un mensaje de advertencia si hay un archivo comprimido almacenado en un archivo. cab que pertenece a un componente con el bit msidbComponentAttributesOptional establecido en la columna atributos de la [tabla componente](component-table.md). Este mensaje de advertencia se ha quitado con Windows Installer 2,0 y versiones posteriores.
+ICE35 envía un mensaje de advertencia si hay un archivo comprimido almacenado en un archivo contenedor que pertenece a un componente con el bit msidbComponentAttributesOptional establecido en la columna Atributos de la tabla [Component](component-table.md). Este mensaje de advertencia se ha quitado con Windows Installer 2.0 y versiones posteriores.
 
-Si hay varios archivos en un componente en un archivo. cab, ICE35 informa de los errores de cada archivo que tiene el conjunto de bits de origen ejecutado.
+Si hay varios archivos en un componente en un archivo archivador, ICE35 notifica errores para cada archivo que tiene la ejecución desde el conjunto de bits de origen.
 
 ## <a name="example"></a>Ejemplo
 
-ICE35 notifica los siguientes errores y advertencias para el ejemplo que se muestra con una versión anterior a Windows Installer versión 2,0.
+ICE35 notifica los siguientes errores y advertencias para el ejemplo que se muestra con una versión anterior a Windows Installer versión 2.0.
 
 
 
-| Error ICE35                                                                                                | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| ICE35 Error                                                                                                | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ERROR: el componente Component3 no se puede ejecutar solo desde el origen, porque su archivo de miembro ' Archivo3 ' está comprimido. | Hay un archivo comprimido almacenado en un archivo. cab y este archivo pertenece a un componente con el bit SourceOnly establecido en la columna Attributes de la [tabla de componentes](component-table.md). Para corregir este error, cambie los 2 bits inferiores del valor de los atributos Component2's a "00", lo que significa solo local o quite File4 del archivo. CAB.<br/>                                                                                                                                                                         |
-| ERROR: el componente Component3 no se puede ejecutar solo desde el origen, porque su archivo de miembro ' Archivo3 ' está comprimido. | Hay un archivo comprimido almacenado en un archivo. cab y este archivo pertenece a un componente con el bit SourceOnly establecido en la columna Attributes de la [tabla de componentes](component-table.md). Dado que no todos los archivos de un componente tienen que proceder de los mismos medios, ICE35 informa de los errores de cada archivo del componente que se encuentra en un archivo. cab.<br/> Para corregir este error, cambie los 2 bits inferiores del valor de los atributos Component2's a "00", lo que significa solo local o quite File4 del archivo. CAB.<br/> |
+| ERROR: Componente 3 no se puede ejecutar solo desde el origen, porque su archivo miembro "File3" está comprimido. | Hay un archivo comprimido almacenado en un archivo archivador y este archivo pertenece a un componente con el bit SourceOnly establecido en la columna Atributos de la [tabla Component](component-table.md). Para corregir este error, cambie los 2 bits inferiores del valor Atributos de Component2 a "00", es decir, Solo local, o quite File4 del archivo CAB.<br/>                                                                                                                                                                         |
+| ERROR: Componente 3 no se puede ejecutar solo desde el origen, porque su archivo miembro "File3" está comprimido. | Hay un archivo comprimido almacenado en un archivo archivador y este archivo pertenece a un componente con el bit SourceOnly establecido en la columna Atributos de la [tabla Component](component-table.md). Dado que los archivos de un componente no tienen que originarse todos en el mismo medio, ICE35 notifica errores para cada archivo del componente que está en un archivador.<br/> Para corregir este error, cambie los 2 bits inferiores del valor Atributos de Component2 a "00", es decir, Solo local, o quite File4 del archivo CAB.<br/> |
 
 
 
  
 
-[Tabla de medios](media-table.md) (parcial)
+[Tabla multimedia](media-table.md) (parcial)
 
 
 
-| DiskID | LastSequence | Archiva   |
+| DiskID | LastSequence | Gabinete   |
 |--------|--------------|-----------|
 | 1      | 2            |           |
 | 2      | 4            | One.cab   |
@@ -60,11 +60,11 @@ ICE35 notifica los siguientes errores y advertencias para el ejemplo que se mues
 
 | Archivo  | Componente\_ | Secuencia |
 |-------|-------------|----------|
-| Archivo1 | Component1  | 1        |
-| Archivo2 | Component2  | 2        |
-| File3 | Component2  | 3        |
-| File4 | Component3  | 4        |
-| File5 | Component3  | 5        |
+| Archivo1 | Componente1  | 1        |
+| Archivo2 | Componente 2  | 2        |
+| File3 | Componente 2  | 3        |
+| File4 | Componente 3  | 4        |
+| File5 | Componente 3  | 5        |
 
 
 
@@ -76,27 +76,27 @@ ICE35 notifica los siguientes errores y advertencias para el ejemplo que se mues
 
 | Componente  | Atributos |
 |------------|------------|
-| Component1 | 0          |
-| Component2 | 2          |
-| Component3 | 1          |
+| Componente1 | 0          |
+| Componente 2 | 2          |
+| Componente 3 | 1          |
 
 
 
  
 
-[Tabla de acceso directo](shortcut-table.md) (parcial)
+[Tabla de métodos abreviados](shortcut-table.md) (parcial)
 
 
 
 | Acceso directo  | Icono\_ |
 |-----------|--------|
-| Shortcut1 | Icon2  |
+| Acceso directo1 | Icono2  |
 
 
 
  
 
-Tenga en cuenta que los archivos también se pueden marcar como comprimidos mediante la propiedad [**recuento de palabras**](word-count-summary.md) de la [secuencia de información de Resumen](summary-information-stream.md).
+Tenga en cuenta que los archivos también se pueden marcar como comprimidos mediante la propiedad [**Resumen**](word-count-summary.md) de recuento de palabras del [flujo de información de resumen](summary-information-stream.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

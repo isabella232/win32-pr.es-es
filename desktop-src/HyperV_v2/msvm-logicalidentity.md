@@ -1,7 +1,7 @@
 ---
 description: Asocia dos elementos administrados que representan distintos aspectos de la misma entidad subyacente.
 ms.assetid: 107A2B15-09F2-490A-8AB2-F9FE5F6FEE60
-title: Msvm_LogicalIdentity (clase)
+title: Msvm_LogicalIdentity clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: c2f8d2ee522fde3769c08bcbb78611b99eed8e16
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 12ee48b85ae11b10a24bab35001baa45c8382105158050d110eb7448a8e883e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104545422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148368"
 ---
-# <a name="msvm_logicalidentity-class"></a>MSVM \_ LogicalIdentity (clase)
+# <a name="msvm_logicalidentity-class"></a>Clase LogicalIdentity de Msvm \_
 
-Asocia dos elementos administrados que representan distintos aspectos de la misma entidad subyacente. Esta clase deriva de [**\_ LogicalIdentity CIM**](/windows/desktop/CIMWin32Prov/cim-logicalidentity).
+Asocia dos elementos administrados que representan distintos aspectos de la misma entidad subyacente. Esta clase se deriva de [**CIM \_ LogicalIdentity**](/windows/desktop/CIMWin32Prov/cim-logicalidentity).
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -41,13 +41,13 @@ class Msvm_LogicalIdentity : CIM_LogicalIdentity
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ LogicalIdentity** tiene estos tipos de miembros:
+La **clase Msvm \_ LogicalIdentity** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ LogicalIdentity** tiene estas propiedades.
+La **clase Msvm \_ LogicalIdentity** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -83,10 +83,10 @@ Referencia a un aspecto del elemento lógico.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                                 |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                                 |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -95,10 +95,10 @@ Referencia a un aspecto del elemento lógico.
 
 <dl> <dt>
 
-[**\_LOGICALIDENTITY CIM**](cim-logicalidentity.md)
+[**CIM \_ LogicalIdentity**](cim-logicalidentity.md)
 </dt> <dt>
 
-[**\_LOGICALIDENTITY CIM**](/windows/desktop/CIMWin32Prov/cim-logicalidentity)
+[**CIM \_ LogicalIdentity**](/windows/desktop/CIMWin32Prov/cim-logicalidentity)
 </dt> </dl>
 
  

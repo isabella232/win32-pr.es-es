@@ -2,33 +2,33 @@
 description: Una comprobación de acceso determina si un descriptor de seguridad concede un conjunto especificado de derechos de acceso al cliente o subproceso identificado por un token de acceso.
 ms.assetid: d0259bb1-fd74-4440-ac2a-d6aa84a48d9b
 ms.tgt_platform: multiple
-title: Realización de comprobaciones de acceso
+title: Realizar comprobaciones de acceso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9af65605b6e96a5ad8b820de876d553f8d19202
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e06f2bccab886b38b53ecc3592371555b8c93a0ed12cdad0a4f039b62d62752
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050513"
 ---
-# <a name="performing-access-checks"></a>Realización de comprobaciones de acceso
+# <a name="performing-access-checks"></a>Realizar comprobaciones de acceso
 
-Una comprobación de acceso determina si un descriptor de seguridad concede un conjunto especificado de derechos de acceso al cliente o subproceso identificado por un token de acceso. Puede llamar a la función de seguridad [**AccessCheck**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-accesscheck) desde aplicaciones cliente WMI o proveedores escritos en C++ o C#. Los scripts y las aplicaciones Visual Basic no pueden realizar comprobaciones de acceso mediante el método que se describe aquí.
+Una comprobación de acceso determina si un descriptor de seguridad concede un conjunto especificado de derechos de acceso al cliente o subproceso identificado por un token de acceso. Puede llamar a la función de seguridad [**AccessCheck desde**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-accesscheck) aplicaciones cliente WMI o proveedores escritos en C++ o C#. Los scripts Visual Basic aplicaciones no pueden realizar comprobaciones de acceso mediante el método descrito aquí.
 
 Las aplicaciones cliente deben realizar una comprobación de acceso para determinar la identidad de la devolución de llamada al devolver los resultados al receptor proporcionado por la llamada asincrónica del cliente.
 
-Cuando los proveedores no pueden suplantar la aplicación cliente o el script que solicita datos, deben realizar comprobaciones de acceso en las siguientes situaciones:
+Cuando los proveedores no pueden suplantar la aplicación cliente o el script que solicita datos, deben realizar comprobaciones de acceso para las situaciones siguientes:
 
--   Al tener acceso a recursos que no están protegidos por listas de control de acceso (ACL).
--   Cuando el cliente se ha conectado en el nivel de suplantación de **RPC \_ C, \_ \_ identifique** .
+-   Al acceder a recursos que no están protegidos por listas de control de acceso (ACL).
+-   Cuando el cliente se ha conectado en el nivel **de suplantación RPC C LEVEL \_ \_ \_ IDENTIFY.**
 
 > [!Note]  
-> Las aplicaciones de C++ y C# pueden controlar si las comprobaciones de acceso se realizan en un proceso independiente. Los scripts y las aplicaciones Visual Basic pueden leer o cambiar una clave del registro para asegurarse de que WMI realiza comprobaciones de acceso. Para obtener más información, vea [establecer la seguridad en una llamada asincrónica](setting-security-on-an-asynchronous-call.md).
+> Las aplicaciones de C++ y C# pueden controlar si las comprobaciones de acceso se realizan mediante un proceso independiente. Los scripts Visual Basic aplicaciones pueden leer o cambiar una clave del Registro para asegurarse de que WMI realiza comprobaciones de acceso. Para obtener más información, vea [Establecer la seguridad en una llamada asincrónica.](setting-security-on-an-asynchronous-call.md)
 
  
 
-El ejemplo de código de este tema requiere las siguientes referencias e \# incluir instrucciones para compilar correctamente.
+El ejemplo de código de este tema requiere las siguientes referencias e \# instrucciones include para compilarse correctamente.
 
 
 ```C++
@@ -44,7 +44,7 @@ El ejemplo de código de este tema requiere las siguientes referencias e \# incl
 
 
 
-En el ejemplo de código siguiente se muestra cómo comprobar que el token de seguridad de un subproceso de la aplicación cliente contiene permisos adecuados para un descriptor de seguridad especificado. La función toma la cadena "domain \\ User" y devuelve el SID. Si se produce un error en la llamada, la función devuelve **null**; de lo contrario, el llamador debe liberar el puntero devuelto.
+En el ejemplo de código siguiente se muestra cómo comprobar que el token de seguridad de un subproceso de aplicación cliente contiene los permisos adecuados para un descriptor de seguridad especificado. La función toma la cadena "usuario \\ de dominio" y devuelve el SID. Si se produce un error en la llamada, la función **devuelve NULL;** de lo contrario, el autor de la llamada debe liberar el puntero devuelto.
 
 
 ```C++
@@ -207,13 +207,13 @@ BOOL IsAllowed(LPWSTR pwsExpectedDomain,
 [Elección del registro correcto](choosing-correct-registration.md)
 </dt> <dt>
 
-[Mantenimiento de la seguridad de WMI](maintaining-wmi-security.md)
+[Mantener la seguridad de WMI](maintaining-wmi-security.md)
 </dt> <dt>
 
 [Protección del proveedor](securing-your-provider.md)
 </dt> <dt>
 
-[Acceso a los espacios de nombres WMI](access-to-wmi-namespaces.md)
+[Acceso a espacios de nombres WMI](access-to-wmi-namespaces.md)
 </dt> </dl>
 
  

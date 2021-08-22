@@ -1,33 +1,33 @@
 ---
-description: Es difícil visualizar el giro en un espacio de colores de cuatro dimensiones.
+description: La rotación en un espacio de colores de cuatro dimensiones es difícil de visualizar.
 ms.assetid: 099f76a3-2da3-4f2b-8f8d-557d144451dc
-title: Girar colores
+title: Rotación de colores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ea322179bd4a46021d181abedd1797d6bdda7cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fc09a84c4c51181c672c549369783ac476fa1d3c79f1598c1c29ca14604429d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119036433"
 ---
-# <a name="rotating-colors"></a>Girar colores
+# <a name="rotating-colors"></a>Rotación de colores
 
-Es difícil visualizar el giro en un espacio de colores de cuatro dimensiones. Podemos facilitar la visualización de la rotación al aceptar que se ha corregido uno de los componentes de color. Supongamos que aceptamos mantener el componente alfa fijo en 1 (totalmente opaco). Después, podemos visualizar un espacio de colores tridimensional con los ejes rojo, verde y azul, como se muestra en la siguiente ilustración.
+La rotación en un espacio de colores de cuatro dimensiones es difícil de visualizar. Podemos facilitar la visualización de la rotación aceptando mantener uno de los componentes de color fijos. Supongamos que aceptamos mantener el componente alfa fijo en 1 (totalmente opaco). A continuación, podemos visualizar un espacio de colores tridimensional con ejes rojo, verde y azul, como se muestra en la ilustración siguiente.
 
-![Ilustración de una vista en perspectiva de un espacio de colores tridimensional con ejes etiquetados como rojo, verde y azul](images/recoloring03.png)
+![ilustración de una vista de perspectiva de un espacio de colores tridimensional con ejes etiquetados como rojo, verde y azul](images/recoloring03.png)
 
-Un color puede considerarse como un punto en un espacio 3D. Por ejemplo, el punto (1,0) en el espacio representa el color rojo y el punto (0, 1, 0) en el espacio representa el color verde.
+Un color se puede pensar como un punto en el espacio 3D. Por ejemplo, el punto (1, 0, 0) del espacio representa el color rojo y el punto (0, 1, 0) del espacio representa el color verde.
 
-En la ilustración siguiente se muestra lo que significa girar el color (1,0) hasta un ángulo de 60 grados en el plano de Red-Green. La rotación en un plano paralelo al plano de Red-Green se puede considerar como giro sobre el eje azul.
+En la ilustración siguiente se muestra lo que significa girar el color (1, 0, 0) a través de un ángulo de 60 grados en el Red-Green plano. La rotación en un plano paralelo al plano Red-Green se puede pensar en una rotación sobre el eje azul.
 
-![Ilustración que muestra el punto (1,0, 0) girado 60 grados a (0,5, 0,866, 0)](images/recoloring04.png)
+![ilustración que muestra el punto (1, 0, 0) girado 60 grados a (0,5, 0,866, 0)](images/recoloring04.png)
 
-En la ilustración siguiente se muestra cómo inicializar una matriz de colores para realizar giros sobre cada uno de los tres ejes de coordenadas (rojo, verde, azul).
+En la ilustración siguiente se muestra cómo inicializar una matriz de colores para realizar rotaciones sobre cada uno de los tres ejes de coordenadas (rojo, verde, azul).
 
-![Ilustración en la que se muestran las matrices de colores que realizan giros sobre cada uno de los tres ejes de coordenadas](images/recoloring05.png)
+![ilustración que muestra matrices de colores que realizan rotaciones sobre cada uno de los tres ejes de coordenadas](images/recoloring05.png)
 
-En el siguiente ejemplo se toma una imagen de un color (1, 0, 0,6) y se aplica una rotación de 60 grados sobre el eje azul. El ángulo de rotación se barre en un plano paralelo al plano de Red-Green.
+En el ejemplo siguiente se toma una imagen que es todo un color (1, 0, 0,6) y se aplica una rotación de 60 grados sobre el eje azul. El ángulo de la rotación se arrastra en un plano que es paralelo al Red-Green rotación.
 
 
 ```
@@ -65,13 +65,13 @@ graphics.DrawImage(
 
 
 
-En la ilustración siguiente se muestra la imagen original de la izquierda y la imagen girada en color de la derecha.
+En la ilustración siguiente se muestra la imagen original a la izquierda y la imagen girada por colores a la derecha.
 
-![Ilustración en la que se muestran los rectángulos rellenados con la imagen original (rojo violeta) y la imagen girada en color (verde mar)](images/colortrans5.png)
+![ilustración en la que se muestran rectángulos rellenos con la imagen original (rojo pico) e imagen girada por colores (verde del mar)](images/colortrans5.png)
 
-La rotación de color realizada en el ejemplo de código anterior se puede visualizar como se indica a continuación.
+La rotación de colores realizada en el ejemplo de código anterior se puede visualizar como se muestra a continuación.
 
-![Ilustración que muestra un espacio de colores 3D y el punto (1,0, 0,6) girado 60 grados a (0,5, 0,866, 0,6)](images/recoloring06.png)
+![ilustración que muestra un espacio de color 3d y el punto (1, 0, 0,6) giraba 60 grados a (0,5, 0,866, 0,6)](images/recoloring06.png)
 
  
 

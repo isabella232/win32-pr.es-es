@@ -1,32 +1,32 @@
 ---
-description: Un proveedor WMI crea un grupo de clases, instancias y eventos admitidos para pasar datos a WMI. A su vez, un script o una aplicación de administración puede llamar a métodos de proveedor para manipular los datos proporcionados por el proveedor.
+description: Un proveedor WMI crea un grupo de clases, instancias y eventos admitidos para pasar datos a WMI. A su vez, una aplicación de administración o un script pueden llamar a métodos de proveedor para manipular los datos proporcionados por el proveedor.
 ms.assetid: 919dfa7c-4a36-4e59-8377-72cf9735eaec
 ms.tgt_platform: multiple
-title: Proporcionar datos a WMI escribiendo un proveedor
+title: Proporcionar datos a WMI mediante la escritura de un proveedor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c8648eb2982dda3970cb87308ee92b6816297f6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9410fd26a830df1846dd62434dc85ffc9cb033c524c7b4e76ff6db93d64dd95e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050152"
 ---
-# <a name="supplying-data-to-wmi-by-writing-a-provider"></a>Proporcionar datos a WMI escribiendo un proveedor
+# <a name="supplying-data-to-wmi-by-writing-a-provider"></a>Proporcionar datos a WMI mediante la escritura de un proveedor
 
-Un proveedor WMI crea un grupo de clases, instancias y eventos admitidos para pasar datos a WMI. A su vez, un script o una aplicación de administración puede llamar a [*métodos de proveedor*](gloss-p.md) para manipular los datos proporcionados por el proveedor.
+Un proveedor WMI crea un grupo de clases, instancias y eventos admitidos para pasar datos a WMI. A su vez, una aplicación de administración o un script pueden llamar a [*métodos de proveedor*](gloss-p.md) para manipular los datos proporcionados por el proveedor.
 
-En el diagrama siguiente se ilustra la relación entre un proveedor que está acoplado a WMI y la aplicación.
+En el diagrama siguiente se muestra la relación entre un proveedor que está acoplado a WMI y la aplicación.
 
-![relación entre WMI, el proveedor acoplado y la aplicación](images/coupledprov.png)
+![relación entre wmi, proveedor acoplado y aplicación](images/coupledprov.png)
 
-En el procedimiento siguiente se describe cómo crear un proveedor simple que admita un conjunto de instancias de. El proveedor que se describe aquí se registra para ejecutarse dentro del proceso WMI. En algunos casos, use un [*proveedor desacoplado*](gloss-d.md) que se ejecute en un proceso diferente. Para obtener más información sobre los modelos de hospedaje de proveedores, vea [hospedaje y seguridad de proveedores](provider-hosting-and-security.md). Los pasos 1 y 2 del siguiente procedimiento se diferencian en los proveedores desacoplados, pero en otros aspectos usan las mismas interfaces que los proveedores en proceso. Para obtener más información, vea [incorporación de un proveedor en una aplicación](incorporating-a-provider-in-an-application.md).
+En el procedimiento siguiente se describe cómo crear un proveedor simple que admita un conjunto de instancias. El proveedor descrito aquí está registrado para ejecutarse dentro del proceso WMI. En algunos casos, use [*un proveedor desacoplado*](gloss-d.md) que se ejecute en un proceso diferente. Para obtener más información sobre los modelos de hospedaje de proveedores, vea [Provider Hosting and Security](provider-hosting-and-security.md). Los pasos 1 y 2 del procedimiento siguiente difieren para los proveedores desacoplados, pero en otros aspectos usan las mismas interfaces que los proveedores en proceso. Para obtener más información, vea [Incorporación de un proveedor en una aplicación](incorporating-a-provider-in-an-application.md).
 
 **Para crear un proveedor de instancias**
 
-1.  Cree una instancia de una clase [**\_ \_ Win32Provider**](--win32provider.md) con código de [Managed Object Format (MOF)](managed-object-format--mof-.md) y proporcione el nombre y el **CLSID** del proveedor. Para obtener más información, vea [diseñar clases Managed Object Format (MOF)](designing-managed-object-format--mof--classes.md).
+1.  Cree una instancia de una [**\_ \_ clase Win32Provider**](--win32provider.md) con [Managed Object Format (MOF)](managed-object-format--mof-.md) y proporcione el nombre y **el CLSID** del proveedor. Para obtener más información, vea [Designing Managed Object Format (MOF) Classes .](designing-managed-object-format--mof--classes.md)
 
-    En el ejemplo de código siguiente se muestra cómo crear una instancia de una clase [**\_ \_ Win32Provider**](--win32provider.md) .
+    En el ejemplo de código siguiente se muestra cómo crear una instancia de una [**\_ \_ clase Win32Provider.**](--win32provider.md)
 
     ``` syntax
     Instance of __Win32Provider as $P   // $P is an alias
@@ -38,15 +38,15 @@ En el procedimiento siguiente se describe cómo crear un proveedor simple que ad
     ```
 
     > [!Note]  
-    > Para asegurarse de que todas las definiciones de clases de WMI para objetos administrados se restauran en el [*repositorio de WMI*](gloss-w.md) si WMI tiene un error y se reinicia, use la instrucción de preprocesador de la instrucción [**\# pragma AUTORECOVER**](pragma-autorecover.md) en el archivo MOF.
+    > Para asegurarse de que todas las definiciones de clase WMI para objetos administrados se restauran en el repositorio [*WMI*](gloss-w.md) si WMI tiene un error y se reinicia, use la instrucción de preprocesador [**\# pragma autorecover**](pragma-autorecover.md) statement en el archivo MOF.
 
      
 
-    Para obtener más información, vea [crear una instancia](creating-an-instance.md) y [registrar un proveedor de instancias](registering-an-instance-provider.md).
+    Para obtener más información, vea [Crear una instancia y](creating-an-instance.md) Registrar un proveedor de [instancias.](registering-an-instance-provider.md)
 
-2.  Cree una instancia de la clase [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md) que describe las características del proveedor de instancias.
+2.  Cree una instancia de la [**\_ \_ clase InstanceProviderRegistration**](--instanceproviderregistration.md) que describa las características del proveedor de instancias.
 
-    En el ejemplo de código siguiente se muestra cómo crear una instancia de la clase [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md) .
+    En el ejemplo de código siguiente se muestra cómo crear una instancia de la [**\_ \_ clase InstanceProviderRegistration.**](--instanceproviderregistration.md)
 
     ``` syntax
     instance of __InstanceProviderRegistration
@@ -59,13 +59,13 @@ En el procedimiento siguiente se describe cómo crear un proveedor simple que ad
     };
     ```
 
-    Para obtener más información sobre las propiedades de esta sección de código MOF, vea [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md) y [**\_ \_ ObjectProviderRegistration**](--objectproviderregistration.md).
+    Para obtener más información sobre las propiedades de esta sección de código MOF, vea [**\_ \_ InstanceProviderRegistration**](--instanceproviderregistration.md) y [**\_ \_ ObjectProviderRegistration.**](--objectproviderregistration.md)
 
-    Para obtener más información, vea [registrar un proveedor de instancias](registering-an-instance-provider.md).
+    Para obtener más información, vea [Registrar un proveedor de instancias.](registering-an-instance-provider.md)
 
-3.  Use el código MOF para crear la clase dinámica para la que el proveedor proporciona las instancias.
+3.  Use código MOF para crear la clase dinámica para la que el proveedor proporciona instancias.
 
-    Una clase dinámica es una clase cuyas instancias reciben actualizaciones de un proveedor. Estas actualizaciones pueden ser normales o vinculadas a cambios esporádicos en los objetos que representan las instancias. Puede ver los cambios en las instancias de clase dinámica a través de su propia aplicación de administración o del [Examinador de objetos WMI](further-information.md).
+    Una clase dinámica es una clase cuyas instancias reciben actualizaciones de un proveedor. Estas actualizaciones pueden ser normales o estar vinculadas a cambios esporádicos en los objetos que representan las instancias. Puede ver los cambios en las instancias de clase dinámica a través de su propia aplicación de administración o el [Explorador de objetos WMI](further-information.md).
 
     En el ejemplo de código siguiente se describe una clase dinámica compatible con el proveedor "InstProvSamp".
 
@@ -85,39 +85,39 @@ En el procedimiento siguiente se describe cómo crear un proveedor simple que ad
     };
     ```
 
-4.  Registre las clases con WMI a través del compilador MOF.
+4.  Registre las clases con WMI mediante el compilador MOF.
 
-    En el símbolo del sistema en el directorio del proveedor, escriba lo siguiente para registrar el código MOF de ejemplo en WMI.
+    En el símbolo del sistema del directorio del proveedor, escriba lo siguiente para registrar el código MOF de ejemplo con WMI.
 
-    **MOFCOMP** *instprov. mof*
+    **mofcomp** *instprov.mof*
 
-    Para obtener más información, vea [compilar archivos MOF](compiling-mof-files.md).
+    Para obtener más información, [vea Compilar archivos MOF.](compiling-mof-files.md)
 
-5.  Defina un objeto COM que contenga el proveedor. El código de ejemplo de este paso se encuentra en un ejemplo completo al final de este tema.
+5.  Defina un objeto COM para que contenga el proveedor. El código de ejemplo de este paso se encuentra en un ejemplo completo al final de este tema.
 
-    1.  Como con cualquier objeto COM, debe implementar un constructor y un Deconstructor, así como los métodos [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)), [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref)y [**Release**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) .
+    1.  Al igual que con cualquier objeto COM, debe implementar un constructor y un deconstructor, así como los métodos [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)), [**AddRef**](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref) [**y Release.**](/windows/win32/api/unknwn/nf-unknwn-iunknown-release)
 
-    2.  Implemente el método [**IWbemProviderInit:: Initialize**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize) en el objeto com.
+    2.  Implemente [**el método IWbemProviderInit::Initialize**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize) en el objeto COM.
 
-        El propósito principal de [**Initialize**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize) en este ejemplo es establecer el miembro **m \_ pNamespace** en el espacio de nombres actual. Para obtener más información sobre los espacios de nombres, vea [Crear jerarquías en WMI](creating-hierarchies-within-wmi.md).
+        El propósito principal de [**Initialize en**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize) este ejemplo es establecer el miembro **m \_ pNamespace** en el espacio de nombres actual. Para obtener más información sobre los espacios de nombres, vea [Crear jerarquías dentro de WMI.](creating-hierarchies-within-wmi.md)
 
-        Un receptor se pasa a través del parámetro *pInitSink* del método [**IWbemProviderInit:: Initialize**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize) para indicar que el proveedor se ha inicializado correctamente. Para obtener más información sobre los receptores, vea [**IWbemObjectSink**](iwbemobjectsink.md) y [llamar a un método](calling-a-method.md).
+        Un receptor se pasa a través del parámetro *pInitSink* en el método [**IWbemProviderInit::Initialize**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize) para especificar que el proveedor se ha inicializado correctamente. Para obtener más información sobre los receptores, [**vea IWbemObjectSink**](iwbemobjectsink.md) y [Llamar a un método](calling-a-method.md).
 
-    3.  Implemente el método [**IWbemServices:: CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) en el objeto com (aunque puede implementar una variedad de interfaces [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) , en el ejemplo que se encuentra al final de este tema solo se implementa **CreateInstanceEnumAsync**). Concretamente, **CreateInstanceEnumAsync** devuelve instancias de los objetos especificados a WMI.
+    3.  Implemente el método [**IWbemServices::CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) dentro del objeto COM (aunque puede implementar una variedad de interfaces [**IWbemServices,**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices) en el ejemplo al final de este tema solo se implementa **CreateInstanceEnumAsync**). En concreto, **CreateInstanceEnumAsync** devuelve instancias de objetos especificados a WMI.
 
-    4.  Implemente el método [**GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) en el objeto com.
+    4.  Implemente [**el método GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) dentro del objeto COM.
 
-        En el ejemplo que se encuentra al final de este tema, [**GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) comprueba los parámetros del objeto administrado, recupera el objeto especificado, realiza la comprobación de errores y devuelve los códigos adecuados al receptor.
+        En el ejemplo al final de este tema, [**GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) comprueba los parámetros del objeto administrado, recupera el objeto especificado, realiza la comprobación de errores y devuelve los códigos adecuados al receptor.
 
-6.  Registre el proveedor como un objeto COM, utilizando RegSvr32.
+6.  Registre el proveedor como un objeto COM mediante RegSvr32.
 
-    En el símbolo del sistema en el directorio del proveedor, escriba lo siguiente:
+    En el símbolo del sistema del directorio del proveedor, escriba lo siguiente:
 
     **regsvr32** *InstProv.dll*
 
-El proveedor ya está completo. En este momento, debe poder tener acceso a las instancias de la clase **InstProvSamp** desde WMI.
+El proveedor ya está completo. En este momento, debería poder tener acceso a instancias de la clase **InstProvSamp** desde WMI.
 
-En el ejemplo de código siguiente se crea un objeto COM que contiene el proveedor, tal como se describe en el paso 5 anterior. El ejemplo completo contiene código del archivo de encabezado titulado sample. h y archivos de código fuente con el título Instprov. cpp, utils. cpp, Classfac. cpp y Maindll. cpp.
+En el ejemplo de código siguiente se crea un objeto COM que contiene el proveedor, como se describe en el paso 5 anterior. El ejemplo completo contiene código del archivo de encabezado titulado Sample.h y archivos de código fuente titulados Instprov.cpp, Utils.cpp, Classfac.cpp y Maindll.cpp.
 
 
 ```C++
@@ -396,7 +396,7 @@ extern long glNumInst;
 
 
 
-El archivo de origen Instpro. cpp contiene código que implementa las funciones para el proveedor declarado en el archivo de encabezado sample. h.
+El archivo de código fuente Instpro.cpp contiene código que implementa las funciones para el proveedor declarado en el archivo de encabezado Sample.h.
 
 
 ```C++
@@ -731,7 +731,7 @@ SCODE CInstPro::GetByPath(BSTR ObjectPath,
 
 
 
-El archivo de código fuente utils. cpp contiene código que implementa las funciones de utilidad para el proveedor declarado en el archivo de encabezado sample. h.
+El archivo de código fuente Utils.cpp contiene código que implementa las funciones de utilidad para el proveedor declarado en el archivo de encabezado Sample.h.
 
 
 ```C++
@@ -891,7 +891,7 @@ DWORD GetCurrentImpersonationLevel ()
 
 
 
-El archivo de origen Classfac. cpp contiene código que crea objetos cuando se solicitan conexiones.
+El archivo de código fuente Classfac.cpp contiene código que crea objetos cuando se solicitan conexiones.
 
 
 ```C++
@@ -1046,7 +1046,7 @@ STDMETHODIMP CProvFactory::LockServer(BOOL fLock)
 
 
 
-El archivo de origen Maindll. cpp contiene código que controla cuándo se puede descargar el archivo DLL mediante el seguimiento del número de objetos y bloqueos, así como de las rutinas que admiten el registro automático.
+El archivo de origen Maindll.cpp contiene código que controla cuándo se puede descargar el archivo DLL mediante el seguimiento del número de objetos y bloqueos, así como rutinas que admiten el registro automático.
 
 
 ```C++
@@ -1289,7 +1289,7 @@ STDAPI DllUnregisterServer(void)
 
 <dl> <dt>
 
-[Configuración de descriptores de seguridad de espacio](setting-namespace-security-descriptors.md)
+[Establecer descriptores de seguridad de namepace](setting-namespace-security-descriptors.md)
 </dt> <dt>
 
 [Protección del proveedor](securing-your-provider.md)

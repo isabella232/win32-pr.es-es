@@ -1,10 +1,10 @@
 ---
-title: DS-Replication-Get-Changes-in-Filtered-Set Extended Right
-description: DS-Replication-Get-Changes-in-Filtered-Set Extended Right
+title: DS-Replication-Get-Changes-In-Filtered-Set extended right
+description: DS-Replication-Get-Changes-In-Filtered-Set extended right
 ms.assetid: 600552c3-6a3a-40ea-8702-3d6a763cfde3
 ms.tgt_platform: multiple
 keywords:
-- 'DS-Replication-Get-Changes-in-Filtered: establece el esquema de AD extendido correcto'
+- DS-Replication-Get-Changes-In-Filtered-Set extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d64e1e2d53e0a8f58e58235d8b92ecddfad0b68
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e3f059bb5203602b59dafc7fad25ac055d14fa037b6c14c623120b504a7aad9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104494080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532075"
 ---
-# <a name="ds-replication-get-changes-in-filtered-set-extended-right"></a>DS-Replication-Get-Changes-in-Filtered-Set Extended Right
+# <a name="ds-replication-get-changes-in-filtered-set-extended-right"></a>DS-Replication-Get-Changes-In-Filtered-Set extended right
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|-----------------------------------------------|
-| CN           | DS-Replication-Get-Changed-Set-Filtered    |
+| CN           | DS-Replication-Get-Changes-In-Filtered-Set    |
 | Display-Name | Replicación de cambios de directorio en un conjunto filtrado |
 | Rights-GUID  | 89e95b76-444d-4c62-991a-0facbeda640c          |
 
@@ -42,10 +42,10 @@ ms.locfileid: "104494080"
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 77                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 77                                                                                                                               |
 
 
 
@@ -55,8 +55,8 @@ ms.locfileid: "104494080"
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 77                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 77                                                                                                                               |
 
 
 
@@ -66,8 +66,8 @@ ms.locfileid: "104494080"
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> |
-| Localización: ID. de presentación | 77                                                                                                                               |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> [**Configuración**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> |
+| Localization-Display-ID | 77                                                                                                                               |
 
 
 

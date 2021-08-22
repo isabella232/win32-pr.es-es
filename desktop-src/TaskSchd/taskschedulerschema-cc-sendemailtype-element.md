@@ -1,9 +1,9 @@
 ---
-title: Elemento CC (sendEmailType)
-description: Contiene las direcciones de correo electrónico utilizadas en la línea CC de un mensaje de correo electrónico.
+title: Cc (sendEmailType) (Elemento)
+description: Contiene las direcciones de correo electrónico usadas en la línea CC de un mensaje de correo electrónico.
 ms.assetid: cb8bc5b3-c352-43e3-bf28-d2090a519c7f
 keywords:
-- Elemento CC Programador de tareas
+- Cc, elemento Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0bc49f2d7eebc2fbb1b5818fee2efa0e54f579a8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b639116a514a48eeab35561d936b6e5b8a4b479a9f8f0f09b6d1b596bd5e4bba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104491686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119334615"
 ---
-# <a name="cc-sendemailtype-element"></a>Elemento CC (sendEmailType)
+# <a name="cc-sendemailtype-element"></a>Cc (sendEmailType) (Elemento)
 
-Contiene las direcciones de correo electrónico utilizadas en la línea CC de un mensaje de correo electrónico.
+Contiene las direcciones de correo electrónico usadas en la línea CC de un mensaje de correo electrónico.
 
 ``` syntax
 <xs:element name="Cc"
@@ -30,7 +30,7 @@ Contiene las direcciones de correo electrónico utilizadas en la línea CC de un
  />
 ```
 
-El elemento **CC** se define mediante el tipo complejo [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) .
+El tipo complejo [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) define el elemento **Cc.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -42,20 +42,20 @@ El elemento **CC** se define mediante el tipo complejo [**sendEmailType**](tasks
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de C++, vea [**propiedad CC de IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_cc).
+Para el desarrollo de C++, vea [**Cc Property of IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_cc).
 
-Para el desarrollo de scripts, vea [**EmailAction.CC**](emailaction-cc.md).
+Para el desarrollo de scripts, [**consulte EmailAction.Cc**](emailaction-cc.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

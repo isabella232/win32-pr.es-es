@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. backgroundImage
+title: PLAYLIST.backgroundImage
 description: El atributo backgroundImage especifica o recupera la imagen de fondo.
 ms.assetid: d4efa774-d42e-4415-a487-1e858d984075
 keywords:
-- Lista de reproducción. backgroundImage Windows Media Player
+- PLAYLIST.backgroundImage Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7eca04f47f6e157d5ede529c47fb6ae65b4333cf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b56ddcb42f118a5a672b6678079825b6cb3d6aba5fbdc54953fb566e4222f583
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708979"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054253"
 ---
-# <a name="playlistbackgroundimage"></a>Lista de reproducción. backgroundImage
+# <a name="playlistbackgroundimage"></a>PLAYLIST.backgroundImage
 
-El atributo **BackgroundImage** especifica o recupera la imagen de fondo.
+El **atributo backgroundImage** especifica o recupera la imagen de fondo.
 
 ``` syntax
         elementID.backgroundImage
@@ -29,21 +29,21 @@ El atributo **BackgroundImage** especifica o recupera la imagen de fondo.
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que contiene el nombre de un archivo de imagen. No tiene valor predeterminado.
+Este atributo es una cadena de **lectura** y escritura que contiene el nombre de un archivo de imagen. No tiene valor predeterminado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el alto y el ancho de la imagen son más pequeños que el alto y el ancho del elemento de **lista de reproducción** , la imagen se coloca en mosaico. Los formatos admitidos son BMP, JPG, GIF y PNG.
+Si el alto y el ancho de la imagen son menores que el alto y ancho del elemento **PLAYLIST,** la imagen se muestra en mosaico. Los formatos admitidos son BMP, JPG, GIF y PNG.
 
-Si se especifica un valor de "degradado" para la imagen de fondo, el fondo de la lista de reproducción se mostrará como degradado de color. Esto significa que el color de fondo pasa gradualmente entre la [lista de reproducción. BackgroundColor](playlist-backgroundcolor.md) (en la parte superior de los fondos) y los valores de [lista de reproducción. statusColor](playlist-statuscolor.md) .
+La especificación de un valor de "degradado" para la imagen de fondo hace que el fondo de la lista de reproducción se muestre como un degradado de color. Esto significa que el color de fondo pasa gradualmente entre los valores [PLAYLIST.backgroundColor](playlist-backgroundcolor.md) (en la parte superior del fondo) y [PLAYLIST.statusColor.](playlist-statuscolor.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior, Windows Media Player 10 para la característica de degradado<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior, Reproductor de Windows Media 10 para la característica de degradado<br/> |
 
 
 
@@ -51,7 +51,7 @@ Si se especifica un valor de "degradado" para la imagen de fondo, el fondo de la
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: errorf función)
+title: función errorf
 description: Envía un mensaje de error a la cola de información.
 ms.assetid: bf4dc6dc-b36e-4b71-ad61-b7a5ba332879
 keywords:
-- errorf de función HLSL
+- función de errorf HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 76c8fbcd9b6cb15dbbb735296a3aada8f5e568cb
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 0651a27419a369721806e9aa4717a20088f8f5fbbaa0063628d2feb69648c7cf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104076610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119562685"
 ---
-# <a name="errorf-function"></a>errorf función)
+# <a name="errorf-function"></a>función errorf
 
 Envía un mensaje de error a la cola de información.
 
@@ -28,8 +28,8 @@ Envía un mensaje de error a la cola de información.
 
 ``` syntax
 void errorf(
-   string format,
-    argument ...
+   string format,
+    argument ...
 );
 ```
 
@@ -44,7 +44,7 @@ Cadena de formato.
 
 </dd> <dt>
 
-*argumento...* 
+*Argumento...* 
 </dt> <dd>
 
 Argumentos opcionales.
@@ -55,11 +55,11 @@ Argumentos opcionales.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta operación no hace nada en los dispositivos que no lo admiten.
+Esta operación no hace nada en los dispositivos que no la admiten.
 
-### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+### <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -67,11 +67,11 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                        | Compatible |
 |---------------------------------------------------------------------|-----------|
-| [Shader Model 4 (DirectX HLSL) o posterior.](dx-graphics-hlsl-sm3.md) | sí       |
+| [Shader Model 4 (DirectX HLSL) o posterior.](dx-graphics-hlsl-sm3.md) | Sí       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Vea también
 
@@ -80,9 +80,9 @@ Esta función se admite en los siguientes modelos de sombreador.
 [Funciones intrínsecas](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,46 +1,46 @@
 ---
-description: ICE23 valida el orden de las pestañas de control de cada cuadro de diálogo.
+description: ICE23 valida el orden de tabulación de control para cada cuadro de diálogo.
 ms.assetid: d425f8c6-4615-439d-8194-3a0325eb3cc3
 title: ICE23
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c1823a70e50d7dd3c42c2e90d6a2d0f11f2fa5b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dbab2d50c07fce208edc845e64cff0061f513c102a55da2d56b49c4a4c17e867
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119529005"
 ---
 # <a name="ice23"></a>ICE23
 
-ICE23 valida el orden de las pestañas de control de cada cuadro de diálogo.
+ICE23 valida el orden de tabulación de control para cada cuadro de diálogo.
 
-ICE23 valida lo siguiente en la [tabla de cuadro de diálogo](dialog-table.md) y la tabla de [control](control-table.md):
+ICE23 valida lo siguiente en las tablas [Dialog y](dialog-table.md) [Control](control-table.md):
 
--   Cada registro de la tabla de diálogo especifica un control en la \_ primera columna de control que existe en el cuadro de diálogo especificado por la columna de diálogo.
--   Todos los registros de la tabla de control especifican un control en la \_ columna control siguiente que se encuentra en el mismo cuadro de diálogo que el control enumerado en la columna control, o \_ el control siguiente contiene el valor null.
--   Que siguen las siguientes \_ entradas de control de control a control en la tabla de control, crea un bucle único, cerrado, que vuelve al control inicial. No todos los controles deben estar en el bucle, pero el bucle debe atravesar todos los controles que tengan una entrada en la columna de control \_ siguiente.
+-   Que cada registro de la tabla Dialog especifica un control en la columna Control First que existe en el cuadro de diálogo \_ especificado por la columna Dialog .
+-   Que todos los registros de la tabla Control especifiquen un control en la columna Control Siguiente que se encuentra en el mismo cuadro de diálogo que el control enumerado en la columna Control o Control Siguiente contiene el valor \_ \_ NULL.
+-   Al seguir las entradas de Control Siguiente del control al control de la tabla Control, se crea un único bucle cerrado que vuelve \_ al control inicial. No todos los controles deben estar en el bucle , pero el bucle debe pasar a través de todos los controles que tienen una entrada en la columna Control \_ Siguiente.
 
 ## <a name="result"></a>Resultado
 
-ICE23 envía un mensaje de error si el orden de tabulación de los controles no forma un bucle cerrado único en el cuadro de diálogo.
+ICE23 publica un mensaje de error si el orden de tabulación de los controles no forma un único bucle cerrado en el cuadro de diálogo.
 
 ## <a name="example"></a>Ejemplo
 
 ICE23 publicaría los siguientes mensajes de error para el ejemplo mostrado.
 
--   Dialog1 no tiene ningún control en \_ primer lugar.
--   Controlar el \_ primer cuadro de diálogo Dialog2 hace referencia a ControlX de control inexistente.
--   Dialog3 tiene el orden de tabulación de inactividad en el control ControlB.
--   Dialog4 tiene un orden de tabulación incorrecto en el control ControlC
--   Dialog5 tiene un orden de tabulación incorrecto en el control ControlC.
--   Control \_ siguiente del control Dialog6. ControlC vínculos a un control desconocido.
+-   Dialog1 no tiene Control \_ First.
+-   Control \_ First of dialog Dialog2 hace referencia a control ControlX inexistente.
+-   Dialog3 tiene un orden de tabulación de punto de conexión en controlB.
+-   Dialog4 tiene un orden de tabulación con formato correcto en el control ControlC
+-   Dialog5 tiene un orden de tabulación con formato correcto en el control ControlC.
+-   Control \_ Siguiente del control Dialog6.ControlC vincula al control desconocido.
 
-[Tabla de cuadro de diálogo](dialog-table.md) (parcial)
+[Tabla de diálogos](dialog-table.md) (parcial)
 
 
 
-| Diálogo  | Controlar \_ primero |
+| Diálogo  | Control \_ First |
 |---------|----------------|
 | Dialog1 |                |
 | Dialog2 | ControlX       |
@@ -56,7 +56,7 @@ ICE23 publicaría los siguientes mensajes de error para el ejemplo mostrado.
 
 
 
-| Diálogo  | Control  | Control \_ siguiente |
+| Diálogo  | Control  | Control \_ Siguiente |
 |---------|----------|---------------|
 | Dialog1 | ControlA |               |
 | Dialog1 | ControlB | ControlA      |
@@ -70,11 +70,11 @@ ICE23 publicaría los siguientes mensajes de error para el ejemplo mostrado.
 | Dialog5 | ControlA | ControlB      |
 | Dialog5 | ControlB | ControlC      |
 | Dialog5 | ControlC | ControlA      |
-| Dialog5 | Controled | ControlA      |
+| Dialog5 | Controlado | ControlA      |
 | Dialog6 | ControlA | ControlB      |
 | Dialog6 | ControlB | ControlC      |
 | Dialog6 | ControlC | ControlX      |
-| Dialog6 | Controled | ControlA      |
+| Dialog6 | Controlado | ControlA      |
 
 
 
@@ -82,17 +82,17 @@ ICE23 publicaría los siguientes mensajes de error para el ejemplo mostrado.
 
 Para corregir estos errores, tenga en cuenta lo siguiente en las tablas anteriores y realice los cambios indicados.
 
-No todas las filas de la tabla del cuadro de diálogo tienen un control especificado en la \_ primera columna del control. Cambie la \_ primera columna control del registro Dialog1 de la tabla del cuadro de diálogo a un control que exista en Dialog1.
+No todas las filas de la tabla Dialog tienen un control especificado en la columna Control \_ First. Cambie la columna Control First del registro Dialog1 de la tabla \_ Dialog por un control que exista en Dialog1.
 
-No todas las filas de la tabla de cuadro de diálogo tienen un control especificado en la \_ primera columna de control que existe en el cuadro de diálogo. Cambie la \_ primera columna de control de Dialog2 a un control que exista en Dialog2.
+No todas las filas de la tabla Dialog tienen un control especificado en la columna Control \_ First que existe en el cuadro de diálogo. Cambie la columna \_ Control First del Cuadro de diálogo2 a un control que exista en Dialog2.
 
-Las siguientes entradas de control \_ de la tabla de control de control a control no crean un bucle cerrado en todos los casos. Cambie la columna de control \_ siguiente para ControlB en Dialog3 a controla.
+Seguir las entradas De control siguiente de la tabla Control desde el control al control no \_ realiza un bucle cerrado en todos los casos. Cambie la columna Control \_ Siguiente de ControlB en Dialog3 a ControlA.
 
-Las siguientes entradas de control \_ de la tabla de control de control a control no vuelven al control inicial en todos los casos. Cambie la \_ columna de control siguiente para ControlC en Dialog4 para que haga referencia a controla.
+Seguir las entradas De control siguiente de la tabla Control desde el control al control no lleva de nuevo al \_ control inicial en todos los casos. Cambie la columna Control \_ Siguiente para ControlC en el cuadro de diálogo 4 para hacer referencia a ControlA.
 
-Las siguientes entradas de control de \_ la tabla de control de control a control no atraviesan todos los controles del cuadro de diálogo que tengan una entrada en la columna de control \_ siguiente. Cambie la columna de control \_ siguiente para ControlC en Dialog5 a controled.
+Si sigue las entradas Control Siguiente de la tabla Control desde el control al control , no pasará a través de todos los controles del cuadro de diálogo que tengan una entrada en \_ la columna Control \_ Siguiente. Cambie la columna Control \_ Siguiente de ControlC en dialog5 a ControlD.
 
-El control Next no hace \_ referencia a un control válido que esté en el mismo cuadro de diálogo que el control que aparece en la columna de control. Cambie la \_ columna de control siguiente para ControlC en Dialog6 para que haga referencia a controled.
+Control Siguiente no hace referencia a un control válido que se encuentra en el mismo cuadro de \_ diálogo que el control enumerado en la columna Control . Cambie la columna Control \_ Siguiente para ControlC en el cuadro de diálogo 6 para hacer referencia a ControlD.
 
 ## <a name="related-topics"></a>Temas relacionados
 

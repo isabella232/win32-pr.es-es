@@ -4,16 +4,16 @@ description: Para conectarse al servicio BITS, cree una instancia del objeto Bac
 ms.assetid: 2fa88277-c7a1-4f1c-a63c-e2d27a163249
 ms.topic: article
 ms.date: 11/29/2018
-ms.openlocfilehash: 8146fa0def8c9c7dfd976784a930f35f20c965eb
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5dacd97b78fa9c5d3a1e410a44e3c376368654e99a6f4ace9161d36b127d9a94
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119528945"
 ---
 # <a name="connecting-to-the-bits-service"></a>Conexión al servicio BITS
 
-Para conectarse al servicio de sistema BITS, cree una instancia del objeto BackgroundCopyManager como se muestra en el ejemplo siguiente. El servicio de sistema de BITS es el servicio de sistema de Windows que se ejecuta en el equipo cliente que implementa la capacidad de transferencia en segundo plano.
+Para conectarse al servicio del sistema BITS, cree una instancia del objeto BackgroundCopyManager como se muestra en el ejemplo siguiente. El servicio del sistema BITS es el Windows sistema que se ejecuta en el equipo cliente que implementa la funcionalidad de transferencia en segundo plano.
 
 
 ```C++
@@ -42,7 +42,7 @@ if (SUCCEEDED(hr))
 
 
 
-Para probar una versión específica de BITS, use un identificador de clase simbólico para BackgroundCopyManager basándose en la versión que desea comprobar. Por ejemplo, para probar los BITS 10,2, use CLSID \_ BackgroundCopyManager10 \_ 2.
+Para probar una versión específica de BITS, use un identificador de clase simbólico para BackgroundCopyManager en función de la versión que desea comprobar. Por ejemplo, para probar BITS 10.2, use CLSID \_ BackgroundCopyManager10 \_ 2.
 
 En el ejemplo siguiente se muestra cómo usar uno de los identificadores de clase simbólicos.
 
@@ -60,13 +60,13 @@ En el ejemplo siguiente se muestra cómo usar uno de los identificadores de clas
 
 
 
-Use los métodos de la interfaz [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) para [crear trabajos de transferencia](creating-a-job.md), [enumerar trabajos](enumerating-jobs-in-the-transfer-queue.md) en la cola y [recuperar trabajos](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-getjob).
+Use los métodos de la [**interfaz IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) para crear trabajos de [transferencia,](creating-a-job.md) [enumerar](enumerating-jobs-in-the-transfer-queue.md) trabajos en la cola y [recuperar trabajos](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-getjob).
 
 
 
-BITS requiere que los proxies de interfaz del cliente usen el nivel de suplantación de identidad o suplantación. Si la aplicación no llama a [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity), com usa identificar de forma predeterminada. BITS produce un error con E \_ ACCESSDENIED si no se establece el nivel de suplantación correcto. Si proporciona una biblioteca que ejecuta las interfaces BITS, y una aplicación que llama a la biblioteca establece el nivel de suplantación que se indica a continuación, deberá llamar a [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) para establecer el nivel de suplantación correcto para cada interfaz de bits a la que llame.
+BITS requiere que los servidores proxy de interfaz del cliente usen el nivel IDENTIFY o IMPERSONATE de suplantación. Si la aplicación no llama a [**CoInitializeSecurity,**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity)COM usa IDENTIFY de forma predeterminada. BITS produce un error con E ACCESSDENIED si no se establece el nivel de \_ suplantación correcto. Si proporciona una biblioteca que ejercicio las interfaces BITS y una aplicación que llama a la biblioteca establece el nivel de suplantación por debajo de IDENTIFY, deberá llamar a [**CoSetProxyBlanket**](/windows/win32/api/combaseapi/nf-combaseapi-cosetproxyblanket) para establecer el nivel de suplantación correcto para cada interfaz bits a la que llame.
 
-Antes de que se cierre la aplicación, libere la copia del puntero de la interfaz [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) , tal como se muestra en el ejemplo siguiente.
+Antes de que se cierre la aplicación, suelte la copia del puntero de interfaz [**IBackgroundCopyManager,**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) como se muestra en el ejemplo siguiente.
 
 
 ```C++
@@ -84,9 +84,9 @@ CoUninitialize();
 
 <dl> <dt>
 
-[Llamar a bits desde .net y C#](/windows/desktop/Bits/bits-dot-net) para bits
+[Llamada a BITS desde .NET y C#](/windows/desktop/Bits/bits-dot-net) para BITS
 </dt> </dl>
 
- 
+ 
 
- 
+ 

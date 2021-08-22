@@ -1,7 +1,7 @@
 ---
 description: Vector 3D.
 ms.assetid: de0dd889-a7c6-47a4-af65-a77ae1d8d014
-title: Estructura D3DVECTOR (D3DX10Math. h)
+title: Estructura D3DVECTOR (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: feeb4df94709dbb160c5f3f61f45d5744b4b24af
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ab6f1948da437bee7132699684575c42a2b0d7da59924149cb4b24b92c3f58aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105718404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119498695"
 ---
-# <a name="d3dvector-structure-d3dx10mathh"></a>Estructura D3DVECTOR (D3DX10Math. h)
+# <a name="d3dvector-structure-d3dx10mathh"></a>Estructura D3DVECTOR (D3DX10Math.h)
 
 Vector 3D.
 
@@ -63,7 +63,7 @@ Componente y.
 
 </dd> <dt>
 
-**z**
+**Z**
 </dt> <dd>
 
 Tipo: **float**
@@ -80,7 +80,7 @@ Componente z.
 
 | Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Componente z.
 
 <dl> <dt>
 
-[Estructuras de D3DX](d3d10-graphics-reference-d3dx10-structures.md)
+[Estructuras D3DX](d3d10-graphics-reference-d3dx10-structures.md)
 </dt> </dl>
 
  

@@ -3,7 +3,7 @@ title: Atributo WM/OriginalAlbumTitle
 description: El atributo WM/OriginalAlbumTitle es el nombre del álbum en el que apareció por primera vez la pista.
 ms.assetid: e670c793-bae3-4dc5-92a1-4407cb2a094b
 keywords:
-- Media Player de Windows de atributos de WM/OriginalAlbumTitle
+- Atributo WM/OriginalAlbumTitle Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,36 +12,36 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f0dc2344c95bf3d0b09448277f1522baa879c80
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2fd025d78c5d4fb3a3fca20cdb6ba6bf092c45465e7e738ddd4c1921301c6899
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053863"
 ---
 # <a name="wmoriginalalbumtitle-attribute"></a>Atributo WM/OriginalAlbumTitle
 
-El atributo **WM/OriginalAlbumTitle** es el nombre del álbum en el que apareció por primera vez la pista.
+El **atributo WM/OriginalAlbumTitle** es el nombre del álbum en el que apareció por primera vez la pista.
 
 ## <a name="applies-to"></a>Se aplica a
 
--   [Archivos de música](music-file-attributes.md)
+-   [Música Archivos](music-file-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo solo se almacena en un archivo de música que no está en la biblioteca.
 
-La constante del SDK de Windows Media Format para este atributo es g \_ wszWMOriginalAlbumTitle.
+La Windows SDK de formato multimedia para este atributo es g \_ wszWMOriginalAlbumTitle.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -49,7 +49,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
-description: Realiza comprobaciones de seguridad en el objeto ActiveX especificado y devuelve la ubicación donde se descargó el archivo. CAB correspondiente.
+description: Realiza comprobaciones de seguridad en el objeto ActiveX especificado y devuelve la ubicación donde se descargó el .cab archivo correspondiente.
 ms.assetid: ba8e4f9b-1569-43f9-b27c-a987044fff41
-title: 'IeAxiServiceCallback:: VerifyFile (método)'
+title: IeAxiServiceCallback::VerifyFile (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 6d590f5e0e7ecd881a51844737f8efddf34d6727
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c8072680d42e214304cae1f0a6002b7a1fbc036fc075c5c6777dd7612733a0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104546531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119414715"
 ---
-# <a name="ieaxiservicecallbackverifyfile-method"></a>IeAxiServiceCallback:: VerifyFile (método)
+# <a name="ieaxiservicecallbackverifyfile-method"></a>IeAxiServiceCallback::VerifyFile (método)
 
-El método **VerifyFile** realiza comprobaciones de seguridad en el objeto ActiveX especificado y devuelve la ubicación donde se descargó el archivo. CAB correspondiente.
+El **método VerifyFile** realiza comprobaciones de seguridad en el objeto ActiveX especificado y devuelve la ubicación donde se descargó el archivo .cab correspondiente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,25 +39,25 @@ HRESULT VerifyFile(
 
 <dl> <dt>
 
-*bstrFileUrl* \[ de\]
+*bstrFileUrl* \[ En\]
 </dt> <dd>
 
-Dirección URL del objeto ActiveX que se va a comprobar.
+Dirección URL del objeto ActiveX que se debe comprobar.
 
 </dd> <dt>
 
-*bstrApprovedFileName* \[ enuncia\]
+*bstrApprovedFileName* \[ out\]
 </dt> <dd>
 
-Nombre del archivo donde se descargó el archivo. cab asociado al objeto ActiveX.
+Nombre del archivo donde se descargó .cab archivo asociado al ActiveX objeto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, el método devuelve S \_ correcto.
+Si el método se realiza correctamente, el método devuelve S \_ OK.
 
-Si se produce un error en el método, devuelve un valor **HRESULT** que indica el error. Para obtener una lista de los códigos de error comunes, vea [Valores HRESULT comunes](/windows/desktop/SecCrypto/common-hresult-values).
+Si se produce un error en el método , devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](/windows/desktop/SecCrypto/common-hresult-values).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,9 +65,9 @@ Si se produce un error en el método, devuelve un valor **HRESULT** que indica e
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista Business, Windows Vista Enterprise, Windows Vista Ultimate \[ solo aplicaciones de escritorio\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Vista Business, Windows Vista Enterprise, Windows aplicaciones de escritorio de Vista \[ Ultimate\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                 |
-| IID<br/>                      | IID \_ IeAxiServiceCallback se define como 1823E7BA-EC36-447A-9B2E-B4912E15AFE7<br/>                   |
+| IID<br/>                      | IID IeAxiServiceCallback se define como \_ 1823E7BA-EC36-447a-9B2E-B4912E15AFE7<br/>                   |
 
 
 
