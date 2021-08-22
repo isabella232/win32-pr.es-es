@@ -5,7 +5,7 @@ ms.assetid: a6b078ec-8738-4c57-9d94-05a96dbc645b
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD del atributo Transport-DLL-Name
-- Esquema de AD del atributo transportDLLName
+- TransportDLLName attribute AD Schema (Esquema de AD del atributo transportDLLName)
 topic_type:
 - apiref
 api_name:
@@ -27,12 +27,12 @@ Nombre del archivo DLL que administrará un transporte.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | Transport-DLL-Name                          |
 | Ldap-Display-Name | transportDLLName                            |
 | Size              | \-                                          |
-| Privilegio actualizar  | El sistema establece este valor.            |
+| Actualizar privilegios  | El sistema establece este valor.            |
 | Frecuencia de actualización  | Al conectar sitios.                      |
 | Attribute-Id      | 1.2.840.113556.1.4.789                      |
 | System-Id-Guid    | 26d97372-6070-11d1-a9c6-0000f80367c1        |
@@ -54,7 +54,7 @@ Nombre del archivo DLL que administrará un transporte.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
@@ -75,7 +75,7 @@ Nombre del archivo DLL que administrará un transporte.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
@@ -96,7 +96,7 @@ Nombre del archivo DLL que administrará un transporte.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
@@ -117,7 +117,7 @@ Nombre del archivo DLL que administrará un transporte.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
@@ -138,7 +138,7 @@ Nombre del archivo DLL que administrará un transporte.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
@@ -159,7 +159,7 @@ Nombre del archivo DLL que administrará un transporte.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |
@@ -180,7 +180,7 @@ Nombre del archivo DLL que administrará un transporte.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------|
 | Id. de vínculo                | \-                                                              |
 | MAPI-Id                | \-                                                              |

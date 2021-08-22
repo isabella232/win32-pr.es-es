@@ -1,10 +1,10 @@
 ---
-title: MPFASTPATH_DATA estructura (MpClient. h)
+title: MPFASTPATH_DATA estructura (MpClient.h)
 description: Notificación de actualización de FastPath.
 ms.assetid: E19F153D-DD46-4E27-9A4B-33586794DAC2
 keywords:
-- MPFASTPATH_DATA estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPFASTPATH_DATA características de entorno heredado de Windows
+- MPFASTPATH_DATA estructura heredada de Windows environment
+- PMPFASTPATH_DATA puntero de estructura heredado de Windows environment
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2850a48074fee6984564550683c7fe595d0779ff
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e138e9c45657cfc4ebeba1d1dbeed38070b6e07d09c512ec96835a04702d0c8a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105714564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119556155"
 ---
-# <a name="mpfastpath_data-structure"></a>\_Estructura de datos MPFASTPATH
+# <a name="mpfastpath_data-structure"></a>Estructura DE DATOS \_ MPFASTPATH
 
 Notificación de actualización de FastPath.
 
@@ -51,7 +51,7 @@ typedef struct tagMPFASTPATH_DATA {
 **SignatureType**
 </dt> <dd>
 
-Tipo: **[ **\_ \_ tipo de firma de MP**](mp-signature-type.md)**
+Tipo: **[ **TIPO DE \_ FIRMA DE \_ MP**](mp-signature-type.md)**
 
 </dd> <dd>
 
@@ -62,7 +62,7 @@ Tipo de firma.
 **FastPathSignatureType**
 </dt> <dd>
 
-Tipo: **[ **MP \_ FASTPATH \_ Type**](mp-fastpath-type.md)**
+Tipo: **[ **MP \_ FASTPATH \_ TYPE**](mp-fastpath-type.md)**
 
 </dd> <dd>
 
@@ -73,18 +73,18 @@ Tipo de firma FastPath.
 **FastPathSignatureVersion**
 </dt> <dd>
 
-Type: **MP \_ MIDL \_ String LPWStr**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
-Versión de la firma FastPath (opcional).
+Versión de firma de FastPath (opcional).
 
 </dd> <dt>
 
 **CompilationTimestamp**
 </dt> <dd>
 
-Tipo: **ULARGE \_ Integer**
+Tipo: **ENTERO \_ ULARGE**
 
 </dd> <dd>
 
@@ -95,7 +95,7 @@ Marca de tiempo de compilación (UTC).
 **PersistenceType**
 </dt> <dd>
 
-Tipo: **[ **\_ tipo de \_ límite \_ de persistencia de MP**](mp-persistence-limit-type.md)**
+Tipo: **[ **TIPO DE \_ LÍMITE DE PERSISTENCIA \_ DE \_ MP**](mp-persistence-limit-type.md)**
 
 </dd> <dd>
 
@@ -106,7 +106,7 @@ Tipo de persistencia (opcional).
 **PersistenceValue**
 </dt> <dd>
 
-Type: **MP \_ MIDL \_ String LPWStr**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -117,7 +117,7 @@ Valor de persistencia (opcional).
 **PersistencePath**
 </dt> <dd>
 
-Type: **MP \_ MIDL \_ String LPWStr**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -128,7 +128,7 @@ Ruta de acceso de persistencia (opcional).
 **Motivo**
 </dt> <dd>
 
-Tipo: **[ **\_ \_ motivo** de la eliminación del MP](mp-removal-reason.md)**
+Tipo: **[ **MP \_ REMOVAL \_ REASON**](mp-removal-reason.md)**
 
 </dd> <dd>
 
@@ -140,11 +140,11 @@ Motivo de la eliminación de la firma.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
@@ -152,13 +152,13 @@ Motivo de la eliminación de la firma.
 
 <dl> <dt>
 
-[**\_tipo de FASTPATH de MP \_**](mp-fastpath-type.md)
+[**TIPO \_ DE MP FASTPATH \_**](mp-fastpath-type.md)
 </dt> <dt>
 
-[**\_tipo de \_ límite de persistencia de MP \_**](mp-persistence-limit-type.md)
+[**TIPO DE \_ LÍMITE DE PERSISTENCIA DE \_ \_ MP**](mp-persistence-limit-type.md)
 </dt> <dt>
 
-[**\_tipo de firma MP \_**](mp-signature-type.md)
+[**TIPO \_ DE FIRMA DE \_ MP**](mp-signature-type.md)
 </dt> </dl>
 
  

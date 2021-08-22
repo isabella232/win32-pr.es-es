@@ -17,7 +17,7 @@ La acción CreateShortcuts administra la creación de accesos directos.
 
 ## <a name="sequence-restrictions"></a>Restricciones de secuencia
 
-La acción CreateShortcuts debe ir después de [la acción InstallFiles](installfiles-action.md) y [la acción RemoveShortcuts.](removeshortcuts-action.md)
+La acción CreateShortcuts debe ir después de la acción [InstallFiles](installfiles-action.md) y [la acción RemoveShortcuts.](removeshortcuts-action.md)
 
 ## <a name="actiondata-messages"></a>Mensajes ActionData
 
@@ -33,7 +33,7 @@ La acción CreateShortcuts debe ir después de [la acción InstallFiles](install
 
 ## <a name="remarks"></a>Comentarios
 
-La acción CreateShortcuts crea accesos directos a los archivos clave de los componentes de las características que se seleccionan para la instalación o el anuncio.
+La acción CreateShortcuts crea accesos directos a los archivos clave de componentes de características que se seleccionan para la instalación o el anuncio.
 
 ## <a name="related-topics"></a>Temas relacionados
 

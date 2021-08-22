@@ -1,11 +1,11 @@
 ---
-title: Atributo COM-Other-PROG-ID
-description: Lista de otras cadenas de identificador de programa para la clase de host.
+title: Atributo COM-Other-Prog-Id
+description: Lista de otras cadenas de identificador de programa para la clase host.
 ms.assetid: dcea2a2a-2680-4e9c-abbf-57946c4c9ea2
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo COM-Other-PROG-ID
-- cOMOtherProgId esquema de AD de atributos
+- Esquema de AD del atributo COM-Other-Prog-Id
+- Esquema de AD del atributo cOMOtherProgId
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 881b4f55f4512e6c66b934b41c112dac49c260bc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 09b218f7d634371a23c61d2b132558930c35e744d4572fcdfc6bd97ab4ee185a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151886"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509595"
 ---
-# <a name="com-other-prog-id-attribute"></a>Atributo COM-Other-PROG-ID
+# <a name="com-other-prog-id-attribute"></a>Atributo COM-Other-Prog-Id
 
-Lista de otras cadenas de identificador de programa para la clase de host.
+Lista de otras cadenas de identificador de programa para la clase host.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | COM-Other-PROG-ID                           |
-| Nombre para mostrar de LDAP | cOMOtherProgId                              |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | COM-Other-Prog-Id                           |
+| Ldap-Display-Name | cOMOtherProgId                              |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.253                      |
-| System-ID-GUID    | 281416dd-1968-11d0-a28f-00aa003049e2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 281416dd-1968-11d0-a28f-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ Lista de otras cadenas de identificador de programa para la clase de host.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -76,13 +76,13 @@ Lista de otras cadenas de identificador de programa para la clase de host.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -97,13 +97,13 @@ Lista de otras cadenas de identificador de programa para la clase de host.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -116,15 +116,15 @@ Lista de otras cadenas de identificador de programa para la clase de host.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -139,13 +139,13 @@ Lista de otras cadenas de identificador de programa para la clase de host.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -160,13 +160,13 @@ Lista de otras cadenas de identificador de programa para la clase de host.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                           |
+| Id. de vínculo                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | False                                                        |
-| Tiene un único valor       | False                                                        |
-| Está indexado             | False                                                        |
-| En el catálogo global      | False                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                 |
+| System-Only            | Falso                                                        |
+| Es de un solo valor       | Falso                                                        |
+| Está indexado             | Falso                                                        |
+| En el catálogo global      | Falso                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |

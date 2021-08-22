@@ -1,12 +1,12 @@
 ---
-title: Método IRemoteDesktopClientEvents OnKeyCombinationPressed
+title: Método OnKeyCombinationPressed de IRemoteDesktopClientEvents
 description: Se llama cuando se presionan combinaciones de teclas especiales en la sesión remota.
 ms.assetid: 0A4EAD6C-5DA9-4ED3-BA79-92AE5AE81C9F
 ms.tgt_platform: multiple
 keywords:
 - Método OnKeyCombinationPressed Servicios de Escritorio remoto
-- Método OnKeyCombinationPressed Servicios de Escritorio remoto interfaz , IRemoteDesktopClientEvents
-- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto método , OnKeyCombinationPressed
+- Método OnKeyCombinationPressed Servicios de Escritorio remoto , interfaz IRemoteDesktopClientEvents
+- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto , método OnKeyCombinationPressed
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119515105"
 ---
-# <a name="iremotedesktopclienteventsonkeycombinationpressed-method"></a>IRemoteDesktopClientEvents::OnKeyCombinationPressed (método)
+# <a name="iremotedesktopclienteventsonkeycombinationpressed-method"></a>IRemoteDesktopClientEvents::OnKeyCombinationPressed (Método)
 
 Se llama cuando se presionan combinaciones de teclas especiales en la sesión remota.
 
@@ -54,7 +54,7 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                           |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                 |
@@ -64,7 +64,7 @@ Este método no devuelve ningún valor.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

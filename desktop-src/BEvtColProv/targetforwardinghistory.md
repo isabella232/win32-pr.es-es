@@ -84,7 +84,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **Corregido**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Información del punto de conexión del servidor recopilador. Esta propiedad tiene formato de *host:* cadena *de* puerto.
+Información del punto de conexión del servidor recopilador. Esta propiedad tiene el formato *host*:*cadena de* puerto.
 
 </dd> <dt>
 
@@ -180,7 +180,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **Corregido**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Mensaje de error que describe un error encontrado. Esta propiedad está vacía si no se ha encontrado ningún error.
+Mensaje de error que describe un error encontrado. Esta propiedad está vacía si no se encontró ningún error.
 
 </dd> <dt>
 
@@ -212,7 +212,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Información del punto de conexión del equipo de destino, en formato legible para el usuario. Esta propiedad tiene formato de *host:* cadena *de* puerto. Por ejemplo, "127.0.0.1:50000".
+La información del punto de conexión del equipo de destino, en formato legible. Esta propiedad tiene el formato *host*:*cadena de* puerto. Por ejemplo, "127.0.0.1:50000".
 
 </dd> <dt>
 
@@ -268,7 +268,7 @@ Marca de tiempo de cuando se registró este cambio de estado.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                       |
@@ -278,7 +278,7 @@ Marca de tiempo de cuando se registró este cambio de estado.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

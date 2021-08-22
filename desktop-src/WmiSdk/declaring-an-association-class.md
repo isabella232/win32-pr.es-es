@@ -24,7 +24,7 @@ En el procedimiento siguiente se describe cómo crear una clase de asociación m
 
     Aunque es posible crear una clase con referencias a objetos o clases, el uso del calificador **Association** no solo deja claro que la clase es una clase de asociación, sino que, como procedimiento recomendado, garantiza que la clase funcione completamente como una clase de asociación.
 
-2.  Cree dos referencias dentro de la clase que describan las dos instancias de objeto que desea asociar mediante el **tipo ref.**
+2.  Cree dos referencias dentro de la clase que describa las dos instancias de objeto que desea asociar mediante el **tipo ref.**
 
     Las referencias enlazan los dos objetos de la asociación mediante rutas de acceso a los objetos . Aunque no es necesario, use también las propiedades de referencia como propiedades clave.
 
@@ -32,7 +32,7 @@ En el procedimiento siguiente se describe cómo crear una clase de asociación m
 
     Si es necesario, use los **calificadores HasClassRef** y **Classref** junto con el tipo **ref** de objeto para hacer referencia a una clase.
 
-    WMI admite tener un punto **de** referencia ref a una instancia de y el **otro** punto de referencia de objeto a una clase. En este caso, la clase de asociación describiría una asociación que enlaza instancias a clases.
+    WMI admite tener un punto **de referencia ref** a una instancia de y el otro punto de referencia de objeto a una clase.  En este caso, la clase de asociación describiría una asociación que enlaza instancias a clases.
 
     En el ejemplo de código siguiente se describe la sintaxis para usar **HasClassRef** y **Classref** con un **tipo de** objeto.
 
@@ -46,7 +46,7 @@ En el procedimiento siguiente se describe cómo crear una clase de asociación m
     }; 
     ```
 
-    En el ejemplo anterior, la referencia **ep1** puede apuntar a las definiciones de clase para la **clase MyEndpoint** o **la clase OtherContainer.** Tenga en cuenta que, aunque debe escribir débilmente la clase de referencia, no puede escribir débilmente el propio **calificador Classref;** Si lo hace, se reduciría considerablemente la eficacia del motor de consultas WMI. La escritura débil crea una referencia que puede contener cualquier tipo de datos mediante la palabra clave **object** y el tipo de datos **ref.** Para usar correctamente **HasClassRef**, debe establecer los tipos de calificador pertinentes para que se propaguen a todas las instancias y subclases.
+    En el ejemplo anterior, la referencia **ep1** puede apuntar a las definiciones de clase para la **clase MyEndpoint** o **la clase OtherContainer.** Tenga en cuenta que, aunque debe escribir débilmente la clase de referencia, no puede escribir débilmente el propio calificador **Classref;** Si lo hace, se reduciría considerablemente la eficacia del motor de consultas WMI. La escritura débil crea una referencia que puede contener cualquier tipo de datos mediante la palabra clave **object** y el tipo de datos **ref.** Para usar correctamente **HasClassRef**, debe establecer los tipos de calificador pertinentes para que se propaguen a todas las instancias y subclases.
 
 3.  Cree cualquier otra propiedad según sea necesario.
 

@@ -17,7 +17,7 @@ KTM define las siguientes máscaras de acceso a transacciones que se usarán al 
 
 <dl> <dt>
 
-<span id="TRANSACTION_QUERY_INFORMATION"></span><span id="transaction_query_information"></span>**INFORMACIÓN DE \_ CONSULTA DE \_ TRANSACCIONES**
+<span id="TRANSACTION_QUERY_INFORMATION"></span><span id="transaction_query_information"></span>**INFORMACIÓN DE \_ CONSULTA \_ DE TRANSACCIONES**
 </dt> <dd> <dl> <dt>
 
 0x000001
@@ -51,7 +51,7 @@ El autor de la llamada puede establecer la información de la transacción.
 
 
 
-El autor de la llamada puede alistarse en esta transacción.
+El autor de la llamada puede list en esta transacción.
 
 
 </dt> </dl> </dd> <dt>
@@ -82,7 +82,7 @@ El autor de la llamada puede revertir esta transacción.
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_PROPAGATE"></span><span id="transaction_propagate"></span>**PROPAGACIÓN \_ DE TRANSACCIÓN**
+<span id="TRANSACTION_PROPAGATE"></span><span id="transaction_propagate"></span>**PROPAGACIÓN DE \_ TRANSACCIÓN**
 </dt> <dd> <dl> <dt>
 
 0x000020
@@ -142,12 +142,12 @@ El autor de la llamada tiene los siguientes privilegios: **STANDARD \_ RIGHTS \_
 
 
 
-El autor de la llamada tiene el privilegio siguiente: **STANDARD \_ RIGHTS \_ REQUIRED,** **TRANSACTION GENERIC \_ \_ READ,** **TRANSACTION GENERIC \_ \_ WRITE** y **TRANSACTION GENERIC \_ \_ EXECUTE**.
+El autor de la llamada tiene el privilegio siguiente: **STANDARD \_ RIGHTS \_ REQUIRED,** **TRANSACTION GENERIC \_ \_ READ,** **TRANSACTION GENERIC \_ \_ WRITE** y **TRANSACTION GENERIC \_ \_ EXECUTE.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="TRANSACTION_RESOURCE_MANAGER_RIGHTS"></span><span id="transaction_resource_manager_rights"></span>**DERECHOS DE \_ RESOURCE \_ MANAGER DE \_ TRANSACCIONES**
+<span id="TRANSACTION_RESOURCE_MANAGER_RIGHTS"></span><span id="transaction_resource_manager_rights"></span>**DERECHOS DE \_ TRANSACTION RESOURCE \_ \_ MANAGER**
 </dt> <dd> <dl> <dt>
 
 0x120037
@@ -155,14 +155,14 @@ El autor de la llamada tiene el privilegio siguiente: **STANDARD \_ RIGHTS \_ RE
 
 
 
-El autor de la llamada tiene los siguientes privilegios: **TRANSACTION \_ GENERIC \_ READ**, **STANDARD RIGHTS \_ \_ WRITE**, **TRANSACTION SET \_ \_ INFORMATION**, **TRANSACTION \_ ROLLBACK**, **TRANSACTION \_ ENLIST,** **TRANSACTION \_ PROPAGATE** y **SYNCHRONIZE**.
+El autor de la llamada tiene los siguientes privilegios: **TRANSACTION \_ GENERIC \_ READ,** **STANDARD RIGHTS \_ \_ WRITE,** **TRANSACTION SET \_ \_ INFORMATION**, **TRANSACTION \_ ROLLBACK,** **TRANSACTION \_ ENLIST,** **TRANSACTION \_ PROPAGATE** y **SYNCHRONIZE.**
 
 
 </dt> </dl> </dd> </dl>
 
 ## <a name="remarks"></a>Comentarios
 
-Se recomienda que los administradores de recursos, al realizar la alta en una transacción, **especifiquen TRANSACTION \_ RESOURCE MANAGER \_ \_ RIGHTS** al abrir una transacción.
+Se recomienda que los administradores de recursos, al realizar la alta en una transacción, **especifiquen LOS DERECHOS DE TRANSACTION \_ RESOURCE \_ MANAGER \_** al abrir una transacción.
 
 ## <a name="requirements"></a>Requisitos
 

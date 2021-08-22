@@ -1,7 +1,7 @@
 ---
-description: Detiene la captura de cambios de estado de parámetro de efecto.
+description: Detenga la captura de los cambios de estado de los parámetros de efecto.
 ms.assetid: b6ca2917-2df0-4f3a-9ee3-23e9d2501ff4
-title: 'ID3DXEffect:: EndParameterBlock (método) (D3DX9Effect. h)'
+title: Método ID3DXEffect::EndParameterBlock (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 3359e3b923d05e003ffbda18791e497d18ba627e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b1d68aa1bd716ee106a5d1588a7a7060adb851185115e97d2f5f2a5d7f857c02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119494235"
 ---
-# <a name="id3dxeffectendparameterblock-method"></a>ID3DXEffect:: EndParameterBlock (método)
+# <a name="id3dxeffectendparameterblock-method"></a>Método ID3DXEffect::EndParameterBlock
 
-Detiene la captura de cambios de estado de parámetro de efecto.
+Detenga la captura de los cambios de estado de los parámetros de efecto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Devuelve un identificador para el bloque de estado del parámetro.
+Devuelve un identificador al bloque de estado del parámetro.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Todos los parámetros de efecto que cambian el estado (después de llamar a BeginParameterBlock y antes de llamar a EndParameterBlock) se guardarán en un bloque de estado de parámetro de efecto. Use ApplyParameterBlock para aplicar este bloque de cambios de estado en el sistema de efectos. Una vez que haya terminado con un bloque de estado, use DeleteParameterBlock para liberar memoria.
+Todos los parámetros de efecto que cambian el estado (después de llamar a BeginParameterBlock y antes de llamar a EndParameterBlock) se guardarán en un bloque de estado de parámetro de efecto. Use ApplyParameterBlock para aplicar este bloque de cambios de estado al sistema de efectos. Una vez que haya terminado con un bloque de estado, use DeleteParameterBlock para liberar la memoria.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Todos los parámetros de efecto que cambian el estado (después de llamar a Begi
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

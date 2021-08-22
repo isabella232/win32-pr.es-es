@@ -1,7 +1,7 @@
 ---
-description: La \_ clase de vista CIM es una superclase para las clases que proporcionan representaciones agregadas y desnormalizadas de recursos administrados.
+description: La clase \_ Cim View es una superclase para las clases que proporcionan representaciones agregadas des normalizadas de recursos administrados.
 ms.assetid: 1e8e3c5f-3c27-4bfb-9f9b-b02936e0b4cf
-title: CIM_View (clase)
+title: CIM_View clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6d330a3ea2de2bda2a6713ae3b2413f6d388f03a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a74d4e4efb3fcc12d31554904368b0565d4cad21545effb5a5a7bbb1a9d6d704
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532805"
 ---
-# <a name="cim_view-class"></a>CIM ( \_ clase de vista)
+# <a name="cim_view-class"></a>Cim \_ View (clase)
 
-La clase de **\_ vista CIM** es una superclase para las clases que proporcionan representaciones agregadas y desnormalizadas de recursos administrados.
+La **clase \_ Cim View** es una superclase para las clases que proporcionan representaciones agregadas des normalizadas de recursos administrados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,7 +35,7 @@ class CIM_View : CIM_ManagedElement
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ vista CIM** no define ningún miembro.
+La **clase \_ Cim View** no define ningún miembro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,10 +43,10 @@ La clase de **\_ vista CIM** no define ningún miembro.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -55,7 +55,7 @@ La clase de **\_ vista CIM** no define ningún miembro.
 
 <dl> <dt>
 
-[**ManagedElement de CIM \_**](cim-managedelement.md)
+[**CIM \_ ManagedElement**](cim-managedelement.md)
 </dt> </dl>
 
  

@@ -70,7 +70,7 @@ Matriz terminada en NULL de macros de sombreador (vea [**D3D \_ SHADER \_ MACRO*
 
 Tipo: **[ **LPD3D10INCLUDE**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))**
 
-Puntero a una interfaz include (vea [**ID3D10Include Interface**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))); establezca esta opción **en NULL** para especificar que no hay ningún archivo de incluir.
+Puntero a una interfaz include (vea [**ID3D10Include Interface**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))); establezca esta opción **en NULL** para especificar que no hay ningún archivo de include.
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ Cadena que especifica el perfil de [sombreador o](../direct3dhlsl/dx-graphics-hl
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Opciones de compilación HLSL (vea [Marcas de sombreador).](d3d10-graphics-reference-effect-constants.md)
+Opciones de compilación HLSL (vea [Marcas de sombreador](d3d10-graphics-reference-effect-constants.md)).
 
 </dd> <dt>
 
@@ -144,11 +144,11 @@ El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Di
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[De uso general Functions](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[De uso general functions](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

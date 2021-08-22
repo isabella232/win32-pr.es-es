@@ -1,6 +1,6 @@
 ---
-description: 'Permite que el objeto de devolución de llamada modifique un menú emergente del explorador de Windows antes de que se muestre. Usado por IShellFolderViewCB:: MessageSFVCB.'
-title: Mensaje de SFVM_INITMENUPOPUP (ShlObj. h)
+description: Permite que el objeto de devolución de llamada modifique Windows menú emergente explorador antes de que se muestre. Usado por IShellFolderViewCB::MessageSFVCB.
+title: SFVM_INITMENUPOPUP mensaje (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 9d7e96e9-c52e-43bd-945b-05db33c8dfd0
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1f9a2a169b232fe3ad16eeee8816536ed81c74dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd69d19f753c1c72c1e0c143a0aface2cdb234cb2ace8c87d559834b97bbf0f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104986078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119592325"
 ---
-# <a name="sfvm_initmenupopup-message"></a>SFVM \_ INITMENUPOPUP
+# <a name="sfvm_initmenupopup-message"></a>Mensaje \_ SFVM INITMENUPOPUP
 
-Permite que el objeto de devolución de llamada modifique un menú emergente del explorador de Windows antes de que se muestre. Usado por [**IShellFolderViewCB:: MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
+Permite que el objeto de devolución de llamada modifique Windows menú emergente explorador antes de que se muestre. Usado por [**IShellFolderViewCB::MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
 
 
 ```C++
@@ -41,27 +41,27 @@ SFVM_INITMENUPOPUP
 
 <dl> <dt>
 
-*idCmd \_ NINDEX* \[\]
+*idCmd \_ nIndex* \[ en\]
 </dt> <dd>
 
-La palabra de orden inferior de este parámetro contiene el valor del primer identificador de comando reservado para los comandos del cliente. La palabra de orden superior contiene el índice del menú.
+La palabra de orden bajo de este parámetro contiene el valor del primer identificador de comando reservado para los comandos de cliente. La palabra de orden superior contiene el índice del menú.
 
 </dd> <dt>
 
-*HMENU* \[ in, out\]
+*hmenu* \[ in, out\]
 </dt> <dd>
 
 Identificador del menú.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El objeto de vista de carpeta del sistema envía este mensaje cuando se selecciona un menú, pero antes de que se muestre. Procese este mensaje si, por ejemplo, necesita habilitar o deshabilitar comandos de menú. El menú emergente puede ser:
+El objeto de vista de carpeta del sistema envía este mensaje cuando se selecciona un menú, pero antes de que se muestre. Procese este mensaje si, por ejemplo, necesita habilitar o deshabilitar los comandos de menú. El menú emergente puede ser:
 
--   Menú Archivo, editar o ver.
--   Un menú de nivel superior definido por el cliente.
--   Un submenú definido por el cliente.
+-   Menú Archivo, Editar o Ver.
+-   Menú de nivel superior definido por el cliente.
+-   Submenú definido por el cliente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,7 +71,7 @@ El objeto de vista de carpeta del sistema envía este mensaje cuando se seleccio
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>ShlObj. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

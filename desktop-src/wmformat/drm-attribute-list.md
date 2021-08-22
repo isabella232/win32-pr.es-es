@@ -31,7 +31,7 @@ Las aplicaciones pueden establecer estos valores al escribir archivos DRM y recu
 | [**ContentID de DRM \_**](drm-contentid.md)                                              | g \_ wszWMDRM \_ ContentID                        | **CADENA DE TIPO WMT \_ \_** |
 | [**DRM \_ DRMHeader \_ ContentDistributor**](drm-drmheader-contentdistributor.md)       | g \_ wszWMDRM \_ DRMHeader \_ ContentDistributor    | **CADENA DE TIPO WMT \_ \_** |
 | [**DRM \_ DRMHeader \_ ContentID**](drm-drmheader-contentid.md)                         | g \_ wszWMDRM \_ DRMHeader \_ ContentID             | **CADENA DE TIPO WMT \_ \_** |
-| [**\_DRMHeader \_ IndividualizedVersion de DRM**](drm-drmheader-individualizedversion.md) | g \_ wszWMDRM \_ DRMHeader \_ IndividualizedVersion | **CADENA DE TIPO WMT \_ \_** |
+| [**DRM \_ DRMHeader \_ IndividualizedVersion**](drm-drmheader-individualizedversion.md) | g \_ wszWMDRM \_ DRMHeader \_ IndividualizedVersion | **CADENA DE TIPO WMT \_ \_** |
 | [**DRM \_ DRMHeader \_ KeyID**](drm-drmheader-keyid.md)                                 | g \_ wszWMDRM \_ DRMHeader \_ KeyID                 | **CADENA DE TIPO WMT \_ \_** |
 | [**DRM \_ DRMHeader \_ LicenseAcqURL**](drm-drmheader-licenseacqurl.md)                 | g \_ wszWMDRM \_ DRMHeader \_ LicenseAcqURL         | **CADENA DE TIPO WMT \_ \_** |
 | [**DRM \_ DRMHeader \_ SubscriptionContentID**](drm-drmheader-subscriptioncontentid.md) | g \_ wszWMDRM \_ DRMHeader \_ SubscriptionContentID | **CADENA DE TIPO WMT \_ \_** |

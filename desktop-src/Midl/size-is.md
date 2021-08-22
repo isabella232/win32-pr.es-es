@@ -19,9 +19,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119066705"
 ---
-# <a name="size_is-attribute"></a>size \_ es el atributo
+# <a name="size_is-attribute"></a>size \_ es un atributo
 
-Use el atributo size is para especificar el tamaño de la memoria, en elementos, asignado para punteros de tamaño, punteros de tamaño a punteros de tamaño y matrices \[ **\_** \] multidimensionales o únicas.
+Use el atributo size is para especificar el tamaño de la memoria, en elementos, asignado para punteros de tamaño, punteros de tamaño a punteros de tamaño \[ **\_** \] y matrices multidimensionales o únicas.
 
 ``` syntax
 [ size_is(limited-expression-list) ]
@@ -40,13 +40,13 @@ Especifica una o varias expresiones de lenguaje C. Cada expresión se evalúa co
 
 ## <a name="remarks"></a>Comentarios
 
-Si usa el atributo size is para asignar memoria para una matriz multidimensional y usa la notación de matriz, tenga en cuenta que solo se puede determinar dinámicamente la primera dimensión de una \[ **\_** \] \[ matriz multidimensional en tiempo de \] ejecución. Las demás dimensiones deben especificarse estáticamente. Para obtener más información sobre el uso del tamaño es el atributo con varios niveles de punteros para permitir que un servidor devuelva una matriz de datos de tamaño dinámico a un cliente, como se muestra en el ejemplo Proc7, vea Varios niveles de \[ **\_** \] [punteros.](/windows/desktop/Rpc/multiple-levels-of-pointers)
+Si usa el atributo size is para asignar memoria para una matriz multidimensional y usa la notación de matriz, tenga en cuenta que solo se puede determinar dinámicamente la primera dimensión de una \[ **\_** \] \[ matriz multidimensional en tiempo de \] ejecución. Las demás dimensiones deben especificarse estáticamente. Para obtener más información sobre el uso del tamaño es el atributo con varios niveles de punteros para permitir que un servidor devuelva una matriz de datos de tamaño dinámico a un cliente, como se muestra en el ejemplo Proc7, vea Multiple Levels of \[ **\_** \] [Pointers](/windows/desktop/Rpc/multiple-levels-of-pointers).
 
-Puede usar size es o max es (pero no ambos en la misma lista de atributos) para especificar el tamaño de una matriz cuyos límites superiores se determinan en tiempo \[ **\_** \] de ejecución. [**\_**](max-is.md) Sin embargo, tenga en cuenta que \[ **el atributo size \_ is** \] no se puede usar en dimensiones de matriz fijas. El \[ **atributo max \_ is** \] especifica el índice máximo válido de la matriz. Como resultado, especificar el tamaño es(n) equivale a especificar \[ \_ max \] \[ \_ is(n-1). \]
+Puede usar size is o max is (pero no ambos en la misma lista de atributos) para especificar el tamaño de una matriz cuyos límites superiores se determinan en tiempo \[ **\_** \] de ejecución. [**\_**](max-is.md) Sin embargo, tenga en cuenta que \[ **el atributo size \_ is** \] no se puede usar en dimensiones de matriz fijas. El \[ **atributo max \_ is** \] especifica el índice máximo válido de la matriz. Como resultado, especificar el tamaño es(n) equivale a especificar \[ \_ max \] \[ \_ is(n-1) \] .
 
-Un \[ [**parámetro in**](in.md) \] o \[ in, [**out**](out-idl.md) \] conformant-array \[ [](string.md) \] \[ **\_** \] \[ [**\_**](max-is.md) con el \] atributo string no necesita que el tamaño sea o max is attribute. En este caso, el tamaño de la asignación se determina a partir del terminador NULL de la cadena de entrada. Todas las demás matrices compatibles con el atributo \[ string deben tener un tamaño \] \[ **\_ es** \] o max \[ **\_ es** \] attribute.
+Un \[ [**parámetro in**](in.md) \] o \[ in, [**out**](out-idl.md) \] conformant-array \[ [](string.md) \] \[ **\_** \] \[ [**\_**](max-is.md) con el \] atributo string no necesita tener el tamaño es o max is attribute. En este caso, el tamaño de la asignación se determina a partir del terminador NULL de la cadena de entrada. Todas las demás matrices compatibles con el atributo \[ de cadena deben tener un tamaño \] \[ **\_ es** \] o max \[ **\_ is** \] attribute.
 
-Aunque es legal usar el tamaño es un atributo con una constante, hacerlo es \[ **\_** \] ineficaz e innecesario. Por ejemplo, use una matriz de tamaño fijo:
+Aunque es legal usar el atributo size con una constante, hacerlo es \[ **\_** \] ineficaz e innecesario. Por ejemplo, use una matriz de tamaño fijo:
 
 ``` syntax
 HRESULT Proc3([in] short Arr[MAX_SIZE]);
@@ -59,9 +59,9 @@ en lugar de:
 HRESULT Proc3([in size_is(MAX_SIZE)] short Arr[] );
 ```
 
-Puede usar el tamaño \[ **es \_ y** \] length es \[ [**\_ atributos**](length-is.md) \] juntos. Al hacerlo, el \[ **atributo size \_ is** \] controla la cantidad de memoria asignada para los datos. El \[ **atributo length \_ is** \] especifica cuántos elementos se transmiten. La cantidad de memoria especificada por el \[ **tamaño \_ es y** \] la longitud de \[ **\_ los** \] atributos no debe ser la misma. Por ejemplo, el cliente puede pasar un parámetro de entrada y salida a un servidor y especificar una asignación de memoria grande con el tamaño es , aunque especifica un pequeño número de elementos de datos que se pasarán con longitud \[ \] \[ **\_** \] \[ **\_ es** \] . Esto permite que el servidor rellene la matriz con más datos de los que recibió, que luego puede devolver al cliente.
+Puede usar el tamaño \[ **es y \_ length** \] es \[ [**\_ atributos**](length-is.md) \] juntos. Al hacerlo, el \[ **tamaño es un \_ atributo** \] que controla la cantidad de memoria asignada para los datos. El \[ **atributo length \_ is** \] especifica cuántos elementos se transmiten. La cantidad de memoria especificada por el \[ **tamaño \_ es** y la \] longitud de \[ **\_ los** \] atributos no debe ser la misma. Por ejemplo, el cliente puede pasar un parámetro in,out a un servidor y especificar una asignación de memoria grande con el tamaño es , aunque especifique un número pequeño de elementos de datos que se pasarán con \[ \] longitud \[ **\_** \] \[ **\_ es** \] . Esto permite que el servidor rellene la matriz con más datos de los que recibió, que luego puede devolver al cliente.
 
-En general, no resulta útil especificar que el tamaño es y la longitud está en los parámetros de entrada \[ **\_** \] o \[ [**\_**](length-is.md) \] \[ \] \[ \] salida. En ambos casos, \[ **el tamaño controla \_ la** \] asignación de memoria. La aplicación podría usar size para asignar más elementos de matriz de los que transmite \[ **\_** \] (como se especifica por \[ **longitud \_ es** \] ). Sin embargo, esto sería ineficaz. También sería ineficaz especificar valores idénticos para \[ **size \_ es** \] y length \[ **\_ es** \] . Crearía una sobrecarga adicional durante la serialización de parámetros. Si los valores de \[ **size son \_ y** \] length \[ **\_ es** \] siempre el mismo, omita \[ **la longitud \_ es** \] attribute.
+En general, no resulta útil especificar que el tamaño es y la longitud está en los \[ **\_** parámetros de \] entrada o \[ [**\_**](length-is.md) \] \[ \] \[ \] salida. En ambos casos, \[ **el tamaño controla \_ la** \] asignación de memoria. La aplicación podría usar \[ **size para \_ asignar** más elementos de matriz de los que transmite (como se \] especifica en length \[ **\_ es** \] ). Sin embargo, esto sería ineficaz. También sería ineficaz especificar valores idénticos para \[ **size \_ es** \] y length \[ **\_ es** \] . Crearía una sobrecarga adicional durante la serialización de parámetros. Si los valores de \[ **size son \_ y** \] length \[ **\_ es** \] siempre el mismo, omita \[ **la longitud \_ es** \] attribute.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -115,7 +115,7 @@ HRESULT Proc6(
 [Atributos de campo](/windows/desktop/Rpc/field-attributes)
 </dt> <dt>
 
-[**en \_ primer lugar es**](first-is.md)
+[**en primer \_ lugar es**](first-is.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)

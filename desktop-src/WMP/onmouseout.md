@@ -42,7 +42,7 @@ Este controlador de eventos no es aplicable al elemento **PLAYLIST.**
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: Atributo de WM/publicador
-description: El atributo WM/publicador es el nombre de la empresa que publicó el contenido.
+title: Atributo WM/Publisher
+description: El atributo WM/Publisher es el nombre de la empresa que publicó el contenido.
 ms.assetid: 5f3aa5de-237e-449c-918e-8750481adc6f
 keywords:
-- Windows atributo de WM/publicador Media Player
+- Atributo WM/Publisher Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,43 +12,43 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00bd0d2ab2b6d886639cffa1df0770dfe329f7f4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 22aa04eecb3999b3029948739eef51dab094d0ebf9b65ba01ccdcf6de59efc18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053793"
 ---
-# <a name="wmpublisher-attribute"></a>Atributo de WM/publicador
+# <a name="wmpublisher-attribute"></a>Atributo WM/Publisher
 
-El atributo **WM/publicador** es el nombre de la empresa que publicó el contenido.
+El **atributo WM/Publisher** es el nombre de la empresa que publicó el contenido.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de audio](audio-item-attributes.md)
 -   [Listas de reproducción de CD](cd-playlist-attributes.md)
 -   [Pistas de CD](cd-track-attributes.md)
--   [Atributos de archivo de Windows Media de uso frecuente](commonly-used-windows-media-file-attributes.md)
+-   [Atributos de archivo multimedia Windows uso frecuente](commonly-used-windows-media-file-attributes.md)
 -   [DVDs](dvd-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se almacena en la biblioteca (o caché) y en el archivo multimedia digital.
+Este atributo se almacena tanto en la biblioteca (o caché) como en el archivo multimedia digital.
 
-**Label**, **ReleasedBy** y **Studio** son alias para este atributo.
+**Label**, **ReleasedBy** y **Studio son** alias para este atributo.
 
-La constante del SDK de Windows Media Format para este atributo es g \_ wszWMPublisher.
+La constante Windows SDK de formato multimedia para este atributo es g \_ wszWMPublisher.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -56,7 +56,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

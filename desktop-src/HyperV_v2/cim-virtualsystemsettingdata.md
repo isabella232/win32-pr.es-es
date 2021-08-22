@@ -1,7 +1,7 @@
 ---
-description: Describe los aspectos virtuales de un sistema virtual a través de un conjunto de propiedades específicas de virtualización. CIM \_ VirtualSystemSettingData también se utiliza como clase de nivel superior de configuraciones del sistema virtual.
+description: Describe los aspectos virtuales de un sistema virtual a través de un conjunto de propiedades específicas de virtualización. CIM \_ VirtualSystemSettingData también se usa como la clase de nivel superior de las configuraciones del sistema virtual.
 ms.assetid: 501e659d-f190-41f9-aafa-447048a60e7c
-title: CIM_VirtualSystemSettingData (clase)
+title: CIM_VirtualSystemSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -30,16 +30,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ff2c9725c8469b3e2c29d2e98a708d27e80378f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1caed7797343eac9babd320af42fd6c9aaaffeff054211cc55bda0d437582d57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105668091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068495"
 ---
-# <a name="cim_virtualsystemsettingdata-class"></a>\_Clase VirtualSystemSettingData de CIM
+# <a name="cim_virtualsystemsettingdata-class"></a>Cim \_ VirtualSystemSettingData (clase)
 
-Describe los aspectos virtuales de un sistema virtual a través de un conjunto de propiedades específicas de virtualización. **CIM \_ VirtualSystemSettingData** también se utiliza como clase de nivel superior de configuraciones del sistema virtual.
+Describe los aspectos virtuales de un sistema virtual a través de un conjunto de propiedades específicas de virtualización. **CIM \_ VirtualSystemSettingData también** se usa como la clase de nivel superior de las configuraciones del sistema virtual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -69,26 +69,26 @@ class CIM_VirtualSystemSettingData : CIM_SettingData
 
 ## <a name="members"></a>Miembros
 
-La clase **CIM \_ VirtualSystemSettingData** tiene estos tipos de miembros:
+La **clase CIM \_ VirtualSystemSettingData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **CIM \_ VirtualSystemSettingData** tiene estas propiedades.
+La **clase CIM \_ VirtualSystemSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
 **AutomaticRecoveryAction**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La acción que se debe realizar para el sistema virtual cuando se produce un error en el software ejecutado por el sistema virtual. Los errores resueltos por esta propiedad solo incluyen aquellos que son detectables por la plataforma del host, como una condición de estado de espera no interrumpida.
+Acción que se debe realizar para el sistema virtual cuando se produce un error en el software ejecutado por el sistema virtual. Los errores solucionados por esta propiedad solo incluyen aquellos que la plataforma host puede detectar, como una condición de estado de espera no interrumpible.
 
 <dt>
 
@@ -108,7 +108,7 @@ La acción que se debe realizar para el sistema virtual cuando se produce un err
 
 <span id="Revert_to_snapshot"></span><span id="revert_to_snapshot"></span><span id="REVERT_TO_SNAPSHOT"></span>
 
-**Revertir a instantánea** (4)
+**Revertir a la instantánea** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -125,13 +125,13 @@ La acción que se debe realizar para el sistema virtual cuando se produce un err
 **AutomaticShutdownAction**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La acción que se realizará para el sistema virtual cuando se apague el host.
+Acción que se debe realizar para el sistema virtual cuando se cierra el host.
 
 <dt>
 
@@ -151,7 +151,7 @@ La acción que se realizará para el sistema virtual cuando se apague el host.
 
 <span id="Shutdown"></span><span id="shutdown"></span><span id="SHUTDOWN"></span>
 
-**Shutdown** (4)
+**Apagado** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -168,13 +168,13 @@ La acción que se realizará para el sistema virtual cuando se apague el host.
 **AutomaticStartupAction**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Acción que se realizará en el sistema virtual cuando se inicie el host.
+Acción que se debe realizar en el sistema virtual cuando se inicia el host.
 
 <dt>
 
@@ -187,14 +187,14 @@ Acción que se realizará en el sistema virtual cuando se inicie el host.
 
 <span id="Restart_if_previously_active"></span><span id="restart_if_previously_active"></span><span id="RESTART_IF_PREVIOUSLY_ACTIVE"></span>
 
-**Reiniciar si previamente estaba activo** (3)
+**Reiniciar si previamente está activo** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Always_startup"></span><span id="always_startup"></span><span id="ALWAYS_STARTUP"></span>
 
-**Siempre startup** (4)
+**Inicio siempre** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -211,26 +211,26 @@ Acción que se realizará en el sistema virtual cuando se inicie el host.
 **AutomaticStartupActionDelay**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Retraso de la acción de inicio. Este valor es una variante de intervalo del tipo de datos **DateTime** .
+Retraso de la acción de inicio. Este valor es una variante de intervalo del **tipo de datos datetime.**
 
 </dd> <dt>
 
 **AutomaticStartupActionSequenceNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El número de secuencia para la activación del sistema virtual cuando se inicia el sistema host. Un número menor indica la activación anterior. Si una o más configuraciones muestran el mismo valor, la secuencia depende de la implementación. Un valor de "0" indica que la secuencia depende de la implementación.
+Número de secuencia para la activación del sistema virtual cuando se inicia el sistema host. Un número inferior indica una activación anterior. Si una o varias configuraciones muestran el mismo valor, la secuencia depende de la implementación. Un valor de "0" indica que la secuencia depende de la implementación.
 
 </dd> <dt>
 
@@ -243,7 +243,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso del directorio donde se almacena la información sobre la configuración del sistema virtual. El formato de esta propiedad es un URI basado en RFC 2079.
+Ruta de acceso al archivo del directorio donde se almacena información sobre la configuración del sistema virtual. El formato de esta propiedad es un URI basado en RFC 2079.
 
 </dd> <dt>
 
@@ -256,7 +256,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso relativa del archivo donde se almacena la información sobre la configuración del sistema virtual. La ruta de acceso relativa se anexa al valor de la propiedad **ConfigurationDataRoot** . El formato de esta propiedad es un URI basado en RFC 2079.
+Ruta de acceso relativa del archivo donde se almacena información sobre la configuración del sistema virtual. La ruta de acceso relativa se anexa al valor de la **propiedad ConfigurationDataRoot.** El formato de esta propiedad es un URI basado en RFC 2079.
 
 </dd> <dt>
 
@@ -272,7 +272,7 @@ Tipo de acceso: solo lectura
 Identificador único de la configuración del sistema virtual.
 
 > [!Note]  
-> **ConfigurationID** es diferente del **InstanceID** y se asigna mediante la implementación a un sistema virtual o una configuración de sistema virtual. **ConfigurationID** no es una clave y se puede producir el mismo valor para más de una instancia.
+> **ConfigurationID** es diferente de **InstanceID** y se asigna mediante la implementación a un sistema virtual o a una configuración del sistema virtual. **ConfigurationID** no es una clave y puede producirse el mismo valor para más de una instancia.
 
  
 
@@ -281,7 +281,7 @@ Identificador único de la configuración del sistema virtual.
 **CreationTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -300,20 +300,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso relativa del directorio donde se almacena la información de registro del sistema virtual. La ruta de acceso relativa se anexa al valor de la propiedad **ConfigurationDataRoot** . El formato de esta propiedad es un URI basado en RFC 2079.
+Ruta de acceso de archivo relativa del directorio donde se almacena la información de registro del sistema virtual. La ruta de acceso relativa se anexa al valor de la **propiedad ConfigurationDataRoot.** El formato de esta propiedad es un URI basado en RFC 2079.
 
 </dd> <dt>
 
 **Notas**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Una matriz que contiene las notas proporcionadas por el usuario que están relacionadas con el sistema virtual.
+Matriz que contiene notas proporcionadas por el usuario relacionadas con el sistema virtual.
 
 </dd> <dt>
 
@@ -326,7 +326,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso del archivo donde se almacena la información relacionada con la recuperación del sistema virtual. El formato de esta propiedad es un URI basado en RFC 2079.
+Ruta de acceso del archivo donde se almacena la información relacionada con la recuperación del sistema virtual. El formato de esta propiedad es un URI basado en RFC 2079.
 
 </dd> <dt>
 
@@ -339,7 +339,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso relativa del directorio donde se almacena la información sobre las instantáneas del sistema virtual. La ruta de acceso relativa se anexa al valor de la propiedad **ConfigurationDataRoot** . El formato de esta propiedad es un URI basado en RFC 2079.
+Ruta de acceso relativa del directorio donde se almacena información sobre las instantáneas del sistema virtual. La ruta de acceso relativa se anexa al valor de la **propiedad ConfigurationDataRoot.** El formato de esta propiedad es un URI basado en RFC 2079.
 
 </dd> <dt>
 
@@ -352,7 +352,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La ruta de acceso relativa del directorio donde se almacena la información relacionada con la suspensión del sistema virtual. La ruta de acceso relativa se anexa al valor de la propiedad **ConfigurationDataRoot** . El formato de esta propiedad es un URI basado en RFC 2079.
+Ruta de acceso relativa del directorio donde se almacena la información relacionada de suspensión sobre el sistema virtual. La ruta de acceso relativa se anexa al valor de la **propiedad ConfigurationDataRoot.** El formato de esta propiedad es un URI basado en RFC 2079.
 
 </dd> <dt>
 
@@ -365,11 +365,11 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Ruta de acceso relativa al archivo del directorio donde se almacenan los archivos de intercambio del sistema virtual. La ruta de acceso relativa se anexa al valor de la propiedad **ConfigurationDataRoot** . El formato de esta propiedad es un URI basado en RFC 2079.
+Ruta de acceso de archivo relativa del directorio donde se almacenan los archivos de intercambio del sistema virtual. La ruta de acceso relativa se anexa al valor de la **propiedad ConfigurationDataRoot.** El formato de esta propiedad es un URI basado en RFC 2079.
 
 </dd> <dt>
 
-**Virtualsystemidentifer**
+**VirtualSystemIdentifier**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -378,9 +378,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre único del sistema dentro de la plataforma de virtualización. **Virtualsystemidentifer** no es el nombre de host asignado a la instancia del sistema operativo que se ejecuta dentro del sistema virtual, ni tampoco es una dirección IP o dirección MAC asignada a ninguno de sus puertos de red.
+Nombre único del sistema dentro de la plataforma de virtualización. **VirtualSystemIdentifier** no es el nombre de host asignado a la instancia del sistema operativo que se ejecuta en el sistema virtual, ni es una dirección IP o dirección MAC asignada a ninguno de sus puertos de red.
 
-**Virtualsystemidentifer** puede contener reglas específicas de implementación, como patrones simples o una expresión regular que la implementación pueda interpretar al establecer **virtualsystemidentifer**.
+**VirtualSystemIdentifier puede** contener reglas específicas de implementación, como patrones simples o una expresión regular que la implementación puede interpretar al establecer **VirtualSystemIdentifier.**
 
 </dd> <dt>
 
@@ -396,23 +396,23 @@ Tipo de acceso: solo lectura
 Tipo del sistema virtual.
 
 > [!Note]  
-> Si no se conoce el tipo de sistema virtual, este valor debe establecerse en "DMTF: Unknown".
+> Si el tipo de sistema virtual es desconocido, este valor debe establecerse en "DMTF:unknown".
 
  
 
-A esta propiedad se le da formato con el siguiente formato de Backus Naur form (ABNF) ampliado:
+Esta propiedad tiene formato con el siguiente formato de forma de Backus Naur aumentada (ABNF):
 
-vs-Type = DMTF-Value/Other-org-Value/Legacy-Value; DMTF-Value = "DMTF:" Defining-org ":" org-vs-Type; otro: org-Value = Defining-org ":" org-vs-Type;
+vs-type = dmtf-value / other-org-value / legacy-value; dmtf-value = "DMTF:" defining-org ":" org-vs-type; other-org-value = defining-org ":" org-vs-type;
 
 El valor del formato ABNF anterior es:
 
--   *DMTF:*   valor de propiedad definido por DMTF y que se define en la descripción de esta propiedad.
--   *other-org-Value*   es un valor de propiedad definido por una entidad comercial distinta de DMTF y no se define en la descripción de esta propiedad.
--   valor *heredado:* valor de propiedad definido por una entidad comercial distinta de DMTF y no se define en la descripción de esta propiedad. Estos valores están permitidos pero se recomienda que estén en desuso a lo largo del tiempo.
--   *definir: org*   un identificador para la entidad comercial que define el tipo de sistema virtual. Debe incluir un nombre con copyright, marca registrada o un nombre único que sea propiedad de la entidad empresarial. No debe ser "DMTF" y no debe contener un signo de dos puntos.
--   *org-vs-escriba*   un identificador para el tipo de sistema virtual dentro de la entidad empresarial que lo define. Debe ser único dentro de la definición de-org. org-vs-Type puede usar cualquier carácter permitido para las cadenas CIM, excepto los siguientes: U0000-U001F (controles C0 Unicode), U0020 (espacio), U007F (controles C0 Unicode) o U0080-U009F (controles C1 de Unicode).
+-   *dmtf-value*   un valor de propiedad definido por DMTF y se define en la descripción de esta propiedad.
+-   *other-org-value*   es un valor de propiedad definido por una entidad empresarial que no sea DMTF y no se define en la descripción de esta propiedad.
+-   *valor heredado un*   valor de propiedad definido por una entidad empresarial que no sea DMTF y no se define en la descripción de esta propiedad. Estos valores se permiten, pero se recomienda que estén en desuso con el tiempo.
+-   *define-org*   un identificador para la entidad empresarial que define el tipo de sistema virtual. Debe incluir un nombre con derechos de autor, una marca comercial o un nombre único que sea propiedad de la entidad empresarial. No debe ser "DMTF" y no debe contener dos puntos.
+-   *org-vs-type un*   identificador para el tipo de sistema virtual dentro de la entidad empresarial de definición. Debe ser único en defining-org. org-vs-type puede usar cualquier carácter permitido para las cadenas CIM, excepto lo siguiente: U0000-U001F (controles Unicode C0), U0020 (espacio), U007F (controles Unicode C0) o U0080-U009F (controles Unicode C1).
 -   Si es necesario estructurar el valor en segmentos, los segmentos deben separarse con un solo signo de dos puntos.
--   Los valores de esta propiedad deben procesarse de forma confidencial. Están diseñados para procesarse mediante programación, en lugar de ser un nombre para mostrar y deben ser cortos.
+-   Los valores de esta propiedad deben procesarse con distinguen mayúsculas de minúsculas. Están diseñados para procesarse mediante programación, en lugar de ser un nombre para mostrar, y deben ser cortos.
 
 </dd> </dl>
 
@@ -420,12 +420,12 @@ El valor del formato ABNF anterior es:
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -434,7 +434,7 @@ El valor del formato ABNF anterior es:
 
 <dl> <dt>
 
-[**SettingData de CIM \_**](cim-settingdata.md)
+[**CIM \_ SettingData**](cim-settingdata.md)
 </dt> </dl>
 
  

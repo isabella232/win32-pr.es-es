@@ -1,17 +1,17 @@
 ---
-description: System.Music.AlbumTitle
+description: Sistema. Música. AlbumTitle
 ms.assetid: 7335e246-3a3e-4610-8db5-baddb0b80901
-title: System.Music.AlbumTitle
+title: Sistema. Música. AlbumTitle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0c3acbd72d84dd9369b51d313533c4eb302d15f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e4b8ce3ddc8ea258130c9b3bd7c1092f2ae866512c0be8b09958b87a93edf7e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119597255"
 ---
-# <a name="systemmusicalbumtitle"></a>System.Music.AlbumTitle
+# <a name="systemmusicalbumtitle"></a>Sistema. Música. AlbumTitle
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 

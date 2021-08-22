@@ -25,7 +25,7 @@ ms.locfileid: "119622405"
 
 El **método getSigningCertificateName** recupera el nombre del firmante del certificado de firma.
 
-Este método también se puede usar para mostrar el certificado en un cuadro de diálogo. Este método llama a la [*función CryptoAPI*](../secgloss/c-gly.md) [**CertGetNameString.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa)
+Este método también se puede usar para mostrar el certificado en un cuadro de diálogo. Este método llama a la función [**CertGetNameString de**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa) [*CryptoAPI.*](../secgloss/c-gly.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -74,7 +74,7 @@ Puntero a una cadena que devuelve el nombre del certificado de firma. El certifi
 
 Si el método se realiza correctamente, el método devuelve S \_ OK.
 
-Si se produce un error en el método, devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
+Si se produce un error en el método , devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
 ### <a name="vb"></a>VB
 
@@ -82,7 +82,7 @@ Cadena que representa el nombre del certificado de firma. El certificado de firm
 
 ## <a name="remarks"></a>Comentarios
 
-El **método getSigningCertificateName** devuelve el nombre del firmante del certificado que usted (u otro administrador) ha seleccionado en una llamada correcta anterior a [**ISCrdEnr::selectSigningCertificate**](iscrdenr-selectsigningcertificate.md) o [**ISCrdEnr::setSigningCertificate**](iscrdenr-setsigningcertificate.md). Este método llama a la [**función CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa) para recuperar el nombre del sujeto según la secuencia descrita para el valor CERT NAME SIMPLE DISPLAY TYPE del parámetro dwType de \_ \_ \_ \_ **CertGetNameString.** 
+El **método getSigningCertificateName** devuelve el nombre del firmante del certificado que ha seleccionado (u otro administrador) en una llamada correcta anterior a [**ISCrdEnr::selectSigningCertificate**](iscrdenr-selectsigningcertificate.md) o [**ISCrdEnr::setSigningCertificate**](iscrdenr-setsigningcertificate.md). Este método llama a la [**función CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa) para recuperar el nombre del sujeto según la secuencia descrita para el valor CERT NAME SIMPLE DISPLAY TYPE del parámetro dwType de \_ \_ \_ \_ **CertGetNameString.** 
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,7 +97,7 @@ El **método getSigningCertificateName** devuelve el nombre del firmante del cer
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

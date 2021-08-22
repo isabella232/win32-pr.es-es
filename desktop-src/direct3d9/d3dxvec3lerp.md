@@ -89,7 +89,7 @@ Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) que es el resultado d
 
 Esta función realiza la interpolación lineal en función de la fórmula siguiente: V1 + s(V2-V1).
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec3Lerp** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXVec3Lerp** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,7 +102,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el *parámetr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

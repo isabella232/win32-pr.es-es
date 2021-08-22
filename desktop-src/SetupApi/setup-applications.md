@@ -13,7 +13,7 @@ ms.locfileid: "119665185"
 ---
 # <a name="setup-applications"></a>Configuración de aplicaciones
 
-Normalmente, se crea un *archivo INF antes* de crear una aplicación de instalación. Un archivo INF es un archivo de texto que contiene información utilizada por la aplicación de instalación durante una instalación. Entre los ejemplos de la información que se puede almacenar en un archivo INF se incluyen cambios de INI y del Registro, nombres de archivo y ubicaciones de los archivos de origen en los medios de origen.
+Normalmente, se crea un *archivo INF antes* de crear una aplicación de instalación. Un archivo INF es un archivo de texto que contiene información utilizada por la aplicación de instalación durante una instalación. Algunos ejemplos de la información que se puede almacenar en un archivo INF son los cambios de INI y del Registro, los nombres de archivo y las ubicaciones de los archivos de origen en los medios de origen.
 
 Después de crear un archivo INF, escriba el código fuente de la aplicación de instalación. Puede usar las funciones de instalación de la aplicación de instalación para acceder a la información del archivo INF y realizar operaciones de instalación.
 
@@ -23,7 +23,7 @@ En las secciones siguientes se describe el uso de archivos INF y las funciones d
 -   [Uso de archivos INF](using-inf-files.md)
 -   [Funciones de instalación de archivos INF](inf-file-setup-functions.md)
 
-Para obtener más información sobre el uso de las funciones de instalación en una aplicación, vea [Creating Setup Applications](creating-setup-applications.md).
+Para obtener más información sobre el uso de las funciones de instalación en una aplicación, vea [Crear aplicaciones de instalación.](creating-setup-applications.md)
 
  
 

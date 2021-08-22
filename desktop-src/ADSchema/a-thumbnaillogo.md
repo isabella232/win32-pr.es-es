@@ -1,11 +1,11 @@
 ---
-title: Atributo logo
+title: Atributo de logotipo
 description: BLOB que contiene un logotipo para este objeto.
 ms.assetid: c9692c2c-01a1-4ab6-9347-05698b1bfcbd
 ms.tgt_platform: multiple
 keywords:
 - Esquema de AD de atributo de logotipo
-- thumbnailLogo esquema de AD de atributos
+- thumbnailLogo attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c6c118bd16cafeed81b66f3d5cd3332ed9d08fa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 37fbf9aee46158d7040181f013c1312bcbe11c21cf2c00884d258841c9c90231
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119645045"
 ---
-# <a name="logo-attribute"></a>Atributo logo
+# <a name="logo-attribute"></a>Atributo de logotipo
 
 BLOB que contiene un logotipo para este objeto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Logotipo                                                  |
-| Nombre para mostrar de LDAP | thumbnailLogo                                         |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| Ldap-Display-Name | thumbnailLogo                                         |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 2.16.840.1.113730.3.1.36                              |
-| System-ID-GUID    | bf9679a9-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf9679a9-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -44,7 +44,7 @@ BLOB que contiene un logotipo para este objeto.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ BLOB que contiene un logotipo para este objeto.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                |
-| System-Only            | False                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                              |
-| Está indexado             | False                                                                                                                             |
-| En el catálogo global      | False                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                      |
+| System-Only            | Falso                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                              |
+| Está indexado             | Falso                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                      |
 | Range-Lower            | 1                                                                                                                                 |
 | Range-Upper            | 32767                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                        |
@@ -77,13 +77,13 @@ BLOB que contiene un logotipo para este objeto.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                |
-| System-Only            | False                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                              |
-| Está indexado             | False                                                                                                                             |
-| En el catálogo global      | False                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                      |
+| System-Only            | Falso                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                              |
+| Está indexado             | Falso                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                      |
 | Range-Lower            | 1                                                                                                                                 |
 | Range-Upper            | 32767                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                        |
@@ -92,19 +92,19 @@ BLOB que contiene un logotipo para este objeto.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 1                                                              |
 | Range-Upper            | 32767                                                          |
 | Search-Flags           | 0x00000000                                                     |
@@ -117,15 +117,15 @@ BLOB que contiene un logotipo para este objeto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                |
-| System-Only            | False                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                              |
-| Está indexado             | False                                                                                                                             |
-| En el catálogo global      | False                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                      |
+| System-Only            | Falso                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                              |
+| Está indexado             | Falso                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                      |
 | Range-Lower            | 1                                                                                                                                 |
 | Range-Upper            | 32767                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                        |
@@ -138,15 +138,15 @@ BLOB que contiene un logotipo para este objeto.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                |
-| System-Only            | False                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                              |
-| Está indexado             | False                                                                                                                             |
-| En el catálogo global      | False                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                      |
+| System-Only            | Falso                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                              |
+| Está indexado             | Falso                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                      |
 | Range-Lower            | 1                                                                                                                                 |
 | Range-Upper            | 32767                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                        |
@@ -161,13 +161,13 @@ BLOB que contiene un logotipo para este objeto.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                |
-| System-Only            | False                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                              |
-| Está indexado             | False                                                                                                                             |
-| En el catálogo global      | False                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                      |
+| System-Only            | Falso                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                              |
+| Está indexado             | Falso                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                      |
 | Range-Lower            | 1                                                                                                                                 |
 | Range-Upper            | 32767                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                        |
@@ -182,13 +182,13 @@ BLOB que contiene un logotipo para este objeto.
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                |
-| System-Only            | False                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                              |
-| Está indexado             | False                                                                                                                             |
-| En el catálogo global      | False                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                      |
+| System-Only            | Falso                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                              |
+| Está indexado             | Falso                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                      |
 | Range-Lower            | 1                                                                                                                                 |
 | Range-Upper            | 32767                                                                                                                             |
 | Search-Flags           | 0x00000000                                                                                                                        |

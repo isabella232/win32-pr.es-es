@@ -1,9 +1,9 @@
 ---
-title: función glIndexs (GL. h)
+title: Función glIndexs (Gl.h)
 description: La función glIndexs establece el índice de color actual.
 ms.assetid: 193304e6-c88a-49a6-935b-29bcf1954564
 keywords:
-- glIndexs (función) OpenGL
+- Función glIndexs OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cdc2036b3aec37c8f727dc38a5186998a5bc80c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 65d3e309d8288765e493cac6c586c873d4bb927ca2d0fc89c3b8c621b2e2ed31
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104149926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493395"
 ---
-# <a name="glindexs-function"></a>glIndexs función)
+# <a name="glindexs-function"></a>función glIndexs
 
-La función **glIndexs** establece el índice de color actual.
+La **función glIndexs** establece el índice de color actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,30 +51,30 @@ Nuevo valor para el índice de color actual.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glIndexs** actualiza el índice de color actual (de un solo valor). Toma un argumento: el nuevo valor para el índice de color actual.
+La **función glIndexs** actualiza el índice de color actual (con un solo valor). Toma un argumento: el nuevo valor para el índice de color actual.
 
-El índice actual se almacena como un valor de punto flotante. Los valores enteros se convierten directamente en valores de punto flotante, sin asignación especial.
+El índice actual se almacena como un valor de punto flotante. Los valores enteros se convierten directamente en valores de punto flotante, sin ninguna asignación especial.
 
-Los valores de índice fuera del intervalo representable del búfer de índice de color no se fijan. Sin embargo, antes de que un índice esté desactivado (si está habilitado) y escrito en el fotogramas, se convierte al formato de punto fijo. Los bits de la parte entera del valor de punto fijo resultante que no se correspondan con bits del fotogramas se enmascaran.
+Los valores de índice fuera del intervalo representable del búfer de índice de color no están fijos. Sin embargo, antes de que se dithere un índice (si está habilitado) y se escriba en el búfer de fotogramas, se convierte al formato de punto fijo. Los bits de la parte entera del valor de punto fijo resultante que no se correspondan con los bits del búfer de fotogramas se enmascaran.
 
-El índice actual se puede actualizar en cualquier momento. En concreto, se puede llamar a **glIndexs** entre una llamada a [**glBegin**](/windows/desktop/OpenGL/glbegin) y la llamada correspondiente a [**glEnd**](glend.md).
+El índice actual se puede actualizar en cualquier momento. En concreto, se puede llamar a **glIndexs** entre una llamada a [**glBegin**](/windows/desktop/OpenGL/glbegin) y la llamada correspondiente [**a glEnd**](glend.md).
 
-La siguiente función recupera información relacionada con **glIndexs**:
+La función siguiente recupera información relacionada con **glIndexs**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento \_ índice actual de GL \_
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ CURRENT \_ INDEX
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

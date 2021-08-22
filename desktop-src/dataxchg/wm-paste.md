@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_PASTE (Winuser. h)
-description: Una aplicación envía un \_ mensaje de pegado de WM a un control de edición o un cuadro combinado para copiar el contenido actual del portapapeles en el control de edición situado en la posición actual del símbolo de intercalación. Los datos se insertan solo si el Portapapeles contiene datos en \_ formato de texto CF.
+title: WM_PASTE mensaje (Winuser.h)
+description: Una aplicación envía un mensaje WM PASTE a un control de edición o a un cuadro combinado para copiar el contenido actual del Portapapeles en el control de edición en la posición \_ del cursor de cursor actual. Los datos solo se insertan si el Portapapeles contiene datos en formato CF \_ TEXT.
 ms.assetid: 6830b511-986f-46ef-a977-7adedffe86ea
 keywords:
-- Intercambio de datos de mensajes de WM_PASTE
+- WM_PASTE mensaje Data Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86b723830ecdd0f8b7e3faa9da9adcb51161b297
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1a3cc1815349a2194d5dd7e2a65eb1c9ae77a2947f41361a90e92bae73357f81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119499125"
 ---
-# <a name="wm_paste-message"></a>\_Mensaje de pegado de WM
+# <a name="wm_paste-message"></a>Mensaje \_ DE WM PASTE
 
-Una aplicación envía un mensaje de **\_ pegado de WM** a un control de edición o un cuadro combinado para copiar el contenido actual del portapapeles en el control de edición situado en la posición actual del símbolo de intercalación. Los datos se insertan solo si el Portapapeles contiene datos en formato de [**\_ texto CF**](standard-clipboard-formats.md) .
+Una aplicación envía un **mensaje WM \_ PASTE** a un control de edición o a un cuadro combinado para copiar el contenido actual del Portapapeles en el control de edición en la posición del cursor de diálogo actual. Los datos solo se insertan si el Portapapeles contiene datos en [**formato CF \_ TEXT.**](standard-clipboard-formats.md)
 
 
 ```C++
@@ -39,24 +39,24 @@ Una aplicación envía un mensaje de **\_ pegado de WM** a un control de edició
 *wParam* 
 </dt> <dd>
 
-Este parámetro no se utiliza y debe ser cero.
+Este parámetro no se usa y debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Este parámetro no se utiliza y debe ser cero.
+Este parámetro no se usa y debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando se envía a un cuadro combinado, el mensaje de **\_ pegado de WM** se controla mediante su control de edición. Este mensaje no tiene ningún efecto cuando se envía a un cuadro combinado con el estilo [**CBS \_ DROPDOWNLIST**](../controls/combo-box-styles.md) .
+Cuando se envía a un cuadro combinado, su control de edición controla el mensaje **\_ WM PASTE.** Este mensaje no tiene ningún efecto cuando se envía a un cuadro combinado con el estilo [**\_ DROPDOWNLIST de CBS.**](../controls/combo-box-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ Cuando se envía a un cuadro combinado, el mensaje de **\_ pegado de WM** se con
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -77,19 +77,19 @@ Cuando se envía a un cuadro combinado, el mensaje de **\_ pegado de WM** se con
 **Referencia**
 </dt> <dt>
 
-[**\_borrado de WM**](wm-clear.md)
+[**WM \_ CLEAR**](wm-clear.md)
 </dt> <dt>
 
-[**copia de WM \_**](wm-copy.md)
+[**WM \_ COPY**](wm-copy.md)
 </dt> <dt>
 
-[**cortar de WM \_**](wm-cut.md)
+[**WM \_ CUT**](wm-cut.md)
 </dt> <dt>
 
-[**deshacer de WM \_**](/windows/desktop/Controls/wm-undo)
+[**WM \_ UNDO**](/windows/desktop/Controls/wm-undo)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Portapapeles](clipboard.md)

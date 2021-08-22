@@ -1,11 +1,11 @@
 ---
-title: External. cancelNavigate (método)
-description: Tenga en cuenta que en este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. | External. cancelNavigate (método)
+title: Método External.cancelNavigate
+description: Nota En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. | Método External.cancelNavigate
 ms.assetid: e65d64fb-292c-4413-9727-b24609e78d68
 keywords:
-- método cancelNavigate de Windows Media Player
-- método cancelNavigate de Windows Media Player, clase externa
-- Clase externa Windows Media Player, método cancelNavigate
+- Método cancelNavigate Reproductor de Windows Media
+- Método cancelNavigate Reproductor de Windows Media , Clase externa
+- Clase externa Reproductor de Windows Media método , cancelNavigate
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55a6cbc0f749fd6ca33d78dfaed1d256634eb9c9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 152594a427282a27c493f33f648b8a889a855f40a5fb13de69b7cc342099eed2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649435"
 ---
-# <a name="externalcancelnavigate-method"></a>External. cancelNavigate (método)
+# <a name="externalcancelnavigate-method"></a>Método External.cancelNavigate
 
 > [!Note]  
-> En este tema se describe la funcionalidad diseñada para su uso en tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
+> En este tema se describe la funcionalidad diseñada para su uso por las tiendas en línea. No se admite el uso de esta funcionalidad fuera del contexto de una tienda en línea.
 
  
 
-El método **cancelNavigate** informa a Windows Media Player que no debe mostrar una nueva página de detección aunque la vista haya cambiado en el reproductor.
+El **método cancelNavigate** informa Reproductor de Windows Media que no debe mostrar una nueva página de detección aunque la vista haya cambiado en el reproductor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,24 +49,24 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando la vista cambia en Windows Media Player, el reproductor llama al complemento de la tienda en línea para determinar la página de detección que se va a mostrar a continuación. En algunos casos, sin embargo, la tienda en línea podría querer que el reproductor continuara mostrando la página de detección existente. El siguiente proceso determina si el reproductor muestra una nueva página de detección:
+Cuando la vista cambia en Reproductor de Windows Media, el reproductor llama al complemento de la tienda en línea para determinar qué página de detección se mostrará a continuación. Sin embargo, en algunos casos, es posible que la tienda en línea quiera que el reproductor siga mostrando la página de detección existente. El siguiente proceso determina si el reproductor muestra una nueva página de detección:
 
-1.  Una acción por parte del usuario, ya sea en la interfaz de usuario del reproductor o en la página de detección, solicita que el reproductor cambie su vista.
+1.  Una acción del usuario, ya sea en la interfaz de usuario del reproductor o en la página de detección, solicita que el reproductor cambie su vista.
 2.  El reproductor llama al método [GetTemplate](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-gettemplate) del complemento para determinar qué página de detección se va a mostrar a continuación. El reproductor almacena la dirección URL de la nueva página de detección, pero no muestra la nueva página de detección en este momento.
-3.  El reproductor genera el evento [OnViewChange](external-onviewchange-event.md) .
-4.  Si el controlador de eventos **OnViewChange** de la página de detección llama a **CancelNavigate**, el reproductor no muestra la nueva página de detección (determinada en el paso 2). En su lugar, sigue mostrando la página de detección existente. Si el controlador de eventos **OnViewChange** no llama a **CancelNavigate**, el reproductor muestra la nueva página de detección.
+3.  El reproductor genera el [evento OnViewChange.](external-onviewchange-event.md)
+4.  Si el controlador de eventos **OnViewChange** de la página de detección llama a **cancelNavigate**, el reproductor no muestra la nueva página de detección (determinada en el paso 2). En su lugar, sigue mostrando la página de detección existente. Si el **controlador de eventos OnViewChange** no llama a **cancelNavigate,** el reproductor muestra la nueva página de detección.
 
-Por ejemplo, supongamos que el reproductor muestra actualmente la vista de un álbum con una determinada pista seleccionada. Supongamos también que la página de detección actual es la página que representa el álbum completo. Si el usuario hace clic en otra pista del mismo álbum, la vista del jugador cambia ligeramente para mostrar que la nueva pista está seleccionada. Sin embargo, no es necesario mostrar una nueva página de detección. La página de detección que representa el álbum completo sigue siendo la página adecuada para que la muestre el reproductor.
+Por ejemplo, suponga que el reproductor muestra actualmente la vista de un álbum con una pista determinada seleccionada. Supongamos también que la página de detección actual es la página que representa todo el álbum. Si el usuario hace clic en una pista diferente del mismo álbum, la vista del reproductor cambia ligeramente para mostrar que la nueva pista está seleccionada. Pero no es necesario mostrar una nueva página de detección. La página de detección que representa todo el álbum sigue siendo la página adecuada para que la muestre el jugador.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 11.<br/>                                                |
+| Versión<br/> | Reproductor de Windows Media 11.<br/>                                                |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -75,13 +75,13 @@ Por ejemplo, supongamos que el reproductor muestra actualmente la vista de un á
 
 <dl> <dt>
 
-[**Objeto externo para las tiendas en línea de tipo 1**](external-object-for-type-1-online-stores.md)
+[**Objeto externo para almacenes en línea de tipo 1**](external-object-for-type-1-online-stores.md)
 </dt> <dt>
 
-[**External. changeViewOnlineList**](external-changeviewonlinelist.md)
+[**External.changeViewOnlineList**](external-changeviewonlinelist.md)
 </dt> <dt>
 
-[**External. OnViewChange**](external-onviewchange-event.md)
+[**External.OnViewChange**](external-onviewchange-event.md)
 </dt> </dl>
 
  

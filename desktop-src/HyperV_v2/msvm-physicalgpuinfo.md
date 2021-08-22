@@ -1,7 +1,7 @@
 ---
-description: Contiene información sobre una unidad de procesamiento de gráficos (GPU) física de RemoteFX.
+description: Contiene información sobre una RemoteFX de procesamiento de gráficos físicos (GPU).
 ms.assetid: 86B47AAE-DBFF-43EF-88C6-44836D6C3AFA
-title: Msvm_PhysicalGPUInfo (clase)
+title: Msvm_PhysicalGPUInfo clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,18 +21,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: cd4ccf65b364620e84063ea6398c59dd0e467f67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a95310d4f2bc747ddf9d78ce485e1d3756a7507f5798d1e61b6c79dc46bf2b5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119520896"
 ---
-# <a name="msvm_physicalgpuinfo-class"></a>MSVM \_ PhysicalGPUInfo (clase)
+# <a name="msvm_physicalgpuinfo-class"></a>Clase Msvm \_ PhysicalGPUInfo
 
-Contiene información sobre una unidad de procesamiento de gráficos (GPU) física de RemoteFX.
+Contiene información sobre una RemoteFX de procesamiento de gráficos físicos (GPU).
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,26 +53,26 @@ class Msvm_PhysicalGPUInfo : CIM_ManagedElement
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ PhysicalGPUInfo** tiene estos tipos de miembros:
+La **clase Msvm \_ PhysicalGPUInfo** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ PhysicalGPUInfo** tiene estas propiedades.
+La **clase \_ PhysicalGPUInfo de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
 **AvailableVideoMemory**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La cantidad de memoria de vídeo sin usar, en bytes, en la GPU física que puede usar RemoteFX.
+Cantidad de memoria de vídeo sin usar, en bytes, en la GPU física que puede usar RemoteFX.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -111,7 +111,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -124,7 +124,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (1024)
+Calificadores: [**MAXLEN**](/windows/desktop/WmiSdk/standard-qualifiers) (1024)
 </dt> </dl>
 
 Identificador único de la GPU física.
@@ -140,10 +140,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Cadena que identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Cadena que identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -156,7 +156,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (1024)
+Calificadores: [**MAXLEN**](/windows/desktop/WmiSdk/standard-qualifiers) (1024)
 </dt> </dl>
 
 Nombre para mostrar de la GPU física.
@@ -166,13 +166,13 @@ Nombre para mostrar de la GPU física.
 **TotalVideoMemory**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-La cantidad total de memoria de vídeo, en bytes, en la GPU física que puede usar RemoteFX.
+Cantidad total de memoria de vídeo, en bytes, en la GPU física que puede usar RemoteFX.
 
 </dd> </dl>
 
@@ -182,10 +182,10 @@ La cantidad total de memoria de vídeo, en bytes, en la GPU física que puede us
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -194,7 +194,7 @@ La cantidad total de memoria de vídeo, en bytes, en la GPU física que puede us
 
 <dl> <dt>
 
-[**ManagedElement de CIM \_**](cim-managedelement.md)
+[**Elemento administrado de CIM \_**](cim-managedelement.md)
 </dt> </dl>
 
  

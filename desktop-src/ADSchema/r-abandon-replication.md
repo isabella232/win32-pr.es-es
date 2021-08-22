@@ -4,7 +4,7 @@ description: Derecho extendido necesario para cancelar una sincronización de re
 ms.assetid: 74a2d95a-08d9-43f7-9fe2-ce0eb4930344
 ms.tgt_platform: multiple
 keywords:
-- Abandon-Replication de AD derecho extendido
+- Abandon-Replication esquema de AD derecho extendido
 topic_type:
 - apiref
 api_name:
@@ -26,7 +26,7 @@ Derecho extendido necesario para cancelar una sincronización de replicación.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |--------------|--------------------------------------|
 | CN           | Abandon-Replication                  |
 | Display-Name | Abandonar replicación                  |
@@ -42,7 +42,7 @@ Derecho extendido necesario para cancelar una sincronización de replicación.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------------|------------------------------------------|
 | Applies-To              | [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 | Localization-Display-ID | 30                                       |

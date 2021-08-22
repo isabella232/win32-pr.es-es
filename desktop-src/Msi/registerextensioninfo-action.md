@@ -4,12 +4,12 @@ ms.assetid: 3c243ca3-9fa7-41ec-968e-7954d7d45432
 title: Acción RegisterExtensionInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0310344b6579ef65faac41238bb607ce98411b52
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c0541fc512c2300b0cb37f4a23305a3d312a4e60208890507fb7c6112e00c94
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119519385"
 ---
 # <a name="registerextensioninfo-action"></a>Acción RegisterExtensionInfo
 
@@ -17,20 +17,20 @@ La acción RegisterExtensionInfo administra el registro de información relacion
 
 ## <a name="sequence-restrictions"></a>Restricciones de secuencia
 
-La acción RegisterExtensionInfo debe aparecer después de la acción [InstallFiles](installfiles-action.md) y la acción [UnregisterExtensionInfo](unregisterextensioninfo-action.md) .
+La acción RegisterExtensionInfo debe ir después de [la acción InstallFiles](installfiles-action.md) y [la acción UnregisterExtensionInfo.](unregisterextensioninfo-action.md)
 
-La secuenciación de las acciones del grupo siguiente está restringida. Si un subconjunto de estas acciones se produce juntos en una tabla de secuencia, deben tener el mismo orden de secuencia relativo que se muestra:
+La secuenciación de las acciones del siguiente grupo está restringida. Si algún subconjunto de estas acciones se produce junto en una tabla de secuencias, debe tener el mismo orden de secuencia relativo que se muestra:
 
 -   [UnregisterClassInfo](unregisterclassinfo-action.md)
 -   [UnregisterExtensionInfo](unregisterextensioninfo-action.md)
 -   [UnregisterProgIdInfo](unregisterprogidinfo-action.md)
--   [UnregisterMIMEInfo](unregistermimeinfo-action.md)
+-   [Anulación del registroMIMEInfo](unregistermimeinfo-action.md)
 -   [RegisterClassInfo](registerclassinfo-action.md)
 -   RegisterExtensionInfo
 -   [RegisterProgIdInfo](registerprogidinfo-action.md)
 -   [RegisterMIMEInfo](registermimeinfo-action.md)
 
-Por ejemplo, RegisterExtensionInfo debe aparecer después de [UnregisterMIMEInfo](unregistermimeinfo-action.md) en la tabla de secuencia.
+Por ejemplo, RegisterExtensionInfo debe ir después [de UnregisterMIMEInfo en](unregistermimeinfo-action.md) la tabla de secuencia.
 
 ## <a name="actiondata-messages"></a>Mensajes ActionData
 
@@ -44,9 +44,9 @@ Por ejemplo, RegisterExtensionInfo debe aparecer después de [UnregisterMIMEInfo
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el sistema admite la instalación a petición para los servidores de extensión, RegisterExtensionInfo registra todos los servidores de extensión en la [tabla de extensión](extension-table.md) asociada a las características establecidas para la instalación o el anuncio. De lo contrario, esta acción solo registra los servidores de extensión asociados a las características establecidas en instalación.
+Si el sistema admite la instalación a petición para los servidores [](extension-table.md) de extensiones, RegisterExtensionInfo registra todos los servidores de extensiones en la tabla De extensión asociada a las características establecidas para la instalación o el anuncio. De lo contrario, esta acción solo registra los servidores de extensión asociados a las características establecidas en la instalación.
 
 ## <a name="related-topics"></a>Temas relacionados
 

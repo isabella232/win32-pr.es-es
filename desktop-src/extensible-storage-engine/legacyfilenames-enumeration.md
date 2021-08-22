@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración LegacyFileNames'
-title: Enumeración LegacyFileNames (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: Enumeración LegacyFileNames'
+title: Enumeración LegacyFileNames (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: LegacyFileNames enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Vista.LegacyFileNames
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.legacyfilenames(v=EXCHG.10)
@@ -28,19 +28,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d7f3cade11450bcfbad13dcdd114dca6701c5369
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8265724c8f69cc9b8e90e6f2d7c777940aa1251ac99f436b9976e2a3c13f03fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119614575"
 ---
 # <a name="legacyfilenames-enumeration"></a>Enumeración LegacyFileNames
 
 Opciones de LegacyFileNames
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -69,12 +69,12 @@ public enum LegacyFileNames
 <tr class="odd">
 <td></td>
 <td>ESE98FileNames</td>
-<td>Cuando esta opción está presente, el motor de base de datos usará las siguientes convenciones de nomenclatura para sus archivos: o los archivos de registro de transacciones de utilizarán. LOG para su extensión de archivo o los archivos de punto de comprobación usarán. CHK para la extensión de archivo</td>
+<td>Cuando esta opción está presente, el motor de base de datos usará las siguientes convenciones de nomenclatura para sus archivos: o Los archivos del registro de transacciones usarán . LOG para su extensión de archivo o Los archivos de punto de comprobación usarán . CHK para su extensión de archivo</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>EightDotThreeSoftCompat</td>
-<td>Conserve la sintaxis de nomenclatura de 8,3 para lo máximo posible. (esto no debe cambiarse, pero no se garantiza que no haya archivos de registro)</td>
+<td>Conserve la sintaxis de nomenclatura 8.3 tanto como sea posible. (esto no debe cambiarse, con la garantía de que no hay archivos de registro)</td>
 </tr>
 </tbody>
 </table>
@@ -84,4 +84,4 @@ public enum LegacyFileNames
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

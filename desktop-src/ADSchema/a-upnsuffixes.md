@@ -1,11 +1,11 @@
 ---
-title: UPN-Suffixes atributo)
-description: La lista de sufijos de nombre de entidad de seguridad de usuario para un dominio.
+title: UPN-Suffixes atributo
+description: Lista de sufijos User-Principal-Name para un dominio.
 ms.assetid: ad861d2d-b643-468c-a346-36ad6a828359
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de UPN-Suffixes
-- uPNSuffixes esquema de AD de atributos
+- UPN-Suffixes esquema de AD de atributo
+- Esquema de AD del atributo uPNSuffixes
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4aa5fb9398478e4b91fb8f36b8cf96a244935fd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8ff893bdd3fa5ec5b9a42c02dfe6d3bd994e7d8fc9e680d3162c49f07c1c5ec8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021983"
 ---
-# <a name="upn-suffixes-attribute"></a>UPN-Suffixes atributo)
+# <a name="upn-suffixes-attribute"></a>UPN-Suffixes atributo
 
-La lista de sufijos de nombre de entidad de seguridad de usuario para un dominio.
+Lista de sufijos User-Principal-Name para un dominio.
 
 
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
 | CN                | UPN-Suffixes                                |
-| Nombre para mostrar de LDAP | uPNSuffixes                                 |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de dominio                        |
+| Ldap-Display-Name | uPNSuffixes                                 |
+| Size              | \-                                          |
+| Actualizar privilegios  | Administrador de dominio                        |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.890                      |
-| System-ID-GUID    | 032160bf-9824-11d1-aec0-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 032160bf-9824-11d1-aec0-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ La lista de sufijos de nombre de entidad de seguridad de usuario para un dominio
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ La lista de sufijos de nombre de entidad de seguridad de usuario para un dominio
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                           |
+| Id. de vínculo                | \-                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                           |
-| System-Only            | False                                                                                                                        |
-| Tiene un único valor       | False                                                                                                                        |
-| Está indexado             | False                                                                                                                        |
-| En el catálogo global      | False                                                                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                 |
+| System-Only            | Falso                                                                                                                        |
+| Es de un solo valor       | Falso                                                                                                                        |
+| Está indexado             | Falso                                                                                                                        |
+| En el catálogo global      | Falso                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                 |
 | Range-Lower            | \-                                                                                                                           |
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Clases usadas en        | [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> |
+| Clases usadas en        | [**Entre contenedores**](c-crossrefcontainer.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -77,39 +77,39 @@ La lista de sufijos de nombre de entidad de seguridad de usuario para un dominio
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                           |
+| Id. de vínculo                | \-                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                           |
-| System-Only            | False                                                                                                                        |
-| Tiene un único valor       | False                                                                                                                        |
-| Está indexado             | False                                                                                                                        |
-| En el catálogo global      | False                                                                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                 |
+| System-Only            | Falso                                                                                                                        |
+| Es de un solo valor       | Falso                                                                                                                        |
+| Está indexado             | Falso                                                                                                                        |
+| En el catálogo global      | Falso                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                 |
 | Range-Lower            | \-                                                                                                                           |
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Clases usadas en        | [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> |
+| Clases usadas en        | [**Entre contenedores**](c-crossrefcontainer.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                           |
+| Id. de vínculo                | \-                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                           |
-| System-Only            | False                                                                                                                        |
-| Tiene un único valor       | False                                                                                                                        |
-| Está indexado             | False                                                                                                                        |
-| En el catálogo global      | False                                                                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                 |
+| System-Only            | Falso                                                                                                                        |
+| Es de un solo valor       | Falso                                                                                                                        |
+| Está indexado             | Falso                                                                                                                        |
+| En el catálogo global      | Falso                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                 |
 | Range-Lower            | \-                                                                                                                           |
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Clases usadas en        | [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> |
+| Clases usadas en        | [**Entre contenedores**](c-crossrefcontainer.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -119,18 +119,18 @@ La lista de sufijos de nombre de entidad de seguridad de usuario para un dominio
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                           |
+| Id. de vínculo                | \-                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                           |
-| System-Only            | False                                                                                                                        |
-| Tiene un único valor       | False                                                                                                                        |
-| Está indexado             | False                                                                                                                        |
-| En el catálogo global      | False                                                                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                 |
+| System-Only            | Falso                                                                                                                        |
+| Es de un solo valor       | Falso                                                                                                                        |
+| Está indexado             | Falso                                                                                                                        |
+| En el catálogo global      | Falso                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                 |
 | Range-Lower            | \-                                                                                                                           |
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Clases usadas en        | [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> |
+| Clases usadas en        | [**Entre contenedores**](c-crossrefcontainer.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ La lista de sufijos de nombre de entidad de seguridad de usuario para un dominio
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                           |
+| Id. de vínculo                | \-                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                           |
-| System-Only            | False                                                                                                                        |
-| Tiene un único valor       | False                                                                                                                        |
-| Está indexado             | False                                                                                                                        |
-| En el catálogo global      | False                                                                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                 |
+| System-Only            | Falso                                                                                                                        |
+| Es de un solo valor       | Falso                                                                                                                        |
+| Está indexado             | Falso                                                                                                                        |
+| En el catálogo global      | Falso                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                 |
 | Range-Lower            | \-                                                                                                                           |
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Clases usadas en        | [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> |
+| Clases usadas en        | [**Entre contenedores**](c-crossrefcontainer.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ La lista de sufijos de nombre de entidad de seguridad de usuario para un dominio
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                           |
+| Id. de vínculo                | \-                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                           |
-| System-Only            | False                                                                                                                        |
-| Tiene un único valor       | False                                                                                                                        |
-| Está indexado             | False                                                                                                                        |
-| En el catálogo global      | False                                                                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                 |
+| System-Only            | Falso                                                                                                                        |
+| Es de un solo valor       | Falso                                                                                                                        |
+| Está indexado             | Falso                                                                                                                        |
+| En el catálogo global      | Falso                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                 |
 | Range-Lower            | \-                                                                                                                           |
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Clases usadas en        | [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> |
+| Clases usadas en        | [**Entre contenedores**](c-crossrefcontainer.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> |
 
 
 
@@ -182,18 +182,18 @@ La lista de sufijos de nombre de entidad de seguridad de usuario para un dominio
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                           |
+| Id. de vínculo                | \-                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                           |
-| System-Only            | False                                                                                                                        |
-| Tiene un único valor       | False                                                                                                                        |
-| Está indexado             | False                                                                                                                        |
-| En el catálogo global      | False                                                                                                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                 |
+| System-Only            | Falso                                                                                                                        |
+| Es de un solo valor       | Falso                                                                                                                        |
+| Está indexado             | Falso                                                                                                                        |
+| En el catálogo global      | Falso                                                                                                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                 |
 | Range-Lower            | \-                                                                                                                           |
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Clases usadas en        | [**Contenedor de referencias cruzadas**](c-crossrefcontainer.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> |
+| Clases usadas en        | [**Entre contenedores**](c-crossrefcontainer.md)<br/> [**Unidad organizativa**](c-organizationalunit.md)<br/> |
 
 
 

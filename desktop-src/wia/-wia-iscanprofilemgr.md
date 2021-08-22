@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119593095"
 ---
-# <a name="iscanprofilemgr-interface"></a>Interfaz IScanProfileMgr
+# <a name="iscanprofilemgr-interface"></a>Interfaz de IScanProfileMgr
 
 La **interfaz IScanProfileMgr** proporciona métodos para crear, abrir, eliminar y administrar perfiles de examen.
 
@@ -44,7 +44,7 @@ La **interfaz IScanProfileMgr** tiene estos métodos.
 | [**DeleteProfile**](-wia-iscanprofilemgr-deleteprofile.md)                         | Elimina el perfil de examen especificado.<br/>                                                                         |
 | [**GetDefaultProfile**](-wia-iscanprofilemgr-getdefaultprofile.md)                 | Obtiene el perfil de examen predeterminado.<br/>                                                                              |
 | [**GetNumProfiles**](-wia-iscanprofilemgr-getnumprofiles.md)                       | Obtiene el número de perfiles de examen creados para el usuario en el sistema en el que se ejecuta la aplicación.<br/> |
-| [**GetNumProfilesforDeviceID**](-wia-iscanprofilemgr-getnumprofilesfordeviceid.md) | Obtiene el número de perfiles de examen para el dispositivo.<br/>                                                            |
+| [**GetNumProfilesforDeviceID**](-wia-iscanprofilemgr-getnumprofilesfordeviceid.md) | Obtiene el número de perfiles de examen del dispositivo.<br/>                                                            |
 | [**GetProfiles**](-wia-iscanprofilemgr-getprofiles.md)                             | Obtiene todos los perfiles de examen disponibles para el usuario en el sistema en el que se ejecuta la aplicación.<br/>     |
 | [**GetProfilesforDeviceID**](-wia-iscanprofilemgr-getprofilesfordeviceid.md)       | Obtiene todos los perfiles de examen asociados a un dispositivo.<br/>                                                        |
 | [**OpenProfile**](-wia-iscanprofilemgr-openprofile.md)                             | Abre un perfil de examen que se ha guardado en el disco como un archivo XML.<br/>                                            |
@@ -69,7 +69,7 @@ Si un perfil de examen se guarda mediante el método [**IScanProfile::Save,**](-
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
@@ -78,7 +78,7 @@ Si un perfil de examen se guarda mediante el método [**IScanProfile::Save,**](-
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

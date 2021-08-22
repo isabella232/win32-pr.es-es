@@ -50,13 +50,13 @@ El borde aparece como un borde de dos píxeles alrededor del control de cuadro d
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

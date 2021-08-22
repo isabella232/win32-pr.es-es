@@ -1,12 +1,12 @@
 ---
-title: IMsTscAxEvents OnRemoteWindowDisplayed, método
-description: Se le llama cuando se muestra una ventana de RemoteApp.
+title: Método IMsTscAxEvents OnRemoteWindowDisplayed
+description: Se llama cuando se muestra una ventana remoteapp.
 ms.assetid: B1E83486-50CB-4CA4-BD01-2C72938335AF
 ms.tgt_platform: multiple
 keywords:
 - Método OnRemoteWindowDisplayed Servicios de Escritorio remoto
-- Método OnRemoteWindowDisplayed Servicios de Escritorio remoto, interfaz IMsTscAxEvents
-- Interfaz IMsTscAxEvents Servicios de Escritorio remoto, método OnRemoteWindowDisplayed
+- Método OnRemoteWindowDisplayed Servicios de Escritorio remoto , interfaz IMsTscAxEvents
+- Interfaz IMsTscAxEvents Servicios de Escritorio remoto método , OnRemoteWindowDisplayed
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f03029f31e1ce2133c74c92c0d6d57f192e4d85f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6985a71fe6351a81b2daef69401dfd5c65543e9984fd64c28a120704a34d5a8a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512115"
 ---
-# <a name="imstscaxeventsonremotewindowdisplayed-method"></a>IMsTscAxEvents:: OnRemoteWindowDisplayed (método)
+# <a name="imstscaxeventsonremotewindowdisplayed-method"></a>Método IMsTscAxEvents::OnRemoteWindowDisplayed
 
-Se le llama cuando se muestra una ventana de RemoteApp.
+Se llama cuando se muestra una ventana remoteapp.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,30 +45,30 @@ void OnRemoteWindowDisplayed(
 
 <dl> <dt>
 
-*vbDisplayed* \[ de\]
+*vbDisplayed* \[ En\]
 </dt> <dd>
 
-Tipo: **variante \_ bool**
+Tipo: **VARIANT \_ BOOL**
 
-Indica si la ventana de RemoteApp se muestra u oculta.
+Indica si se muestra u oculta la ventana RemoteApp.
 
 </dd> <dt>
 
-*hWnd* \[ de\]
+*hwnd* \[ En\]
 </dt> <dd>
 
-Tipo: **hWnd**
+Tipo: **HWND**
 
 Identificador de la ventana que se muestra.
 
 </dd> <dt>
 
-*windowAttribute* \[ de\]
+*windowAttribute* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **RemoteWindowDisplayedAttribute**](remotewindowdisplayedattribute.md)**
 
-Un valor de la enumeración [**RemoteWindowDisplayedAttribute**](remotewindowdisplayedattribute.md) que especifica más información sobre el evento.
+Valor de la [**enumeración RemoteWindowDisplayedAttribute**](remotewindowdisplayedattribute.md) que especifica más información sobre el evento.
 
 </dd> </dl>
 

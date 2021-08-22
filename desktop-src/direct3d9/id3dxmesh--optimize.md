@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: debec1c0ee54e612ab0de832dbc5c2481dcefad8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e4ea03bcaaab492ec09dd24ec93c6a9c9ca393c1399b05e12096a8ba1f4f9aa3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493105"
 ---
 # <a name="id3dxmeshoptimize-method"></a>Método ID3DXMesh::Optimize
 
@@ -45,7 +45,7 @@ HRESULT Optimize(
 
 <dl> <dt>
 
-*Flags* \[in\]
+*Marcas* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -122,7 +122,7 @@ Este método es muy similar al método [**ID3DXBaseMesh::CloneMesh,**](id3dxbase
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

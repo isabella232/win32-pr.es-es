@@ -83,7 +83,7 @@ Si es adecuado hacerlo, el sistema envía el [**mensaje \_ SYSCOMMAND**](/window
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -91,7 +91,7 @@ Si es adecuado hacerlo, el sistema envía el [**mensaje \_ SYSCOMMAND**](/window
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

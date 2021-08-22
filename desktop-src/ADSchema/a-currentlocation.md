@@ -1,11 +1,11 @@
 ---
-title: Current-Location atributo)
-description: Ubicación del equipo para un objeto que se ha despasado.
+title: Current-Location atributo
+description: Ubicación del equipo para un objeto que se ha movido.
 ms.assetid: b8767fcd-48f5-420c-9cbf-095ab1aee729
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Current-Location
-- currentLocation esquema de AD de atributos
+- Current-Location esquema de AD del atributo
+- Esquema de AD del atributo currentLocation
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b37e2acb97806ad6cf72736d39e0c9a0e6c6d217
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ed3f5c805c72f83bfab28a9272448e87a7ec34053979e1066f06196584e18155
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509285"
 ---
-# <a name="current-location-attribute"></a>Current-Location atributo)
+# <a name="current-location-attribute"></a>Current-Location atributo
 
-Ubicación del equipo para un objeto que se ha despasado.
+Ubicación del equipo para un objeto que se ha movido.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Current-Location                                      |
-| Nombre para mostrar de LDAP | currentLocation                                       |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | El sistema establece este valor.                      |
+| Ldap-Display-Name | currentLocation                                       |
+| Size              | \-                                                    |
+| Privilegio actualizar  | El sistema establece este valor.                      |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.335                                |
-| System-ID-GUID    | 1f0075fc-7e40-11d0-afd6-00c04fd930c9                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 1f0075fc-7e40-11d0-afd6-00c04fd930c9                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,18 +55,18 @@ Ubicación del equipo para un objeto que se ha despasado.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Ubicación del equipo para un objeto que se ha despasado.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Ubicación del equipo para un objeto que se ha despasado.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Ubicación del equipo para un objeto que se ha despasado.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Ubicación del equipo para un objeto que se ha despasado.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Ubicación del equipo para un objeto que se ha despasado.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                             |
+| Id. de vínculo                | \-                                                             |
 | MAPI-Id                | \-                                                             |
-| System-Only            | False                                                          |
-| Tiene un único valor       | True                                                           |
-| Está indexado             | False                                                          |
-| En el catálogo global      | False                                                          |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                   |
+| System-Only            | Falso                                                          |
+| Es de un solo valor       | Verdadero                                                           |
+| Está indexado             | Falso                                                          |
+| En el catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                   |
 | Range-Lower            | 32                                                             |
 | Range-Upper            | 32                                                             |
 | Search-Flags           | 0x00000000                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Clases usadas en        | [**Link-Track-OMT-entry**](c-linktrackomtentry.md)<br/> |
+| Clases usadas en        | [**Link-Track-OMT-Entry**](c-linktrackomtentry.md)<br/> |
 
 
 
