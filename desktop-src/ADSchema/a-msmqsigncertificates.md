@@ -53,7 +53,7 @@ Este atributo contiene varios certificados. Un usuario puede generar un certific
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
@@ -74,7 +74,7 @@ Este atributo contiene varios certificados. Un usuario puede generar un certific
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
@@ -95,7 +95,7 @@ Este atributo contiene varios certificados. Un usuario puede generar un certific
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
@@ -116,7 +116,7 @@ Este atributo contiene varios certificados. Un usuario puede generar un certific
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
@@ -137,7 +137,7 @@ Este atributo contiene varios certificados. Un usuario puede generar un certific
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |
@@ -158,7 +158,7 @@ Este atributo contiene varios certificados. Un usuario puede generar un certific
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                            |
 | MAPI-Id                | \-                                                                                            |

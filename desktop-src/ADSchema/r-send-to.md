@@ -1,10 +1,10 @@
 ---
-title: Send-To derecha extendida
-description: Exchange Right permite el envío a un buzón.
+title: Send-To derecho extendido
+description: Exchange derecho permite el envío a un buzón de correo.
 ms.assetid: 25dfbfd7-dbeb-48fa-a7c6-63bde03db2f4
 ms.tgt_platform: multiple
 keywords:
-- Send-To esquema de AD derecho extendido
+- Send-To de AD derecho extendido
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0995f887f899eb31ec6d45210a07a849f1c50dde
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c3d6007cf9c222ac0ae52e75cbf79b63765ee14f46a976f761521c3b1740cbab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021573"
 ---
-# <a name="send-to-extended-right"></a>Send-To derecha extendida
+# <a name="send-to-extended-right"></a>Send-To derecho extendido
 
-Exchange Right: permite el envío a un buzón.
+Exchange derecho: permite el envío a un buzón de correo.
 
 
 
@@ -50,7 +50,7 @@ Exchange Right: permite el envío a un buzón.
 | Entrada | Value |
 |-------------------------|-------------------------------------|
 | Applies-To              | [**Group (Grupo)**](c-group.md)<br/> |
-| Localización: ID. de presentación | 6                                   |
+| Localization-Display-ID | 6                                   |
 
 
 
@@ -61,7 +61,7 @@ Exchange Right: permite el envío a un buzón.
 | Entrada | Value |
 |-------------------------|-------------------------------------|
 | Applies-To              | [**Group (Grupo)**](c-group.md)<br/> |
-| Localización: ID. de presentación | 6                                   |
+| Localization-Display-ID | 6                                   |
 
 
 
@@ -72,7 +72,7 @@ Exchange Right: permite el envío a un buzón.
 | Entrada | Value |
 |-------------------------|-------------------------------------|
 | Applies-To              | [**Group (Grupo)**](c-group.md)<br/> |
-| Localización: ID. de presentación | 6                                   |
+| Localization-Display-ID | 6                                   |
 
 
 
@@ -83,7 +83,7 @@ Exchange Right: permite el envío a un buzón.
 | Entrada | Value |
 |-------------------------|-------------------------------------|
 | Applies-To              | [**Group (Grupo)**](c-group.md)<br/> |
-| Localización: ID. de presentación | 6                                   |
+| Localization-Display-ID | 6                                   |
 
 
 
@@ -94,7 +94,7 @@ Exchange Right: permite el envío a un buzón.
 | Entrada | Value |
 |-------------------------|-------------------------------------|
 | Applies-To              | [**Group (Grupo)**](c-group.md)<br/> |
-| Localización: ID. de presentación | 6                                   |
+| Localization-Display-ID | 6                                   |
 
 
 
@@ -105,7 +105,7 @@ Exchange Right: permite el envío a un buzón.
 | Entrada | Value |
 |-------------------------|-------------------------------------|
 | Applies-To              | [**Group (Grupo)**](c-group.md)<br/> |
-| Localización: ID. de presentación | 6                                   |
+| Localization-Display-ID | 6                                   |
 
 
 

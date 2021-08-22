@@ -54,7 +54,7 @@ Lista de atributos opcionales para una clase. El sistema solo puede modificar la
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------|
 | Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
@@ -75,7 +75,7 @@ Lista de atributos opcionales para una clase. El sistema solo puede modificar la
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------|
 | Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
@@ -96,7 +96,7 @@ Lista de atributos opcionales para una clase. El sistema solo puede modificar la
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------|
 | Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
@@ -138,7 +138,7 @@ Lista de atributos opcionales para una clase. El sistema solo puede modificar la
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------|
 | Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
@@ -180,7 +180,7 @@ Lista de atributos opcionales para una clase. El sistema solo puede modificar la
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------|
 | Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |

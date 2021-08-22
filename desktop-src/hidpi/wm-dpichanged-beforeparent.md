@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_DPICHANGED_BEFOREPARENT (Winuser. h)
-description: En el caso de las ventanas de nivel superior de por monitor V2, este mensaje se envía a todos los HWND del árbol de HWDN secundario de la ventana que está experimentando un cambio de PPP. | Mensaje de WM_DPICHANGED_BEFOREPARENT (Winuser. h)
+title: WM_DPICHANGED_BEFOREPARENT mensaje (Winuser.h)
+description: Para las ventanas de nivel superior por monitor v2, este mensaje se envía a todos los HWND del árbol HWDN secundario de la ventana que está experimentando un cambio de PPP. | WM_DPICHANGED_BEFOREPARENT mensaje (Winuser.h)
 ms.assetid: EC8CC313-565F-451F-AE18-66F3B63303CE
 keywords:
-- WM_DPICHANGED_BEFOREPARENT máximo de PPP del mensaje
+- WM_DPICHANGED_BEFOREPARENT con valores altos de PPP
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16641916cb16b789f2349a53b09dbd2af5f520f3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 3a1a52216052f597ce26e5be476a970ff78f0297c08124c9b1ca89453b6fca76
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119557675"
 ---
-# <a name="wm_dpichanged_beforeparent-message"></a>\_Mensaje BEFOREPARENT de DPICHANGED de WM \_
+# <a name="wm_dpichanged_beforeparent-message"></a>Mensaje \_ WM PPPCHANGED \_ BEFOREPARENT
 
-En el caso de las ventanas de nivel superior de [por monitor V2](dpi-awareness-context.md) , este mensaje se envía a todos los HWND del árbol de HWDN secundario de la ventana que está experimentando un cambio de PPP. Este mensaje se produce antes de que la ventana de nivel superior reciba [**WM \_ DPICHANGED**](wm-dpichanged.md)y recorra el árbol secundario de abajo.
+Para las ventanas de nivel superior por monitor [v2,](dpi-awareness-context.md) este mensaje se envía a todos los HWND del árbol HWDN secundario de la ventana que está experimentando un cambio de PPP. Este mensaje se produce antes de que la ventana de nivel superior reciba [**WM \_ PPPCHANGED**](wm-dpichanged.md)y recorre el árbol secundario desde abajo hacia arriba.
 
 
 ```C++
@@ -39,36 +39,36 @@ En el caso de las ventanas de nivel superior de [por monitor V2](dpi-awareness-c
 *wParam* 
 </dt> <dd>
 
-Este valor no se utiliza y será cero.
+Este valor no se usa y será cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Este valor no se utiliza y será cero.
+Este valor no se usa y será cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El sistema no utiliza este valor y lo omite.
+El sistema no usa este valor y lo omite.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 No hay ningún control predeterminado de este mensaje en [DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
-Este mensaje solo se envía cuando la ventana de nivel superior tiene un contexto de reconocimiento de PPP de PMv2.
+Este mensaje solo se envía cuando la ventana de nivel superior tiene un contexto de reconocimiento de PPP PMv2.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1703 \[\]<br/>                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2016 \[\]<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                 |
+| Header<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 
@@ -76,10 +76,10 @@ Este mensaje solo se envía cuando la ventana de nivel superior tiene un context
 
 <dl> <dt>
 
-[**DPICHANGED de WM \_**](wm-dpichanged.md)
+[**WM \_ PPPCHANGED**](wm-dpichanged.md)
 </dt> <dt>
 
-[**\_AFTERPARENT DPICHANGED \_ WM**](wm-dpichanged-afterparent.md)
+[**WM \_ PPPCHANGED \_ AFTERPARENT**](wm-dpichanged-afterparent.md)
 </dt> </dl>
 
  

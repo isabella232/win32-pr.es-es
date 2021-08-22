@@ -1,5 +1,5 @@
 ---
-description: 'Image_V1 clase: esta clase es la clase primaria para los eventos de carga de imágenes. La sintaxis siguiente se simplifica a partir del código MOF.'
+description: 'Image_V1 clase : esta clase es la clase primaria para los eventos de carga de imágenes. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: 78c68080-90fc-4ebf-aa8a-4e03ce629d54
 title: Image_V1 clase
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: aafb2b7307e72e97ba1508aa80638af7565f2867
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7e5db8d6245ab332c6238a7053623580c16e93caa49e0ac2623cba61723dc1d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070135"
 ---
 # <a name="image_v1-class"></a>Clase Image \_ V1
 
@@ -42,14 +42,14 @@ La **clase Image \_ V1** no define ningún miembro.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

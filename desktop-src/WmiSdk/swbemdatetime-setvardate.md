@@ -73,15 +73,15 @@ Después de completar el **método SetVarDate,** el [objeto Err](/previous-versi
 **wbemErrInvalidSyntax:** 2147749921 (0x80041021)
 </dt> <dd>
 
-El formato de *vdate* no es válido.
+El formato *de vdate* no es válido.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentarios
 
-Después de una llamada correcta a **SetVarDate,** el valor DATETIME se interpreta como un valor [**datetime**](datetime.md) absoluto en lugar de un intervalo, y la propiedad [**IsInterval**](swbemdatetime-isinterval.md) se establece en **FALSE.**
+Después de una llamada correcta a **SetVarDate**, el valor DATETIME se interpreta como un valor [**datetime**](datetime.md) absoluto en lugar de un intervalo, y la propiedad [**IsInterval**](swbemdatetime-isinterval.md) se establece en **FALSE.**
 
-La función Visual Basic o VBScript [CDate](/previous-versions//2dt118h2(v=vs.85)) proporciona un valor [**datetime**](datetime.md) en el formato **VT \_ DATE** para la entrada **a SetVarDate.**
+La función Visual Basic o VBScript [CDate](/previous-versions//2dt118h2(v=vs.85)) proporciona un valor [**datetime**](datetime.md) en el formato **VT \_ DATE** para la entrada **a SetVarDate**.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -105,7 +105,7 @@ El ejemplo de código DE VBScript Convert [Date to WMI Date-Time Format](https:/
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

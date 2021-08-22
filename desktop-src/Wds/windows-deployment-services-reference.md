@@ -1,29 +1,29 @@
 ---
-title: Referencia de servicios de implementación de Windows
+title: Windows Referencia de servicios de implementación
 ms.assetid: 12a4ed8b-775c-47f1-9bb6-d82e3c94bf06
-description: 'Más información acerca de: referencia de servicios de implementación de Windows'
+description: 'Más información sobre: referencia Windows Deployment Services'
 keywords:
-- Servicios de implementación de Windows servicios de implementación de Windows, referencia
+- Windows Deployment Services Windows Deployment Services , referencia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f1ba939e7d474c649a3891e67fadade166646ac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a673684a05c45595209d0f4b31fe10b5edfaa97d623cac1ff946764e9d6c39d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103913802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053243"
 ---
-# <a name="windows-deployment-services-reference"></a>Referencia de servicios de implementación de Windows
+# <a name="windows-deployment-services-reference"></a>Windows Referencia de servicios de implementación
 
-En esta sección se describen los elementos de programación disponibles en servicios de implementación de Windows:
+En esta sección se describen los elementos de programación disponibles en Windows Deployment Services:
 
--   [Funciones de cliente de servicios de implementación de Windows](windows-deployment-services-client-functions.md)
--   [Funciones de servidor de servicios de implementación de Windows](windows-deployment-services-server-functions.md)
--   [Funciones de transporte de servicios de implementación de Windows](windows-deployment-services-transport--functions.md)
--   [Enumeraciones de servicios de implementación de Windows](windows-deployment-services-enumerations.md)
--   [Estructuras de servicios de implementación de Windows](windows-deployment-services-structures.md)
--   [API de administración de transporte de servicios de implementación de Windows](windows-deployment-services-transport-management-api.md)
--   [Programa de arranque de red de servicios de implementación de Windows](windows-deployment-services-network-boot-program.md)
+-   [Windows Funciones de cliente de Deployment Services](windows-deployment-services-client-functions.md)
+-   [Windows Funciones del servidor de Servicios de implementación](windows-deployment-services-server-functions.md)
+-   [Windows Funciones de transporte de Servicios de implementación](windows-deployment-services-transport--functions.md)
+-   [Windows Enumeraciones de Deployment Services](windows-deployment-services-enumerations.md)
+-   [Windows Estructuras de Deployment Services](windows-deployment-services-structures.md)
+-   [Windows Deployment Services Transport Management API](windows-deployment-services-transport-management-api.md)
+-   [Windows Programa de arranque de red de Deployment Services](windows-deployment-services-network-boot-program.md)
 
  
 

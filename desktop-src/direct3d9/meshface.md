@@ -1,19 +1,19 @@
 ---
-description: Lo usa la plantilla de malla para definir las caras de una malla. Cada elemento de la matriz nFaceVertexIndices hace referencia a un vértice de malla que se usa para crear la superficie.
+description: Usado por la plantilla Mesh para definir las caras de una malla. Cada elemento de la matriz nFaceVertexIndices hace referencia a un vértice de malla que se usa para compilar la cara.
 ms.assetid: 38c40ebe-eca2-4dd9-95b8-b396225e3050
 title: MeshFace
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a9e8b73efb214f7a767d986830cccc83ee6cbc1
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 83ea35d1db9e33644638455bc42cc2cbef320f748d96b086037dea6f10607dbe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104151977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119563535"
 ---
 # <a name="meshface"></a>MeshFace
 
-Lo usa la plantilla de [**malla**](mesh.md) para definir las caras de una malla. Cada elemento de la matriz nFaceVertexIndices hace referencia a un vértice de malla que se usa para crear la superficie.
+Usado por la [**plantilla Mesh**](mesh.md) para definir las caras de una malla. Cada elemento de la matriz nFaceVertexIndices hace referencia a un vértice de malla que se usa para compilar la cara.
 
 ``` syntax
 template MeshFace
@@ -27,7 +27,7 @@ template MeshFace
 Donde:
 
 -   nFaceVertexIndices: número de índices.
--   array DWORD faceVertexIndices \[ nFaceVertexIndices \] : matriz de índices.
+-   array DWORD faceVertexIndices \[ nFaceVertexIndices: \] matriz de índices.
 
 ## <a name="see-also"></a>Vea también
 

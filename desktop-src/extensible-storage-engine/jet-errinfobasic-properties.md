@@ -1,25 +1,25 @@
 ---
-description: 'Más información acerca de: JET_ERRINFOBASIC propiedades'
-title: JET_ERRINFOBASIC propiedades (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: JET_ERRINFOBASIC propiedades'
+title: JET_ERRINFOBASIC propiedades (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JET_ERRINFOBASIC properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.Windows8.JET_ERRINFOBASIC
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_errinfobasic_properties(v=EXCHG.10)
 ms:contentKeyID: 55104303
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 10e22b582ac26146eae6a7a29b5207a76b17d551
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a8c1fbc417ce5c876216aab886a815c7df2a5c389106418afda6bc19772a322b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104569925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039293"
 ---
-# <a name="jet_errinfobasic-properties"></a>Propiedades de JET_ERRINFOBASIC
+# <a name="jet_errinfobasic-properties"></a>JET_ERRINFOBASIC propiedades
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo de [JET_ERRINFOBASIC](./jet-errinfobasic-class.md) expone los siguientes miembros.
+El [JET_ERRINFOBASIC](./jet-errinfobasic-class.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -45,7 +45,7 @@ El tipo de [JET_ERRINFOBASIC](./jet-errinfobasic-class.md) expone los siguientes
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335472(v=exchg.10).md">lSourceLine</a></td>
-<td>Obtiene o establece la línea del archivo de código fuente para el nivel de información solicitado.</td>
+<td>Obtiene o establece la línea de archivo de origen para el nivel de información solicitado.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -55,7 +55,7 @@ El tipo de [JET_ERRINFOBASIC](./jet-errinfobasic-class.md) expone los siguientes
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335474(v=exchg.10).md">rgszSourceFile</a></td>
-<td>Obtiene o establece el nombre del archivo de código fuente para el nivel de información solicitado.</td>
+<td>Obtiene o establece el nombre del archivo de origen para el nivel de información solicitado.</td>
 </tr>
 </tbody>
 </table>
@@ -67,6 +67,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[JET_ERRINFOBASIC (clase)](./jet-errinfobasic-class.md)
+[JET_ERRINFOBASIC clase](./jet-errinfobasic-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

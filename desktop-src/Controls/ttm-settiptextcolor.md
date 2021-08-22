@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TTM_SETTIPTEXTCOLOR (commctrl. h)
+title: TTM_SETTIPTEXTCOLOR mensaje (Commctrl.h)
 description: Establece el color del texto en una ventana de información sobre herramientas.
 ms.assetid: a6c6eb31-e6c4-47e2-b112-48e7cd21b778
 keywords:
-- TTM_SETTIPTEXTCOLOR controles de mensajes de Windows
+- TTM_SETTIPTEXTCOLOR controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fb4ead5374015c014a105056b63077779272535
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a593be5bc9bb3ba8d04b1a657785afb86824119fa8bbd5e027003f296230e99e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642515"
 ---
-# <a name="ttm_settiptextcolor-message"></a>TTM \_ SETTIPTEXTCOLOR
+# <a name="ttm_settiptextcolor-message"></a>Mensaje \_ SETTIPTEXTCOLOR de TTM
 
 Establece el color del texto en una ventana de información sobre herramientas.
 
@@ -41,9 +41,9 @@ Nuevo color de texto.
 
 ## <a name="return-value"></a>Valor devuelto
 
-No se utiliza el valor devuelto para este mensaje.
+No se usa el valor devuelto para este mensaje.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Cuando los estilos visuales están habilitados, este mensaje no tiene ningún efecto.
 
@@ -51,11 +51,11 @@ Cuando los estilos visuales están habilitados, este mensaje no tiene ningún ef
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

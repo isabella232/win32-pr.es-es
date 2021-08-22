@@ -17,9 +17,9 @@ ms.locfileid: "119053983"
 ---
 # <a name="windows-media-player-skins"></a>Reproductor de Windows Media Pieles
 
-Reproductor de Windows Media proporciona una plataforma de programación para crear máscaras personalizadas. Las máscaras son conjuntos de scripts, imágenes, medios y archivos de texto que se pueden combinar para crear una nueva apariencia para Reproductor de Windows Media. Con las máscaras, puede cambiar no solo la forma Reproductor de Windows Media, sino también cómo funciona. No solo dónde están los botones y su aspecto, sino también lo que hacen, dados los límites de la tecnología Reproductor de Windows Media núcleo subyacente.
+Reproductor de Windows Media proporciona una plataforma de programación para crear máscaras personalizadas. Las máscaras son conjuntos de scripts, imágenes, medios y archivos de texto que se pueden combinar para crear una nueva apariencia para Reproductor de Windows Media. Con las máscaras, puede cambiar no solo el aspecto Reproductor de Windows Media, sino también cómo funciona. No solo dónde están los botones y su aspecto, sino también lo que hacen, dados los límites de la tecnología Reproductor de Windows Media núcleo subyacente.
 
-La tecnología de máscara es muy diferente de otros tipos de programación. básicamente, combinará la programación y el arte en partes iguales. No es necesario ser un programador experto (no mucho más de lo que ya sabe si ha creado páginas web y ha realizado algunos scripts sencillos), ni necesita ser un intérprete (siempre y cuando pueda usar una aplicación de edición de gráficos). Va a usar XML (similar a HTML), Microsoft JScript y los programas de arte que elija.
+La tecnología de máscara es muy diferente de otros tipos de programación; básicamente, combinará la programación y el arte en partes iguales. No es necesario ser un programador experto (no mucho más de lo que ya sabe si ha creado páginas web y ha realizado algunos scripts sencillos), ni necesita ser un intérprete (siempre y cuando pueda usar una aplicación de edición de gráficos). Va a usar XML (similar a HTML), Microsoft JScript y cualquier programa de arte que elija.
 
 La documentación de máscaras contiene las cuatro secciones siguientes.
 

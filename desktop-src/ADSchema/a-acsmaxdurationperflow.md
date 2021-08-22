@@ -1,11 +1,11 @@
 ---
-title: Atributo ACS-Max-Duration-per-Flow
-description: La duración máxima, en segundos, de cualquier flujo único.
+title: Atributo ACS-Max-Duration-Per-Flow
+description: Duración máxima, en segundos, de cualquier flujo único.
 ms.assetid: 070d3ffe-1d54-4f78-b5a7-3c8ef39d9346
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo ACS-Max-Duration-per-Flow
-- aCSMaxDurationPerFlow esquema de AD de atributos
+- Esquema de AD del atributo ACS-Max-Duration-Per-Flow
+- Esquema de AD del atributo aCSMaxDurationPerFlow
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db53a2116087cadb1e58af234a1741e144fbf916
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a8e65c08ba9176ece0a470008ca8a543905a1320af80c1fd5ea5fc6832f0700c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082099"
 ---
-# <a name="acs-max-duration-per-flow-attribute"></a>Atributo ACS-Max-Duration-per-Flow
+# <a name="acs-max-duration-per-flow-attribute"></a>Atributo ACS-Max-Duration-Per-Flow
 
-La duración máxima, en segundos, de cualquier flujo único.
+Duración máxima, en segundos, de cualquier flujo único.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ACS-Max-Duration-per-Flow            |
-| Nombre para mostrar de LDAP | aCSMaxDurationPerFlow                |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | \-                                   |
+| CN                | ACS-Max-Duration-Per-Flow            |
+| Ldap-Display-Name | aCSMaxDurationPerFlow                |
+| Size              | 4 bytes                              |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.761               |
-| System-ID-GUID    | 7f56127e-5301-11d1-a9c5-0000f80367c1 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 7f56127e-5301-11d1-a9c5-0000f80367c1 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ La duración máxima, en segundos, de cualquier flujo único.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                        |
+| Id. de vínculo                | \-                                                                                        |
 | MAPI-Id                | \-                                                                                        |
-| System-Only            | False                                                                                     |
-| Tiene un único valor       | True                                                                                      |
-| Está indexado             | False                                                                                     |
-| En el catálogo global      | False                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                              |
+| System-Only            | Falso                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                      |
+| Está indexado             | Falso                                                                                     |
+| En el catálogo global      | Falso                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                              |
 | Range-Lower            | \-                                                                                        |
 | Range-Upper            | \-                                                                                        |
 | Search-Flags           | 0x00000000                                                                                |
 | System-Flags           | 0x00000010                                                                                |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ La duración máxima, en segundos, de cualquier flujo único.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                        |
+| Id. de vínculo                | \-                                                                                        |
 | MAPI-Id                | \-                                                                                        |
-| System-Only            | False                                                                                     |
-| Tiene un único valor       | True                                                                                      |
-| Está indexado             | False                                                                                     |
-| En el catálogo global      | False                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                              |
+| System-Only            | Falso                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                      |
+| Está indexado             | Falso                                                                                     |
+| En el catálogo global      | Falso                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                              |
 | Range-Lower            | \-                                                                                        |
 | Range-Upper            | \-                                                                                        |
 | Search-Flags           | 0x00000000                                                                                |
 | System-Flags           | 0x00000010                                                                                |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ La duración máxima, en segundos, de cualquier flujo único.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                        |
+| Id. de vínculo                | \-                                                                                        |
 | MAPI-Id                | \-                                                                                        |
-| System-Only            | False                                                                                     |
-| Tiene un único valor       | True                                                                                      |
-| Está indexado             | False                                                                                     |
-| En el catálogo global      | False                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                              |
+| System-Only            | Falso                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                      |
+| Está indexado             | Falso                                                                                     |
+| En el catálogo global      | Falso                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                              |
 | Range-Lower            | \-                                                                                        |
 | Range-Upper            | \-                                                                                        |
 | Search-Flags           | 0x00000000                                                                                |
 | System-Flags           | 0x00000010                                                                                |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ La duración máxima, en segundos, de cualquier flujo único.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                        |
+| Id. de vínculo                | \-                                                                                        |
 | MAPI-Id                | \-                                                                                        |
-| System-Only            | False                                                                                     |
-| Tiene un único valor       | True                                                                                      |
-| Está indexado             | False                                                                                     |
-| En el catálogo global      | False                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                              |
+| System-Only            | Falso                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                      |
+| Está indexado             | Falso                                                                                     |
+| En el catálogo global      | Falso                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                              |
 | Range-Lower            | \-                                                                                        |
 | Range-Upper            | \-                                                                                        |
 | Search-Flags           | 0x00000000                                                                                |
 | System-Flags           | 0x00000010                                                                                |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ La duración máxima, en segundos, de cualquier flujo único.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                        |
+| Id. de vínculo                | \-                                                                                        |
 | MAPI-Id                | \-                                                                                        |
-| System-Only            | False                                                                                     |
-| Tiene un único valor       | True                                                                                      |
-| Está indexado             | False                                                                                     |
-| En el catálogo global      | False                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                              |
+| System-Only            | Falso                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                      |
+| Está indexado             | Falso                                                                                     |
+| En el catálogo global      | Falso                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                              |
 | Range-Lower            | \-                                                                                        |
 | Range-Upper            | \-                                                                                        |
 | Search-Flags           | 0x00000000                                                                                |
 | System-Flags           | 0x00000010                                                                                |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ La duración máxima, en segundos, de cualquier flujo único.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                        |
+| Id. de vínculo                | \-                                                                                        |
 | MAPI-Id                | \-                                                                                        |
-| System-Only            | False                                                                                     |
-| Tiene un único valor       | True                                                                                      |
-| Está indexado             | False                                                                                     |
-| En el catálogo global      | False                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                              |
+| System-Only            | Falso                                                                                     |
+| Es de un solo valor       | Verdadero                                                                                      |
+| Está indexado             | Falso                                                                                     |
+| En el catálogo global      | Falso                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                              |
 | Range-Lower            | \-                                                                                        |
 | Range-Upper            | \-                                                                                        |
 | Search-Flags           | 0x00000000                                                                                |
 | System-Flags           | 0x00000010                                                                                |
-| Clases usadas en        | [**ACS-Directiva**](c-acspolicy.md)<br/> [**ACS-subred**](c-acssubnet.md)<br/> |
+| Clases usadas en        | [**Directiva de ACS**](c-acspolicy.md)<br/> [**ACS-Subnet**](c-acssubnet.md)<br/> |
 
 
 

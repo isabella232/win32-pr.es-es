@@ -1,6 +1,6 @@
 ---
-title: Administración remota de Windows y WMI
-description: Administración remota de Windows se puede utilizar para recuperar los datos expuestos por Instrumental de administración de Windows.
+title: Windows Administración remota y WMI
+description: Windows La administración remota se puede usar para recuperar los datos expuestos por Windows Management Instrumentation.
 ms.assetid: a625440b-a839-487d-b862-e35934f24e1f
 ms.tgt_platform: multiple
 ms.topic: article
@@ -10,46 +10,46 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6942e89ea2e63ef809f3452e6ce55a493662c938
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 4d4fab5cd1ee27f664fc43838a62db949c5892147818466edf649641eff203b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "105698032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642475"
 ---
-# <a name="windows-remote-management-and-wmi"></a>Administración remota de Windows y WMI
+# <a name="windows-remote-management-and-wmi"></a>Windows Administración remota y WMI
 
-Administración remota de Windows se puede utilizar para recuperar los datos expuestos por Instrumental de administración de Windows ([WMI](/windows/desktop/WmiSdk/wmi-start-page) y [mi](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure)). Puede obtener datos de WMI con scripts o aplicaciones que usan la [API de scripting de WinRM](winrm-scripting-api.md) o a través de la herramienta de línea de comandos de **WinRM** .
+Windows La administración remota se puede usar para recuperar los datos expuestos por Windows Management Instrumentation[(WMI](/windows/desktop/WmiSdk/wmi-start-page) y [MI).](/previous-versions/windows/desktop/wmi_v2/windows-management-infrastructure) Puede obtener datos WMI con scripts o aplicaciones que usan [WinRM Scripting API](winrm-scripting-api.md) o a través de la herramienta de línea de comandos **Winrm.**
 
-WinRM es compatible con la mayoría de las clases y operaciones de WMI conocidas, incluidos los objetos incrustados. WinRM puede aprovechar WMI para recopilar datos acerca de [*los recursos*](windows-remote-management-glossary.md) o para administrar recursos en un sistema operativo basado en Windows. Esto significa que puede obtener datos sobre objetos como discos, adaptadores de red, servicios o procesos de su empresa a través del conjunto existente de [clases WMI](/windows/desktop/WmiSdk/wmi-classes). También puede tener acceso a los datos de hardware que están disponibles en el [proveedor IPMI](/previous-versions/windows/desktop/ipmiprv/ipmi-provider)estándar de WMI.
+WinRM admite la mayoría de las operaciones y clases WMI conocidas, incluidos los objetos incrustados. WinRM puede aprovechar WMI para recopilar datos [*sobre*](windows-remote-management-glossary.md) los recursos o para administrar recursos en un Windows operativo basado en datos. Esto significa que puede obtener datos sobre objetos como discos, adaptadores de red, servicios o procesos de su empresa a través del conjunto existente de [clases WMI](/windows/desktop/WmiSdk/wmi-classes). También puede acceder a los datos de hardware que están disponibles en el proveedor [DE IPMI WMI estándar.](/previous-versions/windows/desktop/ipmiprv/ipmi-provider)
 
-## <a name="identifying-a-wmi-resource"></a>Identificar un recurso WMI
+## <a name="identifying-a-wmi-resource"></a>Identificación de un recurso WMI
 
-Puede hacer referencia a una clase WMI como un [*recurso*](windows-remote-management-glossary.md) en WinRM y en el protocolo WS-Management: un tipo de entidad administrada, como un servicio o un disco.
+Puede hacer referencia a [](windows-remote-management-glossary.md) una clase WMI como un recurso en WinRM y en el protocolo WS-Management: un tipo de entidad administrada, como un servicio o un disco.
 
-Una clase o un método WMI se identifica mediante un [*URI*](windows-remote-management-glossary.md), al igual que cualquier otro recurso cuando se usa el protocolo WS-Management. El URI puede especificar un recurso de WMI (clase), una acción de WMI (método) o identificar una instancia específica de una clase en [*los mensajes*](windows-remote-management-glossary.md) enviados a través de una red. Para obtener más información, vea [URI de recursos](resource-uris.md).
+Una clase o método WMI se identifica mediante un [*URI*](windows-remote-management-glossary.md), igual que cualquier otro recurso cuando se usa el protocolo WS-Management datos. El URI puede especificar un recurso WMI (clase), una acción WMI (método) o identificar una instancia específica de una clase en los mensajes enviados a través de una red. [](windows-remote-management-glossary.md) Para más información, consulte URI [de recursos.](resource-uris.md)
 
-## <a name="constructing-the-uri-prefix-for-wmi-classes"></a>Construir el prefijo URI para clases WMI
+## <a name="constructing-the-uri-prefix-for-wmi-classes"></a>Construcción del prefijo URI para clases WMI
 
-El prefijo URI contiene una parte fija y el espacio de nombres WMI. Por ejemplo, el prefijo URI en Windows Server que contiene la parte fija del prefijo es: `http://schemas.microsoft.com/wbem/wsman/1/wmi/<WmiNamespace>` . Esto permite generar el prefijo de URI para cualquier espacio de nombres WMI. Por ejemplo, para tener acceso al espacio de nombres WMI **\\ predeterminado raíz** , use el siguiente prefijo de URI: `http://schemas.microsoft.com/wbem/wsman/1/wmi/root/default/` .
+El prefijo URI contiene una parte fija y el espacio de nombres WMI. Por ejemplo, el prefijo URI de Windows Server que contiene la parte fija del prefijo es: `http://schemas.microsoft.com/wbem/wsman/1/wmi/<WmiNamespace>` . Esto permite generar el prefijo URI para cualquier espacio de nombres WMI. Por ejemplo, para acceder al espacio de nombres WMI **\\ predeterminado** raíz, use el siguiente prefijo URI: `http://schemas.microsoft.com/wbem/wsman/1/wmi/root/default/` .
 
-La mayoría de las clases WMI para la administración se encuentran en el espacio de nombres **root \\ cimv2** . Para tener acceso a las clases e instancias del espacio de nombres **root \\ cimv2** , use el prefijo URI: `http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/` . Para obtener más información, vea [URI de recursos](resource-uris.md).
+La mayoría de las clases WMI para la administración están en el **espacio de \\ nombres cimv2** raíz. Para acceder a las clases e instancias del espacio **de \\ nombres cimv2** raíz, use el prefijo URI: `http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/` . Para más información, consulte URI [de recursos.](resource-uris.md)
 
 ## <a name="generating-a-complete-uri-for-wmi-classes"></a>Generar un URI completo para clases WMI
 
-El URI que proporcione, ya sea a la herramienta de línea de comandos de **WinRM** o a un script, consta del prefijo más la especificación de recursos.
+El URI que se proporciona, ya sea a la herramienta de línea de comandos **Winrm** o a un script, consta del prefijo más la especificación del recurso.
 
-En el procedimiento siguiente se describe cómo generar un URI de recurso para obtener una clase WMI o para usarla en una operación de enumeración.
+En el procedimiento siguiente se describe cómo generar un URI de recurso para obtener una clase WMI o para usarlo en una operación de enumeración.
 
 **Para generar un URI de recurso para una clase WMI**
 
-1.  Comience con el prefijo que indica que se debe usar el esquema de protocolo WS-Management.
+1.  Comience con el prefijo que indica el WS-Management se debe usar el esquema de protocolo.
 
     https://schemas.microsoft.com/wbem/wsman/1
 
-    El prefijo de URI de recurso para las clases WMI siempre es el mismo. Para obtener más información, vea [prefijos de URI](uri-prefixes.md).
+    El prefijo uri de recurso para las clases WMI siempre es el mismo. Para obtener más información, vea [Prefijos URI](uri-prefixes.md).
 
-2.  Agregue el espacio de nombres WMI al prefijo.
+2.  Agregue el espacio de nombres WMI al prefijo .
 
     `http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/`
 
@@ -57,38 +57,38 @@ En el procedimiento siguiente se describe cómo generar un URI de recurso para o
 
     `http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/Win32\_Service`
 
-4.  Para establecer el valor de una propiedad, o para invocar un método específico, agregue el valor o los valores de clave necesarios para la clase.
+4.  Para establecer el valor de una propiedad o para invocar un método específico, agregue el valor de clave o los valores necesarios para la clase.
 
     `http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/Win32\_Service?Name=Winmgmt`
 
-    Si deja el valor de clave en blanco, no modificará el valor de la propiedad original.
+    Si deja el valor de clave en blanco, no modificará el valor de propiedad original.
 
     > [!Note]  
-    > Si se deja el valor de clave en blanco, el valor de la propiedad se establece en **null**.
+    > Si deja el valor de clave en blanco, el valor de la propiedad se **establece en NULL.**
 
      
 
-## <a name="locating-a-wmi-resource-with-winrm"></a>Localizar un recurso WMI con WinRM
+## <a name="locating-a-wmi-resource-with-winrm"></a>Buscar un recurso WMI con WinRM
 
-Puede obtener datos de WMI a través de la herramienta de línea de comandos, **WinRM** o a través de un script de Visual Basic que use la [API de scripting de WinRM](winrm-scripting-api.md). No se usa una [ruta de acceso WMI](/windows/desktop/WmiSdk/describing-the-location-of-a-wmi-object) para buscar un recurso. En su lugar, convierta el espacio de nombres y la jerarquía de WMI a un [*URI*](windows-remote-management-glossary.md).
+Puede obtener datos WMI a través de la herramienta de línea de comandos, **Winrm** o a través de un script Visual Basic que usa la API de [scripting de WinRM](winrm-scripting-api.md). No se usa una ruta [de acceso WMI](/windows/desktop/WmiSdk/describing-the-location-of-a-wmi-object) para buscar un recurso. En su lugar, convierta el espacio de nombres WMI y la jerarquía en un [*URI*](windows-remote-management-glossary.md).
 
-El URI de WinRM de una clase WMI contiene dos partes: el [Prefijo de URI](uri-prefixes.md) y la clase a la que desea obtener acceso.
+El URI de WinRM para una clase WMI contiene dos partes: el prefijo [uri](uri-prefixes.md) y la clase a la que desea acceder.
 
-Por ejemplo, se puede proporcionar el siguiente URI al método [**Session. Enumerate**](session-enumerate.md) para enumerar todos los servicios de un equipo. El prefijo URI es `http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/` y la clase es [**el \_ servicio Win32**](/windows/desktop/CIMWin32Prov/win32-service).
+Por ejemplo, se puede proporcionar el siguiente URI al [**método Session.Enumerate**](session-enumerate.md) para enumerar todos los servicios de un equipo. El prefijo URI es `http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/` y la clase es Servicio [**Win32. \_**](/windows/desktop/CIMWin32Prov/win32-service)
 
 `strResourceUri = "http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/Win32_CurrentTime"`
 
 En WMI, enumere los datos de todas las instancias de un recurso o clase de varias maneras:
 
--   Una consulta para todas las instancias de ese recurso.
+-   Consulta para todas las instancias de ese recurso.
 
     `Set colServices = objWMIService.ExecQuery("Select * from Win32_Service")`
 
--   Una llamada a [**SWbemServices. instances**](/windows/desktop/WmiSdk/swbemservices-instancesof) o [**SWbemObject. \_ instances**](/windows/desktop/WmiSdk/swbemobject-instances-).
+-   Una llamada a [**SWbemServices.InstancesOf**](/windows/desktop/WmiSdk/swbemservices-instancesof) o [**SWbemObject.Instances. \_**](/windows/desktop/WmiSdk/swbemobject-instances-)
 
     `Set colServices = InstancesOf("Win32_Service")`
 
-En WinRM, hay una manera de enumerar todas las instancias de un recurso: [**Session. Enumerate**](session-enumerate.md).
+En WinRM, hay una manera de enumerar todas las instancias de un recurso: [**Session.Enumerate**](session-enumerate.md).
 
 
 ```VB
@@ -100,11 +100,11 @@ Set colServices = objSession.Enumerate( strResource )
 
 ## <a name="locating-a-specific-instance-of-a-wmi-resource"></a>Buscar una instancia específica de un recurso WMI
 
-En WMI, puede designar una instancia determinada de una clase especificando valores para las propiedades de clave o consultando una instancia que coincida con una lista de valores de propiedad. Las propiedades de clave tienen el [**calificador de clave**](/windows/desktop/WmiSdk/key-qualifier)de WMI.
+En WMI, puede designar una instancia determinada de una clase especificando valores para las propiedades de clave o consultando una instancia de que coincida con una lista de valores de propiedad. Las propiedades de clave tienen el [**calificador de clave WMI**](/windows/desktop/WmiSdk/key-qualifier).
 
 Puede obtener una instancia específica de una clase de varias maneras:
 
--   Una llamada a [**Session. Enumerate**](session-enumerate.md) con los parámetros *Filter* y *Dialect* para crear una consulta.
+-   Una llamada a [**Session.Enumerate con los**](session-enumerate.md) *parámetros filter* y *dialect* para crear una consulta.
 
     ```VB
     RemoteComputer = "servername.domain.com"
@@ -119,7 +119,7 @@ Puede obtener una instancia específica de una clase de varias maneras:
 
     
 
--   Una llamada a [**SWbemServices. Get**](/windows/desktop/WmiSdk/swbemservices-get). Para [**Session. Get**](session-get.md), debe proporcionar uno o varios valores de clave específicos, precedidos de un signo de interrogación (?).
+-   Una llamada a [**SWbemServices.Get**](/windows/desktop/WmiSdk/swbemservices-get). Para [**Session.Get**](session-get.md), debe proporcionar uno o varios valores de clave específicos, precedidos de un signo de interrogación (?).
 
     El formato del URI para una instancia específica es `http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/WMI\_Class?Key1=Value` .
 
@@ -129,11 +129,11 @@ Puede obtener una instancia específica de una clase de varias maneras:
 
     
 
-    Una clase WMI puede tener más de una clave. Los pares de nombre y valor de clave se separan con un signo "+". En ese caso, el formato es: `http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/Win32\_Service?Key1=Value1+Key2=Value2` .
+    Una clase WMI puede tener más de una clave. Los pares clave-valor están separados por un signo "+". En ese caso, el formato es: `http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/Win32\_Service?Key1=Value1+Key2=Value2` .
 
-    La sintaxis de WinRM para obtener un objeto WMI singleton es diferente de la de WMI. Un singleton es una clase WMI definida para que solo se permita una instancia. [**Win32 \_ CurrentTime**](/previous-versions/windows/desktop/wmitimepprov/win32-currenttime) o [**Win32 \_ WMISetting**](/windows/desktop/CIMWin32Prov/win32-wmisetting) son ejemplos de una clase singleton de WMI.
+    La sintaxis de WinRM para obtener un objeto WMI singleton es diferente de WMI. Un singleton es una clase WMI definida para que solo se permita una instancia. [**Win32 \_ CurrentTime**](/previous-versions/windows/desktop/wmitimepprov/win32-currenttime) o [**Win32 \_ WMISetting son**](/windows/desktop/CIMWin32Prov/win32-wmisetting) ejemplos de una clase singleton wmi.
 
-    La sintaxis de WMI para singletons se muestra en el siguiente ejemplo de código de VBScript.
+    La sintaxis WMI para singletons se muestra en el siguiente ejemplo de código VBScript.
 
     ```VB
     Set TimeObject = objWMIService.Get("Win32_CurrentTime=@")
@@ -149,9 +149,9 @@ Puede obtener una instancia específica de una clase de varias maneras:
 
     
 
--   Agregar un [*selector*](windows-remote-management-glossary.md) a un objeto [**ResourceLocator**](resourcelocator.md) o [**IWSManResourceLocator**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanresourcelocator) .
+-   Agregar un [*selector*](windows-remote-management-glossary.md) a un [**objeto ResourceLocator**](resourcelocator.md) [**o IWSManResourceLocator.**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanresourcelocator)
 
-    En el ejemplo de código de VBScript siguiente se muestra cómo utilizar un selector para obtener una instancia específica del [**\_ procesador Win32**](/windows/desktop/CIMWin32Prov/win32-processor).
+    En el ejemplo de código de VBScript siguiente se muestra cómo usar un selector para obtener una instancia específica del [**procesador Win32 \_**](/windows/desktop/CIMWin32Prov/win32-processor).
 
     ```VB
     strUri = "http://schemas.microsoft.com/wbem/wsman/1/wmi/root/cimv2/Win32_Processor"
@@ -167,14 +167,14 @@ Puede obtener una instancia específica de una clase de varias maneras:
 
 <dl> <dt>
 
-[Acerca de Administración remota de Windows](about-windows-remote-management.md)
+[Acerca de Windows administración remota](about-windows-remote-management.md)
 </dt> <dt>
 
-[Prefijos de URI](uri-prefixes.md)
+[Prefijos URI](uri-prefixes.md)
 </dt> <dt>
 
 [URI de recursos](resource-uris.md)
 </dt> <dt>
 
-[Scripting en Administración remota de Windows](scripting-in-windows-remote-management.md)
+[Scripting en Windows administración remota](scripting-in-windows-remote-management.md)
 </dt> </dl>

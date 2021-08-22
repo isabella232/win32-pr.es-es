@@ -1,31 +1,31 @@
 ---
 title: Efecto de relieve
-description: Crea una versión de escala de grises de la imagen que aparece como si se hubiera estampado en papel.
+description: Crea una versión de escala de grises de la imagen que aparece como si se hubiera marcado en papel.
 ms.assetid: 74f63875-35cd-f335-62cd-410a953e53ea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dde087eb7f85fcd68615c39730bf6208024fc43
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4d0fe9b779cbad2b73b877338871f7adff3a36fb4bfb1c291be6de94f736088f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119586974"
 ---
 # <a name="emboss-effect"></a>Efecto de relieve
 
-Crea una versión de escala de grises de la imagen que aparece como si se hubiera estampado en papel.
+Crea una versión de escala de grises de la imagen que aparece como si se hubiera marcado en papel.
 
 El CLSID para este efecto es CLSID \_ D2D1Emboss.
 
 -   [Imagen de ejemplo](#example-image)
 -   [Código de ejemplo](#sample-code)
--   [Propiedades del efecto](#effect-properties)
+-   [Propiedades de efecto](#effect-properties)
 -   [Requisitos](#requirements)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="example-image"></a>Imagen de ejemplo
 
-![ejemplo de resultado de efecto](images/emboss-effect.png)
+![ejemplo de salida de efecto](images/emboss-effect.png)
 
 ## <a name="sample-code"></a>Código de ejemplo
 
@@ -42,20 +42,20 @@ m_d2dContext->DrawImage(embossEffect.Get());
 m_d2dContext->EndDraw();
 ```
 
-## <a name="effect-properties"></a>Propiedades del efecto
+## <a name="effect-properties"></a>Propiedades de efecto
 
-Las propiedades del efecto de relieve se definen mediante la enumeración de [**D2D1 \_ relieve \_**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_emboss_prop) .
+Las propiedades del efecto de relieve se definen mediante la [**enumeración D2D1 \_ EMBOSS \_ PROP.**](/windows/desktop/api/d2d1effects_2/ne-d2d1effects_2-d2d1_emboss_prop)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------------|---------------------------------------------------|
-| Cliente mínimo compatible | Aplicaciones de la tienda Windows de Windows 10 \[ Desktop apps \|\] |
-| Servidor mínimo compatible | Aplicaciones de la tienda Windows de Windows 10 \[ Desktop apps \|\] |
-| Encabezado                   | d2d1effects \_ 2. h                                  |
-| Biblioteca                  | d2d1. lib, dxguid. lib                              |
+| Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
+| Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
+| Header                   | d2d1effects \_ 2.h                                  |
+| Biblioteca                  | d2d1.lib, dxguid.lib                              |
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -29,13 +29,13 @@ Reg Entry 'Reg1' is not of type REG_SZ. Default types must be REG_SZ
     to never be installed on Win95 machines.
 ```
 
-El valor \# '123' es un valor del Registro **DWORD.**
+El valor \# "123" es un valor del Registro **DWORD.**
 
 [Tabla del Registro](registry-table.md) (parcial)
 
 
 
-| Registro | Nombre | Valor |
+| Registro | Name | Valor |
 |----------|------|-------|
 | Reg1     |      | \#123 |
 
@@ -43,7 +43,7 @@ El valor \# '123' es un valor del Registro **DWORD.**
 
  
 
-Para corregir esta advertencia, cambie el valor para escribir **REG \_ SZ**.
+Para corregir esta advertencia, cambie el valor al tipo **REG \_ SZ**.
 
 Los componentes con **\_ SZ no REG** son válidos.
 

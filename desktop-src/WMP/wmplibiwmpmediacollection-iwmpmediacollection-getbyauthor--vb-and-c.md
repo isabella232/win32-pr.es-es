@@ -1,11 +1,11 @@
 ---
-title: IWMPMediaCollection getByAuthor, método
-description: El método getByAuthor devuelve una interfaz IWMPPlaylist que proporciona acceso a los elementos multimedia por el autor especificado.
+title: Método getByAuthor de IWMPMediaCollection
+description: El método getByAuthor devuelve una interfaz IWMPPlaylist que proporciona acceso a los elementos multimedia por parte del autor especificado.
 ms.assetid: eb3793f6-bad1-4c80-991e-c6d0093ae57f
 keywords:
-- método getByAuthor de Windows Media Player
-- método getByAuthor Windows Media Player, interfaz IWMPMediaCollection
-- Interfaz IWMPMediaCollection Windows Media Player, método getByAuthor
+- Método getByAuthor Reproductor de Windows Media
+- Método getByAuthor Reproductor de Windows Media , interfaz IWMPMediaCollection
+- Interfaz IWMPMediaCollection Reproductor de Windows Media método , getByAuthor
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e594de010a65c15088e2a31a3ccbac2ac5a1fc6e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 829232e6cd9fb64fec1d209991c3734ad435b4b69d0d7b66b135ab9cca1fe4a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053613"
 ---
-# <a name="iwmpmediacollectiongetbyauthor-method"></a>IWMPMediaCollection:: getByAuthor (método)
+# <a name="iwmpmediacollectiongetbyauthor-method"></a>IWMPMediaCollection::getByAuthor (método)
 
-El `getByAuthor` método devuelve una interfaz **IWMPPlaylist** que proporciona acceso a los elementos multimedia por el autor especificado.
+El `getByAuthor` método devuelve una interfaz **IWMPPlaylist** que proporciona acceso a los elementos multimedia por parte del autor especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,26 +53,26 @@ Implements IWMPMediaCollection.getByAuthor
 
 <dl> <dt>
 
-*bstrAuthor* \[ de\]
+*bstrAuthor* \[ En\]
 </dt> <dd>
 
-**System. String** que es el nombre del autor.
+**System.String que** es el nombre del autor.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Una interfaz **WMPLib. IWMPPlaylist** para los elementos multimedia recuperados.
+Interfaz **WMPLib.IWMPPlaylist** para los elementos multimedia recuperados.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
-Hay dos maneras de recuperar una interfaz **IWMPMediaCollection** y el comportamiento del `getByAuthor` método depende de cuál de esas dos maneras se usa. Si recupera la interfaz llamando a [AxWindowsMediaPlayer. mediaCollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md), el `getByAuthor` método devuelve todos los elementos multimedia de la biblioteca. Sin embargo, si recupera la interfaz llamando a [IWMPLibrary. mediaCollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), el `getByAuthor` método solo devuelve los elementos de audio de la biblioteca que tienen el atributo y el valor especificados.
+Hay dos maneras de recuperar una interfaz **IWMPMediaCollection** y el comportamiento del método depende de cuál de esas dos formas `getByAuthor` de usar. Si recupera la interfaz mediante una llamada [a AxWindowsMediaPlayer.mediaCollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md), el método devuelve todos los `getByAuthor` elementos multimedia de la biblioteca. Sin embargo, si recupera la interfaz mediante una llamada a [IWMPLibrary.mediaCollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), el método devuelve solo los elementos de audio de la biblioteca que tienen el atributo y el valor `getByAuthor` especificados.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente `getByAuthor` se usa para crear una lista de reproducción de elementos multimedia cuando el usuario hace clic en un botón. La lista de reproducción contiene elementos que coinciden con el nombre del autor especificado por el usuario en un cuadro de texto. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se `getByAuthor` usa para crear una lista de reproducción de elementos multimedia cuando el usuario hace clic en un botón. La lista de reproducción contiene elementos que coinciden con el nombre del autor especificado por el usuario en un cuadro de texto. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -124,9 +124,9 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

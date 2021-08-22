@@ -1,17 +1,17 @@
 ---
 description: Especifica cuándo se vacía una transformación.
 ms.assetid: 1e87f58f-546f-4dd4-b218-1458ff17db53
-title: MF_TOPONODE_FLUSH atributo (Mfidl. h)
+title: MF_TOPONODE_FLUSH atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cea241227d70d967f6f41ccd994176e9ddbbacbd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67e02c297efa68c6e6c585837675a46b729ec2382be072828059fd795d1c67a9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663885"
 ---
-# <a name="mf_toponode_flush-attribute"></a>\_Atributo de \_ vaciado MF TOPONODE
+# <a name="mf_toponode_flush-attribute"></a>Atributo MF \_ TOPONODE \_ FLUSH
 
 Especifica cuándo se vacía una transformación.
 
@@ -19,15 +19,15 @@ Especifica cuándo se vacía una transformación.
 
 **UINT32**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se aplica a los nodos de transformación (**\_ nodo de \_ transformación \_ de topología MF**).
+Este atributo se aplica a los nodos de transformación **(MF \_ TOPOLOGY \_ TRANSFORM \_ NODE**).
 
-El valor del atributo es un miembro de la enumeración del [**\_ \_ \_ modo de vaciado MF TOPONODE**](/windows/desktop/api/mfidl/ne-mfidl-mf_toponode_flush_mode) . Si no se establece este atributo, el valor predeterminado es **MF \_ TOPONODE \_ Flush \_ siempre**.
+El valor del atributo es un miembro de la enumeración [**MF \_ TOPONODE \_ FLUSH \_ MODE.**](/windows/desktop/api/mfidl/ne-mfidl-mf_toponode_flush_mode) Si no se establece este atributo, el valor predeterminado es **MF \_ TOPONODE \_ FLUSH \_ ALWAYS.**
 
-El vaciado se realiza mediante una llamada a [**IMFTransform::P rocessmessage**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage) en la transformación con el mensaje de [**\_ \_ \_ vaciado del comando del mensaje MFT**](mft-message-command-flush.md) . Para obtener más información, consulte enumeración de [**\_ \_ tipo de mensaje de MFT**](/windows/desktop/api/mftransform/ne-mftransform-mft_message_type) .
+El vaciado se realiza mediante una llamada [**a IMFTransform::P rocessMessage**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage) en la transformación con el mensaje FLUSH del comando [**MFT \_ MESSAGE. \_ \_**](mft-message-command-flush.md) Para obtener más información, vea [**Enumeración \_ MFT MESSAGE \_ TYPE.**](/windows/desktop/api/mftransform/ne-mftransform-mft_message_type)
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -45,16 +45,16 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
-[**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
+[**NODETopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
 </dt> <dt>
 
 [Atributos de nodo de topología](topology-node-attributes.md)

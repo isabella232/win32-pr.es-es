@@ -1,7 +1,7 @@
 ---
 description: Limpia una malla y la prepara para simplificarla.
 ms.assetid: 2b586ecc-db87-4b20-a4fc-c8b547bebf65
-title: Función D3DXCleanMesh (D3DX9Mesh. h)
+title: Función D3DXCleanMesh (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5565978dc1ad0e80c33718275ea65080930ce7cf
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: adc5d60b66dc9eaa06314e18ead26412b8572e9dbc649070c37891a62fb9ecbe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105649423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119495915"
 ---
-# <a name="d3dxcleanmesh-function"></a>D3DXCleanMesh función)
+# <a name="d3dxcleanmesh-function"></a>Función D3DXCleanMesh
 
 Limpia una malla y la prepara para simplificarla.
 
@@ -45,52 +45,52 @@ HRESULT D3DXCleanMesh(
 
 <dl> <dt>
 
-*CleanType* \[ de\]
+*CleanType* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **D3DXCLEANTYPE**](./d3dxcleantype.md)**
 
-Operaciones de vértices que se deben realizar como preparación para la limpieza de malla. Vea [**D3DXCLEANTYPE**](./d3dxcleantype.md).
+Operaciones de vértice que se realizan como preparación para la limpieza de malla. Vea [**D3DXCLEANTYPE**](./d3dxcleantype.md).
 
 </dd> <dt>
 
-*pMeshIn* \[ de\]
+*pMeshIn* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)**
 
-Puntero a una interfaz [**ID3DXMesh**](id3dxmesh.md) que representa la malla que se va a limpiar.
+Puntero a una [**interfaz ID3DXMesh,**](id3dxmesh.md) que representa la malla que se va a limpiar.
 
 </dd> <dt>
 
-*pAdjacencyIn* \[ de\]
+*pAdjacencyIn* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Puntero a una matriz de tres DWORD por cada tipo que especifica los tres vecinos de cada una de las caras de la malla que se van a limpiar.
+Puntero a una matriz de tres DWORD por cara que especifican los tres vecinos de cada cara de la malla que se va a limpiar.
 
 </dd> <dt>
 
-*ppMeshOut* \[ enuncia\]
+*ppMeshOut* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)\***
 
-Dirección de un puntero a una interfaz [**ID3DXMesh**](id3dxmesh.md) que representa la malla limpiada devuelta. Se devuelve la misma malla que se pasó si no se necesita ninguna limpieza.
+Dirección de un puntero a una [**interfaz ID3DXMesh,**](id3dxmesh.md) que representa la malla limpia devuelta. Se devuelve la misma malla que se pasó si no era necesaria ninguna limpieza.
 
 </dd> <dt>
 
-*pAdjacencyOut* \[ enuncia\]
+*pAdjacencyOut* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Puntero a una matriz de tres DWORD por cada tipo que especifica los tres vecinos para cada una de las caras de la malla de salida.
+Puntero a una matriz de tres DWORD por cara que especifican los tres vecinos de cada cara de la malla de salida.
 
 </dd> <dt>
 
-*ppErrorsAndWarnings* \[ enuncia\]
+*ppErrorsAndWarnings* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
@@ -103,11 +103,11 @@ Devuelve un búfer que contiene una cadena de errores y advertencias, que explic
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si la función se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función limpia una malla mediante el método de limpieza y las opciones especificadas en el parámetro CleanType. Vea la enumeración [**D3DXCLEANTYPE**](./d3dxcleantype.md) para obtener una descripción de las opciones disponibles.
+Esta función limpia una malla mediante el método de limpieza y las opciones especificadas en el parámetro CleanType. Consulte la [**enumeración D3DXCLEANTYPE**](./d3dxcleantype.md) para obtener una descripción de las opciones disponibles.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -115,8 +115,8 @@ Esta función limpia una malla mediante el método de limpieza y las opciones es
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

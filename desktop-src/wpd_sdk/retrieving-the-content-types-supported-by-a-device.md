@@ -32,7 +32,7 @@ La aplicación puede recuperar las categorías funcionales admitidas por un disp
 
  
 
-El código encontrado en la función ListSupportedContentTypes es casi idéntico al código que se encuentra en la función ListFunctionalCategories. (Consulte el [tema Recuperación de categorías funcionales compatibles con un dispositivo).](retrieving-the-functional-categories-supported-by-a-device.md) La única diferencia es la llamada al método [**IPortableDeviceCapabilities::GetSupportedContentTypes,**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecapabilities-getsupportedcontenttypes) que aparece dentro del bucle que recorre en iteración las categorías funcionales.
+El código que se encuentra en la función ListSupportedContentTypes es casi idéntico al código que se encuentra en la función ListFunctionalCategories. (Consulte el [tema Recuperación de categorías funcionales compatibles con un dispositivo).](retrieving-the-functional-categories-supported-by-a-device.md) La única diferencia es la llamada al método [**IPortableDeviceCapabilities::GetSupportedContentTypes,**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecapabilities-getsupportedcontenttypes) que aparece dentro del bucle que recorre en iteración las categorías funcionales.
 
 
 ```C++
@@ -132,7 +132,7 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[**IPortableDevice (Interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
+[**IPortableDevice (interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
 </dt> <dt>
 
 [**IPortableDeviceCapabilities (Interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)

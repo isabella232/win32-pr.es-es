@@ -58,7 +58,7 @@ Permite inspeccionar los mensajes de la cola.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 | Localization-Display-ID | 43                                           |
@@ -80,7 +80,7 @@ Permite inspeccionar los mensajes de la cola.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 | Localization-Display-ID | 43                                           |
@@ -91,7 +91,7 @@ Permite inspeccionar los mensajes de la cola.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 | Localization-Display-ID | 43                                           |
@@ -102,7 +102,7 @@ Permite inspeccionar los mensajes de la cola.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**MSMQ-Queue**](c-msmqqueue.md)<br/> |
 | Localization-Display-ID | 43                                           |

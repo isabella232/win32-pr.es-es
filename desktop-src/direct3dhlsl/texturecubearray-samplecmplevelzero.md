@@ -34,7 +34,7 @@ Muestrea solo una textura en el nivel 0 del mapa mip, usando un valor de compara
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
-title: Send-As derecha extendida
-description: Exchange Right permite el envío de correo como buzón.
+title: Send-As derecho extendido
+description: Exchange derecho permite enviar correo como buzón de correo.
 ms.assetid: df7b4991-8045-41c0-84b5-38ff0b532168
 ms.tgt_platform: multiple
 keywords:
@@ -13,20 +13,20 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59610536d55c9eb427dc44fbccf18b98b9d74048
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e410b6b70b5424b7a8dd9b614341d1894fec7a9daf3b5d82c2e37d8cfd40e951
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531405"
 ---
-# <a name="send-as-extended-right"></a>Send-As derecha extendida
+# <a name="send-as-extended-right"></a>Send-As derecho extendido
 
-Exchange Right: permite el envío de correo como buzón.
+Exchange derecho: permite enviar correo como buzón de correo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
 | CN           | Send-As                              |
 | Display-Name | Enviar como                              |
@@ -47,10 +47,10 @@ Exchange Right: permite el envío de correo como buzón.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-----------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> |
-| Localización: ID. de presentación | 4                                                                           |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> |
+| Localization-Display-ID | 4                                                                           |
 
 
 
@@ -58,10 +58,10 @@ Exchange Right: permite el envío de correo como buzón.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localización: ID. de presentación | 4                                                                                                                               |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 4                                                                                                                               |
 
 
 
@@ -71,8 +71,8 @@ Exchange Right: permite el envío de correo como buzón.
 
 | Entrada | Value |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localización: ID. de presentación | 4                                                                                                                               |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 4                                                                                                                               |
 
 
 
@@ -82,8 +82,8 @@ Exchange Right: permite el envío de correo como buzón.
 
 | Entrada | Value |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localización: ID. de presentación | 4                                                                                                                               |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 4                                                                                                                               |
 
 
 
@@ -93,8 +93,8 @@ Exchange Right: permite el envío de correo como buzón.
 
 | Entrada | Value |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**Cuenta de servicio de MS-DS-Managed**](c-msds-managedserviceaccount.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localización: ID. de presentación | 4                                                                                                                                                                                                                |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 4                                                                                                                                                                                                                |
 
 
 
@@ -104,8 +104,8 @@ Exchange Right: permite el envío de correo como buzón.
 
 | Entrada | Value |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**User**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**Cuenta de servicio de MS-DS-Managed**](c-msds-managedserviceaccount.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
-| Localización: ID. de presentación | 4                                                                                                                                                                                                                |
+| Applies-To              | [**Usuario**](c-user.md)<br/> [**Computer**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/> [**inetOrgPerson**](c-inetorgperson.md)<br/> |
+| Localization-Display-ID | 4                                                                                                                                                                                                                |
 
 
 

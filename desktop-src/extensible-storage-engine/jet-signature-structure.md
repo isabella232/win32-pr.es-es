@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_SIGNATURE'
-title: Estructura de JET_SIGNATURE
+description: 'Más información sobre: JET_SIGNATURE estructura'
+title: JET_SIGNATURE estructura
 TOCTitle: JET_SIGNATURE Structure
 ms:assetid: 90d3fd56-be65-4126-b50c-b53e3c3f38f6
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269340(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d6210853e22fda5085980c2fb285411ba431bb43
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9d254a392ade9daa43382d8418f2dda90729eddc81f6c3bbd7013d89ae8f2e74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119616195"
 ---
-# <a name="jet_signature-structure"></a>Estructura de JET_SIGNATURE
+# <a name="jet_signature-structure"></a>JET_SIGNATURE estructura
 
 
-_**Se aplica a:** Windows | Windows Server_
+_**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="jet_signature-structure"></a>Estructura de JET_SIGNATURE
+## <a name="jet_signature-structure"></a>JET_SIGNATURE estructura
 
-La estructura **JET_SIGNATURE** contiene información que identifica de forma única una base de datos.
+La **JET_SIGNATURE** contiene información que identifica de forma única una base de datos.
 
 ```cpp
     typedef struct {
@@ -47,13 +47,13 @@ Número asignado aleatoriamente.
 
 **logtimeCreate**
 
-Se ejecuta el [JET_LOGTIME](./jet-logtime-structure.md) en el momento de [JetCreateDatabase](./jetcreatedatabase-function.md) .
+El [JET_LOGTIME](./jet-logtime-structure.md) en el momento de [ejecutar JetCreateDatabase.](./jetcreatedatabase-function.md)
 
 **szComputerName**
 
-Valor de cadena opcional del nombre NetBIOS del equipo. No se puede establecer este valor.
+Valor de cadena opcional del nombre NetBIOS del equipo. Este valor no se puede establecer.
 
-### <a name="remarks"></a>Observaciones
+### <a name="remarks"></a>Comentarios
 
 Se puede encontrar como un elemento de [JET_DBINFOMISC](./jet-dbinfomisc-structure.md).
 
@@ -70,12 +70,12 @@ Se puede encontrar como un elemento de [JET_DBINFOMISC](./jet-dbinfomisc-structu
 <td><p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Server</strong></p></td>
+<td><p><strong>Servidor</strong></p></td>
 <td><p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Header</strong></p></td>
-<td><p>Declarado en esent. h.</p></td>
+<td><p>Declarado en Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

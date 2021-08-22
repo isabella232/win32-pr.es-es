@@ -1,10 +1,10 @@
 ---
 title: Propiedad currentPosition de IWMPControls
-description: La propiedad currentPosition obtiene o establece la posición actual en el elemento multimedia en segundos desde el principio.
+description: La propiedad currentPosition obtiene o establece la posición actual del elemento multimedia en segundos desde el principio.
 ms.assetid: 48f5241e-7528-485e-bf47-d655ba842af2
 keywords:
 - propiedad currentPosition Reproductor de Windows Media
-- Propiedad currentPosition Reproductor de Windows Media interfaz , IWMPControls
+- Propiedad currentPosition Reproductor de Windows Media , interfaz IWMPControls
 - Interfaz IWMPControls Reproductor de Windows Media , propiedad currentPosition
 topic_type:
 - apiref
@@ -25,7 +25,7 @@ ms.locfileid: "119053673"
 ---
 # <a name="iwmpcontrolscurrentposition-property"></a>Propiedad IWMPControls::currentPosition
 
-La **propiedad currentPosition** obtiene o establece la posición actual en el elemento multimedia en segundos desde el principio.
+La **propiedad currentPosition** obtiene o establece la posición actual del elemento multimedia en segundos desde el principio.
 
 ## <a name="syntax"></a>Syntax
 
@@ -84,7 +84,7 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -92,7 +92,7 @@ End Sub
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

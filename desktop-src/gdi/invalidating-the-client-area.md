@@ -1,21 +1,21 @@
 ---
-description: El sistema no es el único origen de mensajes de pintado de WM \_ . La función InvalidateRect o InvalidateRgn puede generar indirectamente \_ mensajes de WM Paint para las ventanas. Estas funciones marcan todo o parte de un área cliente como no válida (se debe volver a dibujar).
+description: El sistema no es el único origen de mensajes \_ WM PAINT. La función InvalidateRect o InvalidateRgn puede generar indirectamente mensajes WM \_ PAINT para las ventanas. Estas funciones marcan todo o parte de un área de cliente como no válida (que se debe volver a dibujar).
 ms.assetid: 41c2bc07-768b-4d27-a869-69b072f3e033
-title: Invalidar el área de cliente
+title: Invalidación del área cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76fb02be44f600b80f87ec8f05c022fa3c35d827
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d94a3a5b4e6903c549331788f9e81947dca44e7a699bb1a633bce46525585b2d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104997348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119558665"
 ---
-# <a name="invalidating-the-client-area"></a>Invalidar el área de cliente
+# <a name="invalidating-the-client-area"></a>Invalidación del área cliente
 
-El sistema no es el único origen de mensajes de [**\_ pintado de WM**](wm-paint.md) . La función [**InvalidateRect**](/windows/desktop/api/Winuser/nf-winuser-invalidaterect) o [**InvalidateRgn**](/windows/desktop/api/Winuser/nf-winuser-invalidatergn) puede generar indirectamente mensajes de **WM \_ Paint** para las ventanas. Estas funciones marcan todo o parte de un área cliente como no válida (se debe volver a dibujar).
+El sistema no es el único origen de [**mensajes \_ WM PAINT.**](wm-paint.md) La [**función InvalidateRect**](/windows/desktop/api/Winuser/nf-winuser-invalidaterect) [**o InvalidateRgn**](/windows/desktop/api/Winuser/nf-winuser-invalidatergn) puede generar indirectamente mensajes **WM \_ PAINT** para las ventanas. Estas funciones marcan todo o parte de un área de cliente como no válida (que se debe volver a dibujar).
 
-En el ejemplo siguiente, el procedimiento de ventana invalida todo el área cliente cuando se procesan mensajes de [**WM \_ Char**](../inputdev/wm-char.md) . Esto permite al usuario cambiar la figura escribiendo un número y ver los resultados; Estos resultados se dibujan en cuanto no hay ningún otro mensaje en la cola de mensajes de la aplicación.
+En el ejemplo siguiente, el procedimiento de ventana invalida todo el área de cliente al procesar [**mensajes WM \_ CHAR.**](../inputdev/wm-char.md) Esto permite al usuario cambiar la ilustración escribiendo un número y visualizando los resultados. Estos resultados se dibujan en cuanto no hay ningún otro mensaje en la cola de mensajes de la aplicación.
 
 
 ```C++
@@ -57,7 +57,7 @@ case WM_PAINT:
 
 
 
-En este ejemplo, el argumento **null** que usa [**InvalidateRect**](/windows/desktop/api/Winuser/nf-winuser-invalidaterect) especifica el área de cliente completa; el argumento **true** hace que se borre el fondo. Si no desea que la aplicación espere hasta que la cola de mensajes de la aplicación no tenga ningún otro mensaje, utilice la función [**UpdateWindow**](/windows/desktop/api/Winuser/nf-winuser-updatewindow) para obligar a que el mensaje de [**\_ dibujo de WM**](wm-paint.md) se envíe inmediatamente. Si hay alguna parte no válida del área cliente, **UpdateWindow** envía el mensaje **de \_ dibujo de WM** para la ventana especificada directamente al procedimiento de ventana.
+En este ejemplo, el **argumento NULL** utilizado [**por InvalidateRect**](/windows/desktop/api/Winuser/nf-winuser-invalidaterect) especifica todo el área de cliente; El **argumento TRUE** hace que se borre el fondo. Si no desea que la aplicación espere hasta que la cola de mensajes de la aplicación no tenga ningún otro mensaje, use la función [**UpdateWindow**](/windows/desktop/api/Winuser/nf-winuser-updatewindow) para forzar el envío inmediato del mensaje [**WM \_ PAINT.**](wm-paint.md) Si hay alguna parte no válida del área de cliente, **UpdateWindow** envía el mensaje **WM \_ PAINT** de la ventana especificada directamente al procedimiento de ventana.
 
  
 

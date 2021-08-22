@@ -1,19 +1,19 @@
 ---
-description: Especifica el número de fotogramas de vídeo que se han quitado durante la codificación.
+description: Especifica el número de fotogramas de vídeo descartados durante la codificación.
 ms.assetid: e55db53e-ab70-42ce-b5cd-2e59a4e96b7b
-title: Propiedad MFPKEY_DROPPEDFRAMES (Wmcodecdsp. h)
+title: MFPKEY_DROPPEDFRAMES propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b31404218e4e179e19f53e30f5750976c71e0d7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c701399684b15d07ca287813cf6bf9875bab7c17261bb1ae7b9fe2bda2e5254c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103812757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663555"
 ---
-# <a name="mfpkey_droppedframes-property"></a>\_Propiedad DROPPEDFRAMES de MFPKEY
+# <a name="mfpkey_droppedframes-property"></a>Propiedad DROPPEDFRAMES de MFPKEY \_
 
-Especifica el número de fotogramas de vídeo que se han quitado durante la codificación.
+Especifica el número de fotogramas de vídeo descartados durante la codificación.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -23,19 +23,19 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 VT \_ I4
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-A veces, los fotogramas de vídeo se omiten o se quitan durante la codificación debido a las restricciones de búfer.
+Los fotogramas de vídeo a veces se omiten o se descartan durante la codificación debido a restricciones de búfer.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -43,7 +43,7 @@ A veces, los fotogramas de vídeo se omiten o se quitan durante la codificación
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> </dl>
 
  

@@ -53,7 +53,7 @@ Cadena que representa el tipo de cola de impresoras.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------|
 | Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
@@ -74,7 +74,7 @@ Cadena que representa el tipo de cola de impresoras.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------|
 | Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
@@ -95,7 +95,7 @@ Cadena que representa el tipo de cola de impresoras.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------|
 | Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
@@ -137,7 +137,7 @@ Cadena que representa el tipo de cola de impresoras.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------|
 | Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |
@@ -158,7 +158,7 @@ Cadena que representa el tipo de cola de impresoras.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------|
 | Id. de vínculo                | \-                                             |
 | MAPI-Id                | \-                                             |

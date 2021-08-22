@@ -44,7 +44,7 @@ Especifica que un consumidor puede suscribirse a los eventos entregados a un rec
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_S_SUBJECT_TO_SDS"></span><span id="wbem_s_subject_to_sds"></span>**WBEM \_ S SUJETO A \_ \_ \_ SDS**
+<span id="WBEM_S_SUBJECT_TO_SDS"></span><span id="wbem_s_subject_to_sds"></span>**WBEM \_ ESTÁ SUJETO A \_ \_ \_ SDS**
 </dt> <dd> <dl> <dt>
 
 274435 (0x43003)
@@ -52,7 +52,7 @@ Especifica que un consumidor puede suscribirse a los eventos entregados a un rec
 
 
 
-El proveedor de eventos indica que WMI comprueba la propiedad **\_ DESCRIPTOR** DE SEGURIDAD de cada evento (heredada de [**\_ \_ Evento**](--event.md)) y solo envía eventos a los consumidores con los permisos de acceso adecuados. Disponible en wbemprov.h.
+El proveedor de eventos indica que WMI comprueba la propiedad **\_ DESCRIPTOR DE** SEGURIDAD en cada evento (heredado de [**\_ \_ Evento**](--event.md)) y solo envía eventos a los consumidores con los permisos de acceso adecuados. Disponible en wbemprov.h.
 
 
 </dt> </dl> </dd> </dl>
@@ -61,7 +61,7 @@ El proveedor de eventos indica que WMI comprueba la propiedad **\_ DESCRIPTOR** 
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                                                                         |
@@ -73,10 +73,10 @@ El proveedor de eventos indica que WMI comprueba la propiedad **\_ DESCRIPTOR** 
 
 <dl> <dt>
 
-[Constantes de seguridad WMI](wmi-security-constants.md)
+[Constantes de seguridad wmi](wmi-security-constants.md)
 </dt> <dt>
 
-[Mantenimiento de la seguridad wmi](maintaining-wmi-security.md)
+[Mantener la seguridad de WMI](maintaining-wmi-security.md)
 </dt> <dt>
 
 [Protección de eventos WMI](securing-wmi-events.md)

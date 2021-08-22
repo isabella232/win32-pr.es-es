@@ -1,29 +1,29 @@
 ---
-title: Servidor BITS compacto
-description: El servidor de Servicio de transferencia inteligente en segundo plano (BITS) Compact es un servidor de archivos HTTP/HTTPS independiente que proporciona la capacidad de transferir un número limitado de archivos grandes de forma asincrónica entre equipos.
+title: BITS Compact Server
+description: El Servicio de transferencia inteligente en segundo plano compact server (BITS) es un servidor de archivos HTTP/HTTPS independiente que proporciona la capacidad de transferir un número limitado de archivos de gran tamaño de forma asincrónica entre equipos.
 ms.assetid: ab4cf901-6d93-433c-b1b2-ffa54d10725c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b40e2840c24e15379fac11a5a12ed76c225e7be5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 41cfbc18a8dc06bb474ab8df9df85fb7b8a96838db14bbc18aee4d94881985d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103904720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119529195"
 ---
-# <a name="bits-compact-server"></a>Servidor BITS compacto
+# <a name="bits-compact-server"></a>BITS Compact Server
 
-El servidor de Servicio de transferencia inteligente en segundo plano (BITS) Compact es un servidor de archivos HTTP/HTTPS independiente que proporciona la capacidad de transferir un número limitado de archivos grandes de forma asincrónica entre equipos. El servidor compacto se compila como un servicio NT y usa HTTP.SYS.
+El Servicio de transferencia inteligente en segundo plano compact server (BITS) es un servidor de archivos HTTP/HTTPS independiente que proporciona la capacidad de transferir un número limitado de archivos de gran tamaño de forma asincrónica entre equipos. Compact Server se ha creado como un servicio NT y usa HTTP.SYS.
 
-El servidor BITS compacto está diseñado para que lo usen los clientes de empresas y pequeñas empresas en las siguientes condiciones:
+BITS Compact Server está pensado para su uso por parte de clientes empresariales y de pequeñas empresas en las siguientes condiciones:
 
--   El uso previsto es un máximo de 25 grupos de direcciones URL, y cada grupo de direcciones URL admite 3 transferencias de archivos simultáneas.
--   Las transferencias de archivos se producen entre equipos en el mismo dominio o en dominios de confianza mutua.
--   Las transferencias de archivos no están destinadas a clientes con conexión a Internet.
+-   El uso previsto es un máximo de 25 grupos de direcciones URL y cada grupo de direcciones URL admite 3 transferencias de archivos simultáneas.
+-   Las transferencias de archivos se producen entre equipos del mismo dominio o dominios de confianza mutua.
+-   Las transferencias de archivos no están pensadas para clientes con conexión a Internet.
 
-## <a name="installing-the-bits-compact-server"></a>Instalación del servidor BITS compacto
+## <a name="installing-the-bits-compact-server"></a>Instalación de BITS Compact Server
 
-El servidor BITS Compact es un componente de servidor opcional. Puede usar una de las siguientes opciones para instalar el servidor BITS compacto:
+BITS Compact Server es un componente de servidor opcional. Puede usar una de las siguientes opciones para instalar BITS Compact Server:
 
 -   Administrador de servidores
 
@@ -31,20 +31,20 @@ El servidor BITS Compact es un componente de servidor opcional. Puede usar una d
 
 -   Administrador de paquetes
 
-**Para instalar el servidor BITS compacto mediante Administrador del servidor**
+**Para instalar BITS Compact Server mediante Administrador del servidor**
 
-1.  En la sección **Resumen de características** del **Administrador del servidor**, haga clic en **Agregar características**.
-2.  En el Asistente para agregar características, seleccione **servicio de transferencia inteligente en segundo plano (bits)** y **Compact Server**.
-3.  Siga las instrucciones del asistente, incluida la instalación del software necesario, si se indica.
+1.  En la **sección Resumen de características** de la **Administrador del servidor**, haga clic en **Agregar características.**
+2.  En el Asistente para agregar características, **seleccione Servicio de transferencia inteligente en segundo plano (BITS)** y **Compact Server**.
+3.  Siga las instrucciones del asistente, incluida la instalación del software necesario si se indica.
 
-Para obtener más información, consulte la ayuda en pantalla de **Administrador del servidor** .
+Para obtener más información, consulte **el** Administrador del servidor en línea.
 
-**Para instalar el servidor BITS compacto mediante Windows PowerShell**
+**Para instalar BITS Compact Server mediante Windows PowerShell**
 
-1.  En un símbolo del sistema de Windows PowerShell, escriba el siguiente comando: **Import-Module ServerManager**. Luego, presione Intro.
-2.  Escriba el comando siguiente: **Add-WINDOWSFEATURE bits-Compact-Server**. Luego, presione Intro.
+1.  En un Windows PowerShell de comandos, escriba el siguiente comando: **Import-Module ServerManager**. Luego, presione Intro.
+2.  Escriba el comando siguiente: **Add-WindowsFeature BITS-Compact-Server**. Luego, presione Intro.
 
-En el ejemplo de texto siguiente se muestra cómo instalar el servidor BITS compacto mediante cmdlets de Windows PowerShell.
+En el siguiente ejemplo basado en texto se muestra cómo instalar BITS Compact Server mediante Windows PowerShell cmdlets.
 
 ``` syntax
 PS C:\> Import-Module ServerManager
@@ -58,34 +58,34 @@ True    No             Success   {Compact Server}
 PS C:\>
 ```
 
-Para obtener información sobre el uso de cmdlets, consulte la documentación de [Windows PowerShell](https://msdn.microsoft.com/library/dd835506(v=vs.85).aspx) .
+Para obtener información sobre el uso de cmdlets, consulte [Windows PowerShell](https://msdn.microsoft.com/library/dd835506(v=vs.85).aspx) documentación.
 
-Para obtener más información sobre el cmdlet Import-Module, consulte [Import-Module](/previous-versions//dd347701(v=technet.10)) en la biblioteca de Microsoft TechNet. Para obtener ayuda en la línea de comandos, escriba **Get-Help Import-Module**.
+Para obtener más información sobre el cmdlet Import-Module, [vea Import-Module](/previous-versions//dd347701(v=technet.10)) en la biblioteca de Microsoft TechNet. Para obtener ayuda en la línea de comandos, **escriba get-help import-module**.
 
-Para obtener más información sobre el cmdlet Add-WindowsFeature, consulte [Add-WindowsFeature](/previous-versions//dd347701(v=technet.10)) en la biblioteca de Microsoft TechNet. Para obtener ayuda en la línea de comandos, escriba **Get-Help Add-WindowsFeature**.
+Para obtener más información sobre el cmdlet Add-WindowsFeature, [vea Add-WindowsFeature](/previous-versions//dd347701(v=technet.10)) en la biblioteca de Microsoft TechNet. Para obtener ayuda en la línea de comandos, **escriba get-help Add-WindowsFeature**.
 
-**Para instalar el servidor BITS compacto mediante el administrador de paquetes**
+**Para instalar BITS Compact Server mediante Administrador de paquetes**
 
--   Escriba el siguiente comando: **PkgMgr.exe/IU: LightweightServer**.
+-   Escriba el siguiente comando: **PkgMgr.exe /iu:LightweightServer**.
 
 > [!Note]  
-> La configuración se pierde si se reinicia el servicio del servidor compacto o si se reinicia el equipo.
+> La configuración se pierde si se reinicia el servicio Compact Server o si se reinicia el equipo.
 
- 
+ 
 
-## <a name="bits-compact-server-remote-management"></a>Administración remota del servidor BITS compacto
+## <a name="bits-compact-server-remote-management"></a>Administración remota del servidor de BITS Compact
 
-El servidor BITS compacto con administración remota de BITS permite realizar transferencias de archivos remotas más seguras. La administración remota de BITS usa un proveedor de Instrumental de administración de Windows (WMI) para permitir que un administrador del sistema o una aplicación de controlador cree de forma remota trabajos de transferencia de BITS en los clientes y publique archivos para hospedarlos en el servidor BITS compacto. El proveedor de BITS también se puede usar para permitir que una aplicación use de forma remota el cliente de BITS junto con el servidor BITS compacto para transferir archivos de un equipo remoto a otro equipo remoto.
+Bits Compact Server con administración remota de BITS permite transferencias de archivos remotas más seguras. Administración remota de BITS usa un proveedor de instrumental de administración de Windows (WMI) para permitir que un administrador del sistema o una aplicación de controlador creen de forma remota trabajos de transferencia de BITS en los clientes y para publicar archivos para hospedar en el servidor de BITS Compact. El proveedor de BITS también se puede usar para permitir que una aplicación use de forma remota el cliente bits junto con bits Compact Server para transferir archivos de un equipo remoto a otro equipo remoto.
 
-Para obtener más información, vea la documentación del [proveedor de bits](/previous-versions/windows/desktop/bitsprov/bits-provider) .
+Para más información, consulte la documentación [del proveedor de BITS.](/previous-versions/windows/desktop/bitsprov/bits-provider)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Proveedor BITS](/previous-versions/windows/desktop/bitsprov/bits-provider)
+[Proveedor de BITS](/previous-versions/windows/desktop/bitsprov/bits-provider)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

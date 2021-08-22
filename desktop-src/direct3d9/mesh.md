@@ -1,5 +1,5 @@
 ---
-description: Define una malla simple. La primera matriz es una lista de vértices y la segunda matriz define las caras de la malla mediante la indexación en la matriz de vértices.
+description: Define una malla simple. La primera matriz es una lista de vértices y la segunda define las caras de la malla mediante la indexación en la matriz de vértices.
 ms.assetid: vs|directx_sdk|~\mesh.htm
 title: En malla
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "119240745"
 ---
 # <a name="mesh"></a>En malla
 
-Define una malla simple. La primera matriz es una lista de vértices y la segunda matriz define las caras de la malla mediante la indexación en la matriz de vértices.
+Define una malla simple. La primera matriz es una lista de vértices y la segunda define las caras de la malla mediante la indexación en la matriz de vértices.
 
 ``` syntax
 template Mesh

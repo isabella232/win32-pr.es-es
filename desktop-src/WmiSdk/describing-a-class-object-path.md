@@ -20,7 +20,7 @@ Puede usar los métodos siguientes para especificar una ruta de acceso de objeto
 
 -   Una ruta de acceso de objeto completa a una clase anexa el nombre de clase a una ruta de acceso de espacio de nombres.
 
-    En el ejemplo siguiente se muestra la ubicación de la [**clase \_ LogicalDisk win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) dentro del espacio de nombres \\ cimv2 raíz en el servidor denominado \\ Admin.
+    En el ejemplo siguiente se muestra la ubicación de la clase [**\_ LogicalDisk win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) dentro del espacio de nombres \\ raíz \\ cimv2 en el servidor denominado Admin.
 
     ``` syntax
     \\Admin\Root\CimV2:Win32_LogicalDisk
@@ -28,7 +28,7 @@ Puede usar los métodos siguientes para especificar una ruta de acceso de objeto
 
 -   Una ruta de acceso de objeto relativa representa una clase que reside en el espacio de nombres actual. Una ruta de acceso de objeto relativa a una clase contiene solo el nombre de clase.
 
-    En el ejemplo siguiente se muestra la ruta de acceso relativa a [**la clase \_ LogicalDisk de Win32.**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)
+    En el ejemplo siguiente se muestra la ruta de acceso relativa a la [**clase \_ LogicalDisk de Win32.**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)
 
     ``` syntax
     Win32_LogicalDisk
@@ -38,9 +38,9 @@ Cuando se consulta un nombre de clase pero no se especifica ninguna instancia, W
 
 **Para recuperar una definición de clase en VBScript**
 
--   Puede usar la conexión de moniker con una consulta o [**GetObject**](https://msdn.microsoft.com/library/ebdktb00(v=VS.71).aspx). También puede usar [**SWbemServices.Get.**](swbemservices-get.md)
+-   Puede usar la conexión de moniker con una consulta o [**GetObject**](https://msdn.microsoft.com/library/ebdktb00(v=VS.71).aspx). También puede usar [**SWbemServices.Get**](swbemservices-get.md).
 
-    En el ejemplo siguiente se muestra cómo usar [GetObject para](/previous-versions//kdccchxa(v=vs.85)) obtener una definición de clase.
+    En el ejemplo siguiente se muestra cómo usar [GetObject](/previous-versions//kdccchxa(v=vs.85)) para obtener una definición de clase.
 
     ```VB
     strComputer = "."
@@ -82,7 +82,7 @@ Puede recuperar una definición de clase en C++ especificando solo el nombre de 
 
     
 
-    En el ejemplo de código anterior se requiere que la \# siguiente instrucción include se compile correctamente.
+    El ejemplo de código anterior requiere que la \# siguiente instrucción include se compile correctamente.
 
     ```C++
     #include <wbemidl.h>

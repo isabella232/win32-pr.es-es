@@ -1,10 +1,10 @@
 ---
-title: WMDRM_ENCRYPT_SCATTER_INFO estructura (wmdrmsdk. h)
-description: La \_ \_ \_ estructura de la información de dispersión cifrada de WMDRM contiene información necesaria para configurar la interfaz IWMDRMEncryptScatter para su uso.
+title: WMDRM_ENCRYPT_SCATTER_INFO estructura (Wmdrmsdk.h)
+description: La estructura WMDRM ENCRYPT SCATTER INFO contiene información necesaria para configurar la \_ \_ interfaz \_ IWMDRMEncryptScatter para su uso.
 ms.assetid: 25e19511-56ac-441b-b521-5097dd792ead
 keywords:
-- WMDRM_ENCRYPT_SCATTER_INFO estructura de Windows Media Format
-- Formato de Windows Media de estructura
+- WMDRM_ENCRYPT_SCATTER_INFO windows Media Format de estructura
+- estructura windows Formato multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 500012231f6860fd94038b240355eda9aa2aee44
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3ef766f40742713b01648348bedb4c1a35494fdc02d02843f8f2a41f133938a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105721587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119083819"
 ---
-# <a name="wmdrm_encrypt_scatter_info-structure"></a>\_Estructura de \_ información de dispersión cifrada de WMDRM \_
+# <a name="wmdrm_encrypt_scatter_info-structure"></a>Estructura DE INFORMACIÓN DE \_ DISPERSIÓN DE WMDRM ENCRYPT \_ \_
 
-La estructura de la **\_ \_ \_ información de dispersión cifrada de WMDRM** contiene información necesaria para configurar la interfaz [**IWMDRMEncryptScatter**](iwmdrmencryptscatter.md) para su uso.
+La **estructura WMDRM \_ ENCRYPT SCATTER \_ \_ INFO** contiene información necesaria para configurar la [**interfaz IWMDRMEncryptScatter**](iwmdrmencryptscatter.md) para su uso.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,14 +54,14 @@ Identificador de la secuencia que se va a cifrar.
 **dwSampleProtectionVersion**
 </dt> <dd>
 
-Versión de protección de ejemplo que se va a usar para codificar los datos de la secuencia especificada.
+Versión de protección de ejemplo que se usará para codificar datos de la secuencia especificada.
 
 </dd> <dt>
 
 **cbProtectionInfo**
 </dt> <dd>
 
-Tamaño del búfer de **pbProtectionInfo** en bytes.
+Tamaño del búfer **pbProtectionInfo** en bytes.
 
 </dd> <dt>
 
@@ -72,9 +72,9 @@ Búfer que contiene información de protección adicional.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**IWMDRMEncryptScatter:: InitEncryptScatter**](iwmdrmencryptscatter-initencryptscatter.md) usa esta estructura.
+El método [**IWMDRMEncryptScatter::InitEncryptScatter**](iwmdrmencryptscatter-initencryptscatter.md) usa esta estructura.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,11 +82,11 @@ El método [**IWMDRMEncryptScatter:: InitEncryptScatter**](iwmdrmencryptscatter-
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

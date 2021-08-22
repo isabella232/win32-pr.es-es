@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: enumeración JET_ErrorInfo'
-title: Enumeración JET_ErrorInfo (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: enumeración JET_ErrorInfo datos'
+title: JET_ErrorInfo enumeración (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JET_ErrorInfo enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.JET_ErrorInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_errorinfo(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 62d953bff6847e38269b7361ac705934642f99e3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e6ac5967e2326652063893d9a5910382ef02cc3701d01ed55b6f4028cf78a01f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119617185"
 ---
-# <a name="jet_errorinfo-enumeration"></a>Enumeración JET_ErrorInfo
+# <a name="jet_errorinfo-enumeration"></a>JET_ErrorInfo enumeración
 
 Los valores válidos de InfoLevel para JetGetErrorInfo.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -67,7 +67,7 @@ public enum JET_ErrorInfo
 <tr class="odd">
 <td></td>
 <td>SpecificErr</td>
-<td>Recupera información sobre el error específico que se pasa en pvContext.</td>
+<td>Recupere información sobre el error específico pasado en pvContext.</td>
 </tr>
 </tbody>
 </table>
@@ -77,4 +77,4 @@ public enum JET_ErrorInfo
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

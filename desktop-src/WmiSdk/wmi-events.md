@@ -1,23 +1,23 @@
 ---
-description: Los eventos pueden ser informados por WMI o proveedores. WMI utiliza el seguimiento de eventos (ETW).
+description: Wmi o los proveedores pueden presentar eventos. WMI usa seguimiento de eventos (ETW).
 ms.assetid: e04ca8fb-2bad-4ff3-8597-c7db6a4b1578
 ms.tgt_platform: multiple
 title: Eventos WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 249bbb99650962452a47fb7556ef9654902a1268
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 070331d4c19e7e639626fd188b8c389d79e5a82a4acffba3a905d1d97256b739
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049873"
 ---
 # <a name="wmi-events"></a>Eventos WMI
 
-Los eventos pueden ser informados por WMI o proveedores. WMI utiliza el [seguimiento de eventos](/windows/desktop/ETW/event-tracing-portal) (ETW). Para obtener más información, vea seguimiento de la [actividad WMI](tracing-wmi-activity.md).
+Wmi o los proveedores pueden presentar eventos. WMI usa [seguimiento de eventos](/windows/desktop/ETW/event-tracing-portal) (ETW). Para obtener más información, vea [Seguimiento de la actividad WMI.](tracing-wmi-activity.md)
 
 > [!Note]  
-> La siguiente documentación está diseñada para desarrolladores y administradores de ti. Si está intentando resolver un mensaje de error de WMI en el sistema doméstico, consulte el sitio web de [soporte técnico de Microsoft](https://support.microsoft.com/) .
+> La siguiente documentación está diseñada para desarrolladores y administradores de TI. Si está intentando resolver un mensaje de error de WMI en el sistema principal, consulte el sitio [web Soporte técnico de Microsoft](https://support.microsoft.com/) web.
 
  
 

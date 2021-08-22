@@ -1,6 +1,6 @@
 ---
 title: MDM_Policy_Result01_ApplicationManagement02 clase
-description: La clase \_ \_ \_ ApplicationManagement02 de MDM Policy Result01 representa las directivas de administración de aplicaciones disponibles. La \_ clase \_ ApplicationManagement02 de MDM Policy Result01 \_ representa las directivas de administración de aplicaciones disponibles.
+description: La clase \_ ApplicationManagement02 de MDM Policy \_ \_ Result01 representa las directivas de administración de aplicaciones disponibles. La \_ clase \_ \_ ApplicationManagement02 de MDM Policy Result01 representa las directivas de administración de aplicaciones disponibles.
 ms.assetid: 141614e4-b2b1-49d9-879c-f6f86bee070c
 keywords:
 - MDM_Policy_Result01_ApplicationManagement02 clase
@@ -26,7 +26,7 @@ ms.locfileid: "119587955"
 ---
 # <a name="mdm_policy_result01_applicationmanagement02-class"></a>Clase \_ \_ \_ ApplicationManagement02 de Mdm Policy Result01
 
-\[Parte de la información está relacionada con el producto publicado previamente que puede modificarse considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
 La **clase \_ \_ \_ ApplicationManagement02 de MDM Policy Result01** representa las directivas de administración de aplicaciones disponibles.
 
@@ -59,7 +59,7 @@ La **clase \_ \_ \_ ApplicationManagement02 de MDM Policy Result01** tiene estos
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ \_ \_ ApplicationManagement02 de MDM Policy Result01** tiene estas propiedades.
+La **clase \_ \_ \_ ApplicationManagement02 Mdm Policy Result01** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -138,7 +138,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica el nombre del nodo primario. Para esta clase, la cadena es "ApplicationManagement".
@@ -154,7 +154,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/Policy/Result"
@@ -191,17 +191,17 @@ Tipo de acceso: lectura y escritura
 |-------------------------------------|------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
-| Espacio de nombres<br/>                | DMMap \\ \\ de MDM de CIMv2 \\ raíz<br/>                                                             |
+| Espacio de nombres<br/>                | DMMap \\ de MDM \\ de CIMv2 \\ raíz<br/>                                                             |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Uso de scripts de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
 
  

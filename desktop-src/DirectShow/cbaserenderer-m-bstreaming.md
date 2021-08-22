@@ -1,7 +1,7 @@
 ---
-description: Marca que indica si el filtro es un flujo de datos.
+description: Marca que indica si el filtro está transmitiendo datos.
 ms.assetid: d94a22bc-ed4b-460b-96e6-1fb006218cf4
-title: 'Miembro CBaseRenderer:: m_bStreaming (Renbase. h)'
+title: CBaseRenderer::m_bStreaming miembro (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7f9a83fc053387b45ebc35773aab2d5a600607c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 66d64700df8115acff1629beb52e311c9645cdc4ad134d4731104660298ad68f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119502735"
 ---
-# <a name="cbaserendererm_bstreaming-member"></a>Miembro bStreaming CBaseRenderer:: m \_
+# <a name="cbaserendererm_bstreaming-member"></a>CBaseRenderer::m \_ bStreaming member
 
-Marca que indica si el filtro es un flujo de datos.
+Marca que indica si el filtro está transmitiendo datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ BOOL m_bStreaming;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ BOOL m_bStreaming;
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  
