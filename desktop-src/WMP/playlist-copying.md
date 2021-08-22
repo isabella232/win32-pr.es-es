@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. copiando
-description: El atributo de copia recupera un valor que indica si el elemento de lista de reproducción está en el acto de copiar.
+title: PLAYLIST.copying
+description: El atributo copying recupera un valor que indica si el elemento PLAYLIST está en el acto de copiar.
 ms.assetid: 60f21f4a-51a1-43cd-9bfa-6bff19214a32
 keywords:
-- Lista de reproducción. copiando Windows Media Player
+- PLAYLIST.copying Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 710926a966713901733ac9bbee3d188458ebcf65
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b9d803986626f728db78b03933d65629e06d6021f63a5b7806503d7eec7176b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054233"
 ---
-# <a name="playlistcopying"></a>Lista de reproducción. copiando
+# <a name="playlistcopying"></a>PLAYLIST.copying
 
-El atributo de **copia** recupera un valor que indica si el elemento de **lista de reproducción** está en el acto de copiar.
+El **atributo copying** recupera un valor que indica si el elemento **PLAYLIST** está en el acto de copiar.
 
 ``` syntax
         elementID.copying
@@ -29,14 +29,14 @@ El atributo de **copia** recupera un valor que indica si el elemento de **lista 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de solo lectura.
+Este atributo es un booleano de solo **lectura.**
 
 
 
-| Value | Descripción                              |
+| Valor | Descripción                              |
 |-------|------------------------------------------|
-| true  | El elemento de **lista de reproducción** se está copiando.     |
-| false | No se está copiando el elemento de **lista de reproducción** . |
+| true  | El **elemento PLAYLIST** se está copiando.     |
+| false | El **elemento PLAYLIST** no se está copiando. |
 
 
 
@@ -48,7 +48,7 @@ Este atributo es un **valor booleano** de solo lectura.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -56,13 +56,13 @@ Este atributo es un **valor booleano** de solo lectura.
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**Lista de reproducción. abortCopy**](playlist-abortcopy.md)
+[**PLAYLIST.abortCopy**](playlist-abortcopy.md)
 </dt> <dt>
 
-[**Lista de reproducción. copia**](playlist-copy.md)
+[**PLAYLIST.copy**](playlist-copy.md)
 </dt> </dl>
 
  

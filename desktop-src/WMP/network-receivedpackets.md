@@ -1,9 +1,9 @@
 ---
-title: Network. receivedPackets
+title: Network.receivedPackets
 description: La propiedad receivedPackets recupera el número de paquetes recibidos.
 ms.assetid: db4f6f08-c248-4db8-ab19-fdd5d2794085
 keywords:
-- Windows Media Player de red. receivedPackets
+- Network.receivedPackets Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,32 +14,32 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bc792330cd107ca428ad0fbec930fe262a2f131
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ca9544332fa6e81211dae45cddc74ce9daee0d47e70d467137aaca2084bbc6f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700055"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054503"
 ---
-# <a name="networkreceivedpackets"></a>Network. receivedPackets
+# <a name="networkreceivedpackets"></a>Network.receivedPackets
 
-La propiedad **receivedPackets** recupera el número de paquetes recibidos.
+La **propiedad receivedPackets** recupera el número de paquetes recibidos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor*. *red*. **receivedPackets**
+*player*. *network*. **receivedPackets**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es un **número** de solo lectura (**Long**).
+Esta propiedad es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cada vez que se detiene y se reinicia la reproducción de un clip, esta propiedad se establece en cero. No se restablece si la reproducción de archivos está en pausa.
+Cada vez que se detiene y reinicia la reproducción del clip, esta propiedad se establece en cero. No se restablece si la reproducción de archivos está en pausa.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se usa *Network*. **receivedPackets** para mostrar el número de paquetes recibidos. La información se muestra en un DIV HTML creado con ID = "RP". En el ejemplo se usa un temporizador con un intervalo de 1 segundo para actualizar la pantalla. El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se usa *Network*. **receivedPackets para** mostrar el número de paquetes recibidos. La información se muestra en una DIV HTML creada con id. = "RP". En el ejemplo se usa un temporizador con un intervalo de 1 segundo para actualizar la pantalla. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -74,9 +74,9 @@ function UpdateRP(){
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

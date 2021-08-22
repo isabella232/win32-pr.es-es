@@ -1,7 +1,7 @@
 ---
 description: El método GetType recupera el tipo de datos de los elementos de la colección.
 ms.assetid: 2e389090-74ef-47af-9490-a4820d925246
-title: 'IPortableDevicePropVariantCollection:: GetType (método) (PortableDeviceTypes. h)'
+title: Método IPortableDevicePropVariantCollection::GetType (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: de5ea5b1eeaa9cf494c24e13b8b9b36f7490b84d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0c29e47cd08b5c31012df92ca04e018d38f7adb7f8802ec534682289852f518b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963744"
 ---
-# <a name="iportabledevicepropvariantcollectiongettype-method"></a>IPortableDevicePropVariantCollection:: GetType (método)
+# <a name="iportabledevicepropvariantcollectiongettype-method"></a>IPortableDevicePropVariantCollection::GetType (método)
 
-El método **GetType** recupera el tipo de datos de los elementos de la colección.
+El **método GetType** recupera el tipo de datos de los elementos de la colección.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,31 +40,31 @@ HRESULT GetType(
 
 <dl> <dt>
 
-*Pvt* \[ enuncia\]
+*pvt* \[ out\]
 </dt> <dd>
 
-Un valor de enumeración **VARTYPE** del SDK de plataforma que indica el tipo de datos de todos los elementos de la colección.
+Valor de **enumeración VARTYPE del** SDK de plataforma que indica el tipo de datos de todos los elementos de la colección.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                               | Descripción                                          |
 |-------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>      | El método se ha llevado a cabo de forma correcta.<br/>                     |
-| <dl> <dt>**\_puntero E**</dt> </dl> | Un argumento de puntero necesario era **null**.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | El método se ha llevado a cabo de forma correcta.<br/>                     |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl> | Un argumento de puntero necesario era **NULL.**<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Todos los elementos que se almacenan en un **IPortableDevicePropVariantCollection** son del mismo tipo.
+Todos los elementos almacenados en **IPortableDevicePropVariantCollection** son del mismo tipo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,16 +72,16 @@ Todos los elementos que se almacenan en un **IPortableDevicePropVariantCollectio
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Interfaz IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md)
+[**IPortableDevicePropVariantCollection (Interfaz)**](iportabledevicepropvariantcollection.md)
 </dt> </dl>
 
  

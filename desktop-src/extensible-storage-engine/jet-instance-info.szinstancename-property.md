@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_INSTANCE_INFO. szInstanceName'
-title: Propiedad JET_INSTANCE_INFO. szInstanceName
+description: 'Más información sobre: JET_INSTANCE_INFO.szInstanceName'
+title: JET_INSTANCE_INFO.szInstanceName, propiedad
 TOCTitle: 'szInstanceName property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INSTANCE_INFO.szInstanceName
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_instance_info.szinstancename(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4edaa331fce5564672ac844f6977ea5ae1688a38
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce3d989db439327662312a1b9d9275c1982e12583b62853be723e3f9bb3ce38c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980055"
 ---
-# <a name="jet_instance_infoszinstancename-property"></a>Propiedad JET_INSTANCE_INFO. szInstanceName
+# <a name="jet_instance_infoszinstancename-property"></a>JET_INSTANCE_INFO.szInstanceName, propiedad
 
-Obtiene el nombre de la instancia de base de datos. Este valor puede ser null si la instancia de no tiene un nombre.
+Obtiene el nombre de la instancia de base de datos. Este valor puede ser NULL si la instancia no tiene un nombre.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public string szInstanceName { get; private set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_INSTANCE_INFO (clase)](./jet-instance-info-class.md)
+[JET_INSTANCE_INFO clase](./jet-instance-info-class.md)
 
-[Miembros de JET_INSTANCE_INFO](./jet-instance-info-members.md)
+[JET_INSTANCE_INFO miembros](./jet-instance-info-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

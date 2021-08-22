@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_INDEX_COLUMN. ToString (método)'
-title: JET_INDEX_COLUMN. Método ToString (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: JET_INDEX_COLUMN. Método ToString'
+title: JET_INDEX_COLUMN. Método ToString (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_COLUMN.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_index_column.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 618cadca1fbc31397aa136b035efdb903f0aa7f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e2a6480823062863eb2dbdbce76a925585401d7f2f4d62bf562c42e9a39d162d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980245"
 ---
-# <a name="jet_index_columntostring-method"></a>JET_INDEX_COLUMN. ToString (método)
+# <a name="jet_index_columntostring-method"></a>JET_INDEX_COLUMN. Método ToString
 
-Devuelve una [cadena](/dotnet/api/system.string) que representa el [JET_INDEX_COLUMN](./jet-index-column-class.md)actual.
+Devuelve una [cadena](/dotnet/api/system.string) que representa el objeto [JET_INDEX_COLUMN](./jet-index-column-class.md).
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,15 +56,15 @@ public override string ToString()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. String](/dotnet/api/system.string)  
-[Cadena](/dotnet/api/system.string) que representa el [JET_INDEX_COLUMN](./jet-index-column-class.md)actual.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Cadena [que](/dotnet/api/system.string) representa el objeto [JET_INDEX_COLUMN](./jet-index-column-class.md).  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[JET_INDEX_COLUMN (clase)](./jet-index-column-class.md)
+[JET_INDEX_COLUMN clase](./jet-index-column-class.md)
 
-[Miembros de JET_INDEX_COLUMN](./jet-index-column-members.md)
+[JET_INDEX_COLUMN miembros](./jet-index-column-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

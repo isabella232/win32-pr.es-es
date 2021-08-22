@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. effectCount
+title: EFFECTS.effectCount
 description: El atributo effectCount recupera el número de visualizaciones disponibles.
 ms.assetid: 819499be-31aa-4f11-a616-95a378f2512d
 keywords:
-- EFFECTs. effectCount Windows Media Player
+- EFFECTS.effectCount Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6abcf7d13efb741e8d927bcc49324c6350efce02
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 730a877efa498beb8fd16fd08c7dfbdf0c337cf1520137d6654adf689e6aedb7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996695"
 ---
-# <a name="effectseffectcount"></a>EFFECTs. effectCount
+# <a name="effectseffectcount"></a>EFFECTS.effectCount
 
-El atributo **effectCount** recupera el número de visualizaciones disponibles.
+El **atributo effectCount** recupera el número de visualizaciones disponibles.
 
 ``` syntax
         elementID.effectCount
@@ -29,7 +29,7 @@ El atributo **effectCount** recupera el número de visualizaciones disponibles.
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de solo lectura (**Long**).
+Este atributo es un número de solo **lectura** (**long**).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Este atributo es un **número** de solo lectura (**Long**).
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------|
-| Versión<br/> | Windows Media Player para Windows XP o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 
@@ -45,7 +45,7 @@ Este atributo es un **número** de solo lectura (**Long**).
 
 <dl> <dt>
 
-[**EFFECTs, elemento**](effects-element.md)
+[**EFFECTS, elemento**](effects-element.md)
 </dt> </dl>
 
  

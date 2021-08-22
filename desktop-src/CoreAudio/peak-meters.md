@@ -1,27 +1,27 @@
 ---
-description: Medidores de pico
+description: Medidores máximos
 ms.assetid: 02f5d1b4-ba4f-424a-897f-b113d1f7cd6b
-title: Medidores de pico
+title: Medidores máximos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ccd2f1ce0b8fd45fbf1cb3710c878c05544f7d4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: e04a15ddd2e5fd91cf60845f2a939715e7a4a992f36aea3b9129e69c30d05961
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077509"
 ---
-# <a name="peak-meters"></a>Medidores de pico
+# <a name="peak-meters"></a>Medidores máximos
 
-Para admitir aplicaciones de Windows que muestran medidores de pico, la [API de EndpointVolume](endpointvolume-api.md) incluye una interfaz [**IAudioMeterInformation**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudiometerinformation) . Esta interfaz representa un medidor de picos en un [dispositivo de punto de conexión de audio](audio-endpoint-devices.md). Para un dispositivo de representación, el valor recuperado del medidor de picos representa el valor de muestra máximo encontrado en el flujo de salida en el dispositivo durante el período de medición anterior. Para un dispositivo de captura, el valor recuperado del medidor de picos representa el valor de muestra máximo encontrado en el flujo de entrada desde el dispositivo.
+Para admitir Windows que muestran medidores máximos, [la API EndpointVolume](endpointvolume-api.md) incluye una [**interfaz IAudioMeterInformation.**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudiometerinformation) Esta interfaz representa un medidor máximo en un dispositivo [de punto de conexión de audio.](audio-endpoint-devices.md) Para un dispositivo de representación, el valor recuperado del medidor máximo representa el valor de muestra máximo encontrado en el flujo de salida al dispositivo durante el período de medición anterior. Para un dispositivo de captura, el valor recuperado del medidor máximo representa el valor de muestra máximo encontrado en el flujo de entrada del dispositivo.
 
-Los valores de medidor máximo obtenidos de los métodos de la interfaz [**IAudioMeterInformation**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudiometerinformation) son números de punto flotante en el intervalo normalizado de 0,0 a 1,0. Por ejemplo, si una secuencia PCM contiene ejemplos de 16 bits, y el valor de ejemplo máximo durante un período de medición determinado es: 8914, el valor absoluto registrado por el medidor de pico es 8914 y el valor máximo normalizado indicado por la interfaz **IAudioMeterInformation** es 8914/32768 = 0,272.
+Los valores de medidor máximo obtenidos de los métodos de la interfaz [**IAudioMeterInformation**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudiometerinformation) son números de punto flotante en el intervalo normalizado de 0,0 a 1,0. Por ejemplo, si una secuencia PCM contiene muestras de 16 bits y el valor máximo de la muestra durante un período de medición determinado es —8914, el valor absoluto registrado por el medidor máximo es 8914 y el valor máximo normalizado notificado por la interfaz **IAudioMeterInformation** es 8914/32768 = 0,272.
 
-Si el dispositivo de punto de conexión de audio implementa el medidor de picos en el hardware, la interfaz [**IAudioMeterInformation**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudiometerinformation) utiliza el medidor de picos de hardware. De lo contrario, la interfaz implementa el medidor de picos en el software.
+Si el dispositivo de punto de conexión de audio implementa el medidor máximo en hardware, la [**interfaz IAudioMeterInformation**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudiometerinformation) usa el medidor máximo de hardware. De lo contrario, la interfaz implementa el medidor máximo en el software.
 
-Si un dispositivo tiene un medidor de picos de hardware, el medidor de picos está activo en modo compartido y en modo exclusivo. Si un dispositivo no tiene medidor de picos de hardware, el medidor de picos está activo en modo compartido, pero no en modo exclusivo. En el modo exclusivo, la aplicación y el hardware de audio intercambian datos de audio directamente, omitiendo el medidor de picos de software (que siempre notifica un valor máximo de 0,0).
+Si un dispositivo tiene un medidor máximo de hardware, el medidor máximo está activo tanto en modo compartido como en modo exclusivo. Si un dispositivo carece de medidor máximo de hardware, el medidor máximo está activo en modo compartido, pero no en modo exclusivo. En modo exclusivo, la aplicación y el hardware de audio intercambian datos de audio directamente, omitiendo el medidor máximo de software (que siempre informa de un valor máximo de 0,0).
 
-El siguiente ejemplo de código C++ es una aplicación de Windows que muestra un medidor de picos para el dispositivo de representación predeterminado:
+El siguiente ejemplo de código de C++ es una Windows que muestra un medidor máximo para el dispositivo de representación predeterminado:
 
 
 ```C++
@@ -178,13 +178,13 @@ void DrawPeakMeter(HWND hPeakMeter, float peak)
 
 
 
-En el ejemplo de código anterior, la función [**WinMain**](/windows/win32/api/winbase/nf-winbase-winmain) llama a la función [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) para crear una instancia de la interfaz [**IMMDeviceEnumerator**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdeviceenumerator) y llama al método [**IMMDeviceEnumerator:: GetDefaultAudioEndpoint**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdeviceenumerator-getdefaultaudioendpoint) para obtener la interfaz [**IMMDevice**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice) del dispositivo de representación predeterminado. **WinMain** llama al método [**IMMDevice:: Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) para obtener la interfaz [**IAudioMeterInformation**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudiometerinformation) del dispositivo y abre un cuadro de diálogo para mostrar un medidor de picos para el dispositivo. Para obtener más información acerca de **WinMain** y **CoCreateInstance**, vea la documentación de Windows SDK. Para obtener más información sobre **IMMDeviceEnumerator** y **IMMDevice**, consulte [enumeración de dispositivos de audio](enumerating-audio-devices.md).
+En el ejemplo de código anterior, la función [**WinMain**](/windows/win32/api/winbase/nf-winbase-winmain) llama a la función [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) para crear una instancia de la interfaz [**IMMDeviceEnumerator**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdeviceenumerator) y llama al método [**IMMDeviceEnumerator::GetDefaultAudioEndpoint**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdeviceenumerator-getdefaultaudioendpoint) para obtener la interfaz [**IMMDevice**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice) del dispositivo de representación predeterminado. **WinMain** llama al método [**IMMDevice::Activate**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdevice-activate) para obtener la interfaz [**IAudioMeterInformation**](/windows/desktop/api/Endpointvolume/nn-endpointvolume-iaudiometerinformation) del dispositivo y abre un cuadro de diálogo para mostrar un medidor máximo para el dispositivo. Para obtener más información sobre **WinMain** y **CoCreateInstance,** consulte la documentación Windows SDK. Para obtener más información sobre **IMMDeviceEnumerator** **e IMMDevice**, vea [Enumerating Audio Devices](enumerating-audio-devices.md).
 
-En el ejemplo de código anterior, la función DlgProc muestra el medidor de picos en el cuadro de diálogo. Durante el procesamiento del mensaje de INITDIALOG de WM \_ , DlgProc llama a la función [**SetTimer**](/windows/win32/api/winuser/nf-winuser-settimer) para configurar un temporizador que generará \_ mensajes del temporizador de WM a intervalos de tiempo regulares. Cuando DlgProc recibe un \_ mensaje del temporizador de WM, llama a [**IAudioMeterInformation:: GetPeakValue**](/windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudiometerinformation-getpeakvalue) para obtener la lectura más reciente del medidor máximo para la secuencia. A continuación, DlgProc llama a la función DrawPeakMeter para dibujar el medidor de picos actualizado en el cuadro de diálogo. Para obtener más información sobre **SetTimer** y los \_ mensajes de temporizador de INITDIALOG y WM \_ , consulte la documentación de Windows SDK.
+En el ejemplo de código anterior, la función DlgProc muestra el medidor máximo en el cuadro de diálogo. Durante el procesamiento del mensaje WM INITDIALOG, DlgProc llama a la función SetTimer para configurar un temporizador que generará mensajes WM TIMER a intervalos \_ de tiempo [](/windows/win32/api/winuser/nf-winuser-settimer) \_ regulares. Cuando DlgProc recibe un mensaje DE TEMPORIZADOR DE WM, llama a \_ [**IAudioMeterInformation::GetPeakValue**](/windows/desktop/api/Endpointvolume/nf-endpointvolume-iaudiometerinformation-getpeakvalue) para obtener la lectura más reciente del medidor máximo de la secuencia. A continuación, DlgProc llama a la función DrawPeakMeter para dibujar el medidor máximo actualizado en el cuadro de diálogo. Para obtener más información sobre **SetTimer y** los mensajes WM INITDIALOG y WM TIMER, consulte la \_ documentación Windows \_ SDK.
 
-Puede modificar fácilmente el ejemplo de código anterior para mostrar un medidor de picos para el dispositivo de captura predeterminado. En la función [**WinMain**](/windows/win32/api/winbase/nf-winbase-winmain) , cambie el valor del primer parámetro de la llamada a [**IMMDeviceEnumerator:: GetDefaultAudioEndpoint**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdeviceenumerator-getdefaultaudioendpoint) de eRender a eCapture.
+Puede modificar fácilmente el ejemplo de código anterior para mostrar un medidor máximo para el dispositivo de captura predeterminado. En la [**función WinMain,**](/windows/win32/api/winbase/nf-winbase-winmain) cambie el valor del primer parámetro de la llamada a [**IMMDeviceEnumerator::GetDefaultAudioEndpoint**](/windows/desktop/api/Mmdeviceapi/nf-mmdeviceapi-immdeviceenumerator-getdefaultaudioendpoint) de eRender a eCapture.
 
-El siguiente ejemplo de código es el script de recursos que define los controles que aparecen en el ejemplo de código anterior:
+El ejemplo de código siguiente es el script de recursos que define los controles que aparecen en el ejemplo de código anterior:
 
 
 ```C++

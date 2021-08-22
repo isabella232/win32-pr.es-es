@@ -1,7 +1,7 @@
 ---
 description: La función ExpertIndicateStatus indica el porcentaje de finalización del análisis de expertos del archivo de captura.
 ms.assetid: 6dbaa6d3-6068-4a28-9d9f-bcc7a25da407
-title: Función ExpertIndicateStatus (Netmon. h)
+title: Función ExpertIndicateStatus (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: ac707a774b667b96a4d612e9eaf7da2c779c0327
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f9f40e339b450496ec4b0aff1f3e951c4d7468fa22f7b2ff3dd2f84de6b92354
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012273"
 ---
-# <a name="expertindicatestatus-function"></a>ExpertIndicateStatus función)
+# <a name="expertindicatestatus-function"></a>Función ExpertIndicateStatus
 
-La función **ExpertIndicateStatus** indica el porcentaje de finalización del análisis del experto en el archivo de captura.
+La **función ExpertIndicateStatus** indica el porcentaje de finalización del análisis del experto del archivo de captura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,28 +43,28 @@ DWORD WINAPI ExpertIndicateStatus(
 
 <dl> <dt>
 
-*hExpertKey* \[ de\]
+*hExpertKey* \[ En\]
 </dt> <dd>
 
-Identificador de experto único. Monitor de red pasa *hExpertKey* al experto cuando llama a la función [Run](run.md) .
+Identificador experto único. Monitor de red pasa *hE expert al* experto cuando llama a la [función Run.](run.md)
 
 </dd> <dt>
 
-*Estado* \[ de de\]
+*Estado* \[ En\]
 </dt> <dd>
 
-Estado actual del análisis. Especifique uno de los siguientes valores de [EXPERTSTATUSENUMERATION](expertstatusenumeration.md) .
+Estado actual del análisis. Especifique uno de los [siguientes valores DE EXPERTSTATUSENUMERATION.](expertstatusenumeration.md)
 
 
 
 | Value                                                                                                                                                                                 | Significado                                                                        |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| <span id="EXPERTSTATUS_INACTIVE"></span><span id="expertstatus_inactive"></span><dl> <dt>**EXPERTSTATUS \_ INactivo**</dt> </dl> | El experto nunca comenzó. <br/>                                          |
-| <span id="EXPERTSTATUS_STARTING"></span><span id="expertstatus_starting"></span><dl> <dt>**Inicio de EXPERTSTATUS \_**</dt> </dl> | Se está iniciando el experto. <br/>                                            |
-| <span id="EXPERTSTATUS_RUNNING"></span><span id="expertstatus_running"></span><dl> <dt>**EXPERTSTATUS en \_ ejecución**</dt> </dl>    | El experto se ejecuta con normalidad. <br/>                                    |
-| <span id="EXPERTSTATUS_PROBLEM"></span><span id="expertstatus_problem"></span><dl> <dt>**problema de EXPERTSTATUS \_**</dt> </dl>    | Un problema especificado en el parámetro substatus detuvo el experto. <br/> |
-| <span id="EXPERTSTATUS_ABORTED"></span><span id="expertstatus_aborted"></span><dl> <dt>**EXPERTSTATUS \_ anulado**</dt> </dl>    | Monitor de red detuvo el experto. <br/>                                |
-| <span id="EXPERTSTATUS_DONE"></span><span id="expertstatus_done"></span><dl> <dt>**EXPERTSTATUS \_ completado**</dt> </dl>             | El experto ha finalizado el análisis correctamente. <br/>                     |
+| <span id="EXPERTSTATUS_INACTIVE"></span><span id="expertstatus_inactive"></span><dl> <dt>**EXPERTSTATUS \_ INACTIVE**</dt> </dl> | El experto nunca empezó. <br/>                                          |
+| <span id="EXPERTSTATUS_STARTING"></span><span id="expertstatus_starting"></span><dl> <dt>**INICIO \_ DE EXPERTSTATUS**</dt> </dl> | El experto se está iniciando. <br/>                                            |
+| <span id="EXPERTSTATUS_RUNNING"></span><span id="expertstatus_running"></span><dl> <dt>**EJECUCIÓN \_ DE EXPERTSTATUS**</dt> </dl>    | El experto se ejecuta con normalidad. <br/>                                    |
+| <span id="EXPERTSTATUS_PROBLEM"></span><span id="expertstatus_problem"></span><dl> <dt>**PROBLEMA \_ DE EXPERTSTATUS**</dt> </dl>    | Un problema especificado en el parámetro SubStatus detuvo al experto. <br/> |
+| <span id="EXPERTSTATUS_ABORTED"></span><span id="expertstatus_aborted"></span><dl> <dt>**EXPERTSTATUS \_ ABORTED**</dt> </dl>    | Monitor de red detuvo al experto. <br/>                                |
+| <span id="EXPERTSTATUS_DONE"></span><span id="expertstatus_done"></span><dl> <dt>**EXPERTSTATUS \_ DONE**</dt> </dl>             | El experto finalizó el análisis correctamente. <br/>                     |
 
 
 
@@ -72,26 +72,26 @@ Estado actual del análisis. Especifique uno de los siguientes valores de [EXPER
 
 </dd> <dt>
 
-*Subestado* \[ de\]
+*SubStatus* \[ En\]
 </dt> <dd>
 
-Extensión o aclaración de la información proporcionada por el parámetro *status* .
+Extensión o aclaración de la información proporcionada por el *parámetro Status.*
 
 </dd> <dt>
 
-*szText* \[ de\]
+*sztext* \[ En\]
 </dt> <dd>
 
 Indicador de estado de texto opcional.
 
-Este valor de parámetro puede ser **null**.
+Este valor de parámetro puede ser **NULL.**
 
 </dd> <dt>
 
-*PercentDone* \[ enuncia\]
+*PercentDone* \[ out\]
 </dt> <dd>
 
-Porcentaje de los datos de captura que ha procesado el experto.
+Porcentaje de los datos de captura que el experto ha procesado.
 
 Cuando el experto completa correctamente el análisis de un archivo de captura, el sistema establece el porcentaje en 100. Se omitirá cualquier número mayor que 99.
 
@@ -99,13 +99,13 @@ Cuando el experto completa correctamente el análisis de un archivo de captura, 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es NMERR \_ Expert \_ Terminate; el experto debe limpiar y volver inmediatamente sin completar la captura.
+Si la función no se realiza correctamente, el valor devuelto es NMERR EXPERT TERMINATE; el experto debe limpiar y devolver inmediatamente sin \_ \_ completar la captura.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **ExpertIndicateStatus** solo puede ser llamada por expertos que implementan la función de exportación [Ejecutar](run.md) o [configurar](configure.md) .
+La **función ExpertIndicateStatus** solo puede ser llamada por expertos que implementan la [función de](run.md) exportación Ejecutar [o](configure.md) configurar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -115,6 +115,6 @@ La función **ExpertIndicateStatus** solo puede ser llamada por expertos que imp
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |

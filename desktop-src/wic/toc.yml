@@ -6,35 +6,35 @@
     - name: Guía de programación
       href: '-wic-programming-guide.md'
       items:
-        - name: Información general sobre componentes de Windows Imaging
+        - name: Windows Información general sobre componentes de creación de imágenes
           href: '-wic-about-windows-imaging-codec.md'
-        - name: Información general sobre la API WIC
+        - name: Introducción a la API de WIC
           href: '-wic-api.md'
-        - name: Descodificación de imágenes digitales
+        - name: Decoding Digital Images
           href: '-wic-decoder-portal.md'
           items:
-            - name: Información general sobre descodificación
+            - name: Información general sobre lacoding
               href: '-wic-creating-decoder.md'
-            - name: Información general sobre descodificación progresiva
+            - name: Información general sobre la decodación progresiva
               href: '-wic-progressive-decoding.md'
-            - name: Temas de procedimientos del descodificador
+            - name: Temas de cómo descodificar
               href: '-wic-decoder-howto-portal.md'
               items:
                 - name: Cómo crear un descodificador mediante un nombre de archivo de imagen
                   href: '-wic-decoder-howto-createusingfilename.md'
-                - name: Cómo crear un descodificador mediante un flujo
+                - name: Cómo crear un descodificador mediante una secuencia
                   href: '-wic-decoder-howto-createusingstream.md'
         - name: Uso de datos de imagen
           href: '-wic-bitmapsources-portal.md'
           items:
-            - name: Información general sobre orígenes de mapas de bits
+            - name: Información general sobre orígenes de mapa de bits
               href: '-wic-bitmapsources.md'
-            - name: Temas de procedimientos de orígenes de mapas de bits
+            - name: Temas de ayuda de orígenes de mapa de bits
               href: '-wic-bitmapsources-howto-portal.md'
               items:
                 - name: Cómo cargar un mapa de bits desde un recurso
                   href: '-wic-bitmapsources-howto-loadfromresource.md'
-                - name: Recuperación de los fotogramas de una imagen
+                - name: Cómo recuperar los fotogramas de una imagen
                   href: '-wic-bitmapsources-howto-retrieveimageframes.md'
                 - name: Cómo escalar un origen de mapa de bits
                   href: '-wic-bitmapsources-howto-scale.md'
@@ -44,19 +44,19 @@
                   href: '-wic-bitmapsources-howto-flipandrotate.md'
                 - name: Cómo modificar los píxeles de un origen de mapa de bits
                   href: '-wic-bitmapsources-howto-modifypixels.md'
-                - name: Cómo dibujar un BitmapSource mediante Direct2D
+                - name: Dibujar un objeto BitmapSource mediante Direct2D
                   href: '-wic-bitmapsources-howto-drawusingd2d.md'
-        - name: Codificar datos de imagen
+        - name: Codificación de datos de imagen
           href: encoding-bitmaps-to-digital-images.md
           items:
             - name: Información general sobre la codificación de imágenes
               href: '-wic-creating-encoder.md'
-        - name: Códecs WIC nativos
+        - name: Códecs nativos de WIC
           href: native-wic-codecs.md
           items:
             - name: Información general sobre el formato BMP
               href: bmp-format-overview.md
-            - name: Información general sobre el formato DDS
+            - name: Introducción al formato DDS
               href: dds-format-overview.md
             - name: Información general sobre el formato DNG
               href: dng-format-overview.md
@@ -64,7 +64,7 @@
               href: gif-format-overview.md
             - name: Información general sobre el formato HD Photo
               href: hdphoto-format-overview.md
-            - name: Información general sobre el formato ICO
+            - name: Introducción al formato ICO
               href: ico-format-overview.md
             - name: Información general sobre el formato JPEG
               href: jpeg-format-overview.md
@@ -77,36 +77,36 @@
         - name: Procesamiento de metadatos de imagen
           href: '-wic-metadata-portal.md'
           items:
-            - name: Información general sobre metadatos de WIC
+            - name: Introducción a los metadatos de WIC
               href: '-wic-about-metadata.md'
-            - name: Información general del lenguaje de consulta de metadatos
+            - name: Información general sobre el lenguaje de consulta de metadatos
               href: '-wic-codec-metadataquerylanguage.md'
             - name: Consultas de metadatos de formato de imagen nativo
               href: '-wic-native-image-format-metadata-queries.md'
             - name: Información general sobre la lectura y escritura de metadatos de imagen
               href: '-wic-codec-readingwritingmetadata.md'
-            - name: Información general sobre la extensibilidad de metadatos
+            - name: Información general sobre extensibilidad de metadatos
               href: '-wic-codec-metadatahandlers.md'
-            - name: Información general sobre el etiquetado de personas
+            - name: Introducción al etiquetado de personas
               href: '-wic-people-tagging.md'
-        - name: Compatibilidad con JPEG YCbCr
+        - name: JPEG YCbCr Support
           href: jpeg-ycbcr-support.md
         - name: Administración del color
           href: '-wic-colormanagement.md'
         - name: Desarrollo de componentes
           href: '-wic-component-development.md'
           items:
-            - name: Cómo escribir un códec de WIC-Enabled
+            - name: Cómo escribir un códec WIC-Enabled datos
               href: '-wic-howtowriteacodec.md'
               items:
                 - name: Introducción
                   href: '-wic-howtowriteacodec-intro.md'
-                - name: Cómo funciona el componente de creación de imágenes de Windows
+                - name: Funcionamiento del componente Windows creación de imágenes
                   href: '-wic-howwicworks.md'
-                - name: Implementar un descodificador de WIC-Enabled
+                - name: Implementación de un descodificador WIC-Enabled descodificador
                   href: '-wic-implementingwicdecoder.md'
                   items:
-                    - name: Interfaces del descodificador
+                    - name: Interfaces de descodificador
                       href: '-wic-decoderinterfaces.md'
                       items:
                         - name: IWICBitmapDecoder
@@ -123,10 +123,10 @@
                           href: '-wic-imp-iwicbitmapsourcetransform.md'
                         - name: IWICDevelopRaw
                           href: '-wic-imp-iwicdevelopraw.md'
-                - name: Implementación de un codificador WIC-Enabled
+                - name: Implementación de un WIC-Enabled encoder
                   href: '-wic-implementingwicencoder.md'
                   items:
-                    - name: Interfaces del codificador
+                    - name: Interfaces de codificador
                       href: '-wic-encoderinterfaces.md'
                       items:
                         - name: IWICBitmapEncoder
@@ -140,27 +140,27 @@
                 - name: Instalación y registro de códecs
                   href: '-wic-codecinstallandreg.md'
                   items:
-                    - name: Entradas generales del registro
+                    - name: Entradas generales del Registro
                       href: '-wic-generalregentries.md'
-                    - name: Encoder-Specific entradas del registro
+                    - name: Encoder-Specific entradas del Registro
                       href: '-wic-encoderregentries.md'
-                    - name: Decoder-Specific entradas del registro
+                    - name: Decoder-Specific entradas del Registro
                       href: '-wic-decoderregentries.md'
-                    - name: Integración con la Galería fotográfica de Windows y el explorador de Windows
+                    - name: Integración con Windows Galería de fotos y Windows Explorer
                       href: '-wic-integrationregentries.md'
-                - name: Conclusión (cómo escribir un códec WIC-Enabled)
+                - name: Conclusión (Cómo escribir un códec de WIC-Enabled)
                   href: '-wic-howtowriteacodec-conclusion.md'
-            - name: Instrucciones de WIC para formatos de imagen RAW de cámara
+            - name: Directrices de WIC para formatos de imagen sin formato de cámara
               href: '-wic-rawguidelines.md'
               items:
                 - name: Introducción
                   href: '-wic-rawguidelines-intro.md'
                   items:
-                    - name: Formatos de imagen sin procesar en Windows Vista
+                    - name: Formatos de imagen RAW en Windows Vista
                       href: '-wic-rawguidelines-intro-vista.md'
-                    - name: Directrices generales para implementar códecs sin formato
+                    - name: Directrices generales para implementar códecs RAW
                       href: '-wic-rawguidelines-intro-implement.md'
-                - name: 'Integridad de características: interfaces recomendadas'
+                - name: 'Integridad de características: Interfaces recomendadas'
                   href: '-wic-rawguidelines-feature-complete.md'
                 - name: Requisitos del método de interfaz
                   href: '-wic-rawguidelines-iface-reqs.md'
@@ -173,19 +173,19 @@
                       href: '-wic-rawguidelines-metadata-encoding.md'
                 - name: Compatibilidad con IWICDevelopRaw
                   href: '-wic-rawguidelines-iwicdevelopraw.md'
-                - name: Instrucciones de implementación para serializar la configuración de IWICDevelopRaw
+                - name: Directrices de implementación para serializar IWICDevelopRaw Configuración
                   href: '-wic-rawguidelines-iwicdevelopraw-serializing.md'
                 - name: Rendimiento
                   href: '-wic-rawguidelines-performance.md'
-                - name: Formatos de píxeles de rango dinámico altos
+                - name: Alto rango dinámico de píxeles
                   href: '-wic-rawguidelines-hdr-formats.md'
                 - name: Miniaturas y vistas previas
                   href: '-wic-rawguidelines-thumbnail-previews.md'
                 - name: Confiabilidad y seguridad
                   href: '-wic-rawguidelines-reliability-security.md'
-                - name: Compatibilidad de plataforma y disponibilidad de códecs
+                - name: Disponibilidad de códecs y compatibilidad con plataformas
                   href: '-wic-rawguidelines-availability.md'
-                - name: Requisitos de códecs sin formato para Windows 7
+                - name: Requisitos de códec RAW para Windows 7
                   href: '-wic-rawguidelines-win7.md'
                 - name: Para obtener más información
                   href: '-wic-rawguidelines-moreinfo.md'
@@ -198,7 +198,7 @@
             - name: IWICBitmap
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap
               items:
-                - name: Bloquear
+                - name: Lock
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmap-lock
                 - name: SetPalette
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmap-setpalette
@@ -441,18 +441,18 @@
             - name: IWICDdsDecoder
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicddsdecoder
               items:
-                - name: GetParameters (método)
+                - name: Método GetParameters
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicddsdecoder-getparameters
-                - name: GetFrame (método)
+                - name: Método GetFrame
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicddsdecoder-getframe
             - name: IWICDdsEncoder
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicddsencoder
               items:
                 - name: Método SetParameters
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicddsencoder-setparameters
-                - name: GetParameters (método)
+                - name: Método GetParameters
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicddsencoder-getparameters
-                - name: CreateNewFrame (método)
+                - name: Método CreateNewFrame
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicddsencoder-createnewframe
             - name: IWICDevelopRaw
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicdevelopraw
@@ -465,7 +465,7 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getexposurecompensation
                 - name: GetGamma
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getgamma
-                - name: GetKelvinRangeInfo
+                - name: GetRangevinRangeInfo
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getkelvinrangeinfo
                 - name: GetNamedWhitePoint
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getnamedwhitepoint
@@ -483,7 +483,7 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-gettint
                 - name: GetToneCurve
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-gettonecurve
-                - name: GetWhitePointKelvin
+                - name: GetWhitePointVin
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getwhitepointkelvin
                 - name: GetWhitePointRGB
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getwhitepointrgb
@@ -517,7 +517,7 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-settint
                 - name: SetToneCurve
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-settonecurve
-                - name: SetWhitePointKelvin
+                - name: SetWhitePointVin
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setwhitepointkelvin
                 - name: SetWhitePointRGB
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setwhitepointrgb
@@ -627,14 +627,14 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createquerywriter
                 - name: CreateQueryWriterFromReader
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createquerywriterfromreader
-                - name: CreateStream (
+                - name: CreateStream
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createstream
             - name: IWICImagingFactory2
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory2
               items:
                 - name: Método CreateImageEncoder
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory2-createimageencoder
-            - name: IWICJpegFrameDecode
+            - name: IWICPlantegFrameDecode
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicjpegframedecode
               items:
                 - name: Método ClearIndexing
@@ -655,7 +655,7 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicjpegframedecode-getscanheader
                 - name: Método SetIndexing
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicjpegframedecode-setindexing
-            - name: IWICJpegFrameEncode
+            - name: IWICPlantegFrameEncode
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicjpegframeencode
               items:
                 - name: Método GetAcHuffmanTable
@@ -820,14 +820,14 @@
             - name: IWICPlanarBitmapFrameEncode
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicplanarbitmapframeencode
               items:
-                - name: WritePixels (método)
+                - name: Método WritePixels
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicplanarbitmapframeencode-writepixels
                 - name: Método WriteSource
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicplanarbitmapframeencode-writesource
             - name: IWICPlanarBitmapSourceTransform
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicplanarbitmapsourcetransform
               items:
-                - name: CopyPixels (método)
+                - name: Método CopyPixels
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicplanarbitmapsourcetransform-copypixels
                 - name: Método DoesSupportTransform
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicplanarbitmapsourcetransform-doessupporttransform
@@ -877,15 +877,15 @@
         - name: 'Constantes, enumeraciones y marcas'
           href: '-wic-codec-enums.md'
           items:
-            - name: GUID y CLSID de WIC
+            - name: GUID y CLID de WIC
               href: '-wic-guids-clsids.md'
             - name: Códigos de error de códec
               href: '-wic-codec-error-codes.md'
-            - name: Formatos de píxeles nativos
+            - name: Formatos de píxel nativo
               href: '-wic-codec-native-pixel-formats.md'
-            - name: Constantes de IWICDevelopRawNotificationCallback
+            - name: Constantes IWICDevelopRawNotificationCallback
               href: '-wic-codec-iwicdeveloprawnotification-constants.md'
-            - name: Constantes de IWICJpegFrameDecode
+            - name: Constantes IWICPlantegFrameDecode
               href: iwicjpegframedecode-constants.md
             - name: WIC8BIMIptcDigestProperties
               href: /windows/desktop/api/Wincodec/ne-wincodec-wic8bimiptcdigestproperties
@@ -935,19 +935,19 @@
               href: /windows/desktop/api/Wincodec/ne-wincodec-wicgifimagedescriptorproperties
             - name: WICGifLogicalScreenDescriptorProperties
               href: /windows/desktop/api/Wincodec/ne-wincodec-wicgiflogicalscreendescriptorproperties
-            - name: WICJpegCommentProperties
+            - name: WICPropertiesEgCommentProperties
               href: /windows/desktop/api/Wincodec/ne-wincodec-wicjpegcommentproperties
-            - name: WICJpegChrominanceProperties
+            - name: WICRomegChrominanceProperties
               href: /windows/desktop/api/Wincodec/ne-wincodec-wicjpegchrominanceproperties
-            - name: WICJpegIndexingOptions
+            - name: WICIndexingOptions
               href: /windows/desktop/api/wincodec/ne-wincodec-wicjpegindexingoptions
-            - name: WICJpegLuminanceProperties
+            - name: WICPropertiesegLuminanceProperties
               href: /windows/desktop/api/Wincodec/ne-wincodec-wicjpegluminanceproperties
-            - name: WICJpegScanType
+            - name: WICOpenegScanType
               href: /windows/desktop/api/wincodec/ne-wincodec-wicjpegscantype
-            - name: WICJpegTransferMatrix
+            - name: WICTrixegTransferMatrix
               href: /windows/desktop/api/wincodec/ne-wincodec-wicjpegtransfermatrix
-            - name: WICJpegYCrCbSubsamplingOption
+            - name: WICOptionegYCrCbSubsamplingOption
               href: /windows/desktop/api/Wincodec/ne-wincodec-wicjpegycrcbsubsamplingoption
             - name: WICMetadataCreationOptions
               href: /windows/desktop/api/Wincodecsdk/ne-wincodecsdk-wicmetadatacreationoptions
@@ -961,7 +961,7 @@
               href: /windows/desktop/api/Wincodec/ne-wincodec-wicplanaroptions
             - name: WICProgressOperation
               href: /windows/desktop/api/Wincodec/ne-wincodec-wicprogressoperation
-            - name: WICPngBkgdProperties
+            - name: WICPngBcarddProperties
               href: /windows/desktop/api/Wincodec/ne-wincodec-wicpngbkgdproperties
             - name: WICPngChrmProperties
               href: /windows/desktop/api/Wincodec/ne-wincodec-wicpngchrmproperties
@@ -1010,9 +1010,9 @@
               href: /windows/desktop/api/Wincodec/ns-wincodec-wicddsparameters
             - name: WICImageParameters
               href: /windows/desktop/api/Wincodec/ns-wincodec-wicimageparameters
-            - name: WICJpegFrameHeader
+            - name: WICHeaderegFrameHeader
               href: /windows/desktop/api/wincodec/ns-wincodec-wicjpegframeheader
-            - name: WICJpegScanHeader
+            - name: WICHeaderegScanHeader
               href: /windows/desktop/api/wincodec/ns-wincodec-wicjpegscanheader
             - name: WICMetadataHeader
               href: /windows/desktop/api/Wincodecsdk/ns-wincodecsdk-wicmetadataheader
@@ -1049,7 +1049,7 @@
               href: /windows/desktop/api/wincodecsdk/nf-wincodecsdk-wicmatchmetadatacontent
             - name: WICSerializeMetadataContent
               href: /windows/desktop/api/wincodecsdk/nf-wincodecsdk-wicserializemetadatacontent
-            - name: Funciones de proxy WIC
+            - name: Funciones de proxy wic
               href: wic-proxy-functions.md
               items:
                 - name: IEnumString_Next_WIC_Proxy
@@ -1272,249 +1272,249 @@
             - name: Sistema
               href: system.md
               items:
-                - name: Directiva de metadatos de la foto de System. ApplicationName
+                - name: Directiva de metadatos de fotos System.ApplicationName
                   href: '-wic-photoprop-system-applicationname.md'
-                - name: Directiva de metadatos de fotografía de System. Author
+                - name: Directiva de metadatos de fotos de System.Author
                   href: '-wic-photoprop-system-author.md'
-                - name: Directiva de metadatos de la foto System. Comment
+                - name: Directiva de metadatos de fotos System.Comment
                   href: '-wic-photoprop-system-comment.md'
-                - name: Directiva de metadatos de fotos de System. Copyright
+                - name: Directiva de metadatos de fotos system.copyright
                   href: '-wic-photoprop-system-copyright.md'
-                - name: Directiva de metadatos de la foto System. DateAcquired
+                - name: Directiva de metadatos de fotos System.DateAcquired
                   href: '-wic-photoprop-system-dateacquired.md'
-                - name: Directiva de metadatos de la foto System. keywords
+                - name: Directiva de metadatos de fotos System.Keywords
                   href: '-wic-photoprop-system-keywords.md'
-                - name: Directiva de metadatos de la foto System. Rating
+                - name: Directiva de metadatos de fotos System.Rating
                   href: '-wic-photoprop-system-rating.md'
-                - name: Directiva de metadatos de la foto System. SimpleRating
+                - name: System.SimpleRating Photo Metadata Policy
                   href: '-wic-photoprop-system-simplerating.md'
-                - name: Directiva de metadatos de la foto System. Subject
+                - name: Directiva de metadatos de fotos de System.Subject
                   href: '-wic-photoprop-system-subject.md'
-                - name: Directiva de metadatos de foto de System. title
+                - name: Directiva de metadatos de fotos System.Title
                   href: '-wic-photoprop-system-title.md'
-            - name: System. GPS
+            - name: System.GPS
               href: system-gps.md
               items:
-                - name: Directiva de metadatos de la foto System. GPS. altitud
+                - name: Directiva de metadatos de fotos System.GPS.Altitude
                   href: '-wic-photoprop-system-gps-altitude.md'
-                - name: Proxy System. GPS. altitud
+                - name: System.GPS.Altitude Proxy
                   href: '-wic-photoprop-system-gps-altitude-proxy.md'
-                - name: Directiva de metadatos de la foto System. GPS. AltitudeRef
+                - name: Directiva de metadatos de fotos System.GPS.AltitudeRef
                   href: '-wic-photoprop-system-gps-altituderef.md'
-                - name: Directiva de metadatos de la foto System. GPS. AreaInformation
+                - name: Directiva de metadatos de fotos System.GPS.AreaInformation
                   href: '-wic-photoprop-system-gps-areainformation.md'
-                - name: Directiva de metadatos de la foto System. GPS. Date
+                - name: Directiva de metadatos de fotos System.GPS.Date
                   href: '-wic-photoprop-system-gps-date.md'
-                - name: Directiva de metadatos de la foto System. GPS. DestBearing
+                - name: Directiva de metadatos de fotos System.GPS.DestBearing
                   href: '-wic-photoprop-system-gps-destbearing.md'
-                - name: Proxy System. GPS. DestBearing
+                - name: System.GPS.DestBearing Proxy
                   href: '-wic-photoprop-system-gps-destbearing-proxy.md'
-                - name: Directiva de metadatos de la foto System. GPS. DestBearingRef
+                - name: Directiva de metadatos de fotos System.GPS.DestBearingRef
                   href: '-wic-photoprop-system-gps-destbearingref.md'
-                - name: Directiva de metadatos de la foto System. GPS. DestDistance
+                - name: Directiva de metadatos de fotos System.GPS.DestDistance
                   href: '-wic-photoprop-system-gps-destdistance.md'
-                - name: Proxy System. GPS. DestDistance
+                - name: System.GPS.DestDistance Proxy
                   href: '-wic-photoprop-system-gps-destdistance-proxy.md'
-                - name: Directiva de metadatos de la foto System. GPS. DestDistanceRef
+                - name: Directiva de metadatos de fotos System.GPS.DestDistanceRef
                   href: '-wic-photoprop-system-gps-destdistanceref.md'
-                - name: Directiva de metadatos de la foto System. GPS. DestLatitude
+                - name: Directiva de metadatos de fotos System.GPS.DestLatitude
                   href: '-wic-photoprop-system-gps-destlatitude.md'
-                - name: Proxy System. GPS. DestLatitude
+                - name: System.GPS.DestLatitude Proxy
                   href: '-wic-photoprop-system-gps-destlatitude-proxy.md'
-                - name: Directiva de metadatos de la foto System. GPS. DestLatitudeRef
+                - name: Directiva de metadatos de fotos System.GPS.DestLatitudeRef
                   href: '-wic-photoprop-system-gps-destlatituderef.md'
-                - name: Directiva de metadatos de la foto System. GPS. DestLongitude
+                - name: Directiva de metadatos de fotos System.GPS.DestLongitude
                   href: '-wic-photoprop-system-gps-destlongitude.md'
-                - name: Proxy System. GPS. DestLongitude
+                - name: System.GPS.DestLongitude Proxy
                   href: '-wic-photoprop-system-gps-destlongitude-proxy.md'
-                - name: Directiva de metadatos de la foto System. GPS. DestLongitudeRef
+                - name: Directiva de metadatos de fotos System.GPS.DestLongitudeRef
                   href: '-wic-photoprop-system-gps-destlongituderef.md'
-                - name: Directiva de metadatos de fotografía de System. GPS. Differential
+                - name: Directiva de metadatos de fotos System.GPS.Differential
                   href: '-wic-photoprop-system-gps-differential.md'
-                - name: Directiva de metadatos de foto de System. GPS. DOP
+                - name: Directiva de metadatos de fotos System.GPS.DOP
                   href: '-wic-photoprop-system-gps-dop.md'
-                - name: Proxy System. GPS. DOP
+                - name: System.GPS.DOP Proxy
                   href: '-wic-photoprop-system-gps-dop-proxy.md'
-                - name: Directiva de metadatos de la foto System. GPS. ImgDirection
+                - name: Directiva de metadatos de fotos System.GPS.ImgDirection
                   href: '-wic-photoprop-system-gps-imgdirection.md'
-                - name: Proxy System. GPS. ImgDirection
+                - name: System.GPS.ImgDirection Proxy
                   href: '-wic-photoprop-system-gps-imgdirection-proxy.md'
-                - name: Directiva de metadatos de la foto System. GPS. ImgDirectionRef
+                - name: Directiva de metadatos de fotos System.GPS.ImgDirectionRef
                   href: '-wic-photoprop-system-gps-imgdirectionref.md'
-                - name: Directiva de metadatos de la foto System. GPS. Latitude
+                - name: Directiva de metadatos de fotos System.GPS.Latitude
                   href: '-wic-photoprop-system-gps-latitude.md'
-                - name: Proxy de System. GPS. Latitude
+                - name: System.GPS.Latitude Proxy
                   href: '-wic-photoprop-system-gps-latitude-proxy.md'
-                - name: Directiva de metadatos de la foto System. GPS. LatitudeRef
+                - name: Directiva de metadatos de fotos System.GPS.LatitudeRef
                   href: '-wic-photoprop-system-gps-latituderef.md'
-                - name: Directiva de metadatos de fotos de System. GPS. longitud
+                - name: Directiva de metadatos de fotos System.GPS.Longitude
                   href: '-wic-photoprop-system-gps-longitude.md'
-                - name: Proxy System. GPS. longitud
+                - name: System.GPS.Longitude Proxy
                   href: '-wic-photoprop-system-gps-longitude-proxy.md'
-                - name: Directiva de metadatos de la foto System. GPS. LongitudeRef
+                - name: Directiva de metadatos de fotos System.GPS.LongitudeRef
                   href: '-wic-photoprop-system-gps-longituderef.md'
-                - name: Directiva de metadatos de la foto System. GPS. MapDatum
+                - name: Directiva de metadatos de fotos System.GPS.MapDatum
                   href: '-wic-photoprop-system-gps-mapdatum.md'
-                - name: Directiva de metadatos de la foto System. GPS. MeasureMode
+                - name: Directiva de metadatos de fotos System.GPS.MeasureMode
                   href: '-wic-photoprop-system-gps-measuremode.md'
-                - name: Directiva de metadatos de la foto System. GPS. ProcessingMethod
+                - name: Directiva de metadatos de fotos System.GPS.ProcessingMethod
                   href: '-wic-photoprop-system-gps-processingmethod.md'
-                - name: Directiva de metadatos de fotografía de System. GPS. Satellites
+                - name: Directiva de metadatos de fotos System.GPS.Satellites
                   href: '-wic-photoprop-system-gps-satellites.md'
-                - name: Directiva de metadatos de foto de System. GPS. Speed
+                - name: Directiva de metadatos de fotos System.GPS.Speed
                   href: '-wic-photoprop-system-gps-speed.md'
-                - name: Proxy System. GPS. Speed
+                - name: System.GPS.Speed Proxy
                   href: '-wic-photoprop-system-gps-speed-proxy.md'
-                - name: Directiva de metadatos de la foto System. GPS. SpeedRef
+                - name: Directiva de metadatos de fotos System.GPS.SpeedRef
                   href: '-wic-photoprop-system-gps-speedref.md'
-                - name: Directiva de metadatos de foto de System. GPS. status
+                - name: Directiva de metadatos de fotos System.GPS.Status
                   href: '-wic-photoprop-system-gps-status.md'
-                - name: Directiva de metadatos de foto de System. GPS. Track
+                - name: Directiva de metadatos de fotos System.GPS.Track
                   href: '-wic-photoprop-system-gps-track.md'
-                - name: Directiva de metadatos de la foto System. GPS. TrackRef
+                - name: Directiva de metadatos de fotos System.GPS.TrackRef
                   href: '-wic-photoprop-system-gps-trackref.md'
-                - name: Proxy System. GPS. TrackRef
+                - name: System.GPS.TrackRef Proxy
                   href: '-wic-photoprop-system-gps-trackref-proxy.md'
-                - name: Directiva de metadatos de la foto System. GPS. VersionID
+                - name: Directiva de metadatos de fotos System.GPS.VersionID
                   href: '-wic-photoprop-system-gps-versionid.md'
-            - name: System. Image
+            - name: System.Image
               href: system-image.md
               items:
-                - name: Directiva de metadatos de la foto de System. Image. ColorSpace
+                - name: Directiva de metadatos de fotos System.Image.ColorSpace
                   href: '-wic-photoprop-system-image-colorspace.md'
-                - name: Directiva de metadatos de la foto de System. Image. CompressedBitsPerPixel
+                - name: Directiva de metadatos de fotos System.Image.CompressedBitsPerPixel
                   href: '-wic-photoprop-system-image-compressedbitsperpixel.md'
-                - name: Proxy System. Image. CompressedBitsPerPixel
+                - name: System.Image.CompressedBitsPerPixel Proxy
                   href: '-wic-photoprop-system-image-compressedbitsperpixel-proxy.md'
-                - name: Directiva de metadatos de foto de System. Image. Compression
+                - name: Directiva de metadatos de fotos System.Image.Compression
                   href: '-wic-photoprop-system-image-compression.md'
-                - name: Directiva de metadatos de la foto System. Image. HorizontalResolution
+                - name: Directiva de metadatos de fotos System.Image.HorizontalResolution
                   href: '-wic-photoprop-system-image-horizontalresolution.md'
-                - name: Proxy System. Image. HorizontalResolution
+                - name: System.Image.HorizontalResolution Proxy
                   href: '-wic-photoprop-system-image-horizontalresolution-proxy.md'
-                - name: Directiva de metadatos de la foto de System. Image. ImageID
+                - name: Directiva de metadatos de fotos System.Image.ImageID
                   href: '-wic-photoprop-system-image-imageid.md'
-                - name: Directiva de metadatos de la foto de System. Image. ResolutionUnit
+                - name: Directiva de metadatos de fotos System.Image.ResolutionUnit
                   href: '-wic-photoprop-system-image-resolutionunit.md'
-                - name: Proxy System. Image. ResolutionUnit
+                - name: System.Image.ResolutionUnit Proxy
                   href: '-wic-photoprop-system-image-resolutionunit-proxy.md'
-                - name: Directiva de metadatos de la foto de System. Image. VerticalResolution
+                - name: Directiva de metadatos de fotos System.Image.VerticalResolution
                   href: '-wic-photoprop-system-image-verticalresolution.md'
-                - name: Proxy System. Image. VerticalResolution
+                - name: System.Image.VerticalResolution Proxy
                   href: '-wic-photoprop-system-image-verticalresolution-proxy.md'
-            - name: System. Photo
+            - name: System.Photo
               href: system-photo.md
               items:
-                - name: Directiva de metadatos de fotografía de System. Photo. abertura
+                - name: Directiva de metadatos de fotos System.Photo.Aperture
                   href: '-wic-photoprop-system-photo-aperture.md'
-                - name: Proxy System. Photo. de abertura
+                - name: System.Photo.Aperture Proxy
                   href: '-wic-photoprop-system-photo-aperture-proxy.md'
-                - name: Directiva de metadatos de foto de System. Photo. Brightness
+                - name: Directiva de metadatos de fotos System.Photo.Brightness
                   href: '-wic-photoprop-system-photo-brightness.md'
-                - name: Proxy System. Photo. Brightness
+                - name: System.Photo.Brightness Proxy
                   href: '-wic-photoprop-system-photo-brightness-proxy.md'
-                - name: Directiva de metadatos de la foto de System. Photo. CameraManufacturer
+                - name: Directiva de metadatos de fotos de System.Photo.CameraManufacturer
                   href: '-wic-photoprop-system-photo-cameramanufacturer.md'
-                - name: Directiva de metadatos de la foto de System. Photo. CameraModel
+                - name: Directiva de metadatos de fotos System.Photo.CameraModel
                   href: '-wic-photoprop-system-photo-cameramodel.md'
-                - name: Directiva de metadatos de la foto de System. Photo. CameraSerialNumber
+                - name: Directiva de metadatos de fotos System.Photo.CameraSerialNumber
                   href: '-wic-photoprop-system-photo-cameraserialnumber.md'
-                - name: Directiva de metadatos de fotografía de System. Photo. Contrast
+                - name: Directiva de metadatos de fotos System.Photo.Contrast
                   href: '-wic-photoprop-system-photo-contrast.md'
-                - name: Directiva de metadatos de la foto de System. Photo. DateTaken
+                - name: Directiva de metadatos de fotos System.Photo.DateTaken
                   href: '-wic-photoprop-system-photo-datetaken.md'
-                - name: Directiva de metadatos de la foto de System. Photo. DigitalZoom
+                - name: Directiva de metadatos de fotos System.Photo.DigitalZoom
                   href: '-wic-photoprop-system-photo-digitalzoom.md'
-                - name: Proxy System. Photo. DigitalZoom
+                - name: System.Photo.DigitalZoom Proxy
                   href: '-wic-photoprop-system-photo-digitalzoom-proxy.md'
-                - name: Directiva de metadatos de la foto de System. Photo. EXIFVersion
+                - name: Directiva de metadatos de fotos System.Photo.EXIFVersion
                   href: '-wic-photoprop-system-photo-exifversion.md'
-                - name: Directiva de metadatos de la foto de System. Photo. ExposureBias
+                - name: Directiva de metadatos de fotos System.Photo.ExposureBias
                   href: '-wic-photoprop-system-photo-exposurebias.md'
-                - name: Proxy System. Photo. ExposureBias
+                - name: System.Photo.ExposureBias Proxy
                   href: '-wic-photoprop-system-photo-exposurebias-proxy.md'
-                - name: Directiva de metadatos de la foto de System. Photo. ExposureTime
+                - name: Directiva de metadatos de fotos System.Photo.ExposureTime
                   href: '-wic-photoprop-system-photo-exposuretime.md'
-                - name: Proxy System. Photo. ExposureTime
+                - name: System.Photo.ExposureTime Proxy
                   href: '-wic-photoprop-system-photo-exposuretime-proxy.md'
-                - name: Directiva de metadatos de foto de System. Photo. Flash
+                - name: Directiva de metadatos de fotos system.photo.flash
                   href: '-wic-photoprop-system-photo-flash.md'
-                - name: Directiva de metadatos de la foto de System. Photo. FlashEnergy
+                - name: Directiva de metadatos de fotos System.Photo.FlashEnergy
                   href: '-wic-photoprop-system-photo-flashenergy.md'
-                - name: Proxy System. Photo. FlashEnergy
+                - name: System.Photo.FlashEnergy Proxy
                   href: '-wic-photoprop-system-photo-flashenergy-proxy.md'
-                - name: Directiva de metadatos de la foto de System. Photo. FlashManufacturer
+                - name: Directiva de metadatos de fotos de System.Photo.FlashManufacturer
                   href: '-wic-photoprop-system-photo-flashmanufacturer.md'
-                - name: Directiva de metadatos de la foto de System. Photo. FlashModel
+                - name: Directiva de metadatos de fotos System.Photo.FlashModel
                   href: '-wic-photoprop-system-photo-flashmodel.md'
-                - name: Directiva de metadatos de la foto de System. Photo. FNumber
+                - name: Directiva de metadatos de fotos System.Photo.FNumber
                   href: '-wic-photoprop-system-photo-fnumber.md'
-                - name: Proxy System. Photo. FNumber
+                - name: System.Photo.FNumber Proxy
                   href: '-wic-photoprop-system-photo-fnumber-proxy.md'
-                - name: Directiva de metadatos de la foto de System. Photo. FocalLength
+                - name: Directiva de metadatos de fotos System.Photo.FocalLength
                   href: '-wic-photoprop-system-photo-focallength.md'
-                - name: Proxy System. Photo. FocalLength
+                - name: System.Photo.FocalLength Proxy
                   href: '-wic-photoprop-system-photo-focallength-proxy.md'
-                - name: Directiva de metadatos de la foto de System. Photo. FocalLengthInFilm
+                - name: Directiva de metadatos de fotos System.Photo.FocalLengthInQuel
                   href: '-wic-photoprop-system-photo-focallengthinfilm.md'
-                - name: Directiva de metadatos de fotografía de System. Photo. isospeed
+                - name: Directiva de metadatos de fotos System.Photo.ISOSpeed
                   href: '-wic-photoprop-system-photo-isospeed.md'
-                - name: Directiva de metadatos de la foto de System. Photo. LensManufacturer
+                - name: Directiva de metadatos de fotos de System.Photo.LensManufacturer
                   href: '-wic-photoprop-system-photo-lensmanufacturer.md'
-                - name: Directiva de metadatos de la foto de System. Photo. LensModel
+                - name: Directiva de metadatos de fotos System.Photo.LensModel
                   href: '-wic-photoprop-system-photo-lensmodel.md'
-                - name: Directiva de metadatos de fotografía de System. Photo. LightSource
+                - name: Directiva de metadatos de fotos System.Photo.LightSource
                   href: '-wic-photoprop-system-photo-lightsource.md'
-                - name: Directiva de metadatos de la foto de System. Photo. MakerNote
+                - name: Directiva de metadatos de fotos de System.Photo.MakerNote
                   href: '-wic-photoprop-system-photo-makernote.md'
-                - name: Directiva de metadatos de la foto de System. Photo. MaxAperture
+                - name: Directiva de metadatos de fotos System.Photo.MaxAperture
                   href: '-wic-photoprop-system-photo-maxaperture.md'
-                - name: Proxy System. Photo. MaxAperture
+                - name: System.Photo.MaxAperture Proxy
                   href: '-wic-photoprop-system-photo-maxaperture-proxy.md'
-                - name: Directiva de metadatos de la foto de System. Photo. MeteringMode
+                - name: Directiva de metadatos de fotos System.Photo.MeteringMode
                   href: '-wic-photoprop-system-photo-meteringmode.md'
-                - name: Directiva de metadatos de foto de System. Photo. Orientation
+                - name: Directiva de metadatos de fotos System.Photo.Orientation
                   href: '-wic-photoprop-system-photo-orientation.md'
-                - name: Directiva de metadatos de la foto de System. Photo. PeopleNames
+                - name: Directiva de metadatos de fotos System.Photo.PeopleNames
                   href: '-wic-photoprop-system-photo-peoplenames.md'
-                - name: Directiva de metadatos de la foto de System. Photo. PhotometricInterpretation
+                - name: Directiva de metadatos de fotos System.Photo.PhotometricInterpretation
                   href: '-wic-photoprop-system-photo-photometricinterpretation.md'
-                - name: Directiva de metadatos de la foto de System. Photo. ProgramMode
+                - name: Directiva de metadatos de fotos System.Photo.ProgramMode
                   href: '-wic-photoprop-system-photo-programmode.md'
-                - name: Directiva de metadatos de la foto de System. Photo. RelatedSoundFile
+                - name: Directiva de metadatos de fotos System.Photo.RelatedSoundFile
                   href: '-wic-photoprop-system-photo-relatedsoundfile.md'
-                - name: Directiva de metadatos de la foto System. Photo. saturación
+                - name: Directiva de metadatos de fotos System.Photo.Saturation
                   href: '-wic-photoprop-system-photo-saturation.md'
-                - name: Directiva de metadatos de foto de System. Photo. nitidez
+                - name: Directiva de metadatos de fotos System.Photo.Sharpness
                   href: '-wic-photoprop-system-photo-sharpness.md'
-                - name: Directiva de metadatos de la foto de System. Photo. ShutterSpeed
+                - name: Directiva de metadatos de fotos System.Photo.Photo.Speed
                   href: '-wic-photoprop-system-photo-shutterspeed.md'
-                - name: Proxy System. Photo. ShutterSpeed
+                - name: Proxy System.Photo.SpeedSpeed
                   href: '-wic-photoprop-system-photo-shutterspeed-proxy.md'
-                - name: Directiva de metadatos de la foto de System. Photo. SubjectDistance
+                - name: Directiva de metadatos de fotos System.Photo.SubjectDistance
                   href: '-wic-photoprop-system-photo-subjectdistance.md'
-                - name: Proxy System. Photo. SubjectDistance
+                - name: System.Photo.SubjectDistance Proxy
                   href: '-wic-photoprop-system-photo-subjectdistance-proxy.md'
-                - name: Directiva de metadatos de la foto de System. Photo. TranscodedForSync
+                - name: Directiva de metadatos de fotos System.Photo.TranscodedForSync
                   href: '-wic-photoprop-system-photo-transcodedforsync.md'
-                - name: Directiva de metadatos de la foto de System. Photo. WhiteBalance
+                - name: Directiva de metadatos de fotos System.Photo.WhiteBalance
                   href: '-wic-photoprop-system-photo-whitebalance.md'
     - name: Ejemplos de WIC
       href: '-wic-samples.md'
       items:
-        - name: Ejemplos de descodificación de imágenes
+        - name: Ejemplos de lacoding de imágenes
           href: image-decoding-samples.md
           items:
-            - name: Ejemplo de descodificación progresiva de WIC
+            - name: Ejemplo de decodación progresiva de WIC
               href: '-wic-sample-progressive-decoding.md'
-            - name: Visor de imágenes WIC con el ejemplo de Direct2D
+            - name: Visor de imágenes WIC mediante el ejemplo de Direct2D
               href: '-wic-sample-d2d-viewer.md'
             - name: Ejemplo de GIF animado de WIC
               href: '-wic-sample-animated-gif.md'
         - name: Ejemplos de codificación de imágenes
           href: image-encoding-samples.md
           items:
-            - name: Cómo volver a codificar una imagen JPEG con metadatos
+            - name: 'Cómo: Volver a codificar una imagen JPEG con metadatos'
               href: '-wic-codec-jpegmetadataencoding.md'
     - name: glosario
       href: '-wic-glossary.md'

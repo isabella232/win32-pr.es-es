@@ -1,9 +1,9 @@
 ---
-title: DVD. isAvailable
-description: La propiedad isAvailable indica si un tipo especificado de información está disponible o se puede realizar una acción especificada. | DVD. isAvailable
+title: DVD.isAvailable
+description: La propiedad isAvailable indica si un tipo de información especificado está disponible o se puede realizar una acción especificada. | DVD.isAvailable
 ms.assetid: ed34a943-b9c3-40a8-8845-b83f16951a3e
 keywords:
-- DVD. isAvailable Windows Media Player
+- DVD.isAvailable Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5088b4b6365dd60d859fda8ec563cc9c8ff8a4c8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: efb1a240c8df072d0770521f70c526f4e096c26385df85cff7acf0d229fdc252
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996925"
 ---
-# <a name="dvdisavailable"></a>DVD. isAvailable
+# <a name="dvdisavailable"></a>DVD.isAvailable
 
-La propiedad **isavailable** indica si un tipo especificado de información está disponible o se puede realizar una acción especificada.
+La **propiedad isAvailable** indica si un tipo de información especificado está disponible o se puede realizar una acción especificada.
 
 ``` syntax
 player.dvd.isAvailable(
@@ -41,12 +41,12 @@ player.dvd.isAvailable(
 
 | String     | Descripción                                                                            |
 |------------|----------------------------------------------------------------------------------------|
-| atrás       | Determina si el método **back** está disponible.                                   |
-| discos        | Determina si el DVD está cargado.                                                  |
+| atrás       | Determina si el **método back** está disponible.                                   |
+| Dvd        | Determina si se carga el DVD.                                                  |
 | dvdDecoder | Determina si el descodificador de DVD está instalado en el sistema.                             |
-| resume     | Determina si el método **resume** está disponible.                                 |
-| titleMenu  | Determina si el método **titleMenu** está disponible.                              |
-| Menú de menús    | Determina si el método de **menú de menús** está disponible. Normalmente denominado menú raíz. |
+| resume     | Determina si el **método resume** está disponible.                                 |
+| titleMenu  | Determina si el **método titleMenu** está disponible.                              |
+| topMenu    | Determina si el **método topMenu** está disponible. Normalmente se denomina menú raíz. |
 
 
 
@@ -54,15 +54,15 @@ player.dvd.isAvailable(
 
 ## <a name="return-values"></a>Valores devueltos
 
-Este método devuelve un **valor booleano** de solo lectura que indica si el parámetro especificado está disponible.
+Este método devuelve un valor **booleano** de solo lectura que indica si el parámetro especificado está disponible.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las características de DVD de Windows Media Player no funcionarán en equipos que no tengan instalado descodificadores de DVD de terceros. Puede determinar si un descodificador está disponible llamando a **isavailable**("dvdDecoder").
+Las características de DVD Reproductor de Windows Media no funcionarán en equipos que no tengan instalados descodificadores de DVD de terceros. Puede determinar si un descodificador está disponible llamando a **isAvailable**("dvdDecoder").
 
-Cada DVD se crea de forma diferente. Los métodos disponibles durante la reproducción y la navegación por DVD dependen de cómo se cree el DVD.
+Cada DVD se ha escrito de forma diferente. Los métodos disponibles durante la reproducción y navegación de DVD dependen de cómo se cree el DVD.
 
-**Windows Media Player 10 Mobile:** Esta propiedad siempre devuelve **false**.
+**Reproductor de Windows Media 10 Mobile:** Esta propiedad siempre devuelve **false**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,9 +70,9 @@ Cada DVD se crea de forma diferente. Los métodos disponibles durante la reprodu
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                               |
-| Versión<br/>                  | Windows Media Player para Windows XP o posterior<br/>                            |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
+| Versión<br/>                  | Reproductor de Windows Media para Windows XP o posterior<br/>                            |
 | Archivo DLL<br/>                      | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -81,7 +81,7 @@ Cada DVD se crea de forma diferente. Los métodos disponibles durante la reprodu
 
 <dl> <dt>
 
-[**Objeto de DVD**](dvd-object.md)
+[**Dvd (objeto)**](dvd-object.md)
 </dt> </dl>
 
  

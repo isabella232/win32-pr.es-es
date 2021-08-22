@@ -3,9 +3,9 @@ title: Propiedad playCount de IWMPSettings
 description: La propiedad playCount obtiene o establece el número de veces que se reproducirá un elemento multimedia.
 ms.assetid: 5d18909d-8b7a-448e-b54a-23a312041066
 keywords:
-- propiedades de playCount Media Player de Windows
-- propiedad playCount de Windows Media Player, interfaz IWMPSettings
-- Interfaz IWMPSettings Windows Media Player, propiedad playCount
+- propiedad playCount Reproductor de Windows Media
+- Propiedad playCount Reproductor de Windows Media , interfaz IWMPSettings
+- Interfaz IWMPSettings Reproductor de Windows Media , propiedad playCount
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fab28ce930e7ab64fe1214fba937cd0ba400ab9c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3a3ea6421b2e27f5154174d47b744f54bc0427fd9c28f513fb29e4967de7f09d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105719023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053403"
 ---
-# <a name="iwmpsettingsplaycount-property"></a>IWMPSettings::p propiedad layCount
+# <a name="iwmpsettingsplaycount-property"></a>Propiedad IWMPSettings::p layCount
 
-La propiedad **playCount** obtiene o establece el número de veces que se reproducirá un elemento multimedia.
+La **propiedad playCount** obtiene o establece el número de veces que se reproducirá un elemento multimedia.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,15 +46,15 @@ Public Property playCount As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es el recuento de reproducción, con un valor mínimo de 1 y un valor predeterminado de 1.
+**System.Int32 que** es el recuento de reproducción, con un valor mínimo de 1 y un valor predeterminado de 1.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

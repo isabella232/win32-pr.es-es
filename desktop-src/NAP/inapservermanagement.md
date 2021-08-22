@@ -1,10 +1,10 @@
 ---
-title: Interfaz INapServerManagement (NapServerManagement. h)
+title: Interfaz INapServerManagement (NapServerManagement.h)
 description: Se usan para administrar el servidor NAP.
 ms.assetid: 5c4f9bf1-fe82-48f5-8aa4-5c73ab01a78a
 keywords:
-- Interfaz INapServerManagement NAP
-- Interfaz INapServerManagement NAP, descripción
+- NAP de la interfaz INapServerManagement
+- Nap de interfaz INapServerManagement , descrito
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a5eed03f535653a3b9244ff1aa74fe499c1bf2f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6b324f32c542a6a300266d26ceb5981bb6e14d0feff28aa225698d6b32bbe94b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012533"
 ---
 # <a name="inapservermanagement-interface"></a>Interfaz INapServerManagement
 
@@ -29,25 +29,25 @@ ms.locfileid: "104150441"
 
  
 
-**INapServerManagement** proporciona métodos que se usan para administrar el servidor NAP.
+**INapServerManagement proporciona** métodos que se usan para administrar el servidor NAP.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **INapServerManagement** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **INapServerManagement** también tiene estos tipos de miembros:
+La **interfaz INapServerManagement** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapServerManagement** también tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **INapServerManagement** tiene estos métodos.
+La **interfaz INapServerManagement** tiene estos métodos.
 
 
 
 | Método                                                                                                                       | Descripción                                          |
 |:-----------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------|
-| [**INapServerManagement::RegisterSystemHealthValidator**](inapservermanagement-registersystemhealthvalidator-method.md)     | Registra un SHV.<br/>                         |
+| [**INapServerManagement::RegisterSystemHealthValidator**](inapservermanagement-registersystemhealthvalidator-method.md)     | Registra una SHV.<br/>                         |
 | [**INapServerManagement::SetFailureCategoryMappings**](inapservermanagement-setfailurecategorymappings-method.md)           | Establece las asignaciones de categorías de error de SHV.<br/> |
-| [**INapServerManagement::UnregisterSystemHealthValidator**](inapservermanagement-unregistersystemhealthvalidator-method.md) | Anula el registro de un SHV del servidor NAP.<br/>   |
+| [**INapServerManagement::UnregisterSystemHealthValidator**](inapservermanagement-unregistersystemhealthvalidator-method.md) | Anula el registro de una SHV del servidor NAP.<br/>   |
 
 
 
@@ -60,9 +60,9 @@ La interfaz **INapServerManagement** tiene estos métodos.
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                               |
-| Encabezado<br/>                   | <dl> <dt>NapServerManagement. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>NapServerManagement. idl</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                               |
+| Header<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qsvrmgmt.dll</dt> </dl>            |
 
 
@@ -71,7 +71,7 @@ La interfaz **INapServerManagement** tiene estos métodos.
 
 <dl> <dt>
 
-[Interfaces NAP](nap-interfaces.md)
+[NAP Interfaces](nap-interfaces.md)
 </dt> <dt>
 
 [Referencia de NAP](nap-reference.md)

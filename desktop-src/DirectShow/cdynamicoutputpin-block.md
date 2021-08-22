@@ -1,7 +1,7 @@
 ---
-description: 'El método Block bloquea o desbloquea el flujo de datos desde el código PIN. Este método implementa el método IPinFlowControl:: Block.'
+description: El método Block bloquea o desbloquea el flujo de datos del pin. Este método implementa el método IPinFlowControl::Block.
 ms.assetid: 8281cd8c-7543-42b5-9a4a-11bdfcb659e3
-title: Método CDynamicOutputPin. Block (Amfilter. h)
+title: Método CDynamicOutputPin.Block (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6b10e9dfd43f3ad98adf8f6abb0eb7c2223d5970
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6cc0a601ee1adbff9254baeff029c26d0cea359c7b2770b4d518bad916aca09f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074289"
 ---
-# <a name="cdynamicoutputpinblock-method"></a>CDynamicOutputPin. Block (método)
+# <a name="cdynamicoutputpinblock-method"></a>Método CDynamicOutputPin.Block
 
-El `Block` método bloquea o desbloquea el flujo de datos desde el código PIN. Este método implementa el método [**IPinFlowControl:: Block**](/windows/desktop/api/Strmif/nf-strmif-ipinflowcontrol-block) .
+El `Block` método bloquea o desbloquea el flujo de datos del pin. Este método implementa el [**método IPinFlowControl::Block.**](/windows/desktop/api/Strmif/nf-strmif-ipinflowcontrol-block)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,48 +46,48 @@ HRESULT Block(
 *dwBlockFlags* 
 </dt> <dd>
 
-Marca que indica si se debe bloquear o desbloquear el código PIN. Debe ser uno de los siguientes valores: 
+Marca que indica si se va a bloquear o desbloquear el pin. Debe ser uno de los siguientes valores: 
 
-Cero: Desbloquea el flujo de datos desde el código PIN.
+Cero: desbloquee el flujo de datos del pin.
 
-\_ \_ \_ \_ Bloquear bloque de control de flujo: bloquear flujo de datos desde el código PIN.
+BLOQUE \_ DE CONTROL DE FLUJO DE PIN DE \_ \_ \_ AM: bloquee el flujo de datos del pin.
 
 </dd> <dt>
 
 *hEvent* 
 </dt> <dd>
 
-Identificador de un objeto de evento o **null**.
+Identificador de un objeto de evento o **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** . Entre los valores posibles se incluyen los que se muestran en la tabla siguiente.
+Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran en la tabla siguiente.
 
 
 
 | Código devuelto                                                                                                                    | Descripción                                              |
 |--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl>                                        | El PIN ya está desbloqueado.<br/>                     |
-| <dl> <dt>**S \_ correcto**</dt> </dl>                                           | Correcto.<br/>                                      |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>                                        | El pin ya está desbloqueado.<br/>                     |
+| <dl> <dt>**S \_ OK**</dt> </dl>                                           | Correcto.<br/>                                      |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>                                   | Argumento no válido.<br/>                             |
-| <dl> <dt>**VFW \_ E \_ PIN \_ ya \_ bloqueados**</dt> </dl>                   | El PIN ya está bloqueado en otro subproceso.<br/>     |
-| <dl> <dt>**\_ \_ el PIN VFW \_ ya está \_ bloqueado \_ en \_ este \_ subproceso**</dt> </dl> | El PIN ya está bloqueado en el subproceso que realiza la llamada.<br/> |
+| <dl> <dt>**EL PIN \_ DE VFW E \_ YA \_ ESTÁ \_ BLOQUEADO**</dt> </dl>                   | El pin ya está bloqueado en otro subproceso.<br/>     |
+| <dl> <dt>**EL PIN \_ DE VFW E \_ YA ESTÁ BLOQUEADO EN ESTE \_ \_ \_ \_ \_ SUBPROCESO**</dt> </dl> | El pin ya está bloqueado en el subproceso que realiza la llamada.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información sobre este método, vea [**IPinFlowControl:: Block**](/windows/desktop/api/Strmif/nf-strmif-ipinflowcontrol-block). Internamente, este método llama a uno de los métodos protegidos siguientes:
+Para obtener más información sobre este método, vea [**IPinFlowControl::Block**](/windows/desktop/api/Strmif/nf-strmif-ipinflowcontrol-block). Internamente, este método llama a uno de los métodos protegidos siguientes:
 
--   Bloquear (asincrónico): [ **CDynamicOutputPin:: AsynchronousBlockOutputPin**](cdynamicoutputpin-asynchronousblockoutputpin.md)
--   Bloquear (sincrónico): [ **CDynamicOutputPin:: SynchronousBlockOutputPin**](cdynamicoutputpin-synchronousblockoutputpin.md)
--   Desbloquear: [ **CDynamicOutputPin:: UnblockOutputPin**](cdynamicoutputpin-unblockoutputpin.md)
+-   Bloquear (asincrónico): [ **CDynamicOutputPin::AsynchronousBlockOutputPin**](cdynamicoutputpin-asynchronousblockoutputpin.md)
+-   Bloquear (sincrónico): [ **CDynamicOutputPin::SynchronousBlockOutputPin**](cdynamicoutputpin-synchronousblockoutputpin.md)
+-   Desbloquear: [ **CDynamicOutputPin::UnblockOutputPin**](cdynamicoutputpin-unblockoutputpin.md)
 
-El desbloqueo siempre se realiza sincrónicamente.
+El desbloqueo siempre se realiza de forma sincrónica.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,8 +95,8 @@ El desbloqueo siempre se realiza sincrónicamente.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -104,7 +104,7 @@ El desbloqueo siempre se realiza sincrónicamente.
 
 <dl> <dt>
 
-[**Clase CDynamicOutputPin**](cdynamicoutputpin.md)
+[**CDynamicOutputPin (clase)**](cdynamicoutputpin.md)
 </dt> </dl>
 
  

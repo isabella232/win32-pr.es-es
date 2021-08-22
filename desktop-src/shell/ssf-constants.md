@@ -1,6 +1,6 @@
 ---
-description: Lo utiliza la función SHGetSetSettings para especificar qué miembros de su estructura SHELLSTATE se deben establecer o recuperar.
-title: Constantes SSF (ShlObj. h)
+description: Usado por la función SHGetSetSettings para especificar qué miembros de su estructura SHELLSTATE se deben establecer o volver a derivar.
+title: Constantes SSF (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 2a883110-fdc3-4451-9e47-e58894600e3b
@@ -39,16 +39,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: b26ba102ff72caf235a51d3888183ccafba9d639
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c022b1d93cb411f0cce73822a47f2d8f85b30e8093bbe2064fb3c50eab5c4870
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104997781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967944"
 ---
 # <a name="ssf-constants"></a>Constantes de SSF
 
-Lo utiliza la función [**SHGetSetSettings**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetsetsettings) para especificar qué miembros de su estructura [**SHELLSTATE**](/windows/win32/api/shlobj_core/ns-shlobj_core-shellstatea) se deben establecer o recuperar.
+Usado por la [**función SHGetSetSettings**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetsetsettings) para especificar qué miembros de su [**estructura SHELLSTATE**](/windows/win32/api/shlobj_core/ns-shlobj_core-shellstatea) se deben establecer o volver a derivar.
 
 <dl> <dt>
 
@@ -60,12 +60,12 @@ Lo utiliza la función [**SHGetSetSettings**](/windows/desktop/api/shlobj_core/n
 
 
 
-Se está solicitando el miembro **fShowAllObjects** .
+Se solicita el miembro **fShowAllObjects.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="SSF_SHOWEXTENSIONS"></span><span id="ssf_showextensions"></span>**SSF \_ SHOWEXTENSIONS**
+<span id="SSF_SHOWEXTENSIONS"></span><span id="ssf_showextensions"></span>**SHOWEXTENSIONS DE SSF \_**
 </dt> <dd> <dl> <dt>
 
 0x00000002
@@ -73,7 +73,7 @@ Se está solicitando el miembro **fShowAllObjects** .
 
 
 
-Se está solicitando el miembro **fShowExtensions** .
+Se **solicita el miembro fShowExtensions.**
 
 
 </dt> </dl> </dd> <dt>
@@ -86,7 +86,7 @@ Se está solicitando el miembro **fShowExtensions** .
 
 
 
-No se utiliza.
+No se usa.
 
 
 </dt> </dl> </dd> <dt>
@@ -99,7 +99,7 @@ No se utiliza.
 
 
 
-No se utiliza.
+No se usa.
 
 
 </dt> </dl> </dd> <dt>
@@ -112,12 +112,12 @@ No se utiliza.
 
 
 
-Se está solicitando el miembro **fShowCompColor** .
+Se solicita el miembro **fShowCompColor.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="SSF_SORTCOLUMNS"></span><span id="ssf_sortcolumns"></span>**SSF \_ SORTCOLUMNS**
+<span id="SSF_SORTCOLUMNS"></span><span id="ssf_sortcolumns"></span>**SORTCOLUMNS de SSF \_**
 </dt> <dd> <dl> <dt>
 
 0x00000010
@@ -125,12 +125,12 @@ Se está solicitando el miembro **fShowCompColor** .
 
 
 
-Se solicitan los miembros **lParamSort** y **iSortDirection** .
+Se solicitan los miembros **lParamSort** **e iSortDirection.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="SSF_SHOWSYSFILES"></span><span id="ssf_showsysfiles"></span>**SSF \_ SHOWSYSFILES**
+<span id="SSF_SHOWSYSFILES"></span><span id="ssf_showsysfiles"></span>**SHOWSYSFILES DE SSF \_**
 </dt> <dd> <dl> <dt>
 
 0x00000020
@@ -138,7 +138,7 @@ Se solicitan los miembros **lParamSort** y **iSortDirection** .
 
 
 
-Se está solicitando el miembro **fShowSysFiles** .
+Se **solicita el miembro fShowSysFiles.**
 
 
 </dt> </dl> </dd> <dt>
@@ -151,7 +151,7 @@ Se está solicitando el miembro **fShowSysFiles** .
 
 
 
-Se está solicitando el miembro **fDoubleClickInWebView** .
+Se **solicita el miembro fDoubleClickInWebView.**
 
 
 </dt> </dl> </dd> <dt>
@@ -164,7 +164,7 @@ Se está solicitando el miembro **fDoubleClickInWebView** .
 
 
 
-Se está solicitando el miembro **fShowAttribCol** .
+Se solicita el miembro **fShowAttribCol.**
 
 **Windows Vista:** No se usa.
 
@@ -179,7 +179,7 @@ Se está solicitando el miembro **fShowAttribCol** .
 
 
 
-Se está solicitando el miembro **fDesktopHTML** . Set no está disponible. En su lugar, para las versiones de Windows anteriores a Windows XP, habilite el escritorio HTML de [**IActiveDesktop**](/windows/win32/api/shlobj_core/nn-shlobj_core-iactivedesktop). No obstante, el uso de **IActiveDesktop** para este fin no se recomienda en Windows XP y versiones posteriores de Windows, y está en desuso en Windows Vista.
+Se solicita el miembro **fDesktopHTML.** El conjunto no está disponible. En su lugar, para las versiones de Windows anteriores a Windows XP, habilite HTML de escritorio de [**IActiveDesktop**](/windows/win32/api/shlobj_core/nn-shlobj_core-iactivedesktop). Sin embargo, el uso de **IActiveDesktop** para este propósito no se recomienda para Windows XP y versiones posteriores de Windows, y está en desuso en Windows Vista.
 
 
 </dt> </dl> </dd> <dt>
@@ -192,7 +192,7 @@ Se está solicitando el miembro **fDesktopHTML** . Set no está disponible. En s
 
 
 
-Se está solicitando el miembro **fWin95Classic** .
+Se solicita el miembro **fWin95Classic.**
 
 
 </dt> </dl> </dd> <dt>
@@ -205,12 +205,12 @@ Se está solicitando el miembro **fWin95Classic** .
 
 
 
-Se está solicitando el miembro **fDontPrettyPath** .
+Se **solicita el miembro fDontPrettyPath.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="SSF_MAPNETDRVBUTTON"></span><span id="ssf_mapnetdrvbutton"></span>**SSF \_ MAPNETDRVBUTTON**
+<span id="SSF_MAPNETDRVBUTTON"></span><span id="ssf_mapnetdrvbutton"></span>**MAPNETDRVBUTTON de SSF \_**
 </dt> <dd> <dl> <dt>
 
 0x00001000
@@ -218,7 +218,7 @@ Se está solicitando el miembro **fDontPrettyPath** .
 
 
 
-Se está solicitando el miembro **fMapNetDrvBtn** .
+Se **solicita el miembro fMapNetDrvBtn.**
 
 
 </dt> </dl> </dd> <dt>
@@ -231,12 +231,12 @@ Se está solicitando el miembro **fMapNetDrvBtn** .
 
 
 
-Se está solicitando el miembro **fShowInfoTip** .
+Se solicita el miembro **fShowInfoTip.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="SSF_HIDEICONS"></span><span id="ssf_hideicons"></span>**SSF \_ HIDEICONS**
+<span id="SSF_HIDEICONS"></span><span id="ssf_hideicons"></span>**HIDEICONS de SSF \_**
 </dt> <dd> <dl> <dt>
 
 0x00004000
@@ -244,7 +244,7 @@ Se está solicitando el miembro **fShowInfoTip** .
 
 
 
-Se está solicitando el miembro **fHideIcons** .
+Se solicita el miembro **fHideIcons.**
 
 
 </dt> </dl> </dd> <dt>
@@ -257,12 +257,12 @@ Se está solicitando el miembro **fHideIcons** .
 
 
 
-Se está solicitando el miembro **fNoConfirmRecycle** .
+Se **solicita el miembro fNoConfirmRecycle.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="SSF_FILTER"></span><span id="ssf_filter"></span>**filtro de SSF \_**
+<span id="SSF_FILTER"></span><span id="ssf_filter"></span>**FILTRO \_ SSF**
 </dt> <dd> <dl> <dt>
 
 0x00010000
@@ -270,14 +270,14 @@ Se está solicitando el miembro **fNoConfirmRecycle** .
 
 
 
-Se está solicitando el miembro **fFilter** .
+Se solicita el miembro **fFilter.**
 
 **Windows Vista:** No se usa.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="SSF_WEBVIEW"></span><span id="ssf_webview"></span>**WebView de SSF \_**
+<span id="SSF_WEBVIEW"></span><span id="ssf_webview"></span>**SSF \_ WEBVIEW**
 </dt> <dd> <dl> <dt>
 
 0x00020000
@@ -285,7 +285,7 @@ Se está solicitando el miembro **fFilter** .
 
 
 
-Se está solicitando el miembro **fWebView** .
+Se solicita el miembro **fWebView.**
 
 
 </dt> </dl> </dd> <dt>
@@ -298,7 +298,7 @@ Se está solicitando el miembro **fWebView** .
 
 
 
-Se está solicitando el miembro **fShowSuperHidden** .
+Se **solicita el miembro fShowSuperHidden.**
 
 
 </dt> </dl> </dd> <dt>
@@ -311,7 +311,7 @@ Se está solicitando el miembro **fShowSuperHidden** .
 
 
 
-Se está solicitando el miembro **fSepProcess** .
+Se **solicita el miembro fSepProcess.**
 
 
 </dt> </dl> </dd> <dt>
@@ -324,7 +324,7 @@ Se está solicitando el miembro **fSepProcess** .
 
 
 
-**Windows XP y versiones posteriores**. Se está solicitando el miembro **fNoNetCrawling** .
+**Windows XP y versiones posteriores.** Se solicita el miembro **fNoNetCrawling.**
 
 
 </dt> </dl> </dd> <dt>
@@ -337,7 +337,7 @@ Se está solicitando el miembro **fSepProcess** .
 
 
 
-**Windows XP y versiones posteriores**. Se está solicitando el miembro **fStartPanelOn** .
+**Windows XP y versiones posteriores.** Se solicita el miembro **fStartPanelOn.**
 
 
 </dt> </dl> </dd> <dt>
@@ -350,7 +350,7 @@ Se está solicitando el miembro **fSepProcess** .
 
 
 
-No se utiliza.
+No se usa.
 
 
 </dt> </dl> </dd> <dt>
@@ -363,12 +363,12 @@ No se utiliza.
 
 
 
-**Windows Vista y versiones posteriores**. Se está solicitando el miembro **fAutoCheckSelect** .
+**Windows Vista y versiones posteriores.** Se solicita el miembro **fAutoCheckSelect.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="SSF_ICONSONLY"></span><span id="ssf_iconsonly"></span>**SSF \_ ICONSONLY**
+<span id="SSF_ICONSONLY"></span><span id="ssf_iconsonly"></span>**ICONOS DE \_ SSFONLY**
 </dt> <dd> <dl> <dt>
 
 0x01000000
@@ -376,7 +376,7 @@ No se utiliza.
 
 
 
-**Windows Vista y versiones posteriores**. Se está solicitando el miembro **fIconsOnly** .
+**Windows Vista y versiones posteriores.** Se solicita el miembro **fIconsOnly.**
 
 
 </dt> </dl> </dd> <dt>
@@ -389,7 +389,7 @@ No se utiliza.
 
 
 
-**Windows Vista y versiones posteriores**. Se está solicitando el miembro **fShowTypeOverlay** .
+**Windows Vista y versiones posteriores.** Se solicita el miembro **fShowTypeOverlay.**
 
 
 </dt> </dl> </dd> <dt>
@@ -402,7 +402,7 @@ No se utiliza.
 
 
 
-**Windows 8 y versiones posteriores**: se está solicitando el miembro **fShowStatusBar** .
+**Windows 8 y versiones posteriores:** se solicita el **miembro fShowStatusBar.**
 
 
 </dt> </dl> </dd> </dl>
@@ -415,7 +415,7 @@ No se utiliza.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>ShlObj. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: Le notifica que el menú se contrae.
-title: Mensaje de SMC_EXITMENU (shobjidl. h)
+description: Le notifica que el menú se está contrayendo.
+title: SMC_EXITMENU mensaje (Shobjidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: 868b4819-1dbf-497a-9c79-5935f503969a
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: e9a8680617a17ce0069a8633e1c70ff6b32a4be7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9bd7c19249f969e942951b8958dba32492312d2c7c6a0bebec3b73ab24734c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968124"
 ---
-# <a name="smc_exitmenu-message"></a>Mensaje de EXITMENU de SMC \_
+# <a name="smc_exitmenu-message"></a>Mensaje \_ EXITMENU de SMC
 
-Le notifica que el menú se contrae.
+Le notifica que el menú se está contrayendo.
 
 
 ```C++
@@ -38,11 +38,11 @@ Este mensaje no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devolver S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
+El método [**IShellMenuCallback::CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,8 +52,8 @@ El método [**IShellMenuCallback:: CallbackSM**](/windows/desktop/api/shobjidl_c
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Shobjidl. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>Shobjidl. idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

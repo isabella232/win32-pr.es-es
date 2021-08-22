@@ -3,30 +3,30 @@ title: Iniciar las descargas
 description: Iniciar las descargas
 ms.assetid: 0a830b11-f7e1-41da-a867-86f9ac361c0b
 keywords:
-- Windows Media Player tiendas en línea, administrador de descargas
-- tiendas en línea, administrador de descargas
-- tipo 2 tiendas en línea, administrador de descargas
-- Windows Media Player tiendas en línea, iniciar descargas
+- Reproductor de Windows Media en línea,Download Manager
+- online stores,Download Manager
+- tipo 2 tiendas en línea, Administrador de descarga
+- Reproductor de Windows Media en línea, iniciar descargas
 - tiendas en línea, iniciar descargas
-- tipo 2 tiendas en línea, iniciar descargas
-- Windows Media Player, administrador de descargas
-- Administrador de descargas de Windows Media Player
-- Administrador de descargas
-- iniciar descargas
+- tiendas en línea de tipo 2, iniciar descargas
+- Reproductor de Windows Media,Download Manager
+- Reproductor de Windows Media Administrador de descarga
+- Administrador de descarga
+- inicio de descargas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cec723bd504cc511c3ca43db90f3c613a8acefd1
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d600bb037204b4dae1c07d8938e92eae2862460b94ef285567a8ca14144e72c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104419085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995075"
 ---
 # <a name="starting-the-downloads"></a>Iniciar las descargas
 
-La descarga se inicia cuando el usuario hace clic en **Descargar**. Este botón se denomina btnDownload en el código y la función de controlador de eventos para el evento **onclick** se denomina "aldescargar".
+La descarga se inicia cuando el usuario hace clic en **Descargar**. Este botón se denomina btnDownload en el código y la función de controlador de eventos para el evento **onClick** se denomina "OnDownload".
 
-"Undownload" crea primero un nuevo objeto **DownloadCollection** vacío y lo asigna a una variable local.
+"OnDownload" crea primero un nuevo objeto **DownloadCollection** vacío y lo asigna a una variable local.
 
 
 ```C++
@@ -56,12 +56,12 @@ A continuación, el código actualiza los elementos de la interfaz de usuario co
 
 <dl> <dt>
 
-[**Uso del administrador de descargas**](using-the-download-manager.md)
+[**Uso del Administrador de descargas**](using-the-download-manager.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

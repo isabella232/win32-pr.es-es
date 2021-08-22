@@ -133,7 +133,7 @@
                   href: /windows/desktop/api/virtdisk/nf-virtdisk-setvirtualdiskmetadata
                 - name: TakeSnapshotVhdSet
                   href: /windows/win32/api/virtdisk/nf-virtdisk-takesnapshotvhdset
-            - name: Estructuras de VHD
+            - name: Estructuras vhd
               href: vhd-structures.md
               items:
                 - name: APPLY_SNAPSHOT_VHDSET_PARAMETERS

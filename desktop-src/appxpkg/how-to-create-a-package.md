@@ -1,29 +1,29 @@
 ---
 title: Cómo crear un paquete de aplicación (C++)
-description: Obtenga información sobre cómo crear un paquete de aplicación para una aplicación de Windows mediante la API de empaquetado.
+description: Aprenda a crear un paquete de aplicación para una aplicación Windows mediante la API de empaquetado.
 ms.assetid: FD677D75-50D5-4228-891F-73B5F40679B0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f1808ebf57d4c7125f5509db68e22b78ce949f7
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 9ac2e471443acd22a39128c046590eed29d320b75bafee0a65cb6d37fb4fb8d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "105704934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049063"
 ---
 # <a name="how-to-create-an-app-package-c"></a>Cómo crear un paquete de aplicación (C++)
 
-Obtenga información sobre cómo crear un paquete de aplicación para una aplicación de Windows mediante la [API de empaquetado](interfaces.md).
+Aprenda a crear un paquete de aplicación para una Windows aplicación mediante la [API de empaquetado](interfaces.md).
 
-Si desea crear un paquete de aplicación de escritorio manualmente, también puede usar la herramienta de MakeAppx.exe que usa la [API de empaquetado](interfaces.md). Para obtener más información [, consulte paquete de aplicaciones (MakeAppx.exe)](make-appx-package--makeappx-exe-.md) .
+Si desea crear manualmente un paquete de aplicación de escritorio, también puede usar la herramienta MakeAppx.exe que usa la [API de empaquetado](interfaces.md). Consulte [Empaquetador de aplicaciones (MakeAppx.exe)](make-appx-package--makeappx-exe-.md) para obtener más información.
 
-Si usa Visual Studio, se recomienda usar el Asistente para empaquetar Visual Studio para empaquetar la aplicación. Para obtener más información, consulte [empaquetar una aplicación para UWP con Visual Studio](/windows/msix/package/packaging-uwp-apps).
+Si usa Visual Studio, se recomienda usar el Asistente para Visual Studio empaquetado para empaquetar la aplicación. Para obtener más información, [consulta Empaquetado de una aplicación para UWP Visual Studio](/windows/msix/package/packaging-uwp-apps).
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="step-1-create-a-package-writer"></a>Paso 1: crear un escritor de paquetes
+### <a name="step-1-create-a-package-writer"></a>Paso 1: Crear un escritor de paquetes
 
-Para crear un escritor de paquetes, llame al método [**IAppxFactory:: CreatePackageWriter**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfactory-createpackagewriter) . El primer parámetro es un flujo de salida en el que se escribirá el paquete. El segundo parámetro es un puntero a una estructura de [**\_ \_ configuración del paquete appx**](/windows/desktop/api/AppxPackaging/ns-appxpackaging-appx_package_settings) que especifica la configuración del paquete. El tercer parámetro es un parámetro de salida que recibe un puntero a un puntero [**IAppxPackageWriter**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagewriter) .
+Para crear un escritor de paquetes, llame al [**método IAppxFactory::CreatePackageWriter.**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxfactory-createpackagewriter) El primer parámetro es un flujo de salida donde se escribirá el paquete. El segundo parámetro es un puntero a una [**estructura APPX \_ PACKAGE \_ SETTINGS**](/windows/desktop/api/AppxPackaging/ns-appxpackaging-appx_package_settings) que especifica la configuración del paquete. El tercer parámetro es un parámetro de salida que recibe un puntero a un [**puntero IAppxPackageWriter.**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagewriter)
 
 
 ```C++
@@ -137,9 +137,9 @@ HRESULT GetPackageWriter(
 
 
 
-### <a name="step-2-add-the-payload-files-for-your-app-to-the-package"></a>Paso 2: agregar los archivos de carga de la aplicación al paquete
+### <a name="step-2-add-the-payload-files-for-your-app-to-the-package"></a>Paso 2: Agregar los archivos de carga de la aplicación al paquete
 
-Llame al método [**IAppxPackageWriter:: AddPayloadFile**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagewriter-addpayloadfile) para agregar archivos al paquete. El primer parámetro es la ruta de acceso relativa del archivo. El segundo parámetro indica el tipo de contenido del archivo. El tercer parámetro especifica las opciones de la enumeración de la [**\_ \_ opción de compresión de appx**](/windows/desktop/api/AppxPackaging/ne-appxpackaging-appx_compression_option) . El cuarto parámetro es el flujo de entrada para el archivo.
+Llame al [**método IAppxPackageWriter::AddPayloadFile**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagewriter-addpayloadfile) para agregar archivos al paquete. El primer parámetro es la ruta de acceso relativa del archivo. El segundo parámetro indica el tipo de contenido del archivo. El tercer parámetro especifica las opciones de la [**enumeración APPX \_ COMPRESSION \_ OPTION.**](/windows/desktop/api/AppxPackaging/ne-appxpackaging-appx_compression_option) El cuarto parámetro es el flujo de entrada del archivo.
 
 
 ```C++
@@ -173,7 +173,7 @@ for (int i = 0; SUCCEEDED(hr) && (i < PayloadFilesCount); i++)
 
 
 
-El código anterior usa estas definiciones de variable y la `GetFileStream` función auxiliar.
+El código anterior usa estas definiciones de variables y la `GetFileStream` función auxiliar.
 
 
 ```C++
@@ -248,9 +248,9 @@ HRESULT GetFileStream(
 
 
 
-### <a name="step-3-add-the-package-manifest-to-the-package"></a>Paso 3: agregar el manifiesto del paquete al paquete
+### <a name="step-3-add-the-package-manifest-to-the-package"></a>Paso 3: Agregar el manifiesto del paquete al paquete
 
-Cada paquete debe tener un manifiesto de paquete. Para agregar el manifiesto del paquete al paquete, cree un flujo de entrada para el archivo y, a continuación, llame al método [**IAppxPackageWriter:: Close**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagewriter-close) para escribir el manifiesto al final del paquete y cerrar el flujo de salida para el escritor de paquetes.
+Cada paquete debe tener un manifiesto de paquete. Para agregar el manifiesto del paquete al paquete, cree un flujo de entrada para el archivo y, a continuación, llame al método [**IAppxPackageWriter::Close**](/windows/desktop/api/AppxPackaging/nf-appxpackaging-iappxpackagewriter-close) para escribir el manifiesto al final del paquete y cerrar el flujo de salida para el escritor de paquetes.
 
 Este código usa la `GetFileStream` función auxiliar que se muestra en el paso anterior para crear la secuencia para el manifiesto del paquete.
 
@@ -277,9 +277,9 @@ if (manifestStream != NULL)
 
 
 
-### <a name="step-4-clean-up-the-package-writer"></a>Paso 4: limpieza del escritor de paquetes
+### <a name="step-4-clean-up-the-package-writer"></a>Paso 4: Limpieza del escritor de paquetes
 
-Antes de volver de la `wmain` función, llame al método [**Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) para limpiar el escritor de paquetes y llamar a la función [**CoUninitialize**](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize) .
+Antes de volver de la función, llame al método Release para limpiar el escritor de paquetes y `wmain` llamar a la función [**CoUninitialize.**](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize) [](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release)
 
 
 ```C++
@@ -309,6 +309,6 @@ CoUninitialize();
 [**IAppxPackageWriter**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagewriter)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

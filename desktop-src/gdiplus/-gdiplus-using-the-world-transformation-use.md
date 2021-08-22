@@ -1,21 +1,21 @@
 ---
-description: La transformación universal es una propiedad de la clase Graphics.
+description: La transformación del mundo es una propiedad de la clase Graphics.
 ms.assetid: 22f43b29-ea7b-4faf-9795-2242bf704ed3
 title: Utilizar la transformación de coordenadas universales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2138df1bbd2be6d3329695fc6898da49da93b3b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6288b5640e330a827e96b632541dac44e9463b87c566c16a94797810c4c92c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118977245"
 ---
 # <a name="using-the-world-transformation"></a>Utilizar la transformación de coordenadas universales
 
-La transformación universal es una propiedad de la clase [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) . Los números que especifican la transformación universal se almacenan en un objeto de [**matriz**](/windows/desktop/api/gdiplusmatrix/nl-gdiplusmatrix-matrix) , que representa una matriz de 3 × 3. Las clases **Matrix** y **Graphics** tienen varios métodos para establecer los números en la matriz de transformación universal. En los ejemplos de esta sección se manipulan los rectángulos porque los rectángulos son fáciles de dibujar y resulta sencillo ver los efectos de las transformaciones en los rectángulos.
+La transformación del mundo es una propiedad de la [**clase Graphics.**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) Los números que especifican la transformación del mundo se almacenan en un [**objeto Matrix,**](/windows/desktop/api/gdiplusmatrix/nl-gdiplusmatrix-matrix) que representa una matriz de 3 ×3. Las **clases Matrix** y **Graphics** tienen varios métodos para establecer los números en la matriz de transformación del mundo. Los ejemplos de esta sección manipulan rectángulos porque los rectángulos son fáciles de dibujar y es fácil ver los efectos de las transformaciones en los rectángulos.
 
-Comenzaremos creando un rectángulo de 50 por 50 y buscándolo en el origen (0,0). El origen se encuentra en la esquina superior izquierda del área cliente.
+Comenzamos creando un rectángulo de 50 por 50 y ubicándose en el origen (0, 0). El origen está en la esquina superior izquierda del área de cliente.
 
 
 ```
@@ -26,7 +26,7 @@ graphics.DrawRectangle(&pen, rect);
 
 
 
-En el código siguiente se aplica una transformación de escala que expande el rectángulo por un factor de 1,75 en la dirección x y reduce el rectángulo entre un factor de 0,5 en la dirección y:
+El código siguiente aplica una transformación de escalado que expande el rectángulo por un factor de 1,75 en la dirección x y reduce el rectángulo en un factor de 0,5 en la dirección y:
 
 
 ```

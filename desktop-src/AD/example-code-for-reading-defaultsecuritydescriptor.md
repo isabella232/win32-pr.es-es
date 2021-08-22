@@ -4,15 +4,15 @@ description: En el ejemplo de código siguiente se lee defaultSecurityDescriptor
 ms.assetid: 9462686d-654b-40bb-be10-80ca03790ad5
 ms.tgt_platform: multiple
 keywords:
-- Active Directory ejemplos Active Directory, leer defaultSecurityDescriptor
+- Active Directory ejemplos Active Directory , leer defaultSecurityDescriptor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7913b6008f1794e36f699f675cf79b5028931c29
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d0fc57830d88686ebbd23aeed26c8262d17312b35e7ce4f1ab5b7af3cc2fcea9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962244"
 ---
 # <a name="example-code-for-reading-defaultsecuritydescriptor"></a>Código de ejemplo para leer defaultSecurityDescriptor
 
@@ -166,9 +166,9 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

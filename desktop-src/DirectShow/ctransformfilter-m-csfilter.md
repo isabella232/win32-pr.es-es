@@ -1,7 +1,7 @@
 ---
-description: Sección crítica que protege el estado del filtro. Para obtener más información, vea flujo de datos para desarrolladores de filtros.
+description: Sección crítica que protege el estado del filtro. Para obtener más información, vea Data Flow for Filter Developers.
 ms.assetid: 75b9c8b0-e911-41fd-8d07-b854dbe25551
-title: 'Miembro CTransformFilter:: m_csFilter (Transfrm. h)'
+title: Miembro CTransformFilter::m_csFilter (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 991b07aa654ce42a651f4fa169e757d8380fdc8e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 58fc725c29ef322cc310aae2735ffb8fcd7298d29214a51037e49682028caa81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953584"
 ---
-# <a name="ctransformfilterm_csfilter-member"></a>Miembro csFilter CTransformFilter:: m \_
+# <a name="ctransformfilterm_csfilter-member"></a>Miembro CTransformFilter::m \_ csFilter
 
-Sección crítica que protege el estado del filtro. Para obtener más información, vea [flujo de datos para desarrolladores de filtros](data-flow-for-filter-developers.md).
+Sección crítica que protege el estado del filtro. Para obtener más información, vea [Data Flow for Filter Developers](data-flow-for-filter-developers.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ CCritSec m_csFilter;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ CCritSec m_csFilter;
 
 <dl> <dt>
 
-[**Clase CTransformFilter**](ctransformfilter.md)
+[**CTransformFilter (clase)**](ctransformfilter.md)
 </dt> </dl>
 
  

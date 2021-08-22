@@ -1,23 +1,23 @@
 ---
-title: Implementación de filtros de Firewall para Teredo
-description: Windows permite a las aplicaciones establecer una opción de socket que permite a las aplicaciones indicar un intento explícito de recibir el tráfico Teredo que se envía al firewall del host a través de la plataforma de filtrado de Windows.
+title: Implementación de filtros de firewall para Teredo
+description: Windows permite a las aplicaciones establecer una opción de socket que permite a las aplicaciones indicar una intención explícita de recibir tráfico de Teredo enviado al firewall de host a través de la plataforma de filtrado de Windows.
 ms.assetid: 9e53e28c-e0e5-438d-b624-27d7bd65e4a3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f24d4351f10a3b37f2bf63c952e81883d97b781
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9fe854b210e6b07f0777a492d5c952f502e2f7c2b6c1c4b40497bad3a9e8248a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103792940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001818"
 ---
-# <a name="implementing-firewall-filters-for-teredo"></a>Implementación de filtros de Firewall para Teredo
+# <a name="implementing-firewall-filters-for-teredo"></a>Implementación de filtros de firewall para Teredo
 
-Windows permite a las aplicaciones establecer una opción de socket que permite a las aplicaciones indicar un intento explícito de recibir el tráfico Teredo que se envía al firewall del host a través de la plataforma de filtrado de Windows. En Windows, se usa una opción de socket para establecer un nivel de protección para permitir que una aplicación defina qué tipo de tráfico está dispuesto a recibir. Más concretamente, en escenarios que implican tráfico Teredo, se especifica la opción de socket de [ \_ \_ nivel de protección IPv6](/windows/desktop/WinSock/ipv6-protection-level) . Se recomienda que las implementaciones de Firewall de host conserven los siguientes filtros para permitir de forma selectiva el tráfico Teredo para una aplicación, mientras se bloquea el tráfico de manera predeterminada para cualquier aplicación sin exención.
+Windows permite a las aplicaciones establecer una opción de socket que permite a las aplicaciones indicar una intención explícita de recibir tráfico de Teredo enviado al firewall de host a través de la plataforma de filtrado de Windows. En Windows, se usa una opción de socket para establecer un nivel de protección para permitir que una aplicación defina qué tipo de tráfico está dispuesto a recibir. Más concretamente, en escenarios que implican tráfico de Teredo, se especifica la opción de socket [ \_ IPV6 PROTECTION \_ LEVEL.](/windows/desktop/WinSock/ipv6-protection-level) Se recomienda que las implementaciones de firewall de host mantengan los siguientes filtros para permitir de forma selectiva el tráfico de Teredo para una aplicación, al tiempo que se bloquea el tráfico de forma predeterminada para cualquier aplicación sin una exención.
 
-## <a name="default-block-filter-for-edge-traversed-traffic"></a>Filtro de bloque predeterminado para el tráfico atravesar perimetral
+## <a name="default-block-filter-for-edge-traversed-traffic"></a>Filtro de bloque predeterminado para el tráfico perimetral recorrido
 
-Un firewall de host debe mantener siempre un filtro de bloque predeterminado dentro de la \_ \_ capa de filtrado de \_ aceptación V6 de autenticación Ale \_ para el tráfico que coincida con las condiciones de **Teredo** de tipo de **interfaz y túnel de tipo de interfaz** especificados. Cuando se implementa, este filtro indica la presencia de un firewall de host con reconocimiento de cruce perimetral en el sistema. Este filtro se ve como un contrato de API entre el Firewall de host y Windows. De forma predeterminada, este filtro bloqueará el tráfico que atraviesa el perímetro a cualquier aplicación.
+Un firewall de host siempre debe mantener un filtro de bloque predeterminado dentro de la capa de filtrado ALE AUTH RECV ACCEPT V6 para el tráfico que coincida con el tipo de interfaz Tunnel y Tunnel de \_ \_ \_ \_ **teredo** especificados.  Cuando se implementa, este filtro indica la presencia de un firewall de host que tenga en cuenta el recorrido perimetral en el sistema. Este filtro se ve como un contrato de API entre el firewall de host y Windows. De forma predeterminada, este filtro bloqueará el tráfico recorrido por el borde a cualquier aplicación.
 
 ``` syntax
    filter.layerKey  = FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V6;
@@ -52,13 +52,13 @@ Un firewall de host debe mantener siempre un filtro de bloque predeterminado den
 ```
 
 > [!Note]  
-> Las clases "entrega", "llegada" y "próximo salto" de las condiciones de la interfaz se usan para controlar un modelo de host débil y el reenvío de paquetes a través de interfaces. En el ejemplo anterior se emplea la clase ' Delivery '. Revise las [condiciones de filtrado disponibles en cada nivel de filtrado](/windows/desktop/FWP/filtering-conditions-available-at-each-filtering-layer) de la documentación del SDK de WFP, ya que el diseño de seguridad debe tener en cuenta cada caso.
+> Las clases "Delivery", "Arrival" y "Next Hop" de condiciones de interfaz se usan para controlar un modelo de host débil y el reenvío de paquetes entre interfaces. En el ejemplo anterior se usa la clase "Delivery". Revise las [condiciones de filtrado disponibles en cada capa](/windows/desktop/FWP/filtering-conditions-available-at-each-filtering-layer) de filtrado en la documentación del SDK de WFP, ya que el diseño de seguridad debe tener en cuenta cada caso.
 
- 
+ 
 
 ## <a name="allow-filter-for-exempt-applications"></a>Permitir filtro para aplicaciones exentas
 
-Si una aplicación está exenta de recibir tráfico Teredo en un socket de escucha, se debe implementar un filtro de permiso en la \_ capa de filtrado de aceptación V6 de la autenticación Ale \_ \_ \_ en el firewall del host. Es importante tener en cuenta que, en función de cómo esté configurada la exención por parte del usuario o la aplicación, el firewall del host puede incluir una opción de socket.
+Si una aplicación está exenta de recibir tráfico de Teredo en un socket de escucha, se debe implementar un filtro de permiso dentro de la capa de filtrado \_ ALE AUTH RCV ACCEPT V6 en el \_ \_ firewall de \_ host. Es importante tener en cuenta que, en función de cómo configure la exención el usuario o la aplicación, el firewall de host puede incluir una opción de socket.
 
 ``` syntax
    filter.layerKey   = FWPM_LAYER_ALE_AUTH_RCV_ACCEPT_V6;
@@ -100,7 +100,7 @@ Si una aplicación está exenta de recibir tráfico Teredo en un socket de escuc
 
 ## <a name="dormancy-callout-filter"></a>Filtro de llamada de inactividad
 
-El servicio Teredo en Windows implementa un modelo inactividad. En un momento dado, si no hay ninguna aplicación escuchando en un socket UDP o TCP con el cruce seguro del perímetro habilitado, el servicio pasa a un estado inactivo. Para que el mecanismo inactividad funcione, el firewall del host debe mantener un filtro de llamada para cada aplicación exenta especificada dentro \_ del \_ \_ nivel de filtrado de escucha de autenticación Ale V6 para TCP, y el \_ nivel de filtrado de asignación de recursos Ale \_ \_ V6 para aplicaciones basadas en UDP. En el siguiente ejemplo se muestra una llamada a inactividad para una aplicación **TCP** .
+El servicio Teredo de Windows implementa un modelo inactivo. En un momento dado, si ninguna aplicación escucha en un socket UDP o TCP con el recorrido perimetral habilitado, el servicio pasa a un estado inactivo. Para que el mecanismo inactivo funcione, el firewall de host debe mantener un filtro de llamada para cada aplicación exenta especificada dentro de la capa de filtrado ALE AUTH LISTEN V6 para TCP y la capa de filtrado \_ \_ \_ ALE \_ RESOURCE ASSIGNMENT \_ V6 para aplicaciones basadas en \_ UDP. En el ejemplo siguiente se muestra una llamada inactiva para una **aplicación TCP.**
 
 ``` syntax
    filter.layerKey = FWPM_LAYER_ALE_AUTH_LISTEN_V6;
@@ -135,6 +135,6 @@ El servicio Teredo en Windows implementa un modelo inactividad. En un momento da
    filterConditions[1].conditionValue.uint32 = FWP_CONDITION_SOCKET_PROPERTY_FLAG_ALLOW_EDGE_TRAFFIC;
 ```
 
- 
+ 
 
- 
+ 

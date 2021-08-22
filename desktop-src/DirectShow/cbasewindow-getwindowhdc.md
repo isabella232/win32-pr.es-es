@@ -1,7 +1,7 @@
 ---
-description: El método GetWindowHDC recupera un identificador para el contexto de dispositivo (DC) de la ventana.
+description: El método GetWindowHDC recupera un identificador en el contexto del dispositivo (DC) de la ventana.
 ms.assetid: 35ee2a66-ee56-44dc-ad59-fd467bb4aa63
-title: Método CBaseWindow. GetWindowHDC (Winutil. h)
+title: Método CBaseWindow.GetWindowHDC (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 16c2502b3a9de587e91ff43ddc45a84ae08492db
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ff0129e63e9a0c9808e36d73e37ff0e76d712b64c18e1e37ef88105797e2b495
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074609"
 ---
-# <a name="cbasewindowgetwindowhdc-method"></a>CBaseWindow. GetWindowHDC, método
+# <a name="cbasewindowgetwindowhdc-method"></a>Método CBaseWindow.GetWindowHDC
 
-El `GetWindowHDC` método recupera un identificador para el contexto de dispositivo (DC) de la ventana.
+El `GetWindowHDC` método recupera un identificador en el contexto de dispositivo (DC) de la ventana.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un identificador para el controlador de dominio.
+Devuelve un identificador al controlador de dominio.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Devuelve un identificador para el controlador de dominio.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ Devuelve un identificador para el controlador de dominio.
 
 <dl> <dt>
 
-[**Clase CBaseWindow**](cbasewindow.md)
+[**CBaseWindow (clase)**](cbasewindow.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Las \_ constantes de marcador de bits LINESPECIALINFO describen las señales de información especial que la red puede usar para notificar diversas operaciones de informes y de observación de la red.
+description: Las constantes de marca de bits LINESPECIALINFO describen las señales de información especiales que la red puede usar para notificar varias operaciones de observación de red \_ y de informes.
 ms.assetid: b94f8a6f-b84d-4976-b4d4-10dee5a1a4d8
-title: Constantes de LINESPECIALINFO_ (TAPI. h)
+title: LINESPECIALINFO_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78154757515ebd5bfa36778795c26ef9fdc96db1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d1585146040db4392a271f5095420eee61f9873906443b58198676de806cb37f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002983"
 ---
-# <a name="linespecialinfo_-constants"></a>Constantes de LINESPECIALINFO \_
+# <a name="linespecialinfo_-constants"></a>LineSPECIALINFO \_ (Constantes)
 
-Las constantes de marcador de bits **LINESPECIALINFO \_** describen las señales de información especial que la red puede usar para notificar diversas operaciones de informes y de observación de la red. Se trata de secuencias de tono codificadas especiales que se transmiten al principio de los anuncios grabados de aviso de red.
+Las constantes de marca de bits **LINESPECIALINFO \_** describen las señales de información especiales que la red puede usar para notificar varias operaciones de informes y observación de red. Son secuencias de tono codificadas especiales que se transmiten al principio de los anuncios registrados de aviso de red.
 
 <dl> <dt>
 
@@ -22,56 +22,56 @@ Las constantes de marcador de bits **LINESPECIALINFO \_** describen las señales
 
 
 
-Este tono de información especial precede a un número libre, AIS, un cambio de número de Centrex y una estación de no trabajo, código de acceso no marcado o marcado como mensaje de operador de interceptación manual (categoría de irregularidades del cliente). LINESPECIALINFO \_ CUSTIRREG también se muestra cuando se rechaza la información de facturación y cuando la dirección marcada se bloquea en el conmutador.
+Este tono de información especial precede a un número vacío, AIS, cambio de número de Centrex y estación que no es de trabajo, código de acceso no marcado o marcado por error, o mensaje de operador de interceptación manual (categoría de irregularidad del cliente). LINESPECIALINFO CUSTIRREG también se notifica cuando se rechaza la información de facturación y cuando la dirección telefónica \_ está bloqueada en el conmutador.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINESPECIALINFO_NOCIRCUIT"></span><span id="linespecialinfo_nocircuit"></span>**LINESPECIALINFO \_ NOcircuito**
+<span id="LINESPECIALINFO_NOCIRCUIT"></span><span id="linespecialinfo_nocircuit"></span>**LINESPECIALINFO \_ NOCIRCUIT**
 </dt> <dd> <dl> <dt>
 
 
 
-Este tono de información especial precede a un circuito no o un anuncio de emergencia (categoría bloqueo de tronco).
+Este tono de información especial precede a un anuncio sin circuito o de emergencia (categoría de bloqueo de tronco).
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINESPECIALINFO_REORDER"></span><span id="linespecialinfo_reorder"></span>**reordenación de LINESPECIALINFO \_**
+<span id="LINESPECIALINFO_REORDER"></span><span id="linespecialinfo_reorder"></span>**LINESPECIALINFO \_ REORDER**
 </dt> <dd> <dl> <dt>
 
 
 
-Este tono de información especial precede a un anuncio de reordenación (categoría de irregularidad del equipo). \_También se muestra el reorden de LINESPECIALINFO cuando el teléfono se mantiene OffHook demasiado largo.
+Este tono de información especial precede a un anuncio de reordenación (categoría de irregularidad del equipo). LINESPECIALINFO REORDER también se notifica cuando el teléfono se mantiene \_ fuera de servicio demasiado tiempo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINESPECIALINFO_UNAVAIL"></span><span id="linespecialinfo_unavail"></span>**LINESPECIALINFO no \_ disponible**
+<span id="LINESPECIALINFO_UNAVAIL"></span><span id="linespecialinfo_unavail"></span>**LINESPECIALINFO \_ UNAVAIL**
 </dt> <dd> <dl> <dt>
 
 
 
-Los detalles sobre el tono de información especial no están disponibles y no serán conocidos.
+Los detalles sobre el tono de información especial no están disponibles y no se conocerán.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINESPECIALINFO_UNKNOWN"></span><span id="linespecialinfo_unknown"></span>**LINESPECIALINFO \_ desconocido**
+<span id="LINESPECIALINFO_UNKNOWN"></span><span id="linespecialinfo_unknown"></span>**LINESPECIALINFO \_ UNKNOWN**
 </dt> <dd> <dl> <dt>
 
 
 
-Actualmente, se desconocen los detalles del tono de información especial, pero se pueden conocer más adelante.
+Actualmente se desconocen detalles sobre el tono de información especial, pero puede que se conozcan más adelante.
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Los 16 bits de orden superior se pueden asignar para extensiones específicas del dispositivo. Los 16 bits de orden inferior están reservados.
 
-Los tonos de información especiales se definen para los mensajes de consulta y no se utilizan normalmente para fines de facturación o de supervisión.
+Los tonos de información especiales se definen para los mensajes de asesoramiento y no se usan normalmente con fines de facturación o supervisión.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Los tonos de información especiales se definen para los mensajes de consulta y 
 
 | Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,0 o posterior<br/>                                             |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

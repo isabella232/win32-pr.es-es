@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de EventsType
-description: Contiene una lista de proveedores definidos en el manifiesto. | Tipo complejo de EventsType
+title: Tipo complejo EventsType
+description: Contiene una lista de proveedores definidos en el manifiesto. | Tipo complejo EventsType
 ms.assetid: 43f9f577-eae0-45c5-aaf0-5a6df28d3b79
 keywords:
-- EventsType tipo complejo EventLog
+- EventType de tipo complejo EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 36500aa037c8e33a48b4f9dd6e38e46eaac58da2
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8d0cee50c0332d283c439448fd80c7abe319fec5065f39dcad4e053baf600bd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055993"
 ---
-# <a name="eventstype-complex-type"></a>Tipo complejo de EventsType
+# <a name="eventstype-complex-type"></a>Tipo complejo EventsType
 
 Contiene una lista de proveedores definidos en el manifiesto.
 
@@ -82,26 +82,26 @@ Contiene una lista de proveedores definidos en el manifiesto.
 | Elemento | Tipo | Descripción |
 |---------|------|-------------|
 | message |      | Define una cadena de mensaje. |
-| messageTable | | Define una lista de cadenas de mensaje. No debe tener que utilizar una tabla de mensajes excepto en los casos siguientes, donde debe definir una tabla de mensajes para asignar explícitamente los números de recursos a las cadenas de mensaje. <ul><li>Está migrando desde un archivo de texto de mensaje (. MC) a un manifiesto, pero sigue escribiendo eventos en los canales del sistema y de la aplicación, para que los consumidores heredados sigan consumiendo los eventos. Para realizar este trabajo, los identificadores de recursos para las cadenas de mensaje definidas en el manifiesto deben ser los mismos que los identificadores de eventos. Sin embargo, el compilador de mensajes asigna automáticamente identificadores de recursos a las cadenas de mensaje. Para invalidar el compilador, utilice la tabla de mensajes y establezca el atributo de valor en el identificador de eventos y el atributo de mensaje para hacer referencia a una cadena en la tabla de cadenas en la sección de localización del manifiesto.</li><li>Si desea identificar más de 16 proveedores, debe incluir la tabla de mensajes que los proveedores decimoséptima y on deben usar para asignar valores de recursos para las cadenas de mensaje que definen. Si el proveedor hace referencia a cadenas de mensaje que se definen entre el 1 y el 16, no se incluyen esas cadenas de mensaje en la tabla de mensajes.</li></ul>|
-| [**presta**](eventmanifestschema-provider-eventstype-element.md) | [**ProviderType**](eventmanifestschema-providertype-complextype.md) | Una lista de proveedores que desea definir. |
+| messageTable | | Define una lista de cadenas de mensaje. No debe usar una tabla de mensajes excepto en los siguientes casos en los que debe definir una tabla de mensajes para asignar explícitamente números de recursos a cadenas de mensaje. <ul><li>Va a migrar desde un archivo de texto de mensaje (.mc) a un manifiesto, pero todavía está escribiendo eventos en los canales de la aplicación y del sistema, para que los consumidores heredados sigan consumiendo los eventos. Para que esto funcione, los identificadores de recursos para las cadenas de mensaje definidas en el manifiesto deben ser los mismos que los identificadores de evento. Sin embargo, el compilador de mensajes asigna automáticamente identificadores de recursos a las cadenas de mensaje. Para invalidar el compilador, use la tabla de mensajes y establezca el atributo value en el identificador de evento y el atributo message para hacer referencia a una cadena en la tabla de cadenas de la sección de localización del manifiesto.</li><li>Si desea identificar más de 16 proveedores, debe incluir la tabla de mensajes que el y los proveedores deben usar para asignar valores de recursos para las cadenas de mensaje que definen. Si el proveedor hace referencia a cadenas de mensaje definidas por los proveedores del 1 al 16, no se incluyen esas cadenas de mensaje en la tabla de mensajes.</li></ul>|
+| [**Proveedor**](eventmanifestschema-provider-eventstype-element.md) | [**ProviderType**](eventmanifestschema-providertype-complextype.md) | Lista de proveedores que desea definir. |
 
 ## <a name="attributes"></a>Atributos
 
 | Nombre    | Tipo                                                             | Descripción                                                                            |
 |---------|------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | message | [**strTableRef**](eventmanifestschema-strtableref-simpletype.md) | Referencia a la cadena localizada en la tabla de cadenas.                               |
-| mId     | xs:string                                                        | No se utiliza.                                                                              |
-| símbolo  | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | Nombre simbólico que desea que cree el compilador de mensajes para esta cadena de mensaje.|
+| mId     | xs:string                                                        | No se usa.                                                                              |
+| símbolo  | [**CSymbolType**](eventmanifestschema-csymboltype-simpletype.md) | Nombre simbólico que desea que el compilador de mensajes cree para esta cadena de mensaje.|
 | value   | [**UInt32Type**](eventmanifestschema-hexint32type-simpletype.md) | Número que se va a usar como identificador de mensaje para este mensaje.                          |
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El límite práctico del número de proveedores que puede definir en un manifiesto es de 16 proveedores. Si especifica más de 16 proveedores, debe usar una tabla de mensajes para asignar explícitamente los números de recursos a las cadenas de mensaje a las que hace referencia el proveedor. Para obtener más información, vea el elemento message anterior.
+El límite práctico del número de proveedores que puede definir en un manifiesto es de 16 proveedores. Si especifica más de 16 proveedores, debe usar una tabla de mensajes para asignar explícitamente números de recursos a las cadenas de mensaje a las que hace referencia el proveedor. Para obtener más información, vea el elemento de mensaje anterior.
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Value |
 |--------------------------|-------------------------------------------|
-| Cliente mínimo compatible | Solo aplicaciones de escritorio de Windows Vista \[\]       |
-| Servidor mínimo compatible | Solo aplicaciones de escritorio de Windows Server 2008 \[\] |
+| Cliente mínimo compatible | Windows Solo \[ aplicaciones de escritorio de Vista\]       |
+| Servidor mínimo compatible | Windows Solo aplicaciones de escritorio de Server 2008 \[\] |

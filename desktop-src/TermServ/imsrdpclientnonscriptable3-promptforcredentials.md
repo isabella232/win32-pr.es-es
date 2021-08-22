@@ -1,26 +1,26 @@
 ---
-title: Propiedad IMsRdpClientNonScriptable3 PromptForCredentials (Wuapi. h)
+title: Propiedad PromptForCredentials de IMsRdpClientNonScriptable3 (Wuapi.h)
 description: Especifica o recupera si el cuadro de diálogo solicitar credenciales está habilitado para la conexión.
 ms.assetid: 252ec5bd-bd52-40d4-ae48-b2c00c0720c0
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad PromptForCredentials
-- Propiedad PromptForCredentials Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable3, propiedad PromptForCredentials
-- Propiedad PromptForCredentials Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable4, propiedad PromptForCredentials
-- Propiedad PromptForCredentials Servicios de Escritorio remoto, interfaz IMsRdpClientNonScriptable5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientNonScriptable5, propiedad PromptForCredentials
-- Servicios de Escritorio remoto de la propiedad PromptForCredentials, objeto MsRdpClient5
-- Servicios de Escritorio remoto de objeto MsRdpClient5, propiedad PromptForCredentials
-- Servicios de Escritorio remoto de la propiedad PromptForCredentials, objeto MsRdpClient6
-- Servicios de Escritorio remoto de objeto MsRdpClient6, propiedad PromptForCredentials
-- Servicios de Escritorio remoto de la propiedad PromptForCredentials, objeto MsRdpClient7
-- Servicios de Escritorio remoto de objeto MsRdpClient7, propiedad PromptForCredentials
-- Servicios de Escritorio remoto de la propiedad PromptForCredentials, objeto MsRdpClient8
-- Servicios de Escritorio remoto de objeto MsRdpClient8, propiedad PromptForCredentials
-- Servicios de Escritorio remoto de la propiedad PromptForCredentials, objeto MsRdpClient9
-- Servicios de Escritorio remoto de objeto MsRdpClient9, propiedad PromptForCredentials
+- Propiedad PromptForCredentials Servicios de Escritorio remoto
+- Propiedad PromptForCredentials Servicios de Escritorio remoto interfaz , IMsRdpClientNonScriptable3
+- Interfaz IMsRdpClientNonScriptable3 Servicios de Escritorio remoto propiedad , PromptForCredentials
+- Propiedad PromptForCredentials Servicios de Escritorio remoto interfaz , IMsRdpClientNonScriptable4
+- Interfaz IMsRdpClientNonScriptable4 Servicios de Escritorio remoto , propiedad PromptForCredentials
+- Propiedad PromptForCredentials Servicios de Escritorio remoto interfaz , IMsRdpClientNonScriptable5
+- Interfaz IMsRdpClientNonScriptable5 Servicios de Escritorio remoto , propiedad PromptForCredentials
+- Propiedad PromptForCredentials Servicios de Escritorio remoto , objeto MsRdpClient5
+- Objeto MsRdpClient5 Servicios de Escritorio remoto , propiedad PromptForCredentials
+- Propiedad PromptForCredentials Servicios de Escritorio remoto , objeto MsRdpClient6
+- Objeto MsRdpClient6 Servicios de Escritorio remoto , propiedad PromptForCredentials
+- Propiedad PromptForCredentials Servicios de Escritorio remoto , objeto MsRdpClient7
+- Objeto MsRdpClient7 Servicios de Escritorio remoto , propiedad PromptForCredentials
+- Propiedad PromptForCredentials Servicios de Escritorio remoto , objeto MsRdpClient8
+- Objeto MsRdpClient8 Servicios de Escritorio remoto , propiedad PromptForCredentials
+- Propiedad PromptForCredentials Servicios de Escritorio remoto , objeto MsRdpClient9
+- Objeto MsRdpClient9 Servicios de Escritorio remoto , propiedad PromptForCredentials
 topic_type:
 - apiref
 api_name:
@@ -44,20 +44,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62f913937c9a2ff01d4aabeaba48dcbdc8ddb21d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fcfb206e8479892b5c8e2e544d3c660c2dcfbd76c6dfe3c66f382c78c734e9bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001134"
 ---
-# <a name="imsrdpclientnonscriptable3promptforcredentials-property"></a>IMsRdpClientNonScriptable3::P propiedad romptForCredentials
+# <a name="imsrdpclientnonscriptable3promptforcredentials-property"></a>IMsRdpClientNonScriptable3::P romptForCredentials
 
 Especifica o recupera si el cuadro de diálogo solicitar credenciales está habilitado para la conexión.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -86,7 +86,7 @@ Especifica si el cuadro de diálogo solicitar credenciales está habilitado para
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                      |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                |
-| Encabezado<br/>                   | <dl> <dt>Wuapi. h</dt> </dl>            |
+| Header<br/>                   | <dl> <dt>Wuapi.h</dt> </dl>            |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>        |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>        |
 | IID<br/>                      | IID \_ IMsRdpClientNonScriptable3 se define como b3378d90-0728-45c7-8ed7-b6159fb92219<br/> |

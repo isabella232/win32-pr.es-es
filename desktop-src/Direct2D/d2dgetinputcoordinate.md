@@ -1,6 +1,6 @@
 ---
-title: Función D2DGetInputCoordinate (D2d1effecthelpers. h)
-description: Devuelve el valor de la TEXCOORDN de entrada. Solo está disponible para las entradas complejas.
+title: Función D2DGetInputCoordinate (D2d1effecthelpers.h)
+description: Devuelve el valor de la entrada TEXASCOORDN. Solo está disponible para entradas complejas.
 ms.assetid: 60125E23-53B3-45ED-89FE-684E79004F6B
 keywords:
 - Función D2DGetInputCoordinate Direct2D
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5d9ee759de12bb8b017d582026dd5b5ca8c3fb3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5a3fe0d825dea70c8e5211b8c13f1e850fa513670bbc93de98f1f8e2b87ef046
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075299"
 ---
-# <a name="d2dgetinputcoordinate-function"></a>D2DGetInputCoordinate función)
+# <a name="d2dgetinputcoordinate-function"></a>Función D2DGetInputCoordinate
 
-Devuelve el valor de la TEXCOORDN de entrada. Solo está disponible para las entradas complejas.
+Devuelve el valor de la entrada TEXASCOORDN. Disponible solo para entradas complejas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,7 +37,7 @@ float4 WINAPI D2DGetInputCoordinate(
 
 <dl> <dt>
 
-*N* \[ in\]
+*N* \[ en\]
 </dt> <dd>
 
 Número de entrada.
@@ -46,11 +46,11 @@ Número de entrada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve una **FLOAT4**, en el formato TEXCOORDN.
+La función devuelve **un valor float4**, con el formato TEXCOORDN.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La coordenada devuelta por esta función está en el espacio textura. Un sombreador no debe tomar ninguna dependencia sobre cómo se calcula este valor. Solo debe usarlo para muestrear la entrada del sombreador de píxeles. Para obtener más información, vea [Agregar un sombreador de píxeles a una transformación personalizada](./custom-effects.md#adding-a-pixel-shader-to-a-custom-transform).
+La coordenada devuelta por esta función está en el espacio de textura. Un sombreador no debe tener dependencias de cómo se calcula este valor. Solo se debe usar para muestrear la entrada del sombreador de píxeles. Para obtener más información, vea [Agregar un sombreador de píxeles a una transformación personalizada.](./custom-effects.md#adding-a-pixel-shader-to-a-custom-transform)
 
 En el ejemplo siguiente se muestra la función utilizada para un efecto de mapa de desplazamiento.
 
@@ -86,7 +86,7 @@ D2D_PS_ENTRY(DisplacementMapBilinear)
 [Vinculación del sombreador de efectos](effect-shader-linking.md)
 </dt> <dt>
 
-[Aplicaciones auxiliares de HLSL](hlsl-helpers.md)
+[Asistentes hlsl](hlsl-helpers.md)
 </dt> </dl>
 
  

@@ -1,15 +1,15 @@
 ---
-description: Este artículo contiene tablas de frecuencia para la optimización internacional de televisión análoga para Italia. Los índices de frecuencia no son adecuados para los números de canal.
+description: Este artículo contiene tablas de frecuencia para la optimización de televisión análoga internacional para Italia. Los índices de frecuencia no son adecuados para los números de canal.
 ms.assetid: 955fb828-4290-4e60-a5db-d3f243b86d8d
 title: Italia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1e74092318cfbc889f9173685176d48d6b72fc0
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: 3f10e7b6bad33e092da60877116c9306d6b9c2594f128aff77b0045847689816
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952504"
 ---
 # <a name="italy"></a>Italia
 
@@ -20,7 +20,7 @@ Los índices de frecuencia de las tablas de Italia no son adecuados para su uso 
 -   [Windows 7 y versiones posteriores](#windows-7-and-later)
     -   [Asignaciones de difusión de Italia](#italy-broadcast-assignments)
     -   [Asignaciones de cable de Italia](#italy-cable-assignments)
--   [Asignaciones de canales anteriores](#earlier-channel-assignments)
+-   [Asignaciones de canal anteriores](#earlier-channel-assignments)
     -   [Asignaciones de difusión de Italia](#italy-broadcast-assignments)
     -   [Asignaciones de cable de Italia](#italy-cable-assignments)
 -   [Temas relacionados](#related-topics)
@@ -133,7 +133,7 @@ Los índices de frecuencia de las tablas de Italia no son adecuados para su uso 
        305250000L,      // 20 Not used
 ```
 
-## <a name="earlier-channel-assignments"></a>Asignaciones de canales anteriores
+## <a name="earlier-channel-assignments"></a>Asignaciones de canal anteriores
 
 ### <a name="italy-broadcast-assignments"></a>Asignaciones de difusión de Italia
 

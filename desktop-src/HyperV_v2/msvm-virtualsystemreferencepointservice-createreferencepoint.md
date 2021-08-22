@@ -1,7 +1,7 @@
 ---
 description: Crea un punto de referencia de un sistema virtual.
 ms.assetid: 9cc7665a-9562-4267-bcd0-3162e426fbad
-title: Método CreateReferencePoint de la clase Msvm_VirtualSystemReferencePointService
+title: Método CreateReferencePoint de la Msvm_VirtualSystemReferencePointService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 08d28970288ba62346894d758ebac5ac156962ff
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: fdcf4680ff10bdc8135fae4ec3bb9f81d53c26092e7196e73965ee4f4d87991f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105670070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014483"
 ---
-# <a name="createreferencepoint-method-of-the-msvm_virtualsystemreferencepointservice-class"></a>Método CreateReferencePoint de la \_ clase VirtualSystemReferencePointService de MSVM
+# <a name="createreferencepoint-method-of-the-msvm_virtualsystemreferencepointservice-class"></a>Método CreateReferencePoint de la clase \_ Msvm VirtualSystemReferencePointService
 
 Crea un punto de referencia de un sistema virtual.
 
@@ -43,21 +43,21 @@ uint32 CreateReferencePoint(
 
 <dl> <dt>
 
-*AffectedSystem* \[ de\]
+*AffectedSystem* \[ En\]
 </dt> <dd>
 
-Un [**MSVM \_ ComputerSystem**](msvm-computersystem.md) que hace referencia al sistema virtual afectado.
+[**Msvm \_ ComputerSystem que hace**](msvm-computersystem.md) referencia al sistema virtual afectado.
 
 </dd> <dt>
 
-*ReferencePointSettings* \[ de\]
+*ReferencePointSettings* \[ En\]
 </dt> <dd>
 
-Contiene la configuración del parámetro.
+Contiene la configuración de parámetros.
 
 </dd> <dt>
 
-*ReferencePointType* \[ de\]
+*ReferencePointType* \[ En\]
 </dt> <dd>
 
 Tipo de punto de referencia solicitado:
@@ -66,23 +66,23 @@ Tipo de punto de referencia solicitado:
 
 <span id="Log_based"></span><span id="log_based"></span><span id="LOG_BASED"></span>
 
-<span id="Log_based"></span><span id="log_based"></span><span id="LOG_BASED"></span>**Basado en el registro** (0)
+<span id="Log_based"></span><span id="log_based"></span><span id="LOG_BASED"></span>**Basado en registros** (0)
 
 
 </dt> <dd>
 
-Basado en el seguimiento del registro de réplica de Hyper-V.
+Basado en el seguimiento de registros de réplica de Hyper-V.
 
 </dd> <dt>
 
 <span id="RCT_based"></span><span id="rct_based"></span><span id="RCT_BASED"></span>
 
-<span id="RCT_based"></span><span id="rct_based"></span><span id="RCT_BASED"></span>**RCT basado** (1)
+<span id="RCT_based"></span><span id="rct_based"></span><span id="RCT_BASED"></span>**Basado en RCT** (1)
 
 
 </dt> <dd>
 
-Basado en Change Tracking resistente de los discos virtuales.
+Basado en la resistencia Change Tracking discos virtuales.
 
 </dd> </dl> </dd> <dt>
 
@@ -93,10 +93,10 @@ Punto de referencia del sistema virtual resultante
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación es de larga ejecución, opcionalmente se puede devolver un trabajo. En este caso, la instancia de la [**clase \_ MSVM VirtualSystemReferencePoint**](msvm-virtualsystemreferencepoint.md) que representa el nuevo punto de referencia del sistema virtual se presenta a través de la Asociación [**\_ AffectedJobElement CIM**](cim-affectedjobelement.md) con el valor de la propiedad **AffectedElement** que hace referencia a la nueva instancia de la clase **MSVM \_ VirtualSystemReferencePoint** que representa el punto de referencia del sistema virtual y el valor de **ElementEffects** establecido en 5 (Create).
+Si la operación es de larga duración, opcionalmente se puede devolver un trabajo. En este caso, la instancia de la clase [**\_ Msvm VirtualSystemReferencePoint**](msvm-virtualsystemreferencepoint.md) que representa el nuevo punto de referencia del sistema virtual se presenta a través de la asociación [**\_ AffectedJobElement**](cim-affectedjobelement.md) de CIM con el valor de la propiedad **AffectedElement** que hace referencia a la nueva instancia de la clase **\_ VirtualSystemReferencePoint de Msvm** que representa el punto de referencia del sistema virtual y el valor de **elementEffects** establecido en 5 (Crear).
 
 </dd> </dl>
 
@@ -115,7 +115,7 @@ Si se ejecuta correctamente, devuelve 0; de lo contrario, devuelve un error.
 **Error** (2)
 </dt> <dt>
 
-**Tiempo de espera** (3)
+**Tiempo de** espera (3)
 </dt> <dt>
 
 **Parámetro no válido** (4)
@@ -124,19 +124,19 @@ Si se ejecuta correctamente, devuelve 0; de lo contrario, devuelve un error.
 **Estado no válido** (5)
 </dt> <dt>
 
-**Tipo no válido** (6)
+**Tipo no** válido (6)
 </dt> <dt>
 
 **DMTF reservado** (..)
 </dt> <dt>
 
-**Parámetros de método comprobados: trabajo iniciado** (4096)
+**Parámetros de método activados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (de no.. 32767)
+**Método reservado** (4097..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -145,10 +145,10 @@ Si se ejecuta correctamente, devuelve 0; de lo contrario, devuelve un error.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -157,7 +157,7 @@ Si se ejecuta correctamente, devuelve 0; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
-[**MSVM \_ VirtualSystemReferencePointService**](msvm-virtualsystemreferencepointservice.md)
+[**Msvm \_ VirtualSystemReferencePointService**](msvm-virtualsystemreferencepointservice.md)
 </dt> </dl>
 
  

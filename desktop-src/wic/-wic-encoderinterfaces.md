@@ -1,69 +1,69 @@
 ---
-description: Interfaces del codificador
+description: Interfaces de codificador
 ms.assetid: 02365401-8648-4be1-a447-fabd2cb77355
-title: Interfaces del codificador
+title: Interfaces de codificador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5367a25f1a2a4caf486711f7569312a436f8f474
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d6169dcf55ffafe0bf4c006b45c173ecc7486555fb001456112f8f333a8ccf2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965133"
 ---
-# <a name="encoder-interfaces"></a>Interfaces del codificador
+# <a name="encoder-interfaces"></a>Interfaces de codificador
 
 
-En las tablas siguientes se muestran las interfaces implementadas por los codificadores de componentes de imágenes de Windows (WIC) y el diagrama de clases muestra la jerarquía de herencia.
+En las tablas siguientes se muestran las interfaces implementadas por los codificadores Windows Imaging Component (WIC) y el diagrama de clases muestra la jerarquía de herencia.
 
-Interfaces del codificador Container-Level
+Container-Level encoder interfaces
 
 
 
 | Interfaz                                                                                       | Responsabilidades                             | Implementación                                                             |
 |-------------------------------------------------------------------------------------------------|----------------------------------------------|----------------------------------------------------------------------------|
-| [IWICBitmapEncoder](-wic-imp-iwicbitmapencoder.md)                                             | Servicios de nivel de contenedor                     | Obligatorio                                                                   |
-| [IWICBitmapCodecProgressNotification](-wic-imp-iwicbitmapcodecprogressnotification-encoder.md) | Compatibilidad con la cancelación de notificación de progreso & | Recomendado                                                                |
-| [IWICMetadataBlockWriter](-wic-imp-iwicmetadatablockwriter.md)                                 | Servicios de serialización de metadatos              | Opcional (solo es necesario para los formatos que admiten metadatos de nivel de contenedor) |
+| [IWICBitmapEncoder](-wic-imp-iwicbitmapencoder.md)                                             | Servicios de nivel de contenedor                     | Requerido                                                                   |
+| [IWICBitmapCodecProgressNotification](-wic-imp-iwicbitmapcodecprogressnotification-encoder.md) | Notificación de progreso & de cancelación | Recomendado                                                                |
+| [IWICMetadataBlockWriter](-wic-imp-iwicmetadatablockwriter.md)                                 | Servicios de serialización de metadatos              | Opcional (solo se requiere para los formatos que admiten metadatos de nivel de contenedor) |
 
 
 
  
 
-Interfaces del codificador Frame-Level
+Frame-Level encoder interfaces
 
 
 
 | Interfaz                                                       | Responsabilidades                | Implementación |
 |-----------------------------------------------------------------|---------------------------------|----------------|
-| [IWICBitmapFrameEncode](-wic-imp-iwicbitmapframeencode.md)     | Servicios de nivel de marco            | Obligatorio       |
-| [IWICMetadataBlockWriter](-wic-imp-iwicmetadatablockwriter.md) | Servicios de serialización de metadatos | Obligatorio       |
+| [IWICBitmapFrameEncode](-wic-imp-iwicbitmapframeencode.md)     | Servicios de nivel de marco            | Requerido       |
+| [IWICMetadataBlockWriter](-wic-imp-iwicmetadatablockwriter.md) | Servicios de serialización de metadatos | Requerido       |
 
 
 
  
 
-![jerarquía de herencia de la interfaz del codificador WIC](graphics/wicencoderinterfaces.png)
+![Jerarquía de herencia de la interfaz del codificador wic](graphics/wicencoderinterfaces.png)
 
-Observará que las interfaces del codificador son prácticamente imágenes reflejadas de las interfaces del descodificador y que la mayoría de los métodos de estas interfaces se corresponden con los métodos de las interfaces del descodificador relacionadas. Ahora que está familiarizado con la implementación de un descodificador habilitado para WIC, la implementación de un codificador habilitado para WIC también resultará familiar.
+Observará que las interfaces del codificador son imágenes casi reflejadas de las interfaces de descodificador y que la mayoría de los métodos de estas interfaces se corresponden con los métodos de las interfaces de descodificador relacionadas. Ahora que está familiarizado con la implementación de un descodificador habilitado para WIC, la implementación de un codificador habilitado para WIC también le parecerá familiar.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Implementación de un codificador WIC-Enabled](-wic-implementingwicencoder.md)
+[Implementación de un WIC-Enabled encoder](-wic-implementingwicencoder.md)
 </dt> <dt>
 
 [Implementación de IWICBitmapEncoder](-wic-imp-iwicbitmapencoder.md)
 </dt> <dt>
 
-[Cómo escribir un códec de WIC-Enabled](-wic-howtowriteacodec.md)
+[Cómo escribir un códec WIC-Enabled datos](-wic-howtowriteacodec.md)
 </dt> <dt>
 
-[Información general sobre componentes de Windows Imaging](-wic-about-windows-imaging-codec.md)
+[Windows Información general sobre componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
 </dt> </dl>
 
  

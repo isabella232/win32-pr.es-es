@@ -1,46 +1,46 @@
 ---
-description: Introducción a los servicios de edición de DirectShow
+description: Introducción a DirectShow Editing Services
 ms.assetid: 247c4ba9-53c1-46ed-83ef-a454351920e3
-title: Introducción a los servicios de edición de DirectShow
+title: Introducción a DirectShow Editing Services
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c75d9cf22eba81ebb9794310f63983b991bcf22
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6d12470b45e0b39c32c983176f07444a5136b9e97b99cc5be142974d05178f58
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104494963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952554"
 ---
-# <a name="introduction-to-directshow-editing-services"></a>Introducción a los servicios de edición de DirectShow
+# <a name="introduction-to-directshow-editing-services"></a>Introducción a DirectShow Editing Services
 
 \[Esta API no se admite y puede modificarse o no estar disponible en el futuro.\]
 
-El núcleo de DirectShow es una arquitectura eficaz para administrar los medios de streaming. Una aplicación puede utilizarla para reproducir contenido multimedia creado en una amplia variedad de formatos, sin que el desarrollador tenga que preocuparse por la compresión de archivos y otros detalles tediosos. Sin embargo, antes de los [servicios de edición de DirectShow](directshow-editing-services.md) (des), DirectShow carecía de la flexibilidad necesaria para la edición no lineal.
+El núcleo de DirectShow es una arquitectura eficaz para controlar los medios de streaming. Una aplicación puede usarla para reproducir contenido multimedia escrito en una amplia variedad de formatos, sin que el desarrollador tenga que preocuparse por la compresión de archivos y otros detalles tediosos. Antes de [DirectShow Editing Services](directshow-editing-services.md) (DES), sin embargo, DirectShow faltaba la flexibilidad necesaria para la edición no lineal.
 
-Por ejemplo, supongamos que desea crear una secuencia de vídeo compuesta por 4 segundos desde el origen A, seguido de 10 segundos del origen B y de que termina con 5 segundos a partir del código fuente C. Podría hacerlo con bastante facilidad con solo la API de DirectShow básica.
+Por ejemplo, supongamos que quiere crear una secuencia de vídeo que consta de 4 segundos del origen A, seguido de 10 segundos del origen B y que termina en 5 segundos desde el origen C. Esto se puede lograr con bastante facilidad con solo la API de DirectShow principal.
 
-Pero, ¿qué ocurre si decidió que el origen C debe aparecer antes que el origen B, no después de; que la secuencia debe usar 8 segundos del origen A, no 4; y que todo el entorno de producción necesitaba una pista de audio independiente jugando en segundo plano. Incluso los cambios menores como estos podrían ser difíciles de implementar. Pero el escenario que se acaba de describir es un proyecto de edición trivial en DES: puede hacerlo con una serie de llamadas a métodos.
+Pero ¿qué ocurre si decide que el origen C debe ir antes que el origen B, no después; que la secuencia debe usar 8 segundos desde el origen A, no 4; ¿Y que toda la producción necesitaba una pista de audio independiente reproduciendo en segundo plano? Incluso los cambios menores, como estos, podrían ser difíciles de implementar. Pero el escenario que se acaba de describir es un proyecto de edición trivial en DES: puede hacerlo con una serie de llamadas a métodos.
 
 Estas son algunas de las características que DES aporta a DirectShow:
 
--   Modelo de escala de tiempo que organiza las pistas de audio y vídeo en capas anidadas, lo que facilita la manipulación de la producción final.
+-   Un modelo de escala de tiempo que organiza las pistas de audio y vídeo en capas anidadas, lo que facilita la manipulación de la producción final.
 -   La capacidad de obtener una vista previa de un proyecto de vídeo sobre la marcha
--   Persistencia del proyecto a través de un formato basado en XML
--   Compatibilidad con efectos de audio y vídeo, así como transiciones entre pistas de vídeo (como transiciones y barridos)
--   Más de 100 barridos estándar, tal y como se define en la sociedad de los ingenieros de películas y TV (SMPTE)
--   Incrustación basada en matiz, luminancia, valor RGB o valor alfa
--   Conversión automática de velocidades de fotogramas y tasas de muestreo de audio, lo que permite a una producción usar orígenes heterogéneos
--   Cambiar el tamaño o recortar el vídeo
+-   Project persistencia a través de un formato basado en XML
+-   Compatibilidad con efectos de audio y vídeo, así como transiciones entre pistas de vídeo (como atenuaciones y borrados)
+-   Más de 100 borrados estándar, tal como se define en la Society of Motion Picture and Tv Engineers (SMPTE)
+-   Clave basada en matiz, luminosidad, valor RGB o valor alfa
+-   Conversión automática de velocidades de fotogramas y frecuencias de muestreo de audio, lo que permite que una producción use orígenes heterogéneos
+-   Redimensionamiento o recorte de vídeo
 
 Limitaciones:
 
--   DES no es compatible con orígenes de vídeo MPEG-2 o H. 264.
+-   DES no admite orígenes de vídeo MPEG-2 o H.264.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Servicios de edición de DirectShow](directshow-editing-services.md)
+[DirectShow Servicios de edición](directshow-editing-services.md)
 </dt> </dl>
 
  

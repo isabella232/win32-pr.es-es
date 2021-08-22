@@ -1,7 +1,7 @@
 ---
-description: Cancela las suscripciones de las notificaciones de cambio de estado del servicio.
+description: Cancela la suscripción a las notificaciones de cambio de estado del servicio.
 ms.assetid: 8c04ebf7-4d61-4617-b120-dbe26b2f9ad2
-title: Función UnsubscribeServiceChangeNotifications (Winsvcp. h)
+title: Función UnsubscribeServiceChangeNotifications (Winsvcp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_location:
 - API-MS-Win-Service-Private-L1-1-1.dll
 - Advapi32.dll
 - API-MS-Win-Service-Private-L1-1-2.dll
-ms.openlocfilehash: ebecfb133172c9c7a56ed6d28f7ad6b395d8afce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e37f2b786d32ab9f42738e6a8522c6f4593aa6b21a490a6fdd969233b4a6dff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118888174"
 ---
-# <a name="unsubscribeservicechangenotifications-function"></a>UnsubscribeServiceChangeNotifications función)
+# <a name="unsubscribeservicechangenotifications-function"></a>Función UnsubscribeServiceChangeNotifications
 
-Cancela las suscripciones de las notificaciones de cambio de estado del servicio. Esta función usa las suscripciones devueltas por [**SubscribeServiceChangeNotifications**](subscribeservicechangenotifications.md).
+Cancela la suscripción a las notificaciones de cambio de estado del servicio. Esta función usa las suscripciones devueltas [**por SubscribeServiceChangeNotifications**](subscribeservicechangenotifications.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,10 +43,10 @@ Cancela las suscripciones de las notificaciones de cambio de estado del servicio
 
 <dl> <dt>
 
-*pSubscription* \[ de\]
+*pSubscription* \[ En\]
 </dt> <dd>
 
-Un puntero a la suscripción a la que se va a cancelar la suscripción.
+Puntero a la suscripción a la que se va a cancelar la suscripción.
 
 </dd> </dl>
 
@@ -54,24 +54,24 @@ Un puntero a la suscripción a la que se va a cancelar la suscripción.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**UnsubscribeServiceChangeNotifications** no devuelve hasta que se completen las devoluciones de llamada en curso pendientes. Por lo tanto, no se puede llamar a **UnsubscribeServiceChangeNotifications** dentro de la devolución de llamada sin que se produzca un interbloqueo.
+**UnsubscribeServiceChangeNotifications** no se devuelve hasta que se completan las devoluciones de llamada pendientes en proceso. Por lo tanto, no puede llamar **a UnsubscribeServiceChangeNotifications** dentro de la devolución de llamada sin provocar un interbloqueo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                   |
-| Encabezado<br/>                   | <dl> <dt>Winsvcp. h</dt> </dl>   |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                   |
+| Header<br/>                   | <dl> <dt>Winsvcp.h</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>SecHost.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

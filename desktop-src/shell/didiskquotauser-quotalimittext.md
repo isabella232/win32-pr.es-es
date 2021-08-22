@@ -1,6 +1,6 @@
 ---
 description: Obtiene el límite de cuota actual del usuario como una cadena de texto.
-title: Propiedad DIDiskQuotaUser.QuotaLimitText
+title: DiDiskQuotaUser.QuotaLimitText, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 41f74c02-b673-46d4-87f1-4dfa040a2f06
-ms.openlocfilehash: 166e35b375c46942a082a39c7656cd1f2c13e8a3
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: a090083330c3c725e6dc42e61dc29637060e41aa69e3f0246bea4a2ea97b9444
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032803"
 ---
-# <a name="didiskquotauserquotalimittext-property"></a>Propiedad DIDiskQuotaUser.QuotaLimitText
+# <a name="didiskquotauserquotalimittext-property"></a>DiDiskQuotaUser.QuotaLimitText, propiedad
 
 Obtiene el límite de cuota actual [**del usuario**](diskquotacontrol-object.md) como una cadena de texto.
 
@@ -43,7 +43,7 @@ Valor de cadena que contiene el límite de cuota actual del usuario.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                    |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
@@ -51,7 +51,7 @@ Valor de cadena que contiene el límite de cuota actual del usuario.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

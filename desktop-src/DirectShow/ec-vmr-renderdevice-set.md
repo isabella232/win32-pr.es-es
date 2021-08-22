@@ -1,19 +1,19 @@
 ---
-description: Se envía cuando VMR ha seleccionado su mecanismo de representación.
+description: Se envía cuando vmr ha seleccionado su mecanismo de representación.
 ms.assetid: 815d1254-c6e3-4a6c-ba4a-bf3da7d35d1f
-title: EC_VMR_RENDERDEVICE_SET (DShow. h)
+title: EC_VMR_RENDERDEVICE_SET (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9855b23e25a2c3b955c1499b9505efffcc5637e8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fc2c8bef78156c4438e1e4e7aea45326562002ed8f4a3786377d7ee43a00a57c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015863"
 ---
-# <a name="ec_vmr_renderdevice_set"></a>EC \_ VMR \_ RENDERDEVICE \_ set
+# <a name="ec_vmr_renderdevice_set"></a>EC \_ VMR \_ RENDERDEVICE \_ SET
 
-Se envía cuando VMR ha seleccionado su mecanismo de representación.
+Se envía cuando vmr ha seleccionado su mecanismo de representación.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -26,11 +26,11 @@ Puede ser uno de los siguientes valores:
 
 
 
-| Value                        | Significado                                                  |
+| Valor                        | Significado                                                  |
 |------------------------------|----------------------------------------------------------|
-| superposición de dispositivo de representación de VMR \_ \_ \_ | La VMR se representará en la superficie de superposición (solo VMR-7). |
-| \_VIDMEM de \_ dispositivo de representación VMR \_  | La VMR se representará en la memoria de vídeo.                     |
-| \_SYSMEM de \_ dispositivo de representación VMR \_  | La VMR se representará en la memoria del sistema (solo VMR-7).       |
+| SUPERPOSICIÓN DEL DISPOSITIVO \_ DE REPRESENTACIÓN \_ DE VMR \_ | La VMR se representará en la superficie superpuesta (solo VMR-7). |
+| VMR \_ RENDER \_ DEVICE \_ VIDMEM  | VmR se representará en la memoria de vídeo.                     |
+| VMR \_ RENDER \_ DEVICE \_ SYSMEM  | La VMR se representará en la memoria del sistema (solo VMR-7).       |
 
 
 
@@ -41,13 +41,13 @@ Puede ser uno de los siguientes valores:
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este evento lo envían los eventos VMR-7 y VMR-9 y se reenvían a las aplicaciones. Tenga en cuenta que VMR-9 solo admite destinos de representación de memoria de vídeo.
+VmR-7 y VMR-9 envían este evento y se reenvía a las aplicaciones. Tenga en cuenta que VMR-9 solo admite destinos de representación de memoria de vídeo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ Este evento lo envían los eventos VMR-7 y VMR-9 y se reenvían a las aplicacion
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 

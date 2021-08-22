@@ -4,19 +4,19 @@ ms.assetid: bbfee966-121b-4b53-9e3e-08a747559da0
 title: Administración y mantenimiento de imágenes de implementación (DISM)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 234d16233927dca2d5dba296fd33fb64135f691e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0b6da1cc8ec3e77a6c63df8e44917cb5f3474ae8e7a5e34b58f49255fa34b5b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053183"
 ---
 # <a name="deployment-image-servicing-and-management-dism"></a>Administración y mantenimiento de imágenes de implementación (DISM)
 
 ## <a name="affected-platforms"></a>Plataformas afectadas
 
-**Clientes:** Windows Vista SP1 y \| versiones posteriores de Windows 7  
-**Servidores:** Windows Server 2008 RTM y \| versiones posteriores de Windows Server 2008 R2  
+**Clientes:** Windows Vista SP1 y versiones \| posteriores Windows 7  
+**Servidores:** Windows Server 2008 RTM y versiones posteriores \| Windows Server 2008 R2  
 
 
 ## <a name="description"></a>Descripción
@@ -29,7 +29,7 @@ DISM incluye una corrección de compatibilidad (shim) para Windows Vista SP1 y v
 
 DISM es transparente para los usuarios finales de pkgmgr en cualquiera de las plataformas admitidas. Sin embargo, si una aplicación llama a PEImg o IntlConfg desde Windows 7, se producirá un error en la llamada.
 
-Actualice los scripts que llaman a pkgmgr, PEImg o IntlConfg para llamar a DISM en su lugar. Es importante incluir la actualización de scripts de pkgmgr en este esfuerzo, ya que la corrección de compatibilidad con versiones anteriores de pkgmgr se quitará en versiones futuras de los sistemas operativos Windows.
+Actualice los scripts que llaman a pkgmgr, PEImg o IntlConfg para llamar a DISM en su lugar. Es importante incluir la actualización de scripts de pkgmgr en este esfuerzo, ya que la corrección de compatibilidad con versiones anteriores de pkgmgr se quitará en versiones futuras de los sistemas operativos Windows pkgmgr.
 
 Asegúrese de que las llamadas a DISM han reemplazado las llamadas a pkgmgr, PEImg e IntlConfg, y que la operación se ejecuta correctamente.
 

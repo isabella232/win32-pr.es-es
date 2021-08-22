@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de LocalizationType
-description: Define un grupo de recursos localizados al que se hace referencia en el manifiesto. | Tipo complejo de LocalizationType
+title: Tipo complejo LocalizationType
+description: Define un grupo de recursos localizados a los que se hace referencia en el manifiesto. | Tipo complejo LocalizationType
 ms.assetid: fecab4e0-7136-4b13-8c24-bebbad0812e6
 keywords:
-- LocalizationType tipo complejo EventLog
+- Registro de eventos de tipo complejo LocalizationType
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cbb6911ea606ea30d8e656f20b4c566d4f6d0e08
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 09a596ff981944943c193fb158f14aa04eafb0b0b3d4df660d2034c5b5d281be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105698058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055954"
 ---
-# <a name="localizationtype-complex-type"></a>Tipo complejo de LocalizationType
+# <a name="localizationtype-complex-type"></a>Tipo complejo LocalizationType
 
-Define un grupo de recursos localizados al que se hace referencia en el manifiesto.
+Define un grupo de recursos localizados a los que se hace referencia en el manifiesto.
 
 ``` syntax
 <xs:complexType name="LocalizationType">
@@ -74,8 +74,8 @@ Define un grupo de recursos localizados al que se hace referencia en el manifies
 
 | Elemento                                                                         | Tipo                                                                       | Descripción                                                                                                         |
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| [**recursos**](eventmanifestschema-resources-localizationtype-element.md)     |                                                                            | Define un grupo de tablas de cadenas que contienen las cadenas localizadas a las que se hace referencia en el manifiesto.<br/> |
-| [**stringTable**](eventmanifestschema-stringtable-localizationtype-element.md) | [**StringTableType**](eventmanifestschema-stringtabletype-complextype.md) | Define una lista de cadenas traducidas a las que se puede hacer referencia en el manifiesto.<br/>                             |
+| [**Recursos**](eventmanifestschema-resources-localizationtype-element.md)     |                                                                            | Define un grupo de tablas de cadenas que contienen las cadenas localizadas a las que se hace referencia en el manifiesto.<br/> |
+| [**stringTable**](eventmanifestschema-stringtable-localizationtype-element.md) | [**StringTableType**](eventmanifestschema-stringtabletype-complextype.md) | Define una lista de cadenas localizadas a las que puede hacer referencia en el manifiesto.<br/>                             |
 
 
 
@@ -85,8 +85,8 @@ Define un grupo de recursos localizados al que se hace referencia en el manifies
 
 | Nombre            | Tipo   | Descripción                                                                                                                                            |
 |-----------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| culture         | string | Un nombre de idioma que identifica la referencia cultural de las cadenas localizadas en la tabla de cadenas. Por ejemplo, "en-US" para inglés (Estados Unidos).<br/> |
-| fallbackCulture | string | No se utiliza.<br/>                                                                                                                                   |
+| referencia cultural         | string | Nombre de idioma que identifica la referencia cultural de las cadenas localizadas en la tabla de cadenas. Por ejemplo, "en-US" para inglés (Estados Unidos).<br/> |
+| fallbackCulture | string | No se usa.<br/>                                                                                                                                   |
 
 
 
@@ -94,10 +94,10 @@ Define un grupo de recursos localizados al que se hace referencia en el manifies
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

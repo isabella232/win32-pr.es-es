@@ -1,7 +1,7 @@
 ---
-description: Recupera el número de proveedores de servicios de cifrado (CSP).
+description: Recupera el número de proveedores de servicios criptográficos (CSP).
 ms.assetid: 7e0c1613-85ad-4f25-837e-d7b0f11e654a
-title: 'ISCrdEnr:: CSPCount (propiedad)'
+title: Propiedad ISCrdEnr::CSPCount
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: b2aea22db3c804ae4808996002b68efdcb6cf9a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ae2a25bbdb6efb3eff9bd0a94049e0c5674e5ba7c32e3939500097f19959037
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005243"
 ---
-# <a name="iscrdenrcspcount-property"></a>ISCrdEnr:: CSPCount (propiedad)
+# <a name="iscrdenrcspcount-property"></a>Propiedad ISCrdEnr::CSPCount
 
-La propiedad **CSPCount** recupera el número de [*proveedores de servicios de cifrado*](../secgloss/c-gly.md) (CSP).
+La **propiedad CSPCount** recupera el número de proveedores [*de servicios criptográficos*](../secgloss/c-gly.md) (CSP).
 
 Esta propiedad es de solo lectura.
 
@@ -45,9 +45,9 @@ Número de CSP.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Si el método se ejecuta correctamente, el método devuelve S \_ correcto.
+Si el método se realiza correctamente, el método devuelve S \_ OK.
 
-Si se produce un error en el método, devuelve un valor **HRESULT** que indica el error. Para obtener una lista de los códigos de error comunes, vea [Valores HRESULT comunes](common-hresult-values.md).
+Si se produce un error en el método , devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,9 +56,9 @@ Si se produce un error en el método, devuelve un valor **HRESULT** que indica e
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Archivo DLL<br/>                      | <dl> <dt>Scrdenrl.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCrdEnr se define como 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
+| IID<br/>                      | IID ISCrdEnr se define como \_ 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
 
 
 
