@@ -1,19 +1,19 @@
 ---
 title: " undef"
-description: La Directiva \ UNDEF quita la definición actual del nombre especificado. Todas las repeticiones posteriores del nombre se procesan sin reemplazo.
+description: La directiva \ undef quita la definición actual del nombre especificado. Todas las apariciones posteriores del nombre se procesan sin reemplazo.
 ms.assetid: c9a0b538-3030-4d39-bfc2-d158061967b6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a04b14eeea18a05795cd8ebbb94d81d0aead6a9d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3adf208ecca3f130aefc99de8d2926028f25bcd46be46d42e4cbf92e708fa0b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105714177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118473065"
 ---
 # <a name="undef"></a>\#undef
 
-La directiva **\# UNDEF** quita la definición actual del nombre especificado. Todas las repeticiones posteriores del nombre se procesan sin reemplazo.
+La **\# directiva undef** quita la definición actual del nombre especificado. Todas las apariciones posteriores del nombre se procesan sin reemplazo.
 
 ``` syntax
 #undef name
@@ -21,10 +21,10 @@ La directiva **\# UNDEF** quita la definición actual del nombre especificado. T
 
 <dl> <dt>
 
-<span id="name"></span><span id="NAME"></span>*Name*
+<span id="name"></span><span id="NAME"></span>*Nombre*
 </dt> <dd>
 
-Nombre que se va a quitar. Este valor es cualquier combinación de letras, dígitos y puntuación que sea válida para el preprocesador de C/C++.
+Nombre que se va a quitar. Este valor es cualquier combinación de letras, dígitos y signos de puntuación que sea válido para el preprocesador de C/C++.
 
 </dd> </dl>
 
@@ -44,9 +44,9 @@ En este ejemplo se quitan las definiciones de los nombres distintos de cero y US
 [Directivas de preprocesador](preprocessor-directives.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

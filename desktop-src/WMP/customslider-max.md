@@ -1,9 +1,9 @@
 ---
-title: CUSTOMSLIDER. Max
-description: El atributo Max especifica o recupera el valor máximo del intervalo definido por el control deslizante personalizado.
+title: CUSTOMSLIDER.max
+description: El atributo max especifica o recupera el valor máximo del intervalo definido por el control deslizante personalizado.
 ms.assetid: 2b788b13-d9a8-4cf6-9397-a2fc8d5d19e1
 keywords:
-- CUSTOMSLIDER. Max Windows Media Player
+- CUSTOMSLIDER.max Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 74db7672bc42d6e35885afecf7668a1b14ec6853
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4d8cfe4f3c9dbed7ed84b7f07e666fd17f9da4e43c591ce378918d5b3c0f5226
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118579723"
 ---
-# <a name="customslidermax"></a>CUSTOMSLIDER. Max
+# <a name="customslidermax"></a>CUSTOMSLIDER.max
 
-El atributo **Max** especifica o recupera el valor máximo del intervalo definido por el control deslizante personalizado.
+El **atributo** max especifica o recupera el valor máximo del intervalo definido por el control deslizante personalizado.
 
 ``` syntax
         elementID.max
@@ -29,34 +29,34 @@ El atributo **Max** especifica o recupera el valor máximo del intervalo definid
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura/escritura (**float**) con un valor predeterminado de 100.
+Este atributo es un  número de lectura/escritura **(float)** con un valor predeterminado de 100.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor de **Max** debe ser mayor que el de **min**.
+El valor de **max** debe ser mayor que el de **min.**
 
 ## <a name="examples"></a>Ejemplos
 
-Vea el atributo [positionImage](customslider-positionimage.md) para ver un ejemplo que ilustra cómo se usan los atributos del elemento **CUSTOMSLIDER** .
+Vea el [atributo positionImage](customslider-positionimage.md) para obtener un ejemplo que ilustra cómo se usan los atributos del **elemento CUSTOMSLIDER.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Elemento CUSTOMSLIDER**](customslider-element.md)
 </dt> <dt>
 
-[**CUSTOMSLIDER. min**](customslider-min.md)
+[**CUSTOMSLIDER.min**](customslider-min.md)
 </dt> </dl>
 
  

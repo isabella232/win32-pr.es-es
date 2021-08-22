@@ -1,11 +1,11 @@
 ---
-title: Error. clearErrorQueue (método)
-description: El método clearErrorQueue borra los errores de la cola de errores. | Error. clearErrorQueue (método)
+title: Método Error.clearErrorQueue
+description: El método clearErrorQueue borra los errores de la cola de errores. | Método Error.clearErrorQueue
 ms.assetid: 306f0700-88b1-4433-8abb-7d225e82060a
 keywords:
-- método clearErrorQueue de Windows Media Player
-- método clearErrorQueue Windows Media Player, clase error
-- Clase de error Windows Media Player, método clearErrorQueue
+- Método clearErrorQueue Reproductor de Windows Media
+- Método clearErrorQueue Reproductor de Windows Media , clase Error
+- Clase de error Reproductor de Windows Media método , clearErrorQueue
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b756708b8f0643f86489c26dd921e87c408be8f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5a7a9fb271cab684c1263db4f0c89655855fdcb341dae20d1a828150ab84b81b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118838019"
 ---
-# <a name="errorclearerrorqueue-method"></a>Error. clearErrorQueue (método)
+# <a name="errorclearerrorqueue-method"></a>Método Error.clearErrorQueue
 
-El método **clearErrorQueue** borra los errores de la cola de errores.
+El **método clearErrorQueue** borra los errores de la cola de errores.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,15 +44,15 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método es útil para borrar la cola de errores después de haber procesado una serie de errores.
+Este método es útil para borrar la cola de errores después de procesar una serie de errores.
 
-Debe establecer la *configuración*. **enableErrorDialogs** en false si elige mostrar mensajes de error personalizados.
+Debe establecer *Configuración*. **enableErrorDialogs en** false si decide mostrar mensajes de error personalizados.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se utiliza el *error*. **clearErrorQueue** en un controlador de eventos para vaciar la cola de errores después de que se muestren todas las descripciones de errores. El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se usa *error*. **clearErrorQueue en** un controlador de eventos para vaciar la cola de errores después de mostrar todas las descripciones de errores. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -83,9 +83,9 @@ Player.error.clearErrorQueue();
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

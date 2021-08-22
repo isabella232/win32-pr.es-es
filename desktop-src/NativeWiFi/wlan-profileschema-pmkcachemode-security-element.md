@@ -1,7 +1,7 @@
 ---
-description: Indica si se usará el almacenamiento en caché PMK.
+description: Indica si se usará el almacenamiento en caché de PMK.
 ms.assetid: 5650c893-6047-4e99-a2be-22722d6a809a
-title: Elemento PMKCacheMode (Security)
+title: Elemento PMKCacheMode (seguridad)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 609660d6f3161cbaaa5e0505daf9c6b9180b6c32
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23e32d7a658e41f80eb2a4d8d743afc2c96f7a5a1b4135e646374b98e6acac26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118619261"
 ---
-# <a name="pmkcachemode-security-element"></a>Elemento PMKCacheMode (Security)
+# <a name="pmkcachemode-security-element"></a>Elemento PMKCacheMode (seguridad)
 
-El elemento PMKCacheMode (Security) indica si se usará el almacenamiento en caché PMK. Este elemento solo es válido para redes definidas por WPA2. El almacenamiento en caché PMK se describe en la especificación [802.11 i](https://standards.ieee.org/findstds/standard/802.11i-2004.html) .
+El elemento PMKCacheMode (seguridad) indica si se usará el almacenamiento en caché de PMK. Este elemento solo es válido para redes definidas por WPA2. El almacenamiento en caché de PMK se describe en la [especificación 802.11i.](https://standards.ieee.org/findstds/standard/802.11i-2004.html)
 
-**Windows XP con SP3 y API de LAN inalámbrica para Windows XP con SP2:** Este elemento no se admite.
+Windows XP con SP3 y LAN API inalámbrica **para Windows XP con SP2:** No se admite este elemento.
 
 ``` syntax
 <xs:element name="PMKCacheMode"
@@ -44,7 +44,7 @@ El elemento PMKCacheMode (Security) indica si se usará el almacenamiento en cac
 </xs:element>
 ```
 
-El elemento se define mediante el elemento de [**seguridad**](wlan-profileschema-security-msm-element.md) .
+El elemento de seguridad define [**el**](wlan-profileschema-security-msm-element.md) elemento .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,8 +52,8 @@ El elemento se define mediante el elemento de [**seguridad**](wlan-profileschema
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -64,7 +64,7 @@ El elemento se define mediante el elemento de [**seguridad**](wlan-profileschema
 **Contexto de definición del elemento en el esquema**
 </dt> <dt>
 
-[**bursátil**](wlan-profileschema-security-msm-element.md)
+[**Seguridad**](wlan-profileschema-security-msm-element.md)
 </dt> <dt>
 
 **Posible elemento primario inmediato en la instancia de esquema**

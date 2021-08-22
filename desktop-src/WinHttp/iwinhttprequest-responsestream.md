@@ -1,7 +1,7 @@
 ---
-description: Recupera el cuerpo de la entidad de respuesta como una IStream.
+description: Recupera el cuerpo de la entidad de respuesta como IStream.
 ms.assetid: e12a9338-5e0c-4672-bbc6-31375b872e94
-title: 'IWinHttpRequest:: ResponseStream (propiedad)'
+title: Propiedad IWinHttpRequest::ResponseStream
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: ec9f497e687c52735784a5e3edad01905ac7a6a8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f29fad2ccfcac5cbca1c6ef13e0aeef5bdd0f4764e81dd14cabdfa58fd30fbde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278216"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118563223"
 ---
-# <a name="iwinhttprequestresponsestream-property"></a>IWinHttpRequest:: ResponseStream (propiedad)
+# <a name="iwinhttprequestresponsestream-property"></a>Propiedad IWinHttpRequest::ResponseStream
 
-La propiedad **ResponseStream** recupera el cuerpo de la entidad de respuesta como una [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream).
+La **propiedad ResponseStream** recupera el cuerpo de la entidad de respuesta como [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream).
 
 Esta propiedad es de solo lectura.
 
@@ -49,26 +49,26 @@ vtResponseStream = WinHttpRequest.ResponseStream
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**Variante** que recibe un puntero a una interfaz [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) que se puede consultar para una interfaz [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) . Esta secuencia devuelve los datos sin procesar recibidos directamente desde el servidor.
+Variante **que** recibe un puntero a una [**interfaz IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) que se puede consultar para una [**interfaz IStream.**](/windows/desktop/api/objidl/nn-objidl-istream) Esta secuencia devuelve los datos sin procesar tal como se reciben directamente desde el servidor.
 
 ## <a name="error-codes"></a>Códigos de error
 
-El valor devuelto es correcto si se ejecuta correctamente o un valor de error en caso contrario. **\_**
+El valor devuelto es **S \_ OK on** success o un valor de error en caso contrario.
 
-Será **E \_ pendiente** si la operación de [**envío**](iwinhttprequest-send.md) anterior no está completa.
+Será E **\_ PENDING si** la operación [**de envío**](iwinhttprequest-send.md) anterior no se ha completado.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Llame a [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) en el puntero devuelto para obtener un puntero a una interfaz [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream) . Esta propiedad devuelve los datos de respuesta como una **IStream**. Esta propiedad solo se puede invocar después de que se haya llamado al método [**send**](iwinhttprequest-send.md) .
+Llame [**a QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) en el puntero devuelto para obtener un puntero a una [**interfaz IStream.**](/windows/desktop/api/objidl/nn-objidl-istream) Esta propiedad devuelve los datos de respuesta como **IStream**. Esta propiedad solo se puede invocar después de llamar [**al**](iwinhttprequest-send.md) método Send.
 
 > [!Note]  
-> En Windows XP y Windows 2000, consulte la sección [requisitos de tiempo de ejecución](winhttp-start-page.md) de la página de inicio de winhttp.
+> Para Windows XP y Windows 2000, consulte la sección [Requisitos](winhttp-start-page.md) en tiempo de ejecución de la página de inicio de WinHTTP.
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y leer la respuesta como una [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream). Los datos de la **IStream** se escriben en el archivo Temp1.gif.
+En el ejemplo siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y leer la respuesta como [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream). Los datos de **IStream se** escriben en el archivo Temp1.gif.
 
 
 ```C++
@@ -287,18 +287,18 @@ int main(int argc, char* argv[])
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional con las \[ aplicaciones de escritorio de SP3 únicamente\]<br/>            |
-| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server con \[ solo aplicaciones de escritorio de SP3\]<br/>         |
-| Redistribuible<br/>          | WinHTTP 5,0 e Internet Explorer 5,01 o posterior en Windows XP y Windows 2000.<br/> |
-| IDL<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winhttp. lib</dt> </dl>     |
+| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>            |
+| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
+| Redistribuible<br/>          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | Archivo DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

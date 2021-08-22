@@ -1,9 +1,9 @@
 ---
-title: XTYP_ADVSTOP transacción (ddeml. h)
-description: Un cliente usa la \_ transacción XTYP ADVSTOP para finalizar un bucle de notificación con un servidor. Una función de devolución de llamada del servidor Intercambio dinámico de datos (DDE), DdeCallback, recibe esta transacción cuando un cliente especifica XTYP \_ ADVSTOP en la función DdeClientTransaction.
+title: XTYP_ADVSTOP transacción (Ddeml.h)
+description: Un cliente usa la transacción ADVSTOP de XTYP \_ para finalizar un bucle de asesoramiento con un servidor. Una datos dinámicos Exchange de devolución de llamada de servidor (DDE), DdeCallback, recibe esta transacción cuando un cliente especifica XTYP ADVSTOP en la función \_ DdeClientTransaction.
 ms.assetid: 67dfa463-6a44-43a5-93be-a39c19c87c1c
 keywords:
-- Intercambio de datos de transacciones XTYP_ADVSTOP
+- XTYP_ADVSTOP datos de transacción Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61292683377cd6c7243c3e41c5dbd9332a671163
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 37e81f1fe407186410e604a259f6e8039c074da039fc23b2f8a090c34ff58154
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105714601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118544774"
 ---
-# <a name="xtyp_advstop-transaction"></a>XTYP \_ ADVSTOP
+# <a name="xtyp_advstop-transaction"></a>Transacción \_ ADVSTOP de XTYP
 
-Un cliente usa la transacción **XTYP \_ ADVSTOP** para finalizar un bucle de notificación con un servidor. Una función de devolución de llamada del servidor Intercambio dinámico de datos (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe esta transacción cuando un cliente especifica **XTYP \_ ADVSTOP** en la función [**DdeClientTransaction**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction) .
+Un cliente usa la **transacción \_ ADVSTOP de XTYP** para finalizar un bucle de asesoramiento con un servidor. Una datos dinámicos Exchange de devolución de llamada de servidor (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe esta transacción cuando un cliente especifica **\_ XTYP ADVSTOP** en la función [**DdeClientTransaction.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeclienttransaction)
 
 
 ```C++
@@ -47,7 +47,7 @@ El tipo de transacción.
 *uFmt* 
 </dt> <dd>
 
-Formato de datos asociado al bucle de notificación que se va a finalizar.
+Formato de datos asociado al bucle de aviso que se va a finalizar.
 
 </dd> <dt>
 
@@ -75,41 +75,41 @@ Identificador del nombre del elemento.
 *hdata* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *dwData1* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> <dt>
 
 *dwData2* 
 </dt> <dd>
 
-No se utiliza.
+No se usa.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta transacción se filtra si la aplicación de servidor especificó la marca **CBF \_ FAIL \_ asesora** en la función [**DdeInitialize**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea) .
+Esta transacción se filtra si la aplicación de servidor especificó la **marca CBF \_ FAIL \_ ADVISES** en la [**función DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                   |
-| Encabezado<br/>                   | <dl> <dt>Ddeml. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ddeml.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -125,10 +125,10 @@ Esta transacción se filtra si la aplicación de servidor especificó la marca *
 [**DdePostAdvise**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Biblioteca de administración de Intercambio dinámico de datos](dynamic-data-exchange-management-library.md)
+[datos dinámicos Exchange management library](dynamic-data-exchange-management-library.md)
 </dt> </dl>
 
  

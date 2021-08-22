@@ -3,7 +3,7 @@ title: ClosedCaption.captioningID
 description: La propiedad captioningID especifica o recupera el nombre del elemento que muestra los subtítulos.
 ms.assetid: 99d4aae3-485f-4c86-9130-101b1ca968e9
 keywords:
-- ClosedCaption. captioningID Windows Media Player
+- ClosedCaption.captioningID Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: faadae626dd5ac0314c4140e3f9d82ab645ef9b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1da667e5479cc33312375920c1d573f0e2c19607b2399ff6f4fe34b130ca61e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698471"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118580993"
 ---
 # <a name="closedcaptioncaptioningid"></a>ClosedCaption.captioningID
 
-La propiedad **captioningID** especifica o recupera el nombre del elemento que muestra los subtítulos.
+La **propiedad captioningID** especifica o recupera el nombre del elemento que muestra los subtítulos.
 
 ``` syntax
 player.closedCaption.captioningID
@@ -31,17 +31,17 @@ player.closedCaption.captioningID
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es una **cadena** de lectura/escritura.
+Esta propiedad es una cadena de lectura y **escritura.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El nombre de elemento especificado puede ser cualquier elemento HTML de la página web siempre que admita el atributo innerHTML. Si la página web contiene varios marcos, el nombre del elemento solo puede hacer referencia a un elemento en el mismo marco que el control Player.
+El nombre del elemento especificado puede ser cualquier elemento HTML de la página web, siempre que admita el atributo innerHTML. Si la página web contiene varios fotogramas, el nombre del elemento solo puede hacer referencia a un elemento en el mismo marco que el control Player.
 
-**Windows Media Player 10 Mobile:** Esta propiedad es de solo lectura y siempre devuelve una cadena vacía.
+**Reproductor de Windows Media 10 Mobile:** Esta propiedad es de solo lectura y siempre devuelve una cadena vacía.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de Microsoft JScript se usa *ClosedCaption*. **captioningID** para elegir el área de una página web que se usa para mostrar los subtítulos. Se crearon dos elementos HTML DIV, con ID = CC1 e ID = CC2, respectivamente. El objeto **Player** se creó con ID = "Player".
+En el siguiente ejemplo JScript de Microsoft se *usa ClosedCaption*. **captioningID para** elegir el área de una página web que se usa para mostrar subtítulos. Se crearon dos elementos DIV HTML, con ID = CC1 e ID = CC2, respectivamente. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -72,21 +72,21 @@ En el siguiente ejemplo de Microsoft JScript se usa *ClosedCaption*. **captionin
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Agregar subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
+[**Adición de subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
-[**Objeto ClosedCaption**](closedcaption-object.md)
+[**ClosedCaption (objeto)**](closedcaption-object.md)
 </dt> </dl>
 
  

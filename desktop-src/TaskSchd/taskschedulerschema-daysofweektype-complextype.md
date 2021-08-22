@@ -1,9 +1,9 @@
 ---
-title: Tipo complejo de daysOfWeekType
+title: Tipo complejo daysOfWeekType
 description: Define los elementos secundarios y la información de secuenciación para los elementos DaysOfWeek (weeklyScheduleType) y DaysOfWeek (monthlyDayOfWeekScheduleType).
 ms.assetid: b3315582-af7a-4d4c-8f6f-61de12a85f46
 keywords:
-- tipo complejo de daysOfWeekType Programador de tareas
+- Tipo complejo daysOfWeekType Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0b4a1b5e6aeaa77c0bdfe12b1d5b68fde018f236
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e270f3069e3b20a727bcb5bcf738284ec2c59707255560201632c360c8c0fe9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118857545"
 ---
-# <a name="daysofweektype-complex-type"></a>Tipo complejo de daysOfWeekType
+# <a name="daysofweektype-complex-type"></a>Tipo complejo daysOfWeekType
 
-Define los elementos secundarios y la información de secuenciación para los elementos [**DaysOfWeek (weeklyScheduleType)**](taskschedulerschema-daysofweek-weeklyscheduletype-element.md) y [**DaysOfWeek (monthlyDayOfWeekScheduleType)**](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md) .
+Define los elementos secundarios y la información de secuenciación para los elementos [**DaysOfWeek (weeklyScheduleType)**](taskschedulerschema-daysofweek-weeklyscheduletype-element.md) y [**DaysOfWeek (monthlyDayOfWeekScheduleType).**](taskschedulerschema-daysofweek-monthlydayofweekscheduletype-element.md)
 
 ``` syntax
 <xs:complexType name="daysOfWeekType">
@@ -72,13 +72,13 @@ Define los elementos secundarios y la información de secuenciación para los el
 
 | Elemento                                                                   | Tipo | Descripción                         |
 |---------------------------------------------------------------------------|------|-------------------------------------|
-| [**Día**](taskschedulerschema-friday-daysofweektype-element.md)       | N/D  | La tarea se ejecuta el viernes. <br/>    |
+| [**Viernes**](taskschedulerschema-friday-daysofweektype-element.md)       | N/D  | La tarea se ejecuta el viernes. <br/>    |
 | [**Lunes**](taskschedulerschema-monday-daysofweektype-element.md)       | N/D  | La tarea se ejecuta el lunes.<br/>     |
 | [**Sábado**](taskschedulerschema-saturday-daysofweektype-element.md)   | N/D  | La tarea se ejecuta el sábado. <br/>  |
 | [**Domingo**](taskschedulerschema-sunday-daysofweektype-element.md)       | N/D  | La tarea se ejecuta el domingo. <br/>    |
-| [**Martes**](taskschedulerschema-thursday-daysofweektype-element.md)   | N/D  | La tarea se ejecuta el jueves <br/>   |
-| [**Jueves**](taskschedulerschema-tuesday-daysofweektype-element.md)     | N/D  | La tarea se ejecuta el martes. <br/>   |
-| [**Lunes**](taskschedulerschema-wednesday-daysofweektype-element.md) | N/D  | La tarea se ejecuta el miércoles. <br/> |
+| [**Jueves**](taskschedulerschema-thursday-daysofweektype-element.md)   | N/D  | La tarea se ejecuta el jueves <br/>   |
+| [**Martes**](taskschedulerschema-tuesday-daysofweektype-element.md)     | N/D  | La tarea se ejecuta el martes. <br/>   |
+| [**Miércoles**](taskschedulerschema-wednesday-daysofweektype-element.md) | N/D  | La tarea se ejecuta el miércoles. <br/> |
 
 
 
@@ -86,10 +86,10 @@ Define los elementos secundarios y la información de secuenciación para los el
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -97,7 +97,7 @@ Define los elementos secundarios y la información de secuenciación para los el
 
 <dl> <dt>
 
-[Tipos complejos de esquema Programador de tareas](task-scheduler-schema-complex-types.md)
+[Programador de tareas tipos complejos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

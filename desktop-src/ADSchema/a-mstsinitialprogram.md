@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TS-Initial-Program
-description: Terminal Services programa inicial de sesión especifica la ruta de acceso y el nombre de archivo de la aplicación que el usuario desea que se inicie automáticamente cuando el usuario inicia sesión en el Terminal Server.
+title: Atributo ms-TS-Initial-Program
+description: El Programa inicial de sesión de Terminal Services especifica la ruta de acceso y el nombre de archivo de la aplicación que el usuario desea iniciar automáticamente cuando el usuario inicia sesión en Terminal Server.
 ms.assetid: c886209b-725b-4e49-a802-58be9ed5e92e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de programa de MS-TS-Initial
-- msTSInitialProgram esquema de AD de atributos
+- Esquema de AD del atributo ms-TS-Initial-Program
+- Esquema de AD del atributo msTSInitialProgram
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f2a4796a97722f2d26142a2ff374414ca3ca1cf2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 37d014cf19c1410d21a8ee8c851fbee213e012a631ade04b6117e1cf949e22ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104422673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118424491"
 ---
-# <a name="ms-ts-initial-program-attribute"></a>atributo MS-TS-Initial-Program
+# <a name="ms-ts-initial-program-attribute"></a>Atributo ms-TS-Initial-Program
 
-Terminal Services programa inicial de sesión especifica la ruta de acceso y el nombre de archivo de la aplicación que el usuario desea que se inicie automáticamente cuando el usuario inicia sesión en el Terminal Server.
+El Programa inicial de sesión de Terminal Services especifica la ruta de acceso y el nombre de archivo de la aplicación que el usuario desea iniciar automáticamente cuando el usuario inicia sesión en Terminal Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Programa MS-TS-Initial-                       |
-| Nombre para mostrar de LDAP | msTSInitialProgram                          |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-TS-Initial-Program                       |
+| Ldap-Display-Name | msTSInitialProgram                          |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1990                     |
-| System-ID-GUID    | 9201ac6f-1d69-4dfb-802e-d95510109599        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 9201ac6f-1d69-4dfb-802e-d95510109599        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,18 +52,18 @@ Terminal Services programa inicial de sesión especifica la ruta de acceso y el 
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Terminal Services programa inicial de sesión especifica la ruta de acceso y el 
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -94,13 +94,13 @@ Terminal Services programa inicial de sesión especifica la ruta de acceso y el 
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000000                        |

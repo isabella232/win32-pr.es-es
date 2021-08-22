@@ -1,6 +1,6 @@
 ---
-title: endif - ps
-description: Marca el final de un elemento if... else block.
+title: 'endif: ps'
+description: Marca el final de un if... bloque else.
 ms.assetid: 3e20e86b-d050-45f5-8180-8c2ea81c60ba
 ms.topic: reference
 ms.date: 05/31/2018
@@ -16,9 +16,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118512155"
 ---
-# <a name="endif---ps"></a>endif - ps
+# <a name="endif---ps"></a>endif: ps
 
-Marca el final de [un elemento if](if-bool---ps.md)... [else block.](else---ps.md)
+Marca el final de [un elemento if](if-bool---ps.md)... [bloque else.](else---ps.md)
 
 ## <a name="syntax"></a>Syntax
 
@@ -53,7 +53,7 @@ Marca el final de [un elemento if](if-bool---ps.md)... [else block.](else---ps.m
 [if bool - ps](if-bool---ps.md)
 </dt> <dt>
 
-[else - ps](else---ps.md)
+[else: ps](else---ps.md)
 </dt> </dl>
 
  

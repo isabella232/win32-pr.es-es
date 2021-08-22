@@ -1,6 +1,6 @@
 ---
-title: Métodos Win32_RdvhManagement
-description: La \_ clase de métodos RdvhManagement de Win32 expone los métodos siguientes.
+title: Win32_RdvhManagement métodos
+description: La clase Win32 \_ RdvhManagement Methods expone los métodos siguientes.
 ms.assetid: 3AAE4833-3BA0-4827-BB11-47D56F37D51A
 ms.tgt_platform: multiple
 ms.topic: reference
@@ -10,16 +10,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0916482d329419d00f01ed9c816f8892dd9d86a2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 940bf16e5dd4e4c5a55b96128610571ca4d0e7ed9d3a290d33bd1457ae80fa5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118848882"
 ---
-# <a name="win32_rdvhmanagement-methods"></a>\_Métodos RdvhManagement de Win32
+# <a name="win32_rdvhmanagement-methods"></a>Métodos \_ rdvhManagement de Win32
 
-La clase de [**\_ métodos RdvhManagement de Win32**](win32-rdvhmanagement.md) expone los métodos siguientes.
+La [**clase Win32 \_ RdvhManagement Methods**](win32-rdvhmanagement.md) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -49,7 +49,7 @@ Establece los permisos en una máquina virtual para el usuario actual.
 [**Método RdvUndoVMPermissions**](rdvundovmpermissions-win32-rdvhmanagement.md)
 </dt> <dd>
 
-Revierte los permisos establecidos por [**RdvSetupVMPermissions**](rdvsetupvmpermissions-win32-rdvhmanagement.md) en la máquina virtual especificada.
+Revierte los permisos [**establecidos por RdvSetupVMPermissions**](rdvsetupvmpermissions-win32-rdvhmanagement.md) en la máquina virtual especificada.
 
 </dd> <dt>
 
@@ -60,9 +60,9 @@ Crea una plantilla de disco de usuario, con el tamaño máximo especificado, en 
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_SET_CALLBACK_YIELD (VFW. h)
-description: El \_ \_ \_ mensaje de Yield devoluciones de llamada del límite \_ de WM establece una función de devolución de llamada en la aplicación. AVICap llama a este procedimiento cuando la ventana de captura produce durante la captura de streaming. Puede enviar este mensaje explícitamente o mediante la macro capSetCallbackOnYield.
+title: WM_CAP_SET_CALLBACK_YIELD mensaje (Vfw.h)
+description: El mensaje WM \_ CAP \_ SET \_ CALLBACK YIELD establece una función de \_ devolución de llamada en la aplicación. AVICap llama a este procedimiento cuando la ventana de captura se produce durante la captura de streaming. Puede enviar este mensaje explícitamente o mediante la macro capSetCallbackOnYield.
 ms.assetid: d978dc3b-4336-46a4-85ae-7d588a63489b
 keywords:
-- Mensaje de WM_CAP_SET_CALLBACK_YIELD de Windows multimedia
+- WM_CAP_SET_CALLBACK_YIELD mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b95c9ba0be7a0abeb99c0590e255adb0bd442343
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ee12db79a9e4808442618ca295694611aa9e098a87c8f72b25f04360e156c8a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676567"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118622240"
 ---
-# <a name="wm_cap_set_callback_yield-message"></a>\_Mensaje de \_ \_ yield devoluciones de llamada de Cap de WM \_
+# <a name="wm_cap_set_callback_yield-message"></a>Mensaje DE \_ RENDIMIENTO DE \_ \_ DEVOLUCIÓN DE LLAMADA DE \_ WM CAP SET
 
-El mensaje de **\_ \_ \_ \_ yield devoluciones de llamada del límite de WM** establece una función de devolución de llamada en la aplicación. AVICap llama a este procedimiento cuando la ventana de captura produce durante la captura de streaming. Puede enviar este mensaje explícitamente o mediante la macro [**capSetCallbackOnYield**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonyield) .
+El **mensaje WM CAP SET \_ \_ \_ CALLBACK \_ YIELD** establece una función de devolución de llamada en la aplicación. AVICap llama a este procedimiento cuando la ventana de captura se produce durante la captura de streaming. Puede enviar este mensaje explícitamente o mediante la [**macro capSetCallbackOnYield.**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonyield)
 
 
 ```C++
@@ -41,23 +41,23 @@ lParam = (LPARAM) (LPVOID) (fpProc);
 <span id="fpProc"></span><span id="fpproc"></span><span id="FPPROC"></span>*fpProc*
 </dt> <dd>
 
-Puntero a la función de devolución de llamada Yield, de tipo [**capYieldCallback**](/windows/desktop/api/Vfw/nc-vfw-capyieldcallback). Especifique **null** para este parámetro para deshabilitar una función de devolución de llamada yield instalada previamente.
+Puntero a la función de devolución de llamada yield, de tipo [**capYieldCallback**](/windows/desktop/api/Vfw/nc-vfw-capyieldcallback). Especifique **NULL para** este parámetro para deshabilitar una función de devolución de llamada yield instalada previamente.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** si la captura de streaming o una sesión de captura de un solo fotograma está en curso.
+Devuelve **TRUE si** se realiza **correctamente o FALSE si** la captura de streaming o una sesión de captura de un solo fotograma está en curso.
 
 ## <a name="remarks"></a>Observaciones
 
-Las aplicaciones pueden establecer opcionalmente una función de devolución de llamada yield. Se llama a la función de devolución de llamada yield al menos una vez para cada fotograma de vídeo capturado durante la captura de streaming. Si se instala una función de devolución de llamada Yield, se llamará independientemente del estado del miembro **fYield** de la estructura [**CAPTUREPARMS**](/windows/win32/api/vfw/ns-vfw-captureparms) .
+Opcionalmente, las aplicaciones pueden establecer una función de devolución de llamada yield. La función de devolución de llamada yield se llama al menos una vez para cada fotograma de vídeo capturado durante la captura de streaming. Si se instala una función de devolución de llamada yield, se llamará a ella independientemente del estado del miembro **fYield** de la [**estructura CAPTUREPARMS.**](/windows/win32/api/vfw/ns-vfw-captureparms)
 
-Si se usa la función de devolución de llamada Yield, debe instalarse antes de iniciar la sesión de captura y debe permanecer habilitada mientras dure la sesión. Se puede deshabilitar después de que finalice la captura de streaming.
+Si se usa la función de devolución de llamada yield, debe instalarse antes de iniciar la sesión de captura y debe permanecer habilitada mientras dure la sesión. Se puede deshabilitar una vez que finaliza la captura de streaming.
 
-Normalmente, las aplicaciones realizan algún tipo de procesamiento de mensajes en la función de devolución de llamada que consta de un bucle [PeekMessage](/windows/win32/api/winuser/nf-winuser-peekmessagea), [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage), [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) , como en el bucle de mensajes de una función [WinMain](/windows/win32/api/winbase/nf-winbase-winmain) . La función de devolución de llamada yield también debe filtrar y quitar los mensajes que pueden provocar problemas de reentrada.
+Las aplicaciones suelen realizar algún tipo de procesamiento de mensajes en la función de devolución de llamada que consta de un bucle [PeekMessage](/windows/win32/api/winuser/nf-winuser-peekmessagea), [TranslateMessage,](/windows/win32/api/winuser/nf-winuser-translatemessage) [DispatchMessage,](/windows/win32/api/winuser/nf-winuser-dispatchmessage) como en el bucle de mensajes de una [función WinMain.](/windows/win32/api/winbase/nf-winbase-winmain) La función de devolución de llamada yield también debe filtrar y quitar los mensajes que pueden causar problemas de reentrete.
 
-Normalmente, una aplicación devuelve **true** en el procedimiento Yield para continuar con la captura de streaming. Si una función de devolución de llamada yield devuelve **false**, la ventana de captura detiene el proceso de captura.
+Normalmente, una aplicación devuelve **TRUE en** el procedimiento yield para continuar con la captura de streaming. Si una función de devolución de llamada yield devuelve **FALSE,** la ventana de captura detiene el proceso de captura.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ Normalmente, una aplicación devuelve **true** en el procedimiento Yield para co
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

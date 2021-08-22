@@ -1,7 +1,7 @@
 ---
-description: El \_ método get VideoWidth recupera el ancho del vídeo nativo.
+description: El método \_ get VideoWidth recupera el ancho del vídeo nativo.
 ms.assetid: dfd897f0-f580-44c0-9445-ba61ae267187
-title: Método CBaseControlVideo.get_VideoWidth (Ctlutil. h)
+title: CBaseControlVideo.get_VideoWidth método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: faeeed7ea8af58103e74d9b8c3690523c893282f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 268316dd9b7f37894f60ed45878c7de9bbc8d379301daa7bbefedcadd0b8e77f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118661382"
 ---
-# <a name="cbasecontrolvideoget_videowidth-method"></a>CBaseControlVideo. Get- \_ width (método)
+# <a name="cbasecontrolvideoget_videowidth-method"></a>Método CBaseControlVideo.get \_ VideoWidth
 
 El `get_VideoWidth` método recupera el ancho del vídeo nativo.
 
@@ -51,11 +51,11 @@ Puntero al ancho del vídeo nativo, en píxeles.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un ERROR Si se realiza correctamente o E \_ OUTOFMEMORY si no hay suficiente memoria disponible.
+Devuelve NOERROR si se realiza correctamente o \_ E OUTOFMEMORY si no hay suficiente memoria disponible.
 
 ## <a name="remarks"></a>Observaciones
 
-Esta función miembro implementa el método [**IBasicVideo:: get \_ VideoWidth**](/windows/desktop/api/Control/nf-control-ibasicvideo-get_videowidth) . Llama al CBaseControlVideo virtual puro [**:: GetVideoFormat**](cbasecontrolvideo-getvideoformat.md) para recuperar la estructura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) de la clase derivada.
+Esta función miembro implementa el [**método IBasicVideo::get \_ VideoWidth.**](/windows/desktop/api/Control/nf-control-ibasicvideo-get_videowidth) Llama al [**CBaseControlVideo virtual puro::GetVideoFormat para**](cbasecontrolvideo-getvideoformat.md) recuperar la estructura [**VIDEOINFOHEADER**](/previous-versions/windows/desktop/api/amvideo/ns-amvideo-videoinfoheader) de la clase derivada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta función miembro implementa el método [**IBasicVideo:: get \_ VideoWidth**
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Esta función miembro implementa el método [**IBasicVideo:: get \_ VideoWidth**
 
 <dl> <dt>
 
-[**Clase CBaseControlVideo**](cbasecontrolvideo.md)
+[**CBaseControlVideo (clase)**](cbasecontrolvideo.md)
 </dt> </dl>
 
  

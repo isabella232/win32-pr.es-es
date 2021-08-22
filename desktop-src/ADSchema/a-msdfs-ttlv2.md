@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DFS-TTL-V2
-description: TTL asociado a la raíz o vínculo DFS. Para su uso en el momento de la referencia DFS.
+title: Atributo ms-DFS-Ttl-v2
+description: TTL asociado a la raíz o vínculo DFS. Para su uso en tiempo de referencia DFS.
 ms.assetid: 1c41567e-72f5-48fd-a2f8-33e3c8e35794
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DFS-TTL-V2
-- msDFS-Ttlv2 atributo AD Schema
+- Esquema de AD del atributo ms-DFS-Ttl-v2
+- Esquema de AD del atributo msDFS-Ttlv2
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52de0c57c159c0e875958d19611cadf42cc2b98d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ac2bf2c828be70fe5b35f182cf7ccd2ea663e63321a6f2ea5a63539d1adbc98c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118686071"
 ---
-# <a name="ms-dfs-ttl-v2-attribute"></a>atributo MS-DFS-TTL-V2
+# <a name="ms-dfs-ttl-v2-attribute"></a>Atributo ms-DFS-Ttl-v2
 
-TTL asociado a la raíz o vínculo DFS. Para su uso en el momento de la referencia DFS.
+TTL asociado a la raíz o vínculo DFS. Para su uso en tiempo de referencia DFS.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DFS-TTL-V2                        |
-| Nombre para mostrar de LDAP | msDFS-Ttlv2                          |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DFS-Ttl-v2                        |
+| Ldap-Display-Name | msDFS-Ttlv2                          |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2035              |
-| System-ID-GUID    | ea944d31-864A-4349-ada5-062e2c614f5e |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | ea944d31-864a-4349-ada5-062e2c614f5e |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -50,20 +50,20 @@ TTL asociado a la raíz o vínculo DFS. Para su uso en el momento de la referenc
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
-| System-Only            | False                                                                                                             |
-| Tiene un único valor       | True                                                                                                              |
-| Está indexado             | False                                                                                                             |
-| En el catálogo global      | False                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                      |
+| System-Only            | Falso                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                              |
+| Está indexado             | Falso                                                                                                             |
+| En el catálogo global      | Falso                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Clases usadas en        | [**MS-DFS-Link-V2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-V2**](c-msdfs-namespacev2.md)<br/> |
+| Clases usadas en        | [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 
@@ -71,20 +71,20 @@ TTL asociado a la raíz o vínculo DFS. Para su uso en el momento de la referenc
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
-| System-Only            | False                                                                                                             |
-| Tiene un único valor       | True                                                                                                              |
-| Está indexado             | False                                                                                                             |
-| En el catálogo global      | False                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                      |
+| System-Only            | Falso                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                              |
+| Está indexado             | Falso                                                                                                             |
+| En el catálogo global      | Falso                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Clases usadas en        | [**MS-DFS-Link-V2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-V2**](c-msdfs-namespacev2.md)<br/> |
+| Clases usadas en        | [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 
@@ -92,20 +92,20 @@ TTL asociado a la raíz o vínculo DFS. Para su uso en el momento de la referenc
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
-| System-Only            | False                                                                                                             |
-| Tiene un único valor       | True                                                                                                              |
-| Está indexado             | False                                                                                                             |
-| En el catálogo global      | False                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                      |
+| System-Only            | Falso                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                              |
+| Está indexado             | Falso                                                                                                             |
+| En el catálogo global      | Falso                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Clases usadas en        | [**MS-DFS-Link-V2**](c-msdfs-linkv2.md)<br/> [**MS-DFS-namespace-V2**](c-msdfs-namespacev2.md)<br/> |
+| Clases usadas en        | [**ms-DFS-Link-v2**](c-msdfs-linkv2.md)<br/> [**ms-DFS-Namespace-v2**](c-msdfs-namespacev2.md)<br/> |
 
 
 

@@ -1,10 +1,10 @@
 ---
-title: DRM_VIDEO_OUTPUT_PROTECTION_IDS_EX estructura (wmdrmsdk. h)
-description: La \_ \_ \_ \_ estructura de ID. de protección de salida de vídeo DRM \_ contiene una matriz de \_ estructuras de protección de salida de vídeo DRM \_ \_ .
+title: DRM_VIDEO_OUTPUT_PROTECTION_IDS_EX estructura (Wmdrmsdk.h)
+description: La estructura DRM \_ VIDEO \_ OUTPUT PROTECTION \_ \_ IDS EX contiene una matriz de estructuras DRM VIDEO OUTPUT \_ \_ \_ \_ PROTECTION.
 ms.assetid: 89de0ade-fa86-4081-b65b-9c84fb68cf3d
 keywords:
-- DRM_VIDEO_OUTPUT_PROTECTION_IDS_EX estructura de Windows Media Format
-- Formato de Windows Media de estructura
+- DRM_VIDEO_OUTPUT_PROTECTION_IDS_EX structure windows Media Format
+- Estructura de windows Formato multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2e7cc5ec0b4b14d88deb317e62e3e1cd4f92b57
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f5482734c2ded470b4e3dc885e32505c556b3106a12518969622f8007cf6e4f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118704092"
 ---
-# <a name="drm_video_output_protection_ids_ex-structure"></a>\_Estructura de \_ los \_ \_ identificadores \_ de salida de vídeo DRM
+# <a name="drm_video_output_protection_ids_ex-structure"></a>Estructura EX de LA PROTECCIÓN DE SALIDA DE VÍDEO \_ \_ \_ \_ \_ DRM
 
-La estructura de ID. de **\_ protección de salida de vídeo \_ \_ \_ \_ DRM** contiene una matriz de estructuras de **protección de \_ \_ salida \_ de vídeo DRM** .
+La **estructura DRM VIDEO OUTPUT PROTECTION \_ \_ \_ \_ IDS \_ EX** contiene una matriz de estructuras **DRM VIDEO OUTPUT \_ \_ \_ PROTECTION.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,14 +53,14 @@ Número de versión.
 **cEntries**
 </dt> <dd>
 
-Número de elementos de la matriz a los que hace referencia **rgVop**.
+Número de elementos de la matriz a la que hace referencia **rgVop.**
 
 </dd> <dt>
 
 **rgVop**
 </dt> <dd>
 
-Dirección de una matriz de estructuras de **\_ protección de salida de vídeo \_ \_ \_ DRM** . **DRM \_ Protección de salida de vídeo: por \_ \_ \_ ejemplo** , un tipo definido como [**protección de \_ salida DRM \_ \_ ex**](drm-output-protection-ex.md).
+Dirección de una matriz de estructuras **DRM VIDEO OUTPUT PROTECTION \_ \_ \_ \_ EX.** **DRM \_ VIDEO \_ OUTPUT \_ PROTECTION \_ EX** es un tipo definido como [**DRM OUTPUT PROTECTION \_ \_ \_ EX**](drm-output-protection-ex.md).
 
 </dd> </dl>
 
@@ -74,7 +74,7 @@ Ninguno.
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -82,10 +82,10 @@ Ninguno.
 
 <dl> <dt>
 
-[**\_ \_ \_ identificadores de protección de salida de \_ audio DRM \_**](drm-audio-output-protection-ids-ex.md)
+[**IDENTIFICADORES \_ DE PROTECCIÓN DE SALIDA DE AUDIO \_ \_ \_ \_ DRM, POR EJEMPLO,**](drm-audio-output-protection-ids-ex.md)
 </dt> <dt>
 
-[**\_ \_ \_ identificadores de protección de salida de vídeo DRM \_**](drmdrm-video-output-protection-ids.md)
+[**IDENTIFICADORES \_ DE PROTECCIÓN DE SALIDA DE VÍDEO \_ \_ \_ DRM**](drmdrm-video-output-protection-ids.md)
 </dt> <dt>
 
 [**Estructuras**](drm-structures.md)

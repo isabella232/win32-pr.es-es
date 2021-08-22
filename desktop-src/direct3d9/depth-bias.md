@@ -1,21 +1,21 @@
 ---
-description: Los polígonos que se coplanan en el espacio 3D pueden crearse como si no fueran coplanares agregando una diferencia de z a cada uno de ellos.
+description: Los polígonos que son coplanares en el espacio 3D pueden aparecer como si no fuera coplanar agregando un sesgo z a cada uno.
 ms.assetid: 0ab4f63b-49de-4bd0-a10f-6f90b9706c58
-title: Diferencia de profundidad (Direct3D 9)
+title: Sesgo de profundidad (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ce605ea1df161e5ebfed95c214c3dd180ab7ee6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: cbc99d606a561fd6f4eec412774ce53d9b5dd5e62c7f50b118a4e90a88664a2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104494926"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118523820"
 ---
-# <a name="depth-bias-direct3d-9"></a>Diferencia de profundidad (Direct3D 9)
+# <a name="depth-bias-direct3d-9"></a>Sesgo de profundidad (Direct3D 9)
 
-Los polígonos que se coplanan en el espacio 3D pueden crearse como si no fueran coplanares agregando una diferencia de z a cada uno de ellos. Se trata de una técnica que se usa normalmente para asegurarse de que las sombras de una escena se muestran correctamente. Por ejemplo, una sombra en un muro probablemente tendrá el mismo valor de profundidad que la pared. Si representa primero la pared y después la sombra, es posible que la sombra no sea visible o que los artefactos de profundidad estén visibles. Puede invertir el orden en que se representan los objetos coplanares con el fin de invertir el efecto, pero es probable que los artefactos de profundidad sigan siendo posibles.
+Los polígonos que son coplanares en el espacio 3D pueden aparecer como si no fuera coplanar agregando un sesgo z a cada uno. Se trata de una técnica que se usa normalmente para asegurarse de que las sombras de una escena se muestran correctamente. Por ejemplo, una sombra en un muro probablemente tendrá el mismo valor de profundidad que la pared. Si primero representa la pared y, a continuación, la sombra, es posible que la sombra no esté visible o que los artefactos de profundidad sean visibles. Puede invertir el orden en el que se representan los objetos coplanares con la esperanza de revertir el efecto, pero los artefactos de profundidad siguen siendo probables.
 
-Una aplicación puede ayudar a garantizar que los polígonos coplanoles se representen correctamente agregando una inclinación a los valores z que el sistema utiliza al representar los conjuntos de polígonos coplanares. Para agregar una diferencia de z a un conjunto de polígonos, llame al método [**IDirect3DDevice9:: SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) justo antes de su representación, establezca el parámetro de *Estado* en \_ D3DRS DEPTHBIAS y el parámetro de *valor* en un valor Float adecuado (por ejemplo, un valor adecuado podría ser de-1,0 a 1,0); para pasar este valor a **SetRenderState**, también debe convertir el valor en un valor **DWORD**. Un valor de diferencia de z mayor aumenta la probabilidad de que los polígonos que se representan estén visibles cuando se muestren con otros polígonos coplanoles.
+Una aplicación puede ayudar a garantizar que los polígonos coplanares se representan correctamente agregando un sesgo a los valores z que usa el sistema al representar los conjuntos de polígonos coplanares. Para agregar un sesgo z a un conjunto de polígonos, llame al método [**IDirect3DDevice9::SetRenderState**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setrenderstate) justo antes de representarlos, estableciendo el parámetro *State* en D3DRS DEPTHBIAS y el parámetro Value en un valor float adecuado (por ejemplo, un valor adecuado podría ser de \_ -1.0 a 1.0); para pasar este valor a **SetRenderState**, también debe convertir el valor en **DWORD.**  Un valor z-bias mayor aumenta la probabilidad de que los polígonos que represente sean visibles cuando se muestren con otros polígonos coplanares.
 
 
 ```
@@ -24,7 +24,7 @@ Offset = m * D3DRS_SLOPESCALEDEPTHBIAS + D3DRS_DEPTHBIAS
 
 
 
-donde m es la pendiente de profundidad máxima del triángulo que se va a representar.
+donde m es la pendiente de profundidad máxima del triángulo que se representa.
 
 
 ```
@@ -33,9 +33,9 @@ m = max(abs(delta z / delta x), abs(delta z / delta y))
 
 
 
-Las unidades de los \_ Estados de representación D3DRS DEPTHBIAS y D3DRS \_ SLOPESCALEDEPTHBIAS dependen de si está habilitado el almacenamiento en búfer de z o el almacenamiento en búfer de w. La aplicación debe proporcionar los valores adecuados.
+Las unidades de los estados de representación D3DRS \_ DEPTHBIAS y D3DRS LADEDEPTHBIAS dependen de si el almacenamiento en búfer z o \_ w-buffering está habilitado. La aplicación debe proporcionar valores adecuados.
 
-La diferencia no se aplica a ningún primitivo de línea y punto. Sin embargo, esta diferencia debe aplicarse a los triángulos dibujados en el modo de trama de alambres.
+El sesgo no se aplica a ninguna línea y primitiva de punto. Sin embargo, este sesgo debe aplicarse a los triángulos dibujados en modo wireframe.
 
 
 ```

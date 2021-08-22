@@ -1,9 +1,9 @@
 ---
-title: función glDepthFunc (GL. h)
+title: Función glDepthFunc (Gl.h)
 description: La función glDepthFunc especifica el valor utilizado para las comparaciones de búfer de profundidad.
 ms.assetid: 6ab8774a-8887-4c1e-b567-4492c0a60cf2
 keywords:
-- glDepthFunc (función) OpenGL
+- Función GlDepthFunc OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4dec5130edb0b8ef30af1397be501fa9cd5d5744
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 229b269e8d9677e0ffdedffb3d91029a473292082409830ac26490bf34680075
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118617050"
 ---
-# <a name="gldepthfunc-function"></a>glDepthFunc función)
+# <a name="gldepthfunc-function"></a>Función glDepthFunc
 
-La función **glDepthFunc** especifica el valor utilizado para las comparaciones de búfer de profundidad.
+La **función glDepthFunc** especifica el valor utilizado para las comparaciones de búfer de profundidad.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -49,14 +49,14 @@ Especifica la función de comparación de profundidad. Se aceptan las siguientes
 
 | Value                                                                                                                                                   | Significado                                                                                                   |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| <span id="GL_NEVER"></span><span id="gl_never"></span><dl> <dt>**GL \_ nunca**</dt> </dl>          | Nunca pasa.<br/>                                                                                  |
-| <span id="GL_LESS"></span><span id="gl_less"></span><dl> <dt>**CONTABILIDAD \_ inferior**</dt> </dl>             | Pasa si el valor *z* entrante es menor que el valor *z* almacenado. Este es el valor predeterminado.<br/> |
+| <span id="GL_NEVER"></span><span id="gl_never"></span><dl> <dt>**GL \_ NEVER**</dt> </dl>          | Nunca pasa.<br/>                                                                                  |
+| <span id="GL_LESS"></span><span id="gl_less"></span><dl> <dt>**GL \_ LESS**</dt> </dl>             | Pasa si el valor *z* entrante es menor que el valor *z* almacenado. Este es el valor predeterminado.<br/> |
 | <span id="GL_LEQUAL"></span><span id="gl_lequal"></span><dl> <dt>**GL \_ LEQUAL**</dt> </dl>       | Pasa si el valor z entrante es menor o igual que el valor z almacenado.<br/>                    |
-| <span id="GL_EQUAL"></span><span id="gl_equal"></span><dl> <dt>**igual a GL \_**</dt> </dl>          | Pasa si el valor z entrante es igual al valor z almacenado.<br/>                                 |
-| <span id="GL_GREATER"></span><span id="gl_greater"></span><dl> <dt>**LIBRO \_ superior**</dt> </dl>    | Pasa si el valor z entrante es mayor que el valor z almacenado.<br/>                             |
-| <span id="GL_NOTEQUAL"></span><span id="gl_notequal"></span><dl> <dt>**NOTEQUAL en GL \_**</dt> </dl> | Pasa si el valor z entrante no es igual que el valor z almacenado.<br/>                             |
-| <span id="GL_GEQUAL"></span><span id="gl_gequal"></span><dl> <dt>**GL \_ GEQUAL**</dt> </dl>       | Se pasa si el valor z entrante es mayor o igual que el valor z almacenado.<br/>                 |
-| <span id="GL_ALWAYS"></span><span id="gl_always"></span><dl> <dt>**GL \_ siempre**</dt> </dl>       | Siempre pasa.<br/>                                                                                 |
+| <span id="GL_EQUAL"></span><span id="gl_equal"></span><dl> <dt>**GL \_ EQUAL**</dt> </dl>          | Pasa si el valor z entrante es igual al valor z almacenado.<br/>                                 |
+| <span id="GL_GREATER"></span><span id="gl_greater"></span><dl> <dt>**GL \_ GREATER**</dt> </dl>    | Pasa si el valor z entrante es mayor que el valor z almacenado.<br/>                             |
+| <span id="GL_NOTEQUAL"></span><span id="gl_notequal"></span><dl> <dt>**GL \_ NOTEQUAL**</dt> </dl> | Pasa si el valor z entrante no es igual al valor z almacenado.<br/>                             |
+| <span id="GL_GEQUAL"></span><span id="gl_gequal"></span><dl> <dt>**GL \_ GEQUAL**</dt> </dl>       | Pasa si el valor z entrante es mayor o igual que el valor z almacenado.<br/>                 |
+| <span id="GL_ALWAYS"></span><span id="gl_always"></span><dl> <dt>**GL \_ ALWAYS**</dt> </dl>       | Siempre pasa.<br/>                                                                                 |
 
 
 
@@ -70,27 +70,27 @@ Esta función no devuelve ningún valor.
 
 ## <a name="error-codes"></a>Códigos de error
 
-La función [**glGetError**](glgeterror.md) puede recuperar el siguiente código de error.
+La función [**glGetError**](glgeterror.md) puede recuperar el código de error siguiente.
 
 
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
 ## <a name="remarks"></a>Observaciones
 
-La función **glDepthFunc** especifica la función que se usa para comparar cada valor *z* de píxel entrante con el valor *z* presente en el búfer de profundidad. La comparación se realiza solo si está habilitada la prueba de profundidad. (Consulte [**glEnable**](glenable.md) con el argumento GL \_ prueba de profundidad \_ ).
+La **función glDepthFunc** especifica la función que se usa para comparar cada valor *z* de píxel entrante con el valor *z* presente en el búfer de profundidad. La comparación solo se realiza si está habilitada la prueba de profundidad. (Vea [**glEnable**](glenable.md) con el argumento GL \_ PRUEBA \_ DE PROFUNDIDAD).
 
 Inicialmente, las pruebas de profundidad están deshabilitadas.
 
-Las siguientes funciones recuperan información relacionada con **glDepthFunc**:
+Las funciones siguientes recuperan información relacionada **con glDepthFunc**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argumento de profundidad de libro de contabilidad \_ \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ DEPTH \_ FUNC
 
-[**glIsEnabled**](glisenabled.md) con el argumento \_ prueba de profundidad de GL \_
+[**glIsEnabled con**](glisenabled.md) el argumento GL \_ DEPTH \_ TEST
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,8 +100,8 @@ Las siguientes funciones recuperan información relacionada con **glDepthFunc**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

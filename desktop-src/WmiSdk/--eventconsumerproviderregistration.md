@@ -2,7 +2,7 @@
 description: Registra proveedores de consumidores de eventos con WMI.
 ms.assetid: 31ff43dc-dc70-4ba0-866f-37445912f837
 ms.tgt_platform: multiple
-title: __EventConsumerProviderRegistration (clase)
+title: __EventConsumerProviderRegistration clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 38552519221018735c3c7543d9a1f3f2d4b680e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc3acec16b92c375f07836318be0e77c335862aec826c80bb77815865a337a72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118557939"
 ---
 # <a name="__eventconsumerproviderregistration-class"></a>\_\_Clase EventConsumerProviderRegistration
 
-La clase del sistema **\_ \_ EventConsumerProviderRegistration** registra proveedores de consumidores de eventos con WMI.
+La **\_ \_ clase del sistema EventConsumerProviderRegistration** registra proveedores de consumidores de eventos con WMI.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -41,51 +41,51 @@ class __EventConsumerProviderRegistration : __ProviderRegistration
 
 ## <a name="members"></a>Miembros
 
-La clase **\_ \_ EventConsumerProviderRegistration** tiene estos tipos de miembros:
+La **\_ \_ clase EventConsumerProviderRegistration** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **\_ \_ EventConsumerProviderRegistration** tiene estas propiedades.
+La **\_ \_ clase EventConsumerProviderRegistration** tiene estas propiedades.
 
 <dl> <dt>
 
 **ConsumerClassNames**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Matriz de nombres de las clases de consumidor lógicas que admite el proveedor de consumidor de eventos.
+Matriz de nombres de las clases de consumidor lógico que admite el proveedor de consumidores de eventos.
 
 </dd> <dt>
 
-**presta**
+**Proveedor**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **\_ \_ proveedor**
+Tipo de datos: **\_ \_ Proveedor**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Ruta de acceso del objeto al proveedor. Esta propiedad se hereda de [**\_ \_ ProviderRegistration**](--providerregistration.md).
+Ruta de acceso del objeto al proveedor. Esta propiedad se hereda de [**\_ \_ ProviderRegistration.**](--providerregistration.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La clase **\_ \_ EventConsumerProviderRegistration** se deriva de [**\_ \_ ProviderRegistration**](--providerregistration.md).
+La **\_ \_ clase EventConsumerProviderRegistration** se deriva de [**\_ \_ ProviderRegistration.**](--providerregistration.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |
@@ -93,7 +93,7 @@ La clase **\_ \_ EventConsumerProviderRegistration** se deriva de [**\_ \_ Provi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -103,10 +103,10 @@ La clase **\_ \_ EventConsumerProviderRegistration** se deriva de [**\_ \_ Provi
 [Clases del sistema WMI](wmi-system-classes.md)
 </dt> <dt>
 
-[Registrar un proveedor de consumidor de eventos](registering-an-event-consumer-provider.md)
+[Registro de un proveedor de consumidores de eventos](registering-an-event-consumer-provider.md)
 </dt> <dt>
 
-[Escribir un proveedor de consumidor de eventos](writing-an-event-consumer-provider.md)
+[Escribir un proveedor de consumidores de eventos](writing-an-event-consumer-provider.md)
 </dt> </dl>
 
  

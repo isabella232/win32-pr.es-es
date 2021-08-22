@@ -1,7 +1,7 @@
 ---
 description: La clase CAutoLock contiene una sección crítica para el ámbito de un bloque de código.
 ms.assetid: 8013b3a7-297b-4cf8-8107-4cee1fc12b56
-title: Clase CAutoLock (Wxutil. h)
+title: CAutoLock (clase, Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,20 +16,20 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 866ca7164fdaef5a93679da000779c51fb4ddb24
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4b046111e3a7e22fcf9e380fae09bb2d2007a583e49c0507b8e214142505fe02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118661707"
 ---
-# <a name="cautolock-class"></a>Clase CAutoLock
+# <a name="cautolock-class"></a>CAutoLock (clase)
 
 La `CAutoLock` clase contiene una sección crítica para el ámbito de un bloque de código.
 
-Esta clase funciona junto con la clase [**CCritSec**](ccritsec.md) , que es un contenedor para los objetos de sección críticos. El `CAutoLock` constructor bloquea la sección crítica y el destructor la desbloquea. Mediante el uso de un `CAutoLock` objeto como variable local, puede bloquear una sección crítica con la garantía de que todas las rutas de acceso de código desbloquearán la sección crítica.
+Esta clase funciona junto con la [**clase CCritSec,**](ccritsec.md) que es un contenedor para objetos de sección críticos. El `CAutoLock` constructor bloquea la sección crítica y el destructor la desbloquea. Mediante el uso de un objeto como variable local, puede bloquear una sección crítica con la garantía de que todas las rutas de acceso de código `CAutoLock` desbloquearán la sección crítica.
 
-En el ejemplo de código siguiente se muestra cómo utilizar esta clase:
+En el ejemplo de código siguiente se muestra cómo usar esta clase:
 
 
 ```
@@ -45,16 +45,16 @@ CCritSec csMyLock;  // Critical section is not locked yet.
 
 
 
-Los métodos de esta clase no están diseñados para invalidarse.
+Los métodos de esta clase no están diseñados para reemplazarse.
 
 
 
-| Variables de miembro protegidas                 | Descripción                                                      |
+| Variables de miembro protegido                 | Descripción                                                      |
 |--------------------------------------------|------------------------------------------------------------------|
-| [**m \_ Plock**](cautolock-m-plock.md)      | Sección crítica para este bloqueo.                                  |
+| [**m \_ pLock**](cautolock-m-plock.md)      | Sección crítica para este bloqueo.                                  |
 | Métodos públicos                             | Descripción                                                      |
-| [**CAutoLock**](cautolock-cautolock.md)   | Método de constructor. Bloquea el objeto de sección crítica especificado. |
-| [**~ CAutoLock**](cautolock--cautolock.md) | Método de destructor. Desbloquea el objeto de sección crítica.          |
+| [**CAutoLock**](cautolock-cautolock.md)   | Método constructor. Bloquea el objeto de sección crítica especificado. |
+| [**~CAutoLock**](cautolock--cautolock.md) | Método destructor. Desbloquea el objeto de sección crítica.          |
 
 
 
@@ -66,8 +66,8 @@ Los métodos de esta clase no están diseñados para invalidarse.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

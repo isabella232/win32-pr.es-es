@@ -1,7 +1,7 @@
 ---
-description: Establece el desencadenador de BLOBs.
+description: Establece el desencadenador BLOB.
 ms.assetid: 88bfd5cd-f563-4d0c-81a3-54a846805b87
-title: Función SetNPPTriggerInBlob (Netmon. h)
+title: Función SetNPPTriggerInBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 05b8bb3f7f95dc3246ef10f3945b9ab0868550cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ed344b3434e8ae53fe88e7ee97b77a6efa5bd3f0941af6cc9cbc6f2ff10304b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118363783"
 ---
-# <a name="setnpptriggerinblob-function"></a>SetNPPTriggerInBlob función)
+# <a name="setnpptriggerinblob-function"></a>Función SetNPPTriggerInBlob
 
-La función **SetNPPTriggerInBlob** establece el desencadenador de blobs.
+La **función SetNPPTriggerInBlob** establece el desencadenador BLOB.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,52 +41,52 @@ DWORD SetNPPTriggerInBlob(
 
 <dl> <dt>
 
-*hBlob* \[ de\]
+*hBlob* \[ En\]
 </dt> <dd>
 
 Identificador del BLOB.
 
 </dd> <dt>
 
-*pTrigger* \[ de\]
+*pTrigger* \[ En\]
 </dt> <dd>
 
 Puntero al valor del desencadenador.
 
 </dd> <dt>
 
-*hErrorBlob* \[ enuncia\]
+*hErrorBlob* \[ out\]
 </dt> <dd>
 
-Identificador de un BLOB de error que especifica dónde se produjo el error (si existe) en el BLOB original.
+Identificador de un BLOB de error que especifica dónde se produjo el error (si lo hubiera) en el BLOB original.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se realiza correctamente, el valor devuelto es NMERR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
-Si la función no es correcta, el valor devuelto es un valor de NMERR que indica el error.
+Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que indica el error.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Estos datos del desencadenador se almacenan en la categoría **desencadenador** del BLOB.
+Estos datos de desencadenador se almacenan en la **categoría Desencadenador** del BLOB.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

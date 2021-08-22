@@ -1,9 +1,9 @@
 ---
 title: ClosedCaption.SAMIStyle
-description: La propiedad SAMIStyle especifica o recupera el estilo de subtítulos (CC).
+description: La propiedad SAMIStyle especifica o recupera el estilo de subtítulos.
 ms.assetid: 5535fb31-f1c0-49c4-b758-df74964b1e67
 keywords:
-- ClosedCaption. SAMIStyle Windows Media Player
+- ClosedCaption.SAMIStyle Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ebe81c2c2c4f4504d6167abe538c52ab769550a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ed4a12671877cf0d4d8abdb77d169b0f13000bc564e6c1dc37e65bf6eccdf005
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699535"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118580770"
 ---
 # <a name="closedcaptionsamistyle"></a>ClosedCaption.SAMIStyle
 
-La propiedad **SAMIStyle** especifica o recupera el estilo de subtítulos (CC).
+La **propiedad SAMIStyle** especifica o recupera el estilo de subtítulos.
 
 ``` syntax
 player.closedCaption.SAMIStyle
@@ -31,11 +31,11 @@ player.closedCaption.SAMIStyle
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es una **cadena** de lectura/escritura.
+Esta propiedad es una cadena de lectura y **escritura.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un archivo SAMI puede contener varias definiciones de estilo de formato. Los estilos SAMI se definen entre las etiquetas <STYLE> y </STYLE> del archivo Sami. Un estilo se define con una cadena de texto precedida por un \# carácter. Por ejemplo:
+Un archivo SAMI puede contener varias definiciones de estilo de formato. Los estilos SAMI se definen entre las <STYLE> etiquetas y </STYLE> del archivo SAMI. Un estilo se define con una cadena de texto precedida de un \# carácter. Por ejemplo:
 
 
 ```
@@ -49,13 +49,13 @@ Un archivo SAMI puede contener varias definiciones de estilo de formato. Los est
 
 Especifica un estilo que genera una fuente determinada.
 
-Si no se especifica ningún estilo SAMI, se usa de forma predeterminada el primer estilo definido en el archivo SAMI.
+Si no se especifica ningún estilo SAMI, el primer estilo definido en el archivo SAMI se usa de forma predeterminada.
 
-**Windows Media Player 10 Mobile:** Esta propiedad es de solo lectura y siempre devuelve una cadena vacía.
+**Reproductor de Windows Media 10 Mobile:** Esta propiedad es de solo lectura y siempre devuelve una cadena vacía.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de JScript se crea un elemento SELECT de HTML que usa *closedCaption*. **SAMIStyle** para cambiar la apariencia del texto de la leyenda cerrada. El objeto **Player** se creó con ID = "Player".
+En el ejemplo JScript siguiente se crea un elemento SELECT HTML que usa *closedCaption*. **SAMIStyle para** cambiar la apariencia del texto del título cerrado. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript
@@ -80,21 +80,21 @@ En el siguiente ejemplo de JScript se crea un elemento SELECT de HTML que usa *c
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**Agregar subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
+[**Adición de subtítulos a medios digitales**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
-[**Objeto ClosedCaption**](closedcaption-object.md)
+[**ClosedCaption (objeto)**](closedcaption-object.md)
 </dt> </dl>
 
  

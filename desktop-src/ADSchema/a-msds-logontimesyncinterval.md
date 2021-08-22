@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-Logon-Time-Sync-Interval
-description: Este atributo controla la granularidad, en días, con la que la hora del último inicio de sesión de un usuario o equipo, registrada en el atributo lastLogonTimestamp, se replica en todos los controladores de dominio de un dominio.
+title: Atributo ms-DS-Logon-Time-Sync-Interval
+description: Este atributo controla la granularidad, en días, con la que la hora de último inicio de sesión de un usuario o equipo, registrada en el atributo lastLogonTimestamp, se replica en todos los controladores de dominio de un dominio.
 ms.assetid: f1f9f1f8-df60-44b5-965d-631c4dd4ef84
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-DS-Logon-Time-Sync-Interval
-- Esquema de AD de atributo msDS-LogonTimeSyncInterval
+- Esquema de AD del atributo ms-DS-Logon-Time-Sync-Interval
+- Esquema de AD del atributo msDS-LogonTimeSyncInterval
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5dbf23ca77bda9dac76f02986be1c05c80559199
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fa27a1d6281eda7eea9f88a11c4ca6632422a1cfd9f0cb471aab513018c56150
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118684639"
 ---
-# <a name="ms-ds-logon-time-sync-interval-attribute"></a>atributo MS-DS-Logon-Time-Sync-Interval
+# <a name="ms-ds-logon-time-sync-interval-attribute"></a>Atributo ms-DS-Logon-Time-Sync-Interval
 
-Este atributo controla la granularidad, en días, con la que la hora del último inicio de sesión de un usuario o equipo, registrada en el atributo lastLogonTimestamp, se replica en todos los controladores de dominio de un dominio.
+Este atributo controla la granularidad, en días, con la que la hora de último inicio de sesión de un usuario o equipo, registrada en el atributo lastLogonTimestamp, se replica en todos los controladores de dominio de un dominio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|------------------------------------------------------------------------------------------------------------|
-| CN                | MS-DS-Logon-Time-Sync-Interval                                                                             |
-| Nombre para mostrar de LDAP | msDS-LogonTimeSyncInterval                                                                                 |
-| Tamaño              | 4 bytes                                                                                                    |
-| Actualizar privilegio  | Administrador de dominio                                                                                       |
-| Frecuencia de actualización  | Rara vez, puesto que se trata de una configuración de Directiva, solo se actualiza cuando se desea un cambio en la Directiva de todo el dominio. |
+| CN                | ms-DS-Logon-Time-Sync-Interval                                                                             |
+| Ldap-Display-Name | msDS-LogonTimeSyncInterval                                                                                 |
+| Size              | 4 bytes                                                                                                    |
+| Actualizar privilegios  | Administrador de dominio                                                                                       |
+| Frecuencia de actualización  | En raras ocasiones, dado que se trata de una configuración de directiva, solo se actualiza cuando se desea un cambio en la directiva de todo el dominio. |
 | Attribute-Id      | 1.2.840.113556.1.4.1784                                                                                    |
-| System-ID-GUID    | ad7940f8-e43a-4a42-83bc-d688e59ea605                                                                       |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)                                                                       |
+| System-Id-Guid    | ad7940f8-e43a-4a42-83bc-d688e59ea605                                                                       |
+| Syntax            | [**Enumeración**](s-enumeration.md)                                                                       |
 
 
 
@@ -52,20 +52,20 @@ Este atributo controla la granularidad, en días, con la que la hora del último
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -73,20 +73,20 @@ Este atributo controla la granularidad, en días, con la que la hora del último
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Este atributo controla la granularidad, en días, con la que la hora del último
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Este atributo controla la granularidad, en días, con la que la hora del último
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -136,20 +136,20 @@ Este atributo controla la granularidad, en días, con la que la hora del último
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

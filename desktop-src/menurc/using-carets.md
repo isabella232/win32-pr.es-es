@@ -1,49 +1,49 @@
 ---
-title: Usar las intercalaciones
-description: En esta sección se proporcionan ejemplos de código que muestran cómo realizar tareas relacionadas con las intercalaciones.
+title: Uso de carets
+description: En esta sección se proporcionan ejemplos de código que muestran cómo realizar tareas relacionadas con los elementos de búsqueda.
 ms.assetid: 82b0a84c-49a9-4d9d-b4c8-7c4511d863eb
 keywords:
-- recursos, insumos
-- insumos, crear
-- insumos, Mostrar
-- insumos, destruir
-- Acentos, ocultar
-- Acentos, tiempos de intermitencia
-- líneas intermitentes
-- bloques en parpadeo
-- parpadeo de mapas de bits
-- crear insumos
-- Mostrar insumos
-- ocultar las intercalaciones
-- destruir insumos
-- tiempos de intermitencia
+- resources,carets
+- carets,creating
+- carets,displaying
+- carets,destroying
+- carets,hiding
+- carets,blink times
+- líneas parpadeando
+- bloques parpadeando
+- mapas de bits parpadeantes
+- crear los espacios de atención
+- mostrar los elementos de careta
+- ocultar los caretas
+- destruir los carets
+- tiempos de parpadeo
 - entrada de usuario, entrada de teclado
-- capturar datos proporcionados por el usuario, entrada mediante teclado
+- captura de la entrada del usuario, entrada de teclado
 - entrada mediante teclado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6450a3169588b3072d1fee271f4890a7cdeafd2
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8c930931df8ce401fbed8cc9af16db3cb52de08ebe9cf539109b426497318d5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077644"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118472651"
 ---
-# <a name="using-carets"></a>Usar las intercalaciones
+# <a name="using-carets"></a>Uso de carets
 
-Esta sección contiene ejemplos de código para las siguientes tareas:
+En esta sección se muestran ejemplos de código para las siguientes tareas:
 
--   [Crear y mostrar un símbolo de intercalación](#creating-and-displaying-a-caret)
--   [Ocultar un símbolo de intercalación](#hiding-a-caret)
--   [Destruir un símbolo de intercalación](#destroying-a-caret)
--   [Ajustar el tiempo de intermitencia](#adjusting-the-blink-time)
--   [Procesar la entrada del teclado](#processing-keyboard-input)
+-   [Crear y mostrar un caret](#creating-and-displaying-a-caret)
+-   [Ocultar un caret](#hiding-a-caret)
+-   [Destruir un caret](#destroying-a-caret)
+-   [Ajustar el tiempo de parpadeo](#adjusting-the-blink-time)
+-   [Procesamiento de la entrada de teclado](#processing-keyboard-input)
 
-## <a name="creating-and-displaying-a-caret"></a>Crear y mostrar un símbolo de intercalación
+## <a name="creating-and-displaying-a-caret"></a>Crear y mostrar un caret
 
-Al recibir el foco de teclado, la ventana debe crear y mostrar el símbolo de intercalación. Usar la función [**CreateCaret**](/windows/desktop/api/Winuser/nf-winuser-createcaret) para crear un símbolo de intercalación en la ventana determinada. Después, puede llamar a [**SetCaretPos**](/windows/desktop/api/Winuser/nf-winuser-setcaretpos) para establecer la posición actual del símbolo de intercalación y [**ShowCaret**](/windows/desktop/api/Winuser/nf-winuser-showcaret) para que el símbolo de intercalación esté visible.
+Al recibir el foco del teclado, la ventana debe crear y mostrar el centro de diálogo. Use la [**función CreateCaret**](/windows/desktop/api/Winuser/nf-winuser-createcaret) para crear un centro de atención en la ventana dada. A continuación, puede llamar a [**SetCaretPos para**](/windows/desktop/api/Winuser/nf-winuser-setcaretpos) establecer la posición actual del cursor de cursor y [**ShowCaret**](/windows/desktop/api/Winuser/nf-winuser-showcaret) para que el signo de cuidado sea visible.
 
-El sistema envía el mensaje de [**\_ SETFOCUS de WM**](/windows/desktop/inputdev/wm-setfocus) a la ventana que recibe el foco de teclado; por lo tanto, una aplicación debe crear y mostrar el símbolo de intercalación al procesar este mensaje.
+El sistema envía el mensaje [**\_ SETFOCUS**](/windows/desktop/inputdev/wm-setfocus) de WM a la ventana que recibe el foco de teclado; por lo tanto, una aplicación debe crear y mostrar el elemento de careta al procesar este mensaje.
 
 
 ```
@@ -70,7 +70,7 @@ char *lpszChar;  // pointer to character
 
 
 
-Para crear un símbolo de intercalación basado en un mapa de bits, debe especificar un identificador de mapa de bits al usar [**CreateCaret**](/windows/desktop/api/Winuser/nf-winuser-createcaret). Puede usar una aplicación de gráficos para crear el mapa de bits y un compilador de recursos para agregar el mapa de bits a los recursos de la aplicación. A continuación, la aplicación puede usar la función [**loadBitmap**](/windows/desktop/api/winuser/nf-winuser-loadbitmapa) para cargar el identificador de mapa de bits. Por ejemplo, podría reemplazar la línea **CreateCaret** en el ejemplo anterior por las líneas siguientes para crear un símbolo de intercalación de mapa de bits.
+Para crear un mapa de bits basado en un mapa de bits, debe especificar un identificador de mapa de bits al usar [**CreateCaret**](/windows/desktop/api/Winuser/nf-winuser-createcaret). Puede usar una aplicación de gráficos para crear el mapa de bits y un compilador de recursos para agregar el mapa de bits a los recursos de la aplicación. A continuación, la aplicación puede usar [**la función LoadBitmap**](/windows/desktop/api/winuser/nf-winuser-loadbitmapa) para cargar el identificador de mapa de bits. Por ejemplo, podría reemplazar la línea **CreateCaret** del ejemplo anterior por las líneas siguientes para crear un mapa de bits de mapa de bits.
 
 
 ```
@@ -85,15 +85,15 @@ Para crear un símbolo de intercalación basado en un mapa de bits, debe especif
 
 
 
-Como alternativa, puede usar la función [**CreateBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createbitmap) o [**CreateDIBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createdibitmap) para recuperar el identificador del mapa de bits del símbolo de intercalación. Para obtener más información sobre los mapas de bits, vea [mapas de bits](/windows/desktop/gdi/bitmaps).
+Como alternativa, puede usar la [**función CreateBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createbitmap) o [**CreateDIBitmap**](/windows/desktop/api/wingdi/nf-wingdi-createdibitmap) para recuperar el identificador del mapa de bits del elemento de asignación. Para obtener más información sobre los mapas de bits, vea [Mapas de bits.](/windows/desktop/gdi/bitmaps)
 
-Si la aplicación especifica un identificador de mapa de bits, [**CreateCaret**](/windows/desktop/api/Winuser/nf-winuser-createcaret) omite los parámetros de ancho y alto. El mapa de bits define el tamaño del símbolo de intercalación.
+Si la aplicación especifica un identificador de mapa de bits, [**CreateCaret**](/windows/desktop/api/Winuser/nf-winuser-createcaret) omite los parámetros de ancho y alto. El mapa de bits define el tamaño del elemento de careta.
 
-## <a name="hiding-a-caret"></a>Ocultar un símbolo de intercalación
+## <a name="hiding-a-caret"></a>Ocultar un caret
 
-Cada vez que la aplicación vuelve a dibujar una pantalla mientras procesa un mensaje distinto de [**WM \_ Paint**](/windows/desktop/gdi/wm-paint), debe hacer invisible el símbolo de intercalación mediante la función [**HideCaret**](/windows/desktop/api/Winuser/nf-winuser-hidecaret) . Cuando la aplicación termine de dibujar, vuelva a mostrar el símbolo de intercalación mediante la función [**ShowCaret**](/windows/desktop/api/Winuser/nf-winuser-showcaret) . Si la aplicación procesa el mensaje de **\_ dibujo de WM** , no es necesario ocultar y volver a mostrar el símbolo de intercalación, ya que esta función lo hace automáticamente.
+Cada vez que la aplicación vuelve a dibujar una pantalla al procesar un mensaje distinto de [**WM \_ PAINT,**](/windows/desktop/gdi/wm-paint)debe hacer que el objeto de caret sea invisible mediante la [**función HideCaret.**](/windows/desktop/api/Winuser/nf-winuser-hidecaret) Cuando la aplicación haya terminado de dibujar, vuelva a mostrar el caret mediante la [**función ShowCaret.**](/windows/desktop/api/Winuser/nf-winuser-showcaret) Si la aplicación procesa el **mensaje \_ WM PAINT,** no es necesario ocultar ni volver a mostrar el caret, ya que esta función lo hace automáticamente.
 
-En el ejemplo de código siguiente se muestra cómo hacer que la aplicación oculte el símbolo de intercalación mientras dibuja un carácter en la pantalla y mientras procesa el mensaje de [**\_ carácter de WM**](/windows/desktop/inputdev/wm-char) .
+En el ejemplo de código siguiente se muestra cómo hacer que la aplicación oculte el carácter de careta al dibujar un carácter en la pantalla y al procesar el [**mensaje \_ CHAR de WM.**](/windows/desktop/inputdev/wm-char)
 
 
 ```
@@ -156,11 +156,11 @@ HDC hdc;     // device context
 
 
 
-Si la aplicación llama a la función [**HideCaret**](/windows/desktop/api/Winuser/nf-winuser-hidecaret) varias veces sin llamar a [**ShowCaret**](/windows/desktop/api/Winuser/nf-winuser-showcaret), el símbolo de intercalación no se mostrará hasta que la aplicación también llame a **ShowCaret** el mismo número de veces.
+Si la aplicación llama varias veces a la función [**HideCaret**](/windows/desktop/api/Winuser/nf-winuser-hidecaret) sin llamar a [**ShowCaret**](/windows/desktop/api/Winuser/nf-winuser-showcaret), el aviso no se mostrará hasta que la aplicación también llame a **ShowCaret** el mismo número de veces.
 
-## <a name="destroying-a-caret"></a>Destruir un símbolo de intercalación
+## <a name="destroying-a-caret"></a>Destruir un caret
 
-Cuando una ventana pierde el foco de teclado, el sistema envía el mensaje de [**WM \_ KILLFOCUS**](/windows/desktop/inputdev/wm-killfocus) a la ventana. La aplicación debe destruir el símbolo de intercalación mientras procesa este mensaje mediante la función [**DestroyCaret**](/windows/desktop/api/Winuser/nf-winuser-destroycaret) . En el código siguiente se muestra cómo destruir un símbolo de intercalación en una ventana que ya no tiene el foco de teclado.
+Cuando una ventana pierde el foco del teclado, el sistema envía el [**mensaje \_ KILLFOCUS**](/windows/desktop/inputdev/wm-killfocus) de WM a la ventana. La aplicación debe destruir el caret al procesar este mensaje mediante la [**función DestroyCaret.**](/windows/desktop/api/Winuser/nf-winuser-destroycaret) En el código siguiente se muestra cómo destruir un centro de diálogo en una ventana que ya no tiene el foco del teclado.
 
 
 ```
@@ -175,15 +175,15 @@ case WM_KILLFOCUS:
 
 
 
-## <a name="adjusting-the-blink-time"></a>Ajustar el tiempo de intermitencia
+## <a name="adjusting-the-blink-time"></a>Ajustar el tiempo de parpadeo
 
-En Windows de 16 bits, una aplicación basada en Windows podía llamar a la función [**GetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-getcaretblinktime) para guardar la hora de parpadeo actual y, después, llamar a la función [**SetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-setcaretblinktime) para ajustar el tiempo de intermitencia durante su procesamiento del mensaje de [**\_ SETFOCUS de WM**](/windows/desktop/inputdev/wm-setfocus) . La aplicación restauraría el tiempo de intermitencia guardado para el uso de otras aplicaciones mediante una llamada a **SetCaretBlinkTime** durante su procesamiento del mensaje de [**\_ KILLFOCUS de WM**](/windows/desktop/inputdev/wm-killfocus) . Sin embargo, esta técnica no funciona en entornos multiproceso. En concreto, la desactivación de una aplicación no está sincronizada con la activación de otra aplicación, de modo que si una aplicación deja de responder, todavía se puede activar otra aplicación.
+En un Windows de 16 bits, una aplicación basada en Windows podría llamar a la función [**GetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-getcaretblinktime) para guardar el tiempo de parpadeo actual y, a continuación, llamar a la [**función SetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-setcaretblinktime) para ajustar el tiempo de parpadeo durante su procesamiento del [**mensaje \_ SETFOCUS de WM.**](/windows/desktop/inputdev/wm-setfocus) La aplicación restauraría el tiempo de parpadeo guardado para el uso de otras aplicaciones llamando a **SetCaretBlinkTime** durante su procesamiento del [**\_ mensaje KILLFOCUS de WM.**](/windows/desktop/inputdev/wm-killfocus) Sin embargo, esta técnica no funciona en entornos multiproceso. En concreto, la desactivación de una aplicación no se sincroniza con la activación de otra aplicación, por lo que si una aplicación se detiene, se puede activar otra aplicación.
 
-Las aplicaciones deben respetar el tiempo de intermitencia elegido por el usuario. Solo una aplicación que permite al usuario establecer el tiempo de parpadeo solo debe llamar a la función [**SetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-setcaretblinktime) .
+Las aplicaciones deben respetar el tiempo de parpadeo elegido por el usuario. La [**función SetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-setcaretblinktime) solo debe llamarla una aplicación que permita al usuario establecer la hora de parpadeo.
 
-## <a name="processing-keyboard-input"></a>Procesar la entrada del teclado
+## <a name="processing-keyboard-input"></a>Procesamiento de la entrada de teclado
 
-En el ejemplo siguiente se muestra cómo usar un símbolo de intercalación en un editor de texto simple. En el ejemplo se actualiza la posición del símbolo de intercalación a medida que el usuario escribe caracteres imprimibles y utiliza varias teclas para desplazarse por el área cliente.
+En el ejemplo siguiente se muestra cómo usar un elemento de caret en un editor de texto simple. En el ejemplo se actualiza la posición del cursor de referencia a medida que el usuario tipos de caracteres imprimibles y se usan varias claves para desplazarse por el área de cliente.
 
 
 ```
@@ -495,6 +495,6 @@ LONG APIENTRY MainWndProc(
 
 
 
- 
+ 
 
- 
+ 

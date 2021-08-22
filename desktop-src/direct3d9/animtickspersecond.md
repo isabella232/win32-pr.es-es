@@ -4,12 +4,12 @@ ms.assetid: 54cb0e81-31e0-4b0f-a5f9-e2807ce373d5
 title: AnimTicksPerSecond
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 029ea1ed521d5ba89cfa2c9920bf4002b4024678
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a6fc8f1d71dbd9d23a6e91838ffa799afb0a22d0d622c14a4b4a6deb8f67d083
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118806390"
 ---
 # <a name="animtickspersecond"></a>AnimTicksPerSecond
 
@@ -25,7 +25,7 @@ template AnimTicksPerSecond
 
 Donde:
 
--   AnimTicksPerSecond: factor de escala para convertir las marcas de tiempo de animación a la hora global. Su valor divide la hora de animación entre 30, 60, 24 o 25.
+-   AnimTicksPerSecond: un factor de escala para convertir las marcas de tiempo de animación a la hora global. Su valor divide el tiempo de animación entre 30, 60, 24 o 25.
 
 ## <a name="see-also"></a>Vea también
 

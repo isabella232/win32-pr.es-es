@@ -1,27 +1,27 @@
 ---
-title: La ventana de caracteres
-description: La ventana de caracteres
+title: Ventana De caracteres
+description: Ventana De caracteres
 ms.assetid: 92b6111f-b52d-4720-8bd9-59585d826bf5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67a386dc769e2b5fe7313b768d1b2debfe4a1131
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 426aab4cbd6e0ad536135cb47ec9a636ea56a0509f3fb0cb75ad6440addc62da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104421660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118474891"
 ---
-# <a name="the-character-window"></a>La ventana de caracteres
+# <a name="the-character-window"></a>Ventana De caracteres
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
-El agente de Microsoft muestra los caracteres animados en sus propias ventanas que siempre aparecen en la parte superior del orden z de la ventana (es decir, siempre visible). Un usuario puede mover la ventana de un carácter arrastrando el carácter con el botón primario del mouse. La imagen de caracteres se mueve con el puntero. Además, una aplicación puede desplace un carácter mediante el método [**moveTo**](moveto-method.md) .
+Microsoft Agent muestra caracteres animados en sus propias ventanas que siempre aparecen en la parte superior de la ventana orden Z (es decir, siempre en la parte superior). Un usuario puede mover la ventana de un carácter arrastrando el carácter con el botón izquierdo del mouse. La imagen de caracteres se mueve con el puntero. Además, una aplicación puede mover un carácter mediante el [**método MoveTo.**](moveto-method.md)
 
-Cuando el usuario hace clic con el botón secundario en un carácter, aparece un menú emergente que muestra los siguientes comandos:
+Cuando el usuario hace clic con el botón derecho en un carácter, aparece un menú emergente que muestra los comandos siguientes:
 
-Abra la \| ventana de comandos cerrar <span class="underline">V</span>oz
+Abrir \| la ventana Cerrar <span class="underline">comandos</span>de V oice
 
-IDE de <span class="underline">H</span>
+<span class="underline">Ide de H</span>
 
 ----------------------------…
 
@@ -30,15 +30,15 @@ Get-Help\*
 
 *OtherHostingApplicationCaption\*\**
 
-\*Los comandos enumerados se basan en el cliente de entrada-activo. Para obtener más información sobre la definición de comandos que aparecen en el menú emergente, vea la introducción a la interfaz de programación de Microsoft Agent.
+\*Los comandos enumerados se basan en el cliente activo de entrada. Para obtener más información sobre cómo definir comandos que aparecen en el menú emergente, vea Información general sobre la interfaz de programación de Microsoft Agent.
 
-\*\*Las entradas que se muestran son todas las demás aplicaciones que hospedan el carácter actualmente. Para obtener más información sobre la definición de esta entrada, vea la introducción a la interfaz de programación del agente de Microsoft.
+\*\*Las entradas enumeradas son todas las demás aplicaciones que hospedan actualmente el carácter. Para obtener más información sobre cómo definir esta entrada, vea Información general sobre la interfaz de programación de Microsoft Agent.
 
-El \| comando abrir cerrar la ventana comandos de voz controla la presentación de la ventana comandos del carácter activo actual. Si los servicios de reconocimiento de voz están deshabilitados, este comando está deshabilitado. Si no están instalados los servicios de reconocimiento de voz, este comando no aparece.
+El comando Abrir ventana De cerrar comandos de voz controla la presentación de la ventana \| Comandos del carácter activo actual. Si los servicios de reconocimiento de voz están deshabilitados, este comando está deshabilitado. Si los servicios de reconocimiento de voz no están instalados, este comando no aparece.
 
-El comando Hide oculta el carácter. La animación asignada al estado **ocultar** del carácter se reproduce y oculta el carácter. La letra "H" en Hide es la tecla de acceso del comando (mnemotécnico).
+El comando Ocultar oculta el carácter. La animación asignada al estado **Ocultar** del carácter se reproduce y oculta el carácter. La letra "H" en hide es la clave de acceso del comando (mnemonic).
 
-Los comandos de las aplicaciones que hospedan el carácter actualmente siguen el comando Hide, precedido por un separador. A continuación, los nombres de otras aplicaciones que utilizan el carácter aparecen, también precedidos por un separador.
+Los comandos de las aplicaciones que hospedan actualmente el carácter siguen el comando Ocultar, precedido por un separador. A continuación, aparecen los nombres de otras aplicaciones que usan el carácter , precedidos también por un separador.
 
  
 

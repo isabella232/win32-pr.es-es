@@ -3,7 +3,7 @@ title: Información general para desarrolladores
 description: Información general para desarrolladores
 ms.assetid: 72a330b4-5957-4159-b5e8-0c9a4491b589
 keywords:
-- Complementos de Windows Media Player, visualizaciones
+- Reproductor de Windows Media complementos,visualizaciones
 - complementos, visualizaciones
 - visualizaciones, información general para desarrolladores
 - visualizaciones personalizadas, información general para desarrolladores
@@ -19,49 +19,49 @@ keywords:
 - visualizaciones personalizadas, lenguaje de programación
 - visualizaciones, Visual C++
 - visualizaciones personalizadas, Visual C++
-- visualizaciones, Asistente para complementos
-- visualizaciones personalizadas, Asistente para complementos
+- visualizaciones, asistente para complementos
+- visualizaciones personalizadas, asistente para complementos
 - Asistente para complementos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36ec8632bd5611e081a4a17d1b0390dc99a09703
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d20988a8cf1b7923699ec9cee7990b99840b8acdf9371e74da5940ddb8fc8d4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118579417"
 ---
 # <a name="developer-overview"></a>Información general para desarrolladores
 
-Desde el punto de vista del desarrollador, las visualizaciones son programas de software que toman datos de audio proporcionados por Windows Media Player y convierten los datos en gráficos que van a la vista del usuario. Los principales temas que un desarrollador debe comprender para crear una nueva visualización son los siguientes:
+Desde el punto de vista del desarrollador, las visualizaciones son programas de software que toman los datos de audio proporcionados por Reproductor de Windows Media y convierten los datos en gráficos que harán caso adicionales al usuario. Los temas principales que un desarrollador debe comprender para crear una nueva visualización son los siguientes:
 
 ## <a name="visualization-packaging"></a>Empaquetado de visualización
 
-Las visualizaciones son controles COM que Windows Media Player usa para convertir las ondas de onda de audio en gráficos animados en Microsoft Windows. Los controles COM se empaquetan como bibliotecas de vínculos dinámicos (dll) de Microsoft Windows y deben estar registrados en el registro de Windows. Cuando se ejecuta Windows Media Player, las visualizaciones personalizadas registradas se cargan y se ven de acuerdo con las instrucciones de la máscara que usa Windows Media Player.
+Las visualizaciones son controles COM que Reproductor de Windows Media para convertir las formas de onda de audio en gráficos animados en Microsoft Windows. Los controles COM se empaquetan como microsoft Windows bibliotecas de vínculos dinámicos (DLL) y deben registrarse en el registro Windows dinámico. Cuando Reproductor de Windows Media, las visualizaciones personalizadas registradas se cargan y se ven de acuerdo con las instrucciones de la máscara que Reproductor de Windows Media está usando.
 
 ## <a name="audio-input"></a>Entrada de audio
 
-Windows Media Player proporciona el código con instantáneas de los datos de frecuencia de audio y de forma de onda a intervalos de tiempo medidos en fracciones de segundo. El intervalo de instantánea está determinado internamente por el Media Player de Windows.
+Reproductor de Windows Media proporciona al código instantáneas de datos de frecuencia de audio y de forma de onda a intervalos de tiempo medidos en fracciones de segundo. El intervalo de instantáneas viene determinado internamente por el Reproductor de Windows Media.
 
 ## <a name="graphical-output"></a>Salida gráfica
 
-La salida gráfica de la visualización es un contexto de dispositivo de Microsoft Windows. Se trata de una superficie de dibujo estándar de Windows que se puede dibujar cada vez que se proporciona una instantánea de audio. Toda la tecnología de Windows en segundo plano se encarga de usted. Solo tiene que dibujar en el contexto del dispositivo con los datos de audio proporcionados.
+La salida gráfica de la visualización es un contexto de dispositivo Windows Microsoft. Se trata de una superficie Windows de dibujo estándar en la que se puede dibujar cada vez que se proporciona una instantánea de audio. Toda la información Windows tecnología se encarga de usted. Solo tiene que dibujar en el contexto del dispositivo con los datos de audio proporcionados.
 
 ## <a name="drawing-tools"></a>Herramientas de dibujo
 
-Puede dibujar en el contexto del dispositivo con las funciones estándar de Microsoft Windows Interfaz de dispositivo gráfico (GDI), usando lápices y pinceles para crear diseños modificados por los datos de audio que proporciona Windows Media Player. GDI proporciona un amplio conjunto de herramientas de dibujo que pueden crear muchos tipos de efectos visuales.
+Puede dibujar en el contexto del dispositivo con funciones estándar de Microsoft Windows Interfaz de dispositivo gráfico (GDI), mediante lápices y pinceles para crear diseños modificados por los datos de audio proporcionados por Reproductor de Windows Media. GDI proporciona un amplio conjunto de herramientas de dibujo que pueden crear muchos tipos de efectos visuales.
 
 ## <a name="programming-language"></a>Lenguaje de programación
 
-Microsoft Visual C++ 6,0 y versiones posteriores es el único idioma admitido para crear visualizaciones personalizadas.
+Microsoft Visual C++ 6.0 y versiones posteriores es el único lenguaje admitido para crear visualizaciones personalizadas.
 
 ## <a name="plug-in-wizard"></a>Asistente para complementos
 
-Windows Media Player proporciona un asistente COM que se puede Agregar a Visual C++ que generará el código subyacente necesario para la visualización. No solo se proporcionan todos los archivos de código fuente, pero se genera una máscara de ejemplo para facilitar la prueba de la visualización. El código generado crea una visualización similar a las barras, con dos valores preestablecidos. Después, puede modificar el código para crear su propia visualización. También se genera un archivo de registro para registrar la visualización de forma que Windows Media Player pueda cargarla.
+Reproductor de Windows Media proporciona un asistente COM que puede agregar a Visual C++ que generará el código subyacente necesario para la visualización. No solo se proporcionan todos los archivos de código fuente, sino que se genera una máscara de ejemplo para facilitar la prueba de la visualización. El código generado crea una visualización similar a Barras, con dos valores preestablecidos. A continuación, puede modificar el código para crear su propia visualización. También se genera un archivo del Registro para registrar la visualización Reproductor de Windows Media que pueda cargarla.
 
-En el siguiente tema se describe cómo el código de visualización procesa los datos de audio:
+En el tema siguiente se describe cómo el código de visualización procesa los datos de audio:
 
--   [Flujo de control](flow-of-control.md)
+-   [Flow de control](flow-of-control.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -70,9 +70,9 @@ En el siguiente tema se describe cómo el código de visualización procesa los 
 [**Acerca de las visualizaciones personalizadas**](about-custom-visualizations.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

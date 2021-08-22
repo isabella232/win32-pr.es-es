@@ -1,6 +1,6 @@
 ---
 title: Uso del Kit para la certificación de aplicaciones en Windows
-description: Para proporcionar a la aplicación de escritorio la mejor oportunidad de obtener la certificación, validarla y probarla en el equipo antes de enviarla para su certificación y publicarla en la tienda Windows.
+description: Para ofrecer a la aplicación de escritorio la mejor oportunidad de obtener la certificación, valide y pruebe en el equipo antes de enviarla para su certificación y publicación en Windows Store.
 ms.assetid: 8B460B84-0997-4987-9B66-90F9C6D88D83
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,85 +9,85 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 89b3c6e4de3286dd6418c4c8e186bcadaddf00b7
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: 8692e87f8bd152b730129c0d8684bc7ec2ca91964ecd6c25e98eb3db3e0fce44
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104421527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118708753"
 ---
 # <a name="using-the-windows-app-certification-kit"></a>Uso del Kit para la certificación de aplicaciones en Windows
 
-Para proporcionar a la aplicación de escritorio la mejor oportunidad de obtener la certificación, validarla y probarla en el equipo antes de enviarla para su certificación y publicarla en la tienda Windows. Para certificar la aplicación, debe instalar y ejecutar el [Kit de certificación de aplicaciones de Windows](/previous-versions//mt637081(v=vs.85)). Para obtener más información sobre las pruebas específicas del kit, consulte [pruebas del kit de certificación de aplicaciones de Windows](windows-app-certification-kit-tests.md).
+Para ofrecer a la aplicación de escritorio la mejor oportunidad de obtener la certificación, valide y pruebe en el equipo antes de enviarla para su certificación y publicación en Windows Store. Para certificar la aplicación, debe instalar y ejecutar el Windows [App Certification Kit](/previous-versions//mt637081(v=vs.85)). Para obtener más información sobre las pruebas específicas dentro del kit, consulte Windows App Certification Kit tests (Pruebas del Kit de [certificación de aplicaciones).](windows-app-certification-kit-tests.md)
 
-Para obtener una visión general del proceso de certificación y el uso de esta herramienta en, consulte certificación de la [aplicación de escritorio](windows-certification-portal.md).
+Para ver de alto nivel el proceso de certificación y dónde encaja el uso de esta herramienta, consulte [Certificación de la aplicación de escritorio.](windows-certification-portal.md)
 
-La versión actual de ACK de Windows está disponible en 14 idiomas (Checo, Inglés, Francés, alemán, Italiano, Japonés, Coreano, Polaco, Portugués (Brasil), Ruso, Chino simplificado, español, Chino tradicional y Turco).
+La versión actual de Windows ACK está disponible en 14 idiomas (checo, inglés, francés, alemán, italiano, japonés, coreano, polaco, portugués (Brasil), ruso, chino simplificado, español, chino tradicional y turco).
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Antes de instalar la confirmación de Windows, debe instalar y ejecutar el sistema operativo.
+Antes de instalar Windows ACK, debe instalar y ejecutar el sistema operativo.
 
 1. Instale y ejecute el sistema operativo para el que está desarrollando aplicaciones.
 
--   Si está desarrollando aplicaciones para Windows 7, puede instalar y ejecutar Windows 7, Windows 8 o Windows 8.1.
--   Si está desarrollando una aplicación de escritorio de Windows 8 o de dispositivo de escritorio de Windows 8, puede instalar y ejecutar Windows 8 o Windows 8.1.
--   Si está desarrollando una aplicación de escritorio Windows 8.1 o una aplicación de dispositivo de escritorio de Windows 8, instale Windows 8.1.
+-   Si va a desarrollar aplicaciones para Windows 7, puede instalar y ejecutar Windows 7, Windows 8 o Windows 8.1.
+-   Si está desarrollando una aplicación de escritorio Windows 8 o una Windows 8 de dispositivo de escritorio, puede instalar y ejecutar Windows 8 o Windows 8.1.
+-   Si está desarrollando una aplicación de escritorio Windows 8.1 o una Windows 8 de dispositivo de escritorio, instale Windows 8.1.
 
-2. Instale el [Kit de certificación de aplicaciones de windows 3,3](/previous-versions//mt637081(v=vs.85)), que se incluye en el kit de desarrollo de software (SDK) de windows para Windows 8.1.
+2. Instale Windows [App Certification Kit 3.3](/previous-versions//mt637081(v=vs.85)), que se incluye en el Kit de desarrollo de software (SDK) de Windows para Windows 8.1.
 
-**Nota:** Al instalar el kit de certificación de aplicaciones de Windows 3,3 o superior en el equipo, se reemplaza cualquier versión instalada previamente del kit.
+**Nota:** Al instalar Windows App Certification Kit 3.3 o posterior en el equipo, reemplaza cualquier versión instalada previamente del kit.
 
-## <a name="instructions-to-run-windows-app-certification-kit-33"></a>Instrucciones para ejecutar el kit de certificación de aplicaciones de Windows 3,3
+## <a name="instructions-to-run-windows-app-certification-kit-33"></a>Instrucciones para ejecutar Windows App Certification Kit 3.3
 
-**Validar la aplicación de escritorio mediante el kit de certificación de aplicaciones de Windows 3,3 de forma interactiva**
+**Validación de la aplicación de escritorio mediante Windows App Certification Kit 3.3 de forma interactiva**
 
-1.  En el menú Inicio, busque el kit de certificación de aplicaciones de Windows.
-2.  En el kit de certificación de aplicaciones de Windows, haga clic en la categoría de validación de prueba que quiere ejecutar. Si va a validar una aplicación de escritorio, seleccione **validar aplicación de escritorio**.
-3.  En la siguiente pantalla, busque el archivo de instalación de la aplicación de escritorio que desea validar.
-    -   **Nota:** Puede usar los pasos de la [línea de comandos](#commandlinesteps) para incluir opciones o un modificador de instalación, si es necesario.
-4.  Indique el tipo de uso de la aplicación y, a continuación, haga clic en **siguiente**. El kit para la certificación de aplicaciones de Windows inicia la instalación de la aplicación de escritorio con los archivos de instalación para que pueda validar la instalación.
-5.  Si se le pide que reinicie el sistema para completar la instalación, elija **no**. Si la aplicación necesita instalar varios componentes o dependencias externas, seleccione cuidadosamente el nombre de la aplicación. El nombre que elija aquí es el nombre de la aplicación si aparece en la tienda Windows. Una vez finalizada la validación, guarde el informe con el nombre que asignó a la aplicación en el paso 6. El kit para la certificación de aplicaciones de Windows crea un archivo de informe XML y lo guarda.
-6.  Navegue hasta la carpeta donde guardó el informe y ábralo para ver los resultados de la prueba. Si se produce un error en la prueba y es válido para una renuncia, la información que necesita enviar se muestra aquí. Debe enviar una descripción detallada de cada solicitud de exención posible.
+1.  En el menú Inicio, busque Windows App Cert Kit.
+2.  En el Windows App Certification Kit, haga clic en la categoría de validación de pruebas que desea ejecutar. Si va a validar una aplicación de escritorio, seleccione **Validar aplicación de escritorio.**
+3.  En la siguiente pantalla, vaya al archivo de instalación de la aplicación de escritorio que desea validar.
+    -   **Nota:** Puede usar los pasos de [la línea de comandos](#commandlinesteps) para incluir opciones o un conmutador de instalación, si es necesario.
+4.  Indique el tipo de uso de la aplicación y, a continuación, haga clic **en Siguiente.** El Windows App Certification Kit comienza a instalar la aplicación de escritorio mediante los archivos de instalación para que pueda validar la instalación.
+5.  Si se le pide que reinicie el sistema para completar la instalación, elija **No**. Si la aplicación necesita instalar varios componentes o dependencias externas, seleccione cuidadosamente el nombre de la aplicación. El nombre que elija aquí es el nombre que se le da a la aplicación si aparece en Windows Store. Una vez completada la validación, guarde el informe con el nombre que agregó a la aplicación en el paso 6. El Windows App Certification Kit crea un archivo de informe XML y lo guarda.
+6.  Vaya a la carpeta donde guardó el informe y ábralo para ver los resultados de la prueba. Si la prueba no se ha podido realizar y es apto para una exención, la información que necesita enviar se muestra aquí. Debe enviar una descripción detallada de cada solicitud de anulación posible.
 
-**Validar la aplicación de escritorio de Windows con el kit de certificación de aplicaciones de Windows 3,3 desde una línea de comandos**
+**Validación de Windows aplicación de escritorio mediante Windows App Certification Kit 3.3 desde una línea de comandos**
 
-1.  Navegue hasta la carpeta donde guardó el informe y ábralo para ver los resultados de la prueba. Aquí se enumeran las pruebas con errores con una posible solicitud de exención. Debe enviar una descripción detallada de cada solicitud de exención posible.
-2.  En la carpeta que contiene el kit para la certificación de aplicaciones de Windows, escriba estos comandos en este orden:
+1.  Vaya a la carpeta donde guardó el informe y ábralo para ver los resultados de la prueba. Aquí se enumeran las pruebas con errores con una posible solicitud de anulación. Debe enviar una descripción detallada de cada solicitud de anulación posible.
+2.  En la carpeta que contiene Windows App Certification Kit, escriba estos comandos en este orden:
 
     -   <span id="commandLineSteps"></span><span id="commandlinesteps"></span><span id="COMMANDLINESTEPS"></span>`appcert.exe reset`
     -   `appcert test -apptype desktop -setuppath d:\cdrom\setup.exe  -appusage peruser -reportoutputpath [report file name]`
 
-    donde: `[report file name]` es el nombre de archivo completo del archivo XML que creará el kit para que contenga el informe de prueba.
+    where: `[report file name]` es el nombre de archivo completo del archivo XML que el kit creará para contener el informe de prueba.
 
-3.  Una vez finalizada la prueba, abra el archivo de informe denominado \[ nombre \] del archivo de informe y vea los resultados de la prueba.
+3.  Una vez completada la prueba, abra el archivo de informe denominado \[ nombre del archivo de informe y vea los \] resultados de la prueba.
 
-    **Nota:** Para obtener más información acerca de la línea de comandos del kit para la certificación de aplicaciones de Windows, escriba el comando appcert.exe/?
+    **Nota:** Para obtener más información sobre la línea de comandos Windows App Certification Kit, escriba el comando appcert.exe /?
 
-    El kit para la certificación de aplicaciones de Windows debe ejecutarse en el contexto de una sesión de usuario activa, pero no puede iniciar aplicaciones en una sesión no interactiva. La forma en que el kit controla los tokens para ejecutar pruebas con o sin privilegios administrativos depende también de este contexto de sesión de usuario. El kit se puede ejecutar desde un servicio, pero el servicio debe ser capaz de generar el proceso del kit en una sesión de usuario activa.
+    El Windows App Certification Kit debe ejecutarse en el contexto de una sesión de usuario activa, pero no puede iniciar aplicaciones en una sesión no interactiva. La forma en que el kit controla los tokens para ejecutar pruebas con o sin privilegios administrativos depende también de este contexto de sesión de usuario. El kit se puede ejecutar desde un servicio, pero el servicio debe ser capaz de generar el proceso del kit en una sesión de usuario activa.
 
-**Usar el kit de certificación de aplicaciones de Windows para validar las aplicaciones de Windows 7**
+**Use el kit de Windows app certification kit para validar Windows 7 aplicaciones**
 
--   El kit de certificación de aplicaciones de Windows ha reemplazado al kit de logotipo de software de Windows. Si desea usar el logotipo de Windows 7 para su aplicación, use el kit para la certificación de aplicaciones de Windows para las pruebas de validación y el informe. El kit puede detectar el sistema operativo en el que se ejecuta y se inicia automáticamente para las aplicaciones de Windows 7. Siga el mismo proceso para validar las aplicaciones de Windows 7.
+-   El kit Windows app certification kit reemplaza al kit de logotipos Windows software. Si quiere el logotipo Windows 7 de la aplicación, use el kit de certificación de Windows app para las pruebas de validación y el informe. El kit puede detectar en qué sistema operativo se ejecuta y se inicia automáticamente para Windows 7 aplicaciones. Siga el mismo proceso para validar Windows 7 aplicaciones.
 
 **Envío para la certificación**
 
--   Una vez validada la aplicación, está listo para enviarla para su certificación [a través del proceso de envío del portal](https://www.microsoft.com/?ref=go).
+-   Una vez validada la aplicación, está listo para enviarla para su certificación a través [del proceso de envío del portal.](https://www.microsoft.com/?ref=go)
 
 ## <a name="reference-documents"></a>Documentos de referencia
 
--   [Requisitos de certificación para aplicaciones de escritorio de Windows](/windows/desktop/win_cert/certification-requirements-for-windows-desktop-apps)
--   [Notas del producto de certificación de aplicaciones](https://www.microsoft.com/download/details.aspx?id=27414)
--   [Incorporación de la tienda Windows para aplicaciones de escritorio](/previous-versions//dn322034(v=vs.85))
--   [Requisitos de certificación de aplicaciones de escritorio de Windows 7](https://techcommunity.microsoft.com/t5/windows-hardware-certification/bg-p/WindowsHardwareCertification)
+-   [Requisitos de certificación para Windows aplicaciones de escritorio](/windows/desktop/win_cert/certification-requirements-for-windows-desktop-apps)
+-   [Documento técnico de certificación de aplicaciones](https://www.microsoft.com/download/details.aspx?id=27414)
+-   [Windows Incorporación de store para aplicaciones de escritorio](/previous-versions//dn322034(v=vs.85))
+-   [Windows 7 requisitos de certificación de aplicaciones de escritorio](https://techcommunity.microsoft.com/t5/windows-hardware-certification/bg-p/WindowsHardwareCertification)
 
 ## <a name="windows-app-certification-kit-tests"></a>Pruebas del Kit para la certificación de aplicaciones en Windows
 
-Hemos cambiado el kit para que las [pruebas de confirmación de Windows](windows-app-certification-kit-tests.md) sean más fáciles de usar. El kit ahora tiene:
+Hemos cambiado el kit para que las pruebas [Windows ACK sean](windows-app-certification-kit-tests.md) más fáciles de usar. El kit ahora tiene:
 
--   Una nueva interfaz de usuario simplificada
--   Se ha mejorado la prueba de varios usuarios, que ya no requiere la configuración de una segunda cuenta de usuario.
+-   Nueva interfaz de usuario simplificada
+-   Prueba de varios usuarios mejorada, que ya no requiere que configure una segunda cuenta de usuario.
 
- 
+ 
 
- 
+ 

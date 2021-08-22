@@ -1,11 +1,11 @@
 ---
-title: IWMPSettings setMode, método
-description: El método setMode establece el modo de bucle o el modo de orden aleatorio en activo o inactivo.
+title: Método setMode de IWMPSettings
+description: El método setMode establece el modo de bucle o el modo aleatorio en activo o inactivo.
 ms.assetid: e9d3765e-6edb-47a5-ac97-5e00b62498c2
 keywords:
-- método setMode de Windows Media Player
-- método setMode Windows Media Player, interfaz IWMPSettings
-- Interfaz IWMPSettings Windows Media Player, método setMode
+- Método setMode Reproductor de Windows Media
+- Método setMode Reproductor de Windows Media , interfaz IWMPSettings
+- Interfaz IWMPSettings Reproductor de Windows Media método , setMode
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8dffede5e634c5c4f726cff1631b79781ed5179
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 529aadf412cdae869ae3c308d82dcd08a7dfd581aeb7ecc711052f6acd54b962
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568412"
 ---
-# <a name="iwmpsettingssetmode-method"></a>IWMPSettings:: setMode (método)
+# <a name="iwmpsettingssetmode-method"></a>IWMPSettings::setMode (método)
 
-El método **setMode** establece el modo de bucle o el modo de orden aleatorio en activo o inactivo.
+El **método setMode** establece el modo de bucle o el modo aleatorio en activo o inactivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,18 +55,18 @@ Implements IWMPSettings.setMode
 
 <dl> <dt>
 
-*bstrMode* \[ de\]
+*bstrMode* \[ En\]
 </dt> <dd>
 
-**System. String** que es el nombre del modo que se va a cambiar, que contiene uno de los valores siguientes.
+**System.String que** es el nombre del modo que se va a cambiar y que contiene uno de los valores siguientes.
 
 
 
-| Value      | Descripción                                                                                      |
+| Valor      | Descripción                                                                                      |
 |------------|--------------------------------------------------------------------------------------------------|
-| autoRewind | Las pistas se reinician desde el principio después de la reproducción hasta el final.                                |
-| bucle       | La secuencia de pistas se repite.                                                           |
-| showFrame  | El fotograma clave más cercano se muestra cuando no se reproduce. Este modo no es relevante para las pistas de audio. |
+| autoRewind | Las pistas se reinician desde el principio después de reproducir hasta el final.                                |
+| bucle       | La secuencia de pistas se repite a sí misma.                                                           |
+| showFrame  | Cuando no se reproduce, se muestra el fotograma clave más cercano. Este modo no es relevante para las pistas de audio. |
 | shuffle    | Las pistas se reproducen en orden aleatorio.                                                               |
 
 
@@ -75,10 +75,10 @@ Implements IWMPSettings.setMode
 
 </dd> <dt>
 
-*varfMode* \[ de\]
+*varfMode* \[ En\]
 </dt> <dd>
 
-Un valor **System. Boolean** que especifica si el nuevo modo especificado está activo.
+Valor **System.Boolean** que especifica si el nuevo modo especificado está activo.
 
 </dd> </dl>
 
@@ -86,30 +86,30 @@ Un valor **System. Boolean** que especifica si el nuevo modo especificado está 
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando el modo showFrame está activo, Windows Media Player debe tener acceso al contenido de Track para recuperar el fotograma de vídeo. Utilice este modo con precaución al reproducir contenido que no sea local.
+Cuando el modo showFrame está activo, Reproductor de Windows Media acceder al contenido de la pista para recuperar el fotograma de vídeo. Use este modo con precaución al reproducir contenido que no es local.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Interfaz IWMPSettings (VB y C#)**](iwmpsettings--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPSettings. getMode (VB y C#)**](wmplibiwmpsettings-iwmpsettings-getmode--vb-and-c.md)
+[**IWMPSettings.getMode (VB y C#)**](wmplibiwmpsettings-iwmpsettings-getmode--vb-and-c.md)
 </dt> </dl>
 
  

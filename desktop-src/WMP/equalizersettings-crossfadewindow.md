@@ -1,9 +1,9 @@
 ---
 title: EQUALIZERSETTINGS.crossFadeWindow
-description: El atributo crossFadeWindow especifica o recupera la cantidad de superposición entre fundidos en milisegundos.
+description: El atributo crossFadeWindow especifica o recupera la cantidad de superposición de atenuación cruzada en milisegundos.
 ms.assetid: 312ec02a-8ac9-4011-945b-e56cf06c71c2
 keywords:
-- EQUALIZERSETTINGS. crossFadeWindow Windows Media Player
+- EQUALIZERSETTINGS.crossFadeWindow Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b6e95c5cf3f3dc559a7e9d3a6d8dd2a0e3a6f571
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 678e63011ac810c18567c9560103f20a27f85b9e6e2c7d6df29142fc079737f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118578400"
 ---
 # <a name="equalizersettingscrossfadewindow"></a>EQUALIZERSETTINGS.crossFadeWindow
 
-El atributo **crossFadeWindow** especifica o recupera la cantidad de superposición entre fundidos en milisegundos.
+El **atributo crossFadeWindow** especifica o recupera la cantidad de superposición de atenuación cruzada en milisegundos.
 
 ``` syntax
         elementID.crossFadeWindow
@@ -29,26 +29,26 @@ El atributo **crossFadeWindow** especifica o recupera la cantidad de superposici
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **número** de lectura/escritura (**largo**) que va de 0 a 10.000 con un valor predeterminado de 250.
+Este atributo es un número de lectura y **escritura** **(long)** que va de 0 a 10 000 con un valor predeterminado de 250.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Elemento EQUALIZERSETTINGS**](equalizersettings-element.md)
 </dt> <dt>
 
-[**EQUALIZERSETTINGS. encadenado**](equalizersettings-crossfade.md)
+[**EQUALIZERSETTINGS.crossFade**](equalizersettings-crossfade.md)
 </dt> </dl>
 
  

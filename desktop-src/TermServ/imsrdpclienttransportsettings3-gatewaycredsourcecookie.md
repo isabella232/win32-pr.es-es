@@ -1,12 +1,12 @@
 ---
-title: Propiedad GatewayCredSourceCookie de IMsRdpClientTransportSettings3
-description: Especifica si el origen de credenciales está basado en cookies.
+title: Propiedad IMsRdpClientTransportSettings3 GatewayCredSourceCookie
+description: Especifica si el origen de credenciales se basa en cookies.
 ms.assetid: 039459a3-7a83-444c-a0b4-46ef0dc5ddd0
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad GatewayCredSourceCookie
-- Propiedad GatewayCredSourceCookie Servicios de Escritorio remoto, interfaz IMsRdpClientTransportSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientTransportSettings3, propiedad GatewayCredSourceCookie
+- Propiedad GatewayCredSourceCookie Servicios de Escritorio remoto
+- Propiedad GatewayCredSourceCookie Servicios de Escritorio remoto interfaz , IMsRdpClientTransportSettings3
+- Interfaz IMsRdpClientTransportSettings3 Servicios de Escritorio remoto , propiedad GatewayCredSourceCookie
 topic_type:
 - apiref
 api_name:
@@ -19,16 +19,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9547df10ce9f528a4b52c526c970a82d0bd098c5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6fae89a3b7694d1ab73c076464b7ac62e6b18bcac6b4877d6156731135ee47a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118606950"
 ---
-# <a name="imsrdpclienttransportsettings3gatewaycredsourcecookie-property"></a>IMsRdpClientTransportSettings3:: GatewayCredSourceCookie (propiedad)
+# <a name="imsrdpclienttransportsettings3gatewaycredsourcecookie-property"></a>IMsRdpClientTransportSettings3::GatewayCredSourceCookie, propiedad
 
-Especifica si el origen de credenciales está basado en cookies. Contiene una si el origen de la credencial está basado en cookies o cero de lo contrario.
+Especifica si el origen de credenciales se basa en cookies. Contiene uno si el origen de credenciales está basado en cookies o cero en caso contrario.
 
 Esta propiedad es de lectura y escritura.
 
@@ -49,7 +49,7 @@ HRESULT get_GatewayCredSourceCookie(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Valor **ULong** que especifica si el origen de credenciales está basado en cookies.
+Valor **ULONG** que especifica si el origen de credenciales se basa en cookies.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,7 +57,7 @@ Valor **ULong** que especifica si el origen de credenciales está basado en cook
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                   |
+| Cliente mínimo compatible<br/> | Windows 7<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |

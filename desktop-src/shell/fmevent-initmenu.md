@@ -13,14 +13,14 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 8074a09f-ad94-4a7a-8c0b-965b0f8f6334
-ms.openlocfilehash: 82ec9130a681bdfd36ff6259392c0608e4cde9cf
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 77b9aa668087f0c02042ccb7e5b822f68596404761d53ec682c76ef98d46c18e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118459052"
 ---
-# <a name="fmevent_initmenu-message"></a>Mensaje \_ FMEVENT INITMENU
+# <a name="fmevent_initmenu-message"></a>Mensaje \_ INITMENU de FMEVENT
 
 Se envía a un archivo DLL de extensión cuando el usuario selecciona el menú de la extensión en la barra de menús del Administrador de archivos. La extensión puede usar esta notificación para inicializar elementos de menú.
 
@@ -42,7 +42,7 @@ Identificador de la barra de menús del Administrador de archivos.
 
 Un archivo DLL de extensión debe devolver cero si procesa este mensaje.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Un archivo DLL de extensión recibe este mensaje solo cuando el usuario selecciona el menú de nivel superior. Si la extensión contiene submenús, debe inicializarlos al mismo tiempo que inicializa el menú de nivel superior.
 
@@ -50,7 +50,7 @@ Un archivo DLL de extensión recibe este mensaje solo cuando el usuario seleccio
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |

@@ -1,9 +1,9 @@
 ---
 title: Elemento System (EventType)
-description: Contiene información que identifica al proveedor y cómo se habilitó, el evento, el canal en el que se escribió el evento e información del sistema, como los identificadores de proceso y de subproceso.
+description: Contiene información que identifica el proveedor y cómo se ha habilitado, el evento, el canal en el que se escribió el evento y la información del sistema, como los IDs de proceso y subproceso.
 ms.assetid: c532cfa3-b722-4227-a403-5c050d62a92c
 keywords:
-- EventLog (elemento del sistema)
+- Elemento de sistema EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4fef0f9f9e24a855564a8d3df2f94610ff9a8248
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 85f20b364998fb34f3fe9eb6973770b414de501b60e34df6f97a607acb494947
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105695864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118588193"
 ---
 # <a name="system-eventtype-element"></a>Elemento System (EventType)
 
-Contiene información que identifica al proveedor y cómo se habilitó, el evento, el canal en el que se escribió el evento e información del sistema, como los identificadores de proceso y de subproceso.
+Contiene información que identifica el proveedor y cómo se ha habilitado, el evento, el canal en el que se escribió el evento y la información del sistema, como los IDs de proceso y subproceso.
 
 ``` syntax
 <xs:element name="System"
@@ -30,7 +30,7 @@ Contiene información que identifica al proveedor y cómo se habilitó, el event
  />
 ```
 
-El elemento **System** se define mediante el tipo complejo de [**EventType**](eventschema-eventtype-complextype.md) .
+El **tipo complejo EventType** define el [**elemento System.**](eventschema-eventtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,12 +38,12 @@ El elemento **System** se define mediante el tipo complejo de [**EventType**](ev
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

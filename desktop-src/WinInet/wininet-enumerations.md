@@ -1,33 +1,33 @@
 ---
-title: Enumeraciones WinINet
-description: A continuación se muestran los tipos de enumeración de WinINet.
+title: Enumeraciones de WinINet
+description: A continuación se enumeran los tipos de enumeración WinINet.
 ms.assetid: 4ab35273-8347-48c9-8d45-a361e59fb41f
 keywords:
-- WinInet (enumeraciones) WinINet
-- enumeraciones, Windows Internet WinINet
-- enumeraciones, WinInet WinINet
+- WinINet Enumerations WinINet
+- enumeraciones, Windows WinINet de Internet
+- enumeraciones, WinINet WinINet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 876179180bc08d1e1f2041d132be3391c9c46351
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0180b6f2836731baf590558f4a21123bb56f818e7f2aad8c6f511876c1543be8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105704687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118562019"
 ---
-# <a name="wininet-enumerations"></a>Enumeraciones WinINet
+# <a name="wininet-enumerations"></a>Enumeraciones de WinINet
 
-A continuación se muestran los tipos de enumeración de WinINet.
+A continuación se enumeran los tipos de enumeración WinINet.
 
 <dl>
 
-[**esquema de INTERNET \_**](/windows/desktop/api/Wininet/ne-wininet-internet_scheme)  
+[**ESQUEMA \_ DE INTERNET**](/windows/desktop/api/Wininet/ne-wininet-internet_scheme)  
 [**InternetCookieState**](/windows/win32/api/wininet/ne-wininet-internet_scheme)  
 </dl>
 
- 
+ 
 
- 
+ 
 
 
 

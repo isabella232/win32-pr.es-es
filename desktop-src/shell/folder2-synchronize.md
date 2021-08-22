@@ -1,7 +1,7 @@
 ---
-description: Sincroniza todos los archivos sin conexión de la carpeta.
+description: Sincroniza todos los archivos sin conexión de la carpeta .
 ms.assetid: b149df96-0c8e-47b9-b71e-2ad5dcfdeb8f
-title: Método Carpeta2. Synchronize (Shldisp. h)
+title: Método Folder2.Synchronize (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: e9c39c37ff0e44e58aa71c69496dec8bee2745bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a0865ab34c9ffba625a51881e01f5cb2df774da9e8d4a32a7fbd17f6dbf523f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104423519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118458895"
 ---
-# <a name="folder2synchronize-method"></a>Carpeta2. Synchronize (método)
+# <a name="folder2synchronize-method"></a>Método Folder2.Synchronize
 
-Sincroniza todos los archivos sin conexión de la carpeta.
+Sincroniza todos los archivos sin conexión de la carpeta .
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,15 +37,15 @@ iRetVal = Folder2.Synchronize()
 
 Este método no tiene parámetros.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar este método, la característica Archivos sin conexión debe estar habilitada.
+Para usar este método, la Archivos sin conexión debe estar habilitada.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de **Synchronize** para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se muestra el uso adecuado de **Synchronize** para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -66,7 +66,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -116,17 +116,17 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5,0 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

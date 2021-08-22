@@ -1,9 +1,9 @@
 ---
-title: WM/height
-description: El atributo WM/VideoHeight contiene el alto, en píxeles, de un fotograma de vídeo en un flujo.
+title: WM/VideoHeight
+description: El atributo WM/VideoHeight contiene el alto, en píxeles, de un fotograma de vídeo en una secuencia.
 ms.assetid: 13061d5e-3b74-4f17-bd68-826ff9356d63
 keywords:
-- Formato de Windows Media WM/VideoHeight
+- Formato multimedia de Windows WM/VideoHeight
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78c30b148fb9a51de2718bb1ed3ffa78d32c269f
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: f66efc8ca3269912b076271540a4c07beaf41d7754fa3dcb19389dddb255970e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104358192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118698249"
 ---
-# <a name="wmvideoheight"></a>WM/height
+# <a name="wmvideoheight"></a>WM/VideoHeight
 
-El atributo **WM/VideoHeight** contiene el alto, en píxeles, de un fotograma de vídeo en un flujo.
+El **atributo WM/VideoHeight** contiene el alto, en píxeles, de un fotograma de vídeo en una secuencia.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,18 +29,18 @@ g \_ wszWMVideoHeight
 
 ## <a name="data-type"></a>Tipo de datos
 
-**tipo de WMT \_ \_ DWORD**
+**DWORD \_ DE TIPO \_ WMT**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Lista de atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: atributo MS-Exch-House-Identifier
-description: Este atributo contiene una dirección para un contacto en una libreta de direcciones de Exchange Server.
+title: Atributo ms-Exch-House-Identifier
+description: Este atributo contiene una dirección para un contacto en una Exchange de direcciones del servidor.
 ms.assetid: 99a393c7-f36c-4ade-9b14-f339f42225ba
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-Exch-House-Identifier
-- msExchHouseIdentifier esquema de AD de atributos
+- Esquema de AD del atributo ms-Exch-House-Identifier
+- Esquema de AD del atributo msExchHouseIdentifier
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8d6e0fb0b6a65bc72697b863c8022a861508fdd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 18024a765bac019ada8ab2a075fa20e60291abca029c92a3890ead565f794c0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118683049"
 ---
-# <a name="ms-exch-house-identifier-attribute"></a>atributo MS-Exch-House-Identifier
+# <a name="ms-exch-house-identifier-attribute"></a>Atributo ms-Exch-House-Identifier
 
-Este atributo contiene una dirección para un contacto en una libreta de direcciones de Exchange Server.
+Este atributo contiene una dirección para un contacto en una Exchange de direcciones del servidor.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-Exch-House-Identifier                    |
-| Nombre para mostrar de LDAP | msExchHouseIdentifier                       |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-Exch-House-Identifier                    |
+| Ldap-Display-Name | msExchHouseIdentifier                       |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.2.596                      |
-| System-ID-GUID    | a8df7407-c5ea-11d1-bbcb-0080c76670c0        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | a8df7407-c5ea-11d1-menteb-0080c76670c0        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -52,15 +52,15 @@ Este atributo contiene una dirección para un contacto en una libreta de direcci
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x924                                                              |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 128                                                                |
 | Search-Flags           | 0x00000000                                                         |
@@ -73,15 +73,15 @@ Este atributo contiene una dirección para un contacto en una libreta de direcci
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x924                                                              |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 128                                                                |
 | Search-Flags           | 0x00000000                                                         |
@@ -94,15 +94,15 @@ Este atributo contiene una dirección para un contacto en una libreta de direcci
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x924                                                              |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 128                                                                |
 | Search-Flags           | 0x00000000                                                         |
@@ -115,15 +115,15 @@ Este atributo contiene una dirección para un contacto en una libreta de direcci
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x924                                                              |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 128                                                                |
 | Search-Flags           | 0x00000000                                                         |
@@ -136,15 +136,15 @@ Este atributo contiene una dirección para un contacto en una libreta de direcci
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | 0x924                                                              |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 128                                                                |
 | Search-Flags           | 0x00000000                                                         |

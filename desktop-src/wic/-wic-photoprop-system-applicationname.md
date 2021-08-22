@@ -1,21 +1,21 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. ApplicationName.
+description: Directiva de metadatos de fotos para la propiedad System.ApplicationName.
 ms.assetid: bf4b310a-7e63-45c5-a327-2638fb31d676
-title: Directiva de metadatos de la foto de System. ApplicationName
+title: Directiva de metadatos de fotos System.ApplicationName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e36fac2a864cabfd7c1521d72357d187a8aea50
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b3084f21453a82c79925d4a164f5f847c3a24968009b7b8c4236ce3a40872dad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103817699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118710924"
 ---
-# <a name="systemapplicationname-photo-metadata-policy"></a>Directiva de metadatos de la foto de System. ApplicationName
+# <a name="systemapplicationname-photo-metadata-policy"></a>Directiva de metadatos de fotos System.ApplicationName
 
-La Directiva de metadatos de la fotografía para la propiedad [System. ApplicationName](../properties/props-system-applicationname.md) .
+Directiva de metadatos de fotos para [la propiedad System.ApplicationName.](../properties/props-system-applicationname.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ ApplicationName
 
@@ -27,9 +27,9 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
-VT \_ LPWStr
+VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo de entrada
 
@@ -37,40 +37,40 @@ String
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                                         | Formato de disco |
+| Pedido | Ruta de acceso                                         | Formato de disco |
 |-------|----------------------------------------------|-------------|
-|       | /app1/IFD/{ushort = 305}                       | ascii       |
-|       | Programa/app13/irb/8bimiptc/iptc/Originating |             |
+|       | /app1/ifd/{ushort=305}                       | ascii       |
+|       | /app13/irb/8bimiptc/iptc/Originating Program |             |
 |       | /xmp/xmp:CreatorTool                         | unicode     |
 |       | /xmp/xmp:creatortool                         | unicode     |
-|       | /XMP/TIFF: software                           | unicode     |
-|       | /XMP/TIFF: software                           | unicode     |
-|       | Programa/app13/irb/8bimiptc/iptc/Originating |             |
+|       | /xmp/tiff:Software                           | unicode     |
+|       | /xmp/tiff:software                           | unicode     |
+|       | /app13/irb/8bimiptc/iptc/Originating Program |             |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                                         | Formato de disco |
+| Pedido | Ruta de acceso                                         | Formato de disco |
 |-------|----------------------------------------------|-------------|
-|       | /app1/IFD/{ushort = 305}                       | ascii       |
+|       | /app1/ifd/{ushort=305}                       | ascii       |
 |       | /xmp/xmp:CreatorTool                         | unicode     |
 |       | /xmp/xmp:creatortool                         | unicode     |
-|       | /XMP/TIFF: software                           | unicode     |
-|       | /XMP/TIFF: software                           | unicode     |
-|       | Programa/app13/irb/8bimiptc/iptc/Originating |             |
+|       | /xmp/tiff:Software                           | unicode     |
+|       | /xmp/tiff:software                           | unicode     |
+|       | /app13/irb/8bimiptc/iptc/Originating Program |             |
 
 
 
@@ -80,14 +80,14 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                                         |
+| Pedido | Ruta de acceso                                         |
 |-------|----------------------------------------------|
-|       | /app1/IFD/{ushort = 305}                       |
+|       | /app1/ifd/{ushort=305}                       |
 |       | /xmp/xmp:CreatorTool                         |
 |       | /xmp/xmp:creatortool                         |
-|       | /XMP/TIFF: software                           |
-|       | /XMP/TIFF: software                           |
-|       | Programa/app13/irb/8bimiptc/iptc/Originating |
+|       | /xmp/tiff:Software                           |
+|       | /xmp/tiff:software                           |
+|       | /app13/irb/8bimiptc/iptc/Originating Program |
 
 
 
@@ -95,38 +95,38 @@ Se reconcilian los valores de los distintos esquemas.
 
 ### <a name="tiff-policy"></a>Directiva TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta                                       | Formato de disco |
+| Pedido | Ruta de acceso                                       | Formato de disco |
 |-------|--------------------------------------------|-------------|
-|       | /IFD/{ushort = 305}                          | ascii       |
-|       | Programa/ifd/iptc/Originating              |             |
+|       | /ifd/{ushort=305}                          | ascii       |
+|       | /ifd/iptc/Originating Program              |             |
 |       | /ifd/xmp/xmp:CreatorTool                   | unicode     |
 |       | /ifd/xmp/xmp:creatortool                   | unicode     |
-|       | /IFD/XMP/TIFF: software                     | unicode     |
-|       | /IFD/XMP/TIFF: software                     | unicode     |
-|       | Programa/ifd/iptc/Originating              |             |
-|       | Programa/ifd/irb/8bimiptc/iptc/Originating |             |
+|       | /ifd/xmp/tiff:Software                     | unicode     |
+|       | /ifd/xmp/tiff:software                     | unicode     |
+|       | /ifd/iptc/Originating Program              |             |
+|       | /ifd/irb/8bimiptc/iptc/Originating Program |             |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                                       | Formato de disco |
+| Pedido | Ruta de acceso                                       | Formato de disco |
 |-------|--------------------------------------------|-------------|
-|       | /IFD/{ushort = 305}                          | ascii       |
+|       | /ifd/{ushort=305}                          | ascii       |
 |       | /ifd/xmp/xmp:CreatorTool                   | unicode     |
 |       | /ifd/xmp/xmp:creatortool                   | unicode     |
-|       | /IFD/XMP/TIFF: software                     | unicode     |
-|       | /IFD/XMP/TIFF: software                     | unicode     |
-|       | Programa/ifd/iptc/Originating              |             |
-|       | Programa/ifd/irb/8bimiptc/iptc/Originating |             |
+|       | /ifd/xmp/tiff:Software                     | unicode     |
+|       | /ifd/xmp/tiff:software                     | unicode     |
+|       | /ifd/iptc/Originating Program              |             |
+|       | /ifd/irb/8bimiptc/iptc/Originating Program |             |
 
 
 
@@ -136,27 +136,27 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                                       |
+| Pedido | Ruta de acceso                                       |
 |-------|--------------------------------------------|
-|       | /IFD/{ushort = 305}                          |
+|       | /ifd/{ushort=305}                          |
 |       | /ifd/xmp/xmp:CreatorTool                   |
 |       | /ifd/xmp/xmp:creatortool                   |
-|       | /IFD/XMP/TIFF: software                     |
-|       | /IFD/XMP/TIFF: software                     |
-|       | Programa/ifd/iptc/Originating              |
-|       | Programa/ifd/irb/8bimiptc/iptc/Originating |
+|       | /ifd/xmp/tiff:Software                     |
+|       | /ifd/xmp/tiff:software                     |
+|       | /ifd/iptc/Originating Program              |
+|       | /ifd/irb/8bimiptc/iptc/Originating Program |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. ApplicationName](../properties/props-system-applicationname.md)
+[System.ApplicationName](../properties/props-system-applicationname.md)
 </dt> </dl>
 
  

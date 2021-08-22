@@ -1,5 +1,5 @@
 ---
-title: Enumeración SwarmStatus (Deliveryoptimization. h)
+title: Enumeración SwarmStatus (Deliveryoptimization.h)
 description: Define el estado de un archivo dentro del cliente de optimización de entrega.
 ms.assetid: D40ABDD3-5573-4A8D-8608-4CB0F396CCAD
 keywords:
@@ -15,18 +15,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3622f819679c2fd2b28d66e371a8b88e0a2d2f70
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3a0f18d9e3344e05348bba0e972a18b7bf64df5edf41fde1cabc3f6a5b106d11
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118541950"
 ---
 # <a name="swarmstatus-enumeration"></a>Enumeración SwarmStatus
 
 Define el estado de un archivo dentro del cliente de optimización de entrega.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -54,14 +54,14 @@ El archivo se está descargando.
 <span id="SwarmStatus_Complete"></span><span id="swarmstatus_complete"></span><span id="SWARMSTATUS_COMPLETE"></span>**SwarmStatus_Complete**
 </dt> <dd>
 
-Se completó la descarga del archivo.
+La descarga del archivo se ha completado.
 
 </dd> <dt>
 
 <span id="SwarmStatus_Caching"></span><span id="swarmstatus_caching"></span><span id="SWARMSTATUS_CACHING"></span>**SwarmStatus_Caching**
 </dt> <dd>
 
-El archivo se está almacenando en caché.
+El archivo se almacena en caché.
 
 </dd> <dt>
 
@@ -76,11 +76,11 @@ La descarga del archivo está en pausa.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1709 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Windows Server, versión 1709 \[ solo para aplicaciones de escritorio\]<br/>                                     |
-| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1709 \[ solo aplicaciones de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                     |
+| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 

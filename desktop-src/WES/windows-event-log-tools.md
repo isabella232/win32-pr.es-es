@@ -1,23 +1,23 @@
 ---
-title: Herramientas del registro de eventos de Windows
-description: El registro de eventos de Windows proporciona las siguientes herramientas que se usan para compilar el proveedor.
+title: Windows Herramientas del registro de eventos
+description: Windows El registro de eventos proporciona las siguientes herramientas que se usan para compilar el proveedor.
 ms.assetid: 20087fdf-3e9f-4090-8103-5864f1c9753c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93e604c291ff1046789ef9f3efba00ebb7305122
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: ff7a0aef85e85e096381b65d41458f1cb955ba9701452498d21c45ff25cb3058
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "104420492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118587262"
 ---
-# <a name="windows-event-log-tools"></a>Herramientas del registro de eventos de Windows
+# <a name="windows-event-log-tools"></a>Windows Herramientas del registro de eventos
 
-El registro de eventos de Windows proporciona las siguientes herramientas que se usan para compilar el proveedor.
+Windows El registro de eventos proporciona las siguientes herramientas que se usan para compilar el proveedor.
 
 
 
 | Herramienta                                                           | Descripción                                                                                   |
 |----------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [**Compilador de mensajes (MC.exe)**](message-compiler--mc-exe-.md)  | Utilidad de línea de comandos que se usa para compilar manifiestos de instrumentación y archivos de texto de mensaje. |
-| WevtUtil.exe                                                   | Utilidad de línea de comandos que se usa principalmente para registrar el proveedor en el equipo. También se puede utilizar para obtener información de metadatos sobre el proveedor, sus eventos y los canales en los que se registran los eventos, y para consultar los eventos de un canal o un archivo de registro. La herramienta de WevtUtil.exe se incluye en% WINDIR% \\ system32. Para obtener información de uso, escriba "wevtutil/?" en un símbolo del sistema.<br/> Este comando está limitado a los miembros del grupo administradores y debe ejecutarse con privilegios elevados.|
+| [**Compilador de mensajes (MC.exe)**](message-compiler--mc-exe-.md)  | Una utilidad de línea de comandos que se usa para compilar manifiestos de instrumentación y archivos de texto de mensaje. |
+| WevtUtil.exe                                                   | Una utilidad de línea de comandos que se usa principalmente para registrar el proveedor en el equipo. También puede usarlo para obtener información de metadatos sobre el proveedor, sus eventos y los canales en los que registra eventos, y para consultar eventos de un canal o archivo de registro. La WevtUtil.exe se incluye en %windir% \\ System32. Para obtener información de uso, escriba "wevtutil /?" en un símbolo del sistema.<br/> Este comando se limita a los miembros del grupo Administradores y debe ejecutarse con privilegios elevados.|

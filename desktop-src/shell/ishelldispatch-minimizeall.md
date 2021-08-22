@@ -1,7 +1,7 @@
 ---
-description: Minimiza todas las ventanas del escritorio. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar minimizar todas las ventanas en sistemas antiguos o hacer clic en el icono Mostrar escritorio en la barra de tareas.
+description: Minimiza todas las ventanas del escritorio. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar Minimizar todos los Windows en sistemas anteriores o hacer clic en el icono Mostrar escritorio de la barra de tareas.
 ms.assetid: 25DD56B0-221E-44a2-9FAD-FB358ADD7FF1
-title: Método IShellDispatch. MinimizeAll (Shldisp. h)
+title: Método IShellDispatch.MinimizeAll (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: b8b8f20ab82a6216a03d772151f852fd9c69b917
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 18f1256f93c9cd18d0c904f090716641b466e91319dbef323ee5107b802f82ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118452990"
 ---
-# <a name="ishelldispatchminimizeall-method"></a>IShellDispatch. MinimizeAll, método
+# <a name="ishelldispatchminimizeall-method"></a>Método IShellDispatch.MinimizeAll
 
-Minimiza todas las ventanas del escritorio. Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de tareas y seleccionar **minimizar todas las ventanas** en sistemas antiguos o hacer clic en el icono **Mostrar escritorio** en la barra de tareas.
+Minimiza todas las ventanas del escritorio. Este método tiene el mismo efecto que hacer clic con el botón derecho en  la barra de tareas y seleccionar Minimizar todos **los Windows** en sistemas anteriores o hacer clic en el icono Mostrar escritorio de la barra de tareas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,15 +55,15 @@ Este método no devuelve ningún valor.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método se implementa y se obtiene acceso a él a través del método [**Shell. MinimizeAll**](shell-minimizeall.md) .
+Este método se implementa y se accede a través del [**método Shell.MinimizeAll.**](shell-minimizeall.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En los siguientes ejemplos se muestra el uso de **MinimizeAll** en uso para JScript, VBScript y Visual Basic.
+En los ejemplos siguientes se muestra el uso de **MinimizeAll** en uso para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -79,7 +79,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -117,17 +117,17 @@ End Sub
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

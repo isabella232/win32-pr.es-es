@@ -1,7 +1,7 @@
 ---
-description: El método EnableLog del objeto de instalador habilita el registro del tipo de mensaje seleccionado para todas las sesiones de instalación posteriores en el espacio de proceso actual.
+description: El método EnableLog del objeto Installer habilita el registro del tipo de mensaje seleccionado para todas las sesiones de instalación posteriores en el espacio de proceso actual.
 ms.assetid: eb384587-0870-4812-866c-b483c1dfa841
-title: Instalador. EnableLog (método)
+title: Método Installer.EnableLog
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 573b56dda0479f58595b0849f6443fd8a2e67e71
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 48481a701b7e78de372f5579dab5c9d5976a68063958b0812d6ae1ddc08b109a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118631701"
 ---
-# <a name="installerenablelog-method"></a>Instalador. EnableLog (método)
+# <a name="installerenablelog-method"></a>Método Installer.EnableLog
 
-El método **EnableLog** del objeto de [**instalador**](installer-object.md) habilita el registro del tipo de mensaje seleccionado para todas las sesiones de instalación posteriores en el espacio de proceso actual.
+El **método EnableLog** del objeto [**Installer**](installer-object.md) habilita el registro del tipo de mensaje seleccionado para todas las sesiones de instalación posteriores en el espacio de proceso actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,27 +43,27 @@ Installer.EnableLog(
 *logMode* 
 </dt> <dd>
 
-Cadena requerida que contiene letras que representan los tipos de mensaje que se van a registrar. La cadena puede ser una combinación de los valores siguientes.
+Cadena necesaria que contiene letras que representan los tipos de mensaje que se registrarán. La cadena puede ser una combinación de los valores siguientes.
 
 
 
-| Value | Descripción                                                                                            |
+| Valor | Descripción                                                                                            |
 |-------|--------------------------------------------------------------------------------------------------------|
 | I     | Mensajes de solo información.                                                                             |
-| w     | Mensajes de advertencia no graves.                                                                            |
-| h     | Mensajes de error que pueden ser errores irrecuperables.                                                               |
-| f     | Lista de archivos en uso que se deben reemplazar.                                                         |
-| a     | Inicio de la notificación de acción.                                                                          |
+| w     | Mensajes de advertencia no irreales.                                                                            |
+| e     | Mensajes de error que pueden ser errores irreales.                                                               |
+| f     | Lista de archivos en uso que deben reemplazarse.                                                         |
+| a     | Notificación de inicio de acción.                                                                          |
 | r     | Registro de datos de acción que contiene contenido específico de la acción.                                              |
 | u     | Mensajes de solicitud de usuario.                                                                                 |
 | c     | Parámetros de inicialización de la interfaz de usuario.                                                                          |
-| m     | Mensaje de memoria insuficiente.                                                                                 |
-| v     | Envía grandes cantidades de información al archivo de registro que no suele ser útil para los usuarios. Se puede usar para la compatibilidad. |
-| p     | Tabla de propiedades dump; "propiedad = valor" al finalizar el motor                                          |
-| \+    | Anexar al archivo de registro existente.                                                                           |
+| m     | Mensaje de memoria fuera de memoria.                                                                                 |
+| v     | Envía grandes cantidades de información al archivo de registro que no suele ser útil para los usuarios. Se puede usar para soporte técnico. |
+| p     | Tabla de propiedades dump; "property = value" al finalizar el motor                                          |
+| \+    | Anexe al archivo de registro existente.                                                                           |
 | !     | Vacíe cada línea en el archivo de registro.                                                                       |
-| x     | Información de depuración adicional. Esta opción solo está disponible en Windows Server 2003.                      |
-| o     | Mensajes de espacio insuficiente en disco.                                                                            |
+| x     | Información de depuración adicional. Esta opción solo está disponible con Windows Server 2003.                      |
+| o     | Mensajes de espacio fuera del disco.                                                                            |
 
 
 
@@ -71,10 +71,10 @@ Cadena requerida que contiene letras que representan los tipos de mensaje que se
 
 </dd> <dt>
 
-*MSDTC* 
+*Logfile* 
 </dt> <dd>
 
-Cadena requerida que contiene la ruta de acceso al archivo de registro que se va a crear. Use una cadena vacía ("") para desactivar el registro.
+Cadena necesaria que contiene la ruta de acceso al archivo de registro que se va a crear. Use una cadena vacía ("") para desactivar el registro.
 
 </dd> </dl>
 
@@ -82,17 +82,17 @@ Cadena requerida que contiene la ruta de acceso al archivo de registro que se va
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La ruta de acceso a la ubicación del archivo de registro ya debe existir al utilizar este método. El instalador no crea la estructura de directorios para el archivo de registro.
+La ruta de acceso a la ubicación del archivo de registro ya debe existir cuando se usa este método. El instalador no crea la estructura de directorios para el archivo de registro.
 
-Las opciones de registro establecidas mediante **EnableLog** invalidan cualquier configuración existente de la Directiva de registro de Windows Installer.
+Las opciones de registro establecidas mediante **EnableLog** invalidan cualquier configuración de directiva de registro Windows instalador existente.
 
-De forma predeterminada, el registro sobrescribe un archivo de registro existente. Debe usar la letra ' + ' en el modo de registro para anexar a un archivo de registro existente.
+El registro sobrescribe un archivo de registro existente de forma predeterminada. Debe usar la letra "+" en el modo de registro para anexar a un archivo de registro existente.
 
-No se recomienda la opción '! ' porque puede ralentizar considerablemente la instalación. Esta opción puede ser útil al depurar una instalación de.
+No se recomienda la opción "!" porque puede ralentizar considerablemente la instalación. Esta opción puede ser útil al depurar una instalación.
 
-El siguiente script de ejemplo activa el registro detallado para una instalación de. Al final de la instalación, el archivo de registro generado estará en c: \\ temp \\ install. log.
+El siguiente script de ejemplo activa el registro detallado para una instalación. Al final de la instalación, el archivo de registro generado estará en c: \\ temp \\ install.log.
 
 
 ```VB
@@ -108,19 +108,19 @@ El siguiente script de ejemplo activa el registro detallado para una instalació
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller se define como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IID IInstaller se define como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Registro de Windows Installer](windows-installer-logging.md)
+[Windows Registro del instalador](windows-installer-logging.md)
 </dt> </dl>
 
  

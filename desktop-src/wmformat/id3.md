@@ -3,25 +3,25 @@ title: Compatibilidad con ID3
 description: ID3 es una organización que ha definido un conjunto de estándares para incluir metadatos en archivos de audio MPEG Layer-3 (MP3).
 ms.assetid: 8c1f1114-48d8-4dce-b7ab-0293265a875c
 keywords:
-- SDK de Windows Media Format, compatibilidad con ID3
-- Advanced Systems Format (ASF), compatibilidad con ID3
+- Windows SDK de formato multimedia, compatibilidad con ID3
+- Formato de sistemas avanzados (ASF), compatibilidad con ID3
 - ASF (formato de sistemas avanzados), compatibilidad con ID3
-- metadatos, ID3
+- metadata,ID3
 - ID3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26f356dae63b1d3672b584bb61956f478b67a697
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 27c92fb9282483b6fd01b1149220e5f30421c3c1285bd533d64afef91709314e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103778906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118702986"
 ---
 # <a name="id3-support"></a>Compatibilidad con ID3
 
-ID3 es una organización que ha definido un conjunto de estándares para incluir metadatos en archivos de audio MPEG Layer-3 (MP3). Los objetos del SDK de Windows Media Format proporcionan compatibilidad con atributos compatibles con ID3. Se admiten tres versiones diferentes de ID3: ID3v1. x, ID3v 2.2 y ID3v 2.3/V2, 4. Para obtener una lista de los atributos que son equivalentes a los fotogramas ID3, consulte [compatibilidad con etiquetas ID3](id3-tag-support.md).
+ID3 es una organización que ha definido un conjunto de estándares para incluir metadatos en archivos de audio MPEG Layer-3 (MP3). Los objetos del SDK Windows Media Format proporcionan compatibilidad con atributos compatibles con ID3. Se admiten tres versiones distintas de ID3: ID3v1.x, ID3v2.2 e ID3v2.3/v2,4. Para obtener una lista de los atributos que equivalen a fotogramas ID3, vea [Compatibilidad con etiquetas ID3.](id3-tag-support.md)
 
-A menos que se indique lo contrario, los objetos de este SDK no realizan la validación de los datos de los fotogramas ID3. Por ejemplo, el atributo de metadatos de [**WM/letra \_ sincronizado**](wm-lyrics-synchronised.md) almacena la letra de la canción con las marcas de tiempo correspondientes. Al escribir un atributo de **WM/letra \_ sincronizado** , los objetos de este SDK no comprobarán para asegurarse de que las marcas de tiempo están en orden cronológico o realizan la validación de cualquier tipo.
+A menos que se indique lo contrario, los objetos de este SDK no realizan ninguna validación de los datos del marco ID3. Por ejemplo, el atributo de metadatos [**WM/La sincronización Desastroso almacena \_**](wm-lyrics-synchronised.md) la canción con las marcas de tiempo correspondientes. Al escribir un atributo **WM/Desastroso \_** sincronizado, los objetos de este SDK no comprobarán que las marcas de tiempo estén en orden cronológico ni realicen la validación de ningún tipo.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -36,9 +36,9 @@ A menos que se indique lo contrario, los objetos de este SDK no realizan la vali
 [**Trabajar con metadatos**](working-with-metadata.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

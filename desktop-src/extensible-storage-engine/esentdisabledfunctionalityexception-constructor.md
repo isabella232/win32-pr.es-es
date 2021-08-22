@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentDisabledFunctionalityException'
-title: Constructor de EsentDisabledFunctionalityException
+description: 'Más información sobre: Constructor EsentDisabledFunctionalityException'
+title: Constructor EsentDisabledFunctionalityException
 TOCTitle: 'EsentDisabledFunctionalityException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentDisabledFunctionalityException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentdisabledfunctionalityexception.esentdisabledfunctionalityexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0b5a4ab707d745623ac17f80a208a93aa4daad5b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 45019a73091ddee1e6ce06a67db2d7f7976da2fe25912e3dfd36d0e4f5102d59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105649271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118779699"
 ---
-# <a name="esentdisabledfunctionalityexception-constructor"></a>Constructor de EsentDisabledFunctionalityException
+# <a name="esentdisabledfunctionalityexception-constructor"></a>Constructor EsentDisabledFunctionalityException
 
 Inicializa una nueva instancia de la clase EsentDisabledFunctionalityException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentDisabledFunctionalityException()
 
 [Miembros de EsentDisabledFunctionalityException](./esentdisabledfunctionalityexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,9 +1,9 @@
 ---
-title: ncacn_nb_nb atributo)
-description: La \_ \_ palabra clave ncacn NB NB identifica NetBEUI en NetBIOS como la familia de protocolos para el extremo. Esta familia de protocolos está obsoleta y no debe usarse en aplicaciones nuevas.
+title: ncacn_nb_nb atributo
+description: La palabra clave ncacn \_ nb \_ nb identifica NetBEUI sobre NetBIOS como la familia de protocolos para el punto de conexión. Esta familia de protocolos está obsoleta y no debe usarse en nuevas aplicaciones.
 ms.assetid: 8bab2784-44ba-4356-85c1-5bd17e75d6a8
 keywords:
-- ncacn_nb_nb el atributo MIDL
+- ncacn_nb_nb atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c562bb0acd546fd2c8f92a92074e599c8a505dc9
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 84a2ea48bc1472d69c2247f227b94193326927481838894e24efbce9e09afc87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105665819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118642160"
 ---
-# <a name="ncacn_nb_nb-attribute"></a>\_atributo ncacn NB \_ NB
+# <a name="ncacn_nb_nb-attribute"></a>Atributo ncacn \_ nb \_ nb
 
-La palabra clave **ncacn \_ NB \_ NB** identifica NetBEUI en NetBIOS como la familia de protocolos para el extremo. Esta familia de protocolos está obsoleta y no debe usarse en aplicaciones nuevas.
+La **palabra clave ncacn \_ nb \_ nb** identifica NetBEUI sobre NetBIOS como la familia de protocolos para el punto de conexión. Esta familia de protocolos está obsoleta y no debe usarse en nuevas aplicaciones.
 
 ``` syntax
 endpoint("ncacn_nb_nb:[port-name]")
@@ -31,21 +31,21 @@ endpoint("ncacn_nb_nb:[port-name]")
 
 <dl> <dt>
 
-*nombre del puerto* 
+*port-name* 
 </dt> <dd>
 
-Especifica un valor de 8 bits opcional comprendido entre 1 y 255. Los valores de menor que 0x20 están reservados. Si no se especifica el valor de *nombre de Puerto* , el servicio de asignación de puntos de conexión selecciona el valor de puerto.
+Especifica un valor opcional de 8 bits que va de 1 a 255. Los valores de menos de 0x20 están reservados. Si no *se especifica el valor port-name,* el servicio de asignación de puntos de conexión selecciona el valor del puerto.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La sintaxis de la cadena de puerto NetBIOS, como todas las cadenas de puerto, se define mediante la implementación de transporte y es independiente de la especificación IDL. El compilador MIDL realiza una comprobación de sintaxis limitada, pero no garantiza que la especificación del punto de conexión sea correcta. Es posible que se notifiquen algunas clases de errores en tiempo de ejecución en lugar de en tiempo de compilación.
+La sintaxis de la cadena de puerto NetBIOS, como todas las cadenas de puerto, se define mediante la implementación de transporte y es independiente de la especificación de IDL. El compilador MIDL realiza una comprobación de sintaxis limitada, pero no garantiza que la especificación del punto de conexión sea correcta. Algunas clases de errores se pueden notifican en tiempo de ejecución en lugar de en tiempo de compilación.
 
 > [!Note]  
 > Esta familia de protocolos no se admite en Windows XP.
 
- 
+ 
 
 ## <a name="examples"></a>Ejemplos
 
@@ -65,30 +65,30 @@ interface iface
 
 <dl> <dt>
 
-[**finales**](endpoint.md)
+[**Extremo**](endpoint.md)
 </dt> <dt>
 
 [Archivo de definición de interfaz (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**\_TCP IP \_ ncacn**](ncacn-ip-tcp.md)
+[**ncacn \_ ip \_ tcp**](ncacn-ip-tcp.md)
 </dt> <dt>
 
-[**\_TCP NB \_ ncacn**](ncacn-nb-tcp.md)
+[**ncacn \_ nb \_ tcp**](ncacn-nb-tcp.md)
 </dt> <dt>
 
-[**NP de ncacn \_**](ncacn-np.md)
+[**ncacn \_ np**](ncacn-np.md)
 </dt> <dt>
 
-[**ncacn \_ SPX**](ncacn-spx.md)
+[**ncacn \_ spx**](ncacn-spx.md)
 </dt> <dt>
 
 [**ncalrpc**](ncalrpc.md)
 </dt> <dt>
 
-[**enlace de cadenas**](/windows/desktop/Rpc/string-binding)
+[**enlace de cadena**](/windows/desktop/Rpc/string-binding)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

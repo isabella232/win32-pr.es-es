@@ -1,47 +1,47 @@
 ---
-description: Puede establecer los atributos de transacción manualmente mediante la herramienta administrativa Servicios de componentes o puede Agregar compatibilidad mediante programación para las transacciones al escribir el componente.
+description: Puede establecer los atributos de transacción manualmente mediante la herramienta administrativa Servicios de componentes, o bien puede agregar compatibilidad mediante programación para las transacciones al escribir el componente.
 ms.assetid: b0d701c7-47ef-4034-873f-dd4428efb4c7
 title: Establecer el atributo de transacción
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c0690a50f79c77a18b089cec1865dfbb9e7f428
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: de6310d2544090d4b551a93782b4756b3d89f2d6d365dfc09aec4658d5d3e1b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118546222"
 ---
 # <a name="setting-the-transaction-attribute"></a>Establecer el atributo de transacción
 
-Puede establecer los atributos de transacción manualmente mediante la herramienta administrativa Servicios de componentes o puede Agregar compatibilidad mediante programación para las transacciones al escribir el componente.
+Puede establecer los atributos de transacción manualmente mediante la herramienta administrativa Servicios de componentes, o bien puede agregar compatibilidad mediante programación para las transacciones al escribir el componente.
 
-Para más información sobre los valores de atributo de transacción, consulte [configuración de transacciones](configuring-transactions.md).
+Para obtener más información sobre los valores de atributo de transacción, [vea Configuring Transactions](configuring-transactions.md).
 
 **Para establecer el valor del atributo mediante la herramienta administrativa Servicios de componentes**
 
-1.  En el árbol de consola, haga clic con el botón secundario en el componente que desee configurar y, a continuación, haga clic en **propiedades**.
+1.  En el árbol de consola, haga clic con el botón derecho en el componente que desea configurar y, a continuación, haga clic en **Propiedades.**
 
-2.  En el cuadro de diálogo Propiedades de componente, haga clic en la pestaña **transacciones** .
+2.  En el cuadro de diálogo Propiedades del componente, haga clic **en la pestaña** Transacciones .
 
-3.  En **compatibilidad con transacciones**, seleccione la opción correspondiente al valor que desee. **No se admite** el valor predeterminado de todos los componentes.
+3.  En **Compatibilidad con transacciones,** seleccione la opción para el valor que desee. El valor predeterminado de todos los componentes es **No se admite**.
 
-4.  Haga clic en **OK**.
+4.  Haga clic en **Aceptar**.
 
 Debe repetir este procedimiento para cada componente.
 
-## <a name="to-set-the-attribute-value-programmatically"></a>Para establecer el valor de atributo mediante programación
+## <a name="to-set-the-attribute-value-programmatically"></a>Para establecer el valor del atributo mediante programación
 
-Los programadores que usan Microsoft Visual Basic pueden establecer el atributo de transacción con **MTSTransactionMode**, una propiedad de módulo de clase para los proyectos dll de ActiveX. Visual Basic asigna la selección al valor de atributo de transacción COM+ equivalente y publica el valor en la biblioteca de tipos del componente.
+Los programadores que usan Microsoft Visual Basic pueden establecer el atributo de transacción con **MTSTransactionMode**, una propiedad de módulo de clase para ActiveX dll. Visual Basic asigna la selección al valor de atributo de transacción COM+ equivalente y publica el valor en la biblioteca de tipos del componente.
 
-En la tabla siguiente se asigna cada valor constante **MTSTransactionMode** a su valor de transacción com+ equivalente.
+En la tabla siguiente se asigna cada valor constante **MTSTransactionMode** a su valor de transacción COM+ equivalente.
 
 
 
-| MTSTransactionMode constante)         | Valor de transacción de COM+             |
+| Constante MTSTransactionMode         | Valor de transacción COM+             |
 |-------------------------------------|------------------------------------|
 | NotAnMTSObject (valor predeterminado)<br/> | Disabled<br/>                |
-| Notransactions<br/>           | No compatible (valor predeterminado)<br/> |
-| RequiresTransaction <br/>     | Obligatorio<br/>                |
+| NoTransactions<br/>           | No compatible (valor predeterminado)<br/> |
+| RequiresTransaction <br/>     | Requerido<br/>                |
 | UsesTransaction <br/>         | Compatible<br/>               |
 | RequiresNewTransaction <br/>  | Se requiere nueva<br/>            |
 
@@ -49,7 +49,7 @@ En la tabla siguiente se asigna cada valor constante **MTSTransactionMode** a su
 
  
 
-También se puede tener acceso a la propiedad **MTSTransactionMode** mediante programación con la API de la biblioteca de administración de com+.
+También se puede acceder a la propiedad **MTSTransactionMode** mediante programación mediante la API de biblioteca de administración de COM+.
 
  
 

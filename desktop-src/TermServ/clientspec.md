@@ -4,7 +4,7 @@ description: Se usa con la propiedad ClientProtocolSpec para especificar el prot
 ms.assetid: BFB2CD3C-04BF-4CB3-B156-8B08AE697327
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto enumeración ClientSpec
+- Enumeración ClientSpec Servicios de Escritorio remoto
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f52fbdbaa37c392de727dd2640580800d813d51
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5706600ea0854a3b83d961965ba3cc8f0084c2969fc31438344378781410729f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118856387"
 ---
 # <a name="clientspec-enumeration"></a>Enumeración ClientSpec
 
-Se usa con la propiedad [**ClientProtocolSpec**](imsrdpclientadvancedsettings8-clientprotocolspec.md) para especificar el protocolo de escritorio remoto usado entre el cliente y el servidor.
+Se usa con [**la propiedad ClientProtocolSpec para**](imsrdpclientadvancedsettings8-clientprotocolspec.md) especificar el protocolo de escritorio remoto usado entre el cliente y el servidor.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -46,21 +46,21 @@ typedef enum  {
 <span id="FullMode"></span><span id="fullmode"></span><span id="FULLMODE"></span>**FullMode**
 </dt> <dd>
 
-El protocolo es el protocolo de Escritorio remoto de Windows 8 completo.
+El protocolo es completo Windows 8 Escritorio remoto protocolo.
 
 </dd> <dt>
 
 <span id="ThinClientMode"></span><span id="thinclientmode"></span><span id="THINCLIENTMODE"></span>**ThinClientMode**
 </dt> <dd>
 
-El protocolo se limita al uso del códec de Windows 7 con SP1 RemoteFX y una caché más pequeña. El resto de los códecs están deshabilitados. Este protocolo tiene la superficie de memoria más pequeña.
+El protocolo se limita al uso de la Windows 7 con el códec de RemoteFX SP1 y una memoria caché más pequeña. Todos los demás códecs están deshabilitados. Este protocolo tiene la superficie de memoria más pequeña.
 
 </dd> <dt>
 
 <span id="SmallCacheMode"></span><span id="smallcachemode"></span><span id="SMALLCACHEMODE"></span>**SmallCacheMode**
 </dt> <dd>
 
-El protocolo es el mismo que **FullMode**, salvo que usa una caché más pequeña.
+El protocolo es el mismo que **FullMode**, salvo que usa una memoria caché más pequeña.
 
 </dd> </dl>
 
@@ -68,7 +68,7 @@ El protocolo es el mismo que **FullMode**, salvo que usa una caché más pequeñ
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                         |

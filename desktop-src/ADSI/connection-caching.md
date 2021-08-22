@@ -1,25 +1,25 @@
 ---
 title: Almacenamiento en caché de conexiones
-description: Cuando se realiza una conexión a un servidor, el identificador de conexión se almacena en la memoria caché del equipo cliente para ese proceso hasta que se cierre la conexión.
+description: Cuando se establece una conexión a un servidor, el identificador de conexión se almacena en caché en el equipo cliente para ese proceso hasta que se cierra esa conexión.
 ms.assetid: 927afd35-8703-4234-b6a8-6320a3667532
 ms.tgt_platform: multiple
 keywords:
-- ADSI de conexión en caché
-- almacenamiento en caché de conexiones
+- ADSI de almacenamiento en caché de conexión
+- almacenamiento en caché de conexión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 857d102a52be9c7ccf40f9076892a85d5b3b8683
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fa0fbf63d65a6941e986069289db201a237deb9ddc7058f291218c1496d0a40e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104075077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118429032"
 ---
 # <a name="connection-caching"></a>Almacenamiento en caché de conexiones
 
-Cuando se realiza una conexión a un servidor, el identificador de conexión se almacena en la memoria caché del equipo cliente para ese proceso hasta que se cierre la conexión. Si el mismo servidor, puerto y credenciales se usan en una conexión posterior y solo difieren las marcas de autenticación de **\_ \_ enlace de servidor** de ADS **\_ Fast \_ BIND** o ADS, ADSI volverá a usar la conexión existente. ADSI realiza este almacenamiento en caché de conexiones por proceso.
+Cuando se establece una conexión a un servidor, el identificador de conexión se almacena en caché en el equipo cliente para ese proceso hasta que se cierra esa conexión. Si se usan el mismo servidor, puerto y credenciales en una conexión posterior y solo las marcas de autenticación BIND o **ADS \_ SERVER \_ BIND** de **ADS \_ FAST \_** difieren, ADSI reutilizará la conexión existente. ADSI realiza este almacenamiento en caché de conexiones por proceso.
 
-Para aumentar el rendimiento, reutilice las conexiones existentes siempre que sea posible.
+Para aumentar el rendimiento, reutilice las conexiones existentes cuando sea posible.
 
 En el ejemplo de código siguiente se muestra cómo funciona el almacenamiento en caché de conexiones.
 
@@ -64,9 +64,9 @@ Set cachedConn = Nothing
 
 
 
- 
+ 
 
- 
+ 
 
 
 
