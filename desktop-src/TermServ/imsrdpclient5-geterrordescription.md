@@ -1,22 +1,22 @@
 ---
-title: IMsRdpClient5 GetErrorDescription, método
-description: Recupera la descripción del error para los eventos de desconexión de la sesión.
+title: Método IMsRdpClient5 GetErrorDescription
+description: Recupera la descripción del error para los eventos de desconexión de sesión.
 ms.assetid: 8c8f7b10-7f79-4586-845e-e99f5ca81905
 ms.tgt_platform: multiple
 keywords:
 - Método GetErrorDescription Servicios de Escritorio remoto
-- Método GetErrorDescription Servicios de Escritorio remoto, interfaz IMsRdpClient5
-- Interfaz IMsRdpClient5 Servicios de Escritorio remoto, método GetErrorDescription
-- Método GetErrorDescription Servicios de Escritorio remoto, interfaz IMsRdpClient6
-- Interfaz IMsRdpClient6 Servicios de Escritorio remoto, método GetErrorDescription
-- Método GetErrorDescription Servicios de Escritorio remoto, interfaz IMsRdpClient7
-- Interfaz IMsRdpClient7 Servicios de Escritorio remoto, método GetErrorDescription
-- Método GetErrorDescription Servicios de Escritorio remoto, interfaz IMsRdpClient8
-- Interfaz IMsRdpClient8 Servicios de Escritorio remoto, método GetErrorDescription
-- Método GetErrorDescription Servicios de Escritorio remoto, interfaz IMsRdpClient9
-- Interfaz IMsRdpClient9 Servicios de Escritorio remoto, método GetErrorDescription
-- Método GetErrorDescription Servicios de Escritorio remoto, interfaz IMsRdpClient10
-- Interfaz IMsRdpClient10 Servicios de Escritorio remoto, método GetErrorDescription
+- Método GetErrorDescription Servicios de Escritorio remoto , interfaz IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto , método GetErrorDescription
+- Método GetErrorDescription Servicios de Escritorio remoto , interfaz IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto , método GetErrorDescription
+- Método GetErrorDescription Servicios de Escritorio remoto , interfaz IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , método GetErrorDescription
+- Método GetErrorDescription Servicios de Escritorio remoto , interfaz IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , método GetErrorDescription
+- Método GetErrorDescription Servicios de Escritorio remoto , interfaz IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , método GetErrorDescription
+- Método GetErrorDescription Servicios de Escritorio remoto , interfaz IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto , método GetErrorDescription
 topic_type:
 - apiref
 api_name:
@@ -32,16 +32,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c402a0128286964ddeb1c53cd805e4ef6414bfb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 197025b4cfb842cf4ca38af64124c02415240ac6fc878f9c121d4e228b77f5b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001493"
 ---
-# <a name="imsrdpclient5geterrordescription-method"></a>IMsRdpClient5:: GetErrorDescription (método)
+# <a name="imsrdpclient5geterrordescription-method"></a>IMsRdpClient5::GetErrorDescription (método)
 
-Recupera la descripción del error para los eventos de desconexión de la sesión.
+Recupera la descripción del error para los eventos de desconexión de sesión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,24 +60,24 @@ HRESULT GetErrorDescription(
 
 <dl> <dt>
 
-*disconnectReason* \[ de\]
+*disconnectReason* \[ En\]
 </dt> <dd>
 
-Motivo de la desconexión.
+Motivo de desconexión.
 
 </dd> <dt>
 
-*extendedDisconnectReason* \[ de\]
+*extendedDisconnectReason* \[ En\]
 </dt> <dd>
 
 Proporciona información detallada sobre por qué se inició una desconexión.
 
 </dd> <dt>
 
-*pBstrErrorMsg* \[ enuncia\]
+*pBstrErrorMsg* \[ out\]
 </dt> <dd>
 
-Puntero a una variable **BSTR** que recibe el texto del mensaje de error.
+Puntero a una **variable BSTR** que recibe el texto del mensaje de error.
 
 </dd> </dl>
 
@@ -95,7 +95,7 @@ Este método no devuelve ningún valor.
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID \_ IMsRdpClient5 se define como 4eb5335b-6429-477d-B922-e06a28ecd8bf<br/>       |
+| IID<br/>                      | IID \_ IMsRdpClient5 se define como 4eb5335b-6429-477d-b922-e06a28ecd8bf<br/>       |
 
 
 

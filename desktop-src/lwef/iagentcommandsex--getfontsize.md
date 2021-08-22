@@ -4,16 +4,16 @@ description: IAgentCommandsEx GetFontSize
 ms.assetid: 8173e026-d28f-43d8-a8b4-96d1d97a8b68
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48a2450d94e89dd9dddc00a11af7f37bf4837558
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e92f2ce1908ea5f37d24fb8a085204917440f61ae30feb1e596639d0240c353d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976275"
 ---
 # <a name="iagentcommandsexgetfontsize"></a>IAgentCommandsEx::GetFontSize
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT GetFontSize(
@@ -21,9 +21,9 @@ HRESULT GetFontSize(
 );                    // for font displayed in character's pop-up menu
 ```
 
-Recupera el valor para el tamaño de la fuente que se muestra en el menú emergente del carácter.
+Recupera el valor del tamaño de la fuente que se muestra en el menú emergente del carácter.
 
--   Devuelve S \_ OK para indicar que la operación se realizó correctamente.
+-   Devuelve S \_ OK para indicar que la operación se ha realizado correctamente.
 
 <dl> <dt>
 
@@ -34,18 +34,18 @@ Dirección de un valor que recibe el tamaño de la fuente.
 
 </dd> </dl>
 
-El tamaño en puntos de la fuente devuelta corresponde al tamaño definido para mostrar texto en el menú emergente del carácter cuando el cliente es de entrada-activo. El valor predeterminado de la configuración de fuente se basa en la configuración de fuente de menú para la configuración de identificador de idioma del carácter, o si no se establece, la configuración de idioma predeterminado del usuario.
+El tamaño de punto de la fuente devuelta corresponde al tamaño definido para mostrar texto en el menú emergente del carácter cuando el cliente está activo en la entrada. El valor predeterminado de la configuración de fuente se basa en la configuración de fuente del menú para la configuración del identificador de idioma del carácter o, si no se establece, en la configuración de idioma predeterminada del usuario.
 
-Esta propiedad solo se aplica al uso de la aplicación cliente del carácter; la configuración no afecta a otros clientes del carácter u otros caracteres de la aplicación cliente.
+Esta propiedad solo se aplica al uso del carácter por parte de la aplicación cliente; la configuración no afecta a otros clientes del carácter u otros caracteres de la aplicación cliente.
 
 ## <a name="see-also"></a>Consulte también
 
-[**IAgentCommandsEx:: SetFontSize**](iagentcommandsex--setfontsize.md), [ **IAgentCommandsEx:: SetFontName**](iagentcommandsex--setfontname.md)
+[**IAgentCommandsEx::SetFontSize**](iagentcommandsex--setfontsize.md), [ **IAgentCommandsEx::SetFontName**](iagentcommandsex--setfontname.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

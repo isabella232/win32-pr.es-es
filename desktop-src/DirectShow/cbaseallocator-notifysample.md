@@ -1,7 +1,7 @@
 ---
 description: El método NotifySample libera todos los subprocesos que están esperando ejemplos.
 ms.assetid: b09c48a0-9cd5-44a7-9267-d2a11e8cde4c
-title: Método CBaseAllocator. NotifySample (Amfilter. h)
+title: Método CBaseAllocator.NotifySample (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: acaf5e45eac6a630d0589e3c8fad106ae29fa3dc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b1b73a54ae9b5ccabacfbb1153c5d0d91f951e83082a1bdd3c7f7551ad813804
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017483"
 ---
-# <a name="cbaseallocatornotifysample-method"></a>CBaseAllocator. NotifySample, método
+# <a name="cbaseallocatornotifysample-method"></a>Método CBaseAllocator.NotifySample
 
 El `NotifySample` método libera todos los subprocesos que están esperando ejemplos.
 
@@ -44,11 +44,11 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando hay subprocesos en espera de ejemplos, el valor de [**CBaseAllocator:: m \_ lWaiting**](cbaseallocator-m-lwaiting.md) es mayor que cero. Si *m \_ lWaiting* es mayor que cero, este método llama a la función **ReleaseSemaphore (** en el semáforo [**CBaseAllocator:: m \_ hSem**](cbaseallocator-m-hsem.md) , activando los subprocesos en espera. También restablece *m \_ lWaiting* en cero.
+Cuando hay subprocesos que esperan ejemplos, el valor de [**CBaseAllocator::m \_ lWaiting**](cbaseallocator-m-lwaiting.md) es mayor que cero. Si *m \_ lWaiting* es mayor que cero, este método llama a la función **ReleaseSemaphore** en el semáforo [**CBaseAllocator::m \_ hSem,**](cbaseallocator-m-hsem.md) activando los subprocesos en espera. También restablece *m \_ lWaiting* a cero.
 
-Se llama a este método desde el método [**CBaseAllocator:: ReleaseBuffer**](cbaseallocator-releasebuffer.md) , cuando se devuelve un ejemplo a la lista libre. y del método [**CBaseAllocator::D ecommit**](cbaseallocator-decommit.md) , cuando se desconfirma el asignador.
+Se llama a este método desde el método [**CBaseAllocator::ReleaseBuffer,**](cbaseallocator-releasebuffer.md) cuando se devuelve un ejemplo a la lista libre; y desde [**el método CBaseAllocator::D ecommit,**](cbaseallocator-decommit.md) cuando se desasigna el asignador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,8 +56,8 @@ Se llama a este método desde el método [**CBaseAllocator:: ReleaseBuffer**](cb
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Se llama a este método desde el método [**CBaseAllocator:: ReleaseBuffer**](cb
 
 <dl> <dt>
 
-[**Clase CBaseAllocator**](cbaseallocator.md)
+[**CBaseAllocator (clase)**](cbaseallocator.md)
 </dt> </dl>
 
  

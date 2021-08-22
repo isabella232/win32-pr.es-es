@@ -1,17 +1,17 @@
 ---
-description: Exponga las nuevas interfaces de un filtro a los clientes como parte de la creación de una página de propiedades de filtro para un filtro directShow personalizado.
+description: Exponer las nuevas interfaces de un filtro a los clientes como parte de la creación de una página de propiedades de filtro para un filtro DirectShow personalizado.
 ms.assetid: a0e52ba9-9f7c-4cf3-ba5f-b0035ed1794c
-title: Paso 3. Compatibilidad con QueryInterface
+title: Paso 3. Compatibilidad con QueryInterface
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84b62132a6f24c68453ad4e51f72cdd9a2a78c65
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 0761a0ecf57bc7769cf40623c6929655a9f757b66b35bb506167d4263a7e02a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112410028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072459"
 ---
-# <a name="step-3-support-queryinterface"></a>Paso 3. Compatibilidad con QueryInterface
+# <a name="step-3-support-queryinterface"></a>Paso 3. Compatibilidad con QueryInterface
 
 Para exponer las nuevas interfaces del filtro a los clientes, haga lo siguiente:
 

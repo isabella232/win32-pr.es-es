@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: b00067af61a55e61f70b0c799a1512edf284f11c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d057f80d5cf29f6660ee3a2ebd651c468496529a56a11147225ebd504451184c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105623"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069395"
 ---
-# <a name="thread_v2-class"></a>Clase \_ Thread V2
+# <a name="thread_v2-class"></a>Clase Thread \_ V2
 
 Esta clase es la clase primaria para los eventos de subproceso.
 
@@ -40,23 +40,23 @@ La **clase Thread \_ V2** no define ningún miembro.
 
 ## <a name="remarks"></a>Comentarios
 
-Para habilitar eventos de subproceso en una sesión de registro del kernel de NT, especifique la marca **EVENT \_ TRACE FLAG \_ \_ THREAD** en el **miembro EnableFlags** de una estructura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) al llamar a la [**función StartTrace.**](/windows/win32/api/evntrace/nf-evntrace-starttracea) También puede especificar las marcas siguientes:
+Para habilitar eventos de subproceso en una sesión de registro del kernel de NT, especifique la marca **EVENT \_ TRACE FLAG \_ \_ THREAD** en el miembro **EnableFlags** de una estructura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) al llamar a la [**función StartTrace.**](/windows/win32/api/evntrace/nf-evntrace-starttracea) También puede especificar las marcas siguientes:
 
 -   **CSWITCH \_ DE MARCA DE SEGUIMIENTO DE \_ \_ EVENTOS**
 -   **DISTRIBUIDOR DE \_ MARCAS DE SEGUIMIENTO DE \_ \_ EVENTOS**
 
-Los consumidores de seguimiento de eventos pueden implementar un procesamiento especial para eventos de subproceso llamando a la función [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) y especificando [**ThreadGuid**](nt-kernel-logger-constants.md) como *parámetro pGuid.* Use los siguientes tipos de eventos para identificar el evento de subproceso real al consumir eventos.
+Los consumidores de seguimiento de eventos pueden implementar un procesamiento especial para eventos de subproceso llamando a la función [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) y [**especificando ThreadGuid**](nt-kernel-logger-constants.md) como *parámetro pGuid.* Use los siguientes tipos de eventos para identificar el evento de subproceso real al consumir eventos.
 
 
 
 | Tipo de evento                                                      | Descripción                                                                                                                                                                                                                          |
 |-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **EVENT \_ TRACE \_ TYPE \_ END**(el valor del tipo de evento es 2)<br/>   | Evento de subproceso final. La [**clase \_ MOF Thread V2 \_ TypeGroup1**](thread-v2-typegroup1.md) define los datos de evento para este evento.                                                                                                        |
-| **EVENT \_ TRACE \_ TYPE \_ START**(el valor del tipo de evento es 1)<br/> | Iniciar evento de subproceso. La [**clase \_ MOF Thread V2 \_ TypeGroup1**](thread-v2-typegroup1.md) define los datos de evento para este evento.                                                                                                      |
-| Valor de tipo de evento, 3                                             | Iniciar evento de subproceso de recopilación de datos. Enumera los subprocesos que se están ejecutando actualmente en el momento en que se inicia la sesión del kernel. La [**clase MOF Thread \_ V2 \_ TypeGroup1**](thread-v2-typegroup1.md) define los datos de evento para este evento. |
+| **EVENTO \_ TRACE \_ TYPE \_ END**(el valor del tipo de evento es 2)<br/>   | Evento de subproceso final. La [**clase MOF Thread \_ V2 \_ TypeGroup1**](thread-v2-typegroup1.md) define los datos de evento para este evento.                                                                                                        |
+| **EVENTO \_ TRACE \_ TYPE \_ START**(el valor del tipo de evento es 1)<br/> | Iniciar evento de subproceso. La [**clase MOF Thread \_ V2 \_ TypeGroup1**](thread-v2-typegroup1.md) define los datos de evento para este evento.                                                                                                      |
+| Valor del tipo de evento, 3                                             | Iniciar evento de subproceso de recopilación de datos. Enumera los subprocesos que se están ejecutando actualmente en el momento en que se inicia la sesión del kernel. La [**clase MOF Thread \_ V2 \_ TypeGroup1**](thread-v2-typegroup1.md) define los datos de evento para este evento. |
 | Valor de tipo de evento, 4                                             | Evento de subproceso de recopilación de datos final. Enumera los subprocesos que se están ejecutando actualmente en el momento en que finaliza la sesión del kernel. La [**clase MOF Thread \_ V2 \_ TypeGroup1**](thread-v2-typegroup1.md) define los datos de evento para este evento.     |
 | Valor del tipo de evento, 36                                            | Evento de cambio de contexto. La [**clase MOF**](cswitch.md) de CSwitch define los datos de evento para este evento.                                                                                                                                |
-| Valor del tipo de evento, 50                                            | Evento de subproceso listo. La [**clase MOF ReadyThread**](readythread.md) define los datos de evento para este evento.                                                                                                                          |
+| Valor de tipo de evento, 50                                            | Evento de subproceso listo. La [**clase MOF ReadyThread**](readythread.md) define los datos de evento para este evento.                                                                                                                          |
 
 
 
@@ -68,14 +68,14 @@ Los eventos de inicio de procesos y subprocesos se pueden registrar en el contex
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

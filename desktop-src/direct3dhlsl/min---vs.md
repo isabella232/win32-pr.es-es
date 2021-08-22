@@ -1,6 +1,6 @@
 ---
-title: min-vs
-description: Calcula el mínimo de los orígenes. | min-vs
+title: min- vs
+description: Calcula el mínimo de los orígenes. | min- vs
 ms.assetid: cecfe98b-8efd-4fbf-a7b5-d228de724e71
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,47 +9,47 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: eda47b75398b8643f7010ff7468f72f4a7d8c199
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 2fee49698d323b55404b319e28a90e6741e8de51e96d3015d5b348bc741fee84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104986547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986345"
 ---
-# <a name="min---vs"></a>min-vs
+# <a name="min---vs"></a>min- vs
 
 Calcula el mínimo de los orígenes.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| min DST, src0, SRC1 |
+| min dst, src0, src1 |
 |---------------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src0 es un registro de origen.
--   SRC1 es un registro de origen.
+-   src1 es un registro de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| min.                    | x    | x    | x    | x     | x    | x     |
+| mín.                    | x    | x    | x    | x     | x    | x     |
 
 
 
  
 
-En el siguiente fragmento de código se muestran las operaciones realizadas.
+El fragmento de código siguiente muestra las operaciones realizadas.
 
 
 ```

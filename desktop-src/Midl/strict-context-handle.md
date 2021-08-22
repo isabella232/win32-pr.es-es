@@ -1,9 +1,9 @@
 ---
-title: strict_context_handle atributo)
-description: El atributo \ \_ \_ ACF de identificador de contexto \ STRICT establece restricciones en los identificadores de contexto.
+title: strict_context_handle atributo
+description: El atributo \strict \_ context \_ handle\ ACF establece restricciones en los identificadores de contexto.
 ms.assetid: c34f9018-d519-4a75-ad6f-70d386a20817
 keywords:
-- strict_context_handle el atributo MIDL
+- strict_context_handle atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f8e66fd0754ec82de2354983e10e23ffc6329569
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 0db19c74efa323fa7e3abc4bfd17c14a471cbb9c81414ae78064f84bfc19fa7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103995129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013583"
 ---
-# <a name="strict_context_handle-attribute"></a>atributo de identificador de \_ contexto estricto \_
+# <a name="strict_context_handle-attribute"></a>atributo \_ strict context \_ handle
 
-El atributo ACF de **\[ \_ \_ identificador \] de contexto estricto** establece restricciones en los identificadores de contexto.
+El **\[ identificador de contexto \_ estricto \_ del \]** atributo ACF establece restricciones en los identificadores de contexto.
 
 ``` syntax
 [ 
@@ -38,30 +38,30 @@ interface interface-name
 
 <dl> <dt>
 
-*interfaz-atributo-lista* 
+*interface-attribute-list* 
 </dt> <dd>
 
-Otros atributos ACF que se aplican a la interfaz en conjunto. Los atributos válidos incluyen el [**\_ identificador automático**](auto-handle.md), el [**\_ identificador implícito**](implicit-handle.md), el [**\_ identificador explícito**](explicit-handle.md)y [**Optimize**](optimize.md), [**code**](code.md)o [**nocode**](nocode.md). Separe varios atributos con comas.
+Otros atributos de ACF que se aplican a la interfaz en su conjunto. Entre los atributos válidos [**se incluyen el \_ identificador**](auto-handle.md)automático , [**el identificador \_ implícito,**](implicit-handle.md)el [**identificador \_**](explicit-handle.md)explícito y [**la optimización,**](optimize.md) [**el código**](code.md)o la [**codificación .**](nocode.md) Separe varios atributos con comas.
 
 </dd> <dt>
 
-*nombre de interfaz* 
+*interface-name* 
 </dt> <dd>
 
 Nombre de la interfaz.
 
 </dd> <dt>
 
-*instrucciones de interface-Definition* 
+*interface-definition-statements* 
 </dt> <dd>
 
-Una o más instrucciones de MIDL que definen los elementos de la [**interfaz**](interface.md).
+Una o varias instrucciones MIDL que definen los elementos de la [**interfaz**](interface.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Normalmente, cuando una llamada a un método de interfaz genera un identificador de contexto, ese identificador está disponible libremente para cualquier otra interfaz. Cuando use el atributo de **\[ \_ \_ identificador \] de contexto STRICT** , garantizará que los métodos de esa interfaz solo aceptarán los identificadores de contexto creados por un método de la misma interfaz. Las interfaces compiladas sin un **\[ \_ \_ identificador \] de contexto estricto** no pueden aceptar identificadores de contexto creados en interfaces compiladas con un **\[ \_ \_ \] identificador de contexto estricto**.
+Normalmente, cuando una llamada a un método de interfaz genera un identificador de contexto, ese identificador pasa a estar disponible libremente para cualquier otra interfaz. Cuando se usa el atributo **\[ strict context \_ \_ handle, \]** se garantiza que los métodos de esa interfaz solo acepten identificadores de contexto creados por un método a partir de la misma interfaz. Las interfaces compiladas sin **\[ un identificador de contexto \_ \_ estricto \]** no pueden aceptar identificadores de contexto creados en interfaces compiladas con **\[ un identificador de \_ contexto \_ estricto. \]**
 
 ## <a name="see-also"></a>Vea también
 
@@ -70,33 +70,33 @@ Normalmente, cuando una llamada a un método de interfaz genera un identificador
 [Archivo de configuración de la aplicación (ACF)](application-configuration-file-acf-.md)
 </dt> <dt>
 
-[**codifica**](code.md)
+[**Código**](code.md)
 </dt> <dt>
 
 [Identificadores de contexto](/windows/desktop/Rpc/context-handles)
 </dt> <dt>
 
-[**\_serializar identificador de contexto \_**](context-handle-serialize.md)
+[**serialización \_ del \_ identificador de contexto**](context-handle-serialize.md)
 </dt> <dt>
 
-[**identificador de contexto de \_ \_ noserialización**](context-handle-noserialize.md)
+[**context \_ handle \_ noserialize**](context-handle-noserialize.md)
 </dt> <dt>
 
-[**\_identificador explícito**](explicit-handle.md)
+[**identificador \_ explícito**](explicit-handle.md)
 </dt> <dt>
 
-[**\_identificador implícito**](implicit-handle.md)
+[**identificador \_ implícito**](implicit-handle.md)
 </dt> <dt>
 
 [**nocode**](nocode.md)
 </dt> <dt>
 
-[**optimiz**](optimize.md)
+[**Optimizar**](optimize.md)
 </dt> <dt>
 
-[escribir \_ el \_ identificador de contexto STRICT \_](type-strict-context-handle.md)
+[identificador \_ de contexto estricto de \_ \_ tipo](type-strict-context-handle.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: La propiedad ReadyState recupera el ReadyState del objeto MSWebDVD.
+description: La propiedad ReadyState recupera readyState del objeto MSWebDVD.
 ms.assetid: e43b0fa4-4a5a-4492-a6a9-bf271f58e11b
-title: Propiedad ReadyState (Ocidl. h)
+title: Propiedad ReadyState (Ocidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - ocidl.h
-ms.openlocfilehash: a52b20349c58e8bd44458266da6a0a33ea149c98
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 029798e66d8ed69dc18bbb23dafc8b047d770f1bc91ac1b86ca7bdb09963c2e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072789"
 ---
 # <a name="readystate-property"></a>Propiedad ReadyState
 
@@ -27,7 +27,7 @@ ms.locfileid: "105679438"
 
  
 
-La `ReadyState` propiedad recupera el ReadyState del objeto **MSWebDVD** .
+La `ReadyState` propiedad recupera el valor ReadyState del objeto **MSWebDVD.**
 
 ``` syntax
 [ iReadyState = ] MSWebDVD.ReadyState
@@ -35,7 +35,7 @@ La `ReadyState` propiedad recupera el ReadyState del objeto **MSWebDVD** .
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor entero que representa el objeto ReadyState del control.
+Devuelve un valor entero que representa readyState del control.
 
 
 
@@ -43,7 +43,7 @@ Devuelve un valor entero que representa el objeto ReadyState del control.
 |-------------|-----------------------------------------------------------|
 | 0           | Estado de inicialización predeterminado.                             |
 | 1           | El objeto está cargando sus propiedades.                         |
-| 2           | El objeto se ha inicializado.                              |
+| 2           | Se ha inicializado el objeto .                              |
 | 3           | El objeto es interactivo, pero no todos sus datos están disponibles. |
 | 4           | El objeto ha recibido todos sus datos.                         |
 
@@ -51,11 +51,11 @@ Devuelve un valor entero que representa el objeto ReadyState del control.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta propiedad es de solo lectura y no tiene ningún valor predeterminado.
+Esta propiedad es de solo lectura sin ningún valor predeterminado.
 
-Cualquier objeto incrustado en una página web expone la `ReadyState` propiedad.
+Cualquier objeto incrustado en una página web expone la `ReadyState` propiedad .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ Cualquier objeto incrustado en una página web expone la `ReadyState` propiedad.
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Ocidl. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Ocidl.h</dt> </dl> |
 
 
 

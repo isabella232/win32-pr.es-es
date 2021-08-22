@@ -1,21 +1,21 @@
 ---
-title: Asignación de una unidad a un recurso compartido
-description: En el ejemplo siguiente se muestra cómo conectar una letra de unidad a un recurso compartido de servidor remoto con una llamada a la función WNetAddConnection2. El ejemplo informa al usuario de si la llamada se realizó correctamente o no.
+title: Asignar una unidad a un recurso compartido
+description: En el ejemplo siguiente se muestra cómo conectar una letra de unidad a un recurso compartido de servidor remoto con una llamada a la función WNetAddConnection2. El ejemplo informa al usuario de si la llamada se ha realizado correctamente o no.
 ms.assetid: 1533aa5c-c3f3-4bd6-b307-fb4bd4c9aa85
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99cb4c930250f74cc549d9b5a31f121b92abad0a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 37095f085b3124cfaa049de4bf61ae830c94191c94c5993f7532920b122b63d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104421057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053383"
 ---
-# <a name="assigning-a-drive-to-a-share"></a>Asignación de una unidad a un recurso compartido
+# <a name="assigning-a-drive-to-a-share"></a>Asignar una unidad a un recurso compartido
 
-En el ejemplo siguiente se muestra cómo conectar una letra de unidad a un recurso compartido de servidor remoto con una llamada a la función [**WNetAddConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnection2a) . El ejemplo informa al usuario de si la llamada se realizó correctamente o no.
+En el ejemplo siguiente se muestra cómo conectar una letra de unidad a un recurso compartido de servidor remoto con una llamada a la función [**WNetAddConnection2.**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnection2a) El ejemplo informa al usuario de si la llamada se ha realizado correctamente o no.
 
-Para probar el siguiente ejemplo de código, realice los pasos siguientes:
+Para probar el ejemplo de código siguiente, realice los pasos siguientes:
 
 1.  Cambie las líneas siguientes a cadenas válidas:
 
@@ -71,6 +71,6 @@ else
 
 
 
- 
+ 
 
- 
+ 

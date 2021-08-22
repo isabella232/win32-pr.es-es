@@ -1,9 +1,9 @@
 ---
-title: Lista de reproducción. itemSelectedColor
-description: El atributo itemSelectedColor especifica o recupera un valor que indica el color del texto de un elemento seleccionado en la lista de reproducción.
+title: PLAYLIST.itemSelectedColor
+description: El atributo itemSelectedColor especifica o recupera un valor que indica el color de texto de un elemento seleccionado en la lista de reproducción.
 ms.assetid: b7da5874-b8eb-46b3-8455-23bf146773cf
 keywords:
-- Windows Media Player de lista de reproducción. itemSelectedColor
+- PLAYLIST.itemSelectedColor Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca82e9e8e68daefc746b5bb4a68a20452a584fdc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 51cddc80450f7051c4bdaacb78ecce62ed72a4f94f9b10ee583cae89209f027c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105650155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054223"
 ---
-# <a name="playlistitemselectedcolor"></a>Lista de reproducción. itemSelectedColor
+# <a name="playlistitemselectedcolor"></a>PLAYLIST.itemSelectedColor
 
-El atributo **itemSelectedColor** especifica o recupera un valor que indica el color del texto de un elemento seleccionado en la lista de reproducción.
+El **atributo itemSelectedColor** especifica o recupera un valor que indica el color de texto de un elemento seleccionado en la lista de reproducción.
 
 ``` syntax
         elementID.itemSelectedColor
@@ -29,15 +29,15 @@ El atributo **itemSelectedColor** especifica o recupera un valor que indica el c
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura que representa un color. El valor predeterminado es el color del texto de resaltado de Windows.
+Este atributo es una cadena de **lectura** y escritura que representa un color. El valor predeterminado es el color Windows texto resaltado.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------|
-| Versión<br/> | Windows Media Player 10<br/> |
+| Versión<br/> | Reproductor de Windows Media 10<br/> |
 
 
 

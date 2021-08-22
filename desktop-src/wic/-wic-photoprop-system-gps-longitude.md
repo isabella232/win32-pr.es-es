@@ -1,23 +1,23 @@
 ---
-description: La Directiva de metadatos de la fotografía para la propiedad System. GPS. longitude.
+description: Directiva de metadatos de fotos para la propiedad System.GPS.Longitude.
 ms.assetid: 36539e20-d00c-4bbb-b9ee-1cf5e4b8df4b
-title: Directiva de metadatos de fotos de System. GPS. longitud
+title: Directiva de metadatos de fotos System.GPS.Longitude
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25eb9869bc536f97adfc8f3c0f5b1f70c8bf030f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff05dd8ada6e10bbd3109187d34b220ff352ae984f92bd68281c56d3c1a29a76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087193"
 ---
-# <a name="systemgpslongitude-photo-metadata-policy"></a>Directiva de metadatos de fotos de System. GPS. longitud
+# <a name="systemgpslongitude-photo-metadata-policy"></a>Directiva de metadatos de fotos System.GPS.Longitude
 
-La Directiva de metadatos de la fotografía para la propiedad [System. GPS. longitude](../properties/props-system-gps-longitude.md) .
+Directiva de metadatos de fotos para [la propiedad System.GPS.Longitude.](../properties/props-system-gps-longitude.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-\_Longitud de GPS de PKEY \_
+Longitud GPS de PKEY \_ \_
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,13 +27,13 @@ JPEG, TIFF
 
 Sí
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
-VT \_ Vector \| VT \_ R8
+VT \_ VECTOR \| VT \_ R8
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Este valor se puede escribir escribiendo en System. GPS. LongitudeNumerator y System. GPS. LongitudeDenominator. No se puede escribir directamente. Se reconcilian los valores de los distintos esquemas.
+Este valor se puede escribir escribiendo en System.GPS.LongitudeNumerator y System.GPS.LongitudeDenominator. No se puede escribir directamente. Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
@@ -41,22 +41,22 @@ Este valor se puede escribir escribiendo en System. GPS. LongitudeNumerator y Sy
 
 
 
-| Pedido | Ruta                     | Formato de disco |
+| Pedido | Ruta de acceso                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 4} |             |
+| 1     | /app1/ifd/gps/{ushort=4} |             |
 | 2     | /xmp/exif:GPSLongitude   |             |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                     | Formato de disco |
+| Pedido | Ruta de acceso                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /app1/IFD/GPS/{ushort = 4} |             |
+| 1     | /app1/ifd/gps/{ushort=4} |             |
 | 2     | /xmp/exif:GPSLongitude   |             |
 
 
@@ -67,9 +67,9 @@ Este valor se puede escribir escribiendo en System. GPS. LongitudeNumerator y Sy
 
 
 
-| Pedido | Ruta                     |
+| Pedido | Ruta de acceso                     |
 |-------|--------------------------|
-| 1     | /app1/IFD/GPS/{ushort = 4} |
+| 1     | /app1/ifd/gps/{ushort=4} |
 | 2     | /xmp/exif:gpslongitude   |
 
 
@@ -82,22 +82,22 @@ Este valor se puede escribir escribiendo en System. GPS. LongitudeNumerator y Sy
 
 
 
-| Pedido | Ruta                       | Formato de disco |
+| Pedido | Ruta de acceso                       | Formato de disco |
 |-------|----------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 4}        |             |
+| 1     | /ifd/gps/{ushort=4}        |             |
 | 2     | /ifd/xmp/exif:GPSLongitude |             |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                       | Formato de disco |
+| Pedido | Ruta de acceso                       | Formato de disco |
 |-------|----------------------------|-------------|
-| 1     | /IFD/GPS/{ushort = 4}        |             |
+| 1     | /ifd/gps/{ushort=4}        |             |
 | 2     | /ifd/xmp/exif:GPSLongitude |             |
 
 
@@ -108,22 +108,22 @@ Este valor se puede escribir escribiendo en System. GPS. LongitudeNumerator y Sy
 
 
 
-| Pedido | Ruta                       |
+| Pedido | Ruta de acceso                       |
 |-------|----------------------------|
-| 1     | /IFD/GPS/{ushort = 4}        |
+| 1     | /ifd/gps/{ushort=4}        |
 | 2     | /ifd/xmp/exif:gpslongitude |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. GPS. longitud](../properties/props-system-gps-longitude.md)
+[System.GPS.Longitude](../properties/props-system-gps-longitude.md)
 </dt> </dl>
 
  

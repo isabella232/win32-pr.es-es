@@ -1,24 +1,24 @@
 ---
-description: El atributo src especifica el nombre de la ruta de acceso de un archivo multimedia. El archivo puede ser cualquier tipo compatible con DirectShow, o una imagen fija. Los formatos admitidos para imágenes fijas son mapa de bits, mapa de bits independiente del dispositivo, GIF y JPEG.
+description: El atributo src especifica el nombre de ruta de acceso de un archivo multimedia. El archivo puede ser cualquier tipo admitido por DirectShow o una imagen fija. Los formatos admitidos para las imágenes fijas son mapa de bits, mapa de bits independiente del dispositivo, GIF y JPEG.
 ms.assetid: 45476826-bde5-43b7-8102-30c94260740f
 title: src (atributo)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a64a801de0c7e04a68db5e474fb9f57a1dcf593
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bfe12a804e5d89e963dadb95519faea4d44fb1a02d9151c67ada1e355a9c293a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072539"
 ---
 # <a name="src-attribute"></a>src (atributo)
 
 > [!Note]  
-> \[En desuso. Esta API se puede quitar de las versiones futuras de Windows.\]
+> \[Obsoleto. Esta API puede quitarse de futuras versiones de Windows.\]
 
  
 
-El `src` atributo especifica el nombre de la ruta de acceso de un archivo multimedia. El archivo puede ser cualquier tipo compatible con DirectShow, o una imagen fija. Los formatos admitidos para imágenes fijas son mapa de bits, mapa de bits independiente del dispositivo, GIF y JPEG.
+El `src` atributo especifica el nombre de ruta de acceso de un archivo multimedia. El archivo puede ser cualquier tipo admitido por DirectShow o una imagen fija. Los formatos admitidos para las imágenes fijas son mapa de bits, mapa de bits independiente del dispositivo, GIF y JPEG.
 
 ## <a name="possible-values"></a>Valores posibles
 

@@ -1,7 +1,7 @@
-- name: Backup
+- name: Copia de seguridad
   href: backup.md
   items:
-    - name: Claves y valores del registro para copias de seguridad y restauración
+    - name: Claves y valores del Registro para copia de seguridad y restauración
       href: registry-keys-for-backup-and-restore.md
     - name: Srdelayed.exe
       href: srdelayed-exe.md
@@ -12,18 +12,18 @@
           href: tape-initialization.md
         - name: Entrada y salida de cinta
           href: tape-input-and-output.md
-        - name: Crear una aplicación de copia de seguridad
+        - name: Creación de una aplicación de copia de seguridad
           href: creating-a-backup-application.md
-        - name: Copia de seguridad y restauración de vínculos físicos
+        - name: Copia de seguridad y restauración de vínculos duros
           href: backing-up-and-restoring-hard-links.md
-    - name: Almacenamiento de Single-Instance y copia de seguridad de SIS
+    - name: Single-Instance store y copia de seguridad de SIS
       href: single-instance-store-and-sis-backup.md
       items:
-        - name: Vínculos de SIS y puntos de análisis
+        - name: Vínculos de SIS y puntos de reanlabaciones
           href: sis-links-and-reparse-points.md
-        - name: Los archivos de Common-Store y el almacén común de SIS
+        - name: El almacén común de SIS y Common-Store archivos
           href: the-sis-common-store-and-common-store-files.md
-        - name: Ventajas del uso de SIS
+        - name: Ventajas de usar SIS
           href: advantages-of-using-sis.md
     - name: Referencia de copia de seguridad
       href: backup-reference.md

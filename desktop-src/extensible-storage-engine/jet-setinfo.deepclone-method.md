@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_SETINFO. Método DeepClone'
+description: 'Más información sobre: JET_SETINFO. Método DeepClone'
 title: JET_SETINFO. Método DeepClone
 TOCTitle: 'DeepClone method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_SETINFO.DeepClone
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: eaee521e838f5280962a99d58b87c8e1a72cc870
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00a2034f3b4cd9ef087f36963490cb01ad078d57abe0732266c0b87f5e0bbc3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104540779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118979405"
 ---
 # <a name="jet_setinfodeepclone-method"></a>JET_SETINFO. Método DeepClone
 
-Devuelve una copia en profundidad del objeto.
+Devuelve una copia en profundidad del objeto .
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,8 +56,8 @@ public JET_SETINFO DeepClone()
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_SETINFO](./jet-setinfo-class.md)  
-Una copia en profundidad del objeto.  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_SETINFO](./jet-setinfo-class.md)  
+Copia en profundidad del objeto.  
 
 #### <a name="implements"></a>Implementaciones
 
@@ -67,8 +67,8 @@ Una copia en profundidad del objeto.
 
 #### <a name="reference"></a>Referencia
 
-[JET_SETINFO (clase)](./jet-setinfo-class.md)
+[JET_SETINFO clase](./jet-setinfo-class.md)
 
-[Miembros de JET_SETINFO](./jet-setinfo-members.md)
+[JET_SETINFO miembros](./jet-setinfo-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

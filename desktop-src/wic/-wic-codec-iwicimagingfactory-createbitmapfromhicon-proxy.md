@@ -1,7 +1,7 @@
 ---
 description: Función de proxy para el método CreateBitmapFromHICON.
 ms.assetid: 5df3d9d9-1b23-4f38-b97e-0b77d6db99d8
-title: IWICImagingFactory_CreateBitmapFromHICON_Proxy función)
+title: IWICImagingFactory_CreateBitmapFromHICON_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 58f9f37dc27c76a9eaa55d6baec52efbb773343e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1e6582a7548c380d9904e9892d164a2f0778be4fe64fabaf4090b86fd932ea8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119088327"
 ---
-# <a name="iwicimagingfactory_createbitmapfromhicon_proxy-function"></a>IWICImagingFactory \_ CreateBitmapFromHICON \_ función proxy
+# <a name="iwicimagingfactory_createbitmapfromhicon_proxy-function"></a>Función IWICImagingFactory \_ CreateBitmapFromHICON \_ Proxy
 
-Función de proxy para el método [**CreateBitmapFromHICON**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createbitmapfromhicon) .
+Función de proxy para [**el método CreateBitmapFromHICON.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createbitmapfromhicon)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,23 +42,23 @@ HRESULT IWICImagingFactory_CreateBitmapFromHICON_Proxy(
 
 <dl> <dt>
 
-*pFactory* \[ de\]
+*pFactory* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) \** _
+Tipo: **[ **IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory)\***
 
 </dd> <dt>
 
-_hIcon * \[ en\]
+*hIcon* \[ En\]
 </dt> <dd>
 
 Tipo: **HICON**
 
-Identificador de icono del que se va a crear el nuevo mapa de bits.
+Identificador de icono a partir del que se crea el mapa de bits.
 
 </dd> <dt>
 
-*ppIBitmap* \[ enuncia\]
+*ppIBitmap* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmap**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap)\*\***
@@ -71,7 +71,7 @@ Puntero que recibe un puntero al nuevo mapa de bits.
 
 Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
@@ -79,11 +79,11 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows aplicaciones \[ de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

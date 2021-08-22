@@ -1,7 +1,7 @@
 ---
-description: La \_ estructura Job info \_ 1 especifica información del trabajo de impresión, como el valor del identificador de trabajo, el nombre de la impresora para la que se pone en cola el trabajo, el nombre del equipo que creó el trabajo de impresión, el nombre del usuario que posee el trabajo de impresión, etc.
+description: La estructura JOB INFO 1 especifica información del trabajo de impresión, como el valor del identificador de trabajo, el nombre de la impresora para la que se encuentra en cola el trabajo, el nombre de la máquina que creó el trabajo de impresión, el nombre del usuario que posee el trabajo de impresión, y así \_ \_ sucesivamente.
 ms.assetid: d42ada89-6bc7-4006-81d9-dbcc0347edd3
-title: Estructura de JOB_INFO_1 (winspool. h)
+title: JOB_INFO_1 estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: d56d4d6bce15a661ce141d8e22d27a15837a9f6f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6e8d5900a0f2d0a2dce5c12d2629abfc80776cdc0ada1354070005e28fbcd37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971334"
 ---
-# <a name="job_info_1-structure"></a>Estructura de información de trabajo \_ \_ 1
+# <a name="job_info_1-structure"></a>Estructura \_ JOB INFO \_ 1
 
-La estructura **Job \_ info \_ 1** especifica información del trabajo de impresión, como el valor del identificador de trabajo, el nombre de la impresora para la que se pone en cola el trabajo, el nombre del equipo que creó el trabajo de impresión, el nombre del usuario que posee el trabajo de impresión, etc.
+La estructura **\_ JOB INFO \_ 1** especifica información del trabajo de impresión, como el valor del identificador de trabajo, el nombre de la impresora para la que se encuentra en cola el trabajo, el nombre de la máquina que creó el trabajo de impresión, el nombre del usuario que posee el trabajo de impresión, y así sucesivamente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,75 +56,75 @@ typedef struct _JOB_INFO_1 {
 **JobId**
 </dt> <dd>
 
-Identificador del trabajo.
+Identificador de trabajo.
 
 </dd> <dt>
 
 **pPrinterName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre de la impresora para la que se pone en cola el trabajo.
+Puntero a una cadena terminada en NULL que especifica el nombre de la impresora para la que se ha puesto en cola el trabajo.
 
 </dd> <dt>
 
 **pMachineName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre del equipo que creó el trabajo de impresión.
+Puntero a una cadena terminada en NULL que especifica el nombre de la máquina que creó el trabajo de impresión.
 
 </dd> <dt>
 
 **pUserName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el nombre del usuario al que pertenece el trabajo de impresión.
+Puntero a una cadena terminada en NULL que especifica el nombre del usuario propietario del trabajo de impresión.
 
 </dd> <dt>
 
 **pDocument**
 </dt> <dd>
 
-Un puntero a una cadena terminada en null que especifica el nombre del trabajo de impresión (por ejemplo, "MS-WORD: Review.doc").
+Puntero a una cadena terminada en NULL que especifica el nombre del trabajo de impresión (por ejemplo, "MS-WORD: Review.doc").
 
 </dd> <dt>
 
 **pDatatype**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el tipo de datos utilizado para registrar el trabajo de impresión.
+Puntero a una cadena terminada en NULL que especifica el tipo de datos usados para registrar el trabajo de impresión.
 
 </dd> <dt>
 
 **pStatus**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que especifica el estado del trabajo de impresión. Este miembro debe comprobarse antes del *Estado* y, si *pStatus* es **null**, el estado se define mediante el contenido del miembro status.
+Puntero a una cadena terminada en NULL que especifica el estado del trabajo de impresión. Este miembro debe comprobarse antes de *Status* y, si *pStatus* es **NULL,** el estado se define mediante el contenido del miembro Status.
 
 </dd> <dt>
 
 **Estado**
 </dt> <dd>
 
-El estado del trabajo. El valor de este miembro puede ser cero o una combinación de uno o varios de los valores siguientes. Un valor de cero indica que la cola de impresión se pausó una vez finalizada la cola de impresión del documento.
+Estado del trabajo. El valor de este miembro puede ser cero o una combinación de uno o varios de los valores siguientes. Un valor de cero indica que la cola de impresión se ha pausado después de que el documento terminara de poner en cola.
 
 
 
 | Value                           | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Estado del trabajo \_ \_ bloqueado \_ DEVQ      | El controlador no puede imprimir el trabajo.                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Estado del trabajo \_ \_ completado           | **Windows XP y versiones posteriores:** El trabajo se envía a la impresora, pero es posible que el trabajo no se imprima todavía.<br/> Vea Comentarios para obtener más información.<br/>                                                                                                                                                                                                                                                                                                                           |
-| Estado del trabajo \_ \_ eliminado            | El trabajo se ha eliminado.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| \_eliminación de estado de trabajo \_           | Se está eliminando el trabajo.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| \_error de estado de trabajo \_              | Se ha asociado un error al trabajo.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Estado del trabajo \_ \_ sin conexión            | La impresora está sin conexión.                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Estado del trabajo \_ \_ PAPEROUT           | La impresora no tiene papel.                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Estado del trabajo en \_ \_ pausa             | El trabajo está en pausa.                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Estado del trabajo \_ \_ impreso            | El trabajo se ha impreso.                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| \_impresión de estado del trabajo \_           | El trabajo está imprimiendo.                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| reinicio del estado del trabajo \_ \_            | El trabajo se ha reiniciado.                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Estado del trabajo \_ \_ retenido           | **Windows Vista y versiones posteriores:** El trabajo se ha conservado en la cola de impresión y no se puede eliminar. Esto puede deberse a lo siguiente:<br/> 1) el trabajo se reservó manualmente mediante una llamada a SetJob y el administrador de trabajos de impresión está esperando a que se libere el trabajo.<br/> 2) el trabajo no ha terminado la impresión y debe finalizar la impresión antes de que se pueda eliminar automáticamente.<br/> Vea [**SetJob**](setjob.md) para obtener más información acerca de los comandos de trabajos de impresión.<br/> |
-| puesta en cola del \_ Estado del trabajo \_           | El trabajo está en cola.                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Estado del trabajo de \_ \_ intervención del usuario \_ | La impresora tiene un error que requiere que el usuario haga algo.                                                                                                                                                                                                                                                                                                                                                                                                                |
+| ESTADO \_ DEL TRABAJO BLOQUEADO \_ \_ DEVQ      | El controlador no puede imprimir el trabajo.                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ESTADO \_ DEL \_ TRABAJO COMPLETADO           | **Windows XP y versiones posteriores:** El trabajo se envía a la impresora, pero es posible que el trabajo no se haya impreso todavía.<br/> Vea Comentarios para obtener más información.<br/>                                                                                                                                                                                                                                                                                                                           |
+| ESTADO \_ DEL \_ TRABAJO ELIMINADO            | Se ha eliminado el trabajo.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ELIMINACIÓN \_ \_ DEL ESTADO DEL TRABAJO           | Se está eliminando el trabajo.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ERROR DE \_ ESTADO DEL \_ TRABAJO              | Se asocia un error al trabajo.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ESTADO DEL \_ TRABAJO \_ SIN CONEXIÓN            | La impresora está sin conexión.                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| DOCUMENTO DE \_ ESTADO \_ DEL TRABAJO           | La impresora está sin papel.                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ESTADO \_ DEL TRABAJO EN \_ PAUSA             | El trabajo está en pausa.                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| ESTADO \_ DEL \_ TRABAJO IMPRESO            | El trabajo se ha impreso.                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| IMPRESIÓN DEL \_ ESTADO DEL \_ TRABAJO           | El trabajo está imprimendo.                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| REINICIO DEL \_ ESTADO DEL \_ TRABAJO            | Se ha reiniciado el trabajo.                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ESTADO \_ DEL \_ TRABAJO RETENIDO           | **Windows Vista y versiones posteriores:** El trabajo se ha conservado en la cola de impresión y no se puede eliminar. Esto puede deberse a lo siguiente:<br/> 1) El trabajo se retuvo manualmente mediante una llamada a SetJob y el colador está esperando a que se liberara el trabajo.<br/> 2) El trabajo no ha terminado de imprimirse y debe finalizar la impresión antes de que se pueda eliminar automáticamente.<br/> Consulte [**SetJob para**](setjob.md) obtener más información sobre los comandos de trabajo de impresión.<br/> |
+| JOB \_ STATUS \_ SPOOLING           | El trabajo está en cola.                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| INTERVENCIÓN \_ DEL USUARIO DEL ESTADO DEL \_ \_ TRABAJO | La impresora tiene un error que requiere que el usuario haga algo.                                                                                                                                                                                                                                                                                                                                                                                                                |
 
 
 
@@ -135,15 +135,15 @@ El estado del trabajo. El valor de este miembro puede ser cero o una combinació
 **Prioridad**
 </dt> <dd>
 
-La prioridad del trabajo. Este miembro puede ser uno de los valores siguientes o estar en el intervalo comprendido entre 1 y 99 ( \_ prioridad mínima a través de la \_ prioridad máxima).
+Prioridad del trabajo. Este miembro puede ser uno de los siguientes valores o en el intervalo entre 1 y 99 (PRIORIDAD MÍNIMA \_ a PRIORIDAD \_ MÁXIMA).
 
 
 
 | Value         | Significado           |
 |---------------|-------------------|
-| \_prioridad mínima | Prioridad mínima. |
-| \_prioridad máxima | Prioridad máxima. |
-| prioridad de DEF \_ | Prioridad predeterminada. |
+| PRIORIDAD \_ MÍNIMA | Prioridad mínima. |
+| PRIORIDAD \_ MÁXIMA | Prioridad máxima. |
+| PRIORIDAD \_ DEF | Prioridad predeterminada. |
 
 
 
@@ -161,29 +161,29 @@ Posición del trabajo en la cola de impresión.
 **TotalPages**
 </dt> <dd>
 
-Número total de páginas que contiene el documento. Este valor puede ser cero si el trabajo de impresión no contiene información de delimitación de página.
+Número total de páginas que contiene el documento. Este valor puede ser cero si el trabajo de impresión no contiene información de delimitación de páginas.
 
 </dd> <dt>
 
 **PagesPrinted**
 </dt> <dd>
 
-Número de páginas que se han imprimido. Este valor puede ser cero si el trabajo de impresión no contiene información de delimitación de página.
+Número de páginas que se han impreso. Este valor puede ser cero si el trabajo de impresión no contiene información de delimitación de páginas.
 
 </dd> <dt>
 
 **Enviado**
 </dt> <dd>
 
-Estructura [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) que especifica la hora A la que se puso en cola este documento.
+Estructura [**SYSTEMTIME**](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) que especifica la hora a la que se ha colado este documento.
 
-Este valor de hora está en formato de horario universal coordinado (UTC). Debe convertirlo en un valor de hora local antes de mostrarlo. Puede usar la función [**FileTimeToLocalFileTime**](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) para realizar la conversión.
+Este valor de hora está en formato de coordenadas de hora universal (UTC). Debe convertirlo en un valor de hora local antes de mostrarlo. Puede usar la [**función FileTimeToLocalFileTime**](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) para realizar la conversión.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los monitores de puerto que no son compatibles con TrueEndOfJob establecerán el trabajo como \_ estado \_ del trabajo impreso justo después de enviar el trabajo a la impresora.
+Los monitores de puerto que no admiten TrueEndOfJob establecerán el trabajo como ESTADO DEL TRABAJO IMPRESO justo después de enviar el trabajo \_ \_ a la impresora.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -193,8 +193,8 @@ Los monitores de puerto que no son compatibles con TrueEndOfJob establecerán el
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nombres Unicode y ANSI<br/>   | **\_ Información del trabajo \_ \_ 1W** (Unicode) y la **\_ información del trabajo \_ \_ 1A** (ANSI)<br/>                                   |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nombres Unicode y ANSI<br/>   | **\_ JOB \_ INFO \_ 1W** (Unicode) e **\_ JOB INFO \_ \_ 1A** (ANSI)<br/>                                   |
 
 
 
@@ -205,7 +205,7 @@ Los monitores de puerto que no son compatibles con TrueEndOfJob establecerán el
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de API de Spooler de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**EnumJobs**](enumjobs.md)

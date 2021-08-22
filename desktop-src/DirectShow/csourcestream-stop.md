@@ -1,7 +1,7 @@
 ---
-description: El método STOP indica al subproceso de streaming que debe detenerse.
+description: El método Stop indica al subproceso de streaming que se detenga.
 ms.assetid: 79bc528a-cf53-43f3-aa17-c459063c99ab
-title: CSourceStream. STOP (método) (Source. h)
+title: Método CSourceStream.Stop (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 44c9f845c092280ef5fafa808036654bd868a796
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7ac5eb7d6b066920210d4f955084afa46ddc71d1c17820fe0300acc66b53bb8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105679499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073169"
 ---
-# <a name="csourcestreamstop-method"></a>CSourceStream. STOP (método)
+# <a name="csourcestreamstop-method"></a>Método CSourceStream.Stop
 
 El `Stop` método indica al subproceso de streaming que se detenga.
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto o E \_ inesperados.
+Devuelve S \_ OK o E \_ UNEXPECTED.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método [**CSourceStream:: Inactive**](csourcestream-inactive.md) llama a este método.
+El [**método CSourceStream::Inactive**](csourcestream-inactive.md) llama a este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ El método [**CSourceStream:: Inactive**](csourcestream-inactive.md) llama a est
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Source. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Source.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ El método [**CSourceStream:: Inactive**](csourcestream-inactive.md) llama a est
 
 <dl> <dt>
 
-[**Clase CSourceStream**](csourcestream.md)
+[**CSourceStream (clase)**](csourcestream.md)
 </dt> </dl>
 
  

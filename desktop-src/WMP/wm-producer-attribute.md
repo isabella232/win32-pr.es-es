@@ -1,9 +1,9 @@
 ---
-title: Atributo de WM/productor
-description: El atributo WM/productor es el nombre del productor del contenido.
+title: Atributo WM/Producer
+description: El atributo WM/Producer es el nombre del productor del contenido.
 ms.assetid: b7c0dbea-ed57-4243-be76-90b2998304ba
 keywords:
-- Media Player de Windows de atributo de WM/productor
+- Atributo WM/Producer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,39 +12,39 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 237b03231ac9882884aee1441877dce0de746d4b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c5f51c0e995e69d63cd21338704a8ad4a3a602d7e805dd39139373c9bd9b68c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053803"
 ---
-# <a name="wmproducer-attribute"></a>Atributo de WM/productor
+# <a name="wmproducer-attribute"></a>Atributo WM/Producer
 
-El atributo **WM/productor** es el nombre del productor del contenido.
+El **atributo WM/Producer** es el nombre del productor del contenido.
 
 ## <a name="applies-to"></a>Se aplica a
 
--   [Atributos de archivo de Windows Media de uso frecuente](commonly-used-windows-media-file-attributes.md)
+-   [Atributos de archivo multimedia Windows uso frecuente](commonly-used-windows-media-file-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este atributo se almacena en la biblioteca y en el archivo multimedia digital.
+Este atributo se almacena tanto en la biblioteca como en el archivo multimedia digital.
 
-**ProducedBy** es un alias para este atributo.
+**ProducedBy es** un alias para este atributo.
 
-La constante del SDK de Windows Media Format para este atributo es g \_ wszWMProducer.
+La Windows SDK de formato multimedia para este atributo es g \_ wszWMProducer.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -52,7 +52,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

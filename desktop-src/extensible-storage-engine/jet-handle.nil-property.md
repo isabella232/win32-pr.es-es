@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_HANDLE. Nil (propiedad)'
-title: JET_HANDLE. Nil (propiedad)
+description: 'Más información sobre: JET_HANDLE. Propiedad Nil'
+title: JET_HANDLE. Propiedad Nil
 TOCTitle: 'Nil property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_HANDLE.Nil
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_handle.nil(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3d5538a5553389bb204edeab48b571ab3d46d77a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5edd6450423c1e945231d9a4c31527ccac6b1988220f6a93dbfaadb87e22baed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105649243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039223"
 ---
-# <a name="jet_handlenil-property"></a>JET_HANDLE. Nil (propiedad)
+# <a name="jet_handlenil-property"></a>JET_HANDLE. Propiedad Nil
 
-Obtiene un JET_HANDLE nulo.
+Obtiene un valor null JET_HANDLE.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -57,14 +57,14 @@ public static JET_HANDLE Nil { get; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [Microsoft.ISAM.esent.Interop.JET_HANDLE](./jet-handle-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_HANDLE](./jet-handle-structure.md)  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_HANDLE](./jet-handle-structure.md)
+[JET_HANDLE estructura](./jet-handle-structure.md)
 
-[Miembros de JET_HANDLE](./jet-handle-members.md)
+[JET_HANDLE miembros](./jet-handle-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

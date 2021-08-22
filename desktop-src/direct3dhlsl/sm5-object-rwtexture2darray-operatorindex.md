@@ -1,6 +1,6 @@
 ---
-title: 'RWTexture2DArray:: Operator (función)'
-description: 'Devuelve una variable de recurso. | RWTexture2DArray:: Operator (función)'
+title: RWTexture2DArray::Operator (Función)
+description: Devuelve una variable de recurso. | RWTexture2DArray::Operator (Función)
 ms.assetid: ae3d0697-ea0a-450d-bdfe-7bc5d8faf11a
 keywords:
 - Función de operador HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: faf49c48fbf5042ce2765005cd8daea4d1227255
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 8650b4aed51915591438501fb2c929b846e5be1d4de1219017ec1eb45980d552
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104083619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985925"
 ---
-# <a name="rwtexture2darrayoperator--function"></a>RWTexture2DArray:: Operator (función)
+# <a name="rwtexture2darrayoperator--function"></a>RWTexture2DArray::Operator (Función)
 
 Devuelve una variable de recurso.
 
@@ -36,12 +36,12 @@ R Operator[](
 
 <dl> <dt>
 
-*PDV* \[ de de\]
+*pos* \[ En\]
 </dt> <dd>
 
-Tipo: **UInt3**
+Tipo: **uint3**
 
-Posición de índice. Los componentes primero y segundo contienen las coordenadas (x, y). El tercer componente indica el segmento de matriz deseado.
+Posición del índice. El primer y segundo componente contienen las coordenadas (x, y). El tercer componente indica el segmento de matriz deseado.
 
 </dd> </dl>
 
@@ -51,13 +51,13 @@ Tipo: **R**
 
 Variable de recurso.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

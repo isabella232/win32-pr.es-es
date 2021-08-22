@@ -4,12 +4,12 @@ description: Obtenga información sobre cómo una aplicación enumera los dispos
 ms.assetid: 28ded3cf-b0c8-4c90-ab39-efc879adb6e7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6465b04e6f1a18a0bdb74f0ce883cf9161371fb6
-ms.sourcegitcommit: 51ef825fb48f15e1aa30e8795988f10dc2b2155c
+ms.openlocfilehash: f6cfe1c1b4dee11383a4c36eaea43974f7e0439ae4ff2370a90e99b1702a8e0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112068601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119083579"
 ---
 # <a name="enumerating-devices-wpd"></a>Enumeración de dispositivos (WPD)
 
@@ -42,7 +42,7 @@ if (FAILED(hr))
 
 
 
-Una vez que obtenga un [**puntero de interfaz IPortableDeviceManager,**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicemanager) puede empezar a llamar a métodos en esta interfaz. El primer método llamado en la función EnumerateAllDevices [**es IPortableDeviceManager::GetDevices**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicemanager-getdevices). Cuando se llama a este método con el primer argumento establecido en **NULL,** devuelve el recuento de dispositivos conectados.
+Una vez que obtenga un [**puntero de interfaz IPortableDeviceManager,**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicemanager) puede empezar a llamar a métodos en esta interfaz. El primer método llamado en la función EnumerateAllDevices [**es IPortableDeviceManager::GetDevices.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicemanager-getdevices) Cuando se llama a este método con el primer argumento establecido en **NULL,** devuelve el recuento de dispositivos conectados.
 
 
 ```C++
@@ -65,7 +65,7 @@ printf("\n%d Windows Portable Device(s) found on the system\n\n", cPnPDeviceIDs)
 
 Después de recuperar el recuento de dispositivos conectados, puede usar este valor para recuperar la información del dispositivo para cada dispositivo conectado. Este proceso comienza pasando una matriz de punteros de cadena como primer argumento y un recuento del número de elementos que esta matriz puede contener como segundo argumento (este recuento debe ser al menos igual al número de dispositivos disponibles).
 
-Las cadenas devueltas por este método son los Plug and Play de los dispositivos conectados. Estos nombres, a su vez, se pasan a otros métodos en la interfaz [**IPortableDeviceManager**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicemanager) para recuperar información específica del dispositivo, como el nombre descriptivo, el nombre del fabricante y la descripción del dispositivo. (Estos nombres también se usan para abrir una conexión al dispositivo cuando una aplicación llama al método [**IPortableDevice::Open).**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-open)
+Las cadenas devueltas por este método son los Plug and Play de los dispositivos conectados. Estos nombres, a su vez, se pasan a otros métodos de la interfaz [**IPortableDeviceManager**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicemanager) para recuperar información específica del dispositivo, como el nombre descriptivo, el nombre del fabricante y la descripción del dispositivo. (Estos nombres también se usan para abrir una conexión al dispositivo cuando una aplicación llama al método [**IPortableDevice::Open).**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-open)
 
 
 ```C++

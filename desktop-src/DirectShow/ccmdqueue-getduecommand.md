@@ -1,7 +1,7 @@
 ---
-description: El método GetDueCommand recupera un puntero al siguiente comando que se debe a.
+description: El método GetDueCommand recupera un puntero al siguiente comando que se debe.
 ms.assetid: f23434a6-ad2c-4b64-90b1-2f486a16e7e6
-title: Método CCmdQueue. GetDueCommand (Winutil. h)
+title: Método CCmdQueue.GetDueCommand (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 1a1297a3f0d514215270acf7e73b18cba46fca1f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f6e7c8d133537dc2b185c755e65f3a4febbee762c5c2306de37ad0c627434df7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016433"
 ---
-# <a name="ccmdqueuegetduecommand-method"></a>CCmdQueue. GetDueCommand, método
+# <a name="ccmdqueuegetduecommand-method"></a>Método CCmdQueue.GetDueCommand
 
-El `GetDueCommand` método recupera un puntero al siguiente comando que se debe a.
+El `GetDueCommand` método recupera un puntero al siguiente comando que se debe.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,24 +46,24 @@ virtual HRESULT GetDueCommand(
 *ppCmd* 
 </dt> <dd>
 
-Dirección de un puntero al comando aplazado.
+Dirección de un puntero al comando diferido.
 
 </dd> <dt>
 
 *msTimeout* 
 </dt> <dd>
 
-Cantidad de tiempo que hay que esperar antes de que se agote el tiempo de espera.
+Cantidad de tiempo de espera antes de llevar a cabo el tiempo de espera.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve E \_ Abort si se agota el tiempo de espera. Devuelve \_ si es correcto; de lo contrario, devuelve un error. Devuelve un objeto que se ha incrementado mediante **IUnknown:: AddRef**.
+Devuelve E \_ ABORT si se produce un tiempo de espera. Devuelve S \_ OK si se realiza correctamente; de lo contrario, devuelve un error. Devuelve un objeto que se ha incrementado mediante **IUnknown::AddRef**.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro se bloquea hasta que se venza un comando pendiente. La función miembro se bloquea durante el tiempo, en milisegundos, especificado en el parámetro *msTimeout* . Los comandos de tiempo de secuencia solo se deben realizar entre las funciones miembro [**CCmdQueue:: Run**](ccmdqueue-run.md) y [**CCmdQueue:: EndRun**](ccmdqueue-endrun.md) . El comando permanece en cola hasta que se ejecuta o se cancela.
+Esta función miembro se bloquea hasta que se debe un comando pendiente. La función miembro se bloquea durante la cantidad de tiempo, en milisegundos, especificada en el *parámetro msTimeout.* Los comandos en tiempo de secuencia solo se deben entre las funciones miembro [**CCmdQueue::Run**](ccmdqueue-run.md) y [**CCmdQueue::EndRun.**](ccmdqueue-endrun.md) El comando permanece en cola hasta que se ejecuta o se cancela.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Esta función miembro se bloquea hasta que se venza un comando pendiente. La fun
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Winutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Winutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ Esta función miembro se bloquea hasta que se venza un comando pendiente. La fun
 
 <dl> <dt>
 
-[**Clase CCmdQueue**](ccmdqueue.md)
+[**CCmdQueue (clase)**](ccmdqueue.md)
 </dt> </dl>
 
  

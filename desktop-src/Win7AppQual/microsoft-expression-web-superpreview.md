@@ -4,12 +4,12 @@ ms.assetid: A087CE3C-C14E-4483-850D-E140FEC589BF
 title: Microsoft Expression Web SuperPreview
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 97fbab3d6b4addafbe03f1bfe680fb039d78afcf
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3b114d33220c149cc66eb7d38ad2744f060cc16f44e5021e1c4f34560523fcec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053073"
 ---
 # <a name="microsoft-expression-web-superpreview"></a>Microsoft Expression Web SuperPreview
 
@@ -28,9 +28,9 @@ Con la herramienta Web SuperPreview, puede hacer lo siguiente:
 
 -   Depurar páginas en el equipo de desarrollo. Web SuperPreview funciona directamente con los exploradores de Microsoft Windows instalados e incluye el Internet Explorer de representación de Internet Explorer 6. Puede usar este motor en paralelo junto con otras versiones de Internet Explorer o Mozilla Firefox.
 -   Depurar más rápidamente mediante información de árbol DOM y elemento. Web SuperPreview también combina la representación de imágenes con datos DOM, por lo que puede resaltar elementos DOM específicos dentro de la imagen y mostrar las diferencias entre los exploradores. La herramienta proporciona información de elementos como la posición, las dimensiones y el identificador para ayudarle a encontrar el elemento que está causando el problema de compatibilidad.
--   Admite exploradores Windows y Macintosh, incluidos Internet Explorer 6 y versiones posteriores, Firefox 3.6 y Macintosh Safari.
+-   Compatibilidad Windows y los exploradores Macintosh, incluidos Internet Explorer 6 y versiones posteriores, Firefox 3.6 y Macintosh Safari.
 
-Para obtener más información sobre esta herramienta y otras herramientas para desarrolladores, vea Información general sobre la web de [Expression Studio 4,](https://www.microsoft.com/expression/products/StudioWebPro_Overview.aspx) [Demostración web](https://msdn.microsoft.com/expression/ff723803.aspx)de expresiones y [Foros de expresiones](https://social.msdn.microsoft.com/forums/announce/threads).
+Para obtener más información sobre esta herramienta y otras herramientas para desarrolladores, vea la información general web de [Expression Studio 4,](https://www.microsoft.com/expression/products/StudioWebPro_Overview.aspx)la [demostración web de](https://msdn.microsoft.com/expression/ff723803.aspx)expresión y los [foros de expresiones](https://social.msdn.microsoft.com/forums/announce/threads).
 
 ## <a name="related-topics"></a>Temas relacionados
 

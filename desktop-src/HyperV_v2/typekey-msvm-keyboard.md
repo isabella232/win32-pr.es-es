@@ -1,7 +1,7 @@
 ---
-description: Simula una secuencia de teclas de la versión de lanzamiento.
+description: Simula una secuencia de teclas de liberación de presión.
 ms.assetid: 4166BA71-315D-41BD-857C-48AFB702911E
-title: Método TypeKey de la clase Msvm_Keyboard
+title: Método TypeKey de la Msvm_Keyboard clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1b978da48600cc52472ab8bdec011ddbaa5ff624
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d387e1b0d0d939d997589c90195b4a50427f1973eaf46520a0fa70caf62c610b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068355"
 ---
-# <a name="typekey-method-of-the-msvm_keyboard-class"></a>Método TypeKey de la \_ clase de teclado MSVM
+# <a name="typekey-method-of-the-msvm_keyboard-class"></a>Método TypeKey de la clase Msvm \_ Keyboard
 
-Simula una secuencia de teclas de la versión de lanzamiento. Esto es equivalente a llamar a [**PressKey**](presskey-msvm-keyboard.md) seguido de [**ReleaseKey**](releasekey-msvm-keyboard.md).
+Simula una secuencia de teclas de liberación de presión. Esto equivale a llamar [**a PressKey**](presskey-msvm-keyboard.md) seguido de [**ReleaseKey**](releasekey-msvm-keyboard.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,20 +39,20 @@ uint32 TypeKey(
 
 <dl> <dt>
 
-*KeyCode* \[ de\]
+*keyCode* \[ En\]
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Código de tecla virtual de la tecla que se va a presionar. Para obtener la lista de códigos de tecla virtual, consulte [**códigos de tecla virtual**](../inputdev/virtual-key-codes.md).
+Código de clave virtual de la tecla que se debe presionar. Para obtener la lista de códigos de clave virtual, [**vea Códigos de clave virtual**](../inputdev/virtual-key-codes.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Un valor devuelto de cero indica que se ha realizado correctamente. Un valor distinto de cero indica un error al modificar el estado de la clave.
+Un valor devuelto de cero indica que el resultado es correcto. Un valor distinto de cero indica un error al modificar el estado de la clave.
 
 <dl> <dt>
 
@@ -71,16 +71,16 @@ Un valor devuelto de cero indica que se ha realizado correctamente. Un valor dis
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**Sistema en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -89,15 +89,15 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El acceso a la clase de [**\_ teclado MSVM**](msvm-keyboard.md) puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a [**la clase Msvm \_ Keyboard**](msvm-keyboard.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,10 +105,10 @@ El acceso a la clase de [**\_ teclado MSVM**](msvm-keyboard.md) puede estar rest
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -117,10 +117,10 @@ El acceso a la clase de [**\_ teclado MSVM**](msvm-keyboard.md) puede estar rest
 
 <dl> <dt>
 
-[**\_Teclado MSVM**](msvm-keyboard.md)
+[**Teclado de \_ Msvm**](msvm-keyboard.md)
 </dt> <dt>
 
-[**Códigos de tecla virtual**](../inputdev/virtual-key-codes.md)
+[**Códigos de clave virtual**](../inputdev/virtual-key-codes.md)
 </dt> </dl>
 
  

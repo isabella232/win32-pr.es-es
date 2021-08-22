@@ -12,12 +12,12 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: 296d755a0b082b46122432936d30614019b8b9a8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9bb84cc6a8492c729926b644a246b8ee8a03e1de4c2eae6e3de1fd88c5ba339f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103809307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004923"
 ---
 # <a name="scesvcattachmentanalyze-callback-function"></a>Función de devolución de llamada SceSvcAttachmentAnalyze
 
@@ -38,27 +38,27 @@ SCESTATUS WINAPI SceSvcAttachmentAnalyze(
 
 <dl> <dt>
 
-*pSceCbInfo* \[ de\]
+*pSceCbInfo* \[ En\]
 </dt> <dd>
 
-Puntero a una estructura de [**\_ \_ información de devolución de llamada SCESVC**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) que contiene un identificador de base de datos opaco y punteros de función de devolución de llamada para consultar, establecer y liberar información.
+Puntero a una estructura [**SCESVC \_ CALLBACK \_ INFO**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) que contiene un identificador de base de datos opaco y punteros de función de devolución de llamada para consultar, establecer y liberar información.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si esta función se ejecuta correctamente, devuelve SCESTATUS \_ Success. En caso contrario, devuelve un código de error. Para obtener más información sobre los códigos de error de configuración de seguridad, vea [valores devueltos de datos adjuntos](management-return-values.md).
+Si esta función se realiza correctamente, devuelve SCESTATUS \_ SUCCESS. De lo contrario, devuelve un código de error. Para obtener más información sobre los códigos de error de configuración de seguridad, vea [Valores devueltos de datos adjuntos.](management-return-values.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **SceSvcAttachmentAnalyze** debe hacer lo siguiente:
+La **función SceSvcAttachmentAnalyze** debe hacer lo siguiente:
 
--   Consulte directamente la información de configuración del servicio.
--   Llame a la función de devolución de llamada a la que apunta el miembro **pfQueryInfo** de la estructura de [**información de devolución de \_ llamada \_ SCESVC**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfQueryInfo) para recuperar información de la base de datos de seguridad.
--   Calcular las diferencias entre la información basada en el tipo y la sintaxis.
--   Llame a la función de devolución de llamada a la que apunta el miembro **pfSetInfo** de la estructura de [**información de devolución de \_ llamada \_ SCESVC**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfSetInfo) para actualizar la base de datos de seguridad con la información de servicio recuperada que sea diferente.
+-   Consultar directamente la información de configuración del servicio.
+-   Llame a la función de devolución de llamada a la que apunta el miembro **pfQueryInfo** de la estructura [**SCESVC \_ CALLBACK \_ INFO**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfQueryInfo) para recuperar información de la base de datos de seguridad.
+-   Calcule las diferencias entre la información en función del tipo y la sintaxis.
+-   Llame a la función de devolución de llamada a la que apunta el miembro **pfSetInfo** de la estructura [**SCESVC \_ CALLBACK \_ INFO**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info) (pSceCbInfo->pfSetInfo) para actualizar la base de datos de seguridad con la información de servicio recuperada que es diferente.
 
-Para obtener más información, consulte [implementación de SceSvcAttachmentAnalyze](implementing-scesvcattachmentanalyze.md).
+Para obtener más información, [vea Implementing SceSvcAttachmentAnalyze](implementing-scesvcattachmentanalyze.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,8 +66,8 @@ Para obtener más información, consulte [implementación de SceSvcAttachmentAna
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
@@ -78,7 +78,7 @@ Para obtener más información, consulte [implementación de SceSvcAttachmentAna
 [Implementación de SceSvcAttachmentAnalyze](implementing-scesvcattachmentanalyze.md)
 </dt> <dt>
 
-[**información de devolución de llamada de SCESVC \_ \_**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info)
+[**INFORMACIÓN DE DEVOLUCIÓN DE LLAMADA DE SCESVC \_ \_**](/windows/win32/api/scesvc/ns-scesvc-scesvc_callback_info)
 </dt> <dt>
 
 [**SceSvcAttachmentConfig**](scesvcattachmentconfig.md)

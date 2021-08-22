@@ -1,6 +1,6 @@
 ---
-title: llamada-vs
-description: Realiza una llamada de función a la instrucción marcada con la etiqueta proporcionada. | llamada-vs
+title: call - vs
+description: Realiza una llamada de función a la instrucción marcada con la etiqueta proporcionada. | call - vs
 ms.assetid: 3c1ec529-1ee4-40d9-8ce5-f8e7a61fde9c
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: c797e7ef6745f5710752fe059d2a2ff1f94a8aa3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d2321224b10ca1f7822b19e48ebbb58c1e01c261720f64a8b39331fbceab75fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104003742"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986895"
 ---
-# <a name="call---vs"></a>llamada-vs
+# <a name="call---vs"></a>call - vs
 
 Realiza una llamada de función a la instrucción marcada con la etiqueta proporcionada.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
@@ -31,13 +31,13 @@ Realiza una llamada de función a la instrucción marcada con la etiqueta propor
 
  
 
-donde l \# es una [etiqueta,](label---vs.md) que marca el principio de la subrutina a la que se va a llamar.
+donde l es una etiqueta, frente a marcar el principio de la subrutina a la \# que se va a llamar. [](label---vs.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | llamada                   |      | x    | x    | x     | x    | x     |
 
@@ -47,20 +47,20 @@ donde l \# es una [etiqueta,](label---vs.md) que marca el principio de la subrut
 
 Esta instrucción hace lo siguiente:
 
-1.  Dirección de extracción de la instrucción siguiente a la pila de direcciones devuelta.
-2.  Continúe con la ejecución de la instrucción marcada por la etiqueta.
+1.  Dirección de inserción de la siguiente instrucción en la pila de direcciones de retorno.
+2.  Continúe la ejecución desde la instrucción marcada por la etiqueta .
 
-En el sombreador de vértices 2 \_ 0, no se permiten las llamadas anidadas.
+En el sombreador de vértices 2 0, no se permiten llamadas \_ de anidamiento.
 
-En el sombreador de vértices 2 \_ x, la profundidad de anidamiento está limitada por el elemento StaticFlowControlDepth de la estructura [**D3DVSHADERCAPS2 \_ 0**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dvshadercaps2_0) . Para obtener más información, vea [**GetDeviceCaps**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9-getdevicecaps).
+En el sombreador de vértices 2 x, la profundidad de anidamiento está limitada por el elemento StaticFlowControlDepth de la estructura \_ [**D3DVSHADERCAPS2 \_ 0.**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dvshadercaps2_0) Para obtener más información, [**vea GetDeviceCaps.**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9-getdevicecaps)
 
-En el sombreador de vértices 3 \_ 0, se permiten cuatro niveles de anidamiento de llamadas.
+En el sombreador de \_ vértices 3 0, se permiten cuatro niveles de anidamiento de llamadas.
 
-Solo se permiten llamadas hacia delante. Esto significa que la ubicación de la etiqueta dentro del sombreador de vértices debe ser después de la instrucción de llamada que hace referencia a ella.
+Solo se permiten llamadas de reenvío. Esto significa que la ubicación de la etiqueta dentro del sombreador de vértices debe estar después de la instrucción de llamada que hace referencia a ella.
 
-Si una instrucción de llamada se invoca dentro del [bucle](loop---vs.md)... bloque [ENDLOOP](endloop---vs.md) , el valor del [registro de contador de bucle](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (al) es accesible dentro de la subrutina.
+Si se invoca una instrucción de llamada dentro del [bucle](loop---vs.md)... [bloque endloop,](endloop---vs.md) el valor del registro de [contador](dx9-graphics-reference-asm-vs-registers-loop-counter.md) de bucles (aL) es accesible dentro de la subrutina.
 
-Si una subrutina hace referencia al [registro de contador de bucle](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (al) ubicado fuera de la subrutina, cada instancia de la llamada a esta subrutina debe estar rodeada por un [bucle](loop---vs.md)... bloque [ENDLOOP](endloop---vs.md) .
+Si una subrutina hace referencia al registro de contador de [bucles](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (aL) situado fuera de la subrutina, cada instancia de la llamada a esta subrutina debe estar rodeado por un [bucle](loop---vs.md)... [bloque endloop.](endloop---vs.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

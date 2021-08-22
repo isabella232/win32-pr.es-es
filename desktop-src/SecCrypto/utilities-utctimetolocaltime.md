@@ -1,7 +1,7 @@
 ---
-description: Convierte la hora universal coordinada (hora del meridiano de Greenwich) en la hora local del equipo.
+description: Convierte la hora universal coordinada (hora media de Greenwich) en la hora local del equipo.
 ms.assetid: 4085d7cb-d346-477d-a043-e96fb951c35a
-title: Utilities. UTCTimeToLocalTime (método)
+title: Método Utilities.UTCTimeToLocalTime
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: fe41cf8d9ec92c0c71be5130aded0b7db539b9b1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c1ad7236564fff2f9a3814beda9bedacbf96fbc9ca2678546304ee108891bea1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105689907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005153"
 ---
-# <a name="utilitiesutctimetolocaltime-method"></a>Utilities. UTCTimeToLocalTime (método)
+# <a name="utilitiesutctimetolocaltime-method"></a>Método Utilities.UTCTimeToLocalTime
 
-\[El método **UTCTimeToLocalTime** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos.\]
+\[El **método UTCTimeToLocalTime** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos.\]
 
-El método **UTCTimeToLocalTime** convierte la hora universal coordinada (hora del meridiano de Greenwich) en la hora local del equipo.
+El **método UTCTimeToLocalTime** convierte la hora universal coordinada (hora media de Greenwich) a la hora local del equipo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,20 +41,20 @@ Utilities.UTCTimeToLocalTime( _
 
 <dl> <dt>
 
-*UTCTime* \[ de\]
+*HORA UTC* \[ En\]
 </dt> <dd>
 
-Hora universal coordinada que se va a convertir en la hora local del equipo.
+Hora universal coordinada que se va a convertir a la hora local del equipo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La hora local que corresponde a la hora universal coordinada especificada.
+Hora local que corresponde a la hora universal coordinada especificada.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Aunque el sistema utiliza la hora universal coordinada internamente, las aplicaciones suelen mostrar la hora local, que es la fecha y la hora del día de la zona horaria local del equipo.
+Aunque el sistema usa la hora universal coordinada internamente, las aplicaciones suelen mostrar la hora local, que es la fecha y hora del día de la zona horaria local del equipo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,7 +62,7 @@ Aunque el sistema utiliza la hora universal coordinada internamente, las aplicac
 
 | Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
@@ -71,7 +71,7 @@ Aunque el sistema utiliza la hora universal coordinada internamente, las aplicac
 
 <dl> <dt>
 
-[**Sectores públicos**](utilities.md)
+[**Utilidades**](utilities.md)
 </dt> </dl>
 
  

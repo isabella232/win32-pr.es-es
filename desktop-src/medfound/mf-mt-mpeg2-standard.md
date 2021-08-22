@@ -1,19 +1,19 @@
 ---
-description: Para un tipo de medio que describe una secuencia de programa MPEG-2 (PS) o una secuencia de transporte (TS), especifica el estándar que se usa para multiplexar la secuencia.
+description: Para un tipo de medio que describe una secuencia de programa MPEG-2 (PS) o una secuencia de transporte (TS), especifica el estándar que se usa para multiplex la secuencia.
 ms.assetid: 3D4C1A81-A9BA-427F-93DB-F522A0616EAB
-title: MF_MT_MPEG2_STANDARD atributo (mfapi. h)
+title: MF_MT_MPEG2_STANDARD atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0650a68975f449ea938b41872005e11d79922393
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba3c773fbf453bba77cb3f0472894e251e56f48b0cebe2a09cb9bf3ea6288c35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105648320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035143"
 ---
-# <a name="mf_mt_mpeg2_standard-attribute"></a>\_Atributo estándar de MF MT \_ MPEG2 \_
+# <a name="mf_mt_mpeg2_standard-attribute"></a>Atributo \_ MF MT \_ MPEG2 \_ STANDARD
 
-Para un tipo de medio que describe una secuencia de programa MPEG-2 (PS) o una secuencia de transporte (TS), especifica el estándar que se usa para multiplexar la secuencia.
+Para un tipo de medio que describe una secuencia de programa MPEG-2 (PS) o una secuencia de transporte (TS), especifica el estándar que se usa para multiplex la secuencia.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -21,12 +21,12 @@ Para un tipo de medio que describe una secuencia de programa MPEG-2 (PS) o una s
 
 
 
-| Value                                                                                                | Significado                                                                    |
+| Valor                                                                                                | Significado                                                                    |
 |------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| <span id="0"></span><dl> <dt>**0,1**</dt> </dl> | Estándar MPEG-2 PS o TS.<br/>                                       |
-| <span id="1"></span><dl> <dt>**1**</dt> </dl> | Estándar del Comité de sistemas de televisión avanzada (ATSC).<br/>          |
-| <span id="2"></span><dl> <dt>**2**</dt> </dl> | Estándar de difusión de vídeo digital (DVB).<br/>                      |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | Asociación del estándar de industrias y empresas de radio (ARIB).<br/> |
+| <span id="0"></span><dl> <dt>**0**</dt> </dl> | ESTÁNDAR MPEG-2 PS o TS.<br/>                                       |
+| <span id="1"></span><dl> <dt>**1**</dt> </dl> | Estándar de Advanced Tv Systems Committee (ATSC).<br/>          |
+| <span id="2"></span><dl> <dt>**2**</dt> </dl> | Estándar de difusión de vídeo digital (DT).<br/>                      |
+| <span id="3"></span><dl> <dt>**3**</dt> </dl> | Estándar de asociación de empresas y sectores radiofónicos (ARIB).<br/> |
 
 
 
@@ -36,11 +36,11 @@ Para un tipo de medio que describe una secuencia de programa MPEG-2 (PS) o una s
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 8 \|\]<br/>                                  |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2012 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                  |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                        |
+| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -48,7 +48,7 @@ Para un tipo de medio que describe una secuencia de programa MPEG-2 (PS) o una s
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

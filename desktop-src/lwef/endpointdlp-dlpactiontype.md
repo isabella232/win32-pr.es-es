@@ -12,18 +12,18 @@ api_type:
 - COM
 api_location:
 - endpointdlp.h
-ms.openlocfilehash: 7900e79536cc9ac45037e205962a563bcde8878a
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: 5b7066eec7832ba0b76dee38e6483e0bfcfcfb05fdb8448ee7b3a91e701069fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495955"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976655"
 ---
 # <a name="dlpactiontype-enumeration"></a>Enumeración DlpActionType
 
-Especifica el tipo de acción de una operación de prevención de pérdida de datos (DLP) del punto de conexión.
+Especifica el tipo de acción de una operación de prevención de pérdida de datos (DLP) de punto de conexión.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -138,9 +138,9 @@ Valor máximo de la enumeración .
 </dd> </dl>
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La estructura DLP_APP_OP_ENLIGHTENED_LEVEL utiliza [los valores de esta enumeración.](endpointdlp-dlp_app_op_enlightened_level.md)
+La estructura de DLP_APP_OP_ENLIGHTENED_LEVEL utiliza [los valores de esta enumeración.](endpointdlp-dlp_app_op_enlightened_level.md)
 
 ## <a name="requirements"></a>Requisitos
 

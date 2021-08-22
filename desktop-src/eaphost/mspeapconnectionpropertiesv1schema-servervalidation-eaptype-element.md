@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1495da3f1a1f5e69e7a6af9c64e69aa1ea354abc
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 194057a8769f32902388e733731fb1e3d987ecafd0eff26ea62c15d4fc8555d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105717463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984025"
 ---
 # <a name="servervalidation-eaptype-element-peap"></a>Elemento ServerValidation (EapType) (PEAP)
 
-El elemento **ServerValidation (EapType)** contiene información sobre cómo realizar la validación del servidor.
+El **elemento ServerValidation (EapType)** contiene información sobre cómo realizar la validación del servidor.
 
 ``` syntax
 <xs:element name="ServerValidation"
@@ -31,20 +31,20 @@ El elemento **ServerValidation (EapType)** contiene información sobre cómo rea
  />
 ```
 
-El elemento **ServerValidation** se define mediante el elemento [**EapType**](mspeapconnectionpropertiesv1schema-eaptype-element.md) .
+El **elemento ServerValidation** se define mediante el [**elemento EapType.**](mspeapconnectionpropertiesv1schema-eaptype-element.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **ServerValidation** es opcional.
+El **elemento ServerValidation** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima admitida del sistema operativo |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

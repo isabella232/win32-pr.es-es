@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de NM_CHAR (commctrl. h)
-description: '\_Un control envía el código de notificación nm char cuando se procesa una tecla de carácter. Este código de notificación se envía en forma de mensaje de \_ notificación de WM.'
+title: NM_CHAR de notificación (Commctrl.h)
+description: Un control envía el código de notificación NM CHAR cuando se procesa \_ una clave de carácter. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: b750f2a6-8642-4d76-96bb-bf58b00cd5c4
 keywords:
-- NM_CHAR controles de código de notificación de Windows
+- NM_CHAR código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0910736bcb174c2f3ddb16174c153f4b22ac5bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 73c35871410244bfb69f67c7e0b2c960d0dd50d432ad9cdcfd8765c7df449bf8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018953"
 ---
-# <a name="nm_char-notification-code"></a>\_Código de notificación nm Char
+# <a name="nm_char-notification-code"></a>Código \_ de notificación NM CHAR
 
-\_Un control envía el código de notificación nm char cuando se procesa una tecla de carácter. Este código de notificación se envía en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Un control envía el código de notificación NM CHAR cuando se procesa \_ una clave de carácter. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ NM_CHAR
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**NMCHAR**](/windows/win32/api/commctrl/ns-commctrl-nmchar) que contiene información adicional sobre el carácter que causó el código de notificación.
+Puntero a una estructura [**NMCHAR**](/windows/win32/api/commctrl/ns-commctrl-nmchar) que contiene información adicional sobre el carácter que produjo el código de notificación.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ La mayoría de los controles omiten el valor devuelto. Para obtener más informa
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ La mayoría de los controles omiten el valor devuelto. Para obtener más informa
 
 <dl> <dt>
 
-[NM \_ Char (barra de herramientas)](nm-char-toolbar.md)
+[NM \_ CHAR (barra de herramientas)](nm-char-toolbar.md)
 </dt> </dl>
 
  

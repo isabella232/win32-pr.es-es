@@ -1,25 +1,25 @@
 ---
-description: 'Más información sobre: métodos JET_RETINFO'
-title: Métodos JET_RETINFO
+description: 'Más información sobre: JET_RETINFO métodos'
+title: JET_RETINFO métodos
 TOCTitle: JET_RETINFO methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_RETINFO
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_retinfo_methods(v=EXCHG.10)
 ms:contentKeyID: 55103870
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: e11e04f435004d7a647916d6c2e348cabadfc44f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c1135002e6ce86027751157cc0cd17865be010571ad9064685e36d8e532dec73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104565253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038783"
 ---
-# <a name="jet_retinfo-methods"></a>Métodos JET_RETINFO
+# <a name="jet_retinfo-methods"></a>JET_RETINFO métodos
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El tipo de [JET_RETINFO](./jet-retinfo-class.md) expone los siguientes miembros.
+El [JET_RETINFO](./jet-retinfo-class.md) expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -35,12 +35,12 @@ El tipo de [JET_RETINFO](./jet-retinfo-class.md) expone los siguientes miembros.
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn351024(v=exchg.10).md">ContentEquals</a></td>
-<td>Devuelve un valor que indica si esta instancia es igual a otra instancia de.</td>
+<td>Devuelve un valor que indica si esta instancia es igual a otra instancia.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335238(v=exchg.10).md">DeepClone</a></td>
-<td>Devuelve una copia en profundidad del objeto.</td>
+<td>Devuelve una copia en profundidad del objeto .</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -49,7 +49,7 @@ El tipo de [JET_RETINFO](./jet-retinfo-class.md) expone los siguientes miembros.
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalize</a></td>
+<td><a href="/dotnet/api/system.object.finalize#System_Object_Finalize">Finalizar</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -59,7 +59,7 @@ El tipo de [JET_RETINFO](./jet-retinfo-class.md) expone los siguientes miembros.
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Se hereda del <a href="/dotnet/api/system.object">objeto</a>).</td>
 </tr>
 <tr class="odd">
@@ -70,7 +70,7 @@ El tipo de [JET_RETINFO](./jet-retinfo-class.md) expone los siguientes miembros.
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn351027(v=exchg.10).md">ToString</a></td>
-<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el <a href="dn335277(v=exchg.10).md">JET_RETINFO</a>actual. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>).</td>
+<td>Devuelve un <a href="/dotnet/api/system.string">objeto String</a> que representa el objeto <a href="dn335277(v=exchg.10).md">JET_RETINFO</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -82,6 +82,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[JET_RETINFO (clase)](./jet-retinfo-class.md)
+[JET_RETINFO clase](./jet-retinfo-class.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de EN_CORRECTTEXT (RichEdit. h)
-description: Notifica a una ventana primaria de un control Rich Edit que \_ se ha producido un gesto SyV correcto, lo que permite a la ventana primaria tener la posibilidad de cancelar la corrección del texto. Un control Rich Edit envía este código de notificación en forma de mensaje de \_ notificación de WM.
+title: EN_CORRECTTEXT de notificación (Richedit.h)
+description: Notifica a una ventana primaria del control de edición enriquecido que se ha producido un gesto CORRECTO de SYV, lo que da a la ventana primaria la oportunidad de cancelar \_ la corrección del texto. Un control de edición enriquecido envía este código de notificación en forma de mensaje WM \_ NOTIFY.
 ms.assetid: d6f6278f-ff63-4f6a-a352-2b4d70df3e1a
 keywords:
-- EN_CORRECTTEXT controles de código de notificación de Windows
+- EN_CORRECTTEXT de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5d1339513a94967ab60bdab2b9ee39172b19e76
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 48f03bf0d1bd31cc1f4139c24c6b0efa904f013231af4e108b0f97ef7f308bbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104149944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019423"
 ---
-# <a name="en_correcttext-notification-code"></a>\_Código de notificación en CORRECTTEXT
+# <a name="en_correcttext-notification-code"></a>Código de notificación EN \_ CORRECTTEXT
 
-Notifica a una ventana primaria de un control Rich Edit que \_ se ha producido un gesto SyV correcto, lo que permite a la ventana primaria tener la posibilidad de cancelar la corrección del texto. Un control Rich Edit envía este código de notificación en forma de mensaje [**de \_ notificación de WM**](wm-notify.md) .
+Notifica a una ventana primaria del control de edición enriquecido que se ha producido un gesto CORRECTO de SYV, lo que da a la ventana primaria la oportunidad de cancelar \_ la corrección del texto. Un control de edición enriquecido envía este código de notificación en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -51,14 +51,14 @@ Devuelve cero para omitir la acción.
 
 Devuelve un valor distinto de cero para procesar la acción.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este código de notificación se envía solo si están disponibles las capacidades del lápiz.
+Este código de notificación solo se envía si hay funcionalidades de lápiz disponibles.
 
-Para recibir los \_ códigos de notificación en CORRECTTEXT, especifique [**ENM \_ CORRECTTEXT**](rich-edit-control-event-mask-flags.md) en la máscara enviada con el mensaje [**em \_ SETEVENTMASK**](em-seteventmask.md) .
+Para recibir códigos de notificación EN \_ CORRECTTEXT, especifique [**ENM \_ CORRECTTEXT**](rich-edit-control-event-mask-flags.md) en la máscara enviada con el [**mensaje EM \_ SETEVENTMASK.**](em-seteventmask.md)
 
 > [!Note]  
-> El \_ código de notificación en CORRECTTEXT solo se admite en la versión de edición enriquecida 1,0. No se admite en versiones posteriores de Rich Edit. Para obtener información sobre la compatibilidad de las versiones de edición enriquecidas con las distintas versiones del sistema, vea acerca de los [controles Rich Edit](about-rich-edit-controls.md).
+> El código de notificación EN \_ CORRECTTEXT solo se admite en la edición enriquección versión 1.0. No se admite en versiones posteriores de edición enriquección. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
 
  
 
@@ -68,9 +68,9 @@ Para recibir los \_ códigos de notificación en CORRECTTEXT, especifique [**ENM
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

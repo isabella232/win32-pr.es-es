@@ -1,7 +1,7 @@
 ---
-description: El método de anulación de confirmación anula el asignador. Este método implementa el método IMemAllocator::D ecommit.
+description: El método Decommit desasigna el asignador. Este método implementa el método IMemAllocator::D ecommit.
 ms.assetid: 0c8d44e0-17ea-4f7f-be44-f9ae2e34fbef
-title: Método CBaseAllocator. decommit (Amfilter. h)
+title: Método CBaseAllocator.Decommit (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 613af805f1c04a7bf375755ff8f3adba7b70be18
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 614986a912f08d918d4fbbaf6b3eeeb0d3b2c3eabc47748351934a08b8280cca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017553"
 ---
-# <a name="cbaseallocatordecommit-method"></a>CBaseAllocator. decommit (método)
+# <a name="cbaseallocatordecommit-method"></a>CBaseAllocator.Decommit (método)
 
-El `Decommit` método anula la confirmación del asignador. Este método implementa el método [**IMemAllocator::D ecommit**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-decommit) .
+El `Decommit` método desasigna el asignador. Este método implementa el [**método IMemAllocator::D ecommit.**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-decommit)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,13 +42,13 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Después de llamar a este método, se producirá un error en las llamadas al método [**CBaseAllocator:: getBuffer**](cbaseallocator-getbuffer.md) . A medida que se publican los ejemplos, se devuelven a la lista de disponibilidad. Cuando se devuelve la última muestra, el asignador llama al método [**CBaseAllocator:: Free**](cbaseallocator-free.md) , que libera la memoria asignada. (En la clase base, **Free** es un método virtual puro).
+Después de llamar a este método, se producirá un error en las llamadas al método [**CBaseAllocator::GetBuffer.**](cbaseallocator-getbuffer.md) A medida que se liberan los ejemplos, se devuelven a la lista gratuita. Cuando se devuelve el último ejemplo, el asignador llama al método [**CBaseAllocator::Free,**](cbaseallocator-free.md) que libera la memoria asignada. (En la clase base, **Free es** un método virtual puro).
 
-Además, este método libera todos los subprocesos que están bloqueados en llamadas a **getBuffer** . Se produce un error en las llamadas a **getBuffer** .
+Además, este método libera todos los subprocesos que están bloqueados en **las llamadas a GetBuffer.** Se producirá un error **en las llamadas a GetBuffer.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,8 +56,8 @@ Además, este método libera todos los subprocesos que están bloqueados en llam
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Además, este método libera todos los subprocesos que están bloqueados en llam
 
 <dl> <dt>
 
-[**Clase CBaseAllocator**](cbaseallocator.md)
+[**CBaseAllocator (clase)**](cbaseallocator.md)
 </dt> </dl>
 
  

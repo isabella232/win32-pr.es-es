@@ -1,9 +1,9 @@
 ---
-title: implicit_handle atributo)
-description: El atributo \ \_ ACF de identificador implícito especifica el identificador que se usa para las funciones que no incluyen un identificador explícito como parámetro de procedimiento.
+title: implicit_handle atributo
+description: El atributo \ implicit handle\ ACF especifica el identificador utilizado para las funciones que no incluyen un identificador \_ explícito como parámetro de procedimiento.
 ms.assetid: 09c17473-87b5-4fd6-beb9-3d9b7bc82d8c
 keywords:
-- implicit_handle el atributo MIDL
+- implicit_handle atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22f410fa048a27e1f7626690e6308de4c1a31c2a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 17c53ded4c7459be8f0c8eb98f3770d88ff88a9b7da20cb3482c1032a4f74e96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103904016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013813"
 ---
-# <a name="implicit_handle-attribute"></a>\_atributo de identificador implícito
+# <a name="implicit_handle-attribute"></a>atributo \_ de identificador implícito
 
-El atributo ACF de **\[ \_ identificador \] implícito** especifica el identificador que se usa para las funciones que no incluyen un identificador explícito como parámetro de procedimiento.
+El **\[ atributo \_ \]** ACF del identificador implícito especifica el identificador utilizado para las funciones que no incluyen un identificador explícito como parámetro de procedimiento.
 
 ``` syntax
 implicit_handle(handle-type handle-name)
@@ -31,31 +31,31 @@ implicit_handle(handle-type handle-name)
 
 <dl> <dt>
 
-*tipo de identificador* 
+*handle-type* 
 </dt> <dd>
 
-Especifica el tipo de datos Handle, como el identificador de tipo base [**\_ t**](handle-t.md) o un tipo de identificador definido por el usuario.
+Especifica el tipo de datos de identificador, como el identificador de tipo base [**\_ t**](handle-t.md) o un tipo de identificador definido por el usuario.
 
 </dd> <dt>
 
-*identificador: nombre* 
+*handle-name* 
 </dt> <dd>
 
 Especifica el nombre del identificador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El identificador especificado por el atributo de **\[ \_ identificador \] implícito** se utiliza de maneras diferentes en función de la naturaleza del procedimiento. Si el procedimiento es remoto, el identificador se utilizará como identificador de enlace para la llamada remota. El identificador implícito también puede usarse para establecer un enlace inicial para una función que usa un identificador de contexto. Si el procedimiento es un procedimiento de serialización, el identificador se usa como un identificador de serialización que controla la operación. En el caso de la serialización de tipos, el identificador se usa como el identificador de serialización para todos los tipos serializados.
+El identificador especificado por el **\[ atributo de identificador \_ \] implícito** se usa de maneras diferentes en función de la naturaleza del procedimiento. Si el procedimiento es remoto, el identificador se usará como identificador de enlace para la llamada remota. El identificador implícito también se puede usar para establecer un enlace inicial para una función que usa un identificador de contexto. Si el procedimiento es un procedimiento de serialización, el identificador se usa como identificador de serialización que controla la operación. En el caso de la serialización de tipos, el identificador se usa como identificador de serialización para todos los tipos serializados.
 
-El atributo de **\[ \_ identificador \] implícito** especifica una variable global que contiene un identificador usado por cualquier función que necesite identificadores implícitos.
+El **\[ atributo de \_ identificador \]** implícito especifica una variable global que contiene un identificador utilizado por cualquier función que necesite identificadores implícitos.
 
-El tipo de identificador de enlace implícito debe ser [**Handle \_ t**](handle-t.md) (o un tipo basado en el **identificador \_ t**) o un tipo de identificador definido por el usuario especificado con el atributo [**Handle**](handle.md) . El identificador de serialización implícito debe ser un tipo basado en el **identificador \_ t**.
+El tipo de identificador de enlace implícito debe ser [**\_ handle t**](handle-t.md) (o un tipo basado en handle **\_ t)** o un tipo de identificador definido por el usuario especificado con el [**atributo handle.**](handle.md) El identificador de serialización implícita debe ser un tipo basado en **el \_ identificador t**.
 
-Si el tipo de identificador implícito no está definido en el archivo IDL o en los archivos incluidos y importados por el archivo IDL para el equipo MIDL, debe proporcionar el archivo que contiene la definición del tipo de identificador al compilar el código auxiliar. Utilice la instrucción ACF [**include**](include.md) para incluir el archivo que contiene la definición del tipo de identificador.
+Si el tipo de identificador implícito no está definido en el archivo IDL o en los archivos incluidos e importados por el archivo IDL para el equipo MIDL, debe proporcionar el archivo que contiene la definición de tipo de identificador al compilar los códigos auxiliares. Use la instrucción [**include**](include.md) de ACF para incluir el archivo que contiene la definición de tipo de identificador.
 
-El atributo de **\[ \_ identificador \] implícito** puede aparecer una vez, como máximo. El atributo de **\[ \_ identificador \] implícito** solo puede producirse [**\[ \_ \]**](auto-handle.md) si no se producen los atributos de identificador automático y [**\[ \_ identificador \] explícito**](explicit-handle.md) .
+El **\[ atributo de \_ identificador \]** implícito puede producirse una vez, como máximo. El **\[ atributo de \_ identificador \]** implícito solo puede [**\[ \_ \]**](explicit-handle.md) [**\[ \_ \]**](auto-handle.md) producirse si no se producen los atributos de identificador automático y de identificador explícito.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -77,21 +77,21 @@ interface iface
 [Archivo de configuración de la aplicación (ACF)](application-configuration-file-acf-.md)
 </dt> <dt>
 
-[**\_identificador automático**](auto-handle.md)
+[**identificador \_ automático**](auto-handle.md)
 </dt> <dt>
 
-[**\_identificador explícito**](explicit-handle.md)
+[**identificador \_ explícito**](explicit-handle.md)
 </dt> <dt>
 
-[**identificador \_ t**](handle-t.md)
+[**handle \_ t**](handle-t.md)
 </dt> <dt>
 
-[**inclui**](include.md)
+[**incluír**](include.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

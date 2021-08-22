@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: clase UInt32ColumnValue'
-title: Clase UInt32ColumnValue
+description: 'Más información sobre: UInt32ColumnValue (clase)'
+title: UInt32ColumnValue (clase)
 TOCTitle: UInt32ColumnValue class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.UInt32ColumnValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.uint32columnvalue(v=EXCHG.10)
@@ -24,30 +24,30 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7511cf3d449002e9fed069fdb721dc3e4cc4b28e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3fa507085f214359d3b00602cd8e891b519bfda26c7f4389dadbb6777a8b361a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978355"
 ---
-# <a name="uint32columnvalue-class"></a>Clase UInt32ColumnValue
+# <a name="uint32columnvalue-class"></a>UInt32ColumnValue (clase)
 
-Un valor de columna [UInt32](/dotnet/api/system.uint32) .
+Valor [de columna UInt32.](/dotnet/api/system.uint32)
 
 Esta API no es conforme a CLS. 
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  [Microsoft. ISAM. esent. Interop. ColumnValue](./columnvalue-class.md)  
-    [Microsoft. ISAM. esent. Interop. ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[UInt32](/dotnet/api/system.uint32)\>  
-      Microsoft. ISAM. esent. Interop. UInt32ColumnValue  
+  [Microsoft.Isam.Esent.Interop.ColumnValue](./columnvalue-class.md)  
+    [Microsoft.Isam.Esent.Interop.ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[UInt32](/dotnet/api/system.uint32)\>  
+      Microsoft.Isam.Esent.Interop.UInt32ColumnValue  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -71,6 +71,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de UInt32ColumnValue](./uint32columnvalue-members.md)
+[Miembros UInt32ColumnValue](./uint32columnvalue-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,45 +1,45 @@
 ---
-title: Atributos de elementos de fotografía
-description: Atributos de elementos de fotografía
+title: Atributos de elementos de foto
+description: Atributos de elementos de foto
 ms.assetid: 3d3ed3a8-09ac-4e3d-b52d-3614b3a3fc05
 keywords:
-- Windows Media Player, atributos de elementos fotográficos
-- Windows Media Player móvil, atributos de elementos fotográficos
-- Modelo de objetos de Windows Media Player, atributos de elementos fotográficos
-- modelo de objetos, atributos de elementos fotográficos
-- Control ActiveX, atributos de elementos fotográficos
-- Control ActiveX de Windows Media Player, atributos de elementos fotográficos
-- Control ActiveX móvil de Windows Media Player, atributos de elementos fotográficos
-- referencia para el modelo de objetos, atributos de elementos fotográficos
-- atributos, elementos de fotografía
-- atributos de elementos de fotografía
+- Reproductor de Windows Media,atributos de elemento de foto
+- Reproductor de Windows Media Atributos de elementos móviles y foto
+- Reproductor de Windows Media modelo de objetos, atributos de elemento de foto
+- modelo de objetos, atributos de elemento de foto
+- ActiveX control,atributos de elemento de foto
+- Reproductor de Windows Media ActiveX control,atributos de elemento de foto
+- Reproductor de Windows Media Control de ActiveX móvil, atributos de elemento de foto
+- referencia para el modelo de objetos, atributos de elemento de foto
+- attributes,photo items
+- atributos de elemento de foto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6482151e2d9bbb15cff236f420b1386e5b68bfec
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2c9a5d36e77e9b58b642469bf8900eb32b3b789882afb7862bf8f44f5ab8cc22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105695356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054423"
 ---
-# <a name="photo-item-attributes"></a>Atributos de elementos de fotografía
+# <a name="photo-item-attributes"></a>Atributos de elementos de foto
 
-Los siguientes atributos están disponibles para un elemento de fotografía en la biblioteca.
+Los atributos siguientes están disponibles para un elemento de foto en la biblioteca.
 
 -   [**Atributo AcquisitionTime**](acquisitiontime-attribute.md)
 -   [**Atributo AlternateSourceURL**](alternatesourceurl-attribute.md)
 -   [**Atributo Author**](author-attribute.md)
--   [**Atributo comment**](comment-attribute.md)
+-   [**Atributo Comment**](comment-attribute.md)
 -   [**Atributo DLNAServerUDN**](dlnaserverudn-attribute.md)
 -   [**Atributo DLNASourceURI**](dlnasourceuri-attribute.md)
 -   [**Atributo DTCPIPHost**](dtcpiphost-attribute.md)
 -   [**Atributo DTCPIPPort**](dtcpipport-attribute.md)
 -   [**Atributo de evento**](event-attribute.md)
--   [**Atributo de archivo**](filesize-attribute.md)
--   [**FileType (atributo)**](filetype-attribute.md)
--   [**IdBiblioteca (atributo)**](libraryid-attribute.md)
--   [**Atributo Nombrebiblioteca**](libraryname-attribute.md)
--   [**MediaType (atributo)**](mediatype-attribute.md)
+-   [**Atributo FileSize**](filesize-attribute.md)
+-   [**Atributo FileType**](filetype-attribute.md)
+-   [**Atributo LibraryID**](libraryid-attribute.md)
+-   [**Atributo LibraryName**](libraryname-attribute.md)
+-   [**Atributo MediaType**](mediatype-attribute.md)
 -   [**Atributo RecordingTime**](recordingtime-attribute.md)
 -   [**Atributo RecordingTimeDay**](recordingtimeday-attribute.md)
 -   [**Atributo RecordingTimeMonth**](recordingtimemonth-attribute.md)
@@ -48,28 +48,28 @@ Los siguientes atributos están disponibles para un elemento de fotografía en l
 -   [**Atributo RecordingTimeYearMonthDay**](recordingtimeyearmonthday-attribute.md)
 -   [**Atributo SourceURL**](sourceurl-attribute.md)
 -   [**Atributo SyncState**](syncstate-attribute.md)
--   [**Atributo title**](title-attribute.md)
+-   [**Atributo Title**](title-attribute.md)
 -   [**Atributo TrackingID**](trackingid-attribute.md)
 -   [**Atributo UserCustom1**](usercustom1-attribute.md)
 -   [**Atributo UserCustom2**](usercustom2-attribute.md)
 -   [**Atributo UserRating**](userrating-attribute.md)
 -   [**Atributo WM/AlbumCoverURL**](wm-albumcoverurl-attribute.md)
--   [**Atributo WM/categoría**](wm-category-attribute.md)
+-   [**Atributo WM/Category**](wm-category-attribute.md)
 -   [**Atributo WM/MediaClassPrimaryID**](wm-mediaclassprimaryid-attribute.md)
 -   [**Atributo WM/MediaClassSecondaryID**](wm-mediaclasssecondaryid-attribute.md)
--   [**Atributo de WM/videoaltura**](wm-videoheight-attribute.md)
+-   [**Atributo WM/VideoHeight**](wm-videoheight-attribute.md)
 -   [**Atributo WM/VideoWidth**](wm-videowidth-attribute.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

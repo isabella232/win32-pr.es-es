@@ -1,11 +1,11 @@
 ---
-title: Propiedad RegisteredTask. Definition
-description: En el caso de scripting, obtiene la definición de la tarea.
+title: RegisteredTask.Definition, propiedad
+description: Para el scripting, obtiene la definición de la tarea.
 ms.assetid: 7117ccf3-e21e-41ca-baa2-4cdcaa9cda76
 keywords:
-- Propiedad de definición Programador de tareas
-- Propiedad Definition Programador de tareas, objeto RegisteredTask
-- Programador de tareas de objeto RegisteredTask, propiedad Definition
+- Definición de la propiedad Programador de tareas
+- Propiedad Definition Programador de tareas , objeto RegisteredTask
+- Objeto RegisteredTask Programador de tareas , propiedad Definition
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98cb599dee91371935197049d168c3ee5ddff5a4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7ee910370dbf1ec14fcfc9f80649d720b46e53a1c177da2e6bac91dcb6085c52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105676945"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060063"
 ---
-# <a name="registeredtaskdefinition-property"></a>Propiedad RegisteredTask. Definition
+# <a name="registeredtaskdefinition-property"></a>RegisteredTask.Definition, propiedad
 
-En el caso de scripting, obtiene la definición de la tarea.
+Para el scripting, obtiene la definición de la tarea.
 
 Esta propiedad es de solo lectura.
 
@@ -48,9 +48,9 @@ Definición de la tarea.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

@@ -1,5 +1,5 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos de llamada de función principales del controlador. La siguiente sintaxis se simplifica desde el código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de llamada de función principal del controlador. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 8c913145-ac50-4d40-8519-5fed79d977ba
 title: Clase DriverMajorFunctionCall
 ms.topic: reference
@@ -18,18 +18,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: c944b11c9019ba5244850f035bfc7c02d5ca3350
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b69012ae3d9dd46d2dd54c3859895288b9113fa89c772172e3f66a730b058d4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070245"
 ---
 # <a name="drivermajorfunctioncall-class"></a>Clase DriverMajorFunctionCall
 
-Esta clase es la clase de tipo de evento para los eventos de llamada de función principales del controlador.
+Esta clase es la clase de tipo de evento para los eventos de llamada de función principal del controlador.
 
-La siguiente sintaxis se simplifica desde el código MOF.
+La sintaxis siguiente se simplifica a partir del código MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,58 +48,58 @@ class DriverMajorFunctionCall : DiskIo
 
 ## <a name="members"></a>Miembros
 
-La clase **DriverMajorFunctionCall** tiene estos tipos de miembros:
+La **clase DriverMajorFunctionCall** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **DriverMajorFunctionCall** tiene estas propiedades.
+La **clase DriverMajorFunctionCall** tiene estas propiedades.
 
 <dl> <dt>
 
 **FileObject**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (4), puntero
+Calificadores: WmiDataId(4), Pointer
 </dt> </dl>
 
-Haga coincidir el valor de este puntero con el valor del puntero **FileObject** en un evento [**desmontaje \_ TypeGroup1**](diskio-typegroup1.md) para determinar el tipo de operación de e/s.
+Coincide con el valor de este puntero con el valor de puntero **FileObject** de un evento [**DiskIo \_ TypeGroup1**](diskio-typegroup1.md) para determinar el tipo de operación de E/S.
 
 </dd> <dt>
 
-**IRP**
+**Irp**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (5), puntero
+Calificadores: WmiDataId(5), Pointer
 </dt> </dl>
 
-Paquete de solicitud de e/s.
+Paquete de solicitud de E/S.
 
 </dd> <dt>
 
 **MajorFunction**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (1)
+Calificadores: WmiDataId(1)
 </dt> </dl>
 
 Código que identifica la función principal a la que se llama.
@@ -109,48 +109,48 @@ Código que identifica la función principal a la que se llama.
 **MinorFunction**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (2)
+Calificadores: WmiDataId(2)
 </dt> </dl>
 
-Código que idenitifies la función secundaria a la que se llama.
+Código que inicia la función secundaria a la que se llama.
 
 </dd> <dt>
 
 **RoutineAddr**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (3), puntero
+Calificadores: WmiDataId(3), Pointer
 </dt> </dl>
 
-Dirección de la función de controlador que se va a llamar.
+Dirección de la función de controlador a la que se llama.
 
 </dd> <dt>
 
 **UniqMatchId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: WmiDataId (6)
+Calificadores: WmiDataId(6)
 </dt> </dl>
 
-Identificador que identifica de forma única la solicitud. Use este identificador para correlacionar con los otros eventos del controlador, por ejemplo, el evento [**DriverCompleteRequest**](drivercompleterequest.md) .
+Identificador que identifica de forma única la solicitud. Use este identificador para correlacionar con los demás eventos de controlador, por ejemplo, el [**evento DriverCompleteRequest.**](drivercompleterequest.md)
 
 </dd> </dl>
 
@@ -158,10 +158,10 @@ Identificador que identifica de forma única la solicitud. Use este identificado
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -169,7 +169,7 @@ Identificador que identifica de forma única la solicitud. Use este identificado
 
 <dl> <dt>
 
-[**Desmontaje**](diskio.md)
+[**DiskIo**](diskio.md)
 </dt> </dl>
 
  

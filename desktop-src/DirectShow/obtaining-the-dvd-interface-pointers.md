@@ -4,16 +4,16 @@ ms.assetid: 3d9315fc-dcfb-483a-9437-55c440813dc2
 title: Obtener los punteros de interfaz de DVD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24825b2d24ffae70e3def131e8aa522a987c11d0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 70d965dff48813800fa76821c72fa06a2d2f652e623c8aaeb7c0b44f9f9fafc0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105686312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072948"
 ---
 # <a name="obtaining-the-dvd-interface-pointers"></a>Obtener los punteros de interfaz de DVD
 
-Una vez creado el gráfico de filtros, la aplicación puede obtener los punteros que necesita para controlar el navegador de DVD, el administrador de gráficos de filtro y la ventana de vídeo. En el ejemplo de código siguiente se muestran los pasos básicos, con comprobación de errores y otro código que se ha dejado por simplicidad. El código completo se encuentra en la aplicación de ejemplo de DVD en el método CDvdCore:: BuildGraph. (Para obtener más información, vea [ejemplos de DirectShow](directshow-samples.md)).
+Una vez creado el gráfico de filtros, la aplicación puede obtener los punteros que necesita para controlar dvd navigator, filter Graph Manager y la ventana de vídeo. Los pasos básicos, con la comprobación de errores y otro código que se quedan fuera por motivos de simplicidad, se ilustran en el ejemplo de código siguiente. El código completo se encuentra en la aplicación DVD Sample del método CDvdCore::BuildGraph. (Para obtener más información, [vea DirectShow ejemplos).](directshow-samples.md)
 
 
 ```C++

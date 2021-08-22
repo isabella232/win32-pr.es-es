@@ -1,7 +1,7 @@
 ---
-description: Especifica si un trabajo de impresión XPS está en la fase de puesta en cola o en la fase de representación.
+description: Especifica si un trabajo de impresión XPS está en la fase de creación de trabajos en cola o en la fase de representación.
 ms.assetid: 14871d29-59e4-45a2-9697-12550c58396c
-title: Enumeración EPrintXPSJobOperation (winspool. h)
+title: Enumeración EPrintXPSJobOperation (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 917993be2af6e7a78afaec1ad4749dadcaebecba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44f1f7ed80cd1de071633de37c5f0e91e913841388754a65c0194665bd3084de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103813547"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971544"
 ---
-# <a name="eprintxpsjoboperation-enumeration"></a>Enumeración EPrintXPSJobOperation
+# <a name="eprintxpsjoboperation-enumeration"></a>EPrintXPSJobOperation (enumeración)
 
-Especifica si un trabajo de impresión XPS está en la fase de puesta en cola o en la fase de representación.
+Especifica si un trabajo de impresión XPS está en la fase de creación de trabajos en cola o en la fase de representación.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -54,9 +54,9 @@ El trabajo XPS se está representando.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta enumeración se usa principalmente como parámetro para la función [**ReportJobProcessingProgress**](reportjobprocessingprogress.md) .
+Esta enumeración se usa principalmente como parámetro para la [**función ReportJobProcessingProgress.**](reportjobprocessingprogress.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,9 +64,9 @@ Esta enumeración se usa principalmente como parámetro para la función [**Repo
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                      |
+| Header<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
 
 
 

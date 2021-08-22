@@ -1,11 +1,11 @@
 ---
-title: Desencadenador (objeto)
-description: Objeto de scripting que proporciona las propiedades comunes que heredan todos los objetos de desencadenador.
+title: Desencadenador de objeto
+description: Objeto de scripting que proporciona las propiedades comunes heredadas por todos los objetos de desencadenador.
 ms.assetid: dfc4cb36-8bdb-4aec-963e-5f1ec1ff85aa
 keywords:
-- desencadenadores Programador de tareas, objeto desencadenador
-- Programador de tareas de objeto desencadenador
-- Programador de tareas de objeto desencadenador, descrito
+- desencadenadores Programador de tareas , objeto de desencadenador
+- Desencadenador de objetos Programador de tareas
+- Desencadenador de objetos Programador de tareas , descrito
 topic_type:
 - apiref
 api_name:
@@ -16,36 +16,36 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f4a7edc6eff0bb04c81ba3bff3bb86ec0455b25
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3b27427bf77465be119fc678cb4babf85254fa437b350c54d4409c0cd5b28024
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002013"
 ---
-# <a name="trigger-object"></a>Desencadenador (objeto)
+# <a name="trigger-object"></a>Desencadenador de objeto
 
-Objeto de scripting que proporciona las propiedades comunes que heredan todos los objetos de desencadenador.
+Objeto de scripting que proporciona las propiedades comunes heredadas por todos los objetos de desencadenador.
 
 ## <a name="members"></a>Miembros
 
-El objeto **desencadenador** tiene estos tipos de miembros:
+El **objeto Trigger** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-El objeto **desencadenador** tiene estas propiedades.
+El **objeto Trigger** tiene estas propiedades.
 
 
 
 | Propiedad                                                            | Tipo de acceso           | Descripción                                                                                                                                         |
 |:--------------------------------------------------------------------|:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**habilitado**](trigger-enabled.md)<br/>                       | Lectura/escritura<br/> | Obtiene o establece un valor booleano que indica si el desencadenador está habilitado.<br/>                                                              |
-| [**EndBoundary**](trigger-endboundary.md)<br/>               | Lectura/escritura<br/> | Obtiene o establece la fecha y hora en que se desactiva el desencadenador. El desencadenador no puede iniciar la tarea después de que se haya desactivado.<br/>               |
-| [**ExecutionTimeLimit**](trigger-executiontimelimit.md)<br/> | Lectura/escritura<br/> | Obtiene o establece la cantidad máxima de tiempo que puede ejecutarse la tarea iniciada por el desencadenador.<br/>                                         |
-| [**Sesión**](trigger-id.md)<br/>                                 | Lectura/escritura<br/> | Obtiene o establece el identificador del desencadenador.<br/>                                                                                             |
-| [**Repetición**](trigger-repetition.md)<br/>                 | Lectura/escritura<br/> | Obtiene o establece un valor que indica la frecuencia con la que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición una vez iniciada la tarea.<br/> |
+| [**EndBoundary**](trigger-endboundary.md)<br/>               | Lectura/escritura<br/> | Obtiene o establece la fecha y hora en que se desactiva el desencadenador. El desencadenador no puede iniciar la tarea después de desactivarla.<br/>               |
+| [**ExecutionTimeLimit**](trigger-executiontimelimit.md)<br/> | Lectura/escritura<br/> | Obtiene o establece la cantidad máxima de tiempo que la tarea iniciada por el desencadenador puede ejecutarse.<br/>                                         |
+| [**Id**](trigger-id.md)<br/>                                 | Lectura/escritura<br/> | Obtiene o establece el identificador del desencadenador.<br/>                                                                                             |
+| [**Repetición**](trigger-repetition.md)<br/>                 | Lectura/escritura<br/> | Obtiene o establece un valor que indica la frecuencia con la que se ejecuta la tarea y cuánto tiempo se repite el patrón de repetición después de iniciar la tarea.<br/> |
 | [**StartBoundary**](trigger-startboundary.md)<br/>           | Lectura/escritura<br/> | Obtiene o establece la fecha y hora en que se activa el desencadenador. El desencadenador puede iniciar la tarea después de activar el desencadenador.<br/>             |
 | [**Tipo**](trigger-type.md)<br/>                             |                       | Obtiene el tipo del desencadenador.<br/>                                                                                                            |
 
@@ -53,9 +53,9 @@ El objeto **desencadenador** tiene estas propiedades.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el Programador de tareas se proporcionan los siguientes objetos individuales para los distintos desencadenadores que puede usar una tarea:
+El Programador de tareas proporciona los siguientes objetos individuales para los distintos desencadenadores que puede usar una tarea:
 
 -   [**BootTrigger**](boottrigger.md)
 -   [**DailyTrigger**](dailytrigger.md)
@@ -69,11 +69,11 @@ En el Programador de tareas se proporcionan los siguientes objetos individuales 
 -   [**WeeklyTrigger**](weeklytrigger.md)
 -   [**SessionStateChangeTrigger**](sessionstatechangetrigger.md)
 
-Al leer o escribir XML, los desencadenadores de una tarea se especifican en el elemento [**triggers**](taskschedulerschema-triggers-tasktype-element.md) del esquema de programador de tareas.
+Al leer o escribir XML, los desencadenadores de una tarea se especifican en el [**elemento Triggers**](taskschedulerschema-triggers-tasktype-element.md) del Programador de tareas esquema.
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener más información y código de ejemplo de este objeto de scripting, vea [ejemplo de desencadenador de tiempo (scripting)](time-trigger-example--scripting-.md).
+Para obtener más información y código de ejemplo para este objeto de scripting, vea [Ejemplo de desencadenador de tiempo (scripting).](time-trigger-example--scripting-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,9 +81,9 @@ Para obtener más información y código de ejemplo de este objeto de scripting,
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
