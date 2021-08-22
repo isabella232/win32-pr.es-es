@@ -1,11 +1,11 @@
 ---
-title: Método ISoftKbd AdviseSoftKeyboardEventSink (Softkbdc. h)
-description: El método ISoftKbd AdviseSoftKeyboardEventSink instala un receptor de eventos de teclado en pantalla para controlar las notificaciones de OnKeySelection desde el teclado en pantalla.
+title: Método ISoftKbd AdviseSoftKeyboardEventSink (Softkbdc.h)
+description: El método ISoftKbd AdviseSoftKeyboardEventSink instala un receptor de eventos de teclado soft para controlar las notificaciones OnKeySelection desde el teclado soft.
 ms.assetid: f7a441dc-7bef-4fc0-bc62-c153a55a844c
 keywords:
-- Método AdviseSoftKeyboardEventSink marco de trabajo de servicios de texto
-- Método AdviseSoftKeyboardEventSink marco de trabajo de servicios de texto, interfaz ISoftKbd
-- ISoftKbd interface Text Services Framework, método AdviseSoftKeyboardEventSink
+- Método AdviseSoftKeyboardEventSink Text Services Framework
+- Método AdviseSoftKeyboardEventSink Text Services Framework , interfaz ISoftKbd
+- Interfaz ISoftKbd Text Services Framework método , AdviseSoftKeyboardEventSink
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ab17de2104c6104b044f027152cfc45cca968b6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 73a3a734e66bb319bb7e24b6ca3b27299f984f33b98772c1cc446c40e3f27426
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118877992"
 ---
-# <a name="isoftkbdadvisesoftkeyboardeventsink-method"></a>ISoftKbd:: AdviseSoftKeyboardEventSink (método)
+# <a name="isoftkbdadvisesoftkeyboardeventsink-method"></a>ISoftKbd::AdviseSoftKeyboardEventSink (método)
 
-El método **ISoftKbd:: AdviseSoftKeyboardEventSink** instala un receptor de eventos de teclado en pantalla para controlar las notificaciones de OnKeySelection desde el teclado en pantalla.
+El **método ISoftKbd::AdviseSoftKeyboardEventSink** instala un receptor de eventos de teclado soft para controlar las notificaciones OnKeySelection desde el teclado suave.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,31 +45,31 @@ HRESULT AdviseSoftKeyboardEventSink(
 
 <dl> <dt>
 
-*dwKeyboardId* \[ de\]
+*dwKeyboardId* \[ En\]
 </dt> <dd>
 
-Identificador del teclado en pantalla.
+Identificador del teclado suave.
 
 </dd> <dt>
 
-*riid* \[ de\]
+*riid* \[ En\]
 </dt> <dd>
 
-Identificador de interfaz para la interfaz de receptor.
+Identificador de interfaz para la interfaz del receptor.
 
 </dd> <dt>
 
-*punk* \[ de\]
+*así como* \[ En\]
 </dt> <dd>
 
-Puntero a [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) para la interfaz de receptor especificada por *riid*. Este parámetro no se puede establecer en **null**.
+Puntero a [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) para la interfaz de receptor especificada por *riid*. Este parámetro no se puede establecer en **NULL.**
 
 </dd> <dt>
 
-*pdwCookie* \[ enuncia\]
+*pdwCookie* \[ out\]
 </dt> <dd>
 
-Puntero al búfer en el que este método recupera la "cookie" de teclado blando utilizada para la conexión al cliente. La cookie debe ser única para cada conexión.
+Puntero al búfer en el que este método recupera la "cookie" de teclado soft usada para la conexión al cliente. La cookie debe ser única para cada conexión.
 
 </dd> </dl>
 
@@ -79,10 +79,10 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Value                                                                                        | Descripción                                    |
+| Valor                                                                                        | Descripción                                    |
 |----------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | Método realizado correctamente.<br/>          |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Uno o más parámetros no son válidos.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Método realizado correctamente.<br/>          |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Uno o varios parámetros no son válidos.<br/> |
 
 
 
@@ -92,13 +92,13 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
-| Redistribuible<br/>          | TSF 1,0 en Windows 2000 Professional<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
-| IDL<br/>                      | <dl> <dt>Softkbd. idl</dt> </dl> |
+| Redistribuible<br/>          | TSF 1.0 en Windows 2000 Professional<br/>                                        |
+| Header<br/>                   | <dl> <dt>Softkbdc.h</dt> </dl>  |
+| Idl<br/>                      | <dl> <dt>Softkbd.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Softkbd.dll</dt> </dl> |
 
 

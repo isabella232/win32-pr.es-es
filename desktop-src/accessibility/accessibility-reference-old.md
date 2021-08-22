@@ -1,17 +1,17 @@
 ---
-description: Documentación de referencia de las tecnologías de automatización y accesibilidad de Windows, como MSAA y la automatización de la interfaz de usuario.
-title: Referencia de accesibilidad y automatización de Windows
+description: Documentación de referencia para Windows de accesibilidad y automatización, incluidas MSAA y Automatización de la interfaz de usuario.
+title: Windows de accesibilidad y automatización
 ms.topic: article
 ms.date: 04/18/2019
-ms.openlocfilehash: 0638176bdbc9ac61a724f53c4202a7c47e8fa6ad
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1813a745a0ae0f6c5e932924351680cf44039874d19c358045501773fdcd879f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118814600"
 ---
-# <a name="windows-accessibility-and-automation-reference"></a>Referencia de accesibilidad y automatización de Windows
+# <a name="windows-accessibility-and-automation-reference"></a>Windows de accesibilidad y automatización
 
-La accesibilidad de Windows admite dos categorías de características para ayudar a los desarrolladores de Windows a diseñar aplicaciones accesibles, los desarrolladores de tecnologías de asistencia, como lectores de pantalla y ampliadores, y ingenieros de pruebas de software crean scripts automatizados para probar aplicaciones de Windows: configuración de usuario y un conjunto completo de API de Win32.
+Windows La accesibilidad admite dos categorías de características para ayudar Windows los desarrolladores a diseñar aplicaciones accesibles, los desarrolladores de tecnología de asistencia crean herramientas como lectores de pantalla y lupa, y los ingenieros de pruebas de software crean scripts automatizados para probar aplicaciones Windows: configuración de usuario y un conjunto completo de API win32.
 
-Para obtener más información, vea [características de accesibilidad de Windows](../WinAuto/about-windows-accessibility-features.md).
+Para obtener más información, [vea Windows características de accesibilidad](../WinAuto/about-windows-accessibility-features.md).

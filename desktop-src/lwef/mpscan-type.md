@@ -1,10 +1,10 @@
 ---
-title: Enumeración MPSCAN_TYPE (MpClient. h)
+title: MPSCAN_TYPE enumeración (MpClient.h)
 description: Tipo de examen realizado.
 ms.assetid: 980A80FD-FF02-4338-B7FB-DAA141F65E89
 keywords:
-- MPSCAN_TYPE enumeración características de entorno heredado de Windows
-- PMPSCAN_TYPE el puntero de enumeración características de entorno heredado de Windows
+- MPSCAN_TYPE enumeración heredada de Windows environment
+- PMPSCAN_TYPE puntero de enumeración heredados Windows environment
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9eb89137dc9cfe5b8a4ff1f44a7a101239aa3a22
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 56906bfc9ad57f93bac4c8b8c27360b5ade9592ac33efe39574fe8890299e13a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747136"
 ---
-# <a name="mpscan_type-enumeration"></a>\_Enumeración de tipo MPSCAN
+# <a name="mpscan_type-enumeration"></a>Enumeración \_ MPSCAN TYPE
 
 Tipo de examen realizado.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -45,35 +45,35 @@ typedef enum tagMPSCAN_TYPE {
 
 <dl> <dt>
 
-<span id="MPSCAN_TYPE_UNKNOWN"></span><span id="mpscan_type_unknown"></span>**\_tipo MPSCAN \_ desconocido**
+<span id="MPSCAN_TYPE_UNKNOWN"></span><span id="mpscan_type_unknown"></span>**TIPO MPSCAN \_ \_ DESCONOCIDO**
 </dt> <dd>
 
 Exclusivamente para uso interno.
 
 </dd> <dt>
 
-<span id="MPSCAN_TYPE_QUICK"></span><span id="mpscan_type_quick"></span>**MPSCAN \_ tipo \_ rápido**
+<span id="MPSCAN_TYPE_QUICK"></span><span id="mpscan_type_quick"></span>**TIPO DE MPSCAN \_ \_ RÁPIDO**
 </dt> <dd>
 
-Examina los procesos en ejecución y varios puntos ASEP del sistema en los que normalmente se oculta el malware.
+Examina los procesos en ejecución y varios puntos ASEP en el sistema donde normalmente se oculta el malware.
 
 </dd> <dt>
 
-<span id="MPSCAN_TYPE_FULL"></span><span id="mpscan_type_full"></span>**\_tipo MPSCAN \_ completo**
+<span id="MPSCAN_TYPE_FULL"></span><span id="mpscan_type_full"></span>**TIPO DE MPSCAN \_ \_ COMPLETO**
 </dt> <dd>
 
-Realiza un examen rápido seguido de la exploración de todas las unidades fijas del sistema.
+Realiza un examen rápido seguido de un examen de todas las unidades fijas del sistema.
 
 </dd> <dt>
 
-<span id="MPSCAN_TYPE_RESOURCE"></span><span id="mpscan_type_resource"></span>**\_recurso de tipo MPSCAN \_**
+<span id="MPSCAN_TYPE_RESOURCE"></span><span id="mpscan_type_resource"></span>**RECURSO DE \_ TIPO MPSCAN \_**
 </dt> <dd>
 
 Examina recursos específicos, como archivos o carpetas.
 
 </dd> <dt>
 
-<span id="MPSCAN_TYPE_MAXVALUE"></span><span id="mpscan_type_maxvalue"></span>**MPSCAN \_ tipo \_ MAXVALUE**
+<span id="MPSCAN_TYPE_MAXVALUE"></span><span id="mpscan_type_maxvalue"></span>**MPSCAN \_ TYPE \_ MAXVALUE**
 </dt> <dd>
 
 Valor máximo posible.
@@ -84,11 +84,11 @@ Valor máximo posible.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

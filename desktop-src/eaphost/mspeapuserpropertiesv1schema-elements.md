@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7df89f73f18961b38201a4373c2e95028aaecfc5
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 5d4d2605a63d4290cfb8aa2e3000f4f2966a921fcc5b888ae1e4890aac2127c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118784959"
 ---
 # <a name="mspeapuserpropertiesv1-schema-elements"></a>Elementos de esquema mspeapuserpropertiesv1
 

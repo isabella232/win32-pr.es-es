@@ -1,19 +1,19 @@
 ---
-description: Muestra cómo codificar y descodificar un mensaje con contrafirma. En este ejemplo se usa la función de ejemplo MyHandleError. El código de la función MyHandleError y otras funciones auxiliares también se enumeran en funciones de De uso general.
+description: Muestra cómo codificar y descodificar un mensaje con contrasignación. En este ejemplo se usa la función de ejemplo MyHandleError. El código de la función MyHandleError y otras funciones auxiliares también se muestra en De uso general funciones.
 ms.assetid: 12930d4d-2ea5-4d95-b9cf-4f0dd351ce05
-title: 'Programa C de ejemplo: codificar y descodificar un mensaje con signo'
+title: 'Programa C de ejemplo: codificación y codificación de un mensaje con signo contador'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb5f0c87e861c9c9c85ce22624642318b841a13f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47cc8ff4528029e868ea5472720f00ccd9e2373ea121eed07f6d726d17ec8d9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007733"
 ---
-# <a name="example-c-program-encoding-and-decoding-a-countersigned-message"></a>Programa C de ejemplo: codificar y descodificar un mensaje con signo
+# <a name="example-c-program-encoding-and-decoding-a-countersigned-message"></a>Programa C de ejemplo: codificación y codificación de un mensaje con signo contador
 
-En el ejemplo siguiente se muestra cómo codificar y descodificar un mensaje con contrafirma. En este ejemplo se usa la función de ejemplo [**MyHandleError**](myhandleerror.md) . El código de la función **MyHandleError** y otras funciones auxiliares también se enumeran en [funciones de de uso general](general-purpose-functions.md).
+En el ejemplo siguiente se muestra cómo codificar y descodificar un mensaje con signo de contador. En este ejemplo se usa [**la función de ejemplo MyHandleError.**](myhandleerror.md) El código de **la función MyHandleError** y otras funciones auxiliares también se muestra en [De uso general Functions](general-purpose-functions.md).
 
 
 ```C++

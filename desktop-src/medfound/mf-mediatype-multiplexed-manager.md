@@ -27,9 +27,9 @@ Pase este valor [**aATTRIBUTEAttributes::GetUnknown**](/windows/desktop/api/mfob
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows 10, versión 1703 \[ solo para aplicaciones de escritorio\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                          |
 | Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 

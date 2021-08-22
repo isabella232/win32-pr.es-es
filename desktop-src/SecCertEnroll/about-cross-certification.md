@@ -1,21 +1,21 @@
 ---
-description: La certificación cruzada permite a las entidades de una infraestructura de clave pública (PKI) confiar en entidades de otra PKI.
+description: La certificación cruzada permite que las entidades de una infraestructura de clave pública (PKI) confíen en las entidades de otra PKI.
 ms.assetid: 93cdb10d-4b77-4511-8c5b-c27b290f9154
 title: Certificación cruzada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b18fcb8317145b7239464893391c5d2231ab1cb4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 644e5326f9d3b9f7cbe87290c044dea7f401f8a888fa3904afa162118a98d89b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118904554"
 ---
 # <a name="cross-certification"></a>Certificación cruzada
 
-La certificación cruzada permite a las entidades de una infraestructura de clave pública (PKI) confiar en entidades de otra PKI. Esta relación de confianza mutua normalmente es compatible con un acuerdo de certificación cruzada entre las entidades de certificación (CA) de cada PKI. El acuerdo establece las responsabilidades y responsabilidad de cada entidad.
+La certificación cruzada permite que las entidades de una infraestructura de clave pública (PKI) confíen en las entidades de otra PKI. Esta relación de confianza mutua suele ser compatible con un contrato de certificación cruzada entre las entidades de certificación (CA) de cada PKI. El contrato establece las responsabilidades y responsabilidades de cada parte.
 
-Una relación de confianza mutua entre dos CA requiere que cada CA emita un certificado al otro para establecer la relación en ambas direcciones. La ruta de acceso de confianza no es jerárquica (ninguna de las entidades de certificación de control está subordinada al otro), aunque las PKI independientes pueden ser jerarquías de certificados. Una vez que se han establecido dos CA y se han especificado las condiciones de confianza y los certificados emitidos entre sí, las entidades dentro de PKI independientes pueden interactuar de acuerdo con las directivas especificadas en los certificados.
+Una relación de confianza mutua entre dos CA requiere que cada ca emita un certificado a la otra para establecer la relación en ambas direcciones. La ruta de acceso de confianza no es jerárquica (ninguna de las CA de control está subordinada a la otra), aunque los PKI independientes pueden ser jerarquías de certificados. Una vez que dos CA han establecido y especificado los términos de confianza y emitidos certificados entre sí, las entidades dentro de los PKI independientes pueden interactuar sujeto a las directivas especificadas en los certificados.
 
 ![diagrama de certificación cruzada](images/cross-certification.png)
 

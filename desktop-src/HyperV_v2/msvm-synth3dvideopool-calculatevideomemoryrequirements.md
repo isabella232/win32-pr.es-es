@@ -1,7 +1,7 @@
 ---
-description: Calcula la cantidad de memoria de vídeo necesaria para una máquina virtual de RemoteFX.
+description: Calcula la cantidad de memoria de vídeo necesaria para una RemoteFX virtual.
 ms.assetid: F8C30601-EDA3-47F1-A717-9FE7E9DB8F62
-title: Método CalculateVideoMemoryRequirements de la clase Msvm_Synth3dVideoPool
+title: Método CalculateVideoMemoryRequirements de la Msvm_Synth3dVideoPool clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2a9fd80e777a9d166b896c2ce51d03bd91bbabfe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fd1485cdd4e96155db6540a5f07344add5f413514a92c420fcac78a008e7aca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950084"
 ---
-# <a name="calculatevideomemoryrequirements-method-of-the-msvm_synth3dvideopool-class"></a>Método CalculateVideoMemoryRequirements de la \_ clase Synth3dVideoPool de MSVM
+# <a name="calculatevideomemoryrequirements-method-of-the-msvm_synth3dvideopool-class"></a>Método CalculateVideoMemoryRequirements de la clase \_ Msvm Synth3dVideoPool
 
-Calcula la cantidad de memoria de vídeo necesaria para una máquina virtual de RemoteFX.
+Calcula la cantidad de memoria de vídeo necesaria para una RemoteFX virtual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,10 +41,10 @@ uint32 CalculateVideoMemoryRequirements(
 
 <dl> <dt>
 
-*monitorResolution* \[ de\]
+*monitorResolution* \[ En\]
 </dt> <dd>
 
-La resolución máxima del monitor de la máquina virtual. Debe ser uno de los valores siguientes.
+Resolución máxima del monitor para la máquina virtual. Debe ser uno de los siguientes valores.
 
 
 
@@ -61,14 +61,14 @@ La resolución máxima del monitor de la máquina virtual. Debe ser uno de los v
 
 </dd> <dt>
 
-*numberOfMonitors* \[ de\]
+*numberOfMonitors* \[ En\]
 </dt> <dd>
 
-Número máximo de monitores para la máquina virtual. El número mínimo de monitores es uno y el máximo depende de la resolución de pantalla máxima. En la tabla siguiente se define el número máximo de monitores permitido para diferentes resoluciones.
+Número máximo de monitores para la máquina virtual. El número mínimo de monitores es uno y el máximo depende de la resolución de pantalla máxima. En la tabla siguiente se define el número máximo de monitores permitidos para diferentes resoluciones.
 
 
 
-| Solución             | Monitores máximos |
+| Resolución             | Monitores máximos |
 |------------------------|------------------|
 | 1024 768<br/>  | 4<br/>     |
 | 1280 1024<br/> | 4<br/>     |
@@ -81,7 +81,7 @@ Número máximo de monitores para la máquina virtual. El número mínimo de mon
 
 </dd> <dt>
 
-*requiredVideoMemory* \[ enuncia\]
+*requiredVideoMemory* \[ out\]
 </dt> <dd>
 
 Recibe la cantidad necesaria de memoria de vídeo, en bytes.
@@ -90,33 +90,33 @@ Recibe la cantidad necesaria de memoria de vídeo, en bytes.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un código de estado, que puede ser uno de los valores siguientes.
+Devuelve un código de estado, que puede ser uno de los siguientes valores.
 
 
 
 | Código o valor devuelto                                                                                                                                                                | Descripción                                           |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| <dl> <dt>**Completado sin error**</dt> <dt>0</dt> </dl>                    | Ejecutado.<br/>                                |
+| <dl> <dt>**Completado sin error**</dt> <dt>0</dt> </dl>                    | Exitoso.<br/>                                |
 | <dl> <dt>**Parámetros de método comprobados: trabajo iniciado**</dt> <dt>4096</dt> </dl> | Trabajo iniciado.<br/>                               |
 | <dl> <dt>**Error**</dt> <dt>32768</dt> </dl>                                 | Failed.<br/>                                    |
-| <dl> <dt>**Acceso Denegado**</dt> <dt>32769</dt> </dl>                          | Acceso denegado.<br/>                             |
-| <dl> <dt>**No compatible**</dt> <dt>32770</dt> </dl>                          | No se admite.<br/>                             |
-| <dl> El <dt>**Estado es desconocido**</dt> <dt>32771</dt> </dl>                      | Se desconoce el estado de conexión.<br/>                         |
-| <dl> <dt>**Tiempo de espera**</dt> <dt>32772</dt> </dl>                                | Tiempo de espera.<br/>                                   |
+| <dl> <dt>**Acceso denegado**</dt> <dt>32769</dt> </dl>                          | Acceso denegado:<br/>                             |
+| <dl> <dt>**No compatible**</dt> <dt>con 32770</dt> </dl>                          | No compatible.<br/>                             |
+| <dl> <dt>**El estado es desconocido**</dt> <dt>32771</dt> </dl>                      | Se desconoce el estado de conexión.<br/>                         |
+| <dl> <dt>**Tiempo de**</dt> <dt>espera 32772</dt> </dl>                                | Tiempo de espera.<br/>                                   |
 | <dl> <dt>**Parámetro no válido**</dt> <dt>32773</dt> </dl>                      | Un parámetro no es válido.<br/>                  |
-| <dl> El <dt>**sistema está en uso**</dt> <dt>32774</dt> </dl>                      | El sistema está en uso.<br/>                          |
+| <dl> <dt>**El sistema se usa**</dt> <dt>en la 32774</dt> </dl>                      | El sistema está en uso.<br/>                          |
 | <dl> <dt>**Estado no válido para esta operación**</dt> <dt>32775</dt> </dl>       | El estado no es válido para esta operación.<br/> |
 | <dl> <dt>**Tipo de datos incorrecto**</dt> <dt>32776</dt> </dl>                    | Tipo de datos incorrecto.<br/>                       |
-| <dl> El <dt>**sistema no está disponible**</dt> <dt>32777</dt> </dl>                | El sistema no está disponible.<br/>                   |
-| <dl> <dt>**Memoria**</dt> insuficiente <dt>32778</dt> </dl>                          | Memoria insuficiente<br/>                             |
+| <dl> <dt>**El sistema no está disponible**</dt> <dt>32777</dt> </dl>                | El sistema no está disponible.<br/>                   |
+| <dl> <dt>**Memoria sin memoria**</dt> <dt>32778</dt> </dl>                          | Memoria insuficiente<br/>                             |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Normalmente, se llama a este método en el sistema host para determinar si el host tiene suficiente memoria de vídeo disponible para hospedar una máquina virtual de RemoteFX. Para ello, compare la cantidad de memoria de vídeo calculada por este método con la propiedad [**MSVM \_ PhysicalGPUInfo. AvailableVideoMemory**](msvm-physicalgpuinfo.md) para determinar si el equipo host tiene suficiente memoria de vídeo disponible. Puede usar esta información para determinar si una máquina virtual se puede migrar al sistema host.
+Normalmente, se llama a este método en el sistema host para determinar si el host tiene suficiente memoria de vídeo disponible para hospedar una RemoteFX virtual. Para ello, compare la cantidad de memoria de vídeo calculada por este método con la propiedad [**\_ Msvm PhysicalGPUInfo.AvailableVideoMemory**](msvm-physicalgpuinfo.md) para determinar si la máquina host tiene suficiente memoria de vídeo disponible. Puede usar esta información para determinar si una máquina virtual se puede mover al sistema host.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -124,10 +124,10 @@ Normalmente, se llama a este método en el sistema host para determinar si el ho
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -136,10 +136,10 @@ Normalmente, se llama a este método en el sistema host para determinar si el ho
 
 <dl> <dt>
 
-[**MSVM \_ PhysicalGPUInfo**](msvm-physicalgpuinfo.md)
+[**Msvm \_ PhysicalGPUInfo**](msvm-physicalgpuinfo.md)
 </dt> <dt>
 
-[**MSVM \_ Synth3dVideoPool**](msvm-synth3dvideopool.md)
+[**Msvm \_ Synth3dVideoPool**](msvm-synth3dvideopool.md)
 </dt> </dl>
 
  

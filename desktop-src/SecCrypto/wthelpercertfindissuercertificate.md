@@ -1,7 +1,7 @@
 ---
-description: Busca un certificado de emisor de los almacenes de certificados especificados que coincide con el certificado de sujeto especificado.
+description: Busca un certificado de emisor de los almacenes de certificados especificados que coincidan con el certificado de firmante especificado.
 ms.assetid: c724f602-fc73-4857-941f-0f22a9e472d1
-title: WTHelperCertFindIssuerCertificate función)
+title: Función WTHelperCertFindIssuerCertificate
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,21 +13,21 @@ api_type:
 - DllExport
 api_location:
 - Wintrust.dll
-ms.openlocfilehash: 99135ac22509b288726732ca4a16248b304f294b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c6c7957e969d04eaf65014e023a5f64e0826b6285fb878d9afefbd7cda25721
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118895837"
 ---
-# <a name="wthelpercertfindissuercertificate-function"></a>WTHelperCertFindIssuerCertificate función)
+# <a name="wthelpercertfindissuercertificate-function"></a>Función WTHelperCertFindIssuerCertificate
 
-\[La función **WTHelperCertFindIssuerCertificate** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En versiones posteriores podría modificarse o no estar disponible.\]
+\[La **función WTHelperCertFindIssuerCertificate** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En versiones posteriores podría modificarse o no estar disponible.\]
 
-La función **WTHelperCertFindIssuerCertificate** busca un certificado de emisor de los almacenes de certificados especificados que coincide con el certificado de sujeto especificado.
+La **función WTHelperCertFindIssuerCertificate** busca un certificado de emisor de los almacenes de certificados especificados que coincidan con el certificado de sujeto especificado.
 
 > [!Note]  
-> Esta función no tiene ninguna biblioteca de importación asociada. Debe utilizar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Wintrust.dll.
+> Esta función no tiene ninguna biblioteca de importación asociada. Debe usar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Wintrust.dll.
 
  
 
@@ -52,38 +52,38 @@ PCCERT_CONTEXT WINAPI WTHelperCertFindIssuerCertificate(
 
 <dl> <dt>
 
-*pChildContext* \[ de\]
+*pChildContext* \[ En\]
 </dt> <dd>
 
-Certificado del firmante para el que se va a buscar un certificado de emisor coincidente.
+Certificado del firmante para el que se va a buscar un certificado de emisor correspondiente.
 
 </dd> <dt>
 
-*chStores* \[ de\]
+*chStores* \[ En\]
 </dt> <dd>
 
-Número de elementos de la matriz *pahStores* .
+Número de elementos de la matriz *pahStores.*
 
 </dd> <dt>
 
-*pahStores* \[ de\]
+*pahStores* \[ En\]
 </dt> <dd>
 
 Matriz de almacenes de certificados en los que se va a buscar.
 
 </dd> <dt>
 
-*psftVerifyAsOf* \[ de\]
+*psftVerifyAsOf* \[ En\]
 </dt> <dd>
 
 Hora de comprobación.
 
 </dd> <dt>
 
-*dwEncoding* \[ de\]
+*dwEncoding* \[ En\]
 </dt> <dd>
 
-Valor **DWORD** que especifica los tipos de codificación del certificado que se va a comprobar. Para obtener información sobre los posibles tipos de codificación, consulte [certificados y tipos de codificación de mensajes](certificate-and-message-encoding-types.md).
+Valor **DWORD** que especifica los tipos de codificación del certificado que se comprobará. Para obtener información sobre los posibles tipos de codificación, vea [Tipos de codificación de certificados y mensajes.](certificate-and-message-encoding-types.md)
 
 </dd> <dt>
 
@@ -94,14 +94,14 @@ Este parámetro puede ser una combinación bit a bit de cero o más de los sigui
 
 
 
-| Value                                                                                                                                                                                                                                                                 | Significado                                                                                         |
+| Valor                                                                                                                                                                                                                                                                 | Significado                                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| <span id="CERT_CONFIDENCE_SIG"></span><span id="cert_confidence_sig"></span><dl> <dt>**Certificado \_ de \_Firma de confianza**</dt> <dt> 0x10000000</dt> </dl>                     | La firma del certificado es válida.<br/>                                           |
-| <span id="CERT_CONFIDENCE_TIME"></span><span id="cert_confidence_time"></span><dl> <dt>**Certificado \_ de 0x01000000 de \_ tiempo de confianza**</dt> <dt></dt> </dl>                  | La hora del emisor del certificado es válida.<br/>                                         |
-| <span id="_CERT_CONFIDENCE_TIMENEST"></span><span id="_cert_confidence_timenest"></span><dl> <dt> **Confianza de CERT \_ \_ TIMENEST**</dt> <dt>0x00100000</dt> </dl>    | La hora del certificado es válida.<br/>                                                |
-| <span id="_CERT_CONFIDENCE_AUTHIDEXT"></span><span id="_cert_confidence_authidext"></span><dl> <dt> **Confianza de CERT \_ \_ AUTHIDEXT**</dt> <dt>0x00010000</dt> </dl> | La extensión de ID. de entidad es válida.<br/>                                                 |
-| <span id="_CERT_CONFIDENCE_HYGIENE"></span><span id="_cert_confidence_hygiene"></span><dl> <dt>0x00001000</dt> de <dt> **\_ \_ higiene de confianza de certificados**</dt> </dl>       | Como mínimo, la firma de la extensión de identificador de entidad y certificado es válida.<br/> |
-| <span id="_CERT_CONFIDENCE_HIGHEST"></span><span id="_cert_confidence_highest"></span><dl> <dt> **Confianza de certificado \_ \_ más alta**</dt> <dt>0x11111000</dt> </dl>       | Una combinación de todos los demás valores de confianza.<br/>                                 |
+| <span id="CERT_CONFIDENCE_SIG"></span><span id="cert_confidence_sig"></span><dl> <dt>**CERT \_ Confidence \_ SIG**</dt> <dt> 0x10000000</dt> </dl>                     | La firma del certificado es válida.<br/>                                           |
+| <span id="CERT_CONFIDENCE_TIME"></span><span id="cert_confidence_time"></span><dl> <dt>**CERT \_ Tiempo \_ de confianza**</dt> <dt> 0x01000000</dt> </dl>                  | La hora del emisor del certificado es válida.<br/>                                         |
+| <span id="_CERT_CONFIDENCE_TIMENEST"></span><span id="_cert_confidence_timenest"></span><dl> <dt> **CERT \_ CONFIDENCE \_ TIMENEST**</dt> <dt>0x00100000</dt> </dl>    | La hora del certificado es válida.<br/>                                                |
+| <span id="_CERT_CONFIDENCE_AUTHIDEXT"></span><span id="_cert_confidence_authidext"></span><dl> <dt> **CERTIFICADO \_ DE CONFIANZA \_ AUTHIDEXT**</dt> <dt>0x00010000</dt> </dl> | La extensión de identificador de autoridad es válida.<br/>                                                 |
+| <span id="_CERT_CONFIDENCE_HYGIENE"></span><span id="_cert_confidence_hygiene"></span><dl> <dt> **PROTECCIÓN \_ DE LA CONFIANZA \_ DE**</dt> <dt>0X00001000</dt> </dl>       | Como mínimo, la firma de la extensión de certificado y de identificador de entidad es válida.<br/> |
+| <span id="_CERT_CONFIDENCE_HIGHEST"></span><span id="_cert_confidence_highest"></span><dl> <dt> **CERT \_ CONFIDENCE \_ HIGHEST**</dt> <dt>0x11111000</dt> </dl>       | Combinación de todos los demás valores de confianza.<br/>                                 |
 
 
 
@@ -109,34 +109,34 @@ Este parámetro puede ser una combinación bit a bit de cero o más de los sigui
 
 </dd> <dt>
 
-*dwError* \[ enuncia\]
+*dwError* \[ out\]
 </dt> <dd>
 
-Un puntero a una variable **DWORD** que contiene el valor de error de este certificado, si procede.
+Puntero a una variable **DWORD** que contiene el valor de error de este certificado, si procede.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Un certificado de emisor que coincida con el certificado de firmante especificado por el parámetro *pChildContext* .
+Certificado de emisor que coincide con el certificado de sujeto especificado por el *parámetro pChildContext.*
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para encontrar correctamente un certificado de emisor coincidente, deben cumplirse los siguientes requisitos:
+Para encontrar correctamente un certificado de emisor que coincida, se deben cumplir los siguientes requisitos:
 
--   La firma del certificado de sujeto especificado por el parámetro *pChildContext* debe ser válida.
--   El miembro **rgExtension** del miembro **PCertInfo** del parámetro *pChildContext* debe contener una estructura de [**\_ \_ \_ \_ información de identificador de clave de entidad emisora de certificados**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_authority_key_id_info) . Los miembros **CertIssuer** y **CertSerialMember** de esta estructura coinciden mucho con los miembros correspondientes del certificado del emisor.
--   El valor del parámetro *psftVerifyAsOf* debe estar dentro del período de validez del certificado del firmante.
+-   La firma del certificado de sujeto especificado por el *parámetro pChildContext* debe ser válida.
+-   El **miembro rgExtension** del miembro **pCertInfo** del parámetro *pChildContext* debe contener una [**estructura CERT AUTHORITY KEY ID \_ \_ \_ \_ INFO.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_authority_key_id_info) Los **miembros CertIssuer** y **CertSerialMember** de esta estructura coinciden mucho con los miembros correspondientes para el certificado del emisor.
+-   El valor del *parámetro psftVerifyAsOf* debe estar dentro del período de validez del certificado de sujeto.
 -   El período de validez del certificado del firmante debe estar dentro del período de validez del certificado del emisor.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Archivo DLL<br/>                      | <dl> <dt>Wintrust.dll</dt> </dl> |
 
 

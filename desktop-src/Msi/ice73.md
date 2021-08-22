@@ -1,23 +1,23 @@
 ---
-description: ICE73 comprueba que el paquete no reutiliza códigos de paquete, códigos de actualización ni códigos de producto de los ejemplos del SDK de Windows Installer. Los paquetes nunca deben reutilizar el paquete, la actualización o los códigos de producto de otro producto.
+description: ICE73 comprueba que el paquete no reutiliza códigos de paquete, códigos de actualización ni códigos de producto de los ejemplos del SDK Windows Installer. Los paquetes nunca deben volver a usar el paquete, la actualización o los códigos de producto de otro producto.
 ms.assetid: a04429c2-ff9e-4ec8-8d07-faf1479f4920
 title: ICE73
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11ac0e192f7c2ab7fb6f6236e45e0e4da70157e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2e5beecbfc7b4345d3b0dd7a93b86c55acc1abde4cc4f99d72749368be9d303
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118635081"
 ---
 # <a name="ice73"></a>ICE73
 
-ICE73 comprueba que el paquete no reutiliza códigos de paquete, códigos de actualización ni códigos de producto de los ejemplos del SDK de Windows Installer. Los paquetes nunca deben reutilizar el paquete, la actualización o los códigos de producto de otro producto.
+ICE73 comprueba que el paquete no reutiliza códigos de paquete, códigos de actualización ni códigos de producto de los ejemplos del SDK Windows Installer. Los paquetes nunca deben volver a usar el paquete, la actualización o los códigos de producto de otro producto.
 
 ## <a name="result"></a>Resultado
 
-ICE73 genera una advertencia si el paquete de su producto vuelve a usar un paquete o un código de producto de un ejemplo de SDK de Windows Installer.
+ICE73 genera una advertencia si el paquete del producto reutiliza un paquete o código de producto de un ejemplo Windows SDK del instalador.
 
 ## <a name="example"></a>Ejemplo
 
@@ -30,19 +30,19 @@ This package reuses the '{8FC7****-88A0-4b41-82B8-8905D4AA904C}' Upgrade Code of
 ```
 
 > [!Note]  
-> Los asteriscos ( \* \* \* \* ) del GUID representan el intervalo de GUID reservado para los paquetes del SDK de Windows Installer posteriores.
+> Los asteriscos ( ) del GUID representan el intervalo de GUID reservados para los paquetes posteriores \* \* \* \* Windows SDK del instalador.
 
  
 
 Para corregir los errores, genere un nuevo GUID único para los códigos de producto y paquete del paquete. También necesitará un nuevo GUID único para el código de actualización del paquete.
 
-[Secuencia de información de Resumen](summary-information-stream.md) (parcial)
+[Secuencia de información de resumen](summary-information-stream.md) (parcial)
 
 
 
-| Propiedad       | Value                                  |
+| Propiedad       | Valor                                  |
 |----------------|----------------------------------------|
-| PID \_ REVNUMBER | {000C1101-0000-0000-C000-000000000047} |
+| PID \_ REVNUMBER | {000C1101-0000-0000-C000-00000000047} |
 
 
 
@@ -52,7 +52,7 @@ Para corregir los errores, genere un nuevo GUID único para los códigos de prod
 
 
 
-| Propiedad                           | Value                                  |
+| Propiedad                           | Valor                                  |
 |------------------------------------|----------------------------------------|
 | [**ProductCode**](productcode.md) | {80F7E030-A751-11D2-A7D4-006097C99860} |
 | [**UpgradeCode**](upgradecode.md) | {8FC70000-88A0-4b41-82B8-8905D4AA904C} |
@@ -71,7 +71,7 @@ Para corregir los errores, genere un nuevo GUID único para los códigos de prod
 [Códigos de producto](product-codes.md)
 </dt> <dt>
 
-[**Propiedad de Resumen de número de revisión**](revision-number-summary.md)
+[**Propiedad Resumen de número de revisión**](revision-number-summary.md)
 </dt> <dt>
 
 [**Propiedad UpgradeCode**](upgradecode.md)

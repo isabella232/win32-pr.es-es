@@ -1,9 +1,9 @@
 ---
-title: función gluQuadricTexture (GLU. h)
-description: La función gluQuadricTexture especifica si se va a aplicar textura a Quadrics.
+title: Función gluQuadricTexture (Glu.h)
+description: La función gluQuadricTexture especifica si se van a texturar los cuádigos.
 ms.assetid: 11681497-f099-4856-a0ac-6a44abd3e1a1
 keywords:
-- gluQuadricTexture (función) OpenGL
+- Función GluQuadricTexture OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cc395564b6c6f30f38a8c5129c489d0bfca6b80
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bbde88e0a878fd59e01ad0a450cf4cbe9831c4ad867c8029373586a8efe830eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118937486"
 ---
-# <a name="gluquadrictexture-function"></a>gluQuadricTexture función)
+# <a name="gluquadrictexture-function"></a>Función gluQuadricTexture
 
-La función **gluQuadricTexture** especifica si se va a aplicar textura a Quadrics.
+La **función gluQuadricTexture** especifica si se van a texturar los cuádigos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ void WINAPI gluQuadricTexture(
 *quadObject* 
 </dt> <dd>
 
-El objeto quadric (creado con [**gluNewQuadric**](glunewquadric.md)).
+Objeto cuádigo (creado [**con gluNewQuadric).**](glunewquadric.md)
 
 </dd> <dt>
 
@@ -57,8 +57,8 @@ Marca que indica si se van a generar coordenadas de textura. Los valores siguien
 
 | Value                                                                                                                                          | Significado                                                                    |
 |------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| <span id="GL_TRUE"></span><span id="gl_true"></span><dl> <dt>**GL \_ true**</dt> </dl>    | Generar coordenadas de textura.<br/>                                   |
-| <span id="GL_FALSE"></span><span id="gl_false"></span><dl> <dt>**CONTABILIDAD \_ falsa**</dt> </dl> | No genere coordenadas de textura. Este es el valor predeterminado.<br/> |
+| <span id="GL_TRUE"></span><span id="gl_true"></span><dl> <dt>**GL \_ TRUE**</dt> </dl>    | Generar coordenadas de textura.<br/>                                   |
+| <span id="GL_FALSE"></span><span id="gl_false"></span><dl> <dt>**GL \_ FALSE**</dt> </dl> | No genere coordenadas de textura. Este es el valor predeterminado.<br/> |
 
 
 
@@ -70,11 +70,11 @@ Marca que indica si se van a generar coordenadas de textura. Los valores siguien
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **gluQuadricTexture** especifica si las coordenadas de textura se generarán para Quadrics representadas con **quadObject**.
+La **función gluQuadricTexture** especifica si se van a generar coordenadas de textura para los cuádigos representados con **quadObject**.
 
-La forma en que se generan las coordenadas de textura depende de la quadric específica que se representa.
+La manera en que se generan las coordenadas de textura depende del cuádigo específico representado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,8 +84,8 @@ La forma en que se generan las coordenadas de textura depende de la quadric espe
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

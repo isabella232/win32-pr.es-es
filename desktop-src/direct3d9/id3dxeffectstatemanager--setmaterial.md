@@ -1,7 +1,7 @@
 ---
-description: Una función de devolución de llamada que debe ser implementada por un usuario para establecer el estado del material.
+description: Función de devolución de llamada que debe implementar un usuario para establecer el estado del material.
 ms.assetid: 4c5e903f-551b-4346-a5eb-301a3a5b9b44
-title: 'ID3DXEffectStateManager:: SetMaterial (método) (D3DX9Effect. h)'
+title: Método ID3DXEffectStateManager::SetMaterial (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: b503bd195468fb323e7e655c0bdd201e25dfdce2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 67e8b1ad498b5aacbae7aaad2d6b63fa406d54d6315a4e75b3028efe3107eaf8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105698302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118802879"
 ---
-# <a name="id3dxeffectstatemanagersetmaterial-method"></a>ID3DXEffectStateManager:: SetMaterial (método)
+# <a name="id3dxeffectstatemanagersetmaterial-method"></a>Método ID3DXEffectStateManager::SetMaterial
 
-Una función de devolución de llamada que debe ser implementada por un usuario para establecer el estado del material.
+Función de devolución de llamada que debe implementar un usuario para establecer el estado del material.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT SetMaterial(
 
 <dl> <dt>
 
-*pMaterial* \[ de\]
+*pMaterial* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DMATERIAL9**](d3dmaterial9.md) \***
 
-Puntero al estado del material. Vea [**D3DMATERIAL9**](d3dmaterial9.md).
+Puntero al estado del material. Vea [**D3DMATERIAL9.**](d3dmaterial9.md)
 
 </dd> </dl>
 
@@ -53,10 +53,10 @@ Puntero al estado del material. Vea [**D3DMATERIAL9**](d3dmaterial9.md).
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El método implementado por el usuario debe devolver S \_ correcto. Si se produce un error en la devolución de llamada al establecer el estado del dispositivo, se producirá una de las siguientes acciones:
+El método implementado por el usuario debe devolver S \_ OK. Si se produce un error en la devolución de llamada al establecer el estado del dispositivo, se producirá una de las siguientes acciones:
 
--   Se producirá un error en el efecto durante [**ID3DXEffect:: BeginPass**](id3dxeffect--beginpass.md).
--   Se producirá un error en la llamada de estado de efecto dinámico (como [**IDirect3DDevice9:: SetMaterial**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setmaterial)).
+-   Se producirá un error en el efecto [**durante ID3DXEffect::BeginPass**](id3dxeffect--beginpass.md).
+-   Se producirá un error en la llamada de estado de efecto dinámico (como [**IDirect3DDevice9::SetMaterial).**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setmaterial)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,12 +64,12 @@ El método implementado por el usuario debe devolver S \_ correcto. Si se produc
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
-title: Constantes de WINBIO_ANSI_381_FORMAT (Winbio \_ Types. h)
-description: Especifique el tipo de formato y el propietario del formato.
+title: WINBIO_ANSI_381_FORMAT constantes (Winbio \_ types.h)
+description: Especifique el propietario del formato y el tipo de formato.
 ms.assetid: 5EFFF7EB-D998-4EE9-A23F-B17477F00863
 topic_type:
 - apiref
@@ -13,23 +13,23 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c79701560ad6256e91adcf8360e2ce5866df1e9e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 625731bfcf880de8dd78e6f3ca942edb2732612a7e4199cee8caed223043fe65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105665997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118911554"
 ---
-# <a name="winbio_ansi_381_format-constants"></a>WINBIO \_ \_ constantes de \_ formato ANSI 381
+# <a name="winbio_ansi_381_format-constants"></a>Constantes DE FORMATO DE WINBIO \_ ANSI \_ 381 \_
 
-Los valores siguientes se pueden usar en la estructura de [**\_ \_ formato registrada WINBIO**](winbio-registered-format.md) .
+Los siguientes valores se pueden usar en la [**estructura DE FORMATO REGISTRADO \_ \_ DE WINBIO.**](winbio-registered-format.md)
 
 
 
 | Constante                                                                                                                                                                                                      | Descripción                                                                                                           |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------|
-| <span id="WINBIO_ANSI_381_FORMAT_OWNER"></span><span id="winbio_ansi_381_format_owner"></span><dl> <dt>**WINBIO \_ \_ propietario de \_ formato ANSI 381 \_**</dt> </dl> | Comité Internacional para el Comité técnico M1 (biométrico de estándares de tecnología de la información) (INCITS).<br/> |
-| <span id="WINBIO_ANSI_381_FORMAT_TYPE"></span><span id="winbio_ansi_381_format_type"></span><dl> <dt>**WINBIO \_ \_ tipo de \_ formato ANSI 381 \_**</dt> </dl>    | Formato de intercambio de datos basado en imágenes de Finger ANSI INCITS 381.<br/>                                                |
+| <span id="WINBIO_ANSI_381_FORMAT_OWNER"></span><span id="winbio_ansi_381_format_owner"></span><dl> <dt>**PROPIETARIO DEL FORMATO WINBIO \_ ANSI \_ 381 \_ \_**</dt> </dl> | Comité Inter International para estándares de tecnologías de la información (INCITS) M1 (biométrica).<br/> |
+| <span id="WINBIO_ANSI_381_FORMAT_TYPE"></span><span id="winbio_ansi_381_format_type"></span><dl> <dt>**TIPO DE FORMATO WINBIO \_ ANSI \_ 381 \_ \_**</dt> </dl>    | Formato de intercambio de datos basado en imágenes ANSI INCITS 381.<br/>                                                |
 
 
 
@@ -39,9 +39,9 @@ Los valores siguientes se pueden usar en la estructura de [**\_ \_ formato regis
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                       |
-| Encabezado<br/>                   | <dl> <dt>Winbio \_ Types. h (incluye Winbio. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
+| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 
@@ -52,7 +52,7 @@ Los valores siguientes se pueden usar en la estructura de [**\_ \_ formato regis
 [Constantes de aplicación cliente](client-application-constants.md)
 </dt> <dt>
 
-[**\_formato registrado de WINBIO \_**](winbio-registered-format.md)
+[**FORMATO REGISTRADO \_ DE \_ WINBIO**](winbio-registered-format.md)
 </dt> </dl>
 
  

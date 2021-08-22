@@ -1,9 +1,9 @@
 ---
-title: Mensaje de DM_GETDEFID (Winuser. h)
-description: Recupera el identificador del control de botón de opción predeterminado para un cuadro de diálogo.
+title: DM_GETDEFID mensaje (Winuser.h)
+description: Recupera el identificador del control de botón de inserción predeterminado para un cuadro de diálogo.
 ms.assetid: 9f00a494-f5a2-4c4e-a9fc-2220d9326eb9
 keywords:
-- DM_GETDEFID cuadros de diálogo de mensaje
+- DM_GETDEFID cuadros de diálogo del mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fdcdfc2cd278ab452d48ecb1c254bdb00ffbb7c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6898ed6484a66e1c0d5fa498b0352498c0a57fbe91a74f738e2c6438511aef21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118785827"
 ---
-# <a name="dm_getdefid-message"></a>\_Mensaje GETDEFID de DM
+# <a name="dm_getdefid-message"></a>Mensaje \_ GETDEFID de DM
 
-Recupera el identificador del control de botón de opción predeterminado para un cuadro de diálogo.
+Recupera el identificador del control de botón de inserción predeterminado para un cuadro de diálogo.
 
 
 ```C++
@@ -40,38 +40,38 @@ Recupera el identificador del control de botón de opción predeterminado para u
 *wParam* 
 </dt> <dd>
 
-Este parámetro no se utiliza y debe ser cero.
+Este parámetro no se usa y debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Este parámetro no se utiliza y debe ser cero.
+Este parámetro no se usa y debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si existe un botón de control predeterminado, la palabra de orden superior del valor devuelto contiene el valor **DC \_ HASDEFID** y la palabra de orden inferior contiene el identificador de control. De lo contrario, el valor devuelto es cero.
+Si existe un botón de inserción predeterminado, la palabra de orden superior del valor devuelto contiene el valor **DC \_ HASDEFID** y la palabra de orden bajo contiene el identificador de control. De lo contrario, el valor devuelto es cero.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función [**DefDlgProc**](/windows/desktop/api/Winuser/nf-winuser-defdlgprocw) procesa este mensaje.
+La [**función DefDlgProc**](/windows/desktop/api/Winuser/nf-winuser-defdlgprocw) procesa este mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -84,7 +84,7 @@ La función [**DefDlgProc**](/windows/desktop/api/Winuser/nf-winuser-defdlgprocw
 [**DM \_ SETDEFID**](dm-setdefid.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Cuadros de diálogo](dialog-boxes.md)

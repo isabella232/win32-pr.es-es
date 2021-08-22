@@ -4,28 +4,28 @@ description: La interfaz IVMHardDisk expone las siguientes propiedades.
 ms.assetid: D09DF563-478B-48FE-9139-A3614E240973
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d631ed8611f6c47fe5ecdc20cece9911d4e582ed
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6e5bbaff722a27c135975b4e0b467ad43b7412e45f878f4b99c7f6986672ee1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103791968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118593670"
 ---
 # <a name="ivmharddisk-properties"></a>Propiedades de IVMHardDisk
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-La interfaz [**IVMHardDisk**](ivmharddisk.md) expone las siguientes propiedades.
+La [**interfaz IVMHardDisk**](ivmharddisk.md) expone las siguientes propiedades.
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [**Propiedad de archivo**](ivmharddisk-file.md)
+-   [**Propiedad file**](ivmharddisk-file.md)
 -   [**Propiedad HostFreeDiskSpace**](ivmharddisk-hostfreediskspace.md)
--   [**Parent (propiedad)**](ivmharddisk-parent.md)
+-   [**Propiedad primaria**](ivmharddisk-parent.md)
 -   [**Propiedad SizeInGuest**](ivmharddisk-sizeinguest.md)
 -   [**Propiedad SizeOnHost**](ivmharddisk-sizeonhost.md)
--   [**Type (propiedad)**](ivmharddisk-type.md)
+-   [**Propiedad Type**](ivmharddisk-type.md)
 
- 
+ 
 
- 
+ 

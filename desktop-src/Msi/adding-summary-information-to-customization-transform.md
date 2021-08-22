@@ -1,21 +1,21 @@
 ---
-description: Para aplicar la transformación de personalización durante una instalación del producto, debe agregar una secuencia de información de resumen al archivo de transformación MNPtrans. MST generado en la generación de una transformación de personalización.
+description: Para aplicar la transformación de personalización durante una instalación del producto, debe agregar una secuencia de información de resumen al archivo de transformación MNPtrans.mst generado en Generar una transformación de personalización.
 ms.assetid: 586f6c43-7449-4d06-9201-9b4b4919871e
 title: Agregar información de resumen a la transformación de personalización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64957fcf8f29ab8793517015c7018292ba9a6e69
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a4ea4c9aa505d425bfd06fe5cac1f45666e794624618db14100ee5f517dd3048
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118639475"
 ---
 # <a name="adding-summary-information-to-customization-transform"></a>Agregar información de resumen a la transformación de personalización
 
-Para aplicar la transformación de personalización durante una instalación del producto, debe agregar una [secuencia de información de Resumen](summary-information-stream.md) al archivo de transformación MNPtrans. MST generado en la generación de [una transformación de personalización](generating-a-customization-transform.md).
+Para aplicar la transformación de personalización durante una [](summary-information-stream.md) instalación del producto, debe agregar una secuencia de información de resumen al archivo de transformación MNPtrans.mst generado en Generar una transformación [de personalización.](generating-a-customization-transform.md)
 
-Puede generar información de resumen para una transformación mediante [**MsiCreateTransformSummaryInfo**](/windows/desktop/api/Msiquery/nf-msiquery-msicreatetransformsummaryinfoa) o el [**método CreateTransformSummaryInfo**](database-createtransformsummaryinfo.md). El siguiente fragmento de código, Sum.vbs, ilustra el [**método CreateTransformSummaryInfo**](database-createtransformsummaryinfo.md) y es para su uso con Windows Script Host. Tenga en cuenta que en este ejemplo no se realiza ninguna validación y no se suprime ninguna condición de error.
+Puede generar información de resumen para una transformación [**mediante MsiCreateTransformSummaryInfo**](/windows/desktop/api/Msiquery/nf-msiquery-msicreatetransformsummaryinfoa) o [**el método CreateTransformSummaryInfo**](database-createtransformsummaryinfo.md). El siguiente fragmento de Sum.vbs muestra el método [**CreateTransformSummaryInfo**](database-createtransformsummaryinfo.md) y se usa con Windows host de script. Tenga en cuenta que en este ejemplo no se realiza ninguna validación y no se suprime ninguna condición de error.
 
 
 ```VB
@@ -49,19 +49,19 @@ Dim transinfo : transinfo =
 
 
 
-Para crear y agregar información de resumen al archivo de transformación MNPtrans. MST que creó en [generación de una transformación de personalización](generating-a-customization-transform.md), cambie los directorios a la carpeta que contiene Gen.vbs, la base de datos original, la base de datos actualizada y la transformación, y escriba la siguiente línea de comandos.
+Para crear y agregar información de resumen al archivo de transformación MNPtrans.mst que creó en Generación de una transformación de personalización, cambie los directorios [a](generating-a-customization-transform.md)la carpeta que contiene Gen.vbs, la base de datos original, la base de datos actualizada y la transformación, y escriba la línea de comandos siguiente.
 
-**Cscript.exe Sum.vbs MNP2000.msi MNP2000t.msi MNPtrans. MST**
+**Cscript.exe Sum.vbs MNP2000.msi MNP2000t.msi MNPtrans.mst**
 
-Haga clic en el icono de MNP2000.msi para iniciar una instalación o use la siguiente línea de comandos.
+Haga clic en MNP2000.msi icono para iniciar una instalación o use la siguiente línea de comandos.
 
-**msiexec/i MNP2000.msi**
+**msiexec /i MNP2000.msi**
 
-Esto instala el producto sin las personalizaciones. Para instalar con la personalización, escriba la siguiente línea de comandos. Tenga en cuenta que el valor de la propiedad [**TRANSformations**](transforms.md) hace referencia al archivo de transformación ubicado en el origen.
+Esto instala el producto sin las personalizaciones. Para instalar con la personalización, escriba la siguiente línea de comandos. Tenga en cuenta que el valor de la [**propiedad TRANSFORMS**](transforms.md) hace referencia al archivo de transformación ubicado en el origen.
 
-**msiexec/i MNP2000.msi transformaciones = MNPtrans. MST**
+**msiexec /i MNP2000.msi TRANSFORMS=MNPtrans.mst**
 
-La característica de puerta no aparece en el árbol de selección de características y los componentes de la característica de puerta no se instalan incluso si se selecciona un tipo de instalación completo en la interfaz de usuario.
+La característica Puerta no aparece en el árbol de selección de características y los componentes de la característica Puerta no se instalan incluso si se selecciona un tipo completo de instalación en la interfaz de usuario.
 
 [Continuar](embedding-customization-transforms-as-substorage.md)
 

@@ -1,23 +1,23 @@
 ---
-title: dcl_resource RAW (SM5-ASM)
-description: Declare una entrada de recurso de sombreador y asígnela a un registro de marcador de posición t \-a para el recurso. | dcl_resource RAW (SM5-ASM)
+title: dcl_resource sin procesar (sm5 - asm)
+description: 'Declare una entrada de recurso de sombreador y asígnela a t\: un registro de marcador de posición para el recurso. | dcl_resource sin procesar (sm5 - asm)'
 ms.assetid: ECBA9DAB-F217-47FB-9588-F35866004E72
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dd6ccc5990e34990772a072086d9e080cde67b4
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b228ccc8bba795e700135bfe9ba54ea311536745b7e12eea03a8963d16e73285
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104280050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118793090"
 ---
-# <a name="dcl_resource-raw-sm5---asm"></a>\_recurso de DCL sin formato (SM5-ASM)
+# <a name="dcl_resource-raw-sm5---asm"></a>dcl \_ resource raw (sm5 - asm)
 
-Declare una entrada de recurso de sombreador y asígnela a un \# registro de marcador de posición t-a para el recurso.
+Declare una entrada de recurso de sombreador y asígnela a \# t: un registro de marcador de posición para el recurso.
 
 
 
-| \_ \_ dstSRV sin formato de recursos de DCL |
+| dcl \_ resource \_ raw dstSRV |
 |---------------------------|
 
 
@@ -28,27 +28,27 @@ Declare una entrada de recurso de sombreador y asígnela a un \# registro de mar
 
 | Elemento                                                                                           | Descripción                                                                                       |
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| <span id="dstSRV"></span><span id="dstsrv"></span><span id="DSTSRV"></span>*dstSRV*<br/> | \[en \] un \# registro t declarado como una referencia a un ShaderResourceView de un búfer sin formato.<br/> |
+| <span id="dstSRV"></span><span id="dstsrv"></span><span id="DSTSRV"></span>*dstSRV*<br/> | \[en \] un registro t declarado como una referencia a un Elemento \# ShaderResourceView de un búfer sin formato.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El contenido de la estructura no tiene ningún tipo; las operaciones realizadas en la memoria pueden interpretar implícitamente los datos como si tuvieran un tipo.
+El contenido de la estructura no tiene ningún tipo; Las operaciones realizadas en la memoria pueden interpretar implícitamente que los datos tienen un tipo.
 
-Las instrucciones que hacen referencia a una t sin formato \# toman una dirección 1D, un valor de bit 32 sin signo que especifica el desplazamiento de bytes a una ubicación alineada de 32 bits en el búfer. La dirección debe ser un múltiplo de 4 (bytes).
+Las instrucciones que hacen referencia a una t sin formato toman una dirección 1D, un valor de 32 bits sin signo que especifica el desplazamiento de bytes a una ubicación alineada de 32 bits en el \# búfer. La dirección debe ser un múltiplo de 4 (bytes).
 
-Las vistas enlazadas a t \# declaradas como RAW deben tener los sin procesar especificados en su creación; de lo contrario, el comportamiento cuando se tiene acceso desde un sombreador no está definido.
+Las vistas enlazadas a t declaradas como sin formato deben tener RAW especificado en su creación; de lo contrario, el comportamiento cuando se accede \# desde un sombreador no está definido.
 
-CS \_ 4 \_ 0 y CS \_ 4 \_ 1 admiten esta instrucción.
+cs \_ 4 \_ 0 y cs \_ 4 \_ 1 admiten esta instrucción.
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -56,20 +56,20 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Esta instrucción es compatible con los siguientes modelos de sombreador:
+Esta instrucción se admite en los siguientes modelos de sombreador:
 
 
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -79,7 +79,7 @@ Esta instrucción es compatible con los siguientes modelos de sombreador:
 
 <dl> <dt>
 
-[Ensamblador modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Ensamblado del modelo de sombreador 5 (HLSL de DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

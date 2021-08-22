@@ -1,36 +1,36 @@
 ---
-description: Enumera todos los certificados de un almacén de certificados del sistema y el nombre del sujeto y todas las propiedades de contexto de certificado de cada uno de esos certificados.
+description: Enumera todos los certificados de un almacén de certificados del sistema y el nombre del firmantes y todas las propiedades de contexto de certificado de cada uno de esos certificados.
 ms.assetid: 4b5361f5-79b1-4b05-a133-1a394da7d6ee
 title: 'Programa C de ejemplo: enumeración de los certificados de un almacén'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e504fe54bea81663957274844c4896b53a25217
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47545d2a4c5b13df57dc4bae5490123c9423a9127f6f5e6dbe0b3a885651d9f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007603"
 ---
 # <a name="example-c-program-listing-the-certificates-in-a-store"></a>Programa C de ejemplo: enumeración de los certificados de un almacén
 
-En el código de ejemplo siguiente se enumeran todos los certificados de un [*almacén de certificados*](../secgloss/c-gly.md) del sistema y el nombre del sujeto y todas las propiedades de [*contexto de certificado*](../secgloss/c-gly.md) de cada uno de esos certificados. En el ejemplo se obtiene el nombre del almacén de certificados del usuario y, por tanto, se puede usar para mostrar el contenido de cualquier almacén de certificados del sistema. Además, en este ejemplo se muestra el uso de dos nuevas funciones de interfaz de usuario, una que muestra un certificado y la otra, la interfaz de usuario que permite al usuario seleccionar un certificado de una lista de certificados de un almacén.
+En el código de ejemplo siguiente se [](../secgloss/c-gly.md) enumeran todos los certificados de un [](../secgloss/c-gly.md) almacén de certificados del sistema y el nombre del firmantes y todas las propiedades de contexto de certificado de cada uno de esos certificados. En el ejemplo se obtiene el nombre del almacén de certificados del usuario y, por tanto, se puede usar para enumerar el contenido de cualquier almacén de certificados del sistema. Además, en este ejemplo se muestra el uso de dos nuevas funciones de interfaz de usuario, una que muestra un certificado y la otra, la interfaz de usuario que permite al usuario seleccionar un certificado de una lista de los certificados de un almacén.
 
-En este código de ejemplo se muestran las siguientes tareas y funciones de [*CryptoAPI*](../secgloss/c-gly.md) :
+En este código de ejemplo se muestran las siguientes tareas y [*funciones CryptoAPI:*](../secgloss/c-gly.md)
 
--   Apertura de un almacén del sistema mediante [**CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea).
+-   Abrir un almacén del sistema [**mediante CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea).
 -   En un bucle, enumera todos los certificados del almacén abierto mediante [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore).
 -   Mostrar un certificado mediante [**CryptUIDlgViewContext**](/windows/desktop/api/Cryptuiapi/nf-cryptuiapi-cryptuidlgviewcontext).
--   Obtener el nombre del sujeto del certificado mediante [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
--   En un bucle, el uso de [**CertEnumCertificateContextProperties**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatecontextproperties) para obtener los identificadores de propiedad de todas las propiedades asociadas al certificado.
--   Usar [**CertGetCertificateContextProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetcertificatecontextproperty) para obtener cada una de las propiedades.
+-   Obtener el nombre del sujeto del certificado mediante [**CertGetNameString.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa)
+-   En un bucle, mediante [**CertEnumCertificateContextProperties**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatecontextproperties) para obtener los identificadores de propiedad de todas las propiedades asociadas al certificado.
+-   Usar [**CertGetCertificateContextProperty para**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetcertificatecontextproperty) obtener cada una de las propiedades.
 -   Mostrar una lista de certificados en un almacén y permitir que un usuario seleccione uno de ellos mediante [**CryptUIDlgSelectCertificateFromStore**](/windows/desktop/api/Cryptuiapi/nf-cryptuiapi-cryptuidlgselectcertificatefromstore).
--   Cerrar el almacén de certificados mediante [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore).
+-   Cierre del almacén de certificados [**mediante CertCloseStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
 
-En este ejemplo se usa la función [**MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo.
+En este ejemplo se usa la [**función MyHandleError**](myhandleerror.md). El código de esta función se incluye con el ejemplo.
 
-El código de esta y otras funciones auxiliares también se enumeran en [funciones de de uso general](general-purpose-functions.md).
+El código de esta y otras funciones auxiliares también se muestra [en De uso general Functions](general-purpose-functions.md).
 
-En el ejemplo siguiente se muestra cómo enumerar y mostrar los certificados de un almacén. Para compilar este ejemplo, debe configurar el compilador para que use un juego de caracteres de varios bytes.
+En el ejemplo siguiente se muestra la enumeración y visualización de los certificados en un almacén. Para compilar este ejemplo, debe configurar el compilador para que use un juego de caracteres de varios bytes.
 
 
 ```C++

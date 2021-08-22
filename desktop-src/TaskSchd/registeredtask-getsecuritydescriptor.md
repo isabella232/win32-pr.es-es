@@ -1,11 +1,11 @@
 ---
-title: RegisteredTask. GetSecurityDescriptor, método
-description: En el caso de scripting, obtiene el descriptor de seguridad que se usa como credenciales para la tarea registrada.
+title: Método RegisteredTask.GetSecurityDescriptor
+description: Para el scripting, obtiene el descriptor de seguridad que se usa como credenciales para la tarea registrada.
 ms.assetid: 9b5985c5-c01a-4104-940f-1e0e79f18bb7
 keywords:
 - Método GetSecurityDescriptor Programador de tareas
-- Método GetSecurityDescriptor Programador de tareas, objeto RegisteredTask
-- Programador de tareas de objeto RegisteredTask, método GetSecurityDescriptor
+- Método GetSecurityDescriptor Programador de tareas , objeto RegisteredTask
+- RegisteredTask object Programador de tareas , GetSecurityDescriptor (método)
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85c7c0e6125bc848b361e4cc2d4515c32d797c57
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a832413f6d5373a07a7201341d3b412843f3c8eba3414326eeaa8316a9caedd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118859134"
 ---
-# <a name="registeredtaskgetsecuritydescriptor-method"></a>RegisteredTask. GetSecurityDescriptor, método
+# <a name="registeredtaskgetsecuritydescriptor-method"></a>Método RegisteredTask.GetSecurityDescriptor
 
-En el caso de scripting, obtiene el descriptor de seguridad que se usa como credenciales para la tarea registrada.
+Para el scripting, obtiene el descriptor de seguridad que se usa como credenciales para la tarea registrada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ sddl = .GetSecurityDescriptor( _
 *securityInformation* 
 </dt> <dd>
 
-Información de seguridad de [**la \_ información de seguridad**](/windows/desktop/SecAuthZ/security-information).
+La información de seguridad de [**SECURITY \_ INFORMATION**](/windows/desktop/SecAuthZ/security-information).
 
 </dd> </dl>
 
@@ -59,9 +59,9 @@ Descriptor de seguridad de la tarea registrada.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -73,7 +73,7 @@ Descriptor de seguridad de la tarea registrada.
 [**RegisteredTask**](registeredtask.md)
 </dt> <dt>
 
-[**TaskFolder. GetSecurityDescriptor**](taskfolder-getsecuritydescriptor.md)
+[**TaskFolder.GetSecurityDescriptor**](taskfolder-getsecuritydescriptor.md)
 </dt> <dt>
 
 [**RegisteredTask.SetSecurityDescriptor**](registeredtask-setsecuritydescriptor.md)

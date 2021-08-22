@@ -1,5 +1,5 @@
 ---
-description: Contiene un solo objeto que corresponde al equipo cuyo catálogo está accediendo. Este objeto contiene información de configuración de nivel de equipo.
+description: Contiene un único objeto que corresponde al equipo al que está accediendo al catálogo. Este objeto contiene información de configuración de nivel de equipo.
 ms.assetid: 75f14cad-9cd5-44a6-9afa-2c8ad1e87027
 title: Colección LocalComputer
 ms.topic: reference
@@ -12,38 +12,38 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 4e1ce08f3bf1fef74af0d77ada15716abb4530a6
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b832da702942e8f84baee4303b7fa74a7fd74d683d62534cca619e8c7270e88a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118813469"
 ---
 # <a name="localcomputer-collection"></a>Colección LocalComputer
 
-Contiene un solo objeto que corresponde al equipo cuyo catálogo está accediendo. Este objeto contiene información de configuración de nivel de equipo. Si llama al método [**Connect**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-connect) en un objeto creado a partir de la clase [**COMAdminCatalog**](comadmincatalog.md) , el objeto de la colección **LocalComputer** contiene información sobre el equipo remoto cuyo catálogo está accediendo.
+Contiene un único objeto que corresponde al equipo al que está accediendo al catálogo. Este objeto contiene información de configuración de nivel de equipo. Si llama al método Conectar en un objeto creado a partir de la clase [**COMAdminCatalog,**](comadmincatalog.md) el objeto de la colección **LocalComputer** contiene información sobre el equipo remoto [**al**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-connect) que está accediendo al catálogo.
 
-Esta colección no admite los métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) y [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Esta colección no admite los [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) y [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Miembros
 
-La colección **LocalComputer** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
+La **colección LocalComputer** hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
 ## <a name="related-collections"></a>Colecciones relacionadas
 
-Puede navegar desde esta colección hasta cualquiera de las siguientes colecciones:
+Puede navegar desde esta colección a cualquiera de las siguientes colecciones:
 
 -   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
-Puede navegar a esta colección desde las colecciones siguientes:
+Puede navegar a esta colección desde las siguientes colecciones:
 
--   [**Raíces**](root.md)
+-   [**Raíz**](root.md)
 
 ## <a name="properties"></a>Propiedades
 
-El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las siguientes propiedades en la colección:
+El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las siguientes propiedades dentro de la colección:
 
 -   [ApplicationProxyRSN](#applicationproxyrsn)
 -   [CISEnabled](#cisenabled)
@@ -58,7 +58,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 -   [LoadBalancingCLSID](#loadbalancingclsid)
 -   [LocalPartitionLookupEnabled](#localpartitionlookupenabled)
 -   [Nombre](#name)
--   [Identifica](#operatingsystem)
+-   [OperatingSystem](#operatingsystem)
 -   [PartitionsEnabled](#partitionsenabled)
 -   [Puertos](#defaulttointernetports)
 -   [ResourcePoolingEnabled](#resourcepoolingenabled)
@@ -75,7 +75,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|------------------------------------------------------------|
-| Descripción    | Nombre del servidor remoto que usan los proxies de aplicación de forma predeterminada. |
+| Descripción    | Nombre de servidor remoto que usan los servidores proxy de aplicación de forma predeterminada. |
 | Access         | ReadWrite                                                  |
 | Tipo           | String                                                     |
 | Predeterminado        | ""                                                         |
@@ -91,7 +91,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------|
-| Descripción    | Indica si los servicios de Internet de COM están habilitados. |
+| Descripción    | Indica si los servicios COM de Internet están habilitados. |
 | Access         | ReadWrite                                           |
 | Tipo           | Bool                                                |
 | Valor predeterminado        | False                                               |
@@ -107,10 +107,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|---------------------------------------------|
-| Descripción    | Establézcalo en true para habilitar DCOM en el equipo. |
+| Descripción    | Establezca en True para habilitar DCOM en el equipo. |
 | Access         | ReadWrite                                   |
 | Tipo           | Bool                                        |
-| Valor predeterminado        | True                                        |
+| Valor predeterminado        | Verdadero                                        |
 | Sistema mínimo | Windows 2000                                |
 
 
@@ -123,9 +123,9 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Nivel de autenticación que usan las aplicaciones que tienen autenticación establecida en el valor predeterminado. Los valores corresponden a la configuración de autenticación de llamada a procedimiento remoto (RPC).                                                                                         |
+| Descripción    | Nivel de autenticación usado por las aplicaciones que tienen autenticación establecida en Predeterminado. Los valores corresponden a la configuración de autenticación de llamada a procedimiento remoto (RPC).                                                                                         |
 | Access         | ReadWrite                                                                                                                                                                                                                                                |
-| Tipo           | Valores posibles largos: COMAdminAuthenticationDefault (0) COMAdminAuthenticationNone (1) COMAdminAuthenticationConnect (2) COMAdminAuthenticationCall (3) COMAdminAuthenticationPacket (4) COMAdminAuthenticationIntegrity (5) COMAdminAuthenticationPrivacy (6) |
+| Tipo           | Valores largos posibles:COMAdminAuthenticationDefault (0)COMAdminAuthenticationNone (1) COMAdminAuthenticationConnect (2)COMAdminAuthenticationCall (3)COMAdminAuthenticationPacket (4)COMAdminAuthenticationIntegrity (5)COMAdminAuthenticationPrivacy (6) |
 | Valor predeterminado        | COMAdminAuthenticationConnect (2)                                                                                                                                                                                                                        |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                             |
 
@@ -134,7 +134,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
  
 
 > [!Note]  
-> COMAdminAuthenticationDefault se asigna a COMAdminAuthenticationConnect cuando COM llama a [**CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity). Se recomienda usar las constantes en la enumeración y no los valores numéricos.
+> COMAdminAuthenticationDefault se asigna a COMAdminAuthenticationConnect cuando COM llama [**a CoInitializeSecurity**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity). Se recomienda usar las constantes de la enumeración y no los valores numéricos.
 
  
 
@@ -144,9 +144,9 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Nivel de suplantación para permitir si no se establece uno.                                                                                                               |
+| Descripción    | Nivel de suplantación que se permite si no se establece uno.                                                                                                               |
 | Access         | ReadWrite                                                                                                                                                     |
-| Tipo           | Valores posibles largos: COMAdminImpersonationAnonymous (1) COMAdminImpersonationIdentify (2) COMAdminImpersonationImpersonate (3) COMAdminImpersonationDelegate (4) |
+| Tipo           | Long Possible values:COMAdminImpersonationAnonymous (1)COMAdminImpersonationIdentify (2)COMAdminImpersonationImpersonate (3)COMAdminImpersonationDelegate (4) |
 | Valor predeterminado        | COMAdminImpersonationIdentify (2)                                                                                                                             |
 | Sistema mínimo | Windows 2000                                                                                                                                                  |
 
@@ -155,7 +155,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
  
 
 > [!Note]  
-> Se recomienda usar las constantes de la enumeración, y no los valores numéricos.
+> Se recomienda usar las constantes de la enumeración y no los valores numéricos.
 
  
 
@@ -165,7 +165,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------|
-| Descripción    | Determina si el tipo predeterminado de Puerto proporcionado debe ser Internet (true) o intranet (false). |
+| Descripción    | Determina si el tipo predeterminado de puerto proporcionado debe ser Internet (True) o intranet (False). |
 | Access         | ReadWrite                                                                                           |
 | Tipo           | Bool                                                                                                |
 | Valor predeterminado        | False                                                                                               |
@@ -197,10 +197,10 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------|
-| Descripción    | Indica si el usuario de las asignaciones de particiones está protegido en el almacén de dominio. |
+| Descripción    | Indica si el usuario de las asignaciones de particiones está registrado en el almacén de dominios. |
 | Access         | ReadWrite                                                                              |
 | Tipo           | Bool                                                                                   |
-| Valor predeterminado        | True                                                                                   |
+| Valor predeterminado        | Verdadero                                                                                   |
 | Sistema mínimo | Windows Server 2003                                                                    |
 
 
@@ -213,7 +213,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Determina si los puertos enumerados en la propiedad Ports se van a usar para Internet (true) o para intranet (false). |
+| Descripción    | Determina si los puertos enumerados en la propiedad Ports se usarán para Internet (True) o para intranet (False). |
 | Access         | ReadWrite                                                                                                             |
 | Tipo           | Bool                                                                                                                  |
 | Valor predeterminado        | False                                                                                                                 |
@@ -229,7 +229,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Establézcalo en true si el equipo es un enrutador para el servicio de equilibrio de carga de componentes (CLB). Esta propiedad solo se puede establecer en true si el servicio de equilibrio de carga de componentes está instalado actualmente en el equipo; de lo contrario, los errores con COMAdmin \_ E \_ requieren una \_ \_ plataforma diferente. |
+| Descripción    | Establezca en True si el equipo es un enrutador para el servicio de equilibrio de carga de componentes (CLB). Esta propiedad solo se puede establecer en True si el servicio de equilibrio de carga de componentes está instalado actualmente en el equipo; de lo contrario, se producen errores con COMADMIN \_ E REQUIERE UNA PLATAFORMA \_ \_ \_ DIFERENTE. |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                           |
 | Tipo           | Bool                                                                                                                                                                                                                                                                                |
 | Valor predeterminado        | False                                                                                                                                                                                                                                                                               |
@@ -239,7 +239,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
  
 
-Si esta propiedad se establece en true, el servidor CLB se configura y se inicia en el inicio. El servidor se agrega a la colección ApplicationCluster si aún no está presente.
+Si esta propiedad se establece en True, el servidor CLB se configura y se inicia en el inicio. El servidor se agrega a la colección ApplicationCluster si aún no está presente.
 
 ### <a name="loadbalancingclsid"></a>LoadBalancingCLSID
 
@@ -247,7 +247,7 @@ Si esta propiedad se establece en true, el servidor CLB se configura y se inicia
 
 | Entrada | Value |
 |----------------|-------------------------------------|
-| Descripción    | CLSID del objeto que se va a equilibrar. |
+| Descripción    | CLSID del objeto que se debe equilibrar. |
 | Access         | ReadWrite                           |
 | Tipo           | String                              |
 | Predeterminado        | NULL                                |
@@ -263,10 +263,10 @@ Si esta propiedad se establece en true, el servidor CLB se configura y se inicia
 
 | Entrada | Value |
 |----------------|---------------------------------------------------------------------------------------|
-| Descripción    | Indica si el usuario de las asignaciones de particiones está protegido en el almacén local. |
+| Descripción    | Indica si el usuario de las asignaciones de particiones se registra en el almacén local. |
 | Access         | ReadWrite                                                                             |
 | Tipo           | Bool                                                                                  |
-| Valor predeterminado        | True                                                                                  |
+| Valor predeterminado        | Verdadero                                                                                  |
 | Sistema mínimo | Windows Server 2003                                                                   |
 
 
@@ -279,7 +279,7 @@ Si esta propiedad se establece en true, el servidor CLB se configura y se inicia
 
 | Entrada | Value |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Nombre del equipo. Se quitan los espacios adicionales al principio y al final de la cadena. Esta propiedad se devuelve cuando se llama al método de propiedad [**key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
+| Descripción    | Nombre del equipo. Se quitan los espacios adicionales al principio y al final de la cadena. Esta propiedad se devuelve cuando se llama al método de propiedad [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
 | Access         | WriteOnce                                                                                                                                                                                                                                                              |
 | Tipo           | String                                                                                                                                                                                                                                                                 |
 | Predeterminado        | "Mi PC"                                                                                                                                                                                                                                                          |
@@ -295,9 +295,9 @@ Si esta propiedad se establece en true, el servidor CLB se configura y se inicia
 
 | Entrada | Value |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | El sistema operativo instalado en el equipo local.                                                                                                                                                                                                                                                                                                                                                                                                |
+| Descripción    | Sistema operativo instalado en el equipo local.                                                                                                                                                                                                                                                                                                                                                                                                |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Tipo           | Valores posibles largos: COMAdminOSNotInitialized (0) COMAdminOSWindows3 \_ 1 (1) COMAdminOSWindows9x (2) COMAdminOSWindows2000 (3) COMAdminOSWindows2000AdvancedServer (4) COMAdminOSWindows2000Unknown (5) COMAdminOSUnknown (6) COMAdminOSWindowsXPPersonal (11) COMAdminOSWindowsXPProfessional (12) COMAdminOSWindowsNETStandardServer (13) COMAdminOSWindowsNETEnterpriseServer (14) COMAdminOSWindowsNETDatacenterServer (15) COMAdminOSWindowsNETWebServer (16) |
+| Tipo           | Valores largos posibles:COMAdminOSNotInitialized (0)COMAdminOSWindows3 \_ 1(1)COMAdminOSWindows9x (2)COMAdminOSWindows2000 (3)COMAdminOSWindows2000AdvancedServer (4)COMAdminOSWindows2000Unknown (5)COMAdminOSUnknow (6)COMAdminOSWindowsXPPersonal (11)COMAdminOSWindowsXPProfessional (12)COMAdminOSWindowsNETStandardServer (13)COMAdminOSWindowsNETEnterpriseServer (14)COMAdminOSWindowsNETDatacenterServer (15)COMAdminOSWindowsNETWebServer (16) |
 | Valor predeterminado        | COMAdminOSNotInitialized (0)                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
@@ -311,7 +311,7 @@ Si esta propiedad se establece en true, el servidor CLB se configura y se inicia
 
 | Entrada | Value |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Indica si se pueden usar particiones COM+ en el equipo local. Si esta propiedad es false, cualquier intento de usar particiones COM+ produce un error. |
+| Descripción    | Indica si se pueden usar particiones COM+ en el equipo local. Si esta propiedad es False, cualquier intento de usar particiones COM+ produce un error. |
 | Access         | ReadWrite                                                                                                                                               |
 | Tipo           | Bool                                                                                                                                                    |
 | Valor predeterminado        | False                                                                                                                                                   |
@@ -327,7 +327,7 @@ Si esta propiedad se establece en true, el servidor CLB se configura y se inicia
 
 | Entrada | Value |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Cadena que describe los puertos que son para el uso de Internet o de la intranet, dependiendo de la propiedad InternetPortsListed. por ejemplo, "500-599:600-800". |
+| Descripción    | Cadena que describe los puertos que son para uso de Internet o intranet, en función de la propiedad InternetPortsListed; por ejemplo, "500-599: 600-800". |
 | Access         | ReadWrite                                                                                                                                               |
 | Tipo           | String                                                                                                                                                  |
 | Predeterminado        | ""                                                                                                                                                      |
@@ -346,7 +346,7 @@ Si esta propiedad se establece en true, el servidor CLB se configura y se inicia
 | Descripción    | Habilita el uso de dispensadores de recursos. |
 | Access         | ReadWrite                           |
 | Tipo           | Bool                                |
-| Valor predeterminado        | True                                |
+| Valor predeterminado        | Verdadero                                |
 | Sistema mínimo | Windows 2000                        |
 
 
@@ -359,7 +359,7 @@ Si esta propiedad se establece en true, el servidor CLB se configura y se inicia
 
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Controla si el proxy IIS de RPC está habilitado. El proxy IIS de RPC se usa junto con IIS para reenviar las llamadas al mecanismo de RPC desde IIS y es uno de los componentes principales de los servicios de Internet COM, que se habilita estableciendo CISEnabled en true. Para obtener más información sobre RPCProxyEnabled, consulte [seguridad de http RPC](/windows/desktop/Rpc/rpc-over-http-security). |
+| Descripción    | Controla si el proxy DE RPC IIS está habilitado. El proxy DE RPC IIS se usa junto con IIS para reenviar llamadas al mecanismo RPC desde IIS y es una de las partes principales de los servicios de Internet COM, que se habilita estableciendo CISEnabled en True. Para obtener más información sobre RPCProxyEnabled, vea [Http RPC Security](/windows/desktop/Rpc/rpc-over-http-security). |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                             |
 | Tipo           | Bool                                                                                                                                                                                                                                                                                                                                                  |
 | Valor predeterminado        | False                                                                                                                                                                                                                                                                                                                                                 |
@@ -375,7 +375,7 @@ Si esta propiedad se establece en true, el servidor CLB se configura y se inicia
 
 | Entrada | Value |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Aplica en los equipos DCOM las llamadas entre procesos a los métodos [**IUnknown:: AddRef**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) y [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) están protegidos. |
+| Descripción    | Aplica en equipos DCOM que se protegen las llamadas entre procesos a los métodos [**IUnknown::AddRef**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) e [**IUnknown::Release.**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) |
 | Access         | ReadWrite                                                                                                                                                                 |
 | Tipo           | Bool                                                                                                                                                                      |
 | Valor predeterminado        | False                                                                                                                                                                     |
@@ -391,10 +391,10 @@ Si esta propiedad se establece en true, el servidor CLB se configura y se inicia
 
 | Entrada | Value |
 |----------------|---------------------------------------------------------|
-| Descripción    | Establézcalo en true si está habilitado el seguimiento de seguridad en los objetos. |
+| Descripción    | Se establece en True si el seguimiento de seguridad está habilitado en objetos . |
 | Access         | ReadWrite                                               |
 | Tipo           | Bool                                                    |
-| Valor predeterminado        | True                                                    |
+| Valor predeterminado        | Verdadero                                                    |
 | Sistema mínimo | Windows 2000                                            |
 
 
@@ -407,10 +407,10 @@ Si esta propiedad se establece en true, el servidor CLB se configura y se inicia
 
 | Entrada | Value |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Determina el modo en que la Directiva de restricción de software (SRP) controla las conexiones de activación como activador. Si se establece en true, el nivel de confianza de SRP configurado para el objeto de servidor se compara con el nivel de confianza de SRP del objeto de cliente y se utiliza el nivel de confianza mayor (más riguroso) para ejecutar el objeto de servidor. Si se establece en false, el objeto de servidor se ejecuta con el nivel de confianza de SRP del objeto de cliente, independientemente del nivel de confianza de SRP con el que está configurado el servidor. |
+| Descripción    | Determina cómo la directiva de restricción de software (SRP) controla las conexiones de activación como activador. Si se establece en True, el nivel de confianza de SRP configurado para el objeto de servidor se compara con el nivel de confianza de SRP del objeto de cliente y el nivel de confianza más alto (más estricto) se usa para ejecutar el objeto de servidor. Si se establece en False, el objeto de servidor se ejecuta con el nivel de confianza SRP del objeto de cliente, independientemente del nivel de confianza de SRP con el que esté configurado el servidor. |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Tipo           | Bool                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| Valor predeterminado        | True                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Valor predeterminado        | Verdadero                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 
@@ -423,10 +423,10 @@ Si esta propiedad se establece en true, el servidor CLB se configura y se inicia
 
 | Entrada | Value |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Determina la forma en que la Directiva de restricción de software (SRP) controla las conexiones a los procesos existentes. Si se establece en false, los intentos de conexión a objetos en ejecución no se comprueban para los niveles de confianza de SRP correspondientes. Si se establece en true, el objeto que se está ejecutando debe tener un nivel de confianza SRP igual o superior (más estricto) que el objeto de cliente. Por ejemplo, un objeto de cliente con un nivel de confianza SRP sin restricciones no puede conectarse a un objeto en ejecución con un nivel de confianza SRP no permitido. |
+| Descripción    | Determina cómo la directiva de restricción de software (SRP) controla las conexiones intentadas a los procesos existentes. Si se establece en False, los intentos de conectarse a objetos en ejecución no se comprueban para los niveles de confianza SRP adecuados. Si se establece en True, el objeto en ejecución debe tener un nivel de confianza SRP igual o superior (más estricto) que el objeto de cliente. Por ejemplo, un objeto de cliente con un nivel de confianza SRP sin restricciones no se puede conectar a un objeto en ejecución con un nivel de confianza de SRP no permitido. |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | Tipo           | Bool                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Valor predeterminado        | True                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Valor predeterminado        | Verdadero                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Sistema mínimo | Windows XP                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 
@@ -439,7 +439,7 @@ Si esta propiedad se establece en true, el servidor CLB se configura y se inicia
 
 | Entrada | Value |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Debe establecerse en un valor suficiente en segundos si realiza numerosas operaciones dentro de una transacción. El período de tiempo de espera predeterminado es de 60 segundos y el período de tiempo de espera máximo es de 3600 segundos (1 hora). Al establecer esta propiedad en 0 se deshabilitan los tiempos de espera de la transacción. Esta propiedad se puede reemplazar por componentes individuales mediante la propiedad ComponentTransactionTimeout de la colección de [**componentes**](components.md) . |
+| Descripción    | Debe establecerse en un valor suficiente en segundos si está realizando numerosas operaciones dentro de una transacción. El período de tiempo de espera predeterminado es de 60 segundos y el período de tiempo de espera máximo es de 3600 segundos (1 hora). Si se establece esta propiedad en 0, se deshabilitan los tiempos de espera de las transacciones. Esta propiedad se puede invalidar mediante componentes individuales mediante la propiedad ComponentTransactionTimeout de la [**colección Components.**](components.md) |
 | Access         | ReadWrite                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | Tipo           | Long (0-3600)                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | Valor predeterminado        | 60                                                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -451,7 +451,7 @@ Si esta propiedad se establece en true, el servidor CLB se configura y se inicia
 
 ## <a name="example"></a>Ejemplo
 
-En el siguiente ejemplo de Microsoft Visual Basic se muestra cómo conectarse a un equipo remoto y obtener su propiedad SecurityTrackingEnabled mediante la colección **LocalComputer** del equipo remoto. Para usar este ejemplo, agregue la biblioteca de tipos de administración de COM+ como referencia a su proyecto de Visual Basic.
+En el siguiente ejemplo Visual Basic microsoft muestra cómo conectarse a un equipo remoto y obtener su propiedad SecurityTrackingEnabled mediante la colección **LocalComputer** del equipo remoto. Para usar este ejemplo, agregue la biblioteca de tipos de administrador de COM+ como referencia al Visual Basic proyecto.
 
 
 ```VB
@@ -501,7 +501,7 @@ End Function
 
 
 
-Para usar la función, proporcione un valor de cadena para el nombre del equipo remoto. En el siguiente código de Visual Basic se muestra cómo conectarse al equipo denominado "nombreDeEquipoRemoto".
+Para usar la función , proporcione un valor de cadena para el nombre del equipo remoto. En el Visual Basic código siguiente se muestra cómo conectarse al equipo denominado "RemoteComputerName".
 
 
 ```VB

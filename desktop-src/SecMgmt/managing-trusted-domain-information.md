@@ -1,29 +1,29 @@
 ---
-description: La Directiva de LSA proporciona varias funciones que se pueden usar para crear, enumerar y eliminar dominios de confianza, así como para establecer y recuperar información de dominio de confianza.
+description: La directiva LSA proporciona varias funciones que puede usar para crear, enumerar y eliminar dominios de confianza y para establecer y recuperar información de dominio de confianza.
 ms.assetid: 0c7534d7-3372-49c4-992c-9b519279982d
-title: Administrar información de dominios de confianza
+title: Administración de información de dominio de confianza
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b7df297b8c83ebe9054ca6f04b657905c21fae6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a945705efaedf56920ee2170deeab9da0d01802259a57aca5cda2fac9d531aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104278422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118894096"
 ---
-# <a name="managing-trusted-domain-information"></a>Administrar información de dominios de confianza
+# <a name="managing-trusted-domain-information"></a>Administración de información de dominio de confianza
 
-La Directiva de LSA proporciona varias funciones que se pueden usar para crear, enumerar y eliminar dominios de confianza, así como para establecer y recuperar información de dominio de confianza.
+La directiva LSA proporciona varias funciones que puede usar para crear, enumerar y eliminar dominios de confianza y para establecer y recuperar información de dominio de confianza.
 
-Antes de poder administrar la información del dominio de confianza, la aplicación debe obtener un identificador de un objeto de [**Directiva**](policy-object.md) , tal como se explica en [abrir un identificador de objeto de directiva](opening-a-policy-object-handle.md).
+Para poder administrar la información de dominio de confianza, la aplicación debe obtener un identificador para un objeto [**Policy,**](policy-object.md) como se explica en [Apertura de un identificador de objeto de directiva](opening-a-policy-object-handle.md).
 
-Puede enumerar los dominios de confianza mediante una llamada a [**LsaEnumerateTrustedDomainsEx**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaenumeratetrusteddomainsex).
+Puede enumerar los dominios de confianza llamando a [**LsaEnumerateTrustedDomainsEx.**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaenumeratetrusteddomainsex)
 
 Para recuperar información sobre un dominio de confianza, llame a [**LsaQueryTrustedDomainInfo**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaquerytrusteddomaininfo) o [**LsaQueryTrustedDomainInfoByName**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsaquerytrusteddomaininfobyname). Ambas funciones devuelven la misma información; sin embargo, **LsaQueryTrustedDomainInfo** identifica el dominio de confianza por SID y **LsaQueryTrustedDomainInfoByName** identifica el dominio de confianza por nombre.
 
-Para establecer la información de un dominio de confianza, llame a [**LsaSetTrustedDomainInformation**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsasettrusteddomaininformation) o [**LsaSetTrustedDomainInfoByName**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsasettrusteddomaininfobyname). Al igual que con las funciones de consulta, **LsaSetTrustedDomainInformation** identifica el dominio de confianza por SID, mientras que **LsaSetTrustedDomainInfoByName** identifica el dominio de confianza por nombre.
+Para establecer información para un dominio de confianza, llame a [**LsaSetTrustedDomainInformation**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsasettrusteddomaininformation) o [**LsaSetTrustedDomainInfoByName**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsasettrusteddomaininfobyname). Al igual que con las funciones de consulta, **LsaSetTrustedDomainInformation** identifica el dominio de confianza por SID, mientras **que LsaSetTrustedDomainInfoByName** identifica el dominio de confianza por nombre.
 
-La aplicación puede revocar una relación de confianza para un dominio de confianza mediante una llamada a [**LsaDeleteTrustedDomain**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsadeletetrusteddomain).
+La aplicación puede revocar una relación de confianza para un dominio de confianza llamando a [**LsaDeleteTrustedDomain**](/windows/desktop/api/Ntsecapi/nf-ntsecapi-lsadeletetrusteddomain).
 
 En el ejemplo siguiente se enumeran los dominios de confianza para el sistema local.
 

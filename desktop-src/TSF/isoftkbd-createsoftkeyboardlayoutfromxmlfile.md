@@ -1,11 +1,11 @@
 ---
-title: Método ISoftKbd CreateSoftKeyboardLayoutFromXMLFile (Softkbdc. h)
-description: El método ISoftKbd CreateSoftKeyboardLayoutFromXMLFile crea una distribución de teclado en pantalla a partir del archivo XML especificado.
+title: Método ISoftKbd CreateSoftKeyboardLayoutFromXMLFile (Softkbdc.h)
+description: El método ISoftKbd CreateSoftKeyboardLayoutFromXMLFile crea un diseño de teclado flexible a partir del archivo XML especificado.
 ms.assetid: e665adab-1d75-4e41-87bf-c8ce0f7a0399
 keywords:
-- Método CreateSoftKeyboardLayoutFromXMLFile marco de trabajo de servicios de texto
-- Método CreateSoftKeyboardLayoutFromXMLFile marco de trabajo de servicios de texto, interfaz ISoftKbd
-- ISoftKbd interface Text Services Framework, método CreateSoftKeyboardLayoutFromXMLFile
+- Método CreateSoftKeyboardLayoutFromXMLFile Text Services Framework
+- Método CreateSoftKeyboardLayoutFromXMLFile Text Services Framework , interfaz ISoftKbd
+- Interfaz ISoftKbd Text Services Framework , método CreateSoftKeyboardLayoutFromXMLFile
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9252db845c5e1cc732adc295e1989fee83d4ac6e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b53d4ddeabdf343270664e2d65e17d44aeb7ba8f05a23d6f759a51fcc8e99579
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686096"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118877913"
 ---
-# <a name="isoftkbdcreatesoftkeyboardlayoutfromxmlfile-method"></a>ISoftKbd:: CreateSoftKeyboardLayoutFromXMLFile (método)
+# <a name="isoftkbdcreatesoftkeyboardlayoutfromxmlfile-method"></a>ISoftKbd::CreateSoftKeyboardLayoutFromXMLFile (método)
 
-El método **ISoftKbd:: CreateSoftKeyboardLayoutFromXMLFile** crea una distribución de teclado en pantalla a partir del archivo XML especificado.
+El **método ISoftKbd::CreateSoftKeyboardLayoutFromXMLFile** crea un diseño de teclado flexible a partir del archivo XML especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,24 +44,24 @@ HRESULT CreateSoftKeyboardLayoutFromXMLFile(
 
 <dl> <dt>
 
-*lpszKeyboardDesFile* \[ de\]
+*lpszKeyboardDesFile* \[ En\]
 </dt> <dd>
 
 Puntero a una cadena terminada en cero que indica el nombre del archivo XML.
 
 </dd> <dt>
 
-*szFileStrLen* \[ de\]
+*szFileStrLen* \[ En\]
 </dt> <dd>
 
 Cadena terminada en cero que indica la longitud del archivo XML.
 
 </dd> <dt>
 
-*pdwLayoutCookie* \[ enuncia\]
+*pdwLayoutCookie* \[ out\]
 </dt> <dd>
 
-Puntero al búfer en el que este método recupera una cookie de distribución de teclado en pantalla.
+Puntero al búfer en el que este método recupera una cookie de diseño de teclado flexible.
 
 </dd> </dl>
 
@@ -71,10 +71,10 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Value                                                                                        | Descripción                                    |
+| Valor                                                                                        | Descripción                                    |
 |----------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | Método realizado correctamente.<br/>          |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Uno o más parámetros no son válidos.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | Método realizado correctamente.<br/>          |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Uno o varios parámetros no son válidos.<br/> |
 
 
 
@@ -84,13 +84,13 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
-| Redistribuible<br/>          | TSF 1,0 en Windows 2000 Professional<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
-| IDL<br/>                      | <dl> <dt>Softkbd. idl</dt> </dl> |
+| Redistribuible<br/>          | TSF 1.0 en Windows 2000 Professional<br/>                                        |
+| Header<br/>                   | <dl> <dt>Softkbdc.h</dt> </dl>  |
+| Idl<br/>                      | <dl> <dt>Softkbd.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Softkbd.dll</dt> </dl> |
 
 

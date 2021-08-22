@@ -1,7 +1,7 @@
 ---
-description: Convierte una ruta de acceso de Microsoft MS-DOS en una dirección URL con formato canónico.
+description: Convierte una ruta de acceso MS-DOS de Microsoft en una dirección URL canónica.
 ms.assetid: 1186b970-9ae1-4020-b999-55157cff1741
-title: MFCreateURLFromPath función)
+title: Función MFCreateURLFromPath
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - mfplat.dll
-ms.openlocfilehash: e43c2d7df299792d8b5be99226e9cfdbd11976a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f9da3dd84d54bb514b7dda519db3de376b2ebb2bd2088d8fc8e18b4f2b848231
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118739253"
 ---
-# <a name="mfcreateurlfrompath-function"></a>MFCreateURLFromPath función)
+# <a name="mfcreateurlfrompath-function"></a>Función MFCreateURLFromPath
 
-\[Esta API no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, las aplicaciones deben llamar a [UrlCreateFromPath](/windows/desktop/api/shlwapi/nf-shlwapi-urlcreatefrompatha).\]
+\[Esta API no se admite y puede modificarse o no estar disponible en el futuro. En su lugar, las aplicaciones deben [llamar a UrlCreateFromPath](/windows/desktop/api/shlwapi/nf-shlwapi-urlcreatefrompatha).\]
 
-Convierte una ruta de acceso de Microsoft MS-DOS en una dirección URL con formato canónico.
+Convierte una ruta de acceso MS-DOS de Microsoft en una dirección URL canónica.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ HRESULT MFCreateURLFromPath(
 
 <dl> <dt>
 
-*pwszFilePath* \[ en, opcional\]
+*pwszFilePath* \[ in, opcional\]
 </dt> <dd>
 
-Una cadena terminada en null que contiene la ruta de acceso. La longitud máxima de la cadena es **longitud máxima de \_ \_ dirección URL \_ de Internet**.
+Cadena terminada en NULL que contiene la ruta de acceso. La longitud máxima de la cadena es **INTERNET \_ MAX URL \_ \_ LENGTH**.
 
 </dd> <dt>
 
-*ppwszFileURL* \[ enuncia\]
+*ppwszFileURL* \[ out\]
 </dt> <dd>
 
-Recibe una cadena terminada en null que contiene la dirección URL. El autor de la llamada debe liberar la cadena mediante una llamada a [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree).
+Recibe una cadena terminada en NULL que contiene la dirección URL. El autor de la llamada debe liberar la cadena llamando [**a CoTaskMemFree.**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+La función devuelve un **valor HRESULT.** Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                             | Descripción                                                                                                                                                               |
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**S \_ false**</dt> </dl> | La cadena especificada en el parámetro *pwszFilePath* ya está en formato de dirección URL. En este caso, *pszFilePath* simplemente se copia en *ppszFileURL* sin modificarlo.<br/> |
-| <dl> <dt>**S \_ correcto**</dt> </dl>    | La función se ha realizado correctamente. <br/>                                                                                                                                       |
+| <dl> <dt>**S \_ FALSE**</dt> </dl> | La cadena especificada en el *parámetro pwszFilePath* ya está en formato de dirección URL. En este caso, *pszFilePath simplemente* se copia en *ppszFileURL sin* modificaciones.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>    | La función se ha realizado correctamente. <br/>                                                                                                                                       |
 
 
 
@@ -73,7 +73,7 @@ La función devuelve un **valor HRESULT**. Entre los valores posibles se incluye
 
 ## <a name="remarks"></a>Observaciones
 
-Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe utilizar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mfplat.dll.
+Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe usar las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Mfplat.dll.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Esta función no tiene ninguna biblioteca de importación asociada. Para llamar 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
 | Archivo DLL<br/>                      | <dl> <dt>Mfplat.dll</dt> </dl> |
 
 
@@ -91,7 +91,7 @@ Esta función no tiene ninguna biblioteca de importación asociada. Para llamar 
 
 <dl> <dt>
 
-[Funciones de Media Foundation](media-foundation-functions.md)
+[Media Foundation Functions](media-foundation-functions.md)
 </dt> </dl>
 
  

@@ -1,8 +1,8 @@
 ---
-description: El método Delete WMI Class eliminará el archivo lógico (o directorio) especificado en la ruta de acceso del objeto.
+description: El método de clase WMI Delete eliminará el archivo lógico (o directorio) especificado en la ruta de acceso del objeto.
 ms.assetid: 5663b8a8-3089-475b-8a36-454a7315bfca
 ms.tgt_platform: multiple
-title: Método Delete de la clase Win32_Directory
+title: Método Delete de la Win32_Directory clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 843583698c11c1b9ad8f08e83aa6e4b894b55db8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 2966751c822213025d7107e4eff055900e6c8102711b66329e6f3c4fcbe1ed02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118676701"
 ---
-# <a name="delete-method-of-the-win32_directory-class"></a>Método Delete de la \_ clase de directorio Win32
+# <a name="delete-method-of-the-win32_directory-class"></a>Método Delete de la clase De directorio \_ win32
 
-El método **Delete** [WMI Class](/windows/desktop/WmiSdk/retrieving-a-class) eliminará el archivo lógico (o directorio) especificado en la ruta de acceso del objeto.
+El **método de** clase WMI [Delete](/windows/desktop/WmiSdk/retrieving-a-class) eliminará el archivo lógico (o directorio) especificado en la ruta de acceso del objeto.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,7 +63,7 @@ Se denegó el acceso.
 **8**
 </dt> <dd>
 
-Se produjo un error no especificado.
+Error no especificado.
 
 </dd> <dt>
 
@@ -91,7 +91,7 @@ El sistema de archivos no es NTFS.
 **12**
 </dt> <dd>
 
-La plataforma no es Windows.
+La plataforma no está Windows.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ El directorio no está vacío.
 **15**
 </dt> <dd>
 
-Se ha producido una infracción de uso compartido.
+Se ha infringido el uso compartido.
 
 </dd> <dt>
 
@@ -139,15 +139,15 @@ Un parámetro especificado no es válido.
 
 ## <a name="remarks"></a>Observaciones
 
-Las carpetas no son necesariamente adiciones permanentes a un sistema de archivos. En algún momento, es posible que sea necesario eliminar carpetas, quizás porque ya no son necesarias, ya que el rol del equipo ha cambiado o porque las carpetas se crearon por equivocación.
+Las carpetas no son necesariamente adiciones permanentes a un sistema de archivos. En algún momento, es posible que sea necesario eliminar las carpetas, quizás porque ya no son necesarias, porque el rol del equipo ha cambiado o porque las carpetas se crearon por error.
 
-Eliminar permite eliminar carpetas: simplemente se enlaza a la carpeta en cuestión y, a continuación, se llama al método Delete. Después de llamar al método Delete, la carpeta se quita permanentemente del sistema de archivos; no se envía a la papelera de reciclaje. Además, no hay ningún aviso de confirmación ("¿está seguro de que desea eliminar esta carpeta?"). En su lugar, la carpeta se quita inmediatamente.
+Eliminar le permite eliminar carpetas: simplemente se enlaza a la carpeta en cuestión y, a continuación, se llama al método Delete. Después de llamar al método Delete, la carpeta se quita permanentemente del sistema de archivos; no se envía al papelera de reciclaje. Además, no se emite ningún aviso de confirmación ("¿está seguro de que desea eliminar esta carpeta?"). En su lugar, la carpeta se quita inmediatamente.
 
-No se pueden eliminar carpetas de solo lectura mediante FileSystemObject; sin embargo, esto se puede hacer mediante WMI. Si el script usa WMI y no desea quitar una carpeta de solo lectura, debe usar la propiedad legible para comprobar el estado de la carpeta antes de eliminarla.
+No se pueden eliminar carpetas de solo lectura mediante FileSystemObject; sin embargo, esto se puede hacer mediante WMI. Si el script usa WMI y no desea quitar una carpeta de solo lectura, debe usar la propiedad Legible para comprobar el estado de la carpeta antes de eliminarla.
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente ejemplo de código de VBScript elimina la carpeta C: \\ scripts.
+El siguiente ejemplo de código VBScript elimina la carpeta C: \\ Scripts.
 
 
 ```VB
@@ -172,8 +172,8 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -185,7 +185,7 @@ Next
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Directorio Win32**](win32-directory.md)
+[**Directorio \_ win32**](win32-directory.md)
 </dt> </dl>
 
  

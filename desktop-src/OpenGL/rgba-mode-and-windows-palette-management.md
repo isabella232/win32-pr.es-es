@@ -1,10 +1,10 @@
 ---
 title: Modo RGBA y administración Windows paletas
-description: Aunque la mayoría de las aplicaciones GDI tienden a usar la indexación de colores con paletas lógicas, el modo RGBA suele ser preferible para las aplicaciones OpenGL. Funciona mejor que la asignación de colores para varios efectos, como sombreado, iluminación, sombra y asignación de textura.
+description: Aunque la mayoría de las aplicaciones GDI tienden a usar la indexación de colores con paletas lógicas, el modo RGBA suele ser preferible para las aplicaciones OpenGL. Funciona mejor que la asignación de colores para varios efectos, como sombreado, iluminación, sonido y asignación de textura.
 ms.assetid: 68c35173-e792-4770-9404-5503344f475b
 keywords:
-- OpenGL en Windows modo RGBA
-- OpenGL on Windows,palette management
+- OpenGL en Windows, modo RGBA
+- OpenGL en Windows, administración de paletas
 - OpenGL en modo RGBA
 - Administración de paletas OpenGL
 ms.topic: article
@@ -18,19 +18,19 @@ ms.locfileid: "118932957"
 ---
 # <a name="rgba-mode-and-windows-palette-management"></a>Modo RGBA y administración Windows paletas
 
-Aunque la mayoría de las aplicaciones GDI tienden a usar la indexación de colores con paletas lógicas, el modo RGBA suele ser preferible para las aplicaciones OpenGL. Funciona mejor que la asignación de colores para varios efectos, como sombreado, iluminación, sombra y asignación de textura.
+Aunque la mayoría de las aplicaciones GDI tienden a usar la indexación de colores con paletas lógicas, el modo RGBA suele ser preferible para las aplicaciones OpenGL. Funciona mejor que la asignación de colores para varios efectos, como sombreado, iluminación, sonido y asignación de textura.
 
-El modo RGBA usa valores de color rojo, verde y azul (R, G y B) que juntos especifican el color de cada píxel de la pantalla. Los valores R, G y B especifican la intensidad de cada color (rojo, verde y azul); los valores oscilan entre 0,0 (menos intensa) y 1,0 (la más intensa). El número de bits de cada componente varía en función del hardware usado (2, 3, 5, 6 y 8 bits son posibles). El color mostrado es el resultado de la suma de los tres valores de color. Si los tres valores son 0,0, el resultado es negro. Si los tres valores son todos 1,0, el resultado es blanco. Otros colores son el resultado de una combinación de valores de R, G y B que se encuentran entre 0 y 1,0. El bit A (alfa) no se usa para especificar el color.
+El modo RGBA usa valores de color rojo, verde y azul (R, G y B) que juntos especifican el color de cada píxel de la pantalla. Los valores R, G y B especifican la intensidad de cada color (rojo, verde y azul); los valores oscilan entre 0,0 (menos intensa) y 1,0 (la más intensa). El número de bits de cada componente varía en función del hardware usado (2, 3, 5, 6 y 8 bits son posibles). El color mostrado es el resultado de la suma de los tres valores de color. Si los tres valores son 0,0, el resultado es negro. Si los tres valores son todos 1.0, el resultado es blanco. Otros colores son el resultado de una combinación de valores de R, G y B que se encuentran entre 0 y 1,0. El bit A (alfa) no se usa para especificar el color.
 
-La pantalla super VGA estándar usa paletas con ocho bits de color por píxel. Los ocho bits se leen del búfer y se usan como índice en la paleta del sistema para obtener los valores R, G y B. Cuando se selecciona una paleta RGB y se realiza en un contexto de dispositivo, OpenGL puede representarse mediante el modo RGBA.
+La pantalla super VGA estándar usa paletas con ocho bits de color por píxel. Los ocho bits se leen del búfer y se usan como índice en la paleta del sistema para obtener los valores R, G y B. Cuando se selecciona y se realiza una paleta RGB en un contexto de dispositivo, OpenGL puede representarse mediante el modo RGBA.
 
-Dado que hay ocho bits de color por píxel, OpenGL resalta el uso de una paleta RGBA de tres a tres y dos. "Three-three-two" hace referencia a cómo la paleta física o de hardware controla los datos de bits de color. Rojo (R) y verde (G) se especifican cada uno por tres bits; blue (B) se especifica mediante dos bits. El rojo es el bit menos significativo y el azul es el bit más significativo.
+Dado que hay ocho bits de color por píxel, OpenGL resalta el uso de una paleta RGBA de tres tres o dos. "Three-three-two" hace referencia a cómo los datos de bits de color se controlan mediante el hardware o la paleta física. Rojo (R) y verde (G) se especifican cada uno por tres bits; blue (B) se especifica en dos bits. Rojo es el bit menos significativo y azul es el bit más significativo.
 
-Los colores de la paleta lógica de la aplicación se determinan con estructuras [PALETTEENTRY.](/previous-versions//dd162769(v=vs.85)) Normalmente se crea una matriz de estructuras **PALETTEENTRY** para especificar toda la tabla de entrada de paleta de la paleta lógica.
+Determine los colores de la paleta lógica de la aplicación con estructuras [PALETTEENTRY.](/previous-versions//dd162769(v=vs.85)) Normalmente se crea una matriz de estructuras **PALETTEENTRY** para especificar la tabla de entrada de paleta completa de la paleta lógica.
 
 ## <a name="rgba-mode-palette-sample"></a>Ejemplo de paleta de modo RGBA
 
-En el fragmento de código siguiente se muestra cómo puede crear una paleta RGBA de tres a tres y dos.
+El fragmento de código siguiente muestra cómo puede crear una paleta RGBA de tres o tres dos.
 
 
 ```C++

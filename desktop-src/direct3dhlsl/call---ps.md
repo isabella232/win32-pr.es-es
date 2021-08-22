@@ -1,6 +1,6 @@
 ---
-title: llamada a PS
-description: Realiza una llamada de función a la instrucción marcada con la etiqueta proporcionada. | llamada a PS
+title: call - ps
+description: Realiza una llamada de función a la instrucción marcada con la etiqueta proporcionada. | call - ps
 ms.assetid: d5f5e5a1-f205-477d-a11b-ff9eeeec6c95
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 27be29c478afdf92c29fefd16a82319e0899d2ec
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7ae1b8a19178b0a6633a98472814e225e9ac2f7de9e3e2f016720f2f5b1a9b3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104998113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118794089"
 ---
-# <a name="call---ps"></a>llamada a PS
+# <a name="call---ps"></a>call - ps
 
 Realiza una llamada de función a la instrucción marcada con la etiqueta proporcionada.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
@@ -33,13 +33,13 @@ Realiza una llamada de función a la instrucción marcada con la etiqueta propor
 
 Donde:
 
--   l \# es una [etiqueta-PS](label---ps.md) que marca el principio de la subrutina a la que se va a llamar.
+-   l \# es una [etiqueta: ps](label---ps.md) marca el principio de la subrutina a la que se va a llamar.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de píxeles | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | llamada                  |      |      |      |      |      | x    | x     | x    | x     |
 
@@ -49,8 +49,8 @@ Donde:
 
 Esta instrucción hace lo siguiente:
 
-1.  Dirección de extracción de la instrucción siguiente a la pila de direcciones devuelta.
-2.  Continúe con la ejecución de la instrucción marcada por la etiqueta.
+1.  Dirección de inserción de la siguiente instrucción en la pila de direcciones de retorno.
+2.  Continúe la ejecución desde la instrucción marcada por la etiqueta .
 
 ## <a name="related-topics"></a>Temas relacionados
 

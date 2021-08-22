@@ -1,19 +1,19 @@
 ---
-description: La secuenciación de muchas acciones en las tablas de acciones está restringida. Consulte referencia de acciones estándar para obtener una lista completa de acciones con vínculos a información de secuenciación detallada.
+description: La secuenciación de muchas acciones en las tablas de acciones está restringida. Consulte Referencia de acciones estándar para obtener una lista completa de acciones con vínculos a información de secuenciación detallada.
 ms.assetid: 659b1dd2-7510-4962-a991-f5febcfbf26e
 title: Acciones con restricciones de secuenciación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13d518bca1f90d256660bdf241dd7199d749cbd3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3886ce503569ae2e32e23e15bb73fa3fce13dbcadec98d1d3922056dc0c3247a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118640103"
 ---
 # <a name="actions-with-sequencing-restrictions"></a>Acciones con restricciones de secuenciación
 
-La secuenciación de muchas acciones en las tablas de acciones está restringida. Consulte [referencia de acciones estándar](standard-actions-reference.md) para obtener una lista completa de acciones con vínculos a información de secuenciación detallada.
+La secuenciación de muchas acciones en las tablas de acciones está restringida. Consulte [Referencia de acciones estándar](standard-actions-reference.md) para obtener una lista completa de acciones con vínculos a información de secuenciación detallada.
 
 La secuenciación de las siguientes acciones está restringida.
 
@@ -39,7 +39,7 @@ La secuenciación de las siguientes acciones está restringida.
 
 [FileCost](filecost-action.md)
 
-[ForceReboot](forcereboot-action.md)
+[Forcereboot](forcereboot-action.md)
 
 [InstallExecute](installexecute-action.md)
 
@@ -109,7 +109,7 @@ La secuenciación de las siguientes acciones está restringida.
 
 [UnregisterFonts](unregisterfonts-action.md)
 
-[UnregisterMIMEInfo](unregistermimeinfo-action.md)
+[Anulación del registroMIMEInfo](unregistermimeinfo-action.md)
 
 [UnregisterProgIdInfo](unregisterprogidinfo-action.md)
 

@@ -1,5 +1,5 @@
 ---
-description: Los datos protegidos se almacenan como un BLOB codificado en ASN.1.
+description: Los datos protegidos se almacenan como blobs codificados por ASN.1.
 ms.assetid: 8E287A1F-4EDF-4068-85F7-59A1D73F7BCD
 title: Formato de datos protegidos
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118907416"
 ---
 # <a name="protected-data-format"></a>Formato de datos protegidos
 
-Los datos protegidos se almacenan como un BLOB codificado en ASN.1. El formato de los datos es CMS (sintaxis de mensaje de certificado). El sobre digital contiene contenido cifrado, información del destinatario que contiene una clave de cifrado de contenido cifrado (CEK) y un encabezado que contiene información sobre el contenido, incluida la cadena de regla de descriptor de protección sin cifrar. Esto se muestra en el diagrama siguiente.
+Los datos protegidos se almacenan como blobs codificados por ASN.1. Los datos tienen el formato CMS (sintaxis de mensaje de certificado) con sobres. El sobre digital contiene contenido cifrado, información del destinatario que contiene una clave de cifrado de contenido cifrado (CEK) y un encabezado que contiene información sobre el contenido, incluida la cadena de regla de descriptor de protección sin cifrar. Esto se muestra en el diagrama siguiente.
 
 ![datos sobres protegidos](images/protecteddatablob.png)
 

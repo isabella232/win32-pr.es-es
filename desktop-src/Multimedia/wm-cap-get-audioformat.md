@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_GET_AUDIOFORMAT (VFW. h)
-description: El \_ mensaje Cap \_ \_ AUDIOFORMAT de WM obtiene el formato de audio o el tamaño del formato de audio. Puede enviar este mensaje explícitamente o mediante las macros capGetAudioFormat y capGetAudioFormatSize.
+title: WM_CAP_GET_AUDIOFORMAT mensaje (Vfw.h)
+description: El mensaje GET AUDIOFORMAT de WM \_ CAP obtiene el formato de audio o el tamaño del formato de \_ \_ audio. Puede enviar este mensaje explícitamente o mediante las macros capGetAudioFormat y capGetAudioFormatSize.
 ms.assetid: 25e58863-2b1e-4ed8-9f34-c39617a15bc1
 keywords:
-- Mensaje de WM_CAP_GET_AUDIOFORMAT de Windows multimedia
+- WM_CAP_GET_AUDIOFORMAT mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9508972c173c9e189bdc092a63d849adf3be739
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d247c035f251b387537f8e6c360adf79e6ed479d8d40e4f8fe8180e059dab3cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104421907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118940743"
 ---
-# <a name="wm_cap_get_audioformat-message"></a>\_Mensaje Cap \_ Get \_ AUDIOFORMAT de WM
+# <a name="wm_cap_get_audioformat-message"></a>Mensaje \_ GET \_ AUDIOFORMAT de WM CAP \_
 
-El **mensaje \_ Cap \_ \_ AUDIOFORMAT de WM** obtiene el formato de audio o el tamaño del formato de audio. Puede enviar este mensaje explícitamente o mediante las macros [**capGetAudioFormat**](/windows/desktop/api/Vfw/nf-vfw-capgetaudioformat) y [**capGetAudioFormatSize**](/windows/desktop/api/Vfw/nf-vfw-capgetaudioformatsize) .
+El **mensaje \_ GET \_ \_ AUDIOFORMAT** de WM CAP obtiene el formato de audio o el tamaño del formato de audio. Puede enviar este mensaje explícitamente o mediante las macros [**capGetAudioFormat**](/windows/desktop/api/Vfw/nf-vfw-capgetaudioformat) y [**capGetAudioFormatSize.**](/windows/desktop/api/Vfw/nf-vfw-capgetaudioformatsize)
 
 
 ```C++
@@ -48,7 +48,7 @@ Tamaño, en bytes, de la estructura a la que hace referencia **s**.
 <span id="psAudioFormat"></span><span id="psaudioformat"></span><span id="PSAUDIOFORMAT"></span>*psAudioFormat*
 </dt> <dd>
 
-Puntero a una estructura [**WAVEFORMATEX**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) o **null**. Si el valor es **null**, se devuelve el tamaño, en bytes, necesario para contener la estructura.
+Puntero a una [**estructura DESATEX**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) O **NULL.** Si el valor es **NULL,** se devuelve el tamaño, en bytes, necesario para contener la estructura.
 
 </dd> </dl>
 
@@ -56,9 +56,9 @@ Puntero a una estructura [**WAVEFORMATEX**](/windows/win32/api/mmeapi/ns-mmeapi-
 
 Devuelve el tamaño, en bytes, del formato de audio.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Dado que los formatos de audio comprimidos varían en cuanto a los requisitos de tamaño, las aplicaciones deben recuperar primero el tamaño, asignar la memoria y, por último, solicitar los datos del formato de audio.
+Dado que los formatos de audio comprimido varían en los requisitos de tamaño, las aplicaciones deben recuperar primero el tamaño, asignar memoria y, por último, solicitar los datos de formato de audio.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Dado que los formatos de audio comprimidos varían en cuanto a los requisitos de
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

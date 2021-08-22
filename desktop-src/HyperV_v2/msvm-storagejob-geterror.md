@@ -1,5 +1,5 @@
 ---
-description: 'Método GetError de la Msvm_StorageJob : recupera el error.'
+description: 'Método GetError de la Msvm_StorageJob clase : recupera el error.'
 ms.assetid: 785b83c4-06f4-46b5-81f7-35c6fce16c92
 title: Método GetError de la Msvm_StorageJob clase
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 00434ef529b7f26755f52833ff6f37310c7dc210
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: fcce1fc0f854e0e40d62e6f9335412bb7b7c93fbc3f212cbdae27ddbc2f3e94b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950204"
 ---
-# <a name="geterror-method-of-the-msvm_storagejob-class"></a>Método GetError de la clase StorageJob de Msvm \_
+# <a name="geterror-method-of-the-msvm_storagejob-class"></a>Método GetError de la clase StorageJob de \_ Msvm
 
 Recupera el error.
 
@@ -82,7 +82,7 @@ Este método devuelve uno de los siguientes valores:
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-**El sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
 **Memoria sin memoria** (32778)
@@ -92,7 +92,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
@@ -102,7 +102,7 @@ Este método devuelve uno de los siguientes valores:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

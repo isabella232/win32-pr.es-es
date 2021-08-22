@@ -12,12 +12,12 @@ api_type:
 - DllExport
 api_location:
 - EndpointDlp.dll
-ms.openlocfilehash: e549593acab6d74edf838a0f82952d8f3034bfcc
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: 97366a356b960fb8bea87bf552bf98576363663a6ca21de290d4035414fcb904
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118751664"
 ---
 # <a name="dlpnotifypoststashclipboard-function"></a>Función DlpNotifyPostStashClipboard
 
@@ -56,7 +56,7 @@ Devuelve void.
 
 
 
-| Requisito          |    Value                   |
+| Requisito          |    Valor                   |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, versión 1809 (10.0; Compilación 17763)           |
 | Archivo DLL<br/>                      | EndpointDlp.dll |

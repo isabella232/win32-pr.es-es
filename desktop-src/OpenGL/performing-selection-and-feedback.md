@@ -1,38 +1,38 @@
 ---
-title: Realización de una selección y comentarios
-description: Realización de una selección y comentarios
+title: Realización de la selección y los comentarios
+description: Realización de la selección y los comentarios
 ms.assetid: 908114b3-ac0e-4fd5-ad28-137e6af7ffc7
 keywords:
-- OpenGL, selección
+- OpenGL,selection
 - OpenGL, comentarios
-- OpenGL, representación
+- OpenGL, rendering
 - modo de selección OpenGL
 - modo de comentarios OpenGL
 - modo de representación OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be13ae103d33039c996851582823c23c30316731
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 95efe3f07e86056cd0364daaed1e6a9c0ef402afc18b14d74cca313c9835479f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118936291"
 ---
-# <a name="performing-selection-and-feedback"></a>Realización de una selección y comentarios
+# <a name="performing-selection-and-feedback"></a>Realización de la selección y los comentarios
 
-Selección, comentarios y representación son modos de operación mutuamente excluyentes. La representación es el modo predeterminado y normal durante el cual se generan fragmentos mediante la rasterización.
+La selección, los comentarios y la representación son modos de funcionamiento mutuamente excluyentes. La representación es el modo normal y predeterminado durante el cual los fragmentos se generan mediante la rasterización.
 
-En los modos de selección y de comentarios, no se generan fragmentos; por lo tanto, no se produce ninguna modificación de fotogramas. En el modo de selección, puede determinar qué primitivos se van a dibujar en alguna región de una ventana. en el modo de comentarios, la información acerca de los primitivos que se van a rasterizar se revierte a la aplicación.
+En los modos de selección y comentarios, no se genera ningún fragmento; por lo tanto, no se produce ninguna modificación del búfer de fotogramas. En el modo de selección, puede determinar qué primitivas se dibujarán en alguna región de una ventana; en el modo de comentarios, la información sobre las primitivas que se van a rasterizar se introduce de nuevo en la aplicación.
 
-Puede seleccionar uno de estos tres modos con [**glRenderMode**](glrendermode.md).
+Seleccione entre estos tres modos con [**glRenderMode**](glrendermode.md).
 
 -   [Selección](selection.md)
 -   [Comentarios](feedback.md)
--   [Selección y referencia de comentarios](selection-and-feedback-reference.md)
+-   [Referencia de selección y comentarios](selection-and-feedback-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

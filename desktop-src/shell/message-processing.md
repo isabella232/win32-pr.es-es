@@ -1,63 +1,63 @@
 ---
-description: La función de devolución de llamada CPlApplet procesa todos los mensajes enviados a un elemento del panel de control por Windows. Los mensajes enviados a la función se encuentran en un orden específico. Con el mismo token, el elemento. cpl requiere que los mensajes se procesen de una forma específica.
+description: La función de devolución de llamada CPlApplet procesa todos los mensajes enviados a un elemento Panel de control por Windows. Los mensajes enviados a la función están en un orden específico. Con el mismo token, el elemento .cpl requiere que los mensajes se procese de una manera específica.
 ms.assetid: 70302698-f9d5-4de4-a662-4815002eea52
-title: Procesamiento de mensajes del panel de control
+title: Panel de control de mensajes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b8b43c6e265030279a6644547f41e3630208325
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e697c603b69790d17c4d6771666a1111fa6f968eb97a30256696921f133530d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118719956"
 ---
-# <a name="control-panel-message-processing"></a>Procesamiento de mensajes del panel de control
+# <a name="control-panel-message-processing"></a>Panel de control de mensajes
 
-La función de devolución de llamada [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) procesa todos los mensajes enviados a un elemento del panel de control por Windows. Los mensajes enviados a la función se encuentran en un orden específico. Con el mismo token, el elemento. cpl requiere que los mensajes se procesen de una forma específica.
+La [**función de devolución de llamada CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) procesa todos los mensajes enviados a un elemento Panel de control por Windows. Los mensajes enviados a la función están en un orden específico. Con el mismo token, el elemento .cpl requiere que los mensajes se procese de una manera específica.
 
-En primer lugar, la función [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) recibe el \_ mensaje CPL init cuando Windows carga por primera vez el elemento del panel de control. La función debe llevar a cabo cualquier inicialización, como la asignación de memoria, y devolver un valor distinto de cero. Si **CPlApplet** no puede completar la inicialización, debe devolver cero, dirigirse a Windows para finalizar la comunicación y liberar el archivo dll.
+En primer lugar, [**la función CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) recibe el mensaje INIT de CPL \_ Windows carga primero el Panel de control elemento. La función debe llevar a cabo cualquier inicialización, como asignar memoria, y devolver un valor distinto de cero. Si **CPlApplet** no puede completar la inicialización, debe devolver cero, lo que Windows para finalizar la comunicación y liberar el archivo DLL.
 
-Después, si el \_ mensaje CPL init se ejecutó correctamente, Windows envía el \_ mensaje CPL GETCOUNT. A continuación, la función debe devolver el número de elementos del panel de control que admite el archivo. dll.
+A continuación, si el mensaje INIT de CPL se ha Windows \_ el mensaje \_ GETCOUNT de CPL. A continuación, la función debe devolver el número de Panel de control admitidos por el .dll archivo.
 
-A continuación, la función [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) recibe un \_ mensaje CPL de consulta y un \_ mensaje CPL NEWINQUIRE para cada elemento del panel de control que admite el archivo. dll. La función rellena una estructura [**CPLINFO**](/windows/win32/api/cpl/ns-cpl-cplinfo) o [**NEWCPLINFO**](/windows/win32/api/cpl/ns-cpl-newcplinfoa) con información sobre el elemento, como su nombre, icono y una cadena descriptiva. La mayoría de las aplicaciones deben procesar el \_ mensaje CPL consulta y omitir el \_ mensaje CPL NEWINQUIRE. El \_ mensaje CPL consulta proporciona información en un formulario que Windows puede almacenar en caché, lo que da como resultado un rendimiento mucho mejor. El \_ mensaje CPL NEWINQUIRE se usa solo si necesita cambiar el icono o las cadenas de visualización del elemento en función del estado del equipo. Los elementos del panel de control que usan CPL \_ NEWINQUIRE no se pueden encontrar en una búsqueda en el menú **Inicio** en Windows Vista porque se basa en el almacenamiento en caché.
+A continuación, la función [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) recibe un mensaje CPL INQUIRE y un mensaje \_ CPL NEWINQUIRE para cada elemento Panel de control compatible con el \_ .dll archivo. La función rellena una estructura [**CPLINFO**](/windows/win32/api/cpl/ns-cpl-cplinfo) o [**NEWCPLINFO**](/windows/win32/api/cpl/ns-cpl-newcplinfoa) con información sobre el elemento, como su nombre, icono y una cadena descriptiva. La mayoría de las aplicaciones deben procesar el mensaje \_ CPL INQUIRE e ignorar el mensaje \_ NEWINQUIRE de CPL. El mensaje CPL INQUIRE proporciona información en un formato que Windows almacenar en caché, lo que da como resultado \_ un rendimiento mucho mejor. El mensaje NEWINQUIRE de CPL solo se usa si necesita cambiar el icono del elemento o mostrar cadenas en función del \_ estado del equipo. Panel de control elementos que usan CPL NEWINQUIRE no se pueden encontrar mediante una búsqueda de menú Inicio en Windows Vista porque se basa en el almacenamiento \_ en caché. 
 
-La función [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) siguiente recibe un \_ mensaje CPL DBLCLK como notificación de que el usuario ha elegido el icono que representa el elemento del panel de control. La función podría recibir este mensaje varias veces. El mensaje incluye el identificador de elemento y el puntero **lpData** devuelto en la estructura [**CPLINFO**](/windows/win32/api/cpl/ns-cpl-cplinfo) o [**NEWCPLINFO**](/windows/win32/api/cpl/ns-cpl-newcplinfoa) en la llamada a [**CPL \_ require**](cpl-inquire.md) o [**CPL \_ NEWINQUIRE**](cpl-newinquire.md). La función debe mostrar el cuadro de diálogo correspondiente y procesar la entrada de usuario subsiguiente.
+A continuación, la función [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) recibe un mensaje DBLCLK de CPL como una notificación en la que se indica que el usuario ha elegido el icono que representa Panel de control \_ elemento. La función puede recibir este mensaje varias veces. El mensaje incluye el identificador de elemento y el puntero **lpData** devuelto en la estructura [**CPLINFO**](/windows/win32/api/cpl/ns-cpl-cplinfo) [**o NEWCPLINFO**](/windows/win32/api/cpl/ns-cpl-newcplinfoa) en la llamada a [**CPL \_ INQUIRE**](cpl-inquire.md) o [**CPL \_ NEWINQUIRE**](cpl-newinquire.md). La función debe mostrar el cuadro de diálogo correspondiente y procesar la entrada posterior del usuario.
 
-Además de CPL \_ DBLCLK, el \_ mensaje CPL STARTWPARMS se puede enviar si se invoca un elemento del panel de control con parámetros de entrada, como desde un símbolo del sistema o desde otro programa. El mensaje incluye el identificador de elemento junto con la cadena de parámetro adicional.
+Además de DBLCLK de CPL, se puede enviar el mensaje \_ STARTWPARMS de CPL si se invoca un elemento de Panel de control con parámetros de entrada, como desde un símbolo del sistema o desde otro \_ programa. El mensaje incluye el identificador de elemento junto con la cadena de parámetro adicional.
 
-Antes de que finalice la aplicación de control, [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) recibe el \_ mensaje CPL STOP una vez por cada elemento del panel de control admitido por el archivo. dll. El mensaje incluye el identificador del elemento del panel de control y el puntero **lpData** devuelto en la estructura [**CPLINFO**](/windows/win32/api/cpl/ns-cpl-cplinfo) o [**NEWCPLINFO**](/windows/win32/api/cpl/ns-cpl-newcplinfoa) en la llamada a [**CPL \_ require**](cpl-inquire.md) o [**CPL \_ NEWINQUIRE**](cpl-newinquire.md). La función debe liberar cualquier memoria asignada para el cuadro de diálogo especificado.
+Antes de que finalice la aplicación de control, [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) recibe el mensaje STOP de CPL una vez para cada elemento Panel de control compatible con \_ el .dll archivo. El mensaje incluye el identificador del elemento Panel de control y el puntero **lpData** devuelto en la [**estructura CPLINFO**](/windows/win32/api/cpl/ns-cpl-cplinfo) [**o NEWCPLINFO**](/windows/win32/api/cpl/ns-cpl-newcplinfoa) en la llamada a [**CPL \_ INQUIRE**](cpl-inquire.md) o [**CPL \_ NEWINQUIRE.**](cpl-newinquire.md) La función debe liberar cualquier memoria que haya asignado para el cuadro de diálogo especificado.
 
-Después del último CPL \_ Stop Message, [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) recibe un \_ mensaje CPL EXIT. La función debe liberar toda la memoria asignada restante y anular el registro de cualquier clase de ventana privada que pueda haber registrado. Inmediatamente después de que la función vuelva de este mensaje, Windows libera el elemento del panel de control llamando a la función [**FreeLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary) .
+Después del último mensaje STOP \_ de CPL, [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) recibe un mensaje EXIT de CPL. \_ La función debe liberar toda la memoria asignada restante y anular el registro de las clases de ventana privadas que pueda haber registrado. Inmediatamente después de que la función vuelva de este mensaje, Windows libera el elemento Panel de control mediante una llamada a la [**función FreeLibrary.**](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Elementos del panel de control](control-panel-applications.md)
+[Panel de control elementos](control-panel-applications.md)
 </dt> <dt>
 
 [Directrices de la experiencia de usuario](user-experience-guidelines.md)
 </dt> <dt>
 
-[Registrar elementos del panel de control](registering-control-panel-items.md)
+[Registro de Panel de control elementos](registering-control-panel-items.md)
 </dt> <dt>
 
-[Usar CPLApplet](using-cplapplet.md)
+[Uso de CPLApplet](using-cplapplet.md)
 </dt> <dt>
 
-[Ejecutar elementos del panel de control](executing-control-panel-items.md)
+[Ejecución de Panel de control elementos](executing-control-panel-items.md)
 </dt> <dt>
 
-[Extender elementos del panel de control del sistema](extending-system-control-panel-items.md)
+[Extender elementos de Panel de control sistema](extending-system-control-panel-items.md)
 </dt> <dt>
 
-[Asignar categorías del panel de control](assigning-control-panel-categories.md)
+[Asignación de Panel de control categorías](assigning-control-panel-categories.md)
 </dt> <dt>
 
-[Crear vínculos de tarea que se pueden buscar para un elemento del panel de control](creating-searchable-task-links.md)
+[Crear vínculos de tareas que se pueden buscar para un elemento Panel de control búsqueda](creating-searchable-task-links.md)
 </dt> <dt>
 
-[Acceder al panel de control en modo seguro en Windows Vista](accessing-the-cp-in-safe-mode-under-vista.md)
+[Acceso al Panel de control en modo Caja fuerte en Windows Vista](accessing-the-cp-in-safe-mode-under-vista.md)
 </dt> </dl>
 
  

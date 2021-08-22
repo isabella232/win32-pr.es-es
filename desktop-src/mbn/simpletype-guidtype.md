@@ -4,17 +4,17 @@ MS-HAID: WWAN\_profile\_v4.simpleType\_guidType
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: tipo simple de guidType (banda ancha móvil)
+title: Tipo simple guidType (banda ancha móvil)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66b7cc19207ab334694e4b42a49f727070cb385d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9469ff58d15ad51ba53a9975655e9d489c2f3a4fdb9784feb3bd41daeb0d0ea5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541379"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975074"
 ---
-# <a name="span-idwwan_profile_v4simpletype_guidtypespanguidtype-simple-type-mobile-broadband"></a><span id="WWAN_profile_v4.simpleType_guidType"></span>tipo simple de guidType (banda ancha móvil)
+# <a name="span-idwwan_profile_v4simpletype_guidtypespanguidtype-simple-type-mobile-broadband"></a><span id="WWAN_profile_v4.simpleType_guidType"></span>Tipo simple guidType (banda ancha móvil)
 
 Representación de cadena de un GUID, en el formato habitual.
 
@@ -32,7 +32,7 @@ Representación de cadena de un GUID, en el formato habitual.
 
 ## <a name="patterns"></a>Patrones
 
-El tipo simple **guidType** es un token que está restringido por el siguiente patrón:
+El tipo simple **guidType** es un token restringido por el siguiente patrón:
 
 -   `{[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}}`
 

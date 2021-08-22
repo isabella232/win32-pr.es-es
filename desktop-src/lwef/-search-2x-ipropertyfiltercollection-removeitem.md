@@ -1,11 +1,11 @@
 ---
-title: Propiedad RemoveItem de IPropertyFilterCollection (WdsSharedIDL. h)
+title: Propiedad RemoveItem de IPropertyFilterCollection (WdsSharedIDL.h)
 description: Quita un filtro específico de la colección.
 ms.assetid: a8b8a1f7-d47a-45dc-81c9-f01ecf6c1560
 keywords:
-- Propiedades de RemoveItem características de entorno de Windows heredadas
-- Propiedades de RemoveItem características de entorno de Windows heredadas, interfaz IPropertyFilterCollection
-- Interfaz IPropertyFilterCollection características del entorno heredado de Windows, propiedad RemoveItem
+- Características heredadas del entorno de Windows removeItem
+- Propiedades Legacy Windows Environment Features , IPropertyFilterCollection (interfaz IPropertyFilterCollection)
+- IPropertyFilterCollection interface Legacy Windows Environment Features , RemoveItem property
 topic_type:
 - apiref
 api_name:
@@ -17,23 +17,23 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2994b636a7b8483d4b3f219648f137166b75790d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 54822e95e2ea7d6e10fdd5bbf833adb63b51cb01e8d860ce77f550432b41e926
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118755424"
 ---
-# <a name="ipropertyfiltercollectionremoveitem-property"></a>IPropertyFilterCollection:: RemoveItem (propiedad)
+# <a name="ipropertyfiltercollectionremoveitem-property"></a>Propiedad IPropertyFilterCollection::RemoveItem
 
 > [!NOTE]
-> Windows Desktop Search 2. x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la [API de búsqueda de Windows](../search/-search-reference-entry-page.md) en su lugar. 
+> Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use la API [Windows Search en](../search/-search-reference-entry-page.md) su lugar. 
 
 Quita un filtro específico de la colección.
 
 Esta propiedad es de solo escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -46,18 +46,18 @@ HRESULT put_RemoveItem(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Acepta un puntero al índice del filtro que se va a quitar.
+Acepta un puntero al índice para el filtro que se va a quitar.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP con SP2 \[\]<br/>                                      |
-| Servidor mínimo compatible<br/> | Windows Server 2003 con \[ solo aplicaciones de escritorio de SP1\]<br/>                             |
-| Redistribuible<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                             |
-| Encabezado<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de \[ escritorio sp2\]<br/>                                      |
+| Servidor mínimo compatible<br/> | Windows Server 2003 solo con aplicaciones de escritorio sp1 \[\]<br/>                             |
+| Redistribuible<br/>          | Windows Búsqueda de escritorio (WDS) 2.6.5<br/>                                             |
+| Header<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
 
 
 

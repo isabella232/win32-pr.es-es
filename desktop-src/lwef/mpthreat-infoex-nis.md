@@ -1,10 +1,10 @@
 ---
-title: MPTHREAT_INFOEX_NIS estructura (MpClient. h)
+title: MPTHREAT_INFOEX_NIS estructura (MpClient.h)
 description: Contiene información específica de NIS.
 ms.assetid: 3887C5BF-B1F6-4420-B40A-9585E44BE7A9
 keywords:
-- MPTHREAT_INFOEX_NIS estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPTHREAT_INFOEX_NIS características de entorno heredado de Windows
+- MPTHREAT_INFOEX_NIS estructura heredada de Windows environment
+- PMPTHREAT_INFOEX_NIS puntero de estructura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b4ed68432a2d0ebe78535a139fcc7b0882b9ba7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8320070f80000ec5c2b235a815dc075f96f82ddd3c6d56c4022b9d60759c3e44
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118746904"
 ---
-# <a name="mpthreat_infoex_nis-structure"></a>MPTHREAT \_ INFOEX ( \_ estructura de NIS)
+# <a name="mpthreat_infoex_nis-structure"></a>Estructura NIS de MPTHREAT \_ INFOEX \_
 
 Contiene información específica de NIS.
 
@@ -49,14 +49,14 @@ typedef struct tagMPTHREAT_INFOEX_NIS {
 **SourceIP**
 </dt> <dd>
 
-Type: **MP \_ MIDL \_ String LPWStr**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd></dd> <dt>
 
 **DestinationIP**
 </dt> <dd>
 
-Type: **MP \_ MIDL \_ String LPWStr**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd></dd> <dt>
 
@@ -77,14 +77,14 @@ Tipo: **DWORD**
 **Protocolo**
 </dt> <dd>
 
-Type: **MP \_ MIDL \_ String LPWStr**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd></dd> <dt>
 
 **Vínculo**
 </dt> <dd>
 
-Type: **MP \_ MIDL \_ String LPWStr**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd></dd> </dl>
 
@@ -92,11 +92,11 @@ Type: **MP \_ MIDL \_ String LPWStr**
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

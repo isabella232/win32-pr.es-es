@@ -1,25 +1,25 @@
 ---
-title: ¿Cuál es el grado de seguridad de mi servidor RPC ahora?
-description: Después de la seguridad que se describe en esta sección, que se proporciona en otra parte del SDK de RPC, y que generalmente se aceptan como prácticas de seguridad adecuadas, el resultado será un servidor muy seguro. Estos servidores están protegidos frente a ataques de penetración o infracciones de privacidad.
+title: ¿Qué tan seguro es mi servidor RPC ahora?
+description: Si se sigue la seguridad descrita en esta sección, proporcionada en otra parte del SDK de RPC y generalmente aceptada como prácticas de seguridad adecuadas, se dará como resultado un servidor muy seguro. Estos servidores están protegidos contra ataques de penetración o infracciones de privacidad.
 ms.assetid: 528ff35c-f37c-43d8-8cc1-dbc36a9a826c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34279e4fb8899db6b7e980a0e868e91c6edb8166
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 90647852d237f02a15db6900d234d7cc78979f7c7681c67cfe9620adf17634bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118929512"
 ---
-# <a name="how-secure-is-my-rpc-server-now"></a>¿Es seguro ahora mi servidor RPC?
+# <a name="how-secure-is-my-rpc-server-now"></a>¿Qué tan seguro es mi servidor RPC ahora?
 
-Después de la seguridad que se describe en esta sección, que se proporciona en otra parte del SDK de RPC, y que generalmente se aceptan como prácticas de seguridad adecuadas, el resultado será un servidor muy seguro. Estos servidores están protegidos frente a ataques de penetración o infracciones de privacidad.
+Si se sigue la seguridad descrita en esta sección, proporcionada en otra parte del SDK de RPC y generalmente aceptada como prácticas de seguridad adecuadas, se dará como resultado un servidor muy seguro. Estos servidores están protegidos contra ataques de penetración o infracciones de privacidad.
 
-Si el estado se mantiene entre las llamadas RPC, asegúrese de que un solo cliente no provoque la asignación de recursos excesivos, lo que podría denegar el servicio a otros clientes.
+Si el estado se mantiene entre las llamadas RPC, asegúrese de que un solo cliente no provoca la asignación de recursos excesivos, lo que podría denegar el servicio a otros clientes.
 
- 
+ 
 
- 
+ 
 
 
 

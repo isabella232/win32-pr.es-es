@@ -1,24 +1,24 @@
 ---
-description: La API de administrador de autorización y el complemento MMC disponibles en Windows Server 2003 proporcionan aplicaciones con un marco de control de acceso basado en roles flexible. Este marco de trabajo incluye un conjunto de objetos COM eliminables para aplicaciones web y de línea de negocio.
+description: La API de Authorization Manager y el complemento MMC disponibles en Windows Server 2003 proporcionan a las aplicaciones un marco de control de acceso basado en roles flexible. Este marco incluye un conjunto de objetos COM extraíbles para aplicaciones web y de línea de negocio.
 ms.assetid: 2a2d839f-523e-4c32-b6e8-5cdc6dca195e
-title: Access Control para los recursos de la aplicación
+title: Access Control para recursos de aplicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d06e78f0a663fb4001a4d702ab484a7addc86b6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6e7cb286f80f43fb53e73645638f290f3e1d9509aa480152610dde5beb1325e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105652757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118914673"
 ---
-# <a name="access-control-for-application-resources"></a>Access Control para los recursos de la aplicación
+# <a name="access-control-for-application-resources"></a>Access Control para recursos de aplicación
 
-La API de administrador de autorización y el complemento MMC disponibles en Windows Server 2003 proporcionan aplicaciones con un marco de control de acceso basado en roles flexible. Este marco de trabajo incluye un conjunto de objetos COM eliminables para aplicaciones web y de línea de negocio.
+La API de Authorization Manager y el complemento MMC disponibles en Windows Server 2003 proporcionan a las aplicaciones un marco de control de acceso basado en roles flexible. Este marco incluye un conjunto de objetos COM extraíbles para aplicaciones web y de línea de negocio.
 
 En las secciones siguientes se proporciona información sobre cómo controlar el acceso a los recursos de la aplicación:
 
--   [Access Control basado en roles](role-based-access-control.md)
--   [Access Control basados en ACL](acl-based-access-control.md)
+-   [Rol basado en Access Control](role-based-access-control.md)
+-   [Acceso basado en ACL Access Control](acl-based-access-control.md)
 
  
 

@@ -1,23 +1,23 @@
 ---
-title: Dadd (SM5-ASM)
-description: Agregación de doble precisión para componentes.
+title: yd (sm5 - asm)
+description: Agregar precisión doble en el componente.
 ms.assetid: 416F1103-E27B-4AFC-9ED1-492FF8A93492
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0e217a03a5ba9e4da0d365bbfd15e4283f1a69cb
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 4e382ea2660b587a843ecca4c3bae93251a5f9434bd2cdca5899beaf25bb2fd7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104419892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118793533"
 ---
-# <a name="dadd-sm5---asm"></a>Dadd (SM5-ASM)
+# <a name="dadd-sm5---asm"></a>yd (sm5 - asm)
 
-Agregación de doble precisión para componentes.
+Agregar precisión doble en el componente.
 
 
 
-| Dadd \[ \_ SAT \] dest \[ . Mask \] , \[ - \] src0 \[ \_ ABS \] \[ . swizzle \] , \[ - \] SRC1 \[ \_ ABS \] \[ . swizzle\] |
+| swd \[ \_ sat \] dest \[ .mask \] , \[ - \] src0 \[ \_ abs \] \[ .swzzle \] , \[ - \] src1 abs \[ \_ \] \[ .swzzle\] |
 |---------------------------------------------------------------------------------------------|
 
 
@@ -28,23 +28,23 @@ Agregación de doble precisión para componentes.
 
 | Elemento                                                            | Descripción                                                   |
 |-----------------------------------------------------------------|---------------------------------------------------------------|
-| <span id="dest"></span><span id="DEST"></span>*dest*<br/> | \[en \] la dirección del resultado de la operación.<br/> |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] los componentes que se van a agregar con *SRC1*.<br/>          |
-| <span id="src1"></span><span id="SRC1"></span>*SRC1*<br/> | \[en \] los componentes que se van a agregar con *src0*<br/>           |
+| <span id="dest"></span><span id="DEST"></span>*Dest*<br/> | \[en \] La dirección del resultado de la operación.<br/> |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/> | \[en \] Componentes que se agregarán con *src1*.<br/>          |
+| <span id="src1"></span><span id="SRC1"></span>*src1*<br/> | \[en \] Los componentes que se agregarán con *src0*<br/>           |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El swizzles válido para los parámetros de origen son. xyzw,. xyxy,. zwxy,. zwzw. Las máscaras de *destino* válidas son. XY,. ZW y. xyzw. Las siguientes asignaciones son posteriores a swizzle:
+Los swzzles válidos para los parámetros de origen son .xyzw, .xyxy, .zwxy, .zwzw. Las máscaras *dest* válidas son .xy, .zw y .xyzw. Las asignaciones siguientes son posteriores a swzzle:
 
--   *dest* es un doble vec2 entre (x 32LSB, y 32MSB) y (z 32LSB, w 32MSB).
--   *src0* es un doble vec2 entre (x 32LSB, y 32MSB) y (z 32LSB, w 32MSB).
--   *SRC1* es un doble vec2 entre (x 32LSB, y 32MSB) y (z 32LSB, w 32MSB).
+-   *dest* es un vec2 doble entre (x 32LSB, y 32MSB) y (z 32LSB, w 32MSB).
+-   *src0* es un vec2 doble entre (x 32LSB, y 32MSB) y (z 32LSB, w 32MSB).
+-   *src1* es un vec2 doble entre (x 32LSB, y 32MSB) y (z 32LSB, w 32MSB).
 
-En la tabla siguiente se muestran los resultados obtenidos al ejecutar la instrucción con varias clases de números, suponiendo que no se produce desbordamiento o subdesbordamiento.
+En la tabla siguiente se muestran los resultados obtenidos al ejecutar la instrucción con varias clases de números, suponiendo que no se produzcan desbordamientos ni subdesbordes.
 
 F significa número finito-real.
 
@@ -54,18 +54,18 @@ F significa número finito-real.
 <tbody>
 <tr class="odd">
 <td><dl> <strong>src0</strong><br />
-<strong>SRC1-></strong><br />
+<strong>src1-></strong><br />
 </dl></td>
-<td><strong>-INF</strong></td>
+<td><strong>-inf</strong></td>
 <td><strong>-F</strong></td>
 <td><strong>-0</strong></td>
 <td><strong>+0</strong></td>
-<td><strong>+ F</strong></td>
-<td><strong>+ INF</strong></td>
+<td><strong>+F</strong></td>
+<td><strong>+inf</strong></td>
 <td><strong>NaN</strong></td>
 </tr>
 <tr class="even">
-<td><strong>-INF</strong></td>
+<td><strong>-inf</strong></td>
 <td>-inf</td>
 <td>-inf</td>
 <td>-inf</td>
@@ -105,7 +105,7 @@ F significa número finito-real.
 <td>NaN</td>
 </tr>
 <tr class="even">
-<td><strong>+ F</strong></td>
+<td><strong>+F</strong></td>
 <td>-inf</td>
 <td>+-F o +-0</td>
 <td>src0</td>
@@ -115,7 +115,7 @@ F significa número finito-real.
 <td>NaN</td>
 </tr>
 <tr class="odd">
-<td><strong>+ INF</strong></td>
+<td><strong>+inf</strong></td>
 <td>NaN</td>
 <td>+inf</td>
 <td>+inf</td>
@@ -145,7 +145,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -153,20 +153,20 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
-Esta instrucción es compatible con los siguientes modelos de sombreador:
+Esta instrucción se admite en los siguientes modelos de sombreador:
 
 
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
-| [Modelo de sombreador 4,1](dx-graphics-hlsl-sm4.md)              | no        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
 
 
 
@@ -176,7 +176,7 @@ Esta instrucción es compatible con los siguientes modelos de sombreador:
 
 <dl> <dt>
 
-[Ensamblador modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Ensamblado del modelo de sombreador 5 (HLSL de DirectX)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

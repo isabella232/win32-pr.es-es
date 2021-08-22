@@ -4,16 +4,16 @@ ms.assetid: 39c6d082-415f-4375-8cad-6d4c734d277f
 title: Método IEnumMedia::Next (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 711e9c844c46aab6ca90988d4e456e926716b201
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c526ce608066f8b3e67affb10bd777042d0d2e93cf02887ba5bfd49a744e931a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118865935"
 ---
-# <a name="ienummedianext-method"></a>IEnumMedia::Next (método)
+# <a name="ienummedianext-method"></a>IEnumMedia::Next (Método)
 
-\[ Los controles e interfaces de Conferencia de telefonía IP de Encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
+\[Las interfaces y los controles de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
 El **método Next** obtiene el siguiente número especificado de elementos en la secuencia de enumeración.
 
@@ -51,7 +51,7 @@ Puntero a la [**interfaz ITMedia.**](itmedia.md)
 *pceltFetched* \[ out\]
 </dt> <dd>
 
-Puntero al número de elementos proporcionados realmente. Puede ser **NULL** si *celta* es uno.
+Puntero al número de elementos proporcionados realmente. Puede ser **NULL** si *celt* es uno.
 
 </dd> </dl>
 
@@ -61,7 +61,7 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Valor                                                                                     | Significado                                                       |
+| Value                                                                                     | Significado                                                       |
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>      | El método *devolvió el número* de celtas de elementos.<br/>         |
 | <dl> <dt>**S \_ FALSE**</dt> </dl>   | El número de elementos restantes era menor *que celta.*<br/> |
@@ -73,7 +73,7 @@ Este método puede devolver uno de estos valores.
 
 ## <a name="remarks"></a>Comentarios
 
-TAPI llama al **método AddRef** en la [**interfaz ITMedia**](itmedia.md) devuelta por **IEnumMedia::Next**. La aplicación debe llamar a **Release** en la **interfaz ITMedia** para liberar recursos asociados a ella.
+TAPI llama al **método AddRef** en la [**interfaz ITMedia**](itmedia.md) devuelta por **IEnumMedia::Next**. La aplicación debe llamar a **Release en** la **interfaz ITMedia** para liberar recursos asociados a ella.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -82,13 +82,13 @@ TAPI llama al **método AddRef** en la [**interfaz ITMedia**](itmedia.md) devuel
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,9 +1,9 @@
 ---
-title: función gluNewNurbsRenderer (GLU. h)
-description: La función gluNewNurbsRenderer crea un objeto de curva B-spline racional (NURBS) no uniforme.
+title: Función gluNewNurbsRenderer (Glu.h)
+description: La función gluNewNurbsRenderer crea un objeto B-Spline racionalizado no uniforme (RGBBS).
 ms.assetid: f47badb0-6b75-4bfd-9771-516668d9e255
 keywords:
-- gluNewNurbsRenderer (función) OpenGL
+- función GluNewNurbsRenderer OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b6e35df5abd9fb9e7757dd79066fbbe7efe8680
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 089c1a88ac0fe9ac246efd435ae941ba5e66e2412595e4f5f96dc73e85e90478
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118937800"
 ---
-# <a name="glunewnurbsrenderer-function"></a>gluNewNurbsRenderer función)
+# <a name="glunewnurbsrenderer-function"></a>Función gluNewNurbsRenderer
 
-La función **gluNewNurbsRenderer** crea un objeto de curva B-spline racional ([NURBS](using-nurbs-curves-and-surfaces.md)) no uniforme.
+La **función gluNewNurbsRenderer** crea un objeto B-Spline racionalizado no uniforme [(SPLINEBS).](using-nurbs-curves-and-surfaces.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,9 +38,9 @@ GLUnurbs* WINAPI gluNewNurbsRenderer(void);
 
 Esta función no tiene parámetros.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **gluNewNurbsRenderer** crea y devuelve un puntero a un nuevo objeto NURBS. Consulte este objeto al llamar a funciones de representación y control de NURBS. Un valor devuelto de cero significa que no hay memoria suficiente para asignar al objeto.
+La **función gluNewNurbsRenderer** crea y devuelve un puntero a un nuevo objeto RGBBS. Haga referencia a este objeto al llamar a las funciones de representación y control DEBS. Un valor devuelto de cero significa que no hay suficiente memoria para asignar al objeto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ La función **gluNewNurbsRenderer** crea y devuelve un puntero a un nuevo objeto
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
-| Encabezado<br/>                   | <dl> <dt>Glu. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 

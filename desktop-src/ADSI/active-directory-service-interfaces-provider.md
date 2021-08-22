@@ -1,29 +1,29 @@
 ---
-title: Proveedor de interfaces de servicio Active Directory
-description: Un proveedor ADSI contiene la implementación de objetos ADSI y objetos dependientes para un espacio de nombres determinado.
+title: Active Directory proveedor de interfaces de servicio
+description: Un proveedor adsi contiene la implementación de objetos ADSI y objetos dependientes para un espacio de nombres determinado.
 ms.assetid: fb4b9807-7f76-4497-96be-77924bac8f30
 ms.tgt_platform: multiple
 keywords:
-- proveedores de servicios ADSI, Ilustración de cómo los proveedores de servicios tienen acceso a un espacio de nombres
-- espacio de nombres ADSI, Ilustración de cómo los proveedores de servicios tienen acceso al espacio de nombres
+- ADSI de proveedores de servicios, ilustración de cómo los proveedores de servicios acceden a un espacio de nombres
+- espacio de nombres ADSI, ilustración de cómo los proveedores de servicios acceden al espacio de nombres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d350a9447a79dd2659a0fed79fb781c02d84bc8c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8ae1e9406e08a5ed79ea8e207eb61c5081388adb581d747b383480e59683169e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103773027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024113"
 ---
-# <a name="active-directory-service-interfaces-provider"></a>Proveedor de interfaces de servicio Active Directory
+# <a name="active-directory-service-interfaces-provider"></a>Active Directory proveedor de interfaces de servicio
 
-Un proveedor ADSI contiene la implementación de objetos ADSI y objetos dependientes para un espacio de nombres determinado. En la siguiente ilustración se muestra que los clientes están preocupados únicamente por obtener y usar interfaces en un objeto, y no con los detalles de dónde y cómo se implementa el software de un objeto.
+Un proveedor adsi contiene la implementación de objetos ADSI y objetos dependientes para un espacio de nombres determinado. En la ilustración siguiente se muestra que a los clientes solo les preocupa obtener y usar interfaces en un objeto y no con los detalles de dónde y cómo se implementa el software de un objeto.
 
-![proveedor de interfaces de servicios de Active Directory](images/ds2prov.png)
+![proveedor de interfaces de servicio de Active Directory](images/ds2prov.png)
 
- 
+ 
 
- 
+ 
 
 
 

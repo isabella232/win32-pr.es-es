@@ -1,7 +1,7 @@
 ---
 description: Representa una colección de instantáneas del sistema virtual.
 ms.assetid: c9b64421-232c-4f32-a088-6b98602ca3f4
-title: Msvm_SnapshotCollection (clase)
+title: Msvm_SnapshotCollection clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1e24566f1f5c5500258f14f88cbe2b7c4fa29e27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc83a12fc67192f686ddd75d6bc9626d9403244b2cbc8490270d236741174cdb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950294"
 ---
-# <a name="msvm_snapshotcollection-class"></a>MSVM \_ SnapshotCollection (clase)
+# <a name="msvm_snapshotcollection-class"></a>Clase SnapshotCollection de Msvm \_
 
 Representa una colección de instantáneas del sistema virtual.
 
@@ -41,17 +41,17 @@ class Msvm_SnapshotCollection : CIM_Collection
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ SnapshotCollection** tiene estos tipos de miembros:
+La **clase \_ SnapshotCollection de Msvm** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ SnapshotCollection** tiene estas propiedades.
+La **clase \_ SnapshotCollection de Msvm** tiene estas propiedades.
 
 <dl> <dt>
 
-**Recopilación**
+**CollectionID**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -60,7 +60,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("CollectionID"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CollectionID"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificación única del objeto de colección.
@@ -76,7 +76,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("ElementName")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("ElementName")
 </dt> </dl>
 
 Nombre definido por el usuario para la colección. Tenga en cuenta que no se garantiza que sea único.
@@ -89,10 +89,10 @@ Nombre definido por el usuario para la colección. Tenga en cuenta que no se gar
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -101,7 +101,7 @@ Nombre definido por el usuario para la colección. Tenga en cuenta que no se gar
 
 <dl> <dt>
 
-[**\_Colección CIM**](cim-collection.md)
+[**Colección \_ CIM**](cim-collection.md)
 </dt> </dl>
 
  

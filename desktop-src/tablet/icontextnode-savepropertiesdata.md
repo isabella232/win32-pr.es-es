@@ -1,7 +1,7 @@
 ---
-description: Recupera una matriz de bytes que contiene los datos de propiedad internos y específicos de la aplicación para este IContextNode.
+description: Recupera una matriz de bytes que contiene los datos de propiedades internas y específicos de la aplicación para este IContextNode.
 ms.assetid: f26d71a7-fe71-48a8-9c8f-9c4d99261df1
-title: 'IContextNode:: SavePropertiesData (método) (IACom. h)'
+title: Método IContextNode::SavePropertiesData (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: f2ac064632eb9e5dd2b94f6e75b9b2836c75996d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b02f5df7526b429a65b2a0baf49bda4571dd718a9bff875c79b7e325de244ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118719689"
 ---
-# <a name="icontextnodesavepropertiesdata-method"></a>IContextNode:: SavePropertiesData (método)
+# <a name="icontextnodesavepropertiesdata-method"></a>IContextNode::SavePropertiesData (método)
 
-Recupera una matriz de bytes que contiene los datos de propiedad internos y específicos de la aplicación para este [**IContextNode**](icontextnode.md).
+Recupera una matriz de bytes que contiene los datos de propiedad interna y específicos de la aplicación para [**este IContextNode**](icontextnode.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,11 +43,11 @@ HRESULT SavePropertiesData(
 *pulPropertiesDataSize* \[ in, out\]
 </dt> <dd>
 
-Tamaño de la matriz de datos que contiene la información de la propiedad. No se utiliza el valor pasado en.
+Tamaño de la matriz de datos que contiene la información de propiedad. No se usa el valor pasado.
 
 </dd> <dt>
 
-*ppbPropertiesData* \[ enuncia\]
+*ppbPropertiesData* \[ out\]
 </dt> <dd>
 
 Puntero a una matriz de enteros de 8 bits sin signo que contiene los datos de propiedad internos y específicos de la aplicación.
@@ -56,33 +56,33 @@ Puntero a una matriz de enteros de 8 bits sin signo que contiene los datos de pr
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Caution]  
 > Para evitar una pérdida de memoria, use [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) para liberar la memoria de \* *ppbPropertiesData* cuando ya no necesite la información.
 
  
 
-Use este método cuando la aplicación mantenga su propia estructura de datos, que está sincronizada con la de [**IInkAnalyzer**](iinkanalyzer.md). Este método guarda los datos de propiedad que **IInkAnalyzer** ha establecido en [**IContextNode**](icontextnode.md).
+Use este método cuando la aplicación mantenga su propia estructura de datos, que se sincroniza con la de [**IInkAnalyzer**](iinkanalyzer.md). Este método guarda los datos de propiedad que **IInkAnalyzer** ha establecido en [**IContextNode**](icontextnode.md).
 
-Para obtener más información sobre cómo sincronizar los datos de la aplicación con [**IInkAnalyzer**](iinkanalyzer.md), vea [proxy de datos con análisis de tinta](data-proxy-with-ink-analysis.md).
+Para obtener más información sobre cómo sincronizar los datos de la aplicación con [**IInkAnalyzer**](iinkanalyzer.md), vea [Proxy de datos con análisis de entrada de lápiz.](data-proxy-with-ink-analysis.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -107,7 +107,7 @@ Para obtener más información sobre cómo sincronizar los datos de la aplicaci�
 [**IContextNode::ContainsPropertyData**](icontextnode-containspropertydata.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

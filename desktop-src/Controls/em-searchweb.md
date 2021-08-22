@@ -1,9 +1,9 @@
 ---
-title: Mensaje de EM_SEARCHWEB (commctrl. h)
+title: EM_SEARCHWEB mensaje (Commctrl.h)
 description: Abre el explorador y realiza una búsqueda web con el texto seleccionado como término de búsqueda.
 ms.assetid: 1b1ff5e7-e0b8-40c1-8b7e-7003e9ef959b
 keywords:
-- EM_SEARCHWEB controles de mensajes de Windows
+- EM_SEARCHWEB controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2e83c18db47d18648797ee3d58fe12567af941b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 21523df67acf91b8a44f59ea40b012f1af7c287185b7ac64b5dc1288005dfb17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118673181"
 ---
-# <a name="em_searchweb-message"></a>\_Mensaje SEARCHWEB em
+# <a name="em_searchweb-message"></a>EM \_ SEARCHWeb message
 
 Abre el explorador y realiza una búsqueda web con el texto seleccionado como término de búsqueda.
 
@@ -32,24 +32,24 @@ Abre el explorador y realiza una búsqueda web con el texto seleccionado como t�
 *wParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-No se utiliza; debe ser cero.
+No se usa; debe ser cero.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
 ## <a name="remarks"></a>Observaciones
 
-Si la característica "Buscar en la web" está deshabilitada mediante el mensaje [**em \_ ENABLESEARCHWEB**](em-enablesearchweb.md) , este mensaje no tiene ningún efecto.
+Si la característica "Buscar en la web" está deshabilitada mediante el mensaje [**EM \_ ENABLESEARCHWEB,**](em-enablesearchweb.md) este mensaje no tiene ningún efecto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Si la característica "Buscar en la web" está deshabilitada mediante el mensaje
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 y 1809 \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2019 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio 1809 \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2019 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -67,7 +67,7 @@ Si la característica "Buscar en la web" está deshabilitada mediante el mensaje
 
 <dl> <dt>
 
-[**\_ENABLESEARCHWEB em**](em-enablesearchweb.md)
+[**EM \_ ENABLESEARCHWEB**](em-enablesearchweb.md)
 </dt> </dl>
 
  

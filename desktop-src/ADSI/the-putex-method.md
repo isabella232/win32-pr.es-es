@@ -1,24 +1,24 @@
 ---
-title: El método PutEx
-description: El método PutEx de IADs utiliza el nombre de una propiedad para guardar una propiedad con uno o varios valores en la memoria caché de propiedades.
+title: Método PutEx
+description: El método PutEx de IADs usa el nombre de una propiedad para guardar una propiedad con uno o varios valores en la caché de propiedades.
 ms.assetid: fb9a0610-e955-424b-a2b9-da4986d0ba5f
 ms.tgt_platform: multiple
 keywords:
-- PutEx ADSI, acerca de
-- ADSI ADSI, Visual Basic de código de ejemplo, utilizar el método PutEx
-- propiedades ADSI, guardar una propiedad única o con varios valores en la caché de propiedades
+- PutEx ADSI , about
+- ADSI ADSI , código de ejemplo Visual Basic , mediante el método PutEx
+- ADSI de propiedades, guardar una propiedad única o multivalor en la caché de propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ea698c2dd14f3ddf8f3ad97459fad598006db22
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 646c07fad5d22110d345b71a763add5483d7f0be5f6ae2c36557eb7f1563561c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023173"
 ---
-# <a name="the-putex-method"></a>El método PutEx
+# <a name="the-putex-method"></a>Método PutEx
 
-El método [**IADs::P Utex**](/windows/desktop/api/Iads/nf-iads-iads-putex) usa el nombre de una propiedad para guardar una propiedad con uno o varios valores en la memoria caché de propiedades. Esto sobrescribe cualquier valor que se encuentre actualmente en la caché de propiedades. Los valores de la memoria caché no se escriben en el servicio de directorio subyacente hasta que se produce un [**IADs:: SetInfo**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) . El primer argumento de **PutEx** indica si desea reemplazar o agregar a cualquier valor existente para la propiedad. En el ejemplo siguiente, los valores existentes del atributo **Description** se borran en la memoria caché cuando se llama a **PutEx** y se borran en el servidor cuando se llama a **SetInfo** .
+El [**método IADs::P utEx**](/windows/desktop/api/Iads/nf-iads-iads-putex) usa el nombre de una propiedad para guardar una propiedad con uno o varios valores en la caché de propiedades. Esto sobrescribe cualquier valor actualmente en la caché de propiedades. Los valores de la memoria caché no se escriben en el servicio de directorio subyacente hasta que se produce un [**IADs::SetInfo.**](/windows/desktop/api/Iads/nf-iads-iads-setinfo) El primer argumento de **PutEx** indica si desea reemplazar o agregar a los valores existentes para la propiedad . En el ejemplo siguiente, los valores existentes del atributo **description** se borran en la memoria caché cuando se llama a **PutEx** y se borran en el servidor cuando se llama **a SetInfo.**
 
 
 ```VB
@@ -41,9 +41,9 @@ x.SetInfo              'Now the property has no value.
 
 
 
- 
+ 
 
- 
+ 
 
 
 
