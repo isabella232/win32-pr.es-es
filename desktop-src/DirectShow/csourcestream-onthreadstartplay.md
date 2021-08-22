@@ -1,7 +1,7 @@
 ---
 description: Se llama al método OnThreadStartPlay al principio del método CSourceStream::D oBufferProcessingLoop.
 ms.assetid: 16d3b28f-bfae-49af-b8e4-8cc8cb15ecab
-title: CSourceStream. OnThreadStartPlay (método) (Source. h)
+title: Método CSourceStream.OnThreadStartPlay (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 857f27ad39fb9169e1ef67253d5232c7cbc3dbb6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fcd1ccf4b507570e0219854d1f5044c1d95db63d04b8f9049449beb3941e95d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073179"
 ---
-# <a name="csourcestreamonthreadstartplay-method"></a>CSourceStream. OnThreadStartPlay, método
+# <a name="csourcestreamonthreadstartplay-method"></a>Método CSourceStream.OnThreadStartPlay
 
-`OnThreadStartPlay`Se llama al método al principio del método [**CSourceStream::D obufferprocessingloop**](csourcestream-dobufferprocessingloop.md) .
+Se `OnThreadStartPlay` llama al método al principio del método [**CSourceStream::D oBufferProcessingLoop.**](csourcestream-dobufferprocessingloop.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,11 +42,11 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto.
+Devuelve S \_ OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método no hace nada en la clase base; está disponible para que la clase derivada se invalide.
+Este método no hace nada en la clase base; está disponible para que la clase derivada invalide.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Este método no hace nada en la clase base; está disponible para que la clase d
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Source. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Source.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Este método no hace nada en la clase base; está disponible para que la clase d
 
 <dl> <dt>
 
-[**Clase CSourceStream**](csourcestream.md)
+[**CSourceStream (clase)**](csourcestream.md)
 </dt> </dl>
 
  

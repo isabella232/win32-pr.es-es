@@ -1,42 +1,42 @@
 ---
-description: En esta sección se describe cómo enumerar las transformaciones de Media Foundation y cómo registrar una MFT personalizada para que las aplicaciones puedan detectarla.
+description: En esta sección se describe cómo enumerar Media Foundation transformaciones y cómo registrar un MFT personalizado para que las aplicaciones puedan detectarlo.
 ms.assetid: 76d2a703-4162-428e-a4ff-643e346eacfb
-title: Registro y enumeración de MFTs
+title: Registro y enumeración de MTA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 771a22b469d472dbc59d07c2754405276883bef4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a3110351479f2a906d68b6c054d9e23886cbcd4cdb031fc8a4951a1d4b8d1e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119101834"
 ---
-# <a name="registering-and-enumerating-mfts"></a>Registro y enumeración de MFTs
+# <a name="registering-and-enumerating-mfts"></a>Registro y enumeración de MTA
 
-En esta sección se describe cómo enumerar las transformaciones de Media Foundation y cómo registrar una MFT personalizada para que las aplicaciones puedan detectarla.
+En esta sección se describe cómo enumerar Media Foundation transformaciones y cómo registrar un MFT personalizado para que las aplicaciones puedan detectarlo.
 
--   [Enumerar MFTs](#registering-and-enumerating-mfts)
--   [Registrando MFTs](#registering-mfts)
+-   [Enumeración de MTA](#registering-and-enumerating-mfts)
+-   [Registro de MTA](#registering-mfts)
 -   [Temas relacionados](#related-topics)
 
-## <a name="enumerating-mfts"></a>Enumerar MFTs
+## <a name="enumerating-mfts"></a>Enumeración de MTA
 
-Para detectar MFTs que están registradas en el sistema, una aplicación puede llamar a la función [**MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) .
+Para detectar los MFT registrados en el sistema, una aplicación puede llamar a la [**función MFTEnumEx.**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex)
 
 > [!Note]  
-> Esta función requiere a Windows 7. Antes de Windows 7, las aplicaciones deben usar la función [**MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum) en su lugar.
+> Esta función requiere Windows 7. Antes de Windows 7, las aplicaciones deben usar la [**función MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum) en su lugar.
 
  
 
 Esta función toma la siguiente información como entrada:
 
--   Categoría de MFT que se va a enumerar, como descodificador de vídeo o descodificador de audio.
--   Formato de entrada o de salida que se va a comparar.
+-   Categoría de MFT que se enumera, como descodificador de vídeo o descodificador de audio.
+-   Formato de entrada o salida que se debe coincidir.
 -   Marcas que especifican condiciones de búsqueda adicionales.
 
-La función devuelve una matriz de punteros [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) , cada uno de los cuales representa una MFT que coincide con los criterios de la enumeración.
+La función devuelve una matriz de punteros [**DE TIPO DEACTIVATE,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) cada uno de los cuales representa un MFT que coincide con los criterios de enumeración.
 
-Por ejemplo, el código siguiente enumera los descodificadores de Windows Media Video:
+Por ejemplo, el código siguiente enumera Windows descodificadores de Vídeo multimedia:
 
 
 ```C++
@@ -84,7 +84,7 @@ CoTaskMemFree(ppActivate);
 
 
 
-De forma predeterminada, algunos tipos de MFT se excluyen de la enumeración, incluidos los MFTs asincrónicos, MFTs de hardware y MFTs con restructing de campo de uso. Se excluyen porque requieren un tratamiento especial de algún tipo. Use el parámetro *Flags* de [**MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) para cambiar el valor predeterminado. Por ejemplo, para incluir hardware MFTs en los resultados de la enumeración, establezca la marca de **\_ \_ \_ hardware marcador de enumeración de MFT** :
+De forma predeterminada, algunos tipos de MFT se excluyen de la enumeración, incluidos los MFT asincrónicos, los MFT de hardware y los MFT con reestructuraciones de campo de uso. Se excluyen porque todos requieren un control especial de algún tipo. Use el *parámetro Flags* de [**MFTEnumEx**](/windows/desktop/api/mfapi/nf-mfapi-mftenumex) para cambiar el valor predeterminado. Por ejemplo, para incluir las MFT de hardware en los resultados de enumeración, establezca la marca DE **HARDWARE MFT \_ ENUM \_ FLAG: \_**
 
 
 ```C++
@@ -104,21 +104,21 @@ hr = MFTEnumEx(
 
 
 
-## <a name="registering-mfts"></a>Registrando MFTs
+## <a name="registering-mfts"></a>Registro de MTA
 
-Cuando se registra una transformación de Media Foundation (MFT), se escriben dos tipos de información en el registro:
+Al registrar una transformación Media Foundation transformación (MFT), se escriben dos tipos de información en el registro:
 
--   El CLSID de MFT, de modo que los clientes puedan llamar a **CoCreateInstance** o **CoGetClassObject** para crear una instancia de MFT. Esta entrada del registro sigue el formato estándar para los generadores de clases COM. Para obtener más información, vea la documentación de Windows SDK del modelo de objetos componentes (COM).
--   Información que permite a una aplicación enumerar MFTs por categoría funcional.
+-   CLSID de MFT, para que los clientes puedan llamar a **CoCreateInstance** o **CoGetClassObject** para crear una instancia de MFT. Esta entrada del Registro sigue el formato estándar para los generadores de clases COM. Para obtener más información, consulte la documentación Windows SDK para component Object Model (COM).
+-   Información que permite a una aplicación enumerar las MTA por categoría funcional.
 
-Para crear las entradas de enumeración de MFT en el registro, llame a la función [**MFTRegister**](/windows/desktop/api/mfapi/nf-mfapi-mftregister) . Puede incluir la siguiente información sobre la MFT:
+Para crear las entradas de enumeración de MFT en el Registro, llame a la [**función MFTRegister.**](/windows/desktop/api/mfapi/nf-mfapi-mftregister) Puede incluir la siguiente información sobre MFT:
 
--   La categoría de la MFT, como descodificador de vídeo o codificador de vídeo. Para obtener una lista de categorías, consulte la [**\_ categoría MFT**](mft-category.md).
--   Una lista de los formatos de entrada y salida que admite MFT. Cada formato se define mediante un tipo principal y un subtipo. (Para obtener información más detallada sobre el formato, el cliente debe crear la MFT y llamar a los métodos [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) ). El cargador de topología utiliza esta información cuando resuelve una topología parcial.
+-   Categoría del MFT, como el descodificador de vídeo o el codificador de vídeo. Para obtener una lista de categorías, vea [**CATEGORÍA DE MFT \_**](mft-category.md).
+-   Lista de formatos de entrada y salida que admite MFT. Cada formato se define mediante un tipo principal y un subtipo. (Para obtener información de formato más detallada, el cliente debe crear el MFT y llamar a [**los métodos DETRANSFORMTRANSFORM).**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) El cargador de topologías usa esta información cuando resuelve una topología parcial.
 
-Para quitar las entradas del registro, llame a [**MFTUnregister**](/windows/desktop/api/mfapi/nf-mfapi-mftunregister).
+Para quitar las entradas del Registro, llame a [**MFTUnregister**](/windows/desktop/api/mfapi/nf-mfapi-mftunregister).
 
-En el código siguiente se muestra cómo registrar una MFT. En este ejemplo se da por supuesto que la MFT es un efecto de vídeo que admite los mismos formatos para la entrada y la salida.
+El código siguiente muestra cómo registrar un MFT. En este ejemplo se supone que MFT es un efecto de vídeo que admite los mismos formatos para la entrada y la salida.
 
 
 ```C++
@@ -177,7 +177,7 @@ STDAPI DllUnregisterServer()
 
 <dl> <dt>
 
-[Campo de restricciones de uso](field-of-use-restrictions.md)
+[Restricciones de campo de uso](field-of-use-restrictions.md)
 </dt> <dt>
 
 [Media Foundation transformaciones](media-foundation-transforms.md)

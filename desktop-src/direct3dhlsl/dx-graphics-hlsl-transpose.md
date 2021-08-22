@@ -1,5 +1,5 @@
 ---
-title: transponer
+title: Transpuesta
 description: Transpone la matriz de entrada especificada.
 ms.assetid: 2a2ff2fb-73f0-4bb8-af83-38fe0567d122
 keywords:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 44f129a87edaff260de87136954be7598ee3acb6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e6e545e657e6d9eaded92affba5bbb52a22222db2bf87acd5dddb72335a17ab0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119759"
 ---
-# <a name="transpose"></a>transponer
+# <a name="transpose"></a>Transpuesta
 
 Transpone la matriz de entrada especificada.
 
 
 
-| RET (*x*) |
+| ret transponer(*x*) |
 |--------------------|
 
 
@@ -39,7 +39,7 @@ Transpone la matriz de entrada especificada.
 
 | Elemento                                                   | Descripción                             |
 |--------------------------------------------------------|-----------------------------------------|
-| <span id="x"></span><span id="X"></span>*x1*<br/> | \[en \] la matriz especificada.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[en \] La matriz especificada.<br/> |
 
 
 
@@ -47,26 +47,26 @@ Transpone la matriz de entrada especificada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Valor transpuesto del parámetro *x* .
+Valor transpuesto del *parámetro x.*
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si las dimensiones de la matriz de origen son *columnas* de *filas* , la matriz resultante es *filas* de *columnas* .
+Si las dimensiones de la matriz de origen son columnas *de* *filas*, la matriz resultante es *filas de* *columnas*.
 
 ## <a name="type-description"></a>Descripción del tipo
 
 
 
-| Nombre | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md)                                                         | Tamaño                                                                                   |
+| Nombre | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                       | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md)                                                         | Size                                                                                   |
 |------|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| *x*  | [**matrices**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types), [**int**](/windows/desktop/WinProg/windows-data-types), [**bool**](/windows/desktop/WinProg/windows-data-types) | cualquiera                                                                                    |
-| direcc  | [**matrices**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types), [**int**](/windows/desktop/WinProg/windows-data-types), [**bool**](/windows/desktop/WinProg/windows-data-types) | filas = el mismo número de columnas que la entrada *x*, columnas = el mismo número de filas que la entrada *x* |
+| *x*  | [**Matriz**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types), [**int**](/windows/desktop/WinProg/windows-data-types), [**bool**](/windows/desktop/WinProg/windows-data-types) | cualquiera                                                                                    |
+| Ret  | [**Matriz**](dx-graphics-hlsl-intrinsic-functions.md) | [**float**](/windows/desktop/WinProg/windows-data-types), [**int**](/windows/desktop/WinProg/windows-data-types), [**bool**](/windows/desktop/WinProg/windows-data-types) | rows = el mismo número de columnas que la *entrada x*, columnas = el mismo número de filas que la entrada *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
@@ -74,7 +74,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible |
 |------------------------------------------------------------------------------------|-----------|
-| Modelador [modelo 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) y modelos de sombreador más altos | sí       |
+| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) y modelos de sombreador superiores | Sí       |
 
 
 
@@ -84,7 +84,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[**Funciones intrínsecas (DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md)
+[**Funciones intrínsecas (HLSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md)
 </dt> </dl>
 
  

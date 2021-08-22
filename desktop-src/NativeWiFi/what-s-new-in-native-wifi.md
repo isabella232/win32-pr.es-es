@@ -4,32 +4,32 @@ ms.assetid: 76d60b95-a34a-4747-b0fa-9230aa60bd63
 title: Novedades de Wi-Fi nativo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2126627f4cf6431fbac2bf4d1f6ec58561bfd8bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b4a9430fa2c1645d574f8b4ab851a8cf5ce1407139cfe63a6aabeb3ebfd57abd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119064865"
 ---
 # <a name="whats-new-in-native-wifi"></a>Novedades de Wi-Fi nativo
 
-## <a name="windows-10-version-2004"></a>Windows 10, versión 2004
+## <a name="windows-10-version-2004"></a>Windows 10, versión 2004
 
-Vea [aprovisionar un perfil de Wi-Fi a través de un sitio web](prov-wifi-profile-via-website.md).
+Consulte [Aprovisionamiento de un Wi-Fi a través de un sitio web](prov-wifi-profile-via-website.md).
 
 ## <a name="windows-10"></a>Windows 10
 
-Se ha agregado compatibilidad con la zona activa 2,0 [al \_ esquema de Perfil de WLAN](wlan-profileschema-schema.md). HotSpot 2,0 habilita la conexión automática a los servicios de Wi-Fi públicos mediante las credenciales existentes y la pertenencia a las redes del proveedor de servicios. Los proveedores de servicios especifican cómo se realizan las conexiones con los nuevos elementos de esquema para describir qué redes usar y cómo autenticarse en ellas. Consulte la documentación del elemento [**Hotspot2**](wlan-profileschema-hotspot2-element.md) para obtener más información.
+Se ha agregado compatibilidad con Hotspot 2.0 al esquema [de \_ perfil WLAN.](wlan-profileschema-schema.md) Hotspot 2.0 permite la conexión automática a servicios de Wi-Fi públicos mediante credenciales existentes y pertenencia a redes de proveedor de servicios. Los proveedores de servicios especifican cómo se realizan las conexiones mediante los nuevos elementos de esquema para describir qué redes usar y cómo autenticarse en ellas. Consulte la documentación [**del elemento Hotspot2**](wlan-profileschema-hotspot2-element.md) para obtener más información.
 
 ## <a name="windows-8-and-windows-server-2012"></a>Windows 8 y Windows Server 2012
 
-Se han agregado las siguientes características a las API de WiFi nativas en Windows 8 y Windows Server 2012.
+Se han agregado las siguientes características a las API de Wi-Fi nativas en Windows 8 y Windows Server 2012.
 
-Wi-Fi característica directa basada en el desarrollo de la Wi-Fi especificación técnica punto a punto v 1.1 de la Alianza de Wi-Fi (consulte las [especificaciones publicadas de Wi-Fi Alliance](https://www.wi-fi.org/)). El objetivo de la Wi-Fi especificación técnica punto a punto es proporcionar una solución para Wi-Fi la conectividad de dispositivo a dispositivo sin necesidad de que un punto de acceso inalámbrico (AP inalámbrico) Configure la conexión o el uso del mecanismo de Wi-Fi ad hoc (IBSS) existente.
+Una característica Wi-Fi Direct basada en el desarrollo de la especificación técnica punto a punto de Wi-Fi v1.1 por parte de Wi-Fi Alliance (consulte Especificaciones publicadas de [Wi-Fi Alliance).](https://www.wi-fi.org/) El objetivo de la especificación técnica punto a punto de Wi-Fi es proporcionar una solución para la conectividad de dispositivo Wi-Fi dispositivo sin necesidad de un punto de acceso inalámbrico (AP inalámbrico) para configurar la conexión o el uso del mecanismo Wi-Fi adhoc (IBSS) existente.
 
-Las funciones siguientes admiten la característica Wi-Fi Direct.
+Las siguientes funciones admiten la característica Wi-Fi Direct.
 
--   [**\_devolución de \_ \_ llamada completa de sesión abierta de WFD \_**](/windows/desktop/api/wlanapi/nc-wlanapi-wfd_open_session_complete_callback)
+-   [**DEVOLUCIÓN DE LLAMADA \_ COMPLETA DE SESIÓN ABIERTA \_ \_ \_ DE WFD**](/windows/desktop/api/wlanapi/nc-wlanapi-wfd_open_session_complete_callback)
 -   [**WFDCancelOpenSession**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdcancelopensession)
 -   [**WFDCloseHandle**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdclosehandle)
 -   [**WFDCloseSession**](/windows/desktop/api/wlanapi/nf-wlanapi-wfdclosesession)
@@ -40,11 +40,11 @@ Las funciones siguientes admiten la característica Wi-Fi Direct.
 
 ## <a name="windows-7-and-windows-server-2008-r2"></a>Windows 7 y Windows Server 2008 R2
 
-Se han agregado las siguientes características a las API de WiFi nativas en Windows 7 y Windows Server 2008 R2.
+Se han agregado las siguientes características a las API de Wi-Fi nativas en Windows 7 y Windows Server 2008 R2.
 
-La red hospedada inalámbrica permite a un único adaptador inalámbrico físico conectarse como cliente a un punto de acceso de hardware (AP), al mismo tiempo que actúa como un punto de conexión de software que permite que otros dispositivos compatibles con la red inalámbrica se conecten a él.
+La red hospedada inalámbrica permite que un único adaptador inalámbrico físico se conecte como cliente a un punto de acceso de hardware (AP), al mismo tiempo que actúa como un AP de software que permite que otros dispositivos compatibles con la tecnología inalámbrica se conecten a él.
 
-Las funciones siguientes admiten la característica red hospedada inalámbrica.
+Las siguientes funciones admiten la característica red hospedada inalámbrica.
 
 -   [**WlanHostedNetworkForceStart**](/windows/desktop/api/Wlanapi/nf-wlanapi-wlanhostednetworkforcestart)
 -   [**WlanHostedNetworkForceStop**](/windows/desktop/api/Wlanapi/nf-wlanapi-wlanhostednetworkforcestop)
@@ -59,23 +59,23 @@ Las funciones siguientes admiten la característica red hospedada inalámbrica.
 -   [**WlanHostedNetworkStopUsing**](/windows/desktop/api/Wlanapi/nf-wlanapi-wlanhostednetworkstopusing)
 -   [**WlanRegisterVirtualStationNotification**](/windows/desktop/api/Wlanapi/nf-wlanapi-wlanregistervirtualstationnotification)
 
-Las siguientes estructuras nuevas que funcionan con redes hospedadas inalámbricas.
+Las siguientes estructuras nuevas que funcionan con red hospedada inalámbrica.
 
--   [**\_configuración de \_ conexión de red hospedada de \_ WLAN \_**](/windows/desktop/api/Wlanapi/ns-wlanapi-wlan_hosted_network_connection_settings)
--   [**\_cambio de \_ \_ \_ Estado del mismo nivel de datos \_ hospedados \_ de WLAN**](/windows/desktop/api/Wlanapi/ns-wlanapi-wlan_hosted_network_data_peer_state_change)
--   [**\_ \_ \_ Estado del mismo nivel de red HOSPEDAda de WLAN \_**](/windows/desktop/api/Wlanapi/ns-wlanapi-wlan_hosted_network_peer_state)
--   [**\_Estado de \_ radio de red hospedada de \_ WLAN \_**](/windows/desktop/api/Wlanapi/ns-wlanapi-wlan_hosted_network_radio_state)
--   [**\_configuración de \_ seguridad de red hospedada de \_ WLAN \_**](/windows/desktop/api/Wlanapi/ns-wlanapi-wlan_hosted_network_security_settings)
--   [**\_cambio de \_ Estado de red hospedada de \_ WLAN \_**](/windows/desktop/api/Wlanapi/ns-wlanapi-wlan_hosted_network_state_change)
--   [**\_Estado de \_ red hospedada de WLAN \_**](/windows/desktop/api/Wlanapi/ns-wlanapi-wlan_hosted_network_status)
+-   [**CONFIGURACIÓN DE \_ CONEXIÓN DE \_ RED HOSPEDADA \_ EN \_ WLAN**](/windows/desktop/api/Wlanapi/ns-wlanapi-wlan_hosted_network_connection_settings)
+-   [**CAMBIO \_ DE ESTADO DEL MISMO NIVEL DE DATOS DE RED \_ \_ \_ \_ \_ HOSPEDADA EN WLAN**](/windows/desktop/api/Wlanapi/ns-wlanapi-wlan_hosted_network_data_peer_state_change)
+-   [**ESTADO DEL \_ MISMO NIVEL DE RED \_ \_ HOSPEDADA EN \_ WLAN**](/windows/desktop/api/Wlanapi/ns-wlanapi-wlan_hosted_network_peer_state)
+-   [**ESTADO \_ DE RADIO DE RED \_ \_ HOSPEDADA EN \_ WLAN**](/windows/desktop/api/Wlanapi/ns-wlanapi-wlan_hosted_network_radio_state)
+-   [**CONFIGURACIÓN DE \_ SEGURIDAD DE \_ RED HOSPEDADA \_ EN \_ WLAN**](/windows/desktop/api/Wlanapi/ns-wlanapi-wlan_hosted_network_security_settings)
+-   [**CAMBIO \_ DE ESTADO DE RED \_ \_ HOSPEDADA EN \_ WLAN**](/windows/desktop/api/Wlanapi/ns-wlanapi-wlan_hosted_network_state_change)
+-   [**ESTADO DE \_ RED HOSPEDADA \_ EN WLAN \_**](/windows/desktop/api/Wlanapi/ns-wlanapi-wlan_hosted_network_status)
 
-Las siguientes enumeraciones nuevas que funcionan con redes hospedadas inalámbricas.
+Las siguientes enumeraciones nuevas que funcionan con red hospedada inalámbrica.
 
--   [**\_código de \_ notificación de red hospedada por \_ WLAN \_**](/windows/desktop/api/Wlanapi/ne-wlanapi-wlan_hosted_network_notification_code)
--   [**\_código de \_ operación de red hospedada de WLAN \_**](/windows/desktop/api/Wlanapi/ne-wlanapi-wlan_hosted_network_opcode)
--   [**\_Estado de \_ \_ autenticación del mismo nivel de red HOSPEDAda de WLAN \_ \_**](/windows/desktop/api/Wlanapi/ne-wlanapi-wlan_hosted_network_peer_auth_state)
--   [**\_motivo de \_ red hospedada de WLAN \_**](/windows/desktop/api/Wlanapi/ne-wlanapi-wlan_hosted_network_reason)
--   [**\_Estado de \_ red hospedada de WLAN \_**](/windows/desktop/api/Wlanapi/ne-wlanapi-wlan_hosted_network_state)
+-   [**CÓDIGO DE \_ NOTIFICACIÓN \_ DE RED \_ HOSPEDADA EN \_ WLAN**](/windows/desktop/api/Wlanapi/ne-wlanapi-wlan_hosted_network_notification_code)
+-   [**CÓDIGO \_ DE OPERACIÓN DE RED \_ \_ HOSPEDADA EN WLAN**](/windows/desktop/api/Wlanapi/ne-wlanapi-wlan_hosted_network_opcode)
+-   [**ESTADO DE \_ AUTENTICACIÓN \_ DEL MISMO NIVEL DE RED \_ \_ \_ HOSPEDADA EN WLAN**](/windows/desktop/api/Wlanapi/ne-wlanapi-wlan_hosted_network_peer_auth_state)
+-   [**MOTIVO \_ DE LA RED \_ HOSPEDADA EN WLAN \_**](/windows/desktop/api/Wlanapi/ne-wlanapi-wlan_hosted_network_reason)
+-   [**ESTADO \_ DE RED \_ HOSPEDADA DE WLAN \_**](/windows/desktop/api/Wlanapi/ne-wlanapi-wlan_hosted_network_state)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -84,7 +84,7 @@ Las siguientes enumeraciones nuevas que funcionan con redes hospedadas inalámbr
 [Acerca de la red hospedada inalámbrica](about-the-wireless-hosted-network.md)
 </dt> <dt>
 
-[Uso de redes hospedadas inalámbricas y conexión compartida a Internet](using-hosted-network-and-internet-connection-sharing.md)
+[Uso de redes hospedadas inalámbricas y uso compartido de conexiones a Internet](using-hosted-network-and-internet-connection-sharing.md)
 </dt> </dl>
 
  

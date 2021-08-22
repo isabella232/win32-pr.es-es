@@ -1,27 +1,27 @@
 ---
 title: Estructuras (COM)
 ms.assetid: 07f65855-f529-4d57-81fe-150167a03901
-description: 'Más información acerca de: estructuras (COM)'
+description: 'Más información sobre: Estructuras (COM)'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb4926110161f103e3cdac9f55c17945e58d03fa
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 638d1f4421a5fe70ec8a4ab1fd499f9a6f3c4f7d2883b5e7638edf4687bca8e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129657"
 ---
 # <a name="structures-com"></a>Estructuras (COM)
 
-COM proporciona las siguientes estructuras:
+COM proporciona las estructuras siguientes:
 
--   [**\_acceso a ACTRL**](/windows/win32/api/accctrl/ns-accctrl-actrl_accessa)
--   [**\_entrada de acceso de ACTRL \_**](/windows/desktop/api/AccCtrl/ns-accctrl-actrl_access_entrya)
--   [**\_lista de \_ entradas de acceso de ACTRL \_**](/windows/desktop/api/AccCtrl/ns-accctrl-actrl_access_entry_lista)
--   [**entrada de la \_ propiedad ACTRL \_**](/windows/desktop/api/AccCtrl/ns-accctrl-actrl_property_entrya)
--   [**ENLAZAr \_ OPC**](/windows/win32/api/objidl/ns-objidl-bind_opts)
--   [**ENLAZAr \_ OPTS2**](/windows/win32/api/objidl/ns-objidl-bind_opts2~r1)
--   [**ENLAZAr \_ OPTS3**](/windows/win32/api/objidl/ns-objidl-bind_opts3~r1)
+-   [**ACTRL \_ ACCESS**](/windows/win32/api/accctrl/ns-accctrl-actrl_accessa)
+-   [**ENTRADA DE \_ ACCESO DE \_ ACTRL**](/windows/desktop/api/AccCtrl/ns-accctrl-actrl_access_entrya)
+-   [**ACTRL \_ ACCESS \_ ENTRY \_ LIST**](/windows/desktop/api/AccCtrl/ns-accctrl-actrl_access_entry_lista)
+-   [**ENTRADA DE \_ LA PROPIEDAD \_ ACTRL**](/windows/desktop/api/AccCtrl/ns-accctrl-actrl_property_entrya)
+-   [**BIND \_ OPTS**](/windows/win32/api/objidl/ns-objidl-bind_opts)
+-   [**BIND \_ OPTS2**](/windows/win32/api/objidl/ns-objidl-bind_opts2~r1)
+-   [**BIND \_ OPTS3**](/windows/win32/api/objidl/ns-objidl-bind_opts3~r1)
 -   [**CALLFRAME \_ MARSHALCONTEXT**](/windows/win32/api/callobj/ns-callobj-callframe_marshalcontext)
 -   [**CALLFRAMEINFO**](/windows/win32/api/callobj/ns-callobj-callframeinfo)
 -   [**CALLFRAMEPARAMINFO**](/windows/win32/api/callobj/ns-callobj-callframeparaminfo)
@@ -32,15 +32,15 @@ COM proporciona las siguientes estructuras:
 -   [**COSERVERINFO**](/windows/win32/api/objidlbase/ns-objidlbase-coserverinfo)
 -   [**CSPLATFORM**](/windows/win32/api/wtypes/ns-wtypes-csplatform)
 -   [**INTERFACEINFO**](/windows/win32/api/objidl/ns-objidl-interfaceinfo)
--   [**VARIAS \_ Qi**](/windows/win32/api/objidlbase/ns-objidlbase-multi_qi)
--   [**ORPC \_ dbg \_ All**](orpc-dbg-all.md)
--   [**\_búfer ORPC dbg \_**](orpc-dbg-all.md)
--   [**ORPC \_ init \_ args**](orpc-init-args.md)
+-   [**VARIOS \_ QI**](/windows/win32/api/objidlbase/ns-objidlbase-multi_qi)
+-   [**ORPC \_ DBG \_ ALL**](orpc-dbg-all.md)
+-   [**BÚFER \_ DE DBG DE ORPC \_**](orpc-dbg-all.md)
+-   [**ARGUMENTOS \_ DE ORPC INIT \_**](orpc-init-args.md)
 -   [**QUERYCONTEXT**](/windows/win32/api/wtypes/ns-wtypes-querycontext)
 -   [**RPCOLEMESSAGE**](/windows/win32/api/objidlbase/ns-objidlbase-rpcolemessage)
--   [**\_información de autenticación única \_**](/windows/win32/api/objidlbase/ns-objidlbase-sole_authentication_info)
--   [**\_lista de autenticación única \_**](/windows/win32/api/objidlbase/ns-objidlbase-sole_authentication_list)
--   [**\_servicio de autenticación único \_**](/windows/win32/api/objidlbase/ns-objidlbase-sole_authentication_service)
+-   [**INFORMACIÓN \_ DE \_ AUTENTICACIÓN ÚNICA**](/windows/win32/api/objidlbase/ns-objidlbase-sole_authentication_info)
+-   [**LISTA \_ DE AUTENTICACIÓN \_ ÚNICA**](/windows/win32/api/objidlbase/ns-objidlbase-sole_authentication_list)
+-   [**SERVICIO \_ DE \_ AUTENTICACIÓN ÚNICA**](/windows/win32/api/objidlbase/ns-objidlbase-sole_authentication_service)
 -   [**SOleTlsData**](/previous-versions/windows/desktop/legacy/ms690269(v=vs.85))
 
  

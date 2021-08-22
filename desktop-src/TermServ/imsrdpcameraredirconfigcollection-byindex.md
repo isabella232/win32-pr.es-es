@@ -3,9 +3,9 @@ title: Propiedad ByIndex de la interfaz IMsRdpCameraRedirConfigCollection
 description: Devuelve un objeto IMsRdpCameraRedirConfig por su índice en la colección.
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad ByIndex
-- Propiedad ByIndex Servicios de Escritorio remoto, interfaz IMsRdpCameraRedirConfigCollection
-- Servicios de Escritorio remoto de la interfaz IMsRdpCameraRedirConfigCollection, propiedad ByIndex
+- Propiedad ByIndex Servicios de Escritorio remoto
+- Propiedad ByIndex Servicios de Escritorio remoto , interfaz IMsRdpCameraRedirConfigCollection
+- Interfaz IMsRdpCameraRedirConfigCollection Servicios de Escritorio remoto , propiedad ByIndex
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 12/16/2020
-ms.openlocfilehash: 68c179023e93295ee846da22357d5f8efb75b15c
-ms.sourcegitcommit: 04e801237156e90b48111d60bddf437f87f5cdfe
+ms.openlocfilehash: 375c0b110975c6ca791bbbe1f61a5b597b00316242484cd68ef018b7ef4ea88b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "105720238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138968"
 ---
-# <a name="imsrdpcameraredirconfigcollectionbyindex-property"></a>IMsRdpCameraRedirConfigCollection:: ByIndex (propiedad)
+# <a name="imsrdpcameraredirconfigcollectionbyindex-property"></a>IMsRdpCameraRedirConfigCollection::ByIndex, propiedad
 
-Devuelve un objeto [IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) por su índice en la colección.
+Devuelve un [objeto IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) por su índice en la colección.
 
 Esta propiedad es de solo lectura.
 
@@ -41,7 +41,7 @@ HRESULT get_ByIndex(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-El objeto [IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) que corresponde al índice especificado.
+Objeto [IMsRdpCameraRedirConfig](imsrdpcameraredirconfig.md) que corresponde al índice especificado.
 
 ## <a name="requirements"></a>Requisitos
 

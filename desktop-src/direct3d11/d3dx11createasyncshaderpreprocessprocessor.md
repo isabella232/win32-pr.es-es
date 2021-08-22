@@ -1,6 +1,6 @@
 ---
-title: Función D3DX11CreateAsyncShaderPreprocessProcessor (D3DX11async. h)
-description: Tenga en cuenta que la biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de la tienda Windows. Vea la sección Comentarios. Cree un procesador de datos para un sombreador de forma asincrónica.
+title: Función D3DX11CreateAsyncShaderPreprocessProcessor (D3DX11async.h)
+description: 'Nota: La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios. Cree un procesador de datos para un sombreador de forma asincrónica.'
 ms.assetid: a7e9754b-acc1-49d0-bd8e-b116bc3c7e3a
 keywords:
 - Función D3DX11CreateAsyncShaderPreprocessProcessor Direct3D 11
@@ -15,17 +15,17 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46e58b267f186e5fd0104b10e9f9423f407aaf13
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c1e19d0e4d8c2f722e1de882cb265ec6df4e206c5d845f535643c07feb672a1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124890"
 ---
-# <a name="d3dx11createasyncshaderpreprocessprocessor-function"></a>D3DX11CreateAsyncShaderPreprocessProcessor función)
+# <a name="d3dx11createasyncshaderpreprocessprocessor-function"></a>Función D3DX11CreateAsyncShaderPreprocessProcessor
 
 > [!Note]  
-> La biblioteca de utilidades de D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para aplicaciones de la tienda Windows. Vea la sección Comentarios.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.
 
  
 
@@ -51,7 +51,7 @@ HRESULT D3DX11CreateAsyncShaderPreprocessProcessor(
 
 <dl> <dt>
 
-*pFileName* \[ de\]
+*pFileName* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](/windows/desktop/WinProg/windows-data-types)**
@@ -60,25 +60,25 @@ Cadena que contiene el nombre de archivo del sombreador.
 
 </dd> <dt>
 
-*pDefines* \[ de\]
+*pDefines* \[ En\]
 </dt> <dd>
 
-Tipo: **D3D11 de \_ sombreador \_ \* const**
+Tipo: **const D3D11 \_ SHADER \_ MACRO \***
 
-Una matriz terminada en NULL de macros de sombreador; Establezca este **valor en NULL** para no especificar ninguna macro.
+Matriz terminada en NULL de macros de sombreador; establezca esta opción **en NULL** para no especificar macros.
 
 </dd> <dt>
 
-*pInclude* \[ de\]
+*pInclude* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **LPD3D10INCLUDE**](/previous-versions/windows/desktop/legacy/bb173775(v=vs.85))**
 
-Puntero a una interfaz de inclusión; Establezca este **valor en NULL** para especificar que no hay ningún archivo de inclusión.
+Puntero a una interfaz include; establezca esta opción **en NULL** para especificar que no hay ningún archivo de incluir.
 
 </dd> <dt>
 
-*ppShaderText* \[ enuncia\]
+*ppShaderText* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/desktop/api/d3dcommon/nn-d3dcommon-id3d10blob)\*\***
@@ -87,7 +87,7 @@ Dirección de un puntero a un búfer que contiene el texto ASCII del sombreador.
 
 </dd> <dt>
 
-*ppErrorBuffer* \[ enuncia\]
+*ppErrorBuffer* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Blob**](/windows/desktop/api/d3dcommon/nn-d3dcommon-id3d10blob)\*\***
@@ -96,12 +96,12 @@ Dirección de un puntero a un búfer que contiene errores de compilación.
 
 </dd> <dt>
 
-*ppDataProcessor* \[ enuncia\]
+*ppDataProcessor* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX11DataProcessor**](id3dx11dataprocessor.md)\*\***
 
-Dirección de un puntero a un búfer que contiene el procesador de datos creado (vea la [**interfaz ID3DX11DataProcessor**](id3dx11dataprocessor.md)).
+Dirección de un puntero a un búfer que contiene el procesador de datos creado (vea [**ID3DX11DataProcessor Interface**](id3dx11dataprocessor.md)).
 
 </dd> </dl>
 
@@ -109,15 +109,15 @@ Dirección de un puntero a un búfer que contiene el procesador de datos creado 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El valor devuelto es uno de los valores que se muestran en [códigos de retorno de Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 No hay ninguna implementación del cargador asincrónico fuera de D3DX 10 y D3DX 11.
 
-En el caso de las aplicaciones de la tienda Windows, los ejemplos de DirectX (por ejemplo, el [ejemplo de tutorial de Direct3D](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample)) incluyen el módulo **BasicLoader** que usa el modelo de programación asincrónica Windows Runtime ([**AsyncBase**](/previous-versions/visualstudio/visual-studio-2012/br244878(v=vs.110))).
+Para Windows Store, los ejemplos de DirectX (por ejemplo, el ejemplo de tutorial de [Direct3D)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample)incluyen el módulo **BasicLoader** que usa el modelo de programación asincrónica de Windows Runtime [**(AsyncBase).**](/previous-versions/visualstudio/visual-studio-2012/br244878(v=vs.110))
 
-En el caso de las aplicaciones de escritorio de Win32, puede usar la [Runtime de simultaneidad](/previous-versions/visualstudio/visual-studio-2010/ee207192(v=vs.100)) para implementar algo similar a la Windows Runtime modelo de programación asincrónica.
+En el caso de las aplicaciones de escritorio win32, puede usar el Runtime de simultaneidad [para](/previous-versions/visualstudio/visual-studio-2010/ee207192(v=vs.100)) implementar algo similar al modelo de programación asincrónica de Windows Runtime.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -125,8 +125,8 @@ En el caso de las aplicaciones de escritorio de Win32, puede usar la [Runtime de
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX11async. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX11. lib</dt> </dl>    |
+| Encabezado<br/>  | <dl> <dt>D3DX11async.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX11.lib</dt> </dl>    |
 
 
 
@@ -134,7 +134,7 @@ En el caso de las aplicaciones de escritorio de Win32, puede usar la [Runtime de
 
 <dl> <dt>
 
-[Funciones de D3DX](d3d11-graphics-reference-d3dx11-functions.md)
+[Funciones D3DX](d3d11-graphics-reference-d3dx11-functions.md)
 </dt> </dl>
 
  

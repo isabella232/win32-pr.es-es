@@ -1,9 +1,9 @@
 ---
 title: Atributo UserLastPlayedTime
-description: El atributo UserLastPlayedTime es la fecha y hora en que se reprodujo el elemento por última vez.
+description: El atributo UserLastPlayedTime es la fecha y hora en que se ha reproducido el elemento más recientemente.
 ms.assetid: 29d432fa-b17a-4a99-a937-20708652a942
 keywords:
-- UserLastPlayedTime Media Player de Windows
+- Atributo UserLastPlayedTime Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,29 +12,29 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85fb7759c5e235575935df642f6fa1cfd53202a5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c5fdff7ad1c1e129da2de930f786d995cb8eab4c9d6ba6b58847303721980ab4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134418"
 ---
 # <a name="userlastplayedtime-attribute"></a>Atributo UserLastPlayedTime
 
-El atributo **UserLastPlayedTime** es la fecha y hora en que se reprodujo el elemento por última vez.
+El **atributo UserLastPlayedTime** es la fecha y hora en que se ha reproducido el elemento más recientemente.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de audio](audio-item-attributes.md)
 -   [Otros elementos](other-item-attributes.md)
--   [Reproducción](playlist-attributes-ref.md)
+-   [Listas](playlist-attributes-ref.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo solo se almacena en la biblioteca.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -42,7 +42,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -50,7 +50,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

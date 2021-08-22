@@ -1,6 +1,6 @@
 ---
-title: Constante de nivel (ADOMD. h)
-description: Contiene el valor del nivel que se utilizará en los eventos de inicio y detención de la actividad.
+title: Constante de nivel (Adomd.h)
+description: Contiene el valor del nivel que se usará en los eventos start y stop de la actividad.
 ms.assetid: DBBBE6C8-B952-493F-AE98-89D54536F1E5
 topic_type:
 - apiref
@@ -12,20 +12,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0350aadc74eaf16a6dbe493d64e941453a67a145
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d9b87db1e3c12f23d0df959664638f707388d0458895d755879ed69a9fefddd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105658313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119091364"
 ---
-# <a name="level-constant"></a>LEVEL (constante)
+# <a name="level-constant"></a>Constante de nivel
 
-Contiene el valor del nivel que se utilizará en los eventos de inicio y detención de la actividad.
+Contiene el valor del nivel que se usará en los eventos start y stop de la actividad.
 
 <dl> <dt>
 
-<span id="Level"></span><span id="level"></span><span id="LEVEL"></span>**Dosis**
+<span id="Level"></span><span id="level"></span><span id="LEVEL"></span>**Nivel**
 </dt> <dd> <dl> <dt>
 
 UINT8
@@ -33,7 +33,7 @@ UINT8
 
 
 
-El valor del nivel que se usará en los eventos de inicio y detención de la actividad.
+Valor del nivel que se usará en los eventos start y stop de la actividad.
 
 
 </dt> </dl> </dd> </dl>
@@ -42,11 +42,11 @@ El valor del nivel que se usará en los eventos de inicio y detención de la act
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                                            |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                                   |
-| Encabezado<br/>                   | <dl> <dt>ADOMD. h (incluir Traceloggingactivity. h)</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                                   |
+| Header<br/>                   | <dl> <dt>Adomd.h (incluir Traceloggingactivity.h)</dt> </dl> |
 
 
 

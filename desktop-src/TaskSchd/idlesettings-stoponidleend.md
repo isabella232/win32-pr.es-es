@@ -1,11 +1,11 @@
 ---
-title: Propiedad IdleSettings. StopOnIdleEnd
-description: Para scripting, obtiene o establece un valor booleano que indica que el Programador de tareas finalizará la tarea si la condición de inactividad finaliza antes de que se complete la tarea.
+title: Propiedad IdleSettings.StopOnIdleEnd
+description: Para el scripting, obtiene o establece un valor booleano que indica que el Programador de tareas finalizará la tarea si la condición de inactividad finaliza antes de que se complete la tarea.
 ms.assetid: 5908bf6b-227a-4234-a741-82cf38163171
 keywords:
-- Programador de tareas de la propiedad StopOnIdleEnd
-- Programador de tareas de la propiedad StopOnIdleEnd, objeto IdleSettings
-- Programador de tareas de objeto IdleSettings, propiedad StopOnIdleEnd
+- Propiedad StopOnIdleEnd Programador de tareas
+- Propiedad StopOnIdleEnd Programador de tareas , objeto IdleSettings
+- Objeto IdleSettings Programador de tareas , propiedad StopOnIdleEnd
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e3f475c0a05d43cf0fbdd7097c1ee083f9040b07
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b4e34e95483d382b9fbb97596a7172c94a1a047bfbec0856a3ea17befc1459bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119139438"
 ---
-# <a name="idlesettingsstoponidleend-property"></a>Propiedad IdleSettings. StopOnIdleEnd
+# <a name="idlesettingsstoponidleend-property"></a>Propiedad IdleSettings.StopOnIdleEnd
 
-Para scripting, obtiene o establece un valor booleano que indica que el Programador de tareas finalizará la tarea si la condición de inactividad finaliza antes de que se complete la tarea.
+Para el scripting, obtiene o establece un valor booleano que indica que el Programador de tareas finalizará la tarea si la condición de inactividad finaliza antes de que se complete la tarea.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -38,11 +38,11 @@ IdleSettings.StopOnIdleEnd As Boolean
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un valor booleano que indica que el Programador de tareas finalizará la tarea si la condición de inactividad finaliza antes de que se complete la tarea.
+Valor booleano que indica que el Programador de tareas finalizará la tarea si la condición de inactividad finaliza antes de que se complete la tarea.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al leer o escribir XML para una tarea, esta configuración se especifica en el elemento [**StopOnIdleEnd**](taskschedulerschema-terminateonidleend-idlesettingstype-element.md) del esquema de programador de tareas.
+Al leer o escribir XML para una tarea, esta configuración se especifica en el [**elemento StopOnIdleEnd**](taskschedulerschema-terminateonidleend-idlesettingstype-element.md) del Programador de tareas esquema.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,9 +50,9 @@ Al leer o escribir XML para una tarea, esta configuración se especifica en el e
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

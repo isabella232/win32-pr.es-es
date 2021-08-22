@@ -1,21 +1,21 @@
 ---
-description: La mayoría de los tipos de contadores usan una fórmula para calcular un valor que se pueda mostrar para el contador.
+description: La mayoría de los tipos de contador usan una fórmula para calcular un valor que se puede mostrar para el contador.
 ms.assetid: b65a6874-fffb-41af-8620-27d4036cc7b2
 title: Cálculo de valores de contadores
 ms.topic: article
 ms.date: 08/17/2020
-ms.openlocfilehash: c37c5cf128d31011f184baaa6b8543ecfa8c48c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 466c4e4066b0e45fa36a2822ef1439617be545585fd56a5cba8fb664e91f5cc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105667345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061253"
 ---
 # <a name="calculating-counter-values"></a>Cálculo de valores de contadores
 
-La mayoría de los tipos de contadores usan una fórmula para calcular un valor que se pueda mostrar para el contador. Para obtener una lista de los tipos de contador y sus fórmulas, vea la sección tipos de contador del [Kit de implementación de Windows Server 2003](/previous-versions/windows/it-pro/windows-server-2003/cc776490(v=ws.10)). Si el contador requiere dos ejemplos para calcular el valor que se va a mostrar, se establece la marca del tipo de contador `PERF_DELTA_COUNTER` .
+La mayoría de los tipos de contador usan una fórmula para calcular un valor que se puede mostrar para el contador. Para obtener una lista de los tipos de contador y sus fórmulas, vea la sección Tipos de contadores del Kit de implementación de [Windows Server 2003](/previous-versions/windows/it-pro/windows-server-2003/cc776490(v=ws.10)). Si el contador requiere dos ejemplos para calcular el valor que se puede mostrar, se establece la marca del `PERF_DELTA_COUNTER` tipo de contador.
 
-En el ejemplo siguiente se muestra cómo usar los datos sin procesar para calcular un valor que se pueda mostrar para cada tipo de contador. Este ejemplo se basa en el ejemplo de [recuperación de datos de contador](retrieving-counter-data.md).
+En el ejemplo siguiente se muestra cómo usar los datos sin procesar para calcular un valor que se puede mostrar para cada tipo de contador. Este ejemplo se basa en el ejemplo de [Recuperación de datos de contador](retrieving-counter-data.md).
 
 ```C
 // Contains the elements required to calculate a counter value.

@@ -1,7 +1,7 @@
 ---
-description: La \_ estructura MXDC S0PAGE \_ PASSTHROUGH \_ escape \_ t es una \_ estructura de encabezado de escape MXDC que se \_ \_ concatena con una estructura MXDC \_ S0PAGE \_ Data \_ t.
+description: La estructura MXDC S0PAGE PASSTHROUGH ESCAPE T es una estructura MXDC ESCAPE HEADER T concatenada con una estructura \_ \_ \_ \_ \_ \_ \_ \_ MXDC S0PAGE \_ DATA \_ T.
 ms.assetid: 949c1ed4-92d5-4c11-a7da-f9d94bafe3f8
-title: MXDC_S0PAGE_PASSTHROUGH_ESCAPE_T estructura (Mxdc. h)
+title: MXDC_S0PAGE_PASSTHROUGH_ESCAPE_T estructura (Mxdc.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - mxdc.h
-ms.openlocfilehash: 7c1a8370d2cfa1ada9fda2d2d99b9fe500b79d31
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f8e0a46766f38aec16758a1efc9c0cbc775c2131b1279dcc47f92ed41e77c0e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119099059"
 ---
-# <a name="mxdc_s0page_passthrough_escape_t-structure"></a>MXDC \_ S0PAGE \_ PASSTHROUGH \_ escape \_ T Structure
+# <a name="mxdc_s0page_passthrough_escape_t-structure"></a>Estructura DE ESCAPE DE PASO A \_ TRAVÉS DE PÁGINA S0PAGE \_ \_ \_ de MXDC
 
-La estructura **MXDC \_ S0PAGE \_ PASSTHROUGH \_ escape \_ t** es una estructura de [**\_ \_ encabezado \_ de escape MXDC**](mxdcescapeheader.md) que se concatena con una estructura [**MXDC \_ S0PAGE \_ Data \_ t**](mxdcs0pagedata.md) .
+La **estructura MXDC \_ S0PAGE \_ PASSTHROUGH ESCAPE \_ \_ T** es una estructura [**MXDC ESCAPE HEADER \_ \_ \_ T**](mxdcescapeheader.md) concatenada con una estructura [**\_ MXDC S0PAGE \_ DATA \_ T.**](mxdcs0pagedata.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,20 +43,20 @@ typedef struct tagMxdcS0PagePassthroughEscape {
 **mxdcEscape**
 </dt> <dd>
 
-Una estructura de [**\_ encabezado de escape MXDC \_ \_ T**](mxdcescapeheader.md) con su miembro **opCode** establecida en **MXDCOP \_ set \_ S0PAGE**.
+Estructura [**MXDC \_ ESCAPE HEADER \_ \_ T**](mxdcescapeheader.md) con su **miembro opCode** establecido en **MXDCOP \_ SET \_ S0PAGE**.
 
 </dd> <dt>
 
 **xpsS0PageData**
 </dt> <dd>
 
-Una estructura [**MxdcS0PageData**](mxdcs0pagedata.md) que representa una página de documento XPS.
+Estructura [**MxdcS0PageData**](mxdcs0pagedata.md) que representa una página XPS-document.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura se pasa en el parámetro *lpszInData* de la función [**ExtEscape**](/windows/desktop/api/Wingdi/nf-wingdi-extescape) cuando se llama con el escape [**de \_ escape MXDC**](mxdc-escape.md) y el miembro **opCode** de la estructura [**MXDC de encabezado de \_ escape \_ \_ T**](mxdcescapeheader.md) es **MXDCOP \_ set \_ S0PAGE**. El resultado es que el convertidor de documentos XML de Microsoft (MXDC) pasa la página a la impresora sin procesarla.
+Esta estructura se pasa en el parámetro *lpszInData* de la función [**ExtEscape**](/windows/desktop/api/Wingdi/nf-wingdi-extescape) cuando se llama con el escape ESCAPE de [**\_ MXDC**](mxdc-escape.md) y el **miembro opCode** de la estructura [**MXDC ESCAPE HEADER \_ \_ \_ T**](mxdcescapeheader.md) es **MXDCOP \_ SET \_ S0PAGE**. El resultado es que el Convertidor de documentos XML de Microsoft (MXDC) pasa la página a la impresora sin procesarla.
 
 Asigne memoria para el escape como se muestra a continuación, establezca los campos según sea necesario y, a continuación, llame a [**ExtEscape**](/windows/desktop/api/Wingdi/nf-wingdi-extescape).
 
@@ -82,28 +82,28 @@ La llamada a [**ExtEscape**](/windows/desktop/api/Wingdi/nf-wingdi-extescape) de
 
 La aplicación que realiza la llamada es responsable de validar el XML de la página del documento XPS.
 
-El consumo de streaming es más eficaz si se llama a [**ExtEscape**](/windows/desktop/api/Wingdi/nf-wingdi-extescape) con **MXDCOP \_ set \_ S0PAGE \_ Resource** como **opCode** para cada recurso de la página antes de llamarlo con **MXDCOP \_ set \_ S0PAGE**.
+El consumo de streaming es más eficaz si llama a [**ExtEscape**](/windows/desktop/api/Wingdi/nf-wingdi-extescape) con **MXDCOP \_ SET \_ S0PAGE \_ RESOURCE** como **opCode** para cada recurso de la página antes de llamarlo con **MXDCOP \_ SET \_ S0PAGE**.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                              |
-| Encabezado<br/>                   | <dl> <dt>Mxdc. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                              |
+| Header<br/>                   | <dl> <dt>Mxdc.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de API del colador de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [Funciones de escape de impresora GDI](/previous-versions/windows/desktop/legacy/dd162843(v=vs.85))
@@ -112,7 +112,7 @@ El consumo de streaming es más eficaz si se llama a [**ExtEscape**](/windows/de
 [**ExtEscape**](/windows/desktop/api/Wingdi/nf-wingdi-extescape)
 </dt> <dt>
 
-[**\_escape MXDC**](mxdc-escape.md)
+[**MXDC \_ ESCAPE**](mxdc-escape.md)
 </dt> </dl>
 
  

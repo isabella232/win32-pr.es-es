@@ -1,19 +1,19 @@
 ---
-title: Movimiento de IAgentNotifySink
-description: Movimiento de IAgentNotifySink
+title: IAgentNotifySink Move
+description: IAgentNotifySink Move
 ms.assetid: d1809fdb-df4b-4884-b9e8-2877a814dc9a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 52563ff3838348b7bf8e6a2bcdfdf20a51c79723
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a16f32df3058a5b5c8e0a4e02a98f9a97afdbff56f349a63fceb5d70a9001391
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105189"
 ---
-# <a name="iagentnotifysinkmove"></a>IAgentNotifySink:: Move
+# <a name="iagentnotifysinkmove"></a>IAgentNotifySink::Move
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT Move(
@@ -24,7 +24,7 @@ HRESULT Move(
 );                          
 ```
 
-Notifica a una aplicación cliente cuando se ha cambiado el carácter.
+Notifica a una aplicación cliente cuando se ha movido el carácter.
 
 -   No de devuelve ningún valor.
 
@@ -33,38 +33,38 @@ Notifica a una aplicación cliente cuando se ha cambiado el carácter.
 <span id="dwCharID"></span><span id="dwcharid"></span><span id="DWCHARID"></span>*dwCharID*
 </dt> <dd>
 
-Identificador del carácter que se ha despasado.
+Identificador del carácter que se ha movido.
 
 </dd> <dt>
 
-<span id="x"></span><span id="X"></span>*x1*
+<span id="x"></span><span id="X"></span>*X*
 </dt> <dd>
 
-Coordenada x de la nueva posición en píxeles, con respecto al origen de la pantalla (superior izquierda). La ubicación de un carácter se basa en la esquina superior izquierda de su fotograma de animación.
+Coordenada x de la nueva posición en píxeles, con respecto al origen de la pantalla (parte superior izquierda). La ubicación de un carácter se basa en la esquina superior izquierda de su marco de animación.
 
 </dd> <dt>
 
-<span id="y"></span><span id="Y"></span>*sí*
+<span id="y"></span><span id="Y"></span>*y*
 </dt> <dd>
 
-Coordenada y de la nueva posición en píxeles, con respecto al origen de la pantalla (superior izquierda). La ubicación de un carácter se basa en la esquina superior izquierda de su fotograma de animación.
+Coordenada y de la nueva posición en píxeles, con respecto al origen de la pantalla (parte superior izquierda). La ubicación de un carácter se basa en la esquina superior izquierda de su marco de animación.
 
 </dd> <dt>
 
 <span id="dwCause"></span><span id="dwcause"></span><span id="DWCAUSE"></span>*dwCause*
 </dt> <dd>
 
-Causa del movimiento del carácter. El parámetro puede ser uno de los siguientes:
+La causa del movimiento de caracteres. El parámetro puede ser uno de los siguientes:
 
 
 
-| Value                                                          | Descripción                                                                          |
+| Valor                                                          | Descripción                                                                          |
 |----------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| **const unsigned short** **NeverMoved = 0;**<br/>        | No se ha despasado el carácter.                                                        |
+| **const unsigned short** **NeverMoved = 0;**<br/>        | El carácter no se ha movido.                                                        |
 | **const unsigned short** **UserMoved = 1;**<br/>         | El usuario arrastró el carácter.                                                          |
-| **const unsigned short** **ProgramMoved = 2;**<br/>      | La aplicación ha cambiado el carácter.                                                |
-| **const unsigned short** **OtherProgramMoved = 3;**<br/> | Otra aplicación ha cambiado el carácter.                                             |
-| **const unsigned short** **SystemMoved = 4**<br/>        | El servidor ha quitado el carácter para mantenerlo en la pantalla después de un cambio en la resolución de pantalla. |
+| **const unsigned short** **ProgramMoved = 2;**<br/>      | La aplicación movió el carácter.                                                |
+| **const unsigned short** **OtherProgramMoved = 3;**<br/> | Otra aplicación movió el carácter.                                             |
+| **const unsigned short** **SystemMoved = 4**<br/>        | El servidor movió el carácter para mantenerlo en pantalla después de un cambio de resolución de pantalla. |
 
 
 
@@ -76,7 +76,7 @@ Este evento se envía a todos los clientes del carácter.
 
 ## <a name="see-also"></a>Consulte también
 
-[**IAgentCharacter:: GetMoveCause**](iagentcharacter--getmovecause.md), [ **IAgentCharacter:: moveTo**](iagentcharacter--moveto.md)
+[**IAgentCharacter::GetMoveCause**](iagentcharacter--getmovecause.md), [ **IAgentCharacter::MoveTo**](iagentcharacter--moveto.md)
 
 
  

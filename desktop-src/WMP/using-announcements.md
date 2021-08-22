@@ -1,12 +1,12 @@
 ---
-title: Usar anuncios
-description: Usar anuncios
+title: Uso de anuncios
+description: Uso de anuncios
 ms.assetid: c372a4f8-2355-4c69-bba2-72b224879c4d
 keywords:
-- Listas de reproducción de metarchivos de Windows Media, anuncios
+- Windows Listas de reproducción de metarchivo multimedia, anuncios
 - listas de reproducción, anuncios
-- listas de reproducción de metarchivos, anuncios
-- Media Player de Windows, anuncios
+- listas de reproducción de metarchivo, anuncios
+- Reproductor de Windows Media, anuncios
 - anuncios
 ms.topic: article
 ms.date: 05/31/2018
@@ -15,18 +15,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0c16fafee1984d08992b96c39d7c3893ea54f682
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 24408211f6ce708d380406026de45be0cce86521fdc188aaaf785ccf03790c9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105704625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134388"
 ---
-# <a name="using-announcements"></a>Usar anuncios
+# <a name="using-announcements"></a>Uso de anuncios
 
-Un anuncio es un archivo que contiene información sobre la dirección URL de una secuencia multimedia, incluida la dirección IP de multidifusión, el puerto, el formato de secuencia y otras configuraciones de la estación. Los anuncios los crea el administrador de Windows Media cuando se crea una secuencia de publicación de unidifusión o multidifusión. El cliente puede cargar rápidamente el archivo de anuncio y, después, continuar para acceder al archivo multimedia de streaming.
+Un anuncio es un archivo que contiene información sobre la dirección URL de una secuencia multimedia, incluida la dirección IP de multidifusión, el puerto, el formato de secuencia y otras configuraciones de estación. Los anuncios los crea el Windows multimedia cuando se crea una secuencia de publicación de unidifusión o multidifusión. El cliente puede cargar rápidamente el archivo de anuncio y, a continuación, continuar para acceder al archivo multimedia de streaming.
 
-En el caso de un punto de publicación de unidifusión, se abre la secuencia de medios del punto de publicación. En el caso de un punto de publicación de multidifusión, se extrae la dirección URL de un archivo de la estación de difusión con una extensión. NSC y se tiene acceso a los medios de streaming. A diferencia de una secuencia de unidifusión, no hay información de encabezado en una secuencia de multidifusión. Esa información procede del archivo de la estación de difusión con una extensión. NSC. Windows Media Player suele abrir primero un archivo de anuncio, que es un uso para listas de reproducción de metarchivos, que apunta a la ubicación del archivo de la estación de difusión.
+Para un punto de publicación de unidifusión, se abre la secuencia multimedia del punto de publicación. Para un punto de publicación de multidifusión, la dirección URL se extrae de un archivo de estación de difusión con una extensión .nsc y se accede a los medios de streaming. A diferencia de una secuencia de unidifusión, no hay información de encabezado contenida en una secuencia de multidifusión. Esa información procede del archivo de estación de difusión con una extensión .nsc. Reproductor de Windows Media abre primero un archivo de anuncio, que es un uso para las listas de reproducción de metarchivo, que apunta a la ubicación del archivo de estación de difusión.
 
 Código de ejemplo
 
@@ -47,15 +47,15 @@ Código de ejemplo
 
 <dl> <dt>
 
-[**Crear listas de reproducción de metarchivo**](creating-metafile-playlists.md)
+[**Creación de listas de reproducción de metarchivo**](creating-metafile-playlists.md)
 </dt> <dt>
 
-[**Usar listas de reproducción de metarchivo**](using-metafile-playlists.md)
+[**Uso de listas de reproducción de metarchivo**](using-metafile-playlists.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

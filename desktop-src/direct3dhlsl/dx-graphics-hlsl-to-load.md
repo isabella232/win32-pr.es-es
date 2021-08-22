@@ -1,6 +1,6 @@
 ---
-title: Load (objeto de textura de HLSL de DirectX)
-description: Lee los datos de textura sin ningún filtrado ni muestreo.
+title: Cargar (objeto de textura HLSL de DirectX)
+description: Lee datos de textura sin ningún filtrado ni muestreo.
 ms.assetid: a2fbda88-29c7-4d28-bd3e-df1d9aa36ee8
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,31 +9,31 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 08d3964788a238492ff7d5189544603b35808465
-ms.sourcegitcommit: 4c00910ed754d7d0a68c9a833751d714c06e3b39
+ms.openlocfilehash: ba394fb13fd98793401b29e6343ef4fa9ff0194b7a86f22dda1e58439737b34b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "104151935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119869"
 ---
-# <a name="load-directx-hlsl-texture-object"></a>Load (objeto de textura de HLSL de DirectX)
+# <a name="load-directx-hlsl-texture-object"></a>Cargar (objeto de textura HLSL de DirectX)
 
-Lee los datos de textura sin ningún filtrado ni muestreo.
+Lee datos de textura sin ningún filtrado ni muestreo.
 
 
 
 <table>
 <tbody>
 <tr class="odd">
-<td>RET Object. Load (<dl> Ubicación typeX,<br />
+<td>ret Object.Load(<dl> typeX Location,<br />
 [typeX SampleIndex, ]<br />
-[desplazamiento de typeX]<br />
+[typeX Offset ]<br />
 </dl>);</td>
 </tr>
 </tbody>
 </table>
 
-typeX denota que hay cuatro tipos posibles: **int**, **INT2**, **INT3** o **INT4**.
+typeX indica que hay cuatro tipos posibles: **int**, **int2,** **int3** o **int4.**
 
  
 
@@ -44,14 +44,14 @@ typeX denota que hay cuatro tipos posibles: **int**, **INT2**, **INT3** o **INT4
 <span id="Object"></span><span id="object"></span><span id="OBJECT"></span>*Objeto*
 </dt> <dd>
 
-Un tipo [de objeto de textura](dx-graphics-hlsl-to-type.md) (excepto TextureCube o TextureCubeArray).
+Un [tipo de objeto de](dx-graphics-hlsl-to-type.md) textura (excepto TextureCube o TextureCubeArray).
 
 </dd> <dt>
 
-<span id="Location"></span><span id="location"></span><span id="LOCATION"></span>*Cód*
+<span id="Location"></span><span id="location"></span><span id="LOCATION"></span>*Ubicación*
 </dt> <dd>
 
-\[en \] las coordenadas de textura; el último componente especifica el nivel de mipmap. Este método usa un sistema de coordenadas basado en 0 y no un sistema UV 0,0-1,0. El tipo de argumento depende del tipo de objeto de textura.
+\[en \] Coordenadas de textura; el último componente especifica el nivel de mapa mip. Este método usa un sistema de coordenadas basado en 0 y no un sistema UV 0.0-1.0. El tipo de argumento depende del tipo texture-object.
 
 
 
@@ -66,10 +66,10 @@ Un tipo [de objeto de textura](dx-graphics-hlsl-to-type.md) (excepto TextureCube
 
  
 
-Por ejemplo, para tener acceso a una textura 2D, proporcione coordenadas UV para los dos primeros componentes y un nivel de mipmap para el tercer componente.
+Por ejemplo, para acceder a una textura 2D, proporcione coordenadas UV para los dos primeros componentes y un nivel de mapa mip para el tercer componente.
 
 > [!Note]  
-> Cuando una o varias de las coordenadas de la *Ubicación* superan las dimensiones del nivel de mipmap u, v o w de la textura, **Load** devuelve cero en todos los componentes. Direct3D garantiza que se devuelva cero para cualquier recurso al que se tenga acceso fuera de los límites.
+> Cuando una o varias de las coordenadas de *Ubicación* superan las dimensiones de nivel mipmap u, v o w de la textura, **Load** devuelve cero en todos los componentes. Direct3D garantiza que se devuelva cero para cualquier recurso al que se acceda fuera de los límites.
 
  
 
@@ -78,30 +78,30 @@ Por ejemplo, para tener acceso a una textura 2D, proporcione coordenadas UV para
 <span id="SampleIndex"></span><span id="sampleindex"></span><span id="SAMPLEINDEX"></span>*SampleIndex*
 </dt> <dd>
 
-\[en \] un índice de muestreo opcional.
+\[en \] Un índice de muestreo opcional.
 
 
 
 | Tipo de textura                                                                                                   | Tipo de parámetro |
 |----------------------------------------------------------------------------------------------------------------|----------------|
 | Texture1D, Texture1DArray, Texture2D, Texture2DArray, Texture3D, Texture2DArray, TextureCube, TextureCubeArray | no admitido  |
-| Texture2DMS, Texture2DMSArray ¹                                                                                 | int            |
+| Texture2DMS, Texture2DMSArray¹                                                                                 | int            |
 
 
 
  
 
 > [!Note]  
-> *SampleIndex* solo está disponible para las texturas de varios ejemplos.
+> *SampleIndex* solo está disponible para texturas de varias muestras.
 
  
 
 </dd> <dt>
 
-<span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span>*Posición*
+<span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span>*Compensar*
 </dt> <dd>
 
-\[en \] un desplazamiento opcional aplicado a las coordenadas de textura antes del muestreo. El tipo de desplazamiento depende del tipo de objeto de textura y debe ser estático.
+\[en \] Un desplazamiento opcional aplicado a las coordenadas de textura antes del muestreo. El tipo de desplazamiento depende del tipo de objeto de textura y debe ser estático.
 
 
 
@@ -116,7 +116,7 @@ Por ejemplo, para tener acceso a una textura 2D, proporcione coordenadas UV para
  
 
 > [!Note]  
-> Si usa *offset* con texturas de varios ejemplos, también debe especificar *SampleIndex*.
+> Si usa Offset *con* texturas de varias muestras, también debe especificar *SampleIndex*.
 
  
 
@@ -124,15 +124,15 @@ Por ejemplo, para tener acceso a una textura 2D, proporcione coordenadas UV para
 
 ## <a name="return-value"></a>Valor devuelto
 
-El tipo de valor devuelto coincide con el tipo en la declaración del *objeto* . Por ejemplo, un objeto Texture2D que se declaró como "Texture2d <uint4> de la cartexture;" tiene un valor devuelto de tipo **uint4**.
+El tipo de valor devuelto coincide con el tipo de la *declaración object.* Por ejemplo, un objeto Texture2D que se declaró como "Texture2d myTexture;" tiene un valor devuelto de <uint4> tipo **uint4**.
 
-## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
 Esta función se admite en los siguientes modelos de sombreador.
 
 
 
-| vs \_ 4 \_ 0 | vs \_ 4 \_ 1 ¹ | PS \_ 4 \_ 0 | PS \_ 4 \_ 1 ¹ | GS \_ 4 \_ 0 | GS \_ 4 \_ 1 ¹ |
+| vs \_ 4 \_ 0 | vs \_ 4 \_ 1¹ | ps \_ 4 \_ 0 | ps \_ 4 \_ 1¹ | gs \_ 4 \_ 0 | gs \_ 4 \_ 1¹ |
 |----------|-----------|----------|-----------|----------|-----------|
 | x        | x         | x        | x         | x        | x         |
 
@@ -140,11 +140,11 @@ Esta función se admite en los siguientes modelos de sombreador.
 
  
 
--   El modelo de sombreador 4,1 está disponible en Direct3D 10,1 o superior.
+-   Shader Model 4.1 está disponible en Direct3D 10.1 o posterior.
 
 ## <a name="example"></a>Ejemplo
 
-Este ejemplo de código parcial procede del archivo Paint. FX en el [ejemplo AdvancedParticles](https://msdn.microsoft.com/library/Ee416394(v=VS.85).aspx).
+Este ejemplo de código parcial es del archivo Paint.fx del [ejemplo AdvancedParticles](https://msdn.microsoft.com/library/Ee416394(v=VS.85).aspx).
 
 
 ```
@@ -173,7 +173,7 @@ float4 PSPaint(PSQuadIn input) : SV_Target
 
 <dl> <dt>
 
-[Texture-objeto](dx-graphics-hlsl-to-type.md)
+[Texture-Object](dx-graphics-hlsl-to-type.md)
 </dt> </dl>
 
  

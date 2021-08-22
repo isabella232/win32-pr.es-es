@@ -1,5 +1,5 @@
 ---
-description: Define el modo blend admitido.
+description: Define el modo de mezcla admitido.
 ms.assetid: 60ff384c-15a0-4c6f-9e2c-59fdea76b7a1
 title: Enumeración D3DBLEND (D3D9Types.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 55edb432913720f58860d4f5cb87d8da9b9a8681
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: 7ca88dd267ba2d70558347f999ad8d735e999a4d0197692f1e5d546f503b0a3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989235"
 ---
 # <a name="d3dblend-enumeration"></a>D3DBLEND (enumeración)
 
-Define el modo blend admitido.
+Define el modo de mezcla admitido.
 
 ## <a name="syntax"></a>Syntax
 
@@ -59,7 +59,7 @@ typedef enum D3DBLEND {
 <span id="D3DBLEND_ZERO"></span><span id="d3dblend_zero"></span>**D3DBLEND \_ ZERO**
 </dt> <dd>
 
-El factor blend es (0, 0, 0, 0).
+El factor de mezcla es (0, 0, 0, 0).
 
 </dd> <dt>
 
@@ -101,14 +101,14 @@ El factor blend es ( 1 - As, 1 - As, 1 - As, 1 - As).
 <span id="D3DBLEND_DESTALPHA"></span><span id="d3dblend_destalpha"></span>**D3DBLEND \_ DESTALPHA**
 </dt> <dd>
 
-El factor de mezcla es (A<sub>d</sub> D<sub>D</sub> <sub>D</sub> <sub>D).</sub>
+El factor blend es (A<sub>d</sub> <sub>D D</sub> <sub>D</sub> D<sub>D</sub>).
 
 </dd> <dt>
 
 <span id="D3DBLEND_INVDESTALPHA"></span><span id="d3dblend_invdestalpha"></span>**D3DBLEND \_ INVDESTALPHA**
 </dt> <dd>
 
-El factor de mezcla es (1 - A<sub>d</sub> 1 - A<sub>d</sub> 1 - A<sub>d</sub> 1 - A<sub>d</sub>).
+El factor blend es (1 - A<sub>d</sub> 1 - A<sub>d</sub> 1 - A<sub>d</sub> 1 - A<sub>d</sub>).
 
 </dd> <dt>
 
@@ -150,7 +150,7 @@ El factor blend es (f, f, f, 1); where f = min(As, 1 - A<sub>d</sub>).
 <span id="D3DBLEND_BLENDFACTOR"></span><span id="d3dblend_blendfactor"></span>**D3DBLEND \_ BLENDFACTOR**
 </dt> <dd>
 
-Factor de mezcla de color constante utilizado por la mezcla de búfer de marco. Este modo blend solo se admite si D3DPBLENDCAPS BLENDFACTOR está establecido en los miembros \_ **SrcBlendCaps** o **DestBlendCaps** de [**D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9)
+Factor de mezcla de color constante utilizado por la mezcla de búfer de marco. Este modo de mezcla solo se admite si D3DPBLENDCAPS BLENDFACTOR está establecido en los miembros \_ **SrcBlendCaps** o **DestBlendCaps** de [**D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9)
 
 </dd> <dt>
 
@@ -164,7 +164,7 @@ Factor de combinación de colores constante invertido usado por la mezcla de bú
 <span id="D3DBLEND_SRCCOLOR2"></span><span id="d3dblend_srccolor2"></span>**D3DBLEND \_ SRCCOLOR2**
 </dt> <dd>
 
-El factor blend es (PSOutColor \[ 1 \] <sub>r,</sub>PSOutColor \[ 1 \] <sub>g,</sub>PSOutColor \[ 1 \] <sub>b,</sub>no se usa). Vea Render Target Blending (Combinación [de destinos de representación).](#render-target-blending)
+El factor blend es (PSOutColor \[ 1 \] <sub>r,</sub>PSOutColor \[ 1 \] <sub>g,</sub>PSOutColor \[ 1 \] <sub>b,</sub>no se usa). Vea [Render Target Blending](#render-target-blending).
 
 Diferencias entre Direct3D 9 y Direct3D 9Ex:
 
@@ -179,7 +179,7 @@ Diferencias entre Direct3D 9 y Direct3D 9Ex:
 <span id="D3DBLEND_INVSRCCOLOR2"></span><span id="d3dblend_invsrccolor2"></span>**D3DBLEND \_ INVSRCCOLOR2**
 </dt> <dd>
 
-El factor blend es (1 - PSOutColor \[ 1 \] <sub>r</sub>, 1 - PSOutColor \[ 1 \] <sub>g</sub>, 1 - PSOutColor \[ 1 \] <sub>b,</sub>no se usa)). Vea Render Target Blending (Combinación [de destinos de representación).](#render-target-blending)
+El factor blend es (1 - PSOutColor \[ 1 \] <sub>r</sub>, 1 - PSOutColor \[ 1 \] <sub>g</sub>, 1 - PSOutColor \[ 1 \] <sub>b</sub>, no se usa)). Vea [Render Target Blending](#render-target-blending).
 
 
 Diferencias entre Direct3D 9 y Direct3D 9Ex:
@@ -195,7 +195,7 @@ Diferencias entre Direct3D 9 y Direct3D 9Ex:
 <span id="D3DBLEND_FORCE_DWORD"></span><span id="d3dblend_force_dword"></span>**D3DBLEND \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase a un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
@@ -212,7 +212,7 @@ Los siguientes estados de representación usan los valores de este tipo enumerad
 
 Consulte [ **D3DRENDERSTATETYPE**](./d3drenderstatetype.md)
 
-### <a name="render-target-blending"></a>Render Target Blending
+### <a name="render-target-blending"></a>Combinación de destino de representación
 
 Direct3D 9Ex ha mejorado las funcionalidades de representación de texto. La representación de fuentes de tipo sin formato normalmente requeriría dos pases. Para eliminar el segundo paso, se puede usar un sombreador de píxeles para generar dos colores, a los que podemos llamar PSOutColor 0 y \[ \] PSOutColor \[ \] 1. El primer color contendrá los 3 componentes de color estándar (RGB). El segundo color contendrá 3 componentes alfa (uno para cada componente del primer color).
 

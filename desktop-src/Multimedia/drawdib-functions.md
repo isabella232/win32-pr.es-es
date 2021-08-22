@@ -1,25 +1,25 @@
 ---
-title: Funciones de DrawDib
-description: Funciones de DrawDib
+title: Funciones DrawDib
+description: Funciones DrawDib
 ms.assetid: 9ba47b8d-5328-477e-9272-21e897e54348
 keywords:
 - Windows multimedia, funciones DrawDib
-- funciones multimedia, DrawDib
-- Vídeo para Windows (VFW), funciones de DrawDib
-- VFW (vídeo para Windows), funciones de DrawDib
-- DrawDib, funciones
-- Referencia de DrawDib, funciones
-- referencia de DrawDib, funciones
+- multimedia, funciones DrawDib
+- Vídeo para Windows (VFW), funciones DrawDib
+- VFW (vídeo para Windows), funciones DrawDib
+- DrawDib,functions
+- DrawDib reference,functions
+- referencia de DrawDib,functions
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f27d33581775f38383d72adcf6a1776c5fe6530b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a179a6102f3ec2f5e891d22d817a51af26ef7a5db4d031841ceef6152eb655c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144448"
 ---
-# <a name="drawdib-functions"></a>Funciones de DrawDib
+# <a name="drawdib-functions"></a>Funciones DrawDib
 
 Las siguientes funciones se usan con DrawDib.
 
@@ -46,9 +46,9 @@ Las siguientes funciones se usan con DrawDib.
 [Referencia de DrawDib](drawdib-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

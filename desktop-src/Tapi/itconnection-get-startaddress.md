@@ -1,21 +1,21 @@
 ---
-description: El \_ método get StartAddress obtiene la primera dirección que se va a utilizar para la sesión.
+description: El método \_ get StartAddress obtiene la primera dirección que se usará para la sesión.
 ms.assetid: 3c4fec19-1b7d-4052-afd8-7aaf095907d0
-title: 'Método ITConnection:: get_StartAddress (Sdpblb. h)'
+title: Método ITConnection::get_StartAddress (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 84266d1874e7d04acb594bcfb9d99b440b0390b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f0c21f704d734c1d0cdccd7f796898e3770cfab19e0f3ab7ee728e86810b2a2c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140358"
 ---
-# <a name="itconnectionget_startaddress-method"></a>ITConnection:: get \_ StartAddress (método)
+# <a name="itconnectionget_startaddress-method"></a>ItConnection::get \_ StartAddress (método)
 
-\[ Las interfaces y controles de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y las versiones posteriores del sistema operativo. La API de cliente de RTC proporciona una funcionalidad similar.\]
+\[Las interfaces y los controles de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-El método **Get \_ StartAddress** obtiene la primera dirección que se va a utilizar para la sesión.
+El **método \_ get StartAddress** obtiene la primera dirección que se usará para la sesión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -32,10 +32,10 @@ HRESULT get_StartAddress(
 
 <dl> <dt>
 
-*ppStartAddress* \[ enuncia\]
+*ppStartAddress* \[ out\]
 </dt> <dd>
 
-Puntero a un **BSTR** que contiene la dirección de inicio de la sesión.
+Puntero a un **BSTR** que contiene la dirección inicial de la sesión.
 
 </dd> </dl>
 
@@ -47,9 +47,9 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                                   | Descripción                                                       |
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>          | El método se realizó correctamente.<br/>                                      |
-| <dl> <dt>**\_puntero E**</dt> </dl>     | El parámetro *ppStartAddress* no es un puntero válido.<br/> |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No hay memoria suficiente para realizar la operación.<br/>   |
+| <dl> <dt>**S \_ OK**</dt> </dl>          | El método se realizó correctamente.<br/>                                      |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | El *parámetro ppStartAddress* no es un puntero válido.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | No existe memoria suficiente para realizar la operación.<br/>   |
 | <dl> <dt>**E \_ FAIL**</dt> </dl>        | Error no especificado.<br/>                                     |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método aún no se ha implementado.<br/>                    |
 
@@ -57,9 +57,9 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La aplicación debe usar [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) para liberar la memoria asignada para el parámetro *ppStartAddress* .
+La aplicación debe usar [**SysFreeString para**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) liberar la memoria asignada para el *parámetro ppStartAddress.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,9 +67,9 @@ La aplicación debe usar [**SysFreeString**](/windows/win32/api/oleauto/nf-oleau
 
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 3,0 o posterior<br/>                                                 |
-| Encabezado<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
+| Header<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

@@ -1,10 +1,10 @@
 ---
-title: MSMQ-Receive-Computer-Journal Extended Right
-description: Permite recibir mensajes de la cola del diario del equipo.
+title: Derecho extendido msmq-Receive-computer-Journal
+description: Permite recibir mensajes de la cola De diario de equipo.
 ms.assetid: bf8892dc-bb24-4b9b-b46c-8f532e879638
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de la derecha extendida de MSMQ-Receive-Computer-Journal
+- msmq-Receive-computer-Journal extended right AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ace96b13e6c080a3ebcbe66993d0ec4da025f077
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f0cc36d8d6dca0562166339d8228d23561021a0835784669a9638244be965ee0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081149"
 ---
-# <a name="msmq-receive-computer-journal-extended-right"></a>MSMQ-Receive-Computer-Journal Extended Right
+# <a name="msmq-receive-computer-journal-extended-right"></a>Derecho extendido msmq-Receive-computer-Journal
 
-Permite recibir mensajes de la cola del diario del equipo.
+Permite recibir mensajes de la cola De diario de equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | MSMQ-Receive-Computer-Journal        |
-| Display-Name | Recibir el diario del equipo             |
+| CN           | msmq-Receive-computer-Journal        |
+| Display-Name | Recibir diario de equipo             |
 | Rights-GUID  | 4b6e08c2-df3c-11d1-9c86-006008764d0e |
 
 
@@ -47,10 +47,10 @@ Permite recibir mensajes de la cola del diario del equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 40                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 40                                                           |
 
 
 
@@ -60,8 +60,8 @@ Permite recibir mensajes de la cola del diario del equipo.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 40                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 40                                                           |
 
 
 
@@ -69,10 +69,10 @@ Permite recibir mensajes de la cola del diario del equipo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 40                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 40                                                           |
 
 
 
@@ -82,8 +82,8 @@ Permite recibir mensajes de la cola del diario del equipo.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 40                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 40                                                           |
 
 
 
@@ -93,8 +93,8 @@ Permite recibir mensajes de la cola del diario del equipo.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 40                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 40                                                           |
 
 
 
@@ -104,8 +104,8 @@ Permite recibir mensajes de la cola del diario del equipo.
 
 | Entrada | Value |
 |-------------------------|--------------------------------------------------------------|
-| Applies-To              | [**MSMQ-configuración**](c-msmqconfiguration.md)<br/> |
-| Localización: ID. de presentación | 40                                                           |
+| Applies-To              | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
+| Localization-Display-ID | 40                                                           |
 
 
 

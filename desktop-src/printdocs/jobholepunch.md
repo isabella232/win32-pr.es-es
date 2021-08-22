@@ -1,19 +1,19 @@
 ---
-description: Obtenga información sobre el elemento configurable por el usuario JobHolePunch. Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
+description: Obtenga información sobre el elemento configurable por el usuario JobHolePunch. Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
 ms.assetid: 26e9e7d6-7c01-4687-aa64-7aea867b4e58
 title: JobHolePunch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c82a36784ab6a1fb5eb0c8d682c45cce574ee9e
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 302a904436b47ad8e5630ccb495fed769d686aad62e022f6b0923ebc54075d40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100523"
 ---
 # <a name="jobholepunch"></a>JobHolePunch
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Describe las características de los huecos de la salida. Todos los documentos se reúnen. Las palabras clave JobHolePunch y DocumentHolePunch son mutuamente excluyentes. Ambos no deben especificarse simultáneamente en un documento PrintTicket o Capacidades de impresión.
 
@@ -69,7 +69,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 ## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave públicas del esquema de impresión se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) de esta palabra clave se define a continuación:
+Las palabras clave de esquema de impresión públicas se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) de esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:JobHolePunch">

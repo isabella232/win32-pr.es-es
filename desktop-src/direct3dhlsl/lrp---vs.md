@@ -1,6 +1,6 @@
 ---
-title: LRP-vs
-description: Interpola linealmente entre el segundo y tercer registro de origen mediante una proporción especificada en el primer registro de origen. | LRP-vs
+title: lrp- vs
+description: Interpola linealmente entre el segundo y el tercer registro de origen en una proporción especificada en el primer registro de origen. | lrp- vs
 ms.assetid: 8438bcf3-9b00-4963-b2a3-54fd1c345961
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,48 +9,48 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 485d7720dc2c71ee599db93d179de8e665bfab77
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d154f78b3e8ae5d3b7b8e553435d962ad3dbea9fe86f8dd772bf165c5eb542be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104998152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119189"
 ---
-# <a name="lrp---vs"></a>LRP-vs
+# <a name="lrp---vs"></a>lrp- vs
 
-Interpola linealmente entre el segundo y tercer registro de origen mediante una proporción especificada en el primer registro de origen.
+Interpola linealmente entre el segundo y el tercer registro de origen en una proporción especificada en el primer registro de origen.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 
-| LRP DST, src0, SRC1, src2 |
+| lrp dst, src0, src1, src2 |
 |---------------------------|
 
 
 
  
 
-, donde
+where
 
--   DST es el registro de destino.
+-   dst es el registro de destino.
 -   src0 es un registro de origen.
--   SRC1 es un registro de origen.
+-   src1 es un registro de origen.
 -   src2 es un registro de origen.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 
 
-| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versiones del sombreador de vértices | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
-| lrp                    |      | x    | x    | x     | x    | x     |
+| Lrp                    |      | x    | x    | x     | x    | x     |
 
 
 
  
 
-Esta instrucción realiza la interpolación lineal basada en la fórmula siguiente.
+Esta instrucción realiza la interpolación lineal en función de la fórmula siguiente.
 
 
 ```

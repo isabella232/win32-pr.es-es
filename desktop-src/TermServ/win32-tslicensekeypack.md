@@ -1,11 +1,11 @@
 ---
 title: Clase Win32_TSLicenseKeyPack
-description: Proporciona métodos y propiedades para ver e instalar los paquetes de claves de licencia de Servicios de Escritorio remoto.
+description: Proporciona métodos y propiedades para ver e instalar Servicios de Escritorio remoto de claves de licencia.
 ms.assetid: 27450646-c51f-4911-bb42-410794e32003
 ms.tgt_platform: multiple
 keywords:
 - Win32_TSLicenseKeyPack clase Servicios de Escritorio remoto
-- Servicios de Escritorio remoto de Win32_TSLicenseKeyPack de clase, se describe
+- Win32_TSLicenseKeyPack clase Servicios de Escritorio remoto , descrita
 topic_type:
 - apiref
 api_name:
@@ -28,16 +28,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d78af398ebf7c137be5b31c9db427691a66a7a2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7927270f262d0a66722660bf4b2c8f15cf75f49bb807abcff604af9edf58d99b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104533789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119137818"
 ---
-# <a name="win32_tslicensekeypack-class"></a>\_Clase Win32 TSLicenseKeyPack
+# <a name="win32_tslicensekeypack-class"></a>Clase \_ TSLicenseKeyPack de Win32
 
-Proporciona métodos y propiedades para ver e instalar los paquetes de claves de licencia de Servicios de Escritorio remoto.
+Proporciona métodos y propiedades para ver e instalar Servicios de Escritorio remoto de claves de licencia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -69,28 +69,28 @@ La **clase \_ TSLicenseKeyPack de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ TSLicenseKeyPack** tiene estos métodos.
+La **clase \_ TSLicenseKeyPack de Win32** tiene estos métodos.
 
 
 
 | Método                                                                                                        | Descripción                                                                                                                                                                                                                               |
 |:--------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**ConvertLicenses**](convertlicenses-win32-tslicensekeypack.md)                                             | Convierte las licencias en el paquete de claves actual.<br/>                                                                                                                                                                                 |
-| [**ImportAgreementLicenseKeyPack**](win32-tslicensekeypack-importagreementlicensekeypack.md)                 | Importa, desde otro servidor de licencias de Escritorio remoto, un paquete de claves de licencia Servicios de Escritorio remoto adquirido a través de un contrato de licencia y se conecta automáticamente a través de Internet para validar la licencia del paquete de claves.<br/> |
-| [**ImportLicenseKeyPackOffline**](win32-tslicensekeypack-importlicensekeypackoffline.md)                     | Importa, desde otro servidor de licencias de Escritorio remoto, un paquete de claves de licencia de Servicios de Escritorio remoto que utiliza un identificador de licencia recibido a través de Internet o del teléfono.<br/>                                               |
-| [**ImportOpenPurchaseLicenseKeyPack**](win32-tslicensekeypack-importopenpurchaselicensekeypack.md)           | Importa, desde otro servidor de licencias de Escritorio remoto, un paquete de claves de licencia Open Servicios de Escritorio remoto.<br/>                                                                                                                 |
-| [**ImportRetailPurchaseLicenseKeyPack**](win32-tslicensekeypack-importretailpurchaselicensekeypack.md)       | Importa, desde otro servidor de licencias de Escritorio remoto, un paquete de claves de licencia Servicios de Escritorio remoto adquirido a través de un canal minorista.<br/>                                                                                   |
-| [**InstallAgreementLicenseKeyPack**](installagreementlicensekeypack-win32-tslicensekeypack.md)               | Instala un paquete de claves de licencia Servicios de Escritorio remoto adquirido a través de una licencia de contrato.<br/>                                                                                                                           |
-| [**InstallLicenseKeyPack**](installlicensekeypack-win32-tslicensekeypack.md)                                 | Instala un paquete de claves de licencia Servicios de Escritorio remoto que utiliza un identificador de paquete de claves de licencia recibido a través de Internet o del teléfono.<br/>                                                                                          |
-| [**InstallOpenLicenseKeyPack**](installopenlicensekeypack-win32-tslicensekeypack.md)                         | Instala un paquete de claves de licencia Servicios de Escritorio remoto adquirido a través de un contrato de licencia abierto.<br/>                                                                                                                      |
-| [**InstallRetailPurchaseLicenseKeyPack**](installretailpurchaselicensekeypack-win32-tslicensekeypack.md)     | Instala un paquete de claves de licencia Servicios de Escritorio remoto adquirido a través de una tienda de venta directa.<br/>                                                                                                                                 |
-| [**ReinstallAgreementLicenseKeyPack**](win32-tslicensekeypack-reinstallagreementlicensekeypack.md)           | Vuelve a instalar un paquete de claves de licencia Servicios de Escritorio remoto adquirido a través de un contrato de licencia y se conecta automáticamente a través de Internet para validar la licencia del paquete de claves.<br/>                                           |
-| [**ReinstallLicenseKeyPackOffline**](win32-tslicensekeypack-reinstalllicensekeypackoffline.md)               | Vuelve a instalar un paquete de claves de licencia Servicios de Escritorio remoto que usa el identificador de licencia que se recibió a través de Internet o el teléfono.<br/>                                                                                       |
-| [**ReinstallOpenPurchaseLicenseKeyPack**](win32-tslicensekeypack-reinstallopenpurchaselicensekeypack.md)     | Vuelve a instalar una licencia abierta Servicios de Escritorio remoto paquete de claves de licencia.<br/>                                                                                                                                                           |
-| [**ReinstallRetailPurchaseLicenseKeyPack**](win32-tslicensekeypack-reinstallretailpurchaselicensekeypack.md) | Vuelve a instalar un paquete de claves de licencia Servicios de Escritorio remoto adquirido a través de un canal de venta directa.<br/>                                                                                                                             |
-| [**RemoveLicensesWithIdCount**](win32-tslicensekeypack-removelicenseswithidcount.md)                         | Quita el número especificado de licencias de Servicios de Escritorio remoto del paquete de claves especificado.<br/>                                                                                                                                  |
-| [**UninstallLicenseKeyPack**](win32-tslicensekeypack-uninstalllicensekeypack.md)                             | Desinstala un paquete de claves de licencia de Servicios de Escritorio remoto.<br/>                                                                                                                                                                         |
-| [**UninstallLicenseKeyPackWithId**](win32-tslicensekeypack-uninstalllicensekeypackwithid.md)                 | Desinstala el paquete de claves de licencia de Servicios de Escritorio remoto con el identificador de paquete de claves especificado.<br/>                                                                                                                                |
+| [**ConvertLicenses**](convertlicenses-win32-tslicensekeypack.md)                                             | Convierte las licencias del paquete de claves actual.<br/>                                                                                                                                                                                 |
+| [**ImportAgreementLicenseKeyPack**](win32-tslicensekeypack-importagreementlicensekeypack.md)                 | Importa, desde otro servidor de licencias de Escritorio remoto, un paquete de claves de licencia de Servicios de Escritorio remoto que se compró a través de un contrato de licencia y se conecta automáticamente a través de Internet para validar la licencia del paquete de claves.<br/> |
+| [**ImportLicenseKeyPackOffline**](win32-tslicensekeypack-importlicensekeypackoffline.md)                     | Importa, desde otro servidor Escritorio remoto licencias, un Servicios de Escritorio remoto de claves de licencia que usa un identificador de licencia que se recibió a través de Internet o el teléfono.<br/>                                               |
+| [**ImportOpenPurchaseLicenseKeyPack**](win32-tslicensekeypack-importopenpurchaselicensekeypack.md)           | Importa, desde otro servidor Escritorio remoto licencias, un paquete de claves de licencia Servicios de Escritorio remoto licencia abierta.<br/>                                                                                                                 |
+| [**ImportRetailPurchaseLicenseKeyPack**](win32-tslicensekeypack-importretailpurchaselicensekeypack.md)       | Importa, desde otro servidor Escritorio remoto licencias, un Servicios de Escritorio remoto de claves de licencia que se compró a través de un canal comercial.<br/>                                                                                   |
+| [**InstallAgreementLicenseKeyPack**](installagreementlicensekeypack-win32-tslicensekeypack.md)               | Instala un paquete Servicios de Escritorio remoto de claves de licencia que se compró a través de una licencia de contrato.<br/>                                                                                                                           |
+| [**InstallLicenseKeyPack**](installlicensekeypack-win32-tslicensekeypack.md)                                 | Instala un Servicios de Escritorio remoto de claves de licencia que usa un identificador de paquete de claves de licencia que se recibió a través de Internet o el teléfono.<br/>                                                                                          |
+| [**InstallOpenLicenseKeyPack**](installopenlicensekeypack-win32-tslicensekeypack.md)                         | Instala un paquete Servicios de Escritorio remoto de claves de licencia que se compró a través de un contrato de licencia abierto.<br/>                                                                                                                      |
+| [**InstallRetailPurchaseLicenseKeyPack**](installretailpurchaselicensekeypack-win32-tslicensekeypack.md)     | Instala un paquete Servicios de Escritorio remoto de claves de licencia que se compró a través de una tienda minorista.<br/>                                                                                                                                 |
+| [**ReinstallAgreementLicenseKeyPack**](win32-tslicensekeypack-reinstallagreementlicensekeypack.md)           | Vuelve a instalar un Servicios de Escritorio remoto de claves de licencia que se compró a través de un contrato de licencia y se conecta automáticamente a través de Internet para validar la licencia del paquete de claves.<br/>                                           |
+| [**ReinstallLicenseKeyPackOffline**](win32-tslicensekeypack-reinstalllicensekeypackoffline.md)               | Vuelve a instalar un Servicios de Escritorio remoto de claves de licencia que usa el identificador de licencia que se recibió a través de Internet o el teléfono.<br/>                                                                                       |
+| [**ReinstallOpenPurchaseLicenseKeyPack**](win32-tslicensekeypack-reinstallopenpurchaselicensekeypack.md)     | Vuelve a instalar un paquete de claves Servicios de Escritorio remoto licencia abierta.<br/>                                                                                                                                                           |
+| [**ReinstallRetailPurchaseLicenseKeyPack**](win32-tslicensekeypack-reinstallretailpurchaselicensekeypack.md) | Vuelve a instalar un Servicios de Escritorio remoto de claves de licencia que se compró a través de un canal comercial.<br/>                                                                                                                             |
+| [**RemoveLicensesWithIdCount**](win32-tslicensekeypack-removelicenseswithidcount.md)                         | Quita el número especificado de licencias Servicios de Escritorio remoto del paquete de claves especificado.<br/>                                                                                                                                  |
+| [**UninstallLicenseKeyPack**](win32-tslicensekeypack-uninstalllicensekeypack.md)                             | Desinstala un paquete Servicios de Escritorio remoto de claves de licencia.<br/>                                                                                                                                                                         |
+| [**UninstallLicenseKeyPackWithId**](win32-tslicensekeypack-uninstalllicensekeypackwithid.md)                 | Desinstala el Servicios de Escritorio remoto de claves de licencia con el identificador del paquete de claves especificado.<br/>                                                                                                                                |
 
 
 
@@ -105,29 +105,29 @@ La **clase \_ TSLicenseKeyPack de Win32** tiene estas propiedades.
 **AccessRights**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**mapa de bits**](/windows/desktop/WmiSdk/standard-qualifiers) ("0", "1", "2", "3"), [**BitValues**](/windows/desktop/WmiSdk/standard-qualifiers) ("sesión de RD", "sesión de VDI", "Calista", "asociados de VDI")
+Calificadores: [**BitMap**](/windows/desktop/WmiSdk/standard-qualifiers) ("0", "1", "2", "3"), [**BitValues**](/windows/desktop/WmiSdk/standard-qualifiers) ("Sesión de Escritorio remoto", "Sesión de VDI", "Calista", "Asociados de VDI")
 </dt> </dl>
 
-Calificador para derechos de acceso de paquete de claves de licencias TS
+Calificador de los derechos de acceso del paquete de claves de licencias de TS
 
 </dd> <dt>
 
 **AvailableLicenses**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número total de licencias disponibles en el paquete de claves de licencia de Servicios de Escritorio remoto.
+Número total de licencias disponibles en el paquete Servicios de Escritorio remoto de claves de licencia.
 
 </dd> <dt>
 
@@ -140,40 +140,40 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del paquete de claves de licencia de Servicios de Escritorio remoto.
+Descripción del paquete Servicios de Escritorio remoto de claves de licencia.
 
 </dd> <dt>
 
 **ExpirationDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **[DateTime](/windows/desktop/WmiSdk/datetime)**
+Tipo de datos: **[DATETIME](/windows/desktop/WmiSdk/datetime)**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Fecha de expiración de la Servicios de Escritorio remoto paquete de claves de licencia.
+Fecha de expiración del paquete Servicios de Escritorio remoto de claves de licencia.
 
 </dd> <dt>
 
-**IssuedLicenses**
+**Licencias emitidas**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número total de licencias emitidas en el paquete de claves de licencia de Servicios de Escritorio remoto.
+Número total de licencias emitidas en el paquete Servicios de Escritorio remoto de claves de licencia.
 
 </dd> <dt>
 
 **KeyPackId**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -182,46 +182,46 @@ Tipo de acceso: solo lectura
 Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identificador del paquete de claves de licencia de Servicios de Escritorio remoto.
+Identificador del paquete Servicios de Escritorio remoto de claves de licencia.
 
 </dd> <dt>
 
 **KeyPackType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de paquete de claves para el servidor de licencias de Escritorio remoto.
+Tipo de paquete de claves para el Escritorio remoto de licencias.
 
 | Value | Descripción |
 |-------|-------------|
-| 0 | No se conoce el tipo de paquete de claves de licencia Servicios de Escritorio remoto. |
-| 1 | El tipo de paquete de claves de licencia Servicios de Escritorio remoto es una compra comercial. |
-| 2 | El tipo de paquete de claves de licencia Servicios de Escritorio remoto es una compra por volumen. |
-| 3 | El tipo de paquete de claves de licencia Servicios de Escritorio remoto es una licencia simultánea. |
-| 4 | El tipo de paquete de claves de licencia Servicios de Escritorio remoto es temporal. |
-| 5 | El tipo de paquete de claves de licencia Servicios de Escritorio remoto es una licencia abierta. |
-| 6 | No se admite. |
+| 0 | Se desconoce Servicios de Escritorio remoto tipo de paquete de claves de licencia. |
+| 1 | El Servicios de Escritorio remoto de paquete de claves de licencia es una compra comercial. |
+| 2 | El Servicios de Escritorio remoto de paquete de claves de licencia es una compra por volumen. |
+| 3 | El Servicios de Escritorio remoto de paquete de claves de licencia es una licencia simultánea. |
+| 4 | El Servicios de Escritorio remoto del paquete de claves de licencia es temporal. |
+| 5 | El Servicios de Escritorio remoto de paquete de claves de licencia es una licencia abierta. |
+| 6 | No compatible. |
 
 **ProductType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Tipo de producto del paquete de claves de licencia de Servicios de Escritorio remoto.
+Tipo de producto del paquete Servicios de Escritorio remoto de claves de licencia.
 
 | Value | Descripción |
 |-------|-------------|
-| 0 | El tipo de producto del paquete de claves de licencia Servicios de Escritorio remoto es por dispositivo. Por lo tanto, cada dispositivo que se conecta al servidor host de sesión de escritorio remoto debe tener una licencia. |
-| 1 | El tipo de producto del paquete de claves de licencia Servicios de Escritorio remoto es por usuario. Por lo tanto, cada usuario que se conecta al servidor host de sesión de escritorio remoto debe tener una licencia. |
+| 0 | El Servicios de Escritorio remoto de producto del paquete de claves de licencia es por dispositivo. Por lo tanto, cada dispositivo que se conecta al servidor host de sesión de Escritorio remoto debe tener una licencia. |
+| 1 | El Servicios de Escritorio remoto de producto del paquete de claves de licencia es por usuario. Por lo tanto, cada usuario que se conecta al servidor host de sesión de Escritorio remoto debe tener una licencia. |
 | 2 | Este tipo de producto no es válido. |
 
 **ProductVersion**
@@ -233,24 +233,24 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Versión del producto para el paquete de claves de licencia de Servicios de Escritorio remoto.
+Versión del producto para el paquete Servicios de Escritorio remoto de claves de licencia.
 
 | Value | Descripción |
 |-------|-------------|
-| "Windows Server 2012" | En esta licencia solo se admiten servidores que ejecuten Windows Server 2012, Windows Server 2008 R2 o Windows Server 2008. |
-| "Windows Server 7" | Con esta licencia solo se admiten servidores que ejecuten Windows Server 2008 R2 o Windows Server 2008. |
-| "Windows Server 2008" | Este paquete de claves solo admite servidores que ejecuten Windows Server 2008. |
+| "Windows Server 2012" | Solo los servidores que Windows Server 2012, Windows Server 2008 R2 o Windows Server 2008 son compatibles con esta licencia. |
+| "Windows Server 7" | Solo los servidores que Windows Server 2008 R2 o Windows Server 2008 son compatibles con esta licencia. |
+| "Windows Server 2008" | Solo los servidores que Windows Server 2008 son compatibles con este paquete de claves. |
 
 **ProductVersionID**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Identificador de la versión del producto para el paquete de claves de licencia de Servicios de Escritorio remoto.
+Identificador de versión del producto para el Servicios de Escritorio remoto de claves de licencia.
 
 | Value | Descripción |
 |-------|-------------|
@@ -258,20 +258,20 @@ Identificador de la versión del producto para el paquete de claves de licencia 
 | 1 | No compatible |
 | 2 | Windows Server 2008 |
 | 3 | Windows Server 2008 R2 |
-| 4 | Windows Server 2012 o Windows Server 2012 R2 |
+| 4 | Windows Server 2012/Windows Server 2012 R2 |
 | 5 | Windows Server 2016 |
 | 6 | Windows Server 2019 |
 
 **TotalLicenses**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número total de licencias en el paquete de claves de licencia de Servicios de Escritorio remoto.
+Número total de licencias del paquete de claves Servicios de Escritorio remoto licencia.
 
 </dd> <dt>
 
@@ -284,15 +284,15 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Calificador para el modelo y el tipo de paquete de claves de licencias de TS. Ejemplos: licencias por suscripción de VDI por dispositivo, CAL por usuario de TS
+Calificador para el modelo y el tipo del paquete de claves de licencias de TS. Ejemplos: licencia de suscripción de VDI por dispositivo, CAL de TS por usuario
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para usar esta clase, debe ser miembro del grupo administradores.
+Debe ser miembro del grupo Administradores para usar esta clase.
 
-Los archivos Managed Object Format (MOF) contienen las definiciones de las clases de Instrumental de administración de Windows (WMI). Los archivos MOF no se instalan como parte del kit de desarrollo de software (SDK) de Microsoft Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información acerca de los archivos MOF, consulte [Managed Object Format (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -303,7 +303,7 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |
 | Espacio de nombres<br/>                | Root\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -315,13 +315,13 @@ Los archivos Managed Object Format (MOF) contienen las definiciones de las clase
 [**Win32 \_ TSIssuedLicense**](win32-tsissuedlicense.md)
 </dt> <dt>
 
-[**Win32 \_ TSLicenseReport**](win32-tslicensereport.md)
+[**TSLicenseReport de Win32 \_**](win32-tslicensereport.md)
 </dt> <dt>
 
 [**Win32 \_ TSLicenseReportEntry**](win32-tslicensereportentry.md)
 </dt> <dt>
 
-[**Win32 \_ TSLicenseServer**](win32-tslicenseserver.md)
+[**TSLicenseServer de Win32 \_**](win32-tslicenseserver.md)
 </dt> </dl>
 
  

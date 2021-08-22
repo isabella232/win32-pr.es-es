@@ -14,12 +14,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 11/04/2020
-ms.openlocfilehash: ad4ff8c409f79a03cb4021974fe374498926c3e2
-ms.sourcegitcommit: 8e1f04c7e3c5c850071bac8d173f9441aab0dfed
+ms.openlocfilehash: 5f2d95d0eef67309ef1e5902ed6b968616b38bc081bd259d77418e950e4e028f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107803406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989605"
 ---
 # <a name="directml-constants"></a>Constantes de DirectML
 
@@ -39,7 +39,7 @@ Las siguientes constantes se declaran en `DirectML.h` .
 |-|-|
 | Encabezado | DirectML.h |
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 * [Referencia de DirectML](direct3d-directml-reference.md)
 * [Referencia principal](direct3d-12-core-reference.md)

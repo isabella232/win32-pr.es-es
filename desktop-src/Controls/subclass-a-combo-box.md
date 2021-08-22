@@ -1,36 +1,36 @@
 ---
-title: Cómo subclase de un cuadro combinado
-description: En este tema se muestra cómo subclases de los cuadros combinados.
+title: Cómo crear subclases de un cuadro combinado
+description: En este tema se muestra cómo crear subclases de cuadros combinados.
 ms.assetid: 9897EA94-1BF7-4711-AED6-5E9C863C287A
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b48301309597c53f02ca87d1d1748ab1fe05139
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: ea674cfecf3c84ce4a1fa2abb1f23f8f208a8b8fd220736bbcec61bea7880b34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104078469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078449"
 ---
-# <a name="how-to-subclass-a-combo-box"></a>Cómo subclase de un cuadro combinado
+# <a name="how-to-subclass-a-combo-box"></a>Cómo crear subclases de un cuadro combinado
 
-En este tema se muestra cómo subclases de los cuadros combinados. La aplicación de ejemplo de C++ crea una ventana de barra de herramientas que contiene dos cuadros combinados. Mediante la subclase de los controles de edición dentro de los cuadros combinados, la ventana de la barra de herramientas intercepta las teclas TAB, entrar y ESC que, de lo contrario, se pasarían por alto.
+En este tema se muestra cómo crear subclases de cuadros combinados. La aplicación de ejemplo de C++ crea una ventana de barra de herramientas que contiene dos cuadros combinados. Al crear subclases de los controles de edición dentro de los cuadros combinados, la ventana de la barra de herramientas intercepta las teclas TAB, ENTRAR y ESC que, de lo contrario, se omitirían.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="process-the-wm_create-message"></a>Procesar el mensaje de creación de WM \_
+### <a name="process-the-wm_create-message"></a>Procesar el mensaje CREATE de WM \_
 
-La aplicación procesa el mensaje de [**\_ creación de WM**](/windows/desktop/winmsg/wm-create) para crear dos controles de cuadro combinado como ventanas secundarias.
+La aplicación procesa el [**mensaje WM \_ CREATE**](/windows/desktop/winmsg/wm-create) para crear dos controles de cuadro combinado como ventanas secundarias.
 
 
 ```C++
@@ -56,11 +56,11 @@ hwndCombo2 = CreateWindow(L"COMBOBOX", L"",
 
 
 
-A continuación, la aplicación subclase los controles de edición (campos de selección) en cada cuadro combinado, ya que reciben la entrada de caracteres para el cuadro combinado simple y desplegable. Finalmente, llama a la función [**ChildWindowFromPoint**](/windows/desktop/api/winuser/nf-winuser-childwindowfrompoint) para recuperar el identificador de cada control de edición.
+A continuación, la aplicación crea subclases de los controles de edición (campos de selección) en cada cuadro combinado, ya que reciben la entrada de caracteres para el cuadro combinado simple y desplegable. Por último, llama a [**la función ChildWindowFromPoint**](/windows/desktop/api/winuser/nf-winuser-childwindowfrompoint) para recuperar el identificador de cada control de edición.
 
-Para subclaser los controles de edición, la aplicación llama a la función [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) , reemplazando el puntero al procedimiento de ventana de clase con un puntero a la función **SubClassProc** definida por la aplicación. El puntero al procedimiento de ventana original se guarda en la variable global *lpfnEditWndProc*.
+Para crear subclases de los controles de edición, la aplicación llama a la función [**SetWindowLong,**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) reemplazando el puntero al procedimiento de ventana de clase por un puntero a la **función SubClassProc** definida por la aplicación. El puntero al procedimiento de ventana original se guarda en la variable global *lpfnEditWndProc*.
 
-**SubClassProc** intercepta las teclas TAB, ENTER y ESC, y notifica a la ventana de la barra de herramientas mediante el envío de mensajes definidos por la aplicación ( \_ pestaña WM, \_ escape ESC y WM \_ entrar). **SubClassProc** usa la función [**CallWindowProc**](/windows/desktop/api/winuser/nf-winuser-callwindowproca) para pasar la mayoría de los mensajes al procedimiento de ventana original, *lpfnEditWndProc*.
+**SubClassProc intercepta** las claves TAB, ENTER y ESC y notifica a la ventana de la barra de herramientas mediante el envío de mensajes definidos por la aplicación (WM \_ TAB, WM \_ ESC y WM \_ ENTER). **SubClassProc** usa la [**función CallWindowProc para**](/windows/desktop/api/winuser/nf-winuser-callwindowproca) pasar la mayoría de los mensajes al procedimiento de ventana original, *lpfnEditWndProc*.
 
 
 ```C++
@@ -80,9 +80,9 @@ SetWindowLongPtr(hwndEdit2, GWLP_WNDPROC, (LONG_PTR) SubClassProc);
 
 
 
-### <a name="process-the-wm_setfocus-message"></a>Procesar el mensaje de SETFOCUS de WM \_
+### <a name="process-the-wm_setfocus-message"></a>Procesar el mensaje \_ SETFOCUS de WM
 
-Cuando la ventana de la barra de herramientas recibe el foco de entrada, establece inmediatamente el foco en el primer cuadro combinado de la barra de herramientas. Para ello, el ejemplo llama a la función [**SetFocus**](/windows/desktop/api/winuser/nf-winuser-setfocus) en respuesta al mensaje [**de \_ SetFocus de WM**](/windows/desktop/inputdev/wm-setfocus) .
+Cuando la ventana de la barra de herramientas recibe el foco de entrada, establece inmediatamente el foco en el primer cuadro combinado de la barra de herramientas. Para ello, el ejemplo llama a la [**función SetFocus**](/windows/desktop/api/winuser/nf-winuser-setfocus) en respuesta al [**mensaje \_ SETFOCUS de WM.**](/windows/desktop/inputdev/wm-setfocus)
 
 
 ```C++
@@ -93,11 +93,11 @@ case WM_SETFOCUS:
 
 
 
-### <a name="process-application-defined-messages"></a>Procesar mensajes de Application-Defined
+### <a name="process-application-defined-messages"></a>Procesar Application-Defined mensajes
 
-La función **SubClassProc** envía mensajes definidos por la aplicación a la ventana de la barra de herramientas cuando el usuario presiona la tecla Tab, entrar o Esc en un cuadro combinado. El mensaje de la **\_ pestaña de WM** se envía para la tecla Tab, el mensaje **\_ ESC de WM** para la tecla ESC y el mensaje de **\_ entrada de WM** para la tecla entrar.
+La **función SubClassProc** envía mensajes definidos por la aplicación a la ventana de la barra de herramientas cuando el usuario presiona la tecla TAB, ENTRAR o ESC en un cuadro combinado. El **mensaje DE WM \_ TAB** se envía para la tecla TAB, el mensaje **\_ ESC** de WM para la clave ESC y el **mensaje WM \_ ENTER** para la clave ENTER.
 
-En el ejemplo se procesa el mensaje de la **\_ pestaña de WM** estableciendo el foco en el siguiente cuadro combinado de la barra de herramientas. Procesa el mensaje **de \_ ESC de WM** estableciendo el foco en la ventana principal de la aplicación.
+En el ejemplo se procesa **el mensaje DE WM \_ TAB** estableciendo el foco en el siguiente cuadro combinado de la barra de herramientas. Procesa el mensaje **ESC \_ de WM** estableciendo el foco en la ventana principal de la aplicación.
 
 
 ```C++
@@ -122,7 +122,7 @@ En el ejemplo se procesa el mensaje de la **\_ pestaña de WM** estableciendo el
 
 
 
-En respuesta al mensaje **de \_ entrada de WM** , el ejemplo garantiza que la selección actual del cuadro combinado es válida y, a continuación, establece el foco en la ventana de la aplicación principal. Si el cuadro combinado no contiene ninguna selección actual, el ejemplo utiliza el mensaje [**CB \_ FindExactString con**](cb-findstringexact.md) para buscar un elemento de lista que coincida con el contenido del campo de selección. Si hay una coincidencia, el ejemplo establece la selección actual; de lo contrario, agrega un nuevo elemento de lista.
+En respuesta al **mensaje WM \_ ENTER,** el ejemplo garantiza que la selección actual del cuadro combinado sea válida y, a continuación, establece el foco en la ventana principal de la aplicación. Si el cuadro combinado no contiene ninguna selección actual, en el ejemplo se usa el mensaje [**\_ FINDSTRINGEXACT**](cb-findstringexact.md) de CB para buscar un elemento de lista que coincida con el contenido del campo de selección. Si hay una coincidencia, el ejemplo establece la selección actual; De lo contrario, agrega un nuevo elemento de lista.
 
 
 ```C++
@@ -163,7 +163,7 @@ default:
 
 ## <a name="complete-example"></a>Ejemplo completo
 
-A continuación se muestran el procedimiento de ventana de la barra de herramientas y el procedimiento de subclase para los dos cuadros combinados.
+A continuación se muestra el procedimiento de ventana para la barra de herramientas y el procedimiento de subclase para los dos cuadros combinados.
 
 
 ```C++
@@ -346,7 +346,7 @@ LRESULT CALLBACK SubClassProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 [Acerca de los cuadros combinados](about-combo-boxes.md)
 </dt> <dt>
 
-[Referencia de controles ComboBox](bumper-combobox-combobox-control-reference.md)
+[Referencia del control ComboBox](bumper-combobox-combobox-control-reference.md)
 </dt> <dt>
 
 [Usar cuadros combinados](using-combo-boxes.md)
@@ -355,6 +355,6 @@ LRESULT CALLBACK SubClassProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 [ComboBox](combo-boxes.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

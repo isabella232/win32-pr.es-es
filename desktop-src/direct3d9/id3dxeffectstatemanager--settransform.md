@@ -1,7 +1,7 @@
 ---
-description: Una función de devolución de llamada que debe ser implementada por un usuario para establecer una transformación.
+description: Función de devolución de llamada que debe implementar un usuario para establecer una transformación.
 ms.assetid: 5d886554-ddb6-4b8a-a7fd-453e94b9516f
-title: 'ID3DXEffectStateManager:: SetTransform (método) (D3DX9Effect. h)'
+title: Método ID3DXEffectStateManager::SetTransform (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: b19a060cfeb09d5d1a92e5e7a1a1f25b58e64f4d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 48b9bb16bdcb145b94e94de61ed011bb9931982511ddfb8ac9076d047c01ad0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119121471"
 ---
-# <a name="id3dxeffectstatemanagersettransform-method"></a>ID3DXEffectStateManager:: SetTransform (método)
+# <a name="id3dxeffectstatemanagersettransform-method"></a>Método ID3DXEffectStateManager::SetTransform
 
-Una función de devolución de llamada que debe ser implementada por un usuario para establecer una transformación.
+Función de devolución de llamada que debe implementar un usuario para establecer una transformación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,21 +41,21 @@ HRESULT SetTransform(
 
 <dl> <dt>
 
-*Estado* \[ de de\]
+*Estado* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **D3DTRANSFORMSTATETYPE**](./d3dtransformstatetype.md)**
 
-Tipo de transformación a la que se va a aplicar la matriz. Vea [**D3DTRANSFORMSTATETYPE**](./d3dtransformstatetype.md).
+Tipo de transformación al que se aplicará la matriz. Vea [**D3DTRANSFORMSTATETYPE.**](./d3dtransformstatetype.md)
 
 </dd> <dt>
 
-*pMatrix* \[ de\]
+*pMatrix* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DMATRIX**](d3dmatrix.md) \***
 
-Matriz de transformación. Vea [**D3DMATRIX**](d3dmatrix.md).
+Matriz de transformación. Vea [**D3DMATRIX.**](d3dmatrix.md)
 
 </dd> </dl>
 
@@ -63,10 +63,10 @@ Matriz de transformación. Vea [**D3DMATRIX**](d3dmatrix.md).
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-El método implementado por el usuario debe devolver S \_ correcto. Si se produce un error en la devolución de llamada al establecer el estado del dispositivo, se producirá una de las siguientes acciones:
+El método implementado por el usuario debe devolver S \_ OK. Si se produce un error en la devolución de llamada al establecer el estado del dispositivo, se producirá una de las siguientes acciones:
 
--   Se producirá un error en el efecto durante [**ID3DXEffect:: BeginPass**](id3dxeffect--beginpass.md).
--   Se producirá un error en la llamada de estado de efecto dinámico (como [**IDirect3DDevice9:: SetTransform**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settransform)).
+-   Se producirá un error en el efecto [**durante ID3DXEffect::BeginPass**](id3dxeffect--beginpass.md).
+-   Se producirá un error en la llamada de estado de efecto dinámico (por [**ejemplo, IDirect3DDevice9::SetTransform).**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-settransform)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,8 +74,8 @@ El método implementado por el usuario debe devolver S \_ correcto. Si se produc
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

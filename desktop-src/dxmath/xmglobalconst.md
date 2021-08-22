@@ -1,19 +1,19 @@
 ---
-description: Declara un objeto para que sea una constante de selección, para evitar recargas redundantes de ese objeto si se usa (y se declara) en varios lugares de la biblioteca de DirectXMath.
+description: Declara un objeto como una constante pick-any para evitar recargas redundantes de ese objeto si se usa (y declara) en varios lugares de la biblioteca DirectXMath.
 ms.assetid: FDE5C004-9E8E-4890-8FDC-987C1569D8E5
-title: XMGLOBALCONST (macro)
+title: Macro XMGLOBALCONST
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6675b17138fca66e293321a9d848262a8bffc94e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be72254865aed46de86955c2a27a4d73351311c5aa63a44a6e218be7a3915d1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119118005"
 ---
-# <a name="xmglobalconst-macro"></a>XMGLOBALCONST (macro)
+# <a name="xmglobalconst-macro"></a>Macro XMGLOBALCONST
 
-Declara un objeto para que sea una constante *de selección* , para evitar recargas redundantes de ese objeto si se usa (y se declara) en varios lugares de la biblioteca de DirectXMath.
+Declara un objeto como una constante *pick-any* para evitar recargas redundantes de ese objeto si se usa (y declara) en varios lugares de la biblioteca DirectXMath.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -21,13 +21,13 @@ Declara un objeto para que sea una constante *de selección* , para evitar recar
 #define XMGLOBALCONST  extern const __declspec(selectany)
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El uso de XMGLOBALCONST permite la especificación de constantes globales. Esto ayuda a reducir el tamaño del segmento de datos de una aplicación, evitar la creación y destrucción de objetos redundantes, y reducir las operaciones de carga y almacenamiento.
+El uso de XMGLOBALCONST permite especificar constantes globales. Esto ayuda a reducir el tamaño del segmento de datos de una aplicación, evitar la creación y destrucción de objetos redundantes y reducir las operaciones de carga y almacenamiento.
 
 ## <a name="requirements"></a>Requisitos
 
-**Encabezado:** Declarado en DirectXMath. h.
+**Encabezado:** Declarado en DirectXMath.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -36,13 +36,13 @@ El uso de XMGLOBALCONST permite la especificación de constantes globales. Esto 
 [Macros de biblioteca de DirectXMath](ovw-xnamath-reference-macros.md)
 </dt> <dt>
 
-[Constantes globales en la biblioteca de DirectXMath](pg-xnamath-internals.md)
+[Constantes globales en la biblioteca DirectXMath](pg-xnamath-internals.md)
 </dt> <dt>
 
 [selectany](/previous-versions/visualstudio/visual-studio-6.0/aa273550(v=vs.60))
 </dt> <dt>
 
-[modificado](/previous-versions/visualstudio/visual-studio-6.0/aa273692(v=vs.60))
+[declspec](/previous-versions/visualstudio/visual-studio-6.0/aa273692(v=vs.60))
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
 title: Evento MediaCollectionMediaRemoved del objeto AxWindowsMediaPlayer
-description: El evento MediaCollectionMediaRemoved se produce cuando se quita un elemento multimedia de la biblioteca local. | Evento MediaCollectionMediaRemoved del objeto AxWindowsMediaPlayer
+description: El evento MediaCollectionMediaRemoved tiene lugar cuando se quita un elemento multimedia de la biblioteca local. | Evento MediaCollectionMediaRemoved del objeto AxWindowsMediaPlayer
 ms.assetid: 66dae2be-2a71-4d53-b2e2-f106426d4eea
 keywords:
-- Evento MediaCollectionMediaRemoved del objeto AxWindowsMediaPlayer Media Player de Windows
+- Evento MediaCollectionMediaRemoved del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cea15ff63fb913cd399a152913a27ffda1090d9a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7ee9555b3efc4cb95b164fc8922b1ce4253613fbd2c45c0624a3d61d0fa7a9f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135988"
 ---
 # <a name="mediacollectionmediaremoved-event-of-the-axwindowsmediaplayer-object"></a>Evento MediaCollectionMediaRemoved del objeto AxWindowsMediaPlayer
 
-El evento MediaCollectionMediaRemoved se produce cuando se quita un elemento multimedia de la biblioteca local.
+El evento MediaCollectionMediaRemoved tiene lugar cuando se quita un elemento multimedia de la biblioteca local.
 
 ``` syntax
 [C#]
@@ -47,13 +47,13 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propiedad | Descripción                                                                                                                      |
 |----------|----------------------------------------------------------------------------------------------------------------------------------|
-| pMedia   | Elemento multimedia System. ObjectThe quitado de la biblioteca local. Puede convertirlo en una interfaz IWMPMedia para tener acceso a él.<br/> |
+| pMedia   | System.ObjectEl elemento multimedia se quitó de la biblioteca local. Puede convertir esto en una interfaz IWMPMedia para acceder a ella.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este evento solo se produce para la biblioteca local.
 

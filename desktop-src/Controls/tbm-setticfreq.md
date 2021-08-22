@@ -1,9 +1,9 @@
 ---
-title: Mensaje de TBM_SETTICFREQ (commctrl. h)
-description: Establece la frecuencia de intervalo para las marcas de graduación en una barra de aumento.
+title: TBM_SETTICFREQ mensaje (Commctrl.h)
+description: Establece la frecuencia de intervalo de las marcas de graduación en una barra de seguimiento.
 ms.assetid: c391260c-d6c2-4b6a-84e8-7fe5d734035b
 keywords:
-- TBM_SETTICFREQ controles de mensajes de Windows
+- TBM_SETTICFREQ controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b68a555a7803e663fa1708fc02214deecbb05aad
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c7c1b3e029abc8027d8708da31698f44db85ec78e427ba9461f0a71a740fb05a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078019"
 ---
-# <a name="tbm_setticfreq-message"></a>TBM \_ SETTICFREQ
+# <a name="tbm_setticfreq-message"></a>Mensaje \_ TBM SETTICFREQ
 
-Establece la frecuencia de intervalo para las marcas de graduación en una barra de aumento. Por ejemplo, si la frecuencia se establece en dos, se muestra una marca de graduación para cada incremento en el intervalo de la barra de aumento. El valor predeterminado de la frecuencia es uno; es decir, cada incremento del intervalo está asociado a una marca de graduación.
+Establece la frecuencia de intervalo de las marcas de graduación en una barra de seguimiento. Por ejemplo, si la frecuencia se establece en dos, se muestra una marca de graduación para cada otro incremento en el intervalo de la barra de seguimiento. El valor predeterminado para la frecuencia es uno; Es decir, cada incremento del intervalo está asociado a una marca de graduación.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -43,19 +43,19 @@ Frecuencia de las marcas de graduación.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La barra de aumento debe tener el estilo de [**\_ marcas de graduación de TBS**](trackbar-control-styles.md) para utilizar este mensaje.
+La barra de seguimiento debe tener el [**estilo \_ TBS AUTOTICKS**](trackbar-control-styles.md) para usar este mensaje.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: función glEdgeFlagPointer (GL. h)
-description: La función glEdgeFlagPointer define una matriz de marcas de borde.
+title: Función glEdgeFlagPointer (Gl.h)
+description: La función glEdgeFlagPointer define una matriz de marcas perimetrales.
 ms.assetid: e0e7e442-533d-4c41-addd-a215ce0b1c56
 keywords:
-- glEdgeFlagPointer (función) OpenGL
+- Función glEdgeFlagPointer OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4390a9838fef418763aa4bcafbf815ab0cdf3466
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fa648a15542a3f3f2f35f577760991da74bc978c0464c1373c8eddea38941a62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061643"
 ---
-# <a name="gledgeflagpointer-function"></a>glEdgeFlagPointer función)
+# <a name="gledgeflagpointer-function"></a>Función glEdgeFlagPointer
 
-La función **glEdgeFlagPointer** define una matriz de marcas de borde.
+La **función glEdgeFlagPointer** define una matriz de marcas perimetrales.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,17 +41,17 @@ void WINAPI glEdgeFlagPointer(
 
 <dl> <dt>
 
-*STRI* 
+*Paso* 
 </dt> <dd>
 
-El desplazamiento de bytes entre las marcas de borde consecutivas. Cuando *STRIDE* es cero, las marcas de borde están estrechamente empaquetadas en la matriz.
+Desplazamiento de bytes entre marcas de borde consecutivas. Cuando *stride* es cero, las marcas de borde se empaquetan estrechamente en la matriz.
 
 </dd> <dt>
 
-*puntero* 
+*Puntero* 
 </dt> <dd>
 
-Puntero a la primera marca de borde de la matriz.
+Puntero a la primera marca perimetral de la matriz.
 
 </dd> </dl>
 
@@ -61,39 +61,39 @@ Esta función no devuelve ningún valor.
 
 ## <a name="error-codes"></a>Códigos de error
 
-La función [**glGetError**](glgeterror.md) puede recuperar el siguiente código de error.
+La función [**glGetError**](glgeterror.md) puede recuperar el código de error siguiente.
 
 
 
 | Nombre                                                                                             | Significado                                      |
 |--------------------------------------------------------------------------------------------------|----------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl> | *STRIDE* o *Count* era negativo.<br/> |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl> | *stride* o *count era* negativo.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glEdgeFlagPointer** especifica la ubicación y los datos de una matriz de marcas de borde booleanos que se van a usar en la representación. El parámetro *STRIDE* determina el desplazamiento de bytes de una marca perimetral a la siguiente, que habilita el empaquetado de vértices y atributos en una sola matriz o almacenamiento en matrices independientes. En algunas implementaciones, el almacenamiento de vértices y atributos en una sola matriz puede ser más eficaz que el uso de matrices independientes.
+La **función glEdgeFlagPointer** especifica la ubicación y los datos de una matriz de marcas de borde booleanas que se usarán al representar. El *parámetro stride* determina el desplazamiento de bytes de una marca perimetral a la siguiente, lo que permite el empaquetado de vértices y atributos en una sola matriz o almacenamiento en matrices independientes. En algunas implementaciones, almacenar los vértices y atributos en una sola matriz puede ser más eficaz que usar matrices independientes.
 
-Una matriz de marcas de borde se habilita al especificar la constante de la matriz de marca de borde de GL \_ \_ \_ con [**glEnableClientState**](glenableclientstate.md). Cuando está habilitado, [**glDrawArrays**](gldrawarrays.md) o [**glArrayElement**](glarrayelement.md) usa la matriz de marcas de borde. De forma predeterminada, la matriz de marcas de borde está deshabilitada.
+Se habilita una matriz de marcas perimetrales cuando se especifica la constante GL \_ EDGE FLAG ARRAY con \_ \_ [**glEnableClientState**](glenableclientstate.md). Cuando se habilita, [**glDrawArrays**](gldrawarrays.md) o [**glArrayElement**](glarrayelement.md) usa la matriz de marcas perimetrales. De forma predeterminada, la matriz de marcas perimetrales está deshabilitada.
 
-Use **glDrawArrays** para construir una secuencia de primitivas (todo el mismo tipo) a partir de matrices de atributos de vértices y vértices predeterminados. Use **glArrayElement** para especificar primitivos mediante la indexación de vértices y atributos de vértice, y [**glDrawElements**](gldrawelements.md) para construir una secuencia de primitivas mediante la indexación de vértices y atributos de vértice.
+Use **glDrawArrays para** construir una secuencia de primitivas (todas del mismo tipo) a partir de matrices de atributos de vértices y vértices especificados previamente. Use **glArrayElement para** especificar primitivas mediante la indexación de vértices y atributos de vértice, y [**glDrawElements**](gldrawelements.md) para construir una secuencia de primitivas mediante la indexación de vértices y atributos de vértice.
 
-No se puede incluir **glEdgeFlagPointer** en las listas de visualización.
+No se puede incluir **glEdgeFlagPointer en** las listas para mostrar.
 
-Cuando se especifica una matriz de marcas de borde con **glEdgeFlagPointer**, los valores de todos los parámetros de matriz de marcas de borde de la función se guardan en un estado del lado cliente y los elementos de matriz estáticos se pueden almacenar en caché. Dado que los parámetros de matriz perimetral-Flag están en un estado de cliente, [**glPushAttrib**](glpushattrib.md) y [**glPopAttrib**](glpopattrib.md) no guardan ni restauran sus valores.
+Cuando se especifica una matriz de marcas perimetrales mediante **glEdgeFlagPointer**, los valores de todos los parámetros de matriz de marcas perimetrales de la función se guardan en un estado del lado cliente y los elementos de la matriz estática se pueden almacenar en caché. Dado que los parámetros de matriz de marca perimetral están en estado de cliente, [**glPushAttrib**](glpushattrib.md) y [**glPopAttrib**](glpopattrib.md) no guardarán ni restaurarán sus valores.
 
-Aunque llamar a **glEdgeFlagPointer** dentro de un par glend de [**glBegin**](glbegin.md)no / [](glend.md) genera un error, los resultados son indefinidos.
+Aunque llamar **a glEdgeFlagPointer** dentro de un par [**glBegin**](glbegin.md)no genera un / [](glend.md) error, los resultados son indefinidos.
 
-Las siguientes funciones recuperan información relacionada con la función **glEdgeFlagPointer** :
+Las siguientes funciones recuperan información relacionada con **la función glEdgeFlagPointer:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con argumento \_ intervalo de \_ matriz de marca de margen de \_ Contabilidad \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ EDGE FLAG ARRAY \_ \_ \_ STRIDE
 
-**glGet** con argumento \_ \_ \_ recuento de matriz de marcas de margen de contabilidad \_
+**glGet con** el argumento GL \_ EDGE FLAG ARRAY \_ \_ \_ COUNT
 
-[**glGetPointerv**](glgetpointerv.md) con argumento de \_ \_ matriz de marca de borde de \_ contabilidad de argumentos \_
+[**glGetPointerv con el**](glgetpointerv.md) argumento GL \_ EDGE FLAG ARRAY \_ \_ \_ POINTER
 
-[**glIsEnabled**](glisenabled.md) con el argumento \_ \_ matriz de marca del borde de contabilidad \_
+[**glIsEnabled con**](glisenabled.md) el argumento GL \_ EDGE FLAG \_ \_ ARRAY
 
 ## <a name="requirements"></a>Requisitos
 
@@ -103,8 +103,8 @@ Las siguientes funciones recuperan información relacionada con la función **gl
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

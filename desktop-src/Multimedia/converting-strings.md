@@ -3,19 +3,19 @@ title: Convertir cadenas
 description: Convertir cadenas
 ms.assetid: 40621c71-4264-40bc-b6c3-6b639d2f28fa
 keywords:
-- mciSendString función)
+- Función mciSendString
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d1db4cb4b3d02a93adecc82d6ce95de436fb2e7
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4efeb5801c46d89686ed3fe9fcf25b311d57d4d553c220902907ac0e70a5b7e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103995126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144798"
 ---
 # <a name="converting-strings"></a>Convertir cadenas
 
-Cuando se usa la función [**mciSendString**](/previous-versions//dd757161(v=vs.85)) , todos los valores que se pasan con el comando y todos los valores devueltos son cadenas de texto, por lo que la aplicación necesita rutinas de conversión para convertir variables a cadenas o viceversa. En el ejemplo siguiente se recupera el rectángulo de origen y se convierte la cadena devuelta en coordenadas del rectángulo.
+Cuando se usa la función [**mciSendString,**](/previous-versions//dd757161(v=vs.85)) todos los valores pasados con el comando y todos los valores devueltos son cadenas de texto, por lo que la aplicación necesita rutinas de conversión para traducir de variables a cadenas o de nuevo. En el ejemplo siguiente se recupera el rectángulo de origen y se convierte la cadena devuelta en coordenadas de rectángulo.
 
 
 ```C++
@@ -85,10 +85,10 @@ BOOL GetSourceRect(LPTSTR lpstrAlias, LPRECT lprc)
 
 
 > [!Note]  
-> Las estructuras **Rect** se administran de forma diferente en MCI que en otras partes de Windows. en MCI, el miembro de la **derecha** contiene el ancho del rectángulo y el miembro **inferior** contiene su alto. En la interfaz de cadena, se especifica un rectángulo como *x1*, *Y1*, *x2* e *Y2*. Las coordenadas *x1* e *Y1* especifican la esquina superior izquierda del rectángulo y las coordenadas *x2* e *Y2* especifican el ancho y el alto.
+> **Las estructuras RECT** se controlan de forma diferente en MCI que en otras partes de Windows; en MCI, el **miembro derecho** contiene el ancho del rectángulo y el **miembro** inferior contiene su alto. En la interfaz de cadena, se especifica un rectángulo *como X1,* *Y1,* *X2* e *Y2.* Las coordenadas *X1* e *Y1* especifican la esquina superior izquierda del rectángulo y las coordenadas *X2* e *Y2* especifican el ancho y el alto.
 
- 
+ 
 
- 
+ 
 
- 
+ 

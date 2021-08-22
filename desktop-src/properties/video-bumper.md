@@ -1,17 +1,17 @@
 ---
-description: Vídeo (Sistema de propiedades de Windows)
+description: Vídeo (Windows de propiedades)
 ms.assetid: 5d36b057-3712-4d00-99b7-3ddf45620b7a
-title: Vídeo (Sistema de propiedades de Windows)
+title: Vídeo (Windows de propiedades)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d0def20ed46e97dd0b0df445fb2a7fcbfb83b95
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3d2023da08536add0084146d0000e6d4c0261d892452d1b221cdaa37e529ba5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095304"
 ---
-# <a name="video-windows-property-system"></a>Vídeo (Sistema de propiedades de Windows)
+# <a name="video-windows-property-system"></a>Vídeo (Windows de propiedades)
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -33,7 +33,7 @@ ms.locfileid: "108089913"
 | [System.Video.SampleSize](./props-system-video-samplesize.md)<br/>                       | Indica el tamaño de la muestra en bits para la secuencia de vídeo. "SampleSize".<br/>                                                           |
 | [System.Video.StreamName](./props-system-video-streamname.md)<br/>                       | Indica el nombre de la secuencia de vídeo. "StreamName".<br/>                                                                          |
 | [System.Video.StreamNumber](./props-system-video-streamnumber.md)<br/>                   | Indica el número ordinal de la secuencia que se va a reproducir.<br/>                                                                        |
-| [System.Video.TotalBitrate](./props-system-video-totalbitrate.md)<br/>                   | Indica la velocidad total de datos en "bits por segundo" para todas las secuencias de vídeo y audio.<br/>                                             |
+| [System.Video.TotalBitrate](./props-system-video-totalbitrate.md)<br/>                   | Indica la velocidad total de datos en "bits por segundo" para todas las secuencias de audio y vídeo.<br/>                                             |
 | [System.Video.TranscodedForSync](./props-system-video-transcodedforsync.md)<br/>         | Indica la parte vertical de la relación de aspecto.<br/>                                                                             |
 | [System.Video.VerticalAspectRatio](./props-system-video-verticalaspectratio.md)<br/>     | Indica la parte horizontal de la relación de aspecto de píxeles. La parte Y de XX:YY. Por ejemplo, 11 es la parte Y de 10:11 .<br/> |
 
