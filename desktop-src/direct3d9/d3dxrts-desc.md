@@ -1,7 +1,7 @@
 ---
 description: Describe una superficie de representación.
 ms.assetid: cffa1555-1fa2-427d-8bcb-da0e61d82152
-title: D3DXRTS_DESC estructura (D3dx9core. h)
+title: D3DXRTS_DESC estructura (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9core.h
-ms.openlocfilehash: 3a0b52f258956f7b62734ca97cc5d1bf5ed00ac3
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 838fc7d08eff0889049e7f0c73ae779239934e49049948b926fa956eeac3d40a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104003807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607635"
 ---
 # <a name="d3dxrts_desc-structure"></a>D3DXRTS \_ DESC (estructura)
 
@@ -46,7 +46,7 @@ typedef struct D3DXRTS_DESC {
 **Width**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -57,7 +57,7 @@ Ancho de la superficie de representación, en píxeles.
 **Height**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -72,18 +72,18 @@ Tipo: **[D3DFORMAT](d3dformat.md)**
 
 </dd> <dd>
 
-Miembro del tipo enumerado [D3DFORMAT](d3dformat.md) , que describe el formato de píxel de la superficie de representación.
+Miembro del tipo [enumerado D3DFORMAT,](d3dformat.md) que describe el formato de píxel de la superficie de representación.
 
 </dd> <dt>
 
-**DepthStencil**
+**Galería de detalles**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Si **es true**, la superficie de representación admite una superficie de estarcido de profundidad; de lo contrario, este miembro se establece en **false**.
+Si **es TRUE,** la superficie de representación admite una superficie de galería de símbolos de profundidad; De lo contrario, este miembro se establece **en FALSE.**
 
 </dd> <dt>
 
@@ -94,7 +94,7 @@ Tipo: **[D3DFORMAT](d3dformat.md)**
 
 </dd> <dd>
 
-Si DepthStencil se establece en **true**, este parámetro es un miembro del tipo enumerado [D3DFORMAT](d3dformat.md) , que describe el formato de la galería de símbolos de profundidad de la superficie de representación.
+Si DepthStencil se establece en **TRUE,** este parámetro es un miembro del tipo enumerado [D3DFORMAT,](d3dformat.md) que describe el formato de galería de símbolos de profundidad de la superficie de representación.
 
 </dd> </dl>
 
@@ -104,7 +104,7 @@ Si DepthStencil se establece en **true**, este parámetro es un miembro del tipo
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>D3dx9core. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>D3dx9core.h</dt> </dl> |
 
 
 
@@ -112,7 +112,7 @@ Si DepthStencil se establece en **true**, este parámetro es un miembro del tipo
 
 <dl> <dt>
 
-[Estructuras de D3DX](dx9-graphics-reference-d3dx-structures.md)
+[Estructuras D3DX](dx9-graphics-reference-d3dx-structures.md)
 </dt> <dt>
 
 [**ID3DXRenderToSurface::GetDesc**](id3dxrendertosurface--getdesc.md)

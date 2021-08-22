@@ -1,6 +1,6 @@
 ---
 title: Propiedad InRibbonGallery.MenuGroups
-description: Representa un contenedor para el conjunto de elementos de menú desplegable de un control In-Ribbon Galería.
+description: Representa un contenedor para el conjunto de elementos de menú desplegable de un control In-Ribbon galería.
 ms.assetid: 6b9ded25-4e8e-4e30-a349-f7c091dbfe7a
 keywords:
 - Propiedad InRibbonGallery.MenuGroups Windows Cinta de opciones
@@ -21,7 +21,7 @@ ms.locfileid: "119710485"
 ---
 # <a name="inribbongallerymenugroups-property"></a>Propiedad InRibbonGallery.MenuGroups
 
-Representa un contenedor para el conjunto de elementos de menú desplegable de un control Galería en cinta de [opciones.](windowsribbon-controls-inribbongallery.md)
+Representa un contenedor para el conjunto de elementos de menú desplegable de un control Galería en la cinta de [opciones.](windowsribbon-controls-inribbongallery.md)
 
 ## <a name="usage"></a>Uso
 
@@ -107,11 +107,11 @@ En esta sección de código se muestra la declaración de control **InRibbonGall
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[Control Galería en la cinta de opciones](windowsribbon-controls-inribbongallery.md)
+[Control de la Galería en la cinta de opciones](windowsribbon-controls-inribbongallery.md)
 </dt> <dt>
 
 [Trabajar con galerías](ribbon-controls-galleries.md)

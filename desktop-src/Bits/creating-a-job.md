@@ -1,28 +1,28 @@
 ---
-title: Crear un trabajo
-description: Para crear un trabajo de transferencia, llame al método IBackgroundCopyManager CreateJob.
+title: Creación de un trabajo
+description: Para crear un trabajo de transferencia, llame al método CreateJob de IBackgroundCopyManager.
 ms.assetid: a7d9feef-4beb-4ae5-9453-9157ee3ec0e8
 keywords:
-- transferir BITS de trabajo
-- transferir BITS de trabajo, crear
+- bits de trabajo de transferencia
+- transferir bits de trabajo , crear
 ms.topic: article
 ms.date: 11/29/2018
-ms.openlocfilehash: 8dddb2427fde43014a31e81f72711ca74e69de34
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0241d855d60178e87f28820f14b39e497f200fe5770933f293257e62b2d1b601
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104486662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119528895"
 ---
-# <a name="creating-a-job"></a>Crear un trabajo
+# <a name="creating-a-job"></a>Creación de un trabajo
 
-Para crear un trabajo de transferencia, llame al método [**IBackgroundCopyManager:: CreateJob**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-createjob) . Después de que BITS cree el trabajo, [agregue archivos al trabajo](adding-files-to-a-job.md) y [modifique las propiedades del trabajo](setting-and-retrieving-the-properties-of-a-job.md) según sea necesario para la aplicación. Para activar el trabajo en la cola, llame al método [**IBackgroundCopyJob:: resume**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-resume) .
+Para crear un trabajo de transferencia, llame al [**método IBackgroundCopyManager::CreateJob.**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-createjob) Después de que BITS cree el trabajo, [agregue archivos al](adding-files-to-a-job.md) trabajo y [modifique](setting-and-retrieving-the-properties-of-a-job.md) las propiedades del trabajo según corresponda para la aplicación. Para activar el trabajo en la cola, llame al [**método IBackgroundCopyJob::Resume.**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopyjob-resume)
 
-El método [**CreateJob**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-createjob) crea un GUID que identifica de forma única el trabajo. El GUID se usa para [recuperar el trabajo de la cola de transferencia](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-getjob). El nombre para mostrar que proporcione al crear el trabajo no es único. más de un trabajo puede usar el mismo nombre.
+El [**método CreateJob**](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-createjob) crea un GUID que identifica de forma única el trabajo. Use el GUID para recuperar [el trabajo de la cola de transferencia.](/windows/desktop/api/Bits/nf-bits-ibackgroundcopymanager-getjob) El nombre para mostrar que se proporciona al crear el trabajo no es único; más de un trabajo puede usar el mismo nombre.
 
-BITS limita el número de trabajos de la cola a 300 trabajos y el número de trabajos que un usuario puede crear en el trabajo 60. Estos límites no se aplican a los administradores o servicios. Para cambiar estos límites predeterminados, consulte [directivas de grupo](group-policies.md).
+BITS limita el número de trabajos de la cola a 300 trabajos y el número de trabajos que un usuario puede crear a 60 trabajos. Estos límites no se aplican a los administradores ni a los servicios. Para cambiar estos límites predeterminados, vea [Directivas de grupo.](group-policies.md)
 
-En el ejemplo siguiente se muestra cómo crear un trabajo de descarga. En el ejemplo se presupone que la \_ variable g pbcm es un puntero de interfaz [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) válido. Para obtener más información sobre cómo crear el puntero de interfaz **IBackgroundCopyManager** , consulte [conectarse al servicio bits](connecting-to-the-bits-service.md).
+En el ejemplo siguiente se muestra cómo crear un trabajo de descarga. En el ejemplo se supone que la \_ variable gismom es un puntero de interfaz [**IBackgroundCopyManager**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopymanager) válido. Para obtener más información sobre cómo crear el puntero de interfaz **IBackgroundCopyManager,** vea [Conexión al servicio BITS](connecting-to-the-bits-service.md).
 
 
 ```C++
@@ -44,7 +44,7 @@ if (SUCCEEDED(hr))
 
 
 
-Para obtener la interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) más reciente, llame al método **IBackgroundCopyJob:: QueryInterface** . En el ejemplo siguiente se muestra cómo obtener la interfaz [**IBackgroundCopyJob5**](/windows/desktop/api/Bits5_0/nn-bits5_0-ibackgroundcopyjob5) .
+Para obtener la interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-bits-ibackgroundcopyjob) más reciente, llame al **método IBackgroundCopyJob::QueryInterface.** En el ejemplo siguiente se muestra cómo obtener la [**interfaz IBackgroundCopyJob5.**](/windows/desktop/api/Bits5_0/nn-bits5_0-ibackgroundcopyjob5)
 
 
 ```C++
@@ -63,9 +63,9 @@ Para obtener la interfaz [**IBackgroundCopyJob**](/windows/desktop/api/Bits/nn-b
 
 
 
- 
+ 
 
- 
+ 
 
 
 

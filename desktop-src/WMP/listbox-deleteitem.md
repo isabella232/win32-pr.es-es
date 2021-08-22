@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. deleteItem
+title: LISTBOX.deleteItem
 description: El método deleteItem elimina el elemento de control de cuadro de lista en el índice especificado.
 ms.assetid: b7ed38b7-8495-426f-b799-e62cd149b397
 keywords:
-- LISTBOX. deleteItem Windows Media Player
+- ListBOX.deleteItem Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 45f4df09c608500e9a618b310b6296febaf073c4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: caa0a8aa74536692f188df4117a41c69af8ead4c510f315125ac0100e690fb1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054783"
 ---
-# <a name="listboxdeleteitem"></a>LISTBOX. deleteItem
+# <a name="listboxdeleteitem"></a>LISTBOX.deleteItem
 
-El método **DeleteItem** elimina el elemento de control de cuadro de lista en el índice especificado.
+El **método deleteItem** elimina el elemento de control de cuadro de lista en el índice especificado.
 
 ``` syntax
         elementID.deleteItem(index)
@@ -32,10 +32,10 @@ El método **DeleteItem** elimina el elemento de control de cuadro de lista en e
 
 <dl> <dt>
 
-<span id="index"></span><span id="INDEX"></span>*ajustar*
+<span id="index"></span><span id="INDEX"></span>*Índice*
 </dt> <dd>
 
-**Número** (**largo**) que contiene el índice del elemento que se va a eliminar.
+**Number** (**long**) que contiene el índice del elemento que se eliminará.
 
 </dd> </dl>
 
@@ -43,17 +43,17 @@ El método **DeleteItem** elimina el elemento de control de cuadro de lista en e
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las líneas situadas debajo de la línea eliminada suberán un valor de índice.
+Las líneas debajo de la línea eliminada subirán un valor de índice.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------------|
-| Versión<br/> | Windows Media Player para Windows XP o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media para Windows XP o posterior<br/> |
 
 
 

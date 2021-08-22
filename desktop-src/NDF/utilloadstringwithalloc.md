@@ -1,9 +1,9 @@
 ---
-title: Función UtilLoadStringWithAlloc (Ndattributils. h)
+title: Función UtilLoadStringWithAlloc (Ndattributils.h)
 description: Asigna y carga una cadena fuera de la tabla de recursos.
 ms.assetid: 34bf0b93-2bec-49c3-9441-c83686c4abdb
 keywords:
-- UtilLoadStringWithAlloc función NDF
+- Función UtilLoadStringWithAlloc NDF
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72e13930fe9bb11ae9c9456152c823491eabc462
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ca649599e2a8a29ecdab2dbbfe2c188947b40487ceb82ab4937622ce82c701a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685615"
 ---
-# <a name="utilloadstringwithalloc-function"></a>UtilLoadStringWithAlloc función)
+# <a name="utilloadstringwithalloc-function"></a>Función UtilLoadStringWithAlloc
 
-La función **UtilLoadStringWithAlloc** asigna y carga una cadena fuera de la tabla de recursos.
+La **función UtilLoadStringWithAlloc** asigna y carga una cadena fuera de la tabla de recursos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ HRESULT UtilLoadStringWithAlloc(
 
 <dl> <dt>
 
-*uID* \[ de\]
+*uID* \[ En\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Identificador de de la cadena que se va a cargar.
+Identificador de la cadena que se va a cargar.
 
 </dd> <dt>
 
-*ppwzBuffer* \[ enuncia\]
+*ppwzBuffer* \[ out\]
 </dt> <dd>
 
-Tipo: **LPWStr \** _
+Tipo: **LPWSTR \***
 
-Ubicación donde se colocará la cadena recién asignada. La cadena se debe liberar mediante [_ *CoTaskMemFree* *](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) cuando ya no se necesite.
+Ubicación donde se colocará la cadena recién asignada. La cadena debe liberarse mediante [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) cuando ya no sea necesaria.
 
 </dd> <dt>
 
-*cchBufferMax* \[ de\]
+*cchBufferMax* \[ En\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-Número máximo de caracteres que se van a cargar desde la tabla de recursos. Si la cadena de recursos es mayor que el número de caracteres especificado, se trunca y termina en NULL.
+Número máximo de caracteres que se cargarán desde la tabla de recursos. Si la cadena de recurso es mayor que el número de caracteres especificado, se trunca y finaliza en NULL.
 
 > [!Note]  
 > Este parámetro no se puede establecer en cero.
@@ -84,8 +84,8 @@ Los valores devueltos posibles incluyen, entre otros, lo siguiente.
 
 | Código devuelto                                                                                  | Descripción                                                        |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>         | La operación se realizó correctamente.<br/>                                |
-| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | No se ha proporcionado correctamente uno o más parámetros.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl>         | La operación se realizó correctamente.<br/>                                |
+| <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | No se han proporcionado correctamente uno o varios parámetros.<br/> |
 
 
 
@@ -95,11 +95,11 @@ Los valores devueltos posibles incluyen, entre otros, lo siguiente.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                 |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                       |
-| Encabezado<br/>                   | <dl> <dt>Ndattributils. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                 |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                       |
+| Header<br/>                   | <dl> <dt>Ndattributils.h</dt> </dl> |
 
 
 

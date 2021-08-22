@@ -1,28 +1,28 @@
 ---
-title: Ejemplos de los esquemas de EAPHost y Legacy
-description: Se usan al escribir aplicaciones que llaman o implementan elementos de la API de EAPHost.
+title: EapHost y ejemplos de esquemas heredados
+description: Se usan al escribir aplicaciones que llaman a o implementan elementos de LA API de EAPHost.
 ms.assetid: d65c4433-489c-473d-8f03-c753bace2806
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 97f9ee85b06605efbba601715df3a8c86c502487
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: 9a92cd33d2db96064684401aaad333a6d11cddf38e311bad9ca6f8c3787fbe38
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "104077148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119561895"
 ---
-# <a name="eaphost-and-legacy-schema-samples"></a>Ejemplos de los esquemas de EAPHost y Legacy
+# <a name="eaphost-and-legacy-schema-samples"></a>EapHost y ejemplos de esquemas heredados
 
-El esquema XML se utiliza al escribir aplicaciones que llaman o implementan elementos de la API de EAPHost.
+El esquema XML se usa al escribir aplicaciones que llaman o implementan elementos de la API EAPHost.
 
-Hay dos grupos diferentes de ejemplos de esquemas que se proporcionan aquí.
+Aquí se proporcionan dos grupos diferentes de ejemplos de esquema.
 
 -   [Propiedades de conexión](connection-profiles.md)
--   [Propiedades de usuario](user-profiles.md)
+-   [Propiedades del usuario](user-profiles.md)
 
- 
+ 
 
- 
+ 
 
 
 

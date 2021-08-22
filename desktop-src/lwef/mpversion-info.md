@@ -1,10 +1,10 @@
 ---
-title: MPVERSION_INFO estructura (MpClient. h)
-description: Información de versión de los componentes del administrador de protección contra malware de.
+title: MPVERSION_INFO estructura (MpClient.h)
+description: Información de versión de los componentes del administrador de protección contra malware.
 ms.assetid: C18EE6FE-57E1-4814-85CA-19C3ACE275D2
 keywords:
-- MPVERSION_INFO estructura de las características heredadas del entorno de Windows
-- Puntero de estructura de PMPVERSION_INFO características de entorno heredado de Windows
+- MPVERSION_INFO estructura heredada de Windows environment
+- PMPVERSION_INFO puntero de estructura Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f30153c427b880600a3d8aeb3c411a8679cd64b1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 50a89b03b8b310416f9b0b496c055f732f4e83859bb7eba50b7891abebc27d26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104359807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119608705"
 ---
-# <a name="mpversion_info-structure"></a>Estructura de información de MPVERSION \_
+# <a name="mpversion_info-structure"></a>Estructura DE \_ INFORMACIÓN DE MPVERSION
 
-Información de versión de los componentes del administrador de protección contra malware de.
+Información de versión de los componentes del administrador de protección contra malware.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ typedef struct tagMPVERSION_INFO {
 **Producto**
 </dt> <dd>
 
-Tipo: **[ **\_ versión de MPCOMPONENT**](mpcomponent-version.md)**
+Tipo: **[ **MPCOMPONENT \_ VERSION**](mpcomponent-version.md)**
 
 </dd> <dd>
 
@@ -63,7 +63,7 @@ Versión del producto.
 **Servicio**
 </dt> <dd>
 
-Tipo: **[ **\_ versión de MPCOMPONENT**](mpcomponent-version.md)**
+Tipo: **[ **MPCOMPONENT \_ VERSION**](mpcomponent-version.md)**
 
 </dd> <dd>
 
@@ -74,7 +74,7 @@ Versión del componente de servicio.
 **FileSystemFilter**
 </dt> <dd>
 
-Tipo: **[ **\_ versión de MPCOMPONENT**](mpcomponent-version.md)**
+Tipo: **[ **MPCOMPONENT \_ VERSION**](mpcomponent-version.md)**
 
 </dd> <dd>
 
@@ -85,7 +85,7 @@ Versión del componente de filtro del sistema de archivos.
 **Engine**
 </dt> <dd>
 
-Tipo: **[ **\_ versión de MPCOMPONENT**](mpcomponent-version.md)**
+Tipo: **[ **MPCOMPONENT \_ VERSION**](mpcomponent-version.md)**
 
 </dd> <dd>
 
@@ -93,21 +93,21 @@ Versión del componente del motor.
 
 </dd> <dt>
 
-**Assignature**
+**ASSignature**
 </dt> <dd>
 
-Tipo: **[ **\_ versión de MPCOMPONENT**](mpcomponent-version.md)**
+Tipo: **[ **MPCOMPONENT \_ VERSION**](mpcomponent-version.md)**
 
 </dd> <dd>
 
-Versión del componente de firma de AntiSpyware.
+Versión del componente de firma antispyware.
 
 </dd> <dt>
 
 **AVSignature**
 </dt> <dd>
 
-Tipo: **[ **\_ versión de MPCOMPONENT**](mpcomponent-version.md)**
+Tipo: **[ **MPCOMPONENT \_ VERSION**](mpcomponent-version.md)**
 
 </dd> <dd>
 
@@ -118,29 +118,29 @@ Versión del componente de firma antivirus.
 **NISEngine**
 </dt> <dd>
 
-Tipo: **[ **\_ versión de MPCOMPONENT**](mpcomponent-version.md)**
+Tipo: **[ **MPCOMPONENT \_ VERSION**](mpcomponent-version.md)**
 
 </dd> <dd>
 
-Versión del motor NIS.
+Versión del motor de NIS.
 
 </dd> <dt>
 
 **NISSignature**
 </dt> <dd>
 
-Tipo: **[ **\_ versión de MPCOMPONENT**](mpcomponent-version.md)**
+Tipo: **[ **MPCOMPONENT \_ VERSION**](mpcomponent-version.md)**
 
 </dd> <dd>
 
-Versión del componente de firma de firma NIS.
+Versión del componente de firma de firma de NIS.
 
 </dd> <dt>
 
 **Reserved**
 </dt> <dd>
 
-Tipo: **[**MPCOMPONENT \_ versión**](mpcomponent-version.md) \[ 4\]**
+Tipo: **[**MPCOMPONENT \_ VERSIÓN**](mpcomponent-version.md) \[ 4\]**
 
 </dd> <dd>
 
@@ -152,11 +152,11 @@ Campos reservados.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
@@ -164,7 +164,7 @@ Campos reservados.
 
 <dl> <dt>
 
-[**versión de MPCOMPONENT \_**](mpcomponent-version.md)
+[**VERSIÓN DE \_ MPCOMPONENT**](mpcomponent-version.md)
 </dt> </dl>
 
  

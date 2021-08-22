@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectVariable AsClassInstance (D3dx11effect. h)
+title: Método ID3DX11EffectVariable AsClassInstance (D3dx11effect.h)
 description: Obtiene una variable de instancia de clase.
 ms.assetid: c1d4adb5-7cd2-4ba2-9a91-3d03f9596a10
 keywords:
 - Método AsClassInstance Direct3D 11
-- Método AsClassInstance Direct3D 11, interfaz ID3DX11EffectVariable
-- Interfaz ID3DX11EffectVariable Direct3D 11, método AsClassInstance
+- Método AsClassInstance Direct3D 11 , interfaz ID3DX11EffectVariable
+- Interfaz ID3DX11EffectVariable Direct3D 11 , método AsClassInstance
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17dc9124f4b9a24ead503694c10a4a2d2205ed3b
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7d0f54ba1225fc7559c131d99c1fcde5ea9f1edf7fea0869af775c64fb017dc4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104998322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119729155"
 ---
-# <a name="id3dx11effectvariableasclassinstance-method"></a>ID3DX11EffectVariable:: AsClassInstance (método)
+# <a name="id3dx11effectvariableasclassinstance-method"></a>Método ID3DX11EffectVariable::AsClassInstance
 
 Obtiene una variable de instancia de clase.
 
@@ -45,12 +45,12 @@ Este método no tiene parámetros.
 
 Tipo: **[ **ID3DX11EffectClassInstanceVariable**](id3dx11effectclassinstancevariable.md)\***
 
-Puntero a una variable de instancia de clase. Vea [**ID3DX11EffectClassInstanceVariable**](id3dx11effectclassinstancevariable.md).
+Puntero a la variable de instancia de clase. Vea [**ID3DX11EffectClassInstanceVariable**](id3dx11effectclassinstancevariable.md).
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen de Effects 11 para compilar la aplicación de tipo Effects. Para obtener más información sobre el uso de los efectos 11 de origen, vea [diferencias entre los efectos 10 y 11](d3d11-graphics-programming-guide-effects-differences.md).
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -60,8 +60,8 @@ Puntero a una variable de instancia de clase. Vea [**ID3DX11EffectClassInstanceV
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de Effects 11 está disponible en línea como código fuente compartido).</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

@@ -1,5 +1,5 @@
 ---
-description: Contiene un puntero al objeto DXGI Administrador de dispositivos del escritor receptor.
+description: Contiene un puntero a la Administrador de dispositivos DXGI del escritor receptor.
 ms.assetid: 0328FC02-2D32-480B-BB03-9C78BF317AF5
 title: MF_SINK_WRITER_D3D_MANAGER atributo (Mfreadwrite.h)
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "119714315"
 ---
 # <a name="mf_sink_writer_d3d_manager-attribute"></a>Atributo MF \_ SINK \_ WRITER \_ D3D \_ MANAGER
 
-Contiene un puntero a la Administrador de dispositivos DXGI para [el escritor de receptores.](sink-writer.md)
+Contiene un puntero a la Administrador de dispositivos DXGI para [el escritor de receptores](sink-writer.md).
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -34,7 +34,7 @@ Use este atributo con las siguientes funciones:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                              |
@@ -42,7 +42,7 @@ Use este atributo con las siguientes funciones:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

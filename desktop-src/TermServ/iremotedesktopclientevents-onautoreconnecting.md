@@ -1,12 +1,12 @@
 ---
-title: IRemoteDesktopClientEvents OnAutoReconnecting, método
+title: Método IRemoteDesktopClientEvents OnAutoReconnecting
 description: Se llama cuando el control de cliente intenta restablecer automáticamente una conexión a una sesión remota.
 ms.assetid: 299408A9-ED14-42F4-B324-AF4C86FEDABE
 ms.tgt_platform: multiple
 keywords:
 - Método OnAutoReconnecting Servicios de Escritorio remoto
-- Método OnAutoReconnecting Servicios de Escritorio remoto, interfaz IRemoteDesktopClientEvents
-- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto, método OnAutoReconnecting
+- Método OnAutoReconnecting Servicios de Escritorio remoto , interfaz IRemoteDesktopClientEvents
+- Interfaz IRemoteDesktopClientEvents Servicios de Escritorio remoto método , OnAutoReconnecting
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d74c37919384727fdf51aad004349478798a3ffd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7246b8822b3d3abed5d483f52c64eee88d67f99694bda44c5d8f72318cb2c04a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104535392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119511735"
 ---
-# <a name="iremotedesktopclienteventsonautoreconnecting-method"></a>IRemoteDesktopClientEvents:: OnAutoReconnecting (método)
+# <a name="iremotedesktopclienteventsonautoreconnecting-method"></a>IRemoteDesktopClientEvents::OnAutoReconnecting (método)
 
 Se llama cuando el control de cliente intenta restablecer automáticamente una conexión a una sesión remota.
 
@@ -48,42 +48,42 @@ void OnAutoReconnecting(
 
 <dl> <dt>
 
-*disconnectReason* \[ de\]
+*disconnectReason* \[ En\]
 </dt> <dd>
 
 Motivo del evento de desconexión.
 
 </dd> <dt>
 
-*ExtendedDisconnectReason* \[ de\]
+*ExtendedDisconnectReason* \[ En\]
 </dt> <dd>
 
-Información extendida para el evento de desconexión.
+Información ampliada para el evento de desconexión.
 
 </dd> <dt>
 
-*disconnectErrorMessage* \[ de\]
+*disconnectErrorMessage* \[ En\]
 </dt> <dd>
 
 Mensaje de error para el evento de desconexión.
 
 </dd> <dt>
 
-*networkAvailable* \[ de\]
+*networkAvailable* \[ En\]
 </dt> <dd>
 
 Si la red está disponible.
 
 </dd> <dt>
 
-*attemptCount* \[ de\]
+*attemptCount* \[ En\]
 </dt> <dd>
 
-Qué intento es.
+¿Cuál es el intento?
 
 </dd> <dt>
 
-*maxAttemptCount* \[ de\]
+*maxAttemptCount* \[ En\]
 </dt> <dd>
 
 Se realizará el número máximo de intentos de reconexión.

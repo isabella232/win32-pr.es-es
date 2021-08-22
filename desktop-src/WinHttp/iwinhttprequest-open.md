@@ -1,7 +1,7 @@
 ---
 description: Abre una conexión HTTP a un recurso HTTP.
 ms.assetid: 5207e873-44c0-4eeb-9db8-d8b69432070c
-title: 'IWinHttpRequest:: Open (método)'
+title: IWinHttpRequest::Open (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 5543832eb1ebc3df210237eff71d415de14b2f62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a99a20873e5adc0f0dd0a33f7bc8e765b3c50ebb2fb3d90ad65f14d8fc33c3b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119643825"
 ---
-# <a name="iwinhttprequestopen-method"></a>IWinHttpRequest:: Open (método)
+# <a name="iwinhttprequestopen-method"></a>IWinHttpRequest::Open (método)
 
-El método **Open** abre una conexión http a un recurso http.
+El **método Open** abre una conexión HTTP a un recurso HTTP.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,14 +42,14 @@ HRESULT Open(
 
 <dl> <dt>
 
-*Método* \[ de\]
+*Método* \[ En\]
 </dt> <dd>
 
-Especifica el [*verbo http*](glossary.md) utilizado para el método **abierto** , como "Get" o "put". Use siempre mayúsculas como algunos servidores para omitir los *verbos http* en minúsculas.
+Especifica el [*verbo HTTP utilizado*](glossary.md) para el método **Open,** como "GET" o "PUT". Use siempre mayúsculas, ya que algunos servidores omiten los *verbos HTTP en* minúsculas.
 
 </dd> <dt>
 
-*Dirección URL* \[ de\]
+*Dirección URL* \[ En\]
 </dt> <dd>
 
 Especifica el nombre del recurso. Debe ser una dirección URL absoluta.
@@ -59,14 +59,14 @@ Especifica el nombre del recurso. Debe ser una dirección URL absoluta.
 *Async* \[ en, opcional\]
 </dt> <dd>
 
-Indica si se va a abrir en modo asincrónico.
+Indica si se debe abrir en modo asincrónico.
 
 
 
-| Value                                                                                                                                                         | Significado                                                                                                                                                                                           |
+| Valor                                                                                                                                                         | Significado                                                                                                                                                                                           |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="VARIANT_FALSE"></span><span id="variant_false"></span><dl> <dt>**VARIANTE \_ false**</dt> </dl> | Abre la conexión HTTP en modo sincrónico. Una llamada a [**send**](iwinhttprequest-send.md) no vuelve hasta que [WinHTTP](about-winhttp.md) ha recibido por completo la respuesta.<br/> |
-| <span id="VARIANT_TRUE"></span><span id="variant_true"></span><dl> <dt>**VARIANTE \_ true**</dt> </dl>    | Abre la conexión HTTP en modo asincrónico.<br/>                                                                                                                                        |
+| <span id="VARIANT_FALSE"></span><span id="variant_false"></span><dl> <dt>**VARIANT \_ FALSE**</dt> </dl> | Abre la conexión HTTP en modo sincrónico. Una llamada a [**Send**](iwinhttprequest-send.md) no se devuelve hasta [que WinHTTP](about-winhttp.md) ha recibido completamente la respuesta.<br/> |
+| <span id="VARIANT_TRUE"></span><span id="variant_true"></span><dl> <dt>**VARIANT \_ TRUE**</dt> </dl>    | Abre la conexión HTTP en modo asincrónico.<br/>                                                                                                                                        |
 
 
 
@@ -76,20 +76,20 @@ Indica si se va a abrir en modo asincrónico.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es correcto si se ejecuta correctamente o un valor de error en caso contrario. **\_**
+El valor devuelto es **S \_ OK si se** ejecuta correctamente o un valor de error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método abre una conexión al recurso identificado en la *dirección URL* mediante el [*verbo http*](glossary.md) proporcionado en el *método*.
+Este método abre una conexión al recurso identificado en *url* mediante el [*verbo HTTP*](glossary.md) especificado en el *método*.
 
 > [!Note]  
-> En Windows XP y Windows 2000, consulte la sección [requisitos de tiempo de ejecución](winhttp-start-page.md) de la página de inicio de winhttp.
+> Para Windows XP y Windows 2000, consulte la sección [Requisitos](winhttp-start-page.md) en tiempo de ejecución de la página de inicio de WinHTTP.
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y leer el texto de la respuesta.
+En el ejemplo siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y leer el texto de respuesta.
 
 
 ```C++
@@ -186,7 +186,7 @@ int main()
 
 
 
-En el ejemplo de scripting siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y leer el texto de la respuesta.
+En el ejemplo de scripting siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y leer el texto de respuesta.
 
 
 ```JScript
@@ -209,13 +209,13 @@ WScript.Echo( WinHttpReq.ResponseText);
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional con las \[ aplicaciones de escritorio de SP3 únicamente\]<br/>            |
-| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server con \[ solo aplicaciones de escritorio de SP3\]<br/>         |
-| Redistribuible<br/>          | WinHTTP 5,0 e Internet Explorer 5,01 o posterior en Windows XP y Windows 2000.<br/> |
-| IDL<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Winhttp. lib</dt> </dl>     |
+| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>            |
+| Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
+| Redistribuible<br/>          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | Archivo DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
@@ -230,7 +230,7 @@ WScript.Echo( WinHttpReq.ResponseText);
 [**WinHttpRequest**](winhttprequest.md)
 </dt> <dt>
 
-[Versiones de WinHTTP](winhttp-versions.md)
+[Versiones winHTTP](winhttp-versions.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
 title: Elemento WorkingDirectory (execType)
-description: Especifica el directorio donde existe el archivo ejecutable o los archivos utilizados por el archivo ejecutable.
+description: Especifica el directorio donde existe el archivo ejecutable o los archivos utilizados por el ejecutable.
 ms.assetid: 09e53748-6d21-42df-bbdd-f0fd9693aab0
 keywords:
-- Programador de tareas del elemento WorkingDirectory
+- Elemento WorkingDirectory Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e8c382d0e60b16d85fbc86f7579a0e700d3dd30b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5a91908d5cd774f19f32a182934688dc899179d1abba967b7871a646efcfe042
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513747"
 ---
 # <a name="workingdirectory-exectype-element"></a>Elemento WorkingDirectory (execType)
 
-Especifica el directorio donde existe el archivo ejecutable o los archivos utilizados por el archivo ejecutable.
+Especifica el directorio donde existe el archivo ejecutable o los archivos utilizados por el ejecutable.
 
 ``` syntax
 <xs:element name="WorkingDirectory"
@@ -30,7 +30,7 @@ Especifica el directorio donde existe el archivo ejecutable o los archivos utili
  />
 ```
 
-El elemento **WorkingDirectory** se define mediante el tipo complejo de [**execType**](taskschedulerschema-exectype-complextype.md) .
+El tipo complejo [**execType**](taskschedulerschema-exectype-complextype.md) define el elemento **WorkingDirectory.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -38,19 +38,19 @@ El elemento **WorkingDirectory** se define mediante el tipo complejo de [**execT
 
 | Elemento                                                      | Derivado de                                                 | Descripción                                                            |
 |--------------------------------------------------------------|--------------------------------------------------------------|------------------------------------------------------------------------|
-| [**Ejec**](taskschedulerschema-exec-actiongroup-element.md) | [**execType**](taskschedulerschema-exectype-complextype.md) | Especifica una acción que ejecuta una operación de línea de comandos.<br/> |
+| [**Exec**](taskschedulerschema-exec-actiongroup-element.md) | [**execType**](taskschedulerschema-exectype-complextype.md) | Especifica una acción que ejecuta una operación de línea de comandos.<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de scripts, el directorio de trabajo se especifica mediante la propiedad [**ExecAction. WorkingDirectory**](execaction-workingdirectory.md) .
+Para el desarrollo de scripts, la propiedad [**ExecAction.WorkingDirectory**](execaction-workingdirectory.md) especifica el directorio de trabajo.
 
-En el desarrollo de C++, el directorio de trabajo se especifica mediante la propiedad [**IExecAction:: WorkingDirectory**](/windows/desktop/api/taskschd/nf-taskschd-iexecaction-get_workingdirectory) .
+Para el desarrollo de C++, la propiedad [**IExecAction::WorkingDirectory**](/windows/desktop/api/taskschd/nf-taskschd-iexecaction-get_workingdirectory) especifica el directorio de trabajo.
 
 ## <a name="examples"></a>Ejemplos
 
-En el código XML siguiente se define una acción de ejecución.
+El código XML siguiente define una acción de ejecución.
 
 
 ```XML
@@ -67,10 +67,10 @@ En el código XML siguiente se define una acción de ejecución.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -78,7 +78,7 @@ En el código XML siguiente se define una acción de ejecución.
 
 <dl> <dt>
 
-[Programador de tareas elementos de esquema](task-scheduler-schema-elements.md)
+[Programador de tareas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Programador de tareas](task-scheduler-start-page.md)

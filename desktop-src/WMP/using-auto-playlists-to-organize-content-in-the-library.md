@@ -1,45 +1,45 @@
 ---
-title: Usar listas de reproducción automáticas para organizar el contenido de la biblioteca
-description: Usar listas de reproducción automáticas para organizar el contenido de la biblioteca
+title: Usar listas de reproducción automáticas para organizar el contenido en la biblioteca
+description: Usar listas de reproducción automáticas para organizar el contenido en la biblioteca
 ms.assetid: 118d4357-044f-4986-af51-0c344470e891
 keywords:
-- Windows Media Player tiendas en línea, listas de reproducción automáticas
+- Reproductor de Windows Media en línea, listas de reproducción automáticas
 - tiendas en línea, listas de reproducción automáticas
-- tipo 1 tiendas en línea, listas de reproducción automáticas
-- tipo 2 tiendas en línea, listas de reproducción automáticas
-- Windows Media Player tiendas en línea, organizar el contenido de la biblioteca
-- tiendas en línea, organizar el contenido de la biblioteca
-- Escriba 1 tiendas en línea, organizar el contenido de la biblioteca
-- tipo 2 tiendas en línea, organizar el contenido de la biblioteca
-- Windows Media Player tiendas en línea, organización de contenido de biblioteca
+- tiendas en línea de tipo 1, listas de reproducción automáticas
+- tiendas en línea de tipo 2, listas de reproducción automáticas
+- Reproductor de Windows Media en línea, organizar el contenido de la biblioteca
+- tiendas en línea, organización del contenido de la biblioteca
+- tiendas en línea de tipo 1, organización del contenido de la biblioteca
+- tiendas en línea de tipo 2, organización del contenido de la biblioteca
+- Reproductor de Windows Media en línea,organización de contenido de biblioteca
 - tiendas en línea, organización de contenido de biblioteca
-- tipo 1 almacenes en línea, organización de contenido de biblioteca
-- tipo 2 tiendas en línea, organización de contenido de biblioteca
-- Biblioteca, organizar contenido
+- tiendas en línea de tipo 1, organización de contenido de biblioteca
+- tiendas en línea de tipo 2, organización de contenido de biblioteca
+- library,organización de contenido
 - organizar el contenido de la biblioteca
 - listas de reproducción automáticas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa53a4b9f56a8aa6425f137ef4a8c43bd8ed1454
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c0e32d0f95093d9550c71643330267d59a57f56db7e0d666274a492ac29b2c58
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104532248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507175"
 ---
-# <a name="using-auto-playlists-to-organize-content-in-the-library"></a>Usar listas de reproducción automáticas para organizar el contenido de la biblioteca
+# <a name="using-auto-playlists-to-organize-content-in-the-library"></a>Usar listas de reproducción automáticas para organizar el contenido en la biblioteca
 
-Puede usar listas de reproducción automáticas para organizar el contenido premium que proporcione. Por ejemplo, puede utilizar Windows Media Player para crear una lista de reproducción automática que solo contenga el contenido que proporcionó una clasificación de usuario de al menos cuatro estrellas. A continuación, puede Agregar la lista de reproducción automática a la biblioteca en Windows Media Player para que se muestre en el nodo música comprada en el nodo distribuidor de contenido.
+Puede usar listas de reproducción automáticas para organizar el contenido premium que proporcione. Por ejemplo, podría usar Reproductor de Windows Media para crear una lista de reproducción automática que contenga solo el contenido proporcionado con una clasificación de usuario de al menos cuatro estrellas. A continuación, puede agregar la lista de reproducción automática a la biblioteca de Reproductor de Windows Media para que se muestre en el nodo Purchased Música en el nodo del distribuidor de contenido.
 
-Para ello, siga estos pasos:
+Para ello, realice los pasos siguientes:
 
 1.  Cree la lista de reproducción automática.
-2.  Con el explorador de Windows, vaya a la lista de reproducción automática y recupere el archivo. wpl.
-3.  Con el modelo de objetos de Media Player de Windows, agregue la lista de reproducción automática a la biblioteca.
-4.  Establezca el atributo **WM/ContentDistributor** para la lista de reproducción en el nombre de clave del distribuidor de contenido.
-5.  Establezca el atributo **SyncOnly** para la lista de reproducción en true.
+2.  Con Windows explorador, vaya a la lista de reproducción automática y recupere el archivo .wpl.
+3.  Con el Reproductor de Windows Media de objetos, agregue la lista de reproducción automática a la biblioteca.
+4.  Establezca el **atributo WM/ContentDistributor de la** lista de reproducción en el nombre de clave del distribuidor de contenido.
+5.  Establezca el **atributo SyncOnly** de la lista de reproducción en true.
 
-En el código de ejemplo de JScript siguiente se muestra una función que agrega una lista de reproducción automática denominada "Favorites Favorites" al nodo de Proseware en la biblioteca:
+En el código JScript ejemplo siguiente se muestra una función que agrega una lista de reproducción automática denominada "Favoritos aciertos" al nodo Proseware de la biblioteca:
 
 
 ```C++
@@ -60,13 +60,13 @@ function AddWPL()
 [Acerca de la integración de bibliotecas](download-manager-overview.md)
 </dt> <dt>
 
-[**Información común para las tiendas en línea de tipo 1 y 2**](information-common-to-type-1-and-type-2-online-stores.md)
+[**Información común a los almacenes en línea de tipo 1 y 2**](information-common-to-type-1-and-type-2-online-stores.md)
 </dt> <dt>
 
-[**MediaCollection. Add**](mediacollection-add.md)
+[**MediaCollection.add**](mediacollection-add.md)
 </dt> <dt>
 
-[**Lista de reproducción. setItemInfo**](playlist-setiteminfo.md)
+[**Playlist.setItemInfo**](playlist-setiteminfo.md)
 </dt> <dt>
 
 [**Listas de reproducción estáticas y automáticas**](static-and-auto-playlists.md)
@@ -81,9 +81,9 @@ function AddWPL()
 [**Trabajar con la biblioteca**](working-with-the-library.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

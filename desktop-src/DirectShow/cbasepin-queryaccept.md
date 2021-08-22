@@ -1,7 +1,7 @@
 ---
-description: 'El método QueryAccept determina si el PIN acepta un tipo de medio especificado. Este método implementa el método IPin:: QueryAccept.'
+description: El método QueryAccept determina si el pin acepta un tipo de medio especificado. Este método implementa el método IPin::QueryAccept.
 ms.assetid: 7aa25b45-5116-474b-afee-1eddc8b7fd2a
-title: Método CBasePin. QueryAccept (Amfilter. h)
+title: Método CBasePin.QueryAccept (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d2c4a982f583d1780dbab37d982fd9a54601e141
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 74a179fd1a7f59dcf4e4d22eadf509db9b00cbe482d55e6a6755d7207de8079d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671831"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119689005"
 ---
-# <a name="cbasepinqueryaccept-method"></a>CBasePin. QueryAccept, método
+# <a name="cbasepinqueryaccept-method"></a>Método CBasePin.QueryAccept
 
-El `QueryAccept` método determina si el PIN acepta un tipo de medio especificado. Este método implementa el método [**IPin:: QueryAccept**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryaccept) .
+El `QueryAccept` método determina si el pin acepta un tipo de medio especificado. Este método implementa el [**método IPin::QueryAccept.**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryaccept)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,22 +42,22 @@ HRESULT QueryAccept(
 
 <dl> <dt>
 
-*p.p.* 
+*Pmt* 
 </dt> <dd>
 
-Puntero a una estructura de [**\_ \_ tipo de medio am**](/windows/win32/api/strmif/ns-strmif-am_media_type) que especifica el tipo de medio.
+Puntero a una [**estructura \_ AM MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) que especifica el tipo de medio.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve S \_ correcto si el tipo de medio es aceptable. De lo contrario, devuelve S \_ false.
+Devuelve S \_ OK si el tipo de medio es aceptable. De lo contrario, devuelve S \_ FALSE.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En la clase base, este método delega en el método [**CBasePin:: CheckMediaType**](cbasepin-checkmediatype.md) . Si **CheckMediaType** produce un error, `QueryAccept` devuelve S \_ false.
+En la clase base, este método delega en el [**método CBasePin::CheckMediaType.**](cbasepin-checkmediatype.md) Si se produce un error **en CheckMediaType,** `QueryAccept` devuelve S \_ FALSE.
 
-Este método no contiene la sección crítica del PIN ([**CBasePin:: m \_ Plock**](cbasepin-m-plock.md)). Si la clase derivada modifica dinámicamente el conjunto de tipos de medios aceptables, debe invalidar este método para que contenga la sección crítica.
+Este método no contiene la sección crítica del pin ([**CBasePin::m \_ pLock**](cbasepin-m-plock.md)). Si la clase derivada modifica dinámicamente el conjunto de tipos de medios aceptables, debe invalidar este método para contener la sección crítica.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Este método no contiene la sección crítica del PIN ([**CBasePin:: m \_ Plock*
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Este método no contiene la sección crítica del PIN ([**CBasePin:: m \_ Plock*
 
 <dl> <dt>
 
-[**Clase CBasePin**](cbasepin.md)
+[**CBasePin (clase)**](cbasepin.md)
 </dt> </dl>
 
  

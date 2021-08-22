@@ -1,10 +1,10 @@
 ---
-title: DRM_OPL_OUTPUT_IDS estructura (wmdrmsdk. h)
-description: La \_ \_ \_ estructura de los ID. de salida del OPL de DRM contiene varios identificadores de salida de nivel de protección de salida (OPL).
+title: DRM_OPL_OUTPUT_IDS estructura (Wmdrmsdk.h)
+description: La estructura OPL OUTPUT IDS de DRM contiene una serie de identificadores de salida de nivel de protección \_ \_ de salida \_ (OPL).
 ms.assetid: 3627f2a7-1cea-400b-82e7-678898ccc386
 keywords:
-- DRM_OPL_OUTPUT_IDS estructura de Windows Media Format
-- Formato de Windows Media de estructura
+- DRM_OPL_OUTPUT_IDS structure windows Media Format
+- Estructura de windows Formato multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 802787c5e373c837d639e0225bf650d80c105970
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 265e1015dd31281043d388debc802b390e7dd2d534f426ecbe24402efffd13df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119658865"
 ---
-# <a name="drm_opl_output_ids-structure"></a>Estructura de IDS. de \_ salida de DRM \_ \_
+# <a name="drm_opl_output_ids-structure"></a>Estructura \_ DE IDENTIFICADORES DE SALIDA de OPL \_ de DRM \_
 
-La estructura de los ID. de salida del OPL de DRM contiene varios identificadores de salida de nivel de protección de salida (OPL). **\_ \_ \_**
+La **estructura \_ OPL OUTPUT \_ \_ IDS de DRM** contiene una serie de identificadores de salida de nivel de protección de salida (OPL).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ typedef struct DRM_OPL_OUTPUT_IDS {
 
 <dl> <dt>
 
-**Cid**
+**cIds**
 </dt> <dd>
 
-Número de identificadores de la matriz a los que hace referencia **rgIds**.
+Número de identificadores de la matriz a la que hace referencia **rgIds.**
 
 </dd> <dt>
 
@@ -56,9 +56,9 @@ Dirección de una matriz de GUID. Cada miembro de la matriz contiene un identifi
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta estructura se usa como un miembro de las estructuras de la copia de DRM de la copia de los OPL y del OPL de la [**reproducción de DRM \_ \_**](drmdrm-play-opl.md) para identificar grupos de identificadores de salida. [**\_ \_**](drmdrm-copy-opl.md)
+Esta estructura se usa como miembro de las estructuras [**\_ \_ OPL**](drmdrm-copy-opl.md) de DRM COPY y [**DRM PLAY \_ \_ OPL**](drmdrm-play-opl.md) para identificar grupos de identificadores de salida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ Esta estructura se usa como un miembro de las estructuras de la copia de DRM de 
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

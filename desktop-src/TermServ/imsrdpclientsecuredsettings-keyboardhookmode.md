@@ -1,12 +1,12 @@
 ---
-title: Propiedad KeyboardHookMode de IMsRdpClientSecuredSettings
-description: Especifica la configuración de redirección de teclado, que especifica cómo y cuándo aplicar el método abreviado de teclado de Windows (por ejemplo, ALT + TAB).
+title: IMsRdpClientSecuredSettings KeyboardHookMode, propiedad
+description: Especifica la configuración de redireccionamiento del teclado, que especifica cómo y cuándo aplicar Windows método abreviado de teclado (por ejemplo, ALT+TAB).
 ms.assetid: 16734580-9be9-476b-b8e7-1eca3ba24d61
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad KeyboardHookMode
-- Propiedad KeyboardHookMode Servicios de Escritorio remoto, interfaz IMsRdpClientSecuredSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientSecuredSettings, propiedad KeyboardHookMode
+- Propiedad KeyboardHookMode Servicios de Escritorio remoto
+- Propiedad KeyboardHookMode Servicios de Escritorio remoto interfaz , IMsRdpClientSecuredSettings
+- Interfaz IMsRdpClientSecuredSettings Servicios de Escritorio remoto , propiedad KeyboardHookMode
 topic_type:
 - apiref
 api_name:
@@ -19,20 +19,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 948069b689d8799a98805148017a204b719d7645
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a291eeb26f8011440b8629ed46e1bb12c8b9cfb7adb937d33f80afe60a4d5cd7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422131"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657595"
 ---
-# <a name="imsrdpclientsecuredsettingskeyboardhookmode-property"></a>IMsRdpClientSecuredSettings:: KeyboardHookMode (propiedad)
+# <a name="imsrdpclientsecuredsettingskeyboardhookmode-property"></a>IMsRdpClientSecuredSettings::KeyboardHookMode, propiedad
 
-Especifica la configuración de redirección de teclado, que especifica cómo y cuándo aplicar el método abreviado de teclado de Windows (por ejemplo, ALT + TAB).
+Especifica la configuración de redireccionamiento del teclado, que especifica cómo y cuándo aplicar Windows método abreviado de teclado (por ejemplo, ALT+TAB).
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -56,7 +56,7 @@ La nueva configuración. Este parámetro puede ser uno de los valores siguientes
 0
 </dt> <dd>
 
-Aplique las combinaciones de teclas solo localmente en el equipo cliente.
+Aplique combinaciones de teclas solo localmente en el equipo cliente.
 
 </dd> <dt>
 
@@ -70,21 +70,21 @@ Aplique combinaciones de teclas en el servidor remoto.
 2
 </dt> <dd>
 
-Aplicar combinaciones de teclas al servidor remoto solo cuando el cliente se ejecuta en modo de pantalla completa. Este es el valor predeterminado.
+Aplique combinaciones de teclas al servidor remoto solo cuando el cliente se ejecute en modo de pantalla completa. Este es el valor predeterminado.
 
 </dd> </dl>
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Estas propiedades no se pueden establecer cuando el control está conectado.
 
-Para obtener más información, consulte [proporcionar seguridad de cliente RDP](providing-for-rdp-client-security.md) .
+Consulte Proporcionar [seguridad de cliente RDP](providing-for-rdp-client-security.md) para obtener más información.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,7 +96,7 @@ Para obtener más información acerca de Conexión web a Escritorio remoto, cons
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                                 |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>         |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>         |
-| IID<br/>                      | IID \_ IMsRdpClientSecuredSettings se define como 605befcf-39c1-45cc-A811-068fb7be346d<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientSecuredSettings se define como 605befcf-39c1-45cc-a811-068fb7be346d<br/> |
 
 
 

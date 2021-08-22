@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_RECSIZE. Operador de resta'
-title: JET_RECSIZE. Operador de resta (Microsoft. ISAM. esent. Interop. vista)
+description: 'Más información sobre: JET_RECSIZE. Operador subtraction'
+title: JET_RECSIZE. Operador subtraction (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'Subtraction operator '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE.op_Subtraction(Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE,Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_recsize.op_subtraction(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: be60da4aeeab78794f087e9c7095a16dd39eb378
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 40ff320ed629790bad0f2b23aebae5b5092df2b0d25665c2eb2c5d468361216c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119616505"
 ---
-# <a name="jet_recsizesubtraction-operator"></a>JET_RECSIZE. Operador de resta
+# <a name="jet_recsizesubtraction-operator"></a>JET_RECSIZE. Operador subtraction
 
-Calcular la diferencia en tamaños entre dos estructuras JET_RECSIZE.
+Calcule la diferencia de tamaños entre dos JET_RECSIZE estructura.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,28 +65,28 @@ public static JET_RECSIZE operator -(
 #### <a name="parameters"></a>Parámetros
 
   - izquierda  
-    Tipo: [Microsoft.ISAM.esent.Interop.vista.JET_RECSIZE](./jet-recsize-structure2.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE](./jet-recsize-structure2.md)  
     
-    Primer JET_RECSIZE.
+    El primer JET_RECSIZE.
 
 <!-- end list -->
 
   - right  
-    Tipo: [Microsoft.ISAM.esent.Interop.vista.JET_RECSIZE](./jet-recsize-structure2.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE](./jet-recsize-structure2.md)  
     
     Segundo JET_RECSIZE.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [Microsoft.ISAM.esent.Interop.vista.JET_RECSIZE](./jet-recsize-structure2.md)  
-JET_RECSIZE que contiene la diferencia en tamaños entre la izquierda y la derecha.  
+Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE](./jet-recsize-structure2.md)  
+Un JET_RECSIZE que contiene la diferencia de tamaños entre izquierda y derecha.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_RECSIZE](./jet-recsize-structure2.md)
+[JET_RECSIZE estructura](./jet-recsize-structure2.md)
 
-[Miembros de JET_RECSIZE](./jet-recsize-members.md)
+[JET_RECSIZE miembros](./jet-recsize-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

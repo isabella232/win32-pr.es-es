@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-SQL-LastUpdatedDate
-description: Este valor representa la hora a la que se actualizó por última vez SQL Active Directory.
+description: Este valor representa la hora a la que se SQL última actualización Active Directory.
 ms.assetid: 74b7a14b-3e6b-49c8-9ce8-78579a77a5fd
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de MS-SQL-LastUpdatedDate
-- Esquema de AD de atributos de mS-SQL-LastUpdatedDate
+- Esquema de AD del atributo MS-SQL-LastUpdatedDate
+- Esquema de AD del atributo mS-SQL-LastUpdatedDate
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fa2d0272967d9d7b7a4ed49d9d1efe657ed684f4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 44aba3985380b1996dcf0cec71234b01198dfb65268aabd31c8b7705971c52dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705285"
 ---
 # <a name="ms-sql-lastupdateddate-attribute"></a>Atributo MS-SQL-LastUpdatedDate
 
-Este valor representa la hora a la que se actualizó por última vez SQL Active Directory.
+Este valor representa la hora a la que se SQL última actualización Active Directory.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | MS-SQL-LastUpdatedDate                      |
-| Nombre para mostrar de LDAP | mS-SQL-LastUpdatedDate                      |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | El sistema establece este valor.            |
-| Frecuencia de actualización  | Al iniciar el sistema o al actualizar AD.    |
+| Ldap-Display-Name | mS-SQL-LastUpdatedDate                      |
+| Size              | \-                                          |
+| Privilegio actualizar  | El sistema establece este valor.            |
+| Frecuencia de actualización  | Al iniciar el sistema o cuando se actualiza AD.    |
 | Attribute-Id      | 1.2.840.113556.1.4.1381                     |
-| System-ID-GUID    | 9fcc43d4-ccee-11d2-9993-0000f87a57d4        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 9fcc43d4-ccee-11d2-9993-0000f87a57d4        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ Este valor representa la hora a la que se actualizó por última vez SQL Active 
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
-| System-Only            | False                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
@@ -76,13 +76,13 @@ Este valor representa la hora a la que se actualizó por última vez SQL Active 
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
-| System-Only            | False                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
@@ -97,13 +97,13 @@ Este valor representa la hora a la que se actualizó por última vez SQL Active 
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
-| System-Only            | False                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
@@ -116,15 +116,15 @@ Este valor representa la hora a la que se actualizó por última vez SQL Active 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
-| System-Only            | False                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
@@ -139,13 +139,13 @@ Este valor representa la hora a la que se actualizó por última vez SQL Active 
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
-| System-Only            | False                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |
@@ -160,13 +160,13 @@ Este valor representa la hora a la que se actualizó por última vez SQL Active 
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                                                |
-| System-Only            | False                                                                                                                                                                             |
-| Tiene un único valor       | True                                                                                                                                                                              |
-| Está indexado             | False                                                                                                                                                                             |
-| En el catálogo global      | False                                                                                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                                      |
+| System-Only            | Falso                                                                                                                                                                             |
+| Es de un solo valor       | Verdadero                                                                                                                                                                              |
+| Está indexado             | Falso                                                                                                                                                                             |
+| En el catálogo global      | Falso                                                                                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                                      |
 | Range-Lower            | \-                                                                                                                                                                                |
 | Range-Upper            | \-                                                                                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                                                                                        |

@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: método Update. Save (byte, Int32, Int32)'
-title: Método Update. Save (byte, Int32, Int32)
+description: 'Más información sobre: Método Update.Save (Byte , Int32, Int32)'
+title: Método Update.Save (Byte , Int32, Int32)
 TOCTitle: Save method (Byte , Int32, Int32)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Update.Save(System.Byte[],System.Int32,System.Int32@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.update.save(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e2c798f22039ced1bab30ecaa9c3f650079be0f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17e586177075a34f3832486a9ace4a919abaad65dad21c0e54eba47b79f207be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104497620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119603545"
 ---
-# <a name="updatesave-method-byte--int32-int32"></a>Método Update. Save (byte, Int32, Int32)
+# <a name="updatesave-method-byte--int32-int32"></a>Método Update.Save (Byte , Int32, Int32)
 
-Actualice el ID. de la.
+Actualice el tableid.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,36 +64,36 @@ public void Save(
 #### <a name="parameters"></a>Parámetros
 
   - marcador  
-    Automáticamente \[\]  
+    Tipo: \[\]  
     
     Devuelve el marcador del registro actualizado. Puede ser NULL.
 
 <!-- end list -->
 
   - bookmarkSize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Tamaño del búfer del marcador.
+    Tamaño del búfer de marcador.
 
 <!-- end list -->
 
   - actualBookmarkSize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Devuelve el tamaño real del marcador.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Guardar es el último paso para realizar una inserción o una actualización. La actualización se inicia llamando a crear un objeto Update y llamando a JetSetColumn o JetSetColumns una o varias veces para establecer el estado del registro. Por último, se llama a Update para completar la operación de actualización. Los índices solo se actualizan mediante Update o y no durante JetSetColumn ni JetSetColumns.
+Guardar es el último paso para realizar una inserción o una actualización. La actualización se inicia mediante una llamada a la creación de un objeto Update y, a continuación, llamando a JetSetColumn o JetSetColumns una o varias veces para establecer el estado del registro. Por último, se llama a Update para completar la operación de actualización. Los índices solo se actualizan mediante Update o y no durante JetSetColumn o JetSetColumns.
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Update (clase)](./update-class.md)
+[Actualizar clase](./update-class.md)
 
 [Actualizar miembros](./update-members.md)
 
 [Guardar sobrecarga](./update.save-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

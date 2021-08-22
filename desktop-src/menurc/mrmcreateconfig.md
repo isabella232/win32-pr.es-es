@@ -1,9 +1,9 @@
 ---
-title: Función MrmCreateConfig (MrmResourceIndexer. h)
+title: Función MrmCreateConfig (MrmResourceIndexer.h)
 description: Crea un nuevo archivo de configuración de PRI inicializado que define los valores predeterminados del calificador que especifique. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados.
 ms.assetid: F8FB4E9C-1C04-460A-BFA1-FB663653DA3C
 keywords:
-- Menús de la función MrmCreateConfig y otros recursos
+- Menús de función MrmCreateConfig y otros recursos
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3adb270d9bbd9194822181314a697fa1d267a127
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 618823054914a609a451d6a0fe77ed6380e2d95982e14158f5965bf3f9c82260
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105666057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119601925"
 ---
-# <a name="mrmcreateconfig-function"></a>MrmCreateConfig función)
+# <a name="mrmcreateconfig-function"></a>Función MrmCreateConfig
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-Crea un nuevo archivo de configuración de PRI inicializado que define los valores predeterminados del calificador que especifique. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea [API de indexación de recursos de paquetes (PRI) y sistemas de compilación personalizados](/windows/uwp/app-resources/pri-apis-custom-build-systems).
+Crea un nuevo archivo de configuración de PRI inicializado que define los valores predeterminados del calificador que especifique. Para obtener más información y tutoriales basados en escenarios sobre cómo usar estas API, vea API de indexación de recursos de paquetes (PRI) y sistemas [de compilación personalizados.](/windows/uwp/app-resources/pri-apis-custom-build-systems)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,30 +44,30 @@ HRESULT HRESULT MrmCreateConfig(
 
 <dl> <dt>
 
-*platformVersion* \[ de\]
+*platformVersion* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **MrmPlatformVersion**](mrmplatformversion.md)**
 
-Versión de la plataforma (*targetOsVersion*) que se va a usar para el archivo de configuración generado.
+La versión de la plataforma *(targetOsVersion)* que se usará para el archivo de configuración generado.
 
 </dd> <dt>
 
-*defaultQualifiers* \[ en, opcional\]
+*defaultQualifiers* \[ in, opcional\]
 </dt> <dd>
 
 Tipo: **PCWSTR**
 
-Una lista de calificadores de recursos predeterminados. Por ejemplo, L "Language-en-US \_ Scale-100 \_ Contrast-Standard"
+Lista de calificadores de recursos predeterminados. Por ejemplo, L"language-en-US \_ scale-100 \_ contrast-standard"
 
 </dd> <dt>
 
-*outputXmlFile* \[ de\]
+*outputXmlFile* \[ En\]
 </dt> <dd>
 
 Tipo: **PCWSTR**
 
-Ruta de acceso del archivo de configuración que se va a crear.
+Ruta de acceso del archivo de configuración que se creará.
 
 </dd> </dl>
 
@@ -75,7 +75,7 @@ Ruta de acceso del archivo de configuración que se va a crear.
 
 Tipo: **HRESULT**
 
-Es \_ correcto si la función se realizó correctamente; de lo contrario, es algún otro valor. Use las macros SUCCEEDED () o FAILed () (definidas en Winerror. h) para determinar si la operación se ha realizado correctamente o no.
+Es \_ correcto si la función se ha hecho correctamente; de lo contrario, algún otro valor. Use las macros SUCCEEDED() o FAILED() (definidas en winerror.h) para determinar el éxito o el error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,10 +83,10 @@ Es \_ correcto si la función se realizó correctamente; de lo contrario, es alg
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1803 \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server \[\]<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>MrmResourceIndexer. h</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Mrmsupport. lib</dt> </dl>       |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de servidor\]<br/>                                                 |
+| Header<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Mrmsupport.lib</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Mrmsupport.dll</dt> </dl>       |
 
 

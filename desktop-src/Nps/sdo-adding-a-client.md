@@ -5,26 +5,26 @@ ms.assetid: 7e9e25af-e3b9-40ba-a89d-50b3874e3e68
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ccb2ecc6d92a387107dc473bc7c7844c106da43
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2e3ec37354fc65e498664f266b9ca7823b0c5ab739111fa09c728d6e329480a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104421087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119676255"
 ---
 # <a name="adding-a-client"></a>Agregar un cliente
 
-El siguiente código de Visual Basic agrega un nuevo cliente RADIUS y establece la dirección y el secreto compartido para el cliente.
+El siguiente Visual Basic código agrega un nuevo cliente RADIUS y establece la dirección y el secreto compartido para el cliente.
 
 > [!Note]  
-> Se debe agregar una referencia COM al proyecto de Visual Basic para que se compile correctamente. Un ejemplo de la secuencia de comandos de VB tiene el siguiente aspecto: Agregar referencia-> COM-> "biblioteca de tipos SDO 1,0 de IAS". Esto varía en función de la versión de VB.
+> Se debe agregar una referencia COM al proyecto Visual Basic para que se compile correctamente. Un ejemplo de la secuencia de comandos VB tiene este aspecto: Agregar referencia -> COM -> "Biblioteca de tipos de IAS SDO 1.0". Esto varía en función de la versión de VB.
 
- 
+ 
 
 > [!Note]  
-> Este ejemplo no funciona como código de VBScript.
+> Este ejemplo no funciona como código VBScript.
 
- 
+ 
 
 
 ```VB
@@ -178,7 +178,7 @@ End Class
 [**CLIENTPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-clientproperties)
 </dt> <dt>
 
-[Enumerar los objetos de una colección](/windows/desktop/Nps/sdo-enumerating-objects-in-a-collection)
+[Enumerar objetos en una colección](/windows/desktop/Nps/sdo-enumerating-objects-in-a-collection)
 </dt> <dt>
 
 [**IASPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-iasproperties)
@@ -193,6 +193,6 @@ End Class
 [**RADIUSPROPERTIES**](/windows/desktop/api/sdoias/ne-sdoias-radiusproperties)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -43,7 +43,7 @@ HRESULT get_Icons(
 
 Colección enumerable de punteros [**de interfaz IDeviceIcon.**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-ideviceicon)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

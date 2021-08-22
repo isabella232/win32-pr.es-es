@@ -1,9 +1,9 @@
 ---
-title: onkeypress
+title: Onkeypress
 description: El controlador de eventos onkeypress controla un evento que se produce cuando se presiona una tecla alfanumérica.
 ms.assetid: 797732b0-faf0-4b3f-9fbe-17959646322b
 keywords:
-- Media Player de Windows onkeypress
+- onkeypress Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,32 +13,32 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 18440c3ed520d83b6c0029e73b3e1790e694e997
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 64c0e7b16e5b90b928f59cbf7374377a9c0e6645ba0a38c30fb6b6b9a45277c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119647065"
 ---
-# <a name="onkeypress"></a>onkeypress
+# <a name="onkeypress"></a>Onkeypress
 
-El controlador de eventos **OnKeyPress** controla un evento que se produce cuando se presiona una tecla alfanumérica.
+El **controlador de eventos onkeypress** controla un evento que se produce cuando se presiona una tecla alfanumérica.
 
 ``` syntax
 onkeypress
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este controlador de eventos no es aplicable a los elementos de **lista de reproducción** , de **efectos** o de **vídeo** cuando hay *vídeo*. **Windowless** es false.
+Este controlador de eventos no es aplicable al elemento **PLAYLIST,** **el elemento EFFECTS** o el elemento **VIDEO** cuando *VIDEO*. **windowless** es false.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
@@ -46,7 +46,7 @@ Este controlador de eventos no es aplicable a los elementos de **lista de reprod
 
 <dl> <dt>
 
-[**Controladores de eventos de ambiente**](ambient-event-handlers.md)
+[**Controladores de eventos ambiente**](ambient-event-handlers.md)
 </dt> </dl>
 
  

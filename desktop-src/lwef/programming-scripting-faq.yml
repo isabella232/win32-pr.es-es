@@ -5,36 +5,36 @@ metadata:
   ms.assetid: 84078c5b-7b04-48fa-9d0a-d95393c323eb
   ms.topic: article
   ms.date: 05/31/2018
-  ms.openlocfilehash: f3e9604bdc6bcd3871cbd931fb22b16400764dbd
-  ms.sourcegitcommit: ecd0ba4732f5264aab9baa2839c11f7fea36318f
+  ms.openlocfilehash: 2465e4a347a82ec892b5f22e32cc11809a6d9c86ba1162212ae82e04294e4fef
+  ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 07/07/2021
-  ms.locfileid: "113483670"
+  ms.lasthandoff: 08/11/2021
+  ms.locfileid: "119555865"
 title: Preguntas más frecuentes sobre scripting de programación
 summary: >
-  \[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+  \[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 sections:
 - name: Omitido
   questions:
   - question: >
-      Cuando uso Microsoft Visual Basic (u otras herramientas de desarrollo) para crear scripts de Microsoft Agent, no veo todas las propiedades y eventos usados en los ejemplos. Cómo acceder a ellos?
+      Cuando uso Microsoft Visual Basic (u otras herramientas de desarrollo) para crear scripts de Microsoft Agent, no veo todas las propiedades y eventos usados en los ejemplos. Cómo obtener acceso a ellos?
     answer: >
-      La mayoría de los eventos, métodos y propiedades admitidos por el control agente de Microsoft solo se exponen en tiempo de ejecución. Consulte [Programming the Microsoft Agent Control (Programación del control microsoft agent)](programming-the-microsoft-agent-control.md) para obtener más información.
+      La mayoría de los eventos, métodos y propiedades admitidos por el control Microsoft Agent solo se exponen en tiempo de ejecución. Para obtener [más información, consulte Programación del control](programming-the-microsoft-agent-control.md) de Microsoft Agent.
   - question: >
       La etiqueta Map (o alguna otra etiqueta) no parece funcionar.
-    answer: "Algunas etiquetas incluyen cadenas entre comillas. Para algunos lenguajes de programación, como Microsoft Visual Basic y Visual Basic Scripting Edition, puede que tenga que usar dos comillas para designar el parámetro de la etiqueta o concatenar un carácter de comilla doble como parte de la cadena. Este último se muestra en este Visual Basic ejemplo:\n\nAgent1.Characters(\"Genie\"). Diga \"This is \\\\ map=\" + chr(34) + \"Spoken text\" \\_ + chr(34) + \"=\" + chr(34) + \"Balloon text\" + chr(34) + \" \\\\ .\"\n\nPara la programación de C, C++ y Java, preceda las barras diagonales inversas y las comillas dobles con una barra diagonal inversa. Por ejemplo:\n\nBSTR bszSpeak = SysAllocString(L\"This is \\\\ \\\\ map= \\\\ \"Spoken text \\\\ \"= \\\\ \"Balloon text \\\\ \" \\\\ \\\\ \");\n\npCharacter->Speak(bszSpeak, ......);\n\n> [!Note]  \n> Microsoft Agent no admite todas las etiquetas especificadas en microsoft Speech API. Además, la compatibilidad con algunos parámetros puede depender del motor de texto a voz instalado. Para obtener más información, vea [Etiquetas de salida de voz de Microsoft Agent](microsoft-agent-speech-output-tags.md).\n\n \n"
+    answer: "Algunas etiquetas incluyen cadenas entre comillas. Para algunos lenguajes de programación, como Microsoft Visual Basic y Visual Basic Scripting Edition, puede que tenga que usar dos comillas para designar el parámetro de la etiqueta o concatenar un carácter de comilla doble como parte de la cadena. Este último ejemplo se muestra en Visual Basic ejemplo:\n\nAgent1.Characters(\"Genie\"). Diga \"This is \\\\ map=\" + chr(34) + \"Spoken text\" \\_ + chr(34) + \"=\" + chr(34) + \"Balloon text\" + chr(34) + \" \\\\ .\"\n\nPara la programación de C, C++ y Java, anteponga barras diagonales inversas y comillas dobles con una barra diagonal inversa. Por ejemplo:\n\nBSTR bszSpeak = SysAllocString(L\"This is \\\\ \\\\ map= \\\\ \"Spoken text \\\\ \"= \\\\ \"Balloon text \\\\ \" \\\\ \\\\ \");\n\npCharacter->Speak(bszSpeak, ......);\n\n> [!Note]  \n> Microsoft Agent no admite todas las etiquetas especificadas en microsoft Speech API. Además, la compatibilidad con algunos parámetros puede depender del motor de texto a voz instalado. Para obtener más información, vea [Etiquetas de salida de voz de Microsoft Agent](microsoft-agent-speech-output-tags.md).\n\n \n"
   - question: >
       No parece que obtenga los eventos RequestStart y RequestComplete en mi script (o programa).
     answer: >
-      Esto podría deberse a uno de los siguientes problemas:
+      Esto puede deberse a uno de los siguientes problemas:
 
 
       -   El lenguaje de programación no es totalmente compatible con ActiveX controles. Compruebe la documentación para asegurarse de que admite la interfaz ActiveX y los eventos para ActiveX objetos.
 
-      -   En una página web con script, no se pudo instalar o cargar otro control. Asegúrese de que todos los demás controles están instalados y se cargan correctamente sin Microsoft Agent.
+      -   En una página web con script, otro control no se pudo instalar ni cargar. Asegúrese de que todos los demás controles están instalados y cargándose correctamente sin Microsoft Agent.
 
-      -   En una página web con scripts con fotogramas, tiene la etiqueta para el control Microsoft Agent en una página y los eventos `<OBJECT>` se han escrito en otra página. Los eventos solo se envían a la página que hospeda el control .
+      -   En una página web con scripts con fotogramas, tiene la etiqueta para el control Microsoft Agent en una página y los eventos `<OBJECT>` en otra página. Los eventos solo se envían a la página que hospeda el control .
   - question: >
       Estoy usando el control Microsoft Agent con otros controles ActiveX en mi página web y no parece que obtenga ningún evento.
     answer: >
@@ -46,51 +46,51 @@ sections:
   - question: >
       ¿Puedo acceder a los parámetros devueltos desde Microsoft Agent mediante JScript?
     answer: >
-      Sí, pero actualmente la única manera de hacerlo es mediante la `<SCRIPT LANGUAGE="JScript" FOR="*object*" EVENT="event()">` sintaxis . Aunque esta sintaxis es compatible con Microsoft Internet Explorer, otros exploradores no la admiten, por lo que es posible que desee evitar el uso de JScript para esta parte del script de la página.
+      Sí, pero actualmente la única manera de hacerlo es usar la `<SCRIPT LANGUAGE="JScript" FOR="*object*" EVENT="event()">` sintaxis . Aunque esta sintaxis es compatible con Microsoft Internet Explorer, otros exploradores no la admiten, por lo que es posible que desee evitar el uso de JScript para esta parte del script de la página.
   - question: >
       ¿Se puede usar Microsoft Agent con motores de reconocimiento de voz o síntesis de voz (texto a voz o TTS) distintos de los proporcionados por Microsoft?
     answer: >
       Sí, siempre que el motor admita las interfaces de Microsoft Speech API (SAPI) 4.0 requeridas por Microsoft Agent. Consulte con el proveedor del motor. Para obtener detalles completos sobre las interfaces SAPI requeridas por Microsoft Agent, consulte [Requisitos de compatibilidad del motor de voz.](speech-engine-support-requirements.md)
   - question: >
-      Mi página incluye etiquetas de objeto HTML para Microsoft Agent, el motor TTS lernout & Depie TruVoice y el motor de reconocimiento de voz Comando y control de Microsoft, pero no todos los componentes se instalan.
+      Mi página incluye etiquetas de objeto HTML para Microsoft Agent, el motor de TTS Lernout & Pie TruVoice y el motor de reconocimiento de voz comando y control de Microsoft, pero no todos los componentes se instalan.
     answer: >
       Normalmente, el problema se puede corregir actualizando la página. Como práctica general, es mejor especificar primero la etiqueta Control de Microsoft Agent, después el motor `<OBJECT>` Lernout & Pie TruVoice y, a continuación, el motor de reconocimiento de voz Command and Control.
   - question: >
-      Después de llamar al método MoveTo, mi carácter parece inmovilizarse aunque tenga animaciones Return asignadas a Animaciones de estado de movimiento.
+      Después de llamar al método MoveTo, mi carácter parece inmovilizarse aunque tengo animaciones Return asignadas a Animaciones de estado de movimiento.
     answer: >
-      Cuando se reproduce una animación, los servicios de animación siguen mostrando su último fotograma hasta que se llama a otra animación. Por lo tanto, debe reproducir otra animación después de llamar a [**MoveTo**](moveto-method.md). Si ha definido una animación **Devolución** para la animación **de** estado Móvil, el servidor la reproducirá primero.
+      Cuando se reproduce una animación, los servicios de animación siguen mostrando su último fotograma hasta que se llama a otra animación. Por lo tanto, debe reproducir otra animación después de llamar a [**MoveTo**](moveto-method.md). Si definió una animación **Return para** la animación de estado **Moving,** el servidor la reproducirá primero.
   - question: >
       Cuando se consulta la propiedad Pitch del carácter, devuelve un valor de -1.
     answer: >
-      Esto sucede si el carácter se ha compilado mediante la propiedad pitch predeterminada de un motor de voz; es decir, el tono no se cambió cuando se creó el carácter.
+      Esto sucede si el carácter se ha compilado mediante la propiedad de tono predeterminada de un motor de voz; es decir, el tono no se cambió cuando se creó el carácter.
   - question: >
       Cuando mi código intenta establecer el identificador de modo TTS para un motor de texto a voz, aparece el siguiente error: No se puede realizar una llamada saliente porque la aplicación envía una llamada sincrónica de entrada.
     answer: >
-      Para establecer la propiedad TTSModeID, debe tener Speech.dll instalado. Suele ser una parte del código de instalación del motor de voz. También puede instalarlo instalando el panel de control de objetos de voz , disponible en la página Descargas de Microsoft Agent.
+      Para establecer la propiedad TTSModeID, debe tener Speech.dll instalado. Esto suele formar parte del código de instalación del motor de voz. También puede instalarlo instalando el panel de control de objetos de voz , disponible en la página Descargas de Microsoft Agent.
   - question: >
-      Al volver a intentar cargar un carácter que no se pudo cargar, la llamada produce un error "Carácter ya cargado".
+      Al volver a intentar cargar un carácter que no se pudo cargar, se produce un error de "Carácter ya cargado" en la llamada.
     answer: >
-      El control Microsoft Agent no descarga un objeto de caracteres (libera la referencia) cuando no se puede cargar su archivo de caracteres asociado. Si desea volver a intentar cargar el carácter, debe llamar explícitamente a [**Unload**](unload-method.md) antes de llamar [**a Load**](load-method.md) la segunda vez. Si lo intenta desde un script de página web, también debe preceder a la llamada **Unload** con una instrucción On Error Resume Next o la llamada **Unload** también producirá un error. (Tenga en cuenta que JScript instrucción On Error Resume Next).
+      El control Microsoft Agent no descarga un objeto de caracteres (libera la referencia) cuando no se puede cargar su archivo de caracteres asociado. Si desea volver a intentar cargar el carácter, debe llamar explícitamente [**a Unload**](unload-method.md) antes de llamar [**a Load**](load-method.md) la segunda vez. Si lo intenta desde un script de página web, también debe preceder a la llamada **unload** con una instrucción On Error Resume Next o la llamada **Unload** también producirá un error. (Tenga en cuenta JScript no tiene ninguna instrucción On Error Resume Next).
 
 
-      Sin embargo, es posible que no necesite incluir código para volver a intentar cargar inmediatamente un carácter cuando el archivo no se pueda cargar. Microsoft Internet Explorer y el componente de servidor de Microsoft Agent intentan reintentar automáticamente varias veces, por lo que las posibilidades de que el reintento se ejecute correctamente son remotas. Una estrategia mejor es esperar (establecer un temporizador) unos segundos antes de reintentar.
+      Sin embargo, es posible que no tenga que incluir código para volver a intentar cargar inmediatamente un carácter cuando el archivo no se puede cargar. Microsoft Internet Explorer y el componente de servidor de Microsoft Agent intentan reintentar automáticamente varias veces, por lo que las posibilidades de que el reintento resulte en una carga correcta son remotas. Una estrategia mejor es esperar (establecer un temporizador) unos segundos antes de reintentar.
   - question: >
       ¿Cómo puedo instalar Microsoft Agent como parte de mi aplicación o desde mi servidor web?
     answer: >
-      Puede instalar el Agente desde el sitio web de Microsoft incluyendo su *CLSID en una etiqueta de objeto HTML*. Sin embargo, si desea incluir e instalar el Agente desde su propio programa de instalación de aplicaciones o desde su propio servidor, debe descargar el archivo de instalación automática de Microsoft Agent; para ello, debe descargarlo desde la página Descargas. Al descargar, elija la opción Guardar en lugar de Ejecutar del explorador. Cada vez que se ejecuta este archivo, se instala automáticamente Microsoft Agent en el equipo de destino. Por lo tanto, puede especificar el archivo en el script de instalación.
+      Puede instalar el Agente desde el sitio web de Microsoft incluyendo su *CLSID en una etiqueta de objeto HTML*. Sin embargo, si desea incluir e instalar el Agente desde su propio programa de instalación de aplicaciones o desde su propio servidor, debe descargar el archivo de archivo del gabinete de instalación automática de Microsoft Agent; para ello, debe descargarlo desde la página Descargas. Al descargar, elija la opción Guardar en lugar de Ejecutar del explorador. Cada vez que se ejecute este archivo, instalará automáticamente Microsoft Agent en la máquina de destino. Por lo tanto, puede especificar el archivo en el script de instalación.
 
 
-      No intente instalar Microsoft Agent copiando sus distintos . ARCHIVOS DLL e intento de registrarlos usted mismo. No se admite el intento de instalar el Agente por cualquier otro medio y, a continuación, no se admite la ejecución de su archivo de archivador de instalación propia.
+      No intente instalar Microsoft Agent copiando sus distintos . ARCHIVOS DLL e intento de registrarlo usted mismo. No se admite el intento de instalar el Agente por cualquier otro medio y, a continuación, no se admite la ejecución de su archivo de archivador de instalación propia.
 
 
-      El sistema de destino también debe incluir versiones recientes de MSVCRT.DLL (VC++ runtime), REGSVR32.EXE (herramienta de registro incluida con Microsoft VC++) y COM. La mejor manera de asegurarse de que se instalan las versiones correctas es requerir que Microsoft Internet Explorer 3.02 o posterior esté instalado. Sin embargo, también puede licenciar estos requisitos en tiempo de ejecución. (Para la versión más reciente de COM, acceda a la actualización de DCOM desde el sitio web de Microsoft).
+      El sistema de destino también debe incluir versiones recientes de MSVCRT.DLL (VC++ runtime), REGSVR32.EXE (herramienta de registro incluida con Microsoft VC++) y COM. La mejor manera de asegurarse de que están instaladas las versiones correctas es requerir que Microsoft Internet Explorer 3.02 o posterior esté instalado. Sin embargo, también puede licenciar estos requisitos en tiempo de ejecución. (Para la versión más reciente de COM, acceda a la actualización de DCOM desde el sitio web de Microsoft).
 
 
       Microsoft Agent 2.0 no se instalará en Microsoft Windows 2000, ya que esta versión del sistema operativo ya incluye el Agente .
   - question: >
-      ¿Puedo usar el Visual Basic Asistente para instalación instalar Microsoft Agent?
+      ¿Puedo usar el Visual Basic Asistente para instalación para instalar Microsoft Agent?
     answer: >
-      Aunque puede crear su propio programa de instalación Visual Basic (VB) no puede usar el Visual Basic Asistente para instalación para ello. Para instalar el Agente VB, puede usar el comando Shell, especificando el archivo de instalación propia de Microsoft Agent.
+      Aunque puede crear su propio programa de instalación Visual Basic (VB) no puede usar el Visual Basic Asistente para instalación para hacerlo. Para instalar el Agente VB, puede usar el comando shell, especificando el archivo de instalación propia de Microsoft Agent.
   - question: >
       Cómo instalar Microsoft Agent en Windows 2000?
     answer: >
@@ -105,11 +105,11 @@ sections:
   - question: >
       Aunque ya he instalado el componente de lenguaje del Agente (DLL) para un idioma determinado, todavía tengo un error que dice que falta el componente al establecer el idioma del carácter en ese idioma.
     answer: >
-      Esto suele ocurrir cuando hay aplicaciones del Agente como Microsoft Office 2000 abiertas al instalar el componente de lenguaje del Agente . Cierre todas las aplicaciones e inténtelo de nuevo. Si el problema persiste, reinicie el equipo y debería poder establecer el identificador de idioma ahora.
+      Esto suele ocurrir cuando tiene aplicaciones del Agente como Microsoft Office 2000 abiertas al instalar el componente de lenguaje del Agente . Cierre todas las aplicaciones e inténtelo de nuevo. Si el problema persiste, reinicie el equipo y debería poder establecer el identificador de idioma ahora.
   - question: >
-      Cuando se usa el símbolo "&", se trunca el texto alrededor del símbolo en los globos de palabras del carácter.
+      Cuando se usa el símbolo "&" y comercial, se trunca el texto alrededor del símbolo en los globos de palabras del carácter.
     answer: >
-      Se trata de un problema conocido. Puede evitarlo mediante la etiqueta de mapa. Por ejemplo, para mostrar "A & B" en el globo de palabras del carácter, use "A \\ map=" y "="&&" B" en la instrucción \\ Speak.
+      Este es un problema conocido. Puede evitarlo mediante la etiqueta de mapa. Por ejemplo, para mostrar "A & B" en el globo de palabras del carácter, use "A \\ map="and"="&&" B" en la instrucción \\ Speak.
   - question: >
       Mi aplicación permite a los usuarios cambiar el carácter predeterminado y, cuando lo hacen, el programa se bloquea.
     answer: >
@@ -119,7 +119,7 @@ sections:
       Si cambia el identificador de modo TTS del carácter predeterminado y, a continuación, permite al usuario cambiar el carácter predeterminado a través de ShowDefaultCharacterProperties, AgentSvr se bloqueará.
 
 
-      Este problema se ha corregido en los sistemas operativos Windows 2000 y Windows XP. Para evitar el bloqueo en otras plataformas, no debe permitir al usuario cambiar el carácter predeterminado después de cambiar el identificador de modo TTS del carácter predeterminado o no usar el carácter predeterminado en la aplicación o página web.
+      Este problema se ha corregido en los sistemas operativos Windows 2000 y Windows XP. Para evitar el bloqueo en otras plataformas, no debe permitir que el usuario cambie el carácter predeterminado después de cambiar el identificador de modo TTS del carácter predeterminado o no use el carácter predeterminado en la aplicación o página web.
 
 
       Si la aplicación no usa caracteres del Agente proporcionados por Microsoft, asegúrese de que el carácter personalizado usa una paleta con una paleta completa de 256 colores. Para obtener más información, vea el documento Designing Characters for Microsoft Agent (Diseñar caracteres para Microsoft Agent).
@@ -151,11 +151,11 @@ sections:
       **MSAGENT.exe /q:a**
 
 
-      Lo mismo se aplica a los componentes del lenguaje del Agente que se publicaron originalmente en octubre de 1998. Se ha hecho una comprobación que impediría que los componentes del idioma árabe, francés, alemán, hebreo, italiano, japonés, coreano, chino simplificado, español y chino tradicional se instalara en Windows 2000 (y Windows XP). Las versiones más recientes de estos archivos de instalación, junto con los 19 idiomas adicionales agregados en marzo de 2000, no contienen esta comprobación y se instalarán correctamente en Windows 2000 (y Windows XP).
+      Lo mismo se aplica a los componentes del lenguaje del Agente que se publicaron originalmente en octubre de 1998. Hubo una comprobación que impediría que los componentes del idioma árabe, francés, alemán, hebreo, italiano, japonés, coreano, chino simplificado, español y chino tradicional se instalara en Windows 2000 (y Windows XP). Las versiones más recientes de estos archivos de instalación, junto con los 19 idiomas adicionales agregados en marzo de 2000, no contienen esta comprobación y se instalarán correctamente en Windows 2000 (y Windows XP).
   - question: >
       Mi carácter personalizado muestra un comportamiento inesperado con su color de transparencia en Windows 2000 (y Windows XP).
     answer: >
-      Se trata de un problema conocido para los caracteres creados con una paleta de menos de 256 colores. Los problemas con estos caracteres incluyen el color de transparencia que se muestra en el fondo, el texto del globo transparente, el borde del globo transparente o el fondo del globo transparente. Tenga en cuenta que estos caracteres pueden hacer que las aplicaciones se bloquean cuando se cargan en el cuadro de diálogo Selector de caracteres del Agente o en la Microsoft Office Asistente para aplicaciones. Los caracteres personalizados deben usar una paleta completa con 256 colores. Puede usar la paleta de ejemplos proporcionada para Office Assistant como punto de partida con una paleta de colores completa de 256.
+      Se trata de un problema conocido para los caracteres creados con una paleta de menos de 256 colores. Los problemas con estos caracteres incluyen el color de transparencia que se muestra en el fondo, el texto del globo transparente, el borde del globo transparente o el fondo del globo transparente. Tenga en cuenta que estos caracteres pueden hacer que las aplicaciones se bloquean cuando se cargan en el cuadro de diálogo Selector de caracteres del Agente o en la galería Microsoft Office asistente. Los caracteres personalizados deben usar una paleta completa con 256 colores. Puede usar la paleta de ejemplo proporcionada para los Office Assistant como punto de partida con una paleta de colores completa de 256.
   - question: >
       El carácter no usa el motor de TTS inglés, aunque he establecido su identificador de idioma en inglés &h0809.
     answer: >
@@ -166,7 +166,7 @@ sections:
   - question: >
       Cuando el volumen del carácter se establece en cero con la etiqueta de voz \Vol=0, no tiene ningún efecto o bloquea \, AgentSvr.
     answer: >
-      Se trata de un problema conocido. En Windows 95, Windows 98 y Windows Me, el volumen del carácter no cambia, pero permanecerá en el nivel establecido anteriormente. En Windows las plataformas NT 4.0, Windows 2000 y Windows XP, esto hará que AgentSvr se bloquea, incluso cuando no está instalado un motor de TTS. Puesto que el intervalo del volumen del carácter, de 0 (silencio) a 65535 (volumen máximo), es grande y la diferencia entre los niveles sucesivos es difícilmente perceptible, la solución alternativa fácil es establecer el volumen en 1 en lugar de 0 cuando se quiere que la voz del carácter sea inaudible.
+      Se trata de un problema conocido. En Windows 95, Windows 98 y Windows Me, el volumen del carácter no cambia, pero permanecerá en el nivel establecido anteriormente. En Windows las plataformas NT 4.0, Windows 2000 y Windows XP, se bloqueará AgentSvr, incluso cuando no esté instalado un motor de TTS. Puesto que el intervalo del volumen del carácter, de 0 (silencio) a 65535 (volumen máximo), es grande y la diferencia entre los niveles sucesivos es difícilmente perceptible, la solución alternativa fácil es establecer el volumen en 1 en lugar de 0 cuando se quiere que la voz del carácter sea inaudible.
   - question: >
       La animación Return de mi carácter personalizado no se reproduce correctamente después de las animaciones MoveDown, MoveLeft, MoveRight o MoveUp.
     answer: Asegúrese de que se asigna una animación de habla sencilla al estado de habla. Por ejemplo, puede usar un único fotograma que consta de la posición neutra del carácter con superposiciones de la máscara.

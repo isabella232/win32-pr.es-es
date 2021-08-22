@@ -46,7 +46,7 @@ La **interfaz ITablet** tiene estos métodos.
 | [**GetHardwareCaps**](itablet-gethardwarecaps.md)                     | Recupera un valor que representa las funciones del hardware de tableta.<br/> |
 | [**GetMaxInputRect**](itablet-getmaxinputrect.md)                     | Recupera un rectángulo que representa el área de entrada máxima de la tableta.<br/>    |
 | [**GetName**](itablet-getname.md)                                     | Recupera una cadena que contiene el nombre del dispositivo de tableta.<br/>               |
-| [**GetPlugAndPlayId**](itablet-getplugandplayid.md)                   | Recupera una cadena que contiene el identificador Plug and Play para el dispositivo de tableta.<br/>  |
+| [**GetPlugAndPlayId**](itablet-getplugandplayid.md)                   | Recupera una cadena que contiene el identificador de Plug and Play para el dispositivo de tableta.<br/>  |
 | [**GetPropertyMetrics**](/previous-versions/windows/desktop/legacy/aa367722(v=vs.85))               | Recupera los datos de métricas de una propiedad especificada.<br/>                       |
 
 
@@ -110,7 +110,7 @@ interface ITablet : IUnknown
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |

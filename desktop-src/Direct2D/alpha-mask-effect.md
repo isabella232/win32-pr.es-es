@@ -1,23 +1,23 @@
 ---
 title: Efecto de máscara alfa
-description: Este efecto aplica una máscara alfa a una imagen. Tiene dos entradas, denominadas Destination y Mask. Los valores de color de la imagen de destino se multiplican por el canal alfa de la imagen de máscara.
+description: Este efecto aplica una máscara alfa a una imagen. Tiene dos entradas, denominadas Destino y Máscara. Los valores de color de la imagen de destino se multiplican por el canal alfa de la imagen Mask.
 ms.assetid: fddad107-ec70-3a24-f4ae-9dc4f3716536
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87669608ab75ab7a655c072e174dbcd19df4bb39
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ed4c9c205f7f19c3fa43d95ee92a70d7d43ed709b40c924165833fab7190e3b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119570555"
 ---
 # <a name="alpha-mask-effect"></a>Efecto de máscara alfa
 
-Este efecto aplica una máscara alfa a una imagen. Tiene dos entradas, denominadas Destination y Mask. Los valores de color de la imagen de destino se multiplican por el canal alfa de la imagen de máscara.
+Este efecto aplica una máscara alfa a una imagen. Tiene dos entradas, denominadas Destino y Máscara. Los valores de color de la imagen de destino se multiplican por el canal alfa de la imagen Mask.
 
 El CLSID para este efecto es CLSID \_ D2D1AlphaMask.
 
-## <a name="effect-properties"></a>Propiedades del efecto
+## <a name="effect-properties"></a>Propiedades de efecto
 
 Este efecto no tiene propiedades específicas del efecto.
 
@@ -25,12 +25,12 @@ Este efecto no tiene propiedades específicas del efecto.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------------|---------------------------------------------------|
-| Cliente mínimo compatible | Aplicaciones de la tienda Windows de Windows 10 \[ Desktop apps \|\] |
-| Servidor mínimo compatible | Aplicaciones de la tienda Windows de Windows 10 \[ Desktop apps \|\] |
-| Encabezado                   | d2d1effects \_ 2. h                                  |
-| Biblioteca                  | d2d1. lib, dxguid. lib                              |
+| Cliente mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
+| Servidor mínimo compatible | \[Windows 10 aplicaciones de escritorio \| Windows aplicaciones de la Tienda\] |
+| Header                   | d2d1effects \_ 2.h                                  |
+| Biblioteca                  | d2d1.lib, dxguid.lib                              |
 
 ## <a name="related-topics"></a>Temas relacionados
 

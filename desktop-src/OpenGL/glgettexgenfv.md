@@ -1,9 +1,9 @@
 ---
-title: función glGetTexGenfv (GL. h)
-description: Las funciones glGetTexGendv, glGetTexGenfv y glGetTexGeniv devuelven parámetros de generación de coordenadas de textura. | función glGetTexGenfv (GL. h)
+title: Función glGetTexGenfv (Gl.h)
+description: Las funciones glGetTexGendv, glGetTexGenfv y glGetTexGeniv devuelven parámetros de generación de coordenadas de textura. | Función glGetTexGenfv (Gl.h)
 ms.assetid: 3b5b78a2-6db6-4931-aabb-25624c5af2f6
 keywords:
-- glGetTexGenfv (función) OpenGL
+- Función glGetTexGenfv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e527d0388b8aca7239ba1c51dccdce15de3cd8ee
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e40e916f98270c163ed8f299a8466ae66fc2775e466efaeb76a36b0953056eb1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493795"
 ---
-# <a name="glgettexgenfv-function"></a>glGetTexGenfv función)
+# <a name="glgettexgenfv-function"></a>Función glGetTexGenfv
 
-Las funciones [**glGetTexGendv**](glgettexgendv.md), **glGetTexGenfv** y [**glGetTexGeniv**](glgettexgeniv.md) devuelven parámetros de generación de coordenadas de textura.
+Las [**funciones glGetTexGendv**](glgettexgendv.md), **glGetTexGenfv** y [**glGetTexGeniv**](glgettexgeniv.md) devuelven parámetros de generación de coordenadas de textura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,25 +42,25 @@ void WINAPI glGetTexGenfv(
 
 <dl> <dt>
 
-*coords* 
+*Coord* 
 </dt> <dd>
 
 Coordenada de textura. Debe ser GL \_ S, GL \_ T, GL \_ R o GL \_ Q.
 
 </dd> <dt>
 
-*PName* 
+*pname* 
 </dt> <dd>
 
-Nombre simbólico de los valores que se van a devolver. Debe ser el modo de generación de \_ textura GL \_ \_ o el nombre de una de las ecuaciones del plano de generación de textura: plano de \_ objeto GL \_ o plano de ojo de contabilidad \_ \_ . Estos valores son los siguientes.
+Nombre simbólico de los valores que se devolverán. Debe ser GL TEXTURE GEN MODE o el nombre de una de las ecuaciones del plano de generación de \_ \_ \_ texturas: GL \_ OBJECT PLANE o GL EYE \_ \_ \_ PLANE. Estos valores son los siguientes.
 
 
 
 | Value                                                                                                                                                                             | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GL_TEXTURE_GEN_MODE"></span><span id="gl_texture_gen_mode"></span><dl> <dt>**\_modo de generación de texturas GL \_ \_**</dt> </dl> | El parámetro *params* devuelve la función de generación de textura de un solo valor, una constante simbólica.<br/>                                                                                                                                                                                                                                                                                                                                                            |
-| <span id="GL_OBJECT_PLANE"></span><span id="gl_object_plane"></span><dl> <dt>**\_plano del objeto GL \_**</dt> </dl>              | El parámetro *params* devuelve los cuatro coeficientes de ecuaciones de plano que especifican la generación de coordenada lineal del objeto. Los valores enteros, cuando se solicitan, se asignan directamente desde la representación interna de punto flotante.<br/>                                                                                                                                                                                                                                    |
-| <span id="GL_EYE_PLANE"></span><span id="gl_eye_plane"></span><dl> <dt>**\_plano de ojo de contabilidad \_**</dt> </dl>                       | El parámetro *params* devuelve los cuatro coeficientes de ecuaciones de plano que especifican la generación de coordenada lineal. Los valores enteros, cuando se solicitan, se asignan directamente desde la representación interna de punto flotante. Los valores devueltos son los que se mantienen en coordenadas oculares. No son iguales a los valores especificados mediante [**glTexGen**](gltexgen-functions.md), a menos que se haya identificado la matriz MODELVIEW en el momento en que se llamó a **glTexGen** .<br/> |
+| <span id="GL_TEXTURE_GEN_MODE"></span><span id="gl_texture_gen_mode"></span><dl> <dt>**MODO GEN \_ DE \_ TEXTURA \_ GL**</dt> </dl> | El *parámetro params* devuelve la función de generación de textura de un solo valor, una constante simbólica.<br/>                                                                                                                                                                                                                                                                                                                                                            |
+| <span id="GL_OBJECT_PLANE"></span><span id="gl_object_plane"></span><dl> <dt>**GL \_ OBJECT \_ PLANE**</dt> </dl>              | El *parámetro params* devuelve los coeficientes de ecuación de cuatro plano que especifican la generación de coordenadas lineales de objetos. Los valores enteros, cuando se solicitan, se asignan directamente desde la representación interna de punto flotante.<br/>                                                                                                                                                                                                                                    |
+| <span id="GL_EYE_PLANE"></span><span id="gl_eye_plane"></span><dl> <dt>**GL \_ EYE \_ PLANE**</dt> </dl>                       | El *parámetro params* devuelve los coeficientes de ecuación de cuatro plano que especifican la generación de coordenadas lineales de los ojos. Los valores enteros, cuando se solicitan, se asignan directamente desde la representación interna de punto flotante. Los valores devueltos son los que se mantienen en coordenadas de los ojos. No son iguales a los valores especificados mediante [**glTexGen**](gltexgen-functions.md), a menos que se identificara la matriz modelview en el momento en que se llamó **a glTexGen.**<br/> |
 
 
 
@@ -87,27 +87,27 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>      | la expresión de *coordenadas* o *PName* no era un valor aceptado.<br/>                                                                              |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>      | *coord o* *pname* no era un valor aceptado.<br/>                                                                              |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glGetTexGen** devuelve en *params* parámetros seleccionados de una función de generación de coordenadas de textura que especificó con **glTexGen**. El parámetro *coords* asigna un nombre a una de las coordenadas de textura (*s*, *t*, *r*, *q*), mediante la constante simbólica GL \_ s, GL \_ t, GL \_ r o GL \_ q.
+La **función glGetTexGen** devuelve en *parámetros seleccionados params* de una función de generación de coordenadas de textura que especificó **con glTexGen**. El *parámetro coord* denomina una de las coordenadas de textura (*s*, *t*, *r*, *q*), mediante la constante simbólica GL \_ S, GL \_ T, GL R o GL \_ \_ Q.
 
-Si se genera un error, no se realiza ningún cambio en el contenido de los *parámetros*.
+Si se genera un error, no se realiza ningún cambio en el contenido de *params*.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

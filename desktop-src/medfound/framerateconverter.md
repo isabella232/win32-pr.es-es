@@ -1,17 +1,17 @@
 ---
 description: Cambia la velocidad de fotogramas de una secuencia de vídeo.
 ms.assetid: a66b9c52-a015-41d2-b27a-3ce6a4d95be9
-title: Convertidor de velocidad de fotogramas DSP (Wmcodecdsp. h)
+title: DSP del convertidor de velocidad de fotogramas (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6197c29e9e753db6f327aa8b2797ba04131448d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ca4a728f37caa43ee99a0d293d5113e9c26cfb1dcfe51f399482fb614283737
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119600495"
 ---
-# <a name="frame-rate-converter-dsp"></a>DSP de convertidor de velocidad de fotogramas
+# <a name="frame-rate-converter-dsp"></a>DSP del convertidor de velocidad de fotogramas
 
 Cambia la velocidad de fotogramas de una secuencia de vídeo.
 
@@ -45,24 +45,24 @@ CLSID \_ CFrameRateConvertDmo
 
 ## <a name="properties"></a>Propiedades
 
--   [MFPKEY \_ conv \_ INPUTFRAMERATE](mfpkey-conv-inputframerate.md)
--   [MFPKEY \_ conv \_ OUTPUTFRAMERATE](mfpkey-conv-outputframerate.md)
+-   [\_INPUTFRAMERATE DE MFPKEY CONV \_](mfpkey-conv-inputframerate.md)
+-   [MFPKEY \_ CONV \_ OUTPUTFRAMERATE](mfpkey-conv-outputframerate.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este DSP cambia la velocidad de fotogramas repitiendo o colocando fotogramas.
+Este DSP cambia la velocidad de fotogramas repitiendo o quitando fotogramas.
 
-De forma predeterminada, el DSP obtiene las velocidades de fotogramas de los tipos de medios. Opcionalmente, puede especificar las velocidades de fotogramas mediante el establecimiento de las \_ propiedades MFPKEY CONV \_ INPUTFRAMERATE y MFPKEY \_ conv \_ OUTPUTFRAMERATE. Estos valores invalidan la velocidad de fotogramas proporcionada en el tipo de medio. Sin embargo, si usa este DSP dentro de la canalización de Media Foundation, no debe establecer estas propiedades.
+De forma predeterminada, el DSP obtiene las velocidades de fotogramas de los tipos de medios. Opcionalmente, puede especificar las velocidades de fotogramas estableciendo las propiedades \_ \_ INPUTFRAMERATE y MFPKEY \_ CONV \_ OUTPUTFRAMERATE de MFPKEY. Estos valores invalidan la velocidad de fotogramas dada en el tipo de medio. Sin embargo, si usa este DSP dentro de la Media Foundation, no debe establecer estas propiedades.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Mfvdsp.dll</dt> </dl>   |
 
 

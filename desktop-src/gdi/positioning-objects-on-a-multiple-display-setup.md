@@ -1,19 +1,19 @@
 ---
-description: En el código de ejemplo siguiente se muestra cómo las aplicaciones pueden colocar correctamente objetos en varias pantallas. Tenga en cuenta que no se da por hecho que el rectángulo se basa en el origen (0,0).
+description: El código de ejemplo siguiente muestra cómo las aplicaciones pueden colocar correctamente objetos en varias pantallas. Tenga en cuenta que no se supone que el RECT se basa en el origen (0,0).
 ms.assetid: 1144abfc-ca0a-4d59-aa18-b245ba4b1bc3
-title: Colocar objetos en una configuración de varias pantallas
+title: Colocación de objetos en una configuración de varias pantallas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd7e00104ea2d48e984fa6898f6e07f23509a6fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 91e4fc577b549d2adeba4f9b1afe064f1ca1ce82a9cdd902add5b240b2bab43f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119558315"
 ---
-# <a name="positioning-objects-on-a-multiple-display-setup"></a>Colocar objetos en una configuración de varias pantallas
+# <a name="positioning-objects-on-a-multiple-display-setup"></a>Colocación de objetos en una configuración de varias pantallas
 
-En el código de ejemplo siguiente se muestra cómo las aplicaciones pueden colocar correctamente objetos en varias pantallas. Tenga en cuenta que no se da por hecho que el rectángulo se basa en el origen (0,0).
+El código de ejemplo siguiente muestra cómo las aplicaciones pueden colocar correctamente objetos en varias pantallas. Tenga en cuenta que no se supone que el RECT se basa en el origen (0,0).
 
 
 ```C++

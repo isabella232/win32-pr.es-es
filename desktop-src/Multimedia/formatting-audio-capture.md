@@ -1,21 +1,21 @@
 ---
-title: Formatear la captura de audio
-description: Formatear la captura de audio
+title: Aplicar formato a la captura de audio
+description: Aplicar formato a la captura de audio
 ms.assetid: 3bbe34a6-8fd6-4780-b5af-fcf3d34ef701
 keywords:
-- capSetAudioFormat (macro)
+- CapSetAudioFormat macro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5f53553804aab401a9c2a4ada5dc9ee39170269
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 36acf1f98bcb6ea5d6786264406c28da78e909e3e57c5d796eac080139229f77
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103779129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119496385"
 ---
-# <a name="formatting-audio-capture"></a>Formatear la captura de audio
+# <a name="formatting-audio-capture"></a>Aplicar formato a la captura de audio
 
-En el ejemplo siguiente se usa [**capSetAudioFormat**](/windows/desktop/api/Vfw/nf-vfw-capsetaudioformat) para establecer el formato de audio en PCM de 11 kHz de 8 bits, estéreo.
+En el ejemplo siguiente se [**usa capSetAudioFormat para**](/windows/desktop/api/Vfw/nf-vfw-capsetaudioformat) establecer el formato de audio en PCM de 8 bits y estéreo de 11 kHz.
 
 
 ```C++
@@ -39,12 +39,12 @@ capSetAudioFormat(hWndC, &wfex, sizeof(WAVEFORMATEX));
 
 <dl> <dt>
 
-[Uso de la captura de vídeo](using-video-capture.md)
+[Uso de captura de vídeo](using-video-capture.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

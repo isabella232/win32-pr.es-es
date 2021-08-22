@@ -5,16 +5,16 @@ ms.assetid: CE2BC8B5-ED33-451C-87E0-32192BF41334
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da56cc283eec90176fc476517517783744d71caf
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c980bd5e93a62ca074f77790567f1095735b7989581511287c04297a56672349
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104420947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512035"
 ---
 # <a name="iremotedesktopclient-methods"></a>Métodos IRemoteDesktopClient
 
-La interfaz [**IRemoteDesktopClient**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclient) expone los métodos siguientes.
+La [**interfaz IRemoteDesktopClient**](/windows/win32/api/rdpappcontainerclient/nn-rdpappcontainerclient-iremotedesktopclient) expone los métodos siguientes.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -23,14 +23,14 @@ La interfaz [**IRemoteDesktopClient**](/windows/win32/api/rdpappcontainerclient/
 [**Método attachEvent**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-attachevent)
 </dt> <dd>
 
-Adjunta un controlador de eventos a un evento.
+Asocia un controlador de eventos a un evento.
 
 </dd> <dt>
 
-[**Connect (método)**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-connect)
+[**Conectar método**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-connect)
 </dt> <dd>
 
-Inicia una conexión mediante el uso de las propiedades establecidas actualmente en el control de cliente del contenedor de la aplicación Protocolo de escritorio remoto (RDP).
+Inicia una conexión mediante las propiedades establecidas actualmente en el control de cliente Protocolo de escritorio remoto de contenedor de aplicaciones (RDP).
 
 </dd> <dt>
 
@@ -44,31 +44,31 @@ Elimina las credenciales guardadas para el equipo remoto especificado.
 [**método detachEvent**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-detachevent)
 </dt> <dd>
 
-Desasocia un controlador de eventos de un evento.
+Separa un controlador de eventos de un evento.
 
 </dd> <dt>
 
-[**Disconnect (método)**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-disconnect)
+[**Método Disconnect**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-disconnect)
 </dt> <dd>
 
 Desconecta la conexión activa.
 
 </dd> <dt>
 
-[**Reconnect (método)**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-reconnect)
+[**Método Reconnect**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-reconnect)
 </dt> <dd>
 
-Inicia una reconexión automática del control de cliente del contenedor de la aplicación Protocolo de escritorio remoto (RDP) para ajustar la sesión al nuevo ancho y alto.
+Inicia una reconexión automática del control de cliente del contenedor de aplicaciones Protocolo de escritorio remoto (RDP) para ajustar la sesión al nuevo ancho y alto.
 
 </dd> <dt>
 
 [**Método UpdateSessionDisplaySettings**](/windows/win32/api/rdpappcontainerclient/nf-rdpappcontainerclient-iremotedesktopclient-updatesessiondisplaysettings)
 </dt> <dd>
 
-Actualiza la configuración de ancho y alto del control de cliente del contenedor de la aplicación Protocolo de escritorio remoto (RDP).
+Actualiza la configuración de ancho y alto para el control de cliente Protocolo de escritorio remoto de contenedor de aplicaciones (RDP).
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 

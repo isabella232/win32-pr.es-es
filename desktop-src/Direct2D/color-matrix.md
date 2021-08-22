@@ -1,35 +1,35 @@
 ---
 title: Efecto de la matriz de colores
-description: Utilice el efecto de la matriz de colores para modificar los valores RGBA de un mapa de bits.
+description: Use el efecto de matriz de colores para modificar los valores RGBA de un mapa de bits.
 ms.assetid: 093EEEF1-8C38-414E-8261-58A6C3DD930D
 keywords:
 - efecto de la matriz de colores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1078b1858bc68396546e1036c717e01acb1069c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ec8bb461698e4f8b39eef3bed57fc21947f3cc1175c1bdf4f990629db87e1c5c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119653314"
 ---
 # <a name="color-matrix-effect"></a>Efecto de la matriz de colores
 
-Utilice el efecto de la matriz de colores para modificar los valores RGBA de un mapa de bits.
+Use el efecto de matriz de colores para modificar los valores RGBA de un mapa de bits.
 
 Puede usar este efecto para:
 
 -   Quitar un canal de color de una imagen.
 -   Reduzca el color de una imagen.
--   Intercambie los canales de color.
+-   Intercambiar canales de color.
 -   Combinar canales de color.
 
-Muchos efectos integrados son especializaciones de la matriz de colores que están optimizadas para el uso previsto de los efectos. Entre los ejemplos se incluyen [saturación](saturation.md), [matiz, rotación](hue-rotate.md), [sepia](sepia-effect.md)y [temperatura y matiz](temperature-and-tint-effect.md).
+Muchos efectos integrados son especializaciones de la matriz de colores que están optimizadas para el uso previsto de los efectos. Algunos ejemplos [son la saturación,](saturation.md) [la rotación de](hue-rotate.md) [matiz, la sepia](sepia-effect.md)y [la temperatura y el tono.](temperature-and-tint-effect.md)
 
 El CLSID para este efecto es CLSID \_ D2D1ColorMatrix.
 
 -   [Imagen de ejemplo](#example-image)
--   [Propiedades del efecto](#effect-properties)
+-   [Propiedades de efecto](#effect-properties)
 -   [Modos alfa](#alpha-modes)
 -   [Requisitos](#requirements)
 -   [Temas relacionados](#related-topics)
@@ -42,7 +42,7 @@ En el ejemplo siguiente se muestran las imágenes de entrada y salida del efecto
 
 | Antes                                                       |
 |--------------------------------------------------------------|
-| ![imagen anterior al efecto.](images/default-before.jpg)   |
+| ![la imagen antes del efecto.](images/default-before.jpg)   |
 | Después                                                        |
 | ![la imagen después de la transformación.](images/15-colormatrix.png) |
 
@@ -66,21 +66,21 @@ m_d2dContext->EndDraw();
 
 
 
-Este efecto multiplica los valores RGBA de la imagen por una matriz de columnas principales de 5x4, como se muestra en esta ecuación.
+Este efecto multiplica los valores RGBA de la imagen por una matriz principal de columna de 5x4, como se muestra en esta ecuación.
 
 ![una definición de matriz de ejemplo.](images/color-matrix-formula.png)
 
-Este efecto funciona en imágenes alfa directas y premultiplicadas.
+Este efecto funciona en imágenes alfa rectas y premultiplicadas.
 
-## <a name="effect-properties"></a>Propiedades del efecto
+## <a name="effect-properties"></a>Propiedades de efecto
 
 
 
-| Enumeración de índice y nombre para mostrar                                       | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Enumeración de nombre para mostrar e índice                                       | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ColorMatrix<br/> \_Matriz de colores D2D1 COLORMATRIX \_ prop \_ \_<br/> | Matriz 5x4 de valores float. Los elementos de la matriz no están enlazados y no tienen unidades.<br/> El valor predeterminado es la matriz de identidad.<br/> El tipo es D2D1 \_ Matrix \_ 5x4 \_ F.<br/> El valor predeterminado es Matrix5x4F (1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0). <br/>                                                                                                                                                                                                                        |
-| AlphaMode<br/> \_ \_ Modo alfa de prop D2D1 COLORMATRIX \_ \_<br/>     | Modo alfa de la salida. Vea [modos alfa](#alpha-modes) para obtener más información. <br/> El tipo es D2D1 \_ COLORMATRIX \_ alpha \_ .<br/> El valor predeterminado es el \_ \_ modo alfa D2D1 COLORMATRIX \_ \_ premultiplicado.<br/>                                                                                                                                                                                                                                                                                                    |
-| ClampOutput<br/> Salida de la abrazadera de prop de D2D1 \_ COLORMATRIX \_ \_ \_<br/> | Si el efecto fija los valores de color entre 0 y 1 antes de que el efecto pase los valores al siguiente efecto del gráfico. El efecto fija los valores antes de que premultiplique el alfa.<br/> Si establece este valor en TRUE, el efecto fijará los valores. Si se establece en FALSE, el efecto no fijará los valores de color, pero otros efectos y la superficie de salida pueden fijar los valores si no son de precisión lo suficientemente alta.<br/> El tipo es BOOL.<br/> El valor predeterminado es FALSE.<br/> |
+| Colormatrix<br/> D2D1 \_ COLORMATRIX \_ PROP \_ COLOR \_ MATRIX<br/> | Matriz 5x4 de valores float. Los elementos de la matriz no están enlazados y no tienen unidad.<br/> El valor predeterminado es la matriz de identidad.<br/> El tipo es D2D1 \_ MATRIX \_ 5X4 \_ F.<br/> El valor predeterminado es Matrix5x4F(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0). <br/>                                                                                                                                                                                                                        |
+| AlphaMode<br/> D2D1 \_ COLORMATRIX \_ PROP \_ ALPHA \_ MODE<br/>     | Modo alfa de la salida. Consulte [Modos alfa](#alpha-modes) para obtener más información. <br/> El tipo es D2D1 \_ COLORMATRIX \_ ALPHA \_ MODE.<br/> El valor predeterminado es D2D1 \_ COLORMATRIX \_ ALPHA \_ MODE \_ PREMULTIPLIED.<br/>                                                                                                                                                                                                                                                                                                    |
+| ClampOutput<br/> SALIDA DE LA FIJACIÓN DE \_ PROP DE COLORMATRIX D2D1 \_ \_ \_<br/> | Si el efecto fija los valores de color a entre 0 y 1 antes de que el efecto pase los valores al siguiente efecto en el gráfico. El efecto fija los valores antes de que multipliese el alfa .<br/> Si establece esta opción en TRUE, el efecto fijará los valores. Si establece esta opción en FALSE, el efecto no fijará los valores de color, pero otros efectos y la superficie de salida pueden fijar los valores si no tienen una precisión lo suficientemente alta.<br/> El tipo es BOOL.<br/> El valor predeterminado es FALSE.<br/> |
 
 
 
@@ -92,8 +92,8 @@ Este efecto funciona en imágenes alfa directas y premultiplicadas.
 
 | Nombre                                          | Descripción                                                                                               |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Premultiplicado por el \_ \_ modo alfa D2D1 COLORMATRIX \_ \_ | El efecto anula la multiplicación de la entrada, aplica la matriz de colores y premultiplica el resultado.<br/> |
-| \_ \_ Modo alfa D2D1 \_ COLORMATRIX \_ recto      | El efecto aplica la matriz de colores directamente a la entrada y no multiplica la salida.<br/> |
+| D2D1 \_ COLORMATRIX \_ ALPHA \_ MODE \_ PREMULTIPLIED | El efecto desmultiplica la entrada, aplica la matriz de colores y premultiplica la salida.<br/> |
+| D2D1 \_ COLORMATRIX \_ ALPHA \_ MODE \_ STRAIGHT      | El efecto aplica la matriz de colores directamente a la entrada y no multiplica previamente la salida.<br/> |
 
 
 
@@ -103,12 +103,12 @@ Este efecto funciona en imágenes alfa directas y premultiplicadas.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible | Windows 8 y actualización de la plataforma para aplicaciones de escritorio de Windows 7 aplicaciones de la \[ \| tienda Windows\] |
-| Servidor mínimo compatible | Windows 8 y actualización de la plataforma para aplicaciones de escritorio de Windows 7 aplicaciones de la \[ \| tienda Windows\] |
-| Encabezado                   | d2d1effects. h                                                                      |
-| Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
+| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
+| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
+| Header                   | d2d1effects.h                                                                      |
+| Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

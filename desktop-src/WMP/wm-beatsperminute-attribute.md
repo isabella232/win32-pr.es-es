@@ -1,9 +1,9 @@
 ---
 title: Atributo WM/BeatsPerMinute
-description: El atributo WM/BeatsPerMinute es las pulsaciones por minuto del contenido.
+description: El atributo WM/BeatsPerMinute son los latidos por minuto del contenido.
 ms.assetid: 657adf62-7217-451d-b797-feda6f44d78d
 keywords:
-- Media Player de Windows de atributos de WM/BeatsPerMinute
+- Atributo WM/BeatsPerMinute Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,36 +12,36 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12f5cf4f2717bf881c1c5ba6ca7a49e34ceec6eb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7946becb0b76d847b0aacfa4318ae0464fc6e6c46d8a3136b88a344cdb71030c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708739"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119506635"
 ---
 # <a name="wmbeatsperminute-attribute"></a>Atributo WM/BeatsPerMinute
 
-El atributo **WM/BeatsPerMinute** es las pulsaciones por minuto del contenido.
+El **atributo WM/BeatsPerMinute** son los latidos por minuto del contenido.
 
 ## <a name="applies-to"></a>Se aplica a
 
--   [Archivos de música](music-file-attributes.md)
+-   [Música Archivos](music-file-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo solo se almacena en un archivo de música que no está en la biblioteca.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
-La constante del SDK de Windows Media Format para este atributo es g \_ wszWMBeatsPerMinute
+La constante Windows SDK de formato multimedia para este atributo es g \_ wszWMBeatsPerMinute
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -49,7 +49,7 @@ La constante del SDK de Windows Media Format para este atributo es g \_ wszWMBea
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

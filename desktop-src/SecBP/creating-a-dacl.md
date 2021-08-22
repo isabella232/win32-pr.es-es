@@ -1,37 +1,37 @@
 ---
 description: Muestra cómo crear correctamente una DACL.
 ms.assetid: f8ec202f-4f34-4123-8f3c-cfc5960b4dc2
-title: Crear una DACL
+title: Creación de una DACL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bf8213f6fbb4e2a885655b47437ec464337ea13
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6af1c7c43c24c07d3d301642b93db41496f2ff70742ce8e2e95fd3f7364ad765
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119516055"
 ---
-# <a name="creating-a-dacl"></a>Crear una DACL
+# <a name="creating-a-dacl"></a>Creación de una DACL
 
-Crear una [*lista de control de acceso discrecional*](/windows/desktop/SecGloss/d-gly) (DACL) adecuada es una parte necesaria y importante del desarrollo de aplicaciones. Dado que una DACL **null** permite todos los tipos de acceso a todos los usuarios, no use listas DACL **nulas** .
+La creación de una [*lista de control de acceso discrecional*](/windows/desktop/SecGloss/d-gly) (DACL) adecuada es una parte necesaria e importante del desarrollo de aplicaciones. Dado que **una** DACL NULL permite todos los tipos de acceso a todos los usuarios, no use DACL **NULL.**
 
-En el ejemplo siguiente se muestra cómo crear correctamente una DACL. El ejemplo contiene una función, CreateMyDACL, que usa el [lenguaje de definición de descriptores de seguridad](/windows/desktop/SecAuthZ/security-descriptor-definition-language) (SDDL) para definir el control de acceso concedido y denegado en una DACL. Para proporcionar un acceso diferente para los objetos de la aplicación, modifique la función CreateMyDACL según sea necesario.
+En el ejemplo siguiente se muestra cómo crear correctamente una DACL. El ejemplo contiene una función, CreateMyDACL, que usa el lenguaje de definición de [descriptor](/windows/desktop/SecAuthZ/security-descriptor-definition-language) de seguridad (SDDL) para definir el control de acceso concedido y denegado en una DACL. Para proporcionar acceso diferente a los objetos de la aplicación, modifique la función CreateMyDACL según sea necesario.
 
 En el ejemplo:
 
-1.  La función Main pasa una dirección de una estructura de [**\_ atributos de seguridad**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) a la función CreateMyDACL.
+1.  La función main pasa una dirección de una estructura [**ATRIBUTOS \_ DE SEGURIDAD**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) a la función CreateMyDACL.
 2.  La función CreateMyDACL usa cadenas SDDL para:
-    -   Denegar el acceso a usuarios de inicio de sesión anónimo y invitado.
-    -   Permitir el acceso de lectura/escritura/ejecución a los usuarios autenticados.
-    -   Permitir el control total para los administradores.
+    -   Denegar el acceso a usuarios de inicio de sesión anónimos y invitados.
+    -   Permitir el acceso de lectura, escritura y ejecución a los usuarios autenticados.
+    -   Permita el control total a los administradores.
 
-    Para obtener más información sobre los formatos de cadena SDDL, vea el [formato de cadena de descriptor de seguridad](/windows/desktop/SecAuthZ/security-descriptor-string-format).
-3.  La función CreateMyDACL llama a la función [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) para convertir las cadenas SDDL en un [*descriptor de seguridad*](/windows/desktop/SecGloss/s-gly). El miembro **lpSecurityDescriptor** de la estructura de [**\_ atributos de seguridad**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) apunta al descriptor de seguridad. CreateMyDACL envía el valor devuelto de **ConvertStringSecurityDescriptorToSecurityDescriptor** a la función main.
-4.  La función Main utiliza la estructura [**de \_ atributos de seguridad**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) actualizada para especificar la DACL para una nueva carpeta que se crea mediante la función [**CreateDirectory**](/windows/desktop/api/fileapi/nf-fileapi-createdirectorya) .
-5.  Cuando la función Main termina de usar la estructura de [**\_ atributos de seguridad**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) , la función Main libera la memoria asignada para el miembro **lpSecurityDescriptor** llamando a la función [**LocalFree**](/windows/desktop/api/winbase/nf-winbase-localfree) .
+    Para obtener más información sobre los formatos de cadena SDDL, vea [Formato de cadena del descriptor de seguridad](/windows/desktop/SecAuthZ/security-descriptor-string-format).
+3.  La función CreateMyDACL llama a la función [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora) para convertir las cadenas SDDL en un [*descriptor de seguridad*](/windows/desktop/SecGloss/s-gly). El miembro **lpSecurityDescriptor** de la estructura [**SECURITY \_ ATTRIBUTES**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) señala al descriptor de seguridad. CreateMyDACL envía el valor devuelto de **ConvertStringSecurityDescriptorToSecurityDescriptor** a la función main.
+4.  La función main usa la estructura [**SECURITY \_ ATTRIBUTES**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) actualizada para especificar la DACL para una nueva carpeta creada por la [**función CreateDirectory.**](/windows/desktop/api/fileapi/nf-fileapi-createdirectorya)
+5.  Cuando la función main termina de usar la estructura [**\_ ATRIBUTOS**](/previous-versions/windows/desktop/legacy/aa379560(v=vs.85)) DE SEGURIDAD, la función main libera la memoria asignada para el miembro **lpSecurityDescriptor** llamando a la [**función LocalFree.**](/windows/desktop/api/winbase/nf-winbase-localfree)
 
 > [!Note]  
-> Para compilar correctamente funciones de SDDL como [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora), debe definir \_ la \_ constante WinNT de Win32 como 0x0500 o superior.
+> Para compilar correctamente funciones SDDL como [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora), debe definir la constante \_ WINNT win32 \_ como 0x0500 o superior.
 
  
 

@@ -1,7 +1,7 @@
 ---
 description: Obtiene un estado literal de un parámetro. Un parámetro literal tiene un valor que no cambia durante la vigencia de un efecto.
 ms.assetid: 417abbee-5193-462e-b0d1-b4928ad0a041
-title: 'ID3DXEffectCompiler:: GetLiteral (método) (D3DX9Shader. h)'
+title: Método ID3DXEffectCompiler::GetLiteral (D3DX9Shader.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: c16e3798ab66a34e12812a3560572c45b9206b30
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d5c4fcb9b4eb3ee102d4e0676985945cfa227aa35cbd939c8dcd5b8d51da4826
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105707789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493945"
 ---
-# <a name="id3dxeffectcompilergetliteral-method"></a>ID3DXEffectCompiler:: GetLiteral (método)
+# <a name="id3dxeffectcompilergetliteral-method"></a>Método ID3DXEffectCompiler::GetLiteral
 
 Obtiene un estado literal de un parámetro. Un parámetro literal tiene un valor que no cambia durante la vigencia de un efecto.
 
@@ -41,21 +41,21 @@ HRESULT GetLiteral(
 
 <dl> <dt>
 
-*hParameter* \[ de\]
+*hParameter* \[ En\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de un parámetro. Vea [identificadores (Direct3D 9)](handles.md).
+Identificador único de un parámetro. Vea [Identificadores (Direct3D 9).](handles.md)
 
 </dd> <dt>
 
-*pLiteral* \[ enuncia\]
+*pLiteral* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)\***
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)\***
 
-Devuelve true si el parámetro es un literal y false en caso contrario.
+Devuelve True si el parámetro es un literal y False en caso contrario.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Devuelve true si el parámetro es un literal y false en caso contrario.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este método solo cambia si el parámetro es un literal o no. Para cambiar el valor de un parámetro, use un método como [**ID3DXBaseEffect:: SetBool**](id3dxbaseeffect--setbool.md) o [**ID3DXBaseEffect:: SetValue**](id3dxbaseeffect--setvalue.md).
+Estos métodos solo cambian si el parámetro es un literal o no. Para cambiar el valor de un parámetro, use un método como [**ID3DXBaseEffect::SetBool**](id3dxbaseeffect--setbool.md) o [**ID3DXBaseEffect::SetValue**](id3dxbaseeffect--setvalue.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Este método solo cambia si el parámetro es un literal o no. Para cambiar el va
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| Encabezado<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

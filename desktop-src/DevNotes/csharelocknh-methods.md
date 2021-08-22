@@ -1,23 +1,23 @@
 ---
 description: Grupo de métodos que se usa para manipular bloqueos.
 ms.assetid: ba4cc37c-bd2f-446f-8b3d-bc2a2e2e4de4
-title: Métodos CShareLockNH
+title: Métodos CShareLockLOCK
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b16a979c5d1f111c92a64376c48f4c0ed1a165ca
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 97234d65a3be75ffc1eb679db31360aa6ce6c416d879c67c0ffc5385e10bdb49
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105659453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654655"
 ---
-# <a name="csharelocknh-methods"></a>Métodos CShareLockNH
+# <a name="csharelocknh-methods"></a>Métodos CShareLockLOCK
 
 Grupo de métodos que se usa para manipular bloqueos.
 
 ## <a name="methods"></a>Métodos
 
-A continuación se muestran los métodos exportados por Rwnh.dll.
+Estos son los métodos exportados por Rwnh.dll.
 
 
 

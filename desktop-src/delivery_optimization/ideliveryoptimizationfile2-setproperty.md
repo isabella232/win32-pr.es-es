@@ -1,6 +1,6 @@
 ---
-title: 'IDeliveryOptimizationFile2:: SetProperty (método)'
-description: 'Este método devuelve una única propiedad del archivo DO. | IDeliveryOptimizationFile2:: SetProperty (método)'
+title: IDeliveryOptimizationFile2::SetProperty (método)
+description: Este método devuelve una sola propiedad del archivo DO. | IDeliveryOptimizationFile2::SetProperty (método)
 keywords:
 - SetProperty (método)
 - Método SetProperty, interfaz IDeliveryOptimizationFile2
@@ -16,16 +16,16 @@ api_type:
 ms.topic: reference
 ms.date: 01/18/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 74113fca944e79e9ecba8f822f73769775631821
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 99ed42acb94f260e229abfe9df428aaa61d3658cb887892b84bb73fd6e7e63e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105717491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635725"
 ---
-# <a name="ideliveryoptimizationfile2setproperty-method"></a>IDeliveryOptimizationFile2:: SetProperty (método)
+# <a name="ideliveryoptimizationfile2setproperty-method"></a>IDeliveryOptimizationFile2::SetProperty (método)
 
-Este método devuelve una única propiedad del archivo DO.
+Este método devuelve una sola propiedad del archivo DO.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,17 +40,17 @@ HRESULT SetProperty(
 
 <dl> <dt>
 
-*propId* \[ de\]
+*propId* \[ En\]
 </dt> <dd>
 
-El identificador de propiedad necesario para establecer de tipo DOFilePropertyId.
+Identificador de propiedad necesario para establecer el tipo DOFilePropertyId.
 
 </dd> <dt>
 
-*propValue* \[ de\]
+*propValue* \[ En\]
 </dt> <dd>
 
-Valor de propiedad que se va a establecer, de tipo VARIANT.
+Valor de propiedad que se establece, de tipo VARIANT.
 
 </dd> </dl>
 
@@ -60,21 +60,21 @@ Este método devuelve los siguientes valores HRESULT.
 
 | Código devuelto                  | Descripción                                                        |
 |------------------------------|--------------------------------------------------------------------|
-| **S_OK**                     | Correcto                                                            |
-| **DO_E_UNKNOWN_PROPERTY_ID** | IDENTIFICADOR de propiedad desconocido                                                |
+| **S_OK**                     | Success                                                            |
+| **DO_E_UNKNOWN_PROPERTY_ID** | Identificador de propiedad desconocido                                                |
 | **DO_E_INVALID_STATE**       | El trabajo no está actualmente en un estado que permita una configuración de propiedad |
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Value |
+| Requisito | Valor |
 |---------------------------|----------------------------------------------------------------------------------|
-| Cliente mínimo compatible  | Solo aplicaciones de escritorio de Windows 10, versión 1803 \[\]                                   |
-| Servidor mínimo compatible  | Windows Server, versión 1709 \[ solo para aplicaciones de escritorio\]                               |
-| Encabezado                    | Deliveryoptimization. h                                                           |
-| IDL                       | DeliveryOptimization. idl                                                         |
-| Biblioteca                   | Dosvc. lib                                                                        |
+| Cliente mínimo compatible  | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]                                   |
+| Servidor mínimo compatible  | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]                               |
+| Header                    | Deliveryoptimization.h                                                           |
+| Idl                       | DeliveryOptimization.idl                                                         |
+| Biblioteca                   | Dosvc.lib                                                                        |
 | Archivo DLL                       | Dosvc.dll                                                                        |
-| IID                       | IID_IDeliveryOptimizationJob2 se define como 18995A26-BF59-4ABE-9F8B-D5092D5A2405 |
+| IID                       | IID_IDeliveryOptimizationJob2 se define como 18995A26-BF59-4MIENTO-9F8B-D5092D5A2405 |
 
 ## <a name="see-also"></a>Vea también
 

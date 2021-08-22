@@ -22,7 +22,7 @@ keywords:
 - Espacios de colores HLS
 - saturación de la luz de matiz (HLS)
 - HLS (saturación de matiz)
-- espacios de color, HLS
+- espacios de colores, HLS
 - espacios de colores, HSV
 - Espacios de color HSV
 - Hue
@@ -54,7 +54,7 @@ Un espacio de colores usado a menudo por los intérpretes. Sus componentes son H
 
 ## <a name="hue"></a>Hue
 
-Color puro. Un matiz es una posición específica en la parte visible del espectro del espectro de espectro de espectro.
+Color puro. Un matiz es una posición específica en la parte visible del espectro del espectro del espectro de espectro.
 
  
 

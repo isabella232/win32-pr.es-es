@@ -1,9 +1,9 @@
 ---
-title: SLIDEr. onDragBegin
-description: El controlador de eventos onDragBegin controla un evento que se produce cuando el usuario hace clic y mantiene presionado el botón primario del mouse y comienza a arrastrar el mouse. | SLIDEr. onDragBegin
+title: SLIDER.onDragBegin
+description: El controlador de eventos onDragBegin controla un evento que se produce cuando el usuario hace clic y mantiene presionado el botón izquierdo del mouse y comienza a arrastrar el mouse. | SLIDER.onDragBegin
 ms.assetid: 42614818-f94b-48ec-8e12-69b26b446272
 keywords:
-- CONTROL SLIDEr. onDragBegin Windows Media Player
+- SLIDER.onDragBegin Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e8a7a9da4883e952a0e4eb35ea44a26a7a5b26e9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 26bf12b9a43fbe7a83cad324b2bff67421fe98de78e0f9bb36b1cfb755a3f63e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646295"
 ---
-# <a name="sliderondragbegin"></a>SLIDEr. onDragBegin
+# <a name="sliderondragbegin"></a>SLIDER.onDragBegin
 
-El controlador de eventos **onDragBegin** controla un evento que se produce cuando el usuario hace clic y mantiene presionado el botón primario del mouse y comienza a arrastrar el mouse.
+El **controlador de eventos onDragBegin** controla un evento que se produce cuando el usuario hace clic y mantiene presionado el botón izquierdo del mouse y comienza a arrastrar el mouse.
 
 ``` syntax
 onDragBegin
@@ -31,9 +31,9 @@ onDragBegin
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -41,7 +41,7 @@ onDragBegin
 
 <dl> <dt>
 
-[**Elemento SLIDEr**](slider-element.md)
+[**Elemento SLIDER**](slider-element.md)
 </dt> </dl>
 
  

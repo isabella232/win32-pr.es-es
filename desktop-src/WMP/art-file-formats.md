@@ -12,16 +12,16 @@ keywords:
 - formatos de archivo para el arte de máscara
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b525bc316d6a9901e32e51a54b6fb938fa91208
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: 95872ef6bf98f690841372471c8170439c2b44ac7d8ee8027e91f0372b4b4437
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112262217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119573817"
 ---
 # <a name="art-file-formats"></a>Formatos de archivo art
 
-Los siguientes formatos de archivo de ilustración se reconocen Reproductor de Windows Media para máscaras:
+Los siguientes formatos de archivo de arte se reconocen Reproductor de Windows Media para máscaras:
 
 
 

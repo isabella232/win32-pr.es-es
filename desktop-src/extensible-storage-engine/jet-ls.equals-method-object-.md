@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_LS. Equals (método, Object)'
-title: JET_LS. Equals (método, Object)
+description: 'Más información sobre: JET_LS. Método Equals (Object)'
+title: JET_LS. Método Equals (Object)
 TOCTitle: Equals method (Object)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_LS.Equals(System.Object)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_ls.equals(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 033936eb1f8d5176eed1b052ba5ee5332c8c5a27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b8597da3948ce9da7e14c2d16923092244f67bc600643e789e315170b2565553
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119730714"
 ---
-# <a name="jet_lsequals-method-object"></a>JET_LS. Equals (método, Object)
+# <a name="jet_lsequals-method-object"></a>JET_LS. Método Equals (Object)
 
-Devuelve un valor que indica si esta instancia es igual a otra instancia de.
+Devuelve un valor que indica si esta instancia es igual a otra instancia.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,23 +58,23 @@ public override bool Equals(
 #### <a name="parameters"></a>Parámetros
 
   - obj  
-    Tipo: [System. Object](/dotnet/api/system.object)  
+    Tipo: [System.Object](/dotnet/api/system.object)  
     
     Objeto que se va a comparar con esta instancia.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si las dos instancias son iguales.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_LS](./jet-ls-structure.md)
+[JET_LS estructura](./jet-ls-structure.md)
 
-[Miembros de JET_LS](./jet-ls-members.md)
+[JET_LS miembros](./jet-ls-members.md)
 
-[Equals (sobrecarga)](./jet-ls.equals-method.md)
+[Sobrecarga igual a](./jet-ls.equals-method.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
