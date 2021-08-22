@@ -1,21 +1,21 @@
 ---
-description: La función StretchDIBits copia los datos de color de un rectángulo de píxeles de un DIB al rectángulo de destino especificado.
+description: La función StretchDIBits copia los datos de color de un rectángulo de píxeles de una DIB en el rectángulo de destino especificado.
 ms.assetid: d4e3f631-3852-4cee-8e97-2244c39b200e
-title: Ajustar el tamaño de una imagen JPEG o PNG
+title: Ajuste de tamaño de una imagen JPEG o PNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28cd5bf3cbef8bab80d45536d90bfdd10174c26d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2380b03f562d950cf8ff9ca4ab03197b9da8eed02ac10652dcb120dce279895c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985382"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119613685"
 ---
-# <a name="sizing-a-jpeg-or-png-image"></a>Ajustar el tamaño de una imagen JPEG o PNG
+# <a name="sizing-a-jpeg-or-png-image"></a>Ajuste de tamaño de una imagen JPEG o PNG
 
-La función [**StretchDIBits**](/windows/desktop/api/Wingdi/nf-wingdi-stretchdibits) copia los datos de color de un rectángulo de píxeles de un DIB al rectángulo de destino especificado. Si el rectángulo de destino es mayor que el rectángulo de origen, esta función estira las filas y columnas de los datos de color para ajustarse al rectángulo de destino. Si el rectángulo de destino es menor que el rectángulo de origen, **StretchDIBits** comprime las filas y las columnas usando la operación de trama especificada.
+La [**función StretchDIBits**](/windows/desktop/api/Wingdi/nf-wingdi-stretchdibits) copia los datos de color de un rectángulo de píxeles de una DIB en el rectángulo de destino especificado. Si el rectángulo de destino es mayor que el rectángulo de origen, esta función ajusta las filas y columnas de datos de color para ajustarse al rectángulo de destino. Si el rectángulo de destino es menor que el rectángulo de origen, **StretchDIBits** comprime las filas y columnas mediante la operación de trama especificada.
 
-[**StretchDIBits**](/windows/desktop/api/Wingdi/nf-wingdi-stretchdibits) se extiende para permitir que se pase una imagen JPEG o PNG como imagen de origen.
+[**StretchDIBits se**](/windows/desktop/api/Wingdi/nf-wingdi-stretchdibits) extiende para permitir que se pase una imagen JPEG o PNG como imagen de origen.
 
 Por ejemplo:
 

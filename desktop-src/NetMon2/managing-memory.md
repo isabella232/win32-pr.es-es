@@ -1,21 +1,21 @@
 ---
-description: Si se produce un error en el experto durante el tiempo de ejecución, si utiliza Monitor de red funciones para la administración de memoria, Monitor de red liberará memoria asignada.
+description: Si un experto no funciona durante el tiempo de ejecución, si usa Monitor de red para la administración de memoria, Monitor de red liberará la memoria asignada.
 ms.assetid: b6f5749b-161e-47a7-82cf-d85ad3703ecd
-title: Administrar memoria
+title: Administración de memoria
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e2e2a6cca89a095c03c5c0cad25642b87d2c252
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f0c4cc5b38f5525b7c0d19e115c83ed9f770c72215c6b64825a089ec389bfc09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119555885"
 ---
-# <a name="managing-memory"></a>Administrar memoria
+# <a name="managing-memory"></a>Administración de memoria
 
-Si se produce un error en el experto durante el tiempo de ejecución, si utiliza Monitor de red funciones para la administración de memoria, Monitor de red liberará memoria asignada. Sin embargo, cuando se escribe un experto, podría ser necesario adquirir recursos del sistema e información de la estructura de datos. Por ejemplo, el experto de combinación de protocolos de Monitor de red adquiere un identificador de archivo para crear una nueva captura. Cada experto debe crear su propio control **try/catch** para que el experto pueda liberar los recursos adquiridos.
+Si un experto no funciona durante el tiempo de ejecución, si usa Monitor de red para la administración de memoria, Monitor de red liberará la memoria asignada. Sin embargo, al escribir un experto, podría ser necesario adquirir información sobre los recursos del sistema y la estructura de datos. Por ejemplo, el Monitor de red de uso de protocolos de compilación adquiere un identificador de archivo para crear una nueva captura. Cada experto debe crear su propio control **try/catch** para que el experto pueda liberar los recursos que adquirió.
 
-Cuando se asigna la memoria, use las siguientes funciones de memoria existentes:
+Cuando se asigna memoria, use las siguientes funciones de memoria existentes:
 
 -   [**ExpertAllocMemory**](expertallocmemory.md)
 -   [**ExpertReallocMemory**](expertreallocmemory.md)

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4659dbf00c6a53c77a23e98836ea1af4eeb4c38a
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 4ab607baaa50eac5c0b57af56eebfd07f8f55f7272f3563dd8538379779cab08
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111386864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119299235"
 ---
 # <a name="ms-dfs-link-path-v2-attribute"></a>Atributo ms-DFS-Link-Path-v2
 
@@ -36,13 +36,13 @@ Ruta de acceso del vínculo DFS relativa al recurso compartido de destino raíz 
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2039                     |
 | System-Id-Guid    | 86b021f6-10ab-40a2-a252-1dc0cc3be6a9        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
 ## <a name="implementations"></a>Implementaciones
 
--   [**Windows Server 2008**](#windows-server-2008)
+-   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
 -   [**Windows Server 2012**](#windows-server-2012)
 
@@ -50,14 +50,14 @@ Ruta de acceso del vínculo DFS relativa al recurso compartido de destino raíz 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                     |
 | MAPI-Id                | \-                                                                                                                     |
-| System-Only            | False                                                                                                                  |
+| System-Only            | Falso                                                                                                                  |
 | Es de un solo valor       | True                                                                                                                   |
-| Está indexado             | False                                                                                                                  |
-| En el catálogo global      | False                                                                                                                  |
+| Está indexado             | Falso                                                                                                                  |
+| En el catálogo global      | Falso                                                                                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 0                                                                                                                      |
 | Range-Upper            | 32766                                                                                                                  |
@@ -71,14 +71,14 @@ Ruta de acceso del vínculo DFS relativa al recurso compartido de destino raíz 
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                     |
 | MAPI-Id                | \-                                                                                                                     |
-| System-Only            | False                                                                                                                  |
-| Es de un solo valor       | True                                                                                                                   |
-| Está indexado             | False                                                                                                                  |
-| En el catálogo global      | False                                                                                                                  |
+| System-Only            | Falso                                                                                                                  |
+| Es de un solo valor       | Verdadero                                                                                                                   |
+| Está indexado             | Falso                                                                                                                  |
+| En el catálogo global      | Falso                                                                                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 0                                                                                                                      |
 | Range-Upper            | 32766                                                                                                                  |
@@ -96,10 +96,10 @@ Ruta de acceso del vínculo DFS relativa al recurso compartido de destino raíz 
 |------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                                                                     |
 | MAPI-Id                | \-                                                                                                                     |
-| System-Only            | False                                                                                                                  |
+| System-Only            | Falso                                                                                                                  |
 | Es de un solo valor       | True                                                                                                                   |
-| Está indexado             | False                                                                                                                  |
-| En el catálogo global      | False                                                                                                                  |
+| Está indexado             | Falso                                                                                                                  |
+| En el catálogo global      | Falso                                                                                                                  |
 | NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                           |
 | Range-Lower            | 0                                                                                                                      |
 | Range-Upper            | 32766                                                                                                                  |

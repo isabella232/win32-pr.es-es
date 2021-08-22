@@ -1,63 +1,63 @@
 ---
-description: ICE62 realiza comprobaciones exhaustivas en la tabla IsolatedComponent para los datos que pueden provocar un comportamiento inesperado.
+description: ICE62 realiza exhaustivas comprobaciones en la tabla IsolatedComponent para los datos que pueden provocar un comportamiento inesperado.
 ms.assetid: 649d3989-8121-4303-aa3e-63bc6649f445
 title: ICE62
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 245e205b2d004efa99ae1605ff5255ef69834a40
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cb5c2fd3f3305c791851fb3bd7480edc5e17f361c40719e8091930188dfa991c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119528245"
 ---
 # <a name="ice62"></a>ICE62
 
-ICE62 realiza comprobaciones exhaustivas en la [tabla IsolatedComponent](isolatedcomponent-table.md) para los datos que pueden provocar un comportamiento inesperado.
+ICE62 realiza exhaustivas comprobaciones en la [tabla IsolatedComponent para](isolatedcomponent-table.md) los datos que pueden provocar un comportamiento inesperado.
 
-Si no se corrige un error detectado por ICE62, puede producirse un error en el sistema de componentes aislados en una gran variedad de formas. Por ejemplo, si no se establece el bit SharedDllRefCount para un componente compartido, el registro del componente podría quitarse cuando otra aplicación utiliza ese ComponentId y se desinstala.
+Si no se corrige un error notificado por ICE62, se puede producir un error en el sistema de componentes aislados de una amplia variedad de maneras. Por ejemplo, si el bit SharedDllRefCount no está establecido para un componente compartido, el registro del componente podría quitarse cuando otra aplicación use ese ComponentId y se desinstale.
 
 ## <a name="result"></a>Resultado
 
-ICE62 publica una advertencia o un error cuando encuentra datos en la tabla IsolatedComponent que pueden producir un comportamiento inesperado.
+ICE62 envía una advertencia o un error cuando encuentra datos en la tabla IsolatedComponent que pueden producir un comportamiento inesperado.
 
 ## <a name="example"></a>Ejemplo
 
-ICE62 notifica los siguientes errores y advertencias para los ejemplos que se muestran.
+ICE62 notifica los siguientes errores y advertencias para los ejemplos mostrados.
 
 ``` syntax
 The component 'Component2' is listed as an isolated application 
 component in the IsolatedComponent table, but the key path is not a file.
 ```
 
-Component2 aparece como componente de la aplicación para el aislamiento de component1. Sin embargo, Component2 tiene una ruta de acceso de clave del registro y no proporciona una ruta de acceso ejecutable válida que se pueda usar para aislar el componente.
+Component2 aparece como componente de aplicación para el aislamiento de component1. Sin embargo, Component2 tiene una ruta de acceso de clave del Registro y no proporciona una ruta de acceso ejecutable válida para usar para aislar el componente.
 
-Para corregir este error, use otro componente como la aplicación del componente de modo aislado component1.
+Para corregir este error, use un componente diferente como aplicación para el componente aislado Component1.
 
 ``` syntax
 The component 'Component1' is listed as an isolated shared component in the 
 IsolatedComponent table, but is not marked with the SharedDllRefCount component attribute.
 ```
 
-Component1 aparece como un componente compartido aislado, pero no tiene establecido el bit SharedDllRefCount. Esto podría dar lugar a que la duración del componente sea incorrecta. Si otra aplicación utiliza este componente (aislado o no) y se desinstala, el registro del componente se quita pero la copia aislada de la aplicación permanece. Esto provoca problemas de reparación y desinstalación.
+Component1 aparece como un componente compartido aislado, pero no tiene el conjunto de bits SharedDllRefCount. Esto podría dar lugar a que la duración del componente sea incorrecta. Si otra aplicación usa este componente (aislado o no) y se desinstala, se quita el registro del componente, pero permanece la copia aislada de esta aplicación. Esto provoca problemas de reparación y desinstalación.
 
-Para corregir este error, establezca el bit SharedDllRefCount para el componente.
+Para corregir este error, establezca el bit SharedDllRefCount del componente.
 
 ``` syntax
 The isolated shared component 'Component1' is not installed by the same feature as 
 (or a parent feature of) its isolated application component 'Component2' (which is installed by feature 'Feature2').
 ```
 
-Component1 y Component2 se instalan con características diferentes. Component1 se instala mediante Feature1 y Component2 se instala mediante Característica2. Feature1 no es un elemento primario de Característica2, por lo que es posible que la aplicación se instale, pero no el componente aislado, lo que interrumpe el aislamiento.
+Component1 y Component2 se instalan mediante diferentes características. Component1 se instala mediante Feature1 y Component2 lo instala Feature2. Feature1 no es un elemento primario de Feature2, por lo que es posible que la aplicación se instale, pero no el componente aislado, lo que romperá el aislamiento.
 
-Para corregir este error, agregue una entrada a la tabla FeatureComponents vinculando Component1 a la misma característica que (o una característica primaria de) la característica que instala Component2.
+Para corregir este error, agregue una entrada a la tabla FeatureComponents que vincule Component1 a la misma característica que (o una característica primaria de) la característica que instala Component2.
 
 ``` syntax
 WARNING: The isolated shared component 'Component1' (referenced in the IsolatedComponent table) 
 is conditionalized. Isolated shared component conditions should never change from TRUE to FALSE after the first install of the product.
 ```
 
-Component1 tiene una condición en la tabla de componentes. Si alguna vez cambia la condición de TRUE a FALSE durante la vigencia de una instalación en un equipo, el componente aislado podría quedar huérfano sin información de registro.
+Component1 tiene una condición en la tabla Component. Si esta condición cambia alguna vez de TRUE a FALSE durante la duración de una instalación en un equipo, el componente aislado podría quedar huérfano sin información de registro.
 
 Para corregir esta advertencia, quite la condición o cree la condición para que nunca pueda cambiar de TRUE a FALSE.
 
@@ -68,18 +68,18 @@ WARNING: The isolated shared component 'Component1' is shared by multiple applic
 (including 'Component3') that are installed to the directory 'TARGETDIR'.
 ```
 
-Component1 está aislado para Component2 y Component3, y los dos componentes también se instalan en el mismo directorio. Las aplicaciones comparten un componente aislado, pero si se quita una aplicación, se quita el componente compartido, lo que hace que las demás aplicaciones pierdan el componente aislado.
+Component1 está aislado para Component2 y Component3, y los dos componentes también se instalan en el mismo directorio. Las aplicaciones comparten un componente aislado, pero si se quita una aplicación, el componente compartido también hace que las demás aplicaciones pierdan el componente aislado.
 
-Para corregir esta advertencia, instale las aplicaciones en directorios diferentes o Compruebe si algunas de las aplicaciones requieren realmente un componente aislado.
+Para corregir esta advertencia, instale las aplicaciones en directorios diferentes o compruebe si algunas de las aplicaciones realmente requieren un componente aislado.
 
 [Tabla IsolatedComponent](isolatedcomponent-table.md)
 
 
 
-| Componente \_ compartido | Aplicación de componentes \_ |
+| Componente \_ compartido | Aplicación \_ de componentes |
 |-------------------|------------------------|
-| Component1        | Component2             |
-| Component1        | Component3             |
+| Componente1        | Componente 2             |
+| Componente1        | Componente 3             |
 
 
 
@@ -89,11 +89,11 @@ Para corregir esta advertencia, instale las aplicaciones en directorios diferent
 
 
 
-| Componente  | ComponentId | Directorio\_ | Atributos | Condición   | Rutas   |
+| Componente  | Componentid | Directorio\_ | Atributos | Condición   | KeyPath   |
 |------------|-------------|-------------|------------|-------------|-----------|
-| Component1 |             | Dir1        | 0          | Mi condición | Archivo1     |
-| Component2 |             | TARGETDIR   | 4          |             | Registry2 |
-| Component3 |             | TARGETDIR   | 0          |             | File3     |
+| Componente1 |             | Dir1        | 0          | MYCONDITION | Archivo1     |
+| Componente 2 |             | TARGETDIR   | 4          |             | Registry2 |
+| Componente 3 |             | TARGETDIR   | 0          |             | File3     |
 
 
 
@@ -105,9 +105,9 @@ Para corregir esta advertencia, instale las aplicaciones en directorios diferent
 
 | Característica\_ | Componente\_ |
 |-----------|-------------|
-| Feature1  | Component1  |
-| Característica2  | Component2  |
-| Feature1  | Component3  |
+| Característica 1  | Componente1  |
+| Característica 2  | Componente 2  |
+| Característica 1  | Componente 3  |
 
 
 
@@ -117,10 +117,10 @@ Para corregir esta advertencia, instale las aplicaciones en directorios diferent
 
 
 
-| Característica  | Característica \_ principal |
+| Característica  | Elemento \_ primario de la característica |
 |----------|-----------------|
-| Feature1 |                 |
-| Característica2 |                 |
+| Característica 1 |                 |
+| Característica 2 |                 |
 
 
 

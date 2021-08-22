@@ -1,9 +1,9 @@
 ---
-title: VER. tiempo de espera
-description: El evento de tiempo de actividad controla los eventos de temporizador.
+title: VIEW.ontimer
+description: El evento ontimer controla los eventos de temporizador.
 ms.assetid: 038bd483-9029-4de6-b40e-de3e615a4c04
 keywords:
-- Ver Media Player de Windows.
+- VIEW.ontimer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,32 +13,32 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 91c93919c152bfa2f42b872ac5aa624f42de2b11
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c6355f94775a22fca9ff309b0207e2b3e5256cd060327a23f34f75099e50f862
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119615435"
 ---
-# <a name="viewontimer"></a>VER. tiempo de espera
+# <a name="viewontimer"></a>VIEW.ontimer
 
-El evento de **tiempo de actividad** controla los eventos de temporizador.
+El **evento ontimer controla** los eventos de temporizador.
 
 ``` syntax
 ontimer
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El atributo **timerInterval** especifica el intervalo en el que se activarán los eventos de temporizador.
+El **atributo timerInterval** especifica el intervalo en el que se desencadenan los eventos de temporizador.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -46,10 +46,10 @@ El atributo **timerInterval** especifica el intervalo en el que se activarán lo
 
 <dl> <dt>
 
-[**Elemento de vista**](view-element.md)
+[**ELEMENTO VIEW**](view-element.md)
 </dt> <dt>
 
-[**VER. timerInterval**](view-timerinterval.md)
+[**VIEW.timerInterval**](view-timerinterval.md)
 </dt> </dl>
 
  

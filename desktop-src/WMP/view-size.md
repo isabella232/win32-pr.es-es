@@ -1,9 +1,9 @@
 ---
-title: VISTA. tamaño
-description: El método size cambia el tamaño de la vista en un borde especificado.
+title: VIEW.size
+description: El método size cambia el tamaño de VIEW en un borde especificado.
 ms.assetid: c15a33b2-3618-41a7-bff1-9d48a566ed4f
 keywords:
-- VISTA. tamaño de Windows Media Player
+- View.size Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: def9b416dfe5eda052ef430b587fa1c6017b4e5f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e0d9bd583b280f39bee38f0e109e6bb2bba6ce08ec0e7cea4c082b4a6db55739
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119615315"
 ---
-# <a name="viewsize"></a>VISTA. tamaño
+# <a name="viewsize"></a>VIEW.size
 
-El método **size cambia** el tamaño de la **vista** en un borde especificado.
+El **método size** cambia el tamaño de **VIEW** en un borde especificado.
 
 ``` syntax
         elementID.size(handle)
@@ -32,19 +32,19 @@ El método **size cambia** el tamaño de la **vista** en un borde especificado.
 
 <dl> <dt>
 
-<span id="handle"></span><span id="HANDLE"></span>*asa*
+<span id="handle"></span><span id="HANDLE"></span>*Manejar*
 </dt> <dd>
 
-Cadena que especifica el borde o la esquina que se va a desplace al ajustar el tamaño. Esta cadena debe tener uno de los ocho valores siguientes.
+Cadena que especifica el borde o la esquina que se va a mover al cambiar el tamaño. Esta cadena debe tener uno de los ocho valores siguientes.
 
 
 
 | Edge   | Esquina      |
 |--------|-------------|
-| top    | esquina superior    |
-| right  | PivotDetailRange |
+| top    | topright    |
+| right  | bottomright |
 | abajo | bottomleft  |
-| izquierda   | a la izquierda     |
+| izquierda   | topleft     |
 
 
 
@@ -56,9 +56,9 @@ Cadena que especifica el borde o la esquina que se va a desplace al ajustar el t
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Normalmente, este método se llama desde dentro de un controlador **OnMouseDown** . Se encarga del cambio de tamaño mientras se arrastra el mouse y se detiene el cambio de tamaño cuando se suelta el botón del mouse. Si el tamaño de la **vista** está restringido, no puede arrastrar el mouse para cambiar el tamaño de la **vista** más allá de los límites restringidos.
+Normalmente se llama a este método desde dentro **de un controlador onmousedown.** Se encarga del redimensionamiento mientras se arrastra el mouse y deja de tener el tamaño cuando se libera el botón del mouse. Si el tamaño de **view** está restringido, no puede arrastrar el mouse para cambiar el tamaño de la vista más **allá** de los límites restringidos.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -80,9 +80,9 @@ Normalmente, este método se llama desde dentro de un controlador **OnMouseDown*
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -90,7 +90,7 @@ Normalmente, este método se llama desde dentro de un controlador **OnMouseDown*
 
 <dl> <dt>
 
-[**Elemento de vista**](view-element.md)
+[**ELEMENTO VIEW**](view-element.md)
 </dt> </dl>
 
  

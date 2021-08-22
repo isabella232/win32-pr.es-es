@@ -3,31 +3,31 @@ title: Esquema de calibración de WCS
 description: En este tema se describe el esquema de calibración de WCS que expande el perfil de modelo de dispositivo de color WCS.
 ms.assetid: 99f3e9e3-15b7-4bca-87cc-a3bf3b6d0112
 keywords:
-- Sistema de color de Windows (WCS), calibración
-- WCS (sistema de colores de Windows), calibración
-- Administración del color de imagen, calibración
-- Administración del color, calibración
-- colores, calibración
-- esquemas, calibración
-- Calibración WCS
-- curva
+- Windows Sistema de colores (WCS), calibración
+- WCS (Windows de color), calibración
+- administración del color de la imagen, calibración
+- administración de colores, calibración
+- colors,calibration
+- schemas,calibration
+- Calibración de WCS
+- Calibración
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e859ab9d2b47355db063961004f17a8cc1537694
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: 3744f8aa0190f09acf80b469ae01fddb035c48deda73d53871094ef9ece8e88b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "105721137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451425"
 ---
 # <a name="wcs-calibration-schema"></a>Esquema de calibración de WCS
 
-En este tema se describe el esquema de calibración de WCS que expande el [Perfil de modelo de dispositivo de color WCS](wcs-color-device-model-profile-schema-and-algorithms.md).
+En este tema se describe el esquema de calibración de WCS que expande el perfil de modelo de [dispositivo de color WCS](wcs-color-device-model-profile-schema-and-algorithms.md).
 
-## <a name="the-wcs-calibration-schema"></a>El esquema de calibración de WCS
+## <a name="the-wcs-calibration-schema"></a>Esquema de calibración de WCS
 
-La siguiente definición de esquema se usa para especificar las nuevas definiciones de Windows 7 que admiten la calibración del [Perfil del modelo de dispositivo de color WCS](wcs-color-device-model-profile-schema-and-algorithms.md) .
+La siguiente definición de esquema se usa para especificar las nuevas definiciones Windows 7 que admiten la calibración del perfil del modelo [de dispositivo de color WCS.](wcs-color-device-model-profile-schema-and-algorithms.md)
 
 
 ```C++

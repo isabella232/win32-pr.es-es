@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_GETBUFFERSWANTED (VFW. h)
-description: El \_ mensaje GETBUFFERSWANTED ICM consulta a un controlador el número de búferes que se van a asignar. Puede enviar este mensaje explícitamente o mediante la macro ICGetBuffersWanted.
+title: ICM_GETBUFFERSWANTED mensaje (Vfw.h)
+description: El ICM \_ mensaje GETBUFFERSWANTED consulta a un controlador el número de búferes que se asignarán. Puede enviar este mensaje explícitamente o mediante la macro ICGetBuffersWanted.
 ms.assetid: 109e8627-7ed4-4f17-bf7f-e77f42dfc8c7
 keywords:
-- Mensaje de ICM_GETBUFFERSWANTED de Windows multimedia
+- ICM_GETBUFFERSWANTED mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06de8cc3bcfe463d0318651c8e2d51b269504769
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c4bd5fae6e9f008649366cf922ef117f5b6f7560a7764c4f8d81552a255de48a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119495875"
 ---
-# <a name="icm_getbufferswanted-message"></a>\_Mensaje GETBUFFERSWANTED ICM
+# <a name="icm_getbufferswanted-message"></a>\_ICM Mensaje GETBUFFERSWANTED
 
-El **mensaje \_ GETBUFFERSWANTED ICM** consulta a un controlador el número de búferes que se van a asignar. Puede enviar este mensaje explícitamente o mediante la macro [**ICGetBuffersWanted**](/windows/desktop/api/Vfw/nf-vfw-icgetbufferswanted) .
+El **ICM \_ mensaje GETBUFFERSWANTED** consulta a un controlador el número de búferes que se asignarán. Puede enviar este mensaje explícitamente o mediante la macro [**ICGetBuffersWanted.**](/windows/desktop/api/Vfw/nf-vfw-icgetbufferswanted)
 
 
 ```C++
@@ -41,17 +41,17 @@ lParam = 0;
 <span id="lpdwBuffers"></span><span id="lpdwbuffers"></span><span id="LPDWBUFFERS"></span>*lpdwBuffers*
 </dt> <dd>
 
-Address para contener el número de muestras que el controlador necesita para representar los datos de forma eficaz.
+Dirección para contener el número de muestras que el controlador necesita para representar los datos de forma eficaz.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve ICERR \_ OK si es correcto o ICERR \_ no se admite en caso contrario.
+Devuelve ICERR \_ OK si se realiza correctamente o ICERR \_ UNSUPPORTED en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este mensaje lo usan los controladores que usan Hardware para representar datos y desean garantizar un retraso mínimo causado por la espera de que lleguen los búferes. Por ejemplo, si un controlador controla una placa de descompresión de vídeo que puede contener 10 fotogramas de vídeo, podría devolver 10 para este mensaje. Esto indica a las aplicaciones que intenten mantener 10 fotogramas por encima del marco que necesita actualmente.
+Este mensaje lo usan los controladores que usan hardware para representar los datos y quieren garantizar un retraso de tiempo mínimo causado por la espera de que lleguen los búferes. Por ejemplo, si un controlador controla una placa de descompresión de vídeo que puede contener 10 fotogramas de vídeo, podría devolver 10 para este mensaje. Esto indica a las aplicaciones que intenten mantener 10 fotogramas por delante del marco que necesita actualmente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ Este mensaje lo usan los controladores que usan Hardware para representar datos 
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

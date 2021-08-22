@@ -1,11 +1,11 @@
 ---
-title: Método WriteBackRootHintDatafile de la clase MicrosoftDNS_RootHints
-description: El método WriteBackRootHintDatafile vuelve a escribir el RootHints en el archivo de caché DNS.
+title: Método WriteBackRootHintDatafile de la MicrosoftDNS_RootHints clase
+description: El método WriteBackRootHintDatafile escribe rootHints de nuevo en el archivo de caché DNS.
 ms.assetid: 5c3d598b-ee84-4483-a434-2f24419847b2
 keywords:
-- WriteBackRootHintDatafile el método DNS
-- Método WriteBackRootHintDatafile DNS, clase MicrosoftDNS_RootHints
-- MicrosoftDNS_RootHints de clase DNS, método WriteBackRootHintDatafile
+- Método DNS WriteBackRootHintDatafile
+- Método DNS WriteBackRootHintDatafile , MicrosoftDNS_RootHints clase
+- MicrosoftDNS_RootHints clase DNS , método WriteBackRootHintDatafile
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a721477c1cd6cbfdbb7161cc5cf8edc448c45369
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8318924105e9d4a95dc978103b4f312cf19cbbf8eb5cab34e5dd3a3ccff44369
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119587545"
 ---
-# <a name="writebackroothintdatafile-method-of-the-microsoftdns_roothints-class"></a>Método WriteBackRootHintDatafile de la \_ clase MicrosoftDNS RootHints
+# <a name="writebackroothintdatafile-method-of-the-microsoftdns_roothints-class"></a>Método WriteBackRootHintDatafile de la clase RootHints de MicrosoftDNS \_
 
-El método **WriteBackRootHintDatafile** vuelve a escribir el RootHints en el archivo de caché DNS.
+El **método WriteBackRootHintDatafile** escribe rootHints de nuevo en el archivo de caché DNS.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ Este método no devuelve ningún valor.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |
 | Espacio de nombres<br/>                | \\MicrosoftDNS raíz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -64,7 +64,7 @@ Este método no devuelve ningún valor.
 [**MicrosoftDNS \_ RootHints**](microsoftdns-roothints.md)
 </dt> <dt>
 
-[**Método GetDistinguishedName de la \_ clase MicrosoftDNS RootHints**](microsoftdns-roothints-getdistinguishedname.md)
+[**Método GetDistinguishedName de la \_ clase RootHints de MicrosoftDNS**](microsoftdns-roothints-getdistinguishedname.md)
 </dt> </dl>
 
  

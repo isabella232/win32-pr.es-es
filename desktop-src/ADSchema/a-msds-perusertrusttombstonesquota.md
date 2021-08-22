@@ -1,11 +1,11 @@
 ---
-title: Atributo de cuota MS-DS-per-user-Trust-distinción
-description: Se utiliza para exigir una cuota por usuario para eliminar Trusted-Domain objetos cuando la autorización se basa en la coincidencia del SID del usuario.
+title: Atributo MS-DS-Per-User-Trust-Tombstones-Quota
+description: Se usa para aplicar una cuota por usuario para eliminar objetos Trusted-Domain cuando la autorización se basa en la coincidencia con el SID del usuario.
 ms.assetid: 4db98754-a2d1-43a4-b9cb-0e3fcbbf3ed9
 ms.tgt_platform: multiple
 keywords:
-- MS-DS-per-user-Trust-distinción-esquema de AD de atributo de cuota
-- Esquema de AD de atributo msDS-PerUserTrustTombstonesQuota
+- Esquema de AD del atributo MS-DS-Per-User-Trust-Tombstones-Quota
+- msDS-PerUserTrustTombstones Esquema de AD del atributoQuota
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c94bb62b822552a863df99dac83e98462514c42
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ee025cb904d0e37a0498b021183ea0ab8f45f621644843734ddef16d842d6ac9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658861"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119294635"
 ---
-# <a name="ms-ds-per-user-trust-tombstones-quota-attribute"></a>Atributo de cuota MS-DS-per-user-Trust-distinción
+# <a name="ms-ds-per-user-trust-tombstones-quota-attribute"></a>Atributo MS-DS-Per-User-Trust-Tombstones-Quota
 
-Se utiliza para exigir una cuota por usuario para eliminar Trusted-Domain objetos cuando la autorización se basa en la coincidencia del SID del usuario.
+Se usa para aplicar una cuota por usuario para eliminar objetos Trusted-Domain cuando la autorización se basa en la coincidencia con el SID del usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------|
-| CN                | MS-DS-per-user-Trust-distinción-quota     |
-| Nombre para mostrar de LDAP | msDS-PerUserTrustTombstonesQuota          |
-| Tamaño              | \-                                        |
-| Actualizar privilegio  | Administrador de dominio                      |
-| Frecuencia de actualización  | Al crear el bosque y raramente después. |
+| CN                | MS-DS-per-user-trust-tombstones-quota     |
+| Ldap-Display-Name | msDS-PerUserTrustTombstonesQuota          |
+| Size              | \-                                        |
+| Privilegio actualizar  | Administrador de dominio                      |
+| Frecuencia de actualización  | En la creación del bosque y rara vez después de eso. |
 | Attribute-Id      | 1.2.840.113556.1.4.1790                   |
-| System-ID-GUID    | 8b70a6c6-50f9-4fa3-a71e-1ce03040449b      |
-| Sintaxis            | [**Enumeración**](s-enumeration.md)      |
+| System-Id-Guid    | 8b70a6c6-50f9-4fa3-a71e-1ce03040449b      |
+| Syntax            | [**Enumeración**](s-enumeration.md)      |
 
 
 
@@ -54,18 +54,18 @@ Se utiliza para exigir una cuota por usuario para eliminar Trusted-Domain objeto
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -73,20 +73,20 @@ Se utiliza para exigir una cuota por usuario para eliminar Trusted-Domain objeto
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Se utiliza para exigir una cuota por usuario para eliminar Trusted-Domain objeto
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Se utiliza para exigir una cuota por usuario para eliminar Trusted-Domain objeto
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Se utiliza para exigir una cuota por usuario para eliminar Trusted-Domain objeto
 
 | Entrada | Value |
 |------------------------|----------------------------------------------|
-| Identificador de vínculo                | \-                                           |
+| Id. de vínculo                | \-                                           |
 | MAPI-Id                | \-                                           |
-| System-Only            | False                                        |
-| Tiene un único valor       | True                                         |
-| Está indexado             | False                                        |
-| En el catálogo global      | False                                        |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                 |
+| System-Only            | Falso                                        |
+| Es de un solo valor       | Verdadero                                         |
+| Está indexado             | Falso                                        |
+| En el catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Clases usadas en        | [**Sam-dominio**](c-samdomain.md)<br/> |
+| Clases usadas en        | [**Sam-Domain**](c-samdomain.md)<br/> |
 
 
 

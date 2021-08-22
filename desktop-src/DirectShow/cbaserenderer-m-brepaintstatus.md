@@ -1,7 +1,7 @@
 ---
-description: Marca que habilita o deshabilita los eventos Repaint.
+description: Marca que habilita o deshabilita los eventos de repintado.
 ms.assetid: ea5e5472-047f-4196-8637-e5e04b563d50
-title: 'Miembro CBaseRenderer:: m_bRepaintStatus (Renbase. h)'
+title: CBaseRenderer::m_bRepaintStatus miembro (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b594309c56dfda4a99c89c6e17a26f76128cd393
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 757a008003a3d53258d4bb297d3f2089ceaed1350b5ae3901bd1598556bca80a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670922"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119502745"
 ---
-# <a name="cbaserendererm_brepaintstatus-member"></a>Miembro bRepaintStatus CBaseRenderer:: m \_
+# <a name="cbaserendererm_brepaintstatus-member"></a>Miembro CBaseRenderer::m \_ bRepaintStatus
 
-Marca que habilita o deshabilita los eventos Repaint.
+Marca que habilita o deshabilita los eventos de repintado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,8 +42,8 @@ BOOL m_bRepaintStatus;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ BOOL m_bRepaintStatus;
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

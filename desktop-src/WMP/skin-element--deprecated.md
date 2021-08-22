@@ -1,9 +1,9 @@
 ---
-title: Elemento SKIN (obsoleto)
-description: En esta página se documenta una característica que puede no estar disponible en versiones futuras de Windows Media Player y el SDK de Windows Media Player.
+title: Elemento SKIN (en desuso)
+description: En esta página se documenta una característica que puede no estar disponible en versiones futuras de Reproductor de Windows Media y Reproductor de Windows Media SDK.
 ms.assetid: 593244c1-f850-46d7-8b84-14dcd59b024e
 keywords:
-- Elemento SKIN (obsoleto) Windows Media Player
+- Elemento SKIN (en desuso) Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,18 +13,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: abf503706dec131eef411ebaf3625071e2b31098
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b868b756ed190301c66987b6e26249762bac71842f4a5425d6d7c6d4b16816a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507915"
 ---
-# <a name="skin-element-deprecated"></a>Elemento SKIN (obsoleto)
+# <a name="skin-element-deprecated"></a>Elemento SKIN (en desuso)
 
-En esta página se documenta una característica que puede no estar disponible en versiones futuras de Windows Media Player y el SDK de Windows Media Player.
+En esta página se documenta una característica que puede no estar disponible en versiones futuras de Reproductor de Windows Media y Reproductor de Windows Media SDK.
 
-El elemento **Skin** especifica una dirección URL a un borde.
+El **elemento SKIN** especifica una dirección URL a un borde.
 
 ``` syntax
 <SKIN
@@ -34,9 +34,9 @@ El elemento **Skin** especifica una dirección URL a un borde.
 
 ## <a name="attributes"></a>Atributos
 
-**Href** (obligatorio)
+**HREF** (obligatorio)
 
-Dirección URL de un archivo de borde comprimido con una extensión de nombre de archivo. WMZ. En Windows Media Player serie 9 o versiones posteriores, este valor solo puede hacer referencia a los archivos de borde del disco duro del usuario ubicado en el mismo directorio que la lista de reproducción del metarchivo. Vea el código de ejemplo.
+Dirección URL de un archivo de borde comprimido con una extensión de nombre de archivo .wmz. Para Reproductor de Windows Media serie 9 o posterior, este valor solo puede hacer referencia a archivos de borde en el disco duro del usuario ubicado en el mismo directorio que la lista de reproducción de metarchivo. Vea el código de ejemplo.
 
 ## <a name="parentchild-elements"></a>Elementos primarios y secundarios
 
@@ -44,7 +44,7 @@ Dirección URL de un archivo de borde comprimido con una extensión de nombre de
 
 | Hierarchy       | Elementos |
 |-----------------|----------|
-| Elementos primarios | **ASX**  |
+| Elementos primarios | **Asx**  |
 | Elementos secundarios  | Ninguno     |
 
 
@@ -53,17 +53,17 @@ Dirección URL de un archivo de borde comprimido con una extensión de nombre de
 
 ## <a name="remarks"></a>Observaciones
 
-El elemento **Skin** se usa para crear un borde, que es similar a una máscara, pero que se muestra en el área **reproducción en curso** del Media Player de Windows en modo completo. El elemento **Skin** solo se usa para los bordes, que aparecen dentro del Media Player de Windows en modo completo y no para las máscaras normales, que reemplazan por completo a la Media Player de Windows en modo compacto.
+El **elemento SKIN** se usa para crear un borde, que es similar a una máscara, pero se muestra en el área **Reproducción** ahora del modo completo Reproductor de Windows Media. El **elemento SKIN** solo se usa para los bordes, que aparecen dentro del modo completo Reproductor de Windows Media, y no para las máscaras normales, que reemplazan completamente el modo compacto Reproductor de Windows Media.
 
-En un paquete de descarga de Windows Media (con la extensión de nombre de archivo. WMD), el elemento de **máscara** habilita un borde para tener contenido y vincular a otros sitios. El paquete de descarga de Windows Media es un archivo comprimido que contiene un archivo de borde y un metarchivo de Windows Media. El archivo de borde (con la extensión de nombre de archivo. WMZ) se comprime e incluye un archivo de definición de máscara (con una extensión de nombre de archivo. WMS).
+En un Windows de descarga multimedia (con una extensión de nombre de archivo .wmd), el elemento **SKIN** permite que un borde tenga contenido y vínculo a otros sitios. El Windows de descarga multimedia es un archivo comprimido que contiene un archivo de borde y un metarchivo Windows multimedia. El archivo de borde (con una extensión de nombre de archivo .wmz) está comprimido e incluye un archivo de definición de máscara (con una extensión de nombre de archivo .wms).
 
-Un elemento **Skin** tiene tres componentes:
+Un **elemento SKIN** tiene tres componentes:
 
 -   Una máscara
--   Algún contenido
--   Un metarchivo
+-   Contenido
+-   Metarchivo
 
-Las máscaras que se incluyen con los paquetes de descarga de Windows Media deben ser rectangulares. La creación de bordes con máscaras que no son rectangulares puede producir resultados inesperados.
+Las máscaras incluidas Windows paquetes de descarga multimedia deben tener forma rectangular. La creación de bordes con máscaras que no son rectangulares puede producir resultados inesperados.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -91,7 +91,7 @@ Las máscaras que se incluyen con los paquetes de descarga de Windows Media debe
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 70 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 70 o posterior<br/> |
 
 
 
@@ -99,13 +99,13 @@ Las máscaras que se incluyen con los paquetes de descarga de Windows Media debe
 
 <dl> <dt>
 
-[**Bordes de Media Player de Windows (desusado)**](borders-for-windows-media-player--deprecated.md)
+[**Bordes para Reproductor de Windows Media (en desuso)**](borders-for-windows-media-player--deprecated.md)
 </dt> <dt>
 
-[**Referencia de elementos de metarchivo de Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referencia de elementos de metarchivo multimedia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referencia de metarchivos de Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referencia de metarchivo multimedia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

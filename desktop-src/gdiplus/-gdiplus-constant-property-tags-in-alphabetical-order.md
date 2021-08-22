@@ -1,23 +1,23 @@
 ---
-description: En la tabla siguiente se muestran las etiquetas de propiedad de imagen GDI+ de Windows en orden alfabético.
+description: En la tabla siguiente se enumeran Windows GDI+ etiquetas de propiedad de imagen en orden alfabético.
 ms.assetid: c6d196a8-b10f-4e09-bf43-0198d96e5f40
 title: Etiquetas de propiedad en orden alfabético
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7179fa936d5e0e934ea1d317c1d14c25c189ed8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 73ef09cbc65d1e52dbe466f0d151ecd6a17b7becedc3bc8c80e1b293a775cf43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104985198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119612515"
 ---
 # <a name="property-tags-in-alphabetical-order"></a>Etiquetas de propiedad en orden alfabético
 
-En la tabla siguiente se muestran las etiquetas de propiedad de imagen GDI+ de Windows en orden alfabético.
+En la tabla siguiente se enumeran Windows GDI+ etiquetas de propiedad de imagen en orden alfabético.
 
 
 
-| Etiqueta de propiedad                                                                                                                            | Value  |
+| Etiqueta de propiedad                                                                                                                            | Valor  |
 |-----------------------------------------------------------------------------------------------------------------------------------------|--------|
 | [PropertyTagArtist](-gdiplus-constant-property-item-descriptions.md)                                                 | 0x013B |
 | [PropertyTagBitsPerSample](-gdiplus-constant-property-item-descriptions.md)                                   | 0x0102 |
@@ -133,16 +133,16 @@ En la tabla siguiente se muestran las etiquetas de propiedad de imagen GDI+ de W
 | [PropertyTagIndexTransparent](-gdiplus-constant-property-item-descriptions.md)                             | 0x5104 |
 | [PropertyTagInkNames](-gdiplus-constant-property-item-descriptions.md)                                             | 0x014D |
 | [PropertyTagInkSet](-gdiplus-constant-property-item-descriptions.md)                                                 | 0x014C |
-| [PropertyTagJPEGACTables](-gdiplus-constant-property-item-descriptions.md)                                     | 0x0209 |
-| [PropertyTagJPEGDCTables](-gdiplus-constant-property-item-descriptions.md)                                     | 0x0208 |
-| [PropertyTagJPEGInterFormat](-gdiplus-constant-property-item-descriptions.md)                               | 0x0201 |
-| [PropertyTagJPEGInterLength](-gdiplus-constant-property-item-descriptions.md)                               | 0x0202 |
-| [PropertyTagJPEGLosslessPredictors](-gdiplus-constant-property-item-descriptions.md)                 | 0x0205 |
-| [PropertyTagJPEGPointTransforms](-gdiplus-constant-property-item-descriptions.md)                       | 0x0206 |
-| [PropertyTagJPEGProc](-gdiplus-constant-property-item-descriptions.md)                                             | 0x0200 |
-| [PropertyTagJPEGQTables](-gdiplus-constant-property-item-descriptions.md)                                       | 0x0207 |
-| [PropertyTagJPEGQuality](-gdiplus-constant-property-item-descriptions.md)                                       | 0x5010 |
-| [PropertyTagJPEGRestartInterval](-gdiplus-constant-property-item-descriptions.md)                       | 0x0203 |
+| [PropertyTag CONFIGURABLEEGACTables](-gdiplus-constant-property-item-descriptions.md)                                     | 0x0209 |
+| [PropertyTag CONFIGURABLEEGDCTables](-gdiplus-constant-property-item-descriptions.md)                                     | 0x0208 |
+| [PropertyTagFORMATEGInterFormat](-gdiplus-constant-property-item-descriptions.md)                               | 0x0201 |
+| [PropertyTagGSEGInterLength](-gdiplus-constant-property-item-descriptions.md)                               | 0x0202 |
+| [PropertyTagREVEGLosslessPredictors](-gdiplus-constant-property-item-descriptions.md)                 | 0x0205 |
+| [PropertyTagTRANSFORMEGPointTransforms](-gdiplus-constant-property-item-descriptions.md)                       | 0x0206 |
+| [PropertyTagHOMEEGProc](-gdiplus-constant-property-item-descriptions.md)                                             | 0x0200 |
+| [PropertyTag CONFIGURABLEEGQTables](-gdiplus-constant-property-item-descriptions.md)                                       | 0x0207 |
+| [PropertyTagQUALEGQuality](-gdiplus-constant-property-item-descriptions.md)                                       | 0x5010 |
+| [PropertyTagOGRAMAEGRestartInterval](-gdiplus-constant-property-item-descriptions.md)                       | 0x0203 |
 | [PropertyTagLoopCount](-gdiplus-constant-property-item-descriptions.md)                                           | 0x5101 |
 | [PropertyTagLuminanceTable](-gdiplus-constant-property-item-descriptions.md)                                 | 0x5090 |
 | [PropertyTagMaxSampleValue](-gdiplus-constant-property-item-descriptions.md)                                 | 0x0119 |
@@ -159,7 +159,7 @@ En la tabla siguiente se muestran las etiquetas de propiedad de imagen GDI+ de W
 | [PropertyTagPixelUnit](-gdiplus-constant-property-item-descriptions.md)                                           | 0x5110 |
 | [PropertyTagPlanarConfig](-gdiplus-constant-property-item-descriptions.md)                                     | 0x011C |
 | [PropertyTagPredictor](-gdiplus-constant-property-item-descriptions.md)                                           | 0x013D |
-| [PropertyTagPrimaryChromaticities](-gdiplus-constant-property-item-descriptions.md)                   | 0x013F |
+| [PropertyTagPrimaryCroticities](-gdiplus-constant-property-item-descriptions.md)                   | 0x013F |
 | [PropertyTagPrintFlags](-gdiplus-constant-property-item-descriptions.md)                                         | 0x5005 |
 | [PropertyTagPrintFlagsBleedWidth](-gdiplus-constant-property-item-descriptions.md)                     | 0x5008 |
 | [PropertyTagPrintFlagsBleedWidthScale](-gdiplus-constant-property-item-descriptions.md)           | 0x5009 |
@@ -245,10 +245,10 @@ En la tabla siguiente se muestran las etiquetas de propiedad de imagen GDI+ de W
 
 <dl> <dt>
 
-[Constantes de etiqueta de propiedad de imagen](-gdiplus-constant-image-property-tag-constants.md)
+[Constantes de etiquetas de propiedades de imagen](-gdiplus-constant-image-property-tag-constants.md)
 </dt> <dt>
 
-[**Constantes de tipo de etiqueta de propiedad de imagen**](-gdiplus-constant-image-property-tag-type-constants.md)
+[**Constantes de tipo de etiqueta de propiedad image**](-gdiplus-constant-image-property-tag-type-constants.md)
 </dt> <dt>
 
 [Descripciones de elementos de propiedad](-gdiplus-constant-property-item-descriptions.md)

@@ -1,43 +1,43 @@
 ---
 title: Instalación de aplicaciones en sistemas de 64 bits
-description: El Windows Installer de 64 bits puede instalar sin problemas aplicaciones basadas en MSI de 32 bits en Windows de 64 bits.
+description: El instalador de Windows de 64 bits puede instalar sin problemas aplicaciones basadas en MSI de 32 bits en aplicaciones de 64 Windows.
 ms.assetid: fb9c5720-9906-4827-9daf-d7caa453e818
 keywords:
-- instalación de la aplicación 64 programación de Windows de bits
-- instalación 64 programación de Windows de bits
+- instalación de aplicaciones de 64 bits Windows programación
+- programación de instalación de Windows 64 bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13a5f8f623776ffa637718fc0d565f2c71a7b8e6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 26f06eaa527142145791e4ed29e2420d16b1d7a2f4fbe9a77801857a844ed7b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104149406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119643605"
 ---
 # <a name="application-installation-on-64-bit-systems"></a>Instalación de aplicaciones en sistemas de 64 bits
 
-El [Windows Installer de 64 bits](/windows/desktop/Msi/windows-installer-on-64-bit-operating-systems) puede instalar sin problemas aplicaciones basadas en MSI de 32 bits en Windows de 64 bits. En el caso de las aplicaciones anteriores que usan un código auxiliar de 16 bits para iniciar un motor de instalación de 32 bits, Windows de 64 bits reconoce programas de instalador específicos de 16 bits y sustituye una versión de 32 bits por puerto.
+El instalador de Windows de [64](/windows/desktop/Msi/windows-installer-on-64-bit-operating-systems) bits puede instalar sin problemas aplicaciones basadas en MSI de 32 bits en aplicaciones de 64 Windows. En el caso de las aplicaciones anteriores que usan un código auxiliar de 16 bits para iniciar un motor de instalación de 32 bits, Windows de 64 bits reconoce programas específicos del instalador de 16 bits y sustituye una versión de 32 bits porteada.
 
-las aplicaciones DOS de 16 bits, Windows u OS/2 suelen usar un código auxiliar de 16 bits para comprobar el tipo de máquina y, a continuación, iniciar un motor de instalación de 32 bits para realizar realmente la instalación. Para habilitar la instalación de aplicaciones que usan esta técnica 64, Windows sustituye a las versiones de 32 bits de los siguientes programas de instalador de 16 bits:
+Las aplicaciones DOS, Windows o OS/2 de 16 bits suelen usar un código auxiliar de 16 bits para comprobar el tipo de máquina y, a continuación, iniciar un motor de instalación de 32 bits para realizar realmente la instalación. Para habilitar la instalación de aplicaciones que usan esta técnica, el Windows de 64 bits sustituye las versiones de 32 bits por los siguientes programas de instalador de 16 bits:
 
-* Programa de instalación de Microsoft para Windows 1,2  
-* Programa de instalación de Microsoft para Windows 2,6  
-* Programa de instalación de Microsoft para Windows 3,0  
-* Programa de instalación de Microsoft para Windows 3,01  
-* InstallShield 5. x  
+* Instalación de Microsoft para Windows 1.2  
+* Instalación de Microsoft para Windows 2.6  
+* Instalación de Microsoft para Windows 3.0  
+* Instalación de Microsoft para Windows 3.01  
+* InstallShield 5.x  
 
-La lista de sustituciones se almacena en el registro con la siguiente clave: **HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows NT \\ CurrentVersion \\ NtVdm64**.
+La lista de sustituciones se almacena en el Registro con la siguiente clave: **HKEY \_ LOCAL MACHINE Software Microsoft Windows NT \_ \\ \\ \\ \\ CurrentVersion \\ NtVdm64**.
 
 > [!Note]  
-> Este mecanismo solo se proporciona para la compatibilidad con aplicaciones de 32 bits que usan los programas de Microsoft Installer de 16 bits que se enumeran en este tema. No se admite la adición de programas de instalador de terceros.
+> Este mecanismo solo se proporciona por compatibilidad con aplicaciones de 32 bits que usan los programas de instalador de Microsoft de 16 bits que se enumeran en este tema. No se admite la adición de programas de instalador de terceros.
 
- 
+ 
 
 > [!Note]  
 > Este mecanismo no se incluye en Windows 10 en ARM.
 
- 
+ 
 
- 
+ 
 
- 
+ 

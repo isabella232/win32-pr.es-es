@@ -1,8 +1,8 @@
 ---
-description: La \_ clase WMI COMApplicationClasses Abstract Association de Win32 relaciona un componente del modelo de objetos componentes (com) y la aplicación com donde reside.
+description: La clase WMI de asociación abstracta COMApplicationClasses de Win32 relaciona un componente del Modelo de objetos componentes (COM) y la aplicación \_ COM donde reside.
 ms.assetid: 7c188199-86fb-45ba-b318-9d9529b831b8
 ms.tgt_platform: multiple
-title: Win32_COMApplicationClasses (clase)
+title: Win32_COMApplicationClasses clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 01413128f7457049a4383c1148938e2136645337
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4ee60339aa4b25bb5a18659ad22e6a52749e330ea57e52b66ae620091e7a75b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119642775"
 ---
-# <a name="win32_comapplicationclasses-class"></a>\_Clase Win32 COMApplicationClasses
+# <a name="win32_comapplicationclasses-class"></a>Clase COMApplicationClasses de Win32 \_
 
-La [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **\_ COMApplicationClasses** Abstract Association de Win32 relaciona un componente del modelo de objetos componentes (COM) y la aplicación com donde reside.
+La clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) de asociación abstracta **\_ COMApplicationClasses de Win32** relaciona un componente del Modelo de objetos componentes (COM) y la aplicación COM donde reside.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -55,49 +55,49 @@ La **clase \_ COMApplicationClasses de Win32** tiene estas propiedades.
 **GroupComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ Comaplicación Win32**
+Tipo de datos: **\_ ComApplication de Win32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ comapplication")
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ COMApplication")
 </dt> </dl>
 
-Una [**\_ aplicación de Win32**](win32-comapplication.md) que representa la aplicación com que contiene el componente com.
+Una [**aplicación \_ COM de Win32**](win32-comapplication.md) que representa la aplicación COM que contiene el componente COM.
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos **: \_ Comclase Win32**
+Tipo de datos: **Win32 \_ COMClass**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ comClass")
+Calificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("WMI \| Win32 \_ COMClass")
 </dt> </dl>
 
-[**Comclase \_ de Win32**](win32-comclass.md) que representa el componente com agrupado en la aplicación com.
+Una [**clase \_ COMClass de Win32**](win32-comclass.md) que representa el componente COM agrupado en la aplicación COM.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La **clase \_ COMApplicationClasses de Win32** se deriva [**del \_ componente CIM**](cim-component.md).
+La **clase \_ COMApplicationClasses de Win32** se deriva del [**componente CIM \_**](cim-component.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ La **clase \_ COMApplicationClasses de Win32** se deriva [**del \_ componente CI
 
 <dl> <dt>
 
-[**\_Componente CIM**](cim-component.md)
+[**Componente \_ CIM**](cim-component.md)
 </dt> <dt>
 
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))

@@ -1,7 +1,7 @@
 ---
-description: Genera un conjunto de nombres de Puerto WWPN (WWPN).
+description: Genera un conjunto de nombres de puertos world wide (WWPN).
 ms.assetid: 36f393eb-6f34-4ae3-a976-c5da60211f3e
-title: Método GenerateWwpn de la clase Msvm_VirtualSystemManagementService
+title: Método GenerateWwpn de la Msvm_VirtualSystemManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: b0efba6a24a7e4f7e6826f91930cb69b4b54f3cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1952954d107185fdcc31634b9d0e19bd4cd3450db5a63d78aa3ef823cdf38afe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532525"
 ---
-# <a name="generatewwpn-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método GenerateWwpn de la \_ clase VirtualSystemManagementService de MSVM
+# <a name="generatewwpn-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método GenerateWwpn de la clase Msvm \_ VirtualSystemManagementService
 
-Genera un conjunto de nombres de Puerto WWPN (WWPN). Los WWPN se generan desde el intervalo preconfigurado definido por las propiedades **MinimumWWPNAddress** y **MaximumWWPNAddress** de la clase [**MSVM \_ VirtualSystemManagementServiceSettingData**](msvm-virtualsystemmanagementservicesettingdata.md) . Si el número de WWPN válido que se puede generar es menor que el número solicitado, las entradas restantes de la matriz *GeneratedWwpn* tendrán la entrada no válida de "0000000000000000" y el valor devuelto indicará Success (0).
+Genera un conjunto de nombres de puertos world wide (WWPN). Los WWPN se generan desde dentro del intervalo preconfigurado definido por las propiedades **MinimumWWPNAddress** y **MaximumWWPNAddress** de la clase [**Msvm \_ VirtualSystemManagementServiceSettingData.**](msvm-virtualsystemmanagementservicesettingdata.md) Si el número válido de WWPN que se pueden generar es menor que el número solicitado, las entradas restantes de la matriz *GeneratedWwpn* tendrán la entrada no válida "000000000000000000" y el valor devuelto indicará que se ha hecho correctamente (0).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,17 +40,17 @@ uint32 GenerateWwpn(
 
 <dl> <dt>
 
-*NumberOfWwpns* \[ de\]
+*NumberOfWwpns* \[ En\]
 </dt> <dd>
 
-Número de WWPN que se van a generar.
+Número de WWPN que se generarán.
 
 </dd> <dt>
 
-*GeneratedWwpn* \[ enuncia\]
+*GeneratedWwpn* \[ out\]
 </dt> <dd>
 
-Matriz de cadenas, cada una de las cuales contendrá un WWPN generado. Se le aplicará el formato de cadena como "01:23:45:67:89: AB: CD: EF".
+Matriz de cadenas, cada una de las cuales contendrá un WWPN generado. Se le dará formato en forma de cadena como "01:23:45:67:89:ab:cd:ef".
 
 </dd> </dl>
 
@@ -72,16 +72,16 @@ Este método devuelve uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -90,10 +90,10 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -102,10 +102,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -114,7 +114,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
+[**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md)
 </dt> </dl>
 
  

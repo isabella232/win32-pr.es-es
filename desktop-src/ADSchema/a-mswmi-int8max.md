@@ -1,11 +1,11 @@
 ---
-title: atributo MS-WMI-int8Max
-description: El valor máximo de un objeto de parámetro de entero de 64 bits de WMI.
+title: Atributo ms-WMI-int8Max
+description: Valor máximo de un objeto de parámetro entero wmi de 64 bits.
 ms.assetid: f2e9949f-7ad6-4e4c-9335-8915062a89a5
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-WMI-int8Max
-- msWMI-Int8Max atributo AD Schema
+- Esquema de AD del atributo ms-WMI-int8Max
+- Esquema de AD del atributo msWMI-Int8Max
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0e011881127785d52b4d993f713f6b371b5674f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 894a710419a8d1711900e0835ddcf940705b9e6f4e3019629f0ffd865b188a8b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507645"
 ---
-# <a name="ms-wmi-int8max-attribute"></a>atributo MS-WMI-int8Max
+# <a name="ms-wmi-int8max-attribute"></a>Atributo ms-WMI-int8Max
 
-El valor máximo de un objeto de parámetro de entero de 64 bits de WMI.
+Valor máximo de un objeto de parámetro entero wmi de 64 bits.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-WMI-int8Max                       |
-| Nombre para mostrar de LDAP | msWMI-Int8Max                        |
-| Tamaño              | 8 bytes                              |
-| Actualizar privilegio  | Administrador de directiva de grupo           |
+| CN                | ms-WMI-int8Max                       |
+| Ldap-Display-Name | msWMI-Int8Max                        |
+| Size              | 8 bytes                              |
+| Actualizar privilegios  | directiva de grupo administrador           |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1633              |
-| System-ID-GUID    | e3d8b547-003d-4946-a32b-dc7cedc96b74 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | e3d8b547-003d-4946-a32b-dc7cedc96b74 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -54,13 +54,13 @@ El valor máximo de un objeto de parámetro de entero de 64 bits de WMI.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -75,13 +75,13 @@ El valor máximo de un objeto de parámetro de entero de 64 bits de WMI.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -96,13 +96,13 @@ El valor máximo de un objeto de parámetro de entero de 64 bits de WMI.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -117,13 +117,13 @@ El valor máximo de un objeto de parámetro de entero de 64 bits de WMI.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -138,13 +138,13 @@ El valor máximo de un objeto de parámetro de entero de 64 bits de WMI.
 
 | Entrada | Value |
 |------------------------|--------------|
-| Identificador de vínculo                | \-           |
+| Id. de vínculo                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | False        |
-| Tiene un único valor       | True         |
-| Está indexado             | False        |
-| En el catálogo global      | False        |
-| Descriptor de NT-Security- | O:BAG: BAD: S: |
+| System-Only            | Falso        |
+| Es de un solo valor       | Verdadero         |
+| Está indexado             | Falso        |
+| En el catálogo global      | Falso        |
+| NT-Security-Descriptor | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

@@ -12,12 +12,12 @@ api_name:
 - WorldToObject4x3
 api_type:
 - NA
-ms.openlocfilehash: 334a79352345fb35fbbafe68248a221bdaab9f6d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 26775e10723a768aa5b526fadfae55414dafa2311b020b1683a99e2b2139dc30
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119565565"
 ---
 # <a name="worldtoobject4x3"></a>WorldToObject4x3
 
@@ -37,7 +37,7 @@ void WorldToObject4x3();
 
 La matriz es una transformación de **la matriz WorldToObject3x4.**
 
-Se puede llamar a esta función desde los siguientes tipos de sombreador:
+Se puede llamar a esta función desde los siguientes tipos de sombreador de raytracción:
 
 * [**Sombreador de cualquier acierto**](any-hit-shader.md)
 * [**Sombreador del acierto más cercano**](closest-hit-shader.md)
@@ -47,7 +47,7 @@ Se puede llamar a esta función desde los siguientes tipos de sombreador:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

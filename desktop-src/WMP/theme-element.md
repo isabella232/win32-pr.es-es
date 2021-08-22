@@ -1,75 +1,75 @@
 ---
-title: Elemento THEME
-description: Elemento THEME
+title: ELEMENTO THEME
+description: ELEMENTO THEME
 ms.assetid: fe7e793e-1774-412c-aed2-721ed2cf1bb3
 keywords:
-- Aspectos de Windows Media Player, elemento THEME
-- máscaras, elemento de tema
-- Elemento THEME
-- referencia de las máscaras, elemento de tema
-- elementos, tema
+- Reproductor de Windows Media máscaras,elemento THEME
+- skins,ELEMENTO THEME
+- ELEMENTO THEME
+- referencia de máscaras,elemento THEME
+- elements,THEME
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8cd0d40b4b020cf5416569417401af9e4f3a33b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0c15091ffa93e3ae64a06979580931c27bdf4c1cd2e26c7acc206d76de8b0fc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903282"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507395"
 ---
-# <a name="theme-element"></a>Elemento THEME
+# <a name="theme-element"></a>ELEMENTO THEME
 
-El elemento de **tema** es el elemento de nivel primario de una máscara y contiene uno o varios elementos de **vista** que, a su vez, contienen todos los demás elementos de una máscara. En el código de script, se tiene acceso al elemento de **tema** mediante el atributo global de **tema** en lugar de un nombre especificado por un atributo de **identificador** , que no es compatible con el elemento de **tema** .
+El **elemento THEME** es el elemento de nivel primario de una máscara y contiene uno o varios elementos **VIEW,** que a su vez contienen todos los demás elementos dentro de una máscara. Dentro del código de script, se tiene acceso al elemento **THEME** a través del atributo **global** de tema en lugar de a través de un nombre especificado por un atributo **id,** que no es compatible con el **elemento THEME.**
 
-El elemento **Theme** admite los siguientes atributos.
+El **elemento THEME** admite los atributos siguientes.
 
 
 
 | Atributo                                | Descripción                                                                                                                     |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| [frente](theme-author.md)               | Especifica o recupera el nombre del autor de la máscara.                                                                      |
-| [authorVersion](theme-authorversion.md) | Especifica o recupera el número de versión de la máscara tal como la asigna el autor.                                                |
-| [sSoftware](theme-copyright.md)         | Especifica o recupera la cadena de copyright de la máscara.                                                                       |
-| [currentViewID](theme-currentviewid.md) | Especifica o recupera la **vista** mostrada actualmente.                                                                        |
+| [Autor](theme-author.md)               | Especifica o recupera el nombre del autor de la máscara.                                                                      |
+| [authorVersion](theme-authorversion.md) | Especifica o recupera el número de versión de la máscara según lo asignado por el autor.                                                |
+| [Copyright](theme-copyright.md)         | Especifica o recupera la cadena de copyright de la máscara.                                                                       |
+| [currentViewID](theme-currentviewid.md) | Especifica o recupera la vista mostrada **actualmente.**                                                                        |
 | [title](theme-title.md)                 | Especifica o recupera el título de la máscara.                                                                                   |
-| [version](theme-version.md)             | Especifica o recupera el número de versión de Windows Media Player para el que se creó la máscara. Solo se puede establecer en tiempo de diseño. |
+| [version](theme-version.md)             | Especifica o recupera el número de Reproductor de Windows Media versión para el que se autorizó la máscara. Solo se puede establecer en tiempo de diseño. |
 
 
 
- 
+ 
 
-El elemento **Theme** admite los métodos siguientes.
+El **elemento THEME** admite los métodos siguientes.
 
 
 
 | Método                                         | Descripción                                                                                                     |
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [closeView](theme-closeview.md)               | Cierra una **vista** abierta.                                                                                        |
-| [loadPreference](theme-loadpreference.md)     | Carga una preferencia del registro.                                                                           |
-| [logString](theme-logstring.md)               | Registra una cadena definida por el usuario en el archivo de error si está habilitado el registro.                                            |
+| [closeView](theme-closeview.md)               | Cierra una vista **abierta.**                                                                                        |
+| [loadPreference](theme-loadpreference.md)     | Carga una preferencia del Registro.                                                                           |
+| [logString](theme-logstring.md)               | Registra una cadena definida por el usuario en el archivo de error, si el registro está habilitado.                                            |
 | [openDialog](theme-opendialog.md)             | Abre un cuadro de diálogo de archivo.                                                                                        |
-| [AbrirVista](theme-openview.md)                 | Abre una **vista** en una nueva ventana.                                                                               |
-| [openViewRelative](theme-openviewrelative.md) | Abre una **vista** en una nueva ventana en la posición inicial especificada relativa a la esquina superior izquierda de la máscara. |
-| [Reproducción](theme-playsound.md)               | Reproduce el archivo de sonido especificado.                                                                                 |
-| [savePreference](theme-savepreference.md)     | Guarda una preferencia en el registro.                                                                             |
-| [showErrorDialog](theme-showerrordialog.md)   | Muestra el cuadro de diálogo de error estándar.                                                                         |
+| [Openview](theme-openview.md)                 | Abre una **vista** en una nueva ventana.                                                                               |
+| [openViewRelative](theme-openviewrelative.md) | Abre una **vista** en una nueva ventana en una posición inicial especificada con respecto a la esquina superior izquierda de la máscara. |
+| [play Sound](theme-playsound.md)               | Reproduce el archivo de sonido especificado.                                                                                 |
+| [savePreference](theme-savepreference.md)     | Guarda una preferencia en el Registro.                                                                             |
+| [showErrorDialog](theme-showerrordialog.md)   | Muestra el cuadro de diálogo error estándar.                                                                         |
 
 
 
- 
+ 
 
-El elemento **Theme** no admite controladores de eventos.
+El **elemento THEME** no admite controladores de eventos.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Referencia de programación de máscara**](skin-programming-reference.md)
+[**Referencia de programación de máscaras**](skin-programming-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

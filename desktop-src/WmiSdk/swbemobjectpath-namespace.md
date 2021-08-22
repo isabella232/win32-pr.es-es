@@ -2,7 +2,7 @@
 description: La propiedad Namespace del objeto SWbemObjectPath contiene el nombre del espacio de nombres que forma parte de la ruta de acceso del objeto.
 ms.assetid: be88670d-6f0d-4b9d-886f-3e70bf4758ed
 ms.tgt_platform: multiple
-title: Propiedad SWbemObjectPath. Namespace (Wbemdisp. h)
+title: Propiedad SWbemObjectPath.Namespace (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,26 +17,26 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 885f7069e901d1d4a490ad7539077463f6c1838c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f9daa9b74918c16d58546f6830bb474e40e449a8c596f61f7e27f03342c47b4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119503765"
 ---
-# <a name="swbemobjectpathnamespace-property"></a>Propiedad SWbemObjectPath. Namespace
+# <a name="swbemobjectpathnamespace-property"></a>SWbemObjectPath.Namespace, propiedad
 
-La propiedad **namespace** del objeto [**SWbemObjectPath**](swbemobjectpath.md) contiene el nombre del espacio de nombres que forma parte de la ruta de acceso del objeto. Por ejemplo, la ruta de acceso siguiente muestra la propiedad de espacio de nombres que devuelve la raíz \\ cimv2:
+La **propiedad Namespace** del objeto [**SWbemObjectPath**](swbemobjectpath.md) contiene el nombre del espacio de nombres que forma parte de la ruta de acceso del objeto. Por ejemplo, la ruta de acceso siguiente muestra la propiedad namespace que devuelve la \\ raíz cimv2:
 
 ``` syntax
 \\computer\root\cimv2:win32_logicaldisk="a:"
 ```
 
-Para ver la explicación de la sintaxis, vea [convenciones de documentos para la API de scripting](document-conventions-for-the-scripting-api.md).
+Para obtener la explicación de la sintaxis, [consulte Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -49,7 +49,7 @@ SWbemObjectPath.Namespace As String
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo obtener el nombre del espacio de nombres de las instancias de [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) que son discos duros. El script se conecta al espacio de nombres predeterminado.
+En el ejemplo siguiente se muestra cómo obtener el nombre del espacio de nombres de las instancias de [**\_ LogicalDisk de Win32**](/windows/desktop/CIMWin32Prov/win32-logicaldisk) que son discos duros. El script se conecta al espacio de nombres predeterminado.
 
 
 ```VB
@@ -74,15 +74,15 @@ Next
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemObjectPath<br/>                                                       |
-| IID<br/>                      | \_ISWBEMOBJECTPATH IID<br/>                                                        |
+| IID<br/>                      | IID \_ ISWbemObjectPath<br/>                                                        |
 
 
 

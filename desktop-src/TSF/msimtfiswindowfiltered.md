@@ -1,9 +1,9 @@
 ---
-title: MsimtfIsWindowFiltered función)
-description: La función MsimtfIsWindowFiltered comprueba si AIMM (Administrador de métodos de entrada activos) filtra la ventana especificada.
+title: Función MsimtfIsWindowFiltered
+description: La función MsimtfIsWindowFiltered comprueba si AIMM (Administrador de métodos de entrada activo) filtra la ventana determinada.
 ms.assetid: 1f5e98f1-3626-4aa5-b2da-b6bc48d02184
 keywords:
-- MsimtfIsWindowFiltered función de servicios de texto
+- Función MsimtfIsWindowFiltered Text Services Framework
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70ad9bd9fb61c546ec3e2f1d96d5fc9cf932613a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 06f3841ed5c0436d991d02291c1e395f42d6b31b66f442a3caac0b2062fc27db
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119476755"
 ---
-# <a name="msimtfiswindowfiltered-function"></a>MsimtfIsWindowFiltered función)
+# <a name="msimtfiswindowfiltered-function"></a>Función MsimtfIsWindowFiltered
 
-La función **MsimtfIsWindowFiltered** comprueba si AIMM (Administrador de métodos de entrada activos) filtra la ventana especificada.
+La **función MsimtfIsWindowFiltered** comprueba si AIMM (Administrador de métodos de entrada activo) filtra la ventana determinada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ BOOL CALLBACK MsimtfIsWindowFiltered(
 
 <dl> <dt>
 
-*hWnd* \[ de\]
+*hwnd* \[ En\]
 </dt> <dd>
 
 Identificador de ventana que se va a probar.
@@ -53,8 +53,8 @@ Identificador de ventana que se va a probar.
 
 | Código devuelto                                                                          | Descripción                                                               |
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| <dl> <dt>**REALES**</dt> </dl>  | Si esta ventana está filtrada por el administrador de métodos de entrada activo.<br/>     |
-| <dl> <dt>**ES**</dt> </dl> | Si esta ventana no está filtrada por el administrador de métodos de entrada activo.<br/> |
+| <dl> <dt>**Verdad**</dt> </dl>  | Si el Administrador de métodos de entrada activo filtra esta ventana.<br/>     |
+| <dl> <dt>**Falso**</dt> </dl> | Si el Administrador de métodos de entrada activo no filtra esta ventana.<br/> |
 
 
 
@@ -62,7 +62,7 @@ Identificador de ventana que se va a probar.
 
 ## <a name="remarks"></a>Observaciones
 
-Una ventana se puede filtrar por IActiveIMMApp:: FilterClientWindows.
+IActiveIMMApp::FilterClientWindows puede filtrar una ventana.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,8 +70,8 @@ Una ventana se puede filtrar por IActiveIMMApp:: FilterClientWindows.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
 | Archivo DLL<br/>                      | <dl> <dt>Msimtf.dll</dt> </dl> |
 
 

@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TS-Secondary-Desktops
+title: Atributo ms-TS-Secondary-Desktops
 description: Este atributo representa la matriz de vínculos hacia delante a los escritorios secundarios de un usuario.
 ms.assetid: 41b978b8-042f-49f7-a3ea-61be727561ad
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-TS-Secondary-Desktops
-- msTSSecondaryDesktops esquema de AD de atributos
+- Esquema de AD del atributo ms-TS-Secondary-Desktops
+- Esquema de AD del atributo msTSSecondaryDesktops
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3697937f2050e2a3a6a4eeeb67d17a5e443b3d67
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a5720892964af4ccf5b7ea20c83dfdf0897f51b0c36bd97415270d6a35b69fef
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151622"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507815"
 ---
-# <a name="ms-ts-secondary-desktops-attribute"></a>atributo MS-TS-Secondary-Desktops
+# <a name="ms-ts-secondary-desktops-attribute"></a>Atributo ms-TS-Secondary-Desktops
 
 Este atributo representa la matriz de vínculos hacia delante a los escritorios secundarios de un usuario.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-TS-Secondary-Desktops                |
-| Nombre para mostrar de LDAP | msTSSecondaryDesktops                   |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-TS-Secondary-Desktops                |
+| Ldap-Display-Name | msTSSecondaryDesktops                   |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2075                 |
-| System-ID-GUID    | f63aa29a-bb31-48e1-bfab-0a6c5a1d39c2    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | f63aa29a-bb31-48e1-bfab-0a6c5a1d39c2    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -51,18 +51,18 @@ Este atributo representa la matriz de vínculos hacia delante a los escritorios 
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | 2172                              |
+| Id. de vínculo                | 2172                              |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -72,13 +72,13 @@ Este atributo representa la matriz de vínculos hacia delante a los escritorios 
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | 2172                              |
+| Id. de vínculo                | 2172                              |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | False                             |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Falso                             |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

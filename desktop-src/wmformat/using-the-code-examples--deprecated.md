@@ -1,9 +1,9 @@
 ---
-title: Usar los ejemplos de código
-description: Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte Windows Media Audio y vídeo códec y API de DSP. | Usar los ejemplos de código
+title: Uso de los ejemplos de código
+description: Para obtener documentación actual sobre Windows códecs multimedia y procesadores de señal digital, consulte Windows Media Audio and Video Codec and DSP APIs (API de códecs de audio y vídeo multimedia y DSP). | Uso de los ejemplos de código
 ms.assetid: 78280394-d787-4292-b332-035738a57f0e
 keywords:
-- Usar los ejemplos de código Windows Media Format
+- Usar el formato multimedia de windows De ejemplos de código
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2bc3ae2542198df369698f996926b2f17e8c5b8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 14c068c2d65dba3c530155bff6cbb4d9f80a4aa03936d8753070605a42080a65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105649343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119446865"
 ---
-# <a name="using-the-code-examples"></a>Usar los ejemplos de código
+# <a name="using-the-code-examples"></a>Uso de los ejemplos de código
 
-Para obtener la documentación actual sobre los códecs de Windows Media y los procesadores de señal digital, consulte [Windows Media Audio y vídeo códec y API de DSP.](/previous-versions//dd464626(v=vs.85))
+Para obtener documentación actual sobre los códecs Windows multimedia y los procesadores de señal digital, consulte Windows [Media Audio and Video Codec and DSP API (API](/previous-versions//dd464626(v=vs.85)) de códecs de audio y vídeo multimedia y DSP).
 
  
 

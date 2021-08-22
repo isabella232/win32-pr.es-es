@@ -1,9 +1,9 @@
 ---
 title: Atributo UserPlaycountWeekend
-description: El atributo UserPlaycountWeekend es el número de veces que el elemento se ha reproducido en sábado o domingo.
+description: El atributo UserPlaycountWeekend es el número de veces que el elemento se ha reproducido un sábado o un domingo.
 ms.assetid: 672b7ca8-6a1d-470d-bd66-ab7b35a1d55c
 keywords:
-- UserPlaycountWeekend Media Player de Windows
+- Atributo UserPlaycountWeekend Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,37 +12,37 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83c7919a352819eafa6d8cd5c3c72d77255824fc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3809208abddc317cff7ba9799860a4ee9ccae96e987e94eecab9ad5c3aba226f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507165"
 ---
 # <a name="userplaycountweekend-attribute"></a>Atributo UserPlaycountWeekend
 
-El atributo **UserPlaycountWeekend** es el número de veces que el elemento se ha reproducido en sábado o domingo.
+El **atributo UserPlaycountWeekend es** el número de veces que el elemento se ha reproducido un sábado o un domingo.
 
 ## <a name="applies-to"></a>Se aplica a
 
 -   [Elementos de audio](audio-item-attributes.md)
 -   [Otros elementos](other-item-attributes.md)
--   [Reproducción](playlist-attributes-ref.md)
+-   [Listas](playlist-attributes-ref.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este atributo solo se almacena en la biblioteca.
 
-Para determinar si puede cambiar el valor de este atributo, use el método [media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
@@ -50,7 +50,7 @@ Para determinar si puede cambiar el valor de este atributo, use el método [medi
 
 <dl> <dt>
 
-[**Referencia de atributo**](attribute-reference.md)
+[**Referencia de atributos**](attribute-reference.md)
 </dt> </dl>
 
  

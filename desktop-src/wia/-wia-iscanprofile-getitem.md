@@ -1,7 +1,7 @@
 ---
-description: Obtiene el GUID de la categoría del elemento 2,0 de adquisición de imágenes de Windows (WIA) al que está asociado el perfil.
+description: Obtiene el GUID de la categoría del elemento Windows Image Acquisition (WIA) 2.0 al que está asociado el perfil.
 ms.assetid: 2c816789-ad66-4b06-9160-7a86289ff373
-title: 'IScanProfile:: GetItem (método) (Scanprofile. h)'
+title: Método IScanProfile::GetItem (Scanprofile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scanprofile.h
-ms.openlocfilehash: 888a3bb5bcb6e6c4fc2fefff2d976eb7fc1c7f82
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a7f52a2d89bbd35b59febb25528fe493c4b5646afc70251fc19978d6d6265db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119451045"
 ---
-# <a name="iscanprofilegetitem-method"></a>IScanProfile:: GetItem (método)
+# <a name="iscanprofilegetitem-method"></a>IScanProfile::GetItem (método)
 
-Obtiene el GUID de la categoría del elemento 2,0 de adquisición de imágenes de Windows (WIA) al que está asociado el perfil.
+Obtiene el GUID de la categoría del elemento Windows Image Acquisition (WIA) 2.0 al que está asociado el perfil.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,20 +39,20 @@ HRESULT GetItem(
 
 <dl> <dt>
 
-*pguidCategory* \[ enuncia\]
+*pguidCategory* \[ out\]
 </dt> <dd>
 
-Tipo: **GUID \** _
+Tipo: **\* GUID**
 
-Un puntero al GUID de la categoría del elemento de WIA 2,0. Siempre es una de las constantes de \_ categoría del elemento IPA de WIA \_ \_ .
+Puntero al GUID de la categoría del elemento WIA 2.0. Esta es siempre una de las constantes ITEM CATEGORY de WIA \_ \_ \_ IPA.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,10 +60,10 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Scanprofile. h</dt> </dl>    |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
+| Header<br/>                   | <dl> <dt>Scanprofile.h</dt> </dl>    |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 [**IScanProfile**](-wia-iscanprofile.md)
 </dt> <dt>
 
-[Esquema de análisis de perfil](-wia-scan-profile-schema.md)
+[Esquema de perfil de examen](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

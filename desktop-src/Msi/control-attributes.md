@@ -1,40 +1,40 @@
 ---
-description: Para obtener información sobre los atributos de control, vea el vínculo al control concreto que necesita crear en los controles, así como los vínculos a atributos de control concretos en las listas siguientes.
+description: Para obtener información sobre los atributos de control, vea el vínculo al control concreto que necesita crear en Controles, así como los vínculos a atributos de control concretos en las listas siguientes.
 ms.assetid: 948ce3d3-e463-40de-8b5f-21ef18b1a0ce
 title: Atributos de control
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61d026e84dadefa67ce9d6e00146c6e1c2017cb9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb9d7412ce3893b785dccf067287c191f033bdf5a100628577260ff10f74ce1e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119500725"
 ---
 # <a name="control-attributes"></a>Atributos de control
 
-Para obtener información sobre los atributos de control, vea el vínculo al control concreto que necesita crear en los [controles](controls.md) , así como los vínculos a atributos de control concretos en las listas siguientes.
+Para obtener información sobre los atributos de control, vea el vínculo al control concreto que debe crear en [Controles,](controls.md) así como los vínculos a atributos de control concretos en las listas siguientes.
 
-Los métodos siguientes se utilizan para especificar los atributos de un control:
+Los métodos siguientes se usan para especificar los atributos de un control :
 
--   Use la [tabla ControlCondition](controlcondition-table.md) para deshabilitar, habilitar, ocultar o mostrar un control según el valor de una propiedad o una instrucción condicional. También puede usar esta tabla para reemplazar el control predeterminado especificado en la [tabla del cuadro de diálogo](dialog-table.md).
--   Suscríbase el control a un ControlEvent, en la [tabla EventMapping](eventmapping-table.md). Escriba el identificador del atributo en la columna Attribute y el identificador de ControlEvent, en la columna Event de esta tabla.
--   Establezca las marcas de bits del atributo de control para el control en la columna atributo de la [tabla de control](control-table.md). Esto establece los atributos tras la creación del control.
+-   Use la [tabla ControlCondition para](controlcondition-table.md) deshabilitar, habilitar, ocultar o mostrar un control según el valor de una propiedad o instrucción condicional. También puede usar esta tabla para invalidar el control predeterminado especificado en la tabla [Dialog](dialog-table.md).
+-   Suscriba el control a un control ControlEvent en la [tabla EventMapping](eventmapping-table.md). Escriba el identificador del atributo en la columna Atributo y el identificador de ControlEvent en la columna Evento de esta tabla.
+-   Establezca las marcas de bits del atributo de control para el control en la columna Atributo de la [tabla Control](control-table.md). Esto establece los atributos tras la creación del control.
 
-Algunos atributos no se pueden establecer para cada control o se pueden especificar mediante todos los métodos anteriores. Vea los temas de control y atributo en particular para obtener más información.
+Algunos atributos no se pueden establecer para cada control ni especificarse mediante todos los métodos anteriores. Consulte los temas de control y atributo concretos para obtener más información.
 
-Los valores iniciales de algunos atributos de control se pueden establecer con bits en la [tabla de control](control-table.md).
+Los valores iniciales de algunos atributos de control se pueden establecer con bits en la [tabla Control](control-table.md).
 
 
 
 | Atributo                                          | Decimal | Hexadecimal | Constante                               |
 |----------------------------------------------------|---------|-------------|----------------------------------------|
-| [Lenguas](bidi-control-attribute.md)                 | 224     | 0x000000E0  | **msidbControlAttributesBiDi**         |
-| [Enabled](enabled-control-attribute.md)           | 2       | 0x00000002  | **msidbControlAttributesEnabled**      |
+| [Bidi](bidi-control-attribute.md)                 | 224     | 0x000000E0  | **msidbControlAttributesBiDi**         |
+| [Habilitado](enabled-control-attribute.md)           | 2       | 0x00000002  | **msidbControlAttributesEnabled**      |
 | [Indirecto](indirect-control-attribute.md)         | 8       | 0x00000008  | **msidbControlAttributesIndirect**     |
-| [Control de entero](integer-control-attribute.md)   | 16      | 0x00000010  | **msidbControlAttributesInteger**      |
+| [Integer (Control)](integer-control-attribute.md)   | 16      | 0x00000010  | **msidbControlAttributesInteger**      |
 | [LeftScroll](leftscroll-control-attribute.md)     | 128     | 0x00000080  | **msidbControlAttributesLeftScroll**   |
-| [RightAligned](rightaligned-control-attribute.md) | 64      | 0x00000040  | **msidbControlAttributesRightAligned** |
+| [Alineado a la derecha](rightaligned-control-attribute.md) | 64      | 0x00000040  | **msidbControlAttributesRightAligned** |
 | [RTLRO](rtlro-control-attribute.md)               | 32      | 0x00000020  | **msidbControlAttributesRTLRO**        |
 | [Sunken](sunken-control-attribute.md)             | 4       | 0x00000004  | **msidbControlAttributesSunken**       |
 | [Visible](visible-control-attribute.md)           | 1       | 0x00000001  | **msidbControlAttributesVisible**      |
@@ -43,14 +43,14 @@ Los valores iniciales de algunos atributos de control se pueden establecer con b
 
  
 
-Estos atributos de controles de texto se establecen con bits.
+Estos atributos de los controles Text se establecen con bits.
 
 
 
 | Atributo                                            | Decimal | Hexadecimal | Constante                                |
 |------------------------------------------------------|---------|-------------|-----------------------------------------|
-| [Formatear](formatsize-control-attribute.md)       | 524 288  | 0x00080000  | **msidbControlAttributesFormatSize**    |
-| [Noprefix](noprefix-control-attribute.md)           | 131 072  | 0x00020000  | **msidbControlAttributesNoPrefix**      |
+| [FormatSize](formatsize-control-attribute.md)       | 524 288  | 0x00080000  | **msidbControlAttributesFormatSize**    |
+| [NoPrefix](noprefix-control-attribute.md)           | 131 072  | 0x00020000  | **msidbControlAttributesNoPrefix**      |
 | [NoWrap](nowrap-control-attribute.md)               | 262 144  | 0x00040000  | **msidbControlAttributesNoWrap**        |
 | [Contraseña](password-control-attribute.md)           | 2 097 152 | 0x00200000  | **msidbControlAttributesPasswordInput** |
 | [Transparente](transparent-control-attribute.md)     | 65536   | 0x00010000  | **msidbControlAttributesTransparent**   |
@@ -72,7 +72,7 @@ Este atributo del control ProgressBar se establece con un bit.
 
  
 
-Estos atributos de los controles volumen y directorio SelectCombo se establecen con bits.
+Estos atributos de los controles Volume y Directory SelectCombo se establecen con bits.
 
 
 
@@ -95,20 +95,20 @@ Estos atributos de los controles ListBox y ComboBox se establecen con bits.
 
 | Atributo                                            | Decimal | Hexadecimal | Constante                            |
 |------------------------------------------------------|---------|-------------|-------------------------------------|
-| [Control ComboList](combolist-control-attribute.md) | 131 072  | 0x00020000  | **msidbControlAttributesComboList** |
+| [ComboList Control](combolist-control-attribute.md) | 131 072  | 0x00020000  | **msidbControlAttributesComboList** |
 | [Control ordenado](sorted-control-attribute.md)       | 65536   | 0x00010000  | **msidbControlAttributesSorted**    |
 
 
 
  
 
-Este atributo del control de edición se establece con un bit.
+Este atributo del control Edit se establece con un bit.
 
 
 
 | Atributo                                    | Decimal | Hexadecimal | Constante                            |
 |----------------------------------------------|---------|-------------|-------------------------------------|
-| [Ocupa](multiline-control-attribute.md) | 65536   | 0x00010000  | **msidbControlAttributesMultiline** |
+| [Multilínea](multiline-control-attribute.md) | 65536   | 0x00010000  | **msidbControlAttributesMultiline** |
 
 
 
@@ -126,7 +126,7 @@ Estos atributos de los controles PictureButton se establecen con bits.
 | [IconSize16](iconsize-control-attribute.md)       | 2 097 152 | 0x00200000  | **msidbControlAttributesIconSize16** |
 | [IconSize32](iconsize-control-attribute.md)       | 4 194 304 | 0x00400000  | **msidbControlAttributesIconSize32** |
 | [IconSize48](iconsize-control-attribute.md)       | 6291456 | 0x00600000  | **msidbControlAttributesIconSize48** |
-| [Control PushLike](pushlike-control-attribute.md) | 131 072  | 0x00020000  | **msidbControlAttributesPushLike**   |
+| [PushLike Control](pushlike-control-attribute.md) | 131 072  | 0x00020000  | **msidbControlAttributesPushLike**   |
 
 
 
@@ -150,13 +150,13 @@ Este atributo del control PushButton se establece con un bit.
 
 | Atributo                                        | Decimal | Hexadecimal | Constante                                  |
 |--------------------------------------------------|---------|-------------|-------------------------------------------|
-| [ElevationShield](elevationshield-attribute.md) | 8388608 | 0x00800000  | **msidbControlAttributesElevationShield** |
+| [ElevationShield](elevationshield-attribute.md) | 8388608 | 0x00800000  | **msidbControlAttributesEentaciónShield** |
 
 
 
  
 
-Este atributo de control VolumeCostList se establece con un bit.
+Este atributo del control VolumeCostList se establece con un bit.
 
 
 
@@ -168,9 +168,9 @@ Este atributo de control VolumeCostList se establece con un bit.
 
  
 
-Los siguientes atributos de control no se establecen con bits. Estos atributos se crean en las tablas de la interfaz de usuario o se establecen mediante [eventos de control](control-events.md).
+Los siguientes atributos de control no se establecen con bits. Estos atributos se crearon en las tablas de la interfaz de usuario o se establecen mediante [Eventos de control](control-events.md).
 
-[BillboardName](billboardname-control-attribute.md)
+[NameName](billboardname-control-attribute.md)
 
  
 
@@ -200,7 +200,7 @@ Los siguientes atributos de control no se establecen con bits. Estos atributos s
 
 [TimeRemaining](timeremaining-control-attribute.md)
 
-Vea [Agregar controles y texto](adding-controls-and-text.md).
+Vea [Agregar controles y texto.](adding-controls-and-text.md)
 
  
 

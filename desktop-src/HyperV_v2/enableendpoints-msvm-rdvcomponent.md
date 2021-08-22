@@ -1,7 +1,7 @@
 ---
-description: Solicita el Servicios de Escritorio remoto dispositivo virtual para iniciar una conexión de canalización con la máquina virtual.
+description: Solicita al Servicios de Escritorio remoto virtual que inicie una conexión de canalización con la máquina virtual.
 ms.assetid: e53238ee-8264-416b-8855-193c28089cfa
-title: Método EnableEndPoints de la clase Msvm_RdvComponent
+title: Método EnableEndPoints de la Msvm_RdvComponent clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: a668e6a2605a52c7021f630145d6e4897e1c76ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8a23f39ee46cb41c5941be3d9632fbe15901dfffd35078e680ebe61d46fdb131
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532535"
 ---
-# <a name="enableendpoints-method-of-the-msvm_rdvcomponent-class"></a>Método EnableEndPoints de la \_ clase RdvComponent de MSVM
+# <a name="enableendpoints-method-of-the-msvm_rdvcomponent-class"></a>Método EnableEndPoints de la clase \_ RdvComponent de Msvm
 
-Solicita el Servicios de Escritorio remoto dispositivo virtual para iniciar una conexión de canalización con la máquina virtual.
+Solicita al Servicios de Escritorio remoto virtual que inicie una conexión de canalización con la máquina virtual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ Este método devuelve uno de los valores siguientes.
 **Completado sin error** (0)
 </dt> <dt>
 
-**Parámetros de método comprobados: trabajo iniciado** (4096)
+**Parámetros de método activados: trabajo iniciado** (4096)
 </dt> <dt>
 
 **Error** (32768)
@@ -58,19 +58,19 @@ Este método devuelve uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-**Memoria insuficiente** (32774)
+**Memoria sin memoria** (32774)
 </dt> <dt>
 
-**No se encontró el archivo** (32775)
+**Archivo no encontrado** (32775)
 </dt> <dt>
 
  (32776)
@@ -100,10 +100,10 @@ Este método devuelve uno de los valores siguientes.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -112,7 +112,7 @@ Este método devuelve uno de los valores siguientes.
 
 <dl> <dt>
 
-[**MSVM \_ RdvComponent**](msvm-rdvcomponent.md)
+[**Msvm \_ RdvComponent**](msvm-rdvcomponent.md)
 </dt> </dl>
 
  

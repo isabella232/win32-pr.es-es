@@ -1,7 +1,7 @@
 ---
 description: La función GetSubtypeName recupera el nombre legible de un subtipo de vídeo.
 ms.assetid: 493b434e-2d36-4897-a5b2-7be0eb0a560f
-title: Función GetSubtypeName (Wxutil. h)
+title: Función GetSubtypeName (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f5cae835a3a7f1b5510d85ecf3f2ae9d15251a45
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c676f3e08f55bd010e761853b777e0eb4b28933536ab7af09bd94e457032b583
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564855"
 ---
-# <a name="getsubtypename-function"></a>GetSubtypeName función)
+# <a name="getsubtypename-function"></a>Función GetSubtypeName
 
 La `GetSubtypeName` función recupera el nombre legible de un subtipo de vídeo.
 
@@ -45,7 +45,7 @@ TCHAR* GetSubtypeName(
 *pSubtype* 
 </dt> <dd>
 
-Puntero a un **GUID** de subtipo de vídeo.
+Puntero a un GUID de subtipo **de vídeo.**
 
 </dd> </dl>
 
@@ -59,8 +59,8 @@ Devuelve una cadena que contiene el nombre.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxutil. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxutil.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 

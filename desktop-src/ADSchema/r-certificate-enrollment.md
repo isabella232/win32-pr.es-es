@@ -1,6 +1,6 @@
 ---
-title: Certificate-Enrollment derecha extendida
-description: Derecho extendido necesario para producir la inscripción de certificados.
+title: Certificate-Enrollment derecho extendido
+description: Derecho ampliado necesario para provocar la inscripción de certificados.
 ms.assetid: 12b8bab8-3b52-46a7-887a-28f6645311cc
 ms.tgt_platform: multiple
 keywords:
@@ -13,20 +13,20 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c42d7c39cecc9796dddfebd981bb27353ed9594e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 626892db9421d6c5cdf27e5085c13b2b80b4079e2c540c474dfd657e2a8442af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532765"
 ---
-# <a name="certificate-enrollment-extended-right"></a>Certificate-Enrollment derecha extendida
+# <a name="certificate-enrollment-extended-right"></a>Certificate-Enrollment derecho extendido
 
-Derecho extendido necesario para producir la inscripción de certificados.
+Derecho ampliado necesario para provocar la inscripción de certificados.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
 | CN           | Certificate-Enrollment               |
 | Display-Name | Inscribir                               |
@@ -47,10 +47,10 @@ Derecho extendido necesario para producir la inscripción de certificados.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-------------------------------------------------------------------------|
-| Applies-To              | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
-| Localización: ID. de presentación | 54                                                                      |
+| Applies-To              | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
+| Localization-Display-ID | 54                                                                      |
 
 
 
@@ -60,8 +60,8 @@ Derecho extendido necesario para producir la inscripción de certificados.
 
 | Entrada | Value |
 |-------------------------|-------------------------------------------------------------------------|
-| Applies-To              | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
-| Localización: ID. de presentación | 54                                                                      |
+| Applies-To              | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
+| Localization-Display-ID | 54                                                                      |
 
 
 
@@ -69,10 +69,10 @@ Derecho extendido necesario para producir la inscripción de certificados.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|-------------------------------------------------------------------------|
-| Applies-To              | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
-| Localización: ID. de presentación | 54                                                                      |
+| Applies-To              | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
+| Localization-Display-ID | 54                                                                      |
 
 
 
@@ -82,8 +82,8 @@ Derecho extendido necesario para producir la inscripción de certificados.
 
 | Entrada | Value |
 |-------------------------|-------------------------------------------------------------------------|
-| Applies-To              | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
-| Localización: ID. de presentación | 54                                                                      |
+| Applies-To              | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
+| Localization-Display-ID | 54                                                                      |
 
 
 
@@ -93,8 +93,8 @@ Derecho extendido necesario para producir la inscripción de certificados.
 
 | Entrada | Value |
 |-------------------------|-------------------------------------------------------------------------|
-| Applies-To              | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
-| Localización: ID. de presentación | 54                                                                      |
+| Applies-To              | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
+| Localization-Display-ID | 54                                                                      |
 
 
 
@@ -104,8 +104,8 @@ Derecho extendido necesario para producir la inscripción de certificados.
 
 | Entrada | Value |
 |-------------------------|-------------------------------------------------------------------------|
-| Applies-To              | [**PKI-Certificate-template**](c-pkicertificatetemplate.md)<br/> |
-| Localización: ID. de presentación | 54                                                                      |
+| Applies-To              | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
+| Localization-Display-ID | 54                                                                      |
 
 
 

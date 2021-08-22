@@ -1,27 +1,27 @@
 ---
 title: Cómo buscar elementos de la interfaz de usuario
-description: Este tema contiene código de ejemplo que muestra cómo buscar elementos de interfaz de usuario en el árbol de automatización de la interfaz de usuario.
+description: Este tema contiene código de ejemplo que muestra cómo buscar elementos de interfaz de usuario en el Automatización de la interfaz de usuario de datos.
 ms.assetid: b613eb18-e14d-468e-833d-072bad29ba06
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 887ef914d7abcf5ed6dfc546f0930334f53215d6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 52998ad92fe1912a5159443642d95bbc14a28da595ddd2b2a255ebecaed8c74d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104531875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119505275"
 ---
 # <a name="how-to-find-ui-elements"></a>Cómo buscar elementos de la interfaz de usuario
 
-Este tema contiene código de ejemplo que muestra cómo buscar elementos de interfaz de usuario en el árbol de automatización de la interfaz de usuario.
+Este tema contiene código de ejemplo que muestra cómo buscar elementos de interfaz de usuario en el Automatización de la interfaz de usuario de datos.
 
--   [Buscar un elemento por su nombre](#finding-an-element-by-name)
+-   [Buscar un elemento por nombre](#finding-an-element-by-name)
 -   [Buscar elementos relacionados](#finding-related-elements)
 -   [Temas relacionados](#related-topics)
 
-## <a name="finding-an-element-by-name"></a>Buscar un elemento por su nombre
+## <a name="finding-an-element-by-name"></a>Buscar un elemento por nombre
 
-En el ejemplo siguiente se busca el elemento de automatización de la interfaz de usuario de Microsoft que tiene el nombre especificado y es un elemento secundario de la ventana del escritorio.
+En el ejemplo siguiente se busca el Automatización de la interfaz de usuario microsoft que tiene el nombre especificado y es un elemento secundario de la ventana de escritorio.
 
 
 ```C++
@@ -72,7 +72,7 @@ cleanup:
 
 ## <a name="finding-related-elements"></a>Buscar elementos relacionados
 
-La función de ejemplo siguiente devuelve una colección de todos los botones habilitados que son elementos secundarios del elemento especificado.
+La siguiente función de ejemplo devuelve una colección de todos los botones habilitados que son elementos secundarios del elemento especificado.
 
 
 ```C++
@@ -131,18 +131,18 @@ cleanup:
 
 <dl> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Obtener elementos de UI Automation](uiauto-obtainingelements.md)
 </dt> <dt>
 
-[Temas de procedimientos para clientes de automatización de la interfaz de usuario](uiauto-howto-topics-for-uiautomation-clients.md)
+[Temas de ayuda para Automatización de la interfaz de usuario clientes](uiauto-howto-topics-for-uiautomation-clients.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

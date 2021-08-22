@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_HOTKEY (Winuser. h)
-description: Se envía cuando el usuario presiona una tecla de acceso rápido registrada por la función RegisterHotKey. El mensaje se coloca en la parte superior de la cola de mensajes asociada al subproceso que registró la tecla de acceso rápido.
+title: WM_HOTKEY mensaje (Winuser.h)
+description: Se publica cuando el usuario presiona una tecla de acceso rápido registrada por la función RegisterHotKey. El mensaje se coloca en la parte superior de la cola de mensajes asociada al subproceso que registró la clave de acceso activo.
 ms.assetid: 28d87c2f-b2bb-4176-910b-0addea6beb93
 keywords:
-- Entrada de mouse y teclado de mensaje de WM_HOTKEY
+- WM_HOTKEY entrada de teclado y mouse
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f09e81a964542a6a8166ae54a0df4d7127466c4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 51dbd37b61fea12e559323a73cbf6b4a5cb54704a74663f865d9aa89636d3c46
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119557145"
 ---
-# <a name="wm_hotkey-message"></a>Mensaje de Hotkey de WM \_
+# <a name="wm_hotkey-message"></a>Mensaje \_ WM HOTKEY
 
-Se envía cuando el usuario presiona una tecla de acceso rápido registrada por la función [**RegisterHotKey**](/windows/win32/api/winuser/nf-winuser-registerhotkey) . El mensaje se coloca en la parte superior de la cola de mensajes asociada al subproceso que registró la tecla de acceso rápido.
+Se publica cuando el usuario presiona una tecla de acceso rápido registrada por [**la función RegisterHotKey.**](/windows/win32/api/winuser/nf-winuser-registerhotkey) El mensaje se coloca en la parte superior de la cola de mensajes asociada al subproceso que registró la clave de acceso activo.
 
 
 ```C++
@@ -39,13 +39,13 @@ Se envía cuando el usuario presiona una tecla de acceso rápido registrada por 
 *wParam* 
 </dt> <dd>
 
-El identificador de la tecla de acceso rápido que generó el mensaje. Si el mensaje se ha generado mediante una tecla de acceso rápido definida por el sistema, este parámetro tendrá uno de los valores siguientes.
+Identificador de la tecla de acceso que generó el mensaje. Si el mensaje se generó mediante una clave de acceso dinámica definida por el sistema, este parámetro será uno de los siguientes valores.
 
 
 
-| Value                                                                                                                                                                                                                             | Significado                                            |
+| Valor                                                                                                                                                                                                                             | Significado                                            |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| <span id="IDHOT_SNAPDESKTOP"></span><span id="idhot_snapdesktop"></span><dl> <dt>**IDHOT \_ SNAPDESKTOP**</dt> <dt>-2</dt> </dl> | Se presionó la tecla de acceso rápido "ajustar escritorio".<br/> |
+| <span id="IDHOT_SNAPDESKTOP"></span><span id="idhot_snapdesktop"></span><dl> <dt>**IDHOT \_ SNAPDESKTOP**</dt> <dt>-2</dt> </dl> | Se presionó la tecla de acceso rápido "Snap Desktop".<br/> |
 | <span id="IDHOT_SNAPWINDOW"></span><span id="idhot_snapwindow"></span><dl> <dt>**IDHOT \_ SNAPWINDOW**</dt> <dt>-1</dt> </dl>    | Se presionó la tecla de acceso rápido "ventana de ajuste".<br/>  |
 
 
@@ -57,16 +57,16 @@ El identificador de la tecla de acceso rápido que generó el mensaje. Si el men
 *lParam* 
 </dt> <dd>
 
-La palabra de orden inferior especifica las teclas que se van a presionar en combinación con la clave especificada por la palabra de orden superior para generar el mensaje de **\_ Hotkey de WM** . Esta palabra puede ser uno o varios de los valores siguientes. La palabra de orden superior especifica el código de tecla virtual de la tecla de acceso rápido.
+La palabra de orden bajo especifica las teclas que se deben presionar en combinación con la clave especificada por la palabra de orden superior para generar el **mensaje WM \_ HOTKEY.** Esta palabra puede ser uno o varios de los valores siguientes. La palabra de orden superior especifica el código de clave virtual de la tecla de acceso.
 
 
 
-| Value                                                                                                                                                                                                               | Significado                                                                                                                                                                       |
+| Valor                                                                                                                                                                                                               | Significado                                                                                                                                                                       |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="MOD_ALT"></span><span id="mod_alt"></span><dl> <dt>**Mod \_ ALT**</dt> <dt>0x0001</dt> </dl>             | Se ha mantenido presionada la tecla ALT.<br/>                                                                                                                                      |
-| <span id="MOD_CONTROL"></span><span id="mod_control"></span><dl> <dt>**Mod \_**</dt> <dt>0X0002</dt> de control </dl> | Se ha mantenido presionada la tecla CTRL.<br/>                                                                                                                                     |
-| <span id="MOD_SHIFT"></span><span id="mod_shift"></span><dl> <dt>**Mod \_ SHIFT**</dt> <dt>0x0004</dt> </dl>       | Se ha mantenido presionada la tecla Mayús.<br/>                                                                                                                                    |
-| <span id="MOD_WIN"></span><span id="mod_win"></span><dl> <dt>**Mod \_ WIN**</dt> <dt>0x0008</dt> </dl>             | Se ha mantenido la tecla WINDOWS. Estas claves se etiquetan con el logotipo de Windows. Las teclas de operación que implican la clave de Windows están reservadas para su uso por parte del sistema operativo.<br/> |
+| <span id="MOD_ALT"></span><span id="mod_alt"></span><dl> <dt>**MOD \_ Alt**</dt> <dt>0x0001</dt> </dl>             | Se ha mantenido presionada cualquier tecla ALT.<br/>                                                                                                                                      |
+| <span id="MOD_CONTROL"></span><span id="mod_control"></span><dl> <dt>**MOD \_ Control**</dt> <dt>0x0002</dt> </dl> | Se ha presionado cualquiera de las teclas CTRL.<br/>                                                                                                                                     |
+| <span id="MOD_SHIFT"></span><span id="mod_shift"></span><dl> <dt>**MOD \_ Mayús**</dt> <dt>0x0004</dt> </dl>       | Se ha mantenido o no la tecla MAYÚS.<br/>                                                                                                                                    |
+| <span id="MOD_WIN"></span><span id="mod_win"></span><dl> <dt>**MOD \_ Win**</dt> <dt>0x0008</dt> </dl>             | Se ha mantenido o no la tecla WINDOWS. Estas claves se etiquetan con el logotipo Windows usuario. Las teclas de acceso rápido que implican Windows clave están reservadas para su uso por el sistema operativo.<br/> |
 
 
 
@@ -74,9 +74,9 @@ La palabra de orden inferior especifica las teclas que se van a presionar en com
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-**WM \_ La tecla** de acceso rápido no está relacionada con las teclas de acceso rápido de [**WM \_ GETHOTKEY**](wm-gethotkey.md) y [**WM \_ SETHOTKEY**](wm-sethotkey.md) . El mensaje de **\_ Hotkey de WM** se envía para las teclas de acceso rápido genéricas mientras que los mensajes de **WM \_ SETHOTKEY** y **WM \_ GETHOTKEY** se relacionan con las teclas de acceso rápido de activación de la ventana.
+**WM \_ HOTKEY no** está relacionado con las teclas de acceso rápido [**WM \_ GETHOTKEY**](wm-gethotkey.md) [**y WM \_ SETHOTKEY.**](wm-sethotkey.md) El **mensaje \_ WM HOTKEY se** envía para las teclas de acceso rápido genéricas, mientras que los mensajes WM **\_ SETHOTKEY** y **WM \_ GETHOTKEY** se relacionan con las teclas de acceso rápido de activación de ventana.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,7 +86,7 @@ La palabra de orden inferior especifica las teclas que se van a presionar en com
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -100,13 +100,13 @@ La palabra de orden inferior especifica las teclas que se van a presionar en com
 [**RegisterHotKey**](/windows/win32/api/winuser/nf-winuser-registerhotkey)
 </dt> <dt>
 
-[**GETHOTKEY de WM \_**](wm-gethotkey.md)
+[**WM \_ GETHOTKEY**](wm-gethotkey.md)
 </dt> <dt>
 
-[**SETHOTKEY de WM \_**](wm-sethotkey.md)
+[**WM \_ SETHOTKEY**](wm-sethotkey.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
 [Entrada de teclado](keyboard-input.md)

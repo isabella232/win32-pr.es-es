@@ -32,22 +32,22 @@ api_name: ''
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: 4add84011745aeb61659c39775b94fed91028d83
-ms.sourcegitcommit: 61bde60d4c3bc09defc3dcdb64c0ddadf52b214e
+ms.openlocfilehash: 3776748994b44b3a870fd4689fa9f4019bff99ae8d6f7dd7b13edbf2c98054d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "105704929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119449106"
 ---
-# <a name="shellproc-function"></a>ShellProc función)
+# <a name="shellproc-function"></a>Función ShellProc
 
 ## <a name="description"></a>Descripción
 
-Función de devolución de llamada definida por la aplicación o definida por la biblioteca que se usa con la función [SetWindowsHookEx](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw) .
+Función de devolución de llamada definida por la aplicación o definida por la biblioteca que se usa con la [función SetWindowsHookEx.](/windows/desktop/api/winuser/nf-winuser-setwindowshookexw)
 La función recibe notificaciones de eventos de Shell del sistema.
 
-El tipo **HOOKPROC** define un puntero a esta función de devolución de llamada.
-**ShellProc** es un marcador de posición para el nombre de la función definida por la aplicación o por la biblioteca.
+El **tipo HOOKPROC** define un puntero a esta función de devolución de llamada.
+**ShellProc es** un marcador de posición para el nombre de función definido por la aplicación o definido por la biblioteca.
 
 ```cpp
 LRESULT CALLBACK ShellProc(
@@ -71,60 +71,60 @@ Este parámetro puede ser uno de los valores siguientes.
 |-------|---------|
 | **HSHELL_ACCESSIBILITYSTATE** 11 | El estado de accesibilidad ha cambiado. |
 | **HSHELL_ACTIVATESHELLWINDOW** 3 | El shell debe activar su ventana principal. |
-| **HSHELL_APPCOMMAND** 12 | El usuario completó un evento de entrada (por ejemplo, presionó un botón de comando de la aplicación en el mouse o una tecla de comando de la aplicación en el teclado) y la aplicación no controló el mensaje de [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand) generado por dicha entrada. Si el procedimiento de Shell controla el mensaje de [WM_COMMAND](/windows/desktop/menurc/wm-command) , no debe llamar a **CallNextHookEx**. Vea la sección valor devuelto para obtener más información. |
-| **HSHELL_GETMINRECT** 5 | Una ventana está minimizada o maximizada. El sistema necesita las coordenadas del rectángulo minimizado para la ventana. |
-| **HSHELL_LANGUAGE** 8 | El idioma del teclado ha cambiado o se ha cargado una nueva distribución del teclado. |
-| **HSHELL_REDRAW** 6 | Se ha redibujado el título de una ventana en la barra de tareas. |
-| **HSHELL_TASKMAN** 7 | El usuario ha seleccionado la lista de tareas. Una aplicación de Shell que proporciona una lista de tareas debe devolver **true** para impedir que Windows inicie su lista de tareas. |
-| **HSHELL_WINDOWACTIVATED** 4 | La activación ha cambiado a otra ventana sin propiedad de nivel superior. |
-| **HSHELL_WINDOWCREATED** 1 | Se ha creado una ventana sin propiedad de nivel superior. La ventana existe cuando el sistema llama a este enlace. |
-| **HSHELL_WINDOWDESTROYED** 2 | Una ventana sin propiedad de nivel superior está a punto de ser destruida. La ventana todavía existe cuando el sistema llama a este enlace. |
+| **HSHELL_APPCOMMAND** 12 | El usuario completó un evento de entrada (por ejemplo, presionó un botón de comando de aplicación en el mouse o una tecla de comando de aplicación en el teclado) y la aplicación no controló el mensaje [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand) generado por esa entrada. Si el procedimiento shell controla el [WM_COMMAND,](/windows/desktop/menurc/wm-command) no debe llamar a **CallNextHookEx**. Consulte la sección Valor devuelto para obtener más información. |
+| **HSHELL_GETMINRECT** 5 | Se está minimizando o maximizando una ventana. El sistema necesita las coordenadas del rectángulo minimizado para la ventana. |
+| **HSHELL_LANGUAGE** 8 | Se cambió el idioma del teclado o se cargó un nuevo diseño de teclado. |
+| **HSHELL_REDRAW** 6 | Se ha rediseñado el título de una ventana de la barra de tareas. |
+| **HSHELL_TASKMAN** 7 | El usuario ha seleccionado la lista de tareas. Una aplicación de shell que proporciona una lista de tareas debe devolver **TRUE** para evitar Windows iniciar su lista de tareas. |
+| **HSHELL_WINDOWACTIVATED** 4 | La activación ha cambiado a otra ventana de nivel superior sin abrir. |
+| **HSHELL_WINDOWCREATED** 1 | Se ha creado una ventana de nivel superior sin abrir. La ventana existe cuando el sistema llama a este enlace. |
+| **HSHELL_WINDOWDESTROYED** 2 | Una ventana de nivel superior y sin abrir está a punto de destruirse. La ventana todavía existe cuando el sistema llama a este enlace. |
 | **HSHELL_WINDOWREPLACED** 13 | Se está reemplazando una ventana de nivel superior. La ventana existe cuando el sistema llama a este enlace. |
 
 ### <a name="wparam-in"></a>wParam [in]
 
-Tipo: **wParam**
+Tipo: **WPARAM**
 
-Este parámetro depende del valor del parámetro *nCode* , tal y como se muestra en la tabla siguiente.
+Este parámetro depende del valor del parámetro *nCode,* como se muestra en la tabla siguiente.
 
 | nCode | wParam |
 |-------|---------|
 | **HSHELL_ACCESSIBILITYSTATE** | Indica qué característica de accesibilidad ha cambiado de estado. Este valor es uno de los siguientes: **ACCESS_FILTERKEYS**, **ACCESS_MOUSEKEYS** o **ACCESS_STICKYKEYS**. |
-| **HSHELL_APPCOMMAND** | Indica dónde se envió originalmente el mensaje de **WM_APPCOMMAND** ; por ejemplo, el identificador de una ventana. Para obtener más información, vea el parámetro cmd en **WM_APPCOMMAND**. |
+| **HSHELL_APPCOMMAND** | Indica dónde se **envió WM_APPCOMMAND** mensaje; por ejemplo, el identificador de una ventana. Para obtener más información, vea el parámetro cmd **en WM_APPCOMMAND**. |
 | **HSHELL_GETMINRECT** | Identificador de la ventana minimizada o maximizada. |
 | **HSHELL_LANGUAGE** | Identificador de la ventana. |
-| **HSHELL_REDRAW** | Identificador de la ventana redibujada. |
-| **HSHELL_WINDOWACTIVATED** | Identificador de la ventana activa. |
+| **HSHELL_REDRAW** | Identificador de la ventana que se ha rediseñado. |
+| **HSHELL_WINDOWACTIVATED** | Identificador de la ventana activada. |
 | **HSHELL_WINDOWCREATED** | Identificador de la ventana creada. |
-| **HSHELL_WINDOWDESTROYED** | Identificador de la ventana destruida. |
+| **HSHELL_WINDOWDESTROYED** | Identificador de la ventana destruyeda. |
 | **HSHELL_WINDOWREPLACED** | Identificador de la ventana que se va a reemplazar. Windows 2000: no compatible. |
 
 ### <a name="lparam-in"></a>lParam [in]
 
-Tipo: **lParam**
+Tipo: **LPARAM**
 
-Este parámetro depende del valor del parámetro *nCode* , tal y como se muestra en la tabla siguiente.
+Este parámetro depende del valor del parámetro *nCode,* como se muestra en la tabla siguiente.
 
 | nCode | lParam |
 |-------|---------|
-| **HSHELL_APPCOMMAND** | `GET_APPCOMMAND_LPARAM(lParam)` es el comando de aplicación correspondiente al evento de entrada. `GET_DEVICE_LPARAM(lParam)` indica qué generó el evento de entrada; por ejemplo, el mouse o el teclado. Para obtener más información, vea la descripción del parámetro *uDevice* en **WM_APPCOMMAND**. `GET_FLAGS_LPARAM(lParam)` depende del valor de *cmd* en **WM_APPCOMMAND**. Por ejemplo, podría indicar qué teclas virtuales se mantuvieron presionadas cuando el mensaje de **WM_APPCOMMAND** se envió originalmente. Para obtener más información, consulte el parámetro *dwCmdFlags* Description en **WM_APPCOMMAND**. |
-| **HSHELL_GETMINRECT** | Puntero a una estructura [Rect](/previous-versions/dd162897(v=vs.85)) . |
-| **HSHELL_LANGUAGE** | Identificador de una distribución del teclado. |
-| **HSHELL_MONITORCHANGED** | Identificador de la ventana que se ha desplace a otro monitor. |
-| **HSHELL_REDRAW** | El valor es **true** si la ventana parpadea o **false** en caso contrario. |
-| **HSHELL_WINDOWACTIVATED** | El valor es TRUE si la ventana está en modo de pantalla completa o **false** en caso contrario. |
+| **HSHELL_APPCOMMAND** | `GET_APPCOMMAND_LPARAM(lParam)` es el comando de aplicación correspondiente al evento de entrada. `GET_DEVICE_LPARAM(lParam)` indica lo que generó el evento de entrada; por ejemplo, el mouse o el teclado. Para obtener más información, vea la *descripción del parámetro uDevice* en **WM_APPCOMMAND**. `GET_FLAGS_LPARAM(lParam)` depende del valor de *cmd en* **WM_APPCOMMAND**. Por ejemplo, podría indicar qué claves virtuales se mancronó cuando **se envió WM_APPCOMMAND** mensaje. Para obtener más información, vea el *parámetro de descripción dwCmdFlags* **en WM_APPCOMMAND**. |
+| **HSHELL_GETMINRECT** | Puntero a una [estructura RECT.](/previous-versions/dd162897(v=vs.85)) |
+| **HSHELL_LANGUAGE** | Identificador de un diseño de teclado. |
+| **HSHELL_MONITORCHANGED** | Identificador de la ventana que se movió a otro monitor. |
+| **HSHELL_REDRAW** | El valor es **TRUE si** la ventana parpadea o **FALSE** en caso contrario. |
+| **HSHELL_WINDOWACTIVATED** | El valor es TRUE si la ventana está en modo de pantalla completa o **FALSE** en caso contrario. |
 | **HSHELL_WINDOWREPLACED** | Identificador de la nueva ventana. Windows 2000: no compatible. |
 
 ## <a name="returns"></a>Devoluciones
 
 Tipo: **LRESULT**
 
-El valor devuelto debe ser cero a menos que el valor de nCode sea **HSHELL_APPCOMMAND** y el procedimiento de Shell controle el mensaje de **WM_COMMAND** .
-En este caso, el valor devuelto debe ser distinto de cero.
+El valor devuelto debe ser cero a  menos que el valor de nCode HSHELL_APPCOMMAND y el procedimiento de shell controle **el WM_COMMAND** mensaje.
+En este caso, la devolución debe ser distinta de cero.
 
 ## <a name="remarks"></a>Observaciones
 
-Instale este procedimiento de enlace especificando el tipo de enlace de [WH_SHELL](about-hooks.md) y un puntero al procedimiento de enlace en una llamada a la función **SetWindowsHookEx** .
+Instale este procedimiento de [](about-hooks.md) enlace especificando WH_SHELL tipo de enlace y un puntero al procedimiento de enlace en una llamada a la **función SetWindowsHookEx.**
 
 ## <a name="see-also"></a>Vea también
 

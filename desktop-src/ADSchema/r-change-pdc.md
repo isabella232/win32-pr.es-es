@@ -1,10 +1,10 @@
 ---
-title: 'Cambio: PDC extendida a la derecha'
-description: Derecho extendido necesario para cambiar el propietario del rol FSMO del emulador del controlador de dominio principal (PDC).
+title: Cambio del derecho extendido de PDC
+description: Se ha ampliado el derecho necesario para cambiar el propietario del rol FSMO del emulador del controlador de dominio principal (PDC).
 ms.assetid: f23452de-3c19-4bb2-836a-a3a97eb336b9
 ms.tgt_platform: multiple
 keywords:
-- 'Cambiar: esquema de AD derecho extendido de PDC'
+- Cambio del esquema de AD derecho extendido de PDC
 topic_type:
 - apiref
 api_name:
@@ -13,23 +13,23 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87dc1912937e9726209e2871e7b365e9f37cfe14
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c3dcfe6833c7ff7e2a5a11425a3ada7deac006ec93224673a6a496b22680d297
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532655"
 ---
-# <a name="change-pdc-extended-right"></a>Cambio: PDC extendida a la derecha
+# <a name="change-pdc-extended-right"></a>Cambio del derecho extendido de PDC
 
-Derecho extendido necesario para cambiar el propietario del rol FSMO del emulador del controlador de dominio principal (PDC).
+Se ha ampliado el derecho necesario para cambiar el propietario del rol FSMO del emulador del controlador de dominio principal (PDC).
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | Cambiar: PDC                           |
-| Display-Name | Cambiar PDC                           |
+| CN           | Cambio de PDC                           |
+| Display-Name | Cambio del PDC                           |
 | Rights-GUID  | bae50096-4752-11d1-9052-00c04fc2d4cf |
 
 
@@ -47,10 +47,10 @@ Derecho extendido necesario para cambiar el propietario del rol FSMO del emulado
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 34                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 34                                           |
 
 
 
@@ -60,8 +60,8 @@ Derecho extendido necesario para cambiar el propietario del rol FSMO del emulado
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 34                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 34                                           |
 
 
 
@@ -69,10 +69,10 @@ Derecho extendido necesario para cambiar el propietario del rol FSMO del emulado
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 34                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 34                                           |
 
 
 
@@ -82,8 +82,8 @@ Derecho extendido necesario para cambiar el propietario del rol FSMO del emulado
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 34                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 34                                           |
 
 
 
@@ -93,8 +93,8 @@ Derecho extendido necesario para cambiar el propietario del rol FSMO del emulado
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 34                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 34                                           |
 
 
 
@@ -104,8 +104,8 @@ Derecho extendido necesario para cambiar el propietario del rol FSMO del emulado
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 34                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 34                                           |
 
 
 

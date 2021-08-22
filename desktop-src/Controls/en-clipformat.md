@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de EN_CLIPFORMAT (RichEdit. h)
-description: Notifica a la ventana primaria de un control Rich Edit que se ha realizado una copia con un formato de Portapapeles determinado. Un control Rich Edit sin ventanas envía esta notificación mediante el método ITextHost TxNotify.
+title: EN_CLIPFORMAT de notificación (Richedit.h)
+description: Notifica a la ventana primaria de un control de edición enriquecido que se produjo una pegar con un formato de Portapapeles determinado. Un control de edición enriquecido sin ventanas envía esta notificación mediante el método TxNotify de ITextHost.
 ms.assetid: 79FE1350-4D45-447B-B705-63E966AC7F0E
 keywords:
-- EN_CLIPFORMAT controles de código de notificación de Windows
+- EN_CLIPFORMAT código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0430e8a4dba0b1a18f81f4e28ec67f2c93551cd5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0f4ad87f1c05ac9f5461da8a4ee1d26295be0ae1baafd8991801efc0d90197a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119437045"
 ---
-# <a name="en_clipformat-notification-code"></a>\_Código de notificación en CLIPFORMAT
+# <a name="en_clipformat-notification-code"></a>Código de notificación DE EN \_ CLIPFORMAT
 
-Notifica a la ventana primaria de un control Rich Edit que se ha realizado una copia con un formato de Portapapeles determinado. Un control Rich Edit sin ventanas envía esta notificación mediante el método [**ITextHost:: TxNotify**](/windows/desktop/api/Textserv/nf-textserv-itexthost-txnotify) .
+Notifica a la ventana primaria de un control de edición enriquecido que se produjo una pegar con un formato de Portapapeles determinado. Un control de edición enriquecido sin ventanas envía esta notificación mediante el [**método ITextHost::TxNotify.**](/windows/desktop/api/Textserv/nf-textserv-itexthost-txnotify)
 
 
 ```C++
@@ -41,14 +41,14 @@ EN_CLIPFORMAT
 *wParam* 
 </dt> <dd>
 
-IDENTIFICADOR de ventana que se ha recuperado mediante una llamada a la función [**GetWindowLong**](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) con el valor de identificador de GWL \_ .
+Identificador de ventana recuperado mediante una llamada a la [**función GetWindowLong**](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) con el valor de identificador de GWL. \_
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Puntero a una estructura [**CLIPBOARDFORMAT**](/windows/desktop/api/Richedit/ns-richedit-clipboardformat) que contiene información sobre el formato del portapapeles.
+Puntero a una estructura [**CLIPBOARDFORMAT**](/windows/desktop/api/Richedit/ns-richedit-clipboardformat) que contiene información sobre el formato del Portapapeles.
 
 </dd> </dl>
 
@@ -56,9 +56,9 @@ Puntero a una estructura [**CLIPBOARDFORMAT**](/windows/desktop/api/Richedit/ns-
 
 Se omite el valor devuelto.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para recibir los \_ códigos de notificación en CLIPFORMAT, especifique [**ENM \_ CLIPFORMAT**](rich-edit-control-event-mask-flags.md) en la máscara enviada con el mensaje [**em \_ SETEVENTMASK**](em-seteventmask.md) .
+Para recibir los códigos de notificación de \_ EN CLIPFORMAT, especifique [**ENM \_ CLIPFORMAT**](rich-edit-control-event-mask-flags.md) en la máscara enviada con el [**mensaje EM \_ SETEVENTMASK.**](em-seteventmask.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,9 +66,9 @@ Para recibir los \_ códigos de notificación en CLIPFORMAT, especifique [**ENM 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

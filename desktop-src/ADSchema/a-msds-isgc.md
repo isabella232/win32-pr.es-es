@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-isGC
+title: Atributo ms-DS-isGC
 description: Identifica el estado del catálogo global en el controlador de dominio.
 ms.assetid: 96caecc8-35f7-4a1b-a6c5-11d339d644bb
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-DS-isGC
-- Esquema de AD de atributo msDS-isGC
+- Esquema de AD del atributo ms-DS-isGC
+- Esquema de AD del atributo msDS-isGC
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9cda7fc857f8a39b36c51a1cb8e47cc543fc511
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f2f2f5e4a75bbbf458db9114a1aae47a655130cfec8d7f1c4013a29e170fb45f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119295625"
 ---
-# <a name="ms-ds-isgc-attribute"></a>atributo MS-DS-isGC
+# <a name="ms-ds-isgc-attribute"></a>Atributo ms-DS-isGC
 
 Identifica el estado del catálogo global en el controlador de dominio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DS-isGC                           |
-| Nombre para mostrar de LDAP | msDS-isGC                            |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DS-isGC                           |
+| Ldap-Display-Name | msDS-isGC                            |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1959              |
-| System-ID-GUID    | 1df5cf33-0fe5-499e-90e1-e94b42718a46 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | 1df5cf33-0fe5-499e-90e1-e94b42718a46 |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -52,18 +52,18 @@ Identifica el estado del catálogo global en el controlador de dominio.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                       |
+| Id. de vínculo                | \-                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                       |
-| System-Only            | False                                                                                                                    |
-| Tiene un único valor       | True                                                                                                                     |
-| Está indexado             | False                                                                                                                    |
-| En el catálogo global      | False                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                             |
+| System-Only            | Falso                                                                                                                    |
+| Es de un solo valor       | True                                                                                                                     |
+| Está indexado             | Falso                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                             |
 | Range-Lower            | \-                                                                                                                       |
 | Range-Upper            | \-                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                               |
 | System-Flags           | 0x00000014                                                                                                               |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Server**](c-server.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Servidor**](c-server.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Identifica el estado del catálogo global en el controlador de dominio.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                       |
+| Id. de vínculo                | \-                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                       |
-| System-Only            | False                                                                                                                    |
-| Tiene un único valor       | True                                                                                                                     |
-| Está indexado             | False                                                                                                                    |
-| En el catálogo global      | False                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                             |
+| System-Only            | Falso                                                                                                                    |
+| Es de un solo valor       | True                                                                                                                     |
+| Está indexado             | Falso                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                             |
 | Range-Lower            | \-                                                                                                                       |
 | Range-Upper            | \-                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                               |
 | System-Flags           | 0x00000014                                                                                                               |
-| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Server**](c-server.md)<br/> |
+| Clases usadas en        | [**Computer**](c-computer.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> [**Servidor**](c-server.md)<br/> |
 
 
 
@@ -94,13 +94,13 @@ Identifica el estado del catálogo global en el controlador de dominio.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                       |
+| Id. de vínculo                | \-                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                       |
-| System-Only            | False                                                                                                                    |
-| Tiene un único valor       | True                                                                                                                     |
-| Está indexado             | False                                                                                                                    |
-| En el catálogo global      | False                                                                                                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                             |
+| System-Only            | Falso                                                                                                                    |
+| Es de un solo valor       | True                                                                                                                     |
+| Está indexado             | Falso                                                                                                                    |
+| En el catálogo global      | Falso                                                                                                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                             |
 | Range-Lower            | \-                                                                                                                       |
 | Range-Upper            | \-                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                               |

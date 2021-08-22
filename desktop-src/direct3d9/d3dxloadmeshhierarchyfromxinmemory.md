@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 551810c839e619985d9a380197553f5fe4fc9be8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 85929a4cca88d9547ac0f00861f694932c7566cb3b6f5db6d4e6da189842e712
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564815"
 ---
 # <a name="d3dxloadmeshhierarchyfromxinmemory-function"></a>Función D3DXLoadMeshHierarchyFromXInMemory
 
@@ -70,7 +70,7 @@ Tamaño del búfer pMemory, en bytes.
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinación de una o varias marcas de la [**enumeración D3DXMESH**](./d3dxmesh.md) que especifican opciones de creación para la malla.
+Combinación de una o varias marcas de la [**enumeración D3DXMESH**](./d3dxmesh.md) que especifican las opciones de creación de la malla.
 
 </dd> <dt>
 
@@ -140,7 +140,7 @@ Todas las mallas del archivo se contraerán en una malla de salida. Si el archiv
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

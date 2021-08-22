@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TS-Max-DISConnection-Time
-description: Terminal Services tiempo máximo de desconexión de la sesión es el tiempo máximo, en minutos, que una sesión desconectada Terminal Services permanece activa en el servidor de Terminal Server.
+title: Atributo ms-TS-Max-Disconnection-Time
+description: Tiempo máximo de desconexión de la sesión de Terminal Services es la cantidad máxima de tiempo, en minutos, que una sesión desconectada de Terminal Services permanece activa en el servidor de Terminal Server.
 ms.assetid: 2da72cf8-0be1-4766-a997-f540cd99e4e7
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-TS-Max-DISConnection-Time
-- msTSMaxDisconnectionTime esquema de AD de atributos
+- Esquema de AD del atributo ms-TS-Max-Disconnection-Time
+- Esquema de AD del atributo msTSMaxDisconnectionTime
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46a846454ab450968b854a815d546c33588a1afb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 522201425122ebf525c2ba4bbcc3c4f20a43fafea894082c14aab4a71048ae06
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508095"
 ---
-# <a name="ms-ts-max-disconnection-time-attribute"></a>atributo MS-TS-Max-DISConnection-Time
+# <a name="ms-ts-max-disconnection-time-attribute"></a>Atributo ms-TS-Max-Disconnection-Time
 
-Terminal Services tiempo máximo de desconexión de la sesión es el tiempo máximo, en minutos, que una sesión desconectada Terminal Services permanece activa en el servidor de Terminal Server.
+Tiempo máximo de desconexión de la sesión de Terminal Services es la cantidad máxima de tiempo, en minutos, que una sesión desconectada de Terminal Services permanece activa en el servidor de Terminal Server.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-TS-Max-desconexión-hora         |
-| Nombre para mostrar de LDAP | msTSMaxDisconnectionTime             |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-TS-Max-Disconnection-Time         |
+| Ldap-Display-Name | msTSMaxDisconnectionTime             |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1981              |
-| System-ID-GUID    | 326f7089-53d8-4784-b814-46d8535110d2 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | 326f7089-53d8-4784-b814-46d8535110d2 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -52,18 +52,18 @@ Terminal Services tiempo máximo de desconexión de la sesión es el tiempo máx
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -71,20 +71,20 @@ Terminal Services tiempo máximo de desconexión de la sesión es el tiempo máx
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -92,15 +92,15 @@ Terminal Services tiempo máximo de desconexión de la sesión es el tiempo máx
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |

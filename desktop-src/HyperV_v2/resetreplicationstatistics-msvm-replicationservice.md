@@ -1,7 +1,7 @@
 ---
-description: Restablece las estadísticas de replicación de una máquina virtual y actúa en la relación de replicación principal de la máquina virtual.
+description: Restablece las estadísticas de replicación de una máquina virtual y actúa sobre la relación de replicación principal de la máquina virtual.
 ms.assetid: da4b60f8-6964-45af-8412-935234c7c0ff
-title: Método ResetReplicationStatistics de la clase Msvm_ReplicationService
+title: Método ResetReplicationStatistics de la Msvm_ReplicationService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8407e20cb38c9aecac26ab0bcee99ce0c8a6be2c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30f9e975b1e0b49d62b844ebee3de7111259c1f12a48ee0ff1f766131c7a6eb0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105687523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531025"
 ---
-# <a name="resetreplicationstatistics-method-of-the-msvm_replicationservice-class"></a>Método ResetReplicationStatistics de la \_ clase ReplicationService de MSVM
+# <a name="resetreplicationstatistics-method-of-the-msvm_replicationservice-class"></a>Método ResetReplicationStatistics de la clase ReplicationService de Msvm \_
 
-Restablece las estadísticas de replicación de una máquina virtual y actúa en la relación de replicación principal de la máquina virtual.
+Restablece las estadísticas de replicación de una máquina virtual y actúa sobre la relación de replicación principal de la máquina virtual.
 
 > [!Note]  
-> A partir de Windows 8.1, se recomienda no usar **ResetReplicationStatistics** para restablecer las estadísticas de replicación. En su lugar, use [**ResetReplicationStatisticsEx**](resetreplicationstatisticsex-msvm-replicationservice.md).
+> A partir Windows 8.1, se recomienda no usar **ResetReplicationStatistics** para restablecer las estadísticas de replicación. En su lugar, [**use ResetReplicationStatisticsEx**](resetreplicationstatisticsex-msvm-replicationservice.md).
 
  
 
@@ -45,17 +45,17 @@ uint32 ResetReplicationStatistics(
 
 <dl> <dt>
 
-*ComputerSystem* \[ de\]
+*ComputerSystem* \[ En\]
 </dt> <dd>
 
-Referencia a una instancia de la clase [**de \_ ComputerSystem de CIM**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa la máquina virtual para la que se van a restablecer las estadísticas de replicación.
+Referencia a una instancia de la clase [**\_ ComputerSystem de CIM**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa la máquina virtual para la que se restablecen las estadísticas de replicación.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ CIM ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
@@ -80,16 +80,16 @@ Este método devuelve uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**Sistema en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -98,13 +98,13 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -113,10 +113,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -128,7 +128,7 @@ El **sistema no está disponible** (32777)
 [**GetReplicationStatistics**](getreplicationstatistics-msvm-replicationservice.md)
 </dt> <dt>
 
-[**MSVM \_ ReplicationService**](msvm-replicationservice.md)
+[**ReplicationService de Msvm \_**](msvm-replicationservice.md)
 </dt> </dl>
 
  
