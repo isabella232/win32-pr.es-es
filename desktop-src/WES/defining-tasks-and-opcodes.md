@@ -1,23 +1,23 @@
 ---
-title: Definir tareas y códigos de tarea
-description: Los proveedores usan tareas y códigos de operación para agrupar lógicamente los eventos. La agrupación de eventos ayuda a los consumidores a consultar solo los eventos que contienen combinaciones de tareas y OpCode específicas.
+title: Definir tareas y códigos de operación
+description: Los proveedores usan tareas y códigos de operación para agrupar eventos de forma lógica. La agrupación de eventos ayuda a los consumidores a consultar solo aquellos eventos que contienen combinaciones específicas de tareas y códigos de operación.
 ms.assetid: 6a872517-14de-423e-a7ff-7edb9a29b22d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3257166a34c167d076fec39ac6997d12dc785450
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: 3cb576251edf4de14c564c6e468209ece93e5840da9e0d821c20b132794f48ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "104533075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120032475"
 ---
-# <a name="defining-tasks-and-opcodes"></a>Definir tareas y códigos de tarea
+# <a name="defining-tasks-and-opcodes"></a>Definir tareas y códigos de operación
 
-Los proveedores usan tareas y códigos de operación para agrupar lógicamente los eventos. La agrupación de eventos ayuda a los consumidores a consultar solo los eventos que contienen combinaciones de tareas y OpCode específicas. Normalmente, se usan tareas para identificar un componente importante del proveedor, como el componente de red o de base de datos. Después, puede usar códigos de operación para identificar las operaciones que realiza el componente, como las operaciones de envío y recepción para un componente de red. Si solo tenía un componente, puede usar la tarea para reflejar una operación principal en el componente, como conectar o desconectar, y usar el código de operación para reflejar una actividad dentro de la operación, como la lectura del registro. También puede utilizar OpCode sin especificar una tarea. El uso de la tarea y los códigos de desactivación para agrupar los eventos del consumidor es totalmente suya.
+Los proveedores usan tareas y códigos de operación para agrupar eventos de forma lógica. La agrupación de eventos ayuda a los consumidores a consultar solo aquellos eventos que contienen combinaciones específicas de tareas y códigos de operación. Normalmente, se usan tareas para identificar un componente principal del proveedor, como el componente de red o base de datos. A continuación, podría usar códigos de operación para identificar las operaciones que realiza el componente, como las operaciones de envío y recepción de un componente de red. Si solo tuviera un componente, podría usar la tarea para reflejar una operación principal en el componente, como conectarse o desconectarse, y usar el código de operación para reflejar una actividad dentro de la operación, como leer el Registro. También puede usar el código de operación sin especificar una tarea. El uso de tareas y códigos de operación para agrupar eventos para el consumidor es totalmente su función.
 
-Para definir una tarea, use el elemento **Task** . Para definir un código de operación, utilice el elemento **OpCode** . Puede especificar hasta 228 códigos de desactivación. El **valor** de la tarea debe ser mayor que 0. Los códigos de acceso deben estar en el intervalo comprendido entre 11 y 239. El archivo Winmeta.xml define las operaciones comunes que puede usar en lugar de definir las suyas propias.
+Para definir una tarea, use el **elemento task.** Para definir un código de operación, use el **elemento opcode.** Puede especificar hasta 228 códigos de operación. El valor **de la** tarea debe ser mayor que 0. Los códigos de operación deben estar en el intervalo de 11 a 239. El Winmeta.xml archivo define operaciones comunes que puede usar en lugar de definir las suyas propias.
 
-En el ejemplo siguiente se muestra cómo definir varias tareas y códigos de operaciones.
+En el ejemplo siguiente se muestra cómo definir varias tareas y códigos de operación.
 
 ```XML
 <instrumentationManifest

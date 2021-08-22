@@ -32,7 +32,7 @@ Idioma de la instancia actual de SQL Server.
 | CN                | MS-SQL-Language                             |
 | Ldap-Display-Name | mS-SQL-Language                             |
 | Size              | \-                                          |
-| Privilegio actualizar  | Administrador de dominio                        |
+| Actualizar privilegios  | Administrador de dominio                        |
 | Frecuencia de actualización  | En la configuración del sistema.                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1389                     |
 | System-Id-Guid    | c57f72f4-ccee-11d2-9993-0000f87a57d4        |
@@ -53,7 +53,7 @@ Idioma de la instancia actual de SQL Server.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------|
 | Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
@@ -74,7 +74,7 @@ Idioma de la instancia actual de SQL Server.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------|
 | Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
@@ -95,7 +95,7 @@ Idioma de la instancia actual de SQL Server.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------|
 | Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
@@ -137,7 +137,7 @@ Idioma de la instancia actual de SQL Server.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------|
 | Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |
@@ -158,7 +158,7 @@ Idioma de la instancia actual de SQL Server.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|-------------------------------------------------------------|
 | Id. de vínculo                | \-                                                          |
 | MAPI-Id                | \-                                                          |

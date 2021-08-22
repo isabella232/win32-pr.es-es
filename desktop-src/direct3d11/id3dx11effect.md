@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 670e60cf68c812b6d8b296aac41c3000fa8c1405c909e8827532625a6cd93b0e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4270059d02aec10905ea8aed7754bfb3a34c6897
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118535933"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122479151"
 ---
 # <a name="id3dx11effect-interface"></a>Interfaz ID3DX11Effect
 
@@ -79,17 +79,12 @@ El sistema de efectos agrupa la información necesaria para la representación e
 >
 > <span codelanguage=""></span>
 >
-> <table>
-> <colgroup>
-> <col style="width: 100%" />
-> </colgroup>
-> <tbody>
-> <tr class="odd">
-> <td><pre><code>    IUnknown* pIUnknown = (IUnknown*)pEffect;
->     pIUnknown->AddRef();</code></pre></td>
-> </tr>
-> </tbody>
-> </table>>
+> 
+| | | <pre><code>    IUnknown* pIUnknown = (IUnknown*)pEffect;&gt;     pIUnknown-&gt;AddRef();</code></pre> | 
+
+>
+> 
+>
 >  
 
 ## <a name="requirements"></a>Requisitos
@@ -101,6 +96,6 @@ El sistema de efectos agrupa la información necesaria para la representación e
 
 ## <a name="see-also"></a>Consulte también
 
-[Efectos 11 Interfaces](d3d11-graphics-reference-effects11-interfaces.md)
+[Efectos 11 interfaces](d3d11-graphics-reference-effects11-interfaces.md)
 
 [D3DX Interfaces](d3d11-graphics-reference-d3dx11-interfaces.md)

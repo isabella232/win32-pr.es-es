@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c02a6725f588aaa4c7d72c48d03d921503d4e6a6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 15cae4986b7dc109c08011d2cc23e1b6133de9e5
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105705219"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625191"
 ---
 # <a name="span-idvspixenginepixelhistoryoperationspanpixelhistoryoperation-structure"></a><span id="vspixengine.pixelhistoryoperation"></span>Estructura PixelHistoryOperation
 
@@ -38,67 +38,67 @@ Representa información sobre el historial de píxeles.
 ## <a name="members"></a>Miembros
 
 **Eid**  
-IDENTIFICADOR del evento de gráficos asociado a esta operación.
+Identificador del evento gráfico asociado a esta operación.
 
-**MEDICO**  
+**PCP**  
 Llamadas empaquetadas asociadas a esta operación.
 
 **renderTargetPtr**  
-Destino de representación asociado originalmente (dentro de la aplicación capturada) con esta operación.
+Destino de representación asociado originalmente (dentro de la aplicación capturada) a esta operación.
 
 **iPrim**  
-Índice del primitivo real asociado a su operación.
+Índice de la primitiva real asociada a su operación.
 
 **numPrims**  
 Número total de primitivas asociadas a esta operación.
 
 **numVertsPerPrim**  
-El número de vértices por primitivo.
+Número de vértices por primitiva.
 
 **iInstance**  
 Al representar instancias, el número de instancia de la instancia real asociada a esta operación.
 
 **iInstanceCount**  
-Al representar las instancias, el número total de instancias asociadas a esta operación.
+Al representar instancias, el número total de instancias asociadas a esta operación.
 
 **bAssemblerStageGeneratesInstanceID**  
-True si el ensamblador de entrada genera identificadores de instancia; en caso contrario, false.
+true si el ensamblador de entrada genera los iDs de instancia; en caso contrario, false.
 
 **flags**  
-Combinación de valores de PIXELHISTORYFLAGS. Para obtener más información, consulte la enumeración PIXELHISTORYFLAGS.
+Combinación de valores PIXELHISTORYFLAGS. Para obtener más información, vea la enumeración PIXELHISTORYFLAGS.
 
 **pVSFile**  
-Un FILEPTR para la secuencia de bytes del sombreador de píxeles. Esto se devuelve para depurar.
+FILEPTR para el flujo de bytes del sombreador de píxeles. Esto se pasa de nuevo para depurar.
 
 **pGSFile**  
-FILEPTR para el flujo de bytes del sombreador de geometría. Esto se devuelve para depurar.
+FILEPTR para el flujo de bytes del sombreador de geometría. Esto se pasa de nuevo para depurar.
 
 **pPSFile**  
-Un FILEPTR para la secuencia de bytes del sombreador de píxeles. Esto se devuelve para depurar.
+FILEPTR para el flujo de bytes del sombreador de píxeles. Esto se pasa de nuevo para depurar.
 
 **pHSFile**  
-Un FILEPTR para la secuencia de bytes del sombreador de casco. Esto se devuelve para depurar.
+FILEPTR para el flujo de bytes del sombreador de casco. Esto se pasa de nuevo para depurar.
 
 **pDSFile**  
-FILEPTR para el flujo de bytes del sombreador de dominio. Esto se devuelve para depurar.
+FILEPTR para el flujo de bytes del sombreador de dominio. Esto se pasa de nuevo para depurar.
 
 **pCSFile**  
-Un FILEPTR para la secuencia de bytes del sombreador de cálculo. Esto se devuelve para depurar.
+FILEPTR para el flujo de bytes del sombreador de proceso. Esto se pasa de nuevo para depurar.
 
 **VertexShaderFile**  
-Cadena COM que contiene la ruta de acceso del archivo de origen del sombreador de vértices.
+Cadena COM que contiene la ruta de archivo del archivo de origen del sombreador de vértices.
 
 **PixelShaderFile**  
-Cadena COM que contiene la ruta de acceso del archivo de origen del sombreador de píxeles.
+Cadena COM que contiene la ruta de archivo del archivo de origen del sombreador de píxeles.
 
 **GeometryShaderFile**  
-Cadena COM que contiene la ruta de acceso del archivo de origen del sombreador de geometría.
+Cadena COM que contiene la ruta de archivo del archivo de origen del sombreador de geometría.
 
 **HullShaderFile**  
-Cadena COM que contiene la ruta de acceso del archivo de origen del sombreador de casco.
+Cadena COM que contiene la ruta de archivo del archivo de origen del sombreador de casco.
 
 **DomainShaderFile**  
-Cadena COM que contiene la ruta de acceso del archivo de origen del sombreador de dominios.
+Cadena COM que contiene la ruta de archivo del archivo de origen del sombreador de dominio.
 
 **psRed**  
 Salida del sombreador de píxeles: valor del componente de color rojo.
@@ -107,7 +107,7 @@ Salida del sombreador de píxeles: valor del componente de color rojo.
 Salida del sombreador de píxeles: valor del componente de color verde.
 
 **psBlue**  
-Salida del sombreador de píxeles: valor de componente de color azul
+Salida del sombreador de píxeles: valor del componente de color azul
 
 **psAlpha**  
 Salida del sombreador de píxeles: valor del componente de color alfa
@@ -125,53 +125,53 @@ Cadena COM que contiene el nombre de la etiqueta asociada al componente de color
 Cadena COM que contiene el nombre de la etiqueta asociada al componente de color alfa de la salida del sombreador de píxeles.
 
 **pixelKillReason**  
-Salida del sombreador de píxeles: motivo por el que se eliminó la salida del píxel.
+Salida del sombreador de píxeles: motivo por el que se ha detenido la salida de píxeles.
 
 **pixelOccluded**  
-True si el píxel es ocluidos; en caso contrario, false.
+true si el píxel está ocluido; de lo contrario, false.
 
 **fbRed**  
-Fotogramas: valor del componente de color rojo de fotogramas antes de que se combine el resultado del sombreador de píxeles.
+Framebuffer: valor del componente de color rojo del búfer de fotogramas antes de combinar la salida del sombreador de píxeles.
 
 **fbGreen**  
-Fotogramas: valor del componente de color verde de fotogramas antes de que se combine el resultado del sombreador de píxeles.
+Framebuffer: valor del componente de color verde del búfer de fotogramas antes de combinar la salida del sombreador de píxeles.
 
 **fbBlue**  
-Fotogramas: valor del componente de color azul de fotogramas antes de que se combine el resultado del sombreador de píxeles.
+Framebuffer: valor del componente de color azul del búfer de fotogramas antes de combinar la salida del sombreador de píxeles.
 
 **fbAlpha**  
-Fotogramas: valor del componente de color alfa de fotogramas antes de que se combine el resultado del sombreador de píxeles.
+Framebuffer: valor del componente de color alfa del búfer de fotogramas antes de combinar la salida del sombreador de píxeles.
 
 **LabelFBRed**  
-Cadena COM que contiene el nombre de la etiqueta asociada al componente de color rojo del fotogramas.
+Cadena COM que contiene el nombre de la etiqueta asociada al componente de color rojo del búfer de fotogramas.
 
 **LabelFBGreen**  
-Cadena COM que contiene el nombre de la etiqueta asociada al componente de color verde del fotogramas.
+Cadena COM que contiene el nombre de la etiqueta asociada al componente de color verde del búfer de fotogramas.
 
 **LabelFBBlue**  
-Cadena COM que contiene el nombre de la etiqueta asociada al componente de color azul del fotogramas.
+Cadena COM que contiene el nombre de la etiqueta asociada al componente de color azul del búfer de fotogramas.
 
 **LabelFBAlpha**  
-Cadena COM que contiene el nombre de la etiqueta asociada al componente de color alfa del fotogramas.
+Cadena COM que contiene el nombre de la etiqueta asociada al componente de color alfa del búfer de fotogramas.
 
-**topología**  
-La topología de vértices de las llamadas a Draw (lista de triángulos, franja de triángulo, etc.).
+**Topología**  
+Topología de vértices de las llamadas a draw (lista de triángulos, franja de triángulo, etc.).
 
-**vértices**  
-Cadena COM que contiene el búfer de vértices a partir de este primitivo. El búfer de vértices sigue el formato de diseño de entrada especificado en la fase de canalización.
+**Vértices**  
+Cadena COM que contiene el búfer de vértices a partir de esta primitiva. El búfer de vértices sigue el formato de diseño de entrada especificado en la fase de canalización.
 
 **vertexSize**  
-Tamaño de un único vértice en bytes.
+Tamaño de un solo vértice en bytes.
 
 **InputLayout**  
-Cadena COM que contiene una secuencia de estructuras InputLayoutStruct asociadas a la llamada a Draw.
+Cadena COM que contiene una secuencia de estructuras InputLayoutStruct asociadas a la llamada a draw.
 
-**HResult**  
-HRESULT de DirectX. En caso de que se produce un problema, se puede usar para mostrar el error.
+**Hresult**  
+The DirectX Hresult. En caso de un problema, se puede usar para mostrar el error.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Encabezado</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

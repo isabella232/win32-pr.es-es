@@ -1,33 +1,33 @@
 ---
 description: Este tema se aplica a Windows Vista y versiones posteriores.
 ms.assetid: 4d88806a-68a6-4394-a704-c7a47a0fdc70
-title: Integración con la Galería fotográfica de Windows y el explorador de Windows
+title: Integración con Windows Galería de fotos y Windows Explorer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b2ab2bb725b151a069f53a94a8fb2e31766132d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85e20b690e2640fb40830721f1c6a3211641d81311724be2c70efae3781171e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105648507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119549445"
 ---
-# <a name="integration-with-windows-photo-gallery-and-windows-explorer"></a>Integración con la Galería fotográfica de Windows y el explorador de Windows
+# <a name="integration-with-windows-photo-gallery-and-windows-explorer"></a>Integración con Windows Galería de fotos y Windows Explorer
 
 Este tema se aplica a Windows Vista y versiones posteriores. Contiene las secciones siguientes:
 
 -   [Introducción](#introduction)
--   [Integración con el almacén de propiedades de Windows](#integration-with-the-windows-property-store)
--   [Integración con la Galería fotográfica de Windows](#integration-with-the-windows-photo-gallery)
--   [Integración con la caché en miniatura de Windows](#integration-with-the-windows-thumbnail-cache)
+-   [Integración con el Windows Almacén de propiedades](#integration-with-the-windows-property-store)
+-   [Integración con el Windows Galería de fotos](#integration-with-the-windows-photo-gallery)
+-   [Integración con la caché Windows miniaturas](#integration-with-the-windows-thumbnail-cache)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="introduction"></a>Introducción
 
-Para habilitar la Galería fotográfica de Windows y el explorador de Windows para Mostrar miniaturas y buscar y actualizar los metadatos de imagen estándar, un códec debe tener una implementación de las interfaces [IThumbnailProvider](/windows/win32/api/thumbcache/nn-thumbcache-ithumbnailprovider) y [IPropertyStore](/windows/win32/api/propsys/nn-propsys-ipropertystore) asociadas a él. La interfaz IThumbnailProvider se usa para recuperar miniaturas y rellenar la caché en miniatura, y la interfaz IPropertyStore se usa para buscar y actualizar los metadatos asociados a un archivo. A partir de Windows Vista, todos los tipos de archivo tienen vistas en miniatura y metadatos, pero los distintos tipos de archivo requieren implementaciones diferentes de estas interfaces para recuperar o generar las miniaturas y metadatos para ellos. El sistema proporciona implementaciones predeterminadas de estas interfaces. La implementación predeterminada de IThumbnailProvider se puede usar para cualquier formato de imagen habilitado para Windows Imaging Component (WIC). La implementación predeterminada de IPropertyStore se puede usar con cualquier formato de imagen habilitado para WIC que esté basado en un contenedor Tagged Image File Format (TIFF) o JPEG. Para asociar el formato de imagen con las implementaciones predeterminadas de estas dos interfaces, debe agregar solo algunas entradas del registro.
+Para permitir que Windows Galería de fotos y Windows Explorer muestren miniaturas y busquen y actualicen metadatos de imagen estándar, un códec debe tener asociada una implementación de las interfaces [IThumbnailProvider](/windows/win32/api/thumbcache/nn-thumbcache-ithumbnailprovider) e [IPropertyStore.](/windows/win32/api/propsys/nn-propsys-ipropertystore) La interfaz IThumbnailProvider se usa para recuperar miniaturas y rellenar la caché de miniaturas, y la interfaz IPropertyStore se usa para buscar y actualizar los metadatos asociados a un archivo. A Windows Vista, todos los tipos de archivo tienen miniaturas y metadatos, pero los distintos tipos de archivo requieren implementaciones diferentes de estas interfaces para recuperar o generar las miniaturas y los metadatos para ellas. El sistema proporciona implementaciones predeterminadas de estas interfaces. La implementación predeterminada de IThumbnailProvider se puede usar para cualquier formato de imagen Windows Imaging Component (WIC) habilitado. La implementación predeterminada de IPropertyStore se puede usar con cualquier formato de imagen habilitado para WIC que se base en un contenedor Tagged Image File Format (TIFF) o JPEG. Para asociar el formato de imagen a las implementaciones predeterminadas de ambas interfaces, debe agregar solo algunas entradas del Registro.
 
-Las siguientes entradas indican a la Galería fotográfica de Windows y al explorador de Windows que una extensión de nombre de archivo (. ext) y su tipo MIME asociado están asociados a un formato de imagen.
+Las siguientes entradas indican al explorador de Windows Galería de fotos y Windows que una extensión de nombre de archivo (.ext) y su tipo MIME asociado están asociados a un formato de imagen.
 
-La entrada siguiente indica a Windows y a las aplicaciones que usan el tipo de contenido (también conocido como tipo MIME) que un archivo con una extensión determinada (. ext) es un formato de imagen. El propietario del tipo de archivo debe elegir un `<image sub type value>` que identifique de forma única el formato de archivo y este valor de tipo de contenido debe registrarse con IANA.
+La entrada siguiente indica a Windows y aplicaciones que usan el tipo de contenido (también conocido como tipo mime) que un archivo con una extensión determinada (.ext) es un formato de imagen. El propietario del tipo de archivo debe elegir un que identifique de forma única el formato de archivo y este valor de tipo de contenido debe `<image sub type value>` registrarse en IANA.
 
 ```
 HKEY_CLASSES_ROOT
@@ -35,7 +35,7 @@ HKEY_CLASSES_ROOT
       ContentType = image/<image sub type>
 ```
 
-La entrada siguiente indica a Windows, a Windows Search y a las aplicaciones que usan [System. Kind](../properties/props-system-kind.md) que una extensión de nombre de archivo (. ext) debe tratarse como una imagen. En concreto, indica que la propiedad System. Kind de la extensión de archivo debe establecerse en Picture.
+La entrada siguiente indica a Windows, Windows búsqueda y aplicaciones que usan [System.Kind](../properties/props-system-kind.md) que una extensión de nombre de archivo (.ext) debe tratarse como una imagen. En concreto, indica que la propiedad System.Kind de la extensión de archivo debe establecerse en Imagen.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -48,13 +48,13 @@ HKEY_LOCAL_MACHINE
                      {.ext} = Picture
 ```
 
-## <a name="integration-with-the-windows-property-store"></a>Integración con el almacén de propiedades de Windows
+## <a name="integration-with-the-windows-property-store"></a>Integración con el Windows Almacén de propiedades
 
-A veces, las mismas propiedades de metadatos se exponen en distintos esquemas de metadatos, a menudo con distintos nombres de propiedad. Cuando se actualiza una de estas propiedades, pero no las demás, los metadatos del archivo pueden no estar sincronizados. El controlador de propiedades de fotografía proporciona la implementación predeterminada de **IPropertyStore** para las imágenes y la usan las aplicaciones, así como la Galería fotográfica de Windows y el explorador de Windows para asegurarse de que todos los metadatos de una imagen permanecen sincronizados y que las propiedades mostradas por las aplicaciones son coherentes con las que se muestran en la Galería fotográfica de Windows y el explorador de Windows. Cuando el controlador de propiedades de la fotografía actualiza los metadatos, se asegura de que estas propiedades se actualizan de forma coherente en todos los formatos de metadatos comunes que se encuentran en el archivo.
+A veces, las mismas propiedades de metadatos se exponen en esquemas de metadatos diferentes, a menudo con nombres de propiedad diferentes. Cuando se actualiza una de estas propiedades, pero las demás no, los metadatos del archivo pueden salir de la sincronización. El controlador de propiedades photo proporciona la implementación predeterminada de **IPropertyStore** para las imágenes y lo usan las aplicaciones, así como el Explorador de Windows Galería de fotos y Windows para garantizar que todos los metadatos de una imagen permanecen sincronizados y que las propiedades mostradas por las aplicaciones son coherentes con las mostradas por el Explorador de Windows Galería de fotos y Windows. Cuando el controlador de propiedades photo actualiza los metadatos, se asegura de que estas propiedades se actualizan de forma coherente en todos los formatos de metadatos comunes que están presentes en el archivo.
 
-El controlador de la propiedad Photo debe comprender el formato del contenedor y cómo buscar las distintas propiedades que contiene. En general, no es posible que el controlador de la propiedad Photo sepa cómo se colocan los distintos bloques de metadatos en un formato de contenedor propietario. Sin embargo, si los metadatos del formato de contenedor se disponen de la misma manera que los metadatos en un formato de contenedor TIFF o en un formato de contenedor JPEG, el controlador de propiedades de fotografía puede aprovechar este conocimiento para actualizar los metadatos de forma coherente también en el formato de contenedor.
+El controlador de propiedades photo debe comprender el formato del contenedor y cómo buscar las distintas propiedades dentro de él. En general, no es posible que el controlador de propiedades de foto sepa cómo se han diseñado los distintos bloques de metadatos en un formato de contenedor propietario. Sin embargo, si los metadatos en el formato de contenedor se establecen de la misma manera que los metadatos en un formato de contenedor TIFF o en un formato de contenedor JPEG, el controlador de propiedades de foto también puede aprovechar ese conocimiento para actualizar los metadatos de forma coherente en el formato de contenedor.
 
-Puede registrar esta asociación creando la siguiente entrada del registro. Esta entrada notifica al controlador de propiedades de la fotografía que el formato de contenedor identificado por este GUID entiende las mismas rutas de acceso de lenguaje de consulta de metadatos que el formato de contenedor con el GUID 163bcc30-e2e9-4f0b-961d-a3e9fdb788a3. (163bcc30-e2e9-4f0b-961d-a3e9fdb788a3 es el GUID para el formato de contenedor TIFF).
+Puede registrar esta asociación mediante la creación de la siguiente entrada del Registro. Esta entrada notifica al controlador de propiedades photo que el formato de contenedor identificado por este GUID entiende las mismas rutas de acceso del lenguaje de consulta de metadatos que el formato de contenedor con el GUID 163bcc30-e2e9-4f0b-961d-a3e9fdb788a3. (163bcc30-e2e9-4f0b-961d-a3e9fdb788a3 es el GUID del formato de contenedor TIFF).
 
 ```
 HKEY_LOCAL_MACHINE
@@ -67,7 +67,7 @@ HKEY_LOCAL_MACHINE
                      {Container Format GUID} = {163bcc30-e2e9-4f0b-961d-a3e9fdb788a3}
 ```
 
-La entrada siguiente asocia la implementación predeterminada del controlador de la propiedad de foto de **IPropertyStore** con los archivos que tienen la extensión ". ext". El primer GUID es el IID de la interfaz **IPropertyStore** y el segundo es el GUID de la implementación del controlador de propiedades de la fotografía.
+La entrada siguiente asocia la implementación predeterminada del controlador de propiedades photo de **IPropertyStore** con archivos que tienen la extensión ".ext". El primer GUID es el IID de la **interfaz IPropertyStore** y el segundo es el GUID de la implementación del controlador de propiedades de foto.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -80,11 +80,11 @@ HKEY_LOCAL_MACHINE
                      (Default) = {a38b883c-1682-497e-97b0-0a3a9e801682}
 ```
 
-Los códecs que usan un formato propietario que no es compatible con el formato de contenedor TIFF o JPEG deben escribir su propia implementación de **IPropertyStore** .
+Los códecs que usan un formato propietario que no es compatible con el formato de contenedor TIFF o JPEG deben escribir su propia **implementación de IPropertyStore.**
 
-## <a name="integration-with-the-windows-photo-gallery"></a>Integración con la Galería fotográfica de Windows
+## <a name="integration-with-the-windows-photo-gallery"></a>Integración con el Windows Galería de fotos
 
-La Galería fotográfica de Windows se basa en WIC y puede mostrar cualquier formato de imagen habilitado para WIC para el que esté instalado el códec. Para notificar al sistema que el formato de imagen se puede abrir en la Galería fotográfica de Windows, debe crear una asociación de archivo creando las siguientes entradas del registro.
+Windows Galería de fotos se basa en WIC y puede mostrar cualquier formato de imagen habilitado para WIC para el que esté instalado el códec. Para notificar al sistema que el formato de imagen se puede abrir en Windows Galería de fotos, debe crear una asociación de archivos mediante la creación de las siguientes entradas del Registro.
 
 ```
 HKEY_CLASSES_ROOT
@@ -122,13 +122,13 @@ HKEY_CLASSES_ROOT
                (Default) = %SystemRoot%\System32\rundll32.exe "%SystemRoot%\System32\shimgvw.dll", ImageView_PrintTo /pt "%1" "%2" "%3" "%4"
 ```
 
-El ProgID suele ser la extensión de nombre de archivo anexada con la palabra "File". (Por ejemplo, si la extensión de nombre de archivo es. txt, el ProgID sería normalmente "TXTfile").
+El ProgID suele ser la extensión de nombre de archivo anexada con la palabra "archivo". (Por ejemplo, si la extensión de nombre de archivo .txt, el ProgID normalmente sería "txtfile").
 
-Hay otras entradas de registro estándar que es posible que tenga que crear para admitir asociaciones de archivo. sin embargo, como los the'y no son específicos de WIC, quedan fuera del ámbito de este tema.
+Hay otras entradas del Registro estándar que puede que necesite crear para admitir asociaciones de archivo. sin embargo, dado que las 'y no son específicas de WIC, están fuera del ámbito de este tema.
 
-## <a name="integration-with-the-windows-thumbnail-cache"></a>Integración con la caché en miniatura de Windows
+## <a name="integration-with-the-windows-thumbnail-cache"></a>Integración con la caché Windows miniaturas
 
-Las dos entradas siguientes indican que la implementación del proveedor de miniaturas de WIC estándar se puede usar para recuperar miniaturas de archivos con esta extensión. El primer GUID es el IID de la interfaz [IThumbnailProvider](/windows/win32/api/thumbcache/nn-thumbcache-ithumbnailprovider) y el segundo es el GUID de la implementación estándar del sistema de esta interfaz. (Todas las entradas de HLCR \\ . ext \\ ShellEx \\ se repiten en HKCR \\ SystemFileAssociations \\ . ext \\ ShellEx \\ ).
+Las dos entradas siguientes indican que la implementación estándar del proveedor de miniaturas wic se puede usar para recuperar miniaturas de archivos con esta extensión. El primer GUID es el IID de la [interfaz IThumbnailProvider](/windows/win32/api/thumbcache/nn-thumbcache-ithumbnailprovider) y el segundo es el GUID de la implementación del sistema estándar de esta interfaz. (Todas las entradas de HLCR .ext ShellEx se repiten en \\ \\ \\ HKCR \\ SystemFileAssociations \\ .ext \\ ShellEx \\ ).
 
 ```
 HKEY_CLASSES_ROOT
@@ -143,19 +143,19 @@ HKEY_CLASSES_ROOT
 
 <dl> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Entradas del registro específicas del codificador](-wic-decoderregentries.md)
+[Entradas del Registro específicas del codificador](-wic-decoderregentries.md)
 </dt> <dt>
 
-[Instalación y registro de CÓDECs](-wic-codecinstallandreg.md)
+[Instalación y registro de CODEC](-wic-codecinstallandreg.md)
 </dt> <dt>
 
 [Cómo escribir un códec de WIC-Enabled](-wic-howtowriteacodec.md)
 </dt> <dt>
 
-[Información general sobre componentes de Windows Imaging](-wic-about-windows-imaging-codec.md)
+[Windows Información general sobre los componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
 </dt> </dl>
 
  

@@ -1,4 +1,4 @@
-- name: Palabras clave dinámicas del firewall
+- name: Palabras clave dinámicas de firewall
   href: firewall-dynamic-keywords.md
   items:
     - name: Referencia de palabras clave dinámicas de firewall
@@ -9,7 +9,7 @@
           items:
             - name: FWPM_DYNAMIC_KEYWORD_CALLBACK0
               href: /windows/win32/api/fwpmu/nc-fwpmu-fwpm_dynamic_keyword_callback0
-        - name: Funciones de palabras clave dinámicas del firewall
+        - name: Funciones de palabras clave dinámicas de firewall
           href: firewall-dynamic-keywords-functions.md
           items:
             - name: FwpmDynamicKeywordSubscribe0

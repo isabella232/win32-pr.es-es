@@ -1,5 +1,5 @@
 ---
-description: 'Método StopService de la Msvm_CollectionManagementService : detiene el servicio.'
+description: 'Método StopService de la clase Msvm_CollectionManagementService : detiene el servicio.'
 ms.assetid: 26d0aa9f-f5ca-481f-9bed-6788b0dc2803
 title: Método StopService de la Msvm_CollectionManagementService clase
 ms.topic: reference
@@ -53,7 +53,7 @@ Devuelve 0 si se realiza correctamente; de lo contrario, devuelve un error.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
@@ -63,7 +63,7 @@ Devuelve 0 si se realiza correctamente; de lo contrario, devuelve un error.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

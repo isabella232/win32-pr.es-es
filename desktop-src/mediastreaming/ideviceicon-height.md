@@ -1,11 +1,11 @@
 ---
-title: IDeviceIcon (método) height
+title: Método IDeviceIcon Height
 description: Recupera el alto del icono en píxeles.
 ms.assetid: 06E1B3AD-FF49-4BC9-AC67-E2E00954475F
 keywords:
-- Height (método) API de streaming de multimedia
-- Height (método) API de streaming de multimedia, interfaz IDeviceIcon
-- IDeviceIcon interface media streaming API, Height (método)
+- Método height de Media Streaming API
+- Método height Media Streaming API, interfaz IDeviceIcon
+- IDeviceIcon interface Media Streaming API , Height method
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bdba8d107cc844a29d215e5da49949595a8cd27a
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8d813c572b0fc9e562d40326d830c5ef3530857601811df78c3acd541314b402
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104077741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120060295"
 ---
-# <a name="ideviceiconheight-method"></a>IDeviceIcon:: Height (método)
+# <a name="ideviceiconheight-method"></a>IDeviceIcon::Height (método)
 
 Recupera el alto del icono en píxeles.
 
@@ -41,7 +41,7 @@ HRESULT Height(
 
 <dl> <dt>
 
-*valor* \[ de enuncia\]
+*value* \[ out\]
 </dt> <dd>
 
 Recibe un puntero al alto del icono en píxeles.
@@ -50,13 +50,13 @@ Recibe un puntero al alto del icono en píxeles.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 

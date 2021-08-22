@@ -51,7 +51,7 @@ Matriz [**de instancias \_ logicalDevice**](cim-logicaldevice.md) de CIM que se 
 *Grupo* \[ En\]
 </dt> <dd>
 
-Grupo [**\_ de recursos CIM**](cim-resourcepool.md) que representa el grupo al que se agregarán los recursos.
+Grupo [**\_ de recursos CIM**](cim-resourcepool.md) que representa el grupo al que se agregan los recursos.
 
 </dd> <dt>
 
@@ -64,7 +64,7 @@ Un [**\_ objeto ConcreteJob de CIM**](cim-concretejob.md) que hace referencia al
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
+Devuelve un 0 si se ejecuta correctamente; de lo contrario, devuelve un error.
 
 <dl> <dt>
 
@@ -111,7 +111,7 @@ Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un er
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
@@ -121,7 +121,7 @@ Devuelve un valor 0 si se ejecuta correctamente; de lo contrario, devuelve un er
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

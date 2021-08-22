@@ -13,7 +13,7 @@ ms.locfileid: "119858235"
 ---
 # <a name="multicast-programming-sample"></a>Ejemplo de programación de multidifusión
 
-En el código de ejemplo siguiente se muestra cómo incluir la funcionalidad de multidifusión en una aplicación Windows Sockets mediante opciones de socket.
+El código de ejemplo siguiente muestra cómo incluir la funcionalidad de multidifusión en una aplicación Windows Sockets mediante las opciones de socket.
 
 
 ```C++

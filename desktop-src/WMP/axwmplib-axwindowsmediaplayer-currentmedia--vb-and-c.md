@@ -50,7 +50,7 @@ Interfaz WMPLib.IWMPMedia que proporciona acceso al elemento multimedia actual.
 
 ## <a name="remarks"></a>Comentarios
 
-Si axWindowsMediaPlayer.settings. **La propiedad autoStart** es true, la reproducción comienza automáticamente cada vez que se **establece currentMedia.**
+Si AxWindowsMediaPlayer.settings. **La propiedad autoStart** es true, la reproducción se inicia automáticamente cada vez que se establece **currentMedia.**
 
 Puede recuperar una interfaz IWMPMedia para un elemento multimedia determinado a través de la propiedad IWMPPlaylist.Item (el método IWMPPlaylist.get \_ Item en C#). Para cargar un elemento multimedia con un nombre de archivo, establezca la propiedad URL o use newMedia.
 
@@ -91,7 +91,7 @@ currentMediaLabel.Text = (&quot;Found first media item. Name = &quot; + player.c
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |
@@ -99,7 +99,7 @@ currentMediaLabel.Text = (&quot;Found first media item. Name = &quot; + player.c
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

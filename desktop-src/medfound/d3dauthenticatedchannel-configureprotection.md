@@ -1,7 +1,7 @@
 ---
-description: Contiene datos de entrada para un \_ comando de protección de D3DAUTHENTICATEDCONFIGURE.
+description: Contiene datos de entrada para un comando D3DAUTHENTICATEDCONFIGURE \_ PROTECTION.
 ms.assetid: 44f37e78-7218-42be-a07a-5ab911f2ba21
-title: D3DAUTHENTICATEDCHANNEL_CONFIGUREPROTECTION estructura (D3d9types. h)
+title: D3DAUTHENTICATEDCHANNEL_CONFIGUREPROTECTION estructura (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: b3fc1daee7bfd9320539a03974ab431c4ba588d9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3f7c202a29347d59bfaf79792806fcab56532637045985440c899eeae304a4e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103907570"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828775"
 ---
-# <a name="d3dauthenticatedchannel_configureprotection-structure"></a>D3DAUTHENTICATEDCHANNEL \_ estructura CONFIGUREPROTECTION
+# <a name="d3dauthenticatedchannel_configureprotection-structure"></a>D3DAUTHENTICATEDCHANNEL \_ CONFIGUREPROTECTION (estructura)
 
-Contiene datos de entrada para un comando de [**\_ protección de D3DAUTHENTICATEDCONFIGURE**](d3dauthenticatedconfigure-protection.md) .
+Contiene datos de entrada para [**un comando D3DAUTHENTICATEDCONFIGURE \_ PROTECTION.**](d3dauthenticatedconfigure-protection.md)
 
-Para enviar esta consulta, llame a [**IDirect3DAuthenticatedChannel9:: configure**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure).
+Para enviar esta consulta, llame a [**IDirect3DAuthenticatedChannel9::Configure**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,14 +45,14 @@ typedef struct _D3DAUTHENTICATEDCHANNEL_CONFIGUREPROTECTION {
 **Parámetros**
 </dt> <dd>
 
-[**D3DAUTHENTICATEDCHANNEL \_ configure \_**](d3dauthenticatedchannel-configure-input.md) la estructura de entrada que contiene el GUID del comando y otros datos.
+Estructura [**D3DAUTHENTICATEDCHANNEL \_ CONFIGURE \_ INPUT**](d3dauthenticatedchannel-configure-input.md) que contiene el GUID del comando y otros datos.
 
 </dd> <dt>
 
 **Protecciones**
 </dt> <dd>
 
-Una estructura de [**\_ \_ marcas de protección de D3DAUTHENTICATEDCHANNEL**](d3dauthenticatedchannel-protection-flags.md) que especifica el nivel de protección.
+Estructura [**D3DAUTHENTICATEDCHANNEL \_ PROTECTION \_ FLAGS**](d3dauthenticatedchannel-protection-flags.md) que especifica el nivel de protección.
 
 </dd> </dl>
 
@@ -62,9 +62,9 @@ Una estructura de [**\_ \_ marcas de protección de D3DAUTHENTICATEDCHANNEL**](d
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
+| Header<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Una estructura de [**\_ \_ marcas de protección de D3DAUTHENTICATEDCHANNEL**](d
 [Estructuras de vídeo de Direct3D](direct3d-video-structures.md)
 </dt> <dt>
 
-[**IDirect3DAuthenticatedChannel9:: configure**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure)
+[**IDirect3DAuthenticatedChannel9::Configure**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-configure)
 </dt> </dl>
 
  

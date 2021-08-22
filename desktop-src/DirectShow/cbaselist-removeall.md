@@ -1,7 +1,7 @@
 ---
 description: El método RemoveAll quita todos los nodos de la lista.
 ms.assetid: f6a6ebfe-5f53-4acd-8bfa-93680f5d40fd
-title: Método CBaseList. RemoveAll (Wxlist. h)
+title: Método CBaseList.RemoveAll (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9ef6984a871dc13b0f50d748f67ceaac79937d2e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 697a2c4463194b5fdfa079857b91ec255071a4d0fbb14e2672301df2a72341f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119793255"
 ---
-# <a name="cbaselistremoveall-method"></a>CBaseList. RemoveAll (método)
+# <a name="cbaselistremoveall-method"></a>CBaseList.RemoveAll (método)
 
 El `RemoveAll` método quita todos los nodos de la lista.
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Es responsabilidad del autor de la llamada eliminar los elementos incluidos en todos los nodos.
+Es responsabilidad del autor de la llamada eliminar los elementos contenidos en todos los nodos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Es responsabilidad del autor de la llamada eliminar los elementos incluidos en t
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Es responsabilidad del autor de la llamada eliminar los elementos incluidos en t
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

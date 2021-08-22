@@ -83,7 +83,7 @@ public static void JetSetCurrentIndex(
     
     Nombre del índice que se va a seleccionar. Si es null o está vacío, se seleccionará el índice principal.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

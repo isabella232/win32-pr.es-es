@@ -1,9 +1,9 @@
 ---
-title: Mensaje de EM_SETSEL (Winuser. h)
-description: Selecciona un intervalo de caracteres en un control de edición. Puede enviar este mensaje a un control de edición o a un control Rich Edit.
+title: EM_SETSEL mensaje (Winuser.h)
+description: Selecciona un intervalo de caracteres en un control de edición. Puede enviar este mensaje a un control de edición o a un control de edición enriquecido.
 ms.assetid: 5cb7ff1e-18e8-49c8-8072-872cf32b18b0
 keywords:
-- EM_SETSEL controles de mensajes de Windows
+- EM_SETSEL controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4981fa179ae4bdd454ab0b0a6d7485185ed31d2c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 190d8a62b874d3449e0a9bf5d334a515000fb0436ba73753a8657936363071b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062895"
 ---
-# <a name="em_setsel-message"></a>\_Mensaje SETSEL em
+# <a name="em_setsel-message"></a>Mensaje \_ EM SETSEL
 
-Selecciona un intervalo de caracteres en un control de edición. Puede enviar este mensaje a un control de edición o a un control Rich Edit.
+Selecciona un intervalo de caracteres en un control de edición. Puede enviar este mensaje a un control de edición o a un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -45,21 +45,21 @@ Posición del carácter final de la selección.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este mensaje no devuelve ningún valor.
+Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor inicial puede ser mayor que el valor final. En el nivel inferior de los dos valores se especifica la posición del carácter del primer carácter de la selección. El valor superior especifica la posición del primer carácter más allá de la selección.
+El valor inicial puede ser mayor que el valor final. La parte inferior de los dos valores especifica la posición del carácter del primer carácter de la selección. El valor superior especifica la posición del primer carácter más allá de la selección.
 
-El valor inicial es el punto de anclaje de la selección y el valor final es el extremo activo. Si el usuario usa la tecla Mayús para ajustar el tamaño de la selección, el extremo activo se puede mover, pero el punto de anclaje sigue siendo el mismo.
+El valor inicial es el punto delimitador de la selección y el valor final es el extremo activo. Si el usuario usa la tecla MAYÚS para ajustar el tamaño de la selección, el extremo activo puede moverse, pero el punto delimitador sigue siendo el mismo.
 
-Si el inicio es 0 y el final es-1, se selecciona todo el texto del control de edición. Si el inicio es-1, se anula la selección de cualquier selección actual.
+Si el inicio es 0 y el final es -1, se selecciona todo el texto del control de edición. Si el inicio es -1, se deselecciona cualquier selección actual.
 
-**Controles de edición:** El control muestra un símbolo de intercalación parpadeante en la posición final sin tener en cuenta los valores relativos de inicio y fin.
+**Editar controles:** El control muestra un cursor intermitente en la posición final, independientemente de los valores relativos de inicio y fin.
 
-**Edición enriquecida:** Compatible con Microsoft Rich Edit 1,0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecidas con las distintas versiones del sistema, vea acerca de los [controles Rich Edit](about-rich-edit-controls.md).
+**Edición enriqueceda:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
 
-Si el control de edición tiene el estilo [**es \_ NOHIDESEL**](edit-control-styles.md) , el texto seleccionado se resalta sin tener en cuenta si el control tiene el foco. Sin el estilo **es \_ NOHIDESEL** , el texto seleccionado se resalta solo cuando el control de edición tiene el foco.
+Si el control de edición tiene el estilo [**\_ ES NOHIDESEL,**](edit-control-styles.md) el texto seleccionado se resalta independientemente de si el control tiene el foco. Sin el **estilo \_ ES NOHIDESEL,** el texto seleccionado solo se resalta cuando el control de edición tiene el foco.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,9 +67,9 @@ Si el control de edición tiene el estilo [**es \_ NOHIDESEL**](edit-control-sty
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -80,16 +80,16 @@ Si el control de edición tiene el estilo [**es \_ NOHIDESEL**](edit-control-sty
 **Referencia**
 </dt> <dt>
 
-[**\_GETSEL em**](em-getsel.md)
+[**EM \_ GETSEL**](em-getsel.md)
 </dt> <dt>
 
-[**\_REPLACESEL em**](em-replacesel.md)
+[**EM \_ REPLACESEL**](em-replacesel.md)
 </dt> <dt>
 
-[**\_SCROLLCARET em**](em-scrollcaret.md)
+[**EM \_ SCROLLCARET**](em-scrollcaret.md)
 </dt> <dt>
 
-[**\_EXSETSEL em**](em-exsetsel.md)
+[**EM \_ EXSETSEL**](em-exsetsel.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
 title: Comando deshacer
-description: El comando deshacer invierte la acción realizada por el comando de copiar, cortar, eliminar, deshacer o pegar correctamente más reciente. Los dispositivos de vídeo digital reconocen este comando.
+description: El comando deshacer invierte la acción realizada por el comando de copia, corte, eliminación, deshacer o pegar correctamente más reciente. Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: 81d696a9-5288-4efd-bc76-8416dd63e694
 keywords:
 - Deshacer comando Windows Multimedia
@@ -21,7 +21,7 @@ ms.locfileid: "119804735"
 ---
 # <a name="undo-command"></a>Comando deshacer
 
-El comando deshacer invierte la acción realizada por el comando [copiar,](copy.md) [cortar,](cut.md) [eliminar,](delete.md)deshacer o [pegar](paste.md) correctamente más reciente. Los dispositivos de vídeo digital reconocen este comando.
+El comando deshacer invierte la acción realizada por el comando [copiar,](copy.md) [cortar,](cut.md) [eliminar,](delete.md)deshacer [o pegar](paste.md) correctamente más reciente. Los dispositivos de vídeo digital reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
@@ -54,7 +54,7 @@ Puede ser "wait", "notify", "test" o una combinación de estos. Para obtener má
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ Devuelve cero si se realiza correctamente o se produce un error en caso contrari
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
