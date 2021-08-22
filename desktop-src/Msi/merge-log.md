@@ -1,7 +1,7 @@
 ---
-description: El método log del objeto Merge escribe una cadena de texto en el archivo de registro abierto actualmente.
+description: El método Log del objeto Merge escribe una cadena de texto en el archivo de registro abierto actualmente.
 ms.assetid: dbfc9be7-1b0b-417e-9e2b-bf191ea255b6
-title: Merge. log (método) (Mergemod. h)
+title: Método Merge.Log (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: ab5524535ea44694795ebe464774c01b339e42df
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 529df34e4110d675bafc70add3225d5f4066e4eb89d83fd0656d98159566e2ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926555"
 ---
-# <a name="mergelog-method"></a>Merge. log (método)
+# <a name="mergelog-method"></a>Método Merge.Log
 
-El método **log** del objeto [**Merge**](merge-object.md) escribe una cadena de texto en el archivo de registro abierto actualmente.
+El **método Log** del objeto [**Merge**](merge-object.md) escribe una cadena de texto en el archivo de registro abierto actualmente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,10 +40,10 @@ Merge.Log(
 
 <dl> <dt>
 
-*Message* 
+*Mensaje* 
 </dt> <dd>
 
-Cadena de texto que se va a escribir en el archivo de registro.
+Cadena de texto que se escribirá en el archivo de registro.
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="c"></a>C++
 
-Vea función de [**registro**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-log) .
+Consulte [**Función Log.**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-log)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Vea función de [**registro**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versión<br/> | Mergemod.dll 1,0 o posterior<br/>                                                    |
-| Encabezado<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
+| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

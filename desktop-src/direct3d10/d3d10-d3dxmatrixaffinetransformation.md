@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 01c6b3c3ffe2de9b7c7003b78f1b07a0f35cc3a1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5c847d537eaa79b266ef785f40806c37e2503b2b9a8a97bf99a678c7dff219de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108113183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119609525"
 ---
 # <a name="d3dxmatrixaffinetransformation-function-d3dx10mathh"></a>Función D3DXMatrixAffineTransformation (D3DX10Math.h)
 
@@ -67,7 +67,7 @@ Factor de escalado.
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero a [**D3DXVECTOR3**](d3d10-d3dxvector3.md), un punto que identifica el centro de rotación. Si este argumento es **NULL,** se aplica una matriz M <sub>rc</sub> de identidad a la fórmula en Comentarios.
+Puntero a [**D3DXVECTOR3,**](d3d10-d3dxvector3.md)un punto que identifica el centro de rotación. Si este argumento es **NULL,** se aplica una matriz M <sub>rc</sub> de identidad a la fórmula en Comentarios.
 
 </dd> <dt>
 
@@ -99,7 +99,7 @@ Puntero a una estructura D3DXMATRIX que es una matriz de transformación afín.
 
 Esta función calcula la matriz de transformación afín con la siguiente fórmula, con la concatenación de matrices evaluada en orden de izquierda a derecha:
 
-M<sub>out</sub> = Ms \* (M<sub>rc</sub>)-1 \* M<sub>r</sub> \* M<sub>rc</sub> \* Mt
+M<sub>out</sub> = Mₛ \* (M<sub>rc</sub>)-1 \* M<sub>r</sub> \* M<sub>rc</sub> \* Mₜ
 
 donde:
 
@@ -128,7 +128,7 @@ Para las transformaciones de afín 2D, use D3DXMatrixAffineTransformation2D.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

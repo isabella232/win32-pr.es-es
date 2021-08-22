@@ -1,9 +1,9 @@
 ---
-title: función glNewList (GL. h)
-description: Las funciones glNewList y glEndList crean o reemplazan una lista de visualización. | función glNewList (GL. h)
+title: Función glNewList (Gl.h)
+description: Las funciones glNewList y glEndList crean o reemplazan una lista de visualización. | Función glNewList (Gl.h)
 ms.assetid: 9c6556d4-855f-4cba-94cc-27b5f1e4607a
 keywords:
-- glNewList (función) OpenGL
+- Función glNewList OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6135f67c07f69d24df67d4f1899404359efaa7aa
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0103baa9786cdfed0d6e999021453e30da5083571c9a2c9054da701977a9493f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105670175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119741345"
 ---
-# <a name="glnewlist-function"></a>glNewList función)
+# <a name="glnewlist-function"></a>función glNewList
 
-Las funciones **glNewList** y [**glEndList**](glendlist.md) crean o reemplazan una lista de visualización.
+Las **funciones glNewList** [**y glEndList**](glendlist.md) crean o reemplazan una lista de visualización.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,21 +44,21 @@ void WINAPI glNewList(
 *list* 
 </dt> <dd>
 
-Nombre de la lista de visualización.
+Nombre de la lista para mostrar.
 
 </dd> <dt>
 
 *mode* 
 </dt> <dd>
 
-Modo de compilación. Se aceptan los siguientes valores.
+Modo de compilación. Se aceptan los valores siguientes.
 
 
 
 | Value                                                                                                                                                                                      | Significado                                                                      |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <span id="GL_COMPILE"></span><span id="gl_compile"></span><dl> <dt>**\_compilación GL**</dt> </dl>                                       | Simplemente se compilan los comandos.<br/>                                     |
-| <span id="GL_COMPILE_AND_EXECUTE"></span><span id="gl_compile_and_execute"></span><dl> <dt>**\_compilación \_ y \_ ejecución de GL**</dt> </dl> | Los comandos se ejecutan a medida que se compilan en la lista de visualización.<br/> |
+| <span id="GL_COMPILE"></span><span id="gl_compile"></span><dl> <dt>**COMPILACIÓN \_ DE GL**</dt> </dl>                                       | Los comandos simplemente se compilan.<br/>                                     |
+| <span id="GL_COMPILE_AND_EXECUTE"></span><span id="gl_compile_and_execute"></span><dl> <dt>**COMPILACIÓN \_ \_ Y EJECUCIÓN DE \_ GL**</dt> </dl> | Los comandos se ejecutan a medida que se compilan en la lista de visualización.<br/> |
 
 
 
@@ -78,29 +78,29 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl>     | la *lista* era cero.<br/>                                                                                                           |
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>      | el *modo* no era un valor aceptado.<br/>                                                                                          |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | *list* era cero.<br/>                                                                                                           |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>      | *mode* no era un valor aceptado.<br/>                                                                                          |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las listas de visualización son grupos de comandos OpenGL que se han almacenado para su posterior ejecución. Las listas de visualización se crean con **glNewList**. Todos los comandos subsiguientes se colocan en la lista de visualización, en el orden emitido, hasta que se llame a **glEndList** .
+Las listas para mostrar son grupos de comandos OpenGL que se han almacenado para su posterior ejecución. Las listas para mostrar se crean **con glNewList.** Todos los comandos posteriores se colocan en la lista de visualización, en el orden emitido, hasta que **se llama a glEndList.**
 
-La función **glNewList** tiene dos parámetros. El primer parámetro, *List*, es un entero positivo que se convierte en el nombre único de la lista de visualización. Los nombres se pueden crear y reservar con [**glGenLists**](glgenlists.md) y probar la unicidad con [**glIsList**](glislist.md). El segundo parámetro, *mode*, es una constante simbólica que puede suponer uno de los dos valores anteriores.
+La **función glNewList** tiene dos parámetros. El primer parámetro, *list*, es un entero positivo que se convierte en el nombre único de la lista para mostrar. Los nombres se pueden crear y reservar [**con glGenLists**](glgenlists.md) y probar la [**unidad con glIsList.**](glislist.md) El segundo parámetro, *mode*, es una constante simbólica que puede asumir uno de los dos valores anteriores.
 
-Algunos comandos no se compilan en la lista de visualización, pero se ejecutan inmediatamente, independientemente del modo de la lista de visualización. Estos comandos son [**glColorPointer**](glcolorpointer.md), [**glDeleteLists**](gldeletelists.md), [**glDisableClientState**](gldisableclientstate.md), [**glEdgeFlagPointer**](gledgeflagpointer.md), [**glEnableClientState**](glenableclientstate.md), [**glFeedbackBuffer**](glfeedbackbuffer.md), [**glFinish**](glfinish.md), [**glFlush**](glflush.md), [**glGenLists**](glgenlists.md), [**glIndexPointer**](glindexpointer.md), [**glInterleavedArrays**](glinterleavedarrays.md), [**glIsEnabled**](glisenabled.md), [**GlIsList**](glislist.md), [**glNormalPointer**](glnormalpointer.md), [**glPopClientAttrib**](glpopclientattrib.md), [**glPixelStore**](glpixelstore-functions.md), [**glPushClientAttrib**](glpushclientattrib.md), [**glReadPixels**](glreadpixels.md), [**glRenderMode**](glrendermode.md), [**glSelectBuffer**](glselectbuffer.md), [**glTexCoordPointer**](gltexcoordpointer.md), [**glVertexPointer**](glvertexpointer.md)y todas las rutinas de [**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) .
+Algunos comandos no se compilan en la lista de visualización, pero se ejecutan inmediatamente, independientemente del modo de lista de presentación. Estos comandos son [**glColorPointer,**](glcolorpointer.md) [**glDeleteLists,**](gldeletelists.md) [**glDisableClientState**](gldisableclientstate.md), [**glEdgeFlagPointer**](gledgeflagpointer.md), [**glEnableClientState**](glenableclientstate.md), [**glFeedbackBuffer**](glfeedbackbuffer.md), [**glFinish**](glfinish.md), [**glFlush**](glflush.md), [**glGenLists**](glgenlists.md), [**glIndexPointer**](glindexpointer.md), [**glInterleavedArrays**](glinterleavedarrays.md), [**glIsEnabled**](glisenabled.md), [**glIsList,**](glislist.md) [**glNormalPointer,**](glnormalpointer.md) [**glPopClientAttrib,**](glpopclientattrib.md) [**glPixelStore**](glpixelstore-functions.md), [**glPushClientAttrib,**](glpushclientattrib.md) [**glReadPixels,**](glreadpixels.md) [**glRenderMode,**](glrendermode.md) [**glSelectBuffer,**](glselectbuffer.md) [**glTexCoordPointer,**](gltexcoordpointer.md) [**glVertexPointer**](glvertexpointer.md)y todas las rutinas [**glGet.**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md)
 
-De forma similar, [**glTexImage2D**](glteximage2d.md) y [**glTexImage1D**](glteximage1d.md) se ejecutan inmediatamente y no se compilan en la lista de visualización cuando su primer argumento es la textura de proxy \_ de contabilidad \_ \_ 2D o la \_ \_ textura de proxy de GL \_ 1D, respectivamente.
+Del mismo modo, [**glTexImage2D**](glteximage2d.md) y [**glTexImage1D**](glteximage1d.md) se ejecutan inmediatamente y no se compilan en la lista de presentación cuando su primer argumento es GL \_ PROXY TEXTURE 2D o GL PROXY TEXTURE \_ \_ \_ \_ \_ 1D, respectivamente.
 
-Cuando se encuentra la función **glEndList** , la definición de la lista de visualización se completa mediante la Asociación de la lista con la *lista* de nombres únicos (especificada en el comando **glNewList** ). Si ya existe una lista de visualización con la *lista* de nombres, solo se reemplaza cuando se llama a **glEndList** .
+Cuando se encuentra la función **glEndList,** la definición de la lista para mostrar se completa asociando la lista a la lista de nombres únicos *(especificada* en el **comando glNewList).** Si ya existe una lista para mostrar con la *lista* de nombres, solo se reemplaza cuando se llama **a glEndList.**
 
-Las funciones [**glCallList**](glcalllist.md) y [**glCallLists**](glcalllists.md) se pueden especificar en las listas de visualización. Los comandos de la lista de visualización o las listas ejecutadas por **glCallList** o **glCallLists** no se incluyen en la lista de visualización que se está creando, incluso si el modo de creación de lista es GL \_ compile \_ y \_ Execute.
+Las [**funciones glCallList**](glcalllist.md) y [**glCallLists**](glcalllists.md) se pueden especificar en listas para mostrar. Los comandos de la lista de visualización o las listas ejecutadas por **glCallList** o **glCallLists** no se incluyen en la lista de visualización que se va a crear, incluso si el modo de creación de la lista es GL \_ COMPILE AND \_ \_ EXECUTE.
 
-La siguiente función recupera información relacionada con **glNewList**:
+La función siguiente recupera información relacionada con **glNewList**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el \_ modo de matriz de contabilidad de argumentos \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MATRIX \_ MODE
 
 ## <a name="requirements"></a>Requisitos
 
@@ -110,8 +110,8 @@ La siguiente función recupera información relacionada con **glNewList**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

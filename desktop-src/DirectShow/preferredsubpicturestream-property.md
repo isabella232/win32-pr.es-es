@@ -1,15 +1,15 @@
 ---
-description: La propiedad PreferredSubpictureStream recupera la secuencia de subimagen preferida para la sesión de visualización actual.
+description: La propiedad PreferredSubpictureStream recupera el flujo de subpicture preferido para la sesión de visualización actual.
 ms.assetid: 9c15dc6f-c016-41bf-b03d-e8e5415215ae
 title: Propiedad PreferredSubpictureStream
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23377d74d3632c665b001ae415dc151ca73bd148
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: e28b98163607e31a207bffb3974fee3b32505ff60ba3700b452b2dff2625f421
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103906602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583545"
 ---
 # <a name="preferredsubpicturestream-property"></a>Propiedad PreferredSubpictureStream
 
@@ -18,7 +18,7 @@ ms.locfileid: "103906602"
 
  
 
-La `PreferredSubpictureStream` propiedad recupera la secuencia de subimagen preferida para la sesión de visualización actual.
+La `PreferredSubpictureStream` propiedad recupera el flujo de subpicture preferido para la sesión de visualización actual.
 
 ``` syntax
 [iStream = ] MSWebDVD.PreferredSubpictureStream
@@ -26,11 +26,11 @@ La `PreferredSubpictureStream` propiedad recupera la secuencia de subimagen pref
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor entero que representa la secuencia de la subimagen preferida actual en el registro del sistema.
+Devuelve un valor Integer que representa el flujo de subpicture preferido actual en el registro del sistema.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La secuencia de subimagen preferida se establece con [**DefaultSubpictureLCID**](defaultsubpicturelcid-property.md)del objeto [MSDVDAdm](msdvdadm-object.md) .
+El flujo de subpicture preferido se establece con [**defaultSubpictureLCID**](defaultsubpicturelcid-property.md)del objeto [MSDVDAdm.](msdvdadm-object.md)
 
  
 

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_DDE_ACK (DDE. h)
-description: El \_ mensaje de \_ confirmación de DDE de WM notifica a una aplicación intercambio dinámico de datos (DDE) de la recepción y el procesamiento de los siguientes mensajes WM DDE, de WM, de ejecución, de WM DDE o de la \_ \_ \_ \_ solicitud de \_ \_ \_ \_ \_ \_ \_ \_ \_ DDE de WM \_ (en algunos casos). Para enviar este mensaje, llame a la función PostMessage con los parámetros siguientes.
+title: WM_DDE_ACK mensaje (Dde.h)
+description: El mensaje DDE ACK de WM notifica a una aplicación datos dinámicos Exchange (DDE) la recepción y el procesamiento de los siguientes mensajes \_ \_ WM \_ DDE WM \_ WM, WM \_ DDE \_ EXECUTE, WM \_ DDE \_ DATA, WM \_ \_ DDE ADVISE, WM \_ DDE \_ UNADVISE, WM DDE INITIATE o \_ WM \_ \_ DDE REQUEST (en algunos \_ casos). Para publicar este mensaje, llame a la función PostMessage con los parámetros siguientes.
 ms.assetid: aca47dbf-e1f2-4725-8364-0aa7fcd98bd9
 keywords:
-- Intercambio de datos de mensajes de WM_DDE_ACK
+- WM_DDE_ACK mensaje De datos Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a407fc6cad7077586539f119dd65be59a507cacd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cf1aad39115e1bdb68208a9ccbb0d83eea934ef2ff8c6521a0602e081c7ed811
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079292"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119636245"
 ---
-# <a name="wm_dde_ack-message"></a>Mensaje de confirmación de \_ DDE de WM \_
+# <a name="wm_dde_ack-message"></a>Mensaje \_ DDE \_ ACK de WM
 
-El mensaje de **\_ \_ confirmación de DDE de WM** notifica a una aplicación intercambio dinámico de datos (DDE) de la recepción y el procesamiento de los mensajes siguientes: [**WM \_ DDE \_**](wm-dde-poke.md), error de WM, [**\_ \_ ejecución**](wm-dde-execute.md)de WM DDE, [**datos de WM \_ DDE \_**](wm-dde-data.md), [**\_ \_ aviso de DDE**](wm-dde-advise.md)de WM, [**\_ \_ desaconsejar**](wm-dde-unadvise.md)DDE de WM, [**\_ \_ Inicio de WM DDE**](wm-dde-initiate.md)o [**\_ \_ solicitud de DDE de WM**](wm-dde-request.md) (en algunos casos).
+El mensaje **WM \_ DDE \_ ACK** notifica a una aplicación datos dinámicos Exchange (DDE) la recepción y el procesamiento de los mensajes siguientes: [**WM \_ DDE WM \_ WM,**](wm-dde-poke.md) [**WM \_ DDE \_ EXECUTE,**](wm-dde-execute.md) [**WM \_ DDE \_ DATA,**](wm-dde-data.md) [**WM \_ DDE \_ ADVISE,**](wm-dde-advise.md) [**WM \_ DDE \_ UNADVISE,**](wm-dde-unadvise.md) [**WM \_ DDE \_ INITIATE**](wm-dde-initiate.md)o [**WM \_ DDE \_ REQUEST**](wm-dde-request.md) (en algunos casos).
 
-Para enviar este mensaje, llame a la función [**PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) con los parámetros siguientes.
+Para publicar este mensaje, llame a la [**función PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) con los parámetros siguientes.
 
 
 ```C++
@@ -41,46 +41,46 @@ Para enviar este mensaje, llame a la función [**PostMessage**](/windows/desktop
 *wParam* 
 </dt> <dd>
 
-Cuando se responde a [**WM \_ DDE \_ INITIATE**](wm-dde-initiate.md), este parámetro es un identificador de la ventana del servidor que envía el mensaje.
+Al responder a [**WM \_ DDE \_ INITIATE,**](wm-dde-initiate.md)este parámetro es un identificador para la ventana del servidor que envía el mensaje.
 
-Cuando se responde a [**WM \_ DDE \_ Execute**](wm-dde-execute.md), este parámetro es un identificador de la ventana del servidor que publica el mensaje.
+Al responder a [**WM \_ DDE \_ EXECUTE,**](wm-dde-execute.md)este parámetro es un identificador de la ventana del servidor que publica el mensaje.
 
-Al responder a todos los demás mensajes, este parámetro es un identificador de la ventana de cliente o de servidor que publica el mensaje.
+Al responder a todos los demás mensajes, este parámetro es un identificador para la ventana cliente o servidor que publica el mensaje.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Cuando se responde a [**WM \_ DDE \_ INITIATE**](wm-dde-initiate.md), la palabra de orden inferior contiene un átomo que identifica la aplicación de respuesta. La palabra de orden superior contiene un átomo que identifica el tema para el que se está estableciendo una conversación.
+Al responder a [**WM \_ DDE \_ INITIATE,**](wm-dde-initiate.md)la palabra de orden bajo contiene un atom que identifica la aplicación de respuesta. La palabra de orden superior contiene un atom que identifica el tema para el que se establece una conversación.
 
-Cuando se responde a [**WM \_ DDE \_ Execute**](wm-dde-execute.md), la palabra de orden inferior especifica una estructura [**DDEACK**](/windows/desktop/api/Dde/ns-dde-ddeack) que contiene una serie de marcas que indican el estado de la respuesta. La palabra de orden superior es un identificador de un objeto de memoria global que contiene la cadena de comandos que se recibió en el mensaje de **\_ \_ ejecución de WM DDE** .
+Al responder a [**WM \_ DDE \_ EXECUTE,**](wm-dde-execute.md)la palabra de orden bajo especifica una estructura [**DDEACK**](/windows/desktop/api/Dde/ns-dde-ddeack) que contiene una serie de marcas que indican el estado de la respuesta. La palabra de orden superior es un identificador de un objeto de memoria global que contiene la cadena de comando que se recibió en el mensaje **\_ \_ EXECUTE de WM DDE.**
 
-Al responder a todos los demás mensajes, la palabra de orden inferior especifica una estructura [**DDEACK**](/windows/desktop/api/Dde/ns-dde-ddeack) que contiene una serie de marcas que indican el estado de la respuesta. La palabra de orden superior contiene un átomo global que identifica el nombre del elemento de datos para el que se envía la respuesta.
+Al responder a todos los demás mensajes, la palabra de orden bajo especifica una estructura [**DDEACK**](/windows/desktop/api/Dde/ns-dde-ddeack) que contiene una serie de marcas que indican el estado de la respuesta. La palabra de orden superior contiene un atom global que identifica el nombre del elemento de datos para el que se envía la respuesta.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-### <a name="posting"></a>Config
+### <a name="posting"></a>Publicar
 
-Excepto en respuesta al mensaje [**de \_ \_ Inicio de WM DDE**](wm-dde-initiate.md) , la aplicación envía el mensaje de **confirmación de WM \_ DDE \_** mediante una llamada a la función [**PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) , no mediante una llamada a la función [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) . Al responder a **WM \_ DDE \_ iniciar**, la aplicación envía el mensaje de **\_ \_ confirmación de WM DDE** llamando a **SendMessage**. En este caso, ni el Atom del nombre de la aplicación ni el Atom del nombre del tema deben ser **null** (aunque el mensaje de **Inicio de WM \_ \_ DDE** especifique átomos **null** ).
+Excepto en respuesta al mensaje [**WM \_ DDE \_ INITIATE,**](wm-dde-initiate.md) la aplicación publica el mensaje **WM \_ DDE \_ ACK** llamando a la [**función PostMessage,**](/windows/desktop/api/winuser/nf-winuser-postmessagea) no llamando a [**la función SendMessage.**](/windows/desktop/api/winuser/nf-winuser-sendmessage) Al responder a **WM \_ DDE \_ INITIATE,** la aplicación envía el mensaje **\_ DDE \_ ACK** de WM mediante una **llamada a SendMessage**. En este caso, ni el atom de nombre de aplicación ni el atom de nombre de tema deben ser **NULL** (incluso si el mensaje **WM \_ DDE \_ INITIATE** especificó atoms **NULL).**
 
-Al confirmar cualquier mensaje con un átomo que lo acompañe, la confirmación de **la \_ \_ confirmación DDE de WM** de aplicación puede volver a usar el átomo que acompaña al mensaje original, o bien puede eliminarlo y crear uno nuevo.
+Al confirmar cualquier mensaje con un atom adjunto, la aplicación que publica **WM \_ DDE \_ ACK** puede reutilizar el atom que acompañaba al mensaje original, o bien puede eliminarlo y crear uno nuevo.
 
-Cuando se confirma [**la \_ \_ ejecución de WM DDE**](wm-dde-execute.md), la aplicación que envía la **confirmación de WM \_ DDE \_** debe volver a usar el objeto de memoria global identificado en el mensaje de **ejecución de WM \_ \_ DDE** original.
+Al confirmar [**WM \_ DDE \_ EXECUTE**](wm-dde-execute.md), la aplicación que publica **WM \_ DDE \_ ACK** debe reutilizar el objeto de memoria global identificado en el mensaje **EXECUTE de WM \_ DDE \_** original.
 
-Todos los mensajes de **\_ \_ confirmación DDE de WM** publicados deben crear o volver a usar el parámetro *lParam* llamando a la función [**PackDDElParam**](/windows/desktop/api/Dde/nf-dde-packddelparam) o a la función [**ReuseDDElParam**](/windows/desktop/api/Dde/nf-dde-reuseddelparam) .
+Todos los **mensajes de WM \_ DDE \_ ACK** publicados deben crear o reutilizar el parámetro *lParam* llamando a la función [**PackDDElParam**](/windows/desktop/api/Dde/nf-dde-packddelparam) o a la [**función ReuseDDElParam.**](/windows/desktop/api/Dde/nf-dde-reuseddelparam)
 
-Si una aplicación ha iniciado la finalización de una conversación mediante la publicación de la terminación de [**WM \_ DDE \_**](wm-dde-terminate.md) y está esperando la confirmación, la aplicación en espera no debe confirmar (positiva o negativamente) los mensajes posteriores enviados por la otra aplicación. La aplicación en espera debe eliminar cualquier átomo o objeto de memoria compartida recibido en estos mensajes que intervienen. Los objetos de memoria no deben liberarse si la marca **fRelease** está establecida en **false** en los mensajes de [**\_ \_ datos DDE**](wm-dde-data.md) de WM y WM [**\_ DDE \_**](wm-dde-poke.md) .
+Si una aplicación ha iniciado la finalización de una conversación mediante la publicación de [**WM \_ DDE \_ TERMINATE**](wm-dde-terminate.md) y está esperando confirmación, la aplicación en espera no debe confirmar (de forma positiva o negativa) los mensajes subsiguientes enviados por la otra aplicación. La aplicación en espera debe eliminar los atoms u objetos de memoria compartida recibidos en estos mensajes que intervienen. Los objetos de memoria no deben liberarse si la marca **fRelease** está establecida en **FALSE** en los mensajes [**WM \_ DDE WM \_ DDE**](wm-dde-poke.md) [**\_ \_ DATA.**](wm-dde-data.md)
 
 ### <a name="receiving"></a>Recepción
 
-La aplicación que recibe un mensaje de **\_ \_ confirmación de WM DDE** debe eliminar todos los átomos que acompañan al mensaje. Si la aplicación recibe una **\_ \_ confirmación de WM DDE** en respuesta a un mensaje con un objeto de memoria global que lo acompaña, y el objeto se envió con las marcas **fRelease** establecidas en **false**, la aplicación es responsable de eliminar el objeto.
+La aplicación que recibe un **mensaje \_ wm DDE \_ ACK** debe eliminar todos los átomos que acompañan al mensaje. Si la aplicación recibe un **\_ DDE \_ ACK** de WM en respuesta a un mensaje con un objeto de memoria global adjunto y el objeto se envió con las marcas **fRelease** establecidas en **FALSE,** la aplicación es responsable de eliminar el objeto.
 
-Si la aplicación recibe un mensaje **de \_ \_ confirmación DDE de WM** negativo publicado en respuesta a un mensaje de [**\_ \_ notificación de DDE de WM**](wm-dde-advise.md) , la aplicación debe eliminar el objeto de memoria global expuesto con el mensaje de **\_ \_ aviso de DDE de WM** original. Si la aplicación recibe un mensaje **de \_ \_ confirmación de DDE de WM** negativo expuesto en respuesta a un mensaje [**WM \_ DDE \_ Data**](wm-dde-data.md), [**WM \_ DDE \_**](wm-dde-poke.md), o de [**\_ \_ ejecución de WM DDE**](wm-dde-execute.md) , la aplicación debe eliminar el objeto de memoria global que se ha publicado con el mensaje de **\_ \_ ejecución** de **\_ \_ datos DDE** de WM original, de **WM \_ DDE \_** o de WM.
+Si la aplicación recibe un mensaje **\_ DDE \_ ACK** de WM negativo publicado en respuesta a un mensaje [**DE WM \_ DDE \_ ADVISE,**](wm-dde-advise.md) la aplicación debe eliminar el objeto de memoria global publicado con el mensaje **WM \_ DDE \_ ADVISE** original. Si la aplicación recibe un mensaje **\_ DDE \_ ACK** de WM negativo publicado en respuesta a un mensaje WM [**\_ DDE \_ DATA**](wm-dde-data.md), [**WM \_ DDE \_ WM WM O**](wm-dde-poke.md)WM [**\_ DDE \_ EXECUTE,**](wm-dde-execute.md) la aplicación debe eliminar el objeto de memoria global publicado con el mensaje **ORIGINAL WM \_ DDE \_ DATA,** **WM \_ DDE WM \_ WME** o **WM \_ DDE \_ EXECUTE.**
 
-La aplicación que recibe un mensaje **de \_ \_ confirmación de DDE de WM** publicado debe liberar el parámetro *lParam* mediante la función [**FreeDDElParam**](/windows/desktop/api/Dde/nf-dde-freeddelparam) .
+La aplicación que recibe un mensaje **wm \_ DDE \_ ACK** publicado debe liberar el parámetro *lParam* mediante la [**función FreeDDElParam.**](/windows/desktop/api/Dde/nf-dde-freeddelparam)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ La aplicación que recibe un mensaje **de \_ \_ confirmación de DDE de WM** pub
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                 |
-| Encabezado<br/>                   | <dl> <dt>DDE. h (incluir Windows. h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Dde.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -119,37 +119,37 @@ La aplicación que recibe un mensaje **de \_ \_ confirmación de DDE de WM** pub
 [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage)
 </dt> <dt>
 
-[**UnpackDDElParam**](/windows/desktop/api/Dde/nf-dde-unpackddelparam)
+[**DesempaquetarDDElParam**](/windows/desktop/api/Dde/nf-dde-unpackddelparam)
 </dt> <dt>
 
-[**\_aviso de DDE de WM \_**](wm-dde-advise.md)
+[**WM \_ DDE \_ ADVISE**](wm-dde-advise.md)
 </dt> <dt>
 
-[**\_datos DDE de WM \_**](wm-dde-data.md)
+[**WM \_ DDE \_ DATA**](wm-dde-data.md)
 </dt> <dt>
 
-[**ejecución de WM \_ DDE \_**](wm-dde-execute.md)
+[**WM \_ DDE \_ EXECUTE**](wm-dde-execute.md)
 </dt> <dt>
 
-[**Inicio de WM \_ DDE \_**](wm-dde-initiate.md)
+[**WM \_ DDE \_ INITIATE**](wm-dde-initiate.md)
 </dt> <dt>
 
-[**hiperdinámico de WM \_ \_**](wm-dde-poke.md)
+[**WM \_ DDE \_ POKE**](wm-dde-poke.md)
 </dt> <dt>
 
-[**\_solicitud de DDE de WM \_**](wm-dde-request.md)
+[**SOLICITUD \_ DE DDE DE \_ WM**](wm-dde-request.md)
 </dt> <dt>
 
-[**\_finalización de WM DDE \_**](wm-dde-terminate.md)
+[**WM \_ DDE \_ TERMINATE**](wm-dde-terminate.md)
 </dt> <dt>
 
-[**\_DESaconsejar DDE de WM \_**](wm-dde-unadvise.md)
+[**WM \_ DDE \_ UNADVISE**](wm-dde-unadvise.md)
 </dt> <dt>
 
-**Vista**
+**Conceptual**
 </dt> <dt>
 
-[Acerca de Intercambio dinámico de datos](about-dynamic-data-exchange.md)
+[Acerca de datos dinámicos Exchange](about-dynamic-data-exchange.md)
 </dt> </dl>
 
  

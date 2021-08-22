@@ -1,9 +1,9 @@
 ---
-title: Mensaje de PSM_APPLY (Prsht. h)
-description: Simula la selección del botón aplicar, que indica que una o más páginas han cambiado y los cambios deben validarse y registrarse.
+title: PSM_APPLY mensaje (Prsht.h)
+description: Simula la selección del botón Aplicar, lo que indica que una o varias páginas han cambiado y que los cambios deben validarse y grabarse.
 ms.assetid: 2948fb66-ad77-4552-88b6-455418515e4c
 keywords:
-- PSM_APPLY controles de mensajes de Windows
+- PSM_APPLY controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67d798d4a9a2f780ac81cc84c90a57d0efd4e299
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f753eb2465ec835f467493bdbd83d10b8ba174b11c83abffcb91d20f8beba002
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103905472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119544165"
 ---
-# <a name="psm_apply-message"></a>Mensaje de aplicación de PSM \_
+# <a name="psm_apply-message"></a>Mensaje \_ DE PSM APPLY
 
-Simula la selección del botón **aplicar** , que indica que una o más páginas han cambiado y los cambios deben validarse y registrarse.
+Simula la selección del **botón** Aplicar, lo que indica que una o varias páginas han cambiado y que los cambios deben validarse y grabarse.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -45,11 +45,11 @@ Debe ser cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si todas las páginas aplicaron correctamente los cambios o **false** en caso contrario.
+Devuelve **TRUE si** todas las páginas aplicaron correctamente los cambios o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La hoja de propiedades envía el código de notificación [PSN \_ KILLACTIVE](psn-killactive.md) a la página actual. Si la página actual devuelve **false**, la hoja de propiedades envía [PSN \_ aplicar](psn-apply.md) código de notificación a todas las páginas activas. Puede enviar el mensaje de \_ aplicación PSM explícitamente o mediante la macro [**PropSheet \_ Apply**](/windows/desktop/api/Prsht/nf-prsht-propsheet_apply) .
+La hoja de propiedades envía el [código de notificación \_ KILLACTIVE de PSN](psn-killactive.md) a la página actual. Si la página actual devuelve **FALSE,** la hoja de propiedades envía el [código de notificación DE PSN \_ APPLY](psn-apply.md) a todas las páginas activas. Puede enviar el mensaje PSM \_ APPLY explícitamente o mediante la [**macro PropSheet \_ Apply.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_apply)
 
 > [!Note]  
 > Este mensaje no se admite cuando se usa el estilo del asistente de Aero ([**PSH \_ AEROWIZARD**](/windows/desktop/api/Prsht/ns-prsht-propsheetheadera_v2)).
@@ -60,11 +60,11 @@ La hoja de propiedades envía el código de notificación [PSN \_ KILLACTIVE](ps
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

@@ -3,7 +3,7 @@ title: comando index
 description: El comando index controla la presentación en pantalla de un VCR. Los dispositivos VCR reconocen este comando.
 ms.assetid: 16066acf-37aa-4bff-b97e-5eb2420ac3c4
 keywords:
-- comando index Windows Multimedia
+- index command Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -73,7 +73,7 @@ Puede ser "wait", "notify" o "test". Para obtener más información sobre estas 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,7 +86,7 @@ Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

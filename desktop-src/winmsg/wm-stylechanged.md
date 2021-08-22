@@ -11,9 +11,9 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119705945"
 ---
-# <a name="wm_stylechanged-message"></a>Mensaje \_ STYLECHANGED de WM
+# <a name="wm_stylechanged-message"></a>Mensaje \_ DE WM STYLECHANGED
 
-Se envía a una ventana después [**de que la función SetWindowLong**](/windows/win32/api/winuser/nf-winuser-setwindowlonga) haya cambiado uno o varios de los estilos de la ventana.
+Se envía a una ventana después de que la función [**SetWindowLong**](/windows/win32/api/winuser/nf-winuser-setwindowlonga) haya cambiado uno o varios de los estilos de la ventana.
 
 Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
@@ -31,7 +31,7 @@ Una ventana recibe este mensaje a través de su [**función WindowProc.**](/prev
 *wParam* 
 </dt> <dd>
 
-Indica si los estilos de la ventana o los estilos de ventana extendidos han cambiado. Este parámetro puede ser uno o varios de los valores siguientes.
+Indica si los estilos de la ventana o los estilos extendidos de la ventana han cambiado. Este parámetro puede ser uno o varios de los valores siguientes.
 
 
 
@@ -71,7 +71,7 @@ Una aplicación debe devolver cero si procesa este mensaje.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

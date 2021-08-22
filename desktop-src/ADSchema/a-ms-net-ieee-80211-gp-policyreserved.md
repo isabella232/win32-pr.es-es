@@ -1,10 +1,10 @@
 ---
-title: atributo MS-net-IEEE-80211-GP-PolicyReserved
-description: Reservado para uso futuro. | atributo MS-net-IEEE-80211-GP-PolicyReserved
+title: atributo ms-net-ieee-80211-GP-PolicyReserved
+description: Reservado para uso futuro. | atributo ms-net-ieee-80211-GP-PolicyReserved
 ms.assetid: 28381eaf-9f78-43b6-97e7-bdae5322cf39
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-net-IEEE-80211-GP-PolicyReserved
+- ms-net-ieee-80211-GP-PolicyReserved attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f59a2fde1114f22bfe68dd1275baba8538e09a27
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: a1b37a2c51115327ae004f1ed95e2644a6c58aa75fcf5547a088363ae9a467b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105660036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583425"
 ---
-# <a name="ms-net-ieee-80211-gp-policyreserved-attribute"></a>atributo MS-net-IEEE-80211-GP-PolicyReserved
+# <a name="ms-net-ieee-80211-gp-policyreserved-attribute"></a>atributo ms-net-ieee-80211-GP-PolicyReserved
 
 Reservado para uso futuro.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-net-IEEE-80211-GP-PolicyReserved                   |
-| Nombre para mostrar de LDAP | MS-net-IEEE-80211-GP-PolicyReserved                   |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | ms-net-ieee-80211-GP-PolicyReserved                   |
+| Ldap-Display-Name | ms-net-ieee-80211-GP-PolicyReserved                   |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1953                               |
-| System-ID-GUID    | 0f69c62e-088e-4ff5-a53a-e923cec07c0a                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 0f69c62e-088e-4ff5-a53a-e923cec07c0a                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -51,18 +51,18 @@ Reservado para uso futuro.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                  |
+| Id. de vínculo                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
-| System-Only            | False                                                                               |
-| Tiene un único valor       | True                                                                                |
-| Está indexado             | False                                                                               |
-| En el catálogo global      | False                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                        |
+| System-Only            | Falso                                                                               |
+| Es de un solo valor       | Verdadero                                                                                |
+| Está indexado             | Falso                                                                               |
+| En el catálogo global      | Falso                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Clases usadas en        | [**MS-net-IEEE-80211-GroupPolicy**](c-ms-net-ieee-80211-grouppolicy.md)<br/> |
+| Clases usadas en        | [**ms-net-ieee-80211-GroupPolicy**](c-ms-net-ieee-80211-grouppolicy.md)<br/> |
 
 
 
@@ -72,18 +72,18 @@ Reservado para uso futuro.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                  |
+| Id. de vínculo                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
-| System-Only            | False                                                                               |
-| Tiene un único valor       | True                                                                                |
-| Está indexado             | False                                                                               |
-| En el catálogo global      | False                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                        |
+| System-Only            | Falso                                                                               |
+| Es de un solo valor       | Verdadero                                                                                |
+| Está indexado             | Falso                                                                               |
+| En el catálogo global      | Falso                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Clases usadas en        | [**MS-net-IEEE-80211-GroupPolicy**](c-ms-net-ieee-80211-grouppolicy.md)<br/> |
+| Clases usadas en        | [**ms-net-ieee-80211-GroupPolicy**](c-ms-net-ieee-80211-grouppolicy.md)<br/> |
 
 
 
@@ -93,18 +93,18 @@ Reservado para uso futuro.
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                  |
+| Id. de vínculo                | \-                                                                                  |
 | MAPI-Id                | \-                                                                                  |
-| System-Only            | False                                                                               |
-| Tiene un único valor       | True                                                                                |
-| Está indexado             | False                                                                               |
-| En el catálogo global      | False                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                        |
+| System-Only            | Falso                                                                               |
+| Es de un solo valor       | Verdadero                                                                                |
+| Está indexado             | Falso                                                                               |
+| En el catálogo global      | Falso                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                        |
 | Range-Lower            | \-                                                                                  |
 | Range-Upper            | \-                                                                                  |
 | Search-Flags           | 0x00000000                                                                          |
 | System-Flags           | 0x00000010                                                                          |
-| Clases usadas en        | [**MS-net-IEEE-80211-GroupPolicy**](c-ms-net-ieee-80211-grouppolicy.md)<br/> |
+| Clases usadas en        | [**ms-net-ieee-80211-GroupPolicy**](c-ms-net-ieee-80211-grouppolicy.md)<br/> |
 
 
 

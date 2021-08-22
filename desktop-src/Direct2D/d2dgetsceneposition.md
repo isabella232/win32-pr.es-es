@@ -1,6 +1,6 @@
 ---
-title: Función D2DGetScenePosition (D2d1effecthelpers. h)
-description: Devuelve el valor de la posición de la escena de entrada \_ . Solo está disponible cuando \_ D2D \_ requiere \_ que la posición de la escena se declare en el archivo de código fuente.
+title: Función D2DGetScenePosition (D2d1effecthelpers.h)
+description: Devuelve el valor de la posición de la \_ escena de entrada. Solo está disponible cuando D2D \_ REQUIERE QUE SCENE POSITION se declare en el archivo de \_ \_ origen.
 ms.assetid: 451E4C31-D93D-44B6-81D1-AC5FD986ACBD
 keywords:
 - Función D2DGetScenePosition Direct2D
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ace0ee4d60f8c140825e41ba47de941bca09e67c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fbcd7a1ee987cf64a92aa76b0f8910bee1c9a15465872bbd3ccfe2502629f700
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105661211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119641645"
 ---
-# <a name="d2dgetsceneposition-function"></a>D2DGetScenePosition función)
+# <a name="d2dgetsceneposition-function"></a>Función D2DGetScenePosition
 
-Devuelve el valor de la posición de la escena de entrada \_ . Solo está disponible cuando \_ D2D \_ requiere \_ que la posición de la escena se declare en el archivo de código fuente.
+Devuelve el valor de la posición de la \_ escena de entrada. Solo está disponible cuando D2D \_ REQUIERE QUE SCENE POSITION se declare en el archivo de \_ \_ origen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,11 +37,11 @@ Esta función no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-La función devuelve una **FLOAT4** en el formato posición de la escena \_ .
+La función devuelve un **valor float4** con el formato SCENE \_ POSITION.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-En el ejemplo siguiente se muestra el uso de la función para generar un patrón de resolución.
+En el ejemplo siguiente se muestra el uso de la función para generar un patrón de disolver.
 
 ``` syntax
 D2D_PS_ENTRY(BlendDissolve)  
@@ -78,7 +78,7 @@ D2D_PS_ENTRY(BlendDissolve)
 [Vinculación del sombreador de efectos](effect-shader-linking.md)
 </dt> <dt>
 
-[Aplicaciones auxiliares de HLSL](hlsl-helpers.md)
+[Asistentes hlsl](hlsl-helpers.md)
 </dt> </dl>
 
  

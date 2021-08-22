@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9a55e493c737b5a5864ec0a8dd38eee3abbfa586
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 69cff051ecab1a93d9fdceac20143bef7d1959ff523aa5893e5ae9c633aa80f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538145"
 ---
 # <a name="ctransformoutputpinnotify-method"></a>CTransformOutputPin.Notify (método)
 
@@ -53,7 +53,7 @@ Puntero a la [**interfaz IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ib
 *Q* 
 </dt> <dd>
 
-[**Estructura**](/windows/win32/api/strmif/ns-strmif-quality) de calidad que contiene el mensaje de control de calidad.
+[**Estructura de**](/windows/win32/api/strmif/ns-strmif-quality) calidad que contiene el mensaje de control de calidad.
 
 </dd> </dl>
 
@@ -82,7 +82,7 @@ Este método llama al método [**CTransformFilter::AlterQuality del**](ctransfor
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Streams.h)</dt> </dl>                                                                                  |
+| Encabezado<br/>  | <dl> <dt>Transfrm.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 

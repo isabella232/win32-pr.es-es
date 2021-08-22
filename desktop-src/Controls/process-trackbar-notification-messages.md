@@ -1,36 +1,36 @@
 ---
-title: Cómo procesar mensajes de notificación de TrackBar
-description: Trackbars notifique a su ventana primaria de las acciones del usuario mediante el envío de un mensaje primario a WM \_ HSCROLL o WM \_ VSCROLL.
+title: Cómo procesar mensajes de notificación de la barra de seguimiento
+description: Las barras de seguimiento notifican a su ventana primaria las acciones del usuario enviando al elemento primario un mensaje \_ VSCROLL de WM HSCROLL \_ o WM.
 ms.assetid: 83F47A3E-E607-49C2-A8B5-BC8A321D90BB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c723ad1bebb5c9f3ec8c4e7aefdc658e0881aef6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e211a468c5c107a96fc6b28d12feed219799450828db07be87cd8887b5816bd1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103774544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540325"
 ---
-# <a name="how-to-process-trackbar-notification-messages"></a>Cómo procesar mensajes de notificación de TrackBar
+# <a name="how-to-process-trackbar-notification-messages"></a>Cómo procesar mensajes de notificación de la barra de seguimiento
 
-Trackbars notifique a su ventana primaria de las acciones del usuario mediante el envío de un mensaje primario a [**WM \_ HSCROLL**](wm-hscroll.md) o [**WM \_ VSCROLL**](wm-vscroll.md) .
+Las barras de seguimiento notifican a su ventana primaria las acciones del usuario mediante el envío de un mensaje [**\_ VSCROLL**](wm-vscroll.md) de [**WM \_ HSCROLL**](wm-hscroll.md) o WM al elemento primario.
 
-## <a name="what-you-need-to-know"></a>Aspectos que debe saber
+## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
 ### <a name="technologies"></a>Tecnologías
 
--   [Controles de Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Requisitos previos
+### <a name="prerequisites"></a>Prerrequisitos
 
 -   C/C++
--   Programación de la interfaz de usuario de Windows
+-   Windows Interfaz de usuario programación
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
-### <a name="process-trackbar-notification-messages"></a>Procesar mensajes de notificación de TrackBar
+### <a name="process-trackbar-notification-messages"></a>Procesar mensajes de notificación de la barra de seguimiento
 
-El siguiente ejemplo de código es una función a la que se llama cuando la ventana primaria de la barra de control recibe un mensaje de [**\_ HSCROLL de WM**](wm-hscroll.md) . La barra de error de este ejemplo tiene el estilo [**TBS \_ ENABLESELRANGE**](trackbar-control-styles.md) . La posición del control deslizante se compara con el intervalo de selección, y el control deslizante se mueve a la posición inicial o final del intervalo de selección cuando sea necesario.
+El ejemplo de código siguiente es una función a la que se llama cuando la ventana primaria de la barra de seguimiento recibe un [**mensaje \_ HSCROLL de WM.**](wm-hscroll.md) La barra de seguimiento de este ejemplo tiene el [**estilo \_ TBS ENABLESELRANGE.**](trackbar-control-styles.md) La posición del control deslizante se compara con el intervalo de selección y el control deslizante se mueve a la posición inicial o final del intervalo de selección cuando es necesario.
 
 
 ```
@@ -73,20 +73,20 @@ VOID WINAPI TBNotifications(
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Un cuadro de diálogo que contiene una barra de propiedades de estilo [**TBS \_ Vert**](trackbar-control-styles.md) puede utilizar esta función cuando recibe un mensaje de [**\_ VSCROLL de WM**](wm-vscroll.md) .
+Un cuadro de diálogo que contiene una barra de seguimiento [**de estilo \_ TBS VERT**](trackbar-control-styles.md) puede usar esta función cuando recibe un [**mensaje \_ VSCROLL de WM.**](wm-vscroll.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar controles TrackBar](using-trackbar-controls.md)
+[Usar controles Trackbar](using-trackbar-controls.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

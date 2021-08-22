@@ -1,11 +1,11 @@
 ---
-title: Propiedad de tiempo de actividad de IVMAccountant (VPCCOMInterfaces. h)
-description: Recupera el número de segundos que se ha estado ejecutando la máquina virtual.
+title: Propiedad IVMAccountant UpTime (VPCCOMInterfaces.h)
+description: Recupera el número de segundos que la máquina virtual se ha estado ejecutando.
 ms.assetid: 0c62d51b-fdf1-43f6-81d8-a5f0538c510f
 keywords:
-- Propiedad de tiempo de actividad Virtual PC
-- Propiedad de tiempo de actividad Virtual PC, interfaz IVMAccountant
-- Interfaz IVMAccountant Virtual PC, propiedad de tiempo de actividad
+- UpTime, propiedad Virtual PC
+- Propiedad UpTime Virtual PC , interfaz IVMAccountant
+- IVMAccountant interface Virtual PC , propiedad UpTime
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c496aa9c32d402dcc8e84bad5410ec7774d2a80a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9df0c7731ab50d1967d59eb7178fb6bcee008b6d45fed69ab66279ae3fd8beb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654385"
 ---
-# <a name="ivmaccountantuptime-property"></a>IVMAccountant:: tiempo de actividad (propiedad)
+# <a name="ivmaccountantuptime-property"></a>Propiedad IVMAccountant::UpTime
 
-\[Windows Virtual PC ya no está disponible para su uso a partir de Windows 8. En su lugar, use el [proveedor de WMI de Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows El equipo virtual ya no está disponible para su uso a Windows 8. En su lugar, use [el proveedor WMI de Hyper-V (V2).](/windows/desktop/HyperV_v2/windows-virtualization-portal)\]
 
-Recupera el número de segundos que se ha estado ejecutando la máquina virtual.
+Recupera el número de segundos que la máquina virtual se ha estado ejecutando.
 
 Esta propiedad es de solo lectura.
 
@@ -53,10 +53,10 @@ número de segundos.
 
 | Nombre o valor                                                                                                                                                    | Significado                                        |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <dl> <dt>S \_ Aceptar</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>       |
-| <dl> <dt>E \_ PUNTERO</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **null**.<br/>          |
-| <dl> <dt>S \_ FALSO</dt> <dt>1</dt> </dl>                    | La máquina virtual no se está ejecutando.<br/> |
-| <dl> <dt>DISP \_ . E \_ excepción</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/>   |
+| <dl> <dt>S \_ Ok</dt> <dt>0</dt> </dl>                       | La operación se realizó correctamente.<br/>       |
+| <dl> <dt>E \_ Puntero</dt> <dt>0x80004003</dt> </dl>         | El parámetro es **NULL.**<br/>          |
+| <dl> <dt>S \_ FALSE</dt> <dt>1</dt> </dl>                    | La máquina virtual no se está ejecutando.<br/> |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Se produjo un error inesperado.<br/>   |
 
 
 
@@ -64,14 +64,14 @@ número de segundos.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                     |
-| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
+| Fin de compatibilidad de cliente<br/>    | Windows 7<br/>                                                                          |
 | Producto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Encabezado<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMAccountant se define como 6376c067-7f57-4D63-b754-06e2e4f51d73<br/>              |
+| Header<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMAccountant se define como \_ 6376c067-7f57-4d63-b754-06e2e4f51d73<br/>              |
 
 
 

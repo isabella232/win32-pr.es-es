@@ -1,5 +1,5 @@
 ---
-description: Uri que representa el identificador de servicio.
+description: URI que representa el identificador de servicio.
 ms.assetid: ef676f02-56a7-4b3a-9ca3-e7fa3c494ec7
 title: Elemento ServiceID
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "119756745"
 ---
 # <a name="serviceid-element"></a>Elemento ServiceID
 
-Uri que representa el identificador de servicio.
+URI que representa el identificador de servicio.
 
 ## <a name="usage"></a>Uso
 

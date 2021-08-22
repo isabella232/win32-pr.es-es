@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentBackupDirectoryNotEmptyException'
-title: Constructor de EsentBackupDirectoryNotEmptyException
+description: 'Más información sobre: Constructor EsentBackupDirectoryNotEmptyException'
+title: Constructor EsentBackupDirectoryNotEmptyException
 TOCTitle: 'EsentBackupDirectoryNotEmptyException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentBackupDirectoryNotEmptyException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentbackupdirectorynotemptyexception.esentbackupdirectorynotemptyexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 202761c708e96ac28fb705ad19e53bad60cfe041
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10608d07dae0478a9e79d6813d2a7409bda746df7f917b05b2aed9ea86923055
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104082918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737425"
 ---
-# <a name="esentbackupdirectorynotemptyexception-constructor"></a>Constructor de EsentBackupDirectoryNotEmptyException
+# <a name="esentbackupdirectorynotemptyexception-constructor"></a>Constructor EsentBackupDirectoryNotEmptyException
 
 Inicializa una nueva instancia de la clase EsentBackupDirectoryNotEmptyException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentBackupDirectoryNotEmptyException()
 public EsentBackupDirectoryNotEmptyException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentBackupDirectoryNotEmptyException()
 
 [Miembros de EsentBackupDirectoryNotEmptyException](./esentbackupdirectorynotemptyexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

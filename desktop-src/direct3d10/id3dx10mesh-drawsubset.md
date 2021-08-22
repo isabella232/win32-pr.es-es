@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 8441bfe4c5d965733a40816ff2def1015f3eb79c
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 75723819ab7a4f82f25a68dfc2f0017e8b871130a8e0fbe70c939a95de221426
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753105"
 ---
 # <a name="id3dx10meshdrawsubset-method"></a>Método ID3DX10Mesh::D rawSubset
 
@@ -57,7 +57,7 @@ El valor devuelto es uno de los valores enumerados en Códigos de retorno de [Di
 
 ## <a name="remarks"></a>Comentarios
 
-Una tabla de atributos se usa para identificar las áreas de la malla que deben dibujarse con diferentes texturas, estados de representación, materiales, entre otras. Además, la aplicación puede usar la tabla de atributos para ocultar partes de una malla no dibujando un identificador de atributo determinado (AttribId) al dibujar el marco.
+Una tabla de atributos se usa para identificar las áreas de la malla que deben dibujarse con diferentes texturas, estados de representación, materiales, entre otras. Además, la aplicación puede usar la tabla de atributos para ocultar partes de una malla sin dibujar un identificador de atributo determinado (AttribId) al dibujar el marco.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ Una tabla de atributos se usa para identificar las áreas de la malla que deben 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

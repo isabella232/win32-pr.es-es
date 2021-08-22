@@ -1,41 +1,41 @@
 ---
-title: Habilitar y controlar la composición de DWM
-description: Las API de composición de Administrador de ventanas de escritorio (DWM) proporcionan varias funciones para establecer y consultar información básica que utiliza DWM.
+title: Habilitación y control de la composición de DWM
+description: Las ADMINISTRADOR DE VENTANAS DE ESCRITORIO de composición de Administrador de ventanas de escritorio (DWM) proporcionan varias funciones para establecer y consultar la información básica que usa DWM.
 ms.assetid: VS|winui|~\winui\desktopwindowmanager\overviews\dwm_composition_ovw.htm
 keywords:
-- Administrador de ventanas de escritorio (DWM), composición
-- DWM (Administrador de ventanas de escritorio), composición
+- Administrador de ventanas de escritorio (DWM),composition
+- DWM (Administrador de ventanas de escritorio),composition
 - composición
 - composición de escritorio
-- coloración
-- representación de regiones no cliente
-- Administrador de ventanas de escritorio (DWM), coloración
-- DWM (Administrador de ventanas de escritorio), coloración
-- Administrador de ventanas de escritorio (DWM), representación de regiones no cliente
-- DWM (Administrador de ventanas de escritorio), representación de regiones no cliente
-- Administrador de ventanas de escritorio (DWM), mensajería
-- DWM (Administrador de ventanas de escritorio), mensajería
+- Coloración
+- representación de regiones que no son de cliente
+- Administrador de ventanas de escritorio (DWM),coloración
+- DWM (Administrador de ventanas de escritorio),coloración
+- Administrador de ventanas de escritorio (DWM), representación de regiones que no son de cliente
+- DWM (Administrador de ventanas de escritorio), representación de regiones que no son de cliente
+- Administrador de ventanas de escritorio (DWM),messaging
+- DWM (Administrador de ventanas de escritorio),messaging
 - messaging
 ms.topic: article
 ms.date: 05/30/2019
-ms.openlocfilehash: 8d7654f479896002b4bc65df613fab9506caf2a5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e8c5df1778436e2cfe23df85483453b01fb80884adc9a6d8ff34955deb3e0c6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103903782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119741585"
 ---
-# <a name="enable-and-control-dwm-composition"></a>Habilitar y controlar la composición de DWM
+# <a name="enable-and-control-dwm-composition"></a>Habilitación y control de la composición de DWM
 
-Las API de composición de Administrador de ventanas de escritorio (DWM) proporcionan varias funciones para establecer y consultar información básica que utiliza DWM. Estas API permiten consultar y cambiar el estado de composición. Además, puede establecer y consultar la Directiva de representación para los distintos atributos de la ventana de DWM.
+Las ADMINISTRADOR DE VENTANAS DE ESCRITORIO de composición de Administrador de ventanas de escritorio (DWM) proporcionan varias funciones para establecer y consultar la información básica que usa DWM. Estas API permiten consultar y cambiar el estado de composición. Además, puede establecer y consultar la directiva de representación para distintos atributos de ventana de DWM.
 
-## <a name="retrieving-colorization-information"></a>Recuperar información de color
+## <a name="retrieving-colorization-information"></a>Recuperación de información de coloración
 
-El color de la región no cliente de una ventana viene determinado por el tema de color del sistema actual. El valor de coloración se proporciona a través de las API de DWM para permitir que la aplicación coincida con la interfaz de usuario del cliente con el tema de color del sistema.
+El color de la región que no es de cliente de una ventana viene determinado por el tema de color del sistema actual. El valor de coloración se proporciona a través de las API de DWM para permitir que la aplicación coincida con la interfaz de usuario del cliente con el tema de color del sistema.
 
-Para tener acceso a este valor de coloración y supervisar el cambio de color, utilice la función [**DwmGetColorizationColor**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmgetcolorizationcolor) y el mensaje [**WM_DWMCOLORIZATIONCOLORCHANGED**](wm-dwmcolorizationcolorchanged.md) .
+Para acceder a este valor de coloración y supervisar el cambio de color, use la [**función DwmGetColorizationColor**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmgetcolorizationcolor) y el [**WM_DWMCOLORIZATIONCOLORCHANGED**](wm-dwmcolorizationcolorchanged.md) mensaje.
 
-En este ejemplo se muestra cómo controlar el mensaje de cambio de color y cómo obtener acceso al nuevo color.
+En este ejemplo se muestra cómo controlar el mensaje de cambio de color y acceder al nuevo color.
 
 ```cpp
 ...
@@ -48,14 +48,14 @@ break;
 ...
 ```
 
-## <a name="controlling-non-client-region-rendering"></a>Controlar la representación de regiones no cliente
+## <a name="controlling-non-client-region-rendering"></a>Controlar la representación de regiones que no son de cliente
 
-Dos de los efectos visuales que DWM permite son la transparencia de la región no cliente de una ventana y los efectos de la transición. Es posible que la aplicación tenga que deshabilitar o volver a habilitar estos efectos por motivos de compatibilidad o estilo. Las funciones siguientes se usan para administrar el comportamiento de la transparencia y del efecto de transición.
+Dos de los efectos visuales que DWM habilita son la transparencia de la región no cliente de una ventana y los efectos de transición. Es posible que la aplicación tenga que deshabilitar o volver a habilitar estos efectos por motivos de compatibilidad o estilo. Las siguientes funciones se usan para administrar la transparencia y el comportamiento del efecto de transición.
 
 - [**DwmGetWindowAttribute**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmgetwindowattribute)
 - [**DwmSetWindowAttribute**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmsetwindowattribute)
 
-Para recuperar el estado actual de representación no cliente de la ventana de una aplicación, llame a [**DwmGetWindowAttribute**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmgetwindowattribute) con *dwAttribute* establecido en [**DWMWA_NCRENDERING_ENABLED**](/windows/desktop/api/dwmapi/ne-dwmapi-dwmwindowattribute). Como puede ver en la documentación de [**DWMWA_NCRENDERING_ENABLED**](/windows/desktop/api/dwmapi/ne-dwmapi-dwmwindowattribute), al pasar esa marca a **DwmGetWindowAttribute**, el valor del atributo recuperado es de tipo **bool**. Las distintas marcas hacen que **DwmGetWindowAttribute** devuelva valores de tipos diferentes. Aquí tienes un ejemplo de código.
+Para recuperar el estado de representación que no es de cliente actual para la ventana de una aplicación, llame a [**DwmGetWindowAttribute**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmgetwindowattribute) con *dwAttribute* establecido [**en DWMWA_NCRENDERING_ENABLED**](/windows/desktop/api/dwmapi/ne-dwmapi-dwmwindowattribute). Como puede ver en la documentación de [**DWMWA_NCRENDERING_ENABLED**](/windows/desktop/api/dwmapi/ne-dwmapi-dwmwindowattribute), al pasar esa marca a **DwmGetWindowAttribute**, el valor del atributo recuperado es de **tipo BOOL**. Las marcas diferentes hacen **que DwmGetWindowAttribute** devuelva valores de tipos diferentes. Aquí tienes un ejemplo de código.
 
 ```cpp
 BOOL isNCRenderingEnabled{ FALSE };
@@ -65,7 +65,7 @@ HRESULT hr = ::DwmGetWindowAttribute(hWnd,
     sizeof(isNCRenderingEnabled));
 ```
 
-En el ejemplo siguiente se muestra cómo usar la marca [**DWMWA_EXTENDED_FRAME_BOUNDS**](/windows/desktop/api/dwmapi/ne-dwmapi-dwmwindowattribute) con **DwmGetWindowAttribute** para recuperar el rectángulo de límites de marco extendido de una ventana. La documentación de esa marca nos indica que el valor del atributo recuperado es de tipo **Rect**.
+En este ejemplo siguiente se muestra cómo usar la marca [**DWMWA_EXTENDED_FRAME_BOUNDS**](/windows/desktop/api/dwmapi/ne-dwmapi-dwmwindowattribute) **con DwmGetWindowAttribute para** recuperar el rectángulo de límites de marco extendido de una ventana. La documentación de esa marca nos indica que el valor del atributo recuperado es de tipo **RECT.**
 
 ```cpp
 RECT extendedFrameBounds{ 0,0,0,0 };
@@ -76,11 +76,11 @@ HRESULT hr = ::DwmGetWindowAttribute(hWnd,
 ```
 
 > [!NOTE]
-> Siga el mismo patrón de programación que se mostró anteriormente al llamar a [**DwmGetWindowAttribute**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmgetwindowattribute) con marcas para los distintos atributos. El tema de enumeración [**DWMWINDOWATTRIBUTE**](/windows/desktop/api/Dwmapi/ne-dwmapi-dwmwindowattribute) indica, en la fila de cada marcador, el tipo de valor al que debe pasar un puntero en el parámetro *pvAttribute* para **DwmGetWindowAttribute**. El parámetro *cbAttribute* contiene el tamaño, en bytes, de ese objeto.
+> Siga el mismo patrón de programación mostrado anteriormente al llamar [**a DwmGetWindowAttribute con**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmgetwindowattribute) marcas para distintos atributos. El tema de enumeración [**DWMWINDOWATTRIBUTE**](/windows/desktop/api/Dwmapi/ne-dwmapi-dwmwindowattribute) indica, en la fila de cada marca, a qué tipo de valor debe pasar un puntero en el parámetro *pvAttribute* **para DwmGetWindowAttribute**. El *parámetro cbAttribute* contiene el tamaño, en bytes, de ese objeto.
 
-[**DwmSetWindowAttribute**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmsetwindowattribute) permite que la aplicación establezca la Directiva de representación de área no cliente. Esa función también determina el modo en que la aplicación debe controlar los efectos de transición de DWM.
+[**DwmSetWindowAttribute permite**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmsetwindowattribute) que la aplicación establezca la directiva de representación del área que no es de cliente. Esa función también determina cómo la aplicación debe controlar los efectos de transición de DWM.
 
-En el siguiente ejemplo se deshabilita la representación del área no cliente. Esto hace que se deshabiliten las llamadas anteriores a [DwmEnableBlurBehindWindow](/windows/desktop/api/dwmapi/nf-dwmapi-dwmenableblurbehindwindow) o [DwmExtendFrameIntoClientArea](/windows/desktop/api/dwmapi/nf-dwmapi-dwmextendframeintoclientarea) .
+En este ejemplo siguiente se deshabilita la representación del área que no es de cliente. Esto hace que las llamadas anteriores a [DwmEnableBlurBehindWindow](/windows/desktop/api/dwmapi/nf-dwmapi-dwmenableblurbehindwindow) o [a DwmExtendFrameIntoClientArea](/windows/desktop/api/dwmapi/nf-dwmapi-dwmextendframeintoclientarea) se deshabiliten.
 
 ```
 HRESULT DisableNCRendering(HWND hWnd)
@@ -104,28 +104,28 @@ HRESULT DisableNCRendering(HWND hWnd)
 }
 ```
 
-Además de controlar la representación del área no cliente, [**DwmSetWindowAttribute**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmsetwindowattribute) también puede controlar los efectos de transición de DWM. Puede establecer el comportamiento de transición mediante **DWMWA \_ Transitions \_ FORCEDISABLED** como el parámetro *dwAttribute* .
+Además de controlar la representación del área que no es de cliente, [**DwmSetWindowAttribute**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmsetwindowattribute) también puede controlar los efectos de transición de DWM. Puede establecer el comportamiento de transición mediante **DWMWA \_ TRANSITIONS \_ FORCEDISABLED como** parámetro *dwAttribute.*
 
 ## <a name="messages"></a>error de Hadoop
 
-Los mensajes siguientes proporcionan la notificación de eventos de DWM. Estos mensajes se pueden usar para supervisar cambios, como cambios de estado de composición y cambios de tema de color del sistema.
+Los mensajes siguientes proporcionan notificación de eventos DWM. Estos mensajes se pueden usar para supervisar cambios como cambios de estado de composición y cambios de tema de color del sistema.
 
-- [**DWMCOLORIZATIONCOLORCHANGED de WM \_**](wm-dwmcolorizationcolorchanged.md)
-- [**DWMCOMPOSITIONCHANGED de WM \_**](wm-dwmcompositionchanged.md)
-- [**DWMNCRENDERINGCHANGED de WM \_**](wm-dwmncrenderingchanged.md)
-- [**DWMWINDOWMAXIMIZEDCHANGE de WM \_**](wm-dwmwindowmaximizedchange.md)
+- [**WM \_ DWMCOLORIZATIONCOLORCHANGED**](wm-dwmcolorizationcolorchanged.md)
+- [**WM \_ DWMCOMPOSITIONCHANGED**](wm-dwmcompositionchanged.md)
+- [**WM \_ DWMNCRENDERINGCHANGED**](wm-dwmncrenderingchanged.md)
+- [**WM \_ DWMWINDOWMAXIMIZEDCHANGE**](wm-dwmwindowmaximizedchange.md)
 
-## <a name="disabling-dwm-composition-windows7-and-earlier"></a>Deshabilitar la composición de DWM (Windows 7 y versiones anteriores)
+## <a name="disabling-dwm-composition-windows-7-and-earlier"></a>Deshabilitar la composición de DWM (Windows 7 y versiones anteriores)
 
 > [!WARNING]
 > La información de esta sección solo se aplica a Windows 7 y sistemas anteriores.
 
-Dado que DWM usa la unidad de procesamiento de gráficos (GPU) para la composición del escritorio, es posible que la aplicación tenga que deshabilitar DWM por compatibilidad. Las aplicaciones que tienen control total sobre el escritorio, como los juegos que se ejecutan en modo de pantalla completa, deben determinar si DWM está habilitado y, si es así, deshabilitarlo. Para ello, se necesitan dos funciones.
+Dado que DWM usa la unidad de procesamiento gráfico (GPU) para la composición de escritorio, es posible que la aplicación tenga que deshabilitar DWM por compatibilidad. Las aplicaciones que toman el control total del escritorio, como los juegos que se ejecutan en modo de pantalla completa, deben determinar si el DWM está habilitado y, si es así, deshabilitarlo. Para ello, se necesitan dos funciones.
 
 - [**DwmIsCompositionEnabled**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmiscompositionenabled)
 - [**DwmEnableComposition**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmenablecomposition)
 
-Una llamada a [**DwmEnableComposition**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmenablecomposition) con *FEnable* establecido en **DWM \_ EC \_ DISABLECOMPOSITION** deshabilita la composición de DWM hasta que el proceso de llamada se ha cerrado o se ha vuelto a habilitar la composición mediante una llamada a **DwmEnableComposition** con *fEnable* establecido en **DWM \_ EC \_ ENABLECOMPOSITION**. La composición DWM se reinicia automáticamente en cuanto todas las aplicaciones que tienen la composición deshabilitada se apagan o se vuelven a habilitar manualmente mediante una llamada a **DwmEnableComposition**.
+Una llamada a [**DwmEnableComposition**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmenablecomposition) con *fEnable* establecido en **DWM \_ EC \_ DISABLECOMPOSITION** deshabilita la composición de DWM hasta que se haya cerrado el proceso de llamada o se haya habilitado de nuevo la composición llamando a **DwmEnableComposition** con *fEnable* establecido en **DWM \_ EC \_ ENABLECOMPOSITION**. La composición de DWM se reinicia automáticamente en cuanto todas las aplicaciones que tienen deshabilitada la composición se han apagado o se ha habilitado manualmente mediante una llamada a **DwmEnableComposition**.
 
 > [!NOTE]  
-> El DWM deshabilita automáticamente la composición cuando una aplicación intenta dibujar directamente en la superficie de visualización principal. La composición se deshabilitará hasta que la superficie del dispositivo principal sea publicada por esa aplicación.
+> DwM deshabilita automáticamente la composición cuando una aplicación intenta dibujar directamente en la superficie de presentación principal. La composición se deshabilitará hasta que esa aplicación libera la superficie del dispositivo principal.

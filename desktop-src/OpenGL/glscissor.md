@@ -1,9 +1,9 @@
 ---
-title: función glScissor (GL. h)
-description: La función glScissor define el cuadro tijeras.
+title: Función glScissor (Gl.h)
+description: La función glScissor define el cuadro de diálogo.
 ms.assetid: c06a1d20-bf7b-4283-b0fe-8bd80bece4ce
 keywords:
-- glScissor (función) OpenGL
+- Función glScissor OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e18559bb30260dcb4285980d8dc75642a7c9ec6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fafefaaaa3315679af2900808f581324040512816dd2211a0250375c36f824dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104493024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777825"
 ---
-# <a name="glscissor-function"></a>glScissor función)
+# <a name="glscissor-function"></a>Función glScissor
 
-La función **glScissor** define el cuadro tijeras.
+La **función glScissor** define el cuadro de diálogo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,28 +46,28 @@ void WINAPI glScissor(
 *x* 
 </dt> <dd>
 
-La coordenada x (eje vertical) de la esquina inferior izquierda del cuadro de tijeras.
+Coordenada x (eje vertical) de la esquina inferior izquierda del cuadro de resardenado.
 
 </dd> <dt>
 
 *y* 
 </dt> <dd>
 
-Coordenada y (eje horizontal) de la esquina inferior izquierda del cuadro de tijeras. Juntos, x e y especifican la esquina inferior izquierda del cuadro de tijeras. Inicialmente (0,0).
+Coordenada y (eje horizontal) de la esquina inferior izquierda del cuadro de mosaico. Juntos, x e y especifican la esquina inferior izquierda del cuadro de reanquis. Inicialmente (0,0).
 
 </dd> <dt>
 
 *width* 
 </dt> <dd>
 
-Ancho del cuadro de tijera.
+Ancho del cuadro de diálogo.
 
 </dd> <dt>
 
 *height* 
 </dt> <dd>
 
-Alto del cuadro de tijeras. Cuando un contexto OpenGL se adjunta *primero* a una ventana, el *ancho* y el *alto* se establecen en las dimensiones de esa ventana.
+Alto del cuadro de resalte. Cuando un contexto OpenGL se adjunta por  *primera* vez a una ventana, *el* ancho y el alto se establecen en las dimensiones de esa ventana.
 
 </dd> </dl>
 
@@ -77,30 +77,30 @@ Esta función no devuelve ningún valor.
 
 ## <a name="error-codes"></a>Códigos de error
 
-La función [**glGetError**](glgeterror.md) puede recuperar el siguiente código de error.
+La función [**glGetError**](glgeterror.md) puede recuperar el código de error siguiente.
 
 
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_valor no válido de GL \_**</dt> </dl>     | El *ancho* o el *alto* era negativo.<br/>                                                                                   |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**VALOR \_ NO VÁLIDO DE \_ GL**</dt> </dl>     | El *ancho o* alto *era* negativo.<br/>                                                                                   |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glScissor** define un rectángulo, denominado el cuadro tijeras, en coordenadas de ventana. Los dos primeros parámetros, *x* e *y*, especifican la esquina inferior izquierda del cuadro. Los parámetros de *ancho* y *alto* especifican el ancho y el alto del cuadro.
+La **función glScissor** define un rectángulo, denominado cuadro de textura, en coordenadas de ventana. Los dos primeros parámetros, *x* *e y*, especifican la esquina inferior izquierda del cuadro. Los *parámetros width* y *height* especifican el ancho y alto del cuadro.
 
-La prueba de tijera está habilitada y deshabilitada mediante [**glEnable**](glenable.md) y **glDisable** con la prueba de tijeras GL de argumento \_ \_ . Mientras la prueba de tijeras está habilitada, solo se pueden modificar los píxeles que se encuentran dentro del cuadro de tijera. Las coordenadas de la ventana tienen valores enteros en las esquinas compartidas de fotogramas píxeles, de modo que **glScissor**(0, 0, 1, 1) permite que solo se modifique el píxel inferior izquierdo de la ventana y **glScissor**(0,0, 0, 0) no permite la modificación en todos los píxeles de la ventana.
+La prueba de desenlace está habilitada y deshabilitada mediante [**glEnable**](glenable.md) y **glDisable** con el argumento GL \_ DE PRUEBA DE DESERCIÓN. \_ Mientras se habilita la prueba de sitiador, los comandos de dibujo solo pueden modificar los píxeles que se encuentran dentro del cuadro de verificación. Las coordenadas de ventana tienen valores enteros en las esquinas compartidas de píxeles del búfer de fotogramas, por lo que **glScissor**(0,0,1,1) solo permite modificar el píxel inferior izquierdo de la ventana y **glScissor**(0,0,0,0) no permite la modificación de todos los píxeles de la ventana.
 
-Cuando la prueba de tijeras está deshabilitada, es como si el cuadro de tijeras incluye toda la ventana.
+Cuando se deshabilita la prueba de incoerte, es como si el cuadro de verificación incluyese toda la ventana.
 
-Las siguientes funciones recuperan información relacionada con **glScissor**:
+Las siguientes funciones recuperan información relacionada **con glScissor**:
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) cuadro con el \_ argumento \_
+[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ ALCTE BOX \_
 
-[**glIsEnabled**](glisenabled.md) con argumento de la \_ prueba de tijeras GL \_
+[**glIsEnabled con**](glisenabled.md) el argumento GL \_ DE PRUEBA DE INSERTE \_
 
 ## <a name="requirements"></a>Requisitos
 
@@ -110,8 +110,8 @@ Las siguientes funciones recuperan información relacionada con **glScissor**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

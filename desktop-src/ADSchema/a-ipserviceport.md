@@ -1,10 +1,10 @@
 ---
-title: atributo ipServicePort
-description: Contiene la sección del mapa de servicios que especifica el puerto en el que el servicio UNIX está disponible.
+title: Atributo ipServicePort
+description: Contiene la sección del mapa de servicios que especifica el puerto en el que el UNIX servicio está disponible.
 ms.assetid: b3bb0bc6-b99f-4873-b1b0-da887468df09
 ms.tgt_platform: multiple
 keywords:
-- ipServicePort esquema de AD de atributos
+- Esquema de AD del atributo ipServicePort
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3aa8bf801fc33d2c8ab29fd1f41185f60b965ebd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8670c8da9dc47340c7beda9b4e3f7f9eec380e6c5465d8400c7a695378b8f0e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119924905"
 ---
-# <a name="ipserviceport-attribute"></a>atributo ipServicePort
+# <a name="ipserviceport-attribute"></a>Atributo ipServicePort
 
-Contiene la sección del mapa de servicios que especifica el puerto en el que el servicio UNIX está disponible.
+Contiene la sección del mapa de servicios que especifica el puerto en el que el UNIX servicio está disponible.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
 | CN                | ipServicePort                        |
-| Nombre para mostrar de LDAP | ipServicePort                        |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| Ldap-Display-Name | ipServicePort                        |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.15                     |
-| System-ID-GUID    | ff2daebf-f463-495a-8405-3e483641eaa2 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | ff2daebf-f463-495a-8405-3e483641eaa2 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -52,13 +52,13 @@ Contiene la sección del mapa de servicios que especifica el puerto en el que el
 
 | Entrada | Value |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | False                                       |
-| Tiene un único valor       | True                                        |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Verdadero                                        |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -73,13 +73,13 @@ Contiene la sección del mapa de servicios que especifica el puerto en el que el
 
 | Entrada | Value |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | False                                       |
-| Tiene un único valor       | True                                        |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Verdadero                                        |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -94,13 +94,13 @@ Contiene la sección del mapa de servicios que especifica el puerto en el que el
 
 | Entrada | Value |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | False                                       |
-| Tiene un único valor       | True                                        |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Verdadero                                        |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -115,13 +115,13 @@ Contiene la sección del mapa de servicios que especifica el puerto en el que el
 
 | Entrada | Value |
 |------------------------|---------------------------------------------|
-| Identificador de vínculo                | \-                                          |
+| Id. de vínculo                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | False                                       |
-| Tiene un único valor       | True                                        |
-| Está indexado             | False                                       |
-| En el catálogo global      | False                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                |
+| System-Only            | Falso                                       |
+| Es de un solo valor       | Verdadero                                        |
+| Está indexado             | Falso                                       |
+| En el catálogo global      | Falso                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |

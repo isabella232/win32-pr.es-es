@@ -70,7 +70,7 @@ Este método invalida el [**método CBaseOutputPin::Active.**](cbaseoutputpin-ac
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

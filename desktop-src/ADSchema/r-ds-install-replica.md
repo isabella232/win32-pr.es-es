@@ -1,10 +1,10 @@
 ---
-title: 'DS-install: réplica extendida a la derecha'
+title: Derecho extendido DS-Install-Replica
 description: Derecho extendido necesario para realizar una instalación de réplica.
 ms.assetid: a13b990b-ad8b-4683-aea5-e9eb203e6ced
 ms.tgt_platform: multiple
 keywords:
-- DS-install-réplica extensión de AD derecha extendida
+- Esquema de AD extendido DS-Install-Replica
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b13675e0b0b03530a2eb9ace1a06573cca970ef
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f96ea0bff8aaeff8b08db06fdfd67dcc2acec9962a41ebc605034a6520cffe59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104422725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119548825"
 ---
-# <a name="ds-install-replica-extended-right"></a>DS-install: réplica extendida a la derecha
+# <a name="ds-install-replica-extended-right"></a>Derecho extendido DS-Install-Replica
 
 Derecho extendido necesario para realizar una instalación de réplica.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | DS-install-réplica                   |
+| CN           | DS-Install-Replica                   |
 | Display-Name | Agregar o quitar réplica en el dominio         |
 | Rights-GUID  | 9923a32a-3607-11d2-b9be-0000f87a36b2 |
 
@@ -38,7 +38,7 @@ Derecho extendido necesario para realizar una instalación de réplica.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -48,10 +48,10 @@ Derecho extendido necesario para realizar una instalación de réplica.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 49                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 49                                           |
 
 
 
@@ -61,19 +61,19 @@ Derecho extendido necesario para realizar una instalación de réplica.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 49                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 49                                           |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 49                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 49                                           |
 
 
 
@@ -83,8 +83,8 @@ Derecho extendido necesario para realizar una instalación de réplica.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 49                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 49                                           |
 
 
 
@@ -94,8 +94,8 @@ Derecho extendido necesario para realizar una instalación de réplica.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 49                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 49                                           |
 
 
 
@@ -105,8 +105,8 @@ Derecho extendido necesario para realizar una instalación de réplica.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 49                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 49                                           |
 
 
 
@@ -116,8 +116,8 @@ Derecho extendido necesario para realizar una instalación de réplica.
 
 | Entrada | Value |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Dominio DNS**](c-domaindns.md)<br/> |
-| Localización: ID. de presentación | 49                                           |
+| Applies-To              | [**DNS de dominio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 49                                           |
 
 
 

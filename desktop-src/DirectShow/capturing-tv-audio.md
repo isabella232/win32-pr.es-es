@@ -4,18 +4,18 @@ ms.assetid: c0c62a8e-ab16-4617-936c-b64e6e3865b4
 title: Captura de audio de TV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 138ce631aedf12ddfb52be92d08ffb47da0cbdec
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 1d699533480bdeaaa528e362c0773e9df8100fda3dc2195a65c055ae7f7d5bb1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105666129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119641015"
 ---
 # <a name="capturing-tv-audio"></a>Captura de audio de TV
 
-Para capturar audio de televisión analógica en un archivo, use el [filtro de captura de audio](audio-capture-filter.md). Use el enumerador de dispositivos del sistema para crear el filtro de captura de audio. Puede haber varios dispositivos de captura de audio en el sistema del usuario. el usuario debe seleccionar el dispositivo que representa la tarjeta de sonido.
+Para capturar audio de la televisión análoga a un archivo, use el [filtro de captura de audio](audio-capture-filter.md). Use el enumerador de dispositivos del sistema para crear el filtro de captura de audio. Puede haber varios dispositivos de captura de audio en el sistema del usuario. El usuario debe seleccionar el dispositivo que representa la tarjeta de sonido.
 
-Conecte el PIN de salida de la captura de audio al filtro MUX:
+Conectar el pin de salida de captura de audio al filtro mux:
 
 
 ```C++
@@ -29,7 +29,7 @@ hr = pBuild->RenderStream(
 
 
 
-No es necesario que los pin de entrada estén conectados a nada. Cada pin de entrada representa una entrada física en el dispositivo de captura de audio. Use la interfaz [**IAMAudioInputMixer**](/windows/desktop/api/Strmif/nn-strmif-iamaudioinputmixer) para habilitar la entrada que recibe la secuencia de audio desde el sintonizador. Los pin de entrada se identifican por su nombre, como "línea en" o "audio de CD". Desafortunadamente, los nombres pueden cambiar de un dispositivo a otro. Además, las distintas tarjetas sintonizadoras de TV usan entradas diferentes para la tarjeta de sonido. Por lo tanto, depende del usuario identificar la entrada que se va a usar.
+Los pines de entrada no tienen que estar conectados a nada. Cada pin de entrada representa una entrada física en el dispositivo de captura de audio. Use la [**interfaz IAMAudioInputMixer**](/windows/desktop/api/Strmif/nn-strmif-iamaudioinputmixer) para habilitar la entrada que recibe la secuencia de audio del tuner. Los pines de entrada se identifican por nombre, como "Line In" o "CD Audio". Desafortunadamente, los nombres pueden cambiar de un dispositivo al siguiente. Además, las distintas tarjetas de tuner de TV usan diferentes entradas en la tarjeta de sonido. Por lo tanto, es el usuario el que debe identificar qué entrada usar.
 
 
 ```C++
@@ -66,7 +66,7 @@ pEnum->Release();
 
 <dl> <dt>
 
-[Audio analógico de televisión](analog-television-audio.md)
+[Audio de televisión análoga](analog-television-audio.md)
 </dt> <dt>
 
 [Captura de audio](audio-capture.md)

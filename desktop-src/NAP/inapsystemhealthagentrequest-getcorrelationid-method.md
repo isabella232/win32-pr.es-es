@@ -1,6 +1,6 @@
 ---
 title: Método INapSystemHealthAgentRequest GetCorrelationId (NapSystemHealthAgent.h)
-description: Los agentes de mantenimiento del sistema usan para correlacionar soH y soH-responses.
+description: Lo usan los agentes de mantenimiento del sistema para correlacionar soH y soH-responses.
 ms.assetid: 220db71a-31d7-45a7-a8e7-ddb4955d546e
 keywords:
 - Método NAP de GetCorrelationId
@@ -84,7 +84,7 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

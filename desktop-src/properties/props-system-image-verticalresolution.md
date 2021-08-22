@@ -1,17 +1,17 @@
 ---
 description: Indica el número de píxeles por unidad de resolución en el alto de la imagen.
 ms.assetid: 51d71fa6-8057-46b6-8427-187a5e69f1f4
-title: System. Image. VerticalResolution
+title: System.Image.VerticalResolution
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f213928068d9e935cdbf408c9cedd984d692415b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5fb04ca0cb52f9bf2ada6b1f3e86ca8d5f64975f4f66c6a0eec14006a4c9769
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706259"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553845"
 ---
-# <a name="systemimageverticalresolution"></a>System. Image. VerticalResolution
+# <a name="systemimageverticalresolution"></a>System.Image.VerticalResolution
 
 Indica el número de píxeles por unidad de resolución en el alto de la imagen.
 
@@ -46,9 +46,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -63,7 +63,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -75,7 +75,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -93,7 +93,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

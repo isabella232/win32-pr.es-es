@@ -1,11 +1,11 @@
 ---
 title: Método ID3DX11EffectUnorderedAccessViewVariable GetUnorderedAccessView (D3dx11effect.h)
-description: Obtenga una vista unordered-access-view.
+description: Obtiene una vista unordered-access-view.
 ms.assetid: 46f61c4f-b3ee-4058-99b9-a43ca6944fb2
 keywords:
 - Método GetUnorderedAccessView Direct3D 11
-- Método GetUnorderedAccessView Direct3D 11 , interfaz ID3DX11EffectUnorderedAccessViewVariable
-- Interfaz ID3DX11EffectUnorderedAccessViewVariable Direct3D 11 , Método GetUnorderedAccessView
+- Método GetUnorderedAccessView Direct3D 11, interfaz ID3DX11EffectUnorderedAccessViewVariable
+- Id3DX11EffectUnorderedAccessViewVariable interface Direct3D 11 , GetUnorderedAccessView (método)
 topic_type:
 - apiref
 api_name:
@@ -26,7 +26,7 @@ ms.locfileid: "119676785"
 ---
 # <a name="id3dx11effectunorderedaccessviewvariablegetunorderedaccessview-method"></a>Método ID3DX11EffectUnorderedAccessViewVariable::GetUnorderedAccessView
 
-Obtenga una vista unordered-access-view.
+Obtiene una vista unordered-access-view.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,7 +61,7 @@ Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graph
 ## <a name="remarks"></a>Comentarios
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -72,11 +72,11 @@ Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graph
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

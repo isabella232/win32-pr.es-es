@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DNS-RFC5011-Key-rollovers
-description: Atributo que define si la zona DNS debe mantenerse o no mediante procedimientos de sustitución de claves definidos en RFC 5011.
+title: Atributo ms-DNS-RFC5011-Key-Rollovers
+description: Atributo que define si se debe mantener o no la zona DNS mediante los procedimientos de suversión de claves definidos en RFC 5011.
 ms.assetid: 49ad29bb-63ea-4c69-9782-65c94d60569d
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-DNS-RFC5011-Key-rollovers
-- msDN-RFC5011KeyRollovers atributo AD Schema
+- ms-DNS-RFC5011-Key-Rollovers attribute AD Schema
+- msDNS-RFC5011 Esquema de AD del atributoKeyRollovers
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f07300f1fe0696e3f53b5db9380126f280dd1fb3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c9b0eead66ec13ca1f003f64eb0ffb0238b430c8c74576884bd54dd8896596e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552995"
 ---
-# <a name="ms-dns-rfc5011-key-rollovers-attribute"></a>atributo MS-DNS-RFC5011-Key-rollovers
+# <a name="ms-dns-rfc5011-key-rollovers-attribute"></a>Atributo ms-DNS-RFC5011-Key-Rollovers
 
-Atributo que define si la zona DNS debe mantenerse o no mediante procedimientos de sustitución de claves definidos en RFC 5011.
+Atributo que define si se debe mantener o no la zona DNS mediante los procedimientos de suversión de claves definidos en RFC 5011.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DNS-RFC5011-Key-rollovers         |
-| Nombre para mostrar de LDAP | msDN: RFC5011KeyRollovers            |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DNS-RFC5011-Key-Rollovers         |
+| Ldap-Display-Name | msDNS-RFC5011KeyRollovers            |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2135              |
-| System-ID-GUID    | 27d93c40-065a-43c0-bdd8-cdf2c7d120aa |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | 27d93c40-065a-43c0-bdd8-cdf2c7d120aa |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -50,13 +50,13 @@ Atributo que define si la zona DNS debe mantenerse o no mediante procedimientos 
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000008                               |

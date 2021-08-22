@@ -1,5 +1,5 @@
 ---
-title: D1111 usar capa cuando el recorte es suficiente
+title: D1111 usar capa cuando el clip es suficiente
 ms.assetid: 07fe3c66-15be-408b-a30b-a7f52919c058
 description: Se usa una capa con una máscara de opacidad NULL, una opacidad de 1,0 y una máscara geométrica rectangular alineada en el eje. Push/Pop Clip API debe lograr los mismos resultados con un mayor rendimiento.
 keywords:
@@ -20,7 +20,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119758105"
 ---
-# <a name="d1111-using-layer-when-clip-is-sufficient"></a>D1111: Usar la capa cuando el recorte es suficiente
+# <a name="d1111-using-layer-when-clip-is-sufficient"></a>D1111: Usar la capa cuando el clip es suficiente
 
 PERF: se usa una capa con una máscara de opacidad **NULL,** una opacidad de 1,0 y una máscara geométrica rectangular alineada en el eje. Push/Pop Clip API debe lograr los mismos resultados con un mayor rendimiento.
 
@@ -45,7 +45,7 @@ Dirección de la interfaz.
 
 ## <a name="examples"></a>Ejemplos
 
-El código siguiente usa [**PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) y [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) cuando la capa contiene solo un primitivo (un rectángulo) y los campos de la estructura DE PARÁMETROS DE CAPA [**D2D1 \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) se establecen en valores predeterminados. Para obtener los valores predeterminados de la estructura DE PARÁMETROS **\_ DE CAPA \_ D2D1,** vea [**LayerParameter**](/windows/desktop/api/d2d1helper/nf-d2d1helper-layerparameters).
+El código siguiente usa [**PushLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushlayer(constd2d1_layer_parameters__id2d1layer)) y [**PopLayer**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-poplayer) cuando la capa contiene solo un primitivo (un rectángulo) y los campos de la estructura DE PARÁMETROS DE CAPA [**D2D1 \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) se establecen en valores predeterminados. Para obtener los valores predeterminados de la estructura **D2D1 \_ LAYER \_ PARAMETERS,** vea [**LayerParameter**](/windows/desktop/api/d2d1helper/nf-d2d1helper-layerparameters).
 
 
 ```C++

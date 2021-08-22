@@ -1,10 +1,10 @@
 ---
-title: Sintaxis de String (distingue mayúsculas de minúsculas)
-description: Una cadena que distingue entre mayúsculas y minúsculas.
+title: Sintaxis de cadena (distingue mayúsculas de minúsculas)
+description: Cadena que distingue mayúsculas de minúsculas.
 ms.assetid: 50a26c4d-f92b-4df9-991b-78871a337e2a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de sintaxis de cadena (distingue mayúsculas de minúsculas)
+- Esquema de AD de sintaxis string(distingue mayúsculas de minúsculas)
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33d9d0c9ace65e7102065e014ac4277c52f1ba83
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5a75fd1a8ee3b82251cdcbdb6e84a9b878590c3dbcdb175d41476ed4e8d527c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702515"
 ---
-# <a name="stringcase-sensitive-syntax"></a>Sintaxis de String (distingue mayúsculas de minúsculas)
+# <a name="stringcase-sensitive-syntax"></a>Sintaxis de cadena (distingue mayúsculas de minúsculas)
 
-Una cadena que distingue entre mayúsculas y minúsculas.
+Cadena que distingue mayúsculas de minúsculas.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |--------------|------------------------------------------------------------------------|
 | Nombre         | Cadena (distingue mayúsculas de minúsculas)                                                 |
-| IDENTIFICADOR de sintaxis    | 2.5.5.3                                                                |
-| IDENTIFICADOR DE OM        | 27                                                                     |
-| Tipo MAPI    | TSTRING                                                                |
-| Tipo ADS     | ninguno                                                                   |
-| Tipo Variant | ninguno                                                                   |
-| Tipo de SDS     | [System.String](/dotnet/api/system.string) |
+| Identificador de sintaxis    | 2.5.5.3                                                                |
+| Id. de OM        | 27                                                                     |
+| Tipo DE MAPI    | TSTRING                                                                |
+| ADS Type     | ninguno                                                                   |
+| Tipo de variante | ninguno                                                                   |
+| Tipo sds     | [System.String](/dotnet/api/system.string) |
 
 
 

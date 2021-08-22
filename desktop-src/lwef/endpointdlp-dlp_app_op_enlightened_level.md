@@ -1,5 +1,5 @@
 ---
-description: Asocia una acción de prevención de pérdida de datos (DLP) de punto de conexión con un nivel de cumplimiento.
+description: Asocia una acción de prevención de pérdida de datos (DLP) de punto de conexión a un nivel de cumplimiento.
 title: Estructura DLP_APP_OP_ENLIGHTENED_LEVEL (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
@@ -21,7 +21,7 @@ ms.locfileid: "119610485"
 ---
 # <a name="dlp_app_op_enlightened_level-structure"></a>DLP_APP_OP_ENLIGHTENED_LEVEL estructura
 
-Asocia una acción de prevención de pérdida de datos (DLP) de punto de conexión con un nivel de cumplimiento.
+Asocia una acción de prevención de pérdida de datos (DLP) de punto de conexión a un nivel de cumplimiento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,7 +41,7 @@ typedef struct _DLP_APP_OP_ENLIGHTENED_LEVEL{
 *Operación* \[ En\]
 </dt> <dd>
 
-Valor de la enumeración [DlpActionType que](endpointdlp-dlpactiontype.md) especifica el tipo de acción DLP del punto de conexión.
+Valor de la enumeración [DlpActionType](endpointdlp-dlpactiontype.md) que especifica el tipo de acción DLP del punto de conexión.
 
 </dd> </dl>
 
@@ -60,13 +60,13 @@ Valor de [DlpAppEnforceLevel que](endpointdlp-dlpappenforcelevel.md) especifica 
 
 ## <a name="remarks"></a>Comentarios
 
-Pase una matriz de estas estructuras a [DlpInitializeEnforcementMode para](endpointdlp-dlpinitializeenforcementmode.md) establecer el modo de cumplimiento de un conjunto de operaciones DLP de punto de conexión.
+Pase una matriz de estas estructuras a [DlpInitializeEnforcementMode](endpointdlp-dlpinitializeenforcementmode.md) para establecer el modo de cumplimiento de un conjunto de operaciones DLP de punto de conexión.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito          |    Valor                   |
+| Requisito          |    Value                   |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, versión 1809 (10.0; Compilación 17763)           |
 

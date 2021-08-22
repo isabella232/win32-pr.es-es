@@ -1,74 +1,74 @@
 ---
 description: Describe cómo usar superposiciones de hardware en Direct3D 9.
 ms.assetid: fa9d5bf5-4c0f-471a-b639-d329b0cd89a4
-title: Compatibilidad con la superposición de hardware
+title: Compatibilidad con superposición de hardware
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: adcae33cdf55de59bdcd074829d52b4c1c43ea5f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f537c91bc217344206c0a23cf5ca8a14254a9c983e4ae550e96457bbb055e5d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119600405"
 ---
-# <a name="hardware-overlay-support"></a>Compatibilidad con la superposición de hardware
+# <a name="hardware-overlay-support"></a>Compatibilidad con superposición de hardware
 
-Una superposición de hardware es un área dedicada de memoria de vídeo que se puede superponer en la superficie principal. No se realiza ninguna copia cuando se muestra la superposición. La operación de superposición se realiza en el hardware, sin modificar los datos en la superficie principal.
+Una superposición de hardware es un área dedicada de memoria de vídeo que se puede superponer en la superficie principal. No se realiza ninguna copia cuando se muestra la superposición. La operación de superposición se realiza en hardware, sin modificar los datos de la superficie principal.
 
-El uso de superposiciones de hardware para la reproducción de vídeo era habitual en versiones anteriores de Windows, ya que las superposiciones son eficientes para el contenido de vídeo con una velocidad de fotogramas alta. A partir de Windows 7, Direct3D 9 admite superposiciones de hardware. Esta compatibilidad está pensada principalmente para la reproducción de vídeo y difiere en algunos aspectos de las API de DirectDraw anteriores:
+El uso de superposiciones de hardware para la reproducción de vídeo era común en versiones anteriores de Windows, ya que las superposiciones son eficaces para el contenido de vídeo con una alta velocidad de fotogramas. A partir Windows 7, Direct3D 9 admite superposiciones de hardware. Esta compatibilidad está pensada principalmente para la reproducción de vídeo y difiere en algunos aspectos de las API anteriores de DirectDraw:
 
--   La superposición no se puede reducir, reflejar o Desentrelazar.
+-   La superposición no se puede acotar, reflejar o desenlazar.
 -   No se admiten las claves de color de origen ni la combinación alfa.
--   Las superposiciones se pueden ajustar si el hardware de superposición lo admite. De lo contrario, no se admite la ampliación. En la práctica, no todos los controladores de gráficos admiten la ampliación.
+-   Las superposiciones se pueden extender si el hardware de superposición lo admite. De lo contrario, no se admite el stretching. En la práctica, no todos los controladores de gráficos admiten el stretching.
 -   Cada dispositivo admite como máximo una superposición.
--   La superposición se realiza mediante una clave de color de destino, pero el tiempo de ejecución de Direct3D selecciona automáticamente el color y dibuja el rectángulo de destino. Direct3D realiza automáticamente el seguimiento de la posición de la ventana y actualiza la posición de la superposición cada vez que se llama a **PresentEx** .
+-   La superposición se realiza mediante una clave de color de destino, pero el tiempo de ejecución de Direct3D selecciona automáticamente el color y dibuja el rectángulo de destino. Direct3D realiza un seguimiento automático de la posición de la ventana y actualiza la posición de superposición cada vez que se llama a **PresentEx.**
 
-### <a name="creating-a-hardware-overlay-surface"></a>Crear una superficie de superposición de hardware
+### <a name="creating-a-hardware-overlay-surface"></a>Creación de una superficie de superposición de hardware
 
-Para consultar la compatibilidad con la superposición, llame a **IDirect3D9:: GetDeviceCaps**. Si el controlador admite la superposición de hardware, la marca de **\_ superposición D3DCAPS** se establece en **D3DCAPS9. Elemento Cap** .
+Para consultar la compatibilidad con la superposición, llame **a IDirect3D9::GetDeviceCaps**. Si el controlador admite la superposición de hardware, la marca OVERLAY de **\_ D3DCAPS** se establece en **D3DCAPS9. Miembro Caps.**
 
-Para averiguar si un formato de superposición específico es compatible con un modo de presentación determinado, llame a [**IDirect3D9ExOverlayExtension:: CheckDeviceOverlayType**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9exoverlayextension-checkdeviceoverlaytype).
+Para averiguar si se admite un formato de superposición específico para un modo de presentación determinado, llame a [**IDirect3D9ExOverlayExtension::CheckDeviceOverlayType**](/windows/desktop/api/d3d9/nf-d3d9-idirect3d9exoverlayextension-checkdeviceoverlaytype).
 
-Para crear la superposición, llame a **IDirect3D9Ex:: CreateDeviceEx** y especifique el efecto de intercambio de **\_ superposición D3DSWAPEFFECT** . Si el hardware lo admite, el búfer de reserva puede utilizar un formato que no sea RGB.
+Para crear la superposición, llame a **IDirect3D9Ex::CreateDeviceEx** y especifique el efecto de intercambio **D3DSWAPEFFECT \_ OVERLAY.** El búfer de reserva puede usar un formato no RGB si el hardware lo admite.
 
 Las superficies superpuestas tienen las siguientes limitaciones:
 
 -   La aplicación no puede crear más de una cadena de intercambio de superposición.
 -   La superposición debe usarse en modo de ventana. No se puede usar en modo de pantalla completa.
--   El efecto de intercambio de superposición debe usarse con la interfaz **IDirect3DDevice9Ex** . No es compatible con **IDirect3DDevice9**.
--   No se puede usar el muestreo múltiple.
--   No se admiten las marcas **D3DPRESENT \_ DONOTFLIP** y **D3DPRESENT \_ FLIPRESTART** .
+-   El efecto de intercambio de superposición debe usarse con la **interfaz IDirect3DDevice9Ex.** No se admite para **IDirect3DDevice9.**
+-   No se puede usar multimuestreo.
+-   No se admiten las marcas **D3DPRESENT \_ DONOTFLIP** y **D3DPRESENT \_ FLIPRESTART.**
 -   Las estadísticas de presentación no están disponibles para la superficie superpuesta.
 
-Si el hardware no admite la expansión, se recomienda crear una cadena de intercambio tan grande como el modo de presentación, de modo que se pueda cambiar el tamaño de la ventana a cualquier dimensión. Volver a crear la cadena de intercambio no es una manera óptima de controlar el cambio de tamaño de la ventana, ya que puede provocar artefactos de representación graves. Además, debido a la forma en que la GPU administra la memoria de superposición, la recreación de la cadena de intercambio puede provocar que una aplicación se quede sin memoria de vídeo.
+Si el hardware no admite el ajuste, se recomienda crear una cadena de intercambio tan grande como el modo de presentación, para que la ventana pueda cambiar de tamaño a cualquier dimensión. Volver a crear la cadena de intercambio no es una manera óptima de controlar el cambio de tamaño de la ventana, ya que puede provocar artefactos de representación graves. Además, debido a la forma en que la GPU administra la memoria superpuesta, volver a crear la cadena de intercambio puede provocar que una aplicación se queme de la memoria de vídeo.
 
-### <a name="new-d3dpresent_parameters-flags"></a>Nuevas marcas de parámetros de D3DPRESENT \_
+### <a name="new-d3dpresent_parameters-flags"></a>Nuevas marcas de parámetros D3DPRESENT \_
 
-Se definen los siguientes marcadores de **\_ parámetros de D3DPRESENT** para crear superposiciones.
+Las siguientes **marcas \_ de parámetros D3DPRESENT** se definen para crear superposiciones.
 
 
 
 | Marca                                      | Descripción                                                                                                                                                                        |
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **D3DPRESENTFLAG \_ superposición \_ LIMITEDRGB**   | El intervalo RGB es 16 – 235. El valor predeterminado es 0 – 255. <br/> Requiere la funcionalidad de **\_ LIMITEDRANGERGB de D3DOVERLAYCAPS** .<br/>                                                 |
-| **D3DPRESENTFLAG de BT709 de la \_ superposición \_ YCbCr \_** | Los colores YUV usan la definición de BT. 709. El valor predeterminado es BT. 601. <br/> Requiere la **funcionalidad \_ \_ BT709 de YCbCr D3DOVERLAYCAPS** .<br/>                                      |
-| **D3DPRESENTFLAG de xvYCC de la \_ superposición \_ YCbCr \_** | Generar los datos mediante YCbCr extendido (xvYCC).<br/> Requiere la funcionalidad **D3DOVERLAYCAPS \_ YCbCr \_ BT601 \_ xvYCC** o **D3DOVERLAYCAPS \_ YCbCr \_ BT709 \_ xvYCC** .<br/> |
+| **D3DPRESENTFLAG \_ OVERLAY \_ LIMITEDRGB**   | El intervalo RGB es de 16 a 235. El valor predeterminado es de 0 a 255. <br/> Requiere la **funcionalidad D3DOVERLAYCAPS \_ LIMITEDRANGERGB.**<br/>                                                 |
+| **D3DPRESENTFLAG \_ OVERLAY \_ YCbCr \_ BT709** | Los colores YUV usan la definición BT.709. El valor predeterminado es BT.601. <br/> Requiere la **funcionalidad D3DOVERLAYCAPS \_ YCbCr \_ BT709.**<br/>                                      |
+| **D3DPRESENTFLAG \_ OVERLAY \_ YCbCr \_ scryCC** | Generar los datos mediante YCbCr extendido (sipYCC).<br/> Requiere la **funcionalidad D3DOVERLAYCAPS \_ YCbCr \_ BT601 \_ trasACC** o **D3DOVERLAYCAPS \_ YCbCr \_ BT709. \_**<br/> |
 
 
 
  
 
-### <a name="using-hardware-overlays"></a>Usar superposiciones de hardware
+### <a name="using-hardware-overlays"></a>Uso de superposiciones de hardware
 
-Para mostrar la superficie de superposición, la aplicación llama a **IDirect3DDevice9Ex::P resentex**. El tiempo de ejecución de Direct3D dibuja automáticamente la clave de color de destino.
+Para mostrar la superficie superpuesta, la aplicación llama a **IDirect3DDevice9Ex::P resentEx**. El tiempo de ejecución de Direct3D dibuja automáticamente la clave de color de destino.
 
-Las siguientes marcas de **PresentEx** se definen para las superposiciones.
+Las siguientes **marcas PresentEx** se definen para las superposiciones.
 
 
 
 | Marca                              | Descripción                                                                                                                                                                                                                                                                           |
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **D3DPRESENT \_ UPDATECOLORKEY**    | Establezca esta marca si la composición de Administrador de ventanas de escritorio (DWM) está deshabilitada. Esta marca hace que Direct3D vuelva a dibujar la clave de color.<br/> Si DWM está habilitado, esta marca no es necesaria, porque Direct3D dibuja la clave de color una vez en la superficie que DWM usa para la redirección.<br/> |
+| **D3DPRESENT \_ UPDATECOLORKEY**    | Establezca esta marca si Administrador de ventanas de escritorio composición (DWM) está deshabilitada. Esta marca hace que Direct3D vuelva a dibujar la clave de color.<br/> Si DWM está habilitado, esta marca no es necesaria, ya que Direct3D dibuja la clave de color una vez en la superficie que DWM usa para el redireccionamiento.<br/> |
 | **D3DPRESENT \_ HIDEOVERLAY**       | Oculta la superposición.                                                                                                                                                                                                                                                                    |
 | **D3DPRESENT \_ UPDATEOVERLAYONLY** | Actualiza la superposición sin cambiar el contenido.<br/> Esta marca es útil si la ventana se mueve mientras el vídeo está en pausa.<br/>                                                                                                                                           |
 
@@ -76,15 +76,15 @@ Las siguientes marcas de **PresentEx** se definen para las superposiciones.
 
  
 
-Una aplicación debe estar preparada para controlar los siguientes casos:
+Una aplicación debe estar preparada para controlar los casos siguientes:
 
--   Si otra aplicación está usando la superposición, **PresentEx** devuelve **D3DERR \_ NOTAVAILABLE**.
+-   Si otra aplicación usa la superposición, **PresentEx** devuelve **D3DERR \_ NOTAVAILABLE.**
 -   Si la ventana se mueve a otro monitor, la aplicación debe volver a crear la cadena de intercambio. De lo contrario, si la aplicación llama a **PresentEx** para mostrar la superposición en un monitor diferente, **PresentEx** devuelve **D3DERR \_ INVALIDDEVICE**.
 -   Si cambia el modo de presentación, Direct3D intenta restaurar la superposición. Si el nuevo modo no admite la superposición, **PresentEx** devuelve **D3DERR \_ UNSUPPORTEDOVERLAY**.
 
 ### <a name="example-code"></a>Código de ejemplo
 
-En el ejemplo siguiente se muestra cómo crear una superficie de superposición.
+En el ejemplo siguiente se muestra cómo crear una superficie superpuesta.
 
 
 ```C++

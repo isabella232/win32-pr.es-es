@@ -1,7 +1,7 @@
 ---
 description: Cambia el tamaño de un disco duro virtual existente.
 ms.assetid: 54FDCA3B-E12B-4E68-B7EE-893C9CD97E1A
-title: Método ResizeVirtualHardDisk de la clase Msvm_ImageManagementService
+title: Método ResizeVirtualHardDisk de la Msvm_ImageManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5fcd88a9063dcbe4e19705245b36af33672dfc5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b582a79757fdf5f27a3f71d260ec6ce7cb594c434422215fb898a2575691da39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119754885"
 ---
-# <a name="resizevirtualharddisk-method-of-the-msvm_imagemanagementservice-class"></a>Método ResizeVirtualHardDisk de la \_ clase ImageManagementService de MSVM
+# <a name="resizevirtualharddisk-method-of-the-msvm_imagemanagementservice-class"></a>Método ResizeVirtualHardDisk de la clase \_ Msvm ImageManagementService
 
-Cambia el tamaño de un disco duro virtual existente. El disco duro virtual debe estar sin conexión. Vea la sección Comentarios para conocer las restricciones de uso de este método.
+Cambia el tamaño de un disco duro virtual existente. El disco duro virtual debe estar sin conexión. Vea Comentarios sobre las restricciones de uso para este método.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,36 +41,36 @@ uint32 ResizeVirtualHardDisk(
 
 <dl> <dt>
 
-*Ruta de acceso* \[ de\]
+*Ruta de acceso* \[ En\]
 </dt> <dd>
 
-Tipo: **String**
+Tipo: **cadena**
 
 Ruta de acceso completa del archivo de disco duro virtual.
 
 </dd> <dt>
 
-*MaxInternalSize* \[ de\]
+*MaxInternalSize* \[ En\]
 </dt> <dd>
 
-Tipo: **UInt64**
+Tipo: **uint64**
 
-El tamaño máximo del disco duro virtual tal como lo ve la máquina virtual, en bytes. El valor mínimo de *MaxInternalSize* es de *disco* + 512 *-(se* va a duplicar mod 512). El tamaño de los *discos* es el tamaño del archivo de disco duro virtual, en bytes. Se devuelve el error InvalidParameter (32773) si el valor de *MaxInternalSize* especificado es menor que el valor mínimo.
+Tamaño máximo del disco duro virtual que puede ver la máquina virtual, en bytes. *El valor mínimo de MaxInternalSize* *es DiskSize* + 512 -*(DiskSize* mod 512). *DiskSize* es el tamaño del archivo de disco duro virtual, en bytes. Se devuelve el error InvalidParameter (32773) si el valor *de MaxInternalSize* especificado es menor que el valor mínimo.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))**
 
-Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**\_ ConcreteJob CIM**](/previous-versions//cc136808(v=vs.85)).
+Si la operación se realiza de forma asincrónica, este método devolverá 4096 y este parámetro contendrá una referencia a un objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Este método puede devolver uno de los valores siguientes.
 
@@ -91,16 +91,16 @@ Este método puede devolver uno de los valores siguientes.
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -109,36 +109,36 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Solo se pueden usar los siguientes tipos de discos duros virtuales con este método cuando se aumenta el tamaño del disco duro virtual:
 
--   VHD fijo
--   VHDX fijo
+-   Disco duro virtual fijo
+-   VHDX corregido
 -   VHD dinámico
 -   VHDX dinámico
--   VHDX de diferenciación
+-   Diferenciación de VHDX
 
 Solo se pueden usar los siguientes tipos de discos duros virtuales con este método cuando se reduce el tamaño del disco duro virtual:
 
--   VHDX fijo
+-   VHDX corregido
 -   VHDX dinámico
--   VHDX de diferenciación
+-   Diferenciación de VHDX
 
-El acceso a la clase [**MSVM \_ ImageManagementService**](msvm-imagemanagementservice.md) puede estar restringido por el filtrado de UAC. Para obtener más información, vea [control de cuentas de usuario y WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+El acceso a [**la clase \_ ImageManagementService de Msvm**](msvm-imagemanagementservice.md) podría estar restringido por el filtrado de UAC. Para obtener más información, vea [Control de cuentas de usuario y WMI.](/windows/desktop/WmiSdk/user-account-control-and-wmi)
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de C# se expande un archivo de disco duro virtual. Las utilidades a las que se hace referencia se pueden encontrar en [utilidades comunes para los ejemplos de virtualización (V2)](common-utilities-for-the-virtualization-samples-v2.md).
+En el siguiente ejemplo de C# se expande un archivo de disco duro virtual. Las utilidades a las que se hace referencia se pueden encontrar [en Utilidades comunes para los ejemplos de virtualización (V2).](common-utilities-for-the-virtualization-samples-v2.md)
 
 
 ```CSharp
@@ -179,10 +179,10 @@ public static void ResizeVirtualHardDisk(string path, UInt64 maxInternalSize)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -191,10 +191,10 @@ public static void ResizeVirtualHardDisk(string path, UInt64 maxInternalSize)
 
 <dl> <dt>
 
-[**\_CONCRETEJOB CIM**](/previous-versions//cc136808(v=vs.85))
+[**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85))
 </dt> <dt>
 
-[**MSVM \_ ImageManagementService**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

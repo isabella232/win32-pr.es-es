@@ -40,9 +40,9 @@ Devuelve ICERR \_ OK si se realiza correctamente o se produce un error en caso c
 
 ## <a name="remarks"></a>Comentarios
 
-El controlador debe liberar todos los recursos asignados para [**el ICM BEGIN de \_ DECOMPRESS. \_**](icm-decompress-begin.md)
+El controlador debe liberar todos los recursos asignados para [**el ICM \_ DECOMPRESS \_ BEGIN.**](icm-decompress-begin.md)
 
-[**ICM \_ DECOMPRESS \_ BEGIN y**](icm-decompress-begin.md) ICM END de **\_ DECOMPRESS \_** no anidan. Si el controlador recibe **ICM \_ DECOMPRESS \_ BEGIN** antes de detener la descompresión con ICM **\_ DECOMPRESS \_ END,** debe reiniciar la descompresión con nuevos parámetros.
+[**ICM \_ DECOMPRESS \_ BEGIN**](icm-decompress-begin.md) y **ICM END de \_ \_ DECOMPRESS** no anidan. Si el controlador recibe **ICM \_ DECOMPRESS \_ BEGIN** antes de detener la descompresión con ICM **\_ DECOMPRESS \_ END,** debe reiniciar la descompresión con nuevos parámetros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,7 +56,7 @@ El controlador debe liberar todos los recursos asignados para [**el ICM BEGIN de
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

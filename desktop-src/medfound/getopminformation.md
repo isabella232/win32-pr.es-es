@@ -1,7 +1,7 @@
 ---
 description: Envía una solicitud de estado de OPM a un objeto de salida protegido.
 ms.assetid: 4b691b20-25de-4b9e-a725-674a57697b56
-title: GetOPMInformation función)
+title: Función GetOPMInformation
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,17 +13,17 @@ api_type:
 - DllExport
 api_location:
 - gdi32.dll
-ms.openlocfilehash: 450292c0f6352436d7df8c91afff0d08c8c31394
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd9912289d17085bf94f3ef8316869ffb29d3a5adead4e10fc0e6d24844f4ec6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119777305"
 ---
-# <a name="getopminformation-function"></a>GetOPMInformation función)
+# <a name="getopminformation-function"></a>Función GetOPMInformation
 
 > [!IMPORTANT]
-> El administrador de protección de [salida](output-protection-manager.md) (OPM) usa esta función para tener acceso a la funcionalidad del controlador de pantalla. Las aplicaciones no deben llamar a esta función.
+> Output [Protection Manager](output-protection-manager.md) (OPM) usa esta función para acceder a la funcionalidad del controlador de pantalla. Las aplicaciones no deben llamar a esta función.
 
  
 
@@ -46,38 +46,38 @@ NTSTATUS WINAPI GetOPMInformation(
 
 <dl> <dt>
 
-*opoOPMProtectedOutput* \[ de\]
+*opoOPMProtectedOutput* \[ En\]
 </dt> <dd>
 
-Identificador del objeto de salida protegido. Este identificador se obtiene llamando a [**CreateOPMProtectedOutputs**](createopmprotectedoutputs.md).
+Identificador del objeto de salida protegido. Este identificador se obtiene mediante una llamada a [**CreateOPMProtectedOutputs**](createopmprotectedoutputs.md).
 
 </dd> <dt>
 
-*pParameters* \[ de\]
+*pParameters* \[ En\]
 </dt> <dd>
 
-Un puntero a una estructura de **\_ parámetros de obtención de \_ \_ información \_ de DXGKMDT OPM** que contiene los datos de entrada para la solicitud de estado.
+Puntero a una estructura **DXGKMDT \_ OPM \_ GET INFO \_ \_ PARAMETERS** que contiene datos de entrada para la solicitud de estado.
 
 </dd> <dt>
 
-*pRequestedInformation* \[ enuncia\]
+*pRequestedInformation* \[ out\]
 </dt> <dd>
 
-Un puntero a una estructura de **información de DXGKMDT \_ OPM \_ solicitada \_** que recibe los resultados de la solicitud de estado.
+Puntero a una estructura DE INFORMACIÓN SOLICITADA **DE DXGKMDT \_ OPM \_ \_** que recibe los resultados de la solicitud de estado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se ejecuta correctamente, devuelve el **estado \_ correcto**. De lo contrario, devuelve un código de error **NTSTATUS** .
+Si el método se realiza correctamente, devuelve **STATUS \_ SUCCESS**. De lo contrario, devuelve un código de error **NTSTATUS.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las aplicaciones deben llamar a [**IOPMVideoOutput:: GetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-getinformation) en lugar de llamar a esta función.
+Las aplicaciones deben [**llamar a IOPMVideoOutput::GetInformation**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-getinformation) en lugar de llamar a esta función.
 
-El objeto de salida protegido se debe crear con la semántica de OPM. Vea [**CreateOPMProtectedOutputs**](createopmprotectedoutputs.md).
+El objeto de salida protegido debe crearse con semántica de OPM. Vea [**CreateOPMProtectedOutputs**](createopmprotectedoutputs.md).
 
-Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe utilizar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Gdi32.dll.
+Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe usar las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Gdi32.dll.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ Esta función no tiene ninguna biblioteca de importación asociada. Para llamar 
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                 |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
 | Archivo DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 

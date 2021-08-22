@@ -1,5 +1,5 @@
 ---
-description: El método Exit indica al subproceso de streaming que se cierre.
+description: El método Exit indica al subproceso de streaming que se debe salir.
 ms.assetid: 1bb59848-e405-40f9-87ec-33de8754e2dd
 title: Método CSourceStream.Exit (Source.h)
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.locfileid: "119687435"
 ---
 # <a name="csourcestreamexit-method"></a>Método CSourceStream.Exit
 
-El `Exit` método indica al subproceso de streaming que se cierre.
+El `Exit` método indica al subproceso de streaming que se debe salir.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,7 +59,7 @@ El [**método CSourceStream::Inactive**](csourcestream-inactive.md) llama a este
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

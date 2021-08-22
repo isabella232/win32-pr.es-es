@@ -1,11 +1,11 @@
 ---
-title: Object-Category atributo)
-description: Nombre de clase de objeto utilizado para agrupar objetos de esta clase o de clases derivadas.
+title: Object-Category atributo
+description: Nombre de clase de objeto utilizado para agrupar objetos de esta clase o clases derivadas.
 ms.assetid: 06fd0314-08b0-49eb-867c-463f7e0afee4
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de Object-Category
-- objectCategory atributo AD Schema
+- Object-Category esquema de AD del atributo
+- Esquema de AD del atributo objectCategory
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b828e4d466b1013ab3854232859a69707553775f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ae88dfc20a2409d7fcb3e69dd19995c5c210a591c2192d5dacf5233ee5aea859
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119925344"
 ---
-# <a name="object-category-attribute"></a>Object-Category atributo)
+# <a name="object-category-attribute"></a>Object-Category atributo
 
-Nombre de clase de objeto utilizado para agrupar objetos de esta clase o de clases derivadas.
+Nombre de clase de objeto utilizado para agrupar objetos de esta clase o clases derivadas.
 
 
 
 | Entrada | Value |
 |-------------------|--------------------------------------------------|
 | CN                | Object-Category                                  |
-| Nombre para mostrar de LDAP | objectCategory                                   |
-| Tamaño              | Aproximadamente 20 bytes de media.                       |
-| Actualizar privilegio  | El diseñador del objeto establecería este valor. |
-| Frecuencia de actualización  | Este valor no debe cambiar nunca.                  |
+| Ldap-Display-Name | objectCategory                                   |
+| Size              | Aproximadamente 20 bytes de media.                       |
+| Privilegio actualizar  | El diseñador del objeto establecería este valor. |
+| Frecuencia de actualización  | Este valor nunca debe cambiar.                  |
 | Attribute-Id      | 1.2.840.113556.1.4.782                           |
-| System-ID-GUID    | 26d97369-6070-11d1-a9c6-0000f80367c1             |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md)          |
+| System-Id-Guid    | 26d97369-6070-11d1-a9c6-0000f80367c1             |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md)          |
 
 
 
@@ -44,7 +44,7 @@ Nombre de clase de objeto utilizado para agrupar objetos de esta clase o de clas
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Nombre de clase de objeto utilizado para agrupar objetos de esta clase o de clas
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
@@ -77,13 +77,13 @@ Nombre de clase de objeto utilizado para agrupar objetos de esta clase o de clas
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
@@ -92,19 +92,19 @@ Nombre de clase de objeto utilizado para agrupar objetos de esta clase o de clas
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
@@ -119,13 +119,13 @@ Nombre de clase de objeto utilizado para agrupar objetos de esta clase o de clas
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
@@ -140,13 +140,13 @@ Nombre de clase de objeto utilizado para agrupar objetos de esta clase o de clas
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
@@ -161,13 +161,13 @@ Nombre de clase de objeto utilizado para agrupar objetos de esta clase o de clas
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |
@@ -182,13 +182,13 @@ Nombre de clase de objeto utilizado para agrupar objetos de esta clase o de clas
 
 | Entrada | Value |
 |------------------------|---------------------------------|
-| Identificador de vínculo                | \-                              |
+| Id. de vínculo                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | False                           |
-| Tiene un único valor       | True                            |
-| Está indexado             | True                            |
-| En el catálogo global      | True                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                    |
+| System-Only            | Falso                           |
+| Es de un solo valor       | Verdadero                            |
+| Está indexado             | Verdadero                            |
+| En el catálogo global      | Verdadero                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000001                      |

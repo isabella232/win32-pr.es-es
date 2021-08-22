@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_PFNREALLOC delegado'
+description: 'Más información sobre: JET_PFNREALLOC delegado'
 title: JET_PFNREALLOC delegado
 TOCTitle: JET_PFNREALLOC delegate
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_PFNREALLOC
@@ -28,12 +28,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7aab9fef2d7a449c877f88d2ed77aa19cbb2409d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 445cd4084ff187fba0b94e210d587b04660c0fb4dfe9e882e0c5696bfd5392df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104003079"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119730425"
 ---
 # <a name="jet_pfnrealloc-delegate"></a>JET_PFNREALLOC delegado
 
@@ -41,8 +41,8 @@ Devolución de llamada usada por JetEnumerateColumns para asignar memoria para s
 
 Esta API no es conforme a CLS. 
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -70,31 +70,31 @@ public delegate IntPtr JET_PFNREALLOC(
 #### <a name="parameters"></a>Parámetros
 
   - context  
-    Tipo: [System. IntPtr](/dotnet/api/system.intptr)  
+    Tipo: [System.IntPtr](/dotnet/api/system.intptr)  
     
     Contexto dado a JetEnumerateColumns.
 
 <!-- end list -->
 
   - memoria  
-    Tipo: [System. IntPtr](/dotnet/api/system.intptr)  
+    Tipo: [System.IntPtr](/dotnet/api/system.intptr)  
     
     Si es distinto de cero, puntero a un bloque de memoria asignado previamente por esta devolución de llamada.
 
 <!-- end list -->
 
   - requestedSize  
-    Tipo: [System. UInt32](/dotnet/api/system.uint32)  
+    Tipo: [System.UInt32](/dotnet/api/system.uint32)  
     
-    Nuevo tamaño del bloque de memoria (en bytes). Si es 0 y se especifica un bloque de memoria, el bloque de memoria se liberará.
+    Nuevo tamaño del bloque de memoria (en bytes). Si es 0 y se especifica un bloque de memoria, se liberará ese bloque de memoria.
 
 #### <a name="return-value"></a>Valor devuelto
 
-Tipo: [System. IntPtr](/dotnet/api/system.intptr)  
-Puntero a la memoria recién asignada. Si no se pudo asignar memoria, se debe devolver [cero](/dotnet/api/system.intptr.zero) .  
+Tipo: [System.IntPtr](/dotnet/api/system.intptr)  
+Puntero a la memoria recién asignada. Si no se pudo asignar memoria, [se debe](/dotnet/api/system.intptr.zero) devolver Cero.  
 
 ## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: Especifica si los equipos usan el servicio de configuración automática integrado para administrar las conexiones a redes cableadas que requieren autenticación de nivel 2 (por ejemplo, 802.1 X).
+description: Especifica si las máquinas usan el servicio de configuración automática integrado para administrar las conexiones a redes cableadas que requieren autenticación de nivel 2 (por ejemplo, 802.1X).
 ms.assetid: c7a0f6bc-4d42-4d95-8483-2c480f4d8db9
-title: Elemento enableAutoConfig (Indicadores_globales) (LAN_policy)
+title: Elemento enableAutoConfig (globalFlags) (LAN_policy)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,20 +12,20 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: af1ca32f177140bbfc6563f74df5afc519ee0c75
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2842da69b07136df80d15ea84553aecdf2c62d417c73f7ec85d9c315b819a397
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103815422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119780205"
 ---
-# <a name="enableautoconfig-globalflags-element-lan_policy"></a>Elemento enableAutoConfig (Indicadores_globales) (LAN_policy)
+# <a name="enableautoconfig-globalflags-element-lan_policy"></a>Elemento enableAutoConfig (globalFlags) (LAN_policy)
 
-El elemento **enableAutoConfig** (indicadores_globales) especifica si los equipos usan el servicio de configuración automática integrado para administrar las conexiones a redes cableadas que requieren autenticación de nivel 2 (como 802.1 x).
+El **elemento enableAutoConfig** (globalFlags) especifica si las máquinas usan el servicio de configuración automática integrado para administrar las conexiones a redes cableadas que requieren autenticación de nivel 2 (como 802.1X).
 
-Cuando **enableAutoConfig** tiene un valor de false, los equipos no deben usar el servicio de configuración automática integrado para administrar las conexiones que requieren la autenticación de nivel 2. En su lugar, la red especificada en el elemento [**profileList**](lan-policyschema-profilelist-lanpolicy-element.md) es la única red disponible para la conexión. El servicio de configuración automática solo responderá a las solicitudes para habilitar el servicio.
+Cuando **enableAutoConfig tiene** el valor FALSE, las máquinas no deben usar el servicio de configuración automática integrado para administrar las conexiones que requieren autenticación de nivel 2. En su lugar, la red especificada en el [**elemento profileList**](lan-policyschema-profilelist-lanpolicy-element.md) es la única red disponible para la conexión. El servicio de configuración automática solo responderá a las solicitudes para habilitar el servicio.
 
-Cuando **enableAutoConfig** tiene un valor true, los equipos pueden usar el servicio de configuración automática integrado para conectarse a redes cableadas que requieran autenticación de nivel 2.
+Cuando **enableAutoConfig tiene** el valor TRUE, las máquinas pueden usar el servicio de configuración automática integrado para conectarse a redes cableadas que requieren autenticación de nivel 2.
 
 ``` syntax
 <xs:element name="enableAutoConfig"
@@ -33,7 +33,7 @@ Cuando **enableAutoConfig** tiene un valor true, los equipos pueden usar el serv
  />
 ```
 
-El elemento **enableAutoConfig** se define mediante el elemento [**indicadores_globales**](lan-policyschema-globalflags-lanpolicy-element.md) .
+El **elemento enableAutoConfig** se define mediante el [**elemento globalFlags.**](lan-policyschema-globalflags-lanpolicy-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,8 +41,8 @@ El elemento **enableAutoConfig** se define mediante el elemento [**indicadores_g
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -53,13 +53,13 @@ El elemento **enableAutoConfig** se define mediante el elemento [**indicadores_g
 **Contexto de definición del elemento en el esquema**
 </dt> <dt>
 
-[**Indicadores**](lan-policyschema-globalflags-lanpolicy-element.md)
+[**globalFlags**](lan-policyschema-globalflags-lanpolicy-element.md)
 </dt> <dt>
 
 **Posible elemento primario inmediato en la instancia de esquema**
 </dt> <dt>
 
-[**Indicadores_globales (LANPolicy)**](lan-policyschema-globalflags-lanpolicy-element.md)
+[**globalFlags (LANPolicy)**](lan-policyschema-globalflags-lanpolicy-element.md)
 </dt> </dl>
 
  

@@ -70,7 +70,7 @@ Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="remarks"></a>Comentarios
 
-La marca MCI OPEN TYPE debe usarse siempre que se especifique un \_ dispositivo en la función \_ [**mciSendCommand.**](/previous-versions//dd757160(v=vs.85)) Si abre un dispositivo especificando una constante de tipo de dispositivo, debe especificar la marca MCI OPEN TYPE ID además \_ \_ de \_ MCI OPEN \_ \_ TYPE. Para obtener una lista de constantes de tipo de dispositivo, vea [Tipos de dispositivos MCI.](mci-device-types.md)
+La marca MCI OPEN TYPE debe usarse siempre que se especifique un \_ dispositivo en la función \_ [**mciSendCommand.**](/previous-versions//dd757160(v=vs.85)) Si abre un dispositivo especificando una constante de tipo de dispositivo, debe especificar la marca MCI OPEN TYPE ID además \_ \_ de \_ MCI OPEN \_ \_ TYPE. Para obtener una lista de constantes de tipo de dispositivo, vea [Tipos de dispositivo MCI.](mci-device-types.md)
 
 Si no se especifica la marca MCI OPEN SHAREABLE cuando se abre inicialmente un dispositivo o archivo, se producirá un error en todos los comandos MCI OPEN subsiguientes en el dispositivo o \_ \_ \_ archivo. Si el dispositivo o archivo ya está abierto y no se especifica esta marca, se producirá un error en la llamada aunque el primer comando open haya especificado MCI \_ OPEN \_ SHAREABLE. Archivos abiertos para MCISEQ. DRV y MCIWAVE. Los dispositivos DRV no pueden compartirse.
 
@@ -106,7 +106,7 @@ Se incluye un nombre de tipo de dispositivo o una constante en el **miembro lpst
 <span id="MCI_OPEN_TYPE_ID"></span><span id="mci_open_type_id"></span>MCI \_ OPEN \_ TYPE \_ ID
 </dt> <dd>
 
-La palabra de orden bajo del miembro **lpstrDeviceType** de la estructura identificada por *lpOpen* contiene un identificador de tipo de dispositivo MCI estándar y, opcionalmente, la palabra de orden superior contiene el índice ordinal del dispositivo. Use esta marca con la marca \_ MCI OPEN \_ TYPE.
+La palabra de orden bajo del miembro **lpstrDeviceType** de la estructura identificada por *lpOpen* contiene un identificador de tipo de dispositivo MCI estándar y, opcionalmente, la palabra de orden superior contiene el índice ordinal del dispositivo. Use esta marca con la marca MCI \_ OPEN \_ TYPE.
 
 </dd> </dl>
 
@@ -206,7 +206,7 @@ En el caso de los dispositivos de audio de forma de onda, el parámetro *lpOpen*
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -214,7 +214,7 @@ En el caso de los dispositivos de audio de forma de onda, el parámetro *lpOpen*
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

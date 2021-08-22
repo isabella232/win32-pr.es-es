@@ -1,22 +1,22 @@
 ---
-title: Ejemplo de código de C/C++ que recupera el tiempo de espera de inactividad de tarea
-description: En este ejemplo se recupera el tiempo de espera de inactividad de la tarea y se muestra en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+title: Ejemplo de código de C/C++ recuperación del tiempo de espera de inactividad de la tarea
+description: En este ejemplo se recupera el tiempo de espera de inactividad de la tarea y se muestra en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 ms.assetid: 2784b925-678c-422c-ae78-84d2982c2b02
 keywords:
-- recuperando el tiempo de espera de inactividad de la tarea Programador de tareas
-- recuperar propiedades de elementos de trabajo Programador de tareas, tiempo de espera de inactividad de la tarea
+- recuperación del tiempo de espera de inactividad de Programador de tareas
+- recuperar propiedades de elementos de trabajo Programador de tareas , tiempo de espera de inactividad de tareas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24c109faf55be8039c2c39652f8c513b6b38bd17
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7946d4a8b80dd49db2b8c5291f8d382a9e3b40b4de8a759f10f4057905593f97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104357133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738775"
 ---
-# <a name="cc-code-example-retrieving-task-idle-wait-time"></a>Ejemplo de código de C/C++: recuperar el tiempo de espera de inactividad de la tarea
+# <a name="cc-code-example-retrieving-task-idle-wait-time"></a>Ejemplo de código de C/C++: recuperación del tiempo de espera de inactividad de la tarea
 
-En este ejemplo se recupera el tiempo de espera de inactividad de la tarea y se muestra en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local.
+En este ejemplo se recupera el tiempo de espera de inactividad de la tarea y se muestra en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local.
 
 
 ```C++
@@ -116,12 +116,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

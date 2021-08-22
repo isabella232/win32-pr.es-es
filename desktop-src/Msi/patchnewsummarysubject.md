@@ -1,23 +1,23 @@
 ---
-description: La propiedad PATCHNEWSUMMARYSUBJECT actualiza la propiedad de Resumen de asunto de una imagen administrativa durante la revisión.
+description: La propiedad PATCHNEWSUMMARYSUBJECT actualiza la propiedad Resumen del asunto de una imagen administrativa durante la aplicación de revisiones.
 ms.assetid: 8aee1905-59a4-4818-b073-4bc401a6963d
-title: Propiedad PATCHNEWSUMMARYSUBJECT
+title: PatchNEWSUMMARYSUBJECT, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b5916d5ed63e792a3b1ae2a69b4ac09999475b5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 912fe9ea21605625135b385a400fd5136c993c1d0dd0e3bfadd6a2b6699d21e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119926175"
 ---
-# <a name="patchnewsummarysubject-property"></a>Propiedad PATCHNEWSUMMARYSUBJECT
+# <a name="patchnewsummarysubject-property"></a>PatchNEWSUMMARYSUBJECT, propiedad
 
-La propiedad **PATCHNEWSUMMARYSUBJECT** actualiza la propiedad de [**Resumen de asunto**](subject-summary.md) de una imagen administrativa durante la revisión. Esta propiedad solo se establece mediante una transformación en un archivo. msp. El archivo. MSP debe incluir una transformación que agregue esta propiedad a la [tabla de propiedades](property-table.md) y establezca su valor. Después, el instalador escribe el valor de **PATCHNEWSUMMARYSUBJECT** en la propiedad [**Summary del número de revisión**](revision-number-summary.md) .
+La **propiedad PATCHNEWSUMMARYSUBJECT** actualiza la [**propiedad Resumen del asunto**](subject-summary.md) de una imagen administrativa durante la aplicación de revisiones. Esta propiedad solo se establece mediante una transformación en un archivo .msp. El archivo .msp debe incluir una transformación que agrega esta propiedad a la [tabla Property y](property-table.md) establece su valor. A continuación, el instalador escribe el valor **de PATCHNEWSUMMARYSUBJECT en** la [**propiedad Resumen del número de**](revision-number-summary.md) revisión.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Las propiedades [**PATCHNEWPACKAGECODE**](patchnewpackagecode.md), [**PATCHNEWSUMMARYCOMMENTS**](patchnewsummarycomments.md)y **PATCHNEWSUMMARYSUBJECT** se usan para actualizar la información de resumen cuando se instala una revisión en una imagen administrativa.
+Las [**propiedades PATCHNEWPACKAGECODE,**](patchnewpackagecode.md) [**PATCHNEWSUMMARYCOMMENTS**](patchnewsummarycomments.md)y **PATCHNEWSUMMARYSUBJECT** se usan para actualizar la información de resumen cuando se instala una revisión en una imagen administrativa.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -25,7 +25,7 @@ Las propiedades [**PATCHNEWPACKAGECODE**](patchnewpackagecode.md), [**PATCHNEWSU
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP. Consulte los [requisitos de Run-Time de Windows Installer](windows-installer-portal.md) para obtener información sobre la Service Pack mínima de Windows que requiere una versión Windows Installer.<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP. Consulte el [Windows installer Run-Time para](windows-installer-portal.md) obtener información sobre los requisitos mínimos de Windows Service Pack que requiere una versión Windows Installer.<br/> |
 
 
 

@@ -32,7 +32,7 @@ Listas de revocación de infraestructura de clave pública.
 | CN                | CRL-Partitioned-Revocation-List                       |
 | Ldap-Display-Name | cRLPartitionedRevocationList                          |
 | Size              | \-                                                    |
-| Privilegio actualizar  | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.683                                |
 | System-Id-Guid    | 963d2731-48be-11d1-a9c3-0000f80367c1                  |
@@ -53,7 +53,7 @@ Listas de revocación de infraestructura de clave pública.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
@@ -74,7 +74,7 @@ Listas de revocación de infraestructura de clave pública.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
@@ -95,7 +95,7 @@ Listas de revocación de infraestructura de clave pública.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
@@ -116,7 +116,7 @@ Listas de revocación de infraestructura de clave pública.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
@@ -137,7 +137,7 @@ Listas de revocación de infraestructura de clave pública.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
@@ -158,7 +158,7 @@ Listas de revocación de infraestructura de clave pública.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |

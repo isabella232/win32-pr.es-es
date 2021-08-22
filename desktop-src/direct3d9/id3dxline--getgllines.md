@@ -55,7 +55,7 @@ Devuelve **TRUE si** las líneas de estilo OpenGL están habilitadas y **FALSE**
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

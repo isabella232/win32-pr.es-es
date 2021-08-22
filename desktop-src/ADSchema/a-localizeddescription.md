@@ -53,7 +53,7 @@ El identificador de localización y el nombre para mostrar de un objeto.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
@@ -74,7 +74,7 @@ El identificador de localización y el nombre para mostrar de un objeto.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
@@ -95,7 +95,7 @@ El identificador de localización y el nombre para mostrar de un objeto.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
@@ -137,7 +137,7 @@ El identificador de localización y el nombre para mostrar de un objeto.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
@@ -158,7 +158,7 @@ El identificador de localización y el nombre para mostrar de un objeto.
 
 
 
-| Entrada | Valor |
+| Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
 | Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |

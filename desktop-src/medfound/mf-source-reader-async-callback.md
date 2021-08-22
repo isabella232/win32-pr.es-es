@@ -13,7 +13,7 @@ ms.locfileid: "119605165"
 ---
 # <a name="mf_source_reader_async_callback-attribute"></a>Atributo MF \_ SOURCE \_ READER \_ ASYNC \_ CALLBACK
 
-Contiene un puntero a la interfaz de devolución de llamada de la aplicación para el [lector de origen](source-reader.md).
+Contiene un puntero a la interfaz de devolución de llamada de la aplicación para el [lector de origen.](source-reader.md)
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -21,13 +21,13 @@ Contiene un puntero a la interfaz de devolución de llamada de la aplicación pa
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame [**a IMFAttributes::GetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown).
+Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown).
 
-Para establecer este atributo, llame [**a IMFAttributes::SetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown).
+Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown).
 
 ## <a name="remarks"></a>Comentarios
 
-El valor de este atributo es un puntero a la interfaz [**IMFSourceReaderCallback de la**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereadercallback) aplicación.
+El valor de este atributo es un puntero a la interfaz DE DEvolución [**DE LLAMADA DE LA APLICACIÓN DE LA APLICACIÓN.**](/windows/desktop/api/mfreadwrite/nn-mfreadwrite-imfsourcereadercallback)
 
 Use este atributo con las siguientes funciones:
 
@@ -39,7 +39,7 @@ Use este atributo con las siguientes funciones:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                           |
@@ -47,7 +47,7 @@ Use este atributo con las siguientes funciones:
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

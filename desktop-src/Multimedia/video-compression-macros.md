@@ -3,23 +3,23 @@ title: Macros de compresión de vídeo
 description: Macros de compresión de vídeo
 ms.assetid: e8ee41fa-180a-432a-933b-b4a525b9df8c
 keywords:
-- Vídeo para Windows (VFW), macros VCM
-- VFW (vídeo para Windows), macros VCM
-- Administrador de compresión de vídeo (VCM), macros
-- VCM (Administrador de compresión de vídeo), macros
-- Referencia VCM, macros
+- Vídeo para Windows (VFW), macros de VCM
+- VFW (vídeo para Windows),macros de VCM
+- administrador de compresión de vídeo (VCM), macros
+- VCM (administrador de compresión de vídeo), macros
+- Referencia de VCM, macros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fe6b348a3a793e8cd2674b012f32fbb5c3e48f0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 44395d599436c5472895e3b5224fb557facf13468435d80a3dfd91ff6327b484
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104356823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687535"
 ---
 # <a name="video-compression-macros"></a>Macros de compresión de vídeo
 
-Las macros siguientes se usan con la compresión de vídeo.
+Las macros siguientes se usan con compresión de vídeo.
 
 -   [**ICAbout**](/windows/desktop/api/Vfw/nf-vfw-icabout)
 -   [**ICCompressBegin**](/windows/desktop/api/Vfw/nf-vfw-iccompressbegin)
@@ -35,7 +35,7 @@ Las macros siguientes se usan con la compresión de vídeo.
 -   [**ICDecompressGetFormat**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformat)
 -   [**ICDecompressGetFormatSize**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetformatsize)
 -   [**ICDecompressGetPalette**](/windows/desktop/api/Vfw/nf-vfw-icdecompressgetpalette)
--   [**ICDecompressOpen**](/windows/desktop/api/Vfw/nf-vfw-icdecompressopen)
+-   [**ICDecompressAbrir**](/windows/desktop/api/Vfw/nf-vfw-icdecompressopen)
 -   [**ICDecompressQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressquery)
 -   [**ICDecompressSetPalette**](/windows/desktop/api/Vfw/nf-vfw-icdecompresssetpalette)
 -   [**ICDrawChangePalette**](/windows/desktop/api/Vfw/nf-vfw-icdrawchangepalette)
@@ -68,9 +68,9 @@ Las macros siguientes se usan con la compresión de vídeo.
 [Referencia del administrador de compresión de vídeo](video-compression-manager-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

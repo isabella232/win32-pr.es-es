@@ -9,12 +9,12 @@ keywords:
 - grupos de atributos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d93582c8996438ad99d7bf896cf83bdf6fbf72d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9501ea7ea2c924a6e89d93cb995cbef4f789cba587d4a1f3fa03dbb798eafd8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105676151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554705"
 ---
 # <a name="attribute-groups"></a>Grupos de atributos
 
@@ -22,35 +22,35 @@ ms.locfileid: "105676151"
 
 | Bit de máscara                  | Grupo de atributos |
 |---------------------------|-----------------|
-| \_bit de \_ búfer de acumulación de GL \_    | búfer acumulado    |
-| núm. \_ todos los \_ \_ bits attrib     |                 |
-| \_bit de \_ búfer de color de contabilidad \_    | búfer de color    |
-| \_bits actual de GL \_          | actuales         |
-| \_bit de \_ búfer de profundidad de contabilidad \_    | búfer de profundidad    |
-| \_bit de habilitación de GL \_           | enable          |
-| \_bit de evaluación de GL \_             | eval            |
-| \_bit de niebla de contabilidad \_              | luz             |
-| \_bit de sugerencia de GL \_             | sugerencia            |
-| \_bit de iluminación de GL \_         | iluminación        |
-| \_bit de línea de contabilidad \_             | line            |
-| \_bit de lista de contab. \_             | list            |
-| \_bit de \_ modo de píxel de contabilidad \_      | píxel           |
-| \_bit de punta de contabilidad \_            | point           |
-| \_bit de polígono de GL \_          | polygon         |
-| \_bit de \_ punteado de los polígonos de contabilidad \_ | Polígono-punteado |
-| \_bit de tijera de GL \_          | tijera         |
-| \_bit de \_ búfer de estarcido GL \_  | cliché-búfer  |
-| \_bit de textura de GL \_          | textura         |
-| \_bit de transformación de contabilidad \_        | transform       |
-| \_bit de ventanilla de GL \_         | ventanilla        |
+| BIT DE \_ BÚFER DE GL ACCUM \_ \_    | accum-buffer    |
+| GL \_ ALL \_ ATTRIB \_ BITS     |                 |
+| BIT DE \_ BÚFER DE COLOR DE \_ \_ GL    | búfer de color    |
+| GL \_ CURRENT \_ BIT          | actuales         |
+| BIT DE \_ BÚFER DE PROFUNDIDAD DE \_ \_ GL    | búfer de profundidad    |
+| GL \_ ENABLE \_ BIT           | enable          |
+| GL \_ EVAL \_ BIT             | eval            |
+| GL \_ FOG \_ BIT              | luz             |
+| GL \_ HINT \_ BIT             | sugerencia            |
+| GL \_ LIGHTING \_ BIT         | iluminación        |
+| GL \_ LINE \_ BIT             | line            |
+| GL \_ LIST \_ BIT             | list            |
+| BIT \_ DE MODO DE PÍXEL \_ \_ GL      | píxel           |
+| GL \_ POINT \_ BIT            | point           |
+| GL \_ POLYGON \_ BIT          | polygon         |
+| GL \_ POLYGON \_ STIPPLE \_ BIT | polygon-stipple |
+| BIT \_ DE RESALTE \_ DE GL          | Tijera         |
+| BIT DE \_ BÚFER DE GALERÍA DE SÍMBOLOS DE \_ \_ GL  | stencil-buffer  |
+| BIT \_ DE TEXTURA \_ GL          | textura         |
+| GL \_ TRANSFORM \_ BIT        | transform       |
+| BIT DE \_ VENTANILLA \_ DE GL         | ventanilla        |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

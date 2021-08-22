@@ -1,10 +1,10 @@
 ---
-title: Enumeración MPTHREAT_DETECTION (MpClient. h)
-description: Posibles tipos conocidos de detección de amenazas defectuosas.
+title: MPTHREAT_DETECTION enumeración (MpClient.h)
+description: Posibles tipos de detección de amenazas no conocidas.
 ms.assetid: 14FCA9BD-A9A1-488B-B8E8-88DE0DF18F27
 keywords:
-- MPTHREAT_DETECTION enumeración características de entorno heredado de Windows
-- PMPTHREAT_DETECTION el puntero de enumeración características de entorno heredado de Windows
+- MPTHREAT_DETECTION enumeración de características de entorno de Windows heredado
+- PMPTHREAT_DETECTION puntero de enumeración heredado Windows características del entorno de ejecución
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86edc0e1ca4ee130f2a2a4a678447771f1ae40ae
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6d362edbb7257f8be5577880a4390c5a2f5f5703504a5f7447154bebe5ada500
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103801904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119601185"
 ---
-# <a name="mpthreat_detection-enumeration"></a>\_Enumeración de detección MPTHREAT
+# <a name="mpthreat_detection-enumeration"></a>Enumeración MPTHREAT \_ DETECTION
 
-Posibles tipos conocidos de detección de amenazas defectuosas.
+Posibles tipos de detección de amenazas no conocidas.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -45,38 +45,38 @@ typedef enum tagMPTHREAT_DETECTION {
 
 <dl> <dt>
 
-<span id="MP_THREAT_DETECTION_CONCRETE"></span><span id="mp_threat_detection_concrete"></span>**\_específico de \_ detección de amenazas de MP \_**
+<span id="MP_THREAT_DETECTION_CONCRETE"></span><span id="mp_threat_detection_concrete"></span>**DETECCIÓN DE AMENAZAS DE MP \_ \_ \_ CONCRETA**
 </dt> <dd>
 
 Se detectó una amenaza a través de firmas concretas.
 
 </dd> <dt>
 
-<span id="MP_THREAT_DETECTION_HEURISTIC"></span><span id="mp_threat_detection_heuristic"></span>**\_heurística de \_ detección de amenazas MP \_**
+<span id="MP_THREAT_DETECTION_HEURISTIC"></span><span id="mp_threat_detection_heuristic"></span>**\_HEURÍSTICA DE \_ \_ DETECCIÓN DE AMENAZAS DE MP**
 </dt> <dd>
 
 Se detectó una amenaza a través de la heurística.
 
 </dd> <dt>
 
-<span id="MP_THREAT_DETECTION_GENERIC"></span><span id="mp_threat_detection_generic"></span>**\_ \_ Generic detección de amenazas de MP \_**
+<span id="MP_THREAT_DETECTION_GENERIC"></span><span id="mp_threat_detection_generic"></span>**DETECCIÓN DE AMENAZAS DE MP \_ \_ \_ GENÉRICA**
 </dt> <dd>
 
-Se detectó una amenaza mediante firmas genéricas.
+Se detectó una amenaza a través de firmas genéricas.
 
 </dd> <dt>
 
-<span id="MP_THREAT_DETECTION_SUSPICIOUS"></span><span id="mp_threat_detection_suspicious"></span>**detección de amenazas de MP \_ \_ \_ sospechosa**
+<span id="MP_THREAT_DETECTION_SUSPICIOUS"></span><span id="mp_threat_detection_suspicious"></span>**DETECCIÓN \_ DE AMENAZAS DE MP \_ \_ SOSPECHOSA**
 </dt> <dd>
 
 Se detectó una amenaza a través de la supervisión del comportamiento.
 
 </dd> <dt>
 
-<span id="MP_THREAT_DETECTION_FASTPATH"></span><span id="mp_threat_detection_fastpath"></span>**detección de amenazas de MP \_ \_ \_ FASTPATH**
+<span id="MP_THREAT_DETECTION_FASTPATH"></span><span id="mp_threat_detection_fastpath"></span>**MP \_ THREAT \_ DETECTION \_ FASTPATH**
 </dt> <dd>
 
-Se detectó una amenaza a través de FastPATH.
+Se detectó una amenaza a través de fastpath.
 
 </dd> </dl>
 
@@ -84,11 +84,11 @@ Se detectó una amenaza a través de FastPATH.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

@@ -1,21 +1,21 @@
 ---
-description: 'Los elementos siguientes se utilizan con DDE de red:'
+description: 'Los siguientes elementos se usan con DDE de red:'
 ms.assetid: 4b512100-54cb-4e32-9f56-6571a71dfa86
-title: Referencia DDE de red
+title: Referencia de DDE de red
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8569da0892b46301ee7cdfdabcb4eb0e4c9ef6e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc74f0da149e9752f0984cb412cea82487d77beca9ec42d2bf1aed3a3e21e2b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119611025"
 ---
-# <a name="network-dde-reference"></a>Referencia DDE de red
+# <a name="network-dde-reference"></a>Referencia de DDE de red
 
-\[Ya no se admite DDE de red. Nddeapi.dll está presente en Windows Vista, pero todas las llamadas de función devuelven NDDE \_ no \_ implementado.\]
+\[Ya no se admite DDE de red. Nddeapi.dll está presente en Windows Vista, pero todas las llamadas de función devuelven NDDE \_ NOT \_ IMPLEMENTED.\]
 
-Los elementos siguientes se utilizan con DDE de red:
+Los siguientes elementos se usan con DDE de red:
 
 -   [Funciones DDE de red](network-dde-functions.md)
 -   [Estructuras DDE de red](network-dde-structures.md)

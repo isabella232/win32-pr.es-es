@@ -1,7 +1,7 @@
 ---
-description: El \_ método get Caption recupera el título de la ventana actual.
+description: El método get \_ Caption recupera el título de la ventana actual.
 ms.assetid: 51ce9cf8-0b2a-4459-b005-02dc45444fd8
-title: Método CBaseControlWindow.get_Caption (Ctlutil. h)
+title: CBaseControlWindow.get_Caption método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b8d743c746f833007d91afd4346f7f48c6218dde
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0f05501adbd486eaa60e939aacfdd5896c0fbcae059673029f04fcca8aeb742a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105660407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119640895"
 ---
-# <a name="cbasecontrolwindowget_caption-method"></a>CBaseControlWindow. Get \_ Caption (método)
+# <a name="cbasecontrolwindowget_caption-method"></a>CBaseControlWindow.get \_ Caption (método)
 
 El `get_Caption` método recupera el título de la ventana actual.
 
@@ -51,11 +51,11 @@ Puntero al título de la ventana actual.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La mayoría de las ventanas de nivel superior de un escritorio basado en Windows tienen un título (título) asociado. Esta propiedad se puede consultar y establecer a través de la interfaz [**IVideoWindow**](/windows/desktop/api/Control/nn-control-ivideowindow) . Cualquier conjunto de títulos solo será visible si la ventana tiene aplicado el \_ estilo de leyenda de WS. Si no es así, el título se puede establecer (y recuperar), aunque no será visible para el usuario.
+La mayoría de las ventanas de nivel superior de un Windows basado en el escritorio tienen un título (título) asociado a ellas. Esta propiedad se puede consultar y establecer a través de la [**interfaz IVideoWindow.**](/windows/desktop/api/Control/nn-control-ivideowindow) Cualquier conjunto de títulos solo será visible si la ventana tiene aplicado el estilo WS \_ CAPTION. Si no es así, el título todavía se puede establecer (y recuperar), aunque no será visible para el usuario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ La mayoría de las ventanas de nivel superior de un escritorio basado en Windows
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Ctlutil. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Ctlutil.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ La mayoría de las ventanas de nivel superior de un escritorio basado en Windows
 
 <dl> <dt>
 
-[**Clase CBaseControlWindow**](cbasecontrolwindow.md)
+[**CBaseControlWindow (clase)**](cbasecontrolwindow.md)
 </dt> </dl>
 
  

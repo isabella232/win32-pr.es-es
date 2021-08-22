@@ -1,5 +1,5 @@
 ---
-description: Panel de control los elementos deben registrarse para que aparezcan en la Panel de control principal.
+description: Panel de control los elementos deben registrarse para que aparezcan en la Panel de control ventana.
 title: Registro de Panel de control elementos
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,12 +18,12 @@ ms.locfileid: "119661085"
 ---
 # <a name="registering-control-panel-items"></a>Registro de Panel de control elementos
 
-Panel de control los elementos deben registrarse para que aparezcan en la Panel de control principal. Si el Panel de control se implementa como parte de un archivo .exe, se registra como un objeto de comando. El registro difiere si el elemento se implementa como un archivo .dll que exporta la [**función CPlApplet.**](/windows/win32/api/cpl/nc-cpl-applet_proc)
+Panel de control los elementos deben registrarse para que aparezcan en la Panel de control ventana. Si el Panel de control se implementa como parte de un archivo .exe, se registra como un objeto de comando. El registro difiere si el elemento se implementa como un .dll que exporta la [**función CPlApplet.**](/windows/win32/api/cpl/nc-cpl-applet_proc)
 
 En estos temas se tratan requisitos específicos:
 
 -   [Cómo registrar elementos ejecutables Panel de control aplicación](how-to-register-an-executable-control-panel-item-registration-.md)
--   [Registro de elementos de Panel de control DLL](how-to-register-dll-control-panel-item-registration-.md)
+-   [Cómo registrar elementos de Panel de control DLL](how-to-register-dll-control-panel-item-registration-.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -41,7 +41,7 @@ En estos temas se tratan requisitos específicos:
 [Panel de control de mensajes](message-processing.md)
 </dt> <dt>
 
-[Ejecución de Panel de control elementos](executing-control-panel-items.md)
+[Ejecutar elementos Panel de control datos](executing-control-panel-items.md)
 </dt> <dt>
 
 [Extender elementos de Panel de control sistema](extending-system-control-panel-items.md)
@@ -50,7 +50,7 @@ En estos temas se tratan requisitos específicos:
 [Asignación de Panel de control categorías](assigning-control-panel-categories.md)
 </dt> <dt>
 
-[Crear vínculos de tareas que se pueden buscar para un elemento Panel de control búsqueda](creating-searchable-task-links.md)
+[Crear vínculos de tareas buscables para un elemento Panel de control búsqueda](creating-searchable-task-links.md)
 </dt> <dt>
 
 [Acceso al Panel de control en modo Caja fuerte en Windows Vista](accessing-the-cp-in-safe-mode-under-vista.md)

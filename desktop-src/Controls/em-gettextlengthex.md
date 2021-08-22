@@ -63,7 +63,7 @@ Este mensaje es una manera rápida y sencilla de determinar el número de caract
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

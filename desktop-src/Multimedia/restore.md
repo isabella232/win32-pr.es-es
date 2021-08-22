@@ -1,6 +1,6 @@
 ---
 title: comando restore
-description: El comando restore copia una imagen fija de un archivo en el búfer de fotogramas. Esto es lo contrario del comando de captura. Los dispositivos de vídeo digital reconocen este comando.
+description: El comando restore copia una imagen fija de un archivo en el búfer de fotogramas. Este es el inverso del comando capture. Los dispositivos de vídeo digital reconocen este comando.
 ms.assetid: e84a478a-3e0f-4767-94d7-eb3c79c31b8b
 keywords:
 - comando restore Windows Multimedia
@@ -21,7 +21,7 @@ ms.locfileid: "119689195"
 ---
 # <a name="restore-command"></a>comando restore
 
-El comando restore copia una imagen fija de un archivo en el búfer de fotogramas. Esto es lo contrario del [comando de](capture.md) captura. Los dispositivos de vídeo digital reconocen este comando.
+El comando restore copia una imagen fija de un archivo en el búfer de fotogramas. Este es el inverso del [comando capture.](capture.md) Los dispositivos de vídeo digital reconocen este comando.
 
 Para enviar este comando, llame a la [**función mciSendString**](/previous-versions//dd757161(v=vs.85)) con el *parámetro lpszCommand* establecido como se muestra a continuación.
 
@@ -55,8 +55,8 @@ Una o varias de las marcas siguientes.
 
 | Valor           | Significado                                                                                                                                                                                                                                                                                                                         |
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| en *rectángulo*  | Especifica un rectángulo relativo al origen del búfer de marco. El *rectángulo* se especifica como *X1 Y1 X2 Y2*. Las coordenadas *X1 Y1 especifican* la esquina superior izquierda y las coordenadas *X2 Y2* especifican el ancho y el alto. Si no se usa esta marca, la imagen se copia en la esquina superior izquierda del búfer de fotogramas.<br/> |
-| desde nombre *de archivo* | Especifica el nombre de archivo de la imagen que se recuperará. Esta marca es obligatoria.                                                                                                                                                                                                                                                                  |
+| en *rectángulo*  | Especifica un rectángulo relativo al origen del búfer de fotogramas. El *rectángulo* se especifica como *X1 Y1 X2 Y2.* Las coordenadas *X1 Y1 especifican* la esquina superior izquierda y las coordenadas *X2 Y2* especifican el ancho y el alto. Si no se usa esta marca, la imagen se copia en la esquina superior izquierda del búfer de fotogramas.<br/> |
+| desde nombre *de archivo* | Especifica el nombre de archivo de la imagen que se debe recuperar. Esta marca es obligatoria.                                                                                                                                                                                                                                                                  |
 
 
 
@@ -73,24 +73,24 @@ Puede ser "wait", "notify", "test" o una combinación de estos. Para obtener má
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="remarks"></a>Comentarios
 
-Los dispositivos pueden reconocer diversos formatos de imagen. un Windows mapa de bits independiente del dispositivo siempre se reconoce.
+Los dispositivos pueden reconocer diversos formatos de imagen. siempre Windows mapa de bits independiente del dispositivo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

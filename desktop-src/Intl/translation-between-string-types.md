@@ -20,10 +20,10 @@ Las funciones enumeradas en la tabla siguiente traducen cadenas de caracteres de
 | Función                                           | Descripción                                             |
 |----------------------------------------------------|---------------------------------------------------------|
 | [**FoldString**](/windows/win32/api/stringapiset/nf-stringapiset-foldstringw)                   | Convierte una cadena de caracteres en otra.             |
-| [**LCMapString**](/windows/desktop/api/Winnls/nf-winnls-lcmapstringa)                 | Mapas cadena de caracteres por configuración regional.                      |
+| [**LCMapString**](/windows/desktop/api/Winnls/nf-winnls-lcmapstringa)                 | Mapas una cadena de caracteres por configuración regional.                      |
 | [**ToUnicode**](/windows/win32/api/winuser/nf-winuser-tounicode)              | Convierte un código de clave virtual en un carácter Unicode. |
 | [**MultiByteToWideChar**](/windows/desktop/api/Stringapiset/nf-stringapiset-multibytetowidechar) | Mapas una cadena multibyte en una cadena Unicode.            |
-| [**WideCharToMultiByte**](/windows/desktop/api/Stringapiset/nf-stringapiset-widechartomultibyte) | Mapas una cadena Unicode en una cadena multibyte.            |
+| [**WideCharToMultiByte**](/windows/desktop/api/Stringapiset/nf-stringapiset-widechartomultibyte) | Mapas una cadena Unicode a una cadena multibyte.            |
 
 
 

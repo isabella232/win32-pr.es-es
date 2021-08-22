@@ -4,16 +4,16 @@ description: IAgentUserInput GetItemID
 ms.assetid: 3afd4d9d-51bb-4086-bf7b-7c9a2ddcd807
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 716ae1386d87fa6051111801c5603837519eeb4c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fde65fc10a4cb467bd69f200e3244f1a2a73c0424d64f6a4babbd2cefd18e0be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105704561"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119609265"
 ---
 # <a name="iagentuserinputgetitemid"></a>IAgentUserInput::GetItemID
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede que no esté disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT GetItemID(
@@ -22,16 +22,16 @@ HRESULT GetItemID(
 );
 ```
 
-Recupera el identificador de una alternativa de [**comando**](command-event.md) pasada a una devolución de llamada de [**IAgentNotifySink:: Command**](iagentnotifysink--command.md) .
+Recupera el identificador de una alternativa [**command**](command-event.md) pasada a una devolución de llamada [**IAgentNotifySink::Command.**](iagentnotifysink--command.md)
 
--   Devuelve S \_ OK para indicar que la operación se realizó correctamente.
+-   Devuelve S \_ OK para indicar que la operación se ha realizado correctamente.
 
 <dl> <dt>
 
 <span id="dwItemIndex"></span><span id="dwitemindex"></span><span id="DWITEMINDEX"></span>*dwItemIndex*
 </dt> <dd>
 
-Índice de la alternativa de [**comando**](command-event.md) que se pasa a la devolución de llamada de [**IAgentNotifySink:: Command**](iagentnotifysink--command.md) .
+Índice de la alternativa [**Command**](command-event.md) pasada a la devolución de llamada [**IAgentNotifySink::Command.**](iagentnotifysink--command.md)
 
 </dd> <dt>
 
@@ -42,16 +42,16 @@ Dirección de una variable que recibe el identificador de un [**comando**](comma
 
 </dd> </dl>
 
-Si la entrada de voz desencadena la devolución de llamada [**IAgentNotifySink:: Command**](iagentnotifysink--command.md) , el servidor devuelve los identificadores para los [**comandos**](command-event.md) coincidentes definidos por la aplicación.
+Si la entrada de voz desencadena la devolución de llamada [**IAgentNotifySink::Command,**](iagentnotifysink--command.md) el servidor devuelve los ID de los comandos [**correspondientes definidos**](command-event.md) por la aplicación.
 
 ## <a name="see-also"></a>Consulte también
 
-[**IAgentUserInput:: GetItemConfidence**](iagentuserinput--getitemconfidence.md), [**IAgentUserInput:: GetItemText**](iagentuserinput--getitemtext.md), [**IAgentUserInput:: GetAllItemData**](iagentuserinput--getallitemdata.md)
+[**IAgentUserInput::GetItemConfidence**](iagentuserinput--getitemconfidence.md), [**IAgentUserInput::GetItemText**](iagentuserinput--getitemtext.md), [**IAgentUserInput::GetAllItemData**](iagentuserinput--getallitemdata.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

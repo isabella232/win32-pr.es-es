@@ -1,9 +1,9 @@
 ---
-title: BCC (sendEmailType), elemento
-description: Contiene las direcciones de correo electrónico utilizadas en la línea CCO de un mensaje de correo electrónico.
+title: Elemento Bcc (sendEmailType)
+description: Contiene las direcciones de correo electrónico usadas en la línea CCO de un mensaje de correo electrónico.
 ms.assetid: c80407d0-3b3f-4efe-91de-7a3a7abc996f
 keywords:
-- Elemento BCC Programador de tareas
+- Bcc element Programador de tareas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f262b8f5d74018a4622f915def85df5e16108cdb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1409d50a0317758534724b9e2c3a9796c4dd0cb40e666f58fc65ca0771da9762
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119659045"
 ---
-# <a name="bcc-sendemailtype-element"></a>BCC (sendEmailType), elemento
+# <a name="bcc-sendemailtype-element"></a>Elemento Bcc (sendEmailType)
 
-Contiene las direcciones de correo electrónico utilizadas en la línea CCO de un mensaje de correo electrónico.
+Contiene las direcciones de correo electrónico usadas en la línea CCO de un mensaje de correo electrónico.
 
 ``` syntax
 <xs:element name="Bcc"
@@ -30,7 +30,7 @@ Contiene las direcciones de correo electrónico utilizadas en la línea CCO de u
  />
 ```
 
-El elemento **BCC** se define mediante el tipo complejo [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) .
+El tipo complejo [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) define el elemento **Bcc.**
 
 ## <a name="parent-element"></a>Elemento primario
 
@@ -42,20 +42,20 @@ El elemento **BCC** se define mediante el tipo complejo [**sendEmailType**](task
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para el desarrollo de C++, vea la [**propiedad BCC de IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_bcc).
+Para el desarrollo de C++, [**vea Bcc Property of IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_bcc).
 
-Para el desarrollo de scripts, vea [**EmailAction. BCC**](emailaction-bcc.md).
+Para el desarrollo de scripts, [**vea EmailAction.Bcc**](emailaction-bcc.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

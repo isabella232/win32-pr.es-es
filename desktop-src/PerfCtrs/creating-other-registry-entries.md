@@ -13,11 +13,11 @@ ms.locfileid: "119683975"
 ---
 # <a name="creating-other-registry-entries"></a>Crear otras entradas del Registro
 
-La función [**OpenPerformanceData**](/previous-versions/windows/desktop/legacy/aa372200(v=vs.85)) del archivo DLL de rendimiento toma un argumento de cadena como entrada. Para proporcionar una cadena de entrada a la función abierta, incluya una **clave de vinculación** en la **clave de** servicios. La **clave Linkage** contiene un **valor export.** Establezca los datos de valor de **Exportar** en la cadena de entrada que desea pasar a la función abierta. El tipo de datos **de Export** es REG **MULTI \_ \_ SZ.**
+La función [**OpenPerformanceData**](/previous-versions/windows/desktop/legacy/aa372200(v=vs.85)) del archivo DLL de rendimiento toma un argumento de cadena como entrada. Para proporcionar una cadena de entrada a la función abierta, incluya una **clave de vinculación** en la **clave de** servicios. La **clave Vinculación** contiene un **valor export.** Establezca los datos de valor de **Exportar** en la cadena de entrada que desea pasar a la función abierta. El tipo de datos **de Export** es REG **MULTI \_ \_ SZ.**
 
-Si **Export** no está definido **(export** es opcional), el sistema pasa **NULL** a la [**función OpenPerformanceData.**](/previous-versions/windows/desktop/legacy/aa372200(v=vs.85))
+Si **no** se define Export **(La exportación** es opcional), el sistema pasa **NULL** a la [**función OpenPerformanceData.**](/previous-versions/windows/desktop/legacy/aa372200(v=vs.85))
 
-Normalmente, si más de una aplicación comparte el  mismo archivo  DLL de rendimiento, cada aplicación incluye una clave de vinculación y un valor de exportación para proporcionar el contexto en el que la aplicación llama al archivo DLL.
+Normalmente, si más de una aplicación comparte el  mismo archivo  DLL de rendimiento, cada aplicación incluye una clave de vinculación y un valor de exportación para proporcionar contexto sobre a qué aplicación llama al archivo DLL.
 
 A continuación se muestran las entradas del Registro:
 

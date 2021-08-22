@@ -4,12 +4,12 @@ ms.assetid: 931455e3-1301-4a68-93c3-2674b3d4c491
 title: Funciones de sesión (Administración de recursos compartidos de red)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cdde451eb2942171569b24c36aae5d5742208e5
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: fa914bd747f8b47e4bc4086245f425ba2d290fb9b0a6de256781a9fbca7e1516
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119580345"
 ---
 # <a name="session-functions-network-share-management"></a>Funciones de sesión (Administración de recursos compartidos de red)
 
@@ -44,7 +44,7 @@ Las funciones de sesión están disponibles en cinco niveles de información:
 [**INFORMACIÓN \_ DE SESIÓN \_ 502**](/windows/desktop/api/Lmshare/ns-lmshare-session_info_502)  
 </dl>
 
-Si está programando para Active Directory, es posible que pueda llamar a determinados métodos de la interfaz de servicio (ADSI) de Active Directory para lograr la misma funcionalidad que puede lograr llamando a las funciones de sesión de administración de red. Para obtener más información, [**vea IADsSession**](/windows/desktop/api/iads/nn-iads-iadssession) and [**IADsFileServiceOperations**](/windows/desktop/api/iads/nn-iads-iadsfileserviceoperations).
+Si está programando para Active Directory, es posible que pueda llamar a determinados métodos de la interfaz de servicio de Active Directory (ADSI) para lograr la misma funcionalidad que puede lograr llamando a las funciones de sesión de administración de red. Para obtener más información, [**vea IADsSession**](/windows/desktop/api/iads/nn-iads-iadssession) and [**IADsFileServiceOperations**](/windows/desktop/api/iads/nn-iads-iadsfileserviceoperations).
 
  
 

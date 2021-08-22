@@ -1,19 +1,19 @@
 ---
-description: Esta propiedad representa el tiempo total entre cada apertura y guardado, acumulado desde que se creó el documento. Esto se mide en unidades de 100 NS, no en milisegundos. VT \_ FILETIME para controladores IPropertySetStorage (heredado).
+description: Esta propiedad representa el tiempo total entre cada apertura y guardado, acumulado desde la creación del documento. Esto se mide en unidades de 100ns, no en milisegundos. VT \_ FILETIME para controladores IPropertySetStorage (heredados).
 ms.assetid: 27d374ae-366c-4b2c-88a8-93e760db6fba
 title: System.Document. TotalEditingTime
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b135433713028d302ed4dac82b530a332917434
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f40ea0715492be71e9896699906ac9de953cb2993e05d11bd55f1f89b9e88f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104360983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119597945"
 ---
 # <a name="systemdocumenttotaleditingtime"></a>System.Document. TotalEditingTime
 
-Esta propiedad representa el tiempo total entre cada apertura y guardado, acumulado desde que se creó el documento. Esto se mide en unidades de 100 NS, no en milisegundos. VT \_ FILETIME para controladores IPropertySetStorage (heredado)
+Esta propiedad representa el tiempo total entre cada apertura y guardado, acumulado desde la creación del documento. Esto se mide en unidades de 100ns, no en milisegundos. VT \_ FILETIME para controladores IPropertySetStorage (heredado)
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -46,9 +46,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -63,7 +63,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -75,7 +75,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -93,7 +93,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  
