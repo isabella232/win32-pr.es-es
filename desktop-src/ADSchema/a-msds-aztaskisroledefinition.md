@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-AZ-Task-is-role-Definition
-description: Un campo booleano que indica si AzTask es una tarea clásica o una definición de rol.
+title: Atributo ms-DS-Az-Task-Is-Role-Definition
+description: Campo booleano que indica si AzTask es una tarea clásica o una definición de roles.
 ms.assetid: e13e297d-f5df-4ed1-a8f3-576432b8ac84
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de definición de rol de MS-DS-AZ-Task-is
-- Esquema de AD de atributo msDS-AzTaskIsRoleDefinition
+- Esquema de AD del atributo ms-DS-Az-Task-Is-Role-Definition
+- Esquema de AD del atributo msDS-AzTaskIsRoleDefinition
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b09b64e5c812348b270540a5f791779df9774d8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8001d156553fa712b34d3e5d6a5991137bb76a7f1f321db61f20e300e8fc16ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105658892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552745"
 ---
-# <a name="ms-ds-az-task-is-role-definition-attribute"></a>atributo MS-DS-AZ-Task-is-role-Definition
+# <a name="ms-ds-az-task-is-role-definition-attribute"></a>Atributo ms-DS-Az-Task-Is-Role-Definition
 
-Un campo booleano que indica si AzTask es una tarea clásica o una definición de rol.
+Campo booleano que indica si AzTask es una tarea clásica o una definición de roles.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-DS-AZ-Task-is-role-Definition        |
-| Nombre para mostrar de LDAP | msDS-AzTaskIsRoleDefinition             |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | Administrador de AzRoles                           |
+| CN                | ms-DS-Az-Task-Is-Role-Definition        |
+| Ldap-Display-Name | msDS-AzTaskIsRoleDefinition             |
+| Size              | \-                                      |
+| Actualizar privilegios  | Administrador de AzRoles                           |
 | Frecuencia de actualización  | Durante la inicialización o el cambio de directiva. |
 | Attribute-Id      | 1.2.840.113556.1.4.1818                 |
-| System-ID-GUID    | 7b078544-6c82-4fe9-872f-ff48ad2b2e26    |
-| Sintaxis            | [**Booleano**](s-boolean.md)            |
+| System-Id-Guid    | 7b078544-6c82-4fe9-872f-ff48ad2b2e26    |
+| Syntax            | [**Boolean**](s-boolean.md)            |
 
 
 
@@ -54,18 +54,18 @@ Un campo booleano que indica si AzTask es una tarea clásica o una definición d
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | \-                                                |
+| Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Clases usadas en        | [**MS-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Un campo booleano que indica si AzTask es una tarea clásica o una definición d
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | \-                                                |
+| Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Clases usadas en        | [**MS-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -94,20 +94,20 @@ Un campo booleano que indica si AzTask es una tarea clásica o una definición d
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | \-                                                |
+| Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Clases usadas en        | [**MS-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Un campo booleano que indica si AzTask es una tarea clásica o una definición d
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | \-                                                |
+| Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Clases usadas en        | [**MS-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Un campo booleano que indica si AzTask es una tarea clásica o una definición d
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------|
-| Identificador de vínculo                | \-                                                |
+| Id. de vínculo                | \-                                                |
 | MAPI-Id                | \-                                                |
-| System-Only            | False                                             |
-| Tiene un único valor       | True                                              |
-| Está indexado             | False                                             |
-| En el catálogo global      | False                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                      |
+| System-Only            | Falso                                             |
+| Es de un solo valor       | Verdadero                                              |
+| Está indexado             | Falso                                             |
+| En el catálogo global      | Falso                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
 | System-Flags           | 0x00000010                                        |
-| Clases usadas en        | [**MS-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Clases usadas en        | [**ms-DS-Az-Task**](c-msds-aztask.md)<br/> |
 
 
 

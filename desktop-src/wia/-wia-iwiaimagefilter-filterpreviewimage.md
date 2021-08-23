@@ -1,7 +1,7 @@
 ---
 description: Filtra la imagen de vista previa.
 ms.assetid: 1710211a-a35c-4a51-b3bb-6f03f234f247
-title: 'IWiaImageFilter:: FilterPreviewImage (método) (WIA. h)'
+title: Método IWiaImageFilter::FilterPreviewImage (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 882aaf0d131ae6fe062c00c0181e2f913a0e1bc5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96b1d8ce92a847dcd4ffcebca6b45df2b652ad74c1216fc60b8aac72bb6a12ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119659725"
 ---
-# <a name="iwiaimagefilterfilterpreviewimage-method"></a>IWiaImageFilter:: FilterPreviewImage (método)
+# <a name="iwiaimagefilterfilterpreviewimage-method"></a>IWiaImageFilter::FilterPreviewImage (método)
 
 Filtra la imagen de vista previa.
 
@@ -42,68 +42,68 @@ HRESULT FilterPreviewImage(
 
 <dl> <dt>
 
-*lFlags* \[ de\]
+*lFlags* \[ En\]
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
 No se utiliza. Establecer en 0.
 
 </dd> <dt>
 
-*pWiaChildItem2* \[ de\]
+*pWiaChildItem2* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IWiaItem2**](-wia-iwiaitem2.md) \** _
+Tipo: **[ **IWiaItem2**](-wia-iwiaitem2.md)\***
 
 Elemento que se procesa.
 
 </dd> <dt>
 
-_InputImageExtents * \[ en\]
+*InputImageExtents* \[ En\]
 </dt> <dd>
 
-Tipo: **Rect**
+Tipo: **RECT**
 
-Las coordenadas (en el área de adquisición física) de la imagen que el componente de vista previa almacena internamente en caché.
+Coordenadas (en el área de adquisición física) de la imagen que el componente de vista previa almacena en caché internamente.
 
 </dd> <dt>
 
-*pInputStream* \[ de\]
+*pInputStream* \[ En\]
 </dt> <dd>
 
-Tipo: **[IStream](/windows/win32/api/objidl/nn-objidl-istream) \** _
+Tipo: **[IStream](/windows/win32/api/objidl/nn-objidl-istream)\***
 
-Puntero a la interfaz [IStream](/windows/win32/api/objidl/nn-objidl-istream) para los datos de la imagen almacenada en caché que se filtran.
+Puntero a la interfaz [IStream](/windows/win32/api/objidl/nn-objidl-istream) para los datos de imagen almacenados en caché que se filtran.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-No llame a este método directamente desde su aplicación.
+No llame a este método directamente desde la aplicación.
 
-*pWiaChildItem2* debe ser un elemento secundario del *pWiaItem2* que se pasó a [**IWiaImageFilter:: InitializeFilter**](-wia-iwiaimagefilter-initializefilter.md).
+*pWiaChildItem2* debe ser un elemento secundario de *pWiaItem2* que se pasó a [**IWiaImageFilter::InitializeFilter**](-wia-iwiaimagefilter-initializefilter.md).
 
-*InputImageExtents* es necesario porque el filtro de procesamiento de imágenes es responsable de recortar el área de imagen que *pWiaChildItem2* representa de los datos de imagen pasados a través de *pInputStream*.
+*InputImageExtents* es necesario porque el filtro de procesamiento de imágenes es responsable de eliminar el área de imagen que *pWiaChildItem2* representa a partir de los datos de imagen pasados a través *de pInputStream*.
 
-Una aplicación debe asegurarse de que *pWiaChildItem2* tiene el mismo formato de imagen \_ ( \_ formato de IPA de WIA), resolución (IP \_ de WIA \_ XRES y WIA \_ IPS \_ YRES) y profundidad de bits ( \_ \_ profundidad de IPA de WIA) que tenía *pWiaItem2* cuando se pasó a [**GetNewPreview**](-wia-iwiapreview-getnewpreview.md).
+Una aplicación debe asegurarse de que *pWiaChildItem2* tiene el mismo formato de imagen (WIA \_ IPA FORMAT), resolución \_ (WIA IPS XRES y WIA IPS YRES) y profundidad de \_ \_ bits \_ \_ (WIA \_ IPA DEPTH) que tenía \_ *pWiaItem2* [](-wia-iwiapreview-getnewpreview.md)cuando se pasó a GetNewPreview .
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

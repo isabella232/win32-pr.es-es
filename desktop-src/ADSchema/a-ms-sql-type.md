@@ -1,11 +1,11 @@
 ---
-title: Atributo de tipo MS-SQL
-description: El tipo de replicación utilizado por este servidor SQL Server.
+title: Atributo MS-SQL-Type
+description: Tipo de replicación utilizado por este SQL servidor.
 ms.assetid: 8e7fa9ab-9a25-4ee3-9134-68af698a5fb8
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de tipo MS-SQL
-- Esquema de AD de atributo de tipo mS-SQL
+- Esquema de AD del atributo MS-SQL-Type
+- Esquema de AD del atributo mS-SQL-Type
 topic_type:
 - apiref
 api_name:
@@ -14,20 +14,20 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 057b85b0c522a891cc31cde699fd062897c54818
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 15850884b8071fc103abf2c8d3f12ad68d4f5ed946ef2b491b4907b87b1cb524
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103906230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583295"
 ---
-# <a name="ms-sql-type-attribute"></a>Atributo de tipo MS-SQL
+# <a name="ms-sql-type-attribute"></a>Atributo MS-SQL-Type
 
-El tipo de replicación utilizado por este servidor SQL Server. Los valores siguientes son los valores posibles para este atributo.
+Tipo de replicación utilizado por este SQL servidor. Los valores siguientes son los valores posibles para este atributo.
 
 
 
-| Value        | Descripción                           |
+| Valor        | Descripción                           |
 |--------------|---------------------------------------|
 | 0<br/> | Replicación transaccional.<br/> |
 | 1<br/> | Replicación de instantáneas.<br/>      |
@@ -41,14 +41,14 @@ El tipo de replicación utilizado por este servidor SQL Server. Los valores sigu
 
 | Entrada | Value |
 |-------------------|---------------------------------------------|
-| CN                | Tipo MS-SQL                                 |
-| Nombre para mostrar de LDAP | Tipo mS-SQL                                 |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de dominio                        |
-| Frecuencia de actualización  | Cuando la replicación está configurada.                 |
+| CN                | MS-SQL-Type                                 |
+| Ldap-Display-Name | mS-SQL-Type                                 |
+| Size              | \-                                          |
+| Actualizar privilegios  | Administrador de dominio                        |
+| Frecuencia de actualización  | Cuando se configura la replicación.                 |
 | Attribute-Id      | 1.2.840.113556.1.4.1391                     |
-| System-ID-GUID    | ca48eba8-ccee-11d2-9993-0000f87a57d4        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | ca48eba8-ccee-11d2-9993-0000f87a57d4        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -67,13 +67,13 @@ El tipo de replicación utilizado por este servidor SQL Server. Los valores sigu
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                  |
-| System-Only            | False                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                |
-| Está indexado             | False                                                                                                                               |
-| En el catálogo global      | False                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                        |
+| System-Only            | Falso                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                |
+| Está indexado             | Falso                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
@@ -88,13 +88,13 @@ El tipo de replicación utilizado por este servidor SQL Server. Los valores sigu
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                  |
-| System-Only            | False                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                |
-| Está indexado             | False                                                                                                                               |
-| En el catálogo global      | False                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                        |
+| System-Only            | Falso                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                |
+| Está indexado             | Falso                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
@@ -109,13 +109,13 @@ El tipo de replicación utilizado por este servidor SQL Server. Los valores sigu
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                  |
-| System-Only            | False                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                |
-| Está indexado             | False                                                                                                                               |
-| En el catálogo global      | False                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                        |
+| System-Only            | Falso                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                |
+| Está indexado             | Falso                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
@@ -128,15 +128,15 @@ El tipo de replicación utilizado por este servidor SQL Server. Los valores sigu
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                  |
-| System-Only            | False                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                |
-| Está indexado             | False                                                                                                                               |
-| En el catálogo global      | False                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                        |
+| System-Only            | Falso                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                |
+| Está indexado             | Falso                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
@@ -151,13 +151,13 @@ El tipo de replicación utilizado por este servidor SQL Server. Los valores sigu
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                  |
-| System-Only            | False                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                |
-| Está indexado             | False                                                                                                                               |
-| En el catálogo global      | False                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                        |
+| System-Only            | Falso                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                |
+| Está indexado             | Falso                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |
@@ -172,13 +172,13 @@ El tipo de replicación utilizado por este servidor SQL Server. Los valores sigu
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                  |
+| Id. de vínculo                | \-                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                  |
-| System-Only            | False                                                                                                                               |
-| Tiene un único valor       | True                                                                                                                                |
-| Está indexado             | False                                                                                                                               |
-| En el catálogo global      | False                                                                                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                        |
+| System-Only            | Falso                                                                                                                               |
+| Es de un solo valor       | Verdadero                                                                                                                                |
+| Está indexado             | Falso                                                                                                                               |
+| En el catálogo global      | Falso                                                                                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                          |

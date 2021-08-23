@@ -1,9 +1,9 @@
 ---
-title: Tipo simple de UInt8Type
+title: Tipo simple UInt8Type
 description: Define un tipo de byte sin signo.
 ms.assetid: bda12d06-683f-4183-a84b-2bc3159c4eff
 keywords:
-- UInt8Type de tipo simple de registro
+- Tipo simple EventLog de UInt8Type
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e3236d7416cbb199037813a8ae870d4f87718081
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 81a48c21e34edecbf4dfb4f9c2e87c85a77e3f500ec42b8607f1de004e7679ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105695921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119511315"
 ---
-# <a name="uint8type-simple-type"></a>Tipo simple de UInt8Type
+# <a name="uint8type-simple-type"></a>Tipo simple UInt8Type
 
 Define un tipo de byte sin signo. El valor se puede especificar como un entero de 1 byte o un valor hexadecimal en el intervalo comprendido entre 0 y 255.
 
@@ -36,10 +36,10 @@ Define un tipo de byte sin signo. El valor se puede especificar como un entero d
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

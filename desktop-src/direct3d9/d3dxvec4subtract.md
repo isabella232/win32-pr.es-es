@@ -1,7 +1,7 @@
 ---
 description: Resta dos vectores 4D.
 ms.assetid: 3bc55b38-818e-40eb-859e-495ee28fc4ae
-title: Función D3DXVec4Subtract (D3dx9math. h)
+title: Función D3DXVec4Subtract (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 1110930d8e37cf04f7de5129c2a72db4ecc4ac8d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f49299eab666f92b401bb3fee5ac0c828d607a38893f6bfe4a58e826f84b7493
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607575"
 ---
-# <a name="d3dxvec4subtract-function"></a>D3DXVec4Subtract función)
+# <a name="d3dxvec4subtract-function"></a>Función D3DXVec4Subtract
 
 Resta dos vectores 4D.
 
@@ -47,25 +47,25 @@ D3DXVECTOR4* D3DXVec4Subtract(
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Puntero a la estructura [**D3DXVECTOR4**](d3dxvector4.md) que es el resultado de la operación.
+Puntero a la [**estructura D3DXVECTOR4**](d3dxvector4.md) que es el resultado de la operación.
 
 </dd> <dt>
 
-*pV1* \[ de\]
+*pV1* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntero a una estructura de [**D3DXVECTOR4**](d3dxvector4.md) de origen.
+Puntero a una estructura [**D3DXVECTOR4 de**](d3dxvector4.md) origen.
 
 </dd> <dt>
 
-*pV2* \[ de\]
+*pV2* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR4**](d3dxvector4.md) \***
 
-Puntero a una estructura de [**D3DXVECTOR4**](d3dxvector4.md) de origen.
+Puntero a una estructura [**D3DXVECTOR4 de**](d3dxvector4.md) origen.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ Puntero a una estructura de [**D3DXVECTOR4**](d3dxvector4.md) de origen.
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Puntero a una estructura [**D3DXVECTOR4**](d3dxvector4.md) que es la diferencia de dos vectores.
+Puntero a una [**estructura D3DXVECTOR4**](d3dxvector4.md) que es la diferencia de dos vectores.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El valor devuelto para esta función es el mismo valor que se devuelve en el parámetro *pOut* . De esta manera, la función **D3DXVec4Subtract** se puede usar como parámetro de otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec4Subtract** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
@@ -97,7 +97,7 @@ El valor devuelto para esta función es el mismo valor que se devuelve en el par
 [Funciones matemáticas](dx9-graphics-reference-d3dx-functions-math.md)
 </dt> <dt>
 
-[**D3DXVec3Add**](d3dxvec3add.md)
+[**D3DXVec3Agregue**](d3dxvec3add.md)
 </dt> <dt>
 
 [**D3DXVec3Scale**](d3dxvec3scale.md)

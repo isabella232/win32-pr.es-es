@@ -1,7 +1,7 @@
 ---
-description: El método SetFloatValue agrega un nuevo valor FLOAT (Type VT \_ R4) o sobrescribe uno existente.
+description: El método SetFloatValue agrega un nuevo valor FLOAT (tipo VT \_ R4) o sobrescribe uno existente.
 ms.assetid: 1e0c9d19-47bf-4d93-a0c0-27e2c4897012
-title: 'IPortableDeviceValues:: SetFloatValue (método) (PortableDeviceTypes. h)'
+title: Método IPortableDeviceValues::SetFloatValue (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 60b42217c925c83e96f2c893c7bc7f11449ebdd6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 347cf93fe68e989eebb921472d1e81e4d0aa650e92d2c535dfdd93a6d823ed1d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105708704"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657815"
 ---
-# <a name="iportabledevicevaluessetfloatvalue-method"></a>IPortableDeviceValues:: SetFloatValue (método)
+# <a name="iportabledevicevaluessetfloatvalue-method"></a>IPortableDeviceValues::SetFloatValue (método)
 
-El método **SetFloatValue** agrega un nuevo valor **float** (Type VT \_ R4) o sobrescribe uno existente.
+El **método SetFloatValue** agrega un nuevo valor **FLOAT** (tipo VT \_ R4) o sobrescribe uno existente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,37 +41,37 @@ HRESULT SetFloatValue(
 
 <dl> <dt>
 
-*clave* \[ de de\]
+*key* \[ En\]
 </dt> <dd>
 
-**REFPROPERTYKEY** que especifica el elemento que se va a crear o sobrescribir.
+**REFPROPERTYKEY que** especifica el elemento que se creará o sobrescribirá.
 
 </dd> <dt>
 
-*Valor* \[ de de\]
+*Valor* \[ En\]
 </dt> <dd>
 
-Un valor de **tipo float** que contiene el nuevo valor.
+Float **que** contiene el nuevo valor.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si un valor existente tiene la misma clave que especifica el parámetro de *clave* , sobrescribe el valor existente sin ninguna advertencia.
+Si un valor existente tiene la misma clave especificada por el parámetro *key,* sobrescribe el valor existente sin ninguna advertencia.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Si un valor existente tiene la misma clave que especifica el parámetro de *clav
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>PortableDeviceTypes.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>PortableDeviceGUIDs.lib</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Si un valor existente tiene la misma clave que especifica el parámetro de *clav
 
 <dl> <dt>
 
-[**Interfaz IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::GetFloatValue**](iportabledevicevalues-getfloatvalue.md)

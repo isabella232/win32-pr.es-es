@@ -7,26 +7,26 @@ MSHAttr:
 title: IPType
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 918355cdfc90863539da5f29aff542654a95f5e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 736e6a72a04c662356b65c331471eea3ec3eb2a5e7b601d1b7ae2eaee12db3c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104542195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607385"
 ---
 # <a name="span-idwwan_profile_v4element_iptypespanmbnprofileextiptype-v4"></a><span id="WWAN_profile_v4.element_IPType"></span>MBNProfileExt \/ ... \/ IPType (v4)
 
 Especifica el tipo de IP que se va a usar en esta conexión de datos.
 
-Este elemento es nuevo en V4 del esquema. El elemento puede tener uno de los valores siguientes.
+Este elemento es nuevo en la versión 4 del esquema. El elemento puede tener uno de los valores siguientes.
 
-| Value   | Significado                                       |
+| Valor   | Significado                                       |
 |---------|-----------------------------------------------|
-| Valor predeterminado | El tipo de IP se va a seleccionar por las capas inferiores     |
-| IPv4    | Usar IPv4                                      |
+| Valor predeterminado | El tipo de IP se debe seleccionar por capas inferiores.     |
+| IPv4    | Uso de IPv4                                      |
 | IPv6    | Usar IPv6                                      |
-| IPv4v6  | Usar IPv4 y/o IPv6, como están disponibles.           |
-| XLAT    | Usar 464XLAT para canalizar redes IPv4 a través de IPv6 |
+| IPv4v6  | Use IPv4 o IPv6, según esté disponible.           |
+| XLAT    | Uso de 464XLAT para tuner IPv4 a través de redes IPv6 |
 
  
 
@@ -40,7 +40,7 @@ Este elemento es nuevo en V4 del esquema. El elemento puede tener uno de los val
 &nbsp;&nbsp;[\<Context\>](element-1-context.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<IPType\>**
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <IPType>

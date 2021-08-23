@@ -1,7 +1,7 @@
 ---
-description: Establece las horas de muestra del control.
+description: Establece las horas del ejemplo de control.
 ms.assetid: 17ffa106-8b6b-4077-895c-03400505c2a0
-title: Método ControlSampleTimes de la clase Msvm_MetricService
+title: Método ControlSampleTimes de la Msvm_MetricService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1bb3797523153592610714406306035f59fc844c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ea13050c2c8e52d5786a97b3b749f10e48a73c4ecf1274e0415967ad25c9d9ba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521485"
 ---
-# <a name="controlsampletimes-method-of-the-msvm_metricservice-class"></a>Método ControlSampleTimes de la \_ clase MetricService de MSVM
+# <a name="controlsampletimes-method-of-the-msvm_metricservice-class"></a>Método ControlSampleTimes de la clase \_ MetricService de Msvm
 
-Establece las horas de muestra del control.
+Establece las horas del ejemplo de control.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,30 +41,30 @@ uint32 ControlSampleTimes(
 
 <dl> <dt>
 
-*StartSampleTime* \[ de\]
+*StartSampleTime* \[ En\]
 </dt> <dd>
 
-Un momento dado en el que se va a iniciar el muestreo de las métricas.
+Momento en el que se va a iniciar el muestreo de las métricas.
 
-Un valor de 99990101000000.000000 + 000 indicará que el muestreo debe iniciarse en la próxima vez que se sincronice con la hora completa. El muestreo se sincroniza con la hora completa si los segundos desde el intervalo de ejemplo de módulo medianoche en segundos es igual a 0.
+Un valor de 99990101000000.000000+000 indicará que el muestreo debe comenzar la próxima vez que se sincronice a la hora completa. El muestreo se sincroniza con la hora completa si los segundos desde el intervalo de muestra del módulo de medianoche en segundos es igual a 0.
 
 </dd> <dt>
 
-*PreferredSampleInterval* \[ de\]
+*PreferredSampleInterval* \[ En\]
 </dt> <dd>
 
-Tiempo de intervalo de muestra preferido. Para obtener métricas que se pueden correlacionar, se recomienda elegir el intervalo de ejemplo de modo que el tiempo de intervalo de ejemplo de módulo 3600 en segundos sea igual a 0.
+Tiempo de intervalo de ejemplo preferido. Para obtener métricas correlacionables, se recomienda elegir el intervalo de muestra de forma que el tiempo de intervalo de muestra de módulo de 3600 en segundos sea igual a 0.
 
-Es responsabilidad de la implementación del servicio de métricas de CIM decidir si se respeta el tiempo de intervalo de muestra solicitado.
+Es responsabilidad de la implementación del servicio de métricas CIM decidir si se respeta el tiempo de intervalo de ejemplo solicitado.
 
-El cliente CIM puede comprobar si los proveedores de métricas respetan el tiempo de intervalo de muestra solicitado recuperando instancias de BaseMetricDefinition relacionadas y comprobando el contenido de la \_ propiedad "CIM BaseMetricDefinition. SampleInterval".
+El cliente CIM puede comprobar si los proveedores de métricas respetan o no el tiempo de intervalo de ejemplo solicitado mediante la recuperación de instancias de BaseMetricDefinition relacionadas y la comprobación del contenido de la propiedad "CIM \_ BaseMetricDefinition.SampleInterval".
 
 </dd> <dt>
 
-*RestartGathering* \[ de\]
+*RestartGathering* \[ En\]
 </dt> <dd>
 
-Valor booleano que, cuando se establece en TRUE, solicita que la recopilación de todas las métricas asociadas al servicio de métrica se reinicie con esta llamada al método.
+Booleano que, cuando se establece en TRUE, solicita que la recopilación de todas las métricas asociadas al servicio de métricas se vuelva a iniciar con esta llamada de método.
 
 </dd> </dl>
 
@@ -86,7 +86,7 @@ Este método devuelve uno de los siguientes valores:
 **Método reservado** (..)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -96,9 +96,9 @@ Este método devuelve uno de los siguientes valores:
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8.1<br/>                                                                                  |
-| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Server 2012 R2<br/>                                                                       |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -107,7 +107,7 @@ Este método devuelve uno de los siguientes valores:
 
 <dl> <dt>
 
-[**MSVM \_ MetricService**](msvm-metricservice.md)
+[**Msvm \_ MetricService**](msvm-metricservice.md)
 </dt> </dl>
 
  

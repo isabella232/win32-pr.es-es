@@ -1,7 +1,7 @@
 ---
 description: Rellena una matriz con datos de clave de rotación utilizados para la animación de fotogramas clave.
 ms.assetid: 9ae8bc28-d231-4d50-98f0-762b2d2c04e8
-title: 'ID3DXKeyframedAnimationSet:: GetRotationKeys (método) (D3dx9anim. h)'
+title: Método ID3DXKeyframedAnimationSet::GetRotationKeys (D3dx9anim.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: af9242ccf75bc1e5443f040399ffbd8a939ed92e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b95d2591c8eef4b3df22cd8af301bfee9862dd2e3124ecd1cda8d92a589f91df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103821434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493545"
 ---
-# <a name="id3dxkeyframedanimationsetgetrotationkeys-method"></a>ID3DXKeyframedAnimationSet:: GetRotationKeys (método)
+# <a name="id3dxkeyframedanimationsetgetrotationkeys-method"></a>Método ID3DXKeyframedAnimationSet::GetRotationKeys
 
 Rellena una matriz con datos de clave de rotación utilizados para la animación de fotogramas clave.
 
@@ -41,21 +41,21 @@ HRESULT GetRotationKeys(
 
 <dl> <dt>
 
-*Animación* \[ de de\]
+*Animación* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Índice de animación.
 
 </dd> <dt>
 
-*pRotationKeys* \[ de\]
+*pRotationKeys* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **LPD3DXKEY \_ cuaternión**](d3dxkey-quaternion.md)**
+Tipo: **[ **LPD3DXKEY \_ QUATERNION**](d3dxkey-quaternion.md)**
 
-Puntero a una matriz asignada por el usuario de los cuaterniones [**D3DXKEY \_ cuaternión**](d3dxkey-quaternion.md) que el método va a rellenar con datos de rotación de animación.
+Puntero a una matriz asignada por el usuario de [**\_ cuaterniones D3DXKEY QUATERNION**](d3dxkey-quaternion.md) que el método va a rellenar con datos de rotación de animación.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Puntero a una matriz asignada por el usuario de los cuaterniones [**D3DXKEY \_ c
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente: D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,12 +1,12 @@
 ---
-title: IMsTscAxEvents OnEnterFullScreenMode, método
-description: Se llama cuando el cliente entra en el modo de pantalla completa. Por ejemplo, se llama a este evento cuando el usuario presiona la combinación de teclas de método abreviado del modo de pantalla completa (CTRL + ALT + inter).
+title: Método IMsTscAxEvents OnEnterFullScreenMode
+description: Se llama cuando el cliente entra en modo de pantalla completa. Por ejemplo, se llama a este evento cuando el usuario presiona la combinación de teclas de método abreviado de modo de pantalla completa (CTRL+ALT+BREAK).
 ms.assetid: dc772492-59a2-4403-8b9a-0aff1801aa6f
 ms.tgt_platform: multiple
 keywords:
 - Método OnEnterFullScreenMode Servicios de Escritorio remoto
-- Método OnEnterFullScreenMode Servicios de Escritorio remoto, interfaz IMsTscAxEvents
-- Interfaz IMsTscAxEvents Servicios de Escritorio remoto, método OnEnterFullScreenMode
+- Método OnEnterFullScreenMode Servicios de Escritorio remoto , interfaz IMsTscAxEvents
+- Interfaz IMsTscAxEvents Servicios de Escritorio remoto método , OnEnterFullScreenMode
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 226054fc7b1371bb088deb70ec9e87ea5a340b07
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 31e40da93f0e29fb183cea540b0f195d61c4969d65c2b7829bf86d8e3c8eba81
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103996592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512405"
 ---
-# <a name="imstscaxeventsonenterfullscreenmode-method"></a>IMsTscAxEvents:: OnEnterFullScreenMode (método)
+# <a name="imstscaxeventsonenterfullscreenmode-method"></a>Método IMsTscAxEvents::OnEnterFullScreenMode
 
-Se llama cuando el cliente entra en el modo de pantalla completa. Por ejemplo, se llama a este evento cuando el usuario presiona la combinación de [teclas de método abreviado](terminal-services-shortcut-keys.md) del modo de pantalla completa (Ctrl + Alt + inter).
+Se llama cuando el cliente entra en modo de pantalla completa. Por ejemplo, se llama a este evento cuando el usuario presiona la combinación de teclas de método abreviado de modo [de pantalla](terminal-services-shortcut-keys.md) completa (CTRL+ALT+BREAK).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,15 +45,15 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |

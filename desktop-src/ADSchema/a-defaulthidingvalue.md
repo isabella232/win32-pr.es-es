@@ -1,11 +1,11 @@
 ---
-title: Atributo oculto-valor predeterminado
-description: Valor booleano que especifica el valor predeterminado de la propiedad del showinadvancedviewonly de las nuevas instancias de esta clase.
+title: Atributo Default-Hiding-Value
+description: Valor booleano que especifica la configuración predeterminada de la propiedad showInAdvancedViewOnly de nuevas instancias de esta clase.
 ms.assetid: aed0030c-7366-440e-b840-75782cb939d1
 ms.tgt_platform: multiple
 keywords:
-- Default-ocultando atributo de valor esquema de AD
-- defaultHidingValue esquema de AD de atributos
+- Esquema de AD del atributo Default-Hiding-Value
+- DefaultHidingValue attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 181487fdada61b092bd5014e0fda777e9ca7da90
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d66ae5157d82c09a8a8d9655bca58c96f5c4efc8cc8c12865ae40f6b9f8eade4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509165"
 ---
-# <a name="default-hiding-value-attribute"></a>Atributo oculto-valor predeterminado
+# <a name="default-hiding-value-attribute"></a>Atributo Default-Hiding-Value
 
-Valor booleano que especifica el valor predeterminado de la propiedad del showinadvancedviewonly de las nuevas instancias de esta clase.
+Valor booleano que especifica la configuración predeterminada de la propiedad showInAdvancedViewOnly de nuevas instancias de esta clase.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | Valor de ocultación predeterminada                 |
-| Nombre para mostrar de LDAP | defaultHidingValue                   |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | Valor predeterminado de ocultación                 |
+| Ldap-Display-Name | defaultHidingValue                   |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.518               |
-| System-ID-GUID    | b7b13116-b82e-11d0-afee-0000f80367c1 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | b7b13116-b82e-11d0-afee-0000f80367c1 |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -44,7 +44,7 @@ Valor booleano que especifica el valor predeterminado de la propiedad del showin
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,13 +56,13 @@ Valor booleano que especifica el valor predeterminado de la propiedad del showin
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -77,13 +77,13 @@ Valor booleano que especifica el valor predeterminado de la propiedad del showin
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -92,19 +92,19 @@ Valor booleano que especifica el valor predeterminado de la propiedad del showin
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -117,15 +117,15 @@ Valor booleano que especifica el valor predeterminado de la propiedad del showin
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -140,13 +140,13 @@ Valor booleano que especifica el valor predeterminado de la propiedad del showin
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -161,13 +161,13 @@ Valor booleano que especifica el valor predeterminado de la propiedad del showin
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -180,15 +180,15 @@ Valor booleano que especifica el valor predeterminado de la propiedad del showin
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------|
-| Identificador de vínculo                | \-                                               |
+| Id. de vínculo                | \-                                               |
 | MAPI-Id                | \-                                               |
-| System-Only            | False                                            |
-| Tiene un único valor       | True                                             |
-| Está indexado             | False                                            |
-| En el catálogo global      | False                                            |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                     |
+| System-Only            | Falso                                            |
+| Es de un solo valor       | Verdadero                                             |
+| Está indexado             | Falso                                            |
+| En el catálogo global      | Falso                                            |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |

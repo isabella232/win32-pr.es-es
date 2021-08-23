@@ -1,9 +1,9 @@
 ---
-title: función glIsTexture (GL. h)
+title: Función glIsTexture (Gl.h)
 description: La función glIsTexture determina si un nombre corresponde a una textura.
 ms.assetid: 89d06642-ff28-4a67-ac7f-ca58150f301e
 keywords:
-- glIsTexture (función) OpenGL
+- Función glIsTexture OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8897cc0eb004da701f28b410f2ca28b6194c9d26
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7db28b6892d5aa0e9eaf98aec50b02ad102db8ba549474c673c6c0d918d799d6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104492604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493355"
 ---
-# <a name="glistexture-function"></a>glIsTexture función)
+# <a name="glistexture-function"></a>Función glIsTexture
 
-La función **glIsTexture** determina si un nombre corresponde a una textura.
+La **función glIsTexture** determina si un nombre corresponde a una textura.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ GLboolean WINAPI glIsTexture(
 
 <dl> <dt>
 
-*degrada* 
+*Textura* 
 </dt> <dd>
 
 Valor que es el nombre de una textura.
@@ -49,24 +49,24 @@ Valor que es el nombre de una textura.
 
 ## <a name="error-codes"></a>Códigos de error
 
-La función [**glGetError**](glgeterror.md) puede recuperar el siguiente código de error.
+La función [**glGetError**](glgeterror.md) puede recuperar el código de error siguiente.
 
 
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el parámetro *Texture* es actualmente el nombre de una textura, la función **glIsTexture** devuelve GL \_ true. La función **glIsTexture** devuelve GL \_ false si *Texture* es cero. También devuelve GL \_ false si es un valor distinto de cero que actualmente no es el nombre de una textura o si se produce un error.
+Si el *parámetro texture* es actualmente el nombre de una textura, la **función glIsTexture** devuelve GL \_ TRUE. La **función glIsTexture** devuelve GL \_ FALSE si la *textura* es cero. También devuelve GL FALSE si es un valor distinto de cero que no es actualmente el nombre de una textura o si \_ se produce un error.
 
-No puede incluir llamadas a **glIsTexture** en las listas de visualización.
+No se pueden incluir llamadas **a glIsTexture en** listas para mostrar.
 
 > [!Note]  
-> La función **glIsTexture** solo está disponible en la versión 1,1 o posterior de OpenGL.
+> La **función glIsTexture** solo está disponible en OpenGL versión 1.1 o posterior.
 
  
 
@@ -74,12 +74,12 @@ No puede incluir llamadas a **glIsTexture** en las listas de visualización.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

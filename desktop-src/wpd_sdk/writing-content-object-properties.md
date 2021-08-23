@@ -4,16 +4,16 @@ ms.assetid: f762a571-83ea-4999-ad49-a51044bc790d
 title: Escribir propiedades de objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 726501c986e73033437de3bee0c11b3beb66150d
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 7e140563c6cf17235d3709e0d53cbfda9ab602076c3e72c010570b004429c96e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657335"
 ---
 # <a name="writing-object-properties"></a>Escribir propiedades de objeto
 
-Los servicios suelen contener objetos secundarios que pertenecen a uno de los formatos que admite cada servicio. Por ejemplo, un servicio Contactos puede admitir varios objetos de contacto con el formato de contacto abstracto. Cada objeto de contacto se describe mediante propiedades relacionadas (nombre de contacto, número de teléfono, dirección de correo electrónico, y así sucesivamente).
+Los servicios suelen contener objetos secundarios que pertenecen a uno de los formatos que admite cada servicio. Por ejemplo, un servicio Contactos puede admitir varios objetos de contacto con el formato de contacto abstracto. Cada objeto de contacto se describe mediante propiedades relacionadas (nombre de contacto, número de teléfono, dirección de correo electrónico, entre otras).
 
 La aplicación WpdServicesApiSample incluye código que muestra cómo una aplicación puede actualizar la propiedad name de un objeto secundario del servicio Contacts determinado. En este ejemplo se usan las siguientes interfaces WPD.
 
@@ -34,7 +34,7 @@ Cuando el usuario elige la opción "8" en la línea de comandos, la aplicación 
 
 Tenga en cuenta que antes de escribir las propiedades del objeto, la aplicación de ejemplo abre un servicio Contactos en un dispositivo conectado.
 
-El código siguiente para el **método WriteContentProperties** muestra cómo la aplicación usa la interfaz [**IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2) para recuperar una [**interfaz IPortableDeviceProperties.**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) Al pasar propertykeys de las propiedades solicitadas al método [**IPortableDeviceProperties::SetValues,**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-getvalues) **WriteContentProperties** actualiza la propiedad name.
+El código siguiente para el **método WriteContentProperties** muestra cómo la aplicación usa la interfaz [**IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2) para recuperar una [**interfaz IPortableDeviceProperties.**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) Al pasar PROPERTYKEYS de las propiedades solicitadas al método [**IPortableDeviceProperties::SetValues,**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-getvalues) **WriteContentProperties** actualiza la propiedad name.
 
 
 ```C++

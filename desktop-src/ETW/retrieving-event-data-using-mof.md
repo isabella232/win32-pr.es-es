@@ -1,25 +1,25 @@
 ---
-description: Recuperar datos de eventos con Managed Object Format (MOF) al consumir eventos. Para consumir datos específicos del evento, el consumidor debe conocer el formato de los datos del evento.
+description: Recuperar datos de eventos con Managed Object Format (MOF) mientras se consumen eventos. Para consumir datos específicos del evento, el consumidor debe conocer el formato de los datos del evento.
 ms.assetid: 13512236-c416-43ba-bf36-b05c5c08d6c9
 title: Recuperación de datos de eventos mediante MOF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f6086c878a0e98c0451d1ba2f1e11e2cd0e9016
-ms.sourcegitcommit: b3839bea8d55c981d53cb8802d666bf49093b428
+ms.openlocfilehash: 35ae767752facc4be6e05c3f763f87513186937da407b3cdab392a3221e09461
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114373144"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582265"
 ---
 # <a name="retrieving-event-data-using-mof"></a>Recuperación de datos de eventos mediante MOF
 
 Para consumir datos específicos del evento, el consumidor debe conocer el formato de los datos del evento. Si el proveedor ha usado MOF para publicar el formato de los datos del evento, puede usar la clase MOF para analizar los datos del evento. Todos los eventos de kernel usan MOF para publicar el formato de los datos del evento. Para obtener información sobre la publicación de eventos, [vea Publishing Your Event Schema](publishing-your-event-schema.md).
 
-El análisis de los datos del evento requiere el uso de la API Windows Management Infrastructure (WMI). El espacio de nombres ETW donde los proveedores publican su clase MOF es \\ wmi raíz. El espacio de nombres ETW contiene tres tipos de clases MOF: la clase MOF del proveedor, la clase MOF de eventos y la clase MOF del tipo de evento. La clase MOF de eventos agrupa lógicamente una o varias clases MOF de tipo de evento. La clase MOF del tipo de evento define los datos de evento reales.
+El análisis de los datos del evento requiere el uso de la API Windows Management Infrastructure (WMI). El espacio de nombres ETW donde los proveedores publican su clase MOF es \\ wmi raíz. El espacio de nombres ETW contiene tres tipos de clases MOF: la clase MOF del proveedor, la clase MOF del evento y la clase MOF del tipo de evento. La clase MOF de eventos agrupa lógicamente una o varias clases MOF de tipo de evento. La clase MOF del tipo de evento define los datos de evento reales.
 
 Una clase MOF de evento contiene un **calificador** de clase Guid cuyo valor debe coincidir con el valor del **miembro Header.Guid** de la [**estructura EVENT \_ TRACE.**](/windows/win32/api/evntrace/ns-evntrace-event_trace) Para asegurarse de que tiene la versión correcta de la clase, compare también el calificador de clase **EventVersion** con el **miembro Header.Class.Version** de la **estructura EVENT \_ TRACE.**
 
-Después de encontrar la clase de eventos correcta, enumere sus clases de tipo de evento secundarias para buscar la clase que contiene el formato de los datos del evento. La clase de tipo de evento correcta contiene un calificador de clase **EventType** cuyo valor coincide con el valor del **miembro Header.Class.Type** de la [**estructura EVENT \_ TRACE.**](/windows/win32/api/evntrace/ns-evntrace-event_trace)
+Después de encontrar la clase de eventos correcta, enumere sus clases de tipo de evento secundarias para buscar la clase que contiene el formato de los datos del evento. La clase de tipo de evento correcta contiene un calificador **de clase EventType** cuyo valor coincide con el valor del **miembro Header.Class.Type** de la [**estructura EVENT \_ TRACE.**](/windows/win32/api/evntrace/ns-evntrace-event_trace)
 
 A continuación, puede usar la API wmi para enumerar las propiedades de la clase MOF. Use los calificadores y el tipo de datos de cada propiedad para determinar el tamaño del elemento de datos de los datos del evento que se va a leer y cómo dar formato a él. Para obtener una lista de calificadores MOF que admite ETW, vea [Calificadores MOF de seguimiento de eventos](event-tracing-mof-qualifiers.md).
 

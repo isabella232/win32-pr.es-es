@@ -1,19 +1,19 @@
 ---
 title: Aplicación de ejemplo de servidor HTTP
-description: Este tema contiene una aplicación de ejemplo que muestra cómo usar la API del servidor HTTP para realizar tareas del lado servidor.
+description: Este tema contiene una aplicación de ejemplo que muestra cómo usar la API de servidor HTTP para realizar tareas del lado servidor.
 ms.assetid: 49952ff5-ac8b-4192-a446-5a117f9a8e52
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42c659d007d6e9325c89b6cef40e8b56f22d376b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b2e6db90d82f723614f6a49f83c4a0b2a63c6bde0159d72720bd2176a98b245b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103776543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119682915"
 ---
 # <a name="http-server-sample-application"></a>Aplicación de ejemplo de servidor HTTP
 
-En la aplicación de ejemplo siguiente se muestra cómo usar la API del servidor HTTP para realizar tareas del lado servidor. El archivo "precomp. h" incluido en el primer ejemplo incluye todos los encabezados necesarios para ejecutar los ejemplos, por ejemplo:
+En la siguiente aplicación de ejemplo se muestra cómo usar la API de servidor HTTP para realizar tareas del lado servidor. El archivo "precomp.h" incluido en el primer ejemplo incluye todos los encabezados necesarios para ejecutar los ejemplos, por ejemplo:
 
 
 ```C++
@@ -38,7 +38,7 @@ En la aplicación de ejemplo siguiente se muestra cómo usar la API del servidor
 
 
 
-## <a name="main-and-preliminaries"></a>Main y Windows°PE
+## <a name="main-and-preliminaries"></a>Main y Preliminaries
 
 
 ```C++
@@ -122,7 +122,7 @@ int __cdecl wmain(
 
 
 
-## <a name="initialize-the-http-service"></a>Inicializar el servicio HTTP
+## <a name="initialize-the-http-service"></a>Inicialización del servicio HTTP
 
 
 ```C++
@@ -158,7 +158,7 @@ int __cdecl wmain(
 
 
 
-## <a name="register-the-urls-to-listen-on"></a>Registrar las direcciones URL para escuchar en
+## <a name="register-the-urls-to-listen-on"></a>Registro de las direcciones URL en las que se escuchará
 
 
 ```C++
@@ -196,7 +196,7 @@ int __cdecl wmain(
 
 
 
-## <a name="call-the-routine-to-receive-a-request"></a>Llamar a la rutina para recibir una solicitud
+## <a name="call-the-routine-to-receive-a-request"></a>Llamada a la rutina para recibir una solicitud
 
 
 ```C++
@@ -309,7 +309,7 @@ DWORD DoReceiveRequests(
 
 
 
-## <a name="handle-the-http-request"></a>Controlar la solicitud HTTP
+## <a name="handle-the-http-request"></a>Control de la solicitud HTTP
 
 
 ```C++
@@ -813,9 +813,9 @@ Done:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 02e115cf4526ab065d2613636427059826f450f5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 809cbb6400b9b0e1aa6dcd2c224c322fb336d305e2aaa87faad5c488c6461814
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119494345"
 ---
 # <a name="id3dxconstanttablesetmatrixarray-method"></a>Método ID3DXConstantTable::SetMatrixArray
 
-Establece una matriz de matrices no transaccionadas.
+Establece una matriz de matrices no transpuestas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,7 +57,7 @@ Puntero a una [**interfaz IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Identificador único de la matriz de matrices constantes. Vea [D3DXHANDLE.](dx9-graphics-reference-effects-constants.md)
+Identificador único de la matriz de matrices constantes. Vea [D3DXHANDLE](dx9-graphics-reference-effects-constants.md).
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Identificador único de la matriz de matrices constantes. Vea [D3DXHANDLE.](dx9-
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Matriz de matrices no transaccionadas. Vea [**D3DXMATRIX.**](d3dxmatrix.md)
+Matriz de matrices no transpuestas. Vea [**D3DXMATRIX.**](d3dxmatrix.md)
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

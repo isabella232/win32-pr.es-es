@@ -1,11 +1,11 @@
 ---
-title: atributo MS-RRAS-atributo
-description: Cadena que contiene el número de vendorID instalado en un enrutador. VendorID es el proveedor de SMI y el número es ms-RRAS-atributo número definido en el objeto de Diccionario de identidad del enrutador.
+title: Atributo ms-RRAS-Attribute
+description: Cadena que contiene el número vendorID instalado en un enrutador. VendorID es SMI del proveedor y number es ms-RRAS-Attribute Number definido en el objeto de diccionario de identidades del enrutador.
 ms.assetid: 72b32814-b2a2-4369-af01-ba8c893aa393
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-RRAS-Attribute
-- msRRASAttribute esquema de AD de atributos
+- Esquema de AD del atributo ms-RRAS-Attribute
+- Esquema de AD del atributo msRRASAttribute
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67e98a93f31fc45aca37e173ac6490bd1ca95840
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1e28c24e01d0d37259c624bc6a1fda13f65e4ade4c2166cec2ae6adfce53dca2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659059"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582095"
 ---
-# <a name="ms-rras-attribute-attribute"></a>atributo MS-RRAS-atributo
+# <a name="ms-rras-attribute-attribute"></a>Atributo ms-RRAS-Attribute
 
-Cadena que contiene el número de vendorID: instalado en un enrutador. VendorID es el proveedor de SMI y el número es ms-RRAS-atributo número definido en el objeto de Diccionario de identidad del enrutador.
+Cadena que contiene el vendorID:Number instalado en un enrutador. VendorID es SMI del proveedor y number es ms-RRAS-Attribute Number definido en el objeto de diccionario de identidades del enrutador.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Atributo MS-RRAS-                           |
-| Nombre para mostrar de LDAP | msRRASAttribute                             |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | ms-RRAS-Attribute                           |
+| Ldap-Display-Name | msRRASAttribute                             |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.884                      |
-| System-ID-GUID    | f39b98ad-938d-11d1-aebd-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | f39b98ad-938d-11d1-aebd-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ Cadena que contiene el número de vendorID: instalado en un enrutador. VendorID 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                             |
+| Id. de vínculo                | \-                                                                                             |
 | MAPI-Id                | \-                                                                                             |
-| System-Only            | False                                                                                          |
-| Tiene un único valor       | False                                                                                          |
-| Está indexado             | False                                                                                          |
-| En el catálogo global      | True                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                   |
+| System-Only            | Falso                                                                                          |
+| Es de un solo valor       | Falso                                                                                          |
+| Está indexado             | Falso                                                                                          |
+| En el catálogo global      | Verdadero                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                   |
 | Range-Lower            | \-                                                                                             |
 | Range-Upper            | \-                                                                                             |
 | Search-Flags           | 0x00000000                                                                                     |
 | System-Flags           | 0x00000010                                                                                     |
-| Clases usadas en        | [**RRAS-administración-punto de conexión**](c-rrasadministrationconnectionpoint.md)<br/> |
+| Clases usadas en        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Cadena que contiene el número de vendorID: instalado en un enrutador. VendorID 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                             |
+| Id. de vínculo                | \-                                                                                             |
 | MAPI-Id                | \-                                                                                             |
-| System-Only            | False                                                                                          |
-| Tiene un único valor       | False                                                                                          |
-| Está indexado             | False                                                                                          |
-| En el catálogo global      | True                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                   |
+| System-Only            | Falso                                                                                          |
+| Es de un solo valor       | Falso                                                                                          |
+| Está indexado             | Falso                                                                                          |
+| En el catálogo global      | Verdadero                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                   |
 | Range-Lower            | \-                                                                                             |
 | Range-Upper            | \-                                                                                             |
 | Search-Flags           | 0x00000000                                                                                     |
 | System-Flags           | 0x00000010                                                                                     |
-| Clases usadas en        | [**RRAS-administración-punto de conexión**](c-rrasadministrationconnectionpoint.md)<br/> |
+| Clases usadas en        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Cadena que contiene el número de vendorID: instalado en un enrutador. VendorID 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                             |
+| Id. de vínculo                | \-                                                                                             |
 | MAPI-Id                | \-                                                                                             |
-| System-Only            | False                                                                                          |
-| Tiene un único valor       | False                                                                                          |
-| Está indexado             | False                                                                                          |
-| En el catálogo global      | True                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                   |
+| System-Only            | Falso                                                                                          |
+| Es de un solo valor       | Falso                                                                                          |
+| Está indexado             | Falso                                                                                          |
+| En el catálogo global      | Verdadero                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                   |
 | Range-Lower            | \-                                                                                             |
 | Range-Upper            | \-                                                                                             |
 | Search-Flags           | 0x00000000                                                                                     |
 | System-Flags           | 0x00000010                                                                                     |
-| Clases usadas en        | [**RRAS-administración-punto de conexión**](c-rrasadministrationconnectionpoint.md)<br/> |
+| Clases usadas en        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Cadena que contiene el número de vendorID: instalado en un enrutador. VendorID 
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                             |
+| Id. de vínculo                | \-                                                                                             |
 | MAPI-Id                | \-                                                                                             |
-| System-Only            | False                                                                                          |
-| Tiene un único valor       | False                                                                                          |
-| Está indexado             | False                                                                                          |
-| En el catálogo global      | True                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                   |
+| System-Only            | Falso                                                                                          |
+| Es de un solo valor       | Falso                                                                                          |
+| Está indexado             | Falso                                                                                          |
+| En el catálogo global      | Verdadero                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                   |
 | Range-Lower            | \-                                                                                             |
 | Range-Upper            | \-                                                                                             |
 | Search-Flags           | 0x00000000                                                                                     |
 | System-Flags           | 0x00000010                                                                                     |
-| Clases usadas en        | [**RRAS-administración-punto de conexión**](c-rrasadministrationconnectionpoint.md)<br/> |
+| Clases usadas en        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Cadena que contiene el número de vendorID: instalado en un enrutador. VendorID 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                             |
+| Id. de vínculo                | \-                                                                                             |
 | MAPI-Id                | \-                                                                                             |
-| System-Only            | False                                                                                          |
-| Tiene un único valor       | False                                                                                          |
-| Está indexado             | False                                                                                          |
-| En el catálogo global      | True                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                   |
+| System-Only            | Falso                                                                                          |
+| Es de un solo valor       | Falso                                                                                          |
+| Está indexado             | Falso                                                                                          |
+| En el catálogo global      | Verdadero                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                   |
 | Range-Lower            | \-                                                                                             |
 | Range-Upper            | \-                                                                                             |
 | Search-Flags           | 0x00000000                                                                                     |
 | System-Flags           | 0x00000010                                                                                     |
-| Clases usadas en        | [**RRAS-administración-punto de conexión**](c-rrasadministrationconnectionpoint.md)<br/> |
+| Clases usadas en        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Cadena que contiene el número de vendorID: instalado en un enrutador. VendorID 
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                             |
+| Id. de vínculo                | \-                                                                                             |
 | MAPI-Id                | \-                                                                                             |
-| System-Only            | False                                                                                          |
-| Tiene un único valor       | False                                                                                          |
-| Está indexado             | False                                                                                          |
-| En el catálogo global      | True                                                                                           |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                   |
+| System-Only            | Falso                                                                                          |
+| Es de un solo valor       | Falso                                                                                          |
+| Está indexado             | Falso                                                                                          |
+| En el catálogo global      | Verdadero                                                                                           |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                   |
 | Range-Lower            | \-                                                                                             |
 | Range-Upper            | \-                                                                                             |
 | Search-Flags           | 0x00000000                                                                                     |
 | System-Flags           | 0x00000010                                                                                     |
-| Clases usadas en        | [**RRAS-administración-punto de conexión**](c-rrasadministrationconnectionpoint.md)<br/> |
+| Clases usadas en        | [**RRAS-Administration-Connection-Point**](c-rrasadministrationconnectionpoint.md)<br/> |
 
 
 

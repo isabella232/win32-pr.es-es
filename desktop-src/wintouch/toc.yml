@@ -8,27 +8,27 @@
       items:
         - name: Información general acerca de la arquitectura
           href: architectural-overview.md
-        - name: Elección del enfoque adecuado para Windows Touch
+        - name: Elegir el enfoque correcto para Windows táctil
           href: choosing-the-right-approach-to-windows-touch.md
-        - name: Solucionar problemas de aplicaciones
+        - name: Solución de problemas de aplicaciones
           href: troubleshooting-applications.md
-        - name: Entrada táctil de Windows
+        - name: Windows Entrada táctil
           href: guide-multi-touch-input.md
           items:
-            - name: Introducción con mensajes táctiles de Windows
+            - name: Tareas iniciales con Windows touch messages
               href: getting-started-with-multi-touch-messages.md
             - name: Detección y seguimiento de varios puntos táctiles
               href: detecting-and-tracking-multiple-touch-points.md
-        - name: Gestos táctiles de Windows
+        - name: Windows Gestos táctiles
           href: guide-multi-touch-gestures.md
           items:
-            - name: Información general sobre los gestos táctiles de Windows
+            - name: Windows Información general sobre gestos táctiles
               href: windows-touch-gestures-overview.md
-            - name: Introducción con gestos táctiles de Windows
+            - name: Tareas iniciales con Windows táctiles
               href: getting-started-with-multi-touch-gestures.md
-            - name: Compatibilidad heredada para la panorámica con barras de desplazamiento
+            - name: Compatibilidad heredada con el movimiento panorámico con barras de desplazamiento
               href: legacy-support-for-panning-with-scrollbars.md
-            - name: Mejora de la experiencia de movimiento panorámico de un solo dedo
+            - name: Mejora de la experiencia de movimiento panorámico con un solo dedo
               href: improving-the-single-finger-panning-experience.md
         - name: Manipulaciones e inercia
           href: manipulation-and-inertia.md
@@ -36,7 +36,7 @@
             - name: Manipulaciones
               href: getting-started-with-manipulations.md
               items:
-                - name: Agregar compatibilidad de manipulación a código no administrado
+                - name: Agregar compatibilidad con la manipulación al código no administrado
                   href: adding-manipulation-support-in-unmanaged-code.md
                 - name: Manipulaciones avanzadas
                   href: advanced-manipulations.md
@@ -56,34 +56,34 @@
               items:
                 - name: Mecánica de inercia
                   href: inertia-mechanics.md
-                - name: Controlar la inercia en código no administrado
+                - name: Control de la inercia en código no administrado
                   href: handling-inertia-in-unmanaged-code.md
-    - name: Ejemplos de Windows Touch
+    - name: Windows Ejemplos táctiles
       href: windows-touch-samples.md
       items:
         - name: Ejemplo de manipulación e inercia
           href: manipulation-and-inertia-sample.md
-        - name: Ejemplo de gesto de toque de Windows (MTGestures)
+        - name: Windows Ejemplo de gesto táctil (MTGestures)
           href: windows-touch-gesture-sample--mtgestures-.md
-        - name: Gestos táctiles de Windows en el ejemplo de C# (MTGesturesCS)
+        - name: Windows Gestos táctiles en el ejemplo de C# (MTGesturesCS)
           href: windows-touch-gestures-in-c--sample--mtgesturescs-.md
-        - name: Ejemplo de manipulación táctil de Windows (MTManipulation)
+        - name: Windows Ejemplo de manipulación táctil (MTManipulation)
           href: windows-touch-manipulation-sample--mtmanipulation-.md
-        - name: Ejemplo de Bloc Dete táctil de Windows (C++)
+        - name: Windows Ejemplo de Scratchpad táctil (C++)
           href: windows-touch-scratchpad-sample--mtscratchpadwmtouch-.md
-        - name: Ejemplo de Bloc Dete táctil de Windows (C#)
+        - name: Windows Ejemplo de Scratchpad táctil (C#)
           href: windows-touch-scratchpad-sample-in-c---mtscratchpadwmtouchcs-.md
-        - name: Bloc de entrada táctil de Windows con el ejemplo de lápiz óptico en tiempo real (C++)
+        - name: Windows Touch Scratchpad con el ejemplo de lápiz en tiempo real (C++)
           href: windows-touch-scratchpad-using-the-real-time-stylus-sample--mtscratchpadrtstylus-.md
-        - name: Bloc Dete táctil de Windows con el ejemplo de lápiz Real-Time (C#)
+        - name: Windows Touch Scratchpad con el Real-Time stylus sample (C#)
           href: windows-touch-scratchpad-using-the-real-time-stylus-in-c--sample--mtscratchpadrtstyluscs-.md
-    - name: Referencia de programación de Windows Touch
+    - name: Windows Referencia de programación táctil
       href: windows-touch-programming-reference.md
       items:
-        - name: Comentarios de los límites
+        - name: Comentarios sobre límites
           href: boundary-feedback.md
           items:
-            - name: Functions
+            - name: Funciones
               href: boundary-feedback-functions.md
               items:
                 - name: BeginPanningFeedback
@@ -104,11 +104,11 @@
                     - name: Métodos
                       href: '-imanipulationevents-methods.md'
                       items:
-                        - name: Método ManipulationStarted
+                        - name: ManipulationStarted (método)
                           href: /windows/desktop/api/manipulations/nf-manipulations-_imanipulationevents-manipulationstarted
                         - name: ManipulationDelta (método)
                           href: /windows/desktop/api/manipulations/nf-manipulations-_imanipulationevents-manipulationdelta
-                        - name: Método ManipulationCompleted
+                        - name: ManipulationCompleted (método)
                           href: /windows/desktop/api/manipulations/nf-manipulations-_imanipulationevents-manipulationcompleted
                 - name: IInertiaProcessor
                   href: /windows/desktop/api/manipulations/nn-manipulations-iinertiaprocessor
@@ -120,36 +120,36 @@
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-reset
                         - name: Process (método)
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-process
-                        - name: Método ProcessTime
+                        - name: ProcessTime (método)
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-processtime
                         - name: Complete (método)
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-complete
-                        - name: Método CompleteTime
+                        - name: CompleteTime (método)
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-completetime
                     - name: Propiedades
                       href: iinertiaprocessor-properties.md
                       items:
-                        - name: Propiedad InitialOriginX
+                        - name: 'InitialOriginX, propiedad'
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_initialoriginx
-                        - name: Propiedad InitialOriginY
+                        - name: 'InitialOriginy, propiedad'
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_initialoriginy
                         - name: Propiedad InitialVelocityX
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_initialvelocityx
                         - name: Propiedad InitialVelocityY
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_initialvelocityy
-                        - name: Propiedad InitialAngularVelocity
+                        - name: InitialAngularVelocity (propiedad)
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_initialangularvelocity
-                        - name: Propiedad InitialExpansionVelocity
+                        - name: InitialExpansionVelocity (propiedad)
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_initialexpansionvelocity
-                        - name: Propiedad InitialRadius
+                        - name: InitialRadius (propiedad)
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_initialradius
                         - name: Propiedad BoundaryLeft
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_boundaryleft
-                        - name: Propiedad BoundaryTop
+                        - name: BoundaryTop (propiedad)
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_boundarytop
-                        - name: Propiedad BoundaryRight
+                        - name: BoundaryRight (propiedad)
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_boundaryright
-                        - name: Propiedad BoundaryBottom
+                        - name: BoundaryBottom (propiedad)
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_boundarybottom
                         - name: Propiedad ElasticMarginLeft
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_elasticmarginleft
@@ -159,19 +159,19 @@
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_elasticmarginright
                         - name: Propiedad ElasticMarginBottom
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_elasticmarginbottom
-                        - name: Propiedad DesiredAngularDeceleration
+                        - name: DesiredAngularDeceleration (propiedad)
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_desiredangulardeceleration
                         - name: Propiedad DesiredRotation
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_desiredrotation
-                        - name: Propiedad DesiredExpansion
+                        - name: DesiredExpansion (propiedad)
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_desiredexpansion
-                        - name: Propiedad DesiredExpansionDeceleration
+                        - name: DesiredExpansionDeceleration (propiedad)
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_desiredexpansiondeceleration
-                        - name: Propiedad DesiredDeceleration
+                        - name: DesiredDeceleration (propiedad)
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_desireddeceleration
-                        - name: Propiedad DesiredDisplacement
+                        - name: DesiredDisplacement (propiedad)
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_desireddisplacement
-                        - name: Propiedad InitialTimestamp
+                        - name: InitialTimestamp (propiedad)
                           href: /windows/desktop/api/manipulations/nf-manipulations-iinertiaprocessor-get_initialtimestamp
                 - name: IManipulationProcessor
                   href: /windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor
@@ -179,40 +179,40 @@
                     - name: Métodos
                       href: mtmethods.md
                       items:
-                        - name: Método CompleteManipulation
+                        - name: CompleteManipulation (método)
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-completemanipulation
-                        - name: Método GetAngularVelocity
+                        - name: GetAngularVelocity (método)
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-getangularvelocity
-                        - name: Método GetExpansionVelocity
+                        - name: GetExpansionVelocity (método)
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-getexpansionvelocity
                         - name: Método GetVelocityX
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-getvelocityx
-                        - name: Método GetVelocityY
+                        - name: GetVelocityY (método)
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-getvelocityy
-                        - name: Método ProcessDown
+                        - name: ProcessDown (método)
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processdown
-                        - name: Método ProcessMove
+                        - name: ProcessMove (método)
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processmove
-                        - name: Método ProcessUp
+                        - name: ProcessUp (método)
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processup
-                        - name: Método ProcessDownWithTime
+                        - name: ProcessDownWithTime (método)
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processdownwithtime
-                        - name: Método ProcessMoveWithTime
+                        - name: ProcessMoveWithTime (método)
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processmovewithtime
-                        - name: Método ProcessUpWithTime
+                        - name: ProcessUpWithTime (método)
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-processupwithtime
                     - name: Propiedades
                       href: mtproperties.md
                       items:
-                        - name: Propiedad MinimumScaleRotateRadius
+                        - name: MinimumScaleRotateRadius( Propiedad)
                           href: imanipulationprocessor-minimumscalerotateradius.md
                         - name: Propiedad PivotPointX
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointx
                         - name: Propiedad PivotPointY
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointy
-                        - name: Propiedad PivotRadius
+                        - name: PivotRadius (propiedad)
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotradius
-                        - name: Propiedad SupportedManipulations
+                        - name: SupportedManipulations (propiedad)
                           href: /windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_supportedmanipulations
             - name: Constantes
               href: imanipulationprocessor-constants.md
@@ -221,15 +221,15 @@
               items:
                 - name: MANIPULATION_PROCESSOR_MANIPULATIONS
                   href: /windows/desktop/api/manipulations/ne-manipulations-manipulation_processor_manipulations
-        - name: Gestos táctiles de Windows
+        - name: Windows Gestos táctiles
           href: multi-touch-gestures.md
           items:
             - name: Constantes
               href: constants.md
               items:
-                - name: Gestos táctiles de Windows
+                - name: Windows Gestos táctiles
                   href: windows-touch-gestures-constants.md
-            - name: Functions
+            - name: Funciones
               href: mtgfunctions.md
               items:
                 - name: CloseGestureInfoHandle
@@ -265,7 +265,7 @@
                   href: /windows/win32/api/winuser/ns-winuser-gestureinfo
                 - name: GESTURENOTIFYSTRUCT
                   href: /windows/win32/api/winuser/ns-winuser-gesturenotifystruct
-        - name: Entrada táctil de Windows
+        - name: Windows Entrada táctil
           href: multi-touch-input.md
           items:
             - name: Macros
@@ -273,7 +273,7 @@
               items:
                 - name: TOUCH_COORD_TO_PIXEL
                   href: /windows/desktop/api/winuser/nf-winuser-touch_coord_to_pixel
-            - name: Functions
+            - name: Funciones
               href: mtfunctions.md
               items:
                 - name: CloseTouchInputHandle
@@ -288,7 +288,7 @@
                   href: /windows/desktop/api/winuser/nf-winuser-unregistertouchwindow
                 - name: 'SendMessage, PostMessage y funciones relacionadas'
                   href: sendmessage--postmessage--and-related-functions.md
-            - name: Mensajes
+            - name: error de Hadoop
               href: messages.md
               items:
                 - name: WM_TOUCH
@@ -298,5 +298,5 @@
               items:
                 - name: TOUCHINPUT
                   href: /windows/win32/api/winuser/ns-winuser-touchinput
-    - name: Glosario de Windows Touch
+    - name: Windows Glosario táctil
       href: glossary.md

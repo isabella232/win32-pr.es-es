@@ -1,7 +1,7 @@
 ---
-description: Edita una entrada de instantánea de VHD dentro de un archivo de conjunto de VHD. Si el ID. de instantánea en cuestión ya existe, la entrada de instantánea existente se sobrescribirá con la nueva entrada. De lo contrario, la nueva entrada se agregará al archivo del conjunto de VHD.
+description: Edita una entrada de instantánea de VHD dentro de un archivo de conjunto de VHD. Si el identificador de instantánea en cuestión ya existe, la entrada snapshot existente se sobrescribirá con la nueva entrada. De lo contrario, la nueva entrada se agregará al archivo de conjunto de VHD.
 ms.assetid: dd14960d-3fb8-4d47-986f-fbbbb08eb37d
-title: Método SetVHDSnapshotInformation de la clase Msvm_ImageManagementService
+title: Método SetVHDSnapshotInformation de la Msvm_ImageManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 54f5ac23cdf8f49532a05eee3fd23293715cd02a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: af4adddb2b59da303f558cfffac61003e70e5767c77e381b13ba6089228d6643
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105666609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119522455"
 ---
-# <a name="setvhdsnapshotinformation-method-of-the-msvm_imagemanagementservice-class"></a>Método SetVHDSnapshotInformation de la \_ clase ImageManagementService de MSVM
+# <a name="setvhdsnapshotinformation-method-of-the-msvm_imagemanagementservice-class"></a>Método SetVHDSnapshotInformation de la clase \_ Msvm ImageManagementService
 
-Edita una entrada de instantánea de VHD dentro de un archivo de conjunto de VHD. Si el ID. de instantánea en cuestión ya existe, la entrada de instantánea existente se sobrescribirá con la nueva entrada. De lo contrario, la nueva entrada se agregará al archivo del conjunto de VHD.
+Edita una entrada de instantánea de VHD dentro de un archivo de conjunto de VHD. Si el identificador de instantánea en cuestión ya existe, la entrada snapshot existente se sobrescribirá con la nueva entrada. De lo contrario, la nueva entrada se agregará al archivo de conjunto de VHD.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,17 +40,17 @@ uint32 SetVHDSnapshotInformation(
 
 <dl> <dt>
 
-*Información* \[ de de\]
+*Información* \[ En\]
 </dt> <dd>
 
-Información de instantánea de VHD que se va a cambiar o agregar en el archivo de VHD set. La cadena es una instancia incrustada de [**MSVM \_ VHDSnapshotInformation**](msvm-vhdsnapshotinformation.md).
+Información de instantánea de VHD que se va a cambiar o agregar en el archivo de conjunto de VHD. La cadena es una instancia incrustada de [**Msvm \_ VHDSnapshotInformation.**](msvm-vhdsnapshotinformation.md)
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Referencia al trabajo (puede ser null si se ha completado la tarea).
+Referencia al trabajo (puede ser NULL si se completa la tarea).
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Este método devuelve uno de los siguientes valores:
 **Completado sin error** (0)
 </dt> <dt>
 
-**Parámetros de método comprobados: trabajo iniciado** (4096)
+**Parámetros de método activados: trabajo iniciado** (4096)
 </dt> <dt>
 
 **Error** (32768)
@@ -75,16 +75,16 @@ Este método devuelve uno de los siguientes valores:
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -93,13 +93,13 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está** disponible (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -108,10 +108,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -120,7 +120,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ ImageManagementService**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

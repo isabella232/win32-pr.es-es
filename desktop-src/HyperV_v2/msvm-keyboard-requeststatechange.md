@@ -1,7 +1,7 @@
 ---
 description: Solicita que se cambie el estado del elemento.
 ms.assetid: D1742588-D932-4FE1-8D2A-E410BEE371FF
-title: Método RequestStateChange de la clase Msvm_Keyboard
+title: Método RequestStateChange de la Msvm_Keyboard clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: c3358c6c9907717e536466466dd074faf3a038a4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 457ed1e98714a2a20169fd1139b7f42475e5d893756591930b6a25147f756897
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119522245"
 ---
-# <a name="requeststatechange-method-of-the-msvm_keyboard-class"></a>Método RequestStateChange de la \_ clase de teclado MSVM
+# <a name="requeststatechange-method-of-the-msvm_keyboard-class"></a>Método RequestStateChange de la clase Keyboard de Msvm \_
 
 Solicita que se cambie el estado del elemento.
 
@@ -41,10 +41,10 @@ uint32 RequestStateChange(
 
 <dl> <dt>
 
-*RequestedState* \[ de\]
+*RequestedState* \[ En\]
 </dt> <dd>
 
-Nuevo estado solicitado para el elemento. Esta información se colocará en la propiedad **RequestedState** de la instancia si el código de retorno es 0 (' completado sin error '), 3 (' timeout ') o 4096 (0x1000) (' Job Started '). Para obtener explicaciones detalladas de los valores de *RequestedState* , consulte la descripción de las propiedades **EnabledState** y **RequestedState** .
+Nuevo estado solicitado para el elemento. Esta información se colocará en la propiedad **RequestedState** de la instancia si el código devuelto es 0 ('Completed with No Error'), 3 ('Timeout') o 4096 (0x1000) ('Job Started'). Para obtener explicaciones detalladas de los *valores requestedState,* consulte la descripción de las propiedades **EnabledState** **y RequestedState.**
 
 <dt>
 
@@ -71,7 +71,7 @@ Nuevo estado solicitado para el elemento. Esta información se colocará en la p
 
 <span id="Offline"></span><span id="offline"></span><span id="OFFLINE"></span>
 
-**Sin conexión** (6)
+**Sin** conexión (6)
 
 
 </dt> <dd></dd> <dt>
@@ -85,14 +85,14 @@ Nuevo estado solicitado para el elemento. Esta información se colocará en la p
 
 <span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>
 
-**Diferir** (8)
+**Aplazar** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>
 
-Modo **inactivo** (9)
+**Quiesce** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -106,7 +106,7 @@ Modo **inactivo** (9)
 
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>
 
-**Restablecer** (11)
+**Restablecimiento** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -120,22 +120,22 @@ Modo **inactivo** (9)
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Proveedor reservado** (32768... 65535)
+**Vendor Reserved** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Referencia al trabajo. Este parámetro puede ser **null** si la tarea se ha completado.
+Referencia al trabajo. Este parámetro puede ser **Null** si se completa la tarea.
 
 </dd> <dt>
 
-*TimeoutPeriod* \[ de\]
+*TimeoutPeriod* \[ En\]
 </dt> <dd>
 
-Cantidad máxima de tiempo que el cliente espera que se lleve a cabo la transición al nuevo estado. El formato de intervalo debe usarse para especificar este período de tiempo de espera. Un valor de 0 o **null** indica que el cliente no tiene ningún requisito de tiempo para la transición. Si esta propiedad no contiene 0 o **null**, y la implementación no admite este parámetro, se devuelve un código de retorno de 4098 ("se ha utilizado el parámetro de tiempo de espera no compatible").
+Cantidad máxima de tiempo que el cliente espera que se lleve la transición al nuevo estado. El formato de intervalo debe usarse para especificar este período de tiempo de espera. Un valor de 0 o **Null** indica que el cliente no tiene ningún requisito de tiempo para la transición. Si esta propiedad no contiene 0 o **Null** y la implementación no admite este parámetro, se devuelve un código de retorno 4098 ("No se admite el uso del parámetro de tiempo de espera").
 
 </dd> </dl>
 
@@ -152,7 +152,7 @@ Cantidad máxima de tiempo que el cliente espera que se lleve a cabo la transici
 **Error desconocido o no especificado** (2)
 </dt> <dt>
 
-**No se puede completar en el período de tiempo de espera** (3)
+**No se puede completar dentro del período de tiempo de espera** (3)
 </dt> <dt>
 
 **Error** (4)
@@ -170,19 +170,19 @@ Cantidad máxima de tiempo que el cliente espera que se lleve a cabo la transici
 **Parámetros de método comprobados: trabajo iniciado** (4096)
 </dt> <dt>
 
-**Transición de estado no válida** (4097)
+**Transición de estado no** válida (4097)
 </dt> <dt>
 
-**No se admite el uso de parámetros de tiempo de espera** (4098)
+**No se admite el uso del parámetro timeout** (4098)
 </dt> <dt>
 
 **Ocupado** (4099)
 </dt> <dt>
 
-**Método reservado** (4100.. 32767)
+**Método reservado** (4100..32767)
 </dt> <dt>
 
-**Específico del proveedor** (32768... 65535)
+**Específico del** proveedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -191,10 +191,10 @@ Cantidad máxima de tiempo que el cliente espera que se lleve a cabo la transici
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                                 |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                            |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                                 |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -203,7 +203,7 @@ Cantidad máxima de tiempo que el cliente espera que se lleve a cabo la transici
 
 <dl> <dt>
 
-[**\_Teclado MSVM**](msvm-keyboard.md)
+[**Teclado de \_ Msvm**](msvm-keyboard.md)
 </dt> </dl>
 
  

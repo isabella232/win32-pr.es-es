@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DNS-Parent-tiene-Secure-delegation
-description: Atributo que se usa para definir si la delegación parental en la zona DNS es segura.
+title: Atributo ms-DNS-Parent-Has-Secure-Delegation
+description: Atributo que se usa para definir si la delegación parental a la zona DNS es segura.
 ms.assetid: 92b1bb68-1d08-47d3-95a7-a75149d7313f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo MS-DNS-Parent-is-Secure-delegation
-- msDN-ParentHasSecureDelegation atributo AD Schema
+- Esquema de AD del atributo ms-DNS-Parent-Has-Secure-Delegation
+- msDNS-ParentHasSecureDelegation attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30947d059f9115cbf7c63b03380e86dad72775b5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 56160df9d77876c9c06de0a68921712099ca1d243d96f2c3da31e437c717a271
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553015"
 ---
-# <a name="ms-dns-parent-has-secure-delegation-attribute"></a>atributo MS-DNS-Parent-tiene-Secure-delegation
+# <a name="ms-dns-parent-has-secure-delegation-attribute"></a>Atributo ms-DNS-Parent-Has-Secure-Delegation
 
-Atributo que se usa para definir si la delegación parental en la zona DNS es segura.
+Atributo que se usa para definir si la delegación parental a la zona DNS es segura.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DNS-primario-tiene-Secure-delegation  |
-| Nombre para mostrar de LDAP | msDN: ParentHasSecureDelegation      |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DNS-Parent-Has-Secure-Delegation  |
+| Ldap-Display-Name | msDNS-ParentHasSecureDelegation      |
+| Size              | \-                                   |
+| Actualizar privilegios  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2146              |
-| System-ID-GUID    | 285c6964-c11a-499e-96d8-bf7c75a223c6 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | 285c6964-c11a-499e-96d8-bf7c75a223c6 |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -50,13 +50,13 @@ Atributo que se usa para definir si la delegación parental en la zona DNS es se
 
 | Entrada | Value |
 |------------------------|------------------------------------------|
-| Identificador de vínculo                | \-                                       |
+| Id. de vínculo                | \-                                       |
 | MAPI-Id                | \-                                       |
-| System-Only            | False                                    |
-| Tiene un único valor       | True                                     |
-| Está indexado             | False                                    |
-| En el catálogo global      | False                                    |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                             |
+| System-Only            | Falso                                    |
+| Es de un solo valor       | Verdadero                                     |
+| Está indexado             | Falso                                    |
+| En el catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000008                               |

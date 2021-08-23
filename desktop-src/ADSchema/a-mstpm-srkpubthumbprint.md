@@ -1,11 +1,11 @@
 ---
-title: atributo MS-TPM-SRK-pub-Thumbprint
-description: Este atributo contiene la huella digital del SrkPub correspondiente a un determinado TPM. Esto ayuda a indexar los dispositivos de TPM en el directorio.
+title: Atributo ms-TPM-Srk-Pub-Thumbprint
+description: Este atributo contiene la huella digital de SrkPub correspondiente a un TPM determinado. Esto ayuda a indexar los dispositivos TPM en el directorio.
 ms.assetid: 64cb0341-ae49-4992-87d7-6863719fa13f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-TPM-SRK-pub-Thumbprint
-- msTPM-SrkPubThumbprint atributo AD Schema
+- ms-TPM-Srk-Pub-Thumbprint attribute AD Schema
+- msTPM-SrkPubThumbprint attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf2ab2daec38d509e670771eef61824278bee4c4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4365b47018112886a683a2160c7d305a061cd6bd2564e9bc9a7871929a0501ec
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508435"
 ---
-# <a name="ms-tpm-srk-pub-thumbprint-attribute"></a>atributo MS-TPM-SRK-pub-Thumbprint
+# <a name="ms-tpm-srk-pub-thumbprint-attribute"></a>Atributo ms-TPM-Srk-Pub-Thumbprint
 
-Este atributo contiene la huella digital del SrkPub correspondiente a un determinado TPM. Esto ayuda a indexar los dispositivos de TPM en el directorio.
+Este atributo contiene la huella digital de SrkPub correspondiente a un TPM determinado. Esto ayuda a indexar los dispositivos TPM en el directorio.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | MS-TPM-SRK-pub-huella digital                             |
-| Nombre para mostrar de LDAP | msTPM-SrkPubThumbprint                                |
-| Tamaño              | \-                                                    |
-| Actualizar privilegio  | \-                                                    |
+| CN                | ms-TPM-Srk-Pub-Thumbprint                             |
+| Ldap-Display-Name | msTPM-SrkPubThumbprint                                |
+| Size              | \-                                                    |
+| Actualizar privilegios  | \-                                                    |
 | Frecuencia de actualización  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2107                               |
-| System-ID-GUID    | 19d706eb-4d76-44a2-85d6-1c342be3be37                  |
-| Sintaxis            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-Id-Guid    | 19d706eb-4d76-44a2-85d6-1c342be3be37                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -50,18 +50,18 @@ Este atributo contiene la huella digital del SrkPub correspondiente a un determi
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                        |
+| Id. de vínculo                | \-                                                                        |
 | MAPI-Id                | \-                                                                        |
-| System-Only            | False                                                                     |
-| Tiene un único valor       | True                                                                      |
-| Está indexado             | True                                                                      |
-| En el catálogo global      | False                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                              |
+| System-Only            | Falso                                                                     |
+| Es de un solo valor       | Verdadero                                                                      |
+| Está indexado             | Verdadero                                                                      |
+| En el catálogo global      | Falso                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                              |
 | Range-Lower            | \-                                                                        |
 | Range-Upper            | \-                                                                        |
 | Search-Flags           | 0x0000000B                                                                |
 | System-Flags           | 0x00000010                                                                |
-| Clases usadas en        | [**Objeto de información de MS-TPM**](c-mstpm-informationobject.md)<br/> |
+| Clases usadas en        | [**ms-TPM-Information-Object**](c-mstpm-informationobject.md)<br/> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: b9badd4b01d1245247766c750e2a2ea1f266d9e1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 39984fa20ab0fa84d9b22b86fade2eb59277dd6a919c5bfa8d8a52efd33b1cee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493125"
 ---
 # <a name="id3dxmatrixstacktranslatelocal-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::TranslateLocal (D3dx9math.h)
 
@@ -56,7 +56,7 @@ Factor de traducción en la dirección X.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Factor de traducción en la dirección y.
+Factor de traducción en la dirección Y.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ m_stack[m_currentPos] = tmp * m_stack[m_currentPos];
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

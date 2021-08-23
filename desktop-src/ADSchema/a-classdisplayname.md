@@ -1,11 +1,11 @@
 ---
-title: Class-Display-Name (atributo)
+title: Atributo Class-Display-Name
 description: Nombre del objeto que se va a mostrar en los cuadros de diálogo.
 ms.assetid: 8170f39d-2c27-4d20-904a-75bbcdbcb313
 ms.tgt_platform: multiple
 keywords:
-- Schema-Display-Name atributo AD Schema
-- classDisplayName esquema de AD de atributos
+- Esquema de AD del atributo Class-Display-Name
+- Esquema de AD del atributo classDisplayName
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed801856d0c966df14c6ceb04f7b6cc9a511ca91
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a9060998ba6d01fcd3cf3cc1e7ffa50acdbc9a8aba33c8ba324fed1de6d9d5fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104151888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583645"
 ---
-# <a name="class-display-name-attribute"></a>Class-Display-Name (atributo)
+# <a name="class-display-name-attribute"></a>Atributo Class-Display-Name
 
 Nombre del objeto que se va a mostrar en los cuadros de diálogo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Class-Display-Name                          |
-| Nombre para mostrar de LDAP | classDisplayName                            |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| CN                | Nombre para mostrar de clase                          |
+| Ldap-Display-Name | classDisplayName                            |
+| Size              | \-                                          |
+| Privilegio actualizar  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.610                      |
-| System-ID-GUID    | 548e1c22-dea6-11d0-b010-0000f80367c1        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 548e1c22-dea6-11d0-b010-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ Nombre del objeto que se va a mostrar en los cuadros de diálogo.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adán**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -56,18 +56,18 @@ Nombre del objeto que se va a mostrar en los cuadros de diálogo.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                   |
+| Id. de vínculo                | \-                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                |
-| Tiene un único valor       | False                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                                |
-| En el catálogo global      | False                                                                                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                         |
+| System-Only            | Falso                                                                                                                                                                |
+| Es de un solo valor       | Falso                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                                |
+| En el catálogo global      | Falso                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                           |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Esquema de clase**](c-classschema.md)<br/> [**Display-Specifier**](c-displayspecifier.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> [**Esquema de clases**](c-classschema.md)<br/> [**Display-Specifier**](c-displayspecifier.md)<br/> |
 
 
 
@@ -77,39 +77,39 @@ Nombre del objeto que se va a mostrar en los cuadros de diálogo.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                   |
+| Id. de vínculo                | \-                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                |
-| Tiene un único valor       | False                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                                |
-| En el catálogo global      | False                                                                                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                         |
+| System-Only            | Falso                                                                                                                                                                |
+| Es de un solo valor       | Falso                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                                |
+| En el catálogo global      | Falso                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                           |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Esquema de clase**](c-classschema.md)<br/> [**Display-Specifier**](c-displayspecifier.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> [**Esquema de clases**](c-classschema.md)<br/> [**Display-Specifier**](c-displayspecifier.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adán
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                        |
+| Id. de vínculo                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
-| System-Only            | False                                                                                                     |
-| Tiene un único valor       | False                                                                                                     |
-| Está indexado             | False                                                                                                     |
-| En el catálogo global      | False                                                                                                     |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                              |
+| System-Only            | Falso                                                                                                     |
+| Es de un solo valor       | Falso                                                                                                     |
+| Está indexado             | Falso                                                                                                     |
+| En el catálogo global      | Falso                                                                                                     |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Esquema de clase**](c-classschema.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> [**Esquema de clases**](c-classschema.md)<br/> |
 
 
 
@@ -117,20 +117,20 @@ Nombre del objeto que se va a mostrar en los cuadros de diálogo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                   |
+| Id. de vínculo                | \-                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                |
-| Tiene un único valor       | False                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                                |
-| En el catálogo global      | False                                                                                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                         |
+| System-Only            | Falso                                                                                                                                                                |
+| Es de un solo valor       | Falso                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                                |
+| En el catálogo global      | Falso                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                           |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Esquema de clase**](c-classschema.md)<br/> [**Display-Specifier**](c-displayspecifier.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> [**Esquema de clases**](c-classschema.md)<br/> [**Display-Specifier**](c-displayspecifier.md)<br/> |
 
 
 
@@ -140,18 +140,18 @@ Nombre del objeto que se va a mostrar en los cuadros de diálogo.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                   |
+| Id. de vínculo                | \-                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                |
-| Tiene un único valor       | False                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                                |
-| En el catálogo global      | False                                                                                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                         |
+| System-Only            | Falso                                                                                                                                                                |
+| Es de un solo valor       | Falso                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                                |
+| En el catálogo global      | Falso                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                           |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Esquema de clase**](c-classschema.md)<br/> [**Display-Specifier**](c-displayspecifier.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> [**Esquema de clases**](c-classschema.md)<br/> [**Display-Specifier**](c-displayspecifier.md)<br/> |
 
 
 
@@ -161,18 +161,18 @@ Nombre del objeto que se va a mostrar en los cuadros de diálogo.
 
 | Entrada | Value |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                   |
+| Id. de vínculo                | \-                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                |
-| Tiene un único valor       | False                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                                |
-| En el catálogo global      | False                                                                                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                         |
+| System-Only            | Falso                                                                                                                                                                |
+| Es de un solo valor       | Falso                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                                |
+| En el catálogo global      | Falso                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                           |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Esquema de clase**](c-classschema.md)<br/> [**Display-Specifier**](c-displayspecifier.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> [**Esquema de clases**](c-classschema.md)<br/> [**Display-Specifier**](c-displayspecifier.md)<br/> |
 
 
 
@@ -180,20 +180,20 @@ Nombre del objeto que se va a mostrar en los cuadros de diálogo.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                                                                   |
+| Id. de vínculo                | \-                                                                                                                                                                   |
 | MAPI-Id                | \-                                                                                                                                                                   |
-| System-Only            | False                                                                                                                                                                |
-| Tiene un único valor       | False                                                                                                                                                                |
-| Está indexado             | False                                                                                                                                                                |
-| En el catálogo global      | False                                                                                                                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                                                         |
+| System-Only            | Falso                                                                                                                                                                |
+| Es de un solo valor       | Falso                                                                                                                                                                |
+| Está indexado             | Falso                                                                                                                                                                |
+| En el catálogo global      | Falso                                                                                                                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                                                         |
 | Range-Lower            | \-                                                                                                                                                                   |
 | Range-Upper            | \-                                                                                                                                                                   |
 | Search-Flags           | 0x00000000                                                                                                                                                           |
 | System-Flags           | 0x00000010                                                                                                                                                           |
-| Clases usadas en        | [**Attribute-Schema**](c-attributeschema.md)<br/> [**Esquema de clase**](c-classschema.md)<br/> [**Display-Specifier**](c-displayspecifier.md)<br/> |
+| Clases usadas en        | [**Esquema de atributos**](c-attributeschema.md)<br/> [**Esquema de clases**](c-classschema.md)<br/> [**Display-Specifier**](c-displayspecifier.md)<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: atributo MS-WMI-TargetPath
+title: Atributo ms-WMI-TargetPath
 description: Lista de pares clave-valor para identificar de forma única un objeto WMI.
 ms.assetid: b5d6c718-86f6-40a5-8fb1-e3ed4821ac62
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-WMI-TargetPath
-- msWMI-TargetPath atributo AD Schema
+- Esquema de AD del atributo ms-WMI-TargetPath
+- Esquema de AD del atributo msWMI-TargetPath
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9818125d757716970cff538167d5d737a8354555
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0d077cc04ea4670341ad14c9817354150bbebc4952cee03fb994c324d4880645
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103997390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119550945"
 ---
-# <a name="ms-wmi-targetpath-attribute"></a>atributo MS-WMI-TargetPath
+# <a name="ms-wmi-targetpath-attribute"></a>Atributo ms-WMI-TargetPath
 
 Lista de pares clave-valor para identificar de forma única un objeto WMI.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-TargetPath                           |
-| Nombre para mostrar de LDAP | msWMI-TargetPath                            |
-| Tamaño              | Menos de 100 caracteres.                   |
-| Actualizar privilegio  | Administrador de directiva de grupo                  |
+| CN                | ms-WMI-TargetPath                           |
+| Ldap-Display-Name | msWMI-TargetPath                            |
+| Size              | Menos de 100 caracteres.                   |
+| Privilegio actualizar  | directiva de grupo administrador                  |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1648                     |
-| System-ID-GUID    | 5006a79a-6bfe-4561-9f52-13cf4dd3e560        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 5006a79a-6bfe-4561-9f52-13cf4dd3e560        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -54,18 +54,18 @@ Lista de pares clave-valor para identificar de forma única un objeto WMI.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Lista de pares clave-valor para identificar de forma única un objeto WMI.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Lista de pares clave-valor para identificar de forma única un objeto WMI.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Lista de pares clave-valor para identificar de forma única un objeto WMI.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Lista de pares clave-valor para identificar de forma única un objeto WMI.
 
 | Entrada | Value |
 |------------------------|--------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                 |
+| Id. de vínculo                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
-| System-Only            | False                                                              |
-| Tiene un único valor       | True                                                               |
-| Está indexado             | False                                                              |
-| En el catálogo global      | False                                                              |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                       |
+| System-Only            | Falso                                                              |
+| Es de un solo valor       | Verdadero                                                               |
+| Está indexado             | Falso                                                              |
+| En el catálogo global      | Falso                                                              |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Clases usadas en        | [**MS-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
+| Clases usadas en        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> |
 
 
 

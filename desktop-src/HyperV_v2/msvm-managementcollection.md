@@ -1,7 +1,7 @@
 ---
 description: Representa una colección de otras colecciones.
 ms.assetid: 1f7f5517-55d9-44a3-b0ca-444a9d7d5941
-title: Msvm_ManagementCollection (clase)
+title: Msvm_ManagementCollection clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2d3499bb161495152b6de4b8aebd7c64d041d069
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5d4f349e6c250c05a0eb1690ae091f7c787d2d100bc5dca0a1250292fab3d5a6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521735"
 ---
-# <a name="msvm_managementcollection-class"></a>MSVM \_ ManagementCollection (clase)
+# <a name="msvm_managementcollection-class"></a>Clase Msvm \_ ManagementCollection
 
 Representa una colección de otras colecciones.
 
@@ -41,17 +41,17 @@ class Msvm_ManagementCollection : CIM_CollectionOfMSEs
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ ManagementCollection** tiene estos tipos de miembros:
+La **clase Msvm \_ ManagementCollection** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ ManagementCollection** tiene estas propiedades.
+La **clase Msvm \_ ManagementCollection** tiene estas propiedades.
 
 <dl> <dt>
 
-**Recopilación**
+**CollectionID**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -60,7 +60,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](/windows/desktop/WmiSdk/key-qualifier), [**invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("CollectionID"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Calificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("CollectionID"), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificación única del objeto de colección.
@@ -76,7 +76,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("ElementName")
+Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("ElementName")
 </dt> </dl>
 
 Nombre definido por el usuario para la colección. Tenga en cuenta que no se garantiza que sea único.
@@ -87,12 +87,12 @@ Nombre definido por el usuario para la colección. Tenga en cuenta que no se gar
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -101,7 +101,7 @@ Nombre definido por el usuario para la colección. Tenga en cuenta que no se gar
 
 <dl> <dt>
 
-[**CollectionOfMSEs de CIM \_**](cim-collectionofmses.md)
+[**CIM \_ CollectionOfMSEs**](cim-collectionofmses.md)
 </dt> </dl>
 
  

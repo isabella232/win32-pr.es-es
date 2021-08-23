@@ -1,19 +1,19 @@
 ---
-description: La \_ notificación SPFILENOTIFY ENDRENAME se envía a la rutina de devolución de llamada cuando la cola completa una operación de cambio de nombre. Esta notificación se envía incluso si el usuario cancela o si se produce un error.
+description: La notificación SPFILENOTIFY ENDRENAME se envía a la rutina de devolución de llamada cuando la cola \_ completa una operación de cambio de nombre. Esta notificación se envía incluso si el usuario cancela o si se produce un error.
 ms.assetid: 8d5a8d17-de4f-4100-aa72-dfefeb8d4db9
-title: Mensaje de SPFILENOTIFY_ENDRENAME (setupapi. h)
+title: SPFILENOTIFY_ENDRENAME mensaje (Setupapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a316d4dfe72ee9eb7d85fdb70eb90e1cf3d3f463
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f34ad30cc103e8a13277d3383bad8c2e46409eaabe6f957ace27aebc9759990
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119683125"
 ---
-# <a name="spfilenotify_endrename-message"></a>SPFILENOTIFY \_ ENDRENAME
+# <a name="spfilenotify_endrename-message"></a>Mensaje SPFILENOTIFY \_ ENDRENAME
 
-La notificación **SPFILENOTIFY \_ ENDRENAME** se envía a la rutina de devolución de llamada cuando la cola completa una operación de cambio de nombre. Esta notificación se envía incluso si el usuario cancela o si se produce un error.
+La **notificación SPFILENOTIFY \_ ENDRENAME** se envía a la rutina de devolución de llamada cuando la cola completa una operación de cambio de nombre. Esta notificación se envía incluso si el usuario cancela o si se produce un error.
 
 
 ```C++
@@ -29,10 +29,10 @@ SPFILENOTIFY_ENDRENAME
 
 <dl> <dt>
 
-*Parámetro1* 
+*Param1* 
 </dt> <dd>
 
-Puntero a una estructura [**FILEPATHS**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a) . El miembro **Win32Error** de la estructura **FILEPATHS** indica el resultado de la operación de copia.
+Puntero a una [**estructura FILEPATHS.**](/windows/desktop/api/Setupapi/ns-setupapi-filepaths_a) El **miembro Win32Error** de la **estructura FILEPATHS** indica el resultado de la operación de copia.
 
 </dd> <dt>
 
@@ -53,9 +53,9 @@ Se omite el valor devuelto.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>Setupapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Setupapi.h</dt> </dl> |
 
 
 

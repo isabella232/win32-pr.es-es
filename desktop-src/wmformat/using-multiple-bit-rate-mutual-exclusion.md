@@ -1,28 +1,28 @@
 ---
-title: Usar exclusión mutua de velocidad de bits múltiple
-description: Usar exclusión mutua de velocidad de bits múltiple
+title: Uso de la exclusión mutua de velocidad de bits múltiple
+description: Uso de la exclusión mutua de velocidad de bits múltiple
 ms.assetid: 69898b4d-fe10-422e-9ed2-87b65aa7bdb3
 keywords:
 - velocidad de bits múltiple (MBR), exclusión mutua
-- MBR (velocidad de varios bits), exclusión mutua
+- MBR (velocidad de bits múltiple), exclusión mutua
 - exclusión mutua, velocidad de bits múltiple (MBR)
-- perfiles, velocidad de bits múltiple (MBR)
+- profiles,multiple bit rate (MBR)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be77c7615845d10d07982676dfdb4dc8c617cebe
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: c31c7954f6aa5098f6cc221a7a761428ff15fd6a4c2c0a6e5c8cea2b6622a84b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104358669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119446975"
 ---
-# <a name="using-multiple-bit-rate-mutual-exclusion"></a>Usar exclusión mutua de velocidad de bits múltiple
+# <a name="using-multiple-bit-rate-mutual-exclusion"></a>Uso de la exclusión mutua de velocidad de bits múltiple
 
-La exclusión mutua de velocidad de bits múltiple (MBR) resulta útil cuando se desea codificar contenido para diversos escenarios de reproducción. Una salida de vídeo MBR consta de una sola entrada codificada varias veces, cada una con una configuración de velocidad de bits diferente. Cuando se lee un archivo con codificación MBR, el lector determinará la secuencia que se va a usar en función del ancho de banda disponible.
+La exclusión mutua de velocidad de bits múltiple (MBR) es útil cuando se desea codificar contenido para diversos escenarios de reproducción. Una salida de vídeo de MBR consta de una sola entrada codificada varias veces, cada una con una configuración de velocidad de bits diferente. Cuando se lee un archivo con codificación MBR, el lector determinará qué secuencia usar en función del ancho de banda disponible.
 
-El SDK de Windows Media Format admite la codificación MBR para secuencias de audio y vídeo. Además, puede crear un tipo especial de codificación MBR denominada codificación de varios tamaños MBR. El vídeo MBR de tamaño múltiple de vídeo funciona de forma idéntica al vídeo MBR normal, salvo que se pueden especificar diferentes tamaños de imagen para las secuencias de vídeo en la exclusión mutua.
+El SDK Windows Media Format admite la codificación MBR para secuencias de vídeo y audio. Además, puede crear un tipo especial de codificación MBR denominado codificación MBR de tamaño múltiple de vídeo. El vídeo MBR de varios tamaños de vídeo funciona de forma idéntica al vídeo MBR normal, salvo que puede especificar diferentes tamaños de imagen para las secuencias de vídeo en la exclusión mutua.
 
-En el ejemplo siguiente se muestra cómo configurar un perfil para el vídeo MBR con varios tamaños de vídeo. Crea un nuevo perfil con tres secuencias de vídeo de diferentes tamaños y velocidades de bits, y los incluye en un objeto de exclusión mutua.
+En el ejemplo siguiente se muestra cómo configurar un perfil para vídeo de MBR con varios tamaños de vídeo. Crea un nuevo perfil con tres secuencias de vídeo de diferentes velocidades de bits y tamaños, y las incluye en un objeto de exclusión mutua.
 
 
 ```C++
@@ -146,27 +146,27 @@ pProfileMgr = NULL;
 
 <dl> <dt>
 
-[**Interfaz IWMMediaProps**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmmediaprops)
+[**IWMMediaProps (interfaz)**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmmediaprops)
 </dt> <dt>
 
-[**Interfaz IWMMutualExclusion**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmmutualexclusion)
+[**IWMMutualExclusion (interfaz)**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmmutualexclusion)
 </dt> <dt>
 
-[**Interfaz IWMProfile**](iwmprofile.md)
+[**IWMProfile (interfaz)**](iwmprofile.md)
 </dt> <dt>
 
-[**Interfaz IWMStreamConfig**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamconfig)
+[**IWMStreamConfig (interfaz)**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamconfig)
 </dt> <dt>
 
-[**Usar exclusión mutua**](using-mutual-exclusion.md)
+[**Uso de la exclusión mutua**](using-mutual-exclusion.md)
 </dt> <dt>
 
-[**\_tipo de medio de WM \_**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type)
+[**TIPO \_ DE MEDIO \_ WM**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_media_type)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

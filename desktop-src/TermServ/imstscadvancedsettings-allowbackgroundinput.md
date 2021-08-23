@@ -1,28 +1,28 @@
 ---
-title: Propiedad allowBackgroundInput de IMsTscAdvancedSettings
-description: Especifica si está habilitado el modo de entrada en segundo plano.
+title: Propiedad IMsTscAdvancedSettings allowBackgroundInput
+description: Especifica si el modo de entrada en segundo plano está habilitado.
 ms.assetid: 2b57ebe9-3aad-400c-bcfb-d01c759b453d
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad allowBackgroundInput
-- propiedad allowBackgroundInput Servicios de Escritorio remoto, interfaz IMsTscAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsTscAdvancedSettings, propiedad allowBackgroundInput
-- propiedad allowBackgroundInput Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad allowBackgroundInput
-- propiedad allowBackgroundInput Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad allowBackgroundInput
-- propiedad allowBackgroundInput Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad allowBackgroundInput
-- propiedad allowBackgroundInput Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad allowBackgroundInput
-- propiedad allowBackgroundInput Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad allowBackgroundInput
-- propiedad allowBackgroundInput Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad allowBackgroundInput
-- propiedad allowBackgroundInput Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad allowBackgroundInput
-- propiedad allowBackgroundInput Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad allowBackgroundInput
+- AllowBackgroundInput, propiedad Servicios de Escritorio remoto
+- Propiedad allowBackgroundInput Servicios de Escritorio remoto interfaz , IMsTscAdvancedSettings
+- Interfaz IMsTscAdvancedSettings Servicios de Escritorio remoto , propiedad allowBackgroundInput
+- Propiedad allowBackgroundInput Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad allowBackgroundInput
+- Propiedad allowBackgroundInput Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad allowBackgroundInput
+- Propiedad allowBackgroundInput Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad allowBackgroundInput
+- Propiedad allowBackgroundInput Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad allowBackgroundInput
+- Propiedad allowBackgroundInput Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad allowBackgroundInput
+- Propiedad allowBackgroundInput Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad allowBackgroundInput
+- Propiedad allowBackgroundInput Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad allowBackgroundInput
+- Propiedad allowBackgroundInput Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad allowBackgroundInput
 topic_type:
 - apiref
 api_name:
@@ -59,20 +59,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 938725ea1aa3d774d5993be695ac8568963897fb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b79df16c3bcd1120344bc6189ace324e434ad4cbd7a831757e455e26f6d10902
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657435"
 ---
-# <a name="imstscadvancedsettingsallowbackgroundinput-property"></a>IMsTscAdvancedSettings:: allowBackgroundInput (propiedad)
+# <a name="imstscadvancedsettingsallowbackgroundinput-property"></a>Propiedad IMsTscAdvancedSettings::allowBackgroundInput
 
-Especifica si está habilitado el modo de entrada en segundo plano. Cuando la entrada en segundo plano está habilitada, el cliente puede aceptar la entrada cuando el cliente no tiene el foco.
+Especifica si el modo de entrada en segundo plano está habilitado. Cuando la entrada en segundo plano está habilitada, el cliente puede aceptar la entrada cuando el cliente no tiene el foco.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -93,17 +93,17 @@ Establezca este parámetro en 0 para deshabilitar el modo de entrada en segundo 
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente.
+Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |

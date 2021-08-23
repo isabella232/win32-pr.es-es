@@ -3,12 +3,12 @@ title: Coordenadas de textura generadas automáticamente (Direct3D 9)
 description: El sistema puede usar la posición de espacio de cámara transformada o la normal de un vértice como coordenadas de textura, o bien puede calcular los tres vectores de elemento utilizados para abordar un mapa de entorno cúbico.
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b01addbe354fb910ef68e1fc693e7dfffb1ceacf
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 7aa4354002c920f73667f97de9a4185579a8c4c7b4563aebf1f3328753c88d01
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119608015"
 ---
 # <a name="auto-generated-texture-coordinates-direct3d-9"></a>Coordenadas de textura generadas automáticamente (Direct3D 9)
 
@@ -36,8 +36,8 @@ Normalmente, este estado indica al sistema que use un conjunto determinado de co
 
 Las marcas de índice de coordenadas de textura son mutuamente excluyentes. En este ejemplo se usa:
 
--   Posición del vértice (en el espacio de la cámara) como coordenadas de textura de entrada para esta fase de textura
--   El modo de encapsulado establecido en el estado de representación D3DRENDERSTATE \_ WRAP1
+-   La posición del vértice (en el espacio de la cámara) como coordenadas de textura de entrada para esta fase de textura
+-   Modo de encapsulado establecido en el estado de representación D3DRENDERSTATE \_ WRAP1
 
 
 ```
@@ -48,9 +48,9 @@ d3dDevice->SetTextureStageState(0, D3DTSS_TEXCOORDINDEX,
 
 
 
-Las coordenadas de textura generadas automáticamente son más útiles como valores de entrada para una transformación de coordenadas de textura o para eliminar la necesidad de que la aplicación calcule vectores de tres elementos para mapas de entorno cúbica.
+Las coordenadas de textura generadas automáticamente son más útiles como valores de entrada para una transformación de coordenadas de textura o para eliminar la necesidad de que la aplicación calcule vectores de tres elementos para mapas de entorno cúbicos.
 
-La asignación de esferas usa un mapa de textura precalutizado (en tiempo de modelo) que contiene todo el entorno tal y como se refleja en una esfera de chrome. Direct3D tiene una característica de generación de coordenadas de textura mediante el estado de representación D3DTSS \_ TCI CAMERASPACENORMAL, que toma la normalidad del vértice en el espacio de la cámara y la coloca a través de una transformación de textura para generar coordenadas de \_ textura.
+La asignación de esferas usa un mapa de textura precalutizado (en tiempo del modelo) que contiene todo el entorno, tal y como se refleja en una esfera de chrome. Direct3D tiene una característica de generación de coordenadas de textura mediante el estado de representación D3DTSS \_ TCI CAMERASPACENORMAL, que toma la normalidad del vértice en el espacio de la cámara y lo coloca a través de una transformación de textura para generar coordenadas de \_ textura.
 
 ## <a name="related-topics"></a>Temas relacionados
 

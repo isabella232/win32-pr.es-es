@@ -1,5 +1,5 @@
 ---
-description: Una lista de identificadores de dominio de identificador de acceso de red (NAI).
+description: Lista de identificadores de dominio de identificador de acceso de red (NAI).
 ms.assetid: e77802ee-4017-4f04-ae71-5d6d0de8fcf3
 title: Elemento NAIRealm (Hotspot2)
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: a7c8fcf85bd23c13f0e7501d59c3db62c2bf82f5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 084ee3ce04a560ce50c3ab0391f808bc09aed1bb90da6a34b86755b9b64ae772
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684215"
 ---
 # <a name="nairealm-hotspot2-element"></a>Elemento NAIRealm (Hotspot2)
 
-Una lista de identificadores de dominio de identificador de acceso de red (NAI). Las entradas de esta lista suelen tener el formato `user@domain` . La lista de dominios de NAI es el método preferido para identificar la mayoría de los operadores no móviles, como MSOs, operadores de Wireline y lugares públicos.
+Lista de identificadores de dominio de identificador de acceso de red (NAI). Las entradas de esta lista suelen tener el formato `user@domain` . La lista de dominios de NAI es el método preferido para identificar la mayoría de los operadores que no son móviles, como MSO, operadores de conexión y lugares públicos.
 
 ``` syntax
 <xs:element name="NAIRealm"
@@ -51,7 +51,7 @@ Una lista de identificadores de dominio de identificador de acceso de red (NAI).
 </xs:element>
 ```
 
-El elemento se define mediante el elemento [**Hotspot2**](wlan-profileschema-hotspot2-element.md) .
+El elemento se define mediante el [**elemento Hotspot2.**](wlan-profileschema-hotspot2-element.md)
 
 ## <a name="child-elements"></a>Elementos secundarios
 
@@ -59,7 +59,7 @@ El elemento se define mediante el elemento [**Hotspot2**](wlan-profileschema-hot
 
 | Elemento | Tipo | Descripción                                                   |
 |---------|------|---------------------------------------------------------------|
-| name    |      | Identificador de dominio único. Normalmente tiene el formato `user@domain` . |
+| name    |      | Identificador de dominio único. Normalmente, tiene el formato `user@domain` . |
 
 
 

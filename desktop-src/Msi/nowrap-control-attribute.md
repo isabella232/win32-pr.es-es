@@ -1,25 +1,25 @@
 ---
-description: Si se establece este bit, el texto del control se muestra en una sola línea. Si el texto se extiende más allá de los márgenes del control, se trunca y un botón de puntos suspensivos (&\# 0034;... &\# 0034;) se inserta al final para indicar el truncamiento. Si no se establece este bit, el texto se ajusta.
+description: Si este bit se establece, el texto del control se muestra en una sola línea. Si el texto se extiende más allá de los márgenes del control, se trunca y se truncan los puntos suspensivos (&\# 0034;...&\# 0034;). se inserta al final para indicar el truncamiento. Si no se establece este bit, el texto se ajusta.
 ms.assetid: 0dec3d25-0da7-4054-8d5c-55e81be16489
-title: NoWrap (atributo de control)
+title: Atributo de control NoWrap
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51ee40b52fbec1c8add841f7055a7f42667eca94
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d1ef67a58dd0898b4c1e6d1577d35d67e8810649d49425087fecc3e0b3518cbb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105677997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119519645"
 ---
-# <a name="nowrap-control-attribute"></a>NoWrap (atributo de control)
+# <a name="nowrap-control-attribute"></a>Atributo de control NoWrap
 
-Si se establece este bit, el texto del control se muestra en una sola línea. Si el texto se extiende más allá de los márgenes del control, se trunca y se inserta un botón de puntos suspensivos ("...") al final para indicar el truncamiento. Si no se establece este bit, el texto se ajusta.
+Si este bit se establece, el texto del control se muestra en una sola línea. Si el texto se extiende más allá de los márgenes del control, se trunca y se insertan puntos suspensivos ("...") al final para indicar el truncamiento. Si no se establece este bit, el texto se ajusta.
 
 ## <a name="valid-controls"></a>Controles válidos
 
 [Texto](text-control.md)
 
-## <a name="value"></a>Value
+## <a name="value"></a>Valor
 
 
 
@@ -31,11 +31,11 @@ Si se establece este bit, el texto del control se muestra en una sola línea. Si
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para establecer este atributo en un control, incluya el bit NoWrap en la columna Attributes del registro del control en la [tabla de control](control-table.md).
+Para establecer este atributo en un control, incluya el bit NoWrap en la columna Attributes del registro del control en la [tabla Control](control-table.md).
 
-Vea [controles y](controls.md) [atributos de control](control-attributes.md) .
+Vea [Controles y atributos](control-attributes.md) de [control.](controls.md)
 
  
 

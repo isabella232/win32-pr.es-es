@@ -1,19 +1,19 @@
 ---
-description: Las \_ constantes LINEQUEUESTATUS indican el cambio de estado de una cola de ACD en un controlador de agente.
+description: Las constantes LINEQUEUESTATUS indican el cambio de estado de una cola \_ de ACD en un controlador de agente.
 ms.assetid: 97f70742-8f5a-43bd-aef4-a28f1cc94bb2
-title: Constantes de LINEQUEUESTATUS_ (TAPI. h)
+title: LINEQUEUESTATUS_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22da21ddfb07cee57e45a271e9573c591b4334ec
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1cec8159ff836bd8eee76b74d2b8ac2808d188da84d2b6742cb5ddde10f405f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119660015"
 ---
-# <a name="linequeuestatus_-constants"></a>Constantes de LINEQUEUESTATUS \_
+# <a name="linequeuestatus_-constants"></a>LineQUEUESTATUS \_ (Constantes)
 
-Las **\_ constantes LINEQUEUESTATUS** indican el cambio de estado de una cola de ACD en un controlador de agente.
+Las **constantes LINEQUEUESTATUS \_ indican** el cambio de estado de una cola de ACD en un controlador de agente.
 
 <dl> <dt>
 
@@ -22,7 +22,7 @@ Las **\_ constantes LINEQUEUESTATUS** indican el cambio de estado de una cola de
 
 
 
-Se ha agregado una cola a los disponibles.
+Se ha agregado una cola a las disponibles.
 
 
 </dt> </dl> </dd> <dt>
@@ -42,7 +42,7 @@ Esta cola se ha quitado de las disponibles.
 
 
 
-Actualización de la información sobre la cola de ACD.
+Actualización de información sobre la cola de ACD.
 
 
 </dt> </dl> </dd> </dl>
@@ -51,10 +51,10 @@ Actualización de la información sobre la cola de ACD.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versión de TAPI<br/> | Requiere TAPI 2,2<br/>                                                      |
-| Encabezado<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Versión de TAPI<br/> | Requiere TAPI 2.2<br/>                                                      |
+| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

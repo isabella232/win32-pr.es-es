@@ -1,7 +1,7 @@
 ---
 description: Representa el estado de descarga del hardware del conmutador.
 ms.assetid: 77a34df7-e3c4-4d91-af5a-91a03dd8246d
-title: Msvm_EthernetSwitchHardwareOffloadData (clase)
+title: Msvm_EthernetSwitchHardwareOffloadData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -37,18 +37,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: b64762b824cea7d3b064636e7f7f87777e053daf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c729690bb2c8f59610fd1610e9123dfddf267152d1b428be308b5bd3ec23fe2f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105670031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119524555"
 ---
-# <a name="msvm_ethernetswitchhardwareoffloaddata-class"></a>MSVM \_ EthernetSwitchHardwareOffloadData (clase)
+# <a name="msvm_ethernetswitchhardwareoffloaddata-class"></a>Clase Msvm \_ EthernetSwitchHardwareOffloadData
 
 Representa el estado de descarga del hardware del conmutador.
 
-La siguiente sintaxis es código simplificado de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
+La sintaxis siguiente se Managed Object Format código (MOF) e incluye todas las propiedades heredadas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -85,13 +85,13 @@ class Msvm_EthernetSwitchHardwareOffloadData : Msvm_EthernetSwitchData
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ EthernetSwitchHardwareOffloadData** tiene estos tipos de miembros:
+La **clase Msvm \_ EthernetSwitchHardwareOffloadData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ EthernetSwitchHardwareOffloadData** tiene estas propiedades.
+La **clase Msvm \_ EthernetSwitchHardwareOffloadData** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -104,7 +104,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Breve descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -117,10 +117,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (256)
+Calificadores: **Key**, **MaxLen** (256)
 </dt> </dl>
 
-Nombre de la clase o subclase utilizada en la creación de esta instancia. Esta propiedad se hereda de [**MSVM \_ EthernetSwitchData**](msvm-ethernetswitchdata.md).
+Nombre de la clase o subclase utilizada en la creación de esta instancia. Esta propiedad se hereda de [**Msvm \_ EthernetSwitchData**](msvm-ethernetswitchdata.md).
 
 </dd> <dt>
 
@@ -139,7 +139,7 @@ Calificadores: **WmiDataId** (11), **InterfaceVersion** (3), **InterfaceRevision
 La configuración actual de VMMQ para la cola predeterminada
 
 > [!Note]  
-> Propiedad agregada en la versión 1703 de Windows 10.
+> Propiedad agregada en Windows 10, versión 1703.
 
  
 
@@ -148,7 +148,7 @@ La configuración actual de VMMQ para la cola predeterminada
 **DefaultQueueVmmqQueuePairs**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -157,10 +157,10 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (12), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-El número actual de colas asignadas para la cola predeterminada
+Número actual de colas asignadas para la cola predeterminada
 
 > [!Note]  
-> Propiedad agregada en la versión 1703 de Windows 10.
+> Propiedad agregada en Windows 10, versión 1703.
 
  
 
@@ -178,10 +178,10 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (10), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-La configuración de VRss actual para la cola predeterminada
+La configuración de VRs actual para la cola predeterminada
 
 > [!Note]  
-> Propiedad agregada en la versión 1703 de Windows 10.
+> Propiedad agregada en Windows 10, versión 1703.
 
  
 
@@ -199,10 +199,10 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (15), **InterfaceVersion** (4), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica si la CPU VMQ primaria está excluida de la tabla de indirección VRSS/VMMQ.
+Indica si la CPU de VMQ principal se excluye de la tabla de direccionamiento indirecto de VRSS/VMMQ.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1709.
+> Se ha agregado Windows 10, versión 1709.
 
  
 
@@ -220,10 +220,10 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (16), **InterfaceVersion** (4), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica si se va a realizar siempre la propagación de VRSS para la cola predeterminada, independientemente del estado de RSS del vPort externo.
+Indica si se debe realizar siempre la propagación de VRSS para la cola predeterminada, independientemente del estado RSS del vPort externo.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1709.
+> Se ha agregado Windows 10, versión 1709.
 
  
 
@@ -232,7 +232,7 @@ Indica si se va a realizar siempre la propagación de VRSS para la cola predeter
 **DefaultQueueVrssMinQueuePairs**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -244,7 +244,7 @@ Calificadores: **WmiDataId** (13), **InterfaceVersion** (4), **InterfaceRevision
 Indica el número mínimo de colas usadas para VRSS/VMMQ.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1709.
+> Se ha agregado Windows 10, versión 1709.
 
  
 
@@ -253,7 +253,7 @@ Indica el número mínimo de colas usadas para VRSS/VMMQ.
 **DefaultQueueVrssQueueSchedulingMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -262,10 +262,10 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (14), **InterfaceVersion** (4), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica cómo se dirigen las colas de VRSS/VMMQ a diferentes procesadores de host.
+Indica cómo las colas VRSS/VMMQ se dirige a diferentes procesadores host.
 
 > [!Note]  
-> Agregado en Windows 10, versión 1709.
+> Se ha agregado Windows 10, versión 1709.
 
  
 
@@ -280,7 +280,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Descripción del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -293,7 +293,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Nombre para mostrar del objeto. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -306,17 +306,17 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**
+Calificadores: **Clave**
 </dt> </dl>
 
-Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica de forma única una instancia de esta clase. Esta propiedad se hereda de [**\_ ManagedElement de CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **IovQueuePairCapacity**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -325,14 +325,14 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (7), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Número máximo de pares de colas admitidos por el modificador.
+Número máximo de pares de cola admitidos por el modificador.
 
 </dd> <dt>
 
 **IovQueuePairUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -341,14 +341,14 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (8), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Número actual de pares de colas utilizados por el modificador.
+Número actual de pares de cola que usa el modificador.
 
 </dd> <dt>
 
 **IovVfCapacity**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -364,7 +364,7 @@ Número máximo de funciones virtuales admitidas por el modificador.
 **IovVfUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -380,7 +380,7 @@ Número actual de funciones virtuales que usa el modificador.
 **IPsecSACapacity**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -389,14 +389,14 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Número máximo de descargas de Asociación de seguridad de IPsec admitidas por el modificador.
+Número máximo de descargas de asociación de seguridad de IPsec admitidas por el modificador.
 
 </dd> <dt>
 
 **IPsecSAUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -405,7 +405,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Número actual de descargas de la Asociación de seguridad de IPsec que utiliza el modificador.
+Número actual de descargas de asociación de seguridad de IPsec que usa el modificador.
 
 </dd> <dt>
 
@@ -418,10 +418,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **invalidación**, **MaxLen** (256)
+Calificadores: **Key**, **Override**, **MaxLen** (256)
 </dt> </dl>
 
-Nombre único del recurso. Esta propiedad se hereda de [**MSVM \_ EthernetSwitchData**](msvm-ethernetswitchdata.md).
+Nombre único del recurso. Esta propiedad se hereda de [**Msvm \_ EthernetSwitchData.**](msvm-ethernetswitchdata.md)
 
 </dd> <dt>
 
@@ -437,7 +437,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (9), **InterfaceVersion** (2), **InterfaceRevision** (0)
 </dt> </dl>
 
-Indica si el modificador está usando Packet Direct
+Indica si el conmutador usa el paquete directo.
 
 > [!Note]  
 > Propiedad agregada en Windows 10.
@@ -455,10 +455,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (256)
+Calificadores: **Key**, **MaxLen** (256)
 </dt> </dl>
 
-Nombre de la clase de creación del sistema de hospedaje. Esta propiedad se hereda de [**MSVM \_ EthernetSwitchData**](msvm-ethernetswitchdata.md).
+Nombre de clase de creación del sistema de hospedaje. Esta propiedad se hereda de [**Msvm \_ EthernetSwitchData.**](msvm-ethernetswitchdata.md)
 
 </dd> <dt>
 
@@ -471,17 +471,17 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: **clave**, **MaxLen** (256)
+Calificadores: **Key**, **MaxLen** (256)
 </dt> </dl>
 
-El nombre del conmutador virtual al que está enlazada la instancia de recurso asociada. Esta propiedad se hereda de [**MSVM \_ EthernetSwitchData**](msvm-ethernetswitchdata.md).
+Nombre del conmutador virtual al que está enlazada la instancia de recurso asociada. Esta propiedad se hereda de [**Msvm \_ EthernetSwitchData.**](msvm-ethernetswitchdata.md)
 
 </dd> <dt>
 
 **VmqCapacity**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -490,14 +490,14 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Número máximo de descargas de colas de máquinas virtuales admitidas por el modificador.
+Número máximo de descargas de cola de máquinas virtuales admitidas por el conmutador.
 
 </dd> <dt>
 
 **VmqUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -506,7 +506,7 @@ Tipo de acceso: solo lectura
 Calificadores: **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Número actual de descargas de colas de máquinas virtuales que usa el modificador.
+Número actual de descargas de la cola de máquinas virtuales que usa el conmutador.
 
 </dd> </dl>
 
@@ -516,10 +516,10 @@ Número actual de descargas de colas de máquinas virtuales que usa el modificad
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                    |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                              |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                    |
+| Espacio de nombres<br/>                | Root \\ Virtualization \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-SQL-ThirdParty
-description: Este atributo indica si los datos de la publicación proceden de un origen de datos distinto de SQL Server. Si procede de otro origen, se establece en TRUE.
+description: Este atributo indica si los datos de publicación son de un origen de datos distinto de SQL Server. Si es de otro origen, se establece en TRUE.
 ms.assetid: 84d93b9f-0acc-47da-9f1b-44d8468ad53e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de MS-SQL-ThirdParty
-- Esquema de AD de atributos de mS-SQL-ThirdParty
+- Esquema de AD del atributo MS-SQL-ThirdParty
+- Esquema de AD del atributo mS-SQL-ThirdParty
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7cc2b60f9589990f6357ee3c4cd24215e8af21df
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4f39ff1ba6d4c6ff20e73aef4af5c9c20fae295632127fb0ad0ea809dc0702c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583305"
 ---
 # <a name="ms-sql-thirdparty-attribute"></a>Atributo MS-SQL-ThirdParty
 
-Este atributo indica si los datos de la publicación proceden de un origen de datos distinto de SQL Server. Si procede de otro origen, se establece en **true**.
+Este atributo indica si los datos de publicación son de un origen de datos distinto de SQL Server. Si es de otro origen, se establece en **TRUE.**
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | MS-SQL-ThirdParty                    |
-| Nombre para mostrar de LDAP | mS-SQL-ThirdParty                    |
-| Tamaño              | 4 bytes                              |
-| Actualizar privilegio  | El sistema establece este valor.     |
+| Ldap-Display-Name | mS-SQL-ThirdParty                    |
+| Size              | 4 bytes                              |
+| Privilegio actualizar  | El sistema establece este valor.     |
 | Frecuencia de actualización  | Cuando se configura la replicación.           |
 | Attribute-Id      | 1.2.840.113556.1.4.1407              |
-| System-ID-GUID    | c4e311fc-d34b-11d2-999a-0000f87a57d4 |
-| Sintaxis            | [**Booleano**](s-boolean.md)         |
+| System-Id-Guid    | c4e311fc-d34b-11d2-999a-0000f87a57d4 |
+| Syntax            | [**Boolean**](s-boolean.md)         |
 
 
 
@@ -55,13 +55,13 @@ Este atributo indica si los datos de la publicación proceden de un origen de da
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
@@ -76,13 +76,13 @@ Este atributo indica si los datos de la publicación proceden de un origen de da
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
@@ -97,13 +97,13 @@ Este atributo indica si los datos de la publicación proceden de un origen de da
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
@@ -116,15 +116,15 @@ Este atributo indica si los datos de la publicación proceden de un origen de da
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
@@ -139,13 +139,13 @@ Este atributo indica si los datos de la publicación proceden de un origen de da
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
@@ -160,13 +160,13 @@ Este atributo indica si los datos de la publicación proceden de un origen de da
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | False                                                               |
-| En el catálogo global      | False                                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Falso                                                               |
+| En el catálogo global      | Falso                                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |

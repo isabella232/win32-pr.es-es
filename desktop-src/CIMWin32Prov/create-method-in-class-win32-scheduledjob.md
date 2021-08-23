@@ -2,7 +2,7 @@
 description: Envía un trabajo a un sistema operativo para su ejecución en una fecha y hora especificadas en el futuro.
 ms.assetid: 9d582fbb-24cb-401d-8b77-af7671a24e6d
 ms.tgt_platform: multiple
-title: Método Create de la clase Win32_ScheduledJob
+title: Método Create de la Win32_ScheduledJob clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9f1acae94ea29d2d57b2952c0b0adc267ad3066c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a7788c894646b3ebb07fc9d3d98aeeda54b9172b5dde01e7eb65975bb2d95d61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104360069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119547415"
 ---
-# <a name="create-method-of-the-win32_scheduledjob-class"></a>Método Create de la \_ clase Win32 ScheduledJob
+# <a name="create-method-of-the-win32_scheduledjob-class"></a>Método Create de la clase \_ ScheduledJob de Win32
 
-El método **crear** [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) envía un trabajo a un sistema operativo para su ejecución en una fecha y hora especificadas en el futuro. Este método requiere que el servicio de programación se inicie en el equipo al que se envía el trabajo.
+El **método** [de clase Create WMI](/windows/desktop/WmiSdk/retrieving-a-class) envía un trabajo a un sistema operativo para su ejecución en una hora y fecha especificadas en el futuro. Este método requiere que el servicio de programación se inicia en el equipo al que se envía el trabajo.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,35 +48,35 @@ uint32 Create(
 
 <dl> <dt>
 
-*Comando* \[ de\]
+*Comando* \[ En\]
 </dt> <dd>
 
-Nombre del comando, programa por lotes, archivo binario y parámetros de la línea de comandos que el servicio de programación utiliza para invocar el trabajo.
+Nombre del comando, programa por lotes o archivo binario y parámetros de línea de comandos que usa el servicio de programación para invocar el trabajo.
 
-Ejemplo: "Defrag/q/f".
+Ejemplo: "defrag /q /f".
 
 </dd> <dt>
 
-*StartTime* \[ de\]
+*StartTime* \[ En\]
 </dt> <dd>
 
-Hora universal coordinada (hora UTC) para ejecutar un trabajo. El formato debe ser: "AAAAMMDDHHMMSS. MMMMMM (+-) OOO ", donde" AAAAMMDD "debe reemplazarse por" \* \* \* \* \* \* \* \* ". Por ejemplo: " \* \* \* \* \* \* \* \* 143000.000000-420" especifica 14,30 (2:30 P.M.) PST con horario de verano en vigor.
+Hora universal coordinada (UTC) para ejecutar un trabajo. El formulario debe ser: "AAAAMMDDHHMMSS. MMMMMM(+-)OOO", donde "YYYYMMDD" debe reemplazarse por " \* \* \* \* \* \* \* \* ". Por ejemplo: \* \* \* \* \* \* \* \* "143000.00000-420" especifica 14.30 (2:30 p. m.) PST con el horario de verano en vigor.
 
-La sección "(+-) OOO" del valor de la propiedad StartTime es la diferencia actual de la conversión de hora local. La diferencia es la diferencia entre la hora UTC y la hora local. Para calcular la diferencia de la zona horaria, multiplique el número de horas que la zona horaria está por encima o por detrás de la hora del meridiano de Greenwich (GMT) en 60 (use un número positivo para el número de horas si la zona horaria está por detrás de GMT y un número negativo si la zona horaria está tras la hora GMT). Agregue un 60 adicional al cálculo si la zona horaria usa el horario de verano. Por ejemplo, la zona horaria estándar del Pacífico es de ocho horas tras la hora GMT, por lo que la diferencia es igual a-420 (-8 \* 60 + 60) cuando el horario de verano está en uso y-480 (-8 \* 60) cuando el horario de verano no está en uso. También puede determinar el valor de la diferencia consultando la propiedad bias de la clase [**\_ TimeZone de Win32**](win32-timezone.md) .
+La sección "(+-)OOO" del valor de la propiedad StartTime es el sesgo actual para la traducción de la hora local. El sesgo es la diferencia entre la hora UTC y la hora local. Para calcular el sesgo de la zona horaria, multiplique el número de horas que la zona horaria está por delante o por detrás de la hora media de Greenwich (GMT) por 60 (use un número positivo para el número de horas si la zona horaria está por delante de GMT y un número negativo si la zona horaria está detrás de GMT). Agregue 60 adicionales al cálculo si la zona horaria usa el horario de verano. Por ejemplo, la zona horaria estándar del Pacífico está ocho horas por detrás de GMT, por lo que el sesgo es igual a -420 (-8 60 + 60) cuando el horario de verano está en uso y \* -480 (-8 60) cuando el horario de verano no está \* en uso. También puede determinar el valor del sesgo consultando la propiedad bias de la clase [**\_ TimeZone de Win32.**](win32-timezone.md)
 
 </dd> <dt>
 
 *RunRepeatedly* \[ en, opcional\]
 </dt> <dd>
 
-Si **es true**, un trabajo programado se ejecuta repetidamente en días específicos. El valor predeterminado es **False**.
+Si **es True,** un trabajo programado se ejecuta repetidamente en días específicos. El valor predeterminado es **False**.
 
 </dd> <dt>
 
 *DaysOfWeek* \[ en, opcional\]
 </dt> <dd>
 
-Días de la semana en los que está programada la ejecución de un trabajo; solo se usa cuando el parámetro *RunRepeatedly* es **true**. Para programar un trabajo durante más de un día de la semana, combine los valores adecuados en un operador lógico OR. Por ejemplo, para programar un trabajo para los martes y viernes, el valor de *DaysOfWeek* es 2 o 16.
+Días de la semana en los que se programa la ejecución de un trabajo; se usa solo cuando *el parámetro RunRepeatedly* es **True.** Para programar un trabajo durante más de un día de la semana, una los valores adecuados en un or lógico. Por ejemplo, para programar un trabajo para martes y viernes, el valor de *DaysOfWeek* es 2 O 16.
 
 <dt>
 
@@ -132,7 +132,7 @@ Días de la semana en los que está programada la ejecución de un trabajo; solo
 *DaysOfMonth* \[ en, opcional\]
 </dt> <dd>
 
-Días del mes en que se programa la ejecución de un trabajo; solo se usa cuando el parámetro *RunRepeatedly* es **true**.
+Días del mes en que se programa la ejecución de un trabajo; se usa solo cuando *el parámetro RunRepeatedly* es **True.**
 
 <dt>
 
@@ -480,20 +480,20 @@ Día 31 de un mes
 *InteractWithDesktop* \[ en, opcional\]
 </dt> <dd>
 
-Si es **true**, el trabajo especificado debe ser interactivo, lo que significa que un usuario puede proporcionar la entrada a un trabajo programado mientras se está ejecutando el trabajo. El valor predeterminado es **False**.
+Si **es True**, el trabajo especificado debe ser interactivo, lo que significa que un usuario puede dar entrada a un trabajo programado mientras se ejecuta el trabajo. El valor predeterminado es **False**.
 
 </dd> <dt>
 
-*JobID* \[ enuncia\]
+*JobId* \[ out\]
 </dt> <dd>
 
-Número de identificación de un trabajo. Este parámetro es un identificador de un trabajo programado en un equipo.
+Número de identificador de un trabajo. Este parámetro es un identificador de un trabajo que se programa en un equipo.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) cuando se realiza correctamente y un número diferente para indicar un error. Para ver otros códigos de error, consulte [**constantes de error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve un valor de 0 (cero) cuando se realiza correctamente y un número diferente para indicar un error. Para obtener códigos de error adicionales, [**vea Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
@@ -538,7 +538,7 @@ Proceso interactivo.
 
 9
 
-No se encuentra la ruta de acceso al directorio del archivo ejecutable del servicio.
+No se encuentra la ruta de acceso del directorio al archivo ejecutable del servicio.
 
 </dd> <dt>
 
@@ -556,7 +556,7 @@ Se han pasado parámetros no válidos al servicio.
 
 22
 
-La cuenta con la que se ejecuta este servicio no es válida o carece de permisos para ejecutar el servicio.
+La cuenta en la que se ejecuta este servicio no es válida o carece de los permisos para ejecutar el servicio.
 
 </dd> <dt>
 
@@ -567,9 +567,9 @@ La cuenta con la que se ejecuta este servicio no es válida o carece de permisos
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si el trabajo programado inicia un programa interactivo como el Bloc de notas, la propiedad **InteractWithDeskto** debe establecerse en **true** o la pantalla del programa no está visible. El proceso sigue apareciendo en el **Administrador de tareas** aunque no aparezca en la pantalla.
+Si el trabajo programado inicia un programa interactivo como Bloc de notas, la propiedad **InteractWithDeskto** debe establecerse en **True** o la pantalla del programa no está visible. El proceso sigue apareciendo en **el Administrador de tareas** incluso si no aparece en la pantalla.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -579,8 +579,8 @@ Si el trabajo programado inicia un programa interactivo como el Bloc de notas, l
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -592,7 +592,7 @@ Si el trabajo programado inicia un programa interactivo como el Bloc de notas, l
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**Win32 \_ ScheduledJob**](win32-scheduledjob.md)
+[**ScheduledJob de Win32 \_**](win32-scheduledjob.md)
 </dt> </dl>
 
  

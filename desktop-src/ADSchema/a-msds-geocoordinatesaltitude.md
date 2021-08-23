@@ -1,11 +1,11 @@
 ---
-title: atributo MS-DS-geocoordinations-altitud
-description: Coordenadas geográficas para servicios de ubicación, concretamente altitud (en milímetros) de la oficina o sala de conferencias.
+title: Atributo ms-DS-GeoCoordinates-Altitude
+description: Coordenadas geográficas para los servicios de ubicación, específicamente la altitud (en milímetros) de la oficina o la sala de conferencias.
 ms.assetid: ee7d756b-2bd4-4399-b573-794a331a1573
 ms.tgt_platform: multiple
 keywords:
-- MS-DS-geocoordinations-altitud atributo AD Schema
-- Esquema de AD de atributo msDS-GeoCoordinatesAltitude
+- Esquema de AD del atributo ms-DS-GeoCoordinates-Altitude
+- Esquema de AD del atributo msDS-GeoCoordinatesAltitude
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f700e1bdd296019f87396f2cb5f1a919c46b3f2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e3fc5a17a3fd87070ee9e0bd94022d237fffd129ec9e895320b64c46dbb3c9a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104494050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552384"
 ---
-# <a name="ms-ds-geocoordinates-altitude-attribute"></a>atributo MS-DS-geocoordinations-altitud
+# <a name="ms-ds-geocoordinates-altitude-attribute"></a>Atributo ms-DS-GeoCoordinates-Altitude
 
-Coordenadas geográficas para servicios de ubicación, concretamente altitud (en milímetros) de la oficina o sala de conferencias.
+Coordenadas geográficas para los servicios de ubicación, específicamente la altitud (en milímetros) de la oficina o la sala de conferencias.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DS-geocoordinations-altitud        |
-| Nombre para mostrar de LDAP | msDS-GeoCoordinatesAltitude          |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-DS-GeoCoordinates-Altitude        |
+| Ldap-Display-Name | msDS-GeoCoordinatesAltitude          |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2183              |
-| System-ID-GUID    | a11703b7-5641-4d9c-863e-5fb3325e74e0 |
-| Sintaxis            | [**Interval**](s-interval.md)       |
+| System-Id-Guid    | a11703b7-5641-4d9c-863e-5fb3325e74e0 |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -50,18 +50,18 @@ Coordenadas geográficas para servicios de ubicación, concretamente altitud (en
 
 | Entrada | Value |
 |------------------------|------------------------------------------------------|
-| Identificador de vínculo                | \-                                                   |
+| Id. de vínculo                | \-                                                   |
 | MAPI-Id                | \-                                                   |
-| System-Only            | False                                                |
-| Tiene un único valor       | True                                                 |
-| Está indexado             | True                                                 |
-| En el catálogo global      | False                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                         |
+| System-Only            | Falso                                                |
+| Es de un solo valor       | Verdadero                                                 |
+| Está indexado             | Verdadero                                                 |
+| En el catálogo global      | Falso                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000001                                           |
 | System-Flags           | 0x00000000                                           |
-| Clases usadas en        | [**Destinatario de correo**](c-mailrecipient.md)<br/> |
+| Clases usadas en        | [**Destinatario del correo**](c-mailrecipient.md)<br/> |
 
 
 

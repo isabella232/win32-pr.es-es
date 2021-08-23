@@ -1,21 +1,21 @@
 ---
-description: La Directiva de metadatos de fotos para la propiedad System. Photo. RelatedSoundFile.
+description: Directiva de metadatos de fotos para la propiedad System.Photo.RelatedSoundFile.
 ms.assetid: 3b212d90-7ae2-4b7c-b77a-2017490aca40
-title: Directiva de metadatos de la foto de System. Photo. RelatedSoundFile
+title: Directiva de metadatos de fotos System.Photo.RelatedSoundFile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07a29adb71f572868f21b1b8427e71b09616b24c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0aae80ad39b8d3dab271aacf4815836e8b386c150ec80be63a83a4ab5937635e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119549435"
 ---
-# <a name="systemphotorelatedsoundfile-photo-metadata-policy"></a>Directiva de metadatos de la foto de System. Photo. RelatedSoundFile
+# <a name="systemphotorelatedsoundfile-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Photo.RelatedSoundFile
 
-La Directiva de metadatos de fotos para la propiedad [System. Photo. RelatedSoundFile](../properties/props-system-photo-relatedsoundfile.md) .
+Directiva de metadatos de fotos para [la propiedad System.Photo.RelatedSoundFile.](../properties/props-system-photo-relatedsoundfile.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ Photo \_ RelatedSoundFile
 
@@ -27,9 +27,9 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
-VT \_ LPWStr
+VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo de entrada
 
@@ -37,7 +37,7 @@ String.
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
@@ -45,22 +45,22 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                          | Formato de disco |
+| Pedido | Ruta de acceso                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /app1/IFD/Exif/{ushort = 40964} | ascii       |
+| 1     | /app1/ifd/exif/{ushort=40964} | ascii       |
 | 2     | /xmp/exif:RelatedSoundFile    | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                          | Formato de disco |
+| Pedido | Ruta de acceso                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /app1/IFD/Exif/{ushort = 40964} | ascii       |
+| 1     | /app1/ifd/exif/{ushort=40964} | ascii       |
 | 2     | /xmp/exif:RelatedSoundFile    | unicode     |
 
 
@@ -71,9 +71,9 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                          |
+| Pedido | Ruta de acceso                          |
 |-------|-------------------------------|
-| 1     | /app1/IFD/Exif/{ushort = 40964} |
+| 1     | /app1/ifd/exif/{ushort=40964} |
 | 2     | /xmp/exif:RelatedSoundFile    |
 
 
@@ -86,22 +86,22 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                           | Formato de disco |
+| Pedido | Ruta de acceso                           | Formato de disco |
 |-------|--------------------------------|-------------|
-| 1     | /IFD/Exif/{ushort = 40964}       | ascii       |
+| 1     | /ifd/exif/{ushort=40964}       | ascii       |
 | 2     | /ifd/xmp/exif:RelatedSoundFile | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                           | Formato de disco |
+| Pedido | Ruta de acceso                           | Formato de disco |
 |-------|--------------------------------|-------------|
-| 1     | /IFD/Exif/{ushort = 40964}       | ascii       |
+| 1     | /ifd/exif/{ushort=40964}       | ascii       |
 | 2     | /ifd/xmp/exif:RelatedSoundFile | unicode     |
 
 
@@ -112,22 +112,22 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                           |
+| Pedido | Ruta de acceso                           |
 |-------|--------------------------------|
-| 1     | /IFD/Exif/{ushort = 40964}       |
+| 1     | /ifd/exif/{ushort=40964}       |
 | 2     | /ifd/xmp/exif:RelatedSoundFile |
 
 
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[System. Photo. RelatedSoundFile](../properties/props-system-photo-relatedsoundfile.md)
+[System.Photo.RelatedSoundFile](../properties/props-system-photo-relatedsoundfile.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Código de notificación de EN_ENDCOMPOSITION (RichEdit. h)
-description: Notifica a una ventana primaria de un control Rich Edit que el usuario ha escrito nuevos datos o que ha terminado de escribir datos mientras usa el marco de trabajo de servicios de texto o IME.
+title: EN_ENDCOMPOSITION de notificación (Richedit.h)
+description: Notifica a una ventana primaria de control de edición enriqueciendo que el usuario ha escrito datos nuevos o ha terminado de escribir datos mientras usa IME o Text Services Framework.
 ms.assetid: 3956313F-F82F-41A2-AEDA-52E63218977C
 keywords:
-- EN_ENDCOMPOSITION controles de código de notificación de Windows
+- EN_ENDCOMPOSITION código de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9df1c2b5d08b2da73c67edeb6fe7ca4ac639000c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5d9fe75910ea018cf9d72dd14696067eb0b2bc00dabd4456cca63e41a099a75d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119436855"
 ---
-# <a name="en_endcomposition-notification-code"></a>\_Código de notificación en ENDCOMPOSITION
+# <a name="en_endcomposition-notification-code"></a>Código de notificación EN \_ ENDCOMPOSITION
 
-Notifica a una ventana primaria de un control Rich Edit que el usuario ha escrito nuevos datos o que ha terminado de escribir datos mientras usa el [marco de trabajo de servicios de texto](/windows/desktop/TSF/text-services-framework)o IME.
+Notifica a una ventana primaria de control de edición enriqueciendo que el usuario ha escrito datos nuevos o ha terminado de escribir datos mientras usa IME [o Text Services Framework](/windows/desktop/TSF/text-services-framework).
 
 
 ```C++
@@ -41,7 +41,7 @@ EN_ENDCOMPOSITION
 *lParam* 
 </dt> <dd>
 
-Una estructura [**ENDCOMPOSITIONNOTIFY**](/windows/win32/api/richedit/ns-richedit-endcompositionnotify) que recibe información sobre la condición de finalización de composición.
+Estructura [**ENDCOMPOSITIONNOTIFY**](/windows/win32/api/richedit/ns-richedit-endcompositionnotify) que recibe información sobre la condición de composición final.
 
 </dd> </dl>
 
@@ -51,9 +51,9 @@ Una estructura [**ENDCOMPOSITIONNOTIFY**](/windows/win32/api/richedit/ns-richedi
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                            |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                  |
-| Encabezado<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
+| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Obtiene el perfil de detección predeterminado.
+description: Obtiene el perfil de examen predeterminado.
 ms.assetid: 0e5ca06a-78ca-4d24-8dda-26babc3124b5
-title: 'IScanProfileMgr:: GetDefaultProfile (método) (Scanprofilemgr. h)'
+title: Método IScanProfileMgr::GetDefaultProfile (Scanprofilemgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scanprofilemgr.h
-ms.openlocfilehash: e058094fc29510d6e073abc0b05374403a2b5cd9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a496a2e606e389f8b2e1dfd7808d56e4360108a27ef66fbc0937ef1040514e44
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119549774"
 ---
-# <a name="iscanprofilemgrgetdefaultprofile-method"></a>IScanProfileMgr:: GetDefaultProfile (método)
+# <a name="iscanprofilemgrgetdefaultprofile-method"></a>IScanProfileMgr::GetDefaultProfile (método)
 
-Obtiene el perfil de detección predeterminado.
+Obtiene el perfil de examen predeterminado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,16 +40,16 @@ HRESULT GetDefaultProfile(
 
 <dl> <dt>
 
-*bstrDeviceID* \[ de\]
+*bstrDeviceID* \[ En\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-IDENTIFICADOR del dispositivo.
+Identificador del dispositivo.
 
 </dd> <dt>
 
-*ppScanProfile* \[ enuncia\]
+*ppScanProfile* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IScanProfile**](-wia-iscanprofile.md)\*\***
@@ -62,22 +62,22 @@ Dirección de un puntero al perfil predeterminado del dispositivo.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El perfil predeterminado tiene un `<Default>` elemento.
+El perfil predeterminado tiene un `<Default>` elemento .
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
+| Header<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ El perfil predeterminado tiene un `<Default>` elemento.
 [**IScanProfileMgr**](-wia-iscanprofilemgr.md)
 </dt> <dt>
 
-[Esquema de análisis de perfil](-wia-scan-profile-schema.md)
+[Esquema de perfil de examen](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

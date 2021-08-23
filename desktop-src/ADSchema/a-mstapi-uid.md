@@ -1,11 +1,11 @@
 ---
-title: atributo de identificador único de MS-TAPI
-description: Proporciona el nombre de una conferencia de multidifusión de TAPI. Es el atributo de nomenclatura de la clase Rt-Conference.
+title: Atributo ms-TAPI-Unique-Identifier
+description: Proporciona el nombre de una conferencia de multidifusión TAPI. Es el atributo de nomenclatura de la Rt-Conference clase .
 ms.assetid: a8162af7-0169-4381-8edc-3dbbf178e8ed
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de identificador único de MS-TAPI
-- msTAPI-UID atributo AD Schema
+- Esquema de AD del atributo ms-TAPI-Unique-Identifier
+- Esquema de AD del atributo msTAPI-uid
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 528d34d9d4282dac3f5bd5a41231094fd2666c2c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 36e929ecb48cdc7d12b0b75eb275a338e0a6371f365d4591ed532b399aaff03a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104422675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508545"
 ---
-# <a name="ms-tapi-unique-identifier-attribute"></a>atributo de identificador único de MS-TAPI
+# <a name="ms-tapi-unique-identifier-attribute"></a>Atributo ms-TAPI-Unique-Identifier
 
-Proporciona el nombre de una conferencia de multidifusión de TAPI. Es el atributo de nomenclatura de la clase Rt-Conference.
+Proporciona el nombre de una conferencia de multidifusión TAPI. Es el atributo de nomenclatura de la Rt-Conference clase .
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------------------------------------|
-| CN                | Identificador único de MS-TAPI                                             |
-| Nombre para mostrar de LDAP | msTAPI: UID                                                            |
-| Tamaño              | Puede ser una cadena arbitraria, normalmente menos de 100 caracteres de longitud. |
-| Actualizar privilegio  | No se requieren privilegios especiales.                                       |
-| Frecuencia de actualización  | Se establece una vez en el momento de crear el objeto de Rt-Conference.            |
+| CN                | ms-TAPI-Unique-Identifier                                             |
+| Ldap-Display-Name | msTAPI-uid                                                            |
+| Size              | Puede ser una cadena arbitraria, normalmente de menos de 100 caracteres. |
+| Actualizar privilegios  | No se requieren privilegios especiales.                                       |
+| Frecuencia de actualización  | Establezca una vez en el momento de crear el Rt-Conference objeto .            |
 | Attribute-Id      | 1.2.840.113556.1.4.1698                                               |
-| System-ID-GUID    | 70a4e7ea-b3b9-4643-8918-e6dd2471bfd4                                  |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md)                           |
+| System-Id-Guid    | 70a4e7ea-b3b9-4643-8918-e6dd2471bfd4                                  |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                           |
 
 
 
@@ -54,18 +54,18 @@ Proporciona el nombre de una conferencia de multidifusión de TAPI. Es el atribu
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                          |
+| Id. de vínculo                | \-                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                          |
-| System-Only            | False                                                                                                                       |
-| Tiene un único valor       | True                                                                                                                        |
-| Está indexado             | False                                                                                                                       |
-| En el catálogo global      | False                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                |
+| System-Only            | Falso                                                                                                                       |
+| Es de un solo valor       | Verdadero                                                                                                                        |
+| Está indexado             | Falso                                                                                                                       |
+| En el catálogo global      | Falso                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                |
 | Range-Lower            | \-                                                                                                                          |
 | Range-Upper            | \-                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                  |
-| Clases usadas en        | [**Microsoft-TAPI-RT-Conference**](c-mstapi-rtconference.md)<br/> [**MS-TAPI-RT-persona**](c-mstapi-rtperson.md)<br/> |
+| Clases usadas en        | [**ms-TAPI-Rt-Conference**](c-mstapi-rtconference.md)<br/> [**ms-TAPI-Rt-Person**](c-mstapi-rtperson.md)<br/> |
 
 
 
@@ -75,18 +75,18 @@ Proporciona el nombre de una conferencia de multidifusión de TAPI. Es el atribu
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                          |
+| Id. de vínculo                | \-                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                          |
-| System-Only            | False                                                                                                                       |
-| Tiene un único valor       | True                                                                                                                        |
-| Está indexado             | False                                                                                                                       |
-| En el catálogo global      | False                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                |
+| System-Only            | Falso                                                                                                                       |
+| Es de un solo valor       | Verdadero                                                                                                                        |
+| Está indexado             | Falso                                                                                                                       |
+| En el catálogo global      | Falso                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                |
 | Range-Lower            | \-                                                                                                                          |
 | Range-Upper            | \-                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                  |
-| Clases usadas en        | [**Microsoft-TAPI-RT-Conference**](c-mstapi-rtconference.md)<br/> [**MS-TAPI-RT-persona**](c-mstapi-rtperson.md)<br/> |
+| Clases usadas en        | [**ms-TAPI-Rt-Conference**](c-mstapi-rtconference.md)<br/> [**ms-TAPI-Rt-Person**](c-mstapi-rtperson.md)<br/> |
 
 
 
@@ -96,18 +96,18 @@ Proporciona el nombre de una conferencia de multidifusión de TAPI. Es el atribu
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                          |
+| Id. de vínculo                | \-                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                          |
-| System-Only            | False                                                                                                                       |
-| Tiene un único valor       | True                                                                                                                        |
-| Está indexado             | False                                                                                                                       |
-| En el catálogo global      | False                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                |
+| System-Only            | Falso                                                                                                                       |
+| Es de un solo valor       | Verdadero                                                                                                                        |
+| Está indexado             | Falso                                                                                                                       |
+| En el catálogo global      | Falso                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                |
 | Range-Lower            | \-                                                                                                                          |
 | Range-Upper            | \-                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                  |
-| Clases usadas en        | [**Microsoft-TAPI-RT-Conference**](c-mstapi-rtconference.md)<br/> [**MS-TAPI-RT-persona**](c-mstapi-rtperson.md)<br/> |
+| Clases usadas en        | [**ms-TAPI-Rt-Conference**](c-mstapi-rtconference.md)<br/> [**ms-TAPI-Rt-Person**](c-mstapi-rtperson.md)<br/> |
 
 
 
@@ -115,20 +115,20 @@ Proporciona el nombre de una conferencia de multidifusión de TAPI. Es el atribu
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                          |
+| Id. de vínculo                | \-                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                          |
-| System-Only            | False                                                                                                                       |
-| Tiene un único valor       | True                                                                                                                        |
-| Está indexado             | False                                                                                                                       |
-| En el catálogo global      | False                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                |
+| System-Only            | Falso                                                                                                                       |
+| Es de un solo valor       | Verdadero                                                                                                                        |
+| Está indexado             | Falso                                                                                                                       |
+| En el catálogo global      | Falso                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                |
 | Range-Lower            | \-                                                                                                                          |
 | Range-Upper            | \-                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                  |
-| Clases usadas en        | [**Microsoft-TAPI-RT-Conference**](c-mstapi-rtconference.md)<br/> [**MS-TAPI-RT-persona**](c-mstapi-rtperson.md)<br/> |
+| Clases usadas en        | [**ms-TAPI-Rt-Conference**](c-mstapi-rtconference.md)<br/> [**ms-TAPI-Rt-Person**](c-mstapi-rtperson.md)<br/> |
 
 
 
@@ -138,18 +138,18 @@ Proporciona el nombre de una conferencia de multidifusión de TAPI. Es el atribu
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                          |
+| Id. de vínculo                | \-                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                          |
-| System-Only            | False                                                                                                                       |
-| Tiene un único valor       | True                                                                                                                        |
-| Está indexado             | False                                                                                                                       |
-| En el catálogo global      | False                                                                                                                       |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                                |
+| System-Only            | Falso                                                                                                                       |
+| Es de un solo valor       | Verdadero                                                                                                                        |
+| Está indexado             | Falso                                                                                                                       |
+| En el catálogo global      | Falso                                                                                                                       |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                                |
 | Range-Lower            | \-                                                                                                                          |
 | Range-Upper            | \-                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                  |
-| Clases usadas en        | [**Microsoft-TAPI-RT-Conference**](c-mstapi-rtconference.md)<br/> [**MS-TAPI-RT-persona**](c-mstapi-rtperson.md)<br/> |
+| Clases usadas en        | [**ms-TAPI-Rt-Conference**](c-mstapi-rtconference.md)<br/> [**ms-TAPI-Rt-Person**](c-mstapi-rtperson.md)<br/> |
 
 
 

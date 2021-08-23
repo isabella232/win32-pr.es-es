@@ -1,21 +1,21 @@
 ---
-description: Los cambios de la versión 2,2 de TSPI se componen principalmente de varias estructuras de datos que tienen elementos adicionales.
+description: Los cambios de la versión 2.2 de TSPI constan principalmente de una serie de estructuras de datos que tienen elementos adicionales.
 ms.assetid: ea3c669f-cb44-4201-974a-2bc1ff56b462
-title: Novedades de la versión 2,2 de TSPI
+title: Novedades de TSPI versión 2.2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0518a86722c452eccb9ddd382fa5380bf66da5f6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c826b7eab023d1851f7031d2b632b25fde36aeb5dd1bf04706012ffb779b01bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119659804"
 ---
-# <a name="whats-new-for-tspi-version-22"></a>Novedades de la versión 2,2 de TSPI
+# <a name="whats-new-for-tspi-version-22"></a>Novedades de TSPI versión 2.2
 
-Los cambios de la versión 2,2 de TSPI se componen principalmente de varias estructuras de datos que tienen elementos adicionales. La mayoría de estas estructuras se definen en TAPI. h y las usan las aplicaciones TAPI y los proveedores de servicios como medio para pasar información.
+Los cambios de la versión 2.2 de TSPI constan principalmente de una serie de estructuras de datos que tienen elementos adicionales. La mayoría de estas estructuras se definen en tapi.h y las usan tanto las aplicaciones TAPI como los proveedores de servicios como medio de pasar información.
 
-Las funciones y los mensajes que eran nuevos o cambiaron para la versión 2,2 de TSPI son los siguientes:
+Las funciones y los mensajes nuevos o modificados para la versión 2.2 de TSPI son los siguientes:
 
 -   [**LINE_AGENTSESSIONSTATUS**](./line-agentsessionstatus.md)
 -   [**LINE_QUEUESTATUS**](./line-queuestatus.md)
@@ -27,14 +27,14 @@ Las funciones y los mensajes que eran nuevos o cambiaron para la versión 2,2 de
 
 **LINEERR_INVALAGENTSESSIONSTATE** y **LINEERR_DISCONNECTED** miembros de [LINEERR_ constantes](./lineerr--constants.md).
 
--   [Constantes de LINEAGENTSTATEEX_](./lineagentstateex--constants.md)
--   [Constantes de LINEAGENTSTATUSEX_](./lineagentstatusex--constants.md)
--   [Constantes de LINEAGENTSESSIONSTATE_](./lineagentsessionstate--constants.md)
--   [Constantes de LINEAGENTSESSIONSTATUS_](./lineagentsessionstatus--constants.md)
--   [Constantes de LINEQUEUESTATUS_](./linequeuestatus--constants.md)
--   [Constantes de LINEGROUPSTATUS_](./linegroupstatus--constants.md)
--   [Constantes de LINEPROXYSTATUS_](./lineproxystatus--constants.md)
--   [Constantes de LINEPROXYREQUEST_](./lineproxyrequest--constants.md)
+-   [LINEAGENTSTATEEX_ constantes](./lineagentstateex--constants.md)
+-   [LINEAGENTSTATUSEX_ constantes](./lineagentstatusex--constants.md)
+-   [LINEAGENTSESSIONSTATE_ constantes](./lineagentsessionstate--constants.md)
+-   [LINEAGENTSESSIONSTATUS_ constantes](./lineagentsessionstatus--constants.md)
+-   [LINEQUEUESTATUS_ constantes](./linequeuestatus--constants.md)
+-   [LINEGROUPSTATUS_ constantes](./linegroupstatus--constants.md)
+-   [LINEPROXYSTATUS_ constantes](./lineproxystatus--constants.md)
+-   [LINEPROXYREQUEST_ constantes](./lineproxyrequest--constants.md)
 
  
 

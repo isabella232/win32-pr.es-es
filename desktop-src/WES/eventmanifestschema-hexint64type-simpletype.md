@@ -1,9 +1,9 @@
 ---
 title: Tipo simple UInt64Type (esquema EventManifest)
-description: Define un tipo Long sin signo.
+description: Define un tipo long sin signo.
 ms.assetid: 6f69dbde-8292-4f8e-bf49-3ef41ea7315e
 keywords:
-- UInt64Type de tipo simple de registro
+- UInt64Type tipo simple EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b375a8e452760f9e59bae9cae8449889483d9b4b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 088cdead48fb62adf816b6065e211afcc994ec618db8b7e9a0597e6f72c1780e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104079326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119511345"
 ---
-# <a name="uint64type-simple-type"></a>Tipo simple de UInt64Type
+# <a name="uint64type-simple-type"></a>Tipo simple UInt64Type
 
-Define un tipo Long sin signo. El valor se puede especificar como un entero de 8 bytes o como un valor hexadecimal en el intervalo comprendido entre 0 y 18446744073709551615.
+Define un tipo long sin signo. El valor se puede especificar como un entero de 8 bytes o un valor hexadecimal en el intervalo de 0 a 18 446 744 073 709 551 615.
 
 ``` syntax
 <xs:simpleType name="UInt64Type">
@@ -36,10 +36,10 @@ Define un tipo Long sin signo. El valor se puede especificar como un entero de 8
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

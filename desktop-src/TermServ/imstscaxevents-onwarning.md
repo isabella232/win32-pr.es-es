@@ -1,12 +1,12 @@
 ---
-title: IMsTscAxEvents unwarning (método)
+title: Método OnWarning de IMsTscAxEvents
 description: Se llama cuando el control de cliente encuentra una condición de error que no es grave.
 ms.assetid: af43d3aa-0ae8-4721-b85d-bb043b20dc40
 ms.tgt_platform: multiple
 keywords:
-- Método de advertencia Servicios de Escritorio remoto
-- Método de advertencia Servicios de Escritorio remoto, interfaz IMsTscAxEvents
-- Interfaz IMsTscAxEvents Servicios de Escritorio remoto, método de advertencia
+- Método OnWarning Servicios de Escritorio remoto
+- Método OnWarning Servicios de Escritorio remoto , interfaz IMsTscAxEvents
+- Interfaz IMsTscAxEvents Servicios de Escritorio remoto , método OnWarning
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aadc7013f34c93406f93841896a9041bbb1b7cfb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bbcebe5c86bb50913ba11d4485f30757f399467aa30730f8cd27de50e360c0cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657145"
 ---
-# <a name="imstscaxeventsonwarning-method"></a>IMsTscAxEvents:: unwarning (método)
+# <a name="imstscaxeventsonwarning-method"></a>Método IMsTscAxEvents::OnWarning
 
 Se llama cuando el control de cliente encuentra una condición de error que no es grave.
 
@@ -43,7 +43,7 @@ void OnWarning(
 
 <dl> <dt>
 
-*warningCode* \[ de\]
+*warningCode* \[ En\]
 </dt> <dd>
 
 Código de error.
@@ -57,7 +57,7 @@ Código de error.
 
 </dt> <dd>
 
-La caché de mapas de bits está dañada.
+La caché de mapa de bits está dañada.
 
 </dd> </dl> </dd> </dl>
 
@@ -65,15 +65,15 @@ La caché de mapas de bits está dañada.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |

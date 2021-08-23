@@ -1,28 +1,28 @@
 ---
 title: Configuración del grupo privado
-description: Contiene el proyecto de la consola de instalación de.
+description: Contiene el proyecto de consola de instalación.
 ms.assetid: 0B00690C-9B13-4D8B-8AB6-F8BD2E35858C
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a661e65610e6cefb03ee9d47f70d7dc8d6d92a0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bf2f2eb309e054ef41d9b1f2842367d595ea83a2feb61880b2ea7ba606cdbe1b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104076152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119683385"
 ---
 # <a name="private-pool-setup"></a>Configuración del grupo privado
 
-Las secciones siguientes contienen el código necesario para configurar un grupo de sensores privados.
+Las secciones siguientes contienen el código necesario para configurar un grupo de sensores privado.
 
--   [Targetver. h](#targetverh)
+-   [Targetver.h](#targetverh)
 -   [stdafx.h](#stdafxh)
--   [PrivatePoolCommonDefs. h](#privatepoolcommondefsh)
--   [PrivatePoolSetup. cpp](#privatepoolsetupcpp)
+-   [PrivatePoolCommonDefs.h](#privatepoolcommondefsh)
+-   [PrivatePoolSetup.cpp](#privatepoolsetupcpp)
 
-## <a name="targetverh"></a>Targetver. h
+## <a name="targetverh"></a>Targetver.h
 
-Este ejemplo se creó para Windows 7 y los sistemas operativos posteriores.
+Este ejemplo se creó para Windows 7 y sistemas operativos posteriores.
 
 
 ```C++
@@ -65,9 +65,9 @@ Este ejemplo se creó para Windows 7 y los sistemas operativos posteriores.
 
 
 
-## <a name="privatepoolcommondefsh"></a>PrivatePoolCommonDefs. h
+## <a name="privatepoolcommondefsh"></a>PrivatePoolCommonDefs.h
 
-Incluya el siguiente encabezado. Tenga en cuenta que debe generar un identificador de base de datos único. No utilice el GUID proporcionado en una aplicación liberada.
+Incluya el encabezado siguiente. Tenga en cuenta que debe generar un identificador de base de datos único. No use el GUID proporcionado en una aplicación publicada.
 
 
 ```C++
@@ -99,9 +99,9 @@ static const GUID PRIVATE_POOL_DATABASE_ID =
 
 
 
-## <a name="privatepoolsetupcpp"></a>PrivatePoolSetup. cpp
+## <a name="privatepoolsetupcpp"></a>PrivatePoolSetup.cpp
 
-El código fuente siguiente muestra el punto de entrada de una aplicación de grupo de sensores privados.
+El código fuente siguiente muestra el punto de entrada de una aplicación de grupo de sensores privado.
 
 
 ```C++
@@ -530,9 +530,9 @@ static bool isDatabaseInstalled(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Representa un dispositivo de teclado sintético.
 ms.assetid: 8fe9bdd5-59e8-421d-812a-08aa3c54c88f
-title: Msvm_SyntheticKeyboard (clase)
+title: Msvm_SyntheticKeyboard clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 64ac153a2c20815891d8a39fd10f58562ed8d81b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 86ee3a7835349ab47082627f98020f84084b4b86e9c6b4ce4a37ba2f455497cb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105652377"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582225"
 ---
-# <a name="msvm_synthetickeyboard-class"></a>MSVM \_ SyntheticKeyboard (clase)
+# <a name="msvm_synthetickeyboard-class"></a>Clase SyntheticKeyboard de Msvm \_
 
 Representa un dispositivo de teclado sintético.
 
@@ -37,20 +37,20 @@ class Msvm_SyntheticKeyboard : CIM_UserDevice
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ SyntheticKeyboard** tiene estos tipos de miembros:
+La **clase Msvm \_ SyntheticKeyboard** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La clase **MSVM \_ SyntheticKeyboard** tiene estos métodos.
+La **clase Msvm \_ SyntheticKeyboard** tiene estos métodos.
 
 
 
 | Método                                                                  | Descripción                         |
 |:------------------------------------------------------------------------|:------------------------------------|
 | [**RequestStateChange**](msvm-synthetickeyboard-requeststatechange.md) | Solicita un cambio de estado.<br/> |
-| [**Reset**](msvm-synthetickeyboard-reset.md)                           | restablece el dispositivo.<br/>       |
+| [**Restablecer**](msvm-synthetickeyboard-reset.md)                           | restablece el dispositivo.<br/>       |
 
 
 
@@ -60,12 +60,12 @@ La clase **MSVM \_ SyntheticKeyboard** tiene estos métodos.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -74,7 +74,7 @@ La clase **MSVM \_ SyntheticKeyboard** tiene estos métodos.
 
 <dl> <dt>
 
-[**\_USERDEVICE CIM**](cim-userdevice.md)
+[**CIM \_ UserDevice**](cim-userdevice.md)
 </dt> </dl>
 
  

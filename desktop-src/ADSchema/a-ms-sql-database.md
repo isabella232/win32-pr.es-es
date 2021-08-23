@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-SQL-Database
-description: Nombre de la base de datos de SQL Server implicada en la replicación.
+description: Nombre de la base de SQL Server de datos implicada en la replicación.
 ms.assetid: 624705d9-df3f-458e-98f4-fb8da073efd6
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributos de base de datos de MS-SQL
-- Esquema de AD de atributos de base de datos de mS-SQL
+- Esquema de AD del atributo MS-SQL-Database
+- Esquema de AD del atributo mS-SQL-Database
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae6c448213bee18fede3cc8a77cabf607c3b2ee3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e7820e9ea165922fa2b77606ee160469a8866870346208ed199350df7a5e238b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103905809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583405"
 ---
 # <a name="ms-sql-database-attribute"></a>Atributo MS-SQL-Database
 
-Nombre de la base de datos de SQL Server implicada en la replicación.
+Nombre de la base de SQL Server de datos implicada en la replicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-SQL-base de datos                             |
-| Nombre para mostrar de LDAP | mS-SQL-base de datos                             |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | Administrador de dominio                        |
+| CN                | MS-SQL-Database                             |
+| Ldap-Display-Name | mS-SQL-Database                             |
+| Size              | \-                                          |
+| Actualizar privilegios  | Administrador de dominio                        |
 | Frecuencia de actualización  | Cuando se configura la replicación.                  |
 | Attribute-Id      | 1.2.840.113556.1.4.1393                     |
-| System-ID-GUID    | d5a0dbdc-ccee-11d2-9993-0000f87a57d4        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | d5a0dbdc-ccee-11d2-9993-0000f87a57d4        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,13 +55,13 @@ Nombre de la base de datos de SQL Server implicada en la replicación.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | True                                                                |
-| En el catálogo global      | True                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Verdadero                                                                |
+| En el catálogo global      | Verdadero                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000001                                                          |
@@ -76,13 +76,13 @@ Nombre de la base de datos de SQL Server implicada en la replicación.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | True                                                                |
-| En el catálogo global      | True                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Verdadero                                                                |
+| En el catálogo global      | Verdadero                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000001                                                          |
@@ -97,13 +97,13 @@ Nombre de la base de datos de SQL Server implicada en la replicación.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | True                                                                |
-| En el catálogo global      | True                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Verdadero                                                                |
+| En el catálogo global      | Verdadero                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000001                                                          |
@@ -116,15 +116,15 @@ Nombre de la base de datos de SQL Server implicada en la replicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | True                                                                |
-| En el catálogo global      | True                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Verdadero                                                                |
+| En el catálogo global      | Verdadero                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000001                                                          |
@@ -139,13 +139,13 @@ Nombre de la base de datos de SQL Server implicada en la replicación.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | True                                                                |
-| En el catálogo global      | True                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Verdadero                                                                |
+| En el catálogo global      | Verdadero                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000001                                                          |
@@ -160,13 +160,13 @@ Nombre de la base de datos de SQL Server implicada en la replicación.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                  |
+| Id. de vínculo                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
-| System-Only            | False                                                               |
-| Tiene un único valor       | True                                                                |
-| Está indexado             | True                                                                |
-| En el catálogo global      | True                                                                |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                        |
+| System-Only            | Falso                                                               |
+| Es de un solo valor       | Verdadero                                                                |
+| Está indexado             | Verdadero                                                                |
+| En el catálogo global      | Verdadero                                                                |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000001                                                          |

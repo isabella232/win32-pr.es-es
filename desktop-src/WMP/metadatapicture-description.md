@@ -1,9 +1,9 @@
 ---
-title: MetadataPicture. Description
-description: La propiedad Description recupera una descripción de la imagen de metadatos.
+title: MetadataPicture.description
+description: La propiedad description recupera una descripción de la imagen de metadatos.
 ms.assetid: 7a07a8a0-d50a-4951-95a8-c1285a1be737
 keywords:
-- MetadataPicture. Description Windows Media Player
+- MetadataPicture.description Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -14,38 +14,38 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bbacd8f2fbded3501100809de166651ca56cca8d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 32868fbf276b5892bb5444093bf683920233483aa9756a5cc4ea63b490c0d023
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508365"
 ---
-# <a name="metadatapicturedescription"></a>MetadataPicture. Description
+# <a name="metadatapicturedescription"></a>MetadataPicture.description
 
-La propiedad **Description** recupera una descripción de la imagen de metadatos.
+La **propiedad description** recupera una descripción de la imagen de metadatos.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
-*reproductor*. *currentMedia*. **getItemInfoByType**( *nombre*, *idioma*, *Índice*). **Descripción** de
+*player*. *currentMedia*. **getItemInfoByType**( *name*, *language*, *index*). **descripción**
 
 ## <a name="possible-values"></a>Valores posibles
 
-Esta propiedad es una **cadena** de solo lectura.
+Esta propiedad es una cadena de solo **lectura.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
-**Windows Media Player 10 Mobile:** Esta propiedad no se admite.
+**Reproductor de Windows Media 10 Mobile:** Esta propiedad no se admite.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player 9 series o posterior.<br/>                                 |
+| Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -54,13 +54,13 @@ Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la bi
 
 <dl> <dt>
 
-[**Objeto MetadataPicture**](metadatapicture-object.md)
+[**MetadataPicture (objeto)**](metadatapicture-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configuración.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configuración.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

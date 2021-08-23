@@ -1,19 +1,19 @@
 ---
-description: La interfaz IOCSPPropertyCollection define los siguientes métodos. Los métodos de acceso de propiedad no se muestran aquí. Para ver las propiedades de IOCSPPropertyCollection, consulte propiedades de IOCSPPropertyCollection.
+description: La interfaz IOCSPPropertyCollection define los métodos siguientes. Los métodos de acceso de propiedad no se muestran aquí. Para ver las propiedades de IOCSPPropertyCollection, vea Propiedades de IOCSPPropertyCollection.
 ms.assetid: 7273a8ed-cf0e-40d8-8cac-4effbdf41ae8
 title: Métodos de IOCSPPropertyCollection
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 794fb3118a9ee8734eadfc0761c7b1d16df6bbbe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 36114a69b182610b860dfe031fc07546921013b72bc1982c76a21edb390b8d5d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104154523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119683195"
 ---
 # <a name="methods-of-iocsppropertycollection"></a>Métodos de IOCSPPropertyCollection
 
-La interfaz [**IOCSPPropertyCollection**](/windows/desktop/api/Certadm/nn-certadm-iocsppropertycollection) define los siguientes métodos. Los métodos de acceso de propiedad no se muestran aquí. Para ver las propiedades de **IOCSPPropertyCollection**, consulte [propiedades de IOCSPPropertyCollection](properties-of-iocsppropertycollection.md)
+La interfaz [**IOCSPPropertyCollection**](/windows/desktop/api/Certadm/nn-certadm-iocsppropertycollection) define los métodos siguientes. Los métodos de acceso de propiedad no se muestran aquí. Para ver las propiedades de **IOCSPPropertyCollection,** vea [Propiedades de IOCSPPropertyCollection.](properties-of-iocsppropertycollection.md)
 
 
 

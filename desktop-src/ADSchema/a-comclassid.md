@@ -1,11 +1,11 @@
 ---
-title: COM-ClassID atributo)
-description: Este atributo almacena la lista de ClassID que se implementan en este paquete de aplicación.
+title: COM-ClassID atributo
+description: Este atributo almacena la lista de classID que se implementan en este paquete de aplicación.
 ms.assetid: ec05499d-cd55-459b-bdee-6806f195c96e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de COM-ClassID
-- cOMClassID esquema de AD de atributos
+- COM-ClassID esquema de AD de atributo
+- Esquema de AD del atributo cOMClassID
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 606a3d1dd54496217c69f9fac412d1cb4460ddc8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a38532d970ef58bd23b6a7dcd760a08fec8e071e4dff24d4bffbb646c6d68254
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104536340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509695"
 ---
-# <a name="com-classid-attribute"></a>COM-ClassID atributo)
+# <a name="com-classid-attribute"></a>COM-ClassID atributo
 
-Este atributo almacena la lista de ClassID que se implementan en este paquete de aplicación.
+Este atributo almacena la lista de classID que se implementan en este paquete de aplicación.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | COM-ClassID                                 |
-| Nombre para mostrar de LDAP | cOMClassID                                  |
-| Tamaño              | \-                                          |
-| Actualizar privilegio  | \-                                          |
+| Ldap-Display-Name | cOMClassID                                  |
+| Size              | \-                                          |
+| Actualizar privilegios  | \-                                          |
 | Frecuencia de actualización  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.19                       |
-| System-ID-GUID    | bf96793b-0de6-11d0-a285-00aa003049e2        |
-| Sintaxis            | [**String(Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf96793b-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,18 +55,18 @@ Este atributo almacena la lista de ClassID que se implementan en este paquete de
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
-| System-Only            | False                                                                                                             |
-| Tiene un único valor       | False                                                                                                             |
-| Está indexado             | True                                                                                                              |
-| En el catálogo global      | False                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                      |
+| System-Only            | Falso                                                                                                             |
+| Es de un solo valor       | Falso                                                                                                             |
+| Está indexado             | Verdadero                                                                                                              |
+| En el catálogo global      | Falso                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000001                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Este atributo almacena la lista de ClassID que se implementan en este paquete de
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
-| System-Only            | False                                                                                                             |
-| Tiene un único valor       | False                                                                                                             |
-| Está indexado             | True                                                                                                              |
-| En el catálogo global      | False                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                      |
+| System-Only            | Falso                                                                                                             |
+| Es de un solo valor       | Falso                                                                                                             |
+| Está indexado             | Verdadero                                                                                                              |
+| En el catálogo global      | Falso                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000001                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Este atributo almacena la lista de ClassID que se implementan en este paquete de
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
-| System-Only            | False                                                                                                             |
-| Tiene un único valor       | False                                                                                                             |
-| Está indexado             | True                                                                                                              |
-| En el catálogo global      | False                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                      |
+| System-Only            | Falso                                                                                                             |
+| Es de un solo valor       | Falso                                                                                                             |
+| Está indexado             | Verdadero                                                                                                              |
+| En el catálogo global      | Falso                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000001                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Este atributo almacena la lista de ClassID que se implementan en este paquete de
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
-| System-Only            | False                                                                                                             |
-| Tiene un único valor       | False                                                                                                             |
-| Está indexado             | True                                                                                                              |
-| En el catálogo global      | False                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                      |
+| System-Only            | Falso                                                                                                             |
+| Es de un solo valor       | Falso                                                                                                             |
+| Está indexado             | Verdadero                                                                                                              |
+| En el catálogo global      | Falso                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000001                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Este atributo almacena la lista de ClassID que se implementan en este paquete de
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
-| System-Only            | False                                                                                                             |
-| Tiene un único valor       | False                                                                                                             |
-| Está indexado             | True                                                                                                              |
-| En el catálogo global      | False                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                      |
+| System-Only            | Falso                                                                                                             |
+| Es de un solo valor       | Falso                                                                                                             |
+| Está indexado             | Verdadero                                                                                                              |
+| En el catálogo global      | Falso                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000001                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Este atributo almacena la lista de ClassID que se implementan en este paquete de
 
 | Entrada | Value |
 |------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                                                                                |
+| Id. de vínculo                | \-                                                                                                                |
 | MAPI-Id                | \-                                                                                                                |
-| System-Only            | False                                                                                                             |
-| Tiene un único valor       | False                                                                                                             |
-| Está indexado             | True                                                                                                              |
-| En el catálogo global      | False                                                                                                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                                                                      |
+| System-Only            | Falso                                                                                                             |
+| Es de un solo valor       | Falso                                                                                                             |
+| Está indexado             | Verdadero                                                                                                              |
+| En el catálogo global      | Falso                                                                                                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | \-                                                                                                                |
 | Range-Upper            | \-                                                                                                                |
 | Search-Flags           | 0x00000001                                                                                                        |
 | System-Flags           | 0x00000010                                                                                                        |
-| Clases usadas en        | [**Paquete-registro**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
+| Clases usadas en        | [**Registro de paquetes**](c-packageregistration.md)<br/> [**Biblioteca de tipos**](c-typelibrary.md)<br/> |
 
 
 

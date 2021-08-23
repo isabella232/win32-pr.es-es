@@ -1,7 +1,7 @@
 ---
 description: Representa la configuración de QOS de VFP.
 ms.assetid: e58a7a8d-0301-43ea-9338-18bc8c458e2d
-title: Msvm_EthernetSwitchPortMigrationQosSettingData (clase)
+title: Msvm_EthernetSwitchPortMigrationQosSettingData clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,14 +23,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: e279b24178c33c760477995ff744a0699cea1aaf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fef4ef759b406facb5fbbb12d37eceb55a914d46c63a2485982f60fa151ccdaa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119524045"
 ---
-# <a name="msvm_ethernetswitchportmigrationqossettingdata-class"></a>MSVM \_ EthernetSwitchPortMigrationQosSettingData (clase)
+# <a name="msvm_ethernetswitchportmigrationqossettingdata-class"></a>Clase Msvm \_ EthernetSwitchPortMigrationQosSettingData
 
 Representa la configuración de QOS de VFP.
 
@@ -57,23 +57,23 @@ class Msvm_EthernetSwitchPortMigrationQosSettingData : Msvm_EthernetSwitchPortFe
 
 ## <a name="members"></a>Miembros
 
-La clase **MSVM \_ EthernetSwitchPortMigrationQosSettingData** tiene estos tipos de miembros:
+La **clase Msvm \_ EthernetSwitchPortMigrationQosSettingData** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSVM \_ EthernetSwitchPortMigrationQosSettingData** tiene estas propiedades.
+La **clase Msvm \_ EthernetSwitchPortMigrationQosSettingData** tiene estas propiedades.
 
 <dl> <dt>
 
 **InboundMaximumMbps**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (10), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -86,26 +86,26 @@ Valor de límite de ancho de banda para el tráfico entrante.
 **OutboundMaximumMbps**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (9), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-El valor de límite de ancho de banda para el tráfico de salida.
+Valor de límite de ancho de banda para el tráfico saliente.
 
 </dd> <dt>
 
 **OutboundReservedValue**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (8), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -121,23 +121,23 @@ Valor de reserva de ancho de banda.
 Tipo de datos: **cadena**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-IDENTIFICADOR de la cola de QOS.
+Identificador de la cola de QOS.
 
 </dd> <dt>
 
 **Cambiar \_ DefaultReservation**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt64**
+Tipo de datos: **uint64**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -147,45 +147,45 @@ Valor de reserva predeterminado.
 
 </dd> <dt>
 
-**Cambiar \_ EnableHardwareLimits**
+**Modificador \_ EnableHardwareLimits**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (5), [**versión**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**revisión**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Calificadores: **WmiDataId** (5), [**Versión**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revisión**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
-Indica si se intentan las descargas de hardware para los límites si están disponibles.
+Indica si se intentan descargar los límites de hardware si están disponibles.
 
 </dd> <dt>
 
-**Cambiar \_ EnableHardwareReservations**
+**Modificador \_ EnableHardwareReservations**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
-Calificadores: **WmiDataId** (6), [**versión**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**revisión**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
+Calificadores: **WmiDataId** (6), [**Version**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Revision**](/windows/desktop/WmiSdk/standard-qualifiers) (0)
 </dt> </dl>
 
-Indica si se intentan las descargas de hardware para las reservas si están disponibles.
+Indica si se intentan descargar las cargas de hardware de las reservas si están disponibles.
 
 </dd> <dt>
 
-**Cambiar \_ EnableSoftwareReservations**
+**Switch \_ EnableSoftwareReservations**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (7), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -195,41 +195,41 @@ Indica si la reserva basada en software está disponible.
 
 </dd> <dt>
 
-**Cambiar \_ LinkSpeedPercentage**
+**Switch \_ LinkSpeedPercentage**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Porcentaje de velocidad del vínculo que se va a utilizar para la reserva.
+Porcentaje de velocidad del vínculo que se va a usar para la reserva.
 
 </dd> <dt>
 
 **Cambiar \_ ReservationMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Uint8**
+Tipo de datos: **uint8**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> <dt>
 
 Calificadores: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Modo de reserva de QOS en el conmutador.
+Modo de reserva qos en el conmutador.
 
 <dt>
 
 <span id="Absolute"></span><span id="absolute"></span><span id="ABSOLUTE"></span>
 
-**Absolute** (0)
+**Absoluto** (0)
 
 
 </dt> <dd></dd> <dt>
@@ -249,10 +249,10 @@ Modo de reserva de QOS en el conmutador.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1703 \[\]<br/>                                               |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1703 \[\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -261,7 +261,7 @@ Modo de reserva de QOS en el conmutador.
 
 <dl> <dt>
 
-[**MSVM \_ EthernetSwitchPortFeatureSettingData**](msvm-ethernetswitchportfeaturesettingdata.md)
+[**Msvm \_ EthernetSwitchPortFeatureSettingData**](msvm-ethernetswitchportfeaturesettingdata.md)
 </dt> </dl>
 
  

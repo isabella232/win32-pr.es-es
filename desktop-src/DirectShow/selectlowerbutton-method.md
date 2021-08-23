@@ -1,17 +1,17 @@
 ---
 description: El método SelectLowerButton selecciona el botón direccional inferior en el menú mostrado.
 ms.assetid: d815f7f1-9e11-40a5-99e5-23eb478c33a1
-title: Método SelectLowerButton (Segment. h)
+title: Método SelectLowerButton (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1dd254438436641cc0367e4d85f8f17e77e3bb96
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 89d932cfd4ca87c17674e9bf27799989c5a8d2ee64b106d32fcd25dba0973a4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119684095"
 ---
-# <a name="selectlowerbutton-method"></a>Método SelectLowerButton
+# <a name="selectlowerbutton-method"></a>SelectLowerButton (método)
 
 > [!Note]  
 > Este componente está disponible para su uso en los sistemas operativos Microsoft Windows 2000, Windows XP y Windows Server 2003. En versiones posteriores podría modificarse o no estar disponible.
@@ -34,7 +34,7 @@ No de devuelve ningún valor.
 
 | Requisito | Value |
 |-------------------|--------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Segmento. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 
@@ -45,10 +45,10 @@ No de devuelve ningún valor.
 [**ActivateButton**](activatebutton-method.md)
 </dt> <dt>
 
-[**SelectLeftButton**](selectleftbutton-method.md)
+[**SeleccioneLeftButton.**](selectleftbutton-method.md)
 </dt> <dt>
 
-[**SelectRightButton**](selectrightbutton-method.md)
+[**SeleccioneRightButton.**](selectrightbutton-method.md)
 </dt> <dt>
 
 [**SelectUpperButton**](selectupperbutton-method.md)

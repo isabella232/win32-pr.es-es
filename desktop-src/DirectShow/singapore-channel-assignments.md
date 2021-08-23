@@ -1,23 +1,23 @@
 ---
-description: En este tema se enumeran las tablas de frecuencia usadas para la optimización de TV analógica para Singapur.
+description: En este tema se enumeran las tablas de frecuencia usadas para la optimización de televisión análoga para Singapur.
 ms.assetid: 77d4f4fc-76ec-4996-8f25-05ad8840d49f
-title: Asignaciones de canal de Singapur
+title: Asignaciones de canales de Singapur
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ccf7ae41242244ace47cc457950eedd0c82a0f5a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: fe915305fd5aaaace3599cafae6281774f4bf35c501bb587fe82e8d9752fd556
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103805833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119683595"
 ---
-# <a name="singapore-channel-assignments"></a>Asignaciones de canal de Singapur
+# <a name="singapore-channel-assignments"></a>Asignaciones de canales de Singapur
 
-En este tema se enumeran las tablas de frecuencia usadas para la optimización de TV analógica para Singapur.
+En este tema se enumeran las tablas de frecuencia usadas para la optimización de televisión análoga para Singapur.
 
-Para obtener una explicación de las tablas siguientes, vea [tablas y asignaciones](tables-and-assignments.md).
+Para obtener una explicación de las tablas siguientes, vea [Tablas y asignaciones.](tables-and-assignments.md)
 
-Las siguientes asignaciones de canal se introdujeron en Windows 7. Anteriormente, se usaba la [tabla de frecuencias Unicable](unicable-frequency-table.md) .
+Las siguientes asignaciones de canal se introdujeron en Windows 7. Anteriormente, se [usaba la tabla de frecuencias](unicable-frequency-table.md) no utilizables.
 
 -   [Asignaciones de difusión](#broadcast-assignments)
 -   [Asignaciones de cable](#cable-assignments)
@@ -183,7 +183,7 @@ Las siguientes asignaciones de canal se introdujeron en Windows 7. Anteriormente
 
 <dl> <dt>
 
-[Ajuste de TV analógica internacional](international-analog-tv-tuning.md)
+[Ajuste internacional de televisión análoga](international-analog-tv-tuning.md)
 </dt> </dl>
 
  

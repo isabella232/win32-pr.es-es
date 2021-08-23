@@ -1,28 +1,28 @@
 ---
-title: Propiedad ContainerHandledFullScreen de IMsTscAdvancedSettings
-description: Especifica si está habilitado el modo de pantalla completa controlado por contenedores.
+title: Propiedad IMsTscAdvancedSettings ContainerHandledFullScreen
+description: Especifica si el modo de pantalla completa con control de contenedor está habilitado.
 ms.assetid: 67679323-4a74-4d91-abd0-607415295f3d
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de la propiedad ContainerHandledFullScreen
-- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto, interfaz IMsTscAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsTscAdvancedSettings, propiedad ContainerHandledFullScreen
-- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings, propiedad ContainerHandledFullScreen
-- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings2
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings2, propiedad ContainerHandledFullScreen
-- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings3
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings3, propiedad ContainerHandledFullScreen
-- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings4
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings4, propiedad ContainerHandledFullScreen
-- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings5
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings5, propiedad ContainerHandledFullScreen
-- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings6
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings6, propiedad ContainerHandledFullScreen
-- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings7
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings7, propiedad ContainerHandledFullScreen
-- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto, interfaz IMsRdpClientAdvancedSettings8
-- Servicios de Escritorio remoto de la interfaz IMsRdpClientAdvancedSettings8, propiedad ContainerHandledFullScreen
+- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto
+- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto , interfaz IMsTscAdvancedSettings
+- Interfaz IMsTscAdvancedSettings Servicios de Escritorio remoto , propiedad ContainerHandledFullScreen
+- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
+- Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad ContainerHandledFullScreen
+- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
+- Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad ContainerHandledFullScreen
+- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
+- Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad ContainerHandledFullScreen
+- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
+- Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad ContainerHandledFullScreen
+- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
+- Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad ContainerHandledFullScreen
+- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
+- Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad ContainerHandledFullScreen
+- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
+- Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad ContainerHandledFullScreen
+- Propiedad ContainerHandledFullScreen Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
+- Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad ContainerHandledFullScreen
 topic_type:
 - apiref
 api_name:
@@ -59,25 +59,25 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a7442ce16e2ff30ca2d9b3bd529d37382d1df41
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 975581aaca4aad2511396e8ec426a7bf2a4720ff54202d42fbe932c0c2e9464d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104422428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513125"
 ---
-# <a name="imstscadvancedsettingscontainerhandledfullscreen-property"></a>IMsTscAdvancedSettings:: ContainerHandledFullScreen (propiedad)
+# <a name="imstscadvancedsettingscontainerhandledfullscreen-property"></a>Propiedad IMsTscAdvancedSettings::ContainerHandledFullScreen
 
-Especifica si está habilitado el modo de pantalla completa controlado por contenedores.
+Especifica si el modo de pantalla completa con control de contenedor está habilitado.
 
 > [!Note]  
-> El valor de la propiedad **ContainerHandledFullScreen** no tiene ningún efecto cuando el control ActiveX escritorio remoto es seguro para el scripting y devuelve **S \_ false** cuando se realiza un intento de cambiar el valor.
+> El valor de la propiedad **ContainerHandledFullScreen** no tiene ningún efecto cuando el control Escritorio remoto ActiveX es seguro para el scripting y devuelve **S \_ FALSE** cuando se intenta cambiar el valor.
 
  
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -94,25 +94,25 @@ HRESULT get_ContainerHandledFullScreen(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Establezca este parámetro en **true** para habilitar el modo u otro valor para deshabilitar el modo.
+Establezca este parámetro en **TRUE** para habilitar el modo u otro valor para deshabilitar el modo.
 
 ## <a name="error-codes"></a>Códigos de error
 
-Devuelve **S \_ correcto** si se realiza correctamente. Devuelve **S \_ false** si no se admite.
+Devuelve **S \_ OK si** se realiza correctamente. Devuelve **S \_ FALSE si** no se admite.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Cuando este modo está habilitado, el contenedor actual procesa el modificador dentro y fuera del modo de pantalla completa. Este método solo se debe usar si el contenedor actual necesita un control extensivo sobre el comportamiento del modo de pantalla completa. Cuando se establece esta propiedad, el control no entra o sale del modo de pantalla completa en respuesta a la combinación de teclas de método abreviado del modo de pantalla completa (CTRL + ALT + inter); en su lugar, se llama a los eventos [**IMsTscAxEvents:: OnRequestGoFullScreen**](imstscaxevents-onrequestgofullscreen.md) y [**IMsTscAxEvents:: OnRequestLeaveFullScreen**](imstscaxevents-onrequestleavefullscreen.md) . Vea [**IMsTscAxEvents**](imstscaxevents-interface.md) para obtener más información sobre estos eventos.
+Cuando este modo está habilitado, el contenedor actual procesa el cambio dentro y fuera del modo de pantalla completa. Este método solo se debe usar si el contenedor actual necesita un amplio control sobre el comportamiento del modo de pantalla completa. Cuando se establece esta propiedad, el control no entra ni sale del modo de pantalla completa en respuesta a la combinación de teclas de método abreviado de modo de pantalla completa (CTRL+ALT+BREAK); En su lugar, se llama a los eventos [**IMsTscAxEvents::OnRequestGoFullScreen**](imstscaxevents-onrequestgofullscreen.md) e [**IMsTscAxEvents::OnRequestLeaveFullScreen.**](imstscaxevents-onrequestleavefullscreen.md) Consulte [**IMsTscAxEvents para**](imstscaxevents-interface.md) obtener más información sobre estos eventos.
 
-La mayoría de las aplicaciones contenedoras no tendrán que usar el modo de pantalla completa controlado por contenedores.
+La mayoría de las aplicaciones de contenedor no necesitarán usar el modo de pantalla completa con control de contenedor.
 
-Para obtener más información acerca de Conexión web a Escritorio remoto, consulte [Requirements for conexión web a escritorio remoto](requirements-for-remote-desktop-web-connection.md).
+Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                            |

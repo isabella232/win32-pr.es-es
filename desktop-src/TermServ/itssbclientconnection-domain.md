@@ -4,9 +4,9 @@ description: Recupera un valor que indica el nombre de dominio del cliente Conex
 ms.assetid: 628f450d-10f4-4405-8d7c-ae58c72c2755
 ms.tgt_platform: multiple
 keywords:
-- Servicios de Escritorio remoto de propiedad de dominio
-- Propiedad de dominio Servicios de Escritorio remoto, interfaz ITsSbClientConnection
-- Servicios de Escritorio remoto de la interfaz ITsSbClientConnection, propiedad del dominio
+- Propiedades de dominio Servicios de Escritorio remoto
+- Propiedad de Servicios de Escritorio remoto , interfaz ITsSbClientConnection
+- Interfaz ITsSbClientConnection Servicios de Escritorio remoto , propiedad Domain
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 678d6fc6838b615faeec9fa36b736b3105b64453
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ebc99724eb419e831e65f402299aa1603be07ab2ab5a88e0ba9b056492514865
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105686170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119511515"
 ---
-# <a name="itssbclientconnectiondomain-property"></a>ITsSbClientConnection::D propiedad omain
+# <a name="itssbclientconnectiondomain-property"></a>Propiedad ITsSbClientConnection::D omain
 
 Recupera un valor que indica el nombre de dominio del cliente Conexión a Escritorio remoto (RDC).
 
@@ -44,17 +44,17 @@ HRESULT get_Domain(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Un puntero a una variable **BSTR** que contiene el nombre de dominio del cliente RDC. Cuando haya terminado de usar la cadena, puede liberarla llamando a la función [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) .
+Puntero a una variable **BSTR** que contiene el nombre de dominio del cliente RDC. Cuando haya terminado de usar la cadena, desconéctela mediante una llamada a la [**función SysFreeString.**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                       |
-| IDL<br/>                      | <dl> <dt>Sbtsv. idl</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>Sbtsv.idl</dt> </dl> |
 
 
 

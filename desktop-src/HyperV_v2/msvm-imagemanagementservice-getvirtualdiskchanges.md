@@ -1,7 +1,7 @@
 ---
-description: Recupera una lista de cambios en la región especificada de un disco virtual desde el identificador de Change Tracking resistente o el identificador de la instantánea de VHDSet proporcionado.
+description: Recupera una lista de cambios en la región especificada de un disco virtual desde el identificador de Change Tracking resistente proporcionado o el identificador de instantánea vhdset.
 ms.assetid: c1dac403-96e0-4c0d-ad71-858f04bf07cd
-title: Método GetVirtualDiskChanges de la clase Msvm_ImageManagementService
+title: Método GetVirtualDiskChanges de la Msvm_ImageManagementService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 55a9cb9a63e05e002f99984a306566c50d9e1d7f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b96c5b4d2bbdff78b6f9f2bc9a1e7547742a553564e0f81547b8d998f86f14f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105686940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119522565"
 ---
-# <a name="getvirtualdiskchanges-method-of-the-msvm_imagemanagementservice-class"></a>Método GetVirtualDiskChanges de la \_ clase ImageManagementService de MSVM
+# <a name="getvirtualdiskchanges-method-of-the-msvm_imagemanagementservice-class"></a>Método GetVirtualDiskChanges de la clase \_ ImageManagementService de Msvm
 
-Recupera una lista de cambios en la región especificada de un disco virtual desde el identificador de Change Tracking resistente o el identificador de la instantánea de VHDSet proporcionado.
+Recupera una lista de cambios en la región especificada de un disco virtual desde el identificador de Change Tracking resistente proporcionado o el identificador de instantánea vhdset.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,66 +47,66 @@ uint32 GetVirtualDiskChanges(
 
 <dl> <dt>
 
-*Ruta de acceso* \[ de\]
+*Ruta de acceso* \[ En\]
 </dt> <dd>
 
 Ruta de acceso completa que especifica la ubicación del archivo de disco duro virtual.
 
 </dd> <dt>
 
-*LimitId* \[ de\]
+*LimitId* \[ En\]
 </dt> <dd>
 
-Un identificador de Change Tracking resistente o un identificador de instantánea de conjunto de VHD que indica la línea de base de los cambios en el disco virtual.
+Un identificador de Change Tracking resistente o id. de instantánea de conjunto de VHD que indica la línea base para los cambios en el disco virtual.
 
 </dd> <dt>
 
-*TargetSnapshotId* \[ de\]
+*TargetSnapshotId* \[ En\]
 </dt> <dd>
 
-Un identificador de instantánea de VHDSet que indica la instantánea que se va a comparar con la línea de base al detenerse los cambios en el disco duro virtual. Este parámetro solo es válido para los archivos de VHD set.
+Identificador de instantánea VHDSet que indica la instantánea que se comparará con la línea de base cuando se desenlazen los cambios en el disco duro virtual. Este parámetro solo es válido para los archivos de conjunto de VHD.
 
 </dd> <dt>
 
-*Byteoffset (* \[ de\]
+*ByteOffset* \[ En\]
 </dt> <dd>
 
-Desplazamiento de bytes de la región del disco virtual para el que se van a consultar los cambios.
+Desplazamiento de bytes de la región del disco virtual para el que se consultan los cambios.
 
 </dd> <dt>
 
-*ByteLength* \[ de\]
+*ByteLength* \[ En\]
 </dt> <dd>
 
-Longitud de bytes de la región del disco virtual para la que se van a consultar los cambios. Debe ser menor que el tamaño del disco virtual.
+Longitud de bytes de la región del disco virtual para la que se consultan los cambios. Debe ser menor que el tamaño del disco virtual.
 
 </dd> <dt>
 
-*ProcessedByteLength* \[ enuncia\]
+*ProcessedByteLength* \[ out\]
 </dt> <dd>
 
-Longitud total de bytes que se procesó. Puede ser igual a ByteLength o Less.
+Longitud total de bytes que se procesó. Puede ser igual a ByteLength o menor.
 
 </dd> <dt>
 
-*ChangedByteOffsets* \[ enuncia\]
+*ChangedByteOffsets* \[ out\]
 </dt> <dd>
 
-La lista de desplazamientos de bytes en el disco virtual que indica el principio de cada intervalo modificado.
+Lista de desplazamientos de bytes en el disco virtual que indica el principio de cada intervalo modificado.
 
 </dd> <dt>
 
-*ChangedByteLengths* \[ enuncia\]
+*ChangedByteLengths* \[ out\]
 </dt> <dd>
 
-La lista de longitudes de bytes de los intervalos modificados en el disco virtual.
+Lista de longitudes de bytes de los intervalos modificados en el disco virtual.
 
 </dd> <dt>
 
-*Trabajo* \[ de enuncia\]
+*Trabajo* \[ out\]
 </dt> <dd>
 
-Referencia al trabajo (puede ser null si se ha completado la tarea).
+Referencia al trabajo (puede ser NULL si se completa la tarea).
 
 </dd> </dl>
 
@@ -131,16 +131,16 @@ Este método devuelve uno de los siguientes valores:
 **No compatible** (32770)
 </dt> <dt>
 
-**Estado desconocido** (32771)
+**El estado es desconocido** (32771)
 </dt> <dt>
 
-**Tiempo de espera** (32772)
+**Tiempo de** espera (32772)
 </dt> <dt>
 
-**Parámetro no válido** (32773)
+**Parámetro no** válido (32773)
 </dt> <dt>
 
-El **sistema está en uso** (32774)
+**El sistema está en uso** (32774)
 </dt> <dt>
 
 **Estado no válido para esta operación** (32775)
@@ -149,13 +149,13 @@ El **sistema está en uso** (32774)
 **Tipo de datos incorrecto** (32776)
 </dt> <dt>
 
-El **sistema no está disponible** (32777)
+**El sistema no está disponible** (32777)
 </dt> <dt>
 
-**Memoria insuficiente** (32778)
+**Memoria sin memoria** (32778)
 </dt> <dt>
 
-**No se encontró el archivo** (32779)
+**Archivo no encontrado** (32779)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -164,10 +164,10 @@ El **sistema no está disponible** (32777)
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                             |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                             |
 | Servidor mínimo compatible<br/> | Windows Server 2016<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -176,7 +176,7 @@ El **sistema no está disponible** (32777)
 
 <dl> <dt>
 
-[**MSVM \_ ImageManagementService**](msvm-imagemanagementservice.md)
+[**Msvm \_ ImageManagementService**](msvm-imagemanagementservice.md)
 </dt> </dl>
 
  

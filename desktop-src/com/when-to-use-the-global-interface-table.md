@@ -4,38 +4,38 @@ description: Cuándo usar la tabla de interfaz global
 ms.assetid: def8f7f8-9d0d-49a4-9d5c-40233903eea5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f89bbd7437b65c85abe89e8d647cbd73555c2d6a
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 37457e0e1b35c0c1acb2c8f84750f3d0f08c1344eaf27e0361c442aea3be23ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104078413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119639235"
 ---
 # <a name="when-to-use-the-global-interface-table"></a>Cuándo usar la tabla de interfaz global
 
-Si va a calcular las referencias de un puntero de interfaz varias veces entre apartamentos en un proceso, puede usar la interfaz [**IGlobalInterfaceTable**](/windows/desktop/api/ObjIdl/nn-objidl-iglobalinterfacetable) . Con otras técnicas, tendría que volver a calcular las referencias de cada vez.
+Si va a desmarque un puntero de interfaz varias veces entre los departamentos de un proceso, puede usar la [**interfaz IGlobalInterfaceTable.**](/windows/desktop/api/ObjIdl/nn-objidl-iglobalinterfacetable) Con otras técnicas, tendría que volver a casarse cada vez.
 
 > [!Note]  
-> Si el puntero de interfaz no se calcula una sola vez, puede que desee usar la función [**CoMarshalInterThreadInterfaceInStream**](/windows/desktop/api/combaseapi/nf-combaseapi-comarshalinterthreadinterfaceinstream) . También se puede usar para pasar un puntero de interfaz de un subproceso a otro subproceso en el mismo proceso.
+> Si el puntero de interfaz solo se desmarque una vez, es posible que desee usar la [**función CoMarshalInterThreadInterfaceInStream.**](/windows/desktop/api/combaseapi/nf-combaseapi-comarshalinterthreadinterfaceinstream) También se puede usar para pasar un puntero de interfaz de un subproceso a otro subproceso en el mismo proceso.
 
- 
+ 
 
-La interfaz [**IGlobalInterfaceTable**](/windows/desktop/api/ObjIdl/nn-objidl-iglobalinterfacetable) también hace que otro problema con anterioridad difícil sea más sencillo para el programador. Este problema se produce cuando se cumplen las condiciones siguientes:
+La [**interfaz IGlobalInterfaceTable**](/windows/desktop/api/ObjIdl/nn-objidl-iglobalinterfacetable) también simplifica otro problema anteriormente difícil para el programador. Este problema se produce cuando se aplican las condiciones siguientes:
 
--   Un objeto ágil en proceso agrega el contador de referencias de subprocesamiento libre.
--   Este mismo objeto ágil también contiene punteros de interfaz (como variables de miembro) a otros objetos que no son ágiles y no agregan el contador de referencias de subprocesamiento libre.
+-   Un objeto ágil en proceso agrega el serializador de subproceso libre.
+-   Este mismo objeto ágil también contiene (como variables miembro) punteros de interfaz a otros objetos que no son ágiles y no agregan el serializador de subproceso libre.
 
-En esta situación, si el objeto externo obtiene las referencias a otro apartamento y la aplicación llama a en él, y el objeto intenta llamar a en cualquiera de sus punteros de interfaz de variable miembro que no son de subprocesamiento libre o que son proxies a objetos de otros apartamentos, podría obtener resultados incorrectos o el \_ subproceso RPC E incorrecto de error \_ \_ . Este error se produce porque la interfaz interna está diseñada para que solo se pueda llamar desde el apartamento en el que se almacenó por primera vez en la variable miembro.
+En esta situación, si el objeto externo se serializa en otro apartamento y la aplicación llama a él, y el objeto intenta llamar a en cualquiera de sus punteros de interfaz de variable miembro que no son subprocesos libres o son servidores proxy a objetos de otros departamentos, podría obtener resultados incorrectos o el error RPC \_ E \_ WRONG \_ THREAD. Este error se produce porque la interfaz interna está diseñada para que solo se pueda llamar desde el apartamento en el que se almacenaba por primera vez en la variable miembro.
 
-Para solucionar este problema, el objeto externo que agrega el contador de referencias de subprocesamiento libre debe llamar a [**IGlobalInterfaceTable:: RegisterInterfaceInGlobal**](/windows/win32/api/objidl/nf-objidl-iglobalinterfacetable-registerinterfaceinglobal) en la interfaz interna y almacenar la cookie resultante en su variable miembro, en lugar de almacenar el puntero de interfaz real. Cuando el objeto externo desea llamar a en el puntero de interfaz de un objeto interno, debe llamar a [**IGlobalInterfaceTable:: GetInterfaceFromGlobal**](/windows/win32/api/objidl/nf-objidl-iglobalinterfacetable-getinterfacefromglobal), usar el puntero de interfaz devuelto y, a continuación, liberarlo. Cuando el objeto externo desaparece, debe llamar a [**IGlobalInterfaceTable:: RevokeInterfaceFromGlobal**](/windows/win32/api/objidl/nf-objidl-iglobalinterfacetable-revokeinterfacefromglobal) para quitar la interfaz de la tabla de interfaz global.
+Para resolver este problema, el objeto externo que agrega el serializador de subproceso libre debe llamar a [**IGlobalInterfaceTable::RegisterInterfaceInGlobal**](/windows/win32/api/objidl/nf-objidl-iglobalinterfacetable-registerinterfaceinglobal) en la interfaz interna y almacenar la cookie resultante en su variable miembro, en lugar de almacenar el puntero de interfaz real. Cuando el objeto externo quiere llamar a en el puntero de interfaz de un objeto interno, debe llamar a [**IGlobalInterfaceTable::GetInterfaceFromGlobal**](/windows/win32/api/objidl/nf-objidl-iglobalinterfacetable-getinterfacefromglobal), usar el puntero de interfaz devuelto y, a continuación, liberarlo. Cuando el objeto externo desaparece, debe llamar a [**IGlobalInterfaceTable::RevokeInterfaceFromGlobal**](/windows/win32/api/objidl/nf-objidl-iglobalinterfacetable-revokeinterfacefromglobal) para quitar la interfaz de la tabla de interfaz global.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Crear la tabla de interfaz global](creating-the-global-interface-table.md)
+[Creación de la tabla de interfaz global](creating-the-global-interface-table.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

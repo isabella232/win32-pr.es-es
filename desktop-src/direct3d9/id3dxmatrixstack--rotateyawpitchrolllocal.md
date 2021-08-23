@@ -1,7 +1,7 @@
 ---
-description: 'Método ID3DXMATRIXStack::RotateYawPitchRollLocal (D3dx9math.h): gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.'
+description: 'Método ID3DXMATRIXStack::RotateYawPitchRollLocal (D3dx9math.h): gira (con respecto al espacio de coordenadas local del objeto) alrededor de un eje arbitrario.'
 ms.assetid: c69f5ea7-5d14-4187-9405-1ceff8230185
-title: Método ID3DXMATRIXStack::RotateYawPtrixRollLocal (D3dx9math.h)
+title: Método ID3DXMATRIXStack::RotateYawPitchRollLocal (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 1d104676b6d346afd527552dbfba4bac23ed09cd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3cd1355039a570f0ef0e3546150cb9d8ebed5900b88ba14b6640f3d8a1799150
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493195"
 ---
-# <a name="id3dxmatrixstackrotateyawpitchrolllocal-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::RotateYawPtrixRollLocal (D3dx9math.h)
+# <a name="id3dxmatrixstackrotateyawpitchrolllocal-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::RotateYawPitchRollLocal (D3dx9math.h)
 
-Gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.
+Gira (con respecto al espacio de coordenadas local del objeto) alrededor de un eje arbitrario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ La yaw alrededor del eje Y en radianes.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Paso alrededor del eje X en radianes.
+El tono alrededor del eje X en radianes.
 
 </dd> <dt>
 
@@ -101,7 +101,7 @@ Dado que la rotación se multiplica a la izquierda en la pila de matriz, la rota
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

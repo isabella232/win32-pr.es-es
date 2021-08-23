@@ -1,10 +1,10 @@
 ---
-title: Interfaz IWMPQuery (VB y C) (WMP. h)
+title: Interfaz IWMPQuery (VB y C) (Wmp.h)
 description: Representa una consulta compuesta.
 ms.assetid: b9cfeec9-f928-4b12-88c2-0f78b26f8687
 keywords:
-- IWMPQuery (VB y C) interfaz de Windows Media Player
-- IWMPQuery (VB y C) interfaz de Windows Media Player, se describe
+- Interfaz IWMPQuery (VB y C) Reproductor de Windows Media
+- Interfaz IWMPQuery (VB y C) Reproductor de Windows Media , descrito
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85468f6118f013bdd101ecbc527aa5d76e222088
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5e3b101d7fdc650eda5df3c34f8290e4dafc0d0d159f5f174bc84c48cf14c017
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508585"
 ---
 # <a name="iwmpquery-vb-and-c-interface"></a>Interfaz IWMPQuery (VB y C#)
 
@@ -28,26 +28,26 @@ Representa una consulta compuesta.
 
 ## <a name="members"></a>Miembros
 
-La interfaz **IWMPQuery (VB y C#)** tiene estos tipos de miembros:
+La **interfaz IWMPQuery (VB y C#)** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-La interfaz **IWMPQuery (VB y C#)** tiene estos métodos.
+La **interfaz IWMPQuery (VB y C#)** tiene estos métodos.
 
 
 
 | Método                                                                       | Descripción                                                            |
 |:-----------------------------------------------------------------------------|:-----------------------------------------------------------------------|
-| [**addCondition**](wmplibiwmpquery-iwmpquery-addcondition--vb-and-c.md)     | Agrega una condición a la consulta compuesta mediante la lógica **y** .<br/> |
+| [**addCondition**](wmplibiwmpquery-iwmpquery-addcondition--vb-and-c.md)     | Agrega una condición a la consulta compuesta mediante la **lógica AND.**<br/> |
 | [**beginNextGroup**](wmplibiwmpquery-iwmpquery-beginnextgroup--vb-and-c.md) | Comienza un nuevo grupo de condiciones.<br/>                               |
 
 
 
  
 
-Obtenga una interfaz **IWMPQuery** mediante el método siguiente.
+Obtenga una **interfaz IWMPQuery** mediante el método siguiente.
 
 
 
@@ -65,7 +65,7 @@ Obtenga una interfaz **IWMPQuery** mediante el método siguiente.
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>WMP. h</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wmp.h</dt> </dl> |
 
 
 
@@ -76,13 +76,13 @@ Obtenga una interfaz **IWMPQuery** mediante el método siguiente.
 [**Interfaces para Visual Basic .NET y C #**](interfaces-for-visual-basic--net-and-c.md)
 </dt> <dt>
 
-[**IWMPMediaCollection2. createQuery (VB y C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-createquery--vb-and-c.md)
+[**IWMPMediaCollection2.createQuery (VB y C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-createquery--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMediaCollection2. getPlaylistByQuery (VB y C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getplaylistbyquery--vb-and-c.md)
+[**IWMPMediaCollection2.getPlaylistByQuery (VB y C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getplaylistbyquery--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMediaCollection2. getStringCollectionByQuery (VB y C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getstringcollectionbyquery--vb-and-c.md)
+[**IWMPMediaCollection2.getStringCollectionByQuery (VB y C#)**](wmplibiwmpmediacollection2-iwmpmediacollection2-getstringcollectionbyquery--vb-and-c.md)
 </dt> </dl>
 
  
