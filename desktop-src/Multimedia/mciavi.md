@@ -4,32 +4,32 @@ description: MCIAVI
 ms.assetid: 68639f35-bc20-457d-b937-760af8323dce
 keywords:
 - Dispositivos MCI, controlador MCIAVI
-- Comandos MCI, controlador MCIAVI
+- Comandos de MCI, controlador MCIAVI
 - Controlador MCIAVI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be2e69cf2b0fd9ee71650c56b0d7d9efb50a46e4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6d4a7a6bc8da314cc5cb891846e46289396fefb6be60d92ddd38f17ab1aff0ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104486898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783435"
 ---
 # <a name="mciavi"></a>MCIAVI
 
-Un archivo AVI puede contener más de dos secuencias, por ejemplo, una secuencia de vídeo, una banda sonora en inglés y una banda sonora en francés. La aplicación puede utilizar una secuencia independientemente de las demás secuencias del archivo.
+Un archivo AVI puede contener más de dos secuencias, por ejemplo, una secuencia de vídeo, un inglés y un francés. La aplicación puede usar una secuencia independientemente de las demás secuencias del archivo.
 
-El tipo de dispositivo **DigitalVideo** controla los archivos de vídeo. Para obtener una lista de los comandos MCI reconocidos por los dispositivos de vídeo digital, consulte [conjunto de comandos de vídeo digital](digital-video-command-set.md).
+El **tipo de dispositivo digitalvideo** controla los archivos de vídeo. Para obtener una lista de los comandos de MCI reconocidos por los dispositivos de vídeo digital, vea [Digital-Video Command Set](digital-video-command-set.md).
 
-El controlador MCIAVI reproduce secuencias de vídeo y otros flujos de datos bajo el control de los comandos MCI. Los flujos de datos pueden contener imágenes, audio y paletas. Los datos de imagen pueden constar de imágenes con paletas de colores o información de color verdadero.
+El controlador MCIAVI reproduce secuencias de vídeo y otros flujos de datos bajo el control de los comandos de MCI. Los flujos de datos pueden contener imágenes, audio y paletas. Los datos de imagen pueden constar de imágenes con paletas de colores o información de color verdadero.
 
-El audio se sincroniza con el vídeo dentro de un trigésima de segundo. Sin embargo, si el hardware de audio no está disponible, el controlador solo reproduce la secuencia de vídeo. El controlador MCIAVI puede quitar fotogramas de vídeo, si es necesario, para reproducir un flujo sin interrupción de audio.
+El audio se sincroniza con el vídeo en una trigésima parte de un segundo. Sin embargo, si el hardware de audio no está disponible, el controlador reproduce solo la secuencia de vídeo. El controlador MCIAVI puede quitar fotogramas de vídeo, si es necesario, para reproducir una secuencia sin interrupción del audio.
 
-La aplicación puede usar los servicios de clase de ventana MCIWnd en lugar de la interfaz de comandos MCI para controlar cualquier controlador MCI. Esta clase de ventana administra muchos de los detalles de la administración de la ventana que admite el dispositivo MCI y simplifica la programación necesaria para enviar los comandos MCI. La aplicación puede usar los servicios de biblioteca MCIWnd directamente para controlar el dispositivo MCI, o bien puede tener MCIWnd mostrar una barra de herramientas, una barra de desplazamiento y menús que permitan al usuario controlar el dispositivo. Para obtener más información sobre la clase de ventana MCIWnd, consulte [clase de ventana MCIWnd](mciwnd-window-class.md).
+La aplicación puede usar los servicios de clase de ventana MCIWnd en lugar de la interfaz de comandos de MCI para controlar cualquier controlador MCI. Esta clase de ventana controla muchos de los detalles de la administración de la ventana que admite el dispositivo MCI y simplifica la programación necesaria para enviar los comandos de MCI. La aplicación puede usar los servicios de biblioteca MCIWnd directamente para controlar el dispositivo MCI, o puede hacer que MCIWnd muestre una barra de herramientas, una barra de desplazamiento y menús que permiten al usuario controlar el dispositivo. Para obtener más información sobre la clase de ventana MCIWnd, vea [Clase de ventana MCIWnd](mciwnd-window-class.md).
 
- 
+ 
 
- 
+ 
 
 
 

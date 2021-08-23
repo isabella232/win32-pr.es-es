@@ -1,7 +1,7 @@
 ---
 description: Evento que se señala cuando se completa una transición de estado.
 ms.assetid: 96d236a3-dfba-49a6-95a9-812f7b6a5b68
-title: 'Miembro CBaseRenderer:: m_evComplete (Renbase. h)'
+title: CBaseRenderer::m_evComplete miembro (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d9a341398e9ad91a02fcc59d18dfc2038ceda2e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 56bfd25042f026e8feb05ca9a0178f55cd05cea00bf1d3d0ae6a4111a56ec29f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119635115"
 ---
-# <a name="cbaserendererm_evcomplete-member"></a>Miembro evComplete CBaseRenderer:: m \_
+# <a name="cbaserendererm_evcomplete-member"></a>Miembro CBaseRenderer::m \_ evComplete
 
 Evento que se señala cuando se completa una transición de estado.
 
@@ -42,8 +42,8 @@ CAMEvent m_evComplete;
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Renbase. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Renbase.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ CAMEvent m_evComplete;
 
 <dl> <dt>
 
-[**Clase CBaseRenderer**](cbaserenderer.md)
+[**CBaseRenderer (clase)**](cbaserenderer.md)
 </dt> </dl>
 
  

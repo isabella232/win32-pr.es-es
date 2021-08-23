@@ -1,9 +1,9 @@
 ---
-title: Elemento PeapExtensions (EapType) (propiedad de conexión)
-description: Obtenga información sobre el elemento PeapExtensions (EapType). Este elemento permite futuras mejoras en el esquema. | Elemento PeapExtensions (EapType) (propiedad de conexión)
+title: Elemento PeapExtensions (EapType) (propiedad connection)
+description: Obtenga información sobre el elemento PeapExtensions (EapType). Este elemento permite futuras mejoras en el esquema. | Elemento PeapExtensions (EapType) (propiedad connection)
 ms.assetid: ced49bdc-7213-4a69-9feb-e62a513026b6
 keywords:
-- Elemento PeapExtensions EAPHost
+- EapHost del elemento PeapExtensions
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4f3d0b6fb0d10056df3a9e3d3e62d08aee1ec885
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c498a187d5cced65d400a90352f6344d9bfc0ac79b63afb241a8c346c1f6cb28
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105707665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738885"
 ---
-# <a name="peapextensions-eaptype-element-connection-property"></a>Elemento PeapExtensions (EapType) (propiedad de conexión)
+# <a name="peapextensions-eaptype-element-connection-property"></a>Elemento PeapExtensions (EapType) (propiedad connection)
 
-El elemento **PeapExtensions (EapType)** permite futuras mejoras en el esquema.
+El **elemento PeapExtensions (EapType)** permite futuras mejoras en el esquema.
 
 ``` syntax
 <xs:element name="PeapExtensions"
@@ -31,20 +31,20 @@ El elemento **PeapExtensions (EapType)** permite futuras mejoras en el esquema.
  />
 ```
 
-El elemento **PeapExtensions** se define mediante el elemento [**EapType**](mspeapconnectionpropertiesv1schema-eaptype-element.md) .
+El **elemento PeapExtensions** se define mediante [**el elemento EapType.**](mspeapconnectionpropertiesv1schema-eaptype-element.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El elemento **PeapExtensions** es opcional.
+El **elemento PeapExtensions** es opcional.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Role | Versión mínima admitida del sistema operativo |
+| Rol | Versión mínima admitida del sistema operativo |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -76,7 +76,7 @@ El elemento **PeapExtensions** es opcional.
 [Elementos de esquema mspeapconnectionpropertiesv1](mspeapconnectionpropertiesv1schema-elements.md)
 </dt> <dt>
 
-[**Tipo complejo de PeapExtensionsTypeV2**](mspeapconnectionpropertiesv2-peapextensionstypev2-complextype.md)
+[**PeapExtensionsTypeV2 Complex Type**](mspeapconnectionpropertiesv2-peapextensionstypev2-complextype.md)
 </dt> </dl>
 
  

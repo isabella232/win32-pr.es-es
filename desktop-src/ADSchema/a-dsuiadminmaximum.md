@@ -1,11 +1,11 @@
 ---
-title: DS-UI-admin-atributo Maximum
-description: Es el número máximo predeterminado de objetos que la interfaz de usuario de administrador va a mostrar en un contenedor.
+title: Atributo DS-UI-Admin-Maximum
+description: Este es el número máximo predeterminado de objetos que la interfaz de usuario de administrador va a mostrar en un contenedor.
 ms.assetid: 4ee84329-4ddf-4efa-a43b-f64e6d0e7f76
 ms.tgt_platform: multiple
 keywords:
-- DS-UI-admin-esquema de AD de atributo máximo
-- dSUIAdminMaximum esquema de AD de atributos
+- Esquema de AD de atributo DS-UI-Admin-Maximum
+- Esquema de AD del atributo dSUIAdminMaximum
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2de3a8c4b0c25c0da0e248f07743adee836d0f80
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1a7df2f7e3955a39a80792e0a35331a2eb41f8f34ec1cc25efb59a4a69a0b678
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103804447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119804725"
 ---
-# <a name="ds-ui-admin-maximum-attribute"></a>DS-UI-admin-atributo Maximum
+# <a name="ds-ui-admin-maximum-attribute"></a>Atributo DS-UI-Admin-Maximum
 
-Es el número máximo predeterminado de objetos que la interfaz de usuario de administrador va a mostrar en un contenedor.
+Este es el número máximo predeterminado de objetos que la interfaz de usuario de administrador va a mostrar en un contenedor.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | DS-UI-admin-máximo                  |
-| Nombre para mostrar de LDAP | dSUIAdminMaximum                     |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | Administrador de dominio                 |
+| CN                | DS-UI-Admin-Maximum                  |
+| Ldap-Display-Name | dSUIAdminMaximum                     |
+| Size              | \-                                   |
+| Privilegio actualizar  | Administrador de dominio                 |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1344              |
-| System-ID-GUID    | ee8d0ae0-6f91-11d2-9905-0000f87a57d4 |
-| Sintaxis            | [**Enumeración**](s-enumeration.md) |
+| System-Id-Guid    | ee8d0ae0-6f91-11d2-9905-0000f87a57d4 |
+| Syntax            | [**Enumeración**](s-enumeration.md) |
 
 
 
@@ -55,18 +55,18 @@ Es el número máximo predeterminado de objetos que la interfaz de usuario de ad
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -76,18 +76,18 @@ Es el número máximo predeterminado de objetos que la interfaz de usuario de ad
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -97,18 +97,18 @@ Es el número máximo predeterminado de objetos que la interfaz de usuario de ad
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -116,20 +116,20 @@ Es el número máximo predeterminado de objetos que la interfaz de usuario de ad
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -139,18 +139,18 @@ Es el número máximo predeterminado de objetos que la interfaz de usuario de ad
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 
@@ -160,18 +160,18 @@ Es el número máximo predeterminado de objetos que la interfaz de usuario de ad
 
 | Entrada | Value |
 |------------------------|-----------------------------------------------------|
-| Identificador de vínculo                | \-                                                  |
+| Id. de vínculo                | \-                                                  |
 | MAPI-Id                | \-                                                  |
-| System-Only            | False                                               |
-| Tiene un único valor       | True                                                |
-| Está indexado             | False                                               |
-| En el catálogo global      | False                                               |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                        |
+| System-Only            | Falso                                               |
+| Es de un solo valor       | Verdadero                                                |
+| Está indexado             | Falso                                               |
+| En el catálogo global      | Falso                                               |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Clases usadas en        | [**DS-UI-configuración**](c-dsuisettings.md)<br/> |
+| Clases usadas en        | [**DS-UI-Configuración**](c-dsuisettings.md)<br/> |
 
 
 

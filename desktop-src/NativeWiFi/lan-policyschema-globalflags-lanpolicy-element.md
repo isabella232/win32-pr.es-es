@@ -1,7 +1,7 @@
 ---
 description: Contiene la configuración global para la configuración automática de redes cableadas.
 ms.assetid: 172cf15c-cd51-43d4-ae5d-f9460c2a40e2
-title: Elemento Indicadores_globales (LANPolicy)
+title: elemento globalFlags (LANPolicy)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: c9a244fbbc616e3092e2293fe187da1d7be0fa53
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bfbfecbc1d60e34a913bb523f5af8c2ab25665fd689976c87725d392f6ea26c2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801135"
 ---
-# <a name="globalflags-lanpolicy-element"></a>Elemento Indicadores_globales (LANPolicy)
+# <a name="globalflags-lanpolicy-element"></a>elemento globalFlags (LANPolicy)
 
-El elemento Indicadores_globales (LANPolicy) contiene la configuración global para la configuración automática de redes cableadas.
+El elemento globalFlags (LANPolicy) contiene la configuración global para la configuración automática de redes cableadas.
 
 ``` syntax
 <xs:element name="globalFlags">
@@ -41,7 +41,7 @@ El elemento Indicadores_globales (LANPolicy) contiene la configuración global p
 </xs:element>
 ```
 
-El elemento **indicadores_globales** se define mediante el elemento [**LANPolicy**](lan-policyschema-lanpolicy-element.md) .
+El **elemento globalFlags** se define mediante el [**elemento LANPolicy.**](lan-policyschema-lanpolicy-element.md)
 
 ## <a name="child-elements"></a>Elementos secundarios
 
@@ -49,7 +49,7 @@ El elemento **indicadores_globales** se define mediante el elemento [**LANPolicy
 
 | Elemento                                                                           | Tipo    | Descripción                                                                                                                                                                          |
 |-----------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**enableAutoConfig**](lan-policyschema-enableautoconfig-globalflags-element.md) | boolean | Especifica si los equipos usan el servicio de configuración automática integrado para administrar las conexiones a redes cableadas que requieren autenticación de nivel 2 (por ejemplo, 802.1 X).<br/> |
+| [**enableAutoConfig**](lan-policyschema-enableautoconfig-globalflags-element.md) | boolean | Especifica si las máquinas usan el servicio de configuración automática integrado para administrar las conexiones a redes cableadas que requieren autenticación de nivel 2 (por ejemplo, 802.1X).<br/> |
 
 
 
@@ -59,8 +59,8 @@ El elemento **indicadores_globales** se define mediante el elemento [**LANPolicy
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

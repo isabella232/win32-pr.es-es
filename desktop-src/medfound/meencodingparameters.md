@@ -1,29 +1,29 @@
 ---
-description: Enviado por la canalización al codificador MFTs en serie con muestras multimedia a través de IMFTransform::P rocessEvent.
+description: Enviado por la canalización a las MTA del codificador en serie con ejemplos multimedia a través de MFTransform::P rocessEvent.
 ms.assetid: D5D4544B-CD8D-4C94-B050-7BA1944800CC
-title: Evento MEEncodingParameters (Mfobjects. h)
+title: Evento MEEncodingParameters (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e193044b25eb1d333182a2593fcf2248fba2366
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2230640adf1f92111569a39558f2959271a23ea2b5dbe5d0d915b6a2b989d371
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119723835"
 ---
 # <a name="meencodingparameters-event"></a>Evento MEEncodingParameters
 
-Enviado por la canalización al codificador MFTs en serie con muestras multimedia a través de [**IMFTransform::P rocessevent**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processevent).
+Enviado por la canalización a las MTA del codificador en serie con ejemplos multimedia a través [**de MFTransform::P rocessEvent**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processevent).
 
 ## <a name="event-values"></a>Valores de evento
 
-Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) son los siguientes.
+Los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluyen lo siguiente.
 
 
 
 | VARTYPE              | Descripción                           |
 |----------------------|---------------------------------------|
-| VT \_ vacío<br/> | Sin datos del evento.<br/> <br/> |
+| VT \_ EMPTY<br/> | Sin datos del evento.<br/> <br/> |
 
 
 
@@ -35,13 +35,13 @@ Para este evento, se definen los atributos siguientes.
 
 | Atributo                                         | Descripción                                                                                                                    |
 |---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)<br/> | Contiene la nueva configuración basada en ICodecAPI que el codificador debería aplicar en los ejemplos de entrada posteriores.<br/> <br/> |
+| [**ATTRIBUTEAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)<br/> | Contiene la nueva configuración basada en ICodecAPI que el codificador debe aplicar en los ejemplos entrantes posteriores.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La carga del evento es un almacén de atributos (puntero IMFAttributes) que contiene los nuevos valores de configuración basados en ICodecAPI que el codificador debe aplicar en los ejemplos posteriores entrantes.
+La carga de eventos es un almacén de atributos (puntero DEATTRIBUTEAttributes) que contiene la nueva configuración /// basada en ICodecAPI que el codificador debe aplicar en ejemplos entrantes posteriores.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ La carga del evento es un almacén de atributos (puntero IMFAttributes) que cont
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                                  |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects. h (incluye Mfidl. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                             |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                                  |
+| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
@@ -59,7 +59,7 @@ La carga del evento es un almacén de atributos (puntero IMFAttributes) que cont
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> </dl>
 
  

@@ -3,9 +3,9 @@ title: Propiedad attributeCount de IWMPPlaylist
 description: La propiedad attributeCount obtiene el número de atributos asociados a una lista de reproducción.
 ms.assetid: 0713ec4e-7e06-4ad2-8f7c-17ed5a92d5ee
 keywords:
-- propiedades de attributeCount Media Player de Windows
-- propiedad attributeCount de Windows Media Player, interfaz IWMPPlaylist
-- Interfaz IWMPPlaylist Windows Media Player, propiedad attributeCount
+- attributeCount, propiedad Reproductor de Windows Media
+- Propiedad attributeCount Reproductor de Windows Media , interfaz IWMPPlaylist
+- Interfaz IWMPPlaylist Reproductor de Windows Media , propiedad attributeCount
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4107eb1ad302415715b573b55d2dee1d7155128d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6b51c621f5a484c23a2f7d0677fe20d1b62bfb4d2ec94228e003adc2ebc841cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105700000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119760775"
 ---
-# <a name="iwmpplaylistattributecount-property"></a>IWMPPlaylist:: attributeCount (propiedad)
+# <a name="iwmpplaylistattributecount-property"></a>Propiedad IWMPPlaylist::attributeCount
 
-La propiedad **attributeCount** obtiene el número de atributos asociados a una lista de reproducción.
+La **propiedad attributeCount** obtiene el número de atributos asociados a una lista de reproducción.
 
-## <a name="syntax"></a>Sintaxis
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -46,19 +46,19 @@ Public ReadOnly Property attributeCount As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es el número de atributos asociados a la lista de reproducción.
+**System.Int32 que** es el número de atributos asociados a la lista de reproducción.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Dado que las listas de reproducción pueden provienen de muchos orígenes diferentes, pueden tener varios conjuntos de atributos diferentes. Esta propiedad obtiene el número total de atributos asociados a una lista de reproducción determinada para que otros miembros de la interfaz **IWMPPlaylist** puedan tener acceso a ellos.
+Dado que las listas de reproducción pueden proceden de muchos orígenes diferentes, pueden tener varios conjuntos de atributos diferentes. Esta propiedad obtiene el número total de atributos asociados a una lista de reproducción determinada para que otros miembros de la **interfaz IWMPPlaylist** puedan acceder a ellos.
 
-Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
-Para obtener más información sobre los atributos compatibles con Windows Media Player, vea la [referencia de atributo](attribute-reference.md).
+Para obtener más información sobre los atributos admitidos por Reproductor de Windows Media, vea la [Referencia de atributos](attribute-reference.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo se usan varias propiedades y métodos de las interfaces **IWMPPlaylist** y **IWMPMedia** rellenando un control TreeView con nodos para la lista de reproducción actual, atributos de la lista de reproducción, elementos multimedia de la lista de reproducción y atributos de elemento multimedia. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se muestra cómo se usan varias propiedades y métodos de las interfaces **IWMPPlaylist** e **IWMPMedia** rellenando un control treeview con nodos para la lista de reproducción actual, los atributos de lista de reproducción, los elementos multimedia de la lista de reproducción y los atributos de elementos multimedia. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -173,7 +173,7 @@ displayAttributes.Nodes.Add(mediaRootNode)
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

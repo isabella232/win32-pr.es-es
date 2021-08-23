@@ -1,28 +1,28 @@
 ---
-title: Uso compartido de suplentes
-description: Los servidores DLL compartirán un suplente si tienen identidades de seguridad coincidentes y comparten el mismo valor de AppID.
+title: Uso compartido suplente
+description: Los servidores DLL compartirán un suplente si tienen identidades de seguridad que coinciden y comparten el mismo valor de AppID.
 ms.assetid: 88544be1-4716-47b6-9c08-2b5b2b178e1f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f6a934f03d42113cf73df4f059ac108801d21ea
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 34e159fff59144773633cfbe35bb1486e9eeb1014d02e23e0c9b95bcd817bb53
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103774959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119678415"
 ---
-# <a name="surrogate-sharing"></a>Uso compartido de suplentes
+# <a name="surrogate-sharing"></a>Uso compartido suplente
 
-Los servidores DLL compartirán un suplente si tienen identidades de seguridad coincidentes y comparten el mismo valor de AppID.
+Los servidores DLL compartirán un suplente si tienen identidades de seguridad que coinciden y comparten el mismo valor de AppID.
 
-Los servidores DLL se cargan, de forma predeterminada, en su propio proceso suplente. Para cargar otros servidores DLL en un suplente existente para que admita más de un servidor DLL, existen dos requisitos:
+Los servidores DLL se cargan, de forma predeterminada, en su propio proceso suplente. Para cargar otros servidores DLL en un suplente existente para que admita más de un servidor DLL, hay dos requisitos:
 
 -   Los servidores DLL deben tener el mismo valor de AppID.
 -   El contexto de seguridad de los servidores DLL debe ser el mismo.
 
-Si se van a iniciar dos servidores DLL con distintas identidades de seguridad, deben estar en distintos suplentes, independientemente de que AppIDs coincidan.
+Si dos servidores DLL se van a iniciar con identidades de seguridad diferentes, deben estar en suplentes diferentes, independientemente de si sus AppID coinciden.
 
-A continuación se proporciona un ejemplo de cómo administrar el uso compartido de suplentes con AppIDs:
+A continuación se muestra un ejemplo de administración del uso compartido suplente con appIDs:
 
 ``` syntax
     AppID
@@ -40,7 +40,7 @@ A continuación se proporciona un ejemplo de cómo administrar el uso compartido
  
 ```
 
-Los dos CLSID para componentes DLL comp1.dll y comp2.dll se han configurado para compartir un AppID. La clave [AppID](appid-key.md) especifica que el servidor dll se puede cargar en un suplente especificando el valor de [DllSurrogate](dllsurrogate.md) . En este ejemplo, el valor de **DllSurrogate** es una cadena vacía, que indica que se debe usar la implementación del sistema predeterminada del suplente de la dll.
+Los dos CLSID para los componentes dll comp1.dll y comp2.dll se han configurado para compartir un AppID. La [clave AppID](appid-key.md) especifica que el servidor DLL se puede cargar en un suplente especificando el [valor DllSurrogate.](dllsurrogate.md) En este ejemplo, el valor **DllSurrogate** es una cadena vacía, lo que indica que se debe usar la implementación predeterminada del sistema del suplente dll.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -49,12 +49,12 @@ Los dos CLSID para componentes DLL comp1.dll y comp2.dll se han configurado para
 [Requisitos del servidor DLL](dll-server-requirements.md)
 </dt> <dt>
 
-[Registrando el servidor DLL para la activación de suplentes](registering-the-dll-server-for-surrogate-activation.md)
+[Registro del servidor DLL para la activación suplente](registering-the-dll-server-for-surrogate-activation.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

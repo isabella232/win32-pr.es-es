@@ -1,19 +1,19 @@
 ---
-description: Convencionalmente, el usuario puede seleccionar posición del símbolo de intercalación (CP) haciendo clic en la mitad final del carácter &\# 0034; CP-1&\# 0034; o en la mitad inicial del carácter &\# 0034; CP&\# 0034;.
+description: Convencionalmente, el usuario puede seleccionar la posición del carácter de asociación (cp) haciendo clic en la mitad final del carácter &\# 0034;cp-1&0034; o la mitad inicial del \# carácter &\# 0034;cp&\# 0034;.
 ms.assetid: 36b6ff00-7ea8-40e5-90f7-917cef117d4a
-title: Trasladar el desplazamiento de la X hasta la posición del símbolo de intercalación
+title: Traducción del desplazamiento X de posicionamiento del mouse a la posición del cursor de cursor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f993de35ebffac4740b367927d1a8edf864a813e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6e135efaccb6454e55999d21f00e762d749eb380751848aef88cf4b4e5b8e913
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103910102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119693185"
 ---
-# <a name="translating-mouse-hit-x-offset-to-caret-position"></a>Trasladar el desplazamiento de la X hasta la posición del símbolo de intercalación
+# <a name="translating-mouse-hit-x-offset-to-caret-position"></a>Traducción del desplazamiento X de posicionamiento del mouse a la posición del cursor de cursor
 
-Convencionalmente, el usuario puede seleccionar posición del símbolo de intercalación (CP) haciendo clic en la mitad final del carácter "CP-1" o en la mitad inicial del carácter "CP". Una aplicación puede implementar la traslación del desplazamiento de x del mouse en la posición del símbolo de intercalación como se indica a continuación:
+Convencionalmente, el usuario puede seleccionar la posición del carácter de vínculo (cp) haciendo clic en la mitad final del carácter "cp-1" o en la mitad inicial del carácter "cp". Una aplicación puede implementar la traducción del desplazamiento x de la pulsación del mouse para la posición del cursor de cursor como se muestra a continuación:
 
 
 ```C++
@@ -27,13 +27,13 @@ iCaretPos = iCharPos + fTrailing;
 
 
 
-En el caso de los scripts que ajustan el símbolo de intercalación a los límites del clúster, una llamada a [**ScriptXtoCP**](/windows/desktop/api/Usp10/nf-usp10-scriptxtocp) devuelve con *fTrailing* establecido en 0 o en el ancho del clúster en los puntos de código.
+En el caso de los scripts que acoplan el cursor de cursor a los límites del clúster, se devuelve una llamada a [**ScriptXtoCP**](/windows/desktop/api/Usp10/nf-usp10-scriptxtocp) con *fTrailing* establecido en 0 o el ancho del clúster en puntos de código.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Usar Uniscribe](using-uniscribe.md)
+[Uso de Uniscribe](using-uniscribe.md)
 </dt> </dl>
 
  

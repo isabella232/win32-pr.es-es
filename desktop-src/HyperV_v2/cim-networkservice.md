@@ -1,7 +1,7 @@
 ---
-description: Esta clase está en desuso. En su lugar, se recomienda derivar de la \_ clase de servicio CIM.
+description: Esta clase está en desuso. En su lugar, se recomienda derivar de la clase de \_ servicio CIM.
 ms.assetid: 67b3a96e-4549-41e0-8097-f8d145df0c49
-title: CIM_NetworkService (clase)
+title: CIM_NetworkService clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: b141e6e38f2fafefdf6e75670b975e0fcdd2961c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cfb2ea7b122516cc3b62f675684649e22577171f713856638f97985d9713e8d5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105688376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119694695"
 ---
-# <a name="cim_networkservice-class"></a>Clase de NetworkService de CIM \_
+# <a name="cim_networkservice-class"></a>Clase \_ NetworkService de CIM
 
-Esta clase está en desuso. En su lugar, se recomienda derivar de la clase de [**\_ servicio CIM**](cim-service.md) .
+Esta clase está en desuso. En su lugar, se recomienda derivar de la clase [**de \_ servicio CIM.**](cim-service.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,32 +43,32 @@ class CIM_NetworkService : CIM_Service
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ NetworkService de CIM** tiene estos tipos de miembros:
+La **clase \_ NetworkService** de CIM tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ NetworkService de CIM** tiene estas propiedades.
+La **clase \_ NetworkService de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
 **Palabras clave**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("sin valor")
+Calificadores: [**En desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("Sin valor")
 </dt> </dl>
 
 Esta propiedad está en desuso y no debe utilizarse.
 
 > [!Note]  
-> Descripción desusada: una matriz de palabras clave que se pueden usar en las consultas.
+> Descripción en desuso: matriz de palabras clave que se pueden usar en las consultas.
 
  
 
@@ -83,13 +83,13 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("CIM \_ ServiceAccessURI")
+Calificadores: [**En desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("CIM \_ ServiceAccessURI")
 </dt> </dl>
 
-Esta propiedad está desusada. En su lugar, se recomienda la clase **CIM \_ ServiceAccessURI** .
+Esta propiedad está desusada. En su lugar, se recomienda la **\_ clase CIM ServiceAccessURI.**
 
 > [!Note]  
-> Descripción desusada: una dirección URL que proporciona el protocolo, la ubicación de red y otra información específica del servicio necesaria para obtener acceso al servicio.
+> Descripción en desuso: dirección URL que proporciona el protocolo, la ubicación de red y otra información específica del servicio necesaria para acceder al servicio.
 
  
 
@@ -98,19 +98,19 @@ Esta propiedad está desusada. En su lugar, se recomienda la clase **CIM \_ Serv
 **StartupConditions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("sin valor")
+Calificadores: [**En desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("Sin valor")
 </dt> </dl>
 
 Esta propiedad está en desuso y no debe utilizarse.
 
 > [!Note]  
-> Descripción desusada: las condiciones previas que deben cumplirse para que este servicio se inicie correctamente.
+> Descripción en desuso: las condiciones previas que se deben cumplir para que este servicio se inicie correctamente.
 
  
 
@@ -119,19 +119,19 @@ Esta propiedad está en desuso y no debe utilizarse.
 **StartupParameters**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**desusados**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("sin valor")
+Calificadores: [**En desuso**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("Sin valor")
 </dt> </dl>
 
 Esta propiedad está en desuso y no debe utilizarse.
 
 > [!Note]  
-> Descripción desusada: los parámetros que se deben proporcionar al método **StartService** para que este servicio se inicie correctamente.
+> Descripción en desuso: parámetros que se deben proporcionar al **método StartService** para que este servicio se inicie correctamente.
 
  
 
@@ -141,12 +141,12 @@ Esta propiedad está en desuso y no debe utilizarse.
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012<br/>                                                                          |
-| Espacio de nombres<br/>                | \\Virtualización de raíz \\ V2<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Virtualización \\ raíz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -155,7 +155,7 @@ Esta propiedad está en desuso y no debe utilizarse.
 
 <dl> <dt>
 
-[**\_Servicio CIM**](cim-service.md)
+[**Servicio \_ CIM**](cim-service.md)
 </dt> </dl>
 
  

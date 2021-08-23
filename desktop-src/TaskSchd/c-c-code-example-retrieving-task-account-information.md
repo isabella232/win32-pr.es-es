@@ -1,22 +1,22 @@
 ---
-title: Ejemplo de código de C/C++ recuperar información de la cuenta de tarea
-description: En este ejemplo de código se recupera la información de la cuenta de una tarea conocida y se muestra el nombre de la cuenta en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local y que el Programador de tareas se está ejecutando.
+title: Ejemplo de código de C/C++ para recuperar información de la cuenta de tarea
+description: En este ejemplo de código se recupera la información de la cuenta de una tarea conocida y se muestra el nombre de cuenta en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local y que el Programador de tareas está en ejecución.
 ms.assetid: ef330276-a063-42c6-a837-fddb4723091b
 keywords:
-- recuperación de la información de la cuenta de tareas Programador de tareas
-- recuperar propiedades de elementos de trabajo Programador de tareas, información de cuenta
+- recuperación de la información de la cuenta de tarea Programador de tareas
+- recuperar propiedades de elemento de trabajo Programador de tareas , información de la cuenta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1102ce0c2a2a98e66c1ac943eeab0593fe75e189
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ce068589ee1284f4c0b655994c9ea13b6fd63affca8146330e93aef12157cb2e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103994307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738865"
 ---
 # <a name="cc-code-example-retrieving-task-account-information"></a>Ejemplo de código de C/C++: recuperar información de la cuenta de tarea
 
-En este ejemplo de código se recupera la información de la cuenta de una tarea conocida y se muestra el nombre de la cuenta en la pantalla. En este ejemplo se da por supuesto que la tarea y la tarea de prueba ya existen en el equipo local y que el Programador de tareas se está ejecutando.
+En este ejemplo de código se recupera la información de la cuenta de una tarea conocida y se muestra el nombre de cuenta en la pantalla. En este ejemplo se supone que la tarea y la tarea de prueba ya existen en el equipo local y que el Programador de tareas está en ejecución.
 
 
 ```C++
@@ -124,12 +124,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Ejemplos de Programador de tareas 1,0](task-scheduler-1-0-examples.md)
+[Programador de tareas ejemplos de 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

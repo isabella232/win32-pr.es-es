@@ -1,9 +1,9 @@
 ---
-title: VIEW. backgroundImage
-description: El atributo backgroundImage especifica o recupera la imagen de fondo de la vista o la subvista.
+title: VIEW.backgroundImage
+description: El atributo backgroundImage especifica o recupera la imagen de fondo de VIEW o SUBVIEW.
 ms.assetid: 60ffb257-2f43-4ae3-869d-3eb981ef4ae7
 keywords:
-- VIEW. backgroundImage Windows Media Player
+- VIEW.backgroundImage Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e96f4a93882e02589d7f15b74ba5cb225f506d69
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c1de8bcbd0eb47f03aaff46b4292a8afe226ca8a221ec570537351af8e509801
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105649620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761745"
 ---
-# <a name="viewbackgroundimage"></a>VIEW. backgroundImage
+# <a name="viewbackgroundimage"></a>VIEW.backgroundImage
 
-El atributo **BackgroundImage** especifica o recupera la imagen de fondo de la **vista** o la **subvista**.
+El **atributo backgroundImage** especifica o recupera la imagen de fondo de **VIEW** o **SUBVIEW.**
 
 ``` syntax
         elementID.backgroundImage
@@ -29,21 +29,21 @@ El atributo **BackgroundImage** especifica o recupera la imagen de fondo de la *
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una **cadena** de lectura/escritura.
+Este atributo es una cadena de lectura y **escritura.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Los formatos admitidos son BMP, JPG, GIF y PNG. Si la imagen es un archivo BMP de 8 bits, sus valores de matiz y saturación se pueden cambiar dinámicamente con los atributos **backgroundImageHueShift** y **backgroundImageSaturation** .
+Los formatos admitidos son BMP, JPG, GIF y PNG. Si la imagen es un archivo BMP de 8 bits, sus valores de matiz y saturación se pueden cambiar dinámicamente mediante los atributos **backgroundImageHueShift** y **backgroundImageSaturation.**
 
-En un paquete de descarga de Windows Media, si especifica el atributo **BackgroundImage** para un elemento de **vista** , también debe especificar el atributo **BackgroundColor** para ese elemento.
+En un Windows de descarga multimedia, si especifica el atributo **backgroundImage** para un elemento **VIEW,** también debe especificar el atributo **backgroundColor** para ese elemento.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
@@ -51,13 +51,13 @@ En un paquete de descarga de Windows Media, si especifica el atributo **Backgrou
 
 <dl> <dt>
 
-[**Elemento de vista**](view-element.md)
+[**ELEMENTO VIEW**](view-element.md)
 </dt> <dt>
 
-[**VER. backgroundImageHueShift**](view-backgroundimagehueshift.md)
+[**VIEW.backgroundImageHueShift**](view-backgroundimagehueshift.md)
 </dt> <dt>
 
-[**VER. backgroundImageSaturation**](view-backgroundimagesaturation.md)
+[**VIEW.backgroundImageSaturation**](view-backgroundimagesaturation.md)
 </dt> </dl>
 
  

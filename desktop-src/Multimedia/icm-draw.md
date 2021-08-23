@@ -1,9 +1,9 @@
 ---
-title: Mensaje de ICM_DRAW (VFW. h)
-description: El \_ mensaje de dibujo ICM notifica a un controlador de representación que descomprima un fotograma de datos y lo dibuje en la pantalla.
+title: ICM_DRAW mensaje (Vfw.h)
+description: El ICM DRAW notifica a un controlador de representación \_ que descomprima un marco de datos y lo dibuje en la pantalla.
 ms.assetid: eceb42c6-d91a-45b7-98dc-e0944df3e558
 keywords:
-- Mensaje de ICM_DRAW de Windows multimedia
+- ICM_DRAW mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0840c6df2c69f4d3e45600cf8599c214b36200a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e44216e523da62e0dde22abed8d88b9b8aacd8f68119a88f3177f45ecd910029
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103802029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119784995"
 ---
-# <a name="icm_draw-message"></a>Mensaje de dibujo de ICM \_
+# <a name="icm_draw-message"></a>\_ICM Draw message
 
-El mensaje de **\_ dibujo ICM** notifica a un controlador de representación que descomprima un fotograma de datos y lo dibuje en la pantalla.
+El **ICM \_ draw** notifica a un controlador de representación que descomprima un marco de datos y lo dibuje en la pantalla.
 
 
 ```C++
@@ -38,35 +38,35 @@ lParam = sizeof(ICDRAW);
 
 <dl> <dt>
 
-<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*wParam*
+<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*Wparam*
 </dt> <dd>
 
-Puntero a una estructura [**ICDRAW**](/windows/desktop/api/Vfw/ns-vfw-icdraw) .
+Puntero a una [**estructura ICDRAW.**](/windows/desktop/api/Vfw/ns-vfw-icdraw)
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Tamaño, en bytes, de [**ICDRAW**](/windows/desktop/api/Vfw/ns-vfw-icdraw).
+Tamaño, en bytes, de [**ICDRAW.**](/windows/desktop/api/Vfw/ns-vfw-icdraw)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve ICERR \_ OK si es correcto o un error en caso contrario.
+Devuelve ICERR \_ OK si se realiza correctamente o se produce un error en caso contrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Si la \_ marca de actualización ICDRAW se establece en el miembro **DwFlags** de [**ICDRAW**](/windows/desktop/api/Vfw/ns-vfw-icdraw), el área de la pantalla que se usa para dibujar no es válida y debe actualizarse. La extensión de la actualización depende del contenido del miembro **lpData** .
+Si la marca UPDATE de ICDRAW se establece en el miembro \_ **dwFlags** de [**ICDRAW**](/windows/desktop/api/Vfw/ns-vfw-icdraw), el área de la pantalla usada para dibujar no es válida y debe actualizarse. La extensión de la actualización depende del contenido del **miembro lpData.**
 
-Si **lpData** es **null**, el controlador debe actualizar el rectángulo de destino completo con la imagen actual. Si el controlador mantiene una copia de la imagen en un búfer fuera de pantalla, puede producir un error en este mensaje. Si **lpData** no es **null**, el controlador debe dibujar los datos y asegurarse de que se actualiza todo el destino.
+Si **lpData** es **NULL,** el controlador debe actualizar todo el rectángulo de destino con la imagen actual. Si el controlador mantiene una copia de la imagen en un búfer fuera de la pantalla, puede producir un error en este mensaje. Si **lpData** no es **NULL,** el controlador debe dibujar los datos y asegurarse de que se actualiza todo el destino.
 
-Si la \_ marca ICDRAW HURRYUP se establece en **dwFlags**, la aplicación que realiza la llamada quiere que el controlador continúe lo más rápido posible, incluso aunque no actualice la pantalla.
+Si la marca \_ ICDRAW DESENLAZABLEUP está establecida en **dwFlags**, la aplicación que realiza la llamada quiere que el controlador continúe lo más rápido posible, posiblemente ni siquiera actualizando la pantalla.
 
-Si \_ se establece la marca de preinstalación de ICDRAW en **dwFlags**, este fotograma de vídeo es información preliminar y no se debe mostrar si es posible. Por ejemplo, si Play es empezar desde el fotograma 10 y el fotograma 0 es el fotograma clave anterior, los fotogramas del 0 al 9 tendrán establecido el preICDRAW \_ .
+Si la marca ICDRAW PREROLL está establecida en dwFlags , este fotograma de vídeo es información preliminar y no debe \_ mostrarse si es posible.  Por ejemplo, si la reproducción se va a iniciar desde el fotograma 10 y el fotograma 0 es el fotograma clave anterior más cercano, los fotogramas del 0 al 9 tendrán establecido ICDRAW \_ PREROLL.
 
-Si desea que el controlador Descomprima los datos en un búfer, envíe el mensaje de [**\_ descompresión ICM**](icm-decompress.md) .
+Si desea que el controlador descomprima los datos en un búfer, envíe el [**ICM \_ de DECOMPRESS.**](icm-decompress.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Si desea que el controlador Descomprima los datos en un búfer, envíe el mensaj
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

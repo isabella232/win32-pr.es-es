@@ -1,11 +1,11 @@
 ---
-title: atributo MS-RADIUS-FramedInterfaceId
-description: Indica el identificador de interfaz IPv6 que se va a configurar para el usuario. | atributo MS-RADIUS-FramedInterfaceId
+title: Atributo ms-RADIUS-FramedInterfaceId
+description: Indica el identificador de interfaz IPv6 que se va a configurar para el usuario. | Atributo ms-RADIUS-FramedInterfaceId
 ms.assetid: a686f5d6-762b-4477-9fea-0b14288e8c6a
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-RADIUS-FramedInterfaceId
-- msRADIUS-FramedInterfaceId atributo AD Schema
+- Esquema de AD del atributo ms-RADIUS-FramedInterfaceId
+- Esquema de AD del atributo msRADIUS-FramedInterfaceId
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe3ece0fc360e39bc82cd3f6059e04d2cc2e0cee
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c5e80c16ce79dd54f75920b1b079793b5143546cda0445cd2f3cc0ea05b8972d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105660050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119761665"
 ---
-# <a name="ms-radius-framedinterfaceid-attribute"></a>atributo MS-RADIUS-FramedInterfaceId
+# <a name="ms-radius-framedinterfaceid-attribute"></a>Atributo ms-RADIUS-FramedInterfaceId
 
 Indica el identificador de interfaz IPv6 que se va a configurar para el usuario.
 
@@ -29,14 +29,14 @@ Indica el identificador de interfaz IPv6 que se va a configurar para el usuario.
 
 | Entrada | Value |
 |-------------------|--------------------------------------|
-| CN                | MS-RADIUS-FramedInterfaceId          |
-| Nombre para mostrar de LDAP | msRADIUS-FramedInterfaceId           |
-| Tamaño              | \-                                   |
-| Actualizar privilegio  | \-                                   |
+| CN                | ms-RADIUS-FramedInterfaceId          |
+| Ldap-Display-Name | msRADIUS-FramedInterfaceId           |
+| Size              | \-                                   |
+| Privilegio actualizar  | \-                                   |
 | Frecuencia de actualización  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1913              |
-| System-ID-GUID    | a6f24a23-d65c-4d65-a64f-35fb6873c2b9 |
-| Sintaxis            | [**String(IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | a6f24a23-d65c-4d65-a64f-35fb6873c2b9 |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -52,18 +52,18 @@ Indica el identificador de interfaz IPv6 que se va a configurar para el usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -73,18 +73,18 @@ Indica el identificador de interfaz IPv6 que se va a configurar para el usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |
 | System-Flags           | 0x00000010                        |
-| Clases usadas en        | [**User**](c-user.md)<br/> |
+| Clases usadas en        | [**Usuario**](c-user.md)<br/> |
 
 
 
@@ -94,13 +94,13 @@ Indica el identificador de interfaz IPv6 que se va a configurar para el usuario.
 
 | Entrada | Value |
 |------------------------|-----------------------------------|
-| Identificador de vínculo                | \-                                |
+| Id. de vínculo                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | False                             |
-| Tiene un único valor       | True                              |
-| Está indexado             | False                             |
-| En el catálogo global      | False                             |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                      |
+| System-Only            | Falso                             |
+| Es de un solo valor       | Verdadero                              |
+| Está indexado             | Falso                             |
+| En el catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000010                        |

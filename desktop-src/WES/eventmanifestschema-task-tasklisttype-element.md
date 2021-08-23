@@ -1,6 +1,6 @@
 ---
-title: Task (TaskListType), elemento
-description: Define un componente o subcomponente de una aplicación. | Task (TaskListType), elemento
+title: task (TaskListType) (Elemento)
+description: Define un componente o subcomponente de una aplicación. | task (TaskListType) (Elemento)
 ms.assetid: 890f11cc-a379-41a5-a35b-08ad5615e18b
 keywords:
 - elemento de tarea EventLog
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b828f7b38942927c527ce6e72b143400196b75f9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 90b7abd0d116637b6aa1ad197a6479c86e4745259af4d65c0ed318a009054e68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104362213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119767274"
 ---
-# <a name="task-tasklisttype-element"></a>Task (TaskListType), elemento
+# <a name="task-tasklisttype-element"></a>task (TaskListType) (Elemento)
 
 Define un componente o subcomponente de una aplicación.
 
@@ -30,7 +30,7 @@ Define un componente o subcomponente de una aplicación.
  />
 ```
 
-El elemento **Task** se define mediante el tipo complejo [**TaskListType**](eventmanifestschema-tasklisttype-complextype.md) .
+El **tipo** complejo [**TaskListType**](eventmanifestschema-tasklisttype-complextype.md) define el elemento task.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ El elemento **Task** se define mediante el tipo complejo [**TaskListType**](even
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ El elemento **Task** se define mediante el tipo complejo [**TaskListType**](even
 **Elemento primario**
 </dt> <dt>
 
-[**tareas (ProviderType)**](eventmanifestschema-tasks-providertype-element.md)
+[**tasks (ProviderType)**](eventmanifestschema-tasks-providertype-element.md)
 </dt> </dl>
 
  

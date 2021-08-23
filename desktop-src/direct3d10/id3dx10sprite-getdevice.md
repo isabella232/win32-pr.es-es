@@ -1,7 +1,7 @@
 ---
-description: Recupere el dispositivo asociado al objeto Sprite.
+description: Recupere el dispositivo asociado al objeto sprite.
 ms.assetid: 9119b232-22c8-4b05-b584-ce176370ca97
-title: 'ID3DX10Sprite:: GetDevice (método) (D3DX10. h)'
+title: Método ID3DX10Sprite::GetDevice (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: d4e7a3c6ebfcbcb83aaaed6273ea321b33a44ce1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 13513b6fcd2bdb952eda17f10cc81406ff484a20dce3f690d43dd3b5c28eb08f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104362822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634255"
 ---
-# <a name="id3dx10spritegetdevice-method"></a>ID3DX10Sprite:: GetDevice (método)
+# <a name="id3dx10spritegetdevice-method"></a>Método ID3DX10Sprite::GetDevice
 
-Recupere el dispositivo asociado al objeto Sprite.
+Recupere el dispositivo asociado al objeto sprite.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,12 +40,12 @@ HRESULT GetDevice(
 
 <dl> <dt>
 
-*ppDevice* \[ enuncia\]
+*ppDevice* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)\*\***
 
-Dirección de un puntero a una interfaz ID3D10Device que representa el objeto de dispositivo Direct3D asociado al objeto Sprite.
+Dirección de un puntero a una interfaz ID3D10Device, que representa el objeto de dispositivo Direct3D asociado al objeto sprite.
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Dirección de un puntero a una interfaz ID3D10Device que representa el objeto de
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el valor siguiente: D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Al llamar a este método, se aumentará el recuento de referencias interno en la interfaz ID3D10Device.
+Llamar a este método aumentará el número de referencias internas en la interfaz ID3D10Device.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Al llamar a este método, se aumentará el recuento de referencias interno en la
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -77,7 +77,7 @@ Al llamar a este método, se aumentará el recuento de referencias interno en la
 [ID3DX10Sprite](id3dx10sprite.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

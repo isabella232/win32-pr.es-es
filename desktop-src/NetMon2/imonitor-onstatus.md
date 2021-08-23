@@ -1,7 +1,7 @@
 ---
-description: El método MCSVC llama al método de estado para notificar al monitor que existe un evento de estado NPP. Este método debe ser implementado por el monitor.
+description: El método MCSVC llama al método OnStatus para notificar al monitor que existe un evento de estado NPP. El monitor debe implementar este método.
 ms.assetid: 771852b1-77d8-4d7d-b3fb-03eb3ea593b8
-title: 'IMonitor:: alstatus (método) (Netmon. h)'
+title: Método IMonitor::OnStatus (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Netmon.h
-ms.openlocfilehash: fc2716a10673cc1178591b14a335b1d8559aa35a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a82594400bebc8a529290e0e0e881603172aa45c111d2d4d83ebcbd5ebfbeb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119779045"
 ---
-# <a name="imonitoronstatus-method"></a>IMonitor:: alstatus (método)
+# <a name="imonitoronstatus-method"></a>IMonitor::OnStatus (método)
 
-El método MCSVC llama al método de **Estado** para notificar al monitor que existe un evento de estado NPP. Este método debe ser implementado por el monitor.
+El método MCSVC llama al **método OnStatus** para notificar al monitor que existe un evento de estado NPP. El monitor debe implementar este método.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,18 +39,18 @@ HRESULT OnStatus(
 
 <dl> <dt>
 
-*Evento* \[ de de\]
+*Evento* \[ En\]
 </dt> <dd>
 
-Una estructura de [ \_ eventos de actualización](update-event.md) .
+Una [estructura UPDATE \_ EVENT.](update-event.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK (que es igual que NoError) y MCSVC devuelve el valor devuelto a NPP para su procesamiento.
+Si el método es correcto, el valor devuelto es S OK (que es igual que NOERROR) y MCSVC devuelve el valor devuelto al NPP para su \_ procesamiento.
 
-Si el método no se realiza correctamente, devuelve un código de error. En caso de error, MCSVC devuelve el valor devuelto a NPP para su procesamiento.
+Si el método no es correcto, devuelva un código de error. En caso de error, MCSVC devuelve el valor devuelto al NPP para su procesamiento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,7 +60,7 @@ Si el método no se realiza correctamente, devuelve un código de error. En caso
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

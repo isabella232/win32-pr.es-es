@@ -1,7 +1,7 @@
 ---
-description: Busque el índice que indica dónde se encuentra un vértice determinado en la lista de vértices influida de un hueso determinado.
+description: Busque el índice que indica dónde se encuentra un vértice determinado en la lista de vértices influenciados de un ángulo determinado.
 ms.assetid: vs|directx_sdk|~\id3dx10skininfo_findboneinfluenceindex.htm
-title: 'ID3DX10SkinInfo:: FindBoneInfluenceIndex (método) (D3DX10. h)'
+title: Método ID3DX10SkinInfo::FindIonalInfluenceIndex (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 1468fed3c0cf999e7635ba0f5ae53cee72fe70c6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 85b68240a52ddf442d834a9acec919ea9c607f2dcbc43d2046a3d070aa9ddf84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280413"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634505"
 ---
-# <a name="id3dx10skininfofindboneinfluenceindex-method"></a>ID3DX10SkinInfo:: FindBoneInfluenceIndex (método)
+# <a name="id3dx10skininfofindboneinfluenceindex-method"></a>Método ID3DX10SkinInfo::FindIonalInfluenceIndex
 
-Busque el índice que indica dónde se encuentra un vértice determinado en la lista de vértices influida de un hueso determinado.
+Busque el índice que indica dónde se encuentra un vértice determinado en la lista de vértices influenciados de un ángulo determinado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,30 +42,30 @@ HRESULT FindBoneInfluenceIndex(
 
 <dl> <dt>
 
-*BoneIndex* \[ de\]
+*IndexIndex* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Índice que especifica un hueso existente. Debe estar comprendido entre 0 y el valor devuelto por [**ID3DX10SkinInfo:: GetNumBones**](id3dx10skininfo-getnumbones.md).
+Índice que especifica un fragmento existente. Debe estar entre 0 y el valor devuelto por [**ID3DX10SkinInfo::GetNumPxs**](id3dx10skininfo-getnumbones.md).
 
 </dd> <dt>
 
-*VertexIndex* \[ de\]
+*VertexIndex* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Índice del vértice en el búfer de vértices.
 
 </dd> <dt>
 
-*pInfluenceIndex* \[ de\]
+*pInfluenceIndex* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Índice del vértice en la lista de vértices influidos del hueso.
+Índice del vértice en la lista de vértices influenciados del ángulo.
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser: E \_ INVALIDARG.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser: E \_ INVALIDARG.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -93,7 +93,7 @@ Si el método se ejecuta correctamente, el valor devuelto es S \_ OK. Si se prod
 [ID3DX10SkinInfo](id3dx10skininfo.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

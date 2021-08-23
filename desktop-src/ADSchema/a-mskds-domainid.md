@@ -1,11 +1,11 @@
 ---
-title: atributo MS-KDS-DomainID
+title: Atributo ms-Kds-DomainID
 description: Nombre distintivo del controlador de dominio que generó esta clave raíz.
 ms.assetid: 9d0203bc-71df-4e06-822b-0817b1422195
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD del atributo MS-KDS-DomainID
-- msKds-DomainID atributo AD Schema
+- Esquema de AD del atributo ms-Kds-DomainID
+- Esquema de AD del atributo msKds-DomainID
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7440d41c9e4dabf95d6d716b6c68bfe7b66f1e18
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3474096701d2903fb2f1668faaf896a5f584cb58683aea1c4b77bdeb0d8b13dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105659091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763005"
 ---
-# <a name="ms-kds-domainid-attribute"></a>atributo MS-KDS-DomainID
+# <a name="ms-kds-domainid-attribute"></a>Atributo ms-Kds-DomainID
 
 Nombre distintivo del controlador de dominio que generó esta clave raíz.
 
 
 
-| Entrada | Value |
+| Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | MS-KDS-DomainID                         |
-| Nombre para mostrar de LDAP | msKds-DomainID                          |
-| Tamaño              | \-                                      |
-| Actualizar privilegio  | \-                                      |
+| CN                | ms-Kds-DomainID                         |
+| Ldap-Display-Name | msKds-DomainID                          |
+| Size              | \-                                      |
+| Actualizar privilegios  | \-                                      |
 | Frecuencia de actualización  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2177                 |
-| System-ID-GUID    | 96400482-cf07-e94c-90e8-f2efc4f0495e    |
-| Sintaxis            | [**Object(DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 96400482-cf07-e94c-90e8-f2efc4f0495e    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -50,18 +50,18 @@ Nombre distintivo del controlador de dominio que generó esta clave raíz.
 
 | Entrada | Value |
 |------------------------|---------------------------------------------------------------|
-| Identificador de vínculo                | \-                                                            |
+| Id. de vínculo                | \-                                                            |
 | MAPI-Id                | \-                                                            |
-| System-Only            | False                                                         |
-| Tiene un único valor       | True                                                          |
-| Está indexado             | False                                                         |
-| En el catálogo global      | False                                                         |
-| Descriptor de NT-Security- | O:BAG: BAD: S:                                                  |
+| System-Only            | Falso                                                         |
+| Es de un solo valor       | Verdadero                                                          |
+| Está indexado             | Falso                                                         |
+| En el catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000280                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Clases usadas en        | [**MS-KDS-Prov-RootKey**](c-mskds-provrootkey.md)<br/> |
+| Clases usadas en        | [**ms-Kds-Prov-RootKey**](c-mskds-provrootkey.md)<br/> |
 
 
 

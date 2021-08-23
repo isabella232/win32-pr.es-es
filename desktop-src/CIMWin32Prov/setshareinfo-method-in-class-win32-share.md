@@ -1,8 +1,8 @@
 ---
-description: SetShareInfo&\# 8194; El método de clase WMI establece los parámetros de un recurso compartido.
+description: El archivo SetShareInfo&\# 8194; El método de clase WMI establece los parámetros de un recurso compartido.
 ms.assetid: f6379261-9325-4b7f-92df-438c5029569f
 ms.tgt_platform: multiple
-title: Método SetShareInfo de la clase Win32_Share
+title: Método SetShareInfo de la Win32_Share clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 54b599ed3124c0d06468bd15589d6aa8a93fb7c1
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fb9ee76a0b8336ccdca90a04ee3c2a223b7269a30a00276418d6c46a8bb3abc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119800905"
 ---
-# <a name="setshareinfo-method-of-the-win32_share-class"></a>Método SetShareInfo de la \_ clase de recursos compartidos de Win32
+# <a name="setshareinfo-method-of-the-win32_share-class"></a>Método SetShareInfo de la clase Win32 \_ Share
 
-El método de [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetShareInfo** establece los parámetros de un recurso compartido.
+El método de clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetShareInfo** establece los parámetros de un recurso compartido.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,26 +44,26 @@ uint32 SetShareInfo(
 
 <dl> <dt>
 
-*MaximumAllowed* \[ en, opcional\]
+*MaximumAllowed* \[ in, opcional\]
 </dt> <dd>
 
-Límite en el número máximo de usuarios a los que se les permite usar este recurso al mismo tiempo.
+Limite el número máximo de usuarios que pueden usar este recurso simultáneamente.
 
 Ejemplo: 10. Este parámetro es opcional.
 
 </dd> <dt>
 
-*Descripción* \[ de en, opcional\]
+*Descripción* \[ in, opcional\]
 </dt> <dd>
 
-Comentario opcional para describir el recurso que se está compartiendo.
+Comentario opcional para describir el recurso que se comparte.
 
 </dd> <dt>
 
-*Acceso a* \[ en, opcional\]
+*Acceso* \[ in, opcional\]
 </dt> <dd>
 
-Descriptor de seguridad para permisos de nivel de usuario. Un descriptor de seguridad contiene información sobre el permiso, el propietario y las capacidades de acceso del recurso. Para obtener más información, [**vea \_ SecurityDescriptor de Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor).
+Descriptor de seguridad para permisos de nivel de usuario. Un descriptor de seguridad contiene información sobre las funcionalidades de permiso, propietario y acceso del recurso. Para más información, consulte [**Seguridad de Win32Descriptor. \_**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
 
 </dd> </dl>
 
@@ -97,24 +97,24 @@ Devuelve uno de los valores enumerados en la lista siguiente o cualquier otro va
 **Ruta de acceso redirigida** (23)
 </dt> <dt>
 
-**Dispositivo o directorio desconocido** (24)
+**Dispositivo o directorio desconocidos** (24)
 </dt> <dt>
 
-**No se encontró el nombre de red** (25)
+**Nombre de red no encontrado** (25)
 </dt> <dt>
 
-**Otro** (26 4294967295)
+**Otros** (26 4294967295)
 </dt> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El método **SetShareInfo** es un método de objeto dinámico y se usa en una aparición de esta clase.
+**El método SetShareInfo** es un método de objeto dinámico y se usa en una aparición de esta clase.
 
-Solo los miembros del grupo local Administradores o operadores de cuenta, o los que tengan la pertenencia a un grupo de operador de servidor o de comunicación pueden ejecutar correctamente **SetShareInfo**. El operador Print solo puede establecer colas de impresora. El operador de comunicación solo puede establecer colas de dispositivos de comunicación.
+Solo los miembros del grupo local Administradores u Operadores de cuenta o aquellos con pertenencia a grupos de operadores de comunicación, impresión o servidor pueden ejecutar **correctamente SetShareInfo**. El operador de impresión solo puede establecer colas de impresora. El operador Communication solo puede establecer colas de dispositivos de comunicación.
 
 ## <a name="examples"></a>Ejemplos
 
-El siguiente ejemplo de PowerShell actualiza el nombre del recurso compartido **newShare** .
+El siguiente ejemplo de PowerShell actualiza el nombre del **recurso compartido newShare.**
 
 
 ```PowerShell
@@ -128,12 +128,12 @@ $newShare = Get-WmiObject win32_share | Where-Object {$_.name -eq "newShare"}
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -145,7 +145,7 @@ $newShare = Get-WmiObject win32_share | Where-Object {$_.name -eq "newShare"}
 [Clases de sistema operativo](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Recurso compartido de Win32**](win32-share.md)
+[**Recurso compartido de \_ Win32**](win32-share.md)
 </dt> </dl>
 
  

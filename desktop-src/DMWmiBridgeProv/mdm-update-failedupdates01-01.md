@@ -1,9 +1,9 @@
 ---
-title: MDM_Update_FailedUpdates01_01 (clase)
-description: La \_ clase de actualización \_ FailedUpdates01 01 de MDM \_ se utiliza para administrar las actualizaciones con errores.
+title: MDM_Update_FailedUpdates01_01 clase
+description: La clase Mdm \_ Update \_ FailedUpdates01 \_ 01 se usa para administrar las actualizaciones con errores.
 ms.assetid: 3bb7993b-b44b-44d1-84ee-dbdda0093ca0
 keywords:
-- MDM_Update_FailedUpdates01_01 (clase)
+- MDM_Update_FailedUpdates01_01 clase
 - MDM_Update_FailedUpdates01_01 clase, descrita
 topic_type:
 - apiref
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e0ba8d42d97b15cd195e87f536abad9610492e9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 646f485544e9a51711e55453d79f1a16d0a37d38c8d18d6ed4d2340e3c34fa30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104489166"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119795955"
 ---
-# <a name="mdm_update_failedupdates01_01-class"></a>\_ \_ Clase FailedUpdates01 01 de actualización \_ de MDM
+# <a name="mdm_update_failedupdates01_01-class"></a>Mdm \_ Update \_ FailedUpdates01 \_ 01 (clase)
 
-\[Algunos datos se relacionan con productos de versiones preliminares que pueden modificarse sustancialmente antes de su lanzamiento comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.\]
+\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
 
-La clase de **\_ actualización \_ FailedUpdates01 \_ 01 de MDM** se utiliza para administrar las actualizaciones con errores.
+La **clase Mdm Update \_ \_ FailedUpdates01 \_ 01** se usa para administrar las actualizaciones con errores.
 
 La siguiente sintaxis es código MOF simplificado e incluye todas las propiedades heredadas.
 
@@ -47,23 +47,23 @@ class MDM_Update_FailedUpdates01_01
 
 ## <a name="members"></a>Miembros
 
-La clase de **\_ actualización \_ FailedUpdates01 \_ 01 de MDM** tiene estos tipos de miembros:
+La **clase Mdm Update \_ \_ FailedUpdates01 \_ 01** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase de **\_ actualización \_ FailedUpdates01 \_ 01 de MDM** tiene estas propiedades.
+La **clase Mdm Update \_ \_ FailedUpdates01 \_ 01** tiene estas propiedades.
 
 <dl> <dt>
 
-[HResult](/windows/client-management/mdm/update-csp#failedupdates-failed-update-guid-hresult)
+[Hresult](/windows/client-management/mdm/update-csp#failedupdates-failed-update-guid-hresult)
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> <dt>
@@ -77,7 +77,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica el nombre del nodo primario. Para esta clase, la cadena es el GUID de la actualización con errores.
@@ -93,20 +93,20 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/Update/FailedUpdates".
+Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/Update/FailedUpdates"
 
 </dd> <dt>
 
-[**State**](/windows/client-management/mdm/update-csp)
+[**Estado**](/windows/client-management/mdm/update-csp)
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **sint32**
 </dt> <dt>
 
-Tipo de acceso: lectura/escritura
+Tipo de acceso: lectura y escritura
 </dt> </dl>
 
 </dd> </dl>
@@ -115,13 +115,13 @@ Tipo de acceso: lectura/escritura
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10 \[\]<br/>                                                          |
+| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                            |
-| Espacio de nombres<br/>                | Dmmap de MDM raíz de \\ cimv2 \\ \\<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |
-| Archivo DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllMOF</dt> </dl> |
+| Espacio de nombres<br/>                | Root \\ cimv2 \\ mdm \\ dmmap<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl>      |
+| Archivo DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

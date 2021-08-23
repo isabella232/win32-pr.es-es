@@ -1,7 +1,7 @@
 ---
 description: El método RemoveHeadI quita el primer elemento de la lista.
 ms.assetid: 7e448e32-ea31-4015-9219-1f990bf8763d
-title: Método CBaseList. RemoveHeadI (Wxlist. h)
+title: Método CBaseList.RemoveHeadI (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2d9b99dbac1d99587145aa2eba293ffa7ace959c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fc4d9e039735888d6694422a1802b73b3781316210fd42e13eec9bac5094d322
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119814315"
 ---
-# <a name="cbaselistremoveheadi-method"></a>CBaseList. RemoveHeadI, método
+# <a name="cbaselistremoveheadi-method"></a>Método CBaseList.RemoveHeadI
 
 El `RemoveHeadI` método quita el primer elemento de la lista.
 
@@ -42,9 +42,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un puntero al elemento, o **null** si la lista está vacía.
+Devuelve un puntero al elemento o **NULL** si la lista está vacía.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Este método elimina el nodo de lista, pero no el elemento que contiene el nodo.
 
@@ -54,8 +54,8 @@ Este método elimina el nodo de lista, pero no el elemento que contiene el nodo.
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wxlist. h (incluir streams. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wxlist.h (incluir Secuencias.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Este método elimina el nodo de lista, pero no el elemento que contiene el nodo.
 
 <dl> <dt>
 
-[**Clase CBaseList**](cbaselist.md)
+[**CBaseList (clase)**](cbaselist.md)
 </dt> </dl>
 
  

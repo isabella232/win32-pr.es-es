@@ -1,15 +1,15 @@
 ---
 description: Ajusta las características de color de una secuencia de vídeo.
 ms.assetid: 738c1f0c-8417-4b12-a7f1-9bbf3c7e9dd3
-title: Transformación de control de color DSP (Wmcodecdsp. h)
+title: DSP de transformación de control de color (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b94c8314bfd2be85a3bbc392bfa0e83767ff0b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c51321a8ffd725306f570619b9bcbe70fe7160e784358ce265157145b40347e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119606215"
 ---
 # <a name="color-control-transform-dsp"></a>DSP de transformación de control de color
 
@@ -38,24 +38,24 @@ CLSID \_ CColorControlDmo
 
 ## <a name="properties"></a>Propiedades
 
--   [\_brillo del color de MFPKEY \_](mfpkey-color-brightness.md)
--   [\_contraste de color de MFPKEY \_](mfpkey-color-contrast.md)
--   [\_matiz de color MFPKEY \_](mfpkey-color-hue.md)
--   [\_saturación de color de MFPKEY \_](mfpkey-color-saturation.md)
+-   [BRILLO DE COLOR DE MFPKEY \_ \_](mfpkey-color-brightness.md)
+-   [CONTRASTE DE COLOR MFPKEY \_ \_](mfpkey-color-contrast.md)
+-   [MATIZ DE COLOR MFPKEY \_ \_](mfpkey-color-hue.md)
+-   [SATURACIÓN DE COLOR MFPKEY \_ \_](mfpkey-color-saturation.md)
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Este DSP modifica el contenido de la secuencia de vídeo. Para la reproducción, es posible que pueda conseguir efectos similares de forma más eficaz mediante la interfaz **IMFVideoProcessor** , que controla el procesamiento de vídeo en la tarjeta gráfica.
+Este DSP modifica el contenido de la secuencia de vídeo. Para la reproducción, es posible que pueda lograr efectos similares de forma más eficaz mediante el uso de la interfaz **IMFVideoProcessor,** que controla el procesamiento de vídeo en la tarjeta gráfica.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                          |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
+| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Mfvdsp.dll</dt> </dl>   |
 
 

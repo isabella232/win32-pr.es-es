@@ -1,30 +1,30 @@
 ---
-title: Depurar (servicios Web de Windows)
-description: Un conjunto de funciones solo está disponible en la compilación de depuración y está pensada para probar y depurar.
+title: Depuración (Windows Web Services)
+description: Un conjunto de funciones solo está disponible en la compilación DEBUG y está diseñado para pruebas y depuraciones.
 ms.assetid: 23c01420-3f51-4c3f-9ee1-2614de3a278f
 keywords:
 - Depuración de servicios web para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7cad0abe916e068408cfda48184aa86e40029203
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 135f81ec45028df098679c91d750915005bfc64b3ff7d072b0494badc98159fe
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105714517"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119838685"
 ---
-# <a name="debugging-windows-web-services"></a>Depurar (servicios Web de Windows)
+# <a name="debugging-windows-web-services"></a>Depuración (Windows Web Services)
 
-Un conjunto de funciones solo está disponible en la compilación de depuración y está pensada para probar y depurar.
+Un conjunto de funciones solo está disponible en la compilación DEBUG y está diseñado para pruebas y depuraciones.
 
 
-Solo hay una serie de funciones y variables de entorno disponibles en el modo de depuración. Se pueden usar para ayudar con las pruebas y la depuración.
+Hay una serie de funciones y variables de entorno disponibles solo en el modo DEBUG. Se pueden usar para ayudar con las pruebas y la depuración.
 
--   Si se establece WsTimeout = 0, todos los tiempos de espera serán INFINITOs. Esto resulta útil cuando se recorre el depurador durante las operaciones que dependen del tiempo.
+-   Si se establece WsTimeout=0, todos los tiempos de espera serán INFINITOs. Esto resulta útil al realizar una ejecución paso a paso por el depurador durante las operaciones sensibles al tiempo.
 -   Establecer WsFailCount tiene el mismo efecto que llamar a WsSetAutoFail.
--   WsFlags permite establecer varias marcas que modifican el comportamiento de tiempo de ejecución. La sintaxis es WsFlags = a, b, c. Los marcadores admitidos son ModifyTimestamp, ModifyInclusivePrefixes, ModifyTimestampDigest, ModifyToHeaderDigest y ModifySignatureValue.
+-   WsFlags permite establecer varias marcas que modifican el comportamiento en tiempo de ejecución. La sintaxis es WsFlags=a,b,c. Las marcas admitidas son ModifyTimestamp, ModifyInclusivePrefixes, ModifyTimestampDigest, ModifyToHeaderDigest y ModifySignatureValue.
 
 Las siguientes funciones se usan con la depuración:
 

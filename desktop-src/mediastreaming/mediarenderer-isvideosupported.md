@@ -1,11 +1,11 @@
 ---
-title: Propiedad MediaRenderer. IsVideoSupported
-description: Obtiene un valor que indica si el DMR es capaz de reproducir contenido de vídeo.
+title: Propiedad MediaRenderer.IsVideoSupported
+description: Obtiene un valor que indica si la DMR es capaz de reproducir contenido de vídeo.
 ms.assetid: 09fee4e2-7ea4-45b6-944c-39bed030866d
 keywords:
-- Propiedad IsVideoSupported API de streaming de multimedia
-- Propiedad IsVideoSupported API de streaming de multimedia, interfaz MediaRenderer
-- Interfaz MediaRenderer API de streaming de multimedia, propiedad IsVideoSupported
+- Propiedad IsVideoSupported de Media Streaming API
+- IsVideoSupported, propiedad Media Streaming API, interfaz de MediaRenderer
+- MediaRenderer interface Media Streaming API , Propiedad IsVideoSupported
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 150ebe5c2514760cbdbda2c751a191c61a7f6641
-ms.sourcegitcommit: 4f5016b1fbfd703dbf769c508db464c2518c0fa5
+ms.openlocfilehash: 0f08387534d512cc684a2dbceddac7da0b38e5454978c271183906b8a4f6d637
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "104419751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712695"
 ---
-# <a name="mediarendererisvideosupported-property"></a>Propiedad MediaRenderer. IsVideoSupported
+# <a name="mediarendererisvideosupported-property"></a>Propiedad MediaRenderer.IsVideoSupported
 
-Obtiene un valor que indica si el DMR es capaz de reproducir contenido de vídeo.
+Obtiene un valor que indica si la DMR es capaz de reproducir contenido de vídeo.
 
 Esta propiedad es de solo lectura.
 
@@ -33,7 +33,7 @@ Esta propiedad es de solo lectura.
 
 ```C++
 HRESULT get_IsVideoSupported(
-  [out] boolean *value
+  [out] boolean *value
 );
 ```
 
@@ -41,7 +41,7 @@ HRESULT get_IsVideoSupported(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Valor booleano que es **true** si el DMR es capaz de reproducir contenido de vídeo y **false** en caso contrario.
+Valor booleano que es **True si** la DMR es capaz de reproducir contenido de vídeo y **False** si no lo es.
 
 ## <a name="see-also"></a>Vea también
 
@@ -50,9 +50,9 @@ Valor booleano que es **true** si el DMR es capaz de reproducir contenido de ví
 [**MediaRenderer**](mediarenderer.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

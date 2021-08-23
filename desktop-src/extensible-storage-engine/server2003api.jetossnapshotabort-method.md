@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: Server2003Api. JetOSSnapshotAbort (método)'
-title: Método Server2003Api. JetOSSnapshotAbort (Microsoft. ISAM. esent. Interop. Server2003)
+description: Más información sobre el método Server2003Api.JetOSSnapshotAbort
+title: Método Server2003Api.JetOSSnapshotAbort (Microsoft.Isam.Esent.Interop.Server2003)
 TOCTitle: 'JetOSSnapshotAbort method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Server2003.Server2003Api.JetOSSnapshotAbort(Microsoft.Isam.Esent.Interop.JET_OSSNAPID,Microsoft.Isam.Esent.Interop.Server2003.SnapshotAbortGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.server2003.server2003api.jetossnapshotabort(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 44ee61a7c6cff7fe90a77fdaced786532457c132
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ca7633ce07468c7c516988e7e048b6c9673bc3ed685bbee35a4f5f094a59db3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119780225"
 ---
-# <a name="server2003apijetossnapshotabort-method"></a>Server2003Api. JetOSSnapshotAbort, método
+# <a name="server2003apijetossnapshotabort-method"></a>Método Server2003Api.JetOSSnapshotAbort
 
-Notifica al motor de que puede reanudar las operaciones de e/s normales después de que finalice un período de inmovilización con una instantánea con errores.
+Notifica al motor que puede reanudar las operaciones de E/S normales una vez finalizado un período de inmovilización con una instantánea con error.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,14 +62,14 @@ public static void JetOSSnapshotAbort(
 #### <a name="parameters"></a>Parámetros
 
   - snapid  
-    Tipo: [Microsoft.ISAM.esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_OSSNAPID](./jet-ossnapid-structure.md)  
     
     Identificador de la sesión de instantánea.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. esent. Interop. Server2003. SnapshotAbortGrbit](./snapshotabortgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Server2003.SnapshotAbortGrbit](./snapshotabortgrbit-enumeration.md)  
     
     Opciones para esta llamada.
 
@@ -79,6 +79,6 @@ public static void JetOSSnapshotAbort(
 
 [Clase Server2003Api](./server2003api-class.md)
 
-[Miembros de Server2003Api](./server2003api-members.md)
+[Miembros Server2003Api](./server2003api-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Server2003](./microsoft.isam.esent.interop.server2003-namespace.md)

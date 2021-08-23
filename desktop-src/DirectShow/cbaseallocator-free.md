@@ -1,7 +1,7 @@
 ---
-description: El método Free libera toda la memoria del búfer. Se llama a este método cuando el filtro propietario anula la confirmación del asignador después de que se libere el último ejemplo multimedia.
+description: El método Free libera toda la memoria del búfer. Se llama a este método cuando el filtro propietario desasigna el asignador, después de que se libera el último ejemplo multimedia.
 ms.assetid: dd1e6c4d-762a-4caf-902b-015c6c9fdb4d
-title: Método CBaseAllocator. Free (Amfilter. h)
+title: Método CBaseAllocator.Free (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3534eac01a6769e090c8c808f16cc6ad5c6b84c1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e77555094625bfc6a31a0527fc3223a124b012e72c28ea76e5774de289d63391
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119794215"
 ---
-# <a name="cbaseallocatorfree-method"></a>Método CBaseAllocator. Free
+# <a name="cbaseallocatorfree-method"></a>CBaseAllocator.Free (método)
 
-El `Free` método libera toda la memoria del búfer. Se llama a este método cuando el filtro propietario anula la confirmación del asignador después de que se libere el último ejemplo multimedia.
+El `Free` método libera toda la memoria del búfer. Se llama a este método cuando el filtro propietario desasigna el asignador, después de que se libera el último ejemplo multimedia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Después de llamar al método de [**anulación de confirmación**](cbaseallocator-decommit.md) , el asignador llama a este método cuando libera el último ejemplo multimedia. La clase derivada debe implementar este método.
+Después de [**llamar al método Decommit,**](cbaseallocator-decommit.md) el asignador llama a este método cuando libera el último ejemplo multimedia. La clase derivada debe implementar este método.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Después de llamar al método de [**anulación de confirmación**](cbaseallocato
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Amfilter. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Amfilter.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Después de llamar al método de [**anulación de confirmación**](cbaseallocato
 
 <dl> <dt>
 
-[**Clase CBaseAllocator**](cbaseallocator.md)
+[**CBaseAllocator (clase)**](cbaseallocator.md)
 </dt> </dl>
 
  

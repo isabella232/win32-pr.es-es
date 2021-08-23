@@ -1,8 +1,8 @@
 ---
-description: El método estático de la clase WMI SetNumForwardPackets se usa para establecer el número de encabezados de paquetes IP asignados a la cola de paquetes del enrutador. Cuando todos los encabezados están en uso, el enrutador comenzará a descartar los paquetes de la cola de forma aleatoria.
+description: El método estático de la clase WMI SetNumForwardPackets se usa para establecer el número de encabezados de paquetes IP asignados para la cola de paquetes del enrutador. Cuando todos los encabezados están en uso, el enrutador empezará a descartar paquetes de la cola de forma aleatoria.
 ms.assetid: cadc7565-4cad-4e0f-a1eb-bf99d333bb28
 ms.tgt_platform: multiple
-title: Método SetNumForwardPackets de la clase Win32_NetworkAdapterConfiguration
+title: Método SetNumForwardPackets de la Win32_NetworkAdapterConfiguration clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: f46ecd62766b5df642dff1e52614171a513a8fca
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1962746cffb64733d6935bb4ef655a96cce051cc67fb1a4f2e730e4ff5ce0d7e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103807574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119759755"
 ---
-# <a name="setnumforwardpackets-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetNumForwardPackets de la \_ clase NetworkAdapterConfiguration de Win32
+# <a name="setnumforwardpackets-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetNumForwardPackets de la clase \_ NetworkAdapterConfiguration de Win32
 
-El método estático de la [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetNumForwardPackets** se usa para establecer el número de encabezados de paquetes IP asignados a la cola de paquetes del enrutador. Cuando todos los encabezados están en uso, el enrutador comenzará a descartar los paquetes de la cola de forma aleatoria.
+El método estático de la clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetNumForwardPackets** se usa para establecer el número de encabezados de paquetes IP asignados para la cola de paquetes del enrutador. Cuando todos los encabezados están en uso, el enrutador empezará a descartar paquetes de la cola de forma aleatoria.
 
-En este tema se usa la sintaxis de Managed Object Format (MOF). Para obtener más información sobre el uso de este método, consulte [llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se usa Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,34 +42,34 @@ uint32 SetNumForwardPackets(
 
 <dl> <dt>
 
-*NumForwardPackets* \[ de\]
+*NumForwardPackets* \[ En\]
 </dt> <dd>
 
-Número de encabezados de paquetes IP asignados a la cola de paquetes de enrutadores. Debe ser al menos tan grande como el valor de la propiedad [**ForwardBufferMemory**](win32-networkadapterconfiguration.md) dividido entre el tamaño de datos IP máximo de las redes conectadas al enrutador. No debe ser mayor que el valor de **ForwardBufferMemory** dividido por 256, ya que cada paquete necesita al menos 256 bytes de memoria de búfer de reenvío. El número óptimo de paquetes reenviados para un tamaño de **ForwardBufferMemory** determinado depende del tipo de tráfico que se lleva a cabo en la red y estará en alguna parte entre estos dos valores. Si el enrutador está deshabilitado, este parámetro se omite y no se asigna ningún encabezado. Intervalo válido: 1-0xFFFFFFFE.
+Número de encabezados de paquetes IP asignados para la cola de paquetes del enrutador. Debe ser al menos tan grande como el valor de la propiedad [**ForwardBufferMemory**](win32-networkadapterconfiguration.md) dividido por el tamaño máximo de datos IP de las redes conectadas al enrutador. No debe ser mayor que el valor **ForwardBufferMemory** dividido entre 256, ya que cada paquete requiere al menos 256 bytes de memoria de búfer de reenvío. El número óptimo de paquetes de reenvío para un tamaño **ForwardBufferMemory** determinado depende del tipo de tráfico que se lleva a cabo en la red y estará en algún lugar entre estos dos valores. Si el enrutador está deshabilitado, este parámetro se omite y no se asignan encabezados. Intervalo válido: 1 - 0xFFFFFFFE.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requiere reinicio, 1 (uno) para una finalización correcta cuando se requiere un reinicio, y un número diferente si se produce un error. Para obtener más información sobre los códigos de error, vea [**constantes error de WMI**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores de **HRESULT** generales, vea [códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
+Devuelve un valor de 0 (cero) para una finalización correcta cuando no se requiere ningún reinicio, 1 (uno) para una finalización correcta cuando se requiere un reinicio y un número diferente si se produce un error. Para obtener más información sobre los códigos de error, vea [**Wmi Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) o [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obtener valores **HRESULT** generales, vea [Códigos de error del sistema](/windows/desktop/Debug/system-error-codes).
 
 <dl> <dt>
 
-**Finalización correcta, no se requiere ningún reinicio**
+**Finalización correcta, no se requiere reinicio**
 </dt> <dd>
 
 0
 
-Finalización correcta, no es necesario reiniciar.
+Finalización correcta, no se requiere reinicio.
 
 </dd> <dt>
 
-**Finalización correcta, se requiere un reinicio**
+**Finalización correcta, reinicio necesario**
 </dt> <dd>
 
 1
 
-Finalización correcta, se requiere un reinicio.
+Finalización correcta, reinicio necesario.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Finalización correcta, se requiere un reinicio.
 
 64
 
-El método no se admite en esta plataforma.
+Método no admitido en esta plataforma.
 
 </dd> <dt>
 
@@ -100,12 +100,12 @@ Máscara de subred no válida.
 
 </dd> <dt>
 
-**Se produjo un error al procesar una instancia devuelta**
+**Error al procesar una instancia que se devolvió**
 </dt> <dd>
 
 67
 
-Se produjo un error al procesar una instancia devuelta.
+Error al procesar una instancia que se devolvió.
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Parámetro de entrada no válido.
 
 </dd> <dt>
 
-**Se especificaron más de 5 puertas de enlace**
+**Más de 5 puertas de enlace especificadas**
 </dt> <dd>
 
 69
@@ -145,12 +145,12 @@ Dirección IP de puerta de enlace no válida.
 
 </dd> <dt>
 
-**Se produjo un error al obtener acceso al registro para obtener la información solicitada.**
+**Error al acceder al Registro para obtener la información solicitada**
 </dt> <dd>
 
 72
 
-Error al obtener acceso al registro para obtener la información solicitada.
+Error al acceder al Registro para obtener la información solicitada.
 
 </dd> <dt>
 
@@ -172,12 +172,12 @@ Nombre de host no válido.
 
 </dd> <dt>
 
-**No hay definido ningún servidor WINS principal/secundario**
+**No se ha definido ningún servidor WINS principal o secundario**
 </dt> <dd>
 
 75
 
-No hay definido ningún servidor WINS principal ni secundario.
+No se ha definido ningún servidor WINS principal o secundario.
 
 </dd> <dt>
 
@@ -199,12 +199,12 @@ Ruta de acceso del sistema no válida.
 
 </dd> <dt>
 
-**No se pudo copiar el archivo**
+**Error de copia de archivos**
 </dt> <dd>
 
 78
 
-No se pudo copiar el archivo.
+Error de copia de archivos.
 
 </dd> <dt>
 
@@ -235,16 +235,16 @@ No se puede configurar el servicio DHCP.
 
 </dd> <dt>
 
-**No se puede renovar la concesión DHCP**
+**No se puede renovar la concesión dhcp**
 </dt> <dd>
 
 82
 
-No se puede renovar la concesión DHCP.
+No se puede renovar la concesión dhcp.
 
 </dd> <dt>
 
-**No se puede liberar la concesión DHCP**
+**No se puede liberar la concesión dhcp**
 </dt> <dd>
 
 83
@@ -258,7 +258,7 @@ No se puede liberar la concesión DHCP.
 
 84
 
-IP no habilitada en el adaptador.
+Ip no habilitada en el adaptador.
 
 </dd> <dt>
 
@@ -267,20 +267,20 @@ IP no habilitada en el adaptador.
 
 85
 
-IPX no está habilitado en el adaptador.
+IPX no habilitado en el adaptador.
 
 </dd> <dt>
 
-**Error de límite de número de trama/red**
+**Error de límites de número de marco/red**
 </dt> <dd>
 
 86
 
-Error de límite de número de trama o de red.
+Error de límites de número de red o marco.
 
 </dd> <dt>
 
-**Tipo de marco no válido**
+**Tipo de fotograma no válido**
 </dt> <dd>
 
 87
@@ -307,7 +307,7 @@ Número de red duplicado.
 
 </dd> <dt>
 
-**Parámetro fuera de los límites**
+**Parámetro fuera de límites**
 </dt> <dd>
 
 90
@@ -321,11 +321,11 @@ Parámetro fuera de los límites.
 
 91
 
-Acceso denegado.
+Acceso denegado:
 
 </dd> <dt>
 
-**Memoria agotada**
+**No hay memoria suficiente**
 </dt> <dd>
 
 92
@@ -348,7 +348,7 @@ Ya existe.
 
 94
 
-No se encuentra la ruta de acceso, el archivo o el objeto.
+Ruta de acceso, archivo u objeto no encontrado.
 
 </dd> <dt>
 
@@ -379,21 +379,21 @@ Interfaz no configurable.
 
 </dd> <dt>
 
-**No se pudieron liberar o renovar todas las concesiones DHCP**
+**No todas las concesiones DHCP se pueden liberar o renovar**
 </dt> <dd>
 
 98
 
-No todas las concesiones DHCP se pueden liberar o renovar.
+No todas las concesiones DHCP se podrían liberar o renovar.
 
 </dd> <dt>
 
-**DHCP no está habilitado en el adaptador**
+**DHCP no habilitado en el adaptador**
 </dt> <dd>
 
 100
 
-DHCP no está habilitado en el adaptador.
+DHCP no habilitado en el adaptador.
 
 </dd> <dt>
 
@@ -406,18 +406,18 @@ DHCP no está habilitado en el adaptador.
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo [modificar el número de paquetes reenviados permitidos](https://Gallery.TechNet.Microsoft.Com/4123c28e-25c4-444e-818b-67bdbcc0cd4c) de VBScript configura el número de paquetes de reenvío asignados a la cola de paquetes del enrutador.
+El [ejemplo modificar el número de paquetes](https://Gallery.TechNet.Microsoft.Com/4123c28e-25c4-444e-818b-67bdbcc0cd4c) de reenvío permitidos de VBScript configura el número de paquetes de reenvío asignados a la cola de paquetes de enrutador.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Value |
+| Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -426,16 +426,16 @@ El ejemplo [modificar el número de paquetes reenviados permitidos](https://Gall
 
 <dl> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
+[**NetworkAdapterConfiguration de Win32 \_**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tareas de WMI: redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tareas WMI: Redes](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tareas de WMI: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tareas wmi: cuentas y dominios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Compatibilidad con IPv6 e IPv4 en WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

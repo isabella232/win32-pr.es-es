@@ -1,23 +1,23 @@
 ---
-description: En la tabla AdminExecuteSequence se enumeran las acciones que ejecuta el instalador cuando llama a la acción de administrador de nivel superior. Vea Grupo de tablas de procedimientos de instalación, uso de una tabla de secuencia y el ejemplo detallado de la tabla de secuencia.
+description: En la tabla AdminExecuteSequence se enumeran las acciones que el instalador ejecuta cuando llama a la acción admin de nivel superior. Vea Grupo de tablas de procedimientos de instalación, Uso de una tabla de secuencia y Ejemplo detallado de tabla de secuencia.
 ms.assetid: 8b1da4a3-0b82-4b71-8a32-59e90025cbfa
 title: Importación de AdminExecuteSequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 60e5cfef89ada780d9ce647f45667fdc34cc5b01
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8de646049fed05f881b61c4b635af3bc9d2caed09512a1ec89853066b0ba99c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103810736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787385"
 ---
 # <a name="importing-the-adminexecutesequence"></a>Importación de AdminExecuteSequence
 
-En la [tabla AdminExecuteSequence](adminexecutesequence-table.md) se enumeran las acciones que ejecuta el instalador cuando llama a la [acción de administrador](admin-action.md)de nivel superior. Vea [grupo de tablas de procedimientos de instalación](installation-procedure-tables-group.md), [uso de una tabla de secuencia](using-a-sequence-table.md)y el [ejemplo detallado](sequence-table-detailed-example.md)de la tabla de secuencia.
+En [la tabla AdminExecuteSequence](adminexecutesequence-table.md) se enumeran las acciones que el instalador ejecuta cuando llama a la acción [admin de nivel superior](admin-action.md). Vea [Grupo de tablas de procedimientos de](installation-procedure-tables-group.md)instalación , Uso de una tabla de [secuencia](using-a-sequence-table.md)y Ejemplo detallado de tabla [de secuencia.](sequence-table-detailed-example.md)
 
-Si en la sección [importar una base de datos en blanco](importing-a-blank-database.md) usada uisample.msi del SDK de Windows Installer, las tablas de secuencia de la copia de MNP2000.msi ya contienen las secuencias de acción sugeridas que se describen en [uso de una tabla de secuencia](using-a-sequence-table.md). No es necesario realizar ningún cambio en estas secuencias para crear el paquete de instalación del ejemplo del Bloc de notas.
+Si en [](importing-a-blank-database.md) la sección Importación de una base de datos en blanco usó uisample.msi desde el SDK del instalador de Windows, las tablas de secuencia de la copia de MNP2000.msi ya contienen las secuencias de acciones sugeridas descritas en Uso de una tabla de [secuencia](using-a-sequence-table.md). No es necesario realizar ningún cambio en estas secuencias para crear el Bloc de notas de instalación de ejemplo.
 
-Utilice el editor de base de datos para abrir MNP2000.msi y escriba los datos siguientes en la tabla AdminExecuteSequence.
+Use el editor de bases de datos para MNP2000.msi y escriba los datos siguientes en la tabla AdminExecuteSequence.
 
 [Tabla AdminExecuteSequence](adminexecutesequence-table.md)
 

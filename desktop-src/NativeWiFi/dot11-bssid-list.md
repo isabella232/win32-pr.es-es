@@ -1,7 +1,7 @@
 ---
-description: Contiene una lista de identificadores básicos del conjunto de servicios (BSS).
+description: Contiene una lista de identificadores de conjunto de servicios básicos (BSS).
 ms.assetid: 22907f94-1ae8-4938-a816-b406656256c0
-title: DOT11_BSSID_LIST estructura (Windot11. h)
+title: DOT11_BSSID_LIST estructura (Windot11.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - windot11.h
-ms.openlocfilehash: 345053a8d39ea37bea2fa2350dcc426420aed422
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8abcd2e711d5598c59bb8d4b7aed0f291364f94d04ec17a5fc80de2fd32939eb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105687762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119801395"
 ---
-# <a name="dot11_bssid_list-structure"></a>\_Estructura de lista BSSID de DOT11 \_
+# <a name="dot11_bssid_list-structure"></a>Dot11 \_ BSSID \_ LIST (estructura)
 
-La estructura de **\_ \_ lista BSSID de DOT11** contiene una lista de identificadores básicos del conjunto de servicios (BSS).
+La **estructura DOT11 \_ BSSID \_ LIST** contiene una lista de identificadores de conjunto de servicios básicos (BSS).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,14 +45,14 @@ typedef struct _DOT11_BSSID_LIST {
 **Header**
 </dt> <dd>
 
-Una estructura de [**\_ \_ encabezado de objeto NDIS**](ndis-object-header.md) que contiene la información de tipo, versión y tamaño de una estructura NDIS. En el caso de la mayoría de las estructuras de **\_ \_ listas BSSID de DOT11** , establezca el miembro de **tipo** en el **tipo de \_ objeto NDIS \_ \_ predeterminado**, establezca el miembro de **revisión** en la **revisión de \_ lista BSSID de DOT11 \_ \_ \_ 1** y establezca el miembro de **tamaño** en **sizeof (lista de BSSID de dot11 \_ \_ )**.
+Estructura [**OBJECT \_ HEADER \_ de NDIS**](ndis-object-header.md) que contiene la información de tipo, versión y tamaño de una estructura NDIS. Para la mayoría de las estructuras  **DOT11 \_ BSSID \_ LIST,** establezca  el miembro Type en **NDIS \_ OBJECT \_ TYPE \_ DEFAULT**, establezca el miembro Revision en **DOT11 \_ BSSID LIST REVISION \_ \_ \_ 1** y establezca el miembro **Size** en **sizeof(DOT11 \_ BSSID \_ LIST).**
 
 </dd> <dt>
 
 **uNumOfEntries**
 </dt> <dd>
 
-Número de entradas en esta estructura.
+Número de entradas de esta estructura.
 
 </dd> <dt>
 
@@ -63,10 +63,10 @@ Número total de entradas admitidas.
 
 </dd> <dt>
 
-**BSSIDs**
+**SSID**
 </dt> <dd>
 
-Una lista de identificadores de BSS. Un identificador de BSS se almacena como un tipo de [**\_ \_ dirección Mac de DOT11**](dot11-mac-address-type.md) .
+Lista de identificadores de BSS. Un identificador BSS se almacena como un tipo [**DE \_ DIRECCIÓN MAC \_ DOT11.**](dot11-mac-address-type.md)
 
 </dd> </dl>
 
@@ -76,10 +76,10 @@ Una lista de identificadores de BSS. Un identificador de BSS se almacena como un
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista, Windows XP con SP3 \[ solo aplicaciones de escritorio\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Vista, Windows XP solo con aplicaciones de escritorio sp3 \[\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                       |
 | Redistribuible<br/>          | API de LAN inalámbrica para Windows XP con SP2<br/>                                                        |
-| Encabezado<br/>                   | <dl> <dt>Windot11. h (incluye Windot11. h)</dt> </dl> |
+| Header<br/>                   | <dl> <dt>Windot11.h (incluye Windot11.h)</dt> </dl> |
 
 
 
@@ -87,7 +87,7 @@ Una lista de identificadores de BSS. Un identificador de BSS se almacena como un
 
 <dl> <dt>
 
-[**\_parámetros de conexión de WLAN \_**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_connection_parameters)
+[**PARÁMETROS DE \_ CONEXIÓN WLAN \_**](/windows/desktop/api/wlanapi/ns-wlanapi-wlan_connection_parameters)
 </dt> </dl>
 
  

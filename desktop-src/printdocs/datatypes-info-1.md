@@ -1,7 +1,7 @@
 ---
-description: La estructura de información de tipos de \_ \_ datos 1 contiene información sobre el tipo de datos utilizado para registrar un trabajo de impresión.
+description: La estructura DATATYPES \_ INFO \_ 1 contiene información sobre el tipo de datos utilizado para registrar un trabajo de impresión.
 ms.assetid: 6169006c-12d4-4608-865c-732f04107f9f
-title: Estructura de DATATYPES_INFO_1 (winspool. h)
+title: DATATYPES_INFO_1 estructura (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: e7259f6559220697538774fef8d2460318df84c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 05defe3d8cc6cd66b15b2cacdd3d3d1d56c348e4946a43700278f100ea17da5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104276787"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119719675"
 ---
-# <a name="datatypes_info_1-structure"></a>Estructura de información de tipos de \_ dato \_ 1
+# <a name="datatypes_info_1-structure"></a>Estructura DATATYPES \_ INFO \_ 1
 
-La estructura de información de tipos de datos **\_ \_ 1** contiene información sobre el tipo de datos utilizado para registrar un trabajo de impresión.
+La **estructura DATATYPES \_ INFO \_ 1** contiene información sobre el tipo de datos utilizado para registrar un trabajo de impresión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ typedef struct _DATATYPES_INFO_1 {
 **pName**
 </dt> <dd>
 
-Puntero a una cadena terminada en null que identifica el tipo de datos utilizado para registrar un trabajo de impresión.
+Puntero a una cadena terminada en NULL que identifica el tipo de datos utilizado para registrar un trabajo de impresión.
 
 </dd> </dl>
 
@@ -56,8 +56,8 @@ Puntero a una cadena terminada en null que identifica el tipo de datos utilizado
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
-| Encabezado<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
-| Nombres Unicode y ANSI<br/>   | **\_ Información de tipos de \_ dato \_ 1W** (Unicode) e **\_ información sobre tipos de \_ dato \_ 1A** (ANSI)<br/>                       |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Nombres Unicode y ANSI<br/>   | **\_ DATATYPES \_ INFO \_ 1W** (Unicode) y **\_ DATATYPES \_ INFO \_ 1A** (ANSI)<br/>                       |
 
 
 
@@ -68,7 +68,7 @@ Puntero a una cadena terminada en null que identifica el tipo de datos utilizado
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del administrador de trabajos de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de API de Spooler de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**EnumPrintProcessorDatatypes**](enumprintprocessordatatypes.md)

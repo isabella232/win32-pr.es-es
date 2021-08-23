@@ -1,7 +1,7 @@
 ---
 description: Carga los datos del filtro desde una secuencia determinada.
 ms.assetid: c2bfd379-2916-4698-bc41-653161723706
-title: Método CPersistStream. Load (pStream. h)
+title: Método CPersistStream.Load (Pstream.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 83b16c3fe7bf905d1ade6b7f38cf27c61b44e4d6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d65ff2d2ba95f66e6153aa78a9ce376ed144ac24ce8945c1fbc678e9f6894802
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119813355"
 ---
-# <a name="cpersiststreamload-method"></a>CPersistStream. Load (método)
+# <a name="cpersiststreamload-method"></a>Método CPersistStream.Load
 
 Carga los datos del filtro desde una secuencia determinada.
 
@@ -45,17 +45,17 @@ HRESULT Load(
 *pStm* 
 </dt> <dd>
 
-Puntero a la secuencia de la que se va a cargar.
+Puntero a la secuencia desde la que se va a cargar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve un valor **HRESULT** .
+Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Esta función miembro implementa el método **IPersistStream:: Load** .
+Esta función miembro implementa el **método IPersistStream::Load.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esta función miembro implementa el método **IPersistStream:: Load** .
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>PStream. h (incluir streams. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Pstream.h (incluir Secuencias.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Esta función miembro implementa el método **IPersistStream:: Load** .
 
 <dl> <dt>
 
-[**Clase CPersistStream**](cpersiststream.md)
+[**CPersistStream (clase)**](cpersiststream.md)
 </dt> </dl>
 
  

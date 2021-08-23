@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentLogCorruptDuringHardRecoveryException'
-title: Constructor de EsentLogCorruptDuringHardRecoveryException
+description: 'Más información sobre: Constructor EsentLogCorruptDuringHardRecoveryException'
+title: Constructor EsentLogCorruptDuringHardRecoveryException
 TOCTitle: 'EsentLogCorruptDuringHardRecoveryException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentLogCorruptDuringHardRecoveryException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentlogcorruptduringhardrecoveryexception.esentlogcorruptduringhardrecoveryexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 14ec7c4a7f86f3c4dcc9229b3cf2d476f9c28363
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9628ce9181395fc4b32c4aeac6fc78a26c7e88ff876b4fbc4f41aef028c1ebeb
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119723305"
 ---
-# <a name="esentlogcorruptduringhardrecoveryexception-constructor"></a>Constructor de EsentLogCorruptDuringHardRecoveryException
+# <a name="esentlogcorruptduringhardrecoveryexception-constructor"></a>Constructor EsentLogCorruptDuringHardRecoveryException
 
 Inicializa una nueva instancia de la clase EsentLogCorruptDuringHardRecoveryException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Dim instance As New EsentLogCorruptDuringHardRecoveryException()
 public EsentLogCorruptDuringHardRecoveryException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
@@ -60,4 +60,4 @@ public EsentLogCorruptDuringHardRecoveryException()
 
 [Miembros de EsentLogCorruptDuringHardRecoveryException](./esentlogcorruptduringhardrecoveryexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

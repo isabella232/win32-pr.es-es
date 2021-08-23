@@ -1,9 +1,9 @@
 ---
-title: función glGetMapfv (GL. h)
-description: Las funciones glGetMapdv, glGetMapfv y glGetMapiv devuelven parámetros de evaluador. | función glGetMapfv (GL. h)
+title: Función glGetMapfv (Gl.h)
+description: Las funciones glGetMapdv, glGetMapfv y glGetMapiv devuelven parámetros del evaluador. | Función glGetMapfv (Gl.h)
 ms.assetid: dc93e468-7b76-4b5d-a46c-63920ed05568
 keywords:
-- glGetMapfv (función) OpenGL
+- Función glGetMapfv OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 02129e9637333fb36265ce9f7b631d6cb3377d0f
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b1bedb1b5ff07b7331eb740c46392e80ad324c6cef7f843978d9a5a41edf8da1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105689750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119741595"
 ---
-# <a name="glgetmapfv-function"></a>glGetMapfv función)
+# <a name="glgetmapfv-function"></a>Función glGetMapfv
 
-Las funciones [**glGetMapdv**](glgetmapdv.md), **glGetMapfv** y [**glGetMapiv**](glgetmapiv.md) devuelven parámetros de evaluador.
+Las [**funciones glGetMapdv**](glgetmapdv.md), **glGetMapfv y** [**glGetMapiv**](glgetmapiv.md) devuelven parámetros del evaluador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,22 +45,22 @@ void WINAPI glGetMapfv(
 *Destino* 
 </dt> <dd>
 
-Nombre simbólico de un mapa. A continuación se indican los valores aceptados: GL \_ MAP1 \_ color \_ 4, GL \_ MAP1 \_ index, GL \_ MAP1 \_ normal, GL \_ MAP1 \_ Texture \_ coordenadas \_ 1, GL \_ MAP1 \_ Texture \_ coordenadas \_ 2, GL \_ MAP1 \_ Texture \_ coordenadas \_ 3, GL \_ MAP1 \_ Texture \_ \_ 4, GL \_ MAP1 \_ Vertex \_ 3, GL \_ MAP1 \_ Vertex \_ 4, GL \_ MAP2 ( \_ color \_ 4, GL \_ MAP2 ( \_ index, GL \_ MAP2 ( \_ normal, GL \_ MAP2 ( \_ Texture \_ coordenadas \_ 1, GL MAP2 (Texture 3, GL MAP2 ( \_ \_ \_ \_ \_ \_ Texture \_ \_ 4, GL \_ MAP2 ( \_ Texture \_ \_ 4, GL \_ MAP2 (Texture \_ \_ y \_ \_ \_ GL MAP2 (.
+Nombre simbólico de un mapa. Los siguientes son valores aceptados: GL \_ MAP1 \_ COLOR \_ 4, GL \_ MAP1 \_ INDEX, GL \_ MAP1 \_ NORMAL, GL \_ MAP1 \_ TEXTURE \_ COORD \_ 1, GL \_ MAP1 TEXTURE \_ \_ COORD \_ 2, GL MAP1 TEXTURE \_ \_ \_ COORD \_ 3, GL \_ MAP1 TEXTURE \_ \_ COORD \_ 4, GL \_ MAP1 VERTEX \_ \_ 3, GL \_ MAP1 VERTEX \_ \_ 4, \_ GL \_ MAP2 COLOR \_ 4, GL \_ MAP2 \_ INDEX, GL \_ MAP2 \_ NORMAL, GL \_ MAP2 TEXTURE \_ \_ COORD \_ 1, GL \_ MAP2 TEXTURE \_ \_ COORD \_ 2, GL \_ MAP2 TEXTURE \_ \_ COORD \_ 3, GL \_ MAP2 TEXTURE \_ \_ COORD \_ 4, GL \_ MAP2 VERTEX 3 Y GL \_ \_ \_ MAP2 VERTEX \_ \_ 4.
 
 </dd> <dt>
 
 *consulta* 
 </dt> <dd>
 
-Especifica el parámetro que se va a devolver. Se aceptan los siguientes nombres simbólicos.
+Especifica qué parámetro se va a devolver. Se aceptan los siguientes nombres simbólicos.
 
 
 
 | Value                                                                                                                                             | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |---------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GL_COEFF"></span><span id="gl_coeff"></span><dl> <dt>**GL \_ COEFF**</dt> </dl>    | El parámetro *v* devuelve los puntos de control de la función Evaluator. Los evaluadores unidimensionales devuelven puntos de control de *orden* y los evaluadores bidimensionales devuelven puntos de control *uorder* *x* *Vorder* . Cada punto de control se compone de uno, dos, tres o cuatro valores de punto flotante de precisión simple o de punto flotante de precisión sencilla, dependiendo del tipo de evaluador. Los puntos de control bidimensionales se devuelven en orden principal de fila, incrementando rápidamente el índice de *uorder* y el índice de *Vorder* después de cada fila. Los valores enteros, cuando se solicitan, se calculan Redondeando los valores de punto flotante internos a los valores enteros más cercanos.<br/> |
-| <span id="GL_ORDER"></span><span id="gl_order"></span><dl> <dt>**orden de contabilidad \_**</dt> </dl>    | El parámetro *v* devuelve el orden de la función evaluadora. Los evaluadores unidimensionales devuelven un único valor, *Order*. Los evaluadores bidimensionales devuelven dos valores, *uorder* y *Vorder*.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| <span id="GL_DOMAIN"></span><span id="gl_domain"></span><dl> <dt>**dominio de contabilidad general \_**</dt> </dl> | El parámetro *v* devuelve los parámetros de asignación lineal de *u* y *v* . Los evaluadores unidimensionales devuelven dos valores, *u* 1 y *u* 2, según se especifica en [**glMap1**](glmap1.md). Los evaluadores bidimensionales devuelven cuatro valores (*U1*, *U2*, *v1* y *V2*), tal y como se especifica en [**glMap2**](glmap2.md). Los valores enteros, cuando se solicitan, se calculan Redondeando los valores de punto flotante internos a los valores enteros más cercanos.<br/>                                                                                                                                                                                                                                                  |
+| <span id="GL_COEFF"></span><span id="gl_coeff"></span><dl> <dt>**GL \_ COEFF**</dt> </dl>    | El *parámetro v* devuelve los puntos de control para la función del evaluador. Los evaluadores unidimensionales *devuelven* puntos de control de orden y los evaluadores bidimensionales devuelven puntos de control *uorder* *x* *vorder.* Cada punto de control consta de uno, dos, tres o cuatro valores enteros, de punto flotante de precisión sencilla o de punto flotante de precisión doble, según el tipo del evaluador. Los puntos de control bidimensionales se devuelven en orden de fila principal, lo que incrementa rápidamente el índice *uorder* y el índice *de vorder* después de cada fila. Los valores enteros, cuando se solicitan, se calculan redondeando los valores de punto flotante internos a los valores enteros más cercanos.<br/> |
+| <span id="GL_ORDER"></span><span id="gl_order"></span><dl> <dt>**PEDIDO \_ DE GL**</dt> </dl>    | El *parámetro v* devuelve el orden de la función del evaluador. Los evaluadores unidimensionales devuelven un valor único, *order*. Los evaluadores bidimensionales devuelven dos valores, *uorder* y *vorder*.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| <span id="GL_DOMAIN"></span><span id="gl_domain"></span><dl> <dt>**DOMINIO \_ GL**</dt> </dl> | El *parámetro v* devuelve los parámetros de asignación *U* y *v* lineales. Los evaluadores unidimensionales devuelven dos valores, *u* 1 y *u* 2, tal y como especifica [**glMap1**](glmap1.md). Los evaluadores bidimensionales devuelven cuatro valores *(u1,* *u2,* *v1* y *v2),* tal y como especifica [**glMap2**](glmap2.md). Los valores enteros, cuando se solicitan, se calculan redondeando los valores de punto flotante internos a los valores enteros más cercanos.<br/>                                                                                                                                                                                                                                                  |
 
 
 
@@ -68,7 +68,7 @@ Especifica el parámetro que se va a devolver. Se aceptan los siguientes nombres
 
 </dd> <dt>
 
-*v* 
+*V* 
 </dt> <dd>
 
 Devuelve los datos solicitados.
@@ -87,16 +87,16 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_enumeración GL no válida \_**</dt> </dl>      | el *destino* o la *consulta* no era un valor aceptado.<br/>                                                                             |
-| <dl> <dt>**\_operación no válida GL \_**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente a [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**ENUMERACIÓN \_ \_ NO VÁLIDA DE GL**</dt> </dl>      | *target* o *query* no era un valor aceptado.<br/>                                                                             |
+| <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-La función **glGetMap** devuelve los parámetros del evaluador. (Las funciones **glMap1** y **glMap2** definen evaluadores). El parámetro de *destino* especifica un mapa, la *consulta* selecciona un parámetro específico y *v* apunta al almacenamiento donde se devolverán los valores.
+La **función glGetMap** devuelve parámetros del evaluador. (Las **funciones glMap1** **y glMap2** definen evaluadores). El *parámetro* de destino especifica una asignación, *la consulta* selecciona un parámetro específico y *v* apunta al almacenamiento donde se devolverán los valores.
 
-Los valores aceptables para el parámetro de *destino* se describen en [**glMap1**](glmap1.md) y [**glMap2**](glmap2.md).
+Los valores aceptables para el *parámetro de* destino se describen [**en glMap1**](glmap1.md) y [**glMap2.**](glmap2.md)
 
 Si se genera un error, no se realiza ningún cambio en el contenido de *v*.
 
@@ -108,8 +108,8 @@ Si se genera un error, no se realiza ningún cambio en el contenido de *v*.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
-| Encabezado<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

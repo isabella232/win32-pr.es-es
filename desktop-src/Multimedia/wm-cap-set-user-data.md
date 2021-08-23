@@ -1,9 +1,9 @@
 ---
-title: Mensaje de WM_CAP_SET_USER_DATA (VFW. h)
-description: El mensaje de datos del usuario del conjunto de límites de WM \_ \_ \_ \_ asocia un valor largo de \_ datos PTR a una ventana de captura. Puede enviar este mensaje explícitamente o mediante la macro capSetUserData.
+title: WM_CAP_SET_USER_DATA mensaje (Vfw.h)
+description: El mensaje WM CAP SET USER DATA asocia un valor de datos \_ \_ LONG \_ \_ \_ PTR a una ventana de captura. Puede enviar este mensaje explícitamente o mediante la macro capSetUserData.
 ms.assetid: 067502e3-f009-4cf2-b612-4a0b64624416
 keywords:
-- Mensaje de WM_CAP_SET_USER_DATA de Windows multimedia
+- WM_CAP_SET_USER_DATA mensaje Windows Multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 542b8e49f740bfc265824947237841dede1f6065
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea5b4a192b774572ea374b08d4a4128389281e44ee00614806841b0b007d978b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803555"
 ---
-# <a name="wm_cap_set_user_data-message"></a>\_Mensaje de \_ datos de usuario del conjunto de Cap de \_ WM \_
+# <a name="wm_cap_set_user_data-message"></a>Mensaje DE DATOS DE USUARIO DE WM \_ CAP \_ SET \_ \_
 
-El mensaje de **datos del usuario del conjunto de límites de WM \_ \_ \_ \_** asocia un valor largo de datos **\_ ptr** a una ventana de captura. Puede enviar este mensaje explícitamente o mediante la macro [**capSetUserData**](/windows/desktop/api/Vfw/nf-vfw-capsetuserdata) .
+El **mensaje WM CAP SET USER \_ \_ \_ \_ DATA** asocia un **valor de datos LONG \_ PTR** a una ventana de captura. Puede enviar este mensaje explícitamente o mediante la [**macro capSetUserData.**](/windows/desktop/api/Vfw/nf-vfw-capsetuserdata)
 
 
 ```C++
@@ -41,17 +41,17 @@ lParam = (LPARAM)lUser;
 <span id="lUser"></span><span id="luser"></span><span id="LUSER"></span>*lUser*
 </dt> <dd>
 
-Valor de datos que se va a asociar a una ventana de captura.
+Valor de datos que se asociará a una ventana de captura.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **true** si es correcto o **false** si la captura de streaming está en curso.
+Devuelve **TRUE si** se realiza **correctamente o FALSE** si la captura de streaming está en curso.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Normalmente, este mensaje se usa para señalar a un bloque de datos asociado a una ventana de captura.
+Normalmente, este mensaje se usa para apuntar a un bloque de datos asociado a una ventana de captura.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ Normalmente, este mensaje se usa para señalar a un bloque de datos asociado a u
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                       |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
-| Encabezado<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

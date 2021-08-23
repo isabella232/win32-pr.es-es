@@ -1,7 +1,7 @@
 ---
-description: La propiedad PatchTransforms de solo lectura devuelve la lista delimitada por punto y coma de las transformaciones que se encuentran en el paquete de revisión especificado y que se aplican al producto especificado.
+description: La propiedad PatchTransforms de solo lectura devuelve la lista delimitada por punto y coma de las transformaciones que se encuentran en el paquete de revisión especificado y se aplican al producto especificado.
 ms.assetid: 6f5d3d67-30eb-41f3-b878-de61edcf6de3
-title: Propiedad Installer. PatchTransforms
+title: Installer.PatchTransforms, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: f3a0b851e87478c950c9b117d65223ea5bcb3ab5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3129047a183bc677a4dc19afaf18c5ba6a99ea8ba52abad2de4bed9b16725a09
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105653959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119763675"
 ---
-# <a name="installerpatchtransforms-property"></a>Propiedad Installer. PatchTransforms
+# <a name="installerpatchtransforms-property"></a>Installer.PatchTransforms, propiedad
 
-La propiedad **PatchTransforms** de solo lectura devuelve la lista delimitada por punto y coma de las transformaciones que se encuentran en el paquete de revisión especificado y que se aplican al producto especificado.
+La propiedad **PatchTransforms** de solo lectura devuelve la lista delimitada por punto y coma de las transformaciones que se encuentran en el paquete de revisión especificado y se aplican al producto especificado.
 
 Esta propiedad es de solo lectura.
 
@@ -43,9 +43,9 @@ propVal = Installer.PatchTransforms
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Installer 5,0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Installer 4,0 o Windows Installer 4,5 en Windows Server 2008 o Windows Vista. Windows Installer en Windows Server 2003 o Windows XP<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador en Windows Server 2003 o Windows XP<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller se define como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | IInstaller de IID se define como \_ 000C1090-0000-0000-C000-00000000046<br/>                                                                                                                                                                           |
 
 
 
